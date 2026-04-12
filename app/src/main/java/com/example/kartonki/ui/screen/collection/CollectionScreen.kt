@@ -3,8 +3,6 @@ package com.example.kartonki.ui.screen.collection
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -17,8 +15,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExtendedFloatingActionButton
-import androidx.compose.material3.FilterChip
-import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -46,8 +42,8 @@ import com.example.kartonki.R
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
+import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.localizedName
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -103,7 +99,7 @@ fun CollectionScreen(
                 CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
             } else {
                 Column(modifier = Modifier.fillMaxSize()) {
-                    RarityFilterRow(
+                    RarityFilterChips(
                         activeFilters = uiState.rarityFilter,
                         onToggle = { viewModel.toggleFilter(it) },
                     )
@@ -125,41 +121,6 @@ fun CollectionScreen(
                     }
                 }
             }
-        }
-    }
-}
-
-@OptIn(ExperimentalLayoutApi::class)
-@Composable
-private fun RarityFilterRow(
-    activeFilters: Set<Rarity>,
-    onToggle: (Rarity) -> Unit,
-) {
-    val s = LocalAppStrings.current
-    FlowRow(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 12.dp, vertical = 8.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        verticalArrangement = Arrangement.spacedBy(4.dp),
-    ) {
-        Rarity.entries.forEach { rarity ->
-            val color = Color(rarity.colorArgb)
-            val isActive = rarity in activeFilters
-            FilterChip(
-                selected = isActive,
-                onClick = { onToggle(rarity) },
-                label = { Text(rarity.localizedName(s)) },
-                colors = FilterChipDefaults.filterChipColors(
-                    selectedContainerColor = color.copy(alpha = 0.2f),
-                    selectedLabelColor = color,
-                ),
-                border = FilterChipDefaults.filterChipBorder(
-                    enabled = true,
-                    selected = isActive,
-                    selectedBorderColor = color,
-                ),
-            )
         }
     }
 }

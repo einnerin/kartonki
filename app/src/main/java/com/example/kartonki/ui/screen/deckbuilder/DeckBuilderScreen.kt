@@ -1,11 +1,8 @@
 package com.example.kartonki.ui.screen.deckbuilder
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -25,7 +22,6 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.material3.PrimaryTabRow
 import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
@@ -43,7 +39,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.R
@@ -51,10 +46,10 @@ import com.example.kartonki.domain.model.DeckLevel
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
+import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.localizedName
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DeckBuilderScreen(
     onNavigateBack: () -> Unit,
@@ -101,10 +96,13 @@ fun DeckBuilderScreen(
 
         Column(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
             // Rarity slots row — clickable to toggle filter
-            RaritySlotsRow(
-                slots = uiState.raritySlots,
-                activeFilter = uiState.rarityFilter,
-                onSlotClick = { viewModel.toggleRarityFilter(it) },
+            RarityFilterChips(
+                activeFilters = uiState.rarityFilter,
+                onToggle = { viewModel.toggleRarityFilter(it) },
+                sublabelFor = { rarity ->
+                    uiState.raritySlots.firstOrNull { it.rarity == rarity }
+                        ?.let { "${it.used}/${it.limit}" } ?: ""
+                },
             )
             HorizontalDivider()
 
@@ -143,44 +141,6 @@ fun DeckBuilderScreen(
                     actionColor = MaterialTheme.colorScheme.primary,
                     onAction = { viewModel.addCard(it) },
                     modifier = Modifier.weight(1f),
-                )
-            }
-        }
-    }
-}
-
-@Composable
-@OptIn(ExperimentalLayoutApi::class)
-private fun RaritySlotsRow(
-    slots: List<RaritySlot>,
-    activeFilter: Set<Rarity>,
-    onSlotClick: (Rarity) -> Unit,
-) {
-    val s = LocalAppStrings.current
-    FlowRow(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 12.dp, vertical = 8.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        verticalArrangement = Arrangement.spacedBy(6.dp),
-    ) {
-        slots.forEach { slot ->
-            val color = Color(slot.rarity.colorArgb)
-            val isActive = slot.rarity in activeFilter
-            Surface(
-                color = if (isActive) color.copy(alpha = 0.5f)
-                        else if (slot.isFull) color.copy(alpha = 0.3f)
-                        else color.copy(alpha = 0.12f),
-                contentColor = color,
-                shape = RoundedCornerShape(6.dp),
-                modifier = Modifier.clickable { onSlotClick(slot.rarity) },
-            ) {
-                Text(
-                    text = "${slot.rarity.localizedName(s)}\n${slot.used}/${slot.limit}",
-                    style = MaterialTheme.typography.labelSmall,
-                    fontWeight = if (isActive) FontWeight.ExtraBold else FontWeight.Bold,
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp),
                 )
             }
         }

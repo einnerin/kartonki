@@ -17,8 +17,6 @@ import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -27,7 +25,6 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
-import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -55,11 +52,11 @@ import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.WordStat
 import com.example.kartonki.domain.model.WordStatSort
 import com.example.kartonki.ui.component.RarityBadge
+import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.localizedName
 import kotlin.math.roundToInt
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun WordStatsScreen(
     onNavigateBack: () -> Unit,
@@ -119,32 +116,11 @@ fun WordStatsScreen(
             }
 
             // Rarity filter chips
-            FlowRow(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(start = 12.dp, end = 12.dp, bottom = 8.dp),
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-                verticalArrangement = Arrangement.spacedBy(4.dp),
-            ) {
-                Rarity.entries.forEach { rarity ->
-                    val color = Color(rarity.colorArgb)
-                    val isActive = rarity in state.rarityFilter
-                    FilterChip(
-                        selected = isActive,
-                        onClick = { viewModel.toggleRarityFilter(rarity) },
-                        label = { Text(rarity.localizedName(s)) },
-                        colors = FilterChipDefaults.filterChipColors(
-                            selectedContainerColor = color.copy(alpha = 0.2f),
-                            selectedLabelColor = color,
-                        ),
-                        border = FilterChipDefaults.filterChipBorder(
-                            enabled = true,
-                            selected = isActive,
-                            selectedBorderColor = color,
-                        ),
-                    )
-                }
-            }
+            RarityFilterChips(
+                activeFilters = state.rarityFilter,
+                onToggle = { viewModel.toggleRarityFilter(it) },
+                modifier = Modifier.padding(top = 0.dp, bottom = 0.dp),
+            )
 
             HorizontalDivider()
 

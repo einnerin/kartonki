@@ -6,8 +6,6 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ExperimentalLayoutApi
-import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -51,12 +49,12 @@ import androidx.compose.ui.unit.dp
 import com.example.kartonki.domain.model.Rarity
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.localizedName
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
 import com.example.kartonki.ui.component.RarityBadge
+import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
 import com.example.kartonki.ui.theme.BgMedium
@@ -103,7 +101,7 @@ fun StudyScreen(
                 .fillMaxSize()
                 .padding(innerPadding),
         ) {
-            RarityFilterRow(
+            RarityFilterChips(
                 activeFilters = uiState.activeFilters,
                 onToggle = { viewModel.toggleFilter(it) },
             )
@@ -132,44 +130,6 @@ fun StudyScreen(
                         }
                     }
                 }
-            }
-        }
-    }
-}
-
-@OptIn(ExperimentalLayoutApi::class)
-@Composable
-private fun RarityFilterRow(
-    activeFilters: Set<Rarity>,
-    onToggle: (Rarity) -> Unit,
-) {
-    val s = LocalAppStrings.current
-    FlowRow(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(horizontal = 12.dp, vertical = 10.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        verticalArrangement = Arrangement.spacedBy(4.dp),
-    ) {
-        Rarity.entries.forEach { rarity ->
-            val color = Color(rarity.colorArgb)
-            val isActive = rarity in activeFilters
-            Surface(
-                onClick = { onToggle(rarity) },
-                shape = RoundedCornerShape(20.dp),
-                color = if (isActive) color.copy(alpha = 0.85f) else color.copy(alpha = 0.15f),
-                border = androidx.compose.foundation.BorderStroke(
-                    1.dp,
-                    if (isActive) color else color.copy(alpha = 0.4f),
-                ),
-            ) {
-                Text(
-                    text = rarity.localizedName(s),
-                    style = MaterialTheme.typography.labelMedium,
-                    fontWeight = if (isActive) FontWeight.Bold else FontWeight.Normal,
-                    color = if (isActive) Color.White else color,
-                    modifier = Modifier.padding(horizontal = 14.dp, vertical = 6.dp),
-                )
             }
         }
     }
