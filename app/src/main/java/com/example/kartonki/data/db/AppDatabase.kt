@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 17,
+    version = 18,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -52,6 +52,13 @@ abstract class AppDatabase : RoomDatabase() {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE word_sets ADD COLUMN languagePair TEXT NOT NULL DEFAULT 'en-ru'")
                 db.execSQL("ALTER TABLE words ADD COLUMN transliteration TEXT")
+            }
+        }
+        /** Removes incorrectly-seeded Hebrew data so ensureSeeded() re-inserts it cleanly. */
+        val MIGRATION_17_18 = object : Migration(17, 18) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("DELETE FROM words WHERE setId IN (101, 102, 103)")
+                db.execSQL("DELETE FROM word_sets WHERE id IN (101, 102, 103)")
             }
         }
     }
