@@ -22,6 +22,7 @@ class UserPreferencesRepository @Inject constructor(
         const val USERNAME        = "username"
         const val AVATAR_CHOICE   = "avatar_choice"
         const val LANGUAGE_PAIR   = "language_pair"
+        const val NATIVE_LANGUAGE = "native_language"
         const val ACTIVITY_COUNT  = "activity_count"
         const val FREE_PACK_COUNT = "free_pack_count"
     }
@@ -36,17 +37,19 @@ class UserPreferencesRepository @Inject constructor(
         awaitClose { prefs.unregisterOnSharedPreferenceChangeListener(listener) }
     }
 
-    val isDarkTheme: Flow<Boolean>  = prefsFlow().map { it.getBoolean(Keys.IS_DARK_THEME, true) }
-    val username: Flow<String>      = prefsFlow().map { it.getString(Keys.USERNAME, "Игрок") ?: "Игрок" }
-    val avatarChoice: Flow<String>  = prefsFlow().map { it.getString(Keys.AVATAR_CHOICE, "🎮") ?: "🎮" }
-    val languagePair: Flow<String>  = prefsFlow().map { it.getString(Keys.LANGUAGE_PAIR, "en-ru") ?: "en-ru" }
-    val activityCount: Flow<Int>    = prefsFlow().map { it.getInt(Keys.ACTIVITY_COUNT, 0) }
-    val freePackCount: Flow<Int>    = prefsFlow().map { it.getInt(Keys.FREE_PACK_COUNT, 0) }
+    val isDarkTheme: Flow<Boolean>      = prefsFlow().map { it.getBoolean(Keys.IS_DARK_THEME, true) }
+    val username: Flow<String>          = prefsFlow().map { it.getString(Keys.USERNAME, "Игрок") ?: "Игрок" }
+    val avatarChoice: Flow<String>      = prefsFlow().map { it.getString(Keys.AVATAR_CHOICE, "🎮") ?: "🎮" }
+    val languagePair: Flow<String>      = prefsFlow().map { it.getString(Keys.LANGUAGE_PAIR, "en-ru") ?: "en-ru" }
+    val nativeLanguage: Flow<String>    = prefsFlow().map { it.getString(Keys.NATIVE_LANGUAGE, "ru") ?: "ru" }
+    val activityCount: Flow<Int>        = prefsFlow().map { it.getInt(Keys.ACTIVITY_COUNT, 0) }
+    val freePackCount: Flow<Int>        = prefsFlow().map { it.getInt(Keys.FREE_PACK_COUNT, 0) }
 
-    fun setDarkTheme(isDark: Boolean)   = prefs.edit().putBoolean(Keys.IS_DARK_THEME, isDark).apply()
+    fun setDarkTheme(isDark: Boolean)    = prefs.edit().putBoolean(Keys.IS_DARK_THEME, isDark).apply()
     fun setUsername(name: String)        = prefs.edit().putString(Keys.USERNAME, name).apply()
     fun setAvatarChoice(choice: String)  = prefs.edit().putString(Keys.AVATAR_CHOICE, choice).apply()
     fun setLanguagePair(pair: String)    = prefs.edit().putString(Keys.LANGUAGE_PAIR, pair).apply()
+    fun setNativeLanguage(lang: String)  = prefs.edit().putString(Keys.NATIVE_LANGUAGE, lang).apply()
 
     fun getActivityCount(): Int  = prefs.getInt(Keys.ACTIVITY_COUNT, 0)
     fun getFreePackCount(): Int  = prefs.getInt(Keys.FREE_PACK_COUNT, 0)

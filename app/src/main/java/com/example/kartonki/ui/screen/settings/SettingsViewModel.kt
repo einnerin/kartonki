@@ -16,13 +16,27 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+/** Supported native languages: code → display name */
+val NATIVE_LANGUAGES: LinkedHashMap<String, String> = linkedMapOf(
+    "ru" to "Русский",
+    "en" to "English",
+    "de" to "Deutsch",
+    "fr" to "Français",
+    "es" to "Español",
+    "zh" to "中文",
+    "ja" to "日本語",
+    "ar" to "العربية",
+)
+
 data class SettingsUiState(
     val isDarkTheme: Boolean = true,
     val username: String = "Игрок",
     val avatarChoice: String = "🎮",
     val languagePair: String = "en-ru",
+    val nativeLanguage: String = "ru",
     val isEditingName: Boolean = false,
     val nameInput: String = "",
+    val showLanguagePicker: Boolean = false,
 )
 
 val AVATAR_EMOJI_OPTIONS = listOf(
@@ -47,18 +61,21 @@ class SettingsViewModel @Inject constructor(
                 prefs.username,
                 prefs.avatarChoice,
                 prefs.languagePair,
-            ) { dark, name, avatar, lang ->
+                prefs.nativeLanguage,
+            ) { values ->
                 SettingsUiState(
-                    isDarkTheme  = dark,
-                    username     = name,
-                    avatarChoice = avatar,
-                    languagePair = lang,
+                    isDarkTheme    = values[0] as Boolean,
+                    username       = values[1] as String,
+                    avatarChoice   = values[2] as String,
+                    languagePair   = values[3] as String,
+                    nativeLanguage = values[4] as String,
                 )
             }.collect { state ->
                 _uiState.update { current ->
                     state.copy(
-                        isEditingName = current.isEditingName,
-                        nameInput     = current.nameInput,
+                        isEditingName      = current.isEditingName,
+                        nameInput          = current.nameInput,
+                        showLanguagePicker = current.showLanguagePicker,
                     )
                 }
             }
@@ -66,6 +83,13 @@ class SettingsViewModel @Inject constructor(
     }
 
     fun onThemeToggle(isDark: Boolean) = viewModelScope.launch { prefs.setDarkTheme(isDark) }
+
+    fun onShowLanguagePicker() = _uiState.update { it.copy(showLanguagePicker = true) }
+    fun onDismissLanguagePicker() = _uiState.update { it.copy(showLanguagePicker = false) }
+    fun onNativeLanguageSelected(code: String) = viewModelScope.launch {
+        prefs.setNativeLanguage(code)
+        _uiState.update { it.copy(showLanguagePicker = false) }
+    }
 
     fun onStartEditName() = _uiState.update {
         it.copy(isEditingName = true, nameInput = it.username)

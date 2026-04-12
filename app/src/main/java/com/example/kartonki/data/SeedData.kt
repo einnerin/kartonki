@@ -8,11 +8,11 @@ object SeedData {
     // ── Sets ──────────────────────────────────────────────────────────────────
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(id = 1, name = "Животные", description = "Домашние и дикие животные", orderIndex = 0),
-        WordSetEntity(id = 2, name = "Basic_verbs", description = "Лексика: basic_verbs", orderIndex = 1),
+        WordSetEntity(id = 2, name = "Основные глаголы", description = "Самые важные глаголы", orderIndex = 1),
         WordSetEntity(id = 3, name = "Тело человека", description = "Части тела", orderIndex = 2),
         WordSetEntity(id = 4, name = "Одежда", description = "Одежда и стиль", orderIndex = 3),
-        WordSetEntity(id = 5, name = "Цвета и описания", description = "Цвета и базовые прилагательные", orderIndex = 4),
-        WordSetEntity(id = 6, name = "Descriptions", description = "Лексика: descriptions", orderIndex = 5),
+        WordSetEntity(id = 5, name = "Цвета", description = "Цвета и оттенки", orderIndex = 4),
+        WordSetEntity(id = 6, name = "Описания", description = "Базовые прилагательные", orderIndex = 5),
         WordSetEntity(id = 7, name = "Образование", description = "Система образования", orderIndex = 6),
         WordSetEntity(id = 8, name = "Семья", description = "Слова о семье и близких", orderIndex = 7),
         WordSetEntity(id = 9, name = "Еда и продукты 1", description = "Продукты и напитки", orderIndex = 8),
@@ -21,17 +21,17 @@ object SeedData {
         WordSetEntity(id = 12, name = "Здоровье", description = "Здоровье и медицина", orderIndex = 11),
         WordSetEntity(id = 13, name = "Дом", description = "Дом и мебель", orderIndex = 12),
         WordSetEntity(id = 14, name = "Числа и счёт", description = "Числа и счёт", orderIndex = 13),
-        WordSetEntity(id = 15, name = "Школа", description = "Образование и учёба", orderIndex = 14),
+        WordSetEntity(id = 15, name = "Школа", description = "Школа и учёба", orderIndex = 14),
         WordSetEntity(id = 16, name = "Магазины и покупки", description = "Шоппинг и покупки", orderIndex = 15),
         WordSetEntity(id = 17, name = "Спорт", description = "Виды спорта", orderIndex = 16),
         WordSetEntity(id = 18, name = "Технологии", description = "Гаджеты и интернет", orderIndex = 17),
         WordSetEntity(id = 19, name = "Транспорт", description = "Средства передвижения", orderIndex = 18),
         WordSetEntity(id = 20, name = "Путешествия", description = "Туризм и поездки", orderIndex = 19),
         WordSetEntity(id = 21, name = "Погода", description = "Погодные явления", orderIndex = 20),
-        WordSetEntity(id = 22, name = "Работа и офис", description = "Профессиональная лексика", orderIndex = 21),
-        WordSetEntity(id = 23, name = "Искусство", description = "Искусство", orderIndex = 22),
+        WordSetEntity(id = 22, name = "Работа", description = "Работа и офис", orderIndex = 21),
+        WordSetEntity(id = 23, name = "Искусство", description = "Искусство и культура", orderIndex = 22),
         WordSetEntity(id = 24, name = "Бизнес", description = "Бизнес-лексика", orderIndex = 23),
-        WordSetEntity(id = 25, name = "Daily_life", description = "Лексика: daily_life", orderIndex = 24),
+        WordSetEntity(id = 25, name = "Повседневная жизнь", description = "Повседневная жизнь", orderIndex = 24),
         WordSetEntity(id = 26, name = "Экономика", description = "Экономика и финансы", orderIndex = 25),
         WordSetEntity(id = 27, name = "Образование", description = "Система образования", orderIndex = 26),
         WordSetEntity(id = 28, name = "Эмоции", description = "Чувства и эмоции", orderIndex = 27),
@@ -41,55 +41,55 @@ object SeedData {
         WordSetEntity(id = 32, name = "Язык и общение", description = "Язык и коммуникация", orderIndex = 31),
         WordSetEntity(id = 33, name = "СМИ", description = "СМИ и технологии", orderIndex = 32),
         WordSetEntity(id = 34, name = "Природа", description = "Окружающий мир", orderIndex = 33),
-        WordSetEntity(id = 35, name = "Personal_development", description = "Лексика: personal_development", orderIndex = 34),
+        WordSetEntity(id = 35, name = "Личностный рост", description = "Личностный рост", orderIndex = 34),
         WordSetEntity(id = 36, name = "Отношения", description = "Межличностные отношения", orderIndex = 35),
-        WordSetEntity(id = 37, name = "Science_b1", description = "Лексика: science_b1", orderIndex = 36),
+        WordSetEntity(id = 37, name = "Наука (базовый)", description = "Базовая научная лексика", orderIndex = 36),
         WordSetEntity(id = 38, name = "Общество", description = "Общество и государство", orderIndex = 37),
         WordSetEntity(id = 39, name = "Технологии", description = "Гаджеты и интернет", orderIndex = 38),
         WordSetEntity(id = 40, name = "Путешествия", description = "Туризм и поездки", orderIndex = 39),
-        WordSetEntity(id = 41, name = "Work_career", description = "Лексика: work_career", orderIndex = 40),
+        WordSetEntity(id = 41, name = "Карьера", description = "Карьера и профессиональный рост", orderIndex = 40),
         WordSetEntity(id = 42, name = "Абстрактные понятия", description = "Абстрактные понятия", orderIndex = 41),
         WordSetEntity(id = 43, name = "Академический язык", description = "Академический язык B2", orderIndex = 42),
-        WordSetEntity(id = 44, name = "Academic_skills", description = "Лексика: academic_skills", orderIndex = 43),
-        WordSetEntity(id = 45, name = "Поведение", description = "Поведение и риски", orderIndex = 44),
+        WordSetEntity(id = 44, name = "Учебные навыки", description = "Учебные навыки", orderIndex = 43),
+        WordSetEntity(id = 45, name = "Поведение", description = "Поведение", orderIndex = 44),
         WordSetEntity(id = 46, name = "Бизнес", description = "Бизнес-лексика", orderIndex = 45),
         WordSetEntity(id = 47, name = "Коммуникация", description = "Общение и дискуссия", orderIndex = 46),
-        WordSetEntity(id = 48, name = "Culture", description = "Лексика: culture", orderIndex = 47),
+        WordSetEntity(id = 48, name = "Культура и общество", description = "Культура и общество", orderIndex = 47),
         WordSetEntity(id = 49, name = "Окружающая среда", description = "Экология", orderIndex = 48),
-        WordSetEntity(id = 50, name = "Logical_connectors", description = "Лексика: logical_connectors", orderIndex = 49),
+        WordSetEntity(id = 50, name = "Логические связки", description = "Логические связи", orderIndex = 49),
         WordSetEntity(id = 51, name = "СМИ", description = "СМИ и технологии", orderIndex = 50),
-        WordSetEntity(id = 52, name = "Personal", description = "Лексика: personal", orderIndex = 51),
+        WordSetEntity(id = 52, name = "Личные качества", description = "Черты личности", orderIndex = 51),
         WordSetEntity(id = 53, name = "Психология", description = "Психология", orderIndex = 52),
-        WordSetEntity(id = 54, name = "Risk_danger", description = "Лексика: risk_danger", orderIndex = 53),
-        WordSetEntity(id = 55, name = "Science_b2", description = "Лексика: science_b2", orderIndex = 54),
-        WordSetEntity(id = 56, name = "Social_advanced", description = "Лексика: social_advanced", orderIndex = 55),
-        WordSetEntity(id = 57, name = "Social_issues", description = "Лексика: social_issues", orderIndex = 56),
+        WordSetEntity(id = 54, name = "Риски и опасность", description = "Риски и последствия", orderIndex = 53),
+        WordSetEntity(id = 55, name = "Наука (продвинутый)", description = "Продвинутая научная лексика", orderIndex = 54),
+        WordSetEntity(id = 56, name = "Общество (продвинутый)", description = "Общество и перемены", orderIndex = 55),
+        WordSetEntity(id = 57, name = "Социальные проблемы", description = "Социальные проблемы", orderIndex = 56),
         WordSetEntity(id = 58, name = "Общество", description = "Общество и государство", orderIndex = 57),
-        WordSetEntity(id = 59, name = "Academic_discourse", description = "Лексика: academic_discourse", orderIndex = 58),
-        WordSetEntity(id = 60, name = "Arts_c1", description = "Лексика: arts_c1", orderIndex = 59),
-        WordSetEntity(id = 61, name = "Business_advanced", description = "Лексика: business_advanced", orderIndex = 60),
+        WordSetEntity(id = 59, name = "Академический дискурс", description = "Академический дискурс C1", orderIndex = 58),
+        WordSetEntity(id = 60, name = "Искусство (C1)", description = "Искусство и нарратив C1", orderIndex = 59),
+        WordSetEntity(id = 61, name = "Бизнес (продвинутый)", description = "Деловая лексика C1", orderIndex = 60),
         WordSetEntity(id = 62, name = "Изменения", description = "Процессы изменений", orderIndex = 61),
-        WordSetEntity(id = 63, name = "Conditions", description = "Лексика: conditions", orderIndex = 62),
-        WordSetEntity(id = 64, name = "Experiences", description = "Лексика: experiences", orderIndex = 63),
-        WordSetEntity(id = 65, name = "Global_issues", description = "Лексика: global_issues", orderIndex = 64),
-        WordSetEntity(id = 66, name = "Language_advanced", description = "Лексика: language_advanced", orderIndex = 65),
-        WordSetEntity(id = 67, name = "Law_politics", description = "Лексика: law_politics", orderIndex = 66),
-        WordSetEntity(id = 68, name = "Logic_c1", description = "Лексика: logic_c1", orderIndex = 67),
+        WordSetEntity(id = 63, name = "Условия и обстоятельства", description = "Условия и обстоятельства", orderIndex = 62),
+        WordSetEntity(id = 64, name = "Опыт и восприятие", description = "Опыт и восприятие", orderIndex = 63),
+        WordSetEntity(id = 65, name = "Глобальные проблемы", description = "Глобальные проблемы", orderIndex = 64),
+        WordSetEntity(id = 66, name = "Язык (продвинутый)", description = "Язык и риторика C1", orderIndex = 65),
+        WordSetEntity(id = 67, name = "Право и политика", description = "Право и законодательство", orderIndex = 66),
+        WordSetEntity(id = 68, name = "Логика и аргументация", description = "Логика и аргументация C1", orderIndex = 67),
         WordSetEntity(id = 69, name = "Организация", description = "Управление и организация", orderIndex = 68),
-        WordSetEntity(id = 70, name = "Patterns", description = "Лексика: patterns", orderIndex = 69),
-        WordSetEntity(id = 71, name = "Personal_advanced", description = "Лексика: personal_advanced", orderIndex = 70),
-        WordSetEntity(id = 72, name = "Process", description = "Лексика: process", orderIndex = 71),
-        WordSetEntity(id = 73, name = "Process_c1", description = "Лексика: process_c1", orderIndex = 72),
-        WordSetEntity(id = 74, name = "Наука", description = "Наука", orderIndex = 73),
-        WordSetEntity(id = 75, name = "Social_advanced", description = "Лексика: social_advanced", orderIndex = 74),
-        WordSetEntity(id = 76, name = "Advanced_descriptions", description = "Лексика: advanced_descriptions", orderIndex = 75),
-        WordSetEntity(id = 77, name = "Advanced_nouns", description = "Лексика: advanced_nouns", orderIndex = 76),
-        WordSetEntity(id = 78, name = "Advanced_thinking", description = "Лексика: advanced_thinking", orderIndex = 77),
-        WordSetEntity(id = 79, name = "Advanced_verbs", description = "Лексика: advanced_verbs", orderIndex = 78),
-        WordSetEntity(id = 80, name = "Art_literature", description = "Лексика: art_literature", orderIndex = 79),
+        WordSetEntity(id = 70, name = "Закономерности", description = "Закономерности и тенденции", orderIndex = 69),
+        WordSetEntity(id = 71, name = "Личность (продвинутый)", description = "Личность и ценности C1", orderIndex = 70),
+        WordSetEntity(id = 72, name = "Процессы", description = "Процессы и управление", orderIndex = 71),
+        WordSetEntity(id = 73, name = "Процессы (C1)", description = "Организационные процессы C1", orderIndex = 72),
+        WordSetEntity(id = 74, name = "Наука (C1)", description = "Наука C1", orderIndex = 73),
+        WordSetEntity(id = 75, name = "Общество (продвинутый)", description = "Общество и перемены", orderIndex = 74),
+        WordSetEntity(id = 76, name = "Изысканные прилагательные", description = "Изысканные прилагательные C2", orderIndex = 75),
+        WordSetEntity(id = 77, name = "Редкие существительные", description = "Редкие существительные C2", orderIndex = 76),
+        WordSetEntity(id = 78, name = "Аналитическое мышление", description = "Аналитическое мышление C2", orderIndex = 77),
+        WordSetEntity(id = 79, name = "Изысканные глаголы", description = "Изысканные глаголы C2", orderIndex = 78),
+        WordSetEntity(id = 80, name = "Литература и искусство", description = "Термины литературы и искусства", orderIndex = 79),
         WordSetEntity(id = 81, name = "Ум и характер", description = "Описание ума и характера", orderIndex = 80),
-        WordSetEntity(id = 82, name = "Force_change", description = "Лексика: force_change", orderIndex = 81),
-        WordSetEntity(id = 83, name = "Рост и влияние", description = "Рост, влияние и изменения", orderIndex = 82)
+        WordSetEntity(id = 82, name = "Сила и перемены", description = "Сила, перемены и разрушение", orderIndex = 81),
+        WordSetEntity(id = 83, name = "Рост и влияние", description = "Влияние, рост и изменения", orderIndex = 82)
     )
 
     // ── Words ──────────────────────────────────────────────────────────────────
@@ -170,7 +170,7 @@ object SeedData {
         WordEntity(id = 25, original = "butterfly", translation = "бабочка", rarity = "COMMON", setId = 1, languagePair = "en-ru", pos = "noun", semanticGroup = "animals",
             definition = "an insect with large colourful wings",
             example = "A butterfly landed on the flower."),
-        // ━━━ SET 2 — COMMON — Basic_verbs ━━━
+        // ━━━ SET 2 — COMMON — Основные глаголы ━━━
         WordEntity(id = 26, original = "eat", translation = "есть", rarity = "COMMON", setId = 2, languagePair = "en-ru", pos = "verb", semanticGroup = "basic_verbs",
             definition = "To put food in your mouth and swallow it.",
             example = "She eats an apple every day at school."),
@@ -398,7 +398,7 @@ object SeedData {
         WordEntity(id = 100, original = "fashion", translation = "мода", rarity = "COMMON", setId = 4, languagePair = "en-ru", pos = "noun", semanticGroup = "clothing",
             definition = "the style of clothing popular at a particular time",
             example = "She always follows the latest fashion."),
-        // ━━━ SET 5 — COMMON — Цвета и описания ━━━
+        // ━━━ SET 5 — COMMON — Цвета ━━━
         WordEntity(id = 101, original = "red", translation = "красный", rarity = "COMMON", setId = 5, languagePair = "en-ru", pos = "adjective", semanticGroup = "colours",
             definition = "Having the colour of blood or a ripe tomato.",
             example = "She wore a red dress to the party."),
@@ -474,7 +474,7 @@ object SeedData {
         WordEntity(id = 125, original = "maroon", translation = "тёмно-красный", rarity = "COMMON", setId = 5, languagePair = "en-ru", pos = "adjective", semanticGroup = "colours",
             definition = "a dark brownish-red colour",
             example = "She wore a maroon scarf in winter."),
-        // ━━━ SET 6 — COMMON — Descriptions ━━━
+        // ━━━ SET 6 — COMMON — Описания ━━━
         WordEntity(id = 126, original = "big", translation = "большой", rarity = "COMMON", setId = 6, languagePair = "en-ru", pos = "adjective", semanticGroup = "descriptions",
             definition = "Large in size.",
             example = "They live in a big house with a large garden."),
@@ -1694,7 +1694,7 @@ object SeedData {
         WordEntity(id = 525, original = "breeze", translation = "ветерок", rarity = "COMMON", setId = 21, languagePair = "en-ru", pos = "noun", semanticGroup = "weather",
             definition = "a light and gentle wind",
             example = "A cool breeze blew through the window."),
-        // ━━━ SET 22 — COMMON — Работа и офис ━━━
+        // ━━━ SET 22 — COMMON — Работа ━━━
         WordEntity(id = 526, original = "job", translation = "работа", rarity = "COMMON", setId = 22, languagePair = "en-ru", pos = "noun", semanticGroup = "work",
             definition = "The regular paid work that you do.",
             example = "She got a new job at the local hospital."),
@@ -1924,7 +1924,7 @@ object SeedData {
             example = "The company reported a gross profit of one million.")
     )
     private fun words4(): List<WordEntity> = listOf(
-        // ━━━ SET 25 — UNCOMMON — Daily_life ━━━
+        // ━━━ SET 25 — UNCOMMON — Повседневная жизнь ━━━
         WordEntity(id = 601, original = "habit", translation = "привычка", rarity = "UNCOMMON", setId = 25, languagePair = "en-ru", pos = "noun", semanticGroup = "daily_life",
             definition = "Something you do regularly, often without thinking.",
             example = "Checking his phone first thing in the morning had become a bad habit."),
@@ -2686,7 +2686,7 @@ object SeedData {
         WordEntity(id = 850, original = "tide", translation = "прилив", rarity = "UNCOMMON", setId = 34, languagePair = "en-ru", pos = "noun", semanticGroup = "nature",
             definition = "the regular rise and fall of sea levels",
             example = "The tide comes in twice a day."),
-        // ━━━ SET 35 — UNCOMMON — Personal_development ━━━
+        // ━━━ SET 35 — UNCOMMON — Личностный рост ━━━
         WordEntity(id = 851, original = "improve", translation = "улучшать", rarity = "UNCOMMON", setId = 35, languagePair = "en-ru", pos = "verb", semanticGroup = "personal_development",
             definition = "To make something better.",
             example = "She took extra lessons to improve her maths grade."),
@@ -2838,7 +2838,7 @@ object SeedData {
         WordEntity(id = 900, original = "intimacy", translation = "близость", rarity = "UNCOMMON", setId = 36, languagePair = "en-ru", pos = "noun", semanticGroup = "relationships",
             definition = "a close personal relationship or feeling of being near to someone",
             example = "Friendships develop through shared intimacy and trust."),
-        // ━━━ SET 37 — UNCOMMON — Science_b1 ━━━
+        // ━━━ SET 37 — UNCOMMON — Наука (базовый) ━━━
         WordEntity(id = 901, original = "experiment", translation = "эксперимент", rarity = "UNCOMMON", setId = 37, languagePair = "en-ru", pos = "noun", semanticGroup = "science_b1",
             definition = "A scientific test done to learn about something.",
             example = "The students carried out an experiment to test which material was the strongest."),
@@ -3144,7 +3144,7 @@ object SeedData {
             example = "Passengers in transit must wait in the departure lounge.")
     )
     private fun words6(): List<WordEntity> = listOf(
-        // ━━━ SET 41 — UNCOMMON — Work_career ━━━
+        // ━━━ SET 41 — UNCOMMON — Карьера ━━━
         WordEntity(id = 1001, original = "achieve", translation = "достигать", rarity = "UNCOMMON", setId = 41, languagePair = "en-ru", pos = "verb", semanticGroup = "work_career",
             definition = "To succeed in doing something after effort.",
             example = "She worked hard and finally achieved her goal of becoming a doctor."),
@@ -3372,7 +3372,7 @@ object SeedData {
         WordEntity(id = 1075, original = "neutral", translation = "нейтральный", rarity = "RARE", setId = 43, languagePair = "en-ru", pos = "adjective", semanticGroup = "academic",
             definition = "Not supporting any side in a disagreement.",
             example = "The report was written from a neutral standpoint."),
-        // ━━━ SET 44 — RARE — Academic_skills ━━━
+        // ━━━ SET 44 — RARE — Учебные навыки ━━━
         WordEntity(id = 1076, original = "synopsis", translation = "краткое изложение", rarity = "RARE", setId = 44, languagePair = "en-ru", pos = "noun", semanticGroup = "academic_skills",
             definition = "A brief summary of the main points of a longer work.",
             example = "She submitted a one-page synopsis of her proposed research."),
@@ -3676,7 +3676,7 @@ object SeedData {
         WordEntity(id = 1175, original = "candid", translation = "откровенный", rarity = "RARE", setId = 47, languagePair = "en-ru", pos = "adjective", semanticGroup = "communication",
             definition = "truthful and straightforward in what you say",
             example = "He gave a candid assessment of the situation."),
-        // ━━━ SET 48 — RARE — Culture ━━━
+        // ━━━ SET 48 — RARE — Культура и общество ━━━
         WordEntity(id = 1176, original = "heritage", translation = "наследие", rarity = "RARE", setId = 48, languagePair = "en-ru", pos = "noun", semanticGroup = "culture",
             definition = "Traditions, buildings, and beliefs passed down from earlier generations.",
             example = "The old city is protected as a site of cultural heritage."),
@@ -3830,7 +3830,7 @@ object SeedData {
         WordEntity(id = 1225, original = "biofuel", translation = "биотопливо", rarity = "RARE", setId = 49, languagePair = "en-ru", pos = "noun", semanticGroup = "environment",
             definition = "fuel made from biological materials",
             example = "Biofuel is considered a cleaner energy source."),
-        // ━━━ SET 50 — RARE — Logical_connectors ━━━
+        // ━━━ SET 50 — RARE — Логические связки ━━━
         WordEntity(id = 1226, original = "regardless", translation = "независимо от", rarity = "RARE", setId = 50, languagePair = "en-ru", pos = "adverb", semanticGroup = "logical_connectors",
             definition = "Despite what else is happening; without being affected by something.",
             example = "She decided to go ahead with the plan regardless of the risks involved."),
@@ -3982,7 +3982,7 @@ object SeedData {
         WordEntity(id = 1275, original = "outlet", translation = "издание", rarity = "RARE", setId = 51, languagePair = "en-ru", pos = "noun", semanticGroup = "media",
             definition = "a newspaper, television channel, or website that provides news",
             example = "The story was covered by every major news outlet."),
-        // ━━━ SET 52 — RARE — Personal ━━━
+        // ━━━ SET 52 — RARE — Личные качества ━━━
         WordEntity(id = 1276, original = "capable", translation = "способный", rarity = "RARE", setId = 52, languagePair = "en-ru", pos = "adjective", semanticGroup = "personal",
             definition = "Having the ability or skill to do something.",
             example = "She is more than capable of handling the project on her own."),
@@ -4134,7 +4134,7 @@ object SeedData {
         WordEntity(id = 1325, original = "mindfulness", translation = "осознанность", rarity = "RARE", setId = 53, languagePair = "en-ru", pos = "noun", semanticGroup = "psychology",
             definition = "the practice of being fully aware of the present moment",
             example = "Mindfulness meditation can reduce anxiety."),
-        // ━━━ SET 54 — RARE — Risk_danger ━━━
+        // ━━━ SET 54 — RARE — Риски и опасность ━━━
         WordEntity(id = 1326, original = "threat", translation = "угроза", rarity = "RARE", setId = 54, languagePair = "en-ru", pos = "noun", semanticGroup = "risk_danger",
             definition = "A statement that you will harm someone; a danger.",
             example = "Climate change poses a serious threat to biodiversity worldwide."),
@@ -4210,7 +4210,7 @@ object SeedData {
         WordEntity(id = 1350, original = "negligence", translation = "халатность", rarity = "RARE", setId = 54, languagePair = "en-ru", pos = "noun", semanticGroup = "risk_danger",
             definition = "failure to take proper care, resulting in harm to others",
             example = "The accident was caused by negligence on the road."),
-        // ━━━ SET 55 — RARE — Science_b2 ━━━
+        // ━━━ SET 55 — RARE — Наука (продвинутый) ━━━
         WordEntity(id = 1351, original = "combustion", translation = "горение", rarity = "RARE", setId = 55, languagePair = "en-ru", pos = "noun", semanticGroup = "science_b2",
             definition = "A chemical process in which a substance reacts with oxygen to produce heat and light.",
             example = "The combustion of fossil fuels releases large quantities of carbon dioxide."),
@@ -4286,7 +4286,7 @@ object SeedData {
         WordEntity(id = 1375, original = "membrane", translation = "мембрана", rarity = "RARE", setId = 55, languagePair = "en-ru", pos = "noun", semanticGroup = "science_b2",
             definition = "a thin flexible layer that covers or separates something",
             example = "The cell membrane controls what enters the cell."),
-        // ━━━ SET 56 — RARE — Social_advanced ━━━
+        // ━━━ SET 56 — RARE — Общество (продвинутый) ━━━
         WordEntity(id = 1376, original = "controversial", translation = "спорный", rarity = "RARE", setId = 56, languagePair = "en-ru", pos = "adjective", semanticGroup = "social_advanced",
             definition = "Causing disagreement or strong opposing opinions.",
             example = "The new law was highly controversial and sparked widespread protests."),
@@ -4364,7 +4364,7 @@ object SeedData {
             example = "Immigrants were used as scapegoats during the crisis.")
     )
     private fun words8(): List<WordEntity> = listOf(
-        // ━━━ SET 57 — RARE — Social_issues ━━━
+        // ━━━ SET 57 — RARE — Социальные проблемы ━━━
         WordEntity(id = 1401, original = "welfare", translation = "благосостояние", rarity = "RARE", setId = 57, languagePair = "en-ru", pos = "noun", semanticGroup = "social_issues",
             definition = "The health, happiness, and general well-being of a person.",
             example = "The charity works to improve the welfare of homeless people."),
@@ -4516,7 +4516,7 @@ object SeedData {
         WordEntity(id = 1450, original = "oligarchy", translation = "олигархия", rarity = "RARE", setId = 58, languagePair = "en-ru", pos = "noun", semanticGroup = "society",
             definition = "government by a small group of powerful people",
             example = "The country was effectively an oligarchy."),
-        // ━━━ SET 59 — EPIC — Academic_discourse ━━━
+        // ━━━ SET 59 — EPIC — Академический дискурс ━━━
         WordEntity(id = 1451, original = "elaborate", translation = "разрабатывать подробно", rarity = "EPIC", setId = 59, languagePair = "en-ru", pos = "verb", semanticGroup = "academic_discourse",
             definition = "To give more details or explanation about something.",
             example = "She asked him to elaborate on his reasons for resigning."),
@@ -4592,7 +4592,7 @@ object SeedData {
         WordEntity(id = 1475, original = "circumscribe", translation = "ограничивать", rarity = "EPIC", setId = 59, languagePair = "en-ru", pos = "verb", semanticGroup = "academic_discourse",
             definition = "to restrict something within certain limits",
             example = "The law circumscribes the power of the government."),
-        // ━━━ SET 60 — EPIC — Arts_c1 ━━━
+        // ━━━ SET 60 — EPIC — Искусство (C1) ━━━
         WordEntity(id = 1476, original = "portray", translation = "изображать", rarity = "EPIC", setId = 60, languagePair = "en-ru", pos = "verb", semanticGroup = "arts_c1",
             definition = "To represent or describe someone or something in a particular way.",
             example = "The film portrays the war through the eyes of ordinary soldiers."),
@@ -4668,7 +4668,7 @@ object SeedData {
         WordEntity(id = 1500, original = "interplay", translation = "взаимодействие", rarity = "EPIC", setId = 60, languagePair = "en-ru", pos = "noun", semanticGroup = "arts_c1",
             definition = "the way in which two or more things affect each other",
             example = "The interplay of light and shadow creates depth."),
-        // ━━━ SET 61 — EPIC — Business_advanced ━━━
+        // ━━━ SET 61 — EPIC — Бизнес (продвинутый) ━━━
         WordEntity(id = 1501, original = "entrepreneurship", translation = "предпринимательство", rarity = "EPIC", setId = 61, languagePair = "en-ru", pos = "noun", semanticGroup = "business_advanced",
             definition = "The activity of setting up and running businesses.",
             example = "The university offers a course in entrepreneurship for business students."),
@@ -4820,7 +4820,7 @@ object SeedData {
         WordEntity(id = 1550, original = "recalibrate", translation = "перенастроить", rarity = "EPIC", setId = 62, languagePair = "en-ru", pos = "verb", semanticGroup = "change",
             definition = "to adjust something carefully to match a new situation",
             example = "The company had to recalibrate its strategy."),
-        // ━━━ SET 63 — EPIC — Conditions ━━━
+        // ━━━ SET 63 — EPIC — Условия и обстоятельства ━━━
         WordEntity(id = 1551, original = "deteriorating", translation = "ухудшающийся", rarity = "EPIC", setId = 63, languagePair = "en-ru", pos = "adjective", semanticGroup = "conditions",
             definition = "Becoming progressively worse over time.",
             example = "Deteriorating weather conditions forced them to abandon the climb."),
@@ -4896,7 +4896,7 @@ object SeedData {
         WordEntity(id = 1575, original = "aggravate", translation = "усугублять", rarity = "EPIC", setId = 63, languagePair = "en-ru", pos = "verb", semanticGroup = "conditions",
             definition = "to make a bad situation worse",
             example = "Cold weather aggravates joint pain."),
-        // ━━━ SET 64 — EPIC — Experiences ━━━
+        // ━━━ SET 64 — EPIC — Опыт и восприятие ━━━
         WordEntity(id = 1576, original = "encounter", translation = "встречать/сталкиваться", rarity = "EPIC", setId = 64, languagePair = "en-ru", pos = "verb", semanticGroup = "experiences",
             definition = "To unexpectedly meet or experience something.",
             example = "She encountered many difficulties during her first year working abroad."),
@@ -4974,7 +4974,7 @@ object SeedData {
             example = "The journey helped crystallise her thoughts.")
     )
     private fun words9(): List<WordEntity> = listOf(
-        // ━━━ SET 65 — EPIC — Global_issues ━━━
+        // ━━━ SET 65 — EPIC — Глобальные проблемы ━━━
         WordEntity(id = 1601, original = "humanitarian", translation = "гуманитарный", rarity = "EPIC", setId = 65, languagePair = "en-ru", pos = "adjective", semanticGroup = "global_issues",
             definition = "Relating to efforts to improve human welfare and reduce suffering.",
             example = "The organisation launched a humanitarian mission to the disaster zone."),
@@ -5050,7 +5050,7 @@ object SeedData {
         WordEntity(id = 1625, original = "diaspora", translation = "диаспора", rarity = "EPIC", setId = 65, languagePair = "en-ru", pos = "noun", semanticGroup = "global_issues",
             definition = "people who have spread from their homeland",
             example = "The Irish diaspora is found across the world."),
-        // ━━━ SET 66 — EPIC — Language_advanced ━━━
+        // ━━━ SET 66 — EPIC — Язык (продвинутый) ━━━
         WordEntity(id = 1626, original = "rhetoric", translation = "риторика", rarity = "EPIC", setId = 66, languagePair = "en-ru", pos = "noun", semanticGroup = "language_advanced",
             definition = "The art of using language persuasively and effectively.",
             example = "The politician's rhetoric was powerful but lacked substance."),
@@ -5126,7 +5126,7 @@ object SeedData {
         WordEntity(id = 1650, original = "diction", translation = "дикция", rarity = "EPIC", setId = 66, languagePair = "en-ru", pos = "noun", semanticGroup = "language_advanced",
             definition = "the style of enunciation or choice of words in speech",
             example = "Clear diction is essential for public speaking."),
-        // ━━━ SET 67 — EPIC — Law_politics ━━━
+        // ━━━ SET 67 — EPIC — Право и политика ━━━
         WordEntity(id = 1651, original = "abolish", translation = "отменять", rarity = "EPIC", setId = 67, languagePair = "en-ru", pos = "verb", semanticGroup = "law_politics",
             definition = "To formally put an end to a law, system, or practice.",
             example = "The government voted to abolish the death penalty."),
@@ -5202,7 +5202,7 @@ object SeedData {
         WordEntity(id = 1675, original = "adjudicate", translation = "выносить решение", rarity = "EPIC", setId = 67, languagePair = "en-ru", pos = "verb", semanticGroup = "law_politics",
             definition = "to make an official decision about a dispute",
             example = "A panel of judges will adjudicate the competition."),
-        // ━━━ SET 68 — EPIC — Logic_c1 ━━━
+        // ━━━ SET 68 — EPIC — Логика и аргументация ━━━
         WordEntity(id = 1676, original = "inescapable", translation = "неизбежный/неотвратимый", rarity = "EPIC", setId = 68, languagePair = "en-ru", pos = "adjective", semanticGroup = "logic_c1",
             definition = "Impossible to avoid or deny; unavoidable.",
             example = "The inescapable conclusion from the data is that the policy has failed."),
@@ -5354,7 +5354,7 @@ object SeedData {
         WordEntity(id = 1725, original = "induction", translation = "вводный инструктаж", rarity = "EPIC", setId = 69, languagePair = "en-ru", pos = "noun", semanticGroup = "organisation",
             definition = "the process of introducing a new employee to their role",
             example = "All new staff attend a two-day induction."),
-        // ━━━ SET 70 — EPIC — Patterns ━━━
+        // ━━━ SET 70 — EPIC — Закономерности ━━━
         WordEntity(id = 1726, original = "predominant", translation = "преобладающий", rarity = "EPIC", setId = 70, languagePair = "en-ru", pos = "adjective", semanticGroup = "patterns",
             definition = "The most common or noticeable in a group.",
             example = "The predominant feeling in the room was one of relief."),
@@ -5430,7 +5430,7 @@ object SeedData {
         WordEntity(id = 1750, original = "oscillate", translation = "колебаться", rarity = "EPIC", setId = 70, languagePair = "en-ru", pos = "verb", semanticGroup = "patterns",
             definition = "to move or change repeatedly between two points or states",
             example = "Public opinion oscillates between support and opposition."),
-        // ━━━ SET 71 — EPIC — Personal_advanced ━━━
+        // ━━━ SET 71 — EPIC — Личность (продвинутый) ━━━
         WordEntity(id = 1751, original = "aspiration", translation = "стремление", rarity = "EPIC", setId = 71, languagePair = "en-ru", pos = "noun", semanticGroup = "personal_advanced",
             definition = "A strong hope or desire to achieve something great.",
             example = "Her aspiration was to become the first woman to lead the company."),
@@ -5506,7 +5506,7 @@ object SeedData {
         WordEntity(id = 1775, original = "judicious", translation = "благоразумный", rarity = "EPIC", setId = 71, languagePair = "en-ru", pos = "adjective", semanticGroup = "personal_advanced",
             definition = "having or showing good judgement and common sense",
             example = "She made a judicious choice under pressure."),
-        // ━━━ SET 72 — EPIC — Process ━━━
+        // ━━━ SET 72 — EPIC — Процессы ━━━
         WordEntity(id = 1776, original = "preliminary", translation = "предварительный", rarity = "EPIC", setId = 72, languagePair = "en-ru", pos = "adjective", semanticGroup = "process",
             definition = "Happening before the main event; preparing for something.",
             example = "She passed the preliminary round and advanced to the final."),
@@ -5584,7 +5584,7 @@ object SeedData {
             example = "Good logistics are essential for the event to succeed.")
     )
     private fun words10(): List<WordEntity> = listOf(
-        // ━━━ SET 73 — EPIC — Process_c1 ━━━
+        // ━━━ SET 73 — EPIC — Процессы (C1) ━━━
         WordEntity(id = 1801, original = "assess", translation = "оценивать", rarity = "EPIC", setId = 73, languagePair = "en-ru", pos = "verb", semanticGroup = "process_c1",
             definition = "To consider something carefully and make a judgement about it.",
             example = "The teacher assessed each student using both written and oral tests."),
@@ -5660,7 +5660,7 @@ object SeedData {
         WordEntity(id = 1825, original = "pilot", translation = "пилотный", rarity = "EPIC", setId = 73, languagePair = "en-ru", pos = "adjective", semanticGroup = "process_c1",
             definition = "done as a test before being applied more widely",
             example = "We ran a pilot scheme before the full launch."),
-        // ━━━ SET 74 — EPIC — Наука ━━━
+        // ━━━ SET 74 — EPIC — Наука (C1) ━━━
         WordEntity(id = 1826, original = "empirical", translation = "эмпирический", rarity = "EPIC", setId = 74, languagePair = "en-ru", pos = "adjective", semanticGroup = "science",
             definition = "Based on observation and evidence rather than theory.",
             example = "The study provided empirical evidence to support the hypothesis."),
@@ -5736,7 +5736,7 @@ object SeedData {
         WordEntity(id = 1850, original = "microbiology", translation = "микробиология", rarity = "EPIC", setId = 74, languagePair = "en-ru", pos = "noun", semanticGroup = "science",
             definition = "the study of microorganisms such as bacteria and viruses",
             example = "Advances in microbiology have improved medicine."),
-        // ━━━ SET 75 — EPIC — Social_advanced ━━━
+        // ━━━ SET 75 — EPIC — Общество (продвинутый) ━━━
         WordEntity(id = 1851, original = "suppress", translation = "подавлять", rarity = "EPIC", setId = 75, languagePair = "en-ru", pos = "verb", semanticGroup = "social_advanced",
             definition = "To prevent something from being known or from happening.",
             example = "The authorities tried to suppress information about the accident."),
@@ -5812,7 +5812,7 @@ object SeedData {
         WordEntity(id = 1875, original = "disaffected", translation = "недовольный", rarity = "EPIC", setId = 75, languagePair = "en-ru", pos = "adjective", semanticGroup = "social_advanced",
             definition = "dissatisfied and no longer loyal or supportive",
             example = "Disaffected voters stayed home on election day."),
-        // ━━━ SET 76 — LEGENDARY — Advanced_descriptions ━━━
+        // ━━━ SET 76 — LEGENDARY — Изысканные прилагательные ━━━
         WordEntity(id = 1876, original = "ubiquitous", translation = "вездесущий", rarity = "LEGENDARY", setId = 76, languagePair = "en-ru", pos = "adjective", semanticGroup = "advanced_descriptions",
             definition = "Seeming to appear everywhere at the same time.",
             example = "Smartphones have become ubiquitous in modern daily life."),
@@ -5888,7 +5888,7 @@ object SeedData {
         WordEntity(id = 1900, original = "sempiternal", translation = "вечный", rarity = "LEGENDARY", setId = 76, languagePair = "en-ru", pos = "adjective", semanticGroup = "advanced_descriptions",
             definition = "lasting forever; eternal",
             example = "The sempiternal stars guided ancient travellers."),
-        // ━━━ SET 77 — LEGENDARY — Advanced_nouns ━━━
+        // ━━━ SET 77 — LEGENDARY — Редкие существительные ━━━
         WordEntity(id = 1901, original = "zeitgeist", translation = "дух времени", rarity = "LEGENDARY", setId = 77, languagePair = "en-ru", pos = "noun", semanticGroup = "advanced_nouns",
             definition = "The general mood or spirit of a particular period of history.",
             example = "Her novel perfectly captured the zeitgeist of the nineteen sixties."),
@@ -5964,7 +5964,7 @@ object SeedData {
         WordEntity(id = 1925, original = "solipsism", translation = "солипсизм", rarity = "LEGENDARY", setId = 77, languagePair = "en-ru", pos = "noun", semanticGroup = "advanced_nouns",
             definition = "the view that only one's own mind can be known to exist",
             example = "His solipsism made empathy impossible."),
-        // ━━━ SET 78 — LEGENDARY — Advanced_thinking ━━━
+        // ━━━ SET 78 — LEGENDARY — Аналитическое мышление ━━━
         WordEntity(id = 1926, original = "myopic", translation = "близорукий (переносн.)", rarity = "LEGENDARY", setId = 78, languagePair = "en-ru", pos = "adjective", semanticGroup = "advanced_thinking",
             definition = "Short-sighted; lacking foresight or long-term planning.",
             example = "Critics said the policy was myopic and ignored future consequences."),
@@ -6040,7 +6040,7 @@ object SeedData {
         WordEntity(id = 1950, original = "aleatory", translation = "случайный", rarity = "LEGENDARY", setId = 78, languagePair = "en-ru", pos = "adjective", semanticGroup = "advanced_thinking",
             definition = "depending on chance or involving random elements",
             example = "The aleatory structure of the poem mirrors life's unpredictability."),
-        // ━━━ SET 79 — LEGENDARY — Advanced_verbs ━━━
+        // ━━━ SET 79 — LEGENDARY — Изысканные глаголы ━━━
         WordEntity(id = 1951, original = "alleviate", translation = "облегчать", rarity = "LEGENDARY", setId = 79, languagePair = "en-ru", pos = "verb", semanticGroup = "advanced_verbs",
             definition = "To make suffering or a problem less severe.",
             example = "The medication helped to alleviate the pain but did not cure the disease."),
@@ -6116,7 +6116,7 @@ object SeedData {
         WordEntity(id = 1975, original = "abjure", translation = "отрекаться", rarity = "LEGENDARY", setId = 79, languagePair = "en-ru", pos = "verb", semanticGroup = "advanced_verbs",
             definition = "to formally reject or renounce a belief or claim",
             example = "He abjured his earlier position on the matter."),
-        // ━━━ SET 80 — LEGENDARY — Art_literature ━━━
+        // ━━━ SET 80 — LEGENDARY — Литература и искусство ━━━
         WordEntity(id = 1976, original = "verisimilitude", translation = "правдоподобие", rarity = "LEGENDARY", setId = 80, languagePair = "en-ru", pos = "noun", semanticGroup = "art_literature",
             definition = "The appearance of being true or real in fiction or art.",
             example = "The historical novel achieved remarkable verisimilitude in its descriptions."),
@@ -6270,7 +6270,7 @@ object SeedData {
         WordEntity(id = 2025, original = "mendacious", translation = "лживый", rarity = "LEGENDARY", setId = 81, languagePair = "en-ru", pos = "adjective", semanticGroup = "character",
             definition = "not telling the truth; lying",
             example = "His mendacious account fooled everyone at first."),
-        // ━━━ SET 82 — LEGENDARY — Force_change ━━━
+        // ━━━ SET 82 — LEGENDARY — Сила и перемены ━━━
         WordEntity(id = 2026, original = "inexorable", translation = "неумолимый", rarity = "LEGENDARY", setId = 82, languagePair = "en-ru", pos = "adjective", semanticGroup = "force_change",
             definition = "Impossible to stop or prevent; continuing without pity.",
             example = "The inexorable march of technology is changing every industry."),

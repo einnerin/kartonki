@@ -24,6 +24,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material.icons.Icons
@@ -241,12 +242,54 @@ fun SettingsScreen(
             }
 
             // ── Language ───────────────────────────────────────────────────────
-            SectionHeader("Языки")
-            SettingsRow(label = "Изучаемый язык") {
+            SectionHeader("Язык")
+            SettingsRow(label = "Родной язык") {
                 Text(
-                    "Английский → Русский",
+                    NATIVE_LANGUAGES[state.nativeLanguage] ?: state.nativeLanguage,
                     style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowLanguagePicker() },
+                )
+            }
+
+            if (state.showLanguagePicker) {
+                AlertDialog(
+                    onDismissRequest = viewModel::onDismissLanguagePicker,
+                    title = { Text("Выберите родной язык") },
+                    text = {
+                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                            NATIVE_LANGUAGES.entries.forEach { (code, name) ->
+                                val isSelected = code == state.nativeLanguage
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .clip(RoundedCornerShape(8.dp))
+                                        .background(
+                                            if (isSelected) MaterialTheme.colorScheme.primaryContainer
+                                            else MaterialTheme.colorScheme.surface
+                                        )
+                                        .clickable { viewModel.onNativeLanguageSelected(code) }
+                                        .padding(horizontal = 12.dp, vertical = 12.dp),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically,
+                                ) {
+                                    Text(
+                                        name,
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                        color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                                                else MaterialTheme.colorScheme.onSurface,
+                                    )
+                                    if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
+                                }
+                            }
+                        }
+                    },
+                    confirmButton = {},
+                    dismissButton = {
+                        TextButton(onClick = viewModel::onDismissLanguagePicker) { Text("Отмена") }
+                    },
                 )
             }
 
