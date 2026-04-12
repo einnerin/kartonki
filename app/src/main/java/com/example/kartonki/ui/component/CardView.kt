@@ -24,8 +24,10 @@ import androidx.compose.ui.unit.sp
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.theme.BgCard
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
+import com.example.kartonki.ui.theme.localizedName
 
 @Composable
 fun WordCard(
@@ -99,6 +101,7 @@ fun WordCard(
 @Composable
 fun RarityBadge(rarity: Rarity, modifier: Modifier = Modifier) {
     val color = Color(rarity.colorArgb)
+    val s = LocalAppStrings.current
     Surface(
         modifier = modifier,
         color = color.copy(alpha = 0.18f),
@@ -106,7 +109,7 @@ fun RarityBadge(rarity: Rarity, modifier: Modifier = Modifier) {
         shape = RoundedCornerShape(6.dp),
     ) {
         Text(
-            text = rarity.displayName.uppercase(),
+            text = rarity.localizedName(s).uppercase(),
             style = MaterialTheme.typography.labelSmall,
             fontWeight = FontWeight.ExtraBold,
             modifier = Modifier.padding(horizontal = 8.dp, vertical = 4.dp),

@@ -39,6 +39,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.ui.theme.AccentGold
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
 import com.example.kartonki.ui.theme.RarityLegendary
@@ -54,6 +55,7 @@ fun PackShopScreen(
 ) {
     val state by viewModel.uiState.collectAsState()
     val canOpen = state.freePackCount >= 1
+    val s = LocalAppStrings.current
 
     Box(
         modifier = Modifier
@@ -75,7 +77,7 @@ fun PackShopScreen(
             }
             Spacer(Modifier.width(4.dp))
             Text(
-                text = "Магазин Паков",
+                text = s.shopTitle,
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold,
                 color = AccentGold,
@@ -122,7 +124,7 @@ fun PackShopScreen(
 
             // Pack name
             Text(
-                text = "Английский пак",
+                text = s.shopPackName,
                 style = MaterialTheme.typography.headlineMedium,
                 fontWeight = FontWeight.ExtraBold,
                 color = AccentGold,
@@ -133,7 +135,7 @@ fun PackShopScreen(
 
             // Card count
             Text(
-                text = "5 карточек",
+                text = s.shopPackCards,
                 style = MaterialTheme.typography.bodyLarge,
                 color = TextSecondary,
                 textAlign = TextAlign.Center,
@@ -163,8 +165,8 @@ fun PackShopScreen(
                         contentAlignment = Alignment.Center,
                     ) {
                         val label = if (state.freePackCount > 1)
-                            "Открыть  (${state.freePackCount} пака)"
-                        else "Открыть"
+                            s.shopOpenMultiple(state.freePackCount)
+                        else s.shopOpenButton
                         Text(
                             text = label,
                             fontSize = 17.sp,
@@ -186,7 +188,7 @@ fun PackShopScreen(
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         Text(
-                            text = "Нет паков",
+                            text = s.shopNoPacks,
                             fontSize = 15.sp,
                             fontWeight = FontWeight.Medium,
                             color = TextSecondary,
@@ -195,7 +197,7 @@ fun PackShopScreen(
                 }
                 Spacer(Modifier.height(8.dp))
                 Text(
-                    text = "Играй PvE или PvP чтобы получить бесплатный пак",
+                    text = s.shopEarnPacks,
                     style = MaterialTheme.typography.bodySmall,
                     color = TextSecondary.copy(alpha = 0.6f),
                     textAlign = TextAlign.Center,

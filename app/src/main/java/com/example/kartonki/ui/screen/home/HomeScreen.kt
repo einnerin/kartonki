@@ -53,6 +53,7 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
 import com.example.kartonki.ui.screen.shop.PackShopViewModel
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.AccentBlue
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.AccentPurple
@@ -76,6 +77,7 @@ fun HomeScreen(
     LaunchedEffect(Unit) { visible = true }
     val packState by packViewModel.uiState.collectAsState()
     val homeState by homeViewModel.uiState.collectAsState()
+    val s = LocalAppStrings.current
 
     val lifecycleOwner = LocalLifecycleOwner.current
     DisposableEffect(lifecycleOwner) {
@@ -147,7 +149,7 @@ fun HomeScreen(
                     )
                     Spacer(Modifier.height(8.dp))
                     Text(
-                        text = stringResource(R.string.home_subtitle),
+                        text = s.homeSubtitle,
                         style = MaterialTheme.typography.bodyMedium,
                         color = TextSecondary,
                         textAlign = TextAlign.Center,
@@ -168,7 +170,7 @@ fun HomeScreen(
                     verticalArrangement = Arrangement.spacedBy(14.dp),
                 ) {
                     GradientButton(
-                        text = stringResource(R.string.home_pve_button),
+                        text = s.homePveButton,
                         gradient = Brush.horizontalGradient(
                             listOf(Color(0xFF1565C0), AccentBlue)
                         ),
@@ -177,7 +179,7 @@ fun HomeScreen(
                         modifier = Modifier.fillMaxWidth(),
                     )
                     GradientButton(
-                        text = stringResource(R.string.home_pvp_button),
+                        text = s.homePvpButton,
                         gradient = Brush.horizontalGradient(
                             listOf(Color(0xFF6A0DAD), AccentPurple)
                         ),
@@ -186,7 +188,7 @@ fun HomeScreen(
                         modifier = Modifier.fillMaxWidth(),
                     )
                     GradientButton(
-                        text = stringResource(R.string.home_collection_button),
+                        text = s.homeCollectionButton,
                         gradient = Brush.horizontalGradient(
                             listOf(Color(0xFF00695C), AccentTeal)
                         ),
@@ -195,7 +197,7 @@ fun HomeScreen(
                         modifier = Modifier.fillMaxWidth(),
                     )
                     GradientButton(
-                        text = "🛒  Магазин паков",
+                        text = s.homeShopButton,
                         gradient = Brush.horizontalGradient(
                             listOf(Color(0xFF7B3F00), AccentGold)
                         ),
@@ -223,6 +225,7 @@ private fun ProblemWordsBanner(
     modifier: Modifier = Modifier,
 ) {
     val warningColor = Color(0xFFFF6F00)
+    val s = LocalAppStrings.current
     Box(
         modifier = modifier
             .glowEffect(warningColor, glowRadius = 14.dp, cornerRadius = 16.dp, alpha = 0.35f)
@@ -248,13 +251,13 @@ private fun ProblemWordsBanner(
             Text("⚠️", fontSize = 18.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = "Проблемные слова: $count",
+                    text = s.homeProblemWordsTitle(count),
                     style = MaterialTheme.typography.titleSmall,
                     fontWeight = FontWeight.Bold,
                     color = warningColor,
                 )
                 Text(
-                    text = "Поработать над ошибками?",
+                    text = s.homeProblemWordsSubtitle,
                     style = MaterialTheme.typography.bodySmall,
                     color = TextSecondary,
                 )
@@ -296,7 +299,7 @@ private fun FreePackIndicator(
         ) {
             Text("🎴", fontSize = 14.sp)
             Text(
-                text = if (isReady) "Пак готов!" else "$activityCount/3",
+                text = if (isReady) LocalAppStrings.current.homePackReady else "$activityCount/3",
                 style = MaterialTheme.typography.labelMedium,
                 fontWeight = FontWeight.Bold,
                 color = if (isReady) AccentGold else TextSecondary,

@@ -60,6 +60,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.kartonki.ui.theme.LocalAppStrings
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
@@ -72,6 +73,7 @@ fun SettingsScreen(
 ) {
     val state by viewModel.uiState.collectAsState()
     val context = LocalContext.current
+    val s = LocalAppStrings.current
 
     val photoPickerLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.PickVisualMedia(),
@@ -82,7 +84,7 @@ fun SettingsScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Настройки") },
+                title = { Text(s.settingsTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -101,11 +103,11 @@ fun SettingsScreen(
             verticalArrangement = Arrangement.spacedBy(0.dp),
         ) {
             // ── Profile ────────────────────────────────────────────────────────
-            SectionHeader("Профиль")
+            SectionHeader(s.settingsProfileSection)
 
             // Avatar
             Text(
-                "Аватар",
+                s.settingsAvatarLabel,
                 style = MaterialTheme.typography.labelMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(bottom = 8.dp),
@@ -139,7 +141,7 @@ fun SettingsScreen(
                         bitmap?.let {
                             Image(
                                 bitmap = it,
-                                contentDescription = "Аватар",
+                                contentDescription = s.settingsAvatarLabel,
                                 contentScale = ContentScale.Crop,
                                 modifier = Modifier.fillMaxSize(),
                             )
@@ -155,7 +157,7 @@ fun SettingsScreen(
                         )
                     },
                 ) {
-                    Text("Из галереи")
+                    Text(s.settingsFromGallery)
                 }
             }
             // Emoji grid
@@ -194,7 +196,7 @@ fun SettingsScreen(
                 OutlinedTextField(
                     value = state.nameInput,
                     onValueChange = viewModel::onNameInputChange,
-                    label = { Text("Имя игрока") },
+                    label = { Text(s.settingsPlayerName) },
                     singleLine = true,
                     trailingIcon = {
                         Row {
@@ -205,7 +207,7 @@ fun SettingsScreen(
                     },
                     modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp),
                 )
-                TextButton(onClick = viewModel::onCancelEditName) { Text("Отмена") }
+                TextButton(onClick = viewModel::onCancelEditName) { Text(s.settingsCancelButton) }
             } else {
                 Row(
                     modifier = Modifier
@@ -218,7 +220,7 @@ fun SettingsScreen(
                 ) {
                     Column {
                         Text(
-                            "Имя игрока",
+                            s.settingsPlayerName,
                             style = MaterialTheme.typography.labelSmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
@@ -234,8 +236,8 @@ fun SettingsScreen(
             }
 
             // ── Appearance ─────────────────────────────────────────────────────
-            SectionHeader("Оформление")
-            SettingsRow(label = "Тёмная тема") {
+            SectionHeader(s.settingsAppearanceSection)
+            SettingsRow(label = s.settingsDarkTheme) {
                 Switch(
                     checked = state.isDarkTheme,
                     onCheckedChange = viewModel::onThemeToggle,
@@ -243,8 +245,8 @@ fun SettingsScreen(
             }
 
             // ── Language ───────────────────────────────────────────────────────
-            SectionHeader("Язык")
-            SettingsRow(label = "Язык изучения") {
+            SectionHeader(s.settingsLanguageSection)
+            SettingsRow(label = s.settingsStudyLanguage) {
                 Text(
                     STUDY_LANGUAGES[state.languagePair] ?: state.languagePair,
                     style = MaterialTheme.typography.bodyMedium,
@@ -253,18 +255,18 @@ fun SettingsScreen(
                     modifier = Modifier.clickable { viewModel.onShowStudyLanguagePicker() },
                 )
             }
-            SettingsRow(label = "Задания с определением") {
+            SettingsRow(label = s.settingsDefinitionMode) {
                 Text(
-                    CONTEXT_QUIZ_MODES[state.definitionQuizMode] ?: state.definitionQuizMode,
+                    s.quizModeLabels[state.definitionQuizMode] ?: state.definitionQuizMode,
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.Medium,
                     modifier = Modifier.clickable { viewModel.onShowDefinitionModePicker() },
                 )
             }
-            SettingsRow(label = "Задания со вставкой слова") {
+            SettingsRow(label = s.settingsFillBlankMode) {
                 Text(
-                    CONTEXT_QUIZ_MODES[state.fillBlankQuizMode] ?: state.fillBlankQuizMode,
+                    s.quizModeLabels[state.fillBlankQuizMode] ?: state.fillBlankQuizMode,
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.Medium,
@@ -272,9 +274,9 @@ fun SettingsScreen(
                 )
             }
 
-            SettingsRow(label = "Типы заданий (PvE)") {
+            SettingsRow(label = s.settingsQuizTypesLabel) {
                 Text(
-                    "${state.enabledQuizTypes.size} из ${QUIZ_TYPE_LABELS.size}",
+                    s.settingsQuizTypesCount(state.enabledQuizTypes.size, s.quizTypeLabels.size),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.Medium,
@@ -285,10 +287,10 @@ fun SettingsScreen(
             if (state.showQuizTypesPicker) {
                 AlertDialog(
                     onDismissRequest = viewModel::onDismissQuizTypesPicker,
-                    title = { Text("Типы заданий (PvE)") },
+                    title = { Text(s.settingsQuizTypesLabel) },
                     text = {
                         Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                            QUIZ_TYPE_LABELS.entries.forEach { (key, label) ->
+                            s.quizTypeLabels.entries.forEach { (key, label) ->
                                 val isChecked = key in state.enabledQuizTypes
                                 Row(
                                     modifier = Modifier
@@ -312,14 +314,14 @@ fun SettingsScreen(
                         }
                     },
                     confirmButton = {
-                        TextButton(onClick = viewModel::onDismissQuizTypesPicker) { Text("Готово") }
+                        TextButton(onClick = viewModel::onDismissQuizTypesPicker) { Text(s.settingsDone) }
                     },
                 )
             }
 
             if (state.showDefinitionModePicker) {
                 QuizModePickerDialog(
-                    title = "Задания с определением",
+                    title = s.settingsDefinitionMode,
                     selectedMode = state.definitionQuizMode,
                     onSelect = { viewModel.onDefinitionModeSelected(it) },
                     onDismiss = viewModel::onDismissDefinitionModePicker,
@@ -327,16 +329,16 @@ fun SettingsScreen(
             }
             if (state.showFillBlankModePicker) {
                 QuizModePickerDialog(
-                    title = "Задания со вставкой слова",
+                    title = s.settingsFillBlankMode,
                     selectedMode = state.fillBlankQuizMode,
                     onSelect = { viewModel.onFillBlankModeSelected(it) },
                     onDismiss = viewModel::onDismissFillBlankModePicker,
                 )
             }
 
-            SettingsRow(label = "Проблемные слова учитывать из") {
+            SettingsRow(label = s.settingsProblemWordsSource) {
                 Text(
-                    PROBLEM_WORDS_SOURCE_LABELS[state.problemWordsSource] ?: state.problemWordsSource,
+                    s.problemWordsSourceLabels[state.problemWordsSource] ?: state.problemWordsSource,
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.Medium,
@@ -347,10 +349,10 @@ fun SettingsScreen(
             if (state.showProblemWordsSourcePicker) {
                 AlertDialog(
                     onDismissRequest = viewModel::onDismissProblemWordsSourcePicker,
-                    title = { Text("Учитывать ошибки из") },
+                    title = { Text(s.settingsProblemWordsSourceTitle) },
                     text = {
                         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                            PROBLEM_WORDS_SOURCE_LABELS.entries.forEach { (key, name) ->
+                            s.problemWordsSourceLabels.entries.forEach { (key, name) ->
                                 val isSelected = key == state.problemWordsSource
                                 Row(
                                     modifier = Modifier
@@ -379,12 +381,12 @@ fun SettingsScreen(
                     },
                     confirmButton = {},
                     dismissButton = {
-                        TextButton(onClick = viewModel::onDismissProblemWordsSourcePicker) { Text("Отмена") }
+                        TextButton(onClick = viewModel::onDismissProblemWordsSourcePicker) { Text(s.settingsCancelButton) }
                     },
                 )
             }
 
-            SettingsRow(label = "Родной язык") {
+            SettingsRow(label = s.settingsNativeLanguage) {
                 Text(
                     NATIVE_LANGUAGES[state.nativeLanguage] ?: state.nativeLanguage,
                     style = MaterialTheme.typography.bodyMedium,
@@ -397,7 +399,7 @@ fun SettingsScreen(
             if (state.showStudyLanguagePicker) {
                 AlertDialog(
                     onDismissRequest = viewModel::onDismissStudyLanguagePicker,
-                    title = { Text("Язык изучения") },
+                    title = { Text(s.settingsStudyLanguageTitle) },
                     text = {
                         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                             STUDY_LANGUAGES.entries.forEach { (pair, name) ->
@@ -429,7 +431,7 @@ fun SettingsScreen(
                     },
                     confirmButton = {},
                     dismissButton = {
-                        TextButton(onClick = viewModel::onDismissStudyLanguagePicker) { Text("Отмена") }
+                        TextButton(onClick = viewModel::onDismissStudyLanguagePicker) { Text(s.settingsCancelButton) }
                     },
                 )
             }
@@ -437,7 +439,7 @@ fun SettingsScreen(
             if (state.showLanguagePicker) {
                 AlertDialog(
                     onDismissRequest = viewModel::onDismissLanguagePicker,
-                    title = { Text("Выберите родной язык") },
+                    title = { Text(s.settingsChooseNativeLanguage) },
                     text = {
                         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                             NATIVE_LANGUAGES.entries.forEach { (code, name) ->
@@ -469,18 +471,18 @@ fun SettingsScreen(
                     },
                     confirmButton = {},
                     dismissButton = {
-                        TextButton(onClick = viewModel::onDismissLanguagePicker) { Text("Отмена") }
+                        TextButton(onClick = viewModel::onDismissLanguagePicker) { Text(s.settingsCancelButton) }
                     },
                 )
             }
 
             // ── Navigation links ───────────────────────────────────────────────
-            SectionHeader("Прогресс")
-            NavRow("📊  Статистика игрока", onClick = onNavigateToStats)
+            SectionHeader(s.settingsProgressSection)
+            NavRow(s.settingsPlayerStats, onClick = onNavigateToStats)
             Spacer(Modifier.height(8.dp))
-            NavRow("📖  Статистика по словам", onClick = onNavigateToWordStats)
+            NavRow(s.settingsWordStats, onClick = onNavigateToWordStats)
             Spacer(Modifier.height(8.dp))
-            NavRow("🏆  Достижения", onClick = onNavigateToAchievements)
+            NavRow(s.settingsAchievements, onClick = onNavigateToAchievements)
             Spacer(Modifier.height(32.dp))
         }
     }
@@ -524,12 +526,13 @@ private fun QuizModePickerDialog(
     onSelect: (String) -> Unit,
     onDismiss: () -> Unit,
 ) {
+    val s = LocalAppStrings.current
     AlertDialog(
         onDismissRequest = onDismiss,
         title = { Text(title) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                CONTEXT_QUIZ_MODES.entries.forEach { (mode, name) ->
+                s.quizModeLabels.entries.forEach { (mode, name) ->
                     val isSelected = mode == selectedMode
                     Row(
                         modifier = Modifier
@@ -558,7 +561,7 @@ private fun QuizModePickerDialog(
         },
         confirmButton = {},
         dismissButton = {
-            TextButton(onClick = onDismiss) { Text("Отмена") }
+            TextButton(onClick = onDismiss) { Text(s.settingsCancelButton) }
         },
     )
 }

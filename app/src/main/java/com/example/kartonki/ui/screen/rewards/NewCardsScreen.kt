@@ -34,6 +34,7 @@ import androidx.compose.ui.unit.sp
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.theme.AccentGold
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
 import com.example.kartonki.ui.theme.TextSecondary
@@ -45,6 +46,7 @@ fun NewCardsScreen(
     onDismiss: () -> Unit,
 ) {
     BackHandler { onDismiss() }
+    val s = LocalAppStrings.current
 
     Box(
         modifier = Modifier
@@ -69,14 +71,14 @@ fun NewCardsScreen(
                 horizontalAlignment = Alignment.CenterHorizontally,
             ) {
                 Text(
-                    text = "🎴 Новые карточки!",
+                    text = s.newCardsTitle,
                     style = MaterialTheme.typography.headlineMedium,
                     fontWeight = FontWeight.ExtraBold,
                     color = AccentGold,
                 )
                 Spacer(Modifier.height(6.dp))
                 Text(
-                    text = "Слова изучены — карточки получены!",
+                    text = s.newCardsSubtitle,
                     style = MaterialTheme.typography.bodyMedium,
                     color = TextSecondary,
                 )
@@ -121,7 +123,7 @@ fun NewCardsScreen(
                         contentAlignment = Alignment.Center,
                     ) {
                         Text(
-                            text = "Забрать всё",
+                            text = s.newCardsCollect,
                             fontSize = 17.sp,
                             fontWeight = FontWeight.Bold,
                             color = Color.White,

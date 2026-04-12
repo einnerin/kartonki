@@ -38,6 +38,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.domain.model.PlayerStats
+import com.example.kartonki.ui.theme.LocalAppStrings
 import kotlin.math.roundToInt
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -47,11 +48,12 @@ fun PlayerStatsScreen(
     viewModel: PlayerStatsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
+    val s = LocalAppStrings.current
 
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Статистика игрока") },
+                title = { Text(s.statsPlayerTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -80,61 +82,61 @@ fun PlayerStatsScreen(
         ) {
             Spacer(Modifier.height(4.dp))
 
-            // ── Прогресс ──────────────────────────────────────────────────────
-            SectionHeader("Прогресс")
+            // ── Progress ──────────────────────────────────────────────────────
+            SectionHeader(s.statsProgressSection)
             HeroStatCard(
                 icon = "📚",
                 value = stats.wordsLearned.toString(),
-                label = "Слов изучено",
+                label = s.statsWordsLearned,
             )
             InlineStatRow(
                 icon = "🎯",
-                label = "Точность ответов",
+                label = s.statsAccuracy,
                 value = "${(stats.accuracy * 100).roundToInt()}%",
             )
 
-            // ── Серия ──────────────────────────────────────────────────────────
-            SectionHeader("Серия")
+            // ── Streak ────────────────────────────────────────────────────────
+            SectionHeader(s.statsSeriesSection)
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 StatCell(
                     icon = "🔥",
-                    value = "${stats.currentStreak} дн.",
-                    label = "Текущая",
+                    value = s.statsStreakDays(stats.currentStreak),
+                    label = s.statsCurrentStreakLabel,
                     modifier = Modifier.weight(1f),
                 )
                 StatCell(
                     icon = "📅",
-                    value = "${stats.longestStreak} дн.",
-                    label = "Рекорд",
+                    value = s.statsStreakDays(stats.longestStreak),
+                    label = s.statsRecordLabel,
                     modifier = Modifier.weight(1f),
                 )
             }
 
             // ── PvP ───────────────────────────────────────────────────────────
-            SectionHeader("PvP-режим")
+            SectionHeader(s.statsPvpSection)
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 StatCell(
                     icon = "🏆",
                     value = stats.pvpWins.toString(),
-                    label = "Победы",
+                    label = s.statsPvpWins,
                     modifier = Modifier.weight(1f),
                 )
                 StatCell(
                     icon = "💀",
                     value = stats.pvpLosses.toString(),
-                    label = "Поражения",
+                    label = s.statsPvpLosses,
                     modifier = Modifier.weight(1f),
                 )
                 StatCell(
                     icon = "🤝",
                     value = stats.pvpDraws.toString(),
-                    label = "Ничьи",
+                    label = s.statsPvpDraws,
                     modifier = Modifier.weight(1f),
                 )
             }
             InlineStatRow(
                 icon = "⭐",
-                label = "Лучший счёт",
+                label = s.statsBestPvpScore,
                 value = stats.bestPvpScore.toString(),
             )
 

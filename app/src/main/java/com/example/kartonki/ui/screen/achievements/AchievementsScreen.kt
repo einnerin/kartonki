@@ -42,6 +42,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.domain.model.AchievementState
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.RarityLegendary
 import com.example.kartonki.ui.theme.glowEffect
 import java.text.SimpleDateFormat
@@ -55,11 +56,12 @@ fun AchievementsScreen(
     viewModel: AchievementsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
+    val s = LocalAppStrings.current
 
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Достижения") },
+                title = { Text(s.achievementsTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -93,12 +95,12 @@ fun AchievementsScreen(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text(
-                    "Получено: $unlockedCount / $total",
+                    s.achievementsProgress(unlockedCount, total),
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                 )
                 Text(
-                    if (unlockedCount == total) "Все получены! 🎉" else "${total - unlockedCount} осталось",
+                    if (unlockedCount == total) s.achievementsAllDone else s.achievementsRemaining(total - unlockedCount),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -196,7 +198,7 @@ private fun AchievementCard(state: AchievementState) {
             ) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     Text(
-                        text = "🏆 Награда",
+                        text = LocalAppStrings.current.achievementsReward,
                         style = MaterialTheme.typography.labelSmall,
                         color = if (isUnlocked) RarityLegendary else MaterialTheme.colorScheme.onSurfaceVariant,
                     )

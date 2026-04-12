@@ -33,12 +33,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.kartonki.R
 import com.example.kartonki.domain.model.DeckLevel
+import com.example.kartonki.ui.theme.LocalAppStrings
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -48,11 +47,12 @@ fun PvpDeckSelectScreen(
     viewModel: PvpDeckSelectViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    val s = LocalAppStrings.current
 
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(stringResource(R.string.pvp_deck_select_title)) },
+                title = { Text(s.pvpDeckSelectTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -71,7 +71,7 @@ fun PvpDeckSelectScreen(
         if (uiState.decks.isEmpty()) {
             Box(Modifier.fillMaxSize().padding(innerPadding), contentAlignment = Alignment.Center) {
                 Text(
-                    text = stringResource(R.string.pvp_no_decks),
+                    text = s.pvpNoDecks,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
@@ -88,7 +88,7 @@ fun PvpDeckSelectScreen(
             Spacer(Modifier.height(16.dp))
 
             PlayerSection(
-                label = stringResource(R.string.pvp_player1_label),
+                label = s.pvpPlayer1Label,
                 name = uiState.player1Name,
                 onNameChange = { viewModel.setPlayer1Name(it) },
                 decks = uiState.decks,
@@ -101,7 +101,7 @@ fun PvpDeckSelectScreen(
             Spacer(Modifier.height(8.dp))
 
             PlayerSection(
-                label = stringResource(R.string.pvp_player2_label),
+                label = s.pvpPlayer2Label,
                 name = uiState.player2Name,
                 onNameChange = { viewModel.setPlayer2Name(it) },
                 decks = uiState.decks,
@@ -113,7 +113,7 @@ fun PvpDeckSelectScreen(
 
             if (!uiState.levelsMatch) {
                 Text(
-                    text = stringResource(R.string.pvp_level_mismatch),
+                    text = s.pvpLevelMismatch,
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.error,
                     modifier = Modifier
@@ -131,7 +131,7 @@ fun PvpDeckSelectScreen(
                 enabled = uiState.canStart,
                 modifier = Modifier.fillMaxWidth(),
             ) {
-                Text(stringResource(R.string.pvp_start_game))
+                Text(s.pvpStartGame)
             }
             Spacer(Modifier.height(24.dp))
         }
@@ -154,7 +154,7 @@ private fun PlayerSection(
         OutlinedTextField(
             value = name,
             onValueChange = onNameChange,
-            label = { Text(stringResource(R.string.pvp_name_hint)) },
+            label = { Text(LocalAppStrings.current.pvpNameHint) },
             singleLine = true,
             modifier = Modifier.fillMaxWidth(),
         )
@@ -181,11 +181,12 @@ private fun DeckDropdown(
         onExpandedChange = { expanded = it },
         modifier = Modifier.fillMaxWidth(),
     ) {
+        val ls = LocalAppStrings.current
         OutlinedTextField(
-            value = selected?.let { "${it.name}  ${DeckLevel.starsFor(it.level)}  (${it.cardCount} карт)" } ?: "",
+            value = selected?.let { "${it.name}  ${DeckLevel.starsFor(it.level)}  (${ls.pvpDeckCardCount(it.cardCount)})" } ?: "",
             onValueChange = {},
             readOnly = true,
-            label = { Text(stringResource(R.string.pvp_deck_hint)) },
+            label = { Text(ls.pvpDeckHint) },
             trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded) },
             modifier = Modifier
                 .fillMaxWidth()
@@ -198,7 +199,7 @@ private fun DeckDropdown(
             decks.forEach { deck ->
                 DropdownMenuItem(
                     text = {
-                        Text("${deck.name}  ${DeckLevel.starsFor(deck.level)}  — ${deck.cardCount} карт")
+                        Text("${deck.name}  ${DeckLevel.starsFor(deck.level)}  — ${ls.pvpDeckCardCount(deck.cardCount)}")
                     },
                     onClick = {
                         onSelected(deck)

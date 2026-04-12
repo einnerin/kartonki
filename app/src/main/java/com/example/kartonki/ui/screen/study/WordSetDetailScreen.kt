@@ -38,6 +38,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.R
 import com.example.kartonki.domain.model.Word
+import com.example.kartonki.ui.theme.LocalAppStrings
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -47,6 +48,7 @@ fun WordSetDetailScreen(
     viewModel: WordSetDetailViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    val s = LocalAppStrings.current
 
     Scaffold(
         topBar = {
@@ -71,7 +73,7 @@ fun WordSetDetailScreen(
                     enabled = !uiState.isLoading && uiState.words.isNotEmpty(),
                     modifier = Modifier.fillMaxWidth(),
                 ) {
-                    Text(stringResource(R.string.set_detail_start_button))
+                    Text(s.setDetailStartButton)
                 }
             }
         },
@@ -96,11 +98,7 @@ fun WordSetDetailScreen(
                             horizontalArrangement = Arrangement.SpaceBetween,
                         ) {
                             Text(
-                                text = stringResource(
-                                    R.string.set_detail_progress,
-                                    uiState.introducedWords,
-                                    uiState.words.size,
-                                ),
+                                text = s.setDetailProgress(uiState.introducedWords, uiState.words.size),
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                             )

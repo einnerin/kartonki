@@ -46,6 +46,8 @@ import com.example.kartonki.R
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
+import com.example.kartonki.ui.theme.LocalAppStrings
+import com.example.kartonki.ui.theme.localizedName
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -65,15 +67,16 @@ fun CollectionScreen(
         onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
     }
 
+    val s = LocalAppStrings.current
     Scaffold(
         topBar = {
             TopAppBar(
                 title = {
                     Column {
-                        Text(stringResource(R.string.collection_title))
+                        Text(s.collectionTitle)
                         if (!uiState.isLoading) {
                             Text(
-                                text = stringResource(R.string.collection_count, uiState.totalCount),
+                                text = s.collectionCount(uiState.totalCount),
                                 style = MaterialTheme.typography.labelSmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                             )
@@ -90,7 +93,7 @@ fun CollectionScreen(
         floatingActionButton = {
             ExtendedFloatingActionButton(
                 onClick = onNavigateToDeckBuilder,
-                text = { Text(stringResource(R.string.collection_build_deck)) },
+                text = { Text(s.collectionBuildDeck) },
                 icon = { Text("🃏") },
             )
         },
@@ -112,7 +115,7 @@ fun CollectionScreen(
                     if (uiState.words.isEmpty()) {
                         Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                             Text(
-                                text = stringResource(R.string.collection_empty),
+                                text = s.collectionEmpty,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                             )
                         }
@@ -136,6 +139,7 @@ private fun RarityFilterRow(
     onSelect: (Rarity?) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val s = LocalAppStrings.current
     Row(
         modifier = modifier,
         horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -143,14 +147,14 @@ private fun RarityFilterRow(
         FilterChip(
             selected = selected == null,
             onClick = { onSelect(null) },
-            label = { Text(stringResource(R.string.filter_all)) },
+            label = { Text(s.filterAll) },
         )
         Rarity.entries.forEach { rarity ->
             val color = Color(rarity.colorArgb)
             FilterChip(
                 selected = selected == rarity,
                 onClick = { onSelect(rarity) },
-                label = { Text(rarity.displayName) },
+                label = { Text(rarity.localizedName(s)) },
                 colors = FilterChipDefaults.filterChipColors(
                     selectedContainerColor = color.copy(alpha = 0.2f),
                     selectedLabelColor = color,

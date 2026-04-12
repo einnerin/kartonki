@@ -49,6 +49,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.theme.AccentGold
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
 import com.example.kartonki.ui.theme.TextSecondary
@@ -61,6 +62,7 @@ fun PackOpeningScreen(
     viewModel: PackOpeningViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
+    val s = LocalAppStrings.current
 
     BackHandler {
         if (state.allRevealed) onFinished()
@@ -85,7 +87,7 @@ fun PackOpeningScreen(
             ) {
                 CircularProgressIndicator(color = AccentGold, modifier = Modifier.size(48.dp))
                 Text(
-                    text = "Открываем пак...",
+                    text = s.packOpeningLoading,
                     style = MaterialTheme.typography.bodyLarge,
                     color = TextSecondary,
                 )
@@ -98,7 +100,7 @@ fun PackOpeningScreen(
                 Spacer(Modifier.height(16.dp))
 
                 Text(
-                    text = "✦  Открытие пака  ✦",
+                    text = s.packOpeningTitle,
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.ExtraBold,
                     color = AccentGold,
@@ -106,7 +108,7 @@ fun PackOpeningScreen(
                 )
                 Spacer(Modifier.height(4.dp))
                 Text(
-                    text = "${state.revealedCount}/${state.cards.size} открыто",
+                    text = s.packOpeningProgress(state.revealedCount, state.cards.size),
                     style = MaterialTheme.typography.bodySmall,
                     color = TextSecondary,
                 )
@@ -138,7 +140,7 @@ fun PackOpeningScreen(
                 ) {
                     if (!state.allRevealed) {
                         GoldGradientButton(
-                            text = "Открыть все",
+                            text = s.packOpeningRevealAll,
                             onClick = { viewModel.revealAll() },
                         )
                     } else {
@@ -163,7 +165,7 @@ fun PackOpeningScreen(
                                     contentAlignment = Alignment.Center,
                                 ) {
                                     Text(
-                                        text = "В магазин",
+                                        text = s.packOpeningToShop,
                                         fontSize = 16.sp,
                                         fontWeight = FontWeight.Bold,
                                         color = Color.White,
@@ -181,7 +183,7 @@ fun PackOpeningScreen(
                                 ),
                             ) {
                                 Text(
-                                    text = "На главную",
+                                    text = s.packOpeningToHome,
                                     fontSize = 16.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = MaterialTheme.colorScheme.onSurfaceVariant,

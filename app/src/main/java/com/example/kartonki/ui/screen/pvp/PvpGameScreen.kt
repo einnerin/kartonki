@@ -80,6 +80,7 @@ import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
 import com.example.kartonki.ui.theme.BgMedium
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.TextSecondary
 
 private val SurrenderRed = Color(0xFFEF5350)
@@ -173,14 +174,16 @@ private fun HandSelectionScreen(
                     titleContentColor = Color.White,
                 ),
                 title = {
+                    val s = LocalAppStrings.current
                     Text(
-                        "Ход: ${activePlayer?.name ?: ""}",
+                        s.pvpTurn(activePlayer?.name ?: ""),
                         fontWeight = FontWeight.Bold,
                     )
                 },
                 actions = {
+                    val s = LocalAppStrings.current
                     TextButton(onClick = { showSurrenderDialog = true }) {
-                        Text("Сдаться", color = SurrenderRed, fontWeight = FontWeight.Bold)
+                        Text(s.pvpSurrender, color = SurrenderRed, fontWeight = FontWeight.Bold)
                     }
                 },
             )
@@ -218,8 +221,9 @@ private fun HandSelectionScreen(
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
                 verticalArrangement = Arrangement.spacedBy(4.dp),
             ) {
+                val s = LocalAppStrings.current
                 Text(
-                    text = "Выберите карту для атаки",
+                    text = s.pvpSelectCard,
                     style = MaterialTheme.typography.titleSmall,
                     color = TextSecondary,
                 )
@@ -228,7 +232,7 @@ private fun HandSelectionScreen(
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
                     Text(
-                        text = "В колоде: ${deckCards.size}",
+                        text = s.pvpInDeck(deckCards.size),
                         style = MaterialTheme.typography.bodySmall,
                         color = TextSecondary.copy(alpha = 0.7f),
                     )
@@ -288,14 +292,16 @@ private fun QuizScreen(
                     titleContentColor = Color.White,
                 ),
                 title = {
+                    val s = LocalAppStrings.current
                     Text(
-                        "Задание для ${phase.defenderName}",
+                        s.pvpTaskFor(phase.defenderName),
                         fontWeight = FontWeight.Bold,
                     )
                 },
                 actions = {
+                    val s = LocalAppStrings.current
                     TextButton(onClick = { showSurrenderDialog = true }) {
-                        Text("Сдаться", color = SurrenderRed, fontWeight = FontWeight.Bold)
+                        Text(s.pvpSurrender, color = SurrenderRed, fontWeight = FontWeight.Bold)
                     }
                 },
             )
@@ -384,7 +390,7 @@ private fun QuizScreen(
                             .padding(bottom = 24.dp),
                         shape = RoundedCornerShape(14.dp),
                     ) {
-                        Text("Продолжить", fontWeight = FontWeight.Bold)
+                        Text(LocalAppStrings.current.pvpContinue, fontWeight = FontWeight.Bold)
                     }
                 }
             }
@@ -457,6 +463,7 @@ private fun GameOverScreen(
 ) {
     val loserIndex = phase.loserIndex
     val isForced = loserIndex != null  // forfeit or AFK
+    val s = LocalAppStrings.current
 
     // In forced endings the winner is the other player
     val winner = if (isForced) {
@@ -467,10 +474,11 @@ private fun GameOverScreen(
     }
 
     val headerEmoji = if (isForced) "🏳️" else "🏆"
-    val headerText  = if (isForced) "Игра завершена" else "Игра окончена!"
+    val headerText  = if (isForced) s.pvpGameEnded else s.pvpGameOver
+    val defaultName = players.getOrNull(loserIndex ?: 0)?.name ?: ""
     val reasonText  = when (phase.reason) {
-        GameOverReason.FORFEIT -> "${players.getOrNull(loserIndex!!)?.name ?: "Игрок"} сдался(-ась)."
-        GameOverReason.AFK     -> "${players.getOrNull(loserIndex!!)?.name ?: "Игрок"} выбыл(-а) за неактивность."
+        GameOverReason.FORFEIT -> s.pvpForfeit(defaultName)
+        GameOverReason.AFK     -> s.pvpAfk(defaultName)
         GameOverReason.NORMAL  -> null
     }
 
@@ -526,7 +534,7 @@ private fun GameOverScreen(
                             color = if (player == winner) MaterialTheme.colorScheme.primary else TextSecondary,
                         )
                         Text(
-                            "${player.score} очков",
+                            s.pvpScore(player.score),
                             style = MaterialTheme.typography.titleLarge,
                             fontWeight = FontWeight.Bold,
                             color = MaterialTheme.colorScheme.primary,
@@ -538,7 +546,7 @@ private fun GameOverScreen(
             HorizontalDivider(color = MaterialTheme.colorScheme.outline)
 
             Text(
-                text = if (winner != null) "Победитель: ${winner.name} 🎉" else "Ничья!",
+                text = if (winner != null) s.pvpWinner(winner.name) else s.pvpDraw,
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold,
                 color = if (winner != null) MaterialTheme.colorScheme.primary else TextSecondary,
@@ -552,14 +560,14 @@ private fun GameOverScreen(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(14.dp),
             ) {
-                Text("Играть снова", fontWeight = FontWeight.Bold)
+                Text(s.pvpPlayAgain, fontWeight = FontWeight.Bold)
             }
             OutlinedButton(
                 onClick = onHome,
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(14.dp),
             ) {
-                Text("На главную")
+                Text(s.pvpGoHome)
             }
         }
     }
@@ -573,25 +581,24 @@ private fun SurrenderDialog(
     onConfirm: () -> Unit,
     onDismiss: () -> Unit,
 ) {
+    val s = LocalAppStrings.current
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("Сдаться?") },
+        title = { Text(s.pvpSurrenderDialogTitle) },
         text = {
-            Text(
-                "$playerName, вы уверены, что хотите сдаться?\nПротивнику будет засчитана победа.",
-            )
+            Text(s.pvpSurrenderConfirm(playerName))
         },
         confirmButton = {
             Button(
                 onClick = onConfirm,
                 colors = ButtonDefaults.buttonColors(containerColor = SurrenderRed),
             ) {
-                Text("Сдаться", fontWeight = FontWeight.Bold)
+                Text(s.pvpSurrender, fontWeight = FontWeight.Bold)
             }
         },
         dismissButton = {
             OutlinedButton(onClick = onDismiss) {
-                Text("Отмена")
+                Text(s.pvpCancel)
             }
         },
     )

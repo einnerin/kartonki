@@ -51,6 +51,7 @@ import com.example.kartonki.R
 import com.example.kartonki.domain.model.StudyQuizType
 import com.example.kartonki.domain.model.StudyStep
 import com.example.kartonki.ui.component.WordCard
+import com.example.kartonki.ui.theme.LocalAppStrings
 
 private val ColorCorrect       = Color(0xFF66BB6A)
 private val ColorCorrectBg     = Color(0xFF1A3A1A)
@@ -70,7 +71,7 @@ fun StudySessionScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(stringResource(R.string.study_title)) },
+                title = { Text(LocalAppStrings.current.studyTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -138,12 +139,13 @@ internal fun IntroductionContent(
     onContinue: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val s = LocalAppStrings.current
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
         Text(
-            text = stringResource(R.string.study_new_word),
+            text = s.studyNewWord,
             style = MaterialTheme.typography.labelLarge,
             color = MaterialTheme.colorScheme.primary,
             fontWeight = FontWeight.SemiBold,
@@ -151,7 +153,7 @@ internal fun IntroductionContent(
         WordCard(word = step.word, showDetails = true)
         Spacer(Modifier.weight(1f))
         Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
-            Text(stringResource(R.string.study_got_it))
+            Text(s.studyGotIt)
         }
     }
 }
@@ -165,19 +167,20 @@ internal fun QuizContent(
     modifier: Modifier = Modifier,
 ) {
     val answered = answerState as? AnswerState.Answered
+    val s = LocalAppStrings.current
 
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         val label = when (step.type) {
-            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION         -> stringResource(R.string.study_q_translation)
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION          -> stringResource(R.string.study_q_definition)
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE   -> stringResource(R.string.study_q_definition_native)
-            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF       -> stringResource(R.string.study_q_word_from_def)
-            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE -> stringResource(R.string.study_q_word_from_def_native)
-            StudyQuizType.FILL_IN_BLANK                       -> stringResource(R.string.study_q_fill_blank)
-            StudyQuizType.FILL_IN_BLANK_NATIVE                -> stringResource(R.string.study_q_fill_blank_native)
+            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION          -> s.studyQTranslation
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION           -> s.studyQDefinition
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE    -> s.studyQDefinitionNative
+            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF        -> s.studyQWordFromDef
+            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE -> s.studyQWordFromDefNative
+            StudyQuizType.FILL_IN_BLANK                        -> s.studyQFillBlank
+            StudyQuizType.FILL_IN_BLANK_NATIVE                 -> s.studyQFillBlankNative
         }
         Text(
             text = label,
@@ -235,7 +238,7 @@ internal fun QuizContent(
                 isCorrect = answered.isCorrect,
             )
             Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
-                Text(stringResource(R.string.study_continue))
+                Text(s.studyContinue)
             }
         }
     }
@@ -303,6 +306,7 @@ private fun TranslationPanel(
     translation: String,
     isCorrect: Boolean,
 ) {
+    val s = LocalAppStrings.current
     val accentColor = if (isCorrect) ColorCorrect else ColorIncorrect
     val bgColor     = if (isCorrect) ColorCorrectBg else ColorIncorrectBg
     val borderColor = if (isCorrect) ColorCorrectBorder else ColorIncorrectBorder
@@ -322,7 +326,7 @@ private fun TranslationPanel(
         ) {
             if (!isCorrect) {
                 Text(
-                    text = stringResource(R.string.study_incorrect),
+                    text = s.studyIncorrect,
                     style = MaterialTheme.typography.labelMedium,
                     fontWeight = FontWeight.ExtraBold,
                     color = accentColor,
@@ -355,6 +359,7 @@ private fun SessionCompleteContent(
     onNavigateBack: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val s = LocalAppStrings.current
     Column(
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -363,7 +368,7 @@ private fun SessionCompleteContent(
         Text("🎉", style = MaterialTheme.typography.displayLarge)
         Spacer(Modifier.height(16.dp))
         Text(
-            text = stringResource(R.string.study_session_complete),
+            text = s.studySessionComplete,
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.Bold, textAlign = TextAlign.Center,
         )
@@ -372,37 +377,38 @@ private fun SessionCompleteContent(
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text("$correctCount", style = MaterialTheme.typography.displaySmall,
                     color = ColorCorrect, fontWeight = FontWeight.Bold)
-                Text(stringResource(R.string.study_correct_label),
+                Text(s.studyCorrectLabel,
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text("$incorrectCount", style = MaterialTheme.typography.displaySmall,
                     color = ColorIncorrect, fontWeight = FontWeight.Bold)
-                Text(stringResource(R.string.study_incorrect_label),
+                Text(s.studyIncorrectLabel,
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
         Spacer(Modifier.height(40.dp))
         Button(onClick = onNewSession, modifier = Modifier.fillMaxWidth()) {
-            Text(stringResource(R.string.study_new_session))
+            Text(s.studyNewSession)
         }
         Spacer(Modifier.height(12.dp))
         OutlinedButton(onClick = onNavigateBack, modifier = Modifier.fillMaxWidth()) {
-            Text(stringResource(R.string.study_back_home))
+            Text(s.studyBackHome)
         }
     }
 }
 
 @Composable
 private fun EmptyContent(modifier: Modifier = Modifier, onBack: () -> Unit) {
+    val s = LocalAppStrings.current
     Column(
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
-        Text(stringResource(R.string.study_no_words), textAlign = TextAlign.Center)
-        OutlinedButton(onClick = onBack) { Text(stringResource(R.string.study_back)) }
+        Text(s.studyNoWords, textAlign = TextAlign.Center)
+        OutlinedButton(onClick = onBack) { Text(s.studyBack) }
     }
 }

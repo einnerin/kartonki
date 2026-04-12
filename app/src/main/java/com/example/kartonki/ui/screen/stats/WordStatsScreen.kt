@@ -53,6 +53,8 @@ import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.WordStat
 import com.example.kartonki.domain.model.WordStatSort
 import com.example.kartonki.ui.component.RarityBadge
+import com.example.kartonki.ui.theme.LocalAppStrings
+import com.example.kartonki.ui.theme.localizedName
 import kotlin.math.roundToInt
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -63,11 +65,12 @@ fun WordStatsScreen(
     viewModel: WordStatsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
+    val s = LocalAppStrings.current
 
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Статистика слов") },
+                title = { Text(s.wordStatsTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -99,10 +102,10 @@ fun WordStatsScreen(
                 modifier = Modifier.padding(vertical = 8.dp),
             ) {
                 val sorts = listOf(
-                    WordStatSort.MOST_ERRORS to "Сложные",
-                    WordStatSort.EASIEST to "Лёгкие",
-                    WordStatSort.MOST_ENCOUNTERS to "Частые",
-                    WordStatSort.RECENTLY_STUDIED to "Недавние",
+                    WordStatSort.MOST_ERRORS to s.wordStatsSortDifficult,
+                    WordStatSort.EASIEST to s.wordStatsSortEasiest,
+                    WordStatSort.MOST_ENCOUNTERS to s.wordStatsSortFrequent,
+                    WordStatSort.RECENTLY_STUDIED to s.wordStatsSortRecent,
                 )
                 items(sorts) { (sort, label) ->
                     FilterChip(
@@ -121,7 +124,7 @@ fun WordStatsScreen(
             ) {
                 val rarities: List<Rarity?> = listOf(null) + Rarity.entries
                 items(rarities) { rarity ->
-                    val label = rarity?.displayName ?: "Все"
+                    val label = rarity?.localizedName(s) ?: s.filterAll
                     val color = rarity?.let { Color(it.colorArgb) } ?: MaterialTheme.colorScheme.primary
                     FilterChip(
                         selected = state.rarityFilter == rarity,
@@ -144,7 +147,7 @@ fun WordStatsScreen(
             } else if (state.words.isEmpty()) {
                 Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Text(
-                        "Ещё нет данных.\nНачни занятия!",
+                        s.wordStatsEmpty,
                         style = MaterialTheme.typography.bodyLarge,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         textAlign = androidx.compose.ui.text.style.TextAlign.Center,
@@ -171,6 +174,7 @@ private fun ProblemWordsBannerStats(
     modifier: Modifier = Modifier,
 ) {
     val warningColor = Color(0xFFFF6F00)
+    val s = LocalAppStrings.current
     Box(
         modifier = modifier
             .clip(RoundedCornerShape(14.dp))
@@ -192,13 +196,13 @@ private fun ProblemWordsBannerStats(
             Text("⚠️", fontSize = 20.sp)
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = "Проблемные слова: $count",
+                    text = s.wordStatsProblemTitle(count),
                     style = MaterialTheme.typography.titleSmall,
                     fontWeight = FontWeight.Bold,
                     color = warningColor,
                 )
                 Text(
-                    text = "Нажми, чтобы начать работу над ошибками",
+                    text = s.wordStatsProblemSubtitle,
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -210,6 +214,7 @@ private fun ProblemWordsBannerStats(
 
 @Composable
 private fun WordStatRow(stat: WordStat) {
+    val s = LocalAppStrings.current
     val errorPercent = (stat.errorRate * 100).roundToInt()
     val errorColor = when {
         errorPercent >= 60 -> Color(0xFFEF5350)
@@ -243,13 +248,13 @@ private fun WordStatRow(stat: WordStat) {
         }
         Column(horizontalAlignment = Alignment.End) {
             Text(
-                "$errorPercent% ошибок",
+                s.wordStatsErrors(errorPercent),
                 style = MaterialTheme.typography.labelMedium,
                 fontWeight = FontWeight.Bold,
                 color = errorColor,
             )
             Text(
-                "${stat.encounters} раз",
+                s.wordStatsEncounters(stat.encounters),
                 style = MaterialTheme.typography.labelSmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )

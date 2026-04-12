@@ -50,6 +50,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.kartonki.domain.model.Rarity
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.kartonki.ui.theme.LocalAppStrings
+import com.example.kartonki.ui.theme.localizedName
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
@@ -87,7 +89,7 @@ fun StudyScreen(
                     containerColor = BgMedium,
                     titleContentColor = Color.White,
                 ),
-                title = { Text(stringResource(R.string.study_title), fontWeight = FontWeight.Bold) },
+                title = { Text(LocalAppStrings.current.studyTitle, fontWeight = FontWeight.Bold) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -140,6 +142,7 @@ private fun RarityFilterRow(
     activeFilters: Set<Rarity>,
     onToggle: (Rarity) -> Unit,
 ) {
+    val s = LocalAppStrings.current
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -161,7 +164,7 @@ private fun RarityFilterRow(
                 ),
             ) {
                 Text(
-                    text = rarity.displayName,
+                    text = rarity.localizedName(s),
                     style = MaterialTheme.typography.labelMedium,
                     fontWeight = if (isActive) FontWeight.Bold else FontWeight.Normal,
                     color = if (isActive) Color.White else color,

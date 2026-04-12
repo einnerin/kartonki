@@ -39,6 +39,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.domain.model.StudyStep
+import com.example.kartonki.ui.theme.LocalAppStrings
 
 private val ColorCorrect   = Color(0xFF66BB6A)
 private val ColorIncorrect = Color(0xFFEF5350)
@@ -55,7 +56,7 @@ fun ProblemWordsSessionScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Проблемные слова") },
+                title = { Text(LocalAppStrings.current.problemWordsTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -125,6 +126,7 @@ fun ProblemWordsSessionScreen(
 
 @Composable
 private fun ProblemWordsEmptyContent(modifier: Modifier = Modifier, onBack: () -> Unit) {
+    val s = LocalAppStrings.current
     Column(
         modifier = modifier.padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -132,11 +134,11 @@ private fun ProblemWordsEmptyContent(modifier: Modifier = Modifier, onBack: () -
     ) {
         Text("✅", fontSize = 48.sp)
         Text(
-            "Нет проблемных слов!\nПродолжай в том же духе.",
+            s.problemWordsEmpty,
             style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.Center,
         )
-        OutlinedButton(onClick = onBack) { Text("Назад") }
+        OutlinedButton(onClick = onBack) { Text(s.problemWordsBack) }
     }
 }
 
@@ -150,6 +152,7 @@ private fun ProblemWordsCompleteContent(
     onNavigateBack: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val s = LocalAppStrings.current
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -163,7 +166,7 @@ private fun ProblemWordsCompleteContent(
         Text(emoji, style = MaterialTheme.typography.displayLarge)
         Spacer(Modifier.height(12.dp))
         Text(
-            text = "Работа над ошибками завершена!",
+            text = s.problemWordsCompleteTitle,
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
@@ -175,13 +178,13 @@ private fun ProblemWordsCompleteContent(
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text("$correctCount", style = MaterialTheme.typography.displaySmall,
                     color = ColorCorrect, fontWeight = FontWeight.Bold)
-                Text("Верно", style = MaterialTheme.typography.bodyMedium,
+                Text(s.problemWordsCorrectLabel, style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text("$incorrectCount", style = MaterialTheme.typography.displaySmall,
                     color = ColorIncorrect, fontWeight = FontWeight.Bold)
-                Text("Ошибок", style = MaterialTheme.typography.bodyMedium,
+                Text(s.problemWordsIncorrectLabel, style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
@@ -203,9 +206,9 @@ private fun ProblemWordsCompleteContent(
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(
                     text = if (improvedCount > 0)
-                        "Улучшено: $improvedCount из $wordsStudied слов"
+                        s.problemWordsImproved(improvedCount, wordsStudied)
                     else
-                        "Слова пока не улучшились — продолжай!",
+                        s.problemWordsNoImprovement,
                     style = MaterialTheme.typography.bodyMedium,
                     fontWeight = FontWeight.SemiBold,
                     color = improvementColor,
@@ -216,11 +219,11 @@ private fun ProblemWordsCompleteContent(
 
         Spacer(Modifier.height(32.dp))
         Button(onClick = onNewSession, modifier = Modifier.fillMaxWidth()) {
-            Text("Ещё раз")
+            Text(s.problemWordsRetry)
         }
         Spacer(Modifier.height(12.dp))
         OutlinedButton(onClick = onNavigateBack, modifier = Modifier.fillMaxWidth()) {
-            Text("Назад")
+            Text(s.problemWordsBack)
         }
     }
 }

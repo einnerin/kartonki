@@ -52,6 +52,7 @@ import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
 import com.example.kartonki.domain.model.DeckLevel
 import com.example.kartonki.ui.screen.deckbuilder.DeckBuilderUiState
+import com.example.kartonki.ui.theme.LocalAppStrings
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -62,6 +63,7 @@ fun MyDecksScreen(
     viewModel: MyDecksViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    val s = LocalAppStrings.current
     val lifecycleOwner = LocalLifecycleOwner.current
 
     uiState.navigateToDeckId?.let { deckId ->
@@ -80,7 +82,7 @@ fun MyDecksScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(stringResource(R.string.my_decks_title)) },
+                title = { Text(s.myDecksTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -88,7 +90,7 @@ fun MyDecksScreen(
                 },
                 actions = {
                     TextButton(onClick = onNavigateToCollection) {
-                        Text(stringResource(R.string.my_decks_collection_link))
+                        Text(s.myDecksCollectionLink)
                     }
                 },
             )
@@ -96,7 +98,7 @@ fun MyDecksScreen(
         floatingActionButton = {
             ExtendedFloatingActionButton(
                 onClick = { viewModel.showCreateDialog() },
-                text = { Text(stringResource(R.string.my_decks_create)) },
+                text = { Text(s.myDecksCreate) },
                 icon = { Text("+") },
             )
         },
@@ -108,7 +110,7 @@ fun MyDecksScreen(
         } else if (uiState.decks.isEmpty()) {
             Box(Modifier.fillMaxSize().padding(innerPadding), contentAlignment = Alignment.Center) {
                 Text(
-                    text = stringResource(R.string.my_decks_empty),
+                    text = s.myDecksEmpty,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
@@ -167,22 +169,23 @@ private fun DeckItem(
                 )
             }
             Text(
-                text = "${deck.cardCount} / ${DeckBuilderUiState.DECK_MAX_SIZE} карт",
+                text = LocalAppStrings.current.deckCardCount(deck.cardCount, DeckBuilderUiState.DECK_MAX_SIZE),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
+        val s = LocalAppStrings.current
         IconButton(onClick = onEdit) {
             Icon(
                 imageVector = Icons.Filled.Edit,
-                contentDescription = stringResource(R.string.my_decks_edit),
+                contentDescription = s.myDecksEdit,
                 tint = MaterialTheme.colorScheme.primary,
             )
         }
         IconButton(onClick = onDelete) {
             Icon(
                 imageVector = Icons.Filled.Delete,
-                contentDescription = stringResource(R.string.my_decks_delete),
+                contentDescription = s.myDecksDelete,
                 tint = MaterialTheme.colorScheme.error,
             )
         }
@@ -194,21 +197,22 @@ private fun CreateDeckDialog(
     onConfirm: (String, Int) -> Unit,
     onDismiss: () -> Unit,
 ) {
+    val s = LocalAppStrings.current
     var name by remember { mutableStateOf("") }
     var selectedLevel by remember { mutableStateOf(1) }
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text(stringResource(R.string.my_decks_create_dialog_title)) },
+        title = { Text(s.myDecksCreateDialogTitle) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
                 OutlinedTextField(
                     value = name,
                     onValueChange = { name = it },
-                    label = { Text(stringResource(R.string.my_decks_create_dialog_hint)) },
+                    label = { Text(s.myDecksCreateDialogHint) },
                     singleLine = true,
                 )
                 Text(
-                    text = stringResource(R.string.my_decks_create_dialog_level),
+                    text = s.myDecksCreateDialogLevel,
                     style = MaterialTheme.typography.labelLarge,
                 )
                 Row(
@@ -240,12 +244,12 @@ private fun CreateDeckDialog(
                 onClick = { onConfirm(name, selectedLevel) },
                 enabled = name.isNotBlank(),
             ) {
-                Text(stringResource(R.string.my_decks_create_dialog_confirm))
+                Text(s.myDecksCreateDialogConfirm)
             }
         },
         dismissButton = {
             TextButton(onClick = onDismiss) {
-                Text(stringResource(R.string.my_decks_create_dialog_cancel))
+                Text(s.myDecksCreateDialogCancel)
             }
         },
     )

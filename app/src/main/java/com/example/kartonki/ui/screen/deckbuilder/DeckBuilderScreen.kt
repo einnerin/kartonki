@@ -51,6 +51,8 @@ import com.example.kartonki.domain.model.DeckLevel
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
+import com.example.kartonki.ui.theme.LocalAppStrings
+import com.example.kartonki.ui.theme.localizedName
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -59,6 +61,7 @@ fun DeckBuilderScreen(
     viewModel: DeckBuilderViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    val s = LocalAppStrings.current
     // Fresh state (position 0) whenever the filter changes
     val deckListState = remember(uiState.rarityFilter) { LazyListState() }
     val availableListState = remember(uiState.rarityFilter) { LazyListState() }
@@ -71,14 +74,10 @@ fun DeckBuilderScreen(
                         Text(
                             text = if (uiState.deckName.isNotEmpty())
                                 "${uiState.deckName}  ${DeckLevel.starsFor(uiState.deckLevel)}"
-                            else stringResource(R.string.deck_builder_title),
+                            else s.deckBuilderTitle,
                         )
                         Text(
-                            text = stringResource(
-                                R.string.deck_builder_size,
-                                uiState.totalCards,
-                                DeckBuilderUiState.DECK_MAX_SIZE,
-                            ),
+                            text = s.deckBuilderSize(uiState.totalCards, DeckBuilderUiState.DECK_MAX_SIZE),
                             style = MaterialTheme.typography.labelSmall,
                             color = if (uiState.isFull) MaterialTheme.colorScheme.error
                                     else MaterialTheme.colorScheme.onSurfaceVariant,
@@ -118,20 +117,12 @@ fun DeckBuilderScreen(
                 Tab(
                     selected = uiState.selectedTab == 0,
                     onClick = { viewModel.selectTab(0) },
-                    text = {
-                        Text(
-                            stringResource(R.string.deck_tab_in_deck, uiState.deckCards.size)
-                        )
-                    },
+                    text = { Text(s.deckTabInDeck(uiState.deckCards.size)) },
                 )
                 Tab(
                     selected = uiState.selectedTab == 1,
                     onClick = { viewModel.selectTab(1) },
-                    text = {
-                        Text(
-                            stringResource(R.string.deck_tab_available, uiState.availableCards.size)
-                        )
-                    },
+                    text = { Text(s.deckTabAvailable(uiState.availableCards.size)) },
                 )
             }
 
@@ -140,7 +131,7 @@ fun DeckBuilderScreen(
                 0 -> CardList(
                     cards = uiState.filteredDeckCards,
                     listState = deckListState,
-                    emptyText = stringResource(R.string.deck_empty_deck),
+                    emptyText = s.deckEmptyDeck,
                     actionLabel = "−",
                     actionEnabled = { true },
                     actionColor = MaterialTheme.colorScheme.error,
@@ -150,7 +141,7 @@ fun DeckBuilderScreen(
                 1 -> CardList(
                     cards = uiState.filteredAvailableCards,
                     listState = availableListState,
-                    emptyText = stringResource(R.string.deck_empty_available),
+                    emptyText = s.deckEmptyAvailable,
                     actionLabel = "+",
                     actionEnabled = { uiState.canAdd(it) },
                     actionColor = MaterialTheme.colorScheme.primary,
@@ -169,6 +160,7 @@ private fun RaritySlotsRow(
     onSlotClick: (Rarity) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val s = LocalAppStrings.current
     Row(modifier = modifier, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         slots.forEach { slot ->
             val color = Color(slot.rarity.colorArgb)
@@ -182,7 +174,7 @@ private fun RaritySlotsRow(
                 modifier = Modifier.clickable { onSlotClick(slot.rarity) },
             ) {
                 Text(
-                    text = "${slot.rarity.displayName}\n${slot.used}/${slot.limit}",
+                    text = "${slot.rarity.localizedName(s)}\n${slot.used}/${slot.limit}",
                     style = MaterialTheme.typography.labelSmall,
                     fontWeight = if (isActive) FontWeight.ExtraBold else FontWeight.Bold,
                     textAlign = TextAlign.Center,

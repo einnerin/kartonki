@@ -15,4 +15,7 @@ class MainViewModel @Inject constructor(
 ) : ViewModel() {
     val isDarkTheme: StateFlow<Boolean> = prefs.isDarkTheme
         .stateIn(viewModelScope, SharingStarted.Eagerly, true)
+
+    val nativeLanguage: StateFlow<String> = prefs.nativeLanguage
+        .stateIn(viewModelScope, SharingStarted.Eagerly, "ru")
 }
