@@ -3,6 +3,7 @@ package com.example.kartonki.ui.navigation
 import android.net.Uri
 
 sealed class Route(val path: String) {
+    object Splash        : Route("splash")
     object Home          : Route("home")
     object Study         : Route("study")
     object MyDecks       : Route("my_decks")

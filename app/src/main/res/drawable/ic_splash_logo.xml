@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash icon: neon "K" on transparent background, 288dp (Android 12 splash icon size) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="288dp"
+    android:height="288dp"
+    android:viewportWidth="288"
+    android:viewportHeight="288">
+
+    <!-- Dark rounded background -->
+    <path
+        android:pathData="M54,0 L234,0 A54,54 0 0 1 288,54 L288,234 A54,54 0 0 1 234,288 L54,288 A54,54 0 0 1 0,234 L0,54 A54,54 0 0 1 54,0 Z"
+        android:fillColor="#FF0D0D1A"/>
+
+    <!-- Glow layer 3 (outermost, most transparent) - cyan/blue glow -->
+    <path
+        android:pathData="M82,58 L110,58 L110,132 L176,58 L210,58 L140,140 L214,230 L178,230 L110,155 L110,230 L82,230 Z"
+        android:fillColor="#2000E5FF"
+        android:strokeColor="#0000E5FF"
+        android:strokeWidth="18"/>
+
+    <!-- Glow layer 2 (middle) - purple glow -->
+    <path
+        android:pathData="M82,58 L110,58 L110,132 L176,58 L210,58 L140,140 L214,230 L178,230 L110,155 L110,230 L82,230 Z"
+        android:fillColor="#308B5CF6"
+        android:strokeColor="#208B5CF6"
+        android:strokeWidth="10"/>
+
+    <!-- Glow layer 1 (inner) - bright cyan -->
+    <path
+        android:pathData="M82,58 L110,58 L110,132 L176,58 L210,58 L140,140 L214,230 L178,230 L110,155 L110,230 L82,230 Z"
+        android:fillColor="#5000E5FF"
+        android:strokeColor="#4000CFFF"
+        android:strokeWidth="5"/>
+
+    <!-- Main K shape - white/bright -->
+    <path
+        android:pathData="M88,64 L104,64 L104,136 L172,64 L202,64 L138,140 L206,224 L174,224 L104,149 L104,224 L88,224 Z"
+        android:fillColor="#FFFFFFFF"/>
+
+    <!-- Highlight on vertical bar -->
+    <path
+        android:pathData="M88,64 L96,64 L96,224 L88,224 Z"
+        android:fillColor="#40FFFFFF"/>
+
+</vector>

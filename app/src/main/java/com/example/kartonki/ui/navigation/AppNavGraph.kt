@@ -22,6 +22,7 @@ import com.example.kartonki.ui.screen.pvp.PvpGameScreen
 import com.example.kartonki.ui.screen.rewards.NewCardsEventViewModel
 import com.example.kartonki.ui.screen.rewards.NewCardsScreen
 import com.example.kartonki.ui.screen.settings.SettingsScreen
+import com.example.kartonki.ui.screen.splash.SplashScreen
 import com.example.kartonki.ui.screen.shop.PackOpeningScreen
 import com.example.kartonki.ui.screen.shop.PackShopScreen
 import com.example.kartonki.ui.screen.stats.PlayerStatsScreen
@@ -46,7 +47,17 @@ fun AppNavGraph(navController: NavHostController) {
         }
     }
 
-    NavHost(navController = navController, startDestination = Route.Home.path) {
+    NavHost(navController = navController, startDestination = Route.Splash.path) {
+
+        composable(Route.Splash.path) {
+            SplashScreen(
+                onSplashFinished = {
+                    navController.navigate(Route.Home.path) {
+                        popUpTo(Route.Splash.path) { inclusive = true }
+                    }
+                },
+            )
+        }
 
         composable(Route.Home.path) {
             HomeScreen(
