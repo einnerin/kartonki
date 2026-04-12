@@ -6,6 +6,7 @@ import com.example.kartonki.data.db.dao.StudyStreakDao
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.domain.model.PlayerStats
 import com.example.kartonki.domain.model.Rarity
+import com.example.kartonki.domain.model.Word
 import com.example.kartonki.domain.model.WordStat
 import com.example.kartonki.domain.model.WordStatSort
 import java.util.Calendar
@@ -80,6 +81,64 @@ class StatsRepository @Inject constructor(
             WordStatSort.RECENTLY_STUDIED  -> stats.sortedByDescending { it.nextReviewAt }
         }
     }
+
+    /**
+     * Returns up to [limit] words with a high error rate (> [minErrorRate]) and
+     * at least [minEncounters] attempts, sorted worst-first.
+     *
+     * @param source "both" | "pve_only" | "pvp_only"
+     */
+    suspend fun getProblemWords(
+        source: String = "both",
+        minEncounters: Int = 5,
+        minErrorRate: Float = 0.30f,
+        limit: Int = 25,
+    ): List<Word> {
+        val allProgress = progressDao.getAll()
+        val wordMap = wordDao.getAllWordsOnce().associateBy { it.id }
+
+        return allProgress.mapNotNull { p ->
+            val word = wordMap[p.wordId] ?: return@mapNotNull null
+            val (encounters, errors) = when (source) {
+                "pve_only" -> {
+                    val pveCorrect   = p.correctCount - p.pvpCorrectCount
+                    val pveIncorrect = p.incorrectCount - p.pvpIncorrectCount
+                    (pveCorrect + pveIncorrect) to pveIncorrect
+                }
+                "pvp_only" -> {
+                    (p.pvpCorrectCount + p.pvpIncorrectCount) to p.pvpIncorrectCount
+                }
+                else -> (p.correctCount + p.incorrectCount) to p.incorrectCount
+            }
+            if (encounters < minEncounters) return@mapNotNull null
+            val errorRate = errors.toFloat() / encounters
+            if (errorRate <= minErrorRate) return@mapNotNull null
+            Pair(errorRate, word)
+        }
+            .sortedByDescending { it.first }
+            .take(limit)
+            .map { (_, entity) ->
+                val rarity = runCatching { Rarity.valueOf(entity.rarity) }.getOrElse { Rarity.COMMON }
+                Word(
+                    id              = entity.id,
+                    original        = entity.original,
+                    translation     = entity.translation,
+                    definition      = entity.definition,
+                    example         = entity.example,
+                    rarity          = rarity,
+                    languagePair    = entity.languagePair,
+                    pos             = entity.pos,
+                    semanticGroup   = entity.semanticGroup,
+                    transliteration = entity.transliteration,
+                    definitionNative = entity.definitionNative,
+                    exampleNative   = entity.exampleNative,
+                )
+            }
+    }
+
+    /** Returns the number of problem words matching the given source filter. */
+    suspend fun getProblemWordCount(source: String = "both"): Int =
+        getProblemWords(source).size
 
     private fun calculateCurrentStreak(sortedDesc: List<Long>): Int {
         if (sortedDesc.isEmpty()) return 0

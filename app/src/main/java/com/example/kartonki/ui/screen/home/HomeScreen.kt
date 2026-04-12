@@ -45,8 +45,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Row
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.collectAsState
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
 import com.example.kartonki.ui.screen.shop.PackShopViewModel
 import com.example.kartonki.ui.theme.AccentBlue
@@ -64,11 +68,23 @@ fun HomeScreen(
     onNavigateToCollection: () -> Unit,
     onNavigateToSettings: () -> Unit,
     onNavigateToShop: () -> Unit,
+    onNavigateToProblemWords: () -> Unit,
     packViewModel: PackShopViewModel = hiltViewModel(),
+    homeViewModel: HomeViewModel = hiltViewModel(),
 ) {
     var visible by remember { mutableStateOf(false) }
     LaunchedEffect(Unit) { visible = true }
     val packState by packViewModel.uiState.collectAsState()
+    val homeState by homeViewModel.uiState.collectAsState()
+
+    val lifecycleOwner = LocalLifecycleOwner.current
+    DisposableEffect(lifecycleOwner) {
+        val observer = LifecycleEventObserver { _, event ->
+            if (event == Lifecycle.Event.ON_RESUME) homeViewModel.refresh()
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
+    }
 
     Box(
         modifier = Modifier
@@ -187,8 +203,63 @@ fun HomeScreen(
                         onClick = onNavigateToShop,
                         modifier = Modifier.fillMaxWidth(),
                     )
+                    if (homeState.problemWordCount > 0) {
+                        ProblemWordsBanner(
+                            count = homeState.problemWordCount,
+                            onClick = onNavigateToProblemWords,
+                            modifier = Modifier.fillMaxWidth(),
+                        )
+                    }
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun ProblemWordsBanner(
+    count: Int,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val warningColor = Color(0xFFFF6F00)
+    Box(
+        modifier = modifier
+            .glowEffect(warningColor, glowRadius = 14.dp, cornerRadius = 16.dp, alpha = 0.35f)
+            .clip(RoundedCornerShape(16.dp))
+            .background(
+                Brush.horizontalGradient(
+                    listOf(Color(0xFF3D1A00), Color(0xFF5A2800))
+                )
+            )
+            .border(1.5.dp, warningColor.copy(alpha = 0.7f), RoundedCornerShape(16.dp))
+            .clickable(
+                interactionSource = remember { MutableInteractionSource() },
+                indication = null,
+                onClick = onClick,
+            )
+            .padding(vertical = 14.dp, horizontal = 16.dp),
+        contentAlignment = Alignment.Center,
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            Text("⚠️", fontSize = 18.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = "Проблемные слова: $count",
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.Bold,
+                    color = warningColor,
+                )
+                Text(
+                    text = "Поработать над ошибками?",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = TextSecondary,
+                )
+            }
+            Text("›", fontSize = 22.sp, color = warningColor)
         }
     }
 }

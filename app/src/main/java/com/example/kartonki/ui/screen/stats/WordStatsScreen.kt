@@ -1,7 +1,9 @@
 package com.example.kartonki.ui.screen.stats
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -18,6 +20,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
@@ -37,12 +41,14 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.compose.runtime.remember
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.WordStat
 import com.example.kartonki.domain.model.WordStatSort
@@ -53,6 +59,7 @@ import kotlin.math.roundToInt
 @Composable
 fun WordStatsScreen(
     onNavigateBack: () -> Unit,
+    onNavigateToProblemWords: () -> Unit = {},
     viewModel: WordStatsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
@@ -75,6 +82,16 @@ fun WordStatsScreen(
                 .padding(padding)
                 .navigationBarsPadding(),
         ) {
+            // Problem words banner
+            if (state.problemWordCount > 0) {
+                ProblemWordsBannerStats(
+                    count = state.problemWordCount,
+                    onClick = onNavigateToProblemWords,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 12.dp, vertical = 8.dp),
+                )
+            }
             // Sort chips
             LazyRow(
                 contentPadding = PaddingValues(horizontal = 12.dp),
@@ -143,6 +160,50 @@ fun WordStatsScreen(
                     }
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun ProblemWordsBannerStats(
+    count: Int,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val warningColor = Color(0xFFFF6F00)
+    Box(
+        modifier = modifier
+            .clip(RoundedCornerShape(14.dp))
+            .background(
+                Brush.horizontalGradient(listOf(Color(0xFF3D1A00), Color(0xFF5A2800)))
+            )
+            .border(1.5.dp, warningColor.copy(alpha = 0.7f), RoundedCornerShape(14.dp))
+            .clickable(
+                interactionSource = remember { MutableInteractionSource() },
+                indication = null,
+                onClick = onClick,
+            )
+            .padding(horizontal = 14.dp, vertical = 12.dp),
+    ) {
+        androidx.compose.foundation.layout.Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(10.dp),
+        ) {
+            Text("⚠️", fontSize = 20.sp)
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = "Проблемные слова: $count",
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.Bold,
+                    color = warningColor,
+                )
+                Text(
+                    text = "Нажми, чтобы начать работу над ошибками",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+            Text("›", fontSize = 22.sp, color = warningColor)
         }
     }
 }

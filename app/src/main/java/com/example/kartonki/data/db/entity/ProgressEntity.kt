@@ -10,4 +10,6 @@ data class ProgressEntity(
     val incorrectCount: Int = 0,
     val level: Int = 0,           // 0–5; уровень освоения слова
     val nextReviewAt: Long = 0L,  // epoch millis
+    val pvpCorrectCount: Int = 0,
+    val pvpIncorrectCount: Int = 0,
 )

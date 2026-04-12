@@ -27,6 +27,7 @@ import com.example.kartonki.ui.screen.shop.PackOpeningScreen
 import com.example.kartonki.ui.screen.shop.PackShopScreen
 import com.example.kartonki.ui.screen.stats.PlayerStatsScreen
 import com.example.kartonki.ui.screen.stats.WordStatsScreen
+import com.example.kartonki.ui.screen.study.ProblemWordsSessionScreen
 import com.example.kartonki.ui.screen.study.StudyScreen
 import com.example.kartonki.ui.screen.study.StudySessionScreen
 import com.example.kartonki.ui.screen.study.WordSetDetailScreen
@@ -66,6 +67,7 @@ fun AppNavGraph(navController: NavHostController) {
                 onNavigateToCollection = { navController.navigate(Route.MyDecks.path) },
                 onNavigateToSettings = { navController.navigate(Route.Settings.path) },
                 onNavigateToShop = { navController.navigate(Route.PackShop.path) },
+                onNavigateToProblemWords = { navController.navigate(Route.ProblemWordsSession.path) },
             )
         }
 
@@ -83,7 +85,14 @@ fun AppNavGraph(navController: NavHostController) {
         }
 
         composable(Route.WordStats.path) {
-            WordStatsScreen(onNavigateBack = { navController.popBackStack() })
+            WordStatsScreen(
+                onNavigateBack = { navController.popBackStack() },
+                onNavigateToProblemWords = { navController.navigate(Route.ProblemWordsSession.path) },
+            )
+        }
+
+        composable(Route.ProblemWordsSession.path) {
+            ProblemWordsSessionScreen(onNavigateBack = { navController.popBackStack() })
         }
 
         composable(Route.Achievements.path) {

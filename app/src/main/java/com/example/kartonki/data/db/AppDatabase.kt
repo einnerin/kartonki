@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 19,
+    version = 20,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -68,6 +68,13 @@ abstract class AppDatabase : RoomDatabase() {
                 db.execSQL("ALTER TABLE words ADD COLUMN exampleNative TEXT")
                 db.execSQL("DELETE FROM words WHERE setId IN (101, 102, 103)")
                 db.execSQL("DELETE FROM word_sets WHERE id IN (101, 102, 103)")
+            }
+        }
+        /** Adds PvP-specific counters to progress for problem-words source filtering. */
+        val MIGRATION_19_20 = object : Migration(19, 20) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE progress ADD COLUMN pvpCorrectCount INTEGER NOT NULL DEFAULT 0")
+                db.execSQL("ALTER TABLE progress ADD COLUMN pvpIncorrectCount INTEGER NOT NULL DEFAULT 0")
             }
         }
     }

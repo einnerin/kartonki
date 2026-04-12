@@ -196,8 +196,10 @@ class PvpGameViewModel @Inject constructor(
             val existing = progressRepository.getProgress(card.id) ?: ProgressEntity(wordId = card.id)
             progressRepository.upsert(
                 existing.copy(
-                    correctCount   = if (isCorrect) existing.correctCount + 1 else existing.correctCount,
-                    incorrectCount = if (!isCorrect) existing.incorrectCount + 1 else existing.incorrectCount,
+                    correctCount      = if (isCorrect) existing.correctCount + 1 else existing.correctCount,
+                    incorrectCount    = if (!isCorrect) existing.incorrectCount + 1 else existing.incorrectCount,
+                    pvpCorrectCount   = if (isCorrect) existing.pvpCorrectCount + 1 else existing.pvpCorrectCount,
+                    pvpIncorrectCount = if (!isCorrect) existing.pvpIncorrectCount + 1 else existing.pvpIncorrectCount,
                 )
             )
         }

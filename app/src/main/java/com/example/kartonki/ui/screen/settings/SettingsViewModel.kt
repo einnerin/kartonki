@@ -48,6 +48,12 @@ val QUIZ_TYPE_LABELS: LinkedHashMap<String, String> = linkedMapOf(
     "fill_blank"  to "Вставка слова",
 )
 
+val PROBLEM_WORDS_SOURCE_LABELS: LinkedHashMap<String, String> = linkedMapOf(
+    "both"     to "PvE + PvP вместе",
+    "pve_only" to "Только PvE",
+    "pvp_only" to "Только PvP",
+)
+
 data class SettingsUiState(
     val isDarkTheme: Boolean = true,
     val username: String = "Игрок",
@@ -57,6 +63,7 @@ data class SettingsUiState(
     val definitionQuizMode: String = "both",
     val fillBlankQuizMode: String = "both",
     val enabledQuizTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
+    val problemWordsSource: String = "both",
     val isEditingName: Boolean = false,
     val nameInput: String = "",
     val showLanguagePicker: Boolean = false,
@@ -64,6 +71,7 @@ data class SettingsUiState(
     val showDefinitionModePicker: Boolean = false,
     val showFillBlankModePicker: Boolean = false,
     val showQuizTypesPicker: Boolean = false,
+    val showProblemWordsSourcePicker: Boolean = false,
 )
 
 val AVATAR_EMOJI_OPTIONS = listOf(
@@ -104,21 +112,27 @@ class SettingsViewModel @Inject constructor(
                 combine(
                     prefs.fillBlankQuizMode,
                     prefs.quizTypesEnabled,
-                ) { fillBlankMode, enabledTypes ->
-                    Pair(fillBlankMode, enabledTypes)
+                    prefs.problemWordsSource,
+                ) { fillBlankMode, enabledTypes, problemSource ->
+                    Triple(fillBlankMode, enabledTypes, problemSource)
                 },
-            ) { base, (fillBlankMode, enabledTypes) ->
-                base.copy(fillBlankQuizMode = fillBlankMode, enabledQuizTypes = enabledTypes)
+            ) { base, triple ->
+                base.copy(
+                    fillBlankQuizMode  = triple.first,
+                    enabledQuizTypes   = triple.second,
+                    problemWordsSource = triple.third,
+                )
             }.collect { state ->
                 _uiState.update { current ->
                     state.copy(
-                        isEditingName           = current.isEditingName,
-                        nameInput               = current.nameInput,
-                        showLanguagePicker      = current.showLanguagePicker,
-                        showStudyLanguagePicker = current.showStudyLanguagePicker,
-                        showDefinitionModePicker = current.showDefinitionModePicker,
-                        showFillBlankModePicker  = current.showFillBlankModePicker,
-                        showQuizTypesPicker     = current.showQuizTypesPicker,
+                        isEditingName                = current.isEditingName,
+                        nameInput                    = current.nameInput,
+                        showLanguagePicker           = current.showLanguagePicker,
+                        showStudyLanguagePicker      = current.showStudyLanguagePicker,
+                        showDefinitionModePicker     = current.showDefinitionModePicker,
+                        showFillBlankModePicker      = current.showFillBlankModePicker,
+                        showQuizTypesPicker          = current.showQuizTypesPicker,
+                        showProblemWordsSourcePicker = current.showProblemWordsSourcePicker,
                     )
                 }
             }
@@ -176,6 +190,13 @@ class SettingsViewModel @Inject constructor(
         if (key in current && current.size > 1) current.remove(key)  // keep at least one enabled
         else current.add(key)
         prefs.setQuizTypesEnabled(current)
+    }
+
+    fun onShowProblemWordsSourcePicker() = _uiState.update { it.copy(showProblemWordsSourcePicker = true) }
+    fun onDismissProblemWordsSourcePicker() = _uiState.update { it.copy(showProblemWordsSourcePicker = false) }
+    fun onProblemWordsSourceSelected(source: String) {
+        prefs.setProblemWordsSource(source)
+        _uiState.update { it.copy(showProblemWordsSourcePicker = false) }
     }
 
     fun onEmojiAvatarSelected(emoji: String) = viewModelScope.launch {

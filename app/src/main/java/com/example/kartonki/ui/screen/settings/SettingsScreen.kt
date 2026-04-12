@@ -334,6 +334,56 @@ fun SettingsScreen(
                 )
             }
 
+            SettingsRow(label = "Проблемные слова учитывать из") {
+                Text(
+                    PROBLEM_WORDS_SOURCE_LABELS[state.problemWordsSource] ?: state.problemWordsSource,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowProblemWordsSourcePicker() },
+                )
+            }
+
+            if (state.showProblemWordsSourcePicker) {
+                AlertDialog(
+                    onDismissRequest = viewModel::onDismissProblemWordsSourcePicker,
+                    title = { Text("Учитывать ошибки из") },
+                    text = {
+                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                            PROBLEM_WORDS_SOURCE_LABELS.entries.forEach { (key, name) ->
+                                val isSelected = key == state.problemWordsSource
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .clip(RoundedCornerShape(8.dp))
+                                        .background(
+                                            if (isSelected) MaterialTheme.colorScheme.primaryContainer
+                                            else MaterialTheme.colorScheme.surface
+                                        )
+                                        .clickable { viewModel.onProblemWordsSourceSelected(key) }
+                                        .padding(horizontal = 12.dp, vertical = 12.dp),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically,
+                                ) {
+                                    Text(
+                                        name,
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                        color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                                                else MaterialTheme.colorScheme.onSurface,
+                                    )
+                                    if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
+                                }
+                            }
+                        }
+                    },
+                    confirmButton = {},
+                    dismissButton = {
+                        TextButton(onClick = viewModel::onDismissProblemWordsSourcePicker) { Text("Отмена") }
+                    },
+                )
+            }
+
             SettingsRow(label = "Родной язык") {
                 Text(
                     NATIVE_LANGUAGES[state.nativeLanguage] ?: state.nativeLanguage,

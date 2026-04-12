@@ -133,7 +133,7 @@ fun StudySessionScreen(
 }
 
 @Composable
-private fun IntroductionContent(
+internal fun IntroductionContent(
     step: StudyStep.Introduction,
     onContinue: () -> Unit,
     modifier: Modifier = Modifier,
@@ -157,7 +157,7 @@ private fun IntroductionContent(
 }
 
 @Composable
-private fun QuizContent(
+internal fun QuizContent(
     step: StudyStep.Quiz,
     answerState: AnswerState,
     onOptionSelected: (String) -> Unit,
