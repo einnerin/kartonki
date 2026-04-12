@@ -31,7 +31,8 @@ class UserPreferencesRepository @Inject constructor(
     }
 
     companion object {
-        val DEFAULT_QUIZ_TYPES: Set<String> = setOf("translation", "type_input", "definition", "fill_blank")
+        val KNOWN_QUIZ_TYPES:   Set<String> = setOf("translation", "definition", "fill_blank")
+        val DEFAULT_QUIZ_TYPES: Set<String> = KNOWN_QUIZ_TYPES
     }
 
     /** Emits on every SharedPreferences change. */
@@ -72,7 +73,8 @@ class UserPreferencesRepository @Inject constructor(
 
     val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
         val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)
-        if (raw.isNullOrBlank()) DEFAULT_QUIZ_TYPES else raw.split(",").toSet()
+        val stored = if (raw.isNullOrBlank()) DEFAULT_QUIZ_TYPES else raw.split(",").toSet()
+        stored.intersect(KNOWN_QUIZ_TYPES).ifEmpty { DEFAULT_QUIZ_TYPES }
     }
     fun setQuizTypesEnabled(types: Set<String>) =
         prefs.edit().putString(Keys.QUIZ_TYPES_ENABLED, types.joinToString(",")).apply()

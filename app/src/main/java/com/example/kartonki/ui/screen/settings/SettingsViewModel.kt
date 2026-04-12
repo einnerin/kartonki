@@ -41,7 +41,6 @@ val CONTEXT_QUIZ_MODES: LinkedHashMap<String, String> = linkedMapOf(
 
 val QUIZ_TYPE_LABELS: LinkedHashMap<String, String> = linkedMapOf(
     "translation" to "Перевод (4 варианта)",
-    "type_input"  to "Ввод перевода",
     "definition"  to "Определение",
     "fill_blank"  to "Вставка слова",
 )

@@ -40,7 +40,6 @@ data class SessionUiState(
     val incorrectCount: Int = 0,
     val isSessionComplete: Boolean = false,
     val answerState: AnswerState = AnswerState.Unanswered,
-    val userInput: String = "",
 ) {
     val currentStep: StudyStep? get() = steps.getOrNull(currentStepIndex)
     val progress: Float get() = if (steps.isEmpty()) 0f else currentStepIndex.toFloat() / steps.size
@@ -75,7 +74,6 @@ class StudySessionViewModel @Inject constructor(
                     correctCount = 0,
                     incorrectCount = 0,
                     answerState = AnswerState.Unanswered,
-                    userInput = "",
                 )
             }
             val words = wordSetRepository.getWordsInSet(setId)
@@ -92,8 +90,6 @@ class StudySessionViewModel @Inject constructor(
         }
     }
 
-    fun onUserInputChange(input: String) = _uiState.update { it.copy(userInput = input) }
-
     fun onIntroductionContinue() = advanceStep()
 
     fun onMultipleChoiceAnswer(selected: String) {
@@ -103,18 +99,8 @@ class StudySessionViewModel @Inject constructor(
         recordAnswer(step, isCorrect, selected)
     }
 
-    fun onTypeInputSubmit() {
-        val step = _uiState.value.currentStep as? StudyStep.Quiz ?: return
-        if (_uiState.value.answerState != AnswerState.Unanswered) return
-        val answer = _uiState.value.userInput.trim()
-        if (answer.isEmpty()) return
-        val isCorrect = step.correctAnswer.split(" / ")
-            .any { it.trim().equals(answer, ignoreCase = true) }
-        recordAnswer(step, isCorrect, answer)
-    }
-
     fun onAnsweredContinue() {
-        _uiState.update { it.copy(answerState = AnswerState.Unanswered, userInput = "") }
+        _uiState.update { it.copy(answerState = AnswerState.Unanswered) }
         advanceStep()
     }
 
@@ -175,16 +161,21 @@ class StudySessionViewModel @Inject constructor(
         val available = mutableListOf<StudyQuizType>()
 
         if ("translation" in enabledTypes) available.add(StudyQuizType.MULTIPLE_CHOICE_TRANSLATION)
-        if ("type_input"  in enabledTypes) available.add(StudyQuizType.TYPE_TRANSLATION)
 
         val useForeign = contextMode == "foreign" || contextMode == "both"
         val useNative  = contextMode == "native"  || contextMode == "both"
 
         if ("definition" in enabledTypes) {
-            if (useForeign && word.definition != null && allWords.count { it.definition != null } >= 4)
+            val foreignDefCount = allWords.count { it.definition != null }
+            val nativeDefCount  = allWords.count { it.definitionNative != null }
+            if (useForeign && word.definition != null && foreignDefCount >= 4) {
                 available.add(StudyQuizType.MULTIPLE_CHOICE_DEFINITION)
-            if (useNative && word.definitionNative != null && allWords.count { it.definitionNative != null } >= 4)
+                available.add(StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF)
+            }
+            if (useNative && word.definitionNative != null && nativeDefCount >= 4) {
                 available.add(StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE)
+                available.add(StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE)
+            }
         }
         if ("fill_blank" in enabledTypes) {
             if (useForeign && word.example != null && allWords.size >= 4)
@@ -193,8 +184,7 @@ class StudySessionViewModel @Inject constructor(
                 available.add(StudyQuizType.FILL_IN_BLANK_NATIVE)
         }
 
-        // Always fall back to type input if nothing is available
-        return if (available.isEmpty()) StudyQuizType.TYPE_TRANSLATION else available.random()
+        return if (available.isEmpty()) StudyQuizType.MULTIPLE_CHOICE_TRANSLATION else available.random()
     }
 
     private fun buildQuizStep(word: Word, type: StudyQuizType, allWords: List<Word>): StudyStep.Quiz {
@@ -202,17 +192,16 @@ class StudySessionViewModel @Inject constructor(
         return when (type) {
             StudyQuizType.MULTIPLE_CHOICE_TRANSLATION -> {
                 val wrongs = others.take(3).map { it.translation }
-                if (wrongs.size < 3) return typeInputStep(word)
+                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
                 StudyStep.Quiz(
                     word = word, type = type, question = word.original,
                     options = (wrongs + word.translation).shuffled(),
                     correctAnswer = word.translation,
                 )
             }
-            StudyQuizType.TYPE_TRANSLATION -> typeInputStep(word)
             StudyQuizType.MULTIPLE_CHOICE_DEFINITION -> {
                 val wrongs = others.filter { it.definition != null }.take(3).map { it.definition!! }
-                if (wrongs.size < 3) return typeInputStep(word)
+                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
                 StudyStep.Quiz(
                     word = word, type = type, question = word.original,
                     options = (wrongs + word.definition!!).shuffled(),
@@ -221,17 +210,35 @@ class StudySessionViewModel @Inject constructor(
             }
             StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE -> {
                 val wrongs = others.filter { it.definitionNative != null }.take(3).map { it.definitionNative!! }
-                if (wrongs.size < 3) return typeInputStep(word)
+                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
                 StudyStep.Quiz(
                     word = word, type = type, question = word.original,
                     options = (wrongs + word.definitionNative!!).shuffled(),
                     correctAnswer = word.definitionNative!!,
                 )
             }
+            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF -> {
+                val wrongs = others.filter { it.definition != null }.take(3).map { it.original }
+                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
+                StudyStep.Quiz(
+                    word = word, type = type, question = word.definition!!,
+                    options = (wrongs + word.original).shuffled(),
+                    correctAnswer = word.original,
+                )
+            }
+            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE -> {
+                val wrongs = others.filter { it.definitionNative != null }.take(3).map { it.original }
+                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
+                StudyStep.Quiz(
+                    word = word, type = type, question = word.definitionNative!!,
+                    options = (wrongs + word.original).shuffled(),
+                    correctAnswer = word.original,
+                )
+            }
             StudyQuizType.FILL_IN_BLANK -> {
                 val sentence = word.example!!.replace(word.original, "_____", ignoreCase = true)
                 val wrongs = others.take(3).map { it.original }
-                if (wrongs.size < 3) return typeInputStep(word)
+                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
                 StudyStep.Quiz(
                     word = word, type = type, question = sentence,
                     options = (wrongs + word.original).shuffled(),
@@ -241,7 +248,7 @@ class StudySessionViewModel @Inject constructor(
             StudyQuizType.FILL_IN_BLANK_NATIVE -> {
                 val sentence = word.exampleNative!!.replace(word.original, "_____", ignoreCase = true)
                 val wrongs = others.take(3).map { it.original }
-                if (wrongs.size < 3) return typeInputStep(word)
+                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
                 StudyStep.Quiz(
                     word = word, type = type, question = sentence,
                     options = (wrongs + word.original).shuffled(),
@@ -249,6 +256,16 @@ class StudySessionViewModel @Inject constructor(
                 )
             }
         }
+    }
+
+    private fun fallbackTranslation(word: Word, allWords: List<Word>): StudyStep.Quiz {
+        val wrongs = allWords.filter { it.id != word.id }.shuffled().take(3).map { it.translation }
+        return StudyStep.Quiz(
+            word = word, type = StudyQuizType.MULTIPLE_CHOICE_TRANSLATION,
+            question = word.original,
+            options = (wrongs + word.translation).shuffled(),
+            correctAnswer = word.translation,
+        )
     }
 
     /**
@@ -264,12 +281,6 @@ class StudySessionViewModel @Inject constructor(
         val tier3 = candidates.filter { it.pos != word.pos }.shuffled()
         return tier1 + tier2 + tier3
     }
-
-    private fun typeInputStep(word: Word) = StudyStep.Quiz(
-        word = word, type = StudyQuizType.TYPE_TRANSLATION,
-        question = word.original, options = emptyList(),
-        correctAnswer = word.translation,
-    )
 
     companion object {
         const val MAX_LEVEL = 5

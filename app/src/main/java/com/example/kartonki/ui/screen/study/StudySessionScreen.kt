@@ -15,8 +15,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.draw.clip
-import androidx.compose.foundation.text.KeyboardActions
-import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -24,7 +22,6 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -43,7 +40,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.BaselineShift
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDirection
@@ -124,10 +120,7 @@ fun StudySessionScreen(
                         is StudyStep.Quiz -> QuizContent(
                             step = step,
                             answerState = uiState.answerState,
-                            userInput = uiState.userInput,
-                            onUserInputChange = { viewModel.onUserInputChange(it) },
                             onOptionSelected = { viewModel.onMultipleChoiceAnswer(it) },
-                            onSubmitInput = { viewModel.onTypeInputSubmit() },
                             onContinue = { viewModel.onAnsweredContinue() },
                             modifier = Modifier.fillMaxSize().padding(16.dp),
                         )
@@ -167,10 +160,7 @@ private fun IntroductionContent(
 private fun QuizContent(
     step: StudyStep.Quiz,
     answerState: AnswerState,
-    userInput: String,
-    onUserInputChange: (String) -> Unit,
     onOptionSelected: (String) -> Unit,
-    onSubmitInput: () -> Unit,
     onContinue: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -181,12 +171,13 @@ private fun QuizContent(
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         val label = when (step.type) {
-            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION        -> stringResource(R.string.study_q_translation)
-            StudyQuizType.TYPE_TRANSLATION                   -> stringResource(R.string.study_q_type_translation)
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION         -> stringResource(R.string.study_q_definition)
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE  -> stringResource(R.string.study_q_definition_native)
-            StudyQuizType.FILL_IN_BLANK                      -> stringResource(R.string.study_q_fill_blank)
-            StudyQuizType.FILL_IN_BLANK_NATIVE               -> stringResource(R.string.study_q_fill_blank_native)
+            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION         -> stringResource(R.string.study_q_translation)
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION          -> stringResource(R.string.study_q_definition)
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE   -> stringResource(R.string.study_q_definition_native)
+            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF       -> stringResource(R.string.study_q_word_from_def)
+            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE -> stringResource(R.string.study_q_word_from_def_native)
+            StudyQuizType.FILL_IN_BLANK                       -> stringResource(R.string.study_q_fill_blank)
+            StudyQuizType.FILL_IN_BLANK_NATIVE                -> stringResource(R.string.study_q_fill_blank_native)
         }
         Text(
             text = label,
@@ -194,12 +185,15 @@ private fun QuizContent(
             color = MaterialTheme.colorScheme.primary,
             fontWeight = FontWeight.SemiBold,
         )
-        // Question text is RTL only when it shows the raw Hebrew word (not a native-language sentence)
-        val isHebrewWord = step.word.languagePair.startsWith("he") &&
-            step.type != StudyQuizType.MULTIPLE_CHOICE_DEFINITION &&
-            step.type != StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE &&
-            step.type != StudyQuizType.FILL_IN_BLANK &&
-            step.type != StudyQuizType.FILL_IN_BLANK_NATIVE
+        // Question is RTL when it displays a raw Hebrew word (not a definition or sentence in any language)
+        val isHebrewQuestionRtl = step.word.languagePair.startsWith("he") &&
+            step.type == StudyQuizType.MULTIPLE_CHOICE_TRANSLATION
+        // Options are RTL when they contain Hebrew words (word-from-def types for Hebrew)
+        val isHebrewOptionsRtl = step.word.languagePair.startsWith("he") &&
+            (step.type == StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF ||
+             step.type == StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE ||
+             step.type == StudyQuizType.FILL_IN_BLANK ||
+             step.type == StudyQuizType.FILL_IN_BLANK_NATIVE)
         Surface(
             color = MaterialTheme.colorScheme.surfaceVariant,
             shape = MaterialTheme.shapes.medium,
@@ -212,12 +206,12 @@ private fun QuizContent(
                 Text(
                     text = step.question,
                     style = MaterialTheme.typography.headlineMedium.copy(
-                        textDirection = if (isHebrewWord) TextDirection.Rtl else TextDirection.Ltr,
+                        textDirection = if (isHebrewQuestionRtl) TextDirection.Rtl else TextDirection.Ltr,
                     ),
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center,
                 )
-                if (isHebrewWord && step.word.transliteration != null) {
+                if (isHebrewQuestionRtl && step.word.transliteration != null) {
                     Spacer(Modifier.height(4.dp))
                     Text(
                         text = step.word.transliteration,
@@ -228,15 +222,12 @@ private fun QuizContent(
                 }
             }
         }
-        if (step.type == StudyQuizType.TYPE_TRANSLATION) {
-            TypeInputSection(userInput, answered, onUserInputChange, onSubmitInput)
-        } else {
-            MultipleChoiceSection(
-                options = step.options,
-                answered = answered,
-                onOptionSelected = onOptionSelected,
-            )
-        }
+        MultipleChoiceSection(
+            options = step.options,
+            answered = answered,
+            optionsRtl = isHebrewOptionsRtl,
+            onOptionSelected = onOptionSelected,
+        )
         if (answered != null) {
             TranslationPanel(
                 original = step.word.original,
@@ -251,37 +242,10 @@ private fun QuizContent(
 }
 
 @Composable
-private fun TypeInputSection(
-    userInput: String,
-    answered: AnswerState.Answered?,
-    onUserInputChange: (String) -> Unit,
-    onSubmitInput: () -> Unit,
-) {
-    OutlinedTextField(
-        value = userInput,
-        onValueChange = onUserInputChange,
-        label = { Text(stringResource(R.string.study_type_hint)) },
-        enabled = answered == null,
-        singleLine = true,
-        keyboardOptions = KeyboardOptions(imeAction = ImeAction.Done),
-        keyboardActions = KeyboardActions(onDone = { onSubmitInput() }),
-        modifier = Modifier.fillMaxWidth(),
-    )
-    if (answered == null) {
-        Button(
-            onClick = onSubmitInput,
-            enabled = userInput.isNotBlank(),
-            modifier = Modifier.fillMaxWidth(),
-        ) {
-            Text(stringResource(R.string.study_submit))
-        }
-    }
-}
-
-@Composable
 private fun MultipleChoiceSection(
     options: List<String>,
     answered: AnswerState.Answered?,
+    optionsRtl: Boolean = false,
     onOptionSelected: (String) -> Unit,
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -323,7 +287,9 @@ private fun MultipleChoiceSection(
                 Text(
                     text = option,
                     textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.bodyLarge,
+                    style = MaterialTheme.typography.bodyLarge.copy(
+                        textDirection = if (optionsRtl) TextDirection.Rtl else TextDirection.Ltr,
+                    ),
                     fontWeight = if (isCorrect || isWrong) FontWeight.Bold else FontWeight.Normal,
                 )
             }
