@@ -12,6 +12,12 @@ data class AppStrings(
     val rarityRare: String,
     val rarityEpic: String,
     val rarityLegendary: String,
+    // Rarity short names (for filter chips)
+    val rarityCommonShort: String,
+    val rarityUncommonShort: String,
+    val rarityRareShort: String,
+    val rarityEpicShort: String,
+    val rarityLegendaryShort: String,
     val filterAll: String,
 
     // Home
@@ -223,6 +229,14 @@ fun Rarity.localizedName(s: AppStrings): String = when (this) {
     Rarity.LEGENDARY -> s.rarityLegendary
 }
 
+fun Rarity.localizedShortName(s: AppStrings): String = when (this) {
+    Rarity.COMMON    -> s.rarityCommonShort
+    Rarity.UNCOMMON  -> s.rarityUncommonShort
+    Rarity.RARE      -> s.rarityRareShort
+    Rarity.EPIC      -> s.rarityEpicShort
+    Rarity.LEGENDARY -> s.rarityLegendaryShort
+}
+
 // ─── CompositionLocal ────────────────────────────────────────────────────────
 
 val LocalAppStrings = compositionLocalOf<AppStrings> { RuStrings }
@@ -235,6 +249,11 @@ val RuStrings = AppStrings(
     rarityRare      = "Редкий",
     rarityEpic      = "Эпический",
     rarityLegendary = "Легендарный",
+    rarityCommonShort    = "Обыч",
+    rarityUncommonShort  = "Необыч",
+    rarityRareShort      = "Редк",
+    rarityEpicShort      = "Эпич",
+    rarityLegendaryShort = "Легенд",
     filterAll       = "Все",
 
     homeSubtitle           = "Изучай слова, собирай карточки",
@@ -433,6 +452,11 @@ val EnStrings = AppStrings(
     rarityRare      = "Rare",
     rarityEpic      = "Epic",
     rarityLegendary = "Legendary",
+    rarityCommonShort    = "Comm",
+    rarityUncommonShort  = "Uncomm",
+    rarityRareShort      = "Rare",
+    rarityEpicShort      = "Epic",
+    rarityLegendaryShort = "Legend",
     filterAll       = "All",
 
     homeSubtitle           = "Learn words, collect cards",
@@ -631,6 +655,11 @@ val DeStrings = AppStrings(
     rarityRare      = "Selten",
     rarityEpic      = "Episch",
     rarityLegendary = "Legendär",
+    rarityCommonShort    = "Gew",
+    rarityUncommonShort  = "Ungew",
+    rarityRareShort      = "Selt",
+    rarityEpicShort      = "Epis",
+    rarityLegendaryShort = "Legend",
     filterAll       = "Alle",
 
     homeSubtitle           = "Lerne Wörter, sammle Karten",
@@ -829,6 +858,11 @@ val FrStrings = AppStrings(
     rarityRare      = "Rare",
     rarityEpic      = "Épique",
     rarityLegendary = "Légendaire",
+    rarityCommonShort    = "Comm",
+    rarityUncommonShort  = "P.comm",
+    rarityRareShort      = "Rare",
+    rarityEpicShort      = "Épiq",
+    rarityLegendaryShort = "Légend",
     filterAll       = "Tout",
 
     homeSubtitle           = "Apprends des mots, collecte des cartes",
@@ -1027,6 +1061,11 @@ val EsStrings = AppStrings(
     rarityRare      = "Raro",
     rarityEpic      = "Épico",
     rarityLegendary = "Legendario",
+    rarityCommonShort    = "Común",
+    rarityUncommonShort  = "P.com",
+    rarityRareShort      = "Raro",
+    rarityEpicShort      = "Épic",
+    rarityLegendaryShort = "Legend",
     filterAll       = "Todos",
 
     homeSubtitle           = "Aprende palabras, colecciona cartas",
@@ -1225,6 +1264,11 @@ val ZhStrings = AppStrings(
     rarityRare      = "稀有",
     rarityEpic      = "史诗",
     rarityLegendary = "传说",
+    rarityCommonShort    = "普通",
+    rarityUncommonShort  = "罕见",
+    rarityRareShort      = "稀有",
+    rarityEpicShort      = "史诗",
+    rarityLegendaryShort = "传说",
     filterAll       = "全部",
 
     homeSubtitle           = "学习单词，收集卡片",
@@ -1423,6 +1467,11 @@ val JaStrings = AppStrings(
     rarityRare      = "レア",
     rarityEpic      = "エピック",
     rarityLegendary = "レジェンダリー",
+    rarityCommonShort    = "コモン",
+    rarityUncommonShort  = "アンコ",
+    rarityRareShort      = "レア",
+    rarityEpicShort      = "エピ",
+    rarityLegendaryShort = "レジェン",
     filterAll       = "すべて",
 
     homeSubtitle           = "単語を学び、カードを集めよう",
@@ -1621,6 +1670,11 @@ val ArStrings = AppStrings(
     rarityRare      = "نادر",
     rarityEpic      = "ملحمي",
     rarityLegendary = "أسطوري",
+    rarityCommonShort    = "عادي",
+    rarityUncommonShort  = "غ.شائع",
+    rarityRareShort      = "نادر",
+    rarityEpicShort      = "ملحمي",
+    rarityLegendaryShort = "أسطوري",
     filterAll       = "الكل",
 
     homeSubtitle           = "تعلّم الكلمات، اجمع البطاقات",
