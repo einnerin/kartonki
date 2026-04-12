@@ -39,6 +39,13 @@ val CONTEXT_QUIZ_MODES: LinkedHashMap<String, String> = linkedMapOf(
     "both"    to "Оба варианта",
 )
 
+val QUIZ_TYPE_LABELS: LinkedHashMap<String, String> = linkedMapOf(
+    "translation" to "Перевод (4 варианта)",
+    "type_input"  to "Ввод перевода",
+    "definition"  to "Определение",
+    "fill_blank"  to "Вставка слова",
+)
+
 data class SettingsUiState(
     val isDarkTheme: Boolean = true,
     val username: String = "Игрок",
@@ -46,11 +53,13 @@ data class SettingsUiState(
     val languagePair: String = "en-ru",
     val nativeLanguage: String = "ru",
     val contextQuizMode: String = "both",
+    val enabledQuizTypes: Set<String> = setOf("translation", "type_input", "definition", "fill_blank"),
     val isEditingName: Boolean = false,
     val nameInput: String = "",
     val showLanguagePicker: Boolean = false,
     val showStudyLanguagePicker: Boolean = false,
     val showContextQuizModePicker: Boolean = false,
+    val showQuizTypesPicker: Boolean = false,
 )
 
 val AVATAR_EMOJI_OPTIONS = listOf(
@@ -71,21 +80,26 @@ class SettingsViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             combine(
-                prefs.isDarkTheme,
-                prefs.username,
-                prefs.avatarChoice,
-                prefs.languagePair,
-                prefs.nativeLanguage,
-                prefs.contextQuizMode,
-            ) { values ->
-                SettingsUiState(
-                    isDarkTheme      = values[0] as Boolean,
-                    username         = values[1] as String,
-                    avatarChoice     = values[2] as String,
-                    languagePair     = values[3] as String,
-                    nativeLanguage   = values[4] as String,
-                    contextQuizMode  = values[5] as String,
-                )
+                combine(
+                    prefs.isDarkTheme,
+                    prefs.username,
+                    prefs.avatarChoice,
+                    prefs.languagePair,
+                    prefs.nativeLanguage,
+                    prefs.contextQuizMode,
+                ) { values ->
+                    SettingsUiState(
+                        isDarkTheme     = values[0] as Boolean,
+                        username        = values[1] as String,
+                        avatarChoice    = values[2] as String,
+                        languagePair    = values[3] as String,
+                        nativeLanguage  = values[4] as String,
+                        contextQuizMode = values[5] as String,
+                    )
+                },
+                prefs.quizTypesEnabled,
+            ) { base, enabledTypes ->
+                base.copy(enabledQuizTypes = enabledTypes)
             }.collect { state ->
                 _uiState.update { current ->
                     state.copy(
@@ -94,6 +108,7 @@ class SettingsViewModel @Inject constructor(
                         showLanguagePicker        = current.showLanguagePicker,
                         showStudyLanguagePicker   = current.showStudyLanguagePicker,
                         showContextQuizModePicker = current.showContextQuizModePicker,
+                        showQuizTypesPicker       = current.showQuizTypesPicker,
                     )
                 }
             }
@@ -135,6 +150,15 @@ class SettingsViewModel @Inject constructor(
     fun onContextQuizModeSelected(mode: String) {
         prefs.setContextQuizMode(mode)
         _uiState.update { it.copy(showContextQuizModePicker = false) }
+    }
+
+    fun onShowQuizTypesPicker() = _uiState.update { it.copy(showQuizTypesPicker = true) }
+    fun onDismissQuizTypesPicker() = _uiState.update { it.copy(showQuizTypesPicker = false) }
+    fun onQuizTypeToggled(key: String) {
+        val current = _uiState.value.enabledQuizTypes.toMutableSet()
+        if (key in current && current.size > 1) current.remove(key)  // keep at least one enabled
+        else current.add(key)
+        prefs.setQuizTypesEnabled(current)
     }
 
     fun onEmojiAvatarSelected(emoji: String) = viewModelScope.launch {

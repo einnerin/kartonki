@@ -34,6 +34,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -259,6 +260,51 @@ fun SettingsScreen(
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.Medium,
                     modifier = Modifier.clickable { viewModel.onShowContextQuizModePicker() },
+                )
+            }
+
+            SettingsRow(label = "Типы заданий (PvE)") {
+                Text(
+                    "${state.enabledQuizTypes.size} из ${QUIZ_TYPE_LABELS.size}",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowQuizTypesPicker() },
+                )
+            }
+
+            if (state.showQuizTypesPicker) {
+                AlertDialog(
+                    onDismissRequest = viewModel::onDismissQuizTypesPicker,
+                    title = { Text("Типы заданий (PvE)") },
+                    text = {
+                        Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                            QUIZ_TYPE_LABELS.entries.forEach { (key, label) ->
+                                val isChecked = key in state.enabledQuizTypes
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .clip(RoundedCornerShape(8.dp))
+                                        .clickable { viewModel.onQuizTypeToggled(key) }
+                                        .padding(horizontal = 4.dp, vertical = 4.dp),
+                                    verticalAlignment = Alignment.CenterVertically,
+                                ) {
+                                    Checkbox(
+                                        checked = isChecked,
+                                        onCheckedChange = { viewModel.onQuizTypeToggled(key) },
+                                    )
+                                    Text(
+                                        label,
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        modifier = Modifier.padding(start = 4.dp),
+                                    )
+                                }
+                            }
+                        }
+                    },
+                    confirmButton = {
+                        TextButton(onClick = viewModel::onDismissQuizTypesPicker) { Text("Готово") }
+                    },
                 )
             }
 

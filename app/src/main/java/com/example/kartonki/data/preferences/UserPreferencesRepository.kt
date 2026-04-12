@@ -26,7 +26,12 @@ class UserPreferencesRepository @Inject constructor(
         const val ACTIVITY_COUNT           = "activity_count"
         const val FREE_PACK_COUNT          = "free_pack_count"
         const val PVP_MULTIPLIER_HINT_SEEN = "pvp_multiplier_hint_seen"
-        const val CONTEXT_QUIZ_MODE       = "context_quiz_mode"   // "foreign" | "native" | "both"
+        const val CONTEXT_QUIZ_MODE        = "context_quiz_mode"   // "foreign" | "native" | "both"
+        const val QUIZ_TYPES_ENABLED       = "quiz_types_enabled"  // comma-separated keys
+    }
+
+    companion object {
+        val DEFAULT_QUIZ_TYPES: Set<String> = setOf("translation", "type_input", "definition", "fill_blank")
     }
 
     /** Emits on every SharedPreferences change. */
@@ -64,4 +69,11 @@ class UserPreferencesRepository @Inject constructor(
 
     val contextQuizMode: Flow<String> = prefsFlow().map { it.getString(Keys.CONTEXT_QUIZ_MODE, "both") ?: "both" }
     fun setContextQuizMode(mode: String) = prefs.edit().putString(Keys.CONTEXT_QUIZ_MODE, mode).apply()
+
+    val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
+        val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)
+        if (raw.isNullOrBlank()) DEFAULT_QUIZ_TYPES else raw.split(",").toSet()
+    }
+    fun setQuizTypesEnabled(types: Set<String>) =
+        prefs.edit().putString(Keys.QUIZ_TYPES_ENABLED, types.joinToString(",")).apply()
 }

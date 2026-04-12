@@ -2,6 +2,7 @@ package com.example.kartonki.data.repository
 
 import com.example.kartonki.data.SeedData
 import com.example.kartonki.data.SeedDataHebrew
+import com.example.kartonki.data.SeedDataHebrewEveryday
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
 import com.example.kartonki.data.db.entity.WordSetEntity
@@ -24,6 +25,11 @@ class WordSetRepository @Inject constructor(
         if (wordSetDao.getSetCountByLanguage("he-ru") == 0) {
             wordSetDao.insertSets(SeedDataHebrew.sets)
             wordDao.insertAll(SeedDataHebrew.words)
+        }
+        // Everyday Hebrew sets added in a later update — seed if set 104 is missing.
+        if (wordSetDao.getSetById(104L) == null) {
+            wordSetDao.insertSets(SeedDataHebrewEveryday.sets)
+            wordDao.insertAll(SeedDataHebrewEveryday.words)
         }
     }
 

@@ -83,8 +83,9 @@ class StudySessionViewModel @Inject constructor(
                 _uiState.update { it.copy(isLoading = false, isEmpty = true) }
                 return@launch
             }
-            val contextMode = prefs.contextQuizMode.first()
-            val steps = buildSteps(words, contextMode)
+            val contextMode  = prefs.contextQuizMode.first()
+            val enabledTypes = prefs.quizTypesEnabled.first()
+            val steps = buildSteps(words, contextMode, enabledTypes)
             _uiState.update {
                 it.copy(isLoading = false, isEmpty = false, steps = steps, currentStepIndex = 0)
             }
@@ -160,31 +161,40 @@ class StudySessionViewModel @Inject constructor(
         }
     }
 
-    private fun buildSteps(words: List<Word>, contextMode: String): List<StudyStep> =
+    private fun buildSteps(words: List<Word>, contextMode: String, enabledTypes: Set<String>): List<StudyStep> =
         words.shuffled().map { word ->
-            buildQuizStep(word, pickQuizType(word, words, contextMode), words)
+            buildQuizStep(word, pickQuizType(word, words, contextMode, enabledTypes), words)
         }
 
-    private fun pickQuizType(word: Word, allWords: List<Word>, contextMode: String): StudyQuizType {
-        val available = mutableListOf(StudyQuizType.MULTIPLE_CHOICE_TRANSLATION)
+    private fun pickQuizType(
+        word: Word,
+        allWords: List<Word>,
+        contextMode: String,
+        enabledTypes: Set<String>,
+    ): StudyQuizType {
+        val available = mutableListOf<StudyQuizType>()
+
+        if ("translation" in enabledTypes) available.add(StudyQuizType.MULTIPLE_CHOICE_TRANSLATION)
+        if ("type_input"  in enabledTypes) available.add(StudyQuizType.TYPE_TRANSLATION)
 
         val useForeign = contextMode == "foreign" || contextMode == "both"
         val useNative  = contextMode == "native"  || contextMode == "both"
 
-        if (useForeign) {
-            if (word.definition != null && allWords.count { it.definition != null } >= 4)
+        if ("definition" in enabledTypes) {
+            if (useForeign && word.definition != null && allWords.count { it.definition != null } >= 4)
                 available.add(StudyQuizType.MULTIPLE_CHOICE_DEFINITION)
-            if (word.example != null && allWords.size >= 4)
-                available.add(StudyQuizType.FILL_IN_BLANK)
-        }
-        if (useNative) {
-            if (word.definitionNative != null && allWords.count { it.definitionNative != null } >= 4)
+            if (useNative && word.definitionNative != null && allWords.count { it.definitionNative != null } >= 4)
                 available.add(StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE)
-            if (word.exampleNative != null && allWords.size >= 4)
+        }
+        if ("fill_blank" in enabledTypes) {
+            if (useForeign && word.example != null && allWords.size >= 4)
+                available.add(StudyQuizType.FILL_IN_BLANK)
+            if (useNative && word.exampleNative != null && allWords.size >= 4)
                 available.add(StudyQuizType.FILL_IN_BLANK_NATIVE)
         }
 
-        return available.random()
+        // Always fall back to type input if nothing is available
+        return if (available.isEmpty()) StudyQuizType.TYPE_TRANSLATION else available.random()
     }
 
     private fun buildQuizStep(word: Word, type: StudyQuizType, allWords: List<Word>): StudyStep.Quiz {
