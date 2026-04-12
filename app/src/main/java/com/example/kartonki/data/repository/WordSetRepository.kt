@@ -12,6 +12,7 @@ import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlin.math.abs
 
 @Singleton
 class WordSetRepository @Inject constructor(
@@ -78,7 +79,21 @@ class WordSetRepository @Inject constructor(
 
     suspend fun getWordCountInSet(setId: Long): Int = wordSetDao.getWordCountInSet(setId)
 
-    suspend fun getRarityForSet(setId: Long): Rarity =
-        wordSetDao.getRarityForSet(setId)?.let { runCatching { Rarity.valueOf(it) }.getOrNull() }
-            ?: Rarity.COMMON
+    /**
+     * Returns the rarity whose [Rarity.points] value is closest to the weighted average
+     * of all words in the set (weight = word count per rarity × rarity points).
+     * This gives a colour that reflects the overall composition of the set rather than
+     * the first or the rarest word.
+     */
+    suspend fun getRarityForSet(setId: Long): Rarity {
+        val counts = wordSetDao.getRarityCountsForSet(setId)
+        if (counts.isEmpty()) return Rarity.COMMON
+        val totalWords = counts.sumOf { it.count }
+        val weightedSum = counts.sumOf { rc ->
+            val pts = runCatching { Rarity.valueOf(rc.rarity).points }.getOrDefault(1)
+            pts * rc.count
+        }
+        val avgPoints = weightedSum.toDouble() / totalWords
+        return Rarity.entries.minByOrNull { abs(it.points - avgPoints) } ?: Rarity.COMMON
+    }
 }

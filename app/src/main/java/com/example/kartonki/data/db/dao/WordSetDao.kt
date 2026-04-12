@@ -44,8 +44,8 @@ interface WordSetDao {
     @Query("SELECT COUNT(*) FROM words WHERE setId = :setId")
     suspend fun getWordCountInSet(setId: Long): Int
 
-    @Query("SELECT rarity FROM words WHERE setId = :setId LIMIT 1")
-    suspend fun getRarityForSet(setId: Long): String?
+    @Query("SELECT rarity, COUNT(*) as count FROM words WHERE setId = :setId GROUP BY rarity")
+    suspend fun getRarityCountsForSet(setId: Long): List<RarityCount>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertSets(sets: List<WordSetEntity>)
