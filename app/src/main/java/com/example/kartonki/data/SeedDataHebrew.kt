@@ -9,21 +9,21 @@ object SeedDataHebrew {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 101,
-            name = "מחשב ואינטרנט",
+            name = "Компьютер и интернет",
             description = "Базовая компьютерная лексика A1/A2",
             orderIndex = 0,
             languagePair = "he-ru",
         ),
         WordSetEntity(
             id = 102,
-            name = "תכנות",
+            name = "Программирование",
             description = "Термины программирования B1",
             orderIndex = 1,
             languagePair = "he-ru",
         ),
         WordSetEntity(
             id = 103,
-            name = "מדעי המחשב",
+            name = "Информатика",
             description = "Продвинутая терминология B2/C1",
             orderIndex = 2,
             languagePair = "he-ru",
