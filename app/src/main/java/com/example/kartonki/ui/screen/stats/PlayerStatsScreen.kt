@@ -1,6 +1,7 @@
 package com.example.kartonki.ui.screen.stats
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -49,7 +50,7 @@ fun PlayerStatsScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Статистика") },
+                title = { Text("Статистика игрока") },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
@@ -65,6 +66,8 @@ fun PlayerStatsScreen(
             return@Scaffold
         }
 
+        val stats = state.stats
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -72,82 +75,179 @@ fun PlayerStatsScreen(
                 .navigationBarsPadding()
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = 16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             Spacer(Modifier.height(4.dp))
-            StatCard(label = "Слов изучено", value = state.stats.wordsLearned.toString(), icon = "📚")
-            StatCard(
-                label = "Точность ответов",
-                value = "${(state.stats.accuracy * 100).roundToInt()}%",
+
+            // ── Прогресс ──────────────────────────────────────────────────────
+            SectionHeader("Прогресс")
+            HeroStatCard(
+                icon = "📚",
+                value = stats.wordsLearned.toString(),
+                label = "Слов изучено",
+            )
+            InlineStatRow(
                 icon = "🎯",
+                label = "Точность ответов",
+                value = "${(stats.accuracy * 100).roundToInt()}%",
             )
-            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                StatCard(
-                    label = "Серия сейчас",
-                    value = "${state.stats.currentStreak} дн.",
+
+            // ── Серия ──────────────────────────────────────────────────────────
+            SectionHeader("Серия")
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                StatCell(
                     icon = "🔥",
+                    value = "${stats.currentStreak} дн.",
+                    label = "Текущая",
                     modifier = Modifier.weight(1f),
                 )
-                StatCard(
-                    label = "Рекорд серии",
-                    value = "${state.stats.longestStreak} дн.",
+                StatCell(
                     icon = "📅",
+                    value = "${stats.longestStreak} дн.",
+                    label = "Рекорд",
                     modifier = Modifier.weight(1f),
                 )
             }
-            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-                StatCard(
-                    label = "Победы PvP",
-                    value = state.stats.pvpWins.toString(),
+
+            // ── PvP ───────────────────────────────────────────────────────────
+            SectionHeader("PvP-режим")
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                StatCell(
                     icon = "🏆",
+                    value = stats.pvpWins.toString(),
+                    label = "Победы",
                     modifier = Modifier.weight(1f),
                 )
-                StatCard(
-                    label = "Поражения",
-                    value = state.stats.pvpLosses.toString(),
+                StatCell(
                     icon = "💀",
+                    value = stats.pvpLosses.toString(),
+                    label = "Поражения",
+                    modifier = Modifier.weight(1f),
+                )
+                StatCell(
+                    icon = "🤝",
+                    value = stats.pvpDraws.toString(),
+                    label = "Ничьи",
                     modifier = Modifier.weight(1f),
                 )
             }
-            StatCard(
-                label = "Лучший счёт в PvP",
-                value = state.stats.bestPvpScore.toString(),
+            InlineStatRow(
                 icon = "⭐",
+                label = "Лучший счёт",
+                value = stats.bestPvpScore.toString(),
             )
+
             Spacer(Modifier.height(16.dp))
         }
     }
 }
 
+// ─── Components ───────────────────────────────────────────────────────────────
+
 @Composable
-private fun StatCard(
-    label: String,
-    value: String,
+private fun SectionHeader(title: String) {
+    Text(
+        text = title.uppercase(),
+        style = MaterialTheme.typography.labelSmall,
+        fontWeight = FontWeight.Bold,
+        color = MaterialTheme.colorScheme.primary,
+        modifier = Modifier.padding(top = 8.dp, bottom = 2.dp),
+    )
+}
+
+@Composable
+private fun HeroStatCard(icon: String, value: String, label: String) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(16.dp))
+            .background(MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.22f))
+            .border(
+                1.dp,
+                MaterialTheme.colorScheme.primary.copy(alpha = 0.25f),
+                RoundedCornerShape(16.dp),
+            )
+            .padding(vertical = 24.dp, horizontal = 16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(4.dp),
+    ) {
+        Text(icon, fontSize = 36.sp)
+        Text(
+            text = value,
+            style = MaterialTheme.typography.displaySmall,
+            fontWeight = FontWeight.ExtraBold,
+            color = MaterialTheme.colorScheme.primary,
+        )
+        Text(
+            text = label,
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+    }
+}
+
+@Composable
+private fun InlineStatRow(icon: String, label: String, value: String) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(14.dp))
+            .background(MaterialTheme.colorScheme.surfaceVariant)
+            .padding(horizontal = 16.dp, vertical = 14.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween,
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            Text(icon, fontSize = 20.sp)
+            Text(
+                text = label,
+                style = MaterialTheme.typography.bodyLarge,
+                color = MaterialTheme.colorScheme.onSurface,
+            )
+        }
+        Text(
+            text = value,
+            style = MaterialTheme.typography.titleLarge,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.primary,
+        )
+    }
+}
+
+@Composable
+private fun StatCell(
     icon: String,
+    value: String,
+    label: String,
     modifier: Modifier = Modifier,
 ) {
     Column(
         modifier = modifier
-            .clip(RoundedCornerShape(16.dp))
+            .height(88.dp)
+            .clip(RoundedCornerShape(14.dp))
             .background(MaterialTheme.colorScheme.surfaceVariant)
-            .padding(16.dp),
+            .padding(horizontal = 8.dp, vertical = 10.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        Text(icon, style = MaterialTheme.typography.headlineMedium)
+        Text(icon, fontSize = 20.sp)
         Spacer(Modifier.height(4.dp))
         Text(
-            value,
-            style = MaterialTheme.typography.headlineSmall,
+            text = value,
+            style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.ExtraBold,
             color = MaterialTheme.colorScheme.primary,
             textAlign = TextAlign.Center,
         )
         Text(
-            label,
-            style = MaterialTheme.typography.bodySmall,
+            text = label,
+            style = MaterialTheme.typography.labelSmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center,
+            maxLines = 1,
         )
     }
 }
