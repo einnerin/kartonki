@@ -1,0 +1,249 @@
+LEVEL	WORD	POS	SEMANTIC_GROUP	RUSSIAN_TRANSLATION	DEFINITION	EXAMPLE_SENTENCE
+A1	mother	noun	family	мать	A woman in relation to her child or children.	My mother cooks dinner every evening.
+A1	father	noun	family	отец	A man in relation to his child or children.	My father drives me to school on Mondays.
+A1	brother	noun	family	брат	A boy or man who has the same parents as another person.	My brother is three years older than me.
+A1	sister	noun	family	сестра	A girl or woman who has the same parents as another person.	My sister and I share a bedroom.
+A1	son	noun	family	сын	A male child in relation to his parents.	Their son started university this year.
+A1	daughter	noun	family	дочь	A female child in relation to her parents.	Their daughter won first prize in the competition.
+A1	grandfather	noun	family	дедушка	The father of a person's mother or father.	My grandfather tells me stories about his childhood.
+A1	grandmother	noun	family	бабушка	The mother of a person's mother or father.	My grandmother knits sweaters for all of us.
+A1	husband	noun	family	муж	A man to whom a woman is married.	Her husband works at the hospital.
+A1	baby	noun	family	младенец	A very young child who cannot yet walk or talk.	The baby cried all night and the parents were exhausted.
+A1	friend	noun	family	друг	A person you know well and like spending time with.	My best friend lives next door to me.
+A1	head	noun	body	голова	The top part of the body that contains the brain, eyes, and mouth.	She nodded her head to show she agreed.
+A1	eye	noun	body	глаз	The organ in your face that you use to see.	He closed his eyes and tried to sleep.
+A1	ear	noun	body	ухо	The organ on each side of your head that you use to hear.	She put her hands over her ears because the music was too loud.
+A1	nose	noun	body	нос	The part of your face above your mouth that you use to breathe and smell.	He blew his nose and threw away the tissue.
+A1	mouth	noun	body	рот	The opening in your face that you use to eat and speak.	Open your mouth wide and say 'ah'.
+A1	hand	noun	body	рука (кисть)	The part at the end of your arm that has four fingers and a thumb.	She held the pen in her right hand.
+A1	leg	noun	body	нога	One of the two long parts of the body used for standing and walking.	He broke his leg when he fell off the bicycle.
+A1	hair	noun	body	волосы	The mass of thin threads that grows on your head.	She has long red hair and green eyes.
+A1	face	noun	body	лицо	The front part of your head, from your forehead to your chin.	She washed her face before going to bed.
+A1	apple	noun	food	яблоко	A round fruit with red, yellow, or green skin and firm white flesh.	She ate an apple for breakfast instead of cereal.
+A1	bread	noun	food	хлеб	A food made from flour, water, and yeast that is baked in an oven.	He cut two slices of bread for his sandwich.
+A1	milk	noun	food	молоко	A white liquid produced by cows and other animals that people drink.	She poured cold milk over her cereal.
+A1	water	noun	food	вода	A clear liquid with no colour, smell, or taste that people drink.	Drink at least eight glasses of water every day.
+A1	egg	noun	food	яйцо	An oval object with a hard shell that a bird produces and that people eat.	She fried two eggs in a pan for breakfast.
+A1	cheese	noun	food	сыр	A solid food made from milk that can be soft or hard.	He put a slice of cheese on his sandwich.
+A1	chicken	noun	food	курица	The meat of a chicken used as food.	We had roast chicken for Sunday dinner.
+A1	rice	noun	food	рис	Small white or brown grains that are cooked and eaten as food.	She served the curry on a bed of boiled rice.
+A1	soup	noun	food	суп	A liquid food made by cooking vegetables or meat in water.	He ate a bowl of hot soup to warm up.
+A1	coffee	noun	food	кофе	A hot dark drink made from roasted and ground coffee beans.	She drinks two cups of coffee every morning.
+A1	tea	noun	food	чай	A hot drink made by putting dried leaves in boiling water.	Would you like a cup of tea or coffee?
+A1	orange	noun	food	апельсин	A round juicy fruit with a thick orange skin.	She peeled an orange and ate it piece by piece.
+A1	banana	noun	food	банан	A long curved fruit with a yellow skin.	He put a banana in his bag to eat as a snack later.
+A1	cake	noun	food	торт	A sweet food made from flour, sugar, butter, and eggs, baked in an oven.	She baked a chocolate cake for her son's birthday.
+A1	house	noun	home	дом	A building where people live, usually with a garden.	They bought a small house near the park.
+A1	room	noun	home	комната	A separate area inside a building with its own walls and door.	Each child has their own room in the new apartment.
+A1	bed	noun	home	кровать	A piece of furniture that you sleep on.	She made her bed every morning before going to school.
+A1	door	noun	home	дверь	A flat object that opens and closes to allow entry to a room or building.	Please close the door quietly when you leave.
+A1	window	noun	home	окно	A glass opening in a wall that lets light and air into a room.	She opened the window to let in some fresh air.
+A1	table	noun	home	стол	A piece of furniture with a flat top and legs, used for eating or working.	They sat at the table and ate dinner together.
+A1	chair	noun	home	стул	A piece of furniture with a back and legs that one person sits on.	He pulled up a chair and sat next to her.
+A1	kitchen	noun	home	кухня	The room in a house where food is prepared and cooked.	She spent an hour in the kitchen preparing dinner.
+A1	bathroom	noun	home	ванная комната	A room in a house with a bath or shower and usually a toilet.	The bathroom is at the end of the hallway.
+A1	garden	noun	home	сад	An area of land next to a house where flowers and vegetables are grown.	The children played in the garden all afternoon.
+A1	red	adjective	colours	красный	Having the colour of blood or a ripe tomato.	She wore a red dress to the party.
+A1	blue	adjective	colours	синий	Having the colour of a clear sky on a sunny day.	He painted his bedroom blue.
+A1	green	adjective	colours	зелёный	Having the colour of grass or fresh leaves.	The traffic light turned green and the cars moved forward.
+A1	yellow	adjective	colours	жёлтый	Having the colour of a ripe lemon or the sun.	She bought a bunch of yellow flowers for her mother.
+A1	black	adjective	colours	чёрный	Having the darkest colour, like night or coal.	He always wears a black jacket to work.
+A1	white	adjective	colours	белый	Having the lightest colour, like snow or milk.	The walls of the room were painted white.
+A1	one	number	numbers	один	The number 1; a single unit.	She has one brother and two sisters.
+A1	two	number	numbers	два	The number 2; one more than one.	He has two dogs and three cats.
+A1	three	number	numbers	три	The number 3; one more than two.	We need three chairs for the guests.
+A1	ten	number	numbers	десять	The number 10; one more than nine.	She read for ten minutes before bed.
+A1	hundred	number	numbers	сто	The number 100; ten times ten.	About a hundred people came to the concert.
+A1	eat	verb	basic_verbs	есть	To put food in your mouth and swallow it.	She eats an apple every day at school.
+A1	drink	verb	basic_verbs	пить	To take liquid into your mouth and swallow it.	He drinks a glass of water when he wakes up.
+A1	sleep	verb	basic_verbs	спать	To rest with your eyes closed and your mind inactive.	Children need to sleep at least nine hours a night.
+A1	walk	verb	basic_verbs	идти пешком	To move forward by putting one foot in front of the other.	She walks to school because it's only ten minutes away.
+A1	run	verb	basic_verbs	бежать	To move quickly on your feet, faster than walking.	He ran to catch the bus before it left.
+A1	sit	verb	basic_verbs	сидеть	To rest with the weight of your body on your bottom.	Please sit down and wait for your name to be called.
+A1	stand	verb	basic_verbs	стоять	To be upright on your feet.	She stood at the bus stop for twenty minutes.
+A1	read	verb	basic_verbs	читать	To look at and understand written words.	He reads a book before bed every night.
+A1	write	verb	basic_verbs	писать	To make letters or words on paper with a pen or pencil.	She wrote her name at the top of the page.
+A1	speak	verb	basic_verbs	говорить	To say words or express yourself using your voice.	He speaks three languages fluently.
+A1	listen	verb	basic_verbs	слушать	To pay attention to a sound or to what someone is saying.	She listened carefully to the teacher's instructions.
+A1	see	verb	basic_verbs	видеть	To notice something with your eyes.	I can see the mountains from my bedroom window.
+A1	give	verb	basic_verbs	давать	To hand something to someone or let them have it.	She gave him a present on his birthday.
+A1	take	verb	basic_verbs	брать	To move something from one place and carry it somewhere else.	He took an umbrella because it looked like rain.
+A1	buy	verb	basic_verbs	покупать	To get something by paying money for it.	She went to the shop to buy some milk.
+A1	school	noun	education	школа	A place where children go to learn.	She starts at her new school on Monday.
+A1	teacher	noun	education	учитель	A person whose job is to teach in a school.	The teacher wrote the new words on the board.
+A1	student	noun	education	ученик	A person who is studying at a school or university.	Each student must bring their own pencil to the exam.
+A1	book	noun	education	книга	A set of printed pages held together inside a cover.	She borrowed a book from the library to read over the weekend.
+A1	pen	noun	education	ручка	A thin object used for writing with ink.	He wrote his essay with a blue pen.
+A1	bag	noun	education	сумка	A container made of soft material used for carrying things.	She packed her school bag the night before.
+A1	dog	noun	animals	собака	A common animal kept as a pet that barks.	Their dog barks every time someone rings the doorbell.
+A1	cat	noun	animals	кошка	A small furry animal kept as a pet that purrs and meows.	The cat sat on the warm radiator all day.
+A1	bird	noun	animals	птица	An animal with feathers and wings that can usually fly.	A small bird landed on the branch outside her window.
+A1	fish	noun	animals	рыба	An animal that lives in water and uses fins to swim.	He caught three fish in the river that afternoon.
+A1	horse	noun	animals	лошадь	A large animal with four legs that people ride.	She learned to ride a horse when she was eight.
+A1	big	adjective	descriptions	большой	Large in size.	They live in a big house with a large garden.
+A1	small	adjective	descriptions	маленький	Not large in size.	She put the keys in a small box on the shelf.
+A1	old	adjective	descriptions	старый	Having existed for a long time; not young or new.	He drove an old car that broke down constantly.
+A1	new	adjective	descriptions	новый	Recently made, bought, or discovered.	She was excited to wear her new dress to the party.
+A1	good	adjective	descriptions	хороший	Of high quality or standard; satisfactory.	He got a good grade on his maths test.
+A1	bad	adjective	descriptions	плохой	Of poor quality; not good.	The weather was so bad that they stayed indoors all day.
+A1	wife	noun	family	жена	A woman to whom a man is married.	His wife brought him a cup of tea while he was working.
+A1	uncle	noun	family	дядя	The brother of your mother or father.	My uncle always brings sweets when he visits at the weekend.
+A1	aunt	noun	family	тётя	The sister of your mother or father.	Her aunt taught her how to knit when she was seven years old.
+A1	cousin	noun	family	двоюродный брат/сестра	The child of your aunt or uncle.	She spent the summer with her cousins at their house by the lake.
+A1	family	noun	family	семья	A group of people related to each other, especially parents and children.	His whole family came to watch him perform in the school play.
+A1	parent	noun	family	родитель	A mother or father.	Her parents bought her a bicycle for her tenth birthday.
+A1	child	noun	family	ребёнок	A young human being who is not yet an adult.	Every child in the class received a certificate at the end of the year.
+A1	people	noun	family	люди	Men, women, and children; human beings in general.	Many people came to the market to buy fresh vegetables.
+A1	boy	noun	family	мальчик	A male child.	The boy ran across the playground and kicked the ball hard.
+A1	girl	noun	family	девочка	A female child.	The girl drew a picture of her house and her cat.
+A1	man	noun	family	мужчина	An adult male person.	The man at the door asked to speak to the manager.
+A1	woman	noun	family	женщина	An adult female person.	The woman smiled and waved when she saw her old friend.
+A1	arm	noun	body	рука (рука целиком)	The long part of the body from the shoulder to the hand.	She waved her arm to get the teacher's attention.
+A1	foot	noun	body	нога (ступня)	The flat part at the bottom of the leg that you stand on.	He hurt his foot when he dropped a heavy book on it.
+A1	back	noun	body	спина	The rear part of the body from the neck to the bottom.	She hurt her back when she lifted the heavy box.
+A1	finger	noun	body	палец (руки)	One of the five long parts at the end of your hand.	She cut her finger on a piece of broken glass.
+A1	tooth	noun	body	зуб	One of the hard white objects in your mouth used for biting food.	He brushed his tooth carefully after every meal.
+A1	lip	noun	body	губа	One of the two soft edges of the mouth.	She bit her lip nervously while waiting for the result.
+A1	shoulder	noun	body	плечо	The joint where the arm meets the body.	He put his hand on her shoulder to comfort her.
+A1	neck	noun	body	шея	The part of the body connecting the head to the shoulders.	She wore a gold necklace around her neck.
+A1	knee	noun	body	колено	The joint in the middle of the leg.	He fell and hurt his knee while playing football in the park.
+A1	stomach	noun	body	живот/желудок	The organ in the body where food is digested.	Her stomach hurt after eating too many sweets.
+A1	chest	noun	body	грудь	The front part of the upper body between the neck and stomach.	He had a pain in his chest after running too fast.
+A1	thumb	noun	body	большой палец	The short thick digit on the inner side of the hand.	She gave a thumbs-up to show she was ready.
+A1	meat	noun	food	мясо	The flesh of an animal used as food.	He bought some meat from the market for tonight's dinner.
+A1	cookie	noun	food	печенье	A small flat sweet biscuit, often with chocolate chips.	She baked a batch of cookies and shared them with the class.
+A1	potato	noun	food	картофель	A round vegetable with a brown or yellow skin, often boiled or fried.	She peeled three potatoes and put them in the pot to boil.
+A1	tomato	noun	food	помидор	A soft red vegetable used in cooking and salads.	He sliced a tomato and put it on top of the salad.
+A1	butter	noun	food	масло (сливочное)	A soft yellow fat made from milk, spread on bread.	She put a little butter on her toast before eating it.
+A1	juice	noun	food	сок	A drink made by squeezing the liquid from fruit or vegetables.	He drank a glass of orange juice with his breakfast.
+A1	pasta	noun	food	макароны	A food made from flour, water, and sometimes eggs, shaped into various forms.	She made pasta with tomato sauce for dinner.
+A1	pizza	noun	food	пицца	A flat round bread covered with tomato, cheese, and other toppings.	The children ate pizza for lunch at the birthday party.
+A1	ice cream	noun	food	мороженое	A frozen sweet food made from cream or milk.	She had a scoop of chocolate ice cream on a hot afternoon.
+A1	sandwich	noun	food	бутерброд	Two pieces of bread with a filling such as cheese or meat between them.	He made a cheese sandwich to take to school for lunch.
+A1	floor	noun	home	пол	The surface of a room that you walk on.	She dropped the glass and it smashed on the floor.
+A1	wall	noun	home	стена	One of the flat vertical sides of a room or building.	They painted the walls a bright shade of yellow.
+A1	roof	noun	home	крыша	The structure that covers the top of a building.	Rain was dripping through the roof into a bucket on the floor.
+A1	stairs	noun	home	лестница	A set of steps inside a building that go from one floor to another.	She climbed the stairs to her bedroom on the top floor.
+A1	living room	noun	home	гостиная	The main room in a house where people sit and relax.	The whole family sat in the living room to watch television.
+A1	bedroom	noun	home	спальня	A room used for sleeping in.	She tidied her bedroom before her friend came to stay.
+A1	toilet	noun	home	туалет	A large bowl with a seat that you use to get rid of waste from your body.	Please wash your hands after using the toilet.
+A1	cupboard	noun	home	шкаф/буфет	A piece of furniture with shelves and doors, used to store things.	She put the plates back in the cupboard after washing them.
+A1	clock	noun	home	часы (настенные)	A device on a wall or shelf that shows the time.	She looked at the clock and realised she was late.
+A1	pink	adjective	colours	розовый	Having a light red colour.	She painted her bedroom walls pink when she was young.
+A1	purple	adjective	colours	фиолетовый	Having a colour that is a mixture of red and blue.	The purple curtains made the room look dark and cosy.
+A1	orange	adjective	colours	оранжевый	Having the colour of an orange fruit; between red and yellow.	He wore an orange hat so he could be seen in the crowd.
+A1	brown	adjective	colours	коричневый	Having a colour like dark wood or chocolate.	The dog had a brown coat and big dark eyes.
+A1	grey	adjective	colours	серый	Having a colour between black and white, like clouds.	The sky turned grey and it started to rain heavily.
+A1	dark	adjective	colours	тёмный	With little or no light; of a deep shade of a colour.	The dark blue jacket looked very smart with his trousers.
+A1	light	adjective	colours	светлый	Pale in colour; not dark.	She wore a light green dress to the spring festival.
+A1	four	number	numbers	четыре	The number 4; one more than three.	There are four seasons in a year.
+A1	five	number	numbers	пять	The number 5; one more than four.	She bought five apples at the market.
+A1	six	number	numbers	шесть	The number 6; one more than five.	He finished six pages of the book before dinner.
+A1	seven	number	numbers	семь	The number 7; one more than six.	There are seven days in a week.
+A1	eight	number	numbers	восемь	The number 8; one more than seven.	The children ate eight biscuits between them.
+A1	nine	number	numbers	девять	The number 9; one more than eight.	She has nine books on her shelf.
+A1	twenty	number	numbers	двадцать	The number 20; twice ten.	He saved twenty pounds to buy a birthday present.
+A1	fifty	number	numbers	пятьдесят	The number 50; five times ten.	There were about fifty people at the party.
+A1	thousand	number	numbers	тысяча	The number 1000; ten times a hundred.	She paid a thousand pounds for her new laptop.
+A1	zero	number	numbers	ноль	The number 0; nothing.	The temperature fell to zero degrees overnight.
+A1	half	number	numbers	половина	One of two equal parts of something.	She ate half the sandwich and saved the rest for later.
+A1	first	number	numbers	первый	Coming before all others in order or time.	She was the first student to finish the test.
+A1	second	number	numbers	второй	Coming after the first; number two in a series.	He finished in second place in the running race.
+A1	third	number	numbers	третий	Coming after the second; number three in a series.	Their house is the third one on the left.
+A1	come	verb	basic_verbs	приходить	To move towards a place or person.	She came home late because the bus was delayed.
+A1	go	verb	basic_verbs	идти/ехать	To move from one place to another.	They go to the park every Sunday morning.
+A1	have	verb	basic_verbs	иметь	To own or possess something; to experience something.	She has two cats and a small dog.
+A1	make	verb	basic_verbs	делать	To produce or create something.	He made a cake for his mother's birthday.
+A1	like	verb	basic_verbs	нравиться	To find something pleasant or enjoyable.	She likes reading books about history.
+A1	want	verb	basic_verbs	хотеть	To feel a desire for something.	He wants a new bicycle for his birthday.
+A1	need	verb	basic_verbs	нуждаться	To require something because it is necessary.	She needs to buy milk before the shops close.
+A1	know	verb	basic_verbs	знать	To have information or facts in your mind.	He knows the answer to every question in the quiz.
+A1	open	verb	basic_verbs	открывать	To move something so it is no longer closed.	She opened the door and let the cat in from the cold.
+A1	close	verb	basic_verbs	закрывать	To move something so it covers or blocks an opening.	He closed the window because it was getting cold.
+A1	paper	noun	education	бумага	A thin flat material used for writing or drawing.	He wrote his name at the top of the paper.
+A1	desk	noun	education	парта/стол (рабочий)	A table you sit at to read or write, especially in school.	She put her books on the desk at the start of the lesson.
+A1	rubber	noun	education	ластик	A small object used to remove pencil marks from paper.	He used a rubber to erase the wrong answer.
+A1	ruler	noun	education	линейка	A flat straight piece of plastic or wood used for measuring.	She measured the line with her ruler.
+A1	question	noun	education	вопрос	Something you ask to get information or to test knowledge.	She raised her hand to ask the teacher a question.
+A1	answer	noun	education	ответ	Something said or written in response to a question.	He wrote his answer on the board for the class to see.
+A1	blackboard	noun	education	доска (классная)	A large dark board in a classroom that teachers write on with chalk.	The teacher wrote the homework on the blackboard.
+A1	colour	noun	education	цвет	A property of light, such as red or blue, seen with the eyes.	She chose a bright colour for the cover of her notebook.
+A1	picture	noun	education	картинка/рисунок	A drawing or photograph of something.	He drew a picture of his house and his family.
+A1	story	noun	education	история/рассказ	A description of events, real or imagined, told in words.	The teacher read the children a story before the end of class.
+A1	word	noun	education	слово	A single unit of language with a meaning.	She looked up the word in the dictionary to find its meaning.
+A1	number	noun	education	число	A symbol or word used to represent a quantity.	Write the number on the top line of your page.
+A1	letter	noun	education	буква	One of the symbols of the alphabet used in writing.	He wrote each letter of his name carefully.
+A1	alphabet	noun	education	алфавит	The set of letters used in writing a language.	She learned the English alphabet in her first week at school.
+A1	cow	noun	animals	корова	A large farm animal kept for its milk and meat.	The cow stood in the field and watched them walk past.
+A1	pig	noun	animals	свинья	A farm animal with pink skin and a curly tail.	The pig rolled in the mud on a hot summer afternoon.
+A1	rabbit	noun	animals	кролик	A small furry animal with long ears that hops.	She fed the rabbit a piece of carrot through the cage.
+A1	mouse	noun	animals	мышь	A small furry animal with a long tail.	The mouse ran across the kitchen floor and hid under the cooker.
+A1	duck	noun	animals	утка	A bird with a flat beak that lives near water and can swim.	The children threw bread to the ducks by the pond.
+A1	lion	noun	animals	лев	A large wild cat with a mane that lives in Africa.	The lion roared loudly and all the other animals ran away.
+A1	elephant	noun	animals	слон	A very large grey animal with a long nose called a trunk.	The elephant used its trunk to pick up a pile of leaves.
+A1	monkey	noun	animals	обезьяна	An animal with a long tail that lives in trees and can climb well.	The monkey swung from branch to branch in the tree.
+A1	bear	noun	animals	медведь	A large heavy wild animal with thick fur.	The bear climbed out of the river with a fish in its mouth.
+A1	sheep	noun	animals	овца	A farm animal kept for its wool and meat.	The sheep were grazing quietly in the green field.
+A1	frog	noun	animals	лягушка	A small jumping animal with smooth wet skin that lives near water.	The frog jumped off the stone and into the pond.
+A1	snake	noun	animals	змея	A long thin animal with no legs that moves by sliding.	The snake was coiled on a warm rock in the sunshine.
+A1	insect	noun	animals	насекомое	A small animal with six legs, such as an ant or bee.	She found a small insect on the leaf and looked at it carefully.
+A1	spider	noun	animals	паук	A small eight-legged creature that spins webs to catch insects.	A spider had built a web in the corner of the bedroom.
+A1	tiger	noun	animals	тигр	A large wild cat with orange and black stripes.	The tiger paced back and forth inside its enclosure at the zoo.
+A1	fast	adjective	descriptions	быстрый	Moving or happening at high speed; not slow.	She is a fast runner and always wins the school races.
+A1	slow	adjective	descriptions	медленный	Not moving or happening quickly.	The old bus was so slow that they were late for school.
+A1	happy	adjective	descriptions	счастливый	Feeling pleasure and contentment.	The children were happy when they saw the presents under the tree.
+A1	sad	adjective	descriptions	грустный	Feeling unhappy or showing grief.	She was sad when her best friend moved to another city.
+A1	round	adjective	descriptions	круглый	Having a curved shape like a circle or ball.	The children sat in a round circle on the floor.
+A1	wide	adjective	descriptions	широкий	Having a large distance from one side to the other.	The wide river was impossible to cross without a bridge.
+A1	long	adjective	descriptions	длинный	Great in length or distance; not short.	She has long brown hair that reaches her waist.
+A1	short	adjective	descriptions	короткий	Small in length or height; not long or tall.	The short boy couldn't reach the shelf without a chair.
+A1	tall	adjective	descriptions	высокий	Of great height; not short.	He was the tallest boy in his class at school.
+A1	clean	adjective	descriptions	чистый	Free from dirt or marks; not dirty.	Please keep your bedroom clean and tidy.
+A1	dirty	adjective	descriptions	грязный	Not clean; covered in dirt or marks.	His boots were dirty after walking in the muddy garden.
+A1	full	adjective	descriptions	полный	Containing as much as possible; not empty.	The bus was full and there were no seats left.
+A1	empty	adjective	descriptions	пустой	Containing nothing; not full.	She looked in the fridge but it was completely empty.
+A1	beautiful	adjective	descriptions	красивый	Very attractive or pleasing to the senses.	The view from the top of the mountain was beautiful.
+A1	easy	adjective	descriptions	лёгкий	Not difficult; simple to do or understand.	The test was easy and she finished in ten minutes.
+A1	hard	adjective	descriptions	твёрдый/трудный	Solid and firm; or difficult to do.	The maths problem was too hard for her to solve alone.
+A1	young	adjective	descriptions	молодой	Not old; in an early stage of life.	She is a young teacher who only started working last year.
+A1	strong	adjective	descriptions	сильный	Having great physical power.	He was strong enough to carry both bags up the stairs.
+A1	weak	adjective	descriptions	слабый	Not strong; lacking physical or mental power.	She felt weak after three days of illness.
+A1	loud	adjective	descriptions	громкий	Making a lot of noise; not quiet.	The music was so loud that they could hear it from the street.
+A1	quiet	adjective	descriptions	тихий	Making very little noise; not loud.	The library was very quiet and she could concentrate easily.
+
+A1	bright	adjective	colours	яркий	Having a strong, vivid colour that is easy to see.	She wore a bright red coat that everyone noticed.
+A1	pale	adjective	colours	бледный	Having a colour that is not strong or bright.	The walls were painted pale blue to make the room feel calm.
+A1	colourful	adjective	colours	красочный	Having many bright and different colours.	The market was full of colourful fruits and vegetables.
+A1	golden	adjective	colours	золотой	Having the colour of gold, a bright yellow-orange.	The golden leaves fell from the trees in autumn.
+A1	silver	adjective	colours	серебристый	Having the shiny grey-white colour of silver metal.	She wore silver earrings to match her grey dress.
+A1	mirror	noun	home	зеркало	A flat piece of glass that reflects images.	He looked in the mirror before going out.
+A1	navy	adjective	colours	тёмно-синий	a very dark shade of blue	She wore a navy blue jacket to work.
+A1	cream	adjective	colours	кремовый	a pale yellowish-white colour	The walls were painted a warm cream colour.
+A1	lime	adjective	colours	лаймовый	a bright yellow-green colour	He was wearing a lime green T-shirt.
+A1	violet	adjective	colours	фиолетовый	a bluish-purple colour	The violets in the garden are violet.
+A1	beige	adjective	colours	бежевый	a pale sandy yellowish-brown colour	She chose beige curtains for the living room.
+A1	shade	noun	colours	оттенок	a variety of a particular colour	She painted the room in a light shade of blue.
+A1	tint	noun	colours	тон цвета	a small amount of colour added to something	The glass had a slight green tint.
+A1	last	adjective	numbers	последний	coming after all others in a sequence	December is the last month of the year.
+A1	next	adjective	numbers	следующий	coming immediately after something	Turn left at the next street.
+A1	million	number	numbers	миллион	the number 1,000,000	There are over a million people in this city.
+A1	dozen	noun	numbers	дюжина	a group of twelve things	She bought a dozen eggs at the market.
+A1	count	verb	numbers	считать	to say numbers in order	Can you count from one to twenty?
+A1	total	noun	numbers	итого	the whole number or amount	What is the total cost of the trip?
+A1	draw	verb	education	рисовать	to make a picture with a pencil or pen	The children love to draw animals.
+A1	wolf	noun	animals	волк	a wild animal that looks like a large dog	Wolves live in packs and hunt together.
+A1	deer	noun	animals	олень	a large wild animal with long thin legs	We saw a deer in the forest.
+A1	whale	noun	animals	кит	the largest animal in the sea	Whales are mammals, not fish.
+A1	parrot	noun	animals	попугай	a tropical bird that can copy human speech	The parrot repeated everything I said.
+A1	butterfly	noun	animals	бабочка	an insect with large colourful wings	A butterfly landed on the flower.
+A1	elbow	noun	body	локоть	the joint in the middle of your arm	She hurt her elbow playing tennis.
+A1	wrist	noun	body	запястье	the part of your body between your hand and arm	She wore a bracelet on her wrist.
+A1	heel	noun	body	пятка	the back part of your foot	My new shoes rub my heels.
+A1	tongue	noun	body	язык	the soft organ in your mouth used for tasting	Stick out your tongue and say "Ah".
+A1	nephew	noun	family	племянник	the son of your brother or sister	My nephew is five years old.
+A1	niece	noun	family	племянница	the daughter of your brother or sister	I bought a gift for my niece.
+A1	maroon	adjective	colours	тёмно-красный	a dark brownish-red colour	She wore a maroon scarf in winter.
+A1	spell	verb	education	произносить по буквам	to say or write the letters of a word in order	Can you spell your name for me?
+A1	ask	verb	education	спрашивать	to say a question to get information	She asked the teacher for help.
+A1	tell	verb	education	говорить	to give information to someone by speaking	Tell me what you learned today.
+A1	show	verb	education	показывать	to make something visible or known to someone	She showed us how to do the exercise.

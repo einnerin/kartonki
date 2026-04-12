@@ -1,0 +1,483 @@
+LEVEL	WORD	POS	SEMANTIC_GROUP	RUSSIAN_TRANSLATION	DEFINITION	EXAMPLE_SENTENCE
+B1	achieve	verb	work_career	достигать	To succeed in doing something after effort.	She worked hard and finally achieved her goal of becoming a doctor.
+B1	career	noun	work_career	карьера	The series of jobs or work you do over your working life.	He decided to change his career and become a teacher.
+B1	experience	noun	work_career	опыт	Knowledge or skill gained from doing something over time.	The job required at least three years of relevant experience.
+B1	skill	noun	work_career	навык	An ability to do something well after training or practice.	Good communication skills are essential for this role.
+B1	manage	verb	work_career	управлять	To be in charge of people or a business.	She manages a team of twelve people in the sales department.
+B1	colleague	noun	work_career	коллега	A person you work with in your job.	Her colleagues surprised her with a cake on her last day.
+B1	promote	verb	work_career	повышать (по службе)	To give someone a higher position in their job.	She was promoted to senior manager after three years.
+B1	apply	verb	work_career	подавать заявку	To make a formal request for a job or a place at a university.	He applied for the position as soon as he saw the advertisement.
+B1	earn	verb	work_career	зарабатывать	To receive money as payment for work.	She earns enough money to live comfortably in the city.
+B1	retire	verb	work_career	выходить на пенсию	To stop working permanently because you have reached a certain age.	He retired at sixty-five after forty years with the same company.
+B1	environment	noun	nature	окружающая среда	The natural world, including land, air, water, and all living things.	We must take care of the environment for future generations.
+B1	pollution	noun	nature	загрязнение	Harmful substances in the air, water, or land.	Air pollution in the city has reached dangerous levels this summer.
+B1	climate	noun	nature	климат	The typical weather conditions in an area over a long period.	The climate in the south of the country is warm and dry.
+B1	recycle	verb	nature	перерабатывать	To process used materials so they can be used again.	She recycles glass, paper, and plastic every week.
+B1	waste	noun	nature	отходы	Things that are no longer needed and thrown away.	The factory was fined for dumping waste into the river.
+B1	energy	noun	nature	энергия	Power from fuel or electricity used to operate machines and heat buildings.	The house gets all its energy from solar panels on the roof.
+B1	natural	adjective	nature	природный	Existing in or produced by nature, not made by people.	The valley was full of natural beauty that took her breath away.
+B1	wildlife	noun	nature	дикая природа	Animals and plants living in natural conditions.	The national park protects the wildlife of the region.
+B1	species	noun	nature	вид (биологический)	A group of animals or plants of the same type that can breed together.	Several species of butterfly are endangered in this region.
+B1	forest	noun	nature	лес	A large area of land covered with many trees.	The Amazon forest is the largest tropical forest on Earth.
+B1	travel	verb	travel	путешествовать	To make a journey from one place to another.	She loves to travel and has visited over thirty countries.
+B1	journey	noun	travel	путешествие/поездка	The act of travelling from one place to another.	The journey from London to Edinburgh takes about five hours by train.
+B1	destination	noun	travel	пункт назначения	The place you are travelling to.	Rome was her dream destination for a summer holiday.
+B1	accommodation	noun	travel	жильё/проживание	A place where you stay when you are away from home.	They found cheap accommodation in a small guesthouse.
+B1	reservation	noun	travel	бронирование	An arrangement made in advance to keep something for you.	He made a reservation at the restaurant for six o'clock.
+B1	local	adjective	travel	местный	Belonging to or connected with a particular area.	She asked a local person for directions to the museum.
+B1	culture	noun	travel	культура	The customs, arts, and beliefs of a society.	She was fascinated by the culture of the country she was visiting.
+B1	tourist	noun	travel	турист	A person who visits a place for pleasure or interest.	The city centre was full of tourists taking photographs.
+B1	sightseeing	noun	travel	осмотр достопримечательностей	The activity of visiting famous or interesting places.	They spent the morning sightseeing and the afternoon relaxing.
+B1	backpack	noun	travel	рюкзак	A bag carried on your back, used especially for hiking or travel.	She packed everything into a backpack and set off on her trip.
+B1	feeling	noun	emotions	чувство	An emotional state or reaction.	She had a strange feeling that something was about to happen.
+B1	excited	adjective	emotions	взволнованный	Feeling enthusiastic and eager about something that is going to happen.	The children were so excited about the trip to the theme park.
+B1	nervous	adjective	emotions	нервный	Feeling worried or slightly afraid about something.	He was nervous before his driving test and his hands were shaking.
+B1	disappointed	adjective	emotions	разочарованный	Sad because something you hoped for did not happen.	She was disappointed when she didn't get the job she applied for.
+B1	proud	adjective	emotions	гордый	Feeling pleased and satisfied because of your achievements.	His parents were very proud when he graduated from university.
+B1	embarrassed	adjective	emotions	смущённый	Feeling uncomfortable or shy because of something you said or did.	He was embarrassed when he forgot her name at the party.
+B1	lonely	adjective	emotions	одинокий	Sad because you are alone or have no friends.	She felt lonely after moving to a new city where she knew nobody.
+B1	confident	adjective	emotions	уверенный в себе	Feeling sure about yourself and your abilities.	She felt confident after months of preparation for the presentation.
+B1	surprised	adjective	emotions	удивлённый	Feeling astonishment caused by something unexpected.	He was surprised to find a letter waiting for him when he got home.
+B1	worried	adjective	emotions	обеспокоенный	Feeling anxious about something that might happen.	She was worried about her son who hadn't called in a week.
+B1	society	noun	society	общество	The large group of people living together in a community.	Technology has changed the way modern society communicates.
+B1	government	noun	society	правительство	The group of people who control and make decisions for a country.	The government announced new measures to reduce unemployment.
+B1	law	noun	society	закон	A rule made by the government that everyone must obey.	There is a law against using your phone while driving.
+B1	election	noun	society	выборы	An organised event at which people vote to choose a leader.	Millions of people voted in the general election last week.
+B1	vote	verb	society	голосовать	To formally choose between options by marking a ballot.	She voted in every election since she turned eighteen.
+B1	democracy	noun	society	демократия	A system of government in which citizens vote for their leaders.	They fought for democracy and the right to vote freely.
+B1	citizen	noun	society	гражданин	A person who legally belongs to a particular country.	Every citizen has both rights and responsibilities.
+B1	community	noun	society	сообщество	A group of people living in the same area or sharing common interests.	The local community raised money to restore the old church.
+B1	tradition	noun	society	традиция	A custom or way of behaving that has existed for a long time.	It is a family tradition to have a big dinner on New Year's Eve.
+B1	generation	noun	society	поколение	All the people born and living at about the same time.	The younger generation uses technology very differently from their parents.
+B1	economy	noun	business	экономика	The system of trade and business in a country.	The economy grew by three percent last year.
+B1	business	noun	business	бизнес	An organisation that buys and sells goods or services.	She started her own business selling handmade candles online.
+B1	product	noun	business	продукт	Something made to be sold.	They launched a new product aimed at young people.
+B1	customer	noun	business	клиент	A person who buys goods or services from a shop or business.	The shop offers a discount to loyal customers.
+B1	advertise	verb	business	рекламировать	To tell people about a product through media to encourage them to buy it.	The company advertises its products on social media.
+B1	profit	noun	business	прибыль	The money a business makes after paying all its costs.	The company made a large profit in its first year of trading.
+B1	market	noun	business	рынок	The activity of buying and selling goods and services.	The new phone quickly captured a large share of the market.
+B1	cost	noun	business	стоимость	The amount of money needed to buy or do something.	The cost of living in the capital is much higher than in rural areas.
+B1	invest	verb	business	инвестировать	To put money into something to make a profit in the future.	She invested her savings in a small property.
+B1	brand	noun	business	бренд	A name given to a product by the company that makes it.	He only buys one brand of coffee because he loves the taste.
+B1	describe	verb	language	описывать	To give details about what someone or something is like.	He described the strange noise he had heard in the night.
+B1	explain	verb	language	объяснять	To make something clear and easy to understand.	The teacher explained the new grammar rule slowly.
+B1	argue	verb	language	спорить	To give reasons for or against something; to disagree with someone.	She argued that the new policy was unfair to young workers.
+B1	discuss	verb	language	обсуждать	To talk about something with other people to share ideas.	They discussed the problem for an hour without finding a solution.
+B1	agree	verb	language	соглашаться	To have the same opinion as someone else.	He agreed with her suggestion to postpone the meeting.
+B1	suggest	verb	language	предлагать	To mention an idea or plan for someone to consider.	She suggested that they try the new restaurant on the high street.
+B1	opinion	noun	language	мнение	Your personal view or judgement about something.	In my opinion, the film was too long.
+B1	example	noun	language	пример	A thing that shows what something else is like.	She gave several examples to support her argument.
+B1	translate	verb	language	переводить	To change words from one language into another.	He translated the letter from Spanish into English.
+B1	communication	noun	language	общение	The activity of sharing information or feelings with others.	Good communication is the key to a successful relationship.
+B1	technology	noun	technology	технология	The use of scientific knowledge for practical purposes.	New technology is changing the way people work.
+B1	software	noun	technology	программное обеспечение	Programs used to operate a computer.	She updated the software on her laptop every week.
+B1	device	noun	technology	устройство	A piece of equipment designed for a particular purpose.	He uses a small device to monitor his heart rate.
+B1	network	noun	technology	сеть	A system of connected computers or people.	The company uses a secure network to protect its data.
+B1	digital	adjective	technology	цифровой	Relating to information stored and processed by computers.	She prefers digital books because she can carry hundreds on one device.
+B1	connect	verb	technology	подключаться	To join or link things or people together.	He connected his laptop to the projector for the presentation.
+B1	update	verb	technology	обновлять	To add new information or the latest version of something.	She updated her profile picture on her social media account.
+B1	data	noun	technology	данные	Facts and information, especially stored on a computer.	The researchers collected data from over a thousand participants.
+B1	system	noun	technology	система	A set of things or parts that work together.	The new transport system has reduced travel times significantly.
+B1	online	adjective	technology	онлайн	Connected to or available through the internet.	She completed the entire course online without attending any classes.
+B1	improve	verb	personal_development	улучшать	To make something better.	She took extra lessons to improve her maths grade.
+B1	develop	verb	personal_development	развивать	To grow or cause something to grow stronger or more advanced.	He wants to develop his public speaking skills.
+B1	practice	noun	personal_development	практика	Doing something regularly to get better at it.	Regular practice is the only way to become a good musician.
+B1	challenge	noun	personal_development	вызов/трудность	Something difficult that tests your abilities.	Learning to drive was a real challenge for her at first.
+B1	progress	noun	personal_development	прогресс	Movement towards a better or more advanced state.	She made excellent progress in her first year of learning Chinese.
+B1	opportunity	noun	personal_development	возможность	A chance to do something or achieve something.	Living abroad was a great opportunity to learn a new language.
+B1	success	noun	personal_development	успех	The achievement of what you were trying to do.	Her success in business inspired many young women.
+B1	decision	noun	personal_development	решение	A choice you make after thinking about something.	He made the difficult decision to quit his job and travel the world.
+B1	responsibility	noun	personal_development	ответственность	Something you are expected to do as part of your role.	She took responsibility for organising the team's schedule.
+B1	confident	adjective	personal_development	уверенный	Certain about your own ability to do something well.	After months of training, he felt confident enough to compete.
+B1	health	noun	health	здоровье	The general condition of a person's body or mind.	Regular exercise is essential for good physical and mental health.
+B1	exercise	noun	health	упражнение/зарядка	Physical activity done to keep fit and healthy.	She does thirty minutes of exercise every morning before work.
+B1	diet	noun	health	диета/питание	The food and drink that a person regularly eats.	The doctor recommended a low-fat diet to improve her cholesterol.
+B1	stress	noun	health	стресс	A feeling of worry and pressure caused by difficult situations.	His doctor told him to reduce stress and get more sleep.
+B1	mental	adjective	health	психический/умственный	Relating to the mind or the state of the mind.	Mental health is just as important as physical health.
+B1	injury	noun	health	травма	Harm done to a part of the body, often as a result of an accident.	He suffered a knee injury during the football match.
+B1	treatment	noun	health	лечение	Medical care given to a patient for an illness or injury.	The doctor started the treatment immediately.
+B1	symptom	noun	health	симптом	A sign that shows someone is ill.	Fatigue and a sore throat are common symptoms of this illness.
+B1	disease	noun	health	болезнь	An illness affecting a person, animal, or plant.	The disease spread rapidly through the school.
+B1	pharmacy	noun	health	аптека	A shop where medicines are sold or given out.	She went to the pharmacy to pick up her prescription.
+B1	history	noun	education	история	The study of past events.	He studied history at university and became a teacher.
+B1	science	noun	education	наука	The study of the physical and natural world through observation and experiment.	She won a prize at the national science competition.
+B1	literature	noun	education	литература	Written works, especially novels, plays, and poetry considered to have artistic value.	She has a degree in English literature from Oxford University.
+B1	research	noun	education	исследование	A careful study of a subject to discover new facts or ideas.	The research showed that sleep deprivation affects memory.
+B1	knowledge	noun	education	знание	Facts, information, and skills gained through education.	Her knowledge of European history was impressive.
+B1	university	noun	education	университет	A place of higher education where students study for degrees.	He applied to five universities and was accepted by three.
+B1	degree	noun	education	учёная степень/диплом	A qualification awarded by a university after completing a course.	She has a degree in economics from a top university.
+B1	lecture	noun	education	лекция	A talk given to a group of students or people to teach something.	The professor gave an interesting lecture on climate change.
+B1	essay	noun	education	эссе	A short piece of writing on one subject.	She wrote a three-thousand-word essay on Shakespeare.
+B1	examination	noun	education	экзамен (официальный)	A formal test of someone's knowledge of a subject.	She passed all her final examinations with high marks.
+B1	relationship	noun	relationships	отношения	The way in which two or more people feel about and behave towards each other.	They had a close relationship built on trust and respect.
+B1	marriage	noun	relationships	брак	The legal relationship between two people who are husband and wife.	They celebrated twenty years of happy marriage.
+B1	divorce	noun	relationships	развод	The legal ending of a marriage.	The divorce was difficult for the whole family, especially the children.
+B1	argument	noun	relationships	ссора/спор	A disagreement between people.	They had a serious argument about money and didn't speak for days.
+B1	trust	noun	relationships	доверие	A belief that someone is honest and will not harm you.	Trust is the most important part of any friendship.
+B1	support	verb	relationships	поддерживать	To help someone emotionally or practically.	Her friends supported her through a very difficult time.
+B1	respect	noun	relationships	уважение	A feeling of admiration for someone because of their qualities.	She had great respect for her grandmother's wisdom and kindness.
+B1	forgive	verb	relationships	прощать	To stop feeling angry at someone who has done something wrong.	It took her years to forgive him for what he had done.
+B1	jealous	adjective	relationships	ревнивый	Feeling upset because someone else has something you want.	He was jealous of his brother's success in sport.
+B1	involve	verb	relationships	вовлекать	To include someone in an activity or decision.	She tried to involve all the team members in the planning process.
+B1	planet	noun	environment	планета	A large spherical body that orbits a star.	We must protect our planet for future generations.
+B1	damage	verb	environment	наносить вред	To cause physical harm to something.	Heavy rain damaged the roof of the old building.
+B1	protect	verb	environment	защищать	To keep someone or something safe from harm.	The government must protect endangered species from poachers.
+B1	disaster	noun	environment	катастрофа	A sudden event that causes great damage and suffering.	The earthquake was one of the worst natural disasters in recorded history.
+B1	flood	noun	environment	наводнение	A large amount of water covering an area that is usually dry.	The flood destroyed hundreds of homes in the valley below the dam.
+B1	earthquake	noun	environment	землетрясение	A sudden violent shaking of the ground caused by movements in the earth.	The earthquake measured 7.2 on the Richter scale and destroyed many buildings.
+B1	affect	verb	environment	влиять	To have an effect on something or someone.	Air pollution affects the health of millions of people in large cities.
+B1	campaign	noun	society	кампания	An organised series of activities to achieve a social goal.	She joined a campaign to raise awareness about plastic pollution in the ocean.
+B1	benefit	noun	society	польза/выгода	An advantage or helpful result of something.	The benefits of regular exercise are well documented by scientists.
+B1	freedom	noun	society	свобода	The power or right to act, speak, or think without restriction.	Freedom of speech is a fundamental right in a democratic society.
+B1	equal	adjective	society	равный	The same in size, degree, or value; having the same rights.	Everyone should have equal access to quality education.
+B1	tax	noun	economy	налог	Money paid to the government by citizens to fund public services.	The government raised taxes to fund the construction of new hospitals.
+B1	debt	noun	economy	долг	Money that is owed to someone else.	She worked hard to pay off her student debt within five years of graduating.
+B1	trade	noun	economy	торговля	The activity of buying and selling goods and services.	International trade has grown significantly over the past century.
+B1	import	verb	economy	импортировать	To bring goods into a country from another country.	The country imports most of its oil from the Middle East.
+B1	export	verb	economy	экспортировать	To send goods to another country for sale.	Brazil exports large quantities of coffee to Europe and North America.
+B1	currency	noun	economy	валюта	The system or type of money used in a country.	The euro is the currency used in most of the European Union.
+B1	inflation	noun	economy	инфляция	A general rise in prices in an economy.	High inflation means that people can buy less with the same amount of money.
+B1	crisis	noun	economy	кризис	A time of great difficulty or danger.	The financial crisis of 2008 affected economies all around the world.
+B1	increase	verb	economy	увеличивать	To become or make something larger in size or number.	The company increased its prices by five percent at the start of the year.
+B1	reduce	verb	economy	уменьшать	To make something smaller in size, amount, or degree.	They reduced their energy consumption by installing solar panels on the roof.
+B1	commentary	noun	media	комментарий/репортаж	A spoken description of an event as it happens; a written analysis.	The live commentary kept listeners informed throughout the game.
+B1	headline	noun	media	заголовок	The title of a newspaper story printed in large letters.	The scandal made the front page headline of every national newspaper.
+B1	press	noun	media	пресса	Newspapers and the journalists who write for them.	The press reported extensively on the government scandal throughout the week.
+B1	article	noun	media	статья	A piece of writing in a newspaper or magazine.	She wrote an article about climate change for the school magazine.
+B1	report	verb	media	сообщать	To give information about something that has happened.	The journalist reported on the conflict from inside the war zone.
+B1	channel	noun	media	канал	A television or radio station.	He switched to a sports channel to watch the live football game.
+B1	circulate	verb	media	распространять/циркулировать	To pass information or items from person to person.	She circulated the meeting notes by email to all team members.
+B1	review	noun	media	обзор/рецензия	A piece of writing giving an opinion about a book, film, or event.	The restaurant received excellent reviews in the local press.
+B1	ancient	adjective	history	древний	Very old; belonging to a period long ago in history.	The ancient ruins attracted thousands of visitors every single year.
+B1	century	noun	history	век	A period of one hundred years.	The painting was created at the beginning of the nineteenth century.
+B1	revolution	noun	history	революция	A dramatic change in a political or social system.	The French Revolution transformed the whole structure of society forever.
+B1	independence	noun	history	независимость	The state of being free from outside control.	The country gained independence in 1947 after decades of colonial rule.
+B1	empire	noun	history	империя	A group of countries under the control of one ruler.	The Roman Empire stretched across most of Europe and North Africa.
+B1	battle	noun	history	битва	A fight between groups of people, especially in a war.	The battle lasted three days and resulted in heavy casualties on both sides.
+B1	performance	noun	arts	выступление	An act of performing a play, concert, or other entertainment.	The ballet performance received a standing ovation from the audience.
+B1	exhibition	noun	arts	выставка	A public display of art or other items of interest.	The art gallery is hosting an exhibition of contemporary sculptures.
+B1	concert	noun	arts	концерт	A live performance of music before an audience.	She bought tickets for the concert many months in advance.
+B1	instrument	noun	arts	инструмент (музыкальный)	An object used to make music, such as a piano or a violin.	Learning a musical instrument requires patience and regular daily practice.
+B1	character	noun	arts	персонаж	A person in a book, film, or play.	The main character in the novel is a young woman who travels the world alone.
+B1	novel	noun	arts	роман	A long written story with characters and a plot.	She spent two years writing her first novel about her grandmother.
+B1	fiction	noun	arts	художественная литература	Books and stories about imaginary events and people.	She prefers reading fiction to non-fiction because she enjoys stories.
+B1	scene	noun	arts	сцена	A part of a film or play in which events happen in one place.	The most dramatic scene in the film is the confrontation at the end.
+B1	experiment	noun	science_b1	эксперимент	A scientific test done to learn about something.	The students carried out an experiment to test which material was the strongest.
+B1	laboratory	noun	science_b1	лаборатория	A room or building with equipment for scientific experiments.	She spent hours in the laboratory carefully analysing the water samples.
+B1	result	noun	science_b1	результат	The final outcome of an action or experiment.	The test results showed that the vaccine was ninety percent effective.
+B1	substance	noun	science_b1	вещество	A type of solid, liquid, or gas with specific properties.	The scientist identified an unknown substance in the water sample.
+B1	chemical	adjective	science_b1	химический	Relating to chemistry or produced by chemical processes.	The factory was accused of releasing harmful chemical waste into the river.
+B1	process	noun	science_b1	процесс	A series of actions that produce a result.	The manufacturing process was automated to improve efficiency and reduce costs.
+B1	mixture	noun	science_b1	смесь	A combination of different things.	The mixture of colours produced an unexpected shade of purple.
+B1	solve	verb	science_b1	решать (задачу)	To find an answer to a problem or question.	Scientists are working hard to solve the problem of antibiotic resistance.
+B1	patient	adjective	personal_development	терпеливый	Able to wait for a long time without becoming angry or upset.	You need to be patient when learning a new language — it takes time.
+B1	generous	adjective	personal_development	щедрый	Willing to give more than is necessary or expected.	She was so generous that she donated half her salary to charity.
+B1	brave	adjective	personal_development	смелый	Willing to do something difficult or dangerous without showing fear.	He was brave enough to stand up and speak in front of the whole school.
+B1	clever	adjective	personal_development	умный	Good at learning and understanding things quickly.	She was clever enough to solve the puzzle in under five minutes.
+B1	talent	noun	personal_development	талант	A natural ability to do something well.	He showed a remarkable talent for music from a very early age.
+B1	ambition	noun	personal_development	амбиция	A strong desire to achieve something great.	Her ambition was to become the first in her family to go to university.
+B1	aim	noun	personal_development	цель	The thing you are trying to achieve.	The aim of the project is to reduce plastic waste in local schools.
+B1	fail	verb	personal_development	терпеть неудачу	To not succeed in doing something.	He failed his driving test twice before finally passing on the third attempt.
+B1	attempt	verb	personal_development	попытаться	To try to do something, especially something difficult.	She attempted to climb the mountain but turned back due to bad weather.
+B1	encourage	verb	personal_development	поощрять	To give someone support or confidence to do something.	The teacher encouraged her students to ask questions and think critically.
+B1	persevere	verb	personal_development	настойчиво продолжать	To continue doing something even when it is difficult.	She persevered with her studies despite many setbacks along the way.
+B1	motivate	verb	personal_development	мотивировать	To make someone want to do something by giving them a reason.	The coach motivated the team with an inspiring speech before the match.
+B1	habit	noun	daily_life	привычка	Something you do regularly, often without thinking.	Checking his phone first thing in the morning had become a bad habit.
+B1	schedule	noun	daily_life	расписание	A plan of activities with the times they will happen.	She kept a strict schedule to balance work and family life.
+B1	routine	noun	daily_life	распорядок дня	A regular way of doing things in the same order.	His morning routine helped him feel organised for the day ahead.
+B1	appointment	noun	daily_life	встреча/приём	An arrangement to meet someone or see a professional at a fixed time.	She made an appointment with the dentist for the following Tuesday.
+B1	queue	verb	daily_life	стоять в очереди	To wait in a line for something.	People queued for hours outside the shop to buy the new phone.
+B1	delay	noun	daily_life	задержка	A period of time by which something is late.	There was a two-hour delay at the airport due to bad weather.
+B1	convenient	adjective	daily_life	удобный	Fitting in well with needs or plans; easy to use.	The supermarket near her office was very convenient for lunchtime shopping.
+B1	ordinary	adjective	daily_life	обычный	Normal and not special or different.	It was just an ordinary Tuesday until something extraordinary happened.
+B1	typical	adjective	daily_life	типичный	Having all the usual qualities of a particular person or thing.	This is a typical example of how poor communication causes problems.
+B1	tend	verb	daily_life	иметь тенденцию	To usually do or be something.	She tends to arrive early for meetings so she can prepare.
+B1	profession	noun	work_career	профессия	A job that requires special training or qualifications.	She chose the profession of architecture after years of study.
+B1	workplace	noun	work_career	рабочее место	The place where you go to do your job.	Good communication is essential in any workplace.
+B1	resign	verb	work_career	увольняться (по собственному желанию)	To officially leave your job by choice.	He resigned from his position after disagreeing with the management.
+B1	unemployed	adjective	work_career	безработный	Not having a paid job.	She was unemployed for six months before finding a new position.
+B1	contract	noun	work_career	контракт	A written legal agreement between two parties about work or services.	She signed a two-year contract with the new company.
+B1	deadline	noun	work_career	срок сдачи/дедлайн	The latest time or date by which something must be done.	He worked through the night to finish the report before the deadline.
+B1	overtime	noun	work_career	сверхурочная работа	Time worked beyond the normal hours, usually paid extra.	She worked overtime every evening to finish the project on time.
+B1	dismiss	verb	work_career	увольнять	To officially tell someone their job has ended.	He was dismissed from his job after repeated lateness.
+B1	workforce	noun	work_career	рабочая сила	All the people who work for a company or in a country.	The company reduced its workforce by twenty percent.
+B1	permanent	adjective	work_career	постоянный	Lasting forever or for a very long time; not temporary.	After six months on a temporary contract she got a permanent position.
+B1	temporary	adjective	work_career	временный	Lasting only for a limited period of time.	He took a temporary job at the supermarket over the summer.
+B1	intern	noun	work_career	стажёр	A student or trainee who works for a period of time to get experience.	She worked as an intern at the magazine for three months.
+B1	bonus	noun	work_career	бонус/премия	An extra payment given to an employee for good work.	She received a generous bonus at the end of the financial year.
+B1	promotion	noun	work_career	повышение по службе	The act of being moved to a higher or more important position at work.	He was given a promotion after successfully leading the new project.
+B1	pesticide	noun	nature	пестицид	A chemical used to kill insects or other organisms that harm crops.	The farmer used pesticides carefully to protect the harvest without harming bees.
+B1	endangered	adjective	nature	находящийся под угрозой исчезновения	At risk of becoming extinct.	The rare bird is now endangered due to the loss of its natural habitat.
+B1	meadow	noun	nature	луг	An area of grassland, often used for grazing animals or growing hay.	The children ran through the meadow chasing butterflies on a warm afternoon.
+B1	sanctuary	noun	nature	заповедник	A place where wild animals are protected and can live safely.	The bird sanctuary provides a safe haven for over two hundred endangered species.
+B1	wetland	noun	nature	болотистые угодья	An area of land covered with water or saturated with moisture.	Wetlands are home to thousands of species of birds and fish.
+B1	vegetation	noun	nature	растительность	The plants that grow in a particular area or region.	The dense vegetation in the rainforest provides shelter for countless species.
+B1	landscape	noun	nature	пейзаж	The appearance of an area of land, including hills and rivers.	The landscape changed dramatically as they drove further north.
+B1	soil	noun	nature	почва	The top layer of the earth in which plants grow.	The farmers tested the soil to see which crops would grow best.
+B1	heatwave	noun	nature	волна жары	A prolonged period of abnormally hot weather.	The heatwave caused widespread wildfires and water shortages across the region.
+B1	glacier	noun	nature	ледник	A large slow-moving mass of ice formed from compressed snow.	The glacier had shrunk significantly over the past fifty years due to warming temperatures.
+B1	plant	noun	nature	растение	A living organism that grows in soil and has leaves and roots.	She grew many different plants in her small garden.
+B1	waterfall	noun	nature	водопад	A stream of water falling from a height over a cliff or rock.	The waterfall thundered down into the pool below, creating a fine mist.
+B1	path	noun	nature	тропа	A narrow track for walking, often through nature.	They followed a narrow path through the forest for several miles.
+B1	explore	verb	travel	исследовать	To travel around a new place to find out about it.	She explored the old city on foot for three days.
+B1	abroad	adverb	travel	за рубежом	In or to a foreign country.	He spent a year working abroad after finishing university.
+B1	landmark	noun	travel	достопримечательность	A well-known and easily recognisable building or feature.	The Eiffel Tower is the most famous landmark in Paris.
+B1	route	noun	travel	маршрут	The way you take to get from one place to another.	She planned the route carefully before starting the long drive.
+B1	baggage	noun	travel	багаж	Bags and cases that travellers carry on a journey.	She checked her baggage in at the desk and kept only her hand luggage.
+B1	customs	noun	travel	таможня	The official place at a border or airport where goods are checked.	He had to declare his purchases when passing through customs.
+B1	terminal	noun	travel	терминал (аэропорта/вокзала)	A building where passengers begin and end a journey.	The international terminal at the airport was busy with holiday travellers.
+B1	itinerary	noun	travel	маршрут поездки	A detailed plan of a journey, listing places and times.	She printed out the itinerary and gave a copy to everyone in the group.
+B1	exchange	noun	travel	обмен (валюты)	The act of giving one thing and receiving another in return.	The exchange rate was very favourable when she visited last summer.
+B1	stopover	noun	travel	промежуточная остановка	A short stay in a place between two parts of a journey.	They had a six-hour stopover in Dubai before catching their connecting flight.
+B1	layover	noun	travel	пересадка/ожидание рейса	A period of waiting at an airport or station during a long journey.	The long layover gave them time to explore the airport's restaurants.
+B1	package	noun	travel	пакетный тур	A holiday where travel, accommodation, and meals are all included.	They booked a package holiday to Spain for two weeks.
+B1	guidebook	noun	travel	путеводитель	A book giving information about a place for travellers or tourists.	She consulted her guidebook to find the best restaurants in the city.
+B1	relief	noun	emotions	облегчение	A feeling of happiness that something unpleasant has not happened.	She felt great relief when she heard the test results were normal.
+B1	frustrated	adjective	emotions	разочарованный/расстроенный	Feeling annoyed because you cannot do or achieve something.	She was frustrated that the computer kept crashing during her presentation.
+B1	resentful	adjective	emotions	обиженный/негодующий	Feeling angry and bitter because you have been treated unfairly.	She was resentful of the praise her colleague received for her own idea.
+B1	ashamed	adjective	emotions	стыдящийся	Feeling bad about something you have done wrong.	She was ashamed of her behaviour and apologised immediately.
+B1	hopeful	adjective	emotions	полный надежды	Feeling that what you want will happen.	She was hopeful about the interview results after the warm reception.
+B1	miserable	adjective	emotions	несчастный	Very unhappy and uncomfortable.	He was miserable for weeks after his dog died.
+B1	anxious	adjective	emotions	тревожный	Feeling worry and unease about uncertain events.	She was anxious about starting at a new school in September.
+B1	angry	adjective	emotions	злой	Feeling or showing strong displeasure.	He was angry when he found out someone had lied to him.
+B1	content	adjective	emotions	довольный	Happy and satisfied with your life or situation.	She felt content sitting by the fire with a good book.
+B1	grateful	adjective	emotions	благодарный	Feeling or showing thanks for something you have received.	He was truly grateful for all the help his friends gave him.
+B1	scared	adjective	emotions	испуганный	Feeling fear because of a specific danger or threat.	The child was scared of the dark and always slept with a light on.
+B1	delighted	adjective	emotions	восхищённый	Very pleased and happy about something.	She was delighted when she found out she had passed all her exams.
+B1	overwhelmed	adjective	emotions	подавленный/захлёстнутый чувствами	Feeling that a situation is too difficult or intense to handle.	She felt overwhelmed by the amount of work she had to complete in one week.
+B1	bored	adjective	emotions	скучающий	Feeling unhappy because something is not interesting.	She was bored during the long meeting and kept looking at the clock.
+B1	activism	noun	society	активизм	The use of campaigns or demonstrations to achieve social or political change.	Student activism played a key role in pushing for education reform.
+B1	civic	adjective	society	гражданский	Relating to citizens and their rights and responsibilities.	Voting is a civic duty that every adult should exercise.
+B1	equality	noun	society	равенство	The state of having the same rights and opportunities as everyone else.	The movement fought for equality in the workplace regardless of gender.
+B1	census	noun	society	перепись населения	An official count of the population recording details such as age and occupation.	The national census is conducted every ten years.
+B1	petition	noun	society	петиция	A formal written request signed by many people demanding action.	She organised a petition asking the council to keep the local park open.
+B1	privilege	noun	society	привилегия	A special advantage or right available to a particular person or group.	Access to good education is still a privilege rather than a right for many.
+B1	hardship	noun	society	лишения/тяготы	Difficult conditions that involve suffering or lack of resources.	Many families faced serious hardship during the economic recession.
+B1	diversity	noun	society	разнообразие	The presence of many different types of people or things.	The school celebrates the diversity of its student body.
+B1	consent	noun	society	согласие	Permission or agreement for something to happen.	Both parties must give their informed consent before the procedure.
+B1	integration	noun	society	интеграция	The process of bringing different groups into equal membership of a society.	Social integration of newcomers requires effort from both sides.
+B1	finance	noun	business	финансы	The management of money and financial matters.	She studied finance at university and now works for a bank.
+B1	manufacture	verb	business	производить	To make goods in large quantities, usually in a factory.	The company manufactures electronic components for export.
+B1	distribute	verb	business	распространять	To supply goods to businesses or customers.	The firm distributes organic food products to restaurants across the country.
+B1	overhead	noun	business	накладные расходы	The regular costs of running a business that do not vary with output.	Renting a smaller office would reduce their monthly overhead.
+B1	wholesale	adjective	business	оптовый	Relating to the selling of goods in large quantities to businesses.	The wholesale price was much lower than the retail price in the shops.
+B1	launch	verb	business	запускать (продукт)	To introduce a new product or service to the public.	The company launched its new product at an international trade fair.
+B1	supplier	noun	business	поставщик	A person or company that provides goods or services.	They found a cheaper supplier for the raw materials.
+B1	client	noun	business	клиент (деловой)	A person who pays for professional services.	The lawyer met with her client to discuss the case.
+B1	diversify	verb	business	диверсифицировать	To develop a wider range of products or activities.	The company decided to diversify its product range to attract new customers.
+B1	deal	noun	business	сделка	An agreement or arrangement, especially in business.	They signed a deal worth several million euros.
+B1	expenditure	noun	business	расходы	The total amount of money spent by a person or organisation.	The government planned to reduce public expenditure by ten percent.
+B1	franchise	noun	business	франшиза	A licence to use a company's name and methods in exchange for fees.	He bought a franchise to open a branch of the popular café chain.
+B1	trademark	noun	business	товарный знак	A legally registered symbol or name used to identify a company's products.	The company registered its trademark to prevent others from copying the logo.
+B1	loss	noun	business	убыток	Money that is lost when a business spends more than it earns.	The company made a loss in the first year but recovered quickly.
+B1	disagree	verb	language	не соглашаться	To have a different opinion from someone else.	She disagreed with his interpretation of the data.
+B1	convince	verb	language	убеждать	To make someone believe that something is true.	He tried to convince her that his plan was the best option.
+B1	complain	verb	language	жаловаться	To say that you are unhappy or not satisfied with something.	She complained to the manager about the noisy neighbours.
+B1	refuse	verb	language	отказываться	To say that you will not do or accept something.	He refused to answer any questions about his personal life.
+B1	promise	verb	language	обещать	To tell someone that you will definitely do something.	She promised to call him as soon as she arrived safely.
+B1	warn	verb	language	предупреждать	To tell someone about a possible danger in advance.	The weather service warned people to stay indoors during the storm.
+B1	admit	verb	language	признавать	To confess that something is true, especially something bad.	He admitted that he had made a mistake in the report.
+B1	deny	verb	language	отрицать	To say that something is not true.	She denied taking the money and said she had nothing to do with it.
+B1	interrupt	verb	language	прерывать	To stop someone speaking by saying or doing something yourself.	He interrupted her mid-sentence to add an important point.
+B1	respond	verb	language	отвечать/реагировать	To say or do something as a reaction to something else.	She didn't respond to his message for three days.
+B1	phrase	noun	language	фраза	A small group of words that form part of a sentence.	He learned several useful phrases before his trip to Italy.
+B1	grammar	noun	language	грамматика	The rules that describe how words are combined in a language.	She studied English grammar carefully before the exam.
+B1	vocabulary	noun	language	словарный запас	All the words a person knows in a language.	Reading widely is the best way to build your vocabulary.
+B1	accent	noun	language	акцент	A way of pronouncing words that shows where someone is from.	He had a strong regional accent that people found charming.
+B1	fluent	adjective	language	свободно владеющий языком	Able to use a language naturally and easily.	After two years living abroad she was fluent in the language.
+B1	programme	noun	technology	программа	A set of coded instructions for a computer; a TV or radio show.	She wrote a simple programme to automate the data entry task.
+B1	install	verb	technology	устанавливать	To put software onto a computer so it is ready to use.	He installed the new operating system on his laptop.
+B1	browser	noun	technology	браузер	A program used to access and navigate the internet.	She opened a new browser tab to search for the train times.
+B1	wireless	adjective	technology	беспроводной	Operating without cables using radio signals.	The wireless connection was fast enough to stream films without interruption.
+B1	server	noun	technology	сервер	A central computer that provides data and services to other computers.	The website went down because the server was overloaded with traffic.
+B1	file	noun	technology	файл	A collection of data stored as a single unit on a computer.	He sent the file as an email attachment.
+B1	backup	noun	technology	резервная копия	A copy of data stored separately in case the original is lost.	She created a backup of all her files before updating the software.
+B1	database	noun	technology	база данных	An organised collection of data stored electronically.	The hospital database stores patient records securely.
+B1	social media	noun	technology	социальные сети	Websites and apps that allow people to share content and interact.	She uses social media to keep in touch with friends around the world.
+B1	artificial intelligence	noun	technology	искусственный интеллект	Technology that enables computers to perform tasks that normally require human intelligence.	Artificial intelligence is being used to improve medical diagnosis.
+B1	interface	noun	technology	интерфейс	The part of a computer program or device that a user interacts with.	The new interface was much easier to use than the old version.
+B1	secure	adjective	technology	безопасный/защищённый	Protected from danger, damage, or unauthorised access.	Make sure you use a secure password for your online banking.
+B1	cloud	noun	technology	облако (хранилище)	An internet-based system for storing and accessing data remotely.	She saved all her photos to the cloud so she would not lose them.
+B1	physical	adjective	health	физический	Relating to the body rather than the mind.	Physical exercise is important for maintaining a healthy weight.
+B1	insomnia	noun	health	бессонница	A condition that makes it difficult to fall or stay asleep.	She suffered from insomnia for months before seeking medical advice.
+B1	recover	verb	health	выздоравливать	To return to good health after being ill.	She recovered from the surgery faster than the doctors expected.
+B1	prevent	verb	health	предотвращать	To stop something bad from happening.	Exercise and a healthy diet can prevent many serious illnesses.
+B1	cure	noun	health	лечение/средство	A medicine or treatment that successfully removes an illness.	Scientists are still searching for a cure for the common cold.
+B1	operation	noun	health	операция	A medical procedure in which a surgeon cuts into the body.	He had an operation to repair the damaged cartilage in his knee.
+B1	pregnant	adjective	health	беременная	Having a baby developing inside the body.	She was three months pregnant when she got the news.
+B1	vaccine	noun	health	вакцина	A substance given to prevent a disease.	The vaccine was given to all children under the age of five.
+B1	calcium	noun	health	кальций	A mineral needed to keep bones and teeth strong.	Dairy products are a good source of calcium.
+B1	protein	noun	health	белок	A substance in food that is needed for growth and repair of the body.	Meat, fish, eggs, and beans are all good sources of protein.
+B1	nutrition	noun	health	питание/питательность	The process of eating the right foods for health and growth.	Good nutrition is especially important for growing children.
+B1	seminar	noun	education	семинар	A small group class at a university where a topic is discussed.	The professor led a seminar on climate change and its economic effects.
+B1	professor	noun	education	профессор	A senior teacher at a university.	The professor gave a fascinating lecture on Roman history.
+B1	scholarship	noun	education	стипендия	Money given to a student to help pay for their education.	She won a scholarship to study at the most prestigious university.
+B1	textbook	noun	education	учебник	A book used in schools that contains information about a subject.	He read the textbook chapter twice before the lecture.
+B1	assignment	noun	education	задание	A piece of work given to a student to do.	She stayed up late to finish the assignment before the morning deadline.
+B1	semester	noun	education	семестр	One of the two main study periods in a school or university year.	He studied abroad for one semester in his second year.
+B1	curriculum	noun	education	учебная программа	The subjects and content taught in a school or university.	The school introduced coding into its curriculum this year.
+B1	certificate	noun	education	сертификат/свидетельство	An official document that proves a qualification has been achieved.	She received a certificate after completing the first aid course.
+B1	revision	noun	education	повторение/подготовка к экзамену	The process of reading and studying notes to prepare for an exam.	He spent the whole weekend doing revision for his science exam.
+B1	dropout	noun	education	отчисленный студент	A person who leaves school or university before finishing their course.	The programme is designed to help potential dropouts stay in education.
+B1	academic	adjective	education	академический	Relating to education and studying, especially at university level.	She had an outstanding academic record throughout her university years.
+B1	qualify	verb	education	получать квалификацию	To successfully complete the training needed for a job or activity.	He qualified as a doctor after six years of study.
+B1	partner	noun	relationships	партнёр	The person you are in a romantic relationship with.	She introduced her partner to her family for the first time.
+B1	affection	noun	relationships	привязанность	A gentle feeling of fondness and caring for someone.	She showed great affection for her younger sister.
+B1	loyalty	noun	relationships	верность/лояльность	Being faithful and devoted to someone.	His loyalty to his friends was something everyone admired.
+B1	commitment	noun	relationships	преданность/обязательство	The willingness to give your time and energy to something.	Their commitment to each other was the foundation of a long marriage.
+B1	bond	noun	relationships	связь/узы	A close connection between two or more people.	The bond between the brothers grew stronger during difficult times.
+B1	separation	noun	relationships	разлука/расставание	Being apart from someone you care about.	The long separation made their reunion even more emotional.
+B1	communicate	verb	relationships	общаться	To share information or feelings with someone.	It's important to communicate openly and honestly with your partner.
+B1	appreciate	verb	relationships	ценить/быть благодарным	To recognise the good qualities of someone or something.	She appreciated all the effort he put into planning the surprise.
+B1	companion	noun	relationships	компаньон/товарищ	A person you spend time with and feel comfortable around.	He was her loyal companion throughout the difficult months of treatment.
+B1	rely	verb	relationships	полагаться	To trust or depend on someone for support.	She knew she could rely on her friend to keep a secret.
+B1	quarrel	noun	relationships	ссора	A short angry argument between people who know each other.	They had a quarrel about whose turn it was to cook dinner.
+B1	distant	adjective	relationships	отчуждённый	Not emotionally close; cold in manner.	He was distant and difficult to talk to after the argument.
+B1	break up	verb	relationships	расставаться	To end a romantic relationship.	They broke up after two years because they wanted different things.
+B1	make up	verb	relationships	мириться	To end a quarrel and become friendly again.	They argued but made up after a long honest conversation.
+B1	rescue	verb	environment	спасать	To save someone or something from a dangerous situation.	Firefighters rescued the family from the burning building.
+B1	pollute	verb	environment	загрязнять	To contaminate the air, water, or land with harmful substances.	The factory had been polluting the nearby river for years.
+B1	reforestation	noun	environment	лесовосстановление	The process of replanting trees in areas where forests were cleared.	Reforestation projects help to restore natural habitats for wildlife.
+B1	carbon dioxide	noun	environment	углекислый газ	A colourless gas produced by burning fuel and absorbed by plants.	Carbon dioxide is the main greenhouse gas responsible for global warming.
+B1	air quality	noun	environment	качество воздуха	A measure of how clean or polluted the air is.	Poor air quality in urban areas causes serious health problems.
+B1	global warming	noun	environment	глобальное потепление	A gradual increase in the temperature of the Earth's atmosphere.	Global warming is causing ice at the poles to melt rapidly.
+B1	overpopulation	noun	environment	перенаселение	A situation where an area has more people than it can support.	Overpopulation in cities causes pressure on housing and transport systems.
+B1	extinct	adjective	environment	вымерший	No longer in existence; having died out completely.	The dodo became extinct in the seventeenth century.
+B1	compost	noun	environment	компост	Decayed organic matter used to enrich soil for growing plants.	She makes compost from vegetable peelings to feed her garden plants.
+B1	nuclear	adjective	environment	ядерный	Relating to atomic energy or nuclear weapons.	The country has several nuclear power stations.
+B1	fossil fuel	noun	environment	ископаемое топливо	Coal, oil, or gas formed from ancient plant and animal remains.	Burning fossil fuels is the main cause of greenhouse gas emissions.
+B1	solar	adjective	environment	солнечный (о энергии)	Using energy from the sun.	Solar panels on the roof produce most of the electricity for the house.
+B1	wind turbine	noun	environment	ветряная турбина	A machine that uses wind energy to produce electricity.	The wind turbines on the hill generate power for the local villages.
+B1	consumption	noun	environment	потребление	The use of resources or goods.	Reducing energy consumption is one way to fight climate change.
+B1	decrease	verb	economy	уменьшаться	To become smaller in amount, size, or degree.	The number of unemployed workers decreased significantly last year.
+B1	supply	noun	economy	предложение	The amount of a good available for sale.	A shortage in the supply of wheat caused bread prices to rise.
+B1	demand	noun	economy	спрос	The desire of consumers to buy a product or service.	Demand for electric cars has grown rapidly in recent years.
+B1	income	noun	economy	доход	Money received as payment for work or from investments.	Her income rose after she accepted the new position.
+B1	budget	noun	economy	бюджет	A plan for how money will be spent over a period of time.	The government presented its annual budget to parliament.
+B1	financial	adjective	economy	финансовый	Relating to money and how it is managed.	The company is in serious financial difficulty and may close.
+B1	loan	noun	economy	заём/кредит	An amount of money lent to someone that must be paid back.	He took out a bank loan to start his business.
+B1	interest	noun	economy	процентная ставка	The extra money paid on a loan or earned on savings.	The interest rate on her mortgage went up by half a percent.
+B1	austerity	noun	economy	жёсткая экономия	Government policies that reduce spending to manage debt.	Years of austerity led to cuts in public services across the country.
+B1	subsidy	noun	economy	субсидия	Money paid by the government to support an industry or reduce prices.	The government provides subsidies to farmers to keep food prices low.
+B1	editor	noun	media	редактор	A person who prepares written content for publication.	The editor asked her to cut the article by three hundred words.
+B1	documentary	noun	media	документальный фильм	A film or TV programme that gives factual information about a real topic.	She watched a documentary about ocean pollution and found it deeply moving.
+B1	advertisement	noun	media	реклама	A notice or film to persuade people to buy a product.	The advertisement was funny enough to be shared millions of times online.
+B1	bulletin	noun	media	бюллетень/сводка новостей	A short news broadcast or printed report about a specific topic.	The radio bulletin reported on the latest developments in the crisis.
+B1	rumour	noun	media	слух	Information that may not be true and is passed from person to person.	A rumour spread through the office that the company was going to close.
+B1	source	noun	media	источник	A person or document that provides information.	The journalist refused to reveal the identity of her source.
+B1	column	noun	media	колонка (в газете)	A regular section of a newspaper written by the same journalist each time.	She writes a weekly column about cooking for the Sunday newspaper.
+B1	caption	noun	media	подпись (под фото)	A short piece of text printed beneath a picture to explain it.	The caption under the photo gave the date and location of the event.
+B1	reporter	noun	media	репортёр	A journalist who investigates and reports on news stories.	The reporter interviewed eyewitnesses at the scene of the accident.
+B1	viewer	noun	media	зритель (телевизионный)	A person who watches a television programme.	The documentary attracted millions of viewers on its first broadcast.
+B1	headline	noun	media	заголовок	The title at the top of a newspaper article.	The scandal dominated the headlines for an entire week.
+B1	printing	noun	media	печать/тиражирование	The process of producing text or images on paper using a machine.	The printing of the newspaper happens every night at midnight.
+B1	episode	noun	media	эпизод/серия	One programme in a series of television or radio programmes.	She watched the final episode of the series with her family.
+B1	podcast	noun	media	подкаст	A digital audio programme available for download or streaming.	He listens to a news podcast on his way to work every morning.
+B1	presenter	noun	media	ведущий (телевидения/радио)	A person who introduces and presents a television or radio programme.	The presenter welcomed the guests and began the interview.
+B1	myth	noun	history	миф	A traditional story that explains beliefs or events.	The myth of Prometheus tells the story of how fire was given to humans.
+B1	kingdom	noun	history	королевство	A country ruled by a king or queen.	The ancient kingdom extended across much of the region.
+B1	civilisation	noun	history	цивилизация	A society that is well organised with culture and technology.	The ancient Egyptian civilisation built magnificent structures.
+B1	colony	noun	history	колония	A country or area that is under the control of another country.	The island was a British colony for over a hundred years.
+B1	war	noun	history	война	An armed conflict between countries or groups.	The war lasted four years and caused enormous destruction.
+B1	treaty	noun	history	договор	A formal agreement between countries.	The two countries signed a peace treaty to end the conflict.
+B1	dynasty	noun	history	династия	A series of rulers from the same family.	The dynasty ruled the empire for nearly three hundred years.
+B1	archaeology	noun	history	археология	The study of ancient people through their remains and artefacts.	She studied archaeology at university and worked on excavations in Greece.
+B1	monument	noun	history	памятник/монумент	A building or statue that honours a person or historical event.	The monument was built to remember the soldiers who died in the war.
+B1	conquer	verb	history	завоёвывать	To take control of a country or people by force.	The Roman army conquered much of Europe over several centuries.
+B1	invasion	noun	history	вторжение	The entry into a country by force with an army.	The invasion was repelled by the defending forces.
+B1	legend	noun	history	легенда	A story from the past that may be based on fact but is not verified.	The legend of King Arthur has been told for many centuries.
+B1	ancestor	noun	history	предок	A person from whom you are descended, especially in the distant past.	She researched her family history and found ancestors from many countries.
+B1	ruins	noun	history	руины	The remains of a building that has been destroyed over time.	Tourists visit the ruins of the ancient city every summer.
+B1	era	noun	history	эпоха	A long period of time defined by particular events or characteristics.	The industrial era transformed the economy of many nations.
+B1	opera	noun	arts	опера	A dramatic work in which the words are sung rather than spoken.	She attended her first opera and was moved by the beauty of the music.
+B1	museum	noun	arts	музей	A building where objects of cultural or historical interest are kept.	The museum has a large collection of ancient Egyptian artefacts.
+B1	gallery	noun	arts	галерея	A room or building where works of art are shown.	The gallery opened an exhibition of contemporary photography.
+B1	portrait	noun	arts	портрет	A painting, drawing, or photograph of a person.	The artist painted a portrait of the queen that now hangs in the palace.
+B1	sculpture	noun	arts	скульптура	A work of art made by shaping a solid material.	The sculpture in the town square was created by a local artist.
+B1	spectator	noun	arts	зритель/болельщик	A person who watches an event, especially a sporting or artistic one.	Spectators lined the street to watch the parade pass by.
+B1	director	noun	arts	режиссёр	A person who controls the making of a film or theatrical production.	The director spent two years making the documentary about endangered wildlife.
+B1	composer	noun	arts	композитор	A person who writes music.	The composer wrote the symphony over a period of five years.
+B1	critic	noun	arts	критик	A person who gives professional opinions about art, music, or literature.	The film received mixed reviews from critics but was loved by audiences.
+B1	plot	noun	arts	сюжет	The series of events in a novel or film.	The plot was so complex that she had to watch the film twice.
+B1	poem	noun	arts	стихотворение	A piece of writing that uses rhythm and sometimes rhyme.	She wrote a poem for her friend's birthday.
+B1	author	noun	arts	автор	A person who writes books or other texts.	The author signed copies of her new novel at the bookshop.
+B1	stage	noun	arts	сцена	The raised platform in a theatre where performers act.	She walked onto the stage and the audience fell silent.
+B1	analyze	verb	science_b1	анализировать	To examine something in detail to understand it better.	The scientists analyzed the data from thousands of samples.
+B1	observe	verb	science_b1	наблюдать	To watch something carefully over a period of time.	The students observed the reaction in the test tube closely.
+B1	element	noun	science_b1	элемент	A basic substance that cannot be broken down into simpler substances.	Gold is a chemical element found naturally in rock formations.
+B1	energy	noun	science_b1	энергия	The ability to do work; power from fuel or other sources.	The experiment measured how much energy was released by the reaction.
+B1	solution	noun	science_b1	раствор	A liquid mixture in which one substance is dissolved in another.	The solution turned blue when the indicator was added to the acid.
+B1	reaction	noun	science_b1	реакция	A chemical change that occurs when substances interact.	The chemical reaction produced a gas and a small amount of heat.
+B1	oxygen	noun	science_b1	кислород	A gas that is essential for breathing and burning.	Plants release oxygen during photosynthesis, which humans and animals need to breathe.
+B1	atom	noun	science_b1	атом	The smallest particle of an element that can exist.	Each atom contains a nucleus surrounded by electrons.
+B1	acid	noun	science_b1	кислота	A chemical substance with a sour taste that reacts with metals and bases.	The acid in vinegar gives it its sharp, sour flavour.
+B1	mineral	noun	science_b1	минерал	A naturally occurring solid substance with a definite chemical composition.	Calcium is an important mineral that helps keep bones strong.
+B1	bacteria	noun	science_b1	бактерии	Microscopic single-celled organisms found everywhere in nature.	Some bacteria are harmful to humans while others are essential for digestion.
+B1	measurement	noun	science_b1	измерение	The act of finding the size or amount of something.	Accurate measurement is essential when carrying out scientific experiments.
+B1	compound	noun	science_b1	соединение (химическое)	A substance formed from two or more elements chemically bonded together.	Water is a compound made of hydrogen and oxygen atoms.
+B1	biology	noun	science_b1	биология	The scientific study of living organisms.	She chose biology as her main subject at secondary school.
+B1	chemistry	noun	science_b1	химия	The scientific study of substances and how they react.	His chemistry teacher inspired him to study pharmacy at university.
+B1	physics	noun	science_b1	физика	The scientific study of energy, force, and matter.	She found physics difficult at first but grew to love it.
+B1	priority	noun	daily_life	приоритет	Something that is more important than other things.	Getting enough sleep should be a priority when you are studying hard.
+B1	leisure	noun	daily_life	досуг	Time when you are free from work and can do what you enjoy.	She uses her leisure time to paint and read.
+B1	commute	verb	daily_life	добираться на работу	To travel regularly between home and work.	He commutes by train for an hour every morning.
+B1	cope	verb	daily_life	справляться	To deal with a difficult situation successfully.	She found it hard to cope with all the changes at once.
+B1	afford	verb	daily_life	позволять себе	To have enough time or money for something.	He couldn't afford to take a holiday this year.
+B1	economise	verb	daily_life	экономить	To reduce spending by being more careful with money.	They had to economise after losing one income when the baby arrived.
+B1	chore	noun	daily_life	домашнее задание/бытовое дело	A boring but necessary task done regularly at home.	Washing up is the chore she dislikes the most.
+B1	errand	noun	daily_life	поручение	A short trip to do a practical task such as buying something.	She ran several errands on her way home from the office.
+B1	rush	verb	daily_life	торопиться	To move quickly or hurry.	She was late and had to rush to catch the train.
+B1	juggle	verb	daily_life	совмещать (несколько дел)	To try to do several different activities at the same time.	She had to juggle childcare, work, and study all at once.
+B1	lifestyle	noun	daily_life	образ жизни	The way a person lives, including their habits and activities.	Moving to the countryside changed her lifestyle completely.
+B1	obligation	noun	daily_life	обязательство	Something you must do because it is a duty or responsibility.	She felt a strong obligation to help her elderly neighbour with the shopping.
+B1	voluntary	adjective	daily_life	добровольный	Done without being paid or forced.	She does voluntary work at a local animal shelter every Sunday.
+B1	hectic	adjective	daily_life	суматошный/напряжённый	Full of frantic activity; very busy.	Her schedule was so hectic that she barely had time to eat lunch.
+B1	self-sufficient	adjective	daily_life	самодостаточный	Able to provide for your own needs without help from others.	Living off the land made her entirely self-sufficient for six months.
+
+B1	orchestra	noun	arts	оркестр	A large group of musicians who play different instruments together.	The orchestra performed a symphony by Beethoven.
+B1	rhythm	noun	arts	ритм	A regular pattern of sounds or movements in music or poetry.	The dancers moved in perfect rhythm to the music.
+B1	carbon	noun	environment	углерод	A chemical element found in all living things and fossil fuels.	Burning fossil fuels releases carbon into the atmosphere.
+B1	surgery	noun	health	операция	A medical operation where a doctor cuts into the body to repair it.	He needed surgery after breaking his leg in three places.
+B1	discipline	noun	personal_development	дисциплина	The ability to control your behaviour and do what is needed.	Regular discipline in studying helped her pass all her exams.
+B1	confidence	noun	personal_development	уверенность	The feeling that you are good at something and can succeed.	Public speaking helped him build confidence in his abilities.
+B1	diploma	noun	education	диплом	An official document showing you have completed a course.	He framed his diploma and hung it on the office wall.
+B1	subscribe	verb	media	подписаться	To pay regularly to receive a service or publication.	She subscribed to a streaming service to watch films online.
+B1	algorithm	noun	technology	алгоритм	A set of rules for solving a problem, especially in computing.	The search engine uses a complex algorithm to rank results.
+B1	currency exchange	noun	travel	обмен валюты	The process of changing money from one currency to another.	He found a currency exchange office at the airport.
+B1	predator	noun	nature	хищник	An animal that hunts other animals for food.	The fox is a predator that feeds on smaller animals.
+B1	nostalgia	noun	emotions	ностальгия	A feeling of sadness mixed with happiness when you think about the past.	Looking at old photos filled her with nostalgia for her childhood.
+B1	recession	noun	economy	рецессия	a period of reduced economic activity	The country fell into recession after the crisis.
+B1	surplus	noun	economy	профицит	an amount greater than what is needed	The country had a trade surplus last year.
+B1	deficit	noun	economy	дефицит	when spending is greater than income	The government needs to reduce the budget deficit.
+B1	prosperity	noun	economy	процветание	the condition of being financially successful	The region enjoyed a period of great prosperity.
+B1	contagious	adjective	health	заразный	able to spread from one person to another	Flu is highly contagious in winter.
+B1	overdose	noun	health	передозировка	taking too much of a drug at one time	An overdose of painkillers can be dangerous.
+B1	prescribe	verb	health	назначать лечение	to say what medicine a patient should take	The doctor prescribed antibiotics for the infection.
+B1	reign	noun	history	царствование	the period when a king or queen rules	The reign of Queen Victoria lasted 63 years.
+B1	republic	noun	history	республика	a country governed by elected representatives	France became a republic after the revolution.
+B1	medieval	adjective	history	средневековый	relating to the Middle Ages	The medieval castle stands on a hill.
+B1	wilderness	noun	environment	дикая природа	a large natural area that humans have not changed	The national park protects areas of wilderness.
+B1	estuary	noun	environment	эстуарий	the wide part of a river where it meets the sea	Many birds feed in the estuary.
+B1	groundwater	noun	environment	грунтовые воды	water stored under the ground in rocks or soil	Farming chemicals can contaminate groundwater.
+B1	burrow	noun	nature	нора	a hole in the ground made by an animal for shelter	Rabbits live in burrows underground.
+B1	tide	noun	nature	прилив	the regular rise and fall of sea levels	The tide comes in twice a day.
+B1	persistence	noun	personal_development	настойчивость	continuing to do something despite difficulty	Success requires persistence and hard work.
+B1	self-discipline	noun	personal_development	самодисциплина	the ability to control your behaviour and actions	Self-discipline is essential for achieving goals.
+B1	internship	noun	education	стажировка	a period of work experience at a company	She completed a summer internship at a law firm.
+B1	placement	noun	education	практика	a period working for an organisation as part of your studies	He did a year's placement in Germany.
+B1	streaming	noun	media	стриминг	the process of watching video or listening to audio online	Streaming services have replaced DVDs.
+B1	rehearse	verb	arts	репетировать	to practise a performance before showing it to an audience	The actors rehearsed for weeks before opening night.
+B1	choreography	noun	arts	хореография	the arrangement of steps and movements in a dance	The choreography of the ballet was stunning.
+B1	theorem	noun	science_b1	теорема	a statement in mathematics that has been proved true	Students learn to prove geometric theorems.
+B1	specimen	noun	science_b1	образец	an example or sample used for examination	The scientist studied a specimen under the microscope.
+B1	legislature	noun	society	законодательный орган	the group of people who make laws for a country	The legislature voted on the new bill.
+B1	encryption	noun	technology	шифрование	the process of converting information to a coded form	Encryption protects your personal data online.
+B1	pension	noun	work_career	пенсия	a regular payment made to someone who has retired from work	She contributes to her pension every month.
+B1	vacancy	noun	work_career	вакансия	an available job position that needs to be filled	There is a vacancy for a sales manager.
+B1	transit	noun	travel	транзит	the process of travelling through a place on the way to another	Passengers in transit must wait in the departure lounge.
+B1	gross	adjective	business	валовой	total before any reductions such as tax or costs	The company reported a gross profit of one million.
+B1	ailment	noun	health	недомогание	a minor illness or health problem	He visited the doctor for a common ailment.
+B1	intimacy	noun	relationships	близость	a close personal relationship or feeling of being near to someone	Friendships develop through shared intimacy and trust.
+B1	monetary	adjective	economy	денежный	relating to money or the currency of a country	The government adopted a tight monetary policy.
+B1	portal	noun	media	портал	a website that acts as a gateway to other sites or information	The school has an online portal for students.
+B1	chronicle	noun	history	хроника	a detailed written record of historical events in order	The monk wrote a chronicle of the kingdom.

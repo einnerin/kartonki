@@ -1,0 +1,32 @@
+package com.example.kartonki
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.navigation.compose.rememberNavController
+import com.example.kartonki.ui.navigation.AppNavGraph
+import com.example.kartonki.ui.screen.home.MainViewModel
+import com.example.kartonki.ui.theme.KartonkiTheme
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+class MainActivity : ComponentActivity() {
+
+    private val mainViewModel: MainViewModel by viewModels()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContent {
+            val isDarkTheme by mainViewModel.isDarkTheme.collectAsState()
+            KartonkiTheme(darkTheme = isDarkTheme) {
+                val navController = rememberNavController()
+                AppNavGraph(navController = navController)
+            }
+        }
+    }
+}

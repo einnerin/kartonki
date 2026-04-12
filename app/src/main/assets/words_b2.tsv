@@ -1,0 +1,439 @@
+LEVEL	WORD	POS	SEMANTIC_GROUP	RUSSIAN_TRANSLATION	DEFINITION	EXAMPLE_SENTENCE
+B2	concept	noun	academic	концепция	An abstract idea or general notion.	The concept of justice is interpreted differently across cultures.
+B2	theory	noun	academic	теория	A formal set of ideas that explains facts or events.	Darwin's theory of evolution changed the way we understand life.
+B2	evidence	noun	academic	доказательство	Facts or information showing whether something is true.	The court needed more evidence before it could reach a verdict.
+B2	analysis	noun	academic	анализ	A detailed examination of something to understand it better.	Her analysis of the data revealed several unexpected patterns.
+B2	context	noun	academic	контекст	The circumstances that help to explain something.	You need to understand the historical context to appreciate the poem.
+B2	approach	noun	academic	подход	A way of dealing with a situation or problem.	The teacher used a different approach to explain the difficult concept.
+B2	assume	verb	academic	предполагать	To accept something as true without checking it first.	She assumed the meeting had been cancelled because nobody showed up.
+B2	conclude	verb	academic	делать вывод	To decide something after thinking about all the facts.	The study concluded that regular sleep improves academic performance.
+B2	define	verb	academic	определять	To explain the meaning of a word or concept exactly.	The report defines success in terms of long-term sustainability.
+B2	evaluate	verb	academic	оценивать	To judge how good, useful, or valuable something is.	Students are asked to evaluate the effectiveness of each argument.
+B2	indicate	verb	academic	указывать	To show that something exists or is likely.	The results indicate that the treatment was highly effective.
+B2	significant	adjective	academic	значительный	Important or large enough to have an effect.	There was a significant improvement in air quality after the new law.
+B2	accurate	adjective	academic	точный	Correct in every detail; without errors.	She gave an accurate description of the man she had seen.
+B2	appropriate	adjective	academic	подходящий	Suitable or right for a particular situation.	Is this film appropriate for children under twelve?
+B2	relevant	adjective	academic	актуальный/уместный	Closely connected to what is being discussed.	Please make sure all information in the report is relevant to the topic.
+B2	consequence	noun	society	последствие	A result or effect of something that happened earlier.	The consequences of climate change are already being felt worldwide.
+B2	impact	noun	society	влияние/удар	The strong effect that something has on a situation or person.	The factory closure had a devastating impact on the local community.
+B2	inequality	noun	society	неравенство	An unfair situation where some people have more than others.	The report highlighted growing economic inequality in the country.
+B2	poverty	noun	society	бедность	The state of being extremely poor.	Millions of people around the world still live in extreme poverty.
+B2	reform	noun	society	реформа	A change made to improve a system or institution.	The government introduced sweeping reforms to the education system.
+B2	conflict	noun	society	конфликт	A serious disagreement or fight between people or groups.	The conflict between the two groups had lasted for generations.
+B2	rights	noun	society	права	Legal or moral entitlements belonging to a person.	Everyone has the right to freedom of expression.
+B2	justice	noun	society	справедливость	Fair treatment of people under the law.	She devoted her career to fighting for social justice.
+B2	authority	noun	society	власть/авторитет	The power or right to give orders and make decisions.	The police have the authority to stop and search anyone they suspect.
+B2	campaign	noun	society	кампания	An organised effort to achieve a goal, often in politics or society.	She ran a successful campaign to raise money for cancer research.
+B2	protest	noun	society	протест	An action expressing strong disapproval of something.	Thousands of people joined the protest against the new tax.
+B2	diverse	adjective	society	разнообразный	Including many different types of people or things.	The city has a diverse population from many different countries.
+B2	global	adjective	society	глобальный	Relating to the whole world.	Climate change is a global problem that requires international cooperation.
+B2	policy	noun	society	политика (курс)	A plan or set of rules adopted by a government or organisation.	The company's policy on flexible working has attracted talented employees.
+B2	debate	noun	society	дискуссия	A formal discussion of a topic in which people express opposing views.	There was a heated debate about the proposed new highway.
+B2	exploit	verb	environment	эксплуатировать	To use resources in a way that is unfair or harmful.	The company was criticised for exploiting natural resources without care.
+B2	sustainable	adjective	environment	устойчивый/экологичный	Able to continue without damaging the environment or using too many resources.	The charity promotes sustainable farming practices in developing countries.
+B2	emission	noun	environment	выброс	A gas or substance released into the atmosphere.	The factory was fined for producing excessive carbon emissions.
+B2	habitat	noun	environment	среда обитания	The natural environment in which a species normally lives.	Deforestation is destroying the habitat of many endangered animals.
+B2	conservation	noun	environment	охрана природы	The protection of natural things such as wildlife and habitats.	She works for a conservation charity that protects marine turtles.
+B2	drought	noun	environment	засуха	A long period of very dry weather with little or no rain.	The drought destroyed the crops and caused a serious food shortage.
+B2	extinction	noun	environment	вымирание	The permanent disappearance of all members of a species.	The white rhino is on the brink of extinction due to poaching.
+B2	renewable	adjective	environment	возобновляемый	Able to be replaced naturally or used again without running out.	The country is investing in renewable energy sources like wind and solar.
+B2	toxic	adjective	environment	токсичный	Poisonous and capable of causing serious harm.	Workers had to wear masks because the fumes were toxic.
+B2	ecosystem	noun	environment	экосистема	All the plants, animals, and organisms in a particular area.	Coral reefs support a remarkably complex underwater ecosystem.
+B2	innovation	noun	business	инновация	A new idea or method that improves something.	The company won an award for its innovation in packaging design.
+B2	strategy	noun	business	стратегия	A plan designed to achieve a long-term goal.	The marketing strategy targeted young adults aged eighteen to thirty.
+B2	competition	noun	business	конкуренция	A situation in which people or companies try to do better than others.	The competition in the smartphone market is intense.
+B2	revenue	noun	business	доход/выручка	The money a business earns from its activities.	The company's annual revenue exceeded one billion pounds last year.
+B2	consumer	noun	business	потребитель	A person who buys goods or services for their own use.	Consumers are becoming more aware of environmental issues.
+B2	negotiate	verb	business	вести переговоры	To discuss something formally in order to reach an agreement.	She negotiated a better salary before accepting the job offer.
+B2	investment	noun	business	инвестиция	Money put into a business or project to make a profit in the future.	The government announced a large investment in public transport.
+B2	expand	verb	business	расширяться	To become larger or to make something larger.	The company plans to expand into the Asian market next year.
+B2	merge	verb	business	объединяться	To combine two or more companies or organisations into one.	The two airlines merged to create the largest carrier in Europe.
+B2	bankruptcy	noun	business	банкротство	The state of being unable to pay debts, declared officially.	The company declared bankruptcy after years of financial losses.
+B2	anxiety	noun	psychology	тревога	A feeling of worry and unease about uncertain events.	She felt deep anxiety before every public speaking engagement.
+B2	depression	noun	psychology	депрессия	A serious mental condition with persistent feelings of sadness.	He was diagnosed with depression and started therapy.
+B2	perceive	verb	psychology	воспринимать	To become aware of something through the senses or the mind.	The way we perceive events is shaped by our past experiences.
+B2	behaviour	noun	psychology	поведение	The way a person or animal acts in a particular situation.	His behaviour at the meeting shocked his colleagues.
+B2	conscious	adjective	psychology	осознанный	Aware of something and deliberately doing it.	She made a conscious effort to arrive on time.
+B2	motivation	noun	psychology	мотивация	The reason why you do or want to do something.	His main motivation for learning the language was to communicate with his family.
+B2	influence	verb	psychology	влиять	To have an effect on the way someone thinks or acts.	Her mentor influenced her decision to pursue a career in medicine.
+B2	emotion	noun	psychology	эмоция	A strong feeling such as love, fear, or anger.	The film was so powerful that it stirred deep emotions in the audience.
+B2	identity	noun	psychology	идентичность	Your sense of who you are and what defines you.	Living abroad can change your sense of personal identity.
+B2	attitude	noun	psychology	отношение/установка	The way you think or feel about something.	Her positive attitude made her pleasant to work with.
+B2	broadcast	verb	media	транслировать	To send out a radio or television programme.	The match was broadcast live on national television.
+B2	publish	verb	media	публиковать	To make information available to the public in print or online.	The newspaper published a story about corruption in local government.
+B2	media	noun	media	СМИ	The various means of communication such as TV, newspapers, and the internet.	Social media has changed how people consume news.
+B2	journalist	noun	media	журналист	A person who writes or reports news for media.	The journalist interviewed the minister about the new budget.
+B2	audience	noun	media	аудитория	The group of people who watch, read, or listen to something.	The documentary attracted a large audience on its first night.
+B2	bias	noun	media	предвзятость	An unfair preference for one thing over another.	The report was criticised for its political bias.
+B2	censorship	noun	media	цензура	The practice of suppressing material considered unacceptable.	Many journalists campaigned against censorship of the press.
+B2	opinion	noun	media	мнение	A personal judgement or view about something.	The newspaper published a range of opinions on the controversial issue.
+B2	coverage	noun	media	освещение (в СМИ)	The amount of attention given to an event by news media.	The election received extensive coverage across all major channels.
+B2	investigation	noun	media	расследование	A careful examination of facts to discover the truth.	The newspaper launched an investigation into the politician's finances.
+B2	welfare	noun	social_issues	благосостояние	The health, happiness, and general well-being of a person.	The charity works to improve the welfare of homeless people.
+B2	immigration	noun	social_issues	иммиграция	The act of coming to live permanently in a foreign country.	Immigration has shaped the culture and economy of many nations.
+B2	minority	noun	social_issues	меньшинство	A smaller group of people within a larger group.	The law was designed to protect the rights of ethnic minorities.
+B2	discrimination	noun	social_issues	дискриминация	Treating people unfairly because of their race, sex, or religion.	She filed a complaint about discrimination at work.
+B2	unemployment	noun	social_issues	безработица	The state of not having a paid job.	Youth unemployment is a serious problem in many European countries.
+B2	racism	noun	social_issues	расизм	The belief that one race is superior to others; unfair treatment based on race.	The organisation fights racism and promotes equality in education.
+B2	tolerance	noun	social_issues	терпимость	The willingness to accept views or behaviour different from your own.	Building tolerance between different communities takes time and effort.
+B2	homeless	adjective	social_issues	бездомный	Without a permanent place to live.	The city opened three new shelters for homeless people this winter.
+B2	charity	noun	social_issues	благотворительность	An organisation that raises money to help people in need.	She volunteers twice a week for a local charity.
+B2	volunteer	noun	social_issues	доброволец	A person who does work without being paid.	A group of volunteers cleaned up the park on Saturday morning.
+B2	capable	adjective	personal	способный	Having the ability or skill to do something.	She is more than capable of handling the project on her own.
+B2	determined	adjective	personal	решительный	Having a strong intention to do something.	He was determined to finish the marathon despite the pain.
+B2	ambitious	adjective	personal	амбициозный	Having a strong desire to succeed.	She was ambitious from an early age and always set high goals.
+B2	independent	adjective	personal	независимый	Not relying on others for support or guidance.	She became financially independent after starting her own business.
+B2	flexible	adjective	personal	гибкий	Willing and able to change according to different situations.	You need to be flexible when working in a constantly changing environment.
+B2	reliable	adjective	personal	надёжный	Always doing what you say you will do; able to be trusted.	She is the most reliable person on the team and never misses a deadline.
+B2	creative	adjective	personal	творческий	Producing original ideas and using imagination.	The campaign needed someone creative to design the poster.
+B2	curious	adjective	personal	любопытный	Eager to know about or understand something.	He was curious about the strange noise coming from the attic.
+B2	pessimistic	adjective	personal	пессимистичный	Thinking that bad things are likely to happen.	She was pessimistic about her chances of passing the exam.
+B2	optimistic	adjective	personal	оптимистичный	Thinking that good things are likely to happen.	Despite the setbacks, he remained optimistic about the future.
+B2	circumstance	noun	abstract	обстоятельство	A fact or condition that affects a situation.	Under the circumstances, she made the best decision she could.
+B2	phenomenon	noun	abstract	явление	A fact or event that is interesting or unusual.	The northern lights are a natural phenomenon visible in polar regions.
+B2	perspective	noun	abstract	точка зрения	A particular way of thinking about something.	Studying abroad gave her a fresh perspective on her own culture.
+B2	principle	noun	abstract	принцип	A basic truth or rule that guides behaviour or thinking.	He refused to compromise on his principles.
+B2	issue	noun	abstract	проблема/вопрос	An important topic or problem that people discuss or disagree about.	Homelessness is an issue that affects many cities around the world.
+B2	potential	noun	abstract	потенциал	The possibility of developing into something in the future.	The teacher saw great potential in the student and encouraged her.
+B2	complex	adjective	abstract	сложный	Made of many connected parts; difficult to understand.	The situation is more complex than it might appear at first glance.
+B2	abstract	adjective	abstract	абстрактный	Existing as an idea rather than as a physical thing.	The artist is known for her beautiful abstract paintings.
+B2	fundamental	adjective	abstract	фундаментальный	Of central importance; essential.	Access to clean water is a fundamental human right.
+B2	inevitable	adjective	abstract	неизбежный	Certain to happen and impossible to avoid.	Change is inevitable, so it is better to embrace it.
+B2	heritage	noun	culture	наследие	Traditions, buildings, and beliefs passed down from earlier generations.	The old city is protected as a site of cultural heritage.
+B2	tradition	noun	culture	традиция	A custom or belief that has existed for a long time.	The festival celebrates a tradition that is hundreds of years old.
+B2	ceremony	noun	culture	церемония	A formal event with special actions and words.	The graduation ceremony took place in the university's main hall.
+B2	artifact	noun	culture	артефакт	An object made by a person, especially one with historical interest.	The museum displays artifacts from ancient Egypt.
+B2	mythology	noun	culture	мифология	A collection of traditional stories of a culture.	Greek mythology is full of stories about gods and heroes.
+B2	philosophy	noun	culture	философия	The study of fundamental questions about existence and knowledge.	His philosophy of life was based on simplicity and gratitude.
+B2	religion	noun	culture	религия	A set of beliefs about the meaning of life and worship of a god.	Freedom of religion is protected by the constitution.
+B2	symbol	noun	culture	символ	A sign or object that represents something else.	The dove is a universal symbol of peace.
+B2	influence	noun	culture	влияние	The effect that someone or something has on another.	The influence of jazz on modern music cannot be overstated.
+B2	ethnic	adjective	culture	этнический	Relating to a group of people who share a culture or nationality.	The neighbourhood is home to many different ethnic communities.
+B2	controversial	adjective	social_advanced	спорный	Causing disagreement or strong opposing opinions.	The new law was highly controversial and sparked widespread protests.
+B2	profound	adjective	social_advanced	глубокий/значительный	Very great or intense; showing deep understanding.	The death of her father had a profound effect on her outlook on life.
+B2	widespread	adjective	social_advanced	широко распространённый	Found or happening over a large area or among many people.	There was widespread concern about the safety of the new vaccine.
+B2	substantial	adjective	social_advanced	существенный	Large in size, value, or importance.	She received a substantial pay rise after her promotion.
+B2	devastating	adjective	social_advanced	опустошительный	Causing severe damage or great distress.	The flooding had a devastating effect on the farming communities.
+B2	adequate	adjective	social_advanced	достаточный	Enough or satisfactory for a particular purpose.	The facilities were barely adequate for the number of students.
+B2	coherent	adjective	social_advanced	последовательный	Logical and consistent; easy to understand.	She presented a coherent plan for reducing costs in the department.
+B2	overwhelming	adjective	social_advanced	подавляющий	Very large or intense; impossible to resist.	There was overwhelming support for the new policy across all age groups.
+B2	prevalent	adjective	social_advanced	распространённый	Existing or very common at a particular time.	Obesity has become prevalent in many developed countries.
+B2	acknowledge	verb	communication	признавать	To accept or admit the truth of something.	She acknowledged that mistakes had been made in the planning process.
+B2	emphasise	verb	communication	подчёркивать	To make something seem particularly important or worthy of attention.	The report emphasised the need for immediate action on climate change.
+B2	contradict	verb	communication	противоречить	To say something that is opposite to what someone else said.	The new witness contradicted the official version of events.
+B2	clarify	verb	communication	прояснять	To make something easier to understand by explaining it more fully.	She asked the teacher to clarify the instructions for the assignment.
+B2	convey	verb	communication	передавать	To communicate a message or feeling to someone.	The painting conveys a sense of loneliness and isolation.
+B2	imply	verb	communication	подразумевать	To suggest something without saying it directly.	His silence implied that he disagreed with the decision.
+B2	criticise	verb	communication	критиковать	To say that you disapprove of someone or something.	She was criticised for making the decision without consulting others.
+B2	justify	verb	communication	обосновывать	To give a satisfactory reason for something.	She struggled to justify the extra expense to her manager.
+B2	hedge	verb	communication	уклоняться/делать оговорки	To avoid making a clear or direct statement.	Politicians often hedge when asked about difficult policy decisions.
+B2	speculate	verb	communication	предполагать/рассуждать	To form opinions without knowing all the facts.	Journalists began to speculate about who would replace the manager.
+B2	manipulate	verb	behaviour	манипулировать	To control or influence someone or something cleverly or unfairly.	He manipulated the data to make the results look more positive.
+B2	deceive	verb	behaviour	обманывать	To make someone believe something that is not true.	She felt deceived when she found out he had been lying for months.
+B2	resist	verb	behaviour	сопротивляться	To refuse to accept or comply with something.	He found it hard to resist the temptation to eat the cake.
+B2	adapt	verb	behaviour	адаптироваться	To change your behaviour to suit a new situation.	She quickly adapted to life in a new country and made many friends.
+B2	persist	verb	behaviour	настаивать/продолжать	To continue doing something despite difficulty or opposition.	She persisted with her training even when she felt like giving up.
+B2	contribute	verb	behaviour	вносить вклад	To give something to help achieve a result.	Every member of the team contributed ideas for the new project.
+B2	rationalise	verb	behaviour	рационализировать	To invent a logical reason for behaviour that was actually done for other reasons.	He rationalised his decision by claiming he had no other choice.
+B2	neglect	verb	behaviour	пренебрегать	To fail to give proper care or attention to something.	He neglected his health for years until a serious illness forced him to change.
+B2	abandon	verb	behaviour	бросать/оставлять	To leave someone or stop doing something permanently.	She was forced to abandon her studies due to lack of money.
+B2	overcome	verb	behaviour	преодолевать	To succeed in dealing with a problem or difficulty.	He worked hard to overcome his fear of public speaking.
+B2	synopsis	noun	academic_skills	краткое изложение	A brief summary of the main points of a longer work.	She submitted a one-page synopsis of her proposed research.
+B2	argument	noun	academic_skills	аргумент/доводы	A reason given in support of or against a point.	The essay presented a clear argument for reducing car use in cities.
+B2	cite	verb	academic_skills	ссылаться	To mention something as evidence or an example.	The professor cited three studies that supported the hypothesis.
+B2	contrast	verb	academic_skills	противопоставлять	To show or describe the differences between two things.	The essay contrasts two different approaches to managing conflict.
+B2	summarise	verb	academic_skills	кратко изложить	To give a brief statement of the main points.	She summarised the key findings in the final paragraph.
+B2	obtain	verb	academic_skills	получать	To get something, often by effort or request.	He obtained permission from the university to publish the research.
+B2	refer	verb	academic_skills	ссылаться	To mention or direct attention to something.	Please refer to the guidelines on page three before completing the form.
+B2	demonstrate	verb	academic_skills	демонстрировать	To show something clearly using evidence or examples.	The experiment demonstrated that the hypothesis was correct.
+B2	examine	verb	academic_skills	изучать	To investigate or inspect something in detail.	The committee examined the report for three hours before making a decision.
+B2	distinguish	verb	academic_skills	различать	To recognise or point out the difference between two things.	She could easily distinguish between the two nearly identical paintings.
+B2	regardless	adverb	logical_connectors	независимо от	Despite what else is happening; without being affected by something.	She decided to go ahead with the plan regardless of the risks involved.
+B2	nevertheless	adverb	logical_connectors	тем не менее	In spite of that; despite what has been said.	The weather was terrible; nevertheless, the event went ahead as planned.
+B2	whereas	conjunction	logical_connectors	тогда как	While in contrast; used to compare two different things.	She prefers the city whereas her husband loves the countryside.
+B2	thereby	adverb	logical_connectors	тем самым	As a result of that action.	He completed the course early, thereby freeing time for other projects.
+B2	furthermore	adverb	logical_connectors	кроме того	In addition to what has been said.	The product is cheaper; furthermore, it uses far less energy.
+B2	consequently	adverb	logical_connectors	следовательно	As a result; therefore.	She missed the last train and consequently had to take a taxi home.
+B2	nonetheless	adverb	logical_connectors	тем не менее	In spite of something; despite this.	The film had mixed reviews; nonetheless, it became a box office hit.
+B2	although	conjunction	logical_connectors	хотя	Despite the fact that; in spite of the fact that.	Although it was cold outside, the children wanted to play in the garden.
+B2	despite	preposition	logical_connectors	несмотря на	Without being affected by; in spite of.	Despite the rain, they decided to hold the event outdoors.
+B2	therefore	adverb	logical_connectors	поэтому	For that reason; as a result.	He was ill and therefore unable to attend the meeting in person.
+B2	threat	noun	risk_danger	угроза	A statement that you will harm someone; a danger.	Climate change poses a serious threat to biodiversity worldwide.
+B2	risk	noun	risk_danger	риск	The possibility that something harmful will happen.	There is always a risk of failure when starting a new business.
+B2	vulnerable	adjective	risk_danger	уязвимый	Exposed to the possibility of being harmed or attacked.	Elderly people are particularly vulnerable during extreme heat waves.
+B2	severe	adjective	risk_danger	тяжёлый/суровый	Very bad, serious, or harsh.	The severe winter storm blocked roads across the entire region.
+B2	urgent	adjective	risk_danger	срочный	Requiring immediate action or attention.	The doctor said the patient needed urgent surgery that same evening.
+B2	critical	adjective	risk_danger	критический	Of extreme importance; at a point of crisis.	The patient was in a critical condition after the accident.
+B2	inevitable	adjective	risk_danger	неизбежный	Certain to happen; impossible to prevent.	If nothing changes, a global water crisis seems inevitable.
+B2	fatal	adjective	risk_danger	смертельный	Causing death or complete failure.	He made a fatal error of judgement that cost him the championship.
+B2	collapse	verb	risk_danger	рухнуть/обвалиться	To fall down suddenly; to fail completely.	The company collapsed under the weight of its debts.
+B2	outbreak	noun	risk_danger	вспышка (болезни)	A sudden occurrence of something dangerous, especially a disease.	The outbreak of influenza spread quickly through the school.
+B2	combustion	noun	science_b2	горение	A chemical process in which a substance reacts with oxygen to produce heat and light.	The combustion of fossil fuels releases large quantities of carbon dioxide.
+B2	atmosphere	noun	science_b2	атмосфера	The layer of gases surrounding the Earth.	Carbon dioxide accumulates in the atmosphere and traps heat.
+B2	chromosome	noun	science_b2	хромосома	A structure in a cell that carries genetic information.	Humans normally have forty-six chromosomes in each body cell.
+B2	chemical	noun	science_b2	химическое вещество	A substance produced by or used in chemistry.	Several harmful chemicals were found in the water supply.
+B2	radiation	noun	science_b2	излучение	Energy emitted as waves or particles, especially from a nuclear source.	Workers were monitored for exposure to radiation after the accident.
+B2	gravity	noun	science_b2	притяжение/гравитация	The force that pulls objects towards each other or towards the Earth.	Gravity keeps the planets in orbit around the sun.
+B2	evolution	noun	science_b2	эволюция	The process by which species develop and change over millions of years.	The theory of evolution explains the diversity of life on Earth.
+B2	genetic	adjective	science_b2	генетический	Relating to genes or inherited characteristics.	Some diseases have a strong genetic component that runs in families.
+B2	cell	noun	science_b2	клетка	The smallest structural unit of a living organism.	Cancer occurs when cells divide in an uncontrolled way.
+B2	species	noun	science_b2	вид (биологический)	A group of animals or plants that can breed together.	Hundreds of species of rainforest plants have yet to be identified.
+B2	construct	noun	academic	конструкт	An idea or theory that has been developed to explain something.	Social class is a construct that varies across different societies.
+B2	methodology	noun	academic	методология	The system of methods used in a particular field of study.	The research paper clearly described the methodology used to collect data.
+B2	proposition	noun	academic	утверждение/предложение	A statement or assertion that expresses a judgement.	The essay argued against the proposition that technology always improves lives.
+B2	criterion	noun	academic	критерий	A principle or standard by which something is judged or decided.	Academic performance is only one criterion for university admission.
+B2	conceptual	adjective	academic	концептуальный	Relating to ideas or concepts rather than physical things.	The research was still at a conceptual stage and had not yet been tested.
+B2	objective	adjective	academic	объективный	Not influenced by personal feelings; based only on facts.	She tried to give an objective assessment of the situation.
+B2	subjective	adjective	academic	субъективный	Based on personal feelings rather than facts.	Opinions about art are highly subjective.
+B2	succinct	adjective	academic	сжатый/лаконичный	Expressed in few words; brief and clear.	She gave a succinct summary of the main findings in three sentences.
+B2	analytical	adjective	academic	аналитический	Using analysis or logical thinking to examine something carefully.	Her analytical approach to the problem impressed the research committee.
+B2	neutral	adjective	academic	нейтральный	Not supporting any side in a disagreement.	The report was written from a neutral standpoint.
+B2	interdisciplinary	adjective	academic	междисциплинарный	Combining two or more academic subjects or fields of study.	The course takes an interdisciplinary approach to environmental problems.
+B2	disparity	noun	society	неравенство/несоответствие	A great difference between things or people.	There is a significant disparity in wages between men and women.
+B2	solidarity	noun	society	солидарность	Unity and agreement among a group with shared interests.	Workers showed solidarity by going on strike together.
+B2	mainstream	noun	society	основное направление	The ideas or activities considered normal in a society.	Her views were once controversial but are now mainstream.
+B2	stereotype	noun	society	стереотип	An oversimplified idea about a particular type of person.	The film was criticised for relying on stereotypes.
+B2	prejudice	noun	society	предрассудок	An opinion not based on reason or experience.	She faced prejudice at work because of her background.
+B2	inclusion	noun	society	включение/инклюзивность	The practice of ensuring all people are included and valued.	The school has a strong policy of inclusion for students with disabilities.
+B2	empowerment	noun	society	расширение прав и возможностей	The process of becoming stronger and more confident.	The programme aims at the economic empowerment of women.
+B2	norm	noun	society	норма	A standard of behaviour expected in a particular society.	Wearing formal clothes to work is no longer the norm in many offices.
+B2	scheme	noun	society	схема/программа	An organised plan or programme, especially by the government.	The government introduced a scheme to subsidise electric vehicle purchases.
+B2	agenda	noun	society	повестка дня	A list of topics to be discussed; a set of aims.	Environmental protection is at the top of the political agenda.
+B2	biodiversity	noun	environment	биоразнообразие	The variety of plant and animal life in a particular habitat.	The destruction of rainforests reduces biodiversity dramatically.
+B2	deforestation	noun	environment	вырубка лесов	The large-scale removal of trees from forested areas.	Deforestation contributes to climate change and species extinction.
+B2	carbon footprint	noun	environment	углеродный след	The total amount of greenhouse gases produced by a person or activity.	She reduced her carbon footprint by cycling instead of driving.
+B2	greenhouse gas	noun	environment	парниковый газ	A gas that traps heat in the atmosphere, contributing to climate change.	Carbon dioxide is the most significant greenhouse gas.
+B2	desertification	noun	environment	опустынивание	The process by which fertile land becomes desert.	Desertification is spreading across parts of Africa due to climate change and poor land management.
+B2	pollution	noun	environment	загрязнение	Harmful substances introduced into the environment.	Plastic pollution in the ocean is a growing environmental crisis.
+B2	ozone layer	noun	environment	озоновый слой	A layer of ozone in the atmosphere that absorbs ultraviolet radiation.	Certain chemicals have caused significant damage to the ozone layer.
+B2	climate change	noun	environment	изменение климата	Long-term shifts in global temperatures and weather patterns.	Climate change is causing more frequent and severe weather events.
+B2	erosion	noun	environment	эрозия	The gradual wearing away of rock, soil, or other material by water or wind.	Erosion of the riverbank had been worsening for decades without intervention.
+B2	offshore	adjective	environment	шельфовый/морской	Located at sea, away from the coast.	Offshore wind farms generate clean electricity.
+B2	solar energy	noun	environment	солнечная энергия	Power generated from sunlight using solar panels.	The building runs entirely on solar energy.
+B2	depletion	noun	environment	истощение/уменьшение	A reduction in the quantity of something, especially a resource.	The rapid depletion of fish stocks threatens the livelihoods of coastal communities.
+B2	venture	noun	business	предприятие/начинание	A new project or activity that involves some risk.	She started a new business venture with two former colleagues.
+B2	shareholder	noun	business	акционер	A person who owns shares in a company.	The shareholders voted to approve the new management strategy.
+B2	entrepreneur	noun	business	предприниматель	A person who starts and runs their own business.	He became a successful entrepreneur after leaving university.
+B2	tender	noun	business	тендер/конкурсная заявка	A formal written offer to supply goods or do work at a stated price.	Three firms submitted tenders for the construction contract.
+B2	rebrand	verb	business	ребрендинг	To change the image and name of a company or product.	The company rebranded completely after the scandal.
+B2	profit margin	noun	business	норма прибыли	The difference between the cost of making a product and its selling price.	The profit margin on luxury goods is much higher than on basic items.
+B2	niche	noun	business	ниша	A specific area of the market that a product or service appeals to.	They found a niche in the market for organic pet food.
+B2	patent	noun	business	патент	An official right to be the only person who makes or sells an invention.	She applied for a patent to protect her new invention.
+B2	supply chain	noun	business	цепочка поставок	The sequence of organisations involved in making and delivering a product.	The pandemic disrupted supply chains around the world.
+B2	quota	noun	business	квота	A fixed amount of something allowed or required.	The government imposed import quotas to protect domestic manufacturers.
+B2	pitch	noun	business	коммерческое предложение	A presentation designed to persuade someone to buy a product or idea.	She practised her pitch carefully before meeting the potential investors.
+B2	subconscious	noun	psychology	подсознание	The part of the mind that works below conscious awareness.	The image had worked its way into her subconscious.
+B2	trauma	noun	psychology	травма (психологическая)	A deeply distressing experience that causes lasting mental harm.	She sought therapy to help her process the trauma of the accident.
+B2	preconception	noun	psychology	предвзятое мнение	An idea formed before having full evidence; a prior assumption.	The therapist challenged her preconceptions about what a successful person should be.
+B2	attachment	noun	psychology	привязанность	A strong emotional bond between people, especially parent and child.	Early childhood attachment to caregivers shapes emotional development.
+B2	resilient	adjective	psychology	устойчивый	Able to recover quickly from difficult situations.	Children who feel loved and supported tend to be more resilient.
+B2	compulsive	adjective	psychology	навязчивый/компульсивный	Unable to control a habit or behaviour.	He had compulsive habits that he found very difficult to change.
+B2	innate	adjective	psychology	врождённый	Existing from birth; natural rather than learned.	Some researchers argue that a capacity for language is innate.
+B2	phobia	noun	psychology	фобия	An extreme and irrational fear of something.	She has a phobia of flying and always travels by train.
+B2	impulse	noun	psychology	импульс/порыв	A sudden desire to do something without thinking first.	He acted on impulse and bought the expensive watch.
+B2	projection	noun	psychology	проекция	Attributing one's own feelings or thoughts to someone else.	His anger at others was partly a projection of his own inner conflicts.
+B2	propaganda	noun	media	пропаганда	Information, often biased, used to promote a political cause.	The government used propaganda to maintain control over the population.
+B2	tabloid	noun	media	таблоид	A popular newspaper with short articles and many photographs.	The tabloid printed a story about the politician's private life.
+B2	editorial	noun	media	редакционная статья	An article in a newspaper that expresses the editor's opinion.	The newspaper published an editorial calling for government reform.
+B2	circulation	noun	media	тираж	The number of copies of a newspaper sold each day.	The newspaper's circulation has fallen dramatically with the rise of online news.
+B2	viral	adjective	media	вирусный (интернет-феномен)	Quickly spread from person to person via the internet.	The funny video went viral and was watched forty million times.
+B2	platform	noun	media	платформа	An online service on which content is shared or consumed.	The streaming platform released a new documentary series last month.
+B2	subscription	noun	media	подписка	An arrangement to pay regularly for a service.	She has a subscription to a music streaming service.
+B2	framing	noun	media	подача/трактовка	The way in which information is presented to influence how it is understood.	The framing of the story in the newspaper influenced public opinion significantly.
+B2	credibility	noun	media	достоверность	The quality of being trusted and believed.	The scandal seriously damaged the newspaper's credibility.
+B2	fake news	noun	media	фейковые новости	False information presented as genuine news.	Fake news spread rapidly during the election campaign.
+B2	gender	noun	social_issues	пол/гендер	The social roles and characteristics associated with being male or female.	Gender equality in education has improved significantly over the past fifty years.
+B2	asylum seeker	noun	social_issues	соискатель убежища	A person who has left their country and applied for protection elsewhere.	The charity helps asylum seekers find housing and legal support.
+B2	rehabilitation	noun	social_issues	реабилитация	The process of helping someone recover or reintegrate into society.	The prison programme focused on rehabilitation rather than punishment.
+B2	marginalised	adjective	social_issues	маргинализованный	Treated as unimportant or excluded from society.	The study examined the challenges faced by marginalised groups.
+B2	stigma	noun	social_issues	стигма	A mark of disgrace associated with a particular condition.	There is still a stigma attached to mental illness in many communities.
+B2	exclusion	noun	social_issues	исключение (социальное)	The process of being left out or prevented from participating.	Social exclusion leads to isolation and poor mental health.
+B2	empower	verb	social_issues	расширять права и возможности	To give someone the confidence and means to control their own life.	The programme is designed to empower young women in rural areas.
+B2	advocate	verb	social_issues	выступать в защиту	To publicly support a cause or policy.	She advocates for the rights of people with disabilities.
+B2	integrate	verb	social_issues	интегрировать	To include all people regardless of background in a common system.	The school works hard to integrate students from all backgrounds.
+B2	deprivation	noun	social_issues	лишения/нищета	The lack of basic necessities such as food, shelter, or healthcare.	Children who grow up in deprivation often face disadvantages throughout life.
+B2	barrier	noun	social_issues	барьер	Something that makes it difficult to achieve something.	Language can be a major barrier to integration for new immigrants.
+B2	sensitive	adjective	social_issues	деликатный/чувствительный	Relating to a subject that requires careful handling.	Immigration is a sensitive topic that needs careful discussion.
+B2	outspoken	adjective	personal	откровенный/прямой	Speaking freely and confidently even if it is controversial.	She was outspoken in her criticism of the new policy.
+B2	assertive	adjective	personal	напористый/уверенный в себе	Confident in expressing your views and defending your rights.	He learned to be more assertive during the leadership training.
+B2	impulsive	adjective	personal	импульсивный	Acting quickly without thinking carefully first.	She made an impulsive decision to quit her job and travel.
+B2	diligent	adjective	personal	прилежный	Hard-working and careful in everything you do.	He was diligent in his studies and rarely missed a single class.
+B2	empathetic	adjective	personal	сочувствующий	Able to understand and share the feelings of others.	A good counsellor needs to be empathetic.
+B2	meticulous	adjective	personal	тщательный/скрупулёзный	Very careful and precise about details.	He was meticulous in his research and checked every fact twice.
+B2	adaptable	adjective	personal	адаптируемый	Able to adjust to new conditions or environments easily.	Being adaptable is a key skill in a rapidly changing job market.
+B2	conscientious	adjective	personal	добросовестный	Taking care to do things carefully and correctly.	She was one of the most conscientious students in the class.
+B2	self-aware	adjective	personal	самосознающий	Having knowledge and understanding of your own character and feelings.	A truly self-aware person can recognise their own flaws.
+B2	perceptive	adjective	personal	проницательный	Quick to notice and understand things.	Her perceptive comments helped the group reach a decision quickly.
+B2	stubborn	adjective	personal	упрямый	Refusing to change your mind even when it would be sensible to do so.	He was so stubborn that he wouldn't admit he was wrong.
+B2	spontaneous	adjective	personal	спонтанный	Done or occurring naturally without being planned.	She made a spontaneous decision to take the scenic route home.
+B2	conviction	noun	abstract	убеждение	A firmly held belief or view.	She pursued her goals with the conviction that hard work would pay off.
+B2	paradox	noun	abstract	парадокс	A statement or situation that seems contradictory but may be true.	The paradox of choice suggests that too many options lead to unhappiness.
+B2	ideology	noun	abstract	идеология	A system of ideas and ideals that forms the basis of a policy.	The party's ideology was based on equality and social justice.
+B2	notion	noun	abstract	понятие/представление	A general idea or understanding of something.	She had only a vague notion of what the job would involve.
+B2	assertion	noun	abstract	утверждение	A confident and forceful statement of fact or belief.	His assertion that the project would succeed was met with scepticism.
+B2	dimension	noun	abstract	измерение/аспект	An aspect or feature of a situation.	The political dimension of the problem was often overlooked.
+B2	coherence	noun	abstract	связность	The quality of being logical and consistent.	The report lacked coherence and was difficult to follow.
+B2	validity	noun	abstract	достоверность/обоснованность	The quality of being logically sound and well-founded.	She questioned the validity of the study's conclusions.
+B2	ambiguity	noun	abstract	неоднозначность	The quality of having more than one possible meaning.	The ambiguity of the instructions led to widespread confusion.
+B2	justification	noun	abstract	обоснование/оправдание	A reason or explanation for doing something.	She could offer no justification for the sudden change in policy.
+B2	subtlety	noun	abstract	тонкость	A quality of being not immediately obvious or easy to notice.	The subtlety of the argument was lost on most of the audience.
+B2	spectrum	noun	abstract	спектр	A range of different things of a similar type.	The report covered the full spectrum of opinions on the issue.
+B2	legacy	noun	culture	наследие/наследство	Something handed down from a predecessor or from the past.	The philosopher left a remarkable intellectual legacy.
+B2	assimilate	verb	culture	ассимилировать	To take in and understand information; to integrate into a culture.	It took years for the family to assimilate into the new culture.
+B2	indigenous	adjective	culture	коренной	Originating in and naturally living in a particular area.	Indigenous communities have lived in this region for thousands of years.
+B2	multicultural	adjective	culture	мультикультурный	Relating to or including many different cultures.	The city has a vibrant multicultural population.
+B2	secular	adjective	culture	светский	Not connected with religious or spiritual matters.	The country operates under a secular system of government.
+B2	ritual	noun	culture	ритуал	A series of actions performed in a fixed order for symbolic reasons.	Lighting candles is an important ritual in many religious traditions.
+B2	dialect	noun	culture	диалект	A form of a language spoken in a particular area.	The poem was written in a local dialect that was difficult to translate.
+B2	folklore	noun	culture	фольклор	The traditional stories, customs, and beliefs of a community.	The festival celebrates the folklore and music of the region.
+B2	taboo	noun	culture	табу	A social or cultural rule that strongly forbids something.	Discussing money is considered a taboo in many cultures.
+B2	pilgrimage	noun	culture	паломничество	A journey to a holy place for religious reasons.	Thousands of pilgrims make the pilgrimage to the shrine each year.
+B2	dogma	noun	social_advanced	догма	A fixed set of beliefs that must be accepted without question.	She challenged the dogma of the organisation and was forced to leave.
+B2	polarise	verb	social_advanced	поляризовать	To divide into two opposing groups with extreme views.	The issue polarised public opinion in a way not seen for decades.
+B2	stifle	verb	social_advanced	подавлять/душить	To prevent something from developing or being expressed.	Strict censorship can stifle creativity and freedom of expression.
+B2	mobilise	verb	social_advanced	мобилизовать	To organise people for a common purpose, especially political action.	She managed to mobilise thousands of supporters for the rally.
+B2	reinforce	verb	social_advanced	укреплять	To make an idea or feeling stronger.	The results reinforce the view that early childhood education is essential.
+B2	undermine	verb	social_advanced	подрывать	To gradually damage or weaken something.	The scandal undermined confidence in the government.
+B2	foster	verb	social_advanced	способствовать	To encourage the development of something.	The programme aims to foster greater understanding between communities.
+B2	normalise	verb	social_advanced	нормализовывать	To make something seem normal and acceptable.	There are concerns that the media normalises unhealthy body images.
+B2	entitlement	noun	social_advanced	права/привилегии	A belief that you deserve special treatment.	A sense of entitlement can make it difficult to work in a team.
+B2	resent	verb	social_advanced	обижаться	To feel bitter about something you think is unfair.	She resented the fact that she had to work harder than her colleagues.
+B2	grievance	noun	social_advanced	претензия/обида	A real or imagined cause for complaint.	The workers listed their grievances before meeting with management.
+B2	impunity	noun	social_advanced	безнаказанность	Freedom from punishment or bad consequences.	The powerful acted with impunity while ordinary citizens faced harsh penalties.
+B2	disclosure	noun	social_advanced	раскрытие информации	The action of making secret or new information known.	Full disclosure of all financial interests was required from candidates.
+B2	complicity	noun	social_advanced	соучастие	Involvement in wrongdoing or failure to oppose it.	His silence was seen as a form of complicity.
+B2	impartiality	noun	social_advanced	беспристрастность	The quality of treating all people and views equally and fairly.	Journalists are expected to show impartiality in their reporting.
+B2	rephrase	verb	communication	перефразировать	To say something again using different words to make it clearer.	Could you rephrase that question so everyone understands it?
+B2	object	verb	communication	возражать	To express disagreement or disapproval of something.	Several members of the audience objected to the speaker's conclusions.
+B2	counter	verb	communication	возражать/опровергать	To respond to an argument or claim with an opposing one.	She countered his objection with a clear and well-supported argument.
+B2	paraphrase	verb	communication	перефразировать	To express what someone has said or written using different words.	He paraphrased the paragraph to avoid copying it directly.
+B2	infer	verb	communication	делать вывод	To reach a conclusion based on evidence rather than direct statement.	From her tone, he inferred that she was not entirely happy with the outcome.
+B2	rebut	verb	communication	опровергать	To argue that a claim or evidence is false.	She rebutted each point in his argument with clear factual evidence.
+B2	persuade	verb	communication	убеждать	To cause someone to do or believe something by giving good reasons.	She persuaded him to try the restaurant by recommending a dish.
+B2	concede	verb	communication	уступать/признавать	To admit that something is true; to give up a point in an argument.	He conceded that his initial assessment had been wrong.
+B2	exaggerate	verb	communication	преувеличивать	To describe something as larger or more extreme than it really is.	She exaggerated the number of people who had signed the petition.
+B2	comply	verb	behaviour	подчиняться/выполнять требования	To act in accordance with a request or rule.	Businesses must comply with the new data protection regulations.
+B2	cultivate	verb	behaviour	культивировать	To develop or encourage the growth of a skill or habit.	She deliberately cultivated the habit of reflecting on her day each evening.
+B2	conform	verb	behaviour	соответствовать (нормам)	To behave in a way that is expected or required.	There was pressure to conform to the norms of the group.
+B2	provoke	verb	behaviour	провоцировать	To cause a strong or angry reaction.	His comments provoked an intense debate on social media.
+B2	intimidate	verb	behaviour	запугивать	To frighten someone so that they do what you want.	He felt intimidated by the aggressive tone of the letter.
+B2	coax	verb	behaviour	уговаривать/заманивать	To gently persuade someone to do something they are reluctant to do.	She coaxed her reluctant child into trying the new food.
+B2	mediate	verb	behaviour	выступать посредником	To try to settle a dispute between two parties.	A professional was brought in to mediate between the two groups.
+B2	retaliate	verb	behaviour	мстить/отвечать тем же	To take action against someone who has harmed you.	She retaliated by exposing their dishonest behaviour to management.
+B2	transgress	verb	behaviour	нарушать (правила/нормы)	To break a law or moral rule.	She transgressed the accepted boundaries of professional behaviour.
+B2	rebuke	verb	behaviour	отчитывать	To express sharp disapproval or criticism of someone.	She was rebuked for missing the second deadline in a row.
+B2	attribute	verb	academic_skills	приписывать	To regard something as caused by or belonging to something.	She attributed the success of the project to the team's hard work.
+B2	annotate	verb	academic_skills	аннотировать	To add notes to a text or diagram explaining the content.	She annotated her copy of the book with comments throughout.
+B2	synthesise	verb	academic_skills	синтезировать	To combine different sources or ideas into a coherent whole.	He synthesised the findings of twenty separate studies.
+B2	compile	verb	academic_skills	составлять (подборку)	To gather information from different sources into one collection.	She compiled a list of all the relevant studies on the topic.
+B2	proofread	verb	academic_skills	корректировать	To read a text carefully to find and correct errors.	She always proofreads her assignments before submitting them.
+B2	problematise	verb	academic_skills	проблематизировать	To treat something as problematic and open to critical examination.	The essay problematises the assumption that growth always leads to well-being.
+B2	outline	verb	academic_skills	составлять план/излагать кратко	To give the main points of something without full details.	She outlined the key steps in the research process.
+B2	critique	verb	academic_skills	критически анализировать	To examine and make a judgement about something.	He was asked to critique the argument presented in the essay.
+B2	interpret	verb	academic_skills	интерпретировать	To explain the meaning of something.	She interpreted the data as supporting the original hypothesis.
+B2	generalise	verb	academic_skills	обобщать	To make a general statement based on specific examples.	It is dangerous to generalise from a single study.
+B2	presuppose	verb	academic_skills	предполагать	To require something as a prior condition.	The argument presupposes that all participants had equal access.
+B2	correlate	verb	academic_skills	коррелировать	To show a relationship between two things.	Researchers found that exercise levels correlated with improved mood.
+B2	given that	conjunction	logical_connectors	принимая во внимание	Taking into account the fact that.	Given that she had no experience, her performance was impressive.
+B2	provided that	conjunction	logical_connectors	при условии что	On the condition that something else happens.	She will accept the offer provided that she gets a pay rise.
+B2	alternatively	adverb	logical_connectors	в качестве альтернативы	As another possibility or choice.	You could take the train; alternatively, we could drive there.
+B2	on the other hand	phrase	logical_connectors	с другой стороны	Used to introduce a contrasting point.	The price is high; on the other hand, the quality is excellent.
+B2	in contrast	phrase	logical_connectors	в отличие от этого	Used to show that two things are very different.	In contrast to her sister, she was very quiet and reserved.
+B2	owing to	preposition	logical_connectors	из-за/по причине	Because of something.	The match was cancelled owing to the heavy rainfall.
+B2	in addition	phrase	logical_connectors	вдобавок	Used to introduce another point that supports what was just said.	In addition to the main problem, there were several smaller issues.
+B2	as a result	phrase	logical_connectors	в результате	Because of the things just mentioned.	She revised thoroughly; as a result, she passed all her exams.
+B2	in order to	phrase	logical_connectors	для того чтобы	Indicating the purpose of an action.	He left work early in order to collect his children from school.
+B2	by contrast	phrase	logical_connectors	для сравнения	When comparing two different things to show differences.	The first study found no effect; by contrast, the second showed a clear result.
+B2	hazard	noun	risk_danger	опасность	A thing likely to cause danger or difficulty.	Slippery roads are a hazard in icy weather.
+B2	precaution	noun	risk_danger	предосторожность	An action taken to prevent something dangerous happening.	She took the precaution of keeping an extra key with her neighbour.
+B2	immune	adjective	risk_danger	невосприимчивый/иммунный	Protected against a disease or not affected by something.	Having had the illness once, she was now immune.
+B2	calamitous	adjective	risk_danger	бедственный/гибельный	Causing great damage or suffering; disastrous.	The decision proved calamitous for the company and led to its collapse.
+B2	mortality	noun	risk_danger	смертность	The state of being subject to death; death rate.	The mortality rate from the disease dropped significantly after the vaccine was introduced.
+B2	exploit	verb	risk_danger	использовать в своих целях	To use something unfairly or to take advantage of a weakness.	Scammers exploit vulnerable elderly people online.
+B2	susceptible	adjective	risk_danger	восприимчивый	Likely to be influenced or harmed by something.	Young children are particularly susceptible to respiratory infections.
+B2	casualty	noun	risk_danger	пострадавший/жертва	A person killed or injured in an accident or disaster.	The rescue team worked through the night to reach the casualties.
+B2	contaminate	verb	risk_danger	загрязнять/заражать	To make something impure by introducing a harmful substance.	The river was contaminated by chemicals from the factory.
+B2	pandemic	noun	risk_danger	пандемия	A disease that spreads across a whole country or the entire world.	The pandemic forced governments to close borders and restrict movement.
+B2	frequency	noun	science_b2	частота	The number of times a wave or cycle repeats per unit of time.	The frequency of the sound wave determines whether it is heard as high or low.
+B2	molecule	noun	science_b2	молекула	The smallest unit of a substance that retains its chemical properties.	Water is made of molecules each containing two hydrogen atoms and one oxygen.
+B2	photosynthesis	noun	science_b2	фотосинтез	The process by which plants convert sunlight into food.	Without photosynthesis, plant life on Earth could not survive.
+B2	DNA	noun	science_b2	ДНК	The molecule that carries genetic instructions in living organisms.	Scientists were able to identify the suspect using DNA evidence.
+B2	mutation	noun	science_b2	мутация	A change in the genetic material of a cell.	The mutation in the gene caused the protein to function incorrectly.
+B2	electron	noun	science_b2	электрон	A negatively charged particle that orbits the nucleus of an atom.	Electrons flow through a conductor to create an electric current.
+B2	nucleus	noun	science_b2	ядро (клетки/атома)	The central part of an atom or cell.	The nucleus of an atom contains protons and neutrons.
+B2	catalyst	noun	science_b2	катализатор	A substance that speeds up a chemical reaction without being consumed.	The platinum catalyst enabled the reaction to proceed at a lower temperature.
+B2	velocity	noun	science_b2	скорость (направленная)	The speed of something in a given direction.	The velocity of the projectile was measured at five hundred metres per second.
+B2	neuron	noun	science_b2	нейрон	A nerve cell that transmits signals in the brain and nervous system.	Neurons communicate with each other through electrical impulses.
+
+B2	emphasis	noun	communication	акцент	Special importance given to something in speech or writing.	She placed great emphasis on the need for careful planning.
+B2	procrastinate	verb	behaviour	откладывать на потом	To delay doing something that you should do.	He procrastinated for weeks before finally starting the report.
+B2	intercultural	adjective	culture	межкультурный	Involving or relating to different cultures.	Intercultural communication skills are essential for international business.
+B2	albeit	conjunction	logical_connectors	хотя	Although; even though.	It was a successful event, albeit smaller than last year's.
+B2	disinformation	noun	media	дезинформация	False information deliberately spread to deceive people.	Social media made it easier to spread disinformation rapidly.
+B2	objectivity	noun	media	объективность	The quality of not being influenced by personal feelings or opinions.	Journalists are expected to report news with objectivity.
+B2	perception	noun	psychology	восприятие	The way you notice or understand something using your senses.	Our perception of colour is influenced by the light around us.
+B2	vulnerability	noun	risk_danger	уязвимость	The quality of being easily hurt, damaged, or attacked.	The report highlighted the vulnerability of coastal towns to flooding.
+B2	exposure	noun	risk_danger	воздействие	The state of being unprotected from something harmful.	Long exposure to sunlight can damage your skin.
+B2	particle	noun	science_b2	частица	An extremely small piece of a substance.	The air was full of tiny particles after the volcanic eruption.
+B2	bibliography	noun	academic_skills	библиография	A list of books and sources used when writing a paper.	She included a full bibliography at the end of her dissertation.
+B2	contamination	noun	environment	загрязнение	The process of making something harmful by adding a polluting substance.	The contamination of the river affected local fish populations.
+B2	landfill	noun	environment	мусорный полигон	A place where waste material is buried underground.	The local landfill site was nearly full and had to be closed.
+B2	biodegradable	adjective	environment	биоразлагаемый	Able to be broken down naturally by bacteria.	The company switched to biodegradable packaging to reduce waste.
+B2	oppression	noun	social_issues	угнетение	The cruel and unjust treatment of a group of people.	The documentary highlighted the oppression faced by minorities.
+B2	marginalise	verb	social_issues	маргинализировать	To treat someone as if they are not important.	Policies that marginalise the poor lead to greater inequality.
+B2	custom	noun	culture	обычай	a traditional practice followed in a society	It is a custom to bow when greeting someone in Japan.
+B2	acculturation	noun	culture	аккультурация	the process of adopting the culture of another group	Acculturation can be challenging for immigrants.
+B2	isotope	noun	science_b2	изотоп	one of two or more forms of the same element	Carbon has several isotopes used in dating.
+B2	enzyme	noun	science_b2	фермент	a protein that speeds up a chemical reaction in a body	Enzymes help digest food in the stomach.
+B2	receptor	noun	science_b2	рецептор	a cell or organ that responds to stimuli	Pain receptors send signals to the brain.
+B2	wavelength	noun	science_b2	длина волны	the distance between the crests of two waves	Visible light has a wavelength we can see.
+B2	conductivity	noun	science_b2	проводимость	the ability of a substance to conduct heat or electricity	Copper has high electrical conductivity.
+B2	membrane	noun	science_b2	мембрана	a thin flexible layer that covers or separates something	The cell membrane controls what enters the cell.
+B2	influencer	noun	media	инфлюенсер	a person who affects others' opinions through social media	The brand hired an influencer to promote their product.
+B2	hyperlink	noun	media	гиперссылка	a link in digital text that takes you to another page	Click the hyperlink to read the full article.
+B2	clickbait	noun	media	кликбейт	content designed to attract clicks with sensational headlines	That article was just clickbait with no real news.
+B2	paywall	noun	media	платный доступ	a system requiring payment to access online content	The newspaper put its articles behind a paywall.
+B2	engage	verb	communication	вступать в общение	to attract and hold someone's attention or interest	The speaker knew how to engage the audience.
+B2	rapport	noun	communication	взаимопонимание	a close and friendly relationship with someone	She quickly built rapport with the new students.
+B2	informal	adjective	communication	неформальный	relaxed and friendly in style or tone	The meeting was informal and open.
+B2	mitigation	noun	risk_danger	смягчение	the action of reducing the severity of something	Early action is key to the mitigation of risk.
+B2	safeguard	noun	risk_danger	защитная мера	a measure taken to protect against harm	Safety regulations are a safeguard against accidents.
+B2	deterrence	noun	risk_danger	сдерживание	the use of threats to prevent harmful actions	Nuclear deterrence was central to Cold War strategy.
+B2	jeopardy	noun	risk_danger	угроза	danger of loss, harm, or failure	His health was in jeopardy after the accident.
+B2	leverage	noun	business	рычаг влияния	the power to influence a situation or outcome	They used their financial leverage in the negotiation.
+B2	consortium	noun	business	консорциум	a group of organisations working together on a project	A consortium of firms bid for the contract.
+B2	cognition	noun	psychology	познание	the mental process of acquiring knowledge	Language affects cognition and thought.
+B2	narcissism	noun	psychology	нарциссизм	excessive admiration of oneself	His narcissism made it hard to work with him.
+B2	desensitise	verb	psychology	притуплять чувства	to make someone less sensitive to something	Violent media may desensitise viewers to aggression.
+B2	exhibit	verb	behaviour	проявлять	to show a particular quality or behaviour	He exhibited signs of stress before the exam.
+B2	restrain	verb	behaviour	сдерживать	to prevent someone from doing something	She restrained herself from saying what she thought.
+B2	appease	verb	behaviour	умиротворять	to make someone calmer by giving them what they want	They tried to appease the angry crowd.
+B2	simulate	verb	behaviour	симулировать	to pretend to have a feeling or to copy something	The training exercise simulated a real emergency.
+B2	thus	adverb	logical_connectors	таким образом	as a result or consequence of this	The weather was bad; thus, we stayed inside.
+B2	hence	adverb	logical_connectors	следовательно	for this reason or therefore	He was late; hence, he missed the introduction.
+B2	namely	adverb	logical_connectors	а именно	that is to say; specifically	Only one person failed, namely John.
+B2	specifically	adverb	logical_connectors	конкретно	in a precise or exact way	She asked for help, specifically with grammar.
+B2	passionate	adjective	personal	страстный	having or showing strong feelings about something	She is passionate about environmental issues.
+B2	genuine	adjective	personal	подлинный	truly what it is claimed to be; sincere	His concern for the team was genuine.
+B2	earnest	adjective	personal	серьёзный	showing sincere and serious intention	He made an earnest effort to improve.
+B2	conception	noun	abstract	представление	an idea or understanding of something	Her conception of happiness is different from mine.
+B2	duality	noun	abstract	двойственность	the quality of having two parts or natures	The novel explores the duality of human nature.
+B2	restate	verb	academic_skills	перефразировать	to say something again, especially more clearly	The teacher asked him to restate his argument.
+B2	hypothesise	verb	academic_skills	выдвигать гипотезу	to form a hypothesis to explain something	Scientists hypothesise and then test their ideas.
+B2	oligarchy	noun	society	олигархия	government by a small group of powerful people	The country was effectively an oligarchy.
+B2	biofuel	noun	environment	биотопливо	fuel made from biological materials	Biofuel is considered a cleaner energy source.
+B2	segregation	noun	social_issues	сегрегация	the practice of keeping people apart based on race or class	Racial segregation was abolished in the 1960s.
+B2	scapegoat	noun	social_advanced	козёл отпущения	a person blamed for the mistakes or problems of others	Immigrants were used as scapegoats during the crisis.
+B2	festival	noun	culture	фестиваль	an organised series of events or performances	The town holds an annual music festival in July.
+B2	belief	noun	culture	верование	a feeling that something is true or a principle held as true	Religious belief shapes many cultural practices.
+B2	sacred	adjective	culture	священный	connected with a religion or deserving of great respect	The mountain is considered sacred by the local people.
+B2	rite	noun	culture	обряд	a formal ceremony or procedure prescribed by tradition	Marriage is a rite that marks the start of a new life.
+B2	equity	noun	business	акционерный капитал	the value of the shares issued by a company	She owns a ten per cent equity stake in the firm.
+B2	asset	noun	business	актив	a resource owned by a company with economic value	The building is the company's most valuable asset.
+B2	eloquence	noun	communication	красноречие	the ability to express ideas clearly and effectively in speech	Her eloquence won over the audience immediately.
+B2	candid	adjective	communication	откровенный	truthful and straightforward in what you say	He gave a candid assessment of the situation.
+B2	mindfulness	noun	psychology	осознанность	the practice of being fully aware of the present moment	Mindfulness meditation can reduce anxiety.
+B2	outlet	noun	media	издание	a newspaper, television channel, or website that provides news	The story was covered by every major news outlet.
+B2	antithesis	noun	abstract	антитезис	the direct opposite of something	Cruelty is the antithesis of kindness.
+B2	citation	noun	academic_skills	цитирование	a reference to a source of information used in your work	Each claim requires a proper citation.
+B2	negligence	noun	risk_danger	халатность	failure to take proper care, resulting in harm to others	The accident was caused by negligence on the road.

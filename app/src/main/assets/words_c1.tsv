@@ -1,0 +1,433 @@
+LEVEL	WORD	POS	SEMANTIC_GROUP	RUSSIAN_TRANSLATION	DEFINITION	EXAMPLE_SENTENCE
+C1	abolish	verb	law_politics	отменять	To formally put an end to a law, system, or practice.	The government voted to abolish the death penalty.
+C1	legislation	noun	law_politics	законодательство	A law or set of laws passed by a parliament.	New legislation was passed to protect workers' rights.
+C1	jurisdiction	noun	law_politics	юрисдикция	The official power to make legal decisions in a particular area.	The crime was outside the jurisdiction of the local court.
+C1	precedent	noun	law_politics	прецедент	An earlier event or decision that serves as an example for future cases.	The ruling set an important precedent for environmental law.
+C1	prosecute	verb	law_politics	преследовать в судебном порядке	To take legal action against someone accused of a crime.	The company was prosecuted for dumping chemicals in the river.
+C1	verdict	noun	law_politics	вердикт	The decision made by a jury at the end of a trial.	The jury returned a verdict of not guilty after three days.
+C1	testimony	noun	law_politics	показания	A formal statement made under oath in a court of law.	Her testimony was crucial in convicting the defendant.
+C1	amendment	noun	law_politics	поправка	A change made to a law, document, or plan.	Congress passed an amendment to the constitution.
+C1	constitution	noun	law_politics	конституция	The set of fundamental laws and principles of a country.	The right to free speech is protected by the constitution.
+C1	sovereignty	noun	law_politics	суверенитет	The authority of a state to govern itself without outside interference.	The island declared sovereignty from its colonial ruler.
+C1	elaborate	verb	academic_discourse	разрабатывать подробно	To give more details or explanation about something.	She asked him to elaborate on his reasons for resigning.
+C1	articulate	verb	academic_discourse	чётко выражать	To express thoughts or feelings clearly in words.	He was able to articulate the complex idea in simple terms.
+C1	assert	verb	academic_discourse	утверждать	To state something confidently and forcefully.	She asserted that the new evidence proved her client's innocence.
+C1	contradict	verb	academic_discourse	противоречить	To say the opposite of what someone else has said.	The new findings contradict earlier research on the subject.
+C1	discourse	noun	academic_discourse	дискурс	Written or spoken discussion of a subject.	There has been much public discourse about the ethics of AI.
+C1	implication	noun	academic_discourse	подтекст/следствие	Something that is suggested without being stated directly.	The implications of the study are far-reaching for public health policy.
+C1	paradigm	noun	academic_discourse	парадигма	A typical example or model of something; a way of thinking.	The discovery caused a paradigm shift in our understanding of physics.
+C1	premise	noun	academic_discourse	предпосылка	A previous statement from which a conclusion is drawn.	The argument rests on the premise that all people are rational.
+C1	coherent	adjective	academic_discourse	последовательный	Logical and consistent; easy to understand.	She presented a coherent argument that convinced the committee.
+C1	ambiguous	adjective	academic_discourse	двусмысленный	Open to more than one interpretation; unclear.	The wording of the contract was ambiguous and led to a dispute.
+C1	deteriorate	verb	change	ухудшаться	To become worse in quality or condition.	His health deteriorated rapidly over the winter months.
+C1	escalate	verb	change	обострять(ся)	To become more serious or intense.	The dispute escalated into a full diplomatic crisis.
+C1	sap	verb	change	подтачивать/истощать	To gradually weaken or drain the strength from something.	Years of austerity sapped morale throughout the public sector.
+C1	nurture	verb	change	взращивать/поддерживать	To care for and encourage the development of something.	Good leadership nurtures talent and creates opportunities for growth.
+C1	trigger	verb	change	запускать/вызывать	To cause something to happen.	The stress of the job triggered a serious health problem.
+C1	sustain	verb	change	поддерживать	To keep something going over time.	It was difficult to sustain the level of enthusiasm in the long term.
+C1	consolidate	verb	change	консолидировать	To combine things or make them stronger.	The company consolidated its operations into a single headquarters.
+C1	evolve	verb	change	эволюционировать	To develop gradually over time.	The role of the manager has evolved significantly over the past decade.
+C1	disrupt	verb	change	нарушать/разрушать	To prevent something from continuing normally.	The strike disrupted train services across the entire region.
+C1	accelerate	verb	change	ускорять	To make something happen faster.	Investment in infrastructure can accelerate economic growth.
+C1	entrepreneurship	noun	business_advanced	предпринимательство	The activity of setting up and running businesses.	The university offers a course in entrepreneurship for business students.
+C1	monopoly	noun	business_advanced	монополия	A situation in which one company controls an entire market.	The regulator broke up the company's monopoly on internet services.
+C1	compliance	noun	business_advanced	соблюдение (требований)	The act of obeying laws, rules, or regulations.	The company invested heavily in compliance to avoid legal penalties.
+C1	procurement	noun	business_advanced	закупки	The process of obtaining goods or services for a business.	The procurement department negotiates contracts with suppliers.
+C1	liability	noun	business_advanced	ответственность (правовая)	Legal responsibility for something, especially paying a debt.	The company accepted liability for the accident and paid compensation.
+C1	subsidiary	noun	business_advanced	дочерняя компания	A company controlled by a larger company.	The bank operates through several subsidiaries in different countries.
+C1	liquidate	verb	business_advanced	ликвидировать	To close down a company and sell its assets to pay debts.	The firm was liquidated after years of mounting losses.
+C1	dividend	noun	business_advanced	дивиденд	A share of a company's profits paid to shareholders.	Investors received a generous dividend at the end of the financial year.
+C1	audit	noun	business_advanced	аудит	An official examination of an organisation's accounts.	The company commissioned an independent audit of its finances.
+C1	incentive	noun	business_advanced	стимул	Something that motivates or encourages someone to do something.	The government offered tax incentives to attract foreign investment.
+C1	empirical	adjective	science	эмпирический	Based on observation and evidence rather than theory.	The study provided empirical evidence to support the hypothesis.
+C1	hypothesis	noun	science	гипотеза	An idea that needs to be tested to see if it is true.	She designed an experiment to test her hypothesis about sleep.
+C1	variable	noun	science	переменная	A factor that can change in an experiment or situation.	The researchers controlled all variables except the one being tested.
+C1	correlation	noun	science	корреляция	A connection between two things where one affects the other.	There is a strong correlation between poverty and poor health outcomes.
+C1	synthesis	noun	science	синтез	The combination of elements to form a new whole.	The paper provides a synthesis of recent research on the topic.
+C1	phenomenon	noun	science	феномен	An observable fact or event, especially an unusual one.	The aurora borealis is a stunning natural phenomenon.
+C1	organism	noun	science	организм	A living thing such as a plant, animal, or bacterium.	The lake is home to thousands of microscopic organisms.
+C1	molecular	adjective	science	молекулярный	Relating to molecules, the smallest units of a substance.	Advances in molecular biology have transformed medicine.
+C1	genetic	adjective	science	генетический	Relating to genes and inherited characteristics.	The condition has a strong genetic component that runs in families.
+C1	cognitive	adjective	science	когнитивный	Relating to conscious mental processes such as thinking and memory.	Cognitive skills like reasoning and memory improve with practice.
+C1	rhetoric	noun	language_advanced	риторика	The art of using language persuasively and effectively.	The politician's rhetoric was powerful but lacked substance.
+C1	metaphor	noun	language_advanced	метафора	A word or phrase used in a non-literal sense to describe something.	She used the metaphor of a journey to describe her recovery.
+C1	irony	noun	language_advanced	ирония	The use of words to mean the opposite of their usual meaning.	There was a deep irony in the fact that the doctor smoked.
+C1	nuance	noun	language_advanced	нюанс	A subtle difference in meaning, expression, or sound.	The translator had to capture every nuance of the original text.
+C1	connotation	noun	language_advanced	коннотация	An idea or feeling associated with a word beyond its literal meaning.	The word 'home' has warm connotations of safety and family.
+C1	eloquent	adjective	language_advanced	красноречивый	Able to express ideas clearly and in a way that influences people.	She gave an eloquent speech that moved many in the audience to tears.
+C1	verbose	adjective	language_advanced	многословный	Using more words than necessary; long-winded.	His report was too verbose and needed to be cut by half.
+C1	concise	adjective	language_advanced	краткий	Giving necessary information using few words.	Please write a concise summary of no more than two hundred words.
+C1	explicit	adjective	language_advanced	явный/откровенный	Stated clearly and in detail, leaving nothing implied.	The contract was explicit about the penalties for late payment.
+C1	implicit	adjective	language_advanced	подразумеваемый	Suggested but not stated directly.	There was an implicit understanding that she would take over the role.
+C1	humanitarian	adjective	global_issues	гуманитарный	Relating to efforts to improve human welfare and reduce suffering.	The organisation launched a humanitarian mission to the disaster zone.
+C1	infrastructure	noun	global_issues	инфраструктура	The basic systems and services of a country such as roads and power.	Poor infrastructure is one of the biggest barriers to economic growth.
+C1	migration	noun	global_issues	миграция	The movement of people from one place to another.	Climate change is expected to drive large-scale migration in the future.
+C1	epidemic	noun	global_issues	эпидемия	A widespread occurrence of an infectious disease.	The cholera epidemic spread rapidly through the refugee camps.
+C1	sanction	noun	global_issues	санкция	An official punishment or restriction imposed on a country.	The international community imposed sanctions on the rogue state.
+C1	regime	noun	global_issues	режим	A government, especially one that controls people strictly.	Citizens suffered under the oppressive regime for decades.
+C1	diplomacy	noun	global_issues	дипломатия	The management of international relations through negotiation.	The crisis was resolved through careful diplomacy rather than force.
+C1	intervene	verb	global_issues	вмешиваться	To become involved in a difficult situation to improve it.	The UN intervened to stop the fighting between the two factions.
+C1	refugee	noun	global_issues	беженец	A person forced to leave their country because of danger or persecution.	Thousands of refugees crossed the border in search of safety.
+C1	alliance	noun	global_issues	альянс	A formal agreement between countries or groups to work together.	The military alliance was formed to defend against aggression.
+C1	preliminary	adjective	process	предварительный	Happening before the main event; preparing for something.	She passed the preliminary round and advanced to the final.
+C1	subsequent	adjective	process	последующий	Coming after something else in time or order.	The initial treatment was successful and subsequent tests showed improvement.
+C1	interim	adjective	process	промежуточный/временный	Temporary, until something permanent is established.	She was appointed interim manager while the permanent role was filled.
+C1	forthcoming	adjective	process	предстоящий	About to happen or appear soon.	He was reluctant to give details about the forthcoming announcement.
+C1	comprehensive	adjective	process	всесторонний	Including all or nearly all aspects of something.	They carried out a comprehensive review of safety procedures.
+C1	mandatory	adjective	process	обязательный	Required by law or a rule.	Wearing a seatbelt is mandatory in all vehicles.
+C1	criteria	noun	process	критерии	Standards by which something is judged or decided.	Applicants must meet all the criteria to be considered for the role.
+C1	protocol	noun	process	протокол/правила	A set of rules about the correct way to behave in a formal situation.	She followed the diplomatic protocol when greeting the ambassador.
+C1	implement	verb	process	внедрять	To put a plan or decision into action.	The school implemented a new grading system this term.
+C1	monitor	verb	process	контролировать	To watch and check something over a period of time.	Doctors monitored his condition carefully throughout the night.
+C1	aspiration	noun	personal_advanced	стремление	A strong hope or desire to achieve something great.	Her aspiration was to become the first woman to lead the company.
+C1	integrity	noun	personal_advanced	честность/цельность	The quality of being honest and having strong moral principles.	He was known for his personal integrity and never took bribes.
+C1	resilience	noun	personal_advanced	устойчивость/стойкость	The ability to recover quickly from difficulties.	Her resilience in the face of illness inspired everyone around her.
+C1	perseverance	noun	personal_advanced	настойчивость	Continued effort to do something despite difficulty.	Her perseverance finally paid off when she passed the exam at the third attempt.
+C1	empathy	noun	personal_advanced	эмпатия	The ability to understand and share the feelings of another person.	She showed great empathy when listening to her friend's problems.
+C1	compassion	noun	personal_advanced	сострадание	A feeling of pity and desire to help someone who is suffering.	The nurse's compassion made a difficult situation much easier to bear.
+C1	humility	noun	personal_advanced	скромность	The quality of not thinking you are better than others.	His success never diminished his natural humility.
+C1	dilemma	noun	personal_advanced	дилемма	A situation in which you must choose between two difficult options.	She faced a dilemma between accepting the promotion and caring for her family.
+C1	autonomy	noun	personal_advanced	автономия	The right or ability to make your own decisions.	Students need some autonomy to develop critical thinking skills.
+C1	resolve	noun	personal_advanced	решимость	Firm determination to do something.	She faced every setback with remarkable resolve and never gave up.
+C1	predominant	adjective	patterns	преобладающий	The most common or noticeable in a group.	The predominant feeling in the room was one of relief.
+C1	intrinsic	adjective	patterns	внутренний/присущий	Part of the basic nature of something; essential.	Hard work has intrinsic value regardless of external reward.
+C1	inherent	adjective	patterns	неотъемлемый	Existing as a permanent or essential quality of something.	There is an inherent tension between freedom and security.
+C1	chronic	adjective	patterns	хронический	Persisting for a long time; constantly recurring.	She has suffered from chronic back pain for ten years.
+C1	acute	adjective	patterns	острый	Very serious or severe; sharp.	The hospital was dealing with an acute shortage of nurses.
+C1	subtle	adjective	patterns	тонкий/едва заметный	Not obvious; difficult to notice.	There was a subtle change in his tone that made her suspicious.
+C1	rigorous	adjective	patterns	строгий/тщательный	Extremely thorough and careful.	The research was based on rigorous scientific methodology.
+C1	ambivalent	adjective	patterns	амбивалентный	Having mixed or contradictory feelings about something.	She felt ambivalent about moving abroad — excited but also fearful.
+C1	erode	verb	patterns	разрушать (постепенно)	To gradually destroy or weaken something.	Years of corruption had eroded trust in the political system.
+C1	facilitate	verb	patterns	способствовать/облегчать	To make a process easier or more possible.	The new law is designed to facilitate access to healthcare.
+C1	suppress	verb	social_advanced	подавлять	To prevent something from being known or from happening.	The authorities tried to suppress information about the accident.
+C1	invoke	verb	social_advanced	ссылаться/призывать	To cite a law or principle as a reason for doing something.	The lawyer invoked the right to silence on behalf of his client.
+C1	endorse	verb	social_advanced	одобрять/поддерживать	To officially approve or support something.	Several celebrities endorsed the charity campaign on social media.
+C1	denounce	verb	social_advanced	осуждать	To publicly declare something to be wrong or evil.	Human rights groups denounced the treatment of prisoners.
+C1	overwhelm	verb	social_advanced	подавлять/захлёстывать	To have a very strong effect on someone; to defeat completely.	She was overwhelmed by the kindness shown to her after her loss.
+C1	portray	verb	arts_c1	изображать	To represent or describe someone or something in a particular way.	The film portrays the war through the eyes of ordinary soldiers.
+C1	depict	verb	arts_c1	изображать (визуально)	To show or describe something in a picture or piece of writing.	The painting depicts a busy market scene in nineteenth-century Paris.
+C1	narrate	verb	arts_c1	рассказывать	To tell a story, often as a voiceover or in writing.	She narrated the documentary about endangered ocean species.
+C1	critique	noun	arts_c1	критический разбор	A detailed analysis and assessment of a work of art or literature.	He wrote a lengthy critique of the novel for the literary magazine.
+C1	genre	noun	arts_c1	жанр	A particular type or category of art, music, or literature.	Her novels blend the genre of detective fiction with historical drama.
+C1	satirical	adjective	arts_c1	сатирический	Using irony or ridicule to expose and criticise foolishness.	The satirical cartoon mocked the government policy effectively.
+C1	protagonist	noun	arts_c1	главный герой	The main character in a story or play.	The protagonist struggles throughout the novel to find his true identity.
+C1	narrative	noun	arts_c1	повествование	A story or account of events; the way a story is told.	The film uses a non-linear narrative that jumps back and forth in time.
+C1	aesthetic	noun	arts_c1	эстетика	A set of principles about the nature of beauty in art.	The minimalist aesthetic of the gallery made the paintings stand out.
+C1	provocative	adjective	arts_c1	провокационный	Deliberately causing strong reactions or emotions.	The provocative artwork sparked intense debate about freedom of expression.
+C1	inescapable	adjective	logic_c1	неизбежный/неотвратимый	Impossible to avoid or deny; unavoidable.	The inescapable conclusion from the data is that the policy has failed.
+C1	arbitrary	adjective	logic_c1	произвольный	Based on random choice rather than reason or logic.	The decision seemed completely arbitrary and impossible to justify.
+C1	contradictory	adjective	logic_c1	противоречивый	Containing contradictions; saying the opposite of what is expected.	The two reports contained contradictory findings on the same subject.
+C1	plausible	adjective	logic_c1	правдоподобный	Seeming reasonable or probable; credible.	She offered a plausible explanation for why she had been absent.
+C1	speculative	adjective	logic_c1	предположительный	Based on guesses rather than known facts.	The article was highly speculative and offered little hard evidence.
+C1	tangible	adjective	logic_c1	ощутимый/реальный	Able to be touched; clear and definite; real.	The training programme produced tangible results within six months.
+C1	discredit	verb	logic_c1	дискредитировать	To cause someone or something to lose respect or trust.	The opposing team tried to discredit the research by questioning its methodology.
+C1	underpin	verb	logic_c1	обосновывать/подкреплять	To support or form the basis of an argument or system.	Several key assumptions underpin the entire theory.
+C1	mitigate	verb	logic_c1	смягчать	To make something less harmful or serious.	Trees help to mitigate the effects of urban heat islands.
+C1	assess	verb	process_c1	оценивать	To consider something carefully and make a judgement about it.	The teacher assessed each student using both written and oral tests.
+C1	allocate	verb	process_c1	распределять	To give something to someone for a specific purpose.	The budget was allocated equally between the three departments.
+C1	coordinate	verb	process_c1	координировать	To organise different activities so they work together efficiently.	She coordinated the volunteers who helped at the annual charity event.
+C1	initiative	noun	process_c1	инициатива	A new plan or action to deal with a particular problem.	The government launched a new initiative to reduce youth unemployment.
+C1	framework	noun	process_c1	основа/структура	A set of rules or ideas that provides the structure for something.	The report provides a framework for thinking about digital privacy.
+C1	mechanism	noun	process_c1	механизм	A method or system for achieving a particular result.	The law provides a mechanism for resolving disputes between tenants.
+C1	hierarchy	noun	organisation	иерархия	A system in which people are ranked one above another.	The strict hierarchy in the company made it hard for junior staff to speak up.
+C1	bureaucracy	noun	organisation	бюрократия	A system of government with many complicated rules and processes.	Reformers wanted to cut through the bureaucracy that slowed decision-making.
+C1	accountability	noun	organisation	подотчётность	The fact of being responsible and required to explain your actions.	Greater accountability is needed in the way public money is spent.
+C1	transparency	noun	organisation	прозрачность	Openness and honesty about how decisions are made.	The new director promised full transparency in all financial dealings.
+C1	consensus	noun	organisation	консенсус	A general agreement among a group of people.	The committee reached a consensus after several hours of discussion.
+C1	coordination	noun	organisation	координация	The process of organising activities to work together efficiently.	Effective coordination between departments is essential for project success.
+C1	surveillance	noun	organisation	слежка/надзор	Close observation of a person or group, especially by authorities.	The city installed hundreds of surveillance cameras in public areas.
+C1	regulation	noun	organisation	регулирование	An official rule controlling how something is done.	New regulations were introduced to limit pollution from cars.
+C1	authorise	verb	organisation	уполномочивать	To give official permission for something to be done.	Only the director can authorise payments of this size.
+C1	deteriorating	adjective	conditions	ухудшающийся	Becoming progressively worse over time.	Deteriorating weather conditions forced them to abandon the climb.
+C1	unprecedented	adjective	conditions	беспрецедентный	Never having happened or existed before.	The company reported unprecedented losses in the final quarter.
+C1	catastrophic	adjective	conditions	катастрофический	Involving or causing sudden great damage or suffering.	The failure of the dam would have had catastrophic consequences downstream.
+C1	imminent	adjective	conditions	неминуемый	About to happen very soon.	Forecasters warned that an imminent storm would hit the coast by morning.
+C1	prolonged	adjective	conditions	длительный	Continuing for a long time; extended.	The prolonged drought caused severe water shortages across the region.
+C1	marginal	adjective	conditions	незначительный/маргинальный	Of minor importance; at the edge of a field or group.	The improvement in air quality was marginal and barely noticeable.
+C1	radical	adjective	conditions	радикальный	Relating to fundamental change; extreme in views or methods.	The report called for radical reforms to the entire benefits system.
+C1	momentous	adjective	conditions	судьбоносный/значимый	Very important because of likely effects on the future.	The decision to leave the union was one of the most momentous in the country's history.
+C1	unambiguous	adjective	conditions	однозначный	Clear and not open to different interpretations.	The instructions were unambiguous and left no room for confusion.
+C1	tacit	adjective	conditions	молчаливый/подразумеваемый	Understood or implied without being stated openly.	There was a tacit agreement between them never to mention the incident.
+C1	encounter	verb	experiences	встречать/сталкиваться	To unexpectedly meet or experience something.	She encountered many difficulties during her first year working abroad.
+C1	confront	verb	experiences	противостоять	To deal directly with a problem or difficult situation.	He finally found the courage to confront his fear of failure.
+C1	construe	verb	experiences	истолковывать	To interpret something in a particular way.	Her silence was construed as agreement, which was not what she intended.
+C1	deduce	verb	experiences	делать вывод	To arrive at a fact or conclusion by reasoning.	From the clues, the detective deduced that the crime had happened at midnight.
+C1	acknowledge	verb	experiences	признавать	To accept or admit the existence or truth of something.	She acknowledged that she had made several significant errors.
+C1	withstand	verb	experiences	выдерживать	To remain strong when faced with something difficult.	The bridge was designed to withstand earthquakes up to magnitude eight.
+C1	perplex	verb	experiences	приводить в замешательство	To make someone feel completely puzzled or confused.	The unexpected result perplexed even the most experienced researchers.
+C1	inhibit	verb	experiences	сдерживать	To prevent something from happening or make it harder to do.	Shyness can inhibit people from expressing themselves clearly.
+C1	prevail	verb	experiences	преобладать/одерживать победу	To prove more powerful or successful; to be most common.	Common sense must prevail if we are to find a lasting solution.
+C1	resemble	verb	experiences	быть похожим на	To look or seem similar to something or someone.	The new building closely resembles the old one it replaced.
+C1	statute	noun	law_politics	статут/закон	A written law passed by a legislative body.	The statute was passed unanimously by both chambers of parliament.
+C1	liable	adjective	law_politics	несущий ответственность (по закону)	Legally responsible for something.	The company was found liable for the damage caused to local residents.
+C1	injunction	noun	law_politics	судебный запрет	A court order requiring someone to do or not do something.	The judge issued an injunction to prevent publication of the story.
+C1	plaintiff	noun	law_politics	истец	A person who brings a case against another in a court of law.	The plaintiff argued that the defendant had breached the contract.
+C1	defendant	noun	law_politics	ответчик	A person accused of a crime in a court of law.	The defendant pleaded not guilty to all charges against her.
+C1	contempt	noun	law_politics	неуважение к суду	The offence of disobeying or disrespecting a court or its orders.	He was found in contempt of court and fined heavily.
+C1	appeal	noun	law_politics	апелляция	A request to a higher court to review a decision.	The lawyer filed an appeal against the verdict.
+C1	extradite	verb	law_politics	выдавать (преступника)	To send a criminal from one country to another for trial.	The suspect was extradited to face charges in his home country.
+C1	acquit	verb	law_politics	оправдывать (в суде)	To officially declare that someone is not guilty of a crime.	The jury acquitted her of all charges after a two-week trial.
+C1	decree	noun	law_politics	декрет/указ	An official order issued by a government or ruler.	The president issued a decree banning all public gatherings.
+C1	mandate	noun	law_politics	мандат/полномочия	An official instruction or authority to do something.	The party won the election with a clear mandate for change.
+C1	enact	verb	law_politics	принимать (закон)	To make a bill into a law.	Parliament enacted new environmental legislation last spring.
+C1	ratify	verb	law_politics	ратифицировать	To formally approve an agreement or treaty.	All member states ratified the new international climate agreement.
+C1	lobby	verb	law_politics	лоббировать	To try to influence politicians on behalf of a particular group.	Oil companies lobby governments to prevent restrictions on drilling.
+C1	tenet	noun	academic_discourse	принцип/положение	A principle or belief held by a person or organisation.	A central tenet of the theory is that behaviour is shaped by environment.
+C1	oratory	noun	academic_discourse	ораторское искусство	The skill of public speaking, especially when used to persuade.	His oratory inspired the crowd to support the cause.
+C1	appraisal	noun	academic_discourse	оценка/экспертиза	A formal assessment of the worth or quality of something.	An independent appraisal of the evidence was commissioned by the university.
+C1	inference	noun	academic_discourse	умозаключение	A conclusion reached on the basis of evidence and reasoning.	The inference drawn from the data was that prices would rise.
+C1	maxim	noun	academic_discourse	максима/аксиома поведения	A short statement expressing a general truth or rule of conduct.	The ethical framework was based on the maxim of treating others as you wish to be treated.
+C1	conjecture	noun	academic_discourse	предположение/гипотеза	An opinion or conclusion formed on the basis of incomplete information.	The report distinguished carefully between established fact and conjecture.
+C1	compendium	noun	academic_discourse	сборник/компендиум	A concise collection of information on a particular subject.	The professor compiled a compendium of the most important texts in the field.
+C1	dissertation	noun	academic_discourse	диссертация	A long piece of writing based on original research for a university degree.	She spent two years writing her doctoral dissertation on migration.
+C1	refute	verb	academic_discourse	опровергать	To prove that a statement or theory is false.	The scientist refuted the earlier findings with new experimental data.
+C1	postulate	verb	academic_discourse	постулировать	To suggest or assume something as a basis for argument.	The researcher postulated that the effect was caused by a third variable.
+C1	overhaul	verb	change	капитально реконструировать	To examine and repair or completely change something.	The government plans to overhaul the entire welfare system.
+C1	restructure	verb	change	реструктурировать	To change the organisation of a system or company.	The company restructured its operations after losses in the previous year.
+C1	transform	verb	change	преобразовывать	To change something completely, usually for the better.	Investment in education can transform the prospects of an entire generation.
+C1	reconfigure	verb	change	перестраивать	To change the arrangement or structure of something.	They had to reconfigure their strategy after the initial plan failed.
+C1	revise	verb	change	пересматривать	To change and improve something, especially a plan or opinion.	She revised her argument in light of the new evidence.
+C1	phase out	verb	change	постепенно выводить из использования	To gradually stop using something.	The government plans to phase out coal-powered electricity generation.
+C1	institutionalise	verb	change	институционализировать	To make something a formal part of an organisation or social system.	The reforms were designed to institutionalise democratic values in the new state.
+C1	reverse	verb	change	обращать вспять	To change something so it is the opposite of what it was.	It is very difficult to reverse the effects of deforestation.
+C1	remodel	verb	change	переделывать/реструктурировать	To change the structure or form of something to make it more effective.	The organisation was remodelled to improve communication between departments.
+C1	migrate	verb	change	мигрировать	To move from one place to another, often permanently.	Many businesses have migrated their operations to cheaper locations.
+C1	fluctuate	verb	change	колебаться	To change frequently and irregularly.	Exchange rates fluctuate constantly in response to global events.
+C1	calcify	verb	change	костенеть/закостеневать	To become inflexible and resistant to new ideas or change.	Without reform, the bureaucracy risked calcifying around outdated procedures.
+C1	stagnate	verb	change	застаиваться	To stop developing or making progress.	Without investment, the economy began to stagnate.
+C1	turnaround	noun	change	перелом/разворот	A complete change from a bad situation to a good one.	The company achieved a remarkable turnaround in just eighteen months.
+C1	venture capital	noun	business_advanced	венчурный капитал	Money invested in new or risky businesses.	She secured venture capital to expand her technology startup.
+C1	stakeholder	noun	business_advanced	заинтересованная сторона	A person or group with an interest in how a company is run.	The company consulted all stakeholders before making the final decision.
+C1	turnover	noun	business_advanced	оборот/текучесть кадров	The amount of money a company earns; also the rate at which staff leave.	The company's annual turnover exceeded ten million pounds.
+C1	merger	noun	business_advanced	слияние	The combining of two organisations into one.	The merger between the two banks created the largest financial institution.
+C1	acquisition	noun	business_advanced	поглощение/приобретение	The act of buying or gaining ownership of a company.	The acquisition of the rival firm gave them access to new technology.
+C1	collateral	noun	business_advanced	залог/обеспечение	Property offered as security for a loan.	She offered her property as collateral for the business loan.
+C1	insolvency	noun	business_advanced	неплатёжеспособность	The inability to pay one's debts as they fall due.	The firm's insolvency led to hundreds of job losses.
+C1	arbitration	noun	business_advanced	арбитраж	A method of resolving disputes outside of court.	The dispute was settled through independent arbitration.
+C1	benchmark	noun	business_advanced	ориентир/эталон	A standard used to compare or measure the performance of something.	The company used industry benchmarks to assess its own performance.
+C1	portfolio	noun	business_advanced	портфель (инвестиционный)	A collection of investments or creative works belonging to one person.	She manages a portfolio of investments worth several million pounds.
+C1	fiscal	adjective	business_advanced	фискальный/финансовый	Relating to government revenue and public finances.	The government introduced a series of fiscal reforms to reduce spending.
+C1	yield	noun	business_advanced	доход/урожай	The income produced by an investment over a period of time.	The bond offered an annual yield of four percent.
+C1	scrutinise	verb	science	тщательно исследовать	To examine something very carefully.	The researchers scrutinised every detail of the experimental data.
+C1	replicate	verb	science	воспроизводить (эксперимент)	To reproduce an experiment or process to verify results.	The team attempted to replicate the original findings but could not.
+C1	calibrate	verb	science	калибровать	To adjust a measuring instrument to ensure accuracy.	The technician calibrated the equipment before the experiment began.
+C1	validate	verb	science	подтверждать	To check that something is accurate, true, or effective.	Independent tests were needed to validate the initial findings.
+C1	quantify	verb	science	квантифицировать	To measure or express something as a number.	It is difficult to quantify the effects of stress on the immune system.
+C1	aberration	noun	science	аберрация/отклонение	A departure from what is normal or expected.	The aberration in the data suggested that an error had occurred during collection.
+C1	paradigm shift	noun	science	смена парадигмы	A fundamental change in the way a subject is approached.	The discovery caused a paradigm shift in how scientists understand the condition.
+C1	placebo	noun	science	плацебо	A harmless substance given to a patient instead of medicine.	Half the participants received the drug and half received a placebo.
+C1	peer review	noun	science	рецензирование	The process of checking research by other experts in the field.	The study was accepted after peer review by a panel of scientists.
+C1	quantum	adjective	science	квантовый	Relating to the smallest discrete unit of a physical property.	Quantum computing could solve problems beyond the reach of current computers.
+C1	aggregate	verb	science	агрегировать	To combine different items into a whole.	The data was aggregated from thousands of individual surveys.
+C1	deduction	noun	science	дедукция/вычет	A conclusion reached from known facts by a process of reasoning.	The scientist's deduction proved correct when the theory was tested.
+C1	nuanced	adjective	science	нюансированный	Characterised by subtle distinctions.	The analysis was nuanced and acknowledged several limitations.
+C1	reproducible	adjective	science	воспроизводимый	Capable of being reproduced by repeated experiments.	The results were reproducible across multiple independent laboratories.
+C1	prosody	noun	language_advanced	просодия	The patterns of stress and intonation in a language.	A strong grasp of prosody helps non-native speakers sound more natural.
+C1	syntax	noun	language_advanced	синтаксис	The arrangement of words in sentences according to grammatical rules.	The complex syntax of the ancient text made it hard to translate.
+C1	semantics	noun	language_advanced	семантика	The study of meaning in language.	The word has changed in semantics over the centuries.
+C1	circumlocution	noun	language_advanced	описательный оборот/многословие	The use of many words when fewer would do; indirect expression.	His answer was a masterpiece of circumlocution that revealed nothing.
+C1	innuendo	noun	language_advanced	инсинуация/намёк	An indirect suggestion about something improper.	The article was full of innuendo but contained no direct accusations.
+C1	litotes	noun	language_advanced	литота	A figure of speech using understatement, often with a negative.	Saying the food was 'not bad' when you loved it is a form of litotes.
+C1	jargon	noun	language_advanced	жаргон	Specialised words used by a particular group.	The report was full of technical jargon that most readers could not understand.
+C1	satire	noun	language_advanced	сатира	The use of humour or irony to criticise or expose foolishness.	The magazine is known for its political satire.
+C1	anaphora	noun	language_advanced	анафора	The repetition of a word or phrase at the beginning of successive clauses.	Churchill's speech used anaphora powerfully: 'We shall fight on the beaches, we shall fight on the landing grounds...'
+C1	colloquial	adjective	language_advanced	разговорный	Relating to informal speech.	The word is very common in colloquial English but rarely used in formal writing.
+C1	tautology	noun	language_advanced	тавтология	Saying the same thing twice in different words.	'Free gift' is a tautology because all gifts are free by definition.
+C1	idiomatic	adjective	language_advanced	идиоматический	Relating to expressions whose meaning cannot be guessed from the words.	Her idiomatic use of English impressed native speakers.
+C1	partisan	adjective	global_issues	партийный/предвзятый	Strongly supporting a particular cause or side.	The report was criticised as partisan rather than objective.
+C1	hegemony	noun	global_issues	гегемония	Leadership or dominance of one country over others.	The global hegemony of a single superpower was being challenged.
+C1	multilateral	adjective	global_issues	многосторонний	Involving several countries or parties.	The issue requires a multilateral approach to be resolved.
+C1	non-governmental organisation	noun	global_issues	неправительственная организация	An independent group that works on social or environmental issues.	The non-governmental organisation provided aid to refugees.
+C1	embargo	noun	global_issues	эмбарго	An official ban on trade with a particular country.	The United Nations imposed an arms embargo on the regime.
+C1	geopolitical	adjective	global_issues	геополитический	Relating to politics as influenced by geography.	The pipeline project has significant geopolitical implications.
+C1	insurgency	noun	global_issues	повстанческое движение	An armed uprising against a government or authority.	The government struggled to suppress the growing insurgency in the north.
+C1	deterrent	noun	global_issues	сдерживающий фактор	Something that discourages a particular action.	Nuclear weapons are often described as a deterrent to conflict.
+C1	proliferation	noun	global_issues	распространение (особенно оружия)	The rapid increase in the number of something.	The proliferation of nuclear weapons poses a serious threat to global security.
+C1	coup	noun	global_issues	государственный переворот	A sudden and violent seizure of power from a government.	The military coup overthrew the elected government overnight.
+C1	armistice	noun	global_issues	перемирие	An agreement between opposing sides to stop fighting.	The armistice was signed in November 1918, ending the First World War.
+C1	cease-fire	noun	global_issues	прекращение огня	A temporary halt to fighting agreed by both sides.	The cease-fire held for several weeks before fighting resumed.
+C1	cascade	verb	process	каскадировать	To fall or flow in stages; to happen in a series of steps.	One mistake cascaded into a series of increasingly serious problems.
+C1	standardise	verb	process	стандартизировать	To cause things to follow the same rules or pattern.	The aim was to standardise procedures across all regional offices.
+C1	streamline	verb	process	оптимизировать	To make a process more efficient.	The new software streamlined the entire booking process.
+C1	phase	verb	process	поэтапно вводить	To carry out something in stages.	The reforms were phased in over a period of three years.
+C1	prioritise	verb	process	расставлять приоритеты	To give more importance to one thing over others.	She had to prioritise her tasks to meet the deadline.
+C1	delegate	verb	process	делегировать	To give a task or responsibility to someone else.	A good manager knows when to delegate rather than trying to do everything alone.
+C1	execute	verb	process	выполнять/осуществлять	To carry out a plan, task, or order.	The team executed the project plan efficiently and ahead of schedule.
+C1	verify	verb	process	проверять/подтверждать	To check that something is accurate or true.	She called to verify that her booking had been confirmed.
+C1	revamp	verb	process	обновлять/модернизировать	To improve or make something more modern.	The company revamped its website to improve the user experience.
+C1	orchestrate	verb	process	организовывать/оркестровать	To arrange or direct the elements of a situation to produce the desired effect.	She orchestrated the entire campaign from her office.
+C1	deploy	verb	process	развёртывать	To use or put into action systematically.	The organisation deployed a team of experts to assess the damage.
+C1	inspect	verb	process	проверять/осматривать	To look at something carefully for signs of problems or faults.	Auditors inspected the accounts and found several irregularities.
+C1	optimise	verb	process	оптимизировать	To make something as effective or functional as possible.	The team worked to optimise the workflow and reduce unnecessary steps.
+C1	inception	noun	process_c1	начало/возникновение	The beginning of an organisation or project.	Since its inception the charity has helped thousands of families.
+C1	oversight	noun	process_c1	надзор/недосмотр	Official supervision; or a mistake caused by failing to notice something.	The error was the result of an oversight rather than deliberate negligence.
+C1	rationale	noun	process_c1	обоснование	The reasons or logic behind a decision or course of action.	She explained the rationale for restructuring the department.
+C1	adherence	noun	process_c1	соблюдение/следование	Faithful attachment to or compliance with a rule, belief, or practice.	Strict adherence to the guidelines ensured consistent results across all sites.
+C1	recourse	noun	process_c1	обращение за помощью/право на защиту	Having a means of getting help when you have a problem.	Citizens have recourse to the courts if their rights are violated.
+C1	redress	noun	process_c1	возмещение	Compensation or correction for something wrong.	She sought legal redress after the false claims damaged her reputation.
+C1	yardstick	noun	process_c1	мерило/критерий оценки	A standard against which something can be measured or judged.	Customer satisfaction scores became the yardstick for evaluating service quality.
+C1	threshold	noun	process_c1	порог	A level or point at which something begins or changes.	The results just crossed the threshold required for publication.
+C1	remit	noun	process_c1	круг задач/полномочия	The area of activity over which a person or group has responsibility.	Digital policy falls within the minister's remit.
+C1	bureaucratic	adjective	process_c1	бюрократический	Characterised by complicated rules and slow processes.	The bureaucratic approval process delayed the project by several months.
+C1	cohesion	noun	process_c1	сплочённость	The quality of being united and working well together.	The team's cohesion was the key to their success.
+C1	redundancy	noun	process_c1	избыточность/сокращение (штата)	The state of being no longer needed; or being made unemployed.	She was offered a generous redundancy package when the department was cut.
+C1	outsource	verb	process_c1	передавать на аутсорсинг	To arrange for work to be done outside the company.	They decided to outsource the printing to a specialist firm.
+C1	autocratic	adjective	organisation	авторитарный	Relating to a ruler or leader with total unchallenged power.	The autocratic management style created tension throughout the company.
+C1	corporate	adjective	organisation	корпоративный	Relating to a large company or organisation.	Corporate responsibility for environmental damage must be more strictly enforced.
+C1	lateral	adjective	organisation	горизонтальный/боковой	Relating to the side; across rather than up or down in a hierarchy.	She made a lateral move to a different department at the same level.
+C1	decentralise	verb	organisation	децентрализовать	To distribute power away from a central authority.	The new director wanted to decentralise decision-making.
+C1	supervision	noun	organisation	надзор/руководство	The action of overseeing and directing the work of others.	Independent supervision of the police was considered essential for public trust.
+C1	stipulate	verb	organisation	оговаривать/устанавливать условие	To demand or specify something as part of an agreement.	The contract stipulated that all disputes be resolved by arbitration.
+C1	governance	noun	organisation	управление/руководство	The system by which an organisation is controlled and directed.	Good governance requires transparency and clear lines of accountability.
+C1	decentralisation	noun	organisation	децентрализация	The transfer of authority from a central body to regional bodies.	Decentralisation gave local councils more power over education spending.
+C1	probationary	adjective	organisation	испытательный	Relating to a trial period at the start of a job or role.	She served a six-month probationary period before being confirmed in the post.
+C1	charter	noun	organisation	устав/хартия	An official document that describes the rights or aims of an organisation.	The charity operates under a charter approved by the Charity Commission.
+C1	affiliate	noun	organisation	аффилированная организация	A company connected to a larger one.	The charity has affiliates in twelve countries around the world.
+C1	stringent	adjective	conditions	строгий/жёсткий	Very strict or severe.	The laboratory operated under stringent safety conditions.
+C1	volatile	adjective	conditions	нестабильный/взрывоопасный	Likely to change suddenly and unpredictably.	Oil prices are notoriously volatile.
+C1	worsen	verb	conditions	ухудшаться/усугубляться	To become worse or to make something worse.	The flooding worsened overnight as more rain fell on already saturated ground.
+C1	fraught	adjective	conditions	напряжённый/чреватый	Full of difficulty or stress.	The negotiations were fraught with difficulty from the very beginning.
+C1	bleak	adjective	conditions	мрачный/безрадостный	Offering little hope; cold and bare.	The economic outlook was bleak following the collapse of exports.
+C1	robust	adjective	conditions	устойчивый/надёжный	Strong and unlikely to fail or break down.	The economy showed a robust performance despite external pressures.
+C1	rampant	adjective	conditions	буйный/разгулявшийся	Growing or spreading without restraint.	Corruption was rampant throughout the organisation at every level.
+C1	dire	adjective	conditions	ужасный/крайний	Very serious or terrible; requiring urgent attention.	The situation in the region was described as dire by international observers.
+C1	precarious	adjective	conditions	ненадёжный/нестабильный	Likely to fall or become dangerous without warning.	Many workers find themselves in precarious employment with no job security.
+C1	transient	adjective	conditions	временный/непостоянный	Lasting only a short time.	The celebrity's fame turned out to be transient.
+C1	undergo	verb	experiences	проходить через (изменения)	To experience something, especially a change or process.	She underwent extensive training before taking on the new role.
+C1	grapple	verb	experiences	бороться/справляться	To struggle to deal with a difficult problem.	He grappled with the complex moral dilemma for weeks.
+C1	navigate	verb	experiences	ориентироваться/преодолевать	To find a way through a complex situation.	She found it difficult to navigate the bureaucratic system alone.
+C1	reconcile	verb	experiences	примирять/совмещать	To make two things compatible; to restore a relationship.	He struggled to reconcile his personal values with his professional duties.
+C1	endure	verb	experiences	переносить/терпеть	To suffer something difficult for a long time.	She endured years of hardship before finally achieving success.
+C1	distil	verb	experiences	выделять суть	To extract the essential part of something.	The report distilled the key findings into a short executive summary.
+C1	reflect	verb	experiences	задумываться/размышлять	To think carefully and deeply about something.	She reflected on the decision for several days before responding.
+C1	immerse	verb	experiences	погружаться	To become deeply involved in an activity or subject.	He immersed himself in the local culture and quickly learned the language.
+C1	lament	verb	experiences	сожалеть/оплакивать	To express grief or regret about something.	Critics lamented the loss of traditional craftsmanship in modern design.
+C1	reshape	verb	experiences	переформировывать	To change the shape, character, or nature of something significantly.	Living abroad reshaped her outlook on life in ways she had not anticipated.
+C1	internalise	verb	experiences	усваивать (внутренне)	To accept and incorporate a value or idea into your own thinking.	Over time, she internalised the strict standards her mentor had set.
+C1	pore	verb	experiences	тщательно изучать	To read or study something with great attention.	He pored over every word of the contract before agreeing to sign.
+C1	anticipate	verb	experiences	предвидеть	To expect and prepare for something before it happens.	She anticipated the problem and took steps to prevent it.
+C1	manifest	verb	experiences	проявляться	To show something clearly; to be evidence of something.	Her anxiety manifested itself as difficulty sleeping.
+C1	forthright	adjective	personal_advanced	прямолинейный/откровенный	Direct and outspoken; saying what you think without hesitation.	She was known for her forthright manner and never avoided difficult conversations.
+C1	tenacious	adjective	personal_advanced	упорный/настойчивый	Not giving up; holding firmly to something.	He was tenacious in pursuing his goal despite many setbacks.
+C1	principled	adjective	personal_advanced	принципиальный	Acting in accordance with moral values.	She made a principled decision to refuse the offer.
+C1	selfless	adjective	personal_advanced	бескорыстный	Concerned more with others' needs than with your own.	His selfless dedication to the charity inspired everyone around him.
+C1	pragmatic	adjective	personal_advanced	прагматичный	Dealing with things sensibly and practically.	She took a pragmatic approach to solving the problem.
+C1	equanimous	adjective	personal_advanced	невозмутимый	Mentally calm and composed, especially in a difficult situation.	She remained equanimous despite the chaos unfolding around her.
+C1	introspective	adjective	personal_advanced	склонный к самоанализу	Tending to examine your own thoughts and feelings.	She was an introspective person who kept a detailed diary.
+C1	altruistic	adjective	personal_advanced	альтруистический	Showing unselfish concern for other people.	Her altruistic impulse led her to donate most of her savings.
+C1	steadfast	adjective	personal_advanced	стойкий/непоколебимый	Firmly committed and unlikely to give way.	He remained steadfast in his beliefs despite great pressure.
+C1	versatile	adjective	personal_advanced	универсальный	Able to do many different things well.	She is a versatile performer who is equally convincing in comedy and drama.
+C1	complacency	noun	personal_advanced	самодовольство/самоуспокоенность	A feeling of satisfaction with your situation that prevents you from trying to improve.	The team's complacency after early success led to a series of costly mistakes.
+C1	counterintuitive	adjective	patterns	контринтуитивный	Contrary to what one would instinctively expect.	The counterintuitive finding was that more choice led to less satisfaction.
+C1	cumulative	adjective	patterns	накопительный	Increasing or growing by successive additions.	The cumulative effect of small daily habits is significant over time.
+C1	transitory	adjective	patterns	преходящий	Lasting only for a short time.	The pain was transitory and faded within a few hours.
+C1	recurrent	adjective	patterns	повторяющийся	Happening again and again; occurring regularly.	She suffered from a recurrent nightmare for years after the accident.
+C1	perennial	adjective	patterns	многолетний/постоянный	Lasting for a long time or occurring repeatedly.	Funding is a perennial problem for arts organisations.
+C1	systemic	adjective	patterns	системный	Relating to a whole system rather than just a part of it.	The problem was systemic and could not be fixed by individual changes alone.
+C1	paradoxical	adjective	patterns	парадоксальный	Seemingly contradictory or absurd yet possibly true.	It is paradoxical that the more you seek happiness, the less you find it.
+C1	endemic	adjective	patterns	эндемичный/укоренившийся	Regularly found in a particular area or group.	Corruption is endemic in certain parts of the system.
+C1	latent	adjective	patterns	скрытый/латентный	Existing but not yet developed or manifest.	The study revealed a latent talent in students who had been dismissed.
+C1	peripheral	adjective	patterns	периферийный/второстепенный	Of minor importance; on the edge of something.	He played only a peripheral role in the development of the project.
+C1	instigate	verb	social_advanced	инициировать	To cause an event or process to begin.	She instigated the campaign to improve conditions in the factory.
+C1	dismantle	verb	social_advanced	демонтировать/разрушать	To take apart or put an end to a system.	The new government promised to dismantle the oppressive apparatus.
+C1	bolster	verb	social_advanced	укреплять	To support or strengthen something.	New investment helped to bolster the company's financial position.
+C1	curtail	verb	social_advanced	ограничивать/сокращать	To reduce or limit something.	Civil liberties were curtailed under the emergency laws.
+C1	agitate	verb	social_advanced	агитировать/волновать	To campaign publicly for political or social change.	Workers agitated for better pay and working conditions over many years.
+C1	radicalise	verb	social_advanced	радикализировать	To cause someone to adopt more extreme political or religious views.	Online content has been used to radicalise vulnerable young people.
+C1	entrench	verb	social_advanced	укоренять/закреплять	To firmly establish a belief, habit, or system so it is hard to change.	The policy entrenched existing inequalities rather than reducing them.
+C1	perpetuate	verb	social_advanced	увековечивать/продолжать	To cause something to continue indefinitely.	The media can perpetuate harmful stereotypes if it is not careful.
+C1	infringe	verb	social_advanced	нарушать (права)	To break a rule or violate someone's rights.	The new law was seen as infringing on citizens' privacy rights.
+C1	coerce	verb	social_advanced	принуждать	To make someone do something using force or threats.	He was coerced into signing the document under duress.
+C1	rectify	verb	social_advanced	исправлять	To put something right.	The company took immediate steps to rectify the error.
+C1	illuminate	verb	social_advanced	освещать (тему)	To make something clearer and easier to understand.	The documentary illuminated a side of history rarely taught in schools.
+C1	allude	verb	social_advanced	намекать	To refer to something indirectly.	She alluded to difficulties at home without revealing full details.
+C1	epitomise	verb	social_advanced	олицетворять	To be a perfect example of a quality or type.	He epitomised the qualities of leadership: calm, decisive and fair.
+C1	deviate	verb	social_advanced	отклоняться	To depart from an expected or accepted standard.	She was careful not to deviate from the agreed procedure.
+C1	vilify	verb	social_advanced	клеветать/чернить	To speak or write about someone in a very critical or unpleasant way.	He was vilified in the press after the scandal became public.
+C1	antagonise	verb	social_advanced	раздражать/настраивать против	To cause someone to feel hostile or angry.	He had a habit of antagonising his colleagues with unnecessary criticism.
+C1	underscore	verb	social_advanced	подчёркивать	To emphasise the importance of something.	The results underscore the need for urgent reform of the system.
+C1	impartial	adjective	arts_c1	беспристрастный	Treating all sides equally; not biased.	The judge was asked to give an impartial assessment of both works.
+C1	immersive	adjective	arts_c1	иммерсивный	Creating a deep sense of involvement in a piece of art or media.	The immersive theatre experience placed the audience inside the story.
+C1	lyrical	adjective	arts_c1	лиричный	Having an expressive, musical quality; showing deep personal feeling.	The painting was lyrical in quality, conveying a deep sense of longing.
+C1	cathartic	adjective	arts_c1	очищающий/катарсический	Providing psychological relief through art or drama.	Watching the tragedy was cathartic; she cried and felt much better afterwards.
+C1	symbolic	adjective	arts_c1	символический	Relating to or using symbols to represent ideas.	The white dove is a symbolic image of peace.
+C1	allegorical	adjective	arts_c1	аллегорический	Expressing ideas through symbolic characters and events.	The allegorical poem uses a journey to represent the struggles of life.
+C1	haunting	adjective	arts_c1	преследующий/незабываемый	Evoking a strong feeling of sadness or beauty that stays in the mind.	The haunting melody stayed with her for days after the concert.
+C1	compelling	adjective	arts_c1	захватывающий	Very interesting or convincing.	The documentary was so compelling that she watched it twice in one day.
+C1	subversive	adjective	arts_c1	подрывной	Intended to weaken or overthrow an established system.	The artist's work was seen as subversive by the ruling authorities.
+C1	tragicomic	adjective	arts_c1	трагикомический	Combining elements of both tragedy and comedy.	The film has a tragicomic tone that leaves viewers laughing and moved at the same time.
+C1	render	verb	arts_c1	воспроизводить/передавать	To perform or represent something in a particular way.	The painter rendered the light beautifully in the landscape scene.
+C1	captivate	verb	arts_c1	пленять/захватывать	To attract and hold the interest and attention of someone completely.	The performance captivated the audience from the very first scene.
+C1	vindicate	verb	arts_c1	оправдывать/реабилитировать	To prove someone or something to be right or justified.	The critical reception of the novel vindicated her decision to publish it.
+C1	trivial	adjective	logic_c1	тривиальный/незначительный	Of little importance; not serious.	The disagreement was over a trivial matter that could easily have been resolved.
+C1	tenuous	adjective	logic_c1	шаткий/хрупкий	Weak; having little substance or validity.	The connection between the two events was tenuous at best.
+C1	circular	adjective	logic_c1	порочный (об аргументации)	Using the conclusion as part of the reasoning.	His argument was circular — he simply restated his assumption.
+C1	fallacious	adjective	logic_c1	ошибочный/ложный	Based on incorrect reasoning; misleading.	The conclusion was based on a fallacious assumption.
+C1	viable	adjective	logic_c1	жизнеспособный	Capable of working or being done successfully.	The committee decided that the proposal was financially viable.
+C1	inconclusive	adjective	logic_c1	неубедительный/неопределённый	Not leading to a clear conclusion.	The evidence was inconclusive and the case was dropped.
+C1	deductive	adjective	logic_c1	дедуктивный	Using facts to reach a logical conclusion.	She used deductive reasoning to solve the problem step by step.
+C1	inductive	adjective	logic_c1	индуктивный	Reaching a general principle from specific examples.	Inductive reasoning moves from particular observations to general conclusions.
+C1	substantiate	verb	logic_c1	подтверждать фактами	To provide evidence to support a claim.	He could not substantiate his claims with any documented evidence.
+C1	negate	verb	logic_c1	отрицать/аннулировать	To make something ineffective or void.	One major weakness can negate all the strengths in an argument.
+C1	oversimplify	verb	logic_c1	упрощать	To make something seem simpler than it really is.	The journalist was accused of oversimplifying a complex issue.
+C1	extrapolate	verb	logic_c1	экстраполировать	To extend known data to estimate beyond the known range.	From the trend, scientists extrapolated that temperatures would rise further.
+C1	discern	verb	logic_c1	различать/разглядеть	To recognise or see something with effort.	It was hard to discern any clear pattern in the data.
+C1	corroborate	verb	logic_c1	подтверждать (свидетельствами)	To provide evidence to support a statement or theory.	A second witness came forward to corroborate her account.
+C1	invalidate	verb	logic_c1	лишать силы	To make something no longer valid or effective.	The new data completely invalidated the original findings.
+C1	juxtapose	verb	logic_c1	сопоставлять	To place two things close together to highlight their differences.	The essay juxtaposed two contrasting theories of justice.
+
+C1	posit	verb	academic_discourse	постулировать	To suggest or assume that something is true.	The paper posits a link between diet and cognitive performance.
+C1	contingent	adjective	conditions	зависящий от обстоятельств	Depending on something else in order to happen.	The funding was contingent on the project meeting specific targets.
+C1	provisional	adjective	conditions	временный	Arranged for the present but likely to change.	The provisional agreement was signed pending final approval.
+C1	prerequisite	noun	conditions	предпосылка	Something that must exist or be done before something else can happen.	A degree is a prerequisite for most professional positions.
+C1	subject to	phrase	conditions	при условии	Depending on a condition being met first.	The deal was subject to approval by the board of directors.
+C1	trajectory	noun	patterns	траектория	The path or direction along which something develops.	The company's growth trajectory has been consistently upward.
+C1	cyclical	adjective	patterns	циклический	Happening in repeated cycles or patterns.	The economy goes through cyclical periods of growth and recession.
+C1	converge	verb	patterns	сходиться	To come together from different directions to meet at a point.	Several major roads converge at the centre of the city.
+C1	diverge	verb	patterns	расходиться	To go in different directions from the same starting point.	Their opinions began to diverge as the discussion continued.
+C1	prudent	adjective	personal_advanced	благоразумный	Careful and sensible in avoiding risks and making good decisions.	It would be prudent to save some money before making that investment.
+C1	equanimity	noun	personal_advanced	душевное спокойствие	A calm and composed mental state in difficult situations.	She faced the setback with remarkable equanimity.
+C1	arbitrage	noun	business_advanced	арбитраж	The practice of profiting from differences in prices in different markets.	Currency arbitrage is common in international financial trading.
+C1	divestment	noun	business_advanced	дивестиция	The sale of assets or subsidiary companies.	The company announced a major divestment to focus on its core business.
+C1	fiduciary	adjective	business_advanced	фидуциарный	Relating to a trust or the responsibility to act in someone's best interest.	Directors have a fiduciary duty to act in shareholders' interests.
+C1	ellipsis	noun	language_advanced	эллипсис	The omission of words from speech or writing that can be understood from context.	The use of ellipsis makes the sentence more concise without losing meaning.
+C1	pragmatics	noun	language_advanced	прагматика	The study of how language is used in social contexts.	Pragmatics explains why the same words can mean different things in different situations.
+C1	avant-garde	adjective	arts_c1	авангардный	New and experimental in style, especially in art and culture.	The avant-garde film divided critics with its unconventional structure.
+C1	motif	noun	arts_c1	мотив	A repeated element or theme in art, literature, or music.	The motif of water runs throughout the composer's later works.
+C1	iterate	verb	process	повторять	To repeat a process, making improvements each time.	The design team continued to iterate on the prototype until it was perfect.
+C1	epiphany	noun	experiences	откровение	A sudden, clear understanding of something important.	Reading that book was an epiphany that changed how she saw the world.
+C1	elicit	verb	academic_discourse	извлекать	to draw out a response or information from someone	Good questions elicit thoughtful answers.
+C1	appraise	verb	process_c1	оценивать	to assess the value or quality of something	The manager regularly appraises staff performance.
+C1	liaise	verb	process_c1	поддерживать связь	to communicate and work together with someone	You will need to liaise with the other departments.
+C1	proactive	adjective	process_c1	проактивный	taking action in advance to deal with problems	A proactive approach prevents many issues.
+C1	contingency	noun	process_c1	непредвиденное обстоятельство	a plan for a possible future event	We need a contingency plan if this fails.
+C1	feasibility	noun	process_c1	осуществимость	the quality of being likely to succeed or be done	We need to assess the feasibility of the project.
+C1	workflow	noun	organisation	рабочий процесс	the sequence of processes through which work passes	We need to improve our team's workflow.
+C1	directive	noun	organisation	директива	an official instruction issued by an authority	The manager issued a directive on remote working.
+C1	devolution	noun	organisation	передача полномочий	the transfer of power to a lower level of government	Devolution gave more control to regional authorities.
+C1	empiricism	noun	science	эмпиризм	the theory that all knowledge comes from experience	Empiricism underpins the scientific method.
+C1	taxonomy	noun	science	таксономия	the branch of science concerned with classification	Taxonomy helps organise living things into groups.
+C1	microbiology	noun	science	микробиология	the study of microorganisms such as bacteria and viruses	Advances in microbiology have improved medicine.
+C1	colonialism	noun	global_issues	колониализм	the policy of acquiring control over another country	Colonialism shaped the modern world map.
+C1	proxy war	noun	global_issues	война по доверенности	a conflict in which major powers support opposing sides	The region became a theatre for a proxy war.
+C1	diaspora	noun	global_issues	диаспора	people who have spread from their homeland	The Irish diaspora is found across the world.
+C1	equitable	adjective	personal_advanced	справедливый	fair and treating everyone in the same way	An equitable solution was found for both parties.
+C1	judicious	adjective	personal_advanced	благоразумный	having or showing good judgement and common sense	She made a judicious choice under pressure.
+C1	destabilise	verb	social_advanced	дестабилизировать	to make a system or country unstable	The scandal threatened to destabilise the government.
+C1	disaffected	adjective	social_advanced	недовольный	dissatisfied and no longer loyal or supportive	Disaffected voters stayed home on election day.
+C1	adjudicate	verb	law_politics	выносить решение	to make an official decision about a dispute	A panel of judges will adjudicate the competition.
+C1	recalibrate	verb	change	перенастроить	to adjust something carefully to match a new situation	The company had to recalibrate its strategy.
+C1	diction	noun	language_advanced	дикция	the style of enunciation or choice of words in speech	Clear diction is essential for public speaking.
+C1	logistics	noun	process	логистика	the detailed organisation of a complex operation	Good logistics are essential for the event to succeed.
+C1	oscillate	verb	patterns	колебаться	to move or change repeatedly between two points or states	Public opinion oscillates between support and opposition.
+C1	interplay	noun	arts_c1	взаимодействие	the way in which two or more things affect each other	The interplay of light and shadow creates depth.
+C1	aggravate	verb	conditions	усугублять	to make a bad situation worse	Cold weather aggravates joint pain.
+C1	crystallise	verb	experiences	выкристаллизовать	to make an idea or feeling clear and definite	The journey helped crystallise her thoughts.
+C1	elucidate	verb	academic_discourse	разъяснять	to make something clear and easy to understand	Can you elucidate your argument further?
+C1	delineate	verb	academic_discourse	очерчивать	to describe or explain something precisely and clearly	The report delineates the key findings of the study.
+C1	expound	verb	academic_discourse	излагать	to explain and develop an idea in detail	He expounded his theory at the conference.
+C1	enumerate	verb	academic_discourse	перечислять	to mention a number of things one by one	She enumerated the reasons for her decision.
+C1	circumscribe	verb	academic_discourse	ограничивать	to restrict something within certain limits	The law circumscribes the power of the government.
+C1	delegation	noun	organisation	делегирование	the act of giving tasks or authority to someone else	Effective delegation is a key management skill.
+C1	induction	noun	organisation	вводный инструктаж	the process of introducing a new employee to their role	All new staff attend a two-day induction.
+C1	pilot	adjective	process_c1	пилотный	done as a test before being applied more widely	We ran a pilot scheme before the full launch.

@@ -1,0 +1,328 @@
+LEVEL	WORD	POS	SEMANTIC_GROUP	RUSSIAN_TRANSLATION	DEFINITION	EXAMPLE_SENTENCE
+A2	shop	noun	shopping	магазин	A building where goods are sold to customers.	She went to the shop on the corner to buy some bread.
+A2	price	noun	shopping	цена	The amount of money you pay to buy something.	The price of petrol has gone up again this month.
+A2	money	noun	shopping	деньги	Coins and notes used to buy things.	He saved his money for three months to buy the new phone.
+A2	pay	verb	shopping	платить	To give money in exchange for goods or services.	She paid for her groceries with a credit card.
+A2	sell	verb	shopping	продавать	To give something to someone in exchange for money.	He sells handmade jewellery at the weekend market.
+A2	cheap	adjective	shopping	дешёвый	Costing little money; not expensive.	The market sells cheap fruit and vegetables.
+A2	expensive	adjective	shopping	дорогой	Costing a lot of money.	The restaurant was too expensive so they went somewhere else.
+A2	cash	noun	shopping	наличные	Money in the form of coins and notes rather than cards.	He paid in cash because the card machine was broken.
+A2	receipt	noun	shopping	чек	A piece of paper showing what you bought and how much you paid.	Keep your receipt in case you need to return the item.
+A2	sale	noun	shopping	распродажа	A time when goods are sold at reduced prices.	She bought the coat in the January sale for half price.
+A2	bus	noun	transport	автобус	A large road vehicle that carries passengers on a fixed route.	She takes the bus to work because parking is difficult.
+A2	train	noun	transport	поезд	A vehicle that travels on rails carrying passengers or goods.	The train to London departs at nine fifteen.
+A2	car	noun	transport	автомобиль	A motor vehicle with four wheels used to transport people.	He bought a second-hand car when he passed his driving test.
+A2	taxi	noun	transport	такси	A car with a driver that you pay to take you somewhere.	She called a taxi to take her to the airport.
+A2	airport	noun	transport	аэропорт	A place where aircraft take off and land, with buildings for passengers.	They arrived at the airport two hours before their flight.
+A2	ticket	noun	transport	билет	A piece of paper or card that shows you have paid to travel or enter somewhere.	He bought a return ticket to Edinburgh for the weekend.
+A2	station	noun	transport	вокзал	A place where buses or trains stop to let people get on and off.	She waited at the station for the next train to arrive.
+A2	platform	noun	transport	платформа	The long flat area beside a railway track where passengers stand.	The train to Manchester leaves from platform four.
+A2	drive	verb	transport	водить (машину)	To operate and control a vehicle.	He drove for three hours before stopping for a break.
+A2	fly	verb	transport	лететь	To travel through the air in an aircraft.	She flew to Paris for a long weekend.
+A2	sunny	adjective	weather	солнечный	Bright with light from the sun.	It was a sunny day so they had lunch in the garden.
+A2	cloudy	adjective	weather	облачный	Having many clouds in the sky.	It was cloudy all day but it never actually rained.
+A2	rainy	adjective	weather	дождливый	With a lot of rain falling.	They had to cancel the picnic because the day was rainy.
+A2	cold	adjective	weather	холодный	Having a low temperature; not warm.	It was so cold outside that she wore two coats.
+A2	hot	adjective	weather	жаркий	Having a high temperature; not cold.	It was too hot to play outside in the afternoon.
+A2	wind	noun	weather	ветер	Air that moves naturally across the earth's surface.	The strong wind blew the leaves off the trees.
+A2	snow	noun	weather	снег	Small soft white pieces of frozen water that fall from the sky.	The children built a snowman in the garden after the snow fell.
+A2	rain	noun	weather	дождь	Water that falls from clouds in small drops.	She forgot her umbrella and got soaked in the rain.
+A2	temperature	noun	weather	температура	How hot or cold something is, measured in degrees.	The temperature dropped below zero overnight.
+A2	weather	noun	weather	погода	The condition of the atmosphere at a particular time and place.	The weather forecast said it would be warm and dry all week.
+A2	subject	noun	school	учебный предмет	An area of knowledge that you study in school.	Her favourite subject at school is biology.
+A2	homework	noun	school	домашнее задание	School work that students do at home after school.	She spent two hours doing her maths homework.
+A2	exam	noun	school	экзамен	A formal test to measure your knowledge of a subject.	He stayed up late revising for his history exam.
+A2	lesson	noun	school	урок	A period of time in which a teacher teaches students.	The French lesson lasts forty-five minutes.
+A2	class	noun	school	класс	A group of students who are taught together.	There are thirty students in her class.
+A2	test	noun	school	контрольная	A set of questions to measure what you know.	She got full marks on the spelling test.
+A2	library	noun	school	библиотека	A place where books and other materials are kept for people to borrow or read.	He went to the library after school to study.
+A2	dictionary	noun	school	словарь	A book that lists words alphabetically with their meanings.	She looked up the word in her dictionary.
+A2	learn	verb	school	учиться	To gain knowledge or skill through study or experience.	She is learning to play the violin.
+A2	study	verb	school	изучать	To spend time reading and learning about a subject.	He studied for three hours before the exam.
+A2	football	noun	sport	футбол	A team sport played by kicking a round ball into a goal.	He plays football with his friends every Saturday.
+A2	swimming	noun	sport	плавание	The activity of moving through water using your arms and legs.	She goes swimming in the pool three times a week.
+A2	tennis	noun	sport	теннис	A sport played with rackets and a ball on a court.	They played tennis in the park on Sunday afternoon.
+A2	team	noun	sport	команда	A group of people who play a sport together.	Their team won the championship for the third year in a row.
+A2	match	noun	sport	матч	An organised game between two teams or players.	We watched the football match on television.
+A2	win	verb	sport	выигрывать	To come first in a competition or game.	She trained hard every day because she wanted to win the race.
+A2	lose	verb	sport	проигрывать	To not win a game or competition.	They lost the match by two goals.
+A2	play	verb	sport	играть	To take part in a game or sport.	He plays basketball twice a week after school.
+A2	score	noun	sport	счёт	The number of points that each side has in a game.	The score at half time was two goals to one.
+A2	practise	verb	sport	тренироваться	To do something regularly to improve your skill at it.	She practises the piano for an hour every afternoon.
+A2	job	noun	work	работа	The regular paid work that you do.	She got a new job at the local hospital.
+A2	work	noun	work	работа (место)	The place where you go to earn money.	He leaves for work at eight o'clock every morning.
+A2	office	noun	work	офис	A room or building where people work at desks.	She works in an office in the city centre.
+A2	meeting	noun	work	встреча/совещание	An occasion when people come together to discuss something.	He had three meetings before lunch on Tuesday.
+A2	boss	noun	work	начальник	The person who is in charge at your workplace.	She asked her boss for permission to leave early.
+A2	colleague	noun	work	коллега	A person you work with.	His colleagues organised a surprise party for his birthday.
+A2	salary	noun	work	зарплата	The money you receive regularly from your employer.	She got a pay rise and her salary increased by ten percent.
+A2	interview	noun	work	собеседование	A formal meeting where someone is asked questions for a job.	He prepared carefully for the job interview the next morning.
+A2	email	noun	technology	электронная почта	A message sent electronically over the internet.	She sent an email to confirm the appointment.
+A2	phone	noun	technology	телефон	A device used to make calls and send messages.	He forgot his phone at home and felt lost all day.
+A2	computer	noun	technology	компьютер	An electronic device that stores and processes data.	She spent the afternoon working on her computer.
+A2	internet	noun	technology	интернет	A global network connecting millions of computers.	He looked up the recipe on the internet.
+A2	website	noun	technology	веб-сайт	A collection of web pages belonging to a company or person.	She found the information on the company's website.
+A2	app	noun	technology	приложение	A piece of software designed for a mobile phone or tablet.	He downloaded an app to help him learn Spanish.
+A2	message	noun	technology	сообщение	A piece of written or spoken information sent to someone.	She left a message on his phone asking him to call back.
+A2	download	verb	technology	скачивать	To copy data from the internet to your device.	He downloaded the map before going somewhere without wifi.
+A2	search	verb	technology	искать	To look for something, especially on the internet.	She searched online for cheap flights to Rome.
+A2	health	noun	health	здоровье	The condition of your body or mind.	Regular exercise is very important for your health.
+A2	doctor	noun	health	врач	A person trained in medicine who treats sick people.	She went to the doctor because she had a bad cough.
+A2	hospital	noun	health	больница	A place where sick or injured people are cared for by doctors.	He was taken to hospital after the accident.
+A2	medicine	noun	health	лекарство	A substance taken to treat illness or relieve pain.	The doctor prescribed medicine to help with the infection.
+A2	ill	adjective	health	больной	Suffering from a disease or feeling unwell.	She felt ill after eating the seafood at the restaurant.
+A2	hurt	verb	health	болеть	To feel or cause pain.	His back hurt after sitting at the desk all day.
+A2	headache	noun	health	головная боль	A pain you feel inside your head.	She had a terrible headache and had to lie down.
+A2	tired	adjective	health	усталый	Feeling that you need to sleep or rest.	He was so tired after the long journey that he fell asleep immediately.
+A2	country	noun	geography	страна	A nation with its own government and territory.	She has visited fifteen countries in Europe.
+A2	city	noun	geography	город	A large and important town.	He moved to the city to find better work opportunities.
+A2	map	noun	geography	карта	A drawing of an area showing roads, cities, and natural features.	She studied the map before driving to the unfamiliar town.
+A2	north	noun	geography	север	The direction towards the North Pole.	The mountains are to the north of the city.
+A2	south	noun	geography	юг	The direction opposite to north.	They drove south along the coast.
+A2	east	noun	geography	восток	The direction where the sun rises.	The new hotel is on the east side of the river.
+A2	west	noun	geography	запад	The direction where the sun sets.	The sun sets in the west every evening.
+A2	beach	noun	geography	пляж	An area of sand or stones beside the sea.	They spent the afternoon relaxing on the beach.
+A2	river	noun	geography	река	A large natural flow of water moving towards the sea.	They swam in the river on the hot summer afternoon.
+A2	forest	noun	geography	лес	A large area of land covered with trees.	They went hiking through the forest for three hours.
+A2	mountain	noun	geography	гора	A very high area of land with steep sides.	She could see the mountain covered in snow from her window.
+A2	flat	noun	home	квартира	An apartment; a set of rooms on one floor of a building.	She rents a small flat in the city centre.
+A2	furniture	noun	home	мебель	The large movable objects in a room such as tables and chairs.	They bought new furniture for the living room.
+A2	cooker	noun	home	плита	A device used for cooking food, with an oven and rings on top.	The cooker stopped working so she ordered a pizza instead.
+A2	fridge	noun	home	холодильник	A large electrical appliance used to keep food cold.	She put the leftover soup in the fridge.
+A2	sofa	noun	home	диван	A long comfortable seat with a back and arms for two or more people.	He sat on the sofa and watched television all evening.
+A2	carpet	noun	home	ковёр	A thick covering of woven material that covers a floor.	The cat had walked mud across the white carpet.
+A2	lamp	noun	home	лампа	A device that produces light, especially one with a shade.	She turned on the bedside lamp to read her book.
+A2	shower	noun	home	душ	A device that sprays water over your body for washing.	He has a cold shower every morning to wake himself up.
+A2	clothes	noun	clothing	одежда	Things you wear on your body such as shirts and trousers.	She packed her clothes into a suitcase.
+A2	shirt	noun	clothing	рубашка	A piece of clothing for the upper body with a collar and buttons.	He ironed his shirt before the job interview.
+A2	dress	noun	clothing	платье	A piece of clothing that covers a woman's body and reaches her legs.	She wore a blue dress to the wedding.
+A2	jeans	noun	clothing	джинсы	Trousers made from denim material.	He wore jeans and a T-shirt to the casual party.
+A2	jacket	noun	clothing	куртка	A short coat that covers the upper part of the body.	She put on her jacket because it was cold outside.
+A2	boots	noun	clothing	сапоги	Shoes that cover your foot and part of your leg.	He put on his boots before going out in the snow.
+A2	hat	noun	clothing	шляпа/шапка	A covering for the head, worn as protection or decoration.	She wore a wide hat to protect her face from the sun.
+A2	uniform	noun	clothing	форма	A special set of clothes worn by members of an organisation.	All the students wear a blue and white uniform at that school.
+A2	hotel	noun	travel	гостиница	A building where you pay to stay in a room for one or more nights.	They stayed in a hotel near the beach during their holiday.
+A2	holiday	noun	travel	отпуск/каникулы	A period of time when you do not have to work or go to school.	She spent her holiday on a small island in Greece.
+A2	passport	noun	travel	паспорт	An official document that proves your identity when you travel abroad.	He checked that his passport was still valid before booking the flight.
+A2	luggage	noun	travel	багаж	Bags and cases that you take with you when you travel.	She could only take one piece of luggage on the budget flight.
+A2	visa	noun	travel	виза	An official permission stamped in your passport to enter a country.	He had to apply for a visa six weeks before his trip.
+A2	tour	noun	travel	экскурсия	An organised trip to visit places of interest.	They went on a guided tour of the old city.
+A2	guide	noun	travel	гид	A person who shows tourists around a place.	The guide explained the history of each building they visited.
+A2	adventure	noun	travel	приключение	An unusual, exciting, or sometimes dangerous experience.	Travelling alone was the greatest adventure of her life.
+A2	arrive	verb	travel	прибывать	To reach the place you have been travelling to.	The train arrived twenty minutes late.
+A2	book	verb	travel	бронировать	To arrange in advance to have a seat, room, or ticket.	She booked the hotel three months before her trip.
+A2	breakfast	noun	food	завтрак	The first meal of the day, eaten in the morning.	He always has a full breakfast before going to work.
+A2	lunch	noun	food	обед	A meal eaten in the middle of the day.	She had a sandwich for lunch at her desk.
+A2	dinner	noun	food	ужин	The main meal of the day, usually eaten in the evening.	The whole family sat together for dinner on Sunday.
+A2	restaurant	noun	food	ресторан	A place where meals are cooked and served to customers.	They celebrated her birthday at an Italian restaurant.
+A2	menu	noun	food	меню	A list of food and drink available in a restaurant.	He studied the menu for several minutes before ordering.
+A2	waiter	noun	food	официант	A person who serves food and drink at tables in a restaurant.	The waiter brought the wrong dish by mistake.
+A2	vegetable	noun	food	овощ	A plant or part of a plant used as food.	She eats a variety of vegetables with every meal.
+A2	fruit	noun	food	фрукт	The sweet or sour part of a plant that contains seeds and is eaten.	Fresh fruit is the best option for a healthy snack.
+A2	sugar	noun	food	сахар	A sweet substance used in food and drinks.	He takes two spoonfuls of sugar in his tea.
+A2	salt	noun	food	соль	A white substance used to add flavour to food.	She seasoned the soup with a pinch of salt.
+A2	supermarket	noun	shopping	супермаркет	A large shop selling food and other goods.	She does the weekly shopping at the supermarket every Saturday morning.
+A2	cashier	noun	shopping	кассир	A person whose job is to take payments from customers in a shop.	The cashier scanned each item and put it into a bag.
+A2	basket	noun	shopping	корзина (для покупок)	A container used to carry a small number of items in a shop.	She picked up a basket at the door and began selecting items.
+A2	size	noun	shopping	размер	How big or small something is, used especially for clothes.	She asked the assistant if the jacket was available in a larger size.
+A2	discount	noun	shopping	скидка	A reduction in the usual price of something.	He got a ten percent discount because he was a regular customer.
+A2	bargain	noun	shopping	выгодная покупка	Something bought for less than the usual price.	She found a real bargain at the market — a designer bag for very little money.
+A2	trolley	noun	shopping	тележка (для покупок)	A wheeled basket used to carry goods around a shop.	She filled the trolley with enough food for the whole week.
+A2	change	noun	shopping	сдача	The money given back when you pay more than the price.	The shopkeeper gave her the wrong change by mistake.
+A2	checkout	noun	shopping	касса (на выходе из магазина)	The place in a supermarket where you pay for your goods.	She joined the queue at the checkout with her full trolley.
+A2	spend	verb	shopping	тратить	To use money to pay for something.	She spent all her pocket money on a new book.
+A2	choose	verb	shopping	выбирать	To decide which one you want from several options.	It took her a long time to choose between the two dresses.
+A2	return	verb	shopping	возвращать	To take something back to the shop because it is faulty.	She returned the shoes because they were too small.
+A2	offer	noun	shopping	предложение/акция	A chance to buy something at a reduced price.	The shop had a special offer on coffee this week.
+A2	label	noun	shopping	этикетка	A small piece of paper or material on a product giving information.	She checked the label to see the washing instructions.
+A2	bicycle	noun	transport	велосипед	A vehicle with two wheels that you pedal to move forward.	She rides her bicycle to school every day.
+A2	motorbike	noun	transport	мотоцикл	A two-wheeled vehicle powered by an engine.	He passed his test and bought a second-hand motorbike.
+A2	ship	noun	transport	корабль	A large boat that carries people or goods across the sea.	They travelled to the island by ship rather than by plane.
+A2	boat	noun	transport	лодка	A small vessel for travelling on water.	He rowed the small boat across the lake in the afternoon.
+A2	tram	noun	transport	трамвай	A vehicle that runs on rails along a city street.	She took the tram to get to the museum in the city centre.
+A2	crossing	noun	transport	переход/переправа	A place where you can safely cross a road or body of water.	She waited at the pedestrian crossing for the green light.
+A2	stop	noun	transport	остановка	A place where a bus or tram picks up and drops off passengers.	She waited at the bus stop for nearly twenty minutes.
+A2	passenger	noun	transport	пассажир	A person who travels in a vehicle but does not drive it.	All passengers must fasten their seat belts during take-off.
+A2	road	noun	transport	дорога	A hard surface made for vehicles to drive on.	The road was covered in ice and very dangerous.
+A2	traffic	noun	transport	дорожное движение	Vehicles moving along a road.	There was so much traffic that she was an hour late.
+A2	park	verb	transport	парковаться	To stop a vehicle and leave it in a place for a period of time.	He parked his car in front of the supermarket.
+A2	cycle	verb	transport	ездить на велосипеде	To ride a bicycle.	She cycles to work every day to stay fit.
+A2	fog	noun	weather	туман	Very thick mist that makes it difficult to see.	The thick fog made driving dangerous on the motorway.
+A2	storm	noun	weather	гроза/буря	A period of very bad weather with heavy rain, wind, or thunder.	The storm knocked down several trees in the park.
+A2	ice	noun	weather	лёд	Frozen water that has become hard and solid.	She slipped on the ice outside the shop and fell.
+A2	frost	noun	weather	мороз/иней	Thin white ice that forms on surfaces when it is very cold.	There was frost on the windows when she woke up.
+A2	thunder	noun	weather	гром	The loud noise in the sky during a thunderstorm.	The thunder was so loud that it woke the children up.
+A2	lightning	noun	weather	молния	A flash of light in the sky during a storm.	They watched the lightning flash across the dark sky.
+A2	warm	adjective	weather	тёплый	At a comfortable temperature; not cold or very hot.	It was warm enough to sit outside and have lunch.
+A2	wet	adjective	weather	мокрый/дождливый	Covered with water; raining.	The wet weather ruined their plans for a picnic.
+A2	dry	adjective	weather	сухой	Without rain or moisture.	July was the driest month of the year.
+A2	windy	adjective	weather	ветреный	With strong wind blowing.	It was too windy to use an umbrella without it turning inside out.
+A2	chilly	adjective	weather	прохладный/холодноватый	Unpleasantly cold.	It was chilly outside so she put on a jacket before leaving.
+A2	forecast	noun	weather	прогноз погоды	A statement about what the weather will be like in future.	The forecast said it would rain all weekend.
+A2	grade	noun	school	оценка	A mark given for the quality of a student's work.	She worked hard and got an excellent grade on her report.
+A2	project	noun	school	проект	A piece of work that requires research and effort over a period of time.	They spent three weeks on a project about rainforests.
+A2	corridor	noun	school	коридор	A long narrow passage inside a building.	The pupils walked quietly along the corridor between lessons.
+A2	canteen	noun	school	школьная столовая	A place in a school where meals are served.	She ate lunch in the school canteen every day.
+A2	timetable	noun	school	расписание	A list showing when different lessons or activities happen.	She checked the timetable to find out when her next lesson was.
+A2	pencil	noun	school	карандаш	A thin stick of wood used for writing or drawing.	He wrote his answers in pencil so he could erase them.
+A2	notebook	noun	school	тетрадь	A small book with blank pages for writing in.	She filled the notebook with notes during the lecture.
+A2	assembly	noun	school	линейка/общешкольное собрание	A meeting of all pupils and teachers at the start of the school day.	The head teacher announced the news at morning assembly.
+A2	headteacher	noun	school	директор школы	The person in charge of a school.	The headteacher gave a speech at the end of term assembly.
+A2	pupil	noun	school	ученик	A child who attends a school.	Every pupil received a certificate at the end of the year.
+A2	playground	noun	school	школьный двор	An outdoor area where children play, especially at a school.	The children ran out to the playground when the bell rang.
+A2	gym	noun	school	спортивный зал	A large room with equipment for exercise and physical education.	They had PE lessons in the gym on rainy days.
+A2	break	noun	school	перемена	A short period of rest between lessons.	They played football in the yard during the morning break.
+A2	athletics	noun	sport	лёгкая атлетика	Sports such as running, jumping, and throwing.	She won three medals at the national school athletics championships.
+A2	cycling	noun	sport	езда на велосипеде	The activity of riding a bicycle for sport or exercise.	He took up cycling as a hobby after his doctor advised him to exercise.
+A2	basketball	noun	sport	баскетбол	A team sport in which players throw a ball through a high hoop.	She plays basketball three times a week at the sports centre.
+A2	volleyball	noun	sport	волейбол	A team sport in which players hit a ball over a net with their hands.	They played volleyball on the beach every evening.
+A2	skiing	noun	sport	катание на лыжах	The activity of moving over snow on skis.	She learned to ski on a holiday in the mountains.
+A2	running	noun	sport	бег	The activity of moving fast on foot as a sport.	He goes running in the park every morning before work.
+A2	fitness	noun	sport	физическая форма	The condition of being physically healthy and strong.	She works out regularly to maintain her fitness.
+A2	tournament	noun	sport	турнир	A series of games or contests in which many players compete.	He entered the table tennis tournament and reached the final.
+A2	captain	noun	sport	капитан	The leader of a sports team.	She was made captain of the hockey team this year.
+A2	referee	noun	sport	судья (спортивный)	An official who makes sure the rules of a sport are followed.	The referee blew the whistle and stopped the game.
+A2	trainer	noun	sport	тренер	A person who trains athletes or helps people exercise.	Her trainer designed a special fitness programme for her.
+A2	stadium	noun	sport	стадион	A large sports ground with seats for spectators.	Thousands of fans filled the stadium to watch the final.
+A2	championship	noun	sport	чемпионат	An important competition to decide who is the best.	Their team qualified for the national championship this year.
+A2	task	noun	work	задача/задание	A piece of work that needs to be done.	She completed all her tasks before leaving the office.
+A2	company	noun	work	компания	A business organisation that sells goods or services.	She works for a large international company.
+A2	manager	noun	work	менеджер/руководитель	A person who controls and organises part of a business.	The manager called a meeting to discuss the new project.
+A2	department	noun	work	отдел	A part of a large organisation that deals with a specific area.	She works in the marketing department of a large company.
+A2	training	noun	work	обучение/тренинг	The process of learning the skills needed for a job.	The new employees had a week of training before starting work.
+A2	hire	verb	work	нанимать	To employ someone for a job.	The restaurant hired three extra staff for the busy summer period.
+A2	shift	noun	work	смена	A period of work, usually a set number of hours.	She worked the night shift at the factory from ten until six.
+A2	part-time	adjective	work	неполный рабочий день	Working for only part of the normal working day or week.	She has a part-time job at the bakery on weekends.
+A2	full-time	adjective	work	полный рабочий день	Working the full number of hours every week.	After graduating, he got his first full-time job at a bank.
+A2	print	verb	technology	распечатывать	To produce a copy of a text or image on paper.	She printed the boarding pass before leaving for the airport.
+A2	type	verb	technology	набирать текст	To write something using a keyboard.	He types very fast and rarely makes any mistakes.
+A2	password	noun	technology	пароль	A secret word or phrase used to get access to a device or account.	She forgot her password and had to reset it.
+A2	screen	noun	technology	экран	The flat surface of a computer or phone that displays information.	He cracked the screen of his phone when he dropped it.
+A2	keyboard	noun	technology	клавиатура	A set of keys used to type on a computer.	She bought a new keyboard because the old one was broken.
+A2	battery	noun	technology	аккумулятор/батарея	A device that stores and provides electricity for a device.	Her phone battery died in the middle of the day.
+A2	camera	noun	technology	фотоаппарат/камера	A device used to take photographs or record videos.	He took his camera on holiday to photograph the landscape.
+A2	tablet	noun	technology	планшет	A flat portable computer with a touch screen.	The children use a tablet for learning games at home.
+A2	charge	verb	technology	заряжать	To put electricity into a device's battery.	She forgot to charge her phone and it switched off.
+A2	stream	verb	technology	смотреть онлайн/стримить	To watch or listen to media directly from the internet without downloading.	She streams films on her tablet every evening before bed.
+A2	wifi	noun	technology	вай-фай	A wireless connection to the internet.	She looked for a café with free wifi to send her emails.
+A2	virus	noun	technology	вирус (компьютерный)	A harmful programme that can damage a computer.	His computer stopped working because of a virus.
+A2	headache	noun	health	головная боль	A pain you feel inside your head.	She had a headache after staring at the screen all afternoon.
+A2	sore throat	noun	health	боль в горле	A painful or irritated feeling in the throat.	She had a sore throat and found it difficult to swallow.
+A2	toothache	noun	health	зубная боль	Pain in one or more teeth.	She went to the dentist because of a bad toothache.
+A2	dentist	noun	health	стоматолог	A person whose job is to look after people's teeth.	She visits the dentist twice a year for a check-up.
+A2	nurse	noun	health	медсестра/медбрат	A person trained to care for sick or injured people.	The nurse took his temperature and blood pressure.
+A2	ambulance	noun	health	скорая помощь	A vehicle used to carry ill or injured people to hospital.	She called an ambulance when her neighbour collapsed.
+A2	prescription	noun	health	рецепт (медицинский)	A written note from a doctor saying which medicine you need.	The doctor wrote a prescription and she took it to the pharmacy.
+A2	allergy	noun	health	аллергия	An illness caused by a reaction to something like food or pollen.	She has an allergy to peanuts and must avoid them.
+A2	fever	noun	health	жар	A high body temperature caused by illness.	The child had a high fever and the doctor was called.
+A2	cough	noun	health	кашель	A sudden sharp sound made when you force air out of your throat.	He had a bad cough that kept him awake at night.
+A2	pain	noun	health	боль	An unpleasant feeling in part of your body.	She felt a sharp pain in her knee after the fall.
+A2	island	noun	geography	остров	A piece of land completely surrounded by water.	They took a boat to the small island just off the coast.
+A2	desert	noun	geography	пустыня	A large dry area of land with little rain and few plants.	The camel walked slowly across the hot desert sand.
+A2	lake	noun	geography	озеро	A large area of water surrounded by land.	They went swimming in the cool lake on a hot afternoon.
+A2	hill	noun	geography	холм	An area of land that is higher than the land around it.	The house stood on a hill with a view over the whole valley.
+A2	village	noun	geography	деревня	A small group of houses and other buildings in the countryside.	He grew up in a small village with only two hundred people.
+A2	capital	noun	geography	столица	The most important city in a country, usually where the government is.	Paris is the capital of France and its largest city.
+A2	border	noun	geography	граница	The line that marks the edge of a country or area.	They crossed the border into a new country.
+A2	coast	noun	geography	побережье	The land beside or close to the sea.	They drove along the coast and stopped to watch the waves.
+A2	valley	noun	geography	долина	A low area of land between hills or mountains.	The river ran through the green valley below.
+A2	ocean	noun	geography	океан	A very large area of salt water.	The ship sailed across the Pacific Ocean.
+A2	continent	noun	geography	континент	One of the seven main large areas of land on Earth.	She has travelled to every continent except Antarctica.
+A2	flat	adjective	geography	равнинный	Having no hills or slopes; level.	The land in the north of the country is very flat.
+A2	balcony	noun	home	балкон	A small platform outside a building where you can stand.	She sat on the balcony and watched the sun set.
+A2	garage	noun	home	гараж	A building or part of a building where you keep a car.	He parks his car in the garage every night.
+A2	cellar	noun	home	подвал	A room below the ground floor used for storage.	The old wine was kept in the cellar beneath the house.
+A2	heating	noun	home	отопление	A system that provides warmth in a building.	She turned on the heating because the house was very cold.
+A2	electricity	noun	home	электричество	The power that flows through wires to make devices work.	The electricity went off during the storm.
+A2	neighbour	noun	home	сосед	A person who lives next to or near you.	Her neighbour knocked on the door to return her umbrella.
+A2	rent	verb	home	снимать/арендовать	To pay money to use something that belongs to someone else.	He rents a small flat in the centre of the city.
+A2	move	verb	home	переезжать	To go to live in a different house.	They moved to a bigger house when the baby was born.
+A2	repair	verb	home	чинить/ремонтировать	To fix something that is broken or damaged.	He repaired the broken window before winter arrived.
+A2	tidy	adjective	home	аккуратный/убранный	Neat and arranged in an orderly way.	She keeps her bedroom very tidy and everything is in its place.
+A2	messy	adjective	home	беспорядочный	Not tidy; in a state of disorder.	His desk was always messy and he could never find anything.
+A2	comfortable	adjective	home	удобный	Giving physical ease and relaxation.	The sofa was so comfortable that she fell asleep on it.
+A2	cosy	adjective	home	уютный	Making you feel warm and relaxed.	The little room was cosy with a fire and soft cushions.
+A2	modern	adjective	home	современный	Relating to the present time; using new ideas and methods.	They live in a modern flat with a large open-plan kitchen.
+A2	jumper	noun	clothing	свитер	A warm piece of clothing that covers the top half of the body.	She put on a thick jumper because the room was cold.
+A2	coat	noun	clothing	пальто	A long warm piece of clothing worn outside over other clothes.	He put on his coat before going out in the cold wind.
+A2	skirt	noun	clothing	юбка	A piece of women's clothing that hangs down from the waist.	She wore a long skirt and a white blouse to the interview.
+A2	trousers	noun	clothing	брюки	A piece of clothing that covers the legs, worn from the waist down.	He wore dark trousers and a white shirt to the meeting.
+A2	shoes	noun	clothing	туфли	A pair of coverings for the feet, typically made of leather.	She bought a new pair of shoes to wear to the wedding.
+A2	socks	noun	clothing	носки	Coverings for the feet worn inside shoes.	He put on his warmest socks before going out in the snow.
+A2	scarf	noun	clothing	шарф	A long piece of fabric worn around the neck or head.	She wrapped the scarf around her neck against the cold.
+A2	gloves	noun	clothing	перчатки	Coverings for the hands with separate spaces for each finger.	He wore thick gloves to keep his hands warm in the frost.
+A2	pyjamas	noun	clothing	пижама	Loose clothes worn in bed.	She changed into her pyjamas as soon as she got home.
+A2	swimsuit	noun	clothing	купальник	A piece of clothing worn for swimming.	She packed her swimsuit for the holiday at the beach.
+A2	tie	noun	clothing	галстук	A long narrow piece of fabric worn around the neck under a collar.	He always wears a tie when he has an important meeting.
+A2	belt	noun	clothing	ремень	A strip of material worn around the waist.	He fastened his belt and checked his reflection in the mirror.
+A2	sunglasses	noun	clothing	солнечные очки	Glasses with dark lenses worn to protect the eyes from bright sunlight.	She put on her sunglasses as soon as she stepped outside.
+A2	ring	noun	clothing	кольцо	A small round piece of jewellery worn on a finger.	She wore a gold ring on her right hand.
+A2	resort	noun	travel	курорт	A place where many people go on holiday for rest or activities.	They spent two weeks at a beach resort in the south.
+A2	suitcase	noun	travel	чемодан	A large rectangular bag with a hard side used for carrying clothes when travelling.	She packed her suitcase the night before her flight.
+A2	flight	noun	travel	рейс/полёт	A journey made through the air in an aircraft.	Their flight was delayed by two hours because of the weather.
+A2	check-in	noun	travel	регистрация (в отеле/аэропорту)	The process of registering at a hotel or airport.	They arrived at the airport early to avoid queuing at check-in.
+A2	departure	noun	travel	отправление	The act of leaving a place to start a journey.	The departure was delayed by one hour due to a technical problem.
+A2	hostel	noun	travel	хостел	A cheap place to stay, especially for young travellers.	She stayed in a hostel to save money during her trip.
+A2	souvenir	noun	travel	сувенир	An object bought to remember a place you have visited.	She bought a small ceramic pot as a souvenir of her trip.
+A2	excursion	noun	travel	экскурсия	A short trip taken for pleasure, often as part of a holiday.	The class went on an excursion to the national museum.
+A2	boarding	noun	travel	посадка	The process of getting on a plane, ship, or bus.	Boarding for the flight begins thirty minutes before departure.
+A2	cancel	verb	travel	отменять	To decide that something planned will not happen.	They had to cancel their holiday because of her illness.
+A2	pack	verb	travel	упаковывать	To put things into a bag or case before travelling.	She packed her bag the evening before the early flight.
+A2	snack	noun	food	закуска/перекус	A small amount of food eaten between meals.	She had an apple as a snack between breakfast and lunch.
+A2	dessert	noun	food	десерт	A sweet food eaten at the end of a meal.	He ordered ice cream for dessert.
+A2	recipe	noun	food	рецепт	A set of instructions for preparing a particular dish.	She followed the recipe carefully and the cake turned out perfectly.
+A2	order	verb	food	заказывать	To ask for food or drink in a restaurant.	They ordered two pizzas and a salad to share.
+A2	cook	verb	food	готовить	To prepare food by heating it.	She cooked a big pot of soup for the whole family.
+A2	taste	verb	food	пробовать на вкус	To sense the flavour of food or drink.	She tasted the soup to check if it needed more salt.
+A2	hungry	adjective	food	голодный	Feeling a need to eat; experiencing hunger.	The children were hungry after playing outside all morning.
+A2	thirsty	adjective	food	жаждущий/хотящий пить	Feeling a need to drink.	He was very thirsty after running in the summer heat.
+A2	delicious	adjective	food	вкусный	Having a very pleasant taste or smell.	The cake she made for the party was absolutely delicious.
+A2	fresh	adjective	food	свежий	Recently made or picked; not old or preserved.	She always buys fresh bread from the bakery every morning.
+A2	sweet	adjective	food	сладкий	Having the pleasant taste of sugar.	The ripe strawberries were very sweet.
+A2	bitter	adjective	food	горький	Having a sharp, unpleasant taste.	Dark chocolate is bitter compared to milk chocolate.
+A2	sour	adjective	food	кислый	Having a sharp acid taste like lemon.	The yoghurt was sour because it had passed its expiry date.
+A2	spicy	adjective	food	острый (о пище)	Having a strong hot flavour from spices.	She loves spicy food but her brother prefers mild dishes.
+A2	boil	verb	food	варить/кипятить	To heat liquid until it reaches 100 degrees and produces steam.	She boiled the eggs for exactly four minutes.
+A2	fry	verb	food	жарить	To cook food in hot oil in a pan.	He fried some onions in a pan before adding the tomatoes.
+
+A2	pill	noun	health	таблетка	A small solid piece of medicine that you swallow.	She took a pill every morning with a glass of water.
+A2	motorcycle	noun	transport	мотоцикл	A two-wheeled vehicle with an engine.	He rode his motorcycle to work every day in summer.
+A2	staff	noun	work	персонал	the people who work for an organisation	The staff are very friendly here.
+A2	sign	verb	work	подписывать	to write your name on a document	Please sign the contract here.
+A2	rest	verb	health	отдыхать	to relax and stop doing active things	The doctor told me to rest for a week.
+A2	breathe	verb	health	дышать	to take air into your lungs and send it out	Breathe in slowly and relax.
+A2	fit	adjective	health	в хорошей форме	healthy and physically strong	She goes running every day to stay fit.
+A2	broken	adjective	health	сломанный	fractured or damaged, such as a bone	He has a broken arm from a fall.
+A2	trip	noun	travel	путешествие	a short journey made to a place and back	We went on a day trip to the coast.
+A2	overnight	adjective	travel	ночной	done during or lasting one night	We took an overnight train to the capital.
+A2	click	verb	technology	кликать	to press a button on a computer mouse	Click on the icon to open the program.
+A2	link	noun	technology	ссылка	a connection between two websites or documents	Click the link to visit the website.
+A2	share	verb	technology	делиться	to send content to others online	She shared the photo on social media.
+A2	upload	verb	technology	загружать	to move a file from your device to the internet	Please upload your assignment to the website.
+A2	season	noun	weather	сезон	one of the four periods of the year	Spring is my favourite season.
+A2	hail	noun	weather	град	small balls of ice that fall like rain	The hail damaged the car roof.
+A2	breeze	noun	weather	ветерок	a light and gentle wind	A cool breeze blew through the window.
+A2	town	noun	geography	город	a place with many buildings, smaller than a city	I grew up in a small town in the north.
+A2	region	noun	geography	регион	a large area of land with common features	The northern region of the country is very cold.
+A2	suburb	noun	geography	пригород	an area outside the centre of a large city	They moved to the suburbs to have a garden.
+A2	pocket	noun	clothing	карман	a small bag sewn into a piece of clothing	He put his keys in his jacket pocket.
+A2	material	noun	clothing	материал	the substance from which clothing is made	This shirt is made from a soft material.
+A2	fashion	noun	clothing	мода	the style of clothing popular at a particular time	She always follows the latest fashion.
+A2	ferry	noun	transport	паром	a boat that carries passengers across water	We took the ferry to the island.
+A2	lorry	noun	transport	грузовик	a large motor vehicle used for carrying heavy loads	A lorry blocked the road for an hour.
+A2	chalk	noun	school	мел	a white or coloured stick used for writing on a blackboard	The teacher wrote the word in chalk.
+A2	register	noun	school	журнал	a list of students who attend a class	The teacher called out the register.
+A2	boxing	noun	sport	бокс	a sport in which two people fight using their fists	He trained hard to become a boxing champion.
+A2	gymnastics	noun	sport	гимнастика	a sport involving physical exercises requiring balance and flexibility	She won a gold medal in gymnastics.
+A2	gift	noun	shopping	подарок	something you give to someone, usually on a special occasion	I need to buy a gift for her birthday.
+A2	employ	verb	work	нанимать	to pay someone to do a job for you	The company employs over two hundred people.
+A2	wages	noun	work	зарплата	money paid regularly to an employee for work done	His wages are paid every Friday.
+A2	duty	noun	work	обязанность	a task or piece of work someone is required to do	One of her duties is to answer the phone.
+A2	absence	noun	work	отсутствие	the state of being away from a place, especially work	His absence from the meeting was noted.
+A2	quit	verb	work	увольняться	to leave a job or stop doing something	She quit her job to start a business.
+A2	paperwork	noun	work	бумажная работа	documents and administrative work that needs to be completed	I spent the morning catching up on paperwork.
+A2	stay	noun	travel	пребывание	a period of time spent in a place	We had a two-night stay at a seaside hotel.
+A2	embark	verb	travel	садиться на борт	to get onto a ship or plane at the start of a journey	Passengers should embark at gate seven.
+A2	aboard	adverb	travel	на борту	on or onto a ship, plane, or other vehicle	Welcome aboard the overnight train to Paris.
+A2	ache	noun	health	боль	a continuous dull pain in part of your body	I have an ache in my lower back.
+A2	wound	noun	health	рана	an injury to the body, especially a cut or tear	The nurse cleaned and bandaged the wound.

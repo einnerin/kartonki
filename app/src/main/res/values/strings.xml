@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Kartonki</string>
+    <string name="home_subtitle">Изучай слова, собирай карточки</string>
+    <string name="home_pve_button">Изучать слова</string>
+    <string name="home_pvp_button">Сыграть матч (PvP)</string>
+    <string name="home_collection_button">Коллекция карточек</string>
+
+    <!-- Study set list -->
+    <string name="study_title">Изучать слова</string>
+    <string name="study_back">← Назад</string>
+
+    <!-- Word set detail -->
+    <string name="set_detail_progress">Изучено: %1$d / %2$d слов</string>
+    <string name="set_detail_start_button">Заниматься</string>
+
+    <!-- Study session -->
+    <string name="study_back_home">На главную</string>
+    <string name="study_new_word">Новое слово</string>
+    <string name="study_got_it">Понятно!</string>
+    <string name="study_progress">%1$d / %2$d</string>
+    <string name="study_q_translation">Выберите перевод:</string>
+    <string name="study_q_type_translation">Введите перевод:</string>
+    <string name="study_q_definition">Выберите определение:</string>
+    <string name="study_q_fill_blank">Выберите слово для пропуска:</string>
+    <string name="study_type_hint">Перевод…</string>
+    <string name="study_submit">Проверить</string>
+    <string name="study_continue">Продолжить</string>
+    <string name="study_correct">Правильно!</string>
+    <string name="study_incorrect">Неправильно</string>
+    <string name="study_correct_answer">Правильный ответ: %1$s</string>
+    <string name="study_session_complete">Сессия завершена!</string>
+    <string name="study_correct_label">Правильно</string>
+    <string name="study_incorrect_label">Ошибок</string>
+    <string name="study_new_session">Новая сессия</string>
+    <string name="study_no_words">Нет слов для изучения.</string>
+
+    <!-- Collection -->
+    <string name="collection_title">Коллекция</string>
+    <string name="collection_count">%1$d карт</string>
+    <string name="collection_empty">Коллекция пуста</string>
+    <string name="collection_build_deck">Строить колоду</string>
+    <string name="filter_all">Все</string>
+
+    <!-- PvP -->
+    <string name="pvp_deck_select_title">PvP — Выбор колод</string>
+    <string name="pvp_player1_label">Игрок 1</string>
+    <string name="pvp_player2_label">Игрок 2</string>
+    <string name="pvp_name_hint">Имя игрока</string>
+    <string name="pvp_deck_hint">Выберите колоду</string>
+    <string name="pvp_start_game">Начать игру</string>
+    <string name="pvp_level_mismatch">Выберите колоды одинакового уровня</string>
+    <string name="pvp_no_decks">Создайте хотя бы одну колоду перед игрой</string>
+
+    <!-- My Decks -->
+    <string name="my_decks_title">Мои колоды</string>
+    <string name="my_decks_empty">Нет колод — создайте первую!</string>
+    <string name="my_decks_create">Создать колоду</string>
+    <string name="my_decks_edit">Редактировать</string>
+    <string name="my_decks_delete">Удалить</string>
+    <string name="my_decks_collection_link">Коллекция</string>
+    <string name="my_decks_create_dialog_title">Новая колода</string>
+    <string name="my_decks_create_dialog_hint">Название колоды</string>
+    <string name="my_decks_create_dialog_confirm">Создать</string>
+    <string name="my_decks_create_dialog_cancel">Отмена</string>
+    <string name="my_decks_create_dialog_level">Уровень колоды:</string>
+
+    <!-- Deck builder -->
+    <string name="deck_builder_title">Конструктор колоды</string>
+    <string name="deck_builder_size">%1$d / %2$d карт</string>
+    <string name="deck_tab_in_deck">В колоде (%1$d)</string>
+    <string name="deck_tab_available">Доступно (%1$d)</string>
+    <string name="deck_empty_deck">Колода пуста — добавьте карты</string>
+    <string name="deck_empty_available">Все карты уже в колоде</string>
+</resources>
