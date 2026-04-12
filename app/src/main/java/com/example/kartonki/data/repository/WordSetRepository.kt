@@ -38,16 +38,13 @@ class WordSetRepository @Inject constructor(
     }
 
     private suspend fun patchEnglishNativeContent() {
-        val alreadyDone = wordDao.countWordsWithNativeContent("en-ru")
-        if (alreadyDone >= SeedDataEnglishNative.ENTRY_COUNT) return
-        SeedDataEnglishNative.data.forEach { (original, content) ->
-            wordDao.updateNativeContent(
-                original = original,
-                langPair = "en-ru",
-                defNative = content.first,
-                exNative  = content.second,
-            )
-        }
+        // Done when every English word in the DB has native content filled in.
+        val total = wordDao.countWordsByLanguage("en-ru")
+        if (total == 0) return                                          // not seeded yet
+        val done  = wordDao.countWordsWithNativeContent("en-ru")
+        if (done == total) return                                       // all words already patched
+        // Run all 2000+ UPDATEs inside one SQLite transaction — ~100× faster than separate transactions.
+        wordDao.patchNativeContent("en-ru", SeedDataEnglishNative.data)
     }
 
     suspend fun getSetsByLanguage(languagePair: String): List<WordSetEntity> =

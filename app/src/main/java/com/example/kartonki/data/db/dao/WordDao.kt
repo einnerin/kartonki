@@ -59,4 +59,15 @@ interface WordDao {
 
     @Query("SELECT COUNT(*) FROM words WHERE languagePair = :langPair AND definitionNative IS NOT NULL")
     suspend fun countWordsWithNativeContent(langPair: String): Int
+
+    @Query("SELECT COUNT(*) FROM words WHERE languagePair = :langPair")
+    suspend fun countWordsByLanguage(langPair: String): Int
+
+    /** Applies all native-content updates inside a single SQLite transaction. */
+    @androidx.room.Transaction
+    suspend fun patchNativeContent(langPair: String, data: Map<String, Pair<String, String>>) {
+        data.forEach { (original, content) ->
+            updateNativeContent(original, langPair, content.first, content.second)
+        }
+    }
 }
