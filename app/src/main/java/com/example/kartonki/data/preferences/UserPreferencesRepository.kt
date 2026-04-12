@@ -26,6 +26,7 @@ class UserPreferencesRepository @Inject constructor(
         const val ACTIVITY_COUNT           = "activity_count"
         const val FREE_PACK_COUNT          = "free_pack_count"
         const val PVP_MULTIPLIER_HINT_SEEN = "pvp_multiplier_hint_seen"
+        const val CONTEXT_QUIZ_MODE       = "context_quiz_mode"   // "foreign" | "native" | "both"
     }
 
     /** Emits on every SharedPreferences change. */
@@ -60,4 +61,7 @@ class UserPreferencesRepository @Inject constructor(
 
     fun getPvpMultiplierHintSeen(): Boolean = prefs.getBoolean(Keys.PVP_MULTIPLIER_HINT_SEEN, false)
     fun setPvpMultiplierHintSeen()          = prefs.edit().putBoolean(Keys.PVP_MULTIPLIER_HINT_SEEN, true).apply()
+
+    val contextQuizMode: Flow<String> = prefsFlow().map { it.getString(Keys.CONTEXT_QUIZ_MODE, "both") ?: "both" }
+    fun setContextQuizMode(mode: String) = prefs.edit().putString(Keys.CONTEXT_QUIZ_MODE, mode).apply()
 }

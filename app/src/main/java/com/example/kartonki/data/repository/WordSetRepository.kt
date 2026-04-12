@@ -45,6 +45,8 @@ class WordSetRepository @Inject constructor(
                 pos = entity.pos,
                 semanticGroup = entity.semanticGroup,
                 transliteration = entity.transliteration,
+                definitionNative = entity.definitionNative,
+                exampleNative = entity.exampleNative,
             )
         }
 

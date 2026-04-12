@@ -181,10 +181,12 @@ private fun QuizContent(
         verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
         val label = when (step.type) {
-            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION -> stringResource(R.string.study_q_translation)
-            StudyQuizType.TYPE_TRANSLATION -> stringResource(R.string.study_q_type_translation)
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION -> stringResource(R.string.study_q_definition)
-            StudyQuizType.FILL_IN_BLANK -> stringResource(R.string.study_q_fill_blank)
+            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION        -> stringResource(R.string.study_q_translation)
+            StudyQuizType.TYPE_TRANSLATION                   -> stringResource(R.string.study_q_type_translation)
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION         -> stringResource(R.string.study_q_definition)
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE  -> stringResource(R.string.study_q_definition_native)
+            StudyQuizType.FILL_IN_BLANK                      -> stringResource(R.string.study_q_fill_blank)
+            StudyQuizType.FILL_IN_BLANK_NATIVE               -> stringResource(R.string.study_q_fill_blank_native)
         }
         Text(
             text = label,
@@ -192,9 +194,12 @@ private fun QuizContent(
             color = MaterialTheme.colorScheme.primary,
             fontWeight = FontWeight.SemiBold,
         )
+        // Question text is RTL only when it shows the raw Hebrew word (not a native-language sentence)
         val isHebrewWord = step.word.languagePair.startsWith("he") &&
             step.type != StudyQuizType.MULTIPLE_CHOICE_DEFINITION &&
-            step.type != StudyQuizType.FILL_IN_BLANK
+            step.type != StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE &&
+            step.type != StudyQuizType.FILL_IN_BLANK &&
+            step.type != StudyQuizType.FILL_IN_BLANK_NATIVE
         Surface(
             color = MaterialTheme.colorScheme.surfaceVariant,
             shape = MaterialTheme.shapes.medium,

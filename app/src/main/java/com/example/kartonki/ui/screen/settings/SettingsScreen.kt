@@ -252,6 +252,56 @@ fun SettingsScreen(
                     modifier = Modifier.clickable { viewModel.onShowStudyLanguagePicker() },
                 )
             }
+            SettingsRow(label = "Задания с контекстом") {
+                Text(
+                    CONTEXT_QUIZ_MODES[state.contextQuizMode] ?: state.contextQuizMode,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowContextQuizModePicker() },
+                )
+            }
+
+            if (state.showContextQuizModePicker) {
+                AlertDialog(
+                    onDismissRequest = viewModel::onDismissContextQuizModePicker,
+                    title = { Text("Задания с контекстом (PvE)") },
+                    text = {
+                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                            CONTEXT_QUIZ_MODES.entries.forEach { (mode, name) ->
+                                val isSelected = mode == state.contextQuizMode
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .clip(RoundedCornerShape(8.dp))
+                                        .background(
+                                            if (isSelected) MaterialTheme.colorScheme.primaryContainer
+                                            else MaterialTheme.colorScheme.surface
+                                        )
+                                        .clickable { viewModel.onContextQuizModeSelected(mode) }
+                                        .padding(horizontal = 12.dp, vertical = 12.dp),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically,
+                                ) {
+                                    Text(
+                                        name,
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                        color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                                                else MaterialTheme.colorScheme.onSurface,
+                                    )
+                                    if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
+                                }
+                            }
+                        }
+                    },
+                    confirmButton = {},
+                    dismissButton = {
+                        TextButton(onClick = viewModel::onDismissContextQuizModePicker) { Text("Отмена") }
+                    },
+                )
+            }
+
             SettingsRow(label = "Родной язык") {
                 Text(
                     NATIVE_LANGUAGES[state.nativeLanguage] ?: state.nativeLanguage,

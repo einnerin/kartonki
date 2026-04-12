@@ -33,16 +33,24 @@ val STUDY_LANGUAGES: LinkedHashMap<String, String> = linkedMapOf(
     "he-ru" to "Иврит 🇮🇱",
 )
 
+val CONTEXT_QUIZ_MODES: LinkedHashMap<String, String> = linkedMapOf(
+    "foreign" to "На изучаемом языке",
+    "native"  to "На родном языке",
+    "both"    to "Оба варианта",
+)
+
 data class SettingsUiState(
     val isDarkTheme: Boolean = true,
     val username: String = "Игрок",
     val avatarChoice: String = "🎮",
     val languagePair: String = "en-ru",
     val nativeLanguage: String = "ru",
+    val contextQuizMode: String = "both",
     val isEditingName: Boolean = false,
     val nameInput: String = "",
     val showLanguagePicker: Boolean = false,
     val showStudyLanguagePicker: Boolean = false,
+    val showContextQuizModePicker: Boolean = false,
 )
 
 val AVATAR_EMOJI_OPTIONS = listOf(
@@ -68,20 +76,24 @@ class SettingsViewModel @Inject constructor(
                 prefs.avatarChoice,
                 prefs.languagePair,
                 prefs.nativeLanguage,
+                prefs.contextQuizMode,
             ) { values ->
                 SettingsUiState(
-                    isDarkTheme    = values[0] as Boolean,
-                    username       = values[1] as String,
-                    avatarChoice   = values[2] as String,
-                    languagePair   = values[3] as String,
-                    nativeLanguage = values[4] as String,
+                    isDarkTheme      = values[0] as Boolean,
+                    username         = values[1] as String,
+                    avatarChoice     = values[2] as String,
+                    languagePair     = values[3] as String,
+                    nativeLanguage   = values[4] as String,
+                    contextQuizMode  = values[5] as String,
                 )
             }.collect { state ->
                 _uiState.update { current ->
                     state.copy(
-                        isEditingName      = current.isEditingName,
-                        nameInput          = current.nameInput,
-                        showLanguagePicker = current.showLanguagePicker,
+                        isEditingName             = current.isEditingName,
+                        nameInput                 = current.nameInput,
+                        showLanguagePicker        = current.showLanguagePicker,
+                        showStudyLanguagePicker   = current.showStudyLanguagePicker,
+                        showContextQuizModePicker = current.showContextQuizModePicker,
                     )
                 }
             }
@@ -116,6 +128,13 @@ class SettingsViewModel @Inject constructor(
     fun onStudyLanguageSelected(pair: String) = viewModelScope.launch {
         prefs.setLanguagePair(pair)
         _uiState.update { it.copy(showStudyLanguagePicker = false) }
+    }
+
+    fun onShowContextQuizModePicker() = _uiState.update { it.copy(showContextQuizModePicker = true) }
+    fun onDismissContextQuizModePicker() = _uiState.update { it.copy(showContextQuizModePicker = false) }
+    fun onContextQuizModeSelected(mode: String) {
+        prefs.setContextQuizMode(mode)
+        _uiState.update { it.copy(showContextQuizModePicker = false) }
     }
 
     fun onEmojiAvatarSelected(emoji: String) = viewModelScope.launch {

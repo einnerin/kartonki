@@ -4,6 +4,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.db.entity.ProgressEntity
+import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.AchievementRepository
 import com.example.kartonki.data.repository.PackRepository
 import com.example.kartonki.data.repository.ProgressRepository
@@ -16,6 +17,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -52,6 +54,7 @@ class StudySessionViewModel @Inject constructor(
     private val progressRepository: ProgressRepository,
     private val achievementRepository: AchievementRepository,
     private val packRepository: PackRepository,
+    private val prefs: UserPreferencesRepository,
 ) : ViewModel() {
 
     private val setId: Long = checkNotNull(savedStateHandle[Route.StudySession.ARG_SET_ID])
@@ -80,7 +83,8 @@ class StudySessionViewModel @Inject constructor(
                 _uiState.update { it.copy(isLoading = false, isEmpty = true) }
                 return@launch
             }
-            val steps = buildSteps(words)
+            val contextMode = prefs.contextQuizMode.first()
+            val steps = buildSteps(words, contextMode)
             _uiState.update {
                 it.copy(isLoading = false, isEmpty = false, steps = steps, currentStepIndex = 0)
             }
@@ -156,19 +160,30 @@ class StudySessionViewModel @Inject constructor(
         }
     }
 
-    private fun buildSteps(words: List<Word>): List<StudyStep> =
+    private fun buildSteps(words: List<Word>, contextMode: String): List<StudyStep> =
         words.shuffled().map { word ->
-            buildQuizStep(word, pickQuizType(word, words), words)
+            buildQuizStep(word, pickQuizType(word, words, contextMode), words)
         }
 
-    private fun pickQuizType(word: Word, allWords: List<Word>): StudyQuizType {
+    private fun pickQuizType(word: Word, allWords: List<Word>, contextMode: String): StudyQuizType {
         val available = mutableListOf(StudyQuizType.MULTIPLE_CHOICE_TRANSLATION)
-        if (word.definition != null && allWords.count { it.definition != null } >= 4) {
-            available.add(StudyQuizType.MULTIPLE_CHOICE_DEFINITION)
+
+        val useForeign = contextMode == "foreign" || contextMode == "both"
+        val useNative  = contextMode == "native"  || contextMode == "both"
+
+        if (useForeign) {
+            if (word.definition != null && allWords.count { it.definition != null } >= 4)
+                available.add(StudyQuizType.MULTIPLE_CHOICE_DEFINITION)
+            if (word.example != null && allWords.size >= 4)
+                available.add(StudyQuizType.FILL_IN_BLANK)
         }
-        if (word.example != null && allWords.size >= 4) {
-            available.add(StudyQuizType.FILL_IN_BLANK)
+        if (useNative) {
+            if (word.definitionNative != null && allWords.count { it.definitionNative != null } >= 4)
+                available.add(StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE)
+            if (word.exampleNative != null && allWords.size >= 4)
+                available.add(StudyQuizType.FILL_IN_BLANK_NATIVE)
         }
+
         return available.random()
     }
 
@@ -194,8 +209,27 @@ class StudySessionViewModel @Inject constructor(
                     correctAnswer = word.definition!!,
                 )
             }
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE -> {
+                val wrongs = others.filter { it.definitionNative != null }.take(3).map { it.definitionNative!! }
+                if (wrongs.size < 3) return typeInputStep(word)
+                StudyStep.Quiz(
+                    word = word, type = type, question = word.original,
+                    options = (wrongs + word.definitionNative!!).shuffled(),
+                    correctAnswer = word.definitionNative!!,
+                )
+            }
             StudyQuizType.FILL_IN_BLANK -> {
                 val sentence = word.example!!.replace(word.original, "_____", ignoreCase = true)
+                val wrongs = others.take(3).map { it.original }
+                if (wrongs.size < 3) return typeInputStep(word)
+                StudyStep.Quiz(
+                    word = word, type = type, question = sentence,
+                    options = (wrongs + word.original).shuffled(),
+                    correctAnswer = word.original,
+                )
+            }
+            StudyQuizType.FILL_IN_BLANK_NATIVE -> {
+                val sentence = word.exampleNative!!.replace(word.original, "_____", ignoreCase = true)
                 val wrongs = others.take(3).map { it.original }
                 if (wrongs.size < 3) return typeInputStep(word)
                 StudyStep.Quiz(

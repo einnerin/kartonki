@@ -4,8 +4,10 @@ data class Word(
     val id: Long = 0,
     val original: String,
     val translation: String,
-    val definition: String? = null,
-    val example: String? = null,
+    val definition: String? = null,          // definition in the foreign language
+    val definitionNative: String? = null,    // definition in the native language (Russian)
+    val example: String? = null,             // example sentence in the foreign language
+    val exampleNative: String? = null,       // example sentence in the native language (Russian)
     val rarity: Rarity,
     val languagePair: String = "en-ru",
     val pos: String? = null,

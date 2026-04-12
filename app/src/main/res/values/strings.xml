@@ -21,7 +21,9 @@
     <string name="study_q_translation">Выберите перевод:</string>
     <string name="study_q_type_translation">Введите перевод:</string>
     <string name="study_q_definition">Выберите определение:</string>
+    <string name="study_q_definition_native">Выберите определение:</string>
     <string name="study_q_fill_blank">Выберите слово для пропуска:</string>
+    <string name="study_q_fill_blank_native">Выберите слово для пропуска:</string>
     <string name="study_type_hint">Перевод…</string>
     <string name="study_submit">Проверить</string>
     <string name="study_continue">Продолжить</string>
