@@ -20,7 +20,7 @@ data class WordStatsUiState(
     val isLoading: Boolean = true,
     val words: List<WordStat> = emptyList(),
     val sortBy: WordStatSort = WordStatSort.MOST_ERRORS,
-    val rarityFilter: Rarity? = null,
+    val rarityFilter: Set<Rarity> = emptySet(),
     val problemWordCount: Int = 0,
 )
 
@@ -33,6 +33,8 @@ class WordStatsViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(WordStatsUiState())
     val uiState: StateFlow<WordStatsUiState> = _uiState.asStateFlow()
 
+    private var allWordStats: List<WordStat> = emptyList()
+
     init { load() }
 
     fun onSortChange(sort: WordStatSort) {
@@ -40,17 +42,29 @@ class WordStatsViewModel @Inject constructor(
         load()
     }
 
-    fun onRarityFilterChange(rarity: Rarity?) {
-        _uiState.update { it.copy(rarityFilter = rarity) }
-        load()
+    fun toggleRarityFilter(rarity: Rarity) {
+        _uiState.update {
+            val newFilter = if (rarity in it.rarityFilter) it.rarityFilter - rarity
+                            else it.rarityFilter + rarity
+            it.copy(rarityFilter = newFilter, words = applyFilter(newFilter))
+        }
     }
+
+    private fun applyFilter(filter: Set<Rarity>): List<WordStat> =
+        if (filter.isEmpty()) allWordStats else allWordStats.filter { it.rarity in filter }
 
     private fun load() = viewModelScope.launch {
         _uiState.update { it.copy(isLoading = true) }
         val state = _uiState.value
-        val words = statsRepository.getWordStats(state.sortBy, state.rarityFilter)
+        allWordStats = statsRepository.getWordStats(state.sortBy, null)
         val source = prefs.problemWordsSource.first()
         val problemCount = statsRepository.getProblemWordCount(source)
-        _uiState.update { it.copy(isLoading = false, words = words, problemWordCount = problemCount) }
+        _uiState.update {
+            it.copy(
+                isLoading = false,
+                words = applyFilter(it.rarityFilter),
+                problemWordCount = problemCount,
+            )
+        }
     }
 }

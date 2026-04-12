@@ -1,10 +1,11 @@
 package com.example.kartonki.ui.screen.deckbuilder
 
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -15,7 +16,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -54,7 +54,7 @@ import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.localizedName
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 fun DeckBuilderScreen(
     onNavigateBack: () -> Unit,
@@ -105,10 +105,6 @@ fun DeckBuilderScreen(
                 slots = uiState.raritySlots,
                 activeFilter = uiState.rarityFilter,
                 onSlotClick = { viewModel.toggleRarityFilter(it) },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .horizontalScroll(rememberScrollState())
-                    .padding(horizontal = 12.dp, vertical = 8.dp),
             )
             HorizontalDivider()
 
@@ -154,17 +150,23 @@ fun DeckBuilderScreen(
 }
 
 @Composable
+@OptIn(ExperimentalLayoutApi::class)
 private fun RaritySlotsRow(
     slots: List<RaritySlot>,
-    activeFilter: Rarity?,
+    activeFilter: Set<Rarity>,
     onSlotClick: (Rarity) -> Unit,
-    modifier: Modifier = Modifier,
 ) {
     val s = LocalAppStrings.current
-    Row(modifier = modifier, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+    FlowRow(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 12.dp, vertical = 8.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
         slots.forEach { slot ->
             val color = Color(slot.rarity.colorArgb)
-            val isActive = activeFilter == slot.rarity
+            val isActive = slot.rarity in activeFilter
             Surface(
                 color = if (isActive) color.copy(alpha = 0.5f)
                         else if (slot.isFull) color.copy(alpha = 0.3f)

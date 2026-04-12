@@ -1,9 +1,10 @@
 package com.example.kartonki.ui.screen.collection
 
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -13,7 +14,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExtendedFloatingActionButton
@@ -104,12 +104,8 @@ fun CollectionScreen(
             } else {
                 Column(modifier = Modifier.fillMaxSize()) {
                     RarityFilterRow(
-                        selected = uiState.rarityFilter,
-                        onSelect = { viewModel.setFilter(it) },
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .horizontalScroll(rememberScrollState())
-                            .padding(horizontal = 12.dp, vertical = 8.dp),
+                        activeFilters = uiState.rarityFilter,
+                        onToggle = { viewModel.toggleFilter(it) },
                     )
                     HorizontalDivider()
                     if (uiState.words.isEmpty()) {
@@ -133,27 +129,26 @@ fun CollectionScreen(
     }
 }
 
+@OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun RarityFilterRow(
-    selected: Rarity?,
-    onSelect: (Rarity?) -> Unit,
-    modifier: Modifier = Modifier,
+    activeFilters: Set<Rarity>,
+    onToggle: (Rarity) -> Unit,
 ) {
     val s = LocalAppStrings.current
-    Row(
-        modifier = modifier,
+    FlowRow(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(horizontal = 12.dp, vertical = 8.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp),
+        verticalArrangement = Arrangement.spacedBy(4.dp),
     ) {
-        FilterChip(
-            selected = selected == null,
-            onClick = { onSelect(null) },
-            label = { Text(s.filterAll) },
-        )
         Rarity.entries.forEach { rarity ->
             val color = Color(rarity.colorArgb)
+            val isActive = rarity in activeFilters
             FilterChip(
-                selected = selected == rarity,
-                onClick = { onSelect(rarity) },
+                selected = isActive,
+                onClick = { onToggle(rarity) },
                 label = { Text(rarity.localizedName(s)) },
                 colors = FilterChipDefaults.filterChipColors(
                     selectedContainerColor = color.copy(alpha = 0.2f),
@@ -161,7 +156,7 @@ private fun RarityFilterRow(
                 ),
                 border = FilterChipDefaults.filterChipBorder(
                     enabled = true,
-                    selected = selected == rarity,
+                    selected = isActive,
                     selectedBorderColor = color,
                 ),
             )

@@ -17,7 +17,7 @@ data class CollectionUiState(
     val isLoading: Boolean = true,
     val words: List<Word> = emptyList(),
     val totalCount: Int = 0,
-    val rarityFilter: Rarity? = null,
+    val rarityFilter: Set<Rarity> = emptySet(),
 )
 
 @HiltViewModel
@@ -28,25 +28,33 @@ class CollectionViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(CollectionUiState())
     val uiState: StateFlow<CollectionUiState> = _uiState.asStateFlow()
 
+    private var allWords: List<Word> = emptyList()
+
     init {
         load()
     }
 
-    fun setFilter(rarity: Rarity?) {
-        _uiState.update { it.copy(rarityFilter = rarity) }
-        load(rarity)
+    fun toggleFilter(rarity: Rarity) {
+        _uiState.update {
+            val newFilter = if (rarity in it.rarityFilter) it.rarityFilter - rarity
+                            else it.rarityFilter + rarity
+            it.copy(rarityFilter = newFilter, words = applyFilter(newFilter))
+        }
     }
 
-    fun refresh() = load(_uiState.value.rarityFilter)
+    fun refresh() = load()
 
-    private fun load(filter: Rarity? = null) {
+    private fun applyFilter(filter: Set<Rarity>): List<Word> =
+        if (filter.isEmpty()) allWords else allWords.filter { it.rarity in filter }
+
+    private fun load() {
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true) }
             collectionRepository.ensureStarterPack()
-            val words = collectionRepository.getOwnedWords(filter)
+            allWords = collectionRepository.getOwnedWords()
             val total = collectionRepository.getTotalCount()
             _uiState.update {
-                it.copy(isLoading = false, words = words, totalCount = total)
+                it.copy(isLoading = false, words = applyFilter(it.rarityFilter), totalCount = total)
             }
         }
     }

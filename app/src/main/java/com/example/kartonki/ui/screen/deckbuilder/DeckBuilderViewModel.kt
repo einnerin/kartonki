@@ -29,7 +29,7 @@ data class DeckBuilderUiState(
     val deckCards: List<Word> = emptyList(),
     val availableCards: List<Word> = emptyList(),
     val selectedTab: Int = 0,
-    val rarityFilter: Rarity? = null,
+    val rarityFilter: Set<Rarity> = emptySet(),
 ) {
     val totalCards: Int get() = deckCards.size
     val isFull: Boolean get() = totalCards >= DECK_MAX_SIZE
@@ -42,10 +42,10 @@ data class DeckBuilderUiState(
     }
 
     val filteredDeckCards: List<Word> get() =
-        if (rarityFilter == null) deckCards else deckCards.filter { it.rarity == rarityFilter }
+        if (rarityFilter.isEmpty()) deckCards else deckCards.filter { it.rarity in rarityFilter }
 
     val filteredAvailableCards: List<Word> get() =
-        if (rarityFilter == null) availableCards else availableCards.filter { it.rarity == rarityFilter }
+        if (rarityFilter.isEmpty()) availableCards else availableCards.filter { it.rarity in rarityFilter }
 
     fun canAdd(word: Word): Boolean {
         if (isFull) return false
@@ -79,7 +79,9 @@ class DeckBuilderViewModel @Inject constructor(
     fun selectTab(index: Int) = _uiState.update { it.copy(selectedTab = index) }
 
     fun toggleRarityFilter(rarity: Rarity) = _uiState.update {
-        it.copy(rarityFilter = if (it.rarityFilter == rarity) null else rarity)
+        val newFilter = if (rarity in it.rarityFilter) it.rarityFilter - rarity
+                        else it.rarityFilter + rarity
+        it.copy(rarityFilter = newFilter)
     }
 
     fun addCard(word: Word) {
