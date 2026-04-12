@@ -20,14 +20,6 @@ import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.localizedName
 
-/**
- * A row of rarity filter chips with multi-select support.
- * Always shows each rarity in its own color (active = filled, inactive = tinted).
- *
- * @param activeFilters currently selected rarities (empty = show all)
- * @param onToggle called when a chip is tapped
- * @param sublabelFor optional second line for each chip (e.g. "2/4" slot counts in DeckBuilder)
- */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun RarityFilterChips(
@@ -38,22 +30,25 @@ fun RarityFilterChips(
 ) {
     val s = LocalAppStrings.current
     FlowRow(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxWidth()
-            .padding(start = 12.dp, end = 12.dp, top = 6.dp, bottom = 6.dp),
+            .padding(horizontal = 12.dp, vertical = 6.dp)
+            .then(modifier),
         horizontalArrangement = Arrangement.spacedBy(6.dp),
-        verticalArrangement = Arrangement.Top,
-        itemVerticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
+        // 0.dp: второй ряд начинается вплотную под первым
+        verticalArrangement = Arrangement.spacedBy(0.dp),
     ) {
         Rarity.entries.forEach { rarity ->
             val color = Color(rarity.colorArgb)
             val isActive = rarity in activeFilters
+            // Нижний отступ 4dp на каждом чипе = визуальный зазор между рядами 4dp,
+            // но только когда ряды есть — без FlowRow-пробела поверх.
             Surface(
                 onClick = { onToggle(rarity) },
                 shape = RoundedCornerShape(20.dp),
                 color = if (isActive) color.copy(alpha = 0.85f) else color.copy(alpha = 0.15f),
                 border = BorderStroke(1.dp, if (isActive) color else color.copy(alpha = 0.4f)),
-                modifier = Modifier.padding(bottom = 3.dp),
+                modifier = Modifier,
             ) {
                 val sub = sublabelFor?.invoke(rarity)
                 if (sub != null) {
@@ -71,7 +66,7 @@ fun RarityFilterChips(
                         style = MaterialTheme.typography.labelSmall,
                         fontWeight = if (isActive) FontWeight.Bold else FontWeight.Normal,
                         color = if (isActive) Color.White else color,
-                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 3.dp),
+                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
                     )
                 }
             }
