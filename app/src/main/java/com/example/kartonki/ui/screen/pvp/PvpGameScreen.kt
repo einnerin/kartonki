@@ -44,19 +44,25 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.layout.boundsInWindow
+import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
@@ -64,7 +70,11 @@ import androidx.compose.ui.text.style.BaselineShift
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.text.withStyle
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.width
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.theme.BgCard
@@ -81,6 +91,7 @@ fun PvpGameScreen(
     viewModel: PvpGameViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
+    var multiplierRowBottomPx by remember { mutableIntStateOf(0) }
 
     if (state.isLoading) {
         Box(
@@ -92,26 +103,37 @@ fun PvpGameScreen(
         return
     }
 
-    when (val phase = state.phase) {
-        is PvpPhase.HandSelection -> HandSelectionScreen(
-            state = state,
-            hand = phase.hand,
-            onCardSelected = { viewModel.onCardSelected(it) },
-            onSurrender = { viewModel.onSurrender(state.currentPlayerIndex) },
-        )
-        is PvpPhase.Quiz -> QuizScreen(
-            state = state,
-            phase = phase,
-            onAnswerSelected = { viewModel.onAnswerSelected(it) },
-            onConfirm = { viewModel.onConfirmAnswer() },
-            onSurrender = { viewModel.onSurrender(phase.defenderIndex) },
-        )
-        is PvpPhase.GameOver -> GameOverScreen(
-            players = state.players,
-            phase = phase,
-            onPlayAgain = onPlayAgain,
-            onHome = onNavigateHome,
-        )
+    Box(modifier = Modifier.fillMaxSize()) {
+        when (val phase = state.phase) {
+            is PvpPhase.HandSelection -> HandSelectionScreen(
+                state = state,
+                hand = phase.hand,
+                onCardSelected = { viewModel.onCardSelected(it) },
+                onSurrender = { viewModel.onSurrender(state.currentPlayerIndex) },
+                onMultiplierRowPositioned = { multiplierRowBottomPx = it },
+            )
+            is PvpPhase.Quiz -> QuizScreen(
+                state = state,
+                phase = phase,
+                onAnswerSelected = { viewModel.onAnswerSelected(it) },
+                onConfirm = { viewModel.onConfirmAnswer() },
+                onSurrender = { viewModel.onSurrender(phase.defenderIndex) },
+                onMultiplierRowPositioned = { multiplierRowBottomPx = it },
+            )
+            is PvpPhase.GameOver -> GameOverScreen(
+                players = state.players,
+                phase = phase,
+                onPlayAgain = onPlayAgain,
+                onHome = onNavigateHome,
+            )
+        }
+
+        if (state.showMultiplierHint && multiplierRowBottomPx > 0) {
+            MultiplierHintOverlay(
+                anchorBottomPx = multiplierRowBottomPx,
+                onDismiss = viewModel::dismissMultiplierHint,
+            )
+        }
     }
 }
 
@@ -124,6 +146,7 @@ private fun HandSelectionScreen(
     hand: List<Word>,
     onCardSelected: (Word) -> Unit,
     onSurrender: () -> Unit,
+    onMultiplierRowPositioned: (Int) -> Unit = {},
 ) {
     val activePlayer = state.activePlayer
     val handIds = hand.map { it.id }.toSet()
@@ -181,10 +204,14 @@ private fun HandSelectionScreen(
                 .fillMaxSize()
                 .padding(innerPadding),
         ) {
-            MultiplierRow(
-                players = state.players,
-                highlightIndex = state.currentPlayerIndex,
-            )
+            Box(modifier = Modifier.onGloballyPositioned { coords ->
+                onMultiplierRowPositioned(coords.boundsInWindow().bottom.toInt())
+            }) {
+                MultiplierRow(
+                    players = state.players,
+                    highlightIndex = state.currentPlayerIndex,
+                )
+            }
             HorizontalDivider(color = BgCard)
 
             Column(
@@ -239,6 +266,7 @@ private fun QuizScreen(
     onAnswerSelected: (String) -> Unit,
     onConfirm: () -> Unit,
     onSurrender: () -> Unit,
+    onMultiplierRowPositioned: (Int) -> Unit = {},
 ) {
     val answered = phase.selectedAnswer != null
     var showSurrenderDialog by remember { mutableStateOf(false) }
@@ -291,10 +319,14 @@ private fun QuizScreen(
                 .fillMaxSize()
                 .padding(innerPadding),
         ) {
-            MultiplierRow(
-                players = state.players,
-                highlightIndex = phase.defenderIndex,
-            )
+            Box(modifier = Modifier.onGloballyPositioned { coords ->
+                onMultiplierRowPositioned(coords.boundsInWindow().bottom.toInt())
+            }) {
+                MultiplierRow(
+                    players = state.players,
+                    highlightIndex = phase.defenderIndex,
+                )
+            }
             HorizontalDivider(color = BgCard)
 
             Column(
@@ -755,6 +787,148 @@ private fun TimerWidget(timeRemaining: Int) {
             fontWeight = FontWeight.ExtraBold,
             color = color,
         )
+    }
+}
+
+// ─── Multiplier hint overlay ──────────────────────────────────────────────────
+
+private val HintBg     = Color(0xFF1A2535)
+private val HintBorder = Color(0xFF2D4A6E)
+
+@Composable
+private fun MultiplierHintOverlay(
+    anchorBottomPx: Int,
+    onDismiss: () -> Unit,
+) {
+    val density = LocalDensity.current
+    val arrowSize = with(density) { 10.dp.toPx() }
+    val cardHorizontalPadding = with(density) { 16.dp.toPx() }
+
+    // Full-screen scrim — tap outside card to dismiss
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.Black.copy(alpha = 0.55f))
+            .clickable(
+                indication = null,
+                interactionSource = remember { MutableInteractionSource() },
+                onClick = onDismiss,
+            ),
+    ) {
+        Column(
+            modifier = Modifier
+                .offset { IntOffset(0, anchorBottomPx) }
+                .padding(horizontal = 16.dp)
+                .clickable(
+                    indication = null,
+                    interactionSource = remember { MutableInteractionSource() },
+                    onClick = {},
+                ),
+        ) {
+            // Upward-pointing arrow
+            Canvas(
+                modifier = Modifier
+                    .padding(start = 24.dp)
+                    .size(width = 20.dp, height = 10.dp),
+            ) {
+                val w = size.width
+                val h = size.height
+                val path = Path().apply {
+                    moveTo(w / 2f, 0f)
+                    lineTo(w, h)
+                    lineTo(0f, h)
+                    close()
+                }
+                drawPath(path, color = HintBorder)
+                // Inner fill (slightly smaller)
+                val inner = Path().apply {
+                    moveTo(w / 2f, 2f)
+                    lineTo(w - 2f, h)
+                    lineTo(2f, h)
+                    close()
+                }
+                drawPath(inner, color = HintBg)
+            }
+
+            // Tooltip card
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .shadow(8.dp, RoundedCornerShape(16.dp))
+                    .clip(RoundedCornerShape(16.dp))
+                    .background(HintBg)
+                    .border(1.dp, HintBorder, RoundedCornerShape(16.dp))
+                    .padding(horizontal = 16.dp, vertical = 14.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp),
+            ) {
+                // Title
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    Text("⚡", fontSize = 18.sp)
+                    Text(
+                        text = "Множитель очков",
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.ExtraBold,
+                        color = Color.White,
+                    )
+                }
+
+                Text(
+                    text = "Правильные ответы подряд увеличивают множитель — вы зарабатываете больше очков за каждую карту!",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = TextSecondary,
+                    lineHeight = 18.sp,
+                )
+
+                // Streak tiers
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly,
+                ) {
+                    listOf(
+                        Triple("×1", "старт", Color(0xFF9E9E9E)),
+                        Triple("×2", "5 🔥", Color(0xFF4A90E2)),
+                        Triple("×3", "10 🔥", Color(0xFF9B51E0)),
+                        Triple("×4", "15 🔥", Color(0xFFF5A623)),
+                    ).forEach { (mult, label, color) ->
+                        Column(
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.spacedBy(2.dp),
+                        ) {
+                            Box(
+                                modifier = Modifier
+                                    .background(color.copy(alpha = 0.15f), RoundedCornerShape(6.dp))
+                                    .border(1.dp, color.copy(alpha = 0.5f), RoundedCornerShape(6.dp))
+                                    .padding(horizontal = 8.dp, vertical = 3.dp),
+                            ) {
+                                Text(
+                                    text = mult,
+                                    style = MaterialTheme.typography.labelMedium,
+                                    fontWeight = FontWeight.ExtraBold,
+                                    color = color,
+                                )
+                            }
+                            Text(
+                                text = label,
+                                style = MaterialTheme.typography.labelSmall,
+                                color = TextSecondary,
+                                fontSize = 10.sp,
+                            )
+                        }
+                    }
+                }
+
+                Button(
+                    onClick = onDismiss,
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(10.dp),
+                ) {
+                    Text("Понял!", fontWeight = FontWeight.Bold)
+                }
+            }
+        }
     }
 }
 

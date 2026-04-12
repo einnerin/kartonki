@@ -18,13 +18,14 @@ class UserPreferencesRepository @Inject constructor(
         context.getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
 
     private object Keys {
-        const val IS_DARK_THEME   = "is_dark_theme"
-        const val USERNAME        = "username"
-        const val AVATAR_CHOICE   = "avatar_choice"
-        const val LANGUAGE_PAIR   = "language_pair"
-        const val NATIVE_LANGUAGE = "native_language"
-        const val ACTIVITY_COUNT  = "activity_count"
-        const val FREE_PACK_COUNT = "free_pack_count"
+        const val IS_DARK_THEME            = "is_dark_theme"
+        const val USERNAME                 = "username"
+        const val AVATAR_CHOICE            = "avatar_choice"
+        const val LANGUAGE_PAIR            = "language_pair"
+        const val NATIVE_LANGUAGE          = "native_language"
+        const val ACTIVITY_COUNT           = "activity_count"
+        const val FREE_PACK_COUNT          = "free_pack_count"
+        const val PVP_MULTIPLIER_HINT_SEEN = "pvp_multiplier_hint_seen"
     }
 
     /** Emits on every SharedPreferences change. */
@@ -56,4 +57,7 @@ class UserPreferencesRepository @Inject constructor(
 
     fun setActivityCount(n: Int)  = prefs.edit().putInt(Keys.ACTIVITY_COUNT, n).apply()
     fun setFreePackCount(n: Int)  = prefs.edit().putInt(Keys.FREE_PACK_COUNT, n).apply()
+
+    fun getPvpMultiplierHintSeen(): Boolean = prefs.getBoolean(Keys.PVP_MULTIPLIER_HINT_SEEN, false)
+    fun setPvpMultiplierHintSeen()          = prefs.edit().putBoolean(Keys.PVP_MULTIPLIER_HINT_SEEN, true).apply()
 }

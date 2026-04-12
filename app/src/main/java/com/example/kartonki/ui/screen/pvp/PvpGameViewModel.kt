@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.db.dao.DeckDao
 import com.example.kartonki.data.db.entity.ProgressEntity
+import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.AchievementRepository
 import com.example.kartonki.data.repository.CollectionRepository
 import com.example.kartonki.data.repository.PackRepository
@@ -60,6 +61,7 @@ data class PvpGameUiState(
     val currentPlayerIndex: Int = 0,
     val phase: PvpPhase = PvpPhase.GameOver(),
     val timeRemaining: Int = TIMER_DURATION,
+    val showMultiplierHint: Boolean = false,
 ) {
     val activePlayer: PvpPlayerState? get() = players.getOrNull(currentPlayerIndex)
 
@@ -76,6 +78,7 @@ class PvpGameViewModel @Inject constructor(
     private val achievementRepository: AchievementRepository,
     private val progressRepository: ProgressRepository,
     private val packRepository: PackRepository,
+    private val prefs: UserPreferencesRepository,
 ) : ViewModel() {
 
     private val deck1Id: Long = checkNotNull(savedStateHandle[Route.PvpGame.ARG_DECK1_ID])
@@ -90,7 +93,17 @@ class PvpGameViewModel @Inject constructor(
     private var attackerIndex: Int = 0
     private var timerJob: Job? = null
 
-    init { loadGame() }
+    init {
+        loadGame()
+        if (!prefs.getPvpMultiplierHintSeen()) {
+            _uiState.update { it.copy(showMultiplierHint = true) }
+        }
+    }
+
+    fun dismissMultiplierHint() {
+        prefs.setPvpMultiplierHintSeen()
+        _uiState.update { it.copy(showMultiplierHint = false) }
+    }
 
     override fun onCleared() {
         super.onCleared()
