@@ -253,13 +253,22 @@ fun SettingsScreen(
                     modifier = Modifier.clickable { viewModel.onShowStudyLanguagePicker() },
                 )
             }
-            SettingsRow(label = "Задания с контекстом") {
+            SettingsRow(label = "Задания с определением") {
                 Text(
-                    CONTEXT_QUIZ_MODES[state.contextQuizMode] ?: state.contextQuizMode,
+                    CONTEXT_QUIZ_MODES[state.definitionQuizMode] ?: state.definitionQuizMode,
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.Medium,
-                    modifier = Modifier.clickable { viewModel.onShowContextQuizModePicker() },
+                    modifier = Modifier.clickable { viewModel.onShowDefinitionModePicker() },
+                )
+            }
+            SettingsRow(label = "Задания со вставкой слова") {
+                Text(
+                    CONTEXT_QUIZ_MODES[state.fillBlankQuizMode] ?: state.fillBlankQuizMode,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowFillBlankModePicker() },
                 )
             }
 
@@ -308,43 +317,20 @@ fun SettingsScreen(
                 )
             }
 
-            if (state.showContextQuizModePicker) {
-                AlertDialog(
-                    onDismissRequest = viewModel::onDismissContextQuizModePicker,
-                    title = { Text("Задания с контекстом (PvE)") },
-                    text = {
-                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                            CONTEXT_QUIZ_MODES.entries.forEach { (mode, name) ->
-                                val isSelected = mode == state.contextQuizMode
-                                Row(
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .clip(RoundedCornerShape(8.dp))
-                                        .background(
-                                            if (isSelected) MaterialTheme.colorScheme.primaryContainer
-                                            else MaterialTheme.colorScheme.surface
-                                        )
-                                        .clickable { viewModel.onContextQuizModeSelected(mode) }
-                                        .padding(horizontal = 12.dp, vertical = 12.dp),
-                                    horizontalArrangement = Arrangement.SpaceBetween,
-                                    verticalAlignment = Alignment.CenterVertically,
-                                ) {
-                                    Text(
-                                        name,
-                                        style = MaterialTheme.typography.bodyLarge,
-                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
-                                        color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
-                                                else MaterialTheme.colorScheme.onSurface,
-                                    )
-                                    if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
-                                }
-                            }
-                        }
-                    },
-                    confirmButton = {},
-                    dismissButton = {
-                        TextButton(onClick = viewModel::onDismissContextQuizModePicker) { Text("Отмена") }
-                    },
+            if (state.showDefinitionModePicker) {
+                QuizModePickerDialog(
+                    title = "Задания с определением",
+                    selectedMode = state.definitionQuizMode,
+                    onSelect = { viewModel.onDefinitionModeSelected(it) },
+                    onDismiss = viewModel::onDismissDefinitionModePicker,
+                )
+            }
+            if (state.showFillBlankModePicker) {
+                QuizModePickerDialog(
+                    title = "Задания со вставкой слова",
+                    selectedMode = state.fillBlankQuizMode,
+                    onSelect = { viewModel.onFillBlankModeSelected(it) },
+                    onDismiss = viewModel::onDismissFillBlankModePicker,
                 )
             }
 
@@ -475,6 +461,52 @@ private fun SettingsRow(label: String, trailing: @Composable () -> Unit) {
         trailing()
     }
     Spacer(Modifier.height(8.dp))
+}
+
+@Composable
+private fun QuizModePickerDialog(
+    title: String,
+    selectedMode: String,
+    onSelect: (String) -> Unit,
+    onDismiss: () -> Unit,
+) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(title) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                CONTEXT_QUIZ_MODES.entries.forEach { (mode, name) ->
+                    val isSelected = mode == selectedMode
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(8.dp))
+                            .background(
+                                if (isSelected) MaterialTheme.colorScheme.primaryContainer
+                                else MaterialTheme.colorScheme.surface
+                            )
+                            .clickable { onSelect(mode) }
+                            .padding(horizontal = 12.dp, vertical = 12.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Text(
+                            name,
+                            style = MaterialTheme.typography.bodyLarge,
+                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                            color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                                    else MaterialTheme.colorScheme.onSurface,
+                        )
+                        if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
+                    }
+                }
+            }
+        },
+        confirmButton = {},
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text("Отмена") }
+        },
+    )
 }
 
 @Composable

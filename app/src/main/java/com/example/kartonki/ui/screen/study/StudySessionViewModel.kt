@@ -81,9 +81,10 @@ class StudySessionViewModel @Inject constructor(
                 _uiState.update { it.copy(isLoading = false, isEmpty = true) }
                 return@launch
             }
-            val contextMode  = prefs.contextQuizMode.first()
-            val enabledTypes = prefs.quizTypesEnabled.first()
-            val steps = buildSteps(words, contextMode, enabledTypes)
+            val definitionMode = prefs.definitionQuizMode.first()
+            val fillBlankMode  = prefs.fillBlankQuizMode.first()
+            val enabledTypes   = prefs.quizTypesEnabled.first()
+            val steps = buildSteps(words, definitionMode, fillBlankMode, enabledTypes)
             _uiState.update {
                 it.copy(isLoading = false, isEmpty = false, steps = steps, currentStepIndex = 0)
             }
@@ -147,40 +148,47 @@ class StudySessionViewModel @Inject constructor(
         }
     }
 
-    private fun buildSteps(words: List<Word>, contextMode: String, enabledTypes: Set<String>): List<StudyStep> =
+    private fun buildSteps(
+        words: List<Word>,
+        definitionMode: String,
+        fillBlankMode: String,
+        enabledTypes: Set<String>,
+    ): List<StudyStep> =
         words.shuffled().map { word ->
-            buildQuizStep(word, pickQuizType(word, words, contextMode, enabledTypes), words)
+            buildQuizStep(word, pickQuizType(word, words, definitionMode, fillBlankMode, enabledTypes), words)
         }
 
     private fun pickQuizType(
         word: Word,
         allWords: List<Word>,
-        contextMode: String,
+        definitionMode: String,
+        fillBlankMode: String,
         enabledTypes: Set<String>,
     ): StudyQuizType {
         val available = mutableListOf<StudyQuizType>()
 
         if ("translation" in enabledTypes) available.add(StudyQuizType.MULTIPLE_CHOICE_TRANSLATION)
 
-        val useForeign = contextMode == "foreign" || contextMode == "both"
-        val useNative  = contextMode == "native"  || contextMode == "both"
-
         if ("definition" in enabledTypes) {
+            val defForeign = definitionMode == "foreign" || definitionMode == "both"
+            val defNative  = definitionMode == "native"  || definitionMode == "both"
             val foreignDefCount = allWords.count { it.definition != null }
             val nativeDefCount  = allWords.count { it.definitionNative != null }
-            if (useForeign && word.definition != null && foreignDefCount >= 4) {
+            if (defForeign && word.definition != null && foreignDefCount >= 4) {
                 available.add(StudyQuizType.MULTIPLE_CHOICE_DEFINITION)
                 available.add(StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF)
             }
-            if (useNative && word.definitionNative != null && nativeDefCount >= 4) {
+            if (defNative && word.definitionNative != null && nativeDefCount >= 4) {
                 available.add(StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE)
                 available.add(StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE)
             }
         }
         if ("fill_blank" in enabledTypes) {
-            if (useForeign && word.example != null && allWords.size >= 4)
+            val fbForeign = fillBlankMode == "foreign" || fillBlankMode == "both"
+            val fbNative  = fillBlankMode == "native"  || fillBlankMode == "both"
+            if (fbForeign && word.example != null && allWords.size >= 4)
                 available.add(StudyQuizType.FILL_IN_BLANK)
-            if (useNative && word.exampleNative != null && allWords.size >= 4)
+            if (fbNative && word.exampleNative != null && allWords.size >= 4)
                 available.add(StudyQuizType.FILL_IN_BLANK_NATIVE)
         }
 

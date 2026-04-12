@@ -39,6 +39,9 @@ val CONTEXT_QUIZ_MODES: LinkedHashMap<String, String> = linkedMapOf(
     "both"    to "Оба варианта",
 )
 
+val DEFINITION_MODE_LABELS: LinkedHashMap<String, String> = CONTEXT_QUIZ_MODES
+val FILL_BLANK_MODE_LABELS: LinkedHashMap<String, String>  = CONTEXT_QUIZ_MODES
+
 val QUIZ_TYPE_LABELS: LinkedHashMap<String, String> = linkedMapOf(
     "translation" to "Перевод (4 варианта)",
     "definition"  to "Определение",
@@ -51,13 +54,15 @@ data class SettingsUiState(
     val avatarChoice: String = "🎮",
     val languagePair: String = "en-ru",
     val nativeLanguage: String = "ru",
-    val contextQuizMode: String = "both",
-    val enabledQuizTypes: Set<String> = setOf("translation", "type_input", "definition", "fill_blank"),
+    val definitionQuizMode: String = "both",
+    val fillBlankQuizMode: String = "both",
+    val enabledQuizTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
     val isEditingName: Boolean = false,
     val nameInput: String = "",
     val showLanguagePicker: Boolean = false,
     val showStudyLanguagePicker: Boolean = false,
-    val showContextQuizModePicker: Boolean = false,
+    val showDefinitionModePicker: Boolean = false,
+    val showFillBlankModePicker: Boolean = false,
     val showQuizTypesPicker: Boolean = false,
 )
 
@@ -85,29 +90,35 @@ class SettingsViewModel @Inject constructor(
                     prefs.avatarChoice,
                     prefs.languagePair,
                     prefs.nativeLanguage,
-                    prefs.contextQuizMode,
+                    prefs.definitionQuizMode,
                 ) { values ->
                     SettingsUiState(
-                        isDarkTheme     = values[0] as Boolean,
-                        username        = values[1] as String,
-                        avatarChoice    = values[2] as String,
-                        languagePair    = values[3] as String,
-                        nativeLanguage  = values[4] as String,
-                        contextQuizMode = values[5] as String,
+                        isDarkTheme          = values[0] as Boolean,
+                        username             = values[1] as String,
+                        avatarChoice         = values[2] as String,
+                        languagePair         = values[3] as String,
+                        nativeLanguage       = values[4] as String,
+                        definitionQuizMode   = values[5] as String,
                     )
                 },
-                prefs.quizTypesEnabled,
-            ) { base, enabledTypes ->
-                base.copy(enabledQuizTypes = enabledTypes)
+                combine(
+                    prefs.fillBlankQuizMode,
+                    prefs.quizTypesEnabled,
+                ) { fillBlankMode, enabledTypes ->
+                    Pair(fillBlankMode, enabledTypes)
+                },
+            ) { base, (fillBlankMode, enabledTypes) ->
+                base.copy(fillBlankQuizMode = fillBlankMode, enabledQuizTypes = enabledTypes)
             }.collect { state ->
                 _uiState.update { current ->
                     state.copy(
-                        isEditingName             = current.isEditingName,
-                        nameInput                 = current.nameInput,
-                        showLanguagePicker        = current.showLanguagePicker,
-                        showStudyLanguagePicker   = current.showStudyLanguagePicker,
-                        showContextQuizModePicker = current.showContextQuizModePicker,
-                        showQuizTypesPicker       = current.showQuizTypesPicker,
+                        isEditingName           = current.isEditingName,
+                        nameInput               = current.nameInput,
+                        showLanguagePicker      = current.showLanguagePicker,
+                        showStudyLanguagePicker = current.showStudyLanguagePicker,
+                        showDefinitionModePicker = current.showDefinitionModePicker,
+                        showFillBlankModePicker  = current.showFillBlankModePicker,
+                        showQuizTypesPicker     = current.showQuizTypesPicker,
                     )
                 }
             }
@@ -144,11 +155,18 @@ class SettingsViewModel @Inject constructor(
         _uiState.update { it.copy(showStudyLanguagePicker = false) }
     }
 
-    fun onShowContextQuizModePicker() = _uiState.update { it.copy(showContextQuizModePicker = true) }
-    fun onDismissContextQuizModePicker() = _uiState.update { it.copy(showContextQuizModePicker = false) }
-    fun onContextQuizModeSelected(mode: String) {
-        prefs.setContextQuizMode(mode)
-        _uiState.update { it.copy(showContextQuizModePicker = false) }
+    fun onShowDefinitionModePicker() = _uiState.update { it.copy(showDefinitionModePicker = true) }
+    fun onDismissDefinitionModePicker() = _uiState.update { it.copy(showDefinitionModePicker = false) }
+    fun onDefinitionModeSelected(mode: String) {
+        prefs.setDefinitionQuizMode(mode)
+        _uiState.update { it.copy(showDefinitionModePicker = false) }
+    }
+
+    fun onShowFillBlankModePicker() = _uiState.update { it.copy(showFillBlankModePicker = true) }
+    fun onDismissFillBlankModePicker() = _uiState.update { it.copy(showFillBlankModePicker = false) }
+    fun onFillBlankModeSelected(mode: String) {
+        prefs.setFillBlankQuizMode(mode)
+        _uiState.update { it.copy(showFillBlankModePicker = false) }
     }
 
     fun onShowQuizTypesPicker() = _uiState.update { it.copy(showQuizTypesPicker = true) }

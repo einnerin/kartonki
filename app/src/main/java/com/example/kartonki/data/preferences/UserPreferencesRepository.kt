@@ -26,8 +26,9 @@ class UserPreferencesRepository @Inject constructor(
         const val ACTIVITY_COUNT           = "activity_count"
         const val FREE_PACK_COUNT          = "free_pack_count"
         const val PVP_MULTIPLIER_HINT_SEEN = "pvp_multiplier_hint_seen"
-        const val CONTEXT_QUIZ_MODE        = "context_quiz_mode"   // "foreign" | "native" | "both"
-        const val QUIZ_TYPES_ENABLED       = "quiz_types_enabled"  // comma-separated keys
+        const val DEFINITION_QUIZ_MODE     = "definition_quiz_mode"  // "foreign" | "native" | "both"
+        const val FILL_BLANK_QUIZ_MODE     = "fill_blank_quiz_mode" // "foreign" | "native" | "both"
+        const val QUIZ_TYPES_ENABLED       = "quiz_types_enabled"   // comma-separated keys
     }
 
     companion object {
@@ -68,8 +69,11 @@ class UserPreferencesRepository @Inject constructor(
     fun getPvpMultiplierHintSeen(): Boolean = prefs.getBoolean(Keys.PVP_MULTIPLIER_HINT_SEEN, false)
     fun setPvpMultiplierHintSeen()          = prefs.edit().putBoolean(Keys.PVP_MULTIPLIER_HINT_SEEN, true).apply()
 
-    val contextQuizMode: Flow<String> = prefsFlow().map { it.getString(Keys.CONTEXT_QUIZ_MODE, "both") ?: "both" }
-    fun setContextQuizMode(mode: String) = prefs.edit().putString(Keys.CONTEXT_QUIZ_MODE, mode).apply()
+    val definitionQuizMode: Flow<String> = prefsFlow().map { it.getString(Keys.DEFINITION_QUIZ_MODE, "both") ?: "both" }
+    fun setDefinitionQuizMode(mode: String) = prefs.edit().putString(Keys.DEFINITION_QUIZ_MODE, mode).apply()
+
+    val fillBlankQuizMode: Flow<String> = prefsFlow().map { it.getString(Keys.FILL_BLANK_QUIZ_MODE, "both") ?: "both" }
+    fun setFillBlankQuizMode(mode: String) = prefs.edit().putString(Keys.FILL_BLANK_QUIZ_MODE, mode).apply()
 
     val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
         val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)
