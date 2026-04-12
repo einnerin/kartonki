@@ -99,25 +99,6 @@ fun HomeScreen(
             .statusBarsPadding()
             .navigationBarsPadding(),
     ) {
-        // Settings gear button (top-right corner)
-        IconButton(
-            onClick = onNavigateToSettings,
-            modifier = Modifier
-                .align(Alignment.TopEnd)
-                .padding(8.dp),
-        ) {
-            Text("⚙", fontSize = 22.sp, color = AccentGold.copy(alpha = 0.8f))
-        }
-
-        // Free pack indicator (top-left corner)
-        FreePackIndicator(
-            activityCount = packState.activityCount,
-            freePackCount = packState.freePackCount,
-            onClick = onNavigateToShop,
-            modifier = Modifier
-                .align(Alignment.TopStart)
-                .padding(10.dp),
-        )
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -214,6 +195,26 @@ fun HomeScreen(
                     }
                 }
             }
+        }
+
+        // Free pack indicator (top-left corner) — declared after Column to sit on top
+        FreePackIndicator(
+            activityCount = packState.activityCount,
+            freePackCount = packState.freePackCount,
+            onClick = onNavigateToShop,
+            modifier = Modifier
+                .align(Alignment.TopStart)
+                .padding(10.dp),
+        )
+
+        // Settings gear button (top-right corner) — declared after Column to sit on top
+        IconButton(
+            onClick = onNavigateToSettings,
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .padding(8.dp),
+        ) {
+            Text("⚙", fontSize = 22.sp, color = AccentGold.copy(alpha = 0.8f))
         }
     }
 }
