@@ -9,4 +9,5 @@ data class WordSetEntity(
     val name: String,
     val description: String = "",
     val orderIndex: Int = 0,
+    val languagePair: String = "en-ru",
 )

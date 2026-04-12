@@ -243,6 +243,15 @@ fun SettingsScreen(
 
             // ── Language ───────────────────────────────────────────────────────
             SectionHeader("Язык")
+            SettingsRow(label = "Язык изучения") {
+                Text(
+                    STUDY_LANGUAGES[state.languagePair] ?: state.languagePair,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowStudyLanguagePicker() },
+                )
+            }
             SettingsRow(label = "Родной язык") {
                 Text(
                     NATIVE_LANGUAGES[state.nativeLanguage] ?: state.nativeLanguage,
@@ -250,6 +259,46 @@ fun SettingsScreen(
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.Medium,
                     modifier = Modifier.clickable { viewModel.onShowLanguagePicker() },
+                )
+            }
+
+            if (state.showStudyLanguagePicker) {
+                AlertDialog(
+                    onDismissRequest = viewModel::onDismissStudyLanguagePicker,
+                    title = { Text("Язык изучения") },
+                    text = {
+                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                            STUDY_LANGUAGES.entries.forEach { (pair, name) ->
+                                val isSelected = pair == state.languagePair
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .clip(RoundedCornerShape(8.dp))
+                                        .background(
+                                            if (isSelected) MaterialTheme.colorScheme.primaryContainer
+                                            else MaterialTheme.colorScheme.surface
+                                        )
+                                        .clickable { viewModel.onStudyLanguageSelected(pair) }
+                                        .padding(horizontal = 12.dp, vertical = 12.dp),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically,
+                                ) {
+                                    Text(
+                                        name,
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                        color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                                                else MaterialTheme.colorScheme.onSurface,
+                                    )
+                                    if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
+                                }
+                            }
+                        }
+                    },
+                    confirmButton = {},
+                    dismissButton = {
+                        TextButton(onClick = viewModel::onDismissStudyLanguagePicker) { Text("Отмена") }
+                    },
                 )
             }
 

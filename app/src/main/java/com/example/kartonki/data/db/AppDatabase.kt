@@ -2,6 +2,8 @@ package com.example.kartonki.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.kartonki.data.db.dao.AchievementDao
 import com.example.kartonki.data.db.dao.CollectionDao
 import com.example.kartonki.data.db.dao.DeckDao
@@ -32,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 16,
+    version = 17,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -44,4 +46,13 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun achievementDao(): AchievementDao
     abstract fun studyStreakDao(): StudyStreakDao
     abstract fun pvpMatchDao(): PvpMatchDao
+
+    companion object {
+        val MIGRATION_16_17 = object : Migration(16, 17) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE word_sets ADD COLUMN languagePair TEXT NOT NULL DEFAULT 'en-ru'")
+                db.execSQL("ALTER TABLE words ADD COLUMN transliteration TEXT")
+            }
+        }
+    }
 }

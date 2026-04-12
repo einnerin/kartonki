@@ -18,7 +18,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.theme.BgCard
@@ -46,13 +48,24 @@ fun WordCard(
                 Spacer(modifier = Modifier.weight(1f))
                 RarityBadge(rarity = word.rarity)
             }
+            val isHebrew = word.languagePair.startsWith("he")
             Spacer(modifier = Modifier.height(12.dp))
             Text(
                 text = word.original,
-                style = MaterialTheme.typography.displaySmall,
+                style = MaterialTheme.typography.displaySmall.copy(
+                    textDirection = if (isHebrew) TextDirection.Rtl else TextDirection.Ltr,
+                ),
                 fontWeight = FontWeight.Bold,
                 color = Color.White,
             )
+            if (isHebrew && word.transliteration != null) {
+                Text(
+                    text = word.transliteration,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = TextSecondary,
+                    fontSize = 14.sp,
+                )
+            }
             Spacer(modifier = Modifier.height(4.dp))
             Text(
                 text = word.translation,

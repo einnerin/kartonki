@@ -24,12 +24,16 @@ interface WordSetDao {
             FROM words
             GROUP BY setId
         ) w ON w.setId = ws.id
+        WHERE ws.languagePair = :languagePair
         ORDER BY COALESCE(w.rarityOrder, 99) ASC, ws.id ASC
     """)
-    suspend fun getAllSets(): List<WordSetEntity>
+    suspend fun getSetsByLanguage(languagePair: String): List<WordSetEntity>
 
     @Query("SELECT COUNT(*) FROM word_sets")
     suspend fun getSetCount(): Int
+
+    @Query("SELECT COUNT(*) FROM word_sets WHERE languagePair = :languagePair")
+    suspend fun getSetCountByLanguage(languagePair: String): Int
 
     @Query("SELECT * FROM word_sets WHERE id = :id")
     suspend fun getSetById(id: Long): WordSetEntity?

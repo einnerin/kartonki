@@ -28,6 +28,11 @@ val NATIVE_LANGUAGES: LinkedHashMap<String, String> = linkedMapOf(
     "ar" to "العربية",
 )
 
+val STUDY_LANGUAGES: LinkedHashMap<String, String> = linkedMapOf(
+    "en-ru" to "Английский 🇬🇧",
+    "he-ru" to "Иврит 🇮🇱",
+)
+
 data class SettingsUiState(
     val isDarkTheme: Boolean = true,
     val username: String = "Игрок",
@@ -37,6 +42,7 @@ data class SettingsUiState(
     val isEditingName: Boolean = false,
     val nameInput: String = "",
     val showLanguagePicker: Boolean = false,
+    val showStudyLanguagePicker: Boolean = false,
 )
 
 val AVATAR_EMOJI_OPTIONS = listOf(
@@ -104,6 +110,13 @@ class SettingsViewModel @Inject constructor(
     }
 
     fun onCancelEditName() = _uiState.update { it.copy(isEditingName = false) }
+
+    fun onShowStudyLanguagePicker() = _uiState.update { it.copy(showStudyLanguagePicker = true) }
+    fun onDismissStudyLanguagePicker() = _uiState.update { it.copy(showStudyLanguagePicker = false) }
+    fun onStudyLanguageSelected(pair: String) = viewModelScope.launch {
+        prefs.setLanguagePair(pair)
+        _uiState.update { it.copy(showStudyLanguagePicker = false) }
+    }
 
     fun onEmojiAvatarSelected(emoji: String) = viewModelScope.launch {
         prefs.setAvatarChoice(emoji)

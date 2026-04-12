@@ -46,6 +46,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.BaselineShift
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDirection
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -190,18 +192,36 @@ private fun QuizContent(
             color = MaterialTheme.colorScheme.primary,
             fontWeight = FontWeight.SemiBold,
         )
+        val isHebrewWord = step.word.languagePair.startsWith("he") &&
+            step.type != StudyQuizType.MULTIPLE_CHOICE_DEFINITION &&
+            step.type != StudyQuizType.FILL_IN_BLANK
         Surface(
             color = MaterialTheme.colorScheme.surfaceVariant,
             shape = MaterialTheme.shapes.medium,
             modifier = Modifier.fillMaxWidth(),
         ) {
-            Text(
-                text = step.question,
-                style = MaterialTheme.typography.headlineMedium,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Center,
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.padding(horizontal = 20.dp, vertical = 24.dp),
-            )
+            ) {
+                Text(
+                    text = step.question,
+                    style = MaterialTheme.typography.headlineMedium.copy(
+                        textDirection = if (isHebrewWord) TextDirection.Rtl else TextDirection.Ltr,
+                    ),
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center,
+                )
+                if (isHebrewWord && step.word.transliteration != null) {
+                    Spacer(Modifier.height(4.dp))
+                    Text(
+                        text = step.word.transliteration,
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f),
+                        fontSize = 13.sp,
+                    )
+                }
+            }
         }
         if (step.type == StudyQuizType.TYPE_TRANSLATION) {
             TypeInputSection(userInput, answered, onUserInputChange, onSubmitInput)

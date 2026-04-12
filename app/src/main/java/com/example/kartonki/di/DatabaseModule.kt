@@ -26,6 +26,7 @@ object DatabaseModule {
     @Singleton
     fun provideDatabase(@ApplicationContext context: Context): AppDatabase =
         Room.databaseBuilder(context, AppDatabase::class.java, "kartonki.db")
+            .addMigrations(AppDatabase.MIGRATION_16_17)
             .fallbackToDestructiveMigration(dropAllTables = true)
             .build()
 

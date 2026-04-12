@@ -1,6 +1,7 @@
 package com.example.kartonki.data.repository
 
 import com.example.kartonki.data.SeedData
+import com.example.kartonki.data.SeedDataHebrew
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
 import com.example.kartonki.data.db.entity.WordSetEntity
@@ -16,13 +17,18 @@ class WordSetRepository @Inject constructor(
 ) {
     /** Inserts seed sets + words on first run (or after destructive migration). */
     suspend fun ensureSeeded() {
-        if (wordSetDao.getSetCount() == 0) {
+        if (wordSetDao.getSetCountByLanguage("en-ru") == 0) {
             wordSetDao.insertSets(SeedData.sets)
             wordDao.insertAll(SeedData.words)
         }
+        if (wordSetDao.getSetCountByLanguage("he-ru") == 0) {
+            wordSetDao.insertSets(SeedDataHebrew.sets)
+            wordDao.insertAll(SeedDataHebrew.words)
+        }
     }
 
-    suspend fun getAllSets(): List<WordSetEntity> = wordSetDao.getAllSets()
+    suspend fun getSetsByLanguage(languagePair: String): List<WordSetEntity> =
+        wordSetDao.getSetsByLanguage(languagePair)
 
     suspend fun getSetById(id: Long): WordSetEntity? = wordSetDao.getSetById(id)
 
@@ -38,6 +44,7 @@ class WordSetRepository @Inject constructor(
                 languagePair = entity.languagePair,
                 pos = entity.pos,
                 semanticGroup = entity.semanticGroup,
+                transliteration = entity.transliteration,
             )
         }
 

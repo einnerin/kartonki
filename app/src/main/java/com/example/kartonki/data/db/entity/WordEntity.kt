@@ -13,6 +13,7 @@ data class WordEntity(
     val rarity: String,        // Rarity.name
     val languagePair: String = "en-ru",
     val setId: Long = 0,
-    val pos: String? = null,           // part of speech: noun, verb, adjective, adverb, etc.
-    val semanticGroup: String? = null, // thematic category: emotions, food, travel, etc.
+    val pos: String? = null,
+    val semanticGroup: String? = null,
+    val transliteration: String? = null,  // pronunciation guide, used for non-Latin scripts
 )

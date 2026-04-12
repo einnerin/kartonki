@@ -37,6 +37,9 @@ interface WordDao {
     @Query("SELECT * FROM words ORDER BY rarity DESC, original ASC")
     suspend fun getAllWordsOnce(): List<WordEntity>
 
+    @Query("SELECT * FROM words WHERE languagePair = :languagePair ORDER BY rarity DESC, original ASC")
+    suspend fun getAllWordsByLanguage(languagePair: String): List<WordEntity>
+
     @Delete
     suspend fun delete(word: WordEntity)
 }

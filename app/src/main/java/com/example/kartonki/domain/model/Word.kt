@@ -10,4 +10,5 @@ data class Word(
     val languagePair: String = "en-ru",
     val pos: String? = null,
     val semanticGroup: String? = null,
+    val transliteration: String? = null,
 )
