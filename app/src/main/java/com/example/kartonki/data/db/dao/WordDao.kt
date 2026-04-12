@@ -42,4 +42,21 @@ interface WordDao {
 
     @Delete
     suspend fun delete(word: WordEntity)
+
+    @Query("""
+        UPDATE words
+        SET    definitionNative = :defNative,
+               exampleNative    = :exNative
+        WHERE  original = :original
+          AND  languagePair = :langPair
+    """)
+    suspend fun updateNativeContent(
+        original: String,
+        langPair: String,
+        defNative: String,
+        exNative: String,
+    )
+
+    @Query("SELECT COUNT(*) FROM words WHERE languagePair = :langPair AND definitionNative IS NOT NULL")
+    suspend fun countWordsWithNativeContent(langPair: String): Int
 }
