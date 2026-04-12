@@ -246,146 +246,6 @@ fun SettingsScreen(
 
             // ── Language ───────────────────────────────────────────────────────
             SectionHeader(s.settingsLanguageSection)
-            SettingsRow(label = s.settingsStudyLanguage) {
-                Text(
-                    STUDY_LANGUAGES[state.languagePair] ?: state.languagePair,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.primary,
-                    fontWeight = FontWeight.Medium,
-                    modifier = Modifier.clickable { viewModel.onShowStudyLanguagePicker() },
-                )
-            }
-            SettingsRow(label = s.settingsDefinitionMode) {
-                Text(
-                    s.quizModeLabels[state.definitionQuizMode] ?: state.definitionQuizMode,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.primary,
-                    fontWeight = FontWeight.Medium,
-                    modifier = Modifier.clickable { viewModel.onShowDefinitionModePicker() },
-                )
-            }
-            SettingsRow(label = s.settingsFillBlankMode) {
-                Text(
-                    s.quizModeLabels[state.fillBlankQuizMode] ?: state.fillBlankQuizMode,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.primary,
-                    fontWeight = FontWeight.Medium,
-                    modifier = Modifier.clickable { viewModel.onShowFillBlankModePicker() },
-                )
-            }
-
-            SettingsRow(label = s.settingsQuizTypesLabel) {
-                Text(
-                    s.settingsQuizTypesCount(state.enabledQuizTypes.size, s.quizTypeLabels.size),
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.primary,
-                    fontWeight = FontWeight.Medium,
-                    modifier = Modifier.clickable { viewModel.onShowQuizTypesPicker() },
-                )
-            }
-
-            if (state.showQuizTypesPicker) {
-                AlertDialog(
-                    onDismissRequest = viewModel::onDismissQuizTypesPicker,
-                    title = { Text(s.settingsQuizTypesLabel) },
-                    text = {
-                        Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                            s.quizTypeLabels.entries.forEach { (key, label) ->
-                                val isChecked = key in state.enabledQuizTypes
-                                Row(
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .clip(RoundedCornerShape(8.dp))
-                                        .clickable { viewModel.onQuizTypeToggled(key) }
-                                        .padding(horizontal = 4.dp, vertical = 4.dp),
-                                    verticalAlignment = Alignment.CenterVertically,
-                                ) {
-                                    Checkbox(
-                                        checked = isChecked,
-                                        onCheckedChange = { viewModel.onQuizTypeToggled(key) },
-                                    )
-                                    Text(
-                                        label,
-                                        style = MaterialTheme.typography.bodyLarge,
-                                        modifier = Modifier.padding(start = 4.dp),
-                                    )
-                                }
-                            }
-                        }
-                    },
-                    confirmButton = {
-                        TextButton(onClick = viewModel::onDismissQuizTypesPicker) { Text(s.settingsDone) }
-                    },
-                )
-            }
-
-            if (state.showDefinitionModePicker) {
-                QuizModePickerDialog(
-                    title = s.settingsDefinitionMode,
-                    selectedMode = state.definitionQuizMode,
-                    onSelect = { viewModel.onDefinitionModeSelected(it) },
-                    onDismiss = viewModel::onDismissDefinitionModePicker,
-                )
-            }
-            if (state.showFillBlankModePicker) {
-                QuizModePickerDialog(
-                    title = s.settingsFillBlankMode,
-                    selectedMode = state.fillBlankQuizMode,
-                    onSelect = { viewModel.onFillBlankModeSelected(it) },
-                    onDismiss = viewModel::onDismissFillBlankModePicker,
-                )
-            }
-
-            SettingsRow(label = s.settingsProblemWordsSource) {
-                Text(
-                    s.problemWordsSourceLabels[state.problemWordsSource] ?: state.problemWordsSource,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.primary,
-                    fontWeight = FontWeight.Medium,
-                    modifier = Modifier.clickable { viewModel.onShowProblemWordsSourcePicker() },
-                )
-            }
-
-            if (state.showProblemWordsSourcePicker) {
-                AlertDialog(
-                    onDismissRequest = viewModel::onDismissProblemWordsSourcePicker,
-                    title = { Text(s.settingsProblemWordsSourceTitle) },
-                    text = {
-                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                            s.problemWordsSourceLabels.entries.forEach { (key, name) ->
-                                val isSelected = key == state.problemWordsSource
-                                Row(
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .clip(RoundedCornerShape(8.dp))
-                                        .background(
-                                            if (isSelected) MaterialTheme.colorScheme.primaryContainer
-                                            else MaterialTheme.colorScheme.surface
-                                        )
-                                        .clickable { viewModel.onProblemWordsSourceSelected(key) }
-                                        .padding(horizontal = 12.dp, vertical = 12.dp),
-                                    horizontalArrangement = Arrangement.SpaceBetween,
-                                    verticalAlignment = Alignment.CenterVertically,
-                                ) {
-                                    Text(
-                                        name,
-                                        style = MaterialTheme.typography.bodyLarge,
-                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
-                                        color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
-                                                else MaterialTheme.colorScheme.onSurface,
-                                    )
-                                    if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
-                                }
-                            }
-                        }
-                    },
-                    confirmButton = {},
-                    dismissButton = {
-                        TextButton(onClick = viewModel::onDismissProblemWordsSourcePicker) { Text(s.settingsCancelButton) }
-                    },
-                )
-            }
-
             SettingsRow(label = s.settingsNativeLanguage) {
                 Text(
                     NATIVE_LANGUAGES[state.nativeLanguage] ?: state.nativeLanguage,
@@ -393,6 +253,15 @@ fun SettingsScreen(
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.Medium,
                     modifier = Modifier.clickable { viewModel.onShowLanguagePicker() },
+                )
+            }
+            SettingsRow(label = s.settingsStudyLanguage) {
+                Text(
+                    STUDY_LANGUAGES[state.languagePair] ?: state.languagePair,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowStudyLanguagePicker() },
                 )
             }
 
@@ -472,6 +341,135 @@ fun SettingsScreen(
                     confirmButton = {},
                     dismissButton = {
                         TextButton(onClick = viewModel::onDismissLanguagePicker) { Text(s.settingsCancelButton) }
+                    },
+                )
+            }
+
+            // ── Tasks ─────────────────────────────────────────────────────────
+            SectionHeader(s.settingsTasksSection)
+            SettingsRow(label = s.settingsDefinitionMode) {
+                Text(
+                    s.quizModeLabels[state.definitionQuizMode] ?: state.definitionQuizMode,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowDefinitionModePicker() },
+                )
+            }
+            SettingsRow(label = s.settingsFillBlankMode) {
+                Text(
+                    s.quizModeLabels[state.fillBlankQuizMode] ?: state.fillBlankQuizMode,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowFillBlankModePicker() },
+                )
+            }
+            SettingsRow(label = s.settingsQuizTypesLabel) {
+                Text(
+                    s.settingsQuizTypesCount(state.enabledQuizTypes.size, s.quizTypeLabels.size),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowQuizTypesPicker() },
+                )
+            }
+            SettingsRow(label = s.settingsProblemWordsSource) {
+                Text(
+                    s.problemWordsSourceLabels[state.problemWordsSource] ?: state.problemWordsSource,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowProblemWordsSourcePicker() },
+                )
+            }
+
+            if (state.showQuizTypesPicker) {
+                AlertDialog(
+                    onDismissRequest = viewModel::onDismissQuizTypesPicker,
+                    title = { Text(s.settingsQuizTypesLabel) },
+                    text = {
+                        Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                            s.quizTypeLabels.entries.forEach { (key, label) ->
+                                val isChecked = key in state.enabledQuizTypes
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .clip(RoundedCornerShape(8.dp))
+                                        .clickable { viewModel.onQuizTypeToggled(key) }
+                                        .padding(horizontal = 4.dp, vertical = 4.dp),
+                                    verticalAlignment = Alignment.CenterVertically,
+                                ) {
+                                    Checkbox(
+                                        checked = isChecked,
+                                        onCheckedChange = { viewModel.onQuizTypeToggled(key) },
+                                    )
+                                    Text(
+                                        label,
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        modifier = Modifier.padding(start = 4.dp),
+                                    )
+                                }
+                            }
+                        }
+                    },
+                    confirmButton = {
+                        TextButton(onClick = viewModel::onDismissQuizTypesPicker) { Text(s.settingsDone) }
+                    },
+                )
+            }
+            if (state.showDefinitionModePicker) {
+                QuizModePickerDialog(
+                    title = s.settingsDefinitionMode,
+                    selectedMode = state.definitionQuizMode,
+                    onSelect = { viewModel.onDefinitionModeSelected(it) },
+                    onDismiss = viewModel::onDismissDefinitionModePicker,
+                )
+            }
+            if (state.showFillBlankModePicker) {
+                QuizModePickerDialog(
+                    title = s.settingsFillBlankMode,
+                    selectedMode = state.fillBlankQuizMode,
+                    onSelect = { viewModel.onFillBlankModeSelected(it) },
+                    onDismiss = viewModel::onDismissFillBlankModePicker,
+                )
+            }
+            if (state.showProblemWordsSourcePicker) {
+                AlertDialog(
+                    onDismissRequest = viewModel::onDismissProblemWordsSourcePicker,
+                    title = { Text(s.settingsProblemWordsSourceTitle) },
+                    text = {
+                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                            s.problemWordsSourceLabels.entries.forEach { (key, name) ->
+                                val isSelected = key == state.problemWordsSource
+                                Row(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .clip(RoundedCornerShape(8.dp))
+                                        .background(
+                                            if (isSelected) MaterialTheme.colorScheme.primaryContainer
+                                            else MaterialTheme.colorScheme.surface
+                                        )
+                                        .clickable { viewModel.onProblemWordsSourceSelected(key) }
+                                        .padding(horizontal = 12.dp, vertical = 12.dp),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically,
+                                ) {
+                                    Text(
+                                        name,
+                                        style = MaterialTheme.typography.bodyLarge,
+                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                                        color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                                                else MaterialTheme.colorScheme.onSurface,
+                                    )
+                                    if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
+                                }
+                            }
+                        }
+                    },
+                    confirmButton = {},
+                    dismissButton = {
+                        TextButton(onClick = viewModel::onDismissProblemWordsSourcePicker) { Text(s.settingsCancelButton) }
                     },
                 )
             }
