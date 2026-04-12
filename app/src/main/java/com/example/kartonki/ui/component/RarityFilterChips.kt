@@ -40,9 +40,10 @@ fun RarityFilterChips(
     FlowRow(
         modifier = modifier
             .fillMaxWidth()
-            .padding(start = 12.dp, end = 12.dp, top = 8.dp, bottom = 4.dp),
+            .padding(start = 12.dp, end = 12.dp, top = 6.dp, bottom = 6.dp),
         horizontalArrangement = Arrangement.spacedBy(6.dp),
-        verticalArrangement = Arrangement.spacedBy(0.dp),
+        verticalArrangement = Arrangement.Top,
+        itemVerticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
     ) {
         Rarity.entries.forEach { rarity ->
             val color = Color(rarity.colorArgb)
@@ -52,7 +53,7 @@ fun RarityFilterChips(
                 shape = RoundedCornerShape(20.dp),
                 color = if (isActive) color.copy(alpha = 0.85f) else color.copy(alpha = 0.15f),
                 border = BorderStroke(1.dp, if (isActive) color else color.copy(alpha = 0.4f)),
-                modifier = Modifier.padding(bottom = 2.dp),
+                modifier = Modifier.padding(bottom = 3.dp),
             ) {
                 val sub = sublabelFor?.invoke(rarity)
                 if (sub != null) {
@@ -62,15 +63,15 @@ fun RarityFilterChips(
                         fontWeight = if (isActive) FontWeight.ExtraBold else FontWeight.Bold,
                         textAlign = TextAlign.Center,
                         color = if (isActive) Color.White else color,
-                        modifier = Modifier.padding(horizontal = 12.dp, vertical = 5.dp),
+                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 4.dp),
                     )
                 } else {
                     Text(
                         text = rarity.localizedName(s),
-                        style = MaterialTheme.typography.labelMedium,
+                        style = MaterialTheme.typography.labelSmall,
                         fontWeight = if (isActive) FontWeight.Bold else FontWeight.Normal,
                         color = if (isActive) Color.White else color,
-                        modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
+                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 3.dp),
                     )
                 }
             }
