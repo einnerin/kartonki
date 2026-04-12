@@ -468,5 +468,11 @@ object SeedDataHebrew {
             example = "יְכוֹלֶת הִתְרַחֲבוּת גבוהה חשובה לשירות פופולרי.",
             exampleNative = "Высокая יְכוֹלֶת הִתְרַחֲבוּת платформы важна в час пик.",
             rarity = "LEGENDARY", languagePair = "he-ru", setId = 103, pos = "noun", semanticGroup = "cs_theory"),
+        WordEntity(original = "בְּדִיקוֹת", transliteration = "bdikot", translation = "тестирование",
+            definition = "תהליך בדיקת קוד כדי לאתר שגיאות ולוודא תפקוד תקין.",
+            definitionNative = "Процесс проверки кода для обнаружения ошибок и подтверждения корректной работы.",
+            example = "בְּדִיקוֹת אוטומטיות חוסכות זמן ומונעות רגרסיות.",
+            exampleNative = "Автоматические בְּדִיקוֹת экономят время и предотвращают регрессии.",
+            rarity = "RARE", languagePair = "he-ru", setId = 103, pos = "noun", semanticGroup = "architecture"),
     )
 }
