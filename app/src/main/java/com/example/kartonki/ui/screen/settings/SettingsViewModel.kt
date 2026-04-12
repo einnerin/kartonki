@@ -112,16 +112,11 @@ class SettingsViewModel @Inject constructor(
                 combine(
                     prefs.fillBlankQuizMode,
                     prefs.quizTypesEnabled,
-                    prefs.problemWordsSource,
-                ) { fillBlankMode, enabledTypes, problemSource ->
-                    Triple(fillBlankMode, enabledTypes, problemSource)
+                ) { fillBlankMode, enabledTypes ->
+                    Pair(fillBlankMode, enabledTypes)
                 },
-            ) { base, triple ->
-                base.copy(
-                    fillBlankQuizMode  = triple.first,
-                    enabledQuizTypes   = triple.second,
-                    problemWordsSource = triple.third,
-                )
+            ) { base, (fillBlankMode, enabledTypes) ->
+                base.copy(fillBlankQuizMode = fillBlankMode, enabledQuizTypes = enabledTypes)
             }.collect { state ->
                 _uiState.update { current ->
                     state.copy(
@@ -135,6 +130,12 @@ class SettingsViewModel @Inject constructor(
                         showProblemWordsSourcePicker = current.showProblemWordsSourcePicker,
                     )
                 }
+            }
+        }
+        // Collect problemWordsSource in a separate coroutine to keep the combine above clean
+        viewModelScope.launch {
+            prefs.problemWordsSource.collect { source ->
+                _uiState.update { it.copy(problemWordsSource = source) }
             }
         }
     }
