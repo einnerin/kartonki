@@ -13,19 +13,19 @@ interface WordSetDao {
         SELECT ws.* FROM word_sets ws
         LEFT JOIN (
             SELECT setId,
-                   CASE rarity
-                       WHEN 'COMMON'    THEN 0
-                       WHEN 'UNCOMMON'  THEN 1
-                       WHEN 'RARE'      THEN 2
-                       WHEN 'EPIC'      THEN 3
-                       WHEN 'LEGENDARY' THEN 4
-                       ELSE 99
-                   END AS rarityOrder
+                   SUM(CASE rarity
+                       WHEN 'COMMON'    THEN 1
+                       WHEN 'UNCOMMON'  THEN 2
+                       WHEN 'RARE'      THEN 4
+                       WHEN 'EPIC'      THEN 7
+                       WHEN 'LEGENDARY' THEN 12
+                       ELSE 1
+                   END) * 1.0 / COUNT(*) AS avgPoints
             FROM words
             GROUP BY setId
         ) w ON w.setId = ws.id
         WHERE ws.languagePair = :languagePair
-        ORDER BY COALESCE(w.rarityOrder, 99) ASC, ws.id ASC
+        ORDER BY COALESCE(w.avgPoints, 0) ASC, ws.id ASC
     """)
     suspend fun getSetsByLanguage(languagePair: String): List<WordSetEntity>
 
