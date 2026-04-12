@@ -1,5 +1,6 @@
 package com.example.kartonki.ui.screen.shop
 
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.repository.PackRepository
@@ -24,14 +25,17 @@ data class PackOpeningUiState(
 @HiltViewModel
 class PackOpeningViewModel @Inject constructor(
     private val packRepository: PackRepository,
+    savedStateHandle: SavedStateHandle,
 ) : ViewModel() {
+
+    private val packCount: Int = savedStateHandle.get<Int>("count") ?: 1
 
     private val _uiState = MutableStateFlow(PackOpeningUiState())
     val uiState: StateFlow<PackOpeningUiState> = _uiState.asStateFlow()
 
     init {
         viewModelScope.launch {
-            val cards = packRepository.consumeAndOpenPack()
+            val cards = packRepository.consumeAndOpenPacks(packCount)
             _uiState.update { it.copy(isLoading = false, cards = cards) }
         }
     }

@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Icon
@@ -50,11 +51,10 @@ import com.example.kartonki.ui.theme.glowEffect
 @Composable
 fun PackShopScreen(
     onNavigateBack: () -> Unit,
-    onOpenPack: () -> Unit,
+    onOpenPacks: (Int) -> Unit,
     viewModel: PackShopViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
-    val canOpen = state.freePackCount >= 1
     val s = LocalAppStrings.current
 
     Box(
@@ -84,7 +84,7 @@ fun PackShopScreen(
             )
         }
 
-        // Centered pack content
+        // Centered content
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -95,7 +95,7 @@ fun PackShopScreen(
             // Pack art card
             Box(
                 modifier = Modifier
-                    .size(200.dp)
+                    .size(180.dp)
                     .glowEffect(AccentGold, glowRadius = 32.dp, cornerRadius = 24.dp, alpha = 0.5f)
                     .clip(RoundedCornerShape(24.dp))
                     .background(
@@ -114,39 +114,97 @@ fun PackShopScreen(
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
-                    Text("✦", fontSize = 28.sp, color = AccentGold)
-                    Text("🎴", fontSize = 52.sp)
-                    Text("✦", fontSize = 20.sp, color = AccentGold.copy(alpha = 0.6f))
+                    Text("✦", fontSize = 24.sp, color = AccentGold)
+                    Text("🎴", fontSize = 48.sp)
+                    Text("✦", fontSize = 18.sp, color = AccentGold.copy(alpha = 0.6f))
                 }
             }
 
-            Spacer(Modifier.height(32.dp))
+            Spacer(Modifier.height(24.dp))
 
-            // Pack name
+            // Pack name (language-aware)
             Text(
-                text = s.shopPackName,
-                style = MaterialTheme.typography.headlineMedium,
+                text = s.shopPackNameFor(state.languagePair),
+                style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.ExtraBold,
                 color = AccentGold,
                 textAlign = TextAlign.Center,
             )
-
-            Spacer(Modifier.height(8.dp))
-
-            // Card count
+            Spacer(Modifier.height(4.dp))
             Text(
                 text = s.shopPackCards,
-                style = MaterialTheme.typography.bodyLarge,
+                style = MaterialTheme.typography.bodyMedium,
                 color = TextSecondary,
                 textAlign = TextAlign.Center,
             )
 
-            Spacer(Modifier.height(48.dp))
+            Spacer(Modifier.height(32.dp))
+
+            // Count selector
+            Text(
+                text = s.shopCountLabel,
+                style = MaterialTheme.typography.labelLarge,
+                color = TextSecondary,
+                modifier = Modifier.fillMaxWidth(),
+            )
+            Spacer(Modifier.height(8.dp))
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                PACK_COUNT_OPTIONS.forEach { count ->
+                    val isSelected = state.selectedPackCount == count
+                    val isAffordable = state.freePackCount >= count
+                    if (isSelected) {
+                        Button(
+                            onClick = { viewModel.setPackCount(count) },
+                            modifier = Modifier.weight(1f),
+                            shape = RoundedCornerShape(12.dp),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = AccentGold,
+                                contentColor = Color(0xFF1A1000),
+                            ),
+                            contentPadding = PaddingValues(horizontal = 4.dp, vertical = 10.dp),
+                        ) {
+                            Text("×$count", fontWeight = FontWeight.ExtraBold, fontSize = 15.sp)
+                        }
+                    } else {
+                        OutlinedButton(
+                            onClick = { viewModel.setPackCount(count) },
+                            modifier = Modifier.weight(1f),
+                            shape = RoundedCornerShape(12.dp),
+                            colors = ButtonDefaults.outlinedButtonColors(
+                                contentColor = if (isAffordable) AccentGold else TextSecondary,
+                            ),
+                            border = androidx.compose.foundation.BorderStroke(
+                                1.dp,
+                                if (isAffordable) AccentGold.copy(alpha = 0.5f)
+                                else TextSecondary.copy(alpha = 0.2f),
+                            ),
+                            contentPadding = PaddingValues(horizontal = 4.dp, vertical = 10.dp),
+                        ) {
+                            Text("×$count", fontWeight = FontWeight.Medium, fontSize = 15.sp)
+                        }
+                    }
+                }
+            }
+
+            Spacer(Modifier.height(12.dp))
+
+            // Available packs indicator
+            Text(
+                text = s.shopHavePacks(state.freePackCount),
+                style = MaterialTheme.typography.bodyMedium,
+                color = if (state.canOpen) AccentGold.copy(alpha = 0.8f) else TextSecondary,
+                modifier = Modifier.fillMaxWidth(),
+            )
+
+            Spacer(Modifier.height(20.dp))
 
             // Open button
-            if (canOpen) {
+            if (state.canOpen) {
                 Button(
-                    onClick = onOpenPack,
+                    onClick = { onOpenPacks(state.selectedPackCount) },
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(56.dp)
@@ -164,11 +222,8 @@ fun PackShopScreen(
                             ),
                         contentAlignment = Alignment.Center,
                     ) {
-                        val label = if (state.freePackCount > 1)
-                            s.shopOpenMultiple(state.freePackCount)
-                        else s.shopOpenButton
                         Text(
-                            text = label,
+                            text = "${s.shopOpenButton} ×${state.selectedPackCount}",
                             fontSize = 17.sp,
                             fontWeight = FontWeight.ExtraBold,
                             color = Color.White,
@@ -176,7 +231,6 @@ fun PackShopScreen(
                     }
                 }
             } else {
-                // Disabled state
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
@@ -186,14 +240,12 @@ fun PackShopScreen(
                         .border(1.dp, TextSecondary.copy(alpha = 0.3f), RoundedCornerShape(16.dp)),
                     contentAlignment = Alignment.Center,
                 ) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(
-                            text = s.shopNoPacks,
-                            fontSize = 15.sp,
-                            fontWeight = FontWeight.Medium,
-                            color = TextSecondary,
-                        )
-                    }
+                    Text(
+                        text = s.shopNoPacks,
+                        fontSize = 15.sp,
+                        fontWeight = FontWeight.Medium,
+                        color = TextSecondary,
+                    )
                 }
                 Spacer(Modifier.height(8.dp))
                 Text(

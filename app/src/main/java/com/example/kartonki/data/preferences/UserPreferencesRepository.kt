@@ -61,8 +61,9 @@ class UserPreferencesRepository @Inject constructor(
     fun setLanguagePair(pair: String)    = prefs.edit().putString(Keys.LANGUAGE_PAIR, pair).apply()
     fun setNativeLanguage(lang: String)  = prefs.edit().putString(Keys.NATIVE_LANGUAGE, lang).apply()
 
-    fun getActivityCount(): Int  = prefs.getInt(Keys.ACTIVITY_COUNT, 0)
-    fun getFreePackCount(): Int  = prefs.getInt(Keys.FREE_PACK_COUNT, 0)
+    fun getActivityCount(): Int    = prefs.getInt(Keys.ACTIVITY_COUNT, 0)
+    fun getFreePackCount(): Int    = prefs.getInt(Keys.FREE_PACK_COUNT, 0)
+    fun getLanguagePair(): String  = prefs.getString(Keys.LANGUAGE_PAIR, "en-ru") ?: "en-ru"
 
     fun setActivityCount(n: Int)  = prefs.edit().putInt(Keys.ACTIVITY_COUNT, n).apply()
     fun setFreePackCount(n: Int)  = prefs.edit().putInt(Keys.FREE_PACK_COUNT, n).apply()

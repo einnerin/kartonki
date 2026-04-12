@@ -32,7 +32,10 @@ sealed class Route(val path: String) {
     object ProblemWordsSession : Route("problem_words_session")
 
     object PackShop    : Route("pack_shop")
-    object PackOpening : Route("pack_opening")
+    object PackOpening : Route("pack_opening/{count}") {
+        fun createRoute(count: Int) = "pack_opening/$count"
+        const val ARG_COUNT = "count"
+    }
     object NewCards    : Route("new_cards")
 
     object PvpGame : Route("pvp_game/{deck1Id}/{deck2Id}?p1Name={p1Name}&p2Name={p2Name}") {

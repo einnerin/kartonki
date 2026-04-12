@@ -200,11 +200,14 @@ fun AppNavGraph(navController: NavHostController) {
         composable(Route.PackShop.path) {
             PackShopScreen(
                 onNavigateBack = { navController.popBackStack() },
-                onOpenPack = { navController.navigate(Route.PackOpening.path) },
+                onOpenPacks = { count -> navController.navigate(Route.PackOpening.createRoute(count)) },
             )
         }
 
-        composable(Route.PackOpening.path) {
+        composable(
+            route = Route.PackOpening.path,
+            arguments = listOf(navArgument(Route.PackOpening.ARG_COUNT) { type = NavType.IntType }),
+        ) {
             PackOpeningScreen(
                 onFinished = { navController.popBackStack() },
                 onNavigateHome = {

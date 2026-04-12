@@ -26,8 +26,9 @@ class PackRepository @Inject constructor(
     private val _pendingNewCards = MutableStateFlow<List<Word>>(emptyList())
     val pendingNewCards: StateFlow<List<Word>> = _pendingNewCards.asStateFlow()
 
-    val activityCount: Flow<Int> = userPrefs.activityCount
-    val freePackCount: Flow<Int> = userPrefs.freePackCount
+    val activityCount: Flow<Int>  = userPrefs.activityCount
+    val freePackCount: Flow<Int>  = userPrefs.freePackCount
+    val languagePair: Flow<String> = userPrefs.languagePair
 
     fun clearPendingNewCards() {
         _pendingNewCards.value = emptyList()
@@ -63,16 +64,18 @@ class PackRepository @Inject constructor(
         }
     }
 
-    suspend fun consumeAndOpenPack(): List<Word> {
+    suspend fun consumeAndOpenPacks(count: Int): List<Word> {
         val current = userPrefs.getFreePackCount()
-        if (current > 0) {
-            userPrefs.setFreePackCount(current - 1)
+        val toConsume = minOf(count, current)
+        if (toConsume > 0) {
+            userPrefs.setFreePackCount(current - toConsume)
         }
-        return generatePackCards()
+        return (1..toConsume).flatMap { generatePackCards() }
     }
 
     private suspend fun generatePackCards(): List<Word> {
-        val allWords = wordDao.getAllWordsOnce()
+        val langPair = userPrefs.getLanguagePair()
+        val allWords = wordDao.getAllWordsByLanguage(langPair)
         val byRarity = allWords.groupBy { it.rarity }
 
         val result = mutableListOf<WordEntity>()
@@ -87,7 +90,8 @@ class PackRepository @Inject constructor(
 
         // Fill to 5 if needed
         if (result.size < 5) {
-            val fallback = allWords.shuffled().take(5 - result.size)
+            val already = result.map { it.id }.toSet()
+            val fallback = allWords.filter { it.id !in already }.shuffled().take(5 - result.size)
             result.addAll(fallback)
         }
 
