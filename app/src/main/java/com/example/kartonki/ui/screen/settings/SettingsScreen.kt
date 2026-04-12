@@ -457,7 +457,11 @@ private fun SettingsRow(label: String, trailing: @Composable () -> Unit) {
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        Text(label, style = MaterialTheme.typography.bodyLarge)
+        Text(
+            text = label,
+            style = MaterialTheme.typography.bodyLarge,
+            modifier = Modifier.weight(1f).padding(end = 8.dp),
+        )
         trailing()
     }
     Spacer(Modifier.height(8.dp))

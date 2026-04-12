@@ -348,6 +348,7 @@ private fun QuizScreen(
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold,
                     color = Color.White,
+                    softWrap = true,
                 )
 
                 Spacer(Modifier.height(4.dp))
@@ -619,12 +620,14 @@ private fun MultiplierRow(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
             ) {
-                Column {
+                Column(modifier = Modifier.weight(1f, fill = false)) {
                     Text(
                         text = player.name,
                         style = MaterialTheme.typography.labelMedium,
                         color = if (isActive) Color.White else TextSecondary,
                         fontWeight = if (isActive) FontWeight.Bold else FontWeight.Normal,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
                     )
                     Text(
                         text = "${player.score} очков",

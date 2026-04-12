@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -41,6 +42,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -256,7 +258,7 @@ private fun PackCardSlot(
     Box(
         modifier = Modifier
             .width(280.dp)
-            .height(120.dp)
+            .heightIn(min = 120.dp)
             .graphicsLayer {
                 rotationY = flipRotation.value
                 cameraDistance = 12f * density
@@ -310,11 +312,15 @@ private fun PackCardSlot(
                         fontWeight = FontWeight.ExtraBold,
                         color = Color.White,
                         fontSize = 20.sp,
+                        maxLines = 2,
+                        overflow = TextOverflow.Ellipsis,
                     )
                     Text(
                         text = word.translation,
                         style = MaterialTheme.typography.bodyMedium,
                         color = TextSecondary,
+                        maxLines = 2,
+                        overflow = TextOverflow.Ellipsis,
                     )
                 }
             }

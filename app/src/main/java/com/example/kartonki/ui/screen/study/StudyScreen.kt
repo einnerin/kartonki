@@ -46,6 +46,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.kartonki.domain.model.Rarity
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -210,6 +211,8 @@ private fun WordSetCard(item: WordSetUiItem, onClick: () -> Unit) {
                             text = item.description,
                             style = MaterialTheme.typography.bodySmall,
                             color = TextSecondary,
+                            maxLines = 2,
+                            overflow = TextOverflow.Ellipsis,
                         )
                     }
                 }
