@@ -280,3 +280,18 @@ id("com.google.devtools.ksp") version "2.2.10-1.0.29" apply false
 - **Side effects**: через `LaunchedEffect` / `SideEffect` в Compose
 - **Strings**: все строки в `strings.xml`, поддержка i18n с первого дня
 - **Нет nullable там где не нужно**: предпочитать sealed class/enum вместо nullable флагов
+
+## Правила работы с Git
+
+После завершения каждой задачи автоматически:
+1. Собери проект (`./gradlew assembleDebug`) и убедись, что BUILD SUCCESSFUL
+2. Добавь все изменённые файлы в индекс (`git add`)
+3. Сделай коммит с подробным описанием на русском языке
+4. Запушь в origin main (`git push origin main`)
+
+**Переменная окружения для сборки:** `JAVA_HOME="C:/Program Files/Android/Android Studio/jbr"`
+
+Коммит всегда включает строку:
+```
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+```
