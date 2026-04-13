@@ -14,12 +14,14 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.statusBarsPadding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Icon
@@ -43,11 +45,13 @@ import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
+import com.example.kartonki.ui.theme.BgMedium
 import com.example.kartonki.ui.theme.RarityLegendary
 import com.example.kartonki.ui.theme.TextPrimary
 import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun PackShopScreen(
     onNavigateBack: () -> Unit,
@@ -57,33 +61,33 @@ fun PackShopScreen(
     val state by viewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
 
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Brush.verticalGradient(listOf(Color(0xFF0D1B30), BgDeep)))
-            .statusBarsPadding()
-            .navigationBarsPadding(),
-    ) {
-        // Top bar
-        Row(
-            modifier = Modifier
-                .align(Alignment.TopStart)
-                .fillMaxWidth()
-                .padding(horizontal = 8.dp, vertical = 4.dp),
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            IconButton(onClick = onNavigateBack) {
-                Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
-            }
-            Spacer(Modifier.width(4.dp))
-            Text(
-                text = s.shopTitle,
-                style = MaterialTheme.typography.titleLarge,
-                fontWeight = FontWeight.Bold,
-                color = AccentGold,
+    Scaffold(
+        containerColor = Color.Transparent,
+        topBar = {
+            TopAppBar(
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = BgMedium,
+                    titleContentColor = AccentGold,
+                    navigationIconContentColor = Color.White,
+                ),
+                title = {
+                    Text(s.shopTitle, fontWeight = FontWeight.Bold)
+                },
+                navigationIcon = {
+                    IconButton(onClick = onNavigateBack) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
+                    }
+                },
             )
-        }
-
+        },
+    ) { innerPadding ->
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Brush.verticalGradient(listOf(Color(0xFF0D1B30), BgDeep)))
+                .padding(innerPadding)
+                .navigationBarsPadding(),
+        ) {
         // Centered content
         Column(
             modifier = Modifier
@@ -255,6 +259,7 @@ fun PackShopScreen(
                     textAlign = TextAlign.Center,
                 )
             }
+        }
         }
     }
 }
