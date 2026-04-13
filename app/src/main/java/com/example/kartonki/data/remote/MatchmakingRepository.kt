@@ -5,6 +5,8 @@ import com.example.kartonki.data.remote.model.OnlineMatchData
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.MutableData
+import com.google.firebase.database.Transaction
 import com.google.firebase.database.ValueEventListener
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
@@ -19,113 +21,175 @@ sealed class MatchmakingResult {
 }
 
 /**
- * Simple single-slot matchmaking:
+ * Two-phase matchmaking using a single shared lobby slot per language pair.
  *
- *   /lobby/{languagePair}  — one shared slot per language pair
+ * Path layout:
+ *   /matchmaking_lobby/{lang}/slot          — atomic slot: who is waiting
+ *   /matchmaking_lobby/{lang}_data_{uid}    — player card data (written first)
+ *   /matches/{matchId}                      — active game document
  *
- * First player writes their info and waits.
- * Second player reads the slot, creates the match, writes matchId back.
- * Both navigate when they have a matchId.
+ * Protocol:
+ *   1. Each player writes their card data to their personal data node.
+ *   2. Each player runs a Firebase Transaction on the slot:
+ *        - Slot empty  → claim it (write own uid). Become the Waiter.
+ *        - Slot taken  → leave it unchanged.          Become the Creator.
+ *   3. Waiter  — listens on the slot for matchId to appear.
+ *   4. Creator — reads opponent's card data, creates the match document,
+ *                writes matchId back to the slot so the Waiter can navigate.
  *
- * No per-user queue reads required — only one shared path is ever read.
+ * The Transaction ensures exactly one player claims the slot even when both
+ * arrive simultaneously (Firebase retries on conflict with fresh server data).
  */
 @Singleton
 class MatchmakingRepository @Inject constructor(
     private val database: FirebaseDatabase,
 ) {
-    private val lobbyRef   get() = database.getReference("lobby")
+    private val lobbyRef   get() = database.getReference("matchmaking_lobby")
     private val matchesRef get() = database.getReference("matches")
 
     fun findMatch(entry: MatchmakingEntry): Flow<MatchmakingResult> = callbackFlow {
-        val slotRef = lobbyRef.child(entry.languagePair)
+        val slotRef   = lobbyRef.child("${entry.languagePair}/slot")
+        val myDataRef = lobbyRef.child("${entry.languagePair}_data_${entry.uid}")
         var done = false
+
+        // Shared cleanup: remove my personal data node when done or cancelled.
+        val cleanup: () -> Unit = { myDataRef.removeValue() }
 
         trySend(MatchmakingResult.Searching)
 
-        // ── Persistent listener on the lobby slot ────────────────────────────
+        // ── Listener: waiter path — fires when creator writes matchId ─────────
         val slotListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (done) return
-                val slotUid  = snapshot.child("uid").getValue(String::class.java)
-                val matchId  = snapshot.child("matchId").getValue(String::class.java)
-
-                // Case A: I'm the waiter and the creator wrote a matchId for me
+                val slotUid = snapshot.child("uid").getValue(String::class.java)
+                val matchId = snapshot.child("matchId").getValue(String::class.java)
                 if (slotUid == entry.uid && matchId != null) {
                     done = true
                     val myIdx = snapshot.child("myIndex").getValue(Long::class.java)?.toInt() ?: 1
                     trySend(MatchmakingResult.Found(matchId, myIdx))
-                    return
-                }
-
-                // Case B: Someone else is waiting (no matchId yet) — I create the match
-                if (slotUid != null && slotUid != entry.uid && matchId == null) {
-                    done = true
-                    val opponentUid   = slotUid
-                    val opponentName  = snapshot.child("playerName").getValue(String::class.java) ?: "Игрок"
-                    val opponentCards = snapshot.child("cardIds").value.toCardIdList()
-
-                    val newMatchId = matchesRef.push().key ?: return
-                    val matchData = mapOf(
-                        "matchId"             to newMatchId,
-                        "player1Uid"          to entry.uid,        // I am player 1 (index 0)
-                        "player2Uid"          to opponentUid,      // Waiter is player 2 (index 1)
-                        "player1Name"         to entry.playerName,
-                        "player2Name"         to opponentName,
-                        "player1CardIds"      to entry.cardIds,
-                        "player2CardIds"      to opponentCards,
-                        "player1RemainingIds" to entry.cardIds,
-                        "player2RemainingIds" to opponentCards,
-                        "status"              to OnlineMatchData.STATUS_ACTIVE,
-                        "currentTurn"         to 0,
-                        "phase"               to OnlineMatchData.PHASE_HAND_SELECTION,
-                        "player1Score"        to 0,
-                        "player2Score"        to 0,
-                        "player1Streak"       to 0,
-                        "player2Streak"       to 0,
-                        "roundStartTime"      to System.currentTimeMillis(),
-                        "currentRound"        to null,
-                        "winnerIndex"         to -1,
-                    )
-                    matchesRef.child(newMatchId).setValue(matchData).addOnSuccessListener {
-                        // Tell the waiter (player 2, index 1) their matchId via the slot
-                        slotRef.updateChildren(mapOf("matchId" to newMatchId, "myIndex" to 1))
-                        // I am player 1 (index 0) — navigate immediately
-                        trySend(MatchmakingResult.Found(newMatchId, 0))
-                    }
+                    cleanup()
                 }
             }
-
             override fun onCancelled(error: DatabaseError) {
                 trySend(MatchmakingResult.Error(error.message))
             }
         }
         slotRef.addValueEventListener(slotListener)
 
-        // ── Try to claim the slot as the first waiter ────────────────────────
-        // If the slot is empty or has a stale/completed entry, write ourselves.
-        // If someone else is already waiting, the persistent listener above handles it.
-        slotRef.addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if (done) return
-                val existingUid     = snapshot.child("uid").getValue(String::class.java)
-                val existingMatchId = snapshot.child("matchId").getValue(String::class.java)
-                // Claim the slot if it's free, stale (has matchId = already matched pair), or mine
-                if (existingUid == null || existingMatchId != null || existingUid == entry.uid) {
-                    slotRef.setValue(mapOf(
-                        "uid"        to entry.uid,
-                        "playerName" to entry.playerName,
-                        "cardIds"    to entry.cardIds,
-                        "timestamp"  to entry.timestamp,
-                    ))
+        // ── Step 1: Write card data BEFORE touching the slot ──────────────────
+        // The creator reads this when building the match document.
+        // applyLocally is irrelevant here; we chain on addOnSuccessListener to
+        // guarantee the data exists on the server before the transaction runs.
+        myDataRef.setValue(mapOf(
+            "playerName" to entry.playerName,
+            "cardIds"    to entry.cardIds,
+            "timestamp"  to entry.timestamp,
+        )).addOnSuccessListener {
+
+            // ── Step 2: Transaction — atomically claim the slot ───────────────
+            slotRef.runTransaction(object : Transaction.Handler {
+
+                // doTransaction may be called multiple times (Firebase retries on
+                // conflict). Must handle null currentData (local cache miss).
+                override fun doTransaction(currentData: MutableData): Transaction.Result {
+                    val slotUid = currentData.child("uid").getValue(String::class.java)
+                    val matchId = currentData.child("matchId").getValue(String::class.java)
+
+                    return when {
+                        // Empty slot or stale completed-match entry — claim it.
+                        slotUid == null || matchId != null || slotUid == entry.uid -> {
+                            currentData.child("uid").value     = entry.uid
+                            currentData.child("matchId").value = null
+                            currentData.child("myIndex").value = null
+                            Transaction.success(currentData)
+                        }
+                        // Someone else is waiting — don't change, just observe.
+                        else -> Transaction.success(currentData)
+                    }
                 }
-                // If existingUid != null and no matchId: persistent listener already triggered Case B
-            }
-            override fun onCancelled(error: DatabaseError) {}
-        })
+
+                override fun onComplete(
+                    error: DatabaseError?,
+                    committed: Boolean,
+                    currentData: DataSnapshot?,
+                ) {
+                    if (done) return
+                    if (error != null || currentData == null) {
+                        trySend(MatchmakingResult.Error(error?.message ?: "Transaction failed"))
+                        return
+                    }
+
+                    val slotUid = currentData.child("uid").getValue(String::class.java)
+
+                    if (slotUid == entry.uid || slotUid == null) {
+                        // I claimed the slot — become the Waiter.
+                        // slotListener above fires when the Creator writes matchId.
+                        return
+                    }
+
+                    // ── Creator path ─────────────────────────────────────────
+                    // Someone else is in the slot; I create the match.
+                    done = true
+                    val opponentUid = slotUid
+
+                    lobbyRef.child("${entry.languagePair}_data_${opponentUid}")
+                        .addListenerForSingleValueEvent(object : ValueEventListener {
+                            override fun onDataChange(snap: DataSnapshot) {
+                                val opponentName  = snap.child("playerName").getValue(String::class.java) ?: "Игрок"
+                                val opponentCards = snap.child("cardIds").value.toCardIdList()
+
+                                val newMatchId = matchesRef.push().key ?: return
+                                val matchData = mapOf(
+                                    "matchId"             to newMatchId,
+                                    "player1Uid"          to entry.uid,
+                                    "player2Uid"          to opponentUid,
+                                    "player1Name"         to entry.playerName,
+                                    "player2Name"         to opponentName,
+                                    "player1CardIds"      to entry.cardIds,
+                                    "player2CardIds"      to opponentCards,
+                                    "player1RemainingIds" to entry.cardIds,
+                                    "player2RemainingIds" to opponentCards,
+                                    "status"              to OnlineMatchData.STATUS_ACTIVE,
+                                    "currentTurn"         to 0,
+                                    "phase"               to OnlineMatchData.PHASE_HAND_SELECTION,
+                                    "player1Score"        to 0,
+                                    "player2Score"        to 0,
+                                    "player1Streak"       to 0,
+                                    "player2Streak"       to 0,
+                                    "roundStartTime"      to System.currentTimeMillis(),
+                                    "currentRound"        to null,
+                                    "winnerIndex"         to -1,
+                                )
+
+                                // Commit the match document first; only then signal the Waiter.
+                                matchesRef.child(newMatchId).setValue(matchData)
+                                    .addOnSuccessListener {
+                                        // Write matchId into the slot → Waiter's slotListener fires.
+                                        slotRef.setValue(mapOf(
+                                            "uid"     to opponentUid,
+                                            "matchId" to newMatchId,
+                                            "myIndex" to 1,           // Waiter is player 2
+                                        ))
+                                        // Creator is player 1 (index 0) — navigate immediately.
+                                        trySend(MatchmakingResult.Found(newMatchId, 0))
+                                        cleanup()
+                                    }
+                                    .addOnFailureListener { e ->
+                                        trySend(MatchmakingResult.Error("Match creation failed: ${e.message}"))
+                                    }
+                            }
+                            override fun onCancelled(error: DatabaseError) {
+                                trySend(MatchmakingResult.Error(error.message))
+                            }
+                        })
+                }
+            }, false) // applyLocally=false: use committed server state, not local cache
+        }
 
         awaitClose {
             slotRef.removeEventListener(slotListener)
-            // Clean up: remove the slot only if we're still the waiter with no match
+            cleanup()
+            // Remove from slot only if I'm still the Waiter with no match assigned.
             slotRef.addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val uid     = snapshot.child("uid").getValue(String::class.java)
@@ -137,12 +201,10 @@ class MatchmakingRepository @Inject constructor(
         }
     }
 
-    suspend fun leaveQueue(uid: String) {
-        // No-op: awaitClose cleanup in findMatch handles slot removal
-    }
+    suspend fun leaveQueue(uid: String) { /* cleanup is handled by awaitClose */ }
 }
 
-// Firebase can return card-ID lists as List<Long>, List<Int>, or ArrayList<Any>
+// Firebase can return integer lists as List<Long>, List<Int>, or ArrayList<Any>
 private fun Any?.toCardIdList(): List<Long> =
     (this as? List<*>)?.mapNotNull {
         (it as? Long) ?: (it as? Int)?.toLong()
