@@ -1,7 +1,6 @@
 package com.example.kartonki.data.repository
 
 import com.example.kartonki.data.db.dao.CollectionDao
-import com.example.kartonki.data.db.dao.ProgressDao
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.entity.CollectionEntity
 import com.example.kartonki.data.db.entity.WordEntity
@@ -20,7 +19,6 @@ import kotlin.random.Random
 class PackRepository @Inject constructor(
     private val wordDao: WordDao,
     private val collectionDao: CollectionDao,
-    private val progressDao: ProgressDao,
     private val userPrefs: UserPreferencesRepository,
 ) {
     private val _pendingNewCards = MutableStateFlow<List<Word>>(emptyList())
@@ -42,25 +40,6 @@ class PackRepository @Inject constructor(
             userPrefs.setFreePackCount(userPrefs.getFreePackCount() + 1)
         } else {
             userPrefs.setActivityCount(next)
-        }
-    }
-
-    suspend fun checkAndGrantEarnedCards() {
-        val earnedIds = progressDao.getEarnedWordIds().toSet()
-        val collectedIds = collectionDao.getCollectedWordIds().toSet()
-        val newIds = earnedIds - collectedIds
-        if (newIds.isEmpty()) return
-
-        val newEntities = newIds.map { CollectionEntity(wordId = it) }
-        collectionDao.insertAll(newEntities)
-
-        val allWords = wordDao.getAllWordsOnce()
-        val newWords = allWords
-            .filter { it.id in newIds }
-            .map { it.toDomain() }
-
-        if (newWords.isNotEmpty()) {
-            _pendingNewCards.value = newWords
         }
     }
 

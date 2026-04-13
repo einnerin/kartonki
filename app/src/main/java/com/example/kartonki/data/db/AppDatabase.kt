@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 20,
+    version = 21,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -75,6 +75,16 @@ abstract class AppDatabase : RoomDatabase() {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE progress ADD COLUMN pvpCorrectCount INTEGER NOT NULL DEFAULT 0")
                 db.execSQL("ALTER TABLE progress ADD COLUMN pvpIncorrectCount INTEGER NOT NULL DEFAULT 0")
+            }
+        }
+        /**
+         * Resets the collection so ensureStarterPack() re-seeds it with ~500 cards
+         * instead of the old behaviour of adding every word to the collection.
+         * PvE no longer requires collection ownership — it uses wordDao directly.
+         */
+        val MIGRATION_20_21 = object : Migration(20, 21) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("DELETE FROM collection")
             }
         }
     }

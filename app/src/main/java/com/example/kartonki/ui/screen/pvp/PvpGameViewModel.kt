@@ -318,7 +318,6 @@ class PvpGameViewModel @Inject constructor(
                 player1Score = players[0].score,
                 player2Score = players[1].score,
             )
-            packRepository.checkAndGrantEarnedCards()
             packRepository.onActivityCompleted()
         }
         _uiState.update {

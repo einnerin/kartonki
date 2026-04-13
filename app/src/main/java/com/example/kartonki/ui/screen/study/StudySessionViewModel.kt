@@ -126,7 +126,6 @@ class StudySessionViewModel @Inject constructor(
             _uiState.update { it.copy(isSessionComplete = true) }
             viewModelScope.launch {
                 achievementRepository.recordStudyDay()
-                packRepository.checkAndGrantEarnedCards()
                 packRepository.onActivityCompleted()
             }
         } else {

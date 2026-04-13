@@ -167,7 +167,6 @@ class ProblemWordsSessionViewModel @Inject constructor(
                     )
                 }
                 achievementRepository.recordStudyDay()
-                packRepository.checkAndGrantEarnedCards()
                 packRepository.onActivityCompleted()
             }
         } else {
