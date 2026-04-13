@@ -87,9 +87,6 @@ class MatchmakingRepository @Inject constructor(
             val lang = snapshot.child("languagePair").getValue(String::class.java)
             if (lang != null && lang != entry.languagePair) return                       // different language
 
-            val opponentLevel = snapshot.child("deckLevel").getValue(Long::class.java)?.toInt()
-            if (opponentLevel != null && kotlin.math.abs(opponentLevel - entry.deckLevel) > 1) return // too different in difficulty
-
             val opponentTimestamp = snapshot.child("timestamp").getValue(Long::class.java) ?: 0L
 
             // Only the LATER joiner (higher timestamp) creates the match.
