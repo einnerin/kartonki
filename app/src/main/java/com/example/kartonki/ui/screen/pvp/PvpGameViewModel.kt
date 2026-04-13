@@ -317,6 +317,7 @@ class PvpGameViewModel @Inject constructor(
                 player2Name  = players[1].name,
                 player1Score = players[0].score,
                 player2Score = players[1].score,
+                wasSurrender = reason == GameOverReason.FORFEIT,
             )
             packRepository.onActivityCompleted()
         }

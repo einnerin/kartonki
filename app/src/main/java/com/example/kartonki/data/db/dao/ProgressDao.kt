@@ -36,4 +36,24 @@ interface ProgressDao {
 
     @Query("SELECT wordId FROM progress WHERE correctCount >= 10")
     suspend fun getEarnedWordIds(): List<Long>
+
+    @Query("SELECT COALESCE(SUM(correctCount), 0) FROM progress")
+    suspend fun getTotalCorrectCount(): Long
+
+    @Query("SELECT COUNT(*) FROM progress WHERE level >= :minLevel")
+    suspend fun getWordCountAtMinLevel(minLevel: Int): Int
+
+    @Query("""
+        SELECT COUNT(DISTINCT w.semanticGroup) FROM progress p
+        INNER JOIN words w ON p.wordId = w.id
+        WHERE w.semanticGroup IS NOT NULL
+    """)
+    suspend fun getDistinctSemanticGroupCount(): Int
+
+    @Query("""
+        SELECT COUNT(*) FROM progress p
+        INNER JOIN words w ON p.wordId = w.id
+        WHERE length(w.original) >= :minLength
+    """)
+    suspend fun getProgressWithLongWordCount(minLength: Int): Int
 }

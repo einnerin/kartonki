@@ -123,9 +123,10 @@ class StudySessionViewModel @Inject constructor(
     private fun advanceStep() {
         val next = _uiState.value.currentStepIndex + 1
         if (next >= _uiState.value.steps.size) {
+            val incorrectCount = _uiState.value.incorrectCount
             _uiState.update { it.copy(isSessionComplete = true) }
             viewModelScope.launch {
-                achievementRepository.recordStudyDay()
+                achievementRepository.recordStudyDay(incorrectCount)
                 packRepository.onActivityCompleted()
             }
         } else {

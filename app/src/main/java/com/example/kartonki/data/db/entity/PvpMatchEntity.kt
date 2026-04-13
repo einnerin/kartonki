@@ -11,5 +11,6 @@ data class PvpMatchEntity(
     val player2Name: String,
     val player1Score: Int,
     val player2Score: Int,
-    val winnerName: String?,   // null = draw
+    val winnerName: String?,       // null = draw
+    val wasSurrender: Boolean = false,
 )

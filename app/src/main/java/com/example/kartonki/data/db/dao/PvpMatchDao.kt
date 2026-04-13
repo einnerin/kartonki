@@ -16,6 +16,9 @@ interface PvpMatchDao {
     @Query("SELECT COUNT(*) FROM pvp_matches WHERE winnerName IS NOT NULL")
     suspend fun getMatchesWithWinnerCount(): Int
 
+    @Query("SELECT COUNT(*) FROM pvp_matches WHERE timestamp >= :sinceMs")
+    suspend fun getMatchCountSince(sinceMs: Long): Int
+
     @Insert
     suspend fun insert(match: PvpMatchEntity)
 }

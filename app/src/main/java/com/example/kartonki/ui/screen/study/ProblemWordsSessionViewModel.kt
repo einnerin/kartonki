@@ -153,6 +153,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
     private fun advanceStep() {
         val next = _uiState.value.currentStepIndex + 1
         if (next >= _uiState.value.steps.size) {
+            val incorrectCount = _uiState.value.incorrectCount
             viewModelScope.launch {
                 val improved = computeImprovedCount()
                 val learned  = applyMasteryAndCount()
@@ -166,7 +167,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
                         showSettingsHint = showHint,
                     )
                 }
-                achievementRepository.recordStudyDay()
+                achievementRepository.recordStudyDay(incorrectCount)
                 packRepository.onActivityCompleted()
             }
         } else {

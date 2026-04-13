@@ -14,8 +14,12 @@ import javax.inject.Inject
 
 data class AchievementsUiState(
     val isLoading: Boolean = true,
-    val achievements: List<AchievementState> = emptyList(),
-)
+    val visibleAchievements: List<AchievementState> = emptyList(),
+    val hiddenAchievements: List<AchievementState> = emptyList(),
+) {
+    val unlockedCount: Int get() = (visibleAchievements + hiddenAchievements).count { it.isUnlocked }
+    val totalCount: Int get() = visibleAchievements.size + hiddenAchievements.size
+}
 
 @HiltViewModel
 class AchievementsViewModel @Inject constructor(
@@ -29,6 +33,12 @@ class AchievementsViewModel @Inject constructor(
 
     fun load() = viewModelScope.launch {
         val achievements = achievementRepository.getAll()
-        _uiState.update { it.copy(isLoading = false, achievements = achievements) }
+        _uiState.update {
+            it.copy(
+                isLoading = false,
+                visibleAchievements = achievements.filter { a -> !a.id.isHidden },
+                hiddenAchievements  = achievements.filter { a -> a.id.isHidden },
+            )
+        }
     }
 }

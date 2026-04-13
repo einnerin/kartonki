@@ -8,6 +8,7 @@ import com.example.kartonki.data.remote.FirestoreUserRepository
 import com.example.kartonki.data.remote.OnlineGameRepository
 import com.example.kartonki.data.remote.model.OnlineMatchData
 import com.example.kartonki.data.remote.model.OnlineRoundData
+import com.example.kartonki.data.repository.AchievementRepository
 import com.example.kartonki.data.repository.CollectionRepository
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.navigation.Route
@@ -71,6 +72,7 @@ class OnlinePvpGameViewModel @Inject constructor(
     private val onlineGameRepository: OnlineGameRepository,
     private val authManager: FirebaseAuthManager,
     private val firestoreUserRepository: FirestoreUserRepository,
+    private val achievementRepository: AchievementRepository,
 ) : ViewModel() {
 
     private val matchId: String = checkNotNull(savedStateHandle[Route.OnlinePvpGame.ARG_MATCH_ID])
@@ -85,6 +87,8 @@ class OnlinePvpGameViewModel @Inject constructor(
     private var opponentStreak: Int = 0
     private var timerJob: Job? = null
     private var lastPhase: String? = null
+    private var gameOverRecorded = false
+    private var didSurrender = false
 
     init {
         loadWordsAndListen()
@@ -125,6 +129,22 @@ class OnlinePvpGameViewModel @Inject constructor(
         when (match.phase) {
             OnlineMatchData.PHASE_GAME_OVER, OnlineMatchData.STATUS_FINISHED -> {
                 stopTimer()
+                if (!gameOverRecorded) {
+                    gameOverRecorded = true
+                    val p1Name = match.player1Name
+                    val p2Name = match.player2Name
+                    val p1Score = match.player1Score
+                    val p2Score = match.player2Score
+                    viewModelScope.launch {
+                        achievementRepository.recordPvpMatch(
+                            player1Name  = p1Name,
+                            player2Name  = p2Name,
+                            player1Score = p1Score,
+                            player2Score = p2Score,
+                            wasSurrender = didSurrender,
+                        )
+                    }
+                }
                 _uiState.update {
                     it.copy(
                         isLoading = false,
@@ -359,6 +379,7 @@ class OnlinePvpGameViewModel @Inject constructor(
     fun onSurrenderDismiss() = _uiState.update { it.copy(showSurrenderDialog = false) }
 
     fun surrender() {
+        didSurrender = true
         val state = _uiState.value
         val opponentIndex = 1 - myIndex
         val p1Score = if (myIndex == 0) state.myScore else state.opponentScore

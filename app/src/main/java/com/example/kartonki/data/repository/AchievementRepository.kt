@@ -45,18 +45,40 @@ class AchievementRepository @Inject constructor(
         }
     }
 
-    /** Record that a study session happened today and check streak/study achievements. */
-    suspend fun recordStudyDay() {
+    /**
+     * Called when a study session completes.
+     * @param incorrectCount number of wrong answers in the session (0 = perfect)
+     */
+    suspend fun recordStudyDay(incorrectCount: Int = 0) {
         studyStreakDao.insert(StudyStreakEntity(date = todayMs()))
-        checkAll()
+        checkFirstLesson()
+        checkDiligent()
+        checkExpert()
+        checkPolyglot()
+        checkStreak5()
+        checkStreak7()
+        checkLegend()
+        // Hidden
+        checkNightOwl()
+        checkPerfectionist(incorrectCount)
+        checkDeepLearner()
+        checkCenturion()
+        checkMondayScholar()
+        checkWeeklyGrind()
+        checkRusty()
+        checkExplorer()
+        checkLongWord()
     }
 
-    /** Record a completed PvP match and check WINNER achievement. */
+    /**
+     * Called when a PvP match ends.
+     */
     suspend fun recordPvpMatch(
         player1Name: String,
         player2Name: String,
         player1Score: Int,
         player2Score: Int,
+        wasSurrender: Boolean = false,
     ) {
         val winnerName = when {
             player1Score > player2Score -> player1Name
@@ -71,20 +93,19 @@ class AchievementRepository @Inject constructor(
                 player1Score = player1Score,
                 player2Score = player2Score,
                 winnerName = winnerName,
+                wasSurrender = wasSurrender,
             )
         )
-        if (winnerName != null) checkWinner()
+        checkFirstFight()
+        if (winnerName != null) checkFirstWin()
         checkLegend()
-    }
-
-    suspend fun checkAll() {
-        checkFirstSteps()
-        checkExpert()
-        checkPolyglot()
-        checkWinner()
-        checkStreak()
-        checkCollector()
-        checkLegend()
+        // Hidden
+        checkDominator(player1Score, player2Score, winnerName)
+        checkDrawMaster(winnerName)
+        checkGoldenShot(player1Score, player2Score)
+        checkVeteran()
+        checkMarathon()
+        if (wasSurrender) checkWhiteFlag()
     }
 
     suspend fun checkAfterDeckChange() {
@@ -92,11 +113,31 @@ class AchievementRepository @Inject constructor(
         checkLegend()
     }
 
-    private suspend fun checkFirstSteps() {
-        if (isUnlocked(AchievementId.FIRST_STEPS)) return
-        val all = progressDao.getAll()
-        val totalCorrect = all.sumOf { it.correctCount }
-        if (totalCorrect >= 10) unlock(AchievementId.FIRST_STEPS)
+    // ── Visible achievement checks ────────────────────────────────────────────
+
+    private suspend fun checkFirstLesson() {
+        if (isUnlocked(AchievementId.FIRST_LESSON)) return
+        if (studyStreakDao.getCount() >= 1) unlock(AchievementId.FIRST_LESSON)
+    }
+
+    private suspend fun checkDiligent() {
+        if (isUnlocked(AchievementId.DILIGENT)) return
+        if (studyStreakDao.getCount() >= 10) unlock(AchievementId.DILIGENT)
+    }
+
+    private suspend fun checkFirstFight() {
+        if (isUnlocked(AchievementId.FIRST_FIGHT)) return
+        if (pvpMatchDao.getMatchCount() >= 1) unlock(AchievementId.FIRST_FIGHT)
+    }
+
+    private suspend fun checkFirstWin() {
+        if (isUnlocked(AchievementId.FIRST_WIN)) return
+        if (pvpMatchDao.getMatchesWithWinnerCount() >= 1) unlock(AchievementId.FIRST_WIN)
+    }
+
+    private suspend fun checkStreak5() {
+        if (isUnlocked(AchievementId.STREAK_5)) return
+        if (calculateCurrentStreak() >= 5) unlock(AchievementId.STREAK_5)
     }
 
     private suspend fun checkExpert() {
@@ -109,15 +150,9 @@ class AchievementRepository @Inject constructor(
         if (progressDao.getLearnedCount() >= 200) unlock(AchievementId.POLYGLOT)
     }
 
-    private suspend fun checkWinner() {
-        if (isUnlocked(AchievementId.WINNER)) return
-        if (pvpMatchDao.getMatchesWithWinnerCount() >= 1) unlock(AchievementId.WINNER)
-    }
-
-    private suspend fun checkStreak() {
-        if (isUnlocked(AchievementId.STREAK)) return
-        val streak = calculateCurrentStreak()
-        if (streak >= 7) unlock(AchievementId.STREAK)
+    private suspend fun checkStreak7() {
+        if (isUnlocked(AchievementId.STREAK_7)) return
+        if (calculateCurrentStreak() >= 7) unlock(AchievementId.STREAK_7)
     }
 
     private suspend fun checkCollector() {
@@ -134,11 +169,102 @@ class AchievementRepository @Inject constructor(
     private suspend fun checkLegend() {
         if (isUnlocked(AchievementId.LEGEND)) return
         val entities = achievementDao.getAll().associateBy { it.id }
-        val othersAllUnlocked = AchievementId.entries
-            .filter { it != AchievementId.LEGEND }
+        val allVisibleDone = AchievementId.entries
+            .filter { !it.isHidden && it != AchievementId.LEGEND }
             .all { entities[it.name]?.unlockedAt != null }
-        if (othersAllUnlocked) unlock(AchievementId.LEGEND)
+        if (allVisibleDone) unlock(AchievementId.LEGEND)
     }
+
+    // ── Hidden achievement checks ─────────────────────────────────────────────
+
+    private suspend fun checkDominator(p1Score: Int, p2Score: Int, winnerName: String?) {
+        if (isUnlocked(AchievementId.DOMINATOR)) return
+        if (winnerName == null) return
+        val hi = maxOf(p1Score, p2Score)
+        val lo = minOf(p1Score, p2Score)
+        if (lo > 0 && hi.toFloat() / lo >= 2f) unlock(AchievementId.DOMINATOR)
+    }
+
+    private suspend fun checkNightOwl() {
+        if (isUnlocked(AchievementId.NIGHT_OWL)) return
+        val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
+        if (hour >= 23) unlock(AchievementId.NIGHT_OWL)
+    }
+
+    private suspend fun checkPerfectionist(incorrectCount: Int) {
+        if (isUnlocked(AchievementId.PERFECTIONIST)) return
+        if (incorrectCount == 0) unlock(AchievementId.PERFECTIONIST)
+    }
+
+    private suspend fun checkDeepLearner() {
+        if (isUnlocked(AchievementId.DEEP_LEARNER)) return
+        if (progressDao.getWordCountAtMinLevel(5) >= 20) unlock(AchievementId.DEEP_LEARNER)
+    }
+
+    private suspend fun checkVeteran() {
+        if (isUnlocked(AchievementId.VETERAN)) return
+        if (pvpMatchDao.getMatchCount() >= 10) unlock(AchievementId.VETERAN)
+    }
+
+    private suspend fun checkCenturion() {
+        if (isUnlocked(AchievementId.CENTURION)) return
+        if (progressDao.getTotalCorrectCount() >= 100) unlock(AchievementId.CENTURION)
+    }
+
+    private suspend fun checkDrawMaster(winnerName: String?) {
+        if (isUnlocked(AchievementId.DRAW_MASTER)) return
+        if (winnerName == null) unlock(AchievementId.DRAW_MASTER)
+    }
+
+    private suspend fun checkMondayScholar() {
+        if (isUnlocked(AchievementId.MONDAY_SCHOLAR)) return
+        val dayOfWeek = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
+        if (dayOfWeek == Calendar.MONDAY) unlock(AchievementId.MONDAY_SCHOLAR)
+    }
+
+    private suspend fun checkGoldenShot(p1Score: Int, p2Score: Int) {
+        if (isUnlocked(AchievementId.GOLDEN_SHOT)) return
+        if (maxOf(p1Score, p2Score) >= 50) unlock(AchievementId.GOLDEN_SHOT)
+    }
+
+    private suspend fun checkWeeklyGrind() {
+        if (isUnlocked(AchievementId.WEEKLY_GRIND)) return
+        val weekAgoMs = todayMs() - 6 * DAY_MS
+        val days = studyStreakDao.getAll().map { it.date }
+        val countInWeek = days.count { it >= weekAgoMs }
+        if (countInWeek >= 5) unlock(AchievementId.WEEKLY_GRIND)
+    }
+
+    private suspend fun checkWhiteFlag() {
+        if (isUnlocked(AchievementId.WHITE_FLAG)) return
+        unlock(AchievementId.WHITE_FLAG)
+    }
+
+    private suspend fun checkExplorer() {
+        if (isUnlocked(AchievementId.EXPLORER)) return
+        if (progressDao.getDistinctSemanticGroupCount() >= 5) unlock(AchievementId.EXPLORER)
+    }
+
+    private suspend fun checkMarathon() {
+        if (isUnlocked(AchievementId.MARATHON)) return
+        if (pvpMatchDao.getMatchCountSince(todayMs()) >= 3) unlock(AchievementId.MARATHON)
+    }
+
+    private suspend fun checkRusty() {
+        if (isUnlocked(AchievementId.RUSTY)) return
+        val days = studyStreakDao.getAll().map { it.date }
+        if (days.size < 2) return
+        // days are sorted DESC; [0] = today, [1] = last previous day
+        val gap = (days[0] - days[1]) / DAY_MS
+        if (gap >= 7) unlock(AchievementId.RUSTY)
+    }
+
+    private suspend fun checkLongWord() {
+        if (isUnlocked(AchievementId.LONG_WORD)) return
+        if (progressDao.getProgressWithLongWordCount(13) >= 1) unlock(AchievementId.LONG_WORD)
+    }
+
+    // ── Internals ─────────────────────────────────────────────────────────────
 
     private suspend fun unlock(id: AchievementId) {
         val word = wordDao.getWordByOriginal(id.rewardWordOriginal)
