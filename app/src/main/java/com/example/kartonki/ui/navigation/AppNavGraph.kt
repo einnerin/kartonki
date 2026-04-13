@@ -133,11 +133,6 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
                         popUpTo(0) { inclusive = true }
                     }
                 },
-                onSignIn = {
-                    navController.navigate(Route.Login.path) {
-                        popUpTo(Route.Settings.path) { inclusive = false }
-                    }
-                },
             )
         }
 

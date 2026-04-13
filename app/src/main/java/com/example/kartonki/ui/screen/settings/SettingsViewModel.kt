@@ -3,10 +3,14 @@ package com.example.kartonki.ui.screen.settings
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.remote.FirebaseAuthManager
+import com.example.kartonki.data.remote.FirestoreUserRepository
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.common.api.ApiException
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -16,6 +20,8 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+
+private const val TAG = "SettingsViewModel"
 
 /** Supported native languages: code → display name */
 val NATIVE_LANGUAGES: LinkedHashMap<String, String> = linkedMapOf(
@@ -80,6 +86,8 @@ data class SettingsUiState(
     val accountDisplayName: String = "",
     val showSignOutDialog: Boolean = false,
     val signOutDone: Boolean = false,
+    val isSigningIn: Boolean = false,
+    val signInError: String? = null,
 )
 
 val AVATAR_EMOJI_OPTIONS = listOf(
@@ -92,6 +100,7 @@ val AVATAR_EMOJI_OPTIONS = listOf(
 class SettingsViewModel @Inject constructor(
     private val prefs: UserPreferencesRepository,
     private val authManager: FirebaseAuthManager,
+    private val userRepository: FirestoreUserRepository,
     @ApplicationContext private val appContext: Context,
 ) : ViewModel() {
 
@@ -235,6 +244,49 @@ class SettingsViewModel @Inject constructor(
         _uiState.update { it.copy(showSignOutDialog = false, signOutDone = true) }
     }
     fun onSignOutNavigated() = _uiState.update { it.copy(signOutDone = false) }
+
+    fun getGoogleSignInIntent(context: Context): Intent =
+        authManager.getGoogleSignInIntent(context, WEB_CLIENT_ID)
+
+    fun handleGoogleSignInResult(data: Intent?) {
+        viewModelScope.launch {
+            _uiState.update { it.copy(isSigningIn = true, signInError = null) }
+            try {
+                val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+                val account = task.getResult(ApiException::class.java)
+                val idToken = account.idToken ?: run {
+                    Log.e(TAG, "idToken is null — SHA-1 not registered in Firebase Console")
+                    _uiState.update { it.copy(isSigningIn = false, signInError = "Ошибка: ID токен не получен. Проверьте SHA-1 в Firebase Console.") }
+                    return@launch
+                }
+                authManager.firebaseSignInWithGoogle(idToken)
+                    .onSuccess { profile ->
+                        userRepository.saveProfile(profile)
+                        _uiState.update { it.copy(isSigningIn = false) }
+                    }
+                    .onFailure { e ->
+                        val msg = e.message?.takeIf { it.isNotBlank() } ?: e.javaClass.simpleName
+                        Log.e(TAG, "Google sign-in failed: $msg", e)
+                        _uiState.update { it.copy(isSigningIn = false, signInError = "Ошибка входа: $msg") }
+                    }
+            } catch (e: ApiException) {
+                val msg = when (e.statusCode) {
+                    10 -> "DEVELOPER_ERROR — SHA-1 не зарегистрирован в Firebase Console"
+                    12500 -> "Вход не выполнен"
+                    12501 -> "Вход отменён"
+                    else -> "Ошибка Google Sign-In (код ${e.statusCode})"
+                }
+                Log.e(TAG, msg, e)
+                _uiState.update { it.copy(isSigningIn = false, signInError = msg) }
+            } catch (e: Exception) {
+                val msg = e.message?.takeIf { it.isNotBlank() } ?: e.javaClass.simpleName
+                Log.e(TAG, "handleGoogleSignInResult exception: $msg", e)
+                _uiState.update { it.copy(isSigningIn = false, signInError = msg) }
+            }
+        }
+    }
+
+    fun dismissSignInError() = _uiState.update { it.copy(signInError = null) }
 
     fun onEmojiAvatarSelected(emoji: String) = viewModelScope.launch {
         prefs.setAvatarChoice(emoji)

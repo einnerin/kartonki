@@ -1,5 +1,6 @@
 package com.example.kartonki.ui.screen.settings
 
+import android.content.Intent
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.PickVisualMediaRequest
@@ -71,7 +72,6 @@ fun SettingsScreen(
     onNavigateToWordStats: () -> Unit,
     onNavigateToAchievements: () -> Unit,
     onSignOut: () -> Unit,
-    onSignIn: () -> Unit,
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
@@ -84,6 +84,12 @@ fun SettingsScreen(
             viewModel.onSignOutNavigated()
             onSignOut()
         }
+    }
+
+    val googleSignInLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartActivityForResult(),
+    ) { result ->
+        viewModel.handleGoogleSignInResult(result.data)
     }
 
     val photoPickerLauncher = rememberLauncherForActivityResult(
@@ -118,10 +124,11 @@ fun SettingsScreen(
             AccountSection(
                 isSignedIn = state.isSignedIn,
                 isAnonymous = state.isAnonymous,
+                isSigningIn = state.isSigningIn,
                 email = state.accountEmail,
                 displayName = state.accountDisplayName,
                 onSignOut = viewModel::onSignOutClick,
-                onSignIn = onSignIn,
+                onSignIn = { googleSignInLauncher.launch(viewModel.getGoogleSignInIntent(context)) },
             )
             Spacer(Modifier.height(8.dp))
 
@@ -508,6 +515,18 @@ fun SettingsScreen(
         }
     }
 
+    // Sign-in error dialog
+    state.signInError?.let { err ->
+        AlertDialog(
+            onDismissRequest = viewModel::dismissSignInError,
+            title = { Text("Ошибка входа") },
+            text = { Text(err) },
+            confirmButton = {
+                TextButton(onClick = viewModel::dismissSignInError) { Text("OK") }
+            },
+        )
+    }
+
     // Sign-out confirmation dialog
     if (state.showSignOutDialog) {
         AlertDialog(
@@ -531,6 +550,7 @@ fun SettingsScreen(
 private fun AccountSection(
     isSignedIn: Boolean,
     isAnonymous: Boolean,
+    isSigningIn: Boolean,
     email: String,
     displayName: String,
     onSignOut: () -> Unit,
@@ -593,7 +613,12 @@ private fun AccountSection(
                 }
             }
         }
-        if (isAnonymous || !isSignedIn) {
+        if (isSigningIn) {
+            androidx.compose.material3.CircularProgressIndicator(
+                modifier = Modifier.size(24.dp),
+                strokeWidth = 2.dp,
+            )
+        } else if (isAnonymous || !isSignedIn) {
             TextButton(onClick = onSignIn) { Text("Войти") }
         } else {
             TextButton(
