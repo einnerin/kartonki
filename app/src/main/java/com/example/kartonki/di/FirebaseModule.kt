@@ -20,7 +20,7 @@ object FirebaseModule {
     @Provides
     @Singleton
     fun provideFirebaseDatabase(): FirebaseDatabase =
-        FirebaseDatabase.getInstance().also {
+        FirebaseDatabase.getInstance("https://kartonki-e18c5-default-rtdb.europe-west1.firebasedatabase.app").also {
             it.setPersistenceEnabled(true)
         }
 

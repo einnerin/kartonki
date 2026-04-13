@@ -30,7 +30,7 @@ class LoginViewModel @Inject constructor(
 
     // Web client ID — needs to be set up in Firebase Console → Authentication → Google
     // Then add SHA-1 fingerprint and update google-services.json
-    private val WEB_CLIENT_ID = "YOUR_WEB_CLIENT_ID"
+    private val WEB_CLIENT_ID = "75116979020-g8b7ug8lknrfbrid1alk9agtqd2skn78.apps.googleusercontent.com"
 
     private val _uiState = MutableStateFlow(LoginUiState(isSignedIn = authManager.isSignedIn))
     val uiState: StateFlow<LoginUiState> = _uiState.asStateFlow()
