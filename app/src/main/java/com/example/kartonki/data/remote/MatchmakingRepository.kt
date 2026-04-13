@@ -77,9 +77,13 @@ class MatchmakingRepository @Inject constructor(
         }
 
         // ── Create the match (called only by the LATER joiner) ──────────────
-        // Using timestamp to decide who creates avoids the race condition where
-        // both phones see each other and both try to create simultaneously.
+        // Firebase fires onChildAdded for existing entries AND the initial scan also
+        // processes them — tryPairWith can be called twice for the same opponent.
+        // This flag ensures only ONE match is ever created per search session.
+        var matchCreating = false
+
         fun tryPairWith(snapshot: DataSnapshot) {
+            if (matchCreating) return                                                     // already creating a match
             val opponentUid = snapshot.child("uid").getValue(String::class.java) ?: return
             if (opponentUid == entry.uid) return                                         // skip self
             if (snapshot.child("matchId").getValue(String::class.java) != null) return  // already paired
@@ -95,6 +99,7 @@ class MatchmakingRepository @Inject constructor(
                 (entry.timestamp == opponentTimestamp && entry.uid > opponentUid)
             if (!iCreate) return  // the other phone will create
 
+            matchCreating = true  // guard against duplicate calls
             val opponentName    = snapshot.child("playerName").getValue(String::class.java) ?: "Игрок"
             val opponentCardIds = snapshot.child("cardIds").value.toCardIdList()
 
