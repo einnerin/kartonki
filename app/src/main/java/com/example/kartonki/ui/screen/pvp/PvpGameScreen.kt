@@ -597,58 +597,7 @@ private fun MultiplierRow(
     }
 }
 
-@Composable
-private fun MultiplierBadge(multiplier: Int, streak: Int, modifier: Modifier = Modifier) {
-    val color = when (multiplier) {
-        2    -> Color(0xFF4A90E2)
-        3    -> Color(0xFF9B51E0)
-        4    -> Color(0xFFF5A623)
-        else -> Color(0xFF9E9E9E)
-    }
-    val scale = remember { Animatable(1f) }
-    LaunchedEffect(multiplier) {
-        if (multiplier > 1) {
-            scale.snapTo(1.4f)
-            scale.animateTo(1f, animationSpec = spring(dampingRatio = Spring.DampingRatioMediumBouncy))
-        }
-    }
-
-    val isMax = multiplier >= 4
-    val dotsFilled = if (isMax) 5 else streak % 5
-
-    Column(
-        modifier = modifier.graphicsLayer(scaleX = scale.value, scaleY = scale.value),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(3.dp),
-    ) {
-        Box(
-            modifier = Modifier
-                .background(color.copy(alpha = 0.2f), RoundedCornerShape(8.dp))
-                .border(1.dp, color.copy(alpha = 0.7f), RoundedCornerShape(8.dp))
-                .padding(horizontal = 8.dp, vertical = 3.dp),
-            contentAlignment = Alignment.Center,
-        ) {
-            Text(
-                text = "×$multiplier",
-                style = MaterialTheme.typography.labelMedium,
-                fontWeight = FontWeight.ExtraBold,
-                color = color,
-            )
-        }
-        Row(horizontalArrangement = Arrangement.spacedBy(3.dp)) {
-            repeat(5) { i ->
-                Box(
-                    modifier = Modifier
-                        .size(5.dp)
-                        .background(
-                            color = if (i < dotsFilled) color else color.copy(alpha = 0.2f),
-                            shape = CircleShape,
-                        )
-                )
-            }
-        }
-    }
-}
+// MultiplierBadge is in PvpSharedComponents.kt
 
 @Composable
 private fun DeckRarityIndicator(

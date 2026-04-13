@@ -37,6 +37,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -46,6 +47,7 @@ import com.example.kartonki.ui.theme.AccentPurple
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
 import com.example.kartonki.ui.theme.BgMedium
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.TextSecondary
 
 @Composable
@@ -153,6 +155,13 @@ private fun OnlineScoreboard(
     showSurrender: Boolean,
     onSurrender: () -> Unit,
 ) {
+    val myMultiplier = PvpGameLogic.streakToMultiplier(uiState.myStreak)
+    val opponentMultiplier = PvpGameLogic.streakToMultiplier(uiState.opponentStreak)
+    val myIsActive = uiState.phase is OnlinePvpPhase.MyHandSelection ||
+                     uiState.phase is OnlinePvpPhase.MyQuiz
+    val opponentIsActive = uiState.phase is OnlinePvpPhase.WaitingForOpponent ||
+                           uiState.phase is OnlinePvpPhase.WaitingForAnswer
+
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -161,30 +170,31 @@ private fun OnlineScoreboard(
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        // My side
         OnlinePlayerChip(
             name = uiState.myName,
             score = uiState.myScore,
+            multiplier = myMultiplier,
             streak = uiState.myStreak,
-            isMe = true,
+            isActive = myIsActive,
             modifier = Modifier.weight(1f),
         )
 
         if (showSurrender) {
+            val s = LocalAppStrings.current
             TextButton(
                 onClick = onSurrender,
                 colors = ButtonDefaults.textButtonColors(contentColor = Color(0xFFEF5350)),
-            ) { Text("🏳️", fontSize = 18.sp) }
+            ) { Text(s.pvpSurrender, fontWeight = FontWeight.Bold) }
         } else {
             Text("⚔️", fontSize = 20.sp, modifier = Modifier.padding(horizontal = 8.dp))
         }
 
-        // Opponent side
         OnlinePlayerChip(
             name = uiState.opponentName,
             score = uiState.opponentScore,
+            multiplier = opponentMultiplier,
             streak = uiState.opponentStreak,
-            isMe = false,
+            isActive = opponentIsActive,
             modifier = Modifier.weight(1f),
         )
     }
@@ -195,40 +205,35 @@ private fun OnlineScoreboard(
 private fun OnlinePlayerChip(
     name: String,
     score: Int,
+    multiplier: Int,
     streak: Int,
-    isMe: Boolean,
+    isActive: Boolean,
     modifier: Modifier = Modifier,
 ) {
-    val multiplier = PvpGameLogic.streakToMultiplier(streak)
-    val multiplierColor = when (multiplier) {
-        2    -> Color(0xFF4A90E2)
-        3    -> Color(0xFF9B51E0)
-        4    -> Color(0xFFF5A623)
-        else -> Color(0xFF9E9E9E)
-    }
-    Column(
-        modifier = modifier.padding(horizontal = 4.dp, vertical = 4.dp),
-        horizontalAlignment = if (isMe) Alignment.Start else Alignment.End,
+    Row(
+        modifier = modifier
+            .clip(RoundedCornerShape(10.dp))
+            .background(if (isActive) BgCard else Color.Transparent)
+            .padding(horizontal = 10.dp, vertical = 6.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
     ) {
-        Text(
-            text = name,
-            style = MaterialTheme.typography.labelMedium,
-            color = if (isMe) AccentGold else TextSecondary,
-            fontWeight = if (isMe) FontWeight.Bold else FontWeight.Normal,
-        )
-        Text(
-            text = "$score очков",
-            style = MaterialTheme.typography.labelSmall,
-            color = MaterialTheme.colorScheme.primary,
-        )
-        if (multiplier > 1) {
+        Column(modifier = Modifier.weight(1f, fill = false)) {
             Text(
-                text = "×$multiplier  🔥$streak",
+                text = name,
+                style = MaterialTheme.typography.labelMedium,
+                color = if (isActive) Color.White else TextSecondary,
+                fontWeight = if (isActive) FontWeight.Bold else FontWeight.Normal,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+            )
+            Text(
+                text = "$score очков",
                 style = MaterialTheme.typography.labelSmall,
-                color = multiplierColor,
-                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary,
             )
         }
+        MultiplierBadge(multiplier = multiplier, streak = streak)
     }
 }
 
