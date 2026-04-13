@@ -32,6 +32,7 @@ import com.example.kartonki.ui.screen.shop.PackOpeningScreen
 import com.example.kartonki.ui.screen.shop.PackShopScreen
 import com.example.kartonki.ui.screen.stats.PlayerStatsScreen
 import com.example.kartonki.ui.screen.stats.WordStatsScreen
+import com.example.kartonki.ui.screen.study.ProblemWordsListScreen
 import com.example.kartonki.ui.screen.study.ProblemWordsSessionScreen
 import com.example.kartonki.ui.screen.study.StudyScreen
 import com.example.kartonki.ui.screen.study.StudySessionScreen
@@ -82,7 +83,6 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
                 onNavigateToCollection = { navController.navigate(Route.MyDecks.path) },
                 onNavigateToSettings = { navController.navigate(Route.Settings.path) },
                 onNavigateToShop = { navController.navigate(Route.PackShop.path) },
-                onNavigateToProblemWords = { navController.navigate(Route.ProblemWordsSession.path) },
             )
         }
 
@@ -160,7 +160,17 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
                 onNavigateToSetDetail = { setId ->
                     navController.navigate(Route.WordSetDetail.createRoute(setId))
                 },
+                onNavigateToProblemWords = { navController.navigate(Route.ProblemWordsList.path) },
                 onNavigateBack = { navController.popBackStack() },
+            )
+        }
+
+        composable(Route.ProblemWordsList.path) {
+            ProblemWordsListScreen(
+                onNavigateBack = { navController.popBackStack() },
+                onStartSession = {
+                    navController.navigate(Route.ProblemWordsSession.path)
+                },
             )
         }
 

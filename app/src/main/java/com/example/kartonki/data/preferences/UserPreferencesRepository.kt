@@ -35,6 +35,8 @@ class UserPreferencesRepository @Inject constructor(
         const val PROBLEM_WORDS_CORRECT_TO_LEARN = "problem_words_ctl"     // Int: 1/2/3/5
         const val PROBLEM_WORDS_HINT_SHOWN      = "problem_words_hint"     // Boolean
         const val PROBLEM_SESSION_COUNTS        = "problem_session_counts" // "id:count,id:count,..."
+        const val SESSION_EXCLUDED_WORD_IDS     = "session_excluded_ids"  // "id,id,..." temp
+        const val PROBLEM_CHIP_HINT_SHOWN       = "problem_chip_hint"     // Boolean
     }
 
     companion object {
@@ -111,6 +113,21 @@ class UserPreferencesRepository @Inject constructor(
         val raw = counts.entries.joinToString(",") { "${it.key}:${it.value}" }
         prefs.edit().putString(Keys.PROBLEM_SESSION_COUNTS, raw).apply()
     }
+
+    /** Temporarily stores word IDs the user excluded from the next problem session. */
+    fun getSessionExcludedWordIds(): Set<Long> {
+        val raw = prefs.getString(Keys.SESSION_EXCLUDED_WORD_IDS, null) ?: return emptySet()
+        return raw.split(",").mapNotNull { it.toLongOrNull() }.toSet()
+    }
+    fun setSessionExcludedWordIds(ids: Set<Long>) {
+        prefs.edit().putString(Keys.SESSION_EXCLUDED_WORD_IDS, ids.joinToString(",")).apply()
+    }
+    fun clearSessionExcludedWordIds() {
+        prefs.edit().remove(Keys.SESSION_EXCLUDED_WORD_IDS).apply()
+    }
+
+    fun isProblemChipHintShown(): Boolean = prefs.getBoolean(Keys.PROBLEM_CHIP_HINT_SHOWN, false)
+    fun setProblemChipHintShown() = prefs.edit().putBoolean(Keys.PROBLEM_CHIP_HINT_SHOWN, true).apply()
 
     val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
         val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)

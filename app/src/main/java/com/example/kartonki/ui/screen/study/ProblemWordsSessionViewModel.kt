@@ -91,7 +91,11 @@ class ProblemWordsSessionViewModel @Inject constructor(
             val minEncounters = prefs.problemWordsMinEncounters.first()
             correctToLearn = prefs.problemWordsCorrectToLearn.first()
 
-            val words = statsRepository.getProblemWords(source, minEncounters)
+            val excludedIds = prefs.getSessionExcludedWordIds()
+            prefs.clearSessionExcludedWordIds()
+            val allWords = statsRepository.getProblemWords(source, minEncounters, limit = 200)
+            val words = if (excludedIds.isEmpty()) allWords
+                        else allWords.filter { it.id !in excludedIds }
             if (words.isEmpty()) {
                 _uiState.update { it.copy(isLoading = false, isEmpty = true, isDisabled = false) }
                 return@launch

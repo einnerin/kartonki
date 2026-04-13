@@ -1,8 +1,6 @@
 package com.example.kartonki.ui.screen.home
 
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.core.Spring
-import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.slideInVertically
@@ -69,14 +67,12 @@ fun HomeScreen(
     onNavigateToCollection: () -> Unit,
     onNavigateToSettings: () -> Unit,
     onNavigateToShop: () -> Unit,
-    onNavigateToProblemWords: () -> Unit,
     packViewModel: PackShopViewModel = hiltViewModel(),
     homeViewModel: HomeViewModel = hiltViewModel(),
 ) {
     var visible by remember { mutableStateOf(false) }
     LaunchedEffect(Unit) { visible = true }
     val packState by packViewModel.uiState.collectAsState()
-    val homeState by homeViewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
 
     val lifecycleOwner = LocalLifecycleOwner.current
@@ -186,13 +182,6 @@ fun HomeScreen(
                         onClick = onNavigateToShop,
                         modifier = Modifier.fillMaxWidth(),
                     )
-                    if (homeState.problemWordCount > 0) {
-                        ProblemWordsBanner(
-                            count = homeState.problemWordCount,
-                            onClick = onNavigateToProblemWords,
-                            modifier = Modifier.fillMaxWidth(),
-                        )
-                    }
                 }
             }
         }
@@ -215,55 +204,6 @@ fun HomeScreen(
                 .padding(8.dp),
         ) {
             Text("⚙", fontSize = 22.sp, color = AccentGold.copy(alpha = 0.8f))
-        }
-    }
-}
-
-@Composable
-private fun ProblemWordsBanner(
-    count: Int,
-    onClick: () -> Unit,
-    modifier: Modifier = Modifier,
-) {
-    val warningColor = Color(0xFFFF6F00)
-    val s = LocalAppStrings.current
-    Box(
-        modifier = modifier
-            .glowEffect(warningColor, glowRadius = 14.dp, cornerRadius = 16.dp, alpha = 0.35f)
-            .clip(RoundedCornerShape(16.dp))
-            .background(
-                Brush.horizontalGradient(
-                    listOf(Color(0xFF3D1A00), Color(0xFF5A2800))
-                )
-            )
-            .border(1.5.dp, warningColor.copy(alpha = 0.7f), RoundedCornerShape(16.dp))
-            .clickable(
-                interactionSource = remember { MutableInteractionSource() },
-                indication = null,
-                onClick = onClick,
-            )
-            .padding(vertical = 14.dp, horizontal = 16.dp),
-        contentAlignment = Alignment.Center,
-    ) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(8.dp),
-        ) {
-            Text("⚠️", fontSize = 18.sp)
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    text = s.homeProblemWordsTitle(count),
-                    style = MaterialTheme.typography.titleSmall,
-                    fontWeight = FontWeight.Bold,
-                    color = warningColor,
-                )
-                Text(
-                    text = s.homeProblemWordsSubtitle,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = TextSecondary,
-                )
-            }
-            Text("›", fontSize = 22.sp, color = warningColor)
         }
     }
 }

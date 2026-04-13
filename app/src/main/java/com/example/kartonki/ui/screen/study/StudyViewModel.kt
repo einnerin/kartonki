@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.ProgressRepository
+import com.example.kartonki.data.repository.StatsRepository
 import com.example.kartonki.data.repository.WordSetRepository
 import com.example.kartonki.domain.model.Rarity
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -28,6 +29,8 @@ data class StudyListUiState(
     val isLoading: Boolean = true,
     val sets: List<WordSetUiItem> = emptyList(),
     val activeFilters: Set<Rarity> = emptySet(),
+    val problemWordCount: Int = 0,
+    val showProblemChipHint: Boolean = false,
     /**
      * Increments each time the user actively toggles a filter chip.
      * Used as a LaunchedEffect key so the list scrolls to top only on an explicit
@@ -43,6 +46,7 @@ data class StudyListUiState(
 class StudyViewModel @Inject constructor(
     private val wordSetRepository: WordSetRepository,
     private val progressRepository: ProgressRepository,
+    private val statsRepository: StatsRepository,
     private val prefs: UserPreferencesRepository,
 ) : ViewModel() {
 
@@ -85,6 +89,11 @@ class StudyViewModel @Inject constructor(
         }
     }
 
+    fun dismissProblemChipHint() {
+        prefs.setProblemChipHintShown()
+        _uiState.update { it.copy(showProblemChipHint = false) }
+    }
+
     private suspend fun loadSets(languagePair: String, showLoading: Boolean) {
         if (showLoading) _uiState.update { it.copy(isLoading = true) }
         wordSetRepository.ensureSeeded()
@@ -102,6 +111,22 @@ class StudyViewModel @Inject constructor(
                 rarity = rarity,
             )
         }
-        _uiState.update { it.copy(isLoading = false, sets = items) }
+        // Load problem word count and determine whether to show the first-time hint
+        val problemEnabled = prefs.problemWordsEnabled.first()
+        val problemCount = if (problemEnabled) {
+            val source = prefs.problemWordsSource.first()
+            val minEnc = prefs.problemWordsMinEncounters.first()
+            statsRepository.getProblemWordCount(source, minEnc)
+        } else 0
+        val wasHintShown = prefs.isProblemChipHintShown()
+        val showHint = problemCount > 0 && !wasHintShown
+        _uiState.update {
+            it.copy(
+                isLoading = false,
+                sets = items,
+                problemWordCount = problemCount,
+                showProblemChipHint = showHint,
+            )
+        }
     }
 }
