@@ -304,19 +304,13 @@ private fun OnlineWaitingScreen(
                 modifier = Modifier.weight(1f).fillMaxWidth(),
                 contentAlignment = Alignment.Center,
             ) {
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.spacedBy(16.dp),
+                Text(
+                    text = message,
+                    style = MaterialTheme.typography.titleMedium,
+                    color = TextSecondary,
+                    textAlign = TextAlign.Center,
                     modifier = Modifier.padding(horizontal = 32.dp),
-                ) {
-                    CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
-                    Text(
-                        text = message,
-                        style = MaterialTheme.typography.titleMedium,
-                        color = TextSecondary,
-                        textAlign = TextAlign.Center,
-                    )
-                }
+                )
             }
         }
     }
