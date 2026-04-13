@@ -41,13 +41,15 @@ class OnlineGameRepository @Inject constructor(
         playerIndex: Int,
     ) {
         val roundMap = mapOf(
-            "playedCardId" to round.playedCardId,
-            "attackerIndex" to round.attackerIndex,
-            "question" to round.question,
-            "questionLabel" to round.questionLabel,
-            "options" to round.options,
-            "correctAnswer" to round.correctAnswer,
-            "selectedAnswer" to "",
+            "playedCardId"          to round.playedCardId,
+            "attackerIndex"         to round.attackerIndex,
+            "question"              to round.question,
+            "questionLabel"         to round.questionLabel,
+            "options"               to round.options,
+            "correctAnswer"         to round.correctAnswer,
+            "selectedAnswer"        to "",
+            "playedCardOriginal"    to round.playedCardOriginal,
+            "playedCardTranslation" to round.playedCardTranslation,
         )
         val remainingKey = if (playerIndex == 0) "player1RemainingIds" else "player2RemainingIds"
         matchRef(matchId).updateChildren(
@@ -94,27 +96,25 @@ class OnlineGameRepository @Inject constructor(
     }
 
     private fun DataSnapshot.toMatchData(): OnlineMatchData {
-        @Suppress("UNCHECKED_CAST")
-        val p1Cards = (child("player1CardIds").value as? List<Long>) ?: emptyList()
-        @Suppress("UNCHECKED_CAST")
-        val p2Cards = (child("player2CardIds").value as? List<Long>) ?: emptyList()
-        @Suppress("UNCHECKED_CAST")
-        val p1Remaining = (child("player1RemainingIds").value as? List<Long>) ?: p1Cards
-        @Suppress("UNCHECKED_CAST")
-        val p2Remaining = (child("player2RemainingIds").value as? List<Long>) ?: p2Cards
+        val p1Cards    = child("player1CardIds").toCardIdList()
+        val p2Cards    = child("player2CardIds").toCardIdList()
+        val p1Remaining = child("player1RemainingIds").toCardIdList().ifEmpty { p1Cards }
+        val p2Remaining = child("player2RemainingIds").toCardIdList().ifEmpty { p2Cards }
 
         val roundSnap = child("currentRound")
         val round = if (roundSnap.exists()) {
-            @Suppress("UNCHECKED_CAST")
-            val opts = (roundSnap.child("options").value as? List<String>) ?: emptyList()
+            val opts = roundSnap.child("options").children
+                .mapNotNull { it.getValue(String::class.java) }
             OnlineRoundData(
-                playedCardId = roundSnap.child("playedCardId").getValue(Long::class.java) ?: 0L,
-                attackerIndex = roundSnap.child("attackerIndex").getValue(Long::class.java)?.toInt() ?: 0,
-                question = roundSnap.child("question").getValue(String::class.java) ?: "",
-                questionLabel = roundSnap.child("questionLabel").getValue(String::class.java) ?: "",
-                options = opts,
-                correctAnswer = roundSnap.child("correctAnswer").getValue(String::class.java) ?: "",
-                selectedAnswer = roundSnap.child("selectedAnswer").getValue(String::class.java) ?: "",
+                playedCardId          = roundSnap.child("playedCardId").getValue(Long::class.java) ?: 0L,
+                attackerIndex         = roundSnap.child("attackerIndex").getValue(Long::class.java)?.toInt() ?: 0,
+                question              = roundSnap.child("question").getValue(String::class.java) ?: "",
+                questionLabel         = roundSnap.child("questionLabel").getValue(String::class.java) ?: "",
+                options               = opts,
+                correctAnswer         = roundSnap.child("correctAnswer").getValue(String::class.java) ?: "",
+                selectedAnswer        = roundSnap.child("selectedAnswer").getValue(String::class.java) ?: "",
+                playedCardOriginal    = roundSnap.child("playedCardOriginal").getValue(String::class.java) ?: "",
+                playedCardTranslation = roundSnap.child("playedCardTranslation").getValue(String::class.java) ?: "",
             )
         } else null
 
@@ -141,3 +141,10 @@ class OnlineGameRepository @Inject constructor(
         )
     }
 }
+
+// Firebase can return integer lists as List<Long>, List<Int>, or ArrayList<Any>
+private fun DataSnapshot.toCardIdList(): List<Long> =
+    children.mapNotNull { snap ->
+        snap.getValue(Long::class.java)
+            ?: snap.getValue(Int::class.java)?.toLong()
+    }

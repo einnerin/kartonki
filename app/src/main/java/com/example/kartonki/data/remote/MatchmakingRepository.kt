@@ -121,13 +121,16 @@ class MatchmakingRepository @Inject constructor(
                 "currentRound"         to null,
                 "winnerIndex"          to -1,
             )
-            matchesRef.child(matchId).setValue(matchData)
-            // I am player1 (index 0)
-            myRef.updateChildren(mapOf("matchId" to matchId, "myIndex" to 0))
-            // Write to opponent's entry (player2, index 1).
-            // May be blocked by Firebase rules — that's OK:
-            // the opponent discovers the match via onChildChanged → checkMatchForMe().
-            queueRef.child(opponentUid).updateChildren(mapOf("matchId" to matchId, "myIndex" to 1))
+            // Write queue entries ONLY after the match is committed — otherwise the early
+            // joiner's checkMatchForMe reads the document before it exists and gets nothing.
+            matchesRef.child(matchId).setValue(matchData).addOnSuccessListener {
+                // I am player1 (index 0)
+                myRef.updateChildren(mapOf("matchId" to matchId, "myIndex" to 0))
+                // Write to opponent's entry (player2, index 1).
+                // May be blocked by Firebase rules — that's OK:
+                // the opponent discovers the match via onChildChanged → checkMatchForMe().
+                queueRef.child(opponentUid).updateChildren(mapOf("matchId" to matchId, "myIndex" to 1))
+            }
         }
 
         // ── Queue listener ───────────────────────────────────────────────────

@@ -235,13 +235,17 @@ class OnlinePvpGameViewModel @Inject constructor(
             playedCardTranslation = card.translation,
         )
         viewModelScope.launch {
-            onlineGameRepository.submitCardPick(
-                matchId = matchId,
-                attackerIndex = myIndex,
-                round = round,
-                newRemainingIds = newRemainingIds,
-                playerIndex = myIndex,
-            )
+            try {
+                onlineGameRepository.submitCardPick(
+                    matchId = matchId,
+                    attackerIndex = myIndex,
+                    round = round,
+                    newRemainingIds = newRemainingIds,
+                    playerIndex = myIndex,
+                )
+            } catch (e: Exception) {
+                _uiState.update { it.copy(connectionError = "Ошибка отправки хода: ${e.message}") }
+            }
         }
     }
 
@@ -261,6 +265,7 @@ class OnlinePvpGameViewModel @Inject constructor(
         val selected = phase.selectedAnswer ?: return
 
         viewModelScope.launch {
+            try {
             val isCorrect = selected.equals(phase.correctAnswer, ignoreCase = true)
 
             // I am the defender. Turns ALTERNATE: defender becomes next attacker.
@@ -339,6 +344,9 @@ class OnlinePvpGameViewModel @Inject constructor(
                     else -> firestoreUserRepository.incrementLoss(uid)
                 }
             }
+            } catch (e: Exception) {
+                _uiState.update { it.copy(connectionError = "Ошибка подтверждения ответа: ${e.message}") }
+            }
         }
     }
 
@@ -351,19 +359,23 @@ class OnlinePvpGameViewModel @Inject constructor(
         val p1Score = if (myIndex == 0) state.myScore else state.opponentScore
         val p2Score = if (myIndex == 0) state.opponentScore else state.myScore
         viewModelScope.launch {
-            onlineGameRepository.confirmAnswer(
-                matchId = matchId,
-                p1Score = p1Score,
-                p2Score = p2Score,
-                p1Streak = 0,
-                p2Streak = 0,
-                nextTurn = 0,
-                nextPhase = OnlineMatchData.PHASE_GAME_OVER,
-                isGameOver = true,
-                winnerIndex = opponentIndex,
-            )
-            val uid = authManager.currentUser.value?.uid ?: return@launch
-            firestoreUserRepository.incrementLoss(uid)
+            try {
+                onlineGameRepository.confirmAnswer(
+                    matchId = matchId,
+                    p1Score = p1Score,
+                    p2Score = p2Score,
+                    p1Streak = 0,
+                    p2Streak = 0,
+                    nextTurn = 0,
+                    nextPhase = OnlineMatchData.PHASE_GAME_OVER,
+                    isGameOver = true,
+                    winnerIndex = opponentIndex,
+                )
+                val uid = authManager.currentUser.value?.uid ?: return@launch
+                firestoreUserRepository.incrementLoss(uid)
+            } catch (e: Exception) {
+                _uiState.update { it.copy(connectionError = "Ошибка сдачи: ${e.message}") }
+            }
         }
     }
 
