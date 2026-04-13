@@ -38,4 +38,6 @@ data class OnlineRoundData(
     val options: List<String> = emptyList(),
     val correctAnswer: String = "",
     val selectedAnswer: String = "",
+    val playedCardOriginal: String = "",
+    val playedCardTranslation: String = "",
 )

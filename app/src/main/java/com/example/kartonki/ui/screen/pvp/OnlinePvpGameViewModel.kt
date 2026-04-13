@@ -189,15 +189,14 @@ class OnlinePvpGameViewModel @Inject constructor(
                     startTimerFrom(match.roundStartTime)
                 }
 
-                val playedCard = allWords.find { it.id == round.playedCardId }
                 val newPhase = if (isMyQuiz) {
                     OnlinePvpPhase.MyQuiz(
                         question = round.question,
                         questionLabel = round.questionLabel,
                         options = round.options,
                         correctAnswer = round.correctAnswer,
-                        playedCardWord = playedCard?.original ?: "",
-                        playedCardTranslation = playedCard?.translation ?: "",
+                        playedCardWord = round.playedCardOriginal,
+                        playedCardTranslation = round.playedCardTranslation,
                         selectedAnswer = round.selectedAnswer.takeIf { it.isNotEmpty() },
                     )
                 } else {
@@ -232,6 +231,8 @@ class OnlinePvpGameViewModel @Inject constructor(
             options = quiz.options,
             correctAnswer = quiz.correctAnswer,
             selectedAnswer = "",
+            playedCardOriginal = card.original,
+            playedCardTranslation = card.translation,
         )
         viewModelScope.launch {
             onlineGameRepository.submitCardPick(
