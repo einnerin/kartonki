@@ -20,7 +20,6 @@ object FirebaseModule {
     @Provides
     @Singleton
     fun provideFirebaseApp(@ApplicationContext context: Context): FirebaseApp {
-        // Инициализируем вручную, так как google-services плагин не применён
         val existing = FirebaseApp.getApps(context)
         if (existing.isNotEmpty()) return FirebaseApp.getInstance()
 
