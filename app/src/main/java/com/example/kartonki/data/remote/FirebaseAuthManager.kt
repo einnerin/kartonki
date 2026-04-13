@@ -50,9 +50,18 @@ class FirebaseAuthManager @Inject constructor(
     suspend fun firebaseSignInWithGoogle(idToken: String): Result<UserProfile> = runCatching {
         Log.d(TAG, "firebaseSignInWithGoogle: creating credential")
         val credential = GoogleAuthProvider.getCredential(idToken, null)
-        Log.d(TAG, "firebaseSignInWithGoogle: calling signInWithCredential...")
-        val result = withTimeout(30_000L) {
-            auth.signInWithCredential(credential).await()
+        val currentUser = auth.currentUser
+        val result = if (currentUser != null && currentUser.isAnonymous) {
+            // Link anonymous account to Google so local progress is preserved
+            Log.d(TAG, "firebaseSignInWithGoogle: linking anonymous account to Google")
+            withTimeout(30_000L) {
+                currentUser.linkWithCredential(credential).await()
+            }
+        } else {
+            Log.d(TAG, "firebaseSignInWithGoogle: calling signInWithCredential...")
+            withTimeout(30_000L) {
+                auth.signInWithCredential(credential).await()
+            }
         }
         Log.d(TAG, "firebaseSignInWithGoogle: success, user=${result.user?.uid}")
         result.user?.toProfile() ?: error("Firebase user is null after sign-in")
