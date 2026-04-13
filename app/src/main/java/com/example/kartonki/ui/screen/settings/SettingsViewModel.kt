@@ -71,6 +71,12 @@ data class SettingsUiState(
     val fillBlankQuizMode: String = "both",
     val enabledQuizTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
     val problemWordsSource: String = "both",
+    // Problem words block
+    val problemWordsEnabled: Boolean = true,
+    val problemWordsMinEncounters: Int = 2,
+    val problemWordsCorrectToLearn: Int = 1,
+    val showMinEncountersPicker: Boolean = false,
+    val showCorrectToLearnPicker: Boolean = false,
     val isEditingName: Boolean = false,
     val nameInput: String = "",
     val showLanguagePicker: Boolean = false,
@@ -173,10 +179,25 @@ class SettingsViewModel @Inject constructor(
                 }
             }
         }
-        // Collect problemWordsSource in a separate coroutine to keep the combine above clean
+        // Collect problemWordsSource and problem words settings in separate coroutines
         viewModelScope.launch {
             prefs.problemWordsSource.collect { source ->
                 _uiState.update { it.copy(problemWordsSource = source) }
+            }
+        }
+        viewModelScope.launch {
+            prefs.problemWordsEnabled.collect { v ->
+                _uiState.update { it.copy(problemWordsEnabled = v) }
+            }
+        }
+        viewModelScope.launch {
+            prefs.problemWordsMinEncounters.collect { v ->
+                _uiState.update { it.copy(problemWordsMinEncounters = v) }
+            }
+        }
+        viewModelScope.launch {
+            prefs.problemWordsCorrectToLearn.collect { v ->
+                _uiState.update { it.copy(problemWordsCorrectToLearn = v) }
             }
         }
     }
@@ -239,6 +260,23 @@ class SettingsViewModel @Inject constructor(
     fun onProblemWordsSourceSelected(source: String) {
         prefs.setProblemWordsSource(source)
         _uiState.update { it.copy(showProblemWordsSourcePicker = false) }
+    }
+
+    // ── Problem words block ────────────────────────────────────────────────────
+    fun onProblemWordsEnabledToggle(enabled: Boolean) = prefs.setProblemWordsEnabled(enabled)
+
+    fun onShowMinEncountersPicker() = _uiState.update { it.copy(showMinEncountersPicker = true) }
+    fun onDismissMinEncountersPicker() = _uiState.update { it.copy(showMinEncountersPicker = false) }
+    fun onMinEncountersSelected(n: Int) {
+        prefs.setProblemWordsMinEncounters(n)
+        _uiState.update { it.copy(showMinEncountersPicker = false) }
+    }
+
+    fun onShowCorrectToLearnPicker() = _uiState.update { it.copy(showCorrectToLearnPicker = true) }
+    fun onDismissCorrectToLearnPicker() = _uiState.update { it.copy(showCorrectToLearnPicker = false) }
+    fun onCorrectToLearnSelected(n: Int) {
+        prefs.setProblemWordsCorrectToLearn(n)
+        _uiState.update { it.copy(showCorrectToLearnPicker = false) }
     }
 
     fun onSignOutClick() = _uiState.update { it.copy(showSignOutDialog = true) }

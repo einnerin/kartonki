@@ -68,17 +68,23 @@ fun ProblemWordsSessionScreen(
         Box(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
             when {
                 uiState.isLoading -> CircularProgressIndicator(Modifier.align(Alignment.Center))
+                uiState.isDisabled -> ProblemWordsDisabledContent(
+                    modifier = Modifier.align(Alignment.Center),
+                    onBack = onNavigateBack,
+                )
                 uiState.isEmpty -> ProblemWordsEmptyContent(
                     modifier = Modifier.align(Alignment.Center),
                     onBack = onNavigateBack,
                 )
                 uiState.isSessionComplete -> ProblemWordsCompleteContent(
-                    correctCount   = uiState.correctCount,
-                    incorrectCount = uiState.incorrectCount,
-                    improvedCount  = uiState.improvedCount,
-                    wordsStudied   = uiState.wordsStudied,
-                    onNewSession   = { viewModel.loadSession() },
-                    onNavigateBack = onNavigateBack,
+                    correctCount     = uiState.correctCount,
+                    incorrectCount   = uiState.incorrectCount,
+                    improvedCount    = uiState.improvedCount,
+                    learnedCount     = uiState.learnedCount,
+                    wordsStudied     = uiState.wordsStudied,
+                    showSettingsHint = uiState.showSettingsHint,
+                    onNewSession     = { viewModel.loadSession() },
+                    onNavigateBack   = onNavigateBack,
                     modifier = Modifier.fillMaxSize().padding(24.dp),
                 )
                 else -> Column(Modifier.fillMaxSize()) {
@@ -125,6 +131,23 @@ fun ProblemWordsSessionScreen(
 }
 
 @Composable
+private fun ProblemWordsDisabledContent(modifier: Modifier = Modifier, onBack: () -> Unit) {
+    Column(
+        modifier = modifier.padding(24.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        Text("⚙️", fontSize = 48.sp)
+        Text(
+            "Работа над ошибками отключена в настройках",
+            style = MaterialTheme.typography.bodyLarge,
+            textAlign = TextAlign.Center,
+        )
+        OutlinedButton(onClick = onBack) { Text(LocalAppStrings.current.problemWordsBack) }
+    }
+}
+
+@Composable
 private fun ProblemWordsEmptyContent(modifier: Modifier = Modifier, onBack: () -> Unit) {
     val s = LocalAppStrings.current
     Column(
@@ -147,7 +170,9 @@ private fun ProblemWordsCompleteContent(
     correctCount: Int,
     incorrectCount: Int,
     improvedCount: Int,
+    learnedCount: Int,
     wordsStudied: Int,
+    showSettingsHint: Boolean,
     onNewSession: () -> Unit,
     onNavigateBack: () -> Unit,
     modifier: Modifier = Modifier,
@@ -159,6 +184,7 @@ private fun ProblemWordsCompleteContent(
         verticalArrangement = Arrangement.Center,
     ) {
         val emoji = when {
+            learnedCount > 0                  -> "🏆"
             improvedCount >= wordsStudied / 2 -> "🎉"
             improvedCount > 0                 -> "📈"
             else                              -> "💪"
@@ -191,15 +217,32 @@ private fun ProblemWordsCompleteContent(
 
         Spacer(Modifier.height(20.dp))
 
+        // Learned words (mastered in problem sessions)
+        if (learnedCount > 0) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(ColorCorrect.copy(alpha = 0.12f), RoundedCornerShape(12.dp))
+                    .padding(horizontal = 20.dp, vertical = 14.dp),
+                contentAlignment = Alignment.Center,
+            ) {
+                Text(
+                    text = "✅ Усвоено слов: $learnedCount — они убраны из списка ошибок",
+                    style = MaterialTheme.typography.bodyMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = ColorCorrect,
+                    textAlign = TextAlign.Center,
+                )
+            }
+            Spacer(Modifier.height(12.dp))
+        }
+
         // Improvement summary
         val improvementColor = if (improvedCount > 0) ColorCorrect else ColorWarning
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(
-                    improvementColor.copy(alpha = 0.12f),
-                    RoundedCornerShape(12.dp),
-                )
+                .background(improvementColor.copy(alpha = 0.12f), RoundedCornerShape(12.dp))
                 .padding(horizontal = 20.dp, vertical = 14.dp),
             contentAlignment = Alignment.Center,
         ) {
@@ -214,6 +257,37 @@ private fun ProblemWordsCompleteContent(
                     color = improvementColor,
                     textAlign = TextAlign.Center,
                 )
+            }
+        }
+
+        // Settings hint (shown only after first completed session)
+        if (showSettingsHint) {
+            Spacer(Modifier.height(16.dp))
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(
+                        MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.5f),
+                        RoundedCornerShape(12.dp),
+                    )
+                    .padding(horizontal = 16.dp, vertical = 12.dp),
+            ) {
+                Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text(
+                        text = "💡 Знаешь ли ты?",
+                        style = MaterialTheme.typography.labelLarge,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer,
+                    )
+                    Text(
+                        text = "В настройках можно изменить параметры работы над ошибками: " +
+                               "минимум попыток для попадания в список, " +
+                               "сколько раз нужно правильно ответить чтобы слово считалось усвоенным, " +
+                               "и полностью отключить этот режим.",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onPrimaryContainer,
+                    )
+                }
             }
         }
 

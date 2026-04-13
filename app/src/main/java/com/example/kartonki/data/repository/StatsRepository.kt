@@ -90,7 +90,7 @@ class StatsRepository @Inject constructor(
      */
     suspend fun getProblemWords(
         source: String = "both",
-        minEncounters: Int = 5,
+        minEncounters: Int = 2,
         minErrorRate: Float = 0.30f,
         limit: Int = 25,
     ): List<Word> {
@@ -137,8 +137,8 @@ class StatsRepository @Inject constructor(
     }
 
     /** Returns the number of problem words matching the given source filter. */
-    suspend fun getProblemWordCount(source: String = "both"): Int =
-        getProblemWords(source).size
+    suspend fun getProblemWordCount(source: String = "both", minEncounters: Int = 2): Int =
+        getProblemWords(source, minEncounters).size
 
     private fun calculateCurrentStreak(sortedDesc: List<Long>): Int {
         if (sortedDesc.isEmpty()) return 0

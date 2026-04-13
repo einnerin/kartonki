@@ -504,6 +504,56 @@ fun SettingsScreen(
                 )
             }
 
+            // ── Problem words ──────────────────────────────────────────────────
+            SectionHeader("Работа над ошибками")
+            SettingsRow(label = "Включить режим работы над ошибками") {
+                Switch(
+                    checked = state.problemWordsEnabled,
+                    onCheckedChange = viewModel::onProblemWordsEnabledToggle,
+                )
+            }
+            if (state.problemWordsEnabled) {
+                SettingsRow(label = "Минимум попыток для попадания в список") {
+                    Text(
+                        "${state.problemWordsMinEncounters}",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.primary,
+                        fontWeight = FontWeight.Medium,
+                        modifier = Modifier.clickable { viewModel.onShowMinEncountersPicker() },
+                    )
+                }
+                SettingsRow(label = "Правильных ответов для усвоения слова") {
+                    Text(
+                        "${state.problemWordsCorrectToLearn}",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.primary,
+                        fontWeight = FontWeight.Medium,
+                        modifier = Modifier.clickable { viewModel.onShowCorrectToLearnPicker() },
+                    )
+                }
+            }
+
+            if (state.showMinEncountersPicker) {
+                IntPickerDialog(
+                    title = "Минимум попыток",
+                    subtitle = "Слово попадёт в список ошибок после этого числа попыток",
+                    options = listOf(1, 2, 3, 5, 10),
+                    selected = state.problemWordsMinEncounters,
+                    onSelect = viewModel::onMinEncountersSelected,
+                    onDismiss = viewModel::onDismissMinEncountersPicker,
+                )
+            }
+            if (state.showCorrectToLearnPicker) {
+                IntPickerDialog(
+                    title = "Правильных ответов для усвоения",
+                    subtitle = "Столько раз нужно правильно ответить в режиме работы над ошибками, чтобы слово считалось усвоенным",
+                    options = listOf(1, 2, 3, 5),
+                    selected = state.problemWordsCorrectToLearn,
+                    onSelect = viewModel::onCorrectToLearnSelected,
+                    onDismiss = viewModel::onDismissCorrectToLearnPicker,
+                )
+            }
+
             // ── Navigation links ───────────────────────────────────────────────
             SectionHeader(s.settingsProgressSection)
             NavRow(s.settingsPlayerStats, onClick = onNavigateToStats)
@@ -703,6 +753,60 @@ private fun QuizModePickerDialog(
         confirmButton = {},
         dismissButton = {
             TextButton(onClick = onDismiss) { Text(s.settingsCancelButton) }
+        },
+    )
+}
+
+@Composable
+private fun IntPickerDialog(
+    title: String,
+    subtitle: String,
+    options: List<Int>,
+    selected: Int,
+    onSelect: (Int) -> Unit,
+    onDismiss: () -> Unit,
+) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(title) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                Text(
+                    subtitle,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(bottom = 8.dp),
+                )
+                options.forEach { option ->
+                    val isSelected = option == selected
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(8.dp))
+                            .background(
+                                if (isSelected) MaterialTheme.colorScheme.primaryContainer
+                                else MaterialTheme.colorScheme.surface
+                            )
+                            .clickable { onSelect(option) }
+                            .padding(horizontal = 12.dp, vertical = 12.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Text(
+                            "$option",
+                            style = MaterialTheme.typography.bodyLarge,
+                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                            color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                                    else MaterialTheme.colorScheme.onSurface,
+                        )
+                        if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
+                    }
+                }
+            }
+        },
+        confirmButton = {},
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text("Отмена") }
         },
     )
 }

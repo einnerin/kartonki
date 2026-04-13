@@ -8,6 +8,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -27,8 +28,14 @@ class HomeViewModel @Inject constructor(
 
     fun refresh() {
         viewModelScope.launch {
+            val enabled = prefs.problemWordsEnabled.first()
+            if (!enabled) {
+                _uiState.value = HomeUiState(problemWordCount = 0)
+                return@launch
+            }
             val source = prefs.problemWordsSource.first()
-            val count = statsRepository.getProblemWordCount(source)
+            val minEnc = prefs.problemWordsMinEncounters.first()
+            val count = statsRepository.getProblemWordCount(source, minEnc)
             _uiState.value = HomeUiState(problemWordCount = count)
         }
     }

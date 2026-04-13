@@ -29,7 +29,12 @@ class UserPreferencesRepository @Inject constructor(
         const val DEFINITION_QUIZ_MODE     = "definition_quiz_mode"   // "foreign" | "native" | "both"
         const val FILL_BLANK_QUIZ_MODE     = "fill_blank_quiz_mode"  // "foreign" | "native" | "both"
         const val QUIZ_TYPES_ENABLED       = "quiz_types_enabled"    // comma-separated keys
-        const val PROBLEM_WORDS_SOURCE     = "problem_words_source"  // "both" | "pve_only" | "pvp_only"
+        const val PROBLEM_WORDS_SOURCE          = "problem_words_source"   // "both" | "pve_only" | "pvp_only"
+        const val PROBLEM_WORDS_ENABLED         = "problem_words_enabled"  // Boolean
+        const val PROBLEM_WORDS_MIN_ENCOUNTERS  = "problem_words_min_enc"  // Int: 1/2/3/5/10
+        const val PROBLEM_WORDS_CORRECT_TO_LEARN = "problem_words_ctl"     // Int: 1/2/3/5
+        const val PROBLEM_WORDS_HINT_SHOWN      = "problem_words_hint"     // Boolean
+        const val PROBLEM_SESSION_COUNTS        = "problem_session_counts" // "id:count,id:count,..."
     }
 
     companion object {
@@ -79,6 +84,33 @@ class UserPreferencesRepository @Inject constructor(
 
     val problemWordsSource: Flow<String> = prefsFlow().map { it.getString(Keys.PROBLEM_WORDS_SOURCE, "both") ?: "both" }
     fun setProblemWordsSource(source: String) = prefs.edit().putString(Keys.PROBLEM_WORDS_SOURCE, source).apply()
+
+    val problemWordsEnabled: Flow<Boolean> = prefsFlow().map { it.getBoolean(Keys.PROBLEM_WORDS_ENABLED, true) }
+    fun setProblemWordsEnabled(enabled: Boolean) = prefs.edit().putBoolean(Keys.PROBLEM_WORDS_ENABLED, enabled).apply()
+
+    val problemWordsMinEncounters: Flow<Int> = prefsFlow().map { it.getInt(Keys.PROBLEM_WORDS_MIN_ENCOUNTERS, 2) }
+    fun setProblemWordsMinEncounters(n: Int) = prefs.edit().putInt(Keys.PROBLEM_WORDS_MIN_ENCOUNTERS, n).apply()
+
+    val problemWordsCorrectToLearn: Flow<Int> = prefsFlow().map { it.getInt(Keys.PROBLEM_WORDS_CORRECT_TO_LEARN, 1) }
+    fun setProblemWordsCorrectToLearn(n: Int) = prefs.edit().putInt(Keys.PROBLEM_WORDS_CORRECT_TO_LEARN, n).apply()
+
+    fun isProblemWordsHintShown(): Boolean = prefs.getBoolean(Keys.PROBLEM_WORDS_HINT_SHOWN, false)
+    fun setProblemWordsHintShown() = prefs.edit().putBoolean(Keys.PROBLEM_WORDS_HINT_SHOWN, true).apply()
+
+    /** Returns the number of correct problem-session answers accumulated per word: wordId → count. */
+    fun getProblemSessionCounts(): Map<Long, Int> {
+        val raw = prefs.getString(Keys.PROBLEM_SESSION_COUNTS, null) ?: return emptyMap()
+        return raw.split(",").mapNotNull { entry ->
+            val parts = entry.split(":")
+            if (parts.size == 2) parts[0].toLongOrNull()?.let { id -> parts[1].toIntOrNull()?.let { id to it } }
+            else null
+        }.toMap()
+    }
+
+    fun setProblemSessionCounts(counts: Map<Long, Int>) {
+        val raw = counts.entries.joinToString(",") { "${it.key}:${it.value}" }
+        prefs.edit().putString(Keys.PROBLEM_SESSION_COUNTS, raw).apply()
+    }
 
     val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
         val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)

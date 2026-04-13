@@ -23,6 +23,7 @@ import javax.inject.Inject
 data class ProblemSessionUiState(
     val isLoading: Boolean = true,
     val isEmpty: Boolean = false,
+    val isDisabled: Boolean = false,
     val steps: List<StudyStep> = emptyList(),
     val currentStepIndex: Int = 0,
     val correctCount: Int = 0,
@@ -30,7 +31,9 @@ data class ProblemSessionUiState(
     val isSessionComplete: Boolean = false,
     val answerState: AnswerState = AnswerState.Unanswered,
     val improvedCount: Int = 0,
+    val learnedCount: Int = 0,
     val wordsStudied: Int = 0,
+    val showSettingsHint: Boolean = false,
 ) {
     val currentStep: StudyStep? get() = steps.getOrNull(currentStepIndex)
     val progress: Float get() = if (steps.isEmpty()) 0f else currentStepIndex.toFloat() / steps.size
@@ -55,6 +58,9 @@ class ProblemWordsSessionViewModel @Inject constructor(
     private val sessionCorrect: MutableMap<Long, Int> = mutableMapOf()
     private val sessionIncorrect: MutableMap<Long, Int> = mutableMapOf()
 
+    // Setting: how many correct answers in problem sessions total = mastered
+    private var correctToLearn: Int = 1
+
     init {
         loadSession()
     }
@@ -68,15 +74,26 @@ class ProblemWordsSessionViewModel @Inject constructor(
                     correctCount = 0,
                     incorrectCount = 0,
                     answerState = AnswerState.Unanswered,
+                    learnedCount = 0,
+                    showSettingsHint = false,
                 )
             }
             sessionCorrect.clear()
             sessionIncorrect.clear()
 
+            val enabled = prefs.problemWordsEnabled.first()
+            if (!enabled) {
+                _uiState.update { it.copy(isLoading = false, isDisabled = true, isEmpty = false) }
+                return@launch
+            }
+
             val source = prefs.problemWordsSource.first()
-            val words = statsRepository.getProblemWords(source)
+            val minEncounters = prefs.problemWordsMinEncounters.first()
+            correctToLearn = prefs.problemWordsCorrectToLearn.first()
+
+            val words = statsRepository.getProblemWords(source, minEncounters)
             if (words.isEmpty()) {
-                _uiState.update { it.copy(isLoading = false, isEmpty = true) }
+                _uiState.update { it.copy(isLoading = false, isEmpty = true, isDisabled = false) }
                 return@launch
             }
 
@@ -91,6 +108,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
                 it.copy(
                     isLoading = false,
                     isEmpty = false,
+                    isDisabled = false,
                     steps = steps,
                     currentStepIndex = 0,
                     wordsStudied = words.size,
@@ -133,7 +151,17 @@ class ProblemWordsSessionViewModel @Inject constructor(
         if (next >= _uiState.value.steps.size) {
             viewModelScope.launch {
                 val improved = computeImprovedCount()
-                _uiState.update { it.copy(isSessionComplete = true, improvedCount = improved) }
+                val learned  = applyMasteryAndCount()
+                val showHint = !prefs.isProblemWordsHintShown()
+                if (showHint) prefs.setProblemWordsHintShown()
+                _uiState.update {
+                    it.copy(
+                        isSessionComplete = true,
+                        improvedCount = improved,
+                        learnedCount  = learned,
+                        showSettingsHint = showHint,
+                    )
+                }
                 achievementRepository.recordStudyDay()
                 packRepository.checkAndGrantEarnedCards()
                 packRepository.onActivityCompleted()
@@ -141,6 +169,45 @@ class ProblemWordsSessionViewModel @Inject constructor(
         } else {
             _uiState.update { it.copy(currentStepIndex = next) }
         }
+    }
+
+    /**
+     * Accumulates correct problem-session counts across sessions.
+     * Returns the number of words that newly reached the mastery threshold.
+     */
+    private suspend fun applyMasteryAndCount(): Int {
+        val storedCounts = prefs.getProblemSessionCounts().toMutableMap()
+        var masteredThisSession = 0
+
+        for ((wordId, correctInSession) in sessionCorrect) {
+            val newTotal = (storedCounts[wordId] ?: 0) + correctInSession
+            if (newTotal >= correctToLearn) {
+                // Word is mastered — clear its error rate and reset its counter
+                masterWord(wordId)
+                storedCounts.remove(wordId)
+                masteredThisSession++
+            } else {
+                storedCounts[wordId] = newTotal
+            }
+        }
+
+        prefs.setProblemSessionCounts(storedCounts)
+        return masteredThisSession
+    }
+
+    /**
+     * Marks a word as mastered by resetting its incorrectCount to 0,
+     * which clears its error rate and removes it from the problem words list.
+     */
+    private suspend fun masterWord(wordId: Long) {
+        val existing = progressRepository.getProgress(wordId) ?: return
+        progressRepository.upsert(
+            existing.copy(
+                incorrectCount = 0,
+                level          = MAX_LEVEL,
+                nextReviewAt   = System.currentTimeMillis() + LEVEL_INTERVALS_DAYS[MAX_LEVEL] * 24L * 60 * 60 * 1000,
+            )
+        )
     }
 
     private fun saveProgress(word: Word, isCorrect: Boolean) {
