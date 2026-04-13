@@ -265,7 +265,6 @@ class OnlinePvpGameViewModel @Inject constructor(
         val selected = phase.selectedAnswer ?: return
 
         viewModelScope.launch {
-            try {
             val isCorrect = selected.equals(phase.correctAnswer, ignoreCase = true)
 
             // I am the defender. Turns ALTERNATE: defender becomes next attacker.
@@ -324,28 +323,34 @@ class OnlinePvpGameViewModel @Inject constructor(
                 else -> -1
             }
 
-            onlineGameRepository.confirmAnswer(
-                matchId = matchId,
-                p1Score = p1Score,
-                p2Score = p2Score,
-                p1Streak = p1Streak,
-                p2Streak = p2Streak,
-                nextTurn = nextAttacker,
-                nextPhase = nextPhase,
-                isGameOver = isGameOver,
-                winnerIndex = winnerIndex,
-            )
-
-            if (isGameOver) {
-                val uid = authManager.currentUser.value?.uid ?: return@launch
-                when {
-                    winnerIndex == myIndex -> firestoreUserRepository.incrementWin(uid)
-                    winnerIndex == -1 -> firestoreUserRepository.incrementDraw(uid)
-                    else -> firestoreUserRepository.incrementLoss(uid)
-                }
-            }
+            // Game-critical write to Realtime Database
+            try {
+                onlineGameRepository.confirmAnswer(
+                    matchId = matchId,
+                    p1Score = p1Score,
+                    p2Score = p2Score,
+                    p1Streak = p1Streak,
+                    p2Streak = p2Streak,
+                    nextTurn = nextAttacker,
+                    nextPhase = nextPhase,
+                    isGameOver = isGameOver,
+                    winnerIndex = winnerIndex,
+                )
             } catch (e: Exception) {
                 _uiState.update { it.copy(connectionError = "Ошибка подтверждения ответа: ${e.message}") }
+                return@launch
+            }
+
+            // Stats update is best-effort — Firestore errors must not break the game
+            if (isGameOver) {
+                try {
+                    val uid = authManager.currentUser.value?.uid ?: return@launch
+                    when {
+                        winnerIndex == myIndex -> firestoreUserRepository.incrementWin(uid)
+                        winnerIndex == -1 -> firestoreUserRepository.incrementDraw(uid)
+                        else -> firestoreUserRepository.incrementLoss(uid)
+                    }
+                } catch (_: Exception) { /* ignore */ }
             }
         }
     }
@@ -371,11 +376,15 @@ class OnlinePvpGameViewModel @Inject constructor(
                     isGameOver = true,
                     winnerIndex = opponentIndex,
                 )
-                val uid = authManager.currentUser.value?.uid ?: return@launch
-                firestoreUserRepository.incrementLoss(uid)
             } catch (e: Exception) {
                 _uiState.update { it.copy(connectionError = "Ошибка сдачи: ${e.message}") }
+                return@launch
             }
+            // Stats update is best-effort — Firestore errors must not break the game
+            try {
+                val uid = authManager.currentUser.value?.uid ?: return@launch
+                firestoreUserRepository.incrementLoss(uid)
+            } catch (_: Exception) { /* ignore */ }
         }
     }
 
