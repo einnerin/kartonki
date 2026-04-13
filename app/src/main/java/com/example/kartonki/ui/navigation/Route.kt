@@ -49,4 +49,16 @@ sealed class Route(val path: String) {
         const val ARG_P1_NAME  = "p1Name"
         const val ARG_P2_NAME  = "p2Name"
     }
+
+    object Login : Route("login")
+
+    object PvpModeSelect : Route("pvp_mode_select")
+
+    object OnlineMatchmaking : Route("online_matchmaking")
+
+    object OnlinePvpGame : Route("online_pvp_game/{matchId}/{myIndex}") {
+        fun createRoute(matchId: String, myIndex: Int) = "online_pvp_game/$matchId/$myIndex"
+        const val ARG_MATCH_ID = "matchId"
+        const val ARG_MY_INDEX = "myIndex"
+    }
 }

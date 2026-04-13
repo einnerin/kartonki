@@ -10,15 +10,20 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.example.kartonki.data.remote.FirebaseAuthManager
 import com.example.kartonki.ui.component.AchievementNotificationDialog
 import com.example.kartonki.ui.screen.achievements.AchievementEventViewModel
 import com.example.kartonki.ui.screen.achievements.AchievementsScreen
 import com.example.kartonki.ui.screen.collection.CollectionScreen
 import com.example.kartonki.ui.screen.deckbuilder.DeckBuilderScreen
 import com.example.kartonki.ui.screen.home.HomeScreen
+import com.example.kartonki.ui.screen.login.LoginScreen
 import com.example.kartonki.ui.screen.mydecks.MyDecksScreen
+import com.example.kartonki.ui.screen.pvp.OnlineMatchmakingScreen
+import com.example.kartonki.ui.screen.pvp.OnlinePvpGameScreen
 import com.example.kartonki.ui.screen.pvp.PvpDeckSelectScreen
 import com.example.kartonki.ui.screen.pvp.PvpGameScreen
+import com.example.kartonki.ui.screen.pvp.PvpModeSelectScreen
 import com.example.kartonki.ui.screen.rewards.NewCardsEventViewModel
 import com.example.kartonki.ui.screen.rewards.NewCardsScreen
 import com.example.kartonki.ui.screen.settings.SettingsScreen
@@ -33,7 +38,7 @@ import com.example.kartonki.ui.screen.study.StudySessionScreen
 import com.example.kartonki.ui.screen.study.WordSetDetailScreen
 
 @Composable
-fun AppNavGraph(navController: NavHostController) {
+fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManager) {
     // Achievement notification overlay — shared across all screens
     val achievementVm: AchievementEventViewModel = hiltViewModel()
     val pendingAchievement by achievementVm.pendingNotification.collectAsState()
@@ -53,8 +58,19 @@ fun AppNavGraph(navController: NavHostController) {
         composable(Route.Splash.path) {
             SplashScreen(
                 onSplashFinished = {
-                    navController.navigate(Route.Home.path) {
+                    val dest = if (authManager.isSignedIn) Route.Home.path else Route.Login.path
+                    navController.navigate(dest) {
                         popUpTo(Route.Splash.path) { inclusive = true }
+                    }
+                },
+            )
+        }
+
+        composable(Route.Login.path) {
+            LoginScreen(
+                onSignedIn = {
+                    navController.navigate(Route.Home.path) {
+                        popUpTo(Route.Login.path) { inclusive = true }
                     }
                 },
             )
@@ -63,11 +79,47 @@ fun AppNavGraph(navController: NavHostController) {
         composable(Route.Home.path) {
             HomeScreen(
                 onNavigateToStudy = { navController.navigate(Route.Study.path) },
-                onNavigateToPvp = { navController.navigate(Route.PvpDeckSelect.path) },
+                onNavigateToPvp = { navController.navigate(Route.PvpModeSelect.path) },
                 onNavigateToCollection = { navController.navigate(Route.MyDecks.path) },
                 onNavigateToSettings = { navController.navigate(Route.Settings.path) },
                 onNavigateToShop = { navController.navigate(Route.PackShop.path) },
                 onNavigateToProblemWords = { navController.navigate(Route.ProblemWordsSession.path) },
+            )
+        }
+
+        composable(Route.PvpModeSelect.path) {
+            PvpModeSelectScreen(
+                authManager = authManager,
+                onNavigateBack = { navController.popBackStack() },
+                onNavigateToOnlineMatchmaking = { navController.navigate(Route.OnlineMatchmaking.path) },
+                onNavigateToLocalPvp = { navController.navigate(Route.PvpDeckSelect.path) },
+            )
+        }
+
+        composable(Route.OnlineMatchmaking.path) {
+            OnlineMatchmakingScreen(
+                onNavigateBack = { navController.popBackStack() },
+                onMatchFound = { matchId, myIndex ->
+                    navController.navigate(Route.OnlinePvpGame.createRoute(matchId, myIndex)) {
+                        popUpTo(Route.OnlineMatchmaking.path) { inclusive = true }
+                    }
+                },
+            )
+        }
+
+        composable(
+            route = Route.OnlinePvpGame.path,
+            arguments = listOf(
+                navArgument(Route.OnlinePvpGame.ARG_MATCH_ID) { type = NavType.StringType },
+                navArgument(Route.OnlinePvpGame.ARG_MY_INDEX) { type = NavType.IntType },
+            ),
+        ) {
+            OnlinePvpGameScreen(
+                onNavigateHome = {
+                    navController.navigate(Route.Home.path) {
+                        popUpTo(Route.Home.path) { inclusive = true }
+                    }
+                },
             )
         }
 

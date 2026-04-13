@@ -67,6 +67,15 @@ dependencies {
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
+    // Firebase
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore)
+    // Google Sign-In
+    implementation(libs.play.services.auth)
+    // Coroutines + Play Services
+    implementation(libs.kotlinx.coroutines.play.services)
     // Tests
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

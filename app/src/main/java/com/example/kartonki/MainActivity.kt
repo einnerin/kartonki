@@ -9,17 +9,21 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.navigation.compose.rememberNavController
+import com.example.kartonki.data.remote.FirebaseAuthManager
 import com.example.kartonki.ui.navigation.AppNavGraph
 import com.example.kartonki.ui.screen.home.MainViewModel
 import com.example.kartonki.ui.theme.KartonkiTheme
 import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.appStringsFor
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     private val mainViewModel: MainViewModel by viewModels()
+
+    @Inject lateinit var authManager: FirebaseAuthManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +34,7 @@ class MainActivity : ComponentActivity() {
             KartonkiTheme(darkTheme = isDarkTheme) {
                 CompositionLocalProvider(LocalAppStrings provides appStringsFor(nativeLanguage)) {
                     val navController = rememberNavController()
-                    AppNavGraph(navController = navController)
+                    AppNavGraph(navController = navController, authManager = authManager)
                 }
             }
         }
