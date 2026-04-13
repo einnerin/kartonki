@@ -151,6 +151,11 @@ class SettingsViewModel @Inject constructor(
                         showFillBlankModePicker      = current.showFillBlankModePicker,
                         showQuizTypesPicker          = current.showQuizTypesPicker,
                         showProblemWordsSourcePicker = current.showProblemWordsSourcePicker,
+                        // Preserve account state set by the authManager collector above
+                        isSignedIn                   = current.isSignedIn,
+                        isAnonymous                  = current.isAnonymous,
+                        accountEmail                 = current.accountEmail,
+                        accountDisplayName           = current.accountDisplayName,
                     )
                 }
             }
