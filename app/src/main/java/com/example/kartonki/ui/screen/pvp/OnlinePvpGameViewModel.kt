@@ -33,6 +33,7 @@ sealed class OnlinePvpPhase {
         val options: List<String>,
         val correctAnswer: String,
         val playedCardWord: String,
+        val playedCardTranslation: String,
         val selectedAnswer: String? = null,
     ) : OnlinePvpPhase()
     /** I picked, opponent is answering — I wait */
@@ -56,13 +57,12 @@ data class OnlinePvpGameUiState(
     val myScore: Int = 0,
     val opponentScore: Int = 0,
     val myStreak: Int = 0,
-    val timeRemaining: Int = TIMER_DURATION,
+    val opponentStreak: Int = 0,
+    val timeRemaining: Int = PvpGameLogic.TIMER_DURATION,
     val phase: OnlinePvpPhase = OnlinePvpPhase.WaitingForOpponent,
     val connectionError: String? = null,
     val showSurrenderDialog: Boolean = false,
-) {
-    companion object { const val TIMER_DURATION = 30 }
-}
+)
 
 @HiltViewModel
 class OnlinePvpGameViewModel @Inject constructor(
@@ -167,6 +167,7 @@ class OnlinePvpGameViewModel @Inject constructor(
                         myScore = myScore,
                         opponentScore = opponentScore,
                         myStreak = myStreak,
+                        opponentStreak = opponentStreak,
                         phase = newPhase,
                     )
                 }
@@ -185,13 +186,15 @@ class OnlinePvpGameViewModel @Inject constructor(
                     startTimerFrom(match.roundStartTime)
                 }
 
+                val playedCard = allWords.find { it.id == round.playedCardId }
                 val newPhase = if (isMyQuiz) {
                     OnlinePvpPhase.MyQuiz(
                         question = round.question,
                         questionLabel = round.questionLabel,
                         options = round.options,
                         correctAnswer = round.correctAnswer,
-                        playedCardWord = allWords.find { it.id == round.playedCardId }?.original ?: "",
+                        playedCardWord = playedCard?.original ?: "",
+                        playedCardTranslation = playedCard?.translation ?: "",
                         selectedAnswer = round.selectedAnswer.takeIf { it.isNotEmpty() },
                     )
                 } else {
@@ -205,6 +208,7 @@ class OnlinePvpGameViewModel @Inject constructor(
                         myScore = myScore,
                         opponentScore = opponentScore,
                         myStreak = myStreak,
+                        opponentStreak = opponentStreak,
                         phase = newPhase,
                     )
                 }
@@ -361,8 +365,8 @@ class OnlinePvpGameViewModel @Inject constructor(
 
     private fun startTimerFrom(startTime: Long) {
         timerJob?.cancel()
-        val elapsed = ((System.currentTimeMillis() - startTime) / 1000).toInt().coerceIn(0, TIMER_DURATION)
-        val remaining = TIMER_DURATION - elapsed
+        val elapsed = ((System.currentTimeMillis() - startTime) / 1000).toInt().coerceIn(0, PvpGameLogic.TIMER_DURATION)
+        val remaining = PvpGameLogic.TIMER_DURATION - elapsed
         if (remaining <= 0) return
 
         _uiState.update { it.copy(timeRemaining = remaining) }
@@ -401,80 +405,12 @@ class OnlinePvpGameViewModel @Inject constructor(
         }
     }
 
-    private fun buildHand(cards: List<Word>): List<Word> =
-        if (cards.size <= HAND_SIZE) cards.shuffled() else cards.shuffled().take(HAND_SIZE)
-
-    private fun pickDistractors(word: Word): List<Word> {
-        val candidates = allWords.filter { it.id != word.id }
-        if (word.pos == null && word.semanticGroup == null) return candidates.shuffled()
-        val tier1 = candidates.filter { it.pos == word.pos && it.semanticGroup == word.semanticGroup }.shuffled()
-        val tier2 = candidates.filter { it.pos == word.pos && it.semanticGroup != word.semanticGroup }.shuffled()
-        val tier3 = candidates.filter { it.pos != word.pos }.shuffled()
-        return tier1 + tier2 + tier3
-    }
-
-    private fun buildQuiz(word: Word): PvpQuiz? {
-        val others = pickDistractors(word)
-        if (others.size < 3) return null
-
-        val candidates = buildList {
-            add("translation")
-            if (word.definition != null && others.count { it.definition != null } >= 3) add("definition")
-            if (word.example != null) add("fill_blank")
-        }
-
-        return when (candidates.random()) {
-            "definition" -> {
-                val wrongs = others.filter { it.definition != null }.take(3).map { it.definition!! }
-                if (wrongs.size < 3) return translationQuiz(word, others)
-                PvpQuiz(
-                    playedCard = word,
-                    question = word.original,
-                    questionLabel = "Выберите определение:",
-                    options = (wrongs + word.definition!!).shuffled(),
-                    correctAnswer = word.definition!!,
-                )
-            }
-            "fill_blank" -> {
-                val sentence = word.example!!.replace(word.original, "_____", ignoreCase = true)
-                val wrongs = others.take(3).map { it.original }
-                PvpQuiz(
-                    playedCard = word,
-                    question = sentence,
-                    questionLabel = "Выберите слово для пропуска:",
-                    options = (wrongs + word.original).shuffled(),
-                    correctAnswer = word.original,
-                )
-            }
-            else -> translationQuiz(word, others)
-        }
-    }
-
-    private fun translationQuiz(word: Word, others: List<Word>): PvpQuiz {
-        val wrongs = others.take(3).map { it.translation }
-        return PvpQuiz(
-            playedCard = word,
-            question = word.original,
-            questionLabel = "Выберите перевод:",
-            options = (wrongs + word.translation).shuffled(),
-            correctAnswer = word.translation,
-        )
-    }
-
-    private fun streakToMultiplier(streak: Int): Int = when {
-        streak >= 15 -> 4
-        streak >= 10 -> 3
-        streak >= 5  -> 2
-        else         -> 1
-    }
+    private fun buildHand(cards: List<Word>) = PvpGameLogic.buildHand(cards)
+    private fun buildQuiz(word: Word): PvpQuiz? = PvpGameLogic.buildQuiz(word, allWords)
+    private fun streakToMultiplier(streak: Int) = PvpGameLogic.streakToMultiplier(streak)
 
     override fun onCleared() {
         super.onCleared()
         stopTimer()
-    }
-
-    companion object {
-        const val HAND_SIZE = 10
-        const val TIMER_DURATION = 30
     }
 }

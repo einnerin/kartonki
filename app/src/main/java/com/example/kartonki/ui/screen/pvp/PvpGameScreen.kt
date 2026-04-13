@@ -248,7 +248,7 @@ private fun HandSelectionScreen(
                 verticalArrangement = Arrangement.spacedBy(8.dp),
             ) {
                 items(hand, key = { it.id }) { card ->
-                    CompactHandCard(card = card, onClick = { onCardSelected(card) })
+                    PvpHandCard(word = card, onClick = { onCardSelected(card) })
                 }
             }
         }
@@ -363,12 +363,12 @@ private fun QuizScreen(
                     val isCorrect = option == phase.quiz.correctAnswer
                     val isSelected = option == phase.selectedAnswer
                     val ansState = when {
-                        !answered  -> AnswerState.Normal
-                        isCorrect  -> AnswerState.Correct
-                        isSelected -> AnswerState.Wrong
-                        else       -> AnswerState.Dimmed
+                        !answered  -> PvpAnswerState.Normal
+                        isCorrect  -> PvpAnswerState.Correct
+                        isSelected -> PvpAnswerState.Wrong
+                        else       -> PvpAnswerState.Dimmed
                     }
-                    AnswerButton(
+                    PvpAnswerButton(
                         text = option,
                         answerState = ansState,
                         enabled = !answered,
@@ -379,7 +379,8 @@ private fun QuizScreen(
                 if (answered) {
                     val isCorrect = phase.selectedAnswer == phase.quiz.correctAnswer
                     PvpResultPanel(
-                        word = phase.quiz.playedCard,
+                        wordOriginal = phase.quiz.playedCard.original,
+                        wordTranslation = phase.quiz.playedCard.translation,
                         isCorrect = isCorrect,
                     )
                     Spacer(Modifier.weight(1f))
@@ -398,59 +399,7 @@ private fun QuizScreen(
     }
 }
 
-private enum class AnswerState { Normal, Correct, Wrong, Dimmed }
-
-@Composable
-private fun AnswerButton(
-    text: String,
-    answerState: AnswerState,
-    enabled: Boolean,
-    onClick: () -> Unit,
-) {
-    val interactionSource = remember { MutableInteractionSource() }
-    val isPressed by interactionSource.collectIsPressedAsState()
-    val scale by animateFloatAsState(
-        targetValue = if (isPressed && enabled) 0.97f else 1f,
-        animationSpec = spring(),
-        label = "ans_scale",
-    )
-
-    val (bgColor, borderColor, textColor) = when (answerState) {
-        AnswerState.Correct -> Triple(CorrectGreen.copy(alpha = 0.25f), CorrectGreenBorder, CorrectGreenBorder)
-        AnswerState.Wrong   -> Triple(WrongRed.copy(alpha = 0.25f), WrongRedBorder, WrongRedBorder)
-        AnswerState.Dimmed  -> Triple(BgCard.copy(alpha = 0.4f), Color(0xFF2A3E54), TextSecondary.copy(alpha = 0.4f))
-        AnswerState.Normal  -> Triple(BgCard, MaterialTheme.colorScheme.outline, Color.White)
-    }
-
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .graphicsLayer(scaleX = scale, scaleY = scale)
-            .clip(RoundedCornerShape(12.dp))
-            .border(
-                width = if (answerState == AnswerState.Correct || answerState == AnswerState.Wrong) 2.dp else 1.dp,
-                color = borderColor,
-                shape = RoundedCornerShape(12.dp),
-            )
-            .background(bgColor)
-            .then(
-                if (enabled) Modifier.clickable(
-                    interactionSource = interactionSource,
-                    indication = null,
-                    onClick = onClick,
-                ) else Modifier
-            )
-            .padding(horizontal = 16.dp, vertical = 14.dp),
-    ) {
-        Text(
-            text = text,
-            style = MaterialTheme.typography.bodyLarge,
-            color = textColor,
-            fontWeight = if (answerState == AnswerState.Correct || answerState == AnswerState.Wrong)
-                FontWeight.Bold else FontWeight.Normal,
-        )
-    }
-}
+// AnswerState and AnswerButton are in PvpSharedComponents.kt as PvpAnswerState / PvpAnswerButton
 
 // ─── Game Over ────────────────────────────────────────────────────────────────
 
@@ -721,47 +670,7 @@ private fun DeckRarityIndicator(
     }
 }
 
-@Composable
-private fun PvpResultPanel(word: Word, isCorrect: Boolean) {
-    val accentColor = if (isCorrect) Color(0xFF66BB6A) else Color(0xFFEF5350)
-    val bgColor     = if (isCorrect) Color(0xFF1A3A1A) else Color(0xFF3A1A1A)
-    val borderColor = if (isCorrect) Color(0xFF4CAF50) else Color(0xFFC62828)
-
-    Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .clip(RoundedCornerShape(12.dp))
-            .border(1.dp, borderColor.copy(alpha = 0.6f), RoundedCornerShape(12.dp))
-            .background(bgColor)
-            .padding(horizontal = 16.dp, vertical = 12.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(4.dp),
-    ) {
-        if (!isCorrect) {
-            Text(
-                text = "Неверно!",
-                style = MaterialTheme.typography.labelMedium,
-                fontWeight = FontWeight.ExtraBold,
-                color = accentColor,
-            )
-        }
-        Text(
-            text = buildAnnotatedString {
-                withStyle(SpanStyle(color = Color.White, fontWeight = FontWeight.Bold)) {
-                    append(word.original)
-                }
-                withStyle(SpanStyle(color = accentColor, baselineShift = BaselineShift(0.12f))) {
-                    append("  →  ")
-                }
-                withStyle(SpanStyle(color = accentColor, fontWeight = FontWeight.Bold)) {
-                    append(word.translation)
-                }
-            },
-            style = MaterialTheme.typography.bodyLarge,
-            textAlign = TextAlign.Center,
-        )
-    }
-}
+// PvpResultPanel is in PvpSharedComponents.kt
 
 @Composable
 private fun TimerWidget(timeRemaining: Int) {
@@ -942,52 +851,4 @@ private fun MultiplierHintOverlay(
     }
 }
 
-@Composable
-private fun CompactHandCard(card: Word, onClick: () -> Unit) {
-    val rarityColor = Color(card.rarity.colorArgb)
-    val interactionSource = remember { MutableInteractionSource() }
-    val isPressed by interactionSource.collectIsPressedAsState()
-    val scale by animateFloatAsState(
-        targetValue = if (isPressed) 0.95f else 1f,
-        animationSpec = spring(),
-        label = "compact_card_scale",
-    )
-
-    Column(
-        modifier = Modifier
-            .graphicsLayer(scaleX = scale, scaleY = scale)
-            .fillMaxWidth()
-            .clip(RoundedCornerShape(12.dp))
-            .border(1.dp, rarityColor.copy(alpha = 0.6f), RoundedCornerShape(12.dp))
-            .background(BgCard)
-            .clickable(interactionSource = interactionSource, indication = null, onClick = onClick)
-            .padding(horizontal = 10.dp, vertical = 10.dp),
-    ) {
-        Text(
-            text = card.original,
-            style = MaterialTheme.typography.bodyMedium,
-            fontWeight = FontWeight.Bold,
-            color = Color.White,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis,
-        )
-        Spacer(Modifier.height(4.dp))
-        Row(
-            modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            Text(
-                text = card.rarity.displayName,
-                style = MaterialTheme.typography.labelSmall,
-                color = rarityColor,
-            )
-            Text(
-                text = "+${card.rarity.points}",
-                style = MaterialTheme.typography.labelSmall,
-                color = rarityColor,
-                fontWeight = FontWeight.Bold,
-            )
-        }
-    }
-}
+// CompactHandCard → replaced by PvpHandCard from PvpSharedComponents.kt

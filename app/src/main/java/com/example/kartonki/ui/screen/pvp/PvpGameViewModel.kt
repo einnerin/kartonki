@@ -31,14 +31,6 @@ data class PvpPlayerState(
     val afkStreak: Int = 0,
 )
 
-data class PvpQuiz(
-    val playedCard: Word,
-    val question: String,
-    val questionLabel: String,
-    val options: List<String>,
-    val correctAnswer: String,
-)
-
 sealed class PvpPhase {
     data class HandSelection(val hand: List<Word>) : PvpPhase()
     data class Quiz(
@@ -242,9 +234,9 @@ class PvpGameViewModel @Inject constructor(
 
     private fun startTimer() {
         timerJob?.cancel()
-        _uiState.update { it.copy(timeRemaining = TIMER_DURATION) }
+        _uiState.update { it.copy(timeRemaining = PvpGameLogic.TIMER_DURATION) }
         timerJob = viewModelScope.launch {
-            for (i in TIMER_DURATION downTo 1) {
+            for (i in PvpGameLogic.TIMER_DURATION downTo 1) {
                 delay(1000)
                 _uiState.update { it.copy(timeRemaining = i - 1) }
                 if (i == 1) handleTimerExpired()
@@ -266,7 +258,7 @@ class PvpGameViewModel @Inject constructor(
                 val updatedPlayers = state.players.mapIndexed { i, p ->
                     if (i == attackerIdx) p.copy(afkStreak = newAfkStreak) else p
                 }
-                if (newAfkStreak >= AFK_LIMIT) {
+                if (newAfkStreak >= PvpGameLogic.AFK_LIMIT) {
                     triggerGameOver(updatedPlayers, loserIndex = attackerIdx, reason = GameOverReason.AFK)
                 } else {
                     // Auto-pick random card without resetting afkStreak
@@ -294,7 +286,7 @@ class PvpGameViewModel @Inject constructor(
                     val updatedPlayers = state.players.mapIndexed { i, p ->
                         if (i == defenderIdx) p.copy(afkStreak = newAfkStreak) else p
                     }
-                    if (newAfkStreak >= AFK_LIMIT) {
+                    if (newAfkStreak >= PvpGameLogic.AFK_LIMIT) {
                         triggerGameOver(updatedPlayers, loserIndex = defenderIdx, reason = GameOverReason.AFK)
                     } else {
                         // Show wrong answer briefly, then auto-confirm
@@ -341,76 +333,7 @@ class PvpGameViewModel @Inject constructor(
         return allWords.filter { it.id in ids }
     }
 
-    private fun buildHand(cards: List<Word>): List<Word> =
-        if (cards.size <= HAND_SIZE) cards.shuffled() else cards.shuffled().take(HAND_SIZE)
-
-    private fun pickDistractors(word: Word): List<Word> {
-        val candidates = allWords.filter { it.id != word.id }
-        if (word.pos == null && word.semanticGroup == null) return candidates.shuffled()
-        val tier1 = candidates.filter { it.pos == word.pos && it.semanticGroup == word.semanticGroup }.shuffled()
-        val tier2 = candidates.filter { it.pos == word.pos && it.semanticGroup != word.semanticGroup }.shuffled()
-        val tier3 = candidates.filter { it.pos != word.pos }.shuffled()
-        return tier1 + tier2 + tier3
-    }
-
-    private fun buildQuiz(word: Word): PvpQuiz? {
-        val others = pickDistractors(word)
-        if (others.size < 3) return null
-
-        val candidates = buildList {
-            add("translation")
-            if (word.definition != null && others.count { it.definition != null } >= 3) add("definition")
-            if (word.example != null) add("fill_blank")
-        }
-
-        return when (candidates.random()) {
-            "definition" -> {
-                val wrongs = others.filter { it.definition != null }.take(3).map { it.definition!! }
-                if (wrongs.size < 3) return translationQuiz(word, others)
-                PvpQuiz(
-                    playedCard = word,
-                    question = word.original,
-                    questionLabel = "Выберите определение:",
-                    options = (wrongs + word.definition!!).shuffled(),
-                    correctAnswer = word.definition!!,
-                )
-            }
-            "fill_blank" -> {
-                val sentence = word.example!!.replace(word.original, "_____", ignoreCase = true)
-                val wrongs = others.take(3).map { it.original }
-                PvpQuiz(
-                    playedCard = word,
-                    question = sentence,
-                    questionLabel = "Выберите слово для пропуска:",
-                    options = (wrongs + word.original).shuffled(),
-                    correctAnswer = word.original,
-                )
-            }
-            else -> translationQuiz(word, others)
-        }
-    }
-
-    private fun translationQuiz(word: Word, others: List<Word>): PvpQuiz {
-        val wrongs = others.take(3).map { it.translation }
-        return PvpQuiz(
-            playedCard = word,
-            question = word.original,
-            questionLabel = "Выберите перевод:",
-            options = (wrongs + word.translation).shuffled(),
-            correctAnswer = word.translation,
-        )
-    }
-
-    private fun streakToMultiplier(streak: Int): Int = when {
-        streak >= 15 -> 4
-        streak >= 10 -> 3
-        streak >= 5  -> 2
-        else         -> 1
-    }
-
-    companion object {
-        const val HAND_SIZE = 10
-        const val TIMER_DURATION = 30
-        const val AFK_LIMIT = 3
-    }
+    private fun buildHand(cards: List<Word>) = PvpGameLogic.buildHand(cards)
+    private fun buildQuiz(word: Word): PvpQuiz? = PvpGameLogic.buildQuiz(word, allWords)
+    private fun streakToMultiplier(streak: Int) = PvpGameLogic.streakToMultiplier(streak)
 }

@@ -2,11 +2,10 @@ package com.example.kartonki.ui.screen.pvp
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -24,13 +23,13 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -44,9 +43,10 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.AccentPurple
+import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
+import com.example.kartonki.ui.theme.BgMedium
 import com.example.kartonki.ui.theme.TextSecondary
-import com.example.kartonki.ui.theme.glowEffect
 
 @Composable
 fun OnlinePvpGameScreen(
@@ -86,35 +86,24 @@ fun OnlinePvpGameScreen(
             }
 
             else -> {
-                Column(
-                    modifier = Modifier.fillMaxSize().padding(16.dp),
-                ) {
-                    // Scoreboard + surrender button
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        verticalAlignment = Alignment.CenterVertically,
-                    ) {
-                        Box(modifier = Modifier.weight(1f)) {
-                            OnlineScoreboard(uiState)
-                        }
-                        if (uiState.phase !is OnlinePvpPhase.GameOver) {
-                            TextButton(
-                                onClick = viewModel::onSurrenderClick,
-                                colors = ButtonDefaults.textButtonColors(
-                                    contentColor = Color(0xFFEF5350),
-                                ),
-                            ) { Text("Сдаться", fontSize = 12.sp) }
-                        }
-                    }
-                    Spacer(Modifier.height(8.dp))
-                    // Timer
-                    OnlineTimerBar(uiState.timeRemaining)
-                    Spacer(Modifier.height(16.dp))
-                    // Phase content
+                Column(modifier = Modifier.fillMaxSize()) {
+                    // ─── Header: scoreboard + surrender ──────────────────────
+                    OnlineScoreboard(
+                        uiState = uiState,
+                        showSurrender = uiState.phase !is OnlinePvpPhase.GameOver,
+                        onSurrender = viewModel::onSurrenderClick,
+                    )
+                    // ─── Timer bar ────────────────────────────────────────────
+                    PvpTimerBar(
+                        timeRemaining = uiState.timeRemaining,
+                        modifier = Modifier.padding(horizontal = 12.dp),
+                    )
+                    Spacer(Modifier.height(12.dp))
+                    // ─── Phase content ────────────────────────────────────────
                     Box(modifier = Modifier.weight(1f)) {
                         when (val phase = uiState.phase) {
                             is OnlinePvpPhase.MyHandSelection ->
-                                HandSelectionContent(phase.hand, viewModel::onCardSelected)
+                                OnlineHandSelectionContent(phase.hand, viewModel::onCardSelected)
                             is OnlinePvpPhase.WaitingForOpponent ->
                                 WaitingContent("Ход противника...\nОн выбирает карту")
                             is OnlinePvpPhase.MyQuiz ->
@@ -143,9 +132,7 @@ fun OnlinePvpGameScreen(
                                     viewModel.onSurrenderDismiss()
                                     viewModel.surrender()
                                 },
-                                colors = ButtonDefaults.textButtonColors(
-                                    contentColor = Color(0xFFEF5350),
-                                ),
+                                colors = ButtonDefaults.textButtonColors(contentColor = Color(0xFFEF5350)),
                             ) { Text("Сдаться") }
                         },
                         dismissButton = {
@@ -158,163 +145,120 @@ fun OnlinePvpGameScreen(
     }
 }
 
+// ─── Scoreboard ───────────────────────────────────────────────────────────────
+
 @Composable
-private fun OnlineScoreboard(uiState: OnlinePvpGameUiState) {
+private fun OnlineScoreboard(
+    uiState: OnlinePvpGameUiState,
+    showSurrender: Boolean,
+    onSurrender: () -> Unit,
+) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .clip(RoundedCornerShape(16.dp))
-            .background(Color(0xFF1A1A2E))
-            .border(1.dp, Color(0xFF333355), RoundedCornerShape(16.dp))
-            .padding(16.dp),
+            .background(BgMedium)
+            .padding(horizontal = 12.dp, vertical = 6.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically,
     ) {
-        PlayerScoreColumn(
+        // My side
+        OnlinePlayerChip(
             name = uiState.myName,
             score = uiState.myScore,
             streak = uiState.myStreak,
             isMe = true,
+            modifier = Modifier.weight(1f),
         )
-        Text(
-            text = "⚔️",
-            fontSize = 24.sp,
-        )
-        PlayerScoreColumn(
+
+        if (showSurrender) {
+            TextButton(
+                onClick = onSurrender,
+                colors = ButtonDefaults.textButtonColors(contentColor = Color(0xFFEF5350)),
+            ) { Text("🏳️", fontSize = 18.sp) }
+        } else {
+            Text("⚔️", fontSize = 20.sp, modifier = Modifier.padding(horizontal = 8.dp))
+        }
+
+        // Opponent side
+        OnlinePlayerChip(
             name = uiState.opponentName,
             score = uiState.opponentScore,
-            streak = 0,
+            streak = uiState.opponentStreak,
             isMe = false,
+            modifier = Modifier.weight(1f),
         )
     }
+    HorizontalDivider(color = BgCard)
 }
 
 @Composable
-private fun PlayerScoreColumn(name: String, score: Int, streak: Int, isMe: Boolean) {
-    Column(horizontalAlignment = if (isMe) Alignment.Start else Alignment.End) {
+private fun OnlinePlayerChip(
+    name: String,
+    score: Int,
+    streak: Int,
+    isMe: Boolean,
+    modifier: Modifier = Modifier,
+) {
+    val multiplier = PvpGameLogic.streakToMultiplier(streak)
+    val multiplierColor = when (multiplier) {
+        2    -> Color(0xFF4A90E2)
+        3    -> Color(0xFF9B51E0)
+        4    -> Color(0xFFF5A623)
+        else -> Color(0xFF9E9E9E)
+    }
+    Column(
+        modifier = modifier.padding(horizontal = 4.dp, vertical = 4.dp),
+        horizontalAlignment = if (isMe) Alignment.Start else Alignment.End,
+    ) {
         Text(
             text = name,
-            style = MaterialTheme.typography.labelLarge,
-            fontWeight = FontWeight.Bold,
+            style = MaterialTheme.typography.labelMedium,
             color = if (isMe) AccentGold else TextSecondary,
+            fontWeight = if (isMe) FontWeight.Bold else FontWeight.Normal,
         )
         Text(
             text = "$score очков",
-            style = MaterialTheme.typography.headlineSmall,
-            fontWeight = FontWeight.ExtraBold,
-            color = Color.White,
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.primary,
         )
-        if (isMe && streak >= 3) {
+        if (multiplier > 1) {
             Text(
-                text = "🔥 ×${streakToMultiplierDisplay(streak)}",
+                text = "×$multiplier  🔥$streak",
                 style = MaterialTheme.typography.labelSmall,
-                color = Color(0xFFFF6F00),
+                color = multiplierColor,
+                fontWeight = FontWeight.Bold,
             )
         }
     }
 }
 
-private fun streakToMultiplierDisplay(streak: Int) = when {
-    streak >= 15 -> 4
-    streak >= 10 -> 3
-    streak >= 5  -> 2
-    else         -> 1
-}
+// ─── Hand selection ───────────────────────────────────────────────────────────
 
 @Composable
-private fun OnlineTimerBar(timeRemaining: Int) {
-    val fraction = timeRemaining / 30f
-    val color = when {
-        fraction > 0.5f -> Color(0xFF4CAF50)
-        fraction > 0.25f -> Color(0xFFFF9800)
-        else -> Color(0xFFF44336)
-    }
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(6.dp)
-            .clip(RoundedCornerShape(3.dp))
-            .background(Color(0xFF333355)),
-    ) {
-        Box(
-            modifier = Modifier
-                .fillMaxWidth(fraction)
-                .height(6.dp)
-                .clip(RoundedCornerShape(3.dp))
-                .background(color),
-        )
-    }
-}
-
-@Composable
-private fun HandSelectionContent(hand: List<Word>, onCardSelected: (Word) -> Unit) {
+private fun OnlineHandSelectionContent(hand: List<Word>, onCardSelected: (Word) -> Unit) {
     Column(
-        modifier = Modifier.fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.fillMaxSize().padding(horizontal = 12.dp),
     ) {
         Text(
             text = "Твой ход — выбери карту для атаки",
-            style = MaterialTheme.typography.titleMedium,
-            fontWeight = FontWeight.Bold,
-            color = AccentGold,
-            textAlign = TextAlign.Center,
+            style = MaterialTheme.typography.titleSmall,
+            color = TextSecondary,
+            modifier = Modifier.padding(bottom = 8.dp),
         )
-        Spacer(Modifier.height(16.dp))
         LazyVerticalGrid(
             columns = GridCells.Fixed(2),
+            contentPadding = PaddingValues(bottom = 12.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
         ) {
-            items(hand) { word ->
-                OnlineCardItem(word = word, onClick = { onCardSelected(word) })
+            items(hand, key = { it.id }) { word ->
+                PvpHandCard(word = word, onClick = { onCardSelected(word) })
             }
         }
     }
 }
 
-@Composable
-private fun OnlineCardItem(word: Word, onClick: () -> Unit) {
-    val interactionSource = remember { MutableInteractionSource() }
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .glowEffect(Color(word.rarity.colorArgb), 8.dp, 12.dp, 0.3f)
-            .clip(RoundedCornerShape(12.dp))
-            .background(
-                Brush.verticalGradient(
-                    listOf(Color(word.rarity.colorArgb).copy(alpha = 0.3f), Color(0xFF0D0D1A))
-                )
-            )
-            .border(1.5.dp, Color(word.rarity.colorArgb).copy(alpha = 0.7f), RoundedCornerShape(12.dp))
-            .clickable(interactionSource = interactionSource, indication = null, onClick = onClick)
-            .padding(12.dp),
-        contentAlignment = Alignment.Center,
-    ) {
-        Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            Text(
-                text = word.original,
-                style = MaterialTheme.typography.titleSmall,
-                fontWeight = FontWeight.Bold,
-                color = Color.White,
-                textAlign = TextAlign.Center,
-            )
-            Spacer(Modifier.height(4.dp))
-            Text(
-                text = word.translation,
-                style = MaterialTheme.typography.bodySmall,
-                color = TextSecondary,
-                textAlign = TextAlign.Center,
-            )
-            Spacer(Modifier.height(4.dp))
-            Text(
-                text = "+${word.rarity.points} очк.",
-                style = MaterialTheme.typography.labelSmall,
-                color = Color(word.rarity.colorArgb),
-                fontWeight = FontWeight.Bold,
-            )
-        }
-    }
-}
+// ─── Quiz ─────────────────────────────────────────────────────────────────────
 
 @Composable
 private fun OnlineQuizContent(
@@ -322,30 +266,28 @@ private fun OnlineQuizContent(
     onAnswerSelected: (String) -> Unit,
     onConfirm: () -> Unit,
 ) {
+    val answered = phase.selectedAnswer != null
     Column(
-        modifier = Modifier.fillMaxSize(),
-        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 20.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp),
     ) {
-        Text(
-            text = "Ответь на вопрос!",
-            style = MaterialTheme.typography.titleMedium,
-            fontWeight = FontWeight.Bold,
-            color = AccentGold,
-        )
-        Spacer(Modifier.height(8.dp))
+        Spacer(Modifier.height(4.dp))
+
         Text(
             text = phase.questionLabel,
             style = MaterialTheme.typography.labelLarge,
             color = TextSecondary,
         )
-        Spacer(Modifier.height(8.dp))
 
+        // Question box
         Box(
             modifier = Modifier
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(16.dp))
-                .background(Color(0xFF1A1A2E))
-                .border(1.dp, AccentPurple.copy(alpha = 0.5f), RoundedCornerShape(16.dp))
+                .background(BgCard)
+                .border(1.dp, AccentPurple.copy(alpha = 0.4f), RoundedCornerShape(16.dp))
                 .padding(20.dp),
             contentAlignment = Alignment.Center,
         ) {
@@ -358,60 +300,47 @@ private fun OnlineQuizContent(
             )
         }
 
-        Spacer(Modifier.height(16.dp))
-
-        Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            phase.options.forEach { option ->
-                val isSelected = phase.selectedAnswer == option
-                val isCorrect = option == phase.correctAnswer
-                val bgColor = when {
-                    phase.selectedAnswer == null -> Color(0xFF1A1A2E)
-                    isCorrect -> Color(0xFF1B5E20)
-                    isSelected -> Color(0xFF7F0000)
-                    else -> Color(0xFF1A1A2E)
-                }
-                val borderColor = when {
-                    phase.selectedAnswer == null -> Color(0xFF333355)
-                    isCorrect -> Color(0xFF4CAF50)
-                    isSelected -> Color(0xFFF44336)
-                    else -> Color(0xFF333355)
-                }
-
-                Box(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clip(RoundedCornerShape(12.dp))
-                        .background(bgColor)
-                        .border(1.5.dp, borderColor, RoundedCornerShape(12.dp))
-                        .clickable(
-                            enabled = phase.selectedAnswer == null,
-                            onClick = { onAnswerSelected(option) },
-                        )
-                        .padding(16.dp),
-                    contentAlignment = Alignment.CenterStart,
-                ) {
-                    Text(
-                        text = option,
-                        style = MaterialTheme.typography.bodyLarge,
-                        fontWeight = FontWeight.Medium,
-                        color = Color.White,
-                    )
-                }
+        // Answer options
+        phase.options.forEach { option ->
+            val isCorrect = option == phase.correctAnswer
+            val isSelected = option == phase.selectedAnswer
+            val ansState = when {
+                !answered  -> PvpAnswerState.Normal
+                isCorrect  -> PvpAnswerState.Correct
+                isSelected -> PvpAnswerState.Wrong
+                else       -> PvpAnswerState.Dimmed
             }
+            PvpAnswerButton(
+                text = option,
+                answerState = ansState,
+                enabled = !answered,
+                onClick = { onAnswerSelected(option) },
+            )
         }
 
-        if (phase.selectedAnswer != null) {
-            Spacer(Modifier.height(16.dp))
+        // Result panel + confirm button after answering
+        if (answered) {
+            val isCorrect = phase.selectedAnswer == phase.correctAnswer
+            PvpResultPanel(
+                wordOriginal = phase.playedCardWord,
+                wordTranslation = phase.playedCardTranslation,
+                isCorrect = isCorrect,
+            )
+            Spacer(Modifier.weight(1f))
             Button(
                 onClick = onConfirm,
-                modifier = Modifier.fillMaxWidth(),
-                colors = ButtonDefaults.buttonColors(containerColor = AccentPurple),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 24.dp),
+                shape = RoundedCornerShape(14.dp),
             ) {
                 Text("Продолжить", fontWeight = FontWeight.Bold)
             }
         }
     }
 }
+
+// ─── Waiting ──────────────────────────────────────────────────────────────────
 
 @Composable
 private fun WaitingContent(message: String) {
@@ -432,6 +361,8 @@ private fun WaitingContent(message: String) {
     }
 }
 
+// ─── Game over ────────────────────────────────────────────────────────────────
+
 @Composable
 private fun OnlineGameOverContent(
     phase: OnlinePvpPhase.GameOver,
@@ -444,6 +375,7 @@ private fun OnlineGameOverContent(
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier.padding(32.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             Text(
                 text = when {
@@ -451,69 +383,77 @@ private fun OnlineGameOverContent(
                     iWon -> "🏆"
                     else -> "💔"
                 },
-                fontSize = 56.sp,
+                style = MaterialTheme.typography.displayLarge,
             )
-            Spacer(Modifier.height(12.dp))
             Text(
                 text = when {
                     isDraw -> "Ничья!"
                     iWon -> "Победа!"
                     else -> "Поражение"
                 },
-                style = MaterialTheme.typography.displaySmall,
+                style = MaterialTheme.typography.headlineLarge,
                 fontWeight = FontWeight.ExtraBold,
                 color = when {
                     isDraw -> AccentGold
                     iWon -> Color(0xFF4CAF50)
                     else -> Color(0xFFF44336)
                 },
+                textAlign = TextAlign.Center,
             )
 
-            Spacer(Modifier.height(24.dp))
-
             // Score comparison
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clip(RoundedCornerShape(16.dp))
-                    .background(Color(0xFF1A1A2E))
-                    .border(1.dp, Color(0xFF333355), RoundedCornerShape(16.dp))
-                    .padding(20.dp),
-            ) {
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
+            val myFirst = iWon || isDraw
+            listOf(
+                Triple(phase.myName, phase.myScore, true),
+                Triple(phase.opponentName, phase.opponentScore, false),
+            ).sortedByDescending { it.second }.forEach { (name, score, isMe) ->
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(12.dp))
+                        .background(BgCard)
+                        .padding(horizontal = 16.dp, vertical = 12.dp),
                 ) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(phase.myName, style = MaterialTheme.typography.labelLarge, color = AccentGold)
-                        Spacer(Modifier.height(4.dp))
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
                         Text(
-                            "${phase.myScore}",
-                            style = MaterialTheme.typography.displayMedium,
-                            fontWeight = FontWeight.ExtraBold,
-                            color = Color.White,
+                            name,
+                            style = MaterialTheme.typography.titleLarge,
+                            fontWeight = if (score >= maxOf(phase.myScore, phase.opponentScore)) FontWeight.ExtraBold else FontWeight.Normal,
+                            color = if (isMe) AccentGold else TextSecondary,
                         )
-                    }
-                    Text("vs", style = MaterialTheme.typography.titleLarge, color = TextSecondary,
-                        modifier = Modifier.align(Alignment.CenterVertically))
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(phase.opponentName, style = MaterialTheme.typography.labelLarge, color = TextSecondary)
-                        Spacer(Modifier.height(4.dp))
                         Text(
-                            "${phase.opponentScore}",
-                            style = MaterialTheme.typography.displayMedium,
-                            fontWeight = FontWeight.ExtraBold,
-                            color = Color.White,
+                            "$score очков",
+                            style = MaterialTheme.typography.titleLarge,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.primary,
                         )
                     }
                 }
             }
 
-            Spacer(Modifier.height(32.dp))
+            HorizontalDivider(color = MaterialTheme.colorScheme.outline)
+
+            Text(
+                text = when {
+                    isDraw -> "Ничья!"
+                    iWon   -> "Победа: ${phase.myName}"
+                    else   -> "Победа: ${phase.opponentName}"
+                },
+                style = MaterialTheme.typography.headlineSmall,
+                fontWeight = FontWeight.Bold,
+                color = if (!isDraw && iWon) MaterialTheme.colorScheme.primary else TextSecondary,
+                textAlign = TextAlign.Center,
+            )
+
+            Spacer(Modifier.height(8.dp))
             Button(
                 onClick = onNavigateHome,
                 modifier = Modifier.fillMaxWidth(),
-                colors = ButtonDefaults.buttonColors(containerColor = AccentPurple),
+                shape = RoundedCornerShape(14.dp),
             ) {
                 Text("На главную", fontWeight = FontWeight.Bold, fontSize = 16.sp)
             }
