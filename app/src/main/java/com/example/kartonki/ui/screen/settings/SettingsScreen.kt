@@ -2,6 +2,7 @@ package com.example.kartonki.ui.screen.settings
 
 import android.content.Intent
 import android.net.Uri
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
@@ -34,7 +35,9 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.Switch
@@ -223,15 +226,22 @@ fun SettingsScreen(
 
             // Username
             if (state.isEditingName) {
+                BackHandler { viewModel.onSaveName() }
                 OutlinedTextField(
                     value = state.nameInput,
                     onValueChange = viewModel::onNameInputChange,
                     label = { Text(s.settingsPlayerName) },
                     singleLine = true,
+                    keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Words),
                     trailingIcon = {
                         Row {
                             IconButton(onClick = { viewModel.onSaveName() }) {
-                                Text("✓")
+                                Text(
+                                    "✓",
+                                    color = MaterialTheme.colorScheme.primary,
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 20.sp,
+                                )
                             }
                         }
                     },
@@ -260,7 +270,7 @@ fun SettingsScreen(
                             fontWeight = FontWeight.Medium,
                         )
                     }
-                    Text("✏", color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text("✏", color = MaterialTheme.colorScheme.primary, fontSize = 18.sp)
                 }
                 Spacer(Modifier.height(16.dp))
             }
