@@ -17,13 +17,18 @@ object QuizBuilder {
 
     fun buildSteps(
         words: List<Word>,
+        distractorPool: List<Word> = emptyList(),
         definitionMode: String = "both",
         fillBlankMode: String = "both",
         enabledTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
-    ): List<StudyStep.Quiz> =
-        words.shuffled().map { word ->
-            buildQuizStep(word, pickQuizType(word, words, definitionMode, fillBlankMode, enabledTypes), words)
+    ): List<StudyStep.Quiz> {
+        // Merge session words with extra distractor words (deduplicated). The extras are never
+        // shown as quiz questions — they only appear as wrong-answer options.
+        val fullPool = (words + distractorPool).distinctBy { it.id }
+        return words.shuffled().map { word ->
+            buildQuizStep(word, pickQuizType(word, words, definitionMode, fillBlankMode, enabledTypes), words, fullPool)
         }
+    }
 
     // internal = accessible from the test source-set (same module) but not from outside the module
     internal fun pickQuizType(
@@ -65,40 +70,45 @@ object QuizBuilder {
         return if (available.isEmpty()) StudyQuizType.MULTIPLE_CHOICE_TRANSLATION else available.random()
     }
 
-    internal fun buildQuizStep(word: Word, type: StudyQuizType, allWords: List<Word>): StudyStep.Quiz {
-        val others = pickDistractors(word, allWords)
+    internal fun buildQuizStep(
+        word: Word,
+        type: StudyQuizType,
+        allWords: List<Word>,
+        distractorPool: List<Word> = allWords,
+    ): StudyStep.Quiz {
+        val others = pickDistractors(word, distractorPool)
         return when (type) {
             StudyQuizType.MULTIPLE_CHOICE_TRANSLATION -> {
                 val wrongs = others.take(3).map { it.translation }
-                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
+                if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.original,
                     options = (wrongs + word.translation).shuffled(),
                     correctAnswer = word.translation)
             }
             StudyQuizType.MULTIPLE_CHOICE_DEFINITION -> {
                 val wrongs = others.filter { it.definition != null }.take(3).map { it.definition!! }
-                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
+                if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.original,
                     options = (wrongs + word.definition!!).shuffled(),
                     correctAnswer = word.definition!!)
             }
             StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE -> {
                 val wrongs = others.filter { it.definitionNative != null }.take(3).map { it.definitionNative!! }
-                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
+                if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.original,
                     options = (wrongs + word.definitionNative!!).shuffled(),
                     correctAnswer = word.definitionNative!!)
             }
             StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF -> {
                 val wrongs = others.filter { it.definition != null }.take(3).map { it.original }
-                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
+                if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.definition!!,
                     options = (wrongs + word.original).shuffled(),
                     correctAnswer = word.original)
             }
             StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE -> {
                 val wrongs = others.filter { it.definitionNative != null }.take(3).map { it.original }
-                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
+                if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.definitionNative!!,
                     options = (wrongs + word.original).shuffled(),
                     correctAnswer = word.original)
@@ -107,9 +117,9 @@ object QuizBuilder {
                 val raw = word.example!!
                 val sentence = raw.replace(word.original, "_____", ignoreCase = true)
                 // If the word doesn't appear in the sentence, the blank cannot be created → fallback
-                if (sentence == raw) return fallbackTranslation(word, allWords)
+                if (sentence == raw) return fallbackTranslation(word, distractorPool)
                 val wrongs = others.take(3).map { it.original }
-                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
+                if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = sentence,
                     options = (wrongs + word.original).shuffled(),
                     correctAnswer = word.original)
@@ -119,9 +129,9 @@ object QuizBuilder {
                 val sentence = raw.replace(word.original, "_____", ignoreCase = true)
                 // Design: native examples embed the foreign word directly (e.g. "Я вижу dog здесь.")
                 // If the word is absent, fall back gracefully
-                if (sentence == raw) return fallbackTranslation(word, allWords)
+                if (sentence == raw) return fallbackTranslation(word, distractorPool)
                 val wrongs = others.take(3).map { it.original }
-                if (wrongs.size < 3) return fallbackTranslation(word, allWords)
+                if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = sentence,
                     options = (wrongs + word.original).shuffled(),
                     correctAnswer = word.original)

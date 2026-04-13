@@ -86,7 +86,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
             val definitionMode = prefs.definitionQuizMode.first()
             val fillBlankMode  = prefs.fillBlankQuizMode.first()
             val enabledTypes   = prefs.quizTypesEnabled.first()
-            val steps = QuizBuilder.buildSteps(words, definitionMode, fillBlankMode, enabledTypes)
+            val steps = QuizBuilder.buildSteps(words, emptyList(), definitionMode, fillBlankMode, enabledTypes)
             _uiState.update {
                 it.copy(
                     isLoading = false,

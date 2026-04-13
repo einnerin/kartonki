@@ -80,6 +80,38 @@ class WordSetRepository @Inject constructor(
     suspend fun getWordCountInSet(setId: Long): Int = wordSetDao.getWordCountInSet(setId)
 
     /**
+     * For each semantic group present in [sessionWords], fetches up to [limitPerGroup] additional
+     * words from the DB (different words, same language). These extras are passed to QuizBuilder
+     * as a distractor pool so that semantically-relevant wrong answers can be found even when the
+     * session set is small or topic-diverse.
+     */
+    suspend fun getDistractorExtras(sessionWords: List<Word>, limitPerGroup: Int = 10): List<Word> {
+        if (sessionWords.isEmpty()) return emptyList()
+        val langPair = sessionWords.first().languagePair
+        val excludeIds = sessionWords.map { it.id }
+        val groups = sessionWords.mapNotNull { it.semanticGroup }.distinct()
+        return groups.flatMap { group ->
+            wordDao.getWordsBySemanticGroup(group, langPair, excludeIds, limitPerGroup)
+                .map { entity ->
+                    Word(
+                        id = entity.id,
+                        original = entity.original,
+                        translation = entity.translation,
+                        definition = entity.definition,
+                        example = entity.example,
+                        rarity = Rarity.valueOf(entity.rarity),
+                        languagePair = entity.languagePair,
+                        pos = entity.pos,
+                        semanticGroup = entity.semanticGroup,
+                        transliteration = entity.transliteration,
+                        definitionNative = entity.definitionNative,
+                        exampleNative = entity.exampleNative,
+                    )
+                }
+        }.distinctBy { it.id }
+    }
+
+    /**
      * Returns the rarity whose [Rarity.points] value is closest to the weighted average
      * of all words in the set (weight = word count per rarity × rarity points).
      * This gives a colour that reflects the overall composition of the set rather than

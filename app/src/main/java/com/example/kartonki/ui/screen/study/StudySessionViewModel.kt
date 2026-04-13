@@ -84,7 +84,11 @@ class StudySessionViewModel @Inject constructor(
             val definitionMode = prefs.definitionQuizMode.first()
             val fillBlankMode  = prefs.fillBlankQuizMode.first()
             val enabledTypes   = prefs.quizTypesEnabled.first()
-            val steps = QuizBuilder.buildSteps(words, definitionMode, fillBlankMode, enabledTypes)
+            // Fetch semantically-related words from other sets for use as distractors.
+            // This ensures that e.g. "knee" gets body-part distractors even if the session
+            // only has one body-part word alongside 24 animal words.
+            val distractorExtras = wordSetRepository.getDistractorExtras(words)
+            val steps = QuizBuilder.buildSteps(words, distractorExtras, definitionMode, fillBlankMode, enabledTypes)
             _uiState.update {
                 it.copy(isLoading = false, isEmpty = false, steps = steps, currentStepIndex = 0)
             }

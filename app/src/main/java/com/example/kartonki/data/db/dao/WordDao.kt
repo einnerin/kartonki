@@ -63,6 +63,13 @@ interface WordDao {
     @Query("SELECT COUNT(*) FROM words WHERE languagePair = :langPair")
     suspend fun countWordsByLanguage(langPair: String): Int
 
+    /**
+     * Fetches random words from the same semantic group, excluding already-known IDs.
+     * Used to expand the distractor pool for quiz questions.
+     */
+    @Query("SELECT * FROM words WHERE semanticGroup = :group AND languagePair = :langPair AND id NOT IN (:excludeIds) ORDER BY RANDOM() LIMIT :limit")
+    suspend fun getWordsBySemanticGroup(group: String, langPair: String, excludeIds: List<Long>, limit: Int): List<WordEntity>
+
     /** Applies all native-content updates inside a single SQLite transaction. */
     @androidx.room.Transaction
     suspend fun patchNativeContent(langPair: String, data: Map<String, Pair<String, String>>) {
