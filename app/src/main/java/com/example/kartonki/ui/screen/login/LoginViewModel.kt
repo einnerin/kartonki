@@ -2,6 +2,7 @@ package com.example.kartonki.ui.screen.login
 
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.remote.FirebaseAuthManager
@@ -15,6 +16,8 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+
+private const val TAG = "LoginViewModel"
 
 data class LoginUiState(
     val isLoading: Boolean = false,
@@ -42,22 +45,42 @@ class LoginViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true, error = null) }
             try {
-                val account = GoogleSignIn.getSignedInAccountFromIntent(data)
-                    .getResult(ApiException::class.java)
-                val idToken = account.idToken ?: error("ID token is null")
+                Log.d(TAG, "handleGoogleSignInResult: data=${data != null}")
+                val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+                val account = task.getResult(ApiException::class.java)
+                Log.d(TAG, "handleGoogleSignInResult: account=${account.email}, idToken=${if (account.idToken != null) "present" else "NULL"}")
+                val idToken = account.idToken ?: run {
+                    Log.e(TAG, "idToken is null — SHA-1 fingerprint probably not registered in Firebase Console")
+                    _uiState.update { it.copy(isLoading = false, error = "Ошибка входа: ID токен не получен. Проверьте настройки Firebase Console.") }
+                    return@launch
+                }
                 val result = authManager.firebaseSignInWithGoogle(idToken)
                 result.onSuccess { profile ->
                     userRepository.saveProfile(profile)
                     _uiState.update { it.copy(isLoading = false, isSignedIn = true) }
                 }.onFailure { e ->
-                    _uiState.update { it.copy(isLoading = false, error = e.message) }
+                    val msg = e.message?.takeIf { it.isNotBlank() } ?: "${e.javaClass.simpleName} (без сообщения)"
+                    Log.e(TAG, "Firebase sign-in failed: $msg", e)
+                    _uiState.update { it.copy(isLoading = false, error = "Ошибка Firebase: $msg") }
                 }
             } catch (e: ApiException) {
-                _uiState.update { it.copy(isLoading = false, error = "Google Sign-In failed: ${e.statusCode}") }
+                val msg = "Google Sign-In код ${e.statusCode}: ${googleErrorDescription(e.statusCode)}"
+                Log.e(TAG, msg, e)
+                _uiState.update { it.copy(isLoading = false, error = msg) }
             } catch (e: Exception) {
-                _uiState.update { it.copy(isLoading = false, error = e.message) }
+                val msg = e.message?.takeIf { it.isNotBlank() } ?: e.javaClass.simpleName
+                Log.e(TAG, "handleGoogleSignInResult exception: $msg", e)
+                _uiState.update { it.copy(isLoading = false, error = msg) }
             }
         }
+    }
+
+    private fun googleErrorDescription(code: Int) = when (code) {
+        10 -> "DEVELOPER_ERROR — SHA-1 не зарегистрирован в Firebase Console"
+        12500 -> "SIGN_IN_FAILED"
+        12501 -> "SIGN_IN_CANCELLED"
+        12502 -> "SIGN_IN_CURRENTLY_IN_PROGRESS"
+        else -> "неизвестная ошибка"
     }
 
     fun signInAnonymously() {
