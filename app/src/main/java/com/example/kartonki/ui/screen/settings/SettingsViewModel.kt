@@ -112,12 +112,16 @@ class SettingsViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             authManager.currentUser.collect { profile ->
+                val signedInWithAccount = profile != null && profile.isAnonymous == false
                 _uiState.update {
                     it.copy(
                         isSignedIn = profile != null,
                         isAnonymous = profile?.isAnonymous ?: true,
                         accountEmail = profile?.email ?: "",
                         accountDisplayName = profile?.displayName ?: "",
+                        // Clear spinner as soon as auth state reflects successful sign-in,
+                        // regardless of whether the sign-in Task coroutine has completed.
+                        isSigningIn = if (signedInWithAccount) false else it.isSigningIn,
                     )
                 }
             }
