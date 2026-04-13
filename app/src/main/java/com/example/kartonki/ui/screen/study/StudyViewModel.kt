@@ -28,6 +28,12 @@ data class StudyListUiState(
     val isLoading: Boolean = true,
     val sets: List<WordSetUiItem> = emptyList(),
     val activeFilters: Set<Rarity> = emptySet(),
+    /**
+     * Increments each time the user actively toggles a filter chip.
+     * Used as a LaunchedEffect key so the list scrolls to top only on an explicit
+     * filter change — not on initial composition or when returning from a session.
+     */
+    val filterVersion: Int = 0,
 ) {
     val filteredSets: List<WordSetUiItem> get() =
         if (activeFilters.isEmpty()) sets else sets.filter { it.rarity in activeFilters }
@@ -43,10 +49,21 @@ class StudyViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(StudyListUiState())
     val uiState: StateFlow<StudyListUiState> = _uiState.asStateFlow()
 
+    /** Scroll position saved so it survives navigation and silent refreshes. */
+    var savedScrollIndex: Int = 0
+        private set
+    var savedScrollOffset: Int = 0
+        private set
+
+    fun saveScrollPosition(index: Int, offset: Int) {
+        savedScrollIndex = index
+        savedScrollOffset = offset
+    }
+
     init {
         viewModelScope.launch {
             prefs.languagePair.collect { pair ->
-                loadSets(pair)
+                loadSets(pair, showLoading = true)
             }
         }
     }
@@ -57,18 +74,19 @@ class StudyViewModel @Inject constructor(
                 state.activeFilters - rarity
             else
                 state.activeFilters + rarity
-            state.copy(activeFilters = updated)
+            state.copy(activeFilters = updated, filterVersion = state.filterVersion + 1)
         }
     }
 
+    /** Refreshes data silently — no loading spinner so the scroll position is preserved. */
     fun refresh() {
         viewModelScope.launch {
-            loadSets(prefs.languagePair.first())
+            loadSets(prefs.languagePair.first(), showLoading = false)
         }
     }
 
-    private suspend fun loadSets(languagePair: String) {
-        _uiState.update { it.copy(isLoading = true) }
+    private suspend fun loadSets(languagePair: String, showLoading: Boolean) {
+        if (showLoading) _uiState.update { it.copy(isLoading = true) }
         wordSetRepository.ensureSeeded()
         val sets = wordSetRepository.getSetsByLanguage(languagePair)
         val items = sets.map { set ->

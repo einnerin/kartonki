@@ -36,6 +36,7 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -108,8 +109,27 @@ fun StudyScreen(
             HorizontalDivider(color = Color.White.copy(alpha = 0.08f))
 
             val listState = rememberLazyListState()
-            LaunchedEffect(uiState.activeFilters) {
-                listState.scrollToItem(0)
+
+            // Restore saved scroll position when the screen re-enters composition
+            // (e.g. language change causes ViewModel recreation).
+            LaunchedEffect(Unit) {
+                val idx = viewModel.savedScrollIndex
+                val off = viewModel.savedScrollOffset
+                if (idx > 0 || off > 0) {
+                    listState.scrollToItem(idx, off)
+                }
+            }
+
+            // Persist scroll position continuously so it survives navigation.
+            LaunchedEffect(listState) {
+                snapshotFlow { listState.firstVisibleItemIndex to listState.firstVisibleItemScrollOffset }
+                    .collect { (index, offset) -> viewModel.saveScrollPosition(index, offset) }
+            }
+
+            // Scroll to top only when the user explicitly toggles a filter chip
+            // (filterVersion is 0 on initial composition, so we skip that first run).
+            LaunchedEffect(uiState.filterVersion) {
+                if (uiState.filterVersion > 0) listState.scrollToItem(0)
             }
 
             Box(modifier = Modifier.fillMaxSize()) {
