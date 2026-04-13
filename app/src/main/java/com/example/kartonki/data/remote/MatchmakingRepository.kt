@@ -24,34 +24,33 @@ sealed class MatchmakingResult {
 class MatchmakingRepository @Inject constructor(
     private val database: FirebaseDatabase,
 ) {
-    private val queueRef get() = database.getReference("matchmaking")
+    private val queueRef   get() = database.getReference("matchmaking")
     private val matchesRef get() = database.getReference("matches")
 
     fun findMatch(entry: MatchmakingEntry): Flow<MatchmakingResult> = callbackFlow {
         val myRef = queueRef.child(entry.uid)
 
-        // Write own queue entry
         val entryMap = mapOf(
-            "uid" to entry.uid,
-            "playerName" to entry.playerName,
-            "deckId" to entry.deckId,
-            "deckName" to entry.deckName,
-            "deckLevel" to entry.deckLevel,
+            "uid"          to entry.uid,
+            "playerName"   to entry.playerName,
+            "deckId"       to entry.deckId,
+            "deckName"     to entry.deckName,
+            "deckLevel"    to entry.deckLevel,
             "languagePair" to entry.languagePair,
-            "cardIds" to entry.cardIds,
-            "timestamp" to entry.timestamp,
+            "cardIds"      to entry.cardIds,
+            "timestamp"    to entry.timestamp,
         )
         myRef.setValue(entryMap).await()
         trySend(MatchmakingResult.Searching)
 
-        // Listen for matchId appearing on my queue entry (set by whichever client creates the match)
+        // ── Listener: matchId written to MY OWN entry ───────────────────────
+        // Happens either by me (after I create the match) or by the opponent
+        // via a cross-user write (if Firebase rules allow it).
         val myMatchListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val matchId = snapshot.child("matchId").getValue(String::class.java)
-                val myIndex = snapshot.child("myIndex").getValue(Long::class.java)?.toInt()
-                if (matchId != null && myIndex != null) {
-                    trySend(MatchmakingResult.Found(matchId, myIndex))
-                }
+                val matchId = snapshot.child("matchId").getValue(String::class.java) ?: return
+                val myIndex = snapshot.child("myIndex").getValue(Long::class.java)?.toInt() ?: return
+                trySend(MatchmakingResult.Found(matchId, myIndex))
             }
             override fun onCancelled(error: DatabaseError) {
                 trySend(MatchmakingResult.Error(error.message))
@@ -59,68 +58,104 @@ class MatchmakingRepository @Inject constructor(
         }
         myRef.addValueEventListener(myMatchListener)
 
-        // Try to pair with an opponent. Called both on initial scan and when new entries appear.
-        fun tryPairWith(snapshot: DataSnapshot) {
-            val uid = snapshot.child("uid").getValue(String::class.java) ?: return
-            if (uid == entry.uid) return                                         // skip self
-            if (snapshot.child("matchId").getValue(String::class.java) != null) return // already paired
-            val lang = snapshot.child("languagePair").getValue(String::class.java)
-            if (lang != null && lang != entry.languagePair) return               // different language
+        // ── Find a match in the matches collection by UID ───────────────────
+        // Fallback for the early-joiner when cross-user writes are blocked.
+        fun checkMatchForMe(matchId: String) {
+            matchesRef.child(matchId).addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snap: DataSnapshot) {
+                    val p1Uid = snap.child("player1Uid").getValue(String::class.java)
+                    val p2Uid = snap.child("player2Uid").getValue(String::class.java)
+                    val myIdx = when (entry.uid) {
+                        p1Uid -> 0
+                        p2Uid -> 1
+                        else  -> return  // not our match
+                    }
+                    trySend(MatchmakingResult.Found(matchId, myIdx))
+                }
+                override fun onCancelled(error: DatabaseError) {}
+            })
+        }
 
-            val opponentUid = uid
-            val opponentName = snapshot.child("playerName").getValue(String::class.java) ?: "Игрок"
-            val opponentDeckId = snapshot.child("deckId").getValue(Long::class.java) ?: 0L
-            @Suppress("UNCHECKED_CAST")
-            val opponentCardIds = (snapshot.child("cardIds").value as? List<Long>) ?: emptyList()
+        // ── Create the match (called only by the LATER joiner) ──────────────
+        // Using timestamp to decide who creates avoids the race condition where
+        // both phones see each other and both try to create simultaneously.
+        fun tryPairWith(snapshot: DataSnapshot) {
+            val opponentUid = snapshot.child("uid").getValue(String::class.java) ?: return
+            if (opponentUid == entry.uid) return                                         // skip self
+            if (snapshot.child("matchId").getValue(String::class.java) != null) return  // already paired
+
+            val lang = snapshot.child("languagePair").getValue(String::class.java)
+            if (lang != null && lang != entry.languagePair) return                       // different language
+
+            val opponentTimestamp = snapshot.child("timestamp").getValue(Long::class.java) ?: 0L
+
+            // Only the LATER joiner (higher timestamp) creates the match.
+            // Tiebreak by UID string comparison so exactly one phone "wins".
+            val iCreate = entry.timestamp > opponentTimestamp ||
+                (entry.timestamp == opponentTimestamp && entry.uid > opponentUid)
+            if (!iCreate) return  // the other phone will create
+
+            val opponentName    = snapshot.child("playerName").getValue(String::class.java) ?: "Игрок"
+            val opponentCardIds = snapshot.child("cardIds").value.toCardIdList()
 
             val matchId = matchesRef.push().key ?: return
 
             val matchData = mapOf(
-                "matchId" to matchId,
-                "player1Uid" to entry.uid,
-                "player2Uid" to opponentUid,
-                "player1Name" to entry.playerName,
-                "player2Name" to opponentName,
-                "player1CardIds" to entry.cardIds,
-                "player2CardIds" to opponentCardIds,
-                "player1RemainingIds" to entry.cardIds,
-                "player2RemainingIds" to opponentCardIds,
-                "status" to OnlineMatchData.STATUS_ACTIVE,
-                "currentTurn" to 0,
-                "phase" to OnlineMatchData.PHASE_HAND_SELECTION,
-                "player1Score" to 0,
-                "player2Score" to 0,
-                "player1Streak" to 0,
-                "player2Streak" to 0,
-                "roundStartTime" to System.currentTimeMillis(),
-                "currentRound" to null,
-                "winnerIndex" to -1,
+                "matchId"              to matchId,
+                "player1Uid"           to entry.uid,
+                "player2Uid"           to opponentUid,
+                "player1Name"          to entry.playerName,
+                "player2Name"          to opponentName,
+                "player1CardIds"       to entry.cardIds,
+                "player2CardIds"       to opponentCardIds,
+                "player1RemainingIds"  to entry.cardIds,
+                "player2RemainingIds"  to opponentCardIds,
+                "status"               to OnlineMatchData.STATUS_ACTIVE,
+                "currentTurn"          to 0,
+                "phase"                to OnlineMatchData.PHASE_HAND_SELECTION,
+                "player1Score"         to 0,
+                "player2Score"         to 0,
+                "player1Streak"        to 0,
+                "player2Streak"        to 0,
+                "roundStartTime"       to System.currentTimeMillis(),
+                "currentRound"         to null,
+                "winnerIndex"          to -1,
             )
             matchesRef.child(matchId).setValue(matchData)
-            // I am player1 (index 0), opponent is player2 (index 1)
+            // I am player1 (index 0)
             myRef.updateChildren(mapOf("matchId" to matchId, "myIndex" to 0))
+            // Write to opponent's entry (player2, index 1).
+            // May be blocked by Firebase rules — that's OK:
+            // the opponent discovers the match via onChildChanged → checkMatchForMe().
             queueRef.child(opponentUid).updateChildren(mapOf("matchId" to matchId, "myIndex" to 1))
         }
 
-        // Initial scan: find anyone already in the queue
+        // ── Queue listener ───────────────────────────────────────────────────
+        val childListener = object : ChildEventListener {
+            override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
+                tryPairWith(snapshot)
+            }
+            // Opponent wrote matchId to THEIR OWN entry → we're the early joiner,
+            // find our index by reading the match document directly.
+            override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {
+                val opponentUid = snapshot.child("uid").getValue(String::class.java) ?: return
+                if (opponentUid == entry.uid) return
+                val matchId = snapshot.child("matchId").getValue(String::class.java) ?: return
+                checkMatchForMe(matchId)
+            }
+            override fun onChildRemoved(snapshot: DataSnapshot) {}
+            override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {}
+            override fun onCancelled(error: DatabaseError) {}
+        }
+        queueRef.addChildEventListener(childListener)
+
+        // Initial scan for anyone already waiting
         queueRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 snapshot.children.forEach { tryPairWith(it) }
             }
             override fun onCancelled(error: DatabaseError) {}
         })
-
-        // Reactive: pair with any new player who joins after us
-        val childListener = object : ChildEventListener {
-            override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
-                tryPairWith(snapshot)
-            }
-            override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {}
-            override fun onChildRemoved(snapshot: DataSnapshot) {}
-            override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {}
-            override fun onCancelled(error: DatabaseError) {}
-        }
-        queueRef.addChildEventListener(childListener)
 
         awaitClose {
             myRef.removeEventListener(myMatchListener)
@@ -132,3 +167,9 @@ class MatchmakingRepository @Inject constructor(
         queueRef.child(uid).removeValue().await()
     }
 }
+
+// Firebase can return card ID lists as List<Long>, List<Int>, or ArrayList<Any>
+private fun Any?.toCardIdList(): List<Long> =
+    (this as? List<*>)?.mapNotNull {
+        (it as? Long) ?: (it as? Int)?.toLong()
+    } ?: emptyList()
