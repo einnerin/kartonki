@@ -1,6 +1,7 @@
 package com.example.kartonki.data.repository
 
 import com.example.kartonki.data.SeedData
+import com.example.kartonki.data.SeedDataEnglishMore
 import com.example.kartonki.data.SeedDataEnglishNative
 import com.example.kartonki.data.SeedDataHebrew
 import com.example.kartonki.data.SeedDataHebrewEveryday
@@ -38,6 +39,11 @@ class WordSetRepository @Inject constructor(
         if (wordSetDao.getSetById(108L) == null) {
             wordSetDao.insertSets(SeedDataHebrewMore.sets)
             wordDao.insertAll(SeedDataHebrewMore.words)
+        }
+        // Additional English sets (200+) — seed if set 200 is missing.
+        if (wordSetDao.getSetById(200L) == null) {
+            wordSetDao.insertSets(SeedDataEnglishMore.sets)
+            wordDao.insertAll(SeedDataEnglishMore.words)
         }
         // Patch English words with Russian-language native content (definitionNative + exampleNative).
         // Runs once: skipped when the count of already-patched English words matches the dataset.
