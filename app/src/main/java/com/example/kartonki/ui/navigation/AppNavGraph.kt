@@ -58,8 +58,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         composable(Route.Splash.path) {
             SplashScreen(
                 onSplashFinished = {
-                    val dest = if (authManager.isSignedIn) Route.Home.path else Route.Login.path
-                    navController.navigate(dest) {
+                    navController.navigate(Route.Home.path) {
                         popUpTo(Route.Splash.path) { inclusive = true }
                     }
                 },
@@ -130,7 +129,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
                 onNavigateToWordStats = { navController.navigate(Route.WordStats.path) },
                 onNavigateToAchievements = { navController.navigate(Route.Achievements.path) },
                 onSignOut = {
-                    navController.navigate(Route.Login.path) {
+                    navController.navigate(Route.Home.path) {
                         popUpTo(0) { inclusive = true }
                     }
                 },

@@ -126,21 +126,8 @@ fun LoginScreen(
                 )
 
                 Spacer(Modifier.height(16.dp))
-
-                // Guest button
-                LoginButton(
-                    text = "Играть как гость",
-                    gradient = Brush.horizontalGradient(
-                        listOf(Color(0xFF1B1B2F), Color(0xFF2D2D44))
-                    ),
-                    glowColor = Color(0xFF555577),
-                    onClick = viewModel::signInAnonymously,
-                    modifier = Modifier.fillMaxWidth(),
-                )
-
-                Spacer(Modifier.height(16.dp))
                 Text(
-                    text = "Как гость вы можете играть офлайн.\nДля онлайн PvP нужен аккаунт Google.",
+                    text = "Аккаунт Google нужен для онлайн PvP\nи синхронизации прогресса.",
                     style = MaterialTheme.typography.bodySmall,
                     color = TextSecondary.copy(alpha = 0.6f),
                     textAlign = TextAlign.Center,

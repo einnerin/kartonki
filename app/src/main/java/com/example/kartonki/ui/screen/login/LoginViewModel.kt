@@ -86,19 +86,5 @@ class LoginViewModel @Inject constructor(
         else -> "неизвестная ошибка"
     }
 
-    fun signInAnonymously() {
-        viewModelScope.launch {
-            _uiState.update { it.copy(isLoading = true, error = null) }
-            authManager.signInAnonymously()
-                .onSuccess { profile ->
-                    userRepository.saveProfile(profile)
-                    _uiState.update { it.copy(isLoading = false, isSignedIn = true) }
-                }
-                .onFailure { e ->
-                    _uiState.update { it.copy(isLoading = false, error = e.message) }
-                }
-        }
-    }
-
     fun dismissError() = _uiState.update { it.copy(error = null) }
 }
