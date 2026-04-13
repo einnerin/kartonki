@@ -283,12 +283,24 @@ class OnlinePvpGameViewModel @Inject constructor(
                 p2Streak = newMyStreak
             }
 
-            // Defender becomes next attacker — check if they have cards left
-            val nextAttacker = myIndex
-            val nextPhase = if (myCardIds.isNotEmpty()) {
-                OnlineMatchData.PHASE_HAND_SELECTION
-            } else {
-                OnlineMatchData.PHASE_GAME_OVER
+            // Defender becomes next attacker if they have cards;
+            // if not but opponent still has cards, opponent continues; otherwise game over.
+            val opponentIdx = 1 - myIndex
+            val nextAttacker: Int
+            val nextPhase: String
+            when {
+                myCardIds.isNotEmpty() -> {
+                    nextAttacker = myIndex
+                    nextPhase = OnlineMatchData.PHASE_HAND_SELECTION
+                }
+                opponentCardIds.isNotEmpty() -> {
+                    nextAttacker = opponentIdx
+                    nextPhase = OnlineMatchData.PHASE_HAND_SELECTION
+                }
+                else -> {
+                    nextAttacker = myIndex
+                    nextPhase = OnlineMatchData.PHASE_GAME_OVER
+                }
             }
 
             val isGameOver = nextPhase == OnlineMatchData.PHASE_GAME_OVER
@@ -392,10 +404,54 @@ class OnlinePvpGameViewModel @Inject constructor(
     private fun buildHand(cards: List<Word>): List<Word> =
         if (cards.size <= HAND_SIZE) cards.shuffled() else cards.shuffled().take(HAND_SIZE)
 
+    private fun pickDistractors(word: Word): List<Word> {
+        val candidates = allWords.filter { it.id != word.id }
+        if (word.pos == null && word.semanticGroup == null) return candidates.shuffled()
+        val tier1 = candidates.filter { it.pos == word.pos && it.semanticGroup == word.semanticGroup }.shuffled()
+        val tier2 = candidates.filter { it.pos == word.pos && it.semanticGroup != word.semanticGroup }.shuffled()
+        val tier3 = candidates.filter { it.pos != word.pos }.shuffled()
+        return tier1 + tier2 + tier3
+    }
+
     private fun buildQuiz(word: Word): PvpQuiz? {
-        val others = allWords.filter { it.id != word.id }
+        val others = pickDistractors(word)
         if (others.size < 3) return null
-        val wrongs = others.shuffled().take(3).map { it.translation }
+
+        val candidates = buildList {
+            add("translation")
+            if (word.definition != null && others.count { it.definition != null } >= 3) add("definition")
+            if (word.example != null) add("fill_blank")
+        }
+
+        return when (candidates.random()) {
+            "definition" -> {
+                val wrongs = others.filter { it.definition != null }.take(3).map { it.definition!! }
+                if (wrongs.size < 3) return translationQuiz(word, others)
+                PvpQuiz(
+                    playedCard = word,
+                    question = word.original,
+                    questionLabel = "Выберите определение:",
+                    options = (wrongs + word.definition!!).shuffled(),
+                    correctAnswer = word.definition!!,
+                )
+            }
+            "fill_blank" -> {
+                val sentence = word.example!!.replace(word.original, "_____", ignoreCase = true)
+                val wrongs = others.take(3).map { it.original }
+                PvpQuiz(
+                    playedCard = word,
+                    question = sentence,
+                    questionLabel = "Выберите слово для пропуска:",
+                    options = (wrongs + word.original).shuffled(),
+                    correctAnswer = word.original,
+                )
+            }
+            else -> translationQuiz(word, others)
+        }
+    }
+
+    private fun translationQuiz(word: Word, others: List<Word>): PvpQuiz {
+        val wrongs = others.take(3).map { it.translation }
         return PvpQuiz(
             playedCard = word,
             question = word.original,
