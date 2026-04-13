@@ -1,6 +1,8 @@
 package com.example.kartonki.ui.screen.pvp
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -367,60 +369,67 @@ private fun OnlineQuizScreen(
             MultiplierRow(players = players, highlightIndex = highlightIndex)
             HorizontalDivider(color = BgCard)
 
-            Column(
-                modifier = Modifier
-                    .weight(1f)
-                    .padding(horizontal = 20.dp),
-                verticalArrangement = Arrangement.spacedBy(12.dp),
-            ) {
-                Spacer(Modifier.height(16.dp))
+            Column(modifier = Modifier.weight(1f)) {
+                Column(
+                    modifier = Modifier
+                        .weight(1f)
+                        .verticalScroll(rememberScrollState())
+                        .padding(horizontal = 20.dp),
+                    verticalArrangement = Arrangement.spacedBy(12.dp),
+                ) {
+                    Spacer(Modifier.height(16.dp))
 
-                Text(
-                    text = phase.questionLabel,
-                    style = MaterialTheme.typography.labelLarge,
-                    color = TextSecondary,
-                )
-
-                Text(
-                    text = phase.question,
-                    style = MaterialTheme.typography.headlineSmall,
-                    fontWeight = FontWeight.Bold,
-                    color = Color.White,
-                    softWrap = true,
-                )
-
-                Spacer(Modifier.height(4.dp))
-
-                phase.options.forEach { option ->
-                    val isCorrect = option == phase.correctAnswer
-                    val isSelected = option == phase.selectedAnswer
-                    val ansState = when {
-                        !answered  -> PvpAnswerState.Normal
-                        isCorrect  -> PvpAnswerState.Correct
-                        isSelected -> PvpAnswerState.Wrong
-                        else       -> PvpAnswerState.Dimmed
-                    }
-                    PvpAnswerButton(
-                        text = option,
-                        answerState = ansState,
-                        enabled = !answered,
-                        onClick = { onAnswerSelected(option) },
+                    Text(
+                        text = phase.questionLabel,
+                        style = MaterialTheme.typography.labelLarge,
+                        color = TextSecondary,
                     )
+
+                    Text(
+                        text = phase.question,
+                        style = MaterialTheme.typography.headlineSmall,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White,
+                        softWrap = true,
+                    )
+
+                    Spacer(Modifier.height(4.dp))
+
+                    phase.options.forEach { option ->
+                        val isCorrect = option == phase.correctAnswer
+                        val isSelected = option == phase.selectedAnswer
+                        val ansState = when {
+                            !answered  -> PvpAnswerState.Normal
+                            isCorrect  -> PvpAnswerState.Correct
+                            isSelected -> PvpAnswerState.Wrong
+                            else       -> PvpAnswerState.Dimmed
+                        }
+                        PvpAnswerButton(
+                            text = option,
+                            answerState = ansState,
+                            enabled = !answered,
+                            onClick = { onAnswerSelected(option) },
+                        )
+                    }
+
+                    if (answered) {
+                        val isCorrect = phase.selectedAnswer == phase.correctAnswer
+                        PvpResultPanel(
+                            wordOriginal = phase.playedCardWord,
+                            wordTranslation = phase.playedCardTranslation,
+                            isCorrect = isCorrect,
+                        )
+                        Spacer(Modifier.height(8.dp))
+                    }
                 }
 
                 if (answered) {
-                    val isCorrect = phase.selectedAnswer == phase.correctAnswer
-                    PvpResultPanel(
-                        wordOriginal = phase.playedCardWord,
-                        wordTranslation = phase.playedCardTranslation,
-                        isCorrect = isCorrect,
-                    )
-                    Spacer(Modifier.weight(1f))
                     Button(
                         onClick = onConfirm,
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(bottom = 24.dp),
+                            .padding(horizontal = 20.dp)
+                            .padding(top = 8.dp, bottom = 24.dp),
                         shape = RoundedCornerShape(14.dp),
                     ) {
                         Text(s.pvpContinue, fontWeight = FontWeight.Bold)
