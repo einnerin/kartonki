@@ -6,6 +6,7 @@ import android.net.Uri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.preferences.UserPreferencesRepository
+import com.example.kartonki.data.remote.FirebaseAuthManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -72,6 +73,13 @@ data class SettingsUiState(
     val showFillBlankModePicker: Boolean = false,
     val showQuizTypesPicker: Boolean = false,
     val showProblemWordsSourcePicker: Boolean = false,
+    // Account
+    val isSignedIn: Boolean = false,
+    val isAnonymous: Boolean = true,
+    val accountEmail: String = "",
+    val accountDisplayName: String = "",
+    val showSignOutDialog: Boolean = false,
+    val signOutDone: Boolean = false,
 )
 
 val AVATAR_EMOJI_OPTIONS = listOf(
@@ -83,13 +91,28 @@ val AVATAR_EMOJI_OPTIONS = listOf(
 @HiltViewModel
 class SettingsViewModel @Inject constructor(
     private val prefs: UserPreferencesRepository,
+    private val authManager: FirebaseAuthManager,
     @ApplicationContext private val appContext: Context,
 ) : ViewModel() {
+
+    private val WEB_CLIENT_ID = "75116979020-g8b7ug8lknrfbrid1alk9agtqd2skn78.apps.googleusercontent.com"
 
     private val _uiState = MutableStateFlow(SettingsUiState())
     val uiState: StateFlow<SettingsUiState> = _uiState.asStateFlow()
 
     init {
+        viewModelScope.launch {
+            authManager.currentUser.collect { profile ->
+                _uiState.update {
+                    it.copy(
+                        isSignedIn = profile != null,
+                        isAnonymous = profile?.isAnonymous ?: true,
+                        accountEmail = profile?.email ?: "",
+                        accountDisplayName = profile?.displayName ?: "",
+                    )
+                }
+            }
+        }
         viewModelScope.launch {
             combine(
                 combine(
@@ -199,6 +222,14 @@ class SettingsViewModel @Inject constructor(
         prefs.setProblemWordsSource(source)
         _uiState.update { it.copy(showProblemWordsSourcePicker = false) }
     }
+
+    fun onSignOutClick() = _uiState.update { it.copy(showSignOutDialog = true) }
+    fun onSignOutDismiss() = _uiState.update { it.copy(showSignOutDialog = false) }
+    fun onSignOutConfirmed() {
+        authManager.signOut(appContext, WEB_CLIENT_ID)
+        _uiState.update { it.copy(showSignOutDialog = false, signOutDone = true) }
+    }
+    fun onSignOutNavigated() = _uiState.update { it.copy(signOutDone = false) }
 
     fun onEmojiAvatarSelected(emoji: String) = viewModelScope.launch {
         prefs.setAvatarChoice(emoji)

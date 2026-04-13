@@ -26,6 +26,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -69,11 +70,21 @@ fun SettingsScreen(
     onNavigateToStats: () -> Unit,
     onNavigateToWordStats: () -> Unit,
     onNavigateToAchievements: () -> Unit,
+    onSignOut: () -> Unit,
+    onSignIn: () -> Unit,
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
     val context = LocalContext.current
     val s = LocalAppStrings.current
+
+    // Navigate to login when sign-out completes
+    LaunchedEffect(state.signOutDone) {
+        if (state.signOutDone) {
+            viewModel.onSignOutNavigated()
+            onSignOut()
+        }
+    }
 
     val photoPickerLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.PickVisualMedia(),
@@ -102,6 +113,18 @@ fun SettingsScreen(
                 .padding(horizontal = 16.dp),
             verticalArrangement = Arrangement.spacedBy(0.dp),
         ) {
+            // ── Account ────────────────────────────────────────────────────────
+            SectionHeader("Аккаунт")
+            AccountSection(
+                isSignedIn = state.isSignedIn,
+                isAnonymous = state.isAnonymous,
+                email = state.accountEmail,
+                displayName = state.accountDisplayName,
+                onSignOut = viewModel::onSignOutClick,
+                onSignIn = onSignIn,
+            )
+            Spacer(Modifier.height(8.dp))
+
             // ── Profile ────────────────────────────────────────────────────────
             SectionHeader(s.settingsProfileSection)
 
@@ -482,6 +505,101 @@ fun SettingsScreen(
             Spacer(Modifier.height(8.dp))
             NavRow(s.settingsAchievements, onClick = onNavigateToAchievements)
             Spacer(Modifier.height(32.dp))
+        }
+    }
+
+    // Sign-out confirmation dialog
+    if (state.showSignOutDialog) {
+        AlertDialog(
+            onDismissRequest = viewModel::onSignOutDismiss,
+            title = { Text("Выйти из аккаунта?") },
+            text = { Text("Прогресс и коллекция сохранены локально. Онлайн PvP будет недоступен.") },
+            confirmButton = {
+                TextButton(
+                    onClick = viewModel::onSignOutConfirmed,
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.error),
+                ) { Text("Выйти") }
+            },
+            dismissButton = {
+                TextButton(onClick = viewModel::onSignOutDismiss) { Text("Отмена") }
+            },
+        )
+    }
+}
+
+@Composable
+private fun AccountSection(
+    isSignedIn: Boolean,
+    isAnonymous: Boolean,
+    email: String,
+    displayName: String,
+    onSignOut: () -> Unit,
+    onSignIn: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(MaterialTheme.colorScheme.surfaceVariant, RoundedCornerShape(12.dp))
+            .padding(horizontal = 16.dp, vertical = 14.dp),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            modifier = Modifier.weight(1f),
+        ) {
+            // Account icon
+            Box(
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .background(
+                        if (!isAnonymous) MaterialTheme.colorScheme.primaryContainer
+                        else MaterialTheme.colorScheme.surfaceVariant
+                    ),
+                contentAlignment = Alignment.Center,
+            ) {
+                Text(if (isAnonymous) "👤" else "G", fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = if (!isAnonymous) MaterialTheme.colorScheme.onPrimaryContainer
+                            else MaterialTheme.colorScheme.onSurfaceVariant)
+            }
+            Column {
+                if (isAnonymous || !isSignedIn) {
+                    Text(
+                        "Гость",
+                        style = MaterialTheme.typography.bodyLarge,
+                        fontWeight = FontWeight.Medium,
+                    )
+                    Text(
+                        "Войдите для онлайн PvP",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                } else {
+                    Text(
+                        displayName.ifBlank { email },
+                        style = MaterialTheme.typography.bodyLarge,
+                        fontWeight = FontWeight.Medium,
+                    )
+                    if (email.isNotBlank()) {
+                        Text(
+                            email,
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
+                }
+            }
+        }
+        if (isAnonymous || !isSignedIn) {
+            TextButton(onClick = onSignIn) { Text("Войти") }
+        } else {
+            TextButton(
+                onClick = onSignOut,
+                colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.error),
+            ) { Text("Выйти") }
         }
     }
 }

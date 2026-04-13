@@ -129,6 +129,16 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
                 onNavigateToStats = { navController.navigate(Route.PlayerStats.path) },
                 onNavigateToWordStats = { navController.navigate(Route.WordStats.path) },
                 onNavigateToAchievements = { navController.navigate(Route.Achievements.path) },
+                onSignOut = {
+                    navController.navigate(Route.Login.path) {
+                        popUpTo(0) { inclusive = true }
+                    }
+                },
+                onSignIn = {
+                    navController.navigate(Route.Login.path) {
+                        popUpTo(Route.Settings.path) { inclusive = false }
+                    }
+                },
             )
         }
 
