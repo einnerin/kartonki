@@ -20,11 +20,13 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -87,8 +89,23 @@ fun OnlinePvpGameScreen(
                 Column(
                     modifier = Modifier.fillMaxSize().padding(16.dp),
                 ) {
-                    // Scoreboard
-                    OnlineScoreboard(uiState)
+                    // Scoreboard + surrender button
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Box(modifier = Modifier.weight(1f)) {
+                            OnlineScoreboard(uiState)
+                        }
+                        if (uiState.phase !is OnlinePvpPhase.GameOver) {
+                            TextButton(
+                                onClick = viewModel::onSurrenderClick,
+                                colors = ButtonDefaults.textButtonColors(
+                                    contentColor = Color(0xFFEF5350),
+                                ),
+                            ) { Text("Сдаться", fontSize = 12.sp) }
+                        }
+                    }
                     Spacer(Modifier.height(8.dp))
                     // Timer
                     OnlineTimerBar(uiState.timeRemaining)
@@ -112,6 +129,29 @@ fun OnlinePvpGameScreen(
                                 OnlineGameOverContent(phase, onNavigateHome)
                         }
                     }
+                }
+
+                // Surrender confirmation dialog
+                if (uiState.showSurrenderDialog) {
+                    AlertDialog(
+                        onDismissRequest = viewModel::onSurrenderDismiss,
+                        title = { Text("Сдаться?") },
+                        text = { Text("Противник получит победу. Вы уверены?") },
+                        confirmButton = {
+                            TextButton(
+                                onClick = {
+                                    viewModel.onSurrenderDismiss()
+                                    viewModel.surrender()
+                                },
+                                colors = ButtonDefaults.textButtonColors(
+                                    contentColor = Color(0xFFEF5350),
+                                ),
+                            ) { Text("Сдаться") }
+                        },
+                        dismissButton = {
+                            TextButton(onClick = viewModel::onSurrenderDismiss) { Text("Отмена") }
+                        },
+                    )
                 }
             }
         }

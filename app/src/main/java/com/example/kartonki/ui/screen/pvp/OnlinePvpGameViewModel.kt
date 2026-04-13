@@ -59,6 +59,7 @@ data class OnlinePvpGameUiState(
     val timeRemaining: Int = TIMER_DURATION,
     val phase: OnlinePvpPhase = OnlinePvpPhase.WaitingForOpponent,
     val connectionError: String? = null,
+    val showSurrenderDialog: Boolean = false,
 ) {
     companion object { const val TIMER_DURATION = 30 }
 }
@@ -80,6 +81,8 @@ class OnlinePvpGameViewModel @Inject constructor(
 
     private var allWords: List<Word> = emptyList()
     private var myCardIds: List<Long> = emptyList()
+    private var opponentCardIds: List<Long> = emptyList()
+    private var opponentStreak: Int = 0
     private var timerJob: Job? = null
     private var lastPhase: String? = null
 
@@ -114,8 +117,10 @@ class OnlinePvpGameViewModel @Inject constructor(
         val opponentScore = if (opponentIndex == 0) match.player1Score else match.player2Score
         val myStreak = if (myIndex == 0) match.player1Streak else match.player2Streak
 
-        // Store my card IDs
+        // Store card IDs for both players
         myCardIds = if (myIndex == 0) match.player1RemainingIds else match.player2RemainingIds
+        opponentCardIds = if (myIndex == 0) match.player2RemainingIds else match.player1RemainingIds
+        opponentStreak = if (myIndex == 0) match.player2Streak else match.player1Streak
 
         when (match.phase) {
             OnlineMatchData.PHASE_GAME_OVER, OnlineMatchData.STATUS_FINISHED -> {
@@ -248,53 +253,39 @@ class OnlinePvpGameViewModel @Inject constructor(
         val selected = phase.selectedAnswer ?: return
 
         viewModelScope.launch {
-            val match = onlineGameRepository.listenToMatch(matchId).let {
-                // We need current match state — use last known from processMatchState
-                null // handled via listenToMatch — we just update Firebase
-            }
-
             val isCorrect = selected.equals(phase.correctAnswer, ignoreCase = true)
-            val defenderIndex = myIndex  // I am the defender in MyQuiz phase
-            val attackerIndex = 1 - myIndex
 
-            val myStreak = if (isCorrect) state.myStreak + 1 else 0
-            val multiplier = streakToMultiplier(myStreak)
+            // I am the defender. Turns ALTERNATE: defender becomes next attacker.
+            val newMyStreak = if (isCorrect) state.myStreak + 1 else 0
+            val multiplier = streakToMultiplier(newMyStreak)
 
-            // Get card rarity points (default 1 if not found)
-            val card = allWords.find { word ->
-                (state.phase as? OnlinePvpPhase.MyQuiz)?.let { q ->
-                    word.original == q.playedCardWord
-                } ?: false
-            }
+            val card = allWords.find { it.original == phase.playedCardWord }
             val points = if (isCorrect) (card?.rarity?.points ?: 1) * multiplier else 0
 
-            // Determine scores based on who is who
-            val currentMyScore = state.myScore + points
-            val currentOpponentScore = state.opponentScore
+            val newMyScore = state.myScore + points
 
+            // Map my/opponent scores to player1/player2 slots
             val p1Score: Int
             val p2Score: Int
             val p1Streak: Int
             val p2Streak: Int
-
             if (myIndex == 0) {
-                p1Score = currentMyScore
-                p2Score = currentOpponentScore
-                p1Streak = myStreak
-                p2Streak = state.myStreak // opponent's streak unchanged
+                // I am Player 1 (defender), opponent is Player 2 (attacker)
+                p1Score = newMyScore
+                p2Score = state.opponentScore
+                p1Streak = newMyStreak
+                p2Streak = opponentStreak  // attacker's streak unchanged
             } else {
-                p1Score = currentOpponentScore
-                p2Score = currentMyScore
-                p1Streak = state.myStreak // opponent's streak unchanged
-                p2Streak = myStreak
+                // I am Player 2 (defender), opponent is Player 1 (attacker)
+                p1Score = state.opponentScore
+                p2Score = newMyScore
+                p1Streak = opponentStreak  // attacker's streak unchanged
+                p2Streak = newMyStreak
             }
 
-            // Check game over: look at remaining cards
-            val myRemaining = myCardIds
-            val opponentRemainingKey = if (myIndex == 0) "player2RemainingIds" else "player1RemainingIds"
-            // We use current myCardIds (already updated when card was played by attacker)
-            val nextAttacker = attackerIndex
-            val nextPhase = if (myRemaining.isNotEmpty()) {
+            // Defender becomes next attacker — check if they have cards left
+            val nextAttacker = myIndex
+            val nextPhase = if (myCardIds.isNotEmpty()) {
                 OnlineMatchData.PHASE_HAND_SELECTION
             } else {
                 OnlineMatchData.PHASE_GAME_OVER
@@ -305,7 +296,7 @@ class OnlinePvpGameViewModel @Inject constructor(
                 !isGameOver -> -1
                 p1Score > p2Score -> 0
                 p2Score > p1Score -> 1
-                else -> -1 // draw
+                else -> -1
             }
 
             onlineGameRepository.confirmAnswer(
@@ -320,7 +311,6 @@ class OnlinePvpGameViewModel @Inject constructor(
                 winnerIndex = winnerIndex,
             )
 
-            // Update Firestore stats on game over
             if (isGameOver) {
                 val uid = authManager.currentUser.value?.uid ?: return@launch
                 when {
@@ -329,6 +319,31 @@ class OnlinePvpGameViewModel @Inject constructor(
                     else -> firestoreUserRepository.incrementLoss(uid)
                 }
             }
+        }
+    }
+
+    fun onSurrenderClick() = _uiState.update { it.copy(showSurrenderDialog = true) }
+    fun onSurrenderDismiss() = _uiState.update { it.copy(showSurrenderDialog = false) }
+
+    fun surrender() {
+        val state = _uiState.value
+        val opponentIndex = 1 - myIndex
+        val p1Score = if (myIndex == 0) state.myScore else state.opponentScore
+        val p2Score = if (myIndex == 0) state.opponentScore else state.myScore
+        viewModelScope.launch {
+            onlineGameRepository.confirmAnswer(
+                matchId = matchId,
+                p1Score = p1Score,
+                p2Score = p2Score,
+                p1Streak = 0,
+                p2Streak = 0,
+                nextTurn = 0,
+                nextPhase = OnlineMatchData.PHASE_GAME_OVER,
+                isGameOver = true,
+                winnerIndex = opponentIndex,
+            )
+            val uid = authManager.currentUser.value?.uid ?: return@launch
+            firestoreUserRepository.incrementLoss(uid)
         }
     }
 

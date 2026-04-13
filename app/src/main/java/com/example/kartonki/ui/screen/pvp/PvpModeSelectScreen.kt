@@ -50,7 +50,7 @@ fun PvpModeSelectScreen(
     onNavigateToOnlineMatchmaking: () -> Unit,
     onNavigateToLocalPvp: () -> Unit,
 ) {
-    val isSignedIn = !authManager.currentUser.value?.isAnonymous!! && authManager.isSignedIn
+    val isSignedIn = authManager.currentUser.value?.isAnonymous == false
 
     Box(
         modifier = Modifier
