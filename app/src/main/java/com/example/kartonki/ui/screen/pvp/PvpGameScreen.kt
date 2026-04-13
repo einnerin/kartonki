@@ -600,7 +600,7 @@ internal fun MultiplierRow(
 // MultiplierBadge is in PvpSharedComponents.kt
 
 @Composable
-private fun DeckRarityIndicator(
+internal fun DeckRarityIndicator(
     deckCards: List<Word>,
     modifier: Modifier = Modifier,
 ) {

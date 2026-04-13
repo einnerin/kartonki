@@ -23,7 +23,7 @@ import javax.inject.Inject
 
 sealed class OnlinePvpPhase {
     /** It's my turn to pick a card */
-    data class MyHandSelection(val hand: List<Word>) : OnlinePvpPhase()
+    data class MyHandSelection(val hand: List<Word>, val remainingDeck: List<Word>) : OnlinePvpPhase()
     /** Opponent is picking a card — I wait */
     object WaitingForOpponent : OnlinePvpPhase()
     /** Opponent picked, I need to answer */
@@ -149,7 +149,10 @@ class OnlinePvpGameViewModel @Inject constructor(
                 val newPhase = if (isMyTurn) {
                     val myWords = allWords.filter { it.id in myCardIds }
                     val hand = buildHand(myWords)
-                    OnlinePvpPhase.MyHandSelection(hand)
+                    val handIds = hand.map { it.id }.toSet()
+                    val remainingDeck = myWords.filter { it.id !in handIds }
+                        .sortedByDescending { it.rarity.points }
+                    OnlinePvpPhase.MyHandSelection(hand, remainingDeck)
                 } else {
                     OnlinePvpPhase.WaitingForOpponent
                 }

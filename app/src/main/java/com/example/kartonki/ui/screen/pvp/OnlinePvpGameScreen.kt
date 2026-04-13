@@ -103,6 +103,7 @@ fun OnlinePvpGameScreen(
                 highlightIndex = highlightIndex,
                 timeRemaining = uiState.timeRemaining,
                 hand = phase.hand,
+                remainingDeck = phase.remainingDeck,
                 onCardSelected = viewModel::onCardSelected,
                 onSurrender = viewModel::onSurrenderClick,
             )
@@ -179,6 +180,7 @@ private fun OnlineHandSelectionScreen(
     highlightIndex: Int,
     timeRemaining: Int,
     hand: List<Word>,
+    remainingDeck: List<Word>,
     onCardSelected: (Word) -> Unit,
     onSurrender: () -> Unit,
 ) {
@@ -216,12 +218,27 @@ private fun OnlineHandSelectionScreen(
         Column(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
             MultiplierRow(players = players, highlightIndex = highlightIndex)
             HorizontalDivider(color = BgCard)
-            Text(
-                text = s.pvpSelectCard,
-                style = MaterialTheme.typography.titleSmall,
-                color = TextSecondary,
+            Column(
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-            )
+                verticalArrangement = Arrangement.spacedBy(4.dp),
+            ) {
+                Text(
+                    text = s.pvpSelectCard,
+                    style = MaterialTheme.typography.titleSmall,
+                    color = TextSecondary,
+                )
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    Text(
+                        text = s.pvpInDeck(remainingDeck.size),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = TextSecondary.copy(alpha = 0.7f),
+                    )
+                    DeckRarityIndicator(remainingDeck)
+                }
+            }
             LazyVerticalGrid(
                 columns = GridCells.Fixed(2),
                 modifier = Modifier.weight(1f),
