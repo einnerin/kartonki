@@ -2,6 +2,7 @@ package com.example.kartonki.data.remote
 
 import com.example.kartonki.data.remote.model.MatchmakingEntry
 import com.example.kartonki.data.remote.model.OnlineMatchData
+import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -14,11 +15,8 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 sealed class MatchmakingResult {
-    /** Joined queue, searching */
     object Searching : MatchmakingResult()
-    /** Match found — matchId is the key in /matches */
     data class Found(val matchId: String, val myIndex: Int) : MatchmakingResult()
-    /** Error */
     data class Error(val message: String) : MatchmakingResult()
 }
 
@@ -29,11 +27,6 @@ class MatchmakingRepository @Inject constructor(
     private val queueRef get() = database.getReference("matchmaking")
     private val matchesRef get() = database.getReference("matches")
 
-    /**
-     * Registers the player in the matchmaking queue and listens for a match.
-     * Emits [MatchmakingResult.Searching] immediately, then [MatchmakingResult.Found]
-     * when paired, or [MatchmakingResult.Error] on failure.
-     */
     fun findMatch(entry: MatchmakingEntry): Flow<MatchmakingResult> = callbackFlow {
         val myRef = queueRef.child(entry.uid)
 
@@ -51,8 +44,8 @@ class MatchmakingRepository @Inject constructor(
         myRef.setValue(entryMap).await()
         trySend(MatchmakingResult.Searching)
 
-        // Listen for a "matchId" field appearing on my queue entry (set by the other client)
-        val listener = object : ValueEventListener {
+        // Listen for matchId appearing on my queue entry (set by whichever client creates the match)
+        val myMatchListener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val matchId = snapshot.child("matchId").getValue(String::class.java)
                 val myIndex = snapshot.child("myIndex").getValue(Long::class.java)?.toInt()
@@ -64,65 +57,76 @@ class MatchmakingRepository @Inject constructor(
                 trySend(MatchmakingResult.Error(error.message))
             }
         }
-        myRef.addValueEventListener(listener)
+        myRef.addValueEventListener(myMatchListener)
 
-        // Also try to find an existing opponent in queue with same level AND language
-        // Firebase RTDB supports single-field ordering only, so language is filtered client-side
-        queueRef.orderByChild("deckLevel").equalTo(entry.deckLevel.toDouble())
-            .addListenerForSingleValueEvent(object : ValueEventListener {
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    val others = snapshot.children.filter {
-                        val uid = it.child("uid").getValue(String::class.java)
-                        val matchId = it.child("matchId").getValue(String::class.java)
-                        val lang = it.child("languagePair").getValue(String::class.java)
-                        uid != null && uid != entry.uid && matchId == null &&
-                            (lang == null || lang == entry.languagePair)
-                    }
-                    if (others.isNotEmpty()) {
-                        val opponent = others.first()
-                        val opponentUid = opponent.child("uid").getValue(String::class.java) ?: return
-                        val opponentName = opponent.child("playerName").getValue(String::class.java) ?: "Игрок"
-                        val opponentDeckId = opponent.child("deckId").getValue(Long::class.java) ?: 0L
-                        @Suppress("UNCHECKED_CAST")
-                        val opponentCardIds = (opponent.child("cardIds").value as? List<Long>) ?: emptyList()
+        // Try to pair with an opponent. Called both on initial scan and when new entries appear.
+        fun tryPairWith(snapshot: DataSnapshot) {
+            val uid = snapshot.child("uid").getValue(String::class.java) ?: return
+            if (uid == entry.uid) return                                         // skip self
+            if (snapshot.child("matchId").getValue(String::class.java) != null) return // already paired
+            val lang = snapshot.child("languagePair").getValue(String::class.java)
+            if (lang != null && lang != entry.languagePair) return               // different language
+            val level = snapshot.child("deckLevel").getValue(Long::class.java)?.toInt()
+            if (level != null && level != entry.deckLevel) return                // different level
 
-                        val matchId = matchesRef.push().key ?: return
-                        val player1Cards = entry.cardIds
-                        val player2Cards = opponentCardIds
+            val opponentUid = uid
+            val opponentName = snapshot.child("playerName").getValue(String::class.java) ?: "Игрок"
+            val opponentDeckId = snapshot.child("deckId").getValue(Long::class.java) ?: 0L
+            @Suppress("UNCHECKED_CAST")
+            val opponentCardIds = (snapshot.child("cardIds").value as? List<Long>) ?: emptyList()
 
-                        val matchData = mapOf(
-                            "matchId" to matchId,
-                            "player1Uid" to entry.uid,
-                            "player2Uid" to opponentUid,
-                            "player1Name" to entry.playerName,
-                            "player2Name" to opponentName,
-                            "player1CardIds" to player1Cards,
-                            "player2CardIds" to player2Cards,
-                            "player1RemainingIds" to player1Cards,
-                            "player2RemainingIds" to player2Cards,
-                            "status" to OnlineMatchData.STATUS_ACTIVE,
-                            "currentTurn" to 0,
-                            "phase" to OnlineMatchData.PHASE_HAND_SELECTION,
-                            "player1Score" to 0,
-                            "player2Score" to 0,
-                            "player1Streak" to 0,
-                            "player2Streak" to 0,
-                            "roundStartTime" to System.currentTimeMillis(),
-                            "currentRound" to null,
-                            "winnerIndex" to -1,
-                        )
-                        matchesRef.child(matchId).setValue(matchData)
+            val matchId = matchesRef.push().key ?: return
 
-                        // Notify both queue entries
-                        queueRef.child(entry.uid).updateChildren(mapOf("matchId" to matchId, "myIndex" to 0))
-                        queueRef.child(opponentUid).updateChildren(mapOf("matchId" to matchId, "myIndex" to 1))
-                    }
-                }
-                override fun onCancelled(error: DatabaseError) {}
-            })
+            val matchData = mapOf(
+                "matchId" to matchId,
+                "player1Uid" to entry.uid,
+                "player2Uid" to opponentUid,
+                "player1Name" to entry.playerName,
+                "player2Name" to opponentName,
+                "player1CardIds" to entry.cardIds,
+                "player2CardIds" to opponentCardIds,
+                "player1RemainingIds" to entry.cardIds,
+                "player2RemainingIds" to opponentCardIds,
+                "status" to OnlineMatchData.STATUS_ACTIVE,
+                "currentTurn" to 0,
+                "phase" to OnlineMatchData.PHASE_HAND_SELECTION,
+                "player1Score" to 0,
+                "player2Score" to 0,
+                "player1Streak" to 0,
+                "player2Streak" to 0,
+                "roundStartTime" to System.currentTimeMillis(),
+                "currentRound" to null,
+                "winnerIndex" to -1,
+            )
+            matchesRef.child(matchId).setValue(matchData)
+            // I am player1 (index 0), opponent is player2 (index 1)
+            myRef.updateChildren(mapOf("matchId" to matchId, "myIndex" to 0))
+            queueRef.child(opponentUid).updateChildren(mapOf("matchId" to matchId, "myIndex" to 1))
+        }
+
+        // Initial scan: find anyone already in the queue
+        queueRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                snapshot.children.forEach { tryPairWith(it) }
+            }
+            override fun onCancelled(error: DatabaseError) {}
+        })
+
+        // Reactive: pair with any new player who joins after us
+        val childListener = object : ChildEventListener {
+            override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
+                tryPairWith(snapshot)
+            }
+            override fun onChildChanged(snapshot: DataSnapshot, previousChildName: String?) {}
+            override fun onChildRemoved(snapshot: DataSnapshot) {}
+            override fun onChildMoved(snapshot: DataSnapshot, previousChildName: String?) {}
+            override fun onCancelled(error: DatabaseError) {}
+        }
+        queueRef.addChildEventListener(childListener)
 
         awaitClose {
-            myRef.removeEventListener(listener)
+            myRef.removeEventListener(myMatchListener)
+            queueRef.removeEventListener(childListener)
         }
     }
 
