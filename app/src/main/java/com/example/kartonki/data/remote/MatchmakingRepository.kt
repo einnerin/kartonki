@@ -44,6 +44,7 @@ class MatchmakingRepository @Inject constructor(
             "deckId" to entry.deckId,
             "deckName" to entry.deckName,
             "deckLevel" to entry.deckLevel,
+            "languagePair" to entry.languagePair,
             "cardIds" to entry.cardIds,
             "timestamp" to entry.timestamp,
         )
@@ -65,14 +66,17 @@ class MatchmakingRepository @Inject constructor(
         }
         myRef.addValueEventListener(listener)
 
-        // Also try to find an existing opponent in queue with same level
+        // Also try to find an existing opponent in queue with same level AND language
+        // Firebase RTDB supports single-field ordering only, so language is filtered client-side
         queueRef.orderByChild("deckLevel").equalTo(entry.deckLevel.toDouble())
             .addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val others = snapshot.children.filter {
                         val uid = it.child("uid").getValue(String::class.java)
                         val matchId = it.child("matchId").getValue(String::class.java)
-                        uid != null && uid != entry.uid && matchId == null
+                        val lang = it.child("languagePair").getValue(String::class.java)
+                        uid != null && uid != entry.uid && matchId == null &&
+                            (lang == null || lang == entry.languagePair)
                     }
                     if (others.isNotEmpty()) {
                         val opponent = others.first()

@@ -3,6 +3,7 @@ package com.example.kartonki.ui.screen.pvp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.db.dao.DeckDao
+import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.remote.FirebaseAuthManager
 import com.example.kartonki.data.remote.MatchmakingRepository
 import com.example.kartonki.data.remote.MatchmakingResult
@@ -13,6 +14,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -37,6 +39,7 @@ class OnlineMatchmakingViewModel @Inject constructor(
     private val collectionRepository: CollectionRepository,
     private val matchmakingRepository: MatchmakingRepository,
     private val authManager: FirebaseAuthManager,
+    private val prefs: UserPreferencesRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(OnlineMatchmakingUiState())
@@ -75,12 +78,15 @@ class OnlineMatchmakingViewModel @Inject constructor(
             // Load card IDs from deck
             val cardIds = deckDao.getWordIdsForDeck(deck.id)
 
+            val languagePair = prefs.languagePair.first()
+
             val entry = MatchmakingEntry(
                 uid = user.uid,
                 playerName = user.displayName,
                 deckId = deck.id,
                 deckName = deck.name,
                 deckLevel = deck.level,
+                languagePair = languagePair,
                 cardIds = cardIds,
                 timestamp = System.currentTimeMillis(),
             )
