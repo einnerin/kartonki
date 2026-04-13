@@ -525,7 +525,7 @@ private fun GameOverScreen(
 // ─── Shared components ────────────────────────────────────────────────────────
 
 @Composable
-private fun SurrenderDialog(
+internal fun SurrenderDialog(
     playerName: String,
     onConfirm: () -> Unit,
     onDismiss: () -> Unit,
@@ -554,7 +554,7 @@ private fun SurrenderDialog(
 }
 
 @Composable
-private fun MultiplierRow(
+internal fun MultiplierRow(
     players: List<PvpPlayerState>,
     highlightIndex: Int,
     modifier: Modifier = Modifier,
@@ -622,7 +622,7 @@ private fun DeckRarityIndicator(
 // PvpResultPanel is in PvpSharedComponents.kt
 
 @Composable
-private fun TimerWidget(timeRemaining: Int) {
+internal fun TimerWidget(timeRemaining: Int) {
     val danger   = timeRemaining <= 5
     val color    = if (danger) Color(0xFFEF5350) else Color(0xFFF5A623)
     val progress = timeRemaining / 15f

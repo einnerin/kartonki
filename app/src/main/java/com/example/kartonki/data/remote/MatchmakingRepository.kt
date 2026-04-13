@@ -66,8 +66,6 @@ class MatchmakingRepository @Inject constructor(
             if (snapshot.child("matchId").getValue(String::class.java) != null) return // already paired
             val lang = snapshot.child("languagePair").getValue(String::class.java)
             if (lang != null && lang != entry.languagePair) return               // different language
-            val level = snapshot.child("deckLevel").getValue(Long::class.java)?.toInt()
-            if (level != null && level != entry.deckLevel) return                // different level
 
             val opponentUid = uid
             val opponentName = snapshot.child("playerName").getValue(String::class.java) ?: "Игрок"
