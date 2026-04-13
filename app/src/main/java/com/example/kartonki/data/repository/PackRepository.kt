@@ -1,5 +1,6 @@
 package com.example.kartonki.data.repository
 
+import com.example.kartonki.data.AchievementCards
 import com.example.kartonki.data.db.dao.CollectionDao
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.entity.CollectionEntity
@@ -55,6 +56,7 @@ class PackRepository @Inject constructor(
     private suspend fun generatePackCards(): List<Word> {
         val langPair = userPrefs.getLanguagePair()
         val allWords = wordDao.getAllWordsByLanguage(langPair)
+            .filter { it.id !in AchievementCards.ALL_EXCLUSIVE_IDS }
         val byRarity = allWords.groupBy { it.rarity }
 
         val result = mutableListOf<WordEntity>()

@@ -1,5 +1,6 @@
 package com.example.kartonki.data.repository
 
+import com.example.kartonki.data.AchievementCards
 import com.example.kartonki.data.SeedData
 import com.example.kartonki.data.db.dao.CollectionDao
 import com.example.kartonki.data.db.dao.DeckDao
@@ -68,7 +69,9 @@ class CollectionRepository @Inject constructor(
      * desirable from packs.
      */
     private fun selectStarterCards(allWords: List<WordEntity>): List<WordEntity> {
-        val byRarity = allWords.groupBy { it.rarity }
+        val byRarity = allWords
+            .filter { it.id !in AchievementCards.ALL_EXCLUSIVE_IDS }
+            .groupBy { it.rarity }
         val result = mutableListOf<WordEntity>()
         listOf(
             "COMMON"    to 300,
