@@ -37,6 +37,7 @@ class UserPreferencesRepository @Inject constructor(
         const val PROBLEM_SESSION_COUNTS        = "problem_session_counts" // "id:count,id:count,..."
         const val SESSION_EXCLUDED_WORD_IDS     = "session_excluded_ids"  // "id,id,..." temp
         const val PROBLEM_CHIP_HINT_SHOWN       = "problem_chip_hint"     // Boolean
+        const val WORD_DATA_VERSION             = "word_data_version"    // Int
     }
 
     companion object {
@@ -128,6 +129,9 @@ class UserPreferencesRepository @Inject constructor(
 
     fun isProblemChipHintShown(): Boolean = prefs.getBoolean(Keys.PROBLEM_CHIP_HINT_SHOWN, false)
     fun setProblemChipHintShown() = prefs.edit().putBoolean(Keys.PROBLEM_CHIP_HINT_SHOWN, true).apply()
+
+    fun getWordDataVersion(): Int = prefs.getInt(Keys.WORD_DATA_VERSION, 0)
+    fun setWordDataVersion(version: Int) = prefs.edit().putInt(Keys.WORD_DATA_VERSION, version).apply()
 
     val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
         val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)

@@ -2,6 +2,7 @@ package com.example.kartonki.ui.screen.study
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.kartonki.data.WordLoader
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.ProgressRepository
 import com.example.kartonki.data.repository.StatsRepository
@@ -54,6 +55,7 @@ class StudyViewModel @Inject constructor(
     private val progressRepository: ProgressRepository,
     private val statsRepository: StatsRepository,
     private val prefs: UserPreferencesRepository,
+    private val wordLoader: WordLoader,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(StudyListUiState())
@@ -121,7 +123,7 @@ class StudyViewModel @Inject constructor(
 
     private suspend fun loadSets(languagePair: String, showLoading: Boolean) {
         if (showLoading) _uiState.update { it.copy(isLoading = true) }
-        wordSetRepository.ensureSeeded()
+        wordLoader.ensureFresh()
         val sets = wordSetRepository.getSetsByLanguage(languagePair)
         val setIds = sets.map { it.id }
 

@@ -2,6 +2,7 @@ package com.example.kartonki.data.repository
 
 import com.example.kartonki.data.AchievementCards
 import com.example.kartonki.data.SeedData
+import com.example.kartonki.data.WordLoader
 import com.example.kartonki.data.db.dao.CollectionDao
 import com.example.kartonki.data.db.dao.DeckDao
 import com.example.kartonki.data.db.dao.WordDao
@@ -20,6 +21,7 @@ class CollectionRepository @Inject constructor(
     private val wordDao: WordDao,
     private val deckDao: DeckDao,
     private val wordSetRepository: WordSetRepository,
+    private val wordLoader: WordLoader,
 ) {
     /**
      * On first run: seeds words, gives a starter collection of ~500 cards
@@ -27,7 +29,7 @@ class CollectionRepository @Inject constructor(
      * PvE uses wordDao directly and does not require collection ownership.
      */
     suspend fun ensureStarterPack() {
-        wordSetRepository.ensureSeeded()
+        wordLoader.ensureFresh()
         if (collectionDao.count() > 0) return
         val allWords = wordDao.getAllWordsOnce()
         val starterWords = selectStarterCards(allWords)
