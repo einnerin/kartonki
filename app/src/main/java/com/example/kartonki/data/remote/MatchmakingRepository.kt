@@ -213,8 +213,12 @@ class MatchmakingRepository @Inject constructor(
     suspend fun leaveQueue(uid: String) { /* cleanup is handled by awaitClose */ }
 }
 
-// Firebase can return integer lists as List<Long>, List<Int>, or ArrayList<Any>
+// Firebase can return arrays as List<Long>, List<Int>, ArrayList<Any>, or HashMap<String, Any>.
+// The Map case happens when Firebase stores a list as {"0": v0, "1": v1, ...} and returns it
+// via .value as a HashMap — this is the root cause of Player 2's card IDs being read as empty.
 private fun Any?.toCardIdList(): List<Long> =
-    (this as? List<*>)?.mapNotNull {
-        (it as? Long) ?: (it as? Int)?.toLong()
-    } ?: emptyList()
+    when (this) {
+        is List<*> -> mapNotNull { (it as? Long) ?: (it as? Int)?.toLong() }
+        is Map<*, *> -> values.mapNotNull { (it as? Long) ?: (it as? Int)?.toLong() }
+        else -> emptyList()
+    }
