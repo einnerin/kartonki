@@ -31,14 +31,18 @@ sealed class MatchmakingResult {
  * Protocol:
  *   1. Each player writes their card data to their personal data node.
  *   2. Each player runs a Firebase Transaction on the slot:
- *        - Slot empty  → claim it (write own uid). Become the Waiter.
- *        - Slot taken  → leave it unchanged.          Become the Creator.
- *   3. Waiter  — listens on the slot for matchId to appear.
+ *        - Slot empty  → claim it (write own uid, clear matchId). Become the Waiter.
+ *        - Slot taken  → leave it unchanged.                      Become the Creator.
+ *   3. Waiter  — adds a slot listener ONLY AFTER the transaction confirms the claim,
+ *                so the listener never sees a stale matchId from a previous session.
+ *                After reading the matchId, removes the slot so the next search is clean.
  *   4. Creator — reads opponent's card data, creates the match document,
  *                writes matchId back to the slot so the Waiter can navigate.
  *
  * The Transaction ensures exactly one player claims the slot even when both
- * arrive simultaneously (Firebase retries on conflict with fresh server data).
+ * arrive simultaneously. Adding the slot listener post-transaction eliminates
+ * the "stale slot" bug where the listener fired on a cached matchId from the
+ * previous game, causing an immediate false "match found" result.
  */
 @Singleton
 class MatchmakingRepository @Inject constructor(
@@ -55,31 +59,14 @@ class MatchmakingRepository @Inject constructor(
         // Shared cleanup: remove my personal data node when done or cancelled.
         val cleanup: () -> Unit = { myDataRef.removeValue() }
 
+        // Slot listener is only registered if we become the Waiter (after the transaction
+        // confirms the slot is ours with matchId cleared). Keeping a reference so
+        // awaitClose can deregister it in all exit paths.
+        var slotListener: ValueEventListener? = null
+
         trySend(MatchmakingResult.Searching)
 
-        // ── Listener: waiter path — fires when creator writes matchId ─────────
-        val slotListener = object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if (done) return
-                val slotUid = snapshot.child("uid").getValue(String::class.java)
-                val matchId = snapshot.child("matchId").getValue(String::class.java)
-                if (slotUid == entry.uid && matchId != null) {
-                    done = true
-                    val myIdx = snapshot.child("myIndex").getValue(Long::class.java)?.toInt() ?: 1
-                    trySend(MatchmakingResult.Found(matchId, myIdx))
-                    cleanup()
-                }
-            }
-            override fun onCancelled(error: DatabaseError) {
-                trySend(MatchmakingResult.Error(error.message))
-            }
-        }
-        slotRef.addValueEventListener(slotListener)
-
         // ── Step 1: Write card data BEFORE touching the slot ──────────────────
-        // The creator reads this when building the match document.
-        // applyLocally is irrelevant here; we chain on addOnSuccessListener to
-        // guarantee the data exists on the server before the transaction runs.
         myDataRef.setValue(mapOf(
             "playerName" to entry.playerName,
             "cardIds"    to entry.cardIds,
@@ -89,8 +76,6 @@ class MatchmakingRepository @Inject constructor(
             // ── Step 2: Transaction — atomically claim the slot ───────────────
             slotRef.runTransaction(object : Transaction.Handler {
 
-                // doTransaction may be called multiple times (Firebase retries on
-                // conflict). Must handle null currentData (local cache miss).
                 override fun doTransaction(currentData: MutableData): Transaction.Result {
                     val slotUid = currentData.child("uid").getValue(String::class.java)
                     val matchId = currentData.child("matchId").getValue(String::class.java)
@@ -123,12 +108,37 @@ class MatchmakingRepository @Inject constructor(
 
                     if (slotUid == entry.uid || slotUid == null) {
                         // I claimed the slot — become the Waiter.
-                        // slotListener above fires when the Creator writes matchId.
+                        //
+                        // IMPORTANT: The listener is registered HERE, after the transaction,
+                        // not at the top of findMatch. The transaction already wrote
+                        // matchId=null into the slot, so the first Firebase event will
+                        // reflect that clean state — no stale matchId from a previous
+                        // session can trigger a false "match found".
+                        val listener = object : ValueEventListener {
+                            override fun onDataChange(snapshot: DataSnapshot) {
+                                if (done) return
+                                val uid     = snapshot.child("uid").getValue(String::class.java)
+                                val matchId = snapshot.child("matchId").getValue(String::class.java)
+                                if (uid == entry.uid && matchId != null) {
+                                    done = true
+                                    val myIdx = snapshot.child("myIndex")
+                                        .getValue(Long::class.java)?.toInt() ?: 1
+                                    // Remove slot immediately so the next search starts clean.
+                                    slotRef.removeValue()
+                                    trySend(MatchmakingResult.Found(matchId, myIdx))
+                                    cleanup()
+                                }
+                            }
+                            override fun onCancelled(error: DatabaseError) {
+                                trySend(MatchmakingResult.Error(error.message))
+                            }
+                        }
+                        slotListener = listener
+                        slotRef.addValueEventListener(listener)
                         return
                     }
 
                     // ── Creator path ─────────────────────────────────────────
-                    // Someone else is in the slot; I create the match.
                     done = true
                     val opponentUid = slotUid
 
@@ -161,14 +171,13 @@ class MatchmakingRepository @Inject constructor(
                                     "winnerIndex"         to -1,
                                 )
 
-                                // Commit the match document first; only then signal the Waiter.
                                 matchesRef.child(newMatchId).setValue(matchData)
                                     .addOnSuccessListener {
-                                        // Write matchId into the slot → Waiter's slotListener fires.
+                                        // Write matchId into the slot → Waiter's listener fires.
                                         slotRef.setValue(mapOf(
                                             "uid"     to opponentUid,
                                             "matchId" to newMatchId,
-                                            "myIndex" to 1,           // Waiter is player 2
+                                            "myIndex" to 1,
                                         ))
                                         // Creator is player 1 (index 0) — navigate immediately.
                                         trySend(MatchmakingResult.Found(newMatchId, 0))
@@ -187,7 +196,7 @@ class MatchmakingRepository @Inject constructor(
         }
 
         awaitClose {
-            slotRef.removeEventListener(slotListener)
+            slotListener?.let { slotRef.removeEventListener(it) }
             cleanup()
             // Remove from slot only if I'm still the Waiter with no match assigned.
             slotRef.addListenerForSingleValueEvent(object : ValueEventListener {
