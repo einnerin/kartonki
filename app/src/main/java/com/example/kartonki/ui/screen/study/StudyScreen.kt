@@ -127,6 +127,7 @@ fun StudyScreen(
                 "Все наборы",
                 "⭐ Избранное" + if (uiState.favoriteCount > 0) " (${uiState.favoriteCount})" else "",
             )
+            @Suppress("DEPRECATION")
             TabRow(
                 selectedTabIndex = uiState.selectedTab,
                 containerColor = BgMedium,
@@ -367,7 +368,10 @@ private fun WordSetCard(
     onClick: () -> Unit,
     onToggleFavorite: () -> Unit,
 ) {
-    val rarityColor = Color(item.rarity.colorArgb)
+    val rarityColor = remember(item.rarity) { Color(item.rarity.colorArgb) }
+    val cardBrush = remember(rarityColor) {
+        Brush.verticalGradient(colors = listOf(BgCard, rarityColor.copy(alpha = 0.06f)))
+    }
     val progress = if (item.totalWords == 0) 0f
                    else item.introducedWords.toFloat() / item.totalWords
 
@@ -377,11 +381,7 @@ private fun WordSetCard(
             .glowEffect(rarityColor, glowRadius = 12.dp, cornerRadius = 16.dp, alpha = 0.35f)
             .clip(RoundedCornerShape(16.dp))
             .border(1.5.dp, rarityColor.copy(alpha = 0.6f), RoundedCornerShape(16.dp))
-            .background(
-                Brush.verticalGradient(
-                    colors = listOf(BgCard, rarityColor.copy(alpha = 0.06f))
-                )
-            )
+            .background(cardBrush)
             .clickable(onClick = onClick)
             .padding(horizontal = 16.dp, vertical = 14.dp),
     ) {

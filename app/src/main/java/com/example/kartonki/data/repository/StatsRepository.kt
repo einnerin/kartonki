@@ -9,7 +9,6 @@ import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.domain.model.WordStat
 import com.example.kartonki.domain.model.WordStatSort
-import java.util.Calendar
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -166,16 +165,4 @@ class StatsRepository @Inject constructor(
         return longest
     }
 
-    private fun todayMs(): Long {
-        val cal = Calendar.getInstance()
-        cal.set(Calendar.HOUR_OF_DAY, 0)
-        cal.set(Calendar.MINUTE, 0)
-        cal.set(Calendar.SECOND, 0)
-        cal.set(Calendar.MILLISECOND, 0)
-        return cal.timeInMillis
-    }
-
-    companion object {
-        private const val DAY_MS = 86_400_000L
-    }
 }

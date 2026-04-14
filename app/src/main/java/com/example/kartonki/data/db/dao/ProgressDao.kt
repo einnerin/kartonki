@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.example.kartonki.data.db.dao.SetProgressRow
 import com.example.kartonki.data.db.entity.ProgressEntity
 import kotlinx.coroutines.flow.Flow
 
@@ -27,6 +28,21 @@ interface ProgressDao {
 
     @Query("SELECT * FROM progress")
     suspend fun getAll(): List<ProgressEntity>
+
+    @Query("SELECT * FROM progress WHERE wordId IN (:wordIds)")
+    suspend fun getProgressForWords(wordIds: List<Long>): List<ProgressEntity>
+
+    /**
+     * Returns (setId, level) for every word in the given sets that has a progress row.
+     * Used to compute "introducedWords" counts for all sets in one query.
+     */
+    @Query("""
+        SELECT w.setId AS setId, p.level AS level
+        FROM progress p
+        INNER JOIN words w ON p.wordId = w.id
+        WHERE w.setId IN (:setIds)
+    """)
+    suspend fun getProgressLevelsForSets(setIds: List<Long>): List<SetProgressRow>
 
     @Query("SELECT COUNT(*) FROM progress WHERE level >= 3")
     suspend fun getLearnedCount(): Int

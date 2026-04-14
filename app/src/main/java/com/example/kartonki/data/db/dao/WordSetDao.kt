@@ -50,6 +50,14 @@ interface WordSetDao {
     @Query("SELECT rarity, COUNT(*) as count FROM words WHERE setId = :setId GROUP BY rarity")
     suspend fun getRarityCountsForSet(setId: Long): List<RarityCount>
 
+    /** One query to get word counts for many sets at once. */
+    @Query("SELECT setId, COUNT(*) as count FROM words WHERE setId IN (:setIds) GROUP BY setId")
+    suspend fun getWordCountsForSets(setIds: List<Long>): List<SetWordCount>
+
+    /** One query to get rarity composition for many sets at once. */
+    @Query("SELECT setId, rarity, COUNT(*) as count FROM words WHERE setId IN (:setIds) GROUP BY setId, rarity")
+    suspend fun getRarityCountsForSets(setIds: List<Long>): List<SetRarityCount>
+
     @Query("UPDATE word_sets SET isFavorite = :value WHERE id = :id")
     suspend fun setFavorite(id: Long, value: Boolean)
 

@@ -6,6 +6,8 @@ import com.example.kartonki.data.SeedDataEnglishNative
 import com.example.kartonki.data.SeedDataHebrew
 import com.example.kartonki.data.SeedDataHebrewEveryday
 import com.example.kartonki.data.SeedDataHebrewMore
+import com.example.kartonki.data.db.dao.SetRarityCount
+import com.example.kartonki.data.db.dao.SetWordCount
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
 import com.example.kartonki.data.db.entity.WordSetEntity
@@ -113,6 +115,14 @@ class WordSetRepository @Inject constructor(
 
     suspend fun getWordCountInSet(setId: Long): Int = wordSetDao.getWordCountInSet(setId)
 
+    /** Fetches word counts for many sets in one query, keyed by setId. */
+    suspend fun getWordCountsForSets(setIds: List<Long>): Map<Long, Int> =
+        wordSetDao.getWordCountsForSets(setIds).associate { it.setId to it.count }
+
+    /** Fetches rarity composition for many sets in one query, grouped by setId. */
+    suspend fun getRarityCountsForSets(setIds: List<Long>): Map<Long, List<SetRarityCount>> =
+        wordSetDao.getRarityCountsForSets(setIds).groupBy { it.setId }
+
     /**
      * For each semantic group present in [sessionWords], fetches up to [limitPerGroup] additional
      * words from the DB (different words, same language). These extras are passed to QuizBuilder
@@ -153,6 +163,11 @@ class WordSetRepository @Inject constructor(
      */
     suspend fun getRarityForSet(setId: Long): Rarity {
         val counts = wordSetDao.getRarityCountsForSet(setId)
+        return rarityFromCounts(counts.map { SetRarityCount(setId, it.rarity, it.count) })
+    }
+
+    /** Computes a representative [Rarity] from a list of (rarity, count) pairs for one set. */
+    fun rarityFromCounts(counts: List<SetRarityCount>): Rarity {
         if (counts.isEmpty()) return Rarity.COMMON
         val totalWords = counts.sumOf { it.count }
         val weightedSum = counts.sumOf { rc ->

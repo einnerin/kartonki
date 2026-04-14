@@ -138,9 +138,9 @@ class StudySessionViewModel @Inject constructor(
         viewModelScope.launch {
             val existing = progressRepository.getProgress(word.id)
                 ?: ProgressEntity(wordId = word.id)
-            val newLevel = if (isCorrect) minOf(existing.level + 1, MAX_LEVEL)
+            val newLevel = if (isCorrect) minOf(existing.level + 1, StudyConstants.MAX_LEVEL)
                            else maxOf(existing.level - 1, 0)
-            val intervalMs = LEVEL_INTERVALS_DAYS[newLevel] * 24L * 60 * 60 * 1000
+            val intervalMs = StudyConstants.LEVEL_INTERVALS_DAYS[newLevel] * 24L * 60 * 60 * 1000
             progressRepository.upsert(
                 existing.copy(
                     correctCount = if (isCorrect) existing.correctCount + 1 else existing.correctCount,
@@ -150,10 +150,5 @@ class StudySessionViewModel @Inject constructor(
                 )
             )
         }
-    }
-
-    companion object {
-        const val MAX_LEVEL = 5
-        val LEVEL_INTERVALS_DAYS = intArrayOf(0, 1, 3, 7, 14, 30)
     }
 }

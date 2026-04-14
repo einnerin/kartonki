@@ -14,6 +14,9 @@ interface StudyStreakDao {
     @Query("SELECT COUNT(*) FROM study_streaks")
     suspend fun getCount(): Int
 
+    @Query("SELECT COUNT(*) FROM study_streaks WHERE date >= :sinceMs")
+    suspend fun getCountSince(sinceMs: Long): Int
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(streak: StudyStreakEntity)
 }

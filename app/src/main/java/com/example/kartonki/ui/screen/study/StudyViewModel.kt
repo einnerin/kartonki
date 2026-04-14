@@ -123,16 +123,21 @@ class StudyViewModel @Inject constructor(
         if (showLoading) _uiState.update { it.copy(isLoading = true) }
         wordSetRepository.ensureSeeded()
         val sets = wordSetRepository.getSetsByLanguage(languagePair)
+        val setIds = sets.map { it.id }
+
+        // Three batch queries replace N×3 individual queries.
+        val wordCounts      = wordSetRepository.getWordCountsForSets(setIds)
+        val rarityCounts    = wordSetRepository.getRarityCountsForSets(setIds)
+        val introducedCounts = progressRepository.getIntroducedCountsForSets(setIds)
+
         val items = sets.map { set ->
-            val total = wordSetRepository.getWordCountInSet(set.id)
-            val progress = progressRepository.getProgressForSet(set.id)
-            val rarity = wordSetRepository.getRarityForSet(set.id)
+            val rarity = wordSetRepository.rarityFromCounts(rarityCounts[set.id] ?: emptyList())
             WordSetUiItem(
                 id = set.id,
                 name = set.name,
                 description = set.description,
-                totalWords = total,
-                introducedWords = progress.count { it.level > 0 },
+                totalWords = wordCounts[set.id] ?: 0,
+                introducedWords = introducedCounts[set.id] ?: 0,
                 rarity = rarity,
                 isFavorite = set.isFavorite,
             )

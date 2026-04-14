@@ -19,5 +19,22 @@ class ProgressRepository @Inject constructor(private val progressDao: ProgressDa
     suspend fun getProgressForSet(setId: Long): List<ProgressEntity> =
         progressDao.getProgressForSet(setId)
 
+    /** Fetches progress rows for multiple words in a single query, keyed by wordId. */
+    suspend fun getProgressForWords(wordIds: List<Long>): Map<Long, ProgressEntity> =
+        progressDao.getProgressForWords(wordIds).associateBy { it.wordId }
+
+    /**
+     * Fetches progress levels for all words in the given sets in a single query.
+     * Returns a map from setId → count of words with level > 0 (i.e. introduced).
+     */
+    suspend fun getIntroducedCountsForSets(setIds: List<Long>): Map<Long, Int> {
+        val rows = progressDao.getProgressLevelsForSets(setIds)
+        val result = mutableMapOf<Long, Int>()
+        for (row in rows) {
+            if (row.level > 0) result[row.setId] = (result[row.setId] ?: 0) + 1
+        }
+        return result
+    }
+
     suspend fun upsert(progress: ProgressEntity) = progressDao.upsert(progress)
 }

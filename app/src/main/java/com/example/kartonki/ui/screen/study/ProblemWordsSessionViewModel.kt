@@ -208,8 +208,8 @@ class ProblemWordsSessionViewModel @Inject constructor(
         progressRepository.upsert(
             existing.copy(
                 incorrectCount = 0,
-                level          = MAX_LEVEL,
-                nextReviewAt   = System.currentTimeMillis() + LEVEL_INTERVALS_DAYS[MAX_LEVEL] * 24L * 60 * 60 * 1000,
+                level          = StudyConstants.MAX_LEVEL,
+                nextReviewAt   = System.currentTimeMillis() + StudyConstants.LEVEL_INTERVALS_DAYS[StudyConstants.MAX_LEVEL] * 24L * 60 * 60 * 1000,
             )
         )
     }
@@ -218,9 +218,9 @@ class ProblemWordsSessionViewModel @Inject constructor(
         viewModelScope.launch {
             val existing = progressRepository.getProgress(word.id)
                 ?: ProgressEntity(wordId = word.id)
-            val newLevel = if (isCorrect) minOf(existing.level + 1, MAX_LEVEL)
+            val newLevel = if (isCorrect) minOf(existing.level + 1, StudyConstants.MAX_LEVEL)
                            else maxOf(existing.level - 1, 0)
-            val intervalMs = LEVEL_INTERVALS_DAYS[newLevel] * 24L * 60 * 60 * 1000
+            val intervalMs = StudyConstants.LEVEL_INTERVALS_DAYS[newLevel] * 24L * 60 * 60 * 1000
             progressRepository.upsert(
                 existing.copy(
                     correctCount   = if (isCorrect) existing.correctCount + 1 else existing.correctCount,
@@ -233,8 +233,9 @@ class ProblemWordsSessionViewModel @Inject constructor(
     }
 
     private suspend fun buildBeforeSnapshot(words: List<Word>): Map<Long, Float> {
+        val progressMap = progressRepository.getProgressForWords(words.map { it.id })
         return words.associate { word ->
-            val p = progressRepository.getProgress(word.id)
+            val p = progressMap[word.id]
             val total = (p?.correctCount ?: 0) + (p?.incorrectCount ?: 0)
             val rate = if (total > 0) (p?.incorrectCount ?: 0).toFloat() / total else 0f
             word.id to rate
@@ -242,9 +243,10 @@ class ProblemWordsSessionViewModel @Inject constructor(
     }
 
     private suspend fun computeImprovedCount(): Int {
+        val progressMap = progressRepository.getProgressForWords(beforeErrorRates.keys.toList())
         var improved = 0
         for ((wordId, beforeRate) in beforeErrorRates) {
-            val p = progressRepository.getProgress(wordId) ?: continue
+            val p = progressMap[wordId] ?: continue
             val total = p.correctCount + p.incorrectCount
             if (total == 0) continue
             val afterRate = p.incorrectCount.toFloat() / total
@@ -253,8 +255,4 @@ class ProblemWordsSessionViewModel @Inject constructor(
         return improved
     }
 
-    companion object {
-        const val MAX_LEVEL = 5
-        val LEVEL_INTERVALS_DAYS = intArrayOf(0, 1, 3, 7, 14, 30)
-    }
 }

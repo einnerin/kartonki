@@ -230,9 +230,7 @@ class AchievementRepository @Inject constructor(
     private suspend fun checkWeeklyGrind() {
         if (isUnlocked(AchievementId.WEEKLY_GRIND)) return
         val weekAgoMs = todayMs() - 6 * DAY_MS
-        val days = studyStreakDao.getAll().map { it.date }
-        val countInWeek = days.count { it >= weekAgoMs }
-        if (countInWeek >= 5) unlock(AchievementId.WEEKLY_GRIND)
+        if (studyStreakDao.getCountSince(weekAgoMs) >= 5) unlock(AchievementId.WEEKLY_GRIND)
     }
 
     private suspend fun checkWhiteFlag() {
@@ -296,16 +294,4 @@ class AchievementRepository @Inject constructor(
         return streak
     }
 
-    private fun todayMs(): Long {
-        val cal = Calendar.getInstance()
-        cal.set(Calendar.HOUR_OF_DAY, 0)
-        cal.set(Calendar.MINUTE, 0)
-        cal.set(Calendar.SECOND, 0)
-        cal.set(Calendar.MILLISECOND, 0)
-        return cal.timeInMillis
-    }
-
-    companion object {
-        private const val DAY_MS = 86_400_000L
-    }
 }
