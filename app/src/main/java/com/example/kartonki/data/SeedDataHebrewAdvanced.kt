@@ -24,7 +24,7 @@ object SeedDataHebrewAdvanced {
         // ──────────────────────────────────────────────────────
 
         WordEntity(
-            id = 10318, setId = 114, languagePair = "he-ru", rarity = "COMMON",
+            id = 10318, setId = 114, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
             transliteration = "tochna",
             original = "תֹּכְנָה", translation = "программное обеспечение",
@@ -34,7 +34,7 @@ object SeedDataHebrewAdvanced {
             exampleNative = "Обновление תֹּכְנָה улучшило производительность.",
         ),
         WordEntity(
-            id = 10319, setId = 114, languagePair = "he-ru", rarity = "COMMON",
+            id = 10319, setId = 114, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
             transliteration = "chomerah",
             original = "חוֹמְרָה", translation = "аппаратное обеспечение",
@@ -184,7 +184,7 @@ object SeedDataHebrewAdvanced {
             exampleNative = "Kubernetes — инструмент לְנִיּוּר מַעֲרֶכֶת.",
         ),
         WordEntity(
-            id = 10334, setId = 114, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 10334, setId = 114, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
             transliteration = "pitaron recursivi",
             original = "פִּתְרוֹן רֶקוּרְסִיבִי", translation = "рекурсивное решение",
@@ -219,7 +219,7 @@ object SeedDataHebrewAdvanced {
         // ──────────────────────────────────────────────────────
 
         WordEntity(
-            id = 10337, setId = 115, languagePair = "he-ru", rarity = "COMMON",
+            id = 10337, setId = 115, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work",
             transliteration = "avoda",
             original = "עֲבוֹדָה", translation = "работа",
@@ -239,7 +239,7 @@ object SeedDataHebrewAdvanced {
             exampleNative = "Я работаю в מִשְׂרָד с 9 до 18.",
         ),
         WordEntity(
-            id = 10339, setId = 115, languagePair = "he-ru", rarity = "COMMON",
+            id = 10339, setId = 115, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work",
             transliteration = "makolet / mechir",
             original = "מִשְׂכֹּרֶת", translation = "зарплата",
@@ -249,7 +249,7 @@ object SeedDataHebrewAdvanced {
             exampleNative = "В этом году я получил более высокую מִשְׂכֹּרֶת.",
         ),
         WordEntity(
-            id = 10340, setId = 115, languagePair = "he-ru", rarity = "COMMON",
+            id = 10340, setId = 115, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work",
             transliteration = "manahal",
             original = "מַנְהֵל", translation = "менеджер / руководитель",
@@ -319,7 +319,7 @@ object SeedDataHebrewAdvanced {
             exampleNative = "סַבְלָנוּת — важное качество руководителя.",
         ),
         WordEntity(
-            id = 10347, setId = 115, languagePair = "he-ru", rarity = "EPIC",
+            id = 10347, setId = 115, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "work",
             transliteration = "yeozmanut",
             original = "יוֹזְמָנוּת", translation = "предпринимательство",
@@ -329,7 +329,7 @@ object SeedDataHebrewAdvanced {
             exampleNative = "Технологическая יוֹזְמָנוּת процветает в Израиле.",
         ),
         WordEntity(
-            id = 10348, setId = 115, languagePair = "he-ru", rarity = "EPIC",
+            id = 10348, setId = 115, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "work",
             transliteration = "hamtza",
             original = "הַמְצָאָה", translation = "инновация / изобретение",
@@ -539,7 +539,7 @@ object SeedDataHebrewAdvanced {
             exampleNative = "Человеческий мозг имеет יִתְרוֹן תַּפְקוּדִי в распознавании лиц.",
         ),
         WordEntity(
-            id = 10368, setId = 117, languagePair = "he-ru", rarity = "EPIC",
+            id = 10368, setId = 117, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "abstract",
             transliteration = "relativizm",
             original = "רֶלָטִיבִיזְם", translation = "релятивизм",
