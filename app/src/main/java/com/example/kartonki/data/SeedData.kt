@@ -6427,14 +6427,7 @@ object SeedData {
             definition = "to grow or develop strongly; to be successful",
             example = "The business flourished under her leadership."),
 
-        // ── Preset-deck completions (ids 2076–2097) ──────────────────────────
-        // Философия и этика
-        WordEntity(id = 2076, original = "assumption", translation = "допущение/предположение", rarity = "UNCOMMON", setId = 87, languagePair = "en-ru", pos = "noun", semanticGroup = "logic_b2",
-            definition = "Something accepted as true without proof.",
-            example = "The model rests on the assumption that demand remains constant."),
-        WordEntity(id = 2077, original = "doctrine", translation = "доктрина", rarity = "UNCOMMON", setId = 87, languagePair = "en-ru", pos = "noun", semanticGroup = "logic_b2",
-            definition = "A set of beliefs taught and accepted by a group.",
-            example = "The party's economic doctrine resisted any form of state intervention."),
+        // ── Preset-deck completions (ids 2078–2097) ──────────────────────────
         // Право и политика
         WordEntity(id = 2078, original = "trial", translation = "судебный процесс", rarity = "UNCOMMON", setId = 84, languagePair = "en-ru", pos = "noun", semanticGroup = "law_politics",
             definition = "A formal examination of evidence before a judge to decide a case.",
@@ -6498,9 +6491,9 @@ object SeedData {
         WordEntity(id = 2097, original = "kakistocracy", translation = "какистократия", rarity = "LEGENDARY", setId = 86, languagePair = "en-ru", pos = "noun", semanticGroup = "geopolitics",
             definition = "Government by the least qualified or most unscrupulous citizens.",
             example = "The satirist argued that the nation had descended into kakistocracy."),
-        WordEntity(id = 2098, original = "premise", translation = "предпосылка/тезис", rarity = "UNCOMMON", setId = 87, languagePair = "en-ru", pos = "noun", semanticGroup = "logic_b2",
-            definition = "A statement taken to be true as the basis for an argument or reasoning.",
-            example = "The premise of his argument was that all people deserve equal rights."),
+        WordEntity(id = 2098, original = "fallacy", translation = "логическая ошибка/заблуждение", rarity = "UNCOMMON", setId = 87, languagePair = "en-ru", pos = "noun", semanticGroup = "logic_b2",
+            definition = "A mistaken belief or a flaw in reasoning that makes an argument invalid.",
+            example = "His conclusion was based on the fallacy that popularity equals truth."),
         WordEntity(id = 2099, original = "analogy", translation = "аналогия", rarity = "UNCOMMON", setId = 87, languagePair = "en-ru", pos = "noun", semanticGroup = "logic_b2",
             definition = "A comparison between two things to explain or clarify an idea.",
             example = "She used the analogy of a river to explain how information flows through a network.")

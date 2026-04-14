@@ -46,9 +46,10 @@ class SeedDataAuditTest {
     }
 
     @Test fun `EN — each set has at least 4 words`() {
+        val allEnWords = SeedData.words + SeedDataEnglishMore.words
         fail("English sets with fewer than 4 words (multiple-choice impossible)",
             SeedData.sets.mapNotNull { set ->
-                val count = SeedData.words.count { it.setId == set.id }
+                val count = allEnWords.count { it.setId == set.id }
                 if (count < 4) "Set ${set.id} '${set.name}': $count words" else null
             }
         )
@@ -137,6 +138,7 @@ class SeedDataAuditTest {
         // resolve to the word from the earlier file, matching physical insertion order.
         val allWords: List<WordEntity> =
             SeedData.words +
+            SeedDataEnglishMore.words +
             SeedDataHebrew.words +
             SeedDataHebrewEveryday.words +
             SeedDataHebrewAdvanced.words

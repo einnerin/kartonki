@@ -3877,10 +3877,10 @@ object SeedDataEnglishMore {
         WordEntity(id = 3303, original = "subtitle", translation = "субтитры", rarity = "UNCOMMON", setId = 206, languagePair = "en-ru", pos = "noun", semanticGroup = "cinema",
             definition = "Text displayed at the bottom of a film screen translating the dialogue.",
             example = "She watched the foreign film with English subtitles."),
-        WordEntity(id = 3304, original = "assumption", translation = "предположение", rarity = "UNCOMMON", setId = 42, languagePair = "en-ru", pos = "noun", semanticGroup = "abstract",
+        WordEntity(id = 3304, original = "assumption", translation = "предположение", rarity = "UNCOMMON", setId = 87, languagePair = "en-ru", pos = "noun", semanticGroup = "logic_b2",
             definition = "Something accepted as true without proof or confirmation.",
             example = "His argument was based on the false assumption that everyone agreed."),
-        WordEntity(id = 3305, original = "doctrine", translation = "доктрина / учение", rarity = "UNCOMMON", setId = 42, languagePair = "en-ru", pos = "noun", semanticGroup = "abstract",
+        WordEntity(id = 3305, original = "doctrine", translation = "доктрина / учение", rarity = "UNCOMMON", setId = 87, languagePair = "en-ru", pos = "noun", semanticGroup = "logic_b2",
             definition = "A set of principles or beliefs taught and accepted by a particular group.",
             example = "The political doctrine shaped every major decision the government made."),
     )
