@@ -47,8 +47,9 @@ class SeedDataAuditTest {
 
     @Test fun `EN — each set has at least 4 words`() {
         val allEnWords = SeedData.words + SeedDataEnglishMore.words
+        val allEnSets  = SeedData.sets  + SeedDataEnglishMore.sets
         fail("English sets with fewer than 4 words (multiple-choice impossible)",
-            SeedData.sets.mapNotNull { set ->
+            allEnSets.mapNotNull { set ->
                 val count = allEnWords.count { it.setId == set.id }
                 if (count < 4) "Set ${set.id} '${set.name}': $count words" else null
             }
@@ -83,7 +84,10 @@ class SeedDataAuditTest {
     // ══════════════════════════════════════════════════════════════════════════
 
     @Test fun `HE — all words have required fields including native content`() {
-        val allHebrew = SeedDataHebrew.words + SeedDataHebrewEveryday.words
+        val allHebrew = SeedDataHebrew.words +
+                SeedDataHebrewEveryday.words +
+                SeedDataHebrewMore.words +
+                SeedDataHebrewAdvanced.words
         fail("Hebrew words missing required fields", allHebrew.mapNotNull { w ->
             listOfNotNull(
                 if (w.translation.isBlank())    "Set ${w.setId} '${w.original}': blank translation" else null,
@@ -99,7 +103,10 @@ class SeedDataAuditTest {
     }
 
     @Test fun `HE — FILL_IN_BLANK Hebrew example sentences contain the Hebrew word`() {
-        val allHebrew = SeedDataHebrew.words + SeedDataHebrewEveryday.words
+        val allHebrew = SeedDataHebrew.words +
+                SeedDataHebrewEveryday.words +
+                SeedDataHebrewMore.words +
+                SeedDataHebrewAdvanced.words
         fail("Hebrew FILL_IN_BLANK broken — Hebrew word absent from Hebrew example",
             allHebrew.filter { w ->
                 w.example != null && !w.example.contains(w.original)
@@ -108,7 +115,10 @@ class SeedDataAuditTest {
     }
 
     @Test fun `HE — FILL_IN_BLANK_NATIVE Russian examples embed the Hebrew word`() {
-        val allHebrew = SeedDataHebrew.words + SeedDataHebrewEveryday.words
+        val allHebrew = SeedDataHebrew.words +
+                SeedDataHebrewEveryday.words +
+                SeedDataHebrewMore.words +
+                SeedDataHebrewAdvanced.words
         fail("Hebrew FILL_IN_BLANK_NATIVE broken — Hebrew word absent from Russian example",
             allHebrew.filter { w ->
                 w.exampleNative != null && !w.exampleNative.contains(w.original)
@@ -117,12 +127,43 @@ class SeedDataAuditTest {
     }
 
     @Test fun `HE — each set has at least 4 words`() {
-        val allSets  = SeedDataHebrew.sets + SeedDataHebrewEveryday.sets
-        val allWords = SeedDataHebrew.words + SeedDataHebrewEveryday.words
+        val allSets  = SeedDataHebrew.sets  + SeedDataHebrewEveryday.sets +
+                SeedDataHebrewMore.sets + SeedDataHebrewAdvanced.sets
+        val allWords = SeedDataHebrew.words + SeedDataHebrewEveryday.words +
+                SeedDataHebrewMore.words + SeedDataHebrewAdvanced.words
         fail("Hebrew sets with fewer than 4 words",
             allSets.mapNotNull { set ->
                 val count = allWords.count { it.setId == set.id }
                 if (count < 4) "Set ${set.id} '${set.name}': $count words" else null
+            }
+        )
+    }
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // CROSS-LANGUAGE DUPLICATE DETECTION
+    // ══════════════════════════════════════════════════════════════════════════
+
+    @Test fun `no duplicate words — same original within the same language pair`() {
+        val allWords: List<WordEntity> =
+            SeedData.words +
+            SeedDataEnglishMore.words +
+            SeedDataHebrew.words +
+            SeedDataHebrewEveryday.words +
+            SeedDataHebrewMore.words +
+            SeedDataHebrewAdvanced.words
+
+        // Group by (original, languagePair) — any group with >1 entry is a duplicate.
+        val dupes = allWords
+            .groupBy { "${it.languagePair}|${it.original}" }
+            .filter { (_, entries) -> entries.size > 1 }
+
+        fail("Duplicate words with same original in the same language pair",
+            dupes.map { (key, entries) ->
+                val (lang, orig) = key.split("|", limit = 2)
+                val ids   = entries.map { it.id }
+                val sets  = entries.map { "set ${it.setId}" }
+                val rarities = entries.map { it.rarity }
+                "[$lang] '$orig' appears ${entries.size}× — ids=$ids sets=$sets rarities=$rarities"
             }
         )
     }
@@ -141,6 +182,7 @@ class SeedDataAuditTest {
             SeedDataEnglishMore.words +
             SeedDataHebrew.words +
             SeedDataHebrewEveryday.words +
+            SeedDataHebrewMore.words +
             SeedDataHebrewAdvanced.words
         val rarityByOriginal: Map<String, String> = buildMap {
             for (w in allWords) putIfAbsent(w.original, w.rarity)

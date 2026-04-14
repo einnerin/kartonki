@@ -60,7 +60,7 @@ object SeedDataHebrewAdvanced {
             original = "שֶׁרְתַן", translation = "сервер",
             definition = "מחשב המספק שירותים למחשבים אחרים ברשת.",
             definitionNative = "Компьютер, предоставляющий сервисы другим компьютерам в сети.",
-            example = "הַשֶּׁרְתַן נפל ואתר האינטרנט הפסיק לעבוד.",
+            example = "שֶׁרְתַן מהיר יכול לטפל ברבבות בקשות בשנייה.",
             exampleNative = "שֶׁרְתַן упал — сайт перестал работать.",
         ),
         WordEntity(
@@ -100,7 +100,7 @@ object SeedDataHebrewAdvanced {
             original = "בָּסִיס נְתוּנִים", translation = "база данных",
             definition = "אוסף מאורגן של מידע המאוחסן ומנוהל על ידי מערכת תוכנה.",
             definitionNative = "Организованная коллекция данных, управляемая программной системой.",
-            example = "כל פרטי הלקוחות שמורים בְּבָסִיס נְתוּנִים.",
+            example = "בָּסִיס נְתוּנִים מאפשר לאחסן ולנהל מידע ביעילות.",
             exampleNative = "Все данные клиентов хранятся в בָּסִיס נְתוּנִים.",
         ),
         WordEntity(
@@ -130,7 +130,7 @@ object SeedDataHebrewAdvanced {
             original = "ממשק תכנות", translation = "API (программный интерфейс)",
             definition = "מפרט לתקשורת בין תוכניות שונות.",
             definitionNative = "Спецификация для взаимодействия между различными программами.",
-            example = "האפליקציה משתמשת בְּמַמְשַׁק תִּכְנוּת של גוגל מפות.",
+            example = "ממשק תכנות מגדיר כיצד תוכניות מתקשרות ביניהן.",
             exampleNative = "Приложение использует ממשק תכנות Google Maps.",
         ),
         WordEntity(
@@ -160,7 +160,7 @@ object SeedDataHebrewAdvanced {
             original = "מִבְנֵה נְתוּנִים", translation = "структура данных",
             definition = "דרך לארגן ולאחסן נתונים בזיכרון המחשב לגישה יעילה.",
             definitionNative = "Способ организации и хранения данных в памяти компьютера для эффективного доступа.",
-            example = "עץ ורשימה מקושרת הם מִבְנֵי נְתוּנִים נפוצים.",
+            example = "מִבְנֵה נְתוּנִים טוב חיוני לכתיבת תוכנה יעילה.",
             exampleNative = "Дерево и связный список — распространённые מִבְנֵה נְתוּנִים.",
         ),
         WordEntity(
@@ -235,7 +235,7 @@ object SeedDataHebrewAdvanced {
             original = "מִשְׂרָד", translation = "офис",
             definition = "מקום עבודה רשמי עם שולחנות ומחשבים.",
             definitionNative = "Официальное рабочее место со столами и компьютерами.",
-            example = "אֲנִי עובד בַּמִּשְׂרָד מ-9 עד 18.",
+            example = "מִשְׂרָד חָדָשׁ נִפְתַּח בִּרְחוֹב הָרָאשִׁי.",
             exampleNative = "Я работаю в מִשְׂרָד с 9 до 18.",
         ),
         WordEntity(
@@ -255,7 +255,7 @@ object SeedDataHebrewAdvanced {
             original = "מַנְהֵל", translation = "менеджер / руководитель",
             definition = "אחראי על ניהול צוות ומשאבים בארגון.",
             definitionNative = "Ответственный за управление командой и ресурсами в организации.",
-            example = "הַמַּנְהֵל ביקש דוח עד יום שישי.",
+            example = "מַנְהֵל טוֹב מוֹבִיל אֶת הַצָּוֶות בְּחָכְמָה.",
             exampleNative = "מַנְהֵל попросил отчёт к пятнице.",
         ),
         WordEntity(
@@ -285,7 +285,7 @@ object SeedDataHebrewAdvanced {
             original = "צָוֶות", translation = "команда",
             definition = "קבוצת אנשים הפועלת יחד לְמַטָּרָה משותפת.",
             definitionNative = "Группа людей, работающих вместе для достижения общей цели.",
-            example = "הַצָּוֶות פיתח את האפליקציה בשישה חודשים.",
+            example = "צָוֶות מְנֻסֶּה פִּיתֵּחַ אֶת הָאַפְּלִיקַצְיָה.",
             exampleNative = "צָוֶות разработал приложение за шесть месяцев.",
         ),
         WordEntity(
@@ -302,10 +302,10 @@ object SeedDataHebrewAdvanced {
             id = 10345, setId = 115, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "work",
             transliteration = "knesiya",
-            original = "כִּנֶּסֶת / כִּנּוּס", translation = "конференция",
+            original = "כִּנּוּס", translation = "конференция",
             definition = "אירוע מקצועי בו מומחים מציגים עבודותיהם.",
             definitionNative = "Профессиональное мероприятие, на котором эксперты представляют свои работы.",
-            example = "הִשְׁתַּתַּפְתִּי בְּכִנּוּס בינלאומי בתל-אביב.",
+            example = "כִּנּוּס בינלאומי נערך בתל-אביב השנה.",
             exampleNative = "Я участвовал в международной כִּנּוּס в Тель-Авиве.",
         ),
         WordEntity(
