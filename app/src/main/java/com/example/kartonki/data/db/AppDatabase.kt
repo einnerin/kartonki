@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 24,
+    version = 25,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -109,6 +109,23 @@ abstract class AppDatabase : RoomDatabase() {
         val MIGRATION_23_24 = object : Migration(23, 24) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("DELETE FROM words WHERE id BETWEEN 2266 AND 2490")
+            }
+        }
+        /**
+         * Corrects 6 rarity misclassifications found during full audit:
+         *  id=357  library:    COMMON   → UNCOMMON
+         *  id=391  bargain:    COMMON   → UNCOMMON
+         *  id=915  atom:       UNCOMMON → COMMON
+         *  id=1323 narcissism: RARE     → EPIC
+         *  id=1597 anticipate: EPIC     → RARE
+         *  id=2122 pilot(noun):COMMON   → UNCOMMON
+         */
+        val MIGRATION_24_25 = object : Migration(24, 25) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("UPDATE words SET rarity = 'UNCOMMON' WHERE id IN (357, 391, 2122)")
+                db.execSQL("UPDATE words SET rarity = 'COMMON'   WHERE id = 915")
+                db.execSQL("UPDATE words SET rarity = 'EPIC'     WHERE id = 1323")
+                db.execSQL("UPDATE words SET rarity = 'RARE'     WHERE id = 1597")
             }
         }
     }

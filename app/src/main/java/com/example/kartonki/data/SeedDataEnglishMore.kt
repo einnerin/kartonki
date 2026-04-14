@@ -202,7 +202,7 @@ object SeedDataEnglishMore {
         WordEntity(id = 2121, original = "chef", translation = "шеф-повар", rarity = "COMMON", setId = 203, languagePair = "en-ru", pos = "noun", semanticGroup = "professions",
             definition = "A professional cook, especially in a restaurant.", example = "The chef created a new menu for the summer season.",
             definitionNative = "Профессиональный повар, особенно в ресторане.", exampleNative = "Шеф-повар разработал новое меню на летний сезон."),
-        WordEntity(id = 2122, original = "pilot", translation = "пилот", rarity = "COMMON", setId = 203, languagePair = "en-ru", pos = "noun", semanticGroup = "professions",
+        WordEntity(id = 2122, original = "pilot", translation = "пилот", rarity = "UNCOMMON", setId = 203, languagePair = "en-ru", pos = "noun", semanticGroup = "professions",
             definition = "A person who flies an aircraft.", example = "The pilot landed the plane safely despite strong winds.",
             definitionNative = "Человек, управляющий самолётом.", exampleNative = "Пилот посадил самолёт в условиях сильного ветра."),
         WordEntity(id = 2123, original = "mechanic", translation = "механик", rarity = "COMMON", setId = 203, languagePair = "en-ru", pos = "noun", semanticGroup = "professions",
