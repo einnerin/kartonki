@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 23,
+    version = 24,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -97,6 +97,18 @@ abstract class AppDatabase : RoomDatabase() {
         val MIGRATION_22_23 = object : Migration(22, 23) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE word_sets ADD COLUMN isFavorite INTEGER NOT NULL DEFAULT 0")
+            }
+        }
+        /**
+         * Fixes sets 211–219 (Архитектура … Химия) which may have been seeded with the wrong
+         * setId in older builds. Deleting by word-ID range guarantees removal regardless of
+         * whatever setId is currently stored. ensureSeeded() / doSeed() will re-insert them
+         * with the correct setId immediately after the migration.
+         * Word IDs 2266–2490 belong exclusively to sets 211–219 (25 words × 9 sets = 225 rows).
+         */
+        val MIGRATION_23_24 = object : Migration(23, 24) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("DELETE FROM words WHERE id BETWEEN 2266 AND 2490")
             }
         }
     }
