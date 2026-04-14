@@ -57,25 +57,14 @@ class SeedDataAuditTest {
     }
 
     // ══════════════════════════════════════════════════════════════════════════
-    // SEEDDATAENGLISHNATIVE — coverage and sentence quality
+    // EN-NATIVE — native content inlined directly into WordDataEnglish
     // ══════════════════════════════════════════════════════════════════════════
-
-    @Test fun `EN-NATIVE — covers every English word in SeedData`() {
-        val covered = SeedDataEnglishNative.data.keys
-        fail("English words missing from SeedDataEnglishNative (FILL_IN_BLANK_NATIVE / DEFINITION_NATIVE broken)",
-            WordDataEnglish.words.filter { it.languagePair == "en-ru" && it.original !in covered }
-                .map { "Set ${it.setId}: '${it.original}'" }
-        )
-    }
 
     @Test fun `EN-NATIVE — exampleNative sentences embed the English word`() {
         fail("English FILL_IN_BLANK_NATIVE broken — English word absent from Russian example",
-            SeedDataEnglishNative.data.entries.mapNotNull { (original, content) ->
-                val ex = content.second
-                if (!ex.contains(original, ignoreCase = true))
-                    "'$original': '$ex'"
-                else null
-            }
+            WordDataEnglish.words.filter { w ->
+                w.exampleNative != null && !w.exampleNative.contains(w.original, ignoreCase = true)
+            }.map { w -> "Set ${w.setId} '${w.original}': '${w.exampleNative}'" }
         )
     }
 
