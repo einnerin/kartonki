@@ -6631,5 +6631,80 @@ object SeedData {
                 "entropy",
             ),
         ),
+        // 11 ── Философия и этика ─────────────────────────────────────────────
+        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3
+        DeckSeed(
+            name = "Философия и этика",
+            level = 6,
+            wordOriginals = listOf(
+                // UNCOMMON
+                "argument", "assumption", "doctrine",
+                // RARE
+                "principle", "conviction", "ideology", "notion",
+                "philosophy", "belief", "conscious", "subconscious",
+                // EPIC
+                "paradigm", "premise", "tenet", "maxim",
+                "integrity", "principled", "discourse",
+                // LEGENDARY
+                "solipsism", "ontological", "teleological",
+            ),
+        ),
+
+        // 12 ── Право и политика ───────────────────────────────────────────────
+        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3
+        DeckSeed(
+            name = "Право и политика",
+            level = 6,
+            wordOriginals = listOf(
+                // UNCOMMON
+                "trial", "verdict", "parliament",
+                // RARE
+                "discrimination", "rights", "authority", "perjury",
+                "constitution", "sovereignty", "plaintiff", "defendant",
+                // EPIC
+                "decree", "regulation", "adjudicate", "arbitrary",
+                "abolish", "jurisdiction", "contempt",
+                // LEGENDARY
+                "jurisprudence", "habeas corpus", "mens rea",
+            ),
+        ),
+
+        // 13 ── Риторика и литература ──────────────────────────────────────────
+        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3
+        DeckSeed(
+            name = "Риторика и литература",
+            level = 6,
+            wordOriginals = listOf(
+                // UNCOMMON
+                "prose", "verse", "fiction",
+                // RARE
+                "eloquence", "symbol", "dialect", "folklore",
+                "metaphor", "allegory", "foreshadowing", "antagonist",
+                // EPIC
+                "oratory", "symbolic", "allegorical", "rhetoric",
+                "archetype", "soliloquy", "denouement",
+                // LEGENDARY
+                "aphorism", "parable", "verisimilitude",
+            ),
+        ),
+
+        // 14 ── Дипломатия и геополитика ───────────────────────────────────────
+        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3
+        DeckSeed(
+            name = "Дипломатия и геополитика",
+            level = 6,
+            wordOriginals = listOf(
+                // UNCOMMON
+                "diplomat", "border", "conflict",
+                // RARE
+                "mediate", "siege", "guerrilla", "coalition",
+                "sanction", "veto", "mobilise", "legislation",
+                // EPIC
+                "diplomacy", "hegemony", "geopolitical", "proxy war",
+                "geopolitics", "embargo", "armistice",
+                // LEGENDARY
+                "irredentism", "gerrymandering", "kakistocracy",
+            ),
+        ),
     )
 }
