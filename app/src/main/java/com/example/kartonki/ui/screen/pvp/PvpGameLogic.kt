@@ -41,7 +41,7 @@ object PvpGameLogic {
      *  tier3 = different pos (fallback)
      */
     fun pickDistractors(word: Word, allWords: List<Word>): List<Word> {
-        val candidates = allWords.filter { it.id != word.id }
+        val candidates = allWords.filter { it.id != word.id && it.languagePair == word.languagePair }
         if (word.pos == null && word.semanticGroup == null) return candidates.shuffled()
         val tier1 = candidates.filter { it.pos == word.pos && it.semanticGroup == word.semanticGroup }.shuffled()
         val tier2 = candidates.filter { it.pos == word.pos && it.semanticGroup != word.semanticGroup }.shuffled()
