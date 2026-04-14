@@ -65,6 +65,7 @@ fun MyDecksScreen(
     val uiState by viewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
     val lifecycleOwner = LocalLifecycleOwner.current
+    var deckPendingDelete by remember { mutableStateOf<DeckSummary?>(null) }
 
     uiState.navigateToDeckId?.let { deckId ->
         onNavigateToDeckBuilder(deckId)
@@ -123,7 +124,7 @@ fun MyDecksScreen(
                     DeckItem(
                         deck = deck,
                         onEdit = { onNavigateToDeckBuilder(deck.id) },
-                        onDelete = { viewModel.deleteDeck(deck) },
+                        onDelete = { deckPendingDelete = deck },
                     )
                     HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
                 }
@@ -135,6 +136,27 @@ fun MyDecksScreen(
         CreateDeckDialog(
             onConfirm = { name, level -> viewModel.createDeck(name, level) },
             onDismiss = { viewModel.dismissCreateDialog() },
+        )
+    }
+
+    deckPendingDelete?.let { deck ->
+        AlertDialog(
+            onDismissRequest = { deckPendingDelete = null },
+            title = { Text(s.myDecksDeleteTitle) },
+            text = { Text(s.myDecksDeleteConfirm(deck.name)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    viewModel.deleteDeck(deck)
+                    deckPendingDelete = null
+                }) {
+                    Text(s.myDecksDelete, color = MaterialTheme.colorScheme.error)
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { deckPendingDelete = null }) {
+                    Text(s.myDecksCreateDialogCancel)
+                }
+            },
         )
     }
 }

@@ -94,6 +94,8 @@ data class AppStrings(
     val myDecksCreateDialogLevel: String,
     val myDecksCreateDialogConfirm: String,
     val myDecksCreateDialogCancel: String,
+    val myDecksDeleteTitle: String,
+    val myDecksDeleteConfirm: (String) -> String,
     val deckCardCount: (Int, Int) -> String,
 
     // PvP
@@ -324,6 +326,8 @@ val RuStrings = AppStrings(
     myDecksCreateDialogLevel  = "Уровень колоды:",
     myDecksCreateDialogConfirm= "Создать",
     myDecksCreateDialogCancel = "Отмена",
+     myDecksDeleteTitle        = "Удалить колоду?",
+     myDecksDeleteConfirm      = { name -> "Удалить «$name»? Это действие нельзя отменить." },
     deckCardCount             = { cur, max -> "$cur / $max карт" },
 
     pvpDeckSelectTitle  = "PvP — Выбор колод",
@@ -529,6 +533,8 @@ val EnStrings = AppStrings(
     myDecksCreateDialogLevel  = "Deck level:",
     myDecksCreateDialogConfirm= "Create",
     myDecksCreateDialogCancel = "Cancel",
+     myDecksDeleteTitle        = "Delete deck?",
+     myDecksDeleteConfirm      = { name -> "Delete \"$name\"? This action cannot be undone." },
     deckCardCount             = { cur, max -> "$cur / $max cards" },
 
     pvpDeckSelectTitle  = "PvP — Select decks",
@@ -734,6 +740,8 @@ val DeStrings = AppStrings(
     myDecksCreateDialogLevel  = "Deck-Level:",
     myDecksCreateDialogConfirm= "Erstellen",
     myDecksCreateDialogCancel = "Abbrechen",
+     myDecksDeleteTitle        = "Deck löschen?",
+     myDecksDeleteConfirm      = { name -> "\"$name\" löschen? Diese Aktion kann nicht rückgängig gemacht werden." },
     deckCardCount             = { cur, max -> "$cur / $max Karten" },
 
     pvpDeckSelectTitle  = "PvP — Decks wählen",
@@ -939,6 +947,8 @@ val FrStrings = AppStrings(
     myDecksCreateDialogLevel  = "Niveau du deck :",
     myDecksCreateDialogConfirm= "Créer",
     myDecksCreateDialogCancel = "Annuler",
+     myDecksDeleteTitle        = "Supprimer le deck ?",
+     myDecksDeleteConfirm      = { name -> "Supprimer « $name » ? Cette action est irréversible." },
     deckCardCount             = { cur, max -> "$cur / $max cartes" },
 
     pvpDeckSelectTitle  = "PvP — Choisir les decks",
@@ -1144,6 +1154,8 @@ val EsStrings = AppStrings(
     myDecksCreateDialogLevel  = "Nivel del mazo:",
     myDecksCreateDialogConfirm= "Crear",
     myDecksCreateDialogCancel = "Cancelar",
+     myDecksDeleteTitle        = "¿Eliminar mazo?",
+     myDecksDeleteConfirm      = { name -> "¿Eliminar «$name»? Esta acción no se puede deshacer." },
     deckCardCount             = { cur, max -> "$cur / $max cartas" },
 
     pvpDeckSelectTitle  = "PvP — Elegir mazos",
@@ -1349,6 +1361,8 @@ val ZhStrings = AppStrings(
     myDecksCreateDialogLevel  = "套牌等级：",
     myDecksCreateDialogConfirm= "创建",
     myDecksCreateDialogCancel = "取消",
+     myDecksDeleteTitle        = "删除卡组？",
+     myDecksDeleteConfirm      = { name -> "删除「$name」？此操作无法撤销。" },
     deckCardCount             = { cur, max -> "$cur / $max 张卡片" },
 
     pvpDeckSelectTitle  = "PvP — 选择套牌",
@@ -1554,6 +1568,8 @@ val JaStrings = AppStrings(
     myDecksCreateDialogLevel  = "デッキレベル：",
     myDecksCreateDialogConfirm= "作成",
     myDecksCreateDialogCancel = "キャンセル",
+     myDecksDeleteTitle        = "デッキを削除？",
+     myDecksDeleteConfirm      = { name -> "「$name」を削除しますか？この操作は元に戻せません。" },
     deckCardCount             = { cur, max -> "$cur / $max 枚" },
 
     pvpDeckSelectTitle  = "PvP — デッキ選択",
@@ -1759,6 +1775,8 @@ val ArStrings = AppStrings(
     myDecksCreateDialogLevel  = "مستوى المجموعة:",
     myDecksCreateDialogConfirm= "إنشاء",
     myDecksCreateDialogCancel = "إلغاء",
+     myDecksDeleteTitle        = "حذف المجموعة؟",
+     myDecksDeleteConfirm      = { name -> "حذف «$name»؟ لا يمكن التراجع عن هذا الإجراء." },
     deckCardCount             = { cur, max -> "$cur / $max بطاقات" },
 
     pvpDeckSelectTitle  = "PvP — اختر المجموعات",
