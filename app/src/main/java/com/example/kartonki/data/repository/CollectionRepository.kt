@@ -14,6 +14,8 @@ import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -26,6 +28,8 @@ class CollectionRepository @Inject constructor(
     private val wordLoader: WordLoader,
     private val prefs: UserPreferencesRepository,
 ) {
+    private val mutex = Mutex()
+    @Volatile private var initializedInProcess = false
     /**
      * On first run: seeds words, gives a starter collection of ~500 cards
      * (weighted toward lower rarities), and creates preset decks.
@@ -37,6 +41,15 @@ class CollectionRepository @Inject constructor(
      * PvE uses wordDao directly and does not require collection ownership.
      */
     suspend fun ensureStarterPack() {
+        if (initializedInProcess) return
+        mutex.withLock {
+            if (initializedInProcess) return
+            doEnsureStarterPack()
+            initializedInProcess = true
+        }
+    }
+
+    private suspend fun doEnsureStarterPack() {
         wordLoader.ensureFresh()
 
         val isFirstRun = collectionDao.count() == 0
