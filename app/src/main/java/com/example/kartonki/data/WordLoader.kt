@@ -75,6 +75,7 @@ class WordLoader @Inject constructor(
         val limits = mapOf("COMMON" to 300, "UNCOMMON" to 130, "RARE" to 50, "EPIC" to 15, "LEGENDARY" to 5)
         val result = mutableSetOf<String>()
         allWords
+            .filter { it.original !in AchievementCards.ALL_EXCLUSIVE }
             .groupBy { it.languagePair }
             .forEach { (_, words) ->
                 words.groupBy { it.rarity }.forEach { (rarity, rarityWords) ->

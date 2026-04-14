@@ -56,7 +56,7 @@ class PackRepository @Inject constructor(
     private suspend fun generatePackCards(): List<Word> {
         val langPair = userPrefs.getLanguagePair()
         val allWords = wordDao.getAllWordsByLanguage(langPair)
-            .filter { it.id !in AchievementCards.ALL_EXCLUSIVE_IDS }
+            .filter { it.original !in AchievementCards.ALL_EXCLUSIVE }
         val byRarity = allWords.groupBy { it.rarity }
 
         val result = mutableListOf<WordEntity>()
