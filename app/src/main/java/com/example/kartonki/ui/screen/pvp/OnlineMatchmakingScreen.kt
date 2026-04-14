@@ -184,7 +184,7 @@ private fun DeckSelectContent(
             ) {
                 OutlinedTextField(
                     value = uiState.selectedDeck?.let {
-                        "${it.name}  ${DeckLevel.starsFor(it.level)}  (${it.cardCount} карт)"
+                        "${it.name}  ${DeckLevel.starsFor(it.level)}"
                     } ?: "",
                     onValueChange = {},
                     readOnly = true,
@@ -198,7 +198,7 @@ private fun DeckSelectContent(
                     uiState.decks.forEach { deck ->
                         DropdownMenuItem(
                             text = {
-                                Text("${deck.name}  ${DeckLevel.starsFor(deck.level)}  — ${deck.cardCount} карт")
+                                Text("${deck.name}  ${DeckLevel.starsFor(deck.level)}")
                             },
                             onClick = {
                                 onDeckSelected(deck)
