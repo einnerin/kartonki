@@ -22,6 +22,10 @@ interface WordDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertAll(words: List<WordEntity>)
 
+    /** Like insertAll but overwrites existing rows — used for patch seeding when setId may be wrong. */
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAllOrReplace(words: List<WordEntity>)
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(word: WordEntity): Long
 

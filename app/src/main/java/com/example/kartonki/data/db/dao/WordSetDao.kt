@@ -44,6 +44,9 @@ interface WordSetDao {
     @Query("SELECT COUNT(*) FROM words WHERE setId = :setId")
     suspend fun getWordCountInSet(setId: Long): Int
 
+    @Query("SELECT COUNT(*) FROM words WHERE setId >= :fromId AND setId <= :toId")
+    suspend fun getWordCountInRange(fromId: Long, toId: Long): Int
+
     @Query("SELECT rarity, COUNT(*) as count FROM words WHERE setId = :setId GROUP BY rarity")
     suspend fun getRarityCountsForSet(setId: Long): List<RarityCount>
 
