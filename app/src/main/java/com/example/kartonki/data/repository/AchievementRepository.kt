@@ -163,7 +163,7 @@ class AchievementRepository @Inject constructor(
         if (isUnlocked(AchievementId.COLLECTOR)) return
         val decks = deckDao.getDecksOnce()
         for (deck in decks) {
-            if (deckDao.getCardCountForDeck(deck.id) >= 20) {
+            if (deckDao.getOwnedCardCountForDeck(deck.id) >= 20) {
                 unlock(AchievementId.COLLECTOR)
                 return
             }

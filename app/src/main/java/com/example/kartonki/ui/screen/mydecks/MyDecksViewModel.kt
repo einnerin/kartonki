@@ -75,7 +75,7 @@ class MyDecksViewModel @Inject constructor(
                 DeckSummary(
                     id = entity.id,
                     name = entity.name,
-                    cardCount = deckDao.getCardCountForDeck(entity.id),
+                    cardCount = deckDao.getOwnedCardCountForDeck(entity.id),
                     level = entity.level,
                 )
             }

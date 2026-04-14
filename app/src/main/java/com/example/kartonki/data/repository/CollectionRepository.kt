@@ -32,8 +32,21 @@ class CollectionRepository @Inject constructor(
         wordLoader.ensureFresh()
         if (collectionDao.count() > 0) return
         val allWords = wordDao.getAllWordsOnce()
-        val starterWords = selectStarterCards(allWords)
-        collectionDao.insertAll(starterWords.map { CollectionEntity(it.id) })
+
+        // Collect all words referenced by preset decks — these must always be owned
+        // so deck editors show the correct cards immediately on first launch.
+        val presetOriginals = SeedData.prebuiltDecks.flatMap { it.wordOriginals }.toSet()
+        val presetWordEntities = presetOriginals.mapNotNull { wordDao.getWordByOriginal(it) }
+        val presetIds = presetWordEntities.map { it.id }.toSet()
+
+        // Fill the remaining slots with a random selection (preset words are excluded
+        // to avoid double-counting toward the STARTER_COLLECTION_SIZE cap).
+        val starterWords = selectStarterCards(allWords, excludeIds = presetIds)
+
+        // Insert everything: guaranteed preset words + random fill
+        val combined = (presetWordEntities + starterWords).distinctBy { it.id }
+        collectionDao.insertAll(combined.map { CollectionEntity(it.id) })
+
         if (deckDao.getDeckCount() == 0) {
             for (deckSeed in SeedData.prebuiltDecks) {
                 val deckId = deckDao.insertDeck(DeckEntity(name = deckSeed.name, level = deckSeed.level))
@@ -70,9 +83,12 @@ class CollectionRepository @Inject constructor(
      * Weighted toward lower rarities so higher-rarity cards stay rare and
      * desirable from packs.
      */
-    private fun selectStarterCards(allWords: List<WordEntity>): List<WordEntity> {
+    private fun selectStarterCards(
+        allWords: List<WordEntity>,
+        excludeIds: Set<Long> = emptySet(),
+    ): List<WordEntity> {
         val byRarity = allWords
-            .filter { it.id !in AchievementCards.ALL_EXCLUSIVE_IDS }
+            .filter { it.id !in AchievementCards.ALL_EXCLUSIVE_IDS && it.id !in excludeIds }
             .groupBy { it.rarity }
         val result = mutableListOf<WordEntity>()
         listOf(

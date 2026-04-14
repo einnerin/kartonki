@@ -6430,140 +6430,206 @@ object SeedData {
     data class DeckSeed(val name: String, val level: Int = 1, val wordOriginals: List<String>)
 
     val prebuiltDecks: List<DeckSeed> = listOf(
+
+        // 1 ── Семья и отношения ────────────────────────────────────────────────
+        // COMMON×8 / UNCOMMON×6 / RARE×4 / EPIC×2 / LEGENDARY×1
         DeckSeed(
-            name = "Для новичков",
+            name = "Семья и отношения",
             level = 3,
             wordOriginals = listOf(
-                "mother",
-                "father",
-                "brother",
-                "sister",
-                "son",
-                "daughter",
-                "grandfather",
-                "grandmother",
-                "performance",
-                "exhibition",
-                "concert",
-                "instrument",
-                "character",
-                "novel",
-                "circumstance",
-                "phenomenon",
-                "perspective",
-                "principle",
-                "elaborate",
-                "articulate",
+                // COMMON
+                "mother", "father", "brother", "sister",
+                "husband", "wife", "baby", "friend",
+                // UNCOMMON
+                "marriage", "divorce", "relationship", "trust",
+                "loyalty", "commitment",
+                // RARE
+                "identity", "abandon", "overcome", "conform",
+                // EPIC
+                "compassion", "empathy",
+                // LEGENDARY
+                "magnanimous",
+            ),
+        ),
+
+        // 2 ── Еда и вкус ──────────────────────────────────────────────────────
+        DeckSeed(
+            name = "Еда и вкус",
+            level = 3,
+            wordOriginals = listOf(
+                // COMMON
+                "eat", "cook", "bread", "egg",
+                "soup", "coffee", "cheese", "rice",
+                // UNCOMMON
+                "recipe", "restaurant", "menu", "nutrition",
+                "substance", "mixture",
+                // RARE
+                "capable", "creative", "genuine", "passionate",
+                // EPIC
+                "elaborate", "aesthetic",
+                // LEGENDARY
+                "fastidious",
+            ),
+        ),
+
+        // 3 ── Тело и здоровье ─────────────────────────────────────────────────
+        DeckSeed(
+            name = "Тело и здоровье",
+            level = 3,
+            wordOriginals = listOf(
+                // COMMON
+                "head", "eye", "nose", "mouth",
+                "hand", "arm", "leg", "hair",
+                // UNCOMMON
+                "exercise", "surgery", "symptom", "vaccine",
+                "pharmacy", "prescription",
+                // RARE
+                "immune", "trauma", "perceive", "vulnerability",
+                // EPIC
+                "resilience", "deteriorate",
+                // LEGENDARY
+                "ephemeral",
+            ),
+        ),
+
+        // 4 ── Природа и экология ──────────────────────────────────────────────
+        DeckSeed(
+            name = "Природа и экология",
+            level = 3,
+            wordOriginals = listOf(
+                // COMMON
+                "rain", "snow", "wind", "storm",
+                "forest", "river", "mountain", "ocean",
+                // UNCOMMON
+                "environment", "pollution", "climate", "wildlife",
+                "endangered", "species",
+                // RARE
+                "ecosystem", "habitat", "biodiversity", "atmosphere",
+                // EPIC
+                "nurture", "escalate",
+                // LEGENDARY
+                "inexorable",
+            ),
+        ),
+
+        // 5 ── Работа и карьера ────────────────────────────────────────────────
+        DeckSeed(
+            name = "Работа и карьера",
+            level = 3,
+            wordOriginals = listOf(
+                // COMMON
+                "work", "job", "office", "boss",
+                "meeting", "project", "team", "manager",
+                // UNCOMMON
+                "salary", "career", "colleague", "deadline",
+                "skill", "performance",
+                // RARE
+                "negotiate", "innovation", "strategy", "competition",
+                // EPIC
+                "entrepreneurship", "accountability",
+                // LEGENDARY
+                "indefatigable",
+            ),
+        ),
+
+        // 6 ── Технологии ──────────────────────────────────────────────────────
+        DeckSeed(
+            name = "Технологии",
+            level = 3,
+            wordOriginals = listOf(
+                // COMMON
+                "computer", "phone", "internet", "app",
+                "website", "email", "message", "screen",
+                // UNCOMMON
+                "software", "data", "device", "digital",
+                "network", "algorithm",
+                // RARE
+                "credibility", "disinformation", "viral", "subscription",
+                // EPIC
+                "compliance", "benchmark",
+                // LEGENDARY
                 "ubiquitous",
             ),
         ),
+
+        // 7 ── Город и транспорт ───────────────────────────────────────────────
         DeckSeed(
-            name = "Путешественник",
+            name = "Город и транспорт",
             level = 3,
             wordOriginals = listOf(
-                "bus",
-                "train",
-                "car",
-                "taxi",
-                "airport",
-                "ticket",
-                "station",
-                "platform",
-                "travel",
-                "journey",
-                "destination",
-                "accommodation",
-                "reservation",
-                "local",
-                "circumstance",
-                "phenomenon",
-                "perspective",
-                "principle",
-                "elaborate",
-                "articulate",
-                "ubiquitous",
+                // COMMON
+                "city", "town", "village", "road",
+                "park", "school", "hotel", "bus",
+                // UNCOMMON
+                "market", "museum", "traffic", "commute",
+                "suburb", "monument",
+                // RARE
+                "collapse", "severe", "widespread", "hazard",
+                // EPIC
+                "infrastructure", "escalate",
+                // LEGENDARY
+                "zeitgeist",
             ),
         ),
+
+        // 8 ── Эмоции и личность ───────────────────────────────────────────────
         DeckSeed(
-            name = "Бизнес-лексика",
+            name = "Эмоции и личность",
             level = 3,
             wordOriginals = listOf(
-                "shop",
-                "price",
-                "money",
-                "pay",
-                "sell",
-                "cheap",
-                "expensive",
-                "cash",
-                "economy",
-                "business",
-                "product",
-                "customer",
-                "advertise",
-                "profit",
-                "innovation",
-                "strategy",
-                "competition",
-                "revenue",
-                "elaborate",
-                "articulate",
-                "ubiquitous",
+                // COMMON
+                "happy", "sad", "excited", "nervous",
+                "proud", "embarrassed", "feeling", "disappointed",
+                // UNCOMMON
+                "angry", "trust", "brave", "patient",
+                "confident", "jealous",
+                // RARE
+                "ambitious", "curious", "anxiety", "passionate",
+                // EPIC
+                "compassion", "empathy",
+                // LEGENDARY
+                "ennui",
             ),
         ),
+
+        // 9 ── Путешествия ─────────────────────────────────────────────────────
         DeckSeed(
-            name = "Академический",
+            name = "Путешествия",
             level = 3,
             wordOriginals = listOf(
-                "subject",
-                "homework",
-                "exam",
-                "lesson",
-                "class",
-                "test",
-                "library",
-                "dictionary",
-                "history",
-                "science",
-                "literature",
-                "research",
-                "knowledge",
-                "university",
-                "concept",
-                "theory",
-                "evidence",
-                "analysis",
-                "empirical",
-                "hypothesis",
-                "ubiquitous",
+                // COMMON
+                "bus", "train", "car", "taxi",
+                "airport", "ticket", "station", "travel",
+                // UNCOMMON
+                "luggage", "accommodation", "destination", "journey",
+                "hostel", "boarding",
+                // RARE
+                "perspective", "circumstance", "profound", "significant",
+                // EPIC
+                "narrative", "captivate",
+                // LEGENDARY
+                "picaresque",
             ),
         ),
+
+        // 10 ── Наука и образование ────────────────────────────────────────────
         DeckSeed(
-            name = "Мастер слова",
+            name = "Наука и образование",
             level = 3,
             wordOriginals = listOf(
-                "feeling",
-                "excited",
-                "nervous",
-                "disappointed",
-                "proud",
-                "embarrassed",
-                "proclivity",
-                "dog",
-                "cat",
-                "bird",
-                "fish",
-                "horse",
-                "cow",
-                "pig",
-                "rabbit",
-                "circumstance",
-                "phenomenon",
-                "perspective",
-                "principle",
-                "elaborate",
-                "articulate",
+                // COMMON
+                "subject", "homework", "exam", "lesson",
+                "class", "test", "dictionary", "history",
+                // UNCOMMON
+                "library", "science", "literature", "research",
+                "knowledge", "university",
+                // RARE
+                "concept", "theory", "evidence", "analysis",
+                // EPIC
+                "hypothesis", "paradigm",
+                // LEGENDARY
+                "entropy",
             ),
-        )
+        ),
     )
 }

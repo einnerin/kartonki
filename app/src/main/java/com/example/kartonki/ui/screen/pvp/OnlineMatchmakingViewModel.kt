@@ -54,7 +54,7 @@ class OnlineMatchmakingViewModel @Inject constructor(
             collectionRepository.ensureStarterPack()
             val entities = deckDao.getDecksOnce()
             val options = entities.map {
-                PvpDeckOption(it.id, it.name, deckDao.getCardCountForDeck(it.id), it.level)
+                PvpDeckOption(it.id, it.name, deckDao.getOwnedCardCountForDeck(it.id), it.level)
             }
             _uiState.update {
                 it.copy(

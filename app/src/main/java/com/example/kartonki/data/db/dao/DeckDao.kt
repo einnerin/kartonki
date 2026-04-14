@@ -26,8 +26,17 @@ interface DeckDao {
     @Query("SELECT * FROM decks WHERE id = :id")
     suspend fun getDeckById(id: Long): DeckEntity?
 
+    /** Total entries in the deck regardless of ownership (used for deck structure checks). */
     @Query("SELECT COUNT(*) FROM deck_cards WHERE deckId = :deckId")
     suspend fun getCardCountForDeck(deckId: Long): Int
+
+    /** Cards that are both in the deck AND owned by the player — used for display and PvP. */
+    @Query("""
+        SELECT COUNT(*) FROM deck_cards
+        INNER JOIN collection ON deck_cards.wordId = collection.wordId
+        WHERE deck_cards.deckId = :deckId
+    """)
+    suspend fun getOwnedCardCountForDeck(deckId: Long): Int
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertDeck(deck: DeckEntity): Long

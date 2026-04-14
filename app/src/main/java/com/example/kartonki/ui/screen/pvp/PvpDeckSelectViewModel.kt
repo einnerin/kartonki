@@ -54,7 +54,7 @@ class PvpDeckSelectViewModel @Inject constructor(
         viewModelScope.launch {
             collectionRepository.ensureStarterPack()
             val entities = deckDao.getDecksOnce()
-            val options = entities.map { PvpDeckOption(it.id, it.name, deckDao.getCardCountForDeck(it.id), it.level) }
+            val options = entities.map { PvpDeckOption(it.id, it.name, deckDao.getOwnedCardCountForDeck(it.id), it.level) }
             val default = options.firstOrNull()
             _uiState.update {
                 it.copy(
