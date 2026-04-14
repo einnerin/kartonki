@@ -47,6 +47,10 @@ interface WordDao {
     @Query("SELECT * FROM words WHERE languagePair = :languagePair ORDER BY rarity DESC, original ASC")
     suspend fun getAllWordsByLanguage(languagePair: String): List<WordEntity>
 
+    /** Returns the fixed starter PvP collection — same words for every user. */
+    @Query("SELECT * FROM words WHERE isDefaultPvpCard = 1")
+    suspend fun getDefaultPvpCards(): List<WordEntity>
+
     @Delete
     suspend fun delete(word: WordEntity)
 

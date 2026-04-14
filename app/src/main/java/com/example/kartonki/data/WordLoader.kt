@@ -52,8 +52,35 @@ class WordLoader @Inject constructor(
         val allWords = WordDataEnglish.words + WordDataEnglishExpanded.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words
-        allWords.chunked(500).forEach { chunk -> wordDao.insertAllOrReplace(chunk) }
+
+        val pvpOriginals = buildDefaultPvpOriginals(allWords)
+        val wordsWithFlag = allWords.map { w ->
+            if (w.original in pvpOriginals) w.copy(isDefaultPvpCard = true) else w
+        }
+        wordsWithFlag.chunked(500).forEach { chunk -> wordDao.insertAllOrReplace(chunk) }
 
         prefs.setWordDataVersion(WordDataVersion.CURRENT)
+    }
+
+    /**
+     * Deterministically selects the starter PvP card set from [allWords].
+     *
+     * Words are taken in insertion order (i.e. the order they appear in seed files),
+     * up to per-rarity limits. The result is identical for every user — no shuffling.
+     *
+     * Limits per language pair:
+     *   COMMON 300 · UNCOMMON 130 · RARE 50 · EPIC 15 · LEGENDARY 5
+     */
+    private fun buildDefaultPvpOriginals(allWords: List<com.example.kartonki.data.db.entity.WordEntity>): Set<String> {
+        val limits = mapOf("COMMON" to 300, "UNCOMMON" to 130, "RARE" to 50, "EPIC" to 15, "LEGENDARY" to 5)
+        val result = mutableSetOf<String>()
+        allWords
+            .groupBy { it.languagePair }
+            .forEach { (_, words) ->
+                words.groupBy { it.rarity }.forEach { (rarity, rarityWords) ->
+                    rarityWords.take(limits[rarity] ?: 0).forEach { result += it.original }
+                }
+            }
+        return result
     }
 }
