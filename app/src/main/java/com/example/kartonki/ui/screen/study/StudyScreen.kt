@@ -71,7 +71,6 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
-import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
@@ -383,7 +382,7 @@ private fun WordSetCard(
             .padding(horizontal = 16.dp, vertical = 10.dp),
     ) {
         Column {
-            // Title row: name + favourite star on the same line
+            // Title row: name + word count + favourite star
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically,
@@ -395,6 +394,12 @@ private fun WordSetCard(
                     color = Color.White,
                     modifier = Modifier.weight(1f),
                 )
+                Text(
+                    text = "${item.introducedWords} / ${item.totalWords}",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = TextSecondary,
+                    fontWeight = FontWeight.Medium,
+                )
                 FavoriteStarButton(
                     isFavorite = item.isFavorite,
                     onClick = onToggleFavorite,
@@ -405,23 +410,8 @@ private fun WordSetCard(
                     text = item.description,
                     style = MaterialTheme.typography.bodySmall,
                     color = TextSecondary,
-                    maxLines = 2,
+                    maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
-                )
-            }
-            Spacer(Modifier.height(6.dp))
-            // Badge + word count on the same line
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically,
-            ) {
-                RarityBadge(rarity = item.rarity)
-                Spacer(Modifier.weight(1f))
-                Text(
-                    text = "${item.introducedWords} / ${item.totalWords}",
-                    style = MaterialTheme.typography.labelSmall,
-                    color = TextSecondary,
-                    fontWeight = FontWeight.Medium,
                 )
             }
             Spacer(Modifier.height(6.dp))
