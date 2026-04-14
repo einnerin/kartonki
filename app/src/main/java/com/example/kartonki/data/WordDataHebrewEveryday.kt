@@ -7,7 +7,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
  * Everyday Hebrew vocabulary — four sets of 20 words each.
  * Sets 104–107: Greetings, Family, Food, Home & Daily Life.
  */
-object SeedDataHebrewEveryday {
+object WordDataHebrewEveryday {
 
     val sets = listOf(
         WordSetEntity(id = 104, name = "Приветствия и общение", languagePair = "he-ru", orderIndex = 4),

@@ -4,6 +4,7 @@ import com.example.kartonki.data.db.dao.SetRarityCount
 import com.example.kartonki.data.db.dao.SetWordCount
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
+import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.db.entity.WordSetEntity
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
@@ -45,6 +46,25 @@ class WordSetRepository @Inject constructor(
         }
 
     suspend fun getWordCountInSet(setId: Long): Int = wordSetDao.getWordCountInSet(setId)
+
+    /** Returns all words for the given IDs directly from the words table, ignoring collection status. */
+    suspend fun getWordsByIds(ids: List<Long>): List<Word> =
+        wordDao.getWordsByIds(ids).map { it.toDomain() }
+
+    private fun WordEntity.toDomain() = Word(
+        id = id,
+        original = original,
+        translation = translation,
+        definition = definition,
+        example = example,
+        rarity = Rarity.valueOf(rarity),
+        languagePair = languagePair,
+        pos = pos,
+        semanticGroup = semanticGroup,
+        transliteration = transliteration,
+        definitionNative = definitionNative,
+        exampleNative = exampleNative,
+    )
 
     /** Fetches word counts for many sets in one query, keyed by setId. */
     suspend fun getWordCountsForSets(setIds: List<Long>): Map<Long, Int> =

@@ -50,23 +50,6 @@ interface WordDao {
     @Delete
     suspend fun delete(word: WordEntity)
 
-    @Query("""
-        UPDATE words
-        SET    definitionNative = :defNative,
-               exampleNative    = :exNative
-        WHERE  original = :original
-          AND  languagePair = :langPair
-    """)
-    suspend fun updateNativeContent(
-        original: String,
-        langPair: String,
-        defNative: String,
-        exNative: String,
-    )
-
-    @Query("SELECT COUNT(*) FROM words WHERE languagePair = :langPair AND definitionNative IS NOT NULL")
-    suspend fun countWordsWithNativeContent(langPair: String): Int
-
     @Query("SELECT COUNT(*) FROM words WHERE languagePair = :langPair")
     suspend fun countWordsByLanguage(langPair: String): Int
 
@@ -76,15 +59,4 @@ interface WordDao {
      */
     @Query("SELECT * FROM words WHERE semanticGroup = :group AND languagePair = :langPair AND id NOT IN (:excludeIds) ORDER BY RANDOM() LIMIT :limit")
     suspend fun getWordsBySemanticGroup(group: String, langPair: String, excludeIds: List<Long>, limit: Int): List<WordEntity>
-
-    @Query("DELETE FROM words WHERE id IN (:ids)")
-    suspend fun deleteWordsByIds(ids: List<Long>)
-
-    /** Applies all native-content updates inside a single SQLite transaction. */
-    @androidx.room.Transaction
-    suspend fun patchNativeContent(langPair: String, data: Map<String, Pair<String, String>>) {
-        data.forEach { (original, content) ->
-            updateNativeContent(original, langPair, content.first, content.second)
-        }
-    }
 }

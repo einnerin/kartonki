@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 32,
+    version = 33,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -257,6 +257,30 @@ abstract class AppDatabase : RoomDatabase() {
                 db.execSQL("DELETE FROM word_sets WHERE languagePair = 'he-ru'")
                 db.execSQL("DELETE FROM progress WHERE wordId NOT IN (SELECT id FROM words)")
                 db.execSQL("DELETE FROM collection WHERE wordId NOT IN (SELECT id FROM words)")
+            }
+        }
+
+        /**
+         * Adds [isDefaultPvpCard] column and a UNIQUE index on (original, languagePair).
+         *
+         * The deduplication step runs first to handle any legacy duplicate rows that may
+         * exist in older installs — keeping the highest-ID row per (original, languagePair)
+         * pair so that the most recent data wins. After deduplication the UNIQUE index is
+         * guaranteed to succeed.
+         */
+        val MIGRATION_32_33 = object : Migration(32, 33) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                // 1. Remove legacy duplicates — keep the row with the highest id.
+                db.execSQL("""
+                    DELETE FROM words
+                    WHERE id NOT IN (
+                        SELECT MAX(id) FROM words GROUP BY original, languagePair
+                    )
+                """.trimIndent())
+                // 2. Add the new column (DEFAULT 0 = not a default PvP card).
+                db.execSQL("ALTER TABLE words ADD COLUMN isDefaultPvpCard INTEGER NOT NULL DEFAULT 0")
+                // 3. Enforce uniqueness going forward.
+                db.execSQL("CREATE UNIQUE INDEX idx_words_original_lang ON words(original, languagePair)")
             }
         }
     }

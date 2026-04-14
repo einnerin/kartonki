@@ -10,6 +10,7 @@ import com.example.kartonki.data.repository.AchievementRepository
 import com.example.kartonki.data.repository.CollectionRepository
 import com.example.kartonki.data.repository.PackRepository
 import com.example.kartonki.data.repository.ProgressRepository
+import com.example.kartonki.data.repository.WordSetRepository
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.navigation.Route
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -66,6 +67,7 @@ data class PvpGameUiState(
 class PvpGameViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val deckDao: DeckDao,
+    private val wordSetRepository: WordSetRepository,
     private val collectionRepository: CollectionRepository,
     private val achievementRepository: AchievementRepository,
     private val progressRepository: ProgressRepository,
@@ -104,6 +106,9 @@ class PvpGameViewModel @Inject constructor(
 
     private fun loadGame() {
         viewModelScope.launch {
+            // allWords is used only as distractor pool for quiz generation.
+            // Deck words are loaded directly so all deck cards are available
+            // regardless of the player's collection status.
             allWords = collectionRepository.getOwnedWords()
             val deck1Words = wordsForDeck(deck1Id)
             val deck2Words = wordsForDeck(deck2Id)
@@ -329,8 +334,8 @@ class PvpGameViewModel @Inject constructor(
     // ─── Helpers ──────────────────────────────────────────────────────────────
 
     private suspend fun wordsForDeck(deckId: Long): List<Word> {
-        val ids = deckDao.getWordIdsForDeck(deckId).toSet()
-        return allWords.filter { it.id in ids }
+        val ids = deckDao.getWordIdsForDeck(deckId)
+        return wordSetRepository.getWordsByIds(ids)
     }
 
     private fun buildHand(cards: List<Word>) = PvpGameLogic.buildHand(cards)

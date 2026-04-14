@@ -26,7 +26,7 @@ class SeedDataAuditTest {
     // ══════════════════════════════════════════════════════════════════════════
 
     @Test fun `EN — all words have required base fields`() {
-        fail("English words missing required base fields", SeedData.words.mapNotNull { w ->
+        fail("English words missing required base fields", WordDataEnglish.words.mapNotNull { w ->
             listOfNotNull(
                 if (w.translation.isBlank())  "Set ${w.setId} '${w.original}': blank translation" else null,
                 if (w.definition == null)     "Set ${w.setId} '${w.original}': null definition" else null,
@@ -39,15 +39,15 @@ class SeedDataAuditTest {
 
     @Test fun `EN — FILL_IN_BLANK example sentences contain the word`() {
         fail("English FILL_IN_BLANK broken — word absent from example",
-            SeedData.words.filter { w ->
+            WordDataEnglish.words.filter { w ->
                 w.example != null && !w.example.contains(w.original, ignoreCase = true)
             }.map { w -> "Set ${w.setId} '${w.original}': '${w.example}'" }
         )
     }
 
     @Test fun `EN — each set has at least 4 words`() {
-        val allEnWords = SeedData.words + SeedDataEnglishMore.words
-        val allEnSets  = SeedData.sets  + SeedDataEnglishMore.sets
+        val allEnWords = WordDataEnglish.words + WordDataEnglishExpanded.words
+        val allEnSets  = WordDataEnglish.sets  + WordDataEnglishExpanded.sets
         fail("English sets with fewer than 4 words (multiple-choice impossible)",
             allEnSets.mapNotNull { set ->
                 val count = allEnWords.count { it.setId == set.id }
@@ -63,7 +63,7 @@ class SeedDataAuditTest {
     @Test fun `EN-NATIVE — covers every English word in SeedData`() {
         val covered = SeedDataEnglishNative.data.keys
         fail("English words missing from SeedDataEnglishNative (FILL_IN_BLANK_NATIVE / DEFINITION_NATIVE broken)",
-            SeedData.words.filter { it.languagePair == "en-ru" && it.original !in covered }
+            WordDataEnglish.words.filter { it.languagePair == "en-ru" && it.original !in covered }
                 .map { "Set ${it.setId}: '${it.original}'" }
         )
     }
@@ -84,10 +84,10 @@ class SeedDataAuditTest {
     // ══════════════════════════════════════════════════════════════════════════
 
     @Test fun `HE — all words have required fields including native content`() {
-        val allHebrew = SeedDataHebrew.words +
-                SeedDataHebrewEveryday.words +
-                SeedDataHebrewMore.words +
-                SeedDataHebrewAdvanced.words
+        val allHebrew = WordDataHebrew.words +
+                WordDataHebrewEveryday.words +
+                WordDataHebrewMore.words +
+                WordDataHebrewAdvanced.words
         fail("Hebrew words missing required fields", allHebrew.mapNotNull { w ->
             listOfNotNull(
                 if (w.translation.isBlank())    "Set ${w.setId} '${w.original}': blank translation" else null,
@@ -103,10 +103,10 @@ class SeedDataAuditTest {
     }
 
     @Test fun `HE — FILL_IN_BLANK Hebrew example sentences contain the Hebrew word`() {
-        val allHebrew = SeedDataHebrew.words +
-                SeedDataHebrewEveryday.words +
-                SeedDataHebrewMore.words +
-                SeedDataHebrewAdvanced.words
+        val allHebrew = WordDataHebrew.words +
+                WordDataHebrewEveryday.words +
+                WordDataHebrewMore.words +
+                WordDataHebrewAdvanced.words
         fail("Hebrew FILL_IN_BLANK broken — Hebrew word absent from Hebrew example",
             allHebrew.filter { w ->
                 w.example != null && !w.example.contains(w.original)
@@ -115,10 +115,10 @@ class SeedDataAuditTest {
     }
 
     @Test fun `HE — FILL_IN_BLANK_NATIVE Russian examples embed the Hebrew word`() {
-        val allHebrew = SeedDataHebrew.words +
-                SeedDataHebrewEveryday.words +
-                SeedDataHebrewMore.words +
-                SeedDataHebrewAdvanced.words
+        val allHebrew = WordDataHebrew.words +
+                WordDataHebrewEveryday.words +
+                WordDataHebrewMore.words +
+                WordDataHebrewAdvanced.words
         fail("Hebrew FILL_IN_BLANK_NATIVE broken — Hebrew word absent from Russian example",
             allHebrew.filter { w ->
                 w.exampleNative != null && !w.exampleNative.contains(w.original)
@@ -127,10 +127,10 @@ class SeedDataAuditTest {
     }
 
     @Test fun `HE — each set has at least 4 words`() {
-        val allSets  = SeedDataHebrew.sets  + SeedDataHebrewEveryday.sets +
-                SeedDataHebrewMore.sets + SeedDataHebrewAdvanced.sets
-        val allWords = SeedDataHebrew.words + SeedDataHebrewEveryday.words +
-                SeedDataHebrewMore.words + SeedDataHebrewAdvanced.words
+        val allSets  = WordDataHebrew.sets  + WordDataHebrewEveryday.sets +
+                WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets
+        val allWords = WordDataHebrew.words + WordDataHebrewEveryday.words +
+                WordDataHebrewMore.words + WordDataHebrewAdvanced.words
         fail("Hebrew sets with fewer than 4 words",
             allSets.mapNotNull { set ->
                 val count = allWords.count { it.setId == set.id }
@@ -145,12 +145,12 @@ class SeedDataAuditTest {
 
     @Test fun `no duplicate words — same original within the same language pair`() {
         val allWords: List<WordEntity> =
-            SeedData.words +
-            SeedDataEnglishMore.words +
-            SeedDataHebrew.words +
-            SeedDataHebrewEveryday.words +
-            SeedDataHebrewMore.words +
-            SeedDataHebrewAdvanced.words
+            WordDataEnglish.words +
+            WordDataEnglishExpanded.words +
+            WordDataHebrew.words +
+            WordDataHebrewEveryday.words +
+            WordDataHebrewMore.words +
+            WordDataHebrewAdvanced.words
 
         // Group by (original, languagePair) — any group with >1 entry is a duplicate.
         val dupes = allWords
@@ -178,18 +178,18 @@ class SeedDataAuditTest {
         // appears in both SeedDataHebrew set 103 and SeedDataHebrewAdvanced set 114)
         // resolve to the word from the earlier file, matching physical insertion order.
         val allWords: List<WordEntity> =
-            SeedData.words +
-            SeedDataEnglishMore.words +
-            SeedDataHebrew.words +
-            SeedDataHebrewEveryday.words +
-            SeedDataHebrewMore.words +
-            SeedDataHebrewAdvanced.words
+            WordDataEnglish.words +
+            WordDataEnglishExpanded.words +
+            WordDataHebrew.words +
+            WordDataHebrewEveryday.words +
+            WordDataHebrewMore.words +
+            WordDataHebrewAdvanced.words
         val rarityByOriginal: Map<String, String> = buildMap {
             for (w in allWords) putIfAbsent(w.original, w.rarity)
         }
 
         val problems = mutableListOf<String>()
-        for (deck in SeedData.prebuiltDecks) {
+        for (deck in WordDataEnglish.prebuiltDecks) {
             val limits = DeckLevel.limitsFor(deck.level)
             val counts = mutableMapOf("COMMON" to 0, "UNCOMMON" to 0, "RARE" to 0, "EPIC" to 0, "LEGENDARY" to 0)
 
@@ -226,8 +226,8 @@ class SeedDataAuditTest {
     @Test fun `universality — fully-populated word gets all 7 quiz types in a set of 20`() {
         // Verify that any word with all fields in a 20-word set can use every quiz type.
         // This is the contract for future word additions in any language.
-        val w = SeedData.words.first { it.definition != null && it.example != null }
-        val set = SeedData.words.filter { it.setId == w.setId }.take(20)
+        val w = WordDataEnglish.words.first { it.definition != null && it.example != null }
+        val set = WordDataEnglish.words.filter { it.setId == w.setId }.take(20)
         // Count how many fields are non-null (a real word in the DB has all fields after the patch)
         val hasAllNative = set.all { it.definitionNative != null && it.exampleNative != null }
         // If the set doesn't have native content (pre-patch state), definition/native types won't appear.

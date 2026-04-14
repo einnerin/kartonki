@@ -2,7 +2,7 @@ package com.example.kartonki.data.repository
 
 import com.example.kartonki.data.AchievementCards
 import com.example.kartonki.data.PresetDecksVersion
-import com.example.kartonki.data.SeedData
+import com.example.kartonki.data.WordDataEnglish
 import com.example.kartonki.data.WordLoader
 import com.example.kartonki.data.db.dao.CollectionDao
 import com.example.kartonki.data.db.dao.DeckDao
@@ -35,7 +35,7 @@ class CollectionRepository @Inject constructor(
      * (weighted toward lower rarities), and creates preset decks.
      *
      * On subsequent launches after an app update: if [PresetDecksVersion.CURRENT] doesn't
-     * match the stored version, deletes all preset decks, recreates them from [SeedData],
+     * match the stored version, deletes all preset decks, recreates them from [WordDataEnglish],
      * and ensures any new preset words are added to the collection.
      *
      * PvE uses wordDao directly and does not require collection ownership.
@@ -58,7 +58,7 @@ class CollectionRepository @Inject constructor(
 
             // Words referenced by preset decks are always guaranteed so deck editors
             // show the correct cards immediately on first launch.
-            val presetOriginals = SeedData.prebuiltDecks.flatMap { it.wordOriginals }.toSet()
+            val presetOriginals = WordDataEnglish.prebuiltDecks.flatMap { it.wordOriginals }.toSet()
             val presetWordEntities = presetOriginals.mapNotNull { wordDao.getWordByOriginal(it) }
             val presetIds = presetWordEntities.map { it.id }.toSet()
 
@@ -106,7 +106,7 @@ class CollectionRepository @Inject constructor(
     }
 
     /**
-     * Deletes all existing preset decks, recreates them from [SeedData],
+     * Deletes all existing preset decks, recreates them from [WordDataEnglish],
      * and ensures the collection contains all words those decks reference.
      */
     private suspend fun migratePresetDecks() {
@@ -114,8 +114,8 @@ class CollectionRepository @Inject constructor(
         deckDao.clearAllPresetDeckCards()
         deckDao.deleteAllPresetDecks()
 
-        // Recreate from current SeedData
-        for (deckSeed in SeedData.prebuiltDecks) {
+        // Recreate from current WordDataEnglish
+        for (deckSeed in WordDataEnglish.prebuiltDecks) {
             val deckId = deckDao.insertDeck(
                 DeckEntity(name = deckSeed.name, level = deckSeed.level, isPreset = true, languagePair = deckSeed.languagePair)
             )

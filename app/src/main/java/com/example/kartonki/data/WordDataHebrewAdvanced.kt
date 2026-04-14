@@ -8,7 +8,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
  * Sets 114–117. IDs 10318–10447.
  * Heavy focus on tech/computer terminology with EPIC and LEGENDARY entries.
  */
-object SeedDataHebrewAdvanced {
+object WordDataHebrewAdvanced {
 
     val sets = listOf(
         WordSetEntity(id = 114, name = "IT и технологии (продвинутый)", languagePair = "he-ru", orderIndex = 14),

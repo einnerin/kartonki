@@ -4,7 +4,7 @@ package com.example.kartonki.data
  * Version of the word/set dataset shipped with the app.
  *
  * HOW TO ADD OR CHANGE WORD DATA:
- * 1. Edit the relevant SeedData*.kt file.
+ * 1. Edit the relevant WordData*.kt file.
  * 2. Bump [CURRENT] by 1.
  * 3. Build and deploy.
  *
@@ -12,5 +12,5 @@ package com.example.kartonki.data
  * upsert of all sets and words — no SQL migrations, no sentinel checks needed.
  */
 object WordDataVersion {
-    const val CURRENT = 10
+    const val CURRENT = 11
 }

@@ -3,7 +3,7 @@ package com.example.kartonki.data
 import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.db.entity.WordSetEntity
 
-object SeedDataHebrew {
+object WordDataHebrew {
 
     // ── Sets ──────────────────────────────────────────────────────────────────
     val sets: List<WordSetEntity> = listOf(

@@ -16,7 +16,7 @@ import javax.inject.Singleton
  * all subsequent calls in the same process return immediately.
  *
  * When word data changes:
- *   1. Edit the relevant SeedData*.kt file.
+ *   1. Edit the relevant WordData*.kt file.
  *   2. Bump [WordDataVersion.CURRENT].
  *   3. Ship the update — WordLoader detects the change on next launch automatically.
  */
@@ -44,39 +44,15 @@ class WordLoader @Inject constructor(
         val storedVersion = prefs.getWordDataVersion()
         if (storedVersion >= WordDataVersion.CURRENT) return
 
-        // ── Sets: INSERT OR IGNORE — preserves the user's isFavorite flag ──────
-        val allSets = SeedData.sets +
-                SeedDataHebrew.sets +
-                SeedDataHebrewEveryday.sets +
-                SeedDataHebrewMore.sets +
-                SeedDataHebrewAdvanced.sets +
-                SeedDataEnglishMore.sets
+        val allSets = WordDataEnglish.sets + WordDataEnglishExpanded.sets +
+                WordDataHebrew.sets + WordDataHebrewEveryday.sets +
+                WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets
         wordSetDao.insertSets(allSets)
 
-        // ── Words: INSERT OR REPLACE — always stores the latest content ─────────
-        // Chunked to avoid SQLite variable limits on large inserts.
-        val allWords = SeedData.words +
-                SeedDataHebrew.words +
-                SeedDataHebrewEveryday.words +
-                SeedDataHebrewMore.words +
-                SeedDataHebrewAdvanced.words +
-                SeedDataEnglishMore.words
-        allWords.chunked(500).forEach { chunk ->
-            wordDao.insertAllOrReplace(chunk)
-        }
-
-        // ── Native-language content patch for English words ────────────────────
-        wordDao.patchNativeContent("en-ru", SeedDataEnglishNative.data)
-
-        // ── One-time cleanup: remove ghost duplicate words (2078-2097) and
-        //    their now-empty transitional sets (84-86) added in versions 8-9.
-        //    All these words already exist in SeedDataEnglishMore with proper sets.
-        wordDao.deleteWordsByIds(
-            listOf(2078L,2079L,2080L,2081L,2082L,2083L,
-                   2084L,2085L,2086L,2087L,2088L,
-                   2089L,2090L,2091L,2092L,2093L,2094L,2095L,2096L,2097L)
-        )
-        wordSetDao.deleteSetsById(listOf(84L, 85L, 86L))
+        val allWords = WordDataEnglish.words + WordDataEnglishExpanded.words +
+                WordDataHebrew.words + WordDataHebrewEveryday.words +
+                WordDataHebrewMore.words + WordDataHebrewAdvanced.words
+        allWords.chunked(500).forEach { chunk -> wordDao.insertAllOrReplace(chunk) }
 
         prefs.setWordDataVersion(WordDataVersion.CURRENT)
     }

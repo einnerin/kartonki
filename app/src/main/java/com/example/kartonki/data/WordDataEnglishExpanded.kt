@@ -3,7 +3,7 @@ package com.example.kartonki.data
 import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.db.entity.WordSetEntity
 
-object SeedDataEnglishMore {
+object WordDataEnglishExpanded {
 
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(id = 200, name = "Супермаркет: основы", description = "Покупки в магазине — базовая лексика", orderIndex = 83, languagePair = "en-ru"),

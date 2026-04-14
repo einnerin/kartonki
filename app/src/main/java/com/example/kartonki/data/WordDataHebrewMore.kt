@@ -7,7 +7,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
  * Additional Hebrew vocabulary — six sets of 25 words each.
  * Sets 108–113: Transport, City, Clothing, Weather, Cinema, Filming.
  */
-object SeedDataHebrewMore {
+object WordDataHebrewMore {
 
     val sets = listOf(
         WordSetEntity(id = 108, name = "Транспорт",          languagePair = "he-ru", orderIndex = 8),
