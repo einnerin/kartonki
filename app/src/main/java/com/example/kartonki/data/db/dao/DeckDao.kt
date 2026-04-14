@@ -55,4 +55,12 @@ interface DeckDao {
 
     @Query("DELETE FROM deck_cards WHERE deckId = :deckId")
     suspend fun clearDeck(deckId: Long)
+
+    /** Removes all cards from every preset deck (used during preset migration). */
+    @Query("DELETE FROM deck_cards WHERE deckId IN (SELECT id FROM decks WHERE isPreset = 1)")
+    suspend fun clearAllPresetDeckCards()
+
+    /** Deletes all preset deck rows (call after clearAllPresetDeckCards). */
+    @Query("DELETE FROM decks WHERE isPreset = 1")
+    suspend fun deleteAllPresetDecks()
 }

@@ -1,6 +1,7 @@
 package com.example.kartonki.data.repository
 
 import com.example.kartonki.data.AchievementCards
+import com.example.kartonki.data.PresetDecksVersion
 import com.example.kartonki.data.SeedData
 import com.example.kartonki.data.WordLoader
 import com.example.kartonki.data.db.dao.CollectionDao
@@ -10,6 +11,7 @@ import com.example.kartonki.data.db.entity.CollectionEntity
 import com.example.kartonki.data.db.entity.DeckCardCrossRef
 import com.example.kartonki.data.db.entity.DeckEntity
 import com.example.kartonki.data.db.entity.WordEntity
+import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import javax.inject.Inject
@@ -22,38 +24,67 @@ class CollectionRepository @Inject constructor(
     private val deckDao: DeckDao,
     private val wordSetRepository: WordSetRepository,
     private val wordLoader: WordLoader,
+    private val prefs: UserPreferencesRepository,
 ) {
     /**
      * On first run: seeds words, gives a starter collection of ~500 cards
-     * (weighted toward lower rarities), and creates the default deck.
+     * (weighted toward lower rarities), and creates preset decks.
+     *
+     * On subsequent launches after an app update: if [PresetDecksVersion.CURRENT] doesn't
+     * match the stored version, deletes all preset decks, recreates them from [SeedData],
+     * and ensures any new preset words are added to the collection.
+     *
      * PvE uses wordDao directly and does not require collection ownership.
      */
     suspend fun ensureStarterPack() {
         wordLoader.ensureFresh()
-        if (collectionDao.count() > 0) return
-        val allWords = wordDao.getAllWordsOnce()
 
-        // Collect all words referenced by preset decks — these must always be owned
-        // so deck editors show the correct cards immediately on first launch.
-        val presetOriginals = SeedData.prebuiltDecks.flatMap { it.wordOriginals }.toSet()
-        val presetWordEntities = presetOriginals.mapNotNull { wordDao.getWordByOriginal(it) }
-        val presetIds = presetWordEntities.map { it.id }.toSet()
+        val isFirstRun = collectionDao.count() == 0
+        if (isFirstRun) {
+            val allWords = wordDao.getAllWordsOnce()
 
-        // Fill the remaining slots with a random selection (preset words are excluded
-        // to avoid double-counting toward the STARTER_COLLECTION_SIZE cap).
-        val starterWords = selectStarterCards(allWords, excludeIds = presetIds)
+            // Collect all words referenced by preset decks — these must always be owned
+            // so deck editors show the correct cards immediately on first launch.
+            val presetOriginals = SeedData.prebuiltDecks.flatMap { it.wordOriginals }.toSet()
+            val presetWordEntities = presetOriginals.mapNotNull { wordDao.getWordByOriginal(it) }
+            val presetIds = presetWordEntities.map { it.id }.toSet()
 
-        // Insert everything: guaranteed preset words + random fill
-        val combined = (presetWordEntities + starterWords).distinctBy { it.id }
-        collectionDao.insertAll(combined.map { CollectionEntity(it.id) })
+            // Fill the remaining slots with a random selection (preset words are excluded
+            // to avoid double-counting toward the STARTER_COLLECTION_SIZE cap).
+            val starterWords = selectStarterCards(allWords, excludeIds = presetIds)
 
-        if (deckDao.getDeckCount() == 0) {
-            for (deckSeed in SeedData.prebuiltDecks) {
-                val deckId = deckDao.insertDeck(DeckEntity(name = deckSeed.name, level = deckSeed.level))
-                for (original in deckSeed.wordOriginals) {
-                    val word = wordDao.getWordByOriginal(original) ?: continue
-                    deckDao.addCardToDeck(DeckCardCrossRef(deckId = deckId, wordId = word.id))
-                }
+            // Insert everything: guaranteed preset words + random fill
+            val combined = (presetWordEntities + starterWords).distinctBy { it.id }
+            collectionDao.insertAll(combined.map { CollectionEntity(it.id) })
+        }
+
+        // (Re)create preset decks if version has changed or this is a first run.
+        val storedVersion = prefs.getPresetDecksVersion()
+        if (storedVersion != PresetDecksVersion.CURRENT) {
+            migratePresetDecks()
+            prefs.setPresetDecksVersion(PresetDecksVersion.CURRENT)
+        }
+    }
+
+    /**
+     * Deletes all existing preset decks, recreates them from [SeedData],
+     * and ensures the collection contains all words those decks reference.
+     */
+    private suspend fun migratePresetDecks() {
+        // Remove stale preset decks
+        deckDao.clearAllPresetDeckCards()
+        deckDao.deleteAllPresetDecks()
+
+        // Recreate from current SeedData
+        for (deckSeed in SeedData.prebuiltDecks) {
+            val deckId = deckDao.insertDeck(
+                DeckEntity(name = deckSeed.name, level = deckSeed.level, isPreset = true)
+            )
+            for (original in deckSeed.wordOriginals) {
+                val word = wordDao.getWordByOriginal(original) ?: continue
+                deckDao.addCardToDeck(DeckCardCrossRef(deckId = deckId, wordId = word.id))
+                // Ensure this word is in the collection (new preset words added in updates)
+                collectionDao.insertAll(listOf(CollectionEntity(word.id)))
             }
         }
     }

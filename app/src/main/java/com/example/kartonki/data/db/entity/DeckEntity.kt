@@ -8,4 +8,6 @@ data class DeckEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val name: String,
     val level: Int = 1,
+    /** True for decks created by the app (preset). Allows safe migration on updates. */
+    val isPreset: Boolean = false,
 )

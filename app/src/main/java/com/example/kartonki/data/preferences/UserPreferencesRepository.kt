@@ -38,6 +38,7 @@ class UserPreferencesRepository @Inject constructor(
         const val SESSION_EXCLUDED_WORD_IDS     = "session_excluded_ids"  // "id,id,..." temp
         const val PROBLEM_CHIP_HINT_SHOWN       = "problem_chip_hint"     // Boolean
         const val WORD_DATA_VERSION             = "word_data_version"    // Int
+        const val PRESET_DECKS_VERSION          = "preset_decks_version" // Int
     }
 
     companion object {
@@ -132,6 +133,9 @@ class UserPreferencesRepository @Inject constructor(
 
     fun getWordDataVersion(): Int = prefs.getInt(Keys.WORD_DATA_VERSION, 0)
     fun setWordDataVersion(version: Int) = prefs.edit().putInt(Keys.WORD_DATA_VERSION, version).apply()
+
+    fun getPresetDecksVersion(): Int = prefs.getInt(Keys.PRESET_DECKS_VERSION, 0)
+    fun setPresetDecksVersion(version: Int) = prefs.edit().putInt(Keys.PRESET_DECKS_VERSION, version).apply()
 
     val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
         val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)
