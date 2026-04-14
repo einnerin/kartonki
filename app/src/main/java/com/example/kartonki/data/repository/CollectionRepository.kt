@@ -1,6 +1,5 @@
 package com.example.kartonki.data.repository
 
-import com.example.kartonki.data.AchievementCards
 import com.example.kartonki.data.PresetDecksVersion
 import com.example.kartonki.data.SeedData
 import com.example.kartonki.data.WordLoader
@@ -10,7 +9,6 @@ import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.entity.CollectionEntity
 import com.example.kartonki.data.db.entity.DeckCardCrossRef
 import com.example.kartonki.data.db.entity.DeckEntity
-import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
@@ -52,34 +50,11 @@ class CollectionRepository @Inject constructor(
     private suspend fun doEnsureStarterPack() {
         wordLoader.ensureFresh()
 
-        val isFirstRun = collectionDao.count() == 0
-        if (isFirstRun) {
-            val allWords = wordDao.getAllWordsOnce()
-
-            // Collect all words referenced by preset decks — these must always be owned
-            // so deck editors show the correct cards immediately on first launch.
-            val presetOriginals = SeedData.prebuiltDecks.flatMap { it.wordOriginals }.toSet()
-            val presetWordEntities = presetOriginals.mapNotNull { wordDao.getWordByOriginal(it) }
-            val presetIds = presetWordEntities.map { it.id }.toSet()
-
-            // Fill the remaining slots with a random selection (preset words are excluded
-            // to avoid double-counting toward the STARTER_COLLECTION_SIZE cap).
-            val starterWords = selectStarterCards(allWords, excludeIds = presetIds)
-
-            // Insert everything: guaranteed preset words + random fill
-            val combined = (presetWordEntities + starterWords).distinctBy { it.id }
-            collectionDao.insertAll(combined.map { CollectionEntity(it.id) })
-        }
-
-        // For small language packs (non-English), always ensure every word is in the
-        // collection. INSERT OR IGNORE makes this idempotent — existing rows are skipped,
-        // and newly added words (from WordDataVersion bumps) are added automatically.
-        for (langPair in SMALL_LANGUAGE_PACKS) {
-            val words = wordDao.getAllWordsByLanguage(langPair)
-            if (words.isNotEmpty()) {
-                collectionDao.insertAll(words.map { CollectionEntity(it.id) })
-            }
-        }
+        // All words of every language are available from the start.
+        // INSERT OR IGNORE is idempotent: existing rows are skipped, and any
+        // new words added in future WordDataVersion bumps appear automatically.
+        val allWords = wordDao.getAllWordsOnce()
+        collectionDao.insertAll(allWords.map { CollectionEntity(it.id) })
 
         // (Re)create preset decks if version has changed or this is a first run.
         val storedVersion = prefs.getPresetDecksVersion()
@@ -135,41 +110,4 @@ class CollectionRepository @Inject constructor(
     }
 
     suspend fun getTotalCount(): Int = collectionDao.count()
-
-    /**
-     * Picks ~500 starter cards from all available words.
-     * Weighted toward lower rarities so higher-rarity cards stay rare and
-     * desirable from packs.
-     */
-    private fun selectStarterCards(
-        allWords: List<WordEntity>,
-        excludeIds: Set<Long> = emptySet(),
-    ): List<WordEntity> {
-        val byRarity = allWords
-            .filter { it.id !in AchievementCards.ALL_EXCLUSIVE_IDS && it.id !in excludeIds }
-            .groupBy { it.rarity }
-        val result = mutableListOf<WordEntity>()
-        listOf(
-            "COMMON"    to 300,
-            "UNCOMMON"  to 130,
-            "RARE"      to 50,
-            "EPIC"      to 15,
-            "LEGENDARY" to 5,
-        ).forEach { (rarity, limit) ->
-            result.addAll(byRarity[rarity]?.shuffled()?.take(limit) ?: emptyList())
-        }
-        return result.take(STARTER_COLLECTION_SIZE)
-    }
-
-    companion object {
-        private const val STARTER_COLLECTION_SIZE = 500
-
-        /**
-         * Language pairs whose entire word catalogue is unlocked from the start.
-         * English ("en-ru") uses a weighted random starter pack instead because
-         * its catalogue is large enough to make acquiring cards meaningful.
-         * Any new non-English language should be added here.
-         */
-        private val SMALL_LANGUAGE_PACKS = listOf("he-ru")
-    }
 }
