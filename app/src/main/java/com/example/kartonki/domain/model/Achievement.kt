@@ -5,6 +5,7 @@ enum class AchievementId(
     val description: String,
     val icon: String,
     val rewardWordOriginal: String,
+    val rewardWordTranslation: String,
     val isHidden: Boolean = false,
 ) {
     // ── Visible achievements ──────────────────────────────────────────────────
@@ -14,60 +15,70 @@ enum class AchievementId(
         description = "Завершить первую учебную сессию",
         icon = "🌱",
         rewardWordOriginal = "paradigm",
+        rewardWordTranslation = "парадигма",
     ),
     DILIGENT(
         title = "Прилежный",
         description = "Заниматься 10 разных дней",
         icon = "📖",
         rewardWordOriginal = "inference",
+        rewardWordTranslation = "умозаключение",
     ),
     FIRST_FIGHT(
         title = "Первый бой",
         description = "Сыграть первый PvP матч",
         icon = "⚔️",
         rewardWordOriginal = "conjecture",
+        rewardWordTranslation = "предположение/гипотеза",
     ),
     FIRST_WIN(
         title = "Победитель",
         description = "Выиграть первый PvP матч",
         icon = "🏆",
         rewardWordOriginal = "refute",
+        rewardWordTranslation = "опровергать",
     ),
     STREAK_5(
         title = "В потоке",
         description = "Учиться 5 дней подряд",
         icon = "🔥",
         rewardWordOriginal = "elucidate",
+        rewardWordTranslation = "разъяснять",
     ),
     EXPERT(
         title = "Знаток",
         description = "Изучить 50 слов (уровень 3+)",
         icon = "📚",
         rewardWordOriginal = "accomplish",
+        rewardWordTranslation = "достигать",
     ),
     POLYGLOT(
         title = "Полиглот",
         description = "Изучить 200 слов",
         icon = "🌍",
         rewardWordOriginal = "fluent",
+        rewardWordTranslation = "свободно владеющий языком",
     ),
     STREAK_7(
         title = "Серия",
         description = "Учиться 7 дней подряд",
         icon = "⚡",
         rewardWordOriginal = "consistent",
+        rewardWordTranslation = "последовательный",
     ),
     COLLECTOR(
         title = "Коллекционер",
         description = "Собрать полную колоду из 20 карточек",
         icon = "🎴",
         rewardWordOriginal = "dedicate",
+        rewardWordTranslation = "посвящать",
     ),
     LEGEND(
         title = "Легенда",
         description = "Получить все видимые достижения",
         icon = "⭐",
         rewardWordOriginal = "excel",
+        rewardWordTranslation = "преуспевать",
     ),
 
     // ── Hidden achievements ───────────────────────────────────────────────────
@@ -79,6 +90,7 @@ enum class AchievementId(
         description = "Выиграть PvP матч с перевесом в счёте в 2 и более раза",
         icon = "👑",
         rewardWordOriginal = "diaphanous",
+        rewardWordTranslation = "прозрачный/тонкий",
         isHidden = true,
     ),
     NIGHT_OWL(
@@ -86,6 +98,7 @@ enum class AchievementId(
         description = "Пройти учебную сессию после 23:00",
         icon = "🦉",
         rewardWordOriginal = "lugubrious",
+        rewardWordTranslation = "мрачный/унылый",
         isHidden = true,
     ),
     PERFECTIONIST(
@@ -93,6 +106,7 @@ enum class AchievementId(
         description = "Пройти учебную сессию без единой ошибки",
         icon = "💎",
         rewardWordOriginal = "obstreperous",
+        rewardWordTranslation = "шумный/буйный",
         isHidden = true,
     ),
     DEEP_LEARNER(
@@ -100,6 +114,7 @@ enum class AchievementId(
         description = "Довести 20 слов до максимального уровня",
         icon = "🧠",
         rewardWordOriginal = "abstruse",
+        rewardWordTranslation = "трудный для понимания",
         isHidden = true,
     ),
     VETERAN(
@@ -107,6 +122,7 @@ enum class AchievementId(
         description = "Провести 10 PvP матчей",
         icon = "🎖️",
         rewardWordOriginal = "meretricious",
+        rewardWordTranslation = "мишурный/показной",
         isHidden = true,
     ),
     CENTURION(
@@ -114,6 +130,7 @@ enum class AchievementId(
         description = "Дать 100 правильных ответов суммарно",
         icon = "🛡️",
         rewardWordOriginal = "pellucid",
+        rewardWordTranslation = "кристально ясный",
         isHidden = true,
     ),
     DRAW_MASTER(
@@ -121,6 +138,7 @@ enum class AchievementId(
         description = "Завершить PvP матч вничью",
         icon = "🤝",
         rewardWordOriginal = "platitudinous",
+        rewardWordTranslation = "банальный",
         isHidden = true,
     ),
     MONDAY_SCHOLAR(
@@ -128,6 +146,7 @@ enum class AchievementId(
         description = "Пройти учебную сессию в понедельник",
         icon = "📅",
         rewardWordOriginal = "recondite",
+        rewardWordTranslation = "малоизвестный/сокровенный",
         isHidden = true,
     ),
     GOLDEN_SHOT(
@@ -135,6 +154,7 @@ enum class AchievementId(
         description = "Набрать 50 очков в одном PvP матче",
         icon = "✨",
         rewardWordOriginal = "stentorian",
+        rewardWordTranslation = "громоподобный",
         isHidden = true,
     ),
     WEEKLY_GRIND(
@@ -142,6 +162,7 @@ enum class AchievementId(
         description = "Заниматься 5 дней в течение одной недели",
         icon = "🗓️",
         rewardWordOriginal = "ineffaceable",
+        rewardWordTranslation = "неизгладимый",
         isHidden = true,
     ),
     WHITE_FLAG(
@@ -149,6 +170,7 @@ enum class AchievementId(
         description = "Сдаться в PvP матче",
         icon = "🏳️",
         rewardWordOriginal = "sempiternal",
+        rewardWordTranslation = "вечный",
         isHidden = true,
     ),
     EXPLORER(
@@ -156,6 +178,7 @@ enum class AchievementId(
         description = "Изучить слова из 5 разных тематических групп",
         icon = "🗺️",
         rewardWordOriginal = "desideratum",
+        rewardWordTranslation = "насущная потребность",
         isHidden = true,
     ),
     MARATHON(
@@ -163,6 +186,7 @@ enum class AchievementId(
         description = "Провести 3 PvP матча за один день",
         icon = "🏃",
         rewardWordOriginal = "synecdoche",
+        rewardWordTranslation = "синекдоха",
         isHidden = true,
     ),
     RUSTY(
@@ -170,6 +194,7 @@ enum class AchievementId(
         description = "Вернуться к учёбе после 7-дневного перерыва",
         icon = "🦀",
         rewardWordOriginal = "solipsism",
+        rewardWordTranslation = "солипсизм",
         isHidden = true,
     ),
     LONG_WORD(
@@ -177,6 +202,7 @@ enum class AchievementId(
         description = "Выучить слово длиннее 12 символов",
         icon = "🔤",
         rewardWordOriginal = "perspicacious",
+        rewardWordTranslation = "проницательный",
         isHidden = true,
     ),
 }

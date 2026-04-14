@@ -244,6 +244,16 @@ private fun AchievementCard(state: AchievementState) {
                         overflow = TextOverflow.Ellipsis,
                         textAlign = TextAlign.Center,
                     )
+                    if (isUnlocked) {
+                        Text(
+                            text = id.rewardWordTranslation,
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis,
+                            textAlign = TextAlign.Center,
+                        )
+                    }
                 }
             }
 
@@ -360,6 +370,16 @@ private fun HiddenAchievementCard(state: AchievementState) {
                         overflow = TextOverflow.Ellipsis,
                         textAlign = TextAlign.Center,
                     )
+                    if (isUnlocked) {
+                        Text(
+                            text = id.rewardWordTranslation,
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis,
+                            textAlign = TextAlign.Center,
+                        )
+                    }
                 }
             }
 

@@ -115,6 +115,11 @@ fun AchievementNotificationDialog(
                             fontWeight = FontWeight.ExtraBold,
                         )
                         Text(
+                            text = achievement.rewardWordTranslation,
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = Color.White.copy(alpha = 0.8f),
+                        )
+                        Text(
                             text = "добавлена в вашу коллекцию",
                             style = MaterialTheme.typography.bodySmall,
                             color = Color.White.copy(alpha = 0.5f),
