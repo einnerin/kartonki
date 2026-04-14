@@ -10,4 +10,5 @@ data class WordSetEntity(
     val description: String = "",
     val orderIndex: Int = 0,
     val languagePair: String = "en-ru",
+    val isFavorite: Boolean = false,
 )

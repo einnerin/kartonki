@@ -20,6 +20,10 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Tab
+import androidx.compose.material3.TabRow
+import androidx.compose.material3.TabRowDefaults
+import androidx.compose.material3.TabRowDefaults.tabIndicatorOffset
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
@@ -30,6 +34,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.TopAppBar
@@ -67,6 +73,8 @@ import com.example.kartonki.ui.theme.BgDeep
 import com.example.kartonki.ui.theme.BgMedium
 import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
+
+private val FavoriteGold = Color(0xFFFFC107)
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -109,6 +117,39 @@ fun StudyScreen(
                 .fillMaxSize()
                 .padding(innerPadding),
         ) {
+            // ── Tabs: All / Favourites ──────────────────────────────────────
+            val tabTitles = listOf(
+                "Все наборы",
+                "⭐ Избранное" + if (uiState.favoriteCount > 0) " (${uiState.favoriteCount})" else "",
+            )
+            TabRow(
+                selectedTabIndex = uiState.selectedTab,
+                containerColor = BgMedium,
+                contentColor = Color.White,
+                indicator = { tabPositions ->
+                    TabRowDefaults.SecondaryIndicator(
+                        modifier = Modifier.tabIndicatorOffset(tabPositions[uiState.selectedTab]),
+                        color = FavoriteGold,
+                    )
+                },
+            ) {
+                tabTitles.forEachIndexed { index, title ->
+                    Tab(
+                        selected = uiState.selectedTab == index,
+                        onClick = { viewModel.selectTab(index) },
+                        text = {
+                            Text(
+                                text = title,
+                                style = MaterialTheme.typography.labelMedium,
+                                fontWeight = if (uiState.selectedTab == index) FontWeight.Bold else FontWeight.Normal,
+                            )
+                        },
+                        selectedContentColor = Color.White,
+                        unselectedContentColor = Color.White.copy(alpha = 0.5f),
+                    )
+                }
+            }
+
             RarityFilterChips(
                 activeFilters = uiState.activeFilters,
                 onToggle = { viewModel.toggleFilter(it) },
@@ -150,8 +191,7 @@ fun StudyScreen(
                     .collect { (index, offset) -> viewModel.saveScrollPosition(index, offset) }
             }
 
-            // Scroll to top only when the user explicitly toggles a filter chip
-            // (filterVersion is 0 on initial composition, so we skip that first run).
+            // Scroll to top when the user switches tab or toggles a filter chip.
             LaunchedEffect(uiState.filterVersion) {
                 if (uiState.filterVersion > 0) listState.scrollToItem(0)
             }
@@ -159,6 +199,30 @@ fun StudyScreen(
             Box(modifier = Modifier.fillMaxSize()) {
                 if (uiState.isLoading) {
                     CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
+                } else if (uiState.selectedTab == 1 && uiState.favoriteCount == 0) {
+                    // Empty state for Favourites tab
+                    Column(
+                        modifier = Modifier
+                            .align(Alignment.Center)
+                            .padding(32.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(8.dp),
+                    ) {
+                        Text("⭐", fontSize = 48.sp)
+                        Text(
+                            text = "Нет избранных наборов",
+                            style = MaterialTheme.typography.titleMedium,
+                            color = Color.White,
+                            fontWeight = FontWeight.Bold,
+                            textAlign = TextAlign.Center,
+                        )
+                        Text(
+                            text = "Нажми звёздочку на любом наборе, чтобы добавить его сюда",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = TextSecondary,
+                            textAlign = TextAlign.Center,
+                        )
+                    }
                 } else {
                     LazyColumn(
                         state = listState,
@@ -170,6 +234,7 @@ fun StudyScreen(
                             WordSetCard(
                                 item = item,
                                 onClick = { onNavigateToSetDetail(item.id) },
+                                onToggleFavorite = { viewModel.toggleFavorite(item.id) },
                             )
                         }
                     }
@@ -255,7 +320,11 @@ private fun ProblemChipHintCard(
 }
 
 @Composable
-private fun WordSetCard(item: WordSetUiItem, onClick: () -> Unit) {
+private fun WordSetCard(
+    item: WordSetUiItem,
+    onClick: () -> Unit,
+    onToggleFavorite: () -> Unit,
+) {
     val rarityColor = Color(item.rarity.colorArgb)
     val progress = if (item.totalWords == 0) 0f
                    else item.introducedWords.toFloat() / item.totalWords
@@ -298,14 +367,28 @@ private fun WordSetCard(item: WordSetUiItem, onClick: () -> Unit) {
                         )
                     }
                 }
-                Column(horizontalAlignment = Alignment.End) {
+                Column(
+                    horizontalAlignment = Alignment.End,
+                    verticalArrangement = Arrangement.spacedBy(2.dp),
+                ) {
                     RarityBadge(rarity = item.rarity)
-                    Spacer(Modifier.height(4.dp))
                     Text(
                         text = "${item.introducedWords} / ${item.totalWords}",
                         style = MaterialTheme.typography.labelSmall,
                         color = TextSecondary,
                         fontWeight = FontWeight.Medium,
+                    )
+                    // Favourite toggle — small, tappable star
+                    Icon(
+                        imageVector = if (item.isFavorite) Icons.Filled.Star else Icons.Outlined.Star,
+                        contentDescription = if (item.isFavorite) "Убрать из избранного" else "Добавить в избранное",
+                        tint = if (item.isFavorite) FavoriteGold else Color.White.copy(alpha = 0.35f),
+                        modifier = Modifier
+                            .clickable(
+                                interactionSource = remember { MutableInteractionSource() },
+                                indication = null,
+                                onClick = onToggleFavorite,
+                            ),
                     )
                 }
             }

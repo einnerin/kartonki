@@ -80,6 +80,11 @@ class WordSetRepository @Inject constructor(
         wordDao.patchNativeContent("en-ru", SeedDataEnglishNative.data)
     }
 
+    suspend fun toggleFavorite(setId: Long) {
+        val set = wordSetDao.getSetById(setId) ?: return
+        wordSetDao.setFavorite(setId, !set.isFavorite)
+    }
+
     suspend fun getSetsByLanguage(languagePair: String): List<WordSetEntity> =
         wordSetDao.getSetsByLanguage(languagePair)
 

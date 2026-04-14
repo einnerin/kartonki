@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 22,
+    version = 23,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -91,6 +91,12 @@ abstract class AppDatabase : RoomDatabase() {
         val MIGRATION_21_22 = object : Migration(21, 22) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE pvp_matches ADD COLUMN wasSurrender INTEGER NOT NULL DEFAULT 0")
+            }
+        }
+        /** Adds isFavorite flag to word_sets for the Favourites tab in StudyScreen. */
+        val MIGRATION_22_23 = object : Migration(22, 23) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE word_sets ADD COLUMN isFavorite INTEGER NOT NULL DEFAULT 0")
             }
         }
     }

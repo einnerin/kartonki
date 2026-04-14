@@ -23,6 +23,7 @@ data class WordSetUiItem(
     val totalWords: Int,
     val introducedWords: Int,
     val rarity: Rarity = Rarity.COMMON,
+    val isFavorite: Boolean = false,
 )
 
 data class StudyListUiState(
@@ -32,14 +33,19 @@ data class StudyListUiState(
     val problemWordCount: Int = 0,
     val showProblemChipHint: Boolean = false,
     /**
-     * Increments each time the user actively toggles a filter chip.
-     * Used as a LaunchedEffect key so the list scrolls to top only on an explicit
-     * filter change — not on initial composition or when returning from a session.
+     * Increments each time the user actively toggles a filter chip or switches tabs.
+     * Used as a LaunchedEffect key so the list scrolls to top only on an explicit change.
      */
     val filterVersion: Int = 0,
+    /** 0 = all sets, 1 = favourites only. */
+    val selectedTab: Int = 0,
 ) {
-    val filteredSets: List<WordSetUiItem> get() =
-        if (activeFilters.isEmpty()) sets else sets.filter { it.rarity in activeFilters }
+    val favoriteCount: Int get() = sets.count { it.isFavorite }
+
+    val filteredSets: List<WordSetUiItem> get() {
+        val base = if (selectedTab == 1) sets.filter { it.isFavorite } else sets
+        return if (activeFilters.isEmpty()) base else base.filter { it.rarity in activeFilters }
+    }
 }
 
 @HiltViewModel
@@ -69,6 +75,17 @@ class StudyViewModel @Inject constructor(
             prefs.languagePair.collect { pair ->
                 loadSets(pair, showLoading = true)
             }
+        }
+    }
+
+    fun selectTab(index: Int) {
+        _uiState.update { it.copy(selectedTab = index, filterVersion = it.filterVersion + 1) }
+    }
+
+    fun toggleFavorite(setId: Long) {
+        viewModelScope.launch {
+            wordSetRepository.toggleFavorite(setId)
+            loadSets(prefs.languagePair.first(), showLoading = false)
         }
     }
 
@@ -109,6 +126,7 @@ class StudyViewModel @Inject constructor(
                 totalWords = total,
                 introducedWords = progress.count { it.level > 0 },
                 rarity = rarity,
+                isFavorite = set.isFavorite,
             )
         }
         // Load problem word count and determine whether to show the first-time hint

@@ -47,6 +47,9 @@ interface WordSetDao {
     @Query("SELECT rarity, COUNT(*) as count FROM words WHERE setId = :setId GROUP BY rarity")
     suspend fun getRarityCountsForSet(setId: Long): List<RarityCount>
 
+    @Query("UPDATE word_sets SET isFavorite = :value WHERE id = :id")
+    suspend fun setFavorite(id: Long, value: Boolean)
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertSets(sets: List<WordSetEntity>)
 }
