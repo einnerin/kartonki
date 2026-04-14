@@ -85,14 +85,24 @@ class WordSetRepository @Inject constructor(
             wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 230..239 })
             wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in 230..239 })
         }
-        // Sets 240–248 (split from thematic basics sets 200–219): seed new words when the
-        // advanced sets are underpopulated. For existing users the migration already created
-        // the set rows and moved old words; this sentinel inserts the new word IDs (≥3076).
+        // Sentinel for sets 200–219 (basics) after the set-split: ensures all wordsJ are
+        // present and restores any missing second-batch words (2491-2568 range) for users
+        // whose DB was seeded before those words were added. Uses INSERT OR IGNORE so no
+        // existing word is overwritten.
+        val expected200_219 = SeedDataEnglishMore.words.count { it.setId in 200L..219L }
+        val actual200_219   = wordSetDao.getWordCountInRange(200L, 219L)
+        if (actual200_219 < expected200_219) {
+            wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 200..219 })
+            wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in 200L..219L })
+        }
+        // Sentinel for advanced sets 240–248 after the set-split. The set-220 sentinel
+        // (id >= 220) may have already inserted wordsK for existing users; if so,
+        // actual == expected and this block correctly skips. Otherwise it seeds them.
         val expected240_248 = SeedDataEnglishMore.words.count { it.setId in 240L..248L }
         val actual240_248   = wordSetDao.getWordCountInRange(240L, 248L)
         if (actual240_248 < expected240_248) {
             wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 240..248 })
-            wordDao.insertAll(SeedDataEnglishMore.words.filter { it.id >= 3076L })
+            wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in 240L..248L })
         }
         // Patch English words with Russian-language native content (definitionNative + exampleNative).
         // Runs once: skipped when the count of already-patched English words matches the dataset.
