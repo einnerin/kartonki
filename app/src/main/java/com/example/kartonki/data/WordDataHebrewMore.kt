@@ -10,12 +10,12 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewMore {
 
     val sets = listOf(
-        WordSetEntity(id = 108, name = "Транспорт",          languagePair = "he-ru", orderIndex = 8),
-        WordSetEntity(id = 109, name = "Город и места",      languagePair = "he-ru", orderIndex = 9),
-        WordSetEntity(id = 110, name = "Одежда",             languagePair = "he-ru", orderIndex = 10),
-        WordSetEntity(id = 111, name = "Погода и природа",   languagePair = "he-ru", orderIndex = 11),
-        WordSetEntity(id = 112, name = "Кино",               languagePair = "he-ru", orderIndex = 12),
-        WordSetEntity(id = 113, name = "Съёмочный процесс",  languagePair = "he-ru", orderIndex = 13),
+        WordSetEntity(id = 108, name = "Транспорт",          description = "Виды транспорта и дорога A2",        languagePair = "he-ru", orderIndex = 8),
+        WordSetEntity(id = 109, name = "Город и места",      description = "Городские объекты и природа A2",    languagePair = "he-ru", orderIndex = 9),
+        WordSetEntity(id = 110, name = "Одежда",             description = "Одежда и аксессуары A2",            languagePair = "he-ru", orderIndex = 10),
+        WordSetEntity(id = 111, name = "Погода и природа",   description = "Климат, сезоны и природа A2/B1",   languagePair = "he-ru", orderIndex = 11),
+        WordSetEntity(id = 112, name = "Кино",               description = "Жанры, люди и термины кино B1",    languagePair = "he-ru", orderIndex = 12),
+        WordSetEntity(id = 113, name = "Съёмочный процесс",  description = "Производство фильмов B1/B2",        languagePair = "he-ru", orderIndex = 13),
     )
 
     val words = listOf(
