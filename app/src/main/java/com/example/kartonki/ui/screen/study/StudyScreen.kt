@@ -234,7 +234,7 @@ fun StudyScreen(
                         state = listState,
                         modifier = Modifier.fillMaxSize(),
                         contentPadding = PaddingValues(16.dp),
-                        verticalArrangement = Arrangement.spacedBy(14.dp),
+                        verticalArrangement = Arrangement.spacedBy(10.dp),
                     ) {
                         items(uiState.filteredSets, key = { it.id }) { item ->
                             WordSetCard(
@@ -343,9 +343,6 @@ private fun FavoriteStarButton(isFavorite: Boolean, onClick: () -> Unit) {
     Box(
         contentAlignment = Alignment.Center,
         modifier = Modifier
-            .padding(top = 2.dp)
-            // 40×40dp touch target — well above Android's 48dp guideline minimum,
-            // but compact enough to fit the card layout.
             .clickable(
                 interactionSource = remember { MutableInteractionSource() },
                 indication = null,
@@ -383,51 +380,51 @@ private fun WordSetCard(
             .border(1.5.dp, rarityColor.copy(alpha = 0.6f), RoundedCornerShape(16.dp))
             .background(cardBrush)
             .clickable(onClick = onClick)
-            .padding(horizontal = 16.dp, vertical = 14.dp),
+            .padding(horizontal = 16.dp, vertical = 10.dp),
     ) {
         Column {
+            // Title row: name + favourite star on the same line
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically,
             ) {
-                Column(modifier = Modifier.weight(1f)) {
-                    Text(
-                        text = item.name,
-                        style = MaterialTheme.typography.titleMedium,
-                        fontWeight = FontWeight.Bold,
-                        color = Color.White,
-                    )
-                    if (item.description.isNotEmpty()) {
-                        Spacer(Modifier.height(2.dp))
-                        Text(
-                            text = item.description,
-                            style = MaterialTheme.typography.bodySmall,
-                            color = TextSecondary,
-                            maxLines = 2,
-                            overflow = TextOverflow.Ellipsis,
-                        )
-                    }
-                }
-                Column(
-                    horizontalAlignment = Alignment.End,
-                    verticalArrangement = Arrangement.spacedBy(2.dp),
-                ) {
-                    RarityBadge(rarity = item.rarity)
-                    Text(
-                        text = "${item.introducedWords} / ${item.totalWords}",
-                        style = MaterialTheme.typography.labelSmall,
-                        color = TextSecondary,
-                        fontWeight = FontWeight.Medium,
-                    )
-                    // Favourite toggle star
-                    FavoriteStarButton(
-                        isFavorite = item.isFavorite,
-                        onClick = onToggleFavorite,
-                    )
-                }
+                Text(
+                    text = item.name,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White,
+                    modifier = Modifier.weight(1f),
+                )
+                FavoriteStarButton(
+                    isFavorite = item.isFavorite,
+                    onClick = onToggleFavorite,
+                )
             }
-            Spacer(Modifier.height(12.dp))
+            if (item.description.isNotEmpty()) {
+                Text(
+                    text = item.description,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = TextSecondary,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
+            Spacer(Modifier.height(6.dp))
+            // Badge + word count on the same line
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                RarityBadge(rarity = item.rarity)
+                Spacer(Modifier.weight(1f))
+                Text(
+                    text = "${item.introducedWords} / ${item.totalWords}",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = TextSecondary,
+                    fontWeight = FontWeight.Medium,
+                )
+            }
+            Spacer(Modifier.height(6.dp))
             LinearProgressIndicator(
                 progress = { progress },
                 modifier = Modifier
