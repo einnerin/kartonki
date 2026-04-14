@@ -10,6 +10,7 @@ import com.example.kartonki.data.remote.model.OnlineMatchData
 import com.example.kartonki.data.remote.model.OnlineRoundData
 import com.example.kartonki.data.repository.AchievementRepository
 import com.example.kartonki.data.repository.CollectionRepository
+import com.example.kartonki.data.repository.WordSetRepository
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.navigation.Route
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -68,6 +69,7 @@ data class OnlinePvpGameUiState(
 @HiltViewModel
 class OnlinePvpGameViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
+    private val wordSetRepository: WordSetRepository,
     private val collectionRepository: CollectionRepository,
     private val onlineGameRepository: OnlineGameRepository,
     private val authManager: FirebaseAuthManager,
@@ -96,6 +98,9 @@ class OnlinePvpGameViewModel @Inject constructor(
 
     private fun loadWordsAndListen() {
         viewModelScope.launch {
+            // allWords is used as distractor pool for quiz generation.
+            // Deck words are resolved per-round from myCardIds directly,
+            // so all deck cards are available regardless of collection status.
             allWords = collectionRepository.getOwnedWords()
             listenToMatch()
         }
@@ -113,7 +118,7 @@ class OnlinePvpGameViewModel @Inject constructor(
         }
     }
 
-    private fun processMatchState(match: OnlineMatchData) {
+    private suspend fun processMatchState(match: OnlineMatchData) {
         val opponentIndex = 1 - myIndex
         val myName = if (myIndex == 0) match.player1Name else match.player2Name
         val opponentName = if (opponentIndex == 0) match.player1Name else match.player2Name
@@ -167,7 +172,7 @@ class OnlinePvpGameViewModel @Inject constructor(
             OnlineMatchData.PHASE_HAND_SELECTION -> {
                 val isMyTurn = match.currentTurn == myIndex
                 val newPhase = if (isMyTurn) {
-                    val myWords = allWords.filter { it.id in myCardIds }
+                    val myWords = wordSetRepository.getWordsByIds(myCardIds)
                     val hand = buildHand(myWords)
                     val handIds = hand.map { it.id }.toSet()
                     val remainingDeck = myWords.filter { it.id !in handIds }
