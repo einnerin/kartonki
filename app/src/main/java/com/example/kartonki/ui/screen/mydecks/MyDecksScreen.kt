@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
@@ -65,6 +66,7 @@ fun MyDecksScreen(
     val uiState by viewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
     val lifecycleOwner = LocalLifecycleOwner.current
+    val listState = rememberLazyListState()
     var deckPendingDelete by remember { mutableStateOf<DeckSummary?>(null) }
 
     uiState.navigateToDeckId?.let { deckId ->
@@ -117,6 +119,7 @@ fun MyDecksScreen(
             }
         } else {
             LazyColumn(
+                state = listState,
                 modifier = Modifier.fillMaxSize().padding(innerPadding),
                 contentPadding = PaddingValues(bottom = 88.dp),
             ) {

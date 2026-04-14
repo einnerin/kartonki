@@ -39,11 +39,11 @@ class MyDecksViewModel @Inject constructor(
     val uiState: StateFlow<MyDecksUiState> = _uiState.asStateFlow()
 
     init {
-        loadDecks()
+        loadDecks(showLoadingSpinner = true)
     }
 
     fun refresh() {
-        loadDecks()
+        loadDecks(showLoadingSpinner = false)
     }
 
     fun showCreateDialog() = _uiState.update { it.copy(showCreateDialog = true) }
@@ -69,9 +69,11 @@ class MyDecksViewModel @Inject constructor(
         }
     }
 
-    private fun loadDecks() {
+    private fun loadDecks(showLoadingSpinner: Boolean = false) {
         viewModelScope.launch {
-            _uiState.update { it.copy(isLoading = true) }
+            // Show spinner only on first load (list is empty). On refresh — update silently
+            // so the list stays visible and scroll position is preserved.
+            if (showLoadingSpinner) _uiState.update { it.copy(isLoading = true) }
             collectionRepository.ensureStarterPack()
             val languagePair = prefs.getLanguagePair()
             val entities = deckDao.getDecksOnce(languagePair)
