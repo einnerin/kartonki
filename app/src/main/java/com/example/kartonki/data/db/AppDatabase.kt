@@ -280,7 +280,7 @@ abstract class AppDatabase : RoomDatabase() {
                 // 2. Add the new column (DEFAULT 0 = not a default PvP card).
                 db.execSQL("ALTER TABLE words ADD COLUMN isDefaultPvpCard INTEGER NOT NULL DEFAULT 0")
                 // 3. Enforce uniqueness going forward.
-                db.execSQL("CREATE UNIQUE INDEX idx_words_original_lang ON words(original, languagePair)")
+                db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_words_original_languagePair` ON words(original, languagePair)")
             }
         }
     }
