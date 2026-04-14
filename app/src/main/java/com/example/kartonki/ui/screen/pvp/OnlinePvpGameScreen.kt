@@ -1,5 +1,6 @@
 package com.example.kartonki.ui.screen.pvp
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.background
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -30,8 +31,12 @@ import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.lifecycle.DefaultLifecycleObserver
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -60,6 +65,23 @@ fun OnlinePvpGameScreen(
     viewModel: OnlinePvpGameViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
+
+    // Back button / gesture: surrender during game, go home when game is over
+    val isGameOver = uiState.phase is OnlinePvpPhase.GameOver
+    BackHandler {
+        if (isGameOver) onNavigateHome() else viewModel.onSurrenderClick()
+    }
+
+    // Detect when the user backgrounds or closes the app so the opponent isn't left waiting
+    val lifecycleOwner = LocalLifecycleOwner.current
+    DisposableEffect(lifecycleOwner) {
+        val observer = object : DefaultLifecycleObserver {
+            override fun onStop(owner: LifecycleOwner) = viewModel.onAppBackground()
+            override fun onStart(owner: LifecycleOwner) = viewModel.onAppForeground()
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
+    }
 
     if (uiState.isLoading) {
         Box(

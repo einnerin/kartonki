@@ -20,6 +20,8 @@ data class OnlineMatchData(
     val roundStartTime: Long = 0L,
     val currentRound: OnlineRoundData? = null,
     val winnerIndex: Int = -1,
+    val player1DisconnectedAt: Long = 0L,
+    val player2DisconnectedAt: Long = 0L,
 ) {
     companion object {
         const val STATUS_ACTIVE = "active"

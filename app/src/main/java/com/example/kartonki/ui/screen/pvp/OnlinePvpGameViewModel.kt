@@ -66,6 +66,8 @@ data class OnlinePvpGameUiState(
     val showSurrenderDialog: Boolean = false,
 )
 
+private const val DISCONNECT_TIMEOUT_MS = 15_000L
+
 @HiltViewModel
 class OnlinePvpGameViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
@@ -88,6 +90,7 @@ class OnlinePvpGameViewModel @Inject constructor(
     private var opponentCardIds: List<Long> = emptyList()
     private var opponentStreak: Int = 0
     private var timerJob: Job? = null
+    private var disconnectTimerJob: Job? = null
     private var lastPhase: String? = null
     private var gameOverRecorded = false
     private var didSurrender = false
@@ -130,6 +133,9 @@ class OnlinePvpGameViewModel @Inject constructor(
         myCardIds = if (myIndex == 0) match.player1RemainingIds else match.player2RemainingIds
         opponentCardIds = if (myIndex == 0) match.player2RemainingIds else match.player1RemainingIds
         opponentStreak = if (myIndex == 0) match.player2Streak else match.player1Streak
+
+        // Auto-forfeit: if the opponent has been gone for 15 s we award the win here
+        if (!gameOverRecorded) checkOpponentDisconnect(match)
 
         when (match.phase) {
             OnlineMatchData.PHASE_GAME_OVER, OnlineMatchData.STATUS_FINISHED -> {
@@ -414,6 +420,78 @@ class OnlinePvpGameViewModel @Inject constructor(
         }
     }
 
+    // ── App background / foreground ──────────────────────────────────────────────
+
+    /** Called by the screen when the app goes to background (onStop). */
+    fun onAppBackground() {
+        if (gameOverRecorded) return
+        viewModelScope.launch {
+            try { onlineGameRepository.reportDisconnect(matchId, myIndex, System.currentTimeMillis()) }
+            catch (_: Exception) { }
+        }
+    }
+
+    /** Called by the screen when the app comes back to foreground (onStart). */
+    fun onAppForeground() {
+        if (gameOverRecorded) return
+        viewModelScope.launch {
+            try { onlineGameRepository.clearDisconnect(matchId, myIndex) }
+            catch (_: Exception) { }
+        }
+    }
+
+    // ── Opponent disconnect timer ─────────────────────────────────────────────
+
+    private fun checkOpponentDisconnect(match: OnlineMatchData) {
+        val disconnectedAt = if (myIndex == 0) match.player2DisconnectedAt else match.player1DisconnectedAt
+        if (disconnectedAt <= 0L) {
+            // Opponent is back — cancel any pending disconnect timer
+            disconnectTimerJob?.cancel()
+            disconnectTimerJob = null
+            return
+        }
+        val elapsed = System.currentTimeMillis() - disconnectedAt
+        if (elapsed >= DISCONNECT_TIMEOUT_MS) {
+            awardWinByDisconnect()
+        } else if (disconnectTimerJob?.isActive != true) {
+            // Start countdown for the remaining time
+            disconnectTimerJob = viewModelScope.launch {
+                delay(DISCONNECT_TIMEOUT_MS - elapsed)
+                awardWinByDisconnect()
+            }
+        }
+    }
+
+    private fun awardWinByDisconnect() {
+        if (gameOverRecorded) return
+        gameOverRecorded = true
+        disconnectTimerJob?.cancel()
+        val state = _uiState.value
+        val p1Score = if (myIndex == 0) state.myScore else state.opponentScore
+        val p2Score = if (myIndex == 0) state.opponentScore else state.myScore
+        viewModelScope.launch {
+            try {
+                onlineGameRepository.confirmAnswer(
+                    matchId = matchId,
+                    p1Score = p1Score,
+                    p2Score = p2Score,
+                    p1Streak = 0,
+                    p2Streak = 0,
+                    nextTurn = 0,
+                    nextPhase = OnlineMatchData.PHASE_GAME_OVER,
+                    isGameOver = true,
+                    winnerIndex = myIndex,
+                )
+                try {
+                    val uid = authManager.currentUser.value?.uid ?: return@launch
+                    firestoreUserRepository.incrementWin(uid)
+                } catch (_: Exception) { }
+            } catch (e: Exception) {
+                _uiState.update { it.copy(connectionError = "Ошибка: ${e.message}") }
+            }
+        }
+    }
+
     private fun startTimerFrom(startTime: Long) {
         timerJob?.cancel()
         val elapsed = ((System.currentTimeMillis() - startTime) / 1000).toInt().coerceIn(0, PvpGameLogic.TIMER_DURATION)
@@ -463,5 +541,8 @@ class OnlinePvpGameViewModel @Inject constructor(
     override fun onCleared() {
         super.onCleared()
         stopTimer()
+        disconnectTimerJob?.cancel()
+        // Fire-and-forget: clear our disconnect flag so we don't leave stale data in Firebase
+        onlineGameRepository.clearDisconnectSync(matchId, myIndex)
     }
 }

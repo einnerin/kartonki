@@ -62,6 +62,27 @@ class OnlineGameRepository @Inject constructor(
         ).await()
     }
 
+    /** Marks a player as disconnected (app went to background / closed). */
+    suspend fun reportDisconnect(matchId: String, playerIndex: Int, timestamp: Long) {
+        val key = if (playerIndex == 0) "player1DisconnectedAt" else "player2DisconnectedAt"
+        matchRef(matchId).child(key).setValue(timestamp).await()
+    }
+
+    /** Clears the disconnected flag when the player comes back (suspend version). */
+    suspend fun clearDisconnect(matchId: String, playerIndex: Int) {
+        val key = if (playerIndex == 0) "player1DisconnectedAt" else "player2DisconnectedAt"
+        matchRef(matchId).child(key).setValue(0L).await()
+    }
+
+    /**
+     * Fire-and-forget version of clearDisconnect for use in ViewModel.onCleared()
+     * where the coroutine scope is already cancelled.
+     */
+    fun clearDisconnectSync(matchId: String, playerIndex: Int) {
+        val key = if (playerIndex == 0) "player1DisconnectedAt" else "player2DisconnectedAt"
+        matchRef(matchId).child(key).setValue(0L)
+    }
+
     /** Defender submits their answer selection. */
     suspend fun submitAnswer(matchId: String, answer: String) {
         matchRef(matchId).child("currentRound").child("selectedAnswer").setValue(answer).await()
@@ -138,6 +159,8 @@ class OnlineGameRepository @Inject constructor(
             roundStartTime = child("roundStartTime").getValue(Long::class.java) ?: 0L,
             currentRound = round,
             winnerIndex = child("winnerIndex").getValue(Long::class.java)?.toInt() ?: -1,
+            player1DisconnectedAt = child("player1DisconnectedAt").getValue(Long::class.java) ?: 0L,
+            player2DisconnectedAt = child("player2DisconnectedAt").getValue(Long::class.java) ?: 0L,
         )
     }
 }
