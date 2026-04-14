@@ -45,6 +45,11 @@ class WordSetRepository @Inject constructor(
             wordSetDao.insertSets(SeedDataEnglishMore.sets)
             wordDao.insertAll(SeedDataEnglishMore.words)
         }
+        // Words for sets 211–219 were added after initial seeding — patch if set 211 has no words.
+        if (wordSetDao.getWordCountInSet(211L) == 0) {
+            wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 211..219 })
+            wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in 211..219 })
+        }
         // Additional English sets (220–229) — seed if set 220 is missing.
         if (wordSetDao.getSetById(220L) == null) {
             wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id >= 220 })
