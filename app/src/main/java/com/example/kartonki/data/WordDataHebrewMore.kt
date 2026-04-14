@@ -1327,5 +1327,91 @@ object WordDataHebrewMore {
             example = "צִלּוּמֵי חוּץ נֶעֶשׂוּ בְּמִדְבַּר הַנֶּגֶב.",
             exampleNative = "צִלּוּמֵי חוּץ снимались в пустыне Негев.",
         ),
+
+        // ── дополнительные слова для доведения наборов до 25 ──
+
+        // Set 108 — +1 (было 24, стало 25)
+        WordEntity(
+            id = 10418, setId = 108, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "transport", transliteration = "takhbura tsibirit",
+            original = "תַּחְבּוּרָה צִיבּוּרִית", translation = "общественный транспорт",
+            definition = "מַעֲרֶכֶת כְּלֵי רֶכֶב הַמֻּפְעֶלֶת עַל-יְדֵי הָרָשׁוּת לְשֵׁרוּת הַצִּיבּוּר.",
+            definitionNative = "Система транспортных средств, управляемая властями для обслуживания населения.",
+            example = "אֲנִי מַעֲדִיף תַּחְבּוּרָה צִיבּוּרִית עַל פְּנֵי מְכוֹנִית פְּרָטִית.",
+            exampleNative = "Я предпочитаю תַּחְבּוּרָה צִיבּוּרִית личному автомобилю.",
+        ),
+
+        // Set 109 — +1 (было 24, стало 25)
+        WordEntity(
+            id = 10419, setId = 109, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "city", transliteration = "merkaz ir",
+            original = "מֶרְכַּז עִיר", translation = "центр города",
+            definition = "הָאֵזוֹר הַמֶּרְכָּזִי שֶׁל הָעִיר עִם חֲנוּיוֹת וּמִשְׂרָדִים.",
+            definitionNative = "Центральный район города с магазинами и офисами.",
+            example = "הִגַּעְנוּ לְמֶרְכַּז עִיר בְּרַכֶּבֶת.",
+            exampleNative = "Мы добрались до מֶרְכַּז עִיר на поезде.",
+        ),
+
+        // Set 110 — +1 (было 24, стало 25)
+        WordEntity(
+            id = 10420, setId = 110, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "clothing", transliteration = "sveder",
+            original = "סְוֶדֶר", translation = "свитер",
+            definition = "בֶּגֶד צֶמֶר עָלְיוֹן חַם לִזְמַן קַר.",
+            definitionNative = "Тёплая шерстяная верхняя одежда для холодного времени.",
+            example = "לָבַשְׁתִּי סְוֶדֶר עָבֶה כִּי הָיָה קַר בַּחוּץ.",
+            exampleNative = "Я надел толстый סְוֶדֶר, потому что на улице было холодно.",
+        ),
+
+        // Set 111 — +2 (было 23, стало 25)
+        WordEntity(
+            id = 10421, setId = 111, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "weather", transliteration = "lakhut",
+            original = "לַחוּת", translation = "влажность",
+            definition = "כַּמּוּת אֵדֵי הַמַּיִם הַנְּמֻצָּאִים בָּאֲוִיר.",
+            definitionNative = "Количество водяных паров, содержащихся в воздухе.",
+            example = "לַחוּת גְּבוֹהָה גוֹרֶמֶת לַגּוּף לְהִרְגִּישׁ חַם יוֹתֵר.",
+            exampleNative = "Высокая לַחוּת заставляет тело чувствовать большую жару.",
+        ),
+        WordEntity(
+            id = 10422, setId = 111, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "weather", transliteration = "batssoret",
+            original = "בַּצֹּרֶת", translation = "засуха",
+            definition = "תְּקוּפָה מְמוּשֶׁכֶת שֶׁל חֹסֶר גְּשָׁמִים.",
+            definitionNative = "Длительный период без дождей.",
+            example = "בַּצֹּרֶת קָשָׁה פָּגְעָה בְּיֶבוּל הַחַקְלָאִים.",
+            exampleNative = "Сильная בַּצֹּרֶת нанесла урон урожаю фермеров.",
+        ),
+
+        // Set 112 — +2 (было 23, стало 25)
+        WordEntity(
+            id = 10423, setId = 112, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "cinema", transliteration = "ulam kolno'a",
+            original = "אוּלָם קוֹלְנוֹעַ", translation = "кинозал",
+            definition = "חֶדֶר גָּדוֹל עִם מָסָךְ וְכִסְאוֹת לְצְפִיָּה בְּסַרְטֵי קוֹלְנוֹעַ.",
+            definitionNative = "Большой зал с экраном и сиденьями для просмотра фильмов.",
+            example = "יָשַׁבְנוּ בְּאוּלָם קוֹלְנוֹעַ גָּדוֹל עִם צֶלֶם מְשׁוּכְלָל.",
+            exampleNative = "Мы сидели в большом אוּלָם קוֹלְנוֹעַ с современным экраном.",
+        ),
+        WordEntity(
+            id = 10424, setId = 112, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "cinema", transliteration = "pras",
+            original = "פְּרָס", translation = "приз / награда",
+            definition = "הוֹקָרָה הַנִּיתֶנֶת לְסֶרֶט אוֹ לְשַׂחְקָן מְצֻיָּן.",
+            definitionNative = "Награда, вручаемая выдающемуся фильму или актёру.",
+            example = "הַסֶּרֶט זָכָה בְּפְּרָס הַטּוֹב בְּיוֹתֵר בָּאוֹסְקָר.",
+            exampleNative = "Фильм получил פְּרָס лучшего на церемонии «Оскар».",
+        ),
+
+        // Set 113 — +1 (было 24, стало 25)
+        WordEntity(
+            id = 10425, setId = 113, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "filming", transliteration = "shot",
+            original = "שׁוֹט", translation = "кадр / план (съёмочный)",
+            definition = "יְחִידַת צִלּוּם בּוֹדֶדֶת בֵּין שְׁנֵי חֲתָכִים.",
+            definitionNative = "Единица съёмки между двумя монтажными склейками.",
+            example = "הַבַּמָּאי בִּיקֵּשׁ לְחַזֵּר אֶת שׁוֹט הַפְּתִיחָה.",
+            exampleNative = "Режиссёр попросил переснять שׁוֹט открывающей сцены.",
+        ),
     )
 }
