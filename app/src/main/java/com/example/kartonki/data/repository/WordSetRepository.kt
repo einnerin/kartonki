@@ -45,10 +45,12 @@ class WordSetRepository @Inject constructor(
             wordSetDao.insertSets(SeedDataEnglishMore.sets)
             wordDao.insertAll(SeedDataEnglishMore.words)
         }
-        // Words for sets 211–219 were added after initial seeding — patch if set 211 has no words.
-        if (wordSetDao.getWordCountInSet(211L) == 0) {
-            wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 211..219 })
-            wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in 211..219 })
+        // Patch sets 211–219: check each one individually — a partial previous insert
+        // could leave set 211 with words while others remain empty.
+        val emptyIn211_219 = (211..219).filter { wordSetDao.getWordCountInSet(it.toLong()) == 0 }.map { it.toLong() }
+        if (emptyIn211_219.isNotEmpty()) {
+            wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in emptyIn211_219 })
+            wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in emptyIn211_219 })
         }
         // Additional English sets (220–229) — seed if set 220 is missing.
         if (wordSetDao.getSetById(220L) == null) {

@@ -83,9 +83,17 @@ class StudyViewModel @Inject constructor(
     }
 
     fun toggleFavorite(setId: Long) {
+        // Optimistic update: flip the star in UI immediately, no reload needed.
+        _uiState.update { state ->
+            state.copy(
+                sets = state.sets.map {
+                    if (it.id == setId) it.copy(isFavorite = !it.isFavorite) else it
+                }
+            )
+        }
+        // Persist to DB in background.
         viewModelScope.launch {
             wordSetRepository.toggleFavorite(setId)
-            loadSets(prefs.languagePair.first(), showLoading = false)
         }
     }
 
