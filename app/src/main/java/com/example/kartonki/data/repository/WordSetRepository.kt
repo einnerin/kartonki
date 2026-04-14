@@ -45,10 +45,15 @@ class WordSetRepository @Inject constructor(
             wordSetDao.insertSets(SeedDataEnglishMore.sets)
             wordDao.insertAll(SeedDataEnglishMore.words)
         }
-        // Additional English sets (220+) — seed if set 220 is missing.
+        // Additional English sets (220–229) — seed if set 220 is missing.
         if (wordSetDao.getSetById(220L) == null) {
             wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id >= 220 })
             wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId >= 220 })
+        }
+        // Sets 225–229 added in a later update — seed if set 225 is missing.
+        if (wordSetDao.getSetById(225L) == null) {
+            wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 225..229 })
+            wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in 225..229 })
         }
         // Patch English words with Russian-language native content (definitionNative + exampleNative).
         // Runs once: skipped when the count of already-patched English words matches the dataset.
