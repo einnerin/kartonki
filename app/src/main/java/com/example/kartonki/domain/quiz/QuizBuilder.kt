@@ -146,7 +146,7 @@ object QuizBuilder {
      *  Tier 3 — everything else
      */
     internal fun pickDistractors(word: Word, allWords: List<Word>): List<Word> {
-        val candidates = allWords.filter { it.id != word.id }
+        val candidates = allWords.filter { it.id != word.id && it.languagePair == word.languagePair }
         if (word.pos == null && word.semanticGroup == null) return candidates.shuffled()
         val tier1 = candidates.filter { it.pos == word.pos && it.semanticGroup == word.semanticGroup }.shuffled()
         val tier2 = candidates.filter { it.pos == word.pos && it.semanticGroup != word.semanticGroup }.shuffled()
@@ -155,7 +155,7 @@ object QuizBuilder {
     }
 
     internal fun fallbackTranslation(word: Word, allWords: List<Word>): StudyStep.Quiz {
-        val candidates = allWords.filter { it.id != word.id }.shuffled()
+        val candidates = allWords.filter { it.id != word.id && it.languagePair == word.languagePair }.shuffled()
         val wrongs = candidates.take(3).map { it.translation }
         // Pad with numbered placeholders if the pool is too small (< 3 distractors).
         val paddedWrongs = wrongs + List(maxOf(0, 3 - wrongs.size)) { i -> "—${i + 1}" }
