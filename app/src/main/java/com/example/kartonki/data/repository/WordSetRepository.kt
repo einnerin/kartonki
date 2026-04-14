@@ -60,6 +60,11 @@ class WordSetRepository @Inject constructor(
             wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 225..229 })
             wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in 225..229 })
         }
+        // Sets 230–239 added in a later update — seed if set 230 is missing.
+        if (wordSetDao.getSetById(230L) == null) {
+            wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 230..239 })
+            wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in 230..239 })
+        }
         // Patch English words with Russian-language native content (definitionNative + exampleNative).
         // Runs once: skipped when the count of already-patched English words matches the dataset.
         patchEnglishNativeContent()
