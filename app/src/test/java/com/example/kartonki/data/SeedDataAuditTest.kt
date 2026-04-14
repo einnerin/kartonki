@@ -1,6 +1,8 @@
 package com.example.kartonki.data
 
 import com.example.kartonki.data.db.entity.WordEntity
+import com.example.kartonki.domain.model.DeckLevel
+import com.example.kartonki.domain.model.Rarity
 import org.junit.Assert.*
 import org.junit.Test
 
@@ -122,6 +124,55 @@ class SeedDataAuditTest {
                 if (count < 4) "Set ${set.id} '${set.name}': $count words" else null
             }
         )
+    }
+
+    // ══════════════════════════════════════════════════════════════════════════
+    // PRESET DECKS — rarity distribution must match DeckLevel limits exactly
+    // ══════════════════════════════════════════════════════════════════════════
+
+    @Test fun `preset decks — rarity distribution matches DeckLevel limits`() {
+        // Build a single lookup map: original → rarity across all seed sources.
+        // Use first-occurrence semantics so that duplicate originals (e.g. "רֶשֶׁת"
+        // appears in both SeedDataHebrew set 103 and SeedDataHebrewAdvanced set 114)
+        // resolve to the word from the earlier file, matching physical insertion order.
+        val allWords: List<WordEntity> =
+            SeedData.words +
+            SeedDataHebrew.words +
+            SeedDataHebrewEveryday.words +
+            SeedDataHebrewAdvanced.words
+        val rarityByOriginal: Map<String, String> = buildMap {
+            for (w in allWords) putIfAbsent(w.original, w.rarity)
+        }
+
+        val problems = mutableListOf<String>()
+        for (deck in SeedData.prebuiltDecks) {
+            val limits = DeckLevel.limitsFor(deck.level)
+            val counts = mutableMapOf("COMMON" to 0, "UNCOMMON" to 0, "RARE" to 0, "EPIC" to 0, "LEGENDARY" to 0)
+
+            for (original in deck.wordOriginals) {
+                val rarity = rarityByOriginal[original]
+                if (rarity == null) {
+                    problems += "Deck '${deck.name}' (L${deck.level}): word '$original' not found in any seed file"
+                } else {
+                    counts[rarity] = (counts[rarity] ?: 0) + 1
+                }
+            }
+
+            val expected = mapOf(
+                "COMMON"    to limits.common,
+                "UNCOMMON"  to limits.uncommon,
+                "RARE"      to limits.rare,
+                "EPIC"      to limits.epic,
+                "LEGENDARY" to limits.legendary,
+            )
+            for ((rarity, expectedCount) in expected) {
+                val actual = counts[rarity] ?: 0
+                if (actual != expectedCount) {
+                    problems += "Deck '${deck.name}' (L${deck.level}): $rarity expected $expectedCount, got $actual"
+                }
+            }
+        }
+        fail("Preset deck rarity mismatches", problems)
     }
 
     // ══════════════════════════════════════════════════════════════════════════
