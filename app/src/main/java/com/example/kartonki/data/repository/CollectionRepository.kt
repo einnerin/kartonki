@@ -1,5 +1,6 @@
 package com.example.kartonki.data.repository
 
+import com.example.kartonki.data.AchievementCards
 import com.example.kartonki.data.PresetDecksVersion
 import com.example.kartonki.data.SeedData
 import com.example.kartonki.data.WordLoader
@@ -9,6 +10,7 @@ import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.entity.CollectionEntity
 import com.example.kartonki.data.db.entity.DeckCardCrossRef
 import com.example.kartonki.data.db.entity.DeckEntity
+import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
@@ -50,11 +52,27 @@ class CollectionRepository @Inject constructor(
     private suspend fun doEnsureStarterPack() {
         wordLoader.ensureFresh()
 
-        // All words of every language are available from the start.
-        // INSERT OR IGNORE is idempotent: existing rows are skipped, and any
-        // new words added in future WordDataVersion bumps appear automatically.
-        val allWords = wordDao.getAllWordsOnce()
-        collectionDao.insertAll(allWords.map { CollectionEntity(it.id) })
+        val isFirstRun = collectionDao.count() == 0
+        if (isFirstRun) {
+            val allWords = wordDao.getAllWordsOnce()
+
+            // Words referenced by preset decks are always guaranteed so deck editors
+            // show the correct cards immediately on first launch.
+            val presetOriginals = SeedData.prebuiltDecks.flatMap { it.wordOriginals }.toSet()
+            val presetWordEntities = presetOriginals.mapNotNull { wordDao.getWordByOriginal(it) }
+            val presetIds = presetWordEntities.map { it.id }.toSet()
+
+            // Apply the same rarity-weighted starter selection independently per
+            // language pair. A language with fewer total words than the per-rarity
+            // limits will naturally yield all its words — no special-casing needed.
+            val starterWords = allWords
+                .filter { it.id !in presetIds }
+                .groupBy { it.languagePair }
+                .flatMap { (_, words) -> selectStarterCards(words) }
+
+            val combined = (presetWordEntities + starterWords).distinctBy { it.id }
+            collectionDao.insertAll(combined.map { CollectionEntity(it.id) })
+        }
 
         // (Re)create preset decks if version has changed or this is a first run.
         val storedVersion = prefs.getPresetDecksVersion()
@@ -62,6 +80,29 @@ class CollectionRepository @Inject constructor(
             migratePresetDecks()
             prefs.setPresetDecksVersion(PresetDecksVersion.CURRENT)
         }
+    }
+
+    /**
+     * Picks a starter set of cards for one language pair using rarity-weighted limits.
+     * English (~3 300 words): yields ~500 cards.
+     * Hebrew (~370 words): all words fit within the limits, so all are returned.
+     * Any future language with fewer words than the limits behaves the same way.
+     */
+    private fun selectStarterCards(words: List<WordEntity>): List<WordEntity> {
+        val byRarity = words
+            .filter { it.id !in AchievementCards.ALL_EXCLUSIVE_IDS }
+            .groupBy { it.rarity }
+        val result = mutableListOf<WordEntity>()
+        listOf(
+            "COMMON"    to 300,
+            "UNCOMMON"  to 130,
+            "RARE"      to 50,
+            "EPIC"      to 15,
+            "LEGENDARY" to 5,
+        ).forEach { (rarity, limit) ->
+            result.addAll(byRarity[rarity]?.shuffled()?.take(limit) ?: emptyList())
+        }
+        return result
     }
 
     /**
