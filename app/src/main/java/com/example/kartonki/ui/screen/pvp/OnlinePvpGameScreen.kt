@@ -111,11 +111,12 @@ fun OnlinePvpGameScreen(
 
     val s = LocalAppStrings.current
     val players = buildOnlinePlayers(uiState)
+    // players is always [me, opponent], so 0 = me (left), 1 = opponent (right)
     val highlightIndex = when (uiState.phase) {
         is OnlinePvpPhase.MyHandSelection,
-        is OnlinePvpPhase.MyQuiz -> uiState.myIndex
+        is OnlinePvpPhase.MyQuiz -> 0
         is OnlinePvpPhase.WaitingForOpponent,
-        is OnlinePvpPhase.WaitingForAnswer -> 1 - uiState.myIndex
+        is OnlinePvpPhase.WaitingForAnswer -> 1
         else -> -1
     }
 
@@ -191,7 +192,7 @@ private fun buildOnlinePlayers(uiState: OnlinePvpGameUiState): List<PvpPlayerSta
         streak = uiState.opponentStreak,
         multiplier = PvpGameLogic.streakToMultiplier(uiState.opponentStreak),
     )
-    return if (uiState.myIndex == 0) listOf(me, opponent) else listOf(opponent, me)
+    return listOf(me, opponent) // always: me on the left, opponent on the right
 }
 
 // ─── Hand Selection ───────────────────────────────────────────────────────────
