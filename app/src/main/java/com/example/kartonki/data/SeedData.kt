@@ -1524,7 +1524,7 @@ object SeedData {
         WordEntity(id = 469, original = "road", translation = "дорога", rarity = "COMMON", setId = 19, languagePair = "en-ru", pos = "noun", semanticGroup = "transport",
             definition = "A hard surface made for vehicles to drive on.",
             example = "The road was covered in ice and very dangerous."),
-        WordEntity(id = 470, original = "traffic", translation = "дорожное движение", rarity = "COMMON", setId = 19, languagePair = "en-ru", pos = "noun", semanticGroup = "transport",
+        WordEntity(id = 470, original = "traffic", translation = "дорожное движение", rarity = "UNCOMMON", setId = 19, languagePair = "en-ru", pos = "noun", semanticGroup = "transport",
             definition = "Vehicles moving along a road.",
             example = "There was so much traffic that she was an hour late."),
         WordEntity(id = 471, original = "park", translation = "парковаться", rarity = "COMMON", setId = 19, languagePair = "en-ru", pos = "verb", semanticGroup = "transport",
