@@ -4,6 +4,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.db.entity.DeckCardCrossRef
+import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.CollectionRepository
 import com.example.kartonki.data.db.dao.DeckDao
 import com.example.kartonki.domain.model.DeckLevel
@@ -63,6 +64,7 @@ class DeckBuilderViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val collectionRepository: CollectionRepository,
     private val deckDao: DeckDao,
+    private val prefs: UserPreferencesRepository,
 ) : ViewModel() {
 
     // 0 means "use default deck"
@@ -116,7 +118,8 @@ class DeckBuilderViewModel @Inject constructor(
 
     private suspend fun refreshCards(deckName: String = _uiState.value.deckName, deckLevel: Int = _uiState.value.deckLevel) {
         val deckWordIds = deckDao.getWordIdsForDeck(currentDeckId).toSet()
-        val allOwned = collectionRepository.getOwnedWords()
+        val languagePair = prefs.getLanguagePair()
+        val allOwned = collectionRepository.getOwnedWords(languagePair = languagePair)
         val inDeck = allOwned.filter { it.id in deckWordIds }.sortedByRarityDesc()
         val available = allOwned.filter { it.id !in deckWordIds }.sortedByRarityDesc()
         _uiState.update {

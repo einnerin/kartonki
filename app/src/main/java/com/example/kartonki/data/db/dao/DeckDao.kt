@@ -14,8 +14,14 @@ interface DeckDao {
     @Query("SELECT * FROM decks ORDER BY name ASC")
     fun getAllDecks(): Flow<List<DeckEntity>>
 
+    @Query("SELECT * FROM decks WHERE languagePair = :languagePair ORDER BY name ASC")
+    fun getAllDecks(languagePair: String): Flow<List<DeckEntity>>
+
     @Query("SELECT * FROM decks ORDER BY name ASC")
     suspend fun getDecksOnce(): List<DeckEntity>
+
+    @Query("SELECT * FROM decks WHERE languagePair = :languagePair ORDER BY name ASC")
+    suspend fun getDecksOnce(languagePair: String): List<DeckEntity>
 
     @Query("SELECT COUNT(*) FROM decks")
     suspend fun getDeckCount(): Int

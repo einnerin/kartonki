@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.db.dao.DeckDao
 import com.example.kartonki.data.db.entity.DeckEntity
+import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.CollectionRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -31,6 +32,7 @@ data class MyDecksUiState(
 class MyDecksViewModel @Inject constructor(
     private val deckDao: DeckDao,
     private val collectionRepository: CollectionRepository,
+    private val prefs: UserPreferencesRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(MyDecksUiState())
@@ -51,7 +53,8 @@ class MyDecksViewModel @Inject constructor(
         val trimmed = name.trim()
         if (trimmed.isEmpty()) return
         viewModelScope.launch {
-            val newId = deckDao.insertDeck(DeckEntity(name = trimmed, level = level))
+            val languagePair = prefs.getLanguagePair()
+            val newId = deckDao.insertDeck(DeckEntity(name = trimmed, level = level, languagePair = languagePair))
             _uiState.update { it.copy(showCreateDialog = false, navigateToDeckId = newId) }
         }
     }
@@ -70,7 +73,8 @@ class MyDecksViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true) }
             collectionRepository.ensureStarterPack()
-            val entities = deckDao.getDecksOnce()
+            val languagePair = prefs.getLanguagePair()
+            val entities = deckDao.getDecksOnce(languagePair)
             val summaries = entities.map { entity ->
                 DeckSummary(
                     id = entity.id,

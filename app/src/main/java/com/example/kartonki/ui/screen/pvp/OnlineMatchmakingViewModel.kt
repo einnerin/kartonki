@@ -52,7 +52,8 @@ class OnlineMatchmakingViewModel @Inject constructor(
     private fun loadDecks() {
         viewModelScope.launch {
             collectionRepository.ensureStarterPack()
-            val entities = deckDao.getDecksOnce()
+            val languagePair = prefs.getLanguagePair()
+            val entities = deckDao.getDecksOnce(languagePair)
             val options = entities.map {
                 PvpDeckOption(it.id, it.name, deckDao.getOwnedCardCountForDeck(it.id), it.level)
             }

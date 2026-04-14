@@ -49,6 +49,7 @@ class WordLoader @Inject constructor(
                 SeedDataHebrew.sets +
                 SeedDataHebrewEveryday.sets +
                 SeedDataHebrewMore.sets +
+                SeedDataHebrewAdvanced.sets +
                 SeedDataEnglishMore.sets
         wordSetDao.insertSets(allSets)
 
@@ -58,6 +59,7 @@ class WordLoader @Inject constructor(
                 SeedDataHebrew.words +
                 SeedDataHebrewEveryday.words +
                 SeedDataHebrewMore.words +
+                SeedDataHebrewAdvanced.words +
                 SeedDataEnglishMore.words
         allWords.chunked(500).forEach { chunk ->
             wordDao.insertAllOrReplace(chunk)

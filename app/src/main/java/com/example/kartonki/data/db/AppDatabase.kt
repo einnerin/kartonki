@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 31,
+    version = 32,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -241,6 +241,22 @@ abstract class AppDatabase : RoomDatabase() {
         val MIGRATION_30_31 = object : Migration(30, 31) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("UPDATE decks SET isPreset = 1 WHERE isPreset = 0")
+            }
+        }
+        /**
+         * Adds languagePair column to decks table.
+         * Deletes all Hebrew words that had auto-generated IDs (id=0 → DB-assigned),
+         * which caused duplicates on every WordDataVersion bump. New explicit-ID
+         * Hebrew words (10001+) will be re-inserted by WordLoader on next launch.
+         * Orphaned progress and collection rows are cleaned up.
+         */
+        val MIGRATION_31_32 = object : Migration(31, 32) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE decks ADD COLUMN languagePair TEXT NOT NULL DEFAULT 'en-ru'")
+                db.execSQL("DELETE FROM words WHERE languagePair = 'he-ru'")
+                db.execSQL("DELETE FROM word_sets WHERE languagePair = 'he-ru'")
+                db.execSQL("DELETE FROM progress WHERE wordId NOT IN (SELECT id FROM words)")
+                db.execSQL("DELETE FROM collection WHERE wordId NOT IN (SELECT id FROM words)")
             }
         }
     }

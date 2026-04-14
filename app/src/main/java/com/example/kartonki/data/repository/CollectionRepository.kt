@@ -91,7 +91,7 @@ class CollectionRepository @Inject constructor(
         // Recreate from current SeedData
         for (deckSeed in SeedData.prebuiltDecks) {
             val deckId = deckDao.insertDeck(
-                DeckEntity(name = deckSeed.name, level = deckSeed.level, isPreset = true)
+                DeckEntity(name = deckSeed.name, level = deckSeed.level, isPreset = true, languagePair = deckSeed.languagePair)
             )
             for (original in deckSeed.wordOriginals) {
                 val word = wordDao.getWordByOriginal(original) ?: continue
@@ -102,9 +102,13 @@ class CollectionRepository @Inject constructor(
         }
     }
 
-    suspend fun getOwnedWords(filter: Rarity? = null): List<Word> {
-        val entities = if (filter == null) collectionDao.getOwnedWords()
-                       else collectionDao.getOwnedWordsByRarity(filter.name)
+    suspend fun getOwnedWords(filter: Rarity? = null, languagePair: String? = null): List<Word> {
+        val entities = when {
+            languagePair != null && filter != null -> collectionDao.getOwnedWordsByRarity(languagePair, filter.name)
+            languagePair != null -> collectionDao.getOwnedWords(languagePair)
+            filter != null -> collectionDao.getOwnedWordsByRarity(filter.name)
+            else -> collectionDao.getOwnedWords()
+        }
         return entities.map { e ->
             Word(
                 id = e.id,

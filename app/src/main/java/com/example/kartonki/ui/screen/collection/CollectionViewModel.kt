@@ -2,6 +2,7 @@ package com.example.kartonki.ui.screen.collection
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.CollectionRepository
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
@@ -23,6 +24,7 @@ data class CollectionUiState(
 @HiltViewModel
 class CollectionViewModel @Inject constructor(
     private val collectionRepository: CollectionRepository,
+    private val prefs: UserPreferencesRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(CollectionUiState())
@@ -51,7 +53,8 @@ class CollectionViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true) }
             collectionRepository.ensureStarterPack()
-            allWords = collectionRepository.getOwnedWords()
+            val languagePair = prefs.getLanguagePair()
+            allWords = collectionRepository.getOwnedWords(languagePair = languagePair)
             val total = collectionRepository.getTotalCount()
             _uiState.update {
                 it.copy(isLoading = false, words = applyFilter(it.rarityFilter), totalCount = total)

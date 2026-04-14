@@ -3,6 +3,7 @@ package com.example.kartonki.ui.screen.pvp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.db.dao.DeckDao
+import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.CollectionRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -38,6 +39,7 @@ data class PvpDeckSelectUiState(
 class PvpDeckSelectViewModel @Inject constructor(
     private val deckDao: DeckDao,
     private val collectionRepository: CollectionRepository,
+    private val prefs: UserPreferencesRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(PvpDeckSelectUiState())
@@ -53,7 +55,8 @@ class PvpDeckSelectViewModel @Inject constructor(
     private fun loadDecks() {
         viewModelScope.launch {
             collectionRepository.ensureStarterPack()
-            val entities = deckDao.getDecksOnce()
+            val languagePair = prefs.getLanguagePair()
+            val entities = deckDao.getDecksOnce(languagePair)
             val options = entities.map { PvpDeckOption(it.id, it.name, deckDao.getOwnedCardCountForDeck(it.id), it.level) }
             val default = options.firstOrNull()
             _uiState.update {

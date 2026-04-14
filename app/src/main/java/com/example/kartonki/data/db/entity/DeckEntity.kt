@@ -10,4 +10,6 @@ data class DeckEntity(
     val level: Int = 1,
     /** True for decks created by the app (preset). Allows safe migration on updates. */
     val isPreset: Boolean = false,
+    /** Language pair this deck belongs to, e.g. "en-ru" or "he-ru". */
+    val languagePair: String = "en-ru",
 )
