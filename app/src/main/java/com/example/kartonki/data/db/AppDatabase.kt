@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 26,
+    version = 27,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -151,6 +151,50 @@ abstract class AppDatabase : RoomDatabase() {
                                  479,490,493,531,532,548,2125,2583,2584,1254)""")
                 db.execSQL("UPDATE words SET rarity = 'EPIC' WHERE id IN (1903,1905,1953,2050,2052,2056)")
                 db.execSQL("UPDATE words SET rarity = 'RARE' WHERE id = 1609")
+            }
+        }
+        /**
+         * Splits 9 thematic sets (200,201,202,203,204,206,208,209,219) that mixed
+         * COMMON+EPIC/LEGENDARY words into two halves:
+         *   - "X: основы"    (sets 200–219, COMMON+UNCOMMON words stay)
+         *   - "X: углублённо" (sets 240–248, RARE/EPIC/LEGENDARY words move here)
+         *
+         * For existing users: creates the new word_sets rows and re-points the
+         * 113 moved words to their new setId. New words (id >= 3076) are inserted
+         * by doSeed() via the word-count sentinel check.
+         */
+        val MIGRATION_26_27 = object : Migration(26, 27) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                // Rename the 9 split sets to "основы" variant
+                db.execSQL("UPDATE word_sets SET name='Супермаркет: основы',      description='Покупки в магазине — базовая лексика'          WHERE id=200")
+                db.execSQL("UPDATE word_sets SET name='Инструменты: основы',      description='Базовые инструменты и материалы'                WHERE id=201")
+                db.execSQL("UPDATE word_sets SET name='Праздники: основы',        description='Праздники и торжества — базовая лексика'        WHERE id=202")
+                db.execSQL("UPDATE word_sets SET name='Профессии 2: основы',      description='Распространённые профессии и специальности'     WHERE id=203")
+                db.execSQL("UPDATE word_sets SET name='Быт: основы',              description='Домашний быт — базовая лексика'                 WHERE id=204")
+                db.execSQL("UPDATE word_sets SET name='Кино и театр: основы',     description='Кино и театр — базовая лексика'                 WHERE id=206")
+                db.execSQL("UPDATE word_sets SET name='Садоводство: основы',      description='Сад и огород — базовая лексика'                 WHERE id=208")
+                db.execSQL("UPDATE word_sets SET name='Интернет и соцсети: основы',description='Цифровой мир — базовая лексика'                WHERE id=209")
+                db.execSQL("UPDATE word_sets SET name='Химия: основы',            description='Химия — базовые понятия'                        WHERE id=219")
+                // Create the new "углублённо" word_set rows
+                db.execSQL("INSERT OR IGNORE INTO word_sets(id,name,description,orderIndex,languagePair,isFavorite) VALUES(240,'Супермаркет: углублённо','Торговля и ритейл — продвинутая лексика',123,'en-ru',0)")
+                db.execSQL("INSERT OR IGNORE INTO word_sets(id,name,description,orderIndex,languagePair,isFavorite) VALUES(241,'Инструменты: углублённо','Специализированные инструменты и техники',124,'en-ru',0)")
+                db.execSQL("INSERT OR IGNORE INTO word_sets(id,name,description,orderIndex,languagePair,isFavorite) VALUES(242,'Праздники: углублённо','Торжества и церемонии — продвинутая лексика',125,'en-ru',0)")
+                db.execSQL("INSERT OR IGNORE INTO word_sets(id,name,description,orderIndex,languagePair,isFavorite) VALUES(243,'Профессии 2: углублённо','Редкие и узкоспециализированные профессии',126,'en-ru',0)")
+                db.execSQL("INSERT OR IGNORE INTO word_sets(id,name,description,orderIndex,languagePair,isFavorite) VALUES(244,'Быт: углублённо','Домашний быт — продвинутая и техническая лексика',127,'en-ru',0)")
+                db.execSQL("INSERT OR IGNORE INTO word_sets(id,name,description,orderIndex,languagePair,isFavorite) VALUES(245,'Кино и театр: углублённо','Кинематограф и сцена — профессиональная лексика',128,'en-ru',0)")
+                db.execSQL("INSERT OR IGNORE INTO word_sets(id,name,description,orderIndex,languagePair,isFavorite) VALUES(246,'Садоводство: углублённо','Ботаника и агрономия — продвинутая лексика',129,'en-ru',0)")
+                db.execSQL("INSERT OR IGNORE INTO word_sets(id,name,description,orderIndex,languagePair,isFavorite) VALUES(247,'Интернет и соцсети: углублённо','Кибербезопасность и технологии — продвинутая лексика',130,'en-ru',0)")
+                db.execSQL("INSERT OR IGNORE INTO word_sets(id,name,description,orderIndex,languagePair,isFavorite) VALUES(248,'Химия: углублённо','Химия — углублённая и специализированная лексика',131,'en-ru',0)")
+                // Move RARE/EPIC/LEGENDARY words from basics sets to their new advanced sets
+                db.execSQL("UPDATE words SET setId=240 WHERE id IN (2076,2083,2085,2086,2087,2089,2090,2091,2092,2494,2495,2496,2497,2498)")
+                db.execSQL("UPDATE words SET setId=241 WHERE id IN (2102,2103,2104,2106,2107,2505,2506,2507,2508)")
+                db.execSQL("UPDATE words SET setId=242 WHERE id IN (2115,2117,2119,2517,2518,2519,2520)")
+                db.execSQL("UPDATE words SET setId=243 WHERE id IN (2130,2132,2133,2134,2135,2525,2526,2527,2528,2529,2530)")
+                db.execSQL("UPDATE words SET setId=244 WHERE id IN (2146,2147,2148,2149,2150,2536,2537,2538,2539,2540)")
+                db.execSQL("UPDATE words SET setId=245 WHERE id IN (2176,2178,2181,2182,2183,2184,2185,2186,2187,2188,2189,2190,2549,2550)")
+                db.execSQL("UPDATE words SET setId=246 WHERE id IN (2211,2212,2213,2215,2216,2217,2219,2221,2222,2223,2224,2225,2226,2227,2228,2559,2560,2561,2562)")
+                db.execSQL("UPDATE words SET setId=247 WHERE id IN (2237,2240,2241,2242,2243,2244,2245,2246,2247,2568)")
+                db.execSQL("UPDATE words SET setId=248 WHERE id IN (2471,2472,2474,2475,2476,2477,2478,2479,2480,2481,2482,2483,2484,2485,2486,2487,2488,2489,2490)")
             }
         }
     }

@@ -85,6 +85,15 @@ class WordSetRepository @Inject constructor(
             wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 230..239 })
             wordDao.insertAll(SeedDataEnglishMore.words.filter { it.setId in 230..239 })
         }
+        // Sets 240–248 (split from thematic basics sets 200–219): seed new words when the
+        // advanced sets are underpopulated. For existing users the migration already created
+        // the set rows and moved old words; this sentinel inserts the new word IDs (≥3076).
+        val expected240_248 = SeedDataEnglishMore.words.count { it.setId in 240L..248L }
+        val actual240_248   = wordSetDao.getWordCountInRange(240L, 248L)
+        if (actual240_248 < expected240_248) {
+            wordSetDao.insertSets(SeedDataEnglishMore.sets.filter { it.id in 240..248 })
+            wordDao.insertAll(SeedDataEnglishMore.words.filter { it.id >= 3076L })
+        }
         // Patch English words with Russian-language native content (definitionNative + exampleNative).
         // Runs once: skipped when the count of already-patched English words matches the dataset.
         patchEnglishNativeContent()
