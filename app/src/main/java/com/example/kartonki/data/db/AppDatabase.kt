@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 25,
+    version = 26,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -126,6 +126,31 @@ abstract class AppDatabase : RoomDatabase() {
                 db.execSQL("UPDATE words SET rarity = 'COMMON'   WHERE id = 915")
                 db.execSQL("UPDATE words SET rarity = 'EPIC'     WHERE id = 1323")
                 db.execSQL("UPDATE words SET rarity = 'RARE'     WHERE id = 1597")
+            }
+        }
+        /**
+         * Full rarity audit — 27 corrections:
+         *
+         * COMMON → UNCOMMON (слова выше A1):
+         *  274 region, 275 suburb, 288 ambulance, 289 prescription, 290 allergy,
+         *  299 ache, 364 canteen, 368 assembly, 418 tournament, 423 championship,
+         *  479 luggage, 490 hostel, 493 boarding, 531 colleague, 532 salary,
+         *  548 absence, 2125 architect, 2583 arrest, 2584 victim
+         *
+         * LEGENDARY → EPIC (подтверждённые C1, не C2+):
+         *  1903 euphemism, 1905 anomaly, 1953 circumvent,
+         *  2050 eradicate, 2052 proliferate, 2056 culminate
+         *
+         * RARE → UNCOMMON: 1254 journalist (B1)
+         * EPIC → RARE:     1609 refugee (B2)
+         */
+        val MIGRATION_25_26 = object : Migration(25, 26) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("""UPDATE words SET rarity = 'UNCOMMON'
+                    WHERE id IN (274,275,288,289,290,299,364,368,418,423,
+                                 479,490,493,531,532,548,2125,2583,2584,1254)""")
+                db.execSQL("UPDATE words SET rarity = 'EPIC' WHERE id IN (1903,1905,1953,2050,2052,2056)")
+                db.execSQL("UPDATE words SET rarity = 'RARE' WHERE id = 1609")
             }
         }
     }
