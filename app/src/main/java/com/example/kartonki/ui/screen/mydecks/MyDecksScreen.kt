@@ -177,22 +177,13 @@ private fun DeckItem(
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Column(modifier = Modifier.weight(1f)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Text(
-                    text = deck.name,
-                    style = MaterialTheme.typography.bodyLarge,
-                    fontWeight = FontWeight.Medium,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
-                    modifier = Modifier.weight(1f, fill = false),
-                )
-                Text(
-                    text = "  ${DeckLevel.starsFor(deck.level)}",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.primary,
-                    maxLines = 1,
-                )
-            }
+            Text(
+                text = deck.name,
+                style = MaterialTheme.typography.bodyLarge,
+                fontWeight = FontWeight.Medium,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+            )
             Text(
                 text = LocalAppStrings.current.deckCardCount(deck.cardCount, DeckBuilderUiState.DECK_MAX_SIZE),
                 style = MaterialTheme.typography.bodySmall,
@@ -200,6 +191,12 @@ private fun DeckItem(
             )
         }
         val s = LocalAppStrings.current
+        Text(
+            text = DeckLevel.starsFor(deck.level),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.primary,
+            modifier = Modifier.padding(horizontal = 8.dp),
+        )
         IconButton(onClick = onEdit) {
             Icon(
                 imageVector = Icons.Filled.Edit,
