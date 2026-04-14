@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 30,
+    version = 31,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -230,6 +230,17 @@ abstract class AppDatabase : RoomDatabase() {
         val MIGRATION_29_30 = object : Migration(29, 30) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE decks ADD COLUMN isPreset INTEGER NOT NULL DEFAULT 0")
+            }
+        }
+        /**
+         * Cleans up legacy preset decks that existed before the isPreset flag was introduced.
+         * Those decks got isPreset=0 from the DEFAULT in MIGRATION_29_30, so they weren't
+         * removed by migratePresetDecks(). Mark them all as preset now so the next
+         * migratePresetDecks() call (triggered by PresetDecksVersion bump to 3) deletes them.
+         */
+        val MIGRATION_30_31 = object : Migration(30, 31) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("UPDATE decks SET isPreset = 1 WHERE isPreset = 0")
             }
         }
     }
