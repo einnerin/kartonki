@@ -155,11 +155,14 @@ object QuizBuilder {
     }
 
     internal fun fallbackTranslation(word: Word, allWords: List<Word>): StudyStep.Quiz {
-        val wrongs = allWords.filter { it.id != word.id }.shuffled().take(3).map { it.translation }
+        val candidates = allWords.filter { it.id != word.id }.shuffled()
+        val wrongs = candidates.take(3).map { it.translation }
+        // Pad with numbered placeholders if the pool is too small (< 3 distractors).
+        val paddedWrongs = wrongs + List(maxOf(0, 3 - wrongs.size)) { i -> "—${i + 1}" }
         return StudyStep.Quiz(
             word = word, type = StudyQuizType.MULTIPLE_CHOICE_TRANSLATION,
             question = word.original,
-            options = (wrongs + word.translation).shuffled(),
+            options = (paddedWrongs + word.translation).shuffled(),
             correctAnswer = word.translation,
         )
     }

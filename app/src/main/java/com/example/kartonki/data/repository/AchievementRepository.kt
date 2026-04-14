@@ -33,6 +33,10 @@ class AchievementRepository @Inject constructor(
     private val _newlyUnlocked = MutableSharedFlow<AchievementId>(extraBufferCapacity = 8)
     val newlyUnlocked: SharedFlow<AchievementId> = _newlyUnlocked.asSharedFlow()
 
+    // Achievements only transition locked → unlocked, never backwards.
+    // Caching the unlocked set avoids a DB round-trip per check.
+    private val unlockedCache: MutableSet<String> = mutableSetOf()
+
     suspend fun getAll(): List<AchievementState> {
         val entities = achievementDao.getAll().associateBy { it.id }
         return AchievementId.entries.map { id ->
@@ -276,11 +280,16 @@ class AchievementRepository @Inject constructor(
         if (word != null) {
             collectionDao.insertAll(listOf(CollectionEntity(wordId = word.id)))
         }
+        unlockedCache.add(id.name)
         _newlyUnlocked.emit(id)
     }
 
-    private suspend fun isUnlocked(id: AchievementId): Boolean =
-        achievementDao.getById(id.name)?.unlockedAt != null
+    private suspend fun isUnlocked(id: AchievementId): Boolean {
+        if (id.name in unlockedCache) return true
+        val result = achievementDao.getById(id.name)?.unlockedAt != null
+        if (result) unlockedCache.add(id.name)
+        return result
+    }
 
     private suspend fun calculateCurrentStreak(): Int {
         val days = studyStreakDao.getAll().map { it.date }

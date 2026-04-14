@@ -15,6 +15,8 @@ import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import kotlin.math.abs
 
 @Singleton
@@ -22,8 +24,21 @@ class WordSetRepository @Inject constructor(
     private val wordSetDao: WordSetDao,
     private val wordDao: WordDao,
 ) {
+    // Once seeding completes for this process, skip all subsequent calls.
+    private val seedMutex = Mutex()
+    private var seedingComplete = false
+
     /** Inserts seed sets + words on first run (or after destructive migration). */
     suspend fun ensureSeeded() {
+        if (seedingComplete) return
+        seedMutex.withLock {
+            if (seedingComplete) return
+            doSeed()
+            seedingComplete = true
+        }
+    }
+
+    private suspend fun doSeed() {
         if (wordSetDao.getSetCountByLanguage("en-ru") == 0) {
             wordSetDao.insertSets(SeedData.sets)
             wordDao.insertAll(SeedData.words)
