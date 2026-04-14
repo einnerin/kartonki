@@ -71,6 +71,16 @@ class CollectionRepository @Inject constructor(
             collectionDao.insertAll(combined.map { CollectionEntity(it.id) })
         }
 
+        // For small language packs (non-English), always ensure every word is in the
+        // collection. INSERT OR IGNORE makes this idempotent — existing rows are skipped,
+        // and newly added words (from WordDataVersion bumps) are added automatically.
+        for (langPair in SMALL_LANGUAGE_PACKS) {
+            val words = wordDao.getAllWordsByLanguage(langPair)
+            if (words.isNotEmpty()) {
+                collectionDao.insertAll(words.map { CollectionEntity(it.id) })
+            }
+        }
+
         // (Re)create preset decks if version has changed or this is a first run.
         val storedVersion = prefs.getPresetDecksVersion()
         if (storedVersion != PresetDecksVersion.CURRENT) {
@@ -153,5 +163,13 @@ class CollectionRepository @Inject constructor(
 
     companion object {
         private const val STARTER_COLLECTION_SIZE = 500
+
+        /**
+         * Language pairs whose entire word catalogue is unlocked from the start.
+         * English ("en-ru") uses a weighted random starter pack instead because
+         * its catalogue is large enough to make acquiring cards meaningful.
+         * Any new non-English language should be added here.
+         */
+        private val SMALL_LANGUAGE_PACKS = listOf("he-ru")
     }
 }
