@@ -16,6 +16,9 @@ interface WordDao {
     @Query("SELECT * FROM words WHERE id = :id")
     suspend fun getWordById(id: Long): WordEntity?
 
+    @Query("SELECT * FROM words WHERE id IN (:ids)")
+    suspend fun getWordsByIds(ids: List<Long>): List<WordEntity>
+
     @Query("SELECT COUNT(*) FROM words")
     suspend fun getWordCount(): Int
 
@@ -73,6 +76,9 @@ interface WordDao {
      */
     @Query("SELECT * FROM words WHERE semanticGroup = :group AND languagePair = :langPair AND id NOT IN (:excludeIds) ORDER BY RANDOM() LIMIT :limit")
     suspend fun getWordsBySemanticGroup(group: String, langPair: String, excludeIds: List<Long>, limit: Int): List<WordEntity>
+
+    @Query("DELETE FROM words WHERE id IN (:ids)")
+    suspend fun deleteWordsByIds(ids: List<Long>)
 
     /** Applies all native-content updates inside a single SQLite transaction. */
     @androidx.room.Transaction

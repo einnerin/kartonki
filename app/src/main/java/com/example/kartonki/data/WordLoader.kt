@@ -68,6 +68,16 @@ class WordLoader @Inject constructor(
         // ── Native-language content patch for English words ────────────────────
         wordDao.patchNativeContent("en-ru", SeedDataEnglishNative.data)
 
+        // ── One-time cleanup: remove ghost duplicate words (2078-2097) and
+        //    their now-empty transitional sets (84-86) added in versions 8-9.
+        //    All these words already exist in SeedDataEnglishMore with proper sets.
+        wordDao.deleteWordsByIds(
+            listOf(2078L,2079L,2080L,2081L,2082L,2083L,
+                   2084L,2085L,2086L,2087L,2088L,
+                   2089L,2090L,2091L,2092L,2093L,2094L,2095L,2096L,2097L)
+        )
+        wordSetDao.deleteSetsById(listOf(84L, 85L, 86L))
+
         prefs.setWordDataVersion(WordDataVersion.CURRENT)
     }
 }

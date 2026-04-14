@@ -61,6 +61,9 @@ interface WordSetDao {
     @Query("UPDATE word_sets SET isFavorite = :value WHERE id = :id")
     suspend fun setFavorite(id: Long, value: Boolean)
 
+    @Query("DELETE FROM word_sets WHERE id IN (:ids)")
+    suspend fun deleteSetsById(ids: List<Long>)
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertSets(sets: List<WordSetEntity>)
 }
