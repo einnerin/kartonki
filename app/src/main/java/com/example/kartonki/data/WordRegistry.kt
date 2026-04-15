@@ -21,6 +21,7 @@ object WordRegistry {
         get() = WordDataEnglish.sets + WordDataEnglishExpanded.sets +
                 WordDataEnglishBatch3.sets +
                 WordDataEnglishBatch4.sets +
+                WordDataEnglishBatch5.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewTech.sets
@@ -30,6 +31,7 @@ object WordRegistry {
                 WordDataEnglishExpanded.achievementRewardWords() +
                 WordDataEnglishBatch3.words +
                 WordDataEnglishBatch4.words +
+                WordDataEnglishBatch5.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words
