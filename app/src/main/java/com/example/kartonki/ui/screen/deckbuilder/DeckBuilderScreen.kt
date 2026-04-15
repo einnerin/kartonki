@@ -110,10 +110,11 @@ fun DeckBuilderScreen(
                         Text(
                             text = s.deckBuilderSize(uiState.totalCards, DeckBuilderUiState.DECK_MAX_SIZE),
                             style = MaterialTheme.typography.labelSmall,
-                            color = if (uiState.raritySlots.any { it.isOverLimit })
-                                        MaterialTheme.colorScheme.error
-                                    else if (uiState.isFull) MaterialTheme.colorScheme.primary
-                                    else MaterialTheme.colorScheme.onSurfaceVariant,
+                            color = when {
+                                !uiState.isFull -> MaterialTheme.colorScheme.error   // < 21: incomplete
+                                uiState.isValid -> MaterialTheme.colorScheme.primary // 21/21 + valid: done
+                                else            -> MaterialTheme.colorScheme.onSurfaceVariant // 21/21 + wrong composition: neutral (! badge handles it)
+                            },
                         )
                     }
                 },
