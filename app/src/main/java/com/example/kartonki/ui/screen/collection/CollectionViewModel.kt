@@ -38,8 +38,7 @@ class CollectionViewModel @Inject constructor(
 
     fun toggleFilter(rarity: Rarity) {
         _uiState.update {
-            val newFilter = if (rarity in it.rarityFilter) it.rarityFilter - rarity
-                            else it.rarityFilter + rarity
+            val newFilter = if (rarity in it.rarityFilter) emptySet() else setOf(rarity)
             it.copy(rarityFilter = newFilter, words = applyFilter(newFilter))
         }
     }

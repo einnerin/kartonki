@@ -101,10 +101,7 @@ class StudyViewModel @Inject constructor(
 
     fun toggleFilter(rarity: Rarity) {
         _uiState.update { state ->
-            val updated = if (rarity in state.activeFilters)
-                state.activeFilters - rarity
-            else
-                state.activeFilters + rarity
+            val updated = if (rarity in state.activeFilters) emptySet() else setOf(rarity)
             state.copy(activeFilters = updated, filterVersion = state.filterVersion + 1)
         }
     }
