@@ -111,7 +111,9 @@ class DeckBuilderViewModel @Inject constructor(
             currentDeckId = deck?.id ?: 0L
             val deckName = deck?.name ?: "Моя колода"
             val deckLevel = deck?.level ?: 1
-            _uiState.update { it.copy(deckName = deckName, deckLevel = deckLevel) }
+            val limits = DeckLevel.limitsFor(deckLevel)
+            val initialFilter = Rarity.entries.filter { limits.limitFor(it) > 0 }.toSet()
+            _uiState.update { it.copy(deckName = deckName, deckLevel = deckLevel, rarityFilter = initialFilter) }
             refreshCards(deckName, deckLevel)
         }
     }
