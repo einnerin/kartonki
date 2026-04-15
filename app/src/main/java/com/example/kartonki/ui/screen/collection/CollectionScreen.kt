@@ -1,5 +1,11 @@
 package com.example.kartonki.ui.screen.collection
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -23,12 +29,16 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.TopAppBar
+import androidx.compose.foundation.background
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -42,6 +52,7 @@ import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.component.RarityFilterChips
+import com.example.kartonki.ui.component.WordCard
 import com.example.kartonki.ui.theme.LocalAppStrings
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -51,6 +62,7 @@ fun CollectionScreen(
     viewModel: CollectionViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    var selectedWord by remember { mutableStateOf<Word?>(null) }
     val lifecycleOwner = LocalLifecycleOwner.current
 
     DisposableEffect(lifecycleOwner) {
@@ -112,9 +124,47 @@ fun CollectionScreen(
                             contentPadding = PaddingValues(bottom = 88.dp),
                         ) {
                             items(uiState.words, key = { it.id }) { word ->
-                                CollectionWordItem(word)
+                                CollectionWordItem(word, onClick = { selectedWord = word })
                                 HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
                             }
+                        }
+                    }
+                }
+            }
+
+            // ── Word card overlay ─────────────────────────────────────────────
+            AnimatedVisibility(
+                visible = selectedWord != null,
+                enter = fadeIn(),
+                exit = fadeOut(),
+            ) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(Color.Black.copy(alpha = 0.6f))
+                        .clickable(
+                            interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() },
+                            indication = null,
+                            onClick = { selectedWord = null },
+                        ),
+                    contentAlignment = Alignment.Center,
+                ) {
+                    AnimatedVisibility(
+                        visible = selectedWord != null,
+                        enter = scaleIn(initialScale = 0.85f) + fadeIn(),
+                        exit = scaleOut(targetScale = 0.85f) + fadeOut(),
+                    ) {
+                        selectedWord?.let { word ->
+                            WordCard(
+                                word = word,
+                                modifier = Modifier
+                                    .padding(horizontal = 24.dp)
+                                    .clickable(
+                                        interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() },
+                                        indication = null,
+                                        onClick = {},
+                                    ),
+                            )
                         }
                     }
                 }
@@ -124,10 +174,11 @@ fun CollectionScreen(
 }
 
 @Composable
-private fun CollectionWordItem(word: Word) {
+private fun CollectionWordItem(word: Word, onClick: () -> Unit) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
+            .clickable(onClick = onClick)
             .padding(horizontal = 16.dp, vertical = 10.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically,
