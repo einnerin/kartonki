@@ -117,6 +117,12 @@ class AchievementRepository @Inject constructor(
         checkLegend()
     }
 
+    /** Called once on app launch from MainViewModel. */
+    suspend fun checkFirstLaunch() {
+        if (isUnlocked(AchievementId.FIRST_LAUNCH)) return
+        unlock(AchievementId.FIRST_LAUNCH)
+    }
+
     // ── Visible achievement checks ────────────────────────────────────────────
 
     private suspend fun checkFirstLesson() {

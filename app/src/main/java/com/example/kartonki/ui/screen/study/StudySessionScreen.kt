@@ -150,7 +150,7 @@ internal fun IntroductionContent(
             color = MaterialTheme.colorScheme.primary,
             fontWeight = FontWeight.SemiBold,
         )
-        WordCard(word = step.word, showDetails = true)
+        WordCard(word = step.word)
         Spacer(Modifier.weight(1f))
         Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
             Text(s.studyGotIt)

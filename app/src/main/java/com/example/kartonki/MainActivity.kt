@@ -14,7 +14,9 @@ import com.example.kartonki.ui.navigation.AppNavGraph
 import com.example.kartonki.ui.screen.home.MainViewModel
 import com.example.kartonki.ui.theme.KartonkiTheme
 import com.example.kartonki.ui.theme.LocalAppStrings
+import com.example.kartonki.ui.theme.LocalTtsManager
 import com.example.kartonki.ui.theme.appStringsFor
+import com.example.kartonki.util.TtsManager
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
@@ -24,6 +26,7 @@ class MainActivity : ComponentActivity() {
     private val mainViewModel: MainViewModel by viewModels()
 
     @Inject lateinit var authManager: FirebaseAuthManager
+    @Inject lateinit var ttsManager: TtsManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +35,10 @@ class MainActivity : ComponentActivity() {
             val isDarkTheme by mainViewModel.isDarkTheme.collectAsState()
             val nativeLanguage by mainViewModel.nativeLanguage.collectAsState()
             KartonkiTheme(darkTheme = isDarkTheme) {
-                CompositionLocalProvider(LocalAppStrings provides appStringsFor(nativeLanguage)) {
+                CompositionLocalProvider(
+                    LocalAppStrings provides appStringsFor(nativeLanguage),
+                    LocalTtsManager provides ttsManager,
+                ) {
                     val navController = rememberNavController()
                     AppNavGraph(navController = navController, authManager = authManager)
                 }

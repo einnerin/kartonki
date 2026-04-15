@@ -7,24 +7,29 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDirection
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.LocalAppStrings
+import com.example.kartonki.ui.theme.LocalTtsManager
 import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 import com.example.kartonki.ui.theme.localizedName
@@ -32,10 +37,12 @@ import com.example.kartonki.ui.theme.localizedName
 @Composable
 fun WordCard(
     word: Word,
-    showDetails: Boolean = true,
     modifier: Modifier = Modifier,
 ) {
     val rarityColor = Color(word.rarity.colorArgb)
+    val ttsManager = LocalTtsManager.current
+    val isRtl = word.languagePair.startsWith("he")
+
     Card(
         modifier = modifier
             .fillMaxWidth()
@@ -45,52 +52,65 @@ fun WordCard(
         colors = CardDefaults.cardColors(containerColor = BgCard),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
     ) {
-        Column(modifier = Modifier.padding(20.dp)) {
-            Row {
-                Spacer(modifier = Modifier.weight(1f))
-                RarityBadge(rarity = word.rarity)
-            }
-            val isHebrew = word.languagePair.startsWith("he")
-            Spacer(modifier = Modifier.height(12.dp))
+        Column(modifier = Modifier.padding(horizontal = 20.dp, vertical = 16.dp)) {
+
+            // ── Word ─────────────────────────────────────────────────────────
             Text(
                 text = word.original,
                 style = MaterialTheme.typography.displaySmall.copy(
-                    textDirection = if (isHebrew) TextDirection.Rtl else TextDirection.Ltr,
+                    textDirection = if (isRtl) TextDirection.Rtl else TextDirection.Ltr,
                 ),
                 fontWeight = FontWeight.Bold,
                 color = Color.White,
             )
-            if (isHebrew && word.transliteration != null) {
-                Text(
-                    text = word.transliteration,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = TextSecondary,
-                    fontSize = 14.sp,
-                )
+
+            // ── Transliteration + TTS button ─────────────────────────────────
+            val hasTranslit = word.transliteration != null
+            if (hasTranslit || ttsManager != null) {
+                Spacer(modifier = Modifier.height(4.dp))
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    if (hasTranslit) {
+                        Text(
+                            text = word.transliteration!!,
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = TextSecondary,
+                            modifier = Modifier.weight(1f, fill = false),
+                        )
+                    } else {
+                        Spacer(modifier = Modifier.weight(1f))
+                    }
+                    if (ttsManager != null) {
+                        IconButton(
+                            onClick = { ttsManager.speak(word.original, word.languagePair) },
+                            modifier = Modifier.size(32.dp),
+                        ) {
+                            Text("🔊", fontSize = 16.sp)
+                        }
+                    }
+                }
             }
-            Spacer(modifier = Modifier.height(4.dp))
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            // ── Translation ───────────────────────────────────────────────────
             Text(
                 text = word.translation,
                 style = MaterialTheme.typography.headlineSmall,
                 color = rarityColor,
                 fontWeight = FontWeight.Medium,
             )
-            if (showDetails) {
-                word.definition?.let { def ->
+
+            // ── Definition (LEGENDARY only) ───────────────────────────────────
+            if (word.rarity == Rarity.LEGENDARY) {
+                word.definitionNative?.let { def ->
                     Spacer(modifier = Modifier.height(12.dp))
                     Text(
                         text = def,
                         style = MaterialTheme.typography.bodyMedium,
                         color = TextSecondary,
-                    )
-                }
-                word.example?.let { ex ->
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Text(
-                        text = "\"$ex\"",
-                        style = MaterialTheme.typography.bodyMedium,
+                        maxLines = 2,
+                        overflow = TextOverflow.Ellipsis,
                         fontStyle = FontStyle.Italic,
-                        color = TextSecondary,
                     )
                 }
             }

@@ -10,6 +10,15 @@ enum class AchievementId(
 ) {
     // ── Visible achievements ──────────────────────────────────────────────────
 
+    /** Temporary test achievement — remove before release. */
+    FIRST_LAUNCH(
+        title = "Добро пожаловать",
+        description = "Первый запуск приложения",
+        icon = "👋",
+        rewardWordOriginal = "pioneer",
+        rewardWordTranslation = "первопроходец",
+    ),
+
     FIRST_LESSON(
         title = "Первые шаги",
         description = "Завершить первую учебную сессию",
