@@ -19,7 +19,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.kartonki.domain.model.DeckLevel
 import com.example.kartonki.domain.model.Rarity
 
 /**
@@ -40,7 +39,6 @@ import com.example.kartonki.domain.model.Rarity
 @Composable
 fun DeckLevelBadge(level: Int, modifier: Modifier = Modifier) {
     val color = deckLevelColor(level)
-    val name  = DeckLevel.nameFor(level)
     val shape = RoundedCornerShape(50)
 
     val glowModifier: Modifier = when (level) {
@@ -63,10 +61,10 @@ fun DeckLevelBadge(level: Int, modifier: Modifier = Modifier) {
         contentAlignment = Alignment.Center,
     ) {
         Text(
-            text = name,
-            style = MaterialTheme.typography.labelSmall,
+            text = "★",
+            style = MaterialTheme.typography.bodyMedium,
             color = color,
-            fontWeight = FontWeight.SemiBold,
+            fontWeight = FontWeight.Bold,
         )
     }
 }

@@ -11,16 +11,16 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface DeckDao {
-    @Query("SELECT * FROM decks ORDER BY level DESC, name ASC")
+    @Query("SELECT * FROM decks ORDER BY isPreset ASC, level DESC, name ASC")
     fun getAllDecks(): Flow<List<DeckEntity>>
 
-    @Query("SELECT * FROM decks WHERE languagePair = :languagePair ORDER BY level DESC, name ASC")
+    @Query("SELECT * FROM decks WHERE languagePair = :languagePair ORDER BY isPreset ASC, level DESC, name ASC")
     fun getAllDecks(languagePair: String): Flow<List<DeckEntity>>
 
-    @Query("SELECT * FROM decks ORDER BY level DESC, name ASC")
+    @Query("SELECT * FROM decks ORDER BY isPreset ASC, level DESC, name ASC")
     suspend fun getDecksOnce(): List<DeckEntity>
 
-    @Query("SELECT * FROM decks WHERE languagePair = :languagePair ORDER BY level DESC, name ASC")
+    @Query("SELECT * FROM decks WHERE languagePair = :languagePair ORDER BY isPreset ASC, level DESC, name ASC")
     suspend fun getDecksOnce(languagePair: String): List<DeckEntity>
 
     @Query("SELECT COUNT(*) FROM decks")
