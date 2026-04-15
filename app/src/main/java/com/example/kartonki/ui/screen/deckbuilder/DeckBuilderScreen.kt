@@ -17,6 +17,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
@@ -33,7 +35,9 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -42,6 +46,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.R
+import com.example.kartonki.domain.model.DeckLevel
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.DeckLevelBadge
@@ -57,6 +62,7 @@ fun DeckBuilderScreen(
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
+    var levelMenuExpanded by remember { mutableStateOf(false) }
     // Fresh state (position 0) whenever the filter changes
     val deckListState = remember(uiState.rarityFilter) { LazyListState() }
     val availableListState = remember(uiState.rarityFilter) { LazyListState() }
@@ -69,7 +75,34 @@ fun DeckBuilderScreen(
                         if (uiState.deckName.isNotEmpty()) {
                             Row(verticalAlignment = Alignment.CenterVertically) {
                                 Text(uiState.deckName, modifier = Modifier.weight(1f, fill = false))
-                                DeckLevelBadge(uiState.deckLevel, modifier = Modifier.padding(start = 8.dp))
+                                Box(modifier = Modifier.padding(start = 8.dp)) {
+                                    DeckLevelBadge(
+                                        level = uiState.deckLevel,
+                                        onClick = { levelMenuExpanded = true },
+                                    )
+                                    DropdownMenu(
+                                        expanded = levelMenuExpanded,
+                                        onDismissRequest = { levelMenuExpanded = false },
+                                    ) {
+                                        (1..DeckLevel.COUNT).forEach { level ->
+                                            DropdownMenuItem(
+                                                text = {
+                                                    Row(
+                                                        verticalAlignment = Alignment.CenterVertically,
+                                                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                                    ) {
+                                                        DeckLevelBadge(level)
+                                                        Text(DeckLevel.nameFor(level))
+                                                    }
+                                                },
+                                                onClick = {
+                                                    viewModel.changeLevel(level)
+                                                    levelMenuExpanded = false
+                                                },
+                                            )
+                                        }
+                                    }
+                                }
                             }
                         } else {
                             Text(s.deckBuilderTitle)

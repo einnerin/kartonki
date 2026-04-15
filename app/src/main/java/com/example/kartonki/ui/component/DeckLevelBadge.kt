@@ -2,6 +2,7 @@ package com.example.kartonki.ui.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -37,7 +38,7 @@ import com.example.kartonki.domain.model.Rarity
  *  L7 Эксперт  — gold  + strong glow
  */
 @Composable
-fun DeckLevelBadge(level: Int, modifier: Modifier = Modifier) {
+fun DeckLevelBadge(level: Int, modifier: Modifier = Modifier, onClick: (() -> Unit)? = null) {
     val color = deckLevelColor(level)
     val shape = RoundedCornerShape(50)
 
@@ -51,12 +52,15 @@ fun DeckLevelBadge(level: Int, modifier: Modifier = Modifier) {
     val bgAlpha     = if (level >= 6) 0.22f else 0.13f
     val borderAlpha = if (level >= 6) 0.90f else 0.65f
 
+    val clickableModifier = if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier
+
     Box(
         modifier = modifier
             .then(glowModifier)
             .clip(shape)
             .background(color.copy(alpha = bgAlpha))
             .border(1.dp, color.copy(alpha = borderAlpha), shape)
+            .then(clickableModifier)
             .padding(horizontal = 10.dp, vertical = 4.dp),
         contentAlignment = Alignment.Center,
     ) {
