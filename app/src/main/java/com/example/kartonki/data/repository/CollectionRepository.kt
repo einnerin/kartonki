@@ -115,11 +115,14 @@ class CollectionRepository @Inject constructor(
                 original = e.original,
                 translation = e.translation,
                 definition = e.definition,
+                definitionNative = e.definitionNative,
                 example = e.example,
+                exampleNative = e.exampleNative,
                 rarity = Rarity.valueOf(e.rarity),
                 languagePair = e.languagePair,
                 pos = e.pos,
                 semanticGroup = e.semanticGroup,
+                transliteration = e.transliteration,
             )
         }
     }

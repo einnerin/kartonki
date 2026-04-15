@@ -108,11 +108,14 @@ class PackRepository @Inject constructor(
         original = original,
         translation = translation,
         definition = definition,
+        definitionNative = definitionNative,
         example = example,
+        exampleNative = exampleNative,
         rarity = Rarity.valueOf(rarity),
         languagePair = languagePair,
         pos = pos,
         semanticGroup = semanticGroup,
+        transliteration = transliteration,
     )
 
     companion object {
