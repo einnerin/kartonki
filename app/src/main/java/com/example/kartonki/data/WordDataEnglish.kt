@@ -10929,5 +10929,24 @@ object WordDataEnglish {
                 "רֶלָטִיבִיזְם",
             ),
         ),
+
+        // 19 ── Английский: Компьютерные игры (★★★★, set 249, 21 words) ─────────
+        DeckSeed(
+            name = "Английский: Компьютерные игры",
+            level = 4,
+            languagePair = "en-ru",
+            wordOriginals = listOf(
+                // COMMON ×4
+                "game", "player", "tutorial", "minimap",
+                // UNCOMMON ×7
+                "faction", "NPC", "weapon", "enemy", "multiplayer", "patch", "achievement",
+                // RARE ×6
+                "inventory", "loot", "stealth", "dungeon", "glitch", "respawn",
+                // EPIC ×3
+                "roguelike", "permadeath", "speedrun",
+                // LEGENDARY ×1
+                "emergent",
+            ),
+        ),
     )
 }
