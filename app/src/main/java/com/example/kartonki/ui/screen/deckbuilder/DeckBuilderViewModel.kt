@@ -150,6 +150,8 @@ class DeckBuilderViewModel @Inject constructor(
                 deckCards = inDeck,
                 availableCards = available,
                 allOwnedCards = allOwned,
+                // Open on "All cards" tab when deck is empty (newly created)
+                selectedTab = if (inDeck.isEmpty()) 1 else it.selectedTab,
             )
         }
     }
