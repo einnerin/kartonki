@@ -144,6 +144,7 @@ fun OnlinePvpGameScreen(
         is OnlinePvpPhase.MyQuiz ->
             OnlineQuizScreen(
                 title = s.pvpTaskFor(uiState.myName),
+                opponentName = uiState.opponentName,
                 phase = phase,
                 players = players,
                 highlightIndex = highlightIndex,
@@ -347,6 +348,7 @@ private fun OnlineWaitingScreen(
 @Composable
 private fun OnlineQuizScreen(
     title: String,
+    opponentName: String,
     phase: OnlinePvpPhase.MyQuiz,
     players: List<PvpPlayerState>,
     highlightIndex: Int,
@@ -401,6 +403,14 @@ private fun OnlineQuizScreen(
                     verticalArrangement = Arrangement.spacedBy(12.dp),
                 ) {
                     Spacer(Modifier.height(16.dp))
+
+                    // Context banner: shows the user whose card they are being quizzed on
+                    Text(
+                        text = "⚔ $opponentName сыграл карту",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = AccentGold,
+                        fontWeight = FontWeight.SemiBold,
+                    )
 
                     Text(
                         text = phase.questionLabel,
