@@ -4,9 +4,8 @@ import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.db.entity.WordSetEntity
 
 /**
- * Advanced Hebrew vocabulary — four sets covering IT/Tech, Work, Emotions, and Abstract concepts.
- * Sets 114–117. IDs 10318–10447.
- * Heavy focus on tech/computer terminology with EPIC and LEGENDARY entries.
+ * Advanced Hebrew vocabulary — five sets covering IT/Tech, Work, Emotions, Abstract concepts, and Gaming.
+ * Sets 1014–1018 (he-ru block). Word IDs follow formula setId×100+pos.
  */
 object WordDataHebrewAdvanced {
 
@@ -15,6 +14,7 @@ object WordDataHebrewAdvanced {
         WordSetEntity(id = 1015, name = "Работа и карьера",               description = "Офис, должности и карьера B1/B2", languagePair = "he-ru", orderIndex = 15),
         WordSetEntity(id = 1016, name = "Эмоции и характер",              description = "Чувства и черты личности B1/B2", languagePair = "he-ru", orderIndex = 16),
         WordSetEntity(id = 1017, name = "Абстрактные понятия",            description = "Философия и мышление C1",        languagePair = "he-ru", orderIndex = 17),
+        WordSetEntity(id = 1018, name = "Компьютерные игры",              description = "Игровая лексика и жанры A2/C2",   languagePair = "he-ru", orderIndex = 18),
     )
 
     val words = listOf(
@@ -1047,6 +1047,270 @@ object WordDataHebrewAdvanced {
             definitionNative = "Философская позиция, утверждающая, что только собственное сознание бесспорно существует.",
             example = "סוֹלִיפְּסִיזְם מעלה ספקות קיצוניים לגבי מציאות העולם החיצון.",
             exampleNative = "סוֹלִיפְּסִיזְם выдвигает крайние сомнения относительно реальности внешнего мира.",
+        ),
+
+        // ──────────────────────────────────────────────────────
+        // Set 1018 — Компьютерные игры (A2–C2)
+        // ──────────────────────────────────────────────────────
+
+        // ━━━ COMMON ━━━
+        WordEntity(
+            id = 101801, setId = 1018, languagePair = "he-ru", rarity = "COMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "miskhak",
+            original = "מִשְׂחָק", translation = "игра",
+            definition = "פעילות עם כללים שנועדה לשעשוע, לרוב על מסך מחשב או קונסולה.",
+            definitionNative = "Развлекательная активность с правилами, как правило на экране компьютера или консоли.",
+            example = "שיחקנו מִשְׂחָק מחשב כל הלילה מבלי להרגיש בזמן.",
+            exampleNative = "Мы играли в מִשְׂחָק весь вечер, не замечая времени.",
+        ),
+        WordEntity(
+            id = 101802, setId = 1018, languagePair = "he-ru", rarity = "COMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "khayim",
+            original = "חַיִּים", translation = "жизни (в игре)",
+            definition = "מספר הניסיונות שנותרו לשחקן לפני שהמשחק מסתיים.",
+            definitionNative = "Количество оставшихся попыток у игрока до завершения игры.",
+            example = "איבדתי שני חַיִּים בגלל מלכודת נסתרת ברמה.",
+            exampleNative = "Я потерял два חַיִּים из-за скрытой ловушки на уровне.",
+        ),
+        WordEntity(
+            id = 101803, setId = 1018, languagePair = "he-ru", rarity = "COMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "oyev",
+            original = "אוֹיֵב", translation = "враг",
+            definition = "דמות עוינת הנשלטת על ידי המחשב ומנסה לפגוע בשחקן.",
+            definitionNative = "Враждебный персонаж, управляемый компьютером и пытающийся навредить игроку.",
+            example = "כל אוֹיֵב ברמה הזו זז מהר יותר מהרגיל.",
+            exampleNative = "Каждый אוֹיֵב на этом уровне движется быстрее обычного.",
+        ),
+        WordEntity(
+            id = 101804, setId = 1018, languagePair = "he-ru", rarity = "COMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "nekudot",
+            original = "נְקֻדּוֹת", translation = "очки",
+            definition = "יחידות ניקוד שמצטברות בעת ביצוע פעולות מוצלחות במשחק.",
+            definitionNative = "Единицы счёта, накапливаемые при успешных действиях в игре.",
+            example = "צברתי אלפיים נְקֻדּוֹת תוך פחות מדקה.",
+            exampleNative = "Я набрал две тысячи נְקֻדּוֹת менее чем за минуту.",
+        ),
+        WordEntity(
+            id = 101805, setId = 1018, languagePair = "he-ru", rarity = "COMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "nitsakhon",
+            original = "נִצָּחוֹן", translation = "победа",
+            definition = "הגעה לסוף המשחק בהצלחה, לרוב אחרי ביסה של כל האויבים.",
+            definitionNative = "Успешное завершение игры, как правило после победы над всеми врагами.",
+            example = "נִצָּחוֹן על הבוס הסופי הגיע אחרי שעה שלמה של קרבות.",
+            exampleNative = "נִצָּחוֹן над финальным боссом пришёл после целого часа сражений.",
+        ),
+
+        // ━━━ UNCOMMON ━━━
+        WordEntity(
+            id = 101806, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "neshek",
+            original = "נֶשֶׁק", translation = "оружие",
+            definition = "פריט במשחק המשמש לתקוף אויבים ולגרום להם נזק.",
+            definitionNative = "Предмет в игре для атаки врагов и нанесения им урона.",
+            example = "מצאתי נֶשֶׁק חדש בתיבת אוצר נסתרת.",
+            exampleNative = "Я нашёл новый נֶשֶׁק в скрытом сундуке с сокровищами.",
+        ),
+        WordEntity(
+            id = 101807, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "mishima",
+            original = "מִשִׁימָה", translation = "задание / квест",
+            definition = "מטלה שמוטלת על השחקן ומקדמת את העלילה או מספקת פרסים.",
+            definitionNative = "Задача, поставленная перед игроком, продвигающая сюжет или приносящая награды.",
+            example = "קיבלתי מִשִׁימָה לאסוף עשרה פרחים נדירים מהיער.",
+            exampleNative = "Я получил מִשִׁימָה — собрать десять редких цветков в лесу.",
+        ),
+        WordEntity(
+            id = 101808, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "demut",
+            original = "דֶּמוּת", translation = "персонаж",
+            definition = "ייצוג ויזואלי של השחקן או של יצור אחר בעולם המשחק.",
+            definitionNative = "Визуальное воплощение игрока или другого существа в игровом мире.",
+            example = "בחרתי דֶּמוּת לוחם עם שריון כבד ולחימה בחרב.",
+            exampleNative = "Я выбрал דֶּמוּת воина в тяжёлой броне с мечом.",
+        ),
+        WordEntity(
+            id = 101809, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "rama",
+            original = "רָמָה", translation = "уровень",
+            definition = "שלב ממוספר בתוך המשחק, הכולל בדרך כלל אתגרים בקושי עולה.",
+            definitionNative = "Пронумерованный этап в игре, как правило включающий задания нарастающей сложности.",
+            example = "עברתי את רָמָה חמש רק אחרי עשרה ניסיונות כושלים.",
+            exampleNative = "Я прошёл רָמָה пять только после десяти неудачных попыток.",
+        ),
+        WordEntity(
+            id = 101810, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "krav",
+            original = "קְרָב", translation = "бой / сражение",
+            definition = "עימות בין השחקן לאויב, שמכריעים אותו בדרך כלל בלחימה פעילה.",
+            definitionNative = "Столкновение игрока с врагом, как правило разрешаемое в прямом бою.",
+            example = "קְרָב עם הבוס האחרון נמשך יותר מעשר דקות.",
+            exampleNative = "קְרָב с последним боссом длился более десяти минут.",
+        ),
+        WordEntity(
+            id = 101811, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "tsevet",
+            original = "צֶוֶת", translation = "команда",
+            definition = "קבוצת שחקנים הפועלים יחד לשם השגת מטרה משותפת במשחק.",
+            definitionNative = "Группа игроков, действующих сообща ради достижения общей цели в игре.",
+            example = "צֶוֶת מאוזן מנצח גם עם ציוד חלש.",
+            exampleNative = "Сбалансированный צֶוֶת побеждает даже со слабым снаряжением.",
+        ),
+        WordEntity(
+            id = 101812, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "bos",
+            original = "בּוֹס", translation = "босс",
+            definition = "אויב חזק במיוחד המופיע בסוף שלב ודורש תכנון מיוחד לביסה.",
+            definitionNative = "Особенно сильный враг в конце уровня, для победы над которым нужна особая тактика.",
+            example = "הבּוֹס הסופי שינה צורה שלוש פעמים במהלך הקרב.",
+            exampleNative = "Финальный בּוֹס менял облик трижды в ходе сражения.",
+        ),
+        WordEntity(
+            id = 101813, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "hakhyaa",
+            original = "הַחְיָאָה", translation = "возрождение / респавн",
+            definition = "חזרת הדמות לחיים אחרי מוות, בנקודה שנקבעה מראש.",
+            definitionNative = "Возвращение персонажа к жизни после гибели в заранее определённой точке.",
+            example = "אחרי כל מוות מתקיימת הַחְיָאָה בנקודת ההתחלה של הרמה.",
+            exampleNative = "После каждой гибели происходит הַחְיָאָה в начальной точке уровня.",
+        ),
+
+        // ━━━ RARE ━━━
+        WordEntity(
+            id = 101814, setId = 1018, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "otsar",
+            original = "אוֹצָר", translation = "добыча / лут",
+            definition = "פריטים ופרסים שנאספים מאויבים שהובסו או מתיבות נסתרות.",
+            definitionNative = "Предметы и награды, собираемые с побеждённых врагов или из тайных сундуков.",
+            example = "פתחנו את התיבה וגילינו אוֹצָר נדיר ביותר.",
+            exampleNative = "Мы открыли сундук и обнаружили редчайший אוֹצָר.",
+        ),
+        WordEntity(
+            id = 101815, setId = 1018, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "pega",
+            original = "פֶּגַע", translation = "урон / повреждение",
+            definition = "נזק הנגרם לדמות כתוצאה מהתקפת אויב או מסכנה סביבתית.",
+            definitionNative = "Вред, наносимый персонажу в результате атаки врага или природной опасности.",
+            example = "פֶּגַע אחד מהאויב הוריד את בריאותנו בחצי.",
+            exampleNative = "Один פֶּגַע от врага уменьшил наше здоровье вдвое.",
+        ),
+        WordEntity(
+            id = 101816, setId = 1018, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "magen",
+            original = "מַגֵּן", translation = "щит",
+            definition = "פריט הגנתי שמפחית את הנזק שדמות מקבלת בקרב.",
+            definitionNative = "Защитный предмет, снижающий урон, получаемый персонажем в бою.",
+            example = "בלי מַגֵּן לא הייתי שורד את מתקפת הדרקון.",
+            exampleNative = "Без מַגֵּן я бы не пережил атаку дракона.",
+        ),
+        WordEntity(
+            id = 101817, setId = 1018, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "hitganvut",
+            original = "הִתְגַּנְּבוּת", translation = "скрытность / стелс",
+            definition = "סגנון משחק שמתמקד בהסתתרות ובהימנעות מגילוי במקום בעימות ישיר.",
+            definitionNative = "Стиль игры, основанный на скрытности и уклонении от обнаружения вместо прямого противостояния.",
+            example = "הִתְגַּנְּבוּת מושלמת מאפשרת לעקוף את כל השומרים ללא קרב.",
+            exampleNative = "Идеальная הִתְגַּנְּבוּת позволяет обойти всех охранников без боя.",
+        ),
+        WordEntity(
+            id = 101818, setId = 1018, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "yekholet",
+            original = "יְכוֹלֶת", translation = "способность / умение",
+            definition = "כוח או פעולה מיוחדת שיש לדמות, הניתנת להפעלה בלחיצת כפתור.",
+            definitionNative = "Особая сила или действие персонажа, активируемое нажатием кнопки.",
+            example = "יְכוֹלֶת הריפוי שלי הצילה את שאר הצוות.",
+            exampleNative = "Моя יְכוֹלֶת исцеления спасла остальных членов команды.",
+        ),
+        WordEntity(
+            id = 101819, setId = 1018, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "kele",
+            original = "כֶּלֶא", translation = "темница / подземелье",
+            definition = "אזור סגור ומאיים, לרוב תת-קרקעי, הממולא באויבים ומלכודות.",
+            definitionNative = "Закрытая и опасная зона, как правило подземная, заполненная врагами и ловушками.",
+            example = "ירדנו אל כֶּלֶא עמוק ומצאנו שם שלושה בוסים.",
+            exampleNative = "Мы спустились в глубокий כֶּלֶא и нашли там трёх боссов.",
+        ),
+        WordEntity(
+            id = 101820, setId = 1018, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "koakh",
+            original = "כֹּחַ", translation = "сила / очки здоровья",
+            definition = "פרמטר המייצג את בריאות הדמות ואת יכולת הלחימה שלה.",
+            definitionNative = "Параметр, представляющий здоровье персонажа и его боевые возможности.",
+            example = "ירד לי כֹּחַ אחרי הקרב ונאלצתי לחפש בונוסי ריפוי.",
+            exampleNative = "После боя у меня упал כֹּחַ, и я был вынужден искать бонусы исцеления.",
+        ),
+
+        // ━━━ EPIC ━━━
+        WordEntity(
+            id = 101821, setId = 1018, languagePair = "he-ru", rarity = "EPIC",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "hisagim",
+            original = "הִישָּׂגִים", translation = "достижения",
+            definition = "פרסים מיוחדים שמתקבלים בעת השלמת אתגרים מסוימים במשחק.",
+            definitionNative = "Особые награды, получаемые за выполнение определённых испытаний в игре.",
+            example = "ביטלתי את כל הִישָּׂגִים במשחק בתוך שלושה ימים.",
+            exampleNative = "Я разблокировал все הִישָּׂגִים в игре за три дня.",
+        ),
+        WordEntity(
+            id = 101822, setId = 1018, languagePair = "he-ru", rarity = "EPIC",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "istrategya",
+            original = "אִסְטְרָטֶגְיָה", translation = "стратегия",
+            definition = "תכנון מחושב של פעולות כדי לנצח את האויב תוך שימוש יעיל במשאבים.",
+            definitionNative = "Продуманное планирование действий для победы над врагом с эффективным использованием ресурсов.",
+            example = "ניצחנו בזכות אִסְטְרָטֶגְיָה מצוינת ולא בזכות כוח גולמי.",
+            exampleNative = "Мы победили благодаря отличной אִסְטְרָטֶגְיָה, а не грубой силе.",
+        ),
+        WordEntity(
+            id = 101823, setId = 1018, languagePair = "he-ru", rarity = "EPIC",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "hadmaya",
+            original = "הַדְמָיָה", translation = "симуляция",
+            definition = "סוג של משחק המשחזר תהליכים מהמציאות כמו טיסה, בנייה או ניהול.",
+            definitionNative = "Разновидность игры, воспроизводящая реальные процессы: полёт, строительство или управление.",
+            example = "משחק הַדְמָיָה של טיסה מרגיש כמו להיות טייס אמיתי.",
+            exampleNative = "Игра-הַדְמָיָה полёта ощущается как управление настоящим самолётом.",
+        ),
+        WordEntity(
+            id = 101824, setId = 1018, languagePair = "he-ru", rarity = "EPIC",
+            pos = "noun", semanticGroup = "gaming",
+            transliteration = "hitkadmut",
+            original = "הִתְקַדְּמוּת", translation = "прогрессия / продвижение",
+            definition = "תהליך פיתוח הדמות ושיפור כוחותיה ככל שהשחקן ממשיך לשחק.",
+            definitionNative = "Процесс развития персонажа и усиления его способностей по мере продвижения игрока.",
+            example = "מערכת הִתְקַדְּמוּת מאוזנת שומרת על שחקנים מעורבים שעות רבות.",
+            exampleNative = "Сбалансированная система הִתְקַדְּמוּת удерживает игроков вовлечёнными долгие часы.",
+        ),
+
+        // ━━━ LEGENDARY ━━━
+        WordEntity(
+            id = 101825, setId = 1018, languagePair = "he-ru", rarity = "LEGENDARY",
+            pos = "adjective", semanticGroup = "gaming",
+            transliteration = "emergenti",
+            original = "אֶמֶרְגֶנְטִי", translation = "эмерджентный",
+            definition = "מתאר גיימפליי מורכב ובלתי צפוי הנוצר מהתנגשות של כללים פשוטים.",
+            definitionNative = "Описывает сложный и непредсказуемый геймплей, возникающий из взаимодействия простых правил.",
+            example = "גיימפליי אֶמֶרְגֶנְטִי צומח מהתנגשות של כללים פשוטים.",
+            exampleNative = "אֶמֶרְגֶנְטִי геймплей рождается из взаимодействия простых правил.",
         ),
     )
 }
