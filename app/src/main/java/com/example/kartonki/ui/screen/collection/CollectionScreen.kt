@@ -14,7 +14,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -33,14 +32,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import com.example.kartonki.R
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
@@ -50,7 +47,6 @@ import com.example.kartonki.ui.theme.LocalAppStrings
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CollectionScreen(
-    onNavigateToDeckBuilder: () -> Unit,
     onNavigateBack: () -> Unit,
     viewModel: CollectionViewModel = hiltViewModel(),
 ) {
@@ -86,13 +82,6 @@ fun CollectionScreen(
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
                     }
                 },
-            )
-        },
-        floatingActionButton = {
-            ExtendedFloatingActionButton(
-                onClick = onNavigateToDeckBuilder,
-                text = { Text(s.collectionBuildDeck) },
-                icon = { Text("🃏") },
             )
         },
     ) { innerPadding ->

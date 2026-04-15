@@ -209,9 +209,6 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
 
         composable(Route.Collection.path) {
             CollectionScreen(
-                onNavigateToDeckBuilder = {
-                    navController.navigate(Route.DeckBuilder.createRoute(0L))
-                },
                 onNavigateBack = { navController.popBackStack() },
             )
         }
