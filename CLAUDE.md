@@ -281,6 +281,50 @@ id("com.google.devtools.ksp") version "2.2.10-1.0.29" apply false
 - **Strings**: все строки в `strings.xml`, поддержка i18n с первого дня
 - **Нет nullable там где не нужно**: предпочитать sealed class/enum вместо nullable флагов
 
+## Чеклисты перед изменением системы
+
+Перед работой с определёнными системами **обязательно** прочитай указанные файлы и выполни проверки.
+Если в процессе работы обнаруживаешь новый «подводный камень» — добавляй его в соответствующий чеклист самостоятельно.
+
+---
+
+### Достижения (Achievements)
+
+**Файлы для чтения:**
+- `domain/model/Achievement.kt` — enum `AchievementId` со всеми достижениями
+- `data/AchievementCards.kt` — слова, зарезервированные исключительно для достижений
+- `data/repository/AchievementRepository.kt` — логика unlock/check
+
+**Перед добавлением нового достижения:**
+1. Добавь запись в `AchievementId` (название, описание, иконка, `rewardWordOriginal`).
+2. Убедись, что слово `rewardWordOriginal` **существует в базе данных** — найди его в `WordDataEnglish.kt` / `WordDataEnglishExpanded.kt` / соответствующем файле данных. Если слова нет — создай его через `achievementRewardWords()` (или аналог) с `setId = 0` и `semanticGroup = "achievement_reward"`.
+3. Добавь `rewardWordOriginal` в `AchievementCards.STARTER_ACHIEVEMENT_REWARDS` (или `EXCLUSIVE_LEGENDARY` для легендарных наград) — иначе слово попадёт в обычные наборы/стартер и потеряет эксклюзивность.
+4. Если достижение проверяется в `recordStudyDay` / `recordPvpMatch` / другом публичном методе — добавь вызов check-функции туда; если это отдельное событие (как FIRST_LAUNCH) — создай отдельный `suspend fun checkXxx()` и вызови его из нужного ViewModel.
+5. После изменения схемы БД (если добавляешь новую таблицу/поле) — увеличь версию Room и добавь миграцию.
+
+**Частые ошибки:**
+- Слово награды не существует в БД → `getWordByOriginal()` вернёт null → `rewardWordId = null` в `AchievementEntity`.
+- Слово не добавлено в `AchievementCards.ALL_EXCLUSIVE` → слово появляется в обычных наборах.
+- Достижение добавлено в enum, но check-функция нигде не вызывается.
+
+---
+
+### Наборы слов (Word Sets / Seed Data)
+
+**Файлы для чтения:**
+- `data/WordRegistry.kt` — реестр всех наборов/слов/колод
+- `data/AchievementCards.kt` — исключения из наборов (слова-награды)
+- Соответствующий `WordDataXxx.kt`
+
+**Перед добавлением/изменением наборов:**
+1. Проверь, что новые слова не дублируют существующие (по `original`) в том же языке.
+2. Не добавляй слова из `AchievementCards.ALL_EXCLUSIVE` в обычные наборы.
+3. Соблюдай шкалу редкости: COMMON=A1, RARE=B2, EPIC=C1, LEGENDARY=C2+.
+4. ID слова = `setId × 100 + position`; убедись, что setId не пересекается с существующими блоками из `languageIdBlocks`.
+5. После добавления нового набора — зарегистрируй его в `WordRegistry.allSets` и `WordRegistry.allWords`.
+
+---
+
 ## Правила работы с Git
 
 После завершения каждой задачи автоматически:
