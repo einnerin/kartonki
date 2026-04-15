@@ -9,6 +9,8 @@ import com.example.kartonki.data.remote.MatchmakingRepository
 import com.example.kartonki.data.remote.MatchmakingResult
 import com.example.kartonki.data.remote.model.MatchmakingEntry
 import com.example.kartonki.data.repository.CollectionRepository
+import com.example.kartonki.domain.model.DeckLevel
+import com.example.kartonki.domain.model.Rarity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -55,7 +57,16 @@ class OnlineMatchmakingViewModel @Inject constructor(
             val languagePair = prefs.getLanguagePair()
             val entities = deckDao.getDecksOnce(languagePair)
             val options = entities.map {
-                PvpDeckOption(it.id, it.name, deckDao.getOwnedCardCountForDeck(it.id), it.level)
+                val cardCount = deckDao.getCardCountForDeck(it.id)
+                val rarityCounts = deckDao.getRarityCountsForDeck(it.id)
+                    .associate { row -> Rarity.valueOf(row.rarity) to row.cnt }
+                PvpDeckOption(
+                    id = it.id,
+                    name = it.name,
+                    cardCount = cardCount,
+                    level = it.level,
+                    isValid = DeckLevel.isDeckValid(it.level, cardCount, rarityCounts),
+                )
             }
             _uiState.update {
                 it.copy(
@@ -71,6 +82,7 @@ class OnlineMatchmakingViewModel @Inject constructor(
 
     fun startSearch() {
         val deck = _uiState.value.selectedDeck ?: return
+        if (!deck.isValid) return
         val user = authManager.currentUser.value ?: return
 
         searchJob = viewModelScope.launch {

@@ -37,4 +37,16 @@ object DeckLevel {
     fun limitsFor(level: Int): Limits = ALL.getOrElse(level - 1) { ALL[0] }
     fun nameFor(level: Int): String = NAMES.getOrElse(level - 1) { NAMES[0] }
     fun starsFor(level: Int): String = "★".repeat(level.coerceIn(1, COUNT))
+
+    /**
+     * Returns true if the deck has exactly [DECK_MAX_SIZE] cards and every rarity
+     * count is within the limit for the given level.
+     */
+    fun isDeckValid(level: Int, totalCards: Int, rarityCounts: Map<Rarity, Int>): Boolean {
+        if (totalCards != DECK_MAX_SIZE) return false
+        val limits = limitsFor(level)
+        return Rarity.entries.all { rarity -> (rarityCounts[rarity] ?: 0) <= limits.limitFor(rarity) }
+    }
+
+    const val DECK_MAX_SIZE = 21
 }

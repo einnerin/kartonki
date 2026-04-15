@@ -6,6 +6,8 @@ import com.example.kartonki.data.db.dao.DeckDao
 import com.example.kartonki.data.db.entity.DeckEntity
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.CollectionRepository
+import com.example.kartonki.domain.model.DeckLevel
+import com.example.kartonki.domain.model.Rarity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -19,6 +21,7 @@ data class DeckSummary(
     val name: String,
     val cardCount: Int,
     val level: Int = 1,
+    val isValid: Boolean = true,
 )
 
 data class MyDecksUiState(
@@ -78,11 +81,15 @@ class MyDecksViewModel @Inject constructor(
             val languagePair = prefs.getLanguagePair()
             val entities = deckDao.getDecksOnce(languagePair)
             val summaries = entities.map { entity ->
+                val cardCount = deckDao.getCardCountForDeck(entity.id)
+                val rarityCounts = deckDao.getRarityCountsForDeck(entity.id)
+                    .associate { Rarity.valueOf(it.rarity) to it.cnt }
                 DeckSummary(
                     id = entity.id,
                     name = entity.name,
-                    cardCount = deckDao.getOwnedCardCountForDeck(entity.id),
+                    cardCount = cardCount,
                     level = entity.level,
+                    isValid = DeckLevel.isDeckValid(entity.level, cardCount, rarityCounts),
                 )
             }
             _uiState.update { it.copy(isLoading = false, decks = summaries) }

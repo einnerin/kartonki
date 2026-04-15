@@ -21,6 +21,8 @@ import javax.inject.Inject
 
 data class RaritySlot(val rarity: Rarity, val used: Int, val limit: Int) {
     val isFull: Boolean get() = used >= limit
+    /** True when the level was changed and this rarity now exceeds its new limit. */
+    val isOverLimit: Boolean get() = used > limit
 }
 
 data class DeckBuilderUiState(
@@ -41,6 +43,9 @@ data class DeckBuilderUiState(
             RaritySlot(rarity, deckCards.count { it.rarity == rarity }, limits.limitFor(rarity))
         }
     }
+
+    val isValid: Boolean get() =
+        totalCards == DECK_MAX_SIZE && raritySlots.none { it.isOverLimit }
 
     val filteredDeckCards: List<Word> get() =
         if (rarityFilter.isEmpty()) deckCards else deckCards.filter { it.rarity in rarityFilter }
@@ -79,6 +84,16 @@ class DeckBuilderViewModel @Inject constructor(
     }
 
     fun selectTab(index: Int) = _uiState.update { it.copy(selectedTab = index) }
+
+    fun changeLevel(newLevel: Int) {
+        viewModelScope.launch {
+            val deck = deckDao.getDeckById(currentDeckId) ?: return@launch
+            deckDao.insertDeck(deck.copy(level = newLevel))
+            val limits = DeckLevel.limitsFor(newLevel)
+            val newFilter = Rarity.entries.filter { limits.limitFor(it) > 0 }.toSet()
+            _uiState.update { it.copy(deckLevel = newLevel, rarityFilter = newFilter) }
+        }
+    }
 
     fun toggleRarityFilter(rarity: Rarity) = _uiState.update {
         val newFilter = if (rarity in it.rarityFilter) it.rarityFilter - rarity

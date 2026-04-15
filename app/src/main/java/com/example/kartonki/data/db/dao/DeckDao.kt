@@ -1,5 +1,6 @@
 package com.example.kartonki.data.db.dao
 
+import androidx.room.ColumnInfo
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -8,6 +9,12 @@ import androidx.room.Query
 import com.example.kartonki.data.db.entity.DeckCardCrossRef
 import com.example.kartonki.data.db.entity.DeckEntity
 import kotlinx.coroutines.flow.Flow
+
+/** Result row for per-rarity card counts in a deck. */
+data class RarityCountRow(
+    @ColumnInfo(name = "rarity") val rarity: String,
+    @ColumnInfo(name = "cnt") val cnt: Int,
+)
 
 @Dao
 interface DeckDao {
@@ -58,6 +65,16 @@ interface DeckDao {
 
     @Query("SELECT wordId FROM deck_cards WHERE deckId = :deckId")
     suspend fun getWordIdsForDeck(deckId: Long): List<Long>
+
+    /** Returns per-rarity card counts for a deck (all cards, regardless of ownership). */
+    @Query("""
+        SELECT w.rarity AS rarity, COUNT(*) AS cnt
+        FROM deck_cards dc
+        JOIN words w ON dc.wordId = w.id
+        WHERE dc.deckId = :deckId
+        GROUP BY w.rarity
+    """)
+    suspend fun getRarityCountsForDeck(deckId: Long): List<RarityCountRow>
 
     @Query("DELETE FROM deck_cards WHERE deckId = :deckId")
     suspend fun clearDeck(deckId: Long)

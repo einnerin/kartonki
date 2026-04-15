@@ -107,10 +107,14 @@ fun DeckBuilderScreen(
                         } else {
                             Text(s.deckBuilderTitle)
                         }
+                        val hasOverLimit = uiState.raritySlots.any { it.isOverLimit }
                         Text(
-                            text = s.deckBuilderSize(uiState.totalCards, DeckBuilderUiState.DECK_MAX_SIZE),
+                            text = if (hasOverLimit) s.deckInvalidLabel
+                                   else s.deckBuilderSize(uiState.totalCards, DeckBuilderUiState.DECK_MAX_SIZE),
                             style = MaterialTheme.typography.labelSmall,
-                            color = if (uiState.isFull) MaterialTheme.colorScheme.error
+                            color = if (hasOverLimit || uiState.isFull && !uiState.isValid)
+                                        MaterialTheme.colorScheme.error
+                                    else if (uiState.isFull) MaterialTheme.colorScheme.primary
                                     else MaterialTheme.colorScheme.onSurfaceVariant,
                         )
                     }
@@ -138,6 +142,9 @@ fun DeckBuilderScreen(
                 sublabelFor = { rarity ->
                     uiState.raritySlots.firstOrNull { it.rarity == rarity }
                         ?.let { "${it.used}/${it.limit}" } ?: ""
+                },
+                isOverLimitFor = { rarity ->
+                    uiState.raritySlots.firstOrNull { it.rarity == rarity }?.isOverLimit == true
                 },
             )
             HorizontalDivider()

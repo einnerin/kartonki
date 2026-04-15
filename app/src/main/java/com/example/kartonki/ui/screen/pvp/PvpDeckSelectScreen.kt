@@ -23,6 +23,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.TopAppBar
@@ -34,8 +35,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.layout.size
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.theme.LocalAppStrings
@@ -112,7 +115,17 @@ fun PvpDeckSelectScreen(
 
             Spacer(Modifier.weight(1f))
 
-            if (!uiState.levelsMatch) {
+            val deckInvalid = uiState.selectedDeck1?.isValid == false || uiState.selectedDeck2?.isValid == false
+            if (deckInvalid) {
+                Text(
+                    text = s.pvpDeckInvalidWarning,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.error,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 4.dp),
+                )
+            } else if (!uiState.levelsMatch) {
                 Text(
                     text = s.pvpLevelMismatch,
                     style = MaterialTheme.typography.bodySmall,
@@ -206,11 +219,24 @@ private fun DeckDropdown(
                             verticalAlignment = Alignment.CenterVertically,
                         ) {
                             Column(modifier = Modifier.weight(1f)) {
-                                Text(deck.name)
                                 Text(
-                                    ls.pvpDeckCardCount(deck.cardCount),
+                                    deck.name,
+                                    color = if (!deck.isValid) MaterialTheme.colorScheme.error else Color.Unspecified,
+                                )
+                                Text(
+                                    if (deck.isValid) ls.pvpDeckCardCount(deck.cardCount)
+                                    else ls.deckInvalidLabel,
                                     style = MaterialTheme.typography.bodySmall,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    color = if (!deck.isValid) MaterialTheme.colorScheme.error
+                                            else MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
+                            if (!deck.isValid) {
+                                Icon(
+                                    imageVector = Icons.Filled.Warning,
+                                    contentDescription = null,
+                                    tint = MaterialTheme.colorScheme.error,
+                                    modifier = Modifier.size(16.dp).padding(end = 4.dp),
                                 )
                             }
                             DeckLevelBadge(deck.level)

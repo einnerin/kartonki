@@ -24,6 +24,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -201,7 +202,27 @@ private fun DeckSelectContent(
                                     horizontalArrangement = Arrangement.SpaceBetween,
                                     verticalAlignment = Alignment.CenterVertically,
                                 ) {
-                                    Text(deck.name, modifier = Modifier.weight(1f))
+                                    Column(modifier = Modifier.weight(1f)) {
+                                        Text(
+                                            deck.name,
+                                            color = if (!deck.isValid) MaterialTheme.colorScheme.error else Color.Unspecified,
+                                        )
+                                        if (!deck.isValid) {
+                                            Text(
+                                                "Состав не соответствует уровню",
+                                                style = MaterialTheme.typography.bodySmall,
+                                                color = MaterialTheme.colorScheme.error,
+                                            )
+                                        }
+                                    }
+                                    if (!deck.isValid) {
+                                        Icon(
+                                            imageVector = Icons.Filled.Warning,
+                                            contentDescription = null,
+                                            tint = MaterialTheme.colorScheme.error,
+                                            modifier = Modifier.size(16.dp),
+                                        )
+                                    }
                                     DeckLevelBadge(deck.level)
                                 }
                             },
@@ -214,11 +235,22 @@ private fun DeckSelectContent(
                 }
             }
 
+            val selectedInvalid = uiState.selectedDeck?.isValid == false
+            if (selectedInvalid) {
+                Spacer(Modifier.height(8.dp))
+                Text(
+                    text = "Выбранная колода не соответствует уровню",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.error,
+                    textAlign = TextAlign.Center,
+                )
+            }
+
             Spacer(Modifier.height(32.dp))
 
             Button(
                 onClick = onStartSearch,
-                enabled = uiState.selectedDeck != null && (uiState.selectedDeck?.cardCount ?: 0) > 0,
+                enabled = uiState.selectedDeck?.isValid == true,
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = AccentPurple),
             ) {

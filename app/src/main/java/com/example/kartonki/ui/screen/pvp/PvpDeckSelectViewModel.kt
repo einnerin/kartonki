@@ -5,6 +5,8 @@ import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.db.dao.DeckDao
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.data.repository.CollectionRepository
+import com.example.kartonki.domain.model.DeckLevel
+import com.example.kartonki.domain.model.Rarity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -13,7 +15,13 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-data class PvpDeckOption(val id: Long, val name: String, val cardCount: Int, val level: Int = 1)
+data class PvpDeckOption(
+    val id: Long,
+    val name: String,
+    val cardCount: Int,
+    val level: Int = 1,
+    val isValid: Boolean = true,
+)
 
 data class PvpDeckSelectUiState(
     val isLoading: Boolean = true,
@@ -30,8 +38,8 @@ data class PvpDeckSelectUiState(
     val canStart: Boolean get() =
         player1Name.isNotBlank() &&
         player2Name.isNotBlank() &&
-        selectedDeck1 != null && selectedDeck1.cardCount > 0 &&
-        selectedDeck2 != null && selectedDeck2.cardCount > 0 &&
+        selectedDeck1 != null && selectedDeck1.isValid &&
+        selectedDeck2 != null && selectedDeck2.isValid &&
         levelsMatch
 }
 
@@ -57,7 +65,18 @@ class PvpDeckSelectViewModel @Inject constructor(
             collectionRepository.ensureStarterPack()
             val languagePair = prefs.getLanguagePair()
             val entities = deckDao.getDecksOnce(languagePair)
-            val options = entities.map { PvpDeckOption(it.id, it.name, deckDao.getOwnedCardCountForDeck(it.id), it.level) }
+            val options = entities.map {
+                val cardCount = deckDao.getCardCountForDeck(it.id)
+                val rarityCounts = deckDao.getRarityCountsForDeck(it.id)
+                    .associate { row -> Rarity.valueOf(row.rarity) to row.cnt }
+                PvpDeckOption(
+                    id = it.id,
+                    name = it.name,
+                    cardCount = cardCount,
+                    level = it.level,
+                    isValid = DeckLevel.isDeckValid(it.level, cardCount, rarityCounts),
+                )
+            }
             val default = options.firstOrNull()
             _uiState.update {
                 it.copy(

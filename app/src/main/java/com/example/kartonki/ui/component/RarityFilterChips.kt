@@ -28,6 +28,7 @@ fun RarityFilterChips(
     onToggle: (Rarity) -> Unit,
     modifier: Modifier = Modifier,
     sublabelFor: ((Rarity) -> String)? = null,
+    isOverLimitFor: ((Rarity) -> Boolean)? = null,
 ) {
     val s = LocalAppStrings.current
     Row(
@@ -39,13 +40,16 @@ fun RarityFilterChips(
         verticalAlignment = Alignment.CenterVertically,
     ) {
         Rarity.entries.forEach { rarity ->
-            val color = Color(rarity.colorArgb)
+            val baseColor = Color(rarity.colorArgb)
+            val overLimit = isOverLimitFor?.invoke(rarity) == true
+            // When over-limit: use error red as the chip color to signal a problem.
+            val chipColor = if (overLimit) Color(0xFFE53935) else baseColor
             val isActive = rarity in activeFilters
             Surface(
                 onClick = { onToggle(rarity) },
                 shape = RoundedCornerShape(20.dp),
-                color = if (isActive) color.copy(alpha = 0.85f) else color.copy(alpha = 0.15f),
-                border = BorderStroke(1.dp, if (isActive) color else color.copy(alpha = 0.4f)),
+                color = if (isActive) chipColor.copy(alpha = 0.85f) else chipColor.copy(alpha = if (overLimit) 0.20f else 0.15f),
+                border = BorderStroke(if (overLimit) 2.dp else 1.dp, if (isActive) chipColor else chipColor.copy(alpha = 0.6f)),
                 modifier = Modifier.weight(1f),
             ) {
                 val sub = sublabelFor?.invoke(rarity)
@@ -53,9 +57,9 @@ fun RarityFilterChips(
                     Text(
                         text = "${rarity.localizedShortName(s)}\n$sub",
                         style = MaterialTheme.typography.labelSmall,
-                        fontWeight = if (isActive) FontWeight.ExtraBold else FontWeight.Bold,
+                        fontWeight = if (isActive || overLimit) FontWeight.ExtraBold else FontWeight.Bold,
                         textAlign = TextAlign.Center,
-                        color = if (isActive) Color.White else color,
+                        color = if (isActive) Color.White else chipColor,
                         maxLines = 2,
                         overflow = TextOverflow.Ellipsis,
                         modifier = Modifier
@@ -67,7 +71,7 @@ fun RarityFilterChips(
                         text = rarity.localizedShortName(s),
                         style = MaterialTheme.typography.labelSmall,
                         fontWeight = if (isActive) FontWeight.Bold else FontWeight.Normal,
-                        color = if (isActive) Color.White else color,
+                        color = if (isActive) Color.White else chipColor,
                         textAlign = TextAlign.Center,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis,
