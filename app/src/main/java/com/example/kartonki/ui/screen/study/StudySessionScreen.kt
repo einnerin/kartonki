@@ -36,18 +36,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.SpanStyle
-import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.BaselineShift
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.kartonki.R
 import com.example.kartonki.domain.model.StudyQuizType
 import com.example.kartonki.domain.model.StudyStep
 import com.example.kartonki.ui.component.WordCard
@@ -188,15 +182,26 @@ internal fun QuizContent(
             color = MaterialTheme.colorScheme.primary,
             fontWeight = FontWeight.SemiBold,
         )
-        // Question is RTL when it displays a raw Hebrew word (not a definition or sentence in any language)
-        val isHebrewQuestionRtl = step.word.languagePair.startsWith("he") &&
-            step.type == StudyQuizType.MULTIPLE_CHOICE_TRANSLATION
-        // Options are RTL when they contain Hebrew words (word-from-def types for Hebrew)
-        val isHebrewOptionsRtl = step.word.languagePair.startsWith("he") &&
-            (step.type == StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF ||
-             step.type == StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE ||
-             step.type == StudyQuizType.FILL_IN_BLANK ||
-             step.type == StudyQuizType.FILL_IN_BLANK_NATIVE)
+        val isHebrew = step.word.languagePair.startsWith("he")
+        // Question is RTL for all types where the question text is primarily Hebrew:
+        // translation (word.original), definition (word.original or word.definition),
+        // word-from-def (word.definition), fill-in-blank (word.example).
+        // Excluded: DEFINITION_NATIVE (question = Russian), WORD_FROM_DEF_NATIVE (Russian), FILL_IN_BLANK_NATIVE (Russian primary).
+        val isHebrewQuestionRtl = isHebrew && step.type in setOf(
+            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION,
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION,
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE,
+            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF,
+            StudyQuizType.FILL_IN_BLANK,
+        )
+        // Options are RTL when they contain Hebrew words or Hebrew definitions.
+        val isHebrewOptionsRtl = isHebrew && step.type in setOf(
+            StudyQuizType.MULTIPLE_CHOICE_DEFINITION,
+            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF,
+            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE,
+            StudyQuizType.FILL_IN_BLANK,
+            StudyQuizType.FILL_IN_BLANK_NATIVE,
+        )
         Surface(
             color = MaterialTheme.colorScheme.surfaceVariant,
             shape = MaterialTheme.shapes.medium,
@@ -236,6 +241,7 @@ internal fun QuizContent(
                 original = step.word.original,
                 translation = step.word.translation,
                 isCorrect = answered.isCorrect,
+                isRtl = isHebrew,
             )
             Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
                 Text(s.studyContinue)
@@ -305,6 +311,7 @@ private fun TranslationPanel(
     original: String,
     translation: String,
     isCorrect: Boolean,
+    isRtl: Boolean = false,
 ) {
     val s = LocalAppStrings.current
     val accentColor = if (isCorrect) ColorCorrect else ColorIncorrect
@@ -332,21 +339,30 @@ private fun TranslationPanel(
                     color = accentColor,
                 )
             }
-            Text(
-                text = buildAnnotatedString {
-                    withStyle(SpanStyle(color = Color.White, fontWeight = FontWeight.Bold)) {
-                        append(original)
-                    }
-                    withStyle(SpanStyle(color = accentColor, baselineShift = BaselineShift(0.12f))) {
-                        append("  →  ")
-                    }
-                    withStyle(SpanStyle(color = accentColor, fontWeight = FontWeight.Bold)) {
-                        append(translation)
-                    }
-                },
-                style = MaterialTheme.typography.bodyLarge,
-                textAlign = TextAlign.Center,
-            )
+            Row(
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text(
+                    text = original,
+                    style = MaterialTheme.typography.bodyLarge.copy(
+                        textDirection = if (isRtl) TextDirection.Rtl else TextDirection.Ltr,
+                    ),
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White,
+                )
+                Text(
+                    text = "  →  ",
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = accentColor,
+                )
+                Text(
+                    text = translation,
+                    style = MaterialTheme.typography.bodyLarge,
+                    fontWeight = FontWeight.Bold,
+                    color = accentColor,
+                )
+            }
         }
     }
 }
