@@ -209,6 +209,76 @@ class SeedDataAuditTest {
     }
 
     // ══════════════════════════════════════════════════════════════════════════
+    // ID SCHEME — words follow setId×100+pos, sets follow language blocks
+    // ══════════════════════════════════════════════════════════════════════════
+
+    /**
+     * No two words may share the same ID across all seed files.
+     * Duplicate IDs cause silent data loss via INSERT OR REPLACE.
+     */
+    @Test fun `no duplicate word IDs across all seed files`() {
+        val allWords: List<WordEntity> =
+            WordDataEnglish.words + WordDataEnglishExpanded.words +
+            WordDataHebrew.words + WordDataHebrewEveryday.words +
+            WordDataHebrewMore.words + WordDataHebrewAdvanced.words
+
+        val dupes = allWords.groupBy { it.id }.filter { (_, v) -> v.size > 1 }
+        fail("Duplicate word IDs (silent data loss in DB)",
+            dupes.map { (id, words) ->
+                "id=$id appears ${words.size}× — originals: ${words.map { it.original }}"
+            }
+        )
+    }
+
+    /**
+     * Every word ID must fall in the range (setId×100 + 1)..(setId×100 + 99).
+     * Formula: wordId = setId × 100 + position_in_set (1–25 + a few spare slots).
+     * This guarantees IDs are unique as long as set IDs are unique.
+     */
+    @Test fun `word IDs follow the setId x100 formula`() {
+        val allWords: List<WordEntity> =
+            WordDataEnglish.words + WordDataEnglishExpanded.words +
+            WordDataHebrew.words + WordDataHebrewEveryday.words +
+            WordDataHebrewMore.words + WordDataHebrewAdvanced.words
+
+        fail("Word IDs outside expected setId×100 range",
+            allWords.mapNotNull { w ->
+                val base = w.setId * 100
+                if (w.id < base + 1 || w.id > base + 99)
+                    "word '${w.original}' (set ${w.setId}): id=${w.id} not in [${base+1}..${base+99}]"
+                else null
+            }
+        )
+    }
+
+    /**
+     * Set IDs must respect language blocks:
+     *   en-ru → 1–999   |   he-ru → 1001–1999
+     * Adding a new language requires a new block (e.g. 2001–2999 for es-ru).
+     */
+    @Test fun `set IDs are within their language block`() {
+        data class Block(val lang: String, val min: Int, val max: Int)
+        val blocks = listOf(
+            Block("en-ru", 1, 999),
+            Block("he-ru", 1001, 1999),
+        )
+        val allSets =
+            WordDataEnglish.sets + WordDataEnglishExpanded.sets +
+            WordDataHebrew.sets + WordDataHebrewEveryday.sets +
+            WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets
+
+        fail("Set IDs outside their language block",
+            allSets.mapNotNull { s ->
+                val block = blocks.find { it.lang == s.languagePair }
+                    ?: return@mapNotNull "Set ${s.id} '${s.name}': unknown language '${s.languagePair}' — add a block"
+                if (s.id < block.min || s.id > block.max)
+                    "Set ${s.id} '${s.name}' (${s.languagePair}): must be in [${block.min}..${block.max}]"
+                else null
+            }
+        )
+    }
+
+    // ══════════════════════════════════════════════════════════════════════════
     // UNIVERSALITY — new word would automatically get all quiz types
     // ══════════════════════════════════════════════════════════════════════════
 

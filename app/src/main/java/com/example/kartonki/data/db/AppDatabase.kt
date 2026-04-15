@@ -34,7 +34,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         StudyStreakEntity::class,
         PvpMatchEntity::class,
     ],
-    version = 33,
+    version = 34,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -281,6 +281,26 @@ abstract class AppDatabase : RoomDatabase() {
                 db.execSQL("ALTER TABLE words ADD COLUMN isDefaultPvpCard INTEGER NOT NULL DEFAULT 0")
                 // 3. Enforce uniqueness going forward.
                 db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_words_original_languagePair` ON words(original, languagePair)")
+            }
+        }
+
+        /**
+         * Full ID renumbering:
+         *   - All word IDs now follow the formula: setId × 100 + position_in_set (1–25)
+         *   - Hebrew set IDs renumbered from 101–117 to 1001–1017
+         *   - Language ID blocks: en-ru → sets 1–999 / words 101–99 999
+         *                         he-ru → sets 1001–1999 / words 100 101–199 999
+         *
+         * All word-referencing tables are cleared; WordLoader re-inserts fresh data
+         * on the next launch (triggered by WordDataVersion bump).
+         */
+        val MIGRATION_33_34 = object : Migration(33, 34) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("DELETE FROM progress")
+                db.execSQL("DELETE FROM collection")
+                db.execSQL("DELETE FROM deck_cards")
+                db.execSQL("DELETE FROM words")
+                db.execSQL("DELETE FROM word_sets")
             }
         }
     }
