@@ -6144,4 +6144,17 @@ object WordDataEnglishExpanded {
             exampleNative = "Это emergent поведение никогда не планировалось разработчиками."),
     )
 
+    // ── Achievement reward words ───────────────────────────────────────────────
+    // Words in AchievementCards.ALL_EXCLUSIVE: never appear in packs or starter
+    // collection — exclusively obtainable via their linked achievement.
+
+    fun achievementRewardWords(): List<WordEntity> = listOf(
+        // FIRST_LAUNCH reward — temporary test achievement, remove before release
+        WordEntity(id = 24990, original = "pioneer", translation = "первопроходец / пионер", rarity = "EPIC", setId = 0, languagePair = "en-ru", pos = "noun", semanticGroup = "achievement_reward",
+            definition = "A person who is among the first to explore or develop a new area of knowledge.",
+            example = "She was a pioneer in the field of computer science.",
+            definitionNative = "Человек, первым осваивающий новую область знаний или деятельности.",
+            exampleNative = "Она была pioneer в области компьютерных наук."),
+    )
+
 }

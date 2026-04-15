@@ -68,6 +68,7 @@ object AchievementCards {
         "conjecture", // предположение/гипотеза
         "refute",     // опровергать
         "elucidate",  // разъяснять
+        "pioneer",    // первопроходец/пионер — FIRST_LAUNCH (temp test achievement)
     )
 
     /** Union of all exclusive originals — used to filter packs and starter selection. */

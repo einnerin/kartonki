@@ -25,6 +25,7 @@ object WordRegistry {
 
     val allWords: List<WordEntity>
         get() = WordDataEnglish.words + WordDataEnglishExpanded.words +
+                WordDataEnglishExpanded.achievementRewardWords() +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words
