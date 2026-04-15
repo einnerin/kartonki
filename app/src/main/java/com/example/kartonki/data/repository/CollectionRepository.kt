@@ -1,6 +1,7 @@
 package com.example.kartonki.data.repository
 
 import com.example.kartonki.data.PresetDecksVersion
+import com.example.kartonki.data.WordDataVersion
 import com.example.kartonki.data.WordLoader
 import com.example.kartonki.data.WordRegistry
 import com.example.kartonki.data.db.dao.CollectionDao
@@ -71,11 +72,18 @@ class CollectionRepository @Inject constructor(
             collectionDao.insertAll(combined.map { CollectionEntity(it.id) })
         }
 
-        // (Re)create preset decks if version has changed or this is a first run.
-        val storedVersion = prefs.getPresetDecksVersion()
-        if (storedVersion != PresetDecksVersion.CURRENT) {
+        // (Re)create preset decks if deck definitions changed OR word data changed.
+        // Word data changes can silently alter word IDs via OnConflictStrategy.REPLACE
+        // (a duplicate original in a new batch deletes the old row and inserts a new one
+        // with a different ID), which orphans deck_cards references. Tracking both
+        // versions ensures deck_cards are always rebuilt after any word data update.
+        val storedDecksVersion = prefs.getPresetDecksVersion()
+        val storedWordVersionForDecks = prefs.getPresetDecksWordVersion()
+        if (storedDecksVersion != PresetDecksVersion.CURRENT ||
+            storedWordVersionForDecks != WordDataVersion.CURRENT) {
             migratePresetDecks()
             prefs.setPresetDecksVersion(PresetDecksVersion.CURRENT)
+            prefs.setPresetDecksWordVersion(WordDataVersion.CURRENT)
         }
     }
 

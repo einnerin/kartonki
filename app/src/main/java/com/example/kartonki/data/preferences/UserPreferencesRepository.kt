@@ -37,8 +37,9 @@ class UserPreferencesRepository @Inject constructor(
         const val PROBLEM_SESSION_COUNTS        = "problem_session_counts" // "id:count,id:count,..."
         const val SESSION_EXCLUDED_WORD_IDS     = "session_excluded_ids"  // "id,id,..." temp
         const val PROBLEM_CHIP_HINT_SHOWN       = "problem_chip_hint"     // Boolean
-        const val WORD_DATA_VERSION             = "word_data_version"    // Int
-        const val PRESET_DECKS_VERSION          = "preset_decks_version" // Int
+        const val WORD_DATA_VERSION             = "word_data_version"          // Int
+        const val PRESET_DECKS_VERSION          = "preset_decks_version"       // Int
+        const val PRESET_DECKS_WORD_VERSION     = "preset_decks_word_version"  // Int: WordDataVersion stored at last deck rebuild
     }
 
     companion object {
@@ -136,6 +137,10 @@ class UserPreferencesRepository @Inject constructor(
 
     fun getPresetDecksVersion(): Int = prefs.getInt(Keys.PRESET_DECKS_VERSION, 0)
     fun setPresetDecksVersion(version: Int) = prefs.edit().putInt(Keys.PRESET_DECKS_VERSION, version).apply()
+
+    /** WordDataVersion stored at the time preset decks were last rebuilt. */
+    fun getPresetDecksWordVersion(): Int = prefs.getInt(Keys.PRESET_DECKS_WORD_VERSION, 0)
+    fun setPresetDecksWordVersion(version: Int) = prefs.edit().putInt(Keys.PRESET_DECKS_WORD_VERSION, version).apply()
 
     val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
         val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)

@@ -322,6 +322,10 @@ id("com.google.devtools.ksp") version "2.2.10-1.0.29" apply false
 3. Соблюдай шкалу редкости: COMMON=A1, RARE=B2, EPIC=C1, LEGENDARY=C2+.
 4. ID слова = `setId × 100 + position`; убедись, что setId не пересекается с существующими блоками из `languageIdBlocks`.
 5. После добавления нового набора — зарегистрируй его в `WordRegistry.allSets` и `WordRegistry.allWords`.
+6. Всегда поднимай `WordDataVersion.CURRENT` при любом изменении слов. `CollectionRepository` автоматически триггерит пересборку пресетных колод при изменении `WordDataVersion`, так что отдельно поднимать `PresetDecksVersion` **не нужно** — если только не меняется состав самих DeckSeed-колод (добавление/удаление слов из колоды, новая колода).
+
+**Частые ошибки:**
+- Слово с тем же `original` уже есть в другом файле данных → `OnConflictStrategy.REPLACE` удалит старую строку и создаст новую с другим `id` → ссылки в `deck_cards` станут невалидными. Всегда проверяй дубли по `original` перед добавлением.
 
 ---
 
