@@ -24,7 +24,6 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -58,6 +57,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.kartonki.ui.component.DeckInvalidBadge
 import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.AccentPurple
@@ -202,26 +202,9 @@ private fun DeckSelectContent(
                                     horizontalArrangement = Arrangement.SpaceBetween,
                                     verticalAlignment = Alignment.CenterVertically,
                                 ) {
-                                    Column(modifier = Modifier.weight(1f)) {
-                                        Text(
-                                            deck.name,
-                                            color = if (!deck.isValid) MaterialTheme.colorScheme.error else Color.Unspecified,
-                                        )
-                                        if (!deck.isValid) {
-                                            Text(
-                                                "Состав не соответствует уровню",
-                                                style = MaterialTheme.typography.bodySmall,
-                                                color = MaterialTheme.colorScheme.error,
-                                            )
-                                        }
-                                    }
+                                    Text(deck.name, modifier = Modifier.weight(1f))
                                     if (!deck.isValid) {
-                                        Icon(
-                                            imageVector = Icons.Filled.Warning,
-                                            contentDescription = null,
-                                            tint = MaterialTheme.colorScheme.error,
-                                            modifier = Modifier.size(16.dp),
-                                        )
+                                        DeckInvalidBadge(modifier = Modifier.padding(end = 4.dp))
                                     }
                                     DeckLevelBadge(deck.level)
                                 }
@@ -233,17 +216,6 @@ private fun DeckSelectContent(
                         )
                     }
                 }
-            }
-
-            val selectedInvalid = uiState.selectedDeck?.isValid == false
-            if (selectedInvalid) {
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    text = "Выбранная колода не соответствует уровню",
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.error,
-                    textAlign = TextAlign.Center,
-                )
             }
 
             Spacer(Modifier.height(32.dp))

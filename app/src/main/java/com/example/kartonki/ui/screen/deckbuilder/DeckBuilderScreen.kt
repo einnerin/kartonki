@@ -107,12 +107,10 @@ fun DeckBuilderScreen(
                         } else {
                             Text(s.deckBuilderTitle)
                         }
-                        val hasOverLimit = uiState.raritySlots.any { it.isOverLimit }
                         Text(
-                            text = if (hasOverLimit) s.deckInvalidLabel
-                                   else s.deckBuilderSize(uiState.totalCards, DeckBuilderUiState.DECK_MAX_SIZE),
+                            text = s.deckBuilderSize(uiState.totalCards, DeckBuilderUiState.DECK_MAX_SIZE),
                             style = MaterialTheme.typography.labelSmall,
-                            color = if (hasOverLimit || uiState.isFull && !uiState.isValid)
+                            color = if (uiState.raritySlots.any { it.isOverLimit })
                                         MaterialTheme.colorScheme.error
                                     else if (uiState.isFull) MaterialTheme.colorScheme.primary
                                     else MaterialTheme.colorScheme.onSurfaceVariant,

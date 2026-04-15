@@ -29,7 +29,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
-import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.TextButton
@@ -54,6 +53,7 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
 import com.example.kartonki.domain.model.DeckLevel
+import com.example.kartonki.ui.component.DeckInvalidBadge
 import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.screen.deckbuilder.DeckBuilderUiState
 import com.example.kartonki.ui.theme.LocalAppStrings
@@ -187,32 +187,19 @@ private fun DeckItem(
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
             )
-            if (deck.isValid) {
-                Text(
-                    text = LocalAppStrings.current.deckCardCount(deck.cardCount, DeckBuilderUiState.DECK_MAX_SIZE),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            } else {
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Icon(
-                        imageVector = Icons.Filled.Warning,
-                        contentDescription = null,
-                        tint = MaterialTheme.colorScheme.error,
-                        modifier = Modifier.size(14.dp).padding(end = 2.dp),
-                    )
-                    Text(
-                        text = LocalAppStrings.current.deckInvalidLabel,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.error,
-                    )
-                }
-            }
+            Text(
+                text = LocalAppStrings.current.deckCardCount(deck.cardCount, DeckBuilderUiState.DECK_MAX_SIZE),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
         }
         val s = LocalAppStrings.current
+        if (!deck.isValid) {
+            DeckInvalidBadge(modifier = Modifier.padding(end = 4.dp))
+        }
         DeckLevelBadge(
             level = deck.level,
-            modifier = Modifier.padding(horizontal = 8.dp),
+            modifier = Modifier.padding(end = 4.dp),
         )
         IconButton(onClick = onEdit) {
             Icon(

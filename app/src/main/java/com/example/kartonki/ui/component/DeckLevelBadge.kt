@@ -107,3 +107,28 @@ private fun deckLevelColor(level: Int): Color = when (level) {
     4    -> Color(Rarity.EPIC.colorArgb)
     else -> Color(Rarity.LEGENDARY.colorArgb)   // L5, L6, L7
 }
+
+/**
+ * Compact "!" badge indicating a deck is invalid (wrong card composition for its level).
+ * Matches the visual weight and size of [DeckLevelBadge] so they sit naturally side-by-side.
+ */
+@Composable
+fun DeckInvalidBadge(modifier: Modifier = Modifier) {
+    val color = Color(0xFFE53935)
+    val shape = RoundedCornerShape(50)
+    Box(
+        modifier = modifier
+            .clip(shape)
+            .background(color.copy(alpha = 0.14f))
+            .border(1.dp, color.copy(alpha = 0.80f), shape)
+            .padding(horizontal = 10.dp, vertical = 4.dp),
+        contentAlignment = Alignment.Center,
+    ) {
+        Text(
+            text = "!",
+            style = MaterialTheme.typography.bodyMedium,
+            color = color,
+            fontWeight = FontWeight.ExtraBold,
+        )
+    }
+}
