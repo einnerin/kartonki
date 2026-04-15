@@ -69,6 +69,10 @@ object AchievementCards {
         "refute",     // опровергать
         "elucidate",  // разъяснять
         "pioneer",    // первопроходец/пионер — FIRST_LAUNCH (temp test achievement)
+        "accomplish", // достигать — EXPERT
+        "consistent", // последовательный — STREAK_5/STREAK_7
+        "dedicate",   // посвящать — COLLECTOR
+        "excel",      // преуспевать — LEGEND
     )
 
     /** Union of all exclusive originals — used to filter packs and starter selection. */

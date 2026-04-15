@@ -5814,6 +5814,30 @@ object WordDataEnglishExpanded {
             example = "She was a pioneer in the field of computer science.",
             definitionNative = "Человек, первым осваивающий новую область знаний или деятельности.",
             exampleNative = "Она была pioneer в области компьютерных наук."),
+        // EXPERT reward
+        WordEntity(id = 24991, original = "accomplish", transliteration = "[əˈkʌmplɪʃ]", translation = "достигать / выполнять", rarity = "EPIC", setId = 0, languagePair = "en-ru", pos = "verb", semanticGroup = "achievement_reward",
+            definition = "To succeed in doing or completing something.",
+            example = "She accomplished everything she set out to do.",
+            definitionNative = "Успешно выполнить или достичь чего-либо.",
+            exampleNative = "Ей удалось accomplish всё, что она задумала."),
+        // STREAK_5 or STREAK_7 reward
+        WordEntity(id = 24992, original = "consistent", transliteration = "[kənˈsɪstənt]", translation = "последовательный / постоянный", rarity = "EPIC", setId = 0, languagePair = "en-ru", pos = "adjective", semanticGroup = "achievement_reward",
+            definition = "Acting or done in the same way over time; not changing.",
+            example = "Consistent practice is the key to mastering a new language.",
+            definitionNative = "Действующий одинаково со временем; не меняющийся.",
+            exampleNative = "Consistent занятия — ключ к освоению языка."),
+        // COLLECTOR reward
+        WordEntity(id = 24993, original = "dedicate", transliteration = "[ˈdɛdɪkeɪt]", translation = "посвящать / уделять", rarity = "EPIC", setId = 0, languagePair = "en-ru", pos = "verb", semanticGroup = "achievement_reward",
+            definition = "To give time or effort to a particular activity or purpose.",
+            example = "He dedicated years of his life to collecting rare cards.",
+            definitionNative = "Отдавать время или усилия определённому занятию или цели.",
+            exampleNative = "Он посвятил годы жизни коллекционированию редких карточек."),
+        // LEGEND reward
+        WordEntity(id = 24994, original = "excel", transliteration = "[ɪkˈsɛl]", translation = "преуспевать / выделяться", rarity = "EPIC", setId = 0, languagePair = "en-ru", pos = "verb", semanticGroup = "achievement_reward",
+            definition = "To be exceptionally good at or proficient in an activity.",
+            example = "Those who excel are not just talented — they are dedicated.",
+            definitionNative = "Быть исключительно хорошим или умелым в каком-либо деле.",
+            exampleNative = "Те, кто excel, не просто талантливы — они целеустремлённы."),
     )
 
 }
