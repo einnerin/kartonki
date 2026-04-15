@@ -3,6 +3,7 @@ package com.example.kartonki.ui.screen.pvp
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -36,7 +37,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.kartonki.domain.model.DeckLevel
+import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.theme.LocalAppStrings
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -183,7 +184,7 @@ private fun DeckDropdown(
     ) {
         val ls = LocalAppStrings.current
         OutlinedTextField(
-            value = selected?.let { "${it.name}  ${DeckLevel.starsFor(it.level)}  (${ls.pvpDeckCardCount(it.cardCount)})" } ?: "",
+            value = selected?.let { "${it.name}  (${ls.pvpDeckCardCount(it.cardCount)})" } ?: "",
             onValueChange = {},
             readOnly = true,
             label = { Text(ls.pvpDeckHint) },
@@ -199,7 +200,21 @@ private fun DeckDropdown(
             decks.forEach { deck ->
                 DropdownMenuItem(
                     text = {
-                        Text("${deck.name}  ${DeckLevel.starsFor(deck.level)}  — ${ls.pvpDeckCardCount(deck.cardCount)}")
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically,
+                        ) {
+                            Column(modifier = Modifier.weight(1f)) {
+                                Text(deck.name)
+                                Text(
+                                    ls.pvpDeckCardCount(deck.cardCount),
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
+                            DeckLevelBadge(deck.level)
+                        }
                     },
                     onClick = {
                         onSelected(deck)

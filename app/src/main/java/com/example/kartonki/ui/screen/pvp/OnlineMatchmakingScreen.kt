@@ -57,7 +57,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.kartonki.domain.model.DeckLevel
+import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.AccentPurple
 import com.example.kartonki.ui.theme.BgDeep
@@ -183,9 +183,7 @@ private fun DeckSelectContent(
                 modifier = Modifier.fillMaxWidth(),
             ) {
                 OutlinedTextField(
-                    value = uiState.selectedDeck?.let {
-                        "${it.name}  ${DeckLevel.starsFor(it.level)}"
-                    } ?: "",
+                    value = uiState.selectedDeck?.name ?: "",
                     onValueChange = {},
                     readOnly = true,
                     label = { Text("Выберите колоду") },
@@ -198,7 +196,14 @@ private fun DeckSelectContent(
                     uiState.decks.forEach { deck ->
                         DropdownMenuItem(
                             text = {
-                                Text("${deck.name}  ${DeckLevel.starsFor(deck.level)}")
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    verticalAlignment = Alignment.CenterVertically,
+                                ) {
+                                    Text(deck.name, modifier = Modifier.weight(1f))
+                                    DeckLevelBadge(deck.level)
+                                }
                             },
                             onClick = {
                                 onDeckSelected(deck)

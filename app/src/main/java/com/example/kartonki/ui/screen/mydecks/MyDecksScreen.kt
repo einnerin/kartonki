@@ -241,11 +241,7 @@ private fun CreateDeckDialog(
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
-                    Text(
-                        text = DeckLevel.starsFor(selectedLevel),
-                        style = MaterialTheme.typography.titleMedium,
-                        color = MaterialTheme.colorScheme.primary,
-                    )
+                    DeckLevelBadge(selectedLevel)
                     Text(
                         text = DeckLevel.nameFor(selectedLevel),
                         style = MaterialTheme.typography.bodyMedium,

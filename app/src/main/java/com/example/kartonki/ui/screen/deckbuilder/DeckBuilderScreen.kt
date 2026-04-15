@@ -42,9 +42,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.R
-import com.example.kartonki.domain.model.DeckLevel
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
+import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.theme.LocalAppStrings
@@ -66,11 +66,14 @@ fun DeckBuilderScreen(
             TopAppBar(
                 title = {
                     Column {
-                        Text(
-                            text = if (uiState.deckName.isNotEmpty())
-                                "${uiState.deckName}  ${DeckLevel.starsFor(uiState.deckLevel)}"
-                            else s.deckBuilderTitle,
-                        )
+                        if (uiState.deckName.isNotEmpty()) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Text(uiState.deckName, modifier = Modifier.weight(1f, fill = false))
+                                DeckLevelBadge(uiState.deckLevel, modifier = Modifier.padding(start = 8.dp))
+                            }
+                        } else {
+                            Text(s.deckBuilderTitle)
+                        }
                         Text(
                             text = s.deckBuilderSize(uiState.totalCards, DeckBuilderUiState.DECK_MAX_SIZE),
                             style = MaterialTheme.typography.labelSmall,
