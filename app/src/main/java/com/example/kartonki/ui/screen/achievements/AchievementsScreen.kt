@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -159,6 +160,7 @@ private fun AchievementCard(state: AchievementState) {
 
     Box(
         modifier = Modifier
+            .fillMaxHeight()
             .clip(RoundedCornerShape(16.dp))
             .then(
                 if (isUnlocked)
@@ -178,9 +180,8 @@ private fun AchievementCard(state: AchievementState) {
             .padding(14.dp),
     ) {
         Column(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(6.dp),
         ) {
             // Icon
             Box(
@@ -193,6 +194,8 @@ private fun AchievementCard(state: AchievementState) {
                 )
             }
 
+            Spacer(Modifier.height(6.dp))
+
             // Title
             Text(
                 text = id.title,
@@ -201,20 +204,30 @@ private fun AchievementCard(state: AchievementState) {
                 color = if (isUnlocked) MaterialTheme.colorScheme.onSurface
                         else MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center,
+                minLines = 2,
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
             )
 
-            // Description
-            Text(
-                text = id.description,
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                textAlign = TextAlign.Center,
-                minLines = 2,
-            )
+            Spacer(Modifier.height(4.dp))
 
-            Spacer(Modifier.height(2.dp))
+            // Description — expands to fill available space
+            Box(
+                modifier = Modifier.weight(1f).fillMaxWidth(),
+                contentAlignment = Alignment.TopCenter,
+            ) {
+                Text(
+                    text = id.description,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    textAlign = TextAlign.Center,
+                    minLines = 2,
+                    maxLines = 3,
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
+
+            Spacer(Modifier.height(6.dp))
 
             // Reward word
             Box(
@@ -244,28 +257,28 @@ private fun AchievementCard(state: AchievementState) {
                         overflow = TextOverflow.Ellipsis,
                         textAlign = TextAlign.Center,
                     )
-                    if (isUnlocked) {
-                        Text(
-                            text = id.rewardWordTranslation,
-                            style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            maxLines = 1,
-                            overflow = TextOverflow.Ellipsis,
-                            textAlign = TextAlign.Center,
-                        )
-                    }
+                    // Always reserve space for translation to keep reward box height consistent
+                    Text(
+                        text = if (isUnlocked) id.rewardWordTranslation else "",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        textAlign = TextAlign.Center,
+                    )
                 }
             }
 
-            // Unlock date
-            if (isUnlocked && state.unlockedAt != null) {
-                Text(
-                    text = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
-                        .format(Date(state.unlockedAt)),
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
+            Spacer(Modifier.height(6.dp))
+
+            // Unlock date — always reserve space for height consistency
+            Text(
+                text = if (isUnlocked && state.unlockedAt != null)
+                    SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date(state.unlockedAt))
+                else "",
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
         }
     }
 }
@@ -287,6 +300,7 @@ private fun HiddenAchievementCard(state: AchievementState) {
 
     Box(
         modifier = Modifier
+            .fillMaxHeight()
             .clip(RoundedCornerShape(16.dp))
             .then(
                 if (isUnlocked)
@@ -302,9 +316,8 @@ private fun HiddenAchievementCard(state: AchievementState) {
             .padding(14.dp),
     ) {
         Column(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(6.dp),
         ) {
             // Icon
             Box(
@@ -317,6 +330,8 @@ private fun HiddenAchievementCard(state: AchievementState) {
                 )
             }
 
+            Spacer(Modifier.height(6.dp))
+
             // Title
             Text(
                 text = if (isUnlocked) id.title else "???",
@@ -325,21 +340,31 @@ private fun HiddenAchievementCard(state: AchievementState) {
                 color = if (isUnlocked) MaterialTheme.colorScheme.onSurface
                         else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.4f),
                 textAlign = TextAlign.Center,
+                minLines = 2,
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
             )
 
-            // Description
-            Text(
-                text = if (isUnlocked) id.description else "Секретное достижение",
-                style = MaterialTheme.typography.bodySmall,
-                color = if (isUnlocked) MaterialTheme.colorScheme.onSurfaceVariant
-                        else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.4f),
-                textAlign = TextAlign.Center,
-                minLines = 2,
-            )
+            Spacer(Modifier.height(4.dp))
 
-            Spacer(Modifier.height(2.dp))
+            // Description — expands to fill available space
+            Box(
+                modifier = Modifier.weight(1f).fillMaxWidth(),
+                contentAlignment = Alignment.TopCenter,
+            ) {
+                Text(
+                    text = if (isUnlocked) id.description else "Секретное достижение",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = if (isUnlocked) MaterialTheme.colorScheme.onSurfaceVariant
+                            else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.4f),
+                    textAlign = TextAlign.Center,
+                    minLines = 2,
+                    maxLines = 3,
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
+
+            Spacer(Modifier.height(6.dp))
 
             // Reward word
             Box(
@@ -370,28 +395,28 @@ private fun HiddenAchievementCard(state: AchievementState) {
                         overflow = TextOverflow.Ellipsis,
                         textAlign = TextAlign.Center,
                     )
-                    if (isUnlocked) {
-                        Text(
-                            text = id.rewardWordTranslation,
-                            style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            maxLines = 1,
-                            overflow = TextOverflow.Ellipsis,
-                            textAlign = TextAlign.Center,
-                        )
-                    }
+                    // Always reserve space for translation to keep reward box height consistent
+                    Text(
+                        text = if (isUnlocked) id.rewardWordTranslation else "",
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                        textAlign = TextAlign.Center,
+                    )
                 }
             }
 
-            // Unlock date (only when unlocked)
-            if (isUnlocked && state.unlockedAt != null) {
-                Text(
-                    text = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
-                        .format(Date(state.unlockedAt)),
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
+            Spacer(Modifier.height(6.dp))
+
+            // Unlock date — always reserve space for height consistency
+            Text(
+                text = if (isUnlocked && state.unlockedAt != null)
+                    SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date(state.unlockedAt))
+                else "",
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
         }
     }
 }
