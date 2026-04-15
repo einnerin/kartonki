@@ -14,5 +14,5 @@ package com.example.kartonki.data
  * New words required by the updated decks are also added to the collection.
  */
 object PresetDecksVersion {
-    const val CURRENT = 8
+    const val CURRENT = 9
 }
