@@ -24,8 +24,10 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.TopAppBar
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
@@ -112,7 +114,14 @@ fun CollectionScreen(
                             )
                         }
                     } else {
-                        LazyColumn(contentPadding = PaddingValues(bottom = 88.dp)) {
+                        val listState = rememberLazyListState()
+                        LaunchedEffect(uiState.rarityFilter) {
+                            listState.scrollToItem(0)
+                        }
+                        LazyColumn(
+                            state = listState,
+                            contentPadding = PaddingValues(bottom = 88.dp),
+                        ) {
                             items(uiState.words, key = { it.id }) { word ->
                                 CollectionWordItem(word)
                                 HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
