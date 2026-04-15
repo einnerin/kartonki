@@ -31,11 +31,14 @@ data class DeckBuilderUiState(
     val deckLevel: Int = 1,
     val deckCards: List<Word> = emptyList(),
     val availableCards: List<Word> = emptyList(),
+    val allOwnedCards: List<Word> = emptyList(),
     val selectedTab: Int = 0,
     val rarityFilter: Set<Rarity> = emptySet(),
 ) {
     val totalCards: Int get() = deckCards.size
     val isFull: Boolean get() = totalCards >= DECK_MAX_SIZE
+
+    val deckCardIds: Set<Long> get() = deckCards.map { it.id }.toSet()
 
     val raritySlots: List<RaritySlot> get() {
         val limits = DeckLevel.limitsFor(deckLevel)
@@ -50,8 +53,8 @@ data class DeckBuilderUiState(
     val filteredDeckCards: List<Word> get() =
         if (rarityFilter.isEmpty()) deckCards else deckCards.filter { it.rarity in rarityFilter }
 
-    val filteredAvailableCards: List<Word> get() =
-        if (rarityFilter.isEmpty()) availableCards else availableCards.filter { it.rarity in rarityFilter }
+    val filteredAllCards: List<Word> get() =
+        if (rarityFilter.isEmpty()) allOwnedCards else allOwnedCards.filter { it.rarity in rarityFilter }
 
     fun canAdd(word: Word): Boolean {
         if (isFull) return false
@@ -136,11 +139,18 @@ class DeckBuilderViewModel @Inject constructor(
     private suspend fun refreshCards(deckName: String = _uiState.value.deckName, deckLevel: Int = _uiState.value.deckLevel) {
         val deckWordIds = deckDao.getWordIdsForDeck(currentDeckId).toSet()
         val languagePair = prefs.getLanguagePair()
-        val allOwned = collectionRepository.getOwnedWords(languagePair = languagePair)
-        val inDeck = allOwned.filter { it.id in deckWordIds }.sortedByRarityDesc()
-        val available = allOwned.filter { it.id !in deckWordIds }.sortedByRarityDesc()
+        val allOwned = collectionRepository.getOwnedWords(languagePair = languagePair).sortedByRarityDesc()
+        val inDeck = allOwned.filter { it.id in deckWordIds }
+        val available = allOwned.filter { it.id !in deckWordIds }
         _uiState.update {
-            it.copy(isLoading = false, deckName = deckName, deckLevel = deckLevel, deckCards = inDeck, availableCards = available)
+            it.copy(
+                isLoading = false,
+                deckName = deckName,
+                deckLevel = deckLevel,
+                deckCards = inDeck,
+                availableCards = available,
+                allOwnedCards = allOwned,
+            )
         }
     }
 

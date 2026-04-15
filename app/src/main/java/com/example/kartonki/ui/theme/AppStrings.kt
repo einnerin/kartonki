@@ -314,7 +314,7 @@ val RuStrings = AppStrings(
     deckBuilderTitle    = "Конструктор колоды",
     deckBuilderSize     = { cur, max -> "$cur / $max карт" },
     deckTabInDeck       = { n -> "В колоде ($n)" },
-    deckTabAvailable    = { n -> "Доступно ($n)" },
+    deckTabAvailable    = { n -> "Все карты ($n)" },
     deckEmptyDeck       = "Колода пуста — добавьте карты",
     deckEmptyAvailable  = "Все карты уже в колоде",
 
@@ -524,7 +524,7 @@ val EnStrings = AppStrings(
     deckBuilderTitle    = "Deck builder",
     deckBuilderSize     = { cur, max -> "$cur / $max cards" },
     deckTabInDeck       = { n -> "In deck ($n)" },
-    deckTabAvailable    = { n -> "Available ($n)" },
+    deckTabAvailable    = { n -> "All cards ($n)" },
     deckEmptyDeck       = "Deck is empty — add cards",
     deckEmptyAvailable  = "All cards are already in the deck",
 
@@ -734,7 +734,7 @@ val DeStrings = AppStrings(
     deckBuilderTitle    = "Deck-Baukasten",
     deckBuilderSize     = { cur, max -> "$cur / $max Karten" },
     deckTabInDeck       = { n -> "Im Deck ($n)" },
-    deckTabAvailable    = { n -> "Verfügbar ($n)" },
+    deckTabAvailable    = { n -> "Alle Karten ($n)" },
     deckEmptyDeck       = "Deck leer — Karten hinzufügen",
     deckEmptyAvailable  = "Alle Karten bereits im Deck",
 
@@ -944,7 +944,7 @@ val FrStrings = AppStrings(
     deckBuilderTitle    = "Constructeur de deck",
     deckBuilderSize     = { cur, max -> "$cur / $max cartes" },
     deckTabInDeck       = { n -> "Dans le deck ($n)" },
-    deckTabAvailable    = { n -> "Disponible ($n)" },
+    deckTabAvailable    = { n -> "Toutes les cartes ($n)" },
     deckEmptyDeck       = "Deck vide — ajouter des cartes",
     deckEmptyAvailable  = "Toutes les cartes sont déjà dans le deck",
 
@@ -1154,7 +1154,7 @@ val EsStrings = AppStrings(
     deckBuilderTitle    = "Constructor de mazos",
     deckBuilderSize     = { cur, max -> "$cur / $max cartas" },
     deckTabInDeck       = { n -> "En el mazo ($n)" },
-    deckTabAvailable    = { n -> "Disponible ($n)" },
+    deckTabAvailable    = { n -> "Todas las cartas ($n)" },
     deckEmptyDeck       = "Mazo vacío — añadir cartas",
     deckEmptyAvailable  = "Todas las cartas ya están en el mazo",
 
@@ -1364,7 +1364,7 @@ val ZhStrings = AppStrings(
     deckBuilderTitle    = "套牌构建器",
     deckBuilderSize     = { cur, max -> "$cur / $max 张卡片" },
     deckTabInDeck       = { n -> "套牌中 ($n)" },
-    deckTabAvailable    = { n -> "可用 ($n)" },
+    deckTabAvailable    = { n -> "所有卡牌 ($n)" },
     deckEmptyDeck       = "套牌为空 — 添加卡片",
     deckEmptyAvailable  = "所有卡片已在套牌中",
 
@@ -1574,7 +1574,7 @@ val JaStrings = AppStrings(
     deckBuilderTitle    = "デッキビルダー",
     deckBuilderSize     = { cur, max -> "$cur / $max 枚" },
     deckTabInDeck       = { n -> "デッキ内 ($n)" },
-    deckTabAvailable    = { n -> "利用可能 ($n)" },
+    deckTabAvailable    = { n -> "全カード ($n)" },
     deckEmptyDeck       = "デッキが空 — カードを追加",
     deckEmptyAvailable  = "全カードがデッキに入っています",
 
@@ -1784,7 +1784,7 @@ val ArStrings = AppStrings(
     deckBuilderTitle    = "منشئ المجموعة",
     deckBuilderSize     = { cur, max -> "$cur / $max بطاقات" },
     deckTabInDeck       = { n -> "في المجموعة ($n)" },
-    deckTabAvailable    = { n -> "متاح ($n)" },
+    deckTabAvailable    = { n -> "جميع البطاقات ($n)" },
     deckEmptyDeck       = "المجموعة فارغة — أضف بطاقات",
     deckEmptyAvailable  = "جميع البطاقات في المجموعة بالفعل",
 

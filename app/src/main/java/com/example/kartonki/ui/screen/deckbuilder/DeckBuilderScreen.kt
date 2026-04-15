@@ -159,30 +159,33 @@ fun DeckBuilderScreen(
                 Tab(
                     selected = uiState.selectedTab == 1,
                     onClick = { viewModel.selectTab(1) },
-                    text = { Text(s.deckTabAvailable(uiState.availableCards.size)) },
+                    text = { Text(s.deckTabAvailable(uiState.allOwnedCards.size)) },
                 )
             }
 
             // Tab content — weight(1f) so LazyColumn is bounded and can scroll
+            val deckCardIds = uiState.deckCardIds
+            val errorColor = MaterialTheme.colorScheme.error
+            val primaryColor = MaterialTheme.colorScheme.primary
             when (uiState.selectedTab) {
                 0 -> CardList(
                     cards = uiState.filteredDeckCards,
                     listState = deckListState,
                     emptyText = s.deckEmptyDeck,
-                    actionLabel = "−",
+                    actionLabel = { "−" },
                     actionEnabled = { true },
-                    actionColor = MaterialTheme.colorScheme.error,
+                    actionColor = { errorColor },
                     onAction = { viewModel.removeCard(it) },
                     modifier = Modifier.weight(1f),
                 )
                 1 -> CardList(
-                    cards = uiState.filteredAvailableCards,
+                    cards = uiState.filteredAllCards,
                     listState = availableListState,
                     emptyText = s.deckEmptyAvailable,
-                    actionLabel = "+",
-                    actionEnabled = { uiState.canAdd(it) },
-                    actionColor = MaterialTheme.colorScheme.primary,
-                    onAction = { viewModel.addCard(it) },
+                    actionLabel = { if (it.id in deckCardIds) "−" else "+" },
+                    actionEnabled = { if (it.id in deckCardIds) true else uiState.canAdd(it) },
+                    actionColor = { if (it.id in deckCardIds) errorColor else primaryColor },
+                    onAction = { if (it.id in deckCardIds) viewModel.removeCard(it) else viewModel.addCard(it) },
                     modifier = Modifier.weight(1f),
                 )
             }
@@ -195,9 +198,9 @@ private fun CardList(
     cards: List<Word>,
     listState: LazyListState,
     emptyText: String,
-    actionLabel: String,
+    actionLabel: (Word) -> String,
     actionEnabled: (Word) -> Boolean,
-    actionColor: Color,
+    actionColor: (Word) -> Color,
     onAction: (Word) -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -211,9 +214,9 @@ private fun CardList(
         items(cards, key = { it.id }) { word ->
             DeckCardItem(
                 word = word,
-                actionLabel = actionLabel,
+                actionLabel = actionLabel(word),
                 enabled = actionEnabled(word),
-                actionColor = actionColor,
+                actionColor = actionColor(word),
                 onAction = { onAction(word) },
             )
             HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
