@@ -52,6 +52,7 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
 import com.example.kartonki.domain.model.DeckLevel
+import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.screen.deckbuilder.DeckBuilderUiState
 import com.example.kartonki.ui.theme.LocalAppStrings
 
@@ -191,10 +192,8 @@ private fun DeckItem(
             )
         }
         val s = LocalAppStrings.current
-        Text(
-            text = DeckLevel.starsFor(deck.level),
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.primary,
+        DeckLevelBadge(
+            level = deck.level,
             modifier = Modifier.padding(horizontal = 8.dp),
         )
         IconButton(onClick = onEdit) {
