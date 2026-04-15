@@ -66,7 +66,9 @@ data class OnlinePvpGameUiState(
     val showSurrenderDialog: Boolean = false,
 )
 
-private const val DISCONNECT_TIMEOUT_MS = 15_000L
+private const val DISCONNECT_TIMEOUT_MS = 30_000L
+/** Both players gone for this long → match cancelled, no rating change for either side. */
+private const val ABANDONED_TIMEOUT_MS = 5 * 60 * 1000L // 5 minutes
 
 @HiltViewModel
 class OnlinePvpGameViewModel @Inject constructor(
@@ -105,6 +107,10 @@ class OnlinePvpGameViewModel @Inject constructor(
             // Deck words are resolved per-round from myCardIds directly,
             // so all deck cards are available regardless of collection status.
             allWords = collectionRepository.getOwnedWords()
+            // Register server-side onDisconnect handler before listening.
+            // This ensures Firebase writes our disconnect timestamp automatically on any
+            // connection loss — crash, phone death, or internet drop in the foreground.
+            onlineGameRepository.registerDisconnectHandler(matchId, myIndex)
             listenToMatch()
         }
     }
@@ -134,8 +140,10 @@ class OnlinePvpGameViewModel @Inject constructor(
         opponentCardIds = if (myIndex == 0) match.player2RemainingIds else match.player1RemainingIds
         opponentStreak = if (myIndex == 0) match.player2Streak else match.player1Streak
 
-        // Auto-forfeit: if the opponent has been gone for 15 s we award the win here
+        // Auto-forfeit: if the opponent has been gone for 30 s we award the win here
         if (!gameOverRecorded) checkOpponentDisconnect(match)
+        // Abandoned match: both players disconnected and no activity for >5 minutes → cancel
+        if (!gameOverRecorded) checkBothDisconnected(match)
 
         when (match.phase) {
             OnlineMatchData.PHASE_GAME_OVER, OnlineMatchData.STATUS_FINISHED -> {
@@ -435,7 +443,11 @@ class OnlinePvpGameViewModel @Inject constructor(
     fun onAppForeground() {
         if (gameOverRecorded) return
         viewModelScope.launch {
-            try { onlineGameRepository.clearDisconnect(matchId, myIndex) }
+            try {
+                // clearDisconnect also re-registers the onDisconnect handler,
+                // since Firebase cancels it automatically after a reconnect.
+                onlineGameRepository.clearDisconnect(matchId, myIndex)
+            }
             catch (_: Exception) { }
         }
     }
@@ -458,6 +470,43 @@ class OnlinePvpGameViewModel @Inject constructor(
             disconnectTimerJob = viewModelScope.launch {
                 delay(DISCONNECT_TIMEOUT_MS - elapsed)
                 awardWinByDisconnect()
+            }
+        }
+    }
+
+    /**
+     * If BOTH players are shown as disconnected and the match has had no activity for
+     * more than [ABANDONED_TIMEOUT_MS], neither player wins — the match is cancelled.
+     * This handles the rare case where both phones lose connection simultaneously.
+     */
+    private fun checkBothDisconnected(match: OnlineMatchData) {
+        val p1Gone = match.player1DisconnectedAt > 0L
+        val p2Gone = match.player2DisconnectedAt > 0L
+        if (!p1Gone || !p2Gone) return
+
+        val lastActivity = maxOf(match.roundStartTime, match.player1DisconnectedAt, match.player2DisconnectedAt)
+        if (System.currentTimeMillis() - lastActivity < ABANDONED_TIMEOUT_MS) return
+
+        gameOverRecorded = true
+        disconnectTimerJob?.cancel()
+        val state = _uiState.value
+        val p1Score = if (myIndex == 0) state.myScore else state.opponentScore
+        val p2Score = if (myIndex == 0) state.opponentScore else state.myScore
+        viewModelScope.launch {
+            try {
+                onlineGameRepository.confirmAnswer(
+                    matchId = matchId,
+                    p1Score = p1Score,
+                    p2Score = p2Score,
+                    p1Streak = 0,
+                    p2Streak = 0,
+                    nextTurn = 0,
+                    nextPhase = OnlineMatchData.PHASE_GAME_OVER,
+                    isGameOver = true,
+                    winnerIndex = -1, // draw / cancelled — no rating change for either player
+                )
+            } catch (e: Exception) {
+                _uiState.update { it.copy(connectionError = "Ошибка: ${e.message}") }
             }
         }
     }

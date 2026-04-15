@@ -5,6 +5,7 @@ import com.example.kartonki.data.remote.model.OnlineRoundData
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ServerValue
 import com.google.firebase.database.ValueEventListener
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
@@ -62,16 +63,31 @@ class OnlineGameRepository @Inject constructor(
         ).await()
     }
 
+    /**
+     * Registers a server-side onDisconnect handler so Firebase automatically writes
+     * the disconnect timestamp if the client loses connection for ANY reason — including
+     * crash, phone death, or internet loss while the app stays in the foreground.
+     *
+     * Must be called every time the player (re-)enters the foreground, because Firebase
+     * cancels the registered handler on reconnect and it needs to be re-queued.
+     */
+    fun registerDisconnectHandler(matchId: String, playerIndex: Int) {
+        val key = if (playerIndex == 0) "player1DisconnectedAt" else "player2DisconnectedAt"
+        matchRef(matchId).child(key).onDisconnect().setValue(ServerValue.TIMESTAMP)
+    }
+
     /** Marks a player as disconnected (app went to background / closed). */
     suspend fun reportDisconnect(matchId: String, playerIndex: Int, timestamp: Long) {
         val key = if (playerIndex == 0) "player1DisconnectedAt" else "player2DisconnectedAt"
         matchRef(matchId).child(key).setValue(timestamp).await()
     }
 
-    /** Clears the disconnected flag when the player comes back (suspend version). */
+    /** Clears the disconnected flag and re-registers the onDisconnect handler when the player returns. */
     suspend fun clearDisconnect(matchId: String, playerIndex: Int) {
         val key = if (playerIndex == 0) "player1DisconnectedAt" else "player2DisconnectedAt"
         matchRef(matchId).child(key).setValue(0L).await()
+        // Re-register after reconnect — Firebase cancels the handler when connection is restored.
+        registerDisconnectHandler(matchId, playerIndex)
     }
 
     /**
@@ -81,6 +97,8 @@ class OnlineGameRepository @Inject constructor(
     fun clearDisconnectSync(matchId: String, playerIndex: Int) {
         val key = if (playerIndex == 0) "player1DisconnectedAt" else "player2DisconnectedAt"
         matchRef(matchId).child(key).setValue(0L)
+        // onDisconnect re-registration is intentionally skipped here:
+        // onCleared means the ViewModel is going away, so no need to guard against future disconnects.
     }
 
     /** Defender submits their answer selection. */
