@@ -4,7 +4,7 @@ package com.example.kartonki.data
  * Version of the preset deck definitions.
  *
  * HOW TO UPDATE PRESET DECKS:
- * 1. Edit [WordDataEnglish.prebuiltDecks].
+ * 1. Edit the relevant WordData file's prebuiltDecks (en-ru → WordDataEnglish, he-ru → WordDataHebrew, etc.).
  * 2. Bump [CURRENT] by 1.
  * 3. Build and deploy.
  *

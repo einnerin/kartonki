@@ -44,14 +44,10 @@ class WordLoader @Inject constructor(
         val storedVersion = prefs.getWordDataVersion()
         if (storedVersion >= WordDataVersion.CURRENT) return
 
-        val allSets = WordDataEnglish.sets + WordDataEnglishExpanded.sets +
-                WordDataHebrew.sets + WordDataHebrewEveryday.sets +
-                WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets
+        val allSets = WordRegistry.allSets
         wordSetDao.insertSets(allSets)
 
-        val allWords = WordDataEnglish.words + WordDataEnglishExpanded.words +
-                WordDataHebrew.words + WordDataHebrewEveryday.words +
-                WordDataHebrewMore.words + WordDataHebrewAdvanced.words
+        val allWords = WordRegistry.allWords
 
         val pvpOriginals = buildDefaultPvpOriginals(allWords)
         val wordsWithFlag = allWords.map { w ->

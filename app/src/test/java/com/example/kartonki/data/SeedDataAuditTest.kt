@@ -9,6 +9,9 @@ import org.junit.Test
 /**
  * Audits all seed-data files for completeness and correctness.
  * A failing test = a real problem that would break quiz generation for affected words.
+ *
+ * All data is accessed via [WordRegistry] — adding a new language means only
+ * WordRegistry needs to be updated, not this test file.
  */
 class SeedDataAuditTest {
 
@@ -133,16 +136,7 @@ class SeedDataAuditTest {
     // ══════════════════════════════════════════════════════════════════════════
 
     @Test fun `no duplicate words — same original within the same language pair`() {
-        val allWords: List<WordEntity> =
-            WordDataEnglish.words +
-            WordDataEnglishExpanded.words +
-            WordDataHebrew.words +
-            WordDataHebrewEveryday.words +
-            WordDataHebrewMore.words +
-            WordDataHebrewAdvanced.words
-
-        // Group by (original, languagePair) — any group with >1 entry is a duplicate.
-        val dupes = allWords
+        val dupes = WordRegistry.allWords
             .groupBy { "${it.languagePair}|${it.original}" }
             .filter { (_, entries) -> entries.size > 1 }
 
@@ -162,30 +156,21 @@ class SeedDataAuditTest {
     // ══════════════════════════════════════════════════════════════════════════
 
     @Test fun `preset decks — rarity distribution matches DeckLevel limits`() {
-        // Build a single lookup map: original → rarity across all seed sources.
-        // Use first-occurrence semantics so that duplicate originals (e.g. "רֶשֶׁת"
-        // appears in both SeedDataHebrew set 103 and SeedDataHebrewAdvanced set 114)
-        // resolve to the word from the earlier file, matching physical insertion order.
-        val allWords: List<WordEntity> =
-            WordDataEnglish.words +
-            WordDataEnglishExpanded.words +
-            WordDataHebrew.words +
-            WordDataHebrewEveryday.words +
-            WordDataHebrewMore.words +
-            WordDataHebrewAdvanced.words
-        val rarityByOriginal: Map<String, String> = buildMap {
-            for (w in allWords) putIfAbsent(w.original, w.rarity)
+        // Build a lookup map: (original, languagePair) → rarity.
+        // Uses first-occurrence semantics to match physical DB insertion order.
+        val rarityByKey: Map<String, String> = buildMap {
+            for (w in WordRegistry.allWords) putIfAbsent("${w.languagePair}|${w.original}", w.rarity)
         }
 
         val problems = mutableListOf<String>()
-        for (deck in WordDataEnglish.prebuiltDecks) {
+        for (deck in WordRegistry.allPrebuiltDecks) {
             val limits = DeckLevel.limitsFor(deck.level)
             val counts = mutableMapOf("COMMON" to 0, "UNCOMMON" to 0, "RARE" to 0, "EPIC" to 0, "LEGENDARY" to 0)
 
             for (original in deck.wordOriginals) {
-                val rarity = rarityByOriginal[original]
+                val rarity = rarityByKey["${deck.languagePair}|$original"]
                 if (rarity == null) {
-                    problems += "Deck '${deck.name}' (L${deck.level}): word '$original' not found in any seed file"
+                    problems += "Deck '${deck.name}' (L${deck.level}): word '$original' not found in '${deck.languagePair}'"
                 } else {
                     counts[rarity] = (counts[rarity] ?: 0) + 1
                 }
@@ -217,12 +202,7 @@ class SeedDataAuditTest {
      * Duplicate IDs cause silent data loss via INSERT OR REPLACE.
      */
     @Test fun `no duplicate word IDs across all seed files`() {
-        val allWords: List<WordEntity> =
-            WordDataEnglish.words + WordDataEnglishExpanded.words +
-            WordDataHebrew.words + WordDataHebrewEveryday.words +
-            WordDataHebrewMore.words + WordDataHebrewAdvanced.words
-
-        val dupes = allWords.groupBy { it.id }.filter { (_, v) -> v.size > 1 }
+        val dupes = WordRegistry.allWords.groupBy { it.id }.filter { (_, v) -> v.size > 1 }
         fail("Duplicate word IDs (silent data loss in DB)",
             dupes.map { (id, words) ->
                 "id=$id appears ${words.size}× — originals: ${words.map { it.original }}"
@@ -236,13 +216,8 @@ class SeedDataAuditTest {
      * This guarantees IDs are unique as long as set IDs are unique.
      */
     @Test fun `word IDs follow the setId x100 formula`() {
-        val allWords: List<WordEntity> =
-            WordDataEnglish.words + WordDataEnglishExpanded.words +
-            WordDataHebrew.words + WordDataHebrewEveryday.words +
-            WordDataHebrewMore.words + WordDataHebrewAdvanced.words
-
         fail("Word IDs outside expected setId×100 range",
-            allWords.mapNotNull { w ->
+            WordRegistry.allWords.mapNotNull { w ->
                 val base = w.setId * 100
                 if (w.id < base + 1 || w.id > base + 99)
                     "word '${w.original}' (set ${w.setId}): id=${w.id} not in [${base+1}..${base+99}]"
@@ -252,27 +227,16 @@ class SeedDataAuditTest {
     }
 
     /**
-     * Set IDs must respect language blocks:
-     *   en-ru → 1–999   |   he-ru → 1001–1999
-     * Adding a new language requires a new block (e.g. 2001–2999 for es-ru).
+     * Set IDs must respect language blocks defined in [WordRegistry.languageIdBlocks].
+     * Adding a new language: add an entry there — the test automatically covers it.
      */
     @Test fun `set IDs are within their language block`() {
-        data class Block(val lang: String, val min: Int, val max: Int)
-        val blocks = listOf(
-            Block("en-ru", 1, 999),
-            Block("he-ru", 1001, 1999),
-        )
-        val allSets =
-            WordDataEnglish.sets + WordDataEnglishExpanded.sets +
-            WordDataHebrew.sets + WordDataHebrewEveryday.sets +
-            WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets
-
         fail("Set IDs outside their language block",
-            allSets.mapNotNull { s ->
-                val block = blocks.find { it.lang == s.languagePair }
-                    ?: return@mapNotNull "Set ${s.id} '${s.name}': unknown language '${s.languagePair}' — add a block"
-                if (s.id < block.min || s.id > block.max)
-                    "Set ${s.id} '${s.name}' (${s.languagePair}): must be in [${block.min}..${block.max}]"
+            WordRegistry.allSets.mapNotNull { s ->
+                val range = WordRegistry.languageIdBlocks[s.languagePair]
+                    ?: return@mapNotNull "Set ${s.id} '${s.name}': unknown language '${s.languagePair}' — add to WordRegistry.languageIdBlocks"
+                if (s.id !in range)
+                    "Set ${s.id} '${s.name}' (${s.languagePair}): must be in [${range.first}..${range.last}]"
                 else null
             }
         )

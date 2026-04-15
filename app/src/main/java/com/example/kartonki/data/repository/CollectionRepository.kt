@@ -1,8 +1,8 @@
 package com.example.kartonki.data.repository
 
 import com.example.kartonki.data.PresetDecksVersion
-import com.example.kartonki.data.WordDataEnglish
 import com.example.kartonki.data.WordLoader
+import com.example.kartonki.data.WordRegistry
 import com.example.kartonki.data.db.dao.CollectionDao
 import com.example.kartonki.data.db.dao.DeckDao
 import com.example.kartonki.data.db.dao.WordDao
@@ -33,7 +33,7 @@ class CollectionRepository @Inject constructor(
      * (weighted toward lower rarities), and creates preset decks.
      *
      * On subsequent launches after an app update: if [PresetDecksVersion.CURRENT] doesn't
-     * match the stored version, deletes all preset decks, recreates them from [WordDataEnglish],
+     * match the stored version, deletes all preset decks, recreates them from [WordRegistry],
      * and ensures any new preset words are added to the collection.
      *
      * PvE uses wordDao directly and does not require collection ownership.
@@ -54,8 +54,13 @@ class CollectionRepository @Inject constructor(
         if (isFirstRun) {
             // Words referenced by preset decks are always guaranteed so deck editors
             // show the correct cards immediately on first launch.
-            val presetOriginals = WordDataEnglish.prebuiltDecks.flatMap { it.wordOriginals }.toSet()
-            val presetWordEntities = presetOriginals.mapNotNull { wordDao.getWordByOriginal(it) }
+            // Each lookup uses languagePair so originals that collide across languages
+            // (impossible today, prevented in future) always resolve to the right word.
+            val presetWordEntities = WordRegistry.allPrebuiltDecks.flatMap { deck ->
+                deck.wordOriginals.mapNotNull { original ->
+                    wordDao.getWordByOriginalAndLanguage(original, deck.languagePair)
+                }
+            }.distinctBy { it.id }
             val presetIds = presetWordEntities.map { it.id }.toSet()
 
             // The default PvP card set is deterministic — same words for every user.
@@ -75,7 +80,7 @@ class CollectionRepository @Inject constructor(
     }
 
     /**
-     * Deletes all existing preset decks, recreates them from [WordDataEnglish],
+     * Deletes all existing preset decks, recreates them from [WordRegistry.allPrebuiltDecks],
      * and ensures the collection contains all words those decks reference.
      */
     private suspend fun migratePresetDecks() {
@@ -83,13 +88,13 @@ class CollectionRepository @Inject constructor(
         deckDao.clearAllPresetDeckCards()
         deckDao.deleteAllPresetDecks()
 
-        // Recreate from current WordDataEnglish
-        for (deckSeed in WordDataEnglish.prebuiltDecks) {
+        // Recreate from all language sources via WordRegistry
+        for (deckSeed in WordRegistry.allPrebuiltDecks) {
             val deckId = deckDao.insertDeck(
                 DeckEntity(name = deckSeed.name, level = deckSeed.level, isPreset = true, languagePair = deckSeed.languagePair)
             )
             for (original in deckSeed.wordOriginals) {
-                val word = wordDao.getWordByOriginal(original) ?: continue
+                val word = wordDao.getWordByOriginalAndLanguage(original, deckSeed.languagePair) ?: continue
                 deckDao.addCardToDeck(DeckCardCrossRef(deckId = deckId, wordId = word.id))
                 // Ensure this word is in the collection (new preset words added in updates)
                 collectionDao.insertAll(listOf(CollectionEntity(word.id)))

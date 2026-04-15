@@ -41,6 +41,9 @@ interface WordDao {
     @Query("SELECT * FROM words WHERE original = :original LIMIT 1")
     suspend fun getWordByOriginal(original: String): WordEntity?
 
+    @Query("SELECT * FROM words WHERE original = :original AND languagePair = :languagePair LIMIT 1")
+    suspend fun getWordByOriginalAndLanguage(original: String, languagePair: String): WordEntity?
+
     @Query("SELECT * FROM words ORDER BY rarity DESC, original ASC")
     suspend fun getAllWordsOnce(): List<WordEntity>
 
