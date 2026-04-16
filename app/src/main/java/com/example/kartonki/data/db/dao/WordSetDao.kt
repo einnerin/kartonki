@@ -64,6 +64,6 @@ interface WordSetDao {
     @Query("DELETE FROM word_sets WHERE id IN (:ids)")
     suspend fun deleteSetsById(ids: List<Long>)
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertSets(sets: List<WordSetEntity>)
 }

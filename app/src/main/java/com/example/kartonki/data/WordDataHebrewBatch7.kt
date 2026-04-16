@@ -408,12 +408,12 @@ object WordDataHebrewBatch7 {
         ),
         WordEntity(
             id = 104518, setId = 1045, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hospital_disease", transliteration = "sukheret",
-            original = "סֻכֶּרֶת", translation = "сахарный диабет",
-            definition = "מַחֲלָה כְּרוֹנִית שֶׁבָּהּ הַגּוּף אֵינוֹ מְסֻגָּל לִשְׁלֹּט בְּרָמַת הַסֻּכָּר בַּדָּם.",
-            definitionNative = "Хроническое заболевание, при котором организм не может контролировать уровень сахара в крови.",
-            example = "הוּא מְטֻפָּל בְּסֻכֶּרֶת מֵגִיל עֶשְׂרִים.",
-            exampleNative = "Он лечится от סֻכֶּרֶת с двадцати лет.",
+            pos = "noun", semanticGroup = "hospital_procedure", transliteration = "anestezya",
+            original = "אָנֶסְתֶּזְיָה", translation = "анестезия",
+            definition = "הַרְדָּמָה רְפוּאִית לְמַנִּיעַת כְּאֵב בְּמַהֲלַךְ נִיתּוּחַ אוֹ הַלְיָכָה רְפוּאִית.",
+            definitionNative = "Медицинское обезболивание для предотвращения боли во время операции или процедуры.",
+            example = "הָרוֹפֵא הִסְבִּיר אֶת סוּגֵי הָאָנֶסְתֶּזְיָה לִפְנֵי הַנִּיתּוּחַ.",
+            exampleNative = "Врач объяснил виды אָנֶסְתֶּזְיָה перед операцией.",
         ),
         WordEntity(
             id = 104519, setId = 1045, languagePair = "he-ru", rarity = "RARE",

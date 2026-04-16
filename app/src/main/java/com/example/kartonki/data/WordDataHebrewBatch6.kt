@@ -33,12 +33,12 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104102, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "skhiya",
-            original = "שְׂחִיָּה", translation = "плавание",
-            definition = "פְּעֻלַּת תְּנוּעָה בְּמַיִם לְשֵׁם פַּנַּאי אוֹ תַּחֲרוּת.",
-            definitionNative = "Передвижение в воде для отдыха или соревнований.",
-            example = "שְׂחִיָּה בַּבְּרֵיכָה עוֹזֶרֶת לְחַזֵּק אֶת הַשְּׂרִירִים.",
-            exampleNative = "שְׂחִיָּה в бассейне помогает укрепить мышцы.",
+            pos = "noun", semanticGroup = "sport_basics", transliteration = "metikha",
+            original = "מְתִיחָה", translation = "растяжка",
+            definition = "תְּנוּעָה שֶׁמַּאֲרִיכָה שְׁרִירִים לְפְנֵי אוֹ אַחֲרֵי אִמּוּן.",
+            definitionNative = "Движение, растягивающее мышцы до или после тренировки.",
+            example = "חָשׁוּב לַעֲשׂוֹת מְתִיחוֹת לִפְנֵי הַרִיצָה כְּדֵי לְמַנּוֹעַ פְּצִיעוֹת.",
+            exampleNative = "Важно делать מְתִיחוֹת перед бегом, чтобы избежать травм.",
         ),
         WordEntity(
             id = 104103, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
