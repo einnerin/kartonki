@@ -421,11 +421,11 @@ object WordDataEnglishBatch4 {
             exampleNative = "Отправил заявку на vacancy в трёх компаниях.",
             rarity = "UNCOMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_basics"),
 
-        WordEntity(id = 25507, original = "salary", transliteration = "[ˈsæləri]", translation = "зарплата (оклад)",
-            definition = "A fixed regular payment for employment, usually monthly.",
-            definitionNative = "Фиксированная регулярная выплата за работу, обычно ежемесячная.",
-            example = "What is the expected salary range for this position?",
-            exampleNative = "Salary на этой должности — от 80 до 100 тысяч рублей.",
+        WordEntity(id = 25507, original = "wage", transliteration = "[weɪdʒ]", translation = "почасовая оплата; заработок",
+            definition = "A fixed regular payment for work, typically calculated by the hour or day.",
+            definitionNative = "Фиксированная оплата за труд, обычно рассчитываемая по часам или дням.",
+            example = "The minimum wage was raised to protect low-income workers.",
+            exampleNative = "Он получает hourly wage, а не оклад — каждый час на счету.",
             rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_basics"),
 
         WordEntity(id = 25508, original = "qualification", transliteration = "[ˌkwɒlɪfɪˈkeɪʃən]", translation = "квалификация, диплом",
@@ -484,11 +484,11 @@ object WordDataEnglishBatch4 {
             exampleNative = "Расскажи на interview о примере успешного teamwork.",
             rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_qualities"),
 
-        WordEntity(id = 25516, original = "deadline", transliteration = "[ˈdedlaɪn]", translation = "дедлайн, крайний срок",
-            definition = "A time or date by which a task must be completed.",
-            definitionNative = "Время или дата, к которым задача должна быть выполнена.",
-            example = "Can you meet tight deadlines and work under pressure?",
-            exampleNative = "Умение работать в условиях жёстких deadline — важный навык.",
+        WordEntity(id = 25516, original = "workload", transliteration = "[ˈwɜːrkloʊd]", translation = "объём работы; нагрузка",
+            definition = "The amount of work a person is expected to do in a period of time.",
+            definitionNative = "Количество работы, которое человек должен выполнить за определённый период.",
+            example = "My workload doubled after two colleagues left the company.",
+            exampleNative = "Тяжёлый workload — главная причина выгорания на работе.",
             rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_basics"),
 
         WordEntity(id = 25517, original = "negotiate", transliteration = "[nɪˈɡoʊʃieɪt]", translation = "договариваться, вести переговоры",

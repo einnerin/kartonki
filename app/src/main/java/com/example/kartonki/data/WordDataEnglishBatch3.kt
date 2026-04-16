@@ -400,11 +400,11 @@ object WordDataEnglishBatch3 {
             exampleNative = "Пройди check-in онлайн, чтобы сэкономить время в аэропорту.",
             rarity = "COMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_procedures"),
 
-        WordEntity(id = 25204, original = "luggage", transliteration = "[ˈlʌɡɪdʒ]", translation = "багаж",
-            definition = "Bags and suitcases taken on a journey.",
-            definitionNative = "Сумки и чемоданы, взятые в поездку.",
-            example = "My luggage was too heavy so I had to pay extra.",
-            exampleNative = "Сдай luggage на стойке регистрации.",
+        WordEntity(id = 25204, original = "carousel", transliteration = "[ˌkærəˈsel]", translation = "багажная карусель",
+            definition = "A rotating conveyor belt at an airport that delivers checked baggage to passengers.",
+            definitionNative = "Вращающийся конвейер в аэропорту, доставляющий зарегистрированный багаж пассажирам.",
+            example = "We waited twenty minutes at the carousel for our bags.",
+            exampleNative = "Жди чемодан у carousel — номер указан на табло.",
             rarity = "COMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_basics"),
 
         WordEntity(id = 25205, original = "carry-on", transliteration = "[ˈkæri ɒn]", translation = "ручная кладь",
