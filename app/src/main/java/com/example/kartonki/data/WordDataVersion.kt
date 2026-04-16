@@ -12,5 +12,5 @@ package com.example.kartonki.data
  * upsert of all sets and words — no SQL migrations, no sentinel checks needed.
  */
 object WordDataVersion {
-    const val CURRENT = 70
+    const val CURRENT = 71
 }
