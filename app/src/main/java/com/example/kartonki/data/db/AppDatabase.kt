@@ -18,6 +18,7 @@ import com.example.kartonki.data.db.entity.DeckCardCrossRef
 import com.example.kartonki.data.db.entity.DeckEntity
 import com.example.kartonki.data.db.entity.ProgressEntity
 import com.example.kartonki.data.db.entity.PvpMatchEntity
+import com.example.kartonki.data.db.entity.RetainedFavoriteEntity
 import com.example.kartonki.data.db.entity.StudyStreakEntity
 import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.db.entity.WordSetEntity
@@ -33,8 +34,9 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         AchievementEntity::class,
         StudyStreakEntity::class,
         PvpMatchEntity::class,
+        RetainedFavoriteEntity::class,
     ],
-    version = 34,
+    version = 35,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -294,6 +296,22 @@ abstract class AppDatabase : RoomDatabase() {
          * All word-referencing tables are cleared; WordLoader re-inserts fresh data
          * on the next launch (triggered by WordDataVersion bump).
          */
+        /**
+         * Creates the [retained_favorites] helper table used to survive word_set wipes.
+         *
+         * CONVENTION FOR FUTURE MIGRATIONS that delete word_sets:
+         *   1. Before deleting: INSERT OR REPLACE INTO retained_favorites SELECT id FROM word_sets WHERE isFavorite = 1
+         *   2. Proceed with the delete as usual.
+         *   WordLoader.doLoad() will restore isFavorite and clear the table automatically.
+         */
+        val MIGRATION_34_35 = object : Migration(34, 35) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    "CREATE TABLE IF NOT EXISTS retained_favorites (setId INTEGER NOT NULL, PRIMARY KEY(setId))"
+                )
+            }
+        }
+
         val MIGRATION_33_34 = object : Migration(33, 34) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("DELETE FROM progress")

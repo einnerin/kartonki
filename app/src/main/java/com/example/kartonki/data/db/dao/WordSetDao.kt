@@ -71,4 +71,15 @@ interface WordSetDao {
     /** Updates only the seed-controlled fields, leaving user data (isFavorite) intact. */
     @Query("UPDATE word_sets SET name = :name, description = :description, orderIndex = :orderIndex WHERE id = :id")
     suspend fun updateSetMetadata(id: Long, name: String, description: String, orderIndex: Int)
+
+    /**
+     * Restores isFavorite=1 for any set whose ID was saved in retained_favorites.
+     * Called by WordLoader after re-seeding sets. No-op if the table is empty.
+     */
+    @Query("UPDATE word_sets SET isFavorite = 1 WHERE id IN (SELECT setId FROM retained_favorites)")
+    suspend fun restoreFavoritesFromRetained()
+
+    /** Clears the retained_favorites table after a restore. */
+    @Query("DELETE FROM retained_favorites")
+    suspend fun clearRetainedFavorites()
 }

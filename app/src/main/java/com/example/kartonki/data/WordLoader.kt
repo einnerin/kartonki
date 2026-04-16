@@ -53,6 +53,11 @@ class WordLoader @Inject constructor(
             wordSetDao.updateSetMetadata(set.id, set.name, set.description, set.orderIndex)
         }
 
+        // Restore any isFavorite flags that were saved before a migration wiped word_sets.
+        // No-op if retained_favorites is empty (the normal case).
+        wordSetDao.restoreFavoritesFromRetained()
+        wordSetDao.clearRetainedFavorites()
+
         val allWords = WordRegistry.allWords
 
         val pvpOriginals = buildDefaultPvpOriginals(allWords)

@@ -6,11 +6,19 @@
 - `data/db/dao/` — все DAO
 
 ## Текущая версия БД
-`version = 34` (в аннотации `@Database`)
+`version = 35` (в аннотации `@Database`)
 
 ## Таблицы
 `words`, `word_sets`, `collection`, `decks`, `deck_cards`, `progress`,
-`achievements`, `study_streaks`, `pvp_matches`
+`achievements`, `study_streaks`, `pvp_matches`, `retained_favorites`
+
+## Защита избранных наборов (isFavorite)
+`retained_favorites` — вспомогательная таблица (setId INTEGER PK).
+**Если миграция удаляет `word_sets`**, перед удалением обязательно:
+```sql
+INSERT OR REPLACE INTO retained_favorites SELECT id FROM word_sets WHERE isFavorite = 1
+```
+WordLoader автоматически восстановит `isFavorite = 1` и очистит таблицу при следующем запуске.
 
 ## Чеклист при изменении схемы
 
