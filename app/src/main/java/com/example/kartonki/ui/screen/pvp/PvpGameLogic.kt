@@ -97,7 +97,7 @@ object PvpGameLogic {
     }
 
     fun translationQuiz(word: Word, others: List<Word>): PvpQuiz {
-        val wrongs = others.take(3).map { it.translation }
+        val wrongs = others.filter { it.translation != word.translation }.take(3).map { it.translation }
         return PvpQuiz(
             playedCard = word,
             question = word.original,
