@@ -19,7 +19,7 @@ object WordDataHebrewTech {
 
         // ──────────────────────────────────────────────────────
         // Set 1019 — Смартфон и гаджеты (A2/B1)
-        // 8 COMMON + 8 UNCOMMON + 4 RARE = 20 слов
+        // 9 COMMON + 11 UNCOMMON + 5 RARE = 25 слов
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -222,10 +222,60 @@ object WordDataHebrewTech {
             example = "ביקשתי מהעוֹזֵר קוֹלִי להגדיר תזכורת.",
             exampleNative = "Я попросил עוֹזֵר קוֹלִי установить напоминание.",
         ),
+        WordEntity(
+            id = 101921, setId = 1019, languagePair = "he-ru", rarity = "COMMON",
+            pos = "noun", semanticGroup = "gadgets",
+            transliteration = "aplicatzya",
+            original = "אַפְּלִיקַצְיָה", translation = "приложение (app)",
+            definition = "תוכנה המותקנת על מכשיר נייד לביצוע פעולה מסוימת.",
+            definitionNative = "Программа, устанавливаемая на мобильное устройство для выполнения определённой задачи.",
+            example = "הורדתי אַפְּלִיקַצְיָה חדשה לניהול הזמן.",
+            exampleNative = "Я скачал новую אַפְּלִיקַצְיָה для управления временем.",
+        ),
+        WordEntity(
+            id = 101922, setId = 1019, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gadgets",
+            transliteration = "kod QR",
+            original = "קוֹד QR", translation = "QR-код",
+            definition = "קוד דו-מימדי הנסרק על ידי מצלמת הטלפון לפתיחת קישור.",
+            definitionNative = "Двумерный код, сканируемый камерой телефона для открытия ссылки.",
+            example = "סרקתי אֶת הַקּוֹד QR בכניסה למסעדה.",
+            exampleNative = "Я отсканировал קוֹד QR у входа в ресторан.",
+        ),
+        WordEntity(
+            id = 101923, setId = 1019, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gadgets",
+            transliteration = "jipias",
+            original = "ג'יפיאס", translation = "GPS / навигатор",
+            definition = "מערכת ניווט המשתמשת בלוויינים לקביעת מיקום.",
+            definitionNative = "Навигационная система, использующая спутники для определения местоположения.",
+            example = "הַג'יפיאס ניווט אותי לכתובת הנכונה.",
+            exampleNative = "ג'יפיאס провёл меня по правильному адресу.",
+        ),
+        WordEntity(
+            id = 101924, setId = 1019, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "gadgets",
+            transliteration = "adakun",
+            original = "עֲדָכּוּן", translation = "обновление (апдейт)",
+            definition = "גרסה חדשה של תוכנה הכוללת תיקונים ושיפורים.",
+            definitionNative = "Новая версия программного обеспечения, включающая исправления и улучшения.",
+            example = "קיבלתי הודעה על עֲדָכּוּן חדש לאפליקציה.",
+            exampleNative = "Я получил уведомление о новом עֲדָכּוּן для приложения.",
+        ),
+        WordEntity(
+            id = 101925, setId = 1019, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gadgets",
+            transliteration = "reshet selularit",
+            original = "רֶשֶׁת סֶלוּלָרִית", translation = "сотовая сеть",
+            definition = "תשתית תקשורת אלחוטית המחברת מכשירים ניידים דרך תחנות בסיס.",
+            definitionNative = "Беспроводная коммуникационная инфраструктура, соединяющая мобильные устройства через базовые станции.",
+            example = "בַּרֶּשֶׁת סֶלוּלָרִית 5G מהירות ההורדה גבוהה מאוד.",
+            exampleNative = "В רֶשֶׁת סֶלוּלָרִית 5G скорость загрузки очень высокая.",
+        ),
 
         // ──────────────────────────────────────────────────────
         // Set 1020 — Веб-разработка (B1/B2)
-        // 2 COMMON + 7 UNCOMMON + 7 RARE + 3 EPIC + 1 LEGENDARY = 20 слов
+        // 2 COMMON + 9 UNCOMMON + 10 RARE + 3 EPIC + 1 LEGENDARY = 25 слов
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -428,10 +478,60 @@ object WordDataHebrewTech {
             example = "בנינו את הפונקציה בארכיטקטורה חַסְרַת שֶׁרֶת.",
             exampleNative = "Мы построили функцию в архитектуре חַסְרַת שֶׁרֶת.",
         ),
+        WordEntity(
+            id = 102021, setId = 1020, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "webdev",
+            transliteration = "matmon",
+            original = "מַטְמוּן", translation = "кэш",
+            definition = "אחסון זמני של נתונים לשיפור מהירות הגישה.",
+            definitionNative = "Временное хранение данных для ускорения доступа к ним.",
+            example = "הדפדפן שמר את הדף הַמַּטְמוּן כדי לא לטעון אותו שוב.",
+            exampleNative = "Браузер сохранил страницу в מַטְמוּן, чтобы не загружать её повторно.",
+        ),
+        WordEntity(
+            id = 102022, setId = 1020, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "webdev",
+            transliteration = "girsa",
+            original = "גִּרְסָּה", translation = "версия",
+            definition = "מספר המזהה מהדורה ספציפית של תוכנה.",
+            definitionNative = "Номер, идентифицирующий конкретный выпуск программного обеспечения.",
+            example = "אנחנו עדיין בְּגִרְסָּה 2.0 — לא עדכנו.",
+            exampleNative = "Мы всё ещё на גִּרְסָּה 2.0 — не обновляли.",
+        ),
+        WordEntity(
+            id = 102023, setId = 1020, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "webdev",
+            transliteration = "imut",
+            original = "אִימוּת", translation = "аутентификация",
+            definition = "תהליך אימות זהות המשתמש לפני מתן גישה למערכת.",
+            definitionNative = "Процесс проверки личности пользователя перед предоставлением доступа к системе.",
+            example = "אִימוּת דּוּ-שַׁלְבִּי מגביר את האבטחה.",
+            exampleNative = "Двухфакторный אִימוּת повышает безопасность.",
+        ),
+        WordEntity(
+            id = 102024, setId = 1020, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "webdev",
+            transliteration = "harshaa",
+            original = "הַרְשָׁאָה", translation = "авторизация",
+            definition = "קביעה מה מותר למשתמש מאומת לעשות במערכת.",
+            definitionNative = "Определение того, что аутентифицированному пользователю разрешено делать в системе.",
+            example = "לְמַנְהֵל יש הַרְשָׁאָה לשנות הגדרות שרת.",
+            exampleNative = "У администратора есть הַרְשָׁאָה изменять настройки сервера.",
+        ),
+        WordEntity(
+            id = 102025, setId = 1020, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "webdev",
+            transliteration = "masgheret",
+            original = "מַסְגֶּרֶת", translation = "фреймворк",
+            definition = "מערכת כלים ומוסכמות לפיתוח אפליקציות בצורה מובנית.",
+            definitionNative = "Набор инструментов и соглашений для структурированной разработки приложений.",
+            example = "React הִיא מַסְגֶּרֶת פופולרית לבניית ממשקי משתמש.",
+            exampleNative = "React — популярная מַסְגֶּרֶת для создания пользовательских интерфейсов.",
+        ),
 
         // ──────────────────────────────────────────────────────
         // Set 1021 — Кибербезопасность (B2/C1)
-        // 4 UNCOMMON + 8 RARE + 6 EPIC + 2 LEGENDARY = 20 слов
+        // 6 UNCOMMON + 10 RARE + 7 EPIC + 2 LEGENDARY = 25 слов
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -633,6 +733,56 @@ object WordDataHebrewTech {
             definitionNative = "Симуляция реальной кибератаки внутренними специалистами по безопасности.",
             example = "תַּרְגִּיל צֶוֶות אָדֹם חשף פרצות קריטיות במערכת.",
             exampleNative = "תַּרְגִּיל צֶוֶות אָדֹם выявил критические бреши в системе.",
+        ),
+        WordEntity(
+            id = 102121, setId = 1021, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "security",
+            transliteration = "chomat esh",
+            original = "חֹמַת אֵשׁ", translation = "брандмауэр / файрвол",
+            definition = "מערכת אבטחה המנטרת ומסננת תעבורת רשת נכנסת ויוצאת.",
+            definitionNative = "Система безопасности, контролирующая и фильтрующая входящий и исходящий сетевой трафик.",
+            example = "הַחֹמַת אֵשׁ חסמה את הניסיון הגישה החשוד.",
+            exampleNative = "חֹמַת אֵשׁ заблокировал подозрительную попытку доступа.",
+        ),
+        WordEntity(
+            id = 102122, setId = 1021, languagePair = "he-ru", rarity = "UNCOMMON",
+            pos = "noun", semanticGroup = "security",
+            transliteration = "manhal sismayot",
+            original = "מַנְהַל סִיסְמָאוֹת", translation = "менеджер паролей",
+            definition = "תוכנה לאחסון וניהול מאובטח של סיסמאות.",
+            definitionNative = "Программа для безопасного хранения и управления паролями.",
+            example = "השתמשתי בְּמַנְהַל סִיסְמָאוֹת ליצירת סיסמה חזקה.",
+            exampleNative = "Я использовал מַנְהַל סִיסְמָאוֹת для создания надёжного пароля.",
+        ),
+        WordEntity(
+            id = 102123, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "security",
+            transliteration = "imut du-shalvi",
+            original = "אִימוּת דּוּ-שַׁלְבִּי", translation = "двухфакторная аутентификация",
+            definition = "שיטת אימות הדורשת שני אמצעי זיהוי שונים לכניסה למערכת.",
+            definitionNative = "Метод аутентификации, требующий двух различных способов идентификации для входа в систему.",
+            example = "הפעלתי אִימוּת דּוּ-שַׁלְבִּי בכל החשבונות שלי.",
+            exampleNative = "Я включил אִימוּת דּוּ-שַׁלְבִּי на всех своих аккаунтах.",
+        ),
+        WordEntity(
+            id = 102124, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "security",
+            transliteration = "bakarat gisha",
+            original = "בַּקָּרַת גִּישָׁה", translation = "контроль доступа",
+            definition = "מנגנון המגדיר מי רשאי לגשת לאילו משאבי מערכת.",
+            definitionNative = "Механизм, определяющий, кому разрешён доступ к тем или иным ресурсам системы.",
+            example = "בַּקָּרַת גִּישָׁה מנעה ממשתמשים רגילים לשנות קבצי מערכת.",
+            exampleNative = "בַּקָּרַת גִּישָׁה запретил обычным пользователям изменять системные файлы.",
+        ),
+        WordEntity(
+            id = 102125, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
+            pos = "noun", semanticGroup = "security",
+            transliteration = "bedikat chulshot",
+            original = "בְּדִיקַת חוּלְשׁוֹת", translation = "сканирование уязвимостей",
+            definition = "תהליך אוטומטי לזיהוי פגמי אבטחה במערכת לפני שמנצלים אותם.",
+            definitionNative = "Автоматизированный процесс выявления уязвимостей в системе до того, как ими воспользуются.",
+            example = "בְּדִיקַת חוּלְשׁוֹת גילתה עשרים פגמים קריטיים.",
+            exampleNative = "בְּדִיקַת חוּלְשׁוֹת обнаружило двадцать критических уязвимостей.",
         ),
     )
 }
