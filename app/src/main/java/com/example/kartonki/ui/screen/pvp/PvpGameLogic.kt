@@ -58,13 +58,18 @@ object PvpGameLogic {
         val others = pickDistractors(word, allWords)
         if (others.size < 3) return null
 
+        // Exclude translation if another word in the pool shares the same original —
+        // that would produce two correct answers in a multiple-choice question.
+        val hasAmbiguousOriginal = allWords.any { it.id != word.id && it.original.equals(word.original, ignoreCase = true) }
         val candidates = buildList {
-            add("translation")
+            if (!hasAmbiguousOriginal) add("translation")
             if (word.definition != null && others.count { it.definition != null } >= 3) add("definition")
             if (word.example != null) add("fill_blank")
         }
 
-        return when (candidates.random()) {
+        // If no unambiguous type is available, fall back to translation (best we can do).
+        val chosenType = if (candidates.isEmpty()) "translation" else candidates.random()
+        return when (chosenType) {
             "definition" -> {
                 val wrongs = others.filter { it.definition != null }.take(3).map { it.definition!! }
                 if (wrongs.size < 3) return translationQuiz(word, others)
