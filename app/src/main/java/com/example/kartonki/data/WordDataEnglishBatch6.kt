@@ -335,11 +335,11 @@ object WordDataEnglishBatch6 {
             exampleNative = "Loop in Машу — она отвечает за этот клиент.",
             rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "verb", semanticGroup = "email_basics"),
 
-        WordEntity(id = 26020, original = "liaise", transliteration = "[liˈeɪz]", translation = "согласовывать действия; поддерживать связь",
-            definition = "To communicate and cooperate with another person or group to achieve a common goal.",
-            definitionNative = "Общаться и взаимодействовать с другим человеком или группой для достижения общей цели.",
-            example = "Please liaise with the IT team to set up the new software.",
-            exampleNative = "Буду liaise с юридическим отделом по вопросу контракта.",
+        WordEntity(id = 26020, original = "redline", transliteration = "[ˈredlaɪn]", translation = "редактировать с отслеживанием правок",
+            definition = "To mark up a document with corrections or changes, typically shown in red.",
+            definitionNative = "Вносить правки в документ с их отслеживанием, обычно отмеченные красным цветом.",
+            example = "The lawyer sent back the contract with redlines on every page.",
+            exampleNative = "Юрист вернул договор с redline — правок было очень много.",
             rarity = "RARE", setId = 260, languagePair = "en-ru", pos = "verb", semanticGroup = "business_communication"),
 
         WordEntity(id = 26021, original = "boilerplate", transliteration = "[ˈbɔɪlərpleɪt]", translation = "шаблонный текст, стандартная формулировка",

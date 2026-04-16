@@ -216,8 +216,11 @@ class SeedDataAuditTest {
      * This guarantees IDs are unique as long as set IDs are unique.
      */
     @Test fun `word IDs follow the setId x100 formula`() {
+        // Achievement reward words use setId=0 as a sentinel but have manually-assigned IDs;
+        // they are exempt from the formula check.
         fail("Word IDs outside expected setId×100 range",
             WordRegistry.allWords.mapNotNull { w ->
+                if (w.semanticGroup == "achievement_reward") return@mapNotNull null
                 val base = w.setId * 100
                 if (w.id < base + 1 || w.id > base + 99)
                     "word '${w.original}' (set ${w.setId}): id=${w.id} not in [${base+1}..${base+99}]"
