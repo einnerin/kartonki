@@ -81,6 +81,9 @@ class CollectionRepository @Inject constructor(
         val storedWordVersionForDecks = prefs.getPresetDecksWordVersion()
         if (storedDecksVersion != PresetDecksVersion.CURRENT ||
             storedWordVersionForDecks != WordDataVersion.CURRENT) {
+            // Clean up orphaned deck_cards in user decks first (caused by duplicate word
+            // replacements via OnConflictStrategy.REPLACE in previous word data versions).
+            deckDao.deleteOrphanedDeckCards()
             migratePresetDecks()
             prefs.setPresetDecksVersion(PresetDecksVersion.CURRENT)
             prefs.setPresetDecksWordVersion(WordDataVersion.CURRENT)

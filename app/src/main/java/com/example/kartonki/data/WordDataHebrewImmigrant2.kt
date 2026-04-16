@@ -714,12 +714,12 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102916, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pharmacy", transliteration = "mishkafayim",
-            original = "מִשְׁקָפַיִם", translation = "очки",
-            definition = "כֵּלִי לְתִיקּוּן רְאִיָּה הַמּוֹרְכָּב עַל הָאַף וְהָאֹזְנַיִם.",
-            definitionNative = "Оптический прибор для коррекции зрения, надеваемый на нос и уши.",
-            example = "צְרִיךְ לָלֶכֶת לָאוֹפְּטִיקַאי לְחַדֵּשׁ מִשְׁקָפַיִם.",
-            exampleNative = "Нужно сходить к оптику за новыми מִשְׁקָפַיִם.",
+            pos = "noun", semanticGroup = "pharmacy", transliteration = "alergia",
+            original = "אֶלֶרְגִּיָּה", translation = "аллергия",
+            definition = "תְּגוּבָה יְתֵרָה שֶׁל הַגּוּף לְחוֹמֶר מְסוּיָּם.",
+            definitionNative = "Чрезмерная реакция организма на определённое вещество.",
+            example = "יֵשׁ לִי אֶלֶרְגִּיָּה לְאָבְקַת פְּרָחִים.",
+            exampleNative = "У меня אֶלֶרְגִּיָּה на пыльцу цветов.",
         ),
         WordEntity(
             id = 102917, setId = 1029, languagePair = "he-ru", rarity = "RARE",

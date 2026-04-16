@@ -714,12 +714,12 @@ object WordDataHebrewImmigrant3 {
         ),
         WordEntity(
             id = 103316, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "driving", transliteration = "khagurat bitakhon",
-            original = "חֲגוֹרַת בִּטָּחוֹן", translation = "ремень безопасности",
-            definition = "רְצוּעַת בִּטָּחוֹן בָּרֶכֶב הַמַּגֶּנֶת עַל הַנּוֹסֵעַ בְּתְּאוּנָה.",
-            definitionNative = "Защитный ремень в автомобиле, предохраняющий пассажира при аварии.",
-            example = "חוּק מְחַיֵּב לִקְשׁוֹר חֲגוֹרַת בִּטָּחוֹן לְכָל הַנּוֹסְעִים.",
-            exampleNative = "Закон обязывает пристегнуть חֲגוֹרַת בִּטָּחוֹן всех пассажиров.",
+            pos = "noun", semanticGroup = "driving", transliteration = "karit avir",
+            original = "כַּרִּית אֲוִיר", translation = "подушка безопасности",
+            definition = "כַּרִּית מִתְנַפַּחַת בָּרֶכֶב הַמַּגֶּנֶת עַל הַנּוֹסֵעַ בְּהִתְנַגְּשׁוּת.",
+            definitionNative = "Надувная подушка в автомобиле, защищающая пассажира при столкновении.",
+            example = "כַּרִּית הָאֲוִיר נִפְתְּחָה בְּרֶגַע הַהִתְנַגְּשׁוּת.",
+            exampleNative = "כַּרִּית אֲוִיר раскрылась в момент столкновения.",
         ),
         WordEntity(
             id = 103317, setId = 1033, languagePair = "he-ru", rarity = "RARE",

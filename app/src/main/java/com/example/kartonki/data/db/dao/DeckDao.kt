@@ -86,4 +86,12 @@ interface DeckDao {
     /** Deletes all preset deck rows (call after clearAllPresetDeckCards). */
     @Query("DELETE FROM decks WHERE isPreset = 1")
     suspend fun deleteAllPresetDecks()
+
+    /**
+     * Removes deck_cards entries whose wordId no longer exists in the words table.
+     * Call this after a word data upsert to fix any orphans left by OnConflictStrategy.REPLACE
+     * (which deletes the old row when a duplicate original is loaded with a new ID).
+     */
+    @Query("DELETE FROM deck_cards WHERE wordId NOT IN (SELECT id FROM words)")
+    suspend fun deleteOrphanedDeckCards()
 }
