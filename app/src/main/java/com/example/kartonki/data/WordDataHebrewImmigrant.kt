@@ -12,8 +12,8 @@ object WordDataHebrewImmigrant {
     val sets = listOf(
         WordSetEntity(id = 1022, name = "Документы и оформление",      description = "Удостоверения, бланки и регистрация A2",   languagePair = "he-ru", orderIndex = 22),
         WordSetEntity(id = 1023, name = "Алия и абсорбция",            description = "Льготы и помощь новым репатриантам A2/B1", languagePair = "he-ru", orderIndex = 23),
-        WordSetEntity(id = 1024, name = "Банк: открытие счёта",        description = "Банковская лексика для новичков A2/B1",     languagePair = "he-ru", orderIndex = 24),
-        WordSetEntity(id = 1025, name = "Аэропорт Бен-Гурион",        description = "Перелёт, таможня, прилёт и вылет A2",      languagePair = "he-ru", orderIndex = 25),
+        WordSetEntity(id = 1024, name = "Банк: основы",                description = "Банковская лексика для новичков A2/B1",     languagePair = "he-ru", orderIndex = 24),
+        WordSetEntity(id = 1025, name = "Аэропорт",                   description = "Перелёт, таможня, прилёт и вылет A2",      languagePair = "he-ru", orderIndex = 25),
     )
 
     val words = listOf(

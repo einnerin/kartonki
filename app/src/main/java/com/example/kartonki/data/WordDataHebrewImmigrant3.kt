@@ -13,7 +13,7 @@ object WordDataHebrewImmigrant3 {
         WordSetEntity(id = 1030, name = "Поиск работы",             description = "Вакансии, договор, зарплата, отпуск B1",     languagePair = "he-ru", orderIndex = 30),
         WordSetEntity(id = 1031, name = "Детский сад и школа",      description = "Запись, уроки, кружки, собрания A2/B1",     languagePair = "he-ru", orderIndex = 31),
         WordSetEntity(id = 1032, name = "Почта и посылки",          description = "Марки, конверты, трекинг, доставка A2",     languagePair = "he-ru", orderIndex = 32),
-        WordSetEntity(id = 1033, name = "Вождение и транспорт",     description = "Права, машина, топливо, штраф A2/B1",      languagePair = "he-ru", orderIndex = 33),
+        WordSetEntity(id = 1033, name = "Вождение",                 description = "Права, машина, топливо, штраф A2/B1",      languagePair = "he-ru", orderIndex = 33),
     )
 
     val words = listOf(

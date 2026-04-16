@@ -15,7 +15,7 @@ object WordDataHebrewMore {
         WordSetEntity(id = 1010, name = "Одежда",             description = "Одежда и аксессуары A2",            languagePair = "he-ru", orderIndex = 10),
         WordSetEntity(id = 1011, name = "Погода и природа",   description = "Климат, сезоны и природа A2/B1",   languagePair = "he-ru", orderIndex = 11),
         WordSetEntity(id = 1012, name = "Кино",               description = "Жанры, люди и термины кино B1",    languagePair = "he-ru", orderIndex = 12),
-        WordSetEntity(id = 1013, name = "Съёмочный процесс",  description = "Производство фильмов B1/B2",        languagePair = "he-ru", orderIndex = 13),
+        WordSetEntity(id = 1013, name = "Кино: углублённо",    description = "Производство фильмов B1/B2",        languagePair = "he-ru", orderIndex = 13),
     )
 
     val words = listOf(
