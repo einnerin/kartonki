@@ -26,6 +26,10 @@
 | Добавить / изменить набор слов | [`docs/claude/word-sets.md`](docs/claude/word-sets.md) |
 | Добавить достижение | [`docs/claude/achievements.md`](docs/claude/achievements.md) |
 | Архитектура, модели, фазы, зависимости | [`docs/claude/architecture.md`](docs/claude/architecture.md) |
+| Изменить схему БД / добавить миграцию | [`docs/claude/database.md`](docs/claude/database.md) |
+| Добавить новый язык (fr-ru, ar-ru и т.д.) | [`docs/claude/new-language.md`](docs/claude/new-language.md) |
+| Пресетные колоды (DeckSeed) | [`docs/claude/preset-decks.md`](docs/claude/preset-decks.md) |
+| Добавить новый экран / маршрут навигации | [`docs/claude/ui-screens.md`](docs/claude/ui-screens.md) |
 
 ## Git — после каждой задачи
 
