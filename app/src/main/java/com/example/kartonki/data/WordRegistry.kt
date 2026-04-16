@@ -55,7 +55,8 @@ object WordRegistry {
                 WordDataHebrewBatch27.sets +
                 WordDataHebrewBatch28.sets +
                 WordDataHebrewBatch29.sets +
-                WordDataHebrewBatch30.sets
+                WordDataHebrewBatch30.sets +
+                WordDataHebrewBatch31.sets
 
     val allWords: List<WordEntity>
         get() = WordDataEnglish.words + WordDataEnglishExpanded.words +
@@ -97,7 +98,8 @@ object WordRegistry {
                 WordDataHebrewBatch27.words +
                 WordDataHebrewBatch28.words +
                 WordDataHebrewBatch29.words +
-                WordDataHebrewBatch30.words
+                WordDataHebrewBatch30.words +
+                WordDataHebrewBatch31.words
 
     val allPrebuiltDecks: List<DeckSeed>
         get() = WordDataEnglish.prebuiltDecks + WordDataHebrew.prebuiltDecks
