@@ -10,9 +10,9 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch8 {
 
     val sets = listOf(
-        WordSetEntity(id = 1047, name = "קניון וחנויות",         description = "קניות, אופנה ומכירות B1",              languagePair = "he-ru", orderIndex = 47),
-        WordSetEntity(id = 1048, name = "ילדים והורות",           description = "גידול ילדים, לידה ותינוקות A2/B1",    languagePair = "he-ru", orderIndex = 48),
-        WordSetEntity(id = 1049, name = "שכונה וועד בית",         description = "שכנים, בניין וניהול שכנותי A2/B1",    languagePair = "he-ru", orderIndex = 49),
+        WordSetEntity(id = 1047, name = "Торговый центр",         description = "Покупки, мода и распродажи B1",         languagePair = "he-ru", orderIndex = 47),
+        WordSetEntity(id = 1048, name = "Дети и родительство",    description = "Воспитание детей, роды и младенцы A2/B1", languagePair = "he-ru", orderIndex = 48),
+        WordSetEntity(id = 1049, name = "Район и домовой комитет", description = "Соседи, здание и управление домом A2/B1", languagePair = "he-ru", orderIndex = 49),
     )
 
     val words = listOf(
