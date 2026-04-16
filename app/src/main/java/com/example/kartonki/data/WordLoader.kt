@@ -45,7 +45,13 @@ class WordLoader @Inject constructor(
         if (storedVersion >= WordDataVersion.CURRENT) return
 
         val allSets = WordRegistry.allSets
+        // Insert sets not yet in the DB; existing rows skipped (IGNORE).
         wordSetDao.insertSets(allSets)
+        // Sync seed-controlled metadata (name, description, orderIndex) for all sets,
+        // without touching user-owned fields like isFavorite.
+        allSets.forEach { set ->
+            wordSetDao.updateSetMetadata(set.id, set.name, set.description, set.orderIndex)
+        }
 
         val allWords = WordRegistry.allWords
 

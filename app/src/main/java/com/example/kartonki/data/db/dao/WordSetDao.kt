@@ -64,6 +64,11 @@ interface WordSetDao {
     @Query("DELETE FROM word_sets WHERE id IN (:ids)")
     suspend fun deleteSetsById(ids: List<Long>)
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    /** Inserts new sets; existing rows are left untouched (isFavorite preserved). */
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertSets(sets: List<WordSetEntity>)
+
+    /** Updates only the seed-controlled fields, leaving user data (isFavorite) intact. */
+    @Query("UPDATE word_sets SET name = :name, description = :description, orderIndex = :orderIndex WHERE id = :id")
+    suspend fun updateSetMetadata(id: Long, name: String, description: String, orderIndex: Int)
 }
