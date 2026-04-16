@@ -1,19 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-   Sample data extraction rules file; uncomment and customize as necessary.
-   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
-   for details.
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Backup and device-transfer rules for Android 12+ (API 31+).
+
+    cloud-backup   : Google Drive automatic backup (used when switching phones)
+    device-transfer: Direct phone-to-phone transfer (Android setup wizard)
+
+    What we back up:
+      - kartonki.db  : Room database — collection, progress, achievements,
+                       decks, favourite sets, streaks, PvP history
+      - user_prefs   : SharedPreferences — username, avatar, language pair,
+                       quiz settings, problem-words settings
 -->
 <data-extraction-rules>
+
     <cloud-backup>
-        <!-- TODO: Use <include> and <exclude> to control what is backed up.
-        <include .../>
-        <exclude .../>
-        -->
+        <include domain="database"   path="kartonki.db"/>
+        <include domain="sharedpref" path="user_prefs.xml"/>
     </cloud-backup>
-    <!--
+
     <device-transfer>
-        <include .../>
-        <exclude .../>
+        <include domain="database"   path="kartonki.db"/>
+        <include domain="sharedpref" path="user_prefs.xml"/>
     </device-transfer>
-    -->
+
 </data-extraction-rules>

@@ -1,13 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-   Sample backup rules file; uncomment and customize as necessary.
-   See https://developer.android.com/guide/topics/data/autobackup
-   for details.
-   Note: This file is ignored for devices older than API 31
-   See https://developer.android.com/about/versions/12/backup-restore
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Backup rules for Android 11 and below (API 23–30).
+    Android 12+ uses data_extraction_rules.xml instead.
+
+    What we back up:
+      - kartonki.db  : Room database — collection, progress, achievements,
+                       decks, favourite sets, streaks, PvP history
+      - user_prefs   : SharedPreferences — username, avatar, language pair,
+                       quiz settings, problem-words settings
+
+    What we do NOT back up:
+      - Everything else (cache, temp files) is excluded by default.
 -->
 <full-backup-content>
-    <!--
-   <include domain="sharedpref" path="."/>
-   <exclude domain="sharedpref" path="device.xml"/>
--->
+    <include domain="database"   path="kartonki.db"/>
+    <include domain="sharedpref" path="user_prefs.xml"/>
 </full-backup-content>
