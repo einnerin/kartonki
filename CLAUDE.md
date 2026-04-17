@@ -23,6 +23,7 @@
 
 | Задача | Инструкции |
 |--------|-----------|
+| **Рефакторинг существующих наборов** | [`docs/claude/rework-plan.md`](docs/claude/rework-plan.md) — **читать первым, там прогресс и правила** |
 | Добавить / изменить набор слов | [`docs/claude/word-sets.md`](docs/claude/word-sets.md) |
 | Добавить достижение | [`docs/claude/achievements.md`](docs/claude/achievements.md) |
 | Архитектура, модели, фазы, зависимости | [`docs/claude/architecture.md`](docs/claude/architecture.md) |
