@@ -64,10 +64,10 @@ object WordDataEnglishExpanded {
     private fun wordsA(): List<WordEntity> = listOf(
 
         // ━━━ SET 200 — COMMON/UNCOMMON — Супермаркет ━━━
-        WordEntity(id = 24001, original = "aisle", transliteration = "[aɪəl]", translation = "проход между полками", rarity = "EPIC", setId = 240, languagePair = "en-ru", pos = "noun", semanticGroup = "shopping",
+        WordEntity(id = 24001, original = "aisle", transliteration = "[aɪəl]", translation = "проход между полками", rarity = "UNCOMMON", setId = 240, languagePair = "en-ru", pos = "noun", semanticGroup = "shopping",
             definition = "A passage between rows of shelves in a shop.", example = "The bread is in aisle three.",
             definitionNative = "Проход между рядами полок в магазине.", exampleNative = "Хлеб находится в третьем проходе."),
-        WordEntity(id = 20001, original = "cart", transliteration = "[kɑrt]", translation = "тележка", rarity = "UNCOMMON", setId = 200, languagePair = "en-ru", pos = "noun", semanticGroup = "shopping",
+        WordEntity(id = 20001, original = "cart", transliteration = "[kɑrt]", translation = "тележка", rarity = "COMMON", setId = 200, languagePair = "en-ru", pos = "noun", semanticGroup = "shopping",
             definition = "A wheeled basket used to carry goods in a shop.", example = "She filled the cart with vegetables.",
             definitionNative = "Тележка на колёсах для переноски товаров в магазине.", exampleNative = "Она наполнила тележку овощами."),
                 WordEntity(
@@ -200,7 +200,7 @@ object WordDataEnglishExpanded {
         WordEntity(id = 24104, original = "pliers", transliteration = "[plaɪərz]", translation = "плоскогубцы", rarity = "RARE", setId = 241, languagePair = "en-ru", pos = "noun", semanticGroup = "tools",
             definition = "A gripping tool with two hinged arms used for bending or cutting wire.", example = "He used pliers to bend the wire into shape.",
             definitionNative = "Инструмент с двумя шарнирными губками для гибки или резки проволоки.", exampleNative = "Он использовал плоскогубцы, чтобы согнуть проволоку нужной формы."),
-        WordEntity(id = 24105, original = "grout", transliteration = "[graʊt]", translation = "затирка", rarity = "LEGENDARY", setId = 241, languagePair = "en-ru", pos = "noun", semanticGroup = "tools",
+        WordEntity(id = 24105, original = "grout", transliteration = "[graʊt]", translation = "затирка", rarity = "RARE", setId = 241, languagePair = "en-ru", pos = "noun", semanticGroup = "tools",
             definition = "A paste used to fill gaps between tiles.", example = "Apply the grout between the tiles and wipe off the excess.",
             definitionNative = "Паста для заполнения швов между плитками.", exampleNative = "Нанесите затирку между плитками и сотрите излишки."),
 
@@ -547,7 +547,7 @@ object WordDataEnglishExpanded {
         WordEntity(id = 20702, original = "seasoning", transliteration = "[ˈsizənɪŋ]", translation = "приправа", rarity = "UNCOMMON", setId = 207, languagePair = "en-ru", pos = "noun", semanticGroup = "cooking",
             definition = "Salt, herbs, or spices added to food to improve its flavour.", example = "Taste the soup and add seasoning if needed.",
             definitionNative = "Соль, травы или специи, добавляемые в пищу для улучшения вкуса.", exampleNative = "Попробуйте суп и добавьте приправу по необходимости."),
-        WordEntity(id = 20703, original = "simmer", transliteration = "[ˈsɪmər]", translation = "кипятить на медленном огне", rarity = "RARE", setId = 207, languagePair = "en-ru", pos = "verb", semanticGroup = "cooking",
+        WordEntity(id = 20703, original = "simmer", transliteration = "[ˈsɪmər]", translation = "кипятить на медленном огне", rarity = "UNCOMMON", setId = 207, languagePair = "en-ru", pos = "verb", semanticGroup = "cooking",
             definition = "To cook food gently just below boiling point.", example = "Let the sauce simmer for twenty minutes to thicken.",
             definitionNative = "Готовить пищу на медленном огне, не доводя до кипения.", exampleNative = "Дайте соусу томиться двадцать минут, чтобы загустеть."),
         WordEntity(id = 20704, original = "marinate", transliteration = "[ˈmɛrəˌneɪt]", translation = "мариновать", rarity = "RARE", setId = 207, languagePair = "en-ru", pos = "verb", semanticGroup = "cooking",
@@ -1019,7 +1019,7 @@ object WordDataEnglishExpanded {
             definitionNative = "Действия по выведению человека из состояния потери сознания.",
             exampleNative = "Медики провели resuscitation пациента на месте происшествия."),
                 WordEntity(
-            id = 21223, setId = 212, languagePair = "en-ru", rarity = "RARE",
+            id = 21223, setId = 212, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "medicine",
             original = "bandage", transliteration = "[ˈbændɪʤ]", translation = "бинт",
             definition = "A strip of material used to bind a wound or support a limb.",
@@ -1867,7 +1867,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 21904, setId = 219, languagePair = "en-ru", rarity = "COMMON",
+            id = 21904, setId = 219, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "chemistry",
             original = "proton", transliteration = "[ˈproʊˌtɑn]", translation = "протон",
             definition = "A positively charged subatomic particle found in the nucleus of an atom.",
@@ -2291,7 +2291,7 @@ object WordDataEnglishExpanded {
 
         // ━━━ SET 220 — Право: основы (COMMON / UNCOMMON) ━━━
                 WordEntity(
-            id = 22001, setId = 220, languagePair = "en-ru", rarity = "COMMON",
+            id = 22001, setId = 220, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law",
             original = "felony", transliteration = "[ˈfɛləni]", translation = "тяжкое преступление",
             definition = "A serious crime such as murder, robbery, or arson, carrying a heavy penalty.",
@@ -2791,7 +2791,7 @@ object WordDataEnglishExpanded {
             definition = "A main section of a book.", example = "I fell asleep after finishing the third chapter.",
             definitionNative = "Основной раздел книги.", exampleNative = "Я заснул после прочтения третьей главы."),
                 WordEntity(
-            id = 22406, setId = 224, languagePair = "en-ru", rarity = "COMMON",
+            id = 22406, setId = 224, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "literature",
             original = "couplet", transliteration = "[ˈkʌplɪt]", translation = "двустишие",
             definition = "A pair of successive lines of verse that rhyme and are usually the same length.",
@@ -2810,7 +2810,7 @@ object WordDataEnglishExpanded {
             definition = "The main body of a written work.", example = "Students were asked to analyse the text closely.",
             definitionNative = "Основная часть письменного произведения.", exampleNative = "Студентам предложили внимательно проанализировать текст."),
                 WordEntity(
-            id = 22409, setId = 224, languagePair = "en-ru", rarity = "COMMON",
+            id = 22409, setId = 224, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "literature",
             original = "epigraph", transliteration = "[ˈɛpɪɡrɑːf]", translation = "эпиграф",
             definition = "A quotation placed at the beginning of a book or chapter to suggest its theme.",
@@ -3051,7 +3051,7 @@ object WordDataEnglishExpanded {
 
         // ━━━ SET 226 — Климат: основы (COMMON / UNCOMMON) ━━━
                 WordEntity(
-            id = 22601, setId = 226, languagePair = "en-ru", rarity = "COMMON",
+            id = 22601, setId = 226, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather",
             original = "cumulus", transliteration = "[ˈkjuːmjʊləs]", translation = "кучевые облака",
             definition = "A type of cloud with a flat base and rounded tops, common in fair weather.",
@@ -3075,7 +3075,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 22604, setId = 226, languagePair = "en-ru", rarity = "COMMON",
+            id = 22604, setId = 226, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "weather",
             original = "sirocco", transliteration = "[sɪˈrɒkoʊ]", translation = "сирокко",
             definition = "A hot, dry, dust-laden wind that blows from North Africa into Southern Europe.",
@@ -3094,7 +3094,7 @@ object WordDataEnglishExpanded {
             definition = "The star at the centre of the solar system, providing light and heat.", example = "The sun came out after hours of rain.",
             definitionNative = "Звезда в центре Солнечной системы, дающая свет и тепло.", exampleNative = "После нескольких часов дождя выглянуло солнце."),
                 WordEntity(
-            id = 22607, setId = 226, languagePair = "en-ru", rarity = "COMMON",
+            id = 22607, setId = 226, languagePair = "en-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "weather",
             original = "anemometer", transliteration = "[ˌænəˈmɑmətər]", translation = "анемометр",
             definition = "An instrument used to measure wind speed.",
@@ -3175,7 +3175,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 22619, setId = 226, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 22619, setId = 226, languagePair = "en-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "weather",
             original = "radiosonde", transliteration = "[ˈreɪdioʊsɒnd]", translation = "радиозонд",
             definition = "A small instrument package released into the atmosphere by a balloon to measure weather conditions.",
@@ -3355,7 +3355,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 22809, setId = 228, languagePair = "en-ru", rarity = "COMMON",
+            id = 22809, setId = 228, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "transport",
             original = "haulage", transliteration = "[ˈhɔːlɪdʒ]", translation = "грузоперевозки",
             definition = "The commercial transport of goods by road or rail.",
@@ -3423,7 +3423,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 22820, setId = 228, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 22820, setId = 228, languagePair = "en-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "transport",
             original = "drayage", transliteration = "[ˈdreɪɪdʒ]", translation = "автоперевозка контейнеров",
             definition = "The short-distance transport of goods, often from a port or railyard to a local destination.",
@@ -4225,7 +4225,7 @@ object WordDataEnglishExpanded {
             definition = "The part of a computer that stores information temporarily or permanently.", example = "He added more memory to speed up the computer.",
             definitionNative = "Часть компьютера, временно или постоянно хранящая информацию.", exampleNative = "Он добавил больше памяти, чтобы ускорить работу компьютера."),
                 WordEntity(
-            id = 23424, setId = 234, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 23424, setId = 234, languagePair = "en-ru", rarity = "RARE",
             pos = "verb", semanticGroup = "technology",
             original = "lint", transliteration = "[lɪnt]", translation = "проверка кода",
             definition = "To run a static analysis tool on code to detect errors and style issues.",
@@ -4233,7 +4233,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 23425, setId = 234, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 23425, setId = 234, languagePair = "en-ru", rarity = "EPIC",
             pos = "verb", semanticGroup = "technology",
             original = "transpile", transliteration = "[trænsˈpaɪl]", translation = "транспилировать",
             definition = "To convert source code from one programming language to another at a similar level.",
@@ -4347,7 +4347,7 @@ object WordDataEnglishExpanded {
 
         // ━━━ SET 236 — Политика: основы (COMMON / UNCOMMON) ━━━
                 WordEntity(
-            id = 23601, setId = 236, languagePair = "en-ru", rarity = "COMMON",
+            id = 23601, setId = 236, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics",
             original = "electorate", transliteration = "[ɪˈlɛktərət]", translation = "электорат",
             definition = "The body of people who are entitled to vote in an election.",
@@ -4355,7 +4355,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 23602, setId = 236, languagePair = "en-ru", rarity = "COMMON",
+            id = 23602, setId = 236, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "adj", semanticGroup = "politics",
             original = "incumbent", transliteration = "[ˌɪnˈkəmbənt]", translation = "действующий",
             definition = "Currently holding a particular office or position.",
@@ -4392,7 +4392,7 @@ object WordDataEnglishExpanded {
             definition = "A political organisation that competes in elections.", example = "She joined the opposition party at the age of twenty.",
             definitionNative = "Политическая организация, участвующая в выборах.", exampleNative = "Она вступила в оппозиционную партию в двадцать лет."),
                 WordEntity(
-            id = 23611, setId = 236, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 23611, setId = 236, languagePair = "en-ru", rarity = "RARE",
             pos = "adj", semanticGroup = "politics",
             original = "bipartisan", transliteration = "[baɪˈpɑrtɪzən]", translation = "двухпартийный",
             definition = "Involving cooperation between two political parties, especially major opposing ones.",
@@ -4441,7 +4441,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 23619, setId = 236, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 23619, setId = 236, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "politics",
             original = "censure", transliteration = "[ˈsɛnʃər]", translation = "порицание / вотум недоверия",
             definition = "An official expression of strong disapproval, especially a formal vote of condemnation.",
@@ -4449,7 +4449,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 23620, setId = 236, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 23620, setId = 236, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "politics",
             original = "filibuster", transliteration = "[ˈfɪləˌbəstər]", translation = "обструкция / затяжная речь",
             definition = "A tactic used in a legislature to delay or prevent a vote by prolonged speaking.",
@@ -4473,7 +4473,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 23623, setId = 236, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 23623, setId = 236, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "politics",
             original = "caucus", transliteration = "[ˈkɔkəs]", translation = "партийное собрание",
             definition = "A meeting of a group of people within a political party to select candidates or discuss policy.",
@@ -4652,7 +4652,7 @@ object WordDataEnglishExpanded {
             definition = "A piece of music with words, intended to be sung.", example = "She sang her favourite song at the talent show.",
             definitionNative = "Музыкальное произведение со словами, предназначенное для пения.", exampleNative = "Она спела любимую песню на конкурсе талантов."),
                 WordEntity(
-            id = 23808, setId = 238, languagePair = "en-ru", rarity = "COMMON",
+            id = 23808, setId = 238, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "art",
             original = "recital", transliteration = "[rəˈsaɪtəl]", translation = "сольный концерт",
             definition = "A performance of music or poetry given by a solo performer or small group.",
@@ -4663,7 +4663,7 @@ object WordDataEnglishExpanded {
             definition = "The visual property of an object produced by the wavelength of light it reflects.", example = "She mixed colours to create the perfect shade of green.",
             definitionNative = "Зрительное свойство предмета, определяемое длиной волны отражаемого света.", exampleNative = "Она смешивала цвета, чтобы получить идеальный оттенок зелёного."),
                 WordEntity(
-            id = 23810, setId = 238, languagePair = "en-ru", rarity = "COMMON",
+            id = 23810, setId = 238, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "art",
             original = "engraving", transliteration = "[ɪnˈgreɪvɪŋ]", translation = "гравюра",
             definition = "A print made from an image cut into a hard surface such as metal or wood.",
@@ -4988,7 +4988,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 20317, setId = 203, languagePair = "en-ru", rarity = "COMMON",
+            id = 20317, setId = 203, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "professions",
             original = "veterinarian", transliteration = "[ˌvɛtərəˈnɛriən]", translation = "ветеринар",
             definition = "A doctor who is trained to treat animals.",
@@ -5003,7 +5003,7 @@ object WordDataEnglishExpanded {
             definition = "A person who grows crops or raises animals for food.",
             example = "The farmer woke up at dawn to feed the animals."),
                 WordEntity(
-            id = 20320, setId = 203, languagePair = "en-ru", rarity = "COMMON",
+            id = 20320, setId = 203, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "professions",
             original = "paralegal", transliteration = "[ˌpɛrəˈligəl]", translation = "помощник юриста",
             definition = "A person who assists lawyers by performing legal work but who is not a qualified solicitor.",
@@ -5070,7 +5070,7 @@ object WordDataEnglishExpanded {
             definition = "A chair in a theatre or cinema.",
             example = "We reserved seats in the front row."),
                 WordEntity(
-            id = 20616, setId = 206, languagePair = "en-ru", rarity = "COMMON",
+            id = 20616, setId = 206, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "cinema",
             original = "marquee", transliteration = "[mɑrˈki]", translation = "театральный навес / рекламная афиша",
             definition = "A large illuminated sign above a theatre entrance displaying show titles.",
@@ -5126,7 +5126,7 @@ object WordDataEnglishExpanded {
             definition = "Low green plants that cover lawns and fields.",
             example = "Cut the grass before it gets too long."),
                 WordEntity(
-            id = 20810, setId = 208, languagePair = "en-ru", rarity = "COMMON",
+            id = 20810, setId = 208, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gardening",
             original = "dibber", transliteration = "[ˈdɪbər]", translation = "колышек для посадки",
             definition = "A pointed tool used to make holes in soil for planting seeds or seedlings.",
@@ -5142,7 +5142,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 20812, setId = 208, languagePair = "en-ru", rarity = "COMMON",
+            id = 20812, setId = 208, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gardening",
             original = "cultivator", transliteration = "[ˈkʌltɪveɪtər]", translation = "культиватор",
             definition = "A garden tool or small machine used to break up soil and remove weeds.",
@@ -5150,7 +5150,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 20813, setId = 208, languagePair = "en-ru", rarity = "COMMON",
+            id = 20813, setId = 208, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gardening",
             original = "loam", transliteration = "[loʊm]", translation = "суглинок",
             definition = "A fertile soil composed of sand, silt, and clay in roughly equal parts.",
@@ -5250,7 +5250,7 @@ object WordDataEnglishExpanded {
         WordEntity(id = 21910, original = "metal", transliteration = "[ˈmɛtəl]", translation = "металл", rarity = "COMMON", setId = 219, languagePair = "en-ru", pos = "noun", semanticGroup = "chemistry",
             definition = "A material such as iron that conducts electricity and heat.",
             example = "Iron is a metal that rusts when exposed to moisture."),
-        WordEntity(id = 21911, original = "filtrate", transliteration = "[ˈfɪltreɪt]", translation = "фильтрат", rarity = "COMMON", setId = 219, languagePair = "en-ru", pos = "noun", semanticGroup = "chemistry",
+        WordEntity(id = 21911, original = "filtrate", transliteration = "[ˈfɪltreɪt]", translation = "фильтрат", rarity = "UNCOMMON", setId = 219, languagePair = "en-ru", pos = "noun", semanticGroup = "chemistry",
             definition = "The liquid that passes through a filter during a filtration process in a laboratory.",
             example = "Collect the filtrate in a clean beaker and discard the solid residue left behind.",
             exampleNative = null, definitionNative = null),
@@ -5289,7 +5289,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 21918, setId = 219, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 21918, setId = 219, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "chemistry",
             original = "hydrolysis", transliteration = "[haɪˈdrɑləsəs]", translation = "гидролиз",
             definition = "A chemical reaction in which a compound is broken down by water.",
@@ -5297,7 +5297,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 21919, setId = 219, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 21919, setId = 219, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "chemistry",
             original = "monomer", transliteration = "[ˈmɑnəmər]", translation = "мономер",
             definition = "A small molecule that can bond with others of its kind to form a polymer.",
@@ -5305,7 +5305,7 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 21920, setId = 219, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 21920, setId = 219, languagePair = "en-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "chemistry",
             original = "enthalpy", transliteration = "[ˈɛnθælpi]", translation = "энтальпия",
             definition = "A measure of the total energy of a thermodynamic system, including heat content.",
@@ -5319,7 +5319,7 @@ object WordDataEnglishExpanded {
             definition = "To undergo combustion, producing heat and light.",
             example = "The magnesium ribbon burns with a bright white flame."),
                 WordEntity(
-            id = 21923, setId = 219, languagePair = "en-ru", rarity = "UNCOMMON",
+            id = 21923, setId = 219, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "chemistry",
             original = "covalent bond", transliteration = "[koʊˈveɪlənt bɒnd]", translation = "ковалентная связь",
             definition = "A chemical link between two atoms formed by sharing a pair of electrons.",
@@ -5370,17 +5370,17 @@ object WordDataEnglishExpanded {
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(
-            id = 24023, setId = 240, languagePair = "en-ru", rarity = "EPIC",
+            id = 24023, setId = 240, languagePair = "en-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "retail",
             original = "sourcing", transliteration = "[ˈsɔrsɪŋ]", translation = "поиск поставщиков",
             definition = "The process of finding and evaluating suppliers for goods or materials.",
             example = "Ethical sourcing is now a key part of the company's brand promise.",
             exampleNative = null, definitionNative = null,
         ),
-        WordEntity(id = 24024, original = "footfall", transliteration = "[ˈfʊtˌfɔl]", translation = "посещаемость (магазина)", rarity = "EPIC", setId = 240, languagePair = "en-ru", pos = "noun", semanticGroup = "retail",
+        WordEntity(id = 24024, original = "footfall", transliteration = "[ˈfʊtˌfɔl]", translation = "посещаемость (магазина)", rarity = "RARE", setId = 240, languagePair = "en-ru", pos = "noun", semanticGroup = "retail",
             definition = "The number of people entering a shop or shopping centre.",
             example = "Footfall increased sharply during the Christmas period."),
-        WordEntity(id = 24025, original = "loss leader", transliteration = "[lɔs ˈlidər]", translation = "товар-приманка", rarity = "EPIC", setId = 240, languagePair = "en-ru", pos = "noun", semanticGroup = "retail",
+        WordEntity(id = 24025, original = "loss leader", transliteration = "[lɔs ˈlidər]", translation = "товар-приманка", rarity = "RARE", setId = 240, languagePair = "en-ru", pos = "noun", semanticGroup = "retail",
             definition = "A product sold at a low profit to attract customers.",
             example = "Supermarkets use milk as a loss leader to bring in shoppers."),
         WordEntity(id = 24110, original = "soldering iron", transliteration = "[ˈsɑdərɪŋ aɪərn]", translation = "паяльник", rarity = "RARE", setId = 241, languagePair = "en-ru", pos = "noun", semanticGroup = "tools",
@@ -5419,10 +5419,10 @@ object WordDataEnglishExpanded {
         WordEntity(id = 24121, original = "pneumatic drill", transliteration = "[nuˈmætɪk drɪl]", translation = "отбойный молоток", rarity = "EPIC", setId = 241, languagePair = "en-ru", pos = "noun", semanticGroup = "tools",
             definition = "A power tool driven by compressed air for breaking up hard surfaces.",
             example = "The workers used a pneumatic drill to break up the old concrete."),
-        WordEntity(id = 24122, original = "torque wrench", transliteration = "[tɔrk rɛnʧ]", translation = "динамометрический ключ", rarity = "LEGENDARY", setId = 241, languagePair = "en-ru", pos = "noun", semanticGroup = "tools",
+        WordEntity(id = 24122, original = "torque wrench", transliteration = "[tɔrk rɛnʧ]", translation = "динамометрический ключ", rarity = "EPIC", setId = 241, languagePair = "en-ru", pos = "noun", semanticGroup = "tools",
             definition = "A wrench that applies a specific torque to a fastener.",
             example = "Always tighten wheel bolts to the specified torque with a torque wrench."),
-        WordEntity(id = 24123, original = "mitre saw", transliteration = "[ˈmɪtri sɔ]", translation = "торцовочная пила", rarity = "LEGENDARY", setId = 241, languagePair = "en-ru", pos = "noun", semanticGroup = "tools",
+        WordEntity(id = 24123, original = "mitre saw", transliteration = "[ˈmɪtri sɔ]", translation = "торцовочная пила", rarity = "EPIC", setId = 241, languagePair = "en-ru", pos = "noun", semanticGroup = "tools",
             definition = "A power saw used to make accurate crosscuts and mitre cuts in wood.",
             example = "Cut the skirting boards to 45 degrees with a mitre saw."),
                 WordEntity(
@@ -5632,7 +5632,7 @@ object WordDataEnglishExpanded {
         WordEntity(id = 24621, original = "chlorophyll", transliteration = "[ˈklɔrəfɪl]", translation = "хлорофилл", rarity = "RARE", setId = 246, languagePair = "en-ru", pos = "noun", semanticGroup = "botany",
             definition = "The green pigment in plants that absorbs light for photosynthesis.",
             example = "Leaves lose their chlorophyll in autumn, revealing red and yellow pigments."),
-        WordEntity(id = 24622, original = "transpiration", transliteration = "[ˌtrænspaɪˈreɪʃən]", translation = "транспирация", rarity = "EPIC", setId = 246, languagePair = "en-ru", pos = "noun", semanticGroup = "botany",
+        WordEntity(id = 24622, original = "transpiration", transliteration = "[ˌtrænspaɪˈreɪʃən]", translation = "транспирация", rarity = "RARE", setId = 246, languagePair = "en-ru", pos = "noun", semanticGroup = "botany",
             definition = "The process by which plants release water vapour through their leaves.",
             example = "Transpiration helps cool the plant and transport nutrients upward."),
         WordEntity(id = 24623, original = "mycorrhiza", transliteration = "[ˌmaɪkəˈraɪzə]", translation = "микориза", rarity = "LEGENDARY", setId = 246, languagePair = "en-ru", pos = "noun", semanticGroup = "botany",
