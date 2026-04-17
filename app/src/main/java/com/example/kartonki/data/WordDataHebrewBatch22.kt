@@ -36,9 +36,9 @@ object WordDataHebrewBatch22 {
             original = "זְרִיקָה", translation = "укол, инъекция"),
         WordEntity(id = 108804, setId = 1088, languagePair = "he-ru", rarity = "COMMON",
             original = "כִּירוּרְג", translation = "хирург"),
-        WordEntity(id = 108805, setId = 1088, languagePair = "he-ru", rarity = "COMMON",
+        WordEntity(id = 108805, setId = 1088, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "כֵּימוֹתֶרַפְּיָה", translation = "химиотерапия"),
-        WordEntity(id = 108806, setId = 1088, languagePair = "he-ru", rarity = "COMMON",
+        WordEntity(id = 108806, setId = 1088, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "אֶקוֹ", translation = "эхо-исследование (УЗИ)"),
 
         // UNCOMMON (A2-B1)
@@ -84,7 +84,7 @@ object WordDataHebrewBatch22 {
             original = "בִּיוֹטֶכְנוֹלוֹגְיָה", translation = "биотехнология"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 108825, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 108825, setId = 1088, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "רְפוּאָה מְדוּיֶּקֶת", translation = "прецизионная (персонализированная) медицина"),
 
         // ── Set 1089: Право ────────────────────────────────────────────────

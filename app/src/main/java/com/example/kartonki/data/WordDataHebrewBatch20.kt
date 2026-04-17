@@ -146,7 +146,7 @@ object WordDataHebrewBatch20 {
             original = "הַגְבָּרַת תּוֹכֶן", translation = "усиление контента (content amplification)"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 108325, setId = 1083, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108325, setId = 1083, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media_trust", transliteration = "aminut",
             original = "אֲמִינוּת", translation = "надёжность, достоверность"),
 

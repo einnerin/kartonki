@@ -253,7 +253,7 @@ object WordDataHebrewBatch16 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107025, setId = 1070, languagePair = "he-ru", rarity = "EPIC",
+            id = 107025, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "aseret hadibrot",
             original = "עֲשֶׂרֶת הַדִּבְּרוֹת", translation = "Десять заповедей",
             definition = "עֲשָׂרָה כְּלָלִים מוּסָרִיִּים שֶׁנִּמְסְרוּ לְמֹשֶׁה עַל הַר סִינַי לְפִי הַמִּקְרָא.",
@@ -284,7 +284,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "На этой улице живут много религиозных семей.",
         ),
         WordEntity(
-            id = 107103, setId = 1071, languagePair = "he-ru", rarity = "COMMON",
+            id = 107103, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "religion_advanced", transliteration = "khared",
             original = "חָרֵדִי", translation = "харедим / ультраортодоксальный",
             definition = "יְהוּדִי שׁוֹמֵר מִצְוֹת בְּהִדּוּר וּמְבַדֵּל עַצְמוֹ מֵהַחֶבְרָה הַחִלּוֹנִית.",
@@ -293,7 +293,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "Ультраортодоксальные кварталы в Бней-Браке быстро растут.",
         ),
         WordEntity(
-            id = 107104, setId = 1071, languagePair = "he-ru", rarity = "COMMON",
+            id = 107104, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "kohen",
             original = "כֹּהֵן", translation = "коэн (священник / потомок Аарона)",
             definition = "צֶאֱצָא שֶׁל אַהֲרֹן, שֶׁשִּׁמֵּשׁ בַּמִּקְדָּשׁ וְקִבֵּל הַטָּבוֹת הֲלָכָתִיּוֹת.",
@@ -302,7 +302,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "Коэнам нельзя приближаться к покойнику.",
         ),
         WordEntity(
-            id = 107105, setId = 1071, languagePair = "he-ru", rarity = "COMMON",
+            id = 107105, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "levi",
             original = "לֵוִי", translation = "левит (потомок колена Леви)",
             definition = "צֶאֱצָא שֵׁבֶט לֵוִי, שֶׁעָזַר לַכֹּהֲנִים בַּמִּקְדָּשׁ.",
@@ -311,7 +311,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "На утренней молитве левит омывает руки коэну перед биркат-коганим.",
         ),
         WordEntity(
-            id = 107106, setId = 1071, languagePair = "he-ru", rarity = "COMMON",
+            id = 107106, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "bima",
             original = "בִּימָה", translation = "бима (подиум в синагоге)",
             definition = "הַמַּעֲמָד הַמֶּרְכָּזִי בְּבֵית הַכְּנֶסֶת שֶׁמִּמֶּנּוּ קוֹרְאִים בַּתּוֹרָה.",
@@ -490,7 +490,7 @@ object WordDataHebrewBatch16 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107125, setId = 1071, languagePair = "he-ru", rarity = "EPIC",
+            id = 107125, setId = 1071, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "eskhatologiya",
             original = "אֶסְכָּטוֹלוֹגִיָּה", translation = "эсхатология (учение о конце времён)",
             definition = "תְּחוּם תֵּאוֹלוֹגִי הָעוֹסֵק בְּסוֹף הַיָּמִים, תְּחִיַּת הַמֵּתִים וְעוֹלָם הַבָּא.",
@@ -651,7 +651,7 @@ object WordDataHebrewBatch16 {
 
         // RARE (B2)
         WordEntity(
-            id = 107217, setId = 1072, languagePair = "he-ru", rarity = "RARE",
+            id = 107217, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "rok",
             original = "רוֹק", translation = "рок (музыкальный жанр)",
             definition = "ז'ָאנְר מוּסִיקָה בַּעֲלָה גִּיטָרוֹת חַשְׁמַלִּיּוֹת וְקֶצֶב חָזָק.",
@@ -727,7 +727,7 @@ object WordDataHebrewBatch16 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107225, setId = 1072, languagePair = "he-ru", rarity = "EPIC",
+            id = 107225, setId = 1072, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "music", transliteration = "kontrapunkt",
             original = "קוֹנְטְרַפּוּנְקְט", translation = "контрапункт",
             definition = "טֶכְנִיקָה מוּסִיקָלִית שֶׁל שִׁלּוּב שְׁנֵי קַוֵּי מֶלוֹדִיָּה עַצְמָאִיִּים אוֹ יוֹתֵר.",

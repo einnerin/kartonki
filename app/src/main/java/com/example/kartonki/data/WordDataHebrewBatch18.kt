@@ -253,7 +253,7 @@ object WordDataHebrewBatch18 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107625, setId = 1076, languagePair = "he-ru", rarity = "EPIC",
+            id = 107625, setId = 1076, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "media", transliteration = "teoriyat kviat hasadar hayom",
             original = "תֵּיאוֹרְיַת קְבִיעַת הַסָּדָר-יוֹם", translation = "теория установления повестки дня",
             definition = "תֵּיאוֹרְיָה הַטּוֹעֶנֶת שֶׁכְּלֵי הַתִּקְשׁוֹרֶת קוֹבְעִים מֶה הַצִּיבּוּר חוֹשֵׁב שֶׁהוּא חָשׁוּב, לֹא כֵּיצַד.",
@@ -490,7 +490,7 @@ object WordDataHebrewBatch18 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107725, setId = 1077, languagePair = "he-ru", rarity = "EPIC",
+            id = 107725, setId = 1077, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "science", transliteration = "khiluf paradigma",
             original = "חִלּוּף פָּרָדִיגְמָה", translation = "смена парадигмы",
             definition = "מַעֲבָר מַהְפֵּכָנִי מִמַּסְגֶּרֶת מַדָּעִית מְבֻסֶּסֶת לְמַסְגֶּרֶת חֲדָשָׁה, כַּמְּתֻאָר עַל יְדֵי קוּן.",
@@ -530,7 +530,7 @@ object WordDataHebrewBatch18 {
             exampleNative = "Сортировка мусора для переработки важна для окружающей среды.",
         ),
         WordEntity(
-            id = 107804, setId = 1078, languagePair = "he-ru", rarity = "COMMON",
+            id = 107804, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "biomasa",
             original = "בִּיוֹמַסָּה", translation = "биомасса",
             definition = "חוֹמֶר אוֹרְגָּנִי מִצְּמָחִים וּבַעֲלֵי חַיִּים הַמְּשַׁמֵּשׁ כְּמַקּוֹר אֶנֶרְגְיָה.",
@@ -539,7 +539,7 @@ object WordDataHebrewBatch18 {
             exampleNative = "Энергия בִּיוֹמַסָּה снижает зависимость от ископаемого топлива.",
         ),
         WordEntity(
-            id = 107805, setId = 1078, languagePair = "he-ru", rarity = "COMMON",
+            id = 107805, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "psolet elektronit",
             original = "פְּסֹלֶת אֶלֶקְטְרוֹנִית", translation = "электронные отходы (e-waste)",
             definition = "מַכְשִׁירִים חַשְׁמַלִּיִּים וְאֶלֶקְטְרוֹנִיִּים שֶׁנִּזְרְקוּ, לְרֹב מְכִילִים חוֹמְרִים מְזִיקִים.",
@@ -548,7 +548,7 @@ object WordDataHebrewBatch18 {
             exampleNative = "Электронные отходы — одно из крупнейших загрязнений окружающей среды в мире.",
         ),
         WordEntity(
-            id = 107806, setId = 1078, languagePair = "he-ru", rarity = "COMMON",
+            id = 107806, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "energia mitchaddeshet",
             original = "אֵנֶרְגְּיָה מִתְחַדֶּשֶׁת", translation = "возобновляемая энергия",
             definition = "אֵנֶרְגְּיָה מִמְּקוֹרוֹת שֶׁאֵינָם אוֹזְלִים — שֶׁמֶשׁ, רוּחַ וּמַיִם.",
@@ -727,7 +727,7 @@ object WordDataHebrewBatch18 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107825, setId = 1078, languagePair = "he-ru", rarity = "EPIC",
+            id = 107825, setId = 1078, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "ecology", transliteration = "antropotsen",
             original = "אַנְתְרוֹפּוֹצֶן", translation = "антропоцен",
             definition = "הַתְּקוּפָה הַגֵּיאוֹלוֹגִית הַנּוֹכְחִית שֶׁבָּהּ הַפְּעִילּוּת הָאֱנוֹשִׁית הִיא הַכֹּחַ הַשּׁוֹלֵט בַּמַּעֲרֶכֶת הָאַרְצִית.",

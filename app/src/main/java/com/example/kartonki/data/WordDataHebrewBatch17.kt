@@ -727,7 +727,7 @@ object WordDataHebrewBatch17 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107525, setId = 1075, languagePair = "he-ru", rarity = "EPIC",
+            id = 107525, setId = 1075, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "art", transliteration = "postmodernizm",
             original = "פּוֹסְטְמוֹדֶרְנִיזְם", translation = "постмодернизм",
             definition = "זֶרֶם תַּרְבּוּתִי וְפִילוֹסוֹפִי הַמְּפַקְפֵּק בְּמֶטָא-נָרָטִיבִים וּבַאוּנִיבֶּרְסָלִיּוּת.",

@@ -28,9 +28,9 @@ object WordDataHebrewBatch24 {
         // ── Set 1094: Лингвистика ──────────────────────────────────────────
 
         // COMMON (A1)
-        WordEntity(id = 109401, setId = 1094, languagePair = "he-ru", rarity = "COMMON",
+        WordEntity(id = 109401, setId = 1094, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "לְשׁוֹנָאוּת", translation = "лингвистика (наука о языке)"),
-        WordEntity(id = 109402, setId = 1094, languagePair = "he-ru", rarity = "COMMON",
+        WordEntity(id = 109402, setId = 1094, languagePair = "he-ru", rarity = "RARE",
             original = "לֶקְסִיקוֹגְרַפְיָה", translation = "лексикография"),
         WordEntity(id = 109403, setId = 1094, languagePair = "he-ru", rarity = "COMMON",
             original = "שָׂפָה אֵם", translation = "родной язык, язык матери"),

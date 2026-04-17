@@ -84,7 +84,7 @@ object WordDataHebrewBatch23 {
             original = "תֵּיאוֹרְיַת הַמִּשְׂחָקִים", translation = "теория игр"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 109125, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 109125, setId = 1091, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "קֵינֶסְיָאנִיזְם", translation = "кейнсианство (теория Дж. М. Кейнса)"),
 
         // ── Set 1092: Философия ────────────────────────────────────────────
@@ -146,7 +146,7 @@ object WordDataHebrewBatch23 {
             original = "מֶטָ-אֶתִיקָה", translation = "метаэтика"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 109225, setId = 1092, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 109225, setId = 1092, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "קוֹגְנִיטִיבִיזְם", translation = "когнитивизм (философское направление)"),
 
         // ── Set 1093: Климат и устойчивость ───────────────────────────────
