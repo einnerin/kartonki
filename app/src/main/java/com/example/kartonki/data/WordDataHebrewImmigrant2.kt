@@ -457,12 +457,12 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102808, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "health", transliteration = "nezelet",
-            original = "נְזֶלֶת", translation = "насморк / простуда",
-            definition = "הֶפְרָשָׁה נוֹזְלִית מֵהָאַף הַנַּגְרֶמֶת מִזִּיהוּם אוֹ אַלֶּרְגְּיָה.",
-            definitionNative = "Выделения из носа, вызванные инфекцией или аллергией.",
-            example = "יֵשׁ לִי נְזֶלֶת — כְּנִרְאֶה תָּפַסְתִּי צִינֶּנֶת.",
-            exampleNative = "У меня נְזֶלֶת — похоже, я простудился.",
+            pos = "noun", semanticGroup = "health", transliteration = "sekharkhoret",
+            original = "סְחַרְחֹרֶת", translation = "головокружение",
+            definition = "תַּחוּשַׁת חוֹסֶר יַצִּיבוּת אוֹ סִיבּוּב, לְעִתִּים כְּסִימְפְּטוֹם לִמְחָלָה.",
+            definitionNative = "Ощущение неустойчивости или вращения, иногда симптом заболевания.",
+            example = "לְאַחַר הַקְּפִיצָה הִרְגַּשְׁתִּי סְחַרְחֹרֶת.",
+            exampleNative = "После прыжка я почувствовал סְחַרְחֹרֶת.",
         ),
         WordEntity(
             id = 102809, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",

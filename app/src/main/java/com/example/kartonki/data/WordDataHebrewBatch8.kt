@@ -701,12 +701,12 @@ object WordDataHebrewBatch8 {
             exampleNative = "По תַּקָּנוֹן הַבִּנְיָן запрещено играть на музыкальных инструментах после десяти вечера.",
         ),
         WordEntity(id = 104925, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "building_common", transliteration = "miftea'kh",
-            original = "מִפְתֵּחַ", translation = "ключ",
-            definition = "כְּלִי מַתַּכְתִּי לִפְתִיחַת מַנְעוּל.",
-            definitionNative = "Металлический предмет для открывания замка.",
-            example = "שָׁכַחְתִּי אֶת הַמִּפְתֵּחַ בַּבַּיִת.",
-            exampleNative = "Я забыл מִפְתֵּחַ дома."),
+            pos = "noun", semanticGroup = "building_common", transliteration = "pa'amon",
+            original = "פַּעֲמוֹן", translation = "дверной звонок / колокольчик",
+            definition = "מַכְשִׁיר לְסִימוּן בְּקֶשַׁת כְּנִיסָה לַדִּירָה.",
+            definitionNative = "Устройство для подачи сигнала при входе в квартиру.",
+            example = "לָחַצְתִּי עַל הַפַּעֲמוֹן וְחִיכִּיתִי לַתְּשׁוּבָה.",
+            exampleNative = "Я нажал на פַּעֲמוֹן и стал ждать ответа."),
 
 
     )

@@ -460,12 +460,12 @@ object WordDataHebrewBatch5 {
         ),
         WordEntity(
             id = 103925, setId = 1039, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "taba'at",
-            original = "טַבָּעַת", translation = "обручальное кольцо",
-            definition = "טַבָּעַת זָהָב הַמּוּעֶנֶקֶת בְּחוּפָּה כְּסֵמֶל לַנִּישּׂוּאִין.",
-            definitionNative = "Золотое кольцо, надеваемое под хупой как символ бракосочетания.",
-            example = "הֶחָתָן הֵנִיחַ טַבָּעַת עַל אֶצְבַּע הַכַּלָּה.",
-            exampleNative = "Жених надел טַבָּעַת на палец невесты.",
+            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "sheva brakhot",
+            original = "שֶׁבַע בְּרָכוֹת", translation = "семь благословений (еврейский свадебный обряд)",
+            definition = "שֶׁבַע בְּרָכוֹת הַנֶּאֱמָרוֹת בְּחוּפָּה וּבְסְעוּדַת נִישּׂוּאִין.",
+            definitionNative = "Семь благословений, произносимых на хупе и на свадебном пиру.",
+            example = "הַרַּב בֵּרֵךְ אֶת הַזּוּג בְּשֶׁבַע בְּרָכוֹת.",
+            exampleNative = "Раввин благословил пару שֶׁבַע בְּרָכוֹת.",
         ),
 
         // ──────────────────────────────────────────────────────
