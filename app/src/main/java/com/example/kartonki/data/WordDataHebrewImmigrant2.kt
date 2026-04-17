@@ -714,12 +714,12 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102916, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pharmacy", transliteration = "alergia",
-            original = "אֶלֶרְגִּיָּה", translation = "аллергия",
-            definition = "תְּגוּבָה יְתֵרָה שֶׁל הַגּוּף לְחוֹמֶר מְסוּיָּם.",
-            definitionNative = "Чрезмерная реакция организма на определённое вещество.",
-            example = "יֵשׁ לִי אֶלֶרְגִּיָּה לְאָבְקַת פְּרָחִים.",
-            exampleNative = "У меня אֶלֶרְגִּיָּה на пыльцу цветов.",
+            pos = "noun", semanticGroup = "pharmacy", transliteration = "kapsulah",
+            original = "קַפְסוּלָה", translation = "капсула (лекарство)",
+            definition = "צוּרַת תְּרוּפָה בִּכְמוֹסָה גֶּלָטִינִית הַנְּבְלֶעֶת שְׁלֵמָה.",
+            definitionNative = "Форма лекарства в желатиновой оболочке, проглатываемой целиком.",
+            example = "הַרּוֹפֵא רָשַׁם לִי קַפְסוּלָה פַּעַם בַּיּוֹם אַחֲרֵי הָאֹכֶל.",
+            exampleNative = "Врач прописал мне קַפְסוּלָה один раз в день после еды.",
         ),
         WordEntity(
             id = 102917, setId = 1029, languagePair = "he-ru", rarity = "RARE",

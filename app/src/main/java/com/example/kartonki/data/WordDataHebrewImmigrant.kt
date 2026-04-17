@@ -475,12 +475,12 @@ object WordDataHebrewImmigrant {
         ),
         WordEntity(
             id = 102410, setId = 1024, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "banking", transliteration = "maskoret",
-            original = "מַשְׂכֹּרֶת", translation = "зарплата",
-            definition = "תַּשְׁלוּם קָבוּעַ הַמְּשׁוּלָם לָעוֹבֵד עַל עֲבוֹדָתוֹ.",
-            definitionNative = "Регулярная выплата работнику за его труд.",
-            example = "הַמַּשְׂכֹּרֶת מוּעֶבֶרֶת לַחֶשְׁבּוֹן בְּחָמְשָׁה לַחוֹדֶשׁ.",
-            exampleNative = "מַשְׂכֹּרֶת переводится на счёт пятого числа каждого месяца.",
+            pos = "noun", semanticGroup = "banking", transliteration = "iska bankayt",
+            original = "עֲסָקָה בַּנְקָאִית", translation = "банковская операция / транзакция",
+            definition = "פְּעוּלָּה כַּסְפִּית הַמְּבוּצֵּעַת דֶּרֶךְ הַבַּנְק כְּגוֹן הַעֲבָרָה, הַפְקָדָה אוֹ מְשִׁיכָה.",
+            definitionNative = "Финансовая операция, проводимая через банк: перевод, внесение или снятие средств.",
+            example = "בִּצַּעְתִּי עֲסָקָה בַּנְקָאִית דֶּרֶךְ הָאֲפְּלִיקַצְיָה בְּשְׁנִיָּה.",
+            exampleNative = "Я провёл עֲסָקָה בַּנְקָאִית через приложение за секунду.",
         ),
         WordEntity(
             id = 102411, setId = 1024, languagePair = "he-ru", rarity = "UNCOMMON",

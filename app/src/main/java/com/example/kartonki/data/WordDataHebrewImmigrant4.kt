@@ -556,12 +556,12 @@ object WordDataHebrewImmigrant4 {
         ),
         WordEntity(
             id = 103619, setId = 1036, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "finance", transliteration = "ma'asik",
-            original = "מָעְסִיק", translation = "работодатель",
-            definition = "אָדָם אוֹ חֶבְרָה הַמְּעַסֶּקֶת עוֹבְדִים וּמְשַׁלֶּמֶת לָהֶם שָׂכָר.",
-            definitionNative = "Человек или компания, нанимающая работников и выплачивающая им зарплату.",
-            example = "הַמָּעְסִיק אַחְרָאִי לְהַפְרִישׁ פֶּנְסְיָה לְעוֹבְדָיו.",
-            exampleNative = "מָעְסִיק обязан отчислять пенсионные взносы за своих работников.",
+            pos = "noun", semanticGroup = "finance", transliteration = "pakid shuma",
+            original = "פְּקִיד שׁוּמָה", translation = "налоговый инспектор / асессор",
+            definition = "פָּקִיד בְּרָשׁוּת הַמִּסִּים הַקּוֹבֵעַ אֶת גוֹבַהּ הַמַּס לִיחִידִים וּלְעֵסָקִים.",
+            definitionNative = "Сотрудник налоговой службы, определяющий размер налога для физических лиц и предприятий.",
+            example = "פָּגַשְׁתִּי אֶת פְּקִיד הַשּׁוּמָה לְהַגָּשַׁת הַדּוּחַ הַשָּׁנָתִי.",
+            exampleNative = "Я встретился с פְּקִיד שׁוּמָה для подачи годового отчёта.",
         ),
         WordEntity(
             id = 103620, setId = 1036, languagePair = "he-ru", rarity = "RARE",

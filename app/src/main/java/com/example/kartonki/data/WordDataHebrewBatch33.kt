@@ -28,7 +28,7 @@ object WordDataHebrewBatch33 {
         WordEntity(id = 112102, setId = 1121, languagePair = "he-ru", rarity = "COMMON",
             original = "כָּחֹל", translation = "синий"),
         WordEntity(id = 112103, setId = 1121, languagePair = "he-ru", rarity = "COMMON",
-            original = "יָרֹק", translation = "зелёный"),
+            original = "תְּכֵלֶת", translation = "голубой / небесно-синий"),
         WordEntity(id = 112104, setId = 1121, languagePair = "he-ru", rarity = "COMMON",
             original = "צָהֹב", translation = "жёлтый"),
         WordEntity(id = 112105, setId = 1121, languagePair = "he-ru", rarity = "COMMON",
@@ -136,7 +136,7 @@ object WordDataHebrewBatch33 {
         WordEntity(id = 112304, setId = 1123, languagePair = "he-ru", rarity = "COMMON",
             original = "תַּרְנְגוֹל", translation = "петух"),
         WordEntity(id = 112305, setId = 1123, languagePair = "he-ru", rarity = "COMMON",
-            original = "אֲרָנָב", translation = "кролик"),
+            original = "אַיָּל", translation = "олень"),
         WordEntity(id = 112306, setId = 1123, languagePair = "he-ru", rarity = "COMMON",
             original = "עֵז", translation = "коза"),
         WordEntity(id = 112307, setId = 1123, languagePair = "he-ru", rarity = "COMMON",
@@ -174,8 +174,8 @@ object WordDataHebrewBatch33 {
         WordEntity(id = 112323, setId = 1123, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תֹּכִּי", translation = "попугай"),
         WordEntity(id = 112324, setId = 1123, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "לִוְיָתָן", translation = "кит"),
+            original = "דּוֹלְפִין", translation = "дельфин"),
         WordEntity(id = 112325, setId = 1123, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כָּרִישׁ", translation = "акула"),
+            original = "תַּמְנוּן", translation = "осьминог"),
     )
 }
