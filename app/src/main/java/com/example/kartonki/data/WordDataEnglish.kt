@@ -90,7 +90,7 @@ object WordDataEnglish {
         WordSetEntity(id = 81, name = "Ум и характер", description = "Описание ума и характера", orderIndex = 80),
         WordSetEntity(id = 82, name = "Сила и перемены", description = "Сила, перемены и разрушение", orderIndex = 81),
         WordSetEntity(id = 83, name = "Рост и влияние", description = "Влияние, рост и изменения", orderIndex = 82),
-        WordSetEntity(id = 87, name = "Логика: базовые понятия", description = "Базовые понятия логики B2", orderIndex = 83)
+        WordSetEntity(id = 87, name = "Логика: базовые понятия", description = "Базовые понятия логики B2/C1", orderIndex = 83)
     )
 
     // ── Words ──────────────────────────────────────────────────────────────────

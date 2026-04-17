@@ -128,7 +128,7 @@ val MIGRATION_35_36 = object : Migration(35, 36) {
 | 1038–1069 | WordDataHebrewBatch5–15.kt | ✅ |
 | 1070–1091 | WordDataHebrewBatch16–23.kt | ✅ |
 | 1121–1133 | WordDataHebrewBatch33–37.kt | ✅ |
-| 1092–1120, 1134–1141 | WordDataHebrewBatch24–32, 38–39.kt | ⏳ (не проверялись — нарушений не обнаружено в аудите) |
+| 1092–1120, 1134–1141 | WordDataHebrewBatch24–32, 38–39.kt | ✅ (аудит: 0 нарушений, все по 25 слов) |
 
 ---
 
