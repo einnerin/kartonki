@@ -127,7 +127,8 @@ class StudyViewModel @Inject constructor(
         // Three batch queries replace N×3 individual queries.
         val wordCounts      = wordSetRepository.getWordCountsForSets(setIds)
         val rarityCounts    = wordSetRepository.getRarityCountsForSets(setIds)
-        val introducedCounts = progressRepository.getIntroducedCountsForSets(setIds)
+        val correctThreshold = prefs.studyCorrectToCount.first()
+        val introducedCounts = progressRepository.getIntroducedCountsForSets(setIds, correctThreshold)
 
         val items = sets.map { set ->
             val rarity = wordSetRepository.rarityFromCounts(rarityCounts[set.id] ?: emptyList())

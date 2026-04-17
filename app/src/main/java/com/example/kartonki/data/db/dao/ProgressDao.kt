@@ -37,7 +37,7 @@ interface ProgressDao {
      * Used to compute "introducedWords" counts for all sets in one query.
      */
     @Query("""
-        SELECT w.setId AS setId, p.level AS level
+        SELECT w.setId AS setId, p.level AS level, p.correctCount AS correctCount
         FROM progress p
         INNER JOIN words w ON p.wordId = w.id
         WHERE w.setId IN (:setIds)

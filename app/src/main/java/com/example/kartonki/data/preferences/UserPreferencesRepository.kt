@@ -99,6 +99,10 @@ class UserPreferencesRepository @Inject constructor(
     val problemWordsCorrectToLearn: Flow<Int> = prefsFlow().map { it.getInt(Keys.PROBLEM_WORDS_CORRECT_TO_LEARN, 1) }
     fun setProblemWordsCorrectToLearn(n: Int) = prefs.edit().putInt(Keys.PROBLEM_WORDS_CORRECT_TO_LEARN, n).apply()
 
+    /** How many correct answers a word needs before it counts toward set progress bar. Default 1. */
+    val studyCorrectToCount: Flow<Int> = prefsFlow().map { it.getInt("study_correct_to_count", 1) }
+    fun setStudyCorrectToCount(n: Int) = prefs.edit().putInt("study_correct_to_count", n).apply()
+
     fun isProblemWordsHintShown(): Boolean = prefs.getBoolean(Keys.PROBLEM_WORDS_HINT_SHOWN, false)
     fun setProblemWordsHintShown() = prefs.edit().putBoolean(Keys.PROBLEM_WORDS_HINT_SHOWN, true).apply()
 

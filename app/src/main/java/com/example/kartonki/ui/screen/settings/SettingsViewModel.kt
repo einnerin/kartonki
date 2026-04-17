@@ -71,6 +71,9 @@ data class SettingsUiState(
     val fillBlankQuizMode: String = "both",
     val enabledQuizTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
     val problemWordsSource: String = "both",
+    // Study settings
+    val studyCorrectToCount: Int = 1,
+    val showStudyCorrectToCountPicker: Boolean = false,
     // Problem words block
     val problemWordsEnabled: Boolean = true,
     val problemWordsMinEncounters: Int = 2,
@@ -170,9 +173,11 @@ class SettingsViewModel @Inject constructor(
                         showFillBlankModePicker      = current.showFillBlankModePicker,
                         showQuizTypesPicker          = current.showQuizTypesPicker,
                         showProblemWordsSourcePicker = current.showProblemWordsSourcePicker,
-                        // Preserve problem words settings — these are loaded by separate
-                        // coroutines and must not be reset to defaults when any other
-                        // preference changes (race condition with the shared prefsFlow).
+                        // Preserve settings loaded by separate coroutines — they must not
+                        // be reset to defaults when any other preference changes
+                        // (race condition with the shared prefsFlow).
+                        studyCorrectToCount          = current.studyCorrectToCount,
+                        showStudyCorrectToCountPicker = current.showStudyCorrectToCountPicker,
                         problemWordsSource           = current.problemWordsSource,
                         problemWordsEnabled          = current.problemWordsEnabled,
                         problemWordsMinEncounters    = current.problemWordsMinEncounters,
@@ -207,6 +212,11 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch {
             prefs.problemWordsCorrectToLearn.collect { v ->
                 _uiState.update { it.copy(problemWordsCorrectToLearn = v) }
+            }
+        }
+        viewModelScope.launch {
+            prefs.studyCorrectToCount.collect { v ->
+                _uiState.update { it.copy(studyCorrectToCount = v) }
             }
         }
     }
@@ -269,6 +279,14 @@ class SettingsViewModel @Inject constructor(
     fun onProblemWordsSourceSelected(source: String) {
         prefs.setProblemWordsSource(source)
         _uiState.update { it.copy(showProblemWordsSourcePicker = false) }
+    }
+
+    // ── Study settings ────────────────────────────────────────────────────────
+    fun onShowStudyCorrectToCountPicker() = _uiState.update { it.copy(showStudyCorrectToCountPicker = true) }
+    fun onDismissStudyCorrectToCountPicker() = _uiState.update { it.copy(showStudyCorrectToCountPicker = false) }
+    fun onStudyCorrectToCountSelected(n: Int) {
+        prefs.setStudyCorrectToCount(n)
+        _uiState.update { it.copy(showStudyCorrectToCountPicker = false) }
     }
 
     // ── Problem words block ────────────────────────────────────────────────────

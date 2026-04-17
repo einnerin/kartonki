@@ -13,8 +13,9 @@ data class SetRarityCount(
     val count: Int,
 )
 
-/** Minimum progress level per (setId, wordId) row — returned by the batch progress query. */
+/** Progress per (setId, wordId) row — returned by the batch progress query. */
 data class SetProgressRow(
     val setId: Long,
     val level: Int,
+    val correctCount: Int,
 )

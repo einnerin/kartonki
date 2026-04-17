@@ -24,14 +24,15 @@ class ProgressRepository @Inject constructor(private val progressDao: ProgressDa
         progressDao.getProgressForWords(wordIds).associateBy { it.wordId }
 
     /**
-     * Fetches progress levels for all words in the given sets in a single query.
-     * Returns a map from setId → count of words with level > 0 (i.e. introduced).
+     * Fetches progress for all words in the given sets in a single query.
+     * Returns a map from setId → count of words where correctCount >= [threshold].
+     * Default threshold of 1 preserves original behaviour (any correct answer counts).
      */
-    suspend fun getIntroducedCountsForSets(setIds: List<Long>): Map<Long, Int> {
+    suspend fun getIntroducedCountsForSets(setIds: List<Long>, threshold: Int = 1): Map<Long, Int> {
         val rows = progressDao.getProgressLevelsForSets(setIds)
         val result = mutableMapOf<Long, Int>()
         for (row in rows) {
-            if (row.level > 0) result[row.setId] = (result[row.setId] ?: 0) + 1
+            if (row.correctCount >= threshold) result[row.setId] = (result[row.setId] ?: 0) + 1
         }
         return result
     }

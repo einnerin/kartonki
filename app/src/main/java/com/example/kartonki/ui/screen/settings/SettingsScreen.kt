@@ -514,6 +514,29 @@ fun SettingsScreen(
                 )
             }
 
+            // ── Study ──────────────────────────────────────────────────────────
+            SectionHeader("Обучение")
+            SettingsRow(label = "Верных ответов для освоения слова") {
+                Text(
+                    "${state.studyCorrectToCount}",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowStudyCorrectToCountPicker() },
+                )
+            }
+
+            if (state.showStudyCorrectToCountPicker) {
+                IntPickerDialog(
+                    title = "Верных ответов для освоения слова",
+                    subtitle = "Сколько раз нужно правильно ответить на слово в обычных занятиях, чтобы оно засчиталось в прогресс набора",
+                    options = listOf(1, 2, 3, 5, 10),
+                    selected = state.studyCorrectToCount,
+                    onSelect = viewModel::onStudyCorrectToCountSelected,
+                    onDismiss = viewModel::onDismissStudyCorrectToCountPicker,
+                )
+            }
+
             // ── Problem words ──────────────────────────────────────────────────
             SectionHeader("Работа над ошибками")
             SettingsRow(label = "Включить режим работы над ошибками") {
@@ -523,7 +546,7 @@ fun SettingsScreen(
                 )
             }
             if (state.problemWordsEnabled) {
-                SettingsRow(label = "Минимум попыток для попадания в список") {
+                SettingsRow(label = "Попыток для попадания в список ошибок") {
                     Text(
                         "${state.problemWordsMinEncounters}",
                         style = MaterialTheme.typography.bodyMedium,
@@ -532,7 +555,7 @@ fun SettingsScreen(
                         modifier = Modifier.clickable { viewModel.onShowMinEncountersPicker() },
                     )
                 }
-                SettingsRow(label = "Правильных ответов для усвоения слова") {
+                SettingsRow(label = "Верных ответов для выхода из списка ошибок") {
                     Text(
                         "${state.problemWordsCorrectToLearn}",
                         style = MaterialTheme.typography.bodyMedium,
@@ -545,8 +568,8 @@ fun SettingsScreen(
 
             if (state.showMinEncountersPicker) {
                 IntPickerDialog(
-                    title = "Минимум попыток",
-                    subtitle = "Слово попадёт в список ошибок после этого числа попыток",
+                    title = "Попыток для попадания в список ошибок",
+                    subtitle = "Слово попадёт в список ошибок, если доля неверных ответов высока и было сделано не менее этого числа попыток",
                     options = listOf(1, 2, 3, 5, 10),
                     selected = state.problemWordsMinEncounters,
                     onSelect = viewModel::onMinEncountersSelected,
@@ -555,8 +578,8 @@ fun SettingsScreen(
             }
             if (state.showCorrectToLearnPicker) {
                 IntPickerDialog(
-                    title = "Правильных ответов для усвоения",
-                    subtitle = "Столько раз нужно правильно ответить в режиме работы над ошибками, чтобы слово считалось усвоенным",
+                    title = "Верных ответов для выхода из списка ошибок",
+                    subtitle = "Сколько раз нужно правильно ответить на слово в режиме работы над ошибками, чтобы оно покинуло список",
                     options = listOf(1, 2, 3, 5),
                     selected = state.problemWordsCorrectToLearn,
                     onSelect = viewModel::onCorrectToLearnSelected,
