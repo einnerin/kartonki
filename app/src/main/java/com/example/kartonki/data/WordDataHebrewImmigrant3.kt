@@ -70,7 +70,7 @@ object WordDataHebrewImmigrant3 {
         WordEntity(
             id = 103006, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work", transliteration = "tafkid",
-            original = "תַּפְקִיד", translation = "должность / роль",
+            original = "תַּפְקִיד", translation = "роль; функциональная обязанность",
             definition = "הַמִּשְׂרָה אוֹ הַתְּפקִיד שֶׁהָעוֹבֵד מְמַלֵּא בְּחֶבְרָה.",
             definitionNative = "Должность или роль, которую выполняет сотрудник в компании.",
             example = "מָה הַתַּפְקִיד שֶׁלְּךָ בַּחֶבְרָה הַחֲדָשָׁה?",

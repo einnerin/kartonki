@@ -460,12 +460,12 @@ object WordDataHebrewBatch5 {
         ),
         WordEntity(
             id = 103925, setId = 1039, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "klulot",
-            original = "כְּלוּלוֹת", translation = "свадьба (архаич., поэт.)",
-            definition = "מִלָּה עַתִּיקָה וּפִּיּוּטִית לַחֲתוּנָּה, מְשֻׁמֶּשֶׁת בְּשִׁירָה וְסִפְרוּת.",
-            definitionNative = "Архаичное и поэтическое слово для свадьбы, используемое в стихах и литературе.",
-            example = "בְּיוֹם כְּלוּלוֹתָם שָׂרוּ שִׁירֵי אַהֲבָה עַתִּיקִים.",
-            exampleNative = "В день כְּלוּלוֹת они пели старинные песни о любви.",
+            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "taba'at",
+            original = "טַבָּעַת", translation = "обручальное кольцо",
+            definition = "טַבָּעַת זָהָב הַמּוּעֶנֶקֶת בְּחוּפָּה כְּסֵמֶל לַנִּישּׂוּאִין.",
+            definitionNative = "Золотое кольцо, надеваемое под хупой как символ бракосочетания.",
+            example = "הֶחָתָן הֵנִיחַ טַבָּעַת עַל אֶצְבַּע הַכַּלָּה.",
+            exampleNative = "Жених надел טַבָּעַת на палец невесты.",
         ),
 
         // ──────────────────────────────────────────────────────
@@ -601,7 +601,7 @@ object WordDataHebrewBatch5 {
         WordEntity(
             id = 104015, setId = 1040, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ulpan_grammar", transliteration = "hagaya",
-            original = "הֲגִיָּה", translation = "произношение",
+            original = "הֲגִיָּה", translation = "произношение (артикуляция звуков)",
             definition = "הַדֶּרֶךְ שֶׁבָּהּ מַגִּים מִלִּים בְּשָׂפָה.",
             definitionNative = "Способ произнесения слов в языке.",
             example = "הֲגִיָּה שֶׁל הָאָיִן וְהָחֵית קָשָׁה לְרוּסִים.",

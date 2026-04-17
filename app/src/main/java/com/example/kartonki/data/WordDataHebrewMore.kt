@@ -1254,7 +1254,7 @@ object WordDataHebrewMore {
         WordEntity(
             id = 101317, setId = 1013, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "filming", transliteration = "misgeret",
-            original = "מִסְגֶּרֶת", translation = "кадр / рамка",
+            original = "מִסְגֶּרֶת", translation = "кадр (отдельный фрейм фильма)",
             definition = "תְּמוּנָה בּוֹדֶדֶת בְּסֶרֶט הַקּוֹלְנוֹעַ.",
             definitionNative = "Отдельное изображение в кинофильме.",
             example = "כָּל מִסְגֶּרֶת בַּסֶּרֶט חֲשׁוּבָה לָאוּמְנוּת.",

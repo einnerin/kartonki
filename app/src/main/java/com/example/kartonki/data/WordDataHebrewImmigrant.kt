@@ -159,12 +159,12 @@ object WordDataHebrewImmigrant {
         ),
         WordEntity(
             id = 102216, setId = 1022, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "documents", transliteration = "tofes",
-            original = "טוֹפַס", translation = "бланк / форма",
-            definition = "מִסְמָךְ מֻדְפָּס עִם שֵׂדוֹת לְמִלּוּי מִידָע אִישִׁי.",
-            definitionNative = "Печатный документ с полями для заполнения личных данных.",
-            example = "מִלֵּאתִי אֶת הַטּוֹפַס בְּמִשְׂרַד הַמִּשְׂרָד הַפְּנִים.",
-            exampleNative = "Я заполнил טוֹפַס в офисе МВД.",
+            pos = "noun", semanticGroup = "documents", transliteration = "hatshaara",
+            original = "הַצְהָרָה", translation = "декларация / заявление",
+            definition = "מִסְמָךְ רְשְׁמִי שֶׁבּוֹ אָדָם מַצְהִיר עַל עֻבְדוֹת אוֹ כַּוָּנוֹתָיו.",
+            definitionNative = "Официальный документ, в котором человек заявляет о фактах или намерениях.",
+            example = "חָתַמְתִּי עַל הַצְהָרָה שֶׁכָּל הַפְּרָטִים נְכוֹנִים.",
+            exampleNative = "Я подписал הַצְהָרָה о том, что все данные верны.",
         ),
         WordEntity(
             id = 102217, setId = 1022, languagePair = "he-ru", rarity = "RARE",
@@ -530,7 +530,7 @@ object WordDataHebrewImmigrant {
         WordEntity(
             id = 102416, setId = 1024, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "banking", transliteration = "tenuah",
-            original = "תְּנוּעָה", translation = "банковская операция / транзакция",
+            original = "תְּנוּעָה", translation = "движение по счёту (запись о транзакции)",
             definition = "פְּעוּלַּת הַעֲבָרָה, הַפְקָדָה אוֹ מְשִׁיכָה הַמּוֹפִיעָה בְּגִיל-דְּפוּס הַחֶשְׁבּוֹן.",
             definitionNative = "Операция перевода, внесения или снятия, отображаемая в выписке по счёту.",
             example = "בָּדַקְתִּי אֶת הַתְּנוּעוֹת הָאַחֲרוֹנוֹת בַּחֶשְׁבּוֹן.",

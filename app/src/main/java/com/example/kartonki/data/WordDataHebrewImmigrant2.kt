@@ -457,12 +457,12 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102808, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "health", transliteration = "ke'ev gargeret",
-            original = "כְּאֵב גַּרְגֶּרֶת", translation = "боль в горле",
-            definition = "כְּאֵב הַמּוּרְגָּשׁ בְּגָרוֹן, לְרוֹב עַל רֶקַע זִיהוּם אוֹ וִירוּס.",
-            definitionNative = "Боль в горле, обычно на фоне инфекции или вируса.",
-            example = "יֵשׁ לִי כְּאֵב גַּרְגֶּרֶת שָׁלוֹשָׁה יָמִים — צָרִיךְ לָלֶכֶת לָרוֹפֵא.",
-            exampleNative = "У меня כְּאֵב גַּרְגֶּרֶת три дня — нужно идти к врачу.",
+            pos = "noun", semanticGroup = "health", transliteration = "nezelet",
+            original = "נְזֶלֶת", translation = "насморк / простуда",
+            definition = "הֶפְרָשָׁה נוֹזְלִית מֵהָאַף הַנַּגְרֶמֶת מִזִּיהוּם אוֹ אַלֶּרְגְּיָה.",
+            definitionNative = "Выделения из носа, вызванные инфекцией или аллергией.",
+            example = "יֵשׁ לִי נְזֶלֶת — כְּנִרְאֶה תָּפַסְתִּי צִינֶּנֶת.",
+            exampleNative = "У меня נְזֶלֶת — похоже, я простудился.",
         ),
         WordEntity(
             id = 102809, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",

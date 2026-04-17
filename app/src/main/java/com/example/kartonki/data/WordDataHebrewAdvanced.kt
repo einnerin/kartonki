@@ -831,7 +831,7 @@ object WordDataHebrewAdvanced {
             example = "חֶמְלָה לזולת היא מידה מוסרית גבוהה.",
             exampleNative = "חֶמְלָה к ближнему — высокое нравственное качество.",
         ),
-                WordEntity(id = 101623, original = "אַהֲדָה", transliteration = "[ahaˈda]", translation = "сочувствие; симпатия", rarity = "RARE", setId = 1016, languagePair = "he-ru", pos = "noun", semanticGroup = "emotions",
+                WordEntity(id = 101623, original = "אַהֲדָה", transliteration = "[ahaˈda]", translation = "симпатия; расположение (тёплое отношение)", rarity = "RARE", setId = 1016, languagePair = "he-ru", pos = "noun", semanticGroup = "emotions",
             definition = "a feeling of warmth or approval towards someone, or concern for their wellbeing",
             example = "The candidate won ahada from voters with her story of overcoming hardship.",
             definitionNative = "Чувство тепла или одобрения по отношению к кому-либо, или беспокойство об их благополучии.",

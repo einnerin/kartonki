@@ -69,12 +69,12 @@ object WordDataHebrewBatch7 {
         ),
         WordEntity(
             id = 104406, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "aglat kniyot",
-            original = "עֶגְלַת קְנִיּוֹת", translation = "тележка для покупок",
-            definition = "עֶגְלָה עַל גַּלְגַּלִּים הַמְּשַׁמֶּשֶׁת לְהוֹבָלַת מוּצָרִים בְּסוּפֶּרְמַרְקֶט.",
-            definitionNative = "Тележка на колёсах для перевозки товаров в супермаркете.",
-            example = "לָקַחְתִּי עֶגְלַת קְנִיּוֹת כִּי תִּכְנַנְתִּי לִקְנוֹת הַרְבֵּה.",
-            exampleNative = "Я взял עֶגְלַת קְנִיּוֹת, потому что планировал купить много.",
+            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "kasai",
+            original = "קַסָּאי", translation = "кассир",
+            definition = "עוֹבֵד הָעוֹמֵד בַּקֻּפָּה וּמְטַפֵּל בְּתַשְׁלוּמֵי הַקּוֹנִים.",
+            definitionNative = "Работник, который стоит за кассой и принимает оплату.",
+            example = "שָׁאַלְתִּי אֶת הַקַּסָּאי אֵיפֹה הַמּוּצָר שֶׁחִפַּשְׂתִּי.",
+            exampleNative = "Я спросил קַסָּאי, где находится нужный мне товар.",
         ),
         WordEntity(
             id = 104407, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",

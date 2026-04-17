@@ -25,7 +25,7 @@ object WordDataHebrewBatch10 {
         WordEntity(
             id = 105301, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "holiday_basics", transliteration = "yom tov",
-            original = "יוֹם טוֹב", translation = "праздник; с праздником!",
+            original = "יוֹם טוֹב", translation = "праздничный день; йом-тов (религ. праздник)",
             definition = "יוֹם חַג דָּתִי אוֹ לְאֻמִּי; גַּם בִּרְכַּת חַג.",
             definitionNative = "Религиозный или национальный праздник; также праздничное приветствие.",
             example = "חַג שָׂמֵחַ — יוֹם טוֹב לְכָל הַמִּשְׁפָּחָה!",

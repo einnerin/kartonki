@@ -700,9 +700,13 @@ object WordDataHebrewBatch8 {
             example = "לְפִי תַּקָּנוֹן הַבִּנְיָן אָסוּר לְנַגֵּן כֵּלֵי נְגִינָה לְאַחַר שַׁעַת עֶשֶׂר בָּעֶרֶב.",
             exampleNative = "По תַּקָּנוֹן הַבִּנְיָן запрещено играть на музыкальных инструментах после десяти вечера.",
         ),
-        WordEntity(id = 104925, setId = 1049, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "building_common", transliteration = "knisa lavinyan",
-            original = "כְּנִיסָה לַבִּנְיָן", translation = "вход в здание"),
+        WordEntity(id = 104925, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
+            pos = "noun", semanticGroup = "building_common", transliteration = "miftea'kh",
+            original = "מִפְתֵּחַ", translation = "ключ",
+            definition = "כְּלִי מַתַּכְתִּי לִפְתִיחַת מַנְעוּל.",
+            definitionNative = "Металлический предмет для открывания замка.",
+            example = "שָׁכַחְתִּי אֶת הַמִּפְתֵּחַ בַּבַּיִת.",
+            exampleNative = "Я забыл מִפְתֵּחַ дома."),
 
 
     )
