@@ -546,7 +546,7 @@ fun SettingsScreen(
                 )
             }
             if (state.problemWordsEnabled) {
-                SettingsRow(label = "Попыток для попадания в список ошибок") {
+                SettingsRow(label = "Неверных ответов для попадания в список ошибок") {
                     Text(
                         "${state.problemWordsMinEncounters}",
                         style = MaterialTheme.typography.bodyMedium,
@@ -568,8 +568,8 @@ fun SettingsScreen(
 
             if (state.showMinEncountersPicker) {
                 IntPickerDialog(
-                    title = "Попыток для попадания в список ошибок",
-                    subtitle = "Слово попадёт в список ошибок, если доля неверных ответов высока и было сделано не менее этого числа попыток",
+                    title = "Неверных ответов для попадания в список ошибок",
+                    subtitle = "Слово попадёт в список ошибок, если накопилось не менее этого числа неверных ответов",
                     options = listOf(1, 2, 3, 5, 10),
                     selected = state.problemWordsMinEncounters,
                     onSelect = viewModel::onMinEncountersSelected,
