@@ -109,7 +109,7 @@ object WordDataHebrewBatch22 {
         WordEntity(id = 108908, setId = 1089, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "זִיכּוּי", translation = "оправдание, оправдательный приговор"),
         WordEntity(id = 108909, setId = 1089, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כֶּתֶב אִישּׁוּם", translation = "обвинительное заключение"),
+            original = "עֲבֵרָה פְּלִילִית", translation = "уголовное преступление"),
         WordEntity(id = 108910, setId = 1089, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "פִּצּוּיִים", translation = "компенсация, возмещение ущерба"),
         WordEntity(id = 108911, setId = 1089, languagePair = "he-ru", rarity = "UNCOMMON",

@@ -405,12 +405,12 @@ object WordDataHebrewBatch12 {
         ),
         WordEntity(
             id = 106017, setId = 1060, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "tech_architecture", transliteration = "algoritm",
-            original = "אַלְגּוֹרִיתְם", translation = "алгоритм",
-            definition = "רְצִיפַת שְׁלָבִים מוּגְדֶרֶת לְפִּתְרוֹן בְּעָיָה אוֹ לְבִּצּוּעַ מְשִׁימָה.",
-            definitionNative = "Чётко определённая последовательность шагов для решения задачи или выполнения операции.",
-            example = "אַלְגּוֹרִיתְם הַמִּיוּן הַיָּעִיל חָסַךְ זְמַן עִיבּוּד רַב.",
-            exampleNative = "Эффективный алгоритм сортировки сэкономил много процессорного времени.",
+            pos = "noun", semanticGroup = "tech_architecture", transliteration = "kod reviyu",
+            original = "קוֹד רֵיבְיוּ", translation = "код-ревью; проверка кода коллегами",
+            definition = "תַּהֲלִיךְ שֶׁבּוֹ מְפַתְּחִים אֲחֵרִים בוֹדְקִים שִׁינּוּיֵי קוֹד לְפְנֵי מִיזוּגָם לַסִּנִיף הָרָאשִׁי.",
+            definitionNative = "Процесс, при котором другие разработчики проверяют изменения кода перед его слиянием в основную ветку.",
+            example = "הַקוֹד רֵיבְיוּ גִּלָּה שְׁגִיאָה קְרִיטִית לִפְנֵי הַפְּרִיסָה.",
+            exampleNative = "קוֹד רֵיבְיוּ обнаружил критическую ошибку перед деплоем.",
         ),
         WordEntity(
             id = 106018, setId = 1060, languagePair = "he-ru", rarity = "RARE",
@@ -535,12 +535,12 @@ object WordDataHebrewBatch12 {
         ),
         WordEntity(
             id = 106106, setId = 1061, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "medical_intern", transliteration = "prognoze",
-            original = "פְּרוֹגְנוֹזָה", translation = "прогноз (исход болезни)",
-            definition = "הֲעֶרָכַת הָרוֹפֵא לְגַבֵּי מַהְלַךְ הַמַּחֲלָה וְהַסִּכּוּיִים לְהַחְלָמָה.",
-            definitionNative = "Оценка врача относительно течения болезни и шансов на выздоровление.",
-            example = "הַפְּרוֹגְנוֹזָה לַחוֹלֶה טוֹבָה לְאַחַר הַנִּיתּוּחַ.",
-            exampleNative = "פְּרוֹגְנוֹזָה для пациента хорошая после операции.",
+            pos = "noun", semanticGroup = "medical_intern", transliteration = "minun",
+            original = "מִנּוּן", translation = "дозировка; доза препарата",
+            definition = "כַּמּוּת הַתְּרוּפָה הַנִּיתֶּנֶת לַחוֹלֶה בְּכָל מָנָה וּבְמֶשֶׁךְ הַיּוֹם.",
+            definitionNative = "Количество лекарства, назначаемого пациенту за один приём и в течение дня.",
+            example = "הָרוֹפֵא קָבַע אֶת הַמִּנּוּן לְפִי מִשְׁקַל הַחוֹלֶה.",
+            exampleNative = "Врач определил מִנּוּן исходя из веса пациента.",
         ),
 
         WordEntity(

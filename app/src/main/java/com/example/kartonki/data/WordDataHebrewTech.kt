@@ -476,12 +476,12 @@ object WordDataHebrewTech {
         WordEntity(
             id = 102021, setId = 1020, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "webdev",
-            transliteration = "sfriya",
-            original = "סְפְרִיָּה", translation = "библиотека (кода)",
-            definition = "אוסף של קטעי קוד מוכנים לשימוש חוזר שמפתחים יכולים לייבא לפרויקט.",
-            definitionNative = "Набор готовых фрагментов кода для повторного использования, которые разработчики могут подключать к проекту.",
-            example = "ייבאתי סְפְרִיָּה לעיבוד תאריכים בפרויקט.",
-            exampleNative = "Я подключил סְפְרִיָּה для работы с датами в проекте.",
+            transliteration = "nekudat kitse",
+            original = "נְקוּדַת קְצֶה", translation = "конечная точка (endpoint)",
+            definition = "כתובת URL ספציפית בשרת המאפשרת לקבל בקשות מלקוחות ולהחזיר תגובה.",
+            definitionNative = "Конкретный URL на сервере, принимающий запросы от клиентов и возвращающий ответ.",
+            example = "הוֹסַפְתִּי נְקוּדַת קְצֶה חֲדָשָׁה לְטִיפּוּל בְּבַקָּשׁוֹת POST.",
+            exampleNative = "Я добавил новую נְקוּדַת קְצֶה для обработки POST-запросов.",
         ),
         WordEntity(
             id = 102022, setId = 1020, languagePair = "he-ru", rarity = "UNCOMMON",

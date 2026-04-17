@@ -213,12 +213,12 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104722, setId = 1047, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mall_structure", transliteration = "koma",
-            original = "קוֹמָה", translation = "этаж (в торговом центре)",
-            definition = "רָמָה אַחַת בְּקַנְיוֹן שֶׁבָּהּ נִמְצָאוֹת חֲנוּיּוֹת וּשֵׁרוּתִים שׁוֹנִים.",
-            definitionNative = "Один уровень в торговом центре, на котором расположены магазины и сервисы.",
-            example = "חֲנוּת הָאֵלֶקְטְרוֹנִיקָה נִמְצֵאת בַּקּוֹמָה הַשְּׁלִישִׁית שֶׁל הַקַּנְיוֹן.",
-            exampleNative = "Магазин электроники находится на третьем קוֹמָה торгового центра.",
+            pos = "noun", semanticGroup = "mall_structure", transliteration = "beit okhel",
+            original = "בֵּית אֹכֶל", translation = "фудкорт (зона питания в ТЦ)",
+            definition = "אֲזוֹר בְּקַנְיוֹן הַמְרַכֵּז מֶגְוָן מִסְעָדוֹת וְדוּכְנֵי אֹכֶל תַּחַת קוֹרָה אַחַת.",
+            definitionNative = "Зона в торговом центре, объединяющая множество ресторанов и точек питания под одной крышей.",
+            example = "אָכַלְנוּ בְּבֵית הָאֹכֶל שֶׁל הַקַּנְיוֹן לְאַחַר הַקְּנִיּוֹת.",
+            exampleNative = "Мы поели в בֵּית אֹכֶל торгового центра после покупок.",
         ),
         WordEntity(
             id = 104723, setId = 1047, languagePair = "he-ru", rarity = "RARE",

@@ -51,12 +51,12 @@ object WordDataHebrewBatch7 {
         ),
         WordEntity(
             id = 104404, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "tor",
-            original = "תּוֹר", translation = "очередь",
-            definition = "שׁוּרַת אֲנָשִׁים הַמַּמְתִּינִים לְקַבֵּל שֵׁרוּת אוֹ לְשַׁלֵּם.",
-            definitionNative = "Ряд людей, ожидающих получения услуги или оплаты.",
-            example = "הַתּוֹר בַּסּוּפֶּר הָיָה אָרֹךְ לִפְנֵי שַׁבָּת.",
-            exampleNative = "תּוֹר в магазине был длинным перед субботой.",
+            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "kupon",
+            original = "קֻפּוֹן", translation = "купон; скидочный талон",
+            definition = "שׁוֹבֵר הַמְּאַפְשֵׁר הֲנָחָה אוֹ הֲטָבָה בְּרְכִישַׁת מוּצָרִים בַּסּוּפֶּרְמַרְקֵט.",
+            definitionNative = "Ваучер, дающий скидку или льготу при покупке товаров в супермаркете.",
+            example = "הִשְׁתַּמַּשְׁתִּי בְּקֻפּוֹן וְחָסַכְתִּי עֶשְׂרִים אָחוּז עַל הַקְּנִיָּה.",
+            exampleNative = "Я использовал קֻפּוֹן и сэкономил двадцать процентов на покупке.",
         ),
         WordEntity(
             id = 104405, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
