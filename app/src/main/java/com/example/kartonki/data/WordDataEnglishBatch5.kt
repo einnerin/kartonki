@@ -352,7 +352,7 @@ object WordDataEnglishBatch5 {
             definitionNative = "Данные, измеряющие эффективность контента в социальных сетях.",
             exampleNative = "Каждую неделю она проверяет свои metrics, чтобы видеть, какие посты сработали лучше."),
 
-                WordEntity(id = 25724, original = "live stream", transliteration = "[laɪv striːm]", translation = "прямая трансляция", rarity = "RARE", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media",
+                WordEntity(id = 25724, original = "live stream", transliteration = "[laɪv striːm]", translation = "прямая трансляция", rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media",
             definition = "a video broadcast transmitted over the internet in real time",
             example = "Thousands of viewers tuned in to watch the live stream of the concert.",
             definitionNative = "Видеотрансляция, передаваемая через интернет в режиме реального времени.",

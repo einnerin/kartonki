@@ -37,7 +37,7 @@ object WordDataEnglishBatch4 {
             definitionNative = "Упражнение на всё тело: приседание, отжимание и прыжок в одном движении.",
             example = "Do ten burpees as fast as you can to raise your heart rate.",
             exampleNative = "Двадцать burpee подряд — отличная кардиотренировка.",
-            rarity = "COMMON", setId = 253, languagePair = "en-ru", pos = "noun", semanticGroup = "fitness_exercises"),
+            rarity = "UNCOMMON", setId = 253, languagePair = "en-ru", pos = "noun", semanticGroup = "fitness_exercises"),
 
         WordEntity(id = 25303, original = "cool-down", transliteration = "[ˈkuːl daʊn]", translation = "заминка (после тренировки)",
             definition = "Gentle exercise done after a workout to help the body recover.",
@@ -272,7 +272,7 @@ object WordDataEnglishBatch4 {
             definitionNative = "Хроническое заболевание дыхательных путей, вызывающее затруднение дыхания и хрипы.",
             example = "Use an inhaler immediately during an asthma attack.",
             exampleNative = "При приступе asthma нужно сразу воспользоваться ингалятором.",
-            rarity = "UNCOMMON", setId = 254, languagePair = "en-ru", pos = "noun", semanticGroup = "first_aid_conditions"),
+            rarity = "COMMON", setId = 254, languagePair = "en-ru", pos = "noun", semanticGroup = "first_aid_conditions"),
 
                 WordEntity(id = 25413, original = "dizziness", transliteration = "[ˈdɪzɪnəs]", translation = "головокружение", rarity = "UNCOMMON", setId = 254, languagePair = "en-ru", pos = "noun", semanticGroup = "first_aid",
             definition = "a feeling of being unsteady or faint",
@@ -473,14 +473,14 @@ object WordDataEnglishBatch4 {
             definitionNative = "Установление знакомств, которые могут быть полезны для карьеры.",
             example = "Networking at industry events helped her land her dream job.",
             exampleNative = "Без networking в этой сфере сложно найти хорошую работу.",
-            rarity = "RARE", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_process"),
+            rarity = "UNCOMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_process"),
 
         WordEntity(id = 25518, original = "onboarding", transliteration = "[ˈɒnbɔːrdɪŋ]", translation = "адаптация нового сотрудника",
             definition = "The process of integrating a new employee into a company.",
             definitionNative = "Процесс интеграции нового сотрудника в компанию.",
             example = "Our onboarding programme lasts two weeks.",
             exampleNative = "Onboarding включает знакомство с командой и обучение системам.",
-            rarity = "RARE", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_process"),
+            rarity = "UNCOMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_process"),
 
         WordEntity(id = 25519, original = "competency", transliteration = "[ˈkɒmpɪtənsi]", translation = "компетенция",
             definition = "A specific skill or ability required to perform a job effectively.",

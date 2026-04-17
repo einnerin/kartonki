@@ -105,7 +105,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Блюдо без мяса или человек, не употребляющий мясо.",
             example = "Do you have any vegetarian options on the menu?",
             exampleNative = "Есть ли у вас vegetarian блюда? Я не ем мясо.",
-            rarity = "UNCOMMON", setId = 250, languagePair = "en-ru", pos = "adjective", semanticGroup = "restaurant_diet"),
+            rarity = "COMMON", setId = 250, languagePair = "en-ru", pos = "adjective", semanticGroup = "restaurant_diet"),
 
         WordEntity(id = 25013, original = "intolerance", transliteration = "[ɪnˈtɒlərəns]", translation = "непереносимость (пищевая)",
             definition = "A digestive difficulty causing discomfort when certain foods are consumed.",
@@ -119,14 +119,14 @@ object WordDataEnglishBatch3 {
             definitionNative = "Имеющий очень слабый или никакой выраженный вкус; безвкусный.",
             example = "The soup was too bland — it needed more salt and pepper.",
             exampleNative = "Блюдо вышло bland — не хватает специй.",
-            rarity = "COMMON", setId = 250, languagePair = "en-ru", pos = "adjective", semanticGroup = "restaurant_taste"),
+            rarity = "UNCOMMON", setId = 250, languagePair = "en-ru", pos = "adjective", semanticGroup = "restaurant_taste"),
 
         WordEntity(id = 25015, original = "grilled", transliteration = "[ɡrɪld]", translation = "приготовленный на гриле",
             definition = "Cooked on a grill over direct heat.",
             definitionNative = "Приготовленный на решётке над открытым огнём или жаровне.",
             example = "I'll have the grilled chicken with vegetables, please.",
             exampleNative = "Grilled стейк оказался сочным и ароматным.",
-            rarity = "UNCOMMON", setId = 250, languagePair = "en-ru", pos = "adjective", semanticGroup = "restaurant_cooking"),
+            rarity = "COMMON", setId = 250, languagePair = "en-ru", pos = "adjective", semanticGroup = "restaurant_cooking"),
 
         WordEntity(id = 25016, original = "steamed", transliteration = "[stiːmd]", translation = "приготовленный на пару",
             definition = "Cooked by exposure to steam rather than boiling or frying.",
@@ -199,7 +199,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Документ, выдаваемый сотруднику с указанием зарплаты и удержаний.",
             example = "Check your payslip to see how much tax was deducted this month.",
             exampleNative = "Сохраняй каждый payslip — он понадобится для налоговой декларации.",
-            rarity = "COMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_basics"),
+            rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_basics"),
 
         WordEntity(id = 25102, original = "transfer", transliteration = "[ˈtrænsˌfɜːr]", translation = "перевод (денег)",
             definition = "The movement of money from one bank account to another.",
@@ -227,7 +227,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Лицо, берущее на себя юридическую ответственность за долг или обязательство другого человека.",
             example = "My father agreed to act as surety for my student loan.",
             exampleNative = "Банк потребовал surety прежде чем одобрить крупный кредит.",
-            rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_credit"),
+            rarity = "RARE", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_credit"),
 
                 WordEntity(id = 25106, original = "cheque", transliteration = "[tʃek]", translation = "чек (банковский)", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "a written order to a bank to pay a specific amount from someone's account",
@@ -235,7 +235,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Письменное распоряжение банку выплатить определённую сумму со счёта.",
             exampleNative = "Она оплатила счёт cheque вместо карты."),
 
-                WordEntity(id = 25107, original = "borrow", transliteration = "[ˈbɒrəʊ]", translation = "занимать (деньги), брать в долг", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "verb", semanticGroup = "banking",
+                WordEntity(id = 25107, original = "borrow", transliteration = "[ˈbɒrəʊ]", translation = "занимать (деньги), брать в долг", rarity = "COMMON", setId = 251, languagePair = "en-ru", pos = "verb", semanticGroup = "banking",
             definition = "to take money from a bank or person with the intention of paying it back",
             example = "They borrowed money from the bank to buy a new car.",
             definitionNative = "Взять деньги у банка или человека с намерением вернуть.",
@@ -253,7 +253,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Книга или файл для записи всех финансовых операций организации.",
             example = "The accountant updated the ledger after every transaction.",
             exampleNative = "Все расходы записаны в ledger — можно проверить каждую операцию.",
-            rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_basics"),
+            rarity = "RARE", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_basics"),
 
                 WordEntity(id = 25110, original = "allowance", transliteration = "[əˈlaʊəns]", translation = "надбавка; пособие", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "a sum of money given regularly for a specific purpose",
@@ -266,7 +266,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Деньги, отправленные за рубеж, особенно трудовым мигрантом своей семье.",
             example = "He sends a monthly remittance to his parents back home.",
             exampleNative = "Ежемесячный remittance помогает семье в другой стране.",
-            rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_operations"),
+            rarity = "RARE", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_operations"),
 
                 WordEntity(id = 25112, original = "savings account", transliteration = "[ˈseɪvɪŋz əˈkaʊnt]", translation = "сберегательный счёт", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "a bank account that earns interest on deposited money",
@@ -292,7 +292,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Плата за услугу, особенно взимаемая банком.",
             example = "The bank charges a monthly fee for the account.",
             exampleNative = "За международный перевод берут fee в размере 1%.",
-            rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_basics"),
+            rarity = "COMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_basics"),
 
                 WordEntity(id = 25116, original = "standing order", transliteration = "[ˈstændɪŋ ˈɔːrdər]", translation = "постоянное поручение (автоплатёж)", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "an instruction to a bank to make regular fixed payments from an account",
@@ -385,7 +385,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Вращающийся конвейер в аэропорту, доставляющий зарегистрированный багаж пассажирам.",
             example = "We waited twenty minutes at the carousel for our bags.",
             exampleNative = "Жди чемодан у carousel — номер указан на табло.",
-            rarity = "COMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_basics"),
+            rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_basics"),
 
         WordEntity(id = 25205, original = "carry-on", transliteration = "[ˈkæri ɒn]", translation = "ручная кладь",
             definition = "A small bag or suitcase you take into the cabin with you on a flight.",
@@ -441,7 +441,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Просторный центральный зал внутри аэровокзала, через который пассажиры проходят к выходам.",
             example = "We met by the information desk in the main concourse.",
             exampleNative = "На concourse аэропорта множество кафе и магазинов.",
-            rarity = "COMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_basics"),
+            rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_basics"),
 
                 WordEntity(id = 25213, original = "boarding area", transliteration = "[ˈbɔːrdɪŋ ˈeəriə]", translation = "зона посадки (в аэропорту)", rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport",
             definition = "the section of an airport where passengers wait to board their flight",
