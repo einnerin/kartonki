@@ -276,12 +276,12 @@ object WordDataHebrewBatch17 {
         ),
         WordEntity(
             id = 107402, setId = 1074, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "travel", transliteration = "malon",
-            original = "מָלוֹן", translation = "гостиница / отель",
-            definition = "מֵקוֹם לִינָה זְמַנִּי לְתַיָּרִים.",
-            definitionNative = "Временное место ночлега для туристов.",
-            example = "הַמָּלוֹן שֶׁהִזְמַנּוּ נִמְצָא בְּמֶרְכַּז הָעִיר.",
-            exampleNative = "Гостиница, которую мы заказали, находится в центре города.",
+            pos = "noun", semanticGroup = "travel", transliteration = "sdeh teufa",
+            original = "שְׂדֵה תְּעוּפָה", translation = "аэропорт",
+            definition = "מָקוֹם שֶׁמִּמֶּנּוּ מַמְרִיאִים וְנוֹחֲתִים מְטוֹסִים.",
+            definitionNative = "Место, откуда взлетают и куда приземляются самолёты.",
+            example = "הִגַּעְנוּ לִשְׂדֵה הַתְּעוּפָה שָׁעָה לִפְנֵי הַטִּיסָה.",
+            exampleNative = "Мы приехали в аэропорт за час до вылета.",
         ),
         WordEntity(
             id = 107403, setId = 1074, languagePair = "he-ru", rarity = "COMMON",

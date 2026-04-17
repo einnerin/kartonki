@@ -356,12 +356,12 @@ object WordDataEnglishBatch4 {
 
         // ── Set 255: Собеседование на работу ─────────────────────────────────
 
-        WordEntity(id = 25501, original = "onboard", transliteration = "[ˌɒnˈbɔːrd]", translation = "адаптировать нового сотрудника",
-            definition = "To integrate a new employee into a company by training and providing information.",
-            definitionNative = "Ввести нового сотрудника в работу через обучение и предоставление информации.",
-            example = "We onboard all new hires during their first week.",
-            exampleNative = "Менеджер поможет onboard тебя в первые дни работы.",
-            rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "verb", semanticGroup = "job_process"),
+        WordEntity(id = 25501, original = "feedback", transliteration = "[ˈfiːdbæk]", translation = "обратная связь",
+            definition = "Comments or information about how well someone is doing, used to improve performance.",
+            definitionNative = "Комментарии или информация о том, насколько хорошо кто-то работает, используемые для улучшения результатов.",
+            example = "Ask your manager for feedback after your first month in the role.",
+            exampleNative = "После собеседования попроси feedback — это помогает расти.",
+            rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_process"),
 
         WordEntity(id = 25502, original = "CV", transliteration = "[ˌsiː ˈviː]", translation = "резюме",
             definition = "A written summary of your education, work experience, and skills (curriculum vitae).",
