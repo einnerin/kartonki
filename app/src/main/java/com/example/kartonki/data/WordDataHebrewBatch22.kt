@@ -39,7 +39,7 @@ object WordDataHebrewBatch22 {
         WordEntity(id = 108805, setId = 1088, languagePair = "he-ru", rarity = "COMMON",
             original = "כֵּימוֹתֶרַפְּיָה", translation = "химиотерапия"),
         WordEntity(id = 108806, setId = 1088, languagePair = "he-ru", rarity = "COMMON",
-            original = "טוֹמוֹגְרַפְיָה", translation = "томография (КТ)"),
+            original = "אֶקוֹ", translation = "эхо-исследование (УЗИ)"),
 
         // UNCOMMON (A2-B1)
         WordEntity(id = 108807, setId = 1088, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -159,7 +159,7 @@ object WordDataHebrewBatch22 {
         WordEntity(id = 109003, setId = 1090, languagePair = "he-ru", rarity = "COMMON",
             original = "סוֹפֵר", translation = "писатель"),
         WordEntity(id = 109004, setId = 1090, languagePair = "he-ru", rarity = "COMMON",
-            original = "שִׁיר", translation = "стихотворение, поэзия"),
+            original = "בַּלָּדָה", translation = "баллада"),
         WordEntity(id = 109005, setId = 1090, languagePair = "he-ru", rarity = "COMMON",
             original = "סִיפּוּר", translation = "рассказ, история"),
         WordEntity(id = 109006, setId = 1090, languagePair = "he-ru", rarity = "COMMON",
