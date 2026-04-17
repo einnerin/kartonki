@@ -65,13 +65,13 @@ object WordDataHebrewBatch35 {
             original = "שְׁמוֹנִים", translation = "восемьдесят"),
         WordEntity(id = 112721, setId = 1127, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תִּשְׁעִים", translation = "девяносто"),
-        WordEntity(id = 112722, setId = 1127, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 112722, setId = 1127, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מִילְיוֹן", translation = "миллион"),
-        WordEntity(id = 112723, setId = 1127, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 112723, setId = 1127, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מִילְיָרְד", translation = "миллиард"),
-        WordEntity(id = 112724, setId = 1127, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 112724, setId = 1127, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "חֲצִי", translation = "половина"),
-        WordEntity(id = 112725, setId = 1127, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 112725, setId = 1127, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "רֶבַע", translation = "четверть"),
 
         // ── Set 1128: Птицы ───────────────────────────────────────────────
@@ -121,9 +121,9 @@ object WordDataHebrewBatch35 {
             original = "קִיוִי", translation = "киви (птица)"),
         WordEntity(id = 112823, setId = 1128, languagePair = "he-ru", rarity = "RARE",
             original = "אֵמוּ", translation = "эму"),
-        WordEntity(id = 112824, setId = 1128, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 112824, setId = 1128, languagePair = "he-ru", rarity = "RARE",
             original = "נַחְלִיאֵלִי", translation = "трясогузка"),
-        WordEntity(id = 112825, setId = 1128, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 112825, setId = 1128, languagePair = "he-ru", rarity = "RARE",
             original = "יַרְקוֹן", translation = "бюльбюль (певчая птица)"),
 
         // ── Set 1129: Насекомые и мелкая живность ─────────────────────────
@@ -173,9 +173,9 @@ object WordDataHebrewBatch35 {
             original = "עָשׁ", translation = "моль"),
         WordEntity(id = 112923, setId = 1129, languagePair = "he-ru", rarity = "RARE",
             original = "גֶּחָלִית", translation = "светлячок"),
-        WordEntity(id = 112924, setId = 1129, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 112924, setId = 1129, languagePair = "he-ru", rarity = "RARE",
             original = "מַנְטִיס", translation = "богомол"),
-        WordEntity(id = 112925, setId = 1129, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 112925, setId = 1129, languagePair = "he-ru", rarity = "RARE",
             original = "שֶׁפִיפוֹן", translation = "гадюка/гюрза"),
     )
 }

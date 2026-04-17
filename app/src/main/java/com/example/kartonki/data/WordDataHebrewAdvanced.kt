@@ -13,7 +13,7 @@ object WordDataHebrewAdvanced {
         WordSetEntity(id = 1014, name = "IT: углублённо",                description = "Архитектура и системы B2/C1",    languagePair = "he-ru", orderIndex = 14),
         WordSetEntity(id = 1015, name = "Работа и карьера",               description = "Офис, должности и карьера B2/C1", languagePair = "he-ru", orderIndex = 15),
         WordSetEntity(id = 1016, name = "Эмоции и характер",              description = "Чувства и черты личности B1/B2", languagePair = "he-ru", orderIndex = 16),
-        WordSetEntity(id = 1017, name = "Абстрактные понятия",            description = "Философия и мышление C1",        languagePair = "he-ru", orderIndex = 17),
+        WordSetEntity(id = 1017, name = "Абстрактные понятия",            description = "Философия и мышление C1/C2",        languagePair = "he-ru", orderIndex = 17),
         WordSetEntity(id = 1018, name = "Компьютерные игры",              description = "Игровая лексика и жанры A2/C2",   languagePair = "he-ru", orderIndex = 18),
     )
 

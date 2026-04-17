@@ -10,9 +10,9 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch10 {
 
     val sets = listOf(
-        WordSetEntity(id = 1053, name = "Праздники",              description = "Еврейские праздники, традиции и обряды A2/B1", languagePair = "he-ru", orderIndex = 53),
+        WordSetEntity(id = 1053, name = "Праздники",              description = "Еврейские праздники, традиции и обряды A2/B2", languagePair = "he-ru", orderIndex = 53),
         WordSetEntity(id = 1054, name = "Банк: углублённо",      description = "Банковское дело, сбережения и инвестиции B2/C1", languagePair = "he-ru", orderIndex = 54),
-        WordSetEntity(id = 1055, name = "Карьера",               description = "Найм, карьера и условия труда A2/B2",           languagePair = "he-ru", orderIndex = 55),
+        WordSetEntity(id = 1055, name = "Карьера",               description = "Найм, карьера и условия труда B2/C1",           languagePair = "he-ru", orderIndex = 55),
     )
 
     val words = listOf(
@@ -221,7 +221,7 @@ object WordDataHebrewBatch10 {
             exampleNative = "На Суккот берут לוּלָב и этрог и произносят благословение.",
         ),
         WordEntity(
-            id = 105323, setId = 1053, languagePair = "he-ru", rarity = "EPIC",
+            id = 105323, setId = 1053, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "holiday_sukkot", transliteration = "etrog",
             original = "אֶתְרוֹג", translation = "этрог (цитрусовый плод Суккота)",
             definition = "פְּרִי הַדָּר עֶגְלַגְלִי שֶׁהוּא אֶחָד מֵאַרְבַּעַת הַמִּינִים בְּחַג הַסֻּכּוֹת.",
@@ -230,7 +230,7 @@ object WordDataHebrewBatch10 {
             exampleNative = "Красивый אֶתְרוֹג иногда стоит несколько сотен шекелей.",
         ),
         WordEntity(
-            id = 105324, setId = 1053, languagePair = "he-ru", rarity = "EPIC",
+            id = 105324, setId = 1053, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "holiday_rosh_hashana", transliteration = "tashlikh",
             original = "תַּשְׁלִיךְ", translation = "Ташлих (обряд символического отбрасывания грехов)",
             definition = "מִנְהַג רֹאשׁ הַשָּׁנָה לָלֶכֶת לְגוּף מַיִם וְלִזְרֹק לְחֵם כְּסֵמֶל לְהַשְׁלָכַת חֲטָאִים.",
@@ -239,7 +239,7 @@ object WordDataHebrewBatch10 {
             exampleNative = "Мы пошли к реке совершить תַּשְׁלִיךְ в Рош а-Шана.",
         ),
         WordEntity(
-            id = 105325, setId = 1053, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 105325, setId = 1053, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "holiday_memorial", transliteration = "yizkor",
             original = "יִזְכּוֹר", translation = "Изкор (поминальная молитва)",
             definition = "תְּפִלַּת זִכָּרוֹן לַנִּפְטָרִים הַנֶּאֱמֶרֶת בְּיוֹם כִּפּוּר וּבִשְׁלוֹשָׁה רְגָלִים.",
@@ -697,7 +697,7 @@ object WordDataHebrewBatch10 {
             exampleNative = "Я получил דְּמֵי הַבְרָאָה в июне — по два дня за каждый год стажа.",
         ),
         WordEntity(
-            id = 105525, setId = 1055, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 105525, setId = 1055, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "job_insurance", transliteration = "bituakh le'umi",
             original = "בִּיטּוּחַ לְאוּמִּי", translation = "Битуах Леуми (Национальное страхование Израиля)",
             definition = "הַמּוֹסָד הַמֶּמְשַׁלְתִּי הָאַחְרַאִי עַל פֶּנְסִיָּה, אַבְטָלָה, לֵידָה וּנְכוּת בְּיִשְׂרָאֵל.",

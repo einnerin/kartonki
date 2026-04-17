@@ -253,7 +253,7 @@ object WordDataHebrewBatch19 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107925, setId = 1079, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107925, setId = 1079, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "theatre", transliteration = "efekt Brekht",
             original = "אֵפֶקְט בְּרֶכְט", translation = "эффект Брехта (остранение)",
             definition = "טֶכְנִיקָה שֶׁל בֶּרְטוֹלְט בְּרֶכְט לְשַׁבֵּר אֶת הַהִזְדַּהוּת שֶׁל הַקָּהָל עִם הַדְּמוּת וּלְעוֹרֵר מַחֲשָׁבָה בִּיקּוֹרְתִּית.",
@@ -490,7 +490,7 @@ object WordDataHebrewBatch19 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 108025, setId = 1080, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 108025, setId = 1080, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "university", transliteration = "meta-kognitsiya",
             original = "מֵטָה-קוֹגְנִיצְיָה", translation = "метакогниция",
             definition = "הַמּוּדָעוּת וְהַשְּׁלִיטָה שֶׁל הָאֱנוֹשׁ עַל תַּהֲלִיכֵי הַחְשִׁיבָה הָעַצְמִית שֶׁלּוֹ.",
@@ -727,7 +727,7 @@ object WordDataHebrewBatch19 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 108125, setId = 1081, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 108125, setId = 1081, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "finance", transliteration = "teoriyat hashvakim hayeilim",
             original = "תֵּיאוֹרְיַת הַשְּׁוָקִים הַיְּעִילִים", translation = "гипотеза эффективного рынка",
             definition = "תֵּיאוֹרְיָה הַטּוֹעֶנֶת שֶׁמֶחִירֵי הַמְּנִיּוֹת כְּבָר מְשַׁקְּפִים אֶת כָּל הַמֵּידָע הַנִּגָּשׁ.",

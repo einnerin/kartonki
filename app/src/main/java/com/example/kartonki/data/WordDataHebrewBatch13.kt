@@ -11,7 +11,7 @@ object WordDataHebrewBatch13 {
 
     val sets = listOf(
         WordSetEntity(id = 1062, name = "Медицина: углублённо",  description = "Профессиональная медицинская лексика B2/C1",       languagePair = "he-ru", orderIndex = 62),
-        WordSetEntity(id = 1063, name = "Право: основы",         description = "Базовая юридическая лексика A2/B1",                languagePair = "he-ru", orderIndex = 63),
+        WordSetEntity(id = 1063, name = "Право: основы",         description = "Базовая юридическая лексика B2/C1",                languagePair = "he-ru", orderIndex = 63),
         WordSetEntity(id = 1064, name = "Право: углублённо",     description = "Профессиональная юридическая лексика B2/C1",       languagePair = "he-ru", orderIndex = 64),
     )
 
@@ -474,7 +474,7 @@ object WordDataHebrewBatch13 {
         ),
 
         WordEntity(
-            id = 106325, setId = 1063, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 106325, setId = 1063, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "law_intern", transliteration = "iskat ta'aná",
             original = "עִסְקַת טַעֲנָה", translation = "сделка с правосудием; досудебное соглашение",
             definition = "הֶסְכֵּם בֵּין תּוֹבֵעַ לְנֶאֱשָׁם שֶׁבּוֹ הַנֶּאֱשָׁם מוֹדֶה בְּאַשְׁמָה בְּתַמוּרָה לְעֹנֶשׁ קַל יוֹתֵר.",

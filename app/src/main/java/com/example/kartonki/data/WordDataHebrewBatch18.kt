@@ -9,7 +9,7 @@ object WordDataHebrewBatch18 {
         WordSetEntity(
             id = 1076, languagePair = "he-ru", orderIndex = 1076,
             name = "СМИ и журналистика",
-            description = "Пресса, медиа и журналистское мастерство A2/B2",
+            description = "Пресса, медиа и журналистское мастерство B2/C1",
         ),
         WordSetEntity(
             id = 1077, languagePair = "he-ru", orderIndex = 1077,
@@ -253,7 +253,7 @@ object WordDataHebrewBatch18 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107625, setId = 1076, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107625, setId = 1076, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "media", transliteration = "teoriyat kviat hasadar hayom",
             original = "תֵּיאוֹרְיַת קְבִיעַת הַסָּדָר-יוֹם", translation = "теория установления повестки дня",
             definition = "תֵּיאוֹרְיָה הַטּוֹעֶנֶת שֶׁכְּלֵי הַתִּקְשׁוֹרֶת קוֹבְעִים מֶה הַצִּיבּוּר חוֹשֵׁב שֶׁהוּא חָשׁוּב, לֹא כֵּיצַד.",
@@ -490,7 +490,7 @@ object WordDataHebrewBatch18 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107725, setId = 1077, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107725, setId = 1077, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "science", transliteration = "khiluf paradigma",
             original = "חִלּוּף פָּרָדִיגְמָה", translation = "смена парадигмы",
             definition = "מַעֲבָר מַהְפֵּכָנִי מִמַּסְגֶּרֶת מַדָּעִית מְבֻסֶּסֶת לְמַסְגֶּרֶת חֲדָשָׁה, כַּמְּתֻאָר עַל יְדֵי קוּן.",
@@ -727,7 +727,7 @@ object WordDataHebrewBatch18 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107825, setId = 1078, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107825, setId = 1078, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "ecology", transliteration = "antropotsen",
             original = "אַנְתְרוֹפּוֹצֶן", translation = "антропоцен",
             definition = "הַתְּקוּפָה הַגֵּיאוֹלוֹגִית הַנּוֹכְחִית שֶׁבָּהּ הַפְּעִילּוּת הָאֱנוֹשִׁית הִיא הַכֹּחַ הַשּׁוֹלֵט בַּמַּעֲרֶכֶת הָאַרְצִית.",

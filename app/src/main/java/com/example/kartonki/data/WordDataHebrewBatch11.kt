@@ -10,8 +10,8 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch11 {
 
     val sets = listOf(
-        WordSetEntity(id = 1056, name = "Климат",                description = "Погода, климат и природные явления Израиля A2/B1", languagePair = "he-ru", orderIndex = 56),
-        WordSetEntity(id = 1057, name = "Домашние животные",     description = "Питомцы, уход и ветеринария A2/B1",                languagePair = "he-ru", orderIndex = 57),
+        WordSetEntity(id = 1056, name = "Климат",                description = "Погода, климат и природные явления Израиля A2/B2", languagePair = "he-ru", orderIndex = 56),
+        WordSetEntity(id = 1057, name = "Домашние животные",     description = "Питомцы, уход и ветеринария A2/B2",                languagePair = "he-ru", orderIndex = 57),
         WordSetEntity(id = 1058, name = "Психическое здоровье",  description = "Эмоции, стресс и психологическая помощь B2/C1",   languagePair = "he-ru", orderIndex = 58),
     )
 
@@ -215,7 +215,7 @@ object WordDataHebrewBatch11 {
         ),
 
         WordEntity(
-            id = 105622, setId = 1056, languagePair = "he-ru", rarity = "EPIC",
+            id = 105622, setId = 1056, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "weather_extreme", transliteration = "kefa'on",
             original = "קֵפָאוֹן", translation = "замерзание; заморозки",
             definition = "תְּהַלִּיךְ שֶׁבּוֹ מַיִם הוֹפְכִים לְקֶרַח עֵקֶב טֶמְפֶּרָטוּרָה נְמוּכָה מְאֹד.",
@@ -224,7 +224,7 @@ object WordDataHebrewBatch11 {
             exampleNative = "Заморозки — קֵפָאוֹן — этой ночью повредили урожай фруктов на севере.",
         ),
         WordEntity(
-            id = 105623, setId = 1056, languagePair = "he-ru", rarity = "EPIC",
+            id = 105623, setId = 1056, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "weather_precipitation", transliteration = "gvish sheleg",
             original = "גְּבִישׁ שֶׁלֶג", translation = "снежинка",
             definition = "גְּבִישׁ קֶרַח עָדִין בְּצוּרַת כּוֹכָב, הַנּוֹפֵל כְּשֶׁיֵּשׁ שֶׁלֶג.",
@@ -233,7 +233,7 @@ object WordDataHebrewBatch11 {
             exampleNative = "В Иерусалиме каждый ребёнок хочет поймать גְּבִישׁ שֶׁלֶג на язык.",
         ),
         WordEntity(
-            id = 105624, setId = 1056, languagePair = "he-ru", rarity = "EPIC",
+            id = 105624, setId = 1056, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "weather_temperature", transliteration = "khom kaved",
             original = "חוֹם כָּבֵד", translation = "изнуряющая жара; тяжёлая жара",
             definition = "תְּנָאֵי חוֹם וְלַחוּת גְּבוֹהִים הַגּוֹרְמִים לְאִי-נוֹחוּת וְסַכָּנָה לַבְּרִיאוּת.",
@@ -243,7 +243,7 @@ object WordDataHebrewBatch11 {
         ),
 
         WordEntity(
-            id = 105625, setId = 1056, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 105625, setId = 1056, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "weather_official", transliteration = "azharat mezeg avir",
             original = "אַזְהָרַת מֶזֶג אֲוִיר", translation = "метеорологическое предупреждение",
             definition = "הוֹדָעָה רִשְׁמִית שֶׁל שֵׁרוּת הַמֶּטֵאוֹרוֹלוֹגִיָּה עַל תְּנָאֵי מֶזֶג אֲוִיר מְסֻכָּנִים.",
@@ -450,7 +450,7 @@ object WordDataHebrewBatch11 {
         ),
 
         WordEntity(
-            id = 105722, setId = 1057, languagePair = "he-ru", rarity = "EPIC",
+            id = 105722, setId = 1057, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pets_training", transliteration = "hakhsharat klavim",
             original = "הַכְשָׁרַת כְּלָבִים", translation = "дрессировка собак",
             definition = "הַדְרָכָה שִׁיטָתִית שֶׁל כֶּלֶב לְצֹרֶךְ צִיּוּת וּהֲתְנָהֲגוּת תְּקִינָה.",
@@ -459,7 +459,7 @@ object WordDataHebrewBatch11 {
             exampleNative = "Мы отправили собаку на הַכְשָׁרַת כְּלָבִים, потому что она прыгала на всех.",
         ),
         WordEntity(
-            id = 105723, setId = 1057, languagePair = "he-ru", rarity = "EPIC",
+            id = 105723, setId = 1057, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pets_care", transliteration = "khisun kelev",
             original = "חִסּוּן כֶּלֶב", translation = "вакцинация собаки",
             definition = "נְתִינַת חִיסוּנִים לַכֶּלֶב לְמֶנִיעַת מַחֲלוֹת מְסֻכָּנוֹת.",
@@ -468,7 +468,7 @@ object WordDataHebrewBatch11 {
             exampleNative = "Вакцинация собаки — חִסּוּן כֶּלֶב — от бешенства обязательна во всех странах мира.",
         ),
         WordEntity(
-            id = 105724, setId = 1057, languagePair = "he-ru", rarity = "EPIC",
+            id = 105724, setId = 1057, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pets_medical", transliteration = "ikur",
             original = "עִקּוּר", translation = "стерилизация (животного)",
             definition = "ניתוּחַ וֶטֶרִינָרִי לְמֶנִיעַת הִתְרַבּוּת הַחַיָּה.",
@@ -478,7 +478,7 @@ object WordDataHebrewBatch11 {
         ),
 
         WordEntity(
-            id = 105725, setId = 1057, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 105725, setId = 1057, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pets_facility", transliteration = "mikla'a",
             original = "מִכְלָאָה", translation = "питомник; приют для животных",
             definition = "מְקוֹם שֶׁבּוֹ מְגַדְּלִים אוֹ מְאַחְסְנִים חַיּוֹת, כּוֹלֵל מִכְלוֹת אֵסוּף.",

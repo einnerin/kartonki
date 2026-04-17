@@ -9,17 +9,17 @@ object WordDataHebrewBatch17 {
         WordSetEntity(
             id = 1073, languagePair = "he-ru", orderIndex = 1073,
             name = "Стартапы",
-            description = "Лексика предпринимательства и стартап-культуры B1/B2",
+            description = "Лексика предпринимательства и стартап-культуры B2/C1",
         ),
         WordSetEntity(
             id = 1074, languagePair = "he-ru", orderIndex = 1074,
             name = "Путешествия",
-            description = "Туризм, маршруты и международные поездки A2/B1",
+            description = "Туризм, маршруты и международные поездки A2/B2",
         ),
         WordSetEntity(
             id = 1075, languagePair = "he-ru", orderIndex = 1075,
             name = "Искусство",
-            description = "Изобразительное искусство, стили и техники A2/B2",
+            description = "Изобразительное искусство, стили и техники B2/C1",
         ),
     )
 
@@ -253,7 +253,7 @@ object WordDataHebrewBatch17 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107325, setId = 1073, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107325, setId = 1073, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup", transliteration = "hafraah taasiyatit",
             original = "הַפְרָעָה תַּעֲשִׂיָּתִית", translation = "дизраптивная инновация (разрушение отрасли)",
             definition = "חֲדִשָּׁנוּת הַמְּשַׁנָּה מִן הַיְּסוֹד שׁוּקִים קַיָּמִים, לְרֹב בְּאֶמְצָעוּת טֶכְנוֹלוֹגִיָּה.",
@@ -461,7 +461,7 @@ object WordDataHebrewBatch17 {
 
         // EPIC (C1)
         WordEntity(
-            id = 107422, setId = 1074, languagePair = "he-ru", rarity = "EPIC",
+            id = 107422, setId = 1074, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "travel", transliteration = "nomad digitali",
             original = "נוֹמָד דִּיגִיטָלִי", translation = "цифровой кочевник",
             definition = "מִי שֶׁעוֹבֵד מֵרָחוֹק וּמְשַׁנֶּה מְקוֹם הִשְׁהוּת בְּתַדִּירוּת.",
@@ -470,7 +470,7 @@ object WordDataHebrewBatch17 {
             exampleNative = "Как цифровой кочевник, он работал с Бали, из Португалии и Мексики.",
         ),
         WordEntity(
-            id = 107423, setId = 1074, languagePair = "he-ru", rarity = "EPIC",
+            id = 107423, setId = 1074, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "travel", transliteration = "hitnazdavut bekhuul",
             original = "הִתְנַדְּבוּת בְּחוּ\"ל", translation = "волонтёрство за рубежом",
             definition = "עֲבוֹדַת הִתְנַדְּבוּת בִּמְדִינָה זָרָה כַּחֵלֶק מִטִּיּוּל.",
@@ -479,7 +479,7 @@ object WordDataHebrewBatch17 {
             exampleNative = "Она волонтёрила за рубежом в образовательном проекте в Африке.",
         ),
         WordEntity(
-            id = 107424, setId = 1074, languagePair = "he-ru", rarity = "EPIC",
+            id = 107424, setId = 1074, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "travel", transliteration = "tseruf massaot",
             original = "צֵירוּף מְסָעוֹת", translation = "маршрут / комбинация поездок",
             definition = "תִּכְנוּן מְפֹרָט שֶׁל הַמָּקוֹמוֹת, הַתַּאֲרִיכִים וְהָאֶמְצָעִים בְּמִסְעָד.",
@@ -490,7 +490,7 @@ object WordDataHebrewBatch17 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107425, setId = 1074, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107425, setId = 1074, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "travel", transliteration = "tayarut bat-kayma",
             original = "תַּיָּרוּת בַּת-קַיְּמָא", translation = "устойчивый туризм (экотуризм)",
             definition = "גִּישָׁה לְטִיּוּל הַמְּמַזֶּגֶת נֶהֱנוּת, שִׁמּוּר הַסְּבִיבָה וְהֶחָזֵר לְקְהִילָּה הַמְּקוֹמִית.",
@@ -727,7 +727,7 @@ object WordDataHebrewBatch17 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107525, setId = 1075, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107525, setId = 1075, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "art", transliteration = "postmodernizm",
             original = "פּוֹסְטְמוֹדֶרְנִיזְם", translation = "постмодернизм",
             definition = "זֶרֶם תַּרְבּוּתִי וְפִילוֹסוֹפִי הַמְּפַקְפֵּק בְּמֶטָא-נָרָטִיבִים וּבַאוּנִיבֶּרְסָלִיּוּת.",

@@ -14,7 +14,7 @@ object WordDataHebrewMore {
         WordSetEntity(id = 1009, name = "Город и места",      description = "Городские объекты и природа A2",    languagePair = "he-ru", orderIndex = 9),
         WordSetEntity(id = 1010, name = "Одежда",             description = "Одежда и аксессуары A2",            languagePair = "he-ru", orderIndex = 10),
         WordSetEntity(id = 1011, name = "Погода и природа",   description = "Климат, сезоны и природа A2/B1",   languagePair = "he-ru", orderIndex = 11),
-        WordSetEntity(id = 1012, name = "Кино",               description = "Жанры, люди и термины кино B1",    languagePair = "he-ru", orderIndex = 12),
+        WordSetEntity(id = 1012, name = "Кино",               description = "Жанры, люди и термины кино B1/B2",    languagePair = "he-ru", orderIndex = 12),
         WordSetEntity(id = 1013, name = "Кино: углублённо",    description = "Производство фильмов B2/C1",        languagePair = "he-ru", orderIndex = 13),
     )
 
@@ -52,7 +52,7 @@ object WordDataHebrewMore {
             exampleNative = "רַכֶּבֶת прибывает через десять минут.",
         ),
         WordEntity(
-            id = 100804, setId = 1008, languagePair = "he-ru", rarity = "RARE",
+            id = 100804, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "matos",
             original = "מָטוֹס", translation = "самолёт",
             definition = "כְּלִי טַיִס הַמּוֹבִיל נוֹסְעִים דֶּרֶךְ הָאֲוִיר.",
@@ -124,7 +124,7 @@ object WordDataHebrewMore {
             exampleNative = "Хороший נָהַג всегда уступает дорогу пешеходам.",
         ),
         WordEntity(
-            id = 100812, setId = 1008, languagePair = "he-ru", rarity = "RARE",
+            id = 100812, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "metro",
             original = "מֶטְרוֹ", translation = "метро",
             definition = "רַכֶּבֶת תַּת-קַרְקָעִית בַּעִיר.",
@@ -133,7 +133,7 @@ object WordDataHebrewMore {
             exampleNative = "В Тель-Авиве строят מֶטְרוֹ.",
         ),
         WordEntity(
-            id = 100813, setId = 1008, languagePair = "he-ru", rarity = "RARE",
+            id = 100813, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "ramzor",
             original = "רַמְזוֹר", translation = "светофор",
             definition = "מַכְשִׁיר אוֹרוֹת הַמַּסְדִּיר אֶת תְּנוּעַת הָרְחוֹב.",
@@ -142,7 +142,7 @@ object WordDataHebrewMore {
             exampleNative = "רַמְזוֹר был красным.",
         ),
         WordEntity(
-            id = 100814, setId = 1008, languagePair = "he-ru", rarity = "RARE",
+            id = 100814, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "gesher",
             original = "גֶּשֶׁר", translation = "мост",
             definition = "מִבְנֶה הַמְּחַבֵּר שְׁנֵי עֲבָרִים מֵעַל לְמַכְשׁוֹל.",
@@ -151,7 +151,7 @@ object WordDataHebrewMore {
             exampleNative = "Мы прошли по старому גֶּשֶׁר.",
         ),
         WordEntity(
-            id = 100815, setId = 1008, languagePair = "he-ru", rarity = "RARE",
+            id = 100815, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "khanaya",
             original = "חֲנָיָה", translation = "парковка",
             definition = "מָקוֹם לַחֲנִיַּת כְּלֵי רֶכֶב.",
@@ -178,7 +178,7 @@ object WordDataHebrewMore {
             exampleNative = "Рядом со мной в поезде сидел נוֹסֵעַ.",
         ),
         WordEntity(
-            id = 100818, setId = 1008, languagePair = "he-ru", rarity = "EPIC",
+            id = 100818, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "sdeh te'ufa",
             original = "נְמַל תְּעוּפָה", translation = "аэропорт",
             definition = "מָקוֹם לְהַמְרָאָה וּנְחִיתָה שֶׁל מְטוֹסִים.",
@@ -187,7 +187,7 @@ object WordDataHebrewMore {
             exampleNative = "נְמַל תְּעוּפָה בֶּן-גּוּרְיוֹן — крупнейший аэропорт Израиля.",
         ),
         WordEntity(
-            id = 100819, setId = 1008, languagePair = "he-ru", rarity = "RARE",
+            id = 100819, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "ofano'a",
             original = "אוֹפַנּוֹעַ", translation = "мотоцикл",
             definition = "כְּלִי רֶכֶב מָהִיר בַּעַל שְׁנֵי גַּלְגַּלִּים וּמָנוֹעַ.",
@@ -196,7 +196,7 @@ object WordDataHebrewMore {
             exampleNative = "Он ездит на быстром אוֹפַנּוֹעַ.",
         ),
         WordEntity(
-            id = 100820, setId = 1008, languagePair = "he-ru", rarity = "EPIC",
+            id = 100820, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "oniya",
             original = "אֳנִיָּה", translation = "корабль",
             definition = "כְּלִי שַׁיִּט גָּדוֹל לַנְסִיעָה בַּיָּם.",
@@ -205,7 +205,7 @@ object WordDataHebrewMore {
             exampleNative = "אֳנִיָּה вышла в Средиземное море.",
         ),
         WordEntity(
-            id = 100821, setId = 1008, languagePair = "he-ru", rarity = "RARE",
+            id = 100821, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "mapa",
             original = "מַפָּה", translation = "карта / карта местности",
             definition = "תַּרְשִׁים הַמְּתָאֵר אֶת פְּנֵי הַשֶּׁטַח.",
@@ -214,7 +214,7 @@ object WordDataHebrewMore {
             exampleNative = "В рюкзаке у меня лежит מַפָּה города.",
         ),
         WordEntity(
-            id = 100822, setId = 1008, languagePair = "he-ru", rarity = "RARE",
+            id = 100822, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "lu'akh zmanim",
             original = "לוּחַ זְמַנִּים", translation = "расписание",
             definition = "רְשִׁימַת שְׁעוֹת יְצִיאָה וְהַגָּעָה שֶׁל תַּחְבּוּרָה.",
@@ -223,7 +223,7 @@ object WordDataHebrewMore {
             exampleNative = "На остановке висит לוּחַ זְמַנִּים автобусов.",
         ),
         WordEntity(
-            id = 100823, setId = 1008, languagePair = "he-ru", rarity = "EPIC",
+            id = 100823, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "khagurat bitakhon",
             original = "חֲגוֹרַת בִּטָּחוֹן", translation = "ремень безопасности",
             definition = "אֶמְצָעִי בִּטָּחוֹן בְּכְּלִי הָרֶכֶב.",
@@ -232,7 +232,7 @@ object WordDataHebrewMore {
             exampleNative = "Всегда пристёгивай חֲגוֹרַת בִּטָּחוֹן.",
         ),
         WordEntity(
-            id = 100824, setId = 1008, languagePair = "he-ru", rarity = "RARE",
+            id = 100824, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "delek",
             original = "דֶּלֶק", translation = "топливо / бензин",
             definition = "חֹמֶר בְּעֵרָה לְהַנָּעַת כְּלֵי רֶכֶב.",
@@ -255,7 +255,7 @@ object WordDataHebrewMore {
             exampleNative = "Я живу в большой עִיר.",
         ),
         WordEntity(
-            id = 100902, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100902, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "kikar",
             original = "כִּכָּר", translation = "площадь",
             definition = "מָקוֹם פָּתוּחַ רָחָב בְּמֶרְכַּז הָעִיר.",
@@ -273,7 +273,7 @@ object WordDataHebrewMore {
             exampleNative = "Дети играют в פַּרְק.",
         ),
         WordEntity(
-            id = 100904, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100904, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "beit kholim",
             original = "בֵּית חוֹלִים", translation = "больница",
             definition = "מוֹסָד רְפוּאִי לְטִפּוּל בַּחוֹלִים.",
@@ -291,7 +291,7 @@ object WordDataHebrewMore {
             exampleNative = "Хороший בֵּית סֵפֶר воспитывает детей.",
         ),
         WordEntity(
-            id = 100906, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100906, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "universita",
             original = "אוּנִיבֶרְסִיטָה", translation = "университет",
             definition = "מוֹסָד לְהַשְׂכָּלָה גְּבוֹהָה.",
@@ -327,7 +327,7 @@ object WordDataHebrewMore {
             exampleNative = "На этой улице есть уютный בֵּית קָפֶה.",
         ),
         WordEntity(
-            id = 100910, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100910, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "malon",
             original = "מָלוֹן", translation = "гостиница",
             definition = "מָקוֹם לִינָה לְאוֹרְחִים וְתַיָּרִים.",
@@ -336,7 +336,7 @@ object WordDataHebrewMore {
             exampleNative = "Этот מָלוֹן рекомендуется туристам.",
         ),
         WordEntity(
-            id = 100911, setId = 1009, languagePair = "he-ru", rarity = "EPIC",
+            id = 100911, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "muze'on",
             original = "מוּזֵיאוֹן", translation = "музей",
             definition = "מוֹסָד לְשִׁמּוּר וְהַצָּגַת אוֹצְרוֹת תַּרְבּוּתִיִּים.",
@@ -345,7 +345,7 @@ object WordDataHebrewMore {
             exampleNative = "מוּזֵיאוֹן Израиля находится в Иерусалиме.",
         ),
         WordEntity(
-            id = 100912, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100912, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "sinema",
             original = "סִינֶמָה", translation = "кинотеатр",
             definition = "מָקוֹם לְצַפּוֹת בְּסַרְטֵי קוֹלְנוֹעַ.",
@@ -354,7 +354,7 @@ object WordDataHebrewMore {
             exampleNative = "Эта סִינֶמָה показывает иностранные фильмы.",
         ),
         WordEntity(
-            id = 100913, setId = 1009, languagePair = "he-ru", rarity = "EPIC",
+            id = 100913, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "te'atron",
             original = "תֵּיאַטְרוֹן", translation = "театр",
             definition = "מָקוֹם לְהַצָּגוֹת בָּמָה וּמוּסִיקָה.",
@@ -372,7 +372,7 @@ object WordDataHebrewMore {
             exampleNative = "Рядом с домом есть красивый גַּן.",
         ),
         WordEntity(
-            id = 100915, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100915, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "breikha",
             original = "בְּרֵכָה", translation = "бассейн",
             definition = "מִבְנֶה מָלֵא מַיִם לְשִׁחִיָּה.",
@@ -390,7 +390,7 @@ object WordDataHebrewMore {
             exampleNative = "Летом я хожу на חוֹף.",
         ),
         WordEntity(
-            id = 100917, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100917, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "har",
             original = "הַר", translation = "гора",
             definition = "גּוּף אֶרֶץ גָּבוֹהַּ בּוֹלֵט.",
@@ -399,7 +399,7 @@ object WordDataHebrewMore {
             exampleNative = "Высокий הַר зимой покрыт снегом.",
         ),
         WordEntity(
-            id = 100918, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100918, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "ya'ar",
             original = "יַעַר", translation = "лес",
             definition = "שֶׁטַח גָּדוֹל מְכֻסֶּה עֵצִים.",
@@ -417,7 +417,7 @@ object WordDataHebrewMore {
             exampleNative = "Большая נָהָר течёт между горами.",
         ),
         WordEntity(
-            id = 100920, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100920, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "kfar",
             original = "כְּפָר", translation = "деревня",
             definition = "יִשּׁוּב קָטָן בַּכְּפַר.",
@@ -426,7 +426,7 @@ object WordDataHebrewMore {
             exampleNative = "Мой дедушка живёт в маленьком כְּפָר.",
         ),
         WordEntity(
-            id = 100921, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100921, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "shkhu​na",
             original = "שְׁכוּנָה", translation = "район",
             definition = "אֵזוֹר מוּגְדָּר בָּעִיר.",
@@ -435,7 +435,7 @@ object WordDataHebrewMore {
             exampleNative = "Я живу в тихой שְׁכוּנָה.",
         ),
         WordEntity(
-            id = 100922, setId = 1009, languagePair = "he-ru", rarity = "EPIC",
+            id = 100922, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "beit kneset",
             original = "בֵּית כְּנֶסֶת", translation = "синагога",
             definition = "מָקוֹם תְּפִלָּה לַיְּהוּדִים.",
@@ -444,7 +444,7 @@ object WordDataHebrewMore {
             exampleNative = "בֵּית כְּנֶסֶת в центре города — древнее здание.",
         ),
         WordEntity(
-            id = 100923, setId = 1009, languagePair = "he-ru", rarity = "RARE",
+            id = 100923, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "supermarket",
             original = "סוּפֶּרְמַרְקֵט", translation = "супермаркет",
             definition = "חֲנוּת גְּדוֹלָה לְמִכְלָאוֹת וּמַצְרְכֵי יוֹם-יוֹם.",
@@ -453,7 +453,7 @@ object WordDataHebrewMore {
             exampleNative = "В нашем районе есть большой סוּפֶּרְמַרְקֵט.",
         ),
         WordEntity(
-            id = 100924, setId = 1009, languagePair = "he-ru", rarity = "EPIC",
+            id = 100924, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "gan khayot",
             original = "גַּן חַיּוֹת", translation = "зоопарк",
             definition = "מָקוֹם שֶׁבּוֹ מַחֲזִיקִים חַיּוֹת לְתַצּוּגָה.",
@@ -566,7 +566,7 @@ object WordDataHebrewMore {
             exampleNative = "Я забыл כְּפָפוֹת дома.",
         ),
         WordEntity(
-            id = 101012, setId = 1010, languagePair = "he-ru", rarity = "RARE",
+            id = 101012, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "pijama",
             original = "פִּיגַ'מָה", translation = "пижама",
             definition = "בֶּגֶד שֵׁנָה רָפוּי לְלַיְלָה.",
@@ -575,7 +575,7 @@ object WordDataHebrewMore {
             exampleNative = "Я надел פִּיגַ'מָה и пошёл спать.",
         ),
         WordEntity(
-            id = 101013, setId = 1010, languagePair = "he-ru", rarity = "RARE",
+            id = 101013, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "khagur",
             original = "חָגוֹר", translation = "ремень / пояс",
             definition = "רְצוּעָה לְהַדְּקַת הַמִּכְנָסַיִם.",
@@ -584,7 +584,7 @@ object WordDataHebrewMore {
             exampleNative = "Мой חָגוֹר сделан из кожи.",
         ),
         WordEntity(
-            id = 101014, setId = 1010, languagePair = "he-ru", rarity = "RARE",
+            id = 101014, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "aniva",
             original = "עֲנִיבָה", translation = "галстук",
             definition = "בַּד אָרֹךְ קָשׁוּר סְבִיב הַצַּוָּאר.",
@@ -593,7 +593,7 @@ object WordDataHebrewMore {
             exampleNative = "Я надел עֲנִיבָה на официальный ужин.",
         ),
         WordEntity(
-            id = 101015, setId = 1010, languagePair = "he-ru", rarity = "RARE",
+            id = 101015, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "mishkafayim",
             original = "מִשְׁקָפַיִם", translation = "очки",
             definition = "עֲדָשׁוֹת בְּמַסְגֶּרֶת לְשִׁפּוּר הָרְאִיָּה.",
@@ -611,7 +611,7 @@ object WordDataHebrewMore {
             exampleNative = "Я положил книгу в תַּיִק.",
         ),
         WordEntity(
-            id = 101017, setId = 1010, languagePair = "he-ru", rarity = "RARE",
+            id = 101017, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "arnak",
             original = "אַרְנָק", translation = "кошелёк",
             definition = "תִּיק קָטָן לְכֶסֶף וְכַרְטִיסֵי אַשְׁרַאי.",
@@ -620,7 +620,7 @@ object WordDataHebrewMore {
             exampleNative = "Я забыл אַרְנָק дома.",
         ),
         WordEntity(
-            id = 101018, setId = 1010, languagePair = "he-ru", rarity = "RARE",
+            id = 101018, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "taba'at",
             original = "טַבַּעַת", translation = "кольцо",
             definition = "תַּכְשִׁיט עָגוֹל הַמּוּכְנָס לָאֶצְבַּע.",
@@ -629,7 +629,7 @@ object WordDataHebrewMore {
             exampleNative = "Она носит золотую טַבַּעַת.",
         ),
         WordEntity(
-            id = 101019, setId = 1010, languagePair = "he-ru", rarity = "RARE",
+            id = 101019, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "sharsheret",
             original = "שַׁרְשֶׁרֶת", translation = "цепочка / ожерелье",
             definition = "תַּכְשִׁיט הַמּוּכְנָס סְבִיב הַצַּוָּאר.",
@@ -656,7 +656,7 @@ object WordDataHebrewMore {
             exampleNative = "Я פָּשַׁט пальто, войдя домой.",
         ),
         WordEntity(
-            id = 101022, setId = 1010, languagePair = "he-ru", rarity = "RARE",
+            id = 101022, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "kvisa",
             original = "כְּבִיסָה", translation = "стирка / бельё",
             definition = "פְּעוּלַּת כִּיבּוּס בְּגָדִים.",
@@ -674,7 +674,7 @@ object WordDataHebrewMore {
             exampleNative = "Рубашка сделана из хлопкового בַּד.",
         ),
         WordEntity(
-            id = 101024, setId = 1010, languagePair = "he-ru", rarity = "EPIC",
+            id = 101024, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "madim",
             original = "מַדִּים", translation = "форма / мундир",
             definition = "בְּגָדִים אֲחִידִים הַנִּלְבָּשִׁים בִּידֵי אֲנָשֵׁי מִקְצוֹעַ.",
@@ -715,7 +715,7 @@ object WordDataHebrewMore {
             exampleNative = "Сегодня сильный גֶּשֶׁם.",
         ),
         WordEntity(
-            id = 101104, setId = 1011, languagePair = "he-ru", rarity = "RARE",
+            id = 101104, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "sheleg",
             original = "שֶׁלֶג", translation = "снег",
             definition = "גְּבִישֵׁי קֶרַח לְבָנִים הַנּוֹפְלִים מֵהַשָּׁמַיִם.",
@@ -760,7 +760,7 @@ object WordDataHebrewMore {
             exampleNative = "Зимой очень קַר.",
         ),
         WordEntity(
-            id = 101109, setId = 1011, languagePair = "he-ru", rarity = "RARE",
+            id = 101109, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "barak",
             original = "בָּרָק", translation = "молния",
             definition = "פְּרִיקַת חַשְׁמַל אַטְמוֹסְפֵרִית.",
@@ -769,7 +769,7 @@ object WordDataHebrewMore {
             exampleNative = "Я увидел בָּרָק в небе.",
         ),
         WordEntity(
-            id = 101110, setId = 1011, languagePair = "he-ru", rarity = "RARE",
+            id = 101110, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "ra'am",
             original = "רַעַם", translation = "гром",
             definition = "קוֹל חָזָק בָּאֲוִיר הַנּוֹבֵעַ מִבָּרָק.",
@@ -778,7 +778,7 @@ object WordDataHebrewMore {
             exampleNative = "Я услышал сильный רַעַם.",
         ),
         WordEntity(
-            id = 101111, setId = 1011, languagePair = "he-ru", rarity = "RARE",
+            id = 101111, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "keshet",
             original = "קֶשֶׁת", translation = "радуга",
             definition = "קֶשֶׁת צְבָעִים בַּשָּׁמַיִם אַחֲרֵי גֶּשֶׁם.",
@@ -832,7 +832,7 @@ object WordDataHebrewMore {
             exampleNative = "חֹרֶף в Израиле не очень холодный.",
         ),
         WordEntity(
-            id = 101117, setId = 1011, languagePair = "he-ru", rarity = "RARE",
+            id = 101117, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "temperatura",
             original = "טֶמְפֶּרָטוּרָה", translation = "температура",
             definition = "מִדַּת הַחֹם.",
@@ -841,7 +841,7 @@ object WordDataHebrewMore {
             exampleNative = "טֶמְפֶּרָטוּרָה тридцать градусов — норма летом.",
         ),
         WordEntity(
-            id = 101118, setId = 1011, languagePair = "he-ru", rarity = "RARE",
+            id = 101118, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "arpal",
             original = "עָרְפָּל", translation = "туман",
             definition = "שְׁכָבָה צְפוּפָה שֶׁל אֵדֵי מַיִם בַּאֲוִיר.",
@@ -850,7 +850,7 @@ object WordDataHebrewMore {
             exampleNative = "Утром был густой עָרְפָּל.",
         ),
         WordEntity(
-            id = 101119, setId = 1011, languagePair = "he-ru", rarity = "RARE",
+            id = 101119, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "shimshiya",
             original = "שִׁמְשִׁיָּה", translation = "зонт",
             definition = "כְּלִי לַהֲגָנָה מִגֶּשֶׁם אוֹ שֶׁמֶשׁ.",
@@ -859,7 +859,7 @@ object WordDataHebrewMore {
             exampleNative = "Я взял שִׁמְשִׁיָּה, потому что идёт дождь.",
         ),
         WordEntity(
-            id = 101120, setId = 1011, languagePair = "he-ru", rarity = "EPIC",
+            id = 101120, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "sufa",
             original = "סוּפָה", translation = "буря / шторм",
             definition = "מִשְׁטַר רוּחוֹת חֲזָקוֹת עִם גֶּשֶׁם.",
@@ -868,7 +868,7 @@ object WordDataHebrewMore {
             exampleNative = "Вчера вечером была сильная סוּפָה.",
         ),
         WordEntity(
-            id = 101121, setId = 1011, languagePair = "he-ru", rarity = "RARE",
+            id = 101121, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "aklim",
             original = "אַקְלִים", translation = "климат",
             definition = "דֶּפֶס מֶזֶג הָאֲוִיר הָאוֹפְיֵינִי לְאֵזוֹר.",
@@ -936,7 +936,7 @@ object WordDataHebrewMore {
             exampleNative = "Известная שַׂחְקָנִית получила Оскар.",
         ),
         WordEntity(
-            id = 101205, setId = 1012, languagePair = "he-ru", rarity = "EPIC",
+            id = 101205, setId = 1012, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "cinema", transliteration = "tasrit",
             original = "תַּסְרִיט", translation = "сценарий",
             definition = "טֶקְסְט כָּתוּב שֶׁל הַסֶּרֶט עִם דִּיאָלוֹגִים וְהוֹרָאוֹת.",
@@ -999,7 +999,7 @@ object WordDataHebrewMore {
             exampleNative = "На День святого Валентина мы смотрели סֶרֶט רוֹמַנְטִי.",
         ),
         WordEntity(
-            id = 101212, setId = 1012, languagePair = "he-ru", rarity = "EPIC",
+            id = 101212, setId = 1012, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "cinema", transliteration = "ti'udi",
             original = "תִּעוּדִי", translation = "документальный фильм",
             definition = "סֶרֶט שֶׁמְּתַעֵד אֵרוּעִים אֲמִתִּיִּים.",
@@ -1017,7 +1017,7 @@ object WordDataHebrewMore {
             exampleNative = "Дети любят смотреть אָנִימַצְיָה.",
         ),
         WordEntity(
-            id = 101214, setId = 1012, languagePair = "he-ru", rarity = "EPIC",
+            id = 101214, setId = 1012, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "cinema", transliteration = "premiera",
             original = "פְּרֶמְיֶרָה", translation = "премьера",
             definition = "הַהַקְרָנָה הָרִאשׁוֹנָה שֶׁל סֶרֶט.",
@@ -1026,7 +1026,7 @@ object WordDataHebrewMore {
             exampleNative = "Мы ходили на פְּרֶמְיֶרָה фильма.",
         ),
         WordEntity(
-            id = 101215, setId = 1012, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 101215, setId = 1012, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "cinema", transliteration = "oscar",
             original = "אוֹסְקָר", translation = "Оскар",
             definition = "פְּרָס הַסֶּרֶט הַיּוֹקְרָתִי בְּיוֹתֵר בָּעוֹלָם.",
@@ -1071,7 +1071,7 @@ object WordDataHebrewMore {
             exampleNative = "Мы посмотрели три אֶפִּיזוֹד за одну ночь.",
         ),
         WordEntity(
-            id = 101220, setId = 1012, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 101220, setId = 1012, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "cinema", transliteration = "blockbuster",
             original = "בְּלוֹקְבַּסְטֶר", translation = "блокбастер",
             definition = "סֶרֶט בַּעַל הַצְלָחָה מִסְחָרִית עֲצוּמָה.",
@@ -1080,7 +1080,7 @@ object WordDataHebrewMore {
             exampleNative = "Фильм стал בְּלוֹקְבַּסְטֶר во всём мире.",
         ),
         WordEntity(
-            id = 101221, setId = 1012, languagePair = "he-ru", rarity = "EPIC",
+            id = 101221, setId = 1012, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "cinema", transliteration = "seret katsar",
             original = "סֶרֶט קָצֵר", translation = "короткометражный фильм",
             definition = "סֶרֶט בֶּן פָּחוֹת מֵחֲמִישִּׁים דַּקּוֹת.",
@@ -1089,7 +1089,7 @@ object WordDataHebrewMore {
             exampleNative = "Мы сняли סֶרֶט קָצֵר для университета.",
         ),
         WordEntity(
-            id = 101222, setId = 1012, languagePair = "he-ru", rarity = "EPIC",
+            id = 101222, setId = 1012, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "cinema", transliteration = "tasritai",
             original = "תַּסְרִיטָאי", translation = "сценарист",
             definition = "אָדָם הַכּוֹתֵב אֶת הַתַּסְרִיט.",
@@ -1358,7 +1358,7 @@ object WordDataHebrewMore {
             exampleNative = "Высокая לַחוּת заставляет тело чувствовать большую жару.",
         ),
         WordEntity(
-            id = 101125, setId = 1011, languagePair = "he-ru", rarity = "RARE",
+            id = 101125, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "batssoret",
             original = "בַּצֹּרֶת", translation = "засуха",
             definition = "תְּקוּפָה מְמוּשֶׁכֶת שֶׁל חֹסֶר גְּשָׁמִים.",

@@ -5892,33 +5892,25 @@ object WordDataEnglishExpanded {
             exampleNative = "У умения десятисекундный cooldown между применениями."),
 
         // ━━━ EPIC ━━━
-        WordEntity(id = 24921, original = "roguelike", transliteration = "[ˈroʊɡlaɪk]", translation = "рогалик / roguelike", rarity = "EPIC", setId = 249, languagePair = "en-ru", pos = "noun", semanticGroup = "gaming_genres",
-            definition = "A genre with procedurally generated levels, permadeath, and high replayability.",
-            example = "A roguelike offers a different experience every time you play.",
-            definitionNative = "Жанр с процедурно генерируемыми уровнями, перманентной смертью и высокой реиграбельностью.",
-            exampleNative = "Каждый roguelike предлагает новый опыт при каждом прохождении."),
-        WordEntity(id = 24922, original = "permadeath", transliteration = "[ˈpɜːrmədɛθ]", translation = "перманентная смерть", rarity = "EPIC", setId = 249, languagePair = "en-ru", pos = "noun", semanticGroup = "gaming_mechanics",
-            definition = "A rule where a character's death is permanent and all progress is lost.",
-            example = "Permadeath raises the stakes of every decision you make.",
-            definitionNative = "Правило, при котором смерть персонажа необратима и весь прогресс теряется.",
-            exampleNative = "Permadeath делает каждое решение в игре по-настоящему весомым."),
-        WordEntity(id = 24923, original = "speedrun", transliteration = "[ˈspiːdrʌn]", translation = "спидран", rarity = "EPIC", setId = 249, languagePair = "en-ru", pos = "noun", semanticGroup = "gaming_culture",
-            definition = "An attempt to complete a game as fast as possible, often exploiting glitches.",
-            example = "His speedrun of the entire game lasted under forty minutes.",
-            definitionNative = "Попытка пройти игру как можно быстрее, нередко используя глитчи.",
-            exampleNative = "Его speedrun всей игры занял менее сорока минут."),
-        WordEntity(id = 24924, original = "grind", transliteration = "[graɪnd]", translation = "гринд / монотонная прокачка", rarity = "EPIC", setId = 249, languagePair = "en-ru", pos = "noun", semanticGroup = "gaming_culture",
-            definition = "Repetitive gameplay done to earn experience, currency, or items.",
-            example = "Players often grind for hours to unlock the rarest gear.",
-            definitionNative = "Повторяющийся геймплей ради получения опыта, валюты или предметов.",
-            exampleNative = "Игроки часто устраивают grind на несколько часов ради редкого снаряжения."),
+        WordEntity(id = 24921, setId = 249, languagePair = "en-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming_mechanics", transliteration = "[ˈkrɑːftɪŋ]",
+            original = "crafting", translation = "крафтинг (создание предметов)"),
 
-        // ━━━ LEGENDARY ━━━
-        WordEntity(id = 24925, original = "emergent", transliteration = "[ˈimərʤənt]", translation = "эмерджентный", rarity = "LEGENDARY", setId = 249, languagePair = "en-ru", pos = "adjective", semanticGroup = "gaming_design",
-            definition = "Describing complex or unexpected gameplay arising from simple rules interacting.",
-            example = "The emergent behaviour was never planned by the developers.",
-            definitionNative = "Описывает сложный или непредвиденный геймплей, возникающий из взаимодействия простых правил.",
-            exampleNative = "Это emergent поведение никогда не планировалось разработчиками."),
+        WordEntity(id = 24922, setId = 249, languagePair = "en-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming_mechanics", transliteration = "[ˈtʃekpɔɪnt]",
+            original = "checkpoint", translation = "чекпоинт (контрольная точка)"),
+
+        WordEntity(id = 24923, setId = 249, languagePair = "en-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming_culture", transliteration = "[ˈliːdərbɔːrd]",
+            original = "leaderboard", translation = "таблица лидеров"),
+
+        WordEntity(id = 24924, setId = 249, languagePair = "en-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming_culture", transliteration = "[ˈmætʃmeɪkɪŋ]",
+            original = "matchmaking", translation = "подбор игроков, матчмейкинг"),
+
+        WordEntity(id = 24925, setId = 249, languagePair = "en-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "gaming_design", transliteration = "[ˈmɒdɪŋ]",
+            original = "modding", translation = "моддинг (создание модификаций)"),
     )
 
     // ── Achievement reward words ───────────────────────────────────────────────

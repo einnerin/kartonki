@@ -84,7 +84,7 @@ object WordDataHebrewBatch22 {
             original = "בִּיוֹטֶכְנוֹלוֹגְיָה", translation = "биотехнология"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 108825, setId = 1088, languagePair = "he-ru", rarity = "LEGENDARY",
+        WordEntity(id = 108825, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "רְפוּאָה מְדוּיֶּקֶת", translation = "прецизионная (персонализированная) медицина"),
 
         // ── Set 1089: Право ────────────────────────────────────────────────

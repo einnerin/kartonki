@@ -173,9 +173,9 @@ object WordDataHebrewBatch36 {
             original = "מִשְׂרַד", translation = "кабинет/офис"),
         WordEntity(id = 113223, setId = 1132, languagePair = "he-ru", rarity = "RARE",
             original = "מֵזוּזָה", translation = "мезуза"),
-        WordEntity(id = 113224, setId = 1132, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113224, setId = 1132, languagePair = "he-ru", rarity = "RARE",
             original = "פַּרְגּוֹד", translation = "ширма/перегородка"),
-        WordEntity(id = 113225, setId = 1132, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113225, setId = 1132, languagePair = "he-ru", rarity = "RARE",
             original = "פַּרְקֵט", translation = "паркет"),
     )
 }

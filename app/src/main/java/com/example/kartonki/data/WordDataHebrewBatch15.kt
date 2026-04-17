@@ -10,7 +10,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch15 {
 
     val sets = listOf(
-        WordSetEntity(id = 1067, name = "Армия: основы",      description = "Базовая военная лексика A2/B1",                    languagePair = "he-ru", orderIndex = 67),
+        WordSetEntity(id = 1067, name = "Армия: основы",      description = "Базовая военная лексика B2/C1",                    languagePair = "he-ru", orderIndex = 67),
         WordSetEntity(id = 1068, name = "Армия: углублённо",  description = "Профессиональная военная лексика B2/C1",            languagePair = "he-ru", orderIndex = 68),
         WordSetEntity(id = 1069, name = "Политика",           description = "Кнессет, правительство и выборы B2/C1",            languagePair = "he-ru", orderIndex = 69),
     )
@@ -243,7 +243,7 @@ object WordDataHebrewBatch15 {
         ),
 
         WordEntity(
-            id = 106725, setId = 1067, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 106725, setId = 1067, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "army_basics", transliteration = "mediniyút bitakhón",
             original = "מֶדִינִיּוּת בִּטָּחוֹן", translation = "политика безопасности; оборонная доктрина",
             definition = "מַכְלוֹל הַהַחְלָטוֹת וְהָעֲקָרוֹנוֹת הַמַּנְחִים אֶת הַפְּעִילוּת הַבִּטָּחוֹנִית שֶׁל מְדִינָה.",

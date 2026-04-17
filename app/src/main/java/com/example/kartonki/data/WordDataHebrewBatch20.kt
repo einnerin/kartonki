@@ -9,17 +9,17 @@ object WordDataHebrewBatch20 {
         WordSetEntity(
             id = 1082, languagePair = "he-ru", orderIndex = 1082,
             name = "История Израиля",
-            description = "Исторические события и понятия B1/B2",
+            description = "Исторические события и понятия B2/C1",
         ),
         WordSetEntity(
             id = 1083, languagePair = "he-ru", orderIndex = 1083,
             name = "Социальные сети",
-            description = "Интернет-коммуникации и медиа A2/B1",
+            description = "Интернет-коммуникации и медиа A2/B2",
         ),
         WordSetEntity(
             id = 1084, languagePair = "he-ru", orderIndex = 1084,
             name = "Кулинария: углублённо",
-            description = "Продвинутые техники и термины B1/B2",
+            description = "Продвинутые техники и термины B2/C1",
         ),
     )
 
@@ -84,7 +84,7 @@ object WordDataHebrewBatch20 {
             original = "פּוֹסְט-צִיּוֹנוּת", translation = "постсионизм"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 108225, setId = 1082, languagePair = "he-ru", rarity = "LEGENDARY",
+        WordEntity(id = 108225, setId = 1082, languagePair = "he-ru", rarity = "EPIC",
             original = "הַצְהָרַת בַּלְפוּר", translation = "Декларация Бальфура (1917)"),
 
         // ── Set 1083: Социальные сети ──────────────────────────────────────
@@ -138,20 +138,18 @@ object WordDataHebrewBatch20 {
             original = "תְּקְשׁוֹרֶת חֶבְרָתִית", translation = "социальная коммуникация"),
 
         // EPIC (C1)
-        WordEntity(id = 108322, setId = 1083, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 108322, setId = 1083, languagePair = "he-ru", rarity = "RARE",
             original = "פִּילְטֶר בּוּעָה", translation = "пузырь фильтров (filter bubble)"),
-        WordEntity(id = 108323, setId = 1083, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 108323, setId = 1083, languagePair = "he-ru", rarity = "RARE",
             original = "בּוּעַת מֵידָע", translation = "информационный пузырь"),
-        WordEntity(id = 108324, setId = 1083, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 108324, setId = 1083, languagePair = "he-ru", rarity = "RARE",
             original = "הַגְבָּרַת תּוֹכֶן", translation = "усиление контента (content amplification)"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 108325, setId = 1083, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "דֶּה-פְּלַטְפוֹרְמִינְג", translation = "деплатформинг (удаление с платформы)"),
+        WordEntity(id = 108325, setId = 1083, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "media_trust", transliteration = "aminut",
+            original = "אֲמִינוּת", translation = "надёжность, достоверность"),
 
-        // ── Set 1084: Кулинария: углублённо ───────────────────────────────
-
-        // COMMON (A1)
         WordEntity(id = 108401, setId = 1084, languagePair = "he-ru", rarity = "COMMON",
             original = "מָרִינָדָה", translation = "маринад"),
         WordEntity(id = 108402, setId = 1084, languagePair = "he-ru", rarity = "COMMON",
@@ -208,7 +206,7 @@ object WordDataHebrewBatch20 {
             original = "בְּרוּנוֹאָז", translation = "брюнуаз (мелкая кубическая нарезка)"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 108425, setId = 1084, languagePair = "he-ru", rarity = "LEGENDARY",
+        WordEntity(id = 108425, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
             original = "טֶרוּאָר", translation = "терруар (влияние места на продукт)"),
     )
 }

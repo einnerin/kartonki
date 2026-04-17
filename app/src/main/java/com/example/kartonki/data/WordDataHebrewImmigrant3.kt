@@ -10,10 +10,10 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant3 {
 
     val sets = listOf(
-        WordSetEntity(id = 1030, name = "Поиск работы",             description = "Вакансии, договор, зарплата, отпуск B1",     languagePair = "he-ru", orderIndex = 30),
-        WordSetEntity(id = 1031, name = "Детский сад и школа",      description = "Запись, уроки, кружки, собрания A2/B1",     languagePair = "he-ru", orderIndex = 31),
-        WordSetEntity(id = 1032, name = "Почта и посылки",          description = "Марки, конверты, трекинг, доставка A2",     languagePair = "he-ru", orderIndex = 32),
-        WordSetEntity(id = 1033, name = "Вождение",                 description = "Права, машина, топливо, штраф A2/B1",      languagePair = "he-ru", orderIndex = 33),
+        WordSetEntity(id = 1030, name = "Поиск работы",             description = "Вакансии, договор, зарплата, отпуск B1/B2",     languagePair = "he-ru", orderIndex = 30),
+        WordSetEntity(id = 1031, name = "Детский сад и школа",      description = "Запись, уроки, кружки, собрания B1/B2",     languagePair = "he-ru", orderIndex = 31),
+        WordSetEntity(id = 1032, name = "Почта и посылки",          description = "Марки, конверты, трекинг, доставка B1/B2",     languagePair = "he-ru", orderIndex = 32),
+        WordSetEntity(id = 1033, name = "Вождение",                 description = "Права, машина, топливо, штраф B1/B2",      languagePair = "he-ru", orderIndex = 33),
     )
 
     val words = listOf(
@@ -194,7 +194,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "תְּנַאֵי עֲבוֹדָה в новой компании очень хорошие.",
         ),
         WordEntity(
-            id = 103020, setId = 1030, languagePair = "he-ru", rarity = "EPIC",
+            id = 103020, setId = 1030, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "work", transliteration = "hakhshara miktzo'it",
             original = "הַכְשָׁרָה מִקְצוֹעִית", translation = "профессиональная подготовка",
             definition = "לִימּוּד מְיוּחָד לַרְכִישַׁת כִּשּׁוּרִים לְמִקְצוֹעַ חָדָשׁ.",
@@ -379,7 +379,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Следующая שִׂיחַת הוֹרִים пятого ноября.",
         ),
         WordEntity(
-            id = 103120, setId = 1031, languagePair = "he-ru", rarity = "EPIC",
+            id = 103120, setId = 1031, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "school", transliteration = "mesilat siyum",
             original = "מְסִיבַּת סִיּוּם", translation = "выпускной вечер",
             definition = "חֲגִיגָה בְּסוֹף שְׁנַת הַלִּימּוּדִים אוֹ בִּגְמַר שְׁלָב לִימּוּדִי.",

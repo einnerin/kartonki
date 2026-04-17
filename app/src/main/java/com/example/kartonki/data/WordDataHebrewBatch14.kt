@@ -10,7 +10,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch14 {
 
     val sets = listOf(
-        WordSetEntity(id = 1065, name = "Маркетинг: основы",      description = "Базовая лексика маркетолога A2/B1",              languagePair = "he-ru", orderIndex = 65),
+        WordSetEntity(id = 1065, name = "Маркетинг: основы",      description = "Базовая лексика маркетолога B2/C1",              languagePair = "he-ru", orderIndex = 65),
         WordSetEntity(id = 1066, name = "Маркетинг: углублённо", description = "Профессиональная лексика маркетолога B2/C1",     languagePair = "he-ru", orderIndex = 66),
     )
 
@@ -242,7 +242,7 @@ object WordDataHebrewBatch14 {
         ),
 
         WordEntity(
-            id = 106525, setId = 1065, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 106525, setId = 1065, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "estrategyat shuk",
             original = "אֶסְטְרָטֶגְיַת שׁוּק", translation = "рыночная стратегия; стратегия выхода на рынок",
             definition = "תוֹכְנִית כּוֹלֵלֶת לְקִידּוּם הַמּוּצָר לְשׁוּק יַעַד תּוֹךְ מֵיטוּב יִתְרוֹנוֹת תַּחֲרוּתִיִּים.",

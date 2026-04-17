@@ -69,9 +69,9 @@ object WordDataHebrewBatch37 {
             original = "מַטְעָן", translation = "груз / грузовой транспорт"),
         WordEntity(id = 113323, setId = 1133, languagePair = "he-ru", rarity = "RARE",
             original = "צוֹלֶלֶת", translation = "подводная лодка"),
-        WordEntity(id = 113324, setId = 1133, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113324, setId = 1133, languagePair = "he-ru", rarity = "RARE",
             original = "כַּרְכָּרָה", translation = "карета / экипаж"),
-        WordEntity(id = 113325, setId = 1133, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113325, setId = 1133, languagePair = "he-ru", rarity = "RARE",
             original = "מַרְכָּבָה", translation = "колесница / повозка"),
 
         // ── Set 1134: Одежда ──────────────────────────────────────────────

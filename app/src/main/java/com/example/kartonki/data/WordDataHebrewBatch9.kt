@@ -10,9 +10,9 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch9 {
 
     val sets = listOf(
-        WordSetEntity(id = 1050, name = "Красота и уход",          description = "Парикмахерская, косметика и самоуход A2/B1", languagePair = "he-ru", orderIndex = 50),
-        WordSetEntity(id = 1051, name = "Ремонт дома",             description = "Строительные работы, мастера и материалы B1", languagePair = "he-ru", orderIndex = 51),
-        WordSetEntity(id = 1052, name = "Прогулки на природе",     description = "Пешеходные маршруты, природа и кемпинг A2/B1", languagePair = "he-ru", orderIndex = 52),
+        WordSetEntity(id = 1050, name = "Красота и уход",          description = "Парикмахерская, косметика и самоуход A2/B2", languagePair = "he-ru", orderIndex = 50),
+        WordSetEntity(id = 1051, name = "Ремонт дома",             description = "Строительные работы, мастера и материалы B1/B2", languagePair = "he-ru", orderIndex = 51),
+        WordSetEntity(id = 1052, name = "Прогулки на природе",     description = "Пешеходные маршруты, природа и кемпинг A2/B2", languagePair = "he-ru", orderIndex = 52),
     )
 
     val words = listOf(
@@ -221,7 +221,7 @@ object WordDataHebrewBatch9 {
             exampleNative = "Она заплела волосы в צַמָּה для занятий спортом на улице.",
         ),
         WordEntity(
-            id = 105023, setId = 1050, languagePair = "he-ru", rarity = "EPIC",
+            id = 105023, setId = 1050, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "beauty_hair", transliteration = "seiva",
             original = "שֵׂיבָה", translation = "седина",
             definition = "שֵׂעָר לָבָן אוֹ אָפֹר הַנּוֹצָר עִם הַגִּיל.",
@@ -230,7 +230,7 @@ object WordDataHebrewBatch9 {
             exampleNative = "Первая שֵׂיבָה появилась, когда ему было тридцать один год.",
         ),
         WordEntity(
-            id = 105024, setId = 1050, languagePair = "he-ru", rarity = "EPIC",
+            id = 105024, setId = 1050, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "beauty_body", transliteration = "hisrat se'ar",
             original = "הִסְרַת שֵׂעָר", translation = "эпиляция",
             definition = "הֲסָרַת שֵׂעָר מְגוּף לְזְמַן אָרֹךְ בְּאֶמְצָעוּת לֵיזֵר, שַׁעֲוָה אוֹ שִׁיטוֹת אֲחֵרוֹת.",
@@ -239,7 +239,7 @@ object WordDataHebrewBatch9 {
             exampleNative = "Она сделала лазерную הִסְרַת שֵׂעָר на руках и ногах.",
         ),
         WordEntity(
-            id = 105025, setId = 1050, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 105025, setId = 1050, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "beauty_therapy", transliteration = "aromaterapiya",
             original = "אֲרוֹמָתֶרַפִּיָה", translation = "ароматерапия",
             definition = "טִיפּוּל מַשְׁלִים בְּשִׁמּוּשׁ בְּשַׁמְנֵי אֵתֵר לְקִידּוּם בְּרִיאוּת וְהַרְגָּעָה.",
@@ -452,7 +452,7 @@ object WordDataHebrewBatch9 {
             exampleNative = "מִטְבָּח חָדָשׁ — самая дорогая часть ремонта.",
         ),
         WordEntity(
-            id = 105123, setId = 1051, languagePair = "he-ru", rarity = "EPIC",
+            id = 105123, setId = 1051, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "renovation_insulation", transliteration = "izulatsiya",
             original = "אִיזּוּלַצְיָה", translation = "изоляция, утепление",
             definition = "חֹמֶר אוֹ שִׁיטָה לְמִנִּיעַת כְּנִיסַת חֹם, קֹר אוֹ לַחוּת לַמִּבְנֶה.",
@@ -461,7 +461,7 @@ object WordDataHebrewBatch9 {
             exampleNative = "Хорошая אִיזּוּלַצְיָה экономит много на счетах за электричество.",
         ),
         WordEntity(
-            id = 105124, setId = 1051, languagePair = "he-ru", rarity = "EPIC",
+            id = 105124, setId = 1051, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "renovation_finishing", transliteration = "nigmur",
             original = "נִגְמוּר", translation = "отделочные работы, финишная отделка",
             definition = "שְׁלַב אַחֲרוֹן בַּשִּׁפּוּץ שֶׁבּוֹ מַשְׁלִימִים אֶת הַפְּרָטִים הַקְּטַנִּים.",
@@ -469,20 +469,10 @@ object WordDataHebrewBatch9 {
             example = "עֲבוֹדוֹת הַנִּגְמוּר לָקְחוּ שָׁבוּעַ נוֹסָף אַחֲרֵי הַצִּבְיָעָה.",
             exampleNative = "Работы по נִגְמוּר заняли ещё неделю после покраски.",
         ),
-        WordEntity(
-            id = 105125, setId = 1051, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "renovation_safety", transliteration = "khizuk mivnanim",
-            original = "חִיזּוּק מִבְנִים", translation = "сейсмоусиление зданий",
-            definition = "חִיזּוּק מִבְנֶה קַיָּים לְשִׁפּוּר עֲמִידוּתוֹ בִּפְנֵי רְעִידַת אֲדָמָה.",
-            definitionNative = "Усиление существующего здания для повышения его устойчивости к землетрясению.",
-            example = "תָּמָּא 38 הִיא תָּכְנִית לְחִיזּוּק מִבְנִים יְשָׁנִים בְּיִשְׂרָאֵל.",
-            exampleNative = "ТАМА 38 — программа חִיזּוּק מִבְנִים для старых зданий в Израиле.",
-        ),
+        WordEntity(id = 105125, setId = 1051, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "renovation_eco", transliteration = "bniya yeruka",
+            original = "בְּנִיָּה יָרוּקָה", translation = "экологическое строительство"),
 
-        // ──────────────────────────────────────────────────────
-        // Set 1052 — טיולים בטבע  (Nature hikes and outdoors, A2/B1)
-        // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
-        // ──────────────────────────────────────────────────────
 
         WordEntity(
             id = 105201, setId = 1052, languagePair = "he-ru", rarity = "COMMON",
@@ -683,7 +673,7 @@ object WordDataHebrewBatch9 {
             exampleNative = "מְצוּקִים кратера Рамон одни из красивейших в Израиле.",
         ),
         WordEntity(
-            id = 105223, setId = 1052, languagePair = "he-ru", rarity = "EPIC",
+            id = 105223, setId = 1052, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hiking_landscape", transliteration = "sdamot",
             original = "שְׂדֵמוֹת", translation = "террасированные поля, уступы",
             definition = "מִדְרָגוֹת חַקְלָאִיּוֹת עֲתִיקוֹת הַחְצוּבוֹת בְּמִדְרוֹן הָהָר.",
@@ -692,7 +682,7 @@ object WordDataHebrewBatch9 {
             exampleNative = "Оттоманские שְׂדֵמוֹת в Иерусалимских горах до сих пор видны.",
         ),
         WordEntity(
-            id = 105224, setId = 1052, languagePair = "he-ru", rarity = "EPIC",
+            id = 105224, setId = 1052, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hiking_info", transliteration = "takhanat meyda",
             original = "תַּחֲנַת מֵידָע", translation = "информационный центр",
             definition = "מִבְנֶה בְּאֵיזוֹר טִיּוּל הַמַּצִּיעַ מַפּוֹת, מֵידָע וְסִיּוּעַ לַמְּטַיְּלִים.",
@@ -701,7 +691,7 @@ object WordDataHebrewBatch9 {
             exampleNative = "Мы получили карту и информацию о тропах в תַּחֲנַת מֵידָע.",
         ),
         WordEntity(
-            id = 105225, setId = 1052, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 105225, setId = 1052, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hiking_trails", transliteration = "shvil yisrael",
             original = "שְׁבִיל יִשְׂרָאֵל", translation = "Израильская национальная тропа",
             definition = "שְׁבִיל הַמִּטְיַּיָּלִים הַאֲרֹךְ בְּיִשְׂרָאֵל הַמּוֹבִיל מִקִּיבּוּץ דָּן בַּצָּפוֹן עַד אֵילַת בַּדָּרוֹם.",

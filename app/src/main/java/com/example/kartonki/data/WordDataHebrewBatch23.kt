@@ -84,7 +84,7 @@ object WordDataHebrewBatch23 {
             original = "תֵּיאוֹרְיַת הַמִּשְׂחָקִים", translation = "теория игр"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 109125, setId = 1091, languagePair = "he-ru", rarity = "LEGENDARY",
+        WordEntity(id = 109125, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
             original = "קֵינֶסְיָאנִיזְם", translation = "кейнсианство (теория Дж. М. Кейнса)"),
 
         // ── Set 1092: Философия ────────────────────────────────────────────

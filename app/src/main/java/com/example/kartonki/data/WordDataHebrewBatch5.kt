@@ -10,9 +10,9 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch5 {
 
     val sets = listOf(
-        WordSetEntity(id = 1038, name = "Пляж",                   description = "Активности на море и пляже A2/B1",            languagePair = "he-ru", orderIndex = 38),
-        WordSetEntity(id = 1039, name = "Свадьба и мероприятия", description = "Свадьбы, помолвки и семейные события B1",      languagePair = "he-ru", orderIndex = 39),
-        WordSetEntity(id = 1040, name = "Ульпан и учёба",         description = "Изучение иврита и языка A2/B1",               languagePair = "he-ru", orderIndex = 40),
+        WordSetEntity(id = 1038, name = "Пляж",                   description = "Активности на море и пляже A2/B2",            languagePair = "he-ru", orderIndex = 38),
+        WordSetEntity(id = 1039, name = "Свадьба и мероприятия", description = "Свадьбы, помолвки и семейные события B1/B2",      languagePair = "he-ru", orderIndex = 39),
+        WordSetEntity(id = 1040, name = "Ульпан и учёба",         description = "Изучение иврита и языка A2/B2",               languagePair = "he-ru", orderIndex = 40),
     )
 
     val words = listOf(
@@ -220,7 +220,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "מֶפְרָץ Хайфы — крупнейший торговый порт в Израиле.",
         ),
         WordEntity(
-            id = 103823, setId = 1038, languagePair = "he-ru", rarity = "EPIC",
+            id = 103823, setId = 1038, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "beach_activities", transliteration = "tzlila",
             original = "צְלִילָה", translation = "нырок, погружение",
             definition = "יְרִידָה מְכֻוֶּנֶת לְתוֹךְ הַמַּיִם לְחֶקֶר אוֹ לְהַנָּאָה.",
@@ -229,7 +229,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Моя первая צְלִילָה была на глубине двадцати метров.",
         ),
         WordEntity(
-            id = 103824, setId = 1038, languagePair = "he-ru", rarity = "EPIC",
+            id = 103824, setId = 1038, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "beach_nature", transliteration = "almog",
             original = "אַלְמוֹג", translation = "коралл",
             definition = "יְצוּר יָמִי קָטָן הַבּוֹנֶה שׁוּנִיּוֹת אֶבֶן תַּחַת הַמַּיִם.",
@@ -237,19 +237,10 @@ object WordDataHebrewBatch5 {
             example = "הָאַלְמוֹג בְּחוֹף אֵילַת נָמְצָא בְּסַכָּנַת הִכָּחֲדוּת.",
             exampleNative = "אַלְמוֹג на берегу Эйлата находится под угрозой исчезновения.",
         ),
-        WordEntity(
-            id = 103825, setId = 1038, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "beach_nature", transliteration = "matzoła",
-            original = "מַצּוּלָה", translation = "морская бездна (поэт.)",
-            definition = "תְּהוֹם הַיָּם — הַמָּקוֹם הֶעָמֹק בְּיוֹתֵר, מִשְׁמָשׁ בְּשִׁירָה וְסִפְרוּת.",
-            definitionNative = "Морская пучина — самое глубокое место; употребляется в поэзии.",
-            example = "יוֹנָה הָיָה בְּמַצּוּלָה וְקָרָא אֶל ה'.",
-            exampleNative = "Иона был в מַצּוּלָה и воззвал к Богу.",
-        ),
+        WordEntity(id = 103825, setId = 1038, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "beach_sports", transliteration = "galshan",
+            original = "גַּלְשָׁן", translation = "виндсёрфер, доска для виндсёрфинга"),
 
-        // ──────────────────────────────────────────────────────
-        // Set 1039 — חתונה ואירועים  (Wedding and celebrations, B1)
-        // ──────────────────────────────────────────────────────
 
         WordEntity(
             id = 103901, setId = 1039, languagePair = "he-ru", rarity = "COMMON",
@@ -450,7 +441,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "אֵירוּעַ свадьбы продолжался всю ночь.",
         ),
         WordEntity(
-            id = 103923, setId = 1039, languagePair = "he-ru", rarity = "EPIC",
+            id = 103923, setId = 1039, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "nisuin",
             original = "נִישּׂוּאִין", translation = "бракосочетание (офиц.)",
             definition = "מֻשָּׂג מִשְׁפָּטִי וְהֲלָכָתִי לִמְצַב הַנִּישֵּׂאִים.",
@@ -459,7 +450,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "נִישּׂוּאִין были зарегистрированы в МВД после свадьбы.",
         ),
         WordEntity(
-            id = 103924, setId = 1039, languagePair = "he-ru", rarity = "EPIC",
+            id = 103924, setId = 1039, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "wedding_celebration", transliteration = "makhol",
             original = "מָחוֹל", translation = "хороводный танец, плясовая (поэт.)",
             definition = "רִקּוּד מָסׇרְתִּי בְּמָעְגָּל, לְרֹב בְּהֶקְשֵׁר חֲגִיגִי אוֹ דָּתִי.",
@@ -468,7 +459,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "На традиционных свадьбах танцуют מָחוֹל вокруг жениха.",
         ),
         WordEntity(
-            id = 103925, setId = 1039, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 103925, setId = 1039, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "klulot",
             original = "כְּלוּלוֹת", translation = "свадьба (архаич., поэт.)",
             definition = "מִלָּה עַתִּיקָה וּפִּיּוּטִית לַחֲתוּנָּה, מְשֻׁמֶּשֶׁת בְּשִׁירָה וְסִפְרוּת.",
@@ -680,7 +671,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "תַּחְבִּיר иврита очень отличается от русского.",
         ),
         WordEntity(
-            id = 104023, setId = 1040, languagePair = "he-ru", rarity = "EPIC",
+            id = 104023, setId = 1040, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "ulpan_advanced", transliteration = "lashon",
             original = "לָשׁוֹן", translation = "язык, наречие (книжн.)",
             definition = "מִלָּה פִּיּוּטִית וְסִפְרוּתִית לְשָׂפָה, בְּשִׂמּוּשׁ בִּכְתִיבָה גָּבֹהָה.",
@@ -689,7 +680,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "לָשׁוֹן הַקֹּדֶשׁ — другое название библейского иврита.",
         ),
         WordEntity(
-            id = 104024, setId = 1040, languagePair = "he-ru", rarity = "EPIC",
+            id = 104024, setId = 1040, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "ulpan_advanced", transliteration = "balshnut",
             original = "בַּלְשָׁנוּת", translation = "лингвистика",
             definition = "הַמַּדָּע הָעוֹסֵק בְּחֵקֶר הַשָּׂפָה הָאֱנוֹשִׁית.",
@@ -697,14 +688,10 @@ object WordDataHebrewBatch5 {
             example = "הִיא לָמְדָה בַּלְשָׁנוּת בָּאוּנִיבֶרְסִיטָה לִפְנֵי הָעַלְיָּה.",
             exampleNative = "Она изучала בַּלְשָׁנוּת в университете до репатриации.",
         ),
-        WordEntity(
-            id = 104025, setId = 1040, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "ulpan_advanced", transliteration = "etymologia",
-            original = "אֶטִימוֹלוֹגְיָה", translation = "этимология",
-            definition = "חֵקֶר מוֹצָא הַמִּלִּים וְהִתְפַּתְּחוּתָן הַהִיסְטוֹרִית.",
-            definitionNative = "Изучение происхождения слов и их исторического развития.",
-            example = "הָאֶטִימוֹלוֹגְיָה שֶׁל מִלַּת 'שָׁלוֹם' קְשׁוּרָה לְשֹׁרֶשׁ ש-ל-מ.",
-            exampleNative = "אֶטִימוֹלוֹגְיָה слова «шалом» связана с корнем ש-ל-מ.",
-        ),
+        WordEntity(id = 104025, setId = 1040, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "ulpan_phonetics", transliteration = "mavta",
+            original = "מַבְטָא", translation = "произношение, акцент"),
+
+
     )
 }

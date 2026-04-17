@@ -10,10 +10,10 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant4 {
 
     val sets = listOf(
-        WordSetEntity(id = 1034, name = "Полиция и скорая",            description = "Полиция, скорая, пожарные, жалобы A2/B1",  languagePair = "he-ru", orderIndex = 34),
-        WordSetEntity(id = 1035, name = "Шаббат",                      description = "Шаббат, Песах, Йом-Кипур, традиции A2",   languagePair = "he-ru", orderIndex = 35),
-        WordSetEntity(id = 1036, name = "Налоги",                      description = "Налоги, пенсия, бюджет, отчётность B2",   languagePair = "he-ru", orderIndex = 36),
-        WordSetEntity(id = 1037, name = "Природа Израиля",             description = "Пустыня, моря, природа, климат A2/B1",    languagePair = "he-ru", orderIndex = 37),
+        WordSetEntity(id = 1034, name = "Полиция и скорая",            description = "Полиция, скорая, пожарные, жалобы B1/B2",  languagePair = "he-ru", orderIndex = 34),
+        WordSetEntity(id = 1035, name = "Шаббат",                      description = "Шаббат, Песах, Йом-Кипур, традиции B1/B2",   languagePair = "he-ru", orderIndex = 35),
+        WordSetEntity(id = 1036, name = "Налоги",                      description = "Налоги, пенсия, бюджет, отчётность B2/C1",   languagePair = "he-ru", orderIndex = 36),
+        WordSetEntity(id = 1037, name = "Природа Израиля",             description = "Пустыня, моря, природа, климат A2/B2",    languagePair = "he-ru", orderIndex = 37),
     )
 
     val words = listOf(
@@ -122,7 +122,7 @@ object WordDataHebrewImmigrant4 {
             exampleNative = "У меня פֶּצַע на ноге после падения.",
         ),
         WordEntity(
-            id = 103412, setId = 1034, languagePair = "he-ru", rarity = "EPIC",
+            id = 103412, setId = 1034, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "emergency", transliteration = "maatsar",
             original = "מַעֲצָר", translation = "арест / задержание",
             definition = "עֲצִירַת אָדָם עַל יְדֵי הַמִּשְׁטָרָה בְּחֶשֶׁד לְעֲבֵרָה.",
@@ -176,7 +176,7 @@ object WordDataHebrewImmigrant4 {
             exampleNative = "שׂוֹמֵר в торговом центре проверил мою сумку.",
         ),
         WordEntity(
-            id = 103418, setId = 1034, languagePair = "he-ru", rarity = "EPIC",
+            id = 103418, setId = 1034, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "emergency", transliteration = "kheder miyun",
             original = "חֶדֶר מִיּוּן", translation = "приёмный покой / скорая помощь (отделение)",
             definition = "מַחְלָקָה בְּבֵית הַחוֹלִים לְטִיפּוּל דָּחוּף בְּמַצְּבֵי חֵרוּם.",
@@ -185,7 +185,7 @@ object WordDataHebrewImmigrant4 {
             exampleNative = "Его доставили в חֶדֶר מִיּוּן после аварии.",
         ),
         WordEntity(
-            id = 103419, setId = 1034, languagePair = "he-ru", rarity = "EPIC",
+            id = 103419, setId = 1034, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "emergency", transliteration = "magen david adom",
             original = "מָגֵן דָּוִד אָדֹם", translation = "Маген Давид Адом (МДА, скорая помощь)",
             definition = "אִרְגּוּן הַהַצָּלָה הַלְּאוּמִי שֶׁל יִשְׂרָאֵל הַמַּפְעִיל אַמְבּוּלַנְסִים.",
@@ -194,7 +194,7 @@ object WordDataHebrewImmigrant4 {
             exampleNative = "При медицинской чрезвычайной ситуации звоните 101 в מָגֵן דָּוִד אָדֹם.",
         ),
         WordEntity(
-            id = 103420, setId = 1034, languagePair = "he-ru", rarity = "EPIC",
+            id = 103420, setId = 1034, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "emergency", transliteration = "kheker",
             original = "חֵקֶר", translation = "расследование",
             definition = "בְּדִיקָה שֵׁיטָתִית שֶׁל עֲבֵרָה אוֹ אֵירוּעַ עַל יְדֵי הַמִּשְׁטָרָה.",
@@ -334,7 +334,7 @@ object WordDataHebrewImmigrant4 {
             exampleNative = "На סֵדֶר Песах вся семья собирается у дедушки.",
         ),
         WordEntity(
-            id = 103515, setId = 1035, languagePair = "he-ru", rarity = "EPIC",
+            id = 103515, setId = 1035, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "holidays", transliteration = "havdala",
             original = "הַבְדָּלָה", translation = "Авдала (обряд окончания Шаббата)",
             definition = "טֶקֶס קָצָר בְּמוֹצָאֵי שַׁבָּת הַמַּבְדִּיל בֵּין הַקֹּדֶשׁ לַחֹל.",
@@ -343,7 +343,7 @@ object WordDataHebrewImmigrant4 {
             exampleNative = "הַבְדָּלָה делают с вином, благовониями и свечой.",
         ),
         WordEntity(
-            id = 103516, setId = 1035, languagePair = "he-ru", rarity = "EPIC",
+            id = 103516, setId = 1035, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "holidays", transliteration = "kidush",
             original = "קִידּוּשׁ", translation = "Кидуш (освящение Шаббата)",
             definition = "בְּרָכָה הַנֶּאֱמֶרֶת עַל הַיַּיִן בִּתְחִלַּת שַׁבָּת אוֹ חַג.",
@@ -677,7 +677,7 @@ object WordDataHebrewImmigrant4 {
             exampleNative = "Управление заповедников управляет более 400 שְׁמוּרַת טֶבַע в Израиле.",
         ),
         WordEntity(
-            id = 103712, setId = 1037, languagePair = "he-ru", rarity = "EPIC",
+            id = 103712, setId = 1037, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "nature", transliteration = "tsimkhiya",
             original = "צִמְחִיָּה", translation = "растительность / флора",
             definition = "מַכְלוֹל הַצְּמָחִים הַגְּדֵלִים בְּאֵזוֹר מְסוּיָּם.",

@@ -84,7 +84,7 @@ object WordDataHebrewBatch21 {
             original = "גּוּף וְנֶפֶשׁ", translation = "тело и душа (холистический подход в спорте)"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 108525, setId = 1085, languagePair = "he-ru", rarity = "LEGENDARY",
+        WordEntity(id = 108525, setId = 1085, languagePair = "he-ru", rarity = "EPIC",
             original = "תֵּיאוֹרִיַּת הַזְּרִימָה", translation = "теория потока (Чиксентмихайи)"),
 
         // ── Set 1086: Архитектура ──────────────────────────────────────────
@@ -146,7 +146,7 @@ object WordDataHebrewBatch21 {
             original = "קוֹנְסְטְרוּקְטִיבִיזְם", translation = "конструктивизм"),
 
         // LEGENDARY (C2)
-        WordEntity(id = 108625, setId = 1086, languagePair = "he-ru", rarity = "LEGENDARY",
+        WordEntity(id = 108625, setId = 1086, languagePair = "he-ru", rarity = "EPIC",
             original = "דֶּקוֹנְסְטְרוּקְטִיבִיזְם", translation = "деконструктивизм (Деррида, Гери)"),
 
         // ── Set 1087: Психология: углублённо ──────────────────────────────

@@ -10,9 +10,9 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch12 {
 
     val sets = listOf(
-        WordSetEntity(id = 1059, name = "Хайтек: основы",       description = "Базовая лексика IT-специалиста A2/B1",             languagePair = "he-ru", orderIndex = 59),
+        WordSetEntity(id = 1059, name = "Хайтек: основы",       description = "Базовая лексика IT-специалиста B2/C1",             languagePair = "he-ru", orderIndex = 59),
         WordSetEntity(id = 1060, name = "Хайтек: углублённо",  description = "Профессиональная лексика разработчика B2/C1",      languagePair = "he-ru", orderIndex = 60),
-        WordSetEntity(id = 1061, name = "Медицина: основы",     description = "Базовая медицинская лексика A2/B1",                languagePair = "he-ru", orderIndex = 61),
+        WordSetEntity(id = 1061, name = "Медицина: основы",     description = "Базовая медицинская лексика B2/C1",                languagePair = "he-ru", orderIndex = 61),
     )
 
     val words = listOf(
@@ -243,7 +243,7 @@ object WordDataHebrewBatch12 {
         ),
 
         WordEntity(
-            id = 105925, setId = 1059, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 105925, setId = 1059, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "tech_intern", transliteration = "heskem shmirat sod",
             original = "הֶסְכֵּם שְׁמִירַת סוֹד", translation = "соглашение о неразглашении; NDA",
             definition = "חוֹזֶה מִשְׁפָּטִי הַמּוֹנֵעַ מֵהָעוֹבֵד לְגַלּוֹת מֵידַע סוֹדִי שֶׁל הַחֶבְרָה.",
@@ -709,7 +709,7 @@ object WordDataHebrewBatch12 {
         ),
 
         WordEntity(
-            id = 106125, setId = 1061, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 106125, setId = 1061, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "medical_documentation", transliteration = "ma'arekhet meneh",
             original = "מַעֲרֶכֶת מֵנ״ה", translation = "система управления пациентами (МИС)",
             definition = "מַעֲרֶכֶת מֵידָע רְפוּאִית לְנִיהוּל גִּלְיוֹנוֹת חוֹלִים, הַזְמָנוֹת וּנְתוּנֵי מִנְהַל.",

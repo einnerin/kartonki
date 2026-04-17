@@ -10,9 +10,9 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch7 {
 
     val sets = listOf(
-        WordSetEntity(id = 1044, name = "Супермаркет",            description = "Покупки, цены и товары A2/B1",          languagePair = "he-ru", orderIndex = 44),
+        WordSetEntity(id = 1044, name = "Супермаркет",            description = "Покупки, цены и товары A2/B2",          languagePair = "he-ru", orderIndex = 44),
         WordSetEntity(id = 1045, name = "Больница и медицина",   description = "Госпитализация, операции и медицина B2/C1", languagePair = "he-ru", orderIndex = 45),
-        WordSetEntity(id = 1046, name = "Общественный транспорт", description = "Автобусы, поезда и Рав-Кав A2/B1",     languagePair = "he-ru", orderIndex = 46),
+        WordSetEntity(id = 1046, name = "Общественный транспорт", description = "Автобусы, поезда и Рав-Кав A2/B2",     languagePair = "he-ru", orderIndex = 46),
     )
 
     val words = listOf(
@@ -221,7 +221,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Я зарегистрировался в מוֹעֶדוֹן לָקוֹחוֹת Рами Леви.",
         ),
         WordEntity(
-            id = 104423, setId = 1044, languagePair = "he-ru", rarity = "EPIC",
+            id = 104423, setId = 1044, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "supermarket_online", transliteration = "kniyot onlayn",
             original = "קְנִיּוֹת אוֹנְלַיְן", translation = "покупки онлайн",
             definition = "רְכִישַׁת מוּצָרִים דֶּרֶךְ הָאִינְטֶרְנֶט עִם מִשְׁלוֹחַ לַבַּיִת.",
@@ -230,7 +230,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Многие израильтяне переходят на קְנִיּוֹת אוֹנְלַיְן ради экономии времени.",
         ),
         WordEntity(
-            id = 104424, setId = 1044, languagePair = "he-ru", rarity = "EPIC",
+            id = 104424, setId = 1044, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "supermarket_tech", transliteration = "kupa atsmit",
             original = "קֻפָּה עַצְמִית", translation = "касса самообслуживания",
             definition = "עֶמְדַּת תַּשְׁלוּם אוֹטוֹמָטִית שֶׁבָּהּ הַקּוֹנֶה סוֹרֵק אֶת הַמּוּצָרִים בְּעַצְמוֹ.",
@@ -239,7 +239,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Я воспользовался קֻפָּה עַצְמִית, потому что очередь была короткой.",
         ),
         WordEntity(
-            id = 104425, setId = 1044, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 104425, setId = 1044, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "supermarket_delivery", transliteration = "mishlokh ad habayit",
             original = "מִשְׁלוֹחַ עַד הַבַּיִת", translation = "доставка на дом",
             definition = "שֵׁרוּת הַמַּגִּיעַ לְבֵיתְךָ עִם הַקְּנִיּוֹת שֶׁהִזְמַנְתָּ.",
@@ -679,7 +679,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Из-за аварии автобус сделал שִׁינּוּי כִּוּוּן.",
         ),
         WordEntity(
-            id = 104623, setId = 1046, languagePair = "he-ru", rarity = "EPIC",
+            id = 104623, setId = 1046, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "transport_apps", transliteration = "aplikatsyat nesiyot",
             original = "אַפְּלִיקַצְיַת נְסִיעוֹת", translation = "приложение для маршрутов",
             definition = "אַפְּלִיקַצְיָה לְמֶכְשִׁיר נַיָּד לְתִכְנוּן מַסְלוּלֵי תַּחְבּוּרָה צִיבּוּרִית בִּזְמַן אֲמִיתִּי.",
@@ -688,7 +688,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "אַפְּלִיקַצְיַת נְסִיעוֹת показало, что автобус опаздывает на пять минут.",
         ),
         WordEntity(
-            id = 104624, setId = 1046, languagePair = "he-ru", rarity = "EPIC",
+            id = 104624, setId = 1046, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "emdat otobus",
             original = "עֶמְדַּת אוֹטוֹבּוּס", translation = "платформа/бокс автобуса",
             definition = "מָקוֹם מְסֻיָּם בְּתַחֲנָה מֶרְכָּזִית שֶׁמִּמֶּנּוּ יוֹצֵא קַו מְסֻיָּם.",
@@ -697,7 +697,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Автобус в Тель-Авив отправляется с עֶמְדַּת аутобуса номер шесть.",
         ),
         WordEntity(
-            id = 104625, setId = 1046, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 104625, setId = 1046, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "ma'avar tat-karkait",
             original = "מַעֲבָּר תַּת-קַרְקָעִי", translation = "подземный переход",
             definition = "מַמְסָּד תַּת-קַרְקָעִי לְמַעֲבַר הוֹלְכֵי רֶגֶל תַּחַת לְכֶבֶשׁ עָמוּס.",

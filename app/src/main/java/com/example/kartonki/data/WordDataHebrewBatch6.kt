@@ -10,9 +10,9 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch6 {
 
     val sets = listOf(
-        WordSetEntity(id = 1041, name = "Спорт и фитнес",         description = "Спорт, фитнес и тренировки A2/B1",    languagePair = "he-ru", orderIndex = 41),
-        WordSetEntity(id = 1042, name = "Ресторан и кафе",        description = "Заказ еды, меню и обслуживание B1",   languagePair = "he-ru", orderIndex = 42),
-        WordSetEntity(id = 1043, name = "Кулинария и кухня",      description = "Готовка, рецепты и кухонная утварь A2/B1", languagePair = "he-ru", orderIndex = 43),
+        WordSetEntity(id = 1041, name = "Спорт и фитнес",         description = "Спорт, фитнес и тренировки A2/B2",    languagePair = "he-ru", orderIndex = 41),
+        WordSetEntity(id = 1042, name = "Ресторан и кафе",        description = "Заказ еды, меню и обслуживание B1/B2",   languagePair = "he-ru", orderIndex = 42),
+        WordSetEntity(id = 1043, name = "Кулинария и кухня",      description = "Готовка, рецепты и кухонная утварь A2/B2", languagePair = "he-ru", orderIndex = 43),
     )
 
     val words = listOf(
@@ -221,7 +221,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "הַרָמַת מַשְׂקֹלוֹת требует точной техники и интенсивных тренировок.",
         ),
         WordEntity(
-            id = 104123, setId = 1041, languagePair = "he-ru", rarity = "EPIC",
+            id = 104123, setId = 1041, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "sport_basics", transliteration = "tri'atlon",
             original = "טְרִיאַתְלוֹן", translation = "триатлон",
             definition = "תַּחֲרוּת שֶׁמְּשַׁלֶּבֶת שְׂחִיָּה, רְכִיבָה עַל אוֹפַנַּיִם וְרִיצָה בְּרְצֵף.",
@@ -230,7 +230,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Он завершил טְרִיאַתְלוֹן впервые в сорок лет.",
         ),
         WordEntity(
-            id = 104124, setId = 1041, languagePair = "he-ru", rarity = "EPIC",
+            id = 104124, setId = 1041, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "sport_training", transliteration = "erobi",
             original = "אֵרוֹבִּי", translation = "аэробика",
             definition = "אִמּוּן גּוּפָנִי לְשִׁיפּוּר הַנְּשִׁימָה וְהַלֵּב בְּעֶזְרַת תְּנוּעוֹת קְצוּבוֹת.",
@@ -238,20 +238,10 @@ object WordDataHebrewBatch6 {
             example = "שִׁיעוּר אֵרוֹבִּי מַתְאִים לְכָל גִּיל וְרָמָה.",
             exampleNative = "Занятие אֵרוֹבִּי подходит для любого возраста и уровня.",
         ),
-        WordEntity(
-            id = 104125, setId = 1041, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "sport_training", transliteration = "pli'ometrika",
-            original = "פְּלִיאוֹמֶטְרִיקָה", translation = "плиометрика",
-            definition = "שִׁיטַת אִמּוּן הַמִּתְמַקֶּדֶת בִּקְפִיצוֹת וּתְנוּעוֹת נִפְּתוּחַ-כִּיוּוּץ מְהִירוֹת.",
-            definitionNative = "Метод тренировки, основанный на прыжках и быстрых движениях растяжения-сжатия.",
-            example = "פְּלִיאוֹמֶטְרִיקָה מְשַׁפֶּרֶת אֶת הַכֹּחַ הַנֶּפִיצִי שֶׁל הַסְּפּוֹרְטַאי.",
-            exampleNative = "פְּלִיאוֹמֶטְרִיקָה улучшает взрывную силу спортсмена.",
-        ),
+        WordEntity(id = 104125, setId = 1041, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "sport_training", transliteration = "imun koach",
+            original = "אִימוּן כֹּחַ", translation = "силовая тренировка"),
 
-        // ──────────────────────────────────────────────────────
-        // Set 1042 — מסעדה ובית קפה  (Restaurant and café, B1)
-        // 25 words: 6 COMMON + 9 UNCOMMON + 7 RARE + 2 EPIC + 1 LEGENDARY
-        // ──────────────────────────────────────────────────────
 
         WordEntity(
             id = 104201, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
@@ -452,7 +442,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "פָּלָאפֶל в пите с хумусом и салатом — популярный обед.",
         ),
         WordEntity(
-            id = 104223, setId = 1042, languagePair = "he-ru", rarity = "EPIC",
+            id = 104223, setId = 1042, languagePair = "he-ru", rarity = "RARE",
             pos = "adjective", semanticGroup = "restaurant_kosher", transliteration = "parve",
             original = "פָּרְוֶה", translation = "парве (нейтральный по кашруту)",
             definition = "מָאכָל שֶׁאֵינוֹ חֲלָבִי וְאֵינוֹ בָּשָׂרִי — כְּגוֹן פֵּרוֹת, יְרָקוֹת וּדָגִים מְסֻיָּמִים.",
@@ -461,7 +451,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Этот торт פָּרְוֶה — его можно есть после мяса.",
         ),
         WordEntity(
-            id = 104224, setId = 1042, languagePair = "he-ru", rarity = "EPIC",
+            id = 104224, setId = 1042, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "restaurant_service", transliteration = "sherut atsmi",
             original = "שֵׁרוּת עַצְמִי", translation = "самообслуживание",
             definition = "שִׁיטַת הַגָּשָׁה שֶׁבָּהּ הַלָּקוֹחַ נוֹטֵל אֶת הָאֹכֶל בְּעַצְמוֹ וּמְשַׁלֵּם בַּקֻּפָּה.",
@@ -470,7 +460,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "В этом ресторане שֵׁרוּת עַצְמִי — берёшь блюдо со стойки.",
         ),
         WordEntity(
-            id = 104225, setId = 1042, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 104225, setId = 1042, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "restaurant_coffee", transliteration = "kafe hefekh",
             original = "קָפֶה הֶפֶךְ", translation = "кофе хефех (перевёрнутый кофе)",
             definition = "מַשְׁקֶה קָפֶה יִשְׂרְאֵלִי שֶׁנּוֹצַר בְּטַבֶּרְיָה: חָלָב חַם מְקֻצַּף בְּתַחְתִּית, אֶסְפְּרֶסּוֹ מֵעָלָיו.",
@@ -683,7 +673,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Я положил фрукты в מְעַרְבֵּל, чтобы сделать смузи.",
         ),
         WordEntity(
-            id = 104323, setId = 1043, languagePair = "he-ru", rarity = "EPIC",
+            id = 104323, setId = 1043, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "mediyakh kelim",
             original = "מְדִיחַ כֵּלִים", translation = "посудомоечная машина",
             definition = "מַכְשִׁיר חַשְׁמַלִּי לְנִיקּוּי כֵּלִים אוֹטוֹמָטִי בְּמַיִם חַמִּים וְחוֹמֶר נִיקּוּי.",
@@ -692,7 +682,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "После еды мы сложили посуду в מְדִיחַ.",
         ),
         WordEntity(
-            id = 104324, setId = 1043, languagePair = "he-ru", rarity = "EPIC",
+            id = 104324, setId = 1043, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "kitchen_dishes", transliteration = "tavshil",
             original = "תַּבְשִׁיל", translation = "тушёное блюдо, рагу",
             definition = "מָאכָל הַמְּבֻשָּׁל לְאַט בְּנוֹזֵל עַל אֵשׁ נְמוּכָה לְזְמַן רַב.",
@@ -700,14 +690,10 @@ object WordDataHebrewBatch6 {
             example = "הַתַּבְשִׁיל שֶׁל אִמָּא טָעִים בִּמְיֻחָד בַּחֹרֶף.",
             exampleNative = "Мамин תַּבְשִׁיל особенно вкусен зимой.",
         ),
-        WordEntity(
-            id = 104325, setId = 1043, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "kitchen_techniques", transliteration = "su-vid",
-            original = "סוּ-וִיד", translation = "су-вид",
-            definition = "שִׁיטַת בִּישּׁוּל שֶׁבָּהּ הַמָּזוֹן נֶאֱטָם בְּשַׂקִּית וּמְבֻשָּׁל בְּמַיִם בְּטֶמְפֶּרָטוּרָה מְדֻיֶּקֶת.",
-            definitionNative = "Метод приготовления, при котором еда запечатывается в пакете и варится в воде при точной температуре.",
-            example = "סוּ-וִיד מְבַטִּיחַ בָּשָׂר עָסִיסִי וְטֶמְפֶּרָטוּרָה אֶחִידָה בְּכָל חֵלֶק.",
-            exampleNative = "סוּ-וִיד гарантирует сочное мясо и равномерную температуру по всему куску.",
-        ),
+        WordEntity(id = 104325, setId = 1043, languagePair = "he-ru", rarity = "RARE",
+            pos = "noun", semanticGroup = "kitchen_tools", transliteration = "sir lachatz",
+            original = "סִיר לַחַץ", translation = "скороварка (кастрюля под давлением)"),
+
+
     )
 }

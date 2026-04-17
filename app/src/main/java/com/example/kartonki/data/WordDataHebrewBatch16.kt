@@ -9,17 +9,17 @@ object WordDataHebrewBatch16 {
         WordSetEntity(
             id = 1070, languagePair = "he-ru", orderIndex = 1070,
             name = "Религия: основы",
-            description = "Базовая религиозная лексика A2/B1",
+            description = "Базовая религиозная лексика B2/C1",
         ),
         WordSetEntity(
             id = 1071, languagePair = "he-ru", orderIndex = 1071,
             name = "Религия: углублённо",
-            description = "Религиозная лексика B1/B2: течения, тексты, обряды",
+            description = "Религиозная лексика B2/C1: течения, тексты, обряды",
         ),
         WordSetEntity(
             id = 1072, languagePair = "he-ru", orderIndex = 1072,
             name = "Музыка",
-            description = "Музыкальная лексика A2/B2: инструменты, жанры, исполнение",
+            description = "Музыкальная лексика B2/C1: инструменты, жанры, исполнение",
         ),
     )
 
@@ -253,7 +253,7 @@ object WordDataHebrewBatch16 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107025, setId = 1070, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107025, setId = 1070, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "religion", transliteration = "aseret hadibrot",
             original = "עֲשֶׂרֶת הַדִּבְּרוֹת", translation = "Десять заповедей",
             definition = "עֲשָׂרָה כְּלָלִים מוּסָרִיִּים שֶׁנִּמְסְרוּ לְמֹשֶׁה עַל הַר סִינַי לְפִי הַמִּקְרָא.",
@@ -490,7 +490,7 @@ object WordDataHebrewBatch16 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107125, setId = 1071, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107125, setId = 1071, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "eskhatologiya",
             original = "אֶסְכָּטוֹלוֹגִיָּה", translation = "эсхатология (учение о конце времён)",
             definition = "תְּחוּם תֵּאוֹלוֹגִי הָעוֹסֵק בְּסוֹף הַיָּמִים, תְּחִיַּת הַמֵּתִים וְעוֹלָם הַבָּא.",
@@ -727,7 +727,7 @@ object WordDataHebrewBatch16 {
 
         // LEGENDARY (C2+)
         WordEntity(
-            id = 107225, setId = 1072, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 107225, setId = 1072, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "music", transliteration = "kontrapunkt",
             original = "קוֹנְטְרַפּוּנְקְט", translation = "контрапункт",
             definition = "טֶכְנִיקָה מוּסִיקָלִית שֶׁל שִׁלּוּב שְׁנֵי קַוֵּי מֶלוֹדִיָּה עַצְמָאִיִּים אוֹ יוֹתֵר.",
