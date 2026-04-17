@@ -11,7 +11,7 @@ object WordDataHebrewBatch12 {
 
     val sets = listOf(
         WordSetEntity(id = 1059, name = "Хайтек: основы",       description = "Базовая лексика IT-специалиста A2/B1",             languagePair = "he-ru", orderIndex = 59),
-        WordSetEntity(id = 1060, name = "Хайтек: углублённо",  description = "Профессиональная лексика разработчика B1/B2",      languagePair = "he-ru", orderIndex = 60),
+        WordSetEntity(id = 1060, name = "Хайтек: углублённо",  description = "Профессиональная лексика разработчика B2/C1",      languagePair = "he-ru", orderIndex = 60),
         WordSetEntity(id = 1061, name = "Медицина: основы",     description = "Базовая медицинская лексика A2/B1",                languagePair = "he-ru", orderIndex = 61),
     )
 
@@ -477,15 +477,11 @@ object WordDataHebrewBatch12 {
             exampleNative = "Наш שַׁרְשֶׁרֶת כֵּלִים включает GitHub, Jenkins и Docker.",
         ),
 
-        WordEntity(
-            id = 106025, setId = 1060, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "tech_devops", transliteration = "tashit ke-kod",
-            original = "תִּשְׁתִּית כְּקוֹד", translation = "инфраструктура как код (IaC)",
-            definition = "גִּישָׁה שֶׁבָּהּ הַתַּשְׁתִּית מְנוּהֶלֶת וּמְקוּנְפֶּגֶת בְּאֶמְצָעוּת קוֹד, לֹא בְּצוּרָה יָדָנִית.",
-            definitionNative = "Подход, при котором инфраструктура управляется и конфигурируется через код, а не вручную.",
-            example = "תִּשְׁתִּית כְּקוֹד מַבְטִיחָה שֶׁכָּל הַסְּבִיבוֹת זֵהוֹת וְנִיתָּנוֹת לְשִׁחְזוּר.",
-            exampleNative = "תִּשְׁתִּית כְּקוֹד гарантирует, что все среды идентичны и воспроизводимы.",
-        ),
+                WordEntity(id = 106025, original = "גֵּרְסוּן", transliteration = "[ɡerˈsun]", translation = "управление версиями; версионирование", rarity = "EPIC", setId = 1060, languagePair = "he-ru", pos = "noun", semanticGroup = "developer_pro",
+            definition = "the practice of assigning and managing version numbers for software releases to track changes",
+            example = "Semantic versioning makes it clear whether an update introduces breaking changes or just bug fixes.",
+            definitionNative = "Практика присвоения и управления номерами версий программных релизов для отслеживания изменений.",
+            exampleNative = "Семантический gersun чётко показывает, вносит ли обновление критические изменения или только исправления."),
 
         // ──────────────────────────────────────────────────────────────────
         // Set 1061 — סטאז' ברפואה — בסיסי  (Medical internship basics, A2/B1)

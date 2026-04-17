@@ -11,7 +11,7 @@ object WordDataHebrewBatch7 {
 
     val sets = listOf(
         WordSetEntity(id = 1044, name = "Супермаркет",            description = "Покупки, цены и товары A2/B1",          languagePair = "he-ru", orderIndex = 44),
-        WordSetEntity(id = 1045, name = "Больница и медицина",   description = "Госпитализация, операции и медицина B1/B2", languagePair = "he-ru", orderIndex = 45),
+        WordSetEntity(id = 1045, name = "Больница и медицина",   description = "Госпитализация, операции и медицина B2/C1", languagePair = "he-ru", orderIndex = 45),
         WordSetEntity(id = 1046, name = "Общественный транспорт", description = "Автобусы, поезда и Рав-Кав A2/B1",     languagePair = "he-ru", orderIndex = 46),
     )
 
@@ -469,15 +469,11 @@ object WordDataHebrewBatch7 {
             example = "הָרוֹפֵא בִּיקֵּשׁ אֶנְדּוֹסְקוֹפִּיָה שֶׁל הַבֶּטֶן.",
             exampleNative = "Врач назначил אֶנְדּוֹסְקוֹפִּיָה желудка.",
         ),
-        WordEntity(
-            id = 104525, setId = 1045, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hospital_people", transliteration = "akhot musmekhет",
-            original = "אָחוֹת מוּסְמֶכֶת", translation = "дипломированная медсестра",
-            definition = "מֶטְפֶּלֶת שֶׁסִּיְּמָה לִימּוּדֵי סִיעוּד אַקָדֶמִיִּים וְקִבְּלָה רִשְׁיוֹן.",
-            definitionNative = "Медсестра, окончившая академическое медицинское образование и получившая лицензию.",
-            example = "אָחוֹת מוּסְמֶכֶת יְכוֹלָה לִכְתֹּב מִרְשָׁם לְגֶבֶרֶת מְסֻיָּמוֹת.",
-            exampleNative = "אָחוֹת מוּסְמֶכֶת может выписывать рецепты на определённые препараты.",
-        ),
+                WordEntity(id = 104525, original = "טְרַנְסְפוּזְיָה", transliteration = "[transˈfuzja]", translation = "переливание крови; трансфузия", rarity = "EPIC", setId = 1045, languagePair = "he-ru", pos = "noun", semanticGroup = "hospital",
+            definition = "a medical procedure in which donated blood or blood products are transferred into a patient's bloodstream",
+            example = "The surgeon ordered an emergency transfusion after the patient lost a dangerous amount of blood.",
+            definitionNative = "Медицинская процедура переливания донорской крови или её компонентов в кровеносную систему пациента.",
+            exampleNative = "Хирург назначил экстренную transfuzya после того, как пациент потерял опасное количество крови."),
 
         // ──────────────────────────────────────────────────────
         // Set 1046 — תחבורה ציבורית  (Public transport, A2/B1)

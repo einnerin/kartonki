@@ -11,7 +11,7 @@ object WordDataHebrewBatch10 {
 
     val sets = listOf(
         WordSetEntity(id = 1053, name = "Праздники",              description = "Еврейские праздники, традиции и обряды A2/B1", languagePair = "he-ru", orderIndex = 53),
-        WordSetEntity(id = 1054, name = "Банк: углублённо",      description = "Банковское дело, сбережения и инвестиции B1/B2", languagePair = "he-ru", orderIndex = 54),
+        WordSetEntity(id = 1054, name = "Банк: углублённо",      description = "Банковское дело, сбережения и инвестиции B2/C1", languagePair = "he-ru", orderIndex = 54),
         WordSetEntity(id = 1055, name = "Карьера",               description = "Найм, карьера и условия труда A2/B2",           languagePair = "he-ru", orderIndex = 55),
     )
 
@@ -469,15 +469,11 @@ object WordDataHebrewBatch10 {
             example = "הַגּוּף הַפִּינַנְסִי נִדְרָשׁ לְהַגִּישׁ דוֹ\"חוֹת שְׁנָתִיִּים.",
             exampleNative = "גּוּף פִּינַנְסִי обязан подавать ежегодные отчёты.",
         ),
-        WordEntity(
-            id = 105425, setId = 1054, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "bank_savings", transliteration = "keren hishtalmut",
-            original = "קְרַן הִשְׁתַּלְמוּת", translation = "крен хиштальмут (фонд профессионального развития)",
-            definition = "קֶרֶן חִסָּכוֹן פְּטוּרָה מִמַּס לְעוֹבְדִים, יְעוּדָהּ הַמְּקוֹרִי הִשְׁתַּלְמוּת מְקַצּוֹעִית.",
-            definitionNative = "Не облагаемый налогом накопительный фонд для работников, исходно предназначенный для повышения квалификации.",
-            example = "אַחֲרֵי 6 שָׁנִים אֶפְשָׁר לִמְשׁוֹךְ אֶת קְרַן הַהִשְׁתַּלְמוּת פְּטוּרָה מִמַּס.",
-            exampleNative = "После 6 лет можно снять קְרַן הִשְׁתַּלְמוּת без уплаты налога.",
-        ),
+                WordEntity(id = 105425, original = "חֶשְׁבּוֹנָאוּת", transliteration = "[χeʃbonaˈut]", translation = "бухгалтерский учёт; бухгалтерия", rarity = "EPIC", setId = 1054, languagePair = "he-ru", pos = "noun", semanticGroup = "finance",
+            definition = "the systematic recording and analysis of financial transactions of a business",
+            example = "Strong accounting practices are essential for tracking cash flow and complying with tax regulations.",
+            definitionNative = "Систематическая запись и анализ финансовых операций предприятия.",
+            exampleNative = "Грамотная kheshbonanut необходима для отслеживания денежных потоков и соблюдения налогового законодательства."),
 
         // ──────────────────────────────────────────────────────────────────
         // Set 1055 — חיפוש עבודה  (Job hunting and employment, A2/B2)

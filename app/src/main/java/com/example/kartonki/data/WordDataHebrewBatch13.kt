@@ -10,9 +10,9 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch13 {
 
     val sets = listOf(
-        WordSetEntity(id = 1062, name = "Медицина: углублённо",  description = "Профессиональная медицинская лексика B1/B2",       languagePair = "he-ru", orderIndex = 62),
+        WordSetEntity(id = 1062, name = "Медицина: углублённо",  description = "Профессиональная медицинская лексика B2/C1",       languagePair = "he-ru", orderIndex = 62),
         WordSetEntity(id = 1063, name = "Право: основы",         description = "Базовая юридическая лексика A2/B1",                languagePair = "he-ru", orderIndex = 63),
-        WordSetEntity(id = 1064, name = "Право: углублённо",     description = "Профессиональная юридическая лексика B1/B2",       languagePair = "he-ru", orderIndex = 64),
+        WordSetEntity(id = 1064, name = "Право: углублённо",     description = "Профессиональная юридическая лексика B2/C1",       languagePair = "he-ru", orderIndex = 64),
     )
 
     val words = listOf(
@@ -242,15 +242,11 @@ object WordDataHebrewBatch13 {
             exampleNative = "Молекулярная גֶּנֶטִיקָה стала центральным инструментом современной медицины.",
         ),
 
-        WordEntity(
-            id = 106225, setId = 1062, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "rfuá meduéket",
-            original = "רְפוּאָה מְדֻיֶּקֶת", translation = "точная медицина; персонализированная медицина",
-            definition = "גִּישָׁה רְפוּאִית הַמַּתְאֶמֶת טִיפּוּל לְמַאֲפִיֵּנִים הַגֶּנֶטִיִּים הַיְּחִידָאִיִּים.",
-            definitionNative = "Медицинский подход, адаптирующий лечение к индивидуальным генетическим характеристикам.",
-            example = "רְפוּאָה מְדֻיֶּקֶת מַאֲפְשֶׁרֶת לְהִתְאִים תְּרוּפוֹת לְפְּרוֹפִיל הַגֶּנֶטִי שֶׁל כָּל חוֹלֶה.",
-            exampleNative = "רְפוּאָה מְדֻיֶּקֶת позволяет подбирать лекарства под генетический профиль каждого пациента.",
-        ),
+                WordEntity(id = 106225, original = "פְּרוֹגְנוֹזָה", transliteration = "[proɡˈnoza]", translation = "прогноз (медицинский); прогноз заболевания", rarity = "EPIC", setId = 1062, languagePair = "he-ru", pos = "noun", semanticGroup = "medical_pro",
+            definition = "a medical assessment of the likely course and outcome of a disease or injury",
+            example = "The oncologist gave a cautious prognosis, recommending further tests before deciding on treatment.",
+            definitionNative = "Медицинская оценка вероятного течения и исхода болезни или травмы.",
+            exampleNative = "Онколог дал осторожную prognoza, рекомендовав дополнительные анализы перед выбором лечения."),
 
         // ──────────────────────────────────────────────────────────────────
         // Set 1063 — סטאז' במשפט — בסיסי  (Law internship basics, A2/B1)
@@ -712,15 +708,11 @@ object WordDataHebrewBatch13 {
             exampleNative = "פַּרְקְלִיטוּת הַמְּדִינָה начала расследование дела.",
         ),
 
-        WordEntity(
-            id = 106425, setId = 1064, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_intern_advanced", transliteration = "shiltón hakhok",
-            original = "שִׁלְטוֹן הַחוֹק", translation = "верховенство закона; правовое государство",
-            definition = "עִקָּרוֹן לְפִיו כָּל אָדָם, כּוֹלֵל שְׁלִיחֵי הַשִּׁלְטוֹן, כָּפוּף לַחוֹק.",
-            definitionNative = "Принцип, согласно которому каждый человек, включая представителей власти, подчинён закону.",
-            example = "שִׁלְטוֹן הַחוֹק הוּא עַמּוּד הַשִּׂדְרָה שֶׁל הַדֵּמוֹקְרַטְיָה.",
-            exampleNative = "שִׁלְטוֹן הַחוֹק является позвоночником демократии.",
-        ),
+                WordEntity(id = 106425, original = "הַלְבָּנַת הוֹן", transliteration = "[halbaˈnat hon]", translation = "отмывание денег", rarity = "EPIC", setId = 1064, languagePair = "he-ru", pos = "noun", semanticGroup = "legal_pro",
+            definition = "the process of disguising illegally obtained money as legitimate funds",
+            example = "The bank was fined heavily for failing to detect signs of money laundering in client accounts.",
+            definitionNative = "Процесс придания незаконно полученным деньгам вида законных средств.",
+            exampleNative = "Банк был оштрафован за неспособность выявить признаки halbnat hon на счетах клиентов."),
 
     )
 }

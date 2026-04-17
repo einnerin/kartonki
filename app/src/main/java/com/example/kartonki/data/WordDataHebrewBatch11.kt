@@ -12,7 +12,7 @@ object WordDataHebrewBatch11 {
     val sets = listOf(
         WordSetEntity(id = 1056, name = "Климат",                description = "Погода, климат и природные явления Израиля A2/B1", languagePair = "he-ru", orderIndex = 56),
         WordSetEntity(id = 1057, name = "Домашние животные",     description = "Питомцы, уход и ветеринария A2/B1",                languagePair = "he-ru", orderIndex = 57),
-        WordSetEntity(id = 1058, name = "Психическое здоровье",  description = "Эмоции, стресс и психологическая помощь B1/B2",   languagePair = "he-ru", orderIndex = 58),
+        WordSetEntity(id = 1058, name = "Психическое здоровье",  description = "Эмоции, стресс и психологическая помощь B2/C1",   languagePair = "he-ru", orderIndex = 58),
     )
 
     val words = listOf(
@@ -712,14 +712,10 @@ object WordDataHebrewBatch11 {
             exampleNative = "הַדְרָכַת הוֹרִים улучшила отношения между отцом и сыном.",
         ),
 
-        WordEntity(
-            id = 105825, setId = 1058, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "mental_therapy", transliteration = "tipul zugi",
-            original = "טִיפּוּל זוּגִי", translation = "парная терапия; семейная психотерапия",
-            definition = "טִיפּוּל פְּסִיכוֹלוֹגִי שֶׁבּוֹ שְׁנֵי בְּנֵי הַזּוּג עוֹבְדִים יַחַד עִם מְטַפֵּל לְשִׁפּוּר הַקְּשָׁר.",
-            definitionNative = "Психологическая терапия, при которой оба партнёра работают вместе с терапевтом для улучшения отношений.",
-            example = "טִיפּוּל זוּגִי עָזַר לָהֶם לְדַבֵּר עַל נוֹשְׂאִים שֶׁלֹּא יָכְלוּ לְהַעֲלוֹת לְבַד.",
-            exampleNative = "Парная терапия — טִיפּוּל זוּגִי — помогла им говорить на темы, которые они не могли поднять наедине.",
-        ),
+                WordEntity(id = 105825, original = "טִיפּוּל קוֹגְנִיטִיבִי", transliteration = "[tiˈpul koɡniˈtivi]", translation = "когнитивная терапия", rarity = "EPIC", setId = 1058, languagePair = "he-ru", pos = "noun", semanticGroup = "psychology",
+            definition = "a form of psychotherapy that identifies and challenges negative thinking patterns to improve wellbeing",
+            example = "The therapist used cognitive therapy to help the patient reframe their anxious thoughts.",
+            definitionNative = "Форма психотерапии, выявляющая и оспаривающая негативные паттерны мышления для улучшения самочувствия.",
+            exampleNative = "Терапевт использовал tipul kognitivi, чтобы помочь пациенту переосмыслить тревожные мысли."),
     )
 }

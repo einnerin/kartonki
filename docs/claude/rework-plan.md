@@ -116,19 +116,34 @@ val MIGRATION_35_36 = object : Migration(35, 36) {
 
 | Сеты | Описание | Статус |
 |------|----------|--------|
-| 262–283 | Начальные наборы A1/A2 (Фрукты, Глаголы, Школа...) | ⏳ |
+| 262–283 | Начальные наборы A1/A2 (Фрукты, Глаголы, Школа...) — 25 слов ✓, уровни чистые | ✅ |
 
 ### Hebrew — сеты 1001–1141
 
 | Сеты | Файл | Статус |
 |------|------|--------|
-| 1001–1003 | WordDataHebrew.kt | ⏳ |
+| 1001–1003 | WordDataHebrew.kt | 🔄 (1003: 2 EPIC исправлены; остаток RARE-нарушений — отдельная задача) |
 | 1004–1007 | WordDataHebrewEveryday.kt | ⏳ |
-| 1008–1013 | WordDataHebrewMore.kt | ⏳ |
-| 1014–1018 | WordDataHebrewAdvanced.kt | ⏳ |
-| 1019–1021 | WordDataHebrewTech.kt | ⏳ |
+| 1008–1013 | WordDataHebrewMore.kt | 🔄 (1013→B2/C1: 4 EPIC исправлены; остаток — отдельная задача) |
+| 1014–1018 | WordDataHebrewAdvanced.kt | 🔄 (1014: 4 EPIC; 1015→B2/C1: 1 EPIC; 1016: 5 EPIC/LEGENDARY→RARE — критические исправлены) |
+| 1019–1021 | WordDataHebrewTech.kt | 🔄 (1020→B2/C1: 1 EPIC; 1021: 2 LEGENDARY→EPIC — критические исправлены) |
 | 1022–1037 | WordDataHebrewImmigrant*.kt | ⏳ |
-| 1038–1141 | WordDataHebrewBatch5–20.kt | ⏳ |
+| 1038–1044 | WordDataHebrewBatch5–6.kt | ⏳ |
+| 1045 | WordDataHebrewBatch7.kt | 🔄 (→B2/C1: 1 LEGENDARY→EPIC исправлен) |
+| 1046–1053 | WordDataHebrewBatch8–9.kt | ⏳ |
+| 1054 | WordDataHebrewBatch10.kt | 🔄 (→B2/C1: 1 LEGENDARY→EPIC исправлен) |
+| 1055–1057 | WordDataHebrewBatch10–11.kt | ⏳ |
+| 1058 | WordDataHebrewBatch11.kt | 🔄 (→B2/C1: 1 LEGENDARY→EPIC исправлен) |
+| 1059 | WordDataHebrewBatch11–12.kt | ⏳ |
+| 1060 | WordDataHebrewBatch12.kt | 🔄 (→B2/C1: 1 LEGENDARY→EPIC исправлен) |
+| 1061 | WordDataHebrewBatch12–13.kt | ⏳ |
+| 1062, 1064 | WordDataHebrewBatch13.kt | 🔄 (→B2/C1: 1 LEGENDARY→EPIC каждый) |
+| 1063 | WordDataHebrewBatch13.kt | ⏳ |
+| 1065 | WordDataHebrewBatch13–14.kt | ⏳ |
+| 1066 | WordDataHebrewBatch14.kt | 🔄 (→B2/C1: 1 LEGENDARY→EPIC исправлен) |
+| 1067 | WordDataHebrewBatch14–15.kt | ⏳ |
+| 1068–1069 | WordDataHebrewBatch15.kt | 🔄 (→B2/C1: 1 LEGENDARY→EPIC каждый) |
+| 1070–1141 | WordDataHebrewBatch15–20.kt | ⏳ |
 
 ---
 

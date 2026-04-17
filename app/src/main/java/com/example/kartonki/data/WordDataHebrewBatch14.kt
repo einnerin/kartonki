@@ -11,7 +11,7 @@ object WordDataHebrewBatch14 {
 
     val sets = listOf(
         WordSetEntity(id = 1065, name = "Маркетинг: основы",      description = "Базовая лексика маркетолога A2/B1",              languagePair = "he-ru", orderIndex = 65),
-        WordSetEntity(id = 1066, name = "Маркетинг: углублённо", description = "Профессиональная лексика маркетолога B1/B2",     languagePair = "he-ru", orderIndex = 66),
+        WordSetEntity(id = 1066, name = "Маркетинг: углублённо", description = "Профессиональная лексика маркетолога B2/C1",     languagePair = "he-ru", orderIndex = 66),
     )
 
     val words = listOf(
@@ -476,15 +476,11 @@ object WordDataHebrewBatch14 {
             exampleNative = "אֶחֶזֶר לָקוֹחַ продлил жизненный цикл клиента на два года.",
         ),
 
-        WordEntity(
-            id = 106625, setId = 1066, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "hinaKhút marka",
-            original = "הִנָּכוּת מָרְקָה", translation = "присутствие бренда; позиционирование бренда",
-            definition = "מֵידַת הַנּוֹכְחוּת וְהַזִּיהוּי שֶׁל מָרְקָה בְּתּוֹדָעַת הַצַּרְכָן בְּשׁוּקִים שׁוֹנִים.",
-            definitionNative = "Степень узнаваемости и присутствия бренда в сознании потребителей на разных рынках.",
-            example = "הִנָּכוּת מָרְקָה חֲזָקָה מַאֲפְשֶׁרֶת לְגַבּוֹת פְּרֶמְיָה מֵהַמִּתְחָרִים.",
-            exampleNative = "Сильная הִנָּכוּת מָרְקָה позволяет устанавливать надбавку к цене относительно конкурентов.",
-        ),
+                WordEntity(id = 106625, original = "פִּלּוּחַ שׁוּק", transliteration = "[piˈluaχ ʃuk]", translation = "сегментация рынка", rarity = "EPIC", setId = 1066, languagePair = "he-ru", pos = "noun", semanticGroup = "marketing_pro",
+            definition = "the process of dividing a market into distinct groups of buyers who share similar needs",
+            example = "Effective market segmentation allows the brand to deliver targeted messages to each customer group.",
+            definitionNative = "Процесс разделения рынка на отдельные группы покупателей со схожими потребностями.",
+            exampleNative = "Эффективный piluach shuk позволяет бренду доносить целевые сообщения до каждой группы клиентов."),
 
     )
 }

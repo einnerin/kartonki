@@ -11,8 +11,8 @@ object WordDataHebrewBatch15 {
 
     val sets = listOf(
         WordSetEntity(id = 1067, name = "Армия: основы",      description = "Базовая военная лексика A2/B1",                    languagePair = "he-ru", orderIndex = 67),
-        WordSetEntity(id = 1068, name = "Армия: углублённо",  description = "Профессиональная военная лексика B1/B2",            languagePair = "he-ru", orderIndex = 68),
-        WordSetEntity(id = 1069, name = "Политика",           description = "Кнессет, правительство и выборы B1/B2",            languagePair = "he-ru", orderIndex = 69),
+        WordSetEntity(id = 1068, name = "Армия: углублённо",  description = "Профессиональная военная лексика B2/C1",            languagePair = "he-ru", orderIndex = 68),
+        WordSetEntity(id = 1069, name = "Политика",           description = "Кнессет, правительство и выборы B2/C1",            languagePair = "he-ru", orderIndex = 69),
     )
 
     val words = listOf(
@@ -477,15 +477,11 @@ object WordDataHebrewBatch15 {
             exampleNative = "Господство в מִמַּד שְׁלִישִׁי даёт тактическое преимущество.",
         ),
 
-        WordEntity(
-            id = 106825, setId = 1068, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "army_advanced", transliteration = "harasa hadadit muvtakhat",
-            original = "הֲרָסָה הֲדָדִית מֻבְטַחַת", translation = "гарантированное взаимное уничтожение; MAD",
-            definition = "עֶקְרוֹן גַּרְעִינִי שֶׁלְּפִיו כָּל צַד מֻרְתָּע מִהַתְקָפָה כִּי הָאוֹיֵב מַסּוּגָּל לְהַשְׁמִידוֹ כָּמוֹת-כְּמוֹת.",
-            definitionNative = "Ядерный принцип, при котором каждая сторона удерживается от нападения, поскольку противник способен уничтожить её в ответ.",
-            example = "תּוֹרַת הַהֲרָסָה הַהֲדָדִית הַמֻּבְטַחַת שָׁלְטָה בְּיַחֲסֵי הַמֶּעַצְמוֹת בַּמִּלְחָמָה הַקָּרָה.",
-            exampleNative = "Доктрина הֲרָסָה הֲדָדִית מֻבְטַחַת господствовала в отношениях держав в годы холодной войны.",
-        ),
+                WordEntity(id = 106825, original = "תַּרְגִּיל צָבָאִי", transliteration = "[tarˈɡil tsaˈvaʔi]", translation = "военные учения", rarity = "EPIC", setId = 1068, languagePair = "he-ru", pos = "noun", semanticGroup = "military_pro",
+            definition = "a training exercise that tests the readiness and coordination of military units",
+            example = "The joint military exercise brought together forces from six allied nations for two weeks.",
+            definitionNative = "Тренировочные учения, проверяющие готовность и координацию военных подразделений.",
+            exampleNative = "Совместный targil tsva'i объединил силы шести союзных государств на две недели."),
 
         // ──────────────────────────────────────────────────────────────────
         // Set 1069 — פוליטיקה  (Politics, B1/B2)
@@ -712,15 +708,11 @@ object WordDataHebrewBatch15 {
             exampleNative = "У Израиля нет письменной חֻקָּה — только Основные законы.",
         ),
 
-        WordEntity(
-            id = 106925, setId = 1069, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "politics", transliteration = "hafradat reshuyót",
-            original = "הַפְרָדַת רְשׁוּיּוֹת", translation = "разделение властей",
-            definition = "עִקָּרוֹן חוּקְתִּי הַמַּחְלֵק אֶת הַשִּׁלְטוֹן בֵּין רְשׁוּת מְחוֹקֶקֶת, מְבַצַּעַת וְשׁוֹפֶטֶת.",
-            definitionNative = "Конституционный принцип, разделяющий власть на законодательную, исполнительную и судебную.",
-            example = "הַפְרָדַת הָרְשׁוּיּוֹת מוֹנַעַת רִיכּוּז כֹּחַ יֶתֶר בִּידֵי גוֹרֶם אֶחָד.",
-            exampleNative = "הַפְרָדַת רְשׁוּיּוֹת предотвращает чрезмерную концентрацию власти в одних руках.",
-        ),
+                WordEntity(id = 106925, original = "אִי-אֱמוּן", transliteration = "[iˈʔemun]", translation = "вотум недоверия (парламентский)", rarity = "EPIC", setId = 1069, languagePair = "he-ru", pos = "noun", semanticGroup = "politics",
+            definition = "a formal parliamentary vote indicating that the legislature no longer supports the government",
+            example = "The opposition submitted a vote of no confidence after the budget was rejected.",
+            definitionNative = "Официальное парламентское голосование, означающее утрату поддержки правительства законодательным органом.",
+            exampleNative = "Оппозиция внесла i-emun после отклонения бюджета."),
 
     )
 }
