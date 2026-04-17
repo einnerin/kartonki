@@ -5070,11 +5070,11 @@ object WordDataEnglishExpanded {
             definition = "A chair in a theatre or cinema.",
             example = "We reserved seats in the front row."),
                 WordEntity(
-            id = 20616, setId = 206, languagePair = "en-ru", rarity = "RARE",
+            id = 20616, setId = 206, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "cinema",
-            original = "marquee", transliteration = "[mɑrˈki]", translation = "театральный навес / рекламная афиша",
-            definition = "A large illuminated sign above a theatre entrance displaying show titles.",
-            example = "Her name appeared on the marquee in letters a metre high.",
+            original = "plot", transliteration = "[plɒt]", translation = "сюжет / фабула",
+            definition = "The main sequence of events in a film, play, or story.",
+            example = "The film has a gripping plot with unexpected twists.",
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(

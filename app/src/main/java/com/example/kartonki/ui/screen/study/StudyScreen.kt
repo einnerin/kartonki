@@ -180,13 +180,16 @@ fun StudyScreen(
 
             val listState = rememberLazyListState()
 
+            // Capture scroll position at composition time — before the snapshotFlow below
+            // can overwrite the ViewModel values with (0, 0) from the fresh listState.
+            val restoredScrollIndex = remember { viewModel.savedScrollIndex }
+            val restoredScrollOffset = remember { viewModel.savedScrollOffset }
+
             // Restore saved scroll position when the screen re-enters composition
-            // (e.g. language change causes ViewModel recreation).
+            // (e.g. after returning from a set detail screen or a language change).
             LaunchedEffect(Unit) {
-                val idx = viewModel.savedScrollIndex
-                val off = viewModel.savedScrollOffset
-                if (idx > 0 || off > 0) {
-                    listState.scrollToItem(idx, off)
+                if (restoredScrollIndex > 0 || restoredScrollOffset > 0) {
+                    listState.scrollToItem(restoredScrollIndex, restoredScrollOffset)
                 }
             }
 

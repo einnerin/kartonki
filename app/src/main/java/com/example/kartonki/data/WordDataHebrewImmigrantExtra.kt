@@ -704,7 +704,7 @@ object WordDataHebrewImmigrantExtra {
             exampleNative = "מִנְהַג нашей семьи — есть мёд на Рош Ашана.",
         ),
         WordEntity(
-            id = 103525, setId = 1035, languagePair = "he-ru", rarity = "EPIC",
+            id = 103525, setId = 1035, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holidays", transliteration = "mezuza",
             original = "מְזוּזָה", translation = "мезуза",
             definition = "קְלַף קָדוֹשׁ בְּנַרְתִּיק הַמּוּצָמָד לְמְזוּזַת הַדֶּלֶת כְּסִימָן יְהוּדִי.",
