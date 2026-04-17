@@ -10,6 +10,32 @@
 - Наборы: `insertSets` (IGNORE) + `updateSetMetadata` (только seed-поля: `name`, `description`, `orderIndex`). Поле `isFavorite` — пользовательское, не трогать.
 - Слова: `insertAllOrReplace` = REPLACE по PK. Есть UNIQUE-индекс `(original, languagePair)` — дубль уничтожает старую строку, старый набор теряет слово.
 
+## Редкость — первостепенное свойство
+
+`rarity` — это объективный уровень CEFR слова, не субъективная оценка.
+**Никогда не угадывай редкость по смыслу или теме.** Всегда читай из БД:
+
+```bash
+grep -A3 "original = \"СЛОВО\"" app/src/main/java/com/example/kartonki/data/WordDataXxx.kt | grep rarity
+```
+
+Пакетно для списка слов:
+```python
+import re, glob, sys
+sys.stdout.reconfigure(encoding='utf-8')
+all_words = {}
+for f in glob.glob('app/src/main/java/com/example/kartonki/data/WordData*.kt'):
+    for e in re.findall(r'WordEntity\([^)]+\)', open(f, encoding='utf-8').read(), re.DOTALL):
+        om = re.search(r'original\s*=\s*"([^"]+)"', e)
+        rm = re.search(r'rarity\s*=\s*"([^"]+)"', e)
+        if om and rm: all_words[om.group(1)] = rm.group(1)
+for w in ['слово1', 'слово2']: print(f'{w}: {all_words.get(w, "NOT FOUND")}')
+```
+
+На редкости строится вся логика: лимиты в колодах, цвета карточек, PvP-баланс.
+Ошибка в метке распространяется на всё. Редкость меняется только если метка
+**объективно неверна** по CEFR — не ради удобства набора или колоды.
+
 ## Чеклист перед добавлением набора
 
 1. **`name`/`description` — всегда на русском.** Не на иврите, не на английском.
