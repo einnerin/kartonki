@@ -94,7 +94,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Дети играли с כַּדּוּר יָם весь день.",
         ),
         WordEntity(
-            id = 103809, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 103809, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "beach_basics", transliteration = "avanim",
             original = "אֲבָנִים", translation = "камни (на берегу)",
             definition = "גּוּשֵׁי סֶלַע קְטַנִּים הַנִּמְצָאִים בְּחוֹף הַיָּם.",
@@ -405,7 +405,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Их כְּתוּבָּה была расписана вручную яркими красками.",
         ),
         WordEntity(
-            id = 103919, setId = 1039, languagePair = "he-ru", rarity = "RARE",
+            id = 103919, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "wedding_celebration", transliteration = "nagan",
             original = "נַגָּן", translation = "музыкант",
             definition = "אָדָם הַמְּנַגֵּן עַל כְּלִי נְגִינָה לְמִקְצוֹעוֹ.",
@@ -414,7 +414,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Мы наняли נַגָּן на скрипке для свадьбы.",
         ),
         WordEntity(
-            id = 103920, setId = 1039, languagePair = "he-ru", rarity = "RARE",
+            id = 103920, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "zer prakhim",
             original = "זֵר פְּרָחִים", translation = "букет цветов",
             definition = "אֶגֻּדַּת פְּרָחִים קְשׁוּרִים יַחַד לְנַאי אוֹ לְמַתָּנָה.",
@@ -432,7 +432,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "זִמְרָה певицы на свадьбе растрогала всех гостей.",
         ),
         WordEntity(
-            id = 103922, setId = 1039, languagePair = "he-ru", rarity = "RARE",
+            id = 103922, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "eirua",
             original = "אֵירוּעַ", translation = "мероприятие, торжество",
             definition = "כָּל מוֹעֵד חֶבְרָתִי מְאֻרְגָּן וּמְתֻכְנָן.",
@@ -626,7 +626,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Мой אוֹצַר מִלִּים растёт с каждой неделей в ульпане.",
         ),
         WordEntity(
-            id = 104018, setId = 1040, languagePair = "he-ru", rarity = "RARE",
+            id = 104018, setId = 1040, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ulpan_classroom", transliteration = "bkhina",
             original = "בְּחִינָה", translation = "экзамен, тест",
             definition = "מִבְחָן רִשְׁמִי לְהַעֲרָכַת הַיֶּדַע שֶׁל הַתַּלְמִיד.",
@@ -635,7 +635,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "В конце ульпана нас ждёт בְּחִינָה по всему материалу.",
         ),
         WordEntity(
-            id = 104019, setId = 1040, languagePair = "he-ru", rarity = "RARE",
+            id = 104019, setId = 1040, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "ulpan_basics", transliteration = "alef-bet",
             original = "אָלֶף-בֵּית", translation = "алфавит (ивритский)",
             definition = "שֶׁם מַעֲרֶכֶת הָאוֹתִיּוֹת שֶׁל הַשָּׂפָה הָעִבְרִית.",
@@ -653,7 +653,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "В детских книгах есть נִקּוּד, в газетах — нет.",
         ),
         WordEntity(
-            id = 104021, setId = 1040, languagePair = "he-ru", rarity = "RARE",
+            id = 104021, setId = 1040, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ulpan_basics", transliteration = "safat em",
             original = "שָׂפַת אֵם", translation = "родной язык",
             definition = "הַשָּׂפָה הָרִאשׁוֹנָה שֶׁאָדָם לָמַד מֵינְקוּתוֹ.",
@@ -688,7 +688,7 @@ object WordDataHebrewBatch5 {
             example = "הִיא לָמְדָה בַּלְשָׁנוּת בָּאוּנִיבֶרְסִיטָה לִפְנֵי הָעַלְיָּה.",
             exampleNative = "Она изучала בַּלְשָׁנוּת в университете до репатриации.",
         ),
-        WordEntity(id = 104025, setId = 1040, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 104025, setId = 1040, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ulpan_phonetics", transliteration = "mavta",
             original = "מַבְטָא", translation = "произношение, акцент"),
 

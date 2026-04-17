@@ -434,7 +434,7 @@ object WordDataHebrewBatch9 {
             exampleNative = "Уложили новые אַבְנֵי רִצְפָּה в домашнем саду.",
         ),
         WordEntity(
-            id = 105121, setId = 1051, languagePair = "he-ru", rarity = "RARE",
+            id = 105121, setId = 1051, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "renovation_rooms", transliteration = "kheder ambatya",
             original = "חֶדֶר אַמְבַּטְיָה", translation = "ванная комната",
             definition = "חֶדֶר בַּבַּיִת שֶׁבּוֹ הָאַמְבַּטְיָה, הַמִּקְלַחַת וְכִּיּוֹר הַיָּדַיִם.",

@@ -361,7 +361,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "В Израиле принято оставлять טִיפּ в размере десяти процентов.",
         ),
         WordEntity(
-            id = 104214, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 104214, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "restaurant_food", transliteration = "khumus",
             original = "חוּמּוּס", translation = "хумус",
             definition = "מָאכָל יִשְׂרְאֵלִי עֲשׂוּי מֵחוּמֶּצֶת חוּמּוּס טְחוּנִים עִם שֶׁמֶן זַיִת וּתְחִינָה.",
@@ -424,7 +424,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Кафе продаёт свежий מַאֲפֶה каждое утро.",
         ),
         WordEntity(
-            id = 104221, setId = 1042, languagePair = "he-ru", rarity = "RARE",
+            id = 104221, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "restaurant_food", transliteration = "shakshuka",
             original = "שַׁקְשׁוּקָה", translation = "шакшука",
             definition = "מָאכָל מְסוֹרָתִי שֶׁל בֵּיצִים מְבֻשָּׁלוֹת בְּרֹטֶב עַגְבָנִיּוֹת וּפְלָפְלִים.",
@@ -433,7 +433,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "שַׁקְשׁוּקָה на завтрак — одно из лучших удовольствий в Израиле.",
         ),
         WordEntity(
-            id = 104222, setId = 1042, languagePair = "he-ru", rarity = "RARE",
+            id = 104222, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "restaurant_food", transliteration = "falafel",
             original = "פָּלָאפֶל", translation = "фалафель",
             definition = "כַּדּוּרֵי חֻמּוּס אוֹ פּוּל טְחוּנִים וּמְטֻגָּנִים, מָאכָל יִשְׂרְאֵלִי קְלָסִי.",

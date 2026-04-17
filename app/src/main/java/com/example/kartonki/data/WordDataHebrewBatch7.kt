@@ -176,7 +176,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Отдел אָפִיָּה в супере продаёт свежий хлеб каждое утро.",
         ),
         WordEntity(
-            id = 104418, setId = 1044, languagePair = "he-ru", rarity = "RARE",
+            id = 104418, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "supermarket_dairy", transliteration = "yogurt",
             original = "יוֹגוּרְט", translation = "йогурт",
             definition = "מוּצַר חָלָב מְּחֻמָּץ עֲשִׁיר בְּחֶלְבּוֹנוֹת וּבְּחִידְקֵי חָלָב.",
@@ -185,7 +185,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Он ест יוֹגוּרְט с фруктами на завтрак.",
         ),
         WordEntity(
-            id = 104419, setId = 1044, languagePair = "he-ru", rarity = "RARE",
+            id = 104419, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_dairy", transliteration = "shamenet",
             original = "שַׁמְנֶת", translation = "сметана",
             definition = "מוּצַר חָלָב שֶׁנּוֹצָר מֵחֶמְאַת חָלָב בַּעַל מְרַקָּם עָבֶה.",
@@ -194,7 +194,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Я добавил שַׁמְנֶת в морковный суп.",
         ),
         WordEntity(
-            id = 104420, setId = 1044, languagePair = "he-ru", rarity = "RARE",
+            id = 104420, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_meat", transliteration = "nkaniyk",
             original = "נְקָנִיק", translation = "сосиска, колбаса",
             definition = "מוּצַר בָּשָׂר מְעֻבָּד הַנָּמְכָּר בְּצִינּוּר דַּק מְמֻלָּא.",
@@ -443,7 +443,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Отправили תַּרְבִּית горла в лабораторию.",
         ),
         WordEntity(
-            id = 104522, setId = 1045, languagePair = "he-ru", rarity = "RARE",
+            id = 104522, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_tests", transliteration = "totsa'ot",
             original = "תּוֹצָאוֹת", translation = "результаты (анализов)",
             definition = "מֵידַע הַמִּתְקַבֵּל לְאַחַר בְּדִיקָה רְפוּאִית.",

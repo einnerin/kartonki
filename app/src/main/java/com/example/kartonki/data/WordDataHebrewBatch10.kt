@@ -203,7 +203,7 @@ object WordDataHebrewBatch10 {
             exampleNative = "Мы приготовили מִשְׁלוֹחַ מָנוֹת с гоменташен, шоколадом и соком соседям.",
         ),
         WordEntity(
-            id = 105321, setId = 1053, languagePair = "he-ru", rarity = "RARE",
+            id = 105321, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holiday_purim", transliteration = "masekha",
             original = "מָסֵכָּה", translation = "маска; карнавальный костюм",
             definition = "כִּסּוּי לַפָּנִים שֶׁמַּסְתִּיר אֶת הַזֶּהוּת; נְהוּג בְּפּוּרִים.",
@@ -697,7 +697,7 @@ object WordDataHebrewBatch10 {
             exampleNative = "Я получил דְּמֵי הַבְרָאָה в июне — по два дня за каждый год стажа.",
         ),
         WordEntity(
-            id = 105525, setId = 1055, languagePair = "he-ru", rarity = "EPIC",
+            id = 105525, setId = 1055, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_insurance", transliteration = "bituakh le'umi",
             original = "בִּיטּוּחַ לְאוּמִּי", translation = "Битуах Леуми (Национальное страхование Израиля)",
             definition = "הַמּוֹסָד הַמֶּמְשַׁלְתִּי הָאַחְרַאִי עַל פֶּנְסִיָּה, אַבְטָלָה, לֵידָה וּנְכוּת בְּיִשְׂרָאֵל.",

@@ -671,7 +671,7 @@ object WordDataHebrewBatch13 {
             exampleNative = "הַחְלָטַת בֵּית מִשְׁפָּט была опубликована ночью.",
         ),
         WordEntity(
-            id = 106421, setId = 1064, languagePair = "he-ru", rarity = "RARE",
+            id = 106421, setId = 1064, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern_advanced", transliteration = "onesh",
             original = "עוֹנֶשׁ", translation = "наказание; приговор",
             definition = "סַנְקְצְיָה מִשְׁפָּטִית הַמּוּטֶלֶת עַל מִי שֶׁהוּרְשַׁע בְּבֵית מִשְׁפָּט.",

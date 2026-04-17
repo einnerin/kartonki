@@ -68,7 +68,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Я проверил תָּוִית מְחִיר перед примеркой туфель.",
         ),
         WordEntity(
-            id = 104706, setId = 1047, languagePair = "he-ru", rarity = "COMMON",
+            id = 104706, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mall_trade", transliteration = "kamona'i",
             original = "קַמְעוֹנַאי", translation = "розничный продавец",
             definition = "חֶנְוָנִי הַמּוֹכֵר מוּצָרִים לְלָקוֹחוֹת פְּרָטִיִּים בְּכַמֻּיּוֹת קְטַנּוֹת.",
@@ -176,7 +176,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Платье было велико, я заказала שִׁינּוּי מִדָּה у портнихи.",
         ),
         WordEntity(
-            id = 104718, setId = 1047, languagePair = "he-ru", rarity = "RARE",
+            id = 104718, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mall_accessories", transliteration = "tarmil",
             original = "תַּרְמִיל", translation = "рюкзак",
             definition = "תִּיק הַנָּשׂוּא עַל הַגַּב עִם רְצוּעוֹת כְּתֵפַיִם.",
@@ -362,7 +362,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Младенец сигнализирует о голоде громким בְּכִי.",
         ),
         WordEntity(
-            id = 104813, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 104813, setId = 1048, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "parenting_celebrations", transliteration = "yom hulédet",
             original = "יוֹם הוּלֶדֶת", translation = "день рождения",
             definition = "יוֹם שֶׁנּוֹלַד בּוֹ אָדָם, הַנֶּחְגָּג בְּדֶרֶךְ כְּלָל בְּמִסִּיבָּה.",
@@ -434,7 +434,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "הֵינֶקָה укрепляет связь между матерью и младенцем.",
         ),
         WordEntity(
-            id = 104821, setId = 1048, languagePair = "he-ru", rarity = "RARE",
+            id = 104821, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "parenting_books", transliteration = "sifrey yeladim",
             original = "סִפְרֵי יְלָדִים", translation = "детские книги",
             definition = "סְפָרִים הַמְּיֻעָדִים לִילָדִים, כּוֹלְלִים סִיפּוּרִים וְאִיּוּרִים.",
@@ -665,7 +665,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "אֵחוּד שְׁכֵנִים действовало против сноса районного сада.",
         ),
         WordEntity(
-            id = 104921, setId = 1049, languagePair = "he-ru", rarity = "RARE",
+            id = 104921, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "building_spaces", transliteration = "misdron",
             original = "מִסְדְּרוֹן", translation = "коридор (общий в здании)",
             definition = "מַמְסָּד אֹרֶךְ בְּקוֹמָה הַמְּחַבֵּר בֵּין הַדִּירוֹת לַמַּעֲלִית.",
@@ -674,7 +674,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Поддерживали чистоту в общем מִסְדְּרוֹן.",
         ),
         WordEntity(
-            id = 104922, setId = 1049, languagePair = "he-ru", rarity = "RARE",
+            id = 104922, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "building_spaces", transliteration = "sulam",
             original = "סֻלָּם", translation = "лестница",
             definition = "מִבְנֶה מַדְרֵגוֹת לְעֲלִיָּה וִירִידָה בֵּין קוֹמוֹת.",

@@ -671,7 +671,7 @@ object WordDataHebrewBatch15 {
             exampleNative = "כּוֹחוֹת הַבִּטָּחוֹן перешли в режим повышенной готовности.",
         ),
         WordEntity(
-            id = 106921, setId = 1069, languagePair = "he-ru", rarity = "RARE",
+            id = 106921, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "demokratyá",
             original = "דֵּמוֹקְרָטְיָה", translation = "демократия",
             definition = "שִׁיטַת שִׁלְטוֹן שֶׁבָּהּ הָעָם הוּא הַמְּקוֹר לְסַמְכוּת הַשִּׁלְטוֹן.",
