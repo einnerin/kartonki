@@ -32,12 +32,12 @@ object WordDataHebrewBatch14 {
         ),
         WordEntity(
             id = 106502, setId = 1065, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "marketing_intern", transliteration = "modaá",
-            original = "מוֹדָעָה", translation = "объявление; реклама; анонс",
-            definition = "הוֹדָעָה פוּמְבִּית הַמְּבַקֶּשֶׁת לְהַגִּיעַ לְקֶהֶל רָחָב.",
-            definitionNative = "Публичное сообщение, направленное на широкую аудиторию.",
-            example = "פִּרְסַמְנוּ מוֹדָעָה בְּגוּגְל לְקִדּוּם הַמּוּצָר הֶחָדָשׁ.",
-            exampleNative = "Мы разместили מוֹדָעָה в Google для продвижения нового продукта.",
+            pos = "noun", semanticGroup = "marketing_intern", transliteration = "mase pirsúm",
+            original = "מַסָּע פִּרְסוּם", translation = "рекламная кампания",
+            definition = "תוֹכְנִית פְּעִילוּת פִּרְסוּמִית מְתוּאֶמֶת לְקִדּוּם מוּצָר אוֹ שֵׁרוּת.",
+            definitionNative = "Скоординированный план рекламных действий для продвижения товара или услуги.",
+            example = "מַסָּע הַפִּרְסוּם הַחָדָשׁ הִגִּיעַ לְמִילְיוֹן אֲנָשִׁים.",
+            exampleNative = "Новая рекламная кампания охватила миллион человек.",
         ),
         WordEntity(
             id = 106503, setId = 1065, languagePair = "he-ru", rarity = "COMMON",

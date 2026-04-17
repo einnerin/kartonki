@@ -66,12 +66,12 @@ object WordDataHebrewBatch16 {
         ),
         WordEntity(
             id = 107005, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "religion", transliteration = "brakha",
-            original = "בְּרָכָה", translation = "благословение / браха",
-            definition = "נוּסְחָה קְצָרָה שֶׁאוֹמְרִים לִפְנֵי פְּעוּלָּה מְסוּיֶּמֶת כְּהוֹדָיָה לָאֵל.",
-            definitionNative = "Краткая молитвенная формула, произносимая перед определённым действием как благодарность Богу.",
-            example = "לִפְנֵי הָאֲכִילָה אוֹמְרִים בְּרָכָה.",
-            exampleNative = "Перед едой говорят браху.",
+            pos = "noun", semanticGroup = "religion", transliteration = "kidush",
+            original = "קִדּוּשׁ", translation = "кидуш (освящение субботы над вином)",
+            definition = "תְּפִלָּה הַנֶּאֱמֶרֶת עַל כּוֹס יַיִן בְּשַׁבָּת וּבְיָמִים טוֹבִים לִקְדּוּשַׁת הַיּוֹם.",
+            definitionNative = "Молитва, произносимая над бокалом вина в субботу и праздники для освящения дня.",
+            example = "הָאַב עָשָׂה קִדּוּשׁ לִפְנֵי הַסְּעוּדָה בְּשַׁבָּת.",
+            exampleNative = "Отец произнёс кидуш перед субботней трапезой.",
         ),
         WordEntity(
             id = 107006, setId = 1070, languagePair = "he-ru", rarity = "COMMON",

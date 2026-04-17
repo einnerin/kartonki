@@ -167,12 +167,12 @@ object WordDataHebrewBatch17 {
         ),
         WordEntity(
             id = 107316, setId = 1073, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup", transliteration = "demo",
-            original = "דֶּמוֹ", translation = "демо / демонстрация продукта",
-            definition = "הַדְגָּמָה חַיָּה שֶׁל הַמּוּצָר לְמַשְׁקִיעִים אוֹ לַקּוֹחוֹת.",
-            definitionNative = "Живая демонстрация продукта инвесторам или клиентам.",
-            example = "הַדֶּמוֹ עָבַד מֻשְׁלָם בְּמַהֲלַךְ הַפְּגִישָׁה.",
-            exampleNative = "Демо прошло идеально во время встречи.",
+            pos = "noun", semanticGroup = "startup", transliteration = "pilot",
+            original = "פִּיילוֹט", translation = "пилотный проект",
+            definition = "פְּרוֹיֶקְט נִסּוּי מְצוּמְצָם לִבְדִיקַת רַעְיוֹן לִפְנֵי הַרְחָבָה מְלֵאָה.",
+            definitionNative = "Небольшой пробный проект для тестирования идеи перед полным масштабированием.",
+            example = "הַחֶבְרָה הִשִּׁיקָה פִּיילוֹט עִם עֲשָׂרָה לְקוּחוֹת לִפְנֵי הַהַשְׁקָה הָרְחָבָה.",
+            exampleNative = "Компания запустила пилот с десятью клиентами до широкого запуска.",
         ),
 
         // RARE (B2)
@@ -531,12 +531,12 @@ object WordDataHebrewBatch17 {
         ),
         WordEntity(
             id = 107504, setId = 1075, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "art", transliteration = "aman",
-            original = "אָמָּן", translation = "художник / артист",
-            definition = "מִי שֶׁיּוֹצֵר יְצִירוֹת אָמָּנוּת.",
-            definitionNative = "Тот, кто создаёт произведения искусства.",
-            example = "הָאָמָּן עָבַד עַל הַצִּיּוּר שָׁנָה שְׁלֵמָה.",
-            exampleNative = "Художник работал над картиной целый год.",
+            pos = "noun", semanticGroup = "art", transliteration = "pasal",
+            original = "פְּסָל", translation = "скульптор",
+            definition = "מִי שֶׁיּוֹצֵר פְּסָלִים מֵחֹמֶר, עֵץ, אֶבֶן אוֹ מַתֶּכֶת.",
+            definitionNative = "Тот, кто создаёт скульптуры из глины, дерева, камня или металла.",
+            example = "הַפְּסָל עָבַד עַל יְצִירָתוֹ שָׁנָה שְׁלֵמָה.",
+            exampleNative = "Скульптор работал над своим произведением целый год.",
         ),
         WordEntity(
             id = 107505, setId = 1075, languagePair = "he-ru", rarity = "COMMON",

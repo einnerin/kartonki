@@ -160,12 +160,12 @@ object WordDataHebrewBatch13 {
         ),
         WordEntity(
             id = 106216, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "endoskopía",
-            original = "אֶנְדּוֹסְקוֹפְּיָה", translation = "эндоскопия",
-            definition = "בְּדִיקָה פְּנִימִית שֶׁל חֲלָלֵי הַגּוּף בְּאֶמְצָעוּת כַּלִי אוֹפְּטִי גָּמִישׁ.",
-            definitionNative = "Внутренний осмотр полостей тела с помощью гибкого оптического прибора.",
-            example = "אֶנְדּוֹסְקוֹפְּיָה גַּסְטְרוֹאִינְטֶסְטִינָלִית נִמְצֵאת בְּשִׁגְרַת הַמִּחְלָקָה.",
-            exampleNative = "Гастроинтестинальная אֶנְדּוֹסְקוֹפְּיָה — рутина отделения.",
+            pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "kemoterapya",
+            original = "כֶּמוֹתֶרַפְּיָה", translation = "химиотерапия",
+            definition = "טִיפּוּל תְּרוּפָתִי בְּסַרְטָן בְּאֶמְצָעוּת תְּרוּפוֹת הַהוֹרְגוֹת תָּאִים מְסַרְטְנִים.",
+            definitionNative = "Медикаментозное лечение рака с помощью препаратов, уничтожающих раковые клетки.",
+            example = "הַחוֹלֶה עָבַר כֶּמוֹתֶרַפְּיָה שֶׁל שֵׁשָּׁה מַחְזוֹרִים.",
+            exampleNative = "Пациент прошёл шесть курсов химиотерапии.",
         ),
 
         WordEntity(
