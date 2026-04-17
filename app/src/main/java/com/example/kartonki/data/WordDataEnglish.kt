@@ -1468,7 +1468,7 @@ object WordDataEnglish {
             example = "She has travelled to every continent except Antarctica.",
             definitionNative = "Один из семи крупнейших массивов суши на Земле.",
             exampleNative = "Она побывала на каждом continent, кроме Антарктиды."),
-        WordEntity(id = 1123, original = "town", transliteration = "[taʊn]", translation = "город", rarity = "COMMON", setId = 11, languagePair = "en-ru", pos = "noun", semanticGroup = "geography",
+        WordEntity(id = 1123, original = "town", transliteration = "[taʊn]", translation = "небольшой город / городок", rarity = "COMMON", setId = 11, languagePair = "en-ru", pos = "noun", semanticGroup = "geography",
             definition = "a place with many buildings, smaller than a city",
             example = "I grew up in a small town in the north.",
             definitionNative = "Населённый пункт с домами и магазинами, меньше города.",
@@ -1599,7 +1599,7 @@ object WordDataEnglish {
             example = "He has a broken arm from a fall.",
             definitionNative = "Сломанный, повреждённый — особенно о кости.",
             exampleNative = "У него broken рука после неудачного падения на льду."),
-        WordEntity(id = 1224, original = "ache", transliteration = "[eɪk]", translation = "боль", rarity = "UNCOMMON", setId = 12, languagePair = "en-ru", pos = "noun", semanticGroup = "health",
+        WordEntity(id = 1224, original = "ache", transliteration = "[eɪk]", translation = "ноющая боль", rarity = "UNCOMMON", setId = 12, languagePair = "en-ru", pos = "noun", semanticGroup = "health",
             definition = "a continuous dull pain in part of your body",
             example = "I have an ache in my lower back.",
             definitionNative = "Непрекращающаяся тупая боль в какой-либо части тела.",
@@ -2519,7 +2519,7 @@ object WordDataEnglish {
             example = "He had to apply for a visa six weeks before his trip.",
             definitionNative = "Официальное разрешение, проставляемое в паспорте для въезда в страну.",
             exampleNative = "Ему пришлось подать заявку на visa за шесть недель до отъезда."),
-        WordEntity(id = 2006, original = "tour", transliteration = "[tʊr]", translation = "экскурсия", rarity = "COMMON", setId = 20, languagePair = "en-ru", pos = "noun", semanticGroup = "travel",
+        WordEntity(id = 2006, original = "tour", transliteration = "[tʊr]", translation = "тур / организованное путешествие", rarity = "COMMON", setId = 20, languagePair = "en-ru", pos = "noun", semanticGroup = "travel",
             definition = "An organised trip to visit places of interest.",
             example = "They went on a guided tour of the old city.",
             definitionNative = "Организованная поездка для осмотра достопримечательностей.",
@@ -2776,10 +2776,10 @@ object WordDataEnglish {
             example = "His colleagues organised a surprise party for his birthday.",
             definitionNative = "Человек, с которым работаешь в одном месте.",
             exampleNative = "Её colleague помог разобраться с новой программой."),
-        WordEntity(id = 2207, original = "salary", transliteration = "[ˈsæləri]", translation = "зарплата", rarity = "UNCOMMON", setId = 22, languagePair = "en-ru", pos = "noun", semanticGroup = "work",
+        WordEntity(id = 2207, original = "salary", transliteration = "[ˈsæləri]", translation = "оклад (фиксированная зарплата)", rarity = "UNCOMMON", setId = 22, languagePair = "en-ru", pos = "noun", semanticGroup = "work",
             definition = "The money you receive regularly from your employer.",
             example = "She got a pay rise and her salary increased by ten percent.",
-            definitionNative = "Ежемесячная денежная выплата за выполненную работу.",
+            definitionNative = "Ежемесячная фиксированная денежная выплата за выполненную работу.",
             exampleNative = "После повышения её salary выросла почти вдвое."),
         WordEntity(id = 2208, original = "interview", transliteration = "[ˈɪntərvˌju]", translation = "собеседование", rarity = "COMMON", setId = 22, languagePair = "en-ru", pos = "noun", semanticGroup = "work",
             definition = "A formal meeting where someone is asked questions for a job.",
@@ -2841,15 +2841,15 @@ object WordDataEnglish {
             example = "Please sign the contract here.",
             definitionNative = "Поставить свою подпись под документом.",
             exampleNative = "Пожалуйста, sign договор в двух местах, где указаны стрелочки."),
-        WordEntity(id = 2220, original = "employ", transliteration = "[ɪmˈplɔɪ]", translation = "нанимать", rarity = "COMMON", setId = 22, languagePair = "en-ru", pos = "verb", semanticGroup = "work",
-            definition = "to pay someone to do a job for you",
-            example = "The company employs over two hundred people.",
-            definitionNative = "Нанимать людей за плату для выполнения работы.",
-            exampleNative = "Компания employ более трёхсот специалистов по всему миру."),
-        WordEntity(id = 2221, original = "wages", transliteration = "[ˈweɪʤɪz]", translation = "зарплата", rarity = "COMMON", setId = 22, languagePair = "en-ru", pos = "noun", semanticGroup = "work",
-            definition = "money paid regularly to an employee for work done",
+        WordEntity(id = 2220, original = "recruit", transliteration = "[rɪˈkrut]", translation = "набирать / подбирать сотрудников", rarity = "COMMON", setId = 22, languagePair = "en-ru", pos = "verb", semanticGroup = "work",
+            definition = "to find and enlist new people to work for an organisation",
+            example = "The company is recruiting new staff for the busy season.",
+            definitionNative = "Находить и привлекать новых сотрудников в организацию.",
+            exampleNative = "Компания recruit новых специалистов на летний сезон."),
+        WordEntity(id = 2221, original = "wages", transliteration = "[ˈweɪʤɪz]", translation = "почасовая / сдельная оплата", rarity = "COMMON", setId = 22, languagePair = "en-ru", pos = "noun", semanticGroup = "work",
+            definition = "money paid regularly to an employee for work done, typically calculated per hour or day",
             example = "His wages are paid every Friday.",
-            definitionNative = "Денежное вознаграждение работника за выполненный труд.",
+            definitionNative = "Почасовое или сдельное денежное вознаграждение работника.",
             exampleNative = "Его wages перечисляются на карту каждую пятницу."),
         WordEntity(id = 2222, original = "duty", transliteration = "[ˈduti]", translation = "обязанность", rarity = "COMMON", setId = 22, languagePair = "en-ru", pos = "noun", semanticGroup = "work",
             definition = "a task or piece of work someone is required to do",
@@ -2907,7 +2907,7 @@ object WordDataEnglish {
             example = "She prefers reading fiction to non-fiction because she enjoys stories.",
             definitionNative = "Художественная литература об вымышленных событиях и людях.",
             exampleNative = "Он предпочитает читать fiction, а не деловые книги."),
-        WordEntity(id = 2308, original = "scene", transliteration = "[sin]", translation = "сцена", rarity = "UNCOMMON", setId = 23, languagePair = "en-ru", pos = "noun", semanticGroup = "arts",
+        WordEntity(id = 2308, original = "scene", transliteration = "[sin]", translation = "сцена (эпизод)", rarity = "UNCOMMON", setId = 23, languagePair = "en-ru", pos = "noun", semanticGroup = "arts",
             definition = "A part of a film or play in which events happen in one place.",
             example = "The most dramatic scene in the film is the confrontation at the end.",
             definitionNative = "Фрагмент фильма или спектакля, происходящий в одном месте.",
@@ -2972,7 +2972,7 @@ object WordDataEnglish {
             example = "The author signed copies of her new novel at the bookshop.",
             definitionNative = "Человек, написавший книгу или другой текстовый материал.",
             exampleNative = "Известный author подписывал книги для читателей весь вечер."),
-        WordEntity(id = 2321, original = "stage", transliteration = "[steɪʤ]", translation = "сцена", rarity = "UNCOMMON", setId = 23, languagePair = "en-ru", pos = "noun", semanticGroup = "arts",
+        WordEntity(id = 2321, original = "stage", transliteration = "[steɪʤ]", translation = "сцена (подмостки)", rarity = "UNCOMMON", setId = 23, languagePair = "en-ru", pos = "noun", semanticGroup = "arts",
             definition = "The raised platform in a theatre where performers act.",
             example = "She walked onto the stage and the audience fell silent.",
             definitionNative = "Приподнятая платформа в театре, на которой играют актёры.",
@@ -3559,7 +3559,7 @@ object WordDataEnglish {
             example = "She felt great relief when she heard the test results were normal.",
             definitionNative = "Чувство облегчения после того, как неприятное миновало.",
             exampleNative = "Услышав хорошие результаты анализов, она почувствовала огромный relief."),
-        WordEntity(id = 2812, original = "frustrated", transliteration = "[ˈfrəˌstreɪtəd]", translation = "разочарованный/расстроенный", rarity = "UNCOMMON", setId = 28, languagePair = "en-ru", pos = "adjective", semanticGroup = "emotions",
+        WordEntity(id = 2812, original = "frustrated", transliteration = "[ˈfrəˌstreɪtəd]", translation = "раздражённый / расстроенный", rarity = "UNCOMMON", setId = 28, languagePair = "en-ru", pos = "adjective", semanticGroup = "emotions",
             definition = "Feeling annoyed because you cannot do or achieve something.",
             example = "She was frustrated that the computer kept crashing during her presentation.",
             definitionNative = "Раздражённый из-за невозможности добиться желаемого результата.",
@@ -3856,11 +3856,11 @@ object WordDataEnglish {
             example = "Good nutrition is especially important for growing children.",
             definitionNative = "Процесс употребления правильной пищи для нормального роста и здоровья.",
             exampleNative = "Хорошая nutrition особенно важна для детей в период роста."),
-        WordEntity(id = 3021, original = "surgery", transliteration = "[ˈsərʤəri]", translation = "операция", rarity = "UNCOMMON", setId = 30, languagePair = "en-ru", pos = "noun", semanticGroup = "health",
-            definition = "A medical operation where a doctor cuts into the body to repair it.",
-            example = "He needed surgery after breaking his leg in three places.",
-            definitionNative = "Хирургическая операция, при которой врач вскрывает тело для лечения.",
-            exampleNative = "После тройного перелома ему потребовалась сложная surgery."),
+        WordEntity(id = 3021, original = "ward", transliteration = "[wɔrd]", translation = "больничная палата", rarity = "UNCOMMON", setId = 30, languagePair = "en-ru", pos = "noun", semanticGroup = "health",
+            definition = "A room in a hospital with beds for several patients.",
+            example = "She was moved to the recovery ward after the operation.",
+            definitionNative = "Комната в больнице с несколькими кроватями для пациентов.",
+            exampleNative = "После операции её перевели в послеоперационную ward."),
         WordEntity(id = 3022, original = "contagious", transliteration = "[kənˈteɪʤəs]", translation = "заразный", rarity = "UNCOMMON", setId = 30, languagePair = "en-ru", pos = "adjective", semanticGroup = "health",
             definition = "able to spread from one person to another",
             example = "Flu is highly contagious in winter.",
@@ -5256,11 +5256,11 @@ object WordDataEnglish {
             example = "She received a generous bonus at the end of the financial year.",
             definitionNative = "Дополнительное вознаграждение сотруднику сверх основной зарплаты.",
             exampleNative = "По итогам года каждый получил приятный bonus за перевыполнение плана."),
-        WordEntity(id = 4123, original = "promotion", transliteration = "[pərˈmoʊʃən]", translation = "повышение по службе", rarity = "UNCOMMON", setId = 41, languagePair = "en-ru", pos = "noun", semanticGroup = "work_career",
-            definition = "The act of being moved to a higher or more important position at work.",
-            example = "He was given a promotion after successfully leading the new project.",
-            definitionNative = "Перевод работника на более высокую должность внутри компании.",
-            exampleNative = "Он добился promotion после успешного запуска нового продукта."),
+        WordEntity(id = 4123, original = "commission", transliteration = "[kəˈmɪʃən]", translation = "комиссионные (процент от продаж)", rarity = "UNCOMMON", setId = 41, languagePair = "en-ru", pos = "noun", semanticGroup = "work_career",
+            definition = "A payment made to someone for selling goods or services, usually a percentage of the sale.",
+            example = "He earns a commission on every car he sells.",
+            definitionNative = "Вознаграждение за продажу товаров или услуг в виде процента от суммы сделки.",
+            exampleNative = "Он получает commission с каждой проданной машины."),
         WordEntity(id = 4124, original = "pension", transliteration = "[ˈpɛnʃən]", translation = "пенсия", rarity = "UNCOMMON", setId = 41, languagePair = "en-ru", pos = "noun", semanticGroup = "work_career",
             definition = "a regular payment made to someone who has retired from work",
             example = "She contributes to her pension every month.",
@@ -10589,298 +10589,287 @@ object WordDataEnglish {
 
     val prebuiltDecks: List<DeckSeed> = listOf(
 
-        // 1 ── Семья и отношения ────────────────────────────────────────────────
-        // COMMON×8 / UNCOMMON×6 / RARE×4 / EPIC×2 / LEGENDARY×1
+        // ── Уровень 1 (★) ──────────────────────────────────────────────────────
+
+        // 1-A ── Повседневная жизнь ────────────────────────────────────────────
+        // COMMON×12 / UNCOMMON×9 = 21
         DeckSeed(
-            name = "Семья и отношения",
-            level = 3,
+            name = "Повседневная жизнь",
+            level = 1,
             wordOriginals = listOf(
-                // COMMON
+                // COMMON ×12
+                "eat", "drink", "sleep", "walk",
+                "run", "sit", "read", "write",
+                "come", "go", "make", "buy",
+                // UNCOMMON ×9
+                "library", "museum", "traffic", "market",
+                "schedule", "habit", "appointment", "queue",
+                "commute",
+            ),
+        ),
+
+        // 1-B ── Животные и природа ────────────────────────────────────────────
+        // COMMON×12 / UNCOMMON×9 = 21
+        DeckSeed(
+            name = "Животные и природа",
+            level = 1,
+            wordOriginals = listOf(
+                // COMMON ×12
+                "dog", "cat", "bird", "fish",
+                "lion", "elephant", "monkey", "bear",
+                "sheep", "frog", "tiger", "deer",
+                // UNCOMMON ×9
+                "tournament", "championship", "exhibition", "concert",
+                "performance", "gallery", "orchestra", "sculpture",
+                "portrait",
+            ),
+        ),
+
+        // ── Уровень 2 (★★) ─────────────────────────────────────────────────────
+
+        // 2-A ── Семья и дом ───────────────────────────────────────────────────
+        // COMMON×10 / UNCOMMON×6 / RARE×5 = 21
+        DeckSeed(
+            name = "Семья и дом",
+            level = 2,
+            wordOriginals = listOf(
+                // COMMON ×10
                 "mother", "father", "brother", "sister",
-                "husband", "wife", "baby", "friend",
-                // UNCOMMON
-                "marriage", "divorce", "relationship", "trust",
-                "loyalty", "commitment",
-                // RARE
-                "identity", "abandon", "overcome", "conform",
-                // EPIC
-                "compassion", "empathy",
-                // LEGENDARY
-                "magnanimous",
+                "baby", "friend", "bread", "milk",
+                "egg", "apple",
+                // UNCOMMON ×6
+                "recipe", "nutrition", "menu", "organic",
+                "luggage", "hostel",
+                // RARE ×5
+                "ferment", "marinate", "metabolism", "perceive", "perspective",
             ),
         ),
 
-        // 2 ── Еда и вкус ──────────────────────────────────────────────────────
+        // 2-B ── Путешествия и транспорт ───────────────────────────────────────
+        // COMMON×10 / UNCOMMON×6 / RARE×5 = 21
         DeckSeed(
-            name = "Еда и вкус",
-            level = 3,
+            name = "Путешествия и транспорт",
+            level = 2,
             wordOriginals = listOf(
-                // COMMON
-                "eat", "cook", "bread", "egg",
-                "soup", "coffee", "cheese", "rice",
-                // UNCOMMON
-                "recipe", "restaurant", "menu", "nutrition",
-                "substance", "mixture",
-                // RARE
-                "capable", "creative", "genuine", "passionate",
-                // EPIC
-                "elaborate", "aesthetic",
-                // LEGENDARY
-                "fastidious",
+                // COMMON ×10
+                "bus", "car", "train", "taxi",
+                "travel", "game", "player", "film",
+                "actor", "cinema",
+                // UNCOMMON ×6
+                "destination", "journey", "accommodation", "boarding",
+                "itinerary", "stopover",
+                // RARE ×5
+                "circumstance", "significant", "concept", "theory", "evidence",
             ),
         ),
 
-        // 3 ── Тело и здоровье ─────────────────────────────────────────────────
-        DeckSeed(
-            name = "Тело и здоровье",
-            level = 3,
-            wordOriginals = listOf(
-                // COMMON
-                "head", "eye", "nose", "mouth",
-                "hand", "arm", "leg", "hair",
-                // UNCOMMON
-                "exercise", "surgery", "symptom", "vaccine",
-                "pharmacy", "prescription",
-                // RARE
-                "immune", "trauma", "perceive", "vulnerability",
-                // EPIC
-                "resilience", "deteriorate",
-                // LEGENDARY
-                "ephemeral",
-            ),
-        ),
+        // ── Уровень 3 (★★★) ────────────────────────────────────────────────────
 
-        // 4 ── Природа и экология ──────────────────────────────────────────────
+        // 3-A ── Работа и общество ─────────────────────────────────────────────
+        // COMMON×8 / UNCOMMON×6 / RARE×4 / EPIC×2 / LEGENDARY×1 = 21
         DeckSeed(
-            name = "Природа и экология",
+            name = "Работа и общество",
             level = 3,
             wordOriginals = listOf(
-                // COMMON
-                "rain", "snow", "wind", "storm",
-                "forest", "river", "mountain", "ocean",
-                // UNCOMMON
-                "environment", "pollution", "climate", "wildlife",
-                "endangered", "species",
-                // RARE
-                "ecosystem", "habitat", "biodiversity", "atmosphere",
-                // EPIC
-                "nurture", "escalate",
-                // LEGENDARY
-                "inexorable",
-            ),
-        ),
-
-        // 5 ── Работа и карьера ────────────────────────────────────────────────
-        DeckSeed(
-            name = "Работа и карьера",
-            level = 3,
-            wordOriginals = listOf(
-                // COMMON
-                "work", "job", "office", "boss",
-                "meeting", "project", "team", "manager",
-                // UNCOMMON
-                "salary", "career", "colleague", "deadline",
-                "skill", "performance",
-                // RARE
+                // COMMON ×8
+                "work", "job", "office", "meeting",
+                "project", "team", "happy", "sad",
+                // UNCOMMON ×6
+                "career", "deadline", "skill", "vacancy",
+                "journalist", "conflict",
+                // RARE ×4
                 "negotiate", "innovation", "strategy", "competition",
-                // EPIC
-                "entrepreneurship", "accountability",
-                // LEGENDARY
+                // EPIC ×2
+                "entrepreneurship", "resilience",
+                // LEGENDARY ×1
                 "indefatigable",
             ),
         ),
 
-        // 6 ── Технологии ──────────────────────────────────────────────────────
+        // 3-B ── Тело и эмоции ─────────────────────────────────────────────────
+        // COMMON×8 / UNCOMMON×6 / RARE×4 / EPIC×2 / LEGENDARY×1 = 21
         DeckSeed(
-            name = "Технологии",
+            name = "Тело и эмоции",
             level = 3,
             wordOriginals = listOf(
-                // COMMON
-                "computer", "phone", "internet", "app",
-                "website", "email", "message", "screen",
-                // UNCOMMON
-                "software", "data", "device", "digital",
-                "network", "algorithm",
-                // RARE
-                "credibility", "disinformation", "viral", "subscription",
-                // EPIC
-                "compliance", "benchmark",
-                // LEGENDARY
-                "ubiquitous",
-            ),
-        ),
-
-        // 7 ── Город и транспорт ───────────────────────────────────────────────
-        DeckSeed(
-            name = "Город и транспорт",
-            level = 3,
-            wordOriginals = listOf(
-                // COMMON
-                "city", "town", "village", "road",
-                "park", "school", "hotel", "bus",
-                // UNCOMMON
-                "market", "museum", "traffic", "commute",
-                "suburb", "monument",
-                // RARE
-                "collapse", "severe", "widespread", "hazard",
-                // EPIC
-                "infrastructure", "escalate",
-                // LEGENDARY
-                "zeitgeist",
-            ),
-        ),
-
-        // 8 ── Эмоции и личность ───────────────────────────────────────────────
-        DeckSeed(
-            name = "Эмоции и личность",
-            level = 3,
-            wordOriginals = listOf(
-                // COMMON
-                "happy", "sad", "excited", "nervous",
-                "proud", "embarrassed", "feeling", "disappointed",
-                // UNCOMMON
-                "angry", "trust", "brave", "patient",
-                "confident", "jealous",
-                // RARE
-                "ambitious", "curious", "anxiety", "passionate",
-                // EPIC
+                // COMMON ×8
+                "head", "eye", "nose", "mouth",
+                "hand", "leg", "hair", "face",
+                // UNCOMMON ×6
+                "exercise", "appointment", "performance", "rights",
+                "justice", "genre",
+                // RARE ×4
+                "immune", "perceive", "vulnerability", "ecosystem",
+                // EPIC ×2
                 "compassion", "empathy",
-                // LEGENDARY
-                "ennui",
+                // LEGENDARY ×1
+                "ephemeral",
             ),
         ),
 
-        // 9 ── Путешествия ─────────────────────────────────────────────────────
+        // ── Уровень 4 (★★★★) ───────────────────────────────────────────────────
+
+        // 4-A ── Медиа и искусство ─────────────────────────────────────────────
+        // COMMON×4 / UNCOMMON×7 / RARE×6 / EPIC×3 / LEGENDARY×1 = 21
         DeckSeed(
-            name = "Путешествия",
-            level = 3,
+            name = "Медиа и искусство",
+            level = 4,
             wordOriginals = listOf(
-                // COMMON
-                "bus", "train", "car", "taxi",
-                "airport", "ticket", "station", "travel",
-                // UNCOMMON
-                "luggage", "accommodation", "destination", "journey",
-                "hostel", "boarding",
-                // RARE
-                "perspective", "circumstance", "profound", "significant",
-                // EPIC
-                "narrative", "captivate",
-                // LEGENDARY
-                "picaresque",
+                // COMMON ×4
+                "game", "player", "film", "actor",
+                // UNCOMMON ×7
+                "fiction", "novel", "author", "director",
+                "composer", "critic", "plot",
+                // RARE ×6
+                "ideology", "analysis", "theory", "concept",
+                "evidence", "propaganda",
+                // EPIC ×3
+                "aesthetic", "discourse", "protagonist",
+                // LEGENDARY ×1
+                "catharsis",
             ),
         ),
 
-        // 10 ── Наука и образование ────────────────────────────────────────────
+        // 4-B ── Экономика и бизнес ────────────────────────────────────────────
+        // COMMON×4 / UNCOMMON×7 / RARE×6 / EPIC×3 / LEGENDARY×1 = 21
         DeckSeed(
-            name = "Наука и образование",
-            level = 3,
+            name = "Экономика и бизнес",
+            level = 4,
             wordOriginals = listOf(
-                // COMMON
-                "subject", "homework", "exam", "lesson",
-                "class", "test", "dictionary", "history",
-                // UNCOMMON
-                "library", "science", "literature", "research",
-                "knowledge", "university",
-                // RARE
-                "concept", "theory", "evidence", "analysis",
-                // EPIC
-                "hypothesis", "paradigm",
-                // LEGENDARY
+                // COMMON ×4
+                "work", "job", "school", "city",
+                // UNCOMMON ×7
+                "career", "deadline", "skill", "journalist",
+                "conflict", "rights", "norm",
+                // RARE ×6
+                "bankruptcy", "venture", "shareholder", "entrepreneur",
+                "stereotype", "prejudice",
+                // EPIC ×3
+                "entrepreneurship", "monopoly", "acquisition",
+                // LEGENDARY ×1
                 "entropy",
             ),
         ),
-        // 11 ── Философия и этика ─────────────────────────────────────────────
-        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3
+
+        // ── Уровень 5 (★★★★★) ──────────────────────────────────────────────────
+
+        // 5-A ── Наука и академия ──────────────────────────────────────────────
+        // UNCOMMON×6 / RARE×8 / EPIC×5 / LEGENDARY×2 = 21
+        DeckSeed(
+            name = "Наука и академия",
+            level = 5,
+            wordOriginals = listOf(
+                // UNCOMMON ×6
+                "journalist", "conflict", "rights", "justice",
+                "global", "protest",
+                // RARE ×8
+                "discrimination", "immigration", "inequality", "poverty",
+                "reform", "authority", "regime", "sanction",
+                // EPIC ×5
+                "perpetuate", "coerce", "suppress", "eradicate",
+                "exacerbate",
+                // LEGENDARY ×2
+                "irredentism", "syndicalism",
+            ),
+        ),
+
+        // 5-B ── Политика и власть ─────────────────────────────────────────────
+        // UNCOMMON×6 / RARE×8 / EPIC×5 / LEGENDARY×2 = 21
+        DeckSeed(
+            name = "Политика и власть",
+            level = 5,
+            wordOriginals = listOf(
+                // UNCOMMON ×6
+                "genre", "irony", "fallacy", "analogy",
+                "assumption", "doctrine",
+                // RARE ×8
+                "principle", "conviction", "ideology", "notion",
+                "philosophy", "belief", "conscious", "subconscious",
+                // EPIC ×5
+                "paradigm", "premise", "invoke", "endorse",
+                "bolster",
+                // LEGENDARY ×2
+                "solipsism", "epistemology",
+            ),
+        ),
+
+        // ── Уровень 6 (★×6) ────────────────────────────────────────────────────
+
+        // 6-A ── Философия и этика ─────────────────────────────────────────────
+        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3 = 21
         DeckSeed(
             name = "Философия и этика",
             level = 6,
             wordOriginals = listOf(
-                // UNCOMMON
+                // UNCOMMON ×3
                 "argument", "assumption", "doctrine",
-                // RARE
+                // RARE ×8
                 "principle", "conviction", "ideology", "notion",
                 "philosophy", "belief", "conscious", "subconscious",
-                // EPIC
+                // EPIC ×7
                 "paradigm", "premise", "tenet", "maxim",
-                "integrity", "principled", "discourse",
-                // LEGENDARY
+                "integrity", "rhetoric", "discourse",
+                // LEGENDARY ×3
                 "solipsism", "ontological", "teleological",
             ),
         ),
 
-        // 12 ── Право и политика ───────────────────────────────────────────────
-        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3
+        // 6-B ── Право и геополитика ───────────────────────────────────────────
+        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3 = 21
         DeckSeed(
-            name = "Право и политика",
+            name = "Право и геополитика",
             level = 6,
             wordOriginals = listOf(
-                // UNCOMMON
-                "trial", "verdict", "parliament",
-                // RARE
-                "discrimination", "rights", "authority", "perjury",
-                "constitution", "sovereignty", "plaintiff", "defendant",
-                // EPIC
-                "decree", "regulation", "adjudicate", "arbitrary",
-                "abolish", "jurisdiction", "contempt",
-                // LEGENDARY
-                "jurisprudence", "habeas corpus", "mens rea",
-            ),
-        ),
-
-        // 13 ── Риторика и литература ──────────────────────────────────────────
-        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3
-        DeckSeed(
-            name = "Риторика и литература",
-            level = 6,
-            wordOriginals = listOf(
-                // UNCOMMON
-                "prose", "verse", "fiction",
-                // RARE
-                "eloquence", "symbol", "dialect", "folklore",
-                "metaphor", "allegory", "foreshadowing", "antagonist",
-                // EPIC
-                "oratory", "symbolic", "allegorical", "rhetoric",
-                "archetype", "soliloquy", "denouement",
-                // LEGENDARY
-                "aphorism", "parable", "verisimilitude",
-            ),
-        ),
-
-        // 14 ── Дипломатия и геополитика ───────────────────────────────────────
-        // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3
-        DeckSeed(
-            name = "Дипломатия и геополитика",
-            level = 6,
-            wordOriginals = listOf(
-                // UNCOMMON
+                // UNCOMMON ×3
                 "diplomat", "border", "conflict",
-                // RARE
+                // RARE ×8
                 "mediate", "siege", "guerrilla", "coalition",
-                "sanction", "veto", "mobilise", "legislation",
-                // EPIC
-                "diplomacy", "hegemony", "geopolitical", "proxy war",
-                "geopolitics", "embargo", "armistice",
-                // LEGENDARY
-                "irredentism", "gerrymandering", "kakistocracy",
+                "sanction", "veto", "perjury", "sovereignty",
+                // EPIC ×7
+                "diplomacy", "hegemony", "geopolitical", "geopolitics",
+                "embargo", "armistice", "decree",
+                // LEGENDARY ×3
+                "irredentism", "jurisprudence", "habeas corpus",
             ),
         ),
 
-        // 15 ── Компьютерные игры (★★★★, set 249, 21 words) ──────────────────────
+        // ── Уровень 7 (★×7) ────────────────────────────────────────────────────
+
+        // 7-A ── Риторика и мысль ──────────────────────────────────────────────
+        // RARE×6 / EPIC×10 / LEGENDARY×5 = 21
         DeckSeed(
-            name = "Компьютерные игры",
-            level = 4,
-            languagePair = "en-ru",
+            name = "Риторика и мысль",
+            level = 7,
             wordOriginals = listOf(
-                // COMMON ×4
-                "game", "player", "tutorial", "minimap",
-                // UNCOMMON ×7
-                "faction", "NPC", "weapon", "enemy", "multiplayer", "patch", "achievement",
                 // RARE ×6
-                "inventory", "loot", "stealth", "dungeon", "glitch", "respawn",
-                // EPIC ×3
-                "roguelike", "permadeath", "speedrun",
-                // LEGENDARY ×1
-                "emergent",
+                "eloquence", "folklore", "dialect", "metaphor",
+                "foreshadowing", "antagonist",
+                // EPIC ×10
+                "oratory", "symbolic", "allegorical", "rhetoric",
+                "archetype", "articulate", "provocative", "avant-garde",
+                "motif", "interplay",
+                // LEGENDARY ×5
+                "aphorism", "parable", "verisimilitude", "palimpsest",
+                "metonymy",
+            ),
+        ),
+
+        // 7-B ── Цивилизация и история ─────────────────────────────────────────
+        // RARE×6 / EPIC×10 / LEGENDARY×5 = 21
+        DeckSeed(
+            name = "Цивилизация и история",
+            level = 7,
+            wordOriginals = listOf(
+                // RARE ×6
+                "ratification", "referendum", "technocracy", "populism",
+                "bipartisan", "theocracy",
+                // EPIC ×10
+                "totalitarianism", "secessionism", "jingoism", "apportionment",
+                "plutocracy", "federalism", "adjudicate", "arbitrary",
+                "abolish", "jurisdiction",
+                // LEGENDARY ×5
+                "dialectic", "axiom", "hubris", "chimera",
+                "lacuna",
             ),
         ),
     )
