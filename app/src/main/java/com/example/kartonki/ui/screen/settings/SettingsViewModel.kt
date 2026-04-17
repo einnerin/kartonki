@@ -170,6 +170,15 @@ class SettingsViewModel @Inject constructor(
                         showFillBlankModePicker      = current.showFillBlankModePicker,
                         showQuizTypesPicker          = current.showQuizTypesPicker,
                         showProblemWordsSourcePicker = current.showProblemWordsSourcePicker,
+                        // Preserve problem words settings — these are loaded by separate
+                        // coroutines and must not be reset to defaults when any other
+                        // preference changes (race condition with the shared prefsFlow).
+                        problemWordsSource           = current.problemWordsSource,
+                        problemWordsEnabled          = current.problemWordsEnabled,
+                        problemWordsMinEncounters    = current.problemWordsMinEncounters,
+                        problemWordsCorrectToLearn   = current.problemWordsCorrectToLearn,
+                        showMinEncountersPicker      = current.showMinEncountersPicker,
+                        showCorrectToLearnPicker     = current.showCorrectToLearnPicker,
                         // Preserve account state set by the authManager collector above
                         isSignedIn                   = current.isSignedIn,
                         isAnonymous                  = current.isAnonymous,

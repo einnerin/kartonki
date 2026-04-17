@@ -281,6 +281,7 @@ private fun MultipleChoiceSection(
             OutlinedButton(
                 onClick = { onOptionSelected(option) },
                 enabled = answered == null,
+                shape = RoundedCornerShape(12.dp),
                 border = androidx.compose.foundation.BorderStroke(
                     width = if (isCorrect || isWrong) 2.dp else 1.dp,
                     color = borderColor,
