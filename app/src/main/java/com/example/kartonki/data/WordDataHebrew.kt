@@ -347,7 +347,7 @@ object WordDataHebrew {
             definitionNative = "Слой аппаратного и программного обеспечения, поддерживающий работу приложений.",
             example = "תַּשְׁתִּית הענן אפשרה להרחיב את השירות בזמן שיא.",
             exampleNative = "Облачная תַּשְׁתִּית позволила масштабировать сервис в пиковое время.",
-            rarity = "EPIC", languagePair = "he-ru", setId = 1003, pos = "noun", semanticGroup = "cs_theory"),
+            rarity = "RARE", languagePair = "he-ru", setId = 1003, pos = "noun", semanticGroup = "cs_theory"),
         WordEntity(id = 100305, original = "הַצְפָּנָה", transliteration = "hatspana", translation = "шифрование",
             definition = "תהליך קריפטוגרפי להפיכת טקסט גלוי לבלתי קריא.",
             definitionNative = "Криптографический процесс преобразования открытого текста в нечитаемый вид.",

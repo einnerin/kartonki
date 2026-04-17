@@ -44,7 +44,7 @@ object WordDataHebrewAdvanced {
             exampleNative = "Старое חוֹמְרָה не поддерживает новое ПО.",
         ),
         WordEntity(
-            id = 101403, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 101403, setId = 1014, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
             transliteration = "homat esh",
             original = "חוֹמַת אֵשׁ", translation = "межсетевой экран",
@@ -198,7 +198,7 @@ object WordDataHebrewAdvanced {
             example = "Managing dependencies carefully prevents version conflicts across the entire project.",
             definitionNative = "Зависимость одного программного компонента от другого для его функционирования.",
             exampleNative = "Грамотное управление tlut предотвращает конфликты версий по всему проекту."),
-                WordEntity(id = 101419, original = "בִּדּוּד", transliteration = "[biˈdud]", translation = "изоляция (контейнера или процесса)", rarity = "EPIC", setId = 1014, languagePair = "he-ru", pos = "noun", semanticGroup = "system_architecture",
+                WordEntity(id = 101419, original = "בִּדּוּד", transliteration = "[biˈdud]", translation = "изоляция (контейнера или процесса)", rarity = "RARE", setId = 1014, languagePair = "he-ru", pos = "noun", semanticGroup = "system_architecture",
             definition = "the separation of a process or container from others to prevent interference",
             example = "Container isolation ensures that a failure in one service does not cascade to others.",
             definitionNative = "Разделение процесса или контейнера от других для предотвращения взаимовлияния.",
@@ -299,7 +299,7 @@ object WordDataHebrewAdvanced {
             exampleNative = "Я участвовал в международной כִּנּוּס в Тель-Авиве.",
         ),
         WordEntity(
-            id = 101510, setId = 1015, languagePair = "he-ru", rarity = "RARE",
+            id = 101510, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work",
             transliteration = "savlanut",
             original = "סַבְלָנוּת", translation = "терпение",
@@ -444,7 +444,7 @@ object WordDataHebrewAdvanced {
         // ──────────────────────────────────────────────────────
 
         WordEntity(
-            id = 101701, setId = 1017, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 101701, setId = 1017, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "abstract",
             transliteration = "zeman",
             original = "זְמַן", translation = "время",
@@ -841,7 +841,7 @@ object WordDataHebrewAdvanced {
             example = "Lack of sleep often results in increased atsbanut throughout the day.",
             definitionNative = "Состояние, при котором человек легко раздражается или нервничает.",
             exampleNative = "Недостаток сна часто приводит к повышенной atsbanut на протяжении всего дня."),
-                WordEntity(id = 101625, original = "הִתְרַגְּשׁוּت", transliteration = "[hitraɡeˈʃut]", translation = "волнение; сильное эмоциональное возбуждение", rarity = "RARE", setId = 1016, languagePair = "he-ru", pos = "noun", semanticGroup = "emotions",
+                WordEntity(id = 101625, original = "הִתְרַגְּשׁוּت", transliteration = "[hitraɡeˈʃut]", translation = "волнение; сильное эмоциональное возбуждение", rarity = "UNCOMMON", setId = 1016, languagePair = "he-ru", pos = "noun", semanticGroup = "emotions",
             definition = "a strong feeling of enthusiasm, joy, or emotional agitation",
             example = "There was great hitrageshut in the hall when the winner was announced.",
             definitionNative = "Сильное чувство воодушевления, радости или эмоционального возбуждения.",
@@ -869,7 +869,7 @@ object WordDataHebrewAdvanced {
             exampleNative = "Подлинная חֵרוּת включает внутреннюю свободу, а не только внешнюю.",
         ),
         WordEntity(
-            id = 101713, setId = 1017, languagePair = "he-ru", rarity = "EPIC",
+            id = 101713, setId = 1017, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "abstract",
             transliteration = "za'ut",
             original = "זָהוּת", translation = "идентичность",
@@ -889,7 +889,7 @@ object WordDataHebrewAdvanced {
             exampleNative = "מַהוּת демократии — власть народа.",
         ),
         WordEntity(
-            id = 101715, setId = 1017, languagePair = "he-ru", rarity = "EPIC",
+            id = 101715, setId = 1017, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "abstract",
             transliteration = "kavanah",
             original = "כַּוָּנָה", translation = "намерение / интенция",

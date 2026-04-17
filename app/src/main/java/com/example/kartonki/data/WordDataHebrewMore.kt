@@ -1121,7 +1121,7 @@ object WordDataHebrewMore {
             exampleNative = "צִלּוּם фильма продолжался всю ночь.",
         ),
         WordEntity(
-            id = 101302, setId = 1013, languagePair = "he-ru", rarity = "RARE",
+            id = 101302, setId = 1013, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "filming", transliteration = "matsle​ma",
             original = "מַצְלֵמָה", translation = "камера / фотоаппарат",
             definition = "מַכְשִׁיר לְצִלּוּם תְּמוּנוֹת אוֹ וִידֵאוֹ.",
@@ -1289,7 +1289,7 @@ object WordDataHebrewMore {
             definitionNative = "Состав кадра камеры, определяющий, что попадает в границы съёмки.",
             exampleNative = "Точный misgur режиссёра поместил персонажа в одиночестве на фоне пустого неба."),
         WordEntity(
-            id = 101322, setId = 1013, languagePair = "he-ru", rarity = "EPIC",
+            id = 101322, setId = 1013, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "filming", transliteration = "hakrana",
             original = "הַקְרָנָה", translation = "показ / проекция",
             definition = "הַצָּגַת הַסֶּרֶט עַל מָסָךְ.",

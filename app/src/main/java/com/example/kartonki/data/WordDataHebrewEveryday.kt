@@ -77,7 +77,7 @@ object WordDataHebrewEveryday {
             exampleNative = "סְלִיחָה, я не хотел этого.",
         ),
         WordEntity(
-            id = 100407, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 100407, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "time", transliteration = "boker",
             original = "בֹּקֶר", translation = "утро",
             definition = "הַחֵלֶק הָרִאשׁוֹן שֶׁל הַיּוֹם, מֵהַזְּרִיחָה עַד הַצָּהֳרַיִם.",
@@ -86,7 +86,7 @@ object WordDataHebrewEveryday {
             exampleNative = "Хорошее בֹּקֶר! Как ты спал ночью?",
         ),
         WordEntity(
-            id = 100408, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 100408, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "time", transliteration = "erev",
             original = "עֶרֶב", translation = "вечер",
             definition = "הַזְּמַן שֶׁבֵּין אַחַר הַצָּהֳרַיִם לַלַּיְלָה.",
@@ -95,7 +95,7 @@ object WordDataHebrewEveryday {
             exampleNative = "Добрый עֶרֶב, рад тебя видеть.",
         ),
         WordEntity(
-            id = 100409, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 100409, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "time", transliteration = "layla",
             original = "לַיְלָה", translation = "ночь",
             definition = "הַזְּמַן שֶׁבֵּין שְׁקִיעַת הַחַמָּה לַזְּרִיחָה.",
@@ -104,7 +104,7 @@ object WordDataHebrewEveryday {
             exampleNative = "Доброй לַיְלָה, сладких снов!",
         ),
         WordEntity(
-            id = 100410, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 100410, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "time", transliteration = "yom",
             original = "יוֹם", translation = "день",
             definition = "פֶּרֶק זְמַן שֶׁל עֶשְׂרִים וְאַרְבַּע שָׁעוֹת.",
@@ -280,7 +280,7 @@ object WordDataHebrewEveryday {
             exampleNative = "Моя אֵם очень хорошо готовит.",
         ),
         WordEntity(
-            id = 100504, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 100504, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family", transliteration = "ben",
             original = "בֵּן", translation = "сын",
             definition = "יֶלֶד זָכָר שֶׁל הוֹרִים.",
@@ -483,7 +483,7 @@ object WordDataHebrewEveryday {
         // ──────────────────────────────────────────────────────
 
         WordEntity(
-            id = 100601, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 100601, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "ochel",
             original = "אֹכֶל", translation = "еда",
             definition = "כָּל מַה שֶּׁאוֹכְלִים כְּדֵי לִחְיוֹת.",
