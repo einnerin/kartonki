@@ -219,15 +219,6 @@ internal fun QuizContent(
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center,
                 )
-                if (isHebrewQuestionRtl && step.word.transliteration != null) {
-                    Spacer(Modifier.height(4.dp))
-                    Text(
-                        text = step.word.transliteration,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f),
-                        fontSize = 13.sp,
-                    )
-                }
             }
         }
         MultipleChoiceSection(
@@ -240,6 +231,7 @@ internal fun QuizContent(
             TranslationPanel(
                 original = step.word.original,
                 translation = step.word.translation,
+                transliteration = step.word.transliteration,
                 isCorrect = answered.isCorrect,
                 isRtl = isHebrew,
             )
@@ -311,6 +303,7 @@ private fun MultipleChoiceSection(
 private fun TranslationPanel(
     original: String,
     translation: String,
+    transliteration: String? = null,
     isCorrect: Boolean,
     isRtl: Boolean = false,
 ) {
@@ -362,6 +355,13 @@ private fun TranslationPanel(
                     style = MaterialTheme.typography.bodyLarge,
                     fontWeight = FontWeight.Bold,
                     color = accentColor,
+                )
+            }
+            if (transliteration != null) {
+                Text(
+                    text = transliteration,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = Color.White.copy(alpha = 0.6f),
                 )
             }
         }
