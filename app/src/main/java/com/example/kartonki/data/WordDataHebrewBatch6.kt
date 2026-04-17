@@ -263,12 +263,12 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104203, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "restaurant_basics", transliteration = "mana",
-            original = "מָנָה", translation = "блюдо, порция",
-            definition = "כַּמּוּת מַאֲכָל הַמּוּגֶשֶׁת לְאָדָם אֶחָד בְּמִסְעָדָה.",
-            definitionNative = "Количество еды, подаваемое одному человеку в ресторане.",
-            example = "הַמָּנָה הָיְתָה גְּדוֹלָה מְאֹד וְלֹא הִצַּלְנוּ לְסַיֵּם.",
-            exampleNative = "מָנָה была очень большой, и мы не смогли её доесть.",
+            pos = "noun", semanticGroup = "restaurant_food", transliteration = "shnitsel",
+            original = "שְׁנִיצֶל", translation = "шницель",
+            definition = "נְתַח בָּשָׂר דַּק הַמְּצֻפֶּה פֵּרוּרֵי לֶחֶם וּמְטֻגָּן בְּשֶׁמֶן.",
+            definitionNative = "Тонкий кусок мяса в панировке, обжаренный на масле.",
+            example = "הִזְמַנְתִּי שְׁנִיצֶל עֵגֶל עִם תַּפּוּחֵי אֲדָמָה.",
+            exampleNative = "Я заказал שְׁנִיצֶל из телятины с картофелем.",
         ),
         WordEntity(
             id = 104204, setId = 1042, languagePair = "he-ru", rarity = "COMMON",

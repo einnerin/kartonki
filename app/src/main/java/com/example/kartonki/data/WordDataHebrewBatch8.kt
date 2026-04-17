@@ -96,12 +96,12 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104709, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_policy", transliteration = "akharayut",
-            original = "אַחֲרָיּוּת", translation = "гарантия",
-            definition = "הַתְחַיְּבוּת הַיַּצְרָן אוֹ הַמּוֹכֵר לְתַקֵּן אוֹ לְהַחְלִיף מוּצָר פָּגוּם.",
-            definitionNative = "Обязательство производителя или продавца починить или заменить дефектный товар.",
-            example = "הַמַּחְשֵׁב הַחָדָשׁ מְכֻסֶּה בְּאַחֲרָיּוּת שֶׁל שְׁנָתַיִם.",
-            exampleNative = "Новый компьютер покрыт אַחֲרָיּוּת на два года.",
+            pos = "noun", semanticGroup = "mall_policy", transliteration = "hekhzer kesef",
+            original = "הֶחְזֵר כֶּסֶף", translation = "возврат денег",
+            definition = "הַשְׁבַּת הַסְּכוּם שֶׁשֻּׁלַּם לַלָּקוֹחַ לְאַחַר הַחְזָרַת מוּצָר.",
+            definitionNative = "Возврат уплаченной суммы покупателю после возврата товара.",
+            example = "קִבַּלְתִּי הֶחְזֵר כֶּסֶף מָלֵא כִּי הַמּוּצָר הָיָה פָּגוּם.",
+            exampleNative = "Я получил полный הֶחְזֵר כֶּסֶף, потому что товар был дефектным.",
         ),
         WordEntity(
             id = 104710, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -486,12 +486,12 @@ object WordDataHebrewBatch8 {
 
         WordEntity(
             id = 104901, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "building_basics", transliteration = "binyan",
-            original = "בִּנְיָן", translation = "здание, дом (многоквартирный)",
-            definition = "מִבְנֶה רַב-קוֹמוֹתִי שֶׁבּוֹ דִּירוֹת רַבּוֹת.",
-            definitionNative = "Многоэтажное сооружение с множеством квартир.",
-            example = "הַבִּנְיָן שֶׁלָּנוּ יֵשׁ בּוֹ שְׁמוֹנֶה קוֹמוֹת וְאַרְבָּעִים דִּירוֹת.",
-            exampleNative = "В нашем בִּנְיָן восемь этажей и сорок квартир.",
+            pos = "noun", semanticGroup = "building_people", transliteration = "skhena",
+            original = "שְׁכֵנָה", translation = "соседка (женщина)",
+            definition = "אִשָּׁה הַגָּרָה בְּסָמִיכוּת לְבֵיתְךָ, בְּאוֹתוֹ בִּנְיָן אוֹ בַּבַּיִת הַסָּמוּךְ.",
+            definitionNative = "Женщина, живущая рядом с вами — в том же здании или соседнем доме.",
+            example = "הַשְּׁכֵנָה שֶׁלָּנוּ עוֹזֶרֶת לָנוּ כְּשֶׁאָנוּ נוֹסְעִים לְחוּץ לָאָרֶץ.",
+            exampleNative = "Наша שְׁכֵנָה помогает нам, когда мы уезжаем за границу.",
         ),
         WordEntity(
             id = 104902, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
