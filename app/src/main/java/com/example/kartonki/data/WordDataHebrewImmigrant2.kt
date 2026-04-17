@@ -457,12 +457,12 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102808, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "health", transliteration = "khom",
-            original = "חֹם", translation = "температура / жар",
-            definition = "עֲלִיָּה בְּטֶמְפֶּרָטוּרַת הַגּוּף מֵעַל לִשְׁלוֹשִׁים וָשֶׁבַע.",
-            definitionNative = "Повышение температуры тела выше тридцати семи градусов.",
-            example = "יֵשׁ לְיֶלֶד שֶׁלִּי חֹם שֶׁל שְׁלוֹשִׁים וּשְׁמוֹנֶה.",
-            exampleNative = "У моего ребёнка חֹם тридцать восемь.",
+            pos = "noun", semanticGroup = "health", transliteration = "ke'ev gargeret",
+            original = "כְּאֵב גַּרְגֶּרֶת", translation = "боль в горле",
+            definition = "כְּאֵב הַמּוּרְגָּשׁ בְּגָרוֹן, לְרוֹב עַל רֶקַע זִיהוּם אוֹ וִירוּס.",
+            definitionNative = "Боль в горле, обычно на фоне инфекции или вируса.",
+            example = "יֵשׁ לִי כְּאֵב גַּרְגֶּרֶת שָׁלוֹשָׁה יָמִים — צָרִיךְ לָלֶכֶת לָרוֹפֵא.",
+            exampleNative = "У меня כְּאֵב גַּרְגֶּרֶת три дня — нужно идти к врачу.",
         ),
         WordEntity(
             id = 102809, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",

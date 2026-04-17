@@ -669,12 +669,12 @@ object WordDataHebrewImmigrant3 {
         ),
         WordEntity(
             id = 103311, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "driving", transliteration = "musach",
-            original = "מֻסָּךְ", translation = "автомастерская / гараж",
-            definition = "מָקוֹם שֶׁבּוֹ מְתַקְּנִים רְכָבִים.",
-            definitionNative = "Место, где ремонтируют автомобили.",
-            example = "הוֹלַכְתִּי אֶת הָרֶכֶב לְמֻסָּךְ לְבְּדִיקָה שְׁגְרָתִית.",
-            exampleNative = "Я отвёз машину в מֻסָּךְ на плановое обслуживание.",
+            pos = "noun", semanticGroup = "driving", transliteration = "mar'at akhorit",
+            original = "מַרְאַת אֲחוֹרָה", translation = "зеркало заднего вида",
+            definition = "מַרְאָה בָּרֶכֶב הַמַּאֲפִשֶּׁרֶת לַנֶּהָג לִרְאוֹת אֶת מַה שֶׁמֵּאֲחוֹרָיו.",
+            definitionNative = "Зеркало в автомобиле, позволяющее водителю видеть то, что находится позади него.",
+            example = "בְּדוֹק תָּמִיד אֶת מַרְאַת הָאֲחוֹרָה לִפְנֵי שְׁינּוּי נְתִיב.",
+            exampleNative = "Всегда проверяй מַרְאַת אֲחוֹרָה перед сменой полосы.",
         ),
         WordEntity(
             id = 103312, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",

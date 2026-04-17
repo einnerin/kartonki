@@ -213,12 +213,12 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104722, setId = 1047, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mall_games", transliteration = "miskhak",
-            original = "מַשְׂחֵק", translation = "игра, настольная игра",
-            definition = "פְּעִילוּת בִּדּוּרִית עִם חֻקִּים, לִפְעָמִים מִשְׂחֶקֶת לוּחַ אוֹ קְלָפִים.",
-            definitionNative = "Развлекательная деятельность с правилами — иногда настольная игра или карточная.",
-            example = "קָנִיתִי מַשְׂחֵק לוּחַ לְחֻפְשַׁת פֶּסַח.",
-            exampleNative = "Я купил настольный מַשְׂחֵק на пасхальные каникулы.",
+            pos = "noun", semanticGroup = "mall_structure", transliteration = "koma",
+            original = "קוֹמָה", translation = "этаж (в торговом центре)",
+            definition = "רָמָה אַחַת בְּקַנְיוֹן שֶׁבָּהּ נִמְצָאוֹת חֲנוּיּוֹת וּשֵׁרוּתִים שׁוֹנִים.",
+            definitionNative = "Один уровень в торговом центре, на котором расположены магазины и сервисы.",
+            example = "חֲנוּת הָאֵלֶקְטְרוֹנִיקָה נִמְצֵאת בַּקּוֹמָה הַשְּׁלִישִׁית שֶׁל הַקַּנְיוֹן.",
+            exampleNative = "Магазин электроники находится на третьем קוֹמָה торгового центра.",
         ),
         WordEntity(
             id = 104723, setId = 1047, languagePair = "he-ru", rarity = "RARE",
