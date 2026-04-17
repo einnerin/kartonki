@@ -34,6 +34,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.outlined.Star
 import androidx.compose.material3.Icon
@@ -49,7 +50,9 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -72,6 +75,7 @@ import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
 import com.example.kartonki.ui.component.RarityFilterChips
+import com.example.kartonki.ui.component.SearchBar
 import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.BgDeep
 import com.example.kartonki.ui.theme.BgMedium
@@ -89,6 +93,15 @@ fun StudyScreen(
     viewModel: StudyViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
+    var searchActive by remember { mutableStateOf(false) }
+    var searchQuery by remember { mutableStateOf("") }
+    val displayedSets = remember(searchQuery, uiState.filteredSets) {
+        if (searchQuery.isEmpty()) uiState.filteredSets
+        else uiState.filteredSets.filter {
+            it.name.contains(searchQuery, ignoreCase = true) ||
+            it.description.contains(searchQuery, ignoreCase = true)
+        }
+    }
     val lifecycleOwner = LocalLifecycleOwner.current
 
     DisposableEffect(lifecycleOwner) {
@@ -111,6 +124,11 @@ fun StudyScreen(
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
+                    }
+                },
+                actions = {
+                    IconButton(onClick = { searchActive = true }) {
+                        Icon(Icons.Default.Search, contentDescription = "Поиск", tint = Color.White)
                     }
                 },
             )
@@ -159,6 +177,12 @@ fun StudyScreen(
                 activeFilters = uiState.activeFilters,
                 onToggle = { viewModel.toggleFilter(it) },
             )
+            SearchBar(
+                visible = searchActive,
+                query = searchQuery,
+                onQueryChange = { searchQuery = it },
+                onClose = { searchActive = false; searchQuery = "" },
+            )
             // Problem words chip — appears when there are problem words
             if (uiState.problemWordCount > 0) {
                 ProblemWordsChip(
@@ -176,7 +200,7 @@ fun StudyScreen(
                     modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
                 )
             }
-            HorizontalDivider(color = Color.White.copy(alpha = 0.08f))
+            if (!searchActive) HorizontalDivider(color = Color.White.copy(alpha = 0.08f))
 
             val listState = rememberLazyListState()
 
@@ -199,9 +223,9 @@ fun StudyScreen(
                     .collect { (index, offset) -> viewModel.saveScrollPosition(index, offset) }
             }
 
-            // Scroll to top when the user switches tab or toggles a filter chip.
-            LaunchedEffect(uiState.filterVersion) {
-                if (uiState.filterVersion > 0) listState.scrollToItem(0)
+            // Scroll to top when the user switches tab, toggles a filter chip, or starts searching.
+            LaunchedEffect(uiState.filterVersion, searchQuery) {
+                if (uiState.filterVersion > 0 || searchQuery.isNotEmpty()) listState.scrollToItem(0)
             }
 
             Box(modifier = Modifier.fillMaxSize()) {
@@ -238,7 +262,7 @@ fun StudyScreen(
                         contentPadding = PaddingValues(16.dp),
                         verticalArrangement = Arrangement.spacedBy(10.dp),
                     ) {
-                        items(uiState.filteredSets, key = { it.id }) { item ->
+                        items(displayedSets, key = { it.id }) { item ->
                             WordSetCard(
                                 item = item,
                                 onClick = { onNavigateToSetDetail(item.id) },

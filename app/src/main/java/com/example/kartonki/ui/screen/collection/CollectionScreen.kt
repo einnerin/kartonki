@@ -31,6 +31,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.foundation.background
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -39,6 +40,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import com.example.kartonki.ui.component.SearchBar
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -63,6 +65,15 @@ fun CollectionScreen(
 ) {
     val uiState by viewModel.uiState.collectAsState()
     var selectedWord by remember { mutableStateOf<Word?>(null) }
+    var searchActive by remember { mutableStateOf(false) }
+    var searchQuery by remember { mutableStateOf("") }
+    val displayedWords = remember(searchQuery, uiState.words) {
+        if (searchQuery.isEmpty()) uiState.words
+        else uiState.words.filter {
+            it.original.contains(searchQuery, ignoreCase = true) ||
+            it.translation.contains(searchQuery, ignoreCase = true)
+        }
+    }
     val lifecycleOwner = LocalLifecycleOwner.current
 
     DisposableEffect(lifecycleOwner) {
@@ -94,6 +105,11 @@ fun CollectionScreen(
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
                     }
                 },
+                actions = {
+                    IconButton(onClick = { searchActive = true }) {
+                        Icon(Icons.Default.Search, contentDescription = "Поиск")
+                    }
+                },
             )
         },
     ) { innerPadding ->
@@ -106,8 +122,14 @@ fun CollectionScreen(
                         activeFilters = uiState.rarityFilter,
                         onToggle = { viewModel.toggleFilter(it) },
                     )
-                    HorizontalDivider()
-                    if (uiState.words.isEmpty()) {
+                    SearchBar(
+                        visible = searchActive,
+                        query = searchQuery,
+                        onQueryChange = { searchQuery = it },
+                        onClose = { searchActive = false; searchQuery = "" },
+                    )
+                    if (!searchActive) HorizontalDivider()
+                    if (displayedWords.isEmpty()) {
                         Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                             Text(
                                 text = s.collectionEmpty,
@@ -116,14 +138,14 @@ fun CollectionScreen(
                         }
                     } else {
                         val listState = rememberLazyListState()
-                        LaunchedEffect(uiState.rarityFilter) {
+                        LaunchedEffect(uiState.rarityFilter, searchQuery) {
                             listState.scrollToItem(0)
                         }
                         LazyColumn(
                             state = listState,
                             contentPadding = PaddingValues(bottom = 88.dp),
                         ) {
-                            items(uiState.words, key = { it.id }) { word ->
+                            items(displayedWords, key = { it.id }) { word ->
                                 CollectionWordItem(word, onClick = { selectedWord = word })
                                 HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
                             }

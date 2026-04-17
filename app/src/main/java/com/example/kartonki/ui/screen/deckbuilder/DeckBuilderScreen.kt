@@ -29,6 +29,7 @@ import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.TopAppBar
@@ -38,6 +39,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import com.example.kartonki.ui.component.SearchBar
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -63,9 +65,25 @@ fun DeckBuilderScreen(
     val uiState by viewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
     var levelMenuExpanded by remember { mutableStateOf(false) }
-    // Fresh state (position 0) whenever the filter changes
-    val deckListState = remember(uiState.rarityFilter) { LazyListState() }
-    val availableListState = remember(uiState.rarityFilter) { LazyListState() }
+    var searchActive by remember { mutableStateOf(false) }
+    var searchQuery by remember { mutableStateOf("") }
+    // Fresh state (position 0) whenever filter or search changes
+    val deckListState = remember(uiState.rarityFilter, searchQuery) { LazyListState() }
+    val availableListState = remember(uiState.rarityFilter, searchQuery) { LazyListState() }
+    val displayedDeckCards = remember(searchQuery, uiState.filteredDeckCards) {
+        if (searchQuery.isEmpty()) uiState.filteredDeckCards
+        else uiState.filteredDeckCards.filter {
+            it.original.contains(searchQuery, ignoreCase = true) ||
+            it.translation.contains(searchQuery, ignoreCase = true)
+        }
+    }
+    val displayedAllCards = remember(searchQuery, uiState.filteredAllCards) {
+        if (searchQuery.isEmpty()) uiState.filteredAllCards
+        else uiState.filteredAllCards.filter {
+            it.original.contains(searchQuery, ignoreCase = true) ||
+            it.translation.contains(searchQuery, ignoreCase = true)
+        }
+    }
 
     Scaffold(
         topBar = {
@@ -123,6 +141,11 @@ fun DeckBuilderScreen(
                         Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
                     }
                 },
+                actions = {
+                    IconButton(onClick = { searchActive = true }) {
+                        Icon(Icons.Default.Search, contentDescription = "Поиск")
+                    }
+                },
             )
         },
     ) { innerPadding ->
@@ -146,7 +169,13 @@ fun DeckBuilderScreen(
                     uiState.raritySlots.firstOrNull { it.rarity == rarity }?.isOverLimit == true
                 },
             )
-            HorizontalDivider()
+            SearchBar(
+                visible = searchActive,
+                query = searchQuery,
+                onQueryChange = { searchQuery = it },
+                onClose = { searchActive = false; searchQuery = "" },
+            )
+            if (!searchActive) HorizontalDivider()
 
             // Tabs
             PrimaryTabRow(selectedTabIndex = uiState.selectedTab) {
@@ -168,7 +197,7 @@ fun DeckBuilderScreen(
             val primaryColor = MaterialTheme.colorScheme.primary
             when (uiState.selectedTab) {
                 0 -> CardList(
-                    cards = uiState.filteredDeckCards,
+                    cards = displayedDeckCards,
                     listState = deckListState,
                     emptyText = s.deckEmptyDeck,
                     actionLabel = { "−" },
@@ -178,7 +207,7 @@ fun DeckBuilderScreen(
                     modifier = Modifier.weight(1f),
                 )
                 1 -> CardList(
-                    cards = uiState.filteredAllCards,
+                    cards = displayedAllCards,
                     listState = availableListState,
                     emptyText = s.deckEmptyAvailable,
                     actionLabel = { if (it.id in deckCardIds) "−" else "+" },
