@@ -69,9 +69,9 @@ object WordDataHebrewBatch38 {
             original = "רוּגְבִּי", translation = "регби"),
         WordEntity(id = 113623, setId = 1136, languagePair = "he-ru", rarity = "RARE",
             original = "פֶּנְסִינְג", translation = "фехтование"),
-        WordEntity(id = 113624, setId = 1136, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113624, setId = 1136, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מִשְׁחָק גּוֹמֵר", translation = "финальная игра / плей-офф"),
-        WordEntity(id = 113625, setId = 1136, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113625, setId = 1136, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "שִׁיאָן", translation = "рекордсмен / чемпион"),
 
         // ── Set 1137: Город ───────────────────────────────────────────────
@@ -121,9 +121,9 @@ object WordDataHebrewBatch38 {
             original = "אַנְדַּרְטָה", translation = "памятник / мемориал"),
         WordEntity(id = 113723, setId = 1137, languagePair = "he-ru", rarity = "RARE",
             original = "קִרְיָה", translation = "квартал / жилой комплекс"),
-        WordEntity(id = 113724, setId = 1137, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113724, setId = 1137, languagePair = "he-ru", rarity = "RARE",
             original = "אִינְפְּרַאסְטְרוּקְטוּרָה", translation = "инфраструктура"),
-        WordEntity(id = 113725, setId = 1137, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113725, setId = 1137, languagePair = "he-ru", rarity = "RARE",
             original = "פַּסָּאז'", translation = "пассаж / торговые ряды"),
 
         // ── Set 1138: Эмоции ──────────────────────────────────────────────
@@ -173,9 +173,9 @@ object WordDataHebrewBatch38 {
             original = "אַכְזָבָה", translation = "разочарование"),
         WordEntity(id = 113823, setId = 1138, languagePair = "he-ru", rarity = "RARE",
             original = "יֵאוּשׁ", translation = "отчаяние"),
-        WordEntity(id = 113824, setId = 1138, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113824, setId = 1138, languagePair = "he-ru", rarity = "RARE",
             original = "כְּמִיהָה", translation = "томление / страстное стремление"),
-        WordEntity(id = 113825, setId = 1138, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113825, setId = 1138, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "גַּעְגּוּעִים", translation = "ностальгия / тоска по дому"),
     )
 }

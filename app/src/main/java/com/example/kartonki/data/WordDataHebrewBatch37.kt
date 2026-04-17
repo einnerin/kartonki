@@ -121,9 +121,9 @@ object WordDataHebrewBatch37 {
             original = "אֶבְזֵם", translation = "пряжка / застёжка"),
         WordEntity(id = 113423, setId = 1134, languagePair = "he-ru", rarity = "RARE",
             original = "תַּחְפֹּשֶׂת", translation = "маскарадный костюм"),
-        WordEntity(id = 113424, setId = 1134, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113424, setId = 1134, languagePair = "he-ru", rarity = "RARE",
             original = "מַחְשׁוֹף", translation = "декольте"),
-        WordEntity(id = 113425, setId = 1134, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113425, setId = 1134, languagePair = "he-ru", rarity = "RARE",
             original = "תַּרְבּוּשׁ", translation = "феска (традиционный головной убор)"),
 
         // ── Set 1135: Погода ──────────────────────────────────────────────
@@ -173,9 +173,9 @@ object WordDataHebrewBatch37 {
             original = "הֲצָפָה", translation = "наводнение / затопление"),
         WordEntity(id = 113523, setId = 1135, languagePair = "he-ru", rarity = "RARE",
             original = "מִשְׁקָעִים", translation = "осадки"),
-        WordEntity(id = 113524, setId = 1135, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113524, setId = 1135, languagePair = "he-ru", rarity = "RARE",
             original = "צִיקְלוֹן טְרוֹפִּי", translation = "тропический циклон"),
-        WordEntity(id = 113525, setId = 1135, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 113525, setId = 1135, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "לַחְלוּחִית", translation = "влажность / сырость"),
     )
 }
