@@ -36,7 +36,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 35,
+    version = 36,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -304,6 +304,22 @@ abstract class AppDatabase : RoomDatabase() {
          *   2. Proceed with the delete as usual.
          *   WordLoader.doLoad() will restore isFavorite and clear the table automatically.
          */
+        /**
+         * Full word-data reset after the rarity-rework refactor (2026-04).
+         * Saves favourite sets, clears all word-referencing tables; WordLoader
+         * re-inserts fresh data on next launch (triggered by WordDataVersion bump).
+         */
+        val MIGRATION_35_36 = object : Migration(35, 36) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("INSERT OR REPLACE INTO retained_favorites SELECT id FROM word_sets WHERE isFavorite = 1")
+                db.execSQL("DELETE FROM progress")
+                db.execSQL("DELETE FROM collection")
+                db.execSQL("DELETE FROM deck_cards")
+                db.execSQL("DELETE FROM words")
+                db.execSQL("DELETE FROM word_sets")
+            }
+        }
+
         val MIGRATION_34_35 = object : Migration(34, 35) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL(
