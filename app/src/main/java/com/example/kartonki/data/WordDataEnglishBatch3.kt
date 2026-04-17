@@ -274,11 +274,11 @@ object WordDataEnglishBatch3 {
             definitionNative = "Банковский счёт, на остаток которого начисляются проценты.",
             exampleNative = "Она положила премию на savings account, чтобы получать проценты."),
 
-        WordEntity(id = 25113, original = "statement", transliteration = "[ˈsteɪtmənt]", translation = "выписка (банковская)",
-            definition = "A printed record of all transactions made on a bank account.",
-            definitionNative = "Распечатанная запись всех операций по банковскому счёту.",
-            example = "I check my monthly bank statement to track my spending.",
-            exampleNative = "Запроси statement за последние три месяца.",
+        WordEntity(id = 25113, original = "mortgage", transliteration = "[ˈmɔːrgɪdʒ]", translation = "ипотека",
+            definition = "A loan from a bank to buy a house or property, repaid over many years.",
+            definitionNative = "Банковский кредит на покупку недвижимости, погашаемый в течение многих лет.",
+            example = "They took out a mortgage to buy their first home.",
+            exampleNative = "Они взяли mortgage, чтобы купить первое жильё.",
             rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_operations"),
 
                 WordEntity(id = 25114, original = "direct debit", transliteration = "[daɪˈrekt ˈdebɪt]", translation = "прямое дебетование (автоматическое списание)", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
@@ -509,11 +509,11 @@ object WordDataEnglishBatch3 {
             definitionNative = "Багаж, превышающий допустимый вес или размер, установленный авиакомпанией.",
             exampleNative = "Ей пришлось заплатить за excess baggage, потому что чемодан был слишком тяжёлым."),
 
-                WordEntity(id = 25223, original = "boarding gate", transliteration = "[ˈbɔrdɪŋ ɡeɪt]", translation = "выход на посадку", rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport",
-            definition = "the entrance in an airport where passengers board a specific flight",
-            example = "Passengers for the New York flight should proceed to boarding gate 14.",
-            definitionNative = "Вход в аэропорту, через который пассажиры садятся в самолёт.",
-            exampleNative = "Пассажирам рейса в Нью-Йорк следует пройти к boarding gate 14."),
+                WordEntity(id = 25223, original = "window seat", transliteration = "[ˈwɪndoʊ siːt]", translation = "место у окна", rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport",
+            definition = "a seat on a plane, train, or bus that is next to a window",
+            example = "She always books a window seat so she can watch the clouds.",
+            definitionNative = "Место в самолёте, поезде или автобусе, расположенное у окна.",
+            exampleNative = "Она всегда берёт window seat, чтобы смотреть на облака."),
 
                 WordEntity(id = 25224, original = "transit lounge", transliteration = "[ˈtrænsɪt laʊndʒ]", translation = "зал ожидания для транзитных пассажиров", rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport",
             definition = "a waiting area in an airport for passengers changing to a connecting flight",
