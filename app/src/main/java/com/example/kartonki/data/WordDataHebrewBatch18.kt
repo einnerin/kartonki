@@ -540,12 +540,12 @@ object WordDataHebrewBatch18 {
         ),
         WordEntity(
             id = 107805, setId = 1078, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "ecology", transliteration = "zihúm avir",
-            original = "זִיהוּם אֲוִיר", translation = "загрязнение воздуха",
-            definition = "נוֹכְחוּת חוֹמָרִים מַזִּיקִים בָּאֲוִיר הַגּוֹרֶמֶת נֶזֶק לַבְּרִיאוּת וְלַסְּבִיבָה.",
-            definitionNative = "Присутствие вредных веществ в воздухе, наносящих ущерб здоровью и окружающей среде.",
-            example = "זִיהוּם הָאֲוִיר בֶּעָרִים הַגְּדוֹלוֹת גּוֹרֵם לְמַחֲלוֹת נְשִׁימָה.",
-            exampleNative = "Загрязнение воздуха в больших городах вызывает болезни дыхательных путей.",
+            pos = "noun", semanticGroup = "ecology", transliteration = "psolet elektronit",
+            original = "פְּסֹלֶת אֶלֶקְטְרוֹנִית", translation = "электронные отходы (e-waste)",
+            definition = "מַכְשִׁירִים חַשְׁמַלִּיִּים וְאֶלֶקְטְרוֹנִיִּים שֶׁנִּזְרְקוּ, לְרֹב מְכִילִים חוֹמְרִים מְזִיקִים.",
+            definitionNative = "Выброшенные электрические и электронные приборы, часто содержащие вредные вещества.",
+            example = "פְּסֹלֶת אֶלֶקְטְרוֹנִית הִיא אֶחַד מִזִּיהוּמֵי הַסְּבִיבָה הַגְּדוֹלִים בְּעוֹלָם.",
+            exampleNative = "Электронные отходы — одно из крупнейших загрязнений окружающей среды в мире.",
         ),
         WordEntity(
             id = 107806, setId = 1078, languagePair = "he-ru", rarity = "COMMON",
