@@ -141,12 +141,12 @@ object WordDataHebrewImmigrant4 {
         ),
         WordEntity(
             id = 103414, setId = 1034, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "emergency", transliteration = "zehut",
-            original = "זֵהוּת", translation = "личность / удостоверение",
-            definition = "הַהֲכָּרָה בְּמִי שֶׁהוּא אָדָם; תְּעוּדָה הַמְּאַמֶּתֶת אֶת זֵהוּתוֹ.",
-            definitionNative = "Личность человека; документ, подтверждающий его личность.",
-            example = "הַשּׁוֹטֵר בִּקֵּשׁ לִרְאוֹת אֶת תְּעוּדַת הַזֵּהוּת שֶׁלִּי.",
-            exampleNative = "Полицейский попросил показать мою תְּעוּדַת זֵהוּת.",
+            pos = "noun", semanticGroup = "emergency", transliteration = "itzur",
+            original = "עִצּוּר", translation = "задержание / арест",
+            definition = "פְּעֻלַּת מִשְׁטָרָה הַמְּגְבִּילָה אֶת חֵרוּת הַחָשׁוּד זְמַנִּית.",
+            definitionNative = "Действие полиции, временно ограничивающее свободу подозреваемого.",
+            example = "הַשּׁוֹטֵר בִּצֵּעַ עִצּוּר בְּחָשׁוּד בִּגְנֵבָה.",
+            exampleNative = "Офицер провёл עִצּוּר подозреваемого в краже.",
         ),
         WordEntity(
             id = 103415, setId = 1034, languagePair = "he-ru", rarity = "UNCOMMON",

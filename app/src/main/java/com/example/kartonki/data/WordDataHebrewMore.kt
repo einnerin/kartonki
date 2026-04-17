@@ -869,12 +869,12 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101121, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "aklim",
-            original = "אַקְלִים", translation = "климат",
-            definition = "דֶּפֶס מֶזֶג הָאֲוִיר הָאוֹפְיֵינִי לְאֵזוֹר.",
-            definitionNative = "Характерный для данного района тип погоды.",
-            example = "הָאַקְלִים בְּיִשְׂרָאֵל יַבָּשָׁתִּי.",
-            exampleNative = "אַקְלִים в Израиле средиземноморский.",
+            pos = "noun", semanticGroup = "weather", transliteration = "anavim",
+            original = "עֲנָנִים", translation = "облака",
+            definition = "מֵי אוֹ גְּבִישֵׁי קֶרַח הַמְּרַחֲפִים בְּאַטְמוֹסְפֵרָה.",
+            definitionNative = "Капли воды или кристаллы льда, парящие в атмосфере.",
+            example = "עֲנָנִים כֵּהִים בִּישְׁרוּ גֶּשֶׁם.",
+            exampleNative = "Тёмные עֲנָנִים предвещали дождь.",
         ),
         WordEntity(
             id = 101122, setId = 1011, languagePair = "he-ru", rarity = "COMMON",

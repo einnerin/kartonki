@@ -255,12 +255,12 @@ object WordDataHebrewTech {
         WordEntity(
             id = 101924, setId = 1019, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gadgets",
-            transliteration = "adakun",
-            original = "עֲדָכּוּן", translation = "обновление (апдейт)",
-            definition = "גרסה חדשה של תוכנה הכוללת תיקונים ושיפורים.",
-            definitionNative = "Новая версия программного обеспечения, включающая исправления и улучшения.",
-            example = "קיבלתי הודעה על עֲדָכּוּן חדש לאפליקציה.",
-            exampleNative = "Я получил уведомление о новом עֲדָכּוּן для приложения.",
+            transliteration = "rezolutzia",
+            original = "רֶזוֹלוּצְיָה", translation = "разрешение (экрана)",
+            definition = "מספר הפיקסלים של מסך המכשיר — קובע את חדות התמונה.",
+            definitionNative = "Количество пикселей экрана устройства — определяет чёткость изображения.",
+            example = "הטלפון החדש יש לו רֶזוֹלוּצְיָה של אלף ומאתים פיקסל.",
+            exampleNative = "У нового телефона רֶזוֹלוּצְיָה 1200 пикселей.",
         ),
         WordEntity(
             id = 101925, setId = 1019, languagePair = "he-ru", rarity = "RARE",

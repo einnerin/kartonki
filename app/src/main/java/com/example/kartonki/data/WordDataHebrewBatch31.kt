@@ -130,7 +130,7 @@ object WordDataHebrewBatch31 {
         WordEntity(id = 111701, setId = 1117, languagePair = "he-ru", rarity = "COMMON",
             original = "סוֹצְיוֹלוֹגְיָה", translation = "социология"),
         WordEntity(id = 111702, setId = 1117, languagePair = "he-ru", rarity = "COMMON",
-            original = "זֶהוּת", translation = "идентичность"),
+            original = "שִׁכְבָה חֶבְרָתִית", translation = "социальный слой / страта"),
         WordEntity(id = 111703, setId = 1117, languagePair = "he-ru", rarity = "COMMON",
             original = "נוֹרְמָה", translation = "норма"),
         WordEntity(id = 111704, setId = 1117, languagePair = "he-ru", rarity = "COMMON",

@@ -548,12 +548,12 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104309, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_spices", transliteration = "pilpel",
-            original = "פֶּלְפֶּל", translation = "перец (специя)",
-            definition = "תַּבְלִין נָפוֹץ הַנּוֹתֵן טַעַם חָרִיף לְמָזוֹן.",
-            definitionNative = "Распространённая специя, придающая еде острый вкус.",
-            example = "הוֹסַפְתִּי פֶּלְפֶּל שָׁחוֹר לַמָּרָק.",
-            exampleNative = "Я добавил чёрный פֶּלְפֶּל в суп.",
+            pos = "noun", semanticGroup = "kitchen_spices", transliteration = "kamon",
+            original = "כַּמּוּן", translation = "тмин",
+            definition = "תַּבְלִין עִם אֲרוֹמָה חָמָה, נָפוֹץ בַּמַּטְבָּח הַמִּזְרָחִי.",
+            definitionNative = "Специя с тёплым ароматом, распространённая на восточной кухне.",
+            example = "הוֹסַפְתִּי כַּמּוּן וְכוּרְכּוּם לַתַּבְשִׁיל.",
+            exampleNative = "Я добавил כַּמּוּן и куркуму в блюдо.",
         ),
         WordEntity(
             id = 104310, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",

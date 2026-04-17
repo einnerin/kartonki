@@ -531,12 +531,12 @@ object WordDataHebrewBatch18 {
         ),
         WordEntity(
             id = 107804, setId = 1078, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "ecology", transliteration = "mikhzur",
-            original = "מִחְזּוּר", translation = "переработка",
-            definition = "עִיבּוּד מֵחָדָשׁ שֶׁל חוֹמָרִים מְשֻׁמָּשִׁים לִיצִירַת מוּצָרִים חֲדָשִׁים.",
-            definitionNative = "Повторная обработка использованных материалов для создания новых продуктов.",
-            example = "בְּיִשְׂרָאֵל מְמַחְזְרִים פְּחִיּוֹת וּבְקְבּוּקֵי פְּלַסְטִיק.",
-            exampleNative = "В Израиле перерабатывают банки и пластиковые бутылки.",
+            pos = "noun", semanticGroup = "ecology", transliteration = "biomasa",
+            original = "בִּיוֹמַסָּה", translation = "биомасса",
+            definition = "חוֹמֶר אוֹרְגָּנִי מִצְּמָחִים וּבַעֲלֵי חַיִּים הַמְּשַׁמֵּשׁ כְּמַקּוֹר אֶנֶרְגְיָה.",
+            definitionNative = "Органическое вещество из растений и животных, используемое как источник энергии.",
+            example = "אֶנֶרְגְיַת בִּיוֹמַסָּה מַפְחִיתָה תְּלוּת בְּדֶלֶק מְאוּבָּן.",
+            exampleNative = "Энергия בִּיוֹמַסָּה снижает зависимость от ископаемого топлива.",
         ),
         WordEntity(
             id = 107805, setId = 1078, languagePair = "he-ru", rarity = "COMMON",

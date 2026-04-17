@@ -155,7 +155,7 @@ object WordDataHebrewBatch23 {
         WordEntity(id = 109301, setId = 1093, languagePair = "he-ru", rarity = "COMMON",
             original = "כַּדּוּר הָאָרֶץ", translation = "Земля, планета"),
         WordEntity(id = 109302, setId = 1093, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַחְזוּר", translation = "переработка отходов, рециклинг"),
+            original = "קַיְּימוּת", translation = "устойчивость / устойчивое развитие"),
         WordEntity(id = 109303, setId = 1093, languagePair = "he-ru", rarity = "COMMON",
             original = "אוֹקְיָינוֹס", translation = "океан"),
         WordEntity(id = 109304, setId = 1093, languagePair = "he-ru", rarity = "COMMON",

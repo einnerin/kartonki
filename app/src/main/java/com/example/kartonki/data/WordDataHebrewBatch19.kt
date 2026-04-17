@@ -66,12 +66,12 @@ object WordDataHebrewBatch19 {
         ),
         WordEntity(
             id = 107905, setId = 1079, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "theatre", transliteration = "hafaka",
-            original = "הַפְקָה", translation = "постановка / производство",
-            definition = "כְּלֵל הָעֲבוֹדָה הַמְּעַשִׂית שֶׁל הֲכָנַת הַהַצָּגָה.",
-            definitionNative = "Весь практический процесс подготовки спектакля.",
-            example = "הַהַפְקָה הֵשְׁקִיעָה מִילְיוֹנִים בְּבַּגְדֵי תַּקּוּפָה.",
-            exampleNative = "Постановка вложила миллионы в исторические костюмы.",
+            pos = "noun", semanticGroup = "theatre", transliteration = "tafura",
+            original = "תַּפְאוּרָה", translation = "декорации / сценография",
+            definition = "עִיצּוּב הַבָּמָה: רֶקַע, אוֹבְיֶקְטִים וְאֶלֶמֶנְטִים חֲזוּתִיִּים.",
+            definitionNative = "Оформление сцены: задник, объекты и визуальные элементы.",
+            example = "הַתַּפְאוּרָה שֶׁל הַהַצָּגָה יָצְרָה אֲוִירָה שֶׁל יַעַר.",
+            exampleNative = "תַּפְאוּרָה спектакля создала атмосферу леса.",
         ),
         WordEntity(
             id = 107906, setId = 1079, languagePair = "he-ru", rarity = "COMMON",

@@ -116,12 +116,12 @@ object WordDataHebrewAdvanced {
         WordEntity(
             id = 101410, setId = 1014, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
-            transliteration = "algoritem",
-            original = "אַלְגוֹרִיתְם", translation = "алгоритм",
-            definition = "רצף הוראות מוגדר לפתרון בעיה.",
-            definitionNative = "Чётко определённая последовательность инструкций для решения задачи.",
-            example = "הָאַלְגוֹרִיתְם ממיין את הנתונים מהר מאוד.",
-            exampleNative = "Этот אַלְגוֹרִיתְם сортирует данные очень быстро.",
+            transliteration = "optimalitzia",
+            original = "אוֹפְּטִימִיזַצְיָה", translation = "оптимизация",
+            definition = "תהליך שיפור ביצועי קוד או מערכת כדי להגיע לתוצאות מהירות יותר.",
+            definitionNative = "Процесс улучшения производительности кода или системы для достижения более быстрых результатов.",
+            example = "אוֹפְּטִימִיזַצְיָה של שאילתות ה-SQL הפחיתה את זמן התגובה בחמישים אחוז.",
+            exampleNative = "אוֹפְּטִימִיזַצְיָה SQL-запросов снизила время отклика на пятьдесят процентов.",
         ),
         WordEntity(
             id = 101411, setId = 1014, languagePair = "he-ru", rarity = "RARE",

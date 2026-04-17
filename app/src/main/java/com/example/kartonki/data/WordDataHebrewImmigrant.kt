@@ -159,12 +159,12 @@ object WordDataHebrewImmigrant {
         ),
         WordEntity(
             id = 102216, setId = 1022, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "documents", transliteration = "idkun",
-            original = "עֲדְכּוּן", translation = "обновление данных",
-            definition = "שִׁינּוּי פְּרָטִים בְּמִסְמָךְ אוֹ בְּמַעֲרֶכֶת לְפִי הַמַּצָּב הַחָדָשׁ.",
-            definitionNative = "Изменение данных в документе или системе в соответствии с новым положением.",
-            example = "עֲדְכּוּן הַכְּתוֹבֶת נָדְרָשׁ תּוֹךְ שְׁלוֹשִׁים יוֹם מֵהַמַּעֲבָר.",
-            exampleNative = "עֲדְכּוּן адреса требуется в течение тридцати дней после переезда.",
+            pos = "noun", semanticGroup = "documents", transliteration = "tofes",
+            original = "טוֹפַס", translation = "бланк / форма",
+            definition = "מִסְמָךְ מֻדְפָּס עִם שֵׂדוֹת לְמִלּוּי מִידָע אִישִׁי.",
+            definitionNative = "Печатный документ с полями для заполнения личных данных.",
+            example = "מִלֵּאתִי אֶת הַטּוֹפַס בְּמִשְׂרַד הַמִּשְׂרָד הַפְּנִים.",
+            exampleNative = "Я заполнил טוֹפַס в офисе МВД.",
         ),
         WordEntity(
             id = 102217, setId = 1022, languagePair = "he-ru", rarity = "RARE",
