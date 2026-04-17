@@ -37,6 +37,7 @@ object WordRegistry {
                 WordDataHebrewImmigrant3.sets +
                 WordDataHebrewImmigrant4.sets +
                 WordDataHebrewImmigrant5.sets +
+                WordDataHebrewImmigrant6.sets +
                 WordDataHebrewBatch5.sets +
                 WordDataHebrewBatch6.sets +
                 WordDataHebrewBatch7.sets +
@@ -94,6 +95,7 @@ object WordRegistry {
                 WordDataHebrewImmigrant3.words +
                 WordDataHebrewImmigrant4.words +
                 WordDataHebrewImmigrant5.words +
+                WordDataHebrewImmigrant6.words +
                 WordDataHebrewImmigrantExtra.words +
                 WordDataHebrewBatch5.words +
                 WordDataHebrewBatch6.words +
