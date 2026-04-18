@@ -106,9 +106,11 @@ def parse_words(kt_file):
         original = extract_field(block, 'original')
         rarity = extract_field(block, 'rarity') or "COMMON"
         lang = extract_field(block, 'languagePair')
+        has_translit = bool(re.search(r'\btransliteration\s*=\s*"[^"]+"', block))
         if wid and sid and original and lang:
             words.append({"id": wid, "setId": sid, "original": original,
-                          "rarity": rarity, "lang": lang, "file": kt_file.name})
+                          "rarity": rarity, "lang": lang, "file": kt_file.name,
+                          "has_translit": has_translit})
     return words
 
 
@@ -395,6 +397,20 @@ def check_name_consistency(all_sets, staged_files):
     return errors
 
 
+def check_transliteration_missing(all_words, staged_files):
+    """Warn if staged he-ru words are missing transliteration."""
+    warnings = []
+    for w in all_words:
+        if w["lang"] != "he-ru":
+            continue
+        if w["file"] not in staged_files:
+            continue
+        if not w.get("has_translit"):
+            warnings.append(f"  Word {w['id']} '{w['original']}' [set {w['setId']}, "
+                            f"{w['file']}]: нет transliteration")
+    return warnings
+
+
 def check_description_cefr(all_sets, staged_files):
     """Warn if staged set descriptions mention A1/B1/etc — rarity colour is enough."""
     cefr = re.compile(r'\b(A1|A2|B1|B2|C1|C2)\b')
@@ -575,6 +591,14 @@ def main():
         if cefr_warnings:
             print(f"=== ⚠️  CEFR в описаниях staged наборов: {len(cefr_warnings)} ===\n")
             for w in cefr_warnings:
+                print(w)
+            print()
+
+        translit_warnings = check_transliteration_missing(all_words, staged_files)
+        if translit_warnings:
+            print(f"=== ⚠️  Нет transliteration в staged he-ru словах: "
+                  f"{len(translit_warnings)} ===\n")
+            for w in translit_warnings:
                 print(w)
             print()
 
