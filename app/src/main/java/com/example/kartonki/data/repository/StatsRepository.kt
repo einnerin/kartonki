@@ -8,7 +8,6 @@ import com.example.kartonki.domain.model.PlayerStats
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.domain.model.WordStat
-import com.example.kartonki.domain.model.WordStatSort
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -32,9 +31,11 @@ class StatsRepository @Inject constructor(
         val longestStreak = calculateLongestStreak(sortedDays)
 
         val matches   = pvpMatchDao.getAll()
-        val wins      = matches.count { it.winnerName != null }
-        val losses    = matches.count { it.winnerName == null }
-        val bestScore = matches.maxOfOrNull { maxOf(it.player1Score, it.player2Score) } ?: 0
+        // Player 1 = device owner by convention in local PvP.
+        val wins      = matches.count { it.winnerName != null && it.winnerName == it.player1Name }
+        val losses    = matches.count { it.winnerName != null && it.winnerName == it.player2Name }
+        val draws     = matches.count { it.winnerName == null }
+        val bestScore = matches.maxOfOrNull { it.player1Score } ?: 0
 
         return PlayerStats(
             wordsLearned  = wordsLearned,
@@ -43,22 +44,18 @@ class StatsRepository @Inject constructor(
             longestStreak = longestStreak,
             pvpWins       = wins,
             pvpLosses     = losses,
-            pvpDraws      = matches.count { it.winnerName == null },
+            pvpDraws      = draws,
             bestPvpScore  = bestScore,
         )
     }
 
-    suspend fun getWordStats(
-        sortBy: WordStatSort,
-        rarityFilter: Rarity?,
-    ): List<WordStat> {
+    suspend fun getWordStats(): List<WordStat> {
         val allProgress = progressDao.getAll()
         val wordMap     = wordDao.getAllWordsOnce().associateBy { it.id }
 
-        val stats = allProgress.mapNotNull { progress ->
+        return allProgress.mapNotNull { progress ->
             val word   = wordMap[progress.wordId] ?: return@mapNotNull null
             val rarity = runCatching { Rarity.valueOf(word.rarity) }.getOrElse { Rarity.COMMON }
-            if (rarityFilter != null && rarity != rarityFilter) return@mapNotNull null
             val total     = progress.correctCount + progress.incorrectCount
             val errorRate = if (total > 0) progress.incorrectCount.toFloat() / total else 0f
             WordStat(
@@ -71,13 +68,6 @@ class StatsRepository @Inject constructor(
                 level        = progress.level,
                 nextReviewAt = progress.nextReviewAt,
             )
-        }
-
-        return when (sortBy) {
-            WordStatSort.MOST_ERRORS       -> stats.sortedByDescending { it.errorRate }
-            WordStatSort.EASIEST           -> stats.filter { it.encounters > 0 }.sortedBy { it.errorRate }
-            WordStatSort.MOST_ENCOUNTERS   -> stats.sortedByDescending { it.encounters }
-            WordStatSort.RECENTLY_STUDIED  -> stats.sortedByDescending { it.nextReviewAt }
         }
     }
 

@@ -33,36 +33,43 @@ class WordStatsViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(WordStatsUiState())
     val uiState: StateFlow<WordStatsUiState> = _uiState.asStateFlow()
 
-    private var allWordStats: List<WordStat> = emptyList()
+    private var rawWordStats: List<WordStat> = emptyList()
 
     init { load() }
 
     fun onSortChange(sort: WordStatSort) {
-        _uiState.update { it.copy(sortBy = sort) }
-        load()
-    }
-
-    fun toggleRarityFilter(rarity: Rarity) {
-        _uiState.update {
-            val newFilter = if (rarity in it.rarityFilter) it.rarityFilter - rarity
-                            else it.rarityFilter + rarity
-            it.copy(rarityFilter = newFilter, words = applyFilter(newFilter))
+        _uiState.update { state ->
+            state.copy(sortBy = sort, words = applyFilterAndSort(state.rarityFilter, sort))
         }
     }
 
-    private fun applyFilter(filter: Set<Rarity>): List<WordStat> =
-        if (filter.isEmpty()) allWordStats else allWordStats.filter { it.rarity in filter }
+    fun toggleRarityFilter(rarity: Rarity) {
+        _uiState.update { state ->
+            val newFilter = if (rarity in state.rarityFilter) state.rarityFilter - rarity
+                            else state.rarityFilter + rarity
+            state.copy(rarityFilter = newFilter, words = applyFilterAndSort(newFilter, state.sortBy))
+        }
+    }
+
+    private fun applyFilterAndSort(filter: Set<Rarity>, sort: WordStatSort): List<WordStat> {
+        val filtered = if (filter.isEmpty()) rawWordStats else rawWordStats.filter { it.rarity in filter }
+        return when (sort) {
+            WordStatSort.MOST_ERRORS      -> filtered.sortedByDescending { it.errorRate }
+            WordStatSort.EASIEST          -> filtered.filter { it.encounters > 0 }.sortedBy { it.errorRate }
+            WordStatSort.MOST_ENCOUNTERS  -> filtered.sortedByDescending { it.encounters }
+            WordStatSort.RECENTLY_STUDIED -> filtered.sortedByDescending { it.nextReviewAt }
+        }
+    }
 
     private fun load() = viewModelScope.launch {
         _uiState.update { it.copy(isLoading = true) }
-        val state = _uiState.value
-        allWordStats = statsRepository.getWordStats(state.sortBy, null)
+        rawWordStats = statsRepository.getWordStats()
         val source = prefs.problemWordsSource.first()
         val problemCount = statsRepository.getProblemWordCount(source)
-        _uiState.update {
-            it.copy(
+        _uiState.update { state ->
+            state.copy(
                 isLoading = false,
-                words = applyFilter(it.rarityFilter),
+                words = applyFilterAndSort(state.rarityFilter, state.sortBy),
                 problemWordCount = problemCount,
             )
         }
