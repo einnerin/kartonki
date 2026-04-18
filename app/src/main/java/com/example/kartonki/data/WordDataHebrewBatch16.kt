@@ -39,12 +39,12 @@ object WordDataHebrewBatch16 {
         ),
         WordEntity(
             id = 107002, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "religion", transliteration = "torah",
-            original = "תּוֹרָה", translation = "Тора",
-            definition = "חֲמִשָּׁה חוּמְשֵׁי מֹשֶׁה — הַסֵּפֶר הַמְּרַכָּזִי שֶׁל הַיַּהֲדוּת.",
-            definitionNative = "Пятикнижие Моисея — центральный текст иудаизма.",
-            example = "הַתּוֹרָה נִקְרֵאת בְּבֵית הַכְּנֶסֶת בְּכָל שַׁבָּת.",
-            exampleNative = "Тора читается в синагоге каждую субботу.",
+            pos = "noun", semanticGroup = "religion", transliteration = "siddur",
+            original = "כּוֹהֵן", translation = "коэн (священник / служитель Храма)",
+            definition = "צֶאֱצָא שֶׁל אַהֲרֹן הַכֹּהֵן, מְשָׁרֵת בְּבֵית הַמִּקְדָּשׁ.",
+            definitionNative = "Потомок Аарона, служивший в Храме; в иудаизме — особый статус.",
+            example = "הַכּוֹהֵן בֵּרַךְ אֶת הָעָם בְּסוֹף הַתְּפִלָּה.",
+            exampleNative = "Коэн благословил народ в конце молитвы.",
         ),
         WordEntity(
             id = 107003, setId = 1070, languagePair = "he-ru", rarity = "COMMON",

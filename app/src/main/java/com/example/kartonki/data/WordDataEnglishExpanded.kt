@@ -5072,9 +5072,9 @@ object WordDataEnglishExpanded {
                 WordEntity(
             id = 20616, setId = 206, languagePair = "en-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "cinema",
-            original = "plot", transliteration = "[plɒt]", translation = "сюжет / фабула",
-            definition = "The main sequence of events in a film, play, or story.",
-            example = "The film has a gripping plot with unexpected twists.",
+            original = "footage", transliteration = "[ˈfʊtɪdʒ]", translation = "кадры / видеозапись",
+            definition = "Film or video material, especially unedited sequences used in production.",
+            example = "The director reviewed the footage from the morning's shoot.",
             exampleNative = null, definitionNative = null,
         ),
                 WordEntity(

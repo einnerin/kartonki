@@ -679,12 +679,12 @@ object WordDataHebrewBatch17 {
         ),
         WordEntity(
             id = 107520, setId = 1075, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "art", transliteration = "pisul",
-            original = "פִּסּוּל", translation = "скульптура / ваяние",
-            definition = "אָמָּנוּת יְצִירַת צוּרוֹת תְּלַת-מֵמְדִיּוֹת מֵחֹמֶר, אֶבֶן, עֵץ אוֹ מַתֶּכֶת.",
-            definitionNative = "Искусство создания трёхмерных форм из глины, камня, дерева или металла.",
-            example = "הוּא לוֹמֵד פִּסּוּל בְּאָבָן בְּאֲקָדֶמְיָה לְאָמָּנוּת.",
-            exampleNative = "Он изучает פִּסּוּל из камня в художественной академии.",
+            pos = "noun", semanticGroup = "art", transliteration = "psifas",
+            original = "פְּסִיפָס", translation = "мозаика",
+            definition = "אָמָּנוּת יְצִירַת תְּמוּנוֹת מֵחֶלְקִיקֵי זְכוּכִית, אֶבֶן אוֹ קְרָמִיקָה.",
+            definitionNative = "Искусство создания изображений из кусочков стекла, камня или керамики.",
+            example = "הַפְּסִיפָס הַבִּיזַנְטִי בְּכַּנֶסֶת הוּא מֵהַמְּרַשִּׁימִים בָּאֶרֶץ.",
+            exampleNative = "Византийская мозаика в церкви — одна из самых впечатляющих в стране.",
         ),
         WordEntity(
             id = 107521, setId = 1075, languagePair = "he-ru", rarity = "RARE",
