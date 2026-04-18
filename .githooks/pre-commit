@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+# Pre-commit hook: блокирует коммит если есть DB-дубли (украденные слова)
+#
+# Установка (однократно):
+#   git config core.hooksPath .githooks
+#
+# Как работает:
+#   Запускает find_real_dupes.py, который симулирует Room REPLACE-стратегию.
+#   Если хотя бы одно слово «крадётся» новым набором из старого — коммит блокируется.
+
+cd "$(git rev-parse --show-toplevel)" || exit 1
+
+# Проверяем только если изменились файлы WordData*.kt или WordDataVersion.kt
+CHANGED=$(git diff --cached --name-only | grep -E 'WordData.*\.kt$' || true)
+if [ -z "$CHANGED" ]; then
+  exit 0
+fi
+
+echo "🔍 Проверка DB-дублей (find_real_dupes.py)..."
+
+OUTPUT=$(python find_real_dupes.py 2>&1)
+STOLEN=$(echo "$OUTPUT" | grep -oE 'Real DB duplicates.*: ([0-9]+)' | grep -oE '[0-9]+$' || echo "0")
+
+if [ "$STOLEN" = "0" ] || [ -z "$STOLEN" ]; then
+  echo "✅ Дублей нет — все наборы по 25 слов."
+  exit 0
+fi
+
+echo ""
+echo "❌ КОММИТ ЗАБЛОКИРОВАН: найдено $STOLEN украденных слов"
+echo ""
+echo "$OUTPUT" | grep -A2 "=== Real DB duplicates" | head -30
+echo ""
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "Что делать:"
+echo "  1. Прочитай оба набора (старый и новый) для каждого украденного слова"
+echo "  2. Реши, в каком наборе слово уместнее по теме и уровню"
+echo "  3. Если слово остаётся в НОВОМ наборе → замени его в СТАРОМ:"
+echo "     python list_set_words.py  # покажет занятые слова"
+echo "     Выбери замену, которой нет ни в одном наборе."
+echo "  4. Снова запусти: python find_real_dupes.py"
+echo "  5. Только при «0 stolen words» — коммить."
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+exit 1
