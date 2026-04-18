@@ -96,10 +96,12 @@ fun StudyScreen(
     var searchQuery by remember { mutableStateOf("") }
     val displayedSets = remember(searchQuery, uiState.filteredSets) {
         if (searchQuery.isEmpty()) uiState.filteredSets
-        else uiState.filteredSets.filter {
-            it.name.contains(searchQuery, ignoreCase = true) ||
-            it.description.contains(searchQuery, ignoreCase = true)
-        }
+        else uiState.filteredSets
+            .filter {
+                it.name.contains(searchQuery, ignoreCase = true) ||
+                it.description.contains(searchQuery, ignoreCase = true)
+            }
+            .sortedWith(compareBy({ it.topic }, { it.level }, { it.id }))
     }
     OnResume { viewModel.refresh() }
 
