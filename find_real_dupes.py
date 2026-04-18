@@ -4,8 +4,9 @@
 Validates all WordData files against Room's insertion rules and quality rules.
 
 Blocking errors (exit 1) — staged files:
-  1. Stolen words within the SAME TOPIC (cross-topic duplicates are allowed).
-     Sets without a topic follow the old rule: any stealing is an error.
+  1. Stolen words: same (original, languagePair) in two sets where EITHER set is
+     staged. Cross-topic duplicates involving only pre-existing (non-staged) files
+     are shown as informational warnings — they are pre-existing technical debt.
   2. Wrong word count — every set must have exactly 25 words after DB simulation.
   3. Duplicate setId across files.
   4. SetId outside language block (he-ru 1001-1999, en-ru 1-999).
@@ -157,13 +158,16 @@ def parse_sets(kt_file):
 
 # ── Checks ─────────────────────────────────────────────────────────────────────
 
-def check_stolen_words(all_words, set_topic_map):
+def check_stolen_words(all_words, set_topic_map, staged_files=None):
     """
     Returns (errors, warnings).
     - error: same (original, lang) in two sets that share the same non-empty topic
     - error: same (original, lang) in two sets where either has no topic (old rule)
-    - warning: same (original, lang) in two sets with DIFFERENT non-empty topics (allowed)
+    - error: cross-topic duplicate where at least one file is staged (Room will
+             silently drop the earlier entry due to unique index on original+languagePair)
+    - warning: cross-topic duplicate where BOTH files are pre-existing (not staged)
     """
+    staged_files = staged_files or set()
     errors, warnings = [], []
     seen = {}  # (original, lang) -> word
     for w in all_words:
@@ -172,16 +176,18 @@ def check_stolen_words(all_words, set_topic_map):
             prev = seen[key]
             loser_topic = set_topic_map.get(prev["setId"], "")
             winner_topic = set_topic_map.get(w["setId"], "")
+            either_staged = prev["file"] in staged_files or w["file"] in staged_files
             entry = {
                 "original": w["original"],
                 "loser_set": prev["setId"], "loser_file": prev["file"],
                 "winner_set": w["setId"], "winner_file": w["file"],
                 "loser_topic": loser_topic, "winner_topic": winner_topic,
             }
-            if loser_topic and winner_topic and loser_topic != winner_topic:
-                warnings.append(entry)  # cross-topic: allowed
+            cross_topic = loser_topic and winner_topic and loser_topic != winner_topic
+            if cross_topic and not either_staged:
+                warnings.append(entry)  # pre-existing cross-topic debt: allowed
             else:
-                errors.append(entry)    # same topic or no topic: error
+                errors.append(entry)    # same topic, no topic, or involves staged file
             seen[key] = w
         else:
             seen[key] = w
@@ -470,9 +476,10 @@ def main():
 
     has_errors = False
 
-    # ── 1. Stolen words (topic-aware) ─────────────────────────────────────────
-    stolen_errors, stolen_warnings, final_db = check_stolen_words(all_words, set_topic_map)
-    print(f"=== 1. Украденные слова (внутри темы или без темы): {len(stolen_errors)} ===\n")
+    # ── 1. Stolen words (topic-aware, staged-aware) ───────────────────────────
+    stolen_errors, stolen_warnings, final_db = check_stolen_words(
+        all_words, set_topic_map, staged_files)
+    print(f"=== 1. Украденные слова (Room unique index): {len(stolen_errors)} ===\n")
     if stolen_errors:
         has_errors = True
         by_loser = defaultdict(list)
@@ -487,7 +494,7 @@ def main():
                 print(f"    '{e['original']}' → украдено набором {e['winner_set']}"
                       f" [{e['winner_file']}]{winner_topic}")
     else:
-        print("  ✅ Нет украденных слов внутри одной темы\n")
+        print("  ✅ Нет слов, конфликтующих с Room unique index\n")
 
     if stolen_warnings:
         print(f"  ℹ️  Кросс-тематические дубли (допустимы): {len(stolen_warnings)}")
