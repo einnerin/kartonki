@@ -205,15 +205,14 @@ def check_rarity_spread(words_for_sets):
     return issues
 
 
-def check_set_count(seen_db, set_names_map):
-    """Every set must have exactly 25 words in the simulated DB."""
+def check_set_count(all_words, set_names_map):
+    """Every set must have exactly 25 words (counts raw entries, not de-duped DB state)."""
     counts = defaultdict(int)
-    for w in seen_db.values():
-        counts[w["setId"]] += 1
+    for w in all_words:
+        if w["setId"] != 0:
+            counts[w["setId"]] += 1
     problems = {}
     for sid, cnt in counts.items():
-        if sid == 0:
-            continue  # achievement reward words
         if cnt != 25:
             problems[sid] = (cnt, set_names_map.get(sid, "?"))
     return problems
@@ -499,7 +498,7 @@ def main():
         print()
 
     # ── 2. Word count per set ─────────────────────────────────────────────────
-    count_problems = check_set_count(final_db, set_file_map)
+    count_problems = check_set_count(all_words, set_file_map)
     print(f"=== 2. Наборы ≠ 25 слов: {len(count_problems)} ===\n")
     if count_problems:
         has_errors = True
