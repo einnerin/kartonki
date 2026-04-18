@@ -358,7 +358,7 @@ abstract class AppDatabase : RoomDatabase() {
                         PRIMARY KEY (wordId, setId)
                     )
                 """)
-                db.execSQL("CREATE INDEX IF NOT EXISTS idx_wsm_setId ON word_set_membership(setId)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_word_set_membership_setId` ON `word_set_membership`(`setId`)")
                 db.execSQL("INSERT OR IGNORE INTO word_set_membership (wordId, setId) SELECT id, setId FROM words")
             }
         }
