@@ -2,6 +2,8 @@ package com.example.kartonki.data
 
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
+import com.example.kartonki.data.db.dao.WordSetMembershipDao
+import com.example.kartonki.data.db.entity.WordSetMembershipEntity
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -24,6 +26,7 @@ import javax.inject.Singleton
 class WordLoader @Inject constructor(
     private val wordSetDao: WordSetDao,
     private val wordDao: WordDao,
+    private val wordSetMembershipDao: WordSetMembershipDao,
     private val prefs: UserPreferencesRepository,
 ) {
     private val mutex = Mutex()
@@ -50,7 +53,7 @@ class WordLoader @Inject constructor(
         // Sync seed-controlled metadata (name, description, orderIndex) for all sets,
         // without touching user-owned fields like isFavorite.
         allSets.forEach { set ->
-            wordSetDao.updateSetMetadata(set.id, set.name, set.description, set.orderIndex)
+            wordSetDao.updateSetMetadata(set.id, set.name, set.description, set.orderIndex, set.topic, set.level)
         }
 
         // Restore any isFavorite flags that were saved before a migration wiped word_sets.
@@ -65,6 +68,11 @@ class WordLoader @Inject constructor(
             if (w.original in pvpOriginals) w.copy(isDefaultPvpCard = true) else w
         }
         wordsWithFlag.chunked(500).forEach { chunk -> wordDao.insertAllOrReplace(chunk) }
+
+        // Populate membership table from canonical setId
+        val memberships = allWords.map { WordSetMembershipEntity(it.id, it.setId) }
+        wordSetMembershipDao.deleteAll()
+        memberships.chunked(500).forEach { chunk -> wordSetMembershipDao.insertAll(chunk) }
 
         prefs.setWordDataVersion(WordDataVersion.CURRENT)
     }

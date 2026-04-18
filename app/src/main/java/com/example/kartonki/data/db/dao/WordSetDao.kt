@@ -69,8 +69,8 @@ interface WordSetDao {
     suspend fun insertSets(sets: List<WordSetEntity>)
 
     /** Updates only the seed-controlled fields, leaving user data (isFavorite) intact. */
-    @Query("UPDATE word_sets SET name = :name, description = :description, orderIndex = :orderIndex WHERE id = :id")
-    suspend fun updateSetMetadata(id: Long, name: String, description: String, orderIndex: Int)
+    @Query("UPDATE word_sets SET name = :name, description = :description, orderIndex = :orderIndex, topic = :topic, level = :level WHERE id = :id")
+    suspend fun updateSetMetadata(id: Long, name: String, description: String, orderIndex: Int, topic: String, level: Int)
 
     /**
      * Restores isFavorite=1 for any set whose ID was saved in retained_favorites.

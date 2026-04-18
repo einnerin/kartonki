@@ -12,6 +12,7 @@ import com.example.kartonki.data.db.dao.PvpMatchDao
 import com.example.kartonki.data.db.dao.StudyStreakDao
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
+import com.example.kartonki.data.db.dao.WordSetMembershipDao
 import com.example.kartonki.data.db.entity.AchievementEntity
 import com.example.kartonki.data.db.entity.CollectionEntity
 import com.example.kartonki.data.db.entity.DeckCardCrossRef
@@ -22,11 +23,13 @@ import com.example.kartonki.data.db.entity.RetainedFavoriteEntity
 import com.example.kartonki.data.db.entity.StudyStreakEntity
 import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.db.entity.WordSetEntity
+import com.example.kartonki.data.db.entity.WordSetMembershipEntity
 
 @Database(
     entities = [
         WordEntity::class,
         WordSetEntity::class,
+        WordSetMembershipEntity::class,
         CollectionEntity::class,
         DeckEntity::class,
         DeckCardCrossRef::class,
@@ -36,12 +39,13 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 36,
+    version = 37,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun wordDao(): WordDao
     abstract fun wordSetDao(): WordSetDao
+    abstract fun wordSetMembershipDao(): WordSetMembershipDao
     abstract fun collectionDao(): CollectionDao
     abstract fun deckDao(): DeckDao
     abstract fun progressDao(): ProgressDao
@@ -335,6 +339,27 @@ abstract class AppDatabase : RoomDatabase() {
                 db.execSQL("DELETE FROM deck_cards")
                 db.execSQL("DELETE FROM words")
                 db.execSQL("DELETE FROM word_sets")
+            }
+        }
+
+        /**
+         * Adds topic and level columns to word_sets.
+         * Creates the word_set_membership join table and populates it
+         * from the existing setId column on words.
+         */
+        val MIGRATION_36_37 = object : Migration(36, 37) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE word_sets ADD COLUMN topic TEXT NOT NULL DEFAULT ''")
+                db.execSQL("ALTER TABLE word_sets ADD COLUMN level INTEGER NOT NULL DEFAULT 0")
+                db.execSQL("""
+                    CREATE TABLE IF NOT EXISTS word_set_membership (
+                        wordId INTEGER NOT NULL,
+                        setId  INTEGER NOT NULL,
+                        PRIMARY KEY (wordId, setId)
+                    )
+                """)
+                db.execSQL("CREATE INDEX IF NOT EXISTS idx_wsm_setId ON word_set_membership(setId)")
+                db.execSQL("INSERT OR IGNORE INTO word_set_membership (wordId, setId) SELECT id, setId FROM words")
             }
         }
     }
