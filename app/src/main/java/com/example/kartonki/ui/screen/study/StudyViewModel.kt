@@ -26,6 +26,14 @@ data class WordSetUiItem(
     val introducedWords: Int,
     val rarity: Rarity = Rarity.COMMON,
     val isFavorite: Boolean = false,
+    val topic: String = "",
+    val level: Int = 0,
+)
+
+data class TopicGroup(
+    val topic: String,
+    val sets: List<WordSetUiItem>,
+    val isExpanded: Boolean = true,
 )
 
 data class StudyListUiState(
@@ -41,12 +49,26 @@ data class StudyListUiState(
     val filterVersion: Int = 0,
     /** 0 = all sets, 1 = favourites only. */
     val selectedTab: Int = 0,
+    val collapsedTopics: Set<String> = emptySet(),
 ) {
     val favoriteCount: Int get() = sets.count { it.isFavorite }
 
     val filteredSets: List<WordSetUiItem> get() {
         val base = if (selectedTab == 1) sets.filter { it.isFavorite } else sets
         return if (activeFilters.isEmpty()) base else base.filter { it.rarity in activeFilters }
+    }
+
+    fun groupedSets(activeFilters: Set<Rarity>): List<TopicGroup> {
+        val filtered = if (activeFilters.isEmpty()) sets else sets.filter { it.rarity in activeFilters }
+        val (withTopic, noTopic) = filtered.partition { it.topic.isNotEmpty() }
+        val groups = withTopic
+            .groupBy { it.topic }
+            .map { (topic, items) ->
+                TopicGroup(topic = topic, sets = items, isExpanded = topic !in collapsedTopics)
+            }
+            .sortedBy { it.topic }
+        return if (noTopic.isEmpty()) groups
+               else groups + listOf(TopicGroup(topic = "", sets = noTopic, isExpanded = "" !in collapsedTopics))
     }
 }
 
@@ -113,6 +135,16 @@ class StudyViewModel @Inject constructor(
         }
     }
 
+    fun toggleTopicExpanded(topic: String) {
+        _uiState.update { state ->
+            val collapsed = if (topic in state.collapsedTopics)
+                state.collapsedTopics - topic
+            else
+                state.collapsedTopics + topic
+            state.copy(collapsedTopics = collapsed)
+        }
+    }
+
     fun dismissProblemChipHint() {
         prefs.setProblemChipHintShown()
         _uiState.update { it.copy(showProblemChipHint = false) }
@@ -140,6 +172,8 @@ class StudyViewModel @Inject constructor(
                 introducedWords = introducedCounts[set.id] ?: 0,
                 rarity = rarity,
                 isFavorite = set.isFavorite,
+                topic = set.topic,
+                level = set.level,
             )
         }
         // Load problem word count and determine whether to show the first-time hint

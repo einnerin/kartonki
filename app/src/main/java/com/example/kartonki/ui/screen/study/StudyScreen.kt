@@ -34,6 +34,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.outlined.Star
@@ -246,12 +248,49 @@ fun StudyScreen(
                         contentPadding = PaddingValues(16.dp),
                         verticalArrangement = Arrangement.spacedBy(10.dp),
                     ) {
-                        items(displayedSets, key = { it.id }) { item ->
-                            WordSetCard(
-                                item = item,
-                                onClick = { onNavigateToSetDetail(item.id) },
-                                onToggleFavorite = { viewModel.toggleFavorite(item.id) },
-                            )
+                        val useGrouped = uiState.selectedTab == 0 && !searchActive
+                        if (!useGrouped) {
+                            items(displayedSets, key = { it.id }) { item ->
+                                WordSetCard(
+                                    item = item,
+                                    onClick = { onNavigateToSetDetail(item.id) },
+                                    onToggleFavorite = { viewModel.toggleFavorite(item.id) },
+                                )
+                            }
+                        } else {
+                            val grouped = uiState.groupedSets(uiState.activeFilters)
+                            val hasTopics = grouped.any { it.topic.isNotEmpty() }
+                            if (!hasTopics) {
+                                items(grouped.flatMap { it.sets }, key = { it.id }) { item ->
+                                    WordSetCard(
+                                        item = item,
+                                        onClick = { onNavigateToSetDetail(item.id) },
+                                        onToggleFavorite = { viewModel.toggleFavorite(item.id) },
+                                    )
+                                }
+                            } else {
+                                grouped.forEach { group ->
+                                    if (group.topic.isNotEmpty()) {
+                                        stickyHeader(key = "header_${group.topic}") {
+                                            TopicHeader(
+                                                topic = group.topic,
+                                                count = group.sets.size,
+                                                isExpanded = group.isExpanded,
+                                                onClick = { viewModel.toggleTopicExpanded(group.topic) },
+                                            )
+                                        }
+                                    }
+                                    if (group.isExpanded) {
+                                        items(group.sets, key = { it.id }) { item ->
+                                            WordSetCard(
+                                                item = item,
+                                                onClick = { onNavigateToSetDetail(item.id) },
+                                                onToggleFavorite = { viewModel.toggleFavorite(item.id) },
+                                            )
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -366,6 +405,46 @@ private fun FavoriteStarButton(isFavorite: Boolean, onClick: () -> Unit) {
             tint = starColor,
             modifier = Modifier.scale(scale),
         )
+    }
+}
+
+@Composable
+private fun TopicHeader(
+    topic: String,
+    count: Int,
+    isExpanded: Boolean,
+    onClick: () -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(BgDeep)
+            .clickable(onClick = onClick)
+            .padding(horizontal = 16.dp, vertical = 10.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.SpaceBetween,
+    ) {
+        Text(
+            text = topic,
+            style = MaterialTheme.typography.titleSmall,
+            fontWeight = FontWeight.Bold,
+            color = Color.White,
+        )
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(
+                text = "$count",
+                style = MaterialTheme.typography.labelSmall,
+                color = TextSecondary,
+            )
+            Icon(
+                imageVector = if (isExpanded) Icons.Filled.KeyboardArrowUp else Icons.Filled.KeyboardArrowDown,
+                contentDescription = if (isExpanded) "Свернуть" else "Развернуть",
+                tint = TextSecondary,
+            )
+        }
     }
 }
 
