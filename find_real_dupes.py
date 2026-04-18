@@ -3,22 +3,21 @@
 """
 Validates all WordData files against Room's insertion rules and quality rules.
 
-Blocking errors (exit 1):
-  1. Stolen words within the SAME TOPIC — word exists in two sets that share a
-     topic. Cross-topic duplicates are allowed (e.g. "doctor" in Medicine +
-     Hospital is fine). Sets without a topic field follow the old rule: any
-     stealing is an error.
+Blocking errors (exit 1) — staged files:
+  1. Stolen words within the SAME TOPIC (cross-topic duplicates are allowed).
+     Sets without a topic follow the old rule: any stealing is an error.
   2. Wrong word count — every set must have exactly 25 words after DB simulation.
-  3. Rarity spread in STAGED files — within a set, rarities must span ≤ 2
-     adjacent levels (e.g. RARE+EPIC ok, COMMON+EPIC not ok).
-  4. Duplicate setId — two different files declare the same setId.
-  5. SetId outside language block — he-ru must be 1001-1999, en-ru 1-999.
+  3. Duplicate setId across files.
+  4. SetId outside language block (he-ru 1001-1999, en-ru 1-999).
+  5. Rarity spread > 2 adjacent levels within a set.
+  6. Missing topic or level=0 in staged sets (both are required).
+  7. Derivative/same-root word pairs within the same staged set.
 
-Warnings (printed but never block):
-  6. Rarity spread in un-staged files (old data, fixed in Phase 3).
-  7. Word ID formula violation: id ≠ setId×100+position (staged files only).
-  8. Duplicate set names within the same languagePair.
-  9. Cross-topic duplicate words (info only — allowed by new rules).
+Warnings (never block):
+  8. Rarity spread in non-staged files (old data, fixed in Phase 3).
+  9. Word ID formula violation (staged files only).
+ 10. Duplicate set names within same languagePair (staged files only).
+ 11. Description contains CEFR level notation (A1/B1 etc) — use rarity colour instead.
 
 Registry order is derived automatically from WordRegistry.kt allWords.
 """
@@ -121,11 +120,13 @@ def parse_sets(kt_file):
         name = extract_field(block, 'name')
         lang = extract_field(block, 'languagePair')
         topic = extract_field(block, 'topic') or ""
+        description = extract_field(block, 'description') or ""
         level_m = re.search(r'\blevel\s*=\s*(\d+)', block)
         level = int(level_m.group(1)) if level_m else 0
         if sid and name and lang:
             sets.append({"id": sid, "name": name, "lang": lang,
-                         "topic": topic, "level": level, "file": kt_file.name})
+                         "topic": topic, "level": level,
+                         "description": description, "file": kt_file.name})
     return sets
 
 
@@ -245,6 +246,91 @@ def check_duplicate_names(all_sets):
     return errors
 
 
+def check_topic_level_required(all_sets, staged_files):
+    """Every set in staged files must have topic filled and level 1/2/3."""
+    errors = []
+    for s in all_sets:
+        if s["file"] not in staged_files:
+            continue
+        if not s["topic"]:
+            errors.append(f"  Set {s['id']} '{s['name']}' [{s['file']}]: "
+                          f"поле topic пустое (обязательно)")
+        if s["level"] not in (1, 2, 3):
+            errors.append(f"  Set {s['id']} '{s['name']}' [{s['file']}]: "
+                          f"level={s['level']} — должен быть 1 (основы), 2 (продвинутый) или 3 (профессиональный)")
+    return errors
+
+
+def _normalize(s):
+    """Strip Hebrew niqqud and lowercase for root comparison."""
+    return re.sub(r'[\u05B0-\u05C7\u05F3\u05F4]', '', s).strip().lower()
+
+
+def _is_derivative(w1, w2):
+    """
+    Returns True if w1 and w2 look like derivatives of the same root.
+    Works for both Hebrew (prefix-share on niqqud-stripped forms) and
+    Latin scripts (prefix + common suffix stripping).
+    """
+    n1 = _normalize(w1).split()[0]
+    n2 = _normalize(w2).split()[0]
+    if n1 == n2 or len(n1) < 3 or len(n2) < 3:
+        return False
+    # Shared prefix length (consecutive chars)
+    plen = 0
+    for a, b in zip(n1, n2):
+        if a == b:
+            plen += 1
+        else:
+            break
+    min_len = min(len(n1), len(n2))
+    if plen >= 3 and plen >= min_len * 0.75:
+        return True
+    # Latin suffix stripping (covers English sets)
+    suffixes = ["ing", "ed", "er", "tion", "sion", "ness", "ment",
+                "ity", "ive", "ful", "less", "able", "ible", "ly", "al"]
+    for suffix in suffixes:
+        for longer, shorter in [(n1, n2), (n2, n1)]:
+            if longer.endswith(suffix) and len(longer) - len(suffix) >= 3:
+                stem = longer[:-len(suffix)]
+                if shorter == stem or shorter.startswith(stem):
+                    return True
+    return False
+
+
+def check_derivatives_in_sets(all_words, staged_files):
+    """Within each staged set, flag pairs of words that share a root."""
+    errors = []
+    by_set = defaultdict(list)
+    for w in all_words:
+        if w["file"] in staged_files:
+            by_set[(w["setId"], w["file"])].append(w["original"])
+    for (sid, fname), originals in sorted(by_set.items()):
+        pairs = []
+        for i in range(len(originals)):
+            for j in range(i + 1, len(originals)):
+                if _is_derivative(originals[i], originals[j]):
+                    pairs.append((originals[i], originals[j]))
+        if pairs:
+            errors.append(f"  Set {sid} [{fname}]: однокоренные пары:")
+            for a, b in pairs:
+                errors.append(f"    '{a}'  ←→  '{b}'")
+    return errors
+
+
+def check_description_cefr(all_sets, staged_files):
+    """Warn if staged set descriptions mention A1/B1/etc — rarity colour is enough."""
+    cefr = re.compile(r'\b(A1|A2|B1|B2|C1|C2)\b')
+    warnings = []
+    for s in all_sets:
+        if s["file"] not in staged_files:
+            continue
+        if cefr.search(s["description"]):
+            warnings.append(f"  Set {s['id']} '{s['name']}': описание содержит CEFR "
+                            f"«{s['description']}» — убери, достаточно цвета карточки")
+    return warnings
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
@@ -353,6 +439,30 @@ def main():
         else:
             print("=== 5. Разброс редкости: ✅ нет проблем ===\n")
 
+    # ── 6. topic + level required (staged) ───────────────────────────────────
+    if staged_files:
+        tl_errors = check_topic_level_required(all_sets, staged_files)
+        print(f"=== 6. Обязательные поля topic/level в staged файлах: {len(tl_errors)} ===\n")
+        if tl_errors:
+            has_errors = True
+            for e in tl_errors:
+                print(e)
+            print()
+        else:
+            print("  ✅ Все staged наборы имеют topic и level\n")
+
+    # ── 7. Derivative word pairs (staged) ────────────────────────────────────
+    if staged_files:
+        deriv_errors = check_derivatives_in_sets(all_words, staged_files)
+        print(f"=== 7. Однокоренные слова в staged наборах: {len(deriv_errors)} наборов ===\n")
+        if deriv_errors:
+            has_errors = True
+            for e in deriv_errors:
+                print(e)
+            print()
+        else:
+            print("  ✅ Однокоренных пар не найдено\n")
+
     # ── Warnings (never block) ────────────────────────────────────────────────
     if staged_files:
         id_errors = check_id_formula(all_words)
@@ -369,6 +479,13 @@ def main():
             print(f"=== ⚠️  Дублирующиеся имена в staged файлах: {len(name_staged)} ===\n")
             for e in name_staged:
                 print(e)
+            print()
+
+        cefr_warnings = check_description_cefr(all_sets, staged_files)
+        if cefr_warnings:
+            print(f"=== ⚠️  CEFR в описаниях staged наборов: {len(cefr_warnings)} ===\n")
+            for w in cefr_warnings:
+                print(w)
             print()
 
     # ── Result ────────────────────────────────────────────────────────────────
