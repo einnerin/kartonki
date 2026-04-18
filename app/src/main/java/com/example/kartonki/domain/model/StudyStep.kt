@@ -7,7 +7,6 @@ enum class StudyQuizType {
     MULTIPLE_CHOICE_WORD_FROM_DEF,            // show foreign definition → pick correct word
     MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE,     // show native definition  → pick correct word
     FILL_IN_BLANK,                            // foreign sentence with blank → pick correct word
-    FILL_IN_BLANK_NATIVE,                     // native sentence with blank  → pick correct word
 }
 
 sealed class StudyStep {

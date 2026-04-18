@@ -59,12 +59,8 @@ object QuizBuilder {
         }
 
         if ("fill_blank" in enabledTypes) {
-            val fbForeign = fillBlankMode == "foreign" || fillBlankMode == "both"
-            val fbNative  = fillBlankMode == "native"  || fillBlankMode == "both"
-            if (fbForeign && word.example != null && allWords.size >= 4)
+            if (word.example != null && allWords.size >= 4)
                 available.add(StudyQuizType.FILL_IN_BLANK)
-            if (fbNative && word.exampleNative != null && allWords.size >= 4)
-                available.add(StudyQuizType.FILL_IN_BLANK_NATIVE)
         }
 
         return if (available.isEmpty()) StudyQuizType.MULTIPLE_CHOICE_TRANSLATION else available.random()
@@ -117,18 +113,6 @@ object QuizBuilder {
                 val raw = word.example!!
                 val sentence = raw.replace(word.original, "_____", ignoreCase = true)
                 // If the word doesn't appear in the sentence, the blank cannot be created → fallback
-                if (sentence == raw) return fallbackTranslation(word, distractorPool)
-                val wrongs = others.take(3).map { it.original }
-                if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
-                StudyStep.Quiz(word = word, type = type, question = sentence,
-                    options = (wrongs + word.original).shuffled(),
-                    correctAnswer = word.original)
-            }
-            StudyQuizType.FILL_IN_BLANK_NATIVE -> {
-                val raw = word.exampleNative!!
-                val sentence = raw.replace(word.original, "_____", ignoreCase = true)
-                // Design: native examples embed the foreign word directly (e.g. "Я вижу dog здесь.")
-                // If the word is absent, fall back gracefully
                 if (sentence == raw) return fallbackTranslation(word, distractorPool)
                 val wrongs = others.take(3).map { it.original }
                 if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)

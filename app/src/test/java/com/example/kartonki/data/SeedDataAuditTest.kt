@@ -63,14 +63,6 @@ class SeedDataAuditTest {
     // EN-NATIVE — native content inlined directly into WordDataEnglish
     // ══════════════════════════════════════════════════════════════════════════
 
-    @Test fun `EN-NATIVE — exampleNative sentences embed the English word`() {
-        fail("English FILL_IN_BLANK_NATIVE broken — English word absent from Russian example",
-            WordDataEnglish.words.filter { w ->
-                w.exampleNative != null && !w.exampleNative.contains(w.original, ignoreCase = true)
-            }.map { w -> "Set ${w.setId} '${w.original}': '${w.exampleNative}'" }
-        )
-    }
-
     // ══════════════════════════════════════════════════════════════════════════
     // HEBREW WORDS
     // ══════════════════════════════════════════════════════════════════════════
@@ -103,18 +95,6 @@ class SeedDataAuditTest {
             allHebrew.filter { w ->
                 w.example != null && !w.example.contains(w.original)
             }.map { w -> "Set ${w.setId} '${w.original}': '${w.example}'" }
-        )
-    }
-
-    @Test fun `HE — FILL_IN_BLANK_NATIVE Russian examples embed the Hebrew word`() {
-        val allHebrew = WordDataHebrew.words +
-                WordDataHebrewEveryday.words +
-                WordDataHebrewMore.words +
-                WordDataHebrewAdvanced.words
-        fail("Hebrew FILL_IN_BLANK_NATIVE broken — Hebrew word absent from Russian example",
-            allHebrew.filter { w ->
-                w.exampleNative != null && !w.exampleNative.contains(w.original)
-            }.map { w -> "Set ${w.setId} '${w.original}': '${w.exampleNative}'" }
         )
     }
 

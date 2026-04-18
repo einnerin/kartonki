@@ -174,7 +174,6 @@ internal fun QuizContent(
             StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF        -> s.studyQWordFromDef
             StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE -> s.studyQWordFromDefNative
             StudyQuizType.FILL_IN_BLANK                        -> s.studyQFillBlank
-            StudyQuizType.FILL_IN_BLANK_NATIVE                 -> s.studyQFillBlankNative
         }
         Text(
             text = label,
@@ -186,7 +185,7 @@ internal fun QuizContent(
         // Question is RTL for all types where the question text is primarily Hebrew:
         // translation (word.original), definition (word.original or word.definition),
         // word-from-def (word.definition), fill-in-blank (word.example).
-        // Excluded: DEFINITION_NATIVE (question = Russian), WORD_FROM_DEF_NATIVE (Russian), FILL_IN_BLANK_NATIVE (Russian primary).
+        // Excluded: DEFINITION_NATIVE (question = Russian), WORD_FROM_DEF_NATIVE (Russian).
         val isHebrewQuestionRtl = isHebrew && step.type in setOf(
             StudyQuizType.MULTIPLE_CHOICE_TRANSLATION,
             StudyQuizType.MULTIPLE_CHOICE_DEFINITION,
@@ -200,7 +199,6 @@ internal fun QuizContent(
             StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF,
             StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE,
             StudyQuizType.FILL_IN_BLANK,
-            StudyQuizType.FILL_IN_BLANK_NATIVE,
         )
         Surface(
             color = MaterialTheme.colorScheme.surfaceVariant,

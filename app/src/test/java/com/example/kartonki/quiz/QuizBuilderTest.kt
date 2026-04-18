@@ -80,14 +80,6 @@ class QuizBuilderTest {
         }
     }
 
-    @Test fun `correct answer always present in options - FILL_IN_BLANK_NATIVE`() {
-        fullWords.forEach { word ->
-            val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK_NATIVE, fullWords)
-            assertTrue("Correct answer '${step.correctAnswer}' not in options",
-                step.options.any { it.equals(step.correctAnswer, ignoreCase = true) })
-        }
-    }
-
     // ── Invariant: exactly 4 options ──────────────────────────────────────────
 
     @Test fun `options always have exactly 4 items for all quiz types`() {
@@ -110,14 +102,6 @@ class QuizBuilderTest {
         }
     }
 
-    @Test fun `FILL_IN_BLANK_NATIVE question contains blank marker`() {
-        val step = QuizBuilder.buildQuizStep(fullWords[0], StudyQuizType.FILL_IN_BLANK_NATIVE, fullWords)
-        if (step.type == StudyQuizType.FILL_IN_BLANK_NATIVE) {
-            assertTrue("FILL_IN_BLANK_NATIVE question has no blank: '${step.question}'",
-                step.question.contains("_____"))
-        }
-    }
-
     @Test fun `FILL_IN_BLANK sentence differs from original example`() {
         val word = makeWord(99, original = "apple", example = "I ate an apple today.")
         val allWords = listOf(word) + (1L..6L).map { makeWord(it) }
@@ -132,14 +116,6 @@ class QuizBuilderTest {
         val allWords = listOf(word) + (1L..6L).map { makeWord(it) }
         val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, allWords)
         assertEquals("Expected fallback to MULTIPLE_CHOICE_TRANSLATION when word absent from sentence",
-            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION, step.type)
-    }
-
-    @Test fun `word absent from native sentence triggers fallback`() {
-        val word = makeWord(99, original = "apple", exampleNative = "Я съел фрукт.")  // "apple" not in sentence
-        val allWords = listOf(word) + (1L..6L).map { makeWord(it) }
-        val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK_NATIVE, allWords)
-        assertEquals("Expected fallback when word absent from native sentence",
             StudyQuizType.MULTIPLE_CHOICE_TRANSLATION, step.type)
     }
 
@@ -246,22 +222,6 @@ class QuizBuilderTest {
         assertFalse(StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF in types)
     }
 
-    @Test fun `fill blank mode foreign excludes native fill-in-blank`() {
-        val word = fullWords.first()
-        val types = (1..500).map {
-            QuizBuilder.pickQuizType(word, fullWords, fillBlankMode = "foreign")
-        }.toSet()
-        assertFalse(StudyQuizType.FILL_IN_BLANK_NATIVE in types)
-    }
-
-    @Test fun `fill blank mode native excludes foreign fill-in-blank`() {
-        val word = fullWords.first()
-        val types = (1..500).map {
-            QuizBuilder.pickQuizType(word, fullWords, fillBlankMode = "native")
-        }.toSet()
-        assertFalse(StudyQuizType.FILL_IN_BLANK in types)
-    }
-
     @Test fun `word with no definition cannot get definition quiz types`() {
         val noDefWord = makeWord(1, definition = null, definitionNative = null)
         val allWords  = listOf(noDefWord) + (2L..20L).map { makeWord(it) }
@@ -277,7 +237,6 @@ class QuizBuilderTest {
         val allWords = listOf(noExWord) + (2L..20L).map { makeWord(it) }
         val types = (1..500).map { QuizBuilder.pickQuizType(noExWord, allWords) }.toSet()
         assertFalse(StudyQuizType.FILL_IN_BLANK in types)
-        assertFalse(StudyQuizType.FILL_IN_BLANK_NATIVE in types)
     }
 
     // ── Fallback behaviour ────────────────────────────────────────────────────
