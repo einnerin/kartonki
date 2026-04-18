@@ -15,7 +15,7 @@ object WordDataHebrewBatch12 {
             level = 2),
         WordSetEntity(id = 1060, name = "Технологии: профессиональный 3",  description = "Профессиональная лексика разработчика",      languagePair = "he-ru", orderIndex = 60,
             topic = "Технологии",
-            level = 3),
+            level = 4),
         WordSetEntity(id = 1061, name = "Медицина: основы",     description = "Базовая медицинская лексика",                languagePair = "he-ru", orderIndex = 61,
             topic = "Медицина",
             level = 1),

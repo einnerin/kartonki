@@ -11,7 +11,7 @@ object WordDataHebrewBatch31 {
             name = "Работа и карьера: профессиональный", description = "Производство, логистика и промышленные технологии"
         ,
             topic = "Работа и карьера",
-            level = 3),
+            level = 4),
         WordSetEntity(
             id = 1116, languagePair = "he-ru", orderIndex = 1116,
             name = "Армия: продвинутый 2", description = "Армия, стратегия и военные операции"

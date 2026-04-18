@@ -15,7 +15,7 @@ object WordDataHebrewImmigrant9 {
         WordSetEntity(id = 1162, languagePair = "he-ru", name = "Дом и быт: продвинутый 2", description = "Аренда жилья, договоры и обязанности", orderIndex = 162,
             topic = "Дом и быт",
             level = 2),
-        WordSetEntity(id = 1163, languagePair = "he-ru", name = "Семья: продвинутый 4", description = "Родственники, семейные роли и отношения", orderIndex = 163,
+        WordSetEntity(id = 1163, languagePair = "he-ru", name = "Семья: продвинутый 3", description = "Родственники, семейные роли и отношения", orderIndex = 163,
             topic = "Семья",
             level = 2),
         WordSetEntity(id = 1164, languagePair = "he-ru", name = "Медицина: продвинутый 4", description = "Части тела и органы", orderIndex = 164,

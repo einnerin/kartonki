@@ -11,14 +11,14 @@ object WordDataHebrewBatch22 {
             name = "Медицина: профессиональный",
             description = "Специалисты, процедуры и медицинские дисциплины",
             topic = "Медицина",
-            level = 3
+            level = 4
         ),
         WordSetEntity(
             id = 1089, languagePair = "he-ru", orderIndex = 1089,
             name = "Право: профессиональный",
             description = "Судебная система, процессы и правовые теории",
             topic = "Право",
-            level = 3
+            level = 4
         ),
         WordSetEntity(
             id = 1090, languagePair = "he-ru", orderIndex = 1090,

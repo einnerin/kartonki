@@ -23,7 +23,7 @@ object WordDataHebrewBatch27 {
             name = "Наука: профессиональный", description = "Мозг, нейроны и когнитивные процессы"
         ,
             topic = "Наука",
-            level = 3),
+            level = 4),
     )
 
     val words: List<WordEntity> = listOf(

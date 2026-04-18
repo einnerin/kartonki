@@ -11,7 +11,7 @@ object WordDataHebrewBatch23 {
             name = "Финансы: профессиональный",
             description = "Макро- и микроэкономика, рынки и теории",
             topic = "Финансы",
-            level = 3
+            level = 4
         ),
         WordSetEntity(
             id = 1092, languagePair = "he-ru", orderIndex = 1092,
@@ -25,7 +25,7 @@ object WordDataHebrewBatch23 {
             name = "Природа и экология: профессиональный",
             description = "Изменение климата, экополитика и решения",
             topic = "Природа и экология",
-            level = 3
+            level = 4
         ),
     )
 

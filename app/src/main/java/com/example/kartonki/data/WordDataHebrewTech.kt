@@ -18,7 +18,7 @@ object WordDataHebrewTech {
             level = 2),
         WordSetEntity(id = 1021, name = "Технологии: профессиональный 2",      description = "Атаки, защита и криптография",      languagePair = "he-ru", orderIndex = 21,
             topic = "Технологии",
-            level = 3),
+            level = 4),
     )
 
     val words = listOf(

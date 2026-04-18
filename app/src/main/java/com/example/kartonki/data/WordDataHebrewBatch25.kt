@@ -25,7 +25,7 @@ object WordDataHebrewBatch25 {
             name = "Технологии: профессиональный 4",
             description = "Атаки, защита и киберугрозы",
             topic = "Технологии",
-            level = 3
+            level = 4
         ),
     )
 

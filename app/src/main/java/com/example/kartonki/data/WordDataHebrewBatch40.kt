@@ -10,7 +10,7 @@ object WordDataHebrewBatch40 {
             name = "Наука: профессиональный 3",
             description = "Стратификация, нормы, культурная теория",
             topic = "Наука",
-            level = 3),
+            level = 4),
         WordSetEntity(id = 1209, languagePair = "he-ru", orderIndex = 1209,
             name = "Психология: продвинутый 2",
             description = "Память, внимание, мышление, искажения",
@@ -20,12 +20,12 @@ object WordDataHebrewBatch40 {
             name = "Наука: профессиональный 4",
             description = "Нейроны, синапсы, функции мозга",
             topic = "Наука",
-            level = 3),
+            level = 4),
         WordSetEntity(id = 1211, languagePair = "he-ru", orderIndex = 1211,
             name = "Наука: профессиональный 5",
             description = "ДНК, мутации, молекулярная биология",
             topic = "Наука",
-            level = 3),
+            level = 4),
     )
 
     val words: List<WordEntity> = listOf(

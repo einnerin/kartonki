@@ -25,7 +25,7 @@ object WordDataHebrewBatch21 {
             name = "Психология: профессиональный",
             description = "Психоанализ, когниция и защитные механизмы",
             topic = "Психология",
-            level = 3
+            level = 4
         ),
     )
 

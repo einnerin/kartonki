@@ -17,13 +17,13 @@ object WordDataHebrewBatch28 {
             name = "Наука: профессиональный 2", description = "Генная инженерия, клетки и биопроцессы"
         ,
             topic = "Наука",
-            level = 3),
+            level = 4),
         WordSetEntity(
             id = 1108, languagePair = "he-ru", orderIndex = 1108,
             name = "Технологии: профессиональный 5", description = "Кубиты, алгоритмы и квантовые системы"
         ,
             topic = "Технологии",
-            level = 3),
+            level = 4),
     )
 
     val words: List<WordEntity> = listOf(

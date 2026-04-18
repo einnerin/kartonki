@@ -293,7 +293,7 @@ def check_duplicate_names(all_sets):
 
 
 def check_topic_level_required(all_sets, staged_files):
-    """Every set in staged files must have topic filled and level 1/2/3."""
+    """Every set in staged files must have topic filled and level 1–5."""
     errors = []
     for s in all_sets:
         if s["file"] not in staged_files:
@@ -301,9 +301,9 @@ def check_topic_level_required(all_sets, staged_files):
         if not s["topic"]:
             errors.append(f"  Set {s['id']} '{s['name']}' [{s['file']}]: "
                           f"поле topic пустое (обязательно)")
-        if s["level"] not in (1, 2, 3):
+        if s["level"] not in (1, 2, 3, 4, 5):
             errors.append(f"  Set {s['id']} '{s['name']}' [{s['file']}]: "
-                          f"level={s['level']} — должен быть 1 (основы), 2 (продвинутый) или 3 (профессиональный)")
+                          f"level={s['level']} — должен быть 1–5 (основы/продвинутый/углублённый/профессиональный/носитель языка)")
     return errors
 
 
@@ -364,7 +364,7 @@ def check_derivatives_in_sets(all_words, staged_files):
     return errors
 
 
-LEVEL_KEYWORDS = {1: "основ", 2: "продвинут", 3: "профессионал"}
+LEVEL_KEYWORDS = {1: "основ", 2: "продвинут", 3: "углублён", 4: "профессионал", 5: "носитель"}
 
 
 def check_name_consistency(all_sets, staged_files):
@@ -395,7 +395,7 @@ def check_name_consistency(all_sets, staged_files):
         # Level keyword must match
         keyword = LEVEL_KEYWORDS.get(level, "")
         if keyword and keyword not in name.lower():
-            expected = {1: "основы", 2: "продвинутый", 3: "профессиональный"}
+            expected = {1: "основы", 2: "продвинутый", 3: "углублённый", 4: "профессиональный", 5: "носитель языка"}
             errors.append(
                 f"  Set {s['id']} [{s['file']}]: name='{name}' но level={level} "
                 f"— ожидается слово «{expected[level]}» в названии"
@@ -441,14 +441,17 @@ def check_name_consistency(all_sets, staged_files):
     return errors
 
 
-def check_transliteration_missing(all_words, staged_files):
-    """Warn if staged he-ru words are missing transliteration."""
+def check_transliteration_missing(all_words, staged_files, new_set_ids=None):
+    """Warn if NEW he-ru words (in new sets only) are missing transliteration."""
+    new_set_ids = new_set_ids or set()
     warnings = []
     for w in all_words:
         if w["lang"] != "he-ru":
             continue
         if w["file"] not in staged_files:
             continue
+        if w["setId"] not in new_set_ids:
+            continue  # skip words in pre-existing sets
         if not w.get("has_translit"):
             warnings.append(f"  Word {w['id']} '{w['original']}' [set {w['setId']}, "
                             f"{w['file']}]: нет transliteration")
@@ -666,7 +669,7 @@ def main():
                 print(w)
             print()
 
-        translit_warnings = check_transliteration_missing(all_words, staged_files)
+        translit_warnings = check_transliteration_missing(all_words, staged_files, new_set_ids)
         if translit_warnings:
             print(f"=== ⚠️  Нет transliteration в staged he-ru словах: "
                   f"{len(translit_warnings)} ===\n")

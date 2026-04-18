@@ -15,7 +15,7 @@ object WordDataHebrew {
             level = 2),
         WordSetEntity(id = 1003, name = "Технологии: профессиональный",          description = "Продвинутая терминология",        orderIndex = 2, languagePair = "he-ru",
             topic = "Технологии",
-            level = 3),
+            level = 4),
     )
 
     val words: List<WordEntity> get() = set1() + set2() + set3()
