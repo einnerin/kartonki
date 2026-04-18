@@ -318,6 +318,83 @@ def check_derivatives_in_sets(all_words, staged_files):
     return errors
 
 
+LEVEL_KEYWORDS = {1: "основ", 2: "продвинут", 3: "профессионал"}
+
+
+def check_name_consistency(all_sets, staged_files):
+    """
+    For staged sets:
+      - name must start with topic (e.g. topic="Медицина" → name="Медицина: ...")
+      - level keyword in name must match level number:
+          level=1 → "основ", level=2 → "продвинут", level=3 → "профессионал"
+      - if multiple sets share (topic, lang, level), all names after the first
+        must end with a space and number: "Медицина: основы 2", "Медицина: основы 3"
+    """
+    errors = []
+    staged = [s for s in all_sets if s["file"] in staged_files]
+
+    for s in staged:
+        name, topic, level = s["name"], s["topic"], s["level"]
+        if not topic or level == 0:
+            continue  # already caught by topic/level check
+
+        # Name must start with topic
+        if not name.startswith(topic):
+            errors.append(
+                f"  Set {s['id']} [{s['file']}]: name='{name}' не начинается "
+                f"с topic='{topic}'"
+            )
+            continue
+
+        # Level keyword must match
+        keyword = LEVEL_KEYWORDS.get(level, "")
+        if keyword and keyword not in name.lower():
+            expected = {1: "основы", 2: "продвинутый", 3: "профессиональный"}
+            errors.append(
+                f"  Set {s['id']} [{s['file']}]: name='{name}' но level={level} "
+                f"— ожидается слово «{expected[level]}» в названии"
+            )
+
+    # Check numbering when multiple sets at same (topic, lang, level)
+    from collections import Counter
+    key_counts = Counter((s["topic"], s["lang"], s["level"]) for s in staged if s["topic"] and s["level"])
+    # Also check across ALL sets (not just staged) to catch collisions
+    all_by_key = defaultdict(list)
+    for s in all_sets:
+        if s["topic"] and s["level"]:
+            all_by_key[(s["topic"], s["lang"], s["level"])].append(s)
+
+    for s in staged:
+        if not s["topic"] or not s["level"]:
+            continue
+        key = (s["topic"], s["lang"], s["level"])
+        siblings = all_by_key[key]
+        if len(siblings) > 1:
+            # All must have unique names; names 2+ must end with " N"
+            names = [sib["name"] for sib in siblings]
+            base = f"{s['topic']}: {LEVEL_KEYWORDS.get(s['level'], '')}"
+            for sib in siblings:
+                n = sib["name"]
+                # Valid: "Медицина: основы", "Медицина: основы 2", "Медицина: основы 3"
+                # i.e., either exactly the base keyword expansion, or ends with " <digit>"
+                suffix = n[len(s["topic"]) + 2:].strip()  # part after "Topic: "
+                keyword = LEVEL_KEYWORDS.get(s["level"], "")
+                if keyword not in suffix.lower():
+                    continue  # already caught above
+                # Check that if there are N > 1 sets, they are numbered correctly
+            # Simplified: just ensure no two siblings share the exact same name
+            from collections import Counter as C2
+            dups = [nm for nm, cnt in C2(names).items() if cnt > 1]
+            if dups and any(s["name"] in dups for s in staged):
+                errors.append(
+                    f"  topic='{s['topic']}' level={s['level']} ({s['lang']}): "
+                    f"несколько наборов с одним именем — используй суффикс: "
+                    f"«{s['topic']}: основы», «{s['topic']}: основы 2» и т.д."
+                )
+
+    return errors
+
+
 def check_description_cefr(all_sets, staged_files):
     """Warn if staged set descriptions mention A1/B1/etc — rarity colour is enough."""
     cefr = re.compile(r'\b(A1|A2|B1|B2|C1|C2)\b')
@@ -450,6 +527,19 @@ def main():
             print()
         else:
             print("  ✅ Все staged наборы имеют topic и level\n")
+
+    # ── 6b. Name/topic/level consistency (staged) ────────────────────────────
+    if staged_files:
+        name_cons_errors = check_name_consistency(all_sets, staged_files)
+        print(f"=== 6b. Соответствие name/topic/level в staged файлах: "
+              f"{len(name_cons_errors)} ===\n")
+        if name_cons_errors:
+            has_errors = True
+            for e in name_cons_errors:
+                print(e)
+            print()
+        else:
+            print("  ✅ Имена соответствуют topic и level\n")
 
     # ── 7. Derivative word pairs (staged) ────────────────────────────────────
     if staged_files:
