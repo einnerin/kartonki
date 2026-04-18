@@ -62,19 +62,27 @@ def _get_new_set_ids(staged_files):
     got metadata updates (topic/level/name) without new word content.
     """
     new_ids = set()
+    removed_ids = set()
     if not staged_files:
         return new_ids
     try:
         r = subprocess.run(["git", "diff", "--cached"],
                            capture_output=True, text=True, timeout=10)
         for line in r.stdout.splitlines():
-            if line.startswith('+') and not line.startswith('+++'):
-                m = re.search(r'WordSetEntity\([^)]*\bid\s*=\s*(\d+)', line)
-                if m:
-                    new_ids.add(int(m.group(1)))
+            if line.startswith('+++') or line.startswith('---'):
+                continue
+            m = re.search(r'WordSetEntity\([^)]*\bid\s*=\s*(\d+)', line)
+            if not m:
+                continue
+            sid = int(m.group(1))
+            if line.startswith('+'):
+                new_ids.add(sid)
+            elif line.startswith('-'):
+                removed_ids.add(sid)
     except Exception:
         pass
-    return new_ids
+    # setIds present in both +/- are modifications, not additions
+    return new_ids - removed_ids
 
 
 def extract_field(block, field_name):

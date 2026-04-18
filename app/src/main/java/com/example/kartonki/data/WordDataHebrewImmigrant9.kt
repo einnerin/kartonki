@@ -6,12 +6,24 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant9 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1160, languagePair = "he-ru", name = "Кухня и готовка", description = "Посуда, приборы, приготовление еды", orderIndex = 160),
-        WordSetEntity(id = 1161, languagePair = "he-ru", name = "Работа", description = "Трудоустройство и рабочее место", orderIndex = 161),
-        WordSetEntity(id = 1162, languagePair = "he-ru", name = "Аренда жилья", description = "Снять квартиру и жить в ней", orderIndex = 162),
-        WordSetEntity(id = 1163, languagePair = "he-ru", name = "Семья", description = "Родственники и отношения", orderIndex = 163),
-        WordSetEntity(id = 1164, languagePair = "he-ru", name = "Тело и здоровье", description = "Части тела и органы", orderIndex = 164),
-        WordSetEntity(id = 1165, languagePair = "he-ru", name = "Путешествия", description = "Аэропорт, перелёты, документы", orderIndex = 165),
+        WordSetEntity(id = 1160, languagePair = "he-ru", name = "Еда и кулинария: продвинутый", description = "Посуда, приборы и приготовление еды", orderIndex = 160,
+            topic = "Еда и кулинария",
+            level = 2),
+        WordSetEntity(id = 1161, languagePair = "he-ru", name = "Работа и карьера: продвинутый 4", description = "Трудоустройство и рабочее место", orderIndex = 161,
+            topic = "Работа и карьера",
+            level = 2),
+        WordSetEntity(id = 1162, languagePair = "he-ru", name = "Дом и быт: продвинутый 2", description = "Аренда жилья, договоры и обязанности", orderIndex = 162,
+            topic = "Дом и быт",
+            level = 2),
+        WordSetEntity(id = 1163, languagePair = "he-ru", name = "Семья: продвинутый 4", description = "Родственники, семейные роли и отношения", orderIndex = 163,
+            topic = "Семья",
+            level = 2),
+        WordSetEntity(id = 1164, languagePair = "he-ru", name = "Медицина: продвинутый 4", description = "Части тела и органы", orderIndex = 164,
+            topic = "Медицина",
+            level = 2),
+        WordSetEntity(id = 1165, languagePair = "he-ru", name = "Путешествия: продвинутый", description = "Аэропорт, отели, туризм и документы", orderIndex = 165,
+            topic = "Путешествия",
+            level = 2),
     )
 
     val words: List<WordEntity> = listOf(
