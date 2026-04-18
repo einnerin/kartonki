@@ -242,7 +242,7 @@ class PvpGameViewModel @Inject constructor(
         _uiState.update { it.copy(timeRemaining = PvpGameLogic.TIMER_DURATION) }
         timerJob = viewModelScope.launch {
             for (i in PvpGameLogic.TIMER_DURATION downTo 1) {
-                delay(1000)
+                delay(PvpGameLogic.TIMER_TICK_MS)
                 _uiState.update { it.copy(timeRemaining = i - 1) }
                 if (i == 1) handleTimerExpired()
             }
@@ -303,7 +303,7 @@ class PvpGameViewModel @Inject constructor(
                             )
                         }
                         viewModelScope.launch {
-                            delay(800)
+                            delay(PvpGameLogic.WRONG_ANSWER_DELAY_MS)
                             onConfirmAnswer()
                         }
                     }

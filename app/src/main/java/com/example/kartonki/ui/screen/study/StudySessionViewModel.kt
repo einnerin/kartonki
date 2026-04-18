@@ -11,13 +11,11 @@ import com.example.kartonki.data.repository.ProgressRepository
 import com.example.kartonki.data.repository.WordSetRepository
 import com.example.kartonki.domain.model.StudyStep
 import com.example.kartonki.domain.model.Word
-import com.example.kartonki.domain.quiz.QuizBuilder
 import com.example.kartonki.ui.navigation.Route
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -81,14 +79,11 @@ class StudySessionViewModel @Inject constructor(
                 _uiState.update { it.copy(isLoading = false, isEmpty = true) }
                 return@launch
             }
-            val definitionMode = prefs.definitionQuizMode.first()
-            val fillBlankMode  = prefs.fillBlankQuizMode.first()
-            val enabledTypes   = prefs.quizTypesEnabled.first()
             // Fetch semantically-related words from other sets for use as distractors.
             // This ensures that e.g. "knee" gets body-part distractors even if the session
             // only has one body-part word alongside 24 animal words.
             val distractorExtras = wordSetRepository.getDistractorExtras(words)
-            val steps = QuizBuilder.buildSteps(words, distractorExtras, definitionMode, fillBlankMode, enabledTypes)
+            val steps = buildQuizStepsFromPrefs(prefs, words, distractorExtras)
             _uiState.update {
                 it.copy(isLoading = false, isEmpty = false, steps = steps, currentStepIndex = 0)
             }
@@ -140,7 +135,7 @@ class StudySessionViewModel @Inject constructor(
                 ?: ProgressEntity(wordId = word.id)
             val newLevel = if (isCorrect) minOf(existing.level + 1, StudyConstants.MAX_LEVEL)
                            else maxOf(existing.level - 1, 0)
-            val intervalMs = StudyConstants.LEVEL_INTERVALS_DAYS[newLevel] * 24L * 60 * 60 * 1000
+            val intervalMs = StudyConstants.LEVEL_INTERVALS_DAYS[newLevel] * StudyConstants.MILLIS_PER_DAY
             progressRepository.upsert(
                 existing.copy(
                     correctCount = if (isCorrect) existing.correctCount + 1 else existing.correctCount,

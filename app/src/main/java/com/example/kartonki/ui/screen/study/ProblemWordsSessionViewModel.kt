@@ -10,7 +10,6 @@ import com.example.kartonki.data.repository.ProgressRepository
 import com.example.kartonki.data.repository.StatsRepository
 import com.example.kartonki.domain.model.StudyStep
 import com.example.kartonki.domain.model.Word
-import com.example.kartonki.domain.quiz.QuizBuilder
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -104,10 +103,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
             // Snapshot before-state error rates
             beforeErrorRates = buildBeforeSnapshot(words)
 
-            val definitionMode = prefs.definitionQuizMode.first()
-            val fillBlankMode  = prefs.fillBlankQuizMode.first()
-            val enabledTypes   = prefs.quizTypesEnabled.first()
-            val steps = QuizBuilder.buildSteps(words, emptyList(), definitionMode, fillBlankMode, enabledTypes)
+            val steps = buildQuizStepsFromPrefs(prefs, words)
             _uiState.update {
                 it.copy(
                     isLoading = false,
@@ -209,7 +205,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
             existing.copy(
                 incorrectCount = 0,
                 level          = StudyConstants.MAX_LEVEL,
-                nextReviewAt   = System.currentTimeMillis() + StudyConstants.LEVEL_INTERVALS_DAYS[StudyConstants.MAX_LEVEL] * 24L * 60 * 60 * 1000,
+                nextReviewAt   = System.currentTimeMillis() + StudyConstants.LEVEL_INTERVALS_DAYS[StudyConstants.MAX_LEVEL] * StudyConstants.MILLIS_PER_DAY,
             )
         )
     }
@@ -220,7 +216,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
                 ?: ProgressEntity(wordId = word.id)
             val newLevel = if (isCorrect) minOf(existing.level + 1, StudyConstants.MAX_LEVEL)
                            else maxOf(existing.level - 1, 0)
-            val intervalMs = StudyConstants.LEVEL_INTERVALS_DAYS[newLevel] * 24L * 60 * 60 * 1000
+            val intervalMs = StudyConstants.LEVEL_INTERVALS_DAYS[newLevel] * StudyConstants.MILLIS_PER_DAY
             progressRepository.upsert(
                 existing.copy(
                     correctCount   = if (isCorrect) existing.correctCount + 1 else existing.correctCount,

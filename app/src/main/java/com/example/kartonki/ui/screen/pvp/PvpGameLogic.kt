@@ -22,6 +22,8 @@ object PvpGameLogic {
     const val HAND_SIZE = 10
     const val TIMER_DURATION = 30
     const val AFK_LIMIT = 3
+    const val TIMER_TICK_MS = 1000L
+    const val WRONG_ANSWER_DELAY_MS = 800L
 
     fun buildHand(cards: List<Word>): List<Word> =
         if (cards.size <= HAND_SIZE) cards.shuffled()

@@ -90,7 +90,6 @@ class OnlinePvpGameViewModel @Inject constructor(
     private var allWords: List<Word> = emptyList()
     private var myCardIds: List<Long> = emptyList()
     private var opponentCardIds: List<Long> = emptyList()
-    private var opponentStreak: Int = 0
     private var timerJob: Job? = null
     private var disconnectTimerJob: Job? = null
     private var lastPhase: String? = null
@@ -138,7 +137,7 @@ class OnlinePvpGameViewModel @Inject constructor(
         // Store card IDs for both players
         myCardIds = if (myIndex == 0) match.player1RemainingIds else match.player2RemainingIds
         opponentCardIds = if (myIndex == 0) match.player2RemainingIds else match.player1RemainingIds
-        opponentStreak = if (myIndex == 0) match.player2Streak else match.player1Streak
+        val opponentStreak = if (myIndex == 0) match.player2Streak else match.player1Streak
 
         // Auto-forfeit: if the opponent has been gone for 30 s we award the win here
         if (!gameOverRecorded) checkOpponentDisconnect(match)
@@ -325,12 +324,12 @@ class OnlinePvpGameViewModel @Inject constructor(
                 p1Score = newMyScore
                 p2Score = state.opponentScore
                 p1Streak = newMyStreak
-                p2Streak = opponentStreak  // attacker's streak unchanged
+                p2Streak = state.opponentStreak  // attacker's streak unchanged
             } else {
                 // I am Player 2 (defender), opponent is Player 1 (attacker)
                 p1Score = state.opponentScore
                 p2Score = newMyScore
-                p1Streak = opponentStreak  // attacker's streak unchanged
+                p1Streak = state.opponentStreak  // attacker's streak unchanged
                 p2Streak = newMyStreak
             }
 
@@ -550,7 +549,7 @@ class OnlinePvpGameViewModel @Inject constructor(
         _uiState.update { it.copy(timeRemaining = remaining) }
         timerJob = viewModelScope.launch {
             for (i in remaining downTo 1) {
-                delay(1000)
+                delay(PvpGameLogic.TIMER_TICK_MS)
                 _uiState.update { it.copy(timeRemaining = i - 1) }
             }
             handleTimerExpired()
@@ -575,7 +574,7 @@ class OnlinePvpGameViewModel @Inject constructor(
                 val wrong = phase.options.firstOrNull { it != phase.correctAnswer } ?: return
                 onAnswerSelected(wrong)
                 viewModelScope.launch {
-                    delay(800)
+                    delay(PvpGameLogic.WRONG_ANSWER_DELAY_MS)
                     onConfirmAnswer()
                 }
             }
