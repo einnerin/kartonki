@@ -152,12 +152,12 @@ class AchievementRepository @Inject constructor(
 
     private suspend fun checkExpert() {
         if (isUnlocked(AchievementId.EXPERT)) return
-        if (progressDao.getLearnedCount() >= 50) unlock(AchievementId.EXPERT)
+        if (progressDao.getLearnedCount() >= EXPERT_THRESHOLD) unlock(AchievementId.EXPERT)
     }
 
     private suspend fun checkPolyglot() {
         if (isUnlocked(AchievementId.POLYGLOT)) return
-        if (progressDao.getLearnedCount() >= 200) unlock(AchievementId.POLYGLOT)
+        if (progressDao.getLearnedCount() >= POLYGLOT_THRESHOLD) unlock(AchievementId.POLYGLOT)
     }
 
     private suspend fun checkStreak7() {
@@ -169,7 +169,7 @@ class AchievementRepository @Inject constructor(
         if (isUnlocked(AchievementId.COLLECTOR)) return
         val decks = deckDao.getDecksOnce()
         for (deck in decks) {
-            if (deckDao.getOwnedCardCountForDeck(deck.id) >= 20) {
+            if (deckDao.getOwnedCardCountForDeck(deck.id) >= COLLECTOR_MIN_CARDS) {
                 unlock(AchievementId.COLLECTOR)
                 return
             }
@@ -198,7 +198,7 @@ class AchievementRepository @Inject constructor(
     private suspend fun checkNightOwl() {
         if (isUnlocked(AchievementId.NIGHT_OWL)) return
         val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
-        if (hour >= 23) unlock(AchievementId.NIGHT_OWL)
+        if (hour >= NIGHT_OWL_HOUR) unlock(AchievementId.NIGHT_OWL)
     }
 
     private suspend fun checkPerfectionist(incorrectCount: Int) {
@@ -208,7 +208,7 @@ class AchievementRepository @Inject constructor(
 
     private suspend fun checkDeepLearner() {
         if (isUnlocked(AchievementId.DEEP_LEARNER)) return
-        if (progressDao.getWordCountAtMinLevel(5) >= 20) unlock(AchievementId.DEEP_LEARNER)
+        if (progressDao.getWordCountAtMinLevel(5) >= DEEP_LEARNER_MIN_WORDS) unlock(AchievementId.DEEP_LEARNER)
     }
 
     private suspend fun checkVeteran() {
@@ -234,7 +234,7 @@ class AchievementRepository @Inject constructor(
 
     private suspend fun checkGoldenShot(p1Score: Int, p2Score: Int) {
         if (isUnlocked(AchievementId.GOLDEN_SHOT)) return
-        if (maxOf(p1Score, p2Score) >= 50) unlock(AchievementId.GOLDEN_SHOT)
+        if (maxOf(p1Score, p2Score) >= GOLDEN_SHOT_MIN_SCORE) unlock(AchievementId.GOLDEN_SHOT)
     }
 
     private suspend fun checkWeeklyGrind() {
@@ -264,7 +264,7 @@ class AchievementRepository @Inject constructor(
         if (days.size < 2) return
         // days are sorted DESC; [0] = today, [1] = last previous day
         val gap = (days[0] - days[1]) / DAY_MS
-        if (gap >= 7) unlock(AchievementId.RUSTY)
+        if (gap >= RUSTY_GAP_DAYS) unlock(AchievementId.RUSTY)
     }
 
     private suspend fun checkLongWord() {
@@ -273,6 +273,16 @@ class AchievementRepository @Inject constructor(
     }
 
     // ── Internals ─────────────────────────────────────────────────────────────
+
+    private companion object {
+        const val EXPERT_THRESHOLD       = 50
+        const val POLYGLOT_THRESHOLD     = 200
+        const val COLLECTOR_MIN_CARDS    = 20
+        const val DEEP_LEARNER_MIN_WORDS = 20
+        const val GOLDEN_SHOT_MIN_SCORE  = 50
+        const val NIGHT_OWL_HOUR         = 23
+        const val RUSTY_GAP_DAYS         = 7L
+    }
 
     private suspend fun unlock(id: AchievementId) {
         val word = wordDao.getWordByOriginal(id.rewardWordOriginal)
