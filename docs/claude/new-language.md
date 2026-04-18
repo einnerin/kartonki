@@ -1,6 +1,10 @@
 # Правила: Добавление нового языка
 
+> Правила для наборов слов (структура, переводы, редкость, хук) — в [`word-sets.md`](word-sets.md).
+> Этот файл — только про специфику добавления нового языка.
+
 ## Файлы для чтения перед работой
+- [`word-sets.md`](word-sets.md) — **прочитать первым**, все правила наборов
 - `data/WordRegistry.kt` — `allSets`, `allWords`, `allPrebuiltDecks`, `languageIdBlocks`
 - `data/WordDataEnglish.kt` — образец структуры языкового файла
 - `data/WordDataHebrew.kt` — образец для языка с нелатинским алфавитом
@@ -22,7 +26,8 @@
    - `object WordDataFrench { val sets: List<WordSetEntity>; val words: List<WordEntity>; val prebuiltDecks: List<DeckSeed> }`
    - `languagePair = "fr-ru"` во всех сущностях
    - `setId` в диапазоне нового блока (например 2001+)
-   - Имена наборов на русском языке
+   - Имена, описания, `topic` — только на русском
+   - `topic` заполнен, `level` = 1/2/3 (обязательно, хук блокирует без них)
 
 2. **Добавь в `WordRegistry`**:
    - `allSets`: `+ WordDataFrench.sets`
