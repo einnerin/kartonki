@@ -32,12 +32,12 @@ object WordDataHebrewEveryday {
 
         WordEntity(
             id = 100401, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interj", semanticGroup = "greeting", transliteration = "shalom",
-            original = "שָׁלוֹם", translation = "привет / мир",
-            definition = "ביטוי ברכה שכיח בעברית, משמש גם לפרידה.",
-            definitionNative = "Распространённое приветствие и прощание на иврите.",
-            example = "שָׁלוֹם הוּא מִלָּה יָפָה מְאוֹד.",
-            exampleNative = "שָׁלוֹם — самое известное ивритское слово.",
+            pos = "interj", semanticGroup = "greeting", transliteration = "boker tov",
+            original = "בֹּקֶר טוֹב", translation = "доброе утро",
+            definition = "ברכת בֹּקֶר הנאמרת בתחילת היום.",
+            definitionNative = "Утреннее приветствие, употребляемое в начале дня.",
+            example = "בֹּקֶר טוֹב! אֵיךְ שָׁנַתָּ?",
+            exampleNative = "בֹּקֶר טוֹב! Как ты спал?",
         ),
         WordEntity(
             id = 100402, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
