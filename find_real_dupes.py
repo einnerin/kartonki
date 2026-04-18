@@ -93,6 +93,7 @@ REGISTRY_ORDER = [
     "WordDataHebrewImmigrant14.kt",
     "WordDataHebrewImmigrant15.kt",
     "WordDataHebrewImmigrant16.kt",
+    "WordDataHebrewBatch40.kt",
 ]
 
 def extract_field(block, field_name):
