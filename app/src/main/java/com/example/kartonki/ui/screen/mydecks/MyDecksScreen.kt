@@ -34,7 +34,6 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -48,10 +47,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleEventObserver
-import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
+import com.example.kartonki.ui.component.OnResume
 import com.example.kartonki.domain.model.DeckLevel
 import com.example.kartonki.ui.component.DeckInvalidBadge
 import com.example.kartonki.ui.component.DeckLevelBadge
@@ -68,7 +65,6 @@ fun MyDecksScreen(
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
-    val lifecycleOwner = LocalLifecycleOwner.current
     val listState = rememberLazyListState()
     var deckPendingDelete by remember { mutableStateOf<DeckSummary?>(null) }
 
@@ -77,13 +73,7 @@ fun MyDecksScreen(
         viewModel.onNavigationConsumed()
     }
 
-    DisposableEffect(lifecycleOwner) {
-        val observer = LifecycleEventObserver { _, event ->
-            if (event == Lifecycle.Event.ON_RESUME) viewModel.refresh()
-        }
-        lifecycleOwner.lifecycle.addObserver(observer)
-        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
-    }
+    OnResume { viewModel.refresh() }
 
     Scaffold(
         topBar = {

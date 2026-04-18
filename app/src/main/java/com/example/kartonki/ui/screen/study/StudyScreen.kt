@@ -46,7 +46,6 @@ import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -70,10 +69,8 @@ import androidx.compose.ui.unit.dp
 import com.example.kartonki.domain.model.Rarity
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.ui.theme.LocalAppStrings
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleEventObserver
-import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
+import com.example.kartonki.ui.component.OnResume
 import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.component.SearchBar
 import com.example.kartonki.ui.theme.BgCard
@@ -102,15 +99,7 @@ fun StudyScreen(
             it.description.contains(searchQuery, ignoreCase = true)
         }
     }
-    val lifecycleOwner = LocalLifecycleOwner.current
-
-    DisposableEffect(lifecycleOwner) {
-        val observer = LifecycleEventObserver { _, event ->
-            if (event == Lifecycle.Event.ON_RESUME) viewModel.refresh()
-        }
-        lifecycleOwner.lifecycle.addObserver(observer)
-        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
-    }
+    OnResume { viewModel.refresh() }
 
     Scaffold(
         containerColor = BgDeep,
@@ -204,16 +193,11 @@ fun StudyScreen(
 
             val listState = rememberLazyListState()
 
-            // Capture scroll position at composition time — before the snapshotFlow below
-            // can overwrite the ViewModel values with (0, 0) from the fresh listState.
-            val restoredScrollIndex = remember { viewModel.savedScrollIndex }
-            val restoredScrollOffset = remember { viewModel.savedScrollOffset }
-
-            // Restore saved scroll position when the screen re-enters composition
-            // (e.g. after returning from a set detail screen or a language change).
             LaunchedEffect(Unit) {
-                if (restoredScrollIndex > 0 || restoredScrollOffset > 0) {
-                    listState.scrollToItem(restoredScrollIndex, restoredScrollOffset)
+                val index = viewModel.savedScrollIndex
+                val offset = viewModel.savedScrollOffset
+                if (index > 0 || offset > 0) {
+                    listState.scrollToItem(index, offset)
                 }
             }
 

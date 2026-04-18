@@ -43,13 +43,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Row
-import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.collectAsState
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleEventObserver
-import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.example.kartonki.R
+import com.example.kartonki.ui.component.OnResume
 import com.example.kartonki.ui.screen.shop.PackShopViewModel
 import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.AccentBlue
@@ -75,14 +72,7 @@ fun HomeScreen(
     val packState by packViewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
 
-    val lifecycleOwner = LocalLifecycleOwner.current
-    DisposableEffect(lifecycleOwner) {
-        val observer = LifecycleEventObserver { _, event ->
-            if (event == Lifecycle.Event.ON_RESUME) homeViewModel.refresh()
-        }
-        lifecycleOwner.lifecycle.addObserver(observer)
-        onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
-    }
+    OnResume { homeViewModel.refresh() }
 
     Box(
         modifier = Modifier
