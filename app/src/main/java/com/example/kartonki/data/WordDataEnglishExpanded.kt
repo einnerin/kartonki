@@ -2190,7 +2190,7 @@ object WordDataEnglishExpanded {
         WordEntity(id = 20723, original = "knead", transliteration = "[nid]", translation = "замешивать (тесто)", rarity = "RARE", setId = 207, languagePair = "en-ru", pos = "verb", semanticGroup = "cooking",
             definition = "To work dough with the hands to make it smooth and elastic.", example = "Knead the bread dough for ten minutes until it springs back.",
             definitionNative = "Разминать тесто руками до гладкости и эластичности.", exampleNative = "Вымешивайте хлебное тесто десять минут, пока оно не начнёт пружинить."),
-        WordEntity(id = 20724, original = "drizzle", transliteration = "[ˈdrɪzəl]", translation = "сбрызгивать / поливать тонкой струйкой", rarity = "RARE", setId = 207, languagePair = "en-ru", pos = "verb", semanticGroup = "cooking",
+        WordEntity(id = 20724, original = "macerate", transliteration = "[ˈmæsəreɪt]", translation = "мацерировать / мариновать (в жидкости)", rarity = "RARE", setId = 207, languagePair = "en-ru", pos = "verb", semanticGroup = "cooking",
             definition = "To pour a thin stream of liquid over food.", example = "Drizzle olive oil over the salad just before serving.",
             definitionNative = "Поливать тонкой струйкой жидкость на еду.", exampleNative = "Сбрызните салат оливковым маслом непосредственно перед подачей."),
         WordEntity(id = 20725, original = "dehydration", transliteration = "[ˌdihaɪˈdreɪʃən]", translation = "обезвоживание / сушка продуктов", rarity = "RARE", setId = 207, languagePair = "en-ru", pos = "noun", semanticGroup = "cooking",
