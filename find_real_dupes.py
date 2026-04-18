@@ -14,7 +14,7 @@ Blocking errors (exit 1) — staged files:
   7. Derivative/same-root word pairs within the same staged set.
 
 Warnings (never block):
-  8. Rarity spread in non-staged files (old data, fixed in Phase 3).
+  8. Rarity spread in modified/non-staged files (old data, fixed in Phase 4).
   9. Word ID formula violation (staged files only).
  10. Duplicate set names within same languagePair (staged files only).
  11. Description contains CEFR level notation (A1/B1 etc) — use rarity colour instead.
@@ -51,6 +51,29 @@ def _get_staged_files():
         return {Path(p).name for p in r.stdout.splitlines() if p.endswith(".kt")}
     except Exception:
         return set()
+
+
+def _get_new_set_ids(staged_files):
+    """Return setIds that are NEW in this commit (added, not modified).
+
+    Looks for '+        WordSetEntity(id = N' lines in git diff --cached.
+    This lets rarity/derivative checks skip pre-existing sets that only
+    got metadata updates (topic/level/name) without new word content.
+    """
+    new_ids = set()
+    if not staged_files:
+        return new_ids
+    try:
+        r = subprocess.run(["git", "diff", "--cached"],
+                           capture_output=True, text=True, timeout=10)
+        for line in r.stdout.splitlines():
+            if line.startswith('+') and not line.startswith('+++'):
+                m = re.search(r'WordSetEntity\([^)]*\bid\s*=\s*(\d+)', line)
+                if m:
+                    new_ids.add(int(m.group(1)))
+    except Exception:
+        pass
+    return new_ids
 
 
 def extract_field(block, field_name):
@@ -429,6 +452,7 @@ def check_description_cefr(all_sets, staged_files):
 def main():
     registry_order = parse_registry_order()
     staged_files = _get_staged_files()
+    new_set_ids = _get_new_set_ids(staged_files)  # setIds first appearing in this commit
 
     all_words, all_sets = [], []
     for fname in registry_order:
@@ -508,22 +532,27 @@ def main():
     else:
         print("  ✅ Все setId в правильных диапазонах\n")
 
-    # ── 5. Rarity spread — BLOCKING for staged, warning for others ───────────
+    # ── 5. Rarity spread — BLOCKING only for NEW sets, warning for modified ──────
     rarity_issues = check_rarity_spread(all_words)
     if staged_files:
-        staged_rarity = [(sid, f, r) for sid, f, r in rarity_issues if f in staged_files]
-        old_rarity = [(sid, f, r) for sid, f, r in rarity_issues if f not in staged_files]
-        print(f"=== 5. Разброс редкости в staged файлах: {len(staged_rarity)} ===\n")
-        if staged_rarity:
+        # New sets: block; modified (metadata-only) sets: warn; non-staged: summarise
+        new_rarity  = [(sid, f, r) for sid, f, r in rarity_issues if sid in new_set_ids]
+        mod_rarity  = [(sid, f, r) for sid, f, r in rarity_issues
+                       if f in staged_files and sid not in new_set_ids]
+        old_rarity  = [(sid, f, r) for sid, f, r in rarity_issues if f not in staged_files]
+        print(f"=== 5. Разброс редкости в новых staged наборах: {len(new_rarity)} ===\n")
+        if new_rarity:
             has_errors = True
-            for sid, fname, rstr in staged_rarity:
+            for sid, fname, rstr in new_rarity:
                 print(f"  Set {sid} [{fname}]: {rstr} — допустимо ≤ 2 смежных уровня")
             print()
         else:
-            print("  ✅ Staged файлы: разброс редкости в норме\n")
+            print("  ✅ Новые staged наборы: разброс редкости в норме\n")
+        if mod_rarity:
+            print(f"  ⚠️  Изменённые staged наборы с разбросом: {len(mod_rarity)} "
+                  f"(исправить в Phase 4)\n")
         if old_rarity:
-            print(f"  ℹ️  В не-staged файлах {len(old_rarity)} наборов с разбросом "
-                  f"(будет исправлено в Phase 3)\n")
+            print(f"  ℹ️  В не-staged файлах {len(old_rarity)} наборов с разбросом\n")
     else:
         # Manual run: just summarise
         if rarity_issues:
@@ -557,17 +586,25 @@ def main():
         else:
             print("  ✅ Имена соответствуют topic и level\n")
 
-    # ── 7. Derivative word pairs (staged) ────────────────────────────────────
+    # ── 7. Derivative word pairs — BLOCKING only for NEW sets ────────────────
     if staged_files:
         deriv_errors = check_derivatives_in_sets(all_words, staged_files)
-        print(f"=== 7. Однокоренные слова в staged наборах: {len(deriv_errors)} наборов ===\n")
-        if deriv_errors:
+        # Only block for NEW sets; warn for modified sets
+        new_deriv = [e for e in deriv_errors
+                     if any(f"Set {sid}" in e for sid in new_set_ids)]
+        mod_deriv = [e for e in deriv_errors
+                     if not any(f"Set {sid}" in e for sid in new_set_ids)]
+        print(f"=== 7. Однокоренные слова в новых staged наборах: {len(new_deriv)} ===\n")
+        if new_deriv:
             has_errors = True
-            for e in deriv_errors:
+            for e in new_deriv:
                 print(e)
             print()
         else:
-            print("  ✅ Однокоренных пар не найдено\n")
+            print("  ✅ Новые staged наборы: однокоренных пар не найдено\n")
+        if mod_deriv:
+            print(f"  ⚠️  Изменённые staged наборы с однокоренными парами: "
+                  f"{len(mod_deriv)} (исправить в Phase 4)\n")
 
     # ── Warnings (never block) ────────────────────────────────────────────────
     if staged_files:

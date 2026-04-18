@@ -10,11 +10,21 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewAdvanced {
 
     val sets = listOf(
-        WordSetEntity(id = 1014, name = "IT: углублённо",                description = "Архитектура и системы B2/C1",    languagePair = "he-ru", orderIndex = 14),
-        WordSetEntity(id = 1015, name = "Работа и карьера",               description = "Офис, должности и карьера B2/C1", languagePair = "he-ru", orderIndex = 15),
-        WordSetEntity(id = 1016, name = "Эмоции и характер",              description = "Чувства и черты личности B1/B2", languagePair = "he-ru", orderIndex = 16),
-        WordSetEntity(id = 1017, name = "Абстрактные понятия",            description = "Философия и мышление C1/C2",        languagePair = "he-ru", orderIndex = 17),
-        WordSetEntity(id = 1018, name = "Компьютерные игры",              description = "Игровая лексика и жанры A2/C2",   languagePair = "he-ru", orderIndex = 18),
+        WordSetEntity(id = 1014, name = "Технологии: продвинутый 2",                description = "Архитектура и системы",    languagePair = "he-ru", orderIndex = 14,
+            topic = "Технологии",
+            level = 2),
+        WordSetEntity(id = 1015, name = "Работа и карьера: основы",               description = "Офис, должности и карьера", languagePair = "he-ru", orderIndex = 15,
+            topic = "Работа и карьера",
+            level = 1),
+        WordSetEntity(id = 1016, name = "Психология: основы",              description = "Чувства и черты личности", languagePair = "he-ru", orderIndex = 16,
+            topic = "Психология",
+            level = 1),
+        WordSetEntity(id = 1017, name = "Философия: продвинутый",            description = "Философия и мышление",        languagePair = "he-ru", orderIndex = 17,
+            topic = "Философия",
+            level = 2),
+        WordSetEntity(id = 1018, name = "Технологии: основы 2",              description = "Игровая лексика и жанры",   languagePair = "he-ru", orderIndex = 18,
+            topic = "Технологии",
+            level = 1),
     )
 
     val words = listOf(

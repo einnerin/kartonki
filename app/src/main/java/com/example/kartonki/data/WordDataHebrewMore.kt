@@ -10,12 +10,24 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewMore {
 
     val sets = listOf(
-        WordSetEntity(id = 1008, name = "Транспорт",          description = "Виды транспорта и дорога A2",        languagePair = "he-ru", orderIndex = 8),
-        WordSetEntity(id = 1009, name = "Город и места",      description = "Городские объекты и природа A2",    languagePair = "he-ru", orderIndex = 9),
-        WordSetEntity(id = 1010, name = "Одежда",             description = "Одежда и аксессуары A2",            languagePair = "he-ru", orderIndex = 10),
-        WordSetEntity(id = 1011, name = "Погода и природа",   description = "Климат, сезоны и природа A2/B1",   languagePair = "he-ru", orderIndex = 11),
-        WordSetEntity(id = 1012, name = "Кино",               description = "Жанры, люди и термины кино B1/B2",    languagePair = "he-ru", orderIndex = 12),
-        WordSetEntity(id = 1013, name = "Кино: углублённо",    description = "Производство фильмов B2/C1",        languagePair = "he-ru", orderIndex = 13),
+        WordSetEntity(id = 1008, name = "Транспорт: основы",          description = "Виды транспорта и дорога",           languagePair = "he-ru", orderIndex = 8,
+            topic = "Транспорт",
+            level = 1),
+        WordSetEntity(id = 1009, name = "Город: основы",      description = "Городские объекты и природа",       languagePair = "he-ru", orderIndex = 9,
+            topic = "Город",
+            level = 1),
+        WordSetEntity(id = 1010, name = "Одежда: основы",             description = "Одежда и аксессуары",               languagePair = "he-ru", orderIndex = 10,
+            topic = "Одежда",
+            level = 1),
+        WordSetEntity(id = 1011, name = "Природа и экология: основы",   description = "Климат, сезоны и природа",   languagePair = "he-ru", orderIndex = 11,
+            topic = "Природа и экология",
+            level = 1),
+        WordSetEntity(id = 1012, name = "Культура и искусство: основы",               description = "Жанры, люди и термины кино",    languagePair = "he-ru", orderIndex = 12,
+            topic = "Культура и искусство",
+            level = 1),
+        WordSetEntity(id = 1013, name = "Культура и искусство: продвинутый",    description = "Производство фильмов",        languagePair = "he-ru", orderIndex = 13,
+            topic = "Культура и искусство",
+            level = 2),
     )
 
     val words = listOf(

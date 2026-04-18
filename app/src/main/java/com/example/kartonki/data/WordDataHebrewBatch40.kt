@@ -7,17 +7,25 @@ object WordDataHebrewBatch40 {
 
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(id = 1208, languagePair = "he-ru", orderIndex = 1208,
-            name = "Социология",
-            description = "Стратификация, нормы, культурная теория B2/C1"),
+            name = "Наука: профессиональный 3",
+            description = "Стратификация, нормы, культурная теория",
+            topic = "Наука",
+            level = 3),
         WordSetEntity(id = 1209, languagePair = "he-ru", orderIndex = 1209,
-            name = "Когнитивные науки",
-            description = "Память, внимание, мышление, искажения B2/C1"),
+            name = "Психология: продвинутый 2",
+            description = "Память, внимание, мышление, искажения",
+            topic = "Психология",
+            level = 2),
         WordSetEntity(id = 1210, languagePair = "he-ru", orderIndex = 1210,
-            name = "Нейронаука",
-            description = "Нейроны, синапсы, функции мозга C1/C2"),
+            name = "Наука: профессиональный 4",
+            description = "Нейроны, синапсы, функции мозга",
+            topic = "Наука",
+            level = 3),
         WordSetEntity(id = 1211, languagePair = "he-ru", orderIndex = 1211,
-            name = "Генетика",
-            description = "ДНК, мутации, молекулярная биология C1/C2"),
+            name = "Наука: профессиональный 5",
+            description = "ДНК, мутации, молекулярная биология",
+            topic = "Наука",
+            level = 3),
     )
 
     val words: List<WordEntity> = listOf(
