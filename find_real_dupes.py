@@ -5,13 +5,9 @@ Simulates Room's insertAllOrReplace behaviour:
   - unique index on (original, languagePair)
   - REPLACE strategy → LAST occurrence in registry order wins
 
-Registry order mirrors WordRegistry.kt allWords:
-  English* → Hebrew* → Immigrant1-6 → HebrewBatch5-39 → Immigrant7-16
-
-Words that appear in multiple sets: the last set "owns" the word in the DB.
-Earlier sets lose the word → end up with < 25 entries.
-
-Output: list of affected sets with count of stolen words.
+Registry order is derived automatically from WordRegistry.kt allWords —
+no manual list to maintain. Adding a new WordData file to WordRegistry.kt
+is all that's needed for this script to pick it up.
 """
 
 import re, io, sys
@@ -20,81 +16,34 @@ from collections import defaultdict
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-DATA_DIR = Path("app/src/main/java/com/example/kartonki/data")
+ROOT = Path("app/src/main/java/com/example/kartonki/data")
+REGISTRY_FILE = ROOT / "WordRegistry.kt"
 
-# Registry order — must match WordRegistry.kt allWords exactly
-REGISTRY_ORDER = [
-    "WordDataEnglish.kt",
-    "WordDataEnglishExpanded.kt",
-    "WordDataEnglishBatch3.kt",
-    "WordDataEnglishBatch4.kt",
-    "WordDataEnglishBatch5.kt",
-    "WordDataEnglishBatch6.kt",
-    "WordDataEnglishBatch7.kt",
-    "WordDataEnglishBatch8.kt",
-    "WordDataEnglishBatch9.kt",
-    "WordDataEnglishBatch10.kt",
-    "WordDataEnglishBatch11.kt",
-    "WordDataEnglishBatch12.kt",
-    "WordDataHebrew.kt",
-    "WordDataHebrewEveryday.kt",
-    "WordDataHebrewMore.kt",
-    "WordDataHebrewAdvanced.kt",
-    "WordDataHebrewTech.kt",
-    "WordDataHebrewImmigrant.kt",
-    "WordDataHebrewImmigrant2.kt",
-    "WordDataHebrewImmigrant3.kt",
-    "WordDataHebrewImmigrant4.kt",
-    "WordDataHebrewImmigrant5.kt",
-    "WordDataHebrewImmigrant6.kt",
-    "WordDataHebrewImmigrantExtra.kt",
-    "WordDataHebrewBatch5.kt",
-    "WordDataHebrewBatch6.kt",
-    "WordDataHebrewBatch7.kt",
-    "WordDataHebrewBatch8.kt",
-    "WordDataHebrewBatch9.kt",
-    "WordDataHebrewBatch10.kt",
-    "WordDataHebrewBatch11.kt",
-    "WordDataHebrewBatch12.kt",
-    "WordDataHebrewBatch13.kt",
-    "WordDataHebrewBatch14.kt",
-    "WordDataHebrewBatch15.kt",
-    "WordDataHebrewBatch16.kt",
-    "WordDataHebrewBatch17.kt",
-    "WordDataHebrewBatch18.kt",
-    "WordDataHebrewBatch19.kt",
-    "WordDataHebrewBatch20.kt",
-    "WordDataHebrewBatch21.kt",
-    "WordDataHebrewBatch22.kt",
-    "WordDataHebrewBatch23.kt",
-    "WordDataHebrewBatch24.kt",
-    "WordDataHebrewBatch25.kt",
-    "WordDataHebrewBatch26.kt",
-    "WordDataHebrewBatch27.kt",
-    "WordDataHebrewBatch28.kt",
-    "WordDataHebrewBatch29.kt",
-    "WordDataHebrewBatch30.kt",
-    "WordDataHebrewBatch31.kt",
-    "WordDataHebrewBatch32.kt",
-    "WordDataHebrewBatch33.kt",
-    "WordDataHebrewBatch34.kt",
-    "WordDataHebrewBatch35.kt",
-    "WordDataHebrewBatch36.kt",
-    "WordDataHebrewBatch37.kt",
-    "WordDataHebrewBatch38.kt",
-    "WordDataHebrewBatch39.kt",
-    "WordDataHebrewImmigrant7.kt",
-    "WordDataHebrewImmigrant8.kt",
-    "WordDataHebrewImmigrant9.kt",
-    "WordDataHebrewImmigrant10.kt",
-    "WordDataHebrewImmigrant11.kt",
-    "WordDataHebrewImmigrant12.kt",
-    "WordDataHebrewImmigrant13.kt",
-    "WordDataHebrewImmigrant14.kt",
-    "WordDataHebrewImmigrant15.kt",
-    "WordDataHebrewImmigrant16.kt",
-    "WordDataHebrewBatch40.kt",
-]
+
+def parse_registry_order():
+    """
+    Parse WordRegistry.kt and return ordered list of .kt filenames
+    in the same order they appear in the allWords property.
+    Duplicate object references (e.g. achievementRewardWords) are ignored —
+    only the first mention of each object counts.
+    """
+    text = REGISTRY_FILE.read_text(encoding="utf-8")
+
+    # Extract the allWords property body (handles multiline get() = ... val next)
+    m = re.search(r'val allWords.*?get\(\)\s*=(.*?)(?=\n[ \t]*val |\Z)', text, re.DOTALL)
+    if not m:
+        raise RuntimeError("Could not find allWords property in WordRegistry.kt")
+    body = m.group(1)
+
+    # Find all WordDataXxx references in order
+    seen = set()
+    order = []
+    for obj_name in re.findall(r'(WordData\w+)\.', body):
+        if obj_name not in seen:
+            seen.add(obj_name)
+            order.append(obj_name + ".kt")
+    return order
+
 
 def extract_field(block, field_name):
     m = re.search(field_name + r'\s*=\s*"((?:[^"\\]|\\.)*)"', block)
@@ -104,6 +53,7 @@ def extract_field(block, field_name):
     if m:
         return None
     return None
+
 
 def parse_file(kt_file):
     content = kt_file.read_text(encoding="utf-8")
@@ -115,7 +65,8 @@ def parse_file(kt_file):
         depth = 0
         end = -1
         for i, ch in enumerate(part):
-            if ch == '(': depth += 1
+            if ch == '(':
+                depth += 1
             elif ch == ')':
                 depth -= 1
                 if depth == 0:
@@ -142,42 +93,37 @@ def parse_file(kt_file):
             })
     return words
 
+
 def main():
-    # Parse in registry order
+    registry_order = parse_registry_order()
+
     all_words = []
-    for fname in REGISTRY_ORDER:
-        fpath = DATA_DIR / fname
+    for fname in registry_order:
+        fpath = ROOT / fname
         if fpath.exists():
             all_words.extend(parse_file(fpath))
         else:
-            print(f"  [WARN] not found: {fname}")
+            print(f"  [WARN] file listed in WordRegistry.kt but not found on disk: {fname}")
 
     print(f"Total words parsed: {len(all_words)}\n")
 
     # Simulate REPLACE: last occurrence wins
-    db = {}  # (original, lang) -> word dict
+    db = {}
     for w in all_words:
         key = (w["original"], w["lang"])
-        db[key] = w  # REPLACE: overwrite
+        db[key] = w
 
     # Count words per set in the simulated DB
     set_counts = defaultdict(int)
     set_names = {}
     for w in all_words:
         set_names[w["setId"]] = w["file"]
-
     for w in db.values():
         set_counts[w["setId"]] += 1
 
-    # Find sets with != 25 words
-    # Also count words per set in source
-    source_counts = defaultdict(int)
-    for w in all_words:
-        source_counts[w["setId"]] += 1
-
-    # Find real duplicates (same raw original+lang)
+    # Find real duplicates
     seen = {}
-    real_dupes = []  # (original, lang, loser_set, winner_set)
+    real_dupes = []
     for w in all_words:
         key = (w["original"], w["lang"])
         if key in seen:
@@ -190,13 +136,12 @@ def main():
                 "winner_file": w["file"],
                 "translation": w["translation"],
             })
-            seen[key] = w  # update to latest
+            seen[key] = w
         else:
             seen[key] = w
 
     print(f"=== Real DB duplicates (same raw original+lang): {len(real_dupes)} ===\n")
 
-    # Group by loser set
     loser_sets = defaultdict(list)
     for d in real_dupes:
         loser_sets[d["loser_set"]].append(d)
@@ -209,7 +154,7 @@ def main():
         for d in stolen:
             print(f"    '{d['original']}' → stolen by set {d['winner_set']} [{d['winner_file']}]")
 
-    print(f"\n=== Sets with < 25 words in simulated DB ===\n")
+    print(f"\n=== Sets with != 25 words in simulated DB ===\n")
     problem_sets = {sid: cnt for sid, cnt in set_counts.items() if cnt != 25}
     for sid in sorted(problem_sets):
         print(f"  Set {sid}: {problem_sets[sid]} words [{set_names.get(sid, '?')}]")
@@ -218,6 +163,11 @@ def main():
         print("  None — all sets have 25 words!")
 
     print(f"\nSummary: {len(real_dupes)} stolen words, {len(problem_sets)} sets with != 25 words")
+
+    # Non-zero exit code for use in pre-commit hook
+    if real_dupes or problem_sets:
+        sys.exit(1)
+
 
 if __name__ == "__main__":
     main()
