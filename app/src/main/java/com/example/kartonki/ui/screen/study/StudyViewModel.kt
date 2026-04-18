@@ -1,5 +1,6 @@
 package com.example.kartonki.ui.screen.study
 
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.WordLoader
@@ -56,20 +57,19 @@ class StudyViewModel @Inject constructor(
     private val statsRepository: StatsRepository,
     private val prefs: UserPreferencesRepository,
     private val wordLoader: WordLoader,
+    private val savedStateHandle: SavedStateHandle,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(StudyListUiState())
     val uiState: StateFlow<StudyListUiState> = _uiState.asStateFlow()
 
-    /** Scroll position saved so it survives navigation and silent refreshes. */
-    var savedScrollIndex: Int = 0
-        private set
-    var savedScrollOffset: Int = 0
-        private set
+    /** Scroll position persisted in SavedStateHandle so it survives navigation back. */
+    val savedScrollIndex: Int get() = savedStateHandle["scrollIndex"] ?: 0
+    val savedScrollOffset: Int get() = savedStateHandle["scrollOffset"] ?: 0
 
     fun saveScrollPosition(index: Int, offset: Int) {
-        savedScrollIndex = index
-        savedScrollOffset = offset
+        savedStateHandle["scrollIndex"] = index
+        savedStateHandle["scrollOffset"] = offset
     }
 
     init {
