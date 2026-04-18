@@ -90,8 +90,8 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108207, setId = 1082, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "mandat",
-            original = "מַנְדָּט", translation = "мандат (Британский мандат на Палестину)",
+            pos = "noun", semanticGroup = "israel_history", transliteration = "mishlakhat",
+            original = "מִשְׁלַחַת", translation = "делегация; миссия",
             definition = "שִׁלְטוֹן בְּרִיטַנִּי עַל אֶרֶץ יִשְׂרָאֵל בְּשֵׁם חֶבֶר הַלְּאֻמִּים בֵּין הַשָּׁנִים 1920–1948.",
             definitionNative = "Британское управление Палестиной по мандату Лиги Наций в 1920–1948 годах.",
             example = "בִּימֵי הַמַּנְדָּט עָלוּ גַּלִּים גְּדוֹלִים שֶׁל עוֹלִים.",
@@ -135,8 +135,8 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108212, setId = 1082, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "giyus",
-            original = "גִּיּוּס", translation = "мобилизация, призыв",
+            pos = "noun", semanticGroup = "israel_history", transliteration = "maAmats",
+            original = "מַאֲמָץ", translation = "усилие; старание",
             definition = "גִּיּוּס חוֹבָה לַצָּבָא — חוֹבָה הַחָלָה עַל כָּל אֶזְרָח יִשְׂרְאֵלִי.",
             definitionNative = "Обязательная воинская служба — обязанность, распространяющаяся на каждого израильского гражданина.",
             example = "הַגִּיּוּס בְּיִשְׂרָאֵל מַתְחִיל בְּגִיל שְׁמוֹנָה עֶשְׂרֵה.",
@@ -218,8 +218,8 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108221, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "maaavak",
-            original = "מַאֲבָק", translation = "борьба",
+            pos = "noun", semanticGroup = "israel_history", transliteration = "hakhrazat atsmaut",
+            original = "הַכְרָזַת עַצְמָאוּת", translation = "Декларация независимости",
             definition = "מְאַמָּץ נֶחוּשׁ לְהַשִּׂיג מַטָּרָה — בִּמְיֻחָד בְּהֶקְשֵׁר לְאֻמִּי אוֹ מְדִינִי.",
             definitionNative = "Настойчивое усилие для достижения цели — особенно в национальном или политическом контексте.",
             example = "הַמַּאֲבָק לַעַצְמָאוּת נִמְשַׁךְ עֶשְׂרוֹת שָׁנִים.",

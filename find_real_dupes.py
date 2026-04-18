@@ -4,9 +4,10 @@
 Validates all WordData files against Room's insertion rules and quality rules.
 
 Blocking errors (exit 1) — staged files:
-  1. Stolen words within the SAME TOPIC — word repeated inside one topic confuses
-     learners and may collide in Room. Cross-topic duplicates are allowed (нормально).
-  2. Wrong word count — every set must have exactly 25 words after DB simulation.
+  1. Stolen words — ANY duplicate (original, languagePair) across ALL sets blocks if
+     a staged file is involved. Room uses a unique index regardless of topic, so any
+     duplicate causes the earlier set to lose a word.
+  2. Wrong word count — every set must have exactly 25 words after Room REPLACE simulation.
   3. Duplicate setId across files.
   4. SetId outside language block (he-ru 1001-1999, en-ru 1-999).
   5. Rarity spread > 2 adjacent levels within a set.
@@ -159,12 +160,13 @@ def parse_sets(kt_file):
 
 def check_stolen_words(all_words, set_topic_map, staged_files=None):
     """
-    Returns (errors, warnings).
-    - error: same (original, lang) in two sets of the SAME topic (bad — word repeats
-             within a topic, which confuses learners and may collide in Room)
-    - error: same (original, lang) in two sets where either has no topic
-    - warning: same (original, lang) in sets of DIFFERENT topics (нормально —
-               cross-topic overlap is acceptable, topics are studied independently)
+    Returns (errors, warnings, final_db).
+
+    Room uses unique(original, languagePair) — any duplicate causes the earlier set
+    to lose that word, regardless of topic. We no longer treat cross-topic as OK.
+
+    - error:   either involved file is staged (block the commit)
+    - warning: both files are unstaged (pre-existing issue, not introduced now)
     """
     staged_files = staged_files or set()
     errors, warnings = [], []
@@ -173,22 +175,21 @@ def check_stolen_words(all_words, set_topic_map, staged_files=None):
         key = (w["original"], w["lang"])
         if key in seen:
             prev = seen[key]
-            loser_topic = set_topic_map.get(prev["setId"], "")
-            winner_topic = set_topic_map.get(w["setId"], "")
             entry = {
                 "original": w["original"],
                 "loser_set": prev["setId"], "loser_file": prev["file"],
                 "winner_set": w["setId"], "winner_file": w["file"],
-                "loser_topic": loser_topic, "winner_topic": winner_topic,
+                "loser_topic": set_topic_map.get(prev["setId"], ""),
+                "winner_topic": set_topic_map.get(w["setId"], ""),
             }
-            if loser_topic and winner_topic and loser_topic != winner_topic:
-                warnings.append(entry)  # cross-topic: нормально
+            if prev["file"] in staged_files or w["file"] in staged_files:
+                errors.append(entry)   # staged file involved → block
             else:
-                errors.append(entry)    # same topic or no topic: block
+                warnings.append(entry) # both unstaged → pre-existing, warn only
             seen[key] = w
         else:
             seen[key] = w
-    return errors, warnings, seen  # seen = final DB state
+    return errors, warnings, seen  # seen = final DB state after Room REPLACE
 
 
 def check_rarity_spread(words_for_sets):
@@ -208,16 +209,26 @@ def check_rarity_spread(words_for_sets):
     return issues
 
 
-def check_set_count(all_words, set_names_map):
-    """Every set must have exactly 25 words (counts raw entries, not de-duped DB state)."""
+def check_set_count(all_words, set_file_map, final_db=None):
+    """
+    Every set must have exactly 25 words after Room DB simulation.
+    Uses final_db (simulated REPLACE state) when available, raw counts otherwise.
+    Returns {setId: (count, filename)}.
+    """
     counts = defaultdict(int)
-    for w in all_words:
-        if w["setId"] != 0:
-            counts[w["setId"]] += 1
+    if final_db:
+        # Count words per set in the simulated DB (after all REPLACE operations)
+        for key, w in final_db.items():
+            if w["setId"] != 0:
+                counts[w["setId"]] += 1
+    else:
+        for w in all_words:
+            if w["setId"] != 0:
+                counts[w["setId"]] += 1
     problems = {}
     for sid, cnt in counts.items():
         if cnt != 25:
-            problems[sid] = (cnt, set_names_map.get(sid, "?"))
+            problems[sid] = (cnt, set_file_map.get(sid, "?"))
     return problems
 
 
@@ -473,10 +484,10 @@ def main():
 
     has_errors = False
 
-    # ── 1. Stolen words (topic-aware, staged-aware) ───────────────────────────
+    # ── 1. Stolen words ───────────────────────────────────────────────────────
     stolen_errors, stolen_warnings, final_db = check_stolen_words(
         all_words, set_topic_map, staged_files)
-    print(f"=== 1. Украденные слова (дубли внутри одной темы): {len(stolen_errors)} ===\n")
+    print(f"=== 1. Украденные слова (дубли в любых темах): {len(stolen_errors)} ===\n")
     if stolen_errors:
         has_errors = True
         by_loser = defaultdict(list)
@@ -488,30 +499,43 @@ def main():
             print(f"  Set {sid} [{items[0]['loser_file']}]{topic_label} теряет {len(items)} слов:")
             for e in items:
                 winner_topic = f" [тема: {e['winner_topic']}]" if e['winner_topic'] else ""
-                print(f"    '{e['original']}' → украдено набором {e['winner_set']}"
+                print(f"    '{e['original']}' → уже есть в наборе {e['winner_set']}"
                       f" [{e['winner_file']}]{winner_topic}")
     else:
-        print("  ✅ Нет дублей внутри одной темы\n")
+        print("  ✅ Нет дублей\n")
 
     if stolen_warnings:
-        print(f"  ℹ️  Кросс-тематические дубли (допустимы): {len(stolen_warnings)}")
+        print(f"  ℹ️  Старые дубли (только unstaged файлы, не блокируют): {len(stolen_warnings)}")
         for w in stolen_warnings[:5]:
-            print(f"    '{w['original']}': {w['loser_topic']} → {w['winner_topic']}")
+            loser_t = w['loser_topic'] or "(без темы)"
+            winner_t = w['winner_topic'] or "(без темы)"
+            print(f"    '{w['original']}': set {w['loser_set']} [{loser_t}] → set {w['winner_set']} [{winner_t}]")
         if len(stolen_warnings) > 5:
             print(f"    ... и ещё {len(stolen_warnings) - 5}")
         print()
 
-    # ── 2. Word count per set ─────────────────────────────────────────────────
-    count_problems = check_set_count(all_words, set_file_map)
-    print(f"=== 2. Наборы ≠ 25 слов: {len(count_problems)} ===\n")
-    if count_problems:
+    # ── 2. Word count per set (simulated DB state) ────────────────────────────
+    count_problems = check_set_count(all_words, set_file_map, final_db)
+    staged_count_problems = {sid: v for sid, v in count_problems.items()
+                              if v[1] in staged_files} if staged_files else {}
+    old_count_problems = {sid: v for sid, v in count_problems.items()
+                          if v[1] not in staged_files}
+    total_blocking = len(staged_count_problems)
+    print(f"=== 2. Наборы ≠ 25 слов (после симуляции Room): {total_blocking} ===\n")
+    if staged_count_problems:
         has_errors = True
-        for sid in sorted(count_problems):
-            cnt, fname = count_problems[sid]
-            print(f"  Set {sid}: {cnt} слов [{fname}]")
+        for sid in sorted(staged_count_problems):
+            cnt, fname = staged_count_problems[sid]
+            print(f"  Set {sid}: {cnt} слов в DB [{fname}] — слово украдено более поздним набором")
         print()
     else:
-        print("  ✅ Все наборы по 25 слов\n")
+        print("  ✅ Все staged наборы по 25 слов в DB\n")
+    if old_count_problems:
+        print(f"  ℹ️  Старые наборы с <25 слов в DB (не staged): {len(old_count_problems)}")
+        for sid in sorted(old_count_problems):
+            cnt, fname = old_count_problems[sid]
+            print(f"    Set {sid}: {cnt} слов [{fname}]")
+        print()
 
     # ── 3. Duplicate setIds ───────────────────────────────────────────────────
     dup_setid_errors = check_duplicate_setids(all_sets)
