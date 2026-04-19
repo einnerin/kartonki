@@ -19,12 +19,31 @@ DATA_DIR    = "app/src/main/java/com/example/kartonki/data"
 
 
 def load_all_words():
-    """Возвращает множество всех original-слов во всех he-ru файлах."""
-    used = set()
+    """Возвращает dict: original → {'rarity': str, 'topic': str, 'setId': int} для всех he-ru файлов."""
+    used = {}
     for f in glob.glob(os.path.join(DATA_DIR, "WordDataHebrew*.kt")):
         text = open(f, encoding='utf-8').read()
-        for m in re.finditer(r'original\s*=\s*"([^"]+)"', text):
-            used.add(m.group(1))
+        # Parse set topics
+        set_topics = {}
+        for m in re.finditer(r'WordSetEntity\([^)]+\)', text, re.DOTALL):
+            block = m.group(0)
+            id_m = re.search(r'\bid\s*=\s*(\d+)', block)
+            topic_m = re.search(r'topic\s*=\s*"([^"]+)"', block)
+            if id_m:
+                set_topics[int(id_m.group(1))] = topic_m.group(1) if topic_m else ""
+        for m in re.finditer(r'WordEntity\([^)]+\)', text, re.DOTALL):
+            block = m.group(0)
+            orig_m = re.search(r'original\s*=\s*"([^"]+)"', block)
+            rar_m = re.search(r'rarity\s*=\s*"([^"]+)"', block)
+            sid_m = re.search(r'setId\s*=\s*(\d+)', block)
+            if orig_m:
+                orig = orig_m.group(1)
+                sid = int(sid_m.group(1)) if sid_m else 0
+                used[orig] = {
+                    'rarity': rar_m.group(1) if rar_m else 'COMMON',
+                    'topic': set_topics.get(sid, ""),
+                    'setId': sid,
+                }
     return used
 
 
@@ -109,16 +128,38 @@ def show_plan(files):
                 print(f"  {wid:>8}  {rar:10}  {target:10}  {flag} {orig}")
 
 
-def check_words(candidates):
+def check_words(candidates, candidate_topic=None, candidate_rarity=None):
+    """
+    candidate_topic:  тема набора, куда хотим добавить слово (для проверки same-topic)
+    candidate_rarity: редкость, с которой хотим добавить слово (для проверки разной редкости)
+    """
     used = load_all_words()
     print(f"Проверка {len(candidates)} слов против {len(used)} занятых:\n")
-    free  = [w for w in candidates if w not in used]
-    taken = [w for w in candidates if w in used]
-    for w in free:
-        print(f"  ✅ FREE   {w}")
-    for w in taken:
-        print(f"  ❌ TAKEN  {w}")
-    print(f"\nСвободны: {len(free)}  Заняты: {len(taken)}")
+    free = ok_diff_topic = blocked_same_topic = blocked_diff_rarity = 0
+    for w in candidates:
+        if w not in used:
+            print(f"  ✅ FREE              {w}")
+            free += 1
+        else:
+            info = used[w]
+            ex_topic = info['topic']
+            ex_rarity = info['rarity']
+            same_topic = (candidate_topic and ex_topic == candidate_topic)
+            diff_rarity = (candidate_rarity and ex_rarity != candidate_rarity)
+            if same_topic or diff_rarity:
+                reason = "та же тема" if same_topic else f"редкость: {ex_rarity}"
+                print(f"  ❌ CONFLICT  [{reason}]  {w}  (set {info['setId']})")
+                if same_topic:
+                    blocked_same_topic += 1
+                else:
+                    blocked_diff_rarity += 1
+            else:
+                # Different topic, same rarity → acceptable
+                print(f"  ✅ OK (др. тема)     {w}  [{ex_topic}, {ex_rarity}, set {info['setId']}]")
+                ok_diff_topic += 1
+    total_free = free + ok_diff_topic
+    total_blocked = blocked_same_topic + blocked_diff_rarity
+    print(f"\nСвободны: {free}  ОК (др. тема): {ok_diff_topic}  Конфликт: {total_blocked}")
 
 
 # ── entrypoint ────────────────────────────────────────────────────────────────

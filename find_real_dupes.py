@@ -170,34 +170,53 @@ def check_stolen_words(all_words, set_topic_map, staged_files=None):
     """
     Returns (errors, warnings, final_db).
 
-    Room uses unique(original, languagePair) — any duplicate causes the earlier set
-    to lose that word, regardless of topic. We no longer treat cross-topic as OK.
+    Duplicate (original, languagePair) is a blocking error only when:
+      1. Both words belong to the same topic (Room overwrites → set loses word), OR
+      2. The same word appears with different rarity anywhere (inconsistency).
+    Same word + same rarity + different topic = acceptable (no error, no warning).
 
-    - error:   either involved file is staged (block the commit)
-    - warning: both files are unstaged (pre-existing issue, not introduced now)
+    - error:   staged file involved → block the commit
+    - warning: both files unstaged AND it's a blocking-class conflict → pre-existing
     """
     staged_files = staged_files or set()
     errors, warnings = [], []
-    seen = {}  # (original, lang) -> word
+    # final_db uses (original, lang, setId) so each set keeps its own word count
+    final_db = {}
+    seen = {}  # (original, lang) -> first word seen, for duplicate detection
+
     for w in all_words:
         key = (w["original"], w["lang"])
+        set_key = (w["original"], w["lang"], w["setId"])
+        final_db[set_key] = w
+
         if key in seen:
             prev = seen[key]
-            entry = {
-                "original": w["original"],
-                "loser_set": prev["setId"], "loser_file": prev["file"],
-                "winner_set": w["setId"], "winner_file": w["file"],
-                "loser_topic": set_topic_map.get(prev["setId"], ""),
-                "winner_topic": set_topic_map.get(w["setId"], ""),
-            }
-            if prev["file"] in staged_files or w["file"] in staged_files:
-                errors.append(entry)   # staged file involved → block
-            else:
-                warnings.append(entry) # both unstaged → pre-existing, warn only
-            seen[key] = w
+            prev_topic = set_topic_map.get(prev["setId"], "")
+            curr_topic = set_topic_map.get(w["setId"], "")
+            same_topic = (prev_topic == curr_topic)
+            same_rarity = (prev["rarity"] == w["rarity"])
+
+            # Only flag if truly problematic
+            is_conflict = same_topic or not same_rarity
+            if is_conflict:
+                entry = {
+                    "original": w["original"],
+                    "loser_set": prev["setId"], "loser_file": prev["file"],
+                    "winner_set": w["setId"], "winner_file": w["file"],
+                    "loser_topic": prev_topic,
+                    "winner_topic": curr_topic,
+                    "same_topic": same_topic,
+                    "same_rarity": same_rarity,
+                }
+                if prev["file"] in staged_files or w["file"] in staged_files:
+                    errors.append(entry)
+                else:
+                    warnings.append(entry)
+            # cross-topic same-rarity → silently acceptable
         else:
             seen[key] = w
-    return errors, warnings, seen  # seen = final DB state after Room REPLACE
+
+    return errors, warnings, final_db
 
 
 def check_rarity_spread(words_for_sets):
@@ -495,10 +514,10 @@ def main():
 
     has_errors = False
 
-    # ── 1. Stolen words ───────────────────────────────────────────────────────
+    # ── 1. Word conflicts (same topic OR different rarity) ────────────────────
     stolen_errors, stolen_warnings, final_db = check_stolen_words(
         all_words, set_topic_map, staged_files)
-    print(f"=== 1. Украденные слова (дубли в любых темах): {len(stolen_errors)} ===\n")
+    print(f"=== 1. Украденные слова (дубли в той же теме или разной редкости): {len(stolen_errors)} ===\n")
     if stolen_errors:
         has_errors = True
         by_loser = defaultdict(list)
@@ -510,17 +529,19 @@ def main():
             print(f"  Set {sid} [{items[0]['loser_file']}]{topic_label} теряет {len(items)} слов:")
             for e in items:
                 winner_topic = f" [тема: {e['winner_topic']}]" if e['winner_topic'] else ""
+                reason = "та же тема" if e["same_topic"] else "разная редкость"
                 print(f"    '{e['original']}' → уже есть в наборе {e['winner_set']}"
-                      f" [{e['winner_file']}]{winner_topic}")
+                      f" [{e['winner_file']}]{winner_topic} ({reason})")
     else:
         print("  ✅ Нет дублей\n")
 
     if stolen_warnings:
-        print(f"  ℹ️  Старые дубли (только unstaged файлы, не блокируют): {len(stolen_warnings)}")
+        print(f"  ℹ️  Старые конфликты (только unstaged файлы, не блокируют): {len(stolen_warnings)}")
         for w in stolen_warnings[:5]:
             loser_t = w['loser_topic'] or "(без темы)"
             winner_t = w['winner_topic'] or "(без темы)"
-            print(f"    '{w['original']}': set {w['loser_set']} [{loser_t}] → set {w['winner_set']} [{winner_t}]")
+            reason = "та же тема" if w["same_topic"] else "разная редкость"
+            print(f"    '{w['original']}': set {w['loser_set']} [{loser_t}] → set {w['winner_set']} [{winner_t}] ({reason})")
         if len(stolen_warnings) > 5:
             print(f"    ... и ещё {len(stolen_warnings) - 5}")
         print()
