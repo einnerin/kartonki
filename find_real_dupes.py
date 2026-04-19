@@ -3,16 +3,17 @@
 """
 Validates all WordData files against Room's insertion rules and quality rules.
 
-Blocking errors (exit 1) — staged files:
-  1. Stolen words — ANY duplicate (original, languagePair) across ALL sets blocks if
-     a staged file is involved. Room uses a unique index regardless of topic, so any
-     duplicate causes the earlier set to lose a word.
+Blocking errors (exit 1) — ANY file, staged or not:
+  1. Stolen words — ANY duplicate (original, languagePair) across ALL sets.
+     Room uses a unique index regardless of topic, any duplicate causes a set to lose a word.
   2. Wrong word count — every set must have exactly 25 words after Room REPLACE simulation.
   3. Duplicate setId across files.
   4. SetId outside language block (he-ru 1001-1999, en-ru 1-999).
-  5. Rarity spread > 2 adjacent levels within a set.
+
+Blocking errors (exit 1) — staged files only:
+  5. Rarity spread > 2 adjacent levels within a NEW set.
   6. Missing topic or level=0 in staged sets (both are required).
-  7. Derivative/same-root word pairs within the same staged set.
+  7. Derivative/same-root word pairs within the same NEW staged set.
 
 Warnings (never block):
   8. Rarity spread in modified/non-staged files (old data, fixed in Phase 4).
@@ -117,7 +118,8 @@ def _parse_blocks(content, entity_name):
 
 def parse_registry_order():
     text = REGISTRY_FILE.read_text(encoding="utf-8")
-    m = re.search(r'val allWords.*?get\(\)\s*=(.*?)(?=\n[ \t]*val |\Z)', text, re.DOTALL)
+    # Support both `get() =` and `by lazy {` syntax
+    m = re.search(r'val allWords.*?(?:get\(\)\s*=|by\s+lazy\s*\{)(.*?)(?=\n[ \t]*val |\n\})', text, re.DOTALL)
     if not m:
         raise RuntimeError("Could not find allWords in WordRegistry.kt")
     body = m.group(1)
@@ -507,60 +509,40 @@ def main():
 
     has_errors = False
 
-    # ── 1. Word conflicts (same topic OR different rarity) ────────────────────
+    # ── 1. Stolen words — ALL conflicts block, staged or not ─────────────────
     stolen_errors, stolen_warnings, final_db = check_stolen_words(
         all_words, set_topic_map, staged_files)
-    print(f"=== 1. Украденные слова (дубли в той же теме или разной редкости): {len(stolen_errors)} ===\n")
-    if stolen_errors:
+    all_conflicts = stolen_errors + stolen_warnings  # both are now blocking
+    print(f"=== 1. Украденные слова (дубли original+languagePair): {len(all_conflicts)} ===\n")
+    if all_conflicts:
         has_errors = True
         by_loser = defaultdict(list)
-        for e in stolen_errors:
+        for e in all_conflicts:
             by_loser[e["loser_set"]].append(e)
         for sid in sorted(by_loser):
             items = by_loser[sid]
             topic_label = f" [тема: {items[0]['loser_topic']}]" if items[0]['loser_topic'] else ""
-            print(f"  Set {sid} [{items[0]['loser_file']}]{topic_label} теряет {len(items)} слов:")
+            staged_marker = " [staged]" if items[0]['loser_file'] in staged_files else ""
+            print(f"  Set {sid} [{items[0]['loser_file']}]{topic_label}{staged_marker} теряет {len(items)} слов:")
             for e in items:
                 winner_topic = f" [тема: {e['winner_topic']}]" if e['winner_topic'] else ""
-                reason = "та же тема" if e["same_topic"] else "разная редкость"
                 print(f"    '{e['original']}' → уже есть в наборе {e['winner_set']}"
-                      f" [{e['winner_file']}]{winner_topic} ({reason})")
+                      f" [{e['winner_file']}]{winner_topic}")
     else:
         print("  ✅ Нет дублей\n")
 
-    if stolen_warnings:
-        print(f"  ℹ️  Старые конфликты (только unstaged файлы, не блокируют): {len(stolen_warnings)}")
-        for w in stolen_warnings[:5]:
-            loser_t = w['loser_topic'] or "(без темы)"
-            winner_t = w['winner_topic'] or "(без темы)"
-            reason = "та же тема" if w["same_topic"] else "разная редкость"
-            print(f"    '{w['original']}': set {w['loser_set']} [{loser_t}] → set {w['winner_set']} [{winner_t}] ({reason})")
-        if len(stolen_warnings) > 5:
-            print(f"    ... и ещё {len(stolen_warnings) - 5}")
-        print()
-
-    # ── 2. Word count per set (simulated DB state) ────────────────────────────
+    # ── 2. Word count per set — ALL sets must have 25 words ──────────────────
     count_problems = check_set_count(all_words, set_file_map, final_db)
-    staged_count_problems = {sid: v for sid, v in count_problems.items()
-                              if v[1] in staged_files} if staged_files else {}
-    old_count_problems = {sid: v for sid, v in count_problems.items()
-                          if v[1] not in staged_files}
-    total_blocking = len(staged_count_problems)
-    print(f"=== 2. Наборы ≠ 25 слов (после симуляции Room): {total_blocking} ===\n")
-    if staged_count_problems:
+    print(f"=== 2. Наборы ≠ 25 слов (после симуляции Room): {len(count_problems)} ===\n")
+    if count_problems:
         has_errors = True
-        for sid in sorted(staged_count_problems):
-            cnt, fname = staged_count_problems[sid]
-            print(f"  Set {sid}: {cnt} слов в DB [{fname}] — слово украдено более поздним набором")
+        for sid in sorted(count_problems):
+            cnt, fname = count_problems[sid]
+            staged_marker = " [staged]" if fname in staged_files else ""
+            print(f"  Set {sid}: {cnt} слов в DB [{fname}]{staged_marker} — слово украдено более поздним набором")
         print()
     else:
-        print("  ✅ Все staged наборы по 25 слов в DB\n")
-    if old_count_problems:
-        print(f"  ℹ️  Старые наборы с <25 слов в DB (не staged): {len(old_count_problems)}")
-        for sid in sorted(old_count_problems):
-            cnt, fname = old_count_problems[sid]
-            print(f"    Set {sid}: {cnt} слов [{fname}]")
-        print()
+        print("  ✅ Все наборы по 25 слов в DB\n")
 
     # ── 3. Duplicate setIds ───────────────────────────────────────────────────
     dup_setid_errors = check_duplicate_setids(all_sets)

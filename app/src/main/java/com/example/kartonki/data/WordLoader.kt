@@ -1,5 +1,7 @@
 package com.example.kartonki.data
 
+import androidx.room.withTransaction
+import com.example.kartonki.data.db.AppDatabase
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
 import com.example.kartonki.data.db.dao.WordSetMembershipDao
@@ -24,6 +26,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class WordLoader @Inject constructor(
+    private val db: AppDatabase,
     private val wordSetDao: WordSetDao,
     private val wordDao: WordDao,
     private val wordSetMembershipDao: WordSetMembershipDao,
@@ -48,31 +51,33 @@ class WordLoader @Inject constructor(
         if (storedVersion >= WordDataVersion.CURRENT) return
 
         val allSets = WordRegistry.allSets
-        // Insert sets not yet in the DB; existing rows skipped (IGNORE).
-        wordSetDao.insertSets(allSets)
-        // Sync seed-controlled metadata (name, description, orderIndex) for all sets,
-        // without touching user-owned fields like isFavorite.
-        allSets.forEach { set ->
-            wordSetDao.updateSetMetadata(set.id, set.name, set.description, set.orderIndex, set.topic, set.level)
-        }
-
-        // Restore any isFavorite flags that were saved before a migration wiped word_sets.
-        // No-op if retained_favorites is empty (the normal case).
-        wordSetDao.restoreFavoritesFromRetained()
-        wordSetDao.clearRetainedFavorites()
-
         val allWords = WordRegistry.allWords
-
         val pvpOriginals = buildDefaultPvpOriginals(allWords)
         val wordsWithFlag = allWords.map { w ->
             if (w.original in pvpOriginals) w.copy(isDefaultPvpCard = true) else w
         }
-        wordsWithFlag.chunked(500).forEach { chunk -> wordDao.insertAllOrReplace(chunk) }
-
-        // Populate membership table from canonical setId
         val memberships = allWords.map { WordSetMembershipEntity(it.id, it.setId) }
-        wordSetMembershipDao.deleteAll()
-        memberships.chunked(500).forEach { chunk -> wordSetMembershipDao.insertAll(chunk) }
+
+        db.withTransaction {
+            // Insert sets not yet in the DB; existing rows skipped (IGNORE).
+            wordSetDao.insertSets(allSets)
+            // Sync seed-controlled metadata (name, description, orderIndex) for all sets,
+            // without touching user-owned fields like isFavorite.
+            allSets.forEach { set ->
+                wordSetDao.updateSetMetadata(set.id, set.name, set.description, set.orderIndex, set.topic, set.level)
+            }
+
+            // Restore any isFavorite flags that were saved before a migration wiped word_sets.
+            // No-op if retained_favorites is empty (the normal case).
+            wordSetDao.restoreFavoritesFromRetained()
+            wordSetDao.clearRetainedFavorites()
+
+            wordsWithFlag.chunked(500).forEach { chunk -> wordDao.insertAllOrReplace(chunk) }
+
+            // Populate membership table from canonical setId
+            wordSetMembershipDao.deleteAll()
+            memberships.chunked(500).forEach { chunk -> wordSetMembershipDao.insertAll(chunk) }
+        }
 
         prefs.setWordDataVersion(WordDataVersion.CURRENT)
     }

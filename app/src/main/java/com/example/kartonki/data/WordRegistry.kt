@@ -17,8 +17,8 @@ import com.example.kartonki.data.db.entity.WordSetEntity
  */
 object WordRegistry {
 
-    val allSets: List<WordSetEntity>
-        get() = WordDataEnglish.sets + WordDataEnglishExpanded.sets +
+    val allSets: List<WordSetEntity> by lazy {
+        WordDataEnglish.sets + WordDataEnglishExpanded.sets +
                 WordDataEnglishBatch3.sets +
                 WordDataEnglishBatch4.sets +
                 WordDataEnglishBatch5.sets +
@@ -95,9 +95,10 @@ object WordRegistry {
                 WordDataHebrewBatch49.sets +
                 WordDataHebrewBatch50.sets +
                 WordDataHebrewBatch51.sets
+    }
 
-    val allWords: List<WordEntity>
-        get() = WordDataEnglish.words + WordDataEnglishExpanded.words +
+    val allWords: List<WordEntity> by lazy {
+        WordDataEnglish.words + WordDataEnglishExpanded.words +
                 WordDataEnglishExpanded.achievementRewardWords() +
                 WordDataEnglishBatch3.words +
                 WordDataEnglishBatch4.words +
@@ -176,9 +177,11 @@ object WordRegistry {
                 WordDataHebrewBatch49.words +
                 WordDataHebrewBatch50.words +
                 WordDataHebrewBatch51.words
+    }
 
-    val allPrebuiltDecks: List<DeckSeed>
-        get() = WordDataEnglish.prebuiltDecks + WordDataHebrew.prebuiltDecks
+    val allPrebuiltDecks: List<DeckSeed> by lazy {
+        WordDataEnglish.prebuiltDecks + WordDataHebrew.prebuiltDecks
+    }
 
     /**
      * Valid set-ID ranges per language pair.
