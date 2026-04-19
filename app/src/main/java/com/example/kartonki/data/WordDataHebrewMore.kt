@@ -997,7 +997,7 @@ object WordDataHebrewMore {
 
         WordEntity(id = 101301, setId = 1013, languagePair = "he-ru", original = "סְצֶנָה", translation = "сцена / эпизод (в фильме)", transliteration = "stzena", rarity = "UNCOMMON"),
         WordEntity(
-            id = 101302, setId = 1013, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 101302, setId = 1013, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "filming", transliteration = "matsle​ma",
             original = "מַצְלֵמָה", translation = "камера / фотоаппарат",
             definition = "מַכְשִׁיר לְצִלּוּם תְּמוּנוֹת אוֹ וִידֵאוֹ.",
@@ -1073,7 +1073,7 @@ object WordDataHebrewMore {
             example = "עָשִׂינוּ חֲזָרָה לִפְנֵי הַצִּלּוּם.",
             exampleNative = "Мы провели חֲזָרָה перед съёмкой.",
         ),
-        WordEntity(id = 101315, setId = 1013, languagePair = "he-ru", original = "מְנַהֵל צִלּוּם", translation = "оператор-постановщик / директор съёмки", transliteration = "menahel tsilum", rarity = "UNCOMMON"),
+        WordEntity(id = 101315, setId = 1013, languagePair = "he-ru", original = "מְנַהֵל צִלּוּם", translation = "оператор-постановщик / директор съёмки", transliteration = "menahel tsilum", rarity = "RARE"),
         WordEntity(id = 101316, setId = 1013, languagePair = "he-ru", original = "פּוֹרמַט צִלּוּם", translation = "формат съёмки", transliteration = "pormat tsilum", rarity = "RARE"),
         WordEntity(
             id = 101317, setId = 1013, languagePair = "he-ru", rarity = "RARE",

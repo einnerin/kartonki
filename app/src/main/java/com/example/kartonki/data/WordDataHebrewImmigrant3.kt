@@ -158,7 +158,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Компания платит полные דְּמֵי נְסִיעוֹת.",
         ),
         WordEntity(
-            id = 103016, setId = 1030, languagePair = "he-ru", rarity = "RARE",
+            id = 103016, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work", transliteration = "tluush sakhar",
             original = "תְּלוּשׁ שָׂכָר", translation = "расчётный листок / расчётка",
             definition = "מִסְמָךְ חוֹדְשִׁי הַמְּפָרֵט אֶת הַשָׂכָר, הַנִּיכּוּיִים וְהַתַּשְׁלוּמִים.",
@@ -167,7 +167,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Банк запросил תְּלוּשׁ שָׂכָר за три месяца.",
         ),
         WordEntity(
-            id = 103017, setId = 1030, languagePair = "he-ru", rarity = "RARE",
+            id = 103017, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work", transliteration = "khoze avoda",
             original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор",
             definition = "הֶסְכֵּם מִשְׁפָּטִי בֵּין הַמַּעֲסִיק לָעוֹבֵד הַמְּגַדֵּר אֶת תְּנָאֵי הָעֲבוֹדָה.",
@@ -176,7 +176,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Я подписал חוֹזֶה עֲבוֹדָה на два года.",
         ),
         WordEntity(
-            id = 103018, setId = 1030, languagePair = "he-ru", rarity = "RARE",
+            id = 103018, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work", transliteration = "tkufat nisayon",
             original = "תְּקוּפַת נִסָּיוֹן", translation = "испытательный срок",
             definition = "תְּקוּפָה רִאשׁוֹנִית בָּעֲבוֹדָה שֶׁבָּהּ הַמַּעֲסִיק מַעֲרִיךְ אֶת הָעוֹבֵד.",
@@ -185,7 +185,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "תְּקוּפַת נִסָּיוֹן составляет шесть месяцев.",
         ),
         WordEntity(
-            id = 103019, setId = 1030, languagePair = "he-ru", rarity = "RARE",
+            id = 103019, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work", transliteration = "tnai avoda",
             original = "תְּנַאֵי עֲבוֹדָה", translation = "условия труда",
             definition = "הַמַּאֲפְיָנִים שֶׁל מְקוֹם הָעֲבוֹדָה — שָׂכָר, שָׁעוֹת, חוּפְשָׁה וְכוּ'.",
@@ -194,7 +194,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "תְּנַאֵי עֲבוֹדָה в новой компании очень хорошие.",
         ),
         WordEntity(
-            id = 103020, setId = 1030, languagePair = "he-ru", rarity = "RARE",
+            id = 103020, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work", transliteration = "hakhshara miktzo'it",
             original = "הַכְשָׁרָה מִקְצוֹעִית", translation = "профессиональная подготовка",
             definition = "לִימּוּד מְיוּחָד לַרְכִישַׁת כִּשּׁוּרִים לְמִקְצוֹעַ חָדָשׁ.",
@@ -343,7 +343,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "מַשְׁגִּיחַ помогает маленьким детям на перемене.",
         ),
         WordEntity(
-            id = 103116, setId = 1031, languagePair = "he-ru", rarity = "RARE",
+            id = 103116, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "tsaharonn",
             original = "צַהֲרוֹן", translation = "продлёнка / послеполудённый присмотр",
             definition = "שֵׁרוּת שְׁמִירַת יְלָדִים אַחֲרֵי הַלִּימּוּדִים עַד שֶׁהַהוֹרִים חוֹזְרִים מֵהָעֲבוֹדָה.",
@@ -352,7 +352,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Ребёнок на צַהֲרוֹן до четырёх часов.",
         ),
         WordEntity(
-            id = 103117, setId = 1031, languagePair = "he-ru", rarity = "RARE",
+            id = 103117, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "du\"kh",
             original = "דּוּ\"חַ", translation = "отчёт / справка",
             definition = "מִסְמָךְ רְשְׁמִי הַמּוֹסֵר מֵידָע עַל מַצַּב הַתַּלְמִיד.",
@@ -361,7 +361,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Мы получили периодический דּוּ\"חַ от учителя.",
         ),
         WordEntity(
-            id = 103118, setId = 1031, languagePair = "he-ru", rarity = "RARE",
+            id = 103118, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "tokhnit limudim",
             original = "תָּכְנִית לִימּוּדִים", translation = "учебная программа / curriculum",
             definition = "הַמָּקְצוּעוֹת וְהַחוֹמֶר הַנִּלְמָד בְּבֵית הַסֵּפֶר בְּאוֹתָהּ שָׁנָה.",
@@ -370,7 +370,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "תָּכְנִית לִימּוּדִים в Израиле очень отличается от российской.",
         ),
         WordEntity(
-            id = 103119, setId = 1031, languagePair = "he-ru", rarity = "RARE",
+            id = 103119, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "sikhat horim",
             original = "שִׂיחַת הוֹרִים", translation = "родительское собрание",
             definition = "פְּגִישָׁה בֵּין הַהוֹרִים לַמּוֹרִים לְדִיּוּן בְּהִתְקַדְּמוּת הַתַּלְמִיד.",
@@ -379,7 +379,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Следующая שִׂיחַת הוֹרִים пятого ноября.",
         ),
         WordEntity(
-            id = 103120, setId = 1031, languagePair = "he-ru", rarity = "RARE",
+            id = 103120, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "mesilat siyum",
             original = "מְסִיבַּת סִיּוּם", translation = "выпускной вечер",
             definition = "חֲגִיגָה בְּסוֹף שְׁנַת הַלִּימּוּדִים אוֹ בִּגְמַר שְׁלָב לִימּוּדִי.",
@@ -510,7 +510,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Посылка стоит дороже, потому что מִשְׁקַל превысил максимум.",
         ),
         WordEntity(
-            id = 103214, setId = 1032, languagePair = "he-ru", rarity = "RARE",
+            id = 103214, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "do'ar rashum",
             original = "דוֹאַר רָשׁוּם", translation = "заказное письмо / отправление",
             definition = "מִשְׁלוֹחַ עִם מַעֲקָב וְאִישּׁוּר קַבָּלָה שֶׁל הַמְּקַבֵּל.",
@@ -519,7 +519,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Я отправил документы דּוֹאַר רָשׁוּם для надёжности.",
         ),
         WordEntity(
-            id = 103215, setId = 1032, languagePair = "he-ru", rarity = "RARE",
+            id = 103215, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "ishur kabala",
             original = "אִישּׁוּר קַבָּלָה", translation = "уведомление о вручении",
             definition = "אִישּׁוּר חֲתוּם שֶׁהַמְּקַבֵּל קִיבֵּל אֶת הַמִּשְׁלוֹחַ.",
@@ -528,7 +528,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Я запросил אִישּׁוּר קַבָּלָה чтобы убедиться, что посылка дошла.",
         ),
         WordEntity(
-            id = 103216, setId = 1032, languagePair = "he-ru", rarity = "RARE",
+            id = 103216, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "ta do'ar",
             original = "תֵּא דֹּאַר", translation = "абонентский ящик (а/я)",
             definition = "תֵּיבָה מְמוּסְפֶּרֶת בְּבֵית הַדֹּאַר לְקַבָּלַת דֹּאַר בְּמָקוֹם קָבוּעַ.",
@@ -537,7 +537,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "У нашей компании есть תֵּא דֹּאַר в главном почтовом отделении.",
         ),
         WordEntity(
-            id = 103217, setId = 1032, languagePair = "he-ru", rarity = "RARE",
+            id = 103217, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "yevua",
             original = "יְבוּא", translation = "импорт",
             definition = "הַכְנָסַת סְחוֹרוֹת מֵחוּץ לָאָרֶץ לְיִשְׂרָאֵל.",
@@ -546,7 +546,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Посылки יְבוּא проходят таможенный досмотр.",
         ),
         WordEntity(
-            id = 103218, setId = 1032, languagePair = "he-ru", rarity = "RARE",
+            id = 103218, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "yitsua",
             original = "יִצּוּא", translation = "экспорт",
             definition = "שִׁלּוּחַ סְחוֹרוֹת מִיִּשְׂרָאֵל לְחוּץ לָאָרֶץ.",
@@ -555,7 +555,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "יִצּוּא технологий из Израиля растёт каждый год.",
         ),
         WordEntity(
-            id = 103219, setId = 1032, languagePair = "he-ru", rarity = "RARE",
+            id = 103219, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "hatsharat mekhes",
             original = "הַצְהָרַת מֶכֶס", translation = "таможенная декларация",
             definition = "טֹפֶס הַמְּפָרֵט אֶת תֶּכֶן הַחֲבִילָה לְצֹרֶךְ בְּדִיקָה.",
@@ -564,7 +564,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Я заполнил הַצְהָרַת מֶכֶס для посылки, отправленной за рубеж.",
         ),
         WordEntity(
-            id = 103220, setId = 1032, languagePair = "he-ru", rarity = "RARE",
+            id = 103220, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "alut mishlokh",
             original = "עֲלוּת מִשְׁלוֹחַ", translation = "стоимость доставки",
             definition = "הַסְּכוּם שֶׁמְּשַׁלְּמִים עַל שִׁלּוּחַ חֲבִילָה אוֹ מִכְתָּב.",
@@ -722,7 +722,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "כַּרִּית אֲוִיר раскрылась в момент столкновения.",
         ),
         WordEntity(
-            id = 103317, setId = 1033, languagePair = "he-ru", rarity = "RARE",
+            id = 103317, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "driving", transliteration = "navigatsia",
             original = "נָוִיגָצִיָּה", translation = "навигатор / навигация",
             definition = "מַעֲרֶכֶת הַמַּדְרִיכָה אֶת הַנֶּהָג בְּעֶזְרַת GPS.",
@@ -731,7 +731,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "נָוִיגָצִיָּה сказала сделать разворот.",
         ),
         WordEntity(
-            id = 103318, setId = 1033, languagePair = "he-ru", rarity = "RARE",
+            id = 103318, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "driving", transliteration = "te'unat drakhim",
             original = "תְּאוּנַת דְּרָכִים", translation = "дорожно-транспортное происшествие",
             definition = "פְּגִיעָה בֵּין כְּלֵי רֶכֶב אוֹ בֵּינָם לְבֵין הַסְּבִיבָה.",
@@ -740,7 +740,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "На перекрёстке произошла תְּאוּנַת דְּרָכִים и образовалась пробка.",
         ),
         WordEntity(
-            id = 103319, setId = 1033, languagePair = "he-ru", rarity = "RARE",
+            id = 103319, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "driving", transliteration = "heiter nehiga",
             original = "הֶיתֵּר נְהִיגָה", translation = "разрешение на вождение (временное)",
             definition = "אֲשַׁרְתָּ זְמַנִּית לִנְהוֹג לִפְנֵי קַבָּלַת הָרִשָּׁיוֹן הַמָּלֵא.",
@@ -749,7 +749,7 @@ object WordDataHebrewImmigrant3 {
             exampleNative = "Я получил временный הֶיתֵּר נְהִיגָה до конвертации российских прав.",
         ),
         WordEntity(
-            id = 103320, setId = 1033, languagePair = "he-ru", rarity = "RARE",
+            id = 103320, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "driving", transliteration = "khukei tnua",
             original = "חֻקֵּי תְּנוּעָה", translation = "правила дорожного движения",
             definition = "כְּלָלִים מִשְׁפָּטִיִּים הַמְּסַדְּרִים אֶת הַנְּסִיעָה בַּכְּבִישִׁים.",

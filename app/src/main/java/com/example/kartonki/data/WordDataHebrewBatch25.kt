@@ -134,13 +134,13 @@ object WordDataHebrewBatch25 {
         // ── Set 1099: ИТ-безопасность ──────────────────────────────────────
 
         // RARE (B2)
-        WordEntity(id = 109901, setId = 1099, languagePair = "he-ru", original = "הַצְפָּנָה סִימֶטְרִית", translation = "симметричное шифрование", transliteration = "hatzpana simetrit", rarity = "RARE"),
-        WordEntity(id = 109902, setId = 1099, languagePair = "he-ru", original = "אוֹתֶנְטִיקַצְיָה", translation = "аутентификация", transliteration = "otentikatziya", rarity = "RARE"),
-        WordEntity(id = 109903, setId = 1099, languagePair = "he-ru", original = "אִישּׁוּר דִּיגִיטַלִי", translation = "цифровой сертификат", transliteration = "ishur digitali", rarity = "RARE"),
-        WordEntity(id = 109904, setId = 1099, languagePair = "he-ru", original = "גִּבּוּי נְתוּנִים", translation = "резервное копирование данных", transliteration = "gibuy netumim", rarity = "RARE"),
-        WordEntity(id = 109905, setId = 1099, languagePair = "he-ru", original = "סְרִיקַת חוּלְשׁוֹת", translation = "сканирование уязвимостей", transliteration = "srikat khulshot", rarity = "RARE"),
-        WordEntity(id = 109906, setId = 1099, languagePair = "he-ru", original = "חֲלוּקַת רְשָׁת", translation = "сегментация сети", transliteration = "khalukat reshet", rarity = "RARE"),
-        WordEntity(id = 109907, setId = 1099, languagePair = "he-ru", original = "כְּלֵי פְּרִיצָה", translation = "инструменты взлома", transliteration = "kle pritza", rarity = "RARE"),
+        WordEntity(id = 109901, setId = 1099, languagePair = "he-ru", original = "הַצְפָּנָה סִימֶטְרִית", translation = "симметричное шифрование", transliteration = "hatzpana simetrit", rarity = "EPIC"),
+        WordEntity(id = 109902, setId = 1099, languagePair = "he-ru", original = "אוֹתֶנְטִיקַצְיָה", translation = "аутентификация", transliteration = "otentikatziya", rarity = "EPIC"),
+        WordEntity(id = 109903, setId = 1099, languagePair = "he-ru", original = "אִישּׁוּר דִּיגִיטַלִי", translation = "цифровой сертификат", transliteration = "ishur digitali", rarity = "EPIC"),
+        WordEntity(id = 109904, setId = 1099, languagePair = "he-ru", original = "גִּבּוּי נְתוּנִים", translation = "резервное копирование данных", transliteration = "gibuy netumim", rarity = "EPIC"),
+        WordEntity(id = 109905, setId = 1099, languagePair = "he-ru", original = "סְרִיקַת חוּלְשׁוֹת", translation = "сканирование уязвимостей", transliteration = "srikat khulshot", rarity = "EPIC"),
+        WordEntity(id = 109906, setId = 1099, languagePair = "he-ru", original = "חֲלוּקַת רְשָׁת", translation = "сегментация сети", transliteration = "khalukat reshet", rarity = "EPIC"),
+        WordEntity(id = 109907, setId = 1099, languagePair = "he-ru", original = "כְּלֵי פְּרִיצָה", translation = "инструменты взлома", transliteration = "kle pritza", rarity = "EPIC"),
         WordEntity(id = 109908, setId = 1099, languagePair = "he-ru", original = "נְקוּדַת כְּנִיסָה", translation = "точка входа (в систему)", transliteration = "nkudat knisa", rarity = "RARE"),
 
         // EPIC (C1)
@@ -154,15 +154,15 @@ object WordDataHebrewBatch25 {
         WordEntity(id = 109916, setId = 1099, languagePair = "he-ru", original = "שִׁיטוֹת הַחְבָּאָה", translation = "методы обфускации", transliteration = "shitot hakhba'a", rarity = "EPIC"),
 
         // RARE (B2)
-        WordEntity(id = 109917, setId = 1099, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 109917, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
             original = "מִסְגֶּרֶת אַבְטָחָה", translation = "фреймворк безопасности (security framework)"),
-        WordEntity(id = 109918, setId = 1099, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 109918, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
             original = "סַיְיבֶּר-בִּטָּחוֹן", translation = "кибербезопасность"),
-        WordEntity(id = 109919, setId = 1099, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 109919, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
             original = "תְּקִיפָה מְכֻוֶּנֶת", translation = "целенаправленная атака (APT)"),
-        WordEntity(id = 109920, setId = 1099, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 109920, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
             original = "נִיהוּל זְהוּיוֹת", translation = "управление идентификацией (IAM)"),
-        WordEntity(id = 109921, setId = 1099, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 109921, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
             original = "פְּגִיעוּת", translation = "уязвимость (в системе безопасности)"),
 
         // EPIC (C1)

@@ -34,25 +34,25 @@ object WordDataHebrewBatch22 {
         // ── Set 1088: Медицина: углублённо ─────────────────────────────────
 
         // RARE (B2)
-        WordEntity(id = 108801, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108801, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "אוֹנְקוֹלוֹג", translation = "онколог", transliteration = "onkolog"),
-        WordEntity(id = 108802, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108802, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "רַדְיוֹלוֹג", translation = "радиолог", transliteration = "radiolog"),
-        WordEntity(id = 108803, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108803, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "אָנֶסְתֶּזְיוֹלוֹג", translation = "анестезиолог", transliteration = "anesteziyolog"),
-        WordEntity(id = 108804, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108804, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "בִּיוּפְסִיָּה", translation = "биопсия", transliteration = "biopsiya"),
-        WordEntity(id = 108805, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108805, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "כִּירוּרְגְיָה לַפָּרוֹסְקוֹפִּית", translation = "лапароскопическая хирургия", transliteration = "khirurgia laparoskopít"),
-        WordEntity(id = 108806, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108806, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "אֶמְבּוֹלְיָה", translation = "эмболия", transliteration = "embolya"),
-        WordEntity(id = 108807, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108807, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "אִסְכֶּמְיָה", translation = "ишемия", transliteration = "iskemya"),
-        WordEntity(id = 108808, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108808, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "מַחְלַת לֵב כְּלִילִי", translation = "ишемическая болезнь сердца", transliteration = "makhlat lev klili"),
-        WordEntity(id = 108809, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108809, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "הַרְדָּמָה מְלֵאָה", translation = "общий наркоз", transliteration = "hardama mele'a"),
-        WordEntity(id = 108810, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108810, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "אֶקוֹקַרְדִּיוֹגְרַמָּה", translation = "эхокардиограмма", transliteration = "ekokardiograma"),
 
         // EPIC (C1)
@@ -70,15 +70,15 @@ object WordDataHebrewBatch22 {
             original = "מִיקְרוֹבִּיוֹם", translation = "микробиом", transliteration = "mikrobiom"),
 
         // RARE (B2)
-        WordEntity(id = 108817, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108817, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "נוֹיְרוֹלוֹג", translation = "невролог"),
-        WordEntity(id = 108818, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108818, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "פְּסִיכִיאַטְר", translation = "психиатр"),
-        WordEntity(id = 108819, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108819, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "גַּסְטְרוֹאֶנְטֶרוֹלוֹג", translation = "гастроэнтеролог"),
-        WordEntity(id = 108820, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108820, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "מֶטָבּוֹלִיזְם", translation = "метаболизм"),
-        WordEntity(id = 108821, setId = 1088, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108821, setId = 1088, languagePair = "he-ru", rarity = "EPIC",
             original = "בַּקְטֶרִיָּה", translation = "бактерия"),
 
         // EPIC (C1)
@@ -95,25 +95,25 @@ object WordDataHebrewBatch22 {
         // ── Set 1089: Право ────────────────────────────────────────────────
 
         // RARE (B2)
-        WordEntity(id = 108901, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108901, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "עֵד מוּמְחֶה", translation = "свидетель-эксперт", transliteration = "ed mumkhe"),
-        WordEntity(id = 108902, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108902, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "חוּקַת יְסוֹד", translation = "основной закон; конституционный акт", transliteration = "khukkat yesod"),
-        WordEntity(id = 108903, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108903, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "נְזִיקִין", translation = "деликтное право; причинение вреда", transliteration = "nezikin"),
-        WordEntity(id = 108904, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108904, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "צַו מְנִיעָה", translation = "судебный запрет; инджанкшн", transliteration = "tsav meni'a"),
-        WordEntity(id = 108905, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108905, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "פְּשָׁרָה", translation = "мировое соглашение; урегулирование", transliteration = "pshara"),
-        WordEntity(id = 108906, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108906, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "נֶאֱמָן", translation = "доверенное лицо; фидуциарий", transliteration = "ne'eman"),
-        WordEntity(id = 108907, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108907, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "עֵרְעוּר", translation = "апелляция", transliteration = "er'ur"),
-        WordEntity(id = 108908, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108908, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "שִׁעְבּוּד", translation = "залог; обременение", transliteration = "shi'bud"),
-        WordEntity(id = 108909, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108909, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "בִּיטוּל חוֹזֶה", translation = "расторжение договора", transliteration = "bitul khoza"),
-        WordEntity(id = 108910, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108910, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "סַמְכוּת שִׁפּוּטִית", translation = "судебная компетенция", transliteration = "samkhut shiftutit"),
 
         // EPIC (C1)
@@ -131,15 +131,15 @@ object WordDataHebrewBatch22 {
             original = "עִקְרוֹן הַחֻקִּיּוּת", translation = "принцип законности", transliteration = "ikaron hakhukiyut"),
 
         // RARE (B2)
-        WordEntity(id = 108917, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108917, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "סַנֵּגוֹרִיָּה", translation = "защита (адвокатская)"),
-        WordEntity(id = 108918, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108918, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "יוּרִיסְדִּיקְצְיָה", translation = "юрисдикция"),
-        WordEntity(id = 108919, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108919, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "פְּרֵצֶדֶנְט", translation = "прецедент"),
-        WordEntity(id = 108920, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108920, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "הֲלָכָה פְּסוּקָה", translation = "судебная практика, прецедентное право"),
-        WordEntity(id = 108921, setId = 1089, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 108921, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             original = "מַעֲשֶׂה עָווֶל", translation = "правонарушение, деликт"),
 
         // EPIC (C1)

@@ -452,16 +452,16 @@ object WordDataHebrewTech {
         // 6 UNCOMMON + 10 RARE + 7 EPIC + 2 LEGENDARY = 25 слов
         // ──────────────────────────────────────────────────────
 
-        WordEntity(id = 102101, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 102101, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             original = "אֲחוֹרַי בִּטָּחוֹן", transliteration = "akhoray bitakhon", translation = "бэкдор (скрытый вход в систему)"),
-        WordEntity(id = 102102, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 102102, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             original = "הַזְרָקַת קוֹד", transliteration = "hazrakat kod", translation = "инъекция кода / SQL-инъекция"),
-        WordEntity(id = 102103, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 102103, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             original = "דְּלִיפַת נְתוּנִים", transliteration = "dlifat netunin", translation = "утечка данных"),
-        WordEntity(id = 102104, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 102104, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             original = "נִיצּוּל חֻלְשָׁה", transliteration = "nitsul khulsha", translation = "эксплуатация уязвимости"),
         WordEntity(
-            id = 102105, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102105, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "kofer",
             original = "כּוֹפֶר", translation = "программа-вымогатель",
@@ -471,7 +471,7 @@ object WordDataHebrewTech {
             exampleNative = "Атака כּוֹפֶר парализовала больницу.",
         ),
         WordEntity(
-            id = 102106, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102106, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "chulsha",
             original = "חֻלְשָׁה", translation = "уязвимость",
@@ -481,7 +481,7 @@ object WordDataHebrewTech {
             exampleNative = "Мы обнаружили критическую חֻלְשָׁה на сервере.",
         ),
         WordEntity(
-            id = 102107, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102107, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "hitchazut",
             original = "הַתְחָזוּת", translation = "спуфинг",
@@ -491,7 +491,7 @@ object WordDataHebrewTech {
             exampleNative = "הַתְחָזוּת заставила нас открыть ссылку.",
         ),
         WordEntity(
-            id = 102108, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102108, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "matkeifet koach gas",
             original = "מַתְּקֶפֶת כֹּחַ גַּס", translation = "брутфорс-атака",
@@ -501,7 +501,7 @@ object WordDataHebrewTech {
             exampleNative = "מַתְּקֶפֶת כֹּחַ גַּס взломала короткий пароль.",
         ),
         WordEntity(
-            id = 102109, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102109, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "reshet pratit",
             original = "רֶשֶׁת פְּרָטִית", translation = "VPN",
@@ -511,7 +511,7 @@ object WordDataHebrewTech {
             exampleNative = "Я использую רֶשֶׁת פְּרָטִית в общественных сетях.",
         ),
         WordEntity(
-            id = 102110, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102110, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "chatima digitalit",
             original = "חֲתִימָה דִּיגִיטָלִית", translation = "электронная подпись",
@@ -521,7 +521,7 @@ object WordDataHebrewTech {
             exampleNative = "חֲתִימָה דִּיגִיטָלִית подтвердила подлинность договора.",
         ),
         WordEntity(
-            id = 102111, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102111, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "te'udat ishur",
             original = "תְּעוּדַת אִישּׁוּר", translation = "SSL-сертификат",
@@ -531,7 +531,7 @@ object WordDataHebrewTech {
             exampleNative = "תְּעוּדַת אִישּׁוּר позволяет использовать HTTPS.",
         ),
         WordEntity(
-            id = 102112, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102112, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "akifat hagana",
             original = "עֲקִיפַת הַגָּנָה", translation = "обход защиты",
@@ -610,12 +610,12 @@ object WordDataHebrewTech {
             example = "A long random password resists brute force attacks because the number of combinations is enormous.",
             definitionNative = "Метод взлома паролей или шифрования путём систематического перебора всех возможных комбинаций.",
             exampleNative = "Длинный случайный пароль устойчив к koach gas, так как количество комбинаций огромно."),
-        WordEntity(id = 102121, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 102121, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             original = "סְבִיבַת בְּדִיקָה", transliteration = "svivat bdika", translation = "песочница / изолированная среда тестирования"),
-        WordEntity(id = 102122, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 102122, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             original = "גִּלּוּי פְּרָצוֹת", transliteration = "giluy pratsot", translation = "обнаружение уязвимостей"),
         WordEntity(
-            id = 102123, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102123, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "imut du-shalvi",
             original = "אִימוּת דּוּ-שַׁלְבִּי", translation = "двухфакторная аутентификация",
@@ -625,7 +625,7 @@ object WordDataHebrewTech {
             exampleNative = "Я включил אִימוּת דּוּ-שַׁלְבִּי на всех своих аккаунтах.",
         ),
         WordEntity(
-            id = 102124, setId = 1021, languagePair = "he-ru", rarity = "RARE",
+            id = 102124, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
             transliteration = "bakarat gisha",
             original = "בַּקָּרַת גִּישָׁה", translation = "контроль доступа",
