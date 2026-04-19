@@ -30,7 +30,7 @@ object WordDataHebrewBatch51 {
 
         WordSetEntity(
             id = 1291, languagePair = "he-ru", orderIndex = 1291,
-            name = "Философия: углублённый",
+            name = "Философия: углублённый 2",
             description = "Философские школы, ключевые мыслители и концепции",
             topic = "Философия",
             level = 3),
@@ -227,7 +227,7 @@ object WordDataHebrewBatch51 {
         WordEntity(id = 129025, setId = 1290, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "פּוֹסְטְ-קוֹלוֹנְיָאלִיזְם בַּתַּחְבּוּרָה", transliteration = "post-kolonializm batakhbura", translation = "постколониализм в транспортной политике"),
 
-        // ── Set 1291: Философия: углублённый (level=3, UNCOMMON+RARE) ────────────
+        // ── Set 1291: Философия: углублённый 2 (level=3, RARE) ───────────────────
 
         WordEntity(id = 129101, setId = 1291, languagePair = "he-ru", rarity = "RARE",
             original = "אֶקְזִיסְטֶנְצְיָאלִיזְם", transliteration = "ekzistentsializm", translation = "экзистенциализм"),

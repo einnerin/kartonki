@@ -8,7 +8,7 @@ object WordDataHebrewBatch48 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1264, languagePair = "he-ru", orderIndex = 1264,
-            name = "Культура и искусство: углублённый",
+            name = "Культура и искусство: углублённый 2",
             description = "Жанры, стили и роли в современном искусстве",
             topic = "Культура и искусство", level = 3
         ),
@@ -58,7 +58,7 @@ object WordDataHebrewBatch48 {
 
     val words: List<WordEntity> = listOf(
 
-        // ── Set 1264: Культура и искусство: углублённый (level 3, RARE) ───
+        // ── Set 1264: Культура и искусство: углублённый 2 (level 3, RARE) ───
         WordEntity(id = 126401, setId = 1264, languagePair = "he-ru", rarity = "RARE",
             original = "פִּיסּוּל", transliteration = "pisul",
             translation = "скульптура"),

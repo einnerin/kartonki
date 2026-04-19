@@ -50,7 +50,7 @@ object WordDataHebrewBatch46 {
         ),
         WordSetEntity(
             id = 1254, languagePair = "he-ru", orderIndex = 1254,
-            name = "Психология: углублённый",
+            name = "Психология: углублённый 2",
             description = "Когнитивные процессы, клиническая психология и защитные механизмы",
             topic = "Психология",
             level = 3

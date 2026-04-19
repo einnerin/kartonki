@@ -64,7 +64,11 @@ data class StudyListUiState(
         val groups = withTopic
             .groupBy { it.topic }
             .map { (topic, items) ->
-                TopicGroup(topic = topic, sets = items, isExpanded = topic !in collapsedTopics)
+                TopicGroup(
+                    topic = topic,
+                    sets = items.sortedWith(compareBy({ it.level }, { it.id })),
+                    isExpanded = topic !in collapsedTopics,
+                )
             }
             .sortedBy { it.topic }
         return if (noTopic.isEmpty()) groups
@@ -158,12 +162,11 @@ class StudyViewModel @Inject constructor(
 
         // Three batch queries replace N×3 individual queries.
         val wordCounts      = wordSetRepository.getWordCountsForSets(setIds)
-        val rarityCounts    = wordSetRepository.getRarityCountsForSets(setIds)
         val correctThreshold = prefs.studyCorrectToCount.first()
         val introducedCounts = progressRepository.getIntroducedCountsForSets(setIds, correctThreshold)
 
         val items = sets.map { set ->
-            val rarity = wordSetRepository.rarityFromCounts(rarityCounts[set.id] ?: emptyList())
+            val rarity = Rarity.fromLevel(set.level)
             WordSetUiItem(
                 id = set.id,
                 name = set.name,

@@ -25,9 +25,9 @@ object WordDataHebrewMore {
         WordSetEntity(id = 1012, name = "Культура и искусство: основы",               description = "Жанры, люди и термины кино",    languagePair = "he-ru", orderIndex = 12,
             topic = "Культура и искусство",
             level = 1),
-        WordSetEntity(id = 1013, name = "Культура и искусство: продвинутый",    description = "Производство фильмов",        languagePair = "he-ru", orderIndex = 13,
+        WordSetEntity(id = 1013, name = "Культура и искусство: углублённый",    description = "Производство фильмов",        languagePair = "he-ru", orderIndex = 13,
             topic = "Культура и искусство",
-            level = 2),
+            level = 3),
     )
 
     val words = listOf(
