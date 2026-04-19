@@ -94,7 +94,14 @@ object WordRegistry {
                 WordDataHebrewBatch48.sets +
                 WordDataHebrewBatch49.sets +
                 WordDataHebrewBatch50.sets +
-                WordDataHebrewBatch51.sets
+                WordDataHebrewBatch51.sets +
+                WordDataHebrewBatch52.sets +
+                WordDataHebrewBatch53.sets +
+                WordDataHebrewBatch54.sets +
+                WordDataHebrewBatch55.sets +
+                WordDataHebrewBatch56.sets +
+                WordDataHebrewBatch57.sets +
+                WordDataHebrewBatch58.sets
     }
 
     val allWords: List<WordEntity> by lazy {
@@ -176,7 +183,14 @@ object WordRegistry {
                 WordDataHebrewBatch48.words +
                 WordDataHebrewBatch49.words +
                 WordDataHebrewBatch50.words +
-                WordDataHebrewBatch51.words
+                WordDataHebrewBatch51.words +
+                WordDataHebrewBatch52.words +
+                WordDataHebrewBatch53.words +
+                WordDataHebrewBatch54.words +
+                WordDataHebrewBatch55.words +
+                WordDataHebrewBatch56.words +
+                WordDataHebrewBatch57.words +
+                WordDataHebrewBatch58.words
     }
 
     val allPrebuiltDecks: List<DeckSeed> by lazy {
