@@ -71,9 +71,9 @@ object WordDataHebrewBatch32 {
         WordEntity(id = 111825, setId = 1118, languagePair = "he-ru", original = "שִׁיטַת חֲפִירָה", translation = "метод раскопок", transliteration = "shitat khafire", rarity = "RARE"),
 
         // ── Set 1119: Переговоры ──────────────────────────────────────────
-        WordEntity(id = 111901, setId = 1119, languagePair = "he-ru", original = "שֻׁתָּפוּת", translation = "партнёрство", transliteration = "shutafut", rarity = "UNCOMMON"),
+        WordEntity(id = 111901, setId = 1119, languagePair = "he-ru", original = "נוֹרְמַלִיזַצְיָה", translation = "нормализация (отношений)", transliteration = "normalizatsiya", rarity = "UNCOMMON"),
         WordEntity(id = 111902, setId = 1119, languagePair = "he-ru", original = "מִשְׁלַחַת", translation = "делегация / миссия", transliteration = "mishlakhat", rarity = "UNCOMMON"),
-        WordEntity(id = 111903, setId = 1119, languagePair = "he-ru", original = "דִּיאָלוֹג", translation = "диалог", transliteration = "dialog", rarity = "UNCOMMON"),
+        WordEntity(id = 111903, setId = 1119, languagePair = "he-ru", original = "סַנְקְצִיָּה", translation = "санкция", transliteration = "sanktsiya", rarity = "UNCOMMON"),
         WordEntity(id = 111904, setId = 1119, languagePair = "he-ru", original = "הַסְכָּמָה הָדָדִית", translation = "взаимное согласие", transliteration = "haskama hadadit", rarity = "UNCOMMON"),
         WordEntity(id = 111905, setId = 1119, languagePair = "he-ru", original = "צִינוֹר תִּקְשּׁוֹרֶת", translation = "канал коммуникации", transliteration = "tsinor tikshoret", rarity = "UNCOMMON"),
         WordEntity(id = 111906, setId = 1119, languagePair = "he-ru", original = "אִי-הֲסָכָמָה", translation = "разногласие", transliteration = "i-hasakama", rarity = "UNCOMMON"),

@@ -170,49 +170,42 @@ def check_stolen_words(all_words, set_topic_map, staged_files=None):
     """
     Returns (errors, warnings, final_db).
 
-    Duplicate (original, languagePair) is a blocking error only when:
-      1. Both words belong to the same topic (Room overwrites → set loses word), OR
-      2. The same word appears with different rarity anywhere (inconsistency).
-    Same word + same rarity + different topic = acceptable (no error, no warning).
+    Room has UNIQUE(original, languagePair) — ANY duplicate across sets causes the
+    earlier set to silently lose a word (OnConflictStrategy.REPLACE). Every duplicate
+    is therefore a real error regardless of topic or rarity.
 
     - error:   staged file involved → block the commit
-    - warning: both files unstaged AND it's a blocking-class conflict → pre-existing
+    - warning: both files unstaged → pre-existing, surfaced for visibility only
     """
     staged_files = staged_files or set()
     errors, warnings = [], []
-    # final_db uses (original, lang, setId) so each set keeps its own word count
-    final_db = {}
-    seen = {}  # (original, lang) -> first word seen, for duplicate detection
+    # final_db simulates Room: UNIQUE(original, lang) — last insert wins.
+    final_db = {}  # (original, lang) -> word (the one Room keeps)
+    seen = {}  # (original, lang) -> first word seen
 
     for w in all_words:
         key = (w["original"], w["lang"])
-        set_key = (w["original"], w["lang"], w["setId"])
-        final_db[set_key] = w
+        # Room REPLACE: last insert overwrites previous entry for same (original, lang)
+        final_db[key] = w
 
         if key in seen:
             prev = seen[key]
             prev_topic = set_topic_map.get(prev["setId"], "")
             curr_topic = set_topic_map.get(w["setId"], "")
-            same_topic = (prev_topic == curr_topic)
             same_rarity = (prev["rarity"] == w["rarity"])
-
-            # Only flag if truly problematic
-            is_conflict = same_topic or not same_rarity
-            if is_conflict:
-                entry = {
-                    "original": w["original"],
-                    "loser_set": prev["setId"], "loser_file": prev["file"],
-                    "winner_set": w["setId"], "winner_file": w["file"],
-                    "loser_topic": prev_topic,
-                    "winner_topic": curr_topic,
-                    "same_topic": same_topic,
-                    "same_rarity": same_rarity,
-                }
-                if prev["file"] in staged_files or w["file"] in staged_files:
-                    errors.append(entry)
-                else:
-                    warnings.append(entry)
-            # cross-topic same-rarity → silently acceptable
+            entry = {
+                "original": w["original"],
+                "loser_set": prev["setId"], "loser_file": prev["file"],
+                "winner_set": w["setId"], "winner_file": w["file"],
+                "loser_topic": prev_topic,
+                "winner_topic": curr_topic,
+                "same_topic": (prev_topic == curr_topic),
+                "same_rarity": same_rarity,
+            }
+            if prev["file"] in staged_files or w["file"] in staged_files:
+                errors.append(entry)
+            else:
+                warnings.append(entry)
         else:
             seen[key] = w
 
