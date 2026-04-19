@@ -10,9 +10,12 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant5 {
 
     val sets = listOf(
-        WordSetEntity(id = 1142, name = "Битуах Леуми",       description = "Национальное страхование, льготы и пособия B1/B2", languagePair = "he-ru", orderIndex = 142),
-        WordSetEntity(id = 1143, name = "Рынок и базар",      description = "Покупки на шуке, торговля и продукты A2/B1",       languagePair = "he-ru", orderIndex = 143),
-        WordSetEntity(id = 1144, name = "Безопасность",       description = "Сирены, убежища и безопасность в Израиле B1/B2",   languagePair = "he-ru", orderIndex = 144),
+        WordSetEntity(id = 1142, name = "Битуах Леуми: продвинутый",       description = "Национальное страхование, льготы и пособия", languagePair = "he-ru", orderIndex = 142,
+    topic = "Битуах Леуми", level = 2),
+        WordSetEntity(id = 1143, name = "Рынок и базар: основы",      description = "Покупки на шуке, торговля и продукты",       languagePair = "he-ru", orderIndex = 143,
+    topic = "Рынок и базар", level = 1),
+        WordSetEntity(id = 1144, name = "Безопасность: основы",       description = "Сирены, убежища и безопасность в Израиле",   languagePair = "he-ru", orderIndex = 144,
+    topic = "Безопасность", level = 1),
     )
 
     val words = listOf(
@@ -288,7 +291,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Продавец положил фрукты на מִשְׁקָל.",
         ),
         WordEntity(
-            id = 114305, setId = 1143, languagePair = "he-ru", rarity = "RARE",
+            id = 114305, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "shuk", transliteration = "l'hitmakaḥ",
             original = "לְהִתְמַקֵּחַ", translation = "торговаться / торг",
             definition = "לְנַסּוֹת לְהוֹרִיד אֶת הַמְּחִיר בַּדִּבּוּר עִם הַמּוֹכֵר.",
@@ -324,7 +327,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Свежие יְרָקוֹת на рынке дешевле, чем в супермаркете.",
         ),
         WordEntity(
-            id = 114309, setId = 1143, languagePair = "he-ru", rarity = "RARE",
+            id = 114309, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "shuk", transliteration = "esbei tibul",
             original = "עֶשְׂבֵּי תִּיבּוּל", translation = "пряные травы / зелень",
             definition = "צְמָחִים אֲרוֹמַטִיִּים כְּגוֹן נַעֲנַע, פֶּטְרוֹזִילְיָה וְכוּסְבָּרָה.",
@@ -518,7 +521,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Мы услышали צֶבַע אָדֹם и побежали в мамад.",
         ),
         WordEntity(
-            id = 114405, setId = 1144, languagePair = "he-ru", rarity = "RARE",
+            id = 114405, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "security", transliteration = "kipat barzel",
             original = "כִּיפַּת בַּרְזֶל", translation = "Железный купол",
             definition = "מַעֲרֶכֶת נִגְּד-טִילִים יִשְׂרְאֵלִית הַמִּיּוֹרֶטֶת טִילִים בָּאֲוִויר.",
@@ -590,7 +593,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Север — чувствительная в plане безопасности אֵזוֹר.",
         ),
         WordEntity(
-            id = 114413, setId = 1144, languagePair = "he-ru", rarity = "RARE",
+            id = 114413, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "security", transliteration = "kokhot bitakhon",
             original = "כּוֹחוֹת בִּיטָחוֹן", translation = "силовые структуры / силы безопасности",
             definition = "הַצָּבָא, הַמִּשְׁטָרָה וְשֵׁרוּתֵי הַבִּיטָחוֹן שֶׁמְּגִנִּים עַל הַמְּדִינָה.",
@@ -608,7 +611,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "בִּדּוּק на входе в торговый центр занимает время.",
         ),
         WordEntity(
-            id = 114415, setId = 1144, languagePair = "he-ru", rarity = "RARE",
+            id = 114415, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "security", transliteration = "khomer nefetz",
             original = "חֹמֶר נֶפֶץ", translation = "взрывчатое вещество",
             definition = "חוֹמֶר כִּימִי הַמְּסֻגָּל לְהִתְפּוֹצֵץ וְלִגְרוֹם נֶזֶק.",
@@ -617,7 +620,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Собака обучена обнаруживать חֹמֶר נֶפֶץ.",
         ),
         WordEntity(
-            id = 114416, setId = 1144, languagePair = "he-ru", rarity = "RARE",
+            id = 114416, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "security", transliteration = "mistor",
             original = "מִסְתּוֹר", translation = "укрытие / убежище",
             definition = "מָקוֹם סָמוּי שֶׁבּוֹ מִתְחַבְּאִים מִפְּנֵי סַכָּנָה.",
@@ -626,7 +629,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Нашли מִסְתּוֹר в горах.",
         ),
         WordEntity(
-            id = 114417, setId = 1144, languagePair = "he-ru", rarity = "RARE",
+            id = 114417, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "security", transliteration = "raketa",
             original = "רָקֶטָה", translation = "ракета",
             definition = "כְּלִי נֶשֶׁק מְעוֹפֵף הַמּוּנָּע בְּדַלֶּקֶת רָקֶטָה.",
@@ -671,7 +674,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Защитный גָּדֵר разделяет зоны.",
         ),
         WordEntity(
-            id = 114422, setId = 1144, languagePair = "he-ru", rarity = "RARE",
+            id = 114422, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "security", transliteration = "mirdaf",
             original = "מִרְדָּף", translation = "погоня / преследование",
             definition = "רְדִיפָה אַחֲרֵי אָדָם אוֹ רֶכֶב לְמַטְרַת עֲצִירָה.",
@@ -689,7 +692,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Мы получили אֶזְהָרָה войти в мамад.",
         ),
         WordEntity(
-            id = 114424, setId = 1144, languagePair = "he-ru", rarity = "RARE",
+            id = 114424, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "security", transliteration = "pikuakh",
             original = "פִּיקּוּחַ", translation = "надзор / контроль",
             definition = "בְּקָרָה וְשָׁמִירָה עַל פְּעִילּוּת לְמַעַן בִּיטָחוֹן אוֹ אֵיכוּת.",

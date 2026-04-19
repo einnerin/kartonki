@@ -10,18 +10,24 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant16 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1202, languagePair = "he-ru", name = "Риторика и литература", description = "Метафора, нарратив, стилистика C1–C2", orderIndex = 202),
-        WordSetEntity(id = 1203, languagePair = "he-ru", name = "Философия", description = "Онтология, этика, парадигма C1–C2", orderIndex = 203),
-        WordSetEntity(id = 1204, languagePair = "he-ru", name = "Дипломатия", description = "Посол, санкции, международные отношения C1–C2", orderIndex = 204),
-        WordSetEntity(id = 1205, languagePair = "he-ru", name = "Иудаика и тексты", description = "Талмуд, Мишна, Галаха, пилпул C1–C2", orderIndex = 205),
-        WordSetEntity(id = 1206, languagePair = "he-ru", name = "Психоанализ", description = "Эго, вытеснение, катарсис C1–C2", orderIndex = 206),
-        WordSetEntity(id = 1207, languagePair = "he-ru", name = "Академический язык", description = "Методология, выборка, диссертация C1–C2", orderIndex = 207),
+        WordSetEntity(id = 1202, languagePair = "he-ru", name = "Риторика: профессиональный", description = "Метафора, нарратив, стилистика", orderIndex = 202,
+    topic = "Риторика", level = 4),
+        WordSetEntity(id = 1203, languagePair = "he-ru", name = "Философия: профессиональный 2", description = "Онтология, этика, парадигма", orderIndex = 203,
+    topic = "Философия", level = 4),
+        WordSetEntity(id = 1204, languagePair = "he-ru", name = "Дипломатия: профессиональный", description = "Посол, санкции, международные отношения", orderIndex = 204,
+    topic = "Дипломатия", level = 4),
+        WordSetEntity(id = 1205, languagePair = "he-ru", name = "Иудаика: профессиональный", description = "Талмуд, Мишна, Галаха, пилпул", orderIndex = 205,
+    topic = "Иудаика", level = 4),
+        WordSetEntity(id = 1206, languagePair = "he-ru", name = "Психоанализ: профессиональный", description = "Эго, вытеснение, катарсис", orderIndex = 206,
+    topic = "Психоанализ", level = 4),
+        WordSetEntity(id = 1207, languagePair = "he-ru", name = "Академический язык: профессиональный", description = "Методология, выборка, диссертация", orderIndex = 207,
+    topic = "Академический язык", level = 4),
     )
 
     val words: List<WordEntity> = listOf(
 
         // ── 1202: Риторика и литература ──────────────────────────────────
-        WordEntity(id = 120201, setId = 1202, languagePair = "he-ru", original = "מְשׁוֹרֵר", translation = "поэт", transliteration = "meshorer", rarity = "RARE"),
+        WordEntity(id = 120201, setId = 1202, languagePair = "he-ru", original = "מְשׁוֹרֵר", translation = "поэт", transliteration = "meshorer", rarity = "EPIC"),
         WordEntity(id = 120202, setId = 1202, languagePair = "he-ru", original = "אֶפִּיפוֹרָה", translation = "эпифора", transliteration = "epifora", rarity = "LEGENDARY"),
         WordEntity(id = 120203, setId = 1202, languagePair = "he-ru", original = "אַנָּפוֹרָה", translation = "анафора", transliteration = "anafora", rarity = "EPIC"),
         WordEntity(id = 120204, setId = 1202, languagePair = "he-ru", original = "אַלֶּגוֹרִיָּה", translation = "аллегория", transliteration = "alegoria", rarity = "EPIC"),
@@ -34,7 +40,7 @@ object WordDataHebrewImmigrant16 {
         WordEntity(id = 120211, setId = 1202, languagePair = "he-ru", original = "לִיטוֹטֶס", translation = "литотес (преуменьшение)", transliteration = "litotes", rarity = "EPIC"),
         WordEntity(id = 120212, setId = 1202, languagePair = "he-ru", original = "אוֹקְסִימוֹרוֹן", translation = "оксюморон", transliteration = "oksymoron", rarity = "EPIC"),
         WordEntity(id = 120213, setId = 1202, languagePair = "he-ru", original = "טְרָגֶדְיָה", translation = "трагедия", transliteration = "tragedya", rarity = "EPIC"),
-        WordEntity(id = 120214, setId = 1202, languagePair = "he-ru", original = "נוֹשֵׂא", translation = "тема / предмет", transliteration = "nose", rarity = "RARE"),
+        WordEntity(id = 120214, setId = 1202, languagePair = "he-ru", original = "נוֹשֵׂא", translation = "тема / предмет", transliteration = "nose", rarity = "EPIC"),
         WordEntity(id = 120215, setId = 1202, languagePair = "he-ru", original = "חֲרוּז", translation = "рифма", transliteration = "kharuz", rarity = "EPIC"),
         WordEntity(id = 120216, setId = 1202, languagePair = "he-ru", original = "רֵיתוֹרִיקָה", translation = "риторика", transliteration = "reitorika", rarity = "LEGENDARY"),
         WordEntity(id = 120217, setId = 1202, languagePair = "he-ru", original = "נוֹבֵלָה", translation = "новелла", transliteration = "novela", rarity = "EPIC"),
@@ -50,7 +56,7 @@ object WordDataHebrewImmigrant16 {
         // ── 1203: Философия ──────────────────────────────────────────────
         WordEntity(id = 120301, setId = 1203, languagePair = "he-ru", original = "הֶרְמֶנֵוּטִיקָה", translation = "герменевтика", transliteration = "hermenutika", rarity = "LEGENDARY"),
         WordEntity(id = 120302, setId = 1203, languagePair = "he-ru", original = "פָּרָגְמַטִיזְם", translation = "прагматизм", transliteration = "pragmatizm", rarity = "LEGENDARY"),
-        WordEntity(id = 120303, setId = 1203, languagePair = "he-ru", original = "לוֹגִיקָה", translation = "логика", transliteration = "logika", rarity = "RARE"),
+        WordEntity(id = 120303, setId = 1203, languagePair = "he-ru", original = "לוֹגִיקָה", translation = "логика", transliteration = "logika", rarity = "EPIC"),
         WordEntity(id = 120304, setId = 1203, languagePair = "he-ru", original = "מֵטָפִיזִיקָה", translation = "метафизика", transliteration = "metafizika", rarity = "LEGENDARY"),
         WordEntity(id = 120305, setId = 1203, languagePair = "he-ru", original = "מוֹנִיזְם", translation = "монизм", transliteration = "monizm", rarity = "LEGENDARY"),
         WordEntity(id = 120306, setId = 1203, languagePair = "he-ru", original = "דּוּאָלִיזְם", translation = "дуализм", transliteration = "dualizm", rarity = "LEGENDARY"),
@@ -70,8 +76,8 @@ object WordDataHebrewImmigrant16 {
         WordEntity(id = 120320, setId = 1203, languagePair = "he-ru", original = "דִּיסְטוֹפְּיָה", translation = "дистопия", transliteration = "distopya", rarity = "EPIC"),
         WordEntity(id = 120321, setId = 1203, languagePair = "he-ru", original = "אַבְסוּרְד", translation = "абсурд", transliteration = "absurd", rarity = "EPIC"),
         WordEntity(id = 120322, setId = 1203, languagePair = "he-ru", original = "רֶלַטִיבִיזְם", translation = "релятивизм", transliteration = "relativizm", rarity = "LEGENDARY"),
-        WordEntity(id = 120323, setId = 1203, languagePair = "he-ru", original = "פֶּסִימִיזְם", translation = "пессимизм", transliteration = "pesimizm", rarity = "RARE"),
-        WordEntity(id = 120324, setId = 1203, languagePair = "he-ru", original = "אוֹפְּטִימִיזְם", translation = "оптимизм", transliteration = "optimizm", rarity = "RARE"),
+        WordEntity(id = 120323, setId = 1203, languagePair = "he-ru", original = "פֶּסִימִיזְם", translation = "пессимизм", transliteration = "pesimizm", rarity = "EPIC"),
+        WordEntity(id = 120324, setId = 1203, languagePair = "he-ru", original = "אוֹפְּטִימִיזְם", translation = "оптимизм", transliteration = "optimizm", rarity = "EPIC"),
         WordEntity(id = 120325, setId = 1203, languagePair = "he-ru", original = "קַנְטִיאָנִיזְם", translation = "кантианство", transliteration = "kantianizm", rarity = "LEGENDARY"),
 
         // ── 1204: Дипломатия ─────────────────────────────────────────────
@@ -135,7 +141,7 @@ object WordDataHebrewImmigrant16 {
         WordEntity(id = 120604, setId = 1206, languagePair = "he-ru", original = "הֲדָחָקָה", translation = "вытеснение (психол.)", transliteration = "hadakhaka", rarity = "LEGENDARY"),
         WordEntity(id = 120605, setId = 1206, languagePair = "he-ru", original = "הֵעָתָקוּת", translation = "перенос (психол.)", transliteration = "heatakut", rarity = "LEGENDARY"),
         WordEntity(id = 120606, setId = 1206, languagePair = "he-ru", original = "נַרְצִיסִיזְם", translation = "нарциссизм", transliteration = "nartsisizm", rarity = "EPIC"),
-        WordEntity(id = 120607, setId = 1206, languagePair = "he-ru", original = "חֶרְדָּה", translation = "тревога / тревожность", transliteration = "kherda", rarity = "RARE"),
+        WordEntity(id = 120607, setId = 1206, languagePair = "he-ru", original = "חֶרְדָּה", translation = "тревога / тревожность", transliteration = "kherda", rarity = "EPIC"),
         WordEntity(id = 120608, setId = 1206, languagePair = "he-ru", original = "פּוֹבְיָה", translation = "фобия", transliteration = "fobya", rarity = "EPIC"),
         WordEntity(id = 120609, setId = 1206, languagePair = "he-ru", original = "נוֹירוֹז", translation = "невроз", transliteration = "noyroz", rarity = "EPIC"),
         WordEntity(id = 120610, setId = 1206, languagePair = "he-ru", original = "פְּסִיכוֹזָה", translation = "психоз", transliteration = "psykhoza", rarity = "EPIC"),
@@ -161,12 +167,12 @@ object WordDataHebrewImmigrant16 {
         WordEntity(id = 120703, setId = 1207, languagePair = "he-ru", original = "מֶתוֹדוֹלוֹגְיָה", translation = "методология", transliteration = "metodologia", rarity = "LEGENDARY"),
         WordEntity(id = 120704, setId = 1207, languagePair = "he-ru", original = "בִּיבְּלִיוֹגְרַפְיָה", translation = "библиография", transliteration = "bibliografia", rarity = "EPIC"),
         WordEntity(id = 120705, setId = 1207, languagePair = "he-ru", original = "אָבְסְטְרַקְט", translation = "аннотация / реферат", transliteration = "abstrakt", rarity = "EPIC"),
-        WordEntity(id = 120706, setId = 1207, languagePair = "he-ru", original = "פּוֹסְט דּוֹקְטוֹרַט", translation = "постдокторантура", transliteration = "post-doktorat", rarity = "RARE"),
-        WordEntity(id = 120707, setId = 1207, languagePair = "he-ru", original = "מִחְקָר", translation = "исследование", transliteration = "mikhkar", rarity = "RARE"),
-        WordEntity(id = 120708, setId = 1207, languagePair = "he-ru", original = "פַּרְסוּם", translation = "публикация", transliteration = "parsum", rarity = "RARE"),
+        WordEntity(id = 120706, setId = 1207, languagePair = "he-ru", original = "פּוֹסְט דּוֹקְטוֹרַט", translation = "постдокторантура", transliteration = "post-doktorat", rarity = "EPIC"),
+        WordEntity(id = 120707, setId = 1207, languagePair = "he-ru", original = "מִחְקָר", translation = "исследование", transliteration = "mikhkar", rarity = "EPIC"),
+        WordEntity(id = 120708, setId = 1207, languagePair = "he-ru", original = "פַּרְסוּם", translation = "публикация", transliteration = "parsum", rarity = "EPIC"),
         WordEntity(id = 120709, setId = 1207, languagePair = "he-ru", original = "עֵמִית", translation = "коллега / рецензент", transliteration = "amit", rarity = "EPIC"),
         WordEntity(id = 120710, setId = 1207, languagePair = "he-ru", original = "קוֹלוֹקְוִיוּם", translation = "коллоквиум", transliteration = "kolokivyum", rarity = "LEGENDARY"),
-        WordEntity(id = 120711, setId = 1207, languagePair = "he-ru", original = "כֶּתֶב עֵת", translation = "научный журнал", transliteration = "ktav et", rarity = "RARE"),
+        WordEntity(id = 120711, setId = 1207, languagePair = "he-ru", original = "כֶּתֶב עֵת", translation = "научный журнал", transliteration = "ktav et", rarity = "EPIC"),
         WordEntity(id = 120712, setId = 1207, languagePair = "he-ru", original = "צִיטוּט", translation = "цитирование", transliteration = "tsitut", rarity = "EPIC"),
         WordEntity(id = 120713, setId = 1207, languagePair = "he-ru", original = "קוֹנְסֶנְסוּס", translation = "консенсус", transliteration = "konsensus", rarity = "EPIC"),
         WordEntity(id = 120714, setId = 1207, languagePair = "he-ru", original = "אֶמְפִּירִי", translation = "эмпирический", transliteration = "empiri", rarity = "EPIC"),
