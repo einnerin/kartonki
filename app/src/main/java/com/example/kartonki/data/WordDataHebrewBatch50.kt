@@ -174,28 +174,39 @@ object WordDataHebrewBatch50 {
 
         // ── Set 1282: Религия: углублённый (level=3, UNCOMMON+RARE) ─────────────
 
-        WordEntity(id = 128201, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חִלּוּל הַשֵּׁם", transliteration = "khilul hashem", translation = "осквернение имени Бога"),
-        WordEntity(id = 128202, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קִדּוּשׁ הַשֵּׁם", transliteration = "kidush hashem", translation = "освящение имени Бога (мученичество)"),
-        WordEntity(id = 128203, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גְּמִילוּת חֲסָדִים", transliteration = "gmilut khasadim", translation = "дела благотворительности / помощь ближнему"),
-        WordEntity(id = 128204, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַעֲרִיב", transliteration = "maariv", translation = "вечерняя молитвенная служба"),
-        WordEntity(id = 128205, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אוֹרְתּוֹדוֹקְסִיָּה", transliteration = "ortodoksiya", translation = "ортодоксия / православие"),
-        WordEntity(id = 128206, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רֵפוֹרְמִי", transliteration = "reformi", translation = "реформистский (о течении в иудаизме)"),
-        WordEntity(id = 128207, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קוֹנְסֶרְבָּטִיבִי", transliteration = "konservativit", translation = "консервативный (о течении в иудаизме)"),
-        WordEntity(id = 128208, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חַרְדִּי", transliteration = "kharedi", translation = "ультраортодоксальный"),
-        WordEntity(id = 128209, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דָּתִי לְאוּמִּי", transliteration = "dati le'umi", translation = "религиозный сионист (национально-религиозный)"),
-        WordEntity(id = 128210, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חִילוֹנִי", transliteration = "khiloni", translation = "светский / нерелигиозный"),
-        WordEntity(id = 128211, setId = 1282, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מָסוֹרְתִּי", transliteration = "masorti", translation = "традиционный (частично соблюдающий традиции)"),
+        WordEntity(id = 128201, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "טְהָרָה", transliteration = "tahara", translation = "ритуальная чистота"),
+
+        WordEntity(id = 128202, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "תְּשׁוּבָה", transliteration = "tshuva", translation = "раскаяние / тешува"),
+
+        WordEntity(id = 128203, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "שְׁמִירַת מִצְווֹת", transliteration = "shmirat mitzvot", translation = "соблюдение заповедей"),
+
+        WordEntity(id = 128204, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "רַבָּנוּת", transliteration = "rabanut", translation = "раввинат"),
+
+        WordEntity(id = 128205, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "קִבּוּץ גָּלֻיּוֹת", transliteration = "kibuts galuyot", translation = "собирание рассеянных (концепция возвращения)"),
+
+        WordEntity(id = 128206, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "הַגָּדָה", transliteration = "hagada", translation = "Пасхальная Агада"),
+
+        WordEntity(id = 128207, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "שְׁמוֹנֶה עֶשְׂרֵה", transliteration = "shmone esre", translation = "Шмоне Эсрей (молитва из 18 благословений)"),
+
+        WordEntity(id = 128208, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "כַּוָּנָה", transliteration = "kavana", translation = "кавана (молитвенное намерение)"),
+
+        WordEntity(id = 128209, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "שְׁאֵלָה וּתְשׁוּבָה", transliteration = "she'ela utshuvah", translation = "респонсы (вопрос-ответ в галахическом праве)"),
+
+        WordEntity(id = 128210, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "צְנִיעוּת", transliteration = "tzni'ut", translation = "скромность / модест (цниют)"),
+
+        WordEntity(id = 128211, setId = 1282, languagePair = "he-ru", rarity = "RARE",
+            original = "עֲבוֹדַת הַשֵּׁם", transliteration = "avodat hashem", translation = "служение Богу"),
+
         WordEntity(id = 128212, setId = 1282, languagePair = "he-ru", rarity = "RARE",
             original = "תְּפִילִּין", transliteration = "tefilin", translation = "тфилин / филактерии"),
         WordEntity(id = 128213, setId = 1282, languagePair = "he-ru", rarity = "RARE",
@@ -333,20 +344,27 @@ object WordDataHebrewBatch50 {
 
         // ── Set 1285: Спорт: углублённый (level=3, UNCOMMON+RARE) ───────────────
 
-        WordEntity(id = 128501, setId = 1285, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שַׁחֲקָן", transliteration = "shakhkan", translation = "игрок / спортсмен"),
-        WordEntity(id = 128502, setId = 1285, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כַּדּוּרְרֶגֶל", transliteration = "kaduregel", translation = "футбол"),
-        WordEntity(id = 128503, setId = 1285, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כַּדּוּרָעַף", transliteration = "kaduraf", translation = "волейбол"),
-        WordEntity(id = 128504, setId = 1285, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שָׂחִיָּה", transliteration = "skhiya", translation = "плавание"),
-        WordEntity(id = 128505, setId = 1285, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֲגַנָּה עַצְמִית", transliteration = "hagana atsmit", translation = "самооборона"),
-        WordEntity(id = 128506, setId = 1285, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אוּמָנוּיוֹת לַחֲמָה", transliteration = "umanuyot lakhama", translation = "боевые искусства"),
-        WordEntity(id = 128507, setId = 1285, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִצְטָדְיוֹן", transliteration = "itsdayon", translation = "стадион"),
+        WordEntity(id = 128501, setId = 1285, languagePair = "he-ru", rarity = "RARE",
+            original = "פֶּנַלְטִי", transliteration = "penalti", translation = "штрафной удар / пенальти"),
+
+        WordEntity(id = 128502, setId = 1285, languagePair = "he-ru", rarity = "RARE",
+            original = "הַדְּחָקָה", transliteration = "hadkhaka", translation = "подкат / захват (в спорте)"),
+
+        WordEntity(id = 128503, setId = 1285, languagePair = "he-ru", rarity = "RARE",
+            original = "רוּגְבִּי", transliteration = "rugbi", translation = "регби"),
+
+        WordEntity(id = 128504, setId = 1285, languagePair = "he-ru", rarity = "RARE",
+            original = "אַלּוּפוּת", transliteration = "alufut", translation = "чемпионство / чемпионат"),
+
+        WordEntity(id = 128505, setId = 1285, languagePair = "he-ru", rarity = "RARE",
+            original = "סְפּוֹרְט מַיִם", transliteration = "sport mayim", translation = "водные виды спорта"),
+
+        WordEntity(id = 128506, setId = 1285, languagePair = "he-ru", rarity = "RARE",
+            original = "חִנּוּךְ גּוּפָנִי", transliteration = "khinukh gufani", translation = "физическое воспитание / физкультура"),
+
+        WordEntity(id = 128507, setId = 1285, languagePair = "he-ru", rarity = "RARE",
+            original = "מִסְרָן", transliteration = "misran", translation = "пас / передача мяча"),
+
         WordEntity(id = 128508, setId = 1285, languagePair = "he-ru", rarity = "RARE",
             original = "אוֹלִימְפְּיָאדָה", transliteration = "olimpiyada", translation = "Олимпийские игры"),
         WordEntity(id = 128509, setId = 1285, languagePair = "he-ru", rarity = "RARE",

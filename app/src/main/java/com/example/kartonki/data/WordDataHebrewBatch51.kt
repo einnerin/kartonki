@@ -61,24 +61,33 @@ object WordDataHebrewBatch51 {
 
         // ── Set 1288: Транспорт: углублённый (level=3, UNCOMMON+RARE) ────────────
 
-        WordEntity(id = 128801, setId = 1288, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "צוֹמֶת", transliteration = "tsomet", translation = "перекрёсток / развязка"),
-        WordEntity(id = 128802, setId = 1288, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מְכוֹלָה", transliteration = "mekhola", translation = "контейнер (грузовой)"),
-        WordEntity(id = 128803, setId = 1288, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שִׁינּוּעַ", transliteration = "shinu'a", translation = "перевозка грузов / транспортировка"),
-        WordEntity(id = 128804, setId = 1288, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הוֹבָלָה", transliteration = "hovala", translation = "транспортировка / доставка"),
-        WordEntity(id = 128805, setId = 1288, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מֶהִירוּת מֻתֶּרֶת", transliteration = "mehirut muteret", translation = "разрешённая скорость / скоростной лимит"),
-        WordEntity(id = 128806, setId = 1288, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עוֹמְסָה", transliteration = "omsa", translation = "груз / нагрузка (на транспорт)"),
-        WordEntity(id = 128807, setId = 1288, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֶחְכָּרָה", transliteration = "hekhkara", translation = "аренда / лизинг (транспортного средства)"),
-        WordEntity(id = 128808, setId = 1288, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תֶּלֶם נְסִיעָה", transliteration = "telem nesi'a", translation = "полоса движения"),
-        WordEntity(id = 128809, setId = 1288, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תְּנוּעַת מָטְעָן", transliteration = "tenu'at mat'an", translation = "грузовой трафик"),
+        WordEntity(id = 128801, setId = 1288, languagePair = "he-ru", rarity = "RARE",
+            original = "כְּבִישׁ אָגְרָה", transliteration = "kvish agra", translation = "платная дорога / дорога с оплатой проезда"),
+
+        WordEntity(id = 128802, setId = 1288, languagePair = "he-ru", rarity = "RARE",
+            original = "מַסְלוּל אוֹפַנַּיִם", transliteration = "maslul ofanayim", translation = "велосипедная дорожка"),
+
+        WordEntity(id = 128803, setId = 1288, languagePair = "he-ru", rarity = "RARE",
+            original = "גֶּשֶׁר תַּלְיָה", transliteration = "gesher talya", translation = "подвесной мост"),
+
+        WordEntity(id = 128804, setId = 1288, languagePair = "he-ru", rarity = "RARE",
+            original = "צִי רְכָבִים", transliteration = "tsi rekhavim", translation = "автопарк / автомобильный флот"),
+
+        WordEntity(id = 128805, setId = 1288, languagePair = "he-ru", rarity = "RARE",
+            original = "תִּחְזוּקַת רְכָבִים", transliteration = "tikhzukat rekhavim", translation = "техническое обслуживание транспортных средств"),
+
+        WordEntity(id = 128806, setId = 1288, languagePair = "he-ru", rarity = "RARE",
+            original = "הַגְבָּלַת מְהִירוּת", transliteration = "hagbalat mehirut", translation = "ограничение скорости"),
+
+        WordEntity(id = 128807, setId = 1288, languagePair = "he-ru", rarity = "RARE",
+            original = "מַחְלִיף כְּבִישִׁים", transliteration = "makhlif kvishim", translation = "транспортная развязка / дорожный узел"),
+
+        WordEntity(id = 128808, setId = 1288, languagePair = "he-ru", rarity = "RARE",
+            original = "פַּס אוֹטוֹבּוּס", transliteration = "pas otobus", translation = "автобусная полоса"),
+
+        WordEntity(id = 128809, setId = 1288, languagePair = "he-ru", rarity = "RARE",
+            original = "חַנְיוֹן רַב-קוֹמָה", transliteration = "khanyon rav-koma", translation = "многоуровневая парковка"),
+
         WordEntity(id = 128810, setId = 1288, languagePair = "he-ru", rarity = "RARE",
             original = "שִׁרְשֶׁרֶת אַסְפָּקָה", transliteration = "shirsheret asfaka", translation = "цепочка поставок"),
         WordEntity(id = 128811, setId = 1288, languagePair = "he-ru", rarity = "RARE",
@@ -220,24 +229,33 @@ object WordDataHebrewBatch51 {
 
         // ── Set 1291: Философия: углублённый (level=3, UNCOMMON+RARE) ────────────
 
-        WordEntity(id = 129101, setId = 1291, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סוֹקְרַטֵּס", transliteration = "sokrates", translation = "Сократ (древнегреческий философ)"),
-        WordEntity(id = 129102, setId = 1291, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פְּלָטוֹן", transliteration = "platon", translation = "Платон (древнегреческий философ)"),
-        WordEntity(id = 129103, setId = 1291, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַרִיסְטוֹ", transliteration = "aristo", translation = "Аристотель (древнегреческий философ)"),
-        WordEntity(id = 129104, setId = 1291, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דְּקַרְט", transliteration = "dekart", translation = "Декарт (французский философ)"),
-        WordEntity(id = 129105, setId = 1291, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עִמָּנוּאֵל קַנְט", transliteration = "imanu'el kant", translation = "Иммануил Кант (немецкий философ)"),
-        WordEntity(id = 129106, setId = 1291, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֶפִּיקוּרוּס", transliteration = "epikurus", translation = "Эпикур (древнегреческий философ)"),
-        WordEntity(id = 129107, setId = 1291, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַרְקְסִיזְם", transliteration = "marksizm", translation = "марксизм"),
-        WordEntity(id = 129108, setId = 1291, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פּוֹזִיטִיבִיזְם", transliteration = "pozitivizm", translation = "позитивизм"),
-        WordEntity(id = 129109, setId = 1291, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִידֵיאָלִיזְם", transliteration = "ide'alizm", translation = "идеализм"),
+        WordEntity(id = 129101, setId = 1291, languagePair = "he-ru", rarity = "RARE",
+            original = "אֶקְזִיסְטֶנְצְיָאלִיזְם", transliteration = "ekzistentsializm", translation = "экзистенциализм"),
+
+        WordEntity(id = 129102, setId = 1291, languagePair = "he-ru", rarity = "RARE",
+            original = "סְטוֹאִיוּת", transliteration = "sto'iyut", translation = "стоицизм"),
+
+        WordEntity(id = 129103, setId = 1291, languagePair = "he-ru", rarity = "RARE",
+            original = "מֶטָפִיזִיקָה", transliteration = "metafizika", translation = "метафизика"),
+
+        WordEntity(id = 129104, setId = 1291, languagePair = "he-ru", rarity = "RARE",
+            original = "סֵמְיוֹטִיקָה", transliteration = "semyotika", translation = "семиотика"),
+
+        WordEntity(id = 129105, setId = 1291, languagePair = "he-ru", rarity = "RARE",
+            original = "אַבְסוּרְדִיזְם", transliteration = "absurdizm", translation = "абсурдизм (философия абсурда)"),
+
+        WordEntity(id = 129106, setId = 1291, languagePair = "he-ru", rarity = "RARE",
+            original = "לוֹגִיקָה פִּילוֹסוֹפִית", transliteration = "logika filosofit", translation = "философская логика"),
+
+        WordEntity(id = 129107, setId = 1291, languagePair = "he-ru", rarity = "RARE",
+            original = "אַנְטְרוֹפּוֹלוֹגְיָה פִּילוֹסוֹפִית", transliteration = "antropologya filosofit", translation = "философская антропология"),
+
+        WordEntity(id = 129108, setId = 1291, languagePair = "he-ru", rarity = "RARE",
+            original = "פִּילוֹסוֹפְיָה שֶׁל הַדָּת", transliteration = "filosofya shel hadat", translation = "философия религии"),
+
+        WordEntity(id = 129109, setId = 1291, languagePair = "he-ru", rarity = "RARE",
+            original = "אֶתִיקָה יִישׁוּמִית", transliteration = "etika yishumit", translation = "прикладная этика"),
+
         WordEntity(id = 129110, setId = 1291, languagePair = "he-ru", rarity = "RARE",
             original = "דֶּאוֹנְטוֹלוֹגְיָה", transliteration = "de'ontologya", translation = "деонтология (этика долга, Кант)"),
         WordEntity(id = 129111, setId = 1291, languagePair = "he-ru", rarity = "RARE",
@@ -326,24 +344,33 @@ object WordDataHebrewBatch51 {
 
         // ── Set 1293: Финансы: углублённый (level=3, UNCOMMON+RARE) ─────────────
 
-        WordEntity(id = 129301, setId = 1293, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פְּחָת", transliteration = "pkhat", translation = "амортизация / обесценение"),
-        WordEntity(id = 129302, setId = 1293, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הַנְהָלַת חֶשְׁבּוֹנוֹת", transliteration = "hanhalt kheshbonot", translation = "бухгалтерский учёт"),
-        WordEntity(id = 129303, setId = 1293, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֶכְנָסָה חַיֶּבֶת בְּמַס", transliteration = "hakhnnasa khayevet bemas", translation = "налогооблагаемый доход"),
-        WordEntity(id = 129304, setId = 1293, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַחְזוֹר עֵסֶק", transliteration = "makhzor esek", translation = "деловой цикл / оборот предприятия"),
-        WordEntity(id = 129305, setId = 1293, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "יְתֶרַת חוֹב", transliteration = "yterat khov", translation = "кредитный остаток / задолженность"),
-        WordEntity(id = 129306, setId = 1293, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קִיזּוּז הֶפְסֵדִים", transliteration = "kizuz hepsedim", translation = "зачёт убытков"),
-        WordEntity(id = 129307, setId = 1293, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מֶמֶשֶׁל תַּאֲגִידִי", transliteration = "memshel ta'agidi", translation = "корпоративное управление"),
-        WordEntity(id = 129308, setId = 1293, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַמוֹרְטִיזַצְיָה", transliteration = "amortizatsiya", translation = "амортизация (погашение долга)"),
-        WordEntity(id = 129309, setId = 1293, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רִוְחָנוּת", transliteration = "rivkhanut", translation = "прибыльность / рентабельность"),
+        WordEntity(id = 129301, setId = 1293, languagePair = "he-ru", rarity = "RARE",
+            original = "תַּזְרִים מְזֻמָּנִים", transliteration = "tazrim mezumanim", translation = "денежный поток / кэшфлоу"),
+
+        WordEntity(id = 129302, setId = 1293, languagePair = "he-ru", rarity = "RARE",
+            original = "תְּשׁוּאָה עַל הַשְׁקָעָה", transliteration = "tshu'a al hashka'a", translation = "доходность инвестиций / ROI"),
+
+        WordEntity(id = 129303, setId = 1293, languagePair = "he-ru", rarity = "RARE",
+            original = "מִינּוּף פִּינַנְסִי", transliteration = "minuf finansi", translation = "финансовый леверидж / финансовое плечо"),
+
+        WordEntity(id = 129304, setId = 1293, languagePair = "he-ru", rarity = "RARE",
+            original = "קֶרֶן הֵשְׁקָעוֹת", transliteration = "keren heshka'ot", translation = "инвестиционный фонд"),
+
+        WordEntity(id = 129305, setId = 1293, languagePair = "he-ru", rarity = "RARE",
+            original = "שׁוּקֵי הוֹן", transliteration = "shuke hon", translation = "рынки капитала"),
+
+        WordEntity(id = 129306, setId = 1293, languagePair = "he-ru", rarity = "RARE",
+            original = "תַּקְצִיב גִּרָעוֹן", transliteration = "taktziv gira'on", translation = "дефицитный бюджет / бюджетный дефицит"),
+
+        WordEntity(id = 129307, setId = 1293, languagePair = "he-ru", rarity = "RARE",
+            original = "יְצִיאָה לְבּוֹרְסָה", transliteration = "yetzi'a laborsa", translation = "выход на биржу / IPO"),
+
+        WordEntity(id = 129308, setId = 1293, languagePair = "he-ru", rarity = "RARE",
+            original = "חוֹב לְאוּמִּי", transliteration = "khov le'umi", translation = "государственный долг"),
+
+        WordEntity(id = 129309, setId = 1293, languagePair = "he-ru", rarity = "RARE",
+            original = "שִׁעוּר רִיבִּית", transliteration = "shi'ur ribit", translation = "процентная ставка"),
+
         WordEntity(id = 129310, setId = 1293, languagePair = "he-ru", rarity = "RARE",
             original = "מְדִינִיּוּת פִּיסְקָלִית", transliteration = "mediniyut fiskalit", translation = "фискальная политика"),
         WordEntity(id = 129311, setId = 1293, languagePair = "he-ru", rarity = "RARE",
