@@ -241,7 +241,7 @@ object WordDataHebrewBatch49 {
             original = "פְּרוֹפָגַנְדָה", transliteration = "propaganda", translation = "пропаганда"),
 
         WordEntity(id = 127503, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "צֶנְזוּרָה", transliteration = "tzenzura", translation = "цензура"),
+            original = "דִּיקְטָטוּרָה", transliteration = "diktatura", translation = "диктатура"),
 
         WordEntity(id = 127504, setId = 1275, languagePair = "he-ru", rarity = "RARE",
             original = "רִיבוֹנוּת", transliteration = "rivonoot", translation = "суверенитет"),

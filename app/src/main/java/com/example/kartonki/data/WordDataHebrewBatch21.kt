@@ -41,11 +41,11 @@ object WordDataHebrewBatch21 {
         WordEntity(id = 108503, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "שׂיא אִישִׁי", translation = "личный рекорд"),
         WordEntity(id = 108504, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִמּוּן", translation = "тренировка; тренинг"),
+            original = "אֵרוֹבִּיקָה", translation = "аэробика"),
         WordEntity(id = 108505, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הִתְגּוֹשְׁשׁוּת", translation = "борьба; единоборство"),
+            original = "כַּדּוּר רֶשֶׁת", translation = "волейбол"),
         WordEntity(id = 108506, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גְּלִישָׁה", translation = "сёрфинг"),
+            original = "טֶנִּיס שֻׁלְחָן", translation = "настольный теннис; пинг-понг"),
 
         // UNCOMMON (A2-B1)
         WordEntity(id = 108507, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",

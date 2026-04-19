@@ -31,7 +31,7 @@ object WordDataHebrewBatch27 {
         // ── Set 1103: Сельское хозяйство ─────────────────────────────────
         // UNCOMMON (A2-B1)
         WordEntity(id = 110301, setId = 1103, languagePair = "he-ru", original = "בַּצּוֹרֶת", translation = "засуха", transliteration = "batzóret", rarity = "UNCOMMON"),
-        WordEntity(id = 110302, setId = 1103, languagePair = "he-ru", original = "קוֹמְפּוֹסְט", translation = "компост", transliteration = "kompost", rarity = "UNCOMMON"),
+        WordEntity(id = 110302, setId = 1103, languagePair = "he-ru", original = "עִיבּוּד אֲדָמָה", translation = "обработка земли; земледелие", transliteration = "ibud adama", rarity = "UNCOMMON"),
         WordEntity(id = 110303, setId = 1103, languagePair = "he-ru", original = "קַרְקַע", translation = "почва; грунт", transliteration = "karka", rarity = "UNCOMMON"),
         WordEntity(id = 110304, setId = 1103, languagePair = "he-ru", original = "מִרְעֶה", translation = "пастбище", transliteration = "mir'e", rarity = "UNCOMMON"),
         WordEntity(id = 110305, setId = 1103, languagePair = "he-ru", original = "פּוֹרְיוּת", translation = "плодородность", transliteration = "poriyut", rarity = "UNCOMMON"),
@@ -78,7 +78,7 @@ object WordDataHebrewBatch27 {
         WordEntity(id = 110402, setId = 1104, languagePair = "he-ru", original = "כְּפָתוֹר", translation = "пуговица", transliteration = "kfator", rarity = "UNCOMMON"),
         WordEntity(id = 110403, setId = 1104, languagePair = "he-ru", original = "פַּשְׁתָּן", translation = "лён; льняная ткань", transliteration = "pashtan", rarity = "UNCOMMON"),
         WordEntity(id = 110404, setId = 1104, languagePair = "he-ru", original = "נַיְלוֹן", translation = "нейлон", transliteration = "naylo n", rarity = "UNCOMMON"),
-        WordEntity(id = 110405, setId = 1104, languagePair = "he-ru", original = "תַּחְפּוֹשֶׂת", translation = "маскарадный костюм; наряд", transliteration = "takhposet", rarity = "UNCOMMON"),
+        WordEntity(id = 110405, setId = 1104, languagePair = "he-ru", original = "שְׂמַלַּת עֶרֶב", translation = "вечернее платье", transliteration = "smlat erev", rarity = "UNCOMMON"),
         WordEntity(id = 110406, setId = 1104, languagePair = "he-ru", original = "צֶמֶר גֶּפֶן", translation = "хлопок", transliteration = "tzemer gefen", rarity = "UNCOMMON"),
         WordEntity(id = 110407, setId = 1104, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תְּצוּגַת אוֹפְנָה", translation = "показ мод"),

@@ -123,12 +123,12 @@ object WordDataHebrewBatch42 {
         ),
 
         WordEntity(id = 122110, setId = 1221, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "communication", transliteration = "akhva",
-            original = "אַחְוָה", translation = "братство; товарищество",
-            definition = "קֶשֶׁר עָמֹק שֶׁל סוֹלִידָרִיּוּת וּרְעוּת בֵּין בְּנֵי אָדָם.",
-            definitionNative = "Глубокая связь солидарности и дружбы между людьми.",
-            example = "רוּחַ הָאַחְוָה בַּקְּבוּצָה יָצְרָה אַוִּירָה טוֹבָה.",
-            exampleNative = "Дух אַחְוָה в группе создал хорошую атмосферу.",
+            pos = "noun", semanticGroup = "communication", transliteration = "shikhtur tarbutit",
+            original = "שִׁיכְטוּר תַּרְבּוּתִי", translation = "культурная стратификация",
+            definition = "חַלּוּקָה הִיֵרַרְכִית שֶׁל חֶבְרָה לְפִי עֶרְכִין תַּרְבּוּתִיִּים.",
+            definitionNative = "Иерархическое деление общества по культурным ценностям.",
+            example = "שִׁיכְטוּר תַּרְבּוּתִי מְשַׁקֵּף הֶבְדֵּלֵי כֹּחַ בְּחֶבְרָה.",
+            exampleNative = "שִׁיכְטוּר תַּרְבּוּתִי отражает различия в силе внутри общества.",
         ),
 
         WordEntity(id = 122111, setId = 1221, languagePair = "he-ru", rarity = "RARE",

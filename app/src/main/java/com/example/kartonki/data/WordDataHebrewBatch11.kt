@@ -523,12 +523,12 @@ object WordDataHebrewBatch11 {
         ),
         WordEntity(
             id = 105804, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_positive", transliteration = "hitmodedut",
-            original = "הִתְמוֹדְדוּת", translation = "преодоление; совладание (coping)",
-            definition = "הַיְּכֹלֶת לְהִתְמוֹדֵד עִם אֲתָגָרִים וְלַחַץ בְּדֶרֶךְ בְּרִיאָה.",
-            definitionNative = "Способность справляться с трудностями и стрессом здоровым образом.",
-            example = "פִּיתּוּחַ מֵיכָלוּת הִתְמוֹדְדוּת הוּא חֵלֶק מֶרְכָּזִי בַּטִּיפּוּל הַנַּפְשִׁי.",
-            exampleNative = "Развитие навыков הִתְמוֹדְדוּת является центральной частью психотерапии.",
+            pos = "noun", semanticGroup = "mental_positive", transliteration = "histaglut",
+            original = "הִסְתַּגְּלוּת", translation = "адаптация; приспособление",
+            definition = "הַיְּכֹלֶת לְהִסְתַּגֵּל לְמָצָב חָדָשׁ אוֹ מְשַׁנֶּה.",
+            definitionNative = "Способность приспосабливаться к новым или изменяющимся условиям.",
+            example = "הִסְתַּגְּלוּת מָהִירָה לְסְבִיבָה חֲדָשָׁה מִסְמֶּנֶת בְּרִיאוּת נַפְשִׁית.",
+            exampleNative = "Быстрая הִסְתַּגְּלוּת к новой среде свидетельствует о психическом здоровье.",
         ),
 
         WordEntity(

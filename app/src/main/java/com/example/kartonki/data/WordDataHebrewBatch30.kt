@@ -74,7 +74,7 @@ object WordDataHebrewBatch30 {
         WordEntity(id = 111301, setId = 1113, languagePair = "he-ru", original = "כְּשִׁירוּת", translation = "компетентность", transliteration = "kshirut", rarity = "UNCOMMON"),
         WordEntity(id = 111302, setId = 1113, languagePair = "he-ru", original = "אַחֲרָאִיּוּת", translation = "ответственность", transliteration = "akhrayut", rarity = "UNCOMMON"),
         WordEntity(id = 111303, setId = 1113, languagePair = "he-ru", original = "יְזָמוּת", translation = "предпринимательство", transliteration = "yezamut", rarity = "UNCOMMON"),
-        WordEntity(id = 111304, setId = 1113, languagePair = "he-ru", original = "מֶנְטוֹר", translation = "наставник", transliteration = "mentor", rarity = "UNCOMMON"),
+        WordEntity(id = 111304, setId = 1113, languagePair = "he-ru", original = "קוֹאַלִיצְיָה עִסְקִית", translation = "деловая коалиция; бизнес-альянс", transliteration = "ko'alitsya iskyt", rarity = "UNCOMMON"),
         WordEntity(id = 111305, setId = 1113, languagePair = "he-ru", original = "הִתְמַחוּת", translation = "специализация", transliteration = "hitmakhut", rarity = "UNCOMMON"),
         WordEntity(id = 111306, setId = 1113, languagePair = "he-ru", original = "מוּכְשָׁרוּת", translation = "способность / потенциал", transliteration = "mukhsharut", rarity = "UNCOMMON"),
         WordEntity(id = 111307, setId = 1113, languagePair = "he-ru", rarity = "UNCOMMON",

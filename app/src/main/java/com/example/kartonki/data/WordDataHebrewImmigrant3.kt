@@ -10,10 +10,10 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant3 {
 
     val sets = listOf(
-        WordSetEntity(id = 1030, name = "Поиск работы",             description = "Вакансии, договор, зарплата, отпуск B1/B2",     languagePair = "he-ru", orderIndex = 30),
-        WordSetEntity(id = 1031, name = "Детский сад и школа",      description = "Запись, уроки, кружки, собрания B1/B2",     languagePair = "he-ru", orderIndex = 31),
-        WordSetEntity(id = 1032, name = "Почта и посылки",          description = "Марки, конверты, трекинг, доставка B1/B2",     languagePair = "he-ru", orderIndex = 32),
-        WordSetEntity(id = 1033, name = "Вождение",                 description = "Права, машина, топливо, штраф B1/B2",      languagePair = "he-ru", orderIndex = 33),
+        WordSetEntity(id = 1030, name = "Работа и карьера: основы 6",  description = "Вакансии, договор, зарплата, отпуск",     languagePair = "he-ru", orderIndex = 30, topic = "Работа и карьера", level = 1),
+        WordSetEntity(id = 1031, name = "Образование: основы 6",          description = "Запись, уроки, кружки, собрания",     languagePair = "he-ru", orderIndex = 31, topic = "Образование", level = 1),
+        WordSetEntity(id = 1032, name = "Дом и быт: основы 8",            description = "Марки, конверты, трекинг, доставка",     languagePair = "he-ru", orderIndex = 32, topic = "Дом и быт", level = 1),
+        WordSetEntity(id = 1033, name = "Транспорт: основы 6",            description = "Права, машина, топливо, штраф",      languagePair = "he-ru", orderIndex = 33, topic = "Транспорт", level = 1),
     )
 
     val words = listOf(
@@ -114,12 +114,12 @@ object WordDataHebrewImmigrant3 {
         ),
         WordEntity(
             id = 103011, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "work", transliteration = "sha'ot nosafot",
-            original = "שְׁעוֹת נוֹסָפוֹת", translation = "сверхурочные часы",
-            definition = "שָׁעוֹת עֲבוֹדָה מֵעֵבֶר לַיּוֹם אוֹ לַשָּׁבוּעַ הָרְגִילִי.",
-            definitionNative = "Часы работы сверх обычного рабочего дня или недели.",
-            example = "עָבַדְתִּי עֶשֶׂר שְׁעוֹת נוֹסָפוֹת הַחוֹדֶשׁ.",
-            exampleNative = "В этом месяце я отработал десять שְׁעוֹת נוֹסָפוֹת.",
+            pos = "noun", semanticGroup = "work", transliteration = "yom chofesh",
+            original = "יוֹם חֹפֶשׁ", translation = "выходной день; день отдыха",
+            definition = "יוֹם שֶׁבּוֹ עוֹבֵד פָּטוּר מֵעֲבוֹדָה לְצֹרֶךְ מְנוּחָה.",
+            definitionNative = "День, в который работник освобождён от труда для отдыха.",
+            example = "קֵיבַּלְתִּי יוֹם חֹפֶשׁ נוֹסָף בְּגֵין שְׁעוֹת עֲבוֹדָה יְתֵרוֹת.",
+            exampleNative = "Мне дали дополнительный יוֹם חֹפֶשׁ за переработку.",
         ),
         WordEntity(
             id = 103012, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",

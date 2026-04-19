@@ -6,12 +6,12 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant8 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1154, languagePair = "he-ru", name = "Аптека", description = "Лекарства и здоровье", orderIndex = 154),
-        WordSetEntity(id = 1155, languagePair = "he-ru", name = "Банк", description = "Банковские услуги и финансы", orderIndex = 155),
-        WordSetEntity(id = 1156, languagePair = "he-ru", name = "Одежда", description = "Одежда и покупки", orderIndex = 156),
-        WordSetEntity(id = 1157, languagePair = "he-ru", name = "Дети и школа", description = "Учёба и воспитание", orderIndex = 157),
-        WordSetEntity(id = 1158, languagePair = "he-ru", name = "Природа и погода", description = "Пейзажи и климат", orderIndex = 158),
-        WordSetEntity(id = 1159, languagePair = "he-ru", name = "Спорт и фитнес", description = "Занятия спортом", orderIndex = 159),
+        WordSetEntity(id = 1154, languagePair = "he-ru", name = "Медицина: основы 5",              description = "Лекарства и здоровье", orderIndex = 154, topic = "Медицина", level = 1),
+        WordSetEntity(id = 1155, languagePair = "he-ru", name = "Финансы: основы 6",              description = "Банковские услуги и финансы", orderIndex = 155, topic = "Финансы", level = 1),
+        WordSetEntity(id = 1156, languagePair = "he-ru", name = "Мода: основы 6",                 description = "Одежда и покупки", orderIndex = 156, topic = "Мода", level = 1),
+        WordSetEntity(id = 1157, languagePair = "he-ru", name = "Образование: основы 7",          description = "Учёба и воспитание", orderIndex = 157, topic = "Образование", level = 1),
+        WordSetEntity(id = 1158, languagePair = "he-ru", name = "Природа и экология: основы 11",  description = "Пейзажи и климат", orderIndex = 158, topic = "Природа и экология", level = 1),
+        WordSetEntity(id = 1159, languagePair = "he-ru", name = "Спорт: основы 6",               description = "Занятия спортом", orderIndex = 159, topic = "Спорт", level = 1),
     )
 
     val words: List<WordEntity> = listOf(
@@ -32,7 +32,7 @@ object WordDataHebrewImmigrant8 {
         WordEntity(id = 115413, setId = 1154, languagePair = "he-ru", original = "סִירוּפ", translation = "сироп", transliteration = "sirup", rarity = "UNCOMMON"),
         WordEntity(id = 115414, setId = 1154, languagePair = "he-ru", original = "תַּרְסִיס אַף", translation = "назальный спрей", transliteration = "tarsís af", rarity = "UNCOMMON"),
         WordEntity(id = 115415, setId = 1154, languagePair = "he-ru", original = "גְּלוּלָה", translation = "капсула / таблетка", transliteration = "glula", rarity = "UNCOMMON"),
-        WordEntity(id = 115416, setId = 1154, languagePair = "he-ru", original = "גַּרְגֶּרֶת", translation = "тонзиллит / ангина", transliteration = "gargéret", rarity = "UNCOMMON"),
+        WordEntity(id = 115416, setId = 1154, languagePair = "he-ru", original = "שִׁיעוּל מוּגְבָּר", translation = "затяжной кашель; хронический кашель", transliteration = "shiúl mugbar", rarity = "UNCOMMON"),
         WordEntity(id = 115417, setId = 1154, languagePair = "he-ru", original = "נַזֶּלֶת", translation = "насморк", transliteration = "nazelet", rarity = "UNCOMMON"),
         WordEntity(id = 115418, setId = 1154, languagePair = "he-ru", original = "צַרֶבֶת", translation = "изжога", transliteration = "tzarevet", rarity = "UNCOMMON"),
         WordEntity(id = 115419, setId = 1154, languagePair = "he-ru", original = "בְּחִילָה", translation = "тошнота", transliteration = "bkhila", rarity = "UNCOMMON"),

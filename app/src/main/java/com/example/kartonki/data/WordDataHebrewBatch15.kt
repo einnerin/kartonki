@@ -663,12 +663,12 @@ object WordDataHebrewBatch15 {
         ),
         WordEntity(
             id = 106919, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics", transliteration = "hatshará",
-            original = "הַצְהָרָה", translation = "декларация; заявление",
-            definition = "הוֹדָעָה רִשְׁמִית וּפּוֹמְבִּית שֶׁל גּוּף אוֹ אָדָם.",
-            definitionNative = "Официальное и публичное заявление органа или лица.",
-            example = "הַמֶּמְשָׁלָה פִּרְסְמָה הַצְהָרָה עַל מְדִינִיּוּתָהּ הַחוּץ.",
-            exampleNative = "Правительство опубликовало הַצְהָרָה о своей внешней политике.",
+            pos = "noun", semanticGroup = "politics", transliteration = "vikuakh tsiburi",
+            original = "וִיכּוּחַ צִיבּוּרִי", translation = "публичные дебаты; общественная дискуссия",
+            definition = "דִּיּוּן פּוֹמְבִּי שֶׁבּוֹ מַצִּיגִים דֵּעוֹת מְנוּגָּדוֹת עַל נוֹשֵׂא מְדִינִי.",
+            definitionNative = "Публичное обсуждение, в ходе которого представляют противоположные мнения по политическому вопросу.",
+            example = "וִיכּוּחַ צִיבּוּרִי עַל תַּקְנוֹת סְבִיבָתִיּוֹת הִתְקַיֵּם בָּאוּלָם.",
+            exampleNative = "В зале прошли וִיכּוּחַ צִיבּוּרִי по экологическим нормам.",
         ),
         WordEntity(
             id = 106920, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",

@@ -41,7 +41,7 @@ object WordDataHebrewBatch24 {
         WordEntity(id = 109404, setId = 1094, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מוֹרְפֵּם", translation = "морфема"),
         WordEntity(id = 109405, setId = 1094, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֲגִיָּה", translation = "произношение; артикуляция звуков"),
+            original = "טוֹנֵמָה", translation = "тонема; смыслоразличительный тон"),
         WordEntity(id = 109406, setId = 1094, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מִשְׁפָּט מוּרְכָּב", translation = "сложное предложение"),
 
@@ -83,7 +83,7 @@ object WordDataHebrewBatch24 {
         WordEntity(id = 109422, setId = 1094, languagePair = "he-ru", rarity = "RARE",
             original = "פְּרַגְמַטִיקָה", translation = "прагматика (раздел лингвистики)"),
         WordEntity(id = 109423, setId = 1094, languagePair = "he-ru", rarity = "RARE",
-            original = "דִּיסְקוּרְס", translation = "дискурс"),
+            original = "סוֹצִיוֹלִינְגְוִיסְטִיקָה", translation = "социолингвистика"),
         WordEntity(id = 109424, setId = 1094, languagePair = "he-ru", rarity = "RARE",
             original = "דִּיאַלֶקְטוֹלוֹגְיָה", translation = "диалектология"),
         WordEntity(id = 109425, setId = 1094, languagePair = "he-ru", rarity = "RARE",
@@ -93,7 +93,7 @@ object WordDataHebrewBatch24 {
 
         // UNCOMMON (A2-B1)
         WordEntity(id = 109501, setId = 1095, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מִנְהָג", translation = "обычай; традиция"),
+            original = "טֶקֶס חֶבְרָתִי", translation = "социальный обряд; общественная церемония"),
         WordEntity(id = 109502, setId = 1095, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "סְטֵרֵאוֹטִיפּ", translation = "стереотип"),
         WordEntity(id = 109503, setId = 1095, languagePair = "he-ru", rarity = "UNCOMMON",

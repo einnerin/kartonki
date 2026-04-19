@@ -6,12 +6,12 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant14 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1190, languagePair = "he-ru", name = "Армия и безопасность", description = "ЦАХАЛ, служба, военная лексика", orderIndex = 190),
-        WordSetEntity(id = 1191, languagePair = "he-ru", name = "Общественный транспорт", description = "Автобус, поезд, метро, дороги", orderIndex = 191),
-        WordSetEntity(id = 1192, languagePair = "he-ru", name = "Финансы и инвестиции", description = "Биржа, акции, бюджет, налоги", orderIndex = 192),
-        WordSetEntity(id = 1193, languagePair = "he-ru", name = "Сад и растения", description = "Деревья, цветы, огород", orderIndex = 193),
-        WordSetEntity(id = 1194, languagePair = "he-ru", name = "Израильская кухня", description = "Хумус, фалафель, традиционные блюда", orderIndex = 194),
-        WordSetEntity(id = 1195, languagePair = "he-ru", name = "Права и закон", description = "Суд, договоры, права гражданина", orderIndex = 195),
+        WordSetEntity(id = 1190, languagePair = "he-ru", name = "Политика: продвинутый 4",            description = "ЦАХАЛ, служба, военная лексика", orderIndex = 190, topic = "Политика", level = 2),
+        WordSetEntity(id = 1191, languagePair = "he-ru", name = "Транспорт: основы 7",                description = "Автобус, поезд, метро, дороги", orderIndex = 191, topic = "Транспорт", level = 1),
+        WordSetEntity(id = 1192, languagePair = "he-ru", name = "Финансы: продвинутый 4",             description = "Биржа, акции, бюджет, налоги", orderIndex = 192, topic = "Финансы", level = 2),
+        WordSetEntity(id = 1193, languagePair = "he-ru", name = "Природа и экология: основы 12",      description = "Деревья, цветы, огород", orderIndex = 193, topic = "Природа и экология", level = 1),
+        WordSetEntity(id = 1194, languagePair = "he-ru", name = "Еда и кулинария: основы 7",          description = "Хумус, фалафель, традиционные блюда", orderIndex = 194, topic = "Еда и кулинария", level = 1),
+        WordSetEntity(id = 1195, languagePair = "he-ru", name = "Право: продвинутый 4",               description = "Суд, договоры, права гражданина", orderIndex = 195, topic = "Право", level = 2),
     )
 
     val words: List<WordEntity> = listOf(
@@ -175,7 +175,7 @@ object WordDataHebrewImmigrant14 {
         WordEntity(id = 119521, setId = 1195, languagePair = "he-ru", original = "פִּצּוּי", translation = "компенсация", transliteration = "pitsui", rarity = "RARE"),
         WordEntity(id = 119522, setId = 1195, languagePair = "he-ru", original = "סִכְסוּךְ", translation = "конфликт / спор", transliteration = "sikhsukh", rarity = "UNCOMMON"),
         WordEntity(id = 119523, setId = 1195, languagePair = "he-ru", original = "כְּתַב אִישׁוּם", translation = "обвинительное заключение", transliteration = "ktav ishuv", rarity = "RARE"),
-        WordEntity(id = 119524, setId = 1195, languagePair = "he-ru", original = "צַוָּאָה", translation = "завещание", transliteration = "tsvaah", rarity = "RARE"),
+        WordEntity(id = 119524, setId = 1195, languagePair = "he-ru", original = "עֲרָעוּר מִנְהָלִי", translation = "административная апелляция", transliteration = "araur minhalí", rarity = "RARE"),
         WordEntity(id = 119525, setId = 1195, languagePair = "he-ru", original = "זְכוּת הַשְּׁתִיקָה", translation = "право хранить молчание", transliteration = "zkhut hashktika", rarity = "RARE"),
     )
 }

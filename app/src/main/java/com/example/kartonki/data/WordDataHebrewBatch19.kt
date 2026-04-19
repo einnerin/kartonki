@@ -185,7 +185,7 @@ object WordDataHebrewBatch19 {
         WordEntity(id = 107917, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "אַנְטְרָקְט", translation = "антракт; перерыв в спектакле"),
         WordEntity(id = 107918, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כַּרְטִיסִיָּה", translation = "театральная касса; абонемент"),
+            original = "אוֹרְכֶסְטְרָה", translation = "оркестр; яма оркестра"),
         WordEntity(id = 107919, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מַסָּכָה", translation = "маска"),
         WordEntity(id = 107920, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -205,9 +205,9 @@ object WordDataHebrewBatch19 {
 
         // UNCOMMON (A2-B1)
         WordEntity(id = 108001, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סֶמִינָר", translation = "семинар"),
+            original = "הַרְצָאַת אוֹרֵחַ", translation = "приглашённая лекция; гостевая лекция"),
         WordEntity(id = 108002, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חִיבּוּר", translation = "сочинение; эссе"),
+            original = "עֲבוֹדַת סֵמִינָר", translation = "семинарская работа; курсовая"),
         WordEntity(id = 108003, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "הִרְשָׁמָה", translation = "зачисление; регистрация"),
         WordEntity(id = 108004, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -358,7 +358,7 @@ object WordDataHebrewBatch19 {
 
         // RARE (cont.)
         WordEntity(id = 108022, setId = 1080, languagePair = "he-ru", rarity = "RARE",
-            original = "כֶּתֶב עֵת", translation = "научный журнал"),
+            original = "מִחְקָר אֶמְפִּירִי", translation = "эмпирическое исследование"),
         WordEntity(id = 108023, setId = 1080, languagePair = "he-ru", rarity = "RARE",
             original = "הַסְמָכָה", translation = "аккредитация; сертификация"),
         WordEntity(id = 108024, setId = 1080, languagePair = "he-ru", rarity = "RARE",
@@ -370,7 +370,7 @@ object WordDataHebrewBatch19 {
 
         // UNCOMMON (A2-B1)
         WordEntity(id = 108101, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תַּקְצִיב", translation = "бюджет"),
+            original = "הַכְנָסָה נֶטוֹ", translation = "чистый доход; доход нетто"),
         WordEntity(id = 108102, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "רְוָחִיּוּת", translation = "рентабельность; прибыльность"),
         WordEntity(id = 108103, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",

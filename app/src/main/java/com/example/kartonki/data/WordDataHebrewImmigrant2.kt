@@ -10,10 +10,10 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant2 {
 
     val sets = listOf(
-        WordSetEntity(id = 1026, name = "Аренда квартиры",         description = "Снять жильё: договор, депозит, хозяин B1/B2", languagePair = "he-ru", orderIndex = 26),
-        WordSetEntity(id = 1027, name = "Коммунальные услуги",      description = "Газ, счётчик, квитанции, мусор B1/B2",        languagePair = "he-ru", orderIndex = 27),
-        WordSetEntity(id = 1028, name = "Купат Холим",              description = "Касса больных: врач, анализы, страховка B1/B2", languagePair = "he-ru", orderIndex = 28),
-        WordSetEntity(id = 1029, name = "Аптека",                   description = "Лекарства, рецепты, таблетки B1/B2",             languagePair = "he-ru", orderIndex = 29),
+        WordSetEntity(id = 1026, name = "Дом и быт: основы 6",  description = "Снять жильё: договор, депозит, хозяин", languagePair = "he-ru", orderIndex = 26, topic = "Дом и быт", level = 1),
+        WordSetEntity(id = 1027, name = "Дом и быт: основы 7",  description = "Газ, счётчик, квитанции, мусор",        languagePair = "he-ru", orderIndex = 27, topic = "Дом и быт", level = 1),
+        WordSetEntity(id = 1028, name = "Медицина: основы 3",   description = "Касса больных: врач, анализы, страховка", languagePair = "he-ru", orderIndex = 28, topic = "Медицина", level = 1),
+        WordSetEntity(id = 1029, name = "Медицина: основы 4",   description = "Лекарства, рецепты, таблетки",             languagePair = "he-ru", orderIndex = 29, topic = "Медицина", level = 1),
     )
 
     val words = listOf(
@@ -308,12 +308,12 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102712, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "hafsaka",
-            original = "הַפְסָקָה", translation = "перебой / отключение",
-            definition = "הַפְסָקַת שֵׁרוּת זְמַנִּית — חַשְׁמַל, אִינְטֶרְנֶט אוֹ גָּז.",
-            definitionNative = "Временное прекращение подачи сервиса — электричества, интернета или газа.",
-            example = "הָיְתָה הַפְסָקָה בָּאִינְטֶרְנֶט שָׁלוֹשׁ שָׁעוֹת הַלַּיְלָה.",
-            exampleNative = "Ночью была трёхчасовая הַפְסָקָה интернета.",
+            pos = "noun", semanticGroup = "utilities", transliteration = "tashboren",
+            original = "תַּשְׁבּוֹרֶן", translation = "инфраструктура (бытовая, ЖКХ)",
+            definition = "מַעֲרֶכֶת הַצִּנּוֹרוֹת, הַחַשְׁמַל וְהַבִּיּוּב הַמְּשָׁרְתִים אֶת הַבַּיִת.",
+            definitionNative = "Система труб, электричества и канализации, обслуживающих дом.",
+            example = "הַתַּשְׁבּוֹרֶן הַיָּשָׁן בָּרְחוֹב צָרִיךְ חִידּוּשׁ.",
+            exampleNative = "Старый הַתַּשְׁבּוֹרֶן в квартале требует обновления.",
         ),
         WordEntity(
             id = 102713, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",

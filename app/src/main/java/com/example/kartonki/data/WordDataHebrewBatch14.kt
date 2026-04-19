@@ -91,12 +91,12 @@ object WordDataHebrewBatch14 {
         ),
         WordEntity(
             id = 106508, setId = 1065, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "marketing_intern", transliteration = "réshet khevratít",
-            original = "רֶשֶׁת חֶבְרָתִית", translation = "социальная сеть",
-            definition = "פְּלַטְפוֹרְמָה דִּיגִיטָלִית לְשִׁיתּוּף תּוֹכֶן וּתְקְשׁוֹרֶת בֵּין מִשְׁתַּמְּשִׁים.",
-            definitionNative = "Цифровая платформа для обмена контентом и общения между пользователями.",
-            example = "הַחֶבְרָה פָּעִילָה בְּאַרְבַּע רְשָׁתוֹת חֶבְרָתִיּוֹת שׁוֹנוֹת.",
-            exampleNative = "Компания активна в четырёх разных רֶשֶׁת חֶבְרָתִית.",
+            pos = "noun", semanticGroup = "marketing_intern", transliteration = "khashifa",
+            original = "חֲשִׂיפָה", translation = "охват; экспозиция (маркетинг)",
+            definition = "מִדַּד הַמְּבַטֵּא כַּמָּה אֲנָשִׁים נֶחְשְׂפוּ לַפִּרְסוֹם אוֹ לַתּוֹכֶן.",
+            definitionNative = "Показатель, выражающий, сколько людей увидели рекламу или контент.",
+            example = "הַקַּמְפֵּיְן הַזֶּה הִשִּׂיג חֲשִׂיפָה שֶׁל מִילְיוֹן אֲנָשִׁים.",
+            exampleNative = "Эта кампания получила חֲשִׂיפָה в один миллион человек.",
         ),
         WordEntity(
             id = 106509, setId = 1065, languagePair = "he-ru", rarity = "UNCOMMON",

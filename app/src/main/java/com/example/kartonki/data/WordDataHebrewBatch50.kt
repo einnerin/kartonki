@@ -184,7 +184,7 @@ object WordDataHebrewBatch50 {
             original = "שְׁמִירַת מִצְווֹת", transliteration = "shmirat mitzvot", translation = "соблюдение заповедей"),
 
         WordEntity(id = 128204, setId = 1282, languagePair = "he-ru", rarity = "RARE",
-            original = "רַבָּנוּת", transliteration = "rabanut", translation = "раввинат"),
+            original = "בֵּית דִּין רַבָּנִי", transliteration = "bet din rabani", translation = "раввинский суд"),
 
         WordEntity(id = 128205, setId = 1282, languagePair = "he-ru", rarity = "RARE",
             original = "קִבּוּץ גָּלֻיּוֹת", transliteration = "kibuts galuyot", translation = "собирание рассеянных (концепция возвращения)"),
@@ -202,7 +202,7 @@ object WordDataHebrewBatch50 {
             original = "שְׁאֵלָה וּתְשׁוּבָה", transliteration = "she'ela utshuvah", translation = "респонсы (вопрос-ответ в галахическом праве)"),
 
         WordEntity(id = 128210, setId = 1282, languagePair = "he-ru", rarity = "RARE",
-            original = "צְנִיעוּת", transliteration = "tzni'ut", translation = "скромность / модест (цниют)"),
+            original = "אֱמוּנַת חֲכָמִים", transliteration = "emunat khakhamim", translation = "вера в мудрецов (принцип авторитета раввинов)"),
 
         WordEntity(id = 128211, setId = 1282, languagePair = "he-ru", rarity = "RARE",
             original = "עֲבוֹדַת הַשֵּׁם", transliteration = "avodat hashem", translation = "служение Богу"),
