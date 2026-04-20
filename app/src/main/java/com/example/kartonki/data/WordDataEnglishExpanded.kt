@@ -55,7 +55,7 @@ object WordDataEnglishExpanded {
         WordSetEntity(id = 246, name = "Дом и быт: углублённый 4", description = "Ботаника и агрономия — продвинутая лексика", orderIndex = 129, languagePair = "en-ru", topic = "Дом и быт", level = 3),
         WordSetEntity(id = 247, name = "Технологии: углублённый 2", description = "Кибербезопасность и технологии — продвинутая лексика", orderIndex = 130, languagePair = "en-ru", topic = "Технологии", level = 3),
         WordSetEntity(id = 248, name = "Наука: носитель языка", description = "Химия — углублённая и специализированная лексика", orderIndex = 131, languagePair = "en-ru", topic = "Наука", level = 5),
-        WordSetEntity(id = 249, name = "Технологии: углублённый 3", description = "Игровая лексика и жанры B1/B2", orderIndex = 132, languagePair = "en-ru", topic = "Технологии", level = 3),
+        WordSetEntity(id = 249, name = "Технологии: углублённый 3", description = "Игровая лексика и жанры", orderIndex = 132, languagePair = "en-ru", topic = "Технологии", level = 3),
     )
 
     val words: List<WordEntity> get() = wordsA() + wordsB() + wordsC() + wordsD() + wordsE() + wordsF() + wordsG() + wordsH() + wordsI() + wordsJ() + wordsK() + wordsL()
