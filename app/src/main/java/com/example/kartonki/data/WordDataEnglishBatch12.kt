@@ -8,24 +8,19 @@ object WordDataEnglishBatch12 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 279, languagePair = "en-ru", orderIndex = 279,
-            name = "Школа — предметы и принадлежности", description = "Учебные предметы и школьные принадлежности A1/A2"
-        ),
+            name = "Образование: основы 7", description = "Учебные предметы и школьные принадлежности A1/A2", topic = "Образование", level = 1),
         WordSetEntity(
             id = 280, languagePair = "en-ru", orderIndex = 280,
-            name = "Профессии — базовые", description = "Распространённые профессии и занятия A1/A2"
-        ),
+            name = "Работа и карьера: основы 7", description = "Распространённые профессии и занятия A1/A2", topic = "Работа и карьера", level = 1),
         WordSetEntity(
             id = 281, languagePair = "en-ru", orderIndex = 281,
-            name = "Природа — базовые слова", description = "Объекты природы, рельеф и растения A1/A2"
-        ),
+            name = "Природа и экология: основы 11", description = "Объекты природы, рельеф и растения A1/A2", topic = "Природа и экология", level = 1),
         WordSetEntity(
             id = 282, languagePair = "en-ru", orderIndex = 282,
-            name = "Самочувствие и тело", description = "Ощущения, симптомы и движения тела A1/A2"
-        ),
+            name = "Медицина: основы 6", description = "Ощущения, симптомы и движения тела A1/A2", topic = "Медицина", level = 1),
         WordSetEntity(
             id = 283, languagePair = "en-ru", orderIndex = 283,
-            name = "Глаголы движения", description = "Как мы двигаемся — от прыжков до ползания A1/A2"
-        ),
+            name = "Лингвистика: основы 15", description = "Как мы двигаемся — от прыжков до ползания A1/A2", topic = "Лингвистика", level = 1),
     )
 
     val words: List<WordEntity> = listOf(
