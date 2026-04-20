@@ -16,21 +16,21 @@ object WordDataHebrewBatch56 {
 
         WordSetEntity(
             id = 1316, languagePair = "he-ru", orderIndex = 1316,
-            name = "Бухгалтерия: продвинутый",
-            description = "Профессиональная бухгалтерская терминология",
-            topic = "Бухгалтерия",
-            level = 2),
-
-        WordSetEntity(
-            id = 1317, languagePair = "he-ru", orderIndex = 1317,
             name = "Бухгалтерия: углублённый",
-            description = "Углублённая бухгалтерия: МСФО, консолидация, инструменты",
+            description = "Профессиональная бухгалтерская терминология",
             topic = "Бухгалтерия",
             level = 3),
 
         WordSetEntity(
-            id = 1318, languagePair = "he-ru", orderIndex = 1318,
+            id = 1317, languagePair = "he-ru", orderIndex = 1317,
             name = "Бухгалтерия: профессиональный",
+            description = "Углублённая бухгалтерия: МСФО, консолидация, инструменты",
+            topic = "Бухгалтерия",
+            level = 4),
+
+        WordSetEntity(
+            id = 1318, languagePair = "he-ru", orderIndex = 1318,
+            name = "Бухгалтерия: профессиональный 2",
             description = "Управленческий учёт, налоговое планирование, аудит высшего уровня",
             topic = "Бухгалтерия",
             level = 4),

@@ -22,7 +22,7 @@ object WordDataHebrewBatch22 {
         ),
         WordSetEntity(
             id = 1090, languagePair = "he-ru", orderIndex = 1090,
-            name = "Культура и искусство: продвинутый 4",
+            name = "Культура и искусство: продвинутый 6",
             description = "Жанры, нарратив и литературный анализ",
             topic = "Культура и искусство",
             level = 2

@@ -10,10 +10,10 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant3 {
 
     val sets = listOf(
-        WordSetEntity(id = 1030, name = "Работа и карьера: основы 6",  description = "Вакансии, договор, зарплата, отпуск",     languagePair = "he-ru", orderIndex = 30, topic = "Работа и карьера", level = 1),
-        WordSetEntity(id = 1031, name = "Образование: основы 6",          description = "Запись, уроки, кружки, собрания",     languagePair = "he-ru", orderIndex = 31, topic = "Образование", level = 1),
-        WordSetEntity(id = 1032, name = "Дом и быт: основы 8",            description = "Марки, конверты, трекинг, доставка",     languagePair = "he-ru", orderIndex = 32, topic = "Дом и быт", level = 1),
-        WordSetEntity(id = 1033, name = "Транспорт: основы 6",            description = "Права, машина, топливо, штраф",      languagePair = "he-ru", orderIndex = 33, topic = "Транспорт", level = 1),
+        WordSetEntity(id = 1030, name = "Работа и карьера: продвинутый 2",  description = "Вакансии, договор, зарплата, отпуск",     languagePair = "he-ru", orderIndex = 30, topic = "Работа и карьера", level = 2),
+        WordSetEntity(id = 1031, name = "Образование: продвинутый",          description = "Запись, уроки, кружки, собрания",     languagePair = "he-ru", orderIndex = 31, topic = "Образование", level = 2),
+        WordSetEntity(id = 1032, name = "Дом и быт: продвинутый 4",            description = "Марки, конверты, трекинг, доставка",     languagePair = "he-ru", orderIndex = 32, topic = "Дом и быт", level = 2),
+        WordSetEntity(id = 1033, name = "Транспорт: продвинутый 2",            description = "Права, машина, топливо, штраф",      languagePair = "he-ru", orderIndex = 33, topic = "Транспорт", level = 2),
     )
 
     val words = listOf(

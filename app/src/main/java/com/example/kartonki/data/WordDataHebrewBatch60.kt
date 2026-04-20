@@ -51,14 +51,14 @@ object WordDataHebrewBatch60 {
 
         WordSetEntity(
             id = 1341, languagePair = "he-ru", orderIndex = 1341,
-            name = "Риэлтор: основы 3",
+            name = "Риэлтор: основы",
             description = "Собеседование риэлтора: лицензия, сделки, база клиентов",
             topic = "Риэлтор",
             level = 1),
 
         WordSetEntity(
             id = 1342, languagePair = "he-ru", orderIndex = 1342,
-            name = "Журналист: основы 2",
+            name = "Журналист: основы",
             description = "Собеседование журналиста: редакция, материалы, формат",
             topic = "Журналист",
             level = 1),

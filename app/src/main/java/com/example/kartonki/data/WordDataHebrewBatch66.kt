@@ -17,10 +17,10 @@ object WordDataHebrewBatch66 {
             name = "Водитель: углублённый", description = "Транспортная документация, аварии, техосмотр",
             topic = "Водитель", level = 3),
         WordSetEntity(id = 1386, languagePair = "he-ru", orderIndex = 1386,
-            name = "Водитель: профессиональный", description = "Дальнобой, логистика, управление маршрутами",
-            topic = "Водитель", level = 4),
+            name = "Водитель: носитель языка", description = "Дальнобой, логистика, управление маршрутами",
+            topic = "Водитель", level = 5),
         WordSetEntity(id = 1387, languagePair = "he-ru", orderIndex = 1387,
-            name = "Водитель: носитель языка", description = "Транспортная отрасль, автоматизация, регуляторика",
+            name = "Водитель: носитель языка 2", description = "Транспортная отрасль, автоматизация, регуляторика",
             topic = "Водитель", level = 5),
 
         WordSetEntity(id = 1388, languagePair = "he-ru", orderIndex = 1388,
@@ -33,10 +33,10 @@ object WordDataHebrewBatch66 {
             name = "Клининг: углублённый", description = "Промышленная уборка, дезинфекция, нормативы",
             topic = "Клининг", level = 3),
         WordSetEntity(id = 1391, languagePair = "he-ru", orderIndex = 1391,
-            name = "Клининг: профессиональный", description = "Управление клининговой службой, SLA, персонал",
-            topic = "Клининг", level = 4),
+            name = "Клининг: носитель языка", description = "Управление клининговой службой, SLA, персонал",
+            topic = "Клининг", level = 5),
         WordSetEntity(id = 1392, languagePair = "he-ru", orderIndex = 1392,
-            name = "Клининг: носитель языка", description = "Устойчивая уборка, экосертификация, автоматизация",
+            name = "Клининг: носитель языка 2", description = "Устойчивая уборка, экосертификация, автоматизация",
             topic = "Клининг", level = 5),
     )
 

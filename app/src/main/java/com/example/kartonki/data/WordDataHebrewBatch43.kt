@@ -36,14 +36,14 @@ object WordDataHebrewBatch43 {
         ),
         WordSetEntity(
             id = 1229, languagePair = "he-ru", orderIndex = 1229,
-            name = "Лингвистика: основы",
+            name = "Лингвистика: основы 3",
             description = "Базовые лингвистические понятия: язык, речь, грамматика",
             topic = "Лингвистика",
             level = 1
         ),
         WordSetEntity(
             id = 1230, languagePair = "he-ru", orderIndex = 1230,
-            name = "Лингвистика: профессиональный",
+            name = "Лингвистика: профессиональный 2",
             description = "Дискурс, семиотика и историческая лингвистика",
             topic = "Лингвистика",
             level = 4

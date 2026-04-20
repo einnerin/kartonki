@@ -9,35 +9,35 @@ object WordDataHebrewBatch58 {
 
         WordSetEntity(
             id = 1325, languagePair = "he-ru", orderIndex = 1325,
-            name = "Риэлтор: основы",
+            name = "Риэлтор: продвинутый 2",
             description = "Базовая лексика агента по недвижимости",
-            topic = "Риэлтор",
-            level = 1),
-
-        WordSetEntity(
-            id = 1326, languagePair = "he-ru", orderIndex = 1326,
-            name = "Риэлтор: продвинутый",
-            description = "Профессиональная риэлторская лексика и документы",
             topic = "Риэлтор",
             level = 2),
 
         WordSetEntity(
-            id = 1327, languagePair = "he-ru", orderIndex = 1327,
+            id = 1326, languagePair = "he-ru", orderIndex = 1326,
             name = "Риэлтор: углублённый",
-            description = "Инвестиции в недвижимость и рыночный анализ",
+            description = "Профессиональная риэлторская лексика и документы",
             topic = "Риэлтор",
             level = 3),
 
         WordSetEntity(
-            id = 1328, languagePair = "he-ru", orderIndex = 1328,
+            id = 1327, languagePair = "he-ru", orderIndex = 1327,
             name = "Риэлтор: профессиональный",
-            description = "Оценочные методы, девелопмент и портфельное управление",
+            description = "Инвестиции в недвижимость и рыночный анализ",
             topic = "Риэлтор",
             level = 4),
 
         WordSetEntity(
-            id = 1329, languagePair = "he-ru", orderIndex = 1329,
+            id = 1328, languagePair = "he-ru", orderIndex = 1328,
             name = "Риэлтор: носитель языка",
+            description = "Оценочные методы, девелопмент и портфельное управление",
+            topic = "Риэлтор",
+            level = 5),
+
+        WordSetEntity(
+            id = 1329, languagePair = "he-ru", orderIndex = 1329,
+            name = "Риэлтор: носитель языка 2",
             description = "Городская экономика, жилищная политика и академический дискурс",
             topic = "Риэлтор",
             level = 5),

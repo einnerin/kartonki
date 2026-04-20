@@ -15,10 +15,10 @@ object WordDataHebrewBatch20 {
         ),
         WordSetEntity(
             id = 1083, languagePair = "he-ru", orderIndex = 1083,
-            name = "Технологии: основы 4",
+            name = "Технологии: продвинутый 6",
             description = "Интернет-коммуникации и медиа",
             topic = "Технологии",
-            level = 1
+            level = 2
         ),
         WordSetEntity(
             id = 1084, languagePair = "he-ru", orderIndex = 1084,

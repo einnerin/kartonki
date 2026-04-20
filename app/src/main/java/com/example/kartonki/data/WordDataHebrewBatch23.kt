@@ -15,7 +15,7 @@ object WordDataHebrewBatch23 {
         ),
         WordSetEntity(
             id = 1092, languagePair = "he-ru", orderIndex = 1092,
-            name = "Философия: продвинутый 2",
+            name = "Философия: продвинутый",
             description = "Направления, понятия и великие вопросы",
             topic = "Философия",
             level = 2

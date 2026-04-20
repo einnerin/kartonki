@@ -23,21 +23,21 @@ object WordDataHebrewBatch55 {
 
         WordSetEntity(
             id = 1312, languagePair = "he-ru", orderIndex = 1312,
-            name = "Уход: углублённый",
-            description = "Клинический и специализированный уход",
-            topic = "Уход",
-            level = 3),
-
-        WordSetEntity(
-            id = 1313, languagePair = "he-ru", orderIndex = 1313,
             name = "Уход: профессиональный",
-            description = "Высокопрофессиональные термины гериатрии и ухода",
+            description = "Клинический и специализированный уход",
             topic = "Уход",
             level = 4),
 
         WordSetEntity(
-            id = 1314, languagePair = "he-ru", orderIndex = 1314,
+            id = 1313, languagePair = "he-ru", orderIndex = 1313,
             name = "Уход: носитель языка",
+            description = "Высокопрофессиональные термины гериатрии и ухода",
+            topic = "Уход",
+            level = 5),
+
+        WordSetEntity(
+            id = 1314, languagePair = "he-ru", orderIndex = 1314,
+            name = "Уход: носитель языка 2",
             description = "Академическая лексика философии и социологии ухода",
             topic = "Уход",
             level = 5),

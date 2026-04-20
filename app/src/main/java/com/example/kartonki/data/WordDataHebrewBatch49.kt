@@ -30,14 +30,14 @@ object WordDataHebrewBatch49 {
 
         WordSetEntity(
             id = 1275, languagePair = "he-ru", orderIndex = 1275,
-            name = "Политика: углублённый",
+            name = "Политика: углублённый 2",
             description = "Политические идеологии и концепции политологии",
             topic = "Политика",
             level = 3),
 
         WordSetEntity(
             id = 1276, languagePair = "he-ru", orderIndex = 1276,
-            name = "Политика: профессиональный",
+            name = "Политика: профессиональный 2",
             description = "Профессиональная политическая наука и теория государства",
             topic = "Политика",
             level = 4),
@@ -51,7 +51,7 @@ object WordDataHebrewBatch49 {
 
         WordSetEntity(
             id = 1278, languagePair = "he-ru", orderIndex = 1278,
-            name = "Право: углублённый",
+            name = "Право: углублённый 2",
             description = "Гражданское право, процессуальные нормы и специализированная юридическая лексика",
             topic = "Право",
             level = 3),

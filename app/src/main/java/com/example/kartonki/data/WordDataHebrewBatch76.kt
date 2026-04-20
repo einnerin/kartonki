@@ -8,21 +8,21 @@ object WordDataHebrewBatch76 {
     val sets: List<WordSetEntity> = listOf(
         // ── Финансы: основы 3, 4, 5 ──────────────────────────────────────────
         WordSetEntity(id = 1483, languagePair = "he-ru", orderIndex = 1483,
-            name = "Финансы: основы 3", description = "Повседневные расходы, скидки, квитанции",
+            name = "Финансы: основы 2", description = "Повседневные расходы, скидки, квитанции",
             topic = "Финансы", level = 1),
         WordSetEntity(id = 1484, languagePair = "he-ru", orderIndex = 1484,
-            name = "Финансы: основы 4", description = "Страхование и государственные пособия",
+            name = "Финансы: основы 3", description = "Страхование и государственные пособия",
             topic = "Финансы", level = 1),
         WordSetEntity(id = 1485, languagePair = "he-ru", orderIndex = 1485,
-            name = "Финансы: основы 5", description = "Налоги и финансовая отчётность в Израиле",
+            name = "Финансы: основы 4", description = "Налоги и финансовая отчётность в Израиле",
             topic = "Финансы", level = 1),
 
         // ── Работа и карьера: основы 4, 5 ────────────────────────────────────
         WordSetEntity(id = 1486, languagePair = "he-ru", orderIndex = 1486,
-            name = "Работа и карьера: основы 4", description = "Права работника, зарплата, расчётный лист",
+            name = "Работа и карьера: основы", description = "Права работника, зарплата, расчётный лист",
             topic = "Работа и карьера", level = 1),
         WordSetEntity(id = 1487, languagePair = "he-ru", orderIndex = 1487,
-            name = "Работа и карьера: основы 5", description = "Трудовой договор, увольнение, пособие",
+            name = "Работа и карьера: основы 2", description = "Трудовой договор, увольнение, пособие",
             topic = "Работа и карьера", level = 1),
     )
 

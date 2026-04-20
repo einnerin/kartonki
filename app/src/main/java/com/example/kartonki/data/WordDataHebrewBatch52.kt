@@ -16,28 +16,28 @@ object WordDataHebrewBatch52 {
 
         WordSetEntity(
             id = 1296, languagePair = "he-ru", orderIndex = 1296,
-            name = "Хай-тек: продвинутый",
-            description = "Рабочий процесс разработчика, инструменты и методологии",
-            topic = "Хай-тек",
-            level = 2),
-
-        WordSetEntity(
-            id = 1297, languagePair = "he-ru", orderIndex = 1297,
             name = "Хай-тек: углублённый",
-            description = "Профессиональная разработка, облако и безопасность систем",
+            description = "Рабочий процесс разработчика, инструменты и методологии",
             topic = "Хай-тек",
             level = 3),
 
         WordSetEntity(
-            id = 1298, languagePair = "he-ru", orderIndex = 1298,
+            id = 1297, languagePair = "he-ru", orderIndex = 1297,
             name = "Хай-тек: профессиональный",
-            description = "Высокоуровневые концепции архитектуры и распределённых систем",
+            description = "Профессиональная разработка, облако и безопасность систем",
             topic = "Хай-тек",
             level = 4),
 
         WordSetEntity(
-            id = 1299, languagePair = "he-ru", orderIndex = 1299,
+            id = 1298, languagePair = "he-ru", orderIndex = 1298,
             name = "Хай-тек: носитель языка",
+            description = "Высокоуровневые концепции архитектуры и распределённых систем",
+            topic = "Хай-тек",
+            level = 5),
+
+        WordSetEntity(
+            id = 1299, languagePair = "he-ru", orderIndex = 1299,
+            name = "Хай-тек: носитель языка 2",
             description = "Академический и экспертный дискурс инженерии ПО",
             topic = "Хай-тек",
             level = 5),

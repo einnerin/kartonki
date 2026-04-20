@@ -25,19 +25,19 @@ object WordDataHebrewBatch75 {
 
         // ── Программист (1478–1482) ───────────────────────────────────────────
         WordSetEntity(id = 1478, languagePair = "he-ru", orderIndex = 1478,
-            name = "Программист: основы", description = "Код, программа, компьютер",
+            name = "Программист: основы 2", description = "Код, программа, компьютер",
             topic = "Программист", level = 1),
         WordSetEntity(id = 1479, languagePair = "he-ru", orderIndex = 1479,
-            name = "Программист: продвинутый", description = "Алгоритмы, функции, база данных",
+            name = "Программист: продвинутый 2", description = "Алгоритмы, функции, база данных",
             topic = "Программист", level = 2),
         WordSetEntity(id = 1480, languagePair = "he-ru", orderIndex = 1480,
-            name = "Программист: углублённый", description = "Архитектура, тестирование, CI/CD",
+            name = "Программист: углублённый 2", description = "Архитектура, тестирование, CI/CD",
             topic = "Программист", level = 3),
         WordSetEntity(id = 1481, languagePair = "he-ru", orderIndex = 1481,
-            name = "Программист: профессиональный", description = "Безопасность, облако, DevOps",
+            name = "Программист: профессиональный 2", description = "Безопасность, облако, DevOps",
             topic = "Программист", level = 4),
         WordSetEntity(id = 1482, languagePair = "he-ru", orderIndex = 1482,
-            name = "Программист: носитель языка", description = "Системы, компиляторы, AI-разработка",
+            name = "Программист: носитель языка 2", description = "Системы, компиляторы, AI-разработка",
             topic = "Программист", level = 5),
     )
 

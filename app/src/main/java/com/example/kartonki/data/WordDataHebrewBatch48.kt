@@ -44,7 +44,7 @@ object WordDataHebrewBatch48 {
         ),
         WordSetEntity(
             id = 1270, languagePair = "he-ru", orderIndex = 1270,
-            name = "Образование: профессиональный",
+            name = "Образование: профессиональный 2",
             description = "Педагогика, образовательная политика и исследования",
             topic = "Образование", level = 4
         ),

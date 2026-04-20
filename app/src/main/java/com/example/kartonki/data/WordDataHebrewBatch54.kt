@@ -16,21 +16,21 @@ object WordDataHebrewBatch54 {
 
         WordSetEntity(
             id = 1306, languagePair = "he-ru", orderIndex = 1306,
-            name = "Строительство: продвинутый",
-            description = "Профессиональные строительные термины и документация",
-            topic = "Строительство",
-            level = 2),
-
-        WordSetEntity(
-            id = 1307, languagePair = "he-ru", orderIndex = 1307,
             name = "Строительство: углублённый",
-            description = "Высокопрофессиональные термины строительной отрасли",
+            description = "Профессиональные строительные термины и документация",
             topic = "Строительство",
             level = 3),
 
         WordSetEntity(
-            id = 1308, languagePair = "he-ru", orderIndex = 1308,
+            id = 1307, languagePair = "he-ru", orderIndex = 1307,
             name = "Строительство: профессиональный",
+            description = "Высокопрофессиональные термины строительной отрасли",
+            topic = "Строительство",
+            level = 4),
+
+        WordSetEntity(
+            id = 1308, languagePair = "he-ru", orderIndex = 1308,
+            name = "Строительство: профессиональный 2",
             description = "Архитектурно-инженерная документация и градостроительство",
             topic = "Строительство",
             level = 4),

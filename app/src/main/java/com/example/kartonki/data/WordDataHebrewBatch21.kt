@@ -8,7 +8,7 @@ object WordDataHebrewBatch21 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1085, languagePair = "he-ru", orderIndex = 1085,
-            name = "Спорт: продвинутый",
+            name = "Спорт: продвинутый 2",
             description = "Соревнования, тактика и спортивная психология",
             topic = "Спорт",
             level = 2

@@ -30,13 +30,13 @@ object WordDataHebrewBatch62 {
             name = "Курьер: продвинутый", description = "Логистика, сортировка, срочные доставки",
             topic = "Курьер", level = 2),
         WordSetEntity(id = 1356, languagePair = "he-ru", orderIndex = 1356,
-            name = "Курьер: углублённый", description = "Специализированные грузы, автопарк, отчётность",
-            topic = "Курьер", level = 3),
-        WordSetEntity(id = 1357, languagePair = "he-ru", orderIndex = 1357,
-            name = "Курьер: профессиональный", description = "Управление доставкой, SLA, цепочка поставок",
+            name = "Курьер: профессиональный", description = "Специализированные грузы, автопарк, отчётность",
             topic = "Курьер", level = 4),
+        WordSetEntity(id = 1357, languagePair = "he-ru", orderIndex = 1357,
+            name = "Курьер: носитель языка", description = "Управление доставкой, SLA, цепочка поставок",
+            topic = "Курьер", level = 5),
         WordSetEntity(id = 1358, languagePair = "he-ru", orderIndex = 1358,
-            name = "Курьер: носитель языка", description = "Логистическая стратегия, автоматизация, тренды",
+            name = "Курьер: носитель языка 2", description = "Логистическая стратегия, автоматизация, тренды",
             topic = "Курьер", level = 5),
     )
 

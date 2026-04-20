@@ -37,14 +37,14 @@ object WordDataHebrewBatch51 {
 
         WordSetEntity(
             id = 1292, languagePair = "he-ru", orderIndex = 1292,
-            name = "Философия: носитель языка",
+            name = "Философия: носитель языка 2",
             description = "Современная философия, метафилософия и академический дискурс",
             topic = "Философия",
             level = 5),
 
         WordSetEntity(
             id = 1293, languagePair = "he-ru", orderIndex = 1293,
-            name = "Финансы: углублённый",
+            name = "Финансы: углублённый 2",
             description = "Бухгалтерский учёт, налогообложение и корпоративные финансы",
             topic = "Финансы",
             level = 3),

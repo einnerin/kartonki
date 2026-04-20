@@ -17,10 +17,10 @@ object WordDataHebrewBatch63 {
             name = "Охранник: углублённый", description = "Контроль доступа, угрозы, расследование",
             topic = "Охранник", level = 3),
         WordSetEntity(id = 1362, languagePair = "he-ru", orderIndex = 1362,
-            name = "Охранник: профессиональный", description = "Управление безопасностью, тактика, операции",
-            topic = "Охранник", level = 4),
+            name = "Охранник: носитель языка", description = "Управление безопасностью, тактика, операции",
+            topic = "Охранник", level = 5),
         WordSetEntity(id = 1363, languagePair = "he-ru", orderIndex = 1363,
-            name = "Охранник: носитель языка", description = "Доктрина охраны, стратегия, профессиональная этика",
+            name = "Охранник: носитель языка 2", description = "Доктрина охраны, стратегия, профессиональная этика",
             topic = "Охранник", level = 5),
 
         WordSetEntity(id = 1364, languagePair = "he-ru", orderIndex = 1364,
@@ -33,10 +33,10 @@ object WordDataHebrewBatch63 {
             name = "Розница: углублённый", description = "Мерчандайзинг, ценообразование, ассортимент",
             topic = "Розница", level = 3),
         WordSetEntity(id = 1367, languagePair = "he-ru", orderIndex = 1367,
-            name = "Розница: профессиональный", description = "Управление магазином, аналитика, персонал",
-            topic = "Розница", level = 4),
+            name = "Розница: носитель языка", description = "Управление магазином, аналитика, персонал",
+            topic = "Розница", level = 5),
         WordSetEntity(id = 1368, languagePair = "he-ru", orderIndex = 1368,
-            name = "Розница: носитель языка", description = "Стратегия розничного бизнеса, омниканальность, тренды",
+            name = "Розница: носитель языка 2", description = "Стратегия розничного бизнеса, омниканальность, тренды",
             topic = "Розница", level = 5),
     )
 

@@ -19,9 +19,9 @@ object WordDataHebrewEveryday {
         WordSetEntity(id = 1006, name = "Еда и кулинария: основы",         description = "Продукты, блюда и кухня",   languagePair = "he-ru", orderIndex = 6,
             topic = "Еда и кулинария",
             level = 1),
-        WordSetEntity(id = 1007, name = "Дом и быт: основы",             description = "Помещения и предметы быта", languagePair = "he-ru", orderIndex = 7,
+        WordSetEntity(id = 1007, name = "Дом и быт: продвинутый",             description = "Помещения и предметы быта", languagePair = "he-ru", orderIndex = 7,
             topic = "Дом и быт",
-            level = 1),
+            level = 2),
     )
 
     val words = listOf(

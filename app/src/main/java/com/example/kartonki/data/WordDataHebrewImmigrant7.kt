@@ -6,17 +6,17 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant7 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1148, languagePair = "he-ru", name = "Еда и кулинария: основы 9",    description = "В кафе и ресторане", orderIndex = 148,
-    topic = "Еда и кулинария", level = 1),
-        WordSetEntity(id = 1149, languagePair = "he-ru", name = "Технологии: основы 5",          description = "Связь и мобильные услуги", orderIndex = 149,
-    topic = "Технологии", level = 1),
-        WordSetEntity(id = 1150, languagePair = "he-ru", name = "Дом и быт: основы 9",           description = "Строительство и ремонт", orderIndex = 150,
-    topic = "Дом и быт", level = 1),
-        WordSetEntity(id = 1151, languagePair = "he-ru", name = "Религия и праздники: основы 3", description = "Еврейские и государственные праздники", orderIndex = 151,
-    topic = "Религия и праздники", level = 1),
-        WordSetEntity(id = 1152, languagePair = "he-ru", name = "Дом и быт: основы 10",          description = "Покупки и магазины", orderIndex = 152,
-    topic = "Дом и быт", level = 1),
-        WordSetEntity(id = 1153, languagePair = "he-ru", name = "Финансы: продвинутый 6",        description = "Страхование и полисы", orderIndex = 153,
+        WordSetEntity(id = 1148, languagePair = "he-ru", name = "Еда и кулинария: продвинутый 6",    description = "В кафе и ресторане", orderIndex = 148,
+    topic = "Еда и кулинария", level = 2),
+        WordSetEntity(id = 1149, languagePair = "he-ru", name = "Технологии: продвинутый 8",          description = "Связь и мобильные услуги", orderIndex = 149,
+    topic = "Технологии", level = 2),
+        WordSetEntity(id = 1150, languagePair = "he-ru", name = "Дом и быт: продвинутый 10",           description = "Строительство и ремонт", orderIndex = 150,
+    topic = "Дом и быт", level = 2),
+        WordSetEntity(id = 1151, languagePair = "he-ru", name = "Религия и праздники: продвинутый 3", description = "Еврейские и государственные праздники", orderIndex = 151,
+    topic = "Религия и праздники", level = 2),
+        WordSetEntity(id = 1152, languagePair = "he-ru", name = "Дом и быт: продвинутый 11",          description = "Покупки и магазины", orderIndex = 152,
+    topic = "Дом и быт", level = 2),
+        WordSetEntity(id = 1153, languagePair = "he-ru", name = "Финансы: продвинутый 5",        description = "Страхование и полисы", orderIndex = 153,
     topic = "Финансы", level = 2),
     )
 

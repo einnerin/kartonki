@@ -11,10 +11,10 @@ object WordDataHebrewBatch65 {
             name = "Автомобиль: углублённый", description = "Механика, ремонт, узлы двигателя",
             topic = "Автомобиль", level = 3),
         WordSetEntity(id = 1381, languagePair = "he-ru", orderIndex = 1381,
-            name = "Автомобиль: профессиональный", description = "Автопарк, безопасность, диагностика, ТО",
-            topic = "Автомобиль", level = 4),
+            name = "Автомобиль: носитель языка", description = "Автопарк, безопасность, диагностика, ТО",
+            topic = "Автомобиль", level = 5),
         WordSetEntity(id = 1382, languagePair = "he-ru", orderIndex = 1382,
-            name = "Автомобиль: носитель языка", description = "Электромобили, автономное вождение, автопром",
+            name = "Автомобиль: носитель языка 2", description = "Электромобили, автономное вождение, автопром",
             topic = "Автомобиль", level = 5),
     )
 

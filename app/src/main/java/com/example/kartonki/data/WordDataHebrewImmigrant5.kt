@@ -10,12 +10,12 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant5 {
 
     val sets = listOf(
-        WordSetEntity(id = 1142, name = "Алия и Израиль: продвинутый 2",  description = "Национальное страхование, льготы и пособия", languagePair = "he-ru", orderIndex = 142,
+        WordSetEntity(id = 1142, name = "Алия и Израиль: углублённый 2",  description = "Национальное страхование, льготы и пособия", languagePair = "he-ru", orderIndex = 142,
+    topic = "Алия и Израиль", level = 3),
+        WordSetEntity(id = 1143, name = "Еда и кулинария: продвинутый 5",     description = "Покупки на шуке, торговля и продукты",       languagePair = "he-ru", orderIndex = 143,
+    topic = "Еда и кулинария", level = 2),
+        WordSetEntity(id = 1144, name = "Алия и Израиль: продвинутый 6",      description = "Сирены, убежища и безопасность в Израиле",   languagePair = "he-ru", orderIndex = 144,
     topic = "Алия и Израиль", level = 2),
-        WordSetEntity(id = 1143, name = "Еда и кулинария: основы 8",     description = "Покупки на шуке, торговля и продукты",       languagePair = "he-ru", orderIndex = 143,
-    topic = "Еда и кулинария", level = 1),
-        WordSetEntity(id = 1144, name = "Алия и Израиль: основы 6",      description = "Сирены, убежища и безопасность в Израиле",   languagePair = "he-ru", orderIndex = 144,
-    topic = "Алия и Израиль", level = 1),
     )
 
     val words = listOf(

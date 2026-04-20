@@ -15,7 +15,7 @@ object WordDataHebrewBatch44 {
         ),
         WordSetEntity(
             id = 1233, languagePair = "he-ru", orderIndex = 1233,
-            name = "Алия и Израиль: продвинутый",
+            name = "Алия и Израиль: продвинутый 8",
             description = "Практический иврит репатрианта: работа, льготы, абсорбция",
             topic = "Алия и Израиль",
             level = 2

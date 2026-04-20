@@ -10,15 +10,15 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch15 {
 
     val sets = listOf(
-        WordSetEntity(id = 1067, name = "Армия: основы",      description = "Базовая военная лексика",                    languagePair = "he-ru", orderIndex = 67,
-            topic = "Армия",
-            level = 1),
-        WordSetEntity(id = 1068, name = "Армия: продвинутый",  description = "Профессиональная военная лексика",            languagePair = "he-ru", orderIndex = 68,
+        WordSetEntity(id = 1067, name = "Армия: продвинутый",      description = "Базовая военная лексика",                    languagePair = "he-ru", orderIndex = 67,
             topic = "Армия",
             level = 2),
-        WordSetEntity(id = 1069, name = "Политика: основы",           description = "Кнессет, правительство и выборы",            languagePair = "he-ru", orderIndex = 69,
+        WordSetEntity(id = 1068, name = "Армия: продвинутый 2",  description = "Профессиональная военная лексика",            languagePair = "he-ru", orderIndex = 68,
+            topic = "Армия",
+            level = 2),
+        WordSetEntity(id = 1069, name = "Политика: продвинутый",           description = "Кнессет, правительство и выборы",            languagePair = "he-ru", orderIndex = 69,
             topic = "Политика",
-            level = 1),
+            level = 2),
     )
 
     val words = listOf(

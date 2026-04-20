@@ -15,14 +15,14 @@ object WordDataHebrewBatch24 {
         ),
         WordSetEntity(
             id = 1095, languagePair = "he-ru", orderIndex = 1095,
-            name = "Наука: продвинутый",
+            name = "Наука: продвинутый 2",
             description = "Культура, общество и эволюция человека",
             topic = "Наука",
             level = 2
         ),
         WordSetEntity(
             id = 1096, languagePair = "he-ru", orderIndex = 1096,
-            name = "Медицина: продвинутый 3",
+            name = "Медицина: продвинутый 6",
             description = "Нутриенты, диета и пищевая наука",
             topic = "Медицина",
             level = 2

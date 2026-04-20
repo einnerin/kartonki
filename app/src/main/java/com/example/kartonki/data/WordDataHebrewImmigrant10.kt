@@ -6,18 +6,18 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant10 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1166, languagePair = "he-ru", name = "Природа и экология: основы 14",  description = "Домашние и дикие животные", orderIndex = 166,
-    topic = "Природа и экология", level = 1),
-        WordSetEntity(id = 1167, languagePair = "he-ru", name = "Лингвистика: основы 2",           description = "Часы, дни, недели, месяцы", orderIndex = 167,
-    topic = "Лингвистика", level = 1),
-        WordSetEntity(id = 1168, languagePair = "he-ru", name = "Город: основы 3",                 description = "Улицы, здания, инфраструктура", orderIndex = 168,
-    topic = "Город", level = 1),
-        WordSetEntity(id = 1169, languagePair = "he-ru", name = "Психология: основы 4",            description = "Чувства и черты личности", orderIndex = 169,
-    topic = "Психология", level = 1),
-        WordSetEntity(id = 1170, languagePair = "he-ru", name = "Религия и праздники: основы 4",   description = "Молитвы, традиции, еврейская жизнь", orderIndex = 170,
-    topic = "Религия и праздники", level = 1),
-        WordSetEntity(id = 1171, languagePair = "he-ru", name = "Медицина: основы 6",              description = "Врачи, лечение, медицинские процедуры", orderIndex = 171,
-    topic = "Медицина", level = 1),
+        WordSetEntity(id = 1166, languagePair = "he-ru", name = "Природа и экология: продвинутый 14",  description = "Домашние и дикие животные", orderIndex = 166,
+    topic = "Природа и экология", level = 2),
+        WordSetEntity(id = 1167, languagePair = "he-ru", name = "Лингвистика: продвинутый 2",           description = "Часы, дни, недели, месяцы", orderIndex = 167,
+    topic = "Лингвистика", level = 2),
+        WordSetEntity(id = 1168, languagePair = "he-ru", name = "Город: продвинутый 4",                 description = "Улицы, здания, инфраструктура", orderIndex = 168,
+    topic = "Город", level = 2),
+        WordSetEntity(id = 1169, languagePair = "he-ru", name = "Психология: продвинутый 4",            description = "Чувства и черты личности", orderIndex = 169,
+    topic = "Психология", level = 2),
+        WordSetEntity(id = 1170, languagePair = "he-ru", name = "Религия и праздники: продвинутый 4",   description = "Молитвы, традиции, еврейская жизнь", orderIndex = 170,
+    topic = "Религия и праздники", level = 2),
+        WordSetEntity(id = 1171, languagePair = "he-ru", name = "Медицина: продвинутый 9",              description = "Врачи, лечение, медицинские процедуры", orderIndex = 171,
+    topic = "Медицина", level = 2),
     )
 
     val words: List<WordEntity> = listOf(

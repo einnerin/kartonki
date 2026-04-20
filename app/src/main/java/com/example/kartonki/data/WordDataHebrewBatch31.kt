@@ -14,13 +14,13 @@ object WordDataHebrewBatch31 {
             level = 4),
         WordSetEntity(
             id = 1116, languagePair = "he-ru", orderIndex = 1116,
-            name = "Армия: продвинутый 2", description = "Армия, стратегия и военные операции"
+            name = "Армия: продвинутый 3", description = "Армия, стратегия и военные операции"
         ,
             topic = "Армия",
             level = 2),
         WordSetEntity(
             id = 1117, languagePair = "he-ru", orderIndex = 1117,
-            name = "Наука: продвинутый 8", description = "Общество, нормы и социальные процессы"
+            name = "Наука: продвинутый 9", description = "Общество, нормы и социальные процессы"
         ,
             topic = "Наука",
             level = 2),

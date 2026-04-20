@@ -9,14 +9,14 @@ object WordDataHebrewBatch59 {
 
         WordSetEntity(
             id = 1330, languagePair = "he-ru", orderIndex = 1330,
-            name = "Журналист: основы",
+            name = "Журналист: продвинутый",
             description = "Базовая лексика прессы, репортажей и медиа",
             topic = "Журналист",
-            level = 1),
+            level = 2),
 
         WordSetEntity(
             id = 1331, languagePair = "he-ru", orderIndex = 1331,
-            name = "Журналист: продвинутый",
+            name = "Журналист: продвинутый 2",
             description = "Профессиональные термины редакции, эфира и цифровых медиа",
             topic = "Журналист",
             level = 2),

@@ -23,21 +23,21 @@ object WordDataHebrewBatch57 {
 
         WordSetEntity(
             id = 1322, languagePair = "he-ru", orderIndex = 1322,
-            name = "Логистика: углублённый",
-            description = "Углублённые концепции логистики и управления запасами",
-            topic = "Логистика",
-            level = 3),
-
-        WordSetEntity(
-            id = 1323, languagePair = "he-ru", orderIndex = 1323,
             name = "Логистика: профессиональный",
-            description = "Высокоуровневые системы и стратегии глобальных цепочек поставок",
+            description = "Углублённые концепции логистики и управления запасами",
             topic = "Логистика",
             level = 4),
 
         WordSetEntity(
-            id = 1324, languagePair = "he-ru", orderIndex = 1324,
+            id = 1323, languagePair = "he-ru", orderIndex = 1323,
             name = "Логистика: носитель языка",
+            description = "Высокоуровневые системы и стратегии глобальных цепочек поставок",
+            topic = "Логистика",
+            level = 5),
+
+        WordSetEntity(
+            id = 1324, languagePair = "he-ru", orderIndex = 1324,
+            name = "Логистика: носитель языка 2",
             description = "Академические и теоретические концепции логистики и пространственной экономики",
             topic = "Логистика",
             level = 5),

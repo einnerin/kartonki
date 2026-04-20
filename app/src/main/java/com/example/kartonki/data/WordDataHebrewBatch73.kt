@@ -8,19 +8,19 @@ object WordDataHebrewBatch73 {
     val sets: List<WordSetEntity> = listOf(
         // ── Журналист (1453–1457) ─────────────────────────────────────────────
         WordSetEntity(id = 1453, languagePair = "he-ru", orderIndex = 1453,
-            name = "Журналист: основы", description = "Новости, статья, интервью",
+            name = "Журналист: основы 2", description = "Новости, статья, интервью",
             topic = "Журналист", level = 1),
         WordSetEntity(id = 1454, languagePair = "he-ru", orderIndex = 1454,
-            name = "Журналист: продвинутый", description = "Репортаж, редакция, источник",
+            name = "Журналист: продвинутый 3", description = "Репортаж, редакция, источник",
             topic = "Журналист", level = 2),
         WordSetEntity(id = 1455, languagePair = "he-ru", orderIndex = 1455,
-            name = "Журналист: углублённый", description = "Расследование, этика, медиа",
+            name = "Журналист: углублённый 2", description = "Расследование, этика, медиа",
             topic = "Журналист", level = 3),
         WordSetEntity(id = 1456, languagePair = "he-ru", orderIndex = 1456,
-            name = "Журналист: профессиональный", description = "Цифровые медиа, данные, право",
+            name = "Журналист: профессиональный 2", description = "Цифровые медиа, данные, право",
             topic = "Журналист", level = 4),
         WordSetEntity(id = 1457, languagePair = "he-ru", orderIndex = 1457,
-            name = "Журналист: носитель языка", description = "Медиатеория, политэкономия прессы",
+            name = "Журналист: носитель языка 2", description = "Медиатеория, политэкономия прессы",
             topic = "Журналист", level = 5),
 
         // ── Архитектор (1458–1462) ────────────────────────────────────────────

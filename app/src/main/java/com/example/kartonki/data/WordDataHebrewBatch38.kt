@@ -8,22 +8,22 @@ object WordDataHebrewBatch38 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1136, languagePair = "he-ru", orderIndex = 1136,
-            name = "Спорт: основы 2", description = "Виды спорта, игроки и соревнования"
+            name = "Спорт: продвинутый 3", description = "Виды спорта, игроки и соревнования"
         ,
             topic = "Спорт",
-            level = 1),
+            level = 2),
         WordSetEntity(
             id = 1137, languagePair = "he-ru", orderIndex = 1137,
-            name = "Город: основы 2", description = "Улицы, здания и места в городе"
+            name = "Город: продвинутый 3", description = "Улицы, здания и места в городе"
         ,
             topic = "Город",
-            level = 1),
+            level = 2),
         WordSetEntity(
             id = 1138, languagePair = "he-ru", orderIndex = 1138,
-            name = "Психология: основы 2", description = "Чувства, состояния и переживания"
+            name = "Психология: продвинутый 3", description = "Чувства, состояния и переживания"
         ,
             topic = "Психология",
-            level = 1),
+            level = 2),
     )
 
     val words: List<WordEntity> = listOf(

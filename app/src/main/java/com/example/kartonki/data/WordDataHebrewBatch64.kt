@@ -17,10 +17,10 @@ object WordDataHebrewBatch64 {
             name = "Официант: углублённый", description = "Протокол, банкеты, бар, аллергены",
             topic = "Официант", level = 3),
         WordSetEntity(id = 1372, languagePair = "he-ru", orderIndex = 1372,
-            name = "Официант: профессиональный", description = "Управление залом, стандарты, инвентаризация",
-            topic = "Официант", level = 4),
+            name = "Официант: носитель языка", description = "Управление залом, стандарты, инвентаризация",
+            topic = "Официант", level = 5),
         WordSetEntity(id = 1373, languagePair = "he-ru", orderIndex = 1373,
-            name = "Официант: носитель языка", description = "Ресторанная культура, сомелье, гастрономия",
+            name = "Официант: носитель языка 2", description = "Ресторанная культура, сомелье, гастрономия",
             topic = "Официант", level = 5),
 
         WordSetEntity(id = 1374, languagePair = "he-ru", orderIndex = 1374,
@@ -33,14 +33,14 @@ object WordDataHebrewBatch64 {
             name = "Повар: углублённый", description = "Профессиональная кухня, станции, HACCP",
             topic = "Повар", level = 3),
         WordSetEntity(id = 1377, languagePair = "he-ru", orderIndex = 1377,
-            name = "Повар: профессиональный", description = "Шеф-повар, закупки, управление кухней",
-            topic = "Повар", level = 4),
+            name = "Повар: носитель языка", description = "Шеф-повар, закупки, управление кухней",
+            topic = "Повар", level = 5),
         WordSetEntity(id = 1378, languagePair = "he-ru", orderIndex = 1378,
-            name = "Повар: носитель языка", description = "Кулинарное искусство, гастрономия, инновации",
+            name = "Повар: носитель языка 2", description = "Кулинарное искусство, гастрономия, инновации",
             topic = "Повар", level = 5),
 
         WordSetEntity(id = 1379, languagePair = "he-ru", orderIndex = 1379,
-            name = "Автомобиль: продвинутый", description = "Части машины, приборы, вождение, техобслуживание",
+            name = "Автомобиль: продвинутый 2", description = "Части машины, приборы, вождение, техобслуживание",
             topic = "Автомобиль", level = 2),
     )
 

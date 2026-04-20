@@ -11,7 +11,7 @@ object WordDataHebrewBatch83 {
 
     val sets = listOf(
         WordSetEntity(id = 1511, languagePair = "he-ru", orderIndex = 1511,
-            name = "Религия и праздники: продвинутый",
+            name = "Религия и праздники: продвинутый 6",
             description = "Ритуальные предметы, обряды и праздники",
             topic = "Религия и праздники", level = 2),
         WordSetEntity(id = 1512, languagePair = "he-ru", orderIndex = 1512,
@@ -19,9 +19,9 @@ object WordDataHebrewBatch83 {
             description = "Пост, священство, календарь и обряды",
             topic = "Религия и праздники", level = 3),
         WordSetEntity(id = 1513, languagePair = "he-ru", orderIndex = 1513,
-            name = "Религия и праздники: носитель языка",
+            name = "Религия и праздники: профессиональный 2",
             description = "Мистицизм, жертвоприношения и эзотерика",
-            topic = "Религия и праздники", level = 5),
+            topic = "Религия и праздники", level = 4),
     )
 
     val words = listOf(
@@ -30,7 +30,7 @@ object WordDataHebrewBatch83 {
         // Set 1511 — Религия и праздники: продвинутый  (level 2, A2/B1)
         // 25 words: 2 COMMON + 16 UNCOMMON + 4 RARE + 1 EPIC + 1 LEGENDARY + 1 EPIC
         // ──────────────────────────────────────────────────────────────────
-        WordEntity(id = 151101, setId = 1511, languagePair = "he-ru", rarity = "COMMON",
+        WordEntity(id = 151101, setId = 1511, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תּוֹרָה", translation = "Тора",
             transliteration = "Тора"),
         WordEntity(id = 151102, setId = 1511, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -51,7 +51,7 @@ object WordDataHebrewBatch83 {
         WordEntity(id = 151107, setId = 1511, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "בְּרִית מִילָה", translation = "брит-мила (обрезание)",
             transliteration = "брит мила"),
-        WordEntity(id = 151108, setId = 1511, languagePair = "he-ru", rarity = "COMMON",
+        WordEntity(id = 151108, setId = 1511, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "בַּת מִצְוָה", translation = "бат-мицва",
             transliteration = "бат-мицва"),
         WordEntity(id = 151109, setId = 1511, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -99,10 +99,10 @@ object WordDataHebrewBatch83 {
         WordEntity(id = 151123, setId = 1511, languagePair = "he-ru", rarity = "RARE",
             original = "פָּרֹכֶת", translation = "парохет (завеса перед ковчегом)",
             transliteration = "парохет"),
-        WordEntity(id = 151124, setId = 1511, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 151124, setId = 1511, languagePair = "he-ru", rarity = "RARE",
             original = "נֵר תָּמִיד", translation = "нер тамид (вечный огонь в синагоге)",
             transliteration = "нер тамид"),
-        WordEntity(id = 151125, setId = 1511, languagePair = "he-ru", rarity = "LEGENDARY",
+        WordEntity(id = 151125, setId = 1511, languagePair = "he-ru", rarity = "RARE",
             original = "כִּסֵּא אֵלִיָּהוּ", translation = "кресло Элияу (на брит-миле)",
             transliteration = "киссэ Элияу"),
 
@@ -110,7 +110,7 @@ object WordDataHebrewBatch83 {
         // Set 1512 — Религия и праздники: углублённый  (level 3, B2)
         // 25 words: 1 COMMON + 6 UNCOMMON + 14 RARE + 3 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
-        WordEntity(id = 151201, setId = 1512, languagePair = "he-ru", rarity = "COMMON",
+        WordEntity(id = 151201, setId = 1512, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "הַר סִינַי", translation = "гора Синай",
             transliteration = "hар Синай"),
         WordEntity(id = 151202, setId = 1512, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -170,19 +170,19 @@ object WordDataHebrewBatch83 {
         WordEntity(id = 151220, setId = 1512, languagePair = "he-ru", rarity = "RARE",
             original = "נִדָּה", translation = "нида (ритуальная нечистота)",
             transliteration = "нида"),
-        WordEntity(id = 151221, setId = 1512, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 151221, setId = 1512, languagePair = "he-ru", rarity = "RARE",
             original = "עֲקֵדָה", translation = "акеда (жертвоприношение Ицхака)",
             transliteration = "акеда"),
-        WordEntity(id = 151222, setId = 1512, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 151222, setId = 1512, languagePair = "he-ru", rarity = "RARE",
             original = "יִרְאַת שָׁמַיִם", translation = "боязнь Небес (богобоязненность)",
             transliteration = "йират шамаим"),
-        WordEntity(id = 151223, setId = 1512, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 151223, setId = 1512, languagePair = "he-ru", rarity = "RARE",
             original = "חִלּוּל הַשֵּׁם", translation = "хилуль а-Шем (осквернение имени Бога)",
             transliteration = "хилуль а-Шем"),
         WordEntity(id = 151224, setId = 1512, languagePair = "he-ru", rarity = "RARE",
             original = "שַׁבָּת שׁוּבָה", translation = "Шабат Шува (суббота между РА и ЙК)",
             transliteration = "Шабат Шува"),
-        WordEntity(id = 151225, setId = 1512, languagePair = "he-ru", rarity = "LEGENDARY",
+        WordEntity(id = 151225, setId = 1512, languagePair = "he-ru", rarity = "RARE",
             original = "צִמְצוּם", translation = "цимцум (самоустранение Бога, каббала)",
             transliteration = "цимцум"),
 
@@ -190,16 +190,16 @@ object WordDataHebrewBatch83 {
         // Set 1513 — Религия и праздники: носитель языка  (level 5, C2+)
         // 25 words: 1 COMMON + 1 UNCOMMON + 2 RARE + 9 EPIC + 12 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
-        WordEntity(id = 151301, setId = 1513, languagePair = "he-ru", rarity = "COMMON",
+        WordEntity(id = 151301, setId = 1513, languagePair = "he-ru", rarity = "EPIC",
             original = "שָׁמַיִם", translation = "небеса / небо",
             transliteration = "шамаим"),
-        WordEntity(id = 151302, setId = 1513, languagePair = "he-ru", rarity = "UNCOMMON",
+        WordEntity(id = 151302, setId = 1513, languagePair = "he-ru", rarity = "EPIC",
             original = "נֶפֶשׁ", translation = "нефеш (низший уровень души)",
             transliteration = "нефеш"),
-        WordEntity(id = 151303, setId = 1513, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 151303, setId = 1513, languagePair = "he-ru", rarity = "EPIC",
             original = "פְּשָׁט", translation = "пшат (буквальное толкование Торы)",
             transliteration = "пшат"),
-        WordEntity(id = 151304, setId = 1513, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 151304, setId = 1513, languagePair = "he-ru", rarity = "EPIC",
             original = "רֶמֶז", translation = "ремез (аллегорическое толкование Торы)",
             transliteration = "ремез"),
         WordEntity(id = 151305, setId = 1513, languagePair = "he-ru", rarity = "EPIC",
