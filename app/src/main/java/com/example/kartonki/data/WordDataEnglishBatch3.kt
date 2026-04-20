@@ -83,7 +83,7 @@ object WordDataEnglishBatch3 {
 
                 WordEntity(id = 25009, original = "snack bar", transliteration = "[snæk bɑːr]", translation = "закусочная, буфет", rarity = "UNCOMMON", setId = 250, languagePair = "en-ru", pos = "noun", semanticGroup = "restaurant",
             definition = "A small casual place selling quick, cheap bites like hot dogs.",
-            example = "We stopped at a snack bar by the beach for a hot dog.",
+            example = "We grabbed a hot dog at a snack bar by the beach.",
             definitionNative = "Небольшое неформальное заведение с быстрыми и недорогими блюдами.",
             exampleNative = "Мы остановились у snack bar на пляже и купили хот-дог."),
 
@@ -283,7 +283,7 @@ object WordDataEnglishBatch3 {
 
                 WordEntity(id = 25114, original = "direct debit", transliteration = "[daɪˈrekt ˈdebɪt]", translation = "прямое дебетование (автоматическое списание)", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "A setup that lets a company pull money from your bank regularly.",
-            example = "He set up a direct debit to pay his rent on the first of every month.",
+            example = "He set up a direct debit to pay his rent each month.",
             definitionNative = "Договорённость, позволяющая компании автоматически списывать деньги со счёта.",
             exampleNative = "Он оформил direct debit для оплаты аренды первого числа каждого месяца."),
 
@@ -296,7 +296,7 @@ object WordDataEnglishBatch3 {
 
                 WordEntity(id = 25116, original = "standing order", transliteration = "[ˈstændɪŋ ˈɔːrdər]", translation = "постоянное поручение (автоплатёж)", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "Your bank sends the same payment to someone on fixed dates.",
-            example = "She set up a standing order to transfer money to her savings account each month.",
+            example = "She set up a standing order for her monthly rent.",
             definitionNative = "Поручение банку совершать регулярные фиксированные платежи со счёта.",
             exampleNative = "Она оформила standing order на ежемесячный перевод средств на сберегательный счёт."),
 
@@ -341,7 +341,7 @@ object WordDataEnglishBatch3 {
 
                 WordEntity(id = 25123, original = "bank statement", transliteration = "[bæŋk ˈsteɪtmənt]", translation = "выписка по счёту", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "A monthly list of every payment in and out of your account.",
-            example = "The landlord asked for three months of bank statements as proof of income.",
+            example = "The landlord asked for my bank statement as proof of income.",
             definitionNative = "Официальный документ со списком всех операций по счёту за период.",
             exampleNative = "Арендодатель попросил bank statement за три месяца как подтверждение дохода."),
 
@@ -353,7 +353,7 @@ object WordDataEnglishBatch3 {
 
                 WordEntity(id = 25125, original = "credit limit", transliteration = "[ˈkrɛdɪt ˈlɪmɪt]", translation = "кредитный лимит", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "The top sum a bank lets you spend on a plastic card.",
-            example = "She had reached her credit limit and could not make further purchases.",
+            example = "She hit her credit limit and couldn't buy anything else.",
             definitionNative = "Максимальная сумма, которую разрешается занять по кредитной карте или счёту.",
             exampleNative = "Она достигла своего credit limit и не могла делать дальнейшие покупки."),
 
@@ -362,7 +362,7 @@ object WordDataEnglishBatch3 {
         WordEntity(id = 25201, original = "luggage tag", transliteration = "[ˈlʌɡɪdʒ tæɡ]", translation = "багажная бирка",
             definition = "A small card on a bag with the owner's name and address.",
             definitionNative = "Ярлык, прикреплённый к сумке или чемодану с данными владельца или пунктом назначения.",
-            example = "Attach a luggage tag with your name and phone number to every bag.",
+            example = "Put a luggage tag with your name on every bag.",
             exampleNative = "Прикрепи luggage tag — так найдут багаж, если потеряется.",
             rarity = "COMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_procedures"),
 
@@ -376,7 +376,7 @@ object WordDataEnglishBatch3 {
         WordEntity(id = 25203, original = "hold luggage", transliteration = "[hoʊld ˈlʌɡɪdʒ]", translation = "зарегистрированный багаж",
             definition = "Bags that travel in the belly of the plane, not inside with you.",
             definitionNative = "Багаж, хранящийся в грузовом отсеке самолёта, а не в салоне.",
-            example = "Each passenger is allowed one piece of hold luggage up to twenty-three kilograms.",
+            example = "My hold luggage got lost on the flight to Rome.",
             exampleNative = "Hold luggage нужно сдавать при регистрации, а не брать с собой в салон.",
             rarity = "COMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_basics"),
 
@@ -445,7 +445,7 @@ object WordDataEnglishBatch3 {
 
                 WordEntity(id = 25213, original = "boarding area", transliteration = "[ˈbɔːrdɪŋ ˈeəriə]", translation = "зона посадки (в аэропорту)", rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport",
             definition = "The part of the airport where travellers wait before the plane.",
-            example = "Passengers must go to the boarding area at least thirty minutes before departure.",
+            example = "Please proceed to the boarding area thirty minutes before departure.",
             definitionNative = "Часть аэропорта, где пассажиры ожидают посадки на рейс.",
             exampleNative = "Пассажиры должны прибыть в boarding area не менее чем за тридцать минут до вылета."),
 
@@ -459,20 +459,20 @@ object WordDataEnglishBatch3 {
         WordEntity(id = 25215, original = "cabin crew", transliteration = "[ˈkæbɪn kruː]", translation = "бортпроводники, экипаж салона",
             definition = "Airline staff who serve drinks and look after people during flight.",
             definitionNative = "Сотрудники авиакомпании, обслуживающие пассажиров в полёте.",
-            example = "The cabin crew demonstrated the safety procedures.",
+            example = "The cabin crew served drinks shortly after take-off.",
             exampleNative = "Cabin crew попросил выключить телефоны перед взлётом.",
             rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_staff"),
 
         WordEntity(id = 25216, original = "taxiway", transliteration = "[ˈtæksiˌweɪ]", translation = "рулёжная дорожка",
             definition = "The path planes roll along between the runway and the terminal.",
             definitionNative = "Дорожка в аэропорту, по которой самолёты движутся между взлётно-посадочной полосой и терминалом.",
-            example = "The aircraft used the taxiway to reach the departure gate.",
+            example = "The plane rolled along the taxiway toward the runway.",
             exampleNative = "Самолёт медленно движется по taxiway к выходу на посадку.",
             rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport_basics"),
 
                 WordEntity(id = 25217, original = "jet bridge", transliteration = "[dʒet brɪdʒ]", translation = "телетрап, гофрированный трап", rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport",
             definition = "A covered walkway joining the terminal to the plane door.",
-            example = "The passengers boarded the plane via the jet bridge without going outside.",
+            example = "We walked down the jet bridge and stepped onto the plane.",
             definitionNative = "Подвижная закрытая дорожка, соединяющая терминал аэропорта с дверью самолёта.",
             exampleNative = "Пассажиры прошли на борт через jet bridge, не выходя на улицу."),
 
@@ -505,7 +505,7 @@ object WordDataEnglishBatch3 {
 
                 WordEntity(id = 25222, original = "excess baggage", transliteration = "[ˈeksɛs ˈbæɡɪdʒ]", translation = "сверхнормативный багаж", rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport",
             definition = "Bags heavier or bigger than what the airline lets you bring.",
-            example = "She had to pay a fee for excess baggage because her suitcase was too heavy.",
+            example = "I paid extra for excess baggage on my flight home.",
             definitionNative = "Багаж, превышающий допустимый вес или размер, установленный авиакомпанией.",
             exampleNative = "Ей пришлось заплатить за excess baggage, потому что чемодан был слишком тяжёлым."),
 
@@ -517,13 +517,13 @@ object WordDataEnglishBatch3 {
 
                 WordEntity(id = 25224, original = "transit lounge", transliteration = "[ˈtrænsɪt laʊndʒ]", translation = "зал ожидания для транзитных пассажиров", rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport",
             definition = "An airport waiting hall for people changing to a second flight.",
-            example = "They waited in the transit lounge for four hours between their connecting flights.",
+            example = "We spent four hours in the transit lounge in Dubai.",
             definitionNative = "Зал ожидания в аэропорту для пассажиров, совершающих пересадку.",
             exampleNative = "Они ждали в transit lounge четыре часа между пересадочными рейсами."),
 
                 WordEntity(id = 25225, original = "baggage allowance", transliteration = "[ˈbæɡɪdʒ əˈlaʊəns]", translation = "норма провоза багажа", rarity = "UNCOMMON", setId = 252, languagePair = "en-ru", pos = "noun", semanticGroup = "airport",
             definition = "The most your bags can weigh before the airline charges extra.",
-            example = "Her suitcase exceeded the baggage allowance and she had to pay extra.",
+            example = "My suitcase was over the baggage allowance by two kilos.",
             definitionNative = "Максимальный вес или размер багажа, разрешённый на борту.",
             exampleNative = "Её чемодан превысил baggage allowance и ей пришлось доплатить."),
     )
