@@ -49,7 +49,7 @@ data class StudyListUiState(
     val filterVersion: Int = 0,
     /** 0 = all sets, 1 = favourites only. */
     val selectedTab: Int = 0,
-    val collapsedTopics: Set<String> = emptySet(),
+    val expandedTopics: Set<String> = emptySet(),
 ) {
     val favoriteCount: Int get() = sets.count { it.isFavorite }
 
@@ -67,12 +67,12 @@ data class StudyListUiState(
                 TopicGroup(
                     topic = topic,
                     sets = items.sortedWith(compareBy({ it.level }, { it.id })),
-                    isExpanded = topic !in collapsedTopics,
+                    isExpanded = topic in expandedTopics,
                 )
             }
             .sortedBy { it.topic }
         return if (noTopic.isEmpty()) groups
-               else groups + listOf(TopicGroup(topic = "", sets = noTopic, isExpanded = "" !in collapsedTopics))
+               else groups + listOf(TopicGroup(topic = "", sets = noTopic, isExpanded = "" in expandedTopics))
     }
 }
 
@@ -141,11 +141,11 @@ class StudyViewModel @Inject constructor(
 
     fun toggleTopicExpanded(topic: String) {
         _uiState.update { state ->
-            val collapsed = if (topic in state.collapsedTopics)
-                state.collapsedTopics - topic
+            val updated = if (topic in state.expandedTopics)
+                state.expandedTopics - topic
             else
-                state.collapsedTopics + topic
-            state.copy(collapsedTopics = collapsed)
+                state.expandedTopics + topic
+            state.copy(expandedTopics = updated)
         }
     }
 
