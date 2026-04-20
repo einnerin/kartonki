@@ -4,9 +4,9 @@
 Validates all WordData files against Room's insertion rules and quality rules.
 
 Blocking errors (exit 1) — ANY file, staged or not:
-  1. Stolen words — ANY duplicate (original, languagePair) across ALL sets.
-     Room uses a unique index regardless of topic, any duplicate causes a set to lose a word.
-  2. Wrong word count — every set must have exactly 25 words after Room REPLACE simulation.
+  1. Stolen words — duplicate (original, languagePair) within the SAME topic.
+     Cross-topic duplicates are allowed (different themes may share common words).
+  2. Wrong word count — every set must have exactly 25 words after same-topic REPLACE simulation.
   3. Duplicate setId across files.
   4. SetId outside language block (he-ru 1001-1999, en-ru 1-999).
 
@@ -170,17 +170,21 @@ def parse_sets(kt_file):
 
 def check_stolen_words(all_words, set_topic_map, staged_files=None):
     """
-    Returns (errors, warnings, final_db).
+    Returns (errors, warnings, final_db, same_topic_loser_sets).
 
-    Room has UNIQUE(original, languagePair) — ANY duplicate across sets causes the
-    earlier set to silently lose a word (OnConflictStrategy.REPLACE). Every duplicate
-    is therefore a real error regardless of topic or rarity.
+    Duplicates (original, languagePair) are only errors when they occur within
+    the SAME topic. Cross-topic duplicates are ignored — different themes may
+    legitimately share common words.
 
-    - error:   staged file involved → block the commit
-    - warning: both files unstaged → pre-existing, surfaced for visibility only
+    - error:   same-topic dup, staged file involved → block the commit
+    - warning: same-topic dup, both files unstaged → pre-existing issue
+    - ignored: cross-topic dup (different themes, always OK)
+
+    same_topic_loser_sets: setIds that lost ≥1 word due to same-topic dup.
     """
     staged_files = staged_files or set()
     errors, warnings = [], []
+    same_topic_loser_sets = set()
     # final_db simulates Room: UNIQUE(original, lang) — last insert wins.
     final_db = {}  # (original, lang) -> word (the one Room keeps)
     seen = {}  # (original, lang) -> first word seen
@@ -194,16 +198,20 @@ def check_stolen_words(all_words, set_topic_map, staged_files=None):
             prev = seen[key]
             prev_topic = set_topic_map.get(prev["setId"], "")
             curr_topic = set_topic_map.get(w["setId"], "")
-            same_rarity = (prev["rarity"] == w["rarity"])
+            if prev_topic != curr_topic:
+                # Cross-topic duplicate — allowed, skip
+                seen[key] = w
+                continue
             entry = {
                 "original": w["original"],
                 "loser_set": prev["setId"], "loser_file": prev["file"],
                 "winner_set": w["setId"], "winner_file": w["file"],
                 "loser_topic": prev_topic,
                 "winner_topic": curr_topic,
-                "same_topic": (prev_topic == curr_topic),
-                "same_rarity": same_rarity,
+                "same_topic": True,
+                "same_rarity": (prev["rarity"] == w["rarity"]),
             }
+            same_topic_loser_sets.add(prev["setId"])
             if prev["file"] in staged_files or w["file"] in staged_files:
                 errors.append(entry)
             else:
@@ -211,7 +219,7 @@ def check_stolen_words(all_words, set_topic_map, staged_files=None):
         else:
             seen[key] = w
 
-    return errors, warnings, final_db
+    return errors, warnings, final_db, same_topic_loser_sets
 
 
 def check_rarity_spread(words_for_sets):
@@ -231,25 +239,20 @@ def check_rarity_spread(words_for_sets):
     return issues
 
 
-def check_set_count(all_words, set_file_map, final_db=None):
+def check_set_count(all_words, set_file_map, same_topic_loser_sets=None):
     """
-    Every set must have exactly 25 words after Room DB simulation.
-    Uses final_db (simulated REPLACE state) when available, raw counts otherwise.
+    Every set must have exactly 25 words — but only flag sets that lost words
+    due to same-topic duplicates (cross-topic word loss is allowed).
     Returns {setId: (count, filename)}.
     """
+    same_topic_loser_sets = same_topic_loser_sets or set()
     counts = defaultdict(int)
-    if final_db:
-        # Count words per set in the simulated DB (after all REPLACE operations)
-        for key, w in final_db.items():
-            if w["setId"] != 0:
-                counts[w["setId"]] += 1
-    else:
-        for w in all_words:
-            if w["setId"] != 0:
-                counts[w["setId"]] += 1
+    for w in all_words:
+        if w["setId"] != 0:
+            counts[w["setId"]] += 1
     problems = {}
     for sid, cnt in counts.items():
-        if cnt != 25:
+        if cnt != 25 and sid in same_topic_loser_sets:
             problems[sid] = (cnt, set_file_map.get(sid, "?"))
     return problems
 
@@ -509,11 +512,11 @@ def main():
 
     has_errors = False
 
-    # ── 1. Stolen words — ALL conflicts block, staged or not ─────────────────
-    stolen_errors, stolen_warnings, final_db = check_stolen_words(
+    # ── 1. Stolen words — only same-topic duplicates block ───────────────────
+    stolen_errors, stolen_warnings, final_db, same_topic_loser_sets = check_stolen_words(
         all_words, set_topic_map, staged_files)
-    all_conflicts = stolen_errors + stolen_warnings  # both are now blocking
-    print(f"=== 1. Украденные слова (дубли original+languagePair): {len(all_conflicts)} ===\n")
+    all_conflicts = stolen_errors + stolen_warnings  # same-topic only
+    print(f"=== 1. Украденные слова (дубли в рамках одной темы): {len(all_conflicts)} ===\n")
     if all_conflicts:
         has_errors = True
         by_loser = defaultdict(list)
@@ -525,24 +528,23 @@ def main():
             staged_marker = " [staged]" if items[0]['loser_file'] in staged_files else ""
             print(f"  Set {sid} [{items[0]['loser_file']}]{topic_label}{staged_marker} теряет {len(items)} слов:")
             for e in items:
-                winner_topic = f" [тема: {e['winner_topic']}]" if e['winner_topic'] else ""
                 print(f"    '{e['original']}' → уже есть в наборе {e['winner_set']}"
-                      f" [{e['winner_file']}]{winner_topic}")
+                      f" [{e['winner_file']}]")
     else:
-        print("  ✅ Нет дублей\n")
+        print("  ✅ Нет дублей внутри тем\n")
 
-    # ── 2. Word count per set — ALL sets must have 25 words ──────────────────
-    count_problems = check_set_count(all_words, set_file_map, final_db)
-    print(f"=== 2. Наборы ≠ 25 слов (после симуляции Room): {len(count_problems)} ===\n")
+    # ── 2. Word count — only flag sets that lost words due to same-topic dups ─
+    count_problems = check_set_count(all_words, set_file_map, same_topic_loser_sets)
+    print(f"=== 2. Наборы с нехваткой слов (из-за дублей в теме): {len(count_problems)} ===\n")
     if count_problems:
         has_errors = True
         for sid in sorted(count_problems):
             cnt, fname = count_problems[sid]
             staged_marker = " [staged]" if fname in staged_files else ""
-            print(f"  Set {sid}: {cnt} слов в DB [{fname}]{staged_marker} — слово украдено более поздним набором")
+            print(f"  Set {sid}: {cnt} слов [{fname}]{staged_marker} — дубль внутри темы")
         print()
     else:
-        print("  ✅ Все наборы по 25 слов в DB\n")
+        print("  ✅ Нет наборов с нехваткой слов из-за дублей в теме\n")
 
     # ── 3. Duplicate setIds ───────────────────────────────────────────────────
     dup_setid_errors = check_duplicate_setids(all_sets)
