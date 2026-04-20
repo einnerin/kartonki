@@ -29,7 +29,7 @@ object WordDataHebrewBatch76 {
     val words: List<WordEntity> = listOf(
 
         // ══════════════════════════════════════════════════════════════════════
-        // ФИНАНСЫ: ОСНОВЫ 3 — set 1483 (повседневные расходы, COMMON)
+        // ФИНАНСЫ: ОСНОВЫ 3 — set 1483 (повседневные расходы, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 148301, setId = 1483, languagePair = "he-ru", rarity = "COMMON",
             original = "קְנִיָּה", translation = "покупка", transliteration = "кния"),
@@ -79,6 +79,8 @@ object WordDataHebrewBatch76 {
             original = "יְקָר", translation = "дорогой", transliteration = "якар"),
         WordEntity(id = 148325, setId = 1483, languagePair = "he-ru", rarity = "COMMON",
             original = "זוֹל", translation = "дешёвый", transliteration = "золь"),
+        WordEntity(id = 148326, setId = 1483, languagePair = "he-ru", rarity = "COMMON",
+            original = "מַטְבֵּעַ מְקוֹמִי", translation = "местная валюта", transliteration = "матбэа мэкоми"),
 
         // ══════════════════════════════════════════════════════════════════════
         // ФИНАНСЫ: ОСНОВЫ 4 — set 1484 (страхование и пособия, COMMON)
@@ -135,7 +137,7 @@ object WordDataHebrewBatch76 {
             original = "לְמַלֵּא טֹפֶס", translation = "заполнить форму", transliteration = "лэмалэ тофэс"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ФИНАНСЫ: ОСНОВЫ 5 — set 1485 (налоги в Израиле, COMMON)
+        // ФИНАНСЫ: ОСНОВЫ 5 — set 1485 (налоги в Израиле, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 148501, setId = 1485, languagePair = "he-ru", rarity = "COMMON",
             original = "מֶס מַקְרַקְעִין", translation = "налог на недвижимость", transliteration = "мэс маккаркэин"),
@@ -189,7 +191,7 @@ object WordDataHebrewBatch76 {
             original = "חֶשְׁבּוֹן בַּנְק", translation = "банковский счёт", transliteration = "хэшбон банк"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // РАБОТА И КАРЬЕРА: ОСНОВЫ 4 — set 1486 (права работника, COMMON)
+        // РАБОТА И КАРЬЕРА: ОСНОВЫ 4 — set 1486 (права работника, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 148601, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
             original = "זְכוּיוֹת עוֹבֵד", translation = "права работника", transliteration = "зхуйот овэд"),
@@ -237,6 +239,10 @@ object WordDataHebrewBatch76 {
             original = "הֶסְדֵּר עֲבוֹדָה גְּמִישׁ", translation = "гибкий рабочий график", transliteration = "hэсдэр авода гмиш"),
         WordEntity(id = 148625, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
             original = "רֶשֶׁת בִּטָּחוֹן סוֹצִיאַלִית", translation = "социальная защита", transliteration = "рэшет битахон социалит"),
+        WordEntity(id = 148626, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
+            original = "מְנַהֵל", translation = "начальник / управляющий", transliteration = "мэнаhэл"),
+        WordEntity(id = 148627, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
+            original = "צֶוֶת", translation = "команда / коллектив", transliteration = "цэвэт"),
 
         // ══════════════════════════════════════════════════════════════════════
         // РАБОТА И КАРЬЕРА: ОСНОВЫ 5 — set 1487 (договор и увольнение, COMMON)
@@ -289,5 +295,7 @@ object WordDataHebrewBatch76 {
             original = "חֹדֶשׁ שָׁבִיתָה", translation = "забастовка", transliteration = "швита"),
         WordEntity(id = 148725, setId = 1487, languagePair = "he-ru", rarity = "COMMON",
             original = "הֶסְדֵּר שָׂכָר", translation = "договорённость о зарплате", transliteration = "hэсдэр сахар"),
+        WordEntity(id = 148726, setId = 1487, languagePair = "he-ru", rarity = "COMMON",
+            original = "קוּרְסִים", translation = "курсы повышения квалификации", transliteration = "курсим")
     )
 }

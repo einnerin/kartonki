@@ -24,7 +24,7 @@ object WordDataHebrewBatch6 {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────
-        // Set 1041 — ספורט וכושר  (Sport and fitness, A2/B1)
+        // Set 1041 — ספורט וכושר  (Sport and fitness, A2/B1),
         // 25 words: 7 COMMON + 18 UNCOMMON
         // ──────────────────────────────────────────────────────
 
@@ -482,7 +482,7 @@ object WordDataHebrewBatch6 {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 1043 — בישול ומטבח  (Cooking and kitchen, A2/B1)
+        // Set 1043 — בישול ומטבח  (Cooking and kitchen, A2/B1),
         // 25 words: 6 COMMON + 19 UNCOMMON
         // ──────────────────────────────────────────────────────
 

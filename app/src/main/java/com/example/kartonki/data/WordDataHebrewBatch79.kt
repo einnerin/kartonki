@@ -23,7 +23,7 @@ object WordDataHebrewBatch79 {
     val words: List<WordEntity> = listOf(
 
         // ══════════════════════════════════════════════════════════════════════
-        // ЖИЛЬЁ: ОСНОВЫ — set 1497 (аренда квартиры, COMMON)
+        // ЖИЛЬЁ: ОСНОВЫ — set 1497 (аренда квартиры, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 149701, setId = 1497, languagePair = "he-ru", rarity = "COMMON",
             original = "דִּירָה", translation = "квартира", transliteration = "дира"),
@@ -77,7 +77,7 @@ object WordDataHebrewBatch79 {
             original = "לִשְׂכֹּר דִּירָה", translation = "снять квартиру", transliteration = "лисхор дира"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ЖИЛЬЁ: ОСНОВЫ 2 — set 1498 (ипотека и покупка, COMMON)
+        // ЖИЛЬЁ: ОСНОВЫ 2 — set 1498 (ипотека и покупка, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 149801, setId = 1498, languagePair = "he-ru", rarity = "COMMON",
             original = "מַשְׁכַּנְתָּא", translation = "ипотека (машканта)", transliteration = "машканта"),
@@ -131,7 +131,7 @@ object WordDataHebrewBatch79 {
             original = "מִשְׂרַד הַבִּינּוּי", translation = "Министерство строительства и жилья", transliteration = "мисрад hа-биной"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // АЛИЯ И ИЗРАИЛЬ: ОСНОВЫ 7 — set 1499 (гос. учреждения, COMMON)
+        // АЛИЯ И ИЗРАИЛЬ: ОСНОВЫ 7 — set 1499 (гос. учреждения, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 149901, setId = 1499, languagePair = "he-ru", rarity = "COMMON",
             original = "לִקּוּחַ תּוֹר", translation = "взять номерок в очереди", transliteration = "лику тор"),
@@ -181,5 +181,7 @@ object WordDataHebrewBatch79 {
             original = "שֵׁרוּת אֶזְרָחִי", translation = "гражданская служба / госслужба", transliteration = "шэрут эзрахи"),
         WordEntity(id = 149925, setId = 1499, languagePair = "he-ru", rarity = "COMMON",
             original = "מוֹקֵד שֵׁרוּת", translation = "контактный центр (горячая линия)", transliteration = "мокэд шэрут"),
+        WordEntity(id = 149926, setId = 1499, languagePair = "he-ru", rarity = "COMMON",
+            original = "עִיר הַבִּירָה", translation = "столица", transliteration = "ир hа-бира")
     )
 }

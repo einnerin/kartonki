@@ -44,7 +44,7 @@ object WordDataHebrewBatch74 {
     val words: List<WordEntity> = listOf(
 
         // ══════════════════════════════════════════════════════════════════════
-        // АГРОНОМ — set 1463 (основы, COMMON)
+        // АГРОНОМ — set 1463 (основы, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 146301, setId = 1463, languagePair = "he-ru", rarity = "COMMON",
             original = "אַגְרוֹנוֹם", translation = "агроном", transliteration = "агроном"),
@@ -98,7 +98,7 @@ object WordDataHebrewBatch74 {
             original = "עוֹנָה", translation = "сезон", transliteration = "она"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // АГРОНОМ — set 1464 (продвинутый, UNCOMMON)
+        // АГРОНОМ — set 1464 (продвинутый, UNCOMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 146401, setId = 1464, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "קַרְקַע", translation = "почва, грунт", transliteration = "карка"),
@@ -152,7 +152,7 @@ object WordDataHebrewBatch74 {
             original = "יְבוּל שֵׁנִי", translation = "второй урожай", transliteration = "ивуль шэни"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // АГРОНОМ — set 1465 (углублённый, RARE)
+        // АГРОНОМ — set 1465 (углублённый, RARE),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 146501, setId = 1465, languagePair = "he-ru", rarity = "RARE",
             original = "אַגְרוֹטֶכְנִיקָה", translation = "агротехника", transliteration = "агротэхника"),
@@ -206,7 +206,7 @@ object WordDataHebrewBatch74 {
             original = "מוֹשָׁב", translation = "мошав (кооперативное поселение)", transliteration = "мошав"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // АГРОНОМ — set 1466 (профессиональный, EPIC)
+        // АГРОНОМ — set 1466 (профессиональный, EPIC),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 146601, setId = 1466, languagePair = "he-ru", rarity = "EPIC",
             original = "בִּיוֹטֶכְנוֹלוֹגְיָה חַקְלָאִית", translation = "агробиотехнология", transliteration = "биотехнология хаклаит"),
@@ -260,7 +260,7 @@ object WordDataHebrewBatch74 {
             original = "מִצְלֵמָה תֶּרְמִית בְּחַקְלָאוּת", translation = "тепловизор в земледелии", transliteration = "мицлэма тэрмит бэ-хаклаут"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // АГРОНОМ — set 1467 (носитель языка, LEGENDARY)
+        // АГРОНОМ — set 1467 (носитель языка, LEGENDARY),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 146701, setId = 1467, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "חַקְלָאוּת מְדוּיֶּקֶת", translation = "точное земледелие", transliteration = "хаклаут мэдуйекет"),
@@ -314,7 +314,7 @@ object WordDataHebrewBatch74 {
             original = "רֶצֶף אֶקוֹלוֹגִי חַקְלָאִי", translation = "агроэкологический континуум", transliteration = "рэцэф экологи хаклаи"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // МОРЯК — set 1468 (основы, COMMON)
+        // МОРЯК — set 1468 (основы, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 146801, setId = 1468, languagePair = "he-ru", rarity = "COMMON",
             original = "מַלָּח", translation = "моряк (м)", transliteration = "маллах"),
@@ -368,7 +368,7 @@ object WordDataHebrewBatch74 {
             original = "לָשֵׁט", translation = "плыть (на судне)", transliteration = "лашэт"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // МОРЯК — set 1469 (продвинутый, UNCOMMON)
+        // МОРЯК — set 1469 (продвинутый, UNCOMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 146901, setId = 1469, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "נַוָּטוּת יָמִּית", translation = "морская навигация", transliteration = "навватут ямит"),
@@ -422,7 +422,7 @@ object WordDataHebrewBatch74 {
             original = "מְנַהֵל מֶכוֹנוֹת", translation = "главный механик (на судне)", transliteration = "мэнаэль мэхонот"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // МОРЯК — set 1470 (углублённый, RARE)
+        // МОРЯК — set 1470 (углублённый, RARE),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 147001, setId = 1470, languagePair = "he-ru", rarity = "RARE",
             original = "שַׁיִּט מְסַד", translation = "морское судовождение", transliteration = "шайит мэсад"),
@@ -476,7 +476,7 @@ object WordDataHebrewBatch74 {
             original = "מִקְשָׁלוֹת", translation = "тросы оснастки", transliteration = "микшалот"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // МОРЯК — set 1471 (профессиональный, EPIC)
+        // МОРЯК — set 1471 (профессиональный, EPIC),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 147101, setId = 1471, languagePair = "he-ru", rarity = "EPIC",
             original = "חֶבְרַת שַׁיִּט", translation = "судоходная компания", transliteration = "хеврат шайит"),
@@ -530,7 +530,7 @@ object WordDataHebrewBatch74 {
             original = "אֳנִיַּת מְכוֹלוֹת", translation = "контейнеровоз", transliteration = "онийат мэхолот"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // МОРЯК — set 1472 (носитель языка, LEGENDARY)
+        // МОРЯК — set 1472 (носитель языка, LEGENDARY),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 147201, setId = 1472, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "סִיוּוּג אֳנִיּוֹת", translation = "классификация судов", transliteration = "сивуг онийот"),

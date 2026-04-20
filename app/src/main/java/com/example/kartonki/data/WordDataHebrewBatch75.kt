@@ -44,7 +44,7 @@ object WordDataHebrewBatch75 {
     val words: List<WordEntity> = listOf(
 
         // ══════════════════════════════════════════════════════════════════════
-        // ВЕТЕРИНАР — set 1473 (основы, COMMON)
+        // ВЕТЕРИНАР — set 1473 (основы, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 147301, setId = 1473, languagePair = "he-ru", rarity = "COMMON",
             original = "וֶטֶרִינָר", translation = "ветеринар (м)", transliteration = "вэтэринар"),
@@ -98,7 +98,7 @@ object WordDataHebrewBatch75 {
             original = "עוֹר וּפֶרְוָה", translation = "кожа и шерсть", transliteration = "ор у-пэрва"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ВЕТЕРИНАР — set 1474 (продвинутый, UNCOMMON)
+        // ВЕТЕРИНАР — set 1474 (продвинутый, UNCOMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 147401, setId = 1474, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "אֲנָמְנֵזָה", translation = "анамнез", transliteration = "анамнэза"),
@@ -152,7 +152,7 @@ object WordDataHebrewBatch75 {
             original = "הַחְדָּרַת נוֹזֶל", translation = "введение жидкости (инфузия)", transliteration = "хахдарат нозэль"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ВЕТЕРИНАР — set 1475 (углублённый, RARE)
+        // ВЕТЕРИНАР — set 1475 (углублённый, RARE),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 147501, setId = 1475, languagePair = "he-ru", rarity = "RARE",
             original = "פָּתוֹלוֹגְיָה וֶטֶרִינָרִית", translation = "ветеринарная патология", transliteration = "патология вэтэринарит"),
@@ -206,7 +206,7 @@ object WordDataHebrewBatch75 {
             original = "נֶגַע עֲצָמוֹת", translation = "костное поражение", transliteration = "нэга ацамот"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ВЕТЕРИНАР — set 1476 (профессиональный, EPIC)
+        // ВЕТЕРИНАР — set 1476 (профессиональный, EPIC),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 147601, setId = 1476, languagePair = "he-ru", rarity = "EPIC",
             original = "אֶפִּידֶמְיוֹלוֹגְיָה וֶטֶרִינָרִית", translation = "ветеринарная эпидемиология", transliteration = "эпидэмиология вэтэринарит"),
@@ -260,7 +260,7 @@ object WordDataHebrewBatch75 {
             original = "רְפוּאַת חַיּוֹת חַקְלָאִיּוֹת", translation = "ветеринария с/х животных", transliteration = "рфуат хайот хаклаийот"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ВЕТЕРИНАР — set 1477 (носитель языка, LEGENDARY)
+        // ВЕТЕРИНАР — set 1477 (носитель языка, LEGENDARY),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 147701, setId = 1477, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "גֵּנוֹמִיקָה וֶטֶרִינָרִית", translation = "ветеринарная геномика", transliteration = "гэномика вэтэринарит"),
@@ -314,7 +314,7 @@ object WordDataHebrewBatch75 {
             original = "שִׂיחַ וֶטֶרִינָרִי-חוֹלֶה", translation = "ветеринарно-клиентская коммуникация", transliteration = "сиах вэтэринари-холэ"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ПРОГРАММИСТ — set 1478 (основы, COMMON)
+        // ПРОГРАММИСТ — set 1478 (основы, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 147801, setId = 1478, languagePair = "he-ru", rarity = "COMMON",
             original = "מְתַכְנֵת", translation = "программист (м)", transliteration = "мэтахнэт"),
@@ -364,6 +364,8 @@ object WordDataHebrewBatch75 {
             original = "חוּמְרָה", translation = "аппаратное обеспечение (железо)", transliteration = "хумра"),
         WordEntity(id = 147825, setId = 1478, languagePair = "he-ru", rarity = "COMMON",
             original = "תּוֹכְנָה", translation = "программное обеспечение", transliteration = "тохна"),
+        WordEntity(id = 147826, setId = 1478, languagePair = "he-ru", rarity = "COMMON",
+            original = "דַפְדְּפָן", translation = "браузер", transliteration = "дафдэфан"),
 
         // ══════════════════════════════════════════════════════════════════════
         // ПРОГРАММИСТ — set 1479 (продвинутый, UNCOMMON)
@@ -420,7 +422,7 @@ object WordDataHebrewBatch75 {
             original = "סְקִירַת קוֹד", translation = "code review", transliteration = "скират код"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ПРОГРАММИСТ — set 1480 (углублённый, RARE)
+        // ПРОГРАММИСТ — set 1480 (углублённый, RARE),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 148001, setId = 1480, languagePair = "he-ru", rarity = "RARE",
             original = "אַרְכִיטֶקְטוּרַת תוֹכְנָה", translation = "архитектура программного обеспечения", transliteration = "архитэктурат тохна"),
@@ -474,7 +476,7 @@ object WordDataHebrewBatch75 {
             original = "צִינּוֹר נְתוּנִים", translation = "конвейер данных (data pipeline)", transliteration = "цинор нэтуним"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ПРОГРАММИСТ — set 1481 (профессиональный, EPIC)
+        // ПРОГРАММИСТ — set 1481 (профессиональный, EPIC),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 148101, setId = 1481, languagePair = "he-ru", rarity = "EPIC",
             original = "אַבְטָחַת מֵידָע", translation = "информационная безопасность", transliteration = "автахат мэйда"),
@@ -528,7 +530,7 @@ object WordDataHebrewBatch75 {
             original = "אַסְטְרָטֶגְיַת רוֹלְ-בָּק", translation = "стратегия отката (rollback)", transliteration = "астратэгьят ролбэк"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ПРОГРАММИСТ — set 1482 (носитель языка, LEGENDARY)
+        // ПРОГРАММИСТ — set 1482 (носитель языка, LEGENDARY),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 148201, setId = 1482, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "מַהְדֵּר", translation = "компилятор", transliteration = "маhдэр"),

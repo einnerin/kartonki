@@ -24,7 +24,7 @@ object WordDataHebrewBatch7 {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────
-        // Set 1044 — קניות בסופרמרקט  (Supermarket shopping, A2/B1)
+        // Set 1044 — קניות בסופרמרקט  (Supermarket shopping, A2/B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────
 
@@ -255,7 +255,7 @@ object WordDataHebrewBatch7 {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 1045 — בית חולים ורפואה  (Hospital and medicine, B1/B2)
+        // Set 1045 — בית חולים ורפואה  (Hospital and medicine, B1/B2),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────
 
@@ -486,7 +486,7 @@ object WordDataHebrewBatch7 {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 1046 — תחבורה ציבורית  (Public transport, A2/B1)
+        // Set 1046 — תחבורה ציבורית  (Public transport, A2/B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────
 

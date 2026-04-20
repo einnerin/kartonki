@@ -135,7 +135,7 @@ object WordDataHebrewBatch48 {
             original = "אֵיקוֹנוֹגְרַפְיָה", transliteration = "eykonogra'fya",
             translation = "иконография"),
 
-        // ── Set 1265: Культура и искусство: профессиональный (level 4, EPIC)
+        // ── Set 1265: Культура и искусство: профессиональный (level 4, EPIC),
         WordEntity(id = 126501, setId = 1265, languagePair = "he-ru", rarity = "EPIC",
             original = "אוֹנְטוֹלוֹגְיָה שֶׁל אוֹמָנוּת", transliteration = "onto'logya shel oma'nut",
             translation = "онтология искусства"),
@@ -212,7 +212,7 @@ object WordDataHebrewBatch48 {
             original = "כָּאוֹס בְּאוֹמָנוּת", transliteration = "ka'os beoma'nut",
             translation = "хаос в искусстве"),
 
-        // ── Set 1266: Культура и искусство: носитель языка (level 5, LEGENDARY)
+        // ── Set 1266: Культура и искусство: носитель языка (level 5, LEGENDARY),
         WordEntity(id = 126601, setId = 1266, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "פֵּנוֹמֶנוֹלוֹגְיָה שֶׁל אוֹמָנוּת", transliteration = "fenomeno'logya shel oma'nut",
             translation = "феноменология искусства"),

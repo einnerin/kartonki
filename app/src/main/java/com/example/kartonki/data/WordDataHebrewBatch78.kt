@@ -26,7 +26,7 @@ object WordDataHebrewBatch78 {
     val words: List<WordEntity> = listOf(
 
         // ══════════════════════════════════════════════════════════════════════
-        // ПОЛИТИКА: ПРОДВИНУТЫЙ 2 — set 1493 (партии и выборы, UNCOMMON)
+        // ПОЛИТИКА: ПРОДВИНУТЫЙ 2 — set 1493 (партии и выборы, UNCOMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 149301, setId = 1493, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "בְּלוֹק פּוֹלִיטִי", translation = "политический блок", transliteration = "блок политит"),
@@ -80,7 +80,7 @@ object WordDataHebrewBatch78 {
             original = "מֶרְכָּז", translation = "центристы (политический центр)", transliteration = "мэрказ"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // ПОЛИТИКА: ПРОДВИНУТЫЙ 3 — set 1494 (СМИ и кампании, UNCOMMON)
+        // ПОЛИТИКА: ПРОДВИНУТЫЙ 3 — set 1494 (СМИ и кампании, UNCOMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 149401, setId = 1494, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תִּקְשׁוֹרֶת", translation = "СМИ, масс-медиа", transliteration = "тикшорэт"),
@@ -130,6 +130,8 @@ object WordDataHebrewBatch78 {
             original = "בִּקּוֹרֶת שִׁפּוּטִית", translation = "судебный контроль", transliteration = "бикорэт шипутит"),
         WordEntity(id = 149425, setId = 1494, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "רֶפוֹרְמָה מִשְׁפָּטִית", translation = "судебная реформа", transliteration = "рэформа мишпатит"),
+        WordEntity(id = 149426, setId = 1494, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "קַמְפֵּיין", translation = "политическая кампания", transliteration = "кампэйн"),
 
         // ══════════════════════════════════════════════════════════════════════
         // ПРАВО: ПРОДВИНУТЫЙ 2 — set 1495 (уголовное право, UNCOMMON)
@@ -182,6 +184,8 @@ object WordDataHebrewBatch78 {
             original = "חֲנִינָה", translation = "помилование", transliteration = "ханина"),
         WordEntity(id = 149525, setId = 1495, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "קָנְסוֹת", translation = "штрафные санкции", transliteration = "кансот"),
+        WordEntity(id = 149526, setId = 1495, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "תַּקָּנוֹן", translation = "устав / регламент", transliteration = "таканон"),
 
         // ══════════════════════════════════════════════════════════════════════
         // ПРАВО: ПРОДВИНУТЫЙ 3 — set 1496 (гражданское и семейное право, UNCOMMON)
@@ -234,5 +238,7 @@ object WordDataHebrewBatch78 {
             original = "פִּשְׁרָה מְגֻשֶּׁרֶת", translation = "медиация (посредничество)", transliteration = "пишра мэгушэрэт"),
         WordEntity(id = 149625, setId = 1496, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "סִכְסוּךְ מִשְׁפָּחָה", translation = "семейный спор", transliteration = "сихсух мишпаха"),
+        WordEntity(id = 149626, setId = 1496, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "פְּרַקְלִיטוּת", translation = "прокуратура", transliteration = "праклитут")
     )
 }

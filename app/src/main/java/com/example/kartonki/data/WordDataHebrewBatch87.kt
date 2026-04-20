@@ -182,6 +182,16 @@ object WordDataHebrewBatch87 {
             original = "דִּיסוֹנַנְס קוֹגְנִיטִיבִי", translation = "когнитивный диссонанс", transliteration = "диссонанс когнитиви"),
         WordEntity(id = 153125, setId = 1531, languagePair = "he-ru", rarity = "RARE",
             original = "הִתְפַּתְּחוּת פּוֹסְט-טְרַאוּמָטִית", translation = "посттравматический рост", transliteration = "hитпатхут пост-трауматит"),
+        WordEntity(id = 153126, setId = 1531, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "הֲגָנַת הָאֶגוֹ", translation = "защита эго (психол.)", transliteration = "hагана hа-эго"),
+        WordEntity(id = 153127, setId = 1531, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "קִנְאָה", translation = "зависть / ревность", transliteration = "кинъа"),
+        WordEntity(id = 153128, setId = 1531, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "חֲשִׁיבָה חִיּוּבִית", translation = "позитивное мышление", transliteration = "хашива хиювит"),
+        WordEntity(id = 153129, setId = 1531, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "רֶזִילְיָאנְצְיָה", translation = "резильентность / устойчивость", transliteration = "рэзильянция"),
+        WordEntity(id = 153130, setId = 1531, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "תְּמִיכָה הֲדָדִית", translation = "взаимная поддержка", transliteration = "тмиха hададит"),
 
         // ── Set 1532 — Медицина: профессиональный 2 (level 4, C1) ────────
         // 0 COMMON + 1 UNCOMMON + 6 RARE + 13 EPIC + 5 LEGENDARY

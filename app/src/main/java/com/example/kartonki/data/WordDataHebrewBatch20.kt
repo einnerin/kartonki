@@ -33,7 +33,7 @@ object WordDataHebrewBatch20 {
 
         // ── Set 1082: Алия и Израиль — продвинутый ───────────────────────
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 108201, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "irgun",
@@ -155,7 +155,7 @@ object WordDataHebrewBatch20 {
         ),
 
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 108213, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "kibuts",
@@ -276,7 +276,7 @@ object WordDataHebrewBatch20 {
 
         // ── Set 1083: Социальные сети ──────────────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(id = 108301, setId = 1083, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "social_media", transliteration = "post",
             original = "פּוֹסְט", translation = "пост, публикация"),
@@ -296,7 +296,7 @@ object WordDataHebrewBatch20 {
             pos = "noun", semanticGroup = "social_media", transliteration = "fid",
             original = "פִּיד", translation = "лента (feed)"),
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 108307, setId = 1083, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "social_media", transliteration = "tokhen",
             original = "תּוֹכֶן", translation = "контент"),
@@ -328,7 +328,7 @@ object WordDataHebrewBatch20 {
             pos = "noun", semanticGroup = "social_media", transliteration = "shiyuf",
             original = "שִׁיּוּף", translation = "троллинг, киберхарассмент"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 108317, setId = 1083, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "social_media", transliteration = "taguba",
             original = "תַּגּוּבָה", translation = "комментарий, ответ"),
@@ -359,7 +359,7 @@ object WordDataHebrewBatch20 {
 
         // ── Set 1084: Еда и кулинария ──────────────────────────────────────
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 108401, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cooking", transliteration = "miz an plas",
             original = "מִיז אָן פְּלָס", translation = "мизанплас (подготовка ингредиентов перед готовкой)"),
@@ -409,7 +409,7 @@ object WordDataHebrewBatch20 {
             pos = "noun", semanticGroup = "cooking", transliteration = "shalot",
             original = "שָׁלוֹט", translation = "шалот (лук-шалот)"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 108417, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cooking", transliteration = "emulsiya",
             original = "אֶמוּלְסִיָּה", translation = "эмульсия"),
@@ -426,7 +426,7 @@ object WordDataHebrewBatch20 {
             pos = "noun", semanticGroup = "cooking", transliteration = "plating",
             original = "פְּלֵיטִינְג", translation = "сервировка блюда (plating)"),
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 108422, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cooking", transliteration = "gastronomiya",
             original = "גַּסְטְרוֹנוֹמִיָּה", translation = "гастрономия"),

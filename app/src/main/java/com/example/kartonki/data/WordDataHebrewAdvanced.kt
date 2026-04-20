@@ -30,7 +30,7 @@ object WordDataHebrewAdvanced {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────
-        // Set 114 — IT и технологии — продвинутый (B2–C2)
+        // Set 114 — IT и технологии — продвинутый (B2–C2),
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -220,7 +220,7 @@ object WordDataHebrewAdvanced {
             exampleNative = "Bidud контейнеров гарантирует, что сбой в одном сервисе не распространяется на другие."),
 
         // ──────────────────────────────────────────────────────
-        // Set 115 — Работа и карьера (A2–B2)
+        // Set 115 — Работа и карьера (A2–B2),
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -336,7 +336,7 @@ object WordDataHebrewAdvanced {
 
 
         // ──────────────────────────────────────────────────────
-        // Set 116 — Эмоции и характер (A2–B2)
+        // Set 116 — Эмоции и характер (A2–B2),
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -436,7 +436,7 @@ object WordDataHebrewAdvanced {
 
 
         // ──────────────────────────────────────────────────────
-        // Set 117 — Абстрактные понятия (B2–C2)
+        // Set 117 — Абстрактные понятия (B2–C2),
         // ──────────────────────────────────────────────────────
 
         WordEntity(id = 101701, setId = 1017, languagePair = "he-ru", rarity = "UNCOMMON", original = "תְּפִיסָה", transliteration = "tepisa", translation = "концепция; восприятие", pos = "noun", semanticGroup = "abstract",
@@ -526,7 +526,7 @@ object WordDataHebrewAdvanced {
 
         // ── дополнительные слова для доведения наборов до 25 ──
 
-        // Set 114 — +6 (было 19, стало 25)
+        // Set 114 — +6 (было 19, стало 25),
         WordEntity(
             id = 101420, setId = 1014, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
@@ -588,7 +588,7 @@ object WordDataHebrewAdvanced {
             exampleNative = "Linux — операционная система с קוֹד פָּתוּחַ.",
         ),
 
-        // Set 115 — +12 (было 13, стало 25)
+        // Set 115 — +12 (было 13, стало 25),
         WordEntity(
             id = 101514, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work",
@@ -676,7 +676,7 @@ object WordDataHebrewAdvanced {
             exampleNative = "שִׁיתּוּף פְּעוּלָה между отделами прошло очень успешно."),
 
 
-        // Set 116 — +14 (было 11, стало 25)
+        // Set 116 — +14 (было 11, стало 25),
         WordEntity(
             id = 101612, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "emotion",
@@ -788,7 +788,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Сильное чувство воодушевления, радости или эмоционального возбуждения.",
             exampleNative = "В зале царила hitrageshut, когда объявили победителя."),
 
-        // Set 117 — +15 (было 10, стало 25)
+        // Set 117 — +15 (было 10, стало 25),
         WordEntity(id = 101711, setId = 1017, languagePair = "he-ru", rarity = "RARE", original = "קוֹגְנִיטִיבִיזְם", transliteration = "kognitivizm", translation = "когнитивизм", pos = "noun", semanticGroup = "abstract",
             definition = "a philosophical and psychological view that mind and mental states involve cognitive processes",
             example = "קוֹגְנִיטִיבִיזְם בְּפִסִיכוֹלוֹגִיָּה מִתְמַקֵּד בְּתַהֲלִיכֵי חֲשִׁיבָה.",
@@ -895,7 +895,7 @@ object WordDataHebrewAdvanced {
 
 
         // ──────────────────────────────────────────────────────
-        // Set 1018 — Компьютерные игры (A2–C2)
+        // Set 1018 — Компьютерные игры (A2–C2),
         // ──────────────────────────────────────────────────────
 
         // ━━━ COMMON ━━━

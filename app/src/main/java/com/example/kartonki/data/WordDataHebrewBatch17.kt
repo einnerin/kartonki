@@ -33,7 +33,7 @@ object WordDataHebrewBatch17 {
 
         // ── Set 1073: Стартапы ─────────────────────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(id = 107301, setId = 1073, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מִיזָם", transliteration = "mizam", translation = "венчурный проект / предприятие"),
         WordEntity(id = 107302, setId = 1073, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -47,7 +47,7 @@ object WordDataHebrewBatch17 {
         WordEntity(id = 107306, setId = 1073, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "זִכְיוֹן", transliteration = "zikhyon", translation = "франшиза"),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107307, setId = 1073, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup", transliteration = "yazmut",
@@ -139,7 +139,7 @@ object WordDataHebrewBatch17 {
             exampleNative = "Компания запустила пилот с десятью клиентами до широкого запуска.",
         ),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 107317, setId = 1073, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "startup", transliteration = "model iski",
@@ -226,7 +226,7 @@ object WordDataHebrewBatch17 {
 
         // ── Set 1074: Алия и Израиль — основы ────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(
             id = 107401, setId = 1074, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "yerushalayim",
@@ -336,7 +336,7 @@ object WordDataHebrewBatch17 {
             exampleNative = "Он говорит, что Израиль — его дом.",
         ),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107413, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "nasi",
@@ -457,7 +457,7 @@ object WordDataHebrewBatch17 {
 
         // ── Set 1075: Искусство ────────────────────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(id = 107501, setId = 1075, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "פָּלֶטָּה", transliteration = "paleta", translation = "палитра (художника)"),
         WordEntity(id = 107502, setId = 1075, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -471,7 +471,7 @@ object WordDataHebrewBatch17 {
         WordEntity(id = 107506, setId = 1075, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "דְּיוֹ", transliteration = "dyo", translation = "тушь / чернила"),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107507, setId = 1075, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "art", transliteration = "galeriya",
@@ -563,7 +563,7 @@ object WordDataHebrewBatch17 {
             exampleNative = "Министерство искусства поддерживает молодых художников.",
         ),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 107517, setId = 1075, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "art", transliteration = "hafshata",

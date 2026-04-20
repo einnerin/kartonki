@@ -243,6 +243,8 @@ object WordDataHebrewBatch90 {
             original = "בִּנְיָן פְּאַסִיבִי", translation = "пассивный дом (энергоэффект)", transliteration = "биньян пасиви"),
         WordEntity(id = 154725, setId = 1547, languagePair = "he-ru", rarity = "RARE",
             original = "בְּיוֹפִילִיָה אַדְרִיכָלִית", translation = "биофильная архитектура", transliteration = "биофилия адрихалит"),
+        WordEntity(id = 154726, setId = 1547, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "מַדְרֵגוֹת חֵרוּם", translation = "аварийная лестница", transliteration = "мадрэгот херум"),
 
         // ── Set 1548 — Город: углублённый 2 (level 3, B2) ────────────────
         // 1 COMMON + 5 UNCOMMON + 12 RARE + 5 EPIC + 2 LEGENDARY
@@ -294,5 +296,7 @@ object WordDataHebrewBatch90 {
             original = "גֵאוֹגְרַפְיַת הַכּוֹחַ", translation = "геополитика власти (в городе)", transliteration = "географиат hа-коах"),
         WordEntity(id = 154825, setId = 1548, languagePair = "he-ru", rarity = "EPIC",
             original = "אַנְתְרוֹפּוֹלוֹגְיָה עִירוֹנִית", translation = "городская антропология", transliteration = "антропология иронит"),
+        WordEntity(id = 154826, setId = 1548, languagePair = "he-ru", rarity = "RARE",
+            original = "אוֹטוֹנוֹמְיָה מוּנִיצִיפָּלִית", translation = "муниципальная автономия", transliteration = "отономия муниципалит")
     )
 }

@@ -33,7 +33,7 @@ object WordDataHebrewBatch19 {
 
         // ── Set 1079: Театр ────────────────────────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(
             id = 107901, setId = 1079, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "theatre", transliteration = "makhaze",
@@ -89,7 +89,7 @@ object WordDataHebrewBatch19 {
             exampleNative = "Оперетта «Весёлая вдова» по-прежнему ставится в оперных театрах мира.",
         ),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107907, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "theatre", transliteration = "makhazai",
@@ -181,43 +181,43 @@ object WordDataHebrewBatch19 {
             exampleNative = "Мюзикл «Король Лев» шёл на Бродвее многие годы.",
         ),
 
-        // UNCOMMON (cont.)
+        // UNCOMMON (cont.),
         WordEntity(id = 107917, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַנְטְרָקְט", translation = "антракт; перерыв в спектакле"),
+            original = "אַנְטְרָקְט", translation = "антракт; перерыв в спектакле", transliteration = "антракт"),
         WordEntity(id = 107918, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אוֹרְכֶסְטְרָה", translation = "оркестр; яма оркестра"),
+            original = "אוֹרְכֶסְטְרָה", translation = "оркестр; яма оркестра", transliteration = "орхэстра"),
         WordEntity(id = 107919, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַסָּכָה", translation = "маска"),
+            original = "מַסָּכָה", translation = "маска", transliteration = "масаха"),
         WordEntity(id = 107920, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֲבִיזָרִים", translation = "реквизит; сценические аксессуары"),
+            original = "אֲבִיזָרִים", translation = "реквизит; сценические аксессуары", transliteration = "авизарим"),
         WordEntity(id = 107921, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַנְסַמְבֶּל", translation = "ансамбль; труппа"),
+            original = "אַנְסַמְבֶּל", translation = "ансамбль; труппа", transliteration = "ансамбэл"),
         WordEntity(id = 107922, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פְּרוֹלוֹג", translation = "пролог; вступление"),
+            original = "פְּרוֹלוֹג", translation = "пролог; вступление", transliteration = "пролог"),
         WordEntity(id = 107923, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַנְחֶה", translation = "ведущий; конферансье"),
+            original = "מַנְחֶה", translation = "ведущий; конферансье", transliteration = "манхэ"),
         WordEntity(id = 107924, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֵפִּילוֹג", translation = "эпилог; послесловие"),
+            original = "אֵפִּילוֹג", translation = "эпилог; послесловие", transliteration = "эпилог"),
         WordEntity(id = 107925, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֶרֶב גָּלָה", translation = "торжественный вечер; вечер гала"),
+            original = "עֶרֶב גָּלָה", translation = "торжественный вечер; вечер гала", transliteration = "эрэв гала"),
 
         // ── Set 1080: Университет ─────────────────────────────────────────
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 108001, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הַרְצָאַת אוֹרֵחַ", translation = "приглашённая лекция; гостевая лекция"),
+            original = "הַרְצָאַת אוֹרֵחַ", translation = "приглашённая лекция; гостевая лекция", transliteration = "hарцаат орэха"),
         WordEntity(id = 108002, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֲבוֹדַת סֵמִינָר", translation = "семинарская работа; курсовая"),
+            original = "עֲבוֹדַת סֵמִינָר", translation = "семинарская работа; курсовая", transliteration = "аводат сэминар"),
         WordEntity(id = 108003, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הִרְשָׁמָה", translation = "зачисление; регистрация"),
+            original = "הִרְשָׁמָה", translation = "зачисление; регистрация", transliteration = "hиршама"),
         WordEntity(id = 108004, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שָׁעַת קַבָּלָה", translation = "консультационный час; приёмные часы"),
+            original = "שָׁעַת קַבָּלָה", translation = "консультационный час; приёмные часы", transliteration = "шаат кабала"),
         WordEntity(id = 108005, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מְנַחֶה", translation = "научный руководитель; куратор"),
+            original = "מְנַחֶה", translation = "научный руководитель; куратор", transliteration = "мнахэ"),
         WordEntity(id = 108006, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כַּנָּס אַקַדֵּמִי", translation = "академическая конференция"),
+            original = "כַּנָּס אַקַדֵּמִי", translation = "академическая конференция", transliteration = "канас акадэми"),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 108007, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "university", transliteration = "shana akademit",
@@ -309,7 +309,7 @@ object WordDataHebrewBatch19 {
             exampleNative = "Итоговая оценка включала устный экзамен.",
         ),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 108017, setId = 1080, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "university", transliteration = "ktiva akademit",
@@ -356,33 +356,33 @@ object WordDataHebrewBatch19 {
             exampleNative = "Её диссертация посвящена генетике древних популяций.",
         ),
 
-        // RARE (cont.)
+        // RARE (cont.),
         WordEntity(id = 108022, setId = 1080, languagePair = "he-ru", rarity = "RARE",
-            original = "מִחְקָר אֶמְפִּירִי", translation = "эмпирическое исследование"),
+            original = "מִחְקָר אֶמְפִּירִי", translation = "эмпирическое исследование", transliteration = "михкар эмпири"),
         WordEntity(id = 108023, setId = 1080, languagePair = "he-ru", rarity = "RARE",
-            original = "הַסְמָכָה", translation = "аккредитация; сертификация"),
+            original = "הַסְמָכָה", translation = "аккредитация; сертификация", transliteration = "hасмаха"),
         WordEntity(id = 108024, setId = 1080, languagePair = "he-ru", rarity = "RARE",
-            original = "פִּרְסּוּם אַקַדֵּמִי", translation = "академическая публикация"),
+            original = "פִּרְסּוּם אַקַדֵּמִי", translation = "академическая публикация", transliteration = "пирсум акадэми"),
         WordEntity(id = 108025, setId = 1080, languagePair = "he-ru", rarity = "RARE",
-            original = "הַעֲרָכַת עֲמִיתִים", translation = "рецензирование; peer review"),
+            original = "הַעֲרָכַת עֲמִיתִים", translation = "рецензирование; peer review", transliteration = "hаарахат амитим"),
 
         // ── Set 1081: Финансы ──────────────────────────────────────────────
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 108101, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הַכְנָסָה נֶטוֹ", translation = "чистый доход; доход нетто"),
+            original = "הַכְנָסָה נֶטוֹ", translation = "чистый доход; доход нетто", transliteration = "hахнаса нэто"),
         WordEntity(id = 108102, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רְוָחִיּוּת", translation = "рентабельность; прибыльность"),
+            original = "רְוָחִיּוּת", translation = "рентабельность; прибыльность", transliteration = "рвахиут"),
         WordEntity(id = 108103, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גֵּיוּס הוֹן", translation = "привлечение капитала; фандрайзинг"),
+            original = "גֵּיוּס הוֹן", translation = "привлечение капитала; фандрайзинг", transliteration = "гэиус hон"),
         WordEntity(id = 108104, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עִסְקַת מַיזוּג", translation = "сделка слияния; M&A"),
+            original = "עִסְקַת מַיזוּג", translation = "сделка слияния; M&A", transliteration = "искат маизуг"),
         WordEntity(id = 108105, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַשְׁקִיעַ פְּרָטִי", translation = "частный инвестор"),
+            original = "מַשְׁקִיעַ פְּרָטִי", translation = "частный инвестор", transliteration = "машкиа прати"),
         WordEntity(id = 108106, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שֶׁקַע כַּלְכָּלִי", translation = "экономическая рецессия; спад"),
+            original = "שֶׁקַע כַּלְכָּלִי", translation = "экономическая рецессия; спад", transliteration = "шэка калкали"),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 108107, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "finance", transliteration = "opsiya",
@@ -474,7 +474,7 @@ object WordDataHebrewBatch19 {
             exampleNative = "Акции крупных компаний обладают высокой ликвидностью.",
         ),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 108117, setId = 1081, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "finance", transliteration = "hitkhayevuyot",
@@ -521,14 +521,14 @@ object WordDataHebrewBatch19 {
             exampleNative = "Вознаграждение генерального директора включало бонус в двенадцать зарплат.",
         ),
 
-        // RARE (cont.)
+        // RARE (cont.),
         WordEntity(id = 108122, setId = 1081, languagePair = "he-ru", rarity = "RARE",
-            original = "חוֹזֶה עָתִידִי", translation = "фьючерсный контракт; фьючерс"),
+            original = "חוֹזֶה עָתִידִי", translation = "фьючерсный контракт; фьючерс", transliteration = "хозэ атиди"),
         WordEntity(id = 108123, setId = 1081, languagePair = "he-ru", rarity = "RARE",
-            original = "גִּלְגּוּל חוֹב", translation = "рефинансирование долга"),
+            original = "גִּלְגּוּל חוֹב", translation = "рефинансирование долга", transliteration = "гилгул хов"),
         WordEntity(id = 108124, setId = 1081, languagePair = "he-ru", rarity = "RARE",
-            original = "סִיכּוּן אַשְׁרַאי", translation = "кредитный риск"),
+            original = "סִיכּוּן אַשְׁרַאי", translation = "кредитный риск", transliteration = "сикун ашраи"),
         WordEntity(id = 108125, setId = 1081, languagePair = "he-ru", rarity = "RARE",
-            original = "נִגְזָרִים פִּינָנְסִיִּים", translation = "производные финансовые инструменты; деривативы"),
+            original = "נִגְזָרִים פִּינָנְסִיִּים", translation = "производные финансовые инструменты; деривативы", transliteration = "нигзарим пинансийим"),
     )
 }

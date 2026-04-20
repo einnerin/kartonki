@@ -33,7 +33,7 @@ object WordDataHebrewBatch16 {
 
         // ── Set 1070: Религия: основы ──────────────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(
             id = 107001, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "Torah",
@@ -89,7 +89,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "Евреи верят в единого Бога.",
         ),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107007, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "mitsva",
@@ -181,7 +181,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "Она прошла гиюр и присоединилась к общине.",
         ),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 107017, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "siddur",
@@ -256,7 +256,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "Сын читал קַדִּישׁ после смерти отца каждый день.",
         ),
 
-        // LEGENDARY (C2+)
+        // LEGENDARY (C2+),
         WordEntity(
             id = 107025, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "aseret hadibrot",
@@ -269,7 +269,7 @@ object WordDataHebrewBatch16 {
 
         // ── Set 1071: Религия: углублённо ──────────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(
             id = 107101, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "geula",
@@ -325,7 +325,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "Хазан встал на биме и открыл молитву.",
         ),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107107, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "amida",
@@ -417,7 +417,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "Сефардская музыка сочетает арабские, турецкие и испанские мотивы.",
         ),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 107117, setId = 1071, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "Shulkhan Arukh",
@@ -504,7 +504,7 @@ object WordDataHebrewBatch16 {
 
         // ── Set 1072: Музыка ───────────────────────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(
             id = 107201, setId = 1072, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "music", transliteration = "shir",
@@ -560,7 +560,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "Эта группа знаменита по всей стране.",
         ),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107207, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "melodiya",
@@ -652,7 +652,7 @@ object WordDataHebrewBatch16 {
             exampleNative = "Поп-музыка доминирует на радио.",
         ),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 107217, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "rok",

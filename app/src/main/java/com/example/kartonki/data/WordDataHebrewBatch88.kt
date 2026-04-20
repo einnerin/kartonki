@@ -190,6 +190,8 @@ object WordDataHebrewBatch88 {
             original = "נִיטְשֶׁאָנִי", translation = "ницшеанский / в духе Ницше", transliteration = "ницшеани"),
         WordEntity(id = 153625, setId = 1536, languagePair = "he-ru", rarity = "EPIC",
             original = "קָטֶגוֹרְיָה קַאנְטִיָאנִית", translation = "кантианская категория", transliteration = "категория кантианит"),
+        WordEntity(id = 153626, setId = 1536, languagePair = "he-ru", rarity = "RARE",
+            original = "פּוֹזִיטִיבִיזְם", translation = "позитивизм (фил. школа)", transliteration = "позитивизм"),
 
         // ── Set 1537 — Право: углублённый 2 (level 3, B2) ────────────────
         // 1 COMMON + 5 UNCOMMON + 12 RARE + 5 EPIC + 2 LEGENDARY
@@ -294,5 +296,7 @@ object WordDataHebrewBatch88 {
             original = "עִיר חֲכָמָה", translation = "умный город (smart city)", transliteration = "ир хахама"),
         WordEntity(id = 153825, setId = 1538, languagePair = "he-ru", rarity = "RARE",
             original = "מַטְרוֹפּוֹלִין", translation = "метрополия / мегаполис", transliteration = "метрополин"),
+        WordEntity(id = 153826, setId = 1538, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "שׁוֹמֵר רְחוֹב", translation = "уличный охранник / дружинник", transliteration = "шомэр рхов")
     )
 }

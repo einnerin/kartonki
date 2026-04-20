@@ -19,7 +19,7 @@ object WordDataHebrewBatch41 {
 
         // ── Set 1220: Алия и Израиль — профессиональный ──────────────────
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(
             id = 122001, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "israel_theory", transliteration = "neo-tsionut",

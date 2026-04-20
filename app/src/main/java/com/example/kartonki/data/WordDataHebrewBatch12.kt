@@ -24,7 +24,7 @@ object WordDataHebrewBatch12 {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1059 — סטאז' בהייטק — בסיסי  (Hi-tech internship basics, A2/B1)
+        // Set 1059 — סטאז' בהייטק — בסיסי  (Hi-tech internship basics, A2/B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 5 RARE + 3 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
 
@@ -178,7 +178,7 @@ object WordDataHebrewBatch12 {
         WordEntity(id = 105925, setId = 1059, languagePair = "he-ru", original = "סְבִיבַת יַצְּרָן", translation = "производственная среда; прод", transliteration = "svivat yatzran", rarity = "RARE"),
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1060 — סטאז' בהייטק — מתקדם  (Hi-tech internship advanced, B1/B2)
+        // Set 1060 — סטאז' בהייטק — מתקדם  (Hi-tech internship advanced, B1/B2),
         // 25 words: 3 COMMON + 9 UNCOMMON + 8 RARE + 4 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
 
@@ -313,7 +313,7 @@ object WordDataHebrewBatch12 {
             exampleNative = "Семантический gersun чётко показывает, вносит ли обновление критические изменения или только исправления."),
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1061 — סטאז' ברפואה — בסיסי  (Medical internship basics, A2/B1)
+        // Set 1061 — סטאז' ברפואה — בסיסי  (Medical internship basics, A2/B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 5 RARE + 3 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
 

@@ -27,7 +27,7 @@ object WordDataHebrewBatch83 {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1511 — Религия и праздники: продвинутый  (level 2, A2/B1)
+        // Set 1511 — Религия и праздники: продвинутый  (level 2, A2/B1),
         // 25 words: 2 COMMON + 16 UNCOMMON + 4 RARE + 1 EPIC + 1 LEGENDARY + 1 EPIC
         // ──────────────────────────────────────────────────────────────────
         WordEntity(id = 151101, setId = 1511, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -107,7 +107,7 @@ object WordDataHebrewBatch83 {
             transliteration = "киссэ Элияу"),
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1512 — Религия и праздники: углублённый  (level 3, B2)
+        // Set 1512 — Религия и праздники: углублённый  (level 3, B2),
         // 25 words: 1 COMMON + 6 UNCOMMON + 14 RARE + 3 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
         WordEntity(id = 151201, setId = 1512, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -187,7 +187,7 @@ object WordDataHebrewBatch83 {
             transliteration = "цимцум"),
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1513 — Религия и праздники: носитель языка  (level 5, C2+)
+        // Set 1513 — Религия и праздники: носитель языка  (level 5, C2+),
         // 25 words: 1 COMMON + 1 UNCOMMON + 2 RARE + 9 EPIC + 12 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
         WordEntity(id = 151301, setId = 1513, languagePair = "he-ru", rarity = "EPIC",

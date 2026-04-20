@@ -33,7 +33,7 @@ object WordDataHebrewBatch23 {
 
         // ── Set 1091: Экономика ────────────────────────────────────────────
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109101, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
             original = "דִּיבִידֶנְד", translation = "дивиденд", transliteration = "dividend"),
         WordEntity(id = 109102, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
@@ -55,7 +55,7 @@ object WordDataHebrewBatch23 {
         WordEntity(id = 109110, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
             original = "מִמְשָׁל תַּאֲגִידִי", translation = "корпоративное управление", transliteration = "mimshal ta'agidi"),
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 109111, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
             original = "מַסְחַר אַלְגוֹרִיתְמִי", translation = "алгоритмическая торговля", transliteration = "maskhar algoritmí"),
         WordEntity(id = 109112, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
@@ -69,32 +69,32 @@ object WordDataHebrewBatch23 {
         WordEntity(id = 109116, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
             original = "בּוּעָה כַּלְכָּלִית", translation = "экономический пузырь", transliteration = "bu'a kalkalit"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109117, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "פּרוֹטֶקְצְיוֹנִיזְם", translation = "протекционизм"),
+            original = "פּרוֹטֶקְצְיוֹנִיזְם", translation = "протекционизм", transliteration = "протэкционизм"),
         WordEntity(id = 109118, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "כַּלְכָּלַת שׁוּק", translation = "рыночная экономика"),
+            original = "כַּלְכָּלַת שׁוּק", translation = "рыночная экономика", transliteration = "калкалат шук"),
         WordEntity(id = 109119, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "כַּלְכָּלָה תַּכְנוּנִית", translation = "плановая экономика"),
+            original = "כַּלְכָּלָה תַּכְנוּנִית", translation = "плановая экономика", transliteration = "калкала тахнунит"),
         WordEntity(id = 109120, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "מַקְרוֹ-כַּלְכָּלָה", translation = "макроэкономика"),
+            original = "מַקְרוֹ-כַּלְכָּלָה", translation = "макроэкономика", transliteration = "макро-калкала"),
         WordEntity(id = 109121, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "מִיקְרוֹ-כַּלְכָּלָה", translation = "микроэкономика"),
+            original = "מִיקְרוֹ-כַּלְכָּלָה", translation = "микроэкономика", transliteration = "микро-калкала"),
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 109122, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "פּוֹפּוּלִיזְם כַּלְכָּלִי", translation = "экономический популизм"),
+            original = "פּוֹפּוּלִיזְם כַּלְכָּלִי", translation = "экономический популизм", transliteration = "популизм калкали"),
         WordEntity(id = 109123, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "כַּלְכָּלָה הֶתְנְהַגּוּתִית", translation = "поведенческая экономика"),
+            original = "כַּלְכָּלָה הֶתְנְהַגּוּתִית", translation = "поведенческая экономика", transliteration = "калкала hэтнhагутит"),
         WordEntity(id = 109124, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "תֵּיאוֹרְיַת הַמִּשְׂחָקִים", translation = "теория игр"),
+            original = "תֵּיאוֹרְיַת הַמִּשְׂחָקִים", translation = "теория игр", transliteration = "тэиорйат hамисхаким"),
 
         WordEntity(id = 109125, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
             original = "נִיהוּל סִיכּוּנִים פִּינַנְסִיִּים", translation = "управление финансовыми рисками", transliteration = "nihul sikunim finansiyim"),
 
         // ── Set 1092: Философия ────────────────────────────────────────────
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 109201, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תֵּאוֹלוֹגְיָה", translation = "теология", transliteration = "teologia"),
         WordEntity(id = 109202, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -108,39 +108,39 @@ object WordDataHebrewBatch23 {
         WordEntity(id = 109206, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "אַגְנוֹסְטִיצִיזְם", translation = "агностицизм", transliteration = "agnostitsizm"),
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 109207, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מֶטָפִיסִיקָה", translation = "метафизика"),
+            original = "מֶטָפִיסִיקָה", translation = "метафизика", transliteration = "мэтафисика"),
         WordEntity(id = 109208, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חוֹפֶשׁ הָרָצוֹן", translation = "свобода воли"),
+            original = "חוֹפֶשׁ הָרָצוֹן", translation = "свобода воли", transliteration = "хофэш hарацон"),
         WordEntity(id = 109209, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "נִיהִילִיזְם", translation = "нигилизм"),
+            original = "נִיהִילִיזְם", translation = "нигилизм", transliteration = "ниhилизм"),
         WordEntity(id = 109210, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֶקְסִיסְטֶנְצְיַלִיזְם", translation = "экзистенциализм"),
+            original = "אֶקְסִיסְטֶנְצְיַלִיזְם", translation = "экзистенциализм", transliteration = "эксистэнцйализм"),
         WordEntity(id = 109211, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פְּרַגְמַטִיזְם", translation = "прагматизм"),
+            original = "פְּרַגְמַטִיזְם", translation = "прагматизм", transliteration = "прагматизм"),
         WordEntity(id = 109212, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סְטוֹאִיּוּת", translation = "стоицизм"),
+            original = "סְטוֹאִיּוּת", translation = "стоицизм", transliteration = "стоиут"),
         WordEntity(id = 109213, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אוֹטוֹנוֹמְיָה", translation = "автономия"),
+            original = "אוֹטוֹנוֹמְיָה", translation = "автономия", transliteration = "отономйа"),
         WordEntity(id = 109214, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֲשִׁיבָה בִּיקוֹרְתִּית", translation = "критическое мышление"),
+            original = "חֲשִׁיבָה בִּיקוֹרְתִּית", translation = "критическое мышление", transliteration = "хашива бикортит"),
         WordEntity(id = 109215, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֶמְפִּירִיצִיזְם", translation = "эмпиризм"),
+            original = "אֶמְפִּירִיצִיזְם", translation = "эмпиризм", transliteration = "эмпирицизм"),
         WordEntity(id = 109216, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רַצְיוֹנַלִיזְם", translation = "рационализм"),
+            original = "רַצְיוֹנַלִיזְם", translation = "рационализм", transliteration = "рационализм"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109217, setId = 1092, languagePair = "he-ru", rarity = "RARE",
-            original = "אֶפִּיסְטֶמוֹלוֹגְיָה", translation = "эпистемология (теория познания)"),
+            original = "אֶפִּיסְטֶמוֹלוֹגְיָה", translation = "эпистемология (теория познания)", transliteration = "эпистэмологйа"),
         WordEntity(id = 109218, setId = 1092, languagePair = "he-ru", rarity = "RARE",
-            original = "הֶרְמֶנֵיוּטִיקָה", translation = "герменевтика"),
+            original = "הֶרְמֶנֵיוּטִיקָה", translation = "герменевтика", transliteration = "hэрмэнэиутика"),
         WordEntity(id = 109219, setId = 1092, languagePair = "he-ru", rarity = "RARE",
-            original = "שָׁאֵלָה פִּילוֹסוֹפִית", translation = "философский вопрос"),
+            original = "שָׁאֵלָה פִּילוֹסוֹפִית", translation = "философский вопрос", transliteration = "шаэла пилософит"),
         WordEntity(id = 109220, setId = 1092, languagePair = "he-ru", rarity = "RARE",
-            original = "פּוֹלֵמִיקָה", translation = "полемика"),
+            original = "פּוֹלֵמִיקָה", translation = "полемика", transliteration = "полэмика"),
         WordEntity(id = 109221, setId = 1092, languagePair = "he-ru", rarity = "RARE",
-            original = "אוּטִיָּה", translation = "утопия"),
+            original = "אוּטִיָּה", translation = "утопия", transliteration = "утийа"),
 
         WordEntity(id = 109222, setId = 1092, languagePair = "he-ru", rarity = "RARE",
             original = "הֶדוֹנִיזְם", translation = "гедонизм", transliteration = "hedonizm"),
@@ -153,7 +153,7 @@ object WordDataHebrewBatch23 {
 
         // ── Set 1093: Климат и устойчивость ───────────────────────────────
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109301, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
             original = "אֶקוֹסִיסְטֶם", translation = "экосистема", transliteration = "ekosistem"),
         WordEntity(id = 109302, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
@@ -175,7 +175,7 @@ object WordDataHebrewBatch23 {
         WordEntity(id = 109310, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
             original = "רֵגוּלָצְיַת פְּלִיטוֹת", translation = "регулирование выбросов", transliteration = "regulatziat plitot"),
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 109311, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
             original = "מֵימַן יָרוֹק", translation = "зелёный водород", transliteration = "meiman yarok"),
         WordEntity(id = 109312, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
@@ -189,25 +189,25 @@ object WordDataHebrewBatch23 {
         WordEntity(id = 109316, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
             original = "מְדִינִיּוּת קִיּוּמִיּוּת", translation = "политика устойчивого развития", transliteration = "mediniyut kiyumiyut"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109317, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
-            original = "מַפֶּלֶת הַבִּיוֹדִיבֶרְסִיטִי", translation = "утрата биоразнообразия"),
+            original = "מַפֶּלֶת הַבִּיוֹדִיבֶרְסִיטִי", translation = "утрата биоразнообразия", transliteration = "мапэлэт hабиодивэрсити"),
         WordEntity(id = 109318, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
-            original = "טְבִיעַת רֶגֶל", translation = "углеродный след"),
+            original = "טְבִיעַת רֶגֶל", translation = "углеродный след", transliteration = "твиат рэгэл"),
         WordEntity(id = 109319, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
-            original = "תַּשְׁתִּית יְרוּקָּה", translation = "зелёная инфраструктура"),
+            original = "תַּשְׁתִּית יְרוּקָּה", translation = "зелёная инфраструктура", transliteration = "таштит йрука"),
         WordEntity(id = 109320, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
-            original = "מִשְׁבַּר אֶקְלִים", translation = "климатический кризис"),
+            original = "מִשְׁבַּר אֶקְלִים", translation = "климатический кризис", transliteration = "мишбар эклим"),
         WordEntity(id = 109321, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
-            original = "עַרְפִּיחַ", translation = "смог"),
+            original = "עַרְפִּיחַ", translation = "смог", transliteration = "арпиха"),
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 109322, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
-            original = "כַּלְכָּלָה דֶּקַרְבּוֹנִיזַצְיָה", translation = "декарбонизация экономики"),
+            original = "כַּלְכָּלָה דֶּקַרְבּוֹנִיזַצְיָה", translation = "декарбонизация экономики", transliteration = "калкала дэкарбонизацйа"),
         WordEntity(id = 109323, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
-            original = "צְמִיחָה כְּחוּלָה", translation = "зелёный/голубой рост (устойчивое развитие)"),
+            original = "צְמִיחָה כְּחוּלָה", translation = "зелёный/голубой рост (устойчивое развитие)", transliteration = "цмиха кхула"),
         WordEntity(id = 109324, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
-            original = "פְּגִיעוּת אֶקוֹ-סִיסְטֶמִית", translation = "уязвимость экосистем"),
+            original = "פְּגִיעוּת אֶקוֹ-סִיסְטֶמִית", translation = "уязвимость экосистем", transliteration = "пгиут эко-систэмит"),
 
         WordEntity(id = 109325, setId = 1093, languagePair = "he-ru", rarity = "EPIC",
             original = "תַּקְצוּב פֶּחָמָן", translation = "углеродный бюджет; бюджетирование углерода", transliteration = "taktzuv pekhaman"),

@@ -89,7 +89,7 @@ object WordDataHebrewBatch18 {
             exampleNative = "Впечатляющее בִּיּוּם принесло режиссёру награду.",
         ),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107607, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "maаrekhet",
@@ -181,7 +181,7 @@ object WordDataHebrewBatch18 {
             exampleNative = "Пресс-секретарь правительства провёл ежедневный брифинг.",
         ),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 107617, setId = 1076, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "media", transliteration = "edut reiya",
@@ -267,7 +267,7 @@ object WordDataHebrewBatch18 {
 
         // ── Set 1077: Наука ────────────────────────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(
             id = 107701, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science", transliteration = "mada",
@@ -323,7 +323,7 @@ object WordDataHebrewBatch18 {
             exampleNative = "Она работает в химической лаборатории при университете.",
         ),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107707, setId = 1077, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "science", transliteration = "hipoteza",
@@ -556,7 +556,7 @@ object WordDataHebrewBatch18 {
             exampleNative = "Израиль увеличивает инвестиции в возобновляемую энергию.",
         ),
 
-        // UNCOMMON (A2–B1)
+        // UNCOMMON (A2–B1),
         WordEntity(
             id = 107807, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "hitkhamemut globalit",
@@ -648,7 +648,7 @@ object WordDataHebrewBatch18 {
             exampleNative = "Рыжая лисица — один из видов под угрозой исчезновения в Израиле.",
         ),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(
             id = 107817, setId = 1078, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "ecology", transliteration = "ekosistem",

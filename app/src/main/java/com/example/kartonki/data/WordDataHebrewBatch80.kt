@@ -23,7 +23,7 @@ object WordDataHebrewBatch80 {
     val words: List<WordEntity> = listOf(
 
         // ══════════════════════════════════════════════════════════════════════
-        // МЕДИЦИНА: ОСНОВЫ 7 — set 1500 (скорая помощь и приёмный покой, COMMON)
+        // МЕДИЦИНА: ОСНОВЫ 7 — set 1500 (скорая помощь и приёмный покой, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 150001, setId = 1500, languagePair = "he-ru", rarity = "COMMON",
             original = "מִיּוּן", translation = "приёмный покой (скорая, триаж)", transliteration = "миюн"),
@@ -69,6 +69,12 @@ object WordDataHebrewBatch80 {
             original = "הַגַּשַׁת עֶזְרָה רִאשׁוֹנָה", translation = "оказание первой помощи", transliteration = "hагашат эзра ришона"),
         WordEntity(id = 150025, setId = 1500, languagePair = "he-ru", rarity = "COMMON",
             original = "כֵּהוּת חוּשִׁים", translation = "онемение, потеря чувствительности", transliteration = "кэhут хушим"),
+        WordEntity(id = 150026, setId = 1500, languagePair = "he-ru", rarity = "COMMON",
+            original = "זְרִיקָה", translation = "укол / инъекция", transliteration = "зрика"),
+        WordEntity(id = 150027, setId = 1500, languagePair = "he-ru", rarity = "COMMON",
+            original = "סַד", translation = "шина (медицинская) / лангетка", transliteration = "сад"),
+        WordEntity(id = 150028, setId = 1500, languagePair = "he-ru", rarity = "COMMON",
+            original = "מַדְחוֹם", translation = "термометр", transliteration = "мадхом"),
 
         // ══════════════════════════════════════════════════════════════════════
         // РАЗГОВОРНЫЙ ИВРИТ: ОСНОВЫ — set 1501 (базовый сленг, COMMON)
@@ -125,7 +131,7 @@ object WordDataHebrewBatch80 {
             original = "בְּוַדַּאי", translation = "конечно, разумеется", transliteration = "бэвадай"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // РАЗГОВОРНЫЙ ИВРИТ: ОСНОВЫ 2 — set 1502 (молодёжный сленг, COMMON)
+        // РАЗГОВОРНЫЙ ИВРИТ: ОСНОВЫ 2 — set 1502 (молодёжный сленг, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 150201, setId = 1502, languagePair = "he-ru", rarity = "COMMON",
             original = "מַגְנִיב", translation = "круто, классно (молодёжн.)", transliteration = "магнив"),

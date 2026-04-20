@@ -24,7 +24,7 @@ object WordDataHebrewBatch9 {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────
-        // Set 1050 — יופי וטיפוח  (Beauty and grooming, A2/B1)
+        // Set 1050 — יופי וטיפוח  (Beauty and grooming, A2/B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────
 
@@ -255,7 +255,7 @@ object WordDataHebrewBatch9 {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 1051 — שיפוץ הבית  (Home renovation, B1)
+        // Set 1051 — שיפוץ הבית  (Home renovation, B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────
 

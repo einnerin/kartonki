@@ -78,6 +78,14 @@ object WordDataHebrewBatch86 {
             original = "אַרְבִּיטְרָז'", translation = "арбитраж (финансовый)", transliteration = "арбитраж"),
         WordEntity(id = 152425, setId = 1524, languagePair = "he-ru", rarity = "EPIC",
             original = "נִגְזָרִים פִינַנְסִיִּים", translation = "финансовые деривативы", transliteration = "нигзарим финансиим"),
+        WordEntity(id = 152426, setId = 1524, languagePair = "he-ru", rarity = "RARE",
+            original = "בּוּרְסַת מְנָיוֹת", translation = "фондовая биржа", transliteration = "бурсат мэнайот"),
+        WordEntity(id = 152427, setId = 1524, languagePair = "he-ru", rarity = "RARE",
+            original = "מַשְׁבֵּר פִינַנְסִי", translation = "финансовый кризис", transliteration = "машбэр финанси"),
+        WordEntity(id = 152428, setId = 1524, languagePair = "he-ru", rarity = "RARE",
+            original = "חוֹב לְאוּמִי", translation = "государственный долг", transliteration = "хов лэуми"),
+        WordEntity(id = 152429, setId = 1524, languagePair = "he-ru", rarity = "RARE",
+            original = "תַּשְׁקִיף הַנְפָּקָה", translation = "проспект эмиссии", transliteration = "ташкиф hанпака"),
 
         // ── Set 1525 — Культура и искусство: продвинутый 1 (level 2) ─────
         // 2 COMMON + 16 UNCOMMON + 4 RARE + 2 EPIC + 1 LEGENDARY
@@ -127,6 +135,10 @@ object WordDataHebrewBatch86 {
             original = "דוּ-שִׂיחַ", translation = "диалог (сценический)", transliteration = "ду-сиах"),
         WordEntity(id = 152525, setId = 1525, languagePair = "he-ru", rarity = "RARE",
             original = "דְּרָמָטוּרְגְיָה", translation = "драматургия", transliteration = "драматургия"),
+        WordEntity(id = 152526, setId = 1525, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "אוֹסֶף אָמָּנוּתִי", translation = "художественная коллекция", transliteration = "осэф аманути"),
+        WordEntity(id = 152527, setId = 1525, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "חֲלִילָן", translation = "флейтист", transliteration = "халилан"),
 
         // ── Set 1526 — Дом и быт: продвинутый 2 (level 2, A2/B1) ─────────
         // 2 COMMON + 16 UNCOMMON + 4 RARE + 2 EPIC + 1 LEGENDARY
@@ -170,6 +182,16 @@ object WordDataHebrewBatch86 {
             original = "מַעֲרֶכֶת סוֹלָרִית", translation = "солнечная система (панели)", transliteration = "маарехет соларит"),
         WordEntity(id = 152625, setId = 1526, languagePair = "he-ru", rarity = "RARE",
             original = "מִחְזוּר מֵי אֶפֶר", translation = "рециркуляция серых вод", transliteration = "михзур мэй эфер"),
+        WordEntity(id = 152626, setId = 1526, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "מְאַוְרֵר", translation = "вентилятор", transliteration = "мэаврэр"),
+        WordEntity(id = 152627, setId = 1526, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "פִילְטֵר מַיִם", translation = "фильтр для воды", transliteration = "фильтэр маим"),
+        WordEntity(id = 152628, setId = 1526, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "שִׁילוּט דִּירָה", translation = "домовые указатели", transliteration = "шилут дира"),
+        WordEntity(id = 152629, setId = 1526, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "דֶּלֶת פַּלָדָה", translation = "стальная дверь", transliteration = "дэлэт палада"),
+        WordEntity(id = 152630, setId = 1526, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "גְּנֵרָטוֹר חֵרוּם", translation = "аварийный генератор", transliteration = "гэнэратор херум"),
 
         // ── Set 1527 — Спорт: углублённый 1 (level 3, B2) ────────────────
         // 1 COMMON + 5 UNCOMMON + 12 RARE + 5 EPIC + 2 LEGENDARY

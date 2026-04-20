@@ -29,7 +29,7 @@ object WordDataHebrewBatch77 {
     val words: List<WordEntity> = listOf(
 
         // ══════════════════════════════════════════════════════════════════════
-        // ТРАНСПОРТ: ОСНОВЫ 4 — set 1488 (общественный транспорт, COMMON)
+        // ТРАНСПОРТ: ОСНОВЫ 4 — set 1488 (общественный транспорт, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 148802, setId = 1488, languagePair = "he-ru", rarity = "COMMON",
             original = "תַּחֲנָה סוֹפִית", translation = "конечная остановка", transliteration = "тахана софит"),
@@ -73,6 +73,14 @@ object WordDataHebrewBatch77 {
             original = "נְתִיב", translation = "полоса движения", transliteration = "натив"),
         WordEntity(id = 148825, setId = 1488, languagePair = "he-ru", rarity = "COMMON",
             original = "מְסִילַת רַכֶּבֶת", translation = "железнодорожный путь", transliteration = "мэсилат ракэвэт"),
+        WordEntity(id = 148826, setId = 1488, languagePair = "he-ru", rarity = "COMMON",
+            original = "סַפְסַל תַּחֲנָה", translation = "скамейка на остановке", transliteration = "сафсаль тахана"),
+        WordEntity(id = 148827, setId = 1488, languagePair = "he-ru", rarity = "COMMON",
+            original = "שֶׁלֶט רְחוֹב", translation = "уличный знак", transliteration = "шэлэт рхов"),
+        WordEntity(id = 148828, setId = 1488, languagePair = "he-ru", rarity = "COMMON",
+            original = "סִימּוּן דְּרָכִים", translation = "разметка на дорогах", transliteration = "симун драхим"),
+        WordEntity(id = 148829, setId = 1488, languagePair = "he-ru", rarity = "COMMON",
+            original = "נְסִיעַת בֹּקֶר", translation = "утренняя поездка", transliteration = "нэсият бокэр"),
 
         // ══════════════════════════════════════════════════════════════════════
         // ТРАНСПОРТ: ОСНОВЫ 5 — set 1489 (вождение в Израиле, COMMON)
@@ -123,6 +131,10 @@ object WordDataHebrewBatch77 {
             original = "מַנּוֹעַ חַשְׁמַלִּי", translation = "электродвигатель (электромобиль)", transliteration = "мануа хашмали"),
         WordEntity(id = 148925, setId = 1489, languagePair = "he-ru", rarity = "COMMON",
             original = "רֶכֶב הִיבְּרִיד", translation = "гибридный автомобиль", transliteration = "рэхэв хибрид"),
+        WordEntity(id = 148926, setId = 1489, languagePair = "he-ru", rarity = "COMMON",
+            original = "נַהֲגוּת", translation = "водительская работа", transliteration = "наhагут"),
+        WordEntity(id = 148927, setId = 1489, languagePair = "he-ru", rarity = "COMMON",
+            original = "שַׁיָּט", translation = "водитель автобуса", transliteration = "шаят"),
 
         // ══════════════════════════════════════════════════════════════════════
         // СПОРТ: ОСНОВЫ 3 — set 1490 (командный спорт и соревнования, COMMON)
@@ -179,7 +191,7 @@ object WordDataHebrewBatch77 {
             original = "עֵת הַפְסָקָה", translation = "перерыв (тайм)", transliteration = "эт hафсака"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // СПОРТ: ОСНОВЫ 4 — set 1491 (фитнес и тренажёрный зал, COMMON)
+        // СПОРТ: ОСНОВЫ 4 — set 1491 (фитнес и тренажёрный зал, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 149101, setId = 1491, languagePair = "he-ru", rarity = "COMMON",
             original = "חֶדֶר כּוֹשֶׁר", translation = "тренажёрный зал (зал фитнеса)", transliteration = "хэдэр кошэр"),
@@ -233,7 +245,7 @@ object WordDataHebrewBatch77 {
             original = "מַנּוּי לַחֶדֶר כּוֹשֶׁר", translation = "абонемент в спортзал", transliteration = "мануй ла-хэдэр кошэр"),
 
         // ══════════════════════════════════════════════════════════════════════
-        // СПОРТ: ОСНОВЫ 5 — set 1492 (активный отдых и природа, COMMON)
+        // СПОРТ: ОСНОВЫ 5 — set 1492 (активный отдых и природа, COMMON),
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(id = 149201, setId = 1492, languagePair = "he-ru", rarity = "COMMON",
             original = "טִיּוּל רֶגֶל", translation = "пешая прогулка, поход", transliteration = "тиюль рэгэль"),

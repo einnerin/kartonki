@@ -78,6 +78,14 @@ object WordDataHebrewBatch85 {
             original = "פָּרְמָקוֹגֶנוֹמִיקָה", translation = "фармакогеномика", transliteration = "фармакогеномика"),
         WordEntity(id = 151925, setId = 1519, languagePair = "he-ru", rarity = "EPIC",
             original = "אִמּוּנוֹתֶרָפְּיָה", translation = "иммунотерапия", transliteration = "иммунотерапия"),
+        WordEntity(id = 151926, setId = 1519, languagePair = "he-ru", rarity = "RARE",
+            original = "הֶתְקֵפָה", translation = "приступ (медицинский)", transliteration = "hэткафа"),
+        WordEntity(id = 151927, setId = 1519, languagePair = "he-ru", rarity = "RARE",
+            original = "הַרְעָלָה", translation = "отравление", transliteration = "hарала"),
+        WordEntity(id = 151928, setId = 1519, languagePair = "he-ru", rarity = "RARE",
+            original = "גִּידּוּל", translation = "опухоль / новообразование", transliteration = "гидуль"),
+        WordEntity(id = 151929, setId = 1519, languagePair = "he-ru", rarity = "RARE",
+            original = "תַּפְקוּד רֵיאָה", translation = "функция лёгких", transliteration = "тафкуд рэа"),
 
         // ── Set 1520 — Образование: продвинутый 2 (level 2, A2/B1) ───────
         // 2 COMMON + 16 UNCOMMON + 4 RARE + 2 EPIC + 1 LEGENDARY
@@ -129,6 +137,8 @@ object WordDataHebrewBatch85 {
             original = "אֶפִּיסְטֵמוֹלוֹגְיָה", translation = "эпистемология (теория познания)", transliteration = "эпистемология"),
         WordEntity(id = 152025, setId = 1520, languagePair = "he-ru", rarity = "RARE",
             original = "הֶרְמֵנוֹיְטִיקָה", translation = "герменевтика (теория интерпретации текстов)", transliteration = "герменевтика"),
+        WordEntity(id = 152026, setId = 1520, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "מוּסְמָךְ", translation = "сертифицированный / дипломированный", transliteration = "мусмах"),
 
         // ── Set 1521 — Работа и карьера: углублённый 2 (level 3, B2) ─────
         // 1 COMMON + 5 UNCOMMON + 13 RARE + 4 EPIC + 2 LEGENDARY
@@ -178,6 +188,10 @@ object WordDataHebrewBatch85 {
             original = "אוֹטוֹמָטִיזַצְיָה שֶׁל תַּהֲלִיכֵי עֲבוֹדָה", translation = "автоматизация рабочих процессов", transliteration = "автоматизация шель тахлихей авода"),
         WordEntity(id = 152125, setId = 1521, languagePair = "he-ru", rarity = "RARE",
             original = "כַּלְכָּלַת הַגִּיג", translation = "гиг-экономика", transliteration = "калькалат hа-гиг"),
+        WordEntity(id = 152126, setId = 1521, languagePair = "he-ru", rarity = "RARE",
+            original = "מֶנְטוֹרִינְג", translation = "менторинг / наставничество", transliteration = "мэнторинг"),
+        WordEntity(id = 152127, setId = 1521, languagePair = "he-ru", rarity = "RARE",
+            original = "תְּמִיכָה מִקְצוֹעִית", translation = "профессиональная поддержка", transliteration = "тмиха микцоит"),
 
         // ── Set 1522 — Транспорт: продвинутый 3 (level 2, A2/B1) ─────────
         // 2 COMMON + 15 UNCOMMON + 5 RARE + 2 EPIC + 1 LEGENDARY
@@ -227,6 +241,10 @@ object WordDataHebrewBatch85 {
             original = "הִיסַּעוּת שִׁיתּוּפִית", translation = "каршеринг / ride-sharing", transliteration = "hисаут шитуфит"),
         WordEntity(id = 152225, setId = 1522, languagePair = "he-ru", rarity = "RARE",
             original = "תַּשְׁתִּית טְעִינָה חַשְׁמָלִית", translation = "инфраструктура зарядки электромобилей", transliteration = "ташtит теина хашмалит"),
+        WordEntity(id = 152226, setId = 1522, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "מוֹנוֹרֵיל", translation = "монорельс", transliteration = "монорель"),
+        WordEntity(id = 152227, setId = 1522, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "חָסוּם", translation = "заблокирован (о дороге)", transliteration = "хасум"),
 
         // ── Set 1523 — Природа: углублённый 2 (level 3, B2) ─────────────
         // 1 COMMON + 5 UNCOMMON + 12 RARE + 5 EPIC + 2 LEGENDARY
@@ -276,5 +294,9 @@ object WordDataHebrewBatch85 {
             original = "שֵׁירוּתֵי אֶקוֹסִיסְטֶם", translation = "экосистемные услуги", transliteration = "шерутей экосистем"),
         WordEntity(id = 152325, setId = 1523, languagePair = "he-ru", rarity = "EPIC",
             original = "טַרְמוֹדִינָמִיקָה שֶׁל אֶקוֹסִיסְטֶמוֹת", translation = "термодинамика экосистем", transliteration = "термодинамика шель экосистемот"),
+        WordEntity(id = 152326, setId = 1523, languagePair = "he-ru", rarity = "RARE",
+            original = "מַסְלוּל טִיּוּל", translation = "туристический маршрут (в природе)", transliteration = "маслул тийул"),
+        WordEntity(id = 152327, setId = 1523, languagePair = "he-ru", rarity = "RARE",
+            original = "סַחֲלַב בַּר", translation = "дикая орхидея", transliteration = "сахлав бар")
     )
 }

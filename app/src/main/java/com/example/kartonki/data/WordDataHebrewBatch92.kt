@@ -84,6 +84,8 @@ object WordDataHebrewBatch92 {
             original = "פְּרוֹטוֹקוֹל חֲקִירָה", translation = "протокол допроса", transliteration = "протокол хакира"),
         WordEntity(id = 155425, setId = 1554, languagePair = "he-ru", rarity = "RARE",
             original = "יוֹעֵץ מִשְׁפָּטִי פְּלִילִי", translation = "юридический консультант по уголовным делам", transliteration = "йоэц мишпати плили"),
+        WordEntity(id = 155426, setId = 1554, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "פְּעִילוּת פִּיקּוּחַ", translation = "надзорная деятельность", transliteration = "пэилут пикуах"),
 
         // ── Set 1555 — Пожарный: продвинутый 2 (level 2, A2/B1) ──────────
         // 2 COMMON + 16 UNCOMMON + 4 RARE + 2 EPIC + 1 LEGENDARY
@@ -188,6 +190,8 @@ object WordDataHebrewBatch92 {
             original = "רֵדוּקְצְיַת רֹטֶב", translation = "редукция соуса / уваривание", transliteration = "редукциат ротев"),
         WordEntity(id = 155625, setId = 1556, languagePair = "he-ru", rarity = "RARE",
             original = "אַקְטִיבִיזַצְיַת אֶנְזִימִים", translation = "активация ферментов (гастрономия)", transliteration = "активизация энзимим"),
+        WordEntity(id = 155626, setId = 1556, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "בָּשָׂר טָחוּן", translation = "фарш", transliteration = "басар тахун"),
 
         // ── Set 1557 — Пилот: продвинутый 2 (level 2, A2/B1) ─────────────
         // 2 COMMON + 16 UNCOMMON + 4 RARE + 2 EPIC + 1 LEGENDARY

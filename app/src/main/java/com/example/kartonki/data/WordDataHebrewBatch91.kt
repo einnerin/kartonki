@@ -135,6 +135,10 @@ object WordDataHebrewBatch91 {
             original = "רְפוּאָה מוֹכִיחַת רָאיוֹת", translation = "доказательная медицина", transliteration = "рфуа мохихат раёт"),
         WordEntity(id = 155025, setId = 1550, languagePair = "he-ru", rarity = "RARE",
             original = "הַשְׁבָּעַת הִיפּוֹקְרָטֶס", translation = "клятва Гиппократа", transliteration = "hашбаат hипократес"),
+        WordEntity(id = 155026, setId = 1550, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "חֲדַר מִיוּן", translation = "приёмное отделение", transliteration = "хадар миюн"),
+        WordEntity(id = 155027, setId = 1550, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "חַדְרֵי טִיפּוּל", translation = "процедурные кабинеты", transliteration = "хадрэй типуль"),
 
         // ── Set 1551 — Журналист: углублённый 2 (level 3, B2) ────────────
         // 1 COMMON + 5 UNCOMMON + 12 RARE + 5 EPIC + 2 LEGENDARY

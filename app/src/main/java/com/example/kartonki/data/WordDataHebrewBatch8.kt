@@ -24,7 +24,7 @@ object WordDataHebrewBatch8 {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────
-        // Set 1047 — קניון וחנויות  (Shopping mall and stores, B1)
+        // Set 1047 — קניון וחנויות  (Shopping mall and stores, B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────
 
@@ -255,7 +255,7 @@ object WordDataHebrewBatch8 {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 1048 — ילדים והורות  (Children and parenting, A2/B1)
+        // Set 1048 — ילדים והורות  (Children and parenting, A2/B1),
         // 25 words: 6 COMMON + 9 UNCOMMON + 7 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────
 
@@ -486,7 +486,7 @@ object WordDataHebrewBatch8 {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 1049 — שכונה וועד בית  (Neighborhood and building committee, A2/B1)
+        // Set 1049 — שכונה וועד בית  (Neighborhood and building committee, A2/B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────
 

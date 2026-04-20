@@ -40,7 +40,7 @@ object WordDataHebrewBatch42 {
 
         // ── Set 1221: Приветствия: продвинутый ────────────────────────────
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 122101, setId = 1221, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "communication", transliteration = "du-siakh",
             original = "דּוּ-שִׂיחַ", translation = "диалог, беседа",
@@ -150,7 +150,7 @@ object WordDataHebrewBatch42 {
         ),
 
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 122113, setId = 1221, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "communication", transliteration = "hadadiyut",
             original = "הֲדֵדִיּוּת", translation = "взаимность",
@@ -258,7 +258,7 @@ object WordDataHebrewBatch42 {
 
         // ── Set 1222: Приветствия: профессиональный ───────────────────────
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 122201, setId = 1222, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "linguistics", transliteration = "pragmatika",
             original = "הֵרְמֶנֶיוּטִיקָה", translation = "прагматика",
@@ -380,7 +380,7 @@ object WordDataHebrewBatch42 {
             exampleNative = "Грамотная אַסְטְרָטֶגִיָּה תְּקָשׁוֹרְתִית сломила переговоры.",
         ),
 
-        // LEGENDARY (C2+)
+        // LEGENDARY (C2+),
         WordEntity(id = 122216, setId = 1222, languagePair = "he-ru", rarity = "EPIC",
             original = "רֵטוֹרִיקָה", transliteration = "retorika", translation = "риторика / искусство убеждения"),
         WordEntity(id = 122217, setId = 1222, languagePair = "he-ru", rarity = "EPIC",
@@ -404,7 +404,7 @@ object WordDataHebrewBatch42 {
 
         // ── Set 1223: Архитектура: основы ─────────────────────────────────
 
-        // COMMON (A1)
+        // COMMON (A1),
         WordEntity(id = 122301, setId = 1223, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "architecture", transliteration = "arkitektura",
             original = "אָרְכִיטֶקְטוּרָה", translation = "архитектура",
@@ -510,7 +510,7 @@ object WordDataHebrewBatch42 {
             exampleNative = "В нашем доме пять חֲדָרִים.",
         ),
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 122314, setId = 1223, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "architecture", transliteration = "tiyakh",
             original = "כּוֹתֶל", translation = "штукатурка",
@@ -610,7 +610,7 @@ object WordDataHebrewBatch42 {
 
         // ── Set 1224: Архитектура: профессиональный ───────────────────────
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 122401, setId = 1224, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "architecture", transliteration = "shayish",
             original = "בּוֹהָאוּס", translation = "мрамор",
@@ -732,7 +732,7 @@ object WordDataHebrewBatch42 {
             exampleNative = "הֶרְמֶנֵיוּטִיקָה אַרְכִיטֶקְטוֹנִית спрашивает что рассказывает нам здание.",
         ),
 
-        // LEGENDARY (C2+)
+        // LEGENDARY (C2+),
         WordEntity(id = 122416, setId = 1224, languagePair = "he-ru", rarity = "EPIC",
             original = "אַרְבָּנִיזַצְיָה", transliteration = "urbanizatsiya", translation = "урбанизация"),
         WordEntity(id = 122417, setId = 1224, languagePair = "he-ru", rarity = "EPIC",

@@ -21,7 +21,7 @@ object WordDataHebrewBatch14 {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1065 — סטאז' בשיווק — בסיסי  (Marketing internship basics, A2/B1)
+        // Set 1065 — סטאז' בשיווק — בסיסי  (Marketing internship basics, A2/B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 5 RARE + 3 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
 
@@ -191,7 +191,7 @@ object WordDataHebrewBatch14 {
             original = "שִׁיחַת מְכִירָה", transliteration = "sikhat mekhira", translation = "звонок по продажам / торговая беседа"),
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1066 — סטאז' בשיווק — מתקדם  (Marketing internship advanced, B1/B2)
+        // Set 1066 — סטאז' בשיווק — מתקדם  (Marketing internship advanced, B1/B2),
         // 25 words: 6 COMMON + 10 UNCOMMON + 5 RARE + 3 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
 

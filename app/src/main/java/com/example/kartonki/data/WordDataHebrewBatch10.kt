@@ -24,7 +24,7 @@ object WordDataHebrewBatch10 {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1053 — חגים ישראליים  (Israeli holidays, A2/B1)
+        // Set 1053 — חגים ישראליים  (Israeli holidays, A2/B1),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
 
@@ -255,7 +255,7 @@ object WordDataHebrewBatch10 {
         ),
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1054 — בנק וכספים  (Banking and finances, B1/B2)
+        // Set 1054 — בנק וכספים  (Banking and finances, B1/B2),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
 
@@ -486,7 +486,7 @@ object WordDataHebrewBatch10 {
         ),
 
         // ──────────────────────────────────────────────────────────────────
-        // Set 1055 — חיפוש עבודה  (Job hunting and employment, A2/B2)
+        // Set 1055 — חיפוש עבודה  (Job hunting and employment, A2/B2),
         // 25 words: 6 COMMON + 10 UNCOMMON + 6 RARE + 2 EPIC + 1 LEGENDARY
         // ──────────────────────────────────────────────────────────────────
 

@@ -33,7 +33,7 @@ object WordDataHebrewMore {
     val words = listOf(
 
         // ──────────────────────────────────────────────────────
-        // Set 108 — Транспорт (A2)
+        // Set 108 — Транспорт (A2),
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -254,7 +254,7 @@ object WordDataHebrewMore {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 109 — Город и места (A2)
+        // Set 109 — Город и места (A2),
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -475,7 +475,7 @@ object WordDataHebrewMore {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 110 — Одежда (A2)
+        // Set 110 — Одежда (A2),
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -696,7 +696,7 @@ object WordDataHebrewMore {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 111 — Погода и природа (A2)
+        // Set 111 — Погода и природа (A2),
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -908,7 +908,7 @@ object WordDataHebrewMore {
         ),
 
         // ──────────────────────────────────────────────────────
-        // Set 112 — Кино (B1)
+        // Set 112 — Кино (B1),
         // ──────────────────────────────────────────────────────
 
         WordEntity(
@@ -992,7 +992,7 @@ object WordDataHebrewMore {
         WordEntity(id = 101223, setId = 1012, languagePair = "he-ru", original = "שַׁחְקָן אוֹרֵחַ", translation = "приглашённый актёр", transliteration = "sakhkan ore'akh", rarity = "UNCOMMON"),
 
         // ──────────────────────────────────────────────────────
-        // Set 113 — Съёмочный процесс (B1)
+        // Set 113 — Съёмочный процесс (B1),
         // ──────────────────────────────────────────────────────
 
         WordEntity(id = 101301, setId = 1013, languagePair = "he-ru", original = "סְצֶנָה", translation = "сцена / эпизод (в фильме)", transliteration = "stzena", rarity = "UNCOMMON"),
@@ -1110,7 +1110,7 @@ object WordDataHebrewMore {
 
         // ── дополнительные слова для доведения наборов до 25 ──
 
-        // Set 108 — +1 (было 24, стало 25)
+        // Set 108 — +1 (было 24, стало 25),
         WordEntity(
             id = 100825, setId = 1008, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "takhbura tsibirit",
@@ -1121,7 +1121,7 @@ object WordDataHebrewMore {
             exampleNative = "Я предпочитаю תַּחְבּוּרָה צִיבּוּרִית личному автомобилю.",
         ),
 
-        // Set 109 — +1 (было 24, стало 25)
+        // Set 109 — +1 (было 24, стало 25),
         WordEntity(
             id = 100925, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city", transliteration = "merkaz ir",
@@ -1132,7 +1132,7 @@ object WordDataHebrewMore {
             exampleNative = "Мы добрались до מֶרְכַּז עִיר на поезде.",
         ),
 
-        // Set 110 — +1 (было 24, стало 25)
+        // Set 110 — +1 (было 24, стало 25),
         WordEntity(
             id = 101025, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "clothing", transliteration = "sveder",
@@ -1143,7 +1143,7 @@ object WordDataHebrewMore {
             exampleNative = "Я надел толстый סְוֶדֶר, потому что на улице было холодно.",
         ),
 
-        // Set 111 — +2 (было 23, стало 25)
+        // Set 111 — +2 (было 23, стало 25),
         WordEntity(
             id = 101124, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "lakhut",
@@ -1163,7 +1163,7 @@ object WordDataHebrewMore {
             exampleNative = "Сильная בַּצֹּרֶת нанесла урон урожаю фермеров.",
         ),
 
-        // Set 112 — +2 (было 23, стало 25)
+        // Set 112 — +2 (было 23, стало 25),
         WordEntity(
             id = 101224, setId = 1012, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "cinema", transliteration = "ulam kolno'a",
@@ -1175,7 +1175,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(id = 101225, setId = 1012, languagePair = "he-ru", original = "אַמָּן", translation = "художник / артист", transliteration = "aman", rarity = "UNCOMMON"),
 
-        // Set 113 — +1 (было 24, стало 25)
+        // Set 113 — +1 (было 24, стало 25),
         WordEntity(
             id = 101325, setId = 1013, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "filming", transliteration = "shot",

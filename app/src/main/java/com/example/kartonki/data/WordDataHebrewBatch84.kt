@@ -237,6 +237,14 @@ object WordDataHebrewBatch84 {
             original = "נְדָלָ\"ן", translation = "недвижимость", transliteration = "недлан"),
         WordEntity(id = 151725, setId = 1517, languagePair = "he-ru", rarity = "RARE",
             original = "הַתְיָּיעֲלוּת אֶנֶרְגֶּטִית", translation = "энергоэффективность", transliteration = "hатяалут энергетит"),
+        WordEntity(id = 151726, setId = 1517, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "הַחְלָפַת דִּירָה", translation = "обмен квартиры", transliteration = "hахлафат дира"),
+        WordEntity(id = 151727, setId = 1517, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "רֶנוֹבַצְיָה", translation = "реновация", transliteration = "рэновация"),
+        WordEntity(id = 151728, setId = 1517, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "דַּוָּר", translation = "почтальон", transliteration = "давар"),
+        WordEntity(id = 151729, setId = 1517, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "דֹּאַר רָשׁוּם", translation = "заказное письмо", transliteration = "доар рашум"),
 
         // ── Set 1518 — Природа: продвинутый 3 (level 2) ──────────────────
         // 1 COMMON + 16 UNCOMMON + 5 RARE + 2 EPIC + 1 LEGENDARY
@@ -288,5 +296,7 @@ object WordDataHebrewBatch84 {
             original = "בִּיוֹסְפֵירָה", translation = "биосфера", transliteration = "биосфера"),
         WordEntity(id = 151825, setId = 1518, languagePair = "he-ru", rarity = "RARE",
             original = "פִיטוֹתֶרָפְּיָה", translation = "фитотерапия (лечение травами)", transliteration = "фитотерапия"),
+        WordEntity(id = 151826, setId = 1518, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "בּוֹטָנִיקָה", translation = "ботаника", transliteration = "ботаника")
     )
 }

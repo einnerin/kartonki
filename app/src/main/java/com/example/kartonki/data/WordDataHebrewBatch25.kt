@@ -33,7 +33,7 @@ object WordDataHebrewBatch25 {
 
         // ── Set 1097: Математика ───────────────────────────────────────────
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 109701, setId = 1097, languagePair = "he-ru", original = "קְבוּצָה", translation = "множество (матем.)", transliteration = "kvutza", rarity = "UNCOMMON"),
         WordEntity(id = 109702, setId = 1097, languagePair = "he-ru", original = "רְצֵף", translation = "последовательность (матем.)", transliteration = "retzef", rarity = "UNCOMMON"),
         WordEntity(id = 109703, setId = 1097, languagePair = "he-ru", original = "קִירוּב", translation = "приближение; аппроксимация", transliteration = "kirúv", rarity = "UNCOMMON"),
@@ -41,41 +41,41 @@ object WordDataHebrewBatch25 {
         WordEntity(id = 109705, setId = 1097, languagePair = "he-ru", original = "מֵדִיאָנָה", translation = "медиана", transliteration = "medyana", rarity = "UNCOMMON"),
         WordEntity(id = 109706, setId = 1097, languagePair = "he-ru", original = "פוּנְקְצִיָה", translation = "функция (матем.)", transliteration = "funtziya", rarity = "UNCOMMON"),
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 109707, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֶשְׁבּוֹן דִּיפֶרֶנְצְיַלִי", translation = "дифференциальное исчисление"),
+            original = "חֶשְׁבּוֹן דִּיפֶרֶנְצְיַלִי", translation = "дифференциальное исчисление", transliteration = "хэшбон дифэрэнцйали"),
         WordEntity(id = 109708, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִינְטֶגְרַל", translation = "интеграл"),
+            original = "אִינְטֶגְרַל", translation = "интеграл", transliteration = "интэграл"),
         WordEntity(id = 109709, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֶלְקִיק", translation = "элементарная частица"),
+            original = "חֶלְקִיק", translation = "элементарная частица", transliteration = "хэлкик"),
         WordEntity(id = 109710, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַטְרִיצָה", translation = "матрица"),
+            original = "מַטְרִיצָה", translation = "матрица", transliteration = "матрица"),
         WordEntity(id = 109711, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גְּרָף", translation = "граф"),
+            original = "גְּרָף", translation = "граф", transliteration = "граф"),
         WordEntity(id = 109712, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "וֶקְטוֹר", translation = "вектор"),
+            original = "וֶקְטוֹר", translation = "вектор", transliteration = "вэктор"),
         WordEntity(id = 109713, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַקְסִיוֹמָה", translation = "аксиома"),
+            original = "אַקְסִיוֹמָה", translation = "аксиома", transliteration = "аксиома"),
         WordEntity(id = 109714, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "לֶמָּה", translation = "лемма"),
+            original = "לֶמָּה", translation = "лемма", transliteration = "лэма"),
         WordEntity(id = 109715, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מֶטְרִיקָה", translation = "метрика (мера расстояния)"),
+            original = "מֶטְרִיקָה", translation = "метрика (мера расстояния)", transliteration = "мэтрика"),
         WordEntity(id = 109716, setId = 1097, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מוֹדוּל", translation = "модуль, абсолютная величина"),
+            original = "מוֹדוּל", translation = "модуль, абсолютная величина", transliteration = "модул"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109717, setId = 1097, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּרַקְטָל", translation = "фрактал"),
+            original = "פְּרַקְטָל", translation = "фрактал", transliteration = "практал"),
         WordEntity(id = 109718, setId = 1097, languagePair = "he-ru", rarity = "RARE",
-            original = "טוֹפּוֹלוֹגְיָה", translation = "топология"),
+            original = "טוֹפּוֹלוֹגְיָה", translation = "топология", transliteration = "топологйа"),
         WordEntity(id = 109719, setId = 1097, languagePair = "he-ru", rarity = "RARE",
-            original = "אַנָלִיזָה נוּמֶרִית", translation = "численный анализ"),
+            original = "אַנָלִיזָה נוּמֶרִית", translation = "численный анализ", transliteration = "анализа нумэрит"),
         WordEntity(id = 109720, setId = 1097, languagePair = "he-ru", rarity = "RARE",
-            original = "לוֹגִיקָה פוֹרְמַלִית", translation = "формальная логика"),
+            original = "לוֹגִיקָה פוֹרְמַלִית", translation = "формальная логика", transliteration = "логика формалит"),
         WordEntity(id = 109721, setId = 1097, languagePair = "he-ru", rarity = "RARE",
-            original = "תֵּיאוֹרְיַת הַקְּבוּצוֹת", translation = "теория множеств"),
+            original = "תֵּיאוֹרְיַת הַקְּבוּצוֹת", translation = "теория множеств", transliteration = "тэиорйат hаквуцот"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109722, setId = 1097, languagePair = "he-ru", original = "גְּזִירָה", translation = "производная (матем.)", transliteration = "gzira", rarity = "RARE"),
         WordEntity(id = 109723, setId = 1097, languagePair = "he-ru", original = "מְשׁוּוָּאָה דִּיפֶרֶנְצִיאָלִית", translation = "дифференциальное уравнение", transliteration = "meshuva'a differenzi'alit", rarity = "RARE"),
         WordEntity(id = 109724, setId = 1097, languagePair = "he-ru", original = "טְרַנְסְפוֹרְמַצְיָה לִינֵאָרִית", translation = "линейное преобразование", transliteration = "transformatziya lineárit", rarity = "RARE"),
@@ -83,7 +83,7 @@ object WordDataHebrewBatch25 {
 
         // ── Set 1098: Физика и химия ───────────────────────────────────────
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 109801, setId = 1098, languagePair = "he-ru", original = "מַגְנֶטִיּוּת", translation = "магнетизм", transliteration = "magnetiyut", rarity = "UNCOMMON"),
         WordEntity(id = 109802, setId = 1098, languagePair = "he-ru", original = "חוֹם", translation = "тепло; тепловая энергия", transliteration = "khom", rarity = "UNCOMMON"),
         WordEntity(id = 109803, setId = 1098, languagePair = "he-ru", original = "תְּאוּצָה", translation = "ускорение", transliteration = "te'utza", rarity = "UNCOMMON"),
@@ -91,41 +91,41 @@ object WordDataHebrewBatch25 {
         WordEntity(id = 109805, setId = 1098, languagePair = "he-ru", original = "חֶשְׁמַל", translation = "электричество", transliteration = "kheshmal", rarity = "UNCOMMON"),
         WordEntity(id = 109806, setId = 1098, languagePair = "he-ru", original = "הַתַּנְגָּדוּת", translation = "сопротивление (электрическое)", transliteration = "hatangadut", rarity = "UNCOMMON"),
 
-        // UNCOMMON (A2-B1)
+        // UNCOMMON (A2-B1),
         WordEntity(id = 109807, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "נֵיטְרוֹן", translation = "нейтрон"),
+            original = "נֵיטְרוֹן", translation = "нейтрон", transliteration = "нэитрон"),
         WordEntity(id = 109808, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פְּרוֹטוֹן", translation = "протон"),
+            original = "פְּרוֹטוֹן", translation = "протон", transliteration = "протон"),
         WordEntity(id = 109809, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֶלֶמֶנְט", translation = "химический элемент"),
+            original = "אֶלֶמֶנְט", translation = "химический элемент", transliteration = "элэмэнт"),
         WordEntity(id = 109810, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תַּרְכּוֹבֶת", translation = "химическое соединение"),
+            original = "תַּרְכּוֹבֶת", translation = "химическое соединение", transliteration = "тарковэт"),
         WordEntity(id = 109811, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֻמְצָה", translation = "кислота"),
+            original = "חֻמְצָה", translation = "кислота", transliteration = "хумца"),
         WordEntity(id = 109812, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אוֹקְסִידַצְיָה", translation = "окисление"),
+            original = "אוֹקְסִידַצְיָה", translation = "окисление", transliteration = "оксидацйа"),
         WordEntity(id = 109813, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שְׂדֵה חַשְׁמַלִּי", translation = "электрическое поле"),
+            original = "שְׂדֵה חַשְׁמַלִּי", translation = "электрическое поле", transliteration = "сдэ хашмали"),
         WordEntity(id = 109814, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תְּנוּפָה", translation = "импульс (физика)"),
+            original = "תְּנוּפָה", translation = "импульс (физика)", transliteration = "тнуфа"),
         WordEntity(id = 109815, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גַּלֵּי אֶלֶקְטְרוֹמַגְנֶטִי", translation = "электромагнитные волны"),
+            original = "גַּלֵּי אֶלֶקְטְרוֹמַגְנֶטִי", translation = "электромагнитные волны", transliteration = "галэи элэктромагнэти"),
         WordEntity(id = 109816, setId = 1098, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קְוַנְטוּם", translation = "квант"),
+            original = "קְוַנְטוּם", translation = "квант", transliteration = "квантум"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109817, setId = 1098, languagePair = "he-ru", rarity = "RARE",
-            original = "יָחֲסוּת", translation = "теория относительности (Эйнштейн)"),
+            original = "יָחֲסוּת", translation = "теория относительности (Эйнштейн)", transliteration = "йахасут"),
         WordEntity(id = 109818, setId = 1098, languagePair = "he-ru", rarity = "RARE",
-            original = "אֶנְטְרוֹפִּיָּה", translation = "энтропия"),
+            original = "אֶנְטְרוֹפִּיָּה", translation = "энтропия", transliteration = "энтропийа"),
         WordEntity(id = 109819, setId = 1098, languagePair = "he-ru", rarity = "RARE",
-            original = "קוֹנְדֶּנְסָטוֹר", translation = "конденсатор"),
+            original = "קוֹנְדֶּנְסָטוֹר", translation = "конденсатор", transliteration = "кондэнсатор"),
         WordEntity(id = 109820, setId = 1098, languagePair = "he-ru", rarity = "RARE",
-            original = "קְוַרְק", translation = "кварк"),
+            original = "קְוַרְק", translation = "кварк", transliteration = "кварк"),
         WordEntity(id = 109821, setId = 1098, languagePair = "he-ru", rarity = "RARE",
-            original = "מֵכָנִיקָה קְלַסִּית", translation = "классическая механика (Ньютон)"),
+            original = "מֵכָנִיקָה קְלַסִּית", translation = "классическая механика (Ньютон)", transliteration = "мэханика класит"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109822, setId = 1098, languagePair = "he-ru", original = "מַעְגַּל חַשְׁמַלִּי", translation = "электрическая цепь", transliteration = "ma'agal khishmali", rarity = "RARE"),
         WordEntity(id = 109823, setId = 1098, languagePair = "he-ru", original = "אֶנֶרְגְיַת קִינֶטִית", translation = "кинетическая энергия", transliteration = "energyat kinetit", rarity = "RARE"),
         WordEntity(id = 109824, setId = 1098, languagePair = "he-ru", original = "הַמְרַת אֶנֶרְגְיָה", translation = "преобразование энергии", transliteration = "hamrat energya", rarity = "RARE"),
@@ -133,7 +133,7 @@ object WordDataHebrewBatch25 {
 
         // ── Set 1099: ИТ-безопасность ──────────────────────────────────────
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109901, setId = 1099, languagePair = "he-ru", original = "הַצְפָּנָה סִימֶטְרִית", translation = "симметричное шифрование", transliteration = "hatzpana simetrit", rarity = "EPIC"),
         WordEntity(id = 109902, setId = 1099, languagePair = "he-ru", original = "אוֹתֶנְטִיקַצְיָה", translation = "аутентификация", transliteration = "otentikatziya", rarity = "EPIC"),
         WordEntity(id = 109903, setId = 1099, languagePair = "he-ru", original = "אִישּׁוּר דִּיגִיטַלִי", translation = "цифровой сертификат", transliteration = "ishur digitali", rarity = "EPIC"),
@@ -143,7 +143,7 @@ object WordDataHebrewBatch25 {
         WordEntity(id = 109907, setId = 1099, languagePair = "he-ru", original = "כְּלֵי פְּרִיצָה", translation = "инструменты взлома", transliteration = "kle pritza", rarity = "EPIC"),
         WordEntity(id = 109908, setId = 1099, languagePair = "he-ru", original = "נְקוּדַת כְּנִיסָה", translation = "точка входа (в систему)", transliteration = "nkudat knisa", rarity = "RARE"),
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 109909, setId = 1099, languagePair = "he-ru", original = "הַשְׁתָּלָה מֵרָחוֹק", translation = "удалённое внедрение кода", transliteration = "hashtala merakhoq", rarity = "EPIC"),
         WordEntity(id = 109910, setId = 1099, languagePair = "he-ru", original = "תְּשְׁתִּית מַפְתֵּחַ צִיבּוּרִי", translation = "инфраструктура открытых ключей (PKI)", transliteration = "tshtit maftea tzibburi", rarity = "EPIC"),
         WordEntity(id = 109911, setId = 1099, languagePair = "he-ru", original = "תְּקִיפַת שַׁרְשֶׁרֶת אַסְפָּקָה", translation = "атака на цепочку поставок", transliteration = "tkifat sharsheret aspaka", rarity = "EPIC"),
@@ -153,27 +153,27 @@ object WordDataHebrewBatch25 {
         WordEntity(id = 109915, setId = 1099, languagePair = "he-ru", original = "הַנְדָּסָה חֶבְרָתִית מְתוּחְכֶּמֶת", translation = "продвинутая социальная инженерия", transliteration = "handasa khevratit metukhemet", rarity = "EPIC"),
         WordEntity(id = 109916, setId = 1099, languagePair = "he-ru", original = "שִׁיטוֹת הַחְבָּאָה", translation = "методы обфускации", transliteration = "shitot hakhba'a", rarity = "EPIC"),
 
-        // RARE (B2)
+        // RARE (B2),
         WordEntity(id = 109917, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
-            original = "מִסְגֶּרֶת אַבְטָחָה", translation = "фреймворк безопасности (security framework)"),
+            original = "מִסְגֶּרֶת אַבְטָחָה", translation = "фреймворк безопасности (security framework)", transliteration = "мисгэрэт автаха"),
         WordEntity(id = 109918, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
-            original = "סַיְיבֶּר-בִּטָּחוֹן", translation = "кибербезопасность"),
+            original = "סַיְיבֶּר-בִּטָּחוֹן", translation = "кибербезопасность", transliteration = "сайибэр-битахон"),
         WordEntity(id = 109919, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
-            original = "תְּקִיפָה מְכֻוֶּנֶת", translation = "целенаправленная атака (APT)"),
+            original = "תְּקִיפָה מְכֻוֶּנֶת", translation = "целенаправленная атака (APT)", transliteration = "ткифа мхуунэт"),
         WordEntity(id = 109920, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
-            original = "נִיהוּל זְהוּיוֹת", translation = "управление идентификацией (IAM)"),
+            original = "נִיהוּל זְהוּיוֹת", translation = "управление идентификацией (IAM)", transliteration = "ниhул зhуиот"),
         WordEntity(id = 109921, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
-            original = "פְּגִיעוּת", translation = "уязвимость (в системе безопасности)"),
+            original = "פְּגִיעוּת", translation = "уязвимость (в системе безопасности)", transliteration = "пгиут"),
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 109922, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
-            original = "נִיצּוּל יוֹם-אֶפֶס", translation = "эксплойт нулевого дня (zero-day)"),
+            original = "נִיצּוּל יוֹם-אֶפֶס", translation = "эксплойт нулевого дня (zero-day)", transliteration = "ницул йом-эфэс"),
         WordEntity(id = 109923, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
-            original = "הַגְנָה בִּשְׂכָבוֹת", translation = "эшелонированная защита (defense in depth)"),
+            original = "הַגְנָה בִּשְׂכָבוֹת", translation = "эшелонированная защита (defense in depth)", transliteration = "hагна бисхавот"),
         WordEntity(id = 109924, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
-            original = "מוֹדֶל אֶפֶס-אֱמוּן", translation = "модель нулевого доверия (zero trust)"),
+            original = "מוֹדֶל אֶפֶס-אֱמוּן", translation = "модель нулевого доверия (zero trust)", transliteration = "модэл эфэс-эмун"),
 
-        // EPIC (C1)
+        // EPIC (C1),
         WordEntity(id = 109925, setId = 1099, languagePair = "he-ru", original = "אָנָלִיזָה פּוֹרֶנְזִית", translation = "цифровая форензика", transliteration = "analiza forensit", rarity = "EPIC"),
     )
 }
