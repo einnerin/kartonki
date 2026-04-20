@@ -7,8 +7,8 @@ import androidx.room.PrimaryKey
 /**
  * A single vocabulary word in the database.
  *
- * Uniqueness is enforced at the DB level: no two rows may share the same
- * (original, languagePair) pair, preventing silent duplicates across seed files.
+ * The same word may appear in multiple sets (different topics). The index on
+ * (original, languagePair) is non-unique — it exists for query performance only.
  *
  * [isDefaultPvpCard] — true for the fixed ~500-card starter collection that every
  * user receives regardless of their study progress. Marked in seed data; used by
@@ -16,7 +16,7 @@ import androidx.room.PrimaryKey
  */
 @Entity(
     tableName = "words",
-    indices = [Index(value = ["original", "languagePair"], unique = true)],
+    indices = [Index(value = ["original", "languagePair"])],
 )
 data class WordEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,

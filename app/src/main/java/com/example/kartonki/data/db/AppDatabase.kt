@@ -39,7 +39,7 @@ import com.example.kartonki.data.db.entity.WordSetMembershipEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 37,
+    version = 38,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -347,6 +347,14 @@ abstract class AppDatabase : RoomDatabase() {
          * Creates the word_set_membership join table and populates it
          * from the existing setId column on words.
          */
+        /** Removes the UNIQUE constraint on (original, languagePair) so the same word can appear in multiple sets. */
+        val MIGRATION_37_38 = object : Migration(37, 38) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("DROP INDEX IF EXISTS `index_words_original_languagePair`")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_words_original_languagePair` ON `words`(`original`, `languagePair`)")
+            }
+        }
+
         val MIGRATION_36_37 = object : Migration(36, 37) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE word_sets ADD COLUMN topic TEXT NOT NULL DEFAULT ''")
