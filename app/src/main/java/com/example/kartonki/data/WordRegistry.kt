@@ -29,6 +29,7 @@ object WordRegistry {
                 WordDataEnglishBatch10.sets +
                 WordDataEnglishBatch11.sets +
                 WordDataEnglishBatch12.sets +
+                WordDataEnglishBatch13.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewTech.sets +
@@ -152,6 +153,7 @@ object WordRegistry {
                 WordDataEnglishBatch10.words +
                 WordDataEnglishBatch11.words +
                 WordDataEnglishBatch12.words +
+                WordDataEnglishBatch13.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words +
