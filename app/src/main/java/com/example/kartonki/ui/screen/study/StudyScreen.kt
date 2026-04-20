@@ -98,6 +98,7 @@ fun StudyScreen(
         if (searchQuery.isEmpty()) uiState.filteredSets
         else uiState.filteredSets
             .filter {
+                it.topic.contains(searchQuery, ignoreCase = true) ||
                 it.name.contains(searchQuery, ignoreCase = true) ||
                 it.description.contains(searchQuery, ignoreCase = true)
             }
