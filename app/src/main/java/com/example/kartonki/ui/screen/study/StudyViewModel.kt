@@ -66,7 +66,10 @@ data class StudyListUiState(
             .map { (topic, items) ->
                 TopicGroup(
                     topic = topic,
-                    sets = items.sortedWith(compareBy({ it.level }, { it.id })),
+                    sets = items.sortedWith(compareBy(
+                    { it.level },
+                    { it.name.substringAfterLast(' ').toIntOrNull() ?: 1 },
+                )),
                     isExpanded = topic in expandedTopics,
                 )
             }
