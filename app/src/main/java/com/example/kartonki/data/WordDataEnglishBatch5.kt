@@ -17,7 +17,7 @@ object WordDataEnglishBatch5 {
 
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(id = 256, name = "Повседневная жизнь: продвинутый 2", description = "Повседневные действия и режим дня", orderIndex = 139, languagePair = "en-ru", topic = "Повседневная жизнь", level = 2),
-        WordSetEntity(id = 257, name = "Технологии: углублённый 4", description = "Социальные сети и создание контента", orderIndex = 140, languagePair = "en-ru", topic = "Технологии", level = 3),
+        WordSetEntity(id = 257, name = "Технологии: продвинутый 5", description = "Социальные сети и создание контента", orderIndex = 140, languagePair = "en-ru", topic = "Технологии", level = 2),
         WordSetEntity(id = 258, name = "Философия: профессиональный 4", description = "Философские понятия и этика", orderIndex = 141, languagePair = "en-ru", topic = "Философия", level = 4),
     )
 
@@ -201,28 +201,28 @@ object WordDataEnglishBatch5 {
             definitionNative = "Поделиться или переслать чужую публикацию в социальных сетях на свою страницу.",
             example = "She reposted the charity announcement to spread the word.",
             exampleNative = "Сделай repost — пусть как можно больше людей узнает об этом.",
-            rarity = "COMMON", setId = 257, languagePair = "en-ru", pos = "verb", semanticGroup = "social_media_basics"),
+            rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "verb", semanticGroup = "social_media_basics"),
 
         WordEntity(id = 25702, original = "upvote", transliteration = "[ˈʌpvoʊt]", translation = "голос «за»; проголосовать за",
             definition = "A positive vote or click used to approve or promote content on platforms like Reddit.",
             definitionNative = "Положительный голос или клик для одобрения или продвижения контента на платформах типа Reddit.",
             example = "The post got ten thousand upvotes in the first hour.",
             exampleNative = "Дай upvote, если считаешь комментарий полезным.",
-            rarity = "COMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media_basics"),
+            rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media_basics"),
 
         WordEntity(id = 25703, original = "tag", transliteration = "[tæɡ]", translation = "отметить; тег",
             definition = "To link another person's profile in a post or photo on social media.",
             definitionNative = "Указать профиль другого человека в публикации или фото в социальных сетях.",
             example = "She tagged her friend in the photo.",
             exampleNative = "Tag меня в этом посте — хочу сохранить его.",
-            rarity = "COMMON", setId = 257, languagePair = "en-ru", pos = "verb", semanticGroup = "social_media_basics"),
+            rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "verb", semanticGroup = "social_media_basics"),
 
         WordEntity(id = 25704, original = "thread", transliteration = "[θred]", translation = "тред; цепочка сообщений",
             definition = "A series of connected posts or messages on social media forming a conversation.",
             definitionNative = "Серия связанных публикаций или сообщений в социальных сетях, образующих беседу.",
             example = "He wrote a long thread explaining his thoughts on the issue.",
             exampleNative = "Прочитай этот thread — там целое расследование.",
-            rarity = "COMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media_content"),
+            rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media_content"),
 
         WordEntity(id = 25705, original = "bio", transliteration = "[ˈbaɪoʊ]", translation = "биография (в профиле)",
             definition = "A short description of yourself in your social media profile.",
@@ -243,7 +243,7 @@ object WordDataEnglishBatch5 {
             definitionNative = "Короткий видеоролик, публикуемый в социальных сетях.",
             example = "I posted a reel of my travel highlights and it got thousands of likes.",
             exampleNative = "Сделал reel из нарезки путешествия — набрал пять тысяч лайков.",
-            rarity = "COMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media_content"),
+            rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media_content"),
 
         WordEntity(id = 25708, original = "analytics", transliteration = "[ˌænəˈlɪtɪks]", translation = "аналитика (статистика аккаунта)",
             definition = "Data about how your content performs, including views, reach, and engagement.",
@@ -371,7 +371,7 @@ object WordDataEnglishBatch5 {
             definitionNative = "Раздел философии, изучающий моральные принципы и правильное поведение.",
             example = "Business ethics require honesty and fairness to all stakeholders.",
             exampleNative = "Ethics — это наука о том, что правильно и что неправильно.",
-            rarity = "COMMON", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_basics"),
+            rarity = "RARE", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_basics"),
 
         WordEntity(id = 25802, original = "virtue", transliteration = "[ˈvɜːrtʃuː]", translation = "добродетель",
             definition = "A quality considered morally good or desirable in a person.",
@@ -448,7 +448,7 @@ object WordDataEnglishBatch5 {
             definitionNative = "Теория и методология интерпретации, особенно текстов и символов.",
             example = "Hermeneutics examines how readers derive meaning from written works.",
             exampleNative = "Hermeneutics — наука о том, как мы понимаем смысл текстов.",
-            rarity = "LEGENDARY", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_basics"),
+            rarity = "EPIC", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_basics"),
 
         WordEntity(id = 25813, original = "deconstruction", transliteration = "[ˌdiːkənˈstrʌkʃən]", translation = "деконструкция",
             definition = "A philosophical method developed by Derrida that challenges fixed meanings in texts.",
@@ -490,7 +490,7 @@ object WordDataEnglishBatch5 {
             definitionNative = "Философское изучение структур сознательного опыта от первого лица.",
             example = "Husserl founded phenomenology to study consciousness directly.",
             exampleNative = "Phenomenology Хайдеггера исследует опыт бытия-в-мире.",
-            rarity = "LEGENDARY", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_basics"),
+            rarity = "EPIC", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_basics"),
 
         WordEntity(id = 25819, original = "aporia", transliteration = "[əˈpɔːriə]", translation = "апория (неразрешимое затруднение)",
             definition = "A philosophical puzzle or impasse arising from seemingly valid but contradictory arguments.",
@@ -518,21 +518,21 @@ object WordDataEnglishBatch5 {
             definitionNative = "Форма логического умозаключения, в которой вывод следует из двух данных посылок.",
             example = "All men are mortal. Socrates is a man. Therefore Socrates is mortal — a classic syllogism.",
             exampleNative = "Syllogism — основа формальной логики Аристотеля.",
-            rarity = "LEGENDARY", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_logic"),
+            rarity = "EPIC", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_logic"),
 
         WordEntity(id = 25823, original = "teleology", transliteration = "[ˌteliˈɒlədʒi]", translation = "телеология",
             definition = "The doctrine that events and entities are directed towards a final purpose or goal.",
             definitionNative = "Учение о том, что события и сущности направлены к конечной цели.",
             example = "Teleology asks: what is the ultimate purpose of human existence?",
             exampleNative = "Teleology: всё в природе имеет цель — «финальную причину».",
-            rarity = "LEGENDARY", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_metaphysics"),
+            rarity = "EPIC", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_metaphysics"),
 
         WordEntity(id = 25824, original = "categorical imperative", transliteration = "[ˌkætɪˈɡɒrɪkəl ɪmˈperətɪv]", translation = "категорический императив",
             definition = "Kant's supreme moral principle: act only according to rules you could will to be universal laws.",
             definitionNative = "Высший моральный принцип Канта: поступай только так, как ты хотел бы, чтобы поступали все.",
             example = "The categorical imperative tells us to treat people as ends, not means.",
             exampleNative = "Categorical imperative Канта — основа его этики долга.",
-            rarity = "LEGENDARY", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_ethics"),
+            rarity = "EPIC", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_ethics"),
 
         WordEntity(id = 25825, original = "tabula rasa", transliteration = "[ˌtæbjʊlə ˈrɑːzə]", translation = "tabula rasa (чистый лист)",
             definition = "The idea that the mind begins as a blank slate, shaped entirely by experience.",

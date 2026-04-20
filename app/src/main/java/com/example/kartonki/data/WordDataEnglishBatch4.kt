@@ -18,7 +18,7 @@ object WordDataEnglishBatch4 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(id = 253, name = "Спорт: продвинутый 2", description = "Спорт, упражнения и здоровый образ жизни", orderIndex = 136, languagePair = "en-ru", topic = "Спорт", level = 2),
         WordSetEntity(id = 254, name = "Медицина: продвинутый 2", description = "Экстренная медицина и первая помощь", orderIndex = 137, languagePair = "en-ru", topic = "Медицина", level = 2),
-        WordSetEntity(id = 255, name = "Работа и карьера: углублённый 2", description = "Лексика для поиска работы и интервью", orderIndex = 138, languagePair = "en-ru", topic = "Работа и карьера", level = 3),
+        WordSetEntity(id = 255, name = "Работа и карьера: продвинутый 3", description = "Лексика для поиска работы и интервью", orderIndex = 138, languagePair = "en-ru", topic = "Работа и карьера", level = 2),
     )
 
     val words: List<WordEntity> = listOf(
@@ -361,7 +361,7 @@ object WordDataEnglishBatch4 {
             definitionNative = "Комментарии или информация о том, насколько хорошо кто-то работает, используемые для улучшения результатов.",
             example = "Ask your manager for feedback after your first month in the role.",
             exampleNative = "После собеседования попроси feedback — это помогает расти.",
-            rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_process"),
+            rarity = "UNCOMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_process"),
 
         WordEntity(id = 25502, original = "CV", transliteration = "[ˌsiː ˈviː]", translation = "резюме",
             definition = "A written summary of your education, work experience, and skills (curriculum vitae).",
@@ -403,7 +403,7 @@ object WordDataEnglishBatch4 {
             definitionNative = "Фиксированная оплата за труд, обычно рассчитываемая по часам или дням.",
             example = "The minimum wage was raised to protect low-income workers.",
             exampleNative = "Он получает hourly wage, а не оклад — каждый час на счету.",
-            rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_basics"),
+            rarity = "UNCOMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_basics"),
 
         WordEntity(id = 25508, original = "qualification", transliteration = "[ˌkwɒlɪfɪˈkeɪʃən]", translation = "квалификация, диплом",
             definition = "An official certificate or degree that shows you have certain skills or knowledge.",
@@ -445,7 +445,7 @@ object WordDataEnglishBatch4 {
             definitionNative = "Положительные и отрицательные личные качества, которые обсуждают на собеседованиях.",
             example = "Be ready to talk about your strengths and weaknesses honestly.",
             exampleNative = "На interview часто просят назвать strengths and weaknesses.",
-            rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_interview"),
+            rarity = "UNCOMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_interview"),
 
         WordEntity(id = 25514, original = "adaptability", transliteration = "[əˌdæptəˈbɪlɪti]", translation = "адаптивность, способность к изменениям",
             definition = "The ability to adjust to new conditions and changing situations at work.",
@@ -459,14 +459,14 @@ object WordDataEnglishBatch4 {
             definitionNative = "Способность эффективно и совместно работать в группе.",
             example = "Good teamwork is essential in any large organisation.",
             exampleNative = "Расскажи на interview о примере успешного teamwork.",
-            rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_qualities"),
+            rarity = "UNCOMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_qualities"),
 
         WordEntity(id = 25516, original = "workload", transliteration = "[ˈwɜːrkloʊd]", translation = "объём работы; нагрузка",
             definition = "The amount of work a person is expected to do in a period of time.",
             definitionNative = "Количество работы, которое человек должен выполнить за определённый период.",
             example = "My workload doubled after two colleagues left the company.",
             exampleNative = "Тяжёлый workload — главная причина выгорания на работе.",
-            rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_basics"),
+            rarity = "UNCOMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_basics"),
 
         WordEntity(id = 25517, original = "networking", transliteration = "[ˈnetwɜːrkɪŋ]", translation = "нетворкинг / установление профессиональных связей",
             definition = "The activity of meeting people who might be useful to you in your work.",

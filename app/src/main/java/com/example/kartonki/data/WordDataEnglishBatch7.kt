@@ -11,7 +11,7 @@ object WordDataEnglishBatch7 {
             name = "Еда и кулинария: основы 3", description = "Фрукты и ягоды — от простых до экзотических", topic = "Еда и кулинария", level = 1),
         WordSetEntity(
             id = 263, languagePair = "en-ru", orderIndex = 263,
-            name = "Еда и кулинария: основы 4", description = "Овощи и зелень — от базовых до редких", topic = "Еда и кулинария", level = 1),
+            name = "Еда и кулинария: продвинутый 3", description = "Овощи и зелень — от базовых до редких", topic = "Еда и кулинария", level = 2),
         WordSetEntity(
             id = 264, languagePair = "en-ru", orderIndex = 264,
             name = "Повседневная жизнь: основы 3", description = "Дни недели, время суток и слова о времени", topic = "Повседневная жизнь", level = 1),
@@ -118,9 +118,9 @@ object WordDataEnglishBatch7 {
             original = "turnip", translation = "репа"),
         WordEntity(id = 26323, setId = 263, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "cauliflower", translation = "цветная капуста"),
-        WordEntity(id = 26324, setId = 263, languagePair = "en-ru", rarity = "RARE",
+        WordEntity(id = 26324, setId = 263, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "kohlrabi", translation = "кольраби"),
-        WordEntity(id = 26325, setId = 263, languagePair = "en-ru", rarity = "RARE",
+        WordEntity(id = 26325, setId = 263, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "bok choy", translation = "пак-чой (китайская капуста)"),
 
         // ── Set 264: Дни и время ──────────────────────────────────────────
@@ -170,7 +170,7 @@ object WordDataEnglishBatch7 {
             original = "dawn", translation = "рассвет"),
         WordEntity(id = 26423, setId = 264, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "dusk", translation = "сумерки"),
-        WordEntity(id = 26424, setId = 264, languagePair = "en-ru", rarity = "RARE",
+        WordEntity(id = 26424, setId = 264, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "fortnight", translation = "две недели"),
         WordEntity(id = 26425, setId = 264, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "decade", translation = "десятилетие"),

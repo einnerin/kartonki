@@ -14,7 +14,7 @@ object WordDataEnglishBatch10 {
             name = "Природа и экология: основы 4", description = "Домашние питомцы и сельскохозяйственные животные", topic = "Природа и экология", level = 1),
         WordSetEntity(
             id = 273, languagePair = "en-ru", orderIndex = 273,
-            name = "Еда и кулинария: основы 5", description = "Блюда для завтрака, сладкое и перекусы", topic = "Еда и кулинария", level = 1),
+            name = "Еда и кулинария: основы 4", description = "Блюда для завтрака, сладкое и перекусы", topic = "Еда и кулинария", level = 1),
     )
 
     val words: List<WordEntity> = listOf(

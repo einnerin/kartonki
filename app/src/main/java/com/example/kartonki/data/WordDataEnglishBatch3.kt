@@ -16,7 +16,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataEnglishBatch3 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 250, name = "Еда и кулинария: продвинутый 3", description = "Еда вне дома — базовая лексика", orderIndex = 133, languagePair = "en-ru", topic = "Еда и кулинария", level = 2),
+        WordSetEntity(id = 250, name = "Еда и кулинария: продвинутый 2", description = "Еда вне дома — базовая лексика", orderIndex = 133, languagePair = "en-ru", topic = "Еда и кулинария", level = 2),
         WordSetEntity(id = 251, name = "Финансы: продвинутый 3", description = "Банковская лексика и деньги", orderIndex = 134, languagePair = "en-ru", topic = "Финансы", level = 2),
         WordSetEntity(id = 252, name = "Транспорт: продвинутый 2", description = "Лексика аэропорта и перелётов", orderIndex = 135, languagePair = "en-ru", topic = "Транспорт", level = 2),
     )
@@ -227,7 +227,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Лицо, берущее на себя юридическую ответственность за долг или обязательство другого человека.",
             example = "My father agreed to act as surety for my student loan.",
             exampleNative = "Банк потребовал surety прежде чем одобрить крупный кредит.",
-            rarity = "RARE", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_credit"),
+            rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_credit"),
 
                 WordEntity(id = 25106, original = "cheque", transliteration = "[tʃek]", translation = "чек (банковский)", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "a written order to a bank to pay a specific amount from someone's account",
@@ -253,7 +253,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Книга или файл для записи всех финансовых операций организации.",
             example = "The accountant updated the ledger after every transaction.",
             exampleNative = "Все расходы записаны в ledger — можно проверить каждую операцию.",
-            rarity = "RARE", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_basics"),
+            rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_basics"),
 
                 WordEntity(id = 25110, original = "allowance", transliteration = "[əˈlaʊəns]", translation = "надбавка; пособие", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "a sum of money given regularly for a specific purpose",

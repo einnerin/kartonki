@@ -17,7 +17,7 @@ object WordDataEnglishBatch6 {
 
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(id = 259, name = "Культура и искусство: продвинутый 6", description = "Фотосъёмка и обработка изображений", orderIndex = 142, languagePair = "en-ru", topic = "Культура и искусство", level = 2),
-        WordSetEntity(id = 260, name = "Работа и карьера: углублённый 3", description = "Email и документооборот", orderIndex = 143, languagePair = "en-ru", topic = "Работа и карьера", level = 3),
+        WordSetEntity(id = 260, name = "Работа и карьера: продвинутый 4", description = "Email и документооборот", orderIndex = 143, languagePair = "en-ru", topic = "Работа и карьера", level = 2),
         WordSetEntity(id = 261, name = "Путешествия: основы 2", description = "Активный отдых на природе", orderIndex = 144, languagePair = "en-ru", topic = "Путешествия", level = 1),
     )
 
@@ -196,7 +196,7 @@ object WordDataEnglishBatch6 {
             definitionNative = "Краткое название письма, отражающее его суть.",
             example = "A clear subject line increases the chance your email gets opened.",
             exampleNative = "Напиши конкретную subject line — не просто «Вопрос».",
-            rarity = "COMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "email_basics"),
+            rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "email_basics"),
 
         WordEntity(id = 26002, original = "cc", transliteration = "[ˌsiː ˈsiː]", translation = "копия (получатель письма)",
             definition = "Carbon copy — adding a recipient who receives a copy but is not the main addressee.",
@@ -210,28 +210,28 @@ object WordDataEnglishBatch6 {
             definitionNative = "Скрытая копия — получатель, которому письмо приходит так, что другие этого не видят.",
             example = "I bcc'd myself to keep a copy in a separate folder.",
             exampleNative = "Поставь клиента в bcc, чтобы он видел переписку незаметно.",
-            rarity = "COMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "email_basics"),
+            rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "email_basics"),
 
         WordEntity(id = 26004, original = "follow-up", transliteration = "[ˈfɒloʊ ʌp]", translation = "напоминание; повторный контакт",
             definition = "A message sent after an initial contact to check progress or prompt a reply.",
             definitionNative = "Сообщение, отправляемое после первоначального контакта для уточнения статуса.",
             example = "I'll send a follow-up if I don't hear back within three days.",
             exampleNative = "Отправь follow-up — неделю молчат.",
-            rarity = "COMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "email_basics"),
+            rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "email_basics"),
 
         WordEntity(id = 26005, original = "memo", transliteration = "[ˈmemoʊ]", translation = "служебная записка",
             definition = "A short official note sent within an organisation to inform or remind staff.",
             definitionNative = "Краткое официальное сообщение внутри организации для информирования сотрудников.",
             example = "The CEO sent a memo about the new office policy.",
             exampleNative = "Пришёл memo от HR — читай внимательно.",
-            rarity = "COMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_documents"),
+            rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_documents"),
 
         WordEntity(id = 26006, original = "draft", transliteration = "[drɑːft]", translation = "черновик",
             definition = "An early version of a document or email not yet finalised.",
             definitionNative = "Предварительная версия документа или письма, ещё не завершённая.",
             example = "Share the draft with the team before sending the final version.",
             exampleNative = "Покажи мне draft перед отправкой клиенту.",
-            rarity = "COMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_documents"),
+            rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_documents"),
 
         WordEntity(id = 26007, original = "proposal", transliteration = "[prəˈpoʊzəl]", translation = "деловое предложение",
             definition = "A formal document suggesting a plan or project for consideration.",
@@ -252,7 +252,7 @@ object WordDataEnglishBatch6 {
             definitionNative = "Элемент списка, отмеченный точкой или символом для лёгкого восприятия.",
             example = "Use bullet points to summarise the key decisions from the meeting.",
             exampleNative = "Оформи выводы как bullet point — длинный текст никто не читает.",
-            rarity = "COMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_writing"),
+            rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_writing"),
 
         WordEntity(id = 26010, original = "correspondence", transliteration = "[ˌkɒrɪˈspɒndəns]", translation = "переписка",
             definition = "The exchange of letters or emails, especially in a formal or business context.",
