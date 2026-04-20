@@ -35,7 +35,7 @@ object WordDataEnglishBatch4 {
         WordEntity(id = 25302, original = "burpee", transliteration = "[ˈbɜːrpiː]", translation = "бёрпи (упражнение)",
             definition = "A tough move: squat down, push up, then jump in one flow.",
             definitionNative = "Упражнение на всё тело: приседание, отжимание и прыжок в одном движении.",
-            example = "Do ten burpees as fast as you can to raise your heart rate.",
+            example = "Ten fast burpees and I'm already out of breath.",
             exampleNative = "Двадцать burpee подряд — отличная кардиотренировка.",
             rarity = "UNCOMMON", setId = 253, languagePair = "en-ru", pos = "noun", semanticGroup = "fitness_exercises"),
 
@@ -91,7 +91,7 @@ object WordDataEnglishBatch4 {
         WordEntity(id = 25310, original = "squat", transliteration = "[skwɒt]", translation = "приседание",
             definition = "A move: sit down low with bent knees, then stand back up.",
             definitionNative = "Упражнение, при котором тело опускается сгибанием колен при прямой спине.",
-            example = "Squats are one of the best exercises for your legs.",
+            example = "Deep squats really burn after the fifteenth rep.",
             exampleNative = "Сто squat в день — хорошая нагрузка на ноги.",
             rarity = "COMMON", setId = 253, languagePair = "en-ru", pos = "noun", semanticGroup = "fitness_exercises"),
 
@@ -139,13 +139,13 @@ object WordDataEnglishBatch4 {
 
                 WordEntity(id = 25317, original = "foam roller", transliteration = "[foʊm ˈroʊlər]", translation = "массажный ролик", rarity = "UNCOMMON", setId = 253, languagePair = "en-ru", pos = "noun", semanticGroup = "fitness_equipment",
             definition = "A soft tube you roll on to loosen tight spots in the body.",
-            example = "She used a foam roller on her legs to ease soreness after the long run.",
+            example = "I use a foam roller on my calves every evening.",
             definitionNative = "Цилиндрический пенный ролик для массажа и расслабления мышц после тренировки.",
             exampleNative = "Она разминала ноги foam roller, чтобы снять боль после долгой пробежки."),
 
                 WordEntity(id = 25318, original = "rest day", transliteration = "[rest deɪ]", translation = "день отдыха (в тренировочном плане)", rarity = "UNCOMMON", setId = 253, languagePair = "en-ru", pos = "noun", semanticGroup = "fitness",
             definition = "A planned day off from the gym so the body can heal.",
-            example = "Taking a rest day once a week helps muscles repair and grow stronger.",
+            example = "Sundays are my rest day — no gym, just coffee.",
             definitionNative = "День без тренировок, запланированный для восстановления организма.",
             exampleNative = "Один rest day в неделю помогает мышцам восстанавливаться и становиться сильнее."),
 
@@ -157,19 +157,19 @@ object WordDataEnglishBatch4 {
 
                 WordEntity(id = 25320, original = "recovery", transliteration = "[rɪˈkʌvəri]", translation = "восстановление (спорт)", rarity = "UNCOMMON", setId = 253, languagePair = "en-ru", pos = "noun", semanticGroup = "fitness",
             definition = "The quiet time after training when the body heals itself.",
-            example = "Adequate recovery between sessions is just as important as the workout itself.",
+            example = "Sleep is the best recovery tool after a hard workout.",
             definitionNative = "Период отдыха после тренировки, во время которого организм восстанавливается.",
             exampleNative = "Полноценное recovery между тренировками так же важно, как сама тренировка."),
 
                 WordEntity(id = 25321, original = "posture", transliteration = "[ˈpoʊsʧər]", translation = "осанка", rarity = "UNCOMMON", setId = 253, languagePair = "en-ru", pos = "noun", semanticGroup = "fitness",
             definition = "The way you hold your back and shoulders when sitting or standing.",
-            example = "Sitting at a desk all day can cause bad posture if you are not careful.",
+            example = "My mum always tells me to fix my posture at dinner.",
             definitionNative = "Положение тела при стоянии или сидении.",
             exampleNative = "Целый день за столом может привести к плохой posture, если не следить за собой."),
 
                 WordEntity(id = 25322, original = "circuit training", transliteration = "[ˈsɜrkɪt ˈtreɪnɪŋ]", translation = "круговая тренировка", rarity = "UNCOMMON", setId = 253, languagePair = "en-ru", pos = "noun", semanticGroup = "fitness",
             definition = "A session where you jump fast from one gym move to the next.",
-            example = "Circuit training is a great way to combine strength and cardio in one session.",
+            example = "Our coach runs a brutal circuit training every Friday.",
             definitionNative = "Вид тренировки, при которой быстро переходят от одного упражнения к другому.",
             exampleNative = "Circuit training — отличный способ совместить силовые и кардионагрузки за одну тренировку."),
 
@@ -210,7 +210,7 @@ object WordDataEnglishBatch4 {
         WordEntity(id = 25403, original = "plaster", transliteration = "[ˈplɑːstər]", translation = "пластырь; лейкопластырь",
             definition = "A small sticky strip you put over a tiny cut on the skin.",
             definitionNative = "Небольшая самоклеящаяся полоска для закрытия и защиты небольших порезов.",
-            example = "She put a plaster on the cut on her finger.",
+            example = "Mum stuck a plaster on my scraped knee.",
             exampleNative = "Налепи plaster на ссадину — так не попадёт грязь.",
             rarity = "COMMON", setId = 254, languagePair = "en-ru", pos = "noun", semanticGroup = "first_aid_supplies"),
 
@@ -257,7 +257,7 @@ object WordDataEnglishBatch4 {
 
                 WordEntity(id = 25410, original = "graze", transliteration = "[ɡreɪz]", translation = "ссадина; оцарапать(ся)", rarity = "UNCOMMON", setId = 254, languagePair = "en-ru", pos = "noun", semanticGroup = "first_aid",
             definition = "A shallow scratch from dragging skin over a rough surface.",
-            example = "He got a graze on his knee when he fell off his bike.",
+            example = "He got a nasty graze after falling off his bike.",
             definitionNative = "Незначительная рана, полученная при трении кожи о грубую поверхность.",
             exampleNative = "Он получил graze на колене, упав с велосипеда."),
 
@@ -276,13 +276,13 @@ object WordDataEnglishBatch4 {
 
                 WordEntity(id = 25413, original = "dizziness", transliteration = "[ˈdɪzɪnəs]", translation = "головокружение", rarity = "UNCOMMON", setId = 254, languagePair = "en-ru", pos = "noun", semanticGroup = "first_aid",
             definition = "A spinny, wobbly feeling as if you might faint.",
-            example = "She sat down when dizziness came over her after standing up too quickly.",
+            example = "A wave of dizziness hit me when I stood up.",
             definitionNative = "Ощущение неустойчивости или предобморочного состояния.",
             exampleNative = "Она присела, когда dizziness накрыло её после резкого подъёма."),
 
                 WordEntity(id = 25414, original = "sting", transliteration = "[stɪŋ]", translation = "укус (насекомого); жало", rarity = "UNCOMMON", setId = 254, languagePair = "en-ru", pos = "noun", semanticGroup = "first_aid",
             definition = "A sharp pain from a bee, wasp, or plant like nettle.",
-            example = "She used cream to relieve the sting of the nettle.",
+            example = "A bee sting on my arm hurt for hours.",
             definitionNative = "Рана или острая боль от укуса насекомого или ожога растения.",
             exampleNative = "Она использовала крем, чтобы снять боль от sting крапивы."),
 
@@ -344,13 +344,13 @@ object WordDataEnglishBatch4 {
 
                 WordEntity(id = 25424, original = "internal bleeding", transliteration = "[ɪnˈtɜrnəl ˈbliːdɪŋ]", translation = "внутреннее кровотечение", rarity = "UNCOMMON", setId = 254, languagePair = "en-ru", pos = "noun", semanticGroup = "first_aid",
             definition = "When blood leaks inside the body from a hidden injury.",
-            example = "The paramedic suspected internal bleeding after the patient was hit by a car.",
+            example = "Doctors feared internal bleeding after the car accident.",
             definitionNative = "Кровотечение внутри тела, не видимое снаружи.",
             exampleNative = "Медик заподозрил internal bleeding после того, как пациента сбила машина."),
 
                 WordEntity(id = 25425, original = "scar", transliteration = "[skɑr]", translation = "шрам", rarity = "UNCOMMON", setId = 254, languagePair = "en-ru", pos = "noun", semanticGroup = "first_aid",
             definition = "The faded line on skin that stays after a cut heals.",
-            example = "The surgery left a small scar on her shoulder that faded over time.",
+            example = "He's got a tiny scar above his left eyebrow.",
             definitionNative = "След, оставшийся на коже после заживления раны.",
             exampleNative = "После операции на плече остался небольшой scar, который со временем побледнел."),
 
@@ -436,7 +436,7 @@ object WordDataEnglishBatch4 {
         WordEntity(id = 25512, original = "notice period", transliteration = "[ˈnoʊtɪs ˈpɪəriəd]", translation = "срок предупреждения об увольнении",
             definition = "Weeks you must still work after telling the boss you are leaving.",
             definitionNative = "Время между уведомлением об уходе с работы и последним рабочим днём.",
-            example = "My notice period is two weeks before I can start a new job.",
+            example = "I have a two-week notice period at my current job.",
             exampleNative = "У меня notice period месяц — смогу выйти только через четыре недели.",
             rarity = "RARE", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_basics"),
 
@@ -505,19 +505,19 @@ object WordDataEnglishBatch4 {
 
                 WordEntity(id = 25522, original = "interview technique", transliteration = "[ˈɪntərˌvju tɛkˈnik]", translation = "техника прохождения интервью", rarity = "RARE", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_interview",
             definition = "A smart approach for sounding good during a hiring chat.",
-            example = "Practising your interview technique beforehand can reduce anxiety significantly.",
+            example = "Good interview technique is half the battle.",
             definitionNative = "Стратегия или метод для успешного прохождения собеседования.",
             exampleNative = "Отработка interview technique заранее может значительно снизить тревогу."),
 
                 WordEntity(id = 25523, original = "performance review", transliteration = "[pərˈfɔrməns rɪˈvju]", translation = "оценка эффективности / ревью", rarity = "RARE", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_interview",
             definition = "An official meeting where a boss rates your work over months.",
-            example = "Her performance review highlighted strengths in communication but suggested improvement in time management.",
+            example = "I've got my annual performance review on Friday.",
             definitionNative = "Официальная оценка работы сотрудника за определённый период.",
             exampleNative = "Её performance review отметил сильные стороны в коммуникации, но порекомендовал улучшить тайм-менеджмент."),
 
                 WordEntity(id = 25524, original = "payroll", transliteration = "[ˈpeɪˌroʊl]", translation = "платёжная ведомость / зарплатный список", rarity = "RARE", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_interview",
             definition = "The firm's list of workers and the money each one gets.",
-            example = "The new hire was added to the payroll starting from the first of next month.",
+            example = "She was added to the payroll on her first day.",
             definitionNative = "Список сотрудников компании с указанием размера вознаграждения каждого.",
             exampleNative = "Нового сотрудника внесли в payroll с первого числа следующего месяца."),
 
