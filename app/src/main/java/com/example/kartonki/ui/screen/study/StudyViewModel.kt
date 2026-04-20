@@ -89,13 +89,18 @@ data class StudyListUiState(
             it.name.contains(q, ignoreCase = true) ||
             it.description.contains(q, ignoreCase = true)
         }
+        val setOrder = compareBy<WordSetUiItem>(
+            { it.level },
+            { it.name.substringAfterLast(' ').toIntOrNull() ?: 0 },
+            { it.id },
+        )
         val (withTopic, noTopic) = matched.partition { it.topic.isNotEmpty() }
         val groups = withTopic
             .groupBy { it.topic }
             .map { (topic, items) ->
                 TopicGroup(
                     topic = topic,
-                    sets = items.sortedWith(compareBy({ it.level }, { it.id })),
+                    sets = items.sortedWith(setOrder),
                     isExpanded = topic !in searchCollapsedTopics,
                 )
             }
@@ -104,7 +109,7 @@ data class StudyListUiState(
                else groups + listOf(
                    TopicGroup(
                        topic = "",
-                       sets = noTopic.sortedWith(compareBy({ it.level }, { it.id })),
+                       sets = noTopic.sortedWith(setOrder),
                        isExpanded = "" !in searchCollapsedTopics,
                    )
                )
