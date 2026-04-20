@@ -195,7 +195,7 @@ object WordDataHebrewTech {
         WordEntity(id = 101919, setId = 1019, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "רֶטֶט", transliteration = "retet", translation = "вибрация (режим телефона)"),
         WordEntity(id = 101920, setId = 1019, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַצָּב טִיסָה", transliteration = "matsav tisa", translation = "режим полёта"),
+            original = "זִיהוּי פָּנִים", transliteration = "zihuy panim", translation = "распознавание лиц (Face ID)"),
         WordEntity(
             id = 101921, setId = 1019, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "gadgets",

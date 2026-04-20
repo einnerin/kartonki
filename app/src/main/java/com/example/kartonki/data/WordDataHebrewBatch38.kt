@@ -70,7 +70,7 @@ object WordDataHebrewBatch38 {
         WordEntity(id = 113620, setId = 1136, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מַחֲנֵה אִמּוּן", translation = "тренировочный лагерь"),
         WordEntity(id = 113621, setId = 1136, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִיגְרוּף", translation = "бокс"),
+            original = "טְרִיאַתְלוֹן", translation = "триатлон"),
         WordEntity(id = 113622, setId = 1136, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "הַתְאַבְּקוּת", translation = "борьба / рестлинг"),
         WordEntity(id = 113623, setId = 1136, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -122,7 +122,7 @@ object WordDataHebrewBatch38 {
         WordEntity(id = 113720, setId = 1137, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "כִּיכַּר הָעִיר", translation = "городская площадь"),
         WordEntity(id = 113721, setId = 1137, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פָרְוָר", translation = "пригород"),
+            original = "פָרְוָר", translation = "жилой пригородный район"),
         WordEntity(id = 113722, setId = 1137, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "שְּכוּנָה", translation = "квартал / район"),
         WordEntity(id = 113723, setId = 1137, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -130,7 +130,7 @@ object WordDataHebrewBatch38 {
         WordEntity(id = 113724, setId = 1137, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "רָמְזוֹר", translation = "светофор"),
         WordEntity(id = 113725, setId = 1137, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חַנִּיּוֹן", translation = "парковка"),
+            original = "חַנִּיּוֹן", translation = "паркинг (крытый гараж)"),
 
         // ── Set 1138: Эмоции ──────────────────────────────────────────────
         WordEntity(id = 113801, setId = 1138, languagePair = "he-ru", rarity = "COMMON",

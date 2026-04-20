@@ -167,7 +167,7 @@ object WordDataHebrewBatch41 {
             translation = "национальная идентичность"),
         WordEntity(id = 122019, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             original = "רָב-תַרְבּוּתִיּוּת", transliteration = "rav-tarbutiyut",
-            translation = "мультикультурализм"),
+            translation = "многокультурность"),
         WordEntity(id = 122020, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             original = "מִלְחָמוֹת הָעֶצְמְאוּת", transliteration = "milkhamot ha-etsmaot",
             translation = "Война за независимость (Израиль, 1948)"),

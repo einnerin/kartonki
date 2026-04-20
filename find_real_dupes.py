@@ -142,11 +142,12 @@ def parse_words(kt_file):
         original = extract_field(block, 'original')
         rarity = extract_field(block, 'rarity') or "COMMON"
         lang = extract_field(block, 'languagePair')
+        translation = extract_field(block, 'translation') or ""
         has_translit = bool(re.search(r'\btransliteration\s*=\s*"[^"]+"', block))
         if wid and sid and original and lang:
             words.append({"id": wid, "setId": sid, "original": original,
                           "rarity": rarity, "lang": lang, "file": kt_file.name,
-                          "has_translit": has_translit})
+                          "has_translit": has_translit, "translation": translation})
     return words
 
 
@@ -214,6 +215,40 @@ def check_stolen_words(all_words, set_topic_map, staged_files=None):
         seen[key] = w
 
     return errors, warnings, final_db, loser_sets
+
+
+def check_intra_set_duplicates(all_words):
+    """
+    Flags any set where the same `original` OR the same `translation` appears
+    more than once. This is always a blocking error regardless of staged status.
+    """
+    errors = []
+    by_set = defaultdict(list)
+    for w in all_words:
+        by_set[(w["setId"], w["file"])].append(w)
+
+    for (sid, fname), words in sorted(by_set.items()):
+        seen_orig  = defaultdict(list)
+        seen_trans = defaultdict(list)
+        for w in words:
+            seen_orig[w["original"]].append(w["id"])
+            t = w.get("translation", "").strip()
+            # Same-translation check only for he-ru: in en-ru different words often
+            # share the same Russian translation (synonyms), which is valid.
+            if t and w.get("lang") == "he-ru":
+                seen_trans[t].append(w["id"])
+
+        dup_orig  = {o: ids for o, ids in seen_orig.items()  if len(ids) > 1}
+        dup_trans = {t: ids for t, ids in seen_trans.items() if len(ids) > 1}
+
+        if dup_orig or dup_trans:
+            errors.append(f"  Set {sid} [{fname}]:")
+            for orig, ids in dup_orig.items():
+                errors.append(f"    ДУБЛЬ original: '{orig}'  wordIds={ids}")
+            for trans, ids in dup_trans.items():
+                errors.append(f"    ДУБЛЬ translation: '{trans}'  wordIds={ids}")
+
+    return errors
 
 
 def check_rarity_spread(words_for_sets):
@@ -525,6 +560,17 @@ def main():
                 print(f"    '{e['original']}' → уже в наборе {e['winner_set']} [{e['winner_file']}]")
     else:
         print("  ✅ Нет дублей внутри одной темы\n")
+
+    # ── 1b. Intra-set duplicates (same original OR same translation) ─────────
+    intra_errors = check_intra_set_duplicates(all_words)
+    print(f"=== 1b. Дубли внутри одного набора: {len(intra_errors)} ===\n")
+    if intra_errors:
+        has_errors = True
+        for e in intra_errors:
+            print(e)
+        print()
+    else:
+        print("  ✅ Нет дублей внутри наборов\n")
 
     # ── 2. Word count — flag sets that lost words to any duplicate ──────────
     count_problems = check_set_count(all_words, set_file_map, loser_sets)

@@ -89,7 +89,7 @@ object WordDataHebrewImmigrant15 {
         WordEntity(id = 119810, setId = 1198, languagePair = "he-ru", original = "כֻּפָּה", translation = "хупа (свадебный балдахин)", transliteration = "khupa", rarity = "UNCOMMON"),
         WordEntity(id = 119811, setId = 1198, languagePair = "he-ru", original = "נְשׂוּאִין", translation = "вступление в брак", transliteration = "nesu'in", rarity = "UNCOMMON"),
         WordEntity(id = 119812, setId = 1198, languagePair = "he-ru", original = "לְחַיִּים", translation = "за жизнь (тост)", transliteration = "le-khayim", rarity = "COMMON"),
-        WordEntity(id = 119813, setId = 1198, languagePair = "he-ru", original = "קְדוּשָּׁה", translation = "обряд освящения брака", transliteration = "kdusha", rarity = "UNCOMMON"),
+        WordEntity(id = 119813, setId = 1198, languagePair = "he-ru", original = "קְדוּשָּׁה", translation = "кидуша (освящение субботы молитвой над вином)", transliteration = "kdusha", rarity = "UNCOMMON"),
         WordEntity(id = 119814, setId = 1198, languagePair = "he-ru", original = "בָּלוֹן", translation = "воздушный шар", transliteration = "balon", rarity = "COMMON"),
         WordEntity(id = 119815, setId = 1198, languagePair = "he-ru", original = "מַחוֹל", translation = "танец / хоровод", transliteration = "makhol", rarity = "UNCOMMON"),
         WordEntity(id = 119816, setId = 1198, languagePair = "he-ru", original = "זֵר", translation = "букет / венок", transliteration = "zer", rarity = "UNCOMMON"),

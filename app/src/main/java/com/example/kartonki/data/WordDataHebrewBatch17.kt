@@ -593,11 +593,11 @@ object WordDataHebrewBatch17 {
         ),
         WordEntity(
             id = 107520, setId = 1075, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "art", transliteration = "psifas",
-            original = "פְּסִיפָס", translation = "мозаика",
-            definition = "אָמָּנוּת יְצִירַת תְּמוּנוֹת מֵחֶלְקִיקֵי זְכוּכִית, אֶבֶן אוֹ קְרָמִיקָה.",
-            definitionNative = "Искусство создания изображений из кусочков стекла, камня или керамики.",
-            example = "הַפְּסִיפָס הַבִּיזַנְטִי בְּכַּנֶסֶת הוּא מֵהַמְּרַשִּׁימִים בָּאֶרֶץ.",
+            pos = "noun", semanticGroup = "art", transliteration = "guvash",
+            original = "גּוּאַשׁ", translation = "гуашь",
+            definition = "צֶבַע מֵמִים כָּהֶה וְאָטוּם הַמְּשַׁמֵּשׁ לְצִיּוּר בְּשִׁכְבוֹת עֲבוֹת.",
+            definitionNative = "Непрозрачная водяная краска, используемая для плотной живописи.",
+            example = "הַיֶּלֶד צִיֵּר בְּגּוּאַשׁ צִבְעוֹנִי בְּשִׁיעוּר אָמָּנוּת.",
             exampleNative = "Византийская мозаика в церкви — одна из самых впечатляющих в стране.",
         ),
         WordEntity(

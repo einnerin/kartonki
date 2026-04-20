@@ -70,15 +70,15 @@ object WordDataHebrewBatch36 {
         WordEntity(id = 113020, setId = 1130, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "פְּסַנְתֵּר חַשְׁמָלִי", translation = "электронное пианино"),
         WordEntity(id = 113021, setId = 1130, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "צְּלּוֹ", translation = "виолончель"),
+            original = "פַּגּוֹט", translation = "фагот"),
         WordEntity(id = 113022, setId = 1130, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קְלָרִינֶט", translation = "кларнет"),
+            original = "קוֹנְטְרָבַּס", translation = "контрабас"),
         WordEntity(id = 113023, setId = 1130, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "טְרוֹמְּבּוֹן", translation = "тромбон"),
+            original = "לִיאוּט", translation = "лютня"),
         WordEntity(id = 113024, setId = 1130, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "טַמְבוּרִין", translation = "тамбурин / бубен"),
         WordEntity(id = 113025, setId = 1130, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֶקוֹרְדֵּיּוֹן", translation = "аккордеон"),
+            original = "צִ'מְבָּלוֹ", translation = "клавесин"),
 
         // ── Set 1131: Школьные предметы ───────────────────────────────────
         WordEntity(id = 113101, setId = 1131, languagePair = "he-ru", rarity = "COMMON",
@@ -130,7 +130,7 @@ object WordDataHebrewBatch36 {
         WordEntity(id = 113124, setId = 1131, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "סוֹצִיוֹלוֹגְיָה", translation = "социология"),
         WordEntity(id = 113125, setId = 1131, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גֵאוֹגְרַפְיָה", translation = "география"),
+            original = "פִּילוֹסוֹפְיָה", translation = "философия (предмет)"),
 
         // ── Set 1132: Мебель и дом ─────────────────────────────────────────
         WordEntity(id = 113201, setId = 1132, languagePair = "he-ru", rarity = "COMMON",

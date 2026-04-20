@@ -64,7 +64,7 @@ object WordDataHebrewBatch29 {
         WordEntity(id = 110920, setId = 1109, languagePair = "he-ru", rarity = "RARE",
             original = "בְּקָרַת מָשׁוֹב", translation = "обратная связь; управление с обратной связью"),
         WordEntity(id = 110921, setId = 1109, languagePair = "he-ru", rarity = "RARE",
-            original = "לִמּוּד מְלָאכוּתִי", translation = "машинное обучение"),
+            original = "חֶקַר נְתוּנִים", translation = "добыча данных (data mining)"),
         WordEntity(id = 110922, setId = 1109, languagePair = "he-ru", rarity = "RARE", original = "רִשּׁוּת עֲצָבִים", translation = "нейронная сеть"),
         WordEntity(id = 110923, setId = 1109, languagePair = "he-ru", rarity = "RARE", original = "עִיבּוּד שְׂפָה טִבְעִית", translation = "обработка естественного языка"),
         WordEntity(id = 110924, setId = 1109, languagePair = "he-ru", rarity = "RARE", original = "מְחִינוֹת רְאִיָּה", translation = "компьютерное зрение"),

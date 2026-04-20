@@ -280,7 +280,7 @@ object WordDataHebrewBatch49 {
         WordEntity(id = 127521, setId = 1275, languagePair = "he-ru", rarity = "RARE",
             original = "רֵטוֹרִיקָה פּוֹלִיטִית", transliteration = "retorika politit", translation = "политическая риторика"),
         WordEntity(id = 127522, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "תַּעֲמוּלָה", transliteration = "ta'amula", translation = "пропаганда"),
+            original = "תַּעֲמוּלָה", transliteration = "ta'amula", translation = "агитация"),
         WordEntity(id = 127523, setId = 1275, languagePair = "he-ru", rarity = "RARE",
             original = "כּוֹחַ רַךְ", transliteration = "koakh rakh", translation = "мягкая сила"),
         WordEntity(id = 127524, setId = 1275, languagePair = "he-ru", rarity = "RARE",

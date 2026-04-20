@@ -237,12 +237,12 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104724, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing_accessories", transliteration = "khagora",
-            original = "חַגּוֹרָה", translation = "ремень, пояс",
-            definition = "רְצוּעַת עוֹר אוֹ בַּד הַמְּחַזֶּקֶת מִכְנָסַיִם אוֹ מְשַׁמֶּשֶׁת כְּקִישּׁוּט.",
-            definitionNative = "Кожаная или тканевая лента, удерживающая брюки или служащая украшением.",
-            example = "הַמִּכְנָסַיִם גָּדוֹלִים — קְנֵה חַגּוֹרָה חֲדָשָׁה.",
-            exampleNative = "Брюки велики — купи новую חַגּוֹרָה.",
+            pos = "noun", semanticGroup = "clothing_accessories", transliteration = "tsmid",
+            original = "צְמִיד", translation = "браслет",
+            definition = "תַּכְשִׁיט הַנֶּעֱנָד סְבִיב הַיָּד אוֹ הַקֶּרְסוֹל.",
+            definitionNative = "Украшение, которое носят на запястье или лодыжке.",
+            example = "הִיא קָנְתָה צְמִיד זָהָב לְעַצְמָהּ.",
+            exampleNative = "Она купила себе золотой צְמִיד.",
         ),
         WordEntity(
             id = 104725, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",

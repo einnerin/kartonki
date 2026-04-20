@@ -251,7 +251,7 @@ object WordDataHebrewBatch60 {
             original = "אֲתַר בַּנְּיָה", transliteration = "atar banya", translation = "строительная площадка"),
 
         WordEntity(id = 133708, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "קַבְּלָן", transliteration = "kablan", translation = "подрядчик, прораб"),
+            original = "פּוֹעֵל בַּנָּיָה", transliteration = "po'el banya", translation = "строительный рабочий"),
 
         WordEntity(id = 133709, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
             original = "צֶוֶת עֲבוֹדָה", transliteration = "tsevet avoda", translation = "рабочая бригада"),
@@ -293,7 +293,7 @@ object WordDataHebrewBatch60 {
             original = "סַקְרָן בַּנְּיָה", transliteration = "sakran banya", translation = "строительный инспектор"),
 
         WordEntity(id = 133722, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קַבְּלָן מִשְׁנֶה", transliteration = "kablan mishne", translation = "субподрядчик"),
+            original = "מְפַקֵּחַ עֲבוֹדוֹת", transliteration = "mefake'akh avodot", translation = "мастер работ, прораб"),
 
         WordEntity(id = 133723, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "עֵרוּב מִשְׂרוֹת", transliteration = "eruv misrot", translation = "совмещение специальностей"),
@@ -322,7 +322,7 @@ object WordDataHebrewBatch60 {
             original = "מִשְׁמֶרֶת", transliteration = "mishmeret", translation = "смена, дежурство"),
 
         WordEntity(id = 133806, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "מִשְׁמֶרֶת לַיְלָה", transliteration = "mishmeret layla", translation = "ночная смена"),
+            original = "לוּחַ תּוֹרָנִיּוֹת", transliteration = "luakh toraniiot", translation = "график дежурств"),
 
         WordEntity(id = 133807, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
             original = "מְטוּפָּל", transliteration = "metupal", translation = "подопечный, пациент"),
@@ -432,13 +432,13 @@ object WordDataHebrewBatch60 {
             original = "רוֹאֵה חֶשְׁבּוֹן מוּסְמָךְ", transliteration = "ro'e kheshbon musmakh", translation = "сертифицированный бухгалтер (CPA)"),
 
         WordEntity(id = 133917, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "בִּקּוֹרֶת פְּנִימִית", transliteration = "bikoret pnimit", translation = "внутренний аудит"),
+            original = "נִהוּל כַּסְפִּים", transliteration = "nihul kaspim", translation = "финансовое управление"),
 
         WordEntity(id = 133918, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "דֵּ\"חַ רְבִיעוֹנִי", transliteration = "de'akh revi'oni", translation = "квартальный отчёт"),
 
         WordEntity(id = 133919, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֶשְׁבּוֹנַאוּת עֲלוּת", transliteration = "kheshbonaut alut", translation = "управленческий учёт"),
+            original = "מַאֲזָן חֶשְׁבּוֹנוֹת", transliteration = "ma'azan kheshbonot", translation = "балансовый отчёт"),
 
         WordEntity(id = 133920, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "דֵּ\"חַ רֶוַח וְהֶפְסֵד", transliteration = "de'akh revakh vehefed", translation = "отчёт о прибылях и убытках"),
@@ -500,7 +500,7 @@ object WordDataHebrewBatch60 {
             original = "מְשָׁאִית", transliteration = "meshi'it", translation = "грузовик"),
 
         WordEntity(id = 134014, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּעוּדַת מִשְׁלוֹחַ", transliteration = "te'udat mishloakh", translation = "накладная, доставочный документ"),
+            original = "טֹפֶס הַזְמָנָה", transliteration = "toфes hazmana", translation = "бланк заказа"),
 
         WordEntity(id = 134015, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
             original = "הֶצְעַת עֲבוֹדָה", transliteration = "hets'at avoda", translation = "предложение о работе, оффер"),
@@ -586,7 +586,7 @@ object WordDataHebrewBatch60 {
             original = "רִשָּׁיוֹן מְתִיוּוּךְ", transliteration = "rishayaon metivukh", translation = "лицензия риэлтора"),
 
         WordEntity(id = 134117, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֶסְכֵּם בְּלַעֲדִיּוּת", transliteration = "heskem bela'adiut", translation = "эксклюзивный договор"),
+            original = "הֶסְכֵּם שְׂכִירוּת", transliteration = "heskem skhirut", translation = "договор аренды"),
 
         WordEntity(id = 134118, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "הַעֲרָכַת שֵׁווּי", transliteration = "ha'arakat shevui", translation = "оценка стоимости объекта"),
