@@ -16,8 +16,8 @@ object WordDataHebrewImmigrant7 {
     topic = "Религия и праздники", level = 2),
         WordSetEntity(id = 1152, languagePair = "he-ru", name = "Дом и быт: продвинутый 11",          description = "Покупки и магазины", orderIndex = 152,
     topic = "Дом и быт", level = 2),
-        WordSetEntity(id = 1153, languagePair = "he-ru", name = "Финансы: продвинутый 5",        description = "Страхование и полисы", orderIndex = 153,
-    topic = "Финансы", level = 2),
+        WordSetEntity(id = 1153, languagePair = "he-ru", name = "Финансы: углублённый 2",        description = "Страхование и полисы", orderIndex = 153,
+    topic = "Финансы", level = 3),
     )
 
     val words: List<WordEntity> = listOf(
@@ -178,7 +178,7 @@ object WordDataHebrewImmigrant7 {
         WordEntity(id = 115318, setId = 1153, languagePair = "he-ru", original = "סוֹכֵן בִּיטּוּחַ", translation = "страховой агент", transliteration = "sokhen bituach", rarity = "RARE"),
         WordEntity(id = 115319, setId = 1153, languagePair = "he-ru", original = "חֶבְרַת בִּיטּוּחַ", translation = "страховая компания", transliteration = "khevrat bituach", rarity = "RARE"),
         WordEntity(id = 115320, setId = 1153, languagePair = "he-ru", original = "פּוֹלִיסָה מְקִיפָה", translation = "полное страхование", transliteration = "polisa mekifa", rarity = "RARE"),
-        WordEntity(id = 115321, setId = 1153, languagePair = "he-ru", original = "פְּרַנְשִׁיזָה", translation = "франшиза (страховая)", transliteration = "franchiza", rarity = "EPIC"),
+        WordEntity(id = 115321, setId = 1153, languagePair = "he-ru", original = "פְּרַנְשִׁיזָה", translation = "франшиза (страховая)", transliteration = "franchiza", rarity = "RARE"),
         WordEntity(id = 115322, setId = 1153, languagePair = "he-ru", original = "אוֹבְּלִיגָטוֹרִי", translation = "обязательный", transliteration = "obligatori", rarity = "RARE"),
         WordEntity(id = 115323, setId = 1153, languagePair = "he-ru", original = "תְּקוּפַת הַמְּתָנָה", translation = "период ожидания", transliteration = "tkufat hamtana", rarity = "RARE"),
         WordEntity(id = 115324, setId = 1153, languagePair = "he-ru", original = "צַד שְׁלִישִׁי", translation = "третья сторона", transliteration = "tzad shlishi", rarity = "RARE"),

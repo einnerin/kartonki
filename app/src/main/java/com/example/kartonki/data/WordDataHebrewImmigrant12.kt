@@ -182,6 +182,6 @@ object WordDataHebrewImmigrant12 {
         WordEntity(id = 118322, setId = 1183, languagePair = "he-ru", original = "הִמָּסַת קְרָחוֹנִים", translation = "таяние ледников", transliteration = "himasat krakhonim", rarity = "UNCOMMON"),
         WordEntity(id = 118323, setId = 1183, languagePair = "he-ru", original = "טְבֶּעֶת פֶּחָמָן", translation = "углеродный след", transliteration = "tbe'et pekhaman", rarity = "UNCOMMON"),
         WordEntity(id = 118324, setId = 1183, languagePair = "he-ru", original = "אֱקוֹצֶנְטְרִיזְם", translation = "экоцентризм", transliteration = "ekotzentrizm", rarity = "UNCOMMON"),
-        WordEntity(id = 118325, setId = 1183, languagePair = "he-ru", original = "בִּיוֹמִימֶּטִיקָה", translation = "биомиметика (подражание природе)", transliteration = "biomimetika", rarity = "EPIC"),
+        WordEntity(id = 118325, setId = 1183, languagePair = "he-ru", original = "בִּיוֹמִימֶּטִיקָה", translation = "биомиметика (подражание природе)", transliteration = "biomimetika", rarity = "RARE"),
     )
 }

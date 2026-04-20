@@ -155,7 +155,7 @@ object WordDataHebrewImmigrant10 {
         WordEntity(id = 117022, setId = 1170, languagePair = "he-ru", original = "שַׁבָּת שָׁלוֹם", translation = "доброй субботы (приветствие)", transliteration = "Shabat Shalom", rarity = "RARE"),
         WordEntity(id = 117023, setId = 1170, languagePair = "he-ru", original = "חִלּוּל שַׁבָּת", translation = "нарушение субботы", transliteration = "khilul Shabat", rarity = "UNCOMMON"),
         WordEntity(id = 117024, setId = 1170, languagePair = "he-ru", original = "בַּר מִצְוָה", translation = "бар-мицва (13-летие мальчика)", transliteration = "bar mitzva", rarity = "RARE"),
-        WordEntity(id = 117025, setId = 1170, languagePair = "he-ru", original = "קַבָּלָה", translation = "Каббала (мистическое учение)", transliteration = "Kabala", rarity = "EPIC"),
+        WordEntity(id = 117025, setId = 1170, languagePair = "he-ru", original = "קַבָּלָה", translation = "Каббала (мистическое учение)", transliteration = "Kabala", rarity = "RARE"),
 
         // ── 1171: Больница ──────────────────────────────────────────────
         WordEntity(id = 117101, setId = 1171, languagePair = "he-ru", original = "רְפוּאָה", translation = "медицина / лечение", transliteration = "refua", rarity = "UNCOMMON"),

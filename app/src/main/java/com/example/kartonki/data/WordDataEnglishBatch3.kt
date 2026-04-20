@@ -266,7 +266,7 @@ object WordDataEnglishBatch3 {
             definitionNative = "Деньги, отправленные за рубеж, особенно трудовым мигрантом своей семье.",
             example = "He sends a monthly remittance to his parents back home.",
             exampleNative = "Ежемесячный remittance помогает семье в другой стране.",
-            rarity = "RARE", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_operations"),
+            rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking_operations"),
 
                 WordEntity(id = 25112, original = "savings account", transliteration = "[ˈseɪvɪŋz əˈkaʊnt]", translation = "сберегательный счёт", rarity = "UNCOMMON", setId = 251, languagePair = "en-ru", pos = "noun", semanticGroup = "banking",
             definition = "a bank account that earns interest on deposited money",

@@ -497,7 +497,7 @@ object WordDataEnglishBatch5 {
             definitionNative = "Философская головоломка или тупик, возникающий из-за противоречивых, но одинаково обоснованных доводов.",
             example = "Zeno's paradoxes are famous aporias about motion and infinity.",
             exampleNative = "Апория Зенона: Ахилл никогда не догонит черепаху.",
-            rarity = "LEGENDARY", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_logic"),
+            rarity = "EPIC", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_logic"),
 
         WordEntity(id = 25820, original = "deontology", transliteration = "[ˌdiːɒnˈtɒlədʒi]", translation = "деонтология",
             definition = "An ethical theory that judges actions by whether they follow moral rules, regardless of outcome.",
@@ -539,6 +539,6 @@ object WordDataEnglishBatch5 {
             definitionNative = "Идея о том, что разум начинается как чистый лист, формируясь исключительно опытом.",
             example = "Locke argued that every person is born as a tabula rasa.",
             exampleNative = "Tabula rasa — идея Локка: все знания из опыта, не из природы.",
-            rarity = "LEGENDARY", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_epistemology"),
+            rarity = "EPIC", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_epistemology"),
     )
 }

@@ -44,7 +44,7 @@ object WordDataHebrewBatch51 {
 
         WordSetEntity(
             id = 1293, languagePair = "he-ru", orderIndex = 1293,
-            name = "Финансы: углублённый 2",
+            name = "Финансы: углублённый 3",
             description = "Бухгалтерский учёт, налогообложение и корпоративные финансы",
             topic = "Финансы",
             level = 3),

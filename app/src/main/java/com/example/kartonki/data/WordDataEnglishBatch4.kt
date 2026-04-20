@@ -368,7 +368,7 @@ object WordDataEnglishBatch4 {
             definitionNative = "Письменное изложение вашего образования, опыта работы и навыков.",
             example = "Send your CV and a cover letter to apply for the position.",
             exampleNative = "Обнови свой CV перед отправкой заявки.",
-            rarity = "COMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_documents"),
+            rarity = "UNCOMMON", setId = 255, languagePair = "en-ru", pos = "noun", semanticGroup = "job_documents"),
 
         WordEntity(id = 25503, original = "cover letter", transliteration = "[ˈkʌvər ˈletər]", translation = "сопроводительное письмо",
             definition = "A letter sent with a CV explaining why you are suitable for a job.",

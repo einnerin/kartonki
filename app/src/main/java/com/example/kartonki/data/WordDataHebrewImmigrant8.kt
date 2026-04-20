@@ -7,7 +7,7 @@ object WordDataHebrewImmigrant8 {
 
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(id = 1154, languagePair = "he-ru", name = "Медицина: продвинутый 7",              description = "Лекарства и здоровье", orderIndex = 154, topic = "Медицина", level = 2),
-        WordSetEntity(id = 1155, languagePair = "he-ru", name = "Финансы: продвинутый 6",              description = "Банковские услуги и финансы", orderIndex = 155, topic = "Финансы", level = 2),
+        WordSetEntity(id = 1155, languagePair = "he-ru", name = "Финансы: продвинутый 5",              description = "Банковские услуги и финансы", orderIndex = 155, topic = "Финансы", level = 2),
         WordSetEntity(id = 1156, languagePair = "he-ru", name = "Одежда: продвинутый 3",               description = "Одежда и покупки", orderIndex = 156, topic = "Одежда", level = 2),
         WordSetEntity(id = 1157, languagePair = "he-ru", name = "Образование: продвинутый 5",          description = "Учёба и воспитание", orderIndex = 157, topic = "Образование", level = 2),
         WordSetEntity(id = 1158, languagePair = "he-ru", name = "Природа и экология: продвинутый 13",  description = "Пейзажи и климат", orderIndex = 158, topic = "Природа и экология", level = 2),
@@ -40,7 +40,7 @@ object WordDataHebrewImmigrant8 {
         WordEntity(id = 115421, setId = 1154, languagePair = "he-ru", original = "תּוֹפָעַת לְוַאי", translation = "побочный эффект", transliteration = "tofa'at levai", rarity = "UNCOMMON"),
         WordEntity(id = 115422, setId = 1154, languagePair = "he-ru", original = "תַּרְסִיס", translation = "спрей / аэрозоль", transliteration = "tarsís", rarity = "UNCOMMON"),
         WordEntity(id = 115423, setId = 1154, languagePair = "he-ru", original = "עָלוֹן", translation = "инструкция-вкладыш", transliteration = "alon", rarity = "UNCOMMON"),
-        WordEntity(id = 115424, setId = 1154, languagePair = "he-ru", original = "קַפְּסוּלָה", translation = "капсула (лекарство)", transliteration = "kapsúla", rarity = "RARE"),
+        WordEntity(id = 115424, setId = 1154, languagePair = "he-ru", original = "קַפְּסוּלָה", translation = "капсула (лекарство)", transliteration = "kapsúla", rarity = "UNCOMMON"),
         WordEntity(id = 115425, setId = 1154, languagePair = "he-ru", original = "תְּרוּפַת מִרְשָׁם", translation = "рецептурный препарат", transliteration = "trufat mirsham", rarity = "UNCOMMON"),
 
         // ── 1155: Банк ──────────────────────────────────────────────────
@@ -66,7 +66,7 @@ object WordDataHebrewImmigrant8 {
         WordEntity(id = 115520, setId = 1155, languagePair = "he-ru", original = "קוּפַּת גְּמַל", translation = "накопительный фонд", transliteration = "kupat gemel", rarity = "UNCOMMON"),
         WordEntity(id = 115521, setId = 1155, languagePair = "he-ru", original = "אִיגְרַת חוֹב", translation = "облигация", transliteration = "igeret khov", rarity = "UNCOMMON"),
         WordEntity(id = 115522, setId = 1155, languagePair = "he-ru", original = "עֵרָבוֹן", translation = "залог / задаток", transliteration = "eravon", rarity = "UNCOMMON"),
-        WordEntity(id = 115523, setId = 1155, languagePair = "he-ru", original = "מַנְיָה", translation = "акция (ценная бумага)", transliteration = "manya", rarity = "RARE"),
+        WordEntity(id = 115523, setId = 1155, languagePair = "he-ru", original = "מַנְיָה", translation = "акция (ценная бумага)", transliteration = "manya", rarity = "UNCOMMON"),
         WordEntity(id = 115524, setId = 1155, languagePair = "he-ru", original = "שְׁטַר חוֹב", translation = "долговое обязательство", transliteration = "shtar khov", rarity = "UNCOMMON"),
         WordEntity(id = 115525, setId = 1155, languagePair = "he-ru", original = "בִּיטוּחַ מְנַהֲלִים", translation = "страхование руководителей", transliteration = "bituach menahалим", rarity = "UNCOMMON"),
 
@@ -119,7 +119,7 @@ object WordDataHebrewImmigrant8 {
         WordEntity(id = 115719, setId = 1157, languagePair = "he-ru", original = "חֲבֵר לְכִיתָּה", translation = "одноклассник", transliteration = "khaver lekita", rarity = "UNCOMMON"),
         WordEntity(id = 115720, setId = 1157, languagePair = "he-ru", original = "בֵּית-סֵפֶר יְסוֹדִי", translation = "начальная школа", transliteration = "beit-sefer yesodi", rarity = "UNCOMMON"),
         WordEntity(id = 115721, setId = 1157, languagePair = "he-ru", original = "פְּגִישַׁת הוֹרִים", translation = "родительское собрание", transliteration = "pgishat horim", rarity = "UNCOMMON"),
-        WordEntity(id = 115722, setId = 1157, languagePair = "he-ru", original = "תְּעוּדַת בַּגְרוּת", translation = "аттестат зрелости (багрут)", transliteration = "te'udat bagrut", rarity = "RARE"),
+        WordEntity(id = 115722, setId = 1157, languagePair = "he-ru", original = "תְּעוּדַת בַּגְרוּת", translation = "аттестат зрелости (багрут)", transliteration = "te'udat bagrut", rarity = "UNCOMMON"),
         WordEntity(id = 115723, setId = 1157, languagePair = "he-ru", original = "מְלַגָּה", translation = "стипендия", transliteration = "melaga", rarity = "UNCOMMON"),
         WordEntity(id = 115724, setId = 1157, languagePair = "he-ru", original = "יַלְקוּט", translation = "школьный рюкзак", transliteration = "yalkut", rarity = "UNCOMMON"),
         WordEntity(id = 115725, setId = 1157, languagePair = "he-ru", original = "הַכְוָנָה מִקְצוֹעִית", translation = "профориентация", transliteration = "hakhvana miktzo'it", rarity = "UNCOMMON"),
@@ -175,7 +175,7 @@ object WordDataHebrewImmigrant8 {
         WordEntity(id = 115921, setId = 1159, languagePair = "he-ru", original = "גּוּדוֹ", translation = "дзюдо", transliteration = "judo", rarity = "UNCOMMON"),
         WordEntity(id = 115922, setId = 1159, languagePair = "he-ru", original = "אַקְרוֹבַטִיקָה", translation = "акробатика", transliteration = "akrobatika", rarity = "UNCOMMON"),
         WordEntity(id = 115923, setId = 1159, languagePair = "he-ru", original = "כַּרְטִיס אָדוֹם", translation = "красная карточка", transliteration = "kartis adom", rarity = "UNCOMMON"),
-        WordEntity(id = 115924, setId = 1159, languagePair = "he-ru", original = "קְרָב מְגָע", translation = "рукопашный бой (крав-мага)", transliteration = "krav maga", rarity = "RARE"),
+        WordEntity(id = 115924, setId = 1159, languagePair = "he-ru", original = "קְרָב מְגָע", translation = "рукопашный бой (крав-мага)", transliteration = "krav maga", rarity = "UNCOMMON"),
         WordEntity(id = 115925, setId = 1159, languagePair = "he-ru", original = "אוֹלִימְפִּיָּאדָה", translation = "Олимпийские игры", transliteration = "olimpiada", rarity = "UNCOMMON"),
     )
 }
