@@ -312,15 +312,22 @@ def check_lang_blocks(all_sets):
 
 
 def check_id_formula(all_words):
-    """id must equal setId * 100 + 1-based position within set."""
+    """id must equal setId * 100 + 1-based position within set.
+
+    Группировка по setId только — наборы могут быть распределены по
+    нескольким файлам (Immigrant + ImmigrantExtra); позиция глобальная
+    в порядке registry-обхода.
+    """
     errors = []
     by_set = defaultdict(list)
     for w in all_words:
-        by_set[(w["setId"], w["file"])].append(w)
-    for (sid, fname), words in sorted(by_set.items()):
+        by_set[w["setId"]].append(w)
+    for sid, words in sorted(by_set.items()):
+        if sid == 0:
+            continue  # achievement rewards имеют собственные id
         for pos, w in enumerate(sorted(words, key=lambda x: x["id"]), start=1):
             if w["id"] != sid * 100 + pos:
-                errors.append(f"  Set {sid} [{fname}]: '{w['original']}' "
+                errors.append(f"  Set {sid} [{w['file']}]: '{w['original']}' "
                               f"id={w['id']}, ожидалось {sid*100+pos}")
     return errors
 
