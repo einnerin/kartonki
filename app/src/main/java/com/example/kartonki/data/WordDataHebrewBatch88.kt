@@ -142,8 +142,6 @@ object WordDataHebrewBatch88 {
 
         // ── Set 1536 — Философия: углублённый 2 (level 3, B2) ────────────
         // 1 COMMON + 5 UNCOMMON + 12 RARE + 5 EPIC + 2 LEGENDARY
-        WordEntity(id = 153601, setId = 1536, languagePair = "he-ru", rarity = "RARE",
-            original = "מַחְשָׁבָה", translation = "мысль / мышление", transliteration = "махшава"),
         WordEntity(id = 153602, setId = 1536, languagePair = "he-ru", rarity = "RARE",
             original = "הִיגָּיוֹן", translation = "логика / разум", transliteration = "hигайон"),
         WordEntity(id = 153603, setId = 1536, languagePair = "he-ru", rarity = "RARE",
@@ -250,8 +248,6 @@ object WordDataHebrewBatch88 {
         // 2 COMMON + 16 UNCOMMON + 4 RARE + 2 EPIC + 1 LEGENDARY
         WordEntity(id = 153801, setId = 1538, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מֶרְכַּז הָעִיר", translation = "центр города", transliteration = "мерказ hа-ир"),
-        WordEntity(id = 153802, setId = 1538, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שְׁכוּנָה", translation = "район / квартал", transliteration = "шхуна"),
         WordEntity(id = 153803, setId = 1538, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "עִירִיָּה", translation = "мэрия / муниципалитет", transliteration = "ирия"),
         WordEntity(id = 153804, setId = 1538, languagePair = "he-ru", rarity = "UNCOMMON",

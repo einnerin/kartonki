@@ -334,8 +334,6 @@ object WordDataHebrewBatch75 {
             original = "עַכְבָּר", translation = "мышь (компьютерная)", transliteration = "акбар"),
         WordEntity(id = 147809, setId = 1478, languagePair = "he-ru", rarity = "COMMON",
             original = "אִינְטֶרְנֶט", translation = "интернет", transliteration = "интэрнэт"),
-        WordEntity(id = 147810, setId = 1478, languagePair = "he-ru", rarity = "COMMON",
-            original = "שְׁגִיאָה", translation = "ошибка", transliteration = "шгиа"),
         WordEntity(id = 147811, setId = 1478, languagePair = "he-ru", rarity = "COMMON",
             original = "נִפּוּי", translation = "отладка (debugging)", transliteration = "нипуй"),
         WordEntity(id = 147812, setId = 1478, languagePair = "he-ru", rarity = "COMMON",

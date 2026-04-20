@@ -41,8 +41,6 @@ object WordDataHebrewBatch76 {
             original = "מְחִיר", translation = "цена", transliteration = "мэхир"),
         WordEntity(id = 148305, setId = 1483, languagePair = "he-ru", rarity = "COMMON",
             original = "הַנָּחָה", translation = "скидка", transliteration = "hанаха"),
-        WordEntity(id = 148306, setId = 1483, languagePair = "he-ru", rarity = "COMMON",
-            original = "חֶשְׁבּוֹנִית", translation = "квитанция, чек", transliteration = "хэшбонит"),
         WordEntity(id = 148307, setId = 1483, languagePair = "he-ru", rarity = "COMMON",
             original = "עוֹדֶף", translation = "сдача", transliteration = "одэф"),
         WordEntity(id = 148308, setId = 1483, languagePair = "he-ru", rarity = "COMMON",
@@ -217,14 +215,10 @@ object WordDataHebrewBatch76 {
             original = "שְׁעוֹת עֲבוֹדָה", translation = "рабочие часы", transliteration = "шэот авода"),
         WordEntity(id = 148612, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
             original = "הַפְסָקָה", translation = "перерыв", transliteration = "hафсака"),
-        WordEntity(id = 148613, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
-            original = "מִשְׁמֶרֶת", translation = "смена (на работе)", transliteration = "мишмерет"),
         WordEntity(id = 148614, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
             original = "עֲבוֹדָה מְהַבַּיִת", translation = "работа из дома", transliteration = "авода мэhабайт"),
         WordEntity(id = 148615, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
             original = "הַחְזָרַת הוֹצָאוֹת", translation = "возмещение расходов", transliteration = "hахзарат hоцаот"),
-        WordEntity(id = 148616, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
-            original = "בּוֹנוּס", translation = "бонус, премия", transliteration = "бонус"),
         WordEntity(id = 148617, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
             original = "הַעֲלָאַת שָׂכָר", translation = "повышение зарплаты", transliteration = "hааалат сахар"),
         WordEntity(id = 148618, setId = 1486, languagePair = "he-ru", rarity = "COMMON",
@@ -247,8 +241,6 @@ object WordDataHebrewBatch76 {
         // ══════════════════════════════════════════════════════════════════════
         // РАБОТА И КАРЬЕРА: ОСНОВЫ 5 — set 1487 (договор и увольнение, COMMON)
         // ══════════════════════════════════════════════════════════════════════
-        WordEntity(id = 148701, setId = 1487, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор", transliteration = "hозэ авода"),
         WordEntity(id = 148702, setId = 1487, languagePair = "he-ru", rarity = "COMMON",
             original = "פִּיטּוּרִים", translation = "увольнение", transliteration = "питурим"),
         WordEntity(id = 148703, setId = 1487, languagePair = "he-ru", rarity = "COMMON",

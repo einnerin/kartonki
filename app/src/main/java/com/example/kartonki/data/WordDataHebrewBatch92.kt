@@ -48,8 +48,6 @@ object WordDataHebrewBatch92 {
             original = "תֶּחְקִיר", translation = "допрос", transliteration = "тахкир"),
         WordEntity(id = 155406, setId = 1554, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "עֵד רְאִיָּה", translation = "свидетель-очевидец", transliteration = "эд ръия"),
-        WordEntity(id = 155407, setId = 1554, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַעֲצָר", translation = "задержание / арест", transliteration = "маацар"),
         WordEntity(id = 155408, setId = 1554, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "צַו חִיפּוּשׂ", translation = "ордер на обыск", transliteration = "цав хипус"),
         WordEntity(id = 155409, setId = 1554, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -144,8 +142,6 @@ object WordDataHebrewBatch92 {
         // 2 COMMON + 16 UNCOMMON + 4 RARE + 2 EPIC + 1 LEGENDARY
         WordEntity(id = 155601, setId = 1556, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "סוּס בִּישּׁוּל", translation = "варочная поверхность", transliteration = "сус бишуль"),
-        WordEntity(id = 155602, setId = 1556, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַחֲבַת", translation = "сковорода", transliteration = "махват"),
         WordEntity(id = 155603, setId = 1556, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "סִיר לַחַץ", translation = "скороварка", transliteration = "сир лахац"),
         WordEntity(id = 155604, setId = 1556, languagePair = "he-ru", rarity = "UNCOMMON",
