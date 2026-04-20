@@ -40,6 +40,7 @@ class UserPreferencesRepository @Inject constructor(
         const val WORD_DATA_VERSION             = "word_data_version"          // Int
         const val PRESET_DECKS_VERSION          = "preset_decks_version"       // Int
         const val PRESET_DECKS_WORD_VERSION     = "preset_decks_word_version"  // Int: WordDataVersion stored at last deck rebuild
+        const val SEARCH_BACK_BEHAVIOR          = "search_back_behavior"        // "clear" | "restore"
     }
 
     companion object {
@@ -135,6 +136,10 @@ class UserPreferencesRepository @Inject constructor(
 
     fun isProblemChipHintShown(): Boolean = prefs.getBoolean(Keys.PROBLEM_CHIP_HINT_SHOWN, false)
     fun setProblemChipHintShown() = prefs.edit().putBoolean(Keys.PROBLEM_CHIP_HINT_SHOWN, true).apply()
+
+    val searchBackBehavior: Flow<String> = prefsFlow().map { it.getString(Keys.SEARCH_BACK_BEHAVIOR, "clear") ?: "clear" }
+    fun getSearchBackBehavior(): String = prefs.getString(Keys.SEARCH_BACK_BEHAVIOR, "clear") ?: "clear"
+    fun setSearchBackBehavior(mode: String) = prefs.edit().putString(Keys.SEARCH_BACK_BEHAVIOR, mode).apply()
 
     fun getWordDataVersion(): Int = prefs.getInt(Keys.WORD_DATA_VERSION, 0)
     fun setWordDataVersion(version: Int) = prefs.edit().putInt(Keys.WORD_DATA_VERSION, version).apply()

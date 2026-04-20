@@ -61,6 +61,11 @@ val PROBLEM_WORDS_SOURCE_LABELS: LinkedHashMap<String, String> = linkedMapOf(
     "pvp_only" to "Только PvP",
 )
 
+val SEARCH_BACK_BEHAVIOR_LABELS: LinkedHashMap<String, String> = linkedMapOf(
+    "clear"   to "Сбрасывать поиск",
+    "restore" to "Восстанавливать поиск",
+)
+
 data class SettingsUiState(
     val isDarkTheme: Boolean = true,
     val username: String = "Игрок",
@@ -88,6 +93,8 @@ data class SettingsUiState(
     val showFillBlankModePicker: Boolean = false,
     val showQuizTypesPicker: Boolean = false,
     val showProblemWordsSourcePicker: Boolean = false,
+    val searchBackBehavior: String = "clear",
+    val showSearchBackBehaviorPicker: Boolean = false,
     // Account
     val isSignedIn: Boolean = false,
     val isAnonymous: Boolean = true,
@@ -173,6 +180,8 @@ class SettingsViewModel @Inject constructor(
                         showFillBlankModePicker      = current.showFillBlankModePicker,
                         showQuizTypesPicker          = current.showQuizTypesPicker,
                         showProblemWordsSourcePicker = current.showProblemWordsSourcePicker,
+                        searchBackBehavior           = current.searchBackBehavior,
+                        showSearchBackBehaviorPicker = current.showSearchBackBehaviorPicker,
                         // Preserve settings loaded by separate coroutines — they must not
                         // be reset to defaults when any other preference changes
                         // (race condition with the shared prefsFlow).
@@ -217,6 +226,11 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch {
             prefs.studyCorrectToCount.collect { v ->
                 _uiState.update { it.copy(studyCorrectToCount = v) }
+            }
+        }
+        viewModelScope.launch {
+            prefs.searchBackBehavior.collect { v ->
+                _uiState.update { it.copy(searchBackBehavior = v) }
             }
         }
     }
@@ -279,6 +293,13 @@ class SettingsViewModel @Inject constructor(
     fun onProblemWordsSourceSelected(source: String) {
         prefs.setProblemWordsSource(source)
         _uiState.update { it.copy(showProblemWordsSourcePicker = false) }
+    }
+
+    fun onShowSearchBackBehaviorPicker() = _uiState.update { it.copy(showSearchBackBehaviorPicker = true) }
+    fun onDismissSearchBackBehaviorPicker() = _uiState.update { it.copy(showSearchBackBehaviorPicker = false) }
+    fun onSearchBackBehaviorSelected(mode: String) {
+        prefs.setSearchBackBehavior(mode)
+        _uiState.update { it.copy(showSearchBackBehaviorPicker = false) }
     }
 
     // ── Study settings ────────────────────────────────────────────────────────

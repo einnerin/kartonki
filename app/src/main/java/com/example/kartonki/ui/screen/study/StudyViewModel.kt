@@ -50,6 +50,9 @@ data class StudyListUiState(
     /** 0 = all sets, 1 = favourites only. */
     val selectedTab: Int = 0,
     val expandedTopics: Set<String> = emptySet(),
+    /** Topics the user explicitly collapsed while in search mode (default = all expanded). */
+    val searchCollapsedTopics: Set<String> = emptySet(),
+    val searchBackBehavior: String = "clear",
 ) {
     val favoriteCount: Int get() = sets.count { it.isFavorite }
 
@@ -77,6 +80,35 @@ data class StudyListUiState(
         return if (noTopic.isEmpty()) groups
                else groups + listOf(TopicGroup(topic = "", sets = noTopic, isExpanded = "" in expandedTopics))
     }
+
+    fun searchGroupedSets(query: String): List<TopicGroup> {
+        if (query.isBlank()) return emptyList()
+        val q = query.trim()
+        val matched = sets.filter {
+            it.topic.contains(q, ignoreCase = true) ||
+            it.name.contains(q, ignoreCase = true) ||
+            it.description.contains(q, ignoreCase = true)
+        }
+        val (withTopic, noTopic) = matched.partition { it.topic.isNotEmpty() }
+        val groups = withTopic
+            .groupBy { it.topic }
+            .map { (topic, items) ->
+                TopicGroup(
+                    topic = topic,
+                    sets = items.sortedWith(compareBy({ it.level }, { it.id })),
+                    isExpanded = topic !in searchCollapsedTopics,
+                )
+            }
+            .sortedBy { it.topic }
+        return if (noTopic.isEmpty()) groups
+               else groups + listOf(
+                   TopicGroup(
+                       topic = "",
+                       sets = noTopic.sortedWith(compareBy({ it.level }, { it.id })),
+                       isExpanded = "" !in searchCollapsedTopics,
+                   )
+               )
+    }
 }
 
 @HiltViewModel
@@ -101,10 +133,22 @@ class StudyViewModel @Inject constructor(
         savedStateHandle["scrollOffset"] = offset
     }
 
+    /** Last active search query — persisted so it can be restored after back-navigation. */
+    val savedSearchQuery: String get() = savedStateHandle["searchQuery"] ?: ""
+    fun saveSearchQuery(query: String) { savedStateHandle["searchQuery"] = query }
+
+    /** Sync read — safe to call inside remember {} during first composition. */
+    fun getSearchBackBehavior(): String = prefs.getSearchBackBehavior()
+
     init {
         viewModelScope.launch {
             prefs.languagePair.collect { pair ->
                 loadSets(pair, showLoading = true)
+            }
+        }
+        viewModelScope.launch {
+            prefs.searchBackBehavior.collect { v ->
+                _uiState.update { it.copy(searchBackBehavior = v) }
             }
         }
     }
@@ -149,6 +193,16 @@ class StudyViewModel @Inject constructor(
             else
                 state.expandedTopics + topic
             state.copy(expandedTopics = updated)
+        }
+    }
+
+    fun toggleSearchTopicExpanded(topic: String) {
+        _uiState.update { state ->
+            val updated = if (topic in state.searchCollapsedTopics)
+                state.searchCollapsedTopics - topic
+            else
+                state.searchCollapsedTopics + topic
+            state.copy(searchCollapsedTopics = updated)
         }
     }
 

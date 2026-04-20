@@ -537,6 +537,25 @@ fun SettingsScreen(
                 )
             }
 
+            SettingsRow(label = "Поиск: кнопка «Назад» из набора") {
+                Text(
+                    SEARCH_BACK_BEHAVIOR_LABELS[state.searchBackBehavior] ?: state.searchBackBehavior,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.primary,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.clickable { viewModel.onShowSearchBackBehaviorPicker() },
+                )
+            }
+            if (state.showSearchBackBehaviorPicker) {
+                StringPickerDialog(
+                    title = "Кнопка «Назад» из набора",
+                    options = SEARCH_BACK_BEHAVIOR_LABELS,
+                    selected = state.searchBackBehavior,
+                    onSelect = viewModel::onSearchBackBehaviorSelected,
+                    onDismiss = viewModel::onDismissSearchBackBehaviorPicker,
+                )
+            }
+
             // ── Problem words ──────────────────────────────────────────────────
             SectionHeader("Работа над ошибками")
             SettingsRow(label = "Включить режим работы над ошибками") {
@@ -741,6 +760,53 @@ private fun SettingsRow(label: String, trailing: @Composable () -> Unit) {
         trailing()
     }
     Spacer(Modifier.height(8.dp))
+}
+
+@Composable
+private fun StringPickerDialog(
+    title: String,
+    options: Map<String, String>,
+    selected: String,
+    onSelect: (String) -> Unit,
+    onDismiss: () -> Unit,
+) {
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(title) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                options.entries.forEach { (key, label) ->
+                    val isSelected = key == selected
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(8.dp))
+                            .background(
+                                if (isSelected) MaterialTheme.colorScheme.primaryContainer
+                                else MaterialTheme.colorScheme.surface
+                            )
+                            .clickable { onSelect(key) }
+                            .padding(horizontal = 12.dp, vertical = 12.dp),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Text(
+                            label,
+                            style = MaterialTheme.typography.bodyLarge,
+                            fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
+                            color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
+                                    else MaterialTheme.colorScheme.onSurface,
+                        )
+                        if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
+                    }
+                }
+            }
+        },
+        confirmButton = {},
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text("Отмена") }
+        },
+    )
 }
 
 @Composable

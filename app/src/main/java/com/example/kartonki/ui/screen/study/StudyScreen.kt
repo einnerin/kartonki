@@ -92,18 +92,14 @@ fun StudyScreen(
     viewModel: StudyViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsState()
-    var searchActive by remember { mutableStateOf(false) }
-    var searchQuery by remember { mutableStateOf("") }
-    val displayedSets = remember(searchQuery, uiState.filteredSets) {
-        if (searchQuery.isEmpty()) uiState.filteredSets
-        else uiState.filteredSets
-            .filter {
-                it.topic.contains(searchQuery, ignoreCase = true) ||
-                it.name.contains(searchQuery, ignoreCase = true) ||
-                it.description.contains(searchQuery, ignoreCase = true)
-            }
-            .sortedWith(compareBy({ it.topic }, { it.level }, { it.id }))
+    // Synchronous restore: reads SharedPreferences directly, no async timing issues.
+    val (initActive, initQuery) = remember {
+        val restore = viewModel.getSearchBackBehavior() == "restore"
+        val saved = viewModel.savedSearchQuery
+        if (restore && saved.isNotEmpty()) Pair(true, saved) else Pair(false, "")
     }
+    var searchActive by remember { mutableStateOf(initActive) }
+    var searchQuery by remember { mutableStateOf(initQuery) }
     OnResume { viewModel.refresh() }
 
     Scaffold(
@@ -175,7 +171,11 @@ fun StudyScreen(
                 visible = searchActive,
                 query = searchQuery,
                 onQueryChange = { searchQuery = it },
-                onClose = { searchActive = false; searchQuery = "" },
+                onClose = {
+                    searchActive = false
+                    searchQuery = ""
+                    viewModel.saveSearchQuery("")
+                },
             )
             // Problem words chip — appears when there are problem words
             if (uiState.problemWordCount > 0) {
@@ -251,47 +251,96 @@ fun StudyScreen(
                         contentPadding = PaddingValues(16.dp),
                         verticalArrangement = Arrangement.spacedBy(10.dp),
                     ) {
-                        val useGrouped = uiState.selectedTab == 0 && !searchActive
-                        if (!useGrouped) {
-                            items(displayedSets, key = { it.id }) { item ->
-                                WordSetCard(
-                                    item = item,
-                                    onClick = { onNavigateToSetDetail(item.id) },
-                                    onToggleFavorite = { viewModel.toggleFavorite(item.id) },
-                                )
+                        when {
+                            // ── Search mode: grouped by topic ──────────────────────────────
+                            searchActive && searchQuery.isNotEmpty() -> {
+                                val searchGroups = uiState.searchGroupedSets(searchQuery)
+                                if (searchGroups.isEmpty()) {
+                                    item(key = "search_empty") {
+                                        Box(
+                                            modifier = Modifier
+                                                .fillParentMaxWidth()
+                                                .padding(top = 64.dp),
+                                            contentAlignment = Alignment.Center,
+                                        ) {
+                                            Text(
+                                                text = "Ничего не найдено",
+                                                style = MaterialTheme.typography.bodyLarge,
+                                                color = TextSecondary,
+                                            )
+                                        }
+                                    }
+                                } else {
+                                    searchGroups.forEach { group ->
+                                        if (group.topic.isNotEmpty()) {
+                                            stickyHeader(key = "sh_${group.topic}") {
+                                                TopicHeader(
+                                                    topic = group.topic,
+                                                    count = group.sets.size,
+                                                    isExpanded = group.isExpanded,
+                                                    onClick = { viewModel.toggleSearchTopicExpanded(group.topic) },
+                                                )
+                                            }
+                                        }
+                                        if (group.isExpanded) {
+                                            items(group.sets, key = { "s_${it.id}" }) { item ->
+                                                WordSetCard(
+                                                    item = item,
+                                                    onClick = {
+                                                        viewModel.saveSearchQuery(searchQuery)
+                                                        onNavigateToSetDetail(item.id)
+                                                    },
+                                                    onToggleFavorite = { viewModel.toggleFavorite(item.id) },
+                                                )
+                                            }
+                                        }
+                                    }
+                                }
                             }
-                        } else {
-                            val grouped = uiState.groupedSets(uiState.activeFilters)
-                            val hasTopics = grouped.any { it.topic.isNotEmpty() }
-                            if (!hasTopics) {
-                                items(grouped.flatMap { it.sets }, key = { it.id }) { item ->
+                            // ── Normal grouped view (tab 0) ────────────────────────────────
+                            uiState.selectedTab == 0 -> {
+                                val grouped = uiState.groupedSets(uiState.activeFilters)
+                                val hasTopics = grouped.any { it.topic.isNotEmpty() }
+                                if (!hasTopics) {
+                                    items(grouped.flatMap { it.sets }, key = { it.id }) { item ->
+                                        WordSetCard(
+                                            item = item,
+                                            onClick = { onNavigateToSetDetail(item.id) },
+                                            onToggleFavorite = { viewModel.toggleFavorite(item.id) },
+                                        )
+                                    }
+                                } else {
+                                    grouped.forEach { group ->
+                                        if (group.topic.isNotEmpty()) {
+                                            stickyHeader(key = "header_${group.topic}") {
+                                                TopicHeader(
+                                                    topic = group.topic,
+                                                    count = group.sets.size,
+                                                    isExpanded = group.isExpanded,
+                                                    onClick = { viewModel.toggleTopicExpanded(group.topic) },
+                                                )
+                                            }
+                                        }
+                                        if (group.isExpanded) {
+                                            items(group.sets, key = { it.id }) { item ->
+                                                WordSetCard(
+                                                    item = item,
+                                                    onClick = { onNavigateToSetDetail(item.id) },
+                                                    onToggleFavorite = { viewModel.toggleFavorite(item.id) },
+                                                )
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // ── Favourites tab: flat list ──────────────────────────────────
+                            else -> {
+                                items(uiState.filteredSets, key = { it.id }) { item ->
                                     WordSetCard(
                                         item = item,
                                         onClick = { onNavigateToSetDetail(item.id) },
                                         onToggleFavorite = { viewModel.toggleFavorite(item.id) },
                                     )
-                                }
-                            } else {
-                                grouped.forEach { group ->
-                                    if (group.topic.isNotEmpty()) {
-                                        stickyHeader(key = "header_${group.topic}") {
-                                            TopicHeader(
-                                                topic = group.topic,
-                                                count = group.sets.size,
-                                                isExpanded = group.isExpanded,
-                                                onClick = { viewModel.toggleTopicExpanded(group.topic) },
-                                            )
-                                        }
-                                    }
-                                    if (group.isExpanded) {
-                                        items(group.sets, key = { it.id }) { item ->
-                                            WordSetCard(
-                                                item = item,
-                                                onClick = { onNavigateToSetDetail(item.id) },
-                                                onToggleFavorite = { viewModel.toggleFavorite(item.id) },
-                                            )
-                                        }
-                                    }
                                 }
                             }
                         }
