@@ -10,14 +10,14 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant {
 
     val sets = listOf(
-        WordSetEntity(id = 1022, name = "Документы: основы",      description = "Удостоверения, бланки и регистрация",   languagePair = "he-ru", orderIndex = 22,
-    topic = "Документы", level = 1),
-        WordSetEntity(id = 1023, name = "Алия: основы",            description = "Льготы и помощь новым репатриантам", languagePair = "he-ru", orderIndex = 23,
-    topic = "Алия", level = 1),
-        WordSetEntity(id = 1024, name = "Банк: основы",                description = "Банковская лексика для новичков",     languagePair = "he-ru", orderIndex = 24,
-    topic = "Банк", level = 1),
-        WordSetEntity(id = 1025, name = "Аэропорт: основы",                   description = "Перелёт, таможня, прилёт и вылет",      languagePair = "he-ru", orderIndex = 25,
-    topic = "Аэропорт", level = 1),
+        WordSetEntity(id = 1022, name = "Алия и Израиль: основы 2",  description = "Удостоверения, бланки и регистрация",   languagePair = "he-ru", orderIndex = 22,
+    topic = "Алия и Израиль", level = 1),
+        WordSetEntity(id = 1023, name = "Алия и Израиль: основы 3",  description = "Льготы и помощь новым репатриантам", languagePair = "he-ru", orderIndex = 23,
+    topic = "Алия и Израиль", level = 1),
+        WordSetEntity(id = 1024, name = "Финансы: основы 2",          description = "Банковская лексика для новичков",     languagePair = "he-ru", orderIndex = 24,
+    topic = "Финансы", level = 1),
+        WordSetEntity(id = 1025, name = "Алия и Израиль: основы 4",  description = "Перелёт, таможня, прилёт и вылет",      languagePair = "he-ru", orderIndex = 25,
+    topic = "Алия и Израиль", level = 1),
     )
 
     val words = listOf(

@@ -6,16 +6,16 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant11 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1172, languagePair = "he-ru", name = "Еда: основы", description = "Основные продукты питания", orderIndex = 172,
-    topic = "Еда", level = 1),
-        WordSetEntity(id = 1173, languagePair = "he-ru", name = "Цвета: основы", description = "Цвета, оттенки и геометрия", orderIndex = 173,
-    topic = "Цвета", level = 1),
-        WordSetEntity(id = 1174, languagePair = "he-ru", name = "Профессии: основы", description = "Специальности и занятия", orderIndex = 174,
-    topic = "Профессии", level = 1),
-        WordSetEntity(id = 1175, languagePair = "he-ru", name = "Дом: основы", description = "Предметы быта и обстановка", orderIndex = 175,
-    topic = "Дом", level = 1),
-        WordSetEntity(id = 1176, languagePair = "he-ru", name = "Университет: основы", description = "Высшее образование и академическая жизнь", orderIndex = 176,
-    topic = "Университет", level = 1),
+        WordSetEntity(id = 1172, languagePair = "he-ru", name = "Еда и кулинария: основы 10",      description = "Основные продукты питания", orderIndex = 172,
+    topic = "Еда и кулинария", level = 1),
+        WordSetEntity(id = 1173, languagePair = "he-ru", name = "Лингвистика: основы 3",           description = "Цвета, оттенки и геометрия", orderIndex = 173,
+    topic = "Лингвистика", level = 1),
+        WordSetEntity(id = 1174, languagePair = "he-ru", name = "Работа и карьера: основы 7",      description = "Специальности и занятия", orderIndex = 174,
+    topic = "Работа и карьера", level = 1),
+        WordSetEntity(id = 1175, languagePair = "he-ru", name = "Дом и быт: основы 11",            description = "Предметы быта и обстановка", orderIndex = 175,
+    topic = "Дом и быт", level = 1),
+        WordSetEntity(id = 1176, languagePair = "he-ru", name = "Образование: основы 8",           description = "Высшее образование и академическая жизнь", orderIndex = 176,
+    topic = "Образование", level = 1),
         WordSetEntity(id = 1177, languagePair = "he-ru", name = "Политика: основы 2", description = "Государственное устройство и политика", orderIndex = 177,
     topic = "Политика", level = 1),
     )

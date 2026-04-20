@@ -8,7 +8,7 @@ object WordDataHebrewImmigrant8 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(id = 1154, languagePair = "he-ru", name = "Медицина: основы 5",              description = "Лекарства и здоровье", orderIndex = 154, topic = "Медицина", level = 1),
         WordSetEntity(id = 1155, languagePair = "he-ru", name = "Финансы: основы 6",              description = "Банковские услуги и финансы", orderIndex = 155, topic = "Финансы", level = 1),
-        WordSetEntity(id = 1156, languagePair = "he-ru", name = "Мода: основы 6",                 description = "Одежда и покупки", orderIndex = 156, topic = "Мода", level = 1),
+        WordSetEntity(id = 1156, languagePair = "he-ru", name = "Одежда: основы 3",               description = "Одежда и покупки", orderIndex = 156, topic = "Одежда", level = 1),
         WordSetEntity(id = 1157, languagePair = "he-ru", name = "Образование: основы 7",          description = "Учёба и воспитание", orderIndex = 157, topic = "Образование", level = 1),
         WordSetEntity(id = 1158, languagePair = "he-ru", name = "Природа и экология: основы 11",  description = "Пейзажи и климат", orderIndex = 158, topic = "Природа и экология", level = 1),
         WordSetEntity(id = 1159, languagePair = "he-ru", name = "Спорт: основы 6",               description = "Занятия спортом", orderIndex = 159, topic = "Спорт", level = 1),
