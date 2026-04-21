@@ -2,30 +2,39 @@
 
 ## Готово
 
+### Полировка
 - **Batch3** (сеты 250–252) — 75 def + 14 example
 - **Batch4** (сеты 253–255) — 75 def + 18 example (3 blood-правки по обновлённому стандарту)
 - **Batch5** (сеты 256–258) — 75 def + 18 example
 - **Batch6** (сеты 259–261) — 43 def + 14 example
 - **WordDataEnglish.kt сеты 1–5** — 125 def правок (example ещё не делались)
 
+### Первичное написание текстов (text-author)
+- **Batch7** (262–264), **Batch8** (265–267), **Batch9** (268–270), **Batch10** (271–273) — 300 слов × 4 поля
+- **Batch11** (274–278), **Batch12** (279–283) — 250 слов × 4 поля
+- **Batch13** (284–287) — 100 слов × 4 поля
+- **Batch14** (288–291), **Batch15** (292–295), **Batch16** (296–298) — 275 слов × 4 поля
+- **Всего:** 37 setId × 25 слов = 925 слов × 4 поля = **3700 новых текстов**
+
+### Первичное заполнение pos/semanticGroup (metadata-filler)
+- Все 37 setId из списка выше получили `pos` (длинные формы: noun/verb/adjective/adverb/preposition/pronoun/interjection/number) и `semanticGroup` по принципу «опасных близнецов» (слова в одной группе — правдоподобные альтернативы в квизе)
+- **222 уникальных semanticGroup** на 925 слов (~6 групп на setId)
+- Размеры: 48 групп по 2 слова (21.6%), 170 групп 3-8 слов (76.6%), 4 группы 9+ слов (1.8%)
+- 1-словных групп нет (кросс-наборные группы `city_ways`/`city_venues_civic` покрывают единичные члены через `WordSetRepository.getDistractorExtras`)
+
 ## Осталось
 
-### Полировка существующих текстов
+### Полировка `definitionNative` в Batch3–6 + Batch17
+**Новая задача.** Обнаружено при работе с text-author: в уже отполированных Batch3–6 поле `definitionNative` осталось **деревянным** (канцелярит «используемый для», «подаваемый» и т.п.) — polisher в прошлой сессии правил только английский `definition`. Поле **используется в квизах** (`MULTIPLE_CHOICE_DEFINITION_NATIVE`) и показывается на LEGENDARY-карточках — критично для UX.
+
+**Что делать:** прогнать `definition-polisher` с инструкцией править именно `definitionNative` по стандарту живого стиля (без канцелярита). Файлы: Batch3, Batch4, Batch5, Batch6, Batch17 — 325 слов.
+
+### Полировка больших файлов (не трогались)
 - **WordDataEnglish.kt сеты 6–84** — definitions (остаток ~1952 слов) + examples всех 2077 слов
 - **WordDataEnglishExpanded.kt** — definitions + examples (~1265 слов)
 
-### Первичное написание (НЕ полировка)
-Обнаружено при попытке полировки **2026-04-21**: файлы ниже не содержат полей `definition`, `definitionNative`, `example`, `exampleNative` вообще — только `id`, `setId`, `languagePair`, `rarity`, `original`, `translation`. Polisher'ы здесь бесполезны; нужен отдельный процесс первичного заполнения по стандартам.
-
-- **WordDataEnglishBatch7.kt** (сеты 262–264) — 75 слов
-- **WordDataEnglishBatch8.kt** (сеты 265–267) — 75 слов
-- **WordDataEnglishBatch9.kt** (сеты 268–270) — 75 слов
-- **WordDataEnglishBatch10.kt** (сеты 271–273) — 75 слов
-- **WordDataEnglishBatch11.kt** (сеты 274–278) — 125 слов
-- **WordDataEnglishBatch12.kt** (сеты 279–283) — 125 слов
-- **WordDataEnglishBatch13.kt** (сеты 284–287) — 100 слов
-
-Итого: 650 слов, которым нужно написать definition/definitionNative/example/exampleNative с нуля (по 4 текста на слово = 2600 текстов).
+### Нормализация pos: `adj` → `adjective`, `adv` → `adverb`
+33 слов в базе имеют `pos = "adj"` и 6 — `pos = "adv"` (устаревшая короткая форма). Это ломает strict-equality в `QuizBuilder.pickDistractors` tier1. **Что делать:** sed-замена по всей базе. Мелкая задача.
 
 ## Стратегия для больших файлов
 
@@ -35,13 +44,16 @@
 
 Между чанками: коммит с указанием сетов в сообщении, пуш, отчёт.
 
-## Стратегия для пустых файлов (Batch7–13)
+## Инфраструктура агентов (всё под git)
 
-Вариант 1 — расширить sub-agent'ы (`definition-polisher`, `example-polisher`) так, чтобы они умели не только править, но и создавать поле при отсутствии. Плюс: один конвейер. Минус: смешиваются две разные задачи в одном агенте.
+| Агент | Назначение | Спека |
+|-------|-----------|-------|
+| `definition-polisher` | Правит существующие `definition` в живой стиль | `.claude/agents/definition-polisher.md` |
+| `example-polisher` | Правит `example` в живую речь носителя | `.claude/agents/example-polisher.md` |
+| `text-author` | Пишет с нуля 4 текстовых поля | `.claude/agents/text-author.md` |
+| `metadata-filler` | Заполняет pos/semanticGroup | `.claude/agents/metadata-filler.md` |
 
-Вариант 2 — создать отдельный sub-agent `text-author` (или использовать skill `/add-words` итеративно), который пишет все 4 поля с нуля по стандартам. Плюс: чистое разделение. Минус: новая инфраструктура.
-
-**Рекомендация:** Вариант 2. Писать с нуля — качественно иная работа, чем править; смешение мандатов усложняет ревью.
+Стандарты качества в `docs/claude/quality_standards_definitions.md` и `docs/claude/quality_standards_examples.md`.
 
 ## Иврит
 
