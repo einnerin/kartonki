@@ -99,14 +99,19 @@ def validate(set_id):
             text = w.get(field)
             if not text:
                 continue
-            # Only check English-root terms in definition (English),
-            # and Russian-root terms in definitionNative (Russian).
-            # But original is English (en-ru) — it would be mostly in definition.
-            # For he-ru, original is Hebrew — script difference makes false positive low.
+            # definition (изучаемый язык) — ищем однокоренные original.
+            # definitionNative (русский) — ищем И однокоренные translation,
+            # И литеральное проникновение original (если автор ленясь вставил
+            # английское слово в русский текст — «napkin» в русской деф.).
+            # Транслитерацию (computer↔компьютер без общего translation-стема)
+            # текущий подход не ловит — это отдельная задача с translit-таблицей.
             if field == "definition":
                 relevant = [t for t in terms if t[0] in ("original", "original_phrase")]
-            else:
-                relevant = [t for t in terms if t[0] in ("translation", "translation_phrase")]
+            else:  # definitionNative — оба источника
+                relevant = [t for t in terms if t[0] in (
+                    "translation", "translation_phrase",
+                    "original", "original_phrase",
+                )]
             hits = find_cognate(text, relevant)
             if hits:
                 violations.append((w["id"], w["original"], field, hits))

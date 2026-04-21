@@ -88,5 +88,16 @@ object WordDataBadFixture {
             example = "This bad_rarity_outlier is rare.",
             exampleNative = "Очень редкое bad_rarity_outlier.",
             pos = "noun", semanticGroup = "bad_group_b"),
+
+        // 8. violate validate_no_cognates НОВАЯ ПРОВЕРКА — литеральное английское
+        // original внутри definitionNative (translation не содержит корня, но
+        // английское слово protruded в русский текст).
+        WordEntity(id = 999209, setId = 9992, languagePair = "en-ru", rarity = "COMMON",
+            original = "leakword", translation = "утечка-русский",
+            definition = "An English root unexpectedly appears in the Russian definition.",
+            definitionNative = "Английский leakword просочился в русский текст определения.",
+            example = "The leakword made a mess.",
+            exampleNative = "leakword всплыл некстати.",
+            pos = "noun", semanticGroup = "bad_group_b"),
     )
 }

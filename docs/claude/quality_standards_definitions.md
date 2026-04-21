@@ -30,6 +30,13 @@
 - `blood pressure` → «The force of your **blood** pushing against artery walls.» ✅ (слово `blood` отдельно допустимо)
 - `blood pressure` → «The force of your **blood pressure** against artery walls.» ❌ (вся фраза целиком недопустима)
 
+**Важно для `definitionNative` (русское определение):** запрет однокоренных действует к связке **{translation, original}** одновременно. Ловим и русские однокоренные перевода, и **литеральное проникновение английского `original`** в русский текст.
+
+- `original = "napkin"`, `translation = "салфетка"`, `definitionNative = "Небольшой napkin на столе..."` — ❌ (слово `napkin` литерально в русской деф.)
+- Валидатор `validate_no_cognates` это ловит через substring-match стема `original`.
+
+Ограничение: транслитерации вида `computer`/`компьютер` при `translation="ЭВМ"` substring не ловит — нужна translit-таблица english→cyrillic (отложенная задача). Обычно случай покрывается через `translation`, поскольку реальные русские переводы интернациональных слов сами являются транслитерацией («компьютер», «менеджер», «пицца»).
+
 ### 2. Лимит длины
 - **Максимум 14 слов** в определении
 - **Максимум 80 символов**
