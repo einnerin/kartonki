@@ -47,8 +47,21 @@
 ## Git — после каждой задачи
 
 1. Собери: `JAVA_HOME="C:/Program Files/Android/Android Studio/jbr" ./gradlew assembleDebug` → должно быть `BUILD SUCCESSFUL`
-2. `git add` изменённые файлы
+2. `git add` изменённые файлы **по явным путям** (см. правила ниже)
 3. Коммит на русском языке + строка `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>`
 4. `git push origin main`
+
+### Запрет на `git add -A` / `git add .`
+
+Никогда не использовать `git add -A` или `git add .` для коммитов изменений кода. Это может захватить untracked-файлы из параллельных сессий, отладочный мусор, worktree-папки, локальные скрипты.
+
+Вместо этого — **явное указание путей**:
+- `git add app/src/main/java/com/example/kartonki/data/WordData*.kt` — по паттерну
+- `git add scripts/validate/` — конкретная директория
+- `git add .claude/agents/new-agent.md` — конкретный файл
+
+Перед коммитом **обязательно** смотреть `git status` и визуально подтверждать, что в Staged changes нет ничего лишнего.
+
+**Инцидент:** коммит `f353472` (revert `def4fee`) — попытка `git add -A` захватила 60+ untracked-файлов из параллельных сессий (Python-скрипты, отладочные txt) и подцепила `.claude/worktrees/agent-a054b794` как embedded git repository (submodule mode 160000). Пришлось делать revert, пересобирать коммит, проводить чистку.
 
 Если в процессе работы обнаруживаешь новый «подводный камень» — **добавляй его в соответствующий файл** из таблицы выше, а не сюда.
