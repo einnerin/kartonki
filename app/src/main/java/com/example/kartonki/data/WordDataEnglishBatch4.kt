@@ -185,7 +185,7 @@ object WordDataEnglishBatch4 {
             definitionNative = "Напиток из протеинового порошка и молока или воды, обычно употребляемый после тренировки.",
             exampleNative = "Она выпила protein shake в течение тридцати минут после тренировки."),
 
-                WordEntity(id = 25325, original = "aerobic", transliteration = "[ɛˈroʊbɪk]", translation = "аэробный", rarity = "UNCOMMON", setId = 253, languagePair = "en-ru", pos = "adj", semanticGroup = "fitness",
+                WordEntity(id = 25325, original = "aerobic", transliteration = "[ɛˈroʊbɪk]", translation = "аэробный", rarity = "UNCOMMON", setId = 253, languagePair = "en-ru", pos = "adjective", semanticGroup = "fitness",
             definition = "Linked to long activity that makes you breathe hard — like jogging.",
             example = "Swimming is one of the best aerobic exercises for the whole body.",
             definitionNative = "Относящийся к упражнениям, повышающим частоту сердечных сокращений на длительный период.",
