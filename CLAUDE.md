@@ -23,6 +23,8 @@
 
 | Задача | Инструкции |
 |--------|-----------|
+| **Подготовка релиза в Play Store (отложено)** | [`docs/claude/release-plan.md`](docs/claude/release-plan.md) — текущий статус + TODO для release-подготовки |
+| **Аналитика (работает, скелет для расширения)** | [`docs/claude/analytics-plan.md`](docs/claude/analytics-plan.md) — схема событий и архитектура |
 | **Переработка he-ru наборов (активная задача)** | [`docs/claude/he-ru-restructure-plan.md`](docs/claude/he-ru-restructure-plan.md) — **читать первым** |
 | **Рефакторинг существующих наборов** | [`docs/claude/rework-plan.md`](docs/claude/rework-plan.md) — там прогресс старых задач |
 | Добавить / изменить набор слов | [`docs/claude/word-sets.md`](docs/claude/word-sets.md) |
