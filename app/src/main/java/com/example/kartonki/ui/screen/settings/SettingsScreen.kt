@@ -615,10 +615,10 @@ fun SettingsScreen(
             NavRow(s.settingsAchievements, onClick = onNavigateToAchievements)
             Spacer(Modifier.height(32.dp))
 
-            // ── App version (7 taps to enable tester mode) ─────────────────────
+            // ── App version (7 taps to toggle tester mode) ────────────────────
             AppVersionFooter(
                 testerModeEnabled = state.testerModeEnabled,
-                onTesterModeActivated = viewModel::onTesterModeActivated,
+                onTesterModeToggled = viewModel::onTesterModeToggled,
             )
             Spacer(Modifier.height(16.dp))
         }
@@ -943,51 +943,47 @@ private fun NavRow(label: String, onClick: () -> Unit) {
 @Composable
 private fun AppVersionFooter(
     testerModeEnabled: Boolean,
-    onTesterModeActivated: () -> Unit,
+    onTesterModeToggled: (Boolean) -> Unit,
 ) {
     val context = androidx.compose.ui.platform.LocalContext.current
     var tapCount by androidx.compose.runtime.remember { androidx.compose.runtime.mutableStateOf(0) }
     val versionLabel = "Версия ${com.example.kartonki.BuildConfig.VERSION_NAME} " +
         "(build ${com.example.kartonki.BuildConfig.VERSION_CODE})"
+    // Inline-счётчик — видно прямо в тексте, без очереди Toast'ов
+    val displayText = if (tapCount in 1..6) "$versionLabel · тап $tapCount/7" else versionLabel
 
     Column(
         modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Text(
-            text = versionLabel,
+            text = displayText,
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier
                 .clickable(
-                    enabled = !testerModeEnabled,
                     indication = null,
                     interactionSource = androidx.compose.runtime.remember { androidx.compose.foundation.interaction.MutableInteractionSource() },
                 ) {
                     val newCount = tapCount + 1
-                    tapCount = newCount
                     if (newCount >= 7) {
-                        onTesterModeActivated()
+                        val newState = !testerModeEnabled
+                        onTesterModeToggled(newState)
                         android.widget.Toast.makeText(
                             context,
-                            "Tester mode активирован",
+                            if (newState) "Tester mode включён" else "Tester mode выключён",
                             android.widget.Toast.LENGTH_SHORT,
                         ).show()
                         tapCount = 0
-                    } else if (newCount in 4..6) {
-                        // Подсказка при подходе к порогу
-                        android.widget.Toast.makeText(
-                            context,
-                            "Ещё ${7 - newCount} тапа",
-                            android.widget.Toast.LENGTH_SHORT,
-                        ).show()
+                    } else {
+                        tapCount = newCount
                     }
                 }
                 .padding(8.dp),
         )
         if (testerModeEnabled) {
             Text(
-                text = "Tester mode включён — твои сессии не учитываются в публичной статистике",
+                text = "Tester mode включён — твои сессии не учитываются в публичной статистике. Ещё 7 тапов по версии — выключить.",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.tertiary,
                 modifier = Modifier.padding(horizontal = 16.dp),

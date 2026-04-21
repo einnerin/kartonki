@@ -399,9 +399,12 @@ class SettingsViewModel @Inject constructor(
         prefs.setAvatarChoice(uri.toString())
     }
 
-    /** 7 тапов по версии приложения в Settings включают флаг — фильтр в Firebase Analytics. */
-    fun onTesterModeActivated() = viewModelScope.launch {
-        prefs.setTesterModeEnabled(true)
-        _uiState.update { it.copy(testerModeEnabled = true) }
+    /**
+     * 7 тапов по версии приложения в Settings переключают флаг tester-mode.
+     * Когда включён — user_id="tester" в Firebase Analytics; отфильтровать в дашборде.
+     */
+    fun onTesterModeToggled(newState: Boolean) = viewModelScope.launch {
+        prefs.setTesterModeEnabled(newState)
+        _uiState.update { it.copy(testerModeEnabled = newState) }
     }
 }
