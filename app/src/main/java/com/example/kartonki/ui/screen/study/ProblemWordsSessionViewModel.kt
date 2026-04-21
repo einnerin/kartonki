@@ -46,7 +46,12 @@ class ProblemWordsSessionViewModel @Inject constructor(
     private val achievementRepository: AchievementRepository,
     private val packRepository: PackRepository,
     private val prefs: UserPreferencesRepository,
+    private val analytics: com.example.kartonki.analytics.AnalyticsManager,
 ) : ViewModel() {
+
+    private val sessionStartedAtMs: Long = System.currentTimeMillis()
+    private var sessionStartedLogged = false
+    private var sessionFinishedLogged = false
 
     private val _uiState = MutableStateFlow(ProblemSessionUiState())
     val uiState: StateFlow<ProblemSessionUiState> = _uiState.asStateFlow()
@@ -114,6 +119,17 @@ class ProblemWordsSessionViewModel @Inject constructor(
                     wordsStudied = words.size,
                 )
             }
+            if (!sessionStartedLogged) {
+                sessionStartedLogged = true
+                analytics.log(
+                    com.example.kartonki.analytics.AnalyticsEvent.SessionStarted(
+                        mode = com.example.kartonki.analytics.SessionMode.PVE_PROBLEM_WORDS,
+                        deckLevel = null,
+                        deckSize = words.size,
+                        deckAvgRarity = null,
+                    )
+                )
+            }
         }
     }
 
@@ -133,6 +149,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
 
     private fun recordAnswer(step: StudyStep.Quiz, isCorrect: Boolean, selected: String) {
         val wordId = step.word.id
+        val failsBefore = sessionIncorrect[wordId] ?: 0
         if (isCorrect) sessionCorrect[wordId] = (sessionCorrect[wordId] ?: 0) + 1
         else sessionIncorrect[wordId] = (sessionIncorrect[wordId] ?: 0) + 1
 
@@ -143,6 +160,23 @@ class ProblemWordsSessionViewModel @Inject constructor(
                 incorrectCount = if (!isCorrect) it.incorrectCount + 1 else it.incorrectCount,
             )
         }
+        analytics.log(
+            com.example.kartonki.analytics.AnalyticsEvent.QuizAnswered(
+                wordId = wordId,
+                quizType = step.type.name,
+                correct = isCorrect,
+                responseMs = 0L,  // в этом VM нет точного timing — лишний шум; оставляем 0
+                distractorCount = step.options.size.coerceAtLeast(1) - 1,
+                attemptNumber = 1,
+            )
+        )
+        analytics.log(
+            com.example.kartonki.analytics.AnalyticsEvent.ProblemWordReviewed(
+                wordId = wordId,
+                failCountBefore = failsBefore,
+                correctNow = isCorrect,
+            )
+        )
         saveProgress(step.word, isCorrect)
     }
 
@@ -150,6 +184,8 @@ class ProblemWordsSessionViewModel @Inject constructor(
         val next = _uiState.value.currentStepIndex + 1
         if (next >= _uiState.value.steps.size) {
             val incorrectCount = _uiState.value.incorrectCount
+            val correctCount = _uiState.value.correctCount
+            val totalSteps = _uiState.value.steps.size
             viewModelScope.launch {
                 val improved = computeImprovedCount()
                 val learned  = applyMasteryAndCount()
@@ -165,9 +201,45 @@ class ProblemWordsSessionViewModel @Inject constructor(
                 }
                 achievementRepository.recordStudyDay(incorrectCount)
                 packRepository.onActivityCompleted()
+                if (!sessionFinishedLogged) {
+                    sessionFinishedLogged = true
+                    analytics.log(
+                        com.example.kartonki.analytics.AnalyticsEvent.SessionFinished(
+                            mode = com.example.kartonki.analytics.SessionMode.PVE_PROBLEM_WORDS,
+                            durationSec = (System.currentTimeMillis() - sessionStartedAtMs) / 1000,
+                            wordsReviewed = totalSteps,
+                            correctCount = correctCount,
+                            completed = true,
+                        )
+                    )
+                    val failStreakWords = sessionIncorrect.values.count { it >= 2 }
+                    analytics.log(
+                        com.example.kartonki.analytics.AnalyticsEvent.ProblemWordsSessionCompleted(
+                            wordsReviewed = sessionCorrect.size + sessionIncorrect.size,
+                            learnedCount = learned,
+                            failStreakWords = failStreakWords,
+                        )
+                    )
+                }
             }
         } else {
             _uiState.update { it.copy(currentStepIndex = next) }
+        }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        if (sessionStartedLogged && !sessionFinishedLogged) {
+            val state = _uiState.value
+            val total = state.steps.size.coerceAtLeast(1)
+            val percent = ((state.currentStepIndex * 100) / total).coerceIn(0, 100)
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.SessionAbandoned(
+                    mode = com.example.kartonki.analytics.SessionMode.PVE_PROBLEM_WORDS,
+                    completedPercent = percent,
+                    reason = com.example.kartonki.analytics.AbandonReason.BACK_PRESS,
+                )
+            )
         }
     }
 

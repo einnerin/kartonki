@@ -29,6 +29,7 @@ data class LoginUiState(
 class LoginViewModel @Inject constructor(
     private val authManager: FirebaseAuthManager,
     private val userRepository: FirestoreUserRepository,
+    private val analytics: com.example.kartonki.analytics.AnalyticsManager,
 ) : ViewModel() {
 
     // Web client ID — needs to be set up in Firebase Console → Authentication → Google
@@ -59,8 +60,15 @@ class LoginViewModel @Inject constructor(
                 }
                 val result = authManager.firebaseSignInWithGoogle(idToken)
                 result.onSuccess { profile ->
+                    val firstTime = userRepository.getProfile(profile.uid) == null
                     userRepository.saveProfile(profile)
                     _uiState.update { it.copy(isLoading = false, isSignedIn = true) }
+                    analytics.log(
+                        com.example.kartonki.analytics.AnalyticsEvent.LoginMethod(
+                            method = "google",
+                            firstTime = firstTime,
+                        )
+                    )
                 }.onFailure { e ->
                     val msg = e.message?.takeIf { it.isNotBlank() } ?: "${e.javaClass.simpleName} (без сообщения)"
                     Log.e(TAG, "Firebase sign-in failed: $msg", e)

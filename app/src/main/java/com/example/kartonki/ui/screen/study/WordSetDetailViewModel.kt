@@ -27,12 +27,15 @@ class WordSetDetailViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val wordSetRepository: WordSetRepository,
     private val progressRepository: ProgressRepository,
+    private val analytics: com.example.kartonki.analytics.AnalyticsManager,
 ) : ViewModel() {
 
     val setId: Long = checkNotNull(savedStateHandle[Route.WordSetDetail.ARG_SET_ID])
 
     private val _uiState = MutableStateFlow(WordSetDetailUiState())
     val uiState: StateFlow<WordSetDetailUiState> = _uiState.asStateFlow()
+
+    private var setOpenedLogged = false
 
     init {
         load()
@@ -44,13 +47,34 @@ class WordSetDetailViewModel @Inject constructor(
             val set = wordSetRepository.getSetById(setId)
             val words = wordSetRepository.getWordsInSet(setId)
             val progress = progressRepository.getProgressForSet(setId)
+            val introduced = progress.count { p -> p.level > 0 }
             _uiState.update {
                 it.copy(
                     isLoading = false,
                     setName = set?.name ?: "",
                     words = words,
-                    introducedWords = progress.count { p -> p.level > 0 },
+                    introducedWords = introduced,
                 )
+            }
+            if (!setOpenedLogged) {
+                setOpenedLogged = true
+                analytics.log(
+                    com.example.kartonki.analytics.AnalyticsEvent.SetOpened(
+                        setId = setId.toInt(),
+                        firstTime = introduced == 0,
+                        fromScreen = "study_detail",
+                    )
+                )
+                // set_completed: все слова сета прошли минимум 1 верный ответ
+                if (words.isNotEmpty() && introduced >= words.size) {
+                    analytics.log(
+                        com.example.kartonki.analytics.AnalyticsEvent.SetCompleted(
+                            setId = setId.toInt(),
+                            daysSinceFirstOpen = 0,  // вычисление точной даты — отдельная задача
+                            totalAttempts = progress.sumOf { it.correctCount + it.incorrectCount },
+                        )
+                    )
+                }
             }
         }
     }

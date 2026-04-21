@@ -63,6 +63,8 @@ class StudySessionViewModel @Inject constructor(
     private val sessionStartedAtMs: Long = System.currentTimeMillis()
     private var sessionStartedLogged = false
     private var sessionFinishedLogged = false
+    private var currentStepShownAtMs: Long = 0L
+    private val seenWordIdsInSession = mutableSetOf<Long>()
 
     init {
         loadSession()
@@ -103,6 +105,7 @@ class StudySessionViewModel @Inject constructor(
                     )
                 )
             }
+            logWordSeenIfNew()
         }
     }
 
@@ -121,6 +124,7 @@ class StudySessionViewModel @Inject constructor(
     }
 
     private fun recordAnswer(step: StudyStep.Quiz, isCorrect: Boolean, selected: String) {
+        val responseMs = if (currentStepShownAtMs > 0) System.currentTimeMillis() - currentStepShownAtMs else 0L
         _uiState.update {
             it.copy(
                 answerState = AnswerState.Answered(isCorrect, step.correctAnswer, selected),
@@ -128,6 +132,16 @@ class StudySessionViewModel @Inject constructor(
                 incorrectCount = if (!isCorrect) it.incorrectCount + 1 else it.incorrectCount,
             )
         }
+        analytics.log(
+            com.example.kartonki.analytics.AnalyticsEvent.QuizAnswered(
+                wordId = step.word.id,
+                quizType = step.type.name,
+                correct = isCorrect,
+                responseMs = responseMs,
+                distractorCount = step.options.size.coerceAtLeast(1) - 1,
+                attemptNumber = 1,
+            )
+        )
         saveProgress(step.word, isCorrect)
     }
 
@@ -156,6 +170,27 @@ class StudySessionViewModel @Inject constructor(
             }
         } else {
             _uiState.update { it.copy(currentStepIndex = next) }
+            logWordSeenIfNew()
+        }
+    }
+
+    private fun logWordSeenIfNew() {
+        val step = _uiState.value.currentStep ?: return
+        val word = when (step) {
+            is StudyStep.Introduction -> step.word
+            is StudyStep.Quiz -> step.word
+        }
+        currentStepShownAtMs = System.currentTimeMillis()
+        if (seenWordIdsInSession.add(word.id)) {
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.WordSeen(
+                    wordId = word.id,
+                    setId = setId.toInt(),
+                    rarity = word.rarity.name,
+                    languagePair = word.languagePair,
+                    sessionMode = com.example.kartonki.analytics.SessionMode.SET_STUDY,
+                )
+            )
         }
     }
 

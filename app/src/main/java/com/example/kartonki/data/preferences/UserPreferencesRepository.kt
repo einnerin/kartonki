@@ -42,6 +42,7 @@ class UserPreferencesRepository @Inject constructor(
         const val PRESET_DECKS_WORD_VERSION     = "preset_decks_word_version"  // Int: WordDataVersion stored at last deck rebuild
         const val SEARCH_BACK_BEHAVIOR          = "search_back_behavior"        // "clear" | "restore"
         const val TESTER_MODE_ENABLED           = "tester_mode_enabled"         // Boolean — анонимный маркер для фильтрации аналитики
+        const val INSTALL_COHORT_WEEK           = "install_cohort_week"         // String "YYYY-WW" — для cohort-аналитики
     }
 
     companion object {
@@ -156,6 +157,10 @@ class UserPreferencesRepository @Inject constructor(
     val testerModeEnabled: Flow<Boolean> = prefsFlow().map { it.getBoolean(Keys.TESTER_MODE_ENABLED, false) }
     fun isTesterModeEnabled(): Boolean = prefs.getBoolean(Keys.TESTER_MODE_ENABLED, false)
     fun setTesterModeEnabled(enabled: Boolean) = prefs.edit().putBoolean(Keys.TESTER_MODE_ENABLED, enabled).apply()
+
+    /** Cohort week — фиксируется один раз при первом запуске для аналитики «когорта установки X неделя». */
+    fun getInstallCohortWeek(): String = prefs.getString(Keys.INSTALL_COHORT_WEEK, "") ?: ""
+    fun setInstallCohortWeek(weekTag: String) = prefs.edit().putString(Keys.INSTALL_COHORT_WEEK, weekTag).apply()
 
     val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
         val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)

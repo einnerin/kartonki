@@ -25,6 +25,7 @@ data class PackOpeningUiState(
 @HiltViewModel
 class PackOpeningViewModel @Inject constructor(
     private val packRepository: PackRepository,
+    private val analytics: com.example.kartonki.analytics.AnalyticsManager,
     savedStateHandle: SavedStateHandle,
 ) : ViewModel() {
 
@@ -37,6 +38,19 @@ class PackOpeningViewModel @Inject constructor(
         viewModelScope.launch {
             val cards = packRepository.consumeAndOpenPacks(packCount)
             _uiState.update { it.copy(isLoading = false, cards = cards) }
+            // pack_opened — по одному event на каждый pack (можно хорошо раскрыть rarity-распределение)
+            val highest = cards.maxByOrNull { com.example.kartonki.domain.model.Rarity.valueOf(it.rarity.name).points }?.rarity?.name ?: "COMMON"
+            repeat(packCount) {
+                analytics.log(
+                    com.example.kartonki.analytics.AnalyticsEvent.PackOpened(
+                        packType = "standard",
+                        newCardsCount = cards.size / packCount.coerceAtLeast(1),
+                        duplicatesCount = 0,  // duplicate detection — Фаза 5 если понадобится
+                        highestRarityObtained = highest,
+                        packSource = "activity_reward",
+                    )
+                )
+            }
         }
     }
 

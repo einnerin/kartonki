@@ -36,6 +36,7 @@ class MyDecksViewModel @Inject constructor(
     private val deckDao: DeckDao,
     private val collectionRepository: CollectionRepository,
     private val prefs: UserPreferencesRepository,
+    private val analytics: com.example.kartonki.analytics.AnalyticsManager,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(MyDecksUiState())
@@ -59,6 +60,22 @@ class MyDecksViewModel @Inject constructor(
             val languagePair = prefs.getLanguagePair()
             val newId = deckDao.insertDeck(DeckEntity(name = trimmed, level = level, languagePair = languagePair))
             _uiState.update { it.copy(showCreateDialog = false, navigateToDeckId = newId) }
+            // Empty deck just created — partial deck_built event without rarity info.
+            // DeckBuilder will emit deck_edited as user adds cards.
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.DeckBuilt(
+                    size = 0,
+                    avgRarity = "EMPTY",
+                    commonCount = 0,
+                    uncommonCount = 0,
+                    rareCount = 0,
+                    epicCount = 0,
+                    legendaryCount = 0,
+                    languagePair = languagePair,
+                    buildDurationSec = 0L,
+                    cardsConsidered = 0,
+                )
+            )
         }
     }
 
@@ -69,6 +86,12 @@ class MyDecksViewModel @Inject constructor(
             deckDao.clearDeck(deck.id)
             deckDao.deleteDeck(DeckEntity(id = deck.id, name = deck.name))
             loadDecks()
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.DeckDeleted(
+                    ageDays = 0,  // age tracking — Фаза 4 (нужно поле created_at в DeckEntity)
+                    wasEverUsed = deck.cardCount > 0,
+                )
+            )
         }
     }
 

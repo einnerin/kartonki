@@ -73,7 +73,13 @@ class PvpGameViewModel @Inject constructor(
     private val progressRepository: ProgressRepository,
     private val packRepository: PackRepository,
     private val prefs: UserPreferencesRepository,
+    private val analytics: com.example.kartonki.analytics.AnalyticsManager,
 ) : ViewModel() {
+
+    private val matchStartedAtMs: Long = System.currentTimeMillis()
+    private var matchStartedLogged = false
+    private var matchFinishedLogged = false
+    private var roundsPlayed = 0
 
     private val deck1Id: Long = checkNotNull(savedStateHandle[Route.PvpGame.ARG_DECK1_ID])
     private val deck2Id: Long = checkNotNull(savedStateHandle[Route.PvpGame.ARG_DECK2_ID])
@@ -133,6 +139,17 @@ class PvpGameViewModel @Inject constructor(
                 )
             }
             startTimer()
+            if (!matchStartedLogged) {
+                matchStartedLogged = true
+                analytics.log(
+                    com.example.kartonki.analytics.AnalyticsEvent.PvpLocalMatchStarted(
+                        p1DeckLevel = 0,  // level живёт в DeckEntity, ещё не подгружен в этом VM — Фаза 4
+                        p1DeckSize = deck1Words.size,
+                        p2DeckLevel = 0,
+                        p2DeckSize = deck2Words.size,
+                    )
+                )
+            }
         }
     }
 
@@ -328,6 +345,26 @@ class PvpGameViewModel @Inject constructor(
         }
         _uiState.update {
             it.copy(players = players, phase = PvpPhase.GameOver(loserIndex = loserIndex, reason = reason))
+        }
+        if (!matchFinishedLogged) {
+            matchFinishedLogged = true
+            val winnerSlot = when {
+                players[0].score > players[1].score -> 1
+                players[1].score > players[0].score -> 2
+                else -> 0
+            }
+            val surrendered = reason == GameOverReason.FORFEIT
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.PvpLocalMatchFinished(
+                    rounds = roundsPlayed,
+                    winnerSlot = winnerSlot,
+                    durationSec = (System.currentTimeMillis() - matchStartedAtMs) / 1000,
+                    surrendered = surrendered,
+                    surrenderedBySlot = if (surrendered && loserIndex != null) loserIndex + 1 else null,
+                    roundsWonP1 = players[0].score,
+                    roundsWonP2 = players[1].score,
+                )
+            )
         }
     }
 

@@ -42,12 +42,15 @@ class OnlineMatchmakingViewModel @Inject constructor(
     private val matchmakingRepository: MatchmakingRepository,
     private val authManager: FirebaseAuthManager,
     private val prefs: UserPreferencesRepository,
+    private val analytics: com.example.kartonki.analytics.AnalyticsManager,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow(OnlineMatchmakingUiState())
     val uiState: StateFlow<OnlineMatchmakingUiState> = _uiState.asStateFlow()
 
     private var searchJob: Job? = null
+    private var searchStartedAtMs: Long = 0L
+    private var searchOutcomeLogged = false
 
     init { loadDecks() }
 
@@ -87,6 +90,15 @@ class OnlineMatchmakingViewModel @Inject constructor(
 
         searchJob = viewModelScope.launch {
             _uiState.update { it.copy(phase = OnlineMatchmakingUiState.Phase.Searching) }
+            searchStartedAtMs = System.currentTimeMillis()
+            searchOutcomeLogged = false
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.PvpOnlineMatchmakingStarted(
+                    deckLevel = deck.level,
+                    deckSize = deck.cardCount,
+                    deckAvgRarity = "UNKNOWN",  // computed in DeckBuilder; matchmaking VM doesn't have it
+                )
+            )
 
             // Load card IDs from deck
             val cardIds = deckDao.getWordIdsForDeck(deck.id)
@@ -115,6 +127,7 @@ class OnlineMatchmakingViewModel @Inject constructor(
                                 )
                             )
         }
+                        logMatchmakingResult(com.example.kartonki.analytics.MatchmakingOutcome.FOUND)
                     }
                     is MatchmakingResult.Error -> {
                         _uiState.update {
@@ -123,10 +136,22 @@ class OnlineMatchmakingViewModel @Inject constructor(
                                 error = result.message,
                             )
                         }
+                        logMatchmakingResult(com.example.kartonki.analytics.MatchmakingOutcome.ERROR)
                     }
                 }
             }
         }
+    }
+
+    private fun logMatchmakingResult(outcome: com.example.kartonki.analytics.MatchmakingOutcome) {
+        if (searchOutcomeLogged || searchStartedAtMs == 0L) return
+        searchOutcomeLogged = true
+        analytics.log(
+            com.example.kartonki.analytics.AnalyticsEvent.PvpOnlineMatchmakingResult(
+                outcome = outcome,
+                durationSec = (System.currentTimeMillis() - searchStartedAtMs) / 1000,
+            )
+        )
     }
 
     fun cancelSearch() {
@@ -136,6 +161,7 @@ class OnlineMatchmakingViewModel @Inject constructor(
             matchmakingRepository.leaveQueue(user.uid)
         }
         _uiState.update { it.copy(phase = OnlineMatchmakingUiState.Phase.DeckSelect) }
+        logMatchmakingResult(com.example.kartonki.analytics.MatchmakingOutcome.CANCELLED)
     }
 
     fun dismissError() = _uiState.update { it.copy(error = null) }

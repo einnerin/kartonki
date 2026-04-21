@@ -36,6 +36,22 @@ class KartonkiApplication : Application() {
             else -> null
         }
         analytics.setUserId(userId)
+        // User properties — стартовый набор. Полные значения подгружаются позже из repos.
+        analytics.setUserProperty(
+            com.example.kartonki.analytics.UserProperty.PreferredLanguagePair(prefs.getLanguagePair())
+        )
+        // Cohort week — устанавливается один раз при первом запуске
+        if (prefs.getInstallCohortWeek().isEmpty()) {
+            val cal = java.util.Calendar.getInstance()
+            val tag = "%d-%02d".format(
+                cal.get(java.util.Calendar.YEAR),
+                cal.get(java.util.Calendar.WEEK_OF_YEAR),
+            )
+            prefs.setInstallCohortWeek(tag)
+        }
+        analytics.setUserProperty(
+            com.example.kartonki.analytics.UserProperty.InstallCohortWeek(prefs.getInstallCohortWeek())
+        )
     }
 
     private fun installCrashHandler() {

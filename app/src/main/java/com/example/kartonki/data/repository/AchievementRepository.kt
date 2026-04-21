@@ -29,6 +29,7 @@ class AchievementRepository @Inject constructor(
     private val wordDao: WordDao,
     private val deckDao: DeckDao,
     private val collectionDao: CollectionDao,
+    private val analytics: com.example.kartonki.analytics.AnalyticsManager,
 ) {
     private val _newlyUnlocked = MutableSharedFlow<AchievementId>(extraBufferCapacity = 8)
     val newlyUnlocked: SharedFlow<AchievementId> = _newlyUnlocked.asSharedFlow()
@@ -54,7 +55,23 @@ class AchievementRepository @Inject constructor(
      * @param incorrectCount number of wrong answers in the session (0 = perfect)
      */
     suspend fun recordStudyDay(incorrectCount: Int = 0) {
+        val previousStreak = calculateCurrentStreak()
         studyStreakDao.insert(StudyStreakEntity(date = todayMs()))
+        val newStreak = calculateCurrentStreak()
+        if (newStreak > previousStreak) {
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.StreakExtended(
+                    newLength = newStreak,
+                    previousLength = previousStreak,
+                )
+            )
+        } else if (newStreak < previousStreak) {
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.StreakBroken(
+                    lostLength = previousStreak,
+                )
+            )
+        }
         checkFirstLesson()
         checkDiligent()
         checkExpert()
@@ -285,6 +302,7 @@ class AchievementRepository @Inject constructor(
     }
 
     private suspend fun unlock(id: AchievementId) {
+        val alreadyUnlocked = id.name in unlockedCache
         val word = wordDao.getWordByOriginal(id.rewardWordOriginal)
         achievementDao.upsert(
             AchievementEntity(
@@ -293,6 +311,14 @@ class AchievementRepository @Inject constructor(
                 rewardWordId = word?.id,
             )
         )
+        if (!alreadyUnlocked) {
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.AchievementUnlocked(
+                    achievementId = id.name,
+                    daysSinceFirstOpen = 0,  // точная дата установки — Фаза 4 user properties
+                )
+            )
+        }
         if (word != null) {
             collectionDao.insertAll(listOf(CollectionEntity(wordId = word.id)))
         }
