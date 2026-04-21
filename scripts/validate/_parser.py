@@ -30,14 +30,25 @@ Typical usage:
             ...
 """
 
+import os
 import re
 import subprocess
 from pathlib import Path
 
 # ── Constants ─────────────────────────────────────────────────────────────────
 
-ROOT = Path("app/src/main/java/com/example/kartonki/data")
+# Root directory for word data. Overridable via env var for test fixtures.
+ROOT = Path(os.environ.get(
+    "KARTONKI_DATA_DIR",
+    "app/src/main/java/com/example/kartonki/data",
+))
 REGISTRY_FILE = ROOT / "WordRegistry.kt"
+
+# Allowed pos values (see docs/claude/quality_standards_metadata.md)
+ALLOWED_POS = {
+    "noun", "verb", "adjective", "adverb", "number",
+    "phrase", "preposition", "interjection", "conjunction", "pronoun",
+}
 
 RARITY_ORDER = ["COMMON", "UNCOMMON", "RARE", "EPIC", "LEGENDARY"]
 RARITY_INDEX = {r: i for i, r in enumerate(RARITY_ORDER)}
@@ -121,7 +132,13 @@ def parse_words(kt_file):
     Parse all WordEntity records from a single .kt file.
 
     Returns list of dicts with keys:
-        id, setId, original, rarity, lang, file, has_translit, translation
+        id, setId, original, rarity, lang, file, has_translit, translation,
+        definition, definitionNative, example, exampleNative,
+        pos, semanticGroup
+
+    Missing text fields (definition/example/etc.) return None — that lets
+    validate_fields_filled distinguish between "field absent" and "field
+    present but empty string".
     """
     content = kt_file.read_text(encoding="utf-8")
     words = []
@@ -138,8 +155,41 @@ def parse_words(kt_file):
                 "id": wid, "setId": sid, "original": original,
                 "rarity": rarity, "lang": lang, "file": kt_file.name,
                 "has_translit": has_translit, "translation": translation,
+                "definition": extract_field(block, 'definition'),
+                "definitionNative": extract_field(block, 'definitionNative'),
+                "example": extract_field(block, 'example'),
+                "exampleNative": extract_field(block, 'exampleNative'),
+                "pos": extract_field(block, 'pos'),
+                "semanticGroup": extract_field(block, 'semanticGroup'),
             })
     return words
+
+
+def find_file_for_set_id(set_id, data_dir=None):
+    """
+    Return the .kt file path containing the given setId, or None if not found.
+    Searches all WordData*.kt under data_dir (defaults to ROOT).
+    """
+    search_dir = Path(data_dir) if data_dir else ROOT
+    for kt in sorted(search_dir.glob("WordData*.kt")):
+        content = kt.read_text(encoding="utf-8")
+        if re.search(rf'\bsetId\s*=\s*{set_id}\b', content):
+            return kt
+    return None
+
+
+def words_for_set_id(set_id, data_dir=None):
+    """
+    Return list of word dicts for the given setId. Searches across all
+    WordData*.kt under data_dir (defaults to ROOT).
+    """
+    search_dir = Path(data_dir) if data_dir else ROOT
+    result = []
+    for kt in sorted(search_dir.glob("WordData*.kt")):
+        for w in parse_words(kt):
+            if w["setId"] == set_id:
+                result.append(w)
+    return result
 
 
 def parse_sets(kt_file):

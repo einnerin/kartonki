@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Validate text length limits for definition/definitionNative/example/exampleNative.
+
+Limits per quality_standards_*.md:
+- definition, definitionNative: ≤14 слов, ≤80 символов
+- example (en-ru): ≤12 слов, ≤80 символов
+- example (he-ru): ≤10 слов, ≤70 символов
+- exampleNative (русский с вкраплением): ≤14 слов, ≤90 символов (чуть свободнее,
+  т.к. русские фразы с латинской вставкой длиннее английских)
+
+Fields that are None are skipped — validate_fields_filled catches those separately.
+"""
+import sys
+import io
+from pathlib import Path
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+sys.path.insert(0, str(Path(__file__).parent))
+from _parser import words_for_set_id  # noqa: E402
+
+
+def check(text, max_words, max_chars):
+    if text is None:
+        return None
+    words = len(text.split())
+    chars = len(text)
+    if words > max_words or chars > max_chars:
+        return (words, chars)
+    return None
+
+
+def validate(set_id):
+    words = words_for_set_id(set_id)
+    if not words:
+        print(f"❌ setId={set_id}: no words found")
+        return 1
+    bad = []
+    for w in words:
+        lang = w.get("lang", "en-ru")
+        is_hebrew = lang == "he-ru"
+        # definition / definitionNative — 14w/80c (одинаково)
+        for field in ("definition", "definitionNative"):
+            r = check(w.get(field), 14, 80)
+            if r:
+                bad.append((w["id"], w["original"], field, r))
+        # example — 12w/80c (en) or 10w/70c (he)
+        ex_max_w, ex_max_c = (10, 70) if is_hebrew else (12, 80)
+        r = check(w.get("example"), ex_max_w, ex_max_c)
+        if r:
+            bad.append((w["id"], w["original"], "example", r))
+        # exampleNative — 14w/90c (небольшой запас для русского)
+        r = check(w.get("exampleNative"), 14, 90)
+        if r:
+            bad.append((w["id"], w["original"], "exampleNative", r))
+    if bad:
+        print(f"❌ setId={set_id}: {len(bad)} нарушений лимита длины")
+        for wid, orig, field, (wc, cc) in bad[:20]:
+            print(f"    {wid} «{orig}» {field}: {wc} слов / {cc} симв")
+        if len(bad) > 20:
+            print(f"    ... and {len(bad) - 20} more")
+        return 1
+    print(f"✅ setId={set_id}: все тексты в пределах лимитов")
+    return 0
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: validate_text_lengths.py <setId>", file=sys.stderr)
+        sys.exit(2)
+    sys.exit(validate(int(sys.argv[1])))
