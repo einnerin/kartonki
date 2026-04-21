@@ -35,7 +35,7 @@ object WordDataEnglishBatch6 {
         WordEntity(id = 25902, original = "shutter speed", transliteration = "[ˈʃʌtər spiːd]", translation = "выдержка",
             definition = "How long the shutter stays open to let light hit the sensor.",
             definitionNative = "Время, в течение которого затвор камеры остаётся открытым.",
-            example = "A fast shutter speed freezes motion; a slow one creates blur.",
+            example = "Use a fast shutter speed to freeze the dancer's movement.",
             exampleNative = "Для съёмки движения нужна короткая shutter speed.",
             rarity = "UNCOMMON", setId = 259, languagePair = "en-ru", pos = "noun", semanticGroup = "photography_settings"),
 
@@ -111,7 +111,7 @@ object WordDataEnglishBatch6 {
         WordEntity(id = 25913, original = "wide-angle", transliteration = "[waɪd ˈæŋɡəl]", translation = "широкоугольный объектив",
             definition = "A lens that fits a big scene into one frame — rooms, landscapes.",
             definitionNative = "Объектив с коротким фокусным расстоянием, захватывающий широкий угол обзора.",
-            example = "A wide-angle lens is ideal for architecture and landscapes.",
+            example = "He switched to a wide-angle lens to fit the whole cathedral.",
             exampleNative = "Wide-angle объектив помещает весь собор в один кадр.",
             rarity = "UNCOMMON", setId = 259, languagePair = "en-ru", pos = "noun", semanticGroup = "photography_equipment"),
 
@@ -131,19 +131,19 @@ object WordDataEnglishBatch6 {
 
                 WordEntity(id = 25916, original = "viewfinder", transliteration = "[ˈvjuːˌfaɪndər]", translation = "видоискатель", rarity = "UNCOMMON", setId = 259, languagePair = "en-ru", pos = "noun", semanticGroup = "photography",
             definition = "The tiny eyepiece you look through to frame your photo.",
-            example = "She looked through the viewfinder to compose the shot before pressing the button.",
+            example = "She squinted through the viewfinder and pressed the shutter.",
             definitionNative = "Маленькое окошко или экран на камере для компоновки кадра.",
             exampleNative = "Она посмотрела через viewfinder, чтобы скомпоновать кадр перед нажатием кнопки."),
 
                 WordEntity(id = 25917, original = "angle", transliteration = "[ˈæŋɡəl]", translation = "ракурс, угол съёмки", rarity = "UNCOMMON", setId = 259, languagePair = "en-ru", pos = "noun", semanticGroup = "photography",
             definition = "The point of view from which a shot is taken — low, high, side.",
-            example = "Try shooting from a low angle to give the image a more dramatic look.",
+            example = "Shoot from a low angle to make the building look taller.",
             definitionNative = "Направление или положение, с которого делается фотография.",
             exampleNative = "Попробуй снимать с низкого angle, чтобы придать изображению более драматичный вид."),
 
                 WordEntity(id = 25918, original = "lighting", transliteration = "[ˈlaɪtɪŋ]", translation = "освещение (при съёмке)", rarity = "UNCOMMON", setId = 259, languagePair = "en-ru", pos = "noun", semanticGroup = "photography",
             definition = "How a subject is illuminated — soft, harsh, natural or artificial.",
-            example = "Good lighting is essential for taking clear, sharp photographs.",
+            example = "The lighting by the window is perfect for a soft portrait.",
             definitionNative = "Способ использования света для освещения объекта в фотографии.",
             exampleNative = "Хорошее lighting необходимо для получения чётких и резких фотографий."),
 
@@ -179,13 +179,13 @@ object WordDataEnglishBatch6 {
 
                 WordEntity(id = 25924, original = "zoom", transliteration = "[zuːm]", translation = "зум / масштабирование", rarity = "UNCOMMON", setId = 259, languagePair = "en-ru", pos = "noun", semanticGroup = "photography",
             definition = "Making the image in a camera bigger or smaller.",
-            example = "She used the zoom on her phone to photograph the bird in the tree.",
+            example = "She used the zoom to photograph a bird on the branch.",
             definitionNative = "Возможность увеличивать или уменьшать изображение в камере.",
             exampleNative = "Она использовала zoom на телефоне, чтобы сфотографировать птицу на дереве."),
 
                 WordEntity(id = 25925, original = "portrait mode", transliteration = "[ˈpɔrtrɪt moʊd]", translation = "портретный режим", rarity = "UNCOMMON", setId = 259, languagePair = "en-ru", pos = "noun", semanticGroup = "photography",
             definition = "a camera setting that blurs the background to make the subject stand out",
-            example = "She switched to portrait mode to take a sharp photo of her friend.",
+            example = "Portrait mode blurs the background and makes faces pop.",
             definitionNative = "Режим камеры, размывающий фон для выделения объекта.",
             exampleNative = "Она переключилась в portrait mode, чтобы сделать чёткое фото подруги."),
 
@@ -215,7 +215,7 @@ object WordDataEnglishBatch6 {
         WordEntity(id = 26004, original = "follow-up", transliteration = "[ˈfɒloʊ ʌp]", translation = "напоминание; повторный контакт",
             definition = "A message sent after an initial contact to check progress or prompt a reply.",
             definitionNative = "Сообщение, отправляемое после первоначального контакта для уточнения статуса.",
-            example = "I'll send a follow-up if I don't hear back within three days.",
+            example = "I'll send a follow-up if they don't reply by Friday.",
             exampleNative = "Отправь follow-up — неделю молчат.",
             rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "email_basics"),
 
@@ -243,7 +243,7 @@ object WordDataEnglishBatch6 {
         WordEntity(id = 26008, original = "query", transliteration = "[ˈkwɪəri]", translation = "запрос, уточняющий вопрос",
             definition = "A question or request for clarification, especially in formal correspondence.",
             definitionNative = "Вопрос или просьба об уточнении, особенно в официальной переписке.",
-            example = "Please direct all queries to the support team.",
+            example = "If you have any queries, our support team will help.",
             exampleNative = "Направьте все query в техподдержку.",
             rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "email_basics"),
 
@@ -306,14 +306,14 @@ object WordDataEnglishBatch6 {
         WordEntity(id = 26017, original = "caveat", transliteration = "[ˈkæviæt]", translation = "оговорка, предостережение",
             definition = "A warning or condition attached to a statement or agreement.",
             definitionNative = "Предупреждение или условие, прилагаемое к заявлению или соглашению.",
-            example = "I'll approve the plan with one caveat: the budget must not exceed this figure.",
+            example = "I'll approve the plan with one caveat — keep the budget tight.",
             exampleNative = "Есть одна важная caveat — сроки могут измениться.",
             rarity = "RARE", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_writing"),
 
         WordEntity(id = 26018, original = "addendum", transliteration = "[əˈdendəm]", translation = "приложение, дополнение к документу",
             definition = "A section added to the end of a document to include extra information.",
             definitionNative = "Раздел, добавленный в конец документа для включения дополнительной информации.",
-            example = "The contract changes were listed in an addendum rather than rewriting the whole document.",
+            example = "We added the new terms as an addendum to the contract.",
             exampleNative = "Все изменения условий оформи как addendum к договору.",
             rarity = "RARE", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_documents"),
 
@@ -357,7 +357,7 @@ object WordDataEnglishBatch6 {
 
                 WordEntity(id = 26025, original = "endorsement", transliteration = "[ɪnˈdɔrsmɪnt]", translation = "подтверждение / одобрение (письменное)", rarity = "RARE", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_writing",
             definition = "a written statement of approval or support for a person or product",
-            example = "The contract included an endorsement clause requiring written approval for any changes.",
+            example = "The product's success relied on the celebrity's endorsement.",
             definitionNative = "Письменное заявление о поддержке или одобрении лица или продукта.",
             exampleNative = "В контракте было положение endorsement, требующее письменного согласования изменений."),
 
@@ -387,7 +387,7 @@ object WordDataEnglishBatch6 {
         WordEntity(id = 26104, original = "hiking", transliteration = "[ˈhaɪkɪŋ]", translation = "пеший поход, хайкинг",
             definition = "Walking for long distances in the countryside or mountains for pleasure.",
             definitionNative = "Длительная прогулка по сельской местности или горам для удовольствия.",
-            example = "Hiking in the mountains requires proper footwear and preparation.",
+            example = "We went hiking in the hills all Saturday afternoon.",
             exampleNative = "Hiking по горным тропам — лучший способ увидеть природу.",
             rarity = "COMMON", setId = 261, languagePair = "en-ru", pos = "noun", semanticGroup = "camping_activities"),
 
@@ -521,7 +521,7 @@ object WordDataEnglishBatch6 {
 
                 WordEntity(id = 26124, original = "camping stove", transliteration = "[ˈkæmpɪŋ stoʊv]", translation = "походная горелка / газовая плитка", rarity = "UNCOMMON", setId = 261, languagePair = "en-ru", pos = "noun", semanticGroup = "camping",
             definition = "A small portable cooker for boiling water and meals outdoors.",
-            example = "He boiled water on the camping stove for a hot drink in the morning.",
+            example = "He boiled water on the camping stove for morning tea.",
             definitionNative = "Небольшая переносная плитка для приготовления пищи на природе.",
             exampleNative = "Он вскипятил воду на camping stove для горячего напитка утром."),
 
