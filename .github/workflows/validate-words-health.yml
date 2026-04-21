@@ -1,0 +1,63 @@
+name: validate-words-health
+
+# Info-only health check: full base audit. Non-blocking — the workflow is
+# green as long as it runs to completion, even if tech debt is found. This
+# is Level 7 of the quality gate system (docs/claude/quality_gates.md).
+#
+# Red status here means a technical failure (script crashed, Python missing),
+# NOT a data violation — those are surfaced in the audit report artifact.
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Every Monday 07:00 UTC
+    - cron: '0 7 * * 1'
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Full base audit
+        id: audit
+        continue-on-error: true
+        run: |
+          mkdir -p /tmp/audit
+          bash scripts/validate/audit_all_files.sh > /tmp/audit/report.txt 2>&1
+          AUDIT_EXIT=$?
+          echo "exit_code=$AUDIT_EXIT" >> "$GITHUB_OUTPUT"
+          cat /tmp/audit/report.txt
+          # Don't fail the job — this is informational
+          exit 0
+
+      - name: Summarise findings
+        run: |
+          VIOLATIONS=$(grep -cE '❌|BLOCK' /tmp/audit/report.txt || true)
+          PASS_LINE=$(grep -oE '[0-9]+/[0-9]+ setId' /tmp/audit/report.txt | head -1 || echo "?")
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Kartonki weekly health audit"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Prepared: ${PASS_LINE}"
+          if [ "${{ steps.audit.outputs.exit_code }}" != "0" ]; then
+            echo "Technical debt found: ${VIOLATIONS} violation markers."
+            echo "This is informational, not blocking."
+            echo "See artifact 'audit-report' for details."
+          else
+            echo "✅ All sets pass all 7 validators."
+          fi
+          echo ""
+          echo "Investigate locally: bash scripts/validate/audit_all_files.sh"
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-report
+          path: /tmp/audit/report.txt
+          retention-days: 90

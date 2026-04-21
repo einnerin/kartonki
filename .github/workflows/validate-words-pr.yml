@@ -1,0 +1,104 @@
+name: validate-words-pr
+
+# Blocking gate for pull requests: runs validators only on setIds changed
+# in the PR. Red = regression in new/modified sets. This is Level 6 of the
+# quality gate system (docs/claude/quality_gates.md).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/src/main/java/com/example/kartonki/data/WordData*.kt'
+      - 'scripts/validate/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'app/src/main/java/com/example/kartonki/data/WordData*.kt'
+      - 'scripts/validate/**'
+
+jobs:
+  validate-changed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout with history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Determine base ref
+        id: base
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "ref=${{ github.event.pull_request.base.sha }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "ref=${{ github.event.before }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Detect changed WordData files
+        id: files
+        run: |
+          BASE="${{ steps.base.outputs.ref }}"
+          # Fall back for new branches where before is 000000...
+          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
+            BASE=$(git rev-list --max-parents=0 HEAD | tail -1)
+          fi
+          CHANGED=$(git diff --name-only "$BASE" HEAD -- \
+            'app/src/main/java/com/example/kartonki/data/WordData*.kt' || true)
+          echo "$CHANGED" > /tmp/changed-files
+          echo "count=$(echo "$CHANGED" | grep -c . || true)" >> "$GITHUB_OUTPUT"
+          if [ -n "$CHANGED" ]; then
+            echo "Changed WordData files:"
+            echo "$CHANGED" | sed 's/^/  /'
+          else
+            echo "No WordData files changed."
+          fi
+
+      - name: Skip if only validator changes
+        if: steps.files.outputs.count == '0'
+        run: |
+          echo "No WordData changes. Validators changed — global audit not required for PR."
+          echo "Use validate-words-health workflow for a full base audit."
+
+      - name: Extract all setIds in changed files
+        if: steps.files.outputs.count != '0'
+        id: setids
+        run: |
+          SETIDS=$(while read -r f; do
+            [ -n "$f" ] && [ -f "$f" ] && grep -oE '\bsetId = [0-9]+' "$f" | grep -oE '[0-9]+'
+          done < /tmp/changed-files | sort -un)
+          echo "$SETIDS" > /tmp/setids
+          echo "count=$(echo "$SETIDS" | grep -c . || true)" >> "$GITHUB_OUTPUT"
+
+      - name: Run validate_all on each changed setId
+        if: steps.files.outputs.count != '0'
+        run: |
+          FAIL=0
+          while read -r sid; do
+            [ -z "$sid" ] && continue
+            echo "━━━ setId=$sid ━━━"
+            if bash scripts/validate/validate_all.sh "$sid"; then
+              echo "  ✓ pass"
+            else
+              echo "  ✗ fail"
+              FAIL=1
+            fi
+          done < /tmp/setids
+          if [ "$FAIL" -ne 0 ]; then
+            echo ""
+            echo "❌ One or more setIds failed validation."
+            exit 1
+          fi
+          echo ""
+          echo "✅ All changed setIds pass validation."
+
+      - name: Run find_real_dupes.py (global)
+        if: steps.files.outputs.count != '0'
+        run: python scripts/validate/find_real_dupes.py
+
+      - name: Run fixture tests
+        run: bash scripts/validate/tests/run_tests.sh
