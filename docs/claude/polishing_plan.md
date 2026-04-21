@@ -24,17 +24,50 @@
 
 ## Осталось
 
-### Полировка `definitionNative` в Batch3–6 + Batch17
-**Новая задача.** Обнаружено при работе с text-author: в уже отполированных Batch3–6 поле `definitionNative` осталось **деревянным** (канцелярит «используемый для», «подаваемый» и т.п.) — polisher в прошлой сессии правил только английский `definition`. Поле **используется в квизах** (`MULTIPLE_CHOICE_DEFINITION_NATIVE`) и показывается на LEGENDARY-карточках — критично для UX.
+## Технический долг, выявленный валидаторами
 
-**Что делать:** прогнать `definition-polisher` с инструкцией править именно `definitionNative` по стандарту живого стиля (без канцелярита). Файлы: Batch3, Batch4, Batch5, Batch6, Batch17 — 325 слов.
+Запуск `scripts/validate/` по живой базе вскрыл два слоя известного/нового техдолга. Описаны отдельно, т.к. масштаб исправлений разный и приоритет разный.
+
+### Категория A — `definitionNative` в Batch3–6 + Batch17 (ожидаемый)
+
+**Где.** setId 250–261 (Batch3-6) и 299 (Batch17). Около **300 слов в 13 setId**.
+
+**Что ловят валидаторы.**
+- `validate_text_lengths` — `definitionNative` превышает 80 символов из-за канцелярских конструкций типа «используемый для», «подаваемый», «являющийся».
+- `validate_no_cognates` — в `definitionNative` присутствуют однокоренные с `translation` (напр. `beverage`/«напиток» → defNative содержит «напит»).
+
+**Причина.** В предыдущих сессиях `definition-polisher` правил только английский `definition`. Русское `definitionNative` осталось в стиле исходной генерации — дословный перевод без «живого учителя».
+
+**Как чинить.** Прогнать `definition-polisher` с явной инструкцией править именно поле `definitionNative` по стандарту живого стиля (стандарт уже написан, нужно только инструктивное указание агенту).
+
+**Приоритет.** Средний — улучшение качества квиза `MULTIPLE_CHOICE_DEFINITION_NATIVE` + LEGENDARY-карточек. Не блокирует UX, но заметно для пользователей.
+
+**Проверка после починки.** `bash scripts/validate/validate_all.sh <setId>` должен вернуть 0 для каждого из 13 сетов.
+
+### Категория B — плоский `semanticGroup` в legacy (новый)
+
+**Где.** `WordDataEnglish.kt` сеты 1–83 и `WordDataEnglishExpanded.kt` 200–249 + Hebrew legacy (`WordDataHebrew.kt`, `WordDataHebrewEveryday.kt`, `WordDataHebrewMore.kt`, `WordDataHebrewImmigrant*.kt` и т.п.). Порядка **~100 сетов**.
+
+**Что ловят валидаторы.**
+- `validate_group_sizes` — блокирует из-за групп **13+ слов**. Типичная ситуация: весь сет лежит в одном плоском `semanticGroup="daily_life"` (25 слов) или `semanticGroup="family"` и т.д.
+
+**Причина.** Legacy-архитектура: один сет = одна тема = один semanticGroup, без подгрупп. Отличается от новой конвенции (3–8 слов на подгруппу, см. [`quality_standards_metadata.md`](quality_standards_metadata.md)).
+
+**Как чинить.** Прогнать `metadata-filler` на каждом legacy-сете с инструкцией разбить плоскую группу на 3–5 подгрупп по принципу «опасных близнецов». Также проверить/добавить `pos` где отсутствует.
+
+**Приоритет.** Низкий для релиза (квиз работает, просто дистракторы tier1 менее оптимальны), **высокий для долгосрочного качества** — без исправления весь `QuizBuilder.pickDistractors` tier1 в legacy вырождается до tier2.
+
+**Проверка.** `bash scripts/validate/audit_all_files.sh` — цель: ≥95% setIds проходят все 7 валидаторов.
+
+### Мелкие задачи (быстро, отдельно)
+
+**Нормализация `pos = "interj"` → `"interjection"` и `"pron"` → `"pronoun"`** — 8 слов суммарно. Когда запустится `validate_pos_values` на полном базе, он их покажет. Фикс: `sed -i 's|pos = "interj"|pos = "interjection"|g; s|pos = "pron"|pos = "pronoun"|g' app/src/main/java/com/example/kartonki/data/WordData*.kt`. После — прогнать `validate_pos_values.sh` на затронутых setId, чтобы убедиться в прохождении.
 
 ### Полировка больших файлов (не трогались)
 - **WordDataEnglish.kt сеты 6–84** — definitions (остаток ~1952 слов) + examples всех 2077 слов
 - **WordDataEnglishExpanded.kt** — definitions + examples (~1265 слов)
 
-### Нормализация pos: `adj` → `adjective`, `adv` → `adverb`
-33 слов в базе имеют `pos = "adj"` и 6 — `pos = "adv"` (устаревшая короткая форма). Это ломает strict-equality в `QuizBuilder.pickDistractors` tier1. **Что делать:** sed-замена по всей базе. Мелкая задача.
+Это работа под отдельные сессии чанками по 5 setId, как описано ниже в «Стратегии для больших файлов».
 
 ## Стратегия для больших файлов
 
