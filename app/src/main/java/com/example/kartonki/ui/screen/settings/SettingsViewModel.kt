@@ -104,6 +104,8 @@ data class SettingsUiState(
     val signOutDone: Boolean = false,
     val isSigningIn: Boolean = false,
     val signInError: String? = null,
+    // Tester mode (7 taps on app version)
+    val testerModeEnabled: Boolean = false,
 )
 
 val AVATAR_EMOJI_OPTIONS = listOf(
@@ -126,6 +128,11 @@ class SettingsViewModel @Inject constructor(
     val uiState: StateFlow<SettingsUiState> = _uiState.asStateFlow()
 
     init {
+        viewModelScope.launch {
+            prefs.testerModeEnabled.collect { enabled ->
+                _uiState.update { it.copy(testerModeEnabled = enabled) }
+            }
+        }
         viewModelScope.launch {
             authManager.currentUser.collect { profile ->
                 val signedInWithAccount = profile != null && profile.isAnonymous == false
@@ -390,5 +397,11 @@ class SettingsViewModel @Inject constructor(
             )
         } catch (_: SecurityException) { /* some pickers don't grant persistable permission */ }
         prefs.setAvatarChoice(uri.toString())
+    }
+
+    /** 7 тапов по версии приложения в Settings включают флаг — фильтр в Firebase Analytics. */
+    fun onTesterModeActivated() = viewModelScope.launch {
+        prefs.setTesterModeEnabled(true)
+        _uiState.update { it.copy(testerModeEnabled = true) }
     }
 }

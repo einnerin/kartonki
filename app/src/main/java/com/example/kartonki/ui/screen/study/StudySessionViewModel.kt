@@ -52,12 +52,17 @@ class StudySessionViewModel @Inject constructor(
     private val achievementRepository: AchievementRepository,
     private val packRepository: PackRepository,
     private val prefs: UserPreferencesRepository,
+    private val analytics: com.example.kartonki.analytics.AnalyticsManager,
 ) : ViewModel() {
 
     private val setId: Long = checkNotNull(savedStateHandle[Route.StudySession.ARG_SET_ID])
 
     private val _uiState = MutableStateFlow(SessionUiState())
     val uiState: StateFlow<SessionUiState> = _uiState.asStateFlow()
+
+    private val sessionStartedAtMs: Long = System.currentTimeMillis()
+    private var sessionStartedLogged = false
+    private var sessionFinishedLogged = false
 
     init {
         loadSession()
@@ -86,6 +91,17 @@ class StudySessionViewModel @Inject constructor(
             val steps = buildQuizStepsFromPrefs(prefs, words, distractorExtras)
             _uiState.update {
                 it.copy(isLoading = false, isEmpty = false, steps = steps, currentStepIndex = 0)
+            }
+            if (!sessionStartedLogged) {
+                sessionStartedLogged = true
+                analytics.log(
+                    com.example.kartonki.analytics.AnalyticsEvent.SessionStarted(
+                        mode = com.example.kartonki.analytics.SessionMode.SET_STUDY,
+                        deckLevel = null,
+                        deckSize = words.size,
+                        deckAvgRarity = null,
+                    )
+                )
             }
         }
     }
@@ -119,13 +135,44 @@ class StudySessionViewModel @Inject constructor(
         val next = _uiState.value.currentStepIndex + 1
         if (next >= _uiState.value.steps.size) {
             val incorrectCount = _uiState.value.incorrectCount
+            val correctCount = _uiState.value.correctCount
+            val totalSteps = _uiState.value.steps.size
             _uiState.update { it.copy(isSessionComplete = true) }
             viewModelScope.launch {
                 achievementRepository.recordStudyDay(incorrectCount)
                 packRepository.onActivityCompleted()
             }
+            if (!sessionFinishedLogged) {
+                sessionFinishedLogged = true
+                analytics.log(
+                    com.example.kartonki.analytics.AnalyticsEvent.SessionFinished(
+                        mode = com.example.kartonki.analytics.SessionMode.SET_STUDY,
+                        durationSec = (System.currentTimeMillis() - sessionStartedAtMs) / 1000,
+                        wordsReviewed = totalSteps,
+                        correctCount = correctCount,
+                        completed = true,
+                    )
+                )
+            }
         } else {
             _uiState.update { it.copy(currentStepIndex = next) }
+        }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        // Если выходим без завершения — фиксируем abandon
+        if (sessionStartedLogged && !sessionFinishedLogged) {
+            val state = _uiState.value
+            val total = state.steps.size.coerceAtLeast(1)
+            val percent = ((state.currentStepIndex * 100) / total).coerceIn(0, 100)
+            analytics.log(
+                com.example.kartonki.analytics.AnalyticsEvent.SessionAbandoned(
+                    mode = com.example.kartonki.analytics.SessionMode.SET_STUDY,
+                    completedPercent = percent,
+                    reason = com.example.kartonki.analytics.AbandonReason.BACK_PRESS,
+                )
+            )
         }
     }
 

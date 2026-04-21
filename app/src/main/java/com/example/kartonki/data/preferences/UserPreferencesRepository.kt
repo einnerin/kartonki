@@ -41,6 +41,7 @@ class UserPreferencesRepository @Inject constructor(
         const val PRESET_DECKS_VERSION          = "preset_decks_version"       // Int
         const val PRESET_DECKS_WORD_VERSION     = "preset_decks_word_version"  // Int: WordDataVersion stored at last deck rebuild
         const val SEARCH_BACK_BEHAVIOR          = "search_back_behavior"        // "clear" | "restore"
+        const val TESTER_MODE_ENABLED           = "tester_mode_enabled"         // Boolean — анонимный маркер для фильтрации аналитики
     }
 
     companion object {
@@ -150,6 +151,11 @@ class UserPreferencesRepository @Inject constructor(
     /** WordDataVersion stored at the time preset decks were last rebuilt. */
     fun getPresetDecksWordVersion(): Int = prefs.getInt(Keys.PRESET_DECKS_WORD_VERSION, 0)
     fun setPresetDecksWordVersion(version: Int) = prefs.edit().putInt(Keys.PRESET_DECKS_WORD_VERSION, version).apply()
+
+    /** Tester mode: помечает сессии как «тестерские» для фильтрации в Firebase Analytics. */
+    val testerModeEnabled: Flow<Boolean> = prefsFlow().map { it.getBoolean(Keys.TESTER_MODE_ENABLED, false) }
+    fun isTesterModeEnabled(): Boolean = prefs.getBoolean(Keys.TESTER_MODE_ENABLED, false)
+    fun setTesterModeEnabled(enabled: Boolean) = prefs.edit().putBoolean(Keys.TESTER_MODE_ENABLED, enabled).apply()
 
     val quizTypesEnabled: Flow<Set<String>> = prefsFlow().map { p ->
         val raw = p.getString(Keys.QUIZ_TYPES_ENABLED, null)

@@ -614,6 +614,13 @@ fun SettingsScreen(
             Spacer(Modifier.height(8.dp))
             NavRow(s.settingsAchievements, onClick = onNavigateToAchievements)
             Spacer(Modifier.height(32.dp))
+
+            // ── App version (7 taps to enable tester mode) ─────────────────────
+            AppVersionFooter(
+                testerModeEnabled = state.testerModeEnabled,
+                onTesterModeActivated = viewModel::onTesterModeActivated,
+            )
+            Spacer(Modifier.height(16.dp))
         }
     }
 
@@ -925,5 +932,66 @@ private fun NavRow(label: String, onClick: () -> Unit) {
         Text(label, style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium)
         Text("›", style = MaterialTheme.typography.headlineSmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant)
+    }
+}
+
+/**
+ * Сноска внизу настроек: версия приложения. 7 тапов подряд включают tester mode —
+ * пометит сессии для фильтрации в Firebase Analytics. Уже включённый tester mode
+ * подсвечивается строкой статуса.
+ */
+@Composable
+private fun AppVersionFooter(
+    testerModeEnabled: Boolean,
+    onTesterModeActivated: () -> Unit,
+) {
+    val context = androidx.compose.ui.platform.LocalContext.current
+    var tapCount by androidx.compose.runtime.remember { androidx.compose.runtime.mutableStateOf(0) }
+    val versionLabel = "Версия ${com.example.kartonki.BuildConfig.VERSION_NAME} " +
+        "(build ${com.example.kartonki.BuildConfig.VERSION_CODE})"
+
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
+        Text(
+            text = versionLabel,
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+            modifier = Modifier
+                .clickable(
+                    enabled = !testerModeEnabled,
+                    indication = null,
+                    interactionSource = androidx.compose.runtime.remember { androidx.compose.foundation.interaction.MutableInteractionSource() },
+                ) {
+                    val newCount = tapCount + 1
+                    tapCount = newCount
+                    if (newCount >= 7) {
+                        onTesterModeActivated()
+                        android.widget.Toast.makeText(
+                            context,
+                            "Tester mode активирован",
+                            android.widget.Toast.LENGTH_SHORT,
+                        ).show()
+                        tapCount = 0
+                    } else if (newCount in 4..6) {
+                        // Подсказка при подходе к порогу
+                        android.widget.Toast.makeText(
+                            context,
+                            "Ещё ${7 - newCount} тапа",
+                            android.widget.Toast.LENGTH_SHORT,
+                        ).show()
+                    }
+                }
+                .padding(8.dp),
+        )
+        if (testerModeEnabled) {
+            Text(
+                text = "Tester mode включён — твои сессии не учитываются в публичной статистике",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.tertiary,
+                modifier = Modifier.padding(horizontal = 16.dp),
+            )
+        }
     }
 }

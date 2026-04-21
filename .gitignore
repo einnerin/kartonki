@@ -4,6 +4,10 @@
 *.ap_
 *.aab
 
+# Local Maven proxy cache — артефакты подтягиваются скриптом maven_proxy.js,
+# не должны попадать в репо
+localMaven/
+
 # Files for the ART/Dalvik VM
 *.dex
 

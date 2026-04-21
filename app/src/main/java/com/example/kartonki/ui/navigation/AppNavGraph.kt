@@ -48,6 +48,16 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
     val newCardsVm: NewCardsEventViewModel = hiltViewModel()
     val pendingNewCards by newCardsVm.pendingNewCards.collectAsState()
 
+    // Analytics: tab navigation tracking — фиксируем смену destination'а
+    val navTracker: com.example.kartonki.analytics.NavigationAnalyticsTracker = hiltViewModel()
+    androidx.compose.runtime.DisposableEffect(navController) {
+        val listener = androidx.navigation.NavController.OnDestinationChangedListener { _, destination, _ ->
+            navTracker.onDestinationChanged(destination.route)
+        }
+        navController.addOnDestinationChangedListener(listener)
+        onDispose { navController.removeOnDestinationChangedListener(listener) }
+    }
+
     LaunchedEffect(pendingNewCards.isNotEmpty()) {
         if (pendingNewCards.isNotEmpty()) {
             navController.navigate(Route.NewCards.path) { launchSingleTop = true }
