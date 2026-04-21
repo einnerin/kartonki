@@ -35,7 +35,7 @@ object WordDataEnglishBatch5 {
         WordEntity(id = 25602, original = "wake up", transliteration = "[weɪk ʌp]", translation = "просыпаться",
             definition = "To open your eyes and leave sleep behind — usually in the morning.",
             definitionNative = "Перестать спать и прийти в сознание.",
-            example = "I wake up at six thirty every day.",
+            example = "I usually wake up before the alarm even rings.",
             exampleNative = "Сложно wake up по утрам без кофе.",
             rarity = "COMMON", setId = 256, languagePair = "en-ru", pos = "verb", semanticGroup = "daily_morning"),
 
@@ -77,7 +77,7 @@ object WordDataEnglishBatch5 {
         WordEntity(id = 25608, original = "chores", transliteration = "[tʃɔːrz]", translation = "домашние дела, обязанности",
             definition = "Small regular jobs around the home — cleaning, washing or taking out rubbish.",
             definitionNative = "Регулярные задачи по дому — уборка, стирка и т.д.",
-            example = "I do my household chores on Saturday morning.",
+            example = "My kids help with the chores every Saturday morning.",
             exampleNative = "Раздели chores — ты убираешь, я готовлю.",
             rarity = "COMMON", setId = 256, languagePair = "en-ru", pos = "noun", semanticGroup = "daily_home"),
 
@@ -98,7 +98,7 @@ object WordDataEnglishBatch5 {
         WordEntity(id = 25611, original = "power nap", transliteration = "[ˈpaʊər næp]", translation = "короткий дневной сон",
             definition = "A quick sleep of ten to twenty minutes that brings energy back fast.",
             definitionNative = "Короткий сон продолжительностью 10–20 минут для быстрого восстановления энергии.",
-            example = "I take a power nap after lunch to stay productive in the afternoon.",
+            example = "A quick power nap after lunch keeps me sharp until evening.",
             exampleNative = "Двадцать минут power nap после обеда — и я снова в форме.",
             rarity = "COMMON", setId = 256, languagePair = "en-ru", pos = "noun", semanticGroup = "daily_morning"),
 
@@ -126,14 +126,14 @@ object WordDataEnglishBatch5 {
         WordEntity(id = 25615, original = "downtime", transliteration = "[ˈdaʊntaɪm]", translation = "время простоя; отдых",
             definition = "Free hours when you are not working and can rest or enjoy yourself.",
             definitionNative = "Время, когда вы не работаете и можете отдохнуть или заняться чем-то приятным.",
-            example = "Everyone needs some downtime to recharge their energy.",
+            example = "After a busy week I need some downtime on the couch.",
             exampleNative = "Выдели время на downtime — отдых так же важен, как работа.",
             rarity = "UNCOMMON", setId = 256, languagePair = "en-ru", pos = "noun", semanticGroup = "daily_rest"),
 
         WordEntity(id = 25616, original = "wrap up", transliteration = "[ræp ʌp]", translation = "завершать, подводить итог",
             definition = "To bring something to an end — a meeting, a task or a work day.",
             definitionNative = "Завершать или подводить итог чему-либо, например задаче или рабочему дню.",
-            example = "Let's wrap up by five o'clock so we can all leave on time.",
+            example = "Let's wrap up the meeting — everyone wants to go home.",
             exampleNative = "Давай wrap up дела до шести — завтра снова много работы.",
             rarity = "UNCOMMON", setId = 256, languagePair = "en-ru", pos = "verb", semanticGroup = "daily_general"),
 
@@ -159,7 +159,7 @@ object WordDataEnglishBatch5 {
 
                 WordEntity(id = 25620, original = "sleep hygiene", transliteration = "[sliːp ˈhaɪˌdʒiːn]", translation = "гигиена сна", rarity = "UNCOMMON", setId = 256, languagePair = "en-ru", pos = "noun", semanticGroup = "daily_routine",
             definition = "Daily habits that help you sleep well and at regular hours.",
-            example = "Avoiding screens before bed is a key part of good sleep hygiene.",
+            example = "No phones in bed — that's basic sleep hygiene.",
             definitionNative = "Набор привычек, способствующих качественному и регулярному сну.",
             exampleNative = "Отказ от экранов перед сном — ключевой элемент хорошей sleep hygiene."),
 
@@ -172,7 +172,7 @@ object WordDataEnglishBatch5 {
 
                 WordEntity(id = 25622, original = "nightly routine", transliteration = "[ˈnaɪtli ruˈtin]", translation = "вечерний распорядок", rarity = "UNCOMMON", setId = 256, languagePair = "en-ru", pos = "noun", semanticGroup = "daily_routine",
             definition = "A set of things you do every evening before going to sleep.",
-            example = "Her nightly routine includes reading for twenty minutes before turning off the light.",
+            example = "Her nightly routine ends with twenty quiet minutes of reading.",
             definitionNative = "Набор действий, выполняемых каждый вечер перед сном.",
             exampleNative = "Её nightly routine включает двадцатиминутное чтение перед выключением света."),
 
@@ -184,13 +184,13 @@ object WordDataEnglishBatch5 {
 
                 WordEntity(id = 25624, original = "wind-down", transliteration = "[ˈwɪnd daʊn]", translation = "расслабление перед сном", rarity = "UNCOMMON", setId = 256, languagePair = "en-ru", pos = "noun", semanticGroup = "daily_routine",
             definition = "A calm hour at day's end that gets you ready for sleep.",
-            example = "A thirty-minute wind-down with no screens helps prepare the mind for sleep.",
+            example = "A short wind-down with warm tea helps me fall asleep faster.",
             definitionNative = "Период расслабления перед отходом ко сну.",
             exampleNative = "Тридцатиминутный wind-down без экранов помогает подготовить ум ко сну."),
 
                 WordEntity(id = 25625, original = "focus time", transliteration = "[ˈfoʊkəs taɪm]", translation = "время глубокой концентрации", rarity = "UNCOMMON", setId = 256, languagePair = "en-ru", pos = "noun", semanticGroup = "daily_routine",
             definition = "A planned block of hours with no interruptions to work on one thing.",
-            example = "She blocks out two hours of focus time every morning to do her most important work.",
+            example = "She blocks two hours of focus time each morning for deep work.",
             definitionNative = "Запланированный период беспрерывной концентрации на одной задаче.",
             exampleNative = "Каждое утро она выделяет два часа focus time для самой важной работы."),
 
@@ -213,14 +213,14 @@ object WordDataEnglishBatch5 {
         WordEntity(id = 25703, original = "tag", transliteration = "[tæɡ]", translation = "отметить; тег",
             definition = "To link someone's profile to a post or photo so they see it.",
             definitionNative = "Указать профиль другого человека в публикации или фото в социальных сетях.",
-            example = "She tagged her friend in the photo.",
+            example = "She tagged all her friends in the beach photo.",
             exampleNative = "Tag меня в этом посте — хочу сохранить его.",
             rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "verb", semanticGroup = "social_media_basics"),
 
         WordEntity(id = 25704, original = "thread", transliteration = "[θred]", translation = "тред; цепочка сообщений",
             definition = "A chain of linked posts or replies that form one online conversation.",
             definitionNative = "Серия связанных публикаций или сообщений в социальных сетях, образующих беседу.",
-            example = "He wrote a long thread explaining his thoughts on the issue.",
+            example = "He posted a ten-tweet thread about the new law.",
             exampleNative = "Прочитай этот thread — там целое расследование.",
             rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media_content"),
 
@@ -241,7 +241,7 @@ object WordDataEnglishBatch5 {
         WordEntity(id = 25707, original = "reel", transliteration = "[riːl]", translation = "рилс / короткое видео",
             definition = "A short vertical video shared on apps like Instagram or TikTok.",
             definitionNative = "Короткий видеоролик, публикуемый в социальных сетях.",
-            example = "I posted a reel of my travel highlights and it got thousands of likes.",
+            example = "My cooking reel went viral and got a million views.",
             exampleNative = "Сделал reel из нарезки путешествия — набрал пять тысяч лайков.",
             rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media_content"),
 
@@ -255,7 +255,7 @@ object WordDataEnglishBatch5 {
         WordEntity(id = 25709, original = "content creator", transliteration = "[ˈkɒntent kriˈeɪtər]", translation = "создатель контента",
             definition = "Someone who makes videos, posts or pictures for online audiences.",
             definitionNative = "Человек, создающий видео, посты или другие медиа для онлайн-платформ.",
-            example = "Being a content creator requires consistency and creativity.",
+            example = "She quit her office job to become a full-time content creator.",
             exampleNative = "Она бросила офис и стала full-time content creator.",
             rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media_people"),
 
@@ -310,13 +310,13 @@ object WordDataEnglishBatch5 {
 
                 WordEntity(id = 25717, original = "sponsored post", transliteration = "[ˈspɒnsəd pəʊst]", translation = "спонсируемый пост, рекламная публикация", rarity = "RARE", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media",
             definition = "A paid ad made to look like a normal social media post.",
-            example = "Influencers must label a sponsored post to comply with advertising rules.",
+            example = "Every sponsored post must be clearly marked as an ad.",
             definitionNative = "Платная реклама, оформленная как обычный пост в соцсетях.",
             exampleNative = "Инфлюенсеры обязаны помечать sponsored post для соответствия правилам рекламы."),
 
                 WordEntity(id = 25718, original = "go live", transliteration = "[ɡəʊ laɪv]", translation = "выйти в прямой эфир", rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "verb", semanticGroup = "social_media",
             definition = "To start broadcasting yourself in real time on a social media app.",
-            example = "She decided to go live on her channel to answer fans' questions in real time.",
+            example = "She'll go live tonight to answer questions from her fans.",
             definitionNative = "Начать трансляцию в прямом эфире на платформе социальных сетей.",
             exampleNative = "Она решила go live на своём канале, чтобы ответить на вопросы фанатов."),
 
@@ -330,7 +330,7 @@ object WordDataEnglishBatch5 {
         WordEntity(id = 25720, original = "unfollow", transliteration = "[ˌʌnˈfɒloʊ]", translation = "отписаться",
             definition = "To take a person's account off your feed, so their posts stop appearing.",
             definitionNative = "Перестать следить за чьим-либо профилем или аккаунтом в социальной сети.",
-            example = "I had to unfollow several accounts to reduce the negativity in my feed.",
+            example = "I decided to unfollow everyone who posts only negative news.",
             exampleNative = "Нажми unfollow — не обязательно объяснять причины.",
             rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "verb", semanticGroup = "social_media_behaviour"),
 
@@ -354,7 +354,7 @@ object WordDataEnglishBatch5 {
 
                 WordEntity(id = 25724, original = "live stream", transliteration = "[laɪv striːm]", translation = "прямая трансляция", rarity = "UNCOMMON", setId = 257, languagePair = "en-ru", pos = "noun", semanticGroup = "social_media",
             definition = "A video shown on the internet as it happens, in real time.",
-            example = "Thousands of viewers tuned in to watch the live stream of the concert.",
+            example = "Fifty thousand fans watched the live stream of the final.",
             definitionNative = "Видеотрансляция, передаваемая через интернет в режиме реального времени.",
             exampleNative = "Тысячи зрителей подключились к live stream концерта."),
 
@@ -516,7 +516,7 @@ object WordDataEnglishBatch5 {
         WordEntity(id = 25822, original = "syllogism", transliteration = "[ˈsɪlədʒɪzəm]", translation = "силлогизм",
             definition = "A logical argument where a conclusion follows from two starting statements.",
             definitionNative = "Форма логического умозаключения, в которой вывод следует из двух данных посылок.",
-            example = "All men are mortal. Socrates is a man. Therefore Socrates is mortal — a classic syllogism.",
+            example = "Aristotle's classic syllogism proves that Socrates must be mortal.",
             exampleNative = "Syllogism — основа формальной логики Аристотеля.",
             rarity = "EPIC", setId = 258, languagePair = "en-ru", pos = "noun", semanticGroup = "philosophy_logic"),
 
