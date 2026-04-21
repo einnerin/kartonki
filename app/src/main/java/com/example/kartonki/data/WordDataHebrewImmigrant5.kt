@@ -567,7 +567,7 @@ object WordDataHebrewImmigrant5 {
         ),
         WordEntity(
             id = 114410, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "security", transliteration = "patzua",
+            pos = "adj", semanticGroup = "security", transliteration = "patzua",
             original = "פָּצוּעַ", translation = "раненый",
             definition = "מִי שֶׁנִּפְגַּע בְּגוּפוֹ עַקֵּב תְּאוּנָה אוֹ פִּיגּוּעַ.",
             definitionNative = "Тот, кто получил телесные повреждения вследствие аварии или теракта.",

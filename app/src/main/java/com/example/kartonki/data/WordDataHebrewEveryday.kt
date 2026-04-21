@@ -149,7 +149,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100414, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "eifo",
+            pos = "adv", semanticGroup = "question_word", transliteration = "eifo",
             original = "אֵיפֹה", translation = "где",
             definition = "מִלַּת שְׁאֵלָה לְמָקוֹם.",
             definitionNative = "Вопросительное слово о местонахождении.",
@@ -158,7 +158,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100415, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "matai",
+            pos = "adv", semanticGroup = "question_word", transliteration = "matai",
             original = "מָתַי", translation = "когда",
             definition = "מִלַּת שְׁאֵלָה לְגַבֵּי זְמַן.",
             definitionNative = "Вопросительное слово о времени.",
@@ -167,7 +167,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100416, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "lama",
+            pos = "adv", semanticGroup = "question_word", transliteration = "lama",
             original = "לָמָּה", translation = "почему",
             definition = "מִלַּת שְׁאֵלָה לִסְבָּה אוֹ לְהֶסְבֵּר.",
             definitionNative = "Вопросительное слово о причине или объяснении.",
@@ -176,7 +176,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100417, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "eich",
+            pos = "adv", semanticGroup = "question_word", transliteration = "eich",
             original = "אֵיךְ", translation = "как",
             definition = "מִלַּת שְׁאֵלָה לְגַבֵּי אֹפֶן פְּעוּלָה.",
             definitionNative = "Вопросительное слово об образе действия.",
@@ -185,7 +185,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100418, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "kama",
+            pos = "adv", semanticGroup = "question_word", transliteration = "kama",
             original = "כַּמָּה", translation = "сколько",
             definition = "מִלַּת שְׁאֵלָה לְכַמּוּת אוֹ מְחִיר.",
             definitionNative = "Вопросительное слово о количестве или цене.",
@@ -230,7 +230,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100423, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "communication", transliteration = "metsuyam",
+            pos = "adj", semanticGroup = "communication", transliteration = "metsuyam",
             original = "מְצֻיָּן", translation = "отлично / замечательно",
             definition = "ביטוי שבח להצלחה או לאיכות גבוהה.",
             definitionNative = "Выражение похвалы за успех или высокое качество.",
@@ -248,7 +248,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100425, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adverb", semanticGroup = "communication", transliteration = "efshar",
+            pos = "adv", semanticGroup = "communication", transliteration = "efshar",
             original = "אֶפְשָׁר", translation = "можно / возможно",
             definition = "מִלָּה שֶׁמַּרְאָה שֶׁמַּשֶּׁהוּ אֶפְשָׁרִי אוֹ מוּתָּר.",
             definitionNative = "Слово, выражающее возможность или разрешение.",
@@ -406,7 +406,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100517, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "people", transliteration = "zaken",
+            pos = "adj", semanticGroup = "people", transliteration = "zaken",
             original = "זָקֵן", translation = "пожилой / старый",
             definition = "מִי שֶׁחַי שָׁנִים רַבּוֹת וּמֵבִין מִנִּסְיוֹן.",
             definitionNative = "Тот, кто прожил много лет и обладает жизненным опытом.",
@@ -415,7 +415,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100518, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "people", transliteration = "tzair",
+            pos = "adj", semanticGroup = "people", transliteration = "tzair",
             original = "צָעִיר", translation = "молодой",
             definition = "מִי שֶׁנּוֹלַד לְלֹא זְמַן רַב.",
             definitionNative = "Тот, кто родился недавно, юный.",

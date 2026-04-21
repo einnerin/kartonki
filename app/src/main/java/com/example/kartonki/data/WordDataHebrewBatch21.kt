@@ -191,7 +191,7 @@ object WordDataHebrewBatch21 {
             exampleNative = "Многие церкви Рима построены в стиле בַּאְרוֹקוֹ.",
         ),
         WordEntity(id = 108613, setId = 1086, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "architecture", transliteration = "goti",
+            pos = "adj", semanticGroup = "architecture", transliteration = "goti",
             original = "גּוֹתִי", translation = "готический (стиль)",
             definition = "סִגְנוֹן אַרְכִיטֶקְטוֹנִי מֵימֵי הַבֵּינַיִם עִם קַשְׁתּוֹת חַדּוֹת.",
             definitionNative = "Средневековый архитектурный стиль с остроконечными арками.",

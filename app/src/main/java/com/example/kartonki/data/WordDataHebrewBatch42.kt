@@ -160,7 +160,7 @@ object WordDataHebrewBatch42 {
             exampleNative = "הֲדֵדִיּוּת — основа любых здоровых социальных отношений.",
         ),
         WordEntity(id = 122114, setId = 1221, languagePair = "he-ru", rarity = "RARE",
-            pos = "adjective", semanticGroup = "communication", transliteration = "rishmi",
+            pos = "adj", semanticGroup = "communication", transliteration = "rishmi",
             original = "רְשָׁמִי", translation = "официальный",
             definition = "קָשׁוּר לְמוֹסָד, לְמֶמְשָׁלָה אוֹ לְמָסָד.",
             definitionNative = "Связанный с учреждением, правительством или институтом.",
