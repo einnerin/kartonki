@@ -4,7 +4,7 @@
 # Установка (однократно):
 #   git config core.hooksPath .githooks
 #
-# Что проверяется (find_real_dupes.py):
+# Что проверяется (scripts/validate/find_real_dupes.py):
 #   1. Украденные слова — Room UNIQUE(original+languagePair): любой дубль в ЛЮБОМ файле
 #   2. Все наборы = 25 слов после симуляции Room REPLACE
 #   3. Слишком большой разброс редкости в новых наборах (> 2 смежных уровня)
@@ -21,10 +21,10 @@ if [ -z "$CHANGED" ]; then
   exit 0
 fi
 
-echo "🔍 Проверка наборов слов (find_real_dupes.py)..."
+echo "🔍 Проверка наборов слов (scripts/validate/find_real_dupes.py)..."
 echo ""
 
-if python find_real_dupes.py; then
+if python scripts/validate/find_real_dupes.py; then
   echo ""
   exit 0
 fi
@@ -35,7 +35,7 @@ echo "Что делать:"
 echo "  Украденные слова:"
 echo "    → слово уже есть в другом наборе — Room (unique index) тихо удалит старый entry"
 echo "    → замени слово в НАБОРЕ-ЛУЗЕРЕ на то, которого нет ни в одном другом"
-echo "    → python find_real_dupes.py  # проверь после исправления"
+echo "    → python scripts/validate/find_real_dupes.py  # проверь после исправления"
 echo ""
 echo "  Набор ≠ 25 слов:"
 echo "    → это следствие дубля выше — исправь дубль, счётчик восстановится"

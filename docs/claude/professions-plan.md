@@ -54,7 +54,7 @@ ID формула: setId × 100 + позиция (1–25)
 
 1. Обновить `WordRegistry.kt` — добавить все 7 новых объектов в `allSets` и `allWords`
 2. Поднять `WordDataVersion.CURRENT` (текущая: 179 → станет 180)
-3. Запустить `python find_real_dupes.py` — убедиться 0 ошибок
+3. Запустить `python scripts/validate/find_real_dupes.py` — убедиться 0 ошибок
 4. `./gradlew assembleDebug` — BUILD SUCCESSFUL
 5. `git add` + `git commit` + `git push`
 

@@ -22,7 +22,7 @@
 |----------|-----------|
 | Размер наборов | ✅ Все 310 наборов × 25 слов |
 | Метки сложности | ✅ 0 нарушений CEFR |
-| DB-дубли | ✅ 0 (проверено `find_real_dupes.py`) |
+| DB-дубли | ✅ 0 (проверено `scripts/validate/find_real_dupes.py`) |
 | Синонимы / однокоренные A1-B2 | ✅ Исправлены |
 
 ## Ещё не сделано
@@ -34,7 +34,7 @@
 ## Порядок работы при изменениях
 
 1. Изменить `WordData*.kt`
-2. `python find_real_dupes.py` — 0 stolen words
+2. `python scripts/validate/find_real_dupes.py` — 0 stolen words
 3. `JAVA_HOME="C:/Program Files/Android/Android Studio/jbr" ./gradlew assembleDebug`
 4. Поднять `WordDataVersion.CURRENT`
 5. Обновить этот файл → коммит → пуш

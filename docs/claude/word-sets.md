@@ -75,7 +75,7 @@ WordEntity(
 ❌ `cite` + `citation`, `perceive` + `perception`, `electrolysis` + `electrolyte`.
 ❌ Иврит: слова с общим шорешом (3-буквенным корнем), напр. `שָׁלוֹם` + `שָׁלֵם`.
 
-## Что блокирует валидатор `find_real_dupes.py`
+## Что блокирует валидатор `scripts/validate/find_real_dupes.py`
 
 | ❌ Блокирует | ⚠️ Предупреждает |
 |---|---|
@@ -101,14 +101,14 @@ WordEntity(
 6. **Переводы уникальны** в наборе — если два слова переводятся одинаково, уточни один (`cite → цитировать`, `refer → ссылаться`).
 7. **Kotlin-синтаксис**: каждый WordEntity/WordSetEntity заканчивается запятой, нет `,,`, закрывающая скобка listOf не забыта.
 8. Зарегистрировать в `WordRegistry.kt` → поднять `WordDataVersion.CURRENT`.
-9. `python find_real_dupes.py` → все проверки зелёные (0 и ❌ и ⚠️).
+9. `python scripts/validate/find_real_dupes.py` → все проверки зелёные (0 и ❌ и ⚠️).
 10. `./gradlew assembleDebug` → `BUILD SUCCESSFUL`.
 
 ## Скрипты в корне (для разовых операций, не для новых наборов)
 
 | Скрипт | Что делает |
 |--------|-----------|
-| `find_real_dupes.py` | Основной валидатор перед коммитом |
+| `scripts/validate/find_real_dupes.py` | Основной валидатор перед коммитом |
 | `deep_audit.py` / `deep_audit2.py` | Расширенный аудит (empty sets, orphan id и пр.) |
 | `fix_rarity_spread_he.py` / `fix_spread_all_v2.py` | Clamp редкостей в проблемных наборах |
 | `fix_topic_dupes.py` | Удаление дублей `original` внутри темы |
