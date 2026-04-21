@@ -313,7 +313,7 @@ object WordDataHebrewBatch20 {
             pos = "noun", semanticGroup = "social_media", transliteration = "netvurking",
             original = "נְטְוּרְקִינְג", translation = "нетворкинг"),
         WordEntity(id = 108312, setId = 1083, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adj", semanticGroup = "social_media", transliteration = "virali",
+            pos = "adjective", semanticGroup = "social_media", transliteration = "virali",
             original = "וִירַלִי", translation = "вирусный (о контенте)"),
         WordEntity(id = 108313, setId = 1083, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "social_media", transliteration = "kehila mekuvenet",

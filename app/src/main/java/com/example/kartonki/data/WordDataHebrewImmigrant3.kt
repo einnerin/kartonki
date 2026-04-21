@@ -493,7 +493,7 @@ object WordDataHebrewImmigrant3 {
         ),
         WordEntity(
             id = 103212, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adj", semanticGroup = "post", transliteration = "shaviri",
+            pos = "adjective", semanticGroup = "post", transliteration = "shaviri",
             original = "שָׁבִיר", translation = "хрупкий",
             definition = "חֵפֶץ שֶׁנִּשְׁבָּר בְּקַלּוּת וְדוֹרֵשׁ טִיפּוּל זָהִיר.",
             definitionNative = "Предмет, легко ломающийся и требующий осторожного обращения.",

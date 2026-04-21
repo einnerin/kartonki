@@ -8824,7 +8824,7 @@ object WordDataEnglish {
             example = "She has suffered from chronic back pain for ten years.",
             definitionNative = "Длящийся долгое время или постоянно повторяющийся.",
             exampleNative = "Она страдает от chronic боли в спине уже десять лет."),
-        WordEntity(id = 7005, original = "entrenched", transliteration = "[ɪnˈtrɛnʧt]", translation = "укоренившийся / глубоко укоренившийся", rarity = "EPIC", setId = 70, languagePair = "en-ru", pos = "adj", semanticGroup = "patterns",
+        WordEntity(id = 7005, original = "entrenched", transliteration = "[ɪnˈtrɛnʧt]", translation = "укоренившийся / глубоко укоренившийся", rarity = "EPIC", setId = 70, languagePair = "en-ru", pos = "adjective", semanticGroup = "patterns",
             definition = "Firmly established and difficult to change.",
             example = "Entrenched attitudes about gender roles are hard to shift without broad cultural change.",
             exampleNative = "Entrenched взгляды сложно изменить даже при наличии веских доводов.", definitionNative = "Глубоко укоренившийся, трудно поддающийся изменению."),

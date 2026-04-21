@@ -346,7 +346,7 @@ object WordDataHebrewBatch16 {
         ),
         WordEntity(
             id = 107109, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adj", semanticGroup = "religion_advanced", transliteration = "mizrakhi",
+            pos = "adjective", semanticGroup = "religion_advanced", transliteration = "mizrakhi",
             original = "מִזְרָחִי", translation = "мизрахи (евреи из стран Востока)",
             definition = "יְהוּדִים שֶׁמּוֹצָאָם מֵאַרְצוֹת הַמִּזְרָח — כְּגוֹן מָרוֹקוֹ, עִרָק, תֵּימָן וּפָרַס.",
             definitionNative = "Евреи, происходящие из стран Востока — например, Марокко, Ирака, Йемена и Персии.",

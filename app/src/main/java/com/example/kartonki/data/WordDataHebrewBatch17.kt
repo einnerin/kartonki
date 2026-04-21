@@ -357,7 +357,7 @@ object WordDataHebrewBatch17 {
         ),
         WordEntity(
             id = 107415, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adj", semanticGroup = "aliya", transliteration = "moshava",
+            pos = "adjective", semanticGroup = "aliya", transliteration = "moshava",
             original = "מוֹשָׁבָה", translation = "мошава (сельское поселение)",
             definition = "מִי שֶׁאֵינוֹ שׁוֹמֵר מִצְווֹת דָּתִיּוֹת בְּחַיָּיו הַיּוֹמְיוֹמִיִּים.",
             definitionNative = "Тот, кто не соблюдает религиозные заповеди в повседневной жизни.",
@@ -402,7 +402,7 @@ object WordDataHebrewBatch17 {
         ),
         WordEntity(
             id = 107420, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adj", semanticGroup = "aliya", transliteration = "toshav",
+            pos = "adjective", semanticGroup = "aliya", transliteration = "toshav",
             original = "תּוֹשַׁב", translation = "житель; резидент",
             definition = "מִי שֶׁמְּקַיֵּם מִצְווֹת הֲלָכָה בְּחַיָּיו — בִּמְיֻחָד בַּחֶבְרָה הַיִּשְׂרְאֵלִית.",
             definitionNative = "Тот, кто соблюдает заповеди галахи в жизни — особенно в израильском обществе.",

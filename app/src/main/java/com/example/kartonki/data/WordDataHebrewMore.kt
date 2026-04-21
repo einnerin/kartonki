@@ -755,7 +755,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101107, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adj", semanticGroup = "weather", transliteration = "kham",
+            pos = "adjective", semanticGroup = "weather", transliteration = "kham",
             original = "חַם", translation = "жарко / горячий",
             definition = "בַּעַל טֶמְפֶּרָטוּרָה גְּבוֹהָה.",
             definitionNative = "Имеющий высокую температуру.",
@@ -764,7 +764,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101108, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adj", semanticGroup = "weather", transliteration = "kar",
+            pos = "adjective", semanticGroup = "weather", transliteration = "kar",
             original = "קַר", translation = "холодно / холодный",
             definition = "בַּעַל טֶמְפֶּרָטוּרָה נְמוּכָה.",
             definitionNative = "Имеющий низкую температуру.",
