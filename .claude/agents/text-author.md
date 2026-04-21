@@ -174,3 +174,28 @@ needs_human_review: K (с причинами, если были)
 - «When wealthy newcomers move into a poor area and slowly push out the locals.»
 
 **Если вообще не получается без нарушения правил:** оставь поле пустым (не пиши плохой текст), верни `needs_human_review: true` с объяснением. Лучше честно сказать «слишком специфично» чем закрепить слабый текст.
+
+## Блокирующая валидация перед возвратом отчёта
+
+После того, как Edit'ы по всем 25 словам сделаны — **обязательно** прогнать:
+
+```bash
+bash scripts/validate/validate_all.sh <setId>
+```
+
+**Правило:** агент НЕ возвращает отчёт, пока `validate_all.sh` не вернёт 0.
+
+Если валидация упала — проанализировать вывод, исправить нарушения, повторить. Типичные провалы (см. стандарты и `quality_standards_metadata.md`):
+
+| Валидатор | Что делать |
+|-----------|-----------|
+| `validate_fields_filled` | Найти слова с незаполненным полем (пропустил Edit?), дописать по стандарту |
+| `validate_text_lengths` | Сократить: `definition`/`definitionNative` ≤14 слов/80 симв; `example` ≤12/80 (англ) или ≤10/70 (иврит); `exampleNative` ≤14/90 |
+| `validate_no_cognates` | Переписать определение без однокоренных (учесть исключение для многословных `original`) |
+| `validate_fields_filled` пропускает, а `validate_group_sizes`/`validate_pos_values` падают | Это не твоя зона (pos/semanticGroup — работа metadata-filler). Значит ими не заполнено в этом setId. В отчёте пометь, что `metadata-filler` должен пройтись после тебя |
+
+Агент НЕ трогает `pos` и `semanticGroup` (это зона metadata-filler), но **сам проверяет**, что 4 текстовых поля удовлетворяют соответствующим валидаторам: `validate_fields_filled` (в части 4 text-полей), `validate_text_lengths`, `validate_no_cognates`.
+
+**В отчёт** включить:
+- Вывод `validate_all.sh` (последний успешный запуск) или предупреждение «valida_group_sizes/pos_values пока падают — metadata-filler должен пройтись после»
+- Если агент не смог пройти валидацию для конкретных слов — пометить `needs_human_review: true` и оставить поле пустым
