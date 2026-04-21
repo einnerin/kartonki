@@ -108,6 +108,31 @@ $(grep -E '❌|BLOCK' /tmp/kartonki-set-${sid}.log | head -10 | sed 's/^/    /')
       fi
     done
   fi
+
+  # 2c. WordDataVersion.CURRENT bump — если меняются данные, версия должна расти
+  #
+  # Причина: WordLoader при старте приложения перечитывает все слова только если
+  # WordDataVersion.CURRENT != сохранённая в prefs. Без bump существующие установки
+  # приложения не увидят новые тексты/группировки — накопленный техдолг на ~80
+  # коммитов обнаружен 2026-04-21.
+  CHANGED_DATA_ONLY=$(echo "$CHANGED_WORDDATA" | grep -vE '/WordDataVersion\.kt$' || true)
+  if [ -n "$CHANGED_DATA_ONLY" ]; then
+    VERSION_PATH="app/src/main/java/com/example/kartonki/data/WordDataVersion.kt"
+    VERSION_STAGED=$(echo "$CHANGED_WORDDATA" | grep -E '/WordDataVersion\.kt$' || true)
+    if [ -z "$VERSION_STAGED" ]; then
+      ERRORS+=("Изменены WordData*.kt, но WordDataVersion.kt не в staging:
+$(echo "$CHANGED_DATA_ONLY" | head -5 | sed 's/^/    /')
+Открой $VERSION_PATH и увеличь CURRENT на 1, затем: git add $VERSION_PATH
+Причина: WordLoader сверяет CURRENT с сохранённой версией, иначе изменения не видны пользователям.")
+    else
+      OLD_VER=$(git show HEAD:$VERSION_PATH 2>/dev/null | grep -oE 'CURRENT = [0-9]+' | grep -oE '[0-9]+' || echo "0")
+      NEW_VER=$(grep -oE 'CURRENT = [0-9]+' "$VERSION_PATH" | grep -oE '[0-9]+' || echo "0")
+      if [ "$NEW_VER" -le "$OLD_VER" ]; then
+        ERRORS+=("WordDataVersion.CURRENT не увеличен: было $OLD_VER, стало $NEW_VER.
+Открой $VERSION_PATH и поставь CURRENT = $((OLD_VER + 1)) или больше.")
+      fi
+    fi
+  fi
 fi
 
 # ── 3. Финальный вердикт ─────────────────────────────────────────────────────

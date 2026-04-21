@@ -47,9 +47,10 @@
 ## Git — после каждой задачи
 
 1. Собери: `JAVA_HOME="C:/Program Files/Android/Android Studio/jbr" ./gradlew assembleDebug` → должно быть `BUILD SUCCESSFUL`
-2. `git add` изменённые файлы **по явным путям** (см. правила ниже)
-3. Коммит на русском языке + строка `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>`
-4. `git push origin main`
+2. Если менялись `WordData*.kt` (любое поле любого слова) — **подними `WordDataVersion.CURRENT` на 1** в одном коммите с изменениями данных. Без этого `WordLoader` не перечитает базу на устройствах пользователей — новые тексты/группировки останутся невидимыми. Pre-commit hook с 2026-04-21 блокирует коммит `WordData*.kt` без bump.
+3. `git add` изменённые файлы **по явным путям** (см. правила ниже)
+4. Коммит на русском языке + строка `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>`
+5. `git push origin main`
 
 ### Запрет на `git add -A` / `git add .`
 

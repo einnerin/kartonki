@@ -14,7 +14,7 @@
 | 2 | **Skills читают стандарты** | `/add-words` шаг 0: чтение 3 стандартов обязательно | `.claude/skills/add-words/SKILL.md` | При запуске skill'а |
 | 3 | **Валидационные скрипты** | 7 чистых проверок + aggregator + audit | `scripts/validate/` | По запросу (ручной/CI/hook) |
 | 4 | **Skill+агенты обязаны валидацию** | Блокирующее правило: `validate_all.sh` до возврата 0 | SKILL.md шаг 7, text-author/metadata-filler | Перед возвратом отчёта агентом |
-| 5 | **Pre-commit hook** | Локальная защита: `.py` в корне, worktrees, submodule, WordData-валидация | `.githooks/pre-commit` | Перед каждым `git commit` |
+| 5 | **Pre-commit hook** | Локальная защита: `.py` в корне, worktrees, submodule, WordData-валидация, bump `WordDataVersion.CURRENT` при любом изменении данных | `.githooks/pre-commit` | Перед каждым `git commit` |
 | 6 | **CI — blocking PR workflow** | Валидация только изменённых setIds. Красный = блокирует мерж | `.github/workflows/validate-words-pr.yml` | На push/PR к main при изменении WordData |
 | 7 | **CI — health weekly workflow** | Полный аудит всей базы. Красный = техсбой, не блокирует PR | `.github/workflows/validate-words-health.yml` | Еженедельно + ручной запуск |
 
@@ -84,6 +84,7 @@ bash scripts/validate/tests/run_tests.sh
 - **f353472** (2026-04-22) — `git add -A` захватил 60+ untracked Python-скриптов + `.claude/worktrees/agent-a054b794` как embedded git repo (submodule mode 160000). Revert, повторный чистый коммит. Уроки: запрет на `git add -A`, правила cleanliness в pre-commit hook.
 - **Batch7-13 пустые** (2026-04-21) — 650 слов с `definition=null`/`example=null` несколько сессий лежали в main. text-author добавлен как инструмент, `validate_fields_filled` — как страховка.
 - **adj vs adjective** (2026-04-22) — 39 слов с короткой формой `pos` ломали `QuizBuilder.pickDistractors` tier1 strict-equality. Нормализация + `validate_pos_values` + стандарт метаданных с явным запретом коротких форм.
+- **WordDataVersion не поднимался** (2026-04-21) — ~78 коммитов после `69b99c4` правили `WordData*.kt` без bump `CURRENT = 233`. Существующие установки приложения не видели ни text-author текстов (~3700 полей), ни metadata-filler группировок, ни полировки Batch3/Batch4. Один bump `233 → 234` подтягивает весь накопленный контент (WordLoader делает полный upsert при любом изменении номера). Pre-commit hook расширен проверкой 2c: если в staging `WordData*.kt` — `WordDataVersion.kt` тоже должен быть, и `CURRENT` должен строго расти. CLAUDE.md дополнен явным шагом bump в разделе «Git — после каждой задачи».
 
 ## Ссылки
 
