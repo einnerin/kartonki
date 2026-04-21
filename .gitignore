@@ -74,3 +74,19 @@ Thumbs.db
 
 # Node.js
 node_modules/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Claude workspace
+.claude/worktrees/
+.claude/settings.local.json
+
+# Ad-hoc output at repo root (intentional tooling lives in scripts/)
+/*.log
+/check*.txt
+/test_out.txt
+/coverage_*.txt
+/ANALYSIS_RESULTS.txt
+/same_roots.txt
