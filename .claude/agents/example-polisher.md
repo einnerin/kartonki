@@ -29,15 +29,39 @@ tools: Read, Grep, Glob, Edit, Bash
 
 ## Железные правила (нарушать нельзя)
 
-### 1. Целевое слово ОБЯЗАНО присутствовать
-Без слова `original` (или его корневой формы) в предложении `FILL_IN_BLANK` не работает. Это главное требование — пропускать нельзя.
+### 1. Целевое слово — БУКВА-В-БУКВУ как в `original`
 
-Для английского — обычно точная форма (но допустимы форма множественного числа, прошедшее время и т.п.).
+В английском `example` целевое слово должно стоять точно в той же форме, что и в поле `original`. Без окончаний `-s`, `-es`, `-ed`, `-ing`, `-ies`. Это **жёстко**.
 
-Для иврита — корень сохраняется, но форма может меняться по роду/числу/лицу/биньяну. Огласовки на целевом слове сохраняются.
+**Почему так.** Квиз строит пропуск через `example.replace(original, "___")` — наивная подстрочная замена. Если в примере стоит инфлективная форма, окончание протекает в UI:
 
-### 2. Однозначность пропуска
-В пропуск должно логично вставляться **только это слово**. Если подходят синонимы — переписать.
+- `original = "cookie"`, плохой example: «She baked a batch of **cookies** and shared them.»
+  → пользователь видит: `She baked a batch of ___s and shared them.` ← **уродливый «___s»**
+- `original = "cookie"`, правильный example: «I baked a delicious **cookie** for my daughter's birthday.»
+  → в UI: `I baked a delicious ___ for my daughter's birthday.` ← чисто
+
+**Единственное исключение — pluralia tantum**: `scissors`, `trousers`, `pants`, `jeans`, `shorts`, `glasses`, `sunglasses`, `goggles`, `pajamas`, `clothes`, `headphones`, `binoculars`, `tongs`, `tweezers`, `pliers`, `scales`, `belongings`, `surroundings`, `stairs`. У них `original` сам по себе во множественном — форма совпадает.
+
+**Типичные ловушки:**
+- `apple / apples`, `potato / potatoes`, `egg / eggs`, `knife / knives` — ставь форму из `original`.
+- `run / ran / running`, `bake / baked / baking` — ставь глагол в той форме, что в `original` (обычно инфинитив без `to`).
+- Irregular: `child / children`, `mouse / mice` — только `child` / `mouse`.
+
+Перепиши предложение так, чтобы заданная форма звучала естественно. Если фраза просит множественное/прошедшее (*«She baked cookies»*), переделай: *«She pulled a warm cookie out of the oven»* — форма нужная, сцена живая.
+
+Для иврита правило мягче — форма может меняться по роду/числу/лицу/биньяну, но корень должен читаться и огласовки целевого слова сохраняются.
+
+### 2. Однозначность пропуска — критично
+
+В пропуск должно логично вставляться **только это слово**, не любой сосед по `semanticGroup`. Квиз берёт дистракторы в первую очередь из tier1 = `same pos AND same semanticGroup`, поэтому шаблонные примеры делают вопрос угадываемым только словарём.
+
+**Плохо для `cookie`:** «I baked a batch of ___.» → подходят cookies, brownies, muffins, cupcakes — любое выпеченное лакомство.
+**Хорошо для `cookie`:** «My toddler grabbed a chocolate chip cookie from the jar.» → `chocolate chip` привязывает жёстко.
+
+**Плохо для `apple`:** «She ate a fresh ___.» → подошли бы orange, banana, pear.
+**Хорошо для `apple`:** «She bit into a crisp red apple from the orchard.» → `crisp red`, `orchard` привязывают.
+
+Пробегись глазами по соседям в `semanticGroup`: если хоть один лёг бы в твой пропуск естественно — переделывай, добавляй конкретные детали (цвет, материал, действие, коллокацию).
 
 ### 3. Лимит длины
 - Английский: ≤ 12 слов, ≤ 80 символов
@@ -63,7 +87,7 @@ tools: Read, Grep, Glob, Edit, Bash
 Стало: She typed her message on a mechanical keyboard.
 
 Проверка:
-  [✓] Слово "keyboard" присутствует
+  [✓] Форма "keyboard" буква-в-букву как в original (не "keyboards")
   [✓] Пропуск однозначный (ни "mouse", ни "screen" не подойдут — "mechanical" привязывает)
   [✓] 9 слов, 56 символов
   [✓] Грамматически корректно
