@@ -322,6 +322,20 @@ class QuizBuilderTest {
             StudyQuizType.FILL_IN_BLANK in types)
     }
 
+    @Test fun `FILL_IN_BLANK receives roughly double weight vs other quiz types`() {
+        val word = fullWords.first()
+        val counts = (1..10_000).groupingBy { QuizBuilder.pickQuizType(word, fullWords) }.eachCount()
+        val fibCount = counts[StudyQuizType.FILL_IN_BLANK] ?: 0
+        val translationCount = counts[StudyQuizType.MULTIPLE_CHOICE_TRANSLATION] ?: 0
+        // With 1 pool-entry each for translation + 4 definition types + 2 for fill-in-blank,
+        // the pool has 7 entries → fill-in-blank has 2/7 ≈ 28.6% vs 1/7 ≈ 14.3% each.
+        // Ratio of fib/translation should be roughly 2; allow 1.5–2.5 for statistical noise.
+        val ratio = fibCount.toDouble() / translationCount
+        assertTrue("FILL_IN_BLANK should appear ~2x as often as TRANSLATION; " +
+                "got fib=$fibCount, translation=$translationCount (ratio=$ratio)",
+            ratio in 1.5..2.5)
+    }
+
     // ── Fallback behaviour ────────────────────────────────────────────────────
 
     @Test fun `fallbackTranslation always produces valid step with correct answer in options`() {

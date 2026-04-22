@@ -63,8 +63,16 @@ object QuizBuilder {
             // broken blanks (form mismatch → "___s", siblings in same semanticGroup
             // fit equally well). We skip FILL_IN_BLANK for these — pickQuizType
             // simply picks another type. See docs/claude/quality_standards_examples.md.
-            if (word.example != null && word.isFillInBlankSafe && allWords.size >= 4)
+            //
+            // Weight boost: added twice to the pool so FILL_IN_BLANK gets ~2/7 pick
+            // probability (vs ~1/7 for each other type). Rationale: FILL_IN_BLANK is
+            // the most engaging recall-from-context quiz, and the exclusions pipeline
+            // now guarantees non-frustrating distractors — so it's worth making
+            // noticeably more common than translation/definition quizzes.
+            if (word.example != null && word.isFillInBlankSafe && allWords.size >= 4) {
                 available.add(StudyQuizType.FILL_IN_BLANK)
+                available.add(StudyQuizType.FILL_IN_BLANK)
+            }
         }
 
         return if (available.isEmpty()) StudyQuizType.MULTIPLE_CHOICE_TRANSLATION else available.random()
