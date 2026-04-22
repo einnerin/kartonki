@@ -18,11 +18,13 @@ Blocking errors (exit 1) — staged files only:
   7. Derivative/same-root word pairs within the same NEW staged set.
   8. Description contains CEFR level notation (A1/B1 etc, case-insensitive) — use
      rarity colour instead. Promoted from warning to blocking 2026-04-23.
+  9. he-ru word missing `transliteration`. Base has 0 missing across 13 875 words;
+     blocking prevents regression. Promoted from warning to blocking 2026-04-23.
 
 Warnings (never block):
-  9. Rarity spread in modified/non-staged files (old data, fixed in Phase 4).
- 10. Word ID formula violation (staged files only).
- 11. Duplicate set names within same languagePair (staged files only).
+ 10. Rarity spread in modified/non-staged files (old data, fixed in Phase 4).
+ 11. Word ID formula violation (staged files only).
+ 12. Duplicate set names within same languagePair (staged files only).
 
 Registry order is derived automatically from WordRegistry.kt allWords.
 """
@@ -376,21 +378,23 @@ def check_name_consistency(all_sets, staged_files):
     return errors
 
 
-def check_transliteration_missing(all_words, staged_files, new_set_ids=None):
-    """Warn if NEW he-ru words (in new sets only) are missing transliteration."""
-    new_set_ids = new_set_ids or set()
-    warnings = []
+def check_transliteration_missing(all_words, staged_files):
+    """Block commit if ANY staged he-ru word is missing transliteration.
+
+    Promoted from warning (new-sets-only) to blocking (all staged) on
+    2026-04-23: audit confirmed 0 missing across 13 875 he-ru words, so
+    blocking prevents regression at zero migration cost.
+    """
+    errors = []
     for w in all_words:
         if w["lang"] != "he-ru":
             continue
         if w["file"] not in staged_files:
             continue
-        if w["setId"] not in new_set_ids:
-            continue  # skip words in pre-existing sets
         if not w.get("has_translit"):
-            warnings.append(f"  Word {w['id']} '{w['original']}' [set {w['setId']}, "
-                            f"{w['file']}]: нет transliteration")
-    return warnings
+            errors.append(f"  Word {w['id']} '{w['original']}' [set {w['setId']}, "
+                          f"{w['file']}]: нет transliteration")
+    return errors
 
 
 def check_description_cefr(all_sets, staged_files):
@@ -585,6 +589,19 @@ def main():
         else:
             print("  ✅ Описания чистые от CEFR-меток\n")
 
+    # ── 9. Транслитерация he-ru — BLOCKING (2026-04-23) ───────────────────────
+    if staged_files:
+        translit_errors = check_transliteration_missing(all_words, staged_files)
+        print(f"=== 9. Нет transliteration в staged he-ru словах: "
+              f"{len(translit_errors)} ===\n")
+        if translit_errors:
+            has_errors = True
+            for e in translit_errors:
+                print(e)
+            print()
+        else:
+            print("  ✅ Все he-ru слова с transliteration\n")
+
     # ── Warnings (never block) ────────────────────────────────────────────────
     if staged_files:
         id_errors = check_id_formula(all_words)
@@ -601,14 +618,6 @@ def main():
             print(f"=== ⚠️  Дублирующиеся имена в staged файлах: {len(name_staged)} ===\n")
             for e in name_staged:
                 print(e)
-            print()
-
-        translit_warnings = check_transliteration_missing(all_words, staged_files, new_set_ids)
-        if translit_warnings:
-            print(f"=== ⚠️  Нет transliteration в staged he-ru словах: "
-                  f"{len(translit_warnings)} ===\n")
-            for w in translit_warnings:
-                print(w)
             print()
 
     # ── Result ────────────────────────────────────────────────────────────────
