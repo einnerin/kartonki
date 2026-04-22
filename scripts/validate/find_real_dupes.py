@@ -16,12 +16,13 @@ Blocking errors (exit 1) — staged files only:
   5. Rarity spread > 2 adjacent levels within a NEW set.
   6. Missing topic or level=0 in staged sets (both are required).
   7. Derivative/same-root word pairs within the same NEW staged set.
+  8. Description contains CEFR level notation (A1/B1 etc, case-insensitive) — use
+     rarity colour instead. Promoted from warning to blocking 2026-04-23.
 
 Warnings (never block):
-  8. Rarity spread in modified/non-staged files (old data, fixed in Phase 4).
-  9. Word ID formula violation (staged files only).
- 10. Duplicate set names within same languagePair (staged files only).
- 11. Description contains CEFR level notation (A1/B1 etc) — use rarity colour instead.
+  9. Rarity spread in modified/non-staged files (old data, fixed in Phase 4).
+ 10. Word ID formula violation (staged files only).
+ 11. Duplicate set names within same languagePair (staged files only).
 
 Registry order is derived automatically from WordRegistry.kt allWords.
 """
@@ -393,16 +394,19 @@ def check_transliteration_missing(all_words, staged_files, new_set_ids=None):
 
 
 def check_description_cefr(all_sets, staged_files):
-    """Warn if staged set descriptions mention A1/B1/etc — rarity colour is enough."""
-    cefr = re.compile(r'\b(A1|A2|B1|B2|C1|C2)\b')
-    warnings = []
+    """Block commit if staged set descriptions mention A1/B1/etc — rarity colour is enough.
+
+    Case-insensitive: catches both canonical "B2" and accidental "b2".
+    """
+    cefr = re.compile(r'\b(A1|A2|B1|B2|C1|C2)\b', re.IGNORECASE)
+    errors = []
     for s in all_sets:
         if s["file"] not in staged_files:
             continue
         if cefr.search(s["description"]):
-            warnings.append(f"  Set {s['id']} '{s['name']}': описание содержит CEFR "
-                            f"«{s['description']}» — убери, достаточно цвета карточки")
-    return warnings
+            errors.append(f"  Set {s['id']} '{s['name']}': описание содержит CEFR "
+                          f"«{s['description']}» — убери, достаточно цвета карточки")
+    return errors
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
@@ -569,6 +573,18 @@ def main():
             print(f"  ⚠️  Изменённые staged наборы с однокоренными парами: "
                   f"{len(mod_deriv)} (исправить в Phase 4)\n")
 
+    # ── 8. CEFR в описаниях — BLOCKING (2026-04-23) ───────────────────────────
+    if staged_files:
+        cefr_errors = check_description_cefr(all_sets, staged_files)
+        print(f"=== 8. CEFR в описаниях staged наборов: {len(cefr_errors)} ===\n")
+        if cefr_errors:
+            has_errors = True
+            for e in cefr_errors:
+                print(e)
+            print()
+        else:
+            print("  ✅ Описания чистые от CEFR-меток\n")
+
     # ── Warnings (never block) ────────────────────────────────────────────────
     if staged_files:
         id_errors = check_id_formula(all_words)
@@ -585,13 +601,6 @@ def main():
             print(f"=== ⚠️  Дублирующиеся имена в staged файлах: {len(name_staged)} ===\n")
             for e in name_staged:
                 print(e)
-            print()
-
-        cefr_warnings = check_description_cefr(all_sets, staged_files)
-        if cefr_warnings:
-            print(f"=== ⚠️  CEFR в описаниях staged наборов: {len(cefr_warnings)} ===\n")
-            for w in cefr_warnings:
-                print(w)
             print()
 
         translit_warnings = check_transliteration_missing(all_words, staged_files, new_set_ids)
