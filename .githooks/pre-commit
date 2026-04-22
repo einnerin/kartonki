@@ -13,12 +13,18 @@
 #   Если изменены WordData*.kt:
 #     5. Глобальные проверки (scripts/validate/find_real_dupes.py):
 #        дубли, word count, setId lang-block, rarity spread new sets, cognate pairs
-#     6. Per-setId: для каждого setId в каждом изменённом файле —
+#     6. Per-setId: для КАЖДОГО РЕАЛЬНО ИЗМЕНЁННОГО setId —
 #        bash scripts/validate/validate_all.sh <setId>
 #
-# Per-setId берёт ВСЕ setIds в изменённых файлах (не только те, у которых
-# изменилась setId-line) — потому что изменение поля definition/example не
-# создаёт diff-строку с setId, но мы всё равно хотим это проверить.
+# Изменённые setIds определяются через scripts/validate/changed_setids.py:
+# скрипт читает git diff --cached --unified=0, находит диапазоны изменённых
+# строк, сопоставляет их с диапазонами WordEntity-блоков в staged-версии файла
+# и возвращает только те setIds, внутри WordEntity которых реально что-то
+# изменилось. Правки вне WordEntity (импорты, заголовки, комментарии) не
+# запускают валидацию setIds.
+#
+# Это позволяет делать чанковые коммиты на больших legacy-файлах
+# (WordDataEnglish.kt 82 setIds) без требования чинить все setIds разом.
 #
 # Если хук блокирует по ошибке — не используй --no-verify. Лучше исправить
 # нарушение или обсудить правило. См. docs/claude/quality_gates.md.
@@ -92,14 +98,14 @@ $(tail -40 /tmp/kartonki-global.log | sed 's/^/    /')
 Полный отчёт: python scripts/validate/find_real_dupes.py")
   fi
 
-  # 2b. Per-setId: для всех setId в изменённых файлах
+  # 2b. Per-setId: только реально изменённые setIds (определяются скриптом)
   ALL_SETIDS=$(for f in $CHANGED_WORDDATA; do
-    [ -f "$f" ] && grep -oE '\bsetId = [0-9]+' "$f" | grep -oE '[0-9]+'
+    [ -f "$f" ] && python scripts/validate/changed_setids.py "$f" 2>/dev/null
   done | sort -un)
 
   if [ -n "$ALL_SETIDS" ]; then
     SETID_COUNT=$(echo "$ALL_SETIDS" | wc -l)
-    echo -e "    Валидация ${SETID_COUNT} setIds в изменённых файлах"
+    echo -e "    Валидация ${SETID_COUNT} реально изменённых setIds"
     for sid in $ALL_SETIDS; do
       if ! bash scripts/validate/validate_all.sh "$sid" > /tmp/kartonki-set-${sid}.log 2>&1; then
         ERRORS+=("validate_all.sh упал для setId=$sid:
@@ -107,6 +113,8 @@ $(grep -E '❌|BLOCK' /tmp/kartonki-set-${sid}.log | head -10 | sed 's/^/    /')
 Детали: bash scripts/validate/validate_all.sh $sid")
       fi
     done
+  else
+    echo -e "    Изменения вне WordEntity-блоков (или пустой diff), per-setId валидация пропущена"
   fi
 
   # 2c. WordDataVersion.CURRENT bump — если меняются данные, версия должна расти
