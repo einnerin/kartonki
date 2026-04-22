@@ -25,15 +25,16 @@ from pathlib import Path
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-# The marker together with its attaching separator. mark_ambiguous_blanks.py
-# emits exactly one of two byte-strings right before the closing ')':
-#   - `, isFillInBlankSafe = false`  — Case A (no trailing comma in the block)
-#   - ` isFillInBlankSafe = false`   — Case B (block already ends with ',\n  )')
-# We match those two literal forms (with a small tolerance around `=` for
-# future tweaks). The pattern MUST NOT be greedy on surrounding whitespace —
-# doing so strips legitimate indentation from trailing-comma lines and
-# produces false positives.
-_MARKER_PATTERN = re.compile(r'(?:, | )isFillInBlankSafe\s*=\s*false')
+# Whitelisted metadata markers (with their attaching separators). Emitted by:
+#   - scripts/validate/mark_ambiguous_blanks.py: isFillInBlankSafe=false
+#   - scripts/validate/generate_fill_in_blank_exclusions.py:
+#       --apply             → adds fillInBlankExclusions = listOf(<ids>)
+#       --flip-safety-flag  → removes isFillInBlankSafe = false
+# Both leading-comma and trailing-comma forms are matched so trailing-comma
+# DSL lines don't produce false positives.
+_SAFE_MARKER = re.compile(r'(?:, | )isFillInBlankSafe\s*=\s*false')
+_EXCL_MARKER = re.compile(r'(?:, | )fillInBlankExclusions\s*=\s*listOf\([^)]*\)')
+_METADATA_MARKERS = [_SAFE_MARKER, _EXCL_MARKER]
 
 _DATA_DIR_PREFIX = "app/src/main/java/com/example/kartonki/data/"
 
@@ -87,9 +88,19 @@ def parse_hunks(diff_text: str):
     return hunks
 
 
-def normalize_added(added_line: str) -> str:
-    """Remove the isFillInBlankSafe marker (with its separator) if present."""
-    return _MARKER_PATTERN.sub('', added_line, count=1)
+def normalize_line(line: str) -> str:
+    """Strip any whitelisted metadata marker from a line.
+
+    Applied to BOTH removed and added lines — then they must be equal for the
+    diff to count as a pure metadata change. This accommodates both:
+      * ADDITION of a marker (removed has none, added has one → normalize
+        added → equals removed)
+      * REMOVAL of a marker (removed has one, added has none → normalize
+        removed → equals added)
+    """
+    for pat in _METADATA_MARKERS:
+        line = pat.sub('', line, count=1)
+    return line
 
 
 def validate(diff_file: str | None = None) -> int:
@@ -118,7 +129,7 @@ def validate(diff_file: str | None = None) -> int:
             ))
             continue
         for r_line, a_line in zip(removed, added):
-            if normalize_added(a_line) != r_line:
+            if normalize_line(r_line) != normalize_line(a_line):
                 r_short = r_line.rstrip()[:110]
                 a_short = a_line.rstrip()[:110]
                 violations.append((
@@ -130,7 +141,7 @@ def validate(diff_file: str | None = None) -> int:
 
     if violations:
         print("❌ METADATA_ONLY_COMMIT check FAILED: diff touches non-whitelisted fields.")
-        print("   Whitelist is {isFillInBlankSafe}. Anything else requires a normal commit.")
+        print("   Whitelist: {isFillInBlankSafe, fillInBlankExclusions}. Anything else requires a normal commit.")
         for f, msg in violations[:25]:
             print(f"  {f}: {msg}")
         if len(violations) > 25:

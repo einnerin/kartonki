@@ -126,27 +126,39 @@ def apply_safety_net(llm_entries: list[dict], set_words: list[dict]) -> list[dic
 
         # Step 2: auto-add same-semanticGroup + same-pos + same-rarity neighbors
         # that pass Rule 1 and Rule 3, if not already in list.
+        #
+        # Guardrail: skip auto-add if the set is dominated by a single
+        # semanticGroup (>= 80% of set shares it). In such sets the group
+        # isn't a meaningful discriminator — auto-adding every neighbor would
+        # exclude everyone and collapse the quiz. Phase 1 inverted tier logic
+        # already handles same-semGroup as last-resort in such sets.
+        same_sem_count = sum(
+            1 for w in set_words
+            if w.get("semanticGroup") == target.get("semanticGroup")
+        )
+        homogeneous = same_sem_count / len(set_words) >= 0.8
         existing = {e["id"] for e in filtered}
-        for other in set_words:
-            if other["id"] == tid or other["id"] in existing:
-                continue
-            if other.get("semanticGroup") != target.get("semanticGroup"):
-                continue
-            if other.get("pos") != target.get("pos"):
-                continue
-            if other.get("rarity") != target.get("rarity"):
-                continue
-            # Rule 1
-            if article == "an" and not starts_with_vowel_sound(other["original"]):
-                continue
-            if article == "a" and starts_with_vowel_sound(other["original"]):
-                continue
-            # Rule 3
-            if candidate_appears_in_example(other["original"], target["example"],
-                                              target["original"]):
-                continue
-            filtered.append({"id": other["id"], "original": other["original"],
-                             "why": "safety-net: same semGroup/pos/rarity"})
+        if not homogeneous:
+            for other in set_words:
+                if other["id"] == tid or other["id"] in existing:
+                    continue
+                if other.get("semanticGroup") != target.get("semanticGroup"):
+                    continue
+                if other.get("pos") != target.get("pos"):
+                    continue
+                if other.get("rarity") != target.get("rarity"):
+                    continue
+                # Rule 1
+                if article == "an" and not starts_with_vowel_sound(other["original"]):
+                    continue
+                if article == "a" and starts_with_vowel_sound(other["original"]):
+                    continue
+                # Rule 3
+                if candidate_appears_in_example(other["original"], target["example"],
+                                                  target["original"]):
+                    continue
+                filtered.append({"id": other["id"], "original": other["original"],
+                                 "why": "safety-net: same semGroup/pos/rarity"})
 
         out.append({
             "id": tid,
