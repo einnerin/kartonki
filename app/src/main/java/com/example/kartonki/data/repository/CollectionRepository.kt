@@ -134,6 +134,7 @@ class CollectionRepository @Inject constructor(
                 pos = e.pos,
                 semanticGroup = e.semanticGroup,
                 transliteration = e.transliteration,
+                isFillInBlankSafe = e.isFillInBlankSafe,
             )
         }
     }

@@ -121,6 +121,7 @@ class StatsRepository @Inject constructor(
                     transliteration = entity.transliteration,
                     definitionNative = entity.definitionNative,
                     exampleNative   = entity.exampleNative,
+                    isFillInBlankSafe = entity.isFillInBlankSafe,
                 )
             }
     }

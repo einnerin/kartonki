@@ -150,6 +150,10 @@ def parse_words(kt_file):
         lang = extract_field(block, 'languagePair')
         translation = extract_field(block, 'translation') or ""
         has_translit = bool(re.search(r'\btransliteration\s*=\s*"[^"]+"', block))
+        # isFillInBlankSafe — Boolean with default True. Only present in the DSL
+        # when explicitly set to false by scripts/validate/mark_ambiguous_blanks.py.
+        safe_m = re.search(r'\bisFillInBlankSafe\s*=\s*(true|false)\b', block)
+        is_safe = True if safe_m is None else (safe_m.group(1) == "true")
         if wid and sid and original and lang:
             words.append({
                 "id": wid, "setId": sid, "original": original,
@@ -161,6 +165,7 @@ def parse_words(kt_file):
                 "exampleNative": extract_field(block, 'exampleNative'),
                 "pos": extract_field(block, 'pos'),
                 "semanticGroup": extract_field(block, 'semanticGroup'),
+                "isFillInBlankSafe": is_safe,
             })
     return words
 

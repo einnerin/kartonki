@@ -116,6 +116,7 @@ class PackRepository @Inject constructor(
         pos = pos,
         semanticGroup = semanticGroup,
         transliteration = transliteration,
+        isFillInBlankSafe = isFillInBlankSafe,
     )
 
     companion object {

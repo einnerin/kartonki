@@ -13,6 +13,12 @@ import androidx.room.PrimaryKey
  * [isDefaultPvpCard] — true for the fixed ~500-card starter collection that every
  * user receives regardless of their study progress. Marked in seed data; used by
  * CollectionRepository to build a deterministic, identical starter set for all users.
+ *
+ * [isFillInBlankSafe] — false for words whose `example` produces an ambiguous or
+ * broken FILL_IN_BLANK blank (form mismatch creates "___s", or siblings in the
+ * same semanticGroup fit the blank equally well). QuizBuilder skips this type
+ * for unsafe words. Default true; unsafe words are marked in seed data by
+ * scripts/validate/mark_ambiguous_blanks.py.
  */
 @Entity(
     tableName = "words",
@@ -33,4 +39,5 @@ data class WordEntity(
     val semanticGroup: String? = null,
     val transliteration: String? = null,
     val isDefaultPvpCard: Boolean = false,   // part of the fixed starter PvP collection
+    val isFillInBlankSafe: Boolean = true,   // false → skip this word in FILL_IN_BLANK quiz
 )

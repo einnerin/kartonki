@@ -59,7 +59,11 @@ object QuizBuilder {
         }
 
         if ("fill_blank" in enabledTypes) {
-            if (word.example != null && allWords.size >= 4)
+            // isFillInBlankSafe=false marks words whose example produces ambiguous or
+            // broken blanks (form mismatch → "___s", siblings in same semanticGroup
+            // fit equally well). We skip FILL_IN_BLANK for these — pickQuizType
+            // simply picks another type. See docs/claude/quality_standards_examples.md.
+            if (word.example != null && word.isFillInBlankSafe && allWords.size >= 4)
                 available.add(StudyQuizType.FILL_IN_BLANK)
         }
 

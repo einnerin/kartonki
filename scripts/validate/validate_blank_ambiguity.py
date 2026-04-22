@@ -98,6 +98,12 @@ def validate(set_id):
         if not lang.startswith("en"):
             continue  # Hebrew morphology out of scope for this validator
 
+        # Words explicitly marked as unsafe are excluded from the quiz's
+        # FILL_IN_BLANK type (see QuizBuilder.pickQuizType), so the validator
+        # has nothing to enforce on them.
+        if w.get("isFillInBlankSafe") is False:
+            continue
+
         original = w["original"]
         example = w.get("example")
         if not example or not original:

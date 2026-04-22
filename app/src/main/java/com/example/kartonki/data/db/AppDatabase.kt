@@ -39,7 +39,7 @@ import com.example.kartonki.data.db.entity.WordSetMembershipEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 38,
+    version = 39,
     exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -352,6 +352,17 @@ abstract class AppDatabase : RoomDatabase() {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("DROP INDEX IF EXISTS `index_words_original_languagePair`")
                 db.execSQL("CREATE INDEX IF NOT EXISTS `index_words_original_languagePair` ON `words`(`original`, `languagePair`)")
+            }
+        }
+
+        /**
+         * Adds isFillInBlankSafe column to the words table. Default 1 (true) — existing
+         * rows are assumed safe; the mass-mark script then flips to 0 for words with
+         * ambiguous / form-mismatch examples. See mark_ambiguous_blanks.py.
+         */
+        val MIGRATION_38_39 = object : Migration(38, 39) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE words ADD COLUMN isFillInBlankSafe INTEGER NOT NULL DEFAULT 1")
             }
         }
 

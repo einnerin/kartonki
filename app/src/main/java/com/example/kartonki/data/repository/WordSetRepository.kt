@@ -42,6 +42,7 @@ class WordSetRepository @Inject constructor(
                 transliteration = entity.transliteration,
                 definitionNative = entity.definitionNative,
                 exampleNative = entity.exampleNative,
+                isFillInBlankSafe = entity.isFillInBlankSafe,
             )
         }
 
@@ -64,6 +65,7 @@ class WordSetRepository @Inject constructor(
         transliteration = transliteration,
         definitionNative = definitionNative,
         exampleNative = exampleNative,
+        isFillInBlankSafe = isFillInBlankSafe,
     )
 
     /** Fetches word counts for many sets in one query, keyed by setId. */
@@ -101,6 +103,7 @@ class WordSetRepository @Inject constructor(
                         transliteration = entity.transliteration,
                         definitionNative = entity.definitionNative,
                         exampleNative = entity.exampleNative,
+                        isFillInBlankSafe = entity.isFillInBlankSafe,
                     )
                 }
         }.distinctBy { it.id }

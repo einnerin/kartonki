@@ -21,10 +21,12 @@ class QuizBuilderTest {
         definitionNative: String? = "Это определение word$id.",
         example: String? = "I see a word$id here.",
         exampleNative: String? = "Я вижу word$id здесь.",
+        isFillInBlankSafe: Boolean = true,
     ) = Word(
         id = id, original = original, translation = translation, rarity = Rarity.COMMON,
         pos = pos, semanticGroup = semanticGroup, definition = definition,
         definitionNative = definitionNative, example = example, exampleNative = exampleNative,
+        isFillInBlankSafe = isFillInBlankSafe,
     )
 
     /** 20 fully-populated words — enough for all quiz types. */
@@ -237,6 +239,22 @@ class QuizBuilderTest {
         val allWords = listOf(noExWord) + (2L..20L).map { makeWord(it) }
         val types = (1..500).map { QuizBuilder.pickQuizType(noExWord, allWords) }.toSet()
         assertFalse(StudyQuizType.FILL_IN_BLANK in types)
+    }
+
+    @Test fun `word with isFillInBlankSafe=false cannot get fill-in-blank quiz types`() {
+        val unsafeWord = makeWord(1, isFillInBlankSafe = false)
+        val allWords = listOf(unsafeWord) + (2L..20L).map { makeWord(it) }
+        val types = (1..500).map { QuizBuilder.pickQuizType(unsafeWord, allWords) }.toSet()
+        assertFalse("Unsafe word must not be given FILL_IN_BLANK even with a valid example",
+            StudyQuizType.FILL_IN_BLANK in types)
+    }
+
+    @Test fun `safe word with example can still get fill-in-blank quiz types`() {
+        val safeWord = makeWord(1, isFillInBlankSafe = true)
+        val allWords = listOf(safeWord) + (2L..20L).map { makeWord(it) }
+        val types = (1..500).map { QuizBuilder.pickQuizType(safeWord, allWords) }.toSet()
+        assertTrue("Safe word with example should be able to receive FILL_IN_BLANK",
+            StudyQuizType.FILL_IN_BLANK in types)
     }
 
     // ── Fallback behaviour ────────────────────────────────────────────────────

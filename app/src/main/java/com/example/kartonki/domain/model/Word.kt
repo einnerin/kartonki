@@ -13,4 +13,5 @@ data class Word(
     val pos: String? = null,
     val semanticGroup: String? = null,
     val transliteration: String? = null,
+    val isFillInBlankSafe: Boolean = true,   // false → skip this word in FILL_IN_BLANK quiz
 )
