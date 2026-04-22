@@ -54,7 +54,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Изделие, произведённое для продажи в супермаркете.",
             example = "בָּדַקְתִּי אֶת תַּאֲרִיךְ הַתֹּקֶף שֶׁל הַמּוּצָר.",
             exampleNative = "Я проверил срок годности מוּצָר.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104404, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "kupon",
@@ -72,7 +72,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Денежная сумма, которую платят за товар или услугу.",
             example = "הַמְּחִיר שֶׁל הַשֶּׁמֶן עָלָה הַחֹדֶשׁ.",
             exampleNative = "מְחִיר масла вырос в этом месяце.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104406, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "kasai",
@@ -81,7 +81,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Работник, который стоит за кассой и принимает оплату.",
             example = "שָׁאַלְתִּי אֶת הַקַּסָּאי אֵיפֹה הַמּוּצָר שֶׁחִפַּשְׂתִּי.",
             exampleNative = "Я спросил קַסָּאי, где находится нужный мне товар.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104407, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_people", transliteration = "kasait",
@@ -90,7 +90,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Работница, которая стоит за кассой и принимает оплату.",
             example = "הַקַּסַּאִית סָרְקָה אֶת כָּל הַמּוּצָרִים בְּמְהִירוּת.",
             exampleNative = "קַסַּאִית быстро просканировала все товары.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104408, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "madaf",
@@ -108,7 +108,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Продукт, не прошедший обработку и продаваемый в натуральном виде.",
             example = "הַלֶּחֶם הַטָּרִי נִמְכָּר בַּבֹּקֶר בִּלְבַד.",
             exampleNative = "Свежий טָרִי хлеб продаётся только утром.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104410, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "supermarket_quality", transliteration = "kafua",
@@ -117,7 +117,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Продукт, хранившийся при минусовой температуре для длительного хранения.",
             example = "קָנִיתִי פִּיצָּה קְפוּאָה לַאֲרוּחַת עֶרֶב.",
             exampleNative = "Я купил замороженную קָפוּא пиццу на ужин.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104411, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_labels", transliteration = "ta'arikh tokef",
@@ -126,7 +126,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Последняя дата, до которой разрешено использовать продукт.",
             example = "תָּמִיד בּוֹדְקִים אֶת תַּאֲרִיךְ הַתֹּקֶף לִפְנֵי קְנִיָּה.",
             exampleNative = "Всегда проверяй תַּאֲרִיךְ תֹּקֶף перед покупкой.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104412, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_deals", transliteration = "hanakha",
@@ -153,7 +153,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Полка или ряд полок в магазине, на которых выставлены товары для продажи.",
             example = "אֲרִיזוֹת הַדְּגָנִים מְסֻדָּרוֹת בְּמִצְרַח הַבֹּקֶר.",
             exampleNative = "Упаковки с хлопьями расставлены на מִצְרַח завтраков.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104415, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "sakit",
@@ -171,7 +171,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Банковская карта для оплаты в магазинах и в интернете.",
             example = "שִׁלַּמְתִּי בְּכַרְטִיס אַשְׁרַאי כִּי לֹא הָיָה לִי כֶּסֶף מְזֻמָּן.",
             exampleNative = "Я заплатил כַּרְטִיס אַשְׁרַאי, потому что не было наличных.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104417, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "mits tapuzim",
@@ -252,7 +252,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Фруктовый намазной продукт, сваренный с сахаром, для намазывания на хлеб.",
             example = "הֵכַנְתִּי רִיבַּת תּוּת בַּיִת מֵהַתּוּתִים שֶׁבַּגִּינָּה.",
             exampleNative = "Я приготовил домашнее клубничное רִיבָּה из ягод в саду.",
-        ),
+         isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────
         // Set 1045 — בית חולים ורפואה  (Hospital and medicine, B1/B2),
@@ -276,7 +276,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Подразделение больницы, предназначенное для определённой медицинской области.",
             example = "הוּא מֻאְשְׁפָּז בְּמַחְלֶקֶת הַלֵּב.",
             exampleNative = "Он госпитализирован в מַחְלָקָה кардиологии.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104503, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_imaging", transliteration = "tsilu rentgen",
@@ -321,7 +321,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Медицинская процедура, при которой хирург вскрывает тело для лечения.",
             example = "הַנִּיתּוּחַ הִצְלִיחַ וְהַחוֹלֶה מַרְגִּישׁ טוֹב יוֹתֵר.",
             exampleNative = "נִיתּוּחַ прошла успешно, и пациент чувствует себя лучше.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104508, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_people", transliteration = "tornanut",
@@ -330,7 +330,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Рабочая смена, во время которой врач или медсестра отвечают за отделение.",
             example = "הָרוֹפֵא הָיָה בְּתוֹרְנוּת לַיְלָה כָּל הַלַּיְלָה.",
             exampleNative = "Врач был на ночном תּוֹרְנוּת всю ночь.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104509, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_imaging", transliteration = "rentgen",
@@ -411,7 +411,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Врач, специализирующийся на проведении операций.",
             example = "הַמְּנַתֵּחַ הֶרְגִּיעַ אֶת הַמְּשַׁפָּחָה לִפְנֵי הַנִּיתּוּחַ.",
             exampleNative = "מְנַתֵּחַ успокоил семью перед операцией.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104518, setId = 1045, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hospital_procedure", transliteration = "anestezya",
@@ -438,7 +438,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Больничная палата, где пациенты приходят в себя после операции.",
             example = "הוּא עָבַר שָׁלֹשׁ שָׁעוֹת בְּחֶדֶר הַהַחְלָמָה אַחֲרֵי הַנִּיתּוּחַ.",
             exampleNative = "Он провёл три часа в חֶדֶר הַחְלָמָה после операции.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104521, setId = 1045, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hospital_tests", transliteration = "tarbut",
@@ -465,7 +465,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Потеря крови внутри тела, вызванная травмой или болезнью.",
             example = "הֶחְשְׁדוּ בְּדִמּוּם פְּנִימִי לְאַחַר הַתְּאוּנָה.",
             exampleNative = "После аварии заподозрили דִּמּוּם פְּנִימִי.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104524, setId = 1045, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hospital_condition", transliteration = "btseket",
@@ -507,7 +507,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Путешествие на транспорте из одной точки в другую.",
             example = "הַנְּסִיעָה מִתֵּל אָבִיב לִירוּשָׁלַיִם לוֹקֶחֶת כַּחֲצִי שָׁעָה בָּרַכֶּבֶת.",
             exampleNative = "נְסִיעָה из Тель-Авива в Иерусалим занимает около получаса на поезде.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104603, setId = 1046, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "transport_cards", transliteration = "kartis rav-kav",
@@ -516,7 +516,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Израильская смарт-карта для оплаты в общественном транспорте.",
             example = "כַּרְטִיס הָרַב-קַו שֶׁלִּי הִיתָה מְלֵאָה, שִׁלַּמְתִּי בְּמַזּוּמָן.",
             exampleNative = "На моём כַּרְטִיס רַב-קַו кончились деньги, я заплатил наличными.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104604, setId = 1046, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "transport_people", transliteration = "otobus layla",
@@ -534,7 +534,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Фиксированное место, где останавливается автобус для посадки пассажиров.",
             example = "חִיכִּיתִי בְּתַחֲנַת הָאוֹטוֹבּוּס עֶשְׂרִים דַּקּוֹת.",
             exampleNative = "Я ждал на תַּחֲנַת אוֹטוֹבּוּס двадцать минут.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104606, setId = 1046, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "takhanat rakevet",
@@ -543,7 +543,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Место, где поезд останавливается для высадки и посадки пассажиров.",
             example = "תַּחֲנַת הָרַכֶּבֶת שֶׁל תֵּל אָבִיב מֶרְכָּז עֲמוּסָה מְאֹד בְּשָׁעוֹת הַשִּׂיא.",
             exampleNative = "תַּחֲנַת רַכֶּבֶת Тель-Авив Центр очень загружена в часы пик.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104607, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_cards", transliteration = "kartisiya",
@@ -579,7 +579,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Главная автобусная станция города, откуда отправляются многие маршруты.",
             example = "הָאוֹטוֹבּוּס לְחֵיפָה יוֹצֵא מִתַּחֲנַת הַמֶּרְכָּז בִּשְׁעָה תֵּשַׁע.",
             exampleNative = "Автобус в Хайфу отправляется с תַּחֲנַת מֶרְכָּז в девять часов.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104611, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_basics", transliteration = "rakevet kala",
@@ -588,7 +588,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Городской рельсовый транспорт, курсирующий по городской территории.",
             example = "הָרַכֶּבֶת הַקַּלָּה בְּתֵל אָבִיב עוֹבֶרֶת בְּלֵב הָעִיר.",
             exampleNative = "רַכֶּבֶת קַלָּה в Тель-Авиве проходит через центр города.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104612, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "sha'ar knisa",
@@ -597,7 +597,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Барьер на станции, открывающийся после прикладывания действительного билета.",
             example = "הַשַּׁעַר לֹא נִפְתַּח כִּי הַכַּרְטִיס הָיָה רֵיק.",
             exampleNative = "שַׁעַר כְּנִיסָה не открылся, потому что на карте не было денег.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104613, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_cards", transliteration = "nikuv kartis",
@@ -615,7 +615,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Человек, управляющий такси и перевозящий людей за плату.",
             example = "הַנָּהָג שֶׁל הַמּוֹנִית הֶסְבִּיר לִי אֶת הַדֶּרֶךְ לְמֶרְכָּז הָעִיר.",
             exampleNative = "נָהָג מוֹנִית объяснил мне дорогу до центра города.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104615, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_basics", transliteration = "nesiya khozeret",
@@ -633,7 +633,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Сервис или приложение для планирования маршрутов общественного транспорта.",
             example = "בָּדַקְתִּי בְּמֶרְכַּז הַנְּסִיעוֹת אֵיזֶה אוֹטוֹבּוּס לָקַחַת.",
             exampleNative = "Я проверил в מֶרְכַּז נְסִיעוֹת, какой автобус взять.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104617, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "kvish mahir",
@@ -669,7 +669,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Сумма, уплачиваемая за одну поездку в общественном транспорте.",
             example = "מְחִיר הַנְּסִיעָה בְּמֶטְרוֹ עָלָה מֵהַשָּׁנָה הַחֲדָשָׁה.",
             exampleNative = "מְחִיר נְסִיעָה в метро вырос с нового года.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104621, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "ma'avar khatsiya",
@@ -678,7 +678,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Обозначенное место на дороге для безопасного перехода пешеходов.",
             example = "עֲצוֹר לִפְנֵי מַעְבַּר הַחֲצִיָּה כְּשֶׁיֵּשׁ הוֹלְכֵי רֶגֶל.",
             exampleNative = "Остановись перед מַעְבַּר חֲצִיָּה, когда есть пешеходы.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104622, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "ma'agal tnua",
@@ -687,7 +687,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Круговое перекрёстное движение вокруг центрального острова.",
             example = "בְּמַעֲגַּל הַתְּנוּעָה צָרִיךְ לָסֵב שְׂמֹאלָה.",
             exampleNative = "На מַעֲגַּל תְּנוּעָה нужно повернуть налево.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104623, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "manhara",
@@ -696,7 +696,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Подземный или подгорный проход для автомобилей или поезда.",
             example = "הַמַּנְהָרָה בֵּין יְרוּשָׁלַיִם לְבֵית שֶׁמֶשׁ מְקַצֶּרֶת אֶת הַדֶּרֶךְ.",
             exampleNative = "מַנְהָרָה между Иерусалимом и Бейт-Шемешем сокращает дорогу.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 104624, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "tzomet",

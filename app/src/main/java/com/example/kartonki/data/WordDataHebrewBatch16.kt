@@ -87,7 +87,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Высшее существо в иудаизме — Творец мира.",
             example = "הַיְּהוּדִים מַאֲמִינִים בֵּאלֹהִים אֶחָד.",
             exampleNative = "Евреи верят в единого Бога.",
-        ),
+         isFillInBlankSafe = false),
 
         // UNCOMMON (A2–B1),
         WordEntity(
@@ -107,7 +107,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Группа евреев, объединённых вокруг синагоги или места проживания.",
             example = "הַקְּהִלָּה הַיְּהוּדִית הַמְּקוֹמִית מְאֻחֶדֶת מְאֹד.",
             exampleNative = "Местная еврейская община очень сплочена.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107009, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "dat",
@@ -190,7 +190,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Книга ежедневных молитв в иудаизме.",
             example = "פָּתַחְתִּי אֶת הַסִּידּוּר וְהִתְחַלְתִּי לְהִתְפַּלֵּל.",
             exampleNative = "Я открыл סִידּוּר и начал молиться.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107018, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "mal'akh",
@@ -199,7 +199,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Божественный посланник с крыльями согласно традиции.",
             example = "הַמַּלְאָכִים מוֹפִיעִים בְּסִיפּוּרִים רַבִּים בַּתַּנַ\"ךְ.",
             exampleNative = "Ангелы появляются во многих историях Танаха.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107019, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "minyan",
@@ -208,7 +208,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Десять евреев в возрасте заповедей — минимальное число для общественной молитвы.",
             example = "חִיכִּינוּ לַמִּינְיָן לִפְנֵי שֶׁהִתְחַלְנוּ לְהִתְפַּלֵּל.",
             exampleNative = "Мы ждали מִינְיָן перед тем, как начать молиться.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107020, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "makhzor",
@@ -226,7 +226,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Основное нравственное качество в иудаизме — помощь ближнему без вознаграждения.",
             example = "גְּמִילוּת חֲסָדִים הִיא אֶחַד מֵהַמִּצְוֹת הַחֲשׁוּבוֹת בְּיַהֲדוּת.",
             exampleNative = "Гмилут хасадим — одна из важнейших заповедей в иудаизме.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 107022, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -245,7 +245,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Духовное качество святости; также название молитвы-хвалы во время хазарат а-шац.",
             example = "בְּשַׁבָּת מַרְגִּישִׁים קְדוּשָּׁה מְיֻחֶדֶת בָּאֲוִיר.",
             exampleNative = "В шаббат в воздухе чувствуется особая קְדוּשָׁה.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107024, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "kaddish",
@@ -296,7 +296,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Евреи, строго соблюдающие заповеди и отделяющие себя от светского общества.",
             example = "הַשְּׁכוּנוֹת הַחֲרֵדִיּוֹת בְּבְּנֵי בְרַק גְּדֵלוֹת בִּמְהִירוּת.",
             exampleNative = "Ультраортодоксальные кварталы в Бней-Браке быстро растут.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107104, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "kohen",
@@ -305,7 +305,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Потомок Аарона, служивший в Храме и получающий определённые галахические привилегии.",
             example = "כֹּהֲנִים לֹא רַשָּׁאִים לְהִתְקָרֵב לְמֵת.",
             exampleNative = "Коэнам нельзя приближаться к покойнику.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107105, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "levi",
@@ -343,7 +343,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Один из 54 разделов Торы, читаемых каждую субботу в синагоге.",
             example = "פַּרָשַׁת הַשָּׁבוּעַ הִיא בְּרֵאשִׁית — פּוֹתַחַת אֶת הַמַּחְזוֹר.",
             exampleNative = "Недельная глава — Берешит, открывает годовой цикл.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107109, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "religion_advanced", transliteration = "mizrakhi",
@@ -352,7 +352,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Евреи, происходящие из стран Востока — например, Марокко, Ирака, Йемена и Персии.",
             example = "הַמּוּסִיקָה הַמִּזְרָחִית הִשְׁפִּיעָה עַל הַתַּרְבּוּת הַיִּשְׂרְאֵלִית.",
             exampleNative = "Мизрахийская музыка повлияла на израильскую культуру.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107110, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "shmini atzeret",
@@ -379,7 +379,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Присутствующие в синагоге во время молитвы.",
             example = "הַקָּהָל עָנָה אָמֵן בְּקוֹל רָם.",
             exampleNative = "Прихожане громко ответили «амен».",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107113, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "kipat sruga",
@@ -388,7 +388,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Вязаная кипа, как правило символизирующая религиозно-националистических евреев.",
             example = "הַשְּׂכוּנוֹת שֶׁל דָּתִי-לְאֻמִּי מְלֵאוֹת כִּפּוֹת סְרוּגוֹת.",
             exampleNative = "Кварталы религиозных националистов полны вязаных кипот.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107114, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "tsitsit",
@@ -397,7 +397,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Кисти на углах талита или малого талита, напоминающие еврею о заповедях.",
             example = "הוּא לוֹבֵשׁ טַלִּית קָטָן עִם צִיצִיּוֹת כָּל הַיּוֹם.",
             exampleNative = "Он носит малый талит с цицит весь день.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107115, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "religion_advanced", transliteration = "ashkenazi",
@@ -444,7 +444,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Первый свод устного закона, составленный рабби Йегудой а-Наси в конце II века.",
             example = "הַמִּשְׁנָה מְחוּלֶּקֶת לְשִׁשָּׁה סְדָרִים.",
             exampleNative = "Мишна разделена на шесть разделов.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107120, setId = 1071, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "Gemara",
@@ -462,7 +462,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Метод еврейской экзегезы, интерпретирующий библейские нарративы нарративно и этически.",
             example = "הַמִּדְרָשׁ מֵבִיא פָּרָשָׁנוּת יְצִירָתִית לְסִיפּוּרֵי בְּרֵאשִׁית.",
             exampleNative = "Мидраш даёт творческую интерпретацию рассказам Книги Бытия.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 107122, setId = 1071, languagePair = "he-ru", rarity = "RARE",
@@ -481,7 +481,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Глубокий духовный опыт соединения с Божественным.",
             example = "הַמִּסְטִיקָה הַיְּהוּדִית כּוֹלֶלֶת אֶת הַקַּבָּלָה וְאֶת הַחֲסִידוּת.",
             exampleNative = "Еврейская מִסְטִיקָה включает каббалу и хасидизм.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107124, setId = 1071, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "apikores",
@@ -500,7 +500,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Нарративная и этическая часть раввинистической литературы, в отличие от правовой галахи.",
             example = "הָאֲגָדוֹת שֶׁל חֲזַ\"ל מְלַמְּדוֹת מִדּוֹת בְּדֶרֶךְ סִפּוּרִית.",
             exampleNative = "Раввинские אֲגָדוֹת учат нравственности через нарративы.",
-        ),
+         isFillInBlankSafe = false),
 
         // ── Set 1072: Музыка ───────────────────────────────────────────────
 
@@ -513,7 +513,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Музыкальное произведение, исполняемое голосом.",
             example = "הַשִּׁיר הַזֶּה מְאֹד פּוֹפּוּלָרִי עַכְשָׁו.",
             exampleNative = "Эта песня сейчас очень популярна.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107202, setId = 1072, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "music", transliteration = "negina",
@@ -558,7 +558,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Группа музыкантов, играющих вместе.",
             example = "הַלַּהֲקָה הַזֹּאת מְפֻרְסֶמֶת בְּכָל הָאֶרֶץ.",
             exampleNative = "Эта группа знаменита по всей стране.",
-        ),
+         isFillInBlankSafe = false),
 
         // UNCOMMON (A2–B1),
         WordEntity(
@@ -569,7 +569,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Последовательность нот, имеющая музыкальное единство.",
             example = "הַמֶּלוֹדִיָּה שֶׁל הַשִּׁיר הַזֶּה נִשְׁאֶרֶת בָּרֹאשׁ.",
             exampleNative = "Мелодия этой песни остаётся в голове.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107208, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "lakhan",
@@ -578,7 +578,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Основная мелодическая часть музыкального произведения.",
             example = "הַלַּחַן שֶׁל הַשִּׁיר הַלְּאוּמִי מְוֻכָּר לְכֹל.",
             exampleNative = "Мотив государственного гимна известен всем.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107209, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "mzamer",
@@ -587,7 +587,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Артист, выступающий с пением на сцене.",
             example = "הַמְּזַמֵּר הָאָהוּב הוֹפִיעַ בְּבֵאֵר שֶׁבַע.",
             exampleNative = "Любимый певец выступал в Беэр-Шеве.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107210, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "konsert",
@@ -596,7 +596,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Живое музыкальное выступление перед аудиторией.",
             example = "הַקּוֹנְצֶרְט נִמְכַּר אֶת כָּל הַכַּרְטִיסִים.",
             exampleNative = "Концерт был полностью распродан.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107211, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "album",
@@ -632,7 +632,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Текст, поющийся в песне.",
             example = "הַמִּלִּים שֶׁל הַשִּׁיר הַזֶּה נוֹגְעוֹת בַּלֵּב.",
             exampleNative = "Слова этой песни трогают душу.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107215, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "shir am",
@@ -641,7 +641,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Традиционная песня, представляющая народную культуру и идентичность.",
             example = "שִׁירֵי עַם עִבְרִיִּים נִשְׁמָעִים בְּמַחֲנוֹת הַגַּרְעִין.",
             exampleNative = "Ивритские народные песни звучат в молодёжных лагерях.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107216, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "pop",

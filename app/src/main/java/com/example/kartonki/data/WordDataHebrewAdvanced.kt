@@ -212,12 +212,12 @@ object WordDataHebrewAdvanced {
             definitionNative = "Уникальная строка, идентифицирующая ресурс в интернете.",
             example = "הקלד אֶת כְּתוֹבֶת הָאֲתַר בשורת הדפדפן.",
             exampleNative = "Введи כְּתוֹבֶת אֲתַר в адресную строку браузера.",
-        ),
+         isFillInBlankSafe = false),
                 WordEntity(id = 101419, original = "בִּדּוּד", transliteration = "[biˈdud]", translation = "изоляция (контейнера или процесса)", rarity = "RARE", setId = 1014, languagePair = "he-ru", pos = "noun", semanticGroup = "system_architecture",
             definition = "the separation of a process or container from others to prevent interference",
             example = "Container isolation ensures that a failure in one service does not cascade to others.",
             definitionNative = "Разделение процесса или контейнера от других для предотвращения взаимовлияния.",
-            exampleNative = "Bidud контейнеров гарантирует, что сбой в одном сервисе не распространяется на другие."),
+            exampleNative = "Bidud контейнеров гарантирует, что сбой в одном сервисе не распространяется на другие.", isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────
         // Set 115 — Работа и карьера (A2–B2),
@@ -443,7 +443,7 @@ object WordDataHebrewAdvanced {
             definition = "a way of understanding or interpreting something; a concept or idea",
             example = "תְּפִיסַת הָעוֹלָם שלו שונה לחלוטין.",
             definitionNative = "Способ понять или интерпретировать что-либо; концепция или идея.",
-            exampleNative = "Его תְּפִיסָה мира совершенно отличается."),
+            exampleNative = "Его תְּפִיסָה мира совершенно отличается.", isFillInBlankSafe = false),
 
         WordEntity(
             id = 101702, setId = 1017, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -623,7 +623,7 @@ object WordDataHebrewAdvanced {
             definition = "a section of a company responsible for a specific area of work",
             example = "אני עובד בְּמַחְלֶקֶת שיווק.",
             definitionNative = "Подразделение компании, отвечающее за определённое направление работы.",
-            exampleNative = "Я работаю в מְחַלְּקָה маркетинга."),
+            exampleNative = "Я работаю в מְחַלְּקָה маркетинга.", isFillInBlankSafe = false),
 
         WordEntity(id = 101518, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "דֵּדְלַיְן", transliteration = "dedlayn", translation = "дедлайн; крайний срок", pos = "noun", semanticGroup = "work",
             definition = "the latest time or date by which something must be completed",
@@ -786,7 +786,7 @@ object WordDataHebrewAdvanced {
             definition = "a strong feeling of enthusiasm, joy, or emotional agitation",
             example = "There was great hitrageshut in the hall when the winner was announced.",
             definitionNative = "Сильное чувство воодушевления, радости или эмоционального возбуждения.",
-            exampleNative = "В зале царила hitrageshut, когда объявили победителя."),
+            exampleNative = "В зале царила hitrageshut, когда объявили победителя.", isFillInBlankSafe = false),
 
         // Set 117 — +15 (было 10, стало 25),
         WordEntity(id = 101711, setId = 1017, languagePair = "he-ru", rarity = "RARE", original = "קוֹגְנִיטִיבִיזְם", transliteration = "kognitivizm", translation = "когнитивизм", pos = "noun", semanticGroup = "abstract",
@@ -1037,13 +1037,13 @@ object WordDataHebrewAdvanced {
             definition = "a non-interactive cinematic sequence within a video game",
             example = "הַסְּצֵינָה שאחרי הניצחון הייתה מרגשת מאוד.",
             definitionNative = "Неинтерактивная кинематографическая вставка в видеоигре.",
-            exampleNative = "סְצֵינָה после победы была очень трогательной."),
+            exampleNative = "סְצֵינָה после победы была очень трогательной.", isFillInBlankSafe = false),
 
         WordEntity(id = 101815, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "שְׁבִירַת שִׂיא", transliteration = "shvirat sia", translation = "побитие рекорда", pos = "noun", semanticGroup = "gaming",
             definition = "achieving a score or time that surpasses the previous best record",
             example = "שְׁבִירַת הַשִּׂיא נרשמה בלוח ההישגים.",
             definitionNative = "Достижение результата, превосходящего предыдущий рекорд.",
-            exampleNative = "שְׁבִירַת שִׂיא была занесена в таблицу достижений."),
+            exampleNative = "שְׁבִירַת שִׂיא была занесена в таблицу достижений.", isFillInBlankSafe = false),
 
         WordEntity(id = 101816, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "אַוָּטָאר", transliteration = "avatar", translation = "аватар; игровой образ", pos = "noun", semanticGroup = "gaming",
             definition = "the visual representation of a player in the game world",
@@ -1081,7 +1081,7 @@ object WordDataHebrewAdvanced {
             definition = "a group of players who cooperate regularly in a game",
             example = "הִצְטָרַפְנוּ לְגִלְדָּה חֲזָקָה בַּמִּשְׂחָק.",
             definitionNative = "Группа игроков, которые регулярно взаимодействуют в игре.",
-            exampleNative = "Мы вступили в сильную גִּלְדָּה в игре."),
+            exampleNative = "Мы вступили в сильную גִּלְדָּה в игре.", isFillInBlankSafe = false),
 
 
         WordEntity(id = 101822, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "מִשְׂחָק תַּפְקִידִים", transliteration = "miskhak tafkidim", translation = "ролевая игра; RPG", pos = "noun", semanticGroup = "gaming",
@@ -1094,7 +1094,7 @@ object WordDataHebrewAdvanced {
             definition = "an early version of a game released to a limited audience for testing",
             example = "השתתפתי בְּבֶאטָה של המשחק לפני ההשקה.",
             definitionNative = "Ранняя версия игры, выпущенная для ограниченной аудитории для тестирования.",
-            exampleNative = "Я участвовал в בֶּאטָה игры до официального выпуска."),
+            exampleNative = "Я участвовал в בֶּאטָה игры до официального выпуска.", isFillInBlankSafe = false),
 
         WordEntity(id = 101824, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "מוֹד", transliteration = "mod", translation = "мод; пользовательская модификация", pos = "noun", semanticGroup = "gaming",
             definition = "a modification made by players to change or extend the original game",

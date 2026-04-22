@@ -28,7 +28,7 @@ object WordDataHebrewBatch41 {
             definitionNative = "Возрождение ценностей классического сионизма в современном историческом контексте.",
             example = "הַנְּאוֹ-צִיּוֹנוּת מְבַקֶּשֶׁת לְהַחְיוֹת אֶת הַמָּסוֹרֶת הַצִּיּוֹנִית הָרוֹמַנְטִית.",
             exampleNative = "Неосионизм стремится возродить романтическую сионистскую традицию.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 122002, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "israel_theory", transliteration = "post-tsionut",
@@ -64,7 +64,7 @@ object WordDataHebrewBatch41 {
             definitionNative = "Идеология, ставящая нацию во главу угла политической и культурной организации.",
             example = "הַנַּצְיוֹנַלִיזְם הַיְּהוּדִי הִתְגַּלֵּם בְּצִיּוֹנוּת כְּתְּשׁוּבָה לָרְדִיפוֹת הַגּוֹיִם.",
             exampleNative = "Еврейский национализм воплотился в сионизме как ответе на преследования нееврейского мира.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 122006, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "israel_theory", transliteration = "sovreniut",
@@ -73,7 +73,7 @@ object WordDataHebrewBatch41 {
             definitionNative = "Верховная власть государства над собой и своей территорией.",
             example = "שְׁאֵלַת הַסּוֹבְרֵנִיּוּת עַל הַר הַבַּיִת מַחֲלֹקֶת בֵּין יִשְׂרָאֵל לָרְשׁוּת הַפָּלֶסְטִינִית.",
             exampleNative = "Вопрос суверенитета над Храмовой горой является предметом спора между Израилем и Палестинской администрацией.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 122007, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "israel_theory", transliteration = "legitimatsiya",
@@ -91,7 +91,7 @@ object WordDataHebrewBatch41 {
             definitionNative = "Политика завоевания и господства одного народа над другим для экономической эксплуатации.",
             example = "הַקּוֹלוֹנְיָלִיזְם הָאֵירוֹפֵּאִי עִצֵּב אֶת הַגֵּיאוֹפּוֹלִיטִיקָה שֶׁל הַמִּזְרָח הַתִּיכוֹן.",
             exampleNative = "Европейский колониализм сформировал геополитику Ближнего Востока.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 122009, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "israel_theory", transliteration = "imperializm",
@@ -118,7 +118,7 @@ object WordDataHebrewBatch41 {
             definitionNative = "Процесс вытеснения группы на периферию общества с отказом в доступе к ресурсам.",
             example = "הַמַּרְגִינָלִיזַצְיָה שֶׁל הָעוֹלִים הַחֲדָשִׁים הִיא בְּעָיָה חֶבְרָתִית.",
             exampleNative = "Маргинализация новых репатриантов является социальной проблемой.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 122012, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "israel_theory", transliteration = "multikulturalizm",
@@ -127,7 +127,7 @@ object WordDataHebrewBatch41 {
             definitionNative = "Социальная политика, содействующая сосуществованию различных культур с сохранением их идентичностей.",
             example = "הַמֻּלְטִיקוּלְטוּרָלִיזְם מוֹעִיל לִמְדִינוֹת מְהַגְּרִים כְּיִשְׂרָאֵל.",
             exampleNative = "Мультикультурализм полезен для государств-иммигрантов, таких как Израиль.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 122013, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "israel_theory", transliteration = "apartheid",
@@ -145,7 +145,7 @@ object WordDataHebrewBatch41 {
             definitionNative = "Процесс установления нормальных отношений между государствами, находившимися в конфликте.",
             example = "הַנּוֹרְמָלִיזַצְיָה עִם מְדִינוֹת עֲרָבִיּוֹת הִתְקַדְּמָה בְּהֶסְכְּמֵי אַבְרָהָם.",
             exampleNative = "Нормализация с арабскими странами продвинулась в рамках Соглашений Авраама.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 122015, setId = 1220, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "israel_theory", transliteration = "geopolitika",

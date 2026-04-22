@@ -43,7 +43,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Передача документов или запроса уполномоченному органу.",
             example = "הַגָּשַׁת הַבַּקָּשָׁה צְרִיכָה לְהֵעָשׂוֹת לִפְנֵי הַתַּאֲרִיךְ הַקּוֹבֵעַ.",
             exampleNative = "הַגָּשָׁה заявки должна быть сделана до установленного срока.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102224, setId = 1022, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "documents", transliteration = "original",
@@ -84,7 +84,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Человек, имеющий гражданство государства и пользующийся его правами.",
             example = "לְאַחַר שָׁלוֹשׁ שָׁנִים בָּאָרֶץ קִבַּלְתִּי אֶזְרָחוּת יִשְׂרְאֵלִית.",
             exampleNative = "После трёх лет в стране я стал אֶזְרַח Израиля.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102323, setId = 1023, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "magur zmani",
@@ -111,7 +111,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Деятельность по помощи и удовлетворению нужд клиента или гражданина.",
             example = "הַשֵּׁרוּת בַּמִּשְׂרָד הָיָה מְהִיר וְנֶעֱלָם.",
             exampleNative = "שֵׁרוּת в офисе был быстрым и приятным.",
-        ),
+         isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────
         // Set 1024 — Банк: открытие счёта (слова 21–25),
@@ -125,7 +125,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Сотрудник банка, отвечающий за счёт клиента и помогающий ему.",
             example = "פָּגַשְׁתִּי אֶת מְנַהֵל הַחֶשְׁבּוֹן שֶׁלִּי לְבִירוּר הַמַּשְׁכַּנְתָּא.",
             exampleNative = "Я встретился с мְנַהֵל חֶשְׁבּוֹן по вопросу ипотеки.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102422, setId = 1024, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bank", transliteration = "tashlum",
@@ -184,7 +184,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Небольшой чемодан, который разрешено взять в салон самолёта.",
             example = "גֹּדֶל תִּיק הַיָּד בַּאֲגַד זֶה הוּא עַד 55 עַל 40 עַל 20 סֶנְטִימֶטֶר.",
             exampleNative = "Размер תִּיק יָד у этой авиакомпании до 55×40×20 см.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102523, setId = 1025, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "airport", transliteration = "khanut ptura mimelekh",
@@ -193,7 +193,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Магазин на территории аэропорта, в котором товары продаются без налога.",
             example = "קָנִיתִי בּוֹשֶׂם בַּחֲנוּת הַפְּטוּרָה מִמֶּכֶס לִפְנֵי הָרְחִיפָה.",
             exampleNative = "Я купил духи в חֲנוּת פְּטוּרָה מִמֶּכֶס перед вылетом.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102524, setId = 1025, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "airport", transliteration = "ya'ed",
@@ -211,7 +211,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Час, в который самолёт поднимается в воздух.",
             example = "שַׁעַת הַהַמְרָאָה שֶׁלָּנוּ הִיא 14:30 — יֵשׁ לְהַגִּיעַ שָׁלוֹשׁ שָׁעוֹת מוּקְדָּם.",
             exampleNative = "Наша שַׁעַת הַמְרָאָה — 14:30, нужно приехать за три часа.",
-        ),
+         isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────
         // Set 1026 — Аренда квартиры (слова 21–25),
@@ -225,7 +225,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Комната, предназначенная для ночного сна.",
             example = "הַדִּירָה כּוֹלֶלֶת שְׁנַיִם חַדְרֵי שֵׁינָה וְסָלוֹן.",
             exampleNative = "Квартира включает две חֲדַר שֵׁינָה и гостиную.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102622, setId = 1026, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "apartment", transliteration = "kheder okhel",
@@ -234,7 +234,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Комната или уголок в квартире, где едят.",
             example = "הַמִּטְבָּח וְחֶדֶר הָאֹכֶל הַחִיפְּנוּ בְּדִירָה הַחֲדָשָׁה.",
             exampleNative = "Кухня и חֶדֶר אֹכֶל объединены в новой квартире.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102623, setId = 1026, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "apartment", transliteration = "shkhenim",
@@ -243,7 +243,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Люди, живущие в одном доме или рядом с квартирой.",
             example = "הַשְּׁכֵנִים שֶׁלָּנוּ מְאֹד נֶחְמָדִים וְתָּמִיד עוֹזְרִים.",
             exampleNative = "Наши שְׁכֵנִים очень хорошие и всегда помогают.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102624, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "apartment", transliteration = "merkhav",
@@ -261,7 +261,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Плата, взимаемая с арендатора или арендодателя за услуги посредничества.",
             example = "עֲמָלַת הַתִּיּוּךְ הִיא בְּדֶרֶךְ כְּלָל מֶחֱצִית חוֹדֶשׁ שְׂכִירוּת.",
             exampleNative = "עֲמָלַת תִּיּוּךְ обычно составляет половину месячной арендной платы.",
-        ),
+         isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────
         // Set 1027 — Коммунальные услуги (слова 21–25),
@@ -275,7 +275,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Требование оплаты от электрической компании за потреблённую электроэнергию.",
             example = "חֶשְׁבּוֹן הַחַשְׁמַל שֶׁלָּנוּ גָּבֹהַּ בַּקַּיִץ בְּשֶׁל הַמַּזְגָּן.",
             exampleNative = "Наш חֶשְׁבּוֹן חַשְׁמַל высокий летом из-за кондиционера.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102722, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities", transliteration = "provayeder",
@@ -343,7 +343,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Документ, содержащий все медицинские данные пациента.",
             example = "הָרוֹפֵא עָיַן בַּתָּיק הָרְפוּאִי שֶׁלִּי לִפְנֵי הַבְּדִיקָה.",
             exampleNative = "Врач просмотрел мой תָּיק רְפוּאִי перед осмотром.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102824, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "toran",
@@ -443,7 +443,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Область работы, в которой человек является специалистом.",
             example = "מִקְצוֹעִי הוּא מְהַנְדֵּס תוֹכְנָה.",
             exampleNative = "Мой מִקְצוֹעַ — инженер-программист.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103024, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work", transliteration = "nesiyon",
@@ -475,7 +475,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Женщина, обучающая учеников в школе.",
             example = "הַמּוֹרָה שֶׁל הַכִּתָּה שֶׁלִּי מְלַמֶּדֶת מַתְמָטִיקָה.",
             exampleNative = "מוֹרָה нашего класса преподаёт математику.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103122, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "khadar kita",
@@ -493,7 +493,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Половина учебного года в академическом заведении.",
             example = "הַסֶּמֶסְטֶר הָרִאשׁוֹן מַתְחִיל בְּאוֹקְטוֹבֶּר.",
             exampleNative = "Первый סֶמֶסְטֶר начинается в октябре.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103124, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "te'uda",
@@ -502,7 +502,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Официальный документ, подтверждающий учёбу, достижения или квалификацию.",
             example = "קִיבַּלְנוּ אֶת תְּעוּדוֹת הַסּוֹף שָׁנָה בְּטֶקֶס.",
             exampleNative = "Мы получили годовые תְּעוּדָה на торжественной церемонии.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103125, setId = 1031, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "school", transliteration = "iparon",
@@ -543,7 +543,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Клейкий ярлычок, наклеиваемый на посылки с данными или для украшения.",
             example = "הַמַּדְבֵּקָה עַל הַחֲבִילָה מְכִילָה אֶת שֵׁם הַמְּקַבֵּל וְאֶת הַכְּתוֹבֶת.",
             exampleNative = "מַדְבֵּקָה на посылке содержит имя получателя и адрес.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103224, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "shover",
@@ -561,7 +561,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Адрес человека, отправившего посылку, указываемый на обратной стороне.",
             example = "כָּתַבְתִּי אֶת כְּתוֹבֶת הַשּׁוֹלֵחַ בְּפִּנָּה הָעֶלְיוֹנָה שְׂמֹאלִית.",
             exampleNative = "Я написал כְּתוֹבֶת שׁוֹלֵחַ в верхнем левом углу.",
-        ),
+         isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────
         // Set 1033 — Вождение и транспорт (слова 21–25),
@@ -584,7 +584,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Знак у дороги, указывающий водителям правила движения.",
             example = "חוֹבָה לְהִשְׁמַע לְתָמרוּרֵי הַדֶּרֶךְ.",
             exampleNative = "Обязательно подчиняться תָּמרוּר.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103323, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "driving", transliteration = "me'aber",
@@ -611,7 +611,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Подземный проход для транспортных средств под горой или водой.",
             example = "הַמִּנְהֶרֶת בֵּין חֵיפָה לְנַהֲרִיָּה חוֹסֶכֶת זְמַן רַב.",
             exampleNative = "מִנְהֶרֶת между Хайфой и Нагарией экономит много времени.",
-        ),
+         isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────
         // Set 1034 — Полиция и экстренные службы (слова 21–25),
@@ -625,7 +625,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Тот, кто находится в дежурстве и готов реагировать на чрезвычайные события.",
             example = "הַמֵּצָב מְחַיֵּב כּוֹנְנוּת מְלֵאָה שֶׁל כָּל הַכּוֹחוֹת.",
             exampleNative = "Ситуация требует полной כּוֹנֵן всех сил.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103422, setId = 1034, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "emergency", transliteration = "pig'ua",
@@ -661,7 +661,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Автомобиль полиции, скорой помощи или пожарных, мчащийся на место.",
             example = "שְׁמַעְתִּי אֶת צוֹפַר רֶכֶב הַחֵרוּם וְפָּנִיתִי לַיָּמִין.",
             exampleNative = "Я услышал сирену רֶכֶב חֵרוּם и принял вправо.",
-        ),
+         isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────
         // Set 1035 — Шаббат и праздники (слова 21–25),
@@ -684,7 +684,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Обращение к Богу с просьбой, благодарностью или хвалой.",
             example = "בְּשַׁבָּת מִשְׁתַּתְּפִים בִּתְפִלַּת הַבֹּקֶר בְּבֵית הַכְּנֶסֶת.",
             exampleNative = "В субботу участвуют в утренней תְּפִלָּה в синагоге.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103523, setId = 1035, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holidays", transliteration = "erev khag",
@@ -752,7 +752,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Сотрудник налоговой службы, проверяющий и исчисляющий налоги физических лиц и предприятий.",
             example = "פָּגַשְׁתִּי אֶת פּוֹקֵד הַמַּס שֶׁלִּי לְהַגָּשַׁת הַדּוּחַ הַשָּׁנָתִי.",
             exampleNative = "Я встретился со своим פּוֹקֵד מַס для подачи годового отчёта.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103625, setId = 1036, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "finance", transliteration = "shnat mas",
@@ -761,7 +761,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Период в 12 месяцев, за который исчисляется налог.",
             example = "שְׁנַת הַמַּס בְּיִשְׂרָאֵל מַתְחִילָה בְּ-1 בְּיָנְוָר.",
             exampleNative = "שְׁנַת מַס в Израиле начинается 1 января.",
-        ),
+         isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────
         // Set 1037 — Природа и климат Израиля (слова 21–25),
@@ -793,7 +793,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Часть растения, предназначенная для размножения, обычно красивая и ароматная.",
             example = "בָּאָבִיב פּוֹרְחִים פִּרְחֵי הַכַּלָּנִית הָאֲדֻמִּים בְּכָל הָאָרֶץ.",
             exampleNative = "Весной по всей стране цветут красные פֶּרֶח — каланиты.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 103724, setId = 1037, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "nature", transliteration = "ets",

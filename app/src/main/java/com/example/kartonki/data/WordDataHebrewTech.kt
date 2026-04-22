@@ -47,7 +47,7 @@ object WordDataHebrewTech {
             definitionNative = "Устройство, преобразующее электрический сигнал в звуки.",
             example = "הַרַּמְקוֹל של הטלפון חזק מאוד.",
             exampleNative = "רַמְקוֹל телефона очень громкий.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 101903, setId = 1019, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "gadgets",
@@ -57,7 +57,7 @@ object WordDataHebrewTech {
             definitionNative = "Перезаряжаемый источник энергии электронного устройства.",
             example = "הַסּוֹלְלָה שלי כמעט ריקה.",
             exampleNative = "Мой סוֹלְלָה почти разряжен.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 101904, setId = 1019, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "gadgets",
@@ -67,7 +67,7 @@ object WordDataHebrewTech {
             definitionNative = "Процесс пополнения заряда аккумулятора устройства.",
             example = "הַטְּעִינָה של הטלפון לוקחת שעה.",
             exampleNative = "טְעִינָה телефона занимает час.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 101905, setId = 1019, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "gadgets",
@@ -117,7 +117,7 @@ object WordDataHebrewTech {
             definitionNative = "Экран, чувствительный к прикосновению пальца.",
             example = "הַמִּגַּע של הטלפון החדש מאוד רגיש.",
             exampleNative = "מִגַּע нового телефона очень чувствительный.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 101910, setId = 1019, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gadgets",
@@ -205,7 +205,7 @@ object WordDataHebrewTech {
             definitionNative = "Компонент, фиксирующий физические изменения (движение, свет, температуру) и передающий их для обработки.",
             example = "הַסֶּנְסוֹר של הטלפון זיהה שהנחתי אותו.",
             exampleNative = "סֶנְסוֹר телефона определил, что я его положил.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 101922, setId = 1019, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gadgets",
@@ -215,7 +215,7 @@ object WordDataHebrewTech {
             definitionNative = "Двумерный код, сканируемый камерой телефона для открытия ссылки.",
             example = "סרקתי אֶת הַקּוֹד QR בכניסה למסעדה.",
             exampleNative = "Я отсканировал קוֹד QR у входа в ресторан.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 101923, setId = 1019, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gadgets",
@@ -257,7 +257,7 @@ object WordDataHebrewTech {
             definitionNative = "Видимая часть приложения, работающая в браузере.",
             example = "הַקְּצָה קְדָמִי כולל HTML, CSS ו-JavaScript.",
             exampleNative = "קְצָה קְדָמִי включает HTML, CSS и JavaScript.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102004, setId = 1020, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "webdev",
@@ -267,7 +267,7 @@ object WordDataHebrewTech {
             definitionNative = "Серверная часть приложения, обрабатывающая данные.",
             example = "הַקְּצָה אֲחוֹרִי כתוב ב-Python.",
             exampleNative = "קְצָה אֲחוֹרִי написан на Python.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102005, setId = 1020, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "webdev",
@@ -307,7 +307,7 @@ object WordDataHebrewTech {
             definitionNative = "Фиксированная структура кода для повторного использования.",
             example = "השתמשתי בְּתְבָנִית מוכנה לדף הנחיתה.",
             exampleNative = "Я использовал готовый תְּבָנִית для лендинга.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102009, setId = 1020, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "webdev",
@@ -317,7 +317,7 @@ object WordDataHebrewTech {
             definitionNative = "Данные текущего состояния пользовательского интерфейса.",
             example = "ניהול הַמַּצָּב חשוב באפליקציות React.",
             exampleNative = "Управление מַצָּב важно в приложениях React.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102010, setId = 1020, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "webdev",
@@ -367,7 +367,7 @@ object WordDataHebrewTech {
             definitionNative = "Непрерывная передача данных от источника к серверу.",
             example = "הַזֶּרֶם של הוידאו הופסק.",
             exampleNative = "זֶרֶם видео был прерван.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102015, setId = 1020, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "webdev",
@@ -377,7 +377,7 @@ object WordDataHebrewTech {
             definitionNative = "Программный интерфейс, доступный через сеть.",
             example = "הַשֵּׁרוּת רֶשֶׁת מחזיר נתוני מזג אוויר.",
             exampleNative = "שֵׁרוּת רֶשֶׁת возвращает данные о погоде.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102016, setId = 1020, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "webdev",
@@ -387,7 +387,7 @@ object WordDataHebrewTech {
             definitionNative = "Текстовый формат файла для обмена данными.",
             example = "הַמִּסְמָךְ JSON מכיל את פרטי המשתמש.",
             exampleNative = "מִסְמָךְ JSON содержит данные пользователя.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(id = 102017, setId = 1020, languagePair = "he-ru", rarity = "RARE",
             original = "טּוֹקֵן", transliteration = "token", translation = "токен (строка аутентификации)"),
         WordEntity(id = 102018, setId = 1020, languagePair = "he-ru", rarity = "RARE",
@@ -519,7 +519,7 @@ object WordDataHebrewTech {
             definitionNative = "Криптографический механизм для проверки личности отправителя документа.",
             example = "הַחֲתִימָה הַדִּיגִיטָלִית אימתה את החוזה.",
             exampleNative = "חֲתִימָה דִּיגִיטָלִית подтвердила подлинность договора.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102111, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
@@ -579,7 +579,7 @@ object WordDataHebrewTech {
             definitionNative = "Неизвестная разработчику уязвимость, для которой ещё нет исправления.",
             example = "הַיּוֹם אֶפֶס הופעל לפני שהחברה ידעה עליו.",
             exampleNative = "יוֹם אֶפֶס был использован до того, как компания узнала о нём.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102117, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "security",
@@ -604,12 +604,12 @@ object WordDataHebrewTech {
             definition = "an authorised simulated attack on a system to identify and evaluate security vulnerabilities",
             example = "The company commissioned a penetration test before launching its new customer portal.",
             definitionNative = "Авторизованная имитированная атака на систему для выявления и оценки уязвимостей безопасности.",
-            exampleNative = "Компания заказала bkhinat khadirut перед запуском нового клиентского портала."),
+            exampleNative = "Компания заказала bkhinat khadirut перед запуском нового клиентского портала.", isFillInBlankSafe = false),
                 WordEntity(id = 102120, original = "כּוֹחַ גַּס", transliteration = "[ˈkoaχ ɡas]", translation = "атака перебором; брутфорс", rarity = "EPIC", setId = 1021, languagePair = "he-ru", pos = "noun", semanticGroup = "cybersecurity",
             definition = "a method of cracking passwords or encryption by systematically trying all possible combinations",
             example = "A long random password resists brute force attacks because the number of combinations is enormous.",
             definitionNative = "Метод взлома паролей или шифрования путём систематического перебора всех возможных комбинаций.",
-            exampleNative = "Длинный случайный пароль устойчив к koach gas, так как количество комбинаций огромно."),
+            exampleNative = "Длинный случайный пароль устойчив к koach gas, так как количество комбинаций огромно.", isFillInBlankSafe = false),
         WordEntity(id = 102121, setId = 1021, languagePair = "he-ru", rarity = "EPIC",
             original = "סְבִיבַת בְּדִיקָה", transliteration = "svivat bdika", translation = "песочница / изолированная среда тестирования"),
         WordEntity(id = 102122, setId = 1021, languagePair = "he-ru", rarity = "EPIC",

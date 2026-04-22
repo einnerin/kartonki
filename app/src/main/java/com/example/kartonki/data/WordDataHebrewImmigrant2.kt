@@ -48,7 +48,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Ежемесячная сумма, которую арендатор платит арендодателю.",
             example = "שְׂכַר הַדִּירָה הוּא חָמֵשׁ אֶלֶף שֶׁקֶל בַּחוֹדֶשׁ.",
             exampleNative = "שְׂכַר דִּירָה составляет пять тысяч шекелей в месяц.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102604, setId = 1026, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "binyan",
@@ -66,7 +66,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Главная комната в квартире, где принимают гостей.",
             example = "הַסָּלוֹן גָּדוֹל וּבָהִיר עִם מִרְפֶּסֶת.",
             exampleNative = "סָלוֹן большой и светлый, с балконом.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102606, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "shoker",
@@ -84,7 +84,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Владелец квартиры, сдающий её арендатору.",
             example = "הַמַּשְׂכִּיר אָסַר עַל חֲיוֹת בַּדִּירָה.",
             exampleNative = "מַשְׂכִּיר запретил держать животных в квартире.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102608, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "dalan",
@@ -102,7 +102,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Один уровень в здании, на котором расположены квартиры.",
             example = "הַדִּירָה שֶׁלָּנוּ בַּקּוֹמָה הַשְּׁלִישִׁית.",
             exampleNative = "Наша квартира на третьем קוֹמָה.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102610, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "pikadon",
@@ -120,7 +120,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Выступ снаружи квартиры с перилами.",
             example = "אֲנִי אוֹהֵב לִשְׁתּוֹת קָפֶה בַּמִּרְפֶּסֶת בַּבֹּקֶר.",
             exampleNative = "Я люблю пить кофе на מִרְפֶּסֶת по утрам.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102612, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "ma'alit",
@@ -129,7 +129,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Устройство, поднимающее и опускающее людей между этажами здания.",
             example = "הַמַּעֲלִית לֹא עוֹבֶדֶת הַיּוֹם, צָרִיךְ לָלֶכֶת בַּמַּדְרֵגוֹת.",
             exampleNative = "מַעֲלִית сегодня не работает, нужно идти по лестнице.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102613, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "makhsan",
@@ -138,7 +138,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Маленькая комната для хранения вещей, которым нет места в квартире.",
             example = "שָׂמַנוּ אֶת הָאוֹפַנַּיִם בַּמַּחְסָן.",
             exampleNative = "Мы поставили велосипеды в מַחְסָן.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102614, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "takala",
@@ -174,7 +174,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Выборный орган жильцов, управляющий общими частями здания.",
             example = "וַעַד הַבַּיִת גּוֹבֶה תַּשְׁלוּם חוֹדְשִׁי לְאֶחְזָקַת הַבְּנִיָּן.",
             exampleNative = "וַעַד בַּיִת взимает ежемесячный платёж за содержание здания.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102618, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "arnona",
@@ -251,7 +251,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Письменное подтверждение произведённого платежа.",
             example = "שְׁמוֹר אֶת הַקְּבָּלָה לְכָל תַּשְׁלוּם שְׁכִירוּת.",
             exampleNative = "Храни קְבָּלָה за каждый арендный платёж.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102706, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities", transliteration = "khov",
@@ -278,7 +278,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Соединённый канал для передачи воды, газа или других жидкостей.",
             example = "יֵשׁ בְּעָיָה בַּצִּנּוֹר — הַמַּיִם לֹא זוֹרְמִים.",
             exampleNative = "Есть проблема с צִנּוֹר — вода не течёт.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102709, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities", transliteration = "delef",
@@ -332,7 +332,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Процесс восстановления прибора или конструкции в рабочее состояние.",
             example = "קָרָאנוּ לְחַשְׁמַלַאי לְתִקּוּן הַשֶּׁבֶר.",
             exampleNative = "Мы вызвали электрика для תִּקּוּן поломки.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102715, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities", transliteration = "khayuv",
@@ -418,7 +418,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Личный врач, знающий всех членов семьи и занимающийся большинством проблем.",
             example = "הָלַכְתִּי לְרוֹפֵא הַמִּשְׁפָּחָה שֶׁלִּי עִם כְּאֵב גָּרוֹן.",
             exampleNative = "Я пошёл к своему רוֹפֵא מִשְׁפָּחָה с болью в горле.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102804, setId = 1028, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "health", transliteration = "ke'ev",
@@ -445,7 +445,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Медицинское учреждение для приёма пациентов без госпитализации.",
             example = "הַמִּרְפָּאָה פְּתוּחָה בֵּין שֶׁבַע לְאַרְבַּע.",
             exampleNative = "מִרְפָּאָה открыта с семи до четырёх.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102807, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "mumkhe",
@@ -472,7 +472,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Медицинские действия для улучшения состояния пациента.",
             example = "הַטִּיפּוּל כּוֹלֵל תְּרוּפוֹת וּמְנוּחָה.",
             exampleNative = "טִיפּוּל включает лекарства и покой.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102810, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "alergia",
@@ -508,7 +508,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Физический признак или ощущение, указывающее на болезнь.",
             example = "כְּאֵב גָּרוֹן וְחֹם הֵם תָּסְמִינִים נְפוֹצִים שֶׁל שַׁפַּעַת.",
             exampleNative = "Боль в горле и жар — распространённые תָּסְמִין гриппа.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102814, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "makhala",
@@ -517,7 +517,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Ненормальное состояние организма, вызванное бактериями, вирусами или другими факторами.",
             example = "מַחֲלַת הַסֻּכֶּרֶת דּוֹרֶשֶׁת טִיפּוּל יוֹמִי.",
             exampleNative = "מַחֲלָה диабет требует ежедневного лечения.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102815, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "totsaa",
@@ -526,7 +526,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Данные медицинского обследования.",
             example = "קִיבַּלְתִּי אֶת תּוֹצָאוֹת הַדָּם דֶּרֶךְ הָאַפְלִיקַצְיָה.",
             exampleNative = "Я получил תוֹצָאָה анализа крови через приложение.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102816, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "avkhana",
@@ -585,7 +585,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Магазин, продающий лекарства и товары для здоровья.",
             example = "הָלַכְתִּי לְבֵית מִרְקַחַת לִקְנוֹת תְּרוּפָה לִכְאֵב רֹאשׁ.",
             exampleNative = "Я пошёл в בֵּית מִרְקַחַת купить лекарство от головной боли.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102902, setId = 1029, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "trufa",
@@ -684,7 +684,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Фиксированное количество лекарства, принимаемое за один раз.",
             example = "הַמֶּנָּה הַמוּמְלֶצֶת הִיא כַּדּוּר אֶחָד בְּיוֹם.",
             exampleNative = "Рекомендуемая מֶנָּה — одна таблетка в день.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102913, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "taarikh tfuga",
@@ -693,7 +693,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Последняя дата, до которой лекарство безопасно для использования.",
             example = "בְּדַקְתִּי אֶת תַּאֲרִיךְ הַתְּפוּגָה לִפְנֵי שֶׁלָּקַחְתִּי אֶת הַכַּדּוּר.",
             exampleNative = "Я проверил תַּאֲרִיךְ תְּפוּגָה прежде чем принять таблетку.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102914, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "bandaj",
@@ -729,7 +729,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Нежелательная реакция организма на лекарство.",
             example = "קְרָאתִי בַּעֲלוֹן הַתְּרוּפָה אֶת כָּל תּוֹפָעוֹת הַלְּוַאי.",
             exampleNative = "Я прочитал все תּוֹפַעַת לְוַאי в инструкции к лекарству.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 102918, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "generi",

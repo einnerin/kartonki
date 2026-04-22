@@ -56,7 +56,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Готовность брать деловую инициативу и управлять компанией.",
             example = "הַיַּזְמוּת מוֹרֵית בְּהַרְבֵּה אוּנִיבֶרְסִיטָאוֹת בְּיִשְׂרָאֵל.",
             exampleNative = "Предпринимательство преподаётся во многих университетах Израиля.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107308, setId = 1073, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup", transliteration = "giyus ksafim",
@@ -74,7 +74,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Тот, кто вкладывает деньги в компанию в обмен на долю владения.",
             example = "הַמַּשְׁקִיעַ שָׁאַל שְׁאֵלוֹת קָשׁוֹת בְּמַהֲלַךְ הַפִּיצ'.",
             exampleNative = "Инвестор задавал сложные вопросы во время питча.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107310, setId = 1073, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup", transliteration = "tsmiha",
@@ -83,7 +83,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Увеличение выручки, пользователей или размера компании с течением времени.",
             example = "קֶצֶב הַצְּמִיחָה שֶׁל הַסְּטָארְטָאפּ הוּא עֶשְׂרִים אָחוּז בַּחוֹדֶשׁ.",
             exampleNative = "Темп роста стартапа составляет двадцать процентов в месяц.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107311, setId = 1073, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup", transliteration = "hakhnasot",
@@ -148,7 +148,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "План, объясняющий, как компания создаёт, доставляет и захватывает ценность.",
             example = "הַמוֹדֶל הָעֵסְקִי שֶׁלָּנוּ מְבֻסָּס עַל מִנּוּי חוֹדְשִׁי.",
             exampleNative = "Наша бизнес-модель основана на ежемесячной подписке.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107318, setId = 1073, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "startup", transliteration = "exit",
@@ -271,7 +271,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Официальный язык государства Израиль.",
             example = "הוּא לָמַד עִבְרִית בָּאוּלְפָּן תּוֹךְ חֲצִי שָׁנָה.",
             exampleNative = "Он выучил иврит в ульпане за полгода.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107406, setId = 1074, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "medina",
@@ -280,7 +280,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Политическая единица с территорией, гражданами и правительством.",
             example = "מְדִינַת יִשְׂרָאֵל הוּקְמָה בְּ-1948.",
             exampleNative = "Государство Израиль было основано в 1948 году.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107407, setId = 1074, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "tsion",
@@ -307,7 +307,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Парламент государства Израиль, насчитывающий сто двадцать членов.",
             example = "הַכְּנֶסֶת מַצְבִּיעָה עַל הַחֻקִּים בְּיִשְׂרָאֵל.",
             exampleNative = "Кнессет голосует по законам в Израиле.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107410, setId = 1074, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "am",
@@ -316,7 +316,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Этнонациональная группа, обладающая общим языком, культурой и памятью.",
             example = "הָעָם הַיְּהוּדִי שׁוֹמֵר עַל זֶהוּתוֹ לְאַלְפֵּי שָׁנִים.",
             exampleNative = "Еврейский народ хранит свою идентичность тысячелетиями.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107411, setId = 1074, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "shalom",
@@ -334,7 +334,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Место проживания — также ласковое название Израиля.",
             example = "הוּא אוֹמֵר שֶׁיִּשְׂרָאֵל הוּא הַבַּיִת שֶׁלּוֹ.",
             exampleNative = "Он говорит, что Израиль — его дом.",
-        ),
+         isFillInBlankSafe = false),
 
         // UNCOMMON (A2–B1),
         WordEntity(
@@ -354,7 +354,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Еврейский дом молитвы и собраний, религиозно-общинный центр.",
             example = "בְּכָל שָׁכוּנָה בְּיִשְׂרָאֵל יֵשׁ לְפָחוֹת בֵּית כְּנֶסֶת אֶחָד.",
             exampleNative = "В каждом районе Израиля есть как минимум одна синагога.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107415, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "aliya", transliteration = "moshava",
@@ -363,7 +363,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Тот, кто не соблюдает религиозные заповеди в повседневной жизни.",
             example = "הַרֹב שֶׁל הַיִּשְׂרְאֵלִים מְגַדִּירִים אֶת עַצְמָם כְּחִלּוֹנִיִּים אוֹ מָסוֹרְתִּיִּים.",
             exampleNative = "Большинство израильтян определяют себя как светских или традиционных.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107416, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "shikun",
@@ -372,7 +372,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Жилой квартал, как правило государственный или арендованный по льготной цене.",
             example = "עוֹלִים רַבִּים בִּשְׁנוֹת הַחֲמִישִּׁים אוּכְּלְסוּ בְּשִׁיכּוּנִים.",
             exampleNative = "Многие репатрианты в 50-е годы были расселены в жилых кварталах.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107417, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "magen david",
@@ -390,7 +390,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Израильский национальный праздник — пятое ияра — в память о провозглашении независимости.",
             example = "בְּיוֹם הָעַצְמָאוּת מַדְלִיקִים מְשׂוּאוֹת וְיוֹצְאִים לְטִיּוּלִים.",
             exampleNative = "В День независимости зажигают факелы и выезжают на пикники.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107419, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "lishkat haasaka",
@@ -399,7 +399,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Государственный орган, помогающий ищущим работу и выплачивающий пособия по безработице.",
             example = "הִירָשַׁמְתִּי בַּלִּשְׁכָּה לְקַבֵּל דְּמֵי אֲבַטָּלָה.",
             exampleNative = "Я зарегистрировался на бирже труда для получения пособия по безработице.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107420, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "aliya", transliteration = "toshav",
@@ -408,7 +408,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Тот, кто соблюдает заповеди галахи в жизни — особенно в израильском обществе.",
             example = "הַמֶּתַח בֵּין חִלּוֹנִי לְדָתִי הוּא סוֹגְיָה מֶרְכָּזִית בְּיִשְׂרָאֵל.",
             exampleNative = "Напряжение между светскими и религиозными — центральная тема в Израиле.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107421, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "misrad hapnim",
@@ -435,7 +435,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Обычаи, ценности и верования, передаваемые из поколения в поколение в народе.",
             example = "הַמְּסוֹרֶת הַיְּהוּדִית שׁוֹמֶרֶת עַל זֶהוּת הָעָם לְאַלְפֵּי שָׁנִים.",
             exampleNative = "Еврейская традиция хранит идентичность народа тысячелетиями.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107424, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "truma",
@@ -444,7 +444,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Торговое уличное место для покупки продуктов и товаров — сердце городской жизни.",
             example = "שׁוּק הַכַּרְמֶל בְּתֵל אָבִיב הוּא מָקוֹם תַּיָּרוּתִי פּוֹפּוּלָרִי.",
             exampleNative = "Рынок Кармель в Тель-Авиве — популярное туристическое место.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107425, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "moadon olim",
@@ -453,7 +453,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Социально-культурный центр, обслуживающий новых репатриантов.",
             example = "הַמּוֹעָדוֹן מְאַרְגֵּן אִירוּעִים לְעוֹלִים בְּיוֹם הַשִּׁשִּׁי.",
             exampleNative = "Клуб организует мероприятия для репатриантов по пятницам.",
-        ),
+         isFillInBlankSafe = false),
 
         // ── Set 1075: Искусство ────────────────────────────────────────────
 
@@ -480,7 +480,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Место для показа и продажи произведений искусства.",
             example = "בְּתֵל אָבִיב יֵשׁ גָּלְרִיּוֹת רַבּוֹת בְּשְׁכוּנַת נֶוֶה צֶדֶק.",
             exampleNative = "В Тель-Авиве много галерей в квартале Неве-Цедек.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107508, setId = 1075, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "art", transliteration = "kanvas",
@@ -507,7 +507,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Искусство делать снимки с помощью камеры.",
             example = "הַצִּילּוּם שֶׁלּוֹ זָכָה בְּפְּרָס בַּתַּחֲרוּת הַשְׁנָתִית.",
             exampleNative = "Его фотография выиграла приз в ежегодном конкурсе.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107511, setId = 1075, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "art", transliteration = "portret",
@@ -628,7 +628,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Художественное направление, находящее красоту в крайней простоте — чистых формах и отсутствии украшений.",
             example = "הָאַרְכִיטֶקְטוּרָה הַמִּינִימָלִיסְטִית בּוֹחֶרֶת בְּחֹמְרִים טִבְעִיִּים וּקְוָוִים נְקִיִּים.",
             exampleNative = "Минималистичная архитектура предпочитает природные материалы и чистые линии.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107524, setId = 1075, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "art", transliteration = "simbolizm",
@@ -637,7 +637,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Художественное движение конца XIX века, использующее символы для выражения идей и настроений.",
             example = "הַסִּימְבּוֹלִיזְם הָגִיב עַל הַרֵיאָלִיזְם וְהִדְגִּישׁ חֲוָיָה פְּנִימִית עַל פְּנֵי חִיצוֹנִית.",
             exampleNative = "Символизм отреагировал на реализм, акцентируя внутренний опыт над внешним.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107525, setId = 1075, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "art", transliteration = "grafiti",

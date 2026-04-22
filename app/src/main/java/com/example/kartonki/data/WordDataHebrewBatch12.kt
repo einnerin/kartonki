@@ -88,7 +88,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Определённая единица работы, которую нужно выполнить.",
             example = "יֵשׁ לִי חָמֵשׁ מַטָּלוֹת פְּתוּחוֹת בְּלוּחַ הַ-Jira.",
             exampleNative = "У меня пять открытых מַטָּלוֹת на доске Jira.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105913, setId = 1059, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "tech_intern", transliteration = "mapat derekh",
@@ -97,7 +97,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Краткосрочно-среднесрочный план работы, описывающий что будет разработано.",
             example = "מַנְהֵל הַמּוּצָר הֵצִיג אֶת מַפַּת הַדֶּרֶךְ לַרְבִּיעוֹן הַבָּא.",
             exampleNative = "Менеджер продукта представил מַפַּת דֶּרֶךְ на следующий квартал.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105914, setId = 1059, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "tech_intern", transliteration = "kod patuakh",
@@ -115,7 +115,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Регулярная встреча всей команды для координации и обзора работы.",
             example = "פְּגִישַׁת הַצֶּוֶות מִדֵּי בֹּקֶר נִמְשֶׁכֶת חֲמֵשׁ-עֶשֶׂר דַּקּוֹת בִּלְבַד.",
             exampleNative = "פְּגִישַׁת צֶוֶות каждое утро длится всего пятнадцать минут.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105916, setId = 1059, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "tech_intern", transliteration = "pitu'akh tokna",
@@ -134,7 +134,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Роль, отвечающая за видение продукта, приоритеты и коммуникацию с клиентами.",
             example = "מַנְהֵל הַמּוּצָר הִגְדִּיר אֶת הַדְּרִישׁוֹת לַפִּיצָ'ר הַחָדָשׁ.",
             exampleNative = "מַנְהֵל מוּצָר определил требования к новой фиче.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105918, setId = 1059, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "tech_intern", transliteration = "takhnit hakshara",
@@ -161,7 +161,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Набор инструментов, библиотек и настроек, необходимых для написания кода.",
             example = "הֶגְדַּרְתִּי אֶת סְבִיבַת הַפִּיתּוּחַ שֶׁלִּי עִם Docker וְ-VS Code.",
             exampleNative = "Я настроил свою סְבִיבַת פִּיתּוּחַ с Docker и VS Code.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105921, setId = 1059, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "tech_methodology", transliteration = "sprint",
@@ -170,7 +170,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Фиксированный период — обычно две недели — в конце которого сдаётся готовая работа.",
             example = "בְּסוֹף הַסְּפְּרִינְט הַצִּגְנוּ שְׁנֵי פִּיצָ'רִים חֲדָשִׁים בַּדֵּמוֹ.",
             exampleNative = "В конце סְפְּרִינְט мы показали два новых фичера на демо.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(id = 105922, setId = 1059, languagePair = "he-ru", original = "מִחְזוֹר חַיֵּי תּוֹכְנָה", translation = "жизненный цикл ПО", transliteration = "mikhzor khaye tokna", rarity = "RARE"),
         WordEntity(id = 105923, setId = 1059, languagePair = "he-ru", original = "שִׁכְבַת הַפְשָׁטָה", translation = "уровень абстракции", transliteration = "shikhvat hafshata", rarity = "RARE"),
@@ -204,7 +204,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Лёгковесная единица ПО, содержащая приложение и все его зависимости.",
             example = "הַאַפְּלִיקַצְיָה עָלְתָה בְּ-10 שְׁנִיּוֹת בְּזְכוּת הַקּוֹנְטֶיינֶר.",
             exampleNative = "Приложение запустилось за 10 секунд благодаря קוֹנְטֶיינֶר.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106014, setId = 1060, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "tech_architecture", transliteration = "mikroshrutim",
@@ -231,7 +231,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Серверы, сети и хранилища, управляемые облачными провайдерами, такими как AWS или Azure.",
             example = "הַחֶבְרָה עָבְרָה לְתַשְׁתִּית עֲנָן וְחָסְכָה 40% מֵעֲלוּיּוֹת הַתַּפְעוּל.",
             exampleNative = "Компания перешла на תַּשְׁתִּית עֲנָן и сэкономила 40% операционных расходов.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106017, setId = 1060, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "tech_architecture", transliteration = "kod reviyu",
@@ -258,7 +258,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Гистограмма с горизонтальными полосами, отображающая временной план проекта.",
             example = "לוּחַ הַגַּנְט מְדַגִּים אֶת הַתְּלוּת בֵּין הַמַּשִּׁימוֹת וְהַצֻּמּוּדִים.",
             exampleNative = "לוּחַ גַּנְט наглядно показывает зависимости между задачами и дедлайнами.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106020, setId = 1060, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "tech_methodology", transliteration = "test otomati",
@@ -267,7 +267,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Тестовый скрипт, запускающийся автоматически при каждом изменении кода.",
             example = "כָּתַבְנוּ 200 טֶסְטִים אוֹטוֹמָטִיִּים לַמּוֹדוּל הַחָדָשׁ.",
             exampleNative = "Мы написали 200 טֶסְטִים אוֹטוֹמָטִיִּים для нового модуля.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 106021, setId = 1060, languagePair = "he-ru", rarity = "EPIC",
@@ -277,7 +277,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Высокоуровневая структура системы — как компоненты разделены и взаимодействуют.",
             example = "הַחְלָטוֹת אַרְכִּיטֶקְטוּרַת הַתּוֹכְנָה קָשׁוֹת לְשִׁינּוּי בְּהַמְשֵׁךְ.",
             exampleNative = "Решения по אַרְכִּיטֶקְטוּרַת תּוֹכְנָה трудно изменить впоследствии.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106022, setId = 1060, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "tech_architecture", transliteration = "khov tekhni",
@@ -286,7 +286,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Будущая стоимость, возникающая из-за выбора быстрого, но не идеального решения.",
             example = "הַחוֹב הַטֶּכְנִי הַצְּטַבֵּר מַאֵט אֶת קֶצֶב הַפִּיתּוּחַ.",
             exampleNative = "Накопленный חוֹב טֶכְנִי замедляет темп разработки.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106023, setId = 1060, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "tech_devops", transliteration = "hamshkhiyut sherut",
@@ -304,13 +304,13 @@ object WordDataHebrewBatch12 {
             definitionNative = "Набор связанных инструментов, совместно работающих для сборки, тестирования и деплоя кода.",
             example = "שַׁרְשֶׁרֶת הַכֵּלִים שֶׁלָּנוּ כּוֹלֶלֶת GitHub, Jenkins וְ-Docker.",
             exampleNative = "Наш שַׁרְשֶׁרֶת כֵּלִים включает GitHub, Jenkins и Docker.",
-        ),
+         isFillInBlankSafe = false),
 
                 WordEntity(id = 106025, original = "גֵּרְסוּן", transliteration = "[ɡerˈsun]", translation = "управление версиями; версионирование", rarity = "EPIC", setId = 1060, languagePair = "he-ru", pos = "noun", semanticGroup = "developer_pro",
             definition = "the practice of assigning and managing version numbers for software releases to track changes",
             example = "Semantic versioning makes it clear whether an update introduces breaking changes or just bug fixes.",
             definitionNative = "Практика присвоения и управления номерами версий программных релизов для отслеживания изменений.",
-            exampleNative = "Семантический gersun чётко показывает, вносит ли обновление критические изменения или только исправления."),
+            exampleNative = "Семантический gersun чётко показывает, вносит ли обновление критические изменения или только исправления.", isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────────────────
         // Set 1061 — סטאז' ברפואה — בסיסי  (Medical internship basics, A2/B1),
@@ -325,7 +325,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Врач после медицинской степени, работающий в больнице под наблюдением.",
             example = "הַמִּתְמַחֶה הָרְפוּאִי הֵחֵל אֶת תּוֹרַת הַלַּיְלָה בְּמַחְלֶקֶת הַפְּנִים.",
             exampleNative = "מִתְמַחֶה רְפוּאִי начал ночное дежурство в терапевтическом отделении.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106102, setId = 1061, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "medical_intern", transliteration = "sevev",
@@ -343,7 +343,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Документ, содержащий всю медицинскую информацию о пациенте.",
             example = "לִפְנֵי הַסֶּבֶב קָרָאתִי אֶת הַגִּלְיוֹן הָרְפוּאִי שֶׁל כָּל הַחוֹלִים.",
             exampleNative = "Перед обходом я прочитал גִּלְיוֹן רְפוּאִי каждого пациента.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106104, setId = 1061, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "medical_documentation", transliteration = "tarshim",
@@ -370,7 +370,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Количество лекарства, назначаемого пациенту за один приём и в течение дня.",
             example = "הָרוֹפֵא קָבַע אֶת הַמִּנּוּן לְפִי מִשְׁקַל הַחוֹלֶה.",
             exampleNative = "Врач определил מִנּוּן исходя из веса пациента.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 106107, setId = 1061, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -380,7 +380,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Отделение или специализированная команда, занимающаяся определённой медицинской областью.",
             example = "הַמִּתְמַחֶה עָבַר בֵּין יְחִידוֹת שׁוֹנוֹת בְּמַהֲלָךְ תְּקוּפַת הַהַכְשָׁרָה.",
             exampleNative = "Стажёр переходил между разными יְחִידוֹת רְפוּאִיּוֹת в период обучения.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106108, setId = 1061, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "medical_procedures", transliteration = "eruy",
@@ -407,7 +407,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Группа специалистов — врачи, медсёстры и фельдшеры — работающих вместе для лечения пациента.",
             example = "הַצֶּוֶות הָרְפוּאִי קִיֵּם דִּיּוּן מַקִּיף לִפְנֵי הַנִּיתּוּחַ הַמּוּרְכָּב.",
             exampleNative = "צֶוֶות רְפוּאִי провёл комплексное совещание перед сложной операцией.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106111, setId = 1061, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "medical_intern", transliteration = "rofe melamed",
@@ -416,7 +416,7 @@ object WordDataHebrewBatch12 {
             definitionNative = "Старший врач, направляющий интернов и отвечающий за лечение пациентов.",
             example = "הָרוֹפֵא הַמְּלַמֵּד הִסְבִּיר לְמִתְמַחִים אֶת הַמַּקְרֶה הַמּוּרְכָּב.",
             exampleNative = "רוֹפֵא מְלַמֵּד объяснил интернам сложный случай.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106112, setId = 1061, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "medical_intern", transliteration = "konanut",

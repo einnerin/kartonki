@@ -51,7 +51,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Человек, снимающий фотографии или видео в журналистских или художественных целях.",
             example = "הַמְּצַלֵּם תִּיעֵד אֶת הָאֵרוּעַ מֵהַשּׁוּרָה הָרִאשׁוֹנָה.",
             exampleNative = "מְצַלֵּם задокументировал событие из первого ряда.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107603, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "sidra",
@@ -60,7 +60,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Телепередача с последовательными эпизодами.",
             example = "הַסְּדָרָה הַדְּרָמָטִית הִגִּיעָה לְעוֹנָה שְׁלִישִׁית.",
             exampleNative = "Драматический סְדָרָה вышел в третий сезон.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107604, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "matsaget",
@@ -69,7 +69,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Визуальный показ слайдов, используемых для представления информации.",
             example = "הַמַּצָּגֶת הוּכְנָה לְקְרַאת הַכְּנָס.",
             exampleNative = "מַצָּגֶת была подготовлена к конференции.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107605, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "tasrit",
@@ -98,7 +98,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Команда журналистов и редакторов, работающих вместе в редакции.",
             example = "הַמַּעֲרֶכֶת עָבְדָה עַד אֶמְצַע הַלַּיְלָה לִפְנֵי הַפִּרְסוּם.",
             exampleNative = "Редакция работала до полуночи перед публикацией.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107608, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "analíst",
@@ -125,7 +125,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Человек или документ, из которого журналист получает информацию.",
             example = "הָעִיתוֹנָאי שָׁמַר עַל סוֹדִיּוּת הַמְּקוֹר שֶׁלּוֹ.",
             exampleNative = "Журналист сохранял конфиденциальность своего источника.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107611, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "sikúr",
@@ -134,7 +134,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Журналистское освещение события или темы в СМИ.",
             example = "הַסִּיקּוּר שֶׁל הַמִּשְׁפָּט הָיָה נָרְחָב בְּכָל הָעִיתּוֹנוֹת.",
             exampleNative = "Освещение процесса было обширным во всех газетах.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107612, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "podcast",
@@ -161,7 +161,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Ложный контент, поданный под видом достоверной журналистики.",
             example = "הַחֲדָשׁוֹת הַכּוֹזְבוֹת פָּשְׁטוּ בְּמֶדְיָה הַחֶבְרָתִית.",
             exampleNative = "Фейковые новости распространились в социальных сетях.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107615, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "alonut",
@@ -170,7 +170,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Краткий информационный листок, распространяемый для широкой аудитории.",
             example = "חִלַּקְנוּ עֲלוֹנִים בַּרְחוֹב לִפְנֵי הַהַצְבָּעָה.",
             exampleNative = "Мы раздавали листовки на улице перед голосованием.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107616, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "briefing",
@@ -199,7 +199,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Помещение, где работают журналисты для сбора новостей.",
             example = "חֶדֶר הַחֲדָשׁוֹת תָּמִיד עָמוּס לִפְנֵי שְׁעַת הַשִּׂיא.",
             exampleNative = "Редакционная комната всегда загружена перед часом пик.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107619, setId = 1076, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "media", transliteration = "Galei Tsahal",
@@ -217,7 +217,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Человек, ведущий телепрограмму или мероприятие публично.",
             example = "הַמַּגִּישׁ הָיָה חַד וּנְבוֹן בְּמַהֲלַךְ הַרְאָיוֹן.",
             exampleNative = "Ведущий был остроумен и умён во время интервью.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107621, setId = 1076, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "media", transliteration = "itonaout khokeret",
@@ -245,7 +245,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Редактирование и соединение снятого материала для создания фильма или передачи.",
             example = "הַמּוּנְטָאז הֵבִיא בְּהִירוּת רִגְשִׁית לַסֶּרֶט הַדּוֹקוּמֶנְטָרִי.",
             exampleNative = "מוּנְטָאז придал документальному фильму эмоциональную ясность.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107624, setId = 1076, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "media", transliteration = "etika itonait",
@@ -276,7 +276,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Систематический метод исследования мира с помощью наблюдений и экспериментов.",
             example = "הַמַּדָּע שִׁינָּה אֶת חַיֵּינוּ לְחַלּוּטִין.",
             exampleNative = "Наука полностью изменила нашу жизнь.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107702, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science", transliteration = "madaan",
@@ -285,7 +285,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Тот, кто исследует научную область в академическом или промышленном контексте.",
             example = "מַדְעָנִים יִשְׂרְאֵלִים זָכוּ בְּפְּרָסִים בֵּינְלְאוּמִיִּים רַבִּים.",
             exampleNative = "Израильские учёные получили множество международных наград.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107703, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science", transliteration = "nisuy",
@@ -294,7 +294,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Контролируемая проверка для подтверждения или опровержения гипотезы.",
             example = "הַנִּיסּוּי הִצְלִיחַ אַחֲרֵי עֶשֶׂר חֲזָרוֹת.",
             exampleNative = "Эксперимент удался после десяти повторений.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107704, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science", transliteration = "mekhkar",
@@ -303,7 +303,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Систематическая работа с целью расширения знаний в определённой области.",
             example = "הַמֶּחְקָר פָּוְרַסֵּם בְּכְּתַב עֵת בֵּינְלְאוּמִי.",
             exampleNative = "Исследование опубликовано в международном журнале.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107705, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science", transliteration = "teoriya",
@@ -312,7 +312,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Объяснительная рамка для интерпретации наблюдений в науке.",
             example = "תֵּיאוֹרְיַת הָאֵבוֹלוּצְיָה מְקוּבֶּלֶת עַל כָּל הַמַּדְעָנִים.",
             exampleNative = "Теория эволюции принята всеми учёными.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107706, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science", transliteration = "laboratoria",
@@ -341,7 +341,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Необработанная информация, собранная в ходе исследования.",
             example = "נְתוּנֵי הַנִּיסּוּי נוֹתְחוּ בְּתָכְנַת R.",
             exampleNative = "Данные эксперимента были проанализированы в программе R.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107709, setId = 1077, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "science", transliteration = "mikroskop",
@@ -350,7 +350,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Прибор, увеличивающий крошечные объекты для наблюдения.",
             example = "תַּחַת הַמִּיקְרוֹסְקוֹפּ רָאִינוּ תָּאִים חַיִּים.",
             exampleNative = "Под микроскопом мы увидели живые клетки.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107710, setId = 1077, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "science", transliteration = "molekula",
@@ -359,7 +359,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Наименьшая химическая единица, сохраняющая свойства вещества.",
             example = "מוֹלֵקוּלַת הַמַּיִם מוּרְכֶּבֶת מִשְּׁנֵי אָטוֹמֵי מֵימָן וְאֶחָד חַמְצָן.",
             exampleNative = "Молекула воды состоит из двух атомов водорода и одного атома кислорода.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107711, setId = 1077, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "science", transliteration = "atom",
@@ -413,7 +413,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Учёный, занимающийся сбором и анализом данных.",
             example = "הַמְּחַקֶּרֶת זָכְתָה בְּמִלְגָה לְמֶחְקָר הַגֶּנוֹם.",
             exampleNative = "Исследовательница получила грант на изучение генома.",
-        ),
+         isFillInBlankSafe = false),
 
         // 25 words: 6 COMMON + 19 UNCOMMON
         WordEntity(
@@ -496,7 +496,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Краткий обзор основных положений исследования или работы.",
             example = "הַסִּיכּוּם הַמִּנְהָלִי תָּאַר אֶת הַמִּמְצָאִים הָעִיקָּרִיִּים.",
             exampleNative = "Исполнительный סִיכּוּם описал ключевые выводы.",
-        ),
+         isFillInBlankSafe = false),
 
         // ── Set 1078: Экология ─────────────────────────────────────────────
 
@@ -509,7 +509,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Продолжительный период нехватки осадков, наносящий ущерб сельскому хозяйству.",
             example = "הַיּוֹבֵשׁ גָּרַם לְאֻבְדַּן יְבוּלִים בְּחֶלְקֵי אֲפְרִיקָה.",
             exampleNative = "יוֹבֵשׁ привела к потере урожая в частях Африки.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107802, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "shkhavat ozon",
@@ -518,7 +518,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Слой атмосферы, защищающий планету от ультрафиолетового излучения Солнца.",
             example = "הַנֶּזֶק לְשָׁכְבַת הָאוֹזוֹן נִגְרַם מֵחוֹמְרֵי קֵירוּר.",
             exampleNative = "Ущерб שָׁכְבַת אוֹזוֹן был причинён охладителями.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107803, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "pakham du-khamtsani",
@@ -565,7 +565,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Общее повышение температуры Земли вследствие выброса парниковых газов.",
             example = "הַהִתְחַמְּמוּת הַגְּלוֹבָּלִית גּוֹרֶמֶת לִמְסִיסַת קַרְחוֹנִים.",
             exampleNative = "Глобальное потепление вызывает таяние ледников.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107808, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "shinui aklim",
@@ -574,7 +574,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Долгосрочные изменения в климатических паттернах, вызванные главным образом человеком.",
             example = "שִׁנּוּי הָאַקְלִים גּוֹרֵם לְאִרוּעֵי מֶזֶג אֲוִויר קִיצוֹנִיִּים.",
             exampleNative = "Изменение климата приводит к экстремальным погодным явлениям.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107809, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "energia shemesh",
@@ -592,7 +592,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Установка, преобразующая энергию ветра в электричество.",
             example = "טוּרְבִּינוֹת רוּחַ הוּצְבוּ בַּגּוֹלָן.",
             exampleNative = "Ветряные турбины были установлены на Голанских высотах.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107811, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "karitat yearot",
@@ -637,7 +637,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Огромная морская волна, вызванная подводным землетрясением.",
             example = "הַצּוּנָמִי הָרַסָּנִי בְּיַפָּן 2011 גָּרַם לְנֶזֶק עֲצוּם.",
             exampleNative = "Разрушительное цунами в Японии в 2011 году причинило огромный ущерб.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107816, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "minim besakhnat hikhhada",
@@ -646,7 +646,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Животные и растения, чьи популяции снизились до опасного уровня.",
             example = "הַנָּמֵר הָאֲדוֹם הוּא אֶחַד הַמִּינִים בְּסַכָּנַת הִכְחָדָה בְּיִשְׂרָאֵל.",
             exampleNative = "Рыжая лисица — один из видов под угрозой исчезновения в Израиле.",
-        ),
+         isFillInBlankSafe = false),
 
         // RARE (B2),
         WordEntity(
@@ -666,7 +666,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Разнообразие живых видов в экосистеме или на всей планете.",
             example = "אֲיַּלוֹת אֶרֶץ יִשְׂרָאֵל עֲשִׁירָה בְּבִיוֹמְגַּוּוָן בִּזְכוּת מְקוּמָהּ בֵּין שְׁלֹשָׁה יַבָּשׁוֹת.",
             exampleNative = "Фауна Израиля богата биоразнообразием благодаря расположению между тремя континентами.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107819, setId = 1078, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "ecology", transliteration = "tabaat plastik",
@@ -675,7 +675,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Накопление пластиковых отходов в окружающей среде, особенно в морях.",
             example = "טַבַּעַת הַפְּלַסְטִיק בְּהַשָּׁקֶט מְאַיֶּמֶת עַל חַיֵּי יָם.",
             exampleNative = "Пластиковые отходы в Тихом океане угрожают морской жизни.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107820, setId = 1078, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "ecology", transliteration = "remat pekhaman du-khmatsan",
@@ -684,7 +684,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Концентрация углекислого газа в атмосфере, измеряемая в частях на миллион.",
             example = "רְמַת הַ-CO₂ עָלְתָה לְמֵעַל 420 ppm לָרִאשׁוֹנָה בְּהִיסְטוֹרְיָה הַמּוֹדֶרְנִית.",
             exampleNative = "Уровень CO₂ впервые в современной истории превысил 420 ppm.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107821, setId = 1078, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "ecology", transliteration = "mekhalakh neto efes",
@@ -703,7 +703,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Показатель, выражающий нагрузку, которую человек оказывает на окружающую среду, в единицах площади.",
             example = "טְבִיעַת הָרֶגֶל הָאֶקוֹלוֹגִית שֶׁל יִשְׂרָאֵל גָּבוֹהַּ מֵהָאֶמְצַע הָעוֹלָמִי.",
             exampleNative = "טְבִיעַת רֶגֶל אֶקוֹלוֹגִית Израиля выше мирового среднего.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107823, setId = 1078, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "ecology", transliteration = "migvan biologit",
@@ -712,7 +712,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Разнообразие живых видов в экосистеме, регионе или на всей планете.",
             example = "פְּגִיעָה בְּמִגְוּוֹן הַבִּיוֹלוֹגִי מַסְכֶּנֶת אֶת יְצִיבוּת הָאֶקוֹסִיסְטֶם.",
             exampleNative = "Ущерб מִגְוּוֹן בִּיוֹלוֹגִי угрожает стабильности экосистемы.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107824, setId = 1078, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "ecology", transliteration = "shikum svivati",

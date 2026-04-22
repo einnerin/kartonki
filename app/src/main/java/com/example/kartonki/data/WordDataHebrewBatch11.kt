@@ -36,7 +36,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Состояние атмосферы в определённом месте в данный момент.",
             example = "מָה הַמֵּזֶג הַיּוֹם? חַם אוֹ קַר?",
             exampleNative = "Какой מֵזֶג сегодня? Жарко или холодно?",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105602, setId = 1056, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "weather_precipitation", transliteration = "tal",
@@ -63,7 +63,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Тёмное тяжёлое облако, из которого идёт дождь.",
             example = "עֲנָנֵי גֶּשֶׁם כִּיסּוּ אֶת הַשָּׁמַיִם מְהֵרָה.",
             exampleNative = "Дождевые облака — עֲנָנֵי גֶּשֶׁם — быстро заволокли небо.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105605, setId = 1056, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "weather_sky", transliteration = "yom me'unan",
@@ -109,7 +109,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Продолжительный период аномально высокой температуры воздуха.",
             example = "גַּל הַחוֹם נָמְשַׁךְ שָׁבוּעַ — הַטֶּמְפֶּרָטוּרָה לֹא יָרְדָה מ-40 מַעֲלוֹת.",
             exampleNative = "גַּל חוֹם длился неделю — температура не опускалась ниже 40 градусов.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105610, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather_general", transliteration = "iklim",
@@ -136,7 +136,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Особенно сильное солнце, жгущее кожу и дающее интенсивное тепло.",
             example = "בְּקַיִץ הַשֶּׁמֶשׁ קוֹפַחַת — חַיָּבִים לָשִׂים קְרֵם מָגֵן.",
             exampleNative = "Летом שֶׁמֶשׁ קוֹפַחַת — обязательно надо мазать солнцезащитный крем.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105613, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather_precipitation", transliteration = "ed",
@@ -163,7 +163,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Сильная непогода с порывистым ветром, проливным дождём и иногда молниями.",
             example = "הַסְּעָרָה פָּגְעָה בַּחוֹף וְהִפִּילָה עֵצִים.",
             exampleNative = "סְעָרָה ударила по побережью и повалила деревья.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105616, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather_seasons", transliteration = "onat ha-geshamim",
@@ -200,7 +200,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Слабый дождь с мелкими каплями, не промачивающий насквозь.",
             example = "יָצָאנוּ לְטִיּוּל גַּם בַּגֶּשֶׁם הַקַּל — זֶה הָיָה נְעִים.",
             exampleNative = "Мы вышли на прогулку даже под גֶּשֶׁם קַל — это было приятно.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105620, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather_general", transliteration = "avir naki",
@@ -296,7 +296,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Задняя часть тела животного, расположенная позади туловища.",
             example = "הַכֶּלֶב מֵנִיד אֶת זְנָבוֹ כְּשֶׁהוּא שָׂמֵחַ.",
             exampleNative = "Собака виляет זָנָב, когда радуется.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105705, setId = 1057, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pets_young", transliteration = "gur",
@@ -324,7 +324,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Врач, лечащий животных.",
             example = "לָקַחְנוּ אֶת הַחָתוּל לַוֶּטֶרִינָר לְבְּדִיקָה שָׁנָתִית.",
             exampleNative = "Мы отвезли кошку к וֶטֶרִינָר на ежегодный осмотр.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105708, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pets_equipment", transliteration = "retsu'a",
@@ -351,7 +351,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Поддон со специальным наполнителем, куда кошка ходит в туалет.",
             example = "חָשׁוּב לְנַקּוֹת אֶת תֵּיבַת הַחוֹל שֶׁל הַחָתוּל כָּל יוֹם.",
             exampleNative = "Важно чистить תֵּיבַת חוֹל кошки каждый день.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105711, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pets_commerce", transliteration = "khanut khayot",
@@ -360,7 +360,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Магазин, в котором продают домашних животных и всё необходимое для них.",
             example = "קָנִינוּ מָזוֹן וְצַעֲצוּעִים לַכֶּלֶב בַּחֲנוּת הַחַיּוֹת.",
             exampleNative = "Мы купили корм и игрушки для собаки в חֲנוּת חַיּוֹת.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105712, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pets_animals", transliteration = "tuki",
@@ -424,7 +424,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Профессиональное заведение, где стригут и приводят в порядок шерсть домашних животных.",
             example = "הֵבֵאתִי אֶת הַכֶּלֶב לַמִּסְפֵּרַת חַיּוֹת לִפְנֵי הַחַג.",
             exampleNative = "Я привёл собаку в מִסְפֵּרַת חַיּוֹת перед праздником.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105719, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pets_animals", transliteration = "khazir gine'a",
@@ -460,7 +460,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Огороженная территория, предназначенная для бега и выгула собак без поводка.",
             example = "בַּסּוֹף-שָׁבוּעַ אֲנִי לוֹקֵחַ אֶת הַכֶּלֶב לַמִּגְרַשׁ הַכְּלָבִים בַּפַּרְק.",
             exampleNative = "В выходные я вожу собаку на מִגְרַשׁ כְּלָבִים в парке.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105723, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pets_animals", transliteration = "kelev shemer",
@@ -487,7 +487,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Специальный предмет, предназначенный для развлечения домашнего животного.",
             example = "קָנִינוּ צַעֲצוּעַ חָדָשׁ לַחַיּוֹת — הַחָתוּל לֹא יָרַד מֵמֶנּוּ כָּל הַיּוֹם.",
             exampleNative = "Мы купили новый צַעֲצוּעַ לַחַיּוֹת — кошка не слезала с него весь день.",
-        ),
+         isFillInBlankSafe = false),
 
         // ──────────────────────────────────────────────────────────────────
         // Set 1058 — בריאות נפשית  (Mental health, B1/B2),
@@ -502,7 +502,7 @@ object WordDataHebrewBatch11 {
             definitionNative = "Текущее эмоциональное состояние человека в данный момент.",
             example = "מַצַּב הָרוּחַ שֶׁלִּי הִשְׁתַּפֵּר אַחֲרֵי שִׂיחָה עִם חָבֵר.",
             exampleNative = "Моё מַצַּב רוּחַ улучшилось после разговора с другом.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 105802, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mental_self", transliteration = "hakara atsmit",

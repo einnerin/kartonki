@@ -33,7 +33,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Деятельность по продвижению товаров или услуг целевой аудитории.",
             example = "צֶוֶות הַשִּׁיוּוּק הִכִּין קַמְפֵּיִן חָדָשׁ לַחֹרֶף.",
             exampleNative = "Команда שִׁיוּוּק подготовила новую кампанию к зиме.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106502, setId = 1065, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "mase pirsúm",
@@ -42,7 +42,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Скоординированный план рекламных действий для продвижения товара или услуги.",
             example = "מַסָּע הַפִּרְסוּם הַחָדָשׁ הִגִּיעַ לְמִילְיוֹן אֲנָשִׁים.",
             exampleNative = "Новая рекламная кампания охватила миллион человек.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106503, setId = 1065, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "mitúg",
@@ -51,7 +51,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Процесс создания торговой идентичности и имиджа компании или продукта.",
             example = "הַמִּיתּוּג שֶׁל הַחֶבְרָה כּוֹלֵל לוֹגוֹ, צְבָעִים וּסְלוֹגָן.",
             exampleNative = "מִיתּוּג компании включает логотип, цвета и слоган.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106504, setId = 1065, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "logo",
@@ -60,7 +60,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Визуальный символ, представляющий компанию или продукт.",
             example = "הַסְּטַז'יֶר עָיַן בְּמַצְגּוֹת הַלּוֹגוֹ שֶׁהֵגִישׁ הַמְּעַצֵּב.",
             exampleNative = "Стажёр просмотрел презентации לוֹגוֹ, поданные дизайнером.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106505, setId = 1065, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "kampéin",
@@ -69,7 +69,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Скоординированный план маркетинговых действий для достижения определённой цели.",
             example = "הַקַּמְפֵּיִן הַחָדָשׁ יֻשְׁקַ בְּיָנוּאָר.",
             exampleNative = "Новый קַמְפֵּיִן будет запущен в январе.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106506, setId = 1065, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "pirsúm",
@@ -88,7 +88,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Конкретная группа, на которую направлена маркетинговая кампания.",
             example = "קַהַל הַיַּעַד שֶׁלָּנוּ הוּא גְּבָרִים בְּגִיל 25–35.",
             exampleNative = "Наш קַהַל יַעַד — мужчины в возрасте 25–35 лет.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106508, setId = 1065, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "khashifa",
@@ -124,7 +124,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Официальное название, под которым продукт продаётся потребителям.",
             example = "צֶוֶות הַשִּׁיוּוּק בָּחַר אֶת שֵׁם הַמּוּצָר אַחֲרֵי בְּדִיקוֹת מִתְמַקְּדוֹת.",
             exampleNative = "Маркетинговая команда выбрала שֵׁם מוֹצָר после фокус-тестов.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106512, setId = 1065, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "shuk yáad",
@@ -133,7 +133,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Группа потенциальных потребителей, на которых ориентирован продукт.",
             example = "חָשׁוּב לְהַגְדִּיר אֶת שׁוּק הַיַּעַד לִפְנֵי הַקַּמְפֵּיִן.",
             exampleNative = "Важно определить שׁוּק יַעַד перед запуском кампании.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106513, setId = 1065, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "tsarkhán",
@@ -142,7 +142,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Человек, покупающий и использующий товары или услуги.",
             example = "הַצַּרְכָן הַמּוֹדֶרְנִי מְחַפֵּשׂ ספריות בִּמְחִיר הָגוּן.",
             exampleNative = "Современный צַרְכָן ищет качество по разумной цене.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106514, setId = 1065, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "kidúm mkhirot",
@@ -151,7 +151,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Временные меры для стимулирования покупки — скидки, подарки, конкурсы.",
             example = "קִידּוּם הַמְּכִירוֹת כָּלַל הַנְחָה שֶׁל עֶשְׂרִים אָחוּז לַשָּׁבוּעַ.",
             exampleNative = "קִידּוּם מְכִירוֹת включал скидку двадцать процентов на неделю.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106515, setId = 1065, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "mashpía",
@@ -160,7 +160,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Личность в социальных сетях, способная влиять на общественное мнение.",
             example = "שָׁכַרְנוּ מַשְׁפִּיעַ עִם חֲמִשִּׁים אֶלֶף עוֹקְבִים.",
             exampleNative = "Мы наняли מַשְׁפֵּיעַ с пятьюдесятью тысячами подписчиков.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106516, setId = 1065, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern", transliteration = "meida",
@@ -225,7 +225,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Репрезентативная группа клиентов, участвующая в опросах и экспериментах.",
             example = "הַפַּנֵּל הֱעֶלָה תְּגוּבוֹת חִיּוּבִיּוֹת לְגַבֵּי הַמּוּצָר הֶחָדָשׁ.",
             exampleNative = "פַּנֵּל לְקוֹחוֹת дал положительные отклики на новый продукт.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106609, setId = 1066, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "shivuk be'emtsaút doar elektroní",
@@ -252,7 +252,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Систематическое планирование публикации контента в разное время и на разных платформах.",
             example = "תִּזְמוּן הַתֹּכֶן לְחֹדֶשׁ הַבָּא כָּלַל עֶשְׂרִים פּוֹסְטִים.",
             exampleNative = "תִּזְמוּן תּוֹכֶן на следующий месяц включал двадцать постов.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106612, setId = 1066, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "kemet klíkim",
@@ -261,7 +261,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Количество раз, когда пользователи нажали на объявление или ссылку.",
             example = "כֶּמֶת הַקְּלִיקִים בְּמוֹדָעָה הַחֲדָשָׁה גָּבְהָה פִּי שְׁנַיִם.",
             exampleNative = "כֶּמֶת קְלִיקִים на новое объявление выросло вдвое.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106613, setId = 1066, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "hagdalat kahal",
@@ -270,7 +270,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Маркетинговая деятельность, направленная на увеличение числа людей, знающих о бренде.",
             example = "הַגְדָּלַת הַקֶּהֶל הִיא מַטָּרָה עִיקָרִית שֶׁל הַשִּׁיוּוּק בְּרְשָׁתוֹת הַחֶבְרָתִיּוֹת.",
             exampleNative = "הַגְדָּלַת קֶהֶל — главная цель продвижения в социальных сетях.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106614, setId = 1066, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "bdikat A/B",
@@ -288,7 +288,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Совокупность впечатлений и ощущений клиента от взаимодействия с брендом.",
             example = "שִׁפּוּר חֲווִיַּת הַלָּקוֹחַ הֶעֱלָה אֶת שִׁיעוּר שִׁמּוּר הַלְּקוֹחוֹת.",
             exampleNative = "Улучшение חֲווִיַּת לָקוֹחַ повысило коэффициент удержания клиентов.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106616, setId = 1066, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "masá lakúakh",
@@ -297,7 +297,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Этапы пути клиента от осведомлённости до покупки и лояльности.",
             example = "מַפַּת מַסָּע הַלָּקוֹחַ עָזְרָה לְזַהוֹת נְקוּדוֹת כְּאֵב בַּתַּהֲלִיךְ.",
             exampleNative = "Карта מַסָּע לָקוֹחַ помогла выявить болевые точки в процессе.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 106617, setId = 1066, languagePair = "he-ru", rarity = "RARE",
@@ -307,7 +307,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Тестируемая переменная в A/B-эксперименте — заголовок, цвет, текст кнопки.",
             example = "שִׁינִּינוּ פָּרַאמֶטֶר אֶחָד בַּמּוֹדָעָה וּבָחַנּוּ אֶת תַּגוּבַת הַקֶּהֶל.",
             exampleNative = "Мы изменили один פָּרַאמֶטֶר אֶ-בֵּי в объявлении и изучили реакцию аудитории.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106618, setId = 1066, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "hamrát mevakér",
@@ -316,7 +316,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Переход посетителя из пассивного зрителя в вовлечённого клиента или покупателя.",
             example = "שִׁפּוּר הַדַּף הָעֶלָה אֶת הַמְּרַת הַמְּבַקְּרִים בַּ-40%.",
             exampleNative = "Улучшение страницы повысило הַמְּרַת מְבַקֵּר на 40%.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106619, setId = 1066, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "binat shuk",
@@ -325,7 +325,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Систематический сбор и анализ информации о конкурентах, тенденциях и возможностях.",
             example = "בִּינַת הַשּׁוּק גִּלְּתָה פֶּרֶץ שֶׁאֵין לַמִּתְחָרִים מוּצָר לְמַלֵּא אוֹתוֹ.",
             exampleNative = "בִּינַת שׁוּק выявила нишу, которую конкуренты не закрывают.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106620, setId = 1066, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "shivúk bein-arútsit",
@@ -343,7 +343,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Суммарная прибыль, которую компания ожидает получить от клиента за всё время отношений.",
             example = "חֶבְרוֹת SaaS מַתַּמְקְּדוֹת בְּהַגְדָּלַת עֵרֶךְ חַיֵּי הַלָּקוֹחַ.",
             exampleNative = "Компании SaaS сосредоточены на увеличении עֵרֶךְ חַיֵּי לָקוֹחַ.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 106622, setId = 1066, languagePair = "he-ru", rarity = "RARE",
@@ -362,7 +362,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Рекламный текст, убеждающий клиентов купить продукт или услугу.",
             example = "הַקּוֹפִּי הַיְּצִירָתִי הַזֶּה הֵעֲלָה אֶת שִׁיעוּר הַהַמְרָה בְּעֶשְׂרִים אָחוּז.",
             exampleNative = "Этот креативный копирайтинг повысил конверсию на двадцать процентов.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106624, setId = 1066, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "yakhasei tsibur",
@@ -371,7 +371,7 @@ object WordDataHebrewBatch14 {
             definitionNative = "Сфера управления, поддерживающая позитивный имидж организации в глазах общества.",
             example = "מַחְלֶקֶת יַחֲסֵי הַצִּיבּוּר הַגִּיבָה מַהֵר עַל הַמִּשְׁבָּר.",
             exampleNative = "Отдел PR быстро отреагировал на кризис.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 106625, setId = 1066, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "marketing_intern_advanced", transliteration = "tadmit",

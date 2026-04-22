@@ -62,7 +62,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Всеобщая федерация трудящихся Израиля, основанная в 1920 году.",
             example = "הַהִסְתַּדְּרוּת שִׂמְּשָׁה כְּמוֹסָד כְּלָלִי חָשׁוּב לִפְנֵי קוּם הַמְּדִינָה.",
             exampleNative = "Гистадрут служил важным общественным институтом ещё до основания государства.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 108204, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -92,7 +92,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Термин, которым называлась сионистская цель в Декларации Бальфура — создание еврейского национального центра.",
             example = "הַבַּיִת הַלְּאֻמִּי הַיְּהוּדִי בְּאֶרֶץ יִשְׂרָאֵל הָפַךְ לְמַטָּרָה רְשְׁמִית.",
             exampleNative = "Еврейский национальный очаг в Земле Израиля стал официальной целью.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 108207, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -102,7 +102,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Временное прекращение боевых действий по взаимному соглашению сторон.",
             example = "הֶפְסְקַת הָאֵשׁ אִפְשְׁרָה לְהוֹצִיא פְּצוּעִים מֵהַשֶּׁטַח.",
             exampleNative = "Прекращение огня позволило вывезти раненых с поля боя.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 108208, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -112,7 +112,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Сохранение памяти людей или исторических событий для будущих поколений.",
             example = "הַנְצָחַת חַלְלֵי הַשּׁוֹאָה הִיא חֵלֶק מֵהַזִּכָּרוֹן הַלְּאֻמִּי.",
             exampleNative = "Увековечение памяти жертв Холокоста является частью национальной памяти.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 108209, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -132,7 +132,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Законодательная обязанность служить в армии, распространяющаяся на каждого гражданина, достигшего призывного возраста.",
             example = "גִּיּוּס הַחוֹבָה בְּיִשְׂרָאֵל מַתְחִיל בְּגִיל שְׁמוֹנָה עֶשְׂרֵה.",
             exampleNative = "Обязательная воинская служба в Израиле начинается в восемнадцать лет.",
-        ),
+         isFillInBlankSafe = false),
 
         WordEntity(
             id = 108211, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -164,7 +164,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Коллективное сельскохозяйственное сообщество с коллективной собственностью на имущество.",
             example = "הַקִּיבּוּץ הָפַךְ מִמּוֹסָד חַקְלָאִי לְמֶרְכָּז תַּעֲשִׂיָּתִי.",
             exampleNative = "Кибуц превратился из сельскохозяйственного учреждения в промышленный центр.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108214, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "makhteret",
@@ -173,7 +173,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Тайная организация, действующая вне рамок закона.",
             example = "הַמַּחְתֶּרֶת הַיְּהוּדִית נִלְחֲמָה נֶגֶד שִׁלְטוֹן הַמַּנְדָּט.",
             exampleNative = "Еврейское подполье боролось против мандатного правления.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108215, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "diplomatiya",
@@ -209,7 +209,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Сельскохозяйственное поселение с частной собственностью и кооперацией в сбыте и закупках.",
             example = "הַמּוֹשָׁב נִבְדָּל מֵהַקִּיבּוּץ בְּבַעֲלוּת פְּרָטִית עַל הָאֲדָמָה.",
             exampleNative = "Мошав отличается от кибуца частной собственностью на землю.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108219, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "hagdara atsmit",
@@ -227,7 +227,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Этнические, религиозные или национальные группы, не являющиеся частью большинства.",
             example = "הַמִּיעוּטִים בְּיִשְׂרָאֵל כּוֹלְלִים עֲרָבִים, דְּרוּזִים וְצִ'רְקֶסִּים.",
             exampleNative = "Меньшинства в Израиле включают арабов, друзов и черкесов.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108221, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "hakhrazat atsmaut",
@@ -236,7 +236,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Настойчивое усилие для достижения цели — особенно в национальном или политическом контексте.",
             example = "הַמַּאֲבָק לַעַצְמָאוּת נִמְשַׁךְ עֶשְׂרוֹת שָׁנִים.",
             exampleNative = "Борьба за независимость продолжалась десятилетиями.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108222, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "shikhrur",
@@ -254,7 +254,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Присоединение территории силой к государству, нередко вопреки международному праву.",
             example = "הַסִּפּוּחַ הַחַד-צְדָדִי שֶׁל שֶׁטַח יָצַר בְּעָיָה דִּיפְלוֹמַטִית.",
             exampleNative = "Одностороннее присоединение территории создало дипломатическую проблему.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108224, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "heskem oslo",
@@ -263,7 +263,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Мирные соглашения между Израилем и Палестинской администрацией, подписанные в девяностые годы.",
             example = "הֶסְכְּמֵי אוֹסְלוֹ נֶחְתְּמוּ בְּ-1993 בֵּין רָבִין לְעַרָפַאת.",
             exampleNative = "Соглашения Осло были подписаны в 1993 году между Рабином и Арафатом.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108225, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "khalukat palestina",
@@ -272,7 +272,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "План ООН 1947 года по разделу Земли Израиля на еврейское и арабское государства.",
             example = "תָּכְנִית הַחֲלוּקָה קִיבְּלָה תְּמִיכָה יְהוּדִית אַךְ נִדְחְתָה עַל יְדֵי הָעֲרָבִים.",
             exampleNative = "План раздела получил еврейскую поддержку, но был отвергнут арабами.",
-        ),
+         isFillInBlankSafe = false),
 
         // ── Set 1083: Социальные сети ──────────────────────────────────────
 

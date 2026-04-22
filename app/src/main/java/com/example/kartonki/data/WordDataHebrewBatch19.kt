@@ -42,7 +42,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Драматическое произведение, предназначенное для показа на сцене.",
             example = "הַמַּחֲזֶה שֶׁל שֶׁקְסְפִּיר הוּצַג בְּהַבֵּימָה.",
             exampleNative = "Пьеса Шекспира была поставлена в театре «Хабима».",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107902, setId = 1079, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "theatre", transliteration = "hatsaga",
@@ -78,7 +78,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Процесс выбора актёров на роли в спектакле или фильме.",
             example = "הַלִּיהוּקִים לַהַצָּגָה אָרְכוּ שְׁלוֹשָׁה שָׁבוּעוֹת.",
             exampleNative = "Кастинг для спектакля длился три недели.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107906, setId = 1079, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "theatre", transliteration = "opereta",
@@ -116,7 +116,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Тот, кто помогает режиссёру управлять производственным процессом и координировать команду.",
             example = "עוֹזֵר הַבַּמַּאי דָּאַג שֶׁכָּל הַשַּׂחְקָנִים יִהְיוּ בְּמָקוֹמָם בַּזְּמַן.",
             exampleNative = "Помощник режиссёра следил, чтобы все актёры были на месте вовремя.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107910, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "theatre", transliteration = "halvasha",
@@ -134,7 +134,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Длинная речь одного персонажа в пьесе.",
             example = "הַמּוֹנוֹלוֹג הַמְּפֻרְסָם שֶׁל הַמְלֶט הוּא 'לִהְיוֹת אוֹ לֹא לִהְיוֹת'.",
             exampleNative = "Знаменитый монолог Гамлета — «Быть или не быть».",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107912, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "theatre", transliteration = "dialog",
@@ -161,7 +161,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Первый показ новой пьесы.",
             example = "הִצָּגַת הַבְּכוּרָה זָכְתָה לְעֲמִידָה מְחִיאַת כַּפַּיִם.",
             exampleNative = "Премьера получила овацию стоя.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 107915, setId = 1079, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "theatre", transliteration = "tragedia",
@@ -226,7 +226,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Период, когда активны школы и университеты — как правило, с октября по июнь.",
             example = "הַשָּׁנָה הָאַקַדֵּמִית מְחוּלֶּקֶת לִשְׁנֵי סְמֶסְטָרִים.",
             exampleNative = "Учебный год разделён на два семестра.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108008, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "university", transliteration = "doktorant",
@@ -253,7 +253,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Один из крупных учебных подразделений в университете.",
             example = "הִיא לוֹמֶדֶת בְּפָקוּלְטָה לַמַּדָּעִים הַמְּדֻיָּקִים.",
             exampleNative = "Она учится на факультете точных наук.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108011, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "university", transliteration = "milga",
@@ -262,7 +262,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Финансовая поддержка для учёбы, предоставляемая способным или нуждающимся студентам.",
             example = "זָכָה בְּמִלְגַּת הַצְטַיְּנוּת לַלִּמּוּדִים בְּחוּ\"ל.",
             exampleNative = "Он получил стипендию за отличие для учёбы за рубежом.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108012, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "university", transliteration = "takhnit limudim",
@@ -271,7 +271,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Содержание и структура курсов определённого направления обучения.",
             example = "תָּכְנִית הַלִּמּוּדִים בְּמַשְׁפַּטִים כּוֹלֶלֶת עֲבוֹדוֹת מֶחְקָר רַבּוֹת.",
             exampleNative = "Учебная программа на юридическом факультете включает много исследовательских работ.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108013, setId = 1080, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "university", transliteration = "avodat gemar",
@@ -336,7 +336,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Вступительный экзамен в израильский университет — психометрия.",
             example = "הִתְכַּוְּנָן לַבְּחִינָה הַפְּסִיכוֹמֶטְרִית חֻמְרֵי הֲכָנָה.",
             exampleNative = "Он готовился к психометрическому экзамену по специальным материалам.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108020, setId = 1080, languagePair = "he-ru", rarity = "RARE",
             pos = "adjective", semanticGroup = "university", transliteration = "rav-tekhumi",
@@ -427,7 +427,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Рынок, на котором торгуются ценные бумаги долгосрочного характера.",
             example = "שׁוּק הַהוֹן בְּיִשְׂרָאֵל מְשֻׁלָּב בַּשּׁוּקִים הַגְּלוֹבָּלִיִּים.",
             exampleNative = "Рынок капитала Израиля интегрирован в глобальные рынки.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108112, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "finance", transliteration = "hekhzer hashkaa",
@@ -436,7 +436,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Отношение чистой прибыли к стоимости инвестиции.",
             example = "הַהֶחְזֵר עַל הַהַשְׁקָעָה הָיָה עֶשְׂרִים אָחוּז בַּשָּׁנָה.",
             exampleNative = "Доходность инвестиции составила двадцать процентов в год.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108113, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "finance", transliteration = "shuk shori",
@@ -454,7 +454,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Период устойчивого снижения цен на фондовом рынке.",
             example = "בְּשׁוּק הַדֻּבִּי הִמְתִּינוּ הַמַּשְׁקִיעִים עִם קְנִיּוֹת.",
             exampleNative = "На медвежьем рынке инвесторы выжидали с покупками.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108115, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "finance", transliteration = "hanpaka",
@@ -463,7 +463,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Первое размещение акций частной компании для широкой публики.",
             example = "הַנְפָּקַת וֵויז עַל הַנַּאסְדַּ\"ק הָיְתָה אֵירוּעַ מְצֻפֶּה.",
             exampleNative = "IPO Waze на Nasdaq было ожидаемым событием.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108116, setId = 1081, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "finance", transliteration = "nezilut",
@@ -492,7 +492,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Чистая стоимость компании — разница между активами и обязательствами.",
             example = "תֶּשֶׁן הַהוֹן עָלָה לְאַחַר שִׁנּוּי הַמְּדִינִיּוּת הָחֶבְרָתִית.",
             exampleNative = "Собственный капитал вырос после изменения корпоративной политики.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108119, setId = 1081, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "finance", transliteration = "takhazit kalkalit",
@@ -501,7 +501,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Будущая оценка тенденций на рынке или в экономике.",
             example = "הַבַּנְק הֶעֱרִיךְ אֶת הַתַּחֲזִית לְצְמִיחָה שֶׁל שְׁלוֹשָׁה אָחוּז.",
             exampleNative = "Банк оценил прогноз роста в три процента.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108120, setId = 1081, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "finance", transliteration = "siyun ashrai",
@@ -510,7 +510,7 @@ object WordDataHebrewBatch19 {
             definitionNative = "Оценка платёжеспособности компании или государства рейтинговым агентством.",
             example = "הוֹרָדַת הַסִּיּוּן הָאַשְׁרַאי גָּרְמָה לְגַל מְכִירוֹת.",
             exampleNative = "Снижение кредитного рейтинга вызвало волну продаж.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 108121, setId = 1081, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "finance", transliteration = "tigmul",

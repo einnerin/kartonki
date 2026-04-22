@@ -122,7 +122,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Сумма, удержанная из зарплаты или дохода в счёт налога или страховки.",
             example = "נְכוּיֵי הַמֵּס מוֹפִיעִים בְּתֶלֶם הַמַּשְׂכֹּרֶת.",
             exampleNative = "Налоговые נִכּוּי отображаются в расчётном листке.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114212, setId = 1142, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "bituchi_leumi", transliteration = "chishúv",
@@ -140,7 +140,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Официальный бланк, который нужно заполнить и подать в учреждение.",
             example = "מִלֵּאתִי אֶת הַטּוֹפַס לְקַבָּלַת קְצָבָה.",
             exampleNative = "Я заполнил טוֹפַס для получения пособия.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114214, setId = 1142, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bituchi_leumi", transliteration = "z'chut",
@@ -271,7 +271,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Тот, кто платит деньги за товар или услугу.",
             example = "הַקּוֹנֶה בִּקֵּשׁ הֲנָחָה עַל הַיְּרָקוֹת.",
             exampleNative = "קוֹנֶה попросил скидку на овощи.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114303, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "shuk", transliteration = "hanача",
@@ -289,7 +289,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Прибор для измерения веса товара.",
             example = "הַמּוֹכֵר שָׁם אֶת הַפֵּרוֹת עַל הַמִּשְׁקָל.",
             exampleNative = "Продавец положил фрукты на מִשְׁקָל.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114305, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "shuk", transliteration = "l'hitmakaḥ",
@@ -361,7 +361,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Упаковочный пакет из пластика или бумаги для товаров.",
             example = "שַׂמְתִּי אֶת הַיְּרָקוֹת בַּשְּׂקִית.",
             exampleNative = "Я положил овощи в שְׂקִית.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114313, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "shuk", transliteration = "agora",
@@ -370,7 +370,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Наименьшая израильская монета, одна сотая шекеля.",
             example = "הַמְּחִיר הוּא שְׁלוֹשָׁה שְׁקָלִים וַחֲמִשִּׁים אֲגוֹרוֹת.",
             exampleNative = "Цена — три шекеля и пятьдесят אֲגוֹרוֹת.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114314, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "shuk", transliteration = "khanut",
@@ -397,7 +397,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Место в магазине, где платят за покупки.",
             example = "הַתּוֹר לַקּוּפָּה אָרֹךְ הַיּוֹם.",
             exampleNative = "Очередь к קוּפָּה сегодня длинная.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114317, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "shuk", transliteration = "kilogram",
@@ -433,7 +433,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Сладкий грушевидный фрукт, обычно жёлтый или зелёный.",
             example = "קָנִיתִי חֲמִישָּׁה אֲגָסִים בַּשּׁוּק.",
             exampleNative = "Я купил пять אֲגָסִים на рынке.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114321, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "shuk", transliteration = "maionez",
@@ -492,7 +492,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Защищённая комната в квартире с усиленными стенами для защиты от ракет.",
             example = "כְּשֶׁשּׁוֹמְעִים אַזְעָקָה, נָסִים לַמַּמָּ\"ד.",
             exampleNative = "Когда слышат сирену, бегут в מַמָּ\"ד.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114402, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "security", transliteration = "miklat",
@@ -501,7 +501,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Защищённое подземное сооружение для укрытия в чрезвычайных ситуациях.",
             example = "הַמִּקְלָט הַצִּיבּוּרִי נִמְצָא בַּמַּרְתֵּף.",
             exampleNative = "Общественное מִקְלָט находится в подвале.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114403, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "security", transliteration = "az'aka",
@@ -555,7 +555,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Человек, охраняющий место или людей.",
             example = "הַשּׁוֹמֵר בַּכְּנִיסָה בָּדַק אֶת הַתִּיק.",
             exampleNative = "שׁוֹמֵר у входа проверил сумку.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114409, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "security", transliteration = "pinuy",
@@ -681,7 +681,7 @@ object WordDataHebrewImmigrant5 {
             definitionNative = "Преследование человека или транспортного средства с целью задержания.",
             example = "הַמִּרְדָּף הֵסְתַּיֵּם בְּמַעֲצָר.",
             exampleNative = "מִרְדָּף завершился арестом.",
-        ),
+         isFillInBlankSafe = false),
         WordEntity(
             id = 114423, setId = 1144, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "security", transliteration = "ezhara",
