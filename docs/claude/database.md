@@ -6,11 +6,12 @@
 - `data/db/dao/` — все DAO
 
 ## Текущая версия БД
-`version = 35` (в аннотации `@Database`)
+`version = 40` (в аннотации `@Database`). Последняя миграция `MIGRATION_39_40` добавила
+колонку `fillInBlankExclusions` (TEXT, CSV ids) — см. [`fill-in-blank-pipeline.md`](fill-in-blank-pipeline.md).
 
 ## Таблицы
-`words`, `word_sets`, `collection`, `decks`, `deck_cards`, `progress`,
-`achievements`, `study_streaks`, `pvp_matches`, `retained_favorites`
+`words`, `word_sets`, `word_set_membership`, `collection`, `decks`, `deck_cards`,
+`progress`, `achievements`, `study_streaks`, `pvp_matches`, `retained_favorites`
 
 ## Защита избранных наборов (isFavorite)
 `retained_favorites` — вспомогательная таблица (setId INTEGER PK).
@@ -23,17 +24,18 @@ WordLoader автоматически восстановит `isFavorite = 1` и
 ## Чеклист при изменении схемы
 
 1. **Измени Entity** — добавь/удали поле.
-2. **Создай миграцию** в `AppDatabase.companion`:
+2. **Создай миграцию** в `AppDatabase.companion`. Нумерация — следующая после последней (см. выше, `MIGRATION_39_40`):
    ```kotlin
-   val MIGRATION_34_35 = object : Migration(34, 35) {
+   val MIGRATION_40_41 = object : Migration(40, 41) {
        override fun migrate(db: SupportSQLiteDatabase) {
            db.execSQL("ALTER TABLE ... ADD COLUMN ...")
        }
    }
    ```
-3. **Подними версию** в `@Database(version = 35, ...)`.
-4. **Зарегистрируй миграцию** в `DatabaseModule` (или где создаётся `Room.databaseBuilder`) — добавь `.addMigrations(MIGRATION_34_35)`.
+3. **Подними версию** в `@Database(version = 41, ...)` на следующее число.
+4. **Зарегистрируй миграцию** в `DatabaseModule` (или где создаётся `Room.databaseBuilder`) — добавь `.addMigrations(MIGRATION_40_41)`.
 5. **Никогда не меняй уже выпущенную миграцию** — создавай новую поверх.
+6. **Параллельные агенты не могут одновременно добавлять миграции** (см. [`rules-index.md#13`](rules-index.md)) — номера строго последовательны, конфликт гарантирован.
 
 ## Паттерны миграций (из истории)
 
@@ -46,9 +48,8 @@ WordLoader автоматически восстановит `isFavorite = 1` и
 | Новый индекс | `CREATE UNIQUE INDEX IF NOT EXISTS ... ON table(col1, col2)` |
 | Полный сброс данных | `DELETE FROM words / word_sets / progress / collection / deck_cards` — WordLoader пересеет при следующем запуске |
 
-## Ключевой UNIQUE-индекс
-`index_words_original_languagePair ON words(original, languagePair)` (добавлен в 32→33)
-Дубль по `original` удаляет старую строку через `insertAllOrReplace`.
+## Индекс на words
+`index_words_original_languagePair ON words(original, languagePair)` — **non-unique** индекс для производительности запросов. Исторически был UNIQUE (добавлен в 32→33), но убран в 37→38 — теперь одно слово может появляться в наборах разных тем. См. `rules-index.md#5` (политика дублей между темами).
 
 ## Частые ошибки
 - Изменил Entity, но забыл поднять версию → краш `Room.IllegalStateException` у пользователей.

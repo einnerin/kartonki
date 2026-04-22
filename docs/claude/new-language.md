@@ -27,7 +27,7 @@
    - `languagePair = "fr-ru"` во всех сущностях
    - `setId` в диапазоне нового блока (например 2001+)
    - Имена, описания, `topic` — только на русском
-   - `topic` заполнен, `level` = 1/2/3 (обязательно, хук блокирует без них)
+   - `topic` заполнен, `level` = 1–5 (обязательно, хук блокирует без них). См. [`word-sets.md`](word-sets.md) и [`rules-index.md#4`](rules-index.md).
 
 2. **Добавь в `WordRegistry`**:
    - `allSets`: `+ WordDataFrench.sets`
