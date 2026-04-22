@@ -20,6 +20,15 @@
 - **Batch6** (сеты 259–261) — 54 def+defNative + 50 перегруппировок (коммит 8c89c5d)
 - **Batch17** (сет 299) — 13 правок + 14 перегруппировок (коммит 323b107)
 - **WordDataEnglish.kt сеты 1–5** — 125 def правок (example ещё не делались)
+- **WordDataEnglish.kt сеты 6–10** — 23 text+cognate + 125 перегруппировок (коммит 73b8acd, вместе с setId 87)
+- **WordDataEnglish.kt setId 87 (Logic B2, в обоих файлах)** — 13 text_lengths + 46 новых текстов (text-author) + 25 перегруппировок (коммит 73b8acd)
+- **WordDataEnglish.kt сеты 11–15** — 32 text+cognate + 125 перегруппировок (коммит 7a90f97)
+- **WordDataEnglish.kt сеты 16–20** — ~200 правок + 125 перегруппировок (коммит 6c8a30e)
+- **WordDataEnglish.kt сеты 21–25** — ~270 правок + 125 перегруппировок (коммит ab682e6)
+
+### Инфраструктура качества
+- **Pre-commit hook расширен** (коммит eea7d1f): валидируются только реально изменённые setIds через `scripts/validate/changed_setids.py`. Chunked-работа на больших файлах разблокирована.
+- **CI validate-words-pr.yml починен** (коммит fc0a042): использует тот же скрипт с опцией `--base=<ref>`. Ранее падал от legacy-техдолга в несвязанных setIds; теперь targeted. validate-words-health.yml остался отдельным, info-only, на schedule.
 
 ### Первичное написание текстов (text-author)
 - **Batch7** (262–264), **Batch8** (265–267), **Batch9** (268–270), **Batch10** (271–273) — 300 слов × 4 поля
@@ -77,9 +86,9 @@
 
 **Расширить `validate_no_cognates` на многословный `translation`** — приоритет **высокий**. Дыра обнаружена на живом прогоне Batch4 setId 255 (2026-04-21): 15 cognate-нарушений проскочило валидатор. Сейчас стемминг `translation` идёт по целой строке, поэтому однокоренные ко второй или третьей значимой части многословного перевода не ловятся. Примеры из реальной базы: `teamwork / командная работа` — definitionNative «...совместно **работать** в группе» не флагуется (стем «работ» сравнивался с «командная работа» целиком, не совпал); `performance review / оценка эффективности` — «Официальная **оценка** работы...» не флагуется; `onboarding / адаптация нового сотрудника` — «Процесс интеграции нового **сотрудника**...» не флагуется. **План:** расширить `scripts/validate/_parser.py` или сам `validate_no_cognates.py` — токенизировать `translation` по пробелам/слэшам, отфильтровать стоп-слова (и/или/в/на/с/к/по/для), стеммить каждое значимое слово отдельно, проверять definitionNative на каждое. Добавить кейс в фикстуру `tests/bad_set.kt`, прогнать `scripts/validate/tests/run_tests.sh`. **Делать отдельным коммитом после завершения полировки Batch3-6 + 17** — не сейчас, чтобы не размывать текущую задачу.
 
-### Полировка больших файлов — БЛОКЕР архитектуры pre-commit hook
+### Полировка больших файлов — БЛОКЕР pre-commit hook (УСТРАНЁН 2026-04-22 коммитом eea7d1f)
 
-**КРИТИЧНАЯ ПРОБЛЕМА (2026-04-22):** chunked-работа по 5 setId на `WordDataEnglish.kt` **невозможна** с текущим pre-commit hook'ом.
+~~**КРИТИЧНАЯ ПРОБЛЕМА (2026-04-22):** chunked-работа по 5 setId на `WordDataEnglish.kt` **невозможна** с текущим pre-commit hook'ом.~~
 
 Hook (`.githooks/pre-commit` блок 2b) валидирует **все setIds в изменённых файлах**, не только изменённые. Для English.kt это 84 уникальных setId. Даже если чинишь 5 штук (например 6-10), hook блокирует коммит, т.к. остальные 79 сетов ещё в legacy-состоянии (плоские группы + text_lengths).
 
@@ -105,13 +114,25 @@ git stash pop    # применить
 
 ---
 
-### Прогресс полировщика на момент блокировки
+### Прогресс по WordDataEnglish.kt (обновлено 2026-04-22)
 
-На 2026-04-22 отполированы (в stash, не коммичены):
-- **WordDataEnglish.kt сеты 6-10:** 23 text_lengths+cognate правки + 125 перегруппировок metadata (descriptions/education/family/food). Все 5 сетов проходят 7 валидаторов.
-- **setId 87 Logic B2:** 13 text_lengths правок в обоих файлах (WordDataEnglish.kt + WordDataEnglishExpanded.kt). НО всё ещё блокируется `validate_fields_filled.sh` (23/25 слов missing required fields — это задача text-author, не polisher).
+**Закрыто (сеты 1-25 + 87):** все проходят 7 валидаторов.
+- 1-5: давно (коммиты до сессии)
+- 6-10 + 87: 73b8acd (text-author заполнил 46 текстов для 23 слов setId 87)
+- 11-15: 7a90f97
+- 16-20: 6c8a30e
+- 21-25: ab682e6
 
-Когда hook будет починен, стэш применить, setId 87 передать text-author'у, затем коммитить чанк.
+**Осталось:** сеты **26-86, 88-89** (= ~62 сетa). Следующий чанк: 26-30.
+
+Алгоритм, который стабильно работает (по коммиту):
+1. baseline — `validate_all.sh` по каждому setId чанка
+2. `definition-polisher` по всем 5 сетам (def + defNative)
+3. `example-polisher` по всем 5 сетам (example + exampleNative)
+4. `metadata-filler` по всем 5 сетам (разбить плоскую 25-словную группу на 5-7 подгрупп)
+5. validate → build → bump WordDataVersion → коммит с полями `git add <WordDataEnglish.kt> <WordDataVersion.kt>` → push
+
+Pre-commit hook валидирует только изменённые 5 setIds (спасибо eea7d1f), CI тоже (fc0a042). Каждый коммит занимает ~3-4 минуты на валидацию.
 
 ### WordDataEnglishExpanded.kt — задача text-author, не polisher
 
