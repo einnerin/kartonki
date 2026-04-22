@@ -154,6 +154,16 @@ def parse_words(kt_file):
         # when explicitly set to false by scripts/validate/mark_ambiguous_blanks.py.
         safe_m = re.search(r'\bisFillInBlankSafe\s*=\s*(true|false)\b', block)
         is_safe = True if safe_m is None else (safe_m.group(1) == "true")
+        # fillInBlankExclusions — listOf(123L, 456L) of neighbor ids that also
+        # fit this word's example's blank. Populated by the LLM + safety-net
+        # pipeline; see docs/claude/fill-in-blank-pipeline.md.
+        exc_m = re.search(r'\bfillInBlankExclusions\s*=\s*listOf\(([^)]*)\)', block)
+        fib_exclusions: list[int] = []
+        if exc_m:
+            for tok in exc_m.group(1).split(","):
+                tok = tok.strip().rstrip("L").strip()
+                if tok.isdigit():
+                    fib_exclusions.append(int(tok))
         if wid and sid and original and lang:
             words.append({
                 "id": wid, "setId": sid, "original": original,
@@ -166,6 +176,7 @@ def parse_words(kt_file):
                 "pos": extract_field(block, 'pos'),
                 "semanticGroup": extract_field(block, 'semanticGroup'),
                 "isFillInBlankSafe": is_safe,
+                "fillInBlankExclusions": fib_exclusions,
             })
     return words
 

@@ -140,15 +140,46 @@ def validate(set_id):
             continue  # no semanticGroup → can't compare
         siblings = by_group.get(group_key, [])
         target_len = len(original)
+        # fillInBlankExclusions are handled at runtime by QuizBuilder —
+        # neighbors already in the exclusion list cannot become distractors.
+        # See docs/claude/fill-in-blank-pipeline.md.
+        exclusion_ids = set(w.get("fillInBlankExclusions") or [])
+        # Rule 1 (article filter): "an ___" → only vowel-start candidates
+        # are possible distractors. Consonant-start with "an" is visibly
+        # wrong to the player so never produces frustration.
+        article = None
+        pre = example[:blank_start].rstrip().lower()
+        if pre.endswith(" an"):
+            article = "an"
+        elif pre.endswith(" a") or pre == "a":
+            article = "a"
+        # Rule 3 (candidate already in example): if candidate's original
+        # appears elsewhere in the example, substituting creates "cup of
+        # coffee or coffee" nonsense — not a viable distractor.
+        example_without_target = example[:blank_start] + example[blank_end:]
+        example_lower = example_without_target.lower()
         candidates = []
         for other in siblings:
             if other["id"] == w["id"]:
                 continue
+            if other["id"] in exclusion_ids:
+                continue  # handled by fillInBlankExclusions pipeline
             if other.get("pos") != w.get("pos"):
                 continue
             if abs(len(other["original"]) - target_len) > LENGTH_SIMILARITY_THRESHOLD:
                 continue
-            candidates.append(other["original"])
+            cand_orig = other["original"]
+            # Rule 1: article/vowel mismatch → visibly wrong → skip
+            first = cand_orig[0].lower() if cand_orig else ""
+            is_vowel = first in "aeiou"
+            if article == "an" and not is_vowel:
+                continue
+            if article == "a" and is_vowel:
+                continue
+            # Rule 3: candidate already in example → nonsense if substituted
+            if re.search(rf"\b{re.escape(cand_orig.lower())}\b", example_lower):
+                continue
+            candidates.append(cand_orig)
         if candidates:
             preview = example[:blank_start] + "___" + example[blank_end:]
             shown = ", ".join(candidates[:4])

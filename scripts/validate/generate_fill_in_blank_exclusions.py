@@ -243,6 +243,107 @@ def inject_exclusions(raw_bytes: bytes, exclusions_by_id: dict[int, list[int]]) 
     return bytes(out), injected
 
 
+# Threshold for "too generic example": if safety-net exclusion list has this
+# many or more entries, the example isn't anchored enough and the word stays
+# isFillInBlankSafe = false until the example is rewritten.
+TOO_GENERIC_THRESHOLD = 8
+
+
+def flip_safety_flag(set_words: list[dict], result: list[dict], dry_run: bool) -> tuple[int, int]:
+    """Phase 3: flip isFillInBlankSafe=false → (default true) for words that
+    now have usable exclusion lists. Leave form_mismatch and too-generic
+    examples as unsafe. Returns (flipped, kept_unsafe).
+
+    Byte-preserving removal: strips `, isFillInBlankSafe = false` (or the
+    trailing-comma variant) from each matching WordEntity block.
+    """
+    keep_unsafe_ids: set[int] = set()
+    flip_ids: set[int] = set()
+    for entry in result:
+        wid = entry["id"]
+        if entry.get("form_mismatch"):
+            keep_unsafe_ids.add(wid)
+            continue
+        exc_count = len(entry.get("exclusions", []))
+        if exc_count >= TOO_GENERIC_THRESHOLD:
+            keep_unsafe_ids.add(wid)
+            continue
+        flip_ids.add(wid)
+
+    flipped = 0
+    for kt in sorted(ROOT.glob("WordData*.kt")):
+        raw = kt.read_bytes()
+        if not any(f"id = {wid}".encode() in raw for wid in flip_ids):
+            continue
+        new_bytes = _strip_safety_flag(raw, flip_ids)
+        if new_bytes != raw:
+            count = raw.count(b"isFillInBlankSafe = false") - new_bytes.count(b"isFillInBlankSafe = false")
+            print(f"  {kt.name}: {count} flips (false → default true)", flush=True)
+            flipped += count
+            if not dry_run:
+                kt.write_bytes(new_bytes)
+    return flipped, len(keep_unsafe_ids)
+
+
+def _strip_safety_flag(raw_bytes: bytes, target_ids: set[int]) -> bytes:
+    """Remove `, isFillInBlankSafe = false` from each WordEntity block whose
+    id is in target_ids. Handles both leading-comma and trailing-comma forms.
+    """
+    out = bytearray()
+    pos = 0
+    while pos < len(raw_bytes):
+        m = _WORD_ENTITY_START.search(raw_bytes, pos)
+        if m is None:
+            out.extend(raw_bytes[pos:])
+            break
+        out.extend(raw_bytes[pos:m.start()])
+        wid = int(m.group(1))
+
+        open_paren_idx = raw_bytes.index(b"(", m.start())
+        depth = 1
+        i = open_paren_idx + 1
+        while i < len(raw_bytes) and depth > 0:
+            c = raw_bytes[i:i+1]
+            if c == b'"':
+                i += 1
+                while i < len(raw_bytes) and raw_bytes[i:i+1] != b'"':
+                    if raw_bytes[i:i+1] == b"\\" and i + 1 < len(raw_bytes):
+                        i += 2
+                    else:
+                        i += 1
+                i += 1
+                continue
+            if c == b"(":
+                depth += 1
+            elif c == b")":
+                depth -= 1
+                if depth == 0:
+                    break
+            i += 1
+        close_paren_idx = i
+        block = raw_bytes[m.start():close_paren_idx + 1]
+
+        if wid in target_ids and b"isFillInBlankSafe = false" in block:
+            # Remove ", isFillInBlankSafe = false" (leading-comma form) or
+            # " isFillInBlankSafe = false," (trailing variant after comma).
+            new_block = re.sub(
+                rb",\s*isFillInBlankSafe\s*=\s*false",
+                b"",
+                block,
+            )
+            # Fallback: if the flag was the first arg (unlikely but safe), just strip it
+            new_block = re.sub(
+                rb"isFillInBlankSafe\s*=\s*false\s*,?\s*",
+                b"",
+                new_block,
+            )
+            out.extend(new_block)
+        else:
+            out.extend(block)
+        pos = close_paren_idx + 1
+    return bytes(out)
+
+
 def apply_to_files(set_words: list[dict], result: list[dict], dry_run: bool) -> int:
     """Write fillInBlankExclusions into the WordData*.kt file(s) containing
     the given set. Returns total injections applied (or would-apply in dry run).
@@ -281,6 +382,11 @@ def main() -> None:
     ap.add_argument("--apply", action="store_true",
                     help="Write fillInBlankExclusions back into WordData*.kt. "
                          "Default: only print the JSON result.")
+    ap.add_argument("--flip-safety-flag", action="store_true",
+                    help="Phase 3: remove `isFillInBlankSafe = false` from "
+                         "WordEntity blocks whose exclusions list makes the "
+                         "quiz viable. Keeps form_mismatch and too-generic "
+                         f"(>= {TOO_GENERIC_THRESHOLD} exclusions) as unsafe.")
     args = ap.parse_args()
 
     set_words = load_set_words(args.set_id)
@@ -295,7 +401,12 @@ def main() -> None:
 
     result = apply_safety_net(llm_entries, set_words)
 
-    if args.apply:
+    if args.flip_safety_flag:
+        flipped, kept = flip_safety_flag(set_words, result, dry_run=False)
+        print(f"Phase 3: {flipped} words flipped to safe=true, "
+              f"{kept} kept unsafe (form_mismatch or >= "
+              f"{TOO_GENERIC_THRESHOLD} exclusions).", flush=True)
+    elif args.apply:
         total = apply_to_files(set_words, result, dry_run=False)
         print(f"Applied: {total} exclusion fields injected.", flush=True)
     else:
