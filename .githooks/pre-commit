@@ -28,6 +28,34 @@
 #
 # Если хук блокирует по ошибке — не используй --no-verify. Лучше исправить
 # нарушение или обсудить правило. См. docs/claude/quality_gates.md.
+#
+# ── METADATA_ONLY_COMMIT escape hatch ────────────────────────────────────────
+#
+# Флаг METADATA_ONLY_COMMIT=1 разрешает коммитить массовые правки, которые
+# добавляют только whitelisted metadata-поле во все WordEntity и не меняют
+# семантику слов. Текущий whitelist: {isFillInBlankSafe}.
+#
+# Активируется ТОЛЬКО совместно с LARGE_COMMIT_OK=1 (защита от случайного
+# использования при обычной ручной правке).
+#
+# При активном флаге:
+#   • Хук вызывает scripts/validate/check_metadata_only_diff.py — тот парсит
+#     staged diff и сравнивает каждую (удалённую, добавленную) строку. Если
+#     после снятия маркера isFillInBlankSafe строки не совпадают — коммит
+#     БЛОКИРУЕТСЯ. Флаг самовалидируемый.
+#   • Пропускается блок 2b (per-setId validate_all.sh) — pre-existing legacy
+#     техдолг не блокирует коммит, который не меняет содержимое слов.
+#   • Сохраняются: 2a (find_real_dupes — структура), 2c (WordDataVersion
+#     bump — обязателен для любых правок данных), всё из блока 1.
+#
+# Примеры использования:
+#   # Обычный коммит — никаких флагов.
+#   git commit -m "..."
+#
+#   # Mass-mark всех AMBIGUOUS_BLANK-слов:
+#   METADATA_ONLY_COMMIT=1 LARGE_COMMIT_OK=1 git commit -m "..."
+#
+# Тесты флага — .githooks/tests/test_metadata_only.sh.
 set -u
 
 cd "$(git rev-parse --show-toplevel)" || exit 1
@@ -91,30 +119,64 @@ if [ -n "$CHANGED_WORDDATA" ]; then
   FILE_COUNT=$(echo "$CHANGED_WORDDATA" | wc -l)
   echo -e "${BLUE}🔍 Валидация WordData (${FILE_COUNT} файл)...${NC}"
 
-  # 2a. Глобальные проверки (find_real_dupes)
+  # ── METADATA_ONLY_COMMIT escape hatch acquisition ─────────────────────────
+  # Allows skipping 2b (per-setId full validation) when the commit ONLY adds
+  # whitelisted metadata fields. Requires both env vars to prevent accidental
+  # use. The diff itself is re-checked below by check_metadata_only_diff.py —
+  # the flag is self-validating.
+  METADATA_ONLY_ACTIVE=0
+  if [ -n "${METADATA_ONLY_COMMIT:-}" ]; then
+    if [ -z "${LARGE_COMMIT_OK:-}" ]; then
+      ERRORS+=("METADATA_ONLY_COMMIT=1 установлен без LARGE_COMMIT_OK=1.
+    Флаг разрешения mass-metadata-коммитов требует оба флага одновременно —
+    защита от случайного использования при обычной ручной правке.
+    Перезапусти как: METADATA_ONLY_COMMIT=1 LARGE_COMMIT_OK=1 git commit ...
+    См. комментарии в .githooks/pre-commit.")
+    else
+      if python scripts/validate/check_metadata_only_diff.py > /tmp/kartonki-metaonly.log 2>&1; then
+        METADATA_ONLY_ACTIVE=1
+        echo -e "${YELLOW}⚠️  METADATA_ONLY_COMMIT mode active.${NC}"
+        echo -e "    Content quality validators (per-setId) skipped."
+        echo -e "    Structural (find_real_dupes) and WordDataVersion bump still enforced."
+      else
+        ERRORS+=("METADATA_ONLY_COMMIT self-validation FAILED — diff содержит правки вне whitelist:
+$(head -30 /tmp/kartonki-metaonly.log | sed 's/^/    /')
+Whitelist: {isFillInBlankSafe}. Любое другое поле → коммить без флага.")
+      fi
+    fi
+  fi
+
+  # 2a. Глобальные проверки (find_real_dupes) — всегда, включая METADATA_ONLY
   if ! python scripts/validate/find_real_dupes.py > /tmp/kartonki-global.log 2>&1; then
     ERRORS+=("find_real_dupes.py обнаружил глобальные нарушения:
 $(tail -40 /tmp/kartonki-global.log | sed 's/^/    /')
 Полный отчёт: python scripts/validate/find_real_dupes.py")
   fi
 
-  # 2b. Per-setId: только реально изменённые setIds (определяются скриптом)
-  ALL_SETIDS=$(for f in $CHANGED_WORDDATA; do
-    [ -f "$f" ] && python scripts/validate/changed_setids.py "$f" 2>/dev/null
-  done | sort -un)
+  # 2b. Per-setId: только реально изменённые setIds (определяются скриптом).
+  # Пропускается при METADATA_ONLY_ACTIVE=1 — коммит не меняет содержимое слов,
+  # проверять data-quality нет смысла. Уже активирующий self-validation выше
+  # гарантирует, что правки ограничены whitelisted полями.
+  if [ "$METADATA_ONLY_ACTIVE" = "1" ]; then
+    echo -e "    Per-setId валидация пропущена (METADATA_ONLY_COMMIT)"
+  else
+    ALL_SETIDS=$(for f in $CHANGED_WORDDATA; do
+      [ -f "$f" ] && python scripts/validate/changed_setids.py "$f" 2>/dev/null
+    done | sort -un)
 
-  if [ -n "$ALL_SETIDS" ]; then
-    SETID_COUNT=$(echo "$ALL_SETIDS" | wc -l)
-    echo -e "    Валидация ${SETID_COUNT} реально изменённых setIds"
-    for sid in $ALL_SETIDS; do
-      if ! bash scripts/validate/validate_all.sh "$sid" > /tmp/kartonki-set-${sid}.log 2>&1; then
-        ERRORS+=("validate_all.sh упал для setId=$sid:
+    if [ -n "$ALL_SETIDS" ]; then
+      SETID_COUNT=$(echo "$ALL_SETIDS" | wc -l)
+      echo -e "    Валидация ${SETID_COUNT} реально изменённых setIds"
+      for sid in $ALL_SETIDS; do
+        if ! bash scripts/validate/validate_all.sh "$sid" > /tmp/kartonki-set-${sid}.log 2>&1; then
+          ERRORS+=("validate_all.sh упал для setId=$sid:
 $(grep -E '❌|BLOCK' /tmp/kartonki-set-${sid}.log | head -10 | sed 's/^/    /')
 Детали: bash scripts/validate/validate_all.sh $sid")
-      fi
-    done
-  else
-    echo -e "    Изменения вне WordEntity-блоков (или пустой diff), per-setId валидация пропущена"
+        fi
+      done
+    else
+      echo -e "    Изменения вне WordEntity-блоков (или пустой diff), per-setId валидация пропущена"
+    fi
   fi
 
   # 2c. WordDataVersion.CURRENT bump — если меняются данные, версия должна расти
