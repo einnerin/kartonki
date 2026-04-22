@@ -99,5 +99,23 @@ object WordDataBadFixture {
             example = "The leakword made a mess.",
             exampleNative = "leakword всплыл некстати.",
             pos = "noun", semanticGroup = "bad_group_b"),
+
+        // 9. violate validate_blank_ambiguity FORM_MISMATCH — example использует
+        // множественную форму "formbreakers" при original="formbreaker" →
+        // UI сгенерирует уродливый пропуск "___s".
+        WordEntity(id = 999210, setId = 9992, languagePair = "en-ru", rarity = "COMMON",
+            original = "formbreaker", translation = "нарушитель-формы",
+            definition = "A singular noun that leaks its plural suffix into the UI blank.",
+            definitionNative = "Слово, у которого в примере стоит множественное число.",
+            example = "She placed three formbreakers on the kitchen counter yesterday.",
+            exampleNative = "Поставила три formbreakers на кухонную столешницу вчера.",
+            pos = "noun", semanticGroup = "bad_group_c"),
+        WordEntity(id = 999211, setId = 9992, languagePair = "en-ru", rarity = "COMMON",
+            original = "formbreakerpal", translation = "напарник-по-форме",
+            definition = "Sibling needed so bad_group_c has size two for group_sizes.",
+            definitionNative = "Напарник по группе для прохождения group_sizes.",
+            example = "The formbreakerpal stood quietly beside the wooden shelf.",
+            exampleNative = "formbreakerpal тихо стоял рядом с деревянной полкой.",
+            pos = "verb", semanticGroup = "bad_group_c"),
     )
 }

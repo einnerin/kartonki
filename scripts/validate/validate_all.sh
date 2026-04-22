@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Aggregated validator: runs all 7 checks on a given setId.
+# Aggregated validator: runs all 8 checks on a given setId.
 # Exit 0 only if all checks pass (warnings OK). Exit 1 if any blocks.
 set -u
 cd "$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
@@ -19,6 +19,7 @@ CHECKS=(
   "validate_rarity_spread.sh"
   "validate_no_duplicates.sh"
   "validate_no_cognates.sh"
+  "validate_blank_ambiguity.sh"
 )
 
 FAIL=0
@@ -38,7 +39,7 @@ done
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 if [ $FAIL -eq 0 ]; then
-  echo "✅ setId=$SETID: все 7 проверок пройдены"
+  echo "✅ setId=$SETID: все 8 проверок пройдены"
 else
   echo "❌ setId=$SETID: есть блокирующие нарушения (см. выше)"
 fi

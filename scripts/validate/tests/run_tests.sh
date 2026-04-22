@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Regression test for all 7 validators.
+# Regression test for all 8 validators.
 # Uses KARTONKI_DATA_DIR to point _parser at fixtures in this directory.
 #
 # Expects:
@@ -23,6 +23,7 @@ CHECKS=(
   "validate_rarity_spread"
   "validate_no_duplicates"
   "validate_no_cognates"
+  "validate_blank_ambiguity"
 )
 
 PASS=0

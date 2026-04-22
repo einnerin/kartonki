@@ -1,8 +1,13 @@
 package scripts.validate.tests
 
 // TEST FIXTURE — не импортируется в приложение.
-// Содержит валидный setId=9991 (6 слов) для регрессии validate_all.sh.
-// Все 7 валидаторов должны пройти без блокирующих ошибок (warning допустим).
+// Содержит валидный setId=9991 для регрессии validate_all.sh.
+// Все 8 валидаторов должны пройти без блокирующих ошибок (warning допустим).
+//
+// Слова подобраны так, чтобы внутри каждой semanticGroup длины original отличались
+// минимум на 4 символа — это «выключает» эвристику validate_blank_ambiguity
+// (порог similarity = ±3 символа). При добавлении новых слов сохраняй это
+// свойство, иначе good-фикстура начнёт падать на AMBIGUOUS_BLANK.
 
 import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.db.entity.WordSetEntity
@@ -18,47 +23,36 @@ object WordDataGoodFixture {
     )
 
     val words = listOf(
+        // test_fruits: fig (3) vs watermelon (10) — diff 7, не срабатывает ambiguity.
         WordEntity(id = 999101, setId = 9991, languagePair = "en-ru", rarity = "COMMON",
-            original = "fruit_a", translation = "фрукт-а",
-            definition = "A round red food you can eat.",
-            definitionNative = "Круглая красная еда, которую можно съесть.",
-            example = "I ate a fruit_a for breakfast today.",
-            exampleNative = "Съел fruit_a утром на завтрак.",
+            original = "fig", translation = "инжир",
+            definition = "A small round sweet food with tiny seeds inside.",
+            definitionNative = "Маленький круглый сладкий плод с мелкими семечками.",
+            example = "Grandma picked a ripe fig from the old garden tree.",
+            exampleNative = "Бабушка сорвала спелый fig со старого садового дерева.",
             pos = "noun", semanticGroup = "test_fruits"),
         WordEntity(id = 999102, setId = 9991, languagePair = "en-ru", rarity = "COMMON",
-            original = "fruit_b", translation = "фрукт-б",
-            definition = "A yellow soft food with thin skin.",
-            definitionNative = "Жёлтая мягкая еда с тонкой кожурой.",
-            example = "She peeled a fruit_b before eating it.",
-            exampleNative = "Она почистила fruit_b перед едой.",
+            original = "watermelon", translation = "арбуз",
+            definition = "A very big round green food with sweet red inside.",
+            definitionNative = "Очень большой круглый зелёный плод со сладкой красной мякотью.",
+            example = "We shared a huge watermelon at the summer family picnic.",
+            exampleNative = "Поделили огромный watermelon на летнем семейном пикнике.",
             pos = "noun", semanticGroup = "test_fruits"),
-        WordEntity(id = 999103, setId = 9991, languagePair = "en-ru", rarity = "COMMON",
-            original = "fruit_c", translation = "фрукт-ц",
-            definition = "A small dark purple sweet food.",
-            definitionNative = "Маленькая тёмно-фиолетовая сладкая еда.",
-            example = "He picked a fruit_c off the bush.",
-            exampleNative = "Сорвал fruit_c с куста.",
-            pos = "noun", semanticGroup = "test_fruits"),
+
+        // test_tools: axe (3) vs screwdriver (11) — diff 8, не срабатывает ambiguity.
+        WordEntity(id = 999103, setId = 9991, languagePair = "en-ru", rarity = "UNCOMMON",
+            original = "axe", translation = "топор",
+            definition = "A sharp metal tool on a long wooden handle for chopping.",
+            definitionNative = "Острый металлический инструмент на длинной ручке для рубки.",
+            example = "Dad kept a sharp axe by the woodpile all year.",
+            exampleNative = "Отец держал острый axe у поленницы весь год.",
+            pos = "noun", semanticGroup = "test_tools"),
         WordEntity(id = 999104, setId = 9991, languagePair = "en-ru", rarity = "UNCOMMON",
-            original = "tool_a", translation = "инструмент-а",
-            definition = "A sharp hand thing for cutting bread.",
-            definitionNative = "Острая ручная вещь для нарезания хлеба.",
-            example = "Grandma used a tool_a to slice the loaf.",
-            exampleNative = "Бабушка резала хлеб своим tool_a.",
-            pos = "noun", semanticGroup = "test_tools"),
-        WordEntity(id = 999105, setId = 9991, languagePair = "en-ru", rarity = "UNCOMMON",
-            original = "tool_b", translation = "инструмент-б",
-            definition = "A small hand device with sharp points.",
-            definitionNative = "Маленькое ручное устройство с острыми зубцами.",
-            example = "Use a tool_b to pick up the pasta.",
-            exampleNative = "Возьми tool_b, чтобы есть пасту.",
-            pos = "noun", semanticGroup = "test_tools"),
-        WordEntity(id = 999106, setId = 9991, languagePair = "en-ru", rarity = "UNCOMMON",
-            original = "tool_c", translation = "инструмент-ц",
-            definition = "A round deep dish for soup or salad.",
-            definitionNative = "Круглая глубокая посуда для супа или салата.",
-            example = "She filled a tool_c with hot soup.",
-            exampleNative = "Наполнила tool_c горячим супом.",
+            original = "screwdriver", translation = "отвёртка",
+            definition = "A hand tool with a long handle used for turning small bolts.",
+            definitionNative = "Ручной инструмент с длинной рукоятью для закручивания винтов.",
+            example = "My grandfather's old screwdriver still works perfectly today.",
+            exampleNative = "Старая screwdriver дедушки до сих пор работает отлично.",
             pos = "noun", semanticGroup = "test_tools"),
     )
 }
