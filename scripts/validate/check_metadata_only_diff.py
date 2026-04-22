@@ -106,6 +106,10 @@ def validate(diff_file: str | None = None) -> int:
             # Only enforce on seed data files; anything else will be caught
             # by the normal hook path.
             continue
+        if kt_file.endswith('WordDataVersion.kt'):
+            # Bumped by any data commit; version change is required-adjacent,
+            # not a content edit. Hook block 2c enforces the bump elsewhere.
+            continue
         if len(removed) != len(added):
             violations.append((
                 kt_file,

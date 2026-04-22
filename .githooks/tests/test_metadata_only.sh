@@ -77,6 +77,34 @@ else
   report_pass "Тест 2: правка definition + marker корректно заблокирована"
 fi
 
+# ── Test 2b: WordDataVersion bump alongside marker → accepted ──────────────
+# WordDataVersion.kt — особый файл: обязательный bump при любой правке данных,
+# не content-change. Должен быть вне скоупа metadata-only проверки.
+
+cat > "$TEST_DIR/diff_version.txt" <<'EOF'
+diff --git a/app/src/main/java/com/example/kartonki/data/WordDataEnglish.kt b/app/src/main/java/com/example/kartonki/data/WordDataEnglish.kt
+index abc..def 100644
+--- a/app/src/main/java/com/example/kartonki/data/WordDataEnglish.kt
++++ b/app/src/main/java/com/example/kartonki/data/WordDataEnglish.kt
+@@ -103,1 +103,1 @@
+-            exampleNative = "Наш dog..."),
++            exampleNative = "Наш dog...", isFillInBlankSafe = false),
+diff --git a/app/src/main/java/com/example/kartonki/data/WordDataVersion.kt b/app/src/main/java/com/example/kartonki/data/WordDataVersion.kt
+index 123..456 100644
+--- a/app/src/main/java/com/example/kartonki/data/WordDataVersion.kt
++++ b/app/src/main/java/com/example/kartonki/data/WordDataVersion.kt
+@@ -15,1 +15,1 @@
+-    const val CURRENT = 247
++    const val CURRENT = 248
+EOF
+
+if python scripts/validate/check_metadata_only_diff.py --diff-file "$TEST_DIR/diff_version.txt" > "$TEST_DIR/out2b.txt" 2>&1; then
+  report_pass "Тест 2b: WordDataVersion bump + marker-only прошёл (bump вне скоупа)"
+else
+  report_fail "Тест 2b: WordDataVersion bump не должен был блокировать"
+  cat "$TEST_DIR/out2b.txt" | sed 's/^/    /'
+fi
+
 # ── Test 3: METADATA_ONLY_COMMIT=1 without LARGE_COMMIT_OK=1 → hook guard ──
 # Replicates the bash guard from .githooks/pre-commit block 2, тестируем его
 # в изоляции (без запуска целого хука, который требует git-репо в состоянии
