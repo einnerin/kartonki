@@ -8,9 +8,15 @@ data class WordSetEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val name: String,
     val description: String = "",
+    // orderIndex исторический: колонка существует в DB, но запросы сортируют
+    // по `id`, а не по нему. В новых наборах можно опустить — дефолт 0. Все
+    // существующие 739 наборов имеют orderIndex == id (избыточно).
     val orderIndex: Int = 0,
     val languagePair: String = "en-ru",
     val isFavorite: Boolean = false,
     val topic: String = "",   // тема для группировки, напр. "Медицина"
-    val level: Int = 0,       // 0=не задан, 1=Основы, 2=Продвинутый, 3=Профессиональный
+    // level: 0=не задан, 1=основы (COMMON), 2=продвинутый (UNCOMMON),
+    // 3=углублённый (RARE), 4=профессиональный (EPIC), 5=носитель языка (LEGENDARY).
+    // См. docs/claude/word-sets.md.
+    val level: Int = 0,
 )
