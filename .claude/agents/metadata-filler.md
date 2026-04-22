@@ -11,11 +11,15 @@ tools: Read, Grep, Glob, Edit, Bash
 ## Зачем
 
 `QuizBuilder.pickDistractors` ранжирует «неверные варианты» по трём уровням:
-- **tier1** — same `pos` AND same `semanticGroup` (ближайшие, тематически однотипные)
-- **tier2** — same `pos` only (грамматически однотипные)
-- **tier3** — разные `pos` (запасной пул)
+- **sameSem** — same `pos` AND same `semanticGroup` (ближайшие, тематически однотипные)
+- **diffSem** — same `pos` only (грамматически однотипные, разная тема)
+- **diffPos** — разные `pos` (запасной пул)
 
-Без `pos` происходит деградация до полного random. `semanticGroup` — рефинация, которая поднимает близких по смыслу на первое место.
+Порядок различается по типу квиза (с Фазы 1 FILL_IN_BLANK pipeline, 2026-04-22):
+- **TRANSLATION / DEFINITION**: `sameSem + diffSem + diffPos` — близкие дистракторы первыми, квиз сложнее.
+- **FILL_IN_BLANK**: `diffSem + sameSem + diffPos` — далёкие первыми, меньше фрустрации.
+
+Без `pos` происходит деградация до полного random. `semanticGroup` — рефинация, которая поднимает/опускает близких по смыслу в зависимости от типа квиза. См. [`docs/claude/quality_standards_metadata.md`](../../docs/claude/quality_standards_metadata.md) и [`docs/claude/fill-in-blank-pipeline.md`](../../docs/claude/fill-in-blank-pipeline.md).
 
 `semanticGroup` также используется в `WordSetRepository.getDistractorExtras()` для подтягивания доп. дистракторов из БД по тематической близости.
 

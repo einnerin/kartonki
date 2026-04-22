@@ -202,7 +202,7 @@ git commit -m "$(cat <<'EOF'
 
 <1–2 строки описания — какие темы покрывает, особенности>
 
-Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>
 EOF
 )"
 git push origin main
