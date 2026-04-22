@@ -4,17 +4,15 @@
 
 Для возобновления работы: скопировать содержимое [`resume_prompt.md`](resume_prompt.md) в новый чат Claude.
 
-**Следующий чанк:** `WordDataEnglish.kt` **сеты 51–55** (baseline уже снят, см. раздел ниже).
+**Следующий чанк:** `WordDataEnglish.kt` **сеты 61–65**.
 
-**Полная оставшаяся очередь по `WordDataEnglish.kt` — 8 чанков:**
-1. 51–55  (следующий)
-2. 56–60
-3. 61–65
-4. 66–70
-5. 71–75
-6. 76–80
-7. 81–85
-8. 86, 88–89 (три setId; 87 уже закрыт коммитом 73b8acd)
+**Полная оставшаяся очередь по `WordDataEnglish.kt` — 6 чанков:**
+1. 61–65  (следующий)
+2. 66–70
+3. 71–75
+4. 76–80
+5. 81–85
+6. 86, 88–89 (три setId; 87 уже закрыт коммитом 73b8acd)
 
 **После завершения `WordDataEnglish.kt`:**
 1. `WordDataEnglishExpanded.kt` — задача **text-author** по чанкам (setId 200–249 + 87-ой в Expanded; 398 null-полей `definitionNative`/`exampleNative`). setId 0 пропускать — кросс-наборная подборка, не сет.
@@ -54,6 +52,8 @@
 - **WordDataEnglish.kt сеты 36–40** — ~200 правок + 125 перегруппировок (коммит 9e8b7b5)
 - **WordDataEnglish.kt сеты 41–45** — ~380 правок + 125 перегруппировок + fix missing fields 4213 «ideology» (коммит 412a9bc)
 - **WordDataEnglish.kt сеты 46–50** — ~390 правок + 125 перегруппировок (коммит 5978e44)
+- **WordDataEnglish.kt сеты 51–55** — ~290 правок + 125 перегруппировок (коммит 0dca1a9) — media, traits, psychology, risk, science B2
+- **WordDataEnglish.kt сеты 56–60** — ~500 правок + 125 перегруппировок (коммит ef5abe5) — social conflicts, social issues, governance, academic discourse, arts
 
 ### Инфраструктура качества
 - **Pre-commit hook расширен** (коммит eea7d1f): валидируются только реально изменённые setIds через `scripts/validate/changed_setids.py`. Chunked-работа на больших файлах разблокирована.
@@ -145,7 +145,7 @@ git stash pop    # применить
 
 ### Прогресс по WordDataEnglish.kt (обновлено 2026-04-22)
 
-**Закрыто (сеты 1-50 + 87):** все проходят 7 валидаторов.
+**Закрыто (сеты 1-60 + 87):** все проходят 8 валидаторов.
 - 1-5: давно (коммиты до сессии)
 - 6-10 + 87: 73b8acd (text-author заполнил 46 текстов для 23 слов setId 87)
 - 11-15: 7a90f97
@@ -156,8 +156,10 @@ git stash pop    # применить
 - 36-40: 9e8b7b5
 - 41-45: 412a9bc (+ починен 4213 «ideology»: missing definitionNative/exampleNative)
 - 46-50: 5978e44
+- 51-55: 0dca1a9
+- 56-60: ef5abe5
 
-**Осталось:** сеты **51-86, 88-89** (= ~37 setIds). Следующий чанк: **51-55**.
+**Осталось:** сеты **61-86, 88-89** (= ~27 setIds). Следующий чанк: **61-65**.
 
 **Baseline для 51-55** (получен в сессии 2026-04-22, перед паузой):
 - 51 (Публикации/СМИ, "publish", 5101-5125): 1 group 25, 2 text_lengths, тема в коде = media/journalism (в файле шире чем «Публикации» — broadcast/journalist/bias/circulation и т.п.)
