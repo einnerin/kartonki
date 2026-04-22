@@ -94,3 +94,15 @@ __pycache__/
 /coverage_*.txt
 /ANALYSIS_RESULTS.txt
 /same_roots.txt
+
+# Scratch files: any file starting with underscore inside scripts/ is ad-hoc
+# pilot data / test fixture / debug dump and must never be committed. This is
+# defence in depth against an accidental `git add -A` capturing them.
+scripts/**/_*
+
+# Session-local harness state
+.claude/scheduled_tasks.lock
+
+# General temp files
+*.tmp
+/tmp-*

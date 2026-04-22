@@ -249,6 +249,27 @@ def inject_exclusions(raw_bytes: bytes, exclusions_by_id: dict[int, list[int]]) 
 TOO_GENERIC_THRESHOLD = 8
 
 
+def bump_word_data_version() -> int | None:
+    """Increment WordDataVersion.CURRENT by 1. Required whenever any WordData*.kt
+    changes — otherwise WordLoader won't re-upsert the seed data on user devices.
+    Pre-commit hook blocks commits that change WordData*.kt without bumping.
+
+    Returns the new version, or None if the file wasn't found / couldn't be parsed.
+    """
+    version_file = ROOT / "WordDataVersion.kt"
+    if not version_file.exists():
+        return None
+    text = version_file.read_text(encoding="utf-8")
+    m = re.search(r"const val CURRENT\s*=\s*(\d+)", text)
+    if not m:
+        return None
+    old = int(m.group(1))
+    new = old + 1
+    new_text = text[:m.start(1)] + str(new) + text[m.end(1):]
+    version_file.write_text(new_text, encoding="utf-8")
+    return new
+
+
 def flip_safety_flag(set_words: list[dict], result: list[dict], dry_run: bool) -> tuple[int, int]:
     """Phase 3: flip isFillInBlankSafe=false → (default true) for words that
     now have usable exclusion lists. Leave form_mismatch and too-generic
@@ -406,9 +427,17 @@ def main() -> None:
         print(f"Phase 3: {flipped} words flipped to safe=true, "
               f"{kept} kept unsafe (form_mismatch or >= "
               f"{TOO_GENERIC_THRESHOLD} exclusions).", flush=True)
+        if flipped > 0:
+            new_ver = bump_word_data_version()
+            if new_ver is not None:
+                print(f"WordDataVersion.CURRENT bumped → {new_ver}", flush=True)
     elif args.apply:
         total = apply_to_files(set_words, result, dry_run=False)
         print(f"Applied: {total} exclusion fields injected.", flush=True)
+        if total > 0:
+            new_ver = bump_word_data_version()
+            if new_ver is not None:
+                print(f"WordDataVersion.CURRENT bumped → {new_ver}", flush=True)
     else:
         print(json.dumps(result, ensure_ascii=False, indent=2))
 
