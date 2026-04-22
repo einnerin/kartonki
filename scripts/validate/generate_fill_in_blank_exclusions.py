@@ -168,19 +168,125 @@ def load_set_words(set_id: int) -> list[dict]:
     return words
 
 
+# ── Byte-preserving injection into WordData*.kt ──────────────────────────────
+# Adapted from mark_ambiguous_blanks.py: walks each WordEntity block, tracks
+# paren depth while skipping string literals, injects the new field just before
+# the matching closing ')'. CRLF / LF preserved by working in bytes.
+
+_WORD_ENTITY_START = re.compile(rb"WordEntity\(\s*id\s*=\s*(\d+)")
+_WHITESPACE_BYTES = set(b" \t\n\r")
+
+
+def inject_exclusions(raw_bytes: bytes, exclusions_by_id: dict[int, list[int]]) -> tuple[bytes, int]:
+    """Return (new_bytes, injected_count). Each matching WordEntity block gets
+    `fillInBlankExclusions = listOf(<ids>)` inserted right before its closing
+    ')'. Idempotent: skips blocks that already contain `fillInBlankExclusions`.
+    """
+    out = bytearray()
+    pos = 0
+    injected = 0
+
+    while pos < len(raw_bytes):
+        m = _WORD_ENTITY_START.search(raw_bytes, pos)
+        if m is None:
+            out.extend(raw_bytes[pos:])
+            break
+        out.extend(raw_bytes[pos:m.start()])
+        wid = int(m.group(1))
+
+        open_paren_idx = raw_bytes.index(b"(", m.start())
+        depth = 1
+        i = open_paren_idx + 1
+        while i < len(raw_bytes) and depth > 0:
+            c = raw_bytes[i:i+1]
+            if c == b'"':
+                i += 1
+                while i < len(raw_bytes) and raw_bytes[i:i+1] != b'"':
+                    if raw_bytes[i:i+1] == b"\\" and i + 1 < len(raw_bytes):
+                        i += 2
+                    else:
+                        i += 1
+                i += 1
+                continue
+            if c == b"(":
+                depth += 1
+            elif c == b")":
+                depth -= 1
+                if depth == 0:
+                    break
+            i += 1
+        if depth != 0:
+            raise RuntimeError(f"Unbalanced parens at WordEntity(id={wid})")
+
+        close_paren_idx = i
+        block_bytes = raw_bytes[m.start():close_paren_idx + 1]
+
+        exc_ids = exclusions_by_id.get(wid)
+        if exc_ids and b"fillInBlankExclusions" not in block_bytes:
+            ids_part = ", ".join(f"{x}L" for x in sorted(exc_ids))
+            j = close_paren_idx - 1
+            while j > open_paren_idx and raw_bytes[j] in _WHITESPACE_BYTES:
+                j -= 1
+            has_trailing_comma = raw_bytes[j:j+1] == b","
+            marker = f" fillInBlankExclusions = listOf({ids_part})".encode() \
+                if has_trailing_comma \
+                else f", fillInBlankExclusions = listOf({ids_part})".encode()
+            out.extend(raw_bytes[m.start():close_paren_idx])
+            out.extend(marker)
+            out.extend(raw_bytes[close_paren_idx:close_paren_idx + 1])
+            injected += 1
+        else:
+            out.extend(block_bytes)
+
+        pos = close_paren_idx + 1
+
+    return bytes(out), injected
+
+
+def apply_to_files(set_words: list[dict], result: list[dict], dry_run: bool) -> int:
+    """Write fillInBlankExclusions into the WordData*.kt file(s) containing
+    the given set. Returns total injections applied (or would-apply in dry run).
+    """
+    exclusions_by_id: dict[int, list[int]] = {}
+    for entry in result:
+        if entry.get("form_mismatch"):
+            continue
+        ids = [e["id"] for e in entry.get("exclusions", [])]
+        if ids:
+            exclusions_by_id[entry["id"]] = ids
+
+    target_ids = {w["id"] for w in set_words}
+    total = 0
+    for kt in sorted(ROOT.glob("WordData*.kt")):
+        raw = kt.read_bytes()
+        # Quick check — does this file contain any of our target ids?
+        if not any(f"id = {tid}".encode() in raw for tid in target_ids):
+            continue
+        new_bytes, injected = inject_exclusions(raw, exclusions_by_id)
+        if injected == 0:
+            continue
+        print(f"  {kt.name}: {injected} injections", flush=True)
+        total += injected
+        if not dry_run:
+            kt.write_bytes(new_bytes)
+    return total
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--set-id", type=int, required=True)
     ap.add_argument("--llm-output", type=Path, required=False,
                     help="JSON file with LLM subagent output. If omitted, "
                          "treat LLM output as empty (safety net only).")
+    ap.add_argument("--apply", action="store_true",
+                    help="Write fillInBlankExclusions back into WordData*.kt. "
+                         "Default: only print the JSON result.")
     args = ap.parse_args()
 
     set_words = load_set_words(args.set_id)
 
     if args.llm_output:
         raw = args.llm_output.read_text(encoding="utf-8")
-        # Tolerate markdown fencing if present
         raw = re.sub(r"^```(?:json)?\s*", "", raw.strip())
         raw = re.sub(r"\s*```\s*$", "", raw)
         llm_entries = json.loads(raw)
@@ -188,7 +294,12 @@ def main() -> None:
         llm_entries = []
 
     result = apply_safety_net(llm_entries, set_words)
-    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+    if args.apply:
+        total = apply_to_files(set_words, result, dry_run=False)
+        print(f"Applied: {total} exclusion fields injected.", flush=True)
+    else:
+        print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":
