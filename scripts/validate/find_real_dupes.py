@@ -298,7 +298,11 @@ LEVEL_KEYWORDS = {1: "основ", 2: "продвинут", 3: "углублён
 
 def check_name_consistency(all_sets, staged_files):
     """
-    For staged sets:
+    Applies ONLY to built-in curated sets (those registered in WordRegistry).
+    Future UGC sets (isUserCreated = true) have free-form names and are
+    skipped by this check — see docs/claude/ugc-plan.md.
+
+    For staged built-in sets:
       - name must start with topic (e.g. topic="Медицина" → name="Медицина: ...")
       - level keyword in name must match level number (see LEVEL_KEYWORDS):
           level=1 → "основ", level=2 → "продвинут", level=3 → "углублён",

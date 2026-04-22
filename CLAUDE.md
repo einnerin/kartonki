@@ -29,6 +29,7 @@
 | **FILL_IN_BLANK exclusions (активная задача)** | [`docs/claude/fill-in-blank-pipeline.md`](docs/claude/fill-in-blank-pipeline.md) — защита квиза от неоднозначных дистракторов, pipeline LLM + safety net |
 | **Рефакторинг существующих наборов** | [`docs/claude/rework-plan.md`](docs/claude/rework-plan.md) — там прогресс старых задач |
 | Добавить / изменить набор слов | [`docs/claude/word-sets.md`](docs/claude/word-sets.md) |
+| Пользовательские наборы (UGC, будущая фича) | [`docs/claude/ugc-plan.md`](docs/claude/ugc-plan.md) — план, ещё не реализовано |
 | Добавить достижение | [`docs/claude/achievements.md`](docs/claude/achievements.md) |
 | Архитектура, модели, фазы, зависимости | [`docs/claude/architecture.md`](docs/claude/architecture.md) |
 | Изменить схему БД / добавить миграцию | [`docs/claude/database.md`](docs/claude/database.md) |
