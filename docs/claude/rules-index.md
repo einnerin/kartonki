@@ -41,6 +41,11 @@
 15. **Транслитерация обязательна для he-ru** — каждое he-ru слово имеет `transliteration`. Блокирующая проверка с 2026-04-23. Валидатор `check_transliteration_missing` в `find_real_dupes.py`.
 16. **Обязательные поля WordSetEntity и WordEntity** — 6 обязательных в WordSetEntity (id, name, description, languagePair, topic, level), 6+1 в WordEntity (+ transliteration для he-ru). `orderIndex` исторический, в новых наборах можно опустить. См. [`word-sets.md`](word-sets.md).
 
+16b. **Покрытие опциональных полей (2026-04-23 аудит) — известный техдолг.** Из 18 475 слов:
+    - ~63% без `definition`/`example` (нет FILL_IN_BLANK и DEFINITION-квизов)
+    - ~62% без `pos`/`semanticGroup` (дистракторы случайны)
+    Только ~37% базы (~6 760 слов) полностью заполнено. FILL_IN_BLANK pipeline (правило 17b) может работать только на заполненных наборах (~280 из 739). Заполнение skeleton-слов текстами — отдельный проект через агенты `text-author` + `metadata-filler`, не часть FILL_IN_BLANK pipeline.
+
 ### Мета
 
 17. **«Читай CLAUDE.md перед задачей»** — CLAUDE.md = фронт-дор, там таблица «задача → какой doc читать». Дальше — этот индекс правил. Если находишь новый «подводный камень» — добавляй в соответствующий doc и в этот индекс. См. `CLAUDE.md`.
