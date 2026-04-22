@@ -59,10 +59,12 @@ object QuizBuilder {
         }
 
         if ("fill_blank" in enabledTypes) {
-            // isFillInBlankSafe=false marks words whose example produces ambiguous or
-            // broken blanks (form mismatch → "___s", siblings in same semanticGroup
-            // fit equally well). We skip FILL_IN_BLANK for these — pickQuizType
-            // simply picks another type. See docs/claude/quality_standards_examples.md.
+            // isFillInBlankSafe=false now marks only the hopeless cases:
+            // form_mismatch (original != form in example → broken "___s" blank)
+            // and truly generic examples (exclusion list would span the whole set).
+            // Same-semanticGroup ambiguity is handled at runtime by
+            // fillInBlankExclusions, not by skipping the quiz entirely.
+            // See docs/claude/fill-in-blank-pipeline.md.
             //
             // Weight boost: added twice to the pool so FILL_IN_BLANK gets ~2/7 pick
             // probability (vs ~1/7 for each other type). Rationale: FILL_IN_BLANK is

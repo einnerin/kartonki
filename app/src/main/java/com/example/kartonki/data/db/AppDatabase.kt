@@ -359,8 +359,11 @@ abstract class AppDatabase : RoomDatabase() {
 
         /**
          * Adds isFillInBlankSafe column to the words table. Default 1 (true) — existing
-         * rows are assumed safe; the mass-mark script then flips to 0 for words with
-         * ambiguous / form-mismatch examples. See mark_ambiguous_blanks.py.
+         * rows are assumed safe. Historically the flag was flipped to 0 by
+         * scripts/validate/mark_ambiguous_blanks.py for any sibling-semantic-group
+         * neighbours; today that heuristic is superseded by the FILL_IN_BLANK
+         * exclusions pipeline (see docs/claude/fill-in-blank-pipeline.md), and the
+         * flag stays false only for form_mismatch and genuinely generic examples.
          */
         val MIGRATION_38_39 = object : Migration(38, 39) {
             override fun migrate(db: SupportSQLiteDatabase) {

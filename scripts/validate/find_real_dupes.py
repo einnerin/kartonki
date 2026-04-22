@@ -300,8 +300,9 @@ def check_name_consistency(all_sets, staged_files):
     """
     For staged sets:
       - name must start with topic (e.g. topic="Медицина" → name="Медицина: ...")
-      - level keyword in name must match level number:
-          level=1 → "основ", level=2 → "продвинут", level=3 → "профессионал"
+      - level keyword in name must match level number (see LEVEL_KEYWORDS):
+          level=1 → "основ", level=2 → "продвинут", level=3 → "углублён",
+          level=4 → "профессионал", level=5 → "носитель"
       - if multiple sets share (topic, lang, level), all names after the first
         must end with a space and number: "Медицина: основы 2", "Медицина: основы 3"
     """

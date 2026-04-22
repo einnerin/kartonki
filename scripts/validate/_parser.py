@@ -150,8 +150,10 @@ def parse_words(kt_file):
         lang = extract_field(block, 'languagePair')
         translation = extract_field(block, 'translation') or ""
         has_translit = bool(re.search(r'\btransliteration\s*=\s*"[^"]+"', block))
-        # isFillInBlankSafe — Boolean with default True. Only present in the DSL
-        # when explicitly set to false by scripts/validate/mark_ambiguous_blanks.py.
+        # isFillInBlankSafe — Boolean with default True. Present in the DSL when
+        # explicitly set to false (form_mismatch or too-generic examples); the
+        # new FILL_IN_BLANK pipeline's --flip-safety-flag removes it when
+        # fillInBlankExclusions make the word viable again.
         safe_m = re.search(r'\bisFillInBlankSafe\s*=\s*(true|false)\b', block)
         is_safe = True if safe_m is None else (safe_m.group(1) == "true")
         # fillInBlankExclusions — listOf(123L, 456L) of neighbor ids that also
