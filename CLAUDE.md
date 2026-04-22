@@ -26,6 +26,7 @@
 | **Подготовка релиза в Play Store (отложено)** | [`docs/claude/release-plan.md`](docs/claude/release-plan.md) — текущий статус + TODO для release-подготовки |
 | **Аналитика (работает, скелет для расширения)** | [`docs/claude/analytics-plan.md`](docs/claude/analytics-plan.md) — схема событий и архитектура |
 | **Переработка he-ru наборов (активная задача)** | [`docs/claude/he-ru-restructure-plan.md`](docs/claude/he-ru-restructure-plan.md) — **читать первым** |
+| **FILL_IN_BLANK exclusions (активная задача)** | [`docs/claude/fill-in-blank-pipeline.md`](docs/claude/fill-in-blank-pipeline.md) — защита квиза от неоднозначных дистракторов, pipeline LLM + safety net |
 | **Рефакторинг существующих наборов** | [`docs/claude/rework-plan.md`](docs/claude/rework-plan.md) — там прогресс старых задач |
 | Добавить / изменить набор слов | [`docs/claude/word-sets.md`](docs/claude/word-sets.md) |
 | Добавить достижение | [`docs/claude/achievements.md`](docs/claude/achievements.md) |

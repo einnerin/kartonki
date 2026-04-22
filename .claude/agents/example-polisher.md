@@ -51,12 +51,22 @@ tools: Read, Grep, Glob, Edit, Bash
 
 Для иврита правило мягче — форма может меняться по роду/числу/лицу/биньяну, но корень должен читаться и огласовки целевого слова сохраняются.
 
-### 2. Однозначность пропуска — критично
+### 2. Однозначность пропуска — желательная, не критичная
 
-В пропуск должно логично вставляться **только это слово**, не любой сосед по `semanticGroup`. Квиз берёт дистракторы в первую очередь из tier1 = `same pos AND same semanticGroup`, поэтому шаблонные примеры делают вопрос угадываемым только словарём.
+Раньше это было «железное» правило. Теперь (с 2026-04-22) runtime pipeline `fillInBlankExclusions` (см. `docs/claude/fill-in-blank-pipeline.md`) автоматически исключает ложных друзей из пула дистракторов. Твоя роль — **не делать хуже**, но страдать над «идеально однозначным» пропуском не нужно.
 
-**Плохо для `cookie`:** «I baked a batch of ___.» → подходят cookies, brownies, muffins, cupcakes — любое выпеченное лакомство.
-**Хорошо для `cookie`:** «My toddler grabbed a chocolate chip cookie from the jar.» → `chocolate chip` привязывает жёстко.
+**Плохо всегда** (переписывать обязательно):
+- «I saw a ___» — подходит вообще любое существительное, exclusion-список был бы 20+ слов.
+- «She bought some ___ yesterday» — генерик шаблон.
+- «I baked a batch of ___» для `cookie` — подходят cookies, brownies, muffins, cupcakes, любая выпечка.
+
+**Приемлемо** (переделывать не обязательно):
+- «Their ___ has three bedrooms» для `house` — apartment, cottage тоже подойдут. Это 2-3 конкретных соседа, pipeline их автоматически исключит из дистракторов.
+- «She ate an ___ for breakfast» для `apple` — orange, egg, ice cream подходят. Нормально.
+
+**Полезно, если легко добавить без натяжки**: якоря контекста (`chocolate chip cookie`, `scoop of ice cream`, `bowl of soup`).
+
+**После правки example** — pipeline exclusions для этого слова **и всех его соседей по набору** становится стейл. При массовой полировке сета — после завершения прогнать `scripts/validate/generate_fill_in_blank_exclusions.py` на затронутых наборах.
 
 **Плохо для `apple`:** «She ate a fresh ___.» → подошли бы orange, banana, pear.
 **Хорошо для `apple`:** «She bit into a crisp red apple from the orchard.» → `crisp red`, `orchard` привязывают.

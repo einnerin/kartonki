@@ -143,6 +143,24 @@ bash scripts/validate/validate_all.sh <newSetId>
 
 Только после **двух успешных валидаций подряд** (до и после полировщиков) — переходить к регистрации в WordRegistry и коммиту (шаги 8–11).
 
+### 7.5. FILL_IN_BLANK exclusions для нового набора
+
+После полировщиков и перед коммитом — сгенерировать `fillInBlankExclusions` для всех 25 слов нового набора. Это защита от «ложных дистракторов» в квизе FILL_IN_BLANK (подробно — `docs/claude/fill-in-blank-pipeline.md`).
+
+```bash
+# 1. Подготовить промпт для LLM subagent
+python scripts/validate/fill_in_blank_prompt.py --set-id <newSetId> > /tmp/prompt.md
+# 2. Скопировать содержимое в general-purpose subagent, получить JSON
+# 3. Прогнать через safety net (очистит Rule 1 нарушения, добавит пропущенных соседей same-semGroup)
+python scripts/validate/generate_fill_in_blank_exclusions.py \
+    --set-id <newSetId> \
+    --llm-output /tmp/subagent_out.json \
+    --apply
+# Скрипт сам внесёт Edit в WordData*.kt, добавив fillInBlankExclusions = listOf(...).
+```
+
+Для новых слов этот шаг **обязателен** — иначе квиз будет тянуть близких соседей как дистракторы, и игрок будет фрустрироваться.
+
 ### 7.5. Доп.диагностика (опционально)
 
 Если нужна картина по всей базе:

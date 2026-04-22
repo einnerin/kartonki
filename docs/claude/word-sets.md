@@ -56,6 +56,11 @@ WordEntity(
 )
 ```
 
+### Необязательные runtime-поля для FILL_IN_BLANK
+
+- **`fillInBlankExclusions: List<Long>`** — id слов того же набора, которые подходят в пропуск `example` этого слова (ложные друзья по блоку FILL_IN_BLANK). При создании набора оставлять пустым — заполняется pipeline-ом после фиксации набора. См. [`docs/claude/fill-in-blank-pipeline.md`](fill-in-blank-pipeline.md).
+- **`isFillInBlankSafe: Boolean = true`** — ставить `false` только для **form mismatch** (original не совпадает с формой в example — «egg» vs «eggs») или **объективно generic example** («I saw a ___»). Обычную ambiguity (apartment/cottage для house) теперь ловят `fillInBlankExclusions`, помечать такие слова unsafe больше не надо.
+
 - **Translation**: одно значение `"врач"`; разные значения через ` / ` (максимум 2): `"справедливость / правосудие"`; синонимы через `, ` (одно понятие): `"скачивание, загрузка"`.
 - **Два слова в наборе с одинаковым translation запрещены** — ученик путается. Если нужны синонимы (cite/refer), уточняй: `cite = "цитировать"`, `refer = "ссылаться / обращаться"`.
 
