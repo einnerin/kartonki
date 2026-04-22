@@ -109,12 +109,19 @@ def find_violations():
 # ── Byte-preserving injection ────────────────────────────────────────────────
 
 _WORD_ENTITY_START = re.compile(rb'WordEntity\(\s*id\s*=\s*(\d+)')
+_WHITESPACE_BYTES = set(b" \t\n\r")
+# Detect two commas separated only by whitespace — syntax error in Kotlin arg list.
+_DOUBLE_COMMA_PATTERN = re.compile(rb',\s*,')
 
 
 def inject_flag(raw_bytes: bytes, target_ids: set[int]) -> tuple[bytes, int]:
     """
     Return (new_bytes, injected_count). Each matching WordEntity block gets
-    `, isFillInBlankSafe = false` inserted right before its closing ')'.
+    `isFillInBlankSafe = false` inserted right before its closing ')'.
+
+    If the block already uses trailing-comma style (last non-whitespace char
+    before ')' is ','), the marker goes in without a leading comma. Otherwise
+    a leading comma is prepended. Either way the result is syntactically valid.
 
     Parens inside string literals are ignored. If the block already contains
     `isFillInBlankSafe`, it's left alone (idempotent).
@@ -128,7 +135,7 @@ def inject_flag(raw_bytes: bytes, target_ids: set[int]) -> tuple[bytes, int]:
         if m is None:
             out.extend(raw_bytes[pos:])
             break
-        # Copy everything up to (and including) the start of the block header.
+        # Copy everything up to the start of the block header.
         out.extend(raw_bytes[pos:m.start()])
         wid = int(m.group(1))
 
@@ -158,7 +165,6 @@ def inject_flag(raw_bytes: bytes, target_ids: set[int]) -> tuple[bytes, int]:
             i += 1
 
         if depth != 0:
-            # Malformed file — bail without modifying anything.
             raise RuntimeError(
                 f"Unbalanced parens starting at WordEntity(id={wid}) — aborting"
             )
@@ -167,9 +173,18 @@ def inject_flag(raw_bytes: bytes, target_ids: set[int]) -> tuple[bytes, int]:
         block_bytes = raw_bytes[m.start():close_paren_idx + 1]
 
         if wid in target_ids and b"isFillInBlankSafe" not in block_bytes:
-            # Emit block up to (not including) the ')', insert marker, then ')'.
+            # Walk backwards from ')' past whitespace; if the last significant
+            # char is ',' the DSL already ends with a trailing comma, so we
+            # skip the leading comma to avoid producing ", ," (syntax error).
+            j = close_paren_idx - 1
+            while j > open_paren_idx and raw_bytes[j] in _WHITESPACE_BYTES:
+                j -= 1
+            has_trailing_comma = raw_bytes[j:j+1] == b','
+            marker = b" isFillInBlankSafe = false" if has_trailing_comma \
+                else b", isFillInBlankSafe = false"
+
             out.extend(raw_bytes[m.start():close_paren_idx])
-            out.extend(b", isFillInBlankSafe = false")
+            out.extend(marker)
             out.extend(raw_bytes[close_paren_idx:close_paren_idx + 1])
             injected += 1
         else:
@@ -177,7 +192,20 @@ def inject_flag(raw_bytes: bytes, target_ids: set[int]) -> tuple[bytes, int]:
 
         pos = close_paren_idx + 1
 
-    return bytes(out), injected
+    new_bytes = bytes(out)
+    # Regression guard: if any injection produced ",,," or ",  ,", fail loudly
+    # so the caller never writes a syntactically-broken file. Compare against
+    # the original so we only flag *new* occurrences (legacy data is rare but
+    # legal in other contexts like DeckLevel.values()).
+    original_double_commas = len(_DOUBLE_COMMA_PATTERN.findall(raw_bytes))
+    new_double_commas = len(_DOUBLE_COMMA_PATTERN.findall(new_bytes))
+    if new_double_commas > original_double_commas:
+        raise RuntimeError(
+            f"Injection produced double-comma syntax: "
+            f"{new_double_commas - original_double_commas} new occurrence(s). Aborting."
+        )
+
+    return new_bytes, injected
 
 
 # ── Report ────────────────────────────────────────────────────────────────────
@@ -232,14 +260,21 @@ def main():
         target_ids_by_file[f].add(wid)
 
     per_file_written: dict[str, int] = {}
-    if args.apply:
-        for filename, ids in target_ids_by_file.items():
-            kt_path = ROOT / filename
-            raw = kt_path.read_bytes()
-            new_raw, n = inject_flag(raw, ids)
-            if n > 0:
-                kt_path.write_bytes(new_raw)
-            per_file_written[filename] = n
+    # Both modes run inject_flag on every affected file. In dry-run we throw
+    # away the result but keep the double-comma regression guard active, so
+    # syntax issues like the trailing-comma bug surface before --apply touches
+    # anything on disk.
+    for filename, ids in target_ids_by_file.items():
+        kt_path = ROOT / filename
+        raw = kt_path.read_bytes()
+        new_raw, n = inject_flag(raw, ids)
+        if args.apply and n > 0:
+            kt_path.write_bytes(new_raw)
+        per_file_written[filename] = n
+
+    if not args.apply:
+        print("✅ DRY-RUN simulation OK — no double-comma syntax produced in any file.")
+        print()
 
     print_report(flagged, args.apply, per_file_written)
     return 0
