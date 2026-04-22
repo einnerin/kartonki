@@ -14,16 +14,47 @@
 
 ## Железные правила
 
-### 1. Слово обязано присутствовать в предложении
-Без слова `original` квиз `FILL_IN_BLANK` не работает — упадёт на fallback. Если в предложении слова нет — это баг данных.
+### 1. Слово обязано присутствовать в ТОЙ ЖЕ ФОРМЕ, что и `original`
 
-Форма слова может быть изменена (для языков со спряжением/склонением), но **в предложении должна быть форма того же корня, что и `original`**.
+В `example` целевое слово должно стоять **буква-в-букву** так, как записано в поле `original`. Форма не меняется — ни множественное число, ни прошедшее время, ни герундий, ни любая другая словоформа.
+
+**Почему это критично.** В квизе `FILL_IN_BLANK` пропуск создаётся наивной заменой: `example.replace(original, "___")`. Если в `example` стоит инфлективная форма, а в `original` — базовая, то часть окончания «протекает» в UI:
+
+- `original = "cookie"`, `example = "She baked a batch of cookies and shared them."`
+- В UI пользователь видит: `She baked a batch of ___s and shared them.` ← **уродливый пропуск «___s»**.
+
+Плюс это автоматически делает пропуск **неоднозначным** (см. правило 2) — «batch of ___s» одинаково хорошо читается как cookies, brownies, muffins, cupcakes.
+
+**Плохо:**
+
+| original | example (плохо) | результат в UI |
+|---|---|---|
+| cookie | She baked a batch of **cookies** and shared them. | `... batch of ___s and shared ...` |
+| run    | He **ran** every morning before work. | `... he ___ran every morning ...` (fallback к translation-квизу) |
+| child  | The **children** played in the garden. | NOT_IN_EXAMPLE → fallback |
+
+**Хорошо:**
+
+| original | example (хорошо) |
+|---|---|
+| cookie | I baked a delicious **cookie** for my daughter's birthday. |
+| run    | Don't **run** in the hallway — it's slippery after the rain. |
+| child  | Every **child** in the class brought a homemade lunch. |
+
+**Единственное исключение — pluralia tantum** (слова, у которых в языке нет единственного числа): `scissors`, `trousers`, `pants`, `jeans`, `shorts`, `glasses`, `sunglasses`, `goggles`, `pajamas`, `clothes`, `headphones`, `binoculars`, `tongs`, `tweezers`, `pliers`, `scales`, `belongings`, `surroundings`, `stairs`. Для них `original` сам по себе во множественном числе — форма уже совпадает.
+
+Для иврита правило чуть мягче (морфология богаче): форма может меняться по роду/числу/биньяну, но корень должен явно читаться и огласовки целевого слова сохраняются.
 
 ### 2. Однозначность пропуска
-В пропуск должно логично вставляться **именно это слово**, а не синоним. Если в пропуск так же хорошо подходит «house» и «home», или «пошёл» и «поехал» — предложение плохое.
+В пропуск должно логично вставляться **именно это слово**, а не синоним и не любое другое слово из той же семантической группы. Это критично: квиз подбирает дистракторы в первую очередь из `semanticGroup` целевого слова (tier1 в `QuizBuilder.pickDistractors`), поэтому если пример шаблонный, дистракторы подходят грамматически → правильный ответ угадывается только словарём, а не контекстом.
 
-**Плохо для слова `house`:** «I bought a new ___ yesterday.» (подошло бы car, phone, bike...)
-**Хорошо:** «Their ___ has three bedrooms and a small garden.»
+**Плохо для слова `house`:** «I bought a new ___ yesterday.» (подошло бы car, phone, bike, house, computer — любое существительное)
+**Хорошо:** «Their ___ has three bedrooms and a small garden.» (только house/apartment)
+
+**Плохо для слова `cookie`:** «I baked a batch of ___.» (подошло бы cookies, brownies, muffins, cupcakes)
+**Хорошо для `cookie`:** «My toddler grabbed a chocolate chip cookie from the jar.» (chocolate chip жёстко привязывает к cookie)
+
+Правило применяется к примерам одного setId с одинаковой `semanticGroup` и `pos`: пробегись глазами по соседям в группе и убедись, что ни один из них не лёг бы в твой пропуск естественно. Если лёг бы — переделывай.
 
 ### 3. Длина и структура
 - **Максимум 12 слов** в предложении
@@ -132,8 +163,9 @@
 
 ## Самопроверка перед сохранением
 
-- [ ] Целевое слово присутствует (или его форма с тем же корнем)
-- [ ] В пропуск однозначно подходит именно это слово
+- [ ] Целевое слово присутствует **буква-в-букву как в `original`** (кроме pluralia tantum)
+- [ ] Пропуск не создаёт «___s» / «___ed» / «___ing» в UI
+- [ ] В пропуск однозначно подходит именно это слово (соседи по `semanticGroup` не подходят)
 - [ ] ≤ 12 слов, ≤ 80 символов (иврит ≤ 70)
 - [ ] Одно предложение, грамматически полное
 - [ ] Естественная речь — не переводная калька, не канцелярит
