@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Определяет список setIds, реально изменённых в staged-файле.
+Определяет список setIds, реально изменённых в указанном файле.
 
 Алгоритм:
-1. Берём unified=0 diff от git diff --cached <file>
+1. Берём unified=0 diff (режим зависит от --base):
+   - без --base: git diff --cached <file> (staged vs HEAD) — для pre-commit hook
+   - с --base=REF: git diff REF HEAD <file> — для CI (push на main, PR)
 2. Для каждого hunk извлекаем диапазон изменённых строк (в новой версии)
-3. В итоговом файле (HEAD + staged) находим все WordEntity-блоки и их setIds
+3. В итоговом файле (staged или HEAD) находим все WordEntity-блоки и их setIds
 4. Пересекаем: если диапазон изменённых строк пересекается с блоком WordEntity — его setId идёт в результат
 
 Использование:
     python scripts/validate/changed_setids.py <path/to/WordData*.kt>
+    python scripts/validate/changed_setids.py --base=<ref> <path>
 
 Выведет список setId по одному на строку (sorted unique).
 
@@ -27,13 +30,19 @@ from pathlib import Path
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", newline="\n")
 
 
-def staged_hunk_ranges(file_path: str):
+def staged_hunk_ranges(file_path: str, base: str = None):
     """
-    Возвращает list[(new_start, new_end)] — диапазоны изменённых строк в новой (staged) версии файла.
+    Возвращает list[(new_start, new_end)] — диапазоны изменённых строк.
+    Если base is None — сравнение со staged (pre-commit use case).
+    Если base задан — сравнение между base..HEAD (CI use case).
     """
+    if base:
+        cmd = ["git", "diff", "--unified=0", f"{base}..HEAD", "--", file_path]
+    else:
+        cmd = ["git", "diff", "--cached", "--unified=0", "--", file_path]
     try:
         diff = subprocess.check_output(
-            ["git", "diff", "--cached", "--unified=0", "--", file_path],
+            cmd,
             text=True,
             encoding="utf-8",
             errors="replace",
@@ -55,21 +64,37 @@ def staged_hunk_ranges(file_path: str):
     return ranges
 
 
-def staged_file_content(file_path: str) -> str:
-    """Возвращает содержимое файла как оно будет после коммита (staged version)."""
-    try:
-        return subprocess.check_output(
-            ["git", "show", f":{file_path}"],
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-        )
-    except subprocess.CalledProcessError:
-        # Файл новый? Тогда берём с диска
+def staged_file_content(file_path: str, base: str = None) -> str:
+    """Возвращает содержимое файла.
+    Если base задан (CI) — берём HEAD-версию (файл уже закоммичен).
+    Иначе — staged-версию (pre-commit hook).
+    """
+    ref = "HEAD" if base else ""
+    if ref:
         try:
-            return Path(file_path).read_text(encoding="utf-8", errors="replace")
-        except Exception:
-            return ""
+            return subprocess.check_output(
+                ["git", "show", f"{ref}:{file_path}"],
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+            )
+        except subprocess.CalledProcessError:
+            pass
+    else:
+        try:
+            return subprocess.check_output(
+                ["git", "show", f":{file_path}"],
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+            )
+        except subprocess.CalledProcessError:
+            pass
+    # Fallback: читаем с диска
+    try:
+        return Path(file_path).read_text(encoding="utf-8", errors="replace")
+    except Exception:
+        return ""
 
 
 def wordentity_blocks(content: str):
@@ -122,14 +147,22 @@ def wordentity_blocks(content: str):
 
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: changed_setids.py <WordData*.kt>", file=sys.stderr)
+    args = sys.argv[1:]
+    base = None
+    positional = []
+    for a in args:
+        if a.startswith("--base="):
+            base = a[len("--base="):]
+        else:
+            positional.append(a)
+    if len(positional) != 1:
+        print("Usage: changed_setids.py [--base=<ref>] <WordData*.kt>", file=sys.stderr)
         sys.exit(2)
-    file_path = sys.argv[1]
-    hunks = staged_hunk_ranges(file_path)
+    file_path = positional[0]
+    hunks = staged_hunk_ranges(file_path, base=base)
     if not hunks:
         return 0
-    content = staged_file_content(file_path)
+    content = staged_file_content(file_path, base=base)
     if not content:
         return 0
     blocks = wordentity_blocks(content)

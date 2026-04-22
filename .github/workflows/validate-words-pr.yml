@@ -64,18 +64,34 @@ jobs:
           echo "No WordData changes. Validators changed — global audit not required for PR."
           echo "Use validate-words-health workflow for a full base audit."
 
-      - name: Extract all setIds in changed files
+      - name: Extract REAL-ONLY changed setIds in changed files
         if: steps.files.outputs.count != '0'
         id: setids
         run: |
+          BASE="${{ steps.base.outputs.ref }}"
+          # Target: только реально изменённые setIds, определяются по диапазонам
+          # diff-строк с пересечением WordEntity-блоков. Legacy-setIds в тех же
+          # файлах, которые не трогались, не должны попадать в валидацию.
           SETIDS=$(while read -r f; do
-            [ -n "$f" ] && [ -f "$f" ] && grep -oE '\bsetId = [0-9]+' "$f" | grep -oE '[0-9]+'
+            [ -n "$f" ] && [ -f "$f" ] && \
+              python scripts/validate/changed_setids.py --base="$BASE" "$f"
           done < /tmp/changed-files | sort -un)
           echo "$SETIDS" > /tmp/setids
-          echo "count=$(echo "$SETIDS" | grep -c . || true)" >> "$GITHUB_OUTPUT"
+          COUNT=$(echo "$SETIDS" | grep -c . || true)
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "Changed setIds: $COUNT"
+          if [ "$COUNT" -gt 0 ]; then
+            echo "$SETIDS" | sed 's/^/  /'
+          fi
+
+      - name: Skip if no setIds actually changed
+        if: steps.files.outputs.count != '0' && steps.setids.outputs.count == '0'
+        run: |
+          echo "Files were touched but no setIds actually changed (header/import/comment-only edits)."
+          echo "Per-setId validation skipped."
 
       - name: Run validate_all on each changed setId
-        if: steps.files.outputs.count != '0'
+        if: steps.setids.outputs.count != '0'
         run: |
           FAIL=0
           while read -r sid; do
@@ -97,7 +113,7 @@ jobs:
           echo "✅ All changed setIds pass validation."
 
       - name: Run find_real_dupes.py (global)
-        if: steps.files.outputs.count != '0'
+        if: steps.setids.outputs.count != '0'
         run: python scripts/validate/find_real_dupes.py
 
       - name: Run fixture tests
