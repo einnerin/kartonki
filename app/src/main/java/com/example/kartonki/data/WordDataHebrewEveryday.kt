@@ -32,7 +32,7 @@ object WordDataHebrewEveryday {
 
         WordEntity(
             id = 100401, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interj", semanticGroup = "greeting", transliteration = "boker tov",
+            pos = "interjection", semanticGroup = "greeting", transliteration = "boker tov",
             original = "בֹּקֶר טוֹב", translation = "доброе утро",
             definition = "ברכת בֹּקֶר הנאמרת בתחילת היום.",
             definitionNative = "Утреннее приветствие, употребляемое в начале дня.",
@@ -41,7 +41,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100402, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interj", semanticGroup = "greeting", transliteration = "toda",
+            pos = "interjection", semanticGroup = "greeting", transliteration = "toda",
             original = "תּוֹדָה", translation = "спасибо",
             definition = "מִלָּה לְהַבִּיע הַכָּרַת תּוֹדָה לְמִישֶׁהוּ.",
             definitionNative = "Слово для выражения признательности.",
@@ -50,7 +50,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100403, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interj", semanticGroup = "greeting", transliteration = "bevakasha",
+            pos = "interjection", semanticGroup = "greeting", transliteration = "bevakasha",
             original = "בְּבַקָּשָׁה", translation = "пожалуйста",
             definition = "ביטוי מנומס בְּעֵת בַּקָּשָׁה אוֹ קַבָּלַת תּוֹדָה.",
             definitionNative = "Вежливое слово при просьбе или в ответ на благодарность.",
@@ -59,7 +59,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100404, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interj", semanticGroup = "greeting", transliteration = "ken",
+            pos = "interjection", semanticGroup = "greeting", transliteration = "ken",
             original = "כֵּן", translation = "да",
             definition = "תְּשׁוּבָה חִיּוּבִית לְשְׁאֵלָה.",
             definitionNative = "Положительный ответ на вопрос.",
@@ -68,7 +68,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100405, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interj", semanticGroup = "greeting", transliteration = "lo",
+            pos = "interjection", semanticGroup = "greeting", transliteration = "lo",
             original = "לֹא", translation = "нет",
             definition = "תְּשׁוּבָה שְׁלִילִית לְשְׁאֵלָה.",
             definitionNative = "Отрицательный ответ на вопрос.",
@@ -77,7 +77,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100406, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interj", semanticGroup = "greeting", transliteration = "slicha",
+            pos = "interjection", semanticGroup = "greeting", transliteration = "slicha",
             original = "סְלִיחָה", translation = "извините",
             definition = "ביטוי סְלִיחָה אוֹ בַּקָּשַׁת תְּשׂוּמַת לֵב.",
             definitionNative = "Слово для извинения или привлечения внимания.",
@@ -122,7 +122,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100411, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "identity", transliteration = "shem",
+            pos = "noun", semanticGroup = "communication", transliteration = "shem",
             original = "שֵׁם", translation = "имя",
             definition = "מִלָּה שֶׁמַּגְדִּירָה אֶת זֶהוּת אָדָם.",
             definitionNative = "Слово, определяющее личность человека.",
@@ -131,7 +131,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100412, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "pron", semanticGroup = "question_word", transliteration = "mi",
+            pos = "pronoun", semanticGroup = "question_word", transliteration = "mi",
             original = "מִי", translation = "кто",
             definition = "מִלַּת שְׁאֵלָה לְזִיהוּי אָדָם.",
             definitionNative = "Вопросительное слово для определения личности.",
@@ -140,7 +140,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100413, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "pron", semanticGroup = "question_word", transliteration = "ma",
+            pos = "pronoun", semanticGroup = "question_word", transliteration = "ma",
             original = "מָה", translation = "что",
             definition = "מִלַּת שְׁאֵלָה לְגַבֵּי דָּבָר אוֹ מַצָּב.",
             definitionNative = "Вопросительное слово о предмете или ситуации.",

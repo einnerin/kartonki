@@ -12,13 +12,19 @@
 В `QuizBuilder.pickDistractors` (`app/src/main/java/com/example/kartonki/domain/quiz/QuizBuilder.kt`) дистракторы квиза ранжируются по трём уровням семантической близости:
 
 ```
-tier1 = same pos AND same semanticGroup (ближайшие, правдоподобные близнецы)
-tier2 = same pos only (грамматически однотипные)
-tier3 = разные pos (запасной пул)
-распределение = tier1 ++ tier2 ++ tier3, берутся первые 3 для квиза
+sameSem = same pos AND same semanticGroup (ближайшие, правдоподобные близнецы)
+diffSem = same pos only (грамматически однотипные, разная тема)
+diffPos = разные pos (запасной пул)
 ```
 
-Если `pos` или `semanticGroup` пустые/неконсистентные — дистракторы деградируют до случайного сэмпла, квиз становится слишком лёгким. Тот же механизм работает в `PvpGameLogic.kt` и в `WordSetRepository.getDistractorExtras()` (подтягивает кросс-сетовые дистракторы по `semanticGroup` в малых сессиях).
+Порядок различается по типу квиза (с Фазы 1 FILL_IN_BLANK pipeline, 2026-04-22):
+
+| Тип квиза | Порядок | Цель |
+|-----------|---------|------|
+| TRANSLATION, DEFINITION (и все определения) | `sameSem + diffSem + diffPos` | Близкие дистракторы = сложнее квиз, игрок должен знать тонкие оттенки |
+| FILL_IN_BLANK | `diffSem + sameSem + diffPos` | Далёкие дистракторы = меньше фрустрации («все варианты правильно встают в пропуск»). Близких дополнительно фильтрует поле `fillInBlankExclusions`; см. [`fill-in-blank-pipeline.md`](fill-in-blank-pipeline.md) |
+
+Если `pos` или `semanticGroup` пустые/неконсистентные — дистракторы деградируют до случайного сэмпла, **оба** типа квизов становятся слишком лёгкими. Тот же механизм работает в `PvpGameLogic.kt` и в `WordSetRepository.getDistractorExtras()` (подтягивает кросс-сетовые дистракторы по `semanticGroup` в малых сессиях).
 
 ## Железные правила
 
@@ -41,7 +47,7 @@ tier3 = разные pos (запасной пул)
 
 **Запрещённые короткие формы:** `adj`, `adv`, `interj`, `pron`. Причина: `QuizBuilder.pickDistractors` использует strict equality (`it.pos == word.pos`), и слово с `pos="adj"` не матчится со словом `pos="adjective"` даже при одинаковой semanticGroup — tier1 разваливается.
 
-**Существующий технический долг (2026-04-22):** 6 слов с `pos="interj"` и 2 слова с `pos="pron"`. Валидатор будет блокировать новые слова с этими формами; нормализация старых — отдельная мелкая задача (`sed -i 's/pos = "interj"/pos = "interjection"/g'`).
+**Статус нормализации (2026-04-23):** всё чисто — 0 слов с короткими формами. Последняя партия (6 `interj` + 2 `pron` в `WordDataHebrewEveryday.kt`) выпилена sed-заменой. Валидатор `validate_pos_values.sh` блокирует регрессии.
 
 **Как выбрать pos для неоднозначного слова:**
 - Словарная форма (`original`) в словаре даётся как глагол (*to swim*) → `verb`; как существительное (*swimming* «плавание») → `noun`.
@@ -124,7 +130,7 @@ grep -hoE 'semanticGroup = "[^"]+"' app/src/main/java/com/example/kartonki/data/
 - ❌ `city_and_urban_*` — слишком длинно
 - ✅ `city_*` — кратко и ясно
 
-### Существующие префиксы (2026-04-22)
+### Существующие префиксы (2026-04-23)
 
 Топ-15 по частоте использования:
 
@@ -132,19 +138,28 @@ grep -hoE 'semanticGroup = "[^"]+"' app/src/main/java/com/example/kartonki/data/
 |---------|------|------|
 | `law` | 200 | Право |
 | `family` | 170 | Семья |
+| `food` | 168 | Еда |
 | `transport` | 150 | Транспорт |
 | `city` | 150 | Город |
-| `food` | 143 | Еда |
 | `weather` | 131 | Погода |
-| `nature` | 125 | Природа |
-| `social` | 124 | Социальное |
 | `home` | 122 | Дом |
-| `business` | 117 | Бизнес |
+| `business` | 116 | Бизнес |
+| `nature` | 114 | Природа |
 | `work` | 100 | Работа (общее) |
-| `technology` | 100 | Технологии |
 | `sport` | 100 | Спорт |
-| `arch` | 100 | Архитектура |
+| `society` | 100 | Социальное (раньше `social`) |
+| `science` | 100 | Наука |
+| `arch` | 100 | Архитектура (старая форма; см. примечание) |
 | `advanced` | 100 | Legacy (не использовать для нового) |
+
+**Примечание про `arch` / `architecture`:** есть оба префикса одновременно — `arch` (100 слов, старая короткая форма) и `architecture` (91 слово, новая длинная форма). Консолидация в одну конвенцию — отложенная мелкая задача. Для нового контента использовать `architecture`.
+
+Для актуальных данных в любой момент:
+
+```bash
+grep -hoE 'semanticGroup = "[^"]+"' app/src/main/java/com/example/kartonki/data/WordData*.kt \
+  | sed 's/semanticGroup = //; s/"//g' | awk -F'_' '{print $1}' | sort | uniq -c | sort -rn | head -20
+```
 
 ## Самопроверка перед коммитом
 

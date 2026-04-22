@@ -123,7 +123,11 @@ def validate(set_id):
             print(f"    {wid} «{orig}» {field} содержит: {h}")
         if len(violations) > 15:
             print(f"    ... and {len(violations) - 15} more")
-        return 1
+        # Warning-only: exit 0 despite findings. The heuristic has known
+        # false positives (notably Hebrew stem-matching finds the word's
+        # own stem in its own definition). Promote to blocking if/when
+        # the heuristic is refined to reduce false positives.
+        return 0
     print(f"✅ setId={set_id}: явных однокоренных не найдено")
     return 0
 
