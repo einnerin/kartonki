@@ -66,6 +66,7 @@ class WordSetRepository @Inject constructor(
         definitionNative = definitionNative,
         exampleNative = exampleNative,
         isFillInBlankSafe = isFillInBlankSafe,
+        fillInBlankExclusions = fillInBlankExclusions,
     )
 
     /** Fetches word counts for many sets in one query, keyed by setId. */

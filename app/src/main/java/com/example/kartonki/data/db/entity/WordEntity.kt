@@ -14,11 +14,16 @@ import androidx.room.PrimaryKey
  * user receives regardless of their study progress. Marked in seed data; used by
  * CollectionRepository to build a deterministic, identical starter set for all users.
  *
- * [isFillInBlankSafe] — false for words whose `example` produces an ambiguous or
- * broken FILL_IN_BLANK blank (form mismatch creates "___s", or siblings in the
- * same semanticGroup fit the blank equally well). QuizBuilder skips this type
- * for unsafe words. Default true; unsafe words are marked in seed data by
- * scripts/validate/mark_ambiguous_blanks.py.
+ * [isFillInBlankSafe] — false for words whose `example` cannot be disambiguated
+ * at all (e.g. "I saw a ___" — any noun fits). QuizBuilder skips this type for
+ * unsafe words. Default true. For the ordinary case where a few specific words
+ * would also fit the blank, use [fillInBlankExclusions] instead.
+ *
+ * [fillInBlankExclusions] — IDs of other words in the same set whose meaning
+ * also fits this word's example sentence. QuizBuilder removes them from the
+ * distractor pool for FILL_IN_BLANK quiz, so the player never sees a distractor
+ * that would also have been correct. Populated by the LLM labeling pipeline
+ * (see docs/claude/fill-in-blank-pipeline.md).
  */
 @Entity(
     tableName = "words",
@@ -40,4 +45,5 @@ data class WordEntity(
     val transliteration: String? = null,
     val isDefaultPvpCard: Boolean = false,   // part of the fixed starter PvP collection
     val isFillInBlankSafe: Boolean = true,   // false → skip this word in FILL_IN_BLANK quiz
+    val fillInBlankExclusions: List<Long> = emptyList(), // IDs of words that also fit this example's blank
 )

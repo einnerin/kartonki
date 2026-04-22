@@ -118,7 +118,8 @@ object QuizBuilder {
                 val sentence = raw.replace(word.original, "_____", ignoreCase = true)
                 // If the word doesn't appear in the sentence, the blank cannot be created → fallback
                 if (sentence == raw) return fallbackTranslation(word, distractorPool)
-                val wrongs = others.take(3).map { it.original }
+                val fillBlankDistractors = pickDistractors(word, distractorPool, forFillInBlank = true)
+                val wrongs = fillBlankDistractors.take(3).map { it.original }
                 if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = sentence,
                     options = (wrongs + word.original).shuffled(),
@@ -128,18 +129,35 @@ object QuizBuilder {
     }
 
     /**
-     * Returns distractor words ranked by semantic proximity:
-     *  Tier 1 — same pos AND semanticGroup (closest)
+     * Returns distractor words ranked by semantic proximity.
+     *
+     * Default order (TRANSLATION, DEFINITION): closest first — makes the quiz harder.
+     *  Tier 1 — same pos AND semanticGroup (closest, trickiest distractors)
      *  Tier 2 — same pos only
      *  Tier 3 — everything else
+     *
+     * When [forFillInBlank] is true, tiers 1 and 2 swap: far distractors come first.
+     * This avoids picking distractors that would also grammatically and semantically
+     * fit the blank in the example sentence. Additionally, any word whose id is in
+     * `word.fillInBlankExclusions` is removed upfront — these are words the LLM
+     * labeling pass identified as able to fit this word's example.
      */
-    internal fun pickDistractors(word: Word, allWords: List<Word>): List<Word> {
-        val candidates = allWords.filter { it.id != word.id && it.languagePair == word.languagePair }
+    internal fun pickDistractors(
+        word: Word,
+        allWords: List<Word>,
+        forFillInBlank: Boolean = false,
+    ): List<Word> {
+        val excludedIds = if (forFillInBlank) word.fillInBlankExclusions.toSet() else emptySet()
+        val candidates = allWords.filter {
+            it.id != word.id &&
+                it.languagePair == word.languagePair &&
+                it.id !in excludedIds
+        }
         if (word.pos == null && word.semanticGroup == null) return candidates.shuffled()
-        val tier1 = candidates.filter { it.pos == word.pos && it.semanticGroup == word.semanticGroup }.shuffled()
-        val tier2 = candidates.filter { it.pos == word.pos && it.semanticGroup != word.semanticGroup }.shuffled()
-        val tier3 = candidates.filter { it.pos != word.pos }.shuffled()
-        return tier1 + tier2 + tier3
+        val sameSem = candidates.filter { it.pos == word.pos && it.semanticGroup == word.semanticGroup }.shuffled()
+        val diffSem = candidates.filter { it.pos == word.pos && it.semanticGroup != word.semanticGroup }.shuffled()
+        val diffPos = candidates.filter { it.pos != word.pos }.shuffled()
+        return if (forFillInBlank) diffSem + sameSem + diffPos else sameSem + diffSem + diffPos
     }
 
     internal fun fallbackTranslation(word: Word, allWords: List<Word>): StudyStep.Quiz {

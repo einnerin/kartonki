@@ -22,11 +22,12 @@ class QuizBuilderTest {
         example: String? = "I see a word$id here.",
         exampleNative: String? = "Я вижу word$id здесь.",
         isFillInBlankSafe: Boolean = true,
+        fillInBlankExclusions: List<Long> = emptyList(),
     ) = Word(
         id = id, original = original, translation = translation, rarity = Rarity.COMMON,
         pos = pos, semanticGroup = semanticGroup, definition = definition,
         definitionNative = definitionNative, example = example, exampleNative = exampleNative,
-        isFillInBlankSafe = isFillInBlankSafe,
+        isFillInBlankSafe = isFillInBlankSafe, fillInBlankExclusions = fillInBlankExclusions,
     )
 
     /** 20 fully-populated words — enough for all quiz types. */
@@ -184,6 +185,70 @@ class QuizBuilderTest {
         val distractors = QuizBuilder.pickDistractors(noPosWord, all)
         assertEquals("Should have all other words as distractors", others.size, distractors.size)
         assertTrue("Should not include the word itself", distractors.none { it.id == noPosWord.id })
+    }
+
+    // ── FILL_IN_BLANK-specific distractor behaviour ────────────────────────────
+
+    @Test fun `FILL_IN_BLANK prefers different-semanticGroup distractors first (inverted tier order)`() {
+        val target = makeWord(1, pos = "noun", semanticGroup = "housing")
+        val sameGroup  = (2L..5L).map { makeWord(it, pos = "noun", semanticGroup = "housing") }
+        val otherGroup = (6L..9L).map { makeWord(it, pos = "noun", semanticGroup = "food") }
+        val all        = listOf(target) + sameGroup + otherGroup
+
+        val distractors = QuizBuilder.pickDistractors(target, all, forFillInBlank = true)
+        val firstFour   = distractors.take(4).map { it.id }.toSet()
+        val otherGroupIds = otherGroup.map { it.id }.toSet()
+        assertEquals("For FILL_IN_BLANK, first 4 distractors must come from a different semanticGroup",
+            otherGroupIds, firstFour)
+    }
+
+    @Test fun `fillInBlankExclusions are removed from distractor pool`() {
+        val excludedId = 2L
+        val target = makeWord(1, pos = "noun", semanticGroup = "housing",
+            fillInBlankExclusions = listOf(excludedId))
+        val excluded = makeWord(excludedId, pos = "noun", semanticGroup = "housing")
+        val others   = (3L..8L).map { makeWord(it, pos = "noun", semanticGroup = "food") }
+        val all      = listOf(target, excluded) + others
+
+        val distractors = QuizBuilder.pickDistractors(target, all, forFillInBlank = true)
+        assertTrue("Excluded word must not appear as a FILL_IN_BLANK distractor",
+            distractors.none { it.id == excludedId })
+    }
+
+    @Test fun `fillInBlankExclusions are NOT applied for non-fill-in-blank quizzes`() {
+        val excludedId = 2L
+        val target = makeWord(1, pos = "noun", semanticGroup = "housing",
+            fillInBlankExclusions = listOf(excludedId))
+        val excluded = makeWord(excludedId, pos = "noun", semanticGroup = "housing")
+        val all = listOf(target, excluded) + (3L..8L).map { makeWord(it) }
+
+        val distractors = QuizBuilder.pickDistractors(target, all, forFillInBlank = false)
+        assertTrue("Excluded word must appear as a distractor for TRANSLATION/DEFINITION quizzes",
+            distractors.any { it.id == excludedId })
+    }
+
+    @Test fun `TRANSLATION still prefers same-semanticGroup distractors first`() {
+        val target = makeWord(1, pos = "noun", semanticGroup = "housing")
+        val sameGroup  = (2L..5L).map { makeWord(it, pos = "noun", semanticGroup = "housing") }
+        val otherGroup = (6L..9L).map { makeWord(it, pos = "noun", semanticGroup = "food") }
+        val all        = listOf(target) + sameGroup + otherGroup
+
+        // Default pickDistractors (forFillInBlank = false) must keep tier1 = same semanticGroup first.
+        val distractors = QuizBuilder.pickDistractors(target, all)
+        val firstFour   = distractors.take(4).map { it.id }.toSet()
+        val sameGroupIds = sameGroup.map { it.id }.toSet()
+        assertEquals("For non-FILL_IN_BLANK quizzes, first 4 distractors must be same semanticGroup",
+            sameGroupIds, firstFour)
+    }
+
+    @Test fun `FILL_IN_BLANK falls back to same-semanticGroup if no different-group candidates`() {
+        val target = makeWord(1, pos = "noun", semanticGroup = "housing")
+        val sameGroup = (2L..6L).map { makeWord(it, pos = "noun", semanticGroup = "housing") }
+        val all = listOf(target) + sameGroup
+
+        val distractors = QuizBuilder.pickDistractors(target, all, forFillInBlank = true)
+        assertEquals("Fallback: when no other semanticGroup exists, fill-in-blank still finds distractors",
+            sameGroup.size, distractors.size)
     }
 
     // ── Quiz type selection ────────────────────────────────────────────────────

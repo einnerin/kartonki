@@ -14,4 +14,5 @@ data class Word(
     val semanticGroup: String? = null,
     val transliteration: String? = null,
     val isFillInBlankSafe: Boolean = true,   // false → skip this word in FILL_IN_BLANK quiz
+    val fillInBlankExclusions: List<Long> = emptyList(), // words that also fit this example's blank — filtered from FILL_IN_BLANK distractors
 )

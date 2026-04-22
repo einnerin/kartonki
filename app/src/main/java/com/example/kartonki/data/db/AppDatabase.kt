@@ -2,6 +2,7 @@ package com.example.kartonki.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.example.kartonki.data.db.dao.AchievementDao
@@ -39,9 +40,10 @@ import com.example.kartonki.data.db.entity.WordSetMembershipEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 39,
+    version = 40,
     exportSchema = false,
 )
+@TypeConverters(WordConverters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun wordDao(): WordDao
     abstract fun wordSetDao(): WordSetDao
@@ -363,6 +365,18 @@ abstract class AppDatabase : RoomDatabase() {
         val MIGRATION_38_39 = object : Migration(38, 39) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE words ADD COLUMN isFillInBlankSafe INTEGER NOT NULL DEFAULT 1")
+            }
+        }
+
+        /**
+         * Adds fillInBlankExclusions column — comma-separated list of word IDs that also
+         * fit this word's example sentence. QuizBuilder filters these out of the distractor
+         * pool for FILL_IN_BLANK to prevent frustrating ambiguity. Empty by default;
+         * populated by the LLM labeling pipeline.
+         */
+        val MIGRATION_39_40 = object : Migration(39, 40) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE words ADD COLUMN fillInBlankExclusions TEXT NOT NULL DEFAULT ''")
             }
         }
 
