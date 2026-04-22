@@ -146,19 +146,19 @@ def apply_safety_net(llm_entries: list[dict], set_words: list[dict]) -> list[dic
                     continue
                 if other.get("pos") != target.get("pos"):
                     continue
-                if other.get("rarity") != target.get("rarity"):
-                    continue
-                # Rule 1
+                # Rarity не сравниваем — QuizBuilder.pickDistractors тоже не матчит
+                # по rarity, и слова разной редкости могут быть дистракторами
+                # друг для друга. Исключать надо по структурной близости, не по
+                # учебному уровню.
                 if article == "an" and not starts_with_vowel_sound(other["original"]):
                     continue
                 if article == "a" and starts_with_vowel_sound(other["original"]):
                     continue
-                # Rule 3
                 if candidate_appears_in_example(other["original"], target["example"],
                                                   target["original"]):
                     continue
                 filtered.append({"id": other["id"], "original": other["original"],
-                                 "why": "safety-net: same semGroup/pos/rarity"})
+                                 "why": "safety-net: same semGroup/pos"})
 
         out.append({
             "id": tid,
