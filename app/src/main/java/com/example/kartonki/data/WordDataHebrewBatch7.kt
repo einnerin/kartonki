@@ -36,7 +36,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Колёсная корзина для покупок в супермаркете.",
             example = "לָקַחְתִּי עֲגָלָה בְּכְנִיסָה לַסּוּפֶּרְמַרְקֶט.",
             exampleNative = "Я взял עֲגָלָה при входе в супермаркет.",
-        ),
+         fillInBlankExclusions = listOf(104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104402, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "sal kniyot",
@@ -45,7 +45,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Ручная корзина для небольшого количества покупок в супермаркете.",
             example = "לְקַחְתִּי רַק סַל קְנִיּוֹת כִּי הִזְמַנְתִּי מְעַט.",
             exampleNative = "Я взял только סַל קְנִיּוֹת, потому что покупал немного.",
-        ),
+         fillInBlankExclusions = listOf(104401L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104403, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "mutzar",
@@ -63,7 +63,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Ваучер, дающий скидку или льготу при покупке товаров в супермаркете.",
             example = "הִשְׁתַּמַּשְׁתִּי בְּקֻפּוֹן וְחָסַכְתִּי עֶשְׂרִים אָחוּז עַל הַקְּנִיָּה.",
             exampleNative = "Я использовал קֻפּוֹן и сэкономил двадцать процентов на покупке.",
-        ),
+         fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104405L, 104406L, 104408L, 104412L, 104413L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104405, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "mekhir",
@@ -99,7 +99,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Горизонтальная поверхность в магазине, на которой выставлены товары.",
             example = "חִיפַּשְׁתִּי אֶת הַשּׁוֹקוֹלָד בְּמָדָף הַמִּתּוּקִים.",
             exampleNative = "Я искал шоколад на מָדָף со сладостями.",
-        ),
+         fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104409, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "supermarket_quality", transliteration = "tari",
@@ -135,7 +135,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Снижение цены, предоставляемое продавцом покупателю.",
             example = "קִבַּלְתִּי הַנָּחָה שֶׁל עֶשְׂרִים אָחוּז בְּכַרְטִיס הַמּוֹעֶדוֹן.",
             exampleNative = "Я получил הַנָּחָה двадцать процентов по карте клуба.",
-        ),
+         fillInBlankExclusions = listOf(104404L, 104413L)),
         WordEntity(
             id = 104413, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_deals", transliteration = "mivtza",
@@ -144,7 +144,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Специальное предложение по продаже товара по сниженной цене на ограниченный срок.",
             example = "יֵשׁ מָבְצָע שֶׁל קְנֵה שְׁנַיִם קַבֵּל שְׁלוֹשָׁה עַל שׁוֹקוֹלָד.",
             exampleNative = "Есть מָבְצָע «купи два — получи три» на шоколад.",
-        ),
+         fillInBlankExclusions = listOf(104404L, 104412L)),
         WordEntity(
             id = 104414, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "mitzrah",
@@ -162,7 +162,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Бумажный или пластиковый пакет для покупок в магазине.",
             example = "בְּיִשְׂרָאֵל מְשַׁלְּמִים עַל שַׂקִּית פְּלַסְטִיק.",
             exampleNative = "В Израиле платят за пластиковый שַׂקִּית.",
-        ),
+         fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104416, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "kartis ashrai",
@@ -180,7 +180,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Фруктовый напиток, выжатый из свежих или концентрированных апельсинов.",
             example = "קָנִיתִי בַּסּוּפֶּר קַרְטוֹן מִיץ תַּפּוּזִים טָרִי.",
             exampleNative = "Я купил в супере картонку свежего מִיץ תַּפּוּזִים.",
-        ),
+         fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104418L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104418, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "supermarket_dairy", transliteration = "yogurt",
@@ -189,7 +189,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Кисломолочный продукт, богатый белками и молочными бактериями.",
             example = "הוּא אוֹכֵל יוֹגוּרְט עִם פֵּרוֹת לַאֲרוּחַת בֹּקֶר.",
             exampleNative = "Он ест יוֹגוּרְט с фруктами на завтрак.",
-        ),
+         fillInBlankExclusions = listOf(104419L, 104421L, 104424L, 104425L)),
         WordEntity(
             id = 104419, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_dairy", transliteration = "shamenet",
@@ -198,7 +198,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Молочный продукт, получаемый из сливок молока, с густой консистенцией.",
             example = "הוֹסַפְתִּי שַׁמְנֶת לְמָרָק הַגֶּזֶר.",
             exampleNative = "Я добавил שַׁמְנֶת в морковный суп.",
-        ),
+         fillInBlankExclusions = listOf(104418L, 104421L, 104422L, 104423L)),
         WordEntity(
             id = 104420, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_meat", transliteration = "nkaniyk",
@@ -216,7 +216,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Группа продуктов: чечевица, фасоль, нут, горох.",
             example = "קְטָנִיּוֹת הֵן מָקוֹר מֻצָּלָן לְחֶלְבּוֹן צְמַחוֹנִי.",
             exampleNative = "Бобовые — отличный источник растительного белка.",
-        ),
+         fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104422, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "tavlin",
@@ -225,7 +225,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Ароматические добавки к пище для усиления вкуса.",
             example = "הִיא הוֹסִיפָה תְּבָלִין רַבִּים לְמָרָק.",
             exampleNative = "Она добавила много תְּבָלִין в суп.",
-        ),
+         fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104421L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104423, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "shumshum",
@@ -234,7 +234,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Маленькие семена, используемые в кулинарии, особенно для хлеба и салатов.",
             example = "לַחֲמָנִיּוֹת עִם שֻׁמְשּׁוּם פּוֹפּוּלָרִיּוֹת בְּיִשְׂרָאֵל.",
             exampleNative = "Булочки с שֻׁמְשּׁוּם популярны в Израиле.",
-        ),
+         fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104424L, 104425L)),
         WordEntity(
             id = 104424, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "egozim",
@@ -243,7 +243,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Сухофрукты, богатые полезными жирами: грецкий орех, миндаль и др.",
             example = "קָנִיתִי שַׂקִּית אֱגּוֹזִים מְעֹרָבִים לַחֲטִיף.",
             exampleNative = "Я купил пакет смешанных אֱגּוֹזִים для перекуса.",
-        ),
+         fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104416L, 104417L, 104421L, 104422L, 104423L, 104425L)),
         WordEntity(
             id = 104425, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "riva",
@@ -267,7 +267,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Официальный документ, подтверждающий выписку пациента из больницы.",
             example = "קִבַלְתִי תָּעוּדַת שִחְרוּר אַחֲרֵי שְׁלוֹשָׁה יָמִים בְּבֵית הַחוֹלִים.",
             exampleNative = "Я получил תָּעוּדַת שִחְרוּר после трёх дней в больнице.",
-        ),
+         fillInBlankExclusions = listOf(104503L, 104505L, 104507L, 104509L, 104511L, 104512L, 104513L, 104514L, 104515L, 104516L, 104518L, 104522L)),
         WordEntity(
             id = 104502, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_basics", transliteration = "makhlaka",
@@ -285,7 +285,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Диагностический снимок костей тела, полученный с помощью рентгеновских лучей.",
             example = "הָרוֹפֵא שָׁלַח לַעֲשׂוֹת צִלּוּם רֶנְטְגֶן שֶׁל הָרֶגֶל.",
             exampleNative = "Врач направил сделать צִלּוּם רֶנְטְגֶן ноги.",
-        ),
+         fillInBlankExclusions = listOf(104507L, 104509L, 104515L)),
         WordEntity(
             id = 104504, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_pain", transliteration = "ke'ev khróni",
@@ -294,7 +294,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Боль, длящаяся три месяца и более, влияющая на качество жизни.",
             example = "הִיא סוֹבֶלֶת מִכְּאֵב כְּרוֹנִי בַּגַּב מֵאֲחוֹרֵי הַתְּאוּנָה.",
             exampleNative = "Она страдает от כְּאֵב כְּרוֹנִי в спине после аварии.",
-        ),
+         fillInBlankExclusions = listOf(104510L, 104523L, 104524L, 104525L)),
         WordEntity(
             id = 104505, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_treatment", transliteration = "fiziyoterapya",
@@ -303,7 +303,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Медицинское лечение движениями, массажем и оборудованием для восстановления тела.",
             example = "אַחֲרֵי הַנִּיתּוּחַ עָבַר שְׁלוֹשָׁה חֳדָשִׁים שֶׁל פִּיזִיּוֹתֶרַפְּיָה.",
             exampleNative = "После операции он прошёл три месяца פִּיזִיּוֹתֶרַפְּיָה.",
-        ),
+         fillInBlankExclusions = listOf(104501L, 104511L, 104513L)),
         WordEntity(
             id = 104506, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_basics", transliteration = "merkaz refui",
@@ -312,7 +312,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Крупное медицинское учреждение, служащее и больницей и исследовательским центром.",
             example = "הוּא מְטֻפָּל בְּמֶרְכָּז רְפוּאִי מוֹבִיל בְּתֵל אָבִיב.",
             exampleNative = "Он лечится в ведущем מֶרְכָּז רְפוּאִי в Тель-Авиве.",
-        ),
+         fillInBlankExclusions = listOf(104502L, 104514L)),
         WordEntity(
             id = 104507, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_procedure", transliteration = "nitkuakh",
@@ -339,7 +339,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Диагностическое исследование с использованием рентгеновских лучей для просмотра костей.",
             example = "עָשׂוּ לִי רֶנְטְגֶּן לְיַד כְּדֵי לִבְדֹּק אִם יֵשׁ שְׁבָר.",
             exampleNative = "Мне сделали רֶנְטְגֶּן руки, чтобы проверить, нет ли перелома.",
-        ),
+         fillInBlankExclusions = listOf(104503L, 104515L)),
         WordEntity(
             id = 104510, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_injury", transliteration = "shvar",
@@ -348,7 +348,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Разлом кости из-за удара или падения.",
             example = "הוּא סָבַל שְׁבָר בַּקָּרְסֹּל אַחֲרֵי הַנְּפִילָה.",
             exampleNative = "У него был שְׁבָר в лодыжке после падения.",
-        ),
+         fillInBlankExclusions = listOf(104504L, 104523L, 104524L, 104525L)),
         WordEntity(
             id = 104511, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_treatment", transliteration = "khavisha",
@@ -357,7 +357,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Закрытие раны защитным материалом для предотвращения инфекции.",
             example = "הָאָחוֹת עָשְׂתָה לוֹ חֲבִישָׁה עַל הַפֶּצַע בַּיָּד.",
             exampleNative = "Медсестра сделала ему חֲבִישָׁה на ране руки.",
-        ),
+         fillInBlankExclusions = listOf(104501L, 104505L, 104513L, 104518L)),
         WordEntity(
             id = 104512, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_diagnosis", transliteration = "ibkhun",
@@ -366,7 +366,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Определение болезни или медицинского состояния с помощью обследований.",
             example = "הָאִבְחוּן הֶרְאָה דַּלֶּקֶת קַלָּה בַּכָּלְיוֹת.",
             exampleNative = "אִבְחוּן показал лёгкое воспаление почек.",
-        ),
+         fillInBlankExclusions = listOf(104503L, 104509L, 104515L, 104516L, 104521L, 104522L)),
         WordEntity(
             id = 104513, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_treatment", transliteration = "gibsa",
@@ -375,7 +375,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Твёрдый материал, фиксирующий перелом до заживления.",
             example = "שָׂמוּ לוֹ גִּבְסָה עַל הַיָּד לְשִׁשָּׁה שָׁבוּעוֹת.",
             exampleNative = "Ему наложили גִּבְסָה на руку на шесть недель.",
-        ),
+         fillInBlankExclusions = listOf(104501L, 104505L, 104511L)),
         WordEntity(
             id = 104514, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_basics", transliteration = "ezra rishona",
@@ -384,7 +384,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Первоначальная медицинская помощь, оказываемая до прибытия врача.",
             example = "כֻּלָּם צְרִיכִים לְלַמֵּד עֶזְרָה רִאשׁוֹנָה בְּמִצְּבֵי חֵרוּם.",
             exampleNative = "Каждый должен знать עֶזְרָה רִאשׁוֹנָה в чрезвычайных ситуациях.",
-        ),
+         fillInBlankExclusions = listOf(104502L, 104506L, 104511L)),
         WordEntity(
             id = 104515, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_imaging", transliteration = "ultrasaund",
@@ -393,7 +393,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Диагностическое исследование, использующее звуковые волны для просмотра внутренних органов.",
             example = "הַרּוֹפֵא הִזְמִין אוּלְטְרָסָאוּנְד כְּדֵי לִבְדֹּק אֶת הַכָּבֵד.",
             exampleNative = "Врач назначил אוּלְטְרָסָאוּנְד для проверки печени.",
-        ),
+         fillInBlankExclusions = listOf(104503L, 104509L, 104516L)),
         WordEntity(
             id = 104516, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_tests", transliteration = "sfirat dam",
@@ -402,7 +402,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Анализ крови, подсчитывающий красные, белые кровяные тельца и тромбоциты.",
             example = "הָרוֹפֵא בִּיקֵּשׁ סְפִירַת דָּם לִבְדִיקַת הָאֲנֵמִיָּה.",
             exampleNative = "Врач попросил סְפִירַת דָּם для проверки на анемию.",
-        ),
+         fillInBlankExclusions = listOf(104512L, 104521L, 104522L)),
         WordEntity(
             id = 104517, setId = 1045, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hospital_people", transliteration = "menatekh",
@@ -420,7 +420,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Медицинское обезболивание для предотвращения боли во время операции или процедуры.",
             example = "הָרוֹפֵא הִסְבִּיר אֶת סוּגֵי הָאָנֶסְתֶּזְיָה לִפְנֵי הַנִּיתּוּחַ.",
             exampleNative = "Врач объяснил виды אָנֶסְתֶּזְיָה перед операцией.",
-        ),
+         fillInBlankExclusions = listOf(104505L, 104507L, 104511L, 104512L, 104520L, 104521L)),
         WordEntity(
             id = 104519, setId = 1045, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hospital_anatomy", transliteration = "klei dam",
@@ -447,7 +447,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Анализ, при котором выращивают бактерии из пробы пациента для выявления инфекции.",
             example = "שָׁלְחוּ תַּרְבִּית שֶׁל גָּרוֹן לַמַּעְבָּדָה.",
             exampleNative = "Отправили תַּרְבִּית горла в лабораторию.",
-        ),
+         fillInBlankExclusions = listOf(104516L, 104522L)),
         WordEntity(
             id = 104522, setId = 1045, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hospital_tests", transliteration = "totsa'ot",
@@ -456,7 +456,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Данные, полученные после медицинского обследования.",
             example = "הַתּוֹצָאוֹת שֶׁל בְּדִיקַת הַדָּם הָיוּ תְּקִינוֹת.",
             exampleNative = "תּוֹצָאוֹת анализа крови были в норме.",
-        ),
+         fillInBlankExclusions = listOf(104516L, 104521L)),
         WordEntity(
             id = 104523, setId = 1045, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hospital_emergency", transliteration = "dimum pnimi",
@@ -474,7 +474,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Скопление жидкости в тканях тела, вызывающее опухоль.",
             example = "הָיְתָה לוֹ בְּצֶקֶת בָּרֶגֶל לְאַחַר הַנְּפִילָה.",
             exampleNative = "У него была בְּצֶקֶת в ноге после падения.",
-        ),
+         fillInBlankExclusions = listOf(104504L, 104510L, 104523L, 104525L)),
         WordEntity(
             id = 104525, setId = 1045, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hospital_condition", transliteration = "daleket kronit",
@@ -483,7 +483,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Затяжная воспалительная реакция, продолжающаяся многие месяцы.",
             example = "דַּלֶּקֶת כְּרוֹנִית יְכוֹלָה לְגָרוֹם לְנֶזֶק בְּאֵיבְרֵי הַגּוּף.",
             exampleNative = "דַּלֶּקֶת כְּרוֹנִית может вызвать повреждение органов.",
-        ),
+         fillInBlankExclusions = listOf(104504L, 104523L, 104524L)),
 
         // ──────────────────────────────────────────────────────
         // Set 1046 — תחבורה ציבורית  (Public transport, A2/B1),
@@ -498,7 +498,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Фиксированный маршрут автобуса или поезда с определёнными остановками.",
             example = "קַו 5 הוֹלֵךְ מֵהַמֶּרְכָּז לַשּׁוּק הַכַּרְמֶל.",
             exampleNative = "קַו 5 идёт от центра до рынка Кармель.",
-        ),
+         fillInBlankExclusions = listOf(104602L, 104611L, 104615L, 104620L)),
         WordEntity(
             id = 104602, setId = 1046, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "transport_basics", transliteration = "nesiya",
@@ -525,7 +525,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Автобусный маршрут, работающий в ночные часы, когда дневные рейсы сокращаются.",
             example = "לָקַחְתִּי אוֹטוֹבּוּס לַיְלָה לַעֲזוֹר לַחֲבֵרָה הַחוֹלָה.",
             exampleNative = "Я сел на אוֹטוֹבּוּס לַיְלָה, чтобы помочь больной подруге.",
-        ),
+         fillInBlankExclusions = listOf(104614L)),
         WordEntity(
             id = 104605, setId = 1046, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "takhanat otobus",
@@ -552,7 +552,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Набор поездок по сниженной цене, продаваемых вместе как единый абонемент.",
             example = "קָנִיתִי כַּרְטִיסִיָּה שֶׁל עֶשֶׂר נְסִיעוֹת לַחֹדֶשׁ.",
             exampleNative = "Я купил כַּרְטִיסִיָּה на десять поездок в месяц.",
-        ),
+         fillInBlankExclusions = listOf(104603L, 104609L, 104613L)),
         WordEntity(
             id = 104608, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_transfer", transliteration = "hakhlafa",
@@ -561,7 +561,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Переход с одного транспортного средства на другое в середине поездки.",
             example = "נֶצְטָרֵךְ לַעֲשׂוֹת הֲחְלָפָה בְּתַחֲנַת הַמֶּרְכָּז.",
             exampleNative = "Нам нужно сделать הֲחְלָפָה на центральной станции.",
-        ),
+         fillInBlankExclusions = listOf(104613L)),
         WordEntity(
             id = 104609, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_cards", transliteration = "kartis khodshi",
@@ -570,7 +570,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Карта, дающая право на неограниченные поездки в течение месяца.",
             example = "קָנִיתִי כַּרְטִיס חוֹדְשִׁי — חוֹסֵךְ לִי הַרְבֵּה כֶּסֶף.",
             exampleNative = "Я купил כַּרְטִיס חוֹדְשִׁי — он экономит мне много денег.",
-        ),
+         fillInBlankExclusions = listOf(104603L, 104607L, 104613L)),
         WordEntity(
             id = 104610, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "takhanat merkaz",
@@ -606,7 +606,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Действие прикладывания карты к считывателю при входе в транспорт.",
             example = "אַל תִּשְׁכַּח לַעֲשׂוֹת נִקּוּב כַּרְטִיס בִּכְנִיסָה לָאוֹטוֹבּוּס.",
             exampleNative = "Не забудь сделать נִקּוּב כַּרְטִיס при входе в автобус.",
-        ),
+         fillInBlankExclusions = listOf(104603L, 104607L, 104608L, 104609L)),
         WordEntity(
             id = 104614, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_people", transliteration = "nahag monit",
@@ -624,7 +624,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Поездка обратно из пункта назначения к начальному пункту.",
             example = "קָנִיתִי כַּרְטִיס הֶלֶךְ וָשׁוֹב שֶׁכּוֹלֵל נְסִיעָה חוֹזֶרֶת.",
             exampleNative = "Я купил билет туда-обратно, включающий נְסִיעָה חוֹזֶרֶת.",
-        ),
+         fillInBlankExclusions = listOf(104601L, 104602L, 104611L, 104620L)),
         WordEntity(
             id = 104616, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_planning", transliteration = "merkaz nesiyot",
@@ -642,7 +642,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Скоростная дорога с несколькими полосами движения.",
             example = "נָסַעְנוּ עַל כְּבִישׁ מָהִיר מִתֵּל אָבִיב לְיְרוּשָׁלַיִם.",
             exampleNative = "Мы ехали по כְּבִישׁ מָהִיר из Тель-Авива в Иерусалим.",
-        ),
+         fillInBlankExclusions = listOf(104605L, 104606L, 104610L, 104612L, 104618L, 104619L, 104621L, 104622L, 104623L, 104624L)),
         WordEntity(
             id = 104618, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "khaniyon",
@@ -651,7 +651,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Место, предназначенное для парковки автомобилей.",
             example = "מָצָאתִי מָקוֹם בַּחֲנִיּוֹן הַתַּת-קַרְקָעִי שֶׁל הַקְּנְיוֹן.",
             exampleNative = "Я нашёл место в подземном חֲנִיּוֹן торгового центра.",
-        ),
+         fillInBlankExclusions = listOf(104605L, 104606L, 104610L, 104612L, 104617L, 104619L, 104621L, 104622L, 104623L, 104624L)),
         WordEntity(
             id = 104619, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_infrastructure", transliteration = "masof nosim",
@@ -660,7 +660,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Пассажирский зал в аэропорту или порту для приёма пассажиров.",
             example = "נִפְגַשְׁנוּ בְּמַסּוֹף נוֹסְעִים אַחַת לִפְנֵי הַטִּיסָה.",
             exampleNative = "Мы встретились в מַסּוֹף נוֹסְעִים перед вылетом.",
-        ),
+         fillInBlankExclusions = listOf(104605L, 104606L, 104610L, 104612L, 104617L, 104618L, 104621L, 104622L, 104623L, 104624L)),
         WordEntity(
             id = 104620, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_basics", transliteration = "mekhir nesiya",
@@ -705,7 +705,7 @@ object WordDataHebrewBatch7 {
             definitionNative = "Точка пересечения двух и более дорог.",
             example = "עָצַרְנוּ בְּצוֹמֶת בִגְלַל אוֹר אָדֹם.",
             exampleNative = "Мы остановились на צוֹמֶת на красный свет.",
-        ),
+         fillInBlankExclusions = listOf(104605L, 104606L, 104610L, 104612L, 104617L, 104618L, 104619L, 104621L, 104622L, 104623L)),
         WordEntity(
             id = 104625, setId = 1046, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_problems", transliteration = "pkak tnua",
