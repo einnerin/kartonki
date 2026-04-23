@@ -4,13 +4,21 @@
 Validate semanticGroup size distribution within a setId.
 
 Rules (see docs/claude/quality_standards_metadata.md):
-- 1 word    → BLOCK (useless for tier1 distractors)
-- 2 words   → OK (allowed for antonymic pairs)
+- 1 word    → BLOCK (useless for tier1 distractors — broken markup)
+- 2 words   → WARN (allowed for antonymic pairs)
 - 3-8       → ideal
-- 9-12      → WARN (allowed for naturally large axes: months, teens)
-- 13+       → BLOCK (dilutes tier1)
+- 9+        → WARN (not ideal — dilutes tier1 — but works:
+              QuizBuilder.pickDistractors still picks 3 random from the pool)
 
-Exit 0 on pass or warnings only, 1 on any block.
+Exit 0 on pass or warnings only, 1 on BLOCK.
+
+History: before 2026-04-23, size ≥13 was BLOCK. Softened to WARN after the
+Phase 2 experiment showed that bulk regrouping (splitting 25-in-1 groups
+into 3-8-word subgroups) had cascade effects on validate_blank_ambiguity —
+new semanticGroup boundaries invalidated the LLM-generated
+fillInBlankExclusions and required a full re-run of Phase A on each
+regrouped set. 5-7h of work for no user-visible quiz improvement. The
+"dangerous twins" philosophy is preserved as an ideal but not enforced.
 """
 import sys
 import io
@@ -32,10 +40,10 @@ def validate(set_id):
     for group, size in groups.items():
         if size == 1:
             blocks.append(f"{group} (1 слово — нет tier1-близнецов)")
-        elif size >= 13:
-            blocks.append(f"{group} ({size} слов — слишком большая, дробить)")
-        elif size == 2 or 9 <= size <= 12:
-            warns.append(f"{group} ({size})")
+        elif size == 2:
+            warns.append(f"{group} ({size} — пара; ок для антонимов)")
+        elif size >= 9:
+            warns.append(f"{group} ({size} слов — крупная, размывает tier1)")
     if blocks:
         print(f"❌ setId={set_id}: {len(blocks)} нарушений размера групп")
         for b in blocks:
