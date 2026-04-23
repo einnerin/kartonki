@@ -163,76 +163,86 @@ internal fun QuizContent(
     val answered = answerState as? AnswerState.Answered
     val s = LocalAppStrings.current
 
-    Column(
-        modifier = modifier.verticalScroll(rememberScrollState()),
-        verticalArrangement = Arrangement.spacedBy(12.dp),
-    ) {
-        val label = when (step.type) {
-            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION          -> s.studyQTranslation
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION           -> s.studyQDefinition
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE    -> s.studyQDefinitionNative
-            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF        -> s.studyQWordFromDef
-            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE -> s.studyQWordFromDefNative
-            StudyQuizType.FILL_IN_BLANK                        -> s.studyQFillBlank
-        }
-        Text(
-            text = label,
-            style = MaterialTheme.typography.labelLarge,
-            color = MaterialTheme.colorScheme.primary,
-            fontWeight = FontWeight.SemiBold,
-        )
-        val isHebrew = step.word.languagePair.startsWith("he")
-        // Question is RTL for all types where the question text is primarily Hebrew:
-        // translation (word.original), definition (word.original or word.definition),
-        // word-from-def (word.definition), fill-in-blank (word.example).
-        // Excluded: DEFINITION_NATIVE (question = Russian), WORD_FROM_DEF_NATIVE (Russian).
-        val isHebrewQuestionRtl = isHebrew && step.type in setOf(
-            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION,
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION,
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE,
-            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF,
-            StudyQuizType.FILL_IN_BLANK,
-        )
-        // Options are RTL when they contain Hebrew words or Hebrew definitions.
-        val isHebrewOptionsRtl = isHebrew && step.type in setOf(
-            StudyQuizType.MULTIPLE_CHOICE_DEFINITION,
-            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF,
-            StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE,
-            StudyQuizType.FILL_IN_BLANK,
-        )
-        Surface(
-            color = MaterialTheme.colorScheme.surfaceVariant,
-            shape = MaterialTheme.shapes.medium,
-            modifier = Modifier.fillMaxWidth(),
+    // Sticky-bottom "Continue": scrollable content fills the remaining space,
+    // the button sits below and is always reachable no matter how long the
+    // question text or translation panel gets.
+    Column(modifier = modifier) {
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .verticalScroll(rememberScrollState()),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier.padding(horizontal = 20.dp, vertical = 24.dp),
+            val label = when (step.type) {
+                StudyQuizType.MULTIPLE_CHOICE_TRANSLATION          -> s.studyQTranslation
+                StudyQuizType.MULTIPLE_CHOICE_DEFINITION           -> s.studyQDefinition
+                StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE    -> s.studyQDefinitionNative
+                StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF        -> s.studyQWordFromDef
+                StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE -> s.studyQWordFromDefNative
+                StudyQuizType.FILL_IN_BLANK                        -> s.studyQFillBlank
+            }
+            Text(
+                text = label,
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.primary,
+                fontWeight = FontWeight.SemiBold,
+            )
+            val isHebrew = step.word.languagePair.startsWith("he")
+            // Question is RTL for all types where the question text is primarily Hebrew:
+            // translation (word.original), definition (word.original or word.definition),
+            // word-from-def (word.definition), fill-in-blank (word.example).
+            // Excluded: DEFINITION_NATIVE (question = Russian), WORD_FROM_DEF_NATIVE (Russian).
+            val isHebrewQuestionRtl = isHebrew && step.type in setOf(
+                StudyQuizType.MULTIPLE_CHOICE_TRANSLATION,
+                StudyQuizType.MULTIPLE_CHOICE_DEFINITION,
+                StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE,
+                StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF,
+                StudyQuizType.FILL_IN_BLANK,
+            )
+            // Options are RTL when they contain Hebrew words or Hebrew definitions.
+            val isHebrewOptionsRtl = isHebrew && step.type in setOf(
+                StudyQuizType.MULTIPLE_CHOICE_DEFINITION,
+                StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF,
+                StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE,
+                StudyQuizType.FILL_IN_BLANK,
+            )
+            Surface(
+                color = MaterialTheme.colorScheme.surfaceVariant,
+                shape = MaterialTheme.shapes.medium,
+                modifier = Modifier.fillMaxWidth(),
             ) {
-                Text(
-                    text = step.question,
-                    style = MaterialTheme.typography.headlineMedium.copy(
-                        textDirection = if (isHebrewQuestionRtl) TextDirection.Rtl else TextDirection.Ltr,
-                    ),
-                    fontWeight = FontWeight.Bold,
-                    textAlign = TextAlign.Center,
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    modifier = Modifier.padding(horizontal = 20.dp, vertical = 24.dp),
+                ) {
+                    Text(
+                        text = step.question,
+                        style = MaterialTheme.typography.headlineMedium.copy(
+                            textDirection = if (isHebrewQuestionRtl) TextDirection.Rtl else TextDirection.Ltr,
+                        ),
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Center,
+                    )
+                }
+            }
+            MultipleChoiceSection(
+                options = step.options,
+                answered = answered,
+                optionsRtl = isHebrewOptionsRtl,
+                onOptionSelected = onOptionSelected,
+            )
+            if (answered != null) {
+                TranslationPanel(
+                    original = step.word.original,
+                    translation = step.word.translation,
+                    transliteration = step.word.transliteration,
+                    isCorrect = answered.isCorrect,
+                    isRtl = isHebrew,
                 )
             }
         }
-        MultipleChoiceSection(
-            options = step.options,
-            answered = answered,
-            optionsRtl = isHebrewOptionsRtl,
-            onOptionSelected = onOptionSelected,
-        )
         if (answered != null) {
-            TranslationPanel(
-                original = step.word.original,
-                translation = step.word.translation,
-                transliteration = step.word.transliteration,
-                isCorrect = answered.isCorrect,
-                isRtl = isHebrew,
-            )
+            Spacer(Modifier.height(12.dp))
             Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
                 Text(s.studyContinue)
             }
