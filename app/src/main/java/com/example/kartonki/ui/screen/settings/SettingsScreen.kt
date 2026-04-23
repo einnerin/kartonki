@@ -574,14 +574,18 @@ fun SettingsScreen(
                         modifier = Modifier.clickable { viewModel.onShowMinEncountersPicker() },
                     )
                 }
-                SettingsRow(label = "Верных ответов для выхода из списка ошибок") {
-                    Text(
-                        "${state.problemWordsCorrectToLearn}",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.primary,
-                        fontWeight = FontWeight.Medium,
-                        modifier = Modifier.clickable { viewModel.onShowCorrectToLearnPicker() },
-                    )
+                Text(
+                    text = "Чтобы выучить проблемное слово, нужно правильно ответить на него в 3 разных типах заданий (перевод, определение, пропуск и т.д.).",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+                )
+                if (state.dismissedProblemWordCount > 0) {
+                    SettingsRow(label = "Восстановить удалённые проблемные слова (${state.dismissedProblemWordCount})") {
+                        TextButton(onClick = viewModel::onRestoreDismissedProblemWords) {
+                            Text("Восстановить")
+                        }
+                    }
                 }
             }
 
@@ -595,17 +599,6 @@ fun SettingsScreen(
                     onDismiss = viewModel::onDismissMinEncountersPicker,
                 )
             }
-            if (state.showCorrectToLearnPicker) {
-                IntPickerDialog(
-                    title = "Верных ответов для выхода из списка ошибок",
-                    subtitle = "Сколько раз нужно правильно ответить на слово в режиме работы над ошибками, чтобы оно покинуло список",
-                    options = listOf(1, 2, 3, 5),
-                    selected = state.problemWordsCorrectToLearn,
-                    onSelect = viewModel::onCorrectToLearnSelected,
-                    onDismiss = viewModel::onDismissCorrectToLearnPicker,
-                )
-            }
-
             // ── Navigation links ───────────────────────────────────────────────
             SectionHeader(s.settingsProgressSection)
             NavRow(s.settingsPlayerStats, onClick = onNavigateToStats)

@@ -33,15 +33,30 @@ class ProblemWordsListViewModel @Inject constructor(
     val uiState: StateFlow<ProblemWordsListUiState> = _uiState.asStateFlow()
 
     init {
+        reload()
+    }
+
+    /** Re-reads problem words from stats + prefs. Call after a dismiss action. */
+    fun reload() {
         viewModelScope.launch {
-            val source      = prefs.problemWordsSource.first()
-            val minEnc      = prefs.problemWordsMinEncounters.first()
-            val words       = statsRepository.getProblemWords(source, minEnc, limit = 200)
+            _uiState.update { it.copy(isLoading = true) }
+            val source    = prefs.problemWordsSource.first()
+            val minEnc    = prefs.problemWordsMinEncounters.first()
+            val dismissed = prefs.getDismissedProblemWordIds()
+            val words     = statsRepository.getProblemWords(
+                source, minEnc, limit = 200, dismissedIds = dismissed,
+            )
             val selectedIds = words.map { it.id }.toSet()
             _uiState.update {
                 it.copy(isLoading = false, words = words, selectedIds = selectedIds)
             }
         }
+    }
+
+    /** Permanently remove a word from the problem-words list (trash-button action). */
+    fun dismissWord(wordId: Long) {
+        prefs.addDismissedProblemWordId(wordId)
+        reload()
     }
 
     fun toggleWord(wordId: Long) {

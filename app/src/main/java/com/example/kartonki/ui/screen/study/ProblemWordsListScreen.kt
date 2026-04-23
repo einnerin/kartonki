@@ -18,6 +18,8 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CircularProgressIndicator
@@ -33,6 +35,9 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -54,6 +59,29 @@ fun ProblemWordsListScreen(
     viewModel: ProblemWordsListViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
+
+    // Dismiss-confirmation dialog — nullable word being confirmed.
+    var dismissCandidate by remember { mutableStateOf<Word?>(null) }
+    dismissCandidate?.let { word ->
+        AlertDialog(
+            onDismissRequest = { dismissCandidate = null },
+            title = { Text("Убрать из работы над ошибками?") },
+            text = {
+                Text("\"${word.original}\" больше не будет появляться в этом списке. " +
+                        "Слово никуда не пропадает — ты можешь учить его в обычных сетах, " +
+                        "но оно перестанет считаться проблемным.")
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    viewModel.dismissWord(word.id)
+                    dismissCandidate = null
+                }) { Text("Убрать") }
+            },
+            dismissButton = {
+                TextButton(onClick = { dismissCandidate = null }) { Text("Отмена") }
+            },
+        )
+    }
 
     Scaffold(
         topBar = {
@@ -127,6 +155,7 @@ fun ProblemWordsListScreen(
                                     word = word,
                                     isSelected = word.id in state.selectedIds,
                                     onToggle = { viewModel.toggleWord(word.id) },
+                                    onDismiss = { dismissCandidate = word },
                                 )
                                 HorizontalDivider(
                                     modifier = Modifier.padding(horizontal = 16.dp),
@@ -146,6 +175,7 @@ private fun ProblemWordRow(
     word: Word,
     isSelected: Boolean,
     onToggle: () -> Unit,
+    onDismiss: () -> Unit,
 ) {
     val rarityColor = Color(word.rarity.colorArgb)
     Row(
@@ -153,7 +183,7 @@ private fun ProblemWordRow(
             .fillMaxWidth()
             .padding(horizontal = 8.dp, vertical = 6.dp),
         verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
     ) {
         Checkbox(
             checked = isSelected,
@@ -178,5 +208,12 @@ private fun ProblemWordRow(
             )
         }
         RarityBadge(rarity = word.rarity)
+        IconButton(onClick = onDismiss) {
+            Icon(
+                imageVector = Icons.Default.Delete,
+                contentDescription = "Убрать из проблемных",
+                tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
+            )
+        }
     }
 }

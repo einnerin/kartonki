@@ -82,9 +82,11 @@ data class SettingsUiState(
     // Problem words block
     val problemWordsEnabled: Boolean = true,
     val problemWordsMinEncounters: Int = 2,
-    val problemWordsCorrectToLearn: Int = 1,
+    val problemWordsCorrectToLearn: Int = 1, // DEPRECATED: superseded by distinct-types mastery; kept in state only for flow back-compat
+    val dismissedProblemWordCount: Int = 0,
     val showMinEncountersPicker: Boolean = false,
-    val showCorrectToLearnPicker: Boolean = false,
+    val showCorrectToLearnPicker: Boolean = false, // DEPRECATED: picker removed from UI
+
     val isEditingName: Boolean = false,
     val nameInput: String = "",
     val showLanguagePicker: Boolean = false,
@@ -198,6 +200,7 @@ class SettingsViewModel @Inject constructor(
                         problemWordsEnabled          = current.problemWordsEnabled,
                         problemWordsMinEncounters    = current.problemWordsMinEncounters,
                         problemWordsCorrectToLearn   = current.problemWordsCorrectToLearn,
+                        dismissedProblemWordCount    = current.dismissedProblemWordCount,
                         showMinEncountersPicker      = current.showMinEncountersPicker,
                         showCorrectToLearnPicker     = current.showCorrectToLearnPicker,
                         // Preserve account state set by the authManager collector above
@@ -230,6 +233,8 @@ class SettingsViewModel @Inject constructor(
                 _uiState.update { it.copy(problemWordsCorrectToLearn = v) }
             }
         }
+        // Refresh dismissed-word count when the problem-words block is shown.
+        refreshDismissedCount()
         viewModelScope.launch {
             prefs.studyCorrectToCount.collect { v ->
                 _uiState.update { it.copy(studyCorrectToCount = v) }
@@ -327,11 +332,14 @@ class SettingsViewModel @Inject constructor(
         _uiState.update { it.copy(showMinEncountersPicker = false) }
     }
 
-    fun onShowCorrectToLearnPicker() = _uiState.update { it.copy(showCorrectToLearnPicker = true) }
-    fun onDismissCorrectToLearnPicker() = _uiState.update { it.copy(showCorrectToLearnPicker = false) }
-    fun onCorrectToLearnSelected(n: Int) {
-        prefs.setProblemWordsCorrectToLearn(n)
-        _uiState.update { it.copy(showCorrectToLearnPicker = false) }
+    private fun refreshDismissedCount() {
+        _uiState.update { it.copy(dismissedProblemWordCount = prefs.getDismissedProblemWordIds().size) }
+    }
+
+    /** Clears the "removed from problem-words" list so those words can show up again. */
+    fun onRestoreDismissedProblemWords() {
+        prefs.clearDismissedProblemWordIds()
+        refreshDismissedCount()
     }
 
     fun onSignOutClick() = _uiState.update { it.copy(showSignOutDialog = true) }

@@ -246,7 +246,8 @@ class StudyViewModel @Inject constructor(
         val problemCount = if (problemEnabled) {
             val source = prefs.problemWordsSource.first()
             val minEnc = prefs.problemWordsMinEncounters.first()
-            statsRepository.getProblemWordCount(source, minEnc)
+            val dismissed = prefs.getDismissedProblemWordIds()
+            statsRepository.getProblemWordCount(source, minEnc, dismissed)
         } else 0
         val wasHintShown = prefs.isProblemChipHintShown()
         val showHint = problemCount > 0 && !wasHintShown

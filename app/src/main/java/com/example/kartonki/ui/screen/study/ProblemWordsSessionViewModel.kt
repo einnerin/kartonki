@@ -115,10 +115,11 @@ class ProblemWordsSessionViewModel @Inject constructor(
             val excludedIds = prefs.getSessionExcludedWordIds()
             prefs.clearSessionExcludedWordIds()
             val dismissedIds = prefs.getDismissedProblemWordIds()
-            val allWords = statsRepository.getProblemWords(source, minEncounters, limit = 200)
-            val words = allWords
-                .filter { it.id !in dismissedIds }
-                .let { if (excludedIds.isEmpty()) it else it.filter { w -> w.id !in excludedIds } }
+            val allWords = statsRepository.getProblemWords(
+                source, minEncounters, limit = 200, dismissedIds = dismissedIds,
+            )
+            val words = if (excludedIds.isEmpty()) allWords
+                        else allWords.filter { it.id !in excludedIds }
             if (words.isEmpty()) {
                 _uiState.update { it.copy(isLoading = false, isEmpty = true, isDisabled = false) }
                 return@launch

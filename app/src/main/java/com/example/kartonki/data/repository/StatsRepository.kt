@@ -76,17 +76,22 @@ class StatsRepository @Inject constructor(
      * at least [minEncounters] attempts, sorted worst-first.
      *
      * @param source "both" | "pve_only" | "pvp_only"
+     * @param dismissedIds word IDs the user permanently removed from the
+     *   problem-words list (via trash button in ProblemWordsListScreen).
+     *   These are filtered out regardless of their error rate.
      */
     suspend fun getProblemWords(
         source: String = "both",
         minEncounters: Int = 2,
         minErrorRate: Float = 0.30f,
         limit: Int = 25,
+        dismissedIds: Set<Long> = emptySet(),
     ): List<Word> {
         val allProgress = progressDao.getAll()
         val wordMap = wordDao.getAllWordsOnce().associateBy { it.id }
 
         return allProgress.mapNotNull { p ->
+            if (p.wordId in dismissedIds) return@mapNotNull null
             val word = wordMap[p.wordId] ?: return@mapNotNull null
             val (encounters, errors) = when (source) {
                 "pve_only" -> {
@@ -127,8 +132,11 @@ class StatsRepository @Inject constructor(
     }
 
     /** Returns the number of problem words matching the given source filter. */
-    suspend fun getProblemWordCount(source: String = "both", minEncounters: Int = 2): Int =
-        getProblemWords(source, minEncounters).size
+    suspend fun getProblemWordCount(
+        source: String = "both",
+        minEncounters: Int = 2,
+        dismissedIds: Set<Long> = emptySet(),
+    ): Int = getProblemWords(source, minEncounters, dismissedIds = dismissedIds).size
 
     private fun calculateCurrentStreak(sortedDesc: List<Long>): Int {
         if (sortedDesc.isEmpty()) return 0

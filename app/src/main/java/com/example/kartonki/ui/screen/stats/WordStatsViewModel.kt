@@ -65,7 +65,8 @@ class WordStatsViewModel @Inject constructor(
         _uiState.update { it.copy(isLoading = true) }
         rawWordStats = statsRepository.getWordStats()
         val source = prefs.problemWordsSource.first()
-        val problemCount = statsRepository.getProblemWordCount(source)
+        val dismissed = prefs.getDismissedProblemWordIds()
+        val problemCount = statsRepository.getProblemWordCount(source, dismissedIds = dismissed)
         _uiState.update { state ->
             state.copy(
                 isLoading = false,
