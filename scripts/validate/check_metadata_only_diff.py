@@ -32,8 +32,8 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='repla
 #       --flip-safety-flag  → removes isFillInBlankSafe = false
 # Both leading-comma and trailing-comma forms are matched so trailing-comma
 # DSL lines don't produce false positives.
-_SAFE_MARKER = re.compile(r'(?:, | )isFillInBlankSafe\s*=\s*false')
-_EXCL_MARKER = re.compile(r'(?:, | )fillInBlankExclusions\s*=\s*listOf\([^)]*\)')
+_SAFE_MARKER = re.compile(r',?\s*isFillInBlankSafe\s*=\s*false')
+_EXCL_MARKER = re.compile(r',?\s*fillInBlankExclusions\s*=\s*listOf\([^)]*\)')
 _METADATA_MARKERS = [_SAFE_MARKER, _EXCL_MARKER]
 
 _DATA_DIR_PREFIX = "app/src/main/java/com/example/kartonki/data/"
@@ -121,22 +121,35 @@ def validate(diff_file: str | None = None) -> int:
             # Bumped by any data commit; version change is required-adjacent,
             # not a content edit. Hook block 2c enforces the bump elsewhere.
             continue
-        if len(removed) != len(added):
-            violations.append((
-                kt_file,
-                f"hunk counts differ: {len(removed)} removed vs {len(added)} added "
-                f"— not a pure marker injection",
-            ))
-            continue
-        for r_line, a_line in zip(removed, added):
-            if normalize_line(r_line) != normalize_line(a_line):
-                r_short = r_line.rstrip()[:110]
-                a_short = a_line.rstrip()[:110]
+        # First try line-by-line comparison (strict). If counts differ, fall
+        # back to joined-whitespace-collapsed comparison — this handles the
+        # case where apply/flip collapse multi-line WordEntity declarations
+        # (e.g. `isFillInBlankSafe = false),` on its own line gets folded into
+        # the previous line after the flag is removed or an exclusion is added).
+        if len(removed) == len(added):
+            for r_line, a_line in zip(removed, added):
+                if normalize_line(r_line) != normalize_line(a_line):
+                    r_short = r_line.rstrip()[:110]
+                    a_short = a_line.rstrip()[:110]
+                    violations.append((
+                        kt_file,
+                        f"non-whitelisted change:\n"
+                        f"      - {r_short}\n"
+                        f"      + {a_short}",
+                    ))
+        else:
+            # Joined comparison: concatenate all removed lines, all added lines,
+            # strip markers, collapse whitespace. If the normalized concatenations
+            # match, it's a pure marker edit that happened to collapse lines.
+            r_joined = re.sub(r'\s+', ' ', normalize_line(' '.join(removed))).strip()
+            a_joined = re.sub(r'\s+', ' ', normalize_line(' '.join(added))).strip()
+            if r_joined != a_joined:
                 violations.append((
                     kt_file,
-                    f"non-whitelisted change:\n"
-                    f"      - {r_short}\n"
-                    f"      + {a_short}",
+                    f"hunk counts differ ({len(removed)} removed vs {len(added)} added)\n"
+                    f"      and content doesn't match after normalization:\n"
+                    f"      - {r_joined[:110]}\n"
+                    f"      + {a_joined[:110]}",
                 ))
 
     if violations:
