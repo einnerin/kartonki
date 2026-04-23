@@ -89,7 +89,8 @@ def parse_hunks(diff_text: str):
 
 
 def normalize_line(line: str) -> str:
-    """Strip any whitelisted metadata marker from a line.
+    """Strip any whitelisted metadata marker from a line, then collapse
+    whitespace.
 
     Applied to BOTH removed and added lines — then they must be equal for the
     diff to count as a pure metadata change. This accommodates both:
@@ -97,10 +98,14 @@ def normalize_line(line: str) -> str:
         added → equals removed)
       * REMOVAL of a marker (removed has one, added has none → normalize
         removed → equals added)
+
+    Whitespace collapsing handles tiny indentation drift that --apply/--flip
+    introduce on multi-line WordEntity declarations (e.g. the closing `)` being
+    shifted by one space when a field is inlined before it).
     """
     for pat in _METADATA_MARKERS:
         line = pat.sub('', line, count=1)
-    return line
+    return re.sub(r'\s+', ' ', line).strip()
 
 
 def validate(diff_file: str | None = None) -> int:
