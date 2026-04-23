@@ -79,8 +79,9 @@ fun ProblemWordsSessionScreen(
                 uiState.isSessionComplete -> ProblemWordsCompleteContent(
                     correctCount     = uiState.correctCount,
                     incorrectCount   = uiState.incorrectCount,
-                    improvedCount    = uiState.improvedCount,
                     learnedCount     = uiState.learnedCount,
+                    progressedCount  = uiState.progressedCount,
+                    noProgressCount  = uiState.noProgressCount,
                     wordsStudied     = uiState.wordsStudied,
                     showSettingsHint = uiState.showSettingsHint,
                     onNewSession     = { viewModel.loadSession() },
@@ -169,8 +170,9 @@ private fun ProblemWordsEmptyContent(modifier: Modifier = Modifier, onBack: () -
 private fun ProblemWordsCompleteContent(
     correctCount: Int,
     incorrectCount: Int,
-    improvedCount: Int,
     learnedCount: Int,
+    progressedCount: Int,
+    noProgressCount: Int,
     wordsStudied: Int,
     showSettingsHint: Boolean,
     onNewSession: () -> Unit,
@@ -184,10 +186,10 @@ private fun ProblemWordsCompleteContent(
         verticalArrangement = Arrangement.Center,
     ) {
         val emoji = when {
-            learnedCount > 0                  -> "🏆"
-            improvedCount >= wordsStudied / 2 -> "🎉"
-            improvedCount > 0                 -> "📈"
-            else                              -> "💪"
+            learnedCount > 0                       -> "🏆"
+            progressedCount >= wordsStudied / 2    -> "🎉"
+            progressedCount > 0                    -> "📈"
+            else                                   -> "💪"
         }
         Text(emoji, style = MaterialTheme.typography.displayLarge)
         Spacer(Modifier.height(12.dp))
@@ -217,47 +219,43 @@ private fun ProblemWordsCompleteContent(
 
         Spacer(Modifier.height(20.dp))
 
-        // Learned words (mastered in problem sessions)
+        // Learned (mastered) — removed from problem list
         if (learnedCount > 0) {
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .background(ColorCorrect.copy(alpha = 0.12f), RoundedCornerShape(12.dp))
-                    .padding(horizontal = 20.dp, vertical = 14.dp),
-                contentAlignment = Alignment.Center,
-            ) {
-                Text(
-                    text = "✅ Усвоено слов: $learnedCount — они убраны из списка ошибок",
-                    style = MaterialTheme.typography.bodyMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    color = ColorCorrect,
-                    textAlign = TextAlign.Center,
-                )
-            }
-            Spacer(Modifier.height(12.dp))
+            OutcomeBanner(
+                emoji = "🏆",
+                text = "Выучено: $learnedCount — слова убраны из работы над ошибками",
+                color = ColorCorrect,
+            )
+            Spacer(Modifier.height(8.dp))
         }
 
-        // Improvement summary
-        val improvementColor = if (improvedCount > 0) ColorCorrect else ColorWarning
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .background(improvementColor.copy(alpha = 0.12f), RoundedCornerShape(12.dp))
-                .padding(horizontal = 20.dp, vertical = 14.dp),
-            contentAlignment = Alignment.Center,
-        ) {
-            Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(
-                    text = if (improvedCount > 0)
-                        s.problemWordsImproved(improvedCount, wordsStudied)
-                    else
-                        s.problemWordsNoImprovement,
-                    style = MaterialTheme.typography.bodyMedium,
-                    fontWeight = FontWeight.SemiBold,
-                    color = improvementColor,
-                    textAlign = TextAlign.Center,
-                )
-            }
+        // Progressed — closer to mastery but not yet there
+        if (progressedCount > 0) {
+            OutcomeBanner(
+                emoji = "📈",
+                text = "В процессе: $progressedCount — засчитан новый тип задания",
+                color = ColorWarning,
+            )
+            Spacer(Modifier.height(8.dp))
+        }
+
+        // No progress — session touched them but no new type mastered
+        if (noProgressCount > 0) {
+            OutcomeBanner(
+                emoji = "💪",
+                text = "Ещё работаем: $noProgressCount — прогресса в этой сессии нет",
+                color = ColorIncorrect,
+            )
+            Spacer(Modifier.height(8.dp))
+        }
+
+        // Fallback if all three counters are zero (defensive — shouldn't happen)
+        if (learnedCount == 0 && progressedCount == 0 && noProgressCount == 0) {
+            OutcomeBanner(
+                emoji = "💪",
+                text = s.problemWordsNoImprovement,
+                color = ColorWarning,
+            )
         }
 
         // Settings hint (shown only after first completed session)
@@ -298,6 +296,31 @@ private fun ProblemWordsCompleteContent(
         Spacer(Modifier.height(12.dp))
         OutlinedButton(onClick = onNavigateBack, modifier = Modifier.fillMaxWidth()) {
             Text(s.problemWordsBack)
+        }
+    }
+}
+
+@Composable
+private fun OutcomeBanner(
+    emoji: String,
+    text: String,
+    color: Color,
+) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .background(color.copy(alpha = 0.12f), RoundedCornerShape(12.dp))
+            .padding(horizontal = 16.dp, vertical = 12.dp),
+    ) {
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            Text(emoji, style = MaterialTheme.typography.titleLarge)
+            Text(
+                text = text,
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = FontWeight.SemiBold,
+                color = color,
+                modifier = Modifier.weight(1f),
+            )
         }
     }
 }
