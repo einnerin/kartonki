@@ -8,8 +8,10 @@ import com.example.kartonki.data.repository.AchievementRepository
 import com.example.kartonki.data.repository.PackRepository
 import com.example.kartonki.data.repository.ProgressRepository
 import com.example.kartonki.data.repository.StatsRepository
+import com.example.kartonki.domain.model.StudyQuizType
 import com.example.kartonki.domain.model.StudyStep
 import com.example.kartonki.domain.model.Word
+import com.example.kartonki.domain.quiz.QuizBuilder
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -31,6 +33,10 @@ data class ProblemSessionUiState(
     val answerState: AnswerState = AnswerState.Unanswered,
     val improvedCount: Int = 0,
     val learnedCount: Int = 0,
+    /** Words that advanced at least one distinct quiz type but didn't reach mastery. */
+    val progressedCount: Int = 0,
+    /** Words that participated in the session but didn't add any new correctly-answered quiz type. */
+    val noProgressCount: Int = 0,
     val wordsStudied: Int = 0,
     val showSettingsHint: Boolean = false,
 ) {
@@ -58,12 +64,21 @@ class ProblemWordsSessionViewModel @Inject constructor(
 
     // Snapshot of error rates before the session, for improvement comparison
     private var beforeErrorRates: Map<Long, Float> = emptyMap()
-    // Track per-word session results (wordId → correct/incorrect during this session)
+    // Per-word results during this session: total correct/incorrect counts
     private val sessionCorrect: MutableMap<Long, Int> = mutableMapOf()
     private val sessionIncorrect: MutableMap<Long, Int> = mutableMapOf()
-
-    // Setting: how many correct answers in problem sessions total = mastered
-    private var correctToLearn: Int = 1
+    // Per-word set of NEW distinct quiz types answered correctly in this session
+    // (types not already in the stored "mastered-types" set). Used at session
+    // end to decide mastery and to report per-word progress.
+    private val sessionNewTypes: MutableMap<Long, MutableSet<StudyQuizType>> = mutableMapOf()
+    // Snapshot of stored mastered types at session start, so we can detect
+    // "this session added a NEW type" vs "type was already counted".
+    private var beforeMasteredTypes: Map<Long, Set<StudyQuizType>> = emptyMap()
+    // Per-word set of available quiz types (what's physically possible for the
+    // word given current word pool and user settings). Mastery threshold is
+    // capped at this size — a word with only 2 available types is mastered
+    // when both types are correctly answered.
+    private var availableTypesByWord: Map<Long, Set<StudyQuizType>> = emptyMap()
 
     init {
         loadSession()
@@ -79,11 +94,14 @@ class ProblemWordsSessionViewModel @Inject constructor(
                     incorrectCount = 0,
                     answerState = AnswerState.Unanswered,
                     learnedCount = 0,
+                    progressedCount = 0,
+                    noProgressCount = 0,
                     showSettingsHint = false,
                 )
             }
             sessionCorrect.clear()
             sessionIncorrect.clear()
+            sessionNewTypes.clear()
 
             val enabled = prefs.problemWordsEnabled.first()
             if (!enabled) {
@@ -93,13 +111,14 @@ class ProblemWordsSessionViewModel @Inject constructor(
 
             val source = prefs.problemWordsSource.first()
             val minEncounters = prefs.problemWordsMinEncounters.first()
-            correctToLearn = prefs.problemWordsCorrectToLearn.first()
 
             val excludedIds = prefs.getSessionExcludedWordIds()
             prefs.clearSessionExcludedWordIds()
+            val dismissedIds = prefs.getDismissedProblemWordIds()
             val allWords = statsRepository.getProblemWords(source, minEncounters, limit = 200)
-            val words = if (excludedIds.isEmpty()) allWords
-                        else allWords.filter { it.id !in excludedIds }
+            val words = allWords
+                .filter { it.id !in dismissedIds }
+                .let { if (excludedIds.isEmpty()) it else it.filter { w -> w.id !in excludedIds } }
             if (words.isEmpty()) {
                 _uiState.update { it.copy(isLoading = false, isEmpty = true, isDisabled = false) }
                 return@launch
@@ -108,7 +127,30 @@ class ProblemWordsSessionViewModel @Inject constructor(
             // Snapshot before-state error rates
             beforeErrorRates = buildBeforeSnapshot(words)
 
-            val steps = buildQuizStepsFromPrefs(prefs, words)
+            // Load stored mastered-types map, filtered to session words. Use to
+            // (a) exclude already-passed types from quiz generation (variety),
+            // (b) decide at session end whether a word reached mastery.
+            beforeMasteredTypes = prefs.getProblemSessionMasteredTypes()
+                .mapValues { (_, names) ->
+                    names.mapNotNull { runCatching { StudyQuizType.valueOf(it) }.getOrNull() }.toSet()
+                }
+                .filterKeys { it in words.map(Word::id).toSet() }
+
+            // Compute what quiz types are physically possible for each word,
+            // given the current pool and user settings. Mastery threshold is
+            // capped at this size (so a 1-type word is mastered with 1 answer).
+            val definitionMode = prefs.definitionQuizMode.first()
+            val fillBlankMode  = prefs.fillBlankQuizMode.first()
+            val enabledTypes   = prefs.quizTypesEnabled.first()
+            availableTypesByWord = words.associate { w ->
+                w.id to QuizBuilder.availableQuizTypesFor(w, words, definitionMode, fillBlankMode, enabledTypes)
+            }
+
+            val steps = buildQuizStepsFromPrefs(
+                prefs = prefs,
+                words = words,
+                excludedTypesByWord = beforeMasteredTypes,
+            )
             _uiState.update {
                 it.copy(
                     isLoading = false,
@@ -150,8 +192,17 @@ class ProblemWordsSessionViewModel @Inject constructor(
     private fun recordAnswer(step: StudyStep.Quiz, isCorrect: Boolean, selected: String) {
         val wordId = step.word.id
         val failsBefore = sessionIncorrect[wordId] ?: 0
-        if (isCorrect) sessionCorrect[wordId] = (sessionCorrect[wordId] ?: 0) + 1
-        else sessionIncorrect[wordId] = (sessionIncorrect[wordId] ?: 0) + 1
+        if (isCorrect) {
+            sessionCorrect[wordId] = (sessionCorrect[wordId] ?: 0) + 1
+            // Track NEW mastered types only — types already in the stored set
+            // before the session started don't add fresh progress.
+            val alreadyMastered = beforeMasteredTypes[wordId].orEmpty()
+            if (step.type !in alreadyMastered) {
+                sessionNewTypes.getOrPut(wordId) { mutableSetOf() }.add(step.type)
+            }
+        } else {
+            sessionIncorrect[wordId] = (sessionIncorrect[wordId] ?: 0) + 1
+        }
 
         _uiState.update {
             it.copy(
@@ -188,14 +239,16 @@ class ProblemWordsSessionViewModel @Inject constructor(
             val totalSteps = _uiState.value.steps.size
             viewModelScope.launch {
                 val improved = computeImprovedCount()
-                val learned  = applyMasteryAndCount()
+                val progress = applyMasteryAndCount()
                 val showHint = !prefs.isProblemWordsHintShown()
                 if (showHint) prefs.setProblemWordsHintShown()
                 _uiState.update {
                     it.copy(
                         isSessionComplete = true,
-                        improvedCount = improved,
-                        learnedCount  = learned,
+                        improvedCount    = improved,
+                        learnedCount     = progress.mastered,
+                        progressedCount  = progress.progressed,
+                        noProgressCount  = progress.noProgress,
                         showSettingsHint = showHint,
                     )
                 }
@@ -216,7 +269,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
                     analytics.log(
                         com.example.kartonki.analytics.AnalyticsEvent.ProblemWordsSessionCompleted(
                             wordsReviewed = sessionCorrect.size + sessionIncorrect.size,
-                            learnedCount = learned,
+                            learnedCount = progress.mastered,
                             failStreakWords = failStreakWords,
                         )
                     )
@@ -244,27 +297,64 @@ class ProblemWordsSessionViewModel @Inject constructor(
     }
 
     /**
-     * Accumulates correct problem-session counts across sessions.
-     * Returns the number of words that newly reached the mastery threshold.
+     * Three-bucket summary of what happened this session:
+     *  - [mastered]: words that reached the distinct-types threshold this session
+     *    (removed from problem list; level bumped to max).
+     *  - [progressed]: words that added ≥1 new distinct quiz type but didn't reach
+     *    mastery yet.
+     *  - [noProgress]: words that participated but didn't add any new type
+     *    (all their session answers were either wrong or on types already counted).
      */
-    private suspend fun applyMasteryAndCount(): Int {
-        val storedCounts = prefs.getProblemSessionCounts().toMutableMap()
-        var masteredThisSession = 0
+    private data class MasteryOutcome(
+        val mastered: Int,
+        val progressed: Int,
+        val noProgress: Int,
+    )
 
-        for ((wordId, correctInSession) in sessionCorrect) {
-            val newTotal = (storedCounts[wordId] ?: 0) + correctInSession
-            if (newTotal >= correctToLearn) {
-                // Word is mastered — clear its error rate and reset its counter
+    /**
+     * Applies the session's new correctly-answered quiz types to the stored
+     * per-word type-set, masters words that reached the threshold, and returns
+     * a summary of how every session word fared.
+     *
+     * Mastery threshold for a word: min([StudyConstants.MASTERY_DISTINCT_TYPES],
+     * size of [availableTypesByWord] for that word). This cap handles words
+     * that physically can't hit 3 types (e.g. missing definition/example).
+     */
+    private suspend fun applyMasteryAndCount(): MasteryOutcome {
+        val storedBefore = beforeMasteredTypes
+        val storedNext = storedBefore
+            .mapValues { (_, set) -> set.toMutableSet() }
+            .toMutableMap()
+
+        var mastered = 0
+        var progressed = 0
+        var noProgress = 0
+
+        val sessionWordIds = sessionCorrect.keys + sessionIncorrect.keys
+        for (wordId in sessionWordIds) {
+            val newTypes = sessionNewTypes[wordId].orEmpty()
+            if (newTypes.isEmpty()) {
+                noProgress++
+                continue
+            }
+            val merged = (storedNext[wordId] ?: mutableSetOf()).apply { addAll(newTypes) }
+            storedNext[wordId] = merged
+
+            val availableSize = availableTypesByWord[wordId]?.size ?: StudyConstants.MASTERY_DISTINCT_TYPES
+            val threshold = minOf(StudyConstants.MASTERY_DISTINCT_TYPES, availableSize).coerceAtLeast(1)
+            if (merged.size >= threshold) {
                 masterWord(wordId)
-                storedCounts.remove(wordId)
-                masteredThisSession++
+                storedNext.remove(wordId)
+                mastered++
             } else {
-                storedCounts[wordId] = newTotal
+                progressed++
             }
         }
 
-        prefs.setProblemSessionCounts(storedCounts)
-        return masteredThisSession
+        prefs.setProblemSessionMasteredTypes(
+            storedNext.mapValues { (_, set) -> set.map { it.name }.toSet() }
+        )
+        return MasteryOutcome(mastered = mastered, progressed = progressed, noProgress = noProgress)
     }
 
     /**

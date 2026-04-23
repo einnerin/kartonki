@@ -34,7 +34,9 @@ class UserPreferencesRepository @Inject constructor(
         const val PROBLEM_WORDS_MIN_ENCOUNTERS  = "problem_words_min_enc"  // Int: 1/2/3/5/10
         const val PROBLEM_WORDS_CORRECT_TO_LEARN = "problem_words_ctl"     // Int: 1/2/3/5
         const val PROBLEM_WORDS_HINT_SHOWN      = "problem_words_hint"     // Boolean
-        const val PROBLEM_SESSION_COUNTS        = "problem_session_counts" // "id:count,id:count,..."
+        const val PROBLEM_SESSION_COUNTS        = "problem_session_counts" // DEPRECATED: "id:count,id:count,..." — replaced by PROBLEM_SESSION_MASTERED_TYPES
+        const val PROBLEM_SESSION_MASTERED_TYPES = "problem_session_mastered_types" // "id:type1|type2;id:type1,..." — distinct quiz types answered correctly per word
+        const val PROBLEM_WORDS_DISMISSED_IDS   = "problem_words_dismissed" // "id,id,..." — words the user removed from problem list permanently
         const val SESSION_EXCLUDED_WORD_IDS     = "session_excluded_ids"  // "id,id,..." temp
         const val PROBLEM_CHIP_HINT_SHOWN       = "problem_chip_hint"     // Boolean
         const val WORD_DATA_VERSION             = "word_data_version"          // Int
@@ -109,7 +111,11 @@ class UserPreferencesRepository @Inject constructor(
     fun isProblemWordsHintShown(): Boolean = prefs.getBoolean(Keys.PROBLEM_WORDS_HINT_SHOWN, false)
     fun setProblemWordsHintShown() = prefs.edit().putBoolean(Keys.PROBLEM_WORDS_HINT_SHOWN, true).apply()
 
-    /** Returns the number of correct problem-session answers accumulated per word: wordId → count. */
+    /**
+     * DEPRECATED: superseded by [getProblemSessionMasteredTypes]. Kept only for
+     * removal/migration of old data. Will be cleaned from prefs on next
+     * [setProblemSessionMasteredTypes] write.
+     */
     fun getProblemSessionCounts(): Map<Long, Int> {
         val raw = prefs.getString(Keys.PROBLEM_SESSION_COUNTS, null) ?: return emptyMap()
         return raw.split(",").mapNotNull { entry ->
@@ -122,6 +128,55 @@ class UserPreferencesRepository @Inject constructor(
     fun setProblemSessionCounts(counts: Map<Long, Int>) {
         val raw = counts.entries.joinToString(",") { "${it.key}:${it.value}" }
         prefs.edit().putString(Keys.PROBLEM_SESSION_COUNTS, raw).apply()
+    }
+
+    /**
+     * Returns the set of quiz-type names (StudyQuizType.name) that the user has
+     * correctly answered for each word across problem-word sessions.
+     * When a word accumulates [StudyConstants.MASTERY_DISTINCT_TYPES] distinct
+     * types (or all available types, whichever is smaller), it is mastered and
+     * removed from this map.
+     *
+     * Serialization format: "wordId:type1|type2|type3;wordId2:type1" where `;`
+     * separates word entries and `|` separates type names within one word.
+     */
+    fun getProblemSessionMasteredTypes(): Map<Long, Set<String>> {
+        val raw = prefs.getString(Keys.PROBLEM_SESSION_MASTERED_TYPES, null) ?: return emptyMap()
+        return raw.split(";").mapNotNull { entry ->
+            if (entry.isBlank()) return@mapNotNull null
+            val parts = entry.split(":", limit = 2)
+            if (parts.size == 2) {
+                val id = parts[0].toLongOrNull() ?: return@mapNotNull null
+                val types = parts[1].split("|").filter { it.isNotBlank() }.toSet()
+                id to types
+            } else null
+        }.toMap()
+    }
+
+    fun setProblemSessionMasteredTypes(byWord: Map<Long, Set<String>>) {
+        val raw = byWord.entries
+            .filter { it.value.isNotEmpty() }
+            .joinToString(";") { (id, types) -> "$id:${types.joinToString("|")}" }
+        prefs.edit()
+            .putString(Keys.PROBLEM_SESSION_MASTERED_TYPES, raw)
+            // Old counter-based format is obsolete once we migrate to types.
+            .remove(Keys.PROBLEM_SESSION_COUNTS)
+            .apply()
+    }
+
+    /** Words the user has permanently removed from the problem-words list (via trash button). */
+    fun getDismissedProblemWordIds(): Set<Long> {
+        val raw = prefs.getString(Keys.PROBLEM_WORDS_DISMISSED_IDS, null) ?: return emptySet()
+        return raw.split(",").mapNotNull { it.toLongOrNull() }.toSet()
+    }
+
+    fun addDismissedProblemWordId(id: Long) {
+        val updated = getDismissedProblemWordIds() + id
+        prefs.edit().putString(Keys.PROBLEM_WORDS_DISMISSED_IDS, updated.joinToString(",")).apply()
+    }
+
+    fun clearDismissedProblemWordIds() {
+        prefs.edit().remove(Keys.PROBLEM_WORDS_DISMISSED_IDS).apply()
     }
 
     /** Temporarily stores word IDs the user excluded from the next problem session. */

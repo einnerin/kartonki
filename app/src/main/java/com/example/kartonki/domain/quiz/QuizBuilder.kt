@@ -21,24 +21,36 @@ object QuizBuilder {
         definitionMode: String = "both",
         fillBlankMode: String = "both",
         enabledTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
+        excludedTypesByWord: Map<Long, Set<StudyQuizType>> = emptyMap(),
     ): List<StudyStep.Quiz> {
         // Merge session words with extra distractor words (deduplicated). The extras are never
         // shown as quiz questions — they only appear as wrong-answer options.
         val fullPool = (words + distractorPool).distinctBy { it.id }
         return words.shuffled().map { word ->
-            buildQuizStep(word, pickQuizType(word, words, definitionMode, fillBlankMode, enabledTypes), words, fullPool)
+            val excluded = excludedTypesByWord[word.id] ?: emptySet()
+            buildQuizStep(
+                word,
+                pickQuizType(word, words, definitionMode, fillBlankMode, enabledTypes, excluded),
+                words,
+                fullPool,
+            )
         }
     }
 
-    // internal = accessible from the test source-set (same module) but not from outside the module
-    internal fun pickQuizType(
+    /**
+     * Returns the set of quiz types that are physically possible for [word] given
+     * the current [allWords] pool and user settings. Used by both [pickQuizType]
+     * and by the ProblemWords mastery logic (to cap the "3 distinct types"
+     * requirement at the number of types actually available for the word).
+     */
+    fun availableQuizTypesFor(
         word: Word,
         allWords: List<Word>,
         definitionMode: String = "both",
         fillBlankMode: String = "both",
         enabledTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
-    ): StudyQuizType {
-        val available = mutableListOf<StudyQuizType>()
+    ): Set<StudyQuizType> {
+        val available = mutableSetOf<StudyQuizType>()
 
         if ("translation" in enabledTypes && allWords.size >= 4)
             available.add(StudyQuizType.MULTIPLE_CHOICE_TRANSLATION)
@@ -59,25 +71,44 @@ object QuizBuilder {
         }
 
         if ("fill_blank" in enabledTypes) {
-            // isFillInBlankSafe=false now marks only the hopeless cases:
-            // form_mismatch (original != form in example → broken "___s" blank)
-            // and truly generic examples (exclusion list would span the whole set).
-            // Same-semanticGroup ambiguity is handled at runtime by
-            // fillInBlankExclusions, not by skipping the quiz entirely.
+            // isFillInBlankSafe=false marks hopeless cases (form_mismatch or truly
+            // generic examples); same-semanticGroup ambiguity is handled by
+            // fillInBlankExclusions at distractor-pick time.
             // See docs/claude/fill-in-blank-pipeline.md.
-            //
-            // Weight boost: added twice to the pool so FILL_IN_BLANK gets ~2/7 pick
-            // probability (vs ~1/7 for each other type). Rationale: FILL_IN_BLANK is
-            // the most engaging recall-from-context quiz, and the exclusions pipeline
-            // now guarantees non-frustrating distractors — so it's worth making
-            // noticeably more common than translation/definition quizzes.
             if (word.example != null && word.isFillInBlankSafe && allWords.size >= 4) {
-                available.add(StudyQuizType.FILL_IN_BLANK)
                 available.add(StudyQuizType.FILL_IN_BLANK)
             }
         }
 
-        return if (available.isEmpty()) StudyQuizType.MULTIPLE_CHOICE_TRANSLATION else available.random()
+        return available
+    }
+
+    // internal = accessible from the test source-set (same module) but not from outside the module
+    internal fun pickQuizType(
+        word: Word,
+        allWords: List<Word>,
+        definitionMode: String = "both",
+        fillBlankMode: String = "both",
+        enabledTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
+        excludedTypes: Set<StudyQuizType> = emptySet(),
+    ): StudyQuizType {
+        val available = availableQuizTypesFor(word, allWords, definitionMode, fillBlankMode, enabledTypes)
+        // Filter out types the caller doesn't want (e.g. already-mastered types in
+        // problem-word sessions). If that leaves nothing, fall back to the full
+        // available set — caller's exclusion was aspirational, but a quiz must exist.
+        val pool = (available - excludedTypes).ifEmpty { available }
+        if (pool.isEmpty()) return StudyQuizType.MULTIPLE_CHOICE_TRANSLATION
+
+        // Weight FILL_IN_BLANK twice (when present and not excluded) so it gets
+        // ~2× pick probability vs other types. Rationale: FILL_IN_BLANK is the
+        // most engaging recall-from-context quiz, and the exclusions pipeline
+        // guarantees non-frustrating distractors.
+        val weighted = if (StudyQuizType.FILL_IN_BLANK in pool) {
+            pool.toList() + StudyQuizType.FILL_IN_BLANK
+        } else {
+            pool.toList()
+        }
+        return weighted.random()
     }
 
     internal fun buildQuizStep(
