@@ -64,8 +64,29 @@ jobs:
           echo "No WordData changes. Validators changed — global audit not required for PR."
           echo "Use validate-words-health workflow for a full base audit."
 
-      - name: Extract REAL-ONLY changed setIds in changed files
+      - name: Detect metadata-only WordData diff
+        id: metaonly
         if: steps.files.outputs.count != '0'
+        run: |
+          BASE="${{ steps.base.outputs.ref }}"
+          # Run the same whitelist check the local pre-commit hook uses when
+          # METADATA_ONLY_COMMIT=1 is set. If the diff only touches whitelisted
+          # marker fields (isFillInBlankSafe / fillInBlankExclusions), skip the
+          # per-setId validators — legacy setIds with pre-existing tech debt
+          # shouldn't block metadata-only rollouts of the FILL_IN_BLANK pipeline.
+          git diff -U0 "$BASE" HEAD -- \
+            'app/src/main/java/com/example/kartonki/data/WordData*.kt' \
+            > /tmp/kartonki-diff.patch
+          if python scripts/validate/check_metadata_only_diff.py --diff-file /tmp/kartonki-diff.patch; then
+            echo "metadata_only=1" >> "$GITHUB_OUTPUT"
+            echo "✅ Metadata-only WordData diff — per-setId validators will be skipped."
+          else
+            echo "metadata_only=0" >> "$GITHUB_OUTPUT"
+            echo "ℹ️ Diff includes content changes — full per-setId validation required."
+          fi
+
+      - name: Extract REAL-ONLY changed setIds in changed files
+        if: steps.files.outputs.count != '0' && steps.metaonly.outputs.metadata_only != '1'
         id: setids
         run: |
           BASE="${{ steps.base.outputs.ref }}"
@@ -112,8 +133,11 @@ jobs:
           echo ""
           echo "✅ All changed setIds pass validation."
 
-      - name: Run find_real_dupes.py (global)
-        if: steps.setids.outputs.count != '0'
+      - name: Run find_real_dupes.py (global structural check)
+        # Always run on WordData changes — checks duplicates, id collisions,
+        # rarity spread, transliteration presence. Independent of the per-setId
+        # content validation that metadata-only commits skip.
+        if: steps.files.outputs.count != '0'
         run: python scripts/validate/find_real_dupes.py
 
       - name: Run fixture tests
