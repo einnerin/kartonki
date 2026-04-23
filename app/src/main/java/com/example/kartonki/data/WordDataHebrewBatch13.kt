@@ -36,7 +36,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Инфекционная болезнь, быстро распространяющаяся среди населения.",
             example = "הַמִּתְמַחֶה לָמַד לְזַהוֹת מַגֵּפָה בְּשָׁלָב מוּקְדָּם.",
             exampleNative = "Интерн учился выявлять מַגֵּפָה на ранней стадии.",
-        ),
+         fillInBlankExclusions = listOf(106203L, 106204L, 106208L, 106210L, 106211L, 106224L)),
         WordEntity(
             id = 106202, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "khaysún",
@@ -72,7 +72,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Препарат, уничтожающий бактерии или подавляющий их рост.",
             example = "הָרוֹפֵא רָשַׁם אַנְטִיבְּיוֹטִיקָה לְשִׁבּוּעַ שְׁלֵמָה.",
             exampleNative = "Врач прописал אַנְטִיבְּיוֹטִיקָה на полную неделю.",
-        ),
+         fillInBlankExclusions = listOf(106216L, 106222L)),
         WordEntity(
             id = 106206, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "kushí nshimá",
@@ -81,7 +81,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Ощущение нехватки воздуха или затруднения при дыхании.",
             example = "הַחוֹלֶה הִלִּין עַל קוּשִׁי נְשִׁימָה בְּמַאֲמָץ.",
             exampleNative = "Пациент жаловался на קוּשִׁי נְשִׁימָה при нагрузке.",
-        ),
+         fillInBlankExclusions = listOf(106220L)),
 
         WordEntity(
             id = 106207, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -91,7 +91,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Медицинское состояние хронически повышенного артериального давления.",
             example = "הַמַּטּוּפֵּל מְטֻפָּל בְּיֶתֶר לַחַץ דָּם כְּבָר עֶשֶׂר שָׁנִים.",
             exampleNative = "Пациент лечится от יֶתֶר לַחַץ דָּם уже десять лет.",
-        ),
+         fillInBlankExclusions = listOf(106210L, 106211L, 106221L)),
         WordEntity(
             id = 106208, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "shabáts mokhí",
@@ -100,7 +100,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Нарушение кровоснабжения мозга, вызывающее неврологическое поражение.",
             example = "זִיהוּי מוּקְדָם שֶׁל שַׁבַּץ מוֹחִי מְשַׁפֵּר אֶת סִיכּוּיֵי הַהַחְלָמָה.",
             exampleNative = "Раннее выявление שַׁבַּץ מוֹחִי улучшает шансы на выздоровление.",
-        ),
+         fillInBlankExclusions = listOf(106203L, 106210L, 106211L, 106224L)),
         WordEntity(
             id = 106209, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "tguva alérgit",
@@ -118,7 +118,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Неспособность почек фильтровать отходы из крови.",
             example = "הַמִּתְמַחֶה עָקַב אַחַר סִמָּנֵי כִּשְׁלוֹן כְּלָיוֹת בְּדָם הַחוֹלֶה.",
             exampleNative = "Интерн следил за маркерами כִּשְׁלוֹן כְּלָיוֹת в крови пациента.",
-        ),
+         fillInBlankExclusions = listOf(106207L, 106211L)),
         WordEntity(
             id = 106211, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "tismónet",
@@ -127,7 +127,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Группа симптомов, появляющихся совместно и обусловленных одной причиной.",
             example = "הָרוֹפֵא זִיהָה תְּסְמֹנֶת נָדִירָה בָּחוֹלָה הַצְּעִירָה.",
             exampleNative = "Врач выявил редкую תְּסְמֹנֶת у молодой пациентки.",
-        ),
+         fillInBlankExclusions = listOf(106201L, 106209L, 106221L, 106224L)),
         WordEntity(
             id = 106212, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "tsnéter",
@@ -145,7 +145,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Взятие образца ткани из тела для микроскопического исследования.",
             example = "תּוֹצָאוֹת הַבִּיוֹפְּסִיָּה הִצְבִּיעוּ עַל גִּידוּל שָׁפִיר.",
             exampleNative = "Результаты בִּיוֹפְּסִיָּה указали на доброкачественную опухоль.",
-        ),
+         fillInBlankExclusions = listOf(106214L, 106215L)),
         WordEntity(
             id = 106214, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "sonografía",
@@ -154,7 +154,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Метод визуализации внутренних органов с помощью звуковых волн.",
             example = "הָרוֹפֵא שָׁלַח לִסוֹנוֹגְרַפְיָה שֶׁל הַבֶּטֶן לְאִישּׁוּר הָאִבְחוּן.",
             exampleNative = "Врач направил на סוֹנוֹגְרַפְיָה брюшной полости для подтверждения диагноза.",
-        ),
+         fillInBlankExclusions = listOf(106213L, 106215L)),
         WordEntity(
             id = 106215, setId = 1062, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "tomografía",
@@ -172,7 +172,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Медикаментозное лечение рака с помощью препаратов, уничтожающих раковые клетки.",
             example = "הַחוֹלֶה עָבַר כֶּמוֹתֶרַפְּיָה שֶׁל שֵׁשָּׁה מַחְזוֹרִים.",
             exampleNative = "Пациент прошёл шесть курсов химиотерапии.",
-        ),
+         fillInBlankExclusions = listOf(106222L)),
 
         WordEntity(
             id = 106217, setId = 1062, languagePair = "he-ru", rarity = "RARE",
@@ -200,7 +200,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Передача органа от одного человека другому в медицинских целях.",
             example = "הַמַּטּוּפֵּל חָתַם עַל טֹפֶס הַסְכָּמָה לְתְּרוּמַת אֵיבָר.",
             exampleNative = "Пациент подписал форму согласия на תְּרוּמַת אֵיבָר.",
-        ),
+         fillInBlankExclusions = listOf(106213L, 106216L, 106217L, 106218L, 106223L)),
         WordEntity(
             id = 106220, setId = 1062, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "hitkavút avavyá",
@@ -209,7 +209,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Непроизвольное сильное мышечное сокращение, иногда часть приступа.",
             example = "הַחוֹלֶה חָוָה הִתְכַּוּוּת עֲווּיָה וְנִזְדַּקֵּק לְהַרְגָּעָה מִיָּד.",
             exampleNative = "У пациента была הִתְכַּוּוּת עֲווּיָה, потребовавшая немедленной седации.",
-        ),
+         fillInBlankExclusions = listOf(106206L, 106208L, 106209L)),
         WordEntity(
             id = 106221, setId = 1062, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "makhalát toreshet",
@@ -237,7 +237,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Хирургическое удаление органа, опухоли или ткани.",
             example = "בֵּית הַחוֹלִים בִּצֵּעַ כְּרִיתָה שֶׁל הַגִּידוּל בְּהַצְלָחָה.",
             exampleNative = "Больница успешно выполнила כְּרִיתָה опухоли.",
-        ),
+         fillInBlankExclusions = listOf(106213L, 106217L, 106218L)),
         WordEntity(
             id = 106224, setId = 1062, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "metastazá",
@@ -246,7 +246,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Распространение раковых клеток в органы, удалённые от первичной опухоли.",
             example = "הָאוֹנְקוֹלוֹג מָצָא מֶטַסְטָזָה בָּכָּבֵד שֶׁל הַחוֹלֶה.",
             exampleNative = "Онколог обнаружил מֶטַסְטָזָה в печени пациента.",
-        ),
+         fillInBlankExclusions = listOf(106211L)),
 
                 WordEntity(id = 106225, setId = 1062, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "med_intern_advanced", transliteration = "khayavut refa'it",

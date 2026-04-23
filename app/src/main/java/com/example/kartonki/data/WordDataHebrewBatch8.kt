@@ -507,7 +507,7 @@ object WordDataHebrewBatch8 {
             definitionNative = "Человек, проживающий в здании как арендатор или владелец.",
             example = "כָּל הַדַּיָּרִים בַּבִּנְיָן הוּזְמְנוּ לְאַסֵּפַת הַוַּעַד.",
             exampleNative = "Все דַּיָּרִים в здании были приглашены на собрание комитета.",
-        ),
+         fillInBlankExclusions = listOf(104901L, 104910L, 104911L, 104920L)),
         WordEntity(
             id = 104903, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "building_communication", transliteration = "luakh moda'ot",
@@ -525,7 +525,7 @@ object WordDataHebrewBatch8 {
             definitionNative = "Контейнер для сбора мусора во дворе здания или на улице.",
             example = "הוֹרִידוּ אֶת הַפַּח אַשְׁפָּה עֶרֶב לִפְנֵי הָאֵסוּף.",
             exampleNative = "Выносите פַּח אַשְׁפָּה накануне вечером до сбора мусора.",
-        ),
+         fillInBlankExclusions = listOf(104906L, 104912L)),
         WordEntity(
             id = 104905, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "building_noise", transliteration = "resh",
@@ -543,7 +543,7 @@ object WordDataHebrewBatch8 {
             definitionNative = "Ограждение, окружающее двор или сад для обозначения границ.",
             example = "בָּנוּ גֶּדֶר חָדָשׁ בֵּין שְׁנֵי הַבָּתִּים.",
             exampleNative = "Построили новый גֶּדֶר между двумя домами.",
-        ),
+         fillInBlankExclusions = listOf(104904L)),
         WordEntity(
             id = 104907, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "building_parking", transliteration = "khanyon",
@@ -552,7 +552,7 @@ object WordDataHebrewBatch8 {
             definitionNative = "Площадь, предназначенная для стоянки автомобилей.",
             example = "הַבִּנְיָן יֵשׁ לוֹ חַנְיוֹן תַּת-קַרְקָעִי לְכָל הַדַּיָּרִים.",
             exampleNative = "В здании есть подземный חַנְיוֹן для всех жильцов.",
-        ),
+         fillInBlankExclusions = listOf(104917L, 104919L)),
         WordEntity(
             id = 104908, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "building_utilities", transliteration = "mone khashmal",
@@ -624,7 +624,7 @@ object WordDataHebrewBatch8 {
             definitionNative = "Человек, ответственный за обслуживание и управление зданием.",
             example = "מְנַהֵל הַבִּנְיָן הֻזְמַן לְתַקֵּן אֶת הַמַּעֲלִית שֶׁנִּשְׁבְּרָה.",
             exampleNative = "מְנַהֵל הַבִּנְיָן был вызван починить сломавшийся лифт.",
-        ),
+         fillInBlankExclusions = listOf(104916L)),
         WordEntity(
             id = 104916, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "building_management", transliteration = "iriya",
@@ -633,7 +633,7 @@ object WordDataHebrewBatch8 {
             definitionNative = "Местный орган власти, ответственный за управление городом.",
             example = "פָּנִינוּ לָעִירִיָּה בְּנוֹגֵעַ לְנֶזֶק בְּמַדְרָכָה.",
             exampleNative = "Мы обратились в עִירִיָּה по поводу повреждения тротуара.",
-        ),
+         fillInBlankExclusions = listOf(104915L)),
         WordEntity(
             id = 104917, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "building_parking", transliteration = "khaniya",
@@ -642,7 +642,7 @@ object WordDataHebrewBatch8 {
             definitionNative = "Специально отведённое место для стоянки транспортных средств.",
             example = "הַבִּנְיָן שֶׁלָּנוּ יֵשׁ בּוֹ חַנִּיָּה תַּת-קַרְקָעִית לְדַיָּרִים.",
             exampleNative = "В нашем здании есть подземная חַנִּיָּה для жильцов.",
-        ),
+         fillInBlankExclusions = listOf(104907L, 104919L)),
         WordEntity(
             id = 104918, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home_celebrations", transliteration = "khanukat bayit",
@@ -660,7 +660,7 @@ object WordDataHebrewBatch8 {
             definitionNative = "Часть здания, находящаяся под землёй.",
             example = "שָׂמַרְנוּ אֶת הָאוֹפַנַּיִם בְּמִרְתֵּף הַבִּנְיָן.",
             exampleNative = "Мы хранили велосипеды в מִרְתֵּף здания.",
-        ),
+         fillInBlankExclusions = listOf(104907L, 104909L, 104913L, 104917L, 104921L, 104922L)),
         WordEntity(
             id = 104920, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "building_community", transliteration = "shakhan",

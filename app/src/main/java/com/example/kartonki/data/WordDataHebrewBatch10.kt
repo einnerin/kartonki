@@ -36,7 +36,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Религиозный или национальный праздник; также праздничное приветствие.",
             example = "חַג שָׂמֵחַ — יוֹם טוֹב לְכָל הַמִּשְׁפָּחָה!",
             exampleNative = "С праздником — יוֹם טוֹב всей семье!",
-        ),
+         fillInBlankExclusions = listOf(105304L, 105305L)),
         WordEntity(
             id = 105302, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "holiday_food", transliteration = "matza",
@@ -63,7 +63,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Радостное событие общины или семьи в честь особого повода.",
             example = "הָיְתָה חַגִּיגָה גְּדוֹלָה בַּכִּיכָּר עִם מוּסִיקָה וְרִיקּוּדִים.",
             exampleNative = "На площади была большая חַגִּיגָה с музыкой и танцами.",
-        ),
+         fillInBlankExclusions = listOf(105306L)),
         WordEntity(
             id = 105305, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "holiday_basics", transliteration = "tzom",
@@ -72,7 +72,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Воздержание от еды и питья в течение определённого времени по религиозным причинам.",
             example = "בְּיוֹם כִּפּוּר מְקַיְּמִים צוֹם שֶׁל 25 שָׁעוֹת.",
             exampleNative = "В Йом Кипур соблюдают צוֹם продолжительностью 25 часов.",
-        ),
+         fillInBlankExclusions = listOf(105301L)),
         WordEntity(
             id = 105306, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "holiday_lagbomer", transliteration = "medura",
@@ -99,7 +99,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Национальный праздник Государства Израиль, отмечаемый 5 ияра.",
             example = "בְּיוֹם הָעַצְמָאוּת עוֹרְכִים מַנְגָּל וְצוֹפִים בְּזִיקּוּקִין.",
             exampleNative = "В יוֹם הָעַצְמָאוּת устраивают барбекю и смотрят фейерверки.",
-        ),
+         fillInBlankExclusions = listOf(105309L, 105315L)),
         WordEntity(
             id = 105309, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holiday_national", transliteration = "yom hashoah",
@@ -108,7 +108,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "День памяти шести миллионов евреев, погибших в Катастрофе.",
             example = "בְּיוֹם הַשּׁוֹאָה צוֹפֵר הַזִּכָּרוֹן נִשְׁמַע בְּכָל הָאָרֶץ.",
             exampleNative = "В יוֹם הַשּׁוֹאָה по всей стране звучит сирена памяти.",
-        ),
+         fillInBlankExclusions = listOf(105308L, 105315L)),
         WordEntity(
             id = 105310, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holiday_lagbomer", transliteration = "lag ba'omer",
@@ -117,7 +117,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Еврейский праздник, отмечаемый кострами, на 33-й день омера.",
             example = "הַיְּלָדִים אָסְפוּ עֵצִים לַמְּדוּרָה שֶׁל לַג בָּעֹמֶר.",
             exampleNative = "Дети собирали дрова для костра לַג בָּעֹמֶר.",
-        ),
+         fillInBlankExclusions = listOf(105306L)),
         WordEntity(
             id = 105311, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holiday_sukkot", transliteration = "sukka",
@@ -162,7 +162,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Национальный праздник, отмечающий воссоединение Иерусалима в ходе Шестидневной войны.",
             example = "בְּיוֹם יְרוּשָׁלַיִם מִצְעָדִים עוֹלִים לָעִיר הָעַתִּיקָה.",
             exampleNative = "В יוֹם יְרוּשָׁלַיִם шествия направляются в Старый город.",
-        ),
+         fillInBlankExclusions = listOf(105308L, 105309L)),
         WordEntity(
             id = 105316, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holiday_memorial", transliteration = "ner zikaron",
@@ -171,7 +171,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Свеча, зажигаемая в память об умершем в годовщину смерти или в священные дни.",
             example = "הִדְלַקְנוּ נֵר זִכָּרוֹן בְּיוֹם הַשּׁוֹאָה לְזֵכֶר קְרוֹבֵינוּ.",
             exampleNative = "Мы зажгли נֵר זִכָּרוֹן в Йом аШоа в память о наших родственниках.",
-        ),
+         fillInBlankExclusions = listOf(105322L)),
         WordEntity(
             id = 105317, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holiday_shavuot", transliteration = "bikurim",
@@ -180,7 +180,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Обряд принесения первых плодов в Храм, отмечаемый на Шавуот.",
             example = "בְּחַג הַבִּכּוּרִים הֵבִיאוּ הָאֲנָשִׁים פֵּרוֹת לַבֵּית הַמִּקְדָּשׁ.",
             exampleNative = "На праздник בִּכּוּרִים люди приносили плоды в Храм.",
-        ),
+         fillInBlankExclusions = listOf(105307L)),
         WordEntity(
             id = 105318, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "synagogue_aliya", transliteration = "aliya latora",
@@ -252,7 +252,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Основная молитва в иудаизме, провозглашающая единство Бога.",
             example = "יְהוּדִים אוֹמְרִים קְרִיאַת שְׁמַע בְּכָל בֹּקֶר וּבְכָל עֶרֶב.",
             exampleNative = "Евреи читают קְרִיאַת שְׁמַע каждое утро и вечер.",
-        ),
+         fillInBlankExclusions = listOf(105303L)),
 
         // ──────────────────────────────────────────────────────────────────
         // Set 1054 — בנק וכספים  (Banking and finances, B1/B2),
@@ -276,7 +276,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Банковский кредит на покупку жилья, обеспеченный залогом имущества.",
             example = "לָקַחְנוּ מִשְׁכַּנְתָּא לְ-30 שָׁנָה לִרְכִישַׁת הַדִּירָה.",
             exampleNative = "Мы взяли מִשְׁכַּנְתָּא на 30 лет для покупки квартиры.",
-        ),
+         fillInBlankExclusions = listOf(105406L, 105411L)),
         WordEntity(
             id = 105403, setId = 1054, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bank_transfers", transliteration = "ha'avarat kesef",
@@ -285,7 +285,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Отправка денег с одного счёта на другой через банковскую систему.",
             example = "שִׁלַּחְתִּי הַעֲבָרַת כֶּסֶף לַסַּפָּק תּוֹךְ שָׁעָה.",
             exampleNative = "Я отправил הַעֲבָרַת כֶּסֶף поставщику в течение часа.",
-        ),
+         fillInBlankExclusions = listOf(105407L)),
         WordEntity(
             id = 105404, setId = 1054, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bank_taxation", transliteration = "misuy",
@@ -312,7 +312,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Денежный займ у банка с обязательством вернуть с оговорённой процентной ставкой.",
             example = "לָקַח הַלְוָאָה בְּרִיבִּית שֶׁל 3% לְשִׁיפּוּץ הַדִּירָה.",
             exampleNative = "Он взял הַלְוָאָה בְּרִיבִּית в 3% на ремонт квартиры.",
-        ),
+         fillInBlankExclusions = listOf(105402L)),
         WordEntity(
             id = 105407, setId = 1054, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bank_transfers", transliteration = "ha'avara banka'it",
@@ -321,7 +321,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Перевод денег с одного банковского счёта на другой через банк.",
             example = "שָׁלַחְתִּי הַעְבָּרָה בַּנְקָאִית לְהַחְזֵר אֶת הַחוֹב לַחָבֵר.",
             exampleNative = "Я отправил הַעְבָּרָה בַּנְקָאִית, чтобы вернуть долг другу.",
-        ),
+         fillInBlankExclusions = listOf(105403L)),
         WordEntity(
             id = 105408, setId = 1054, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bank_accounts", transliteration = "kheshbon khisakhon",
@@ -330,7 +330,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Банковский счёт, предназначенный для накоплений, с более высокими процентами.",
             example = "פָּתַחְתִּי חֶשְׁבּוֹן חִסָּכוֹן לְצֹרֶךְ חוּפְשָׁה בְּחוּ\"ל.",
             exampleNative = "Я открыл חֶשְׁבּוֹן חִסָּכוֹן для отпуска за границей.",
-        ),
+         fillInBlankExclusions = listOf(105409L)),
         WordEntity(
             id = 105409, setId = 1054, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bank_accounts", transliteration = "kheshbon over ve'shav",
@@ -357,7 +357,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Фиксированный график возврата кредита ежемесячными платежами.",
             example = "קִבַּלְנוּ מֵהַבַּנְק לוּחַ הַחְזָרִים לְ-20 שָׁנָה.",
             exampleNative = "Мы получили в банке לוּחַ הַחְזָרִים на 20 лет.",
-        ),
+         fillInBlankExclusions = listOf(105402L, 105406L)),
         WordEntity(
             id = 105412, setId = 1054, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bank_overdraft", transliteration = "meshikat yeter",
@@ -366,7 +366,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Снятие денег сверх остатка на счёте, что создаёт задолженность перед банком.",
             example = "נִכְנַסְתִּי לְמָשִׁיכַת יֶתֶר אַחֲרֵי קְנִיַּת הַמְּכוֹנִית.",
             exampleNative = "Я вошёл в מָשִׁיכַת יֶתֶר после покупки машины.",
-        ),
+         fillInBlankExclusions = listOf(105401L)),
         WordEntity(
             id = 105413, setId = 1054, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bank_tax", transliteration = "zikuy mas",
@@ -375,7 +375,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Сумма, уменьшающая расчётное налоговое обязательство налогоплательщика.",
             example = "קִבַּלְתִּי זִיכּוּי מַס בְּגִין תְּרוּמָה לְעַמּוּתָה מֻכֶּרֶת.",
             exampleNative = "Я получил זִיכּוּי מַס за пожертвование признанной организации.",
-        ),
+         fillInBlankExclusions = listOf(105422L)),
         WordEntity(
             id = 105414, setId = 1054, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bank_insurance", transliteration = "bituakh",
@@ -447,7 +447,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Накопительный фонд, в который делают взносы и работник, и работодатель — для сбережений или пенсии.",
             example = "הַמַּעֲסִיק מַפְקִיד שִׁשָּׁה וּשְׁלוֹשָׁה אָחוּז לְקֶרֶן הַתְּגְמוּלִים.",
             exampleNative = "Работодатель вносит шесть и три процента в фонд תְּגְמוּלִים.",
-        ),
+         fillInBlankExclusions = listOf(105418L)),
         WordEntity(
             id = 105422, setId = 1054, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "bank_tax", transliteration = "hatzharat hon",
@@ -498,7 +498,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Встреча, на которой работодатель оценивает кандидата на вакантную должность.",
             example = "הִתְכּוֹנַנְתִּי לְרֵאיוּן עֲבוֹדָה בְּתַרְגּוּל תְּשׁוּבוֹת לְשְׁאֵלוֹת נְפוֹצוֹת.",
             exampleNative = "Я готовился к רֵאיוּן עֲבוֹדָה, отрабатывая ответы на типичные вопросы.",
-        ),
+         fillInBlankExclusions = listOf(105509L, 105513L)),
         WordEntity(
             id = 105502, setId = 1055, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_salary", transliteration = "skhar minimum",
@@ -588,7 +588,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Должность с полной занятостью, обычно 40–42 часа в неделю.",
             example = "מְחַפֶּשֶׂת מִשְׁרָה מְלֵאָה בַּתְּחוּם הַשִּׁיוּוּק.",
             exampleNative = "Ищу מִשְׁרָה מְלֵאָה в сфере маркетинга.",
-        ),
+         fillInBlankExclusions = listOf(105512L)),
         WordEntity(
             id = 105512, setId = 1055, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_position", transliteration = "misra khelkit",
@@ -597,7 +597,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Должность с частичной занятостью — например, 50% или 60%.",
             example = "אֲנִי מְחַפֶּשֶׂת מִשְׁרָה חֶלְקִית כְּדֵי לְהִשְׁתַּלֵּב עִם הַלִּמּוּדִים.",
             exampleNative = "Я ищу מִשְׁרָה חֶלְקִית, чтобы совмещать с учёбой.",
-        ),
+         fillInBlankExclusions = listOf(105511L)),
         WordEntity(
             id = 105513, setId = 1055, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_recruitment", transliteration = "menahel giyus",
@@ -633,7 +633,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Государственное министерство, отвечающее за трудовые отношения, минимальную зарплату и занятость.",
             example = "הִתְלוֹנַנְתִּי בְּמִשְׂרַד הָעֲבוֹדָה עַל הַמַּעֲסִיק שֶׁלֹּא שִׁלֵּם לִי.",
             exampleNative = "Я пожаловался в מִשְׂרַד הָעֲבוֹדָה на работодателя, который не платил мне.",
-        ),
+         fillInBlankExclusions = listOf(105505L, 105514L)),
         WordEntity(
             id = 105517, setId = 1055, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_compensation", transliteration = "pitsuyim",
@@ -642,7 +642,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Выплата, которую работодатель обязан сделать работнику при увольнении.",
             example = "קִבַּלְתִּי פִּיצּוּיִים שֶׁל שְׁלוֹשָׁה חֳדָשִׁים אַחֲרֵי שֶׁפּוּטַּרְתִּי.",
             exampleNative = "Я получил פִּיצּוּיִים за три месяца после увольнения.",
-        ),
+         fillInBlankExclusions = listOf(105508L, 105524L)),
         WordEntity(
             id = 105518, setId = 1055, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_profile", transliteration = "reka miktzo'i",
@@ -660,7 +660,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Письмо, прилагаемое к резюме, в котором кандидат объясняет, почему он подходит на должность.",
             example = "כָּתַבְתִּי מִכְתַּב כַּוָּנוֹת מוֹתַאֵם אִישִׁית לְכָל חֶבְרָה.",
             exampleNative = "Я написал персонализированный מִכְתַּב כַּוָּנוֹת для каждой компании.",
-        ),
+         fillInBlankExclusions = listOf(105507L, 105515L)),
         WordEntity(
             id = 105520, setId = 1055, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_guidance", transliteration = "ya'uts miktzo'i",
@@ -678,7 +678,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Компания, которая выступает посредником между кандидатами и работодателями.",
             example = "חֶבְרַת כֹּחַ אָדָם מָצְאָה לִי עֲבוֹדָה תּוֹךְ שְׁבוּעַיִם.",
             exampleNative = "חֶבְרַת כֹּחַ אָדָם нашла мне работу за две недели.",
-        ),
+         fillInBlankExclusions = listOf(105513L)),
         WordEntity(
             id = 105522, setId = 1055, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_contract", transliteration = "heskem sakhar",

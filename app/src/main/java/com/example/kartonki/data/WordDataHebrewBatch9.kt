@@ -45,7 +45,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Стрижка или укладка волос парикмахером или стилистом.",
             example = "בִּיקַּשְׁתִּי תַּסְפֹּרֶת קְצָרָה בַּצְּדָדִים וּמְעַט אֲרֻכָּה לְמַעְלָה.",
             exampleNative = "Я попросил תַּסְפֹּרֶת короткую по бокам и немного длиннее сверху.",
-        ),
+         fillInBlankExclusions = listOf(105003L, 105007L, 105016L, 105021L, 105022L, 105023L)),
         WordEntity(
             id = 105003, setId = 1050, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "beauty_hair", transliteration = "shampu",
@@ -63,7 +63,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Средство по уходу за кожей для увлажнения или защиты.",
             example = "מוֹרַחַת קְרֵם יוֹמִי כָּל בֹּקֶר אַחֲרֵי הַמִּקְלַחַת.",
             exampleNative = "Наносит ежедневный קְרֵם каждое утро после душа.",
-        ),
+         fillInBlankExclusions = listOf(105012L, 105017L, 105025L)),
         WordEntity(
             id = 105005, setId = 1050, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "beauty_places", transliteration = "salon yofi",
@@ -81,7 +81,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Нанесение косметики на лицо для улучшения внешности.",
             example = "הִיא לֹא יוֹצֵאת מִן הַבַּיִת בְּלִי אֵפּוּר בָּסִיסִי.",
             exampleNative = "Она не выходит из дома без базового אֵפּוּר.",
-        ),
+         fillInBlankExclusions = listOf(105004L, 105013L, 105014L, 105015L, 105017L, 105018L, 105019L)),
         WordEntity(
             id = 105007, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_hair", transliteration = "tseva se'ar",
@@ -90,7 +90,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Средство для изменения цвета волос или закрашивания седины.",
             example = "צָבְעָה אֶת שְׂעָרָהּ חוּם כֵּהֶה בְּעֶזְרַת צֶבַע שֵׂעָר מִן הַחֲנוּת.",
             exampleNative = "Она покрасила волосы в тёмно-коричневый цвет с помощью צֶבַע שֵׂעָר из магазина.",
-        ),
+         fillInBlankExclusions = listOf(105002L, 105003L, 105016L, 105021L, 105022L, 105023L)),
         WordEntity(
             id = 105008, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_nails", transliteration = "manikyur",
@@ -99,7 +99,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Уход за ногтями рук — обрезка, формирование и покраска.",
             example = "עָשְׂתָה מְנִיקִיוּר גֶּל שֶׁמַּחֲזִיק שְׁלוֹשָׁה שָׁבוּעוֹת.",
             exampleNative = "Она сделала гелевый מְנִיקִיוּר, который держится три недели.",
-        ),
+         fillInBlankExclusions = listOf(105009L, 105020L)),
         WordEntity(
             id = 105009, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_nails", transliteration = "pedikyur",
@@ -108,7 +108,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Уход за ногтями ног и кожей стопы.",
             example = "בַּקַּיִץ הוֹלְכוֹת לַפֶּדִיקִיוּר לִפְנֵי הַחוֹף.",
             exampleNative = "Летом ходят на פֶּדִיקִיוּר перед пляжем.",
-        ),
+         fillInBlankExclusions = listOf(105001L, 105005L, 105008L, 105010L, 105020L)),
         WordEntity(
             id = 105010, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_body", transliteration = "masazh",
@@ -135,7 +135,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Средство, наносимое на лицо на некоторое время для ухода за кожей.",
             example = "עוֹשָׂה מִסְכַּת פָּנִים פַּעַם בְּשָׁבוּעַ לְנִקּוּי הַנְּקָבוּבִיּוֹת.",
             exampleNative = "Делает מִסְכַּת פָּנִים раз в неделю для очищения пор.",
-        ),
+         fillInBlankExclusions = listOf(105004L, 105025L)),
         WordEntity(
             id = 105013, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_makeup", transliteration = "sfaton",
@@ -144,7 +144,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Косметика в форме карандаша или стика для покраски губ.",
             example = "בָּחֲרָה שְׂפָתוֹן אָדֹם עָמֹק לָאֵירוּעַ.",
             exampleNative = "Она выбрала глубокий красный שְׂפָתוֹן для мероприятия.",
-        ),
+         fillInBlankExclusions = listOf(105006L, 105007L, 105014L, 105017L, 105018L, 105019L, 105020L)),
         WordEntity(
             id = 105014, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_makeup", transliteration = "maskara",
@@ -153,7 +153,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Косметика для удлинения ресниц и их выделения.",
             example = "מַסְקָרָה עָמִידָה לְמַיִם הִיא חִיּוּנִית בַּקַּיִץ.",
             exampleNative = "Водостойкая מַסְקָרָה необходима летом.",
-        ),
+         fillInBlankExclusions = listOf(105006L, 105013L, 105017L, 105018L, 105019L)),
         WordEntity(
             id = 105015, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_fragrance", transliteration = "bosem",
@@ -162,7 +162,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Жидкость с приятным запахом, наносимая на тело или одежду.",
             example = "קִבְּלָה בֹּשֶׂם יָקָר לְיוֹם הַהוּלֶדֶת.",
             exampleNative = "Она получила дорогой בֹּשֶׂם на день рождения.",
-        ),
+         fillInBlankExclusions = listOf(105003L, 105004L, 105007L, 105013L, 105017L, 105018L, 105019L, 105021L, 105022L, 105023L, 105025L)),
         WordEntity(
             id = 105016, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_hair", transliteration = "tisroket",
@@ -171,7 +171,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Укладка волос определённым образом для эстетичного вида.",
             example = "בִּיקְּשָׁה תִּסְרֹקֶת גְּבוֹהָה לַחֲגִיגָה.",
             exampleNative = "Она попросила высокую תִּסְרֹקֶת для праздника.",
-        ),
+         fillInBlankExclusions = listOf(105002L, 105003L, 105007L, 105021L, 105022L, 105023L)),
         WordEntity(
             id = 105017, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_makeup", transliteration = "krem basis",
@@ -180,7 +180,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Косметика, наносимая на лицо для выравнивания тона кожи.",
             example = "בָּחֲרָה קְרֵם בָּסִיס בְּגֶוַן הַמַּתְאִים לִצְבַע עוֹרָהּ.",
             exampleNative = "Она выбрала קְרֵם בָּסִיס подходящего оттенка для своей кожи.",
-        ),
+         fillInBlankExclusions = listOf(105006L, 105013L, 105014L, 105018L, 105019L)),
         WordEntity(
             id = 105018, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_makeup", transliteration = "powder",
@@ -189,7 +189,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Косметическая пудра, наносимая на лицо для фиксации макияжа и матирования блеска.",
             example = "הוֹסִיפָה פַּוְדֶר עַל הַגָּרוֹן לִפְנֵי הַצִּילּוּם כְּדֵי לְמַנֵּעַ בְּהָק.",
             exampleNative = "Она нанесла פַּוְדֶר перед съёмкой, чтобы предотвратить блеск.",
-        ),
+         fillInBlankExclusions = listOf(105006L, 105013L, 105014L, 105017L, 105019L)),
         WordEntity(
             id = 105019, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_makeup", transliteration = "eyeliner",
@@ -198,7 +198,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Косметический карандаш или ручка для подчёркивания контура глаза.",
             example = "צָיְיְרָה קַו אֵיילַיְנֶר דַּק לְאֹרֶךְ הָרִיס הָעֶלְיוֹן.",
             exampleNative = "Она провела тонкую линию אֵיילַיְנֶר вдоль верхних ресниц.",
-        ),
+         fillInBlankExclusions = listOf(105006L, 105013L, 105014L, 105017L, 105018L)),
         WordEntity(
             id = 105020, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_nails", transliteration = "lak tsipornayim",
@@ -216,7 +216,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Инструмент с жёсткими щетинками для расчёсывания и укладки волос.",
             example = "מְסָרֶקֶת אֶת שְׂעָרָהּ בְּמַבְרֶשֶׁת שֵׂעָר כָּל בֹּקֶר.",
             exampleNative = "Она расчёсывает волосы מַבְרֶשֶׁת שֵׂעָר каждое утро.",
-        ),
+         fillInBlankExclusions = listOf(105002L, 105003L, 105007L, 105016L, 105022L, 105023L)),
         WordEntity(
             id = 105022, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_hair", transliteration = "meyabesh se'ar",
@@ -225,7 +225,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Электрический прибор для сушки волос горячим потоком воздуха.",
             example = "יִיבְּשָׁה אֶת שְׂעָרָהּ בְּמַיֵּיבֵּשׁ שֵׂעָר לִפְנֵי הַיְּצִיאָה מִן הַבַּיִת.",
             exampleNative = "Она высушила волосы מַיֵּיבֵּשׁ שֵׂעָר перед выходом из дома.",
-        ),
+         fillInBlankExclusions = listOf(105002L, 105003L, 105007L, 105016L, 105021L, 105023L)),
         WordEntity(
             id = 105023, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_hair", transliteration = "makhlyk se'ar",
@@ -234,7 +234,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Электрический прибор для выпрямления волос с помощью тепла.",
             example = "הִשְׁתַּמְּשָׁה בְּמַחְלִיק שֵׂעָר כְּדֵי לְיַשֵּׁר אֶת הַתַּלְתַּלִּים.",
             exampleNative = "Она использовала מַחְלִיק שֵׂעָר, чтобы распрямить кудри.",
-        ),
+         fillInBlankExclusions = listOf(105002L, 105003L, 105007L, 105016L, 105021L, 105022L)),
         WordEntity(
             id = 105024, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_places", transliteration = "mirpaat or",
@@ -243,7 +243,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Клиника, специализирующаяся на лечении кожи, медицинском макияже и косметических процедурах.",
             example = "הָלְכָה לְמִרְפֶּאַת עוֹר לְטִיפּוּל בְּפַצְעוֹנִים.",
             exampleNative = "Она пошла в מִרְפֶּאַת עוֹר на лечение прыщей.",
-        ),
+         fillInBlankExclusions = listOf(105001L, 105005L)),
         WordEntity(
             id = 105025, setId = 1050, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beauty_skincare", transliteration = "toner",
@@ -252,7 +252,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Жидкость для ухода за кожей, восстанавливающая кислотно-щелочной баланс после очищения.",
             example = "מוֹרָחַת טוֹנֵר בְּכוֹתְנָה לְאַחַר הַנִּיקּוּי הַיּוֹמִי.",
             exampleNative = "Наносит טוֹנֵר ватным диском после ежедневного очищения.",
-        ),
+         fillInBlankExclusions = listOf(105004L, 105012L)),
 
         // ──────────────────────────────────────────────────────
         // Set 1051 — שיפוץ הבית  (Home renovation, B1),
@@ -488,7 +488,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Пешеходный поход на природе на разные расстояния для развлечения и образования.",
             example = "יָצָאנוּ לְטִיּוּל רֶגֶל בְּנַחַל עֲרוּגוֹת לְמָשֶׁךְ שָׁלוֹשׁ שָׁעוֹת.",
             exampleNative = "Мы вышли на טִיּוּל רֶגֶל по ручью Аругот на три часа.",
-        ),
+         fillInBlankExclusions = listOf(105202L, 105214L, 105215L, 105225L)),
         WordEntity(
             id = 105202, setId = 1052, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "hiking_basics", transliteration = "nativ",
@@ -515,7 +515,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Переносное сооружение из ткани или нейлона для ночёвки на улице.",
             example = "הִקַּמְנוּ אֶת הָאֹהֶל בְּעֶשֶׂר דַּקּוֹת בְּלַיְלָה.",
             exampleNative = "Мы поставили אֹהֶל за десять минут ночью.",
-        ),
+         fillInBlankExclusions = listOf(105203L, 105210L, 105214L, 105220L)),
         WordEntity(
             id = 105205, setId = 1052, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "hiking_landscape", transliteration = "nof",
@@ -533,7 +533,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Участок с густыми деревьями, меньше чем лес.",
             example = "הִתְחַבְּאְנוּ בְּחֻרְשָׁה קְטַנָּה לִמְנוּחָה בַּצֵּל.",
             exampleNative = "Мы спрятались в маленькой חֻרְשָׁה, чтобы отдохнуть в тени.",
-        ),
+         fillInBlankExclusions = listOf(105205L, 105213L, 105222L, 105223L)),
         WordEntity(
             id = 105207, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_navigation", transliteration = "matspen",
@@ -542,7 +542,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Прибор для определения направления севера при ориентировании на местности.",
             example = "כָּל מְטַיֵּל טוֹב צָרִיךְ לָשֵׂאת מַצְפֵּן.",
             exampleNative = "Каждый хороший турист должен иметь מַצְפֵּן.",
-        ),
+         fillInBlankExclusions = listOf(105204L, 105210L)),
         WordEntity(
             id = 105208, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_water", transliteration = "nekhla",
@@ -569,7 +569,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Тёплый мешок для сна на улице вместо одеяла.",
             example = "קָנִיתִי שַׁק שֵׁנָה שֶׁמַּתְאִים לְטֶמְפֶּרָטוּרוֹת שֶׁל מִינוּס עֶשֶׂר.",
             exampleNative = "Я купил שַׁק שֵׁנָה подходящий для температуры минус десять.",
-        ),
+         fillInBlankExclusions = listOf(105203L, 105204L, 105214L, 105220L)),
         WordEntity(
             id = 105211, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_wildlife", transliteration = "tsvi",
@@ -587,7 +587,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Дикое животное из семейства псовых, распространённое в Израиле.",
             example = "לַיְלָה שָׁמַעְנוּ אֶת יְלִלַת הַתַּן מֵהַמַּחֲנֶה.",
             exampleNative = "Ночью мы слышали вой תַּן из лагеря.",
-        ),
+         fillInBlankExclusions = listOf(105211L, 105218L, 105219L)),
         WordEntity(
             id = 105213, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_landscape", transliteration = "pisga",
@@ -596,7 +596,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Самая высокая точка горы.",
             example = "לְאַחַר שְׁתֵּי שָׁעוֹת הִגַּעְנוּ לַפִּסְגָּה וְנֶהֱנֵינוּ מֵהַנּוֹף.",
             exampleNative = "Через два часа мы добрались до פִּסְגָּה и наслаждались видом.",
-        ),
+         fillInBlankExclusions = listOf(105205L, 105206L, 105209L, 105217L, 105222L, 105223L)),
         WordEntity(
             id = 105214, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_camping", transliteration = "makhna'ut",
@@ -605,7 +605,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Стиль путешествия и отдыха с ночёвкой в палатке или на природе.",
             example = "אֲנַחְנוּ אוֹהֲבִים מַחֲנָאוּת בְּגָלִיל פַּעֲמַיִם בְּשָׁנָה.",
             exampleNative = "Мы любим מַחֲנָאוּת в Галилее дважды в год.",
-        ),
+         fillInBlankExclusions = listOf(105201L, 105203L, 105204L, 105210L, 105215L, 105220L)),
         WordEntity(
             id = 105215, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_guidance", transliteration = "hadrakhat teva",
@@ -614,7 +614,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Экскурсия на природе под руководством профессионального гида.",
             example = "הִשְׁתַּתַּפְנוּ בְּהַדְרָכַת טֶבַע לְיַלְדִים בְּחֵיפָה.",
             exampleNative = "Мы участвовали в הַדְרָכַת טֶבַע для детей в Хайфе.",
-        ),
+         fillInBlankExclusions = listOf(105201L, 105214L, 105221L)),
         WordEntity(
             id = 105216, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_hazards", transliteration = "kinim",
@@ -632,7 +632,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Большой и спокойный водоём, окружённый сушей со всех сторон.",
             example = "אֵגַם הַכִּנֶּרֶת הוּא מַקּוֹר הַמַּיִם הַמִּתּוּקִים הַגָּדוֹל בְּיִשְׂרָאֵל.",
             exampleNative = "אֵגַם הַכִּנֶּרֶת — крупнейший источник пресной воды в Израиле.",
-        ),
+         fillInBlankExclusions = listOf(105208L, 105209L, 105224L)),
         WordEntity(
             id = 105218, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_wildlife", transliteration = "sikhim",
@@ -659,7 +659,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Обозначенное место на маршруте, предназначенное для ночёвки в палатках.",
             example = "הֶחְלַטְנוּ לַחֲנוֹת לַיְלָה בְּחֲנַיַּת לַיְלָה הַמְּסוּמֶּנֶת עַל הַמַּפָּה.",
             exampleNative = "Мы решили заночевать в חֲנַיַּת לַיְלָה, обозначенной на карте.",
-        ),
+         fillInBlankExclusions = listOf(105203L, 105204L, 105210L, 105214L)),
         WordEntity(
             id = 105221, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_guidance", transliteration = "madrikh tiyulim",
@@ -677,7 +677,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Возвышенное место с открытым видом, позволяющее обозревать окрестности.",
             example = "הִגַּעְנוּ לְמִצְפּוֹר שֶׁמִּמֶּנּוּ נִרְאִים כָּל הַכִּנֶּרֶת.",
             exampleNative = "Мы добрались до מִצְפּוֹר, с которого видно всё Кинерет.",
-        ),
+         fillInBlankExclusions = listOf(105205L, 105206L, 105213L, 105223L)),
         WordEntity(
             id = 105223, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_landscape", transliteration = "nekhel",
@@ -695,7 +695,7 @@ object WordDataHebrewBatch9 {
             definitionNative = "Увлажнённая низкая местность с водными растениями.",
             example = "הַבְּצָה שְׁבְּאֵזוֹר הַטֶּבַע הִיא בְּית גִדְוּל לְצִפּוֹרֵי מַיִם.",
             exampleNative = "Болото в природном заповеднике является домом для водных птиц.",
-        ),
+         fillInBlankExclusions = listOf(105208L, 105209L, 105217L, 105223L)),
         WordEntity(
             id = 105225, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_basics", transliteration = "shvil ragláyim",
