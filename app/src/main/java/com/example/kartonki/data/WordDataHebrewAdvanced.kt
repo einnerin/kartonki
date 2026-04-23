@@ -42,7 +42,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Совокупность программ, управляющих компьютером.",
             example = "עדכון הַתֹּכְנָה שיפר את הביצועים.",
             exampleNative = "Обновление תֹּכְנָה улучшило производительность.",
-        ),
+         fillInBlankExclusions = listOf(101402L, 101404L, 101408L, 101412L, 101413L, 101416L, 101420L)),
         WordEntity(
             id = 101402, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
@@ -52,7 +52,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Физические компоненты компьютера.",
             example = "הַחוֹמְרָה הישנה לא תומכת בתוכנה החדשה.",
             exampleNative = "Старое חוֹמְרָה не поддерживает новое ПО.",
-        ),
+         fillInBlankExclusions = listOf(101404L, 101408L, 101412L, 101413L, 101416L, 101420L)),
         WordEntity(
             id = 101403, setId = 1014, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
@@ -72,7 +72,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Компьютер, предоставляющий сервисы другим компьютерам в сети.",
             example = "שֶׁרְתַן מהיר יכול לטפל ברבבות בקשות בשנייה.",
             exampleNative = "שֶׁרְתַן упал — сайт перестал работать.",
-        ),
+         fillInBlankExclusions = listOf(101408L, 101411L, 101413L, 101416L, 101420L)),
         WordEntity(
             id = 101405, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
@@ -82,7 +82,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Копия данных, хранящаяся отдельно для восстановления в случае потери.",
             example = "חשוב לבצע גִּיבּוּי לקבצים חשובים לפחות פעם בשבוע.",
             exampleNative = "Важно делать גִּיבּוּי важных файлов не реже одного раза в неделю.",
-        ),
+         fillInBlankExclusions = listOf(101410L, 101421L)),
         WordEntity(
             id = 101406, setId = 1014, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
@@ -92,7 +92,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Защита систем и сетей от цифровых атак.",
             example = "בִּטָּחוֹן מַחְשֵׁב הוא תחום חיוני בעידן הדיגיטלי.",
             exampleNative = "בִּטָּחוֹן מַחְשֵׁב — критическая область в цифровую эпоху.",
-        ),
+         fillInBlankExclusions = listOf(101409L, 101410L, 101421L)),
         WordEntity(
             id = 101407, setId = 1014, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
@@ -102,7 +102,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Программа, предназначенная для причинения вреда компьютеру или кражи данных.",
             example = "תוֹכְנַת זְדוֹן הוסתרה בקובץ שנשלח באימייל.",
             exampleNative = "תוֹכְנַת זְדוֹן скрылась в файле, присланном по электронной почте.",
-        ),
+         fillInBlankExclusions = listOf(101401L, 101413L, 101421L)),
         WordEntity(
             id = 101408, setId = 1014, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
@@ -112,7 +112,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Организованная коллекция данных, управляемая программной системой.",
             example = "בָּסִיס נְתוּנִים מאפשר לאחסן ולנהל מידע ביעילות.",
             exampleNative = "Все данные клиентов хранятся в בָּסִיס נְתוּנִים.",
-        ),
+         fillInBlankExclusions = listOf(101401L, 101404L, 101411L, 101413L)),
         WordEntity(
             id = 101409, setId = 1014, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
@@ -142,7 +142,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Спецификация для взаимодействия между различными программами.",
             example = "ממשק תכנות מגדיר כיצד תוכניות מתקשרות ביניהן.",
             exampleNative = "Приложение использует ממשק תכנות Google Maps.",
-        ),
+         fillInBlankExclusions = listOf(101401L)),
         WordEntity(
             id = 101412, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
@@ -152,7 +152,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Номер, идентифицирующий состояние программы в определённый момент разработки.",
             example = "עדכנו לְגֵּרְסָה החדשה של המערכת.",
             exampleNative = "Мы обновились до новой גֵּרְסָה системы.",
-        ),
+         fillInBlankExclusions = listOf(101401L, 101402L, 101404L, 101413L)),
         WordEntity(
             id = 101413, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
@@ -162,7 +162,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Программа, предназначенная для выполнения конкретной задачи на устройстве.",
             example = "הוֹרַדְתִּי אַפְּלִיקַצְיָה חדשה לניהול לוח הזמנים.",
             exampleNative = "Я скачал новую אַפְּלִיקַצְיָה для управления расписанием.",
-        ),
+         fillInBlankExclusions = listOf(101401L, 101412L)),
         WordEntity(
             id = 101414, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
@@ -182,7 +182,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Процесс интеграции программы в компьютер для её работы.",
             example = "הַתְקָנָה של מערכת ההפעלה אורכת כשעה.",
             exampleNative = "הַתְקָנָה операционной системы занимает около часа.",
-        ),
+         fillInBlankExclusions = listOf(101405L, 101410L, 101421L)),
         WordEntity(
             id = 101416, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
@@ -192,7 +192,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Центральный компонент компьютера, выполняющий вычисления и обрабатывающий команды.",
             example = "מַעְבֵּד חזק נחוץ לעיבוד קבצי וידאו.",
             exampleNative = "Мощный מַעְבֵּד необходим для обработки видеофайлов.",
-        ),
+         fillInBlankExclusions = listOf(101402L, 101404L)),
         WordEntity(
             id = 101417, setId = 1014, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "it",
@@ -546,7 +546,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Преобразование данных в нечитаемый вид для защиты от несанкционированного доступа.",
             example = "הַצְפָּנַת נְתוּנִים שומרת על פרטיות התקשורת.",
             exampleNative = "הַצְפָּנַת נְתוּנִים защищает конфиденциальность переписки.",
-        ),
+         fillInBlankExclusions = listOf(101403L)),
         WordEntity(
             id = 101422, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
@@ -556,7 +556,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Набор файлов, кода и ресурсов, организованных для разработки программного обеспечения.",
             example = "פתחנו פְּרוֹיֶקְט חדש ב-GitHub.",
             exampleNative = "Мы открыли новый פְּרוֹיֶקְט на GitHub.",
-        ),
+         fillInBlankExclusions = listOf(101408L)),
         WordEntity(
             id = 101423, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
@@ -566,7 +566,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Техническая проблема в компьютере, программе или сети, вызывающая прекращение работы.",
             example = "הייתה תַּקְלָה בשרת ולכן האתר היה לא זמין.",
             exampleNative = "В שרת произошла תַּקְלָה, и сайт был недоступен.",
-        ),
+         fillInBlankExclusions = listOf(101407L)),
         WordEntity(
             id = 101424, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",

@@ -38,7 +38,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Утреннее приветствие, употребляемое в начале дня.",
             example = "בֹּקֶר טוֹב! אֵיךְ שָׁנַתָּ?",
             exampleNative = "בֹּקֶר טוֹב! Как ты спал?",
-        ),
+         fillInBlankExclusions = listOf(100402L, 100403L, 100404L, 100405L, 100406L)),
         WordEntity(
             id = 100402, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "interjection", semanticGroup = "greeting", transliteration = "toda",
@@ -47,7 +47,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Слово для выражения признательности.",
             example = "תּוֹדָה רַבָּה עַל הָעֶזְרָה שֶׁלְּךָ.",
             exampleNative = "Большое תּוֹדָה за твою помощь.",
-        ),
+         fillInBlankExclusions = listOf(100401L, 100403L, 100404L, 100405L, 100406L)),
         WordEntity(
             id = 100403, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "interjection", semanticGroup = "greeting", transliteration = "bevakasha",
@@ -56,7 +56,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Вежливое слово при просьбе или в ответ на благодарность.",
             example = "בְּבַקָּשָׁה תָּבִיא לִי כּוֹס מַיִם.",
             exampleNative = "בְּבַקָּשָׁה, принеси мне стакан воды.",
-        ),
+         fillInBlankExclusions = listOf(100401L, 100402L, 100404L, 100405L, 100406L)),
         WordEntity(
             id = 100404, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "interjection", semanticGroup = "greeting", transliteration = "ken",
@@ -65,7 +65,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Положительный ответ на вопрос.",
             example = "כֵּן, אֲנִי אוֹהֵב לִקְרוֹא סְפָרִים.",
             exampleNative = "כֵּן, я люблю читать книги.",
-        ),
+         fillInBlankExclusions = listOf(100401L, 100402L, 100403L, 100405L, 100406L, 100422L)),
         WordEntity(
             id = 100405, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "interjection", semanticGroup = "greeting", transliteration = "lo",
@@ -74,7 +74,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Отрицательный ответ на вопрос.",
             example = "לֹא, אֲנִי לֹא עָיֵף עַכְשָׁיו.",
             exampleNative = "לֹא, я сейчас не устал.",
-        ),
+         fillInBlankExclusions = listOf(100401L, 100402L, 100403L, 100404L, 100406L, 100422L)),
         WordEntity(
             id = 100406, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "interjection", semanticGroup = "greeting", transliteration = "slicha",
@@ -83,7 +83,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Слово для извинения или привлечения внимания.",
             example = "סְלִיחָה, אֲנִי לֹא הִתְכַּוַּנְתִּי.",
             exampleNative = "סְלִיחָה, я не хотел этого.",
-        ),
+         fillInBlankExclusions = listOf(100401L, 100402L, 100403L, 100404L)),
         WordEntity(
             id = 100407, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "time", transliteration = "boker",
@@ -92,7 +92,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Первая часть дня — от рассвета до полудня.",
             example = "בֹּקֶר טוֹב, אֵיךְ שָׁנַנְּתָּ הַלַּיְלָה?",
             exampleNative = "Хорошее בֹּקֶר! Как ты спал ночью?",
-        ),
+         fillInBlankExclusions = listOf(100408L, 100409L, 100410L)),
         WordEntity(
             id = 100408, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "time", transliteration = "erev",
@@ -101,7 +101,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Время суток между послеполуднем и ночью.",
             example = "עֶרֶב טוֹב, שָׂמַחְתִּי לִרְאוֹתְךָ.",
             exampleNative = "Добрый עֶרֶב, рад тебя видеть.",
-        ),
+         fillInBlankExclusions = listOf(100407L, 100409L, 100410L)),
         WordEntity(
             id = 100409, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "time", transliteration = "layla",
@@ -110,7 +110,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Тёмное время суток от заката до рассвета.",
             example = "לַיְלָה טוֹב, שְׁנָה טוֹבָה!",
             exampleNative = "Доброй לַיְלָה, сладких снов!",
-        ),
+         fillInBlankExclusions = listOf(100407L, 100408L, 100410L)),
         WordEntity(
             id = 100410, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "time", transliteration = "yom",
@@ -119,7 +119,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Промежуток времени в двадцать четыре часа.",
             example = "יוֹם טוֹב, מַה הַחֲדָשׁוֹת?",
             exampleNative = "Хороший יוֹם — что новенького?",
-        ),
+         fillInBlankExclusions = listOf(100407L, 100408L, 100409L)),
         WordEntity(
             id = 100411, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "communication", transliteration = "shem",
@@ -128,7 +128,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Слово, определяющее личность человека.",
             example = "שֵׁם שֶׁלִּי הוּא יוֹסִי.",
             exampleNative = "Мой שֵׁם — Йоси.",
-        ),
+         fillInBlankExclusions = listOf(100419L, 100420L)),
         WordEntity(
             id = 100412, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "pronoun", semanticGroup = "question_word", transliteration = "mi",
@@ -137,7 +137,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Вопросительное слово для определения личности.",
             example = "מִי בָּא לַמְּסִיבָּה הַלַּיְלָה?",
             exampleNative = "מִי придёт на вечеринку сегодня ночью?",
-        ),
+         fillInBlankExclusions = listOf(100413L, 100415L)),
         WordEntity(
             id = 100413, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "pronoun", semanticGroup = "question_word", transliteration = "ma",
@@ -146,7 +146,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Вопросительное слово о предмете или ситуации.",
             example = "מָה אַתָּה רוֹצֶה לֶאֱכוֹל הַיּוֹם?",
             exampleNative = "מָה ты хочешь поесть сегодня?",
-        ),
+         fillInBlankExclusions = listOf(100412L, 100414L, 100415L, 100416L, 100417L, 100418L)),
         WordEntity(
             id = 100414, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "adverb", semanticGroup = "question_word", transliteration = "eifo",
@@ -155,7 +155,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Вопросительное слово о местонахождении.",
             example = "אֵיפֹה תַּחֲנַת הָאוֹטוֹבּוּס?",
             exampleNative = "אֵיפֹה остановка автобуса?",
-        ),
+         fillInBlankExclusions = listOf(100413L, 100415L, 100416L, 100417L, 100418L)),
         WordEntity(
             id = 100415, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "adverb", semanticGroup = "question_word", transliteration = "matai",
@@ -164,7 +164,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Вопросительное слово о времени.",
             example = "מָתַי הָאוֹטוֹבּוּס מַגִּיעַ?",
             exampleNative = "מָתַי приходит автобус?",
-        ),
+         fillInBlankExclusions = listOf(100414L, 100416L, 100417L, 100418L)),
         WordEntity(
             id = 100416, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "adverb", semanticGroup = "question_word", transliteration = "lama",
@@ -173,7 +173,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Вопросительное слово о причине или объяснении.",
             example = "לָמָּה אַתָּה לֹא אָכַלְתָּ?",
             exampleNative = "לָמָּה ты не поел?",
-        ),
+         fillInBlankExclusions = listOf(100413L, 100414L, 100415L, 100417L, 100418L)),
         WordEntity(
             id = 100417, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "adverb", semanticGroup = "question_word", transliteration = "eich",
@@ -191,7 +191,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Вопросительное слово о количестве или цене.",
             example = "כַּמָּה עוֹלֶה הַכַּרְטִיס?",
             exampleNative = "כַּמָּה стоит билет?",
-        ),
+         fillInBlankExclusions = listOf(100414L, 100415L, 100416L, 100417L)),
         WordEntity(
             id = 100419, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "communication", transliteration = "pgisha",
@@ -200,7 +200,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Запланированная встреча двух или более людей.",
             example = "פְּגִישָׁה שֶׁלִּי הִיא בְּשָׁעָה שָׁלֹשׁ.",
             exampleNative = "Моя פְּגִישָׁה в три часа.",
-        ),
+         fillInBlankExclusions = listOf(100411L, 100420L)),
         WordEntity(
             id = 100420, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "communication", transliteration = "sicha",
@@ -209,7 +209,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Обмен словами между двумя или более людьми.",
             example = "שִׂיחָה עִם חָבֵר תָּמִיד נְעִימָה.",
             exampleNative = "שִׂיחָה с другом всегда приятна.",
-        ),
+         fillInBlankExclusions = listOf(100411L, 100419L)),
         WordEntity(
             id = 100421, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "greeting", transliteration = "lehitraot",
@@ -218,7 +218,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Распространённое прощание на иврите.",
             example = "לְהִתְרָאוֹת, נִתְרָאֶה מָחָר!",
             exampleNative = "לְהִתְרָאוֹת, увидимся завтра!",
-        ),
+         fillInBlankExclusions = listOf(100402L, 100422L)),
         WordEntity(
             id = 100422, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "communication", transliteration = "beseder",
@@ -227,7 +227,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Выражение согласия или подтверждения, что всё в норме.",
             example = "בְּסֵדֶר, אֲנִי אָבוֹא בְּשָׁעָה שֵׁשׁ.",
             exampleNative = "בְּסֵדֶר, я приду в шесть часов.",
-        ),
+         fillInBlankExclusions = listOf(100404L, 100423L, 100424L)),
         WordEntity(
             id = 100423, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "communication", transliteration = "metsuyam",
@@ -236,7 +236,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Выражение похвалы за успех или высокое качество.",
             example = "מְצֻיָּן! עָשִׂיתָ עֲבוֹדָה טוֹבָה מְאוֹד.",
             exampleNative = "מְצֻיָּן! Ты сделал очень хорошую работу.",
-        ),
+         fillInBlankExclusions = listOf(100402L, 100422L)),
         WordEntity(
             id = 100424, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "communication", transliteration = "behatslacha",
@@ -245,7 +245,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Пожелание успеха в чём-либо.",
             example = "בְּהַצְלָחָה בַּמִּבְחָן מָחָר!",
             exampleNative = "בְּהַצְלָחָה на экзамене завтра!",
-        ),
+         fillInBlankExclusions = listOf(100422L)),
         WordEntity(
             id = 100425, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adverb", semanticGroup = "communication", transliteration = "efshar",
@@ -268,7 +268,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Группа людей, связанных кровными узами или браком.",
             example = "מִשְׁפָּחָה שֶׁלִּי גָּרָה בְּתֵל אָבִיב.",
             exampleNative = "Моя מִשְׁפָּחָה живёт в Тель-Авиве.",
-        ),
+         fillInBlankExclusions = listOf(100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100502, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family", transliteration = "av",
@@ -277,7 +277,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Мужской родитель в семье.",
             example = "אָב שֶׁלִּי עוֹבֵד כְּמִהְנָדֵס.",
             exampleNative = "Мой אָב работает инженером.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100503, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family", transliteration = "em",
@@ -286,7 +286,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Женский родитель в семье.",
             example = "אֵם שֶׁלִּי מְבַשֶּׁלֶת טוֹב מְאוֹד.",
             exampleNative = "Моя אֵם очень хорошо готовит.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100504, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family", transliteration = "ben",
@@ -295,7 +295,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Мальчик по отношению к своим родителям.",
             example = "בֵּן שֶׁלָּהֶם לוֹמֵד בַּאוּנִיבֶרְסִיטָה.",
             exampleNative = "Их בֵּן учится в университете.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100505, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family", transliteration = "bat",
@@ -304,7 +304,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Девочка по отношению к своим родителям.",
             example = "בַּת שֶׁלָּהֶם אוֹהֶבֶת מוּזִיקָה.",
             exampleNative = "Их בַּת любит музыку.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100506, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family", transliteration = "ach",
@@ -313,7 +313,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Мальчик, имеющий тех же родителей.",
             example = "אָח שֶׁלִּי גָּדוֹל מִמֶּנִּי בְּשָׁלוֹשׁ שָׁנִים.",
             exampleNative = "Мой אָח старше меня на три года.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100514L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100507, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family", transliteration = "achot",
@@ -322,7 +322,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Девочка, имеющая тех же родителей.",
             example = "אָחוֹת שֶׁלִּי לוֹמֶדֶת רְפוּאָה.",
             exampleNative = "Моя אָחוֹת учится на врача.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100508, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family", transliteration = "saba",
@@ -331,7 +331,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Отец отца или матери.",
             example = "סָבָא שֶׁלִּי מְסַפֵּר סִיפּוּרִים נִפְלָאִים.",
             exampleNative = "Мой סָבָא рассказывает замечательные истории.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100509L, 100510L, 100511L, 100512L, 100513L, 100514L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100509, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family", transliteration = "savta",
@@ -340,7 +340,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Мать отца или матери.",
             example = "סָבְתָּא שֶׁלִּי מְכִינָה אֲרוּחוֹת טְעִימוֹת.",
             exampleNative = "Моя סָבְתָּא готовит очень вкусные блюда.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100510, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "family", transliteration = "dod",
@@ -349,7 +349,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Брат отца или матери.",
             example = "דּוֹד שֶׁלִּי גָּר בְּחֵיפָה.",
             exampleNative = "Мой דּוֹד живёт в Хайфе.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100511L, 100512L, 100513L, 100514L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100511, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "family", transliteration = "doda",
@@ -358,7 +358,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Сестра отца или матери.",
             example = "דּוֹדָה שֶׁלִּי אוֹהֶבֶת לִנְסֹעַ לְחוּץ לָאָרֶץ.",
             exampleNative = "Моя דּוֹדָה любит путешествовать за границу.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100512, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "family", transliteration = "baal",
@@ -367,7 +367,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Мужчина, состоящий в браке с женщиной.",
             example = "בַּעַל שֶׁלָּהּ עוֹבֵד בְּחוּץ לָאָרֶץ.",
             exampleNative = "Её בַּעַל работает за границей.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100513L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100513, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "family", transliteration = "isha",
@@ -376,7 +376,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Взрослый человек женского пола или супруга.",
             example = "אִשָּׁה שֶׁלּוֹ עוֹבֶדֶת בְּבֵית חוֹלִים.",
             exampleNative = "Его אִשָּׁה работает в больнице.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100514, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "people", transliteration = "yeled",
@@ -385,7 +385,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Маленький человек в детском возрасте.",
             example = "יֶלֶד מְשַׂחֵק בַּכַּדּוּר בַּגַּן.",
             exampleNative = "יֶלֶד играет с мячом во дворе.",
-        ),
+         fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100515L, 100516L, 100517L, 100518L, 100519L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100515, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "people", transliteration = "yalda",
@@ -394,7 +394,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Ребёнок женского пола.",
             example = "יַלְדָּה קוֹרֵאת סֵפֶר בַּגַּן.",
             exampleNative = "יַלְדָּה читает книгу в саду.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100503L, 100505L, 100507L, 100509L, 100511L, 100513L, 100514L, 100516L, 100519L, 100520L, 100521L)),
         WordEntity(
             id = 100516, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "people", transliteration = "tinok",
@@ -403,7 +403,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Очень маленький ребёнок, который ещё не умеет говорить.",
             example = "תִּינוֹק בָּכָה כָּל הַלַּיְלָה.",
             exampleNative = "תִּינוֹק плакал всю ночь.",
-        ),
+         fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100515L, 100517L, 100518L, 100519L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100517, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "people", transliteration = "zaken",
@@ -412,7 +412,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Тот, кто прожил много лет и обладает жизненным опытом.",
             example = "זָקֵן יָשַׁב עַל הַסַּפְסָל בַּפַּארְק.",
             exampleNative = "זָקֵן сидел на скамейке в парке.",
-        ),
+         fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100518L, 100519L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100518, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "people", transliteration = "tzair",
@@ -421,7 +421,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Тот, кто родился недавно, юный.",
             example = "צָעִיר יָכוֹל לִלְמוֹד מָהֵר.",
             exampleNative = "צָעִיר может быстро учиться.",
-        ),
+         fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100517L, 100519L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100519, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "people", transliteration = "chaver",
@@ -430,7 +430,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Человек, которому доверяешь и с которым приятно проводить время.",
             example = "חָבֵר טוֹב תָּמִיד עוֹזֵר בְּצָרָה.",
             exampleNative = "Хороший חָבֵר всегда помогает в беде.",
-        ),
+         fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100515L, 100516L, 100517L, 100518L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100520, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "people", transliteration = "shachen",
@@ -439,7 +439,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Человек, живущий рядом с твоим домом.",
             example = "שָׁכֵן שֶׁלִּי נָתַן לִי עוּגָה.",
             exampleNative = "Мой שָׁכֵן угостил меня пирогом.",
-        ),
+         fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100515L, 100516L, 100517L, 100518L, 100519L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100521, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "people", transliteration = "ish",
@@ -457,7 +457,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Двое людей, состоящих в близких отношениях или браке.",
             example = "זוּג נְשׂוּי חָגַג חֲמִשִּׁים שָׁנָה יַחַד.",
             exampleNative = "Семейный זוּג отметил пятьдесят лет вместе.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100523, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "family", transliteration = "horim",
@@ -466,7 +466,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Отец и мать вместе, воспитывающие своих детей.",
             example = "הוֹרִים שֶׁלִּי בָּאוּ לְבַקֵּר אֶת הַחַלּוֹן.",
             exampleNative = "Мои הוֹרִים приехали навестить нас.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100522L, 100524L, 100525L)),
         WordEntity(
             id = 100524, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "family", transliteration = "ben dod",
@@ -475,7 +475,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Сын твоего дяди или тёти.",
             example = "בֶּן דּוֹד שֶׁלִּי גָּר בְּחוּץ לָאָרֶץ.",
             exampleNative = "Мой בֶּן דּוֹד живёт за границей.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100514L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100525L)),
         WordEntity(
             id = 100525, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "family", transliteration = "nekhed",
@@ -484,7 +484,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Сын твоего сына или дочери.",
             example = "נֶכֶד שֶׁלָּהּ מְבַקֵּר אוֹתָהּ כָּל שַׁבָּת.",
             exampleNative = "Её נֶכֶד навещает её каждую субботу.",
-        ),
+         fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100514L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L)),
 
         // ──────────────────────────────────────────────────────
         // Set 106 — Еда и напитки (A2),
@@ -498,7 +498,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Всё, что едят для поддержания жизни.",
             example = "אֹכֶל בַּמִּסְעָדָה הָיָה טָעִים מְאוֹד.",
             exampleNative = "אֹכֶל в ресторане был очень вкусным.",
-        ),
+         fillInBlankExclusions = listOf(100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100602, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "drink", transliteration = "mayim",
@@ -507,7 +507,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Прозрачная жидкость, необходимая для жизни.",
             example = "מַיִם קַרִּים טוֹבִים בַּקַּיִץ.",
             exampleNative = "Холодные מַיִם хороши летом.",
-        ),
+         fillInBlankExclusions = listOf(100604L, 100612L, 100613L, 100614L)),
         WordEntity(
             id = 100603, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "lechem",
@@ -516,7 +516,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Выпечка из муки и воды.",
             example = "לֶחֶם טָרִי מְרֵיחַ נִפְלָא.",
             exampleNative = "Свежий לֶחֶם замечательно пахнет.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100604, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "drink", transliteration = "chalav",
@@ -525,7 +525,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Белая жидкость от животных, например от коровы.",
             example = "חָלָב טוֹב לְעַצְמוֹת חֲזָקוֹת.",
             exampleNative = "חָלָב полезно для крепких костей.",
-        ),
+         fillInBlankExclusions = listOf(100602L, 100606L, 100608L, 100609L, 100610L, 100612L, 100613L, 100614L)),
         WordEntity(
             id = 100605, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "beitza",
@@ -534,7 +534,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Круглый продукт питания, производимый курицей.",
             example = "בֵּיצָה מְטוּגֶּנֶת הִיא אֲרוּחַת בֹּקֶר טוֹבָה.",
             exampleNative = "Жареная בֵּיצָה — хороший завтрак.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100606, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "basar",
@@ -543,7 +543,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Часть тела животного, используемая как пища.",
             example = "בָּשָׂר צָרִיךְ לְבַשֵּׁל הֵיטֵב.",
             exampleNative = "בָּשָׂר нужно хорошо прожарить.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100607, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "of",
@@ -552,7 +552,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Птица или её мясо как продукт питания.",
             example = "עוֹף עִם אֹרֶז הוּא אֲרוּחָה פּוֹפּוּלָרִית.",
             exampleNative = "עוֹף с рисом — популярное блюдо.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100608, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "dag",
@@ -561,7 +561,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Водное животное, используемое в пищу.",
             example = "דָּג טָרִי מֵהַיָּם הַכִּי טָעִים.",
             exampleNative = "Свежий דָּג из моря — самый вкусный.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100609, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "pri",
@@ -570,7 +570,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Сладкая часть растения, богатая витаминами.",
             example = "פְּרִי טָרִי בָּרִיא מְאוֹד לַגּוּף.",
             exampleNative = "Свежий פְּרִי очень полезен для здоровья.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100610, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "yerek",
@@ -579,7 +579,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Растение или его часть, употребляемая в пищу.",
             example = "יֶרֶק חָשׁוּב לְתַזּוּנָה בְּרִיאָה.",
             exampleNative = "יֶרֶק важен для здорового питания.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100604L, 100605L, 100606L, 100607L, 100608L, 100609L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100611, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "tapuach",
@@ -597,7 +597,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Горячий напиток из кофейных зёрен.",
             example = "קָפֶה שֶׁלִּי תָּמִיד עִם חָלָב.",
             exampleNative = "Мой קָפֶה всегда с молоком.",
-        ),
+         fillInBlankExclusions = listOf(100602L, 100613L, 100614L)),
         WordEntity(
             id = 100613, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "drink", transliteration = "te",
@@ -606,7 +606,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Горячий напиток из сушёных листьев.",
             example = "תֵּה עִם לֶמוֹן טוֹב לְצִינָּה.",
             exampleNative = "תֵּה с лимоном помогает при простуде.",
-        ),
+         fillInBlankExclusions = listOf(100602L, 100604L, 100612L, 100614L)),
         WordEntity(
             id = 100614, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "drink", transliteration = "mitz",
@@ -615,7 +615,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Жидкость, отжатая из фруктов или овощей.",
             example = "מִיץ תַּפּוּזִים טָרִי טָעִים בַּבֹּקֶר.",
             exampleNative = "Свежий מִיץ апельсина вкусен утром.",
-        ),
+         fillInBlankExclusions = listOf(100602L, 100604L, 100612L, 100613L)),
         WordEntity(
             id = 100615, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "food", transliteration = "salat",
@@ -624,7 +624,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Холодное блюдо из нарезанных овощей.",
             example = "סַלָּט עִם עַגְבָנִיּוֹת מְרַעֲנֵן מְאוֹד.",
             exampleNative = "סַלָּט с помидорами очень освежает.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100616, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "food", transliteration = "merak",
@@ -633,7 +633,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Горячее блюдо с жидкостью, овощами и иногда мясом.",
             example = "מְרַק עוֹף חַם טוֹב בְּיוֹם קַר.",
             exampleNative = "Горячий מְרַק с курицей хорош в холодный день.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100608L, 100609L, 100610L, 100611L, 100615L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100617, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "food", transliteration = "uga",
@@ -642,7 +642,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Сладкая выпечка для праздников и дней рождения.",
             example = "עוּגָה עִם שׁוֹקוֹלָד הָיְתָה עַל הַשּׁוּלְחָן.",
             exampleNative = "עוּגָה с шоколадом стояла на столе.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100618, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "food", transliteration = "glida",
@@ -651,7 +651,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Сладкое замороженное лакомство из молока.",
             example = "גְּלִידָה שׁוֹקוֹלָד הִיא הַטְּעִימָה מִכּוּלָּן.",
             exampleNative = "גְּלִידָה с шоколадом — самая вкусная.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100619, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "place", transliteration = "shuk",
@@ -660,7 +660,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Место, где продают и покупают еду и товары.",
             example = "שׁוּק מַחֲנֵה יְהוּדָה מְפֻרְסָם בְּכָל הָעוֹלָם.",
             exampleNative = "שׁוּק Махане-Иегуда известен по всему миру.",
-        ),
+         fillInBlankExclusions = listOf(100620L)),
         WordEntity(
             id = 100620, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "place", transliteration = "misada",
@@ -669,7 +669,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Место, где можно купить и съесть готовую еду.",
             example = "מִסְעָדָה זוֹ מְפֻרְסֶמֶת בְּדָג טָרִי.",
             exampleNative = "Эта מִסְעָדָה известна свежей рыбой.",
-        ),
+         fillInBlankExclusions = listOf(100619L)),
         WordEntity(
             id = 100621, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "gvina",
@@ -678,7 +678,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Молочный продукт, изготавливаемый из свёрнутого молока.",
             example = "גְּבִינָה צְהוּבָּה טוֹבָה לַסֶּנְדְּוִיץ'.",
             exampleNative = "Жёлтая גְּבִינָה хороша для сэндвича.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100622, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food", transliteration = "shemen",
@@ -687,7 +687,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Жидкость из растений или животных, используемая для приготовления пищи.",
             example = "שֶׁמֶן זַיִת בָּרִיא מְאוֹד לַלֵּב.",
             exampleNative = "Оливковое שֶׁמֶן очень полезно для сердца.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100623, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "food", transliteration = "melakh",
@@ -696,7 +696,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Белая приправа, добавляющая вкус пище.",
             example = "מֶלַח חָשׁוּב בְּכָל מַטְבָּח.",
             exampleNative = "מֶלַח есть на кухне у каждого.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100624L, 100625L)),
         WordEntity(
             id = 100624, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "food", transliteration = "sukar",
@@ -705,7 +705,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Сладкое вещество, используемое для подслащивания напитков и еды.",
             example = "סֻכָּר בַּקָּפֶה — שְׁאֵלָה שֶׁל טַעַם.",
             exampleNative = "סֻכָּר в кофе — дело вкуса.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100604L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100625L)),
         WordEntity(
             id = 100625, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "food", transliteration = "pitsa",
@@ -714,7 +714,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Итальянская круглая выпечка с томатами, сыром и добавками.",
             example = "פִּיצָּה עִם פַּטְרִיּוֹת הִיא הָאַהוּבָה עָלַי.",
             exampleNative = "פִּיצָּה с грибами — моя любимая.",
-        ),
+         fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L)),
 
         // ──────────────────────────────────────────────────────
         // Set 107 — Дом и быт (A2),
@@ -728,7 +728,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Строение, в котором живут люди.",
             example = "בַּיִת שֶׁלִּי נִמְצָא לְיַד הַפַּארְק.",
             exampleNative = "Мой בַּיִת находится рядом с парком.",
-        ),
+         fillInBlankExclusions = listOf(100702L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100702, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home", transliteration = "cheder",
@@ -737,7 +737,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Закрытое пространство внутри дома.",
             example = "חֶדֶר שֵׁינָה שֶׁלִּי גָּדוֹל וּבָהִיר.",
             exampleNative = "Мой חֶדֶר для сна большой и светлый.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100703, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home", transliteration = "mitbach",
@@ -746,7 +746,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Комната, где готовят еду.",
             example = "מִטְבָּח שֶׁלָּנוּ חָדָשׁ וּמְרוּוָּח.",
             exampleNative = "Наш מִטְבָּח новый и просторный.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100702L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100704, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "furniture", transliteration = "mita",
@@ -755,7 +755,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Мебель для лежания и сна.",
             example = "מִיטָּה שֶׁלִּי רַכָּה וּנוֹחָה.",
             exampleNative = "Моя מִיטָּה мягкая и удобная.",
-        ),
+         fillInBlankExclusions = listOf(100705L, 100706L, 100717L, 100723L, 100724L)),
         WordEntity(
             id = 100705, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "furniture", transliteration = "kise",
@@ -764,7 +764,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Мебель для сидения одного человека.",
             example = "כִּסֵּא הַמִּשְׂרָד שֶׁלִּי נוֹחַ מְאוֹד.",
             exampleNative = "Мой офисный כִּסֵּא очень удобный.",
-        ),
+         fillInBlankExclusions = listOf(100704L, 100706L, 100717L, 100723L, 100724L)),
         WordEntity(
             id = 100706, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "furniture", transliteration = "shulchan",
@@ -773,7 +773,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Горизонтальная мебель на ножках для еды или работы.",
             example = "שׁוּלְחָן הָאוֹכֵל גָּדוֹל לְכָל הַמִּשְׁפָּחָה.",
             exampleNative = "שׁוּלְחָן для еды большой для всей семьи.",
-        ),
+         fillInBlankExclusions = listOf(100704L, 100705L, 100717L, 100723L, 100724L)),
         WordEntity(
             id = 100707, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "home", transliteration = "delet",
@@ -782,7 +782,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Проём в стене для входа и выхода, закрывающийся на петлях.",
             example = "דֶּלֶת הַחֲזִית נְעוּלָה בַּלַּיְלָה.",
             exampleNative = "Входная דֶּלֶת закрыта на ночь.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100702L, 100703L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100708, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "home", transliteration = "chalon",
@@ -791,7 +791,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Отверстие в стене, пропускающее свет и воздух.",
             example = "חַלּוֹן בַּחֶדֶר שֶׁלִּי פָּתוּחַ.",
             exampleNative = "חַלּוֹן в моей комнате открыто.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100709, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home", transliteration = "makalachat",
@@ -800,7 +800,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Устройство, распыляющее воду для купания.",
             example = "מַקְלַחַת קָרָה בַּבֹּקֶר מְעִירָה מִיָּד.",
             exampleNative = "Холодный מַקְלַחַת утром сразу бодрит.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100702L, 100703L, 100707L, 100708L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100710, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home", transliteration = "manul",
@@ -809,7 +809,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Устройство для запирания двери.",
             example = "מַנְעוּל הַדֶּלֶת שֶׁלִּי חָדָשׁ.",
             exampleNative = "מַנְעוּל на моей двери новый.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100702L, 100703L, 100708L, 100709L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100711, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home", transliteration = "mafteiach",
@@ -827,7 +827,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Энергия, освещающая темноту.",
             example = "אוֹר בַּחֶדֶר חָלַשׁ מִדַּי.",
             exampleNative = "אוֹר в комнате слишком слабый.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100713, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "appliance", transliteration = "shaon",
@@ -836,7 +836,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Устройство для измерения времени.",
             example = "שָׁעוֹן קִיר גָּדוֹל תָּלוּי בַּסָּלוֹן.",
             exampleNative = "Большой настенный שָׁעוֹן висит в гостиной.",
-        ),
+         fillInBlankExclusions = listOf(100714L, 100715L, 100716L, 100718L)),
         WordEntity(
             id = 100714, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "appliance", transliteration = "chashmal",
@@ -845,7 +845,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Энергия, приводящая в действие машины и лампы.",
             example = "חַשְׁמַל נִכְבָּה בְּזָמַן הַסּוּפָה.",
             exampleNative = "חַשְׁמַל отключился во время шторма.",
-        ),
+         fillInBlankExclusions = listOf(100712L, 100713L, 100715L, 100716L, 100718L)),
         WordEntity(
             id = 100715, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "appliance", transliteration = "mazgan",
@@ -854,7 +854,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Устройство для охлаждения или обогрева воздуха в комнате.",
             example = "מַזְגָּן חָשׁוּב בְּיוֹתֵר בַּקַּיִץ הַחַם.",
             exampleNative = "מַזְגָּן очень важен в жаркое лето.",
-        ),
+         fillInBlankExclusions = listOf(100713L, 100714L, 100716L, 100718L)),
         WordEntity(
             id = 100716, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "appliance", transliteration = "makrer",
@@ -863,7 +863,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Устройство для хранения еды в холоде.",
             example = "מַקְרֵר מָלֵא אֹכֶל לְשַׁבָּת.",
             exampleNative = "מַקְרֵר полон еды на шаббат.",
-        ),
+         fillInBlankExclusions = listOf(100713L, 100714L, 100715L, 100718L)),
         WordEntity(
             id = 100717, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "furniture", transliteration = "rahit",
@@ -872,7 +872,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Крупные предметы в доме: стол, стул, кровать и другое.",
             example = "רָהִיט חָדָשׁ הִגִּיעַ הַיּוֹם לַבַּיִת.",
             exampleNative = "Новый רָהִיט привезли сегодня домой.",
-        ),
+         fillInBlankExclusions = listOf(100704L, 100705L, 100706L, 100713L, 100715L, 100716L, 100719L, 100723L, 100724L)),
         WordEntity(
             id = 100718, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "appliance", transliteration = "sabon",
@@ -881,7 +881,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Средство для очищения тела при мытье.",
             example = "סַבּוֹן עִם רֵיחַ טוֹב בַּמִּקְלַחַת.",
             exampleNative = "Ароматный סַבּוֹן в душе.",
-        ),
+         fillInBlankExclusions = listOf(100713L, 100714L, 100715L, 100716L)),
         WordEntity(
             id = 100719, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home", transliteration = "shatiach",
@@ -899,7 +899,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Комната, где находится ванна или душ для мытья тела.",
             example = "אַמְבַּטְיָה חַמָּה אַחֲרֵי יוֹם עָמָל מְרַגַּעַת.",
             exampleNative = "Горячая אַמְבַּטְיָה после тяжёлого дня расслабляет.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100702L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100721, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "home", transliteration = "sherutim",
@@ -908,7 +908,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Комната с унитазом для нужд человека.",
             example = "שֵׁרוּתִים בַּמִּסְדְּרוֹן, לֹא בַּחֶדֶר שֵׁינָה.",
             exampleNative = "שֵׁרוּתִים в коридоре, не в спальне.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100722L, 100725L)),
         WordEntity(
             id = 100722, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home", transliteration = "magevet",
@@ -917,7 +917,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Мягкая ткань для вытирания тела после ванны или душа.",
             example = "מַגֶּבֶת נְקִיָּה תָּלוּיָה בַּחֶדֶר הַאֲמְבַּטְיָה.",
             exampleNative = "Чистая מַגֶּבֶת висит в ванной.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100725L)),
         WordEntity(
             id = 100723, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "furniture", transliteration = "karit",
@@ -926,7 +926,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Мягкий мешок, который кладут под голову во время сна.",
             example = "כָּרִית רַכָּה עוֹזֶרֶת לִישׁוֹן טוֹב.",
             exampleNative = "Мягкая כָּרִית помогает хорошо спать.",
-        ),
+         fillInBlankExclusions = listOf(100704L, 100705L, 100706L, 100717L, 100724L)),
         WordEntity(
             id = 100724, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "furniture", transliteration = "smikha",
@@ -935,7 +935,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Тёплое покрывало для тела во время сна.",
             example = "שְׂמִיכָה חַמָּה נֶחֱמֶדֶת בְּלֵילוֹת חֹרֶף.",
             exampleNative = "Тёплая שְׂמִיכָה приятна в зимние ночи.",
-        ),
+         fillInBlankExclusions = listOf(100704L, 100705L, 100706L, 100717L, 100723L)),
         WordEntity(
             id = 100725, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home", transliteration = "madregot",
@@ -944,6 +944,6 @@ object WordDataHebrewEveryday {
             definitionNative = "Конструкция из ступеней для подъёма с этажа на этаж.",
             example = "מַדְרֵגוֹת לַקּוֹמָה הַשֵּׁנִיָּה עִם עֵץ יָפֶה.",
             exampleNative = "מַדְרֵגוֹת на второй этаж сделаны из красивого дерева.",
-        ),
+         fillInBlankExclusions = listOf(100701L, 100702L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L)),
     )
 }
