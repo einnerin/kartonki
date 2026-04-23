@@ -232,7 +232,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Деятельность, приносящая результат, обычно за оплату.",
             example = "הָעֲבוֹדָה שלי מעניינת ומשמעותית.",
             exampleNative = "Моя עֲבוֹדָה интересная и значимая.",
-        ),
+         fillInBlankExclusions = listOf(101506L, 101513L, 101517L)),
         WordEntity(
             id = 101502, setId = 1015, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "work",
@@ -262,7 +262,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Ответственный за управление командой и ресурсами в организации.",
             example = "מַנְהֵל טוֹב מוֹבִיל אֶת הַצָּוֶות בְּחָכְמָה.",
             exampleNative = "מַנְהֵל попросил отчёт к пятнице.",
-        ),
+         fillInBlankExclusions = listOf(101511L, 101515L, 101525L)),
         WordEntity(
             id = 101505, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work",
@@ -282,7 +282,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Долгосрочный профессиональный путь и продвижение по должностям.",
             example = "הִיא בָּנְתָה קַרְיֶרָה מצוינת בהייטק.",
             exampleNative = "Она построила отличную קַרְיֶרָה в хайтеке.",
-        ),
+         fillInBlankExclusions = listOf(101517L)),
         WordEntity(
             id = 101507, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work",
@@ -292,12 +292,12 @@ object WordDataHebrewAdvanced {
             definitionNative = "Группа людей, работающих вместе для достижения общей цели.",
             example = "צָוֶות מְנֻסֶּה פִּיתֵּחַ אֶת הָאַפְּלִיקַצְיָה.",
             exampleNative = "צָוֶות разработал приложение за шесть месяцев.",
-        ),
+         fillInBlankExclusions = listOf(101504L, 101511L, 101515L)),
         WordEntity(id = 101508, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "הֲגָנַת עוֹבְדִים", transliteration = "haghanat ovdim", translation = "защита прав работников; трудовые права", pos = "noun", semanticGroup = "work",
             definition = "legal protection and rights afforded to employees in the workplace",
             example = "חֲבִילַת הֲגָנַת עוֹבְדִים כּוֹלֶלֶת בִּטּוּחַ לְאִי-כּוֹשֶׁר.",
             definitionNative = "Правовая защита и права, предоставляемые сотрудникам на рабочем месте.",
-            exampleNative = "Пакет הֲגָנַת עוֹבְדִים включает страховку нетрудоспособности."),
+            exampleNative = "Пакет הֲגָנַת עוֹבְדִים включает страховку нетрудоспособности.", fillInBlankExclusions = listOf(101501L, 101503L, 101520L, 101522L)),
 
         WordEntity(id = 101509, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "תַּנַּאי עֲבוֹדָה", transliteration = "tna'ey avoda", translation = "условия труда; трудовые условия", pos = "noun", semanticGroup = "work",
             definition = "the physical and organisational circumstances in which employees work",
@@ -319,20 +319,20 @@ object WordDataHebrewAdvanced {
             definition = "a person employed by a company in exchange for a salary",
             example = "הוא שְׁכִיר בחברת היי-טק.",
             definitionNative = "Человек, нанятый компанией в обмен на заработную плату.",
-            exampleNative = "Он שְׁכִיר в хайтек-компании."),
+            exampleNative = "Он שְׁכִיר в хайтек-компании.", fillInBlankExclusions = listOf(101504L, 101515L, 101523L)),
 
         WordEntity(id = 101512, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "מִסְמָךְ עֲבוֹדָה", transliteration = "mismakh avoda", translation = "рабочий документ; служебная бумага", pos = "noun", semanticGroup = "work",
             definition = "an official document related to employment, such as a contract or form",
             example = "חָתַמְנוּ עַל מִסְמָךְ עֲבוֹדָה בַּמְּשָׁרָד.",
             definitionNative = "Официальный документ, связанный с трудоустройством, например договор или анкета.",
-            exampleNative = "Мы подписали מִסְמָךְ עֲבוֹדָה в офисе."),
+            exampleNative = "Мы подписали מִסְמָךְ עֲבוֹדָה в офисе.", fillInBlankExclusions = listOf(101508L, 101509L, 101524L, 101525L)),
 
 
         WordEntity(id = 101513, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "הִדְרָכָה", transliteration = "hidrakhah", translation = "инструктаж; обучение", pos = "noun", semanticGroup = "work",
             definition = "guidance or instruction given to employees about their tasks",
             example = "קיבלנו הִדְרָכָה לפני תחילת העבודה.",
             definitionNative = "Руководство или инструктаж, предоставляемый сотрудникам по их задачам.",
-            exampleNative = "Мы прошли הִדְרָכָה перед началом работы."),
+            exampleNative = "Мы прошли הִדְרָכָה перед началом работы.", fillInBlankExclusions = listOf(101503L, 101508L, 101518L, 101520L, 101522L, 101524L)),
 
 
         // ──────────────────────────────────────────────────────
@@ -348,7 +348,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Позитивное чувство счастья и веселья.",
             example = "עֵינֶיהָ מָלְאוּ שִׂמְחָה כשראתה את בנה.",
             exampleNative = "Её глаза наполнились שִׂמְחָה, когда она увидела сына.",
-        ),
+         fillInBlankExclusions = listOf(101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L)),
         WordEntity(
             id = 101602, setId = 1016, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "emotion",
@@ -358,7 +358,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Чувство разочарования, потери или душевной боли.",
             example = "עֶצֶב גדול ירד עליו לאחר הפרידה.",
             exampleNative = "После расставания на него нашла большая עֶצֶב.",
-        ),
+         fillInBlankExclusions = listOf(101601L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L)),
         WordEntity(
             id = 101603, setId = 1016, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "emotion",
@@ -368,7 +368,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Сильное чувство злости и разочарования.",
             example = "הַכַּעַס שלו התפרץ פתאום.",
             exampleNative = "Его כַּעַס внезапно вырвался наружу.",
-        ),
+         fillInBlankExclusions = listOf(101601L, 101602L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L)),
         WordEntity(
             id = 101604, setId = 1016, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "emotion",
@@ -378,7 +378,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Ощущение тревоги перед опасностью или неизвестностью.",
             example = "פַּחַד מגבהים עצר אותה מלעלות.",
             exampleNative = "פַּחַד высоты мешал ей подняться.",
-        ),
+         fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101605L, 101608L, 101609L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L)),
         WordEntity(
             id = 101605, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "emotion",
@@ -388,7 +388,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Глубокое чувство привязанности и эмоциональной связи с другим человеком.",
             example = "אַהֲבָה לילדים שלה ממלאת אותה.",
             exampleNative = "אַהֲבָה к своим детям наполняет её.",
-        ),
+         fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101608L, 101609L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L)),
         WordEntity(
             id = 101606, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "character",
@@ -398,7 +398,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Душевная сила совершить что-то сопряжённое с риском.",
             example = "אֹמֶץ לֵב הוא תכונה חשובה.",
             exampleNative = "אֹמֶץ לֵב — важное качество характера.",
-        ),
+         fillInBlankExclusions = listOf(101607L, 101611L, 101613L, 101616L, 101617L, 101619L, 101620L, 101623L, 101624L)),
         WordEntity(
             id = 101607, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "character",
@@ -408,31 +408,31 @@ object WordDataHebrewAdvanced {
             definitionNative = "Черта характера — смирение, отсутствие высокомерия.",
             example = "עֲנָוָה היא סגולה שמעוררת כבוד.",
             exampleNative = "עֲנָוָה — добродетель, вызывающая уважение.",
-        ),
+         fillInBlankExclusions = listOf(101606L, 101611L, 101613L, 101616L, 101617L, 101619L, 101620L, 101623L, 101624L)),
         WordEntity(id = 101608, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "חֲרָדָה", transliteration = "kharada", translation = "тревога; беспокойство", pos = "noun", semanticGroup = "emotion",
             definition = "a feeling of worry, nervousness, or unease about something",
             example = "חֲרָדָה לפני מבחן היא תופעה שכיחה.",
             definitionNative = "Чувство беспокойства, нервозности или тревоги.",
-            exampleNative = "חֲרָדָה перед экзаменом — распространённое явление."),
+            exampleNative = "חֲרָדָה перед экзаменом — распространённое явление.", fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101609L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L)),
 
         WordEntity(id = 101609, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "מְבוּכָה", transliteration = "mevukha", translation = "замешательство; смущение", pos = "noun", semanticGroup = "emotion",
             definition = "a feeling of self-consciousness, awkwardness, or embarrassment in a situation",
             example = "מְבוּכָה גְּדוֹלָה אֲחֲזַתּוּ כְּשֶׁנָּפַל בְּפוּמְבֵּי.",
             definitionNative = "Чувство неловкости или замешательства в ситуации.",
-            exampleNative = "Его охватила мְבוּכָה, когда он упал на людях."),
+            exampleNative = "Его охватила мְבוּכָה, когда он упал на людях.", fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L, 101625L)),
 
 
         WordEntity(id = 101610, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "אַכְזָבָה", transliteration = "akhzavah", translation = "разочарование", pos = "noun", semanticGroup = "emotion",
             definition = "a feeling of sadness caused by unfulfilled hopes or expectations",
             example = "הייתה לי אַכְזָבָה גדולה כשהמשחק בוטל.",
             definitionNative = "Чувство огорчения из-за несбывшихся надежд или ожиданий.",
-            exampleNative = "Я испытал большую אַכְזָבָה, когда игра была отменена."),
+            exampleNative = "Я испытал большую אַכְזָבָה, когда игра была отменена.", fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L)),
 
         WordEntity(id = 101611, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "סְקָרָנוּת", transliteration = "skranut", translation = "любопытство", pos = "noun", semanticGroup = "character",
             definition = "a strong desire to learn or know about something",
             example = "סְקָרָנוּת היא מנוע לכל למידה.",
             definitionNative = "Сильное желание узнать или понять что-либо.",
-            exampleNative = "סְקָרָנוּת — двигатель любого обучения."),
+            exampleNative = "סְקָרָנוּת — двигатель любого обучения.", fillInBlankExclusions = listOf(101606L, 101607L, 101613L, 101616L, 101617L, 101619L, 101620L, 101623L, 101624L)),
 
 
         // ──────────────────────────────────────────────────────
@@ -474,7 +474,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Состояние, при котором у всех одинаковые возможности и права.",
             example = "שִׁוְיוֹן בפני החוק הוא עיקרון דמוקרטי.",
             exampleNative = "שִׁוְיוֹן перед законом — демократический принцип.",
-        ),
+         fillInBlankExclusions = listOf(101705L)),
         WordEntity(
             id = 101705, setId = 1017, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "abstract",
@@ -484,7 +484,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Поведение по нравственным принципам равенства и честности.",
             example = "צֶדֶק חברתי הוא מטרת מדיניות ראויה.",
             exampleNative = "Социальный צֶדֶק — достойная политическая цель.",
-        ),
+         fillInBlankExclusions = listOf(101704L)),
         WordEntity(
             id = 101706, setId = 1017, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "abstract",
@@ -499,7 +499,7 @@ object WordDataHebrewAdvanced {
             definition = "the fundamental characteristics and tendencies of human beings",
             example = "הפילוסופיה שואלת: מה הוא טֶבַע הָאָדָם?",
             definitionNative = "Основные характеристики и склонности, присущие человеческим существам.",
-            exampleNative = "Философия спрашивает: что такое טֶבַע הָאָדָם?"),
+            exampleNative = "Философия спрашивает: что такое טֶבַע הָאָדָם?", fillInBlankExclusions = listOf(101702L, 101704L, 101705L, 101708L, 101709L, 101711L, 101712L, 101714L, 101718L, 101719L, 101720L, 101721L, 101722L, 101723L, 101725L)),
 
         WordEntity(
             id = 101708, setId = 1017, languagePair = "he-ru", rarity = "RARE",
@@ -510,7 +510,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Взгляд, что истина зависит от точки зрения и объективной истины не существует.",
             example = "רֶלָטִיבִיזְם תרבותי מכבד שוני בין חברות.",
             exampleNative = "Культурный רֶלָטִיבִיזְם уважает различия между обществами.",
-        ),
+         fillInBlankExclusions = listOf(101714L)),
         WordEntity(id = 101709, setId = 1017, languagePair = "he-ru", rarity = "RARE", original = "נוֹמִינָלִיזְם", transliteration = "nominalizm", translation = "номинализм", pos = "noun", semanticGroup = "abstract",
             definition = "the philosophical view that abstract concepts exist only as names, not as real entities",
             example = "נוֹמִינָלִיזְם טוֹעֵן שֶׁמּוֹשָׂגִים כְּ׳אָדוֹם׳ הֵם רַק שֵׁמוֹת, לֹא יֵשׁ עַצְמָאִי.",
@@ -598,7 +598,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Документ, обобщающий профессиональный опыт и образование человека.",
             example = "שָׁלַחְתִּי קוֹרוֹת חַיִּים לעשרים חברות.",
             exampleNative = "Я отправил קוֹרוֹת חַיִּים в двадцать компаний.",
-        ),
+         fillInBlankExclusions = listOf(101512L)),
         WordEntity(
             id = 101515, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work",
@@ -608,7 +608,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Человек или организация, предоставляющая работу в обмен на зарплату.",
             example = "מַעֲסִיק טוֹב דואג לרווחת עובדיו.",
             exampleNative = "Хороший מַעֲסִיק заботится о благополучии сотрудников.",
-        ),
+         fillInBlankExclusions = listOf(101504L)),
         WordEntity(
             id = 101516, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "work",
@@ -618,7 +618,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Экономическая сфера, в которой работники и работодатели встречаются для поиска работы.",
             example = "שׁוּק הָעֲבוֹדָה בתחום ההייטק הוא תחרותי מאוד.",
             exampleNative = "שׁוּק הָעֲבוֹדָה в сфере хайтека очень конкурентный.",
-        ),
+         fillInBlankExclusions = listOf(101505L, 101507L, 101515L, 101520L, 101522L, 101523L, 101524L)),
         WordEntity(id = 101517, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "מְחַלְּקָה", transliteration = "mekhalka", translation = "отдел; подразделение", pos = "noun", semanticGroup = "work",
             definition = "a section of a company responsible for a specific area of work",
             example = "אני עובד בְּמַחְלֶקֶת שיווק.",
@@ -643,7 +643,7 @@ object WordDataHebrewAdvanced {
             definition = "an extra payment given to an employee as a reward for good performance",
             example = "קיבלתי בּוֹנוּס בסוף השנה.",
             definitionNative = "Дополнительная выплата сотруднику в качестве вознаграждения за хорошую работу.",
-            exampleNative = "В конце года я получил בּוֹנוּס."),
+            exampleNative = "В конце года я получил בּוֹנוּס.", fillInBlankExclusions = listOf(101503L, 101508L, 101512L, 101513L, 101518L, 101522L, 101524L)),
 
         WordEntity(id = 101521, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "שָׁעוֹת עֲבוֹדָה", transliteration = "sha'ot avoda", translation = "рабочие часы", pos = "noun", semanticGroup = "work",
             definition = "the hours during which an employee is expected to work",
@@ -655,25 +655,25 @@ object WordDataHebrewAdvanced {
             definition = "an additional financial reward given for achieving targets or good performance",
             example = "עוֹבְדִים שֶׁעָמְדוּ בְּיַעַד קִיבְּלוּ רֶווַח תִּמְרוּץ.",
             definitionNative = "Дополнительное финансовое вознаграждение за достижение целей или высокие показатели.",
-            exampleNative = "Сотрудники, выполнившие план, получили רֶווַח תִּמְרוּץ."),
+            exampleNative = "Сотрудники, выполнившие план, получили רֶווַח תִּמְרוּץ.", fillInBlankExclusions = listOf(101503L, 101520L)),
 
         WordEntity(id = 101523, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "כִּשָּׁרוֹן", transliteration = "kisharon", translation = "талант; умение", pos = "noun", semanticGroup = "work",
             definition = "a natural ability or learned skill useful in a professional context",
             example = "כִּשָּׁרוֹן בתקשורת חשוב בכל תחום.",
             definitionNative = "Природная способность или приобретённый навык, полезный в профессиональной среде.",
-            exampleNative = "כִּשָּׁרוֹן в общении важен в любой сфере."),
+            exampleNative = "כִּשָּׁרוֹן в общении важен в любой сфере.", fillInBlankExclusions = listOf(101519L, 101525L)),
 
         WordEntity(id = 101524, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "הֶסְכֵּם שָׁכָר", transliteration = "heskhem sakhar", translation = "тарифное соглашение; оплата по договору", pos = "noun", semanticGroup = "work",
             definition = "an agreement between employer and employee that specifies the salary terms",
             example = "חָתַמְנוּ עַל הֶסְכֵּם שָׁכָר חָדָשׁ לְפַנֵי תַּחְלַת הָעֲבוֹדָה.",
             definitionNative = "Соглашение между работодателем и сотрудником, определяющее условия оплаты труда.",
-            exampleNative = "Мы подписали новый הֶסְכֵּם שָׁכָר перед началом работы."),
+            exampleNative = "Мы подписали новый הֶסְכֵּם שָׁכָר перед началом работы.", fillInBlankExclusions = listOf(101518L, 101525L)),
 
         WordEntity(id = 101525, setId = 1015, languagePair = "he-ru", rarity = "UNCOMMON", original = "שִׁיתּוּף פְּעוּלָה", transliteration = "shituf pe'ulah", translation = "сотрудничество; взаимодействие", pos = "noun", semanticGroup = "work",
             definition = "joint work between two or more people or teams towards a common goal",
             example = "שִׁיתּוּף פְּעוּלָה בין המחלקות הצליח מאוד.",
             definitionNative = "Совместная работа двух и более людей или команд для достижения общей цели.",
-            exampleNative = "שִׁיתּוּף פְּעוּלָה между отделами прошло очень успешно."),
+            exampleNative = "שִׁיתּוּף פְּעוּלָה между отделами прошло очень успешно.", fillInBlankExclusions = listOf(101507L)),
 
 
         // Set 116 — +14 (было 11, стало 25),
@@ -686,7 +686,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Состояние, при котором человек испытывает несколько разных чувств одновременно.",
             example = "הִרְגַּשְׁתִּי תַּעֲרֹבֶת של שמחה ועצב בסיום לימודי.",
             exampleNative = "Я испытывал תַּעֲרֹבֶת радости и грусти в конце учёбы.",
-        ),
+         fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101614L, 101615L, 101618L, 101621L, 101622L)),
         WordEntity(
             id = 101613, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "character",
@@ -696,7 +696,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Осознание и оценка добра, полученного от других людей.",
             example = "הַכָּרַת תּוֹדָה מְשַׁפֶּרֶת אֶת הָרְגָשׁוֹת וְאֶת הַקְּשָׁרִים עִם אֲחֵרִים.",
             exampleNative = "הַכָּרַת תּוֹדָה улучшает настроение и отношения с людьми.",
-        ),
+         fillInBlankExclusions = listOf(101605L, 101606L, 101607L, 101611L, 101616L, 101617L, 101619L, 101620L, 101622L, 101623L, 101624L)),
         WordEntity(
             id = 101614, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "emotion",
@@ -706,7 +706,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Положительное чувство самооценки за достижение или принадлежность.",
             example = "גֵּאָוָה מילאה את ליבה כשבנה קיבל פרס.",
             exampleNative = "גֵּאָוָה наполнила её сердце, когда сын получил награду.",
-        ),
+         fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101615L, 101618L, 101621L, 101622L, 101625L)),
         WordEntity(
             id = 101615, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "emotion",
@@ -716,7 +716,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Негативное чувство, возникающее от осознания того, что мы поступили плохо.",
             example = "אַשְׁמָה מכרסמת בו מאז האירוע.",
             exampleNative = "אַשְׁמָה грызёт его с того события.",
-        ),
+         fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101614L, 101618L, 101621L, 101622L)),
         WordEntity(
             id = 101616, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "character",
@@ -726,7 +726,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Способность мыслить и действовать оригинально и новаторски.",
             example = "יְצִירָתִיּוּת היא תכונה חשובה לאמנים ומדענים.",
             exampleNative = "יְצִירָתִיּוּת — важная черта для художников и учёных.",
-        ),
+         fillInBlankExclusions = listOf(101606L, 101607L, 101611L, 101613L, 101617L, 101619L, 101620L, 101623L, 101624L)),
         WordEntity(
             id = 101617, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "character",
@@ -736,51 +736,51 @@ object WordDataHebrewAdvanced {
             definitionNative = "Обязанность нести последствия своих действий и выполнять свою роль.",
             example = "אַחְרָיוּת היא ערך בסיסי בכל תפקיד ניהולי.",
             exampleNative = "אַחְרָיוּת — базовая ценность любой руководящей должности.",
-        ),
+         fillInBlankExclusions = listOf(101606L, 101607L, 101611L, 101613L, 101616L, 101619L, 101620L, 101623L, 101624L)),
         WordEntity(id = 101618, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "דְּאָגָה", transliteration = "de'agah", translation = "беспокойство; забота", pos = "noun", semanticGroup = "emotion",
             definition = "a feeling of anxiety or concern about something uncertain",
             example = "דְּאָגָה לגבי עתיד הילדים היא טבעית.",
             definitionNative = "Тревога или озабоченность чем-то неопределённым.",
-            exampleNative = "דְּאָגָה о будущем детей — естественное чувство."),
+            exampleNative = "דְּאָגָה о будущем детей — естественное чувство.", fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101614L, 101615L, 101621L, 101622L)),
 
         WordEntity(id = 101619, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "עִנְיָן", transliteration = "inyan", translation = "интерес", pos = "noun", semanticGroup = "character",
             definition = "a feeling of wanting to know more about something or someone",
             example = "גיליתי עִנְיָן רב בנושא הפסיכולוגיה.",
             definitionNative = "Желание узнать больше о чём-то или ком-то.",
-            exampleNative = "Я обнаружил большой עִנְיָן к теме психологии."),
+            exampleNative = "Я обнаружил большой עִנְיָן к теме психологии.", fillInBlankExclusions = listOf(101606L, 101607L, 101611L, 101613L, 101616L, 101617L, 101620L, 101623L, 101624L)),
 
         WordEntity(id = 101620, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "פֶּסִימִיּוּת", transliteration = "pesimiyut", translation = "пессимизм", pos = "noun", semanticGroup = "character",
             definition = "a tendency to see the worst aspect of things or believe that bad things will happen",
             example = "פֶּסִימִיּוּת מְיוּתֶּרֶת עַלּוּלָה לְהַפְרִיעַ לְהַצְלָחָה.",
             definitionNative = "Склонность видеть плохое и ожидать негативного исхода.",
-            exampleNative = "Излишняя פֶּסִימִיּוּת может мешать успеху."),
+            exampleNative = "Излишняя פֶּסִימִיּוּת может мешать успеху.", fillInBlankExclusions = listOf(101606L, 101607L, 101608L, 101611L, 101613L, 101616L, 101617L, 101618L, 101619L, 101621L, 101623L, 101624L)),
 
 
         WordEntity(id = 101621, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "לְחַץ", transliteration = "lekhatz", translation = "стресс; давление", pos = "noun", semanticGroup = "emotion",
             definition = "mental strain caused by difficult demands or circumstances",
             example = "לְחַץ בעבודה השפיע על בריאותו.",
             definitionNative = "Психическое напряжение, вызванное сложными требованиями или обстоятельствами.",
-            exampleNative = "Рабочий לְחַץ повлиял на его здоровье."),
+            exampleNative = "Рабочий לְחַץ повлиял на его здоровье.", fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101614L, 101615L, 101618L, 101622L)),
 
         WordEntity(id = 101622, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "הֲנָאָה", transliteration = "hana'a", translation = "удовольствие; наслаждение", pos = "noun", semanticGroup = "emotion",
             definition = "a feeling of pleasure, enjoyment, or satisfaction",
             example = "הֲנָאָה מִן הַמּוּסִיקָה הִיא אוּנִיבֶרְסָלִית.",
             definitionNative = "Чувство удовольствия, радости или удовлетворённости.",
-            exampleNative = "הֲנָאָה от музыки — универсальное ощущение."),
+            exampleNative = "הֲנָאָה от музыки — универсальное ощущение.", fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L)),
 
 
         WordEntity(id = 101623, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "עָמִידוּת", transliteration = "amidut", translation = "стойкость; устойчивость к стрессу", pos = "noun", semanticGroup = "character",
             definition = "the ability to withstand adversity and recover from difficult situations",
             example = "עָמִידוּת נַפְשִׁית מְסַיַּעַת לְהִתְאוֹשֵׁשׁ מִמִּשְׁבָּרִים.",
             definitionNative = "Способность противостоять трудностям и восстанавливаться после тяжёлых ситуаций.",
-            exampleNative = "Психологическая עָמִידוּת помогает восстановиться после кризисов."),
+            exampleNative = "Психологическая עָמִידוּת помогает восстановиться после кризисов.", fillInBlankExclusions = listOf(101606L, 101607L, 101611L, 101613L, 101616L, 101617L, 101619L, 101620L, 101624L)),
 
 
         WordEntity(id = 101624, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "הִתְנַהֲגוּת", transliteration = "hitnahagut", translation = "поведение; манера поведения", pos = "noun", semanticGroup = "character",
             definition = "the way a person acts or conducts themselves in situations",
             example = "הִתְנַהֲגוּת חִיּוּבִית בַּעֲבוֹדָה מְחַזֶּקֶת אֶת הָאֲוִירָה בַּצָּוֶות.",
             definitionNative = "Способ, которым человек действует или ведёт себя в различных ситуациях.",
-            exampleNative = "Позитивная הִתְנַהֲגוּת на работе укрепляет атмосферу в команде."),
+            exampleNative = "Позитивная הִתְנַהֲגוּת на работе укрепляет атмосферу в команде.", fillInBlankExclusions = listOf(101606L, 101607L, 101611L, 101613L, 101616L, 101617L, 101619L, 101620L, 101623L)),
 
                 WordEntity(id = 101625, original = "הִתְרַגְּשׁוּت", transliteration = "[hitraɡeˈʃut]", translation = "волнение; сильное эмоциональное возбуждение", rarity = "UNCOMMON", setId = 1016, languagePair = "he-ru", pos = "noun", semanticGroup = "emotions",
             definition = "a strong feeling of enthusiasm, joy, or emotional agitation",
@@ -811,12 +811,12 @@ object WordDataHebrewAdvanced {
             definitionNative = "Совокупность характеристик, определяющих, кто такой человек.",
             example = "זָהוּת תרבותית מתגבשת בשנות הילדות.",
             exampleNative = "Культурная זָהוּת формируется в детские годы.",
-        ),
+         fillInBlankExclusions = listOf(101716L)),
         WordEntity(id = 101714, setId = 1017, languagePair = "he-ru", rarity = "RARE", original = "פּלּוּרָלִיזְם", transliteration = "pluralizm", translation = "плюрализм", pos = "noun", semanticGroup = "abstract",
             definition = "the view that there are multiple valid perspectives, values, or truths",
             example = "פּלּוּרָלִיזְם ערכי מכיר בריבוי דרכי חיים.",
             definitionNative = "Взгляд, что существует множество допустимых позиций, ценностей или истин.",
-            exampleNative = "Ценностный פּלּוּרָלִיזְם признаёт многообразие жизненных путей."),
+            exampleNative = "Ценностный פּלּוּרָלִיזְם признаёт многообразие жизненных путей.", fillInBlankExclusions = listOf(101708L)),
 
         WordEntity(
             id = 101715, setId = 1017, languagePair = "he-ru", rarity = "RARE",
@@ -928,7 +928,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Враждебный персонаж, управляемый компьютером и пытающийся навредить игроку.",
             example = "כל אוֹיֵב ברמה הזו זז מהר יותר מהרגיל.",
             exampleNative = "Каждый אוֹיֵב на этом уровне движется быстрее обычного.",
-        ),
+         fillInBlankExclusions = listOf(101808L, 101812L)),
         WordEntity(
             id = 101804, setId = 1018, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "gaming",
@@ -938,7 +938,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Единицы счёта, накапливаемые при успешных действиях в игре.",
             example = "צברתי אלפיים נְקֻדּוֹת תוך פחות מדקה.",
             exampleNative = "Я набрал две тысячи נְקֻדּוֹת менее чем за минуту.",
-        ),
+         fillInBlankExclusions = listOf(101802L)),
         WordEntity(
             id = 101805, setId = 1018, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "gaming",
@@ -948,7 +948,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Успешное завершение игры, как правило после победы над всеми врагами.",
             example = "נִצָּחוֹן על הבוס הסופי הגיע אחרי שעה שלמה של קרבות.",
             exampleNative = "נִצָּחוֹן над финальным боссом пришёл после целого часа сражений.",
-        ),
+         fillInBlankExclusions = listOf(101810L)),
 
         // ━━━ UNCOMMON ━━━
         WordEntity(
@@ -960,7 +960,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Способ взаимодействия игрока с игрой: механики, управление, течение событий.",
             example = "הַגֵּיְמְפְּלֵיי שֶׁל הַמִּשְׂחָק הַזֶּה מְרַגֵּשׁ וּמַעֲסִיק.",
             exampleNative = "גֵּיְמְפְּלֵיי этой игры захватывает и держит в напряжении.",
-        ),
+         fillInBlankExclusions = listOf(101810L, 101812L, 101816L, 101817L, 101819L, 101824L)),
         WordEntity(
             id = 101807, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gaming",
@@ -980,7 +980,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Визуальное воплощение игрока или другого существа в игровом мире.",
             example = "בחרתי דֶּמוּת לוחם עם שריון כבד ולחימה בחרב.",
             exampleNative = "Я выбрал דֶּמוּת воина в тяжёлой броне с мечом.",
-        ),
+         fillInBlankExclusions = listOf(101816L)),
         WordEntity(
             id = 101809, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gaming",
@@ -990,7 +990,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Пронумерованный этап в игре, как правило включающий задания нарастающей сложности.",
             example = "עברתי את רָמָה חמש רק אחרי עשרה ניסיונות כושלים.",
             exampleNative = "Я прошёл רָמָה пять только после десяти неудачных попыток.",
-        ),
+         fillInBlankExclusions = listOf(101807L)),
         WordEntity(
             id = 101810, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gaming",
@@ -1000,7 +1000,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Столкновение игрока с врагом, как правило разрешаемое в прямом бою.",
             example = "קְרָב עם הבוס האחרון נמשך יותר מעשר דקות.",
             exampleNative = "קְרָב с последним боссом длился более десяти минут.",
-        ),
+         fillInBlankExclusions = listOf(101801L, 101814L)),
         WordEntity(
             id = 101811, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "gaming",
@@ -1030,7 +1030,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Возвращение персонажа к жизни после гибели в заранее определённой точке.",
             example = "אחרי כל מוות מתקיימת הַחְיָאָה בנקודת ההתחלה של הרמה.",
             exampleNative = "После каждой гибели происходит הַחְיָאָה в начальной точке уровня.",
-        ),
+         fillInBlankExclusions = listOf(101814L)),
 
         // ━━━ RARE ━━━
         WordEntity(id = 101814, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "סְצֵינָה", transliteration = "ststsena", translation = "катсцена; видеовставка", pos = "noun", semanticGroup = "gaming",
@@ -1049,25 +1049,25 @@ object WordDataHebrewAdvanced {
             definition = "the visual representation of a player in the game world",
             example = "בחרתי אַוָּטָאר עם שיניים חדות.",
             definitionNative = "Визуальное воплощение игрока в игровом мире.",
-            exampleNative = "Я выбрал אַוָּטָאר с острыми зубами."),
+            exampleNative = "Я выбрал אַוָּטָאר с острыми зубами.", fillInBlankExclusions = listOf(101808L)),
 
         WordEntity(id = 101817, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "מוּלְטִי-פְּלֵיֶּר", transliteration = "multi-player", translation = "мультиплеер; многопользовательская игра", pos = "noun", semanticGroup = "gaming",
             definition = "a game mode where two or more players participate simultaneously",
             example = "שִׂחַקְנוּ בְּמוּלְטִי-פְּלֵיֶּר וְהִגַּעְנוּ לַסִּיבוּב הַגָּמוּר.",
             definitionNative = "Режим игры, в котором одновременно участвуют двое и более игроков.",
-            exampleNative = "Я записался на мировой טוּרְנִיר по шахматам."),
+            exampleNative = "Я записался на мировой טוּרְנִיר по шахматам.", fillInBlankExclusions = listOf(101818L, 101819L, 101823L)),
 
         WordEntity(id = 101818, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "אוֹנְלַיְן", transliteration = "onlayn", translation = "онлайн; в сети", pos = "adjective", semanticGroup = "gaming",
             definition = "connected to the internet and accessible to other players",
             example = "שיחקנו מצב אוֹנְלַיְן עם שחקנים מכל העולם.",
             definitionNative = "Подключённый к интернету и доступный другим игрокам.",
-            exampleNative = "Мы играли в режим אוֹנְלַיְן с игроками со всего мира."),
+            exampleNative = "Мы играли в режим אוֹנְלַיְן с игроками со всего мира.", fillInBlankExclusions = listOf(101817L, 101819L, 101823L)),
 
         WordEntity(id = 101819, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "מֻלְטִיפְּלֵייֶר", transliteration = "multiplayer", translation = "мультиплеер; многопользовательский", pos = "noun", semanticGroup = "gaming",
             definition = "a game mode that allows multiple players to play together",
             example = "מֻלְטִיפְּלֵייֶר מגביר את ההנאה פי כמה.",
             definitionNative = "Режим игры, позволяющий нескольким игрокам играть вместе.",
-            exampleNative = "מֻלְטִיפְּלֵייֶר увеличивает удовольствие в несколько раз."),
+            exampleNative = "מֻלְטִיפְּלֵייֶר увеличивает удовольствие в несколько раз.", fillInBlankExclusions = listOf(101806L, 101817L, 101818L, 101824L)),
 
         WordEntity(id = 101820, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "הֲגָדָרוֹת", transliteration = "hagdarot", translation = "настройки", pos = "noun", semanticGroup = "gaming",
             definition = "the options menu where a player can adjust game parameters",
@@ -1088,7 +1088,7 @@ object WordDataHebrewAdvanced {
             definition = "a game genre where players assume the roles of characters in a fictional world",
             example = "מִשְׂחָק תַּפְקִידִים מציע עולם פתוח לחקירה.",
             definitionNative = "Жанр игры, в котором игроки принимают роли персонажей в вымышленном мире.",
-            exampleNative = "מִשְׂחָק תַּפְקִידִים предлагает открытый мир для исследования."),
+            exampleNative = "מִשְׂחָק תַּפְקִידִים предлагает открытый мир для исследования.", fillInBlankExclusions = listOf(101801L, 101806L, 101824L)),
 
         WordEntity(id = 101823, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "בֶּאטָה", transliteration = "beta", translation = "бета-версия", pos = "noun", semanticGroup = "gaming",
             definition = "an early version of a game released to a limited audience for testing",
