@@ -409,7 +409,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Медицинский специалист с лицензией на диагностику и лечение пациентов.",
             example = "קָבַעְתִּי תּוֹר אֶצֶל הָרוֹפֵא לְמָחָר.",
             exampleNative = "Я записался к רוֹפֵא на завтра.",
-        ),
+         fillInBlankExclusions = listOf(102803L, 102807L, 102821L, 102824L)),
         WordEntity(
             id = 102803, setId = 1028, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "health", transliteration = "rofé mishpakha",
@@ -463,7 +463,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Ощущение неустойчивости или вращения, иногда симптом заболевания.",
             example = "לְאַחַר הַקְּפִיצָה הִרְגַּשְׁתִּי סְחַרְחֹרֶת.",
             exampleNative = "После прыжка я почувствовал סְחַרְחֹרֶת.",
-        ),
+         fillInBlankExclusions = listOf(102804L)),
         WordEntity(
             id = 102809, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "tipul",
@@ -535,7 +535,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Определение врачом того, какая болезнь у пациента после обследования.",
             example = "הָאַבְחָנָה הִיא דַּלֶּקֶת ריאות — צְרִיךְ אַנְטִיבְּיוֹטִיקָה.",
             exampleNative = "אַבְחָנָה — воспаление лёгких, нужен антибиотик.",
-        ),
+         fillInBlankExclusions = listOf(102814L, 102815L)),
         WordEntity(
             id = 102817, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "bituakh briut",
@@ -553,7 +553,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Введение вакцины в организм для предотвращения болезни.",
             example = "חִסּוּן נֶגֶד שַׁפַּעַת מוּמְלָץ לְכָל הָאוּכְלוּסִיָּה.",
             exampleNative = "חִסּוּן от гриппа рекомендован всему населению.",
-        ),
+         fillInBlankExclusions = listOf(102809L)),
         WordEntity(
             id = 102819, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "tashlum heshtatfut",
@@ -594,7 +594,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Химическое вещество, используемое для лечения болезни или облегчения боли.",
             example = "הָרוֹפֵא רָשַׁם לִי תְּרוּפָה לְאַנְטִיבְּיוֹטִיקָה.",
             exampleNative = "Врач выписал мне תְּרוּפָה — антибиотик.",
-        ),
+         fillInBlankExclusions = listOf(102909L, 102910L, 102911L, 102916L, 102921L)),
         WordEntity(
             id = 102903, setId = 1029, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "kadur",
@@ -603,7 +603,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Маленькая единица лекарства в форме твёрдого шарика для проглатывания.",
             example = "קַח כַּדּוּר אֶחָד שְׁלוֹשׁ פְּעָמִים בַּיּוֹם עִם הָאֹכֶל.",
             exampleNative = "Принимай один כַּדּוּר три раза в день вместе с едой.",
-        ),
+         fillInBlankExclusions = listOf(102916L)),
         WordEntity(
             id = 102904, setId = 1029, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "ke'ev rosh",
@@ -621,7 +621,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Клейкая полоска для закрытия небольших ран на коже.",
             example = "כָּרַעְתִּי בָּאֶצְבַּע, תֵּן לִי פְּלַסְטֶר מִן הָאַמְבַּטְיָה.",
             exampleNative = "Я порезал палец, дай мне פְּלַסְטֶר из ванной.",
-        ),
+         fillInBlankExclusions = listOf(102914L)),
         WordEntity(
             id = 102906, setId = 1029, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "vitamin",
@@ -657,7 +657,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Жидко-масляное лекарство, наносимое на кожу.",
             example = "הָרוֹפֵא רָשַׁם מִשְׁחָה לְפְּצָעִים בַּרֶגֶל.",
             exampleNative = "Врач прописал מִשְׁחָה для ран на ноге.",
-        ),
+         fillInBlankExclusions = listOf(102910L)),
         WordEntity(
             id = 102910, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "tipot",
@@ -666,7 +666,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Жидкое лекарство в малом количестве, вводимое в глаза или уши.",
             example = "הָרוֹפֵא רָשַׁם טִיפּוֹת לָאַף לְאַלֶּרְגְּיָה.",
             exampleNative = "Врач прописал טִיפּוֹת в нос от аллергии.",
-        ),
+         fillInBlankExclusions = listOf(102911L)),
         WordEntity(
             id = 102911, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "sirop",
@@ -720,7 +720,7 @@ object WordDataHebrewImmigrant2 {
             definitionNative = "Форма лекарства в желатиновой оболочке, проглатываемой целиком.",
             example = "הַרּוֹפֵא רָשַׁם לִי קַפְסוּלָה פַּעַם בַּיּוֹם אַחֲרֵי הָאֹכֶל.",
             exampleNative = "Врач прописал мне קַפְסוּלָה один раз в день после еды.",
-        ),
+         fillInBlankExclusions = listOf(102903L)),
         WordEntity(
             id = 102917, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pharmacy", transliteration = "tofaat levai",

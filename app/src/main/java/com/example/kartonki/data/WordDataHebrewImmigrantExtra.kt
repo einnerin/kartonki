@@ -325,7 +325,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Врач, специализирующийся на здоровье зубов и дёсен.",
             example = "בִּקַּרְתִּי רוֹפֵא שִׁינַּיִם לְבִדְיקָה שְׁנָתִית.",
             exampleNative = "Я посетил רוֹפֵא שִׁינַּיִם для ежегодного осмотра.",
-        ),
+         fillInBlankExclusions = listOf(102802L, 102803L, 102806L, 102807L)),
         WordEntity(
             id = 102822, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "ti'ud",
@@ -352,7 +352,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Сотрудник, несущий вахту в часы, когда другие не работают.",
             example = "הַתּוֹרַן בַּקּוּפָּה זָמִין גַּם בְּלֵילוֹת.",
             exampleNative = "תּוֹרַן в клинике доступен и по ночам.",
-        ),
+         fillInBlankExclusions = listOf(102802L, 102807L)),
         WordEntity(
             id = 102825, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "health", transliteration = "khadar hamtana",
@@ -552,7 +552,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Отрывной талон, дающий право на получение посылки или услуги.",
             example = "קִיבַּלְתִּי שׁוֹבֵר בְּדֹאַר לְמַשִּׁיכַת הַחֲבִילָה מֵהַסְּנִיף.",
             exampleNative = "Я получил שׁוֹבֵר по почте для получения посылки в отделении.",
-        ),
+         fillInBlankExclusions = listOf(103210L, 103215L)),
         WordEntity(
             id = 103225, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "ktovet sholelkh",
@@ -643,7 +643,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Человек, находящийся под стражей полиции.",
             example = "הָעֲצוּר הוּבָא לְחֶדֶר הַחֲקִירָה לְשִׂיחָה.",
             exampleNative = "עֲצוּר был доставлен в комнату допроса для беседы.",
-        ),
+         fillInBlankExclusions = listOf(103401L, 103410L, 103417L, 103424L)),
         WordEntity(
             id = 103424, setId = 1034, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "emergency", transliteration = "ed re'iya",
@@ -652,7 +652,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Тот, кто лично видел своими глазами событие в момент его происшествия.",
             example = "עֵד רְאִיָּה מָסַר לַמִּשְׁטָרָה פִּרְטִים עַל הַתּוֹקֵף.",
             exampleNative = "עֵד רְאִיָּה передал полиции подробности о нападавшем.",
-        ),
+         fillInBlankExclusions = listOf(103401L, 103410L, 103417L, 103421L)),
         WordEntity(
             id = 103425, setId = 1034, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "emergency", transliteration = "rekhev herum",
@@ -725,7 +725,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Разница между активами предприятия и его обязательствами.",
             example = "הוֹן עַצְמִי חָיוּב הוּא סִימָן לְחֶבְרָה יְצֻיֶּבֶת.",
             exampleNative = "Положительный הוֹן עַצְמִי — признак стабильной компании.",
-        ),
+         fillInBlankExclusions = listOf(103618L)),
         WordEntity(
             id = 103622, setId = 1036, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "finance", transliteration = "mas rekhush",
