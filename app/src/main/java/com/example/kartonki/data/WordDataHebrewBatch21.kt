@@ -267,7 +267,7 @@ object WordDataHebrewBatch21 {
         WordEntity(id = 108622, setId = 1086, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "architecture", transliteration = "renesans",
             original = "רֶנֶסַנְס", translation = "ренессанс",
-            definition = "תְּנוּעָה אַרְכִיטֶקְטוֹנִית שֶׁל הַמֵּאוֹת הַחֲמֵשׁ-עֶשְׂרֵה–שֵׁשׁ-עֶשְׂרֵה הַמַּחֲזִירָה לַמּוֹרֶשֶׁת הַקְּלַסִּית.",
+            definition = "תְּנוּעָה אַרְכִיטֶקְטוֹנִית שֶׁל הַמֵּאוֹת 15–16 הַמַּחֲזִירָה לַקְּלַסִּיקָה.",
             definitionNative = "Архитектурное движение XV–XVI вв., возрождающее классическое наследие.",
             example = "אַרְכִיטֶקְטוּרַת הָרֶנֶסַנְס מֻכֶּרֶת בְּכִיפּוֹת גְּדוֹלוֹת.",
             exampleNative = "Архитектура רֶנֶסַנְס узнаётся по большим куполам.",

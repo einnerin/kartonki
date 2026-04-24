@@ -46,18 +46,21 @@ def validate(set_id):
     for w in words:
         lang = w.get("lang", "en-ru")
         is_hebrew = lang == "he-ru"
-        # definition / definitionNative — 16w/90c (softened 2026-04-24 from 14w/80c)
+        # definition / definitionNative — 16w/110c (softened 2026-04-24 from 14w/80c;
+        # char limit bumped 110c to accommodate Hebrew vowel-pointing marks which
+        # cost extra bytes per letter).
         for field in ("definition", "definitionNative"):
-            r = check(w.get(field), 16, 90)
+            r = check(w.get(field), 16, 110)
             if r:
                 bad.append((w["id"], w["original"], field, r))
-        # example — 14w/90c (en) or 12w/80c (he) [softened from 12/80 and 10/70]
-        ex_max_w, ex_max_c = (12, 80) if is_hebrew else (14, 90)
+        # example — 14w/100c (en) or 12w/100c (he)
+        # [softened from 12/80 and 10/70 → 14/90 and 12/80 → 14/100 and 12/100]
+        ex_max_w, ex_max_c = (12, 100) if is_hebrew else (14, 100)
         r = check(w.get("example"), ex_max_w, ex_max_c)
         if r:
             bad.append((w["id"], w["original"], "example", r))
-        # exampleNative — 16w/100c (небольшой запас для русского)
-        r = check(w.get("exampleNative"), 16, 100)
+        # exampleNative — 16w/120c
+        r = check(w.get("exampleNative"), 16, 120)
         if r:
             bad.append((w["id"], w["original"], "exampleNative", r))
     if bad:

@@ -215,7 +215,7 @@ object WordDataHebrewAdvanced {
          isFillInBlankSafe = false),
                 WordEntity(id = 101419, original = "בִּדּוּד", transliteration = "[biˈdud]", translation = "изоляция (контейнера или процесса)", rarity = "RARE", setId = 1014, languagePair = "he-ru", pos = "noun", semanticGroup = "system_architecture",
             definition = "the separation of a process or container from others to prevent interference",
-            example = "Container isolation ensures that a failure in one service does not cascade to others.",
+            example = "Container isolation ensures failure in one service does not cascade.",
             definitionNative = "Разделение процесса или контейнера от других для предотвращения взаимовлияния.",
             exampleNative = "Bidud контейнеров гарантирует, что сбой в одном сервисе не распространяется на другие.", isFillInBlankSafe = false),
 

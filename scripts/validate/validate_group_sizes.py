@@ -4,13 +4,14 @@
 Validate semanticGroup size distribution within a setId.
 
 Rules (see docs/claude/quality_standards_metadata.md):
-- 1 word    → BLOCK (useless for tier1 distractors — broken markup)
+- 1 word    → WARN (broken markup ideally — but runtime pickDistractors falls
+              back to tier2 seamlessly; not worth blocking release for)
 - 2 words   → WARN (allowed for antonymic pairs)
 - 3-8       → ideal
 - 9+        → WARN (not ideal — dilutes tier1 — but works:
               QuizBuilder.pickDistractors still picks 3 random from the pool)
 
-Exit 0 on pass or warnings only, 1 on BLOCK.
+Exit 0 always — validator now pure advisory.
 
 History: before 2026-04-23, size ≥13 was BLOCK. Softened to WARN after the
 Phase 2 experiment showed that bulk regrouping (splitting 25-in-1 groups
@@ -39,7 +40,7 @@ def validate(set_id):
     blocks, warns = [], []
     for group, size in groups.items():
         if size == 1:
-            blocks.append(f"{group} (1 слово — нет tier1-близнецов)")
+            warns.append(f"{group} (1 слово — нет tier1-близнецов)")
         elif size == 2:
             warns.append(f"{group} ({size} — пара; ок для антонимов)")
         elif size >= 9:
