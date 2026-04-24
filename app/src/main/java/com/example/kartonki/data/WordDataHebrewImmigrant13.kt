@@ -6,17 +6,17 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant13 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1184, languagePair = "he-ru", name = "Культура и искусство: продвинутый — инструменты, жанры, исполнение",  description = "Инструменты, жанры, исполнение", orderIndex = 184,
+        WordSetEntity(id = 1184, languagePair = "he-ru", name = "Культура и искусство",  description = "Произведения искусства и культура", orderIndex = 184,
     topic = "Культура и искусство", level = 2),
-        WordSetEntity(id = 1185, languagePair = "he-ru", name = "Культура и искусство: продвинутый — живопись, скульптура, литература",  description = "Живопись, скульптура, литература", orderIndex = 185,
+        WordSetEntity(id = 1185, languagePair = "he-ru", name = "Культура и искусство",  description = "Живопись, скульптура, литература", orderIndex = 185,
     topic = "Культура и искусство", level = 2),
-        WordSetEntity(id = 1186, languagePair = "he-ru", name = "Культура и искусство: продвинутый — фильмы, спектакли, сцена",  description = "Фильмы, спектакли, сцена", orderIndex = 186,
+        WordSetEntity(id = 1186, languagePair = "he-ru", name = "Культура и искусство",  description = "Фильмы, спектакли, сцена", orderIndex = 186,
     topic = "Культура и искусство", level = 2),
-        WordSetEntity(id = 1187, languagePair = "he-ru", name = "Риэлтор: продвинутый — недвижимость, ипотека, сделки",               description = "Недвижимость, ипотека, сделки", orderIndex = 187,
+        WordSetEntity(id = 1187, languagePair = "he-ru", name = "Риэлтор",               description = "Недвижимость, ипотека, сделки", orderIndex = 187,
     topic = "Риэлтор", level = 2),
-        WordSetEntity(id = 1188, languagePair = "he-ru", name = "Природа и экология: продвинутый — пляжный отдых и водные виды спорта",   description = "Пляжный отдых и водные виды спорта", orderIndex = 188,
+        WordSetEntity(id = 1188, languagePair = "he-ru", name = "Природа и экология",   description = "Пляжный отдых и водные виды спорта", orderIndex = 188,
     topic = "Природа и экология", level = 2),
-        WordSetEntity(id = 1189, languagePair = "he-ru", name = "Работа и карьера: продвинутый — профессиональный рост и развитие",      description = "Профессиональный рост и развитие", orderIndex = 189,
+        WordSetEntity(id = 1189, languagePair = "he-ru", name = "Работа и карьера",      description = "Профессиональный рост и развитие", orderIndex = 189,
     topic = "Работа и карьера", level = 2),
     )
 

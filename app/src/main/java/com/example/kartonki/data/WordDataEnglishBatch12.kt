@@ -8,19 +8,19 @@ object WordDataEnglishBatch12 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 279, languagePair = "en-ru", orderIndex = 279,
-            name = "Образование: основы — учебные предметы и школьные принадлежности", description = "Учебные предметы и школьные принадлежности", topic = "Образование", level = 1),
+            name = "Образование", description = "Учебные предметы и школьные принадлежности", topic = "Образование", level = 1),
         WordSetEntity(
             id = 280, languagePair = "en-ru", orderIndex = 280,
-            name = "Работа и карьера: основы — распространённые профессии и занятия", description = "Распространённые профессии и занятия", topic = "Работа и карьера", level = 1),
+            name = "Работа и карьера", description = "Распространённые профессии и занятия", topic = "Работа и карьера", level = 1),
         WordSetEntity(
             id = 281, languagePair = "en-ru", orderIndex = 281,
-            name = "Природа и экология: основы — объекты природы, рельеф и растения", description = "Объекты природы, рельеф и растения", topic = "Природа и экология", level = 1),
+            name = "Природа и экология", description = "Объекты природы, рельеф и растения", topic = "Природа и экология", level = 1),
         WordSetEntity(
             id = 282, languagePair = "en-ru", orderIndex = 282,
-            name = "Медицина: основы — ощущения, симптомы и движения тела", description = "Ощущения, симптомы и движения тела", topic = "Медицина", level = 1),
+            name = "Медицина", description = "Ощущения, симптомы и движения тела", topic = "Медицина", level = 1),
         WordSetEntity(
             id = 283, languagePair = "en-ru", orderIndex = 283,
-            name = "Лингвистика: основы — как мы двигаемся — от прыжков до ползания", description = "Как мы двигаемся — от прыжков до ползания", topic = "Лингвистика", level = 1),
+            name = "Лингвистика", description = "Как мы двигаемся — от прыжков до ползания", topic = "Лингвистика", level = 1),
     )
 
     val words: List<WordEntity> = listOf(

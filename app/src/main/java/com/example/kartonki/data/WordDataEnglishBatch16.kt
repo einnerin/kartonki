@@ -10,15 +10,15 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataEnglishBatch16 {
 
     val sets = listOf(
-        WordSetEntity(id = 296, name = "Право: основы",
-            description = "Базовая юридическая лексика",
+        WordSetEntity(id = 296, name = "Право",
+            description = "Основы юридической лексики",
             languagePair = "en-ru", orderIndex = 296,
             topic = "Право", level = 1),
-        WordSetEntity(id = 297, name = "Право: профессиональный — процессуальное право, стадии процесса",
+        WordSetEntity(id = 297, name = "Право",
             description = "Процессуальное право, стадии процесса",
             languagePair = "en-ru", orderIndex = 297,
             topic = "Право", level = 4),
-        WordSetEntity(id = 298, name = "Право: носитель языка",
+        WordSetEntity(id = 298, name = "Право",
             description = "Латинские формулы, доктринальные термины",
             languagePair = "en-ru", orderIndex = 298,
             topic = "Право", level = 5),

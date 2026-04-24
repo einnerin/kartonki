@@ -9,49 +9,49 @@ object WordDataHebrewBatch51 {
 
         WordSetEntity(
             id = 1288, languagePair = "he-ru", orderIndex = 1288,
-            name = "Транспорт: углублённый — логистика, грузовые перевозки и транспортная инфраструктура",
+            name = "Транспорт",
             description = "Логистика, грузовые перевозки и транспортная инфраструктура",
             topic = "Транспорт",
             level = 3),
 
         WordSetEntity(
             id = 1289, languagePair = "he-ru", orderIndex = 1289,
-            name = "Транспорт: профессиональный — транспортная инженерия, городское планирование и умная мобильность",
+            name = "Транспорт",
             description = "Транспортная инженерия, городское планирование и умная мобильность",
             topic = "Транспорт",
             level = 4),
 
         WordSetEntity(
             id = 1290, languagePair = "he-ru", orderIndex = 1290,
-            name = "Транспорт: носитель языка",
+            name = "Транспорт",
             description = "Урбанистика, транспортная политика и академический дискурс",
             topic = "Транспорт",
             level = 5),
 
         WordSetEntity(
             id = 1291, languagePair = "he-ru", orderIndex = 1291,
-            name = "Философия: углублённый — философские школы, ключевые мыслители и концепции",
+            name = "Философия",
             description = "Философские школы, ключевые мыслители и концепции",
             topic = "Философия",
             level = 3),
 
         WordSetEntity(
             id = 1292, languagePair = "he-ru", orderIndex = 1292,
-            name = "Философия: носитель языка 2",
+            name = "Философия",
             description = "Современная философия, метафилософия и академический дискурс",
             topic = "Философия",
             level = 5),
 
         WordSetEntity(
             id = 1293, languagePair = "he-ru", orderIndex = 1293,
-            name = "Финансы: углублённый — бухгалтерский учёт, налогообложение и корпоративные финансы",
+            name = "Финансы",
             description = "Бухгалтерский учёт, налогообложение и корпоративные финансы",
             topic = "Финансы",
             level = 3),
 
         WordSetEntity(
             id = 1294, languagePair = "he-ru", orderIndex = 1294,
-            name = "Финансы: носитель языка",
+            name = "Финансы",
             description = "Финансовая теория, эконометрика и академический дискурс",
             topic = "Финансы",
             level = 5),

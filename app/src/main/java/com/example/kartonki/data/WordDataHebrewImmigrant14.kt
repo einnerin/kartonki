@@ -6,12 +6,12 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant14 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1190, languagePair = "he-ru", name = "Политика: углублённый — цАХАЛ, служба, военная лексика",            description = "ЦАХАЛ, служба, военная лексика", orderIndex = 190, topic = "Политика", level = 3),
-        WordSetEntity(id = 1191, languagePair = "he-ru", name = "Транспорт: продвинутый — автобус, поезд, метро, дороги",                description = "Автобус, поезд, метро, дороги", orderIndex = 191, topic = "Транспорт", level = 2),
-        WordSetEntity(id = 1192, languagePair = "he-ru", name = "Финансы: продвинутый — биржа, акции, бюджет, налоги",             description = "Биржа, акции, бюджет, налоги", orderIndex = 192, topic = "Финансы", level = 2),
-        WordSetEntity(id = 1193, languagePair = "he-ru", name = "Природа и экология: продвинутый — деревья, цветы, огород",      description = "Деревья, цветы, огород", orderIndex = 193, topic = "Природа и экология", level = 2),
-        WordSetEntity(id = 1194, languagePair = "he-ru", name = "Еда и кулинария: основы — хумус, фалафель, традиционные блюда",          description = "Хумус, фалафель, традиционные блюда", orderIndex = 194, topic = "Еда и кулинария", level = 1),
-        WordSetEntity(id = 1195, languagePair = "he-ru", name = "Право: углублённый — суд, договоры, права гражданина",               description = "Суд, договоры, права гражданина", orderIndex = 195, topic = "Право", level = 3),
+        WordSetEntity(id = 1190, languagePair = "he-ru", name = "Политика",            description = "ЦАХАЛ, служба, военная лексика", orderIndex = 190, topic = "Политика", level = 3),
+        WordSetEntity(id = 1191, languagePair = "he-ru", name = "Транспорт",                description = "Автобус, поезд, метро, дороги", orderIndex = 191, topic = "Транспорт", level = 2),
+        WordSetEntity(id = 1192, languagePair = "he-ru", name = "Финансы",             description = "Биржа, акции, бюджет, налоги", orderIndex = 192, topic = "Финансы", level = 2),
+        WordSetEntity(id = 1193, languagePair = "he-ru", name = "Природа и экология",      description = "Деревья, цветы, огород", orderIndex = 193, topic = "Природа и экология", level = 2),
+        WordSetEntity(id = 1194, languagePair = "he-ru", name = "Еда и кулинария",          description = "Хумус, фалафель, традиционные блюда", orderIndex = 194, topic = "Еда и кулинария", level = 1),
+        WordSetEntity(id = 1195, languagePair = "he-ru", name = "Право",               description = "Суд, договоры, права гражданина", orderIndex = 195, topic = "Право", level = 3),
     )
 
     val words: List<WordEntity> = listOf(

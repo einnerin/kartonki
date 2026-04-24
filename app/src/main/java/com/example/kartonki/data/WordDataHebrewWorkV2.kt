@@ -19,37 +19,37 @@ object WordDataHebrewWorkV2 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1640, languagePair = "he-ru", orderIndex = 1640,
-            name = "Работа и карьера: основы — профессии",
+            name = "Работа и карьера",
             description = "Врач, учитель, инженер и другие базовые профессии",
             topic = "Работа и карьера", level = 1,
         ),
         WordSetEntity(
             id = 1641, languagePair = "he-ru", orderIndex = 1641,
-            name = "Работа и карьера: основы — рабочий день",
+            name = "Работа и карьера",
             description = "Офис, коллеги, зарплата, смена, перерыв",
             topic = "Работа и карьера", level = 1,
         ),
         WordSetEntity(
             id = 1642, languagePair = "he-ru", orderIndex = 1642,
-            name = "Работа и карьера: продвинутый — поиск работы",
+            name = "Работа и карьера",
             description = "Резюме, собеседование, вакансия, оффер",
             topic = "Работа и карьера", level = 2,
         ),
         WordSetEntity(
             id = 1643, languagePair = "he-ru", orderIndex = 1643,
-            name = "Работа и карьера: продвинутый — договор и права",
+            name = "Работа и карьера",
             description = "Контракт, отпуск, увольнение, профсоюз",
             topic = "Работа и карьера", level = 2,
         ),
         WordSetEntity(
             id = 1644, languagePair = "he-ru", orderIndex = 1644,
-            name = "Работа и карьера: углублённый — карьерный рост",
+            name = "Работа и карьера",
             description = "Повышение, премия, выгорание, стажировка, проект",
             topic = "Работа и карьера", level = 3,
         ),
         WordSetEntity(
             id = 1645, languagePair = "he-ru", orderIndex = 1645,
-            name = "Работа и карьера: профессиональный — бизнес-терминология",
+            name = "Работа и карьера",
             description = "Стартап, инвестор, KPI, масштабирование, стратегия",
             topic = "Работа и карьера", level = 4,
         ),

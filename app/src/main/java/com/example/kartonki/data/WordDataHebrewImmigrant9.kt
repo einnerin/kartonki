@@ -6,22 +6,22 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant9 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1160, languagePair = "he-ru", name = "Еда и кулинария: продвинутый — посуда, приборы и приготовление еды", description = "Посуда, приборы и приготовление еды", orderIndex = 160,
+        WordSetEntity(id = 1160, languagePair = "he-ru", name = "Еда и кулинария", description = "Посуда, приборы и приготовление еды", orderIndex = 160,
             topic = "Еда и кулинария",
             level = 2),
-        WordSetEntity(id = 1161, languagePair = "he-ru", name = "Работа и карьера: продвинутый — трудоустройство и рабочее место", description = "Трудоустройство и рабочее место", orderIndex = 161,
+        WordSetEntity(id = 1161, languagePair = "he-ru", name = "Работа и карьера", description = "Трудоустройство и рабочее место", orderIndex = 161,
             topic = "Работа и карьера",
             level = 2),
-        WordSetEntity(id = 1162, languagePair = "he-ru", name = "Дом и быт: продвинутый — аренда жилья, договоры и обязанности", description = "Аренда жилья, договоры и обязанности", orderIndex = 162,
+        WordSetEntity(id = 1162, languagePair = "he-ru", name = "Дом и быт", description = "Аренда жилья, договоры и обязанности", orderIndex = 162,
             topic = "Дом и быт",
             level = 2),
-        WordSetEntity(id = 1163, languagePair = "he-ru", name = "Семья: продвинутый — родственники, семейные роли и отношения", description = "Родственники, семейные роли и отношения", orderIndex = 163,
+        WordSetEntity(id = 1163, languagePair = "he-ru", name = "Семья", description = "Родственники, семейные роли и отношения", orderIndex = 163,
             topic = "Семья",
             level = 2),
-        WordSetEntity(id = 1164, languagePair = "he-ru", name = "Медицина: продвинутый — части тела и органы", description = "Части тела и органы", orderIndex = 164,
+        WordSetEntity(id = 1164, languagePair = "he-ru", name = "Медицина", description = "Части тела и органы", orderIndex = 164,
             topic = "Медицина",
             level = 2),
-        WordSetEntity(id = 1165, languagePair = "he-ru", name = "Путешествия: продвинутый — аэропорт, отели, туризм и документы", description = "Аэропорт, отели, туризм и документы", orderIndex = 165,
+        WordSetEntity(id = 1165, languagePair = "he-ru", name = "Путешествия", description = "Аэропорт, отели, туризм и документы", orderIndex = 165,
             topic = "Путешествия",
             level = 2),
     )

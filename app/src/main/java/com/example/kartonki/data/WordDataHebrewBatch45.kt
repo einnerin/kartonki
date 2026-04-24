@@ -8,63 +8,63 @@ object WordDataHebrewBatch45 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1239, languagePair = "he-ru", orderIndex = 1239,
-            name = "Еда и кулинария: углублённый — техники приготовления, диетология и профессиональная кухня",
+            name = "Еда и кулинария",
             description = "Техники приготовления, диетология и профессиональная кухня",
             topic = "Еда и кулинария",
             level = 3
         ),
         WordSetEntity(
             id = 1240, languagePair = "he-ru", orderIndex = 1240,
-            name = "Еда и кулинария: носитель языка",
+            name = "Еда и кулинария",
             description = "Гастрономия, кашрут, библейская пища и кулинарная культура",
             topic = "Еда и кулинария",
             level = 5
         ),
         WordSetEntity(
             id = 1241, languagePair = "he-ru", orderIndex = 1241,
-            name = "Работа и карьера: углублённый — hR, карьерный рост, переговоры и профессиональные компетенции",
+            name = "Работа и карьера",
             description = "HR, карьерный рост, переговоры и профессиональные компетенции",
             topic = "Работа и карьера",
             level = 3
         ),
         WordSetEntity(
             id = 1242, languagePair = "he-ru", orderIndex = 1242,
-            name = "Работа и карьера: носитель языка",
+            name = "Работа и карьера",
             description = "Трудовое право, корпоративная этика, глобализация труда",
             topic = "Работа и карьера",
             level = 5
         ),
         WordSetEntity(
             id = 1243, languagePair = "he-ru", orderIndex = 1243,
-            name = "Дом и быт: углублённый — техническое обслуживание дома, инженерные системы и ремонт",
+            name = "Дом и быт",
             description = "Техническое обслуживание дома, инженерные системы и ремонт",
             topic = "Дом и быт",
             level = 3
         ),
         WordSetEntity(
             id = 1244, languagePair = "he-ru", orderIndex = 1244,
-            name = "Дом и быт: профессиональный — строительство, архитектура интерьера, умный дом",
+            name = "Дом и быт",
             description = "Строительство, архитектура интерьера, умный дом",
             topic = "Дом и быт",
             level = 4
         ),
         WordSetEntity(
             id = 1245, languagePair = "he-ru", orderIndex = 1245,
-            name = "Дом и быт: носитель языка",
+            name = "Дом и быт",
             description = "Недвижимость, жилищное право, градостроительство",
             topic = "Дом и быт",
             level = 5
         ),
         WordSetEntity(
             id = 1246, languagePair = "he-ru", orderIndex = 1246,
-            name = "Медицина: углублённый — специализации, диагностика, фармакология и клинические процедуры",
+            name = "Медицина",
             description = "Специализации, диагностика, фармакология и клинические процедуры",
             topic = "Медицина",
             level = 3
         ),
         WordSetEntity(
             id = 1247, languagePair = "he-ru", orderIndex = 1247,
-            name = "Медицина: носитель языка",
+            name = "Медицина",
             description = "Биоэтика, геномика, генная терапия и медицина будущего",
             topic = "Медицина",
             level = 5

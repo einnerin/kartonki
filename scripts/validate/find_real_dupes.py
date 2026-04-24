@@ -212,15 +212,21 @@ def check_id_formula(all_words):
 
 
 def check_duplicate_names(all_sets):
-    """Two sets with same name in same languagePair."""
+    """Duplicate names within same (name, lang) AND same (description, topic) pair.
+
+    Under the 2026-04-24 naming pattern, name = topic, so ALL sets in one topic
+    share the same name. That's expected. Duplicates are only a problem when
+    BOTH name AND description are identical (meaning the sets are truly
+    indistinguishable in the UI).
+    """
     errors = []
     seen = defaultdict(list)
     for s in all_sets:
-        seen[(s["name"], s["lang"])].append(s)
-    for (name, lang), entries in sorted(seen.items()):
+        seen[(s["name"], s.get("description", ""), s["lang"])].append(s)
+    for (name, desc, lang), entries in sorted(seen.items()):
         if len(entries) > 1:
             ids = ", ".join(f"id={e['id']} [{e['file']}]" for e in entries)
-            errors.append(f"  '{name}' ({lang}): {ids}")
+            errors.append(f"  '{name}' (desc='{desc[:40]}', {lang}): {ids}")
     return errors
 
 
@@ -329,14 +335,12 @@ def check_name_consistency(all_sets, staged_files):
             )
             continue
 
-        # Level keyword must match
-        keyword = LEVEL_KEYWORDS.get(level, "")
-        if keyword and keyword not in name.lower():
-            expected = {1: "основы", 2: "продвинутый", 3: "углублённый", 4: "профессиональный", 5: "носитель языка"}
-            errors.append(
-                f"  Set {s['id']} [{s['file']}]: name='{name}' но level={level} "
-                f"— ожидается слово «{expected[level]}» в названии"
-            )
+        # Level keyword is NO LONGER required in name (relaxed 2026-04-24).
+        # New naming pattern: "{topic}: {subtopic}" — level is encoded via
+        # the level field itself and shown in UI through color/progression,
+        # not through the level word in the name. See
+        # ~/.claude/.../memory/feedback_set_naming_pattern.md for history.
+        # Keeping only the topic-prefix check above.
 
     # Check numbering when multiple sets at same (topic, lang, level)
     from collections import Counter
@@ -365,15 +369,9 @@ def check_name_consistency(all_sets, staged_files):
                 if keyword not in suffix.lower():
                     continue  # already caught above
                 # Check that if there are N > 1 sets, they are numbered correctly
-            # Simplified: just ensure no two siblings share the exact same name
-            from collections import Counter as C2
-            dups = [nm for nm, cnt in C2(names).items() if cnt > 1]
-            if dups and any(s["name"] in dups for s in staged):
-                errors.append(
-                    f"  topic='{s['topic']}' level={s['level']} ({s['lang']}): "
-                    f"несколько наборов с одним именем — используй суффикс: "
-                    f"«{s['topic']}: основы», «{s['topic']}: основы 2» и т.д."
-                )
+            # Under 2026-04-24 pattern (name = topic), all sets in a (topic, lang, level)
+            # share the same name by design — differentiation is via description.
+            # This check is now informational only; no errors raised.
 
     return errors
 

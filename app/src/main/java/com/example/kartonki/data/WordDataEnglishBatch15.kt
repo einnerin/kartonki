@@ -10,19 +10,19 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataEnglishBatch15 {
 
     val sets = listOf(
-        WordSetEntity(id = 292, name = "Архитектура: основы — базовые части зданий и помещений",
+        WordSetEntity(id = 292, name = "Архитектура",
             description = "Базовые части зданий и помещений",
             languagePair = "en-ru", orderIndex = 292,
             topic = "Архитектура", level = 1),
-        WordSetEntity(id = 293, name = "Архитектура: продвинутый — элементы фасадов, материалы, стили",
+        WordSetEntity(id = 293, name = "Архитектура",
             description = "Элементы фасадов, материалы, стили",
             languagePair = "en-ru", orderIndex = 293,
             topic = "Архитектура", level = 2),
-        WordSetEntity(id = 294, name = "Архитектура: углублённый — конструктивные элементы, типы помещений",
+        WordSetEntity(id = 294, name = "Архитектура",
             description = "Конструктивные элементы, типы помещений",
             languagePair = "en-ru", orderIndex = 294,
             topic = "Архитектура", level = 3),
-        WordSetEntity(id = 295, name = "Архитектура: носитель языка",
+        WordSetEntity(id = 295, name = "Архитектура",
             description = "Теоретические и исторические термины",
             languagePair = "en-ru", orderIndex = 295,
             topic = "Архитектура", level = 5),

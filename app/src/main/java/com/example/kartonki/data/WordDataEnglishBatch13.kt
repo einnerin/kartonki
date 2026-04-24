@@ -10,19 +10,19 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataEnglishBatch13 {
 
     val sets = listOf(
-        WordSetEntity(id = 284, name = "Семья: продвинутый — расширенные родственники, поколения, отношения",
+        WordSetEntity(id = 284, name = "Семья",
             description = "Расширенные родственники, поколения, отношения",
             languagePair = "en-ru", orderIndex = 284,
             topic = "Семья", level = 2),
-        WordSetEntity(id = 285, name = "Семья: углублённый — брак, развод, наследство, генеалогия",
+        WordSetEntity(id = 285, name = "Семья",
             description = "Брак, развод, наследство, генеалогия",
             languagePair = "en-ru", orderIndex = 285,
             topic = "Семья", level = 3),
-        WordSetEntity(id = 286, name = "Семья: профессиональный — семейное право, социология родства",
+        WordSetEntity(id = 286, name = "Семья",
             description = "Семейное право, социология родства",
             languagePair = "en-ru", orderIndex = 286,
             topic = "Семья", level = 4),
-        WordSetEntity(id = 287, name = "Семья: носитель языка",
+        WordSetEntity(id = 287, name = "Семья",
             description = "Архаика, литературные формы, специализированные термины",
             languagePair = "en-ru", orderIndex = 287,
             topic = "Семья", level = 5),

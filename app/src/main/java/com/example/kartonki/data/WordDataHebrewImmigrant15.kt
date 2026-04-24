@@ -6,17 +6,17 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant15 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1196, languagePair = "he-ru", name = "Дом и быт: продвинутый — шук, торговый центр, оплата",            description = "Шук, торговый центр, оплата", orderIndex = 196,
+        WordSetEntity(id = 1196, languagePair = "he-ru", name = "Дом и быт",            description = "Шук, торговый центр, оплата", orderIndex = 196,
     topic = "Дом и быт", level = 2),
-        WordSetEntity(id = 1197, languagePair = "he-ru", name = "Город: продвинутый — улица, квартал, муниципалитет",                 description = "Улица, квартал, муниципалитет", orderIndex = 197,
+        WordSetEntity(id = 1197, languagePair = "he-ru", name = "Город",                 description = "Улица, квартал, муниципалитет", orderIndex = 197,
     topic = "Город", level = 2),
-        WordSetEntity(id = 1198, languagePair = "he-ru", name = "Религия и праздники: продвинутый — хупа, жених, невеста, праздники",   description = "Хупа, жених, невеста, праздники", orderIndex = 198,
+        WordSetEntity(id = 1198, languagePair = "he-ru", name = "Религия и праздники",   description = "Хупа, жених, невеста, праздники", orderIndex = 198,
     topic = "Религия и праздники", level = 2),
-        WordSetEntity(id = 1199, languagePair = "he-ru", name = "Лингвистика: основы — базовые определения: большой, новый, быстрый",           description = "Базовые определения: большой, новый, быстрый", orderIndex = 199,
+        WordSetEntity(id = 1199, languagePair = "he-ru", name = "Лингвистика",           description = "Большой, новый, быстрый", orderIndex = 199,
     topic = "Лингвистика", level = 1),
-        WordSetEntity(id = 1200, languagePair = "he-ru", name = "Лингвистика: основы — идти, делать, говорить, видеть",           description = "Идти, делать, говорить, видеть", orderIndex = 200,
+        WordSetEntity(id = 1200, languagePair = "he-ru", name = "Лингвистика",           description = "Идти, делать, говорить, видеть", orderIndex = 200,
     topic = "Лингвистика", level = 1),
-        WordSetEntity(id = 1201, languagePair = "he-ru", name = "Математика: основы — цифры, арифметика, счёт", description = "Цифры, арифметика, счёт", orderIndex = 201,
+        WordSetEntity(id = 1201, languagePair = "he-ru", name = "Математика", description = "Цифры, арифметика, счёт", orderIndex = 201,
     topic = "Математика", level = 1),
     )
 

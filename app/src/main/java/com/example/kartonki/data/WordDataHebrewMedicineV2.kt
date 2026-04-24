@@ -11,13 +11,13 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewMedicineV2 {
 
     val sets = listOf(
-        WordSetEntity(id = 1600, name = "Медицина: основы — тело и симптомы", description = "Базовые симптомы и ощущения у врача", languagePair = "he-ru", orderIndex = 1600, topic = "Медицина", level = 1),
-        WordSetEntity(id = 1601, name = "Медицина: основы — у врача", description = "Врач, клиника, рецепт и запись на приём", languagePair = "he-ru", orderIndex = 1601, topic = "Медицина", level = 1),
-        WordSetEntity(id = 1602, name = "Медицина: продвинутый — купат холим и аптека", description = "Больничные кассы, форма 17, фармацевт", languagePair = "he-ru", orderIndex = 1602, topic = "Медицина", level = 2),
-        WordSetEntity(id = 1603, name = "Медицина: продвинутый — распространённые болезни", description = "Грипп, диабет, травмы, инфекции", languagePair = "he-ru", orderIndex = 1603, topic = "Медицина", level = 2),
-        WordSetEntity(id = 1604, name = "Медицина: углублённый — процедуры и диагностика", description = "МРТ, КТ, биопсия, реабилитация", languagePair = "he-ru", orderIndex = 1604, topic = "Медицина", level = 3),
-        WordSetEntity(id = 1605, name = "Медицина: профессиональный — специализации", description = "Кардиолог, невролог, стоматолог, ЛОР", languagePair = "he-ru", orderIndex = 1605, topic = "Медицина", level = 4),
-        WordSetEntity(id = 1606, name = "Медицина: носитель — редкие термины", description = "Этиология, патогенез, эпикриз, синдром", languagePair = "he-ru", orderIndex = 1606, topic = "Медицина", level = 5),
+        WordSetEntity(id = 1600, name = "Медицина", description = "Базовые симптомы и ощущения у врача", languagePair = "he-ru", orderIndex = 1600, topic = "Медицина", level = 1),
+        WordSetEntity(id = 1601, name = "Медицина", description = "Врач, клиника, рецепт и запись на приём", languagePair = "he-ru", orderIndex = 1601, topic = "Медицина", level = 1),
+        WordSetEntity(id = 1602, name = "Медицина", description = "Больничные кассы, форма 17, фармацевт", languagePair = "he-ru", orderIndex = 1602, topic = "Медицина", level = 2),
+        WordSetEntity(id = 1603, name = "Медицина", description = "Грипп, диабет, травмы, инфекции", languagePair = "he-ru", orderIndex = 1603, topic = "Медицина", level = 2),
+        WordSetEntity(id = 1604, name = "Медицина", description = "МРТ, КТ, биопсия, реабилитация", languagePair = "he-ru", orderIndex = 1604, topic = "Медицина", level = 3),
+        WordSetEntity(id = 1605, name = "Медицина", description = "Кардиолог, невролог, стоматолог, ЛОР", languagePair = "he-ru", orderIndex = 1605, topic = "Медицина", level = 4),
+        WordSetEntity(id = 1606, name = "Медицина", description = "Этиология, патогенез, эпикриз, синдром", languagePair = "he-ru", orderIndex = 1606, topic = "Медицина", level = 5),
     )
 
     val words = listOf(

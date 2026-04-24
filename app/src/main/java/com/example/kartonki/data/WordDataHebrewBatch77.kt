@@ -8,21 +8,21 @@ object WordDataHebrewBatch77 {
     val sets: List<WordSetEntity> = listOf(
         // ── Транспорт: основы 4, 5 ───────────────────────────────────────────
         WordSetEntity(id = 1488, languagePair = "he-ru", orderIndex = 1488,
-            name = "Транспорт: основы — общественный транспорт: маршруты, расписание, приложения", description = "Общественный транспорт: маршруты, расписание, приложения",
+            name = "Транспорт", description = "Маршруты, расписание, приложения",
             topic = "Транспорт", level = 1),
         WordSetEntity(id = 1489, languagePair = "he-ru", orderIndex = 1489,
-            name = "Транспорт: основы — вождение в Израиле: права, тест, правила дорожного движения", description = "Вождение в Израиле: права, тест, правила дорожного движения",
+            name = "Транспорт", description = "Права, тест, правила дорожного движения",
             topic = "Транспорт", level = 1),
 
         // ── Спорт: основы 3, 4, 5 ────────────────────────────────────────────
         WordSetEntity(id = 1490, languagePair = "he-ru", orderIndex = 1490,
-            name = "Спорт: основы — командные виды спорта и соревнования", description = "Командные виды спорта и соревнования",
+            name = "Спорт", description = "Командные виды спорта и соревнования",
             topic = "Спорт", level = 1),
         WordSetEntity(id = 1491, languagePair = "he-ru", orderIndex = 1491,
-            name = "Спорт: основы — фитнес, тренажёрный зал и оборудование", description = "Фитнес, тренажёрный зал и оборудование",
+            name = "Спорт", description = "Фитнес, тренажёрный зал и оборудование",
             topic = "Спорт", level = 1),
         WordSetEntity(id = 1492, languagePair = "he-ru", orderIndex = 1492,
-            name = "Спорт: основы — активный отдых и спорт на природе", description = "Активный отдых и спорт на природе",
+            name = "Спорт", description = "Активный отдых и спорт на природе",
             topic = "Спорт", level = 1),
     )
 

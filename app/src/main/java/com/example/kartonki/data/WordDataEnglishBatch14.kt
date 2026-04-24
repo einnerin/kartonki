@@ -10,19 +10,19 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataEnglishBatch14 {
 
     val sets = listOf(
-        WordSetEntity(id = 288, name = "Город: продвинутый — общественные пространства, транспортная инфраструктура",
+        WordSetEntity(id = 288, name = "Город",
             description = "Общественные пространства, транспортная инфраструктура",
             languagePair = "en-ru", orderIndex = 288,
             topic = "Город", level = 2),
-        WordSetEntity(id = 289, name = "Город: углублённый — муниципальные службы, планирование, городская жизнь",
+        WordSetEntity(id = 289, name = "Город",
             description = "Муниципальные службы, планирование, городская жизнь",
             languagePair = "en-ru", orderIndex = 289,
             topic = "Город", level = 3),
-        WordSetEntity(id = 290, name = "Город: профессиональный — урбанистика, градостроительство, городская политика",
+        WordSetEntity(id = 290, name = "Город",
             description = "Урбанистика, градостроительство, городская политика",
             languagePair = "en-ru", orderIndex = 290,
             topic = "Город", level = 4),
-        WordSetEntity(id = 291, name = "Город: носитель языка",
+        WordSetEntity(id = 291, name = "Город",
             description = "Теория города, антропология, редкая лексика",
             languagePair = "en-ru", orderIndex = 291,
             topic = "Город", level = 5),

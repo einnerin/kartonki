@@ -9,35 +9,35 @@ object WordDataHebrewBatch59 {
 
         WordSetEntity(
             id = 1330, languagePair = "he-ru", orderIndex = 1330,
-            name = "Журналист: продвинутый — базовая лексика прессы, репортажей и медиа",
+            name = "Журналист",
             description = "Базовая лексика прессы, репортажей и медиа",
             topic = "Журналист",
             level = 2),
 
         WordSetEntity(
             id = 1331, languagePair = "he-ru", orderIndex = 1331,
-            name = "Журналист: продвинутый — профессиональные термины редакции, эфира и цифровых медиа",
+            name = "Журналист",
             description = "Профессиональные термины редакции, эфира и цифровых медиа",
             topic = "Журналист",
             level = 2),
 
         WordSetEntity(
             id = 1332, languagePair = "he-ru", orderIndex = 1332,
-            name = "Журналист: углублённый — медиаэтика, свобода слова, редакционные концепции",
+            name = "Журналист",
             description = "Медиаэтика, свобода слова, редакционные концепции",
             topic = "Журналист",
             level = 3),
 
         WordSetEntity(
             id = 1333, languagePair = "he-ru", orderIndex = 1333,
-            name = "Журналист: профессиональный — медиаправо, фактчекинг, медиаполитика и жанровые термины",
+            name = "Журналист",
             description = "Медиаправо, фактчекинг, медиаполитика и жанровые термины",
             topic = "Журналист",
             level = 4),
 
         WordSetEntity(
             id = 1334, languagePair = "he-ru", orderIndex = 1334,
-            name = "Журналист: носитель языка",
+            name = "Журналист",
             description = "Академическая теория медиа, семиотика, медиадискурс",
             topic = "Журналист",
             level = 5),

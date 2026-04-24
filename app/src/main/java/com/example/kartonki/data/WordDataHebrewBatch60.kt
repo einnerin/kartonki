@@ -9,64 +9,64 @@ object WordDataHebrewBatch60 {
 
         WordSetEntity(
             id = 1335, languagePair = "he-ru", orderIndex = 1335,
-            name = "Хай-тек: основы — собеседование в IT: стек, задачи, оффер",
-            description = "Собеседование в IT: стек, задачи, оффер",
+            name = "Хай-тек",
+            description = "Стек, задачи, оффер",
             topic = "Хай-тек",
             level = 1),
 
         WordSetEntity(
             id = 1336, languagePair = "he-ru", orderIndex = 1336,
-            name = "Маркетинг: основы — собеседование в маркетинг: кейсы, метрики, портфолио",
-            description = "Собеседование в маркетинг: кейсы, метрики, портфолио",
+            name = "Маркетинг",
+            description = "Кейсы, метрики, портфолио",
             topic = "Маркетинг",
             level = 1),
 
         WordSetEntity(
             id = 1337, languagePair = "he-ru", orderIndex = 1337,
-            name = "Строительство: основы — собеседование на стройку: специальность, опыт, бригада",
-            description = "Собеседование на стройку: специальность, опыт, бригада",
+            name = "Строительство",
+            description = "Специальность, опыт, бригада",
             topic = "Строительство",
             level = 1),
 
         WordSetEntity(
             id = 1338, languagePair = "he-ru", orderIndex = 1338,
-            name = "Уход: основы — собеседование сиделки: нагрузка, подопечный, смена",
-            description = "Собеседование сиделки: нагрузка, подопечный, смена",
+            name = "Уход",
+            description = "Нагрузка, подопечный, смена",
             topic = "Уход",
             level = 1),
 
         WordSetEntity(
             id = 1339, languagePair = "he-ru", orderIndex = 1339,
-            name = "Бухгалтерия: основы — собеседование в бухгалтерию: программы, опыт, отчётность",
-            description = "Собеседование в бухгалтерию: программы, опыт, отчётность",
+            name = "Бухгалтерия",
+            description = "Программы, опыт, отчётность",
             topic = "Бухгалтерия",
             level = 1),
 
         WordSetEntity(
             id = 1340, languagePair = "he-ru", orderIndex = 1340,
-            name = "Логистика: основы — собеседование в логистику: маршруты, права, склад",
-            description = "Собеседование в логистику: маршруты, права, склад",
+            name = "Логистика",
+            description = "Маршруты, права, склад",
             topic = "Логистика",
             level = 1),
 
         WordSetEntity(
             id = 1341, languagePair = "he-ru", orderIndex = 1341,
-            name = "Риэлтор: основы",
-            description = "Собеседование риэлтора: лицензия, сделки, база клиентов",
+            name = "Риэлтор",
+            description = "Лицензия, сделки, база клиентов",
             topic = "Риэлтор",
             level = 1),
 
         WordSetEntity(
             id = 1342, languagePair = "he-ru", orderIndex = 1342,
-            name = "Журналист: основы — собеседование журналиста: редакция, материалы, формат",
-            description = "Собеседование журналиста: редакция, материалы, формат",
+            name = "Журналист",
+            description = "Редакция, материалы, формат",
             topic = "Журналист",
             level = 1),
 
         WordSetEntity(
             id = 1343, languagePair = "he-ru", orderIndex = 1343,
-            name = "Архитектура: основы — собеседование архитектора: проекты, программы, чертежи",
-            description = "Собеседование архитектора: проекты, программы, чертежи",
+            name = "Архитектура",
+            description = "Проекты, программы, чертежи",
             topic = "Архитектура",
             level = 1),
     )

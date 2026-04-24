@@ -10,19 +10,19 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewMore {
 
     val sets = listOf(
-                WordSetEntity(id = 1009, name = "Город: продвинутый — городские объекты и природа",      description = "Городские объекты и природа",       languagePair = "he-ru", orderIndex = 9,
+                WordSetEntity(id = 1009, name = "Город",      description = "Городские объекты и природа",       languagePair = "he-ru", orderIndex = 9,
             topic = "Город",
             level = 2),
-        WordSetEntity(id = 1010, name = "Одежда: основы — одежда и аксессуары",             description = "Одежда и аксессуары",               languagePair = "he-ru", orderIndex = 10,
+        WordSetEntity(id = 1010, name = "Одежда",             description = "Одежда и аксессуары",               languagePair = "he-ru", orderIndex = 10,
             topic = "Одежда",
             level = 1),
-        WordSetEntity(id = 1011, name = "Природа и экология: основы — климат, сезоны и природа",   description = "Климат, сезоны и природа",   languagePair = "he-ru", orderIndex = 11,
+        WordSetEntity(id = 1011, name = "Природа и экология",   description = "Климат, сезоны и природа",   languagePair = "he-ru", orderIndex = 11,
             topic = "Природа и экология",
             level = 1),
-        WordSetEntity(id = 1012, name = "Культура и искусство: продвинутый — жанры, люди и термины кино",               description = "Жанры, люди и термины кино",    languagePair = "he-ru", orderIndex = 12,
+        WordSetEntity(id = 1012, name = "Культура и искусство",               description = "Жанры, люди и термины кино",    languagePair = "he-ru", orderIndex = 12,
             topic = "Культура и искусство",
             level = 2),
-        WordSetEntity(id = 1013, name = "Культура и искусство: углублённый — производство фильмов",    description = "Производство фильмов",        languagePair = "he-ru", orderIndex = 13,
+        WordSetEntity(id = 1013, name = "Культура и искусство",    description = "Производство фильмов",        languagePair = "he-ru", orderIndex = 13,
             topic = "Культура и искусство",
             level = 3),
     )

@@ -8,18 +8,18 @@ object WordDataHebrewBatch78 {
     val sets: List<WordSetEntity> = listOf(
         // ── Политика: продвинутый 2, 3 ───────────────────────────────────────
         WordSetEntity(id = 1493, languagePair = "he-ru", orderIndex = 1493,
-            name = "Политика: продвинутый — партии, коалиция, выборы и голосование", description = "Партии, коалиция, выборы и голосование",
+            name = "Политика", description = "Партии, коалиция, выборы и голосование",
             topic = "Политика", level = 2),
         WordSetEntity(id = 1494, languagePair = "he-ru", orderIndex = 1494,
-            name = "Политика: продвинутый — сМИ, общественный дискурс и политические кампании", description = "СМИ, общественный дискурс и политические кампании",
+            name = "Политика", description = "СМИ, общественный дискурс и политические кампании",
             topic = "Политика", level = 2),
 
         // ── Право: продвинутый 2, 3 ──────────────────────────────────────────
         WordSetEntity(id = 1495, languagePair = "he-ru", orderIndex = 1495,
-            name = "Право: продвинутый — уголовное право и судебный процесс", description = "Уголовное право и судебный процесс",
+            name = "Право", description = "Уголовное право и судебный процесс",
             topic = "Право", level = 2),
         WordSetEntity(id = 1496, languagePair = "he-ru", orderIndex = 1496,
-            name = "Право: продвинутый — гражданское и семейное право", description = "Гражданское и семейное право",
+            name = "Право", description = "Гражданское и семейное право",
             topic = "Право", level = 2),
     )
 

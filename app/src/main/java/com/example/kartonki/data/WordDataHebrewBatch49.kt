@@ -9,56 +9,56 @@ object WordDataHebrewBatch49 {
 
         WordSetEntity(
             id = 1272, languagePair = "he-ru", orderIndex = 1272,
-            name = "Одежда: углублённый — ткани, конструкция одежды и специфические предметы гардероба",
+            name = "Одежда",
             description = "Ткани, конструкция одежды и специфические предметы гардероба",
             topic = "Одежда",
             level = 3),
 
         WordSetEntity(
             id = 1273, languagePair = "he-ru", orderIndex = 1273,
-            name = "Одежда: профессиональный",
+            name = "Одежда",
             description = "Индустрия моды, дизайн и профессиональная лексика",
             topic = "Одежда",
             level = 4),
 
         WordSetEntity(
             id = 1274, languagePair = "he-ru", orderIndex = 1274,
-            name = "Одежда: носитель языка",
+            name = "Одежда",
             description = "Теория моды, семиотика одежды и культурный анализ",
             topic = "Одежда",
             level = 5),
 
         WordSetEntity(
             id = 1275, languagePair = "he-ru", orderIndex = 1275,
-            name = "Политика: углублённый — политические идеологии и концепции политологии",
+            name = "Политика",
             description = "Политические идеологии и концепции политологии",
             topic = "Политика",
             level = 3),
 
         WordSetEntity(
             id = 1276, languagePair = "he-ru", orderIndex = 1276,
-            name = "Политика: профессиональный — профессиональная политическая наука и теория государства",
+            name = "Политика",
             description = "Профессиональная политическая наука и теория государства",
             topic = "Политика",
             level = 4),
 
         WordSetEntity(
             id = 1277, languagePair = "he-ru", orderIndex = 1277,
-            name = "Политика: носитель языка",
+            name = "Политика",
             description = "Политическая философия, критика и академический дискурс",
             topic = "Политика",
             level = 5),
 
         WordSetEntity(
             id = 1278, languagePair = "he-ru", orderIndex = 1278,
-            name = "Право: углублённый — гражданское право, процессуальные нормы и специализированная юридическая лексика",
+            name = "Право",
             description = "Гражданское право, процессуальные нормы и специализированная юридическая лексика",
             topic = "Право",
             level = 3),
 
         WordSetEntity(
             id = 1279, languagePair = "he-ru", orderIndex = 1279,
-            name = "Право: носитель языка",
+            name = "Право",
             description = "Теория права, юриспруденция и философия права",
             topic = "Право",
             level = 5),

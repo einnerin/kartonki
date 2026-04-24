@@ -8,49 +8,49 @@ object WordDataHebrewBatch43 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1225, languagePair = "he-ru", orderIndex = 1225,
-            name = "Семья: углублённый — расширенные семейные связи, родство и наследование",
+            name = "Семья",
             description = "Расширенные семейные связи, родство и наследование",
             topic = "Семья",
             level = 3
         ),
         WordSetEntity(
             id = 1226, languagePair = "he-ru", orderIndex = 1226,
-            name = "Семья: профессиональный — семейная психология, динамика и антропология семьи",
+            name = "Семья",
             description = "Семейная психология, динамика и антропология семьи",
             topic = "Семья",
             level = 4
         ),
         WordSetEntity(
             id = 1227, languagePair = "he-ru", orderIndex = 1227,
-            name = "Философия: основы",
-            description = "Базовые философские понятия: мысль, бытие, опыт",
+            name = "Философия",
+            description = "Мысль, бытие, опыт",
             topic = "Философия",
             level = 1
         ),
         WordSetEntity(
             id = 1228, languagePair = "he-ru", orderIndex = 1228,
-            name = "Философия: профессиональный — продвинутые философские течения и концепции",
+            name = "Философия",
             description = "Продвинутые философские течения и концепции",
             topic = "Философия",
             level = 4
         ),
         WordSetEntity(
             id = 1229, languagePair = "he-ru", orderIndex = 1229,
-            name = "Лингвистика: основы — базовые лингвистические понятия: язык, речь, грамматика",
-            description = "Базовые лингвистические понятия: язык, речь, грамматика",
+            name = "Лингвистика",
+            description = "Язык, речь, грамматика",
             topic = "Лингвистика",
             level = 1
         ),
         WordSetEntity(
             id = 1230, languagePair = "he-ru", orderIndex = 1230,
-            name = "Лингвистика: профессиональный — дискурс, семиотика и историческая лингвистика",
+            name = "Лингвистика",
             description = "Дискурс, семиотика и историческая лингвистика",
             topic = "Лингвистика",
             level = 4
         ),
         WordSetEntity(
             id = 1231, languagePair = "he-ru", orderIndex = 1231,
-            name = "Финансы: основы — базовые понятия торговли, коммерции и потребления",
+            name = "Финансы",
             description = "Базовые понятия торговли, коммерции и потребления",
             topic = "Финансы",
             level = 1

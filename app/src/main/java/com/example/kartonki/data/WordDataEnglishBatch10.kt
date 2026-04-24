@@ -8,13 +8,13 @@ object WordDataEnglishBatch10 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 271, languagePair = "en-ru", orderIndex = 271,
-            name = "Дом и быт: основы — посуда, приборы и кухонные инструменты", description = "Посуда, приборы и кухонные инструменты", topic = "Дом и быт", level = 1),
+            name = "Дом и быт", description = "Посуда, приборы и кухонные инструменты", topic = "Дом и быт", level = 1),
         WordSetEntity(
             id = 272, languagePair = "en-ru", orderIndex = 272,
-            name = "Природа и экология: основы — домашние питомцы и сельскохозяйственные животные", description = "Домашние питомцы и сельскохозяйственные животные", topic = "Природа и экология", level = 1),
+            name = "Природа и экология", description = "Домашние питомцы и сельскохозяйственные животные", topic = "Природа и экология", level = 1),
         WordSetEntity(
             id = 273, languagePair = "en-ru", orderIndex = 273,
-            name = "Еда и кулинария: основы — блюда для завтрака, сладкое и перекусы", description = "Блюда для завтрака, сладкое и перекусы", topic = "Еда и кулинария", level = 1),
+            name = "Еда и кулинария", description = "Блюда для завтрака, сладкое и перекусы", topic = "Еда и кулинария", level = 1),
     )
 
     val words: List<WordEntity> = listOf(

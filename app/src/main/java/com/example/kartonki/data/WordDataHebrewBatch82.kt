@@ -7,16 +7,16 @@ object WordDataHebrewBatch82 {
 
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(id = 1507, languagePair = "he-ru", orderIndex = 1507,
-            name = "Разговорный иврит: продвинутый", description = "Идиомы и устойчивые разговорные выражения",
+            name = "Разговорный иврит", description = "Идиомы и устойчивые разговорные выражения",
             topic = "Разговорный иврит", level = 2),
         WordSetEntity(id = 1508, languagePair = "he-ru", orderIndex = 1508,
-            name = "Разговорный иврит: углублённый", description = "Редкий сленг, молодёжный язык и неформальная речь",
+            name = "Разговорный иврит", description = "Редкий сленг, молодёжный язык и неформальная речь",
             topic = "Разговорный иврит", level = 3),
         WordSetEntity(id = 1509, languagePair = "he-ru", orderIndex = 1509,
-            name = "Разговорный иврит: профессиональный", description = "Идиомы из библейских источников в живой речи",
+            name = "Разговорный иврит", description = "Идиомы из библейских источников в живой речи",
             topic = "Разговорный иврит", level = 4),
         WordSetEntity(id = 1510, languagePair = "he-ru", orderIndex = 1510,
-            name = "Разговорный иврит: носитель языка", description = "Поговорки, пословицы и культурные отсылки",
+            name = "Разговорный иврит", description = "Поговорки, пословицы и культурные отсылки",
             topic = "Разговорный иврит", level = 5),
     )
 

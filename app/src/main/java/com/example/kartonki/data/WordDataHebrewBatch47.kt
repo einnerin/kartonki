@@ -8,49 +8,49 @@ object WordDataHebrewBatch47 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1256, languagePair = "he-ru", orderIndex = 1256,
-            name = "Армия: углублённый",
+            name = "Армия",
             description = "Тактика, разведка и военные операции",
             topic = "Армия", level = 3
         ),
         WordSetEntity(
             id = 1257, languagePair = "he-ru", orderIndex = 1257,
-            name = "Армия: профессиональный",
+            name = "Армия",
             description = "Доктрина, геополитика и высшие военные понятия",
             topic = "Армия", level = 4
         ),
         WordSetEntity(
             id = 1258, languagePair = "he-ru", orderIndex = 1258,
-            name = "Армия: носитель языка",
+            name = "Армия",
             description = "Философия войны и теория военных конфликтов",
             topic = "Армия", level = 5
         ),
         WordSetEntity(
             id = 1259, languagePair = "he-ru", orderIndex = 1259,
-            name = "Архитектура: углублённый — строительные элементы, стили и архитектурный анализ",
+            name = "Архитектура",
             description = "Строительные элементы, стили и архитектурный анализ",
             topic = "Архитектура", level = 3
         ),
         WordSetEntity(
             id = 1260, languagePair = "he-ru", orderIndex = 1260,
-            name = "Архитектура: носитель языка",
+            name = "Архитектура",
             description = "Феноменология, семиотика и теория архитектуры",
             topic = "Архитектура", level = 5
         ),
         WordSetEntity(
             id = 1261, languagePair = "he-ru", orderIndex = 1261,
-            name = "Город: углублённый — городское планирование, инфраструктура и районы",
+            name = "Город",
             description = "Городское планирование, инфраструктура и районы",
             topic = "Город", level = 3
         ),
         WordSetEntity(
             id = 1262, languagePair = "he-ru", orderIndex = 1262,
-            name = "Город: профессиональный — урбанистика, экология города и городская политика",
+            name = "Город",
             description = "Урбанистика, экология города и городская политика",
             topic = "Город", level = 4
         ),
         WordSetEntity(
             id = 1263, languagePair = "he-ru", orderIndex = 1263,
-            name = "Город: носитель языка",
+            name = "Город",
             description = "Теория города, городская философия и постурбанизм",
             topic = "Город", level = 5
         ),

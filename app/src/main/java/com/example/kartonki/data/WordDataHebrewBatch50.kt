@@ -9,56 +9,56 @@ object WordDataHebrewBatch50 {
 
         WordSetEntity(
             id = 1280, languagePair = "he-ru", orderIndex = 1280,
-            name = "Приветствия: продвинутый",
+            name = "Приветствия",
             description = "Ситуативные приветствия, пожелания и формы вежливого обращения",
             topic = "Приветствия",
             level = 2),
 
         WordSetEntity(
             id = 1281, languagePair = "he-ru", orderIndex = 1281,
-            name = "Приветствия: носитель языка",
+            name = "Приветствия",
             description = "Прагматика вежливости, теория лица и дискурс этика",
             topic = "Приветствия",
             level = 5),
 
         WordSetEntity(
             id = 1282, languagePair = "he-ru", orderIndex = 1282,
-            name = "Религия: углублённый",
+            name = "Религия",
             description = "Религиозные течения, ритуалы и священные тексты",
             topic = "Религия",
             level = 3),
 
         WordSetEntity(
             id = 1283, languagePair = "he-ru", orderIndex = 1283,
-            name = "Религия: профессиональный",
+            name = "Религия",
             description = "Теология, мистика и профессиональная религиозная лексика",
             topic = "Религия",
             level = 4),
 
         WordSetEntity(
             id = 1284, languagePair = "he-ru", orderIndex = 1284,
-            name = "Религия: носитель языка",
+            name = "Религия",
             description = "Академическое религиоведение, философия религии и библейская критика",
             topic = "Религия",
             level = 5),
 
         WordSetEntity(
             id = 1285, languagePair = "he-ru", orderIndex = 1285,
-            name = "Спорт: углублённый — виды спорта, соревнования и спортивная терминология",
+            name = "Спорт",
             description = "Виды спорта, соревнования и спортивная терминология",
             topic = "Спорт",
             level = 3),
 
         WordSetEntity(
             id = 1286, languagePair = "he-ru", orderIndex = 1286,
-            name = "Спорт: профессиональный",
+            name = "Спорт",
             description = "Спортивная индустрия, управление и профессиональная лексика",
             topic = "Спорт",
             level = 4),
 
         WordSetEntity(
             id = 1287, languagePair = "he-ru", orderIndex = 1287,
-            name = "Спорт: носитель языка",
+            name = "Спорт",
             description = "Социология спорта, спортивная политика и академический дискурс",
             topic = "Спорт",
             level = 5),

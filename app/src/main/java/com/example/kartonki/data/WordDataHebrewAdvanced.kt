@@ -10,16 +10,16 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewAdvanced {
 
     val sets = listOf(
-        WordSetEntity(id = 1014, name = "Технологии: продвинутый — архитектура и системы",                description = "Архитектура и системы",    languagePair = "he-ru", orderIndex = 14,
+        WordSetEntity(id = 1014, name = "Технологии",                description = "Архитектура и системы",    languagePair = "he-ru", orderIndex = 14,
             topic = "Технологии",
             level = 2),
-                WordSetEntity(id = 1016, name = "Психология: продвинутый — чувства и черты личности",              description = "Чувства и черты личности", languagePair = "he-ru", orderIndex = 16,
+                WordSetEntity(id = 1016, name = "Психология",              description = "Чувства и черты личности", languagePair = "he-ru", orderIndex = 16,
             topic = "Психология",
             level = 2),
-        WordSetEntity(id = 1017, name = "Философия: углублённый — философия и мышление",            description = "Философия и мышление",        languagePair = "he-ru", orderIndex = 17,
+        WordSetEntity(id = 1017, name = "Философия",            description = "Философия и мышление",        languagePair = "he-ru", orderIndex = 17,
             topic = "Философия",
             level = 3),
-        WordSetEntity(id = 1018, name = "Технологии: продвинутый — игровая лексика и жанры",              description = "Игровая лексика и жанры",   languagePair = "he-ru", orderIndex = 18,
+        WordSetEntity(id = 1018, name = "Технологии",              description = "Игровая лексика и жанры",   languagePair = "he-ru", orderIndex = 18,
             topic = "Технологии",
             level = 2),
     )

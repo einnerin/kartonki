@@ -8,49 +8,49 @@ object WordDataHebrewBatch48 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1264, languagePair = "he-ru", orderIndex = 1264,
-            name = "Культура и искусство: углублённый — жанры, стили и роли в современном искусстве",
+            name = "Культура и искусство",
             description = "Жанры, стили и роли в современном искусстве",
             topic = "Культура и искусство", level = 3
         ),
         WordSetEntity(
             id = 1265, languagePair = "he-ru", orderIndex = 1265,
-            name = "Культура и искусство: профессиональный — теория, социология и функции искусства",
+            name = "Культура и искусство",
             description = "Теория, социология и функции искусства",
             topic = "Культура и искусство", level = 4
         ),
         WordSetEntity(
             id = 1266, languagePair = "he-ru", orderIndex = 1266,
-            name = "Культура и искусство: носитель языка",
+            name = "Культура и искусство",
             description = "Философия и феноменология искусства",
             topic = "Культура и искусство", level = 5
         ),
         WordSetEntity(
             id = 1267, languagePair = "he-ru", orderIndex = 1267,
-            name = "Лингвистика: углублённый — разделы лингвистики: фонология, семантика, социолингвистика",
-            description = "Разделы лингвистики: фонология, семантика, социолингвистика",
+            name = "Лингвистика",
+            description = "Фонология, семантика, социолингвистика",
             topic = "Лингвистика", level = 3
         ),
         WordSetEntity(
             id = 1268, languagePair = "he-ru", orderIndex = 1268,
-            name = "Лингвистика: носитель языка",
+            name = "Лингвистика",
             description = "Теория языка, универсалии и философия языка",
             topic = "Лингвистика", level = 5
         ),
         WordSetEntity(
             id = 1269, languagePair = "he-ru", orderIndex = 1269,
-            name = "Образование: углублённый — учебный процесс, типы образования и академические понятия",
+            name = "Образование",
             description = "Учебный процесс, типы образования и академические понятия",
             topic = "Образование", level = 3
         ),
         WordSetEntity(
             id = 1270, languagePair = "he-ru", orderIndex = 1270,
-            name = "Образование: профессиональный — педагогика, образовательная политика и исследования",
+            name = "Образование",
             description = "Педагогика, образовательная политика и исследования",
             topic = "Образование", level = 4
         ),
         WordSetEntity(
             id = 1271, languagePair = "he-ru", orderIndex = 1271,
-            name = "Образование: носитель языка",
+            name = "Образование",
             description = "Философия образования, освобождающая педагогика",
             topic = "Образование", level = 5
         ),

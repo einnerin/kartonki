@@ -8,49 +8,49 @@ object WordDataHebrewBatch44 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1232, languagePair = "he-ru", orderIndex = 1232,
-            name = "Семья: носитель языка",
+            name = "Семья",
             description = "Архаичные и галахические семейные термины, наследование, родословная",
             topic = "Семья",
             level = 5
         ),
         WordSetEntity(
             id = 1233, languagePair = "he-ru", orderIndex = 1233,
-            name = "Алия и Израиль: продвинутый — практический иврит репатрианта: работа, льготы, абсорбция",
-            description = "Практический иврит репатрианта: работа, льготы, абсорбция",
+            name = "Алия и Израиль",
+            description = "Работа, льготы, абсорбция",
             topic = "Алия и Израиль",
             level = 2
         ),
         WordSetEntity(
             id = 1234, languagePair = "he-ru", orderIndex = 1234,
-            name = "Алия и Израиль: носитель языка",
+            name = "Алия и Израиль",
             description = "Сложные концепции израильской идентичности, памяти и общества",
             topic = "Алия и Израиль",
             level = 5
         ),
         WordSetEntity(
             id = 1235, languagePair = "he-ru", orderIndex = 1235,
-            name = "Путешествия: основы — базовая лексика путешественника: бронирование, жильё, граница, досуг",
-            description = "Базовая лексика путешественника: бронирование, жильё, граница, досуг",
+            name = "Путешествия",
+            description = "Бронирование, жильё, граница, досуг",
             topic = "Путешествия",
             level = 1
         ),
         WordSetEntity(
             id = 1236, languagePair = "he-ru", orderIndex = 1236,
-            name = "Путешествия: углублённый",
+            name = "Путешествия",
             description = "Маршруты, границы, визы, виды жилья и экскурсии",
             topic = "Путешествия",
             level = 3
         ),
         WordSetEntity(
             id = 1237, languagePair = "he-ru", orderIndex = 1237,
-            name = "Путешествия: профессиональный",
+            name = "Путешествия",
             description = "Туристическая индустрия, этнография, экотуризм и культурная дипломатия",
             topic = "Путешествия",
             level = 4
         ),
         WordSetEntity(
             id = 1238, languagePair = "he-ru", orderIndex = 1238,
-            name = "Путешествия: носитель языка",
+            name = "Путешествия",
             description = "Философия путешествий, номадизм, ориентализм, геополитика",
             topic = "Путешествия",
             level = 5

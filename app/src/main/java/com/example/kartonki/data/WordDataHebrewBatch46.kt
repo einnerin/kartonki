@@ -8,56 +8,56 @@ object WordDataHebrewBatch46 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1248, languagePair = "he-ru", orderIndex = 1248,
-            name = "Технологии: углублённый — иИ, машинное обучение, облака, кибербезопасность и сети",
+            name = "Технологии",
             description = "ИИ, машинное обучение, облака, кибербезопасность и сети",
             topic = "Технологии",
             level = 3
         ),
         WordSetEntity(
             id = 1249, languagePair = "he-ru", orderIndex = 1249,
-            name = "Технологии: носитель языка",
+            name = "Технологии",
             description = "Постгуманизм, синтетический разум, цифровая этика и общество",
             topic = "Технологии",
             level = 5
         ),
         WordSetEntity(
             id = 1250, languagePair = "he-ru", orderIndex = 1250,
-            name = "Наука: углублённый — методология исследований, статистика и научный процесс",
+            name = "Наука",
             description = "Методология исследований, статистика и научный процесс",
             topic = "Наука",
             level = 3
         ),
         WordSetEntity(
             id = 1251, languagePair = "he-ru", orderIndex = 1251,
-            name = "Наука: носитель языка",
+            name = "Наука",
             description = "Философия науки, эпистемология, парадигмы и теории",
             topic = "Наука",
             level = 5
         ),
         WordSetEntity(
             id = 1252, languagePair = "he-ru", orderIndex = 1252,
-            name = "Природа и экология: углублённый — экосистемы, биоразнообразие, изменение климата и энергетика",
+            name = "Природа и экология",
             description = "Экосистемы, биоразнообразие, изменение климата и энергетика",
             topic = "Природа и экология",
             level = 3
         ),
         WordSetEntity(
             id = 1253, languagePair = "he-ru", orderIndex = 1253,
-            name = "Природа и экология: носитель языка",
+            name = "Природа и экология",
             description = "Экологическая этика, права природы и экосоциализм",
             topic = "Природа и экология",
             level = 5
         ),
         WordSetEntity(
             id = 1254, languagePair = "he-ru", orderIndex = 1254,
-            name = "Психология: углублённый — когнитивные процессы, клиническая психология и защитные механизмы",
+            name = "Психология",
             description = "Когнитивные процессы, клиническая психология и защитные механизмы",
             topic = "Психология",
             level = 3
         ),
         WordSetEntity(
             id = 1255, languagePair = "he-ru", orderIndex = 1255,
-            name = "Психология: носитель языка",
+            name = "Психология",
             description = "Феноменология, юнгианские архетипы, нейропсихология",
             topic = "Психология",
             level = 5

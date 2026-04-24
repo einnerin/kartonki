@@ -9,35 +9,35 @@ object WordDataHebrewBatch53 {
 
         WordSetEntity(
             id = 1300, languagePair = "he-ru", orderIndex = 1300,
-            name = "Маркетинг: основы — базовая лексика рекламы, продвижения и работы с клиентами",
+            name = "Маркетинг",
             description = "Базовая лексика рекламы, продвижения и работы с клиентами",
             topic = "Маркетинг",
             level = 1),
 
         WordSetEntity(
             id = 1301, languagePair = "he-ru", orderIndex = 1301,
-            name = "Маркетинг: продвинутый",
+            name = "Маркетинг",
             description = "Инструменты и каналы цифрового маркетинга",
             topic = "Маркетинг",
             level = 2),
 
         WordSetEntity(
             id = 1302, languagePair = "he-ru", orderIndex = 1302,
-            name = "Маркетинг: углублённый",
+            name = "Маркетинг",
             description = "Стратегический маркетинг, брендинг и аналитика",
             topic = "Маркетинг",
             level = 3),
 
         WordSetEntity(
             id = 1303, languagePair = "he-ru", orderIndex = 1303,
-            name = "Маркетинг: профессиональный",
-            description = "Высший уровень: бренд-архитектура, стратегические коммуникации и перцепционный менеджмент",
+            name = "Маркетинг",
+            description = "Бренд-архитектура, стратегические коммуникации и перцепционный менеджмент",
             topic = "Маркетинг",
             level = 4),
 
         WordSetEntity(
             id = 1304, languagePair = "he-ru", orderIndex = 1304,
-            name = "Маркетинг: носитель языка",
+            name = "Маркетинг",
             description = "Академический и постструктуральный дискурс маркетинга и потребления",
             topic = "Маркетинг",
             level = 5),

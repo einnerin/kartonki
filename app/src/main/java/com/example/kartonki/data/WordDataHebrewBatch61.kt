@@ -9,35 +9,35 @@ object WordDataHebrewBatch61 {
 
         WordSetEntity(
             id = 1344, languagePair = "he-ru", orderIndex = 1344,
-            name = "Математика: основы — фигуры, измерения, числа и операции",
+            name = "Математика",
             description = "Фигуры, измерения, числа и операции",
             topic = "Математика",
             level = 1),
 
         WordSetEntity(
             id = 1345, languagePair = "he-ru", orderIndex = 1345,
-            name = "Математика: продвинутый",
+            name = "Математика",
             description = "Алгебра, координатная геометрия, функции",
             topic = "Математика",
             level = 2),
 
         WordSetEntity(
             id = 1346, languagePair = "he-ru", orderIndex = 1346,
-            name = "Математика: углублённый",
+            name = "Математика",
             description = "Тригонометрия, векторы, вероятность, начала анализа",
             topic = "Математика",
             level = 3),
 
         WordSetEntity(
             id = 1347, languagePair = "he-ru", orderIndex = 1347,
-            name = "Математика: профессиональный",
+            name = "Математика",
             description = "Линейная алгебра, теория вероятностей, доказательства",
             topic = "Математика",
             level = 4),
 
         WordSetEntity(
             id = 1348, languagePair = "he-ru", orderIndex = 1348,
-            name = "Математика: носитель языка",
+            name = "Математика",
             description = "Абстрактная алгебра, топология, теория чисел",
             topic = "Математика",
             level = 5),

@@ -6,17 +6,17 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant11 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1172, languagePair = "he-ru", name = "Еда и кулинария: продвинутый — основные продукты питания",      description = "Основные продукты питания", orderIndex = 172,
+        WordSetEntity(id = 1172, languagePair = "he-ru", name = "Еда и кулинария",      description = "Основные продукты питания", orderIndex = 172,
     topic = "Еда и кулинария", level = 2),
-        WordSetEntity(id = 1173, languagePair = "he-ru", name = "Лингвистика: продвинутый — цвета, оттенки и геометрия",           description = "Цвета, оттенки и геометрия", orderIndex = 173,
+        WordSetEntity(id = 1173, languagePair = "he-ru", name = "Лингвистика",           description = "Цвета, оттенки и геометрия", orderIndex = 173,
     topic = "Лингвистика", level = 2),
-        WordSetEntity(id = 1174, languagePair = "he-ru", name = "Работа и карьера: продвинутый — специальности и занятия",      description = "Специальности и занятия", orderIndex = 174,
+        WordSetEntity(id = 1174, languagePair = "he-ru", name = "Работа и карьера",      description = "Специальности и занятия", orderIndex = 174,
     topic = "Работа и карьера", level = 2),
-        WordSetEntity(id = 1175, languagePair = "he-ru", name = "Дом и быт: продвинутый — предметы быта и обстановка",            description = "Предметы быта и обстановка", orderIndex = 175,
+        WordSetEntity(id = 1175, languagePair = "he-ru", name = "Дом и быт",            description = "Предметы быта и обстановка", orderIndex = 175,
     topic = "Дом и быт", level = 2),
-        WordSetEntity(id = 1176, languagePair = "he-ru", name = "Образование: продвинутый — высшее образование и академическая жизнь",           description = "Высшее образование и академическая жизнь", orderIndex = 176,
+        WordSetEntity(id = 1176, languagePair = "he-ru", name = "Образование",           description = "Высшее образование и академическая жизнь", orderIndex = 176,
     topic = "Образование", level = 2),
-        WordSetEntity(id = 1177, languagePair = "he-ru", name = "Политика: продвинутый — государственное устройство и политика", description = "Государственное устройство и политика", orderIndex = 177,
+        WordSetEntity(id = 1177, languagePair = "he-ru", name = "Политика", description = "Государственное устройство и политика", orderIndex = 177,
     topic = "Политика", level = 2),
     )
 
