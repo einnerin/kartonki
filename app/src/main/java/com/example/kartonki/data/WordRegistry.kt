@@ -17,7 +17,39 @@ import com.example.kartonki.data.db.entity.WordSetEntity
  */
 object WordRegistry {
 
+    /**
+     * When true, [allSets] and [allWords] filter out sets with ≥1 skeleton word
+     * (missing definition / definitionNative / example / exampleNative). This
+     * keeps the first Play Store release limited to fully-filled sets. Skeleton
+     * sets stay in the source code and will re-enter the app once their text
+     * fields are filled in a future update.
+     *
+     * Set to false to expose every set to the app (useful during development).
+     */
+    private const val EXCLUDE_SKELETON_SETS_FROM_RELEASE = true
+
+    /** Set of setIds containing at least one skeleton (missing-fields) word. */
+    private val skeletonSetIds: Set<Long> by lazy {
+        if (!EXCLUDE_SKELETON_SETS_FROM_RELEASE) return@lazy emptySet()
+        _allWordsRaw.asSequence()
+            .filter { w ->
+                w.setId != 0L &&  // setId=0 reserved for achievement-only words
+                (w.definition.isNullOrBlank() || w.definitionNative.isNullOrBlank() ||
+                 w.example.isNullOrBlank() || w.exampleNative.isNullOrBlank())
+            }
+            .map { it.setId }
+            .toSet()
+    }
+
     val allSets: List<WordSetEntity> by lazy {
+        _allSetsRaw.filter { it.id !in skeletonSetIds }
+    }
+
+    val allWords: List<WordEntity> by lazy {
+        _allWordsRaw.filter { it.setId !in skeletonSetIds || it.setId == 0L }
+    }
+
+    private val _allSetsRaw: List<WordSetEntity> by lazy {
         WordDataEnglish.sets + WordDataEnglishExpanded.sets +
                 WordDataEnglishBatch3.sets +
                 WordDataEnglishBatch4.sets +
@@ -145,7 +177,7 @@ object WordRegistry {
                 WordDataHebrewBatch93.sets
     }
 
-    val allWords: List<WordEntity> by lazy {
+    private val _allWordsRaw: List<WordEntity> by lazy {
         WordDataEnglish.words + WordDataEnglishExpanded.words +
                 WordDataEnglishExpanded.achievementRewardWords() +
                 WordDataEnglishBatch3.words +
