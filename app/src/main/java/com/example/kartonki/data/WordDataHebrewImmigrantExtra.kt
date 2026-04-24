@@ -17,202 +17,22 @@ object WordDataHebrewImmigrantExtra {
         // Set 1022 — Документы и оформление (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 102221, setId = 1022, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "documents", transliteration = "srika",
-            original = "סְרִיקָה", translation = "сканирование / ксерокопия",
-            definition = "הַעְתָּקָה דִּיגִיטָלִית שֶׁל מִסְמָךְ בְּאֶמְצָעוּת סוֹרֵק.",
-            definitionNative = "Цифровая копия документа, созданная с помощью сканера.",
-            example = "הַמִּשְׂרָד מְבַקֵּשׁ סְרִיקָה שֶׁל הַדַּרְכּוֹן.",
-            exampleNative = "Офис просит предоставить סְרִיקָה паспорта.",
-         fillInBlankExclusions = listOf(102205L, 102215L, 102219L, 102224L)),
-        WordEntity(
-            id = 102222, setId = 1022, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "documents", transliteration = "teudat ole",
-            original = "תְּעוּדַת עוֹלֶה", translation = "удостоверение репатрианта",
-            definition = "מִסְמָךְ רִשְׁמִי הַמְּעִיד עַל מַעֲמַד הָעוֹלֶה הֶחָדָשׁ בְּיִשְׂרָאֵל.",
-            definitionNative = "Официальный документ, подтверждающий статус нового репатрианта в Израиле.",
-            example = "תְּעוּדַת עוֹלֶה מְאַפְשֶׁרֶת קַבָּלַת הֲטָבוֹת לַעוֹלֶה.",
-            exampleNative = "תְּעוּדַת עוֹלֶה позволяет получать льготы для репатрианта.",
-         fillInBlankExclusions = listOf(102201L, 102208L, 102214L)),
-        WordEntity(
-            id = 102223, setId = 1022, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "documents", transliteration = "hagasha",
-            original = "הַגָּשָׁה", translation = "подача (документов)",
-            definition = "מְסִירַת מִסְמָכִים אוֹ בַּקָּשָׁה לְגוּף מֻסָּמָךְ.",
-            definitionNative = "Передача документов или запроса уполномоченному органу.",
-            example = "הַגָּשַׁת הַבַּקָּשָׁה צְרִיכָה לְהֵעָשׂוֹת לִפְנֵי הַתַּאֲרִיךְ הַקּוֹבֵעַ.",
-            exampleNative = "הַגָּשָׁה заявки должна быть сделана до установленного срока.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 102224, setId = 1022, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "documents", transliteration = "original",
-            original = "אוֹרִיגִינָל", translation = "оригинал (документа)",
-            definition = "הַמִּסְמָךְ הָרִאשׁוֹנִי וְהָאֲמִיתִי, לֹא עוֹתֶק.",
-            definitionNative = "Первый и подлинный документ, не копия.",
-            example = "צְרִיךְ לְהָבִיא אֶת הָאוֹרִיגִינָל, לֹא צִלּוּם.",
-            exampleNative = "Нужно принести אוֹרִיגִינָל, а не копию.",
-         fillInBlankExclusions = listOf(102201L, 102202L, 102203L, 102209L, 102217L)),
-        WordEntity(
-            id = 102225, setId = 1022, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "documents", transliteration = "khothemet",
-            original = "חוֹתֶמֶת", translation = "печать / штамп",
-            definition = "סִימָן רִשְׁמִי שֶׁל רָשׁוּת אוֹ גּוּף הַמּוּטְבָּע עַל מִסְמָךְ לְאִישּׁוּר.",
-            definitionNative = "Официальный знак органа или организации, проставляемый на документ для подтверждения.",
-            example = "הַמִּסְמָךְ לֹא תָּקֵף בְּלִי חוֹתֶמֶת הַמִּשְׂרָד.",
-            exampleNative = "Документ недействителен без חוֹתֶמֶת учреждения.",
-         fillInBlankExclusions = listOf(102204L, 102209L)),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1023 — Алия и абсорбция (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 102321, setId = 1023, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya", transliteration = "merkaz klita",
-            original = "מֵרְכָּז קְלִיטָה", translation = "центр абсорбции",
-            definition = "מְקוֹם מֶגוּרִים זְמַנִּי לְעוֹלִים חֲדָשִׁים עִם שֵׁרוּתִים לְקְלִיטָה.",
-            definitionNative = "Временное место проживания для новых репатриантов со службами абсорбции.",
-            example = "גַּרְנוּ בְּמֵרְכָּז קְלִיטָה בְּמֶשֶׁךְ שֵׁשׁ חֳדָשִׁים אַחֲרֵי הָעֲלִיָּה.",
-            exampleNative = "После алии мы жили в מֵרְכָּז קְלִיטָה шесть месяцев.",
-         fillInBlankExclusions = listOf(102304L)),
-        WordEntity(
-            id = 102322, setId = 1023, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya", transliteration = "ezrakh",
-            original = "אֶזְרַח", translation = "гражданин",
-            definition = "אָדָם הַמַּחְזִיק אֶזְרָחוּת מְדִינָה וְנֶהֱנֶה מִזְּכוּיוֹתֶיהָ.",
-            definitionNative = "Человек, имеющий гражданство государства и пользующийся его правами.",
-            example = "לְאַחַר שָׁלוֹשׁ שָׁנִים בָּאָרֶץ קִבַּלְתִּי אֶזְרָחוּת יִשְׂרְאֵלִית.",
-            exampleNative = "После трёх лет в стране я стал אֶזְרַח Израиля.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 102323, setId = 1023, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya", transliteration = "magur zmani",
-            original = "מָגוּר זְמַנִּי", translation = "временное жильё",
-            definition = "מְקוֹם מֶגוּרִים לִתְקוּפָה קְצָרָה עַד מְצִיאַת דִּיּוּר קָבוּעַ.",
-            definitionNative = "Место проживания на короткое время до нахождения постоянного жилья.",
-            example = "בְּמָגוּר זְמַנִּי גָּרְנוּ אֶצֶל קְרוֹבֵי מִשְׁפָּחָה בְּמֶשֶׁךְ הַחוֹדֶשׁ הָרִאשׁוֹן.",
-            exampleNative = "В мָגוּר זְמַנִּי мы жили у родственников в первый месяц.",
-         fillInBlankExclusions = listOf(102321L)),
-        WordEntity(
-            id = 102324, setId = 1023, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya", transliteration = "kursus",
-            original = "כּוּרְסוּס", translation = "краткий курс / интенсив",
-            definition = "לִמּוּד קָצָר וּמְרֻכָּז בְּנוֹשֵׂא מְסוּיָּם.",
-            definitionNative = "Короткое интенсивное обучение по определённой теме.",
-            example = "עָשִׂיתִי כּוּרְסוּס בְּחֶשְׁבּוֹנָאוּת בְּמֶשֶׁךְ שְׁלוֹשָׁה שָׁבוּעוֹת.",
-            exampleNative = "Я прошёл כּוּרְסוּס по бухгалтерии за три недели.",
-         fillInBlankExclusions = listOf(102307L, 102320L)),
-        WordEntity(
-            id = 102325, setId = 1023, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya", transliteration = "sherut",
-            original = "שֵׁרוּת", translation = "служба / сервис / обслуживание",
-            definition = "פְּעִילוּת עֲזָרָה וְהַשְׁלָמַת צְרָכִים לַלָּקוֹחַ אוֹ לַאֶזְרָח.",
-            definitionNative = "Деятельность по помощи и удовлетворению нужд клиента или гражданина.",
-            example = "הַשֵּׁרוּת בַּמִּשְׂרָד הָיָה מְהִיר וְנֶעֱלָם.",
-            exampleNative = "שֵׁרוּת в офисе был быстрым и приятным.",
-         isFillInBlankSafe = false),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1024 — Банк: открытие счёта (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 102421, setId = 1024, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank", transliteration = "menahel kheshbon",
-            original = "מְנַהֵל חֶשְׁבּוֹן", translation = "менеджер по счёту",
-            definition = "פָּקִיד בַּנְק הָאַחְרָאִי עַל חֶשְׁבּוֹנוֹ שֶׁל לָקוֹחַ וּמְסַיֵּעַ לוֹ.",
-            definitionNative = "Сотрудник банка, отвечающий за счёт клиента и помогающий ему.",
-            example = "פָּגַשְׁתִּי אֶת מְנַהֵל הַחֶשְׁבּוֹן שֶׁלִּי לְבִירוּר הַמַּשְׁכַּנְתָּא.",
-            exampleNative = "Я встретился с мְנַהֵל חֶשְׁבּוֹן по вопросу ипотеки.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 102422, setId = 1024, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank", transliteration = "tashlum",
-            original = "תַּשְׁלוּם", translation = "платёж / оплата",
-            definition = "מְסִירַת כֶּסֶף תְּמוּרַת מוּצָר, שֵׁרוּת אוֹ חוֹב.",
-            definitionNative = "Передача денег за товар, услугу или долг.",
-            example = "בִּצַּעְתִּי תַּשְׁלוּם דֶּרֶךְ הָאֲפְּלִיקַצְיָה שֶׁל הַבַּנְק.",
-            exampleNative = "Я совершил תַּשְׁלוּם через приложение банка.",
-         fillInBlankExclusions = listOf(102406L, 102410L, 102411L, 102412L, 102421L, 102423L, 102424L, 102425L)),
-        WordEntity(
-            id = 102423, setId = 1024, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank", transliteration = "shek",
-            original = "שֵׁיק", translation = "чек",
-            definition = "מִסְמָךְ בַּנְקָאִי לְתַשְׁלוּם סְכוּם קָבוּעַ לְנָמֵן מְסוּיָּם.",
-            definitionNative = "Банковский документ для выплаты определённой суммы указанному получателю.",
-            example = "שִׁלַּמְתִּי לַמַּשְׂכִּיר בְּשֵׁיק לְשָׁלוֹשָׁה חֳדָשִׁים מֻקְדָּמִים.",
-            exampleNative = "Я заплатил арендодателю שֵׁיק за три месяца вперёд.",
-         fillInBlankExclusions = listOf(102404L, 102406L, 102418L, 102421L, 102422L, 102424L, 102425L)),
-        WordEntity(
-            id = 102424, setId = 1024, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank", transliteration = "kheshbon meshutaf",
-            original = "חֶשְׁבּוֹן מְשׁוּתָּף", translation = "совместный счёт",
-            definition = "חֶשְׁבּוֹן בַּנְק הַשַּׁיָּךְ לִשְׁנַיִם אוֹ יוֹתֵר בַּעֲלִים.",
-            definitionNative = "Банковский счёт, принадлежащий двум или более владельцам.",
-            example = "פָּתַחְנוּ חֶשְׁבּוֹן מְשׁוּתָּף עִם בֶּן הַזּוּג לִהוֹצָאוֹת הַבַּיִת.",
-            exampleNative = "Мы открыли חֶשְׁבּוֹן מְשׁוּתָּף с партнёром для домашних расходов.",
-         fillInBlankExclusions = listOf(102402L, 102420L, 102421L, 102422L, 102423L, 102425L)),
-        WordEntity(
-            id = 102425, setId = 1024, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank", transliteration = "matbe'a",
-            original = "מַטְבֵּעַ", translation = "монета / валюта",
-            definition = "מְטַבֵּעַ מִתָּכֶת לְשִׁימּוּשׁ כְּאֶמְצָעֵי תַּשְׁלוּם; כָּלְלִי: מַטְבֵּעַ שֶׁל מְדִינָה.",
-            definitionNative = "Металлическая монета для платежей; в общем смысле: валюта страны.",
-            example = "הַשֵּׁקֶל הוּא מַטְבֵּעַ יִשְׂרָאֵל.",
-            exampleNative = "Шекель — это מַטְבֵּעַ Израиля.",
-        ),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1025 — Аэропорт Бен-Гурион (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 102521, setId = 1025, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "airport", transliteration = "kartis tisa",
-            original = "כַּרְטִיס טִיסָה", translation = "авиабилет",
-            definition = "כַּרְטִיס הַמַּזְכֶּה בִּנְסִיעָה בִּטִּיסָה מְסוּיֶּמֶת.",
-            definitionNative = "Билет, дающий право на перелёт определённым рейсом.",
-            example = "קָנִיתִי כַּרְטִיס טִיסָה לְמוֹסְקְבָה מִרַכֶּשֶׁת מִקָּוָּן.",
-            exampleNative = "Я купил כַּרְטִיס טִיסָה в Москву через интернет-магазин.",
-         fillInBlankExclusions = listOf(102502L)),
-        WordEntity(
-            id = 102522, setId = 1025, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "airport", transliteration = "tik yad",
-            original = "תִּיק יָד", translation = "ручная кладь / сумка на борт",
-            definition = "מִזְוָדָה קְטַנָּה שֶׁמֻּתָּר לְהַעֲלוֹת לְתָא הַנּוֹסְעִים בַּמָּטוֹס.",
-            definitionNative = "Небольшой чемодан, который разрешено взять в салон самолёта.",
-            example = "גֹּדֶל תִּיק יָד בַּאֲגַד זֶה: 55 עַל 40 עַל 20 ס\"מ.",
-            exampleNative = "Размер תִּיק יָד у этой авиакомпании до 55×40×20 см.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 102523, setId = 1025, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "airport", transliteration = "khanut ptura mimelekh",
-            original = "חֲנוּת פְּטוּרָה מִמֶּכֶס", translation = "магазин беспошлинной торговли (duty-free)",
-            definition = "חֲנוּת בְּשֶׁטַח הַנָּמֵל שֶׁבָּהּ נִמְכָּרוֹת סְחוֹרוֹת בְּלִי מַס.",
-            definitionNative = "Магазин на территории аэропорта, в котором товары продаются без налога.",
-            example = "קָנִיתִי בּוֹשֶׂם בַּחֲנוּת הַפְּטוּרָה מִמֶּכֶס לִפְנֵי הָרְחִיפָה.",
-            exampleNative = "Я купил духи в חֲנוּת פְּטוּרָה מִמֶּכֶס перед вылетом.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 102524, setId = 1025, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "airport", transliteration = "ya'ed",
-            original = "יְעֶד", translation = "пункт назначения",
-            definition = "הַמָּקוֹם אֵלָיו מַגִּיעָה הַטִּיסָה אוֹ הַנּוֹסֵעַ.",
-            definitionNative = "Место, куда прибывает рейс или пассажир.",
-            example = "יְעֶד הַטִּיסָה שֶׁלָּנוּ הוּא פָּרִיז.",
-            exampleNative = "יְעֶד нашего рейса — Париж.",
-        ),
-        WordEntity(
-            id = 102525, setId = 1025, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "airport", transliteration = "sha'at hamra'a",
-            original = "שַׁעַת הַמְרָאָה", translation = "время вылета",
-            definition = "הַשָּׁעָה שֶׁבָּהּ הַמָּטוֹס עוֹלֶה לַאֲוִיר.",
-            definitionNative = "Час, в который самолёт поднимается в воздух.",
-            example = "שַׁעַת הַהַמְרָאָה שֶׁלָּנוּ הִיא 14:30 — יֵשׁ לְהַגִּיעַ שָׁלוֹשׁ שָׁעוֹת מוּקְדָּם.",
-            exampleNative = "Наша שַׁעַת הַמְרָאָה — 14:30, нужно приехать за три часа.",
-         isFillInBlankSafe = false),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1026 — Аренда квартиры (слова 21–25),
         // ──────────────────────────────────────────────────────
@@ -317,152 +137,17 @@ object WordDataHebrewImmigrantExtra {
         // Set 1028 — Купат Холим (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 102821, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "health", transliteration = "rofe shinayim",
-            original = "רוֹפֵא שִׁינַּיִם", translation = "стоматолог",
-            definition = "רוֹפֵא מְתַמְחֶה בְּבְּרִיאוּת הַשִּׁינַּיִם וְהַחֲנִיכַּיִים.",
-            definitionNative = "Врач, специализирующийся на здоровье зубов и дёсен.",
-            example = "בִּקַּרְתִּי רוֹפֵא שִׁינַּיִם לְבִדְיקָה שְׁנָתִית.",
-            exampleNative = "Я посетил רוֹפֵא שִׁינַּיִם для ежегодного осмотра.",
-         fillInBlankExclusions = listOf(102802L, 102803L, 102806L, 102807L)),
-        WordEntity(
-            id = 102822, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "health", transliteration = "ti'ud",
-            original = "תִּיעוּד", translation = "документация / запись (медицинская)",
-            definition = "רִישׁוּם שִׁיטָתִי שֶׁל פְּרָטִים רְפוּאִיִּים שֶׁל הַמְּטוּפָּל.",
-            definitionNative = "Систематическая запись медицинских данных пациента.",
-            example = "הָרוֹפֵא עָרַךְ תִּיעוּד מְלֵא שֶׁל הַבְּדִיקָה.",
-            exampleNative = "Врач вёл полное תִּיעוּד осмотра.",
-        ),
-        WordEntity(
-            id = 102823, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "health", transliteration = "tik refui",
-            original = "תָּיק רְפוּאִי", translation = "медицинская карта / история болезни",
-            definition = "מִסְמָךְ הַמְּכִיל אֶת כָּל הַמֵּידַע הָרְפוּאִי שֶׁל הַמְּטוּפָּל.",
-            definitionNative = "Документ, содержащий все медицинские данные пациента.",
-            example = "הָרוֹפֵא עָיַן בַּתָּיק הָרְפוּאִי שֶׁלִּי לִפְנֵי הַבְּדִיקָה.",
-            exampleNative = "Врач просмотрел мой תָּיק רְפוּאִי перед осмотром.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 102824, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "health", transliteration = "toran",
-            original = "תּוֹרַן", translation = "дежурный (врач / сотрудник)",
-            definition = "עוֹבֵד הַמְּבַצֵּעַ תּוֹר שֵׁמֶר בְּשָׁעוֹת שֶׁבָּהֶן אֲחֵרִים אֵינָם בָּמִּשְׁרָד.",
-            definitionNative = "Сотрудник, несущий вахту в часы, когда другие не работают.",
-            example = "הַתּוֹרַן בַּקּוּפָּה זָמִין גַּם בְּלֵילוֹת.",
-            exampleNative = "תּוֹרַן в клинике доступен и по ночам.",
-         fillInBlankExclusions = listOf(102802L, 102807L)),
-        WordEntity(
-            id = 102825, setId = 1028, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "health", transliteration = "khadar hamtana",
-            original = "חֲדַר הַמְּתָנָה", translation = "зал / комната ожидания",
-            definition = "הַחֶדֶר שֶׁבּוֹ מְחַכִּים לָנְבֵר לִפְנֵי הַכְּנִיסָה אֵל הָרוֹפֵא.",
-            definitionNative = "Комната, где ожидают своей очереди перед входом к врачу.",
-            example = "חֲדַר הַמְּתָנָה הָיָה מָלֵא בַּבֹּקֶר.",
-            exampleNative = "חֲדַר הַמְּתָנָה был полон утром.",
-        ),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1029 — Аптека (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 102921, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pharmacy", transliteration = "antibiotika",
-            original = "אַנְטִיבְיוֹטִיקָה", translation = "антибиотик",
-            definition = "תְּרוּפָה הַהוֹרֶגֶת חַיְּדַקִּים אוֹ מְעַכֶּבֶת אֶת צְמִיחָתָם.",
-            definitionNative = "Лекарство, убивающее бактерии или останавливающее их рост.",
-            example = "הָרוֹפֵא רָשַׁם לִי אַנְטִיבְיוֹטִיקָה לַמֶּשֶׁךְ שִׁבְעָה יָמִים.",
-            exampleNative = "Врач прописал мне אַנְטִיבְיוֹטִיקָה на семь дней.",
-        ),
-        WordEntity(
-            id = 102922, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pharmacy", transliteration = "shi'ul",
-            original = "שִׁיעוּל", translation = "кашель",
-            definition = "רֶפְלֶקְס גּוּפָנִי שֶׁל פְּלִיטַת אֲוִיר מֵהָאֲגַרוֹן בְּלֶחַץ.",
-            definitionNative = "Телесный рефлекс выброса воздуха из горла под давлением.",
-            example = "יֵשׁ לִי שִׁיעוּל יָבֵשׁ כְּבָר שָׁלוֹשָׁה יָמִים.",
-            exampleNative = "У меня שִׁיעוּל без мокроты уже три дня.",
-        ),
-        WordEntity(
-            id = 102923, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pharmacy", transliteration = "nazelet",
-            original = "נָזֶלֶת", translation = "насморк",
-            definition = "דְּלֶפֶת נוֹזֵל מֵהָאַף עֲקֶב דַּלֶּקֶת אוֹ אַלֶּרְגְּיָה.",
-            definitionNative = "Течение жидкости из носа вследствие воспаления или аллергии.",
-            example = "קָנִיתִי סְפְּרֵי אַף בַּגְּלַל נָזֶלֶת שֶׁלּא עוֹזֵב.",
-            exampleNative = "Я купил спрей для носа из-за не проходящей נָזֶלֶת.",
-        ),
-        WordEntity(
-            id = 102924, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pharmacy", transliteration = "ke'ev garon",
-            original = "כְּאֵב גָּרוֹן", translation = "боль в горле",
-            definition = "כְּאֵב אוֹ גֵּרוּי בְּאֵזוֹר הַגָּרוֹן, לְעִתִּים סִימְפְּטוֹם שֶׁל זִיהוּם.",
-            definitionNative = "Боль или раздражение в области горла, иногда симптом инфекции.",
-            example = "יֵשׁ לִי כְּאֵב גָּרוֹן חָזָק — אֶפְשָׁר מָה לָקַחַת?",
-            exampleNative = "У меня сильный כְּאֵב גָּרוֹן — что можно принять?",
-        ),
-        WordEntity(
-            id = 102925, setId = 1029, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pharmacy", transliteration = "sukeret",
-            original = "סֻכֶּרֶת", translation = "диабет / сахарный диабет",
-            definition = "מַחֲלָה כְּרוֹנִית שֶׁבָּהּ רָמַת הַסֻּכָּר בַּדָּם גְּבוֹהָה מִדַּי.",
-            definitionNative = "Хроническое заболевание, при котором уровень сахара в крови слишком высок.",
-            example = "לִמְטוּפָּל עִם סֻכֶּרֶת יֵשׁ צֹרֶךְ בְּבַקָּרַת סֻכָּר יוֹמִית.",
-            exampleNative = "Пациенту с סֻכֶּרֶת необходим ежедневный контроль сахара.",
-        ),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1030 — Поиск работы (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 103021, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "work", transliteration = "ishur avoda",
-            original = "אִישּׁוּר עֲבוֹדָה", translation = "разрешение на работу",
-            definition = "מִסְמָךְ רִשְׁמִי הַמַּרְשֶׁה לְאֶזְרָח זָר לַעֲבוֹד בְּמְדִינָה.",
-            definitionNative = "Официальный документ, разрешающий иностранному гражданину работать в стране.",
-            example = "עוֹלִים חֲדָשִׁים מְקַבְּלִים אִישּׁוּר עֲבוֹדָה בְּאוֹטוֹמָטִי.",
-            exampleNative = "Новые репатрианты получают אִישּׁוּר עֲבוֹדָה автоматически.",
-        ),
-        WordEntity(
-            id = 103022, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "work", transliteration = "re'ayon avoda",
-            original = "רֵאָיוֹן עֲבוֹדָה", translation = "собеседование",
-            definition = "פְּגִישָׁה בֵּין מוֹעָמֵד לַעֲבוֹדָה לְבֵין מְנַהֵל לִשְׁם הַעֲרָכָה.",
-            definitionNative = "Встреча между кандидатом на работу и руководителем для оценки.",
-            example = "הוּזְמַנְתִּי לְרֵאָיוֹן עֲבוֹדָה בַּחֶבְרָה לְמָחָר בְּ-10.",
-            exampleNative = "Меня пригласили на רֵאָיוֹן עֲבוֹדָה в компании завтра в 10.",
-        ),
-        WordEntity(
-            id = 103023, setId = 1030, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "work", transliteration = "miktsoa",
-            original = "מִקְצוֹעַ", translation = "профессия / специальность",
-            definition = "תְּחוּם הָעֲבוֹדָה שֶׁאָדָם מֻמְחֶה בּוֹ וְעוֹסֵק בּוֹ.",
-            definitionNative = "Область работы, в которой человек является специалистом.",
-            example = "מִקְצוֹעִי הוּא מְהַנְדֵּס תוֹכְנָה.",
-            exampleNative = "Мой מִקְצוֹעַ — инженер-программист.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 103024, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "work", transliteration = "nesiyon",
-            original = "נֵסְיוֹן", translation = "опыт (работы)",
-            definition = "הַמַּה שֶׁרָכַשׁ אָדָם בְּשֶׁטַח הָעֲבוֹדָה לְאֹרֶךְ שָׁנִים.",
-            definitionNative = "То, что человек приобрёл в профессиональной сфере за годы работы.",
-            example = "יֵשׁ לִי חָמֵשׁ שָׁנִים נֵסְיוֹן בְּפִּתּוּחַ תוֹכְנָה.",
-            exampleNative = "У меня пять лет נֵסְיוֹן в разработке программного обеспечения.",
-        ),
-        WordEntity(
-            id = 103025, setId = 1030, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "work", transliteration = "akhrai",
-            original = "אַחְרָאִי", translation = "ответственный (за что-то) / дежурный",
-            definition = "מִי שֶׁמְּחוּיָּב לְטִיפּוּל בְּתַפְקִיד אוֹ בְּמִשִּׂימָה מְסוּיֶּמֶת.",
-            definitionNative = "Тот, кто обязан заботиться об определённой должности или задаче.",
-            example = "מִי אַחְרָאִי עַל קֶשֶׁר עִם לָקוֹחוֹת בַּחֶבְרָה שֶׁלְּכֶם?",
-            exampleNative = "Кто у вас אַחְרָאִי за контакт с клиентами?",
-        ),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1031 — Детский сад и школа (слова 21–25),
         // ──────────────────────────────────────────────────────
@@ -567,102 +252,12 @@ object WordDataHebrewImmigrantExtra {
         // Set 1033 — Вождение и транспорт (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 103321, setId = 1033, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "driving", transliteration = "oto",
-            original = "אוֹטוֹ", translation = "авто / машина (разг.)",
-            definition = "מֶכוֹנִית — כְּלִי רֶכֶב מָנוֹעִי לִנְסִיעָה בַּכְּבִישׁ.",
-            definitionNative = "Автомобиль — моторное транспортное средство для езды по дороге.",
-            example = "הָאוֹטוֹ שֶׁלִּי חֲדָשׁ — קְנִיתִי אוֹתוֹ לִפְנֵי חֹדֶשׁ.",
-            exampleNative = "Мой אוֹטוֹ новый — я купил его месяц назад.",
-        ),
-        WordEntity(
-            id = 103322, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "driving", transliteration = "tamrur",
-            original = "תָּמרוּר", translation = "дорожный знак",
-            definition = "שִׁלְטָא בְּצַד הַדֶּרֶךְ הַמּוֹרֶה לְנַהֲגִים עַל כְּלָלֵי הַנְּהִיגָה.",
-            definitionNative = "Знак у дороги, указывающий водителям правила движения.",
-            example = "חוֹבָה לְהִשְׁמַע לְתָמרוּרֵי הַדֶּרֶךְ.",
-            exampleNative = "Обязательно подчиняться תָּמרוּר.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 103323, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "driving", transliteration = "me'aber",
-            original = "מְעָבֵּר", translation = "переезд / переход через путь",
-            definition = "נְקוּדַת חֲצִיָּה שֶׁל כְּבִישׁ אוֹ מִסִּילַת רַכֶּבֶת.",
-            definitionNative = "Точка пересечения дороги или железнодорожного пути.",
-            example = "יֵשׁ מְעָבֵּר חַד-סִטְרִי בְּכְּנִיסָה לַגֶּשֶׁר.",
-            exampleNative = "На въезде на мост есть односторонний מְעָבֵּר.",
-        ),
-        WordEntity(
-            id = 103324, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "driving", transliteration = "okef",
-            original = "עוֹקֵף", translation = "объезд / объезжающий",
-            definition = "דֶּרֶךְ חֲלוּפִית לְעֶקֶף עִיר אוֹ אֵזוֹר עִם פְּקָק.",
-            definitionNative = "Альтернативная дорога в обход города или пробки.",
-            example = "לָקַחְנוּ כְּבִישׁ עוֹקֵף כְּדֵי לְהִמָּנַע מֵהַפְּקָק.",
-            exampleNative = "Мы взяли עוֹקֵף, чтобы избежать пробки.",
-        ),
-        WordEntity(
-            id = 103325, setId = 1033, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "driving", transliteration = "minheret",
-            original = "מִנְהֶרֶת", translation = "тоннель",
-            definition = "מַעֲבָר תַּת-קַרְקָעִי לְרְכָבִים עוֹבֵר מִתַּחַת לְהַר אוֹ לַמַּיִם.",
-            definitionNative = "Подземный проход для транспортных средств под горой или водой.",
-            example = "הַמִּנְהֶרֶת בֵּין חֵיפָה לְנַהֲרִיָּה חוֹסֶכֶת זְמַן רַב.",
-            exampleNative = "מִנְהֶרֶת между Хайфой и Нагарией экономит много времени.",
-         isFillInBlankSafe = false),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1034 — Полиция и экстренные службы (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 103421, setId = 1034, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "emergency", transliteration = "konen",
-            original = "כּוֹנֵן", translation = "дежурный (экстренный) / готовый к вызову",
-            definition = "מִי שֶׁנִּמְצָא בְּכּוֹנְנוּת וְזָמִין לְטִיפּוּל בְּאֵרוּעֵי חֵרוּם.",
-            definitionNative = "Тот, кто находится в дежурстве и готов реагировать на чрезвычайные события.",
-            example = "הַמֵּצָב מְחַיֵּב כּוֹנְנוּת מְלֵאָה שֶׁל כָּל הַכּוֹחוֹת.",
-            exampleNative = "Ситуация требует полной כּוֹנֵן всех сил.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 103422, setId = 1034, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "emergency", transliteration = "pig'ua",
-            original = "פִּגּוּעַ", translation = "теракт / нападение / инцидент",
-            definition = "תְּקִיפָה מְכֻוֶּנֶת שֶׁגּוֹרֶמֶת נֵזֶק גּוּפָנִי אוֹ נַפְשִׁי לְאֲנָשִׁים.",
-            definitionNative = "Преднамеренное нападение, причиняющее физический или психологический вред людям.",
-            example = "הַמִּשְׁטָרָה מִיהֲרָה לַזִּירָה לְאַחַר הַפִּגּוּעַ.",
-            exampleNative = "Полиция срочно прибыла на место פִּגּוּעַ.",
-        ),
-        WordEntity(
-            id = 103423, setId = 1034, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "emergency", transliteration = "atsur",
-            original = "עֲצוּר", translation = "задержанный / арестованный",
-            definition = "אָדָם הַמּוּחְזָק בְּמַעֲצָר עַל יְדֵי הַמִּשְׁטָרָה.",
-            definitionNative = "Человек, находящийся под стражей полиции.",
-            example = "הָעֲצוּר הוּבָא לְחֶדֶר הַחֲקִירָה לְשִׂיחָה.",
-            exampleNative = "עֲצוּר был доставлен в комнату допроса для беседы.",
-         fillInBlankExclusions = listOf(103401L, 103410L, 103417L, 103424L)),
-        WordEntity(
-            id = 103424, setId = 1034, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "emergency", transliteration = "ed re'iya",
-            original = "עֵד רְאִיָּה", translation = "очевидец / свидетель-очевидец",
-            definition = "מִי שֶׁרָאָה בְּעֵינָיו אֶת הָאֵירוּעַ בְּעֵת הִתְרַחֲשׁוּתוֹ.",
-            definitionNative = "Тот, кто лично видел своими глазами событие в момент его происшествия.",
-            example = "עֵד רְאִיָּה מָסַר לַמִּשְׁטָרָה פִּרְטִים עַל הַתּוֹקֵף.",
-            exampleNative = "עֵד רְאִיָּה передал полиции подробности о нападавшем.",
-         fillInBlankExclusions = listOf(103401L, 103410L, 103417L, 103421L)),
-        WordEntity(
-            id = 103425, setId = 1034, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "emergency", transliteration = "rekhev herum",
-            original = "רֶכֶב חֵרוּם", translation = "машина экстренных служб",
-            definition = "כְּלִי רֶכֶב שֶׁל הַמִּשְׁטָרָה, אַמְבּוּלַנְס אוֹ כַּבָּאִים הָנָּוֵעַ בְּמָהִירוּת לִזִּירָה.",
-            definitionNative = "Автомобиль полиции, скорой помощи или пожарных, мчащийся на место.",
-            example = "שְׁמַעְתִּי אֶת צוֹפַר רֶכֶב הַחֵרוּם וְפָּנִיתִי לַיָּמִין.",
-            exampleNative = "Я услышал сирену רֶכֶב חֵרוּם и принял вправо.",
-         isFillInBlankSafe = false),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1035 — Шаббат и праздники (слова 21–25),
         // ──────────────────────────────────────────────────────
@@ -717,52 +312,7 @@ object WordDataHebrewImmigrantExtra {
         // Set 1036 — Налоги и финансы (слова 21–25),
         // ──────────────────────────────────────────────────────
 
-        WordEntity(
-            id = 103621, setId = 1036, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "finance", transliteration = "hon atsmi",
-            original = "הוֹן עַצְמִי", translation = "собственный капитал",
-            definition = "שֶׁהֶפְרֵשׁ בֵּין נְכָסֵי הָעֵסֶק לְהִתְחַיְּבוּיּוֹתָיו.",
-            definitionNative = "Разница между активами предприятия и его обязательствами.",
-            example = "הוֹן עַצְמִי חָיוּב הוּא סִימָן לְחֶבְרָה יְצֻיֶּבֶת.",
-            exampleNative = "Положительный הוֹן עַצְמִי — признак стабильной компании.",
-         fillInBlankExclusions = listOf(103618L)),
-        WordEntity(
-            id = 103622, setId = 1036, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "finance", transliteration = "mas rekhush",
-            original = "מַס רְכוּשׁ", translation = "налог на имущество",
-            definition = "מַס הַמּוּטָל עַל בְּעָלֵי נְכָסִים בְּהִתְאַם לְשׁוֹוְיָם.",
-            definitionNative = "Налог, взимаемый с владельцев имущества пропорционально его стоимости.",
-            example = "מַס רְכוּשׁ מְשׁוּלָּם לָרָשׁוּת הַמְּקוֹמִית פַּעֲמַיִם בַּשָּׁנָה.",
-            exampleNative = "מַס רְכוּשׁ платится в местный орган власти два раза в год.",
-        ),
-        WordEntity(
-            id = 103623, setId = 1036, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "finance", transliteration = "hotsa'a mukeret",
-            original = "הוֹצָאָה מוּכֶּרֶת", translation = "признанный расход (налоговый вычет)",
-            definition = "הוֹצָאָה עֵסְקִית הַמּוּכָּרֶת עַל יְדֵי רָשׁוּת הַמִּסִּים לְהַפְחָתַת הַמַּס.",
-            definitionNative = "Деловой расход, признанный налоговым органом для уменьшения налога.",
-            example = "רְכִישַׁת מַחְשֵׁב לַעֲבוֹדָה הִיא הוֹצָאָה מוּכֶּרֶת.",
-            exampleNative = "Покупка компьютера для работы — это הוֹצָאָה מוּכֶּרֶת.",
-        ),
-        WordEntity(
-            id = 103624, setId = 1036, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "finance", transliteration = "poked mas",
-            original = "פּוֹקֵד מַס", translation = "налоговый инспектор",
-            definition = "פָּקִיד רָשׁוּת הַמִּסִּים הַבּוֹדֵק וּמְחַשֵּׁב מַסִּים שֶׁל יְחִידִים וְעֵסְקִים.",
-            definitionNative = "Сотрудник налоговой службы, проверяющий и исчисляющий налоги физических лиц и предприятий.",
-            example = "פָּגַשְׁתִּי אֶת פּוֹקֵד הַמַּס שֶׁלִּי לְהַגָּשַׁת הַדּוּחַ הַשָּׁנָתִי.",
-            exampleNative = "Я встретился со своим פּוֹקֵד מַס для подачи годового отчёта.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 103625, setId = 1036, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "finance", transliteration = "shnat mas",
-            original = "שְׁנַת מַס", translation = "налоговый год",
-            definition = "תְּקוּפַת 12 חֳדָשִׁים שֶׁלְּגַבֵּיהָ מְחַשְּׁבִים אֶת הַמַּס.",
-            definitionNative = "Период в 12 месяцев, за который исчисляется налог.",
-            example = "שְׁנַת הַמַּס בְּיִשְׂרָאֵל מַתְחִילָה בְּ-1 בְּיָנְוָר.",
-            exampleNative = "שְׁנַת מַס в Израиле начинается 1 января.",
-         isFillInBlankSafe = false),
-
+                                        
         // ──────────────────────────────────────────────────────
         // Set 1037 — Природа и климат Израиля (слова 21–25),
         // ──────────────────────────────────────────────────────

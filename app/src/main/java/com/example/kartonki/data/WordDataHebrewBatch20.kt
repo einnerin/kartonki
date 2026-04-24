@@ -6,14 +6,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewBatch20 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(
-            id = 1082, languagePair = "he-ru", orderIndex = 1082,
-            name = "Алия и Израиль: углублённый",
-            description = "Исторические события и понятия",
-            topic = "Алия и Израиль",
-            level = 3
-        ),
-        WordSetEntity(
+                WordSetEntity(
             id = 1083, languagePair = "he-ru", orderIndex = 1083,
             name = "Технологии: продвинутый 6",
             description = "Интернет-коммуникации и медиа",
@@ -34,246 +27,21 @@ object WordDataHebrewBatch20 {
         // ── Set 1082: Алия и Израиль — продвинутый ───────────────────────
 
         // UNCOMMON (A2–B1),
-        WordEntity(
-            id = 108201, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "irgun",
-            original = "אִירְגּוּן", translation = "Иргун (подпольная еврейская военная организация)",
-            definition = "אַרְגּוּן צְבָאִי-מַחְתֶּרְתִּי יְהוּדִי שֶׁפָּעַל בְּאֶרֶץ יִשְׂרָאֵל בִּתְקוּפַת הַמַּנְדָּט.",
-            definitionNative = "Еврейская военно-подпольная организация, действовавшая в Палестине в период британского мандата.",
-            example = "הָאִירְגּוּן בִּצַּע פְּעוּלּוֹת נֶגֶד הַבְּרִיטִים בְּשָׁנוֹת הָאַרְבָּעִים.",
-            exampleNative = "Иргун проводил операции против британцев в сороковые годы.",
-         fillInBlankExclusions = listOf(108214L)),
-
-        WordEntity(
-            id = 108202, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "hitnahalut",
-            original = "הִתְנַחֲלוּת", translation = "поселенческая деятельность; поселение",
-            definition = "הֲקָמַת יִישּׁוּבִים יְהוּדִיִּים בִּשְׁטָחִים שֶׁנִּכְבְּשׁוּ לְאַחַר מִלְחֶמֶת 1967.",
-            definitionNative = "Строительство еврейских поселений на территориях, занятых после войны 1967 года.",
-            example = "מְדִינִיּוּת הַהִתְנַחֲלוּת הוֹסִיפָה מַתָּח לַמַּשָּׂא וּמַתָּן.",
-            exampleNative = "Поселенческая политика добавила напряжённость в переговорный процесс.",
-         fillInBlankExclusions = listOf(108219L, 108223L)),
-
-        WordEntity(
-            id = 108203, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "histadrut",
-            original = "הַסְתַּדְּרוּת", translation = "Гистадрут (федерация труда Израиля)",
-            definition = "הַהִסְתַּדְּרוּת הַכְּלָלִית שֶׁל הָעוֹבְדִים הָעִבְרִיִּים בְּאֶרֶץ יִשְׂרָאֵל, שֶׁהוּקְמָה בְּ-1920.",
-            definitionNative = "Всеобщая федерация трудящихся Израиля, основанная в 1920 году.",
-            example = "הַהִסְתַּדְּרוּת שִׂמְּשָׁה כְּמוֹסָד כְּלָלִי חָשׁוּב לִפְנֵי קוּם הַמְּדִינָה.",
-            exampleNative = "Гистадрут служил важным общественным институтом ещё до основания государства.",
-         isFillInBlankSafe = false),
-
-        WordEntity(
-            id = 108204, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "aliya bet",
-            original = "עֲלִיָּה בֵּית", translation = "алия бет (нелегальная иммиграция)",
-            definition = "עֲלִיָּה בִּלְתִּי-לֵגָלִית לְאֶרֶץ יִשְׂרָאֵל בְּנִגּוּד לְהַגְבָּלוֹת הַמַּנְדָּט הַבְּרִיטִי.",
-            definitionNative = "Нелегальная иммиграция в Палестину вопреки ограничениям британского мандата.",
-            example = "בָּאֳנִיּוֹת הַסְּתָר שֶׁל הָעֲלִיָּה בֵּית עָלוּ עוֹלִים לִמְרוֹת הַחְסִימָה.",
-            exampleNative = "На тайных кораблях алии бет репатрианты прибывали вопреки блокаде.",
-        ),
-
-        WordEntity(
-            id = 108205, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "zkhut hashvut",
-            original = "זְכוּת הַשְּׁבוּת", translation = "право на возвращение",
-            definition = "הַזְּכוּת הַנִּתְבֶּעֶת עַל יְדֵי הַפְּלִיטִים הַפָּלֶסְטִינִיִּים לָשׁוּב לְבָתֵּיהֶם.",
-            definitionNative = "Право, которого требуют палестинские беженцы, на возвращение в свои дома.",
-            example = "שְׁאֵלַת זְכוּת הַשְּׁבוּת נִשְׁאֶרֶת אַחַת מֵהַסּוּגְיוֹת הַמְּדִינִיּוֹת הַקָּשׁוֹת בְּיוֹתֵר.",
-            exampleNative = "Вопрос о праве на возвращение остаётся одним из наиболее сложных политических вопросов.",
-         fillInBlankExclusions = listOf(108202L, 108211L, 108219L, 108223L)),
-
-        WordEntity(
-            id = 108206, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "beit leumi",
-            original = "בֵּית לְאֻמִּי", translation = "национальный очаг",
-            definition = "הַמּוּנָּח בְּהַצְהָרַת בַּלְפוּר — הֲקָמַת מַרְכָּז יְהוּדִי לְאֻמִּי.",
-            definitionNative = "Термин, которым называлась сионистская цель в Декларации Бальфура — создание еврейского национального центра.",
-            example = "הַבַּיִת הַלְּאֻמִּי הַיְּהוּדִי בְּאֶרֶץ יִשְׂרָאֵל הָפַךְ לְמַטָּרָה רְשְׁמִית.",
-            exampleNative = "Еврейский национальный очаг в Земле Израиля стал официальной целью.",
-         isFillInBlankSafe = false),
-
-        WordEntity(
-            id = 108207, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "heftakat esh",
-            original = "הֶפְסְקַת אֵשׁ", translation = "прекращение огня; перемирие",
-            definition = "הַפְסָקָה זְמַנִּית בַּלְּחִימָה בְּהַסְכָּמַת שְׁנֵי הַצְּדָדִים.",
-            definitionNative = "Временное прекращение боевых действий по взаимному соглашению сторон.",
-            example = "הֶפְסְקַת הָאֵשׁ אִפְשְׁרָה לְהוֹצִיא פְּצוּעִים מֵהַשֶּׁטַח.",
-            exampleNative = "Прекращение огня позволило вывезти раненых с поля боя.",
-         isFillInBlankSafe = false),
-
-        WordEntity(
-            id = 108208, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "hantsaha",
-            original = "הַנְצָחָה", translation = "увековечение (памяти); коммеморация",
-            definition = "שְׁמִירַת זִכְרוֹן אַנְשִׁים אוֹ אֵירוּעִים הִיסְטוֹרִיִּים לְדוֹרוֹת הַבָּאִים.",
-            definitionNative = "Сохранение памяти людей или исторических событий для будущих поколений.",
-            example = "הַנְצָחַת חַלְלֵי הַשּׁוֹאָה הִיא חֵלֶק מֵהַזִּכָּרוֹן הַלְּאֻמִּי.",
-            exampleNative = "Увековечение памяти жертв Холокоста является частью национальной памяти.",
-         isFillInBlankSafe = false),
-
-        WordEntity(
-            id = 108209, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "shavyon ezrakhi",
-            original = "שָׁוְיוֹן אֶזְרָחִי", translation = "гражданское равенство",
-            definition = "עִקָּרוֹן לְפִיו כָּל אֶזְרָחֵי הַמְּדִינָה נֶהֱנִים מֵאוֹתָן זְכֻיּוֹת בִּלְלִי הֶבְדֵּל דָּת וְלֵאוּם.",
-            definitionNative = "Все граждане страны пользуются одними правами независимо от религии и национальности.",
-            example = "מְגִלַּת הָעַצְמָאוּת מַבְטִיחָה שָׁוְיוֹן אֶזְרָחִי לְכָל תּוֹשְׁבֵי יִשְׂרָאֵל.",
-            exampleNative = "Декларация независимости обещает гражданское равенство всем жителям Израиля.",
-         fillInBlankExclusions = listOf(108219L)),
-
-        WordEntity(
-            id = 108210, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "giyus khova",
-            original = "גִּיּוּס חוֹבָה", translation = "обязательная воинская служба; призыв",
-            definition = "חֲיוּב חוּקִי לְשָׁרֵת בַּצָּבָא הַחָל עַל כָּל אֶזְרָח בְּהַגִּיעוֹ לְגִיל גִּיּוּס.",
-            definitionNative = "Законная обязанность служить в армии для каждого гражданина призывного возраста.",
-            example = "גִּיּוּס הַחוֹבָה בְּיִשְׂרָאֵל מַתְחִיל בְּגִיל שְׁמוֹנָה עֶשְׂרֵה.",
-            exampleNative = "Обязательная воинская служба в Израиле начинается в восемнадцать лет.",
-         isFillInBlankSafe = false),
-
-        WordEntity(
-            id = 108211, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "shlemut haArets",
-            original = "שְׁלֵמוּת הָאָרֶץ", translation = "территориальная целостность",
-            definition = "עִקָּרוֹן הַשְּׁמִירָה עַל גְּבוּלוֹת הַמְּדִינָה מִפְּנֵי פִּלּוּג אוֹ עֲזִיבָה.",
-            definitionNative = "Принцип сохранения государственных границ от раздела или отторжения.",
-            example = "שְׁלֵמוּת הָאָרֶץ הִיא נוֹשֵׂא מוּנָח בְּמַחֲלֹקֶת בָּאִידֵיאוֹלוֹגְיָה הַיִּשְׂרְאֵלִית.",
-            exampleNative = "Территориальная целостность является дискуссионным вопросом в израильской идеологии.",
-         fillInBlankExclusions = listOf(108202L, 108219L, 108223L)),
-
-        WordEntity(
-            id = 108212, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "hakara beynleumit",
-            original = "הַכָּרָה בֵּינְלְאֻמִּית", translation = "международное признание",
-            definition = "קַבָּלַת מְדִינָה כִּישׁוּת בֵּינְלְאֻמִּית לְגִיטִימִית עַל יְדֵי מְדִינוֹת אֲחֵרוֹת.",
-            definitionNative = "Принятие государства как легитимного международного субъекта другими государствами.",
-            example = "מְדִינַת יִשְׂרָאֵל קִיבְּלָה הַכָּרָה בֵּינְלְאֻמִּית בְּ-1948.",
-            exampleNative = "Государство Израиль получило международное признание в 1948 году.",
-        ),
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         // RARE (B2),
-        WordEntity(
-            id = 108213, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "kibuts",
-            original = "קִיבּוּץ", translation = "кибуц",
-            definition = "קְהִלָּה שִׁיתּוּפִית-חַקְלָאִית עִם בַּעֲלוּת קוֹלֶקְטִיבִית עַל הָרְכוּשׁ.",
-            definitionNative = "Коллективное сельскохозяйственное сообщество с коллективной собственностью на имущество.",
-            example = "הַקִּיבּוּץ הָפַךְ מִמּוֹסָד חַקְלָאִי לְמֶרְכָּז תַּעֲשִׂיָּתִי.",
-            exampleNative = "Кибуц превратился из сельскохозяйственного учреждения в промышленный центр.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 108214, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "makhteret",
-            original = "מַחְתֶּרֶת", translation = "подполье, подпольное движение",
-            definition = "אַרְגּוּן חֶשְׁאִי הַפּוֹעֵל מֵחוּץ לְגִדְרֵי הַחוֹק.",
-            definitionNative = "Тайная организация, действующая вне рамок закона.",
-            example = "הַמַּחְתֶּרֶת הַיְּהוּדִית נִלְחֲמָה נֶגֶד שִׁלְטוֹן הַמַּנְדָּט.",
-            exampleNative = "Еврейское подполье боролось против мандатного правления.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 108215, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "diplomatiya",
-            original = "דִּפְלוֹמַטְיָה", translation = "дипломатия",
-            definition = "הַנִּהוּל הַמְּדִינִי שֶׁל יַחֲסֵי חוּץ בֵּין מְדִינוֹת בְּאֶמְצָעוּת מוּ\"מ.",
-            definitionNative = "Государственное ведение международных отношений посредством переговоров.",
-            example = "הַדִּפְלוֹמַטְיָה הַיִּשְׂרְאֵלִית תָּרְמָה לְהַסְכְּמֵי אַבְרָהָם.",
-            exampleNative = "Израильская дипломатия способствовала Соглашениям Авраама.",
-        ),
-        WordEntity(
-            id = 108216, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "protektorat",
-            original = "פְּרוֹטֶקְטוֹרָט", translation = "протекторат",
-            definition = "שֶׁטַח הַנָּתוּן לְחֶסוּת מְדִינָה אַחֶרֶת מִבְּחִינָה מְדִינִית וּבִטְחוֹנִית.",
-            definitionNative = "Территория, находящаяся под политической и военной защитой другого государства.",
-            example = "אֶרֶץ יִשְׂרָאֵל הָיְתָה פְּרוֹטֶקְטוֹרָט בְּרִיטַנִּי בֵּין שְׁתֵּי מִלְחֲמוֹת הָעוֹלָם.",
-            exampleNative = "Земля Израиля являлась британским протекторатом между двумя мировыми войнами.",
-        ),
-        WordEntity(
-            id = 108217, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "hatskharat balfur",
-            original = "הַצְהָרַת בַּלְפוּר", translation = "Декларация Бальфура",
-            definition = "מִכְתַּב 1917 שֶׁל הַמִּמְשָׁלָה הַבְּרִיטַנִּית הַמּוֹדִיעַ עַל תְּמִיכָה בְּבַיִת לְאֻמִּי יְהוּדִי.",
-            definitionNative = "Письмо 1917 года британского правительства, объявляющее о поддержке еврейского национального очага.",
-            example = "הַצְהָרַת בַּלְפוּר מִיּוֹם ב' בְּנוֹבֶמְבֶּר 1917 הָיְתָה מִפְנֶה הִיסְטוֹרִי.",
-            exampleNative = "Декларация Бальфура от 2 ноября 1917 года стала историческим переломом.",
-        ),
-        WordEntity(
-            id = 108218, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "moshav",
-            original = "מוֹשָׁב", translation = "мошав (кооперативное поселение)",
-            definition = "יִישּׁוּב חַקְלָאִי שֶׁבּוֹ בַּעֲלוּת פְּרָטִית עִם שִׁיתּוּף בְּשִׁיּוּוּק וּרְכִישָׁה.",
-            definitionNative = "Сельскохозяйственное поселение с частной собственностью и кооперацией в сбыте и закупках.",
-            example = "הַמּוֹשָׁב נִבְדָּל מֵהַקִּיבּוּץ בְּבַעֲלוּת פְּרָטִית עַל הָאֲדָמָה.",
-            exampleNative = "Мошав отличается от кибуца частной собственностью на землю.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 108219, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "hagdara atsmit",
-            original = "הַגְדָּרָה עַצְמִית", translation = "самоопределение",
-            definition = "זְכוּת עַם לְהַחְלִיט עַל גּוֹרָלוֹ הַמְּדִינִי בְּאֹפֶן עַצְמָאִי.",
-            definitionNative = "Право народа самостоятельно решать свою политическую судьбу.",
-            example = "הַצְהָרַת הַמְּדִינָה נִסְמְכָה עַל הַזְּכוּת לְהַגְדָּרָה עַצְמִית.",
-            exampleNative = "Провозглашение государства опиралось на право на самоопределение.",
-         fillInBlankExclusions = listOf(108222L)),
-        WordEntity(
-            id = 108220, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "miutim",
-            original = "מִיעוּטִים", translation = "меньшинства",
-            definition = "קְבוּצוֹת אֶתְנִיּוֹת, דָּתִיּוֹת אוֹ לְאֻמִּיּוֹת שֶׁאֵינָן חֵלֶק מֵהָרֹב.",
-            definitionNative = "Этнические, религиозные или национальные группы, не являющиеся частью большинства.",
-            example = "הַמִּיעוּטִים בְּיִשְׂרָאֵל כּוֹלְלִים עֲרָבִים, דְּרוּזִים וְצִ'רְקֶסִּים.",
-            exampleNative = "Меньшинства в Израиле включают арабов, друзов и черкесов.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 108221, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "hakhrazat atsmaut",
-            original = "הַכְרָזַת עַצְמָאוּת", translation = "Декларация независимости",
-            definition = "מְאַמָּץ נֶחוּשׁ לְהַשִּׂיג מַטָּרָה — בִּמְיֻחָד בְּהֶקְשֵׁר לְאֻמִּי אוֹ מְדִינִי.",
-            definitionNative = "Настойчивое усилие для достижения цели — особенно в национальном или политическом контексте.",
-            example = "הַמַּאֲבָק לַעַצְמָאוּת נִמְשַׁךְ עֶשְׂרוֹת שָׁנִים.",
-            exampleNative = "Борьба за независимость продолжалась десятилетиями.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 108222, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "shikhrur",
-            original = "שִׁיחְרוּר", translation = "освобождение",
-            definition = "פְּעוּלָה שֶׁל שִׁחְרוּר שֶׁטַח, עָם אוֹ יָחִיד מִשִּׁלְטוֹן זָר.",
-            definitionNative = "Действие по освобождению территории, народа или личности от чужого господства.",
-            example = "שִׁיחְרוּר יְרוּשָׁלַיִם בְּ-1967 נֶחְגַּג בְּיוֹם יְרוּשָׁלַיִם.",
-            exampleNative = "Освобождение Иерусалима в 1967 году отмечается в День Иерусалима.",
-         fillInBlankExclusions = listOf(108223L)),
-        WordEntity(
-            id = 108223, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "sipuakh",
-            original = "סִפּוּחַ", translation = "аннексия",
-            definition = "הַצָּמָדַת שֶׁטַח בְּכוֹחַ לְמְדִינָה, לְעִיתִּים בְּנִגּוּד לְדִין הַבֵּינְלְאֻמִּי.",
-            definitionNative = "Присоединение территории силой к государству, нередко вопреки международному праву.",
-            example = "הַסִּפּוּחַ הַחַד-צְדָדִי שֶׁל שֶׁטַח יָצַר בְּעָיָה דִּיפְלוֹמַטִית.",
-            exampleNative = "Одностороннее присоединение территории создало дипломатическую проблему.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 108224, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "heskem oslo",
-            original = "הֶסְכֵּם אוֹסְלוֹ", translation = "Соглашения Осло",
-            definition = "הֶסְכְּמֵי שָׁלוֹם בֵּין יִשְׂרָאֵל לָרְשׁוּת הַפָּלֶסְטִינִית שֶׁנֶּחְתְּמוּ בִּשְׁנוֹת הַתִּשְׁעִים.",
-            definitionNative = "Мирные соглашения между Израилем и Палестинской администрацией, подписанные в девяностые годы.",
-            example = "הֶסְכְּמֵי אוֹסְלוֹ נֶחְתְּמוּ בְּ-1993 בֵּין רָבִין לְעַרָפַאת.",
-            exampleNative = "Соглашения Осло были подписаны в 1993 году между Рабином и Арафатом.",
-         isFillInBlankSafe = false),
-        WordEntity(
-            id = 108225, setId = 1082, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "israel_history", transliteration = "khalukat palestina",
-            original = "חֲלוּקַת פָּלֶסְטִינָה", translation = "Раздел Палестины",
-            definition = "תָּכְנִית עָ\"מ מִ-1947 לַחֲלוּקַת אֶרֶץ יִשְׂרָאֵל לְמְדִינָה יְהוּדִית וַעֲרָבִית.",
-            definitionNative = "План ООН 1947 года по разделу Земли Израиля на еврейское и арабское государства.",
-            example = "תָּכְנִית הַחֲלוּקָה קִיבְּלָה תְּמִיכָה יְהוּדִית אַךְ נִדְחְתָה עַל יְדֵי הָעֲרָבִים.",
-            exampleNative = "План раздела получил еврейскую поддержку, но был отвергнут арабами.",
-         isFillInBlankSafe = false),
-
+                                                                                                        
         // ── Set 1083: Социальные сети ──────────────────────────────────────
 
         // COMMON (A1),
