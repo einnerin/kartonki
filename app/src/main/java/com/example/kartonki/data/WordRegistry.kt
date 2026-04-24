@@ -68,11 +68,18 @@ object WordRegistry {
                 WordDataEnglishBatch17.sets +
                 WordDataEnglishBatch18.sets +
                 WordDataEnglishJournalism2.sets +
+                WordDataEnglishJournalismL4.sets +
+                WordDataEnglishJournalismL5.sets +
                 WordDataEnglishHistory2.sets +
+                WordDataEnglishHistoryL4.sets +
+                WordDataEnglishHistoryL5.sets +
                 WordDataEnglishClothing2.sets +
+                WordDataEnglishClothingL5.sets +
                 WordDataEnglishSports2.sets +
                 WordDataEnglishSportsL4.sets +
+                WordDataEnglishSportsL5.sets +
                 WordDataEnglishTransport2.sets +
+                WordDataEnglishTransportL5.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewTech.sets +
@@ -208,11 +215,18 @@ object WordRegistry {
                 WordDataEnglishBatch17.words +
                 WordDataEnglishBatch18.words +
                 WordDataEnglishJournalism2.words +
+                WordDataEnglishJournalismL4.words +
+                WordDataEnglishJournalismL5.words +
                 WordDataEnglishHistory2.words +
+                WordDataEnglishHistoryL4.words +
+                WordDataEnglishHistoryL5.words +
                 WordDataEnglishClothing2.words +
+                WordDataEnglishClothingL5.words +
                 WordDataEnglishSports2.words +
                 WordDataEnglishSportsL4.words +
+                WordDataEnglishSportsL5.words +
                 WordDataEnglishTransport2.words +
+                WordDataEnglishTransportL5.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words +
