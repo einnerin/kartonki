@@ -84,7 +84,7 @@ object WordDataHebrewAliyaV2 {
             example = "אָמַרְתִּי שָׁלוֹם לַשָּׁכֵן הֶחָדָשׁ שֶׁלִּי.",
             exampleNative = "Я сказал שָׁלוֹם новому соседу.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161002L, 161003L, 161004L, 161015L, 161016L, 161017L, 161018L, 161019L)),
         WordEntity(
             id = 161002, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "aliya_greetings", transliteration = "boker tov",
@@ -93,8 +93,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Утреннее приветствие, используется до полудня.",
             example = "בּוֹקֶר טוֹב, אֵיךְ יָשַׁנְתָּ בַּלַּיְלָה הָרִאשׁוֹן?",
             exampleNative = "בּוֹקֶר טוֹב, как спалось в первую ночь?",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161001L, 161003L, 161004L, 161017L)),
         WordEntity(
             id = 161003, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "aliya_greetings", transliteration = "lehitra'ot",
@@ -103,8 +102,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Говорят при расставании, когда планируется встретиться снова.",
             example = "לְהִתְרָאוֹת, נִפָּגֵשׁ בָּאוּלְפָּן מָחָר.",
             exampleNative = "לְהִתְרָאוֹת, встретимся завтра в ульпане.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161001L, 161002L, 161004L, 161015L)),
         WordEntity(
             id = 161004, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "aliya_greetings", transliteration = "baruch haba",
@@ -113,8 +111,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Говорят гостю или новому репатрианту при прибытии.",
             example = "בָּרוּךְ הַבָּא לְיִשְׂרָאֵל, עוֹלֶה יָקָר.",
             exampleNative = "בָּרוּךְ הַבָּא в Израиль, дорогой репатриант.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161001L, 161002L, 161003L)),
 
         // ── geography (4) ──
         WordEntity(
@@ -125,8 +122,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Государство на Ближнем Востоке, образованное в 1948 году.",
             example = "עָלִיתִי לְיִשְׂרָאֵל עִם מִשְׁפַּחְתִּי בַּקַּיִץ.",
             exampleNative = "Я репатриировался в יִשְׂרָאֵל с семьёй летом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161006L, 161007L, 161008L)),
         WordEntity(
             id = 161006, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya_geography", transliteration = "tel aviv",
@@ -145,8 +141,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Столица государства, духовный центр трёх мировых религий.",
             example = "נָסַעְתִּי לְיְרוּשָׁלַיִם לִרְאוֹת אֶת הַכֹּתֶל.",
             exampleNative = "Я поехал в יְרוּשָׁלַיִם посмотреть на Стену Плача.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161005L, 161006L, 161008L)),
         WordEntity(
             id = 161008, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya_geography", transliteration = "haifa",
@@ -155,8 +150,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Крупный северный портовый город на склонах горы Кармель.",
             example = "בְּחֵיפָה הַיָּם וְהָהָר נִפְגָּשִׁים יַחַד.",
             exampleNative = "В חֵיפָה море и горы сходятся в одном месте.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161005L, 161006L, 161007L)),
 
         // ── people (3) ──
         WordEntity(
@@ -167,8 +161,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Человек, вернувшийся жить на историческую родину по Закону о возвращении.",
             example = "כָּל עוֹלֶה מְקַבֵּל סַל קְלִיטָה מֵהַמְּדִינָה.",
             exampleNative = "Каждый עוֹלֶה получает корзину абсорбции от государства.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161010L, 161011L, 161024L)),
         WordEntity(
             id = 161010, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya_people", transliteration = "yisre'eli",
@@ -177,8 +170,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Гражданин государства, независимо от происхождения.",
             example = "כָּל יִשְׂרְאֵלִי חַיָּב לְשָׁרֵת בַּצָּבָא מִגִּיל שְׁמוֹנֶה-עֶשְׂרֵה.",
             exampleNative = "Каждый יִשְׂרְאֵלִי обязан служить в армии с 18 лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161009L, 161011L)),
         WordEntity(
             id = 161011, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya_people", transliteration = "toshav",
@@ -187,8 +179,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Лицо, постоянно проживающее в стране, не обязательно её гражданин.",
             example = "אֲנִי עֲדַיִן לֹא אֶזְרָח, רַק תּוֹשָׁב חָדָשׁ.",
             exampleNative = "Я пока не гражданин, только новый תּוֹשָׁב.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161009L, 161010L)),
 
         // ── basic actions (3) ──
         WordEntity(
@@ -199,8 +190,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Глагол, означающий переезд на историческую родину.",
             example = "סָבִי וְסָבְתִי הֶחְלִיטוּ לַעֲלוֹת מֵרוּסְיָה.",
             exampleNative = "Мои дедушка и бабушка решили לַעֲלוֹת из России.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161013L, 161014L)),
         WordEntity(
             id = 161013, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "aliya_basic_verbs", transliteration = "lagur",
@@ -209,8 +199,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Постоянно находиться в каком-либо месте как в доме.",
             example = "אָנוּ רוֹצִים לָגוּר בְּשָׁכוּנָה שְׁקֵטָה.",
             exampleNative = "Мы хотим לָגוּר в тихом районе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161012L, 161014L)),
         WordEntity(
             id = 161014, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "aliya_basic_verbs", transliteration = "lelamed",
@@ -219,8 +208,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Получать новые знания через занятия, книги или практику.",
             example = "אֲנִי מַתְחִיל לִלְמֹד עִבְרִית הַשָּׁבוּעַ.",
             exampleNative = "Я начинаю לִלְמֹד иврит на этой неделе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161012L, 161013L)),
 
         // ── thanks / courtesy (3) ──
         WordEntity(
@@ -231,8 +219,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Слово благодарности за оказанную помощь или услугу.",
             example = "תּוֹדָה רַבָּה עַל הַקַּבָּלַת הַפָּנִים הַחֲמָה.",
             exampleNative = "תּוֹדָה большое за тёплый приём.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161016L, 161017L)),
         WordEntity(
             id = 161016, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "interjection", semanticGroup = "aliya_courtesy", transliteration = "bevakasha",
@@ -241,8 +228,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Вежливое слово при просьбе или ответе на благодарность.",
             example = "בְּבַקָּשָׁה, קַח עוֹד כּוֹס קָפֶה.",
             exampleNative = "בְּבַקָּשָׁה, возьмите ещё чашку кофе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161001L, 161002L, 161015L, 161017L, 161018L)),
         WordEntity(
             id = 161017, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "interjection", semanticGroup = "aliya_courtesy", transliteration = "slikha",
@@ -251,8 +237,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Извинение за мелкую оплошность или способ привлечь внимание.",
             example = "סְלִיחָה, אֵיפֹה תַּחֲנַת הָאוֹטוֹבּוּס?",
             exampleNative = "סְלִיחָה, где остановка автобуса?",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161001L, 161002L, 161015L, 161016L)),
 
         // ── yes / no (3) ──
         WordEntity(
@@ -263,8 +248,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Слово утвердительного согласия на общий вопрос.",
             example = "כֵּן, אֲנִי מֵבִין קְצָת עִבְרִית.",
             exampleNative = "כֵּן, я немного понимаю иврит.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161001L, 161017L, 161019L, 161020L)),
         WordEntity(
             id = 161019, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "adverb", semanticGroup = "aliya_yesno", transliteration = "lo",
@@ -273,8 +257,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Слово отрицания в ответ на вопрос или предложение.",
             example = "לֹא, עוֹד לֹא קִבַּלְתִּי תְּעוּדָה.",
             exampleNative = "לֹא, я ещё не получил удостоверение.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161017L, 161018L, 161020L)),
         WordEntity(
             id = 161020, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "adverb", semanticGroup = "aliya_yesno", transliteration = "ulay",
@@ -283,8 +266,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Выражение сомнения или неуверенного допущения.",
             example = "אוּלַי נֵלֵךְ לַיָּם בַּשַּׁבָּת?",
             exampleNative = "אוּלַי пойдём к морю в субботу?",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161018L, 161019L)),
 
         // ── time basics (3) ──
         WordEntity(
@@ -295,8 +277,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Единица времени продолжительностью 24 часа.",
             example = "יוֹם רִאשׁוֹן הוּא יוֹם עֲבוֹדָה בָּאָרֶץ.",
             exampleNative = "יוֹם ришон (воскресенье) — рабочий день в Израиле.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161022L)),
         WordEntity(
             id = 161022, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya_time", transliteration = "shana",
@@ -305,8 +286,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Период времени длиной двенадцать месяцев.",
             example = "אֲנִי בָּאָרֶץ רַק שָׁנָה אַחַת.",
             exampleNative = "Я в стране всего один שָׁנָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161021L)),
         WordEntity(
             id = 161023, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
             pos = "adverb", semanticGroup = "aliya_time", transliteration = "hayom",
@@ -315,8 +295,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "В текущие сутки; в тот день, в котором мы находимся.",
             example = "הַיּוֹם אֲנִי פּוֹגֵשׁ אֶת הַמּוֹרָה בָּאוּלְפָּן.",
             exampleNative = "הַיּוֹם я встречаю преподавателя в ульпане.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161020L)),
 
         // ── family basics (2) ──
         WordEntity(
@@ -337,8 +316,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Личное жилище, где человек живёт и отдыхает.",
             example = "מָצָאנוּ בַּיִת נָחְמָד בְּחֵיפָה.",
             exampleNative = "Мы нашли уютный בַּיִת в Хайфе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161024L)),
 
         // ════════════════════════════════════════════════════════════════════
         // Set 1611 — основы: документы (level 1, COMMON+UNCOMMON)
@@ -355,8 +333,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Временный документ, дающий право на льготы новоприбывшего.",
             example = "קִבַּלְתִּי אֶת הַתְּעוּדַת עוֹלֶה בַּנָּמֵל הַתְּעוּפָה.",
             exampleNative = "Я получил תְּעוּדַת עוֹלֶה прямо в аэропорту.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161102L, 161103L, 161104L, 161108L, 161117L)),
         WordEntity(
             id = 161102, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya_id_cards", transliteration = "darkon",
@@ -365,8 +342,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Официальный документ для удостоверения личности при зарубежных поездках.",
             example = "הַדַּרְכּוֹן שֶׁלִּי תַּקֵּף עוֹד חָמֵשׁ שָׁנִים.",
             exampleNative = "Мой דַּרְכּוֹן действителен ещё пять лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161101L, 161103L, 161104L, 161108L, 161117L)),
         WordEntity(
             id = 161103, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya_id_cards", transliteration = "rishayon",
@@ -375,8 +351,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Официальный допуск на выполнение определённого действия.",
             example = "אֲנִי צָרִיךְ רִשָּׁיוֹן חָדָשׁ לַעֲבוֹד כָּאן.",
             exampleNative = "Мне нужен новый רִשָּׁיוֹן, чтобы работать здесь.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161101L, 161102L, 161104L, 161108L, 161115L)),
         WordEntity(
             id = 161104, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_id_cards", transliteration = "sefakh",
@@ -397,8 +372,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Государственное ведомство, ведущее учёт жителей и статусов.",
             example = "חִכִּיתִי בַּתּוֹר בְּמִשְׂרַד הַפְּנִים שְׁעָתַיִם.",
             exampleNative = "Я ждал в очереди в מִשְׂרַד הַפְּנִים два часа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161106L, 161107L, 161123L)),
         WordEntity(
             id = 161106, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya_offices", transliteration = "misrad klita",
@@ -407,8 +381,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Ведомство, помогающее репатриантам адаптироваться в стране.",
             example = "קִבַּלְתִּי יוֹעֶצֶת מִטַּעַם מִשְׂרַד עֲלִיָּה.",
             exampleNative = "Мне назначили консультанта в מִשְׂרַד עֲלִיָּה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161105L, 161107L)),
         WordEntity(
             id = 161107, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya_offices", transliteration = "bituakh le'umi",
@@ -417,8 +390,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Учреждение, выплачивающее пособия и социальные выплаты.",
             example = "אֲנִי מְשַׁלֵּם לְבִּטּוּחַ לְאוּמִי כָּל חוֹדֶשׁ.",
             exampleNative = "Я плачу взносы в בִּטּוּחַ לְאוּמִי каждый месяц.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161105L, 161106L, 161123L)),
 
         // ── passport_items (3) ──
         WordEntity(
@@ -429,8 +401,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Разрешение на въезд или пребывание в другой стране.",
             example = "קִבַּלְתִּי אַשְׁרָה לְחָצִי שָׁנָה בָּרִאשׁוֹנָה.",
             exampleNative = "Сначала мне дали אַשְׁרָה на полгода.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161101L, 161102L, 161103L, 161109L, 161110L, 161115L, 161117L)),
         WordEntity(
             id = 161109, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_passport_items", transliteration = "khotemet",
@@ -439,8 +410,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Официальный оттиск на документе как знак подтверждения.",
             example = "הַפָּקִיד שָׂם חוֹתֶמֶת עַל הַבַּקָּשָׁה.",
             exampleNative = "Чиновник поставил חוֹתֶמֶת на заявление.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161108L, 161110L)),
         WordEntity(
             id = 161110, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_passport_items", transliteration = "tom tokef",
@@ -449,8 +419,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Дата, после которой документ теряет юридическую силу.",
             example = "תֹּם תֹּקֶף שֶׁל הַתְּעוּדָה בְּעוֹד חוֹדֶשׁ.",
             exampleNative = "תֹּם תֹּקֶף удостоверения уже через месяц.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161108L, 161109L)),
 
         // ── cert_bureau (3) ──
         WordEntity(
@@ -461,8 +430,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Официальный документ, фиксирующий факт и дату рождения.",
             example = "הֵבֵאתִי תְּעוּדַת לֵדָה מְתוּרְגֶּמֶת לְעִבְרִית.",
             exampleNative = "Я принёс תְּעוּדַת לֵדָה, переведённое на иврит.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161101L, 161112L, 161113L, 161117L)),
         WordEntity(
             id = 161112, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_cert_bureau", transliteration = "teudat nisu'in",
@@ -471,8 +439,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Документ, удостоверяющий официальное заключение брака.",
             example = "בִּקְשׁוּ מִמֶּנִּי תְּעוּדַת נִשּׂוּאִין אֲפוֹסְטִיל.",
             exampleNative = "От меня потребовали תְּעוּדַת נִשּׂוּאִין с апостилем.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161101L, 161111L, 161113L)),
         WordEntity(
             id = 161113, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_cert_bureau", transliteration = "tirgum notaryoni",
@@ -481,8 +448,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Перевод, заверенный нотариусом и принимаемый госорганами.",
             example = "עָשִׂיתִי תִּרְגּוּם נוֹטָרִיוֹנִי לְכָל הַמִּסְמָכִים.",
             exampleNative = "Я сделал תִּרְגּוּם נוֹטָרִיוֹנִי всех справок.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161111L, 161112L)),
 
         // ── statuses (3) ──
         WordEntity(
@@ -493,8 +459,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Постоянная правовая связь человека с государством.",
             example = "כָּל עוֹלֶה מְקַבֵּל אֶזְרָחוּת יִשְׂרְאֵלִית מִיָּד.",
             exampleNative = "Каждый репатриант сразу получает израильское אֶזְרָחוּת.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161101L, 161108L, 161115L, 161116L)),
         WordEntity(
             id = 161115, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_statuses", transliteration = "ma'amad",
@@ -503,8 +468,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Правовое положение человека в глазах государства.",
             example = "מַעֲמָד שֶׁלִּי בָּאָרֶץ הוּא עוֹלֶה חָדָשׁ.",
             exampleNative = "Мой מַעֲמָד в стране — новый репатриант.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161114L, 161116L)),
         WordEntity(
             id = 161116, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_statuses", transliteration = "ben zug",
@@ -513,8 +477,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Человек, состоящий в официальных отношениях с другим.",
             example = "בֶּן-זוּג שֶׁלִּי עָלָה בְּאוֹתוֹ יוֹם.",
             exampleNative = "Мой בֶּן-זוּג репатриировался в тот же день.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161114L, 161115L)),
 
         // ── biometric (3) ──
         WordEntity(
@@ -525,8 +488,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Смарт-карта с чипом и отпечатками владельца.",
             example = "הִתְחַלְּפָה לִי תְּעוּדָה בִּיּוֹמֶטְרִית חֲדָשָׁה.",
             exampleNative = "Мне заменили документ на תְּעוּדָה בִּיּוֹמֶטְרִית.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161101L, 161108L, 161118L, 161119L)),
         WordEntity(
             id = 161118, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_biometric", transliteration = "tviat etzbaot",
@@ -535,8 +497,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Уникальный узор на подушечках пальцев для идентификации.",
             example = "לָקְחוּ מִמֶּנִּי טְבִיעַת אֶצְבָּעוֹת בַּלִּשְׁכָּה.",
             exampleNative = "У меня в бюро взяли טְבִיעַת אֶצְבָּעוֹת.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161117L, 161119L)),
         WordEntity(
             id = 161119, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_biometric", transliteration = "tmuna pasport",
@@ -545,8 +506,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Официальное фото лица установленного размера для документов.",
             example = "הוֹרַדְתִּי תְּמוּנַת פַּסְפּוֹרְט בְּסְטוּדְיוֹ מוּל הַמִּשְׂרָד.",
             exampleNative = "Я сделал תְּמוּנַת פַּסְפּוֹרְט в ателье напротив ведомства.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161117L, 161118L)),
 
         // ── procedure_verbs (3) ──
         WordEntity(
@@ -567,8 +527,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Вписывать требуемые данные в пустую форму.",
             example = "צָרִיךְ לְמַלֵּא אֶת הַטֹּפֶס בְּעִבְרִית.",
             exampleNative = "Надо לְמַלֵּא анкету на иврите.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161120L, 161122L)),
         WordEntity(
             id = 161122, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "aliya_procedure_verbs", transliteration = "lekabel",
@@ -577,8 +536,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Принимать то, что передаётся или присылается человеку.",
             example = "רוֹצֶה לְקַבֵּל אֶת הַכַּרְטִיס עַד מָחָר.",
             exampleNative = "Хочу לְקַבֵּל карту до завтра.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161120L, 161121L)),
 
         // ── tax_basics (3) ──
         WordEntity(
@@ -589,8 +547,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Обязательный сбор с дохода физического лица в пользу государства.",
             example = "קִבַּלְתִּי הַנָּחוֹת בְּמַס הַכְנָסָה כְּעוֹלֶה.",
             exampleNative = "Мне дали льготы по מַס הַכְנָסָה как репатрианту.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161105L, 161106L, 161107L, 161124L, 161125L)),
         WordEntity(
             id = 161124, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_tax_basics", transliteration = "tik",
@@ -599,8 +556,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Папка официальных документов на человека в учреждении.",
             example = "הַתִּיק שֶׁלִּי מוּכָן אֵצֶל הַפָּקִיד.",
             exampleNative = "Мой תִּיק уже готов у чиновника.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161102L, 161103L, 161104L, 161123L, 161125L)),
         WordEntity(
             id = 161125, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_tax_basics", transliteration = "kvitza",
@@ -609,8 +565,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Часы, когда сотрудник принимает посетителей по записи.",
             example = "קָבַעְתִּי קְבִיצָה אֵצֶל הַפָּקִיד לְיוֹם שְׁלִישִׁי.",
             exampleNative = "Я записался на קְבִיצָה к чиновнику на вторник.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161123L, 161124L)),
 
         // ════════════════════════════════════════════════════════════════════
         // Set 1612 — первые месяцы (level 2, UNCOMMON+RARE)
@@ -627,8 +582,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Интенсивные курсы языка для приехавших в страну.",
             example = "אֲנִי הוֹלֵךְ לְאוּלְפָּן חָמֵשׁ פְּעָמִים בַּשָּׁבוּעַ.",
             exampleNative = "Я хожу в אוּלְפָּן пять раз в неделю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161202L, 161203L, 161204L)),
         WordEntity(
             id = 161202, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_ulpan", transliteration = "kita",
@@ -637,8 +591,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Учебный коллектив, занимающийся по одной программе вместе.",
             example = "כִּתָּה שֶׁלִּי קְטַנָּה, רַק שְׁמוֹנֶה תַּלְמִידִים.",
             exampleNative = "Моя כִּתָּה небольшая — всего восемь учеников.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161201L, 161203L, 161204L)),
         WordEntity(
             id = 161203, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_ulpan", transliteration = "dikduk",
@@ -647,8 +600,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Система правил построения языка и словоформ.",
             example = "דִּקְדּוּק עִבְרִי קָשֶׁה לָעוֹלִים בַּהַתְחָלָה.",
             exampleNative = "דִּקְדּוּק иврита сначала труден для репатриантов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161201L, 161202L, 161204L)),
         WordEntity(
             id = 161204, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_ulpan", transliteration = "ramat alef",
@@ -657,8 +609,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Самый начальный уровень курса иврита для новичков.",
             example = "הִתְחַלְתִּי בְּרָמָה אָלֶף וְאָז עָלִיתִי.",
             exampleNative = "Я начал с רָמָה אָלֶף и потом перешёл выше.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161201L, 161202L, 161203L)),
 
         // ── housing (4) ──
         WordEntity(
@@ -669,8 +620,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Отдельная жилая единица в общем жилом доме.",
             example = "שָׂכַרְנוּ דִּירָה שֶׁל שְׁלוֹשָׁה חֲדָרִים.",
             exampleNative = "Мы сняли דִּירָה с тремя комнатами.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161206L, 161207L, 161208L)),
         WordEntity(
             id = 161206, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_housing", transliteration = "skhirut",
@@ -689,8 +639,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Юридический документ между съёмщиком и владельцем жилья.",
             example = "חָתַמְתִּי חוֹזֶה שְׂכִירוּת לְשָׁנָה.",
             exampleNative = "Я подписал חוֹזֶה שְׂכִירוּת на год.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161205L, 161206L, 161208L)),
         WordEntity(
             id = 161208, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_housing", transliteration = "pikadon",
@@ -699,8 +648,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Сумма, передаваемая арендодателю в качестве гарантии.",
             example = "נָתַתִּי שְׁלוֹשָׁה חוֹדָשִׁים פִּקָּדוֹן לַבַּעַל.",
             exampleNative = "Я внёс פִּקָּדוֹן за три месяца хозяину.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161205L, 161206L, 161207L)),
 
         // ── health (3) ──
         WordEntity(
@@ -711,8 +659,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Медицинская организация, оказывающая услуги застрахованным.",
             example = "נִרְשַׁמְתִּי לְקֻפַּת חוֹלִים בַּשָּׁבוּעַ הָרִאשׁוֹן.",
             exampleNative = "Я записался в קֻפַּת חוֹלִים в первую неделю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161210L, 161211L)),
         WordEntity(
             id = 161210, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_health_hmo", transliteration = "makabi",
@@ -721,8 +668,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Одна из четырёх крупных медицинских касс страны.",
             example = "הַמִּשְׁפָּחָה שֶׁלִּי כֻּלָּהּ בְּמַכַּבִּי.",
             exampleNative = "Вся моя семья в מַכַּבִּי.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161209L, 161211L)),
         WordEntity(
             id = 161211, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_health_hmo", transliteration = "klalit",
@@ -743,8 +689,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Официальная денежная единица страны с 1985 года.",
             example = "קָנִיתִי לֶחֶם בְּעֶשֶׂר שֶׁקֶל.",
             exampleNative = "Я купил хлеб за десять שֶׁקֶל.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161213L, 161214L)),
         WordEntity(
             id = 161213, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_money_basics", transliteration = "sal klita",
@@ -753,8 +698,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Денежная помощь репатрианту в первые шесть месяцев.",
             example = "סַל קְלִיטָה עוֹזֵר לִשְׂכֹּר דִּירָה בַּהַתְחָלָה.",
             exampleNative = "סַל קְלִיטָה помогает оплатить квартиру поначалу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161212L, 161214L)),
         WordEntity(
             id = 161214, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_money_basics", transliteration = "arnona",
@@ -763,8 +707,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Ежемесячный сбор в пользу мэрии за жилую недвижимость.",
             example = "שִׁלַּמְתִּי אַרְנוֹנָה פָּחוּת בְּשָׁנָה הָרִאשׁוֹנָה.",
             exampleNative = "В первый год я платил אַרְנוֹנָה по льготной ставке.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161206L, 161208L, 161212L, 161213L, 161223L)),
 
         // ── local services (3) ──
         WordEntity(
@@ -775,8 +718,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Частная компания междугородних автобусных перевозок.",
             example = "מַסְפֵּן נוֹסֵעַ מֵחֵיפָה לְאֵילָת כָּל יוֹם.",
             exampleNative = "מַסְפֵּן ездит из Хайфы в Эйлат каждый день.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161216L, 161217L)),
         WordEntity(
             id = 161216, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_local_services", transliteration = "rav kav",
@@ -785,8 +727,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Единая смарт-карта для всего общественного транспорта.",
             example = "טָעַנְתִּי אֶת הָרַב-קָו לִשְׁלוֹשִׁים יוֹם.",
             exampleNative = "Я пополнил רַב-קָו на тридцать дней.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161215L, 161217L)),
         WordEntity(
             id = 161217, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_local_services", transliteration = "rakevet",
@@ -795,8 +736,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Рельсовый транспорт для междугородних маршрутов.",
             example = "נָסַעְתִּי בָּרַכֶּבֶת מִתֵּל אָבִיב לְיְרוּשָׁלַיִם.",
             exampleNative = "Я ехал в רַכֶּבֶת из Тель-Авива в Иерусалим.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161215L, 161216L)),
 
         // ── kibbutz_life (3) ──
         WordEntity(
@@ -807,8 +747,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Сельская коммуна с общим трудом и исторически равным распределением.",
             example = "בִּלִּינוּ שַׁבָּת בְּקִבּוּץ עִם חֲבֵרִים.",
             exampleNative = "Мы провели субботу в קִבּוּץ у друзей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161219L, 161220L)),
         WordEntity(
             id = 161219, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_kibbutz_life", transliteration = "moshav",
@@ -817,8 +756,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Сельскохозяйственное поселение семей с частичным обобществлением.",
             example = "הַסָּבְתָּא שֶׁלִּי גָּרָה בְּמוֹשָׁב קָטָן בַּצָּפוֹן.",
             exampleNative = "Моя бабушка живёт в небольшом מוֹשָׁב на севере.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161218L, 161220L)),
         WordEntity(
             id = 161220, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_kibbutz_life", transliteration = "khaver kibbutz",
@@ -827,8 +765,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Полноправный участник общины со всеми общими правами.",
             example = "הָיִינוּ אֵצֶל חֲבֵר קִבּוּץ בַּחֲדַר אֹכֶל.",
             exampleNative = "Мы были у חֲבֵר קִבּוּץ в общей столовой.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161218L, 161219L, 161222L)),
 
         // ── neighborhood (3) ──
         WordEntity(
@@ -859,8 +796,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Совет жильцов здания по управлению общей собственностью.",
             example = "מְשַׁלֵּם לַוַעַד בַּיִת מֵאתַיִם שֶׁקֶל.",
             exampleNative = "Я плачу וַעַד בַּיִת двести шекелей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161221L, 161222L)),
 
         // ── first_job (2) ──
         WordEntity(
@@ -871,8 +807,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Ежемесячный документ с окладом, удержаниями и взносами.",
             example = "הָעוֹבֵד קִבֵּל אֶת הַתְּלוּשׁ מַשְׂכּוֹרֶת הָרִאשׁוֹן.",
             exampleNative = "Работник получил первый תְּלוּשׁ מַשְׂכּוֹרֶת.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161225L)),
         WordEntity(
             id = 161225, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_first_job", transliteration = "sakhar minimum",
@@ -881,8 +816,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Наименьшая оплата труда, установленная законом.",
             example = "מַתְחִילִים בָּאָרֶץ בִּכְלָל בִּשְׂכַר מִינִימוּם.",
             exampleNative = "В стране обычно начинают со שְׂכַר מִינִימוּם.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161224L)),
 
         // ════════════════════════════════════════════════════════════════════
         // Set 1613 — язык и культура (level 2, UNCOMMON+RARE)
@@ -899,8 +833,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Еврей, выходец из общин Центральной и Восточной Европы.",
             example = "אַבָּא שֶׁלִּי אַשְׁכְּנַזִּי מִפּוֹלִין.",
             exampleNative = "Мой отец — אַשְׁכְּנַזִּי из Польши.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161302L, 161303L, 161304L)),
         WordEntity(
             id = 161302, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_ethnic_groups", transliteration = "sfaradi",
@@ -909,8 +842,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Еврей, выходец из общин Испании и Северной Африки.",
             example = "הַסַבְתָּא שֶׁלָּנוּ סְפָרַדִּי מִמָּרוֹקוֹ.",
             exampleNative = "Наша бабушка — סְפָרַדִּי из Марокко.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161301L, 161303L, 161304L)),
         WordEntity(
             id = 161303, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_ethnic_groups", transliteration = "mizrakhi",
@@ -919,8 +851,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Еврей — потомок общин Ближнего Востока и Северной Африки.",
             example = "הַמּוּזִיקָה מִזְרָחִי מְקוּבֶּלֶת בַּחֲתוּנוֹת.",
             exampleNative = "Музыка מִזְרָחִי популярна на свадьбах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161301L, 161302L, 161304L)),
         WordEntity(
             id = 161304, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_ethnic_groups", transliteration = "etyopi",
@@ -929,8 +860,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Еврей из общины Бейта Исраэль, приехавший из Эфиопии.",
             example = "הַקְּהִילָּה אֶתְיוֹפִּי חֲזָקָה בְּנְתַנְיָה.",
             exampleNative = "Община אֶתְיוֹפִּי крупная в Нетании.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161301L, 161302L, 161303L)),
 
         // ── shabbat_basics (4) ──
         WordEntity(
@@ -941,8 +871,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Седьмой день недели, святой день отдыха с пятницы вечером.",
             example = "הַכֹּל סָגוּר בְּיוֹם שַׁבָּת בִּירוּשָׁלַיִם.",
             exampleNative = "В שַׁבָּת всё закрыто в Иерусалиме.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161306L, 161307L, 161308L, 161312L, 161313L, 161314L, 161315L)),
         WordEntity(
             id = 161306, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_shabbat_basics", transliteration = "kiddush",
@@ -961,8 +890,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Плетёный сладкий хлеб для субботы и праздников.",
             example = "אָפִינוּ חַלָּה לִכְבוֹד שַׁבָּת רִאשׁוֹנָה.",
             exampleNative = "Мы испекли חַלָּה к первой субботе в стране.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161306L, 161308L)),
         WordEntity(
             id = 161308, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_shabbat_basics", transliteration = "havdala",
@@ -971,8 +899,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Короткий обряд в исходе субботы, знаменующий конец дня.",
             example = "עָרַכְנוּ הַבְדָּלָה בַּמִּרְפֶּסֶת עִם נֵר.",
             exampleNative = "Мы провели הַבְדָּלָה на балконе со свечой.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161305L, 161306L, 161307L)),
 
         // ── kashrut (3) ──
         WordEntity(
@@ -983,8 +910,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Свод правил о разрешённой в иудаизме пище.",
             example = "הַמִּסְעָדָה שׁוֹמֶרֶת כַּשְׁרוּת מְלֵאָה.",
             exampleNative = "Ресторан полностью соблюдает כַּשְׁרוּת.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161305L)),
         WordEntity(
             id = 161310, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "aliya_kashrut", transliteration = "kasher",
@@ -993,8 +919,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Разрешённый для еды по иудейскому закону.",
             example = "קָנִיתִי בָּשָׂר כָּשֵׁר לַסְּעוּדָה.",
             exampleNative = "Я купил כָּשֵׁר мясо к трапезе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161311L)),
         WordEntity(
             id = 161311, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "aliya_kashrut", transliteration = "khalavi",
@@ -1003,8 +928,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Категория пищи на основе коровьего продукта, по кашруту.",
             example = "בִּקַּשְׁתִּי מָנָה חֲלָבִי לַאֲרוּחַת עֶרֶב.",
             exampleNative = "Я заказал חֲלָבִי блюдо на ужин.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161310L)),
 
         // ── holidays_intro (4) ──
         WordEntity(
@@ -1015,8 +939,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Особый торжественный день в еврейском календаре.",
             example = "הַחַג הָבַעַל הֲכִי אָהוּב שֶׁלִּי הוּא סֻכּוֹת.",
             exampleNative = "Мой самый любимый חַג — Суккот.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161313L, 161314L, 161315L)),
         WordEntity(
             id = 161313, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_holidays_intro", transliteration = "rosh hashana",
@@ -1025,8 +948,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Праздник, открывающий еврейский год осенью.",
             example = "אָכַלְנוּ תַּפּוּחַ בִּדְבַשׁ בְּרֹאשׁ הַשָּׁנָה.",
             exampleNative = "Мы ели яблоки с мёдом на רֹאשׁ הַשָּׁנָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161305L, 161312L, 161314L, 161315L)),
         WordEntity(
             id = 161314, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_holidays_intro", transliteration = "pesakh",
@@ -1035,8 +957,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Весенний праздник в память об Исходе из Египта, семь дней.",
             example = "הִכְנוּ אֲרוּחַת פֶּסַח מִשְׁפַּחְתִּית גְּדוֹלָה.",
             exampleNative = "Мы устроили большой семейный ужин на פֶּסַח.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161305L, 161312L, 161313L, 161315L)),
         WordEntity(
             id = 161315, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_holidays_intro", transliteration = "hanukkah",
@@ -1045,8 +966,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Праздник огней длиной восемь дней с семисвечником и дрейделами.",
             example = "הִדְלַקְנוּ נֵרוֹת בְּחֲנֻכָּה בַּחַלּוֹן.",
             exampleNative = "Мы зажгли свечи на חֲנֻכָּה в окне.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161305L, 161308L, 161312L, 161313L, 161314L)),
 
         // ── synagogue_basics (3) ──
         WordEntity(
@@ -1067,8 +987,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Учитель и духовный лидер в иудейской общине.",
             example = "הָרַב הֶחָדָשׁ בַּשְּׁכוּנָה צָעִיר וּמְעַנְיֵן.",
             exampleNative = "Новый רַב в районе молодой и интересный.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161316L, 161318L)),
         WordEntity(
             id = 161318, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_synagogue", transliteration = "kippa",
@@ -1077,8 +996,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Небольшой головной убор, носимый религиозными евреями-мужчинами.",
             example = "חָבַשְׁתִּי כִּפָּה בִּכְנִיסָה לְבֵית כְּנֶסֶת.",
             exampleNative = "Я надел כִּפָּה при входе в синагогу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161316L, 161317L)),
 
         // ── language_ethnic (3) ──
         WordEntity(
@@ -1109,8 +1027,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Семитский язык, распространённый на Ближнем Востоке и в Израиле.",
             example = "כָּל שֶׁלֶט עַל הַכְּבִישׁ כָּתוּב בַּעֲרָבִית.",
             exampleNative = "Все дорожные знаки написаны и на עֲרָבִית.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161319L, 161320L)),
 
         // ── culture_food (2) ──
         WordEntity(
@@ -1121,8 +1038,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Жаренные во фритюре шарики из молотого нута.",
             example = "קָנִיתִי מָנָה פָלָאפֶל בְּפִּיתָה.",
             exampleNative = "Я взял порцию פָלָאפֶל в пите.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161323L)),
         WordEntity(
             id = 161323, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_culture_food", transliteration = "khumus",
@@ -1131,8 +1047,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Паста из нута с кунжутной тхиной и лимоном.",
             example = "אָכַלְנוּ חוּמוּס טוֹב בְּעַבָּאסִי.",
             exampleNative = "Мы ели хороший חוּמוּס в «Аббаси».",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161322L)),
 
         // ── culture_music (2) ──
         WordEntity(
@@ -1143,8 +1058,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Традиционный круговой танец на израильских торжествах.",
             example = "רָקַדְנוּ הוֹרָה בַּחֲתוּנָה שֶׁל חֲבֵרִים.",
             exampleNative = "Мы танцевали הוֹרָה на свадьбе друзей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161325L)),
         WordEntity(
             id = 161325, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_culture_music", transliteration = "zemer ivri",
@@ -1171,8 +1085,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Законодательный орган страны из 120 депутатов.",
             example = "הַכְּנֶסֶת יוֹשֶׁבֶת בְּיוֹם שְׁלִישִׁי עַל הַהַצָּעָה.",
             exampleNative = "כְּנֶסֶת заседает во вторник по законопроекту.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161402L, 161403L)),
         WordEntity(
             id = 161402, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_knesset_basics", transliteration = "khaver knesset",
@@ -1181,8 +1094,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Избранный представитель, защищающий интересы партии в парламенте.",
             example = "הַחֲבֵר כְּנֶסֶת דִּבֵּר נֶגֶד הַהַצָּעָה.",
             exampleNative = "חֲבֵר כְּנֶסֶת выступил против предложения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161401L, 161403L)),
         WordEntity(
             id = 161403, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_knesset_basics", transliteration = "ve'ada",
@@ -1203,8 +1115,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Глава исполнительной власти и правительства страны.",
             example = "הָרֹאשׁ מֶמְשָׁלָה נָסַע לְוָשִׁינְגְטוֹן לְפִסְגָּה.",
             exampleNative = "רֹאשׁ מֶמְשָׁלָה отправился в Вашингтон на саммит.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161405L, 161406L, 161407L)),
         WordEntity(
             id = 161405, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_govt_branches", transliteration = "sar",
@@ -1233,8 +1144,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Высшая судебная инстанция в государстве.",
             example = "הַבֵּית מִשְׁפָּט עֶלְיוֹן פָּסַק לְטוֹבָת הָעוֹתְרִים.",
             exampleNative = "בֵּית מִשְׁפָּט עֶלְיוֹן вынес решение в пользу истцов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161404L, 161405L, 161406L)),
 
         // ── parties_main (4) ──
         WordEntity(
@@ -1255,8 +1165,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Старейшая социал-демократическая партия, основавшая государство.",
             example = "מִפְלֶגֶת הָעֲבוֹדָה הִתְמוֹדְדָה לְבַד.",
             exampleNative = "הָעֲבוֹדָה пошла на выборы самостоятельно.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161408L, 161410L, 161411L)),
         WordEntity(
             id = 161410, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_parties_main", transliteration = "shas",
@@ -1265,8 +1174,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Религиозная сефардская партия ультраортодоксальной общины.",
             example = "שָׁ״ס תָּמַךְ בַּקּוֹאָלִיצְיָה הַחֲדָשָׁה.",
             exampleNative = "שָׁ״ס поддержал новую коалицию.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161408L, 161409L, 161411L)),
         WordEntity(
             id = 161411, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_parties_main", transliteration = "meretz",
@@ -1275,8 +1183,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Левосионистская социал-либеральная светская партия.",
             example = "מֶרֶץ הִתְמַקֵּד בְּזְכֻיּוֹת אָדָם וְחִלּוֹנִיּוּת.",
             exampleNative = "מֶרֶץ сосредоточился на правах человека и секулярности.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161408L, 161409L, 161410L)),
 
         // ── elections (3) ──
         WordEntity(
@@ -1287,8 +1194,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Демократический процесс избрания представителей народа.",
             example = "הַבְּחִירוֹת תַּעַרַכְנָה בְּנוֹבֶמְבֶּר הַקָּרוֹב.",
             exampleNative = "בְּחִירוֹת пройдут в ближайшем ноябре.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161413L, 161414L)),
         WordEntity(
             id = 161413, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_elections", transliteration = "koalitzya",
@@ -1297,8 +1203,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Союз партий, формирующих правительство большинства.",
             example = "הַקוֹאָלִיצְיָה קָמָה תּוֹךְ שְׁלוֹשָׁה שָׁבוּעוֹת.",
             exampleNative = "קוֹאָלִיצְיָה сформировалась за три недели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161412L, 161414L)),
         WordEntity(
             id = 161414, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_elections", transliteration = "opozitsya",
@@ -1307,8 +1212,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Партии, противостоящие правящему большинству в парламенте.",
             example = "הָאוֹפּוֹזִיצְיָה פָּתְחָה בְּדִיּוּן חַד.",
             exampleNative = "אוֹפּוֹזִיצְיָה открыла острые дебаты.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161412L, 161413L)),
 
         // ── rights (3) ──
         WordEntity(
@@ -1319,8 +1223,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Базовые права каждого человека с момента рождения.",
             example = "עֲמוּתָה לְזְכֻיּוֹת אָדָם פָּרְסְמָה דּוּחַ חָדָשׁ.",
             exampleNative = "Некоммерческая организация по זְכֻיּוֹת אָדָם издала отчёт.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161416L, 161417L)),
         WordEntity(
             id = 161416, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_rights", transliteration = "demokratya",
@@ -1329,8 +1232,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Форма правления, при которой народ выбирает своих представителей.",
             example = "יִשְׂרָאֵל נֶחְשֶׁבֶת לְדֵּמוֹקְרַטְיָה פָּרְלָמֶנְטָרִית.",
             exampleNative = "Израиль считается парламентской דֵּמוֹקְרַטְיָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161415L, 161417L)),
         WordEntity(
             id = 161417, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_rights", transliteration = "khok yesod",
@@ -1339,8 +1241,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Закон высшего статуса, лежащий в основе государственного строя.",
             example = "חוֹק יְסוֹד שׁוֹמֵר עַל כְּבוֹד הָאָדָם.",
             exampleNative = "חוֹק יְסוֹד охраняет человеческое достоинство.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161404L, 161405L, 161406L, 161407L, 161415L, 161416L)),
 
         // ── ideology (3) ──
         WordEntity(
@@ -1361,8 +1262,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Человек, отстаивающий свободу личности и её права.",
             example = "הוּא מְזַהֵ אֶת עַצְמוֹ לִיבֵּרָלִי בַּעֵינְיָנִים חֶבְרָתִיִּים.",
             exampleNative = "Он называет себя לִיבֵּרָלִי в социальных вопросах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161418L, 161420L)),
         WordEntity(
             id = 161420, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_ideology", transliteration = "dati",
@@ -1371,8 +1271,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Человек, соблюдающий заповеди Торы и еврейскую традицию.",
             example = "הוּא דָּתִי, לֹא עוֹבֵד בְּשַׁבָּת.",
             exampleNative = "Он דָּתִי и не работает в субботу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161418L, 161419L)),
 
         // ── civil_society (3) ──
         WordEntity(
@@ -1383,8 +1282,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Зарегистрированная организация, действующая ради общественной цели.",
             example = "עֲמוּתָה שֶׁעוֹזֶרֶת לְעוֹלִים חֲדָשִׁים פּוֹעֶלֶת בָּעִיר.",
             exampleNative = "В городе работает עֲמוּתָה в помощь репатриантам.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161403L, 161422L, 161423L)),
         WordEntity(
             id = 161422, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_civil_society", transliteration = "hafgana",
@@ -1393,8 +1291,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Публичное собрание для выражения протеста или позиции.",
             example = "הָיְתָה הַפְגָּנָה גְּדוֹלָה בְּכִכָּר רַבִּין.",
             exampleNative = "Была большая הַפְגָּנָה на площади Рабина.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161421L, 161423L)),
         WordEntity(
             id = 161423, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_civil_society", transliteration = "khevra ezrakhit",
@@ -1403,8 +1300,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Сеть независимых организаций и инициатив вне государства.",
             example = "חֶבְרָה אֶזְרָחִית חֲזָקָה חִיּוּבִית לִדֵּמוֹקְרַטְיָה.",
             exampleNative = "Сильное חֶבְרָה אֶזְרָחִית полезно для демократии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161401L, 161403L, 161413L, 161414L, 161421L, 161422L)),
 
         // ── economy_gov (2) ──
         WordEntity(
@@ -1415,8 +1311,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Годовой план доходов и расходов государства.",
             example = "הַכְּנֶסֶת אִישְׁרָה אֶת הַתַּקְצִיב בְּלַיְלָה.",
             exampleNative = "Кнессет утвердил תַּקְצִיב ночью.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161425L)),
         WordEntity(
             id = 161425, setId = 1614, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aliya_economy_gov", transliteration = "inflatsya",
@@ -1425,8 +1320,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Общий рост цен и падение покупательной способности денег.",
             example = "הָאִינְפְלַצְיָה הִתְגַּבְּרָה בַּשָּׁנָה הָאַחֲרוֹנָה.",
             exampleNative = "אִינְפְלַצְיָה усилилась за последний год.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161424L)),
 
         // ════════════════════════════════════════════════════════════════════
         // Set 1615 — история и политика (level 4, EPIC+LEGENDARY)
@@ -1443,8 +1337,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Документ, провозгласивший создание государства 14 мая 1948 года.",
             example = "קָרָאנוּ אֶת הַהַכְרָזַת הָעַצְמָאוּת בְּבֵית הַסֵּפֶר.",
             exampleNative = "Мы читали הַכְרָזַת הָעַצְמָאוּת в школе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161502L, 161503L)),
         WordEntity(
             id = 161502, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_founding_docs", transliteration = "kaf tet be-november",
@@ -1453,8 +1346,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "День, когда ООН приняла план раздела Палестины на два государства.",
             example = "כ״ט בְּנוֹבֶמְבֶּר מְצוּיַן בְּכָל שָׁנָה.",
             exampleNative = "כ״ט בְּנוֹבֶמְבֶּר отмечают каждый год.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161501L, 161503L, 161521L)),
         WordEntity(
             id = 161503, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_founding_docs", transliteration = "megilat ha'atzmaut",
@@ -1463,8 +1355,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Торжественный текст, зачитанный Бен-Гурионом при основании государства.",
             example = "מְגִלַּת הָעַצְמָאוּת מוּצֶגֶת בַּגְנָזָךְ הַמְּדִינָה.",
             exampleNative = "מְגִלַּת הָעַצְמָאוּת хранится в государственном архиве.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161501L, 161502L)),
 
         // ── historic_wars (4) ──
         WordEntity(
@@ -1475,8 +1366,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Молниеносный конфликт июня 1967 года, изменивший границы государства.",
             example = "הַסָּבָא שֶׁלִּי לָחַם בְּמִלְחֶמֶת שֵׁשֶׁת הַיָּמִים.",
             exampleNative = "Мой дед воевал в מִלְחֶמֶת שֵׁשֶׁת הַיָּמִים.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161505L, 161506L, 161507L)),
         WordEntity(
             id = 161505, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_historic_wars", transliteration = "milkhemet yom kippur",
@@ -1485,8 +1375,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Внезапное нападение Египта и Сирии 6 октября 1973 года.",
             example = "מִלְחֶמֶת יוֹם הַכִּפּוּרִים הִכְתָּה טְרָאוּמָה לָאָרֶץ.",
             exampleNative = "מִלְחֶמֶת יוֹם הַכִּפּוּרִים нанесла стране травму.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161504L, 161506L, 161507L)),
         WordEntity(
             id = 161506, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_historic_wars", transliteration = "milkhemet levanon",
@@ -1495,8 +1384,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Военная операция на северной границе против палестинских формирований.",
             example = "מִלְחֶמֶת לְבָנוֹן גָּרְמָה לְוִיכּוּחַ פּוֹלִיטִי גָּדוֹל.",
             exampleNative = "מִלְחֶמֶת לְבָנוֹן вызвала острую политическую полемику.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161504L, 161505L, 161507L)),
         WordEntity(
             id = 161507, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_historic_wars", transliteration = "intifada",
@@ -1505,8 +1393,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Палестинские восстания на территориях за «зелёной линией».",
             example = "הָאִינְתִיפָאדָה הַשְּׁנִיָּה פָּרְצָה בִּשְׁנַת אַלְפַּיִים.",
             exampleNative = "Вторая אִינְתִיפָאדָה вспыхнула в 2000 году.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161504L, 161505L, 161506L)),
 
         // ── founding_figures (4) ──
         WordEntity(
@@ -1517,8 +1404,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Первый премьер-министр, провозгласивший создание государства.",
             example = "דָּוִד בֶּן-גּוּרְיוֹן פָּרַשׁ לִשְׂדֵה בוֹקֵר.",
             exampleNative = "דָּוִד בֶּן-גּוּרְיוֹן удалился на покой в Сде-Бокер.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161509L, 161510L, 161511L, 161512L, 161513L, 161514L)),
         WordEntity(
             id = 161509, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_founders", transliteration = "golda meir",
@@ -1527,8 +1413,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Первая женщина-премьер-министр, лидер в период Войны Судного дня.",
             example = "גּוֹלְדָה מֵאִיר עָלְתָה מֵאוּקְרָאִינָה הַקְּטַנָּה.",
             exampleNative = "גּוֹלְדָה מֵאִיר репатриировалась из небольшого украинского местечка.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161508L, 161510L, 161511L, 161512L, 161513L, 161514L)),
         WordEntity(
             id = 161510, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_founders", transliteration = "herzl",
@@ -1537,8 +1422,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Визионер государства, основатель сионистского движения конца XIX века.",
             example = "תֵּאוֹדוֹר הֶרְצֶל כָּתַב אֶת «מְדִינַת הַיְּהוּדִים».",
             exampleNative = "תֵּאוֹדוֹר הֶרְצֶל написал книгу «Еврейское государство».",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161508L, 161509L, 161511L, 161512L, 161513L, 161514L)),
         WordEntity(
             id = 161511, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_founders", transliteration = "weizmann",
@@ -1547,8 +1431,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Первый президент страны и известный учёный-химик.",
             example = "חַיִּים וַיצְמָן הָיָה נָשִׂיא שֶׁל הַהִסְתַּדְּרוּת הַצִּיּוֹנִית.",
             exampleNative = "חַיִּים וַיצְמָן возглавлял Всемирную сионистскую организацию.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161508L, 161509L, 161510L, 161512L, 161513L, 161514L)),
 
         // ── pm_era (3) ──
         WordEntity(
@@ -1559,8 +1442,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Премьер-министр, подписавший соглашение Осло, убит в Тель-Авиве.",
             example = "רֶצַח יִצְחָק רָבִּין הֵכָה אֶת הָעָם כּוּלוֹ.",
             exampleNative = "Убийство יִצְחָק רָבִּין потрясло всю страну.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161508L, 161509L, 161510L, 161511L, 161513L, 161514L)),
         WordEntity(
             id = 161513, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_pm_era", transliteration = "menakhem begin",
@@ -1569,8 +1451,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Премьер-министр, подписавший мирный договор с Египтом.",
             example = "מְנַחֵם בֶּגִין קִבֵּל פְּרַס נוֹבֶל לְשָׁלוֹם.",
             exampleNative = "מְנַחֵם בֶּגִין получил Нобелевскую премию мира.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161508L, 161509L, 161510L, 161511L, 161512L, 161514L)),
         WordEntity(
             id = 161514, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_pm_era", transliteration = "shimon peres",
@@ -1579,8 +1460,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Президент и премьер, одна из ключевых фигур голубиного лагеря.",
             example = "שִׁמְעוֹן פֶּרֶס הוֹבִיל אֶת הֶסְכֵּם אוֹסְלוֹ.",
             exampleNative = "שִׁמְעוֹן פֶּרֶס продвигал соглашение Осло.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161508L, 161509L, 161510L, 161511L, 161512L, 161513L)),
 
         // ── conflict_terms (3) ──
         WordEntity(
@@ -1601,8 +1481,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Еврейский населённый пункт на территориях, занятых после 1967 года.",
             example = "הַהִתְנַחֲלוּת קְטַנָּה וְסָמוּךְ לַגְּבוּל.",
             exampleNative = "הִתְנַחֲלוּת небольшая, рядом с границей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161515L, 161517L)),
         WordEntity(
             id = 161517, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_conflict_terms", transliteration = "mishtakhim",
@@ -1633,8 +1512,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Документ о прекращении военного конфликта между государствами.",
             example = "חָתְמוּ הֶסְכֵּם שָׁלוֹם עִם יַרְדֵּן בִּשְׁנַת 1994.",
             exampleNative = "Был подписан הֶסְכֵּם שָׁלוֹם с Иорданией в 1994 году.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161518L)),
 
         // ── symbols_state (3) ──
         WordEntity(
@@ -1645,8 +1523,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Национальный символ с голубой звездой Давида на белом фоне.",
             example = "תָּלִינוּ דֶּגֶל יִשְׂרָאֵל בַּמִּרְפֶּסֶת בְּיוֹם עַצְמָאוּת.",
             exampleNative = "Мы повесили דֶּגֶל יִשְׂרָאֵל на балкон в День независимости.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161521L, 161522L)),
         WordEntity(
             id = 161521, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_state_symbols", transliteration = "hatikva",
@@ -1655,8 +1532,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Государственный гимн, основанный на стихотворении XIX века.",
             example = "עָמַדְנוּ דֹּם לְנוֹכַח הַתִּקְוָה.",
             exampleNative = "Мы встали во время הַתִּקְוָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161520L, 161522L)),
         WordEntity(
             id = 161522, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_state_symbols", transliteration = "menora",
@@ -1665,8 +1541,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Эмблема государства — семисвечник с оливковыми ветвями.",
             example = "מְנוֹרָה מוּצֶבֶת מוּל הַכְּנֶסֶת בְּכִכָּר.",
             exampleNative = "מְנוֹרָה установлена на площади напротив Кнессета.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161520L, 161521L)),
 
         // ── zionist_movements (3) ──
         WordEntity(
@@ -1677,8 +1552,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Ударные отряды еврейской самообороны до создания государства.",
             example = "סָבָא שֶׁלִּי שֵׁרֵת בַּפַּלְמָ״ח בַּגָּלִיל.",
             exampleNative = "Мой дед служил в פַּלְמָ״ח в Галилее.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161524L, 161525L)),
         WordEntity(
             id = 161524, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_zionist_mvt", transliteration = "etzel",
@@ -1687,8 +1561,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Подпольная ревизионистская организация во времена британского мандата.",
             example = "סִפְרֵי הַהִיסְטוֹרְיָה שׁוֹנִים לְגַבֵּי הָאֶצֶ״ל.",
             exampleNative = "Учебники истории по-разному оценивают אֶצֶ״ל.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161523L, 161525L)),
         WordEntity(
             id = 161525, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_zionist_mvt", transliteration = "aliya shniya",
@@ -1697,8 +1570,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Волна репатриации из России в начале XX века.",
             example = "בְּעֲלִיָּה שְׁנִיָּה קָמוּ הַקִּבּוּצִים הָרִאשׁוֹנִים.",
             exampleNative = "В עֲלִיָּה שְׁנִיָּה возникли первые киббуцы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161523L, 161524L)),
 
         // ════════════════════════════════════════════════════════════════════
         // Set 1616 — редкая культурная лексика (level 5, LEGENDARY)
@@ -1716,8 +1588,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Положение еврейской жизни вне исторической родины.",
             example = "שְׁנוֹת הַגָּלוּת עִצְּבוּ אֶת הַתַּרְבּוּת הַיְּהוּדִית.",
             exampleNative = "Годы גָּלוּת сформировали еврейскую культуру.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161602L, 161603L)),
         WordEntity(
             id = 161602, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_diaspora_terms", transliteration = "tfutzot",
@@ -1726,8 +1597,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Совокупность еврейских общин за пределами Израиля.",
             example = "הוּא פָּעִיל בְּאִרְגּוּנֵי הַתְּפוּצוֹת בְּאֵירוֹפָּה.",
             exampleNative = "Он активен в организациях תְּפוּצוֹת в Европе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161601L, 161603L)),
         WordEntity(
             id = 161603, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_diaspora_terms", transliteration = "shtetl",
@@ -1736,8 +1606,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Маленький еврейский городок в Восточной Европе до Холокоста.",
             example = "שְׁטֶעטְל הַקָּטָן נֶחְרַב בִּשְׁנַת 1942.",
             exampleNative = "Крошечный שְׁטֶעטְל был уничтожен в 1942 году.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161601L, 161602L, 161604L, 161613L)),
 
         // ── religious_study (4) ──
         WordEntity(
@@ -1748,8 +1617,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Высшее религиозное учебное заведение для мужчин.",
             example = "הַבֵּן לוֹמֵד בְּיְשִׁיבָה יוֹם שָׁלֵם.",
             exampleNative = "Сын целыми днями учится в יְשִׁיבָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161605L, 161606L, 161607L)),
         WordEntity(
             id = 161605, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_religious_study", transliteration = "talmud",
@@ -1758,8 +1626,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Корпус раввинских комментариев и дискуссий вокруг Мишны.",
             example = "הוּא מְעַיֵּן בַּתַּלְמוּד עִם חַבְרוּתָא.",
             exampleNative = "Он изучает תַּלְמוּד в паре с товарищем.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161604L, 161606L, 161607L)),
         WordEntity(
             id = 161606, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_religious_study", transliteration = "mishna",
@@ -1769,7 +1636,7 @@ object WordDataHebrewAliyaV2 {
             example = "הִתְחַלְתִּי לִלְמֹד מִשְׁנָה בַּשָּׁנָה הַשְּׁלִישִׁית.",
             exampleNative = "Я начал изучать מִשְׁנָה на третий год.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161604L, 161605L, 161607L, 161608L, 161609L, 161610L, 161618L, 161621L, 161622L)),
         WordEntity(
             id = 161607, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_religious_study", transliteration = "halakha",
@@ -1778,8 +1645,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Правовая часть еврейской традиции, система поведения.",
             example = "הָרַב פָּסַק לְפִי הַהֲלָכָה הַסְּפָרַדִּית.",
             exampleNative = "Раввин вынес решение по сефардской הֲלָכָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161604L, 161605L, 161606L)),
 
         // ── mystic_kabbala (3) ──
         WordEntity(
@@ -1800,8 +1666,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Мистический труд XIII века — комментарий к Торе.",
             example = "זֹהַר לֹא נִלְמַד לִפְנֵי גִּיל אַרְבָּעִים.",
             exampleNative = "По традиции זֹהַר не изучают до сорока лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161605L, 161608L, 161610L, 161617L, 161618L, 161619L)),
         WordEntity(
             id = 161610, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_mystic", transliteration = "sfirot",
@@ -1810,8 +1675,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Десять эманаций Божественного в каббалистической системе.",
             example = "עֶשֶׂר סְפִירוֹת מְצוּיָּרוֹת בַּאִילָן קַבָּלִי.",
             exampleNative = "Десять סְפִירוֹת изображены на каббалистическом древе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161608L, 161609L)),
 
         // ── haredi_life (3) ──
         WordEntity(
@@ -1822,8 +1686,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Хасидская меховая шапка, которую надевают на праздники и свадьбы.",
             example = "הֶחָתָן לָבַשׁ שְׁטְרַיְמֶל שֶׁל הַסַבָּא.",
             exampleNative = "Жених надел дедушкин שְׁטְרַיְמֶל.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161612L, 161613L)),
         WordEntity(
             id = 161612, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_haredi_life", transliteration = "avrekh",
@@ -1842,8 +1705,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Религиозное учреждение для женатых учащихся со стипендией.",
             example = "הוּא לוֹמֵד בְּכּוֹלֵל בִּבְנֵי בְּרַק.",
             exampleNative = "Он учится в כּוֹלֵל в Бней-Браке.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161611L, 161612L)),
 
         // ── messianic (3) ──
         WordEntity(
@@ -1864,8 +1726,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Грядущее освобождение народа и всего мира.",
             example = "הַתְּפִלָּה לְגְּאֻלָּה נֶאֱמֶרֶת בְּכָל יוֹם.",
             exampleNative = "Молитва о גְּאֻלָּה произносится ежедневно.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161614L, 161616L)),
         WordEntity(
             id = 161616, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_messianic", transliteration = "akharit hayamim",
@@ -1874,8 +1735,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Мессианская эпоха всеобщего мира и справедливости.",
             example = "הַנְּבִיאִים דִּבְּרוּ עַל אַחֲרִית הַיָּמִים.",
             exampleNative = "Пророки говорили об אַחֲרִית הַיָּמִים.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161601L, 161614L, 161615L, 161619L, 161623L)),
 
         // ── prayer_tradition (3) ──
         WordEntity(
@@ -1896,8 +1756,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Религиозные ивритские стихи для праздничных молитв.",
             example = "שָׁרוּ פִּיּוּט שֶׁל רַבִּי יְהוּדָה הַלֵּוִי.",
             exampleNative = "Пели פִּיּוּט раввина Йегуды Галеви.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161617L, 161619L)),
         WordEntity(
             id = 161619, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_prayer_tradition", transliteration = "tikkun olam",
@@ -1907,7 +1766,7 @@ object WordDataHebrewAliyaV2 {
             example = "הִיא מְדַבֶּרֶת עַל תִּקּוּן עוֹלָם בִּנְאוּמֶיהָ.",
             exampleNative = "Она говорит о תִּקּוּן עוֹלָם в своих речах.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161601L, 161602L, 161607L, 161608L, 161614L, 161615L, 161616L, 161617L, 161618L, 161623L, 161625L)),
 
         // ── prophetic_books (3) ──
         WordEntity(
@@ -1938,8 +1797,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Третий раздел Танаха: Псалмы, Иов и другие тексты.",
             example = "סֵפֶר תְּהִלִּים שַׁיָּךְ לַכְּתוּבִים.",
             exampleNative = "Псалтирь относится к כְּתוּבִים.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161620L, 161621L)),
 
         // ── temple_era (3) ──
         WordEntity(
@@ -1960,8 +1818,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Потомок Аарона, служивший в Храме по линии священства.",
             example = "הַכֹּהֵן עוֹלֶה לַתּוֹרָה רִאשׁוֹן.",
             exampleNative = "כֹּהֵן восходит к Торе первым.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161623L, 161625L)),
         WordEntity(
             id = 161625, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_temple_era", transliteration = "sanhedrin",
@@ -1970,7 +1827,6 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Высший раввинский суд из семидесяти одного мудреца.",
             example = "הַסַנְהֶדְרִין יָשַׁב בְּלִשְׁכַּת הַגָּזִית.",
             exampleNative = "סַנְהֶדְרִין заседал в Палате тёсаных камней.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(161623L, 161624L)),
     )
 }
