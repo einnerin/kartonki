@@ -524,36 +524,30 @@ private fun WordSetCard(
             .padding(horizontal = 16.dp, vertical = 10.dp),
     ) {
         Column {
-            // Title row: name + word count + favourite star
+            // Title row: description (fallback → name) + word count + favourite star
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically,
+                verticalAlignment = Alignment.Top,
             ) {
                 Text(
-                    text = item.name,
+                    text = item.description.ifBlank { item.name },
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     color = Color.White,
-                    modifier = Modifier.weight(1f),
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.weight(1f).padding(top = 4.dp),
                 )
                 Text(
                     text = "${item.introducedWords} / ${item.totalWords}",
                     style = MaterialTheme.typography.labelSmall,
                     color = TextSecondary,
                     fontWeight = FontWeight.Medium,
+                    modifier = Modifier.padding(top = 6.dp),
                 )
                 FavoriteStarButton(
                     isFavorite = item.isFavorite,
                     onClick = onToggleFavorite,
-                )
-            }
-            if (item.description.isNotEmpty()) {
-                Text(
-                    text = item.description,
-                    style = MaterialTheme.typography.bodySmall,
-                    color = TextSecondary,
-                    maxLines = 1,
-                    overflow = TextOverflow.Ellipsis,
                 )
             }
             Spacer(Modifier.height(6.dp))
