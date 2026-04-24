@@ -106,3 +106,9 @@ scripts/**/_*
 # General temp files
 *.tmp
 /tmp-*
+
+# FILL_IN_BLANK pipeline scratch files (prompts for subagents, their JSON outputs)
+# Lifecycle: generated → consumed by generate_fill_in_blank_exclusions.py → deleted.
+# Kept at repo root during the session because subagents' Read needs paths inside cwd.
+/.prompt_*.md
+/.out_*.json

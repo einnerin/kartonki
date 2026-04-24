@@ -1,6 +1,6 @@
 ---
 name: add-words
-description: Добавить новый тематический набор из 25 слов в Kartonki (en-ru или he-ru). Использовать всегда, когда пользователь просит создать новый сет, добавить слова по теме, пополнить базу слов, или сделать набор на определённую тему. Skill выполняет полный цикл: проверка дублей, написание ровно 25 слов с правильным распределением редкостей, регистрация в WordRegistry, поднятие версии, сборка, коммит и пуш.
+description: Добавить новый тематический набор из 25 слов в Kartonki (en-ru или he-ru). Использовать всегда, когда пользователь просит создать новый сет, добавить слова по теме, пополнить базу слов, или сделать набор на определённую тему. Skill выполняет полный цикл: проверка дублей, написание ровно 25 слов с правильным распределением редкостей, все 8 валидаторов, полировка, **FILL_IN_BLANK exclusions + flip safety flag (обязательно)**, регистрация в WordRegistry, поднятие версии, сборка, коммит и пуш.
 ---
 
 # Добавление набора слов в Kartonki
@@ -72,28 +72,38 @@ grep -A 100 "ALL_EXCLUSIVE" app/src/main/java/com/example/kartonki/data/Achievem
 
 ## 6. Написание набора
 
-### Именование набора (правило зафиксировано 2026-04-24)
+### Именование набора (финальное правило 2026-04-24)
 
-Формат имени: **`{тема}: {уровень} — {подтема}`**
+**`name = topic`.** Всегда, без исключений. Всю различающую информацию клади в `description`.
 
-- `{тема}` — topic из WordSetEntity (например, `"Алия и Израиль"`, `"Медицина"`)
-- `{уровень}` — словесное название: `основы` (level=1) / `продвинутый` (2) / `углублённый` (3) / `профессиональный` (4) / `носитель` (5)
-- `{подтема}` — 2-4 слова, что конкретно в этом наборе (например, `первые шаги`, `документы`, `у врача`)
+```kotlin
+WordSetEntity(
+    id = 1600,
+    name = "Медицина",                        // = topic
+    description = "Тело, боль и самочувствие", // различает этот сет от остальных «Медицина»
+    topic = "Медицина",
+    level = 1,
+    languagePair = "he-ru",
+    orderIndex = ...,
+)
+```
 
-**Хорошие примеры:**
-- ✅ `Медицина: основы — тело и симптомы`
-- ✅ `Медицина: основы — у врача`
-- ✅ `Медицина: продвинутый — купат холим и аптека`
-- ✅ `Алия и Израиль: углублённый — израильское общество`
+**Хорошие `description`:**
+- ✅ `"Тело, боль и самочувствие"` (для первого набора темы «Медицина»)
+- ✅ `"У врача: приём, жалобы, диагноз"`
+- ✅ `"Купат холим, аптека, лекарства"`
+- ✅ `"Документы: паспорт, теудат зеут, виза"` (для «Алия и Израиль»)
 
-**Плохие примеры (не делать):**
-- ❌ `Медицина: продвинутый 1`, `Медицина: продвинутый 2` — порядковые номера не объясняют содержимое
-- ❌ `Медицина: основы` (без подтемы) — если на уровень ≥2 наборов
-- ❌ `Медицина` (без уровня) — ломает валидатор `6b` в find_real_dupes (проверяет соответствие name/topic/level)
+**Плохие `description`:**
+- ❌ `"Медицина"` — повторяет topic, ничего не добавляет
+- ❌ `"Продвинутый уровень"` — не объясняет содержимое
+- ❌ `"Набор 1"` — порядковый номер
 
-**Why:** пользователь должен понимать содержимое набора **до** открытия. «Учил документы, хочу теперь первые месяцы» работает; «хочу продвинутый 3» — нет. См. `~/.claude/.../memory/feedback_set_naming_pattern.md`.
+**Критично:** в одной теме `description` всех сетов должны быть уникальными. `find_real_dupes.py` проверяет это по паре `(name, description, languagePair)`.
 
-Если 25 слов не распадаются на осмысленные подтемы — возможно набор собран плохо, пересобрать.
+**Why:** UI показывает topic в заголовке темы и description как заголовок карточки сета. Если name = topic, то description становится единственным различителем. Старый формат `{topic}: {level} — {subtopic}` отменён — создавал двойные двоеточия и дублирование информации в UI. См. `~/.claude/.../memory/feedback_set_naming_pattern.md`.
+
+Если 25 слов не распадаются на осмысленное описание — возможно набор собран плохо, пересобрать.
 
 ### Формат WordEntity
 
@@ -168,25 +178,50 @@ bash scripts/validate/validate_all.sh <newSetId>
 
 Только после **двух успешных валидаций подряд** (до и после полировщиков) — переходить к регистрации в WordRegistry и коммиту (шаги 8–11).
 
-### 7.5. FILL_IN_BLANK exclusions для нового набора
+### 7.5. FILL_IN_BLANK pipeline (ОБЯЗАТЕЛЬНО, не опционально)
 
-После полировщиков и перед коммитом — сгенерировать `fillInBlankExclusions` для всех 25 слов нового набора. Это защита от «ложных дистракторов» в квизе FILL_IN_BLANK (подробно — `docs/claude/fill-in-blank-pipeline.md`).
+После полировщиков и перед коммитом — прогнать полный FILL_IN_BLANK pipeline: exclusions + flip safety flag. Это защита квиза FILL_IN_BLANK от «ложных дистракторов»: когда подставляешь сосед из того же сета в пропуск — получается тоже корректное предложение, и игрок зря теряет очки. Детали: `docs/claude/fill-in-blank-pipeline.md`.
+
+Без этого шага **нельзя коммитить** — новый набор будет отображаться в UI с некорректными квизами. Тестовая установка покажет дефект, Play Store рецензент — тоже.
 
 ```bash
-# 1. Подготовить промпт для LLM subagent
-python scripts/validate/fill_in_blank_prompt.py --set-id <newSetId> > /tmp/prompt.md
-# 2. Скопировать содержимое в general-purpose subagent, получить JSON
-# 3. Прогнать через safety net (очистит Rule 1 нарушения, добавит пропущенных соседей same-semGroup)
-python scripts/validate/generate_fill_in_blank_exclusions.py \
+# 1. Генерация промпта (требует PYTHONIOENCODING=utf-8 на Windows из-за символа →)
+PYTHONIOENCODING=utf-8 python scripts/validate/fill_in_blank_prompt.py --set-id <newSetId> > /tmp/prompt.md
+
+# 2. Прогон general-purpose subagent на промпте
+# Subagent применяет 5 правил ко всем 24 соседям каждого из 25 слов,
+# возвращает JSON массив. Для иврита Rule 1 (артикли) неприменимо,
+# но Rule 3 (form_mismatch) критично — префиксы ה/ב/ל/מ ломают буквальное совпадение.
+# Промпт передаётся полностью в Agent call (content of .prompt_<id>.md),
+# subagent пишет ответ в .out_<id>.json через Write.
+
+# 3. Применить exclusions + поднять WordDataVersion автоматически
+PYTHONIOENCODING=utf-8 python scripts/validate/generate_fill_in_blank_exclusions.py \
     --set-id <newSetId> \
-    --llm-output /tmp/subagent_out.json \
+    --llm-output .out_<newSetId>.json \
     --apply
-# Скрипт сам внесёт Edit в WordData*.kt, добавив fillInBlankExclusions = listOf(...).
+
+# 4. Поставить isFillInBlankSafe = true на все безопасные слова сета
+#    (safety net пометит form_mismatch как false автоматически)
+PYTHONIOENCODING=utf-8 python scripts/validate/generate_fill_in_blank_exclusions.py \
+    --set-id <newSetId> \
+    --llm-output .out_<newSetId>.json \
+    --flip-safety-flag
 ```
 
-Для новых слов этот шаг **обязателен** — иначе квиз будет тянуть близких соседей как дистракторы, и игрок будет фрустрироваться.
+Выход — в каждом WordEntity нового набора появится `fillInBlankExclusions = listOf(...)`, а `isFillInBlankSafe` либо останется `true` (дефолт), либо станет `false` для слов с form_mismatch.
 
-### 7.5. Доп.диагностика (опционально)
+### 7.6. Финальная валидация (обязательно)
+
+После pipeline — повторить `validate_all.sh`:
+
+```bash
+bash scripts/validate/validate_all.sh <newSetId>
+```
+
+Теперь все 8 проверок (включая `validate_blank_ambiguity`) должны быть ✅ (или WARN — не блок).
+
+### 7.7. Доп.диагностика (опционально)
 
 Если нужна картина по всей базе:
 
@@ -194,7 +229,7 @@ python scripts/validate/generate_fill_in_blank_exclusions.py \
 bash scripts/validate/audit_all_files.sh
 ```
 
-Проходит по всем setId во всех файлах. Показывает, какие setId не проходят все 7 проверок (известный техдолг — см. `docs/claude/polishing_plan.md`).
+Проходит по всем setId во всех файлах. Показывает, какие setId не проходят все 8 проверок (известный техдолг — см. `docs/claude/polishing_plan.md`).
 
 ## 8. Регистрация в WordRegistry
 
@@ -220,8 +255,16 @@ JAVA_HOME="C:/Program Files/Android/Android Studio/jbr" ./gradlew assembleDebug
 
 ## 11. Коммит и пуш
 
+**Никогда не использовать `git add -A` или `git add .`** — может захватить untracked-мусор из параллельных сессий. Только явные пути:
+
 ```bash
-git add -A
+git add app/src/main/java/com/example/kartonki/data/WordData<нужныеФайлы>.kt \
+        app/src/main/java/com/example/kartonki/data/WordRegistry.kt \
+        app/src/main/java/com/example/kartonki/data/WordDataVersion.kt
+
+# Почистить временные файлы промпта/ответа (они в .gitignore, но для аккуратности)
+rm -f .prompt_<newSetId>.md .out_<newSetId>.json
+
 git commit -m "$(cat <<'EOF'
 Добавить набор слов «<тема>» (set <ID>): <язык>, уровень <уровень>
 
@@ -244,9 +287,14 @@ git push origin main
 - [ ] Нет слов из AchievementCards.ALL_EXCLUSIVE
 - [ ] Для английского — есть IPA у всех слов
 - [ ] Для иврита — есть transliteration у всех слов
+- [ ] `name = topic`, уникальное непустое `description`, не дублирующее description других сетов той же темы
+- [ ] `validate_all.sh <setId>` прошёл (шаг 7.1)
+- [ ] Полировщики прогнаны и повторный `validate_all.sh` тоже прошёл (шаги 7.2-7.3)
+- [ ] **FILL_IN_BLANK pipeline прогнан полностью** (шаг 7.5): `--apply` + `--flip-safety-flag`
 - [ ] Зарегистрирован в WordRegistry.allSets и allWords
-- [ ] WordDataVersion.CURRENT поднят
+- [ ] WordDataVersion.CURRENT поднят (pipeline сам поднимает, но проверить git diff)
 - [ ] BUILD SUCCESSFUL
+- [ ] `git add` по явным путям (не `-A`)
 - [ ] Коммит сделан и запушен
 
 ## Красные флаги — остановись и подумай
