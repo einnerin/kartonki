@@ -141,10 +141,9 @@ class ProblemWordsSessionViewModel @Inject constructor(
             // given the current pool and user settings. Mastery threshold is
             // capped at this size (so a 1-type word is mastered with 1 answer).
             val definitionMode = prefs.definitionQuizMode.first()
-            val fillBlankMode  = prefs.fillBlankQuizMode.first()
             val enabledTypes   = prefs.quizTypesEnabled.first()
             availableTypesByWord = words.associate { w ->
-                w.id to QuizBuilder.availableQuizTypesFor(w, words, definitionMode, fillBlankMode, enabledTypes)
+                w.id to QuizBuilder.availableQuizTypesFor(w, words, definitionMode, enabledTypes)
             }
 
             val steps = buildQuizStepsFromPrefs(

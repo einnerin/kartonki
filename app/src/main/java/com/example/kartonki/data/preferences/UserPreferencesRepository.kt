@@ -27,7 +27,6 @@ class UserPreferencesRepository @Inject constructor(
         const val FREE_PACK_COUNT          = "free_pack_count"
         const val PVP_MULTIPLIER_HINT_SEEN = "pvp_multiplier_hint_seen"
         const val DEFINITION_QUIZ_MODE     = "definition_quiz_mode"   // "foreign" | "native" | "both"
-        const val FILL_BLANK_QUIZ_MODE     = "fill_blank_quiz_mode"  // "foreign" | "native" | "both"
         const val QUIZ_TYPES_ENABLED       = "quiz_types_enabled"    // comma-separated keys
         const val PROBLEM_WORDS_SOURCE          = "problem_words_source"   // "both" | "pve_only" | "pvp_only"
         const val PROBLEM_WORDS_ENABLED         = "problem_words_enabled"  // Boolean
@@ -88,9 +87,6 @@ class UserPreferencesRepository @Inject constructor(
 
     val definitionQuizMode: Flow<String> = prefsFlow().map { it.getString(Keys.DEFINITION_QUIZ_MODE, "both") ?: "both" }
     fun setDefinitionQuizMode(mode: String) = prefs.edit().putString(Keys.DEFINITION_QUIZ_MODE, mode).apply()
-
-    val fillBlankQuizMode: Flow<String> = prefsFlow().map { it.getString(Keys.FILL_BLANK_QUIZ_MODE, "both") ?: "both" }
-    fun setFillBlankQuizMode(mode: String) = prefs.edit().putString(Keys.FILL_BLANK_QUIZ_MODE, mode).apply()
 
     val problemWordsSource: Flow<String> = prefsFlow().map { it.getString(Keys.PROBLEM_WORDS_SOURCE, "both") ?: "both" }
     fun setProblemWordsSource(source: String) = prefs.edit().putString(Keys.PROBLEM_WORDS_SOURCE, source).apply()

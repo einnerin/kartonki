@@ -396,15 +396,6 @@ fun SettingsScreen(
                     modifier = Modifier.clickable { viewModel.onShowDefinitionModePicker() },
                 )
             }
-            SettingsRow(label = s.settingsFillBlankMode) {
-                Text(
-                    s.quizModeLabels[state.fillBlankQuizMode] ?: state.fillBlankQuizMode,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.primary,
-                    fontWeight = FontWeight.Medium,
-                    modifier = Modifier.clickable { viewModel.onShowFillBlankModePicker() },
-                )
-            }
             SettingsRow(label = s.settingsQuizTypesLabel) {
                 Text(
                     s.settingsQuizTypesCount(state.enabledQuizTypes.size, s.quizTypeLabels.size),
@@ -464,14 +455,6 @@ fun SettingsScreen(
                     selectedMode = state.definitionQuizMode,
                     onSelect = { viewModel.onDefinitionModeSelected(it) },
                     onDismiss = viewModel::onDismissDefinitionModePicker,
-                )
-            }
-            if (state.showFillBlankModePicker) {
-                QuizModePickerDialog(
-                    title = s.settingsFillBlankMode,
-                    selectedMode = state.fillBlankQuizMode,
-                    onSelect = { viewModel.onFillBlankModeSelected(it) },
-                    onDismiss = viewModel::onDismissFillBlankModePicker,
                 )
             }
             if (state.showProblemWordsSourcePicker) {

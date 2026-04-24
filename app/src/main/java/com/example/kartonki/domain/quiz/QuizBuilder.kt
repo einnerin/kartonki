@@ -19,7 +19,6 @@ object QuizBuilder {
         words: List<Word>,
         distractorPool: List<Word> = emptyList(),
         definitionMode: String = "both",
-        fillBlankMode: String = "both",
         enabledTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
         excludedTypesByWord: Map<Long, Set<StudyQuizType>> = emptyMap(),
     ): List<StudyStep.Quiz> {
@@ -30,7 +29,7 @@ object QuizBuilder {
             val excluded = excludedTypesByWord[word.id] ?: emptySet()
             buildQuizStep(
                 word,
-                pickQuizType(word, words, definitionMode, fillBlankMode, enabledTypes, excluded),
+                pickQuizType(word, words, definitionMode, enabledTypes, excluded),
                 words,
                 fullPool,
             )
@@ -47,7 +46,6 @@ object QuizBuilder {
         word: Word,
         allWords: List<Word>,
         definitionMode: String = "both",
-        fillBlankMode: String = "both",
         enabledTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
     ): Set<StudyQuizType> {
         val available = mutableSetOf<StudyQuizType>()
@@ -88,11 +86,10 @@ object QuizBuilder {
         word: Word,
         allWords: List<Word>,
         definitionMode: String = "both",
-        fillBlankMode: String = "both",
         enabledTypes: Set<String> = setOf("translation", "definition", "fill_blank"),
         excludedTypes: Set<StudyQuizType> = emptySet(),
     ): StudyQuizType {
-        val available = availableQuizTypesFor(word, allWords, definitionMode, fillBlankMode, enabledTypes)
+        val available = availableQuizTypesFor(word, allWords, definitionMode, enabledTypes)
         // Filter out types the caller doesn't want (e.g. already-mastered types in
         // problem-word sessions). If that leaves nothing, fall back to the full
         // available set — caller's exclusion was aspirational, but a quiz must exist.

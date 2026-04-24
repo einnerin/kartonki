@@ -14,9 +14,8 @@ internal suspend fun buildQuizStepsFromPrefs(
     excludedTypesByWord: Map<Long, Set<StudyQuizType>> = emptyMap(),
 ): List<StudyStep.Quiz> {
     val definitionMode = prefs.definitionQuizMode.first()
-    val fillBlankMode  = prefs.fillBlankQuizMode.first()
     val enabledTypes   = prefs.quizTypesEnabled.first()
     return QuizBuilder.buildSteps(
-        words, distractorExtras, definitionMode, fillBlankMode, enabledTypes, excludedTypesByWord,
+        words, distractorExtras, definitionMode, enabledTypes, excludedTypesByWord,
     )
 }
