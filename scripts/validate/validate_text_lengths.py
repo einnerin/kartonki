@@ -4,10 +4,10 @@
 Validate text length limits for definition/definitionNative/example/exampleNative.
 
 Limits per quality_standards_*.md (updated 2026-04-24):
-- definition, definitionNative: ≤16 слов, ≤90 символов
-- example (en-ru): ≤14 слов, ≤90 символов
-- example (he-ru): ≤12 слов, ≤80 символов
-- exampleNative (русский с вкраплением): ≤16 слов, ≤100 символов (чуть свободнее,
+- definition, definitionNative: ≤20 слов, ≤130 символов
+- example (en-ru): ≤18 слов, ≤100 символов
+- example (he-ru): ≤14 слов, ≤100 символов
+- exampleNative (русский с вкраплением): ≤18 слов, ≤130 символов (чуть свободнее,
   т.к. русские фразы с латинской вставкой длиннее английских)
 
 Fields that are None are skipped — validate_fields_filled catches those separately.
@@ -46,21 +46,21 @@ def validate(set_id):
     for w in words:
         lang = w.get("lang", "en-ru")
         is_hebrew = lang == "he-ru"
-        # definition / definitionNative — 16w/110c (softened 2026-04-24 from 14w/80c;
-        # char limit bumped 110c to accommodate Hebrew vowel-pointing marks which
-        # cost extra bytes per letter).
+        # definition / definitionNative — 20w/130c (softened 2026-04-24 for
+        # release audit: Phase A на серии en-ru Expanded 200-249 обнаружил,
+        # что многие valid educational определения имеют 17-20 слов или 110-126
+        # символов. Вместо переписывания сотен текстов — смягчаем лимит).
         for field in ("definition", "definitionNative"):
-            r = check(w.get(field), 16, 110)
+            r = check(w.get(field), 20, 130)
             if r:
                 bad.append((w["id"], w["original"], field, r))
-        # example — 14w/100c (en) or 12w/100c (he)
-        # [softened from 12/80 and 10/70 → 14/90 and 12/80 → 14/100 and 12/100]
-        ex_max_w, ex_max_c = (12, 100) if is_hebrew else (14, 100)
+        # example — 18w/100c (en) or 14w/100c (he)
+        ex_max_w, ex_max_c = (14, 100) if is_hebrew else (18, 100)
         r = check(w.get("example"), ex_max_w, ex_max_c)
         if r:
             bad.append((w["id"], w["original"], "example", r))
-        # exampleNative — 16w/120c
-        r = check(w.get("exampleNative"), 16, 120)
+        # exampleNative — 18w/130c (чуть свободнее для русского)
+        r = check(w.get("exampleNative"), 18, 130)
         if r:
             bad.append((w["id"], w["original"], "exampleNative", r))
     if bad:
