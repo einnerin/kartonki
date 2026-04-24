@@ -50,7 +50,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Оставаться на месте, пока что-то не прибудет или не произойдёт.",
             example = "צָרִיךְ לַחֲכּוֹת עֶשֶׂר דַּקּוֹת לָאוֹטוֹבּוּס הַבָּא.",
             exampleNative = "Нужно לַחֲכּוֹת десять минут до следующего автобуса.",
-        ),
+         fillInBlankExclusions = listOf(114520L)),
         WordEntity(
             id = 114504, setId = 1145, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "ratsif",
@@ -59,7 +59,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Приподнятая площадка на вокзале, с которой садятся в поезд.",
             example = "הָרַכֶּבֶת לִירוּשָׁלַיִם יוֹצֵאת מֵרַצִּיף שֵׁשׁ.",
             exampleNative = "Поезд в Иерусалим отправляется с רַצִּיף шесть.",
-        ),
+         fillInBlankExclusions = listOf(114516L)),
         WordEntity(
             id = 114505, setId = 1145, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "pkak",
@@ -68,7 +68,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Затор на дороге, из-за которого машины стоят и не движутся.",
             example = "הָיָה פְּקַק אָדִיר בַּכְּנִיסָה לְתֵל-אָבִיב.",
             exampleNative = "При въезде в Тель-Авив был огромный פְּקַק.",
-        ),
+         fillInBlankExclusions = listOf(114506L)),
         WordEntity(
             id = 114506, setId = 1145, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "ikuv",
@@ -77,7 +77,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Опоздание прибытия куда-либо по какой-то причине.",
             example = "יֵשׁ עִכּוּב שֶׁל עֶשְׂרִים דַּקּוֹת בְּקַו עֶשֶׂר.",
             exampleNative = "На десятом маршруте עִכּוּב двадцать минут.",
-        ),
+         fillInBlankExclusions = listOf(114505L)),
         WordEntity(
             id = 114507, setId = 1145, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "maslul",
@@ -113,7 +113,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Такси, которое берёт нескольких пассажиров по фиксированному маршруту.",
             example = "נָסַעְתִּי מִתֵּל-אָבִיב לְחֵיפָה בְּמוֹנִית שֵׁרוּת.",
             exampleNative = "Я добрался от Тель-Авива до Хайфы на מוֹנִית שֵׁרוּת.",
-        ),
+         fillInBlankExclusions = listOf(114518L)),
         WordEntity(
             id = 114511, setId = 1145, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport", transliteration = "takhana merkazit",
@@ -140,7 +140,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Момент, когда транспортное средство прибывает на остановку.",
             example = "זְמַן הַהַגָּעָה הַמְּשׁוּעָר הוּא שָׁלוֹשׁ דַּקּוֹת.",
             exampleNative = "Ожидаемое время הַגָּעָה — три минуты.",
-        ),
+         fillInBlankExclusions = listOf(114506L)),
         WordEntity(
             id = 114514, setId = 1145, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "transport", transliteration = "lirkov",
@@ -289,7 +289,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Периодическая военная служба резервистов после окончания срочной службы.",
             example = "הוּא הֻזְמַן לְמִלּוּאִים לִשְׁלוֹשָׁה שָׁבוּעוֹת.",
             exampleNative = "Его призвали на מִלּוּאִים на три недели.",
-        ),
+         fillInBlankExclusions = listOf(114606L, 114609L)),
         WordEntity(
             id = 114605, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "patur",
@@ -298,7 +298,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Официальное разрешение, освобождающее человека от военной обязанности.",
             example = "הוּא קִיבֵּל פָּטוּר מֵהָצָבָא מִסִּיבּוֹת רְפוּאִיּוֹת.",
             exampleNative = "Он получил פָּטוּר от армии по медицинским причинам.",
-        ),
+         fillInBlankExclusions = listOf(114607L, 114609L)),
         WordEntity(
             id = 114606, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "imun",
@@ -361,7 +361,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Группа солдат, действующих вместе под единым командованием.",
             example = "הוּא שֵׁרֵת בְּיְחִידָה קְרָבִית עֶשְׂרִים וְשָׁלוֹשׁ.",
             exampleNative = "Он служил в боевой יְחִידָה двадцать три.",
-        ),
+         fillInBlankExclusions = listOf(114618L)),
         WordEntity(
             id = 114613, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "kesher",
@@ -415,7 +415,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Крупное воинское подразделение, состоящее из нескольких батальонов.",
             example = "הַחֲטִיבָה הָאַרְמוּרִית הִשְׁתַּתְּפָה בַּמִּבְצָע.",
             exampleNative = "Бронетанковая חֲטִיבָה участвовала в операции.",
-        ),
+         fillInBlankExclusions = listOf(114612L)),
         WordEntity(
             id = 114619, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "tsanan",
@@ -460,7 +460,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Движение воинских сил назад, чтобы избежать поражения.",
             example = "הַמַּפְקֵד הוֹרָה עַל נֶסִיגָה מְסוּדֶּרֶת.",
             exampleNative = "Командир приказал провести организованное נֶסִיגָה.",
-        ),
+         fillInBlankExclusions = listOf(114616L)),
         WordEntity(
             id = 114624, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "mashkif",
@@ -510,7 +510,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Раввинское одобрение, подтверждающее, что продукт соответствует законам кашрута.",
             example = "כָּל מוּצָר בַּחֲנוּת הַזּוֹ נוֹשֵׂא הֶכְשֵׁר מֻכָּר.",
             exampleNative = "Каждый продукт в этом магазине имеет признанный הֶכְשֵׁר.",
-        ),
+         fillInBlankExclusions = listOf(114719L)),
         WordEntity(
             id = 114704, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "kosher", transliteration = "trefa",
@@ -582,7 +582,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Нечто запрещённое по еврейскому религиозному закону.",
             example = "אִסּוּר אֲכִילַת חֲזִיר הוּא מִן הַתּוֹרָה.",
             exampleNative = "אִסּוּר есть свинину — это из Торы.",
-        ),
+         fillInBlankExclusions = listOf(114725L)),
         WordEntity(
             id = 114712, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kosher", transliteration = "dam",
@@ -591,7 +591,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Красная жидкость, текущая в теле живого существа; запрещена к употреблению по закону.",
             example = "הַמֶּלַח מֵסִיר אֶת הַדָּם מֵהַבָּשָׂר לִפְנֵי הַבִּישּׁוּל.",
             exampleNative = "Соль удаляет דָּם из мяса перед приготовлением.",
-        ),
+         fillInBlankExclusions = listOf(114713L)),
         WordEntity(
             id = 114713, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kosher", transliteration = "khelev",
@@ -600,7 +600,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Определённый вид жира скота, запрещённый к употреблению в пищу согласно Торе.",
             example = "הַחֵלֶב שֶׁל הַפָּרָה וְהַשֶּׂה אָסוּר בְּמָזוֹן כָּשֵׁר.",
             exampleNative = "חֵלֶב коровы и овцы запрещён в кошерной еде.",
-        ),
+         fillInBlankExclusions = listOf(114712L)),
         WordEntity(
             id = 114714, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kosher", transliteration = "ma'afiya",
@@ -645,7 +645,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Галахический принцип, по которому запрещённый компонент аннулируется при соотношении один к шестидесяти.",
             example = "בְּמִקְרֶה שֶׁל תַּעֲרוֹבֶת, שׁוֹאֲלִים רַב אִם יֵשׁ בִּיטוּל.",
             exampleNative = "В случае смешения спрашивают раввина, применимо ли בִּיטוּל.",
-        ),
+         fillInBlankExclusions = listOf(114703L, 114711L)),
         WordEntity(
             id = 114719, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kosher", transliteration = "badats",
@@ -654,7 +654,7 @@ object WordDataHebrewImmigrant6 {
             definitionNative = "Название раввинского суда, осуществляющего надзор за кашрутом по особо высоким стандартам.",
             example = "עַל הַבָּקָר כָּתוּב בַּד\"ץ — לְמַאֲמִינֵי הַחֲרֵדִים.",
             exampleNative = "На упаковке мяса написано בַּד\"ץ — для строго ортодоксальных.",
-        ),
+         fillInBlankExclusions = listOf(114703L, 114720L)),
         WordEntity(
             id = 114720, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "kosher", transliteration = "mehadrin",

@@ -42,7 +42,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Еврейская военно-подпольная организация, действовавшая в Палестине в период британского мандата.",
             example = "הָאִירְגּוּן בִּצַּע פְּעוּלּוֹת נֶגֶד הַבְּרִיטִים בְּשָׁנוֹת הָאַרְבָּעִים.",
             exampleNative = "Иргун проводил операции против британцев в сороковые годы.",
-        ),
+         fillInBlankExclusions = listOf(108214L)),
 
         WordEntity(
             id = 108202, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -52,7 +52,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Строительство еврейских поселений на территориях, занятых после войны 1967 года.",
             example = "מְדִינִיּוּת הַהִתְנַחֲלוּת הוֹסִיפָה מַתָּח לַמַּשָּׂא וּמַתָּן.",
             exampleNative = "Поселенческая политика добавила напряжённость в переговорный процесс.",
-        ),
+         fillInBlankExclusions = listOf(108219L, 108223L)),
 
         WordEntity(
             id = 108203, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -82,7 +82,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Право, которого требуют палестинские беженцы, на возвращение в свои дома.",
             example = "שְׁאֵלַת זְכוּת הַשְּׁבוּת נִשְׁאֶרֶת אַחַת מֵהַסּוּגְיוֹת הַמְּדִינִיּוֹת הַקָּשׁוֹת בְּיוֹתֵר.",
             exampleNative = "Вопрос о праве на возвращение остаётся одним из наиболее сложных политических вопросов.",
-        ),
+         fillInBlankExclusions = listOf(108202L, 108211L, 108219L, 108223L)),
 
         WordEntity(
             id = 108206, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -122,7 +122,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Принцип, по которому все граждане государства пользуются одинаковыми правами независимо от религии и национальности.",
             example = "מְגִלַּת הָעַצְמָאוּת מַבְטִיחָה שָׁוְיוֹן אֶזְרָחִי לְכָל תּוֹשְׁבֵי יִשְׂרָאֵל.",
             exampleNative = "Декларация независимости обещает гражданское равенство всем жителям Израиля.",
-        ),
+         fillInBlankExclusions = listOf(108219L)),
 
         WordEntity(
             id = 108210, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -142,7 +142,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Принцип сохранения государственных границ от раздела или отторжения.",
             example = "שְׁלֵמוּת הָאָרֶץ הִיא נוֹשֵׂא מוּנָח בְּמַחֲלֹקֶת בָּאִידֵיאוֹלוֹגְיָה הַיִּשְׂרְאֵלִית.",
             exampleNative = "Территориальная целостность является дискуссионным вопросом в израильской идеологии.",
-        ),
+         fillInBlankExclusions = listOf(108202L, 108219L, 108223L)),
 
         WordEntity(
             id = 108212, setId = 1082, languagePair = "he-ru", rarity = "RARE",
@@ -218,7 +218,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Право народа самостоятельно решать свою политическую судьбу.",
             example = "הַצְהָרַת הַמְּדִינָה נִסְמְכָה עַל הַזְּכוּת לְהַגְדָּרָה עַצְמִית.",
             exampleNative = "Провозглашение государства опиралось на право на самоопределение.",
-        ),
+         fillInBlankExclusions = listOf(108222L)),
         WordEntity(
             id = 108220, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "miutim",
@@ -245,7 +245,7 @@ object WordDataHebrewBatch20 {
             definitionNative = "Действие по освобождению территории, народа или личности от чужого господства.",
             example = "שִׁיחְרוּר יְרוּשָׁלַיִם בְּ-1967 נֶחְגַּג בְּיוֹם יְרוּשָׁלַיִם.",
             exampleNative = "Освобождение Иерусалима в 1967 году отмечается в День Иерусалима.",
-        ),
+         fillInBlankExclusions = listOf(108223L)),
         WordEntity(
             id = 108223, setId = 1082, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "israel_history", transliteration = "sipuakh",
