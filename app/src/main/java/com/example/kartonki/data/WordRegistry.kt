@@ -71,6 +71,7 @@ object WordRegistry {
                 WordDataEnglishHistory2.sets +
                 WordDataEnglishClothing2.sets +
                 WordDataEnglishSports2.sets +
+                WordDataEnglishSportsL4.sets +
                 WordDataEnglishTransport2.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
@@ -210,6 +211,7 @@ object WordRegistry {
                 WordDataEnglishHistory2.words +
                 WordDataEnglishClothing2.words +
                 WordDataEnglishSports2.words +
+                WordDataEnglishSportsL4.words +
                 WordDataEnglishTransport2.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
