@@ -64,7 +64,7 @@ object WordDataEnglishBatch14 {
             definitionNative = "Мощёная полоса вдоль дороги, по которой ходят пешеходы.",
             example = "Kids were drawing with chalk on the sidewalk in front of our house.",
             exampleNative = "Вчера на sidewalk у подъезда кто-то оставил велосипед.",
-            pos = "noun", semanticGroup = "city_ways"),
+            pos = "noun", semanticGroup = "city_crossings"),
         WordEntity(id = 28806, setId = 288, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "pedestrian", transliteration = "[pəˈdestriən]", translation = "пешеход",
             definition = "A person walking on the street, not driving or cycling.",

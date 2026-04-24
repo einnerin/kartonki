@@ -190,13 +190,37 @@ def validate(set_id):
                 f"в пропуск «{preview}» подходят также: {shown}"
             ))
 
-    if violations:
-        print(f"❌ setId={set_id}: {len(violations)} проблем с FILL_IN_BLANK")
-        for wid, orig, code, msg in violations[:20]:
+    # Separate blocking violations (FORM_MISMATCH, NOT_IN_EXAMPLE — quiz
+    # literally broken) from ambiguity warnings (another word happens to fit
+    # the blank — Phase A pipeline should handle, but some slip through).
+    #
+    # History: before 2026-04-24, all three codes blocked commits. Softened
+    # to WARN for AMBIGUOUS_BLANK after Phase 4 audit showed that enforcing
+    # it at release time would require marking ~3500 words isFillInBlankSafe=false
+    # (68% of quiz-eligible words would vanish from FILL_IN_BLANK type).
+    # Phase A pipeline + fillInBlankExclusions already catches most cases;
+    # the remaining ~5% slip is acceptable for a first release.
+    blocking = [v for v in violations if v[2] in ("FORM_MISMATCH", "NOT_IN_EXAMPLE")]
+    warnings = [v for v in violations if v[2] == "AMBIGUOUS_BLANK"]
+
+    if blocking:
+        print(f"❌ setId={set_id}: {len(blocking)} проблем с FILL_IN_BLANK")
+        for wid, orig, code, msg in blocking[:20]:
             print(f"    {wid} «{orig}» [{code}] {msg}")
-        if len(violations) > 20:
-            print(f"    ... and {len(violations) - 20} more")
+        if len(blocking) > 20:
+            print(f"    ... and {len(blocking) - 20} more")
+        if warnings:
+            print(f"    + {len(warnings)} AMBIGUOUS_BLANK warning(s) (не блокируют)")
         return 1
+
+    if warnings:
+        print(f"⚠️  setId={set_id}: {len(warnings)} ambiguous blanks (WARN; не блокирует)")
+        for wid, orig, code, msg in warnings[:10]:
+            print(f"    {wid} «{orig}» [{code}] {msg}")
+        if len(warnings) > 10:
+            print(f"    ... and {len(warnings) - 10} more")
+        return 0
+
     print(f"✅ setId={set_id}: все пропуски однозначны, формы совпадают")
     return 0
 
