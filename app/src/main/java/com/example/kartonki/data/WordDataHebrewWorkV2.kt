@@ -68,8 +68,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Человек, который лечит больных людей и назначает лекарства.",
             example = "הָרוֹפֵא בָּדַק אֶת הַיֶּלֶד הַחוֹלֶה.",
             exampleNative = "רוֹפֵא осмотрел больного ребёнка.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164002L, 164003L, 164004L, 164005L)),
         WordEntity(
             id = 164002, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "medicine_profession",
@@ -79,8 +78,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Медработница, которая помогает врачу и ухаживает за больными.",
             example = "הָאָחוֹת מָדְדָה לִי חוֹם.",
             exampleNative = "אָחוֹת измерила мне температуру.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164001L, 164003L, 164004L, 164005L, 164007L)),
         WordEntity(
             id = 164003, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "medicine_profession",
@@ -90,8 +88,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Специалист по лечению зубов и дёсен.",
             example = "הָלַכְתִּי אֶל רוֹפֵא שִׁינַּיִם לִבְדִיקָה.",
             exampleNative = "Я пошёл к רוֹפֵא שִׁינַּיִם на осмотр.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164001L, 164002L, 164004L, 164005L)),
         WordEntity(
             id = 164004, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "medicine_profession",
@@ -101,8 +98,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Специалист, лечащий домашних и диких животных.",
             example = "הַחָתוּל שֶׁלִּי הָיָה חוֹלֶה, לָקַחְתִּי אוֹתוֹ לְוֶטֶרִינָר.",
             exampleNative = "Мой кот заболел, я отвёз его к וֶטֶרִינָר.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164001L, 164002L, 164003L, 164005L)),
         WordEntity(
             id = 164005, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "medicine_profession",
@@ -135,8 +131,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Женщина, работающая с маленькими детьми в детском саду.",
             example = "הַגַּנֶּנֶת שָׁרָה עִם הַיְּלָדִים שִׁיר חָדָשׁ.",
             exampleNative = "גַּנֶּנֶת спела с детьми новую песенку.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164002L, 164006L, 164008L, 164009L, 164010L)),
         WordEntity(
             id = 164008, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "service_profession",
@@ -146,8 +141,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Человек, который возит пассажиров на такси за плату.",
             example = "קַבְּלָן מוֹנִית לָקַח אוֹתָנוּ מֵהַתַּחֲנָה לַמָּלוֹן.",
             exampleNative = "קַבְּלָן מוֹנִית довёз нас от станции до гостиницы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164006L, 164007L, 164009L, 164010L)),
         WordEntity(
             id = 164009, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "service_profession",
@@ -191,8 +185,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Человек, работа которого — тушить пожары и спасать людей.",
             example = "הַכַּבַּאי רָץ עִם הַצִּנּוֹר לְכִוּוּן הַבַּיִת.",
             exampleNative = "כַּבַּאי побежал со шлангом в сторону дома.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164011L, 164013L, 164014L, 164015L)),
         WordEntity(
             id = 164013, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "uniformed_profession",
@@ -202,8 +195,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Человек, служащий в армии и защищающий страну.",
             example = "הַחַיָּל חָזַר הַבַּיְתָה מֵהַבָּסִיס בְּיוֹם שִׁשִּׁי.",
             exampleNative = "חַיָּל вернулся домой с базы в пятницу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164011L, 164012L, 164014L, 164015L)),
         WordEntity(
             id = 164014, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "uniformed_profession",
@@ -280,8 +272,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Человек, выступающий в танце на сцене или в труппе.",
             example = "הָרַקְדָן הוֹפִיעַ עִם הַלַּהֲקָה בְּתֵל אָבִיב.",
             exampleNative = "רַקְדָן выступил с труппой в Тель-Авиве.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164016L, 164017L, 164018L, 164019L)),
 
         WordEntity(
             id = 164021, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
@@ -292,8 +283,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Человек, представляющий клиентов в суде и дающий юридический совет.",
             example = "עוֹרֵךְ דִּין הִסְבִּיר לִי אֶת הַחוֹזֶה.",
             exampleNative = "עוֹרֵךְ דִּין объяснил мне условия договора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164022L, 164023L, 164024L, 164025L)),
         WordEntity(
             id = 164022, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "office_profession",
@@ -336,8 +326,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Человек, чинящий и подключающий электропровода в доме или на заводе.",
             example = "הַחַשְׁמַלַּאי הִתְקִין לָנוּ מַנוֹרָה חֲדָשָׁה.",
             exampleNative = "חַשְׁמַלַּאי установил нам новую люстру.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164021L, 164022L, 164023L, 164024L)),
 
         // ─── Set 1641 — основы: рабочий день (level 1, COMMON) ────────────────
         // Subgroups: workplace · people · money · schedule · actions
@@ -350,8 +339,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Занятие, которое человек делает регулярно ради заработка.",
             example = "אֲנִי יוֹצֵא לָעֲבוֹדָה בְּשֶׁבַע בַּבֹּקֶר.",
             exampleNative = "Я выхожу на עֲבוֹדָה в семь утра.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164102L, 164103L, 164104L, 164105L)),
         WordEntity(
             id = 164102, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "workplace",
@@ -372,8 +360,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Большое производство, где изготавливают товары и машины.",
             example = "אַבָּא שֶׁלִּי עוֹבֵד בְּמִפְעָל עַל־יַד הָעִיר.",
             exampleNative = "Мой папа работает на מִפְעָל рядом с городом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164101L, 164102L, 164104L, 164105L)),
         WordEntity(
             id = 164104, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "workplace",
@@ -383,8 +370,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Комната в офисе, где сотрудники собираются обсудить рабочие вопросы.",
             example = "הַצֶּוֶת נִכְנַס לְחֶדֶר יְשִׁיבוֹת בְּשָׁלוֹשׁ.",
             exampleNative = "Команда зашла в חֶדֶר יְשִׁיבוֹת в три.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164101L, 164102L, 164103L, 164105L)),
         WordEntity(
             id = 164105, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "workplace",
@@ -417,8 +403,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Главный человек, который руководит вами и даёт задания.",
             example = "הַבּוֹס אָמַר שֶׁאֶצְטָרֵךְ לַעֲבֹד בְּסוֹף הַשָּׁבוּעַ.",
             exampleNative = "הַבּוֹס сказал, что мне придётся работать в выходные.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164106L, 164108L, 164109L, 164110L)),
         WordEntity(
             id = 164108, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "people_at_work",
@@ -495,8 +480,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Деньги, которые работодатель возвращает за поездки на работу.",
             example = "קִבַּלְתִּי מֵאָה שֶׁקֶל הוֹצָאוֹת נְסִיעָה הַחֹדֶשׁ.",
             exampleNative = "Я получил сто шекелей הוֹצָאוֹת נְסִיעָה в этом месяце.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164111L, 164112L, 164113L, 164115L)),
         WordEntity(
             id = 164115, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "money_compensation",
@@ -506,8 +490,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Ежегодная надбавка, которую некоторые работодатели дают раз в год.",
             example = "הַחֶבְרָה מַבְטִיחָה מַשְׂכֹּרֶת חֹדֶשׁ שְׁלֹשָׁה עָשָׂר בַּסּוֹף הַשָּׁנָה.",
             exampleNative = "Компания обещает מַשְׂכֹּרֶת חֹדֶשׁ שְׁלֹשָׁה עָשָׂר в конце года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164111L, 164112L, 164113L, 164114L)),
 
         WordEntity(
             id = 164116, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
@@ -518,8 +501,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Определённый отрезок времени, когда сотрудник находится на работе.",
             example = "יֵשׁ לִי הַיּוֹם מִשְׁמֶרֶת אֲרֻכָּה עַד חֲצוֹת.",
             exampleNative = "Сегодня у меня долгая מִשְׁמֶרֶת до полуночи.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164101L, 164117L, 164118L, 164119L, 164120L)),
         WordEntity(
             id = 164117, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "schedule",
@@ -529,8 +511,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Таблица, где записано, когда каждому работнику приходить и уходить.",
             example = "תָּלוּ לוּחַ זְמַנִּים חָדָשׁ עַל הַקִּיר בַּמִּטְבָּח.",
             exampleNative = "На кухне повесили новый לוּחַ זְמַנִּים на стене.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164116L, 164118L, 164119L, 164120L)),
         WordEntity(
             id = 164118, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "schedule",
@@ -540,8 +521,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Время в середине дня, когда едят между утром и вечером.",
             example = "הָלַכְנוּ לַאֲרוּחַת צָהֳרַיִם בַּשָּׁעָה אַחַת.",
             exampleNative = "Мы пошли на אֲרוּחַת צָהֳרַיִם в час дня.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164116L, 164117L, 164119L, 164120L)),
         WordEntity(
             id = 164119, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "schedule",
@@ -551,8 +531,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Короткий перерыв на работе, чтобы выпить кофе и отвлечься.",
             example = "הָיְתָה לָנוּ הַפְסָקַת קָפֶה בַּת עֶשֶׂר דַּקּוֹת.",
             exampleNative = "У нас был הַפְסָקַת קָפֶה длиной в десять минут.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164116L, 164117L, 164118L, 164120L)),
         WordEntity(
             id = 164120, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "schedule",
@@ -574,8 +553,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Приходить куда-либо позже назначенного времени.",
             example = "אֲנִי לֹא אוֹהֵב לְאַחֵר לִפְגִישׁוֹת.",
             exampleNative = "Я не люблю לְאַחֵר на встречи.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164122L, 164123L, 164124L, 164125L)),
         WordEntity(
             id = 164122, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "work_actions",
@@ -585,8 +563,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Чувствовать слабость в конце долгого и тяжёлого рабочего дня.",
             example = "אֲנִי לְהֵעַיֵף מֵהַמִּשְׁמֶרֶת הָאֲרֻכָּה הַיּוֹם.",
             exampleNative = "Я успеваю לְהֵעַיֵף от долгой сегодняшней смены.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164121L, 164123L, 164124L, 164125L)),
         WordEntity(
             id = 164123, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "work_actions",
@@ -596,8 +573,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Фиксировать в системе время своего прихода на работу.",
             example = "שָׁכַחְתִּי לַחְתֹּם כְּנִיסָה בַּבֹּקֶר.",
             exampleNative = "Я забыл לַחְתֹּם כְּנִיסָה утром.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164121L, 164122L, 164124L, 164125L)),
         WordEntity(
             id = 164124, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "work_actions",
@@ -607,8 +583,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Делать рабочие задачи из дома через интернет, не приезжая в офис.",
             example = "בְּיוֹם שֵׁנִי אֲנִי יָכוֹל לַעֲבֹד מֵרָחוֹק.",
             exampleNative = "По понедельникам я могу לַעֲבֹד מֵרָחוֹק.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164121L, 164122L, 164123L, 164125L)),
         WordEntity(
             id = 164125, setId = 1641, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "work_actions",
@@ -618,8 +593,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Передавать сведения или файлы другому сотруднику через электронную почту.",
             example = "אֲנִי צָרִיךְ לִשְׁלוֹחַ מֵייל לַמְּנַהֵל עַכְשָׁיו.",
             exampleNative = "Мне нужно לִשְׁלוֹחַ מֵייל начальнику прямо сейчас.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164121L, 164122L, 164123L, 164124L)),
 
         // ─── Set 1642 — продвинутый: поиск работы (level 2, UNCOMMON) ─────────
         // Subgroups: documents · process · assessment · offer · career_support
@@ -632,8 +606,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Документ, кратко описывающий ваше образование и профессиональный опыт.",
             example = "שָׁלַחְתִּי קוֹרוֹת חַיִּים לְחָמֵשׁ מִשְׂרוֹת בַּשָּׁבוּעַ שֶׁעָבַר.",
             exampleNative = "На прошлой неделе я разослал קוֹרוֹת חַיִּים на пять вакансий.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164202L, 164203L, 164204L)),
         WordEntity(
             id = 164202, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_documents",
@@ -643,8 +616,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Короткое письмо работодателю с объяснением, почему вы подходите.",
             example = "כָּתַבְתִּי מִכְתַּב כִּסּוּי מוּתָם לְכָל חֶבְרָה בִּנְפְרָד.",
             exampleNative = "Я написал под каждую компанию отдельное מִכְתַּב כִּסּוּי.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164201L, 164203L, 164204L)),
         WordEntity(
             id = 164203, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_documents",
@@ -654,8 +626,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Подборка образцов ваших работ, чтобы показать работодателю.",
             example = "הַמְּעַצֵּב הֶרְאָה תִּיק עֲבוֹדוֹת מְרַשֵּׁם מִסְּטוּדְיוֹ.",
             exampleNative = "Дизайнер показал впечатляющее תִּיק עֲבוֹדוֹת из студии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164201L, 164202L, 164204L, 164210L, 164213L)),
         WordEntity(
             id = 164204, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_documents",
@@ -665,8 +636,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Бланк с личными данными, который заполняют перед собеседованием.",
             example = "מִלַּאתִי אֶת טֹפֶס מוּעֲמָדוּת אוֹנְלַיְן תּוֹךְ עֲשָׂרָה דַּקּוֹת.",
             exampleNative = "Я заполнил טֹפֶס מוּעֲמָדוּת онлайн за десять минут.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164201L, 164202L, 164203L)),
 
         WordEntity(
             id = 164205, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -677,8 +647,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Объявление, где работодатель ищет новых сотрудников на позицию.",
             example = "רָאִיתִי מוֹדָעַת דְּרוּשִׁים מְעַנְיֶנֶת בַּלוּחַ שֶׁל הַחֶבְרָה.",
             exampleNative = "Я увидел интересную מוֹדָעַת דְּרוּשִׁים на доске компании.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164206L, 164207L, 164208L, 164209L)),
         WordEntity(
             id = 164206, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_process",
@@ -688,8 +657,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Человек, подавший заявку на должность и ожидающий решения.",
             example = "מוּעֲמָד טוֹב הִגִּיעַ לַשָּׁלָב הָאַחֲרוֹן שֶׁל הַמִּיּוּן.",
             exampleNative = "Сильный מוּעֲמָד дошёл до финального этапа отбора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164205L, 164207L, 164208L, 164209L)),
         WordEntity(
             id = 164207, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_process",
@@ -699,8 +667,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Разговор по телефону между работодателем и кандидатом без личной встречи.",
             example = "רֵאָיוֹן עֲבוֹדָה טֵלֵפוֹנִי נִקְבַּע לַשָּׁעָה עֶשֶׂר.",
             exampleNative = "רֵאָיוֹן עֲבוֹדָה טֵלֵפוֹנִי назначили на десять утра.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164205L, 164206L, 164208L, 164209L, 164217L)),
         WordEntity(
             id = 164208, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_process",
@@ -710,8 +677,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Один день, когда кандидат работает в компании ради оценки совместимости.",
             example = "יוֹם נִיסָּיוֹן עָבַר הַיּוֹם בְּהַצְלָחָה בַּמִּסְעָדָה.",
             exampleNative = "יוֹם נִיסָּיוֹן в ресторане прошёл сегодня успешно.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164205L, 164206L, 164207L, 164209L, 164217L)),
         WordEntity(
             id = 164209, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_process",
@@ -721,8 +687,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Короткая беседа для знакомства сторон перед формальным процессом.",
             example = "שִׂיחַת הַכָּרוּת קְצָרָה נִמְשְׁכָה רֶבַע שָׁעָה.",
             exampleNative = "שִׂיחַת הַכָּרוּת продолжалась четверть часа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164205L, 164206L, 164207L, 164208L)),
 
         WordEntity(
             id = 164210, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -733,8 +698,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Годы, которые человек работал на прежних должностях в своей сфере.",
             example = "הַחֶבְרָה דּוֹרֶשֶׁת נִסָּיוֹן תַּעֲסוּקָתִי שֶׁל חָמֵשׁ שָׁנִים.",
             exampleNative = "Компания требует נִסָּיוֹן תַּעֲסוּקָתִי от пяти лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164211L, 164212L, 164213L, 164214L)),
         WordEntity(
             id = 164211, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "candidate_assessment",
@@ -744,8 +708,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Набор умений, которые работник делает хорошо на работе.",
             example = "הַיְכוֹלוֹת שֶׁל הַמּוּעֲמָד מַרְשִׁימוֹת מְאֹד.",
             exampleNative = "יְכוֹלוֹת кандидата впечатляют очень сильно.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164210L, 164212L, 164213L, 164214L)),
         WordEntity(
             id = 164212, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "candidate_assessment",
@@ -755,8 +718,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Официальное подтверждение, что человек соответствует требованиям профессии.",
             example = "הַסְמָכָה מִקְצוֹעִית עוֹזֶרֶת לְקַבֵּל שָׂכָר גָּבוֹהַּ יוֹתֵר.",
             exampleNative = "הַסְמָכָה מִקְצוֹעִית помогает получить более высокую зарплату.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164210L, 164211L, 164213L, 164214L, 164223L, 164225L)),
         WordEntity(
             id = 164213, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "candidate_assessment",
@@ -766,8 +728,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Учёба, которую человек закончил, включая степень или курсы.",
             example = "רֶקַע הַשְׂכָּלָתִי חָזָק בְּהַנְדָּסָה הוּא יִתְרוֹן גָּדוֹל.",
             exampleNative = "Сильный רֶקַע הַשְׂכָּלָתִי в инженерии — большое преимущество.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164210L, 164211L, 164212L, 164214L)),
         WordEntity(
             id = 164214, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "candidate_assessment",
@@ -777,8 +738,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Короткий тест, отсеивающий кандидатов перед личным интервью.",
             example = "בַּמִבְחַן סִנּוּן הָיוּ חֲמִשִּׁים שְׁאֵלוֹת בְּחֶשְׁבּוֹן.",
             exampleNative = "В מִבְחַן סִנּוּן было пятьдесят вопросов по арифметике.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164210L, 164211L, 164212L, 164213L)),
 
         WordEntity(
             id = 164215, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -789,8 +749,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Минимальные требования, которым кандидат обязан соответствовать.",
             example = "תְּנַאי סַף כּוֹלְלִים תֹּאַר רִאשׁוֹן וּשְׁנָתַיִם נִיסָּיוֹן.",
             exampleNative = "תְּנַאי סַף включают бакалавра и два года опыта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164216L, 164217L, 164218L, 164219L)),
         WordEntity(
             id = 164216, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "offer_and_negotiation",
@@ -800,8 +759,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Официальное письмо компании с чётко прописанными условиями работы.",
             example = "הַצָּעָה כְּתוּבָה הִגִּיעָה לִי בִּדְבַר־הַיּוֹם.",
             exampleNative = "הַצָּעָה כְּתוּבָה пришла мне этой почтой.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164205L, 164209L, 164215L, 164217L, 164218L, 164219L)),
         WordEntity(
             id = 164217, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "offer_and_negotiation",
@@ -811,8 +769,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Беседа компании и кандидата о согласовании размера оплаты.",
             example = "מַשָּׂא וּמַתָּן עַל שָׂכָר נִמְשַׁךְ שְׁלוֹשָׁה יָמִים.",
             exampleNative = "מַשָּׂא וּמַתָּן עַל שָׂכָר длились три дня.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164207L, 164215L, 164216L, 164218L, 164219L)),
         WordEntity(
             id = 164218, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "offer_and_negotiation",
@@ -822,8 +779,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Временное оформление, условное до достижения поставленной цели.",
             example = "קִבְּלוּ אוֹתִי תַּחַת עֲרָבוּת לִשְׁלוֹשָׁה חֳדָשִׁים.",
             exampleNative = "Меня взяли תַּחַת עֲרָבוּת на три месяца.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164215L, 164216L, 164217L, 164219L)),
         WordEntity(
             id = 164219, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "offer_and_negotiation",
@@ -833,8 +789,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Сообщение компании кандидату, что он не принят, с указанием причины.",
             example = "קִבַּלְתִּי סִירוּב מְנֻמָּק מַנְצִיחַ עִם עֵצָה לְפַעַם הַבָּאָה.",
             exampleNative = "Я получил סִירוּב מְנֻמָּק с советом на будущее.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164215L, 164216L, 164217L, 164218L)),
 
         WordEntity(
             id = 164220, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -856,8 +811,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Специалист, ищущий топ-сотрудников для компаний-заказчиков.",
             example = "צַיֵּיד רָאשִׁים פָּנָה אֵלַי דֶּרֶךְ הָרֶשֶׁת.",
             exampleNative = "צַיֵּיד רָאשִׁים написал мне через соцсеть.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164220L, 164222L, 164223L, 164224L, 164225L)),
         WordEntity(
             id = 164222, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "career_support",
@@ -889,8 +843,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Событие, где много компаний показывают вакансии перед ищущими работу.",
             example = "יְרִיד תַּעֲסוּקָה אֲרוּךְ נֶעֱרַךְ בָּעִיר רָעָה.",
             exampleNative = "יְרִיד תַּעֲסוּקָה проводится сегодня в городе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164208L, 164217L, 164220L, 164221L, 164222L, 164223L, 164225L)),
         WordEntity(
             id = 164225, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "career_support",
@@ -900,8 +853,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Группа знакомых людей, взаимно помогающих находить должности.",
             example = "רֶשֶׁת קְשָׁרִים חֲזָקָה פָּתְחָה לִי דֶּלֶת חֲדָשָׁה.",
             exampleNative = "Сильная רֶשֶׁת קְשָׁרִים открыла мне новую дверь.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164212L, 164220L, 164221L, 164222L, 164223L, 164224L)),
 
         // ─── Set 1643 — продвинутый: договор и права (level 2, UNCOMMON) ──────
         // Subgroups: contract · leave · termination · unions · inspection
@@ -914,8 +866,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Соглашение одного работника с работодателем с подогнанными условиями.",
             example = "חוֹזֶה אִישִׁי נֶחְתַּם בֵּינִי לְבֵין הַחֶבְרָה.",
             exampleNative = "חוֹזֶה אִישִׁי подписан между мной и компанией.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164302L, 164303L, 164304L, 164305L)),
         WordEntity(
             id = 164302, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "contract_terms",
@@ -925,8 +876,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Короткий отрывок документа, описывающий один пункт договорённости.",
             example = "סָעִיף חוֹזֶה חָשׁוּב מְדַבֵּר עַל שָׁעוֹת נוֹסָפוֹת.",
             exampleNative = "Важный סָעִיף חוֹזֶה говорит о сверхурочных.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164301L, 164303L, 164304L, 164305L)),
         WordEntity(
             id = 164303, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "contract_terms",
@@ -936,8 +886,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Обязательство в договоре не разглашать внутренние сведения компании.",
             example = "סַעִיף סוֹדִיּוּת מוֹנֵעַ מִמֶּנִּי לְסַפֵּר עַל הַפְּרוֹיֶקְט.",
             exampleNative = "סַעִיף סוֹדִיּוּת не позволяет мне рассказывать о проекте.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164301L, 164302L, 164304L, 164305L)),
         WordEntity(
             id = 164304, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "contract_terms",
@@ -958,8 +907,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Официальное действие фиксации соглашения в письменном виде.",
             example = "חֲתִימָה עַל חוֹזֶה תִּתְקַיֵּם בַּמִּשְׂרָד שֶׁל עוֹרֵךְ הַדִּין.",
             exampleNative = "חֲתִימָה עַל חוֹזֶה пройдёт в кабинете юриста.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164301L, 164302L, 164303L, 164304L)),
 
         WordEntity(
             id = 164306, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -970,8 +918,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Дни в году, когда работник не приходит на работу и получает оплату.",
             example = "יָצָאתִי לְחֹפֶשׁ שְׁנָתִי בֶּן עֲשָׂרָה יָמִים בְּיוּנִי.",
             exampleNative = "Я ушёл в חֹפֶשׁ שְׁנָתִי на десять дней в июне.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164307L, 164308L, 164309L, 164310L)),
         WordEntity(
             id = 164307, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "paid_leave",
@@ -981,8 +928,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Дни, когда работник не приходит из-за болезни и получает оплату.",
             example = "נִשְׁאַרְתִּי בַּבַּיִת שְׁלוֹשָׁה יְמֵי מַחֲלָה בִּגְלַל שַׁפַּעַת.",
             exampleNative = "Я остался дома на три יְמֵי מַחֲלָה из-за гриппа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164306L, 164308L, 164309L, 164310L)),
         WordEntity(
             id = 164308, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "paid_leave",
@@ -992,8 +938,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Дни для отца, чтобы побыть с новорождённым после родов.",
             example = "הוֹא יָצָא לְחוּפְשַׁת אַבְהוּת שֶׁל שָׁבוּעַ.",
             exampleNative = "Он ушёл в חוּפְשַׁת אַבְהוּת на неделю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164306L, 164307L, 164309L, 164310L)),
         WordEntity(
             id = 164309, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "paid_leave",
@@ -1003,8 +948,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Особые дни, которые работник выбирает сам, например под день рождения.",
             example = "לָקַחְתִּי יְמֵי בְּחִירָה לְטוֹבַת יוֹם הַהוּלֶדֶת.",
             exampleNative = "Я взял יְמֵי בְּחִירָה ради дня рождения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164306L, 164307L, 164308L, 164310L)),
         WordEntity(
             id = 164310, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "paid_leave",
@@ -1014,8 +958,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Выходной, который работник получает после смерти близкого.",
             example = "יוֹם אֶבֶל נִיתַּן לִי בִּגְלַל פְּטִירַת סָבָא.",
             exampleNative = "Мне предоставили יוֹם אֶבֶל из-за смерти дедушки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164306L, 164307L, 164308L, 164309L)),
 
         WordEntity(
             id = 164311, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -1026,8 +969,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Официальный документ от работодателя о прекращении отношений.",
             example = "קִבַּלְתִּי כְּתַב פִּטּוּרִים בְּסוֹף הָרֶבַע.",
             exampleNative = "Я получил כְּתַב פִּטּוּרִים в конце квартала.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164312L, 164313L, 164314L, 164315L, 164321L, 164322L)),
         WordEntity(
             id = 164312, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "termination",
@@ -1037,8 +979,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Срок предупреждения работодателя до ухода с должности.",
             example = "שְׁנֵי חֳדָשַׁי הוֹדָעָה מְקֻבָּלִים בַּתַּפְקִיד שֶׁלִּי.",
             exampleNative = "В моей должности приняты два חֳדָשַׁי הוֹדָעָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164311L, 164313L, 164314L, 164315L)),
         WordEntity(
             id = 164313, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "termination",
@@ -1048,8 +989,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Все итоговые выплаты, которые сотрудник получает при окончании работы.",
             example = "גִּמּוּרִים סוֹפִיִּים הוּעֲבְרוּ לְחֶשְׁבּוֹן הַבַּנְק בַּשָּׁבוּעַ.",
             exampleNative = "גִּמּוּרִים סוֹפִיִּים перевели мне на счёт на неделе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164311L, 164312L, 164314L, 164315L)),
         WordEntity(
             id = 164314, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "termination",
@@ -1059,8 +999,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Ежемесячная выплата от государства тому, кто потерял работу.",
             example = "דְּמֵי אַבְטָלָה עוֹזְרִים לִתְקוּפַת חִפּוּשׁ חֲדָשָׁה.",
             exampleNative = "דְּמֵי אַבְטָלָה помогают в период нового поиска.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164311L, 164312L, 164313L, 164315L)),
         WordEntity(
             id = 164315, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "termination",
@@ -1070,8 +1009,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Письмо, которое подаёт сам работник, уходящий по своему желанию.",
             example = "הִגַּשְׁתִּי כְּתַב פְּרִישָׁה בְּהַתְחָלַת הַחֹדֶשׁ.",
             exampleNative = "Я подал כְּתַב פְּרִישָׁה в начале месяца.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164311L, 164312L, 164313L, 164314L, 164321L, 164323L)),
 
         WordEntity(
             id = 164316, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -1082,8 +1020,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Организация, защищающая права работников в пределах одной отрасли.",
             example = "אִגּוּד מִקְצוֹעִי עוֹזֵר לַעוֹבְדִים בְּמַשָּׂא וּמַתָּן.",
             exampleNative = "אִגּוּד מִקְצוֹעִי помогает сотрудникам в переговорах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164317L, 164318L, 164319L)),
         WordEntity(
             id = 164317, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "union_and_protection",
@@ -1093,8 +1030,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Сотрудник, выбранный говорить за коллег перед руководством.",
             example = "נָצִיג עוֹבְדִים הֶעֱלָה טַעֲנָה עַל שָׁעוֹת נוֹסָפוֹת.",
             exampleNative = "נָצִיג עוֹבְדִים поднял вопрос о переработках.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164316L, 164318L, 164319L, 164320L)),
         WordEntity(
             id = 164318, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "union_and_protection",
@@ -1104,8 +1040,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Публичное собрание работников для выражения недовольства.",
             example = "עַצֶּרֶת מְחָאָה גְּדוֹלָה נֶעֶרְכָה מוּל בִּנְיַן הַמִּשְׂרָד.",
             exampleNative = "עַצֶּרֶת מְחָאָה прошла у здания офиса.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164316L, 164317L, 164319L)),
         WordEntity(
             id = 164319, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "union_and_protection",
@@ -1127,8 +1062,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Гос.чиновник, проверяющий, соблюдает ли работодатель трудовой закон.",
             example = "מְפַקֵּחַ עֲבוֹדָה הִגִּיעַ לִבְדִיקָה פִּתְאוֹמִית בַּמִּפְעָל.",
             exampleNative = "מְפַקֵּחַ עֲבוֹדָה пришёл на внезапную проверку.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164317L, 164321L, 164322L, 164323L, 164324L, 164325L)),
         WordEntity(
             id = 164321, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "labor_inspection",
@@ -1138,8 +1072,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Документ инспектора со списком выявленных нарушений.",
             example = "דּוּחַ לִיקּוּיִים נִמְסַר לַהֲנָהָלָה לְטִפּוּל מִיָּדִי.",
             exampleNative = "דּוּחַ לִיקּוּיִים передали руководству для немедленной реакции.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164311L, 164315L, 164320L, 164322L, 164323L, 164324L, 164325L)),
         WordEntity(
             id = 164322, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "labor_inspection",
@@ -1149,8 +1082,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Денежное наказание компании, нарушившей трудовое правило.",
             example = "קְנָס מִנְהָלִי כָּבֵד הֻטַּל עַל הַקַּבְּלָן.",
             exampleNative = "На подрядчика наложили крупный קְנָס מִנְהָלִי.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164320L, 164321L, 164323L, 164324L, 164325L)),
         WordEntity(
             id = 164323, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "labor_inspection",
@@ -1160,8 +1092,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Формальное обращение работника о нарушении его прав.",
             example = "תְּלוּנָה מִשּׁוּלַחַת נִפְתְּחָה מוּל הַמְּפַקֵּחַ.",
             exampleNative = "תְּלוּנָה מִשּׁוּלַחַת открыта у инспектора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164319L, 164320L, 164321L, 164322L, 164324L, 164325L)),
         WordEntity(
             id = 164324, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "labor_inspection",
@@ -1171,8 +1102,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Регулярный визит, выполняемый в любой компании раз в несколько лет.",
             example = "בְּדִיקָה שִׁגְרָתִית עָבְרָה הַיּוֹם בְּלִי לִיקּוּיִים.",
             exampleNative = "בְּדִיקָה שִׁגְרָתִית прошла сегодня без замечаний.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164318L, 164320L, 164321L, 164322L, 164323L, 164325L)),
         WordEntity(
             id = 164325, setId = 1643, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "labor_inspection",
@@ -1197,7 +1127,7 @@ object WordDataHebrewWorkV2 {
             example = "הַעֲלָאָה בְּדַרְגָּה אוּשְּׁרָה לִי אַחֲרֵי שָׁלוֹשׁ שָׁנִים.",
             exampleNative = "הַעֲלָאָה בְּדַרְגָּה утвердили мне после трёх лет.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164402L, 164403L, 164404L, 164405L, 164406L, 164407L, 164412L, 164414L)),
         WordEntity(
             id = 164402, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "advancement",
@@ -1207,8 +1137,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Последовательность ступеней, которые сотрудник планирует пройти.",
             example = "מַסְלוּל הִתְקַדְּמוּת בָּרוּר עוֹזֵר לַעֲבוֹדָה רְצוּיָה.",
             exampleNative = "Ясная מַסְלוּל הִתְקַדְּמוּת помогает в желанной работе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164401L, 164403L, 164404L, 164419L, 164422L)),
         WordEntity(
             id = 164403, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "advancement",
@@ -1218,8 +1147,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Переход между отделами внутри одной компании без ухода наружу.",
             example = "מַעֲבָר פָּנִימִי לְצֶוֶות מוּצָר הִצִּיל לִי אֶת הַעֲבוֹדָה.",
             exampleNative = "מַעֲבָר פָּנִימִי в продуктовую команду спас мою работу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164401L, 164402L, 164404L)),
         WordEntity(
             id = 164404, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "advancement",
@@ -1229,8 +1157,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Позиция, где человек руководит небольшой группой сотрудников.",
             example = "תַּפְקִיד רֹאשׁ צֶוֶות דּוֹרֵשׁ יְכוֹלוֹת בֵּין־אִישִׁיּוֹת טוֹבוֹת.",
             exampleNative = "תַּפְקִיד רֹאשׁ צֶוֶות требует хороших межличностных навыков.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164401L, 164402L, 164403L, 164413L, 164421L)),
 
         WordEntity(
             id = 164405, setId = 1644, languagePair = "he-ru", rarity = "RARE",
@@ -1241,8 +1168,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Дополнительная выплата в конце года, зависящая от результатов.",
             example = "בּוֹנוּס שְׁנָתִי נִכְנָס לַחֶשְׁבּוֹן לִפְנֵי פֶּסַח.",
             exampleNative = "בּוֹנוּס שְׁנָתִי поступил на счёт перед Песахом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164406L, 164407L)),
         WordEntity(
             id = 164406, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "financial_reward",
@@ -1252,8 +1178,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Право купить акции компании по цене ниже рыночной.",
             example = "קִבַּלְתִּי אוֹפְצִיּוֹת בַּשָּׁנָה הָרִאשׁוֹנָה שֶׁלִּי בַּסְטַרְטְאַפ.",
             exampleNative = "В первый год в стартапе я получил אוֹפְצִיּוֹת.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164401L, 164405L, 164407L)),
         WordEntity(
             id = 164407, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "financial_reward",
@@ -1263,8 +1188,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Официальная форма благодарности от руководства за достижения.",
             example = "הַכָּרָה רִשְׁמִית חִזְּקָה לוֹ אֶת הַבִּטָּחוֹן הָעַצְמִי.",
             exampleNative = "הַכָּרָה רִשְׁמִית укрепила его уверенность.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164401L, 164405L, 164406L, 164415L)),
 
         WordEntity(
             id = 164408, setId = 1644, languagePair = "he-ru", rarity = "RARE",
@@ -1275,8 +1199,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Длительное истощение, возникающее от постоянной нагрузки на работе.",
             example = "שְׁחִיקָה תַּעֲסוּקָתִית חֲזָקָה הִכְרִיחָה אוֹתוֹ לָצֵאת לְחֹפֶשׁ.",
             exampleNative = "שְׁחִיקָה תַּעֲסוּקָתִית заставила его уйти в отпуск.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164409L, 164410L, 164411L)),
         WordEntity(
             id = 164409, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "wellbeing_and_stress",
@@ -1286,8 +1209,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Правильное распределение времени между офисом и личной жизнью.",
             example = "אִזּוּן בַּיִת וְעֲבוֹדָה מוֹנֵעַ עֲיֵפוּת מַתְמֶשֶׁכֶת.",
             exampleNative = "אִזּוּן בַּיִת וְעֲבוֹדָה предотвращает хроническую усталость.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164408L, 164410L, 164411L)),
         WordEntity(
             id = 164410, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "wellbeing_and_stress",
@@ -1297,8 +1219,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Намеренная пауза для восстановления душевных сил перед новым этапом.",
             example = "רֶוַח רֵגָשִׁי קָצָר בֵּין פְּרוֹיֶקְטִים מֵיטִיב עִם הַבִּצּוּעִים.",
             exampleNative = "רֶוַח רֵגָשִׁי между проектами улучшает результаты.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164408L, 164409L, 164411L)),
         WordEntity(
             id = 164411, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "wellbeing_and_stress",
@@ -1308,8 +1229,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Ощущение необходимости закончить задачу к установленному часу.",
             example = "לְחַץ זְמַן בְּסוֹף הָרֶבַע מַרְגִּישׁ לַכֻּלָּם.",
             exampleNative = "לְחַץ זְמַן в конце квартала ощущает каждый.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164408L, 164409L, 164410L)),
 
         WordEntity(
             id = 164412, setId = 1644, languagePair = "he-ru", rarity = "RARE",
@@ -1320,8 +1240,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Структурированный период освоения профессии в процессе работы.",
             example = "הִתְמַחוּת תַּעֲסוּקָתִית נִמְשְׁכָה שָׁנָה מְלֵאָה בָּמִשְׂרָד.",
             exampleNative = "הִתְמַחוּת תַּעֲסוּקָתִית длилась полный год в офисе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164413L, 164414L, 164415L, 164416L)),
         WordEntity(
             id = 164413, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "professional_development",
@@ -1331,8 +1250,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Опытный человек, ведущий младшего сотрудника и задающий направление.",
             example = "מְאַמֵּן אִישִׁי טוֹב חוֹסֵךְ שָׁנִים שֶׁל טְעִיּוֹת.",
             exampleNative = "Хороший מְאַמֵּן אִישִׁי экономит годы ошибок.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164412L, 164414L, 164415L, 164421L)),
         WordEntity(
             id = 164414, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "professional_development",
@@ -1342,8 +1260,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Процесс освоения новых инструментов, чтобы оставаться востребованным.",
             example = "יְעַדְכּוּן מְיֻמָּנוּיוֹת בִּכְלֵי AI הָפַךְ חוֹבָה בַּשָּׁנָה.",
             exampleNative = "יְעַדְכּוּן מְיֻמָּנוּיוֹת по ИИ-инструментам стал обязателен.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164412L, 164413L, 164415L)),
         WordEntity(
             id = 164415, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "professional_development",
@@ -1353,8 +1270,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Профессиональная оценка, которую коллеги дают друг другу периодически.",
             example = "הַעֲרָכַת עֲמִיתִים חִיּוּבִית חִזְּקָה אֶת הַמּוֹעֲמָדוּת שֶׁלִּי.",
             exampleNative = "Положительная הַעֲרָכַת עֲמִיתִים укрепила мою кандидатуру.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164407L, 164412L, 164413L, 164414L)),
 
         WordEntity(
             id = 164416, setId = 1644, languagePair = "he-ru", rarity = "RARE",
@@ -1366,7 +1282,7 @@ object WordDataHebrewWorkV2 {
             example = "עֲבוֹדָה הִיבְּרִידִית שָׁלוֹשׁ וּשְׁנֵי יָמִים הָפְכָה סְטַנְדַּרְט.",
             exampleNative = "עֲבוֹדָה הִיבְּרִידִית три-два стала стандартом.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164417L, 164418L, 164419L, 164420L, 164421L, 164422L, 164423L, 164424L, 164425L)),
         WordEntity(
             id = 164417, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "remote_and_projects",
@@ -1377,7 +1293,7 @@ object WordDataHebrewWorkV2 {
             example = "הַצֶּוֶות נִכְנַס לַחֶדֶר וִירְטוּאָלִי בְּדִיּוּק בִּתְשַׁע.",
             exampleNative = "Команда зашла в חֶדֶר וִירְטוּאָלִי ровно в девять.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164416L, 164418L, 164419L, 164420L, 164421L, 164422L, 164423L, 164424L, 164425L)),
         WordEntity(
             id = 164418, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "remote_and_projects",
@@ -1388,7 +1304,7 @@ object WordDataHebrewWorkV2 {
             example = "פְּגִישָׁה יוֹמִית קְצָרָה נִמְשֶׁכֶת עַד רֶבַע שָׁעָה.",
             exampleNative = "פְּגִישָׁה יוֹמִית קְצָרָה занимает не более пятнадцати минут.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164416L, 164417L, 164419L, 164420L, 164421L, 164422L, 164423L, 164424L, 164425L)),
         WordEntity(
             id = 164419, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "remote_and_projects",
@@ -1399,7 +1315,7 @@ object WordDataHebrewWorkV2 {
             example = "תָּאֲרִיךְ יַעַד נִדְחָה בִּשְׁנֵי יְמֵי עֲבוֹדָה.",
             exampleNative = "תָּאֲרִיךְ יַעַד перенесли на два рабочих дня.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164416L, 164417L, 164418L, 164420L, 164421L, 164422L, 164423L, 164424L, 164425L)),
         WordEntity(
             id = 164420, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "remote_and_projects",
@@ -1421,7 +1337,7 @@ object WordDataHebrewWorkV2 {
             example = "אַחְרַאי פְּרוֹיֶקְט כִּנֵּס אֶת כָּל הַצֶּוֶות לְסִיכּוּם.",
             exampleNative = "אַחְרַאי פְּרוֹיֶקְט собрал всю команду на подведение итогов.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164413L, 164416L, 164417L, 164418L, 164419L, 164420L, 164422L, 164423L, 164424L, 164425L)),
         WordEntity(
             id = 164422, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "remote_and_projects",
@@ -1432,7 +1348,7 @@ object WordDataHebrewWorkV2 {
             example = "מַפָּת דְּרָכִים חֲדָשָׁה הֻצְגָה בַּיְשִׁיבָה הַחֹדֶשׁ.",
             exampleNative = "Новая מַפָּת דְּרָכִים представлена на собрании.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164415L, 164416L, 164417L, 164418L, 164419L, 164420L, 164421L, 164423L, 164424L, 164425L)),
         WordEntity(
             id = 164423, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "remote_and_projects",
@@ -1443,7 +1359,7 @@ object WordDataHebrewWorkV2 {
             example = "סְקִירַת סוֹף פְּרוֹיֶקְט חָשְׂפָה טָעֻיּוֹת חֲשׁוּבוֹת לִלְמִידָה.",
             exampleNative = "סְקִירַת סוֹף פְּרוֹיֶקְט вскрыл важные ошибки для учёбы.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164415L, 164416L, 164417L, 164418L, 164419L, 164420L, 164421L, 164422L, 164424L, 164425L)),
         WordEntity(
             id = 164424, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "remote_and_projects",
@@ -1454,7 +1370,7 @@ object WordDataHebrewWorkV2 {
             example = "סֶפְּרִינְט עָשִׂיר בִּמְשִׂימוֹת נִפְתַּח הַבֹּקֶר.",
             exampleNative = "סֶפְּרִינְט с насыщенным бэклогом начался утром.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164416L, 164417L, 164418L, 164419L, 164420L, 164421L, 164422L, 164423L, 164425L)),
         WordEntity(
             id = 164425, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "remote_and_projects",
@@ -1465,7 +1381,7 @@ object WordDataHebrewWorkV2 {
             example = "בַּקְלוֹג הַצֶּוֶות גָּדַל בִּמְהִירוּת בַּחֹדֶשׁ הָאַחֲרוֹן.",
             exampleNative = "בַּקְלוֹג команды быстро вырос за последний месяц.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164416L, 164417L, 164418L, 164419L, 164420L, 164421L, 164422L, 164423L, 164424L)),
 
         // ─── Set 1645 — профессиональный: бизнес-терминология (level 4, EPIC) ─
         // Subgroups: startup_people · strategy · metrics · scaling · deal
@@ -1478,8 +1394,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Молодая компания, всё ещё ищущая соответствие продукта и рынка.",
             example = "סְטַרְטְאַפּ בִּשְׁלָב מֻקְדָּם גִּיֵּס סִיבוּב רִאשׁוֹן בְּמִילְיוֹן דּוֹלָר.",
             exampleNative = "סְטַרְטְאַפּ בִּשְׁלָב מֻקְדָּם привлёк первый раунд на миллион.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164502L, 164503L, 164504L, 164505L)),
         WordEntity(
             id = 164502, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_people",
@@ -1489,8 +1404,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Частное лицо, вкладывающее капитал в молодую компанию по личной вере.",
             example = "מַשְׁקִיעַ מְזַמֵּן הִכְנִיס סָכוּם רִאשׁוֹן בַּסִּיבוּב הַקָּטָן.",
             exampleNative = "מַשְׁקִיעַ מְזַמֵּן вложил первую сумму в посев.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164501L, 164503L, 164504L, 164505L)),
         WordEntity(
             id = 164503, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_people",
@@ -1500,8 +1414,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Структура, вкладывающая в новые компании ради высокого возврата.",
             example = "קֶרֶן הוֹן סִיכּוּן הוֹבִילָה אֶת הַסִּיבוּב שֶׁל הַסִּדְרָה ב'.",
             exampleNative = "קֶרֶן הוֹן סִיכּוּן вела раунд серии B.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164501L, 164502L, 164504L, 164505L)),
         WordEntity(
             id = 164504, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_people",
@@ -1511,8 +1424,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Один из группы людей, создавших компанию с нулевой точки.",
             example = "מְיַסֵּד שׁוּתָף פָּרַשׁ לְטוֹבַת פְּרוֹיֶקְט חָדָשׁ שֶׁלּוֹ.",
             exampleNative = "מְיַסֵּד שׁוּתָף вышел ради собственного нового проекта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164501L, 164502L, 164503L, 164505L)),
         WordEntity(
             id = 164505, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_people",
@@ -1522,8 +1434,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Стартап со стоимостью более миллиарда долларов.",
             example = "חֶבְרַת חַד־קֶרֶן יִשְׂרְאֵלִית חֲדָשָׁה זָכְתָה לְכוֹתָרוֹת.",
             exampleNative = "Новая израильская חֶבְרַת חַד־קֶרֶן попала в заголовки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164501L, 164502L, 164503L, 164504L, 164506L, 164510L, 164524L)),
 
         WordEntity(
             id = 164506, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
@@ -1535,7 +1446,7 @@ object WordDataHebrewWorkV2 {
             example = "תָּכְנִית עֲסָקִית חֲדָשָׁה הֻצְגָה לַוַּעַד מַנְהִיגִים.",
             exampleNative = "Новая תָּכְנִית עֲסָקִית представлена правлению.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164507L, 164508L, 164509L, 164510L, 164515L, 164516L, 164522L, 164524L)),
         WordEntity(
             id = 164507, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "strategy_and_planning",
@@ -1545,8 +1456,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Оценка сильных и слабых сторон, возможностей и угроз компании.",
             example = "נִתּוּחַ SWOT חָשַׂף פֶּרֶץ בַּשּׁוּק הַמְּקוֹמִי.",
             exampleNative = "נִתּוּחַ SWOT выявил брешь на локальном рынке.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164502L, 164504L, 164506L, 164508L, 164509L, 164510L, 164511L)),
         WordEntity(
             id = 164508, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "strategy_and_planning",
@@ -1556,8 +1466,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Долгосрочный образ того, чего компания хочет достичь в мире.",
             example = "חֲזוֹן אִרְגּוּנִי מַעֲצִים מַזְמִין עוֹבְדִים טוֹבִים יוֹתֵר.",
             exampleNative = "Яркое חֲזוֹן אִרְגּוּנִי притягивает более сильных сотрудников.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164501L, 164504L, 164506L, 164507L, 164509L, 164510L)),
         WordEntity(
             id = 164509, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "strategy_and_planning",
@@ -1567,8 +1476,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Маркетинговая рамка: товар, цена, продвижение и место.",
             example = "מוֹדֵל אַרְבָּעָה עֶמְדוֹת שִׁמֵּשׁ לְתִכְנוּן הַהַשָּׁקָה.",
             exampleNative = "מוֹדֵל אַרְבָּעָה עֶמְדוֹת использовали при планировании запуска.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164506L, 164507L, 164508L, 164510L, 164511L)),
         WordEntity(
             id = 164510, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "strategy_and_planning",
@@ -1578,8 +1486,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Процесс сбора данных о покупателях и конкурентах до решения.",
             example = "בַּחֲנוּת שׁוּק מֻקְדֶּמֶת חָסְכָה לַחֶבְרָה מַהֲלָךְ טוֹעֶה.",
             exampleNative = "Предварительная בַּחֲנוּת שׁוּק уберегла фирму от ошибки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164506L, 164507L, 164508L, 164509L, 164522L)),
 
         WordEntity(
             id = 164511, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
@@ -1601,8 +1508,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Доход от клиентов, регулярно платящих ежемесячно по подписке.",
             example = "הַכְנָסָה חוֹזֶרֶת גָּדְלָה בִּשְׁלֹשִׁים אָחוּז בְּרֶבַע הָאַחֲרוֹן.",
             exampleNative = "הַכְנָסָה חוֹזֶרֶת выросла на тридцать процентов за квартал.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164503L, 164505L, 164511L, 164513L, 164514L, 164516L)),
         WordEntity(
             id = 164513, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "business_metrics",
@@ -1612,8 +1518,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Момент, когда выручка покрывает все расходы, но прибыли ещё нет.",
             example = "נְקֻדַּת אִיזּוּן צְפוּיָה לַחֹדֶשׁ הַתְּשִׁיעִי לַפְעִילוּת.",
             exampleNative = "נְקֻדַּת אִיזּוּן ожидается к девятому месяцу работы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164511L, 164512L, 164514L, 164515L, 164516L, 164517L, 164524L)),
         WordEntity(
             id = 164514, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "business_metrics",
@@ -1623,8 +1528,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Показатель лояльности по готовности советовать сервис другим.",
             example = "שֵׁרוּת הַתְּשׁוּבָה הַגָּבוֹהַּ שֶׁל הַחֶבְרָה מַרְשִׁים מַשְׁקִיעִים.",
             exampleNative = "Высокий שֵׁרוּת הַתְּשׁוּבָה фирмы впечатляет инвесторов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164508L, 164511L, 164512L, 164513L, 164519L, 164525L)),
 
         WordEntity(
             id = 164515, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
@@ -1635,8 +1539,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Расширение компании на новые рынки при росте спроса.",
             example = "הַגְדָּלַת פְּעִילוּת לְאֵירוֹפָּה דָּרְשָׁה גִּיּוּס אַגְרֶסִיבִי.",
             exampleNative = "הַגְדָּלַת פְּעִילוּת в Европу потребовала агрессивного найма.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164506L, 164510L, 164516L, 164517L, 164518L)),
         WordEntity(
             id = 164516, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "scaling_and_growth",
@@ -1646,8 +1549,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Переход фирмы из одной страны в несколько одновременно.",
             example = "פְּרִיסָה בֵּינְלְאֻמִּית הִצְרִיכָה שֻׁתָּפִים מְקוֹמִיִּים בְּכָל אָזוֹר.",
             exampleNative = "פְּרִיסָה בֵּינְלְאֻמִּית потребовала местных партнёров в каждом регионе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164505L, 164506L, 164510L, 164515L, 164517L, 164518L)),
         WordEntity(
             id = 164517, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "scaling_and_growth",
@@ -1657,8 +1559,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Очень быстрое развитие, при котором показатели удваиваются.",
             example = "פְּרִיחָה אֶקְסְפּוֹנֶנְצְיָאלִית בְּמִשְׁתַּמְּשִׁים גָּרְמָה לַחֶבְרָה לְגַיֵּס כֹּחַ אָדָם.",
             exampleNative = "פְּרִיחָה אֶקְסְפּוֹנֶנְצְיָאלִית пользователей заставила нанимать быстрее.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164515L, 164516L, 164518L)),
         WordEntity(
             id = 164518, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "scaling_and_growth",
@@ -1669,7 +1570,7 @@ object WordDataHebrewWorkV2 {
             example = "מַעֲבָר לְרַוְחִיּוּת הָיָה הַיַּעַד הָרָאשִׁי בְּתָכְנִית הַשָּׁנָה.",
             exampleNative = "מַעֲבָר לְרַוְחִיּוּת был главным KPI годового плана.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164507L, 164508L, 164511L, 164515L, 164516L, 164517L, 164519L, 164520L, 164521L, 164523L, 164525L)),
 
         WordEntity(
             id = 164519, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
@@ -1680,8 +1581,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Событие, когда основатели и инвесторы реализуют свой капитал.",
             example = "אֶקְזִיט עַנָּק הֶעֱשִׁיר אֶת כָּל הַצֶּוֶות הַוָּתִיק.",
             exampleNative = "Крупный אֶקְזִיט обогатил всю старую команду.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164501L, 164520L, 164521L, 164522L, 164523L, 164524L, 164525L)),
         WordEntity(
             id = 164520, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "deal_and_exit",
@@ -1691,8 +1591,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Экономические сделки, в которых фирма покупает другую или объединяется.",
             example = "מִיזּוּג וּרְכִישָׁה שֶׁל שַׁחְקָן מָקוֹם שָׁנָה חִזְּקָה אֶת הַשּׁוּרָה.",
             exampleNative = "מִיזּוּג וּרְכִישָׁה локального игрока усилили линейку.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164505L, 164519L, 164521L, 164522L, 164523L, 164524L, 164525L)),
         WordEntity(
             id = 164521, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "deal_and_exit",
@@ -1702,8 +1601,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Предварительный документ, фиксирующий принципы сделки до договора.",
             example = "מִזְכַּר הֲבָנוֹת נֶחְתַּם בֵּין הַצְּדָדִים בִּשְׁבוּעַיִם.",
             exampleNative = "מִזְכַּר הֲבָנוֹת подписали за две недели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164519L, 164520L, 164522L, 164523L, 164524L, 164525L)),
         WordEntity(
             id = 164522, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "deal_and_exit",
@@ -1713,8 +1611,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Глубокая проверка состояния фирмы перед инвестицией или покупкой.",
             example = "בְּדִיקַת נַאֲוּוּתוּת חָשְׂפָה חוֹב נִסְתָּר גָּדוֹל.",
             exampleNative = "בְּדִיקַת נַאֲוּוּתוּת вскрыла крупный скрытый долг.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164510L, 164519L, 164520L, 164521L, 164523L, 164524L, 164525L)),
         WordEntity(
             id = 164523, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "deal_and_exit",
@@ -1724,8 +1621,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Договор, запрещающий стороне сотрудничать с конкурентами на срок.",
             example = "הֶסְכֵּם בְּלִעָדִיּוּת הִכְנִיס אֶת הַקּוֹנֶה לַקְדִימוּת.",
             exampleNative = "הֶסְכֵּם בְּלִעָדִיּוּת дал покупателю приоритет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164519L, 164520L, 164521L, 164522L, 164524L, 164525L)),
         WordEntity(
             id = 164524, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "deal_and_exit",
@@ -1735,8 +1631,7 @@ object WordDataHebrewWorkV2 {
             definitionNative = "Предложение о покупке с юридической обязанностью закрыть сделку.",
             example = "הַצָּעָה מַחְיֶיבֶת הִגִּיעָה בִּשְׁבוּעַיִם לְאַחַר הַבְּדִיקָה.",
             exampleNative = "הַצָּעָה מַחְיֶיבֶת поступила через две недели после проверки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164506L, 164519L, 164520L, 164521L, 164522L, 164523L, 164525L)),
         WordEntity(
             id = 164525, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "deal_and_exit",
@@ -1747,6 +1642,6 @@ object WordDataHebrewWorkV2 {
             example = "שׁוֹוִי חֶבְרָה זִנֵּק פִּי שְׁנַיִם אַחֲרֵי הַסִּיבוּב.",
             exampleNative = "שׁוֹוִי חֶבְרָה подскочила вдвое после раунда.",
             isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(164501L, 164511L, 164514L, 164519L, 164520L, 164521L, 164522L, 164523L, 164524L)),
     )
 }
