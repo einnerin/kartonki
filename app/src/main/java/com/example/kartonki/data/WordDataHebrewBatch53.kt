@@ -9,7 +9,7 @@ object WordDataHebrewBatch53 {
 
         WordSetEntity(
             id = 1300, languagePair = "he-ru", orderIndex = 1300,
-            name = "Маркетинг: основы",
+            name = "Маркетинг: основы — базовая лексика рекламы, продвижения и работы с клиентами",
             description = "Базовая лексика рекламы, продвижения и работы с клиентами",
             topic = "Маркетинг",
             level = 1),

@@ -28,7 +28,7 @@ object WordDataHebrewBatch72 {
             name = "Пилот: основы", description = "Самолёт, полёт, взлёт, посадка",
             topic = "Пилот", level = 1),
         WordSetEntity(id = 1449, languagePair = "he-ru", orderIndex = 1449,
-            name = "Пилот: продвинутый", description = "Навигация, диспетчер, маршрут",
+            name = "Пилот: продвинутый — навигация, диспетчер, маршрут", description = "Навигация, диспетчер, маршрут",
             topic = "Пилот", level = 2),
         WordSetEntity(id = 1450, languagePair = "he-ru", orderIndex = 1450,
             name = "Пилот: углублённый", description = "Метеорология, приборы, аварийные процедуры",

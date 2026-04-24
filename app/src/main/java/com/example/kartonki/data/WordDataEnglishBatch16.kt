@@ -14,7 +14,7 @@ object WordDataEnglishBatch16 {
             description = "Базовая юридическая лексика",
             languagePair = "en-ru", orderIndex = 296,
             topic = "Право", level = 1),
-        WordSetEntity(id = 297, name = "Право: профессиональный",
+        WordSetEntity(id = 297, name = "Право: профессиональный — процессуальное право, стадии процесса",
             description = "Процессуальное право, стадии процесса",
             languagePair = "en-ru", orderIndex = 297,
             topic = "Право", level = 4),

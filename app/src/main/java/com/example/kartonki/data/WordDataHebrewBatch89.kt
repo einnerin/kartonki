@@ -11,15 +11,15 @@ object WordDataHebrewBatch89 {
 
     val sets = listOf(
         WordSetEntity(id = 1539, languagePair = "he-ru", orderIndex = 1539,
-            name = "Финансы: профессиональный 2",
+            name = "Финансы: профессиональный — корпоративные финансы, M&A, IPO",
             description = "Корпоративные финансы, M&A, IPO",
             topic = "Финансы", level = 4),
         WordSetEntity(id = 1540, languagePair = "he-ru", orderIndex = 1540,
-            name = "Одежда: продвинутый 4",
+            name = "Одежда: продвинутый — стили, мода, аксессуары",
             description = "Стили, мода, аксессуары",
             topic = "Одежда", level = 2),
         WordSetEntity(id = 1541, languagePair = "he-ru", orderIndex = 1541,
-            name = "Религия и праздники: продвинутый 7",
+            name = "Религия и праздники: продвинутый — традиции, ритуалы, синагога",
             description = "Традиции, ритуалы, синагога",
             topic = "Религия и праздники", level = 2),
         WordSetEntity(id = 1542, languagePair = "he-ru", orderIndex = 1542,
@@ -27,7 +27,7 @@ object WordDataHebrewBatch89 {
             description = "Стартап-экосистема, финтех, SaaS",
             topic = "Хай-тек", level = 2),
         WordSetEntity(id = 1543, languagePair = "he-ru", orderIndex = 1543,
-            name = "Путешествия: продвинутый 2",
+            name = "Путешествия: продвинутый — виды путешествий, бронирование, туризм",
             description = "Виды путешествий, бронирование, туризм",
             topic = "Путешествия", level = 2),
     )

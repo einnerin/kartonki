@@ -10,7 +10,7 @@ object WordDataHebrewBatch71 {
             name = "Пожарный: основы", description = "Пожар, тушение, базовое снаряжение",
             topic = "Пожарный", level = 1),
         WordSetEntity(id = 1434, languagePair = "he-ru", orderIndex = 1434,
-            name = "Пожарный: продвинутый", description = "Спасательные операции, оборудование, протоколы",
+            name = "Пожарный: продвинутый — спасательные операции, оборудование, протоколы", description = "Спасательные операции, оборудование, протоколы",
             topic = "Пожарный", level = 2),
         WordSetEntity(id = 1435, languagePair = "he-ru", orderIndex = 1435,
             name = "Пожарный: углублённый", description = "Опасные вещества, химические пожары, технические спасения",

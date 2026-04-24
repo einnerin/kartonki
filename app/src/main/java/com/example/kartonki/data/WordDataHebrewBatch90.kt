@@ -11,7 +11,7 @@ object WordDataHebrewBatch90 {
 
     val sets = listOf(
         WordSetEntity(id = 1544, languagePair = "he-ru", orderIndex = 1544,
-            name = "Наука: профессиональный 6",
+            name = "Наука: профессиональный — молекулярная биология, космология, квантовая физика",
             description = "Молекулярная биология, космология, квантовая физика",
             topic = "Наука", level = 4),
         WordSetEntity(id = 1545, languagePair = "he-ru", orderIndex = 1545,
@@ -19,15 +19,15 @@ object WordDataHebrewBatch90 {
             description = "Политическая философия, гегемония, суверенитет",
             topic = "Политика", level = 5),
         WordSetEntity(id = 1546, languagePair = "he-ru", orderIndex = 1546,
-            name = "Психология: углублённый 3",
+            name = "Психология: углублённый — психотерапия, травма, нейропсихология",
             description = "Психотерапия, травма, нейропсихология",
             topic = "Психология", level = 3),
         WordSetEntity(id = 1547, languagePair = "he-ru", orderIndex = 1547,
-            name = "Архитектура: продвинутый 2",
+            name = "Архитектура: продвинутый — градостроительство, проектирование, стили",
             description = "Градостроительство, проектирование, стили",
             topic = "Архитектура", level = 2),
         WordSetEntity(id = 1548, languagePair = "he-ru", orderIndex = 1548,
-            name = "Город: углублённый 2",
+            name = "Город: углублённый — городское планирование, мобильность, политика",
             description = "Городское планирование, мобильность, политика",
             topic = "Город", level = 3),
     )

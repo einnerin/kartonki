@@ -9,7 +9,7 @@ object WordDataHebrewBatch58 {
 
         WordSetEntity(
             id = 1325, languagePair = "he-ru", orderIndex = 1325,
-            name = "Риэлтор: продвинутый 2",
+            name = "Риэлтор: продвинутый — базовая лексика агента по недвижимости",
             description = "Базовая лексика агента по недвижимости",
             topic = "Риэлтор",
             level = 2),

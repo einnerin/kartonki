@@ -9,7 +9,7 @@ object WordDataHebrewBatch61 {
 
         WordSetEntity(
             id = 1344, languagePair = "he-ru", orderIndex = 1344,
-            name = "Математика: основы 2",
+            name = "Математика: основы — фигуры, измерения, числа и операции",
             description = "Фигуры, измерения, числа и операции",
             topic = "Математика",
             level = 1),

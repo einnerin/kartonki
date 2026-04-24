@@ -6,17 +6,17 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant10 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1166, languagePair = "he-ru", name = "Природа и экология: продвинутый 14",  description = "Домашние и дикие животные", orderIndex = 166,
+        WordSetEntity(id = 1166, languagePair = "he-ru", name = "Природа и экология: продвинутый — птицы и морские обитатели",  description = "Птицы и морские обитатели", orderIndex = 166,
     topic = "Природа и экология", level = 2),
-        WordSetEntity(id = 1167, languagePair = "he-ru", name = "Лингвистика: продвинутый 2",           description = "Часы, дни, недели, месяцы", orderIndex = 167,
+        WordSetEntity(id = 1167, languagePair = "he-ru", name = "Лингвистика: продвинутый — часы, дни, недели, месяцы",           description = "Часы, дни, недели, месяцы", orderIndex = 167,
     topic = "Лингвистика", level = 2),
-        WordSetEntity(id = 1168, languagePair = "he-ru", name = "Город: продвинутый 4",                 description = "Улицы, здания, инфраструктура", orderIndex = 168,
+        WordSetEntity(id = 1168, languagePair = "he-ru", name = "Город: продвинутый — улицы, здания, инфраструктура",                 description = "Улицы, здания, инфраструктура", orderIndex = 168,
     topic = "Город", level = 2),
-        WordSetEntity(id = 1169, languagePair = "he-ru", name = "Психология: продвинутый 4",            description = "Чувства и черты личности", orderIndex = 169,
+        WordSetEntity(id = 1169, languagePair = "he-ru", name = "Психология: продвинутый — эмоции и самопознание",            description = "Эмоции и самопознание", orderIndex = 169,
     topic = "Психология", level = 2),
-        WordSetEntity(id = 1170, languagePair = "he-ru", name = "Религия и праздники: продвинутый 4",   description = "Молитвы, традиции, еврейская жизнь", orderIndex = 170,
+        WordSetEntity(id = 1170, languagePair = "he-ru", name = "Религия и праздники: продвинутый — молитвы, традиции, еврейская жизнь",   description = "Молитвы, традиции, еврейская жизнь", orderIndex = 170,
     topic = "Религия и праздники", level = 2),
-        WordSetEntity(id = 1171, languagePair = "he-ru", name = "Медицина: продвинутый 9",              description = "Врачи, лечение, медицинские процедуры", orderIndex = 171,
+        WordSetEntity(id = 1171, languagePair = "he-ru", name = "Медицина: продвинутый — врачи, лечение, медицинские процедуры",              description = "Врачи, лечение, медицинские процедуры", orderIndex = 171,
     topic = "Медицина", level = 2),
     )
 

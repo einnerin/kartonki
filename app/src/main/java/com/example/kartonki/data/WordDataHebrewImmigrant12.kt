@@ -6,17 +6,17 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant12 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1178, languagePair = "he-ru", name = "Автомобиль: продвинутый", description = "Вождение и дорожное движение", orderIndex = 178,
+        WordSetEntity(id = 1178, languagePair = "he-ru", name = "Автомобиль: продвинутый — вождение и дорожное движение", description = "Вождение и дорожное движение", orderIndex = 178,
     topic = "Автомобиль", level = 2),
-        WordSetEntity(id = 1179, languagePair = "he-ru", name = "Культура и искусство: продвинутый 9",  description = "Медиа, новости, интернет-контент", orderIndex = 179,
+        WordSetEntity(id = 1179, languagePair = "he-ru", name = "Культура и искусство: продвинутый — медиа, новости, интернет-контент",  description = "Медиа, новости, интернет-контент", orderIndex = 179,
     topic = "Культура и искусство", level = 2),
-        WordSetEntity(id = 1180, languagePair = "he-ru", name = "Технологии: продвинутый 9",            description = "Наука, изобретения, IT", orderIndex = 180,
+        WordSetEntity(id = 1180, languagePair = "he-ru", name = "Технологии: продвинутый — наука, изобретения, IT",            description = "Наука, изобретения, IT", orderIndex = 180,
     topic = "Технологии", level = 2),
-        WordSetEntity(id = 1181, languagePair = "he-ru", name = "Алия и Израиль: продвинутый 7",   description = "Репатриация, документы, интеграция", orderIndex = 181,
+        WordSetEntity(id = 1181, languagePair = "he-ru", name = "Алия и Израиль: продвинутый — репатриация, документы, интеграция",   description = "Репатриация, документы, интеграция", orderIndex = 181,
     topic = "Алия и Израиль", level = 2),
-        WordSetEntity(id = 1182, languagePair = "he-ru", name = "Психология: продвинутый 5",            description = "Ментальное здоровье и саморазвитие", orderIndex = 182,
+        WordSetEntity(id = 1182, languagePair = "he-ru", name = "Психология: продвинутый — ментальное здоровье и саморазвитие",            description = "Ментальное здоровье и саморазвитие", orderIndex = 182,
     topic = "Психология", level = 2),
-        WordSetEntity(id = 1183, languagePair = "he-ru", name = "Природа и экология: продвинутый 15",   description = "Окружающая среда и климат", orderIndex = 183,
+        WordSetEntity(id = 1183, languagePair = "he-ru", name = "Природа и экология: продвинутый — окружающая среда и климат",   description = "Окружающая среда и климат", orderIndex = 183,
     topic = "Природа и экология", level = 2),
     )
 

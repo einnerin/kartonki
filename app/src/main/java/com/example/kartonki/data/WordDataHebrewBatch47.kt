@@ -26,7 +26,7 @@ object WordDataHebrewBatch47 {
         ),
         WordSetEntity(
             id = 1259, languagePair = "he-ru", orderIndex = 1259,
-            name = "Архитектура: углублённый",
+            name = "Архитектура: углублённый — строительные элементы, стили и архитектурный анализ",
             description = "Строительные элементы, стили и архитектурный анализ",
             topic = "Архитектура", level = 3
         ),
@@ -38,13 +38,13 @@ object WordDataHebrewBatch47 {
         ),
         WordSetEntity(
             id = 1261, languagePair = "he-ru", orderIndex = 1261,
-            name = "Город: углублённый",
+            name = "Город: углублённый — городское планирование, инфраструктура и районы",
             description = "Городское планирование, инфраструктура и районы",
             topic = "Город", level = 3
         ),
         WordSetEntity(
             id = 1262, languagePair = "he-ru", orderIndex = 1262,
-            name = "Город: профессиональный",
+            name = "Город: профессиональный — урбанистика, экология города и городская политика",
             description = "Урбанистика, экология города и городская политика",
             topic = "Город", level = 4
         ),

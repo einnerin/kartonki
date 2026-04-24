@@ -9,7 +9,7 @@ object WordDataHebrewBatch55 {
 
         WordSetEntity(
             id = 1310, languagePair = "he-ru", orderIndex = 1310,
-            name = "Уход: основы",
+            name = "Уход: основы — базовая лексика опекуна и сиделки",
             description = "Базовая лексика опекуна и сиделки",
             topic = "Уход",
             level = 1),

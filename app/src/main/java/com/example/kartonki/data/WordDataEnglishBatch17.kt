@@ -14,7 +14,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataEnglishBatch17 {
 
     val sets = listOf(
-        WordSetEntity(id = 299, name = "Город: углублённый 2",
+        WordSetEntity(id = 299, name = "Город: углублённый — элементы городского пейзажа, жильё и улицы",
             description = "Элементы городского пейзажа, жильё и улицы",
             languagePair = "en-ru", orderIndex = 299,
             topic = "Город", level = 3),

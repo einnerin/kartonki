@@ -8,7 +8,7 @@ object WordDataHebrewBatch46 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1248, languagePair = "he-ru", orderIndex = 1248,
-            name = "Технологии: углублённый 2",
+            name = "Технологии: углублённый — иИ, машинное обучение, облака, кибербезопасность и сети",
             description = "ИИ, машинное обучение, облака, кибербезопасность и сети",
             topic = "Технологии",
             level = 3
@@ -22,7 +22,7 @@ object WordDataHebrewBatch46 {
         ),
         WordSetEntity(
             id = 1250, languagePair = "he-ru", orderIndex = 1250,
-            name = "Наука: углублённый",
+            name = "Наука: углублённый — методология исследований, статистика и научный процесс",
             description = "Методология исследований, статистика и научный процесс",
             topic = "Наука",
             level = 3
@@ -36,7 +36,7 @@ object WordDataHebrewBatch46 {
         ),
         WordSetEntity(
             id = 1252, languagePair = "he-ru", orderIndex = 1252,
-            name = "Природа и экология: углублённый",
+            name = "Природа и экология: углублённый — экосистемы, биоразнообразие, изменение климата и энергетика",
             description = "Экосистемы, биоразнообразие, изменение климата и энергетика",
             topic = "Природа и экология",
             level = 3
@@ -50,7 +50,7 @@ object WordDataHebrewBatch46 {
         ),
         WordSetEntity(
             id = 1254, languagePair = "he-ru", orderIndex = 1254,
-            name = "Психология: углублённый 2",
+            name = "Психология: углублённый — когнитивные процессы, клиническая психология и защитные механизмы",
             description = "Когнитивные процессы, клиническая психология и защитные механизмы",
             topic = "Психология",
             level = 3

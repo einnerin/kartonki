@@ -44,7 +44,7 @@ object WordDataHebrewBatch50 {
 
         WordSetEntity(
             id = 1285, languagePair = "he-ru", orderIndex = 1285,
-            name = "Спорт: углублённый",
+            name = "Спорт: углублённый — виды спорта, соревнования и спортивная терминология",
             description = "Виды спорта, соревнования и спортивная терминология",
             topic = "Спорт",
             level = 3),

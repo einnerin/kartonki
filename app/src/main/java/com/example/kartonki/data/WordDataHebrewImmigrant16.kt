@@ -10,17 +10,17 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 object WordDataHebrewImmigrant16 {
 
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1202, languagePair = "he-ru", name = "Лингвистика: профессиональный", description = "Метафора, нарратив, стилистика", orderIndex = 202,
+        WordSetEntity(id = 1202, languagePair = "he-ru", name = "Лингвистика: профессиональный — метафора, нарратив, стилистика", description = "Метафора, нарратив, стилистика", orderIndex = 202,
     topic = "Лингвистика", level = 4),
         WordSetEntity(id = 1203, languagePair = "he-ru", name = "Философия: носитель языка", description = "Онтология, этика, парадигма", orderIndex = 203,
     topic = "Философия", level = 5),
-        WordSetEntity(id = 1204, languagePair = "he-ru", name = "Политика: профессиональный",   description = "Посол, санкции, международные отношения", orderIndex = 204,
+        WordSetEntity(id = 1204, languagePair = "he-ru", name = "Политика: профессиональный — посол, санкции, международные отношения",   description = "Посол, санкции, международные отношения", orderIndex = 204,
     topic = "Политика", level = 4),
-        WordSetEntity(id = 1205, languagePair = "he-ru", name = "Религия и праздники: профессиональный", description = "Талмуд, Мишна, Галаха, пилпул", orderIndex = 205,
+        WordSetEntity(id = 1205, languagePair = "he-ru", name = "Религия и праздники: профессиональный — талмуд, Мишна, Галаха, пилпул", description = "Талмуд, Мишна, Галаха, пилпул", orderIndex = 205,
     topic = "Религия и праздники", level = 4),
-        WordSetEntity(id = 1206, languagePair = "he-ru", name = "Психология: профессиональный 2", description = "Эго, вытеснение, катарсис", orderIndex = 206,
+        WordSetEntity(id = 1206, languagePair = "he-ru", name = "Психология: профессиональный — эго, вытеснение, катарсис", description = "Эго, вытеснение, катарсис", orderIndex = 206,
     topic = "Психология", level = 4),
-        WordSetEntity(id = 1207, languagePair = "he-ru", name = "Образование: профессиональный", description = "Методология, выборка, диссертация", orderIndex = 207,
+        WordSetEntity(id = 1207, languagePair = "he-ru", name = "Образование: профессиональный — методология, выборка, диссертация", description = "Методология, выборка, диссертация", orderIndex = 207,
     topic = "Образование", level = 4),
     )
 

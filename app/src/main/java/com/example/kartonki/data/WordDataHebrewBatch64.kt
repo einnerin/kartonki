@@ -27,7 +27,7 @@ object WordDataHebrewBatch64 {
             name = "Повар: основы", description = "Кухня, продукты, посуда, базовые приёмы",
             topic = "Повар", level = 1),
         WordSetEntity(id = 1375, languagePair = "he-ru", orderIndex = 1375,
-            name = "Повар: продвинутый", description = "Техники готовки, рецепт, тепловая обработка",
+            name = "Повар: продвинутый — техники готовки, рецепт, тепловая обработка", description = "Техники готовки, рецепт, тепловая обработка",
             topic = "Повар", level = 2),
         WordSetEntity(id = 1376, languagePair = "he-ru", orderIndex = 1376,
             name = "Повар: углублённый", description = "Профессиональная кухня, станции, HACCP",
@@ -40,7 +40,7 @@ object WordDataHebrewBatch64 {
             topic = "Повар", level = 5),
 
         WordSetEntity(id = 1379, languagePair = "he-ru", orderIndex = 1379,
-            name = "Автомобиль: продвинутый 2", description = "Части машины, приборы, вождение, техобслуживание",
+            name = "Автомобиль: продвинутый — части машины, приборы, вождение, техобслуживание", description = "Части машины, приборы, вождение, техобслуживание",
             topic = "Автомобиль", level = 2),
     )
 

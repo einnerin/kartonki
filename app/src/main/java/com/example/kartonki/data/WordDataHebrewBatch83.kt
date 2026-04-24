@@ -11,7 +11,7 @@ object WordDataHebrewBatch83 {
 
     val sets = listOf(
         WordSetEntity(id = 1511, languagePair = "he-ru", orderIndex = 1511,
-            name = "Религия и праздники: продвинутый 6",
+            name = "Религия и праздники: продвинутый — ритуальные предметы, обряды и праздники",
             description = "Ритуальные предметы, обряды и праздники",
             topic = "Религия и праздники", level = 2),
         WordSetEntity(id = 1512, languagePair = "he-ru", orderIndex = 1512,
@@ -19,7 +19,7 @@ object WordDataHebrewBatch83 {
             description = "Пост, священство, календарь и обряды",
             topic = "Религия и праздники", level = 3),
         WordSetEntity(id = 1513, languagePair = "he-ru", orderIndex = 1513,
-            name = "Религия и праздники: профессиональный 2",
+            name = "Религия и праздники: профессиональный — мистицизм, жертвоприношения и эзотерика",
             description = "Мистицизм, жертвоприношения и эзотерика",
             topic = "Религия и праздники", level = 4),
     )

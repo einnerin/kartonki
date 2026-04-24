@@ -8,7 +8,7 @@ object WordDataHebrewBatch45 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1239, languagePair = "he-ru", orderIndex = 1239,
-            name = "Еда и кулинария: углублённый",
+            name = "Еда и кулинария: углублённый — техники приготовления, диетология и профессиональная кухня",
             description = "Техники приготовления, диетология и профессиональная кухня",
             topic = "Еда и кулинария",
             level = 3
@@ -22,7 +22,7 @@ object WordDataHebrewBatch45 {
         ),
         WordSetEntity(
             id = 1241, languagePair = "he-ru", orderIndex = 1241,
-            name = "Работа и карьера: углублённый",
+            name = "Работа и карьера: углублённый — hR, карьерный рост, переговоры и профессиональные компетенции",
             description = "HR, карьерный рост, переговоры и профессиональные компетенции",
             topic = "Работа и карьера",
             level = 3
@@ -36,14 +36,14 @@ object WordDataHebrewBatch45 {
         ),
         WordSetEntity(
             id = 1243, languagePair = "he-ru", orderIndex = 1243,
-            name = "Дом и быт: углублённый",
+            name = "Дом и быт: углублённый — техническое обслуживание дома, инженерные системы и ремонт",
             description = "Техническое обслуживание дома, инженерные системы и ремонт",
             topic = "Дом и быт",
             level = 3
         ),
         WordSetEntity(
             id = 1244, languagePair = "he-ru", orderIndex = 1244,
-            name = "Дом и быт: профессиональный",
+            name = "Дом и быт: профессиональный — строительство, архитектура интерьера, умный дом",
             description = "Строительство, архитектура интерьера, умный дом",
             topic = "Дом и быт",
             level = 4
@@ -57,7 +57,7 @@ object WordDataHebrewBatch45 {
         ),
         WordSetEntity(
             id = 1246, languagePair = "he-ru", orderIndex = 1246,
-            name = "Медицина: углублённый",
+            name = "Медицина: углублённый — специализации, диагностика, фармакология и клинические процедуры",
             description = "Специализации, диагностика, фармакология и клинические процедуры",
             topic = "Медицина",
             level = 3

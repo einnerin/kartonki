@@ -7,13 +7,13 @@ object WordDataHebrew {
 
     // ── Sets ──────────────────────────────────────────────────────────────────
     val sets: List<WordSetEntity> = listOf(
-        WordSetEntity(id = 1001, name = "Технологии: основы", description = "Базовая компьютерная лексика", orderIndex = 0, languagePair = "he-ru",
+        WordSetEntity(id = 1001, name = "Технологии: основы — базовая компьютерная лексика", description = "Базовая компьютерная лексика", orderIndex = 0, languagePair = "he-ru",
             topic = "Технологии",
             level = 1),
-        WordSetEntity(id = 1002, name = "Технологии: продвинутый",     description = "Термины программирования",          orderIndex = 1, languagePair = "he-ru",
+        WordSetEntity(id = 1002, name = "Технологии: продвинутый — термины программирования",     description = "Термины программирования",          orderIndex = 1, languagePair = "he-ru",
             topic = "Технологии",
             level = 2),
-        WordSetEntity(id = 1003, name = "Технологии: профессиональный",          description = "Продвинутая терминология",        orderIndex = 2, languagePair = "he-ru",
+        WordSetEntity(id = 1003, name = "Технологии: профессиональный — продвинутая терминология",          description = "Продвинутая терминология",        orderIndex = 2, languagePair = "he-ru",
             topic = "Технологии",
             level = 4),
     )

@@ -25,7 +25,7 @@ object WordDataHebrewBatch70 {
             name = "Инженер: основы", description = "Проект, чертёж, базовые понятия",
             topic = "Инженер", level = 1),
         WordSetEntity(id = 1429, languagePair = "he-ru", orderIndex = 1429,
-            name = "Инженер: продвинутый", description = "Расчёты, материалы, технические решения",
+            name = "Инженер: продвинутый — расчёты, материалы, технические решения", description = "Расчёты, материалы, технические решения",
             topic = "Инженер", level = 2),
         WordSetEntity(id = 1430, languagePair = "he-ru", orderIndex = 1430,
             name = "Инженер: углублённый", description = "Проектирование систем, стандарты, безопасность",

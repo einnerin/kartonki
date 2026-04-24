@@ -8,19 +8,19 @@ object WordDataEnglishBatch11 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 274, languagePair = "en-ru", orderIndex = 274,
-            name = "Лингвистика: основы 7", description = "Числа от 11 до 90 и порядковые числительные", topic = "Лингвистика", level = 1),
+            name = "Лингвистика: основы — числа от 11 до 90 и порядковые числительные", description = "Числа от 11 до 90 и порядковые числительные", topic = "Лингвистика", level = 1),
         WordSetEntity(
             id = 275, languagePair = "en-ru", orderIndex = 275,
-            name = "Одежда: основы 2", description = "Одежда, украшения и аксессуары", topic = "Одежда", level = 1),
+            name = "Одежда: основы — одежда, украшения и аксессуары", description = "Одежда, украшения и аксессуары", topic = "Одежда", level = 1),
         WordSetEntity(
             id = 276, languagePair = "en-ru", orderIndex = 276,
-            name = "Лингвистика: основы 8", description = "Как мы говорим и взаимодействуем друг с другом", topic = "Лингвистика", level = 1),
+            name = "Лингвистика: основы — как мы говорим и взаимодействуем друг с другом", description = "Как мы говорим и взаимодействуем друг с другом", topic = "Лингвистика", level = 1),
         WordSetEntity(
             id = 277, languagePair = "en-ru", orderIndex = 277,
             name = "Город: основы", description = "Заведения, улицы и объекты городской среды", topic = "Город", level = 1),
         WordSetEntity(
             id = 278, languagePair = "en-ru", orderIndex = 278,
-            name = "Спорт: основы 2", description = "Виды спорта, игры и физическая активность", topic = "Спорт", level = 1),
+            name = "Спорт: основы — виды спорта, игры и физическая активность", description = "Виды спорта, игры и физическая активность", topic = "Спорт", level = 1),
     )
 
     val words: List<WordEntity> = listOf(

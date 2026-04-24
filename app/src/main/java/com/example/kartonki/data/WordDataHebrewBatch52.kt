@@ -9,7 +9,7 @@ object WordDataHebrewBatch52 {
 
         WordSetEntity(
             id = 1295, languagePair = "he-ru", orderIndex = 1295,
-            name = "Хай-тек: основы",
+            name = "Хай-тек: основы — базовая лексика IT-офиса, стартапов и разработки ПО",
             description = "Базовая лексика IT-офиса, стартапов и разработки ПО",
             topic = "Хай-тек",
             level = 1),

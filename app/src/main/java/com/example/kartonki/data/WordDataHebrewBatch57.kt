@@ -9,7 +9,7 @@ object WordDataHebrewBatch57 {
 
         WordSetEntity(
             id = 1320, languagePair = "he-ru", orderIndex = 1320,
-            name = "Логистика: основы",
+            name = "Логистика: основы — базовая лексика логистики, доставки и склада",
             description = "Базовая лексика логистики, доставки и склада",
             topic = "Логистика",
             level = 1),
