@@ -87,7 +87,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Процесс художественного руководства производством фильма или спектакля.",
             example = "הַבִּיּוּם הַמְּרַשִּׁים זִכָּה אֶת הַבַּמַּאי בְּפְּרָס.",
             exampleNative = "Впечатляющее בִּיּוּם принесло режиссёру награду.",
-        ),
+         fillInBlankExclusions = listOf(107605L, 107623L)),
 
         // UNCOMMON (A2–B1),
         WordEntity(
@@ -116,7 +116,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Углублённое журналистское расследование для разоблачения коррупции или провала.",
             example = "הַתַּחְקִיר הִפִּיל אֶת הַשַּׂר מִתַּפְקִידוֹ.",
             exampleNative = "Расследование привело к отставке министра.",
-        ),
+         fillInBlankExclusions = listOf(107611L, 107612L, 107613L)),
         WordEntity(
             id = 107610, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "mekor",
@@ -143,7 +143,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Цифровая аудиопрограмма, доступная по запросу.",
             example = "אֲנִי מַאֲזִין לְפּוֹדְקַאסְט כָּל יוֹם בְּדֶרֶךְ לָעֲבוֹדָה.",
             exampleNative = "Я слушаю подкаст каждый день по дороге на работу.",
-        ),
+         fillInBlankExclusions = listOf(107619L)),
         WordEntity(
             id = 107613, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "blog",
@@ -152,7 +152,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Онлайн-дневник, в котором автор пишет посты на разные темы.",
             example = "הִיא מַנְהֶלֶת בְּלוֹג אֹכֶל פּוֹפּוּלָרִי.",
             exampleNative = "Она ведёт популярный блог о еде.",
-        ),
+         fillInBlankExclusions = listOf(107612L)),
         WordEntity(
             id = 107614, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "hadashot kozevot",
@@ -179,7 +179,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Краткая пресс-конференция для передачи информации.",
             example = "דּוֹבֵר הַמֶּמְשָׁלָה קָיַּם בְּרִיפִינְג יוֹמִי.",
             exampleNative = "Пресс-секретарь правительства провёл ежедневный брифинг.",
-        ),
+         fillInBlankExclusions = listOf(107612L)),
 
         // RARE (B2),
         WordEntity(
@@ -226,7 +226,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Журналистика, раскрывающая коррупцию или недобросовестное поведение с помощью глубокого расследования.",
             example = "עִיתוֹנָאוּת חוֹקֶרֶת עוֹצֶרֶת שַׁחִיתוּת שֶׁאֲחֵרִים אֵינָם מַגִּיעִים אֵלֶיהָ.",
             exampleNative = "Журналистика-расследование разоблачает коррупцию, до которой другие не добираются.",
-        ),
+         fillInBlankExclusions = listOf(107622L, 107624L)),
 
         WordEntity(
             id = 107622, setId = 1076, languagePair = "he-ru", rarity = "RARE",
@@ -236,7 +236,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Профессиональная область, занимающаяся сбором, обработкой и распространением новостей.",
             example = "עִיתּוּנוּת אַחְרַאִית דּוֹרֶשֶׁת בְּדִיקַת עוּבְדוֹת קְפָדָנִית.",
             exampleNative = "Ответственная עִיתּוּנוּת требует строгой проверки фактов.",
-        ),
+         fillInBlankExclusions = listOf(107621L, 107624L)),
         WordEntity(
             id = 107623, setId = 1076, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "media", transliteration = "montazh",
@@ -254,7 +254,7 @@ object WordDataHebrewBatch18 {
             definitionNative = "Профессиональные принципы, регулирующие поведение журналистов в вопросах честности, источников и точности.",
             example = "אֶתִיקָה עִיתּוֹנָאִית אוֹסֶרֶת פִּרְסוּם מֵידָע שֶׁלֹּא אוּמַּת.",
             exampleNative = "אֶתִיקָה עִיתּוֹנָאִית запрещает публиковать непроверенную информацию.",
-        ),
+         fillInBlankExclusions = listOf(107621L, 107622L)),
         WordEntity(
             id = 107625, setId = 1076, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "media", transliteration = "digitalizatsya",

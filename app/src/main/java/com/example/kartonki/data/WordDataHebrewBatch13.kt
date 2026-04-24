@@ -296,7 +296,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Обязательная норма, установленная государственными органами.",
             example = "עוֹרֵךְ הַדִּין בָּדַק אֶת הַחוֹק הָרֶלֶוַנְטִי לַמִּקְרֶה.",
             exampleNative = "Адвокат изучил חוֹק, применимый к делу.",
-        ),
+         fillInBlankExclusions = listOf(106306L, 106316L, 106323L)),
         WordEntity(
             id = 106305, setId = 1063, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "haganá",
@@ -314,7 +314,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Письменное изложение преступления, вменяемого обвиняемому.",
             example = "כֶּתֶב הָאִשּׁוּם כָּלַל שְׁלוֹשָׁה סְעִיפִים.",
             exampleNative = "Обвинительный אִשּׁוּם включал три пункта.",
-        ),
+         fillInBlankExclusions = listOf(106305L, 106309L)),
 
         WordEntity(
             id = 106307, setId = 1063, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -324,7 +324,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Адвокат, представляющий государство в уголовном процессе.",
             example = "הַפְּרַקְלִיט הֵגִישׁ רְשִׁימַת עֵדִים לְבֵית הַמִּשְׁפָּט.",
             exampleNative = "פְּרַקְלִיט представил суду список свидетелей.",
-        ),
+         fillInBlankExclusions = listOf(106301L, 106308L)),
         WordEntity(
             id = 106308, setId = 1063, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "sanegór",
@@ -342,7 +342,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Официальное правовое требование, подаваемое в суд.",
             example = "הַסְּטַז'יֶר עָזַר בְּנִסְחַת כֶּתֶב הַתְּבִיעָה.",
             exampleNative = "Стажёр помогал с составлением כֶּתֶב תְּבִיעָה.",
-        ),
+         fillInBlankExclusions = listOf(106305L, 106306L)),
         WordEntity(
             id = 106310, setId = 1063, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "nihúl tik",
@@ -351,7 +351,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Координация и подготовка всех документов и процедур по судебному делу.",
             example = "נִיהוּל תִּיק מֻרְכָּב דּוֹרֵשׁ דְּקוֹת רַבּוֹת לְפְּרָטִים.",
             exampleNative = "נִיהוּל תִּיק сложного дела требует большого внимания к деталям.",
-        ),
+         fillInBlankExclusions = listOf(106311L)),
         WordEntity(
             id = 106311, setId = 1063, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "tik beit mishpát",
@@ -415,7 +415,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Выплата или льгота, предоставляемая в качестве компенсации или вознаграждения.",
             example = "הַסְּטַז'יֶר בָּדַק אֶת תַּגְמוּל הַמּוֹעֵד שֶׁנִּקְבַּע בַּחוֹזֶה.",
             exampleNative = "Стажёр проверил תַּגְמוּל срока, установленного в договоре.",
-        ),
+         fillInBlankExclusions = listOf(106318L)),
         WordEntity(
             id = 106318, setId = 1063, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "knás",
@@ -442,7 +442,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Человек, лично видевший событие, являющееся предметом судебного разбирательства.",
             example = "עֵד עֵינַיִים זִיהָה אֶת הַנֶּאֱשָׁם בְּוַדָּאוּת.",
             exampleNative = "עֵד עֵינַיִים с уверенностью опознал обвиняемого.",
-        ),
+         fillInBlankExclusions = listOf(106312L)),
         WordEntity(
             id = 106321, setId = 1063, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "báal-din",
@@ -470,7 +470,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Высший закон государства, устанавливающий основные принципы управления.",
             example = "הַסְּטַז'יֶר חָקַר אִם הַחֲקִיקָה עוֹמֶדֶת בְּחֻקָּה.",
             exampleNative = "Стажёр изучал, соответствует ли законодательство חֻקָּה.",
-        ),
+         fillInBlankExclusions = listOf(106304L)),
         WordEntity(
             id = 106324, setId = 1063, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "sanktsia",
@@ -479,7 +479,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Карательная мера, применяемая к нарушителям закона.",
             example = "בֵּית הַמִּשְׁפָּט הִטִּיל סַנְקְצְיָה עַל הַנֶּאֱשָׁם.",
             exampleNative = "Суд наложил סַנְקְצְיָה на обвиняемого.",
-        ),
+         fillInBlankExclusions = listOf(106318L, 106319L)),
 
                 WordEntity(id = 106325, setId = 1063, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "mekhaa",
@@ -657,7 +657,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Отрасль права, изучающая законы в свете конституции государства.",
             example = "דִּין חוּקְתִּי קוֹבֵעַ אֵם חֲקִיקָה מִסְתָּרָת מִזְּכֻיּוֹת הַיְּסוֹד.",
             exampleNative = "דִּין חוּקְתִּי определяет, не нарушает ли законодательство основные права.",
-        ),
+         fillInBlankExclusions = listOf(106407L)),
         WordEntity(
             id = 106419, setId = 1064, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "law_intern_advanced", transliteration = "kviyat ubdót",
@@ -694,7 +694,7 @@ object WordDataHebrewBatch13 {
             definitionNative = "Ответ ответчика на исковое заявление с изложением доводов защиты.",
             example = "עוֹרֵךְ הַדִּין הַגִּישׁ כֶּתֶב הַגָּנָה מֻפְרָט בְּשְׁלוֹשִׁים עַמּוּד.",
             exampleNative = "Адвокат подал подробный כֶּתֶב הַגָּנָה на тридцати страницах.",
-        ),
+         fillInBlankExclusions = listOf(106411L)),
         WordEntity(
             id = 106423, setId = 1064, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "law_intern_advanced", transliteration = "minúy shofét",

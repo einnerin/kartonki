@@ -45,7 +45,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Человек, проходящий службу в вооружённых силах.",
             example = "הַחַיָּל קִיבֵּל חֹפֶשׁ לְסוֹף הַשָּׁבוּעַ.",
             exampleNative = "חַיָּל получил увольнительную на выходные.",
-        ),
+         fillInBlankExclusions = listOf(106704L, 106710L, 106711L, 106721L)),
         WordEntity(
             id = 106703, setId = 1067, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "army_basics", transliteration = "básis",
@@ -54,7 +54,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Военный объект, где располагаются солдаты и техника.",
             example = "הַחַיָּלִים חָזְרוּ לַבָּסִיס לְאַחַר הַתַּרְגִּיל.",
             exampleNative = "Солдаты вернулись на בָּסִיס после учений.",
-        ),
+         fillInBlankExclusions = listOf(106725L)),
         WordEntity(
             id = 106704, setId = 1067, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "army_basics", transliteration = "katsín",
@@ -72,7 +72,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Длинное личное огнестрельное оружие, используемое солдатами.",
             example = "כָּל חַיָּל לְבָדוֹ אַחְרַאי עַל שִׁמּוּרַת הָרוֹבֶה שֶׁלּוֹ.",
             exampleNative = "Каждый солдат лично несёт ответственность за сохранность своего רוֹבֶה.",
-        ),
+         fillInBlankExclusions = listOf(106722L, 106724L)),
         WordEntity(
             id = 106706, setId = 1067, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "army_basics", transliteration = "tironut",
@@ -109,7 +109,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Военная служба солдат, завершивших срочную службу и периодически участвующих в учениях.",
             example = "הוּא קִיבֵּל צַו מִילוּאִים לְשְׁלוֹשִׁים יוֹם.",
             exampleNative = "Он получил повестку на מִילוּאִים на тридцать дней.",
-        ),
+         fillInBlankExclusions = listOf(106707L)),
         WordEntity(
             id = 106710, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_basics", transliteration = "lokhém",
@@ -136,7 +136,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Охранная задача, назначаемая солдату для защиты объекта или людей.",
             example = "הַחַיָּל בִּלָּה אֶת הַלַּיְלָה בְּשַׁמְרָה בִּכְנִיסָה לַבָּסִיס.",
             exampleNative = "Солдат провёл ночь на שַׁמְרָה у входа на базу.",
-        ),
+         fillInBlankExclusions = listOf(106717L, 106725L)),
         WordEntity(
             id = 106713, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_basics", transliteration = "pkudá",
@@ -154,7 +154,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Иерархическая структура военного командования, управляющая силами.",
             example = "הַחַיָּל קִיבֵּל הוֹרָאוֹת מֵהַפִּקּוּד הָעֶלְיוֹן.",
             exampleNative = "Солдат получил приказы от высшего командования.",
-        ),
+         fillInBlankExclusions = listOf(106704L, 106711L)),
         WordEntity(
             id = 106715, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_basics", transliteration = "targíl",
@@ -172,7 +172,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Мягкая круглая шапка, обычно символизирующая подразделение или род войск.",
             example = "צֶבַע הַכּוֹמְתָה מְסַמֵּל אֶת הַחֵיל שֶׁאֵלָיו שַׁיָּךְ הַחַיָּל.",
             exampleNative = "Цвет כּוֹמְתָה символизирует род войск, к которому принадлежит солдат.",
-        ),
+         fillInBlankExclusions = listOf(106720L)),
 
         WordEntity(
             id = 106717, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -182,7 +182,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Конкретная военная задача, возлагаемая на подразделение или солдата.",
             example = "הַמְשִׁימָה הָיְתָה לְהַגִּיעַ לַנְּקוּדָּה לִפְנֵי הָרֹאשׁ.",
             exampleNative = "מְשִׁימָה состояла в том, чтобы достичь точки назначения до рассвета.",
-        ),
+         fillInBlankExclusions = listOf(106713L, 106715L)),
         WordEntity(
             id = 106718, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_basics", transliteration = "nesiga",
@@ -237,7 +237,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Пули, снаряды и взрывчатые вещества, предназначенные для использования в оружии.",
             example = "הַמָּחַסָן אָחְסֵן תַּחְמוֹשֶׁת לְכָל סוּגֵי הַנֶּשֶׁק בַּיְּחִידָה.",
             exampleNative = "Склад хранил תַּחְמוֹשֶׁת для всех видов оружия подразделения.",
-        ),
+         fillInBlankExclusions = listOf(106722L)),
         WordEntity(
             id = 106724, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_basics", transliteration = "neshek",
@@ -246,7 +246,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Боевое средство, используемое для нападения или обороны.",
             example = "כָּל חַיָּל קִיבֵּל נֶשֶׁק אִישִׁי בְּתַחֲלִית הַטִּירוֹנוּת.",
             exampleNative = "Каждый солдат получил личное נֶשֶׁק в начале учебки.",
-        ),
+         fillInBlankExclusions = listOf(106705L, 106722L, 106723L)),
 
         WordEntity(
             id = 106725, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -256,7 +256,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Определённое место, с которого действует солдат или подразделение в ходе боя.",
             example = "הַחַיָּלִים אָחֲזוּ בָּעֶמְדָּה לְאוֹרֶךְ כָּל הַלַּיְלָה.",
             exampleNative = "Солдаты удерживали עֶמְדָּה в течение всей ночи.",
-        ),
+         fillInBlankExclusions = listOf(106703L, 106712L)),
 
         // ──────────────────────────────────────────────────────────────────
         // Set 1068 — צבא — מתקדם  (Army advanced, B1/B2),
@@ -316,7 +316,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Тактическое перемещение техники или подразделения с целью занятия выгодной позиции.",
             example = "הַתַּמְרוּן הַמְּהִיר הִפְתִּיעַ אֶת כּוֹחוֹת הָאוֹיֵב.",
             exampleNative = "Быстрый תַּמְרוּן застал силы противника врасплох.",
-        ),
+         fillInBlankExclusions = listOf(106801L, 106814L, 106825L)),
 
         WordEntity(
             id = 106807, setId = 1068, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -353,7 +353,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Планирование и управление поставками материалов, продовольствия и снаряжения подразделениям в поле.",
             example = "לוֹגִיסְטִיקָה צְבָאִית טוֹבָה הִכְרִיעָה קְרָבוֹת הִיסְטוֹרִיִּים.",
             exampleNative = "Хорошая לוֹגִיסְטִיקָה צְבָאִית решала исход исторических сражений.",
-        ),
+         fillInBlankExclusions = listOf(106811L, 106816L, 106817L)),
         WordEntity(
             id = 106811, setId = 1068, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_advanced", transliteration = "kósher kraví",
@@ -362,7 +362,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Показатель способности подразделения выполнять боевые задачи.",
             example = "שִׁמּוּר כּוֹשֶׁר קְרָבִי גָּבוֹהַּ מְצָרִיךְ אִמּוּן קָבוּעַ.",
             exampleNative = "Поддержание высокой כּוֹשֶׁר קְרָבִי требует постоянных тренировок.",
-        ),
+         fillInBlankExclusions = listOf(106816L)),
         WordEntity(
             id = 106812, setId = 1068, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_advanced", transliteration = "teshit mivsait",
@@ -389,7 +389,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Быстрая атакующая вылазка небольшого подразделения на территорию противника.",
             example = "הַפְּשִׁיטָה הַמְּהִירָה הֶחְלִיצָה אֶת הַשָּׁבוּי.",
             exampleNative = "Быстрая פְּשִׁיטָה освободила пленного.",
-        ),
+         fillInBlankExclusions = listOf(106801L, 106806L, 106825L)),
         WordEntity(
             id = 106815, setId = 1068, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_advanced", transliteration = "ikhsun takhmoshet",
@@ -453,7 +453,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Порядок развёртывания подразделений и техники для вступления в бой.",
             example = "הַחַיָּלִים נִכְנְסוּ לְפּוֹרְמַצְיָה קְרָבִית לִפְנֵי הַכְּנִיסָה לָעִיר.",
             exampleNative = "Солдаты построились в פּוֹרְמַצְיָה קְרָבִית перед входом в город.",
-        ),
+         fillInBlankExclusions = listOf(106824L)),
 
         WordEntity(
             id = 106822, setId = 1068, languagePair = "he-ru", rarity = "RARE",
@@ -472,7 +472,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Боевые действия, ведущиеся в городских кварталах с особыми трудностями застроенной среды.",
             example = "מְלַחֲמָה עִירוֹנִית מַצְרִיכָה טַקְטִיקוֹת שׁוֹנוֹת מֵאַחֲרוֹת.",
             exampleNative = "מְלַחֲמָה עִירוֹנִית требует иной тактики, нежели другие виды боёв.",
-        ),
+         fillInBlankExclusions = listOf(106818L, 106820L)),
         WordEntity(
             id = 106824, setId = 1068, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "army_advanced", transliteration = "mivné kokhót",
@@ -490,7 +490,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Военная операция, объединяющая несколько родов войск или различных сил.",
             example = "מִבְצַע מְשׁוּלָב שֶׁל חֵיל אֲוִיר וְרַגְלִים הִשְׁלִים בְּהַצְלָחָה.",
             exampleNative = "מִבְצַע מְשׁוּלָב ВВС и пехоты завершился успешно.",
-        ),
+         fillInBlankExclusions = listOf(106806L, 106814L)),
 
         // ──────────────────────────────────────────────────────────────────
         // Set 1069 — פוליטיקה  (Politics, A2/B1),
@@ -505,7 +505,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Демократический процесс, в котором граждане выбирают своих представителей.",
             example = "הַבְּחִירוֹת לַכְּנֶסֶת נִקְבְּעוּ לְחֹדֶשׁ נוֹבֶמְבֵּר.",
             exampleNative = "בְּחִירוֹת в Кнессет назначены на ноябрь.",
-        ),
+         fillInBlankExclusions = listOf(106911L)),
         WordEntity(
             id = 106902, setId = 1069, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "knéset",
@@ -514,7 +514,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Законодательный орган государства Израиль, состоящий из 120 членов.",
             example = "הַכְּנֶסֶת אִישְׁרָה אֶת תַּקְצִיב הַמְּדִינָה לַשָּׁנָה הַבָּאָה.",
             exampleNative = "כְּנֶסֶת утвердил государственный бюджет на следующий год.",
-        ),
+         fillInBlankExclusions = listOf(106904L, 106910L, 106917L, 106918L)),
         WordEntity(
             id = 106903, setId = 1069, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "sar",
@@ -560,7 +560,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Руководитель правительства, возглавляющий исполнительную власть.",
             example = "רֹאשׁ הַמֶּמְשָׁלָה נִפְגַּשׁ עִם מְנַהִיגֵי הָעוֹלָם בְּעֲצֶרֶת הָאוּ\"ם.",
             exampleNative = "רֹאשׁ הַמֶּמְשָׁלָה встретился с мировыми лидерами на Генассамблее ООН.",
-        ),
+         fillInBlankExclusions = listOf(106903L, 106906L, 106912L)),
         WordEntity(
             id = 106908, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "khaver knéset",
@@ -569,7 +569,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Избранный представитель, представляющий избирателей в Кнессете.",
             example = "הַחָבֵר כְּנֶסֶת הֵגִישׁ הַצָּעַת חוֹק לְחִיסוּל הַבִּיּוּרוֹקְרַטְיָה.",
             exampleNative = "חָבֵר כְּנֶסֶת внёс законопроект об устранении бюрократии.",
-        ),
+         fillInBlankExclusions = listOf(106903L, 106906L)),
         WordEntity(
             id = 106909, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "opozitsyá",
@@ -578,7 +578,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Партии Кнессета, не входящие в правящую коалицию.",
             example = "הָאוֹפּוֹזִיצְיָה דָּרְשָׁה בְּדִיקָה פַּרְלָמֶנְטָרִית לַפָּרָשָׁה.",
             exampleNative = "אוֹפּוֹזִיצְיָה потребовала парламентского расследования скандала.",
-        ),
+         fillInBlankExclusions = listOf(106905L, 106910L, 106917L, 106918L)),
         WordEntity(
             id = 106910, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "koalitsyá",
@@ -596,7 +596,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Действие, посредством которого депутат или гражданин выражает своё решение.",
             example = "הַהַצְבָּעָה בַּכְּנֶסֶת הֵסְתַּיְּמָה בְּשֵׁשִׁים וְאַחַת לְעֶשְׂרִים וְחָמֵשׁ.",
             exampleNative = "הַצְבָּעָה в Кнессете завершилась 61 против 25.",
-        ),
+         fillInBlankExclusions = listOf(106901L)),
         WordEntity(
             id = 106912, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "rosh ír",
@@ -632,7 +632,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Полномочия, предоставляемые избранному лицу для ведения дел от имени избирателей.",
             example = "הַנָּשִׂיא הִטִּיל עַל רֹאשׁ הַמֶּמְשָׁלָה מַנְדָּט לְהַרְכִּיב מֶמְשָׁלָה.",
             exampleNative = "Президент возложил на премьер-министра מַנְדָּט по формированию правительства.",
-        ),
+         fillInBlankExclusions = listOf(106924L)),
         WordEntity(
             id = 106916, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "memshál",
@@ -669,7 +669,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Публичное обсуждение, в ходе которого представляют противоположные мнения по политическому вопросу.",
             example = "וִיכּוּחַ צִיבּוּרִי עַל תַּקְנוֹת סְבִיבָתִיּוֹת הִתְקַיֵּם בָּאוּלָם.",
             exampleNative = "В зале прошли וִיכּוּחַ צִיבּוּרִי по экологическим нормам.",
-        ),
+         fillInBlankExclusions = listOf(106911L, 106925L)),
         WordEntity(
             id = 106920, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "shvuá",
@@ -687,7 +687,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Форма правления, при которой народ является источником властных полномочий.",
             example = "דֵּמוֹקְרָטְיָה תְּקִינָה דּוֹרֶשֶׁת מִסְגְּרוֹת חוּקְתִּיּוֹת חֲזָקוֹת.",
             exampleNative = "Здоровая דֵּמוֹקְרָטְיָה требует сильных конституционных институтов.",
-        ),
+         fillInBlankExclusions = listOf(106904L, 106905L, 106909L, 106910L, 106923L)),
 
         WordEntity(
             id = 106922, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -697,7 +697,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Официальное предложение нового законодательства, вносимое в Кнессет для обсуждения и голосования.",
             example = "חָבֵר הַכְּנֶסֶת הֵגִישׁ הֲצָעַת חוֹק לְהוֹזָלַת הַדְּיוּר.",
             exampleNative = "Депутат внёс הֲצָעַת חוֹק об удешевлении жилья.",
-        ),
+         fillInBlankExclusions = listOf(106923L)),
         WordEntity(
             id = 106923, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "khakiká",
@@ -706,7 +706,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Процесс создания законов законодательным органом.",
             example = "הַחֲקִיקָה הַחֲדָשָׁה תִּכָּנֵס לְתֹקֶף בַּחֹדֶשׁ הַבָּא.",
             exampleNative = "Новое חֲקִיקָה вступит в силу в следующем месяце.",
-        ),
+         fillInBlankExclusions = listOf(106922L)),
         WordEntity(
             id = 106924, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics", transliteration = "shlikhút",
@@ -724,7 +724,7 @@ object WordDataHebrewBatch15 {
             definitionNative = "Официальное собрание представителей или специалистов для обсуждения конкретных вопросов.",
             example = "כֶּנֶס בֵּינְלְאוּמִי בְּנוֹשֵׂא הָאַקְלִים נִפְתַּח בְּיְרוּשָׁלַיִם.",
             exampleNative = "Международный כֶּנֶס по климату открылся в Иерусалиме.",
-        ),
+         fillInBlankExclusions = listOf(106919L)),
 
     )
 }

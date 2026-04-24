@@ -235,7 +235,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Столица Израиля и духовный центр трёх религий.",
             example = "יְרוּשָׁלַיִם הִיא אַחַת הֶעָרִים הָעַתִּיקוֹת בָּעוֹלָם.",
             exampleNative = "Иерусалим — один из древнейших городов мира.",
-        ),
+         fillInBlankExclusions = listOf(107402L, 107405L, 107409L)),
         WordEntity(
             id = 107402, setId = 1074, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "tel aviv",
@@ -244,7 +244,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Крупнейший город и экономический и культурный центр Израиля.",
             example = "תֵּל אָבִיב מְפֻרְסֶמֶת בְּחַיֵּי הַלַּיְלָה וְהַחוֹפִים שֶׁלָּהּ.",
             exampleNative = "Тель-Авив знаменит своей ночной жизнью и пляжами.",
-        ),
+         fillInBlankExclusions = listOf(107401L, 107405L, 107409L)),
         WordEntity(
             id = 107403, setId = 1074, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "yehudi",
@@ -289,7 +289,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Библейское название Иерусалима и Земли Израиля — символ еврейского возвращения.",
             example = "בְּשִׁירִים וְתְּפִלּוֹת צִיּוֹן מְסַמֵּל אֶת חֲלוֹם הַחֲזָרָה לָאָרֶץ.",
             exampleNative = "В песнях и молитвах Цион символизирует мечту о возвращении на родину.",
-        ),
+         fillInBlankExclusions = listOf(107404L, 107408L, 107410L, 107417L)),
         WordEntity(
             id = 107408, setId = 1074, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "kotel",
@@ -345,7 +345,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Глава государства Израиль — преимущественно церемониальная должность.",
             example = "נְשִׂיא יִשְׂרָאֵל מְסַמֵּל אֶת אַחְדוּת הָעָם.",
             exampleNative = "Президент Израиля символизирует единство народа.",
-        ),
+         fillInBlankExclusions = listOf(107404L, 107417L)),
         WordEntity(
             id = 107414, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "kibuts",
@@ -381,7 +381,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Главный еврейский символ — два переплетённых треугольника.",
             example = "מָגֵן דָּוִד מוֹפִיעַ עַל דֶּגֶל מְדִינַת יִשְׂרָאֵל.",
             exampleNative = "Звезда Давида изображена на флаге государства Израиль.",
-        ),
+         fillInBlankExclusions = listOf(107407L)),
         WordEntity(
             id = 107418, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "yom atsmaut",
@@ -417,7 +417,7 @@ object WordDataHebrewBatch17 {
             definitionNative = "Правительственное министерство, ответственное за регистрацию граждан и статус населения.",
             example = "הָעוֹלֶה חַיָּב לְהֵירָשֵׁם בְּמִשְׁרַד הַפְּנִים תּוֹךְ שִׁישִּׁים יוֹם.",
             exampleNative = "Репатриант обязан зарегистрироваться в Министерстве внутренних дел в течение шестидесяти дней.",
-        ),
+         fillInBlankExclusions = listOf(107419L)),
         WordEntity(
             id = 107422, setId = 1074, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya", transliteration = "hok hashvut",

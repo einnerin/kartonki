@@ -42,7 +42,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Первая часть Библии — Пятикнижие Моисея.",
             example = "הַתּוֹרָה נִקְרֵאת בְּבֵית הַכְּנֶסֶת בְּשַׁבָּת.",
             exampleNative = "Тора читается в синагоге по субботам.",
-        ),
+         fillInBlankExclusions = listOf(107023L)),
         WordEntity(
             id = 107002, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "siddur",
@@ -51,7 +51,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Потомок Аарона, служивший в Храме; в иудаизме — особый статус.",
             example = "הַכּוֹהֵן בֵּרַךְ אֶת הָעָם בְּסוֹף הַתְּפִלָּה.",
             exampleNative = "Коэн благословил народ в конце молитвы.",
-        ),
+         fillInBlankExclusions = listOf(107003L, 107018L)),
         WordEntity(
             id = 107003, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "rav",
@@ -60,7 +60,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Духовный лидер еврейской общины.",
             example = "הָרַב נָתַן דְּרָשָׁה לִפְנֵי הַתְּפִלָּה.",
             exampleNative = "Раввин произнёс проповедь перед молитвой.",
-        ),
+         fillInBlankExclusions = listOf(107002L)),
         WordEntity(
             id = 107004, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "kippa",
@@ -69,7 +69,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Головной убор еврейских мужчин как символ богобоязненности.",
             example = "הוּא לוֹבֵשׁ כִּפָּה בְּכָל יוֹם.",
             exampleNative = "Он носит кипу каждый день.",
-        ),
+         fillInBlankExclusions = listOf(107011L)),
         WordEntity(
             id = 107005, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "kidush",
@@ -98,7 +98,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Одна из 613 заповедей, которые евреи обязаны соблюдать; также доброе дело в общем смысле.",
             example = "לְעֵזוֹר לַקָּשִׁישׁ זוֹ מִצְוָה גְּדוֹלָה.",
             exampleNative = "Помочь пожилому человеку — это большая мицва.",
-        ),
+         fillInBlankExclusions = listOf(107023L)),
         WordEntity(
             id = 107008, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "kehila",
@@ -143,7 +143,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Десять евреев, необходимых для проведения общественной молитвы.",
             example = "אֵין מִנְיָן — לֹא אֶפְשָׁר לְהִתְפַּלֵּל בְּצִבּוּר.",
             exampleNative = "Нет миньяна — нельзя молиться общественно.",
-        ),
+         fillInBlankExclusions = listOf(107019L)),
         WordEntity(
             id = 107013, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion", transliteration = "bar mitsva",
@@ -278,7 +278,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Конечное освобождение народа Израиля и мира, согласно еврейской вере.",
             example = "תְּפִלַּת הַגְּאֻלָּה הִיא חֵלֶק מֵהַתְּפִלָּה הַיּוֹמִית.",
             exampleNative = "Молитва о גְּאֻלָּה — часть ежедневного молитвенного порядка.",
-        ),
+         fillInBlankExclusions = listOf(107102L, 107107L, 107111L)),
         WordEntity(
             id = 107102, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "emuna",
@@ -287,7 +287,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Вера в Бога и религию как основа жизни.",
             example = "הָאֵמוּנָה שֶׁלּוֹ חִזְּקָה אוֹתוֹ בְּתְקוּפַת הַמַּשְׁבֵּר.",
             exampleNative = "Его אֵמוּנָה поддержала его в период кризиса.",
-        ),
+         fillInBlankExclusions = listOf(107101L, 107111L)),
         WordEntity(
             id = 107103, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "religion_advanced", transliteration = "khared",
@@ -370,7 +370,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Религиозно-мистическое движение, возникшее в Восточной Европе в XVIII веке.",
             example = "הַחֲסִידוּת מַדְגִּישָׁה שִׂמְחָה, תְּפִלָּה בְּלֵב שָׁלֵם וְאַהֲבַת הַשֵּׁם.",
             exampleNative = "Хасидизм делает акцент на радости, искренней молитве и любви к Богу.",
-        ),
+         fillInBlankExclusions = listOf(107102L, 107123L)),
         WordEntity(
             id = 107112, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "kahal",
@@ -406,7 +406,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Еврей, предки которого из Восточной или Центральной Европы.",
             example = "הַמַּטְבָּח הָאַשְׁכְּנַזִּי כּוֹלֵל גֶ'פִילְטֶה פִישׁ וּבוֹרְשְׁט.",
             exampleNative = "Ашкеназская кухня включает гефилте фиш и борщ.",
-        ),
+         fillInBlankExclusions = listOf(107109L, 107116L)),
         WordEntity(
             id = 107116, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "religion_advanced", transliteration = "sfardi",
@@ -435,7 +435,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Движение за совершенствование нравственных качеств в религиозной жизни, основанное рабби Исраэлем Салантером.",
             example = "לִמּוּד מוּסָר מְלַמֵּד כֵּיצַד לְשַׁלְּטֵר יֵצֶר.",
             exampleNative = "Изучение мусара учит, как обуздать дурное влечение.",
-        ),
+         fillInBlankExclusions = listOf(107117L, 107119L, 107120L, 107121L)),
         WordEntity(
             id = 107119, setId = 1071, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "Mishna",
@@ -453,7 +453,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Обширное обсуждение амораев Мишны — вместе они составляют Талмуд.",
             example = "לִמּוּד גְּמָרָא דּוֹרֵשׁ הֲבָנַת אֲרָמִית.",
             exampleNative = "Изучение Гемары требует понимания арамейского.",
-        ),
+         fillInBlankExclusions = listOf(107119L, 107121L)),
         WordEntity(
             id = 107121, setId = 1071, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "religion_advanced", transliteration = "midrash",
@@ -531,7 +531,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Распространённый струнный инструмент в популярной музыке.",
             example = "הִיא מְנַגֶּנֶת גִּיטָרָה בְּלַהֲקָה.",
             exampleNative = "Она играет на гитаре в группе.",
-        ),
+         fillInBlankExclusions = listOf(107204L, 107205L, 107212L, 107213L, 107220L, 107223L)),
         WordEntity(
             id = 107204, setId = 1072, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "music", transliteration = "tof",
@@ -549,7 +549,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Большой клавишный инструмент со струнами и молоточковым механизмом.",
             example = "הִיא נָגְנָה עַל הַפִּסְנְתֵּר בְּהַצָּגַת הַסִּיּוּם.",
             exampleNative = "Она играла на фортепиано на выпускном концерте.",
-        ),
+         fillInBlankExclusions = listOf(107203L, 107204L, 107212L, 107213L, 107220L, 107223L)),
         WordEntity(
             id = 107206, setId = 1072, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "music", transliteration = "lahaka",
@@ -605,7 +605,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Коллекция песен исполнителя или группы, выпущенная вместе.",
             example = "הָאַלְבּוֹם הַחָדָשׁ יָצָא מֵחוּץ לַחוֹדֶשׁ.",
             exampleNative = "Новый альбом вышел в прошлом месяце.",
-        ),
+         fillInBlankExclusions = listOf(107201L)),
         WordEntity(
             id = 107212, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "kinor",
@@ -614,7 +614,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Смычковый струнный инструмент, центральный в классической музыке.",
             example = "הוּא לָמַד כִּנּוֹר בְּקוֹנְסֶרְוָטוֹרְיוֹן.",
             exampleNative = "Он учился на скрипке в консерватории.",
-        ),
+         fillInBlankExclusions = listOf(107203L, 107204L, 107205L, 107213L, 107220L, 107223L)),
         WordEntity(
             id = 107213, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "khalil",
@@ -623,7 +623,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Духовой инструмент в форме трубки из металла или дерева.",
             example = "הִיא מְנַגֶּנֶת חָלִיל בְּתִזְמֹרֶת הַנּוֹעַר.",
             exampleNative = "Она играет на флейте в молодёжном оркестре.",
-        ),
+         fillInBlankExclusions = listOf(107203L, 107204L, 107205L, 107212L, 107220L, 107223L)),
         WordEntity(
             id = 107214, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "milim",
@@ -650,7 +650,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Жанр лёгкой и доступной популярной музыки.",
             example = "מוּסִיקַת פּוֹפ דּוֹמִינָנְטִית בְּרָדִיוֹ.",
             exampleNative = "Поп-музыка доминирует на радио.",
-        ),
+         fillInBlankExclusions = listOf(107217L)),
 
         // RARE (B2),
         WordEntity(
@@ -661,7 +661,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Музыкальный жанр с электрогитарами и сильным ритмом.",
             example = "לַהֲקַת רוֹק יִשְׂרְאֵלִית הוֹפִיעָה בְּאֵירוֹוִיזְיוֹן.",
             exampleNative = "Израильская рок-группа выступила на Евровидении.",
-        ),
+         fillInBlankExclusions = listOf(107216L)),
         WordEntity(
             id = 107218, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "harmoniya",
@@ -670,7 +670,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Одновременное звучание нескольких нот, создающее приятный эффект.",
             example = "הַהַרְמוֹנְיָה בַּשִּׁיר הַזֶּה מְאֹד מוֹרְכֶּבֶת.",
             exampleNative = "Гармония в этой песне очень сложная.",
-        ),
+         fillInBlankExclusions = listOf(107207L)),
         WordEntity(
             id = 107219, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "akord",
@@ -688,7 +688,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Ударные инструменты, на которых играют, ударяя по натянутой мембране.",
             example = "הַמְנַגֵּן עַל הַתּוֹפִים הִשְׁמִיעַ רִיתְמוּס מִגְרֶה.",
             exampleNative = "Барабанщик играл захватывающий ритм на תּוֹפִים.",
-        ),
+         fillInBlankExclusions = listOf(107203L, 107204L, 107205L, 107212L, 107213L, 107223L)),
         WordEntity(
             id = 107221, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "dance", transliteration = "mikhol",
@@ -697,7 +697,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Художественное движение под музыку, как правило перед аудиторией.",
             example = "הֵם הִצִּיגוּ מִחוֹל מָסׇרְתִּי בְּאֵצַע הָאוּלְפַּן.",
             exampleNative = "Они показали традиционный מִחוֹל на студийном шоу.",
-        ),
+         fillInBlankExclusions = listOf(107222L)),
 
         WordEntity(
             id = 107222, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -707,7 +707,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Вид представления, сочетающий классический танец, музыку и сценографию.",
             example = "הֵם הָלְכוּ לְהַצָּגַת בָּלֶט בָּאוֹפֶּרָה הַיִּשְׂרְאֵלִית.",
             exampleNative = "Они пошли на спектакль בָּלֶט в Израильской опере.",
-        ),
+         fillInBlankExclusions = listOf(107210L, 107221L)),
         WordEntity(
             id = 107223, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music", transliteration = "khutsotstra",
@@ -716,7 +716,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Металлический духовой инструмент с ярким и резким звуком.",
             example = "הוּא מְנַגֵּן עַל חֻצּוֹצְרָה בְּתִזְמֹרֶת הָעִיר.",
             exampleNative = "Он играет на חֻצּוֹצְרָה в городском оркестре.",
-        ),
+         fillInBlankExclusions = listOf(107203L, 107204L, 107205L, 107212L, 107213L, 107220L)),
         WordEntity(
             id = 107224, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "art", transliteration = "yotser",
@@ -725,7 +725,7 @@ object WordDataHebrewBatch16 {
             definitionNative = "Человек, создающий произведения искусства — музыку, поэзию, живопись и тому подобное.",
             example = "הוּא יוֹצֵר מְחוֹנָן שֶׁמְּשַׁלֵּב מוּסִיקָה וּשִׁיר.",
             exampleNative = "Он одарённый יוֹצֵר, сочетающий музыку и поэзию.",
-        ),
+         fillInBlankExclusions = listOf(107209L, 107225L)),
 
         WordEntity(
             id = 107225, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -735,6 +735,6 @@ object WordDataHebrewBatch16 {
             definitionNative = "Красящие материалы, используемые для рисования и художественного творчества.",
             example = "הִיא קָנְתָה צְבָעִים חֲדָשִׁים לְשִׁיעוּר הַצִּיּוּר.",
             exampleNative = "Она купила новые צְבָעִים для урока рисования.",
-        ),
+         fillInBlankExclusions = listOf(107224L)),
     )
 }
