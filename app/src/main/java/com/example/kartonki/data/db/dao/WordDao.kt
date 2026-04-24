@@ -22,6 +22,10 @@ interface WordDao {
     @Query("SELECT COUNT(*) FROM words")
     suspend fun getWordCount(): Int
 
+    /** Bulk-delete words belonging to given setIds — used by orphan cleanup in WordLoader. */
+    @Query("DELETE FROM words WHERE setId IN (:setIds)")
+    suspend fun deleteWordsBySetIds(setIds: List<Long>)
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertAll(words: List<WordEntity>)
 

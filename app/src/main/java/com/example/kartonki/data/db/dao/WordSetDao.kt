@@ -32,6 +32,10 @@ interface WordSetDao {
     @Query("SELECT COUNT(*) FROM word_sets")
     suspend fun getSetCount(): Int
 
+    /** Returns all setIds currently in the DB — used to detect orphan sets after seed updates. */
+    @Query("SELECT id FROM word_sets")
+    suspend fun getAllSetIds(): List<Long>
+
     @Query("SELECT COUNT(*) FROM word_sets WHERE languagePair = :languagePair")
     suspend fun getSetCountByLanguage(languagePair: String): Int
 

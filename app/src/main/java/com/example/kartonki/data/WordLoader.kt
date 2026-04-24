@@ -59,6 +59,19 @@ class WordLoader @Inject constructor(
         val memberships = allWords.map { WordSetMembershipEntity(it.id, it.setId) }
 
         db.withTransaction {
+            // ── Orphan cleanup: remove sets/words that no longer exist in seed code ───
+            // Without this, sets accumulate forever — e.g. when skeleton sets get filtered
+            // out via WordRegistry.EXCLUDE_SKELETON_SETS_FROM_RELEASE or when a set is
+            // deleted/renumbered, the old rows linger in the DB from previous app versions.
+            val canonicalSetIds = allSets.map { it.id }.toSet()
+            val existingSetIds = wordSetDao.getAllSetIds().toSet()
+            val orphanSetIds = existingSetIds - canonicalSetIds
+            if (orphanSetIds.isNotEmpty()) {
+                val orphanList = orphanSetIds.toList()
+                wordSetDao.deleteSetsById(orphanList)
+                wordDao.deleteWordsBySetIds(orphanList)
+            }
+
             // Insert sets not yet in the DB; existing rows skipped (IGNORE).
             wordSetDao.insertSets(allSets)
             // Sync seed-controlled metadata (name, description, orderIndex) for all sets,
