@@ -67,6 +67,11 @@ object WordRegistry {
                 WordDataEnglishBatch16.sets +
                 WordDataEnglishBatch17.sets +
                 WordDataEnglishBatch18.sets +
+                WordDataEnglishJournalism2.sets +
+                WordDataEnglishHistory2.sets +
+                WordDataEnglishClothing2.sets +
+                WordDataEnglishSports2.sets +
+                WordDataEnglishTransport2.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewTech.sets +
@@ -201,6 +206,11 @@ object WordRegistry {
                 WordDataEnglishBatch16.words +
                 WordDataEnglishBatch17.words +
                 WordDataEnglishBatch18.words +
+                WordDataEnglishJournalism2.words +
+                WordDataEnglishHistory2.words +
+                WordDataEnglishClothing2.words +
+                WordDataEnglishSports2.words +
+                WordDataEnglishTransport2.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words +
