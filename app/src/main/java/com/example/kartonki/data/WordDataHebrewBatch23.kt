@@ -7,13 +7,6 @@ object WordDataHebrewBatch23 {
 
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
-            id = 1091, languagePair = "he-ru", orderIndex = 1091,
-            name = "Финансы",
-            description = "Макро- и микроэкономика, рынки и теории",
-            topic = "Финансы",
-            level = 4
-        ),
-        WordSetEntity(
             id = 1092, languagePair = "he-ru", orderIndex = 1092,
             name = "Философия",
             description = "Направления, понятия и великие вопросы",
@@ -34,63 +27,13 @@ object WordDataHebrewBatch23 {
         // ── Set 1091: Экономика ────────────────────────────────────────────
 
         // RARE (B2),
-        WordEntity(id = 109101, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "דִּיבִידֶנְד", translation = "дивиденд", transliteration = "dividend"),
-        WordEntity(id = 109102, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "תְּשׁוּאָה", translation = "доходность; доход на инвестиции", transliteration = "tshu'a"),
-        WordEntity(id = 109103, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "מִינוּף", translation = "кредитное плечо; леверидж", transliteration = "minuf"),
-        WordEntity(id = 109104, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "תִּזְרִים מָזוּמָן", translation = "денежный поток", transliteration = "tizrim mazuman"),
-        WordEntity(id = 109105, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "נְיָר עֵרֶךְ", translation = "ценная бумага", transliteration = "nyar erekh"),
-        WordEntity(id = 109106, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "קֶרֶן גֵּידוּר", translation = "хедж-фонд", transliteration = "keren gidur"),
-        WordEntity(id = 109107, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "פּוֹרְטְפוֹלִיוֹ", translation = "инвестиционный портфель", transliteration = "portfolio"),
-        WordEntity(id = 109108, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "אֶגְרוֹת חוֹב", translation = "облигации", transliteration = "igrot khov"),
-        WordEntity(id = 109109, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "מַטְבֵּעַ דִּיגִיטָלִי", translation = "цифровая валюта", transliteration = "matbe'a digitali"),
-        WordEntity(id = 109110, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "מִמְשָׁל תַּאֲגִידִי", translation = "корпоративное управление", transliteration = "mimshal ta'agidi"),
 
         // EPIC (C1),
-        WordEntity(id = 109111, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "מַסְחַר אַלְגוֹרִיתְמִי", translation = "алгоритмическая торговля", transliteration = "maskhar algoritmí"),
-        WordEntity(id = 109112, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "פִּינְתֶּק", translation = "финтех; финансовые технологии", transliteration = "fintek"),
-        WordEntity(id = 109113, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "אֶקוֹנוֹמֶטְרְיָה", translation = "эконометрика", transliteration = "ekonometrya"),
-        WordEntity(id = 109114, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "כַּלְכָּלָה דִּיגִיטָלִית", translation = "цифровая экономика", transliteration = "kalkala digitalit"),
-        WordEntity(id = 109115, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "חַדְשָׁנוּת פִּינַנְסִית", translation = "финансовые инновации", transliteration = "khadshmanut finansit"),
-        WordEntity(id = 109116, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "בּוּעָה כַּלְכָּלִית", translation = "экономический пузырь", transliteration = "bu'a kalkalit"),
 
         // RARE (B2),
-        WordEntity(id = 109117, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "פּרוֹטֶקְצְיוֹנִיזְם", translation = "протекционизм", transliteration = "протэкционизм"),
-        WordEntity(id = 109118, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "כַּלְכָּלַת שׁוּק", translation = "рыночная экономика", transliteration = "калкалат шук"),
-        WordEntity(id = 109119, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "כַּלְכָּלָה תַּכְנוּנִית", translation = "плановая экономика", transliteration = "калкала тахнунит"),
-        WordEntity(id = 109120, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "מַקְרוֹ-כַּלְכָּלָה", translation = "макроэкономика", transliteration = "макро-калкала"),
-        WordEntity(id = 109121, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "מִיקְרוֹ-כַּלְכָּלָה", translation = "микроэкономика", transliteration = "микро-калкала"),
 
         // EPIC (C1),
-        WordEntity(id = 109122, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "פּוֹפּוּלִיזְם כַּלְכָּלִי", translation = "экономический популизм", transliteration = "популизм калкали"),
-        WordEntity(id = 109123, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "כַּלְכָּלָה הֶתְנְהַגּוּתִית", translation = "поведенческая экономика", transliteration = "калкала hэтнhагутит"),
-        WordEntity(id = 109124, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "תֵּיאוֹרְיַת הַמִּשְׂחָקִים", translation = "теория игр", transliteration = "тэиорйат hамисхаким"),
 
-        WordEntity(id = 109125, setId = 1091, languagePair = "he-ru", rarity = "EPIC",
-            original = "נִיהוּל סִיכּוּנִים פִּינַנְסִיִּים", translation = "управление финансовыми рисками", transliteration = "nihul sikunim finansiyim"),
 
         // ── Set 1092: Философия ────────────────────────────────────────────
 

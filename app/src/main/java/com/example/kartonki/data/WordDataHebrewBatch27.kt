@@ -7,12 +7,6 @@ object WordDataHebrewBatch27 {
 
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
-            id = 1103, languagePair = "he-ru", orderIndex = 1103,
-            name = "Природа и экология", description = "Земледелие, животноводство и агротехнологии"
-        ,
-            topic = "Природа и экология",
-            level = 2),
-        WordSetEntity(
             id = 1104, languagePair = "he-ru", orderIndex = 1104,
             name = "Одежда", description = "Материалы, цвета и базовые элементы одежды"
         ,
@@ -30,47 +24,7 @@ object WordDataHebrewBatch27 {
 
         // ── Set 1103: Сельское хозяйство ─────────────────────────────────
         // UNCOMMON (A2-B1),
-        WordEntity(id = 110301, setId = 1103, languagePair = "he-ru", original = "בַּצּוֹרֶת", translation = "засуха", transliteration = "batzóret", rarity = "UNCOMMON"),
-        WordEntity(id = 110302, setId = 1103, languagePair = "he-ru", original = "עִיבּוּד אֲדָמָה", translation = "обработка земли; земледелие", transliteration = "ibud adama", rarity = "UNCOMMON"),
-        WordEntity(id = 110303, setId = 1103, languagePair = "he-ru", original = "קַרְקַע", translation = "почва; грунт", transliteration = "karka", rarity = "UNCOMMON"),
-        WordEntity(id = 110304, setId = 1103, languagePair = "he-ru", original = "מִרְעֶה", translation = "пастбище", transliteration = "mir'e", rarity = "UNCOMMON"),
-        WordEntity(id = 110305, setId = 1103, languagePair = "he-ru", original = "פּוֹרְיוּת", translation = "плодородность", transliteration = "poriyut", rarity = "UNCOMMON"),
-        WordEntity(id = 110306, setId = 1103, languagePair = "he-ru", original = "עֶדֶר", translation = "стадо; отара", transliteration = "eder", rarity = "UNCOMMON"),
-        WordEntity(id = 110307, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דֶּשֶׁן", translation = "удобрение", transliteration = "дэшэн"),
-        WordEntity(id = 110308, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חַמָּמָה", translation = "теплица", transliteration = "хамама"),
-        WordEntity(id = 110309, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַחֲרֵשָׁה", translation = "плуг", transliteration = "махарэша"),
-        WordEntity(id = 110310, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גִּידוּל", translation = "культивация", transliteration = "гидул"),
-        WordEntity(id = 110311, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "בָּקָר", translation = "крупный рогатый скот", transliteration = "бакар"),
-        WordEntity(id = 110312, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כֶּבֶשׂ", translation = "овца", transliteration = "кэвэс"),
-        WordEntity(id = 110313, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כְּרֶם", translation = "виноградник", transliteration = "крэм"),
-        WordEntity(id = 110314, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אוֹרְגָּנִי", translation = "органический", transliteration = "органи"),
-        WordEntity(id = 110315, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֶלְקָה", translation = "земельный участок", transliteration = "хэлка"),
-        WordEntity(id = 110316, setId = 1103, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קוֹמְבַּיְן", translation = "комбайн", transliteration = "комбайн"),
-        WordEntity(id = 110317, setId = 1103, languagePair = "he-ru", rarity = "RARE",
-            original = "הַדְבָּרָה", translation = "борьба с вредителями", transliteration = "hадбара"),
-        WordEntity(id = 110318, setId = 1103, languagePair = "he-ru", rarity = "RARE",
-            original = "חֲרִישָׁה", translation = "вспашка", transliteration = "хариша"),
-        WordEntity(id = 110319, setId = 1103, languagePair = "he-ru", rarity = "RARE",
-            original = "זְרִיעַת כִּסּוּי", translation = "покровные культуры", transliteration = "зриат кисуи"),
-        WordEntity(id = 110320, setId = 1103, languagePair = "he-ru", rarity = "RARE",
-            original = "רוֹטַצְיַת גִּידוּלִים", translation = "севооборот", transliteration = "ротацйат гидулим"),
-        WordEntity(id = 110321, setId = 1103, languagePair = "he-ru", rarity = "RARE",
-            original = "אַקְוָה-פּוֹנִיקָה", translation = "аквапоника", transliteration = "аква-поника"),
         // RARE (B2),
-        WordEntity(id = 110322, setId = 1103, languagePair = "he-ru", original = "אָגְרוֹ-טֶכְנוֹלוֹגְיָה", translation = "агротехнология", transliteration = "agro-tekhnologiya", rarity = "RARE"),
-        WordEntity(id = 110323, setId = 1103, languagePair = "he-ru", original = "חֲקְלָאוּת קַיֶּמֶת", translation = "устойчивое сельское хозяйство", transliteration = "khaklaút kayyémet", rarity = "RARE"),
-        WordEntity(id = 110324, setId = 1103, languagePair = "he-ru", original = "שִׁיקּוּם אֲדָמוֹת", translation = "рекультивация земель", transliteration = "shikum adamot", rarity = "RARE"),
-        WordEntity(id = 110325, setId = 1103, languagePair = "he-ru", original = "מִחְזוּר אוֹרְגָּנִי", translation = "органический рециклинг", transliteration = "mikhzur organi", rarity = "RARE"),
 
         // ── Set 1104: Одежда — материалы, цвета и базовые элементы (level=2) ──
 

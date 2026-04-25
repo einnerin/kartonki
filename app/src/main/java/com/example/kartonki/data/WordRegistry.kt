@@ -109,7 +109,6 @@ object WordRegistry {
                 WordDataEnglishFinanceL5.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
-                WordDataHebrewTech.sets +
                 WordDataHebrewImmigrant.sets +
                 WordDataHebrewImmigrant2.sets +
                 WordDataHebrewImmigrant3.sets +
@@ -123,46 +122,27 @@ object WordRegistry {
                 WordDataHebrewBatch9.sets +
                 WordDataHebrewBatch10.sets +
                 WordDataHebrewBatch11.sets +
-                WordDataHebrewBatch12.sets +
                 WordDataHebrewBatch13.sets +
-                WordDataHebrewBatch14.sets +
                 WordDataHebrewBatch15.sets +
                 WordDataHebrewBatch16.sets +
-                WordDataHebrewBatch17.sets +
                 WordDataHebrewBatch18.sets +
-                WordDataHebrewBatch19.sets +
                 WordDataHebrewBatch20.sets +
                 WordDataHebrewBatch21.sets +
                 WordDataHebrewBatch22.sets +
                 WordDataHebrewBatch23.sets +
                 WordDataHebrewBatch24.sets +
                 WordDataHebrewBatch25.sets +
-                WordDataHebrewBatch26.sets +
                 WordDataHebrewBatch27.sets +
-                WordDataHebrewBatch28.sets +
-                WordDataHebrewBatch29.sets +
-                WordDataHebrewBatch30.sets +
-                WordDataHebrewBatch31.sets +
-                WordDataHebrewBatch32.sets +
                 WordDataHebrewBatch33.sets +
-                WordDataHebrewBatch34.sets +
-                WordDataHebrewBatch35.sets +
-                WordDataHebrewBatch36.sets +
-                WordDataHebrewBatch37.sets +
-                WordDataHebrewBatch38.sets +
                 WordDataHebrewBatch39.sets +
-                WordDataHebrewImmigrant7.sets +
-                WordDataHebrewImmigrant8.sets +
                 WordDataHebrewImmigrant9.sets +
                 WordDataHebrewImmigrant10.sets +
                 WordDataHebrewImmigrant11.sets +
                 WordDataHebrewImmigrant12.sets +
                 WordDataHebrewImmigrant13.sets +
-                WordDataHebrewImmigrant14.sets +
                 WordDataHebrewImmigrant15.sets +
                 WordDataHebrewImmigrant16.sets +
                 WordDataHebrewBatch40.sets +
-                WordDataHebrewBatch41.sets +
                 WordDataHebrewBatch42.sets +
                 WordDataHebrewBatch43.sets +
                 WordDataHebrewBatch44.sets +
@@ -197,21 +177,14 @@ object WordRegistry {
                 WordDataHebrewBatch73.sets +
                 WordDataHebrewBatch74.sets +
                 WordDataHebrewBatch75.sets +
-                WordDataHebrewBatch76.sets +
                 WordDataHebrewBatch77.sets +
-                WordDataHebrewBatch78.sets +
                 WordDataHebrewBatch79.sets +
                 WordDataHebrewBatch80.sets +
                 WordDataHebrewBatch81.sets +
                 WordDataHebrewBatch82.sets +
                 WordDataHebrewBatch83.sets +
-                WordDataHebrewBatch84.sets +
-                WordDataHebrewBatch85.sets +
-                WordDataHebrewBatch86.sets +
                 WordDataHebrewBatch87.sets +
-                WordDataHebrewBatch88.sets +
                 WordDataHebrewBatch89.sets +
-                WordDataHebrewBatch90.sets +
                 WordDataHebrewBatch91.sets +
                 WordDataHebrewBatch92.sets +
                 WordDataHebrewBatch93.sets +
@@ -309,7 +282,6 @@ object WordRegistry {
                 WordDataEnglishFinanceL5.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
-                WordDataHebrewTech.words +
                 WordDataHebrewImmigrant.words +
                 WordDataHebrewImmigrant2.words +
                 WordDataHebrewImmigrant3.words +
@@ -324,46 +296,27 @@ object WordRegistry {
                 WordDataHebrewBatch9.words +
                 WordDataHebrewBatch10.words +
                 WordDataHebrewBatch11.words +
-                WordDataHebrewBatch12.words +
                 WordDataHebrewBatch13.words +
-                WordDataHebrewBatch14.words +
                 WordDataHebrewBatch15.words +
                 WordDataHebrewBatch16.words +
-                WordDataHebrewBatch17.words +
                 WordDataHebrewBatch18.words +
-                WordDataHebrewBatch19.words +
                 WordDataHebrewBatch20.words +
                 WordDataHebrewBatch21.words +
                 WordDataHebrewBatch22.words +
                 WordDataHebrewBatch23.words +
                 WordDataHebrewBatch24.words +
                 WordDataHebrewBatch25.words +
-                WordDataHebrewBatch26.words +
                 WordDataHebrewBatch27.words +
-                WordDataHebrewBatch28.words +
-                WordDataHebrewBatch29.words +
-                WordDataHebrewBatch30.words +
-                WordDataHebrewBatch31.words +
-                WordDataHebrewBatch32.words +
                 WordDataHebrewBatch33.words +
-                WordDataHebrewBatch34.words +
-                WordDataHebrewBatch35.words +
-                WordDataHebrewBatch36.words +
-                WordDataHebrewBatch37.words +
-                WordDataHebrewBatch38.words +
                 WordDataHebrewBatch39.words +
-                WordDataHebrewImmigrant7.words +
-                WordDataHebrewImmigrant8.words +
                 WordDataHebrewImmigrant9.words +
                 WordDataHebrewImmigrant10.words +
                 WordDataHebrewImmigrant11.words +
                 WordDataHebrewImmigrant12.words +
                 WordDataHebrewImmigrant13.words +
-                WordDataHebrewImmigrant14.words +
                 WordDataHebrewImmigrant15.words +
                 WordDataHebrewImmigrant16.words +
                 WordDataHebrewBatch40.words +
-                WordDataHebrewBatch41.words +
                 WordDataHebrewBatch42.words +
                 WordDataHebrewBatch43.words +
                 WordDataHebrewBatch44.words +
@@ -398,21 +351,14 @@ object WordRegistry {
                 WordDataHebrewBatch73.words +
                 WordDataHebrewBatch74.words +
                 WordDataHebrewBatch75.words +
-                WordDataHebrewBatch76.words +
                 WordDataHebrewBatch77.words +
-                WordDataHebrewBatch78.words +
                 WordDataHebrewBatch79.words +
                 WordDataHebrewBatch80.words +
                 WordDataHebrewBatch81.words +
                 WordDataHebrewBatch82.words +
                 WordDataHebrewBatch83.words +
-                WordDataHebrewBatch84.words +
-                WordDataHebrewBatch85.words +
-                WordDataHebrewBatch86.words +
                 WordDataHebrewBatch87.words +
-                WordDataHebrewBatch88.words +
                 WordDataHebrewBatch89.words +
-                WordDataHebrewBatch90.words +
                 WordDataHebrewBatch91.words +
                 WordDataHebrewBatch92.words +
                 WordDataHebrewBatch93.words +

@@ -7,13 +7,6 @@ object WordDataHebrewBatch21 {
 
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
-            id = 1085, languagePair = "he-ru", orderIndex = 1085,
-            name = "Спорт",
-            description = "Соревнования, тактика и спортивная психология",
-            topic = "Спорт",
-            level = 2
-        ),
-        WordSetEntity(
             id = 1086, languagePair = "he-ru", orderIndex = 1086,
             name = "Архитектура",
             description = "Стили, конструкции и городская среда",
@@ -34,62 +27,12 @@ object WordDataHebrewBatch21 {
         // ── Set 1085: Спорт: углублённо ────────────────────────────────────
 
         // UNCOMMON (A2-B1),
-        WordEntity(id = 108501, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הַתְחָמְמוּת", translation = "разминка; разогрев", transliteration = "hатхаммут"),
-        WordEntity(id = 108502, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֲפִסָּקָה", translation = "перерыв; перерыв в игре", transliteration = "hафисака"),
-        WordEntity(id = 108503, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שׂיא אִישִׁי", translation = "личный рекорд", transliteration = "си иши"),
-        WordEntity(id = 108504, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֵרוֹבִּיקָה", translation = "аэробика", transliteration = "эробика"),
-        WordEntity(id = 108505, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כַּדּוּר רֶשֶׁת", translation = "волейбол", transliteration = "кадур рэшэт"),
-        WordEntity(id = 108506, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "טֶנִּיס שֻׁלְחָן", translation = "настольный теннис; пинг-понг", transliteration = "тэнис шулхан"),
 
         // UNCOMMON (A2-B1),
-        WordEntity(id = 108507, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַלּוּף", translation = "чемпион", transliteration = "алуф"),
-        WordEntity(id = 108508, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "טוּרְנִיר", translation = "турнир", transliteration = "турнир"),
-        WordEntity(id = 108509, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֲתָרָה", translation = "гребля; академическая гребля", transliteration = "хатара"),
-        WordEntity(id = 108510, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֲצִי גָּמַר", translation = "полуфинал", transliteration = "хаци гамар"),
-        WordEntity(id = 108511, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גְּמַר גָּבִיעַ", translation = "финал Кубка", transliteration = "гмар гавиа"),
-        WordEntity(id = 108512, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רֶקוֹרְד עוֹלָמִי", translation = "мировой рекорд", transliteration = "рэкорд олами"),
-        WordEntity(id = 108513, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "טַקְטִיקָה", translation = "тактика", transliteration = "тактика"),
-        WordEntity(id = 108514, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אוֹלִימְפִּיאָדָה", translation = "Олимпиада", transliteration = "олимпиада"),
-        WordEntity(id = 108515, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַתְלֶטִיקָה", translation = "лёгкая атлетика", transliteration = "атлэтика"),
-        WordEntity(id = 108516, setId = 1085, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֲנִינַת אִיגְרוּף", translation = "боксёрский поединок", transliteration = "ханинат игруф"),
 
         // RARE (B2),
-        WordEntity(id = 108517, setId = 1085, languagePair = "he-ru", rarity = "RARE",
-            original = "דּוֹפִינְג", translation = "допинг", transliteration = "дофинг"),
-        WordEntity(id = 108518, setId = 1085, languagePair = "he-ru", rarity = "RARE",
-            original = "סְפּוֹרְטִיבִיּוּת", translation = "спортивное поведение, честная игра", transliteration = "спортивиут"),
-        WordEntity(id = 108519, setId = 1085, languagePair = "he-ru", rarity = "RARE",
-            original = "אַרְגּוֹנוֹמִיָּה", translation = "эргономика (в спорте)", transliteration = "аргономийа"),
-        WordEntity(id = 108520, setId = 1085, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּסִיכוֹלוֹגִיָּה סְפּוֹרְטִיבִית", translation = "спортивная психология", transliteration = "психологийа спортивит"),
-        WordEntity(id = 108521, setId = 1085, languagePair = "he-ru", rarity = "RARE",
-            original = "זוֹן", translation = "зона (состояние потока в спорте)", transliteration = "зон"),
 
         // RARE (cont.),
-        WordEntity(id = 108522, setId = 1085, languagePair = "he-ru", rarity = "RARE",
-            original = "בִּיּוֹמֶכָנִיקָה", translation = "биомеханика", transliteration = "биомэханика"),
-        WordEntity(id = 108523, setId = 1085, languagePair = "he-ru", rarity = "RARE",
-            original = "הִתְאוֹשְׁשׁוּת", translation = "восстановление; реабилитация после нагрузки", transliteration = "hитошшут"),
-        WordEntity(id = 108524, setId = 1085, languagePair = "he-ru", rarity = "RARE",
-            original = "מַרוֹץ מִכְשׁוֹלִים", translation = "бег с препятствиями", transliteration = "мароц михшолим"),
-        WordEntity(id = 108525, setId = 1085, languagePair = "he-ru", rarity = "RARE",
-            original = "תּוֹכְנִית אִמּוּן", translation = "тренировочная программа", transliteration = "тохнит имун"),
 
         // ── Set 1086: Архитектура: продвинутый ────────────────────────────
 

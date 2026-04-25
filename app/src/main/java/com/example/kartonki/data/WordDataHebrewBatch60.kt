@@ -63,12 +63,6 @@ object WordDataHebrewBatch60 {
             topic = "Журналист",
             level = 1),
 
-        WordSetEntity(
-            id = 1343, languagePair = "he-ru", orderIndex = 1343,
-            name = "Архитектура",
-            description = "Проекты, программы, чертежи",
-            topic = "Архитектура",
-            level = 1),
     )
 
     val words: List<WordEntity> get() = listOf(
@@ -691,79 +685,29 @@ object WordDataHebrewBatch60 {
 
         // ── Set 1343: Архитектура: основы 2 (level=1, COMMON+UNCOMMON) ───────
 
-        WordEntity(id = 134301, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),
 
-        WordEntity(id = 134302, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֵיאָיוֹן עֲבוֹדָה", transliteration = "re'ayon avoda", translation = "собеседование"),
 
-        WordEntity(id = 134303, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׂכּוֹרֶת", transliteration = "maskoret", translation = "зарплата"),
 
-        WordEntity(id = 134304, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "תִּיק עֲבוֹדוֹת", transliteration = "tik avodot", translation = "портфолио проектов"),
 
-        WordEntity(id = 134305, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "נִסָּיוֹן בְּאַרְכִיטֶקְטוּרָה", transliteration = "nisayon bearhitektura", translation = "опыт в архитектуре"),
 
-        WordEntity(id = 134306, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּקוּפַת נִסָּיוֹן", transliteration = "tkufat nisayon", translation = "испытательный срок"),
 
-        WordEntity(id = 134307, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", transliteration = "khoze avoda", translation = "трудовой договор"),
 
-        WordEntity(id = 134308, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַמְלָצָה", transliteration = "hamlitsa", translation = "рекомендация"),
 
-        WordEntity(id = 134309, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "תָּכְנִית מִגְרָשׁ", transliteration = "takhnit migras", translation = "план участка / генплан"),
 
-        WordEntity(id = 134310, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "תֶּפְקִיד אַרְכִיטֶקְט", transliteration = "tafkid arkhitekt", translation = "должность архитектора"),
 
-        WordEntity(id = 134311, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "הֶצְעַת עֲבוֹדָה", transliteration = "hets'at avoda", translation = "предложение о работе, оффер"),
 
-        WordEntity(id = 134312, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "מִשְׂרַד אַרְכִיטֶקְטִים", transliteration = "misrad arkhitekтim", translation = "архитектурное бюро"),
 
-        WordEntity(id = 134313, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "לְקוֹחַ", transliteration = "lekoakh", translation = "клиент"),
 
-        WordEntity(id = 134314, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "פְּגִישַׁת הִיכָּרוּת", transliteration = "pgishat hikharut", translation = "знакомственная встреча"),
 
-        WordEntity(id = 134315, setId = 1343, languagePair = "he-ru", rarity = "COMMON",
-            original = "כִּשּׁוּרִים טֶכְנִיִּים", transliteration = "kishurim tekhniim", translation = "технические навыки"),
 
-        WordEntity(id = 134316, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רִשָּׁיוֹן אַרְכִיטֶקְט", transliteration = "rishayaon arkhitekt", translation = "лицензия архитектора"),
 
-        WordEntity(id = 134317, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תֹּכְנַת CAD", transliteration = "tokhnat CAD", translation = "программа CAD (AutoCAD)"),
 
-        WordEntity(id = 134318, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מוֹדֵל BIM", transliteration = "model BIM", translation = "BIM-модель"),
 
-        WordEntity(id = 134319, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תַּקְנוֹת בִּנְיָן", transliteration = "takanot binyan", translation = "строительные нормы"),
 
-        WordEntity(id = 134320, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִישּׁוּר תָּכְנִית", transliteration = "ishur takhnit", translation = "согласование проекта"),
 
-        WordEntity(id = 134321, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תַּחֲרוּת עִיצּוּב", transliteration = "takharut itsub", translation = "архитектурный конкурс"),
 
-        WordEntity(id = 134322, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פִּיקּוּחַ מְחַבֵּר", transliteration = "pikuakh mekhaber", translation = "авторский надзор"),
 
-        WordEntity(id = 134323, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תַּכְנִית פָּנִים", transliteration = "takhnit panim", translation = "план интерьера"),
 
-        WordEntity(id = 134324, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סִפְרוּן אַרְכִיטֶקְטוּרִי", transliteration = "siфrun arkhitekturi", translation = "архитектурный буклет / концептбук"),
 
-        WordEntity(id = 134325, setId = 1343, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֶסְתֶּטִיקָה אַרְכִיטֶקְטוּרִית", transliteration = "estetika arkhitekturit", translation = "архитектурная эстетика"),
     )
 }
