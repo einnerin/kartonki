@@ -198,6 +198,7 @@ object WordRegistry {
                 WordDataHebrewCultureL1.sets +
                 WordDataHebrewHomeL1.sets +
                 WordDataHebrewReligionL1.sets +
+                WordDataHebrewRelHolidaysL5.sets +
                 WordDataHebrewLawL1.sets +
                 WordDataHebrewCityL1.sets
     }
@@ -353,6 +354,7 @@ object WordRegistry {
                 WordDataHebrewCultureL1.words +
                 WordDataHebrewHomeL1.words +
                 WordDataHebrewReligionL1.words +
+                WordDataHebrewRelHolidaysL5.words +
                 WordDataHebrewLawL1.words +
                 WordDataHebrewCityL1.words
     }
