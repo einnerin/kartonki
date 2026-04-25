@@ -88,7 +88,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Переносная коробка, где мастер хранит весь свой набор приспособлений.",
             example = "אַרְגַּז כֵּלִים שֶׁלִּי תָּמִיד יוֹשֵׁב לְיַד דֶּלֶת הַכְּנִיסָה.",
             exampleNative = "אַרְגַּז כֵּלִים мой всегда стоит у входной двери.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172617L)),
 
         // ── electrician_lighting (5) — лампы, удлинители, выключатели ──
         WordEntity(
@@ -99,7 +99,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Маленькая штука с батарейкой — светит в темноте, когда нет света в комнате.",
             example = "אָבִי לָקַח פָּנָס וְיָרַד לִבְדוֹק אֶת הַמַּרְתֵּף.",
             exampleNative = "Папа взял פָּנָס и спустился проверить подвал.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172601L, 172602L, 172603L, 172604L, 172605L, 172607L, 172609L)),
         WordEntity(
             id = 172607, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "electrician_lighting", transliteration = "nura led",
@@ -108,7 +108,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Современный источник света — мало ест энергии и почти не греется.",
             example = "הִתְקַנּוּ נוּרָה לֵד בַּמִּטְבָּח כְּדֵי לַחֲסוֹךְ חַשְׁמַל.",
             exampleNative = "Поставили נוּרָה לֵד на кухне, чтобы экономить электричество.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172608L, 172609L, 172610L)),
         WordEntity(
             id = 172608, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "electrician_lighting", transliteration = "ta batriya",
@@ -117,7 +117,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Место внутри прибора, куда вставляют батарейки, чтобы он работал.",
             example = "תָּא בָּטְרִיָּה הָיָה רָטוֹב וְהַשָּׁעוֹן הִפְסִיק לַעֲבוֹד.",
             exampleNative = "תָּא בָּטְרִיָּה был мокрым, и часы перестали работать.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172607L, 172609L, 172610L)),
         WordEntity(
             id = 172609, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "electrician_lighting", transliteration = "teka maarikh",
@@ -135,7 +135,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Кнопка на стене — нажимают, чтобы зажечь или потушить освещение.",
             example = "מַתָּג קִיר נִשְׁבַּר וְעַכְשָׁו הָאוֹר דּוֹלֵק כָּל הַזְּמַן.",
             exampleNative = "מַתָּג קִיר сломался, и теперь свет горит постоянно.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172607L, 172608L, 172609L)),
 
         // ── electrician_actions (5) — простые операции ──
         WordEntity(
@@ -146,7 +146,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Свести вместе два металлических конца, чтобы ток шёл насквозь.",
             example = "צָרִיךְ לְחַבֵּר חוּטִים בִּזְהִירוּת לִפְנֵי שֶׁמַּדְלִיקִים.",
             exampleNative = "Надо לְחַבֵּר חוּטִים аккуратно, прежде чем включать.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172612L, 172613L, 172614L, 172615L)),
         WordEntity(
             id = 172612, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "electrician_actions", transliteration = "lehadlik or",
@@ -155,7 +155,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Нажать на кнопку, чтобы в комнате стало ярко.",
             example = "אִמָּא בִּקְּשָׁה לְהַדְלִיק אוֹר בַּמִּסְדְּרוֹן בָּעֶרֶב.",
             exampleNative = "Мама попросила לְהַדְלִיק אוֹר в коридоре вечером.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172611L, 172613L, 172614L, 172615L)),
         WordEntity(
             id = 172613, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "electrician_actions", transliteration = "lekhabot zerem",
@@ -164,7 +164,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Перекрыть электрический поток, прежде чем трогать жилы руками.",
             example = "תָּמִיד צָרִיךְ לְכַבּוֹת זֶרֶם לִפְנֵי הַחְלָפַת שֶׁקַע.",
             exampleNative = "Всегда нужно לְכַבּוֹת זֶרֶם перед заменой розетки.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172611L, 172612L, 172614L, 172615L)),
         WordEntity(
             id = 172614, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "electrician_actions", transliteration = "limdod metakh",
@@ -173,7 +173,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Проверить прибором, есть ли электричество и насколько оно сильное.",
             example = "צָרִיךְ לִמְדֹּד מֶתַח לִפְנֵי שֶׁמַּחְלִיפִים אֶת הָאוּטוֹמָט.",
             exampleNative = "Надо לִמְדֹּד מֶתַח, прежде чем менять автомат.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172611L, 172612L, 172613L, 172615L)),
         WordEntity(
             id = 172615, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "electrician_actions", transliteration = "lehakhlif nura",
@@ -182,7 +182,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Достать перегоревшую старую и поставить на её место новую.",
             example = "צָרִיךְ לְהַחְלִיף נוּרָה בַּמִּסְדְּרוֹן הַיּוֹם בָּעֶרֶב.",
             exampleNative = "Надо לְהַחְלִיף נוּרָה в коридоре сегодня вечером.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172611L, 172612L, 172613L, 172614L)),
 
         // ── electrician_safety (5) — средства защиты ──
         WordEntity(
@@ -193,7 +193,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Покрытие на руки из мягкого материала, что не пропускает ток.",
             example = "אַל תִּגַּע בַּכֶּבֶל בְּלִי כְּפָפוֹת גוּמִי בַּיָּדַיִם.",
             exampleNative = "Не трогай кабель без כְּפָפוֹת גוּמִי на руках.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172618L, 172619L, 172620L)),
         WordEntity(
             id = 172617, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "electrician_safety", transliteration = "sulam",
@@ -211,7 +211,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Жёсткий головной убор — спасает голову от падающих сверху предметов.",
             example = "קַסְדַּת עֲבוֹדָה צְהֻבָּה מוּנַחַת תָּמִיד עַל הַמַּדָּף.",
             exampleNative = "קַסְדַּת עֲבוֹדָה жёлтая всегда лежит на полке.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172603L, 172607L, 172616L, 172619L, 172620L)),
         WordEntity(
             id = 172619, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "electrician_safety", transliteration = "mishkafey betikhut",
@@ -220,7 +220,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Прозрачные очки, что берегут глаза от осколков или пыли.",
             example = "תָּמִיד אֲנִי מַרְכִּיב מִשְׁקְפֵי בְּטִיחוּת בִּזְמַן הַקִּדּוּחַ.",
             exampleNative = "Я всегда надеваю מִשְׁקְפֵי בְּטִיחוּת во время сверления.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172616L, 172618L, 172620L)),
         WordEntity(
             id = 172620, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "electrician_safety", transliteration = "sikun hitkhashmelut",
@@ -229,7 +229,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Возможность пострадать от сильного тока, если коснуться оголённых жил.",
             example = "סִכּוּן הִתְחַשְׁמְלוּת גָּדוֹל בְּמַחֲסָן רָטוֹב וּמְלֵא צִנּוֹרוֹת.",
             exampleNative = "סִכּוּן הִתְחַשְׁמְלוּת велик в сыром складе с трубами.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172616L, 172618L, 172619L, 172625L)),
 
         // ── electrician_problems (5) — типичные мелкие проблемы ──
         WordEntity(
@@ -240,7 +240,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Положение, когда прибор или система перестают работать как следует.",
             example = "הַתְּקָלָה הִתְגַּלְּתָה רַק אַחֲרֵי שָׁעוֹת שֶׁל חִפּוּשׂ.",
             exampleNative = "תְּקָלָה вылезла только после нескольких часов поиска.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172603L, 172607L, 172618L, 172622L)),
         WordEntity(
             id = 172622, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "electrician_problems", transliteration = "ashan",
@@ -249,7 +249,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Серое или чёрное облако, что поднимается, когда что-то горит или сильно греется.",
             example = "עָשָׁן יָצָא מֵהַשֶּׁקַע וְכֻלָּם נִבְהֲלוּ מִיָּד.",
             exampleNative = "עָשָׁן пошёл из розетки, и все сразу испугались.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172621L, 172624L)),
         WordEntity(
             id = 172623, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "electrician_problems", transliteration = "mekhaseh sheka",
@@ -258,7 +258,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Кусочек пластика в отверстие — чтобы малыш не сунул туда пальцы.",
             example = "מְכַסֶּה שֶׁקַע יָרֹק מָנַע מֵהַתִּינוֹק לְהַגִּיעַ לַחַשְׁמַל.",
             exampleNative = "מְכַסֶּה שֶׁקַע зелёный не дал малышу добраться до тока.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172624L, 172625L)),
         WordEntity(
             id = 172624, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "electrician_problems", transliteration = "reyakh srifa",
@@ -267,7 +267,7 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Резкий запах пластика или провода, что слишком разогрелся и тлеет.",
             example = "רֵיחַ שְׂרִיפָה הִגִּיעַ מֵהַלּוּחַ וּכִבִּינוּ הַכֹּל מִיָּד.",
             exampleNative = "רֵיחַ שְׂרִיפָה пошёл от щита, и мы сразу всё обесточили.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172622L, 172623L, 172625L)),
         WordEntity(
             id = 172625, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "electrician_problems", transliteration = "omes yater",
@@ -276,6 +276,6 @@ object WordDataHebrewElectricianL1 {
             definitionNative = "Случай, когда подключено слишком много приборов и проводка начинает греться.",
             example = "עוֹמֶס יַתֵר גָּרַם לַמַּפְסֵק לִקְפֹּץ כְּבָר פַּעֲמַיִם הַיּוֹם.",
             exampleNative = "עוֹמֶס יַתֵר заставил автомат сработать уже дважды за день.",
-            isFillInBlankSafe = true),
+            isFillInBlankSafe = true, fillInBlankExclusions = listOf(172623L, 172624L)),
     )
 }
