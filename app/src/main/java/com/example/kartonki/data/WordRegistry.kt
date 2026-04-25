@@ -80,6 +80,11 @@ object WordRegistry {
                 WordDataEnglishSportsL5.sets +
                 WordDataEnglishTransport2.sets +
                 WordDataEnglishTransportL5.sets +
+                WordDataEnglishHomeL5.sets +
+                WordDataEnglishFoodL4.sets +
+                WordDataEnglishFoodL5.sets +
+                WordDataEnglishCultureL1.sets +
+                WordDataEnglishMedicineL4.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewTech.sets +
@@ -253,6 +258,11 @@ object WordRegistry {
                 WordDataEnglishSportsL5.words +
                 WordDataEnglishTransport2.words +
                 WordDataEnglishTransportL5.words +
+                WordDataEnglishHomeL5.words +
+                WordDataEnglishFoodL4.words +
+                WordDataEnglishFoodL5.words +
+                WordDataEnglishCultureL1.words +
+                WordDataEnglishMedicineL4.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words +
