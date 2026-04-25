@@ -100,6 +100,11 @@ object WordRegistry {
                 WordDataEnglishTravelL3.sets +
                 WordDataEnglishTravelL4.sets +
                 WordDataEnglishTravelL5.sets +
+                WordDataEnglishWorkL3.sets +
+                WordDataEnglishWorkL5.sets +
+                WordDataEnglishTechL5.sets +
+                WordDataEnglishPhilosophyL1.sets +
+                WordDataEnglishPhilosophyL2.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewTech.sets +
@@ -293,6 +298,11 @@ object WordRegistry {
                 WordDataEnglishTravelL3.words +
                 WordDataEnglishTravelL4.words +
                 WordDataEnglishTravelL5.words +
+                WordDataEnglishWorkL3.words +
+                WordDataEnglishWorkL5.words +
+                WordDataEnglishTechL5.words +
+                WordDataEnglishPhilosophyL1.words +
+                WordDataEnglishPhilosophyL2.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words +
