@@ -90,6 +90,11 @@ object WordRegistry {
                 WordDataEnglishScienceL5.sets +
                 WordDataEnglishEducationL5.sets +
                 WordDataEnglishEverydayL3.sets +
+                WordDataEnglishEverydayL4.sets +
+                WordDataEnglishEverydayL5.sets +
+                WordDataEnglishPoliticsL1.sets +
+                WordDataEnglishPoliticsL5.sets +
+                WordDataEnglishNatureL4.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewTech.sets +
@@ -273,6 +278,11 @@ object WordRegistry {
                 WordDataEnglishScienceL5.words +
                 WordDataEnglishEducationL5.words +
                 WordDataEnglishEverydayL3.words +
+                WordDataEnglishEverydayL4.words +
+                WordDataEnglishEverydayL5.words +
+                WordDataEnglishPoliticsL1.words +
+                WordDataEnglishPoliticsL5.words +
+                WordDataEnglishNatureL4.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words +
