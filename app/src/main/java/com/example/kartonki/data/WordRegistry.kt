@@ -105,6 +105,8 @@ object WordRegistry {
                 WordDataEnglishTechL5.sets +
                 WordDataEnglishPhilosophyL1.sets +
                 WordDataEnglishPhilosophyL2.sets +
+                WordDataEnglishFinanceL1.sets +
+                WordDataEnglishFinanceL5.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewTech.sets +
@@ -303,6 +305,8 @@ object WordRegistry {
                 WordDataEnglishTechL5.words +
                 WordDataEnglishPhilosophyL1.words +
                 WordDataEnglishPhilosophyL2.words +
+                WordDataEnglishFinanceL1.words +
+                WordDataEnglishFinanceL5.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words +
