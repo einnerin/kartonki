@@ -85,6 +85,11 @@ object WordRegistry {
                 WordDataEnglishFoodL5.sets +
                 WordDataEnglishCultureL1.sets +
                 WordDataEnglishMedicineL4.sets +
+                WordDataEnglishMedicineL5.sets +
+                WordDataEnglishScienceL1.sets +
+                WordDataEnglishScienceL5.sets +
+                WordDataEnglishEducationL5.sets +
+                WordDataEnglishEverydayL3.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewTech.sets +
@@ -263,6 +268,11 @@ object WordRegistry {
                 WordDataEnglishFoodL5.words +
                 WordDataEnglishCultureL1.words +
                 WordDataEnglishMedicineL4.words +
+                WordDataEnglishMedicineL5.words +
+                WordDataEnglishScienceL1.words +
+                WordDataEnglishScienceL5.words +
+                WordDataEnglishEducationL5.words +
+                WordDataEnglishEverydayL3.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewTech.words +
