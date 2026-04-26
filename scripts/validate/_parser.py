@@ -127,6 +127,49 @@ def parse_registry_order():
     return order
 
 
+def parse_words_from_text(content, file_basename):
+    """
+    Parse all WordEntity records from a Kotlin source string.
+
+    Same return format as parse_words(), but takes raw text + a basename to
+    record in the "file" key. Used to parse `git show HEAD:<path>` blobs for
+    diff-based checks (e.g. detecting NEW rarity collisions vs pre-existing).
+    """
+    words = []
+    for block in parse_blocks(content, "WordEntity"):
+        wid = extract_int_field(block, r'\bid')
+        sid = extract_int_field(block, r'\bsetId')
+        original = extract_field(block, 'original')
+        rarity = extract_field(block, 'rarity') or "COMMON"
+        lang = extract_field(block, 'languagePair')
+        translation = extract_field(block, 'translation') or ""
+        has_translit = bool(re.search(r'\btransliteration\s*=\s*"[^"]+"', block))
+        safe_m = re.search(r'\bisFillInBlankSafe\s*=\s*(true|false)\b', block)
+        is_safe = True if safe_m is None else (safe_m.group(1) == "true")
+        exc_m = re.search(r'\bfillInBlankExclusions\s*=\s*listOf\(([^)]*)\)', block)
+        fib_exclusions: list[int] = []
+        if exc_m:
+            for tok in exc_m.group(1).split(","):
+                tok = tok.strip().rstrip("L").strip()
+                if tok.isdigit():
+                    fib_exclusions.append(int(tok))
+        if wid and sid and original and lang:
+            words.append({
+                "id": wid, "setId": sid, "original": original,
+                "rarity": rarity, "lang": lang, "file": file_basename,
+                "has_translit": has_translit, "translation": translation,
+                "definition": extract_field(block, 'definition'),
+                "definitionNative": extract_field(block, 'definitionNative'),
+                "example": extract_field(block, 'example'),
+                "exampleNative": extract_field(block, 'exampleNative'),
+                "pos": extract_field(block, 'pos'),
+                "semanticGroup": extract_field(block, 'semanticGroup'),
+                "isFillInBlankSafe": is_safe,
+                "fillInBlankExclusions": fib_exclusions,
+            })
+    return words
+
+
 def parse_words(kt_file):
     """
     Parse all WordEntity records from a single .kt file.

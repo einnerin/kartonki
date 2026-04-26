@@ -29,7 +29,7 @@ Warnings (never block):
 Registry order is derived automatically from WordRegistry.kt allWords.
 """
 
-import re, io, sys
+import re, io, sys, subprocess
 from pathlib import Path
 from collections import defaultdict
 
@@ -42,7 +42,7 @@ from _parser import (  # noqa: E402
     ROOT, REGISTRY_FILE, RARITY_ORDER, RARITY_INDEX, LANG_BLOCKS,
     extract_field, extract_int_field,
     parse_blocks as _parse_blocks,
-    parse_registry_order, parse_words, parse_sets,
+    parse_registry_order, parse_words, parse_words_from_text, parse_sets,
     get_staged_files as _get_staged_files,
     get_new_set_ids as _get_new_set_ids,
 )
@@ -411,6 +411,68 @@ def check_description_cefr(all_sets, staged_files):
     return errors
 
 
+def check_rarity_collisions(all_words, staged_files):
+    """
+    Detect (lang, original) keys that map to >1 distinct rarity across the
+    base. The DB resolves such collisions silently via OnConflictStrategy.REPLACE
+    on UNIQUE(original, languagePair) — last seed file in WordRegistry order
+    wins. That makes the author of a new set unaware that they "stole" a
+    word's rarity from an older theme.
+
+    Pre-existing collisions are returned as warnings (legacy debt).
+    Collisions newly introduced by staged files are returned as blocking errors.
+
+    Returns (new_errors, pre_existing_warnings), each a list of dicts:
+        {key: (lang, original), rarities: {rarity: [(file, setId), ...]}}
+    """
+    # ── Current state collisions ──
+    current = defaultdict(lambda: defaultdict(list))
+    for w in all_words:
+        if w["setId"] == 0:  # achievement reward words live in their own ID block
+            continue
+        current[(w["lang"], w["original"])][w["rarity"]].append((w["file"], w["setId"]))
+    current_collisions = {k: dict(v) for k, v in current.items() if len(v) > 1}
+
+    if not staged_files or not current_collisions:
+        # Manual run or no collisions at all — everything is informational.
+        return [], list(current_collisions.items())
+
+    # ── HEAD state collisions: parse blob of staged files, reuse current for
+    #    untouched files (they are byte-identical to HEAD). ──
+    head = defaultdict(lambda: defaultdict(list))
+    files_in_base = {w["file"] for w in all_words}
+    for fname in files_in_base:
+        if fname in staged_files:
+            rel_path = f"app/src/main/java/com/example/kartonki/data/{fname}"
+            try:
+                content = subprocess.check_output(
+                    ["git", "show", f"HEAD:{rel_path}"],
+                    stderr=subprocess.DEVNULL,
+                ).decode("utf-8", errors="replace")
+            except subprocess.CalledProcessError:
+                continue  # new file — no HEAD version
+            for w in parse_words_from_text(content, fname):
+                if w["setId"] == 0:
+                    continue
+                head[(w["lang"], w["original"])][w["rarity"]].append((w["file"], w["setId"]))
+        else:
+            for w in (x for x in all_words if x["file"] == fname):
+                if w["setId"] == 0:
+                    continue
+                head[(w["lang"], w["original"])][w["rarity"]].append((w["file"], w["setId"]))
+    head_collision_keys = {k for k, v in head.items() if len(v) > 1}
+
+    new_errors = [
+        {"key": k, "rarities": v}
+        for k, v in current_collisions.items() if k not in head_collision_keys
+    ]
+    pre_existing = [
+        {"key": k, "rarities": v}
+        for k, v in current_collisions.items() if k in head_collision_keys
+    ]
+    return new_errors, pre_existing
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
@@ -599,6 +661,38 @@ def main():
             print()
         else:
             print("  ✅ Все he-ru слова с transliteration\n")
+
+    # ── 10. Rarity-коллизии — BLOCKING для новых, info для pre-existing ──────
+    # Same (lang, original) with different rarity in different files: DB resolves
+    # via REPLACE on UNIQUE(original, lang), last write wins. Silent breakage of
+    # preset decks, starter pack, and quiz pools — exactly the bug class fixed in
+    # 2026-04-26 (chiaroscuro EPIC vs LEGENDARY etc.). Block any new collision.
+    new_collisions, pre_existing_collisions = check_rarity_collisions(all_words, staged_files)
+    if staged_files:
+        print(f"=== 10. Новые rarity-коллизии в staged файлах: {len(new_collisions)} ===\n")
+        if new_collisions:
+            has_errors = True
+            for c in new_collisions:
+                lang, orig = c["key"]
+                rarities = c["rarities"]
+                print(f"  '{orig}' ({lang}) — {len(rarities)} разных rarity:")
+                for r in sorted(rarities, key=lambda x: RARITY_INDEX.get(x, 99)):
+                    locs = ", ".join(f"setId={sid} [{f}]" for f, sid in rarities[r])
+                    print(f"    {r}: {locs}")
+                print(f"    → effective в БД (last write wins): см. порядок WordRegistry")
+            print()
+        else:
+            print("  ✅ Staged-изменения не вводят новых коллизий\n")
+        if pre_existing_collisions:
+            print(f"  ℹ️  Pre-existing коллизий в базе: {len(pre_existing_collisions)} "
+                  f"(техдолг, не блокирует коммит)\n")
+    else:
+        # Manual run — show all as informational
+        if pre_existing_collisions:
+            print(f"=== 10. Rarity-коллизии в базе: {len(pre_existing_collisions)} (info) ===\n")
+            print(f"  (Запуск со staged файлами включает diff-режим: блок только новых)\n")
+        else:
+            print("=== 10. Rarity-коллизии: ✅ нет в базе ===\n")
 
     # ── Warnings (never block) ────────────────────────────────────────────────
     if staged_files:
