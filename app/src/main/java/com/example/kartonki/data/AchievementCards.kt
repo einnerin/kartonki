@@ -68,7 +68,6 @@ object AchievementCards {
         "conjecture", // предположение/гипотеза
         "refute",     // опровергать
         "elucidate",  // разъяснять
-        "pioneer",    // первопроходец/пионер — FIRST_LAUNCH (temp test achievement)
         "accomplish", // достигать — EXPERT
         "consistent", // последовательный — STREAK_5/STREAK_7
         "dedicate",   // посвящать — COLLECTOR

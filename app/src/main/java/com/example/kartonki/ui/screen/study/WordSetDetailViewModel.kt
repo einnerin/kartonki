@@ -18,6 +18,7 @@ import javax.inject.Inject
 data class WordSetDetailUiState(
     val isLoading: Boolean = true,
     val setName: String = "",
+    val setDescription: String = "",
     val words: List<Word> = emptyList(),
     val introducedWords: Int = 0,
 )
@@ -52,6 +53,7 @@ class WordSetDetailViewModel @Inject constructor(
                 it.copy(
                     isLoading = false,
                     setName = set?.name ?: "",
+                    setDescription = set?.description ?: "",
                     words = words,
                     introducedWords = introduced,
                 )

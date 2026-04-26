@@ -6008,12 +6008,6 @@ object WordDataEnglishExpanded {
     // collection — exclusively obtainable via their linked achievement.
 
     fun achievementRewardWords(): List<WordEntity> = listOf(
-        // FIRST_LAUNCH reward — temporary test achievement, remove before release
-        WordEntity(id = 24990, original = "pioneer", transliteration = "[ˌpaɪəˈnɪr]", translation = "первопроходец / пионер", rarity = "EPIC", setId = 0, languagePair = "en-ru", pos = "noun", semanticGroup = "achievement_reward",
-            definition = "A person who is among the first to explore or develop a new area of knowledge.",
-            example = "She was a pioneer in the field of computer science.",
-            definitionNative = "Человек, первым осваивающий новую область знаний или деятельности.",
-            exampleNative = "Она была pioneer в области компьютерных наук."),
         // EXPERT reward
         WordEntity(id = 24991, original = "accomplish", transliteration = "[əˈkʌmplɪʃ]", translation = "достигать / выполнять", rarity = "EPIC", setId = 0, languagePair = "en-ru", pos = "verb", semanticGroup = "achievement_reward",
             definition = "To succeed in doing or completing something.",
