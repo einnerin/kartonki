@@ -54,7 +54,7 @@ class CollectionViewModel @Inject constructor(
             collectionRepository.ensureStarterPack()
             val languagePair = prefs.getLanguagePair()
             allWords = collectionRepository.getOwnedWords(languagePair = languagePair)
-            val total = collectionRepository.getTotalCount()
+            val total = collectionRepository.getTotalCount(languagePair)
             _uiState.update {
                 it.copy(isLoading = false, words = applyFilter(it.rarityFilter), totalCount = total)
             }

@@ -722,7 +722,7 @@ object WordDataEnglishBatch15 {
             example = "Heavy stone quoins give the old bank a solid, noble look.",
             exampleNative = "Углы здания облицованы рустованным quoin.",
             pos = "noun", semanticGroup = "arch_structural_ornaments", isFillInBlankSafe = false),
-        WordEntity(id = 29524, setId = 295, languagePair = "en-ru", rarity = "LEGENDARY",
+        WordEntity(id = 29524, setId = 295, languagePair = "en-ru", rarity = "EPIC",
             original = "chiaroscuro", transliteration = "[kiˌɑːrəˈskjʊroʊ]", translation = "кьяроскуро (игра света)",
             definition = "A bold play of deep shadow and bright light — used in art and buildings.",
             definitionNative = "Резкий контраст глубокой тени и яркого света — приём в живописи и зодчестве.",

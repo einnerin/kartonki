@@ -14,6 +14,13 @@ interface CollectionDao {
     suspend fun count(): Int
 
     @Query("""
+        SELECT COUNT(*) FROM collection
+        INNER JOIN words ON words.id = collection.wordId
+        WHERE words.languagePair = :languagePair
+    """)
+    suspend fun count(languagePair: String): Int
+
+    @Query("""
         SELECT words.* FROM words
         INNER JOIN collection ON words.id = collection.wordId
         ORDER BY

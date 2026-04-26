@@ -1610,7 +1610,7 @@ object WordDataHebrewAliyaV2 {
 
         // ── religious_study (4) ──
         WordEntity(
-            id = 161604, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
+            id = 161604, setId = 1616, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_religious_study", transliteration = "yeshiva",
             original = "יְשִׁיבָה", translation = "йешива (высшая религиозная школа)",
             definition = "מוֹסַד לִמּוּדֵי תּוֹרָה וְתַלְמוּד גָּבוֹהַ לִגְבָרִים דָּתִיִּים.",

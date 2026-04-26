@@ -52,9 +52,9 @@ class WordLoader @Inject constructor(
 
         val allSets = WordRegistry.allSets
         val allWords = WordRegistry.allWords
-        val pvpOriginals = buildDefaultPvpOriginals(allWords)
+        val pvpIds = buildDefaultPvpIds(allWords)
         val wordsWithFlag = allWords.map { w ->
-            if (w.original in pvpOriginals) w.copy(isDefaultPvpCard = true) else w
+            if (w.id in pvpIds) w.copy(isDefaultPvpCard = true) else w.copy(isDefaultPvpCard = false)
         }
         val memberships = allWords.map { WordSetMembershipEntity(it.id, it.setId) }
 
@@ -98,8 +98,20 @@ class WordLoader @Inject constructor(
     /**
      * Deterministically selects the starter PvP card set from [allWords].
      *
-     * Words are taken in insertion order (i.e. the order they appear in seed files),
-     * up to per-rarity limits. The result is identical for every user — no shuffling.
+     * Returns a set of word IDs (one per language pair × rarity) that should be
+     * marked [WordEntity.isDefaultPvpCard]=true. The result is identical for
+     * every user — no shuffling, no randomness.
+     *
+     * Two subtleties make this non-trivial:
+     *   1. The same `original` may appear in several seed files with different
+     *      `rarity` values (collisions across themes). The DB resolves this via
+     *      `OnConflictStrategy.REPLACE` on UNIQUE(original, languagePair) — the
+     *      last write wins. We therefore dedup by (lang, original) and keep the
+     *      LAST occurrence so the starter agrees with the effective DB rarity.
+     *   2. Selection must be per-language (`Set<Long>` keyed by ID, not by
+     *      `original`). A `Set<String>` of originals would mark BOTH the en-ru
+     *      and he-ru row as starter when an identical string appears in both
+     *      languages (e.g. "WhatsApp"). Tying the flag to ID prevents that leak.
      *
      * Limits per language pair total ~1000 cards (≈2000 across en-ru + he-ru):
      *   COMMON 600 · UNCOMMON 270 · RARE 100 · EPIC 25 · LEGENDARY 5
@@ -108,15 +120,25 @@ class WordLoader @Inject constructor(
      * basic vocabulary to build PvP decks; rare/epic/legendary appear sparingly.
      * Preset deck words are added on top of this set in CollectionRepository.
      */
-    private fun buildDefaultPvpOriginals(allWords: List<com.example.kartonki.data.db.entity.WordEntity>): Set<String> {
+    private fun buildDefaultPvpIds(allWords: List<com.example.kartonki.data.db.entity.WordEntity>): Set<Long> {
         val limits = mapOf("COMMON" to 600, "UNCOMMON" to 270, "RARE" to 100, "EPIC" to 25, "LEGENDARY" to 5)
-        val result = mutableSetOf<String>()
-        allWords
-            .filter { it.original !in AchievementCards.ALL_EXCLUSIVE }
+
+        // Effective table: last (lang, original) → WordEntity. LinkedHashMap preserves
+        // insertion order of first appearance, but `put` reassigns the value —
+        // so iteration order is stable while the value reflects the final write.
+        val effective = LinkedHashMap<Pair<String, String>, com.example.kartonki.data.db.entity.WordEntity>()
+        for (w in allWords) {
+            if (w.setId == 0L) continue                          // achievement reward words — never starter
+            if (w.original in AchievementCards.ALL_EXCLUSIVE) continue
+            effective[w.languagePair to w.original] = w
+        }
+
+        val result = mutableSetOf<Long>()
+        effective.values
             .groupBy { it.languagePair }
             .forEach { (_, words) ->
-                words.groupBy { it.rarity }.forEach { (rarity, rarityWords) ->
-                    rarityWords.take(limits[rarity] ?: 0).forEach { result += it.original }
+                words.groupBy { it.rarity }.forEach { (rarity, bucket) ->
+                    bucket.take(limits[rarity] ?: 0).forEach { result += it.id }
                 }
             }
         return result

@@ -53,27 +53,6 @@ class CollectionRepository @Inject constructor(
     private suspend fun doEnsureStarterPack() {
         wordLoader.ensureFresh()
 
-        val isFirstRun = collectionDao.count() == 0
-        if (isFirstRun) {
-            // Words referenced by preset decks are always guaranteed so deck editors
-            // show the correct cards immediately on first launch.
-            // Each lookup uses languagePair so originals that collide across languages
-            // (impossible today, prevented in future) always resolve to the right word.
-            val presetWordEntities = WordRegistry.allPrebuiltDecks.flatMap { deck ->
-                deck.wordOriginals.mapNotNull { original ->
-                    wordDao.getWordByOriginalAndLanguage(original, deck.languagePair)
-                }
-            }.distinctBy { it.id }
-            val presetIds = presetWordEntities.map { it.id }.toSet()
-
-            // The default PvP card set is deterministic — same words for every user.
-            // Flags are set by WordLoader based on insertion order, no shuffling.
-            val starterWords = wordDao.getDefaultPvpCards().filter { it.id !in presetIds }
-
-            val combined = (presetWordEntities + starterWords).distinctBy { it.id }
-            collectionDao.insertAll(combined.map { CollectionEntity(it.id) })
-        }
-
         // (Re)create preset decks if deck definitions changed OR word data changed.
         // Word data changes can silently alter word IDs via OnConflictStrategy.REPLACE
         // (a duplicate original in a new batch deletes the old row and inserts a new one
@@ -81,8 +60,36 @@ class CollectionRepository @Inject constructor(
         // versions ensures deck_cards are always rebuilt after any word data update.
         val storedDecksVersion = prefs.getPresetDecksVersion()
         val storedWordVersionForDecks = prefs.getPresetDecksWordVersion()
-        if (storedDecksVersion != PresetDecksVersion.CURRENT ||
-            storedWordVersionForDecks != WordDataVersion.CURRENT) {
+        val versionChanged = storedDecksVersion != PresetDecksVersion.CURRENT ||
+            storedWordVersionForDecks != WordDataVersion.CURRENT
+        val isFirstRun = collectionDao.count() == 0
+
+        // On first run AND on every word/deck data version bump: ensure the user
+        // owns all default starter PvP cards plus all preset deck words. This is
+        // additive (insertAll uses OnConflict=IGNORE) — never removes user cards.
+        // Without the version-bump branch, a tester installed on an older build
+        // stays frozen with the old starter set even after we ship more cards.
+        if (isFirstRun || versionChanged) {
+            // Words referenced by preset decks are always guaranteed so deck editors
+            // show the correct cards immediately. Each lookup uses languagePair so
+            // originals that collide across languages always resolve to the right word.
+            val presetWordEntities = WordRegistry.allPrebuiltDecks.flatMap { deck ->
+                deck.wordOriginals.mapNotNull { original ->
+                    wordDao.getWordByOriginalAndLanguage(original, deck.languagePair)
+                }
+            }.distinctBy { it.id }
+
+            // The default PvP card set is deterministic — same words for every user.
+            // Flags are set by WordLoader using effective rarity (last write wins on
+            // (original, languagePair) collisions), so the starter agrees with what
+            // the user actually sees in the deck builder.
+            val starterWords = wordDao.getDefaultPvpCards()
+
+            val combined = (presetWordEntities + starterWords).distinctBy { it.id }
+            collectionDao.insertAll(combined.map { CollectionEntity(it.id) })
+        }
+
+        if (versionChanged) {
             // Clean up orphaned deck_cards in user decks first (caused by duplicate word
             // replacements via OnConflictStrategy.REPLACE in previous word data versions).
             deckDao.deleteOrphanedDeckCards()
@@ -142,4 +149,7 @@ class CollectionRepository @Inject constructor(
     }
 
     suspend fun getTotalCount(): Int = collectionDao.count()
+
+    /** Card count owned in a single language — what the collection screen displays. */
+    suspend fun getTotalCount(languagePair: String): Int = collectionDao.count(languagePair)
 }
