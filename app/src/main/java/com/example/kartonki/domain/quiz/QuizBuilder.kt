@@ -117,35 +117,45 @@ object QuizBuilder {
         val others = pickDistractors(word, distractorPool)
         return when (type) {
             StudyQuizType.MULTIPLE_CHOICE_TRANSLATION -> {
-                val wrongs = others.take(3).map { it.translation }
+                val wrongs = uniqueDistractorTexts(others, correct = word.translation, count = 3) {
+                    it.translation
+                }
                 if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.original,
                     options = (wrongs + word.translation).shuffled(),
                     correctAnswer = word.translation)
             }
             StudyQuizType.MULTIPLE_CHOICE_DEFINITION -> {
-                val wrongs = others.filter { it.definition != null }.take(3).map { it.definition!! }
+                val wrongs = uniqueDistractorTexts(others, correct = word.definition!!, count = 3) {
+                    it.definition
+                }
                 if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.original,
                     options = (wrongs + word.definition!!).shuffled(),
                     correctAnswer = word.definition!!)
             }
             StudyQuizType.MULTIPLE_CHOICE_DEFINITION_NATIVE -> {
-                val wrongs = others.filter { it.definitionNative != null }.take(3).map { it.definitionNative!! }
+                val wrongs = uniqueDistractorTexts(others, correct = word.definitionNative!!, count = 3) {
+                    it.definitionNative
+                }
                 if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.original,
                     options = (wrongs + word.definitionNative!!).shuffled(),
                     correctAnswer = word.definitionNative!!)
             }
             StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF -> {
-                val wrongs = others.filter { it.definition != null }.take(3).map { it.original }
+                val wrongs = uniqueDistractorTexts(
+                    others.filter { it.definition != null }, correct = word.original, count = 3,
+                ) { it.original }
                 if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.definition!!,
                     options = (wrongs + word.original).shuffled(),
                     correctAnswer = word.original)
             }
             StudyQuizType.MULTIPLE_CHOICE_WORD_FROM_DEF_NATIVE -> {
-                val wrongs = others.filter { it.definitionNative != null }.take(3).map { it.original }
+                val wrongs = uniqueDistractorTexts(
+                    others.filter { it.definitionNative != null }, correct = word.original, count = 3,
+                ) { it.original }
                 if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = word.definitionNative!!,
                     options = (wrongs + word.original).shuffled(),
@@ -157,13 +167,42 @@ object QuizBuilder {
                 // If the word doesn't appear in the sentence, the blank cannot be created → fallback
                 if (sentence == raw) return fallbackTranslation(word, distractorPool)
                 val fillBlankDistractors = pickDistractors(word, distractorPool, forFillInBlank = true)
-                val wrongs = fillBlankDistractors.take(3).map { it.original }
+                val wrongs = uniqueDistractorTexts(
+                    fillBlankDistractors, correct = word.original, count = 3,
+                ) { it.original }
                 if (wrongs.size < 3) return fallbackTranslation(word, distractorPool)
                 StudyStep.Quiz(word = word, type = type, question = sentence,
                     options = (wrongs + word.original).shuffled(),
                     correctAnswer = word.original)
             }
         }
+    }
+
+    /**
+     * Picks up to [count] distractor strings via [textOf], skipping nulls/blanks
+     * AND any duplicate of either the correct answer or another already-picked
+     * distractor. Without this guard, two different `Word`s with the same
+     * translation/definition (synonyms) could surface as duplicate quiz options
+     * — a UI nightmare where the user has to guess which of two identical
+     * answers the app expects.
+     */
+    private inline fun uniqueDistractorTexts(
+        candidates: List<Word>,
+        correct: String,
+        count: Int,
+        textOf: (Word) -> String?,
+    ): List<String> {
+        val seen = HashSet<String>().apply { add(correct) }
+        val result = ArrayList<String>(count)
+        for (c in candidates) {
+            val t = textOf(c) ?: continue
+            if (t.isBlank()) continue
+            if (seen.add(t)) {
+                result += t
+                if (result.size == count) break
+            }
+        }
+        return result
     }
 
     /**

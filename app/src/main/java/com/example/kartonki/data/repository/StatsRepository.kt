@@ -98,8 +98,11 @@ class StatsRepository @Inject constructor(
             if (p.wordId in dismissedIds) return@mapNotNull null
             val (encounters, errors) = when (source) {
                 "pve_only" -> {
-                    val pveCorrect   = p.correctCount - p.pvpCorrectCount
-                    val pveIncorrect = p.incorrectCount - p.pvpIncorrectCount
+                    // maxOf(0, …) — guards against pvpCount > totalCount
+                    // due to a race between PvE and PvP write paths. Without
+                    // it errorRate could become negative or NaN.
+                    val pveCorrect   = maxOf(0, p.correctCount - p.pvpCorrectCount)
+                    val pveIncorrect = maxOf(0, p.incorrectCount - p.pvpIncorrectCount)
                     (pveCorrect + pveIncorrect) to pveIncorrect
                 }
                 "pvp_only" -> {
