@@ -101,11 +101,15 @@ class WordLoader @Inject constructor(
      * Words are taken in insertion order (i.e. the order they appear in seed files),
      * up to per-rarity limits. The result is identical for every user — no shuffling.
      *
-     * Limits per language pair:
-     *   COMMON 300 · UNCOMMON 130 · RARE 50 · EPIC 15 · LEGENDARY 5
+     * Limits per language pair total ~1000 cards (≈2000 across en-ru + he-ru):
+     *   COMMON 600 · UNCOMMON 270 · RARE 100 · EPIC 25 · LEGENDARY 5
+     *
+     * Distribution skewed toward lower rarities so newcomers always have enough
+     * basic vocabulary to build PvP decks; rare/epic/legendary appear sparingly.
+     * Preset deck words are added on top of this set in CollectionRepository.
      */
     private fun buildDefaultPvpOriginals(allWords: List<com.example.kartonki.data.db.entity.WordEntity>): Set<String> {
-        val limits = mapOf("COMMON" to 300, "UNCOMMON" to 130, "RARE" to 50, "EPIC" to 15, "LEGENDARY" to 5)
+        val limits = mapOf("COMMON" to 600, "UNCOMMON" to 270, "RARE" to 100, "EPIC" to 25, "LEGENDARY" to 5)
         val result = mutableSetOf<String>()
         allWords
             .filter { it.original !in AchievementCards.ALL_EXCLUSIVE }

@@ -30,8 +30,10 @@ class CollectionRepository @Inject constructor(
     private val mutex = Mutex()
     @Volatile private var initializedInProcess = false
     /**
-     * On first run: seeds words, gives a starter collection of ~500 cards
-     * (weighted toward lower rarities), and creates preset decks.
+     * On first run: seeds words, gives a starter collection of ~1000 cards
+     * per language pair (≈2000 total across en-ru + he-ru), weighted toward
+     * lower rarities so newcomers can immediately build PvP decks. Preset
+     * deck words are guaranteed on top of this base.
      *
      * On subsequent launches after an app update: if [PresetDecksVersion.CURRENT] doesn't
      * match the stored version, deletes all preset decks, recreates them from [WordRegistry],

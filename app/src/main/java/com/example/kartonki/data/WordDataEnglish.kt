@@ -10600,278 +10600,276 @@ object WordDataEnglish {
             level = 1,
             wordOriginals = listOf(
                 // COMMON ×12
-                "eat", "drink", "sleep", "walk",
-                "run", "sit", "read", "write",
-                "come", "go", "make", "buy",
+                "alarm", "wake up", "snooze", "hydrate",
+                "lunch break", "nap", "chores", "bedtime",
+                "morning", "evening", "today", "tomorrow",
                 // UNCOMMON ×9
-                "library", "museum", "traffic", "market",
-                "schedule", "habit", "appointment", "queue",
-                "commute",
+                "habit", "schedule", "routine", "appointment",
+                "queue", "delay", "commute", "leisure",
+                "jog",
             ),
         ),
 
-        // 1-B ── Животные и природа ────────────────────────────────────────────
+        // 1-B ── Семья ─────────────────────────────────────────────────────────
         // COMMON×12 / UNCOMMON×9 = 21
         DeckSeed(
-            name = "Животные и природа",
+            name = "Семья",
             level = 1,
             wordOriginals = listOf(
                 // COMMON ×12
-                "dog", "cat", "bird", "fish",
-                "lion", "elephant", "monkey", "bear",
-                "sheep", "frog", "tiger", "deer",
+                "mother", "father", "brother", "sister",
+                "son", "daughter", "grandfather", "grandmother",
+                "husband", "wife", "uncle", "aunt",
                 // UNCOMMON ×9
-                "tournament", "championship", "exhibition", "concert",
-                "performance", "gallery", "orchestra", "sculpture",
-                "portrait",
+                "relative", "sibling", "infant", "toddler",
+                "teenager", "spouse", "partner", "wedding",
+                "honeymoon",
             ),
         ),
 
         // ── Уровень 2 (★★) ─────────────────────────────────────────────────────
 
-        // 2-A ── Семья и дом ───────────────────────────────────────────────────
+        // 2-A ── Еда и кулинария ───────────────────────────────────────────────
         // COMMON×10 / UNCOMMON×6 / RARE×5 = 21
         DeckSeed(
-            name = "Семья и дом",
+            name = "Еда и кулинария",
             level = 2,
             wordOriginals = listOf(
                 // COMMON ×10
-                "mother", "father", "brother", "sister",
-                "baby", "friend", "bread", "milk",
-                "egg", "apple",
+                "bread", "milk", "cheese", "chicken",
+                "rice", "soup", "coffee", "tea",
+                "breakfast", "dinner",
                 // UNCOMMON ×6
-                "recipe", "nutrition", "menu", "organic",
-                "luggage", "hostel",
+                "menu", "recipe", "ingredient", "cuisine",
+                "portion", "appetite",
                 // RARE ×5
-                "ferment", "marinate", "metabolism", "perceive", "perspective",
+                "marinate", "garnish", "ferment", "knead", "pickle",
             ),
         ),
 
-        // 2-B ── Путешествия и транспорт ───────────────────────────────────────
+        // 2-B ── Путешествия ───────────────────────────────────────────────────
         // COMMON×10 / UNCOMMON×6 / RARE×5 = 21
         DeckSeed(
-            name = "Путешествия и транспорт",
+            name = "Путешествия",
             level = 2,
             wordOriginals = listOf(
                 // COMMON ×10
-                "bus", "car", "train", "taxi",
-                "travel", "game", "player", "film",
-                "actor", "cinema",
+                "hotel", "holiday", "excursion", "visa",
+                "tour", "guide", "flight", "suitcase",
+                "trip", "travel",
                 // UNCOMMON ×6
-                "destination", "journey", "accommodation", "boarding",
-                "itinerary", "stopover",
+                "luggage", "journey", "destination", "accommodation",
+                "itinerary", "passport",
                 // RARE ×5
-                "circumstance", "significant", "concept", "theory", "evidence",
+                "lodging", "voyage", "getaway", "scenic", "upgrade",
             ),
         ),
 
         // ── Уровень 3 (★★★) ────────────────────────────────────────────────────
 
-        // 3-A ── Работа и общество ─────────────────────────────────────────────
+        // 3-A ── Одежда ────────────────────────────────────────────────────────
         // COMMON×8 / UNCOMMON×6 / RARE×4 / EPIC×2 / LEGENDARY×1 = 21
         DeckSeed(
-            name = "Работа и общество",
+            name = "Одежда",
             level = 3,
             wordOriginals = listOf(
                 // COMMON ×8
-                "work", "job", "office", "meeting",
-                "project", "team", "happy", "sad",
+                "clothes", "shirt", "dress", "jeans",
+                "jacket", "boots", "hat", "scarf",
                 // UNCOMMON ×6
-                "career", "deadline", "skill", "vacancy",
-                "journalist", "conflict",
+                "fabric", "outfit", "trend", "collar",
+                "sleeve", "accessory",
                 // RARE ×4
-                "negotiate", "innovation", "strategy", "competition",
+                "tailor", "cuff", "seam", "lining",
                 // EPIC ×2
-                "entrepreneurship", "resilience",
+                "bespoke", "couture",
                 // LEGENDARY ×1
-                "indefatigable",
+                "gabardine",
             ),
         ),
 
-        // 3-B ── Тело и эмоции ─────────────────────────────────────────────────
+        // 3-B ── Дом и быт ─────────────────────────────────────────────────────
         // COMMON×8 / UNCOMMON×6 / RARE×4 / EPIC×2 / LEGENDARY×1 = 21
         DeckSeed(
-            name = "Тело и эмоции",
+            name = "Дом и быт",
             level = 3,
             wordOriginals = listOf(
                 // COMMON ×8
-                "head", "eye", "nose", "mouth",
-                "hand", "leg", "hair", "face",
+                "house", "room", "kitchen", "door",
+                "window", "bed", "table", "chair",
                 // UNCOMMON ×6
-                "exercise", "appointment", "performance", "rights",
-                "justice", "genre",
+                "staircase", "closet", "patio", "attic",
+                "basement", "doorbell",
                 // RARE ×4
-                "immune", "perceive", "vulnerability", "ecosystem",
+                "pantry", "blinds", "boiler", "loft",
                 // EPIC ×2
-                "compassion", "empathy",
+                "mantelpiece", "vestibule",
                 // LEGENDARY ×1
-                "ephemeral",
+                "scullery",
             ),
         ),
 
         // ── Уровень 4 (★★★★) ───────────────────────────────────────────────────
 
-        // 4-A ── Медиа и искусство ─────────────────────────────────────────────
+        // 4-A ── Спорт ─────────────────────────────────────────────────────────
         // COMMON×4 / UNCOMMON×7 / RARE×6 / EPIC×3 / LEGENDARY×1 = 21
         DeckSeed(
-            name = "Медиа и искусство",
+            name = "Спорт",
             level = 4,
             wordOriginals = listOf(
                 // COMMON ×4
-                "game", "player", "film", "actor",
+                "football", "tennis", "team", "stadium",
                 // UNCOMMON ×7
-                "fiction", "novel", "author", "director",
-                "composer", "critic", "plot",
+                "tournament", "championship", "medal", "trophy",
+                "marathon", "league", "match",
                 // RARE ×6
-                "ideology", "analysis", "theory", "concept",
-                "evidence", "propaganda",
+                "podium", "triathlon", "endurance", "tactic",
+                "champion", "ranking",
                 // EPIC ×3
-                "aesthetic", "discourse", "protagonist",
+                "underdog", "footwork", "possession",
                 // LEGENDARY ×1
-                "catharsis",
+                "southpaw",
             ),
         ),
 
-        // 4-B ── Экономика и бизнес ────────────────────────────────────────────
+        // 4-B ── Работа и карьера ──────────────────────────────────────────────
         // COMMON×4 / UNCOMMON×7 / RARE×6 / EPIC×3 / LEGENDARY×1 = 21
         DeckSeed(
-            name = "Экономика и бизнес",
+            name = "Работа и карьера",
             level = 4,
             wordOriginals = listOf(
                 // COMMON ×4
-                "work", "job", "school", "city",
+                "job", "office", "meeting", "interview",
                 // UNCOMMON ×7
-                "career", "deadline", "skill", "journalist",
-                "conflict", "rights", "norm",
+                "colleague", "salary", "career", "skill",
+                "deadline", "promote", "profession",
                 // RARE ×6
-                "bankruptcy", "venture", "shareholder", "entrepreneur",
-                "stereotype", "prejudice",
+                "shortlist", "severance", "headhunter", "milestone",
+                "backlog", "deliverable",
                 // EPIC ×3
-                "entrepreneurship", "monopoly", "acquisition",
+                "hierarchy", "bureaucracy", "accountability",
                 // LEGENDARY ×1
-                "entropy",
+                "meritocracy",
             ),
         ),
 
         // ── Уровень 5 (★★★★★) ──────────────────────────────────────────────────
 
-        // 5-A ── Наука и академия ──────────────────────────────────────────────
+        // 5-A ── Наука ─────────────────────────────────────────────────────────
         // UNCOMMON×6 / RARE×8 / EPIC×5 / LEGENDARY×2 = 21
         DeckSeed(
-            name = "Наука и академия",
+            name = "Наука",
             level = 5,
             wordOriginals = listOf(
                 // UNCOMMON ×6
-                "journalist", "conflict", "rights", "justice",
-                "global", "protest",
+                "experiment", "laboratory", "element", "solution",
+                "chemistry", "physics",
                 // RARE ×8
-                "discrimination", "immigration", "inequality", "poverty",
-                "reform", "authority", "regime", "sanction",
+                "atmosphere", "gravity", "electron", "nucleus",
+                "catalyst", "velocity", "isotope", "enzyme",
                 // EPIC ×5
-                "perpetuate", "coerce", "suppress", "eradicate",
-                "exacerbate",
+                "hypothesis", "empirical", "synthesis", "calibrate", "quantify",
                 // LEGENDARY ×2
-                "irredentism", "syndicalism",
+                "heuristic", "asymptotic",
             ),
         ),
 
-        // 5-B ── Политика и власть ─────────────────────────────────────────────
+        // 5-B ── Технологии ────────────────────────────────────────────────────
         // UNCOMMON×6 / RARE×8 / EPIC×5 / LEGENDARY×2 = 21
         DeckSeed(
-            name = "Политика и власть",
+            name = "Технологии",
             level = 5,
             wordOriginals = listOf(
                 // UNCOMMON ×6
-                "genre", "irony", "fallacy", "analogy",
-                "assumption", "doctrine",
+                "software", "network", "digital", "browser",
+                "server", "algorithm",
                 // RARE ×8
-                "principle", "conviction", "ideology", "notion",
-                "philosophy", "belief", "conscious", "subconscious",
+                "firewall", "phishing", "malware", "compiler",
+                "kernel", "latency", "API", "VPN",
                 // EPIC ×5
-                "paradigm", "premise", "invoke", "endorse",
-                "bolster",
+                "ransomware", "bandwidth", "blockchain", "cryptography", "authentication",
                 // LEGENDARY ×2
-                "solipsism", "epistemology",
+                "kubernetes", "deadlock",
             ),
         ),
 
         // ── Уровень 6 (★×6) ────────────────────────────────────────────────────
 
-        // 6-A ── Философия и этика ─────────────────────────────────────────────
+        // 6-A ── Политика ──────────────────────────────────────────────────────
         // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3 = 21
         DeckSeed(
-            name = "Философия и этика",
+            name = "Политика",
             level = 6,
             wordOriginals = listOf(
                 // UNCOMMON ×3
-                "argument", "assumption", "doctrine",
+                "election", "democracy", "parliament",
                 // RARE ×8
-                "principle", "conviction", "ideology", "notion",
-                "philosophy", "belief", "conscious", "subconscious",
+                "sovereignty", "referendum", "coalition", "sanction",
+                "regime", "authority", "veto", "impeachment",
                 // EPIC ×7
-                "paradigm", "premise", "tenet", "maxim",
-                "integrity", "rhetoric", "discourse",
+                "diplomacy", "hegemony", "embargo", "armistice",
+                "totalitarianism", "federalism", "suffrage",
                 // LEGENDARY ×3
-                "solipsism", "ontological", "teleological",
+                "demagogue", "kleptocracy", "rapprochement",
             ),
         ),
 
-        // 6-B ── Право и геополитика ───────────────────────────────────────────
+        // 6-B ── Философия ─────────────────────────────────────────────────────
         // UNCOMMON×3 / RARE×8 / EPIC×7 / LEGENDARY×3 = 21
         DeckSeed(
-            name = "Право и геополитика",
+            name = "Философия",
             level = 6,
             wordOriginals = listOf(
                 // UNCOMMON ×3
-                "diplomat", "border", "conflict",
+                "fallacy", "doctrine", "reasoning",
                 // RARE ×8
-                "mediate", "siege", "guerrilla", "coalition",
-                "sanction", "veto", "perjury", "sovereignty",
+                "paradox", "ideology", "notion", "ethics",
+                "virtue", "nihilism", "subjectivity", "antithesis",
                 // EPIC ×7
-                "diplomacy", "hegemony", "geopolitical", "geopolitics",
-                "embargo", "armistice", "decree",
+                "ontology", "metaphysics", "pragmatism", "determinism",
+                "utilitarianism", "existentialism", "syllogism",
                 // LEGENDARY ×3
-                "irredentism", "jurisprudence", "habeas corpus",
+                "epistemology", "dialectical", "tautological",
             ),
         ),
 
         // ── Уровень 7 (★×7) ────────────────────────────────────────────────────
 
-        // 7-A ── Риторика и мысль ──────────────────────────────────────────────
+        // 7-A ── История ───────────────────────────────────────────────────────
         // RARE×6 / EPIC×10 / LEGENDARY×5 = 21
         DeckSeed(
-            name = "Риторика и мысль",
+            name = "История",
             level = 7,
             wordOriginals = listOf(
                 // RARE ×6
-                "eloquence", "folklore", "dialect", "metaphor",
-                "foreshadowing", "antagonist",
+                "siege", "feudalism", "renaissance", "imperialism",
+                "guerrilla", "exile",
                 // EPIC ×10
-                "oratory", "symbolic", "allegorical", "rhetoric",
-                "archetype", "articulate", "provocative", "avant-garde",
-                "motif", "interplay",
+                "historiography", "provenance", "antiquarian", "apocryphal",
+                "excavation", "sarcophagus", "Phoenician", "Byzantine",
+                "interregnum", "abdication",
                 // LEGENDARY ×5
-                "aphorism", "parable", "verisimilitude", "palimpsest",
-                "metonymy",
+                "stratigraphy", "necropolis", "ziggurat", "Sumerian",
+                "regicide",
             ),
         ),
 
-        // 7-B ── Цивилизация и история ─────────────────────────────────────────
+        // 7-B ── Культура и искусство ──────────────────────────────────────────
         // RARE×6 / EPIC×10 / LEGENDARY×5 = 21
         DeckSeed(
-            name = "Цивилизация и история",
+            name = "Культура и искусство",
             level = 7,
             wordOriginals = listOf(
                 // RARE ×6
-                "ratification", "referendum", "technocracy", "populism",
-                "bipartisan", "theocracy",
+                "narrative", "symphony", "crescendo", "dissonance",
+                "antagonist", "foreshadowing",
                 // EPIC ×10
-                "totalitarianism", "secessionism", "jingoism", "apportionment",
-                "plutocracy", "federalism", "adjudicate", "arbitrary",
-                "abolish", "jurisdiction",
+                "protagonist", "aesthetic", "allegorical", "archetype",
+                "motif", "cinematography", "montage", "chiaroscuro",
+                "iconography", "auteur",
                 // LEGENDARY ×5
-                "dialectic", "axiom", "hubris", "chimera",
-                "lacuna",
+                "verisimilitude", "elegy", "leitmotif", "pastiche",
+                "ekphrasis",
             ),
         ),
     )
