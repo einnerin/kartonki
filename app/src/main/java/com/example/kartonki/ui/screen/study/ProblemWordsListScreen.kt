@@ -56,9 +56,11 @@ private val ErrorRed = Color(0xFFEF5350)
 fun ProblemWordsListScreen(
     onNavigateBack: () -> Unit,
     onStartSession: () -> Unit,
+    onNavigateToDismissed: () -> Unit,
     viewModel: ProblemWordsListViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
+    com.example.kartonki.ui.component.OnResume { viewModel.reload() }
 
     // Dismiss-confirmation dialog — nullable word being confirmed.
     var dismissCandidate by remember { mutableStateOf<Word?>(null) }
@@ -96,6 +98,11 @@ fun ProblemWordsListScreen(
                     if (state.words.isNotEmpty() && state.selectedCount < state.words.size) {
                         TextButton(onClick = viewModel::selectAll) {
                             Text("Выбрать все")
+                        }
+                    }
+                    if (state.dismissedCount > 0) {
+                        TextButton(onClick = onNavigateToDismissed) {
+                            Text("Скрытые (${state.dismissedCount})")
                         }
                     }
                 },

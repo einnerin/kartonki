@@ -29,8 +29,9 @@ sealed class Route(val path: String) {
         const val ARG_DECK_ID = "deckId"
     }
 
-    object ProblemWordsList    : Route("problem_words_list")
-    object ProblemWordsSession : Route("problem_words_session")
+    object ProblemWordsList         : Route("problem_words_list")
+    object ProblemWordsSession      : Route("problem_words_session")
+    object DismissedProblemWords    : Route("dismissed_problem_words")
 
     object PackShop    : Route("pack_shop")
     object PackOpening : Route("pack_opening/{count}") {

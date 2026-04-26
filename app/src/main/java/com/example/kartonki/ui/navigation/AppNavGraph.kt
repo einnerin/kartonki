@@ -32,6 +32,7 @@ import com.example.kartonki.ui.screen.shop.PackOpeningScreen
 import com.example.kartonki.ui.screen.shop.PackShopScreen
 import com.example.kartonki.ui.screen.stats.PlayerStatsScreen
 import com.example.kartonki.ui.screen.stats.WordStatsScreen
+import com.example.kartonki.ui.screen.study.DismissedProblemWordsScreen
 import com.example.kartonki.ui.screen.study.ProblemWordsListScreen
 import com.example.kartonki.ui.screen.study.ProblemWordsSessionScreen
 import com.example.kartonki.ui.screen.study.StudyScreen
@@ -139,6 +140,9 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
                 onNavigateToStats = { navController.navigate(Route.PlayerStats.path) },
                 onNavigateToWordStats = { navController.navigate(Route.WordStats.path) },
                 onNavigateToAchievements = { navController.navigate(Route.Achievements.path) },
+                onNavigateToDismissedProblemWords = {
+                    navController.navigate(Route.DismissedProblemWords.path)
+                },
                 onSignOut = {
                     navController.navigate(Route.Home.path) {
                         popUpTo(0) { inclusive = true }
@@ -182,7 +186,14 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
                 onStartSession = {
                     navController.navigate(Route.ProblemWordsSession.path)
                 },
+                onNavigateToDismissed = {
+                    navController.navigate(Route.DismissedProblemWords.path)
+                },
             )
+        }
+
+        composable(Route.DismissedProblemWords.path) {
+            DismissedProblemWordsScreen(onNavigateBack = { navController.popBackStack() })
         }
 
         composable(

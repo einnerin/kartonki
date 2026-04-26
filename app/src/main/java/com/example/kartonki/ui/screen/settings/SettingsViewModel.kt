@@ -316,7 +316,12 @@ class SettingsViewModel @Inject constructor(
         _uiState.update { it.copy(showMinEncountersPicker = false) }
     }
 
-    private fun refreshDismissedCount() {
+    /**
+     * Recomputes the dismissed-words count. Public so the Settings screen can
+     * call it on resume — the count drifts when the user restores entries on
+     * the dedicated DismissedProblemWordsScreen and pops back here.
+     */
+    fun refreshDismissedCount() {
         _uiState.update { it.copy(dismissedProblemWordCount = prefs.getDismissedProblemWordIds().size) }
     }
 

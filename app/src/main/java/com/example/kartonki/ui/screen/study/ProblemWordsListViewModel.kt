@@ -19,6 +19,8 @@ data class ProblemWordsListUiState(
     val words: List<Word> = emptyList(),
     /** Word IDs that the user has checked for this session (all checked by default). */
     val selectedIds: Set<Long> = emptySet(),
+    /** Total number of words the user has dismissed and could restore. */
+    val dismissedCount: Int = 0,
 ) {
     val selectedCount: Int get() = selectedIds.size
 }
@@ -48,7 +50,12 @@ class ProblemWordsListViewModel @Inject constructor(
             )
             val selectedIds = words.map { it.id }.toSet()
             _uiState.update {
-                it.copy(isLoading = false, words = words, selectedIds = selectedIds)
+                it.copy(
+                    isLoading = false,
+                    words = words,
+                    selectedIds = selectedIds,
+                    dismissedCount = dismissed.size,
+                )
             }
         }
     }

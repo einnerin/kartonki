@@ -171,6 +171,16 @@ class UserPreferencesRepository @Inject constructor(
         prefs.edit().putString(Keys.PROBLEM_WORDS_DISMISSED_IDS, updated.joinToString(",")).apply()
     }
 
+    /** Removes a single id from the dismissed list — used by the "restore one" action. */
+    fun removeDismissedProblemWordId(id: Long) {
+        val updated = getDismissedProblemWordIds() - id
+        if (updated.isEmpty()) {
+            prefs.edit().remove(Keys.PROBLEM_WORDS_DISMISSED_IDS).apply()
+        } else {
+            prefs.edit().putString(Keys.PROBLEM_WORDS_DISMISSED_IDS, updated.joinToString(",")).apply()
+        }
+    }
+
     fun clearDismissedProblemWordIds() {
         prefs.edit().remove(Keys.PROBLEM_WORDS_DISMISSED_IDS).apply()
     }

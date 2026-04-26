@@ -74,12 +74,14 @@ fun SettingsScreen(
     onNavigateToStats: () -> Unit,
     onNavigateToWordStats: () -> Unit,
     onNavigateToAchievements: () -> Unit,
+    onNavigateToDismissedProblemWords: () -> Unit,
     onSignOut: () -> Unit,
     viewModel: SettingsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
     val context = LocalContext.current
     val s = LocalAppStrings.current
+    com.example.kartonki.ui.component.OnResume { viewModel.refreshDismissedCount() }
 
     // Navigate to login when sign-out completes
     LaunchedEffect(state.signOutDone) {
@@ -564,9 +566,14 @@ fun SettingsScreen(
                     modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
                 )
                 if (state.dismissedProblemWordCount > 0) {
-                    SettingsRow(label = "Восстановить удалённые проблемные слова (${state.dismissedProblemWordCount})") {
-                        TextButton(onClick = viewModel::onRestoreDismissedProblemWords) {
-                            Text("Восстановить")
+                    SettingsRow(label = "Скрытые проблемные слова (${state.dismissedProblemWordCount})") {
+                        Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                            TextButton(onClick = onNavigateToDismissedProblemWords) {
+                                Text("Открыть")
+                            }
+                            TextButton(onClick = viewModel::onRestoreDismissedProblemWords) {
+                                Text("Все назад")
+                            }
                         }
                     }
                 }
