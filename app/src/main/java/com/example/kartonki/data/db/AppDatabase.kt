@@ -40,7 +40,7 @@ import com.example.kartonki.data.db.entity.WordSetMembershipEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 40,
+    version = 41,
     exportSchema = false,
 )
 @TypeConverters(WordConverters::class)
@@ -380,6 +380,44 @@ abstract class AppDatabase : RoomDatabase() {
         val MIGRATION_39_40 = object : Migration(39, 40) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE words ADD COLUMN fillInBlankExclusions TEXT NOT NULL DEFAULT ''")
+            }
+        }
+
+        /**
+         * Per-language achievement progress.
+         * - achievements: composite PK (id, languagePair) — same achievement
+         *   can be unlocked separately per language, granting language-specific
+         *   reward cards.
+         * - study_streaks: composite PK (date, languagePair) — streak counters
+         *   tracked per language.
+         * - pvp_matches: new column languagePair (the deck's language).
+         *
+         * Achievements/streaks tables are wiped and recreated; pre-existing
+         * progress on those was tied to a single global state and can't be
+         * mapped meaningfully to per-language entries. Collection/decks/
+         * progress (word-level) are preserved.
+         */
+        val MIGRATION_40_41 = object : Migration(40, 41) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("DROP TABLE IF EXISTS achievements")
+                db.execSQL(
+                    """CREATE TABLE achievements (
+                        id TEXT NOT NULL,
+                        languagePair TEXT NOT NULL,
+                        unlockedAt INTEGER,
+                        rewardWordId INTEGER,
+                        PRIMARY KEY(id, languagePair)
+                    )"""
+                )
+                db.execSQL("DROP TABLE IF EXISTS study_streaks")
+                db.execSQL(
+                    """CREATE TABLE study_streaks (
+                        date INTEGER NOT NULL,
+                        languagePair TEXT NOT NULL,
+                        PRIMARY KEY(date, languagePair)
+                    )"""
+                )
+                db.execSQL("ALTER TABLE pvp_matches ADD COLUMN languagePair TEXT NOT NULL DEFAULT 'en-ru'")
             }
         }
 

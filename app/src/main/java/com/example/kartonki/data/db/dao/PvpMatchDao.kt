@@ -10,14 +10,14 @@ interface PvpMatchDao {
     @Query("SELECT * FROM pvp_matches ORDER BY timestamp DESC")
     suspend fun getAll(): List<PvpMatchEntity>
 
-    @Query("SELECT COUNT(*) FROM pvp_matches")
-    suspend fun getMatchCount(): Int
+    @Query("SELECT COUNT(*) FROM pvp_matches WHERE languagePair = :languagePair")
+    suspend fun getMatchCountForLang(languagePair: String): Int
 
-    @Query("SELECT COUNT(*) FROM pvp_matches WHERE winnerName IS NOT NULL")
-    suspend fun getMatchesWithWinnerCount(): Int
+    @Query("SELECT COUNT(*) FROM pvp_matches WHERE winnerName IS NOT NULL AND languagePair = :languagePair")
+    suspend fun getMatchesWithWinnerCountForLang(languagePair: String): Int
 
-    @Query("SELECT COUNT(*) FROM pvp_matches WHERE timestamp >= :sinceMs")
-    suspend fun getMatchCountSince(sinceMs: Long): Int
+    @Query("SELECT COUNT(*) FROM pvp_matches WHERE timestamp >= :sinceMs AND languagePair = :languagePair")
+    suspend fun getMatchCountSinceForLang(sinceMs: Long, languagePair: String): Int
 
     @Insert
     suspend fun insert(match: PvpMatchEntity)

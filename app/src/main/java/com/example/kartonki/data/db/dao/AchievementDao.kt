@@ -11,11 +11,14 @@ interface AchievementDao {
     @Query("SELECT * FROM achievements ORDER BY id")
     suspend fun getAll(): List<AchievementEntity>
 
-    @Query("SELECT * FROM achievements WHERE id = :id")
-    suspend fun getById(id: String): AchievementEntity?
+    @Query("SELECT * FROM achievements WHERE languagePair = :languagePair ORDER BY id")
+    suspend fun getAllForLang(languagePair: String): List<AchievementEntity>
 
-    @Query("SELECT COUNT(*) FROM achievements WHERE unlockedAt IS NOT NULL")
-    suspend fun getUnlockedCount(): Int
+    @Query("SELECT * FROM achievements WHERE id = :id AND languagePair = :languagePair")
+    suspend fun getById(id: String, languagePair: String): AchievementEntity?
+
+    @Query("SELECT COUNT(*) FROM achievements WHERE unlockedAt IS NOT NULL AND languagePair = :languagePair")
+    suspend fun getUnlockedCountForLang(languagePair: String): Int
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsert(achievement: AchievementEntity)

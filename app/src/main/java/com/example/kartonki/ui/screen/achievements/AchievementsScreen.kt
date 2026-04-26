@@ -58,6 +58,7 @@ fun AchievementsScreen(
     viewModel: AchievementsViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsState()
+    val currentLanguagePair by viewModel.languagePair.collectAsState()
     val s = LocalAppStrings.current
 
     Scaffold(
@@ -116,7 +117,7 @@ fun AchievementsScreen(
             ) {
                 // ── Visible achievements ───────────────────────────────────────
                 items(state.visibleAchievements) { achievement ->
-                    AchievementCard(achievement)
+                    AchievementCard(achievement, currentLanguagePair)
                 }
 
                 // ── Hidden achievements section header ─────────────────────────
@@ -146,7 +147,7 @@ fun AchievementsScreen(
 
                 // ── Hidden achievement cards ───────────────────────────────────
                 items(state.hiddenAchievements) { achievement ->
-                    HiddenAchievementCard(achievement)
+                    HiddenAchievementCard(achievement, currentLanguagePair)
                 }
             }
         }
@@ -154,7 +155,7 @@ fun AchievementsScreen(
 }
 
 @Composable
-private fun AchievementCard(state: AchievementState) {
+private fun AchievementCard(state: AchievementState, currentLanguagePair: String) {
     val isUnlocked = state.isUnlocked
     val id = state.id
 
@@ -248,7 +249,7 @@ private fun AchievementCard(state: AchievementState) {
                         color = if (isUnlocked) RarityLegendary else MaterialTheme.colorScheme.onSurfaceVariant,
                     )
                     Text(
-                        text = id.rewardWordOriginal,
+                        text = id.rewardOriginalFor(currentLanguagePair),
                         style = MaterialTheme.typography.labelLarge,
                         fontWeight = FontWeight.Bold,
                         color = if (isUnlocked) RarityLegendary
@@ -284,7 +285,7 @@ private fun AchievementCard(state: AchievementState) {
 }
 
 @Composable
-private fun HiddenAchievementCard(state: AchievementState) {
+private fun HiddenAchievementCard(state: AchievementState, currentLanguagePair: String) {
     val isUnlocked = state.isUnlocked
     val id = state.id
 
@@ -386,7 +387,7 @@ private fun HiddenAchievementCard(state: AchievementState) {
                                 else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.3f),
                     )
                     Text(
-                        text = if (isUnlocked) id.rewardWordOriginal else "???",
+                        text = if (isUnlocked) id.rewardOriginalFor(currentLanguagePair) else "???",
                         style = MaterialTheme.typography.labelLarge,
                         fontWeight = FontWeight.Bold,
                         color = if (isUnlocked) RarityLegendary

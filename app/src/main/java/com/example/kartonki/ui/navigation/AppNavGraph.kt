@@ -43,6 +43,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
     // Achievement notification overlay — shared across all screens
     val achievementVm: AchievementEventViewModel = hiltViewModel()
     val pendingAchievement by achievementVm.pendingNotification.collectAsState()
+    val achievementLanguagePair by achievementVm.languagePair.collectAsState()
 
     // New cards event overlay — shared across all screens
     val newCardsVm: NewCardsEventViewModel = hiltViewModel()
@@ -307,6 +308,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
     pendingAchievement?.let { achievement ->
         AchievementNotificationDialog(
             achievement = achievement,
+            languagePair = achievementLanguagePair,
             onDismiss = { achievementVm.dismissNotification() },
         )
     }

@@ -1,10 +1,16 @@
 package com.example.kartonki.data.db.entity
 
 import androidx.room.Entity
-import androidx.room.PrimaryKey
 
-/** One row per calendar day that had at least one study session. */
-@Entity(tableName = "study_streaks")
+/**
+ * One row per (calendar day, languagePair) that had at least one study session.
+ * Streak counters are calculated separately for each language.
+ */
+@Entity(
+    tableName = "study_streaks",
+    primaryKeys = ["date", "languagePair"],
+)
 data class StudyStreakEntity(
-    @PrimaryKey val date: Long,  // start-of-day timestamp (ms)
+    val date: Long,           // start-of-day timestamp (ms)
+    val languagePair: String,
 )

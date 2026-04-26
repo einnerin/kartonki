@@ -5,73 +5,63 @@ package com.example.kartonki.data
  *
  * Uses [original] strings (stable across DB rebuilds) rather than auto-generated IDs.
  *
- * Two tiers:
- *  - [EXCLUSIVE_LEGENDARY] — the 30 most obscure/complex Legendary words,
- *    reserved for challenging long-term achievements.
- *  - [STARTER_ACHIEVEMENT_REWARDS] — a handful of Epic words given as
- *    rewards for easy first-time achievements (first session, first win,
- *    streak milestones, etc.).
+ * Per-language: each achievement has both an English (en-ru) reward word and a
+ * Hebrew (he-ru) reward word. The user gets the card matching their currently-
+ * studied language. [ALL_EXCLUSIVE] is the union across all supported languages
+ * — used to filter packs/starter selection (a word reserved for any language is
+ * never given out outside the achievement flow).
+ *
+ * Two tiers per language:
+ *  - EXCLUSIVE_LEGENDARY — the most obscure/complex Legendary words for hidden
+ *    long-term achievements.
+ *  - STARTER_ACHIEVEMENT_REWARDS — Epic words given as rewards for visible
+ *    starter achievements (first session, first win, streaks, etc.).
  */
 object AchievementCards {
 
-    /**
-     * The 30 most linguistically obscure Legendary words.
-     * Excluded from packs and starter selection — only obtainable via achievements.
-     */
+    /** Legendary reward originals across all supported language pairs. */
     val EXCLUSIVE_LEGENDARY: Set<String> = setOf(
-        "diaphanous",      // прозрачный/тонкий
-        "lugubrious",      // мрачный/унылый
-        "obstreperous",    // шумный/буйный
-        "abstruse",        // трудный для понимания
-        "meretricious",    // мишурный/показной
-        "pellucid",        // кристально ясный
-        "platitudinous",   // банальный
-        "recondite",       // малоизвестный/сокровенный
-        "stentorian",      // громоподобный
-        "ineffaceable",    // неизгладимый
-        "sempiternal",     // вечный
-        "desideratum",     // насущная потребность
-        "palimpsest",      // палимпсест
-        "synecdoche",      // синекдоха
-        "solipsism",       // солипсизм
-        "perspicacious",   // проницательный
-        "solipsistic",     // солипсистский
-        "intertextuality", // интертекстуальность
-        "prolepsis",       // пролепсис
-        "insouciant",      // беззаботный/безразличный
-        "magniloquent",    // напыщенный/высокопарный
-        "pusillanimous",   // малодушный
-        "ossify",          // окостеневать/коснеть
-        "precipitate",     // стремительно вызывать (гл.)
-        "attrite",         // постепенно истощать
-        "reify",           // реифицировать
-        "ramify",          // разветвляться
-        "efflorescence",   // расцвет/пышное развитие
-        "metastasise",     // метастазировать/разрастаться
-        "fructify",        // давать плоды/приносить пользу
+        // en-ru
+        "diaphanous", "lugubrious", "obstreperous", "abstruse", "meretricious",
+        "pellucid", "platitudinous", "recondite", "stentorian", "ineffaceable",
+        "sempiternal", "desideratum", "palimpsest", "synecdoche", "solipsism",
+        "perspicacious", "solipsistic", "intertextuality", "prolepsis",
+        "insouciant", "magniloquent", "pusillanimous", "ossify", "precipitate",
+        "attrite", "reify", "ramify", "efflorescence", "metastasise", "fructify",
+        // he-ru (Hebrew counterparts of the 15 hidden achievements)
+        "שָׁקוּף",         // diaphanous
+        "קוֹדֵר",         // lugubrious
+        "סוֹעֵר",         // obstreperous
+        "סָבוּךְ",         // abstruse
+        "רַאֲוָתָנִי",     // meretricious
+        "צָלוּל",         // pellucid
+        "שִׁגְרָתִי",      // platitudinous
+        "כָּמוּס",         // recondite
+        "רַעַם",          // stentorian
+        "בִּלְתִּי-נִמְחָק", // ineffaceable
+        "נִצְחִי",         // sempiternal
+        "צֹרֶךְ",          // desideratum
+        "דִּמּוּי",         // synecdoche
+        "סוֹלִיפְּסִיזְם",   // solipsism
+        "חַד-עַיִן",       // perspicacious
     )
 
-    /**
-     * Epic words reserved as rewards for easy starter achievements.
-     * Also excluded from packs and starter selection so they feel earned.
-     *
-     * Suggested award mapping (to be wired up when achievements are implemented):
-     *   paradigm   — "Complete your first study session"
-     *   inference  — "Complete 3 study sessions"
-     *   conjecture — "Play your first PvP match"
-     *   refute     — "Win your first PvP match"
-     *   elucidate  — "Study 5 days in a row"
-     */
+    /** Epic starter reward originals across all supported language pairs. */
     val STARTER_ACHIEVEMENT_REWARDS: Set<String> = setOf(
-        "paradigm",   // парадигма
-        "inference",  // умозаключение
-        "conjecture", // предположение/гипотеза
-        "refute",     // опровергать
-        "elucidate",  // разъяснять
-        "accomplish", // достигать — EXPERT
-        "consistent", // последовательный — STREAK_5/STREAK_7
-        "dedicate",   // посвящать — COLLECTOR
-        "excel",      // преуспевать — LEGEND
+        // en-ru
+        "paradigm", "inference", "conjecture", "refute", "elucidate",
+        "accomplish", "consistent", "dedicate", "excel", "fluent",
+        // he-ru
+        "דֶּגֶם",          // paradigm
+        "מַסְקָנָה",        // inference
+        "הַשְׁעָרָה",      // conjecture
+        "לְהַפְרִיךְ",     // refute
+        "לְבָאֵר",         // elucidate
+        "לְהַשִּׂיג",      // accomplish
+        "עִקְבִי",         // consistent
+        "לְהַקְדִּישׁ",     // dedicate
+        "לְהִצְטַיֵּין",    // excel
+        "שׁוֹטֵף",         // fluent
     )
 
     /** Union of all exclusive originals — used to filter packs and starter selection. */

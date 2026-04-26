@@ -13,4 +13,5 @@ data class PvpMatchEntity(
     val player2Score: Int,
     val winnerName: String?,       // null = draw
     val wasSurrender: Boolean = false,
+    val languagePair: String = "en-ru",  // language of the deck used in this match
 )

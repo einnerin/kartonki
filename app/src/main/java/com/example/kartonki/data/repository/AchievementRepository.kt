@@ -11,6 +11,7 @@ import com.example.kartonki.data.db.entity.AchievementEntity
 import com.example.kartonki.data.db.entity.CollectionEntity
 import com.example.kartonki.data.db.entity.PvpMatchEntity
 import com.example.kartonki.data.db.entity.StudyStreakEntity
+import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.domain.model.AchievementId
 import com.example.kartonki.domain.model.AchievementState
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -20,6 +21,15 @@ import java.util.Calendar
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/**
+ * Per-language achievement repository. The user's currently-studied language
+ * (`prefs.getLanguagePair()`) is read at the start of each public entry point
+ * and used to scope progress, unlocks, and reward cards.
+ *
+ * The same achievement (e.g. FIRST_LESSON) can be unlocked separately for each
+ * language — once for en-ru, once for he-ru — granting a language-specific
+ * reward card each time.
+ */
 @Singleton
 class AchievementRepository @Inject constructor(
     private val achievementDao: AchievementDao,
@@ -29,17 +39,21 @@ class AchievementRepository @Inject constructor(
     private val wordDao: WordDao,
     private val deckDao: DeckDao,
     private val collectionDao: CollectionDao,
+    private val prefs: UserPreferencesRepository,
     private val analytics: com.example.kartonki.analytics.AnalyticsManager,
 ) {
     private val _newlyUnlocked = MutableSharedFlow<AchievementId>(extraBufferCapacity = 8)
     val newlyUnlocked: SharedFlow<AchievementId> = _newlyUnlocked.asSharedFlow()
 
-    // Achievements only transition locked → unlocked, never backwards.
-    // Caching the unlocked set avoids a DB round-trip per check.
+    /** unlockedCache key = "$id|$languagePair" — language-aware. */
     private val unlockedCache: MutableSet<String> = mutableSetOf()
 
+    private fun cacheKey(id: AchievementId, lang: String) = "${id.name}|$lang"
+
+    /** Returns achievement states for the currently-studied language. */
     suspend fun getAll(): List<AchievementState> {
-        val entities = achievementDao.getAll().associateBy { it.id }
+        val lang = prefs.getLanguagePair()
+        val entities = achievementDao.getAllForLang(lang).associateBy { it.id }
         return AchievementId.entries.map { id ->
             val entity = entities[id.name]
             AchievementState(
@@ -55,9 +69,10 @@ class AchievementRepository @Inject constructor(
      * @param incorrectCount number of wrong answers in the session (0 = perfect)
      */
     suspend fun recordStudyDay(incorrectCount: Int = 0) {
-        val previousStreak = calculateCurrentStreak()
-        studyStreakDao.insert(StudyStreakEntity(date = todayMs()))
-        val newStreak = calculateCurrentStreak()
+        val lang = prefs.getLanguagePair()
+        val previousStreak = calculateCurrentStreak(lang)
+        studyStreakDao.insert(StudyStreakEntity(date = todayMs(), languagePair = lang))
+        val newStreak = calculateCurrentStreak(lang)
         if (newStreak > previousStreak) {
             analytics.log(
                 com.example.kartonki.analytics.AnalyticsEvent.StreakExtended(
@@ -72,23 +87,23 @@ class AchievementRepository @Inject constructor(
                 )
             )
         }
-        checkFirstLesson()
-        checkDiligent()
-        checkExpert()
-        checkPolyglot()
-        checkStreak5()
-        checkStreak7()
-        checkLegend()
+        checkFirstLesson(lang)
+        checkDiligent(lang)
+        checkExpert(lang)
+        checkPolyglot(lang)
+        checkStreak5(lang)
+        checkStreak7(lang)
+        checkLegend(lang)
         // Hidden
-        checkNightOwl()
-        checkPerfectionist(incorrectCount)
-        checkDeepLearner()
-        checkCenturion()
-        checkMondayScholar()
-        checkWeeklyGrind()
-        checkRusty()
-        checkExplorer()
-        checkLongWord()
+        checkNightOwl(lang)
+        checkPerfectionist(lang, incorrectCount)
+        checkDeepLearner(lang)
+        checkCenturion(lang)
+        checkMondayScholar(lang)
+        checkWeeklyGrind(lang)
+        checkRusty(lang)
+        checkExplorer(lang)
+        checkLongWord(lang)
     }
 
     /**
@@ -101,6 +116,7 @@ class AchievementRepository @Inject constructor(
         player2Score: Int,
         wasSurrender: Boolean = false,
     ) {
+        val lang = prefs.getLanguagePair()
         val winnerName = when {
             player1Score > player2Score -> player1Name
             player2Score > player1Score -> player2Name
@@ -115,172 +131,174 @@ class AchievementRepository @Inject constructor(
                 player2Score = player2Score,
                 winnerName = winnerName,
                 wasSurrender = wasSurrender,
+                languagePair = lang,
             )
         )
-        checkFirstFight()
-        if (winnerName != null) checkFirstWin()
-        checkLegend()
+        checkFirstFight(lang)
+        if (winnerName != null) checkFirstWin(lang)
+        checkLegend(lang)
         // Hidden
-        checkDominator(player1Score, player2Score, winnerName)
-        checkDrawMaster(winnerName)
-        checkGoldenShot(player1Score, player2Score)
-        checkVeteran()
-        checkMarathon()
-        if (wasSurrender) checkWhiteFlag()
+        checkDominator(lang, player1Score, player2Score, winnerName)
+        checkDrawMaster(lang, winnerName)
+        checkGoldenShot(lang, player1Score, player2Score)
+        checkVeteran(lang)
+        checkMarathon(lang)
+        if (wasSurrender) checkWhiteFlag(lang)
     }
 
     suspend fun checkAfterDeckChange() {
-        checkCollector()
-        checkLegend()
+        val lang = prefs.getLanguagePair()
+        checkCollector(lang)
+        checkLegend(lang)
     }
 
     // ── Visible achievement checks ────────────────────────────────────────────
 
-    private suspend fun checkFirstLesson() {
-        if (isUnlocked(AchievementId.FIRST_LESSON)) return
-        if (studyStreakDao.getCount() >= 1) unlock(AchievementId.FIRST_LESSON)
+    private suspend fun checkFirstLesson(lang: String) {
+        if (isUnlocked(AchievementId.FIRST_LESSON, lang)) return
+        if (studyStreakDao.getCountForLang(lang) >= 1) unlock(AchievementId.FIRST_LESSON, lang)
     }
 
-    private suspend fun checkDiligent() {
-        if (isUnlocked(AchievementId.DILIGENT)) return
-        if (studyStreakDao.getCount() >= 10) unlock(AchievementId.DILIGENT)
+    private suspend fun checkDiligent(lang: String) {
+        if (isUnlocked(AchievementId.DILIGENT, lang)) return
+        if (studyStreakDao.getCountForLang(lang) >= 10) unlock(AchievementId.DILIGENT, lang)
     }
 
-    private suspend fun checkFirstFight() {
-        if (isUnlocked(AchievementId.FIRST_FIGHT)) return
-        if (pvpMatchDao.getMatchCount() >= 1) unlock(AchievementId.FIRST_FIGHT)
+    private suspend fun checkFirstFight(lang: String) {
+        if (isUnlocked(AchievementId.FIRST_FIGHT, lang)) return
+        if (pvpMatchDao.getMatchCountForLang(lang) >= 1) unlock(AchievementId.FIRST_FIGHT, lang)
     }
 
-    private suspend fun checkFirstWin() {
-        if (isUnlocked(AchievementId.FIRST_WIN)) return
-        if (pvpMatchDao.getMatchesWithWinnerCount() >= 1) unlock(AchievementId.FIRST_WIN)
+    private suspend fun checkFirstWin(lang: String) {
+        if (isUnlocked(AchievementId.FIRST_WIN, lang)) return
+        if (pvpMatchDao.getMatchesWithWinnerCountForLang(lang) >= 1) unlock(AchievementId.FIRST_WIN, lang)
     }
 
-    private suspend fun checkStreak5() {
-        if (isUnlocked(AchievementId.STREAK_5)) return
-        if (calculateCurrentStreak() >= 5) unlock(AchievementId.STREAK_5)
+    private suspend fun checkStreak5(lang: String) {
+        if (isUnlocked(AchievementId.STREAK_5, lang)) return
+        if (calculateCurrentStreak(lang) >= 5) unlock(AchievementId.STREAK_5, lang)
     }
 
-    private suspend fun checkExpert() {
-        if (isUnlocked(AchievementId.EXPERT)) return
-        if (progressDao.getLearnedCount() >= EXPERT_THRESHOLD) unlock(AchievementId.EXPERT)
+    private suspend fun checkExpert(lang: String) {
+        if (isUnlocked(AchievementId.EXPERT, lang)) return
+        if (progressDao.getLearnedCountForLang(lang) >= EXPERT_THRESHOLD) unlock(AchievementId.EXPERT, lang)
     }
 
-    private suspend fun checkPolyglot() {
-        if (isUnlocked(AchievementId.POLYGLOT)) return
-        if (progressDao.getLearnedCount() >= POLYGLOT_THRESHOLD) unlock(AchievementId.POLYGLOT)
+    private suspend fun checkPolyglot(lang: String) {
+        if (isUnlocked(AchievementId.POLYGLOT, lang)) return
+        if (progressDao.getLearnedCountForLang(lang) >= POLYGLOT_THRESHOLD) unlock(AchievementId.POLYGLOT, lang)
     }
 
-    private suspend fun checkStreak7() {
-        if (isUnlocked(AchievementId.STREAK_7)) return
-        if (calculateCurrentStreak() >= 7) unlock(AchievementId.STREAK_7)
+    private suspend fun checkStreak7(lang: String) {
+        if (isUnlocked(AchievementId.STREAK_7, lang)) return
+        if (calculateCurrentStreak(lang) >= 7) unlock(AchievementId.STREAK_7, lang)
     }
 
-    private suspend fun checkCollector() {
-        if (isUnlocked(AchievementId.COLLECTOR)) return
+    private suspend fun checkCollector(lang: String) {
+        if (isUnlocked(AchievementId.COLLECTOR, lang)) return
         val decks = deckDao.getDecksOnce()
         for (deck in decks) {
             if (deckDao.getOwnedCardCountForDeck(deck.id) >= COLLECTOR_MIN_CARDS) {
-                unlock(AchievementId.COLLECTOR)
+                unlock(AchievementId.COLLECTOR, lang)
                 return
             }
         }
     }
 
-    private suspend fun checkLegend() {
-        if (isUnlocked(AchievementId.LEGEND)) return
-        val entities = achievementDao.getAll().associateBy { it.id }
+    private suspend fun checkLegend(lang: String) {
+        if (isUnlocked(AchievementId.LEGEND, lang)) return
+        val entities = achievementDao.getAllForLang(lang).associateBy { it.id }
         val allVisibleDone = AchievementId.entries
             .filter { !it.isHidden && it != AchievementId.LEGEND }
             .all { entities[it.name]?.unlockedAt != null }
-        if (allVisibleDone) unlock(AchievementId.LEGEND)
+        if (allVisibleDone) unlock(AchievementId.LEGEND, lang)
     }
 
     // ── Hidden achievement checks ─────────────────────────────────────────────
 
-    private suspend fun checkDominator(p1Score: Int, p2Score: Int, winnerName: String?) {
-        if (isUnlocked(AchievementId.DOMINATOR)) return
+    private suspend fun checkDominator(lang: String, p1Score: Int, p2Score: Int, winnerName: String?) {
+        if (isUnlocked(AchievementId.DOMINATOR, lang)) return
         if (winnerName == null) return
         val hi = maxOf(p1Score, p2Score)
         val lo = minOf(p1Score, p2Score)
-        if (lo > 0 && hi.toFloat() / lo >= 2f) unlock(AchievementId.DOMINATOR)
+        if (lo > 0 && hi.toFloat() / lo >= 2f) unlock(AchievementId.DOMINATOR, lang)
     }
 
-    private suspend fun checkNightOwl() {
-        if (isUnlocked(AchievementId.NIGHT_OWL)) return
+    private suspend fun checkNightOwl(lang: String) {
+        if (isUnlocked(AchievementId.NIGHT_OWL, lang)) return
         val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
-        if (hour >= NIGHT_OWL_HOUR) unlock(AchievementId.NIGHT_OWL)
+        if (hour >= NIGHT_OWL_HOUR) unlock(AchievementId.NIGHT_OWL, lang)
     }
 
-    private suspend fun checkPerfectionist(incorrectCount: Int) {
-        if (isUnlocked(AchievementId.PERFECTIONIST)) return
-        if (incorrectCount == 0) unlock(AchievementId.PERFECTIONIST)
+    private suspend fun checkPerfectionist(lang: String, incorrectCount: Int) {
+        if (isUnlocked(AchievementId.PERFECTIONIST, lang)) return
+        if (incorrectCount == 0) unlock(AchievementId.PERFECTIONIST, lang)
     }
 
-    private suspend fun checkDeepLearner() {
-        if (isUnlocked(AchievementId.DEEP_LEARNER)) return
-        if (progressDao.getWordCountAtMinLevel(5) >= DEEP_LEARNER_MIN_WORDS) unlock(AchievementId.DEEP_LEARNER)
+    private suspend fun checkDeepLearner(lang: String) {
+        if (isUnlocked(AchievementId.DEEP_LEARNER, lang)) return
+        if (progressDao.getWordCountAtMinLevelForLang(5, lang) >= DEEP_LEARNER_MIN_WORDS) unlock(AchievementId.DEEP_LEARNER, lang)
     }
 
-    private suspend fun checkVeteran() {
-        if (isUnlocked(AchievementId.VETERAN)) return
-        if (pvpMatchDao.getMatchCount() >= 10) unlock(AchievementId.VETERAN)
+    private suspend fun checkVeteran(lang: String) {
+        if (isUnlocked(AchievementId.VETERAN, lang)) return
+        if (pvpMatchDao.getMatchCountForLang(lang) >= 10) unlock(AchievementId.VETERAN, lang)
     }
 
-    private suspend fun checkCenturion() {
-        if (isUnlocked(AchievementId.CENTURION)) return
-        if (progressDao.getTotalCorrectCount() >= 100) unlock(AchievementId.CENTURION)
+    private suspend fun checkCenturion(lang: String) {
+        if (isUnlocked(AchievementId.CENTURION, lang)) return
+        if (progressDao.getTotalCorrectCountForLang(lang) >= 100) unlock(AchievementId.CENTURION, lang)
     }
 
-    private suspend fun checkDrawMaster(winnerName: String?) {
-        if (isUnlocked(AchievementId.DRAW_MASTER)) return
-        if (winnerName == null) unlock(AchievementId.DRAW_MASTER)
+    private suspend fun checkDrawMaster(lang: String, winnerName: String?) {
+        if (isUnlocked(AchievementId.DRAW_MASTER, lang)) return
+        if (winnerName == null) unlock(AchievementId.DRAW_MASTER, lang)
     }
 
-    private suspend fun checkMondayScholar() {
-        if (isUnlocked(AchievementId.MONDAY_SCHOLAR)) return
+    private suspend fun checkMondayScholar(lang: String) {
+        if (isUnlocked(AchievementId.MONDAY_SCHOLAR, lang)) return
         val dayOfWeek = Calendar.getInstance().get(Calendar.DAY_OF_WEEK)
-        if (dayOfWeek == Calendar.MONDAY) unlock(AchievementId.MONDAY_SCHOLAR)
+        if (dayOfWeek == Calendar.MONDAY) unlock(AchievementId.MONDAY_SCHOLAR, lang)
     }
 
-    private suspend fun checkGoldenShot(p1Score: Int, p2Score: Int) {
-        if (isUnlocked(AchievementId.GOLDEN_SHOT)) return
-        if (maxOf(p1Score, p2Score) >= GOLDEN_SHOT_MIN_SCORE) unlock(AchievementId.GOLDEN_SHOT)
+    private suspend fun checkGoldenShot(lang: String, p1Score: Int, p2Score: Int) {
+        if (isUnlocked(AchievementId.GOLDEN_SHOT, lang)) return
+        if (maxOf(p1Score, p2Score) >= GOLDEN_SHOT_MIN_SCORE) unlock(AchievementId.GOLDEN_SHOT, lang)
     }
 
-    private suspend fun checkWeeklyGrind() {
-        if (isUnlocked(AchievementId.WEEKLY_GRIND)) return
+    private suspend fun checkWeeklyGrind(lang: String) {
+        if (isUnlocked(AchievementId.WEEKLY_GRIND, lang)) return
         val weekAgoMs = todayMs() - 6 * DAY_MS
-        if (studyStreakDao.getCountSince(weekAgoMs) >= 5) unlock(AchievementId.WEEKLY_GRIND)
+        if (studyStreakDao.getCountSinceForLang(weekAgoMs, lang) >= 5) unlock(AchievementId.WEEKLY_GRIND, lang)
     }
 
-    private suspend fun checkWhiteFlag() {
-        if (isUnlocked(AchievementId.WHITE_FLAG)) return
-        unlock(AchievementId.WHITE_FLAG)
+    private suspend fun checkWhiteFlag(lang: String) {
+        if (isUnlocked(AchievementId.WHITE_FLAG, lang)) return
+        unlock(AchievementId.WHITE_FLAG, lang)
     }
 
-    private suspend fun checkExplorer() {
-        if (isUnlocked(AchievementId.EXPLORER)) return
-        if (progressDao.getDistinctSemanticGroupCount() >= 5) unlock(AchievementId.EXPLORER)
+    private suspend fun checkExplorer(lang: String) {
+        if (isUnlocked(AchievementId.EXPLORER, lang)) return
+        if (progressDao.getDistinctSemanticGroupCountForLang(lang) >= 5) unlock(AchievementId.EXPLORER, lang)
     }
 
-    private suspend fun checkMarathon() {
-        if (isUnlocked(AchievementId.MARATHON)) return
-        if (pvpMatchDao.getMatchCountSince(todayMs()) >= 3) unlock(AchievementId.MARATHON)
+    private suspend fun checkMarathon(lang: String) {
+        if (isUnlocked(AchievementId.MARATHON, lang)) return
+        if (pvpMatchDao.getMatchCountSinceForLang(todayMs(), lang) >= 3) unlock(AchievementId.MARATHON, lang)
     }
 
-    private suspend fun checkRusty() {
-        if (isUnlocked(AchievementId.RUSTY)) return
-        val days = studyStreakDao.getAll().map { it.date }
+    private suspend fun checkRusty(lang: String) {
+        if (isUnlocked(AchievementId.RUSTY, lang)) return
+        val days = studyStreakDao.getAllForLang(lang).map { it.date }
         if (days.size < 2) return
         // days are sorted DESC; [0] = today, [1] = last previous day
         val gap = (days[0] - days[1]) / DAY_MS
-        if (gap >= RUSTY_GAP_DAYS) unlock(AchievementId.RUSTY)
+        if (gap >= RUSTY_GAP_DAYS) unlock(AchievementId.RUSTY, lang)
     }
 
-    private suspend fun checkLongWord() {
-        if (isUnlocked(AchievementId.LONG_WORD)) return
-        if (progressDao.getProgressWithLongWordCount(13) >= 1) unlock(AchievementId.LONG_WORD)
+    private suspend fun checkLongWord(lang: String) {
+        if (isUnlocked(AchievementId.LONG_WORD, lang)) return
+        if (progressDao.getProgressWithLongWordCountForLang(13, lang) >= 1) unlock(AchievementId.LONG_WORD, lang)
     }
 
     // ── Internals ─────────────────────────────────────────────────────────────
@@ -295,12 +313,15 @@ class AchievementRepository @Inject constructor(
         const val RUSTY_GAP_DAYS         = 7L
     }
 
-    private suspend fun unlock(id: AchievementId) {
-        val alreadyUnlocked = id.name in unlockedCache
-        val word = wordDao.getWordByOriginal(id.rewardWordOriginal)
+    private suspend fun unlock(id: AchievementId, lang: String) {
+        val key = cacheKey(id, lang)
+        val alreadyUnlocked = key in unlockedCache
+        val original = id.rewardOriginalFor(lang)
+        val word = wordDao.getWordByOriginal(original)
         achievementDao.upsert(
             AchievementEntity(
                 id = id.name,
+                languagePair = lang,
                 unlockedAt = System.currentTimeMillis(),
                 rewardWordId = word?.id,
             )
@@ -309,26 +330,27 @@ class AchievementRepository @Inject constructor(
             analytics.log(
                 com.example.kartonki.analytics.AnalyticsEvent.AchievementUnlocked(
                     achievementId = id.name,
-                    daysSinceFirstOpen = 0,  // точная дата установки — Фаза 4 user properties
+                    daysSinceFirstOpen = 0,
                 )
             )
         }
         if (word != null) {
             collectionDao.insertAll(listOf(CollectionEntity(wordId = word.id)))
         }
-        unlockedCache.add(id.name)
+        unlockedCache.add(key)
         _newlyUnlocked.emit(id)
     }
 
-    private suspend fun isUnlocked(id: AchievementId): Boolean {
-        if (id.name in unlockedCache) return true
-        val result = achievementDao.getById(id.name)?.unlockedAt != null
-        if (result) unlockedCache.add(id.name)
+    private suspend fun isUnlocked(id: AchievementId, lang: String): Boolean {
+        val key = cacheKey(id, lang)
+        if (key in unlockedCache) return true
+        val result = achievementDao.getById(id.name, lang)?.unlockedAt != null
+        if (result) unlockedCache.add(key)
         return result
     }
 
-    private suspend fun calculateCurrentStreak(): Int {
-        val days = studyStreakDao.getAll().map { it.date }
+    private suspend fun calculateCurrentStreak(lang: String): Int {
+        val days = studyStreakDao.getAllForLang(lang).map { it.date }
         if (days.isEmpty()) return 0
         var streak = 0
         var expected = todayMs()

@@ -47,6 +47,13 @@ interface ProgressDao {
     @Query("SELECT COUNT(*) FROM progress WHERE level >= 3")
     suspend fun getLearnedCount(): Int
 
+    @Query("""
+        SELECT COUNT(*) FROM progress p
+        INNER JOIN words w ON p.wordId = w.id
+        WHERE p.level >= 3 AND w.languagePair = :languagePair
+    """)
+    suspend fun getLearnedCountForLang(languagePair: String): Int
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsert(progress: ProgressEntity)
 
@@ -56,8 +63,22 @@ interface ProgressDao {
     @Query("SELECT COALESCE(SUM(correctCount), 0) FROM progress")
     suspend fun getTotalCorrectCount(): Long
 
+    @Query("""
+        SELECT COALESCE(SUM(p.correctCount), 0) FROM progress p
+        INNER JOIN words w ON p.wordId = w.id
+        WHERE w.languagePair = :languagePair
+    """)
+    suspend fun getTotalCorrectCountForLang(languagePair: String): Long
+
     @Query("SELECT COUNT(*) FROM progress WHERE level >= :minLevel")
     suspend fun getWordCountAtMinLevel(minLevel: Int): Int
+
+    @Query("""
+        SELECT COUNT(*) FROM progress p
+        INNER JOIN words w ON p.wordId = w.id
+        WHERE p.level >= :minLevel AND w.languagePair = :languagePair
+    """)
+    suspend fun getWordCountAtMinLevelForLang(minLevel: Int, languagePair: String): Int
 
     @Query("""
         SELECT COUNT(DISTINCT w.semanticGroup) FROM progress p
@@ -67,9 +88,23 @@ interface ProgressDao {
     suspend fun getDistinctSemanticGroupCount(): Int
 
     @Query("""
+        SELECT COUNT(DISTINCT w.semanticGroup) FROM progress p
+        INNER JOIN words w ON p.wordId = w.id
+        WHERE w.semanticGroup IS NOT NULL AND w.languagePair = :languagePair
+    """)
+    suspend fun getDistinctSemanticGroupCountForLang(languagePair: String): Int
+
+    @Query("""
         SELECT COUNT(*) FROM progress p
         INNER JOIN words w ON p.wordId = w.id
         WHERE length(w.original) >= :minLength
     """)
     suspend fun getProgressWithLongWordCount(minLength: Int): Int
+
+    @Query("""
+        SELECT COUNT(*) FROM progress p
+        INNER JOIN words w ON p.wordId = w.id
+        WHERE length(w.original) >= :minLength AND w.languagePair = :languagePair
+    """)
+    suspend fun getProgressWithLongWordCountForLang(minLength: Int, languagePair: String): Int
 }

@@ -171,6 +171,10 @@ def main():
         for (bstart, bend, sid) in blocks:
             if sid is None:
                 continue
+            # setId=0 reserved for achievement-only words — not a real set,
+            # validate_all.sh has nothing to validate for it.
+            if sid == 0:
+                continue
             # Пересечение отрезков
             if not (hend < bstart or hstart > bend):
                 changed.add(sid)

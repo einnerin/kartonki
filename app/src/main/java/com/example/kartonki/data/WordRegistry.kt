@@ -233,6 +233,7 @@ object WordRegistry {
     private val _allWordsRaw: List<WordEntity> by lazy {
         WordDataEnglish.words + WordDataEnglishExpanded.words +
                 WordDataEnglishExpanded.achievementRewardWords() +
+                WordDataHebrewAchievementRewards.achievementRewardWords() +
                 WordDataEnglishBatch3.words +
                 WordDataEnglishBatch4.words +
                 WordDataEnglishBatch5.words +

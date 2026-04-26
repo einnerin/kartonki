@@ -37,6 +37,7 @@ import com.example.kartonki.ui.theme.glowEffect
 @Composable
 fun AchievementNotificationDialog(
     achievement: AchievementId,
+    languagePair: String,
     onDismiss: () -> Unit,
 ) {
     Dialog(
@@ -109,7 +110,7 @@ fun AchievementNotificationDialog(
                         )
                         Spacer(Modifier.height(4.dp))
                         Text(
-                            text = achievement.rewardWordOriginal,
+                            text = achievement.rewardOriginalFor(languagePair),
                             style = MaterialTheme.typography.titleLarge,
                             color = RarityLegendary,
                             fontWeight = FontWeight.ExtraBold,
