@@ -27,7 +27,16 @@ import androidx.room.PrimaryKey
  */
 @Entity(
     tableName = "words",
-    indices = [Index(value = ["original", "languagePair"])],
+    indices = [
+        Index(value = ["original", "languagePair"]),
+        // Hot WHERE filters in WordDao queries — without these Room does a
+        // table scan over ~17k seeded rows on every call.
+        Index(value = ["languagePair"]),
+        Index(value = ["rarity"]),
+        Index(value = ["isDefaultPvpCard"]),
+        Index(value = ["semanticGroup", "languagePair"]),
+        Index(value = ["setId"]),
+    ],
 )
 data class WordEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,

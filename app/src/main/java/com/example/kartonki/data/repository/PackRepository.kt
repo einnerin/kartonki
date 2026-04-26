@@ -55,52 +55,54 @@ class PackRepository @Inject constructor(
 
     private suspend fun generatePackCards(): List<Word> {
         val langPair = userPrefs.getLanguagePair()
-        val allWords = wordDao.getAllWordsByLanguage(langPair)
-            .filter { it.original !in AchievementCards.ALL_EXCLUSIVE }
-        val byRarity = allWords.groupBy { it.rarity }
+        val excluded = AchievementCards.ALL_EXCLUSIVE.toList()
 
         val result = mutableListOf<WordEntity>()
+        val taken = mutableSetOf<Long>()
 
-        // Slot 1: guaranteed Uncommon+
-        pickByRarity(byRarity, GUARANTEED_WEIGHTS)?.let { result.add(it) }
-
-        // Slots 2-5: normal weights
-        repeat(4) {
-            pickByRarity(byRarity, NORMAL_WEIGHTS)?.let { result.add(it) }
+        suspend fun pick(weights: Map<String, Float>) {
+            val roll = Random.Default.nextFloat()
+            var cumulative = 0f
+            // Try the rolled rarity, then walk the rest as fallbacks (avoids
+            // empty-bucket misses on languages where a rarity is sparse).
+            val rarities = weights.keys.toMutableList()
+            val rolled = run {
+                for (r in weights.keys) {
+                    cumulative += weights.getValue(r)
+                    if (roll <= cumulative) return@run r
+                }
+                weights.keys.last()
+            }
+            rarities.remove(rolled)
+            rarities.add(0, rolled)
+            for (r in rarities) {
+                // Pull a couple of candidates so we can skip ones already taken
+                // without a second round-trip.
+                val pool = wordDao.getRandomByLangAndRarity(langPair, r, excluded, 3)
+                val pick = pool.firstOrNull { it.id !in taken } ?: continue
+                result += pick
+                taken += pick.id
+                return
+            }
         }
 
-        // Fill to 5 if needed
+        pick(GUARANTEED_WEIGHTS)
+        repeat(4) { pick(NORMAL_WEIGHTS) }
+
+        // Fill to 5 if any rarity bucket was empty across all fallbacks.
         if (result.size < 5) {
-            val already = result.map { it.id }.toSet()
-            val fallback = allWords.filter { it.id !in already }.shuffled().take(5 - result.size)
-            result.addAll(fallback)
+            val pool = wordDao.getAllWordsByLanguage(langPair)
+                .asSequence()
+                .filter { it.id !in taken && it.original !in AchievementCards.ALL_EXCLUSIVE }
+                .shuffled()
+                .take(5 - result.size)
+                .toList()
+            result.addAll(pool)
         }
 
         val words = result.take(5).map { it.toDomain() }
-
-        // Add to collection
         collectionDao.insertAll(words.map { CollectionEntity(wordId = it.id) })
-
         return words
-    }
-
-    private fun pickByRarity(
-        byRarity: Map<String, List<WordEntity>>,
-        weights: Map<String, Float>,
-    ): WordEntity? {
-        val roll = Random.Default.nextFloat()
-        var cumulative = 0f
-        for ((rarityName, weight) in weights) {
-            cumulative += weight
-            if (roll <= cumulative) {
-                val candidates = byRarity[rarityName]
-                if (!candidates.isNullOrEmpty()) {
-                    return candidates.random()
-                }
-            }
-        }
-        // Fallback: pick any available word
-        return byRarity.values.flatten().randomOrNull()
     }
 
     private fun WordEntity.toDomain(): Word = Word(

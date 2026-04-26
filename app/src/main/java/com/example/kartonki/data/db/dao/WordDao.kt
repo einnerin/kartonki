@@ -39,6 +39,26 @@ interface WordDao {
     @Query("SELECT * FROM words ORDER BY RANDOM() LIMIT :limit")
     suspend fun getRandomWords(limit: Int): List<WordEntity>
 
+    /**
+     * Random pick by language + rarity, excluding a denylist of `original`s.
+     * Used by [com.example.kartonki.data.repository.PackRepository] so a 5-card
+     * pack can be assembled with five SQL calls instead of loading every word
+     * for the language into memory.
+     */
+    @Query("""
+        SELECT * FROM words
+        WHERE languagePair = :langPair
+          AND rarity = :rarity
+          AND original NOT IN (:excludeOriginals)
+        ORDER BY RANDOM() LIMIT :limit
+    """)
+    suspend fun getRandomByLangAndRarity(
+        langPair: String,
+        rarity: String,
+        excludeOriginals: List<String>,
+        limit: Int,
+    ): List<WordEntity>
+
     @Query("SELECT * FROM words WHERE rarity = :rarity ORDER BY id ASC")
     suspend fun getWordsByRarity(rarity: String): List<WordEntity>
 
@@ -47,6 +67,17 @@ interface WordDao {
 
     @Query("SELECT * FROM words WHERE original = :original AND languagePair = :languagePair LIMIT 1")
     suspend fun getWordByOriginalAndLanguage(original: String, languagePair: String): WordEntity?
+
+    /**
+     * Batch lookup for the seed-deck migration path: maps a list of `original`
+     * strings to their canonical [WordEntity] in one query.
+     *
+     * Replaces the N+1 pattern where every preset deck word triggered a
+     * separate `getWordByOriginalAndLanguage` call (15+ decks × 21 words ≈
+     * 300+ statements per migratePresetDecks pass).
+     */
+    @Query("SELECT * FROM words WHERE languagePair = :languagePair AND original IN (:originals)")
+    suspend fun getWordsByOriginalsAndLanguage(originals: List<String>, languagePair: String): List<WordEntity>
 
     @Query("SELECT * FROM words ORDER BY rarity DESC, original ASC")
     suspend fun getAllWordsOnce(): List<WordEntity>

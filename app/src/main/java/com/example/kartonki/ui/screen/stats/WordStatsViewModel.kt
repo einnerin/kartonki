@@ -69,7 +69,7 @@ class WordStatsViewModel @Inject constructor(
         val dismissed = prefs.getDismissedProblemWordIds()
         // Must use the same minEncounters as ProblemWordsListViewModel — otherwise
         // the count shown here disagrees with what the list screen actually displays.
-        val problemCount = statsRepository.getProblemWordCount(source, minEnc, dismissed)
+        val problemCount = statsRepository.getProblemWordCount(source, minEnc, dismissedIds = dismissed)
         _uiState.update { state ->
             state.copy(
                 isLoading = false,

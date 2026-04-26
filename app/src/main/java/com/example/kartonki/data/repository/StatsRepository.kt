@@ -51,7 +51,12 @@ class StatsRepository @Inject constructor(
 
     suspend fun getWordStats(): List<WordStat> {
         val allProgress = progressDao.getAll()
-        val wordMap     = wordDao.getAllWordsOnce().associateBy { it.id }
+        if (allProgress.isEmpty()) return emptyList()
+        // Fetch ONLY the words referenced by progress, not all ~17k seeded words.
+        // For a typical user with a few hundred attempted words, this drops the
+        // memory footprint of this call by an order of magnitude.
+        val wordMap = wordDao.getWordsByIds(allProgress.map { it.wordId })
+            .associateBy { it.id }
 
         return allProgress.mapNotNull { progress ->
             val word   = wordMap[progress.wordId] ?: return@mapNotNull null
@@ -72,6 +77,52 @@ class StatsRepository @Inject constructor(
     }
 
     /**
+     * Filters all progress rows by the "problem" criteria — high error rate
+     * and enough encounters — and returns matching (errorRate, word) pairs
+     * sorted worst-first. No `take` here: callers decide whether to limit.
+     *
+     * Both [getProblemWords] and [getProblemWordCount] funnel through this so
+     * the count never disagrees with the displayed list.
+     */
+    private suspend fun problemPairs(
+        source: String,
+        minEncounters: Int,
+        minErrorRate: Float,
+        dismissedIds: Set<Long>,
+    ): List<Pair<Float, com.example.kartonki.data.db.entity.WordEntity>> {
+        val allProgress = progressDao.getAll()
+        // Filter on progress alone first — we don't need WordEntity to decide
+        // whether a row qualifies as "problem". Drops the candidate set to a
+        // handful before we touch the words table.
+        val candidates = allProgress.mapNotNull { p ->
+            if (p.wordId in dismissedIds) return@mapNotNull null
+            val (encounters, errors) = when (source) {
+                "pve_only" -> {
+                    val pveCorrect   = p.correctCount - p.pvpCorrectCount
+                    val pveIncorrect = p.incorrectCount - p.pvpIncorrectCount
+                    (pveCorrect + pveIncorrect) to pveIncorrect
+                }
+                "pvp_only" -> {
+                    (p.pvpCorrectCount + p.pvpIncorrectCount) to p.pvpIncorrectCount
+                }
+                else -> (p.correctCount + p.incorrectCount) to p.incorrectCount
+            }
+            if (encounters < minEncounters) return@mapNotNull null
+            val errorRate = errors.toFloat() / encounters
+            if (errorRate <= minErrorRate) return@mapNotNull null
+            Triple(p.wordId, errorRate, Unit)
+        }
+        if (candidates.isEmpty()) return emptyList()
+
+        // Single batched lookup for the surviving words.
+        val wordMap = wordDao.getWordsByIds(candidates.map { it.first })
+            .associateBy { it.id }
+        return candidates.mapNotNull { (wid, rate, _) ->
+            wordMap[wid]?.let { rate to it }
+        }.sortedByDescending { it.first }
+    }
+
+    /**
      * Returns up to [limit] words with a high error rate (> [minErrorRate]) and
      * at least [minEncounters] attempts, sorted worst-first.
      *
@@ -87,29 +138,7 @@ class StatsRepository @Inject constructor(
         limit: Int = 25,
         dismissedIds: Set<Long> = emptySet(),
     ): List<Word> {
-        val allProgress = progressDao.getAll()
-        val wordMap = wordDao.getAllWordsOnce().associateBy { it.id }
-
-        return allProgress.mapNotNull { p ->
-            if (p.wordId in dismissedIds) return@mapNotNull null
-            val word = wordMap[p.wordId] ?: return@mapNotNull null
-            val (encounters, errors) = when (source) {
-                "pve_only" -> {
-                    val pveCorrect   = p.correctCount - p.pvpCorrectCount
-                    val pveIncorrect = p.incorrectCount - p.pvpIncorrectCount
-                    (pveCorrect + pveIncorrect) to pveIncorrect
-                }
-                "pvp_only" -> {
-                    (p.pvpCorrectCount + p.pvpIncorrectCount) to p.pvpIncorrectCount
-                }
-                else -> (p.correctCount + p.incorrectCount) to p.incorrectCount
-            }
-            if (encounters < minEncounters) return@mapNotNull null
-            val errorRate = errors.toFloat() / encounters
-            if (errorRate <= minErrorRate) return@mapNotNull null
-            Pair(errorRate, word)
-        }
-            .sortedByDescending { it.first }
+        return problemPairs(source, minEncounters, minErrorRate, dismissedIds)
             .take(limit)
             .map { (_, entity) ->
                 val rarity = runCatching { Rarity.valueOf(entity.rarity) }.getOrElse { Rarity.COMMON }
@@ -131,12 +160,18 @@ class StatsRepository @Inject constructor(
             }
     }
 
-    /** Returns the number of problem words matching the given source filter. */
+    /**
+     * Returns the TOTAL number of problem words — not capped by any list-level
+     * limit. The list screen pages by 200, but the count above the list (and
+     * the chip on the study screen) must reflect reality, otherwise users see
+     * "25 проблемных" while the list shows 50+.
+     */
     suspend fun getProblemWordCount(
         source: String = "both",
         minEncounters: Int = 2,
+        minErrorRate: Float = 0.30f,
         dismissedIds: Set<Long> = emptySet(),
-    ): Int = getProblemWords(source, minEncounters, dismissedIds = dismissedIds).size
+    ): Int = problemPairs(source, minEncounters, minErrorRate, dismissedIds).size
 
     private fun calculateCurrentStreak(sortedDesc: List<Long>): Int {
         if (sortedDesc.isEmpty()) return 0

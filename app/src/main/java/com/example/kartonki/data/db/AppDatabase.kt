@@ -40,7 +40,7 @@ import com.example.kartonki.data.db.entity.WordSetMembershipEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 41,
+    version = 42,
     exportSchema = false,
 )
 @TypeConverters(WordConverters::class)

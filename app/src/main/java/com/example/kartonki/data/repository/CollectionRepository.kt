@@ -10,6 +10,7 @@ import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.entity.CollectionEntity
 import com.example.kartonki.data.db.entity.DeckCardCrossRef
 import com.example.kartonki.data.db.entity.DeckEntity
+import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
@@ -70,14 +71,17 @@ class CollectionRepository @Inject constructor(
         // Without the version-bump branch, a tester installed on an older build
         // stays frozen with the old starter set even after we ship more cards.
         if (isFirstRun || versionChanged) {
-            // Words referenced by preset decks are always guaranteed so deck editors
-            // show the correct cards immediately. Each lookup uses languagePair so
-            // originals that collide across languages always resolve to the right word.
-            val presetWordEntities = WordRegistry.allPrebuiltDecks.flatMap { deck ->
-                deck.wordOriginals.mapNotNull { original ->
-                    wordDao.getWordByOriginalAndLanguage(original, deck.languagePair)
+            // Resolve every preset deck's wordOriginals in ONE query per language
+            // (was N+1: one query per (deck × word), 300+ statements total).
+            // languagePair scoping keeps cross-language originals from colliding.
+            val presetWordEntities = WordRegistry.allPrebuiltDecks
+                .groupBy { it.languagePair }
+                .flatMap { (lang, decks) ->
+                    val originals = decks.flatMap { it.wordOriginals }.distinct()
+                    if (originals.isEmpty()) emptyList()
+                    else wordDao.getWordsByOriginalsAndLanguage(originals, lang)
                 }
-            }.distinctBy { it.id }
+                .distinctBy { it.id }
 
             // The default PvP card set is deterministic — same words for every user.
             // Flags are set by WordLoader using effective rarity (last write wins on
@@ -108,18 +112,32 @@ class CollectionRepository @Inject constructor(
         deckDao.clearAllPresetDeckCards()
         deckDao.deleteAllPresetDecks()
 
-        // Recreate from all language sources via WordRegistry
+        // Pre-resolve all (lang, original) pairs in one query per language —
+        // avoids the per-word DB lookup loop (was 21 × ~30 decks = 600 queries).
+        val originalsByLang: Map<String, Map<String, WordEntity>> =
+            WordRegistry.allPrebuiltDecks
+                .groupBy { it.languagePair }
+                .mapValues { (lang, decks) ->
+                    val originals = decks.flatMap { it.wordOriginals }.distinct()
+                    if (originals.isEmpty()) emptyMap()
+                    else wordDao.getWordsByOriginalsAndLanguage(originals, lang)
+                        .associateBy { it.original }
+                }
+
+        val collectedIds = mutableListOf<CollectionEntity>()
         for (deckSeed in WordRegistry.allPrebuiltDecks) {
             val deckId = deckDao.insertDeck(
                 DeckEntity(name = deckSeed.name, level = deckSeed.level, isPreset = true, languagePair = deckSeed.languagePair)
             )
+            val langMap = originalsByLang[deckSeed.languagePair] ?: emptyMap()
             for (original in deckSeed.wordOriginals) {
-                val word = wordDao.getWordByOriginalAndLanguage(original, deckSeed.languagePair) ?: continue
+                val word = langMap[original] ?: continue
                 deckDao.addCardToDeck(DeckCardCrossRef(deckId = deckId, wordId = word.id))
-                // Ensure this word is in the collection (new preset words added in updates)
-                collectionDao.insertAll(listOf(CollectionEntity(word.id)))
+                collectedIds += CollectionEntity(word.id)
             }
         }
+        // Single bulk insert instead of one-per-word.
+        if (collectedIds.isNotEmpty()) collectionDao.insertAll(collectedIds)
     }
 
     suspend fun getOwnedWords(filter: Rarity? = null, languagePair: String? = null): List<Word> {
