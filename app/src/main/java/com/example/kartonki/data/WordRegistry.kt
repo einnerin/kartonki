@@ -107,6 +107,9 @@ object WordRegistry {
                 WordDataEnglishPhilosophyL2.sets +
                 WordDataEnglishFinanceL1.sets +
                 WordDataEnglishFinanceL5.sets +
+                WordDataEnglishHealthFitnessL1L2L3.sets +
+                WordDataEnglishShoppingL1L2L3.sets +
+                WordDataEnglishEntertainmentL1L2L3.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewImmigrant.sets +
@@ -280,6 +283,9 @@ object WordRegistry {
                 WordDataEnglishPhilosophyL2.words +
                 WordDataEnglishFinanceL1.words +
                 WordDataEnglishFinanceL5.words +
+                WordDataEnglishHealthFitnessL1L2L3.words +
+                WordDataEnglishShoppingL1L2L3.words +
+                WordDataEnglishEntertainmentL1L2L3.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewImmigrant.words +
