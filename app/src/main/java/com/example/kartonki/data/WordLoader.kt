@@ -48,7 +48,13 @@ class WordLoader @Inject constructor(
 
     private suspend fun doLoad() {
         val storedVersion = prefs.getWordDataVersion()
-        if (storedVersion >= WordDataVersion.CURRENT) return
+        // Re-load if either the seed version bumped OR the DB is empty.
+        // Why the count check: Room's fallbackToDestructiveMigration drops every
+        // table on schema change, but SharedPreferences are untouched — so
+        // `storedVersion` can still equal CURRENT while the words table is empty.
+        // Without the count guard we'd silently leave the user with no sets.
+        val dbWordCount = wordDao.getWordCount()
+        if (storedVersion >= WordDataVersion.CURRENT && dbWordCount > 0) return
 
         val allSets = WordRegistry.allSets
         val allWords = WordRegistry.allWords

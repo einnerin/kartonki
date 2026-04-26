@@ -59,10 +59,16 @@ class CollectionRepository @Inject constructor(
         // (a duplicate original in a new batch deletes the old row and inserts a new one
         // with a different ID), which orphans deck_cards references. Tracking both
         // versions ensures deck_cards are always rebuilt after any word data update.
+        // Plus: countPresetDecks()==0 also forces a rebuild — covers the case where
+        // Room's destructive migration wiped the decks table while prefs versions
+        // still match. Without this guard, a user on a schema-bumped build sees
+        // an empty deck list even though seed code is up to date.
         val storedDecksVersion = prefs.getPresetDecksVersion()
         val storedWordVersionForDecks = prefs.getPresetDecksWordVersion()
+        val presetDecksEmpty = deckDao.countPresetDecks() == 0
         val versionChanged = storedDecksVersion != PresetDecksVersion.CURRENT ||
-            storedWordVersionForDecks != WordDataVersion.CURRENT
+            storedWordVersionForDecks != WordDataVersion.CURRENT ||
+            presetDecksEmpty
         val isFirstRun = collectionDao.count() == 0
 
         // On first run AND on every word/deck data version bump: ensure the user
