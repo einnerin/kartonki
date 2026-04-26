@@ -1,11 +1,23 @@
 package com.example.kartonki.domain.model
 
+/**
+ * Achievement metadata.
+ *
+ * `rewardWords` maps each supported `languagePair` (e.g. `"en-ru"`, `"he-ru"`) to
+ * the `original` of the reward card the user receives when unlocking this
+ * achievement while studying that language. Adding a new language is one entry
+ * per achievement — no other code change required (DAO, UI, repository all
+ * read the language at runtime via [rewardOriginalFor]).
+ *
+ * `rewardWordTranslation` is the Russian gloss of the reward concept — single
+ * for now because native-language is always Russian. When mult-native lands,
+ * this becomes a parallel `Map<String, String>`.
+ */
 enum class AchievementId(
     val title: String,
     val description: String,
     val icon: String,
-    val rewardWordEnRu: String,
-    val rewardWordHeRu: String,
+    val rewardWords: Map<String, String>,
     val rewardWordTranslation: String,
     val isHidden: Boolean = false,
 ) {
@@ -15,80 +27,100 @@ enum class AchievementId(
         title = "Первые шаги",
         description = "Завершить первую учебную сессию",
         icon = "🌱",
-        rewardWordEnRu = "paradigm",
-        rewardWordHeRu = "דֶּגֶם",
+        rewardWords = mapOf(
+            "en-ru" to "paradigm",
+            "he-ru" to "דֶּגֶם",
+        ),
         rewardWordTranslation = "парадигма / образец",
     ),
     DILIGENT(
         title = "Прилежный",
         description = "Заниматься 10 разных дней",
         icon = "📖",
-        rewardWordEnRu = "inference",
-        rewardWordHeRu = "מַסְקָנָה",
+        rewardWords = mapOf(
+            "en-ru" to "inference",
+            "he-ru" to "מַסְקָנָה",
+        ),
         rewardWordTranslation = "умозаключение",
     ),
     FIRST_FIGHT(
         title = "Первый бой",
         description = "Сыграть первый PvP матч",
         icon = "⚔️",
-        rewardWordEnRu = "conjecture",
-        rewardWordHeRu = "הַשְׁעָרָה",
+        rewardWords = mapOf(
+            "en-ru" to "conjecture",
+            "he-ru" to "הַשְׁעָרָה",
+        ),
         rewardWordTranslation = "предположение / гипотеза",
     ),
     FIRST_WIN(
         title = "Победитель",
         description = "Выиграть первый PvP матч",
         icon = "🏆",
-        rewardWordEnRu = "refute",
-        rewardWordHeRu = "לְהַפְרִיךְ",
+        rewardWords = mapOf(
+            "en-ru" to "refute",
+            "he-ru" to "לְהַפְרִיךְ",
+        ),
         rewardWordTranslation = "опровергать",
     ),
     STREAK_5(
         title = "В потоке",
         description = "Учиться 5 дней подряд",
         icon = "🔥",
-        rewardWordEnRu = "elucidate",
-        rewardWordHeRu = "לְבָאֵר",
+        rewardWords = mapOf(
+            "en-ru" to "elucidate",
+            "he-ru" to "לְבָאֵר",
+        ),
         rewardWordTranslation = "разъяснять",
     ),
     EXPERT(
         title = "Знаток",
         description = "Изучить 50 слов (уровень 3+)",
         icon = "📚",
-        rewardWordEnRu = "accomplish",
-        rewardWordHeRu = "לְהַשִּׂיג",
+        rewardWords = mapOf(
+            "en-ru" to "accomplish",
+            "he-ru" to "לְהַשִּׂיג",
+        ),
         rewardWordTranslation = "достигать",
     ),
     POLYGLOT(
         title = "Полиглот",
         description = "Изучить 200 слов",
         icon = "🌍",
-        rewardWordEnRu = "fluent",
-        rewardWordHeRu = "שׁוֹטֵף",
+        rewardWords = mapOf(
+            "en-ru" to "fluent",
+            "he-ru" to "שׁוֹטֵף",
+        ),
         rewardWordTranslation = "свободно владеющий языком",
     ),
     STREAK_7(
         title = "Серия",
         description = "Учиться 7 дней подряд",
         icon = "⚡",
-        rewardWordEnRu = "consistent",
-        rewardWordHeRu = "עִקְבִי",
+        rewardWords = mapOf(
+            "en-ru" to "consistent",
+            "he-ru" to "עִקְבִי",
+        ),
         rewardWordTranslation = "последовательный",
     ),
     COLLECTOR(
         title = "Коллекционер",
         description = "Собрать полную колоду из 20 карточек",
         icon = "🎴",
-        rewardWordEnRu = "dedicate",
-        rewardWordHeRu = "לְהַקְדִּישׁ",
+        rewardWords = mapOf(
+            "en-ru" to "dedicate",
+            "he-ru" to "לְהַקְדִּישׁ",
+        ),
         rewardWordTranslation = "посвящать",
     ),
     LEGEND(
         title = "Легенда",
         description = "Получить все видимые достижения",
         icon = "⭐",
-        rewardWordEnRu = "excel",
-        rewardWordHeRu = "לְהִצְטַיֵּין",
+        rewardWords = mapOf(
+            "en-ru" to "excel",
+            "he-ru" to "לְהִצְטַיֵּין",
+        ),
         rewardWordTranslation = "преуспевать / выделяться",
     ),
 
@@ -100,8 +132,10 @@ enum class AchievementId(
         title = "Доминатор",
         description = "Выиграть PvP матч с перевесом в счёте в 2 и более раза",
         icon = "👑",
-        rewardWordEnRu = "diaphanous",
-        rewardWordHeRu = "שָׁקוּף",
+        rewardWords = mapOf(
+            "en-ru" to "diaphanous",
+            "he-ru" to "שָׁקוּף",
+        ),
         rewardWordTranslation = "прозрачный / тонкий",
         isHidden = true,
     ),
@@ -109,8 +143,10 @@ enum class AchievementId(
         title = "Ночная сова",
         description = "Пройти учебную сессию после 23:00",
         icon = "🦉",
-        rewardWordEnRu = "lugubrious",
-        rewardWordHeRu = "קוֹדֵר",
+        rewardWords = mapOf(
+            "en-ru" to "lugubrious",
+            "he-ru" to "קוֹדֵר",
+        ),
         rewardWordTranslation = "мрачный / унылый",
         isHidden = true,
     ),
@@ -118,8 +154,10 @@ enum class AchievementId(
         title = "Перфекционист",
         description = "Пройти учебную сессию без единой ошибки",
         icon = "💎",
-        rewardWordEnRu = "obstreperous",
-        rewardWordHeRu = "סוֹעֵר",
+        rewardWords = mapOf(
+            "en-ru" to "obstreperous",
+            "he-ru" to "סוֹעֵר",
+        ),
         rewardWordTranslation = "шумный / буйный",
         isHidden = true,
     ),
@@ -127,8 +165,10 @@ enum class AchievementId(
         title = "Мастер слов",
         description = "Довести 20 слов до максимального уровня",
         icon = "🧠",
-        rewardWordEnRu = "abstruse",
-        rewardWordHeRu = "סָבוּךְ",
+        rewardWords = mapOf(
+            "en-ru" to "abstruse",
+            "he-ru" to "סָבוּךְ",
+        ),
         rewardWordTranslation = "трудный для понимания",
         isHidden = true,
     ),
@@ -136,8 +176,10 @@ enum class AchievementId(
         title = "Ветеран",
         description = "Провести 10 PvP матчей",
         icon = "🎖️",
-        rewardWordEnRu = "meretricious",
-        rewardWordHeRu = "רַאֲוָתָנִי",
+        rewardWords = mapOf(
+            "en-ru" to "meretricious",
+            "he-ru" to "רַאֲוָתָנִי",
+        ),
         rewardWordTranslation = "мишурный / показной",
         isHidden = true,
     ),
@@ -145,8 +187,10 @@ enum class AchievementId(
         title = "Центурион",
         description = "Дать 100 правильных ответов суммарно",
         icon = "🛡️",
-        rewardWordEnRu = "pellucid",
-        rewardWordHeRu = "צָלוּל",
+        rewardWords = mapOf(
+            "en-ru" to "pellucid",
+            "he-ru" to "צָלוּל",
+        ),
         rewardWordTranslation = "кристально ясный",
         isHidden = true,
     ),
@@ -154,8 +198,10 @@ enum class AchievementId(
         title = "Миротворец",
         description = "Завершить PvP матч вничью",
         icon = "🤝",
-        rewardWordEnRu = "platitudinous",
-        rewardWordHeRu = "שִׁגְרָתִי",
+        rewardWords = mapOf(
+            "en-ru" to "platitudinous",
+            "he-ru" to "שִׁגְרָתִי",
+        ),
         rewardWordTranslation = "банальный",
         isHidden = true,
     ),
@@ -163,8 +209,10 @@ enum class AchievementId(
         title = "Понедельник — день тяжёлый",
         description = "Пройти учебную сессию в понедельник",
         icon = "📅",
-        rewardWordEnRu = "recondite",
-        rewardWordHeRu = "כָּמוּס",
+        rewardWords = mapOf(
+            "en-ru" to "recondite",
+            "he-ru" to "כָּמוּס",
+        ),
         rewardWordTranslation = "малоизвестный / сокровенный",
         isHidden = true,
     ),
@@ -172,8 +220,10 @@ enum class AchievementId(
         title = "Золотой выстрел",
         description = "Набрать 50 очков в одном PvP матче",
         icon = "✨",
-        rewardWordEnRu = "stentorian",
-        rewardWordHeRu = "רַעַם",
+        rewardWords = mapOf(
+            "en-ru" to "stentorian",
+            "he-ru" to "רַעַם",
+        ),
         rewardWordTranslation = "громоподобный",
         isHidden = true,
     ),
@@ -181,8 +231,10 @@ enum class AchievementId(
         title = "Недельный марафон",
         description = "Заниматься 5 дней в течение одной недели",
         icon = "🗓️",
-        rewardWordEnRu = "ineffaceable",
-        rewardWordHeRu = "בִּלְתִּי-נִמְחָק",
+        rewardWords = mapOf(
+            "en-ru" to "ineffaceable",
+            "he-ru" to "בִּלְתִּי-נִמְחָק",
+        ),
         rewardWordTranslation = "неизгладимый",
         isHidden = true,
     ),
@@ -190,8 +242,10 @@ enum class AchievementId(
         title = "Честное поражение",
         description = "Сдаться в PvP матче",
         icon = "🏳️",
-        rewardWordEnRu = "sempiternal",
-        rewardWordHeRu = "נִצְחִי",
+        rewardWords = mapOf(
+            "en-ru" to "sempiternal",
+            "he-ru" to "נִצְחִי",
+        ),
         rewardWordTranslation = "вечный",
         isHidden = true,
     ),
@@ -199,8 +253,10 @@ enum class AchievementId(
         title = "Исследователь",
         description = "Изучить слова из 5 разных тематических групп",
         icon = "🗺️",
-        rewardWordEnRu = "desideratum",
-        rewardWordHeRu = "צֹרֶךְ",
+        rewardWords = mapOf(
+            "en-ru" to "desideratum",
+            "he-ru" to "צֹרֶךְ",
+        ),
         rewardWordTranslation = "насущная потребность",
         isHidden = true,
     ),
@@ -208,8 +264,10 @@ enum class AchievementId(
         title = "Марафон",
         description = "Провести 3 PvP матча за один день",
         icon = "🏃",
-        rewardWordEnRu = "synecdoche",
-        rewardWordHeRu = "דִּמּוּי",
+        rewardWords = mapOf(
+            "en-ru" to "synecdoche",
+            "he-ru" to "דִּמּוּי",
+        ),
         rewardWordTranslation = "синекдоха / сравнение",
         isHidden = true,
     ),
@@ -217,8 +275,10 @@ enum class AchievementId(
         title = "Возвращение",
         description = "Вернуться к учёбе после 7-дневного перерыва",
         icon = "🦀",
-        rewardWordEnRu = "solipsism",
-        rewardWordHeRu = "סוֹלִיפְּסִיזְם",
+        rewardWords = mapOf(
+            "en-ru" to "solipsism",
+            "he-ru" to "סוֹלִיפְּסִיזְם",
+        ),
         rewardWordTranslation = "солипсизм",
         isHidden = true,
     ),
@@ -226,18 +286,24 @@ enum class AchievementId(
         title = "Буквоед",
         description = "Выучить слово длиннее 12 символов",
         icon = "🔤",
-        rewardWordEnRu = "perspicacious",
-        rewardWordHeRu = "חַד-עַיִן",
+        rewardWords = mapOf(
+            "en-ru" to "perspicacious",
+            "he-ru" to "חַד-עַיִן",
+        ),
         rewardWordTranslation = "проницательный",
         isHidden = true,
     ),
     ;
 
-    /** Returns the reward word `original` for the given language pair. */
-    fun rewardOriginalFor(languagePair: String): String = when (languagePair) {
-        "he-ru" -> rewardWordHeRu
-        else -> rewardWordEnRu
-    }
+    /**
+     * Returns the reward word `original` for the given language pair.
+     * Falls back to `en-ru` if the language doesn't have a dedicated reward
+     * (e.g. a future language that hasn't been authored yet).
+     */
+    fun rewardOriginalFor(languagePair: String): String =
+        rewardWords[languagePair]
+            ?: rewardWords["en-ru"]
+            ?: error("AchievementId.$name has no reward word for any language")
 }
 
 data class AchievementState(
