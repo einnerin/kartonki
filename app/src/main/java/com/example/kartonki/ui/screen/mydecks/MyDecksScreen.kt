@@ -34,6 +34,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -68,9 +69,15 @@ fun MyDecksScreen(
     val listState = rememberLazyListState()
     var deckPendingDelete by remember { mutableStateOf<DeckSummary?>(null) }
 
-    uiState.navigateToDeckId?.let { deckId ->
-        onNavigateToDeckBuilder(deckId)
-        viewModel.onNavigationConsumed()
+    // Wrapped in LaunchedEffect so navigation+consume run exactly once per
+    // navigateToDeckId change. Calling these directly in composable scope fired
+    // them on every recomposition (and could double-pop if two recompositions
+    // landed before the consume settled).
+    LaunchedEffect(uiState.navigateToDeckId) {
+        uiState.navigateToDeckId?.let { deckId ->
+            onNavigateToDeckBuilder(deckId)
+            viewModel.onNavigationConsumed()
+        }
     }
 
     OnResume { viewModel.refresh() }

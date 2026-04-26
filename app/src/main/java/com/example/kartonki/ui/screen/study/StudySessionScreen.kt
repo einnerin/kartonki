@@ -106,18 +106,28 @@ fun StudySessionScreen(
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.align(Alignment.End).padding(end = 16.dp, top = 2.dp),
                     )
+                    // weight(1f) instead of fillMaxSize: in a Column the latter
+                    // requests infinite height and forces an extra measurement
+                    // pass, while weight(1f) cleanly takes the space remaining
+                    // after the progress bar and counter.
                     when (val step = uiState.currentStep) {
                         is StudyStep.Introduction -> IntroductionContent(
                             step = step,
                             onContinue = { viewModel.onIntroductionContinue() },
-                            modifier = Modifier.fillMaxSize().padding(16.dp),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .weight(1f)
+                                .padding(16.dp),
                         )
                         is StudyStep.Quiz -> QuizContent(
                             step = step,
                             answerState = uiState.answerState,
                             onOptionSelected = { viewModel.onMultipleChoiceAnswer(it) },
                             onContinue = { viewModel.onAnsweredContinue() },
-                            modifier = Modifier.fillMaxSize().padding(16.dp),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .weight(1f)
+                                .padding(16.dp),
                         )
                         null -> {}
                     }
