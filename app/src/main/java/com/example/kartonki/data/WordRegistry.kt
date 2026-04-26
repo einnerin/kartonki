@@ -110,6 +110,9 @@ object WordRegistry {
                 WordDataEnglishHealthFitnessL1L2L3.sets +
                 WordDataEnglishShoppingL1L2L3.sets +
                 WordDataEnglishEntertainmentL1L2L3.sets +
+                WordDataHebrewHealthFitnessL1L2L3.sets +
+                WordDataHebrewShoppingL1L2L3.sets +
+                WordDataHebrewEntertainmentL1L2L3.sets +
                 WordDataHebrew.sets + WordDataHebrewEveryday.sets +
                 WordDataHebrewMore.sets + WordDataHebrewAdvanced.sets +
                 WordDataHebrewImmigrant.sets +
@@ -286,6 +289,9 @@ object WordRegistry {
                 WordDataEnglishHealthFitnessL1L2L3.words +
                 WordDataEnglishShoppingL1L2L3.words +
                 WordDataEnglishEntertainmentL1L2L3.words +
+                WordDataHebrewHealthFitnessL1L2L3.words +
+                WordDataHebrewShoppingL1L2L3.words +
+                WordDataHebrewEntertainmentL1L2L3.words +
                 WordDataHebrew.words + WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words + WordDataHebrewAdvanced.words +
                 WordDataHebrewImmigrant.words +
