@@ -287,16 +287,11 @@ fun SettingsScreen(
             }
 
             // ── Language ───────────────────────────────────────────────────────
+            // Native-language picker is hidden until we ship more than one
+            // localization. The pref defaults to "ru" and the underlying VM hooks
+            // (onShowLanguagePicker / onNativeLanguageSelected) stay in place,
+            // so the row can be re-added later without re-plumbing.
             SectionHeader(s.settingsLanguageSection)
-            SettingsRow(label = s.settingsNativeLanguage) {
-                Text(
-                    NATIVE_LANGUAGES[state.nativeLanguage] ?: state.nativeLanguage,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.primary,
-                    fontWeight = FontWeight.Medium,
-                    modifier = Modifier.clickable { viewModel.onShowLanguagePicker() },
-                )
-            }
             SettingsRow(label = s.settingsStudyLanguage) {
                 Text(
                     STUDY_LANGUAGES[state.languagePair] ?: state.languagePair,
@@ -347,45 +342,7 @@ fun SettingsScreen(
                 )
             }
 
-            if (state.showLanguagePicker) {
-                AlertDialog(
-                    onDismissRequest = viewModel::onDismissLanguagePicker,
-                    title = { Text(s.settingsChooseNativeLanguage) },
-                    text = {
-                        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                            NATIVE_LANGUAGES.entries.forEach { (code, name) ->
-                                val isSelected = code == state.nativeLanguage
-                                Row(
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .clip(RoundedCornerShape(8.dp))
-                                        .background(
-                                            if (isSelected) MaterialTheme.colorScheme.primaryContainer
-                                            else MaterialTheme.colorScheme.surface
-                                        )
-                                        .clickable { viewModel.onNativeLanguageSelected(code) }
-                                        .padding(horizontal = 12.dp, vertical = 12.dp),
-                                    horizontalArrangement = Arrangement.SpaceBetween,
-                                    verticalAlignment = Alignment.CenterVertically,
-                                ) {
-                                    Text(
-                                        name,
-                                        style = MaterialTheme.typography.bodyLarge,
-                                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
-                                        color = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer
-                                                else MaterialTheme.colorScheme.onSurface,
-                                    )
-                                    if (isSelected) Text("✓", color = MaterialTheme.colorScheme.primary)
-                                }
-                            }
-                        }
-                    },
-                    confirmButton = {},
-                    dismissButton = {
-                        TextButton(onClick = viewModel::onDismissLanguagePicker) { Text(s.settingsCancelButton) }
-                    },
-                )
-            }
+            // Native-language picker dialog removed alongside the row above.
 
             // ── Tasks ─────────────────────────────────────────────────────────
             SectionHeader(s.settingsTasksSection)
