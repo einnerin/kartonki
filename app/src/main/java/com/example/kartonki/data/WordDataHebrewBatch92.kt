@@ -19,17 +19,17 @@ object WordDataHebrewBatch92 {
             description = "Спасательные операции, техника, протоколы",
             topic = "Пожарный", level = 2),
         WordSetEntity(id = 1556, languagePair = "he-ru", orderIndex = 1556,
-            name = "Повар",
+            name = "Кухня и работа поваром",
             description = "Ресторанная работа, оборудование, заготовки",
-            topic = "Повар", level = 2),
+            topic = "Кухня и работа поваром", level = 2),
         WordSetEntity(id = 1557, languagePair = "he-ru", orderIndex = 1557,
             name = "Пилот",
             description = "Навигация, коммуникация, процедуры",
             topic = "Пилот", level = 2),
         WordSetEntity(id = 1558, languagePair = "he-ru", orderIndex = 1558,
-            name = "Электрик",
+            name = "Электромонтаж и работа электриком",
             description = "Электроустановки, безопасность, сети",
-            topic = "Электрик", level = 2),
+            topic = "Электромонтаж и работа электриком", level = 2),
     )
 
     val words = listOf(

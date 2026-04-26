@@ -30,9 +30,9 @@ object WordDataHebrewElectricianL1 {
     val sets = listOf(
         WordSetEntity(
             id = 1726, languagePair = "he-ru", orderIndex = 1726,
-            name = "Электрик",
+            name = "Электромонтаж и работа электриком",
             description = "Базовые инструменты, лампы, провода, простые операции",
-            topic = "Электрик", level = 1,
+            topic = "Электромонтаж и работа электриком", level = 1,
         ),
     )
 

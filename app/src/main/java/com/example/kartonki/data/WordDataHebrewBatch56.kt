@@ -9,37 +9,37 @@ object WordDataHebrewBatch56 {
 
         WordSetEntity(
             id = 1315, languagePair = "he-ru", orderIndex = 1315,
-            name = "Бухгалтерия",
+            name = "Учёт и работа бухгалтером",
             description = "Базовая лексика бухгалтерского учёта и финансовой грамотности",
-            topic = "Бухгалтерия",
+            topic = "Учёт и работа бухгалтером",
             level = 1),
 
         WordSetEntity(
             id = 1316, languagePair = "he-ru", orderIndex = 1316,
-            name = "Бухгалтерия",
+            name = "Учёт и работа бухгалтером",
             description = "Профессиональная бухгалтерская терминология",
-            topic = "Бухгалтерия",
+            topic = "Учёт и работа бухгалтером",
             level = 3),
 
         WordSetEntity(
             id = 1317, languagePair = "he-ru", orderIndex = 1317,
-            name = "Бухгалтерия",
+            name = "Учёт и работа бухгалтером",
             description = "МСФО, консолидация, инструменты",
-            topic = "Бухгалтерия",
+            topic = "Учёт и работа бухгалтером",
             level = 4),
 
         WordSetEntity(
             id = 1318, languagePair = "he-ru", orderIndex = 1318,
-            name = "Бухгалтерия",
+            name = "Учёт и работа бухгалтером",
             description = "Управленческий учёт, налоговое планирование, аудит высшего уровня",
-            topic = "Бухгалтерия",
+            topic = "Учёт и работа бухгалтером",
             level = 4),
 
         WordSetEntity(
             id = 1319, languagePair = "he-ru", orderIndex = 1319,
-            name = "Бухгалтерия",
+            name = "Учёт и работа бухгалтером",
             description = "Академическая теория бухгалтерского учёта и корпоративных финансов",
-            topic = "Бухгалтерия",
+            topic = "Учёт и работа бухгалтером",
             level = 5),
     )
 

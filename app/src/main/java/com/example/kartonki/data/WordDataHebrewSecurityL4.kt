@@ -28,9 +28,9 @@ object WordDataHebrewSecurityL4 {
     val sets = listOf(
         WordSetEntity(
             id = 1721, languagePair = "he-ru", orderIndex = 1721,
-            name = "Охранник",
+            name = "Безопасность и работа охранником",
             description = "Спецоперации, разрешения, угрозы, протоколы реагирования",
-            topic = "Охранник", level = 4,
+            topic = "Безопасность и работа охранником", level = 4,
         ),
     )
 

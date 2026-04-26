@@ -31,9 +31,9 @@ object WordDataHebrewCleaningL4 {
     val sets = listOf(
         WordSetEntity(
             id = 1716, languagePair = "he-ru", orderIndex = 216,
-            name = "Клининг",
+            name = "Уборка и работа клинером",
             description = "Руководитель компании: спецоборудование, химия, договоры, стандарты",
-            topic = "Клининг", level = 4,
+            topic = "Уборка и работа клинером", level = 4,
         ),
     )
 

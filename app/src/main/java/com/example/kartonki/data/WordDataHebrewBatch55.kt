@@ -9,37 +9,37 @@ object WordDataHebrewBatch55 {
 
         WordSetEntity(
             id = 1310, languagePair = "he-ru", orderIndex = 1310,
-            name = "Уход",
+            name = "Уход за пожилыми и работа сиделкой",
             description = "Базовая лексика опекуна и сиделки",
-            topic = "Уход",
+            topic = "Уход за пожилыми и работа сиделкой",
             level = 1),
 
         WordSetEntity(
             id = 1311, languagePair = "he-ru", orderIndex = 1311,
-            name = "Уход",
+            name = "Уход за пожилыми и работа сиделкой",
             description = "Профессиональный уход за пожилыми и детьми",
-            topic = "Уход",
+            topic = "Уход за пожилыми и работа сиделкой",
             level = 2),
 
         WordSetEntity(
             id = 1312, languagePair = "he-ru", orderIndex = 1312,
-            name = "Уход",
+            name = "Уход за пожилыми и работа сиделкой",
             description = "Клинический и специализированный уход",
-            topic = "Уход",
+            topic = "Уход за пожилыми и работа сиделкой",
             level = 4),
 
         WordSetEntity(
             id = 1313, languagePair = "he-ru", orderIndex = 1313,
-            name = "Уход",
+            name = "Уход за пожилыми и работа сиделкой",
             description = "Высокопрофессиональные термины гериатрии и ухода",
-            topic = "Уход",
+            topic = "Уход за пожилыми и работа сиделкой",
             level = 5),
 
         WordSetEntity(
             id = 1314, languagePair = "he-ru", orderIndex = 1314,
-            name = "Уход",
+            name = "Уход за пожилыми и работа сиделкой",
             description = "Академическая лексика философии и социологии ухода",
-            topic = "Уход",
+            topic = "Уход за пожилыми и работа сиделкой",
             level = 5),
     )
 

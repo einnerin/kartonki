@@ -30,9 +30,9 @@ object WordDataHebrewConstructionL2 {
     val sets = listOf(
         WordSetEntity(
             id = 1724, languagePair = "he-ru", orderIndex = 1724,
-            name = "Строительство",
+            name = "Стройка и работа строителем",
             description = "Материалы, инструменты и команды бригадира на стройке",
-            topic = "Строительство", level = 2,
+            topic = "Стройка и работа строителем", level = 2,
         ),
     )
 

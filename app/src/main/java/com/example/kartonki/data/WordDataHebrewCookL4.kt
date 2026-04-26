@@ -29,9 +29,9 @@ object WordDataHebrewCookL4 {
     val sets = listOf(
         WordSetEntity(
             id = 1722, languagePair = "he-ru", orderIndex = 1722,
-            name = "Повар",
+            name = "Кухня и работа поваром",
             description = "Бригада, авторские блюда, винные пары, банкеты",
-            topic = "Повар", level = 4,
+            topic = "Кухня и работа поваром", level = 4,
         ),
     )
 

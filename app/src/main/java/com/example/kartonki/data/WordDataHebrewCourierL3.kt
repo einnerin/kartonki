@@ -28,9 +28,9 @@ object WordDataHebrewCourierL3 {
     val sets = listOf(
         WordSetEntity(
             id = 1717, languagePair = "he-ru", orderIndex = 1717,
-            name = "Курьер",
+            name = "Доставка и работа курьером",
             description = "Маршруты, типы доставок, проблемы, расчёты",
-            topic = "Курьер", level = 3,
+            topic = "Доставка и работа курьером", level = 3,
         ),
     )
 

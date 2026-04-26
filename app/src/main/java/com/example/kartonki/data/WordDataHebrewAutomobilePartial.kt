@@ -24,15 +24,15 @@ object WordDataHebrewAutomobilePartial {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1712, languagePair = "he-ru", orderIndex = 1712,
-            name = "Автомобиль",
+            name = "Гараж и работа автомехаником",
             description = "Управление машиной: салон, кузов, базовые приборы и сигналы",
-            topic = "Автомобиль", level = 1,
+            topic = "Гараж и работа автомехаником", level = 1,
         ),
         WordSetEntity(
             id = 1713, languagePair = "he-ru", orderIndex = 1713,
-            name = "Автомобиль",
+            name = "Гараж и работа автомехаником",
             description = "Диагностика, ремонт, узлы двигателя и тормозной системы",
-            topic = "Автомобиль", level = 4,
+            topic = "Гараж и работа автомехаником", level = 4,
         ),
     )
 

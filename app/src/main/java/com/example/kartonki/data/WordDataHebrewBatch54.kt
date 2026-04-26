@@ -9,37 +9,37 @@ object WordDataHebrewBatch54 {
 
         WordSetEntity(
             id = 1305, languagePair = "he-ru", orderIndex = 1305,
-            name = "Строительство",
+            name = "Стройка и работа строителем",
             description = "Базовые термины строительной индустрии Израиля",
-            topic = "Строительство",
+            topic = "Стройка и работа строителем",
             level = 1),
 
         WordSetEntity(
             id = 1306, languagePair = "he-ru", orderIndex = 1306,
-            name = "Строительство",
+            name = "Стройка и работа строителем",
             description = "Профессиональные строительные термины и документация",
-            topic = "Строительство",
+            topic = "Стройка и работа строителем",
             level = 3),
 
         WordSetEntity(
             id = 1307, languagePair = "he-ru", orderIndex = 1307,
-            name = "Строительство",
+            name = "Стройка и работа строителем",
             description = "Высокопрофессиональные термины строительной отрасли",
-            topic = "Строительство",
+            topic = "Стройка и работа строителем",
             level = 4),
 
         WordSetEntity(
             id = 1308, languagePair = "he-ru", orderIndex = 1308,
-            name = "Строительство",
+            name = "Стройка и работа строителем",
             description = "Архитектурно-инженерная документация и градостроительство",
-            topic = "Строительство",
+            topic = "Стройка и работа строителем",
             level = 4),
 
         WordSetEntity(
             id = 1309, languagePair = "he-ru", orderIndex = 1309,
-            name = "Строительство",
+            name = "Стройка и работа строителем",
             description = "Урбанистика, феноменология, деконструктивизм",
-            topic = "Строительство",
+            topic = "Стройка и работа строителем",
             level = 5),
     )
 

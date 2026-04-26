@@ -30,9 +30,9 @@ object WordDataHebrewCareL3 {
     val sets = listOf(
         WordSetEntity(
             id = 1725, languagePair = "he-ru", orderIndex = 1725,
-            name = "Уход",
+            name = "Уход за пожилыми и работа сиделкой",
             description = "Возрастные особенности, манипуляции, семья, документация",
-            topic = "Уход", level = 3,
+            topic = "Уход за пожилыми и работа сиделкой", level = 3,
         ),
     )
 

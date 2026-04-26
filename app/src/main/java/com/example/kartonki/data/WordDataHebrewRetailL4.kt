@@ -30,9 +30,9 @@ object WordDataHebrewRetailL4 {
     val sets = listOf(
         WordSetEntity(
             id = 1723, languagePair = "he-ru", orderIndex = 1723,
-            name = "Розница",
+            name = "Магазин и работа продавцом",
             description = "Управляющий магазином: операции, KPI, поставщики, потери",
-            topic = "Розница", level = 4,
+            topic = "Магазин и работа продавцом", level = 4,
         ),
     )
 

@@ -29,9 +29,9 @@ object WordDataHebrewWaiterL4 {
     val sets = listOf(
         WordSetEntity(
             id = 1720, languagePair = "he-ru", orderIndex = 1720,
-            name = "Официант",
+            name = "Ресторан и работа официантом",
             description = "Винная карта, банкеты, проблемные гости, премиум-этикет",
-            topic = "Официант", level = 4,
+            topic = "Ресторан и работа официантом", level = 4,
         ),
     )
 

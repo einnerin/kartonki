@@ -24,9 +24,9 @@ object WordDataHebrewNurseL1 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1719, languagePair = "he-ru", orderIndex = 1719,
-            name = "Медсестра",
+            name = "Больница и работа медсестрой",
             description = "Палата, пациент, измерение, базовые лекарства",
-            topic = "Медсестра", level = 1,
+            topic = "Больница и работа медсестрой", level = 1,
         ),
     )
 

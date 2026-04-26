@@ -9,37 +9,37 @@ object WordDataHebrewBatch57 {
 
         WordSetEntity(
             id = 1320, languagePair = "he-ru", orderIndex = 1320,
-            name = "Логистика",
+            name = "Склад и работа логистом",
             description = "Базовая лексика логистики, доставки и склада",
-            topic = "Логистика",
+            topic = "Склад и работа логистом",
             level = 1),
 
         WordSetEntity(
             id = 1321, languagePair = "he-ru", orderIndex = 1321,
-            name = "Логистика",
+            name = "Склад и работа логистом",
             description = "Профессиональные термины склада, цепочки поставок и перевозок",
-            topic = "Логистика",
+            topic = "Склад и работа логистом",
             level = 2),
 
         WordSetEntity(
             id = 1322, languagePair = "he-ru", orderIndex = 1322,
-            name = "Логистика",
+            name = "Склад и работа логистом",
             description = "Углублённые концепции логистики и управления запасами",
-            topic = "Логистика",
+            topic = "Склад и работа логистом",
             level = 4),
 
         WordSetEntity(
             id = 1323, languagePair = "he-ru", orderIndex = 1323,
-            name = "Логистика",
+            name = "Склад и работа логистом",
             description = "Высокоуровневые системы и стратегии глобальных цепочек поставок",
-            topic = "Логистика",
+            topic = "Склад и работа логистом",
             level = 5),
 
         WordSetEntity(
             id = 1324, languagePair = "he-ru", orderIndex = 1324,
-            name = "Логистика",
+            name = "Склад и работа логистом",
             description = "Академические и теоретические концепции логистики и пространственной экономики",
-            topic = "Логистика",
+            topic = "Склад и работа логистом",
             level = 5),
     )
 

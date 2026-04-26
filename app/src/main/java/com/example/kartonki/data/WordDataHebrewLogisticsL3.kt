@@ -28,9 +28,9 @@ object WordDataHebrewLogisticsL3 {
     val sets = listOf(
         WordSetEntity(
             id = 1718, languagePair = "he-ru", orderIndex = 1718,
-            name = "Логистика",
+            name = "Склад и работа логистом",
             description = "Управление складом, цепочки поставок, отслеживание грузов",
-            topic = "Логистика", level = 3,
+            topic = "Склад и работа логистом", level = 3,
         ),
     )
 

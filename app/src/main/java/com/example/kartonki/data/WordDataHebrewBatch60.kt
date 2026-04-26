@@ -23,30 +23,30 @@ object WordDataHebrewBatch60 {
 
         WordSetEntity(
             id = 1337, languagePair = "he-ru", orderIndex = 1337,
-            name = "Строительство",
+            name = "Стройка и работа строителем",
             description = "Специальность, опыт, бригада",
-            topic = "Строительство",
+            topic = "Стройка и работа строителем",
             level = 1),
 
         WordSetEntity(
             id = 1338, languagePair = "he-ru", orderIndex = 1338,
-            name = "Уход",
+            name = "Уход за пожилыми и работа сиделкой",
             description = "Нагрузка, подопечный, смена",
-            topic = "Уход",
+            topic = "Уход за пожилыми и работа сиделкой",
             level = 1),
 
         WordSetEntity(
             id = 1339, languagePair = "he-ru", orderIndex = 1339,
-            name = "Бухгалтерия",
+            name = "Учёт и работа бухгалтером",
             description = "Программы, опыт, отчётность",
-            topic = "Бухгалтерия",
+            topic = "Учёт и работа бухгалтером",
             level = 1),
 
         WordSetEntity(
             id = 1340, languagePair = "he-ru", orderIndex = 1340,
-            name = "Логистика",
+            name = "Склад и работа логистом",
             description = "Маршруты, права, склад",
-            topic = "Логистика",
+            topic = "Склад и работа логистом",
             level = 1),
 
         WordSetEntity(

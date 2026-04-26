@@ -15,9 +15,9 @@ object WordDataHebrewAccountingL2 {
             id = 1714,
             languagePair = "he-ru",
             orderIndex = 1714,
-            name = "Бухгалтерия",
+            name = "Учёт и работа бухгалтером",
             description = "Документы, операции, отчётные книги: повседневный учёт",
-            topic = "Бухгалтерия",
+            topic = "Учёт и работа бухгалтером",
             level = 2,
         ),
     )

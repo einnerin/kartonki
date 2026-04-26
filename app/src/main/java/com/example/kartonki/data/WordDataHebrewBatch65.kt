@@ -8,14 +8,14 @@ object WordDataHebrewBatch65 {
     val sets: List<WordSetEntity> get() = listOf(
 
         WordSetEntity(id = 1380, languagePair = "he-ru", orderIndex = 1380,
-            name = "Автомобиль", description = "Механика, ремонт, узлы двигателя",
-            topic = "Автомобиль", level = 3),
+            name = "Гараж и работа автомехаником", description = "Механика, ремонт, узлы двигателя",
+            topic = "Гараж и работа автомехаником", level = 3),
         WordSetEntity(id = 1381, languagePair = "he-ru", orderIndex = 1381,
-            name = "Автомобиль", description = "Автопарк, безопасность, диагностика, ТО",
-            topic = "Автомобиль", level = 5),
+            name = "Гараж и работа автомехаником", description = "Автопарк, безопасность, диагностика, ТО",
+            topic = "Гараж и работа автомехаником", level = 5),
         WordSetEntity(id = 1382, languagePair = "he-ru", orderIndex = 1382,
-            name = "Автомобиль", description = "Электромобили, автономное вождение, автопром",
-            topic = "Автомобиль", level = 5),
+            name = "Гараж и работа автомехаником", description = "Электромобили, автономное вождение, автопром",
+            topic = "Гараж и работа автомехаником", level = 5),
     )
 
     val words: List<WordEntity> get() = listOf(

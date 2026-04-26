@@ -28,9 +28,9 @@ object WordDataHebrewDriverL4 {
     val sets = listOf(
         WordSetEntity(
             id = 1715, languagePair = "he-ru", orderIndex = 1715,
-            name = "Водитель",
+            name = "Дороги и работа водителем",
             description = "Коммерческие перевозки, диспетчерская, спецтехника",
-            topic = "Водитель", level = 4,
+            topic = "Дороги и работа водителем", level = 4,
         ),
     )
 
