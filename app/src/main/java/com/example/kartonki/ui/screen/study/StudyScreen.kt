@@ -166,6 +166,15 @@ fun StudyScreen(
             RarityFilterChips(
                 activeFilters = uiState.activeFilters,
                 onToggle = { viewModel.toggleFilter(it) },
+                compact = true,
+                trailingContent = if (uiState.problemWordCount > 0) {
+                    {
+                        ProblemWordsChip(
+                            count = uiState.problemWordCount,
+                            onClick = onNavigateToProblemWords,
+                        )
+                    }
+                } else null,
             )
             SearchBar(
                 visible = searchActive,
@@ -177,16 +186,6 @@ fun StudyScreen(
                     viewModel.saveSearchQuery("")
                 },
             )
-            // Problem words chip — appears when there are problem words
-            if (uiState.problemWordCount > 0) {
-                ProblemWordsChip(
-                    count = uiState.problemWordCount,
-                    onClick = onNavigateToProblemWords,
-                    modifier = Modifier
-                        .align(Alignment.End)
-                        .padding(end = 12.dp, bottom = 4.dp),
-                )
-            }
             // First-time hint about the problem words chip
             if (uiState.showProblemChipHint) {
                 ProblemChipHintCard(
