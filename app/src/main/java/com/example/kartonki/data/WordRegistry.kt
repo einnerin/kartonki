@@ -233,7 +233,10 @@ object WordRegistry {
                 WordDataHebrewHightechL3.sets +
                 WordDataHebrewHightechL4.sets +
                 WordDataHebrewHightechL5.sets +
-                WordDataHebrewInterview.sets
+                WordDataHebrewInterview.sets +
+                WordDataHebrewInterviewL1.sets +
+                WordDataHebrewInterviewL2.sets +
+                WordDataHebrewInterviewL5.sets
     }
 
     private val _allWordsRaw: List<WordEntity> by lazy {
@@ -423,7 +426,10 @@ object WordRegistry {
                 WordDataHebrewHightechL3.words +
                 WordDataHebrewHightechL4.words +
                 WordDataHebrewHightechL5.words +
-                WordDataHebrewInterview.words
+                WordDataHebrewInterview.words +
+                WordDataHebrewInterviewL1.words +
+                WordDataHebrewInterviewL2.words +
+                WordDataHebrewInterviewL5.words
     }
 
     val allPrebuiltDecks: List<DeckSeed> by lazy {
