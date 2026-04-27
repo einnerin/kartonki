@@ -50,8 +50,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Тот, кто отвечает за ежедневную работу заведения и команду.",
             example = "מְנַהֵל סָלוֹן טוֹב חוֹסֵךְ זְמַן לְכָל הַצֶּוֶת.",
             exampleNative = "Хороший מְנַהֵל סָלוֹן экономит время всей команде.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179902L, 179903L, 179904L, 179905L)),
         WordEntity(
             id = 179902, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "barber_business", transliteration = "ѓазмана мэрош",
@@ -70,8 +69,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Сумма всех поступлений в заведении за определённый период времени.",
             example = "מַחְזוֹר כַּסְפִּי בְּדֶצֶמְבֶּר תָּמִיד גָּבוֹהַּ מִשְּׁאָר הַשָּׁנָה.",
             exampleNative = "מַחְזוֹר כַּסְפִּי в декабре всегда выше, чем в остальные месяцы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179901L, 179902L, 179904L, 179905L)),
         WordEntity(
             id = 179904, setId = 1799, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "barber_business", transliteration = "ахуз рэвах",
@@ -80,8 +78,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Часть от каждой услуги, которую получает мастер после вычета расходов.",
             example = "הַסַּפָּר חָתַם עַל אֲחוּז רֶוַח שֶׁל אַרְבָּעִים מִן הַטִּפּוּל.",
             exampleNative = "Мастер подписал на אֲחוּז רֶוַח сорок процентов от процедуры.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179901L, 179902L, 179903L, 179905L)),
         WordEntity(
             id = 179905, setId = 1799, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "barber_business", transliteration = "ришьон эсек",
@@ -90,8 +87,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Официальное разрешение от муниципалитета на законную работу заведения.",
             example = "בְּלִי רִשְׁיוֹן עֵסֶק הַמָּקוֹם נִסְגָּר עַל יְדֵי הַפַּקָּחִים.",
             exampleNative = "Без רִשְׁיוֹן עֵסֶק заведение закрывают инспекторы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179901L, 179902L, 179903L, 179904L)),
 
         // ── barber_fashion (5) ────────────────────────────────────────────────
         WordEntity(
@@ -102,8 +98,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Мероприятие, где на сцене демонстрируют новые наряды и образы.",
             example = "הִיא עִצְּבָה תִּסְפֹּרוֹת לְכָל הַדֻּגְמָנִיּוֹת בַּתַּצְוּגַת אוֹפְנָה.",
             exampleNative = "Она оформила причёски всем моделям на תַּצְוּגַת אוֹפְנָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179907L, 179909L, 179910L)),
         WordEntity(
             id = 179907, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "barber_fashion", transliteration = "фэшн вик",
@@ -112,8 +107,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Серия показов и презентаций в одном городе на протяжении семи дней.",
             example = "צֶוֶת הַסָּלוֹן טָס לְמִילָאנוֹ בִּשְׁבִיל פֶשֶׁן וִיק.",
             exampleNative = "Команда салона летит в Милан ради פֶשֶׁן וִיק.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179906L, 179909L, 179910L)),
         WordEntity(
             id = 179908, setId = 1799, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "barber_fashion", transliteration = "signon ishi",
@@ -132,8 +126,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Авангардный образ, созданный для журнальной съёмки, а не для будней.",
             example = "תִּסְפֹּרֶת מַעֲרַכְתִּית כָּזֹאת לֹא תַּחְזִיק אֲפִלּוּ יוֹם בָּרְחוֹב.",
             exampleNative = "Такая תִּסְפֹּרֶת מַעֲרַכְתִּית не продержится и дня в обычной жизни.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179906L, 179907L, 179910L)),
         WordEntity(
             id = 179910, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "barber_fashion", transliteration = "цэвет йоцэр",
@@ -154,8 +147,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Короткая практическая встреча, где осваивают одну методику под руководством.",
             example = "נִרְשַׁמְתִּי לְסָדְנָה שֶׁל יוֹמַיִם בְּתֵל אָבִיב.",
             exampleNative = "Я записалась на двухдневный סָדְנָה в Тель-Авиве.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179912L, 179913L)),
         WordEntity(
             id = 179912, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "barber_training_advanced", transliteration = "ханиха",
@@ -164,8 +156,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Личное сопровождение, где опытный профессионал передаёт знания новичку.",
             example = "חֲנִיכָה שֶׁל שְׁנָתַיִם נָתְנָה לָהּ בִּטָּחוֹן מִקְצוֹעִי.",
             exampleNative = "Двухлетняя חֲנִיכָה дала ей профессиональную уверенность.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179911L, 179913L, 179914L)),
         WordEntity(
             id = 179913, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "barber_training_advanced", transliteration = "митмахэ",
@@ -184,8 +175,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Процесс, в котором новый метод становится естественной частью работы.",
             example = "הַטְמָעַת טֶכְנִיקָה צְרִיכָה לְפָחוֹת חוֹדֶשׁ שֶׁל אִמּוּן יוֹמְיוֹמִי.",
             exampleNative = "הַטְמָעַת טֶכְנִיקָה требует не меньше месяца ежедневной практики.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179912L, 179915L)),
         WordEntity(
             id = 179915, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "barber_training_advanced", transliteration = "альбом аводот",
@@ -194,8 +184,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Подобранная коллекция фото, показывающая профессиональный рост со временем.",
             example = "אַלְבּוֹם עֲבוֹדוֹת מְסֻדָּר עוֹזֵר לְהַשִּׂיג לָקוֹחוֹת שֶׁל יֻקְרָה.",
             exampleNative = "Аккуратный אַלְבּוֹם עֲבוֹדוֹת помогает привлекать премиальных клиентов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179914L)),
 
         // ── barber_culture_brand (5) ──────────────────────────────────────────
         WordEntity(
@@ -206,8 +195,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Самостоятельная репутация, которую профессионал выстраивает вокруг своего имени.",
             example = "מוּתָג אִישִׁי חָזָק שׁוֹוֶה יוֹתֵר מִכָּל פִּרְסֹמֶת.",
             exampleNative = "Сильный מוּתָג אִישִׁי стоит дороже любой рекламы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179917L, 179918L, 179919L, 179920L)),
         WordEntity(
             id = 179917, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "barber_culture_brand", transliteration = "тохэн рэшэт",
@@ -216,8 +204,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Всё, что публикуется для подписчиков — фото, ролики и посты.",
             example = "תֹּכֶן רֶשֶׁת אֵיכוּתִי מֵבִיא לָקוֹחוֹת בְּלִי הוֹצָאָה גְּדוֹלָה.",
             exampleNative = "Качественный תֹּכֶן רֶשֶׁת приводит клиентов без больших трат.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179916L, 179918L, 179919L, 179920L)),
         WordEntity(
             id = 179918, setId = 1799, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "barber_culture_brand", transliteration = "ѓадгама микцоит",
@@ -236,8 +223,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Уважение, которое широкая аудитория оказывает тому, кто внёс вклад в дело.",
             example = "אַחֲרֵי שְׁלוֹשִׁים שָׁנָה הוּא זָכָה בְּהוֹקָרָה צִבּוּרִית בְּטֶקֶס מְפוּאָר.",
             exampleNative = "Через тридцать лет он удостоился הוֹקָרָה צִבּוּרִית на торжественной церемонии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179916L, 179917L, 179918L, 179920L)),
         WordEntity(
             id = 179920, setId = 1799, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "barber_culture_brand", transliteration = "тадмит салон",
@@ -246,8 +232,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "То, как публика воспринимает заведение и его уровень.",
             example = "תַּדְמִית סָלוֹן נִבְנֵית בִּשְׁנִים וְנֶהֱרֶסֶת בְּשָׁבוּעַ.",
             exampleNative = "תַּדְמִית סָלוֹן строится годами и рушится за неделю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179916L, 179917L, 179918L, 179919L)),
 
         // ── barber_health_safety (5) ──────────────────────────────────────────
         WordEntity(
@@ -258,8 +243,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Правила чистоты, оберегающие здоровье клиента и команды.",
             example = "הִיגְיֶנָה לְקוּיָה מוֹרִידָה אֶת הַסָּלוֹן בְּדֵרוּג הַפִּקּוּחַ.",
             exampleNative = "Плохая הִיגְיֶנָה снижает оценку салона при инспекции.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179924L)),
         WordEntity(
             id = 179922, setId = 1799, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "barber_health_safety", transliteration = "тгува алергит",
@@ -268,8 +252,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Ответ организма на чуждое вещество, проявляющийся зудом, краснотой или отёком.",
             example = "תְּגוּבָה אַלֶרְגִית קָשָׁה לְצֶבַע מַחְיֶיבֶת קְרִיאָה לְמוֹקֵד.",
             exampleNative = "Сильная תְּגוּבָה אַלֶרְגִית на краску требует звонка в скорую.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179923L, 179925L)),
         WordEntity(
             id = 179923, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "barber_health_safety", transliteration = "мивхан регишут",
@@ -278,8 +261,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Капля состава на коже за двое суток до основной процедуры.",
             example = "כָּל קוֹלוֹרִיסְטִית מִקְצוֹעִית מְבַקֶּשֶׁת מִבְחַן רְגִישׁוּת מֵרָאשׁ.",
             exampleNative = "Любой профессиональный колорист просит מִבְחַן רְגִישׁוּת заранее.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179922L, 179925L)),
         WordEntity(
             id = 179924, setId = 1799, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "barber_health_safety", transliteration = "хитуй",
@@ -288,8 +270,7 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Обработка сильным средством, убирающая микробы с инструментов после клиента.",
             example = "חִטּוּי מָלֵא שֶׁל הַמִּסְפָּרַיִים מִתְבַּצֵּעַ לְאַחַר כָּל לָקוֹחַ.",
             exampleNative = "Полный חִטּוּי ножниц проводят после каждого клиента.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179921L)),
         WordEntity(
             id = 179925, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "barber_health_safety", transliteration = "маген ор",
@@ -298,7 +279,6 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Средство, отделяющее агрессивный состав от лица или рук.",
             example = "הַסַּפָּר מוֹרֵחַ מָגֵן עוֹר לִפְנֵי כָּל צְבִיעָה.",
             exampleNative = "Мастер наносит מָגֵן עוֹר перед каждым окрашиванием.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(179922L, 179923L)),
     )
 }

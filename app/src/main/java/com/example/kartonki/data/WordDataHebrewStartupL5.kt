@@ -74,8 +74,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Сколько месяцев стартап продержится, пока деньги на счёте не кончатся.",
             example = "נִשְׁאָר לָנוּ רַאנְוֵוי שֶׁל שִׁשָּׁה חֳדָשִׁים בִּלְבַד.",
             exampleNative = "У нас остался רַאנְוֵוי всего на шесть месяцев.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176002L, 176003L, 176004L, 176005L)),
         WordEntity(
             id = 176002, setId = 1760, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_finance", transliteration = "bern reyt",
@@ -84,8 +83,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Сколько денег фирма проедает каждый месяц сверх своих поступлений.",
             example = "בֵּרְן רֵייט קָפַץ אַחֲרֵי שֶׁגִּיַּסְנוּ עוֹד עֶשְׂרִים מְהַנְדְּסִים.",
             exampleNative = "בֵּרְן רֵייט подскочил после того, как мы наняли ещё двадцать инженеров.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176001L, 176003L, 176004L, 176005L)),
         WordEntity(
             id = 176003, setId = 1760, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_finance", transliteration = "shulei tipuel",
@@ -94,8 +92,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Что остаётся от выручки после всех операционных расходов — до налогов и процентов.",
             example = "שׁוּלֵי תְפִעוּל שְׁלִילִיִּים בָּרֶבַע הָאַחֲרוֹן הִדְלִיקוּ נוּרָה אֲדֻמָּה אֵצֶל הַבּוֹרְד.",
             exampleNative = "Отрицательные שׁוּלֵי תְפִעוּל в последнем квартале зажгли красную лампу у борда.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176001L, 176002L, 176004L, 176005L)),
         WordEntity(
             id = 176004, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_finance", transliteration = "yunit ekonomiks",
@@ -104,8 +101,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Расчёт прибыли или убытка на одного клиента либо на одну сделку.",
             example = "בְּלִי יוּנִיט אֵקוֹנוֹמִיקְס חִיּוּבִי אֵין סִכּוּי לְצְמוֹחַ בְּרִיא.",
             exampleNative = "Без положительной יוּנִיט אֵקוֹנוֹמִיקְס нет шанса расти здоровым.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176001L, 176002L, 176003L, 176005L)),
         WordEntity(
             id = 176005, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_finance", transliteration = "yakhas si-ey-si le-el-ti-vi",
@@ -114,8 +110,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Метрика, которая сравнивает цену привлечения клиента с пожизненной выручкой от него.",
             example = "יַחַס סִי-אֵיי-סִי לְ-אֵל-טִי-וִי שֶׁל אֶחָד לִשְׁלֹשָׁה נֶחְשָׁב בָּרִיא.",
             exampleNative = "יַחַס סִי-אֵיי-סִי לְ-אֵל-טִי-וִי один к трём считается здоровым.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176001L, 176002L, 176003L, 176004L)),
 
         // ── startup_governance (5) — совет директоров и права акционеров ──
         WordEntity(
@@ -126,8 +121,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Группа старших людей, которые контролируют гендиректора и стратегические решения.",
             example = "הַבּוֹרְד הִתְכַּנֵּס בְּחֵיפָה כְּדֵי לְאַשֵּׁר אֶת תַּקְצִיב הַשָּׁנָה הַבָּאָה.",
             exampleNative = "הַבּוֹרְד собрался в Хайфе — утвердить бюджет на следующий год.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176007L, 176008L, 176009L, 176010L)),
         WordEntity(
             id = 176007, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_governance", transliteration = "direktor khitsoni",
@@ -136,8 +130,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Член борда без личного интереса в компании — нужен для баланса и прозрачности.",
             example = "הוֹסַפְנוּ דִּירֶקְטוֹר חִיצוֹנִי לִפְנֵי הָרַאוּנְד הַבָּא לְהַרְאוֹת בָּגרוּת אִרְגוּנִית.",
             exampleNative = "Мы добавили דִּירֶקְטוֹר חִיצוֹנִי перед следующим раундом — показать организационную зрелость.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176006L, 176008L, 176009L, 176010L)),
         WordEntity(
             id = 176008, setId = 1760, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_governance", transliteration = "zkhuyot hatsba'a",
@@ -146,8 +139,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Сила, с которой акционер влияет на ключевые решения компании.",
             example = "זְכוּיוֹת הַצְבָּעָה כְּפוּלוֹת שָׁמְרוּ עַל הַשְּׁלִיטָה אֵצֶל הַמַּיְיסְדִים.",
             exampleNative = "זְכוּיוֹת הַצְבָּעָה двойные сохранили контроль за основателями.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176006L, 176007L, 176009L, 176010L)),
         WordEntity(
             id = 176009, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_governance", transliteration = "divuakh le-mashkiim",
@@ -156,8 +148,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Обязанность фирмы регулярно слать финансовые данные акционерам.",
             example = "דִּיווּחַ לְמַשְׁקִיעִים מַגִּיעַ בְּכָל סוֹף רֹבַע יַחַד עִם דּוּ\"חַ הַנְהָלָה.",
             exampleNative = "דִּיווּחַ לְמַשְׁקִיעִים уходит в конце каждого квартала с отчётом руководства.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176006L, 176007L, 176008L, 176010L)),
         WordEntity(
             id = 176010, setId = 1760, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_governance", transliteration = "vesting maysdim",
@@ -166,8 +157,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Правило, что зачинатели должны отработать четыре года, чтобы получить свою долю.",
             example = "וֶסְטִינְג מַיְיסְדִים מָנַע מֵאֶחָד מֵהַשְּׁנַיִים לָקַחַת אֶת הַכֹּל וְלָלֶכֶת.",
             exampleNative = "וֶסְטִינְג מַיְיסְדִים помешал одному из двух забрать всё и уйти.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176006L, 176007L, 176008L, 176009L)),
 
         // ── startup_growth (5) — метрики и механики роста ──
         WordEntity(
@@ -178,8 +168,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Набор дешёвых хитрых приёмов, которыми сильно подбрасывают число пользователей.",
             example = "גְרוֹאוּת' הָאקִינְג עִם הַמְלָצוֹת חֲבֵרִים הֵבִיא מִילְיוֹן מִשְׁתַּמְּשִׁים בְּחוֹדֶשׁ.",
             exampleNative = "גְרוֹאוּת' הָאקִינְג через рекомендации друзей привёл миллион пользователей за месяц.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176012L, 176013L, 176014L, 176015L)),
         WordEntity(
             id = 176012, setId = 1760, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_growth", transliteration = "mekadem virali",
@@ -188,8 +177,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Число, которое показывает, скольких новых приводит в среднем один существующий.",
             example = "מְקַדֵּם וִירָאלִי מֵעַל אֶחָד אוֹמֵר שֶׁהָאַפְּלִיקַצְיָה גְּדֵלָה לְבַד.",
             exampleNative = "מְקַדֵּם וִירָאלִי больше единицы означает, что приложение растёт само.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176011L, 176013L, 176014L, 176015L)),
         WordEntity(
             id = 176013, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_growth", transliteration = "shi'ur netisha",
@@ -198,8 +186,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Процент пользователей, которые уходят из сервиса за фиксированный отрезок времени.",
             example = "שִׁעוּר נְטִישָׁה גָּבוֹהַּ אַחֲרֵי הַשִּׁדְרוּג הִכְעִיס אֶת הַמְּנַכָּ\"ל.",
             exampleNative = "שִׁעוּר נְטִישָׁה вырос после апдейта и взбесил гендиректора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176011L, 176012L, 176014L, 176015L)),
         WordEntity(
             id = 176014, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_growth", transliteration = "kohort shimur",
@@ -208,8 +195,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Группа пользователей одной даты регистрации, за которыми следят со временем.",
             example = "קוֹהוֹרְט שִׁמּוּר שֶׁל יָנוּאָר הֶרְאָה שֶׁהָאַפְּלִיקַצְיָה דּוֹלֶפֶת אַחֲרֵי שָׁבוּעַ.",
             exampleNative = "קוֹהוֹרְט שִׁמּוּר января показала, что приложение протекает после недели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176011L, 176012L, 176013L, 176015L)),
         WordEntity(
             id = 176015, setId = 1760, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_growth", transliteration = "hakhnasat harkhava",
@@ -218,8 +204,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Дополнительные деньги от текущих клиентов, что перешли на пакет побольше.",
             example = "הַכְנָסַת הַרְחָבָה הֵרִימָה אֶת הַ-אֵיי-אַר-אַר בְּלִי לְהָבִיא לָקוֹחַ חָדָשׁ.",
             exampleNative = "הַכְנָסַת הַרְחָבָה подняла ARR без единого нового клиента.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176011L, 176012L, 176013L, 176014L)),
 
         // ── startup_late_stage (5) — поздняя стадия и защитные механизмы ──
         WordEntity(
@@ -230,8 +215,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Короткая денежная подпитка, что держит фирму до следующего большого цикла.",
             example = "הַלְוָאַת גֶּשֶׁר שֶׁל חֲמִשָּׁה מִילְיוֹן הִצִּילָה אוֹתָנוּ לִפְנֵי סִדְרָה בִּי.",
             exampleNative = "הַלְוָאַת גֶּשֶׁר на пять миллионов спасла нас перед серией B.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176017L, 176018L, 176019L, 176020L)),
         WordEntity(
             id = 176017, setId = 1760, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_late_stage", transliteration = "sekonderi",
@@ -240,8 +224,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Сделка, в которой давний акционер продаёт свою долю новому инвестору.",
             example = "סֵקוֹנְדֵרִי שֶׁל שְׁנֵי מִילְיוֹן אִפְשֵׁר לַמַּיְיסְדִים לִקְנוֹת בָּתִּים.",
             exampleNative = "סֵקוֹנְדֵרִי на два миллиона позволил основателям купить дома.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176016L, 176018L, 176019L, 176020L)),
         WordEntity(
             id = 176018, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_late_stage", transliteration = "daun raund",
@@ -250,8 +233,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Цикл инвестиций, в котором стоимость фирмы ниже, чем в прошлом цикле.",
             example = "דָּאוּן רָאוּנְד אַחֲרֵי הַמַּשְׁבֵּר זָרַק אֶת הַשּׁוֹוִי בִּשְׁלוֹשִׁים אָחוּז.",
             exampleNative = "דָּאוּן רָאוּנְד после кризиса уронил оценку на тридцать процентов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176016L, 176017L, 176019L, 176020L)),
         WordEntity(
             id = 176019, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_late_stage", transliteration = "anti-dilyushen",
@@ -260,8 +242,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Условие, что защищает инвестора от падения стоимости его доли в новом цикле.",
             example = "אַנְטִי-דִּילְיוּשֶׁן שָׁמַר אֶת הַקֶּרֶן הָרָאשִׁית כְּשֶׁהָעֲרָכָה צָנְחָה.",
             exampleNative = "אַנְטִי-דִּילְיוּשֶׁן защитил главный фонд, когда оценка обвалилась.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176016L, 176017L, 176018L, 176020L)),
         WordEntity(
             id = 176020, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_late_stage", transliteration = "se'if ratchet",
@@ -270,8 +251,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Жёсткое условие, которое награждает инвестора бесплатными акциями при падении оценки.",
             example = "סְעִיף רָאצֶ'ט מָלֵא נָתַן לַקֶּרֶן עוֹד עֶשְׂרִים אָחוּז בַּחִנָּם.",
             exampleNative = "Полный סְעִיף רָאצֶ'ט выдал фонду ещё двадцать процентов задаром.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176016L, 176017L, 176018L, 176019L)),
 
         // ── startup_exit_paths (5) — пути и механика выхода ──
         WordEntity(
@@ -282,8 +262,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Большая корпорация, что покупает ради усиления своего бизнеса, не ради быстрой прибыли.",
             example = "רוֹכֵשׁ אִסְטְרָטֶגִי מֵאַמֵרִיקָה סָגַר אִתָּנוּ עִסְקָה שֶׁל מִילְיַארְד.",
             exampleNative = "רוֹכֵשׁ אִסְטְרָטֶגִי из Америки закрыл с нами сделку на миллиард.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176022L, 176023L, 176024L, 176025L)),
         WordEntity(
             id = 176022, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_exit_paths", transliteration = "kone finansi",
@@ -292,8 +271,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Инвестфонд, что покупает фирму с целью продать её дороже через несколько лет.",
             example = "קוֹנֶה פִינָנְסִי נִגְשַׁר עִמָּנוּ עַל הַעֲרָכָה נְמוּכָה מֵהַתַּאֲגִיד.",
             exampleNative = "קוֹנֶה פִינָנְסִי торговался с нами по оценке ниже, чем корпорация.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176021L, 176023L, 176024L, 176025L)),
         WordEntity(
             id = 176023, setId = 1760, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_exit_paths", transliteration = "tkufat lokup",
@@ -312,8 +290,7 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Часть оплаты сделки, которую переводят только если фирма выполнит заранее цели.",
             example = "אֵרְן-אַאוּט שֶׁל שְׁנָתַיִם הִכְנִיס אוֹתָנוּ לְלַחַץ עַל הַ-אֵיי-אַר-אַר.",
             exampleNative = "אֵרְן-אַאוּט на два года поставил нас под давление по ARR.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176021L, 176022L, 176023L, 176025L)),
         WordEntity(
             id = 176025, setId = 1760, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_exit_paths", transliteration = "eskro",

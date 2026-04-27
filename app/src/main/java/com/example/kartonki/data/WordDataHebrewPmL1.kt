@@ -93,8 +93,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Тот, кто заходит на страницу или сайт ненадолго и не обязательно регистрируется.",
             example = "כָּל מְבַקֵּר בַּדַּף שֶׁלָּנוּ נִשְׁאָר בַּמֻּצָע פָּחוֹת מִדַּקָּה.",
             exampleNative = "Каждый מְבַקֵּר на нашей странице остаётся в среднем меньше минуты.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177701L, 177702L, 177704L, 177705L)),
         WordEntity(
             id = 177704, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_users", transliteration = "okev",
@@ -103,8 +102,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Тот, кто согласился получать обновления от компании по почте или в соцсети.",
             example = "כָּל עוֹקֵב חָדָשׁ בָּעַמּוּד שֶׁלָּנוּ מַגְדִּיל אֶת הַחֲשִׂיפָה הָאַרְגָּנִית.",
             exampleNative = "Каждый новый עוֹקֵב на нашей странице растит органический охват.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177701L, 177702L, 177703L, 177705L)),
         WordEntity(
             id = 177705, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_users", transliteration = "kahal",
@@ -113,8 +111,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Большая группа людей, на которую продукт в итоге нацелен.",
             example = "קָהָל שֶׁלָּנוּ מְכִיל הוֹרִים צְעִירִים בְּגִיל שְׁלוֹשִׁים עַד אַרְבָּעִים.",
             exampleNative = "Наш קָהָל включает молодых родителей от тридцати до сорока лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177701L, 177702L, 177703L, 177704L)),
 
         // ── pm_basic_product (5) — что мы строим ──
         WordEntity(
@@ -125,8 +122,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "То, что компания делает на продажу или для людей в их жизни.",
             example = "מוּצָר חָדָשׁ שֶׁלָּנוּ יוֹצֵא לָאֲוִיר בַּחֹדֶשׁ הַבָּא.",
             exampleNative = "Наш новый מוּצָר выходит в эфир в следующем месяце.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177707L, 177708L, 177709L, 177710L)),
         WordEntity(
             id = 177707, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pm_basic_product", transliteration = "sherut",
@@ -135,8 +131,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Действие, что фирма делает за плату — не физическая вещь, а помощь или работа.",
             example = "אֲנַחְנוּ נוֹתְנִים שֵׁרוּת שֶׁל אִחְסוּן קְבָצִים בָּעָנָן לִמְפַתְּחִים.",
             exampleNative = "Мы предоставляем שֵׁרוּת облачного хранения файлов разработчикам.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177706L, 177708L, 177709L, 177710L)),
         WordEntity(
             id = 177708, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_product", transliteration = "aplikatsya",
@@ -145,8 +140,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Программа в телефоне для одного дела — карты, музыка или покупки.",
             example = "אַפְּלִיקַצְיָה שֶׁלָּנוּ עָלְתָה לְמָקוֹם שְׁלִישִׁי בַּחֲנוּת בְּיִשְׂרָאֵל.",
             exampleNative = "Наша אַפְּלִיקַצְיָה поднялась до третьего места в магазине в Израиле.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177706L, 177707L, 177709L, 177710L)),
         WordEntity(
             id = 177709, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pm_basic_product", transliteration = "atar",
@@ -155,8 +149,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Набор страниц в сети с постоянным адресом — открывают в браузере.",
             example = "הָאֲתַר שֶׁל הַחֶבְרָה נִבְנָה מֵחָדָשׁ בְּעִצּוּב מוֹדֶרְנִי.",
             exampleNative = "Корпоративный אֲתַר перестроили в современном дизайне.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177706L, 177707L, 177708L, 177710L)),
         WordEntity(
             id = 177710, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_product", transliteration = "yekholet",
@@ -165,8 +158,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "То, что продукт умеет делать — например, оповещать или сохранять данные.",
             example = "הוֹסַפְנוּ יְכוֹלֶת חֲדָשָׁה לְשִׁתּוּף קָבְצֵי וִידֵאוֹ בֵּין צְוָתִים.",
             exampleNative = "Мы добавили новую יְכוֹלֶת — обмен видеофайлами между командами.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177706L, 177707L, 177708L, 177709L)),
 
         // ── pm_basic_feedback (5) — что нам говорят пользователи ──
         WordEntity(
@@ -177,8 +169,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Текст, что клиент пишет после использования — что было хорошо и что мешало.",
             example = "כָּתַבְתִּי חַוַּת דַּעַת אֲרֻכָּה עַל הַמִּסְעָדָה הַחֲדָשָׁה בָּרְחוֹב הָרָאשִׁי.",
             exampleNative = "Я написал длинный חַוַּת דַּעַת про новый ресторан на главной улице.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177712L, 177713L, 177714L, 177715L)),
         WordEntity(
             id = 177712, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_feedback", transliteration = "derug",
@@ -187,8 +178,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Цифра или звёзды, что клиент ставит продукту — обычно от одного до пяти.",
             example = "הַדֵּרוּג שֶׁלָּנוּ בַּחֲנוּת יָרַד בִּגְלַל בָּאג בָּגִּרְסָה הָאַחֲרוֹנָה.",
             exampleNative = "Наш דֵּרוּג в магазине упал из-за бага в последней версии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177711L, 177713L, 177714L, 177715L)),
         WordEntity(
             id = 177713, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pm_basic_feedback", transliteration = "tguva",
@@ -197,8 +187,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Короткая фраза — её добавляют к посту или видео, чтобы ответить или высказать мнение.",
             example = "קִבַּלְנוּ תְּגוּבָה זוֹעֶמֶת מִלָּקוֹחַ עַל זְמַן הַטְּעִינָה הָאָרֹךְ.",
             exampleNative = "Мы получили гневный תְּגוּבָה от клиента на долгое время загрузки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177711L, 177712L, 177714L, 177715L)),
         WordEntity(
             id = 177714, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_feedback", transliteration = "tluna",
@@ -207,8 +196,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Сердитое обращение клиента — когда что-то не работает или его обидели.",
             example = "פָּתַחְנוּ תְּלוּנָה רִשְׁמִית לַמּוֹקֵד אַחֲרֵי שֶׁהַמַּשְׁלוֹחַ אִחֵר בִּשְׁבוּעַיִם.",
             exampleNative = "Мы открыли официальную תְּלוּנָה в кол-центр после того, как доставка опоздала на две недели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177711L, 177712L, 177713L, 177715L)),
         WordEntity(
             id = 177715, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pm_basic_feedback", transliteration = "toda",
@@ -217,8 +205,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Слово, которое говорят, когда кто-то помог или сделал хорошее для другого.",
             example = "כָּל לָקוֹחַ שֶׁכָּתַב לָנוּ תּוֹדָה חַמָּה הוּזְכַּר בַּפְּגִישָׁה הַשְּׁבוּעִית.",
             exampleNative = "Каждый клиент, написавший нам тёплую תּוֹדָה, упомянут на еженедельной встрече.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177711L, 177712L, 177713L, 177714L)),
 
         // ── pm_basic_ideas (5) — откуда берётся работа ──
         WordEntity(
@@ -229,8 +216,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Свежая мысль о том, что стоит построить или улучшить в продукте.",
             example = "רַעְיוֹן שֶׁל מְפַתֵּחַ צָעִיר הָפַךְ לַפִּיצֶ'ר הַכִּי פּוֹפּוּלָרִי בַּמּוּצָר.",
             exampleNative = "רַעְיוֹן молодого разработчика стал самой популярной фичей в продукте.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177717L, 177718L, 177719L, 177720L)),
         WordEntity(
             id = 177717, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_ideas", transliteration = "bakasha",
@@ -239,8 +225,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Обращение клиента — чтобы мы добавили возможность или поменяли что-то существующее.",
             example = "בַּקָּשָׁה לְמַצָּב כֵּהֶה הָיְתָה הַנְּפוֹצָה בְּיוֹתֵר בָּרֹבַע הָאַחֲרוֹן.",
             exampleNative = "בַּקָּשָׁה о тёмной теме была самой частой за последний квартал.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177716L, 177718L, 177719L, 177720L)),
         WordEntity(
             id = 177718, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_ideas", transliteration = "tsorekh",
@@ -259,8 +244,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Ситуация, что мешает человеку получить желаемое или нужное.",
             example = "מָצָאנוּ בְּעָיָה גְּדוֹלָה בָּמָסָךְ הַתַּשְׁלוּם — מִשְׁתַּמְּשִׁים נוֹטְשִׁים שָׁם.",
             exampleNative = "Мы нашли серьёзный בְּעָיָה на экране оплаты — пользователи там уходят.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177716L, 177717L, 177718L, 177720L)),
         WordEntity(
             id = 177720, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_ideas", transliteration = "pitaron",
@@ -269,8 +253,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Способ вытащить человека из трудной ситуации или дать ему то, чего не хватало.",
             example = "הִצַּעְנוּ פִּתְרוֹן פָּשׁוּט שֶׁחוֹסֵךְ לַלָּקוֹחַ שָׁלוֹשׁ הַקְלָדוֹת בָּטוֹפֶס.",
             exampleNative = "Мы предложили простой פִּתְרוֹן — экономит клиенту три ввода в форме.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177716L, 177717L, 177718L, 177719L)),
 
         // ── pm_basic_goals (5) — куда движемся ──
         WordEntity(
@@ -281,8 +264,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Дальнее место, куда хотят прийти в итоге — на работе или в жизни.",
             example = "מַטָּרָה שֶׁל הָרֹבַע הִיא מִילְיוֹן מִשְׁתַּמְּשִׁים פְּעִילִים בַּחֹדֶשׁ.",
             exampleNative = "מַטָּרָה на квартал — миллион активных пользователей в месяц.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177722L, 177723L, 177724L, 177725L)),
         WordEntity(
             id = 177722, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pm_basic_goals", transliteration = "mesima",
@@ -291,8 +273,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Одно действие, что нужно довести до конца к определённой дате — часть большего плана.",
             example = "כָּל מְשִׂימָה בַּסְּפְּרִינְט מְקַבֶּלֶת בַּעַל אַחְרָיוּת בָּהִיר וְזְמַן צָפוּי.",
             exampleNative = "Каждый מְשִׂימָה в спринте получает чёткого ответственного и ожидаемое время.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177721L, 177723L, 177724L, 177725L)),
         WordEntity(
             id = 177723, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "pm_basic_goals", transliteration = "tokhnit",
@@ -301,8 +282,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Упорядоченный список шагов — их делают один за другим, чтобы прийти к цели.",
             example = "הַתָּכְנִית לָרֹבַע הַבָּא כְּלָלָה שְׁלוֹשָׁה פִיצְ׳רִים גְּדוֹלִים וְעֶשֶׂר תִּקּוּנִים.",
             exampleNative = "Наша תָּכְנִית на следующий квартал включает три большие фичи и десяток правок.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177721L, 177722L, 177724L, 177725L)),
         WordEntity(
             id = 177724, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_goals", transliteration = "dedlain",
@@ -311,8 +291,7 @@ object WordDataHebrewPmL1 {
             definitionNative = "Последняя дата, к которой обязаны закончить — после неё уже поздно.",
             example = "הַדֶּדְלַיין שֶׁל הָרִילִיס נִדְחָה בְּשָׁבוּעַ בִּגְלַל אִינְטֶגְרַצְיָה עִם בַּנְק.",
             exampleNative = "דֶּדְלַיין релиза сдвинули на неделю из-за интеграции с банком.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177721L, 177722L, 177723L, 177725L)),
         WordEntity(
             id = 177725, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_goals", transliteration = "hatslakha",
@@ -321,7 +300,6 @@ object WordDataHebrewPmL1 {
             definitionNative = "Хороший результат — когда задуманная цель пришла к ясному и измеримому исходу.",
             example = "הַהַצְלָחָה שֶׁל הַהַשְׁקָה הָפְתִּיעָה אֲפִילוּ אֶת הַמַּשְׁקִיעִים הַוָּתִיקִים.",
             exampleNative = "הַצְלָחָה запуска удивила даже опытных инвесторов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177721L, 177722L, 177723L, 177724L)),
     )
 }

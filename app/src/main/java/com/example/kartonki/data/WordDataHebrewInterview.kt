@@ -77,8 +77,7 @@ object WordDataHebrewInterview {
             definitionNative = "Короткий документ с учёбой и местами работы для отправки в компанию.",
             example = "שָׁלַחְתִּי קוֹרוֹת חַיִּים לַחֲמִישָּׁה סְטַרְטְאַפִּים בְּתֵל אָבִיב.",
             exampleNative = "Я отправил קוֹרוֹת חַיִּים в пять стартапов в Тель-Авиве.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175002L, 175003L, 175004L, 175005L)),
         WordEntity(
             id = 175002, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_resume", transliteration = "mikhtav melave",
@@ -87,8 +86,7 @@ object WordDataHebrewInterview {
             definitionNative = "Короткий текст к резюме — объясняет, почему именно ты подходишь.",
             example = "כָּתַבְתִּי מִכְתָּב מְלַוֶּה אִישִׁי לְכָל מִשְׂרָה בְּנִפְרָד.",
             exampleNative = "Я написал отдельное מִכְתָּב מְלַוֶּה к каждой вакансии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175001L, 175003L, 175004L, 175005L)),
         WordEntity(
             id = 175003, setId = 1750, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "interview_resume", transliteration = "portfolyo",
@@ -107,8 +105,7 @@ object WordDataHebrewInterview {
             definitionNative = "Личная страница в профсети, через которую рекрутеры ищут кандидатов.",
             example = "עִדְכַּנְתִּי אֶת פְּרוֹפִיל לִינְקְדְאִין לִפְנֵי שֶׁהִתְחַלְתִּי לְחַפֵּשׂ עֲבוֹדָה.",
             exampleNative = "Я обновил פְּרוֹפִיל לִינְקְדְאִין перед тем как начал искать работу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175001L, 175002L, 175003L, 175005L)),
         WordEntity(
             id = 175005, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_resume", transliteration = "tmunat profil",
@@ -117,8 +114,7 @@ object WordDataHebrewInterview {
             definitionNative = "Официальный портретный снимок в верхней части профессиональной страницы.",
             example = "תְּמוּנַת פְּרוֹפִיל מַקְצוֹעִית מַעֲלָה אֶת הַסִּכּוּי לְקַבֵּל פְּנִיָּה מִמְּגַיֵּיס.",
             exampleNative = "Профессиональная תְּמוּנַת פְּרוֹפִיל увеличивает шанс получить обращение от рекрутера.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175001L, 175002L, 175003L, 175004L)),
 
         // ── interview_recruiter (5) — те, кто ищет кандидатов ──
         WordEntity(
@@ -139,8 +135,7 @@ object WordDataHebrewInterview {
             definitionNative = "Сотрудник отдела кадров — работает с приёмом людей и условиями труда.",
             example = "אֵייץ׳-אַר זִימֵּן אוֹתִי לִשְׁלִישִׁי הַבָּא בִּתְשַׁע בַּבֹּקֶר.",
             exampleNative = "אֵייץ׳-אַר пригласил меня на следующий вторник к девяти утра.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175006L, 175008L, 175009L, 175010L)),
         WordEntity(
             id = 175008, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_recruiter", transliteration = "skrining",
@@ -159,8 +154,7 @@ object WordDataHebrewInterview {
             definitionNative = "Внешняя фирма-посредник между кандидатом и работодателем за комиссию.",
             example = "סוֹכְנוּת הַשָּׂמָה מַצְלִיחָה לִמְצוֹא הַתְאָמוֹת מַהֵר יוֹתֵר מֵחֶבְרָה לְבַד.",
             exampleNative = "סוֹכְנוּת הַשָּׂמָה находит совпадения быстрее, чем компания сама.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175006L, 175007L, 175008L, 175010L)),
         WordEntity(
             id = 175010, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_recruiter", transliteration = "tsayad rashim",
@@ -169,8 +163,7 @@ object WordDataHebrewInterview {
             definitionNative = "Старший рекрутер: ищет топов на ключевые роли в закрытом рынке.",
             example = "צַיָּד רָאשִׁים פָּנָה אֵלַי בְּלִינְקְדְאִין עִם הַצָּעָה דִּיסְקְרֵטִית.",
             exampleNative = "צַיָּד רָאשִׁים связался со мной в LinkedIn с конфиденциальным предложением.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175006L, 175007L, 175008L, 175009L)),
 
         // ── interview_first_call (5) — первый звонок и базовые вопросы ──
         WordEntity(
@@ -181,8 +174,7 @@ object WordDataHebrewInterview {
             definitionNative = "Первый разговор без техники — узнают фон и желание кандидата.",
             example = "שִׂיחַת הֶכֵּרוּת נִמְשְׁכָה רַק עֶשְׂרִים דַּקּוֹת בַּזּוּם.",
             exampleNative = "שִׂיחַת הֶכֵּרוּת длилась всего двадцать минут в Зуме.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175008L, 175012L, 175013L, 175014L, 175015L)),
         WordEntity(
             id = 175012, setId = 1750, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "interview_first_call", transliteration = "tsipiyot sakhar",
@@ -191,8 +183,7 @@ object WordDataHebrewInterview {
             definitionNative = "Сумма, которую кандидат называет, когда спрашивают о желаемой зарплате.",
             example = "כְּשֶׁשָּׁאֲלוּ עַל צִפִּיּוֹת שָׂכָר, נָקַבְתִּי טְוָוח רָחָב.",
             exampleNative = "Когда спросили про צִפִּיּוֹת שָׂכָר, я назвал широкий диапазон.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175011L, 175013L, 175014L, 175015L)),
         WordEntity(
             id = 175013, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_first_call", transliteration = "format he'asaka",
@@ -201,8 +192,7 @@ object WordDataHebrewInterview {
             definitionNative = "Тип занятости: полный день, частичная, фриланс или подряд.",
             example = "הַחֶבְרָה הֶעֱדִיפָה פוֹרְמָט הַעֲסָקָה מָלֵא בִּלְבַד, לֹא פְרִילַנְס.",
             exampleNative = "Компания предпочитала только פוֹרְמָט הַעֲסָקָה на полный день, без фриланса.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175011L, 175012L, 175014L, 175015L)),
         WordEntity(
             id = 175014, setId = 1750, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "interview_first_call", transliteration = "mikum hamisrad",
@@ -211,8 +201,7 @@ object WordDataHebrewInterview {
             definitionNative = "Физический адрес фирмы, куда сотрудник приходит лично.",
             example = "מִיקּוּם הַמִּשְׂרָד בְּהֶרְצְלִיָּה לֹא נוֹחַ לִי בְּלִי רֶכֶב.",
             exampleNative = "מִיקּוּם הַמִּשְׂרָד в Герцлии мне неудобен без машины.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175011L, 175012L, 175013L, 175015L)),
         WordEntity(
             id = 175015, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_first_call", transliteration = "havtakhat khazara",
@@ -221,8 +210,7 @@ object WordDataHebrewInterview {
             definitionNative = "Слова рекрутера в конце звонка: ответ придёт в названный срок.",
             example = "קִבַּלְתִּי הַבְטָחַת חֲזָרָה תּוֹךְ שָׁבוּעַ אֲבָל לֹא הִתְקַשְּׁרוּ.",
             exampleNative = "Я получил הַבְטָחַת חֲזָרָה в течение недели — но не позвонили.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175011L, 175012L, 175013L, 175014L)),
 
         // ── interview_experience (5) — опыт, образование, навыки ──
         WordEntity(
@@ -233,8 +221,7 @@ object WordDataHebrewInterview {
             definitionNative = "Сколько лет человек работает в одной сфере с конца учёбы.",
             example = "הִיא בִּקְשָׁה מַשְׂכֹּרֶת גְּבוֹהָה בִּגְלַל וֶתֶק מִקְצוֹעִי שֶׁל שְׁנֵים עָשָׂר שָׁנָה.",
             exampleNative = "Она запросила высокую зарплату из-за וֶתֶק מִקְצוֹעִי в двенадцать лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175017L, 175018L, 175019L, 175020L)),
         WordEntity(
             id = 175017, setId = 1750, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "interview_experience", transliteration = "tafkid kodem",
@@ -243,8 +230,7 @@ object WordDataHebrewInterview {
             definitionNative = "Должность, на которой кандидат был до того, как ушёл искать новую.",
             example = "סִפַּרְתִּי בִּפְרוֹטְרוֹט עַל תַּפְקִיד קוֹדֵם בְּחֶבְרַת בִּטּוּחַ.",
             exampleNative = "Я подробно рассказал про תַּפְקִיד קוֹדֵם в страховой фирме.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175016L, 175018L, 175019L, 175020L)),
         WordEntity(
             id = 175018, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_experience", transliteration = "to'ar rishon",
@@ -253,8 +239,7 @@ object WordDataHebrewInterview {
             definitionNative = "Первая академическая бумага — после трёх-четырёх лет учёбы в вузе.",
             example = "סִיַּמְתִּי תֹּאַר רִאשׁוֹן בְּמַדְעֵי הַמַּחְשֵׁב בָּאוּנִיבֶרְסִיטָה הָעִבְרִית.",
             exampleNative = "Я закончил תֹּאַר רִאשׁוֹן по computer science в Еврейском университете.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175016L, 175017L, 175019L, 175020L)),
         WordEntity(
             id = 175019, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_experience", transliteration = "te'udat siyum",
@@ -263,8 +248,7 @@ object WordDataHebrewInterview {
             definitionNative = "Официальная бумага вуза после того, как все академические долги закрыты.",
             example = "צְרִיכִים סְרִיקָה שֶׁל תְּעוּדַת סִיּוּם לִבְדִיקַת רֶקַע מֵהַחֶבְרָה.",
             exampleNative = "Нужен скан תְּעוּדַת סִיּוּם для проверки бэкграунда от компании.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175016L, 175017L, 175018L, 175020L)),
         WordEntity(
             id = 175020, setId = 1750, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "interview_experience", transliteration = "stak teknologi",
@@ -305,8 +289,7 @@ object WordDataHebrewInterview {
             definitionNative = "Сферы, в которых ты слабее, и над которыми работаешь сознательно.",
             example = "הִזְכַּרְתִּי נְקֻדּוֹת לְשִׁפּוּר בְּלִי לְהַסְתִּיר חֻלְשׁוֹת אֲמִיתִּיוֹת.",
             exampleNative = "Я упомянул נְקֻדּוֹת לְשִׁפּוּר, не скрывая настоящие слабые места.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175021L, 175022L, 175024L, 175025L)),
         WordEntity(
             id = 175024, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_motivation", transliteration = "siba la-azuva",
@@ -315,8 +298,7 @@ object WordDataHebrewInterview {
             definitionNative = "Объяснение кандидата — почему он уходит с нынешнего места работы.",
             example = "סִבָּה לַעֲזִיבָה הַטֶּבֶעִית הָיְתָה רָצוֹן לִתְחוּם חָדָשׁ.",
             exampleNative = "Естественная סִבָּה לַעֲזִיבָה — желание сменить сферу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175021L, 175022L, 175023L, 175025L)),
         WordEntity(
             id = 175025, setId = 1750, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_motivation", transliteration = "she'elot la-mera'ayen",
@@ -325,8 +307,7 @@ object WordDataHebrewInterview {
             definitionNative = "То, что кандидат спрашивает в конце о фирме — чтобы показать настоящий интерес.",
             example = "הֵכַנְתִּי שָׁלוֹשׁ שְׁאֵלוֹת לַמְּרַאֲיֵין מֵרֹאשׁ עַל תַּרְבּוּת הַצֶּוֶות.",
             exampleNative = "Я заранее подготовил три שְׁאֵלוֹת לַמְּרַאֲיֵין про культуру команды.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175021L, 175022L, 175023L, 175024L)),
 
         // ══════════════════════════════════════════════════════════════════════
         // Set 1751 — Собеседования: профессиональный (L4, RARE+EPIC)
@@ -352,8 +333,7 @@ object WordDataHebrewInterview {
             definitionNative = "Большое задание дома на пару дней — без надзора интервьюера.",
             example = "הִשְׁקַעְתִּי שִׁישָּׁה לֵילוֹת בַּהוֹם אַסַיְינְמֶנְט שֶׁל הַסְּטַרְטְאַפּ.",
             exampleNative = "Я вложил шесть вечеров в הוֹם אַסַיְינְמֶנְט от стартапа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175101L, 175103L, 175104L, 175105L)),
         WordEntity(
             id = 175103, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_tech", transliteration = "system dizayn",
@@ -362,8 +342,7 @@ object WordDataHebrewInterview {
             definitionNative = "Тип интервью: обсуждают, как с нуля построить большую систему — на доске.",
             example = "סִיסְטֶם דִּיזַיְין דָּרַשׁ לְפָרֵט מַאֲגָר מֵידָע, קֶשֶׁ וְתוֹר הוֹדָעוֹת.",
             exampleNative = "סִיסְטֶם דִּיזַיְין потребовал расписать БД, кэш и очередь сообщений.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175101L, 175102L, 175104L, 175105L)),
         WordEntity(
             id = 175104, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_tech", transliteration = "per programing",
@@ -372,8 +351,7 @@ object WordDataHebrewInterview {
             definitionNative = "Формат «в паре»: интервьюер и кандидат пишут вместе в одном редакторе.",
             example = "פֶּר פְּרוֹגְרָמִינְג עָזַר לְהַרְאוֹת אֵיךְ אֲנִי שׁוֹאֵל וּמְקַבֵּל הֲצָעוֹת.",
             exampleNative = "פֶּר פְּרוֹגְרָמִינְג помог показать, как я задаю вопросы и принимаю предложения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175101L, 175102L, 175103L, 175105L)),
         WordEntity(
             id = 175105, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_tech", transliteration = "vaitbord",
@@ -382,8 +360,7 @@ object WordDataHebrewInterview {
             definitionNative = "Белая маркерная доска — кандидат пишет на ней код или схему перед интервьюером.",
             example = "וַיְיטְבּוֹרְד הָיָה מָלֵא בִּדְיָאגְרָמוֹת בְּסוֹף הַשִּׂיחָה.",
             exampleNative = "וַיְיטְבּוֹרְד была покрыта диаграммами в конце разговора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175101L, 175102L, 175103L, 175104L)),
 
         // ── interview_behavioral (5) — поведенческие интервью ──
         WordEntity(
@@ -394,8 +371,7 @@ object WordDataHebrewInterview {
             definitionNative = "Интервью на историях из реального прошлого — вместо теоретических вопросов.",
             example = "רֵאָיוֹן הִתְנַהֲגוּתִי שָׁאַל עַל קוֹנְפְלִיקְט עִם עָמִית בְּפְרוֹיֶקְט קַשֶׁה.",
             exampleNative = "רֵאָיוֹן הִתְנַהֲגוּתִי спрашивал про конфликт с коллегой в трудном проекте.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175107L, 175108L, 175109L, 175110L)),
         WordEntity(
             id = 175107, setId = 1751, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_behavioral", transliteration = "soft skils",
@@ -404,8 +380,7 @@ object WordDataHebrewInterview {
             definitionNative = "Межличностные качества — общение, слушание, командная работа, не технические.",
             example = "מְנַהֲלִים מַעֲדִיפִים סוֹפְט סְקִילְס חֲזָקִים עַל פְּנֵי בְּכִיר טֶכְנִי לְבַד.",
             exampleNative = "Менеджеры предпочитают сильные סוֹפְט סְקִילְס, а не только технического сеньора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175106L, 175108L, 175109L, 175110L)),
         WordEntity(
             id = 175108, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_behavioral", transliteration = "fit tarbuti",
@@ -414,8 +389,7 @@ object WordDataHebrewInterview {
             definitionNative = "Совпадение человека со стилем и ценностями конкретной фирмы.",
             example = "סִינְּנוּ אוֹתִי בִּגְלַל פִיט תַּרְבּוּתִי, לֹא בִּגְלַל הַיְּכוֹלוֹת הַטֶּכְנִיּוֹת.",
             exampleNative = "Меня отсеяли из-за פִיט תַּרְבּוּתִי, а не из-за технических умений.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175106L, 175107L, 175109L, 175110L)),
         WordEntity(
             id = 175109, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_behavioral", transliteration = "manhigut",
@@ -424,8 +398,7 @@ object WordDataHebrewInterview {
             definitionNative = "Умение вести других к общей цели, не применяя силу.",
             example = "הוּא הִצִּיג מַנְהִיגוּת בְּסִיפּוּר עַל הַצָּלַת פְּרוֹיֶקְט בִּמְשַׁבֵּר.",
             exampleNative = "Он показал מַנְהִיגוּת в истории спасения проекта в кризисе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175106L, 175107L, 175108L, 175110L)),
         WordEntity(
             id = 175110, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_behavioral", transliteration = "shituf pe'ula",
@@ -446,8 +419,7 @@ object WordDataHebrewInterview {
             definitionNative = "Письменное предложение работы — должность, оплата и сопутствующие условия.",
             example = "קִבַּלְתִּי אוֹפֶר טוֹב מֵאֲרְבָּעָה רְאָיוֹנוֹת בְּסַךְ הַכֹּל.",
             exampleNative = "Я получил хороший אוֹפֶר после в общей сложности четырёх собеседований.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175112L, 175113L, 175114L, 175115L)),
         WordEntity(
             id = 175112, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_offer", transliteration = "kaunter",
@@ -456,8 +428,7 @@ object WordDataHebrewInterview {
             definitionNative = "Улучшенный ответ от текущего работодателя — чтоб удержать уходящего.",
             example = "הַבּוֹס שֶׁלִּי שָׁלַח קַאוּנְטֶר יוֹם אַחֲרֵי שֶׁהוֹדַעְתִּי עַל פְּרִישָׁה.",
             exampleNative = "Мой босс прислал קַאוּנְטֶר на следующий день после моего предупреждения об уходе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175111L, 175113L, 175114L, 175115L, 175122L)),
         WordEntity(
             id = 175113, setId = 1751, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_offer", transliteration = "moed teshuva",
@@ -466,8 +437,7 @@ object WordDataHebrewInterview {
             definitionNative = "Последняя дата, к которой кандидат должен решить — подписывает ли он.",
             example = "מוֹעֵד תְּשׁוּבָה הָיָה קָצָר מִדַּי וּבִקַּשְׁתִּי הַאֲרָכָה.",
             exampleNative = "מוֹעֵד תְּשׁוּבָה был слишком короткий — я попросил продление.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175111L, 175112L, 175114L, 175115L)),
         WordEntity(
             id = 175114, setId = 1751, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_offer", transliteration = "sakhar basis",
@@ -476,8 +446,7 @@ object WordDataHebrewInterview {
             definitionNative = "Постоянная месячная сумма для сотрудника — без бонусов и опционов.",
             example = "שָׂכָר בָּסִיס הָיָה גָּבוֹהַּ אֲבָל הַמַּסְלוּל הָאַרֻוךְ דַּל יוֹתֵר.",
             exampleNative = "שָׂכָר בָּסִיס оказался высоким, но долгосрочный путь — слабее.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175111L, 175112L, 175113L, 175115L)),
         WordEntity(
             id = 175115, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_offer", transliteration = "khaviya kollelet",
@@ -486,8 +455,7 @@ object WordDataHebrewInterview {
             definitionNative = "Сумма всех компонентов: оклад, бонус, акции и льготы — за один год.",
             example = "חֲבִילָה כּוֹלֶלֶת בְּגוּגַל מִתְקָרֶבֶת לַחֲצִי מִילְיוֹן שֶׁקֶל לַשָּׁנָה.",
             exampleNative = "חֲבִילָה כּוֹלֶלֶת в Google приближается к полумиллиону шекелей в год.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175111L, 175112L, 175113L, 175114L)),
 
         // ── interview_equity (5) — акции и долгосрочные компоненты ──
         WordEntity(
@@ -498,8 +466,7 @@ object WordDataHebrewInterview {
             definitionNative = "Часть владения фирмой, которую сотрудник получает в дополнение к зарплате.",
             example = "אֶקְוִוִיטִי בִּסְטַרְטְאַפּ מֻקְדָּם שָׁוֶה הַרְבֵּה אוֹ כְּלוּם.",
             exampleNative = "אֶקְוִוִיטִי в раннем стартапе стоит много или ничего.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175117L, 175118L, 175119L, 175120L)),
         WordEntity(
             id = 175117, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_equity", transliteration = "ar-es-yu",
@@ -518,8 +485,7 @@ object WordDataHebrewInterview {
             definitionNative = "Право купить акции по фиксированной низкой цене — после периода работы.",
             example = "אוֹפְּצְיוֹת שֶׁלִּי יִהְיוּ שָׁווֹת רַק אִם הַחֶבְרָה תַּצְלִיחַ לְהַנְפִּיק.",
             exampleNative = "Мои אוֹפְּצְיוֹת будут чего-то стоить, только если фирма выйдет на IPO.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175116L, 175117L, 175119L, 175120L)),
         WordEntity(
             id = 175119, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_equity", transliteration = "sayning bonus",
@@ -528,8 +494,7 @@ object WordDataHebrewInterview {
             definitionNative = "Разовая сумма сотруднику сразу при подписании нового договора.",
             example = "סַיְינִינְג בּוֹנוּס שֶׁל חֲמִישִּׁים אֶלֶף שֶׁקֶל פִּצָּה אוֹתִי עַל הַמַּעֲבָר.",
             exampleNative = "סַיְינִינְג בּוֹנוּס в пятьдесят тысяч шекелей компенсировал мне переход.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175116L, 175117L, 175118L, 175120L)),
         WordEntity(
             id = 175120, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_equity", transliteration = "vesting",
@@ -538,8 +503,7 @@ object WordDataHebrewInterview {
             definitionNative = "Процесс, когда акции или опционы достаются сотруднику постепенно за годы.",
             example = "וֶסְטִינְג סְטַנְדַּרְטִי הוּא אַרְבַּע שָׁנִים עִם שָׁנָה רִאשׁוֹנָה חוֹסֶמֶת.",
             exampleNative = "Стандартный וֶסְטִינְג — это четыре года с блокированным первым годом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175116L, 175117L, 175118L, 175119L)),
 
         // ── interview_negotiation (5) — переговоры и финал ──
         WordEntity(
@@ -550,8 +514,7 @@ object WordDataHebrewInterview {
             definitionNative = "Двусторонняя беседа, в которой стороны пытаются добиться лучших условий.",
             example = "מַשָּׂא וּמַתָּן עַל הַחֲבִילָה הִתְמַשֵּׁךְ שָׁבוּעַ שָׁלֵם.",
             exampleNative = "מַשָּׂא וּמַתָּן о пакете растянулся на целую неделю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175122L, 175123L, 175124L, 175125L)),
         WordEntity(
             id = 175122, setId = 1751, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "interview_negotiation", transliteration = "hatsa'a-shkenged",
@@ -560,8 +523,7 @@ object WordDataHebrewInterview {
             definitionNative = "Ответ кандидата на исходное предложение — с другими или изменёнными условиями.",
             example = "הַצָּעָה שֶׁכְּנֶגֶד שֶׁלִּי הִכְנִיסָה עוֹד שָׁבוּעַ חֻפְשָׁה לַהַסְכֵּם.",
             exampleNative = "Моя הַצָּעָה שֶׁכְּנֶגֶד добавила в соглашение ещё одну неделю отпуска.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175112L, 175121L, 175123L, 175124L, 175125L)),
         WordEntity(
             id = 175123, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_negotiation", transliteration = "ritenshen",
@@ -570,8 +532,7 @@ object WordDataHebrewInterview {
             definitionNative = "Усилия фирмы — удержать ценного сотрудника, когда его зовут в другое место.",
             example = "מְדִינוֹת רִיטֶנְשֶׁן בַּחֶבְרָה כּוֹלְלוֹת בּוֹנוּסִים שְׁנָתִיִּים גְּדוֹלִים.",
             exampleNative = "Политика רִיטֶנְשֶׁן в фирме включает большие ежегодные бонусы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175121L, 175122L, 175124L, 175125L)),
         WordEntity(
             id = 175124, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_negotiation", transliteration = "nekudat prisha",
@@ -580,8 +541,7 @@ object WordDataHebrewInterview {
             definitionNative = "Сумма или условие, ниже которого кандидат заранее решает не подписывать.",
             example = "קָבַעְתִּי לְעַצְמִי נְקֻדַּת פְּרִישָׁה בְּרוּרָה לִפְנֵי שֶׁדִּבַּרְתִּי עִם הַחֶבְרָה.",
             exampleNative = "Я установил себе чёткую נְקֻדַּת פְּרִישָׁה ещё до разговора с фирмой.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175121L, 175122L, 175123L, 175125L)),
         WordEntity(
             id = 175125, setId = 1751, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "interview_negotiation", transliteration = "havtakhat ha'avara",
@@ -590,7 +550,6 @@ object WordDataHebrewInterview {
             definitionNative = "Набор льгот сотруднику при переезде в другой город или страну ради должности.",
             example = "הַבְטָחַת הַעֲבָרָה כִּסְּתָה דִּירָה זְמַנִּית וּטִיסוֹת לַמִּשְׁפָּחָה.",
             exampleNative = "הַבְטָחַת הַעֲבָרָה покрыла временное жильё и перелёты для семьи.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175121L, 175122L, 175123L, 175124L)),
     )
 }

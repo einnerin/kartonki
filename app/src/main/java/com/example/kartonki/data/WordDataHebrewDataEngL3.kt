@@ -60,8 +60,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Большая центральная база — собирает данные из многих источников для отчётов и аналитики.",
             example = "הָעֲבָרָה לְדָּאטָה וֵייְארְהָאוּס חָדָשׁ הוֹרִידָה אֶת זְמַן הַדּוּחוֹת.",
             exampleNative = "Переход на новый דָּאטָה וֵייְארְהָאוּס сократил время отчётов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176302L, 176303L, 176304L, 176305L)),
         WordEntity(
             id = 176302, setId = 1763, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "de_storage", transliteration = "data leyk",
@@ -70,8 +69,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Дешёвое хранилище разных сырых файлов — логов, картинок, JSON — без жёсткой схемы.",
             example = "כָּל הַקְּלִיקִים שֶׁל הַמִּשְׁתַּמְּשִׁים זוֹרְמִים יְשִׁירוֹת לְדָּאטָה לֵייק.",
             exampleNative = "Все клики пользователей текут прямо в דָּאטָה לֵייק.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176301L, 176303L, 176304L, 176305L)),
         WordEntity(
             id = 176303, setId = 1763, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "de_storage", transliteration = "es shalosh",
@@ -80,8 +78,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Сервис хранения от Amazon — держит огромные файлы за низкую цену за гигабайт.",
             example = "כָּל הַקְבָצִים הַסְּטָטִיִּים שֶׁל הָאַתָר יוֹשְׁבִים בְּ-S3.",
             exampleNative = "Все статичные файлы сайта лежат в S3.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176301L, 176302L, 176304L, 176305L)),
         WordEntity(
             id = 176304, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_storage", transliteration = "parket",
@@ -90,8 +87,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Сжатый формат файлов, хранит по столбцам — быстро читается аналитическими запросами.",
             example = "הִמַּרְנוּ אֶת הַטַּבְלָאוֹת לְפַּרְקֵט וְהַשְּׁאֵילְתוֹת רָצוֹת פִּי שְׁמוֹנֶה מַהֵר.",
             exampleNative = "Мы конвертировали таблицы в פַּרְקֵט — запросы бегут в восемь раз быстрее.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176301L, 176302L, 176303L, 176305L)),
         WordEntity(
             id = 176305, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_storage", transliteration = "ihsun amudi",
@@ -100,8 +96,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Способ хранения, где каждый столбец лежит в отдельном файле — отлично читать одиночные поля.",
             example = "אִחְסוּן עַמּוּדִי חוֹסֵךְ הַרְבֵּה זִכָּרוֹן כְּשֶׁשּׁוֹלְפִים שְׁתֵּי עַמּוּדוֹת מִתּוֹךְ מֵאָה.",
             exampleNative = "אִחְסוּן עַמּוּדִי экономит много памяти, когда тянем два столбца из ста.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176301L, 176302L, 176303L, 176304L)),
 
         // ── de_etl (5) — конвейеры данных ──
         WordEntity(
@@ -112,8 +107,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Процесс — тянет данные из источника, обрабатывает по дороге и кладёт в финальное место.",
             example = "תַּהֲלִיךְ אֵי-טִי-אֵל לֵילִי מַעֲבִיר אֶת כָּל הַמְּכִירוֹת לַמֶּחְסָן.",
             exampleNative = "Ночной אֵי-טִי-אֵל переносит все продажи в хранилище.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176307L, 176308L, 176309L, 176310L)),
         WordEntity(
             id = 176307, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_etl", transliteration = "i-el-ti",
@@ -122,8 +116,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Подход наоборот — сначала грузят сырое в хранилище и только там обрабатывают запросами.",
             example = "אֵי-אֵל-טִי הָפַךְ פּוֹפּוּלָרִי בְּעִדָּן הַמַּחְסָנִים הָעַנָנִיִּים הַחֲזָקִים.",
             exampleNative = "אֵי-אֵל-טִי стал популярным в эпоху мощных облачных хранилищ.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176306L, 176308L, 176309L, 176310L)),
         WordEntity(
             id = 176308, setId = 1763, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "de_etl", transliteration = "ibud batch",
@@ -142,8 +135,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Приём событий по одному сразу при поступлении — без ожидания большой партии.",
             example = "חֲלוּקָה בִּזְמַן אֱמֶת שֶׁל טְרַנְזַקְצְיוֹת מְזַהָה הוֹנָאָה לִפְנֵי שֶׁהִיא מַסְפִּיקָה לִקְרוֹת.",
             exampleNative = "חֲלוּקָה בִּזְמַן אֱמֶת транзакций ловит мошенничество прежде, чем оно успеет произойти.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176306L, 176307L, 176308L, 176310L)),
         WordEntity(
             id = 176310, setId = 1763, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "de_etl", transliteration = "paypline",
@@ -152,8 +144,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Цепочка шагов, ведущая данные от источника через обработки к итогу.",
             example = "כָּל פַּיְיפְּלַיְין מְתֻעָד בִּקְרַיוֹן עִם בְּעָלִים אַחֲרָאִי.",
             exampleNative = "Каждый פַּיְיפְּלַיְין задокументирован на вики, с ответственным владельцем.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176306L, 176307L, 176308L, 176309L)),
 
         // ── de_processing (5) — обработка данных ──
         WordEntity(
@@ -164,8 +155,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Параллельный движок для огромных объёмов — делит работу между многими машинами сразу.",
             example = "ג׳וֹב שֶׁל סְפַּארְק עִבֵּד שְׁלוֹשָׁה טֵרָה תּוֹךְ עֶשְׂרִים דַּקּוֹת.",
             exampleNative = "Джоб סְפַּארְק обработал три терабайта за двадцать минут.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176312L, 176313L, 176314L, 176315L)),
         WordEntity(
             id = 176312, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_processing", transliteration = "hadup",
@@ -184,8 +174,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Шаблон параллельной обработки в два шага — сначала разметить каждую запись, потом свернуть вместе.",
             example = "אַלְגוֹרִיתְם הַסְּפִירָה הַקְּלָאסִי שֶׁל מָאפּ-רִידְיוּס סוֹפֵר מִילִים בִּסְפָרִים שְׁלֵמִים.",
             exampleNative = "Классический алгоритм מָאפּ-רִידְיוּס считает слова в целых книгах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176311L, 176312L, 176314L, 176315L)),
         WordEntity(
             id = 176314, setId = 1763, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "de_processing", transliteration = "partitsya",
@@ -194,8 +183,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Деление большой таблицы на куски по дате или региону — чтобы читать только нужный.",
             example = "פַּרְטִיצְיָה לְפִי יוֹם מַזְמִינָה רַק שָׁלוֹשׁ מֵאוֹת מֶגָה בִּמְקוֹם טֵרָה שָׁלֵם.",
             exampleNative = "פַּרְטִיצְיָה по дню тянет триста мегабайт вместо целого терабайта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176311L, 176312L, 176313L, 176315L)),
         WordEntity(
             id = 176315, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_processing", transliteration = "shafl",
@@ -204,8 +192,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Дорогой шаг — данные текут между машинами в кластере, чтобы сгруппироваться по общему ключу.",
             example = "צִמְצַמְנוּ שָׁאפְל וְהוֹרַדְנוּ אֶת מֶשֶׁךְ הַג׳וֹב מִשָּׁעָה לִשְׁמוֹנֶה דַּקּוֹת.",
             exampleNative = "Мы сократили שָׁאפְל — и время джоба упало с часа до восьми минут.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176311L, 176312L, 176313L, 176314L)),
 
         // ── de_orchestration (5) — оркестрация задач ──
         WordEntity(
@@ -226,8 +213,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Схема задач без циклов — стрелки показывают, что после чего идёт, и не возвращаются назад.",
             example = "כָּל פַּיְיפְּלַיְין מוּגְדָּר בִּקְוָבֶץ פַּיְתוֹן שֶׁמַּחְזִיר דֵּיאַג שָׁלֵם.",
             exampleNative = "Каждый пайплайн описан в Python-файле, возвращающем целый דֵּיאַג.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176316L, 176318L, 176319L, 176320L)),
         WordEntity(
             id = 176318, setId = 1763, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "de_orchestration", transliteration = "metazmen",
@@ -246,8 +232,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Правило — одна задача стартует только после успешного финиша другой, для правильного порядка.",
             example = "הוֹסַפְתִּי תְּלוּת בֵּין מְשִׂימוֹת כְּדֵי שֶׁהַדּוּחַ לֹא יָרוּץ עַל טַבְלָה רֵיקָה.",
             exampleNative = "Я добавил תְּלוּת בֵּין מְשִׂימוֹת — чтобы отчёт не пошёл по пустой таблице.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176316L, 176317L, 176318L, 176320L)),
         WordEntity(
             id = 176320, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_orchestration", transliteration = "bek-fil",
@@ -256,8 +241,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Ретроактивный прогон по прошедшим датам — заполнить таблицу после починки бага.",
             example = "בֶּקְפִיל שֶׁל חֹדֶשׁ אֶחָד לָקַח לַאֶשְׁכּוֹל אַרְבַּע שָׁעוֹת רְצוּפוֹת.",
             exampleNative = "בֶּקְפִיל за один месяц занял у кластера четыре часа подряд.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176316L, 176317L, 176318L, 176319L)),
 
         // ── de_quality (5) — качество данных ──
         WordEntity(
@@ -268,8 +252,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Мера доверия к таблицам — насколько строки полные, корректные и свежие.",
             example = "צֶוֶות אֵיכוּת דָּאטָה מַרִיץ מֵאָה בְּדִיקוֹת אוֹטוֹמָטִיּוֹת בְּכָל בֹּקֶר.",
             exampleNative = "Команда אֵיכוּת דָּאטָה прогоняет сотню автопроверок каждое утро.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176322L, 176323L, 176324L, 176325L)),
         WordEntity(
             id = 176322, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_quality", transliteration = "akhifat skhema",
@@ -278,8 +261,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Автоматический отказ строкам, не подходящим под ожидаемое устройство — имя поля или тип.",
             example = "אַכִיפַת סְכֵמָה בִּכְנִיסָה תָּפְסָה שָׂדֶה חָדָשׁ שֶׁהוֹסִיפוּ בְּלִי לְעַדְכֵּן.",
             exampleNative = "אַכִיפַת סְכֵמָה на входе поймала новое поле, добавленное без оповещения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176321L, 176323L, 176324L, 176325L)),
         WordEntity(
             id = 176323, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_quality", transliteration = "deduplikatsya",
@@ -288,8 +270,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Удаление одинаковых строк, попавших дважды из-за повтора попытки или бага в коллекторах.",
             example = "אַחֲרֵי דֶּדוּפְּלִיקַצְיָה הַטַּבְלָה הִתְכַּוְּצָה בִּשְׁלוֹשִׁים אֲחוּזִים.",
             exampleNative = "После דֶּדוּפְּלִיקַצְיָה таблица сжалась на тридцать процентов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176321L, 176322L, 176324L, 176325L)),
         WordEntity(
             id = 176324, setId = 1763, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "de_quality", transliteration = "naitunim me'uharim",
@@ -298,8 +279,7 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "События, приходящие после закрытия их окна — из-за медленной сети или забитой очереди.",
             example = "נְתוּנִים מְאֻחָרִים מֵאַפְלִיקַצְיוֹת נַיָּדוֹת מַגִּיעִים גַּם שָׁעָה אַחֲרֵי הָאֵירוּעַ.",
             exampleNative = "נְתוּנִים מְאֻחָרִים от мобилок приходят и через час после события.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176321L, 176322L, 176323L, 176325L)),
         WordEntity(
             id = 176325, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_quality", transliteration = "vatermark",
@@ -308,7 +288,6 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Метка — до какой точки во времени поток считается полным; всё опоздавшее после неё отбросят.",
             example = "וָוטֶרְמַארְק שֶׁל חָמֵשׁ דַּקּוֹת מְאַזֵּן בֵּין מְהִירוּת לְבֵין דִּיוּק.",
             exampleNative = "וָוטֶרְמַארְק на пять минут балансирует между скоростью и точностью.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176321L, 176322L, 176323L, 176324L)),
     )
 }

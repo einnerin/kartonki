@@ -58,8 +58,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Автоматический процесс — проверяет новый код и катит на сервер без рук человека.",
             example = "סִי-אַי-סִי-דִּי בְּחֶבְרָה שֶׁלָּנוּ רָץ עַל גִ׳יטְהָאבּ אַקְשֶׁנְס.",
             exampleNative = "סִי-אַי-סִי-דִּי в нашей фирме работает на GitHub Actions.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174802L, 174803L, 174804L, 174805L)),
         WordEntity(
             id = 174802, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_devops", transliteration = "paiplain deploy",
@@ -68,8 +67,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Цепочка шагов после слияния кода — пока новая версия не работает у клиентов.",
             example = "פַּייפְּלַיין דֵּפְּלוֹי נִתְקַע בִּשְׁלַב הַבְּדִיקוֹת בִּגְלַל סְפְּרִיג חָדָשׁ.",
             exampleNative = "פַּייפְּלַיין דֵּפְּלוֹי застрял на тестах из-за нового спринта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174801L, 174803L, 174804L, 174805L)),
         WordEntity(
             id = 174803, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_devops", transliteration = "infrastruktura ke-kod",
@@ -78,8 +76,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Подход: серверы, сети и БД описаны в текстовом файле под Git-управлением.",
             example = "מַעֲבָר לְאִינְפְרַסְטְרוּקְטוּרָה כְּקוֹד חָסַךְ לָנוּ שָׁעוֹת קוֹנְפִיגוּרַצְיָה יָדָנִית.",
             exampleNative = "Переход на אִינְפְרַסְטְרוּקְטוּרָה כְּקוֹד сэкономил часы ручной настройки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174801L, 174802L, 174804L, 174805L)),
         WordEntity(
             id = 174804, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_devops", transliteration = "skript otomatsya",
@@ -88,8 +85,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Короткий файл — повторяет рутинные действия, чтобы инженер не вводил команду каждый раз.",
             example = "כָּתַבְתִּי סְקְרִיפְט אוֹטוֹמַצְיָה שֶׁמְּגַבֶּה אֶת הַמַּאֲגָר כָּל לַיְלָה.",
             exampleNative = "Я написал סְקְרִיפְט אוֹטוֹמַצְיָה — бэкапит базу каждой ночью.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174801L, 174802L, 174803L, 174805L)),
         WordEntity(
             id = 174805, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_devops", transliteration = "artefakt bniya",
@@ -98,8 +94,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Финальный файл из стадии компиляции — готов уехать на боевое окружение.",
             example = "אַרְטֵפַקְט בְּנִיָּה נִשְׁמָר בָּרֶגִיסְטְרִי הַפְּרָטִי שֶׁל הַחֶבְרָה.",
             exampleNative = "אַרְטֵפַקְט בְּנִיָּה хранится в приватном реестре фирмы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174801L, 174802L, 174803L, 174804L)),
 
         // ── hightech_monitoring (5) — наблюдение за продакшеном ──
         WordEntity(
@@ -110,8 +105,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Автоматическое сообщение команде — когда что-то в системе вышло за нормальный порог.",
             example = "אַלֶרְט הִתְקַבֵּל בַּסְּלֶק בִּשְׁתַּיִם בַּלַּיְלָה עַל זִכָּרוֹן מָלֵא.",
             exampleNative = "אַלֶרְט пришёл в Slack в два ночи — про забитую память.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174807L, 174808L, 174809L, 174810L)),
         WordEntity(
             id = 174807, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_monitoring", transliteration = "dashbord",
@@ -120,8 +114,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Один экран — собирает живые графики и числа о состоянии системы прямо сейчас.",
             example = "דַּשְׁבּוֹרְד שֶׁל גְּרָפָנָה הֶרְאָה זִנּוּק חַד בְּלָאטֶנְסִי.",
             exampleNative = "דַּשְׁבּוֹרְד в Grafana показал резкий скачок latency.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174806L, 174808L, 174809L, 174810L)),
         WordEntity(
             id = 174808, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_monitoring", transliteration = "heltschek",
@@ -130,8 +123,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Короткий регулярный запрос на сервер — жив ли он и отвечает ли как надо.",
             example = "הֶלְת׳צֶ׳ק נִכְשַׁל שָׁלוֹשׁ פְּעָמִים בָּרְצִיפוּת וְהַשֶּׁרֶת אֻתְחַל אוֹטוֹמָטִית.",
             exampleNative = "הֶלְת׳צֶ׳ק упал три раза подряд — сервер автоматически перезапустился.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174806L, 174807L, 174809L, 174810L)),
         WordEntity(
             id = 174809, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_monitoring", transliteration = "agregatsyat logim",
@@ -140,8 +132,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Объединение строк со многих серверов в одно место — где удобно искать и фильтровать.",
             example = "אַגְרֵגַצְיַת לוֹגִים בְּאֵלַסְטִיק הִקְפִּיצָה אֶת מְהִירוּת הַחֲקִירָה שֶׁל בָּגִים.",
             exampleNative = "אַגְרֵגַצְיַת לוֹגִים в Elastic ускорила расследование багов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174806L, 174807L, 174808L, 174810L)),
         WordEntity(
             id = 174810, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_monitoring", transliteration = "takala biprodakshen",
@@ -150,8 +141,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Серьёзное событие на боевом окружении — дежурная команда чинит немедленно.",
             example = "תַּקָּלָה בִּפְרוֹדַקְשֶׁן הִשְׁבִּיתָה אֶת הַתַּשְׁלוּמִים לְשָׁעָה שְׁלֵמָה.",
             exampleNative = "תַּקָּלָה בִּפְרוֹדַקְשֶׁן положила платежи на целый час.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174806L, 174807L, 174808L, 174809L)),
 
         // ── hightech_metrics (5) — продуктовые метрики и цели ──
         WordEntity(
@@ -162,8 +152,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Постоянный числовой индикатор — насколько отдел двигает свою главную цель.",
             example = "קֵיי-פִּי-אַיי שֶׁל הַצֶּוֶות הָיָה לְהוֹרִיד אֶת זְמַן הַתְּגוּבָה.",
             exampleNative = "Командный KPI был — снизить время ответа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174812L, 174813L, 174814L, 174815L)),
         WordEntity(
             id = 174812, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_metrics", transliteration = "o-kei-ar",
@@ -172,8 +161,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Квартальная рамка: амбициозная цель плюс несколько измеримых результатов под неё.",
             example = "אוֹ-קֵיי-אַר שֶׁל הָרֹבַע נִקְבְּעוּ מוּל סְמַנְכַּ״ל הַמּוּצָר.",
             exampleNative = "אוֹ-קֵיי-אַר на квартал согласовали с VP Product.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174811L, 174813L, 174814L, 174815L)),
         WordEntity(
             id = 174813, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_metrics", transliteration = "shimur mishtamshim",
@@ -182,8 +170,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Доля людей, которые продолжают заходить в продукт через неделю или месяц.",
             example = "שִׁמּוּר מִשְׁתַּמְּשִׁים יָרַד מִשְּׁלוֹשִׁים אָחוּז לְעֶשְׂרִים אַחֲרֵי הָעִדְכּוּן.",
             exampleNative = "שִׁמּוּר מִשְׁתַּמְּשִׁים упал с тридцати процентов до двадцати после апдейта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174811L, 174812L, 174814L, 174815L)),
         WordEntity(
             id = 174814, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_metrics", transliteration = "netishat mishtamshim",
@@ -192,8 +179,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Доля клиентов, переставших платить или заходить за определённый период.",
             example = "נְטִישַׁת מִשְׁתַּמְּשִׁים גָּבוֹהַּ סִמֵּן לְבַעֲיָה בִּשְׁלַב הָאוֹנְבּוֹרְדִּינְג.",
             exampleNative = "Высокий נְטִישַׁת מִשְׁתַּמְּשִׁים указал на проблему в онбординге.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174811L, 174812L, 174813L, 174815L)),
         WordEntity(
             id = 174815, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_metrics", transliteration = "en-pi-es",
@@ -202,8 +188,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Балл от минус ста до плюс ста — насколько клиенты рекомендуют продукт другим.",
             example = "אֶן-פִּי-אֵס עָלָה לְאַרְבָּעִים אַחֲרֵי שֶׁשִּׁפַּרְנוּ אֶת הַתְּמִיכָה.",
             exampleNative = "אֶן-פִּי-אֵס вырос до сорока после того как мы улучшили поддержку.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174811L, 174812L, 174813L, 174814L)),
 
         // ── hightech_product (5) — продуктовая работа и эксперименты ──
         WordEntity(
@@ -224,8 +209,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Внутренний человек в бизнесе, у которого прямой интерес в успехе разработки.",
             example = "כָּל סְטֵייקְהוֹלְדֶר אִשֵּׁר אֶת הַמִּפְרָט לִפְנֵי תְּחִילַת הַסְּפְּרִינְט.",
             exampleNative = "Каждый סְטֵייקְהוֹלְדֶר утвердил спецификацию до старта спринта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174816L, 174818L, 174819L, 174820L)),
         WordEntity(
             id = 174818, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_product", transliteration = "geyting",
@@ -234,8 +218,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Временное закрытие новой возможности — только для маленькой группы пользователей на пробу.",
             example = "גֵּייטִינְג שֶׁל הַיְּכֹלֶת הַחֲדָשָׁה נִפְתַּח רַק לְמִיכוּן וְצָפוֹן.",
             exampleNative = "גֵּייטִינְג новой функции открыли только для центра и севера.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174816L, 174817L, 174819L, 174820L)),
         WordEntity(
             id = 174819, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_product", transliteration = "ei-bi test",
@@ -244,8 +227,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Сравнение двух версий экрана — какая даёт лучший результат.",
             example = "אֵיי-בִּי טֶסְט עַל כַּפְתּוֹר הָרִשּׁוּם הִרְאָה הֶבְדֵּל שֶׁל שְׁמוֹנָה אָחוּז.",
             exampleNative = "אֵיי-בִּי טֶסְט на кнопке регистрации показал разницу в восемь процентов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174816L, 174817L, 174818L, 174820L)),
         WordEntity(
             id = 174820, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_product", transliteration = "ficher flag",
@@ -254,8 +236,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Переключатель в коде — включает или выключает функции без выпуска новой версии.",
             example = "פִיצֶ׳ר פְלַג אִפְשֵׁר לָנוּ לְהַחֲזִיר אֶת הַשִּׁנּוּי תּוֹךְ דַּקָּה.",
             exampleNative = "פִיצֶ׳ר פְלַג позволил откатить изменение за минуту.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174816L, 174817L, 174818L, 174819L)),
 
         // ── hightech_security (5) — безопасность и аудит ──
         WordEntity(
@@ -266,8 +247,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Целевая проверка: внешний человек ломает систему, чтобы найти слабые места.",
             example = "פֶּנְ-טֶסְט שְׁנָתִי גִּלָּה שָׁלוֹשׁ חוּלְשׁוֹת קְרִיטִיּוֹת בַּסֶּרְוֵוס.",
             exampleNative = "Ежегодный פֶּנְ-טֶסְט выявил три критические дыры в сервисе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174822L, 174823L, 174824L, 174825L)),
         WordEntity(
             id = 174822, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_security", transliteration = "pirtsat avtakha",
@@ -276,8 +256,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Дыра в коде или настройках — даёт постороннему сделать запрещённое действие.",
             example = "פִּרְצַת אַבְטָחָה בַּסִּפְרִיָּה הַחִיצוֹנִית גָּרְמָה לְפַאצְ׳ דָּחוּף.",
             exampleNative = "פִּרְצַת אַבְטָחָה во внешней библиотеке вызвала срочный патч.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174821L, 174823L, 174824L, 174825L)),
         WordEntity(
             id = 174823, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_security", transliteration = "iyumey sayber",
@@ -286,8 +265,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Сетевые риски — попытки взлома, кражи данных или нарушения работы системы.",
             example = "צֶוֶות הָאַבְטָחָה מְנַטֵּר אִיּוּמֵי סַייבֶּר בִּזְמַן אֱמֶת מִכָּל הָאֲזוֹרִים.",
             exampleNative = "Команда безопасности отслеживает אִיּוּמֵי סַייבֶּר в реальном времени со всех регионов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174821L, 174822L, 174824L, 174825L)),
         WordEntity(
             id = 174824, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_security", transliteration = "mivdak avtakha",
@@ -296,8 +274,7 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Официальный обзор внешним проверяющим — кода и процессов по заданному стандарту.",
             example = "מִבְדַּק אַבְטָחָה לִקְרַאת הָעֲלָאָה לַעֲנָן נִמְשַׁךְ שִׁשָּׁה שָׁבוּעוֹת.",
             exampleNative = "מִבְדַּק אַבְטָחָה перед переездом в облако длился шесть недель.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174821L, 174822L, 174823L, 174825L)),
         WordEntity(
             id = 174825, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_security", transliteration = "ji-di-pi-ar",
@@ -306,7 +283,6 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Европейский регламент — обязывает фирмы защищать персональные данные граждан континента.",
             example = "גִ׳י-דִּי-פִּי-אַר חִיֵּב אוֹתָנוּ לְהוֹסִיף בַּקָּשַׁת הַסְכָּמָה לְלִקּוּט מֵידָע.",
             exampleNative = "גִ׳י-דִּי-פִּי-אַר обязал нас добавить запрос согласия на сбор данных.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174821L, 174822L, 174823L, 174824L)),
     )
 }

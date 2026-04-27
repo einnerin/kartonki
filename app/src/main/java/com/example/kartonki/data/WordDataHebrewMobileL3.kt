@@ -57,8 +57,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Операционная система Apple для её мобильных устройств — телефонов и планшетов.",
             example = "אַיי-אוֹ-אֶס מְקַבֵּל עֲדְכּוּן גָּדוֹל פַּעַם בְּשָׁנָה בַּסְּתָו.",
             exampleNative = "אַיי-אוֹ-אֶס получает большое обновление раз в год — осенью.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176902L, 176903L, 176904L, 176905L)),
         WordEntity(
             id = 176902, setId = 1769, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_platforms", transliteration = "android",
@@ -67,8 +66,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Открытая ОС от Google для мобильных устройств разных производителей.",
             example = "אַנְדְרוֹייד מְחַזִּיק יוֹתֵר מִשִּׁבְעִים אָחוּז מֵהַשּׁוּק הָעוֹלָמִי.",
             exampleNative = "אַנְדְרוֹייד держит больше семидесяти процентов мирового рынка.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176901L, 176903L, 176904L, 176905L)),
         WordEntity(
             id = 176903, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_platforms", transliteration = "aplikatsya nativit",
@@ -77,8 +75,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Программа на родном языке платформы — для максимально быстрой работы.",
             example = "אַפְּלִיקַצְיָה נֵטִיבִית רָצָה חָלָק יוֹתֵר מִפִּתְרוֹן חוֹצֵה פְּלַטְפוֹרְמוֹת.",
             exampleNative = "אַפְּלִיקַצְיָה נֵטִיבִית бежит плавнее кросс-платформенного решения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176901L, 176902L, 176904L, 176905L)),
         WordEntity(
             id = 176904, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_platforms", transliteration = "aplikatsya hibridit",
@@ -87,8 +84,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Программа, оборачивающая веб-код в обёртку мобильного устройства.",
             example = "אַפְּלִיקַצְיָה הִיבְּרִידִית זוֹלָה לְפִתּוּחַ אֲבָל סוֹבֶלֶת בִּבִיצוּעִים כְּבֵדִים.",
             exampleNative = "אַפְּלִיקַצְיָה הִיבְּרִידִית дешёвая в разработке, но страдает на тяжёлых задачах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176901L, 176902L, 176903L, 176905L)),
         WordEntity(
             id = 176905, setId = 1769, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_platforms", transliteration = "kros-platforma",
@@ -97,8 +93,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Подход, при котором один код работает на двух разных операционных системах.",
             example = "פְלָטֶר וּ-רֵיאַקְט נֵייטִיב הֵם כֵּלֵי קְרוֹס-פְּלַטְפוֹרְמָה פּוֹפּוּלָרִיִּים.",
             exampleNative = "Flutter и React Native — популярные инструменты קְרוֹס-פְּלַטְפוֹרְמָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176901L, 176902L, 176903L, 176904L)),
 
         // ── mobile_ios (5) — iOS-стек ──
         WordEntity(
@@ -109,8 +104,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Современный язык программирования Apple — безопасный, читаемый и быстрый.",
             example = "סְוִויפְט הֶחֱלִיף אֶת אוֹבְּגֶ׳קְטִיב סִי כִּשְׂפַת בְּרִירַת הַמַּחְדָּל.",
             exampleNative = "סְוִויפְט сменил Objective-C как язык по умолчанию.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176907L, 176908L, 176909L, 176910L)),
         WordEntity(
             id = 176907, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_ios", transliteration = "swift-yu-ay",
@@ -119,8 +113,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Декларативная библиотека для построения экранов в несколько строк кода.",
             example = "סְוִויפְט-יוּ-אַיי קִצֵּר אֶת זְמַן הַפִּתּוּחַ בִּפְרוֹיֶקְטִים חֲדָשִׁים.",
             exampleNative = "סְוִויפְט-יוּ-אַיי сократил время разработки в новых проектах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176906L, 176908L, 176909L, 176910L)),
         WordEntity(
             id = 176908, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_ios", transliteration = "yu-ay-kit",
@@ -129,8 +122,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Старая интерфейсная библиотека Apple — основа всех старых iOS-приложений.",
             example = "יוּ-אַיי-קִיט עֲדַיִן נִדְרָשׁ לִתְמִיכָה בְּמַכְשִׁירִים יוֹתֵר יְשָׁנִים.",
             exampleNative = "יוּ-אַיי-קִיט всё ещё нужен для поддержки более старых устройств.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176906L, 176907L, 176909L, 176910L)),
         WordEntity(
             id = 176909, setId = 1769, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_ios", transliteration = "ekskod",
@@ -139,8 +131,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Официальная среда разработки от Apple — в ней пишут, запускают и публикуют.",
             example = "אֶקְסְקוֹד דּוֹרֵשׁ הַרְבֵּה זִכָּרוֹן וְעוֹבֵד רַק עַל מַק.",
             exampleNative = "אֶקְסְקוֹד требует много памяти и работает только на Mac.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176906L, 176907L, 176908L, 176910L)),
         WordEntity(
             id = 176910, setId = 1769, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_ios", transliteration = "ap stor",
@@ -149,8 +140,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Официальный магазин Apple для скачивания программ на iPhone и iPad.",
             example = "הָאִישּׁוּר שֶׁל אַפּ סְטוֹר לִפְעָמִים לוֹקֵחַ יוֹתֵר מִשָּׁבוּעַ.",
             exampleNative = "Одобрение в אַפּ סְטוֹר иногда занимает больше недели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176906L, 176907L, 176908L, 176909L, 176915L)),
 
         // ── mobile_android (5) — Android-стек ──
         WordEntity(
@@ -161,8 +151,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Современный язык программирования — официальный язык Google для разработки Android.",
             example = "קוֹטְלִין דָּחַק אֶת גָּ'אוָוה כְּשְׂפָה רָאשִׁית בִּפְרוֹיֶקְטִים חֲדָשִׁים.",
             exampleNative = "קוֹטְלִין вытеснил Java как основной язык в новых проектах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176912L, 176913L, 176914L, 176915L)),
         WordEntity(
             id = 176912, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_android", transliteration = "jetpak kompoz",
@@ -171,8 +160,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Новая библиотека для построения экранов декларативно — похожа на SwiftUI.",
             example = "גְ׳טפַּק קוֹמְפּוֹז קִצֵּר אֶת הַקּוֹד פִּי שְׁלוֹשָׁה מוּל הַגִּישָׁה הַיְשָׁנָה.",
             exampleNative = "גְ׳טפַּק קוֹמְפּוֹז сократил код втрое по сравнению со старым подходом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176911L, 176913L, 176914L, 176915L)),
         WordEntity(
             id = 176913, setId = 1769, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_android", transliteration = "android studyo",
@@ -191,8 +179,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Сборочный инструмент — соединяет зависимости и собирает код в один установочный файл.",
             example = "הָרָצָה הָרִאשׁוֹנָה שֶׁל גְרֵייד׳ל לְאַחַר נִקּוּי מַטְמוֹן לוֹקַחַת הַרְבֵּה זְמַן.",
             exampleNative = "Первый запуск גְרֵייד׳ל после очистки кэша занимает много времени.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176911L, 176912L, 176913L, 176915L)),
         WordEntity(
             id = 176915, setId = 1769, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_android", transliteration = "pley stor",
@@ -201,8 +188,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Официальный магазин Google для скачивания программ на устройства Android.",
             example = "הִשְׁקַת הַתּוֹכְנָה בִּ-פְּלֵיי סְטוֹר אִישְּׁרָה אוֹתָהּ בְּתוֹךְ יוֹמַיִם.",
             exampleNative = "Запуск программы в פְּלֵיי סְטוֹר одобрили в течение двух дней.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176910L, 176911L, 176912L, 176913L, 176914L)),
 
         // ── mobile_ui (5) — мобильный интерфейс ──
         WordEntity(
@@ -223,8 +209,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Система переходов между экранами — как пользователь попадает со страницы на страницу.",
             example = "נָווִיגַצְיָה מְבֻלְבֶּלֶת גּוֹרֶמֶת לְמִשְׁתַּמְּשִׁים לְהָסִיר אֶת הַתּוֹכְנָה.",
             exampleNative = "Запутанная נָווִיגַצְיָה заставляет пользователей удалять программу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176916L, 176918L, 176919L, 176920L)),
         WordEntity(
             id = 176918, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_ui", transliteration = "animatsya",
@@ -233,8 +218,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Плавное движение элементов на экране — помогает понять, что произошло.",
             example = "אַנִימַצְיָה קְצָרָה שֶׁל מַעֲבָר עוֹשָׂה אֶת הַתּוֹכְנָה לְהַרְגִּישׁ אֵיכוּתִית.",
             exampleNative = "Короткая אַנִימַצְיָה перехода делает программу качественной на ощупь.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176916L, 176917L, 176919L, 176920L)),
         WordEntity(
             id = 176919, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_ui", transliteration = "negishut",
@@ -243,8 +227,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Поддержка пользователей с ограниченными возможностями — экранные читалки, размер шрифта и т.д.",
             example = "אַפֵּל מַחְמִירָה אֶת הַדְּרִישׁוֹת שֶׁל נְגִישׁוּת בְּכָל גִּרְסָה חֲדָשָׁה.",
             exampleNative = "Apple ужесточает требования к נְגִישׁוּת в каждой новой версии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176916L, 176917L, 176918L, 176920L)),
         WordEntity(
             id = 176920, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_ui", transliteration = "ar-ti-el",
@@ -253,8 +236,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Направление чтения справа налево — обязательно для иврита и арабского.",
             example = "תְּמִיכַת אַר-טִי-אֵל מְלֵאָה דּוֹרֶשֶׁת בְּדִיקַת כָּל מָסָךְ בְּעִבְרִית.",
             exampleNative = "Полная поддержка אַר-טִי-אֵל требует проверки каждого экрана на иврите.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176916L, 176917L, 176918L, 176919L)),
 
         // ── mobile_lifecycle (5) — жизненный цикл приложения ──
         WordEntity(
@@ -265,8 +247,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Положение, когда программа работает видимой на экране и принимает ввод от пользователя.",
             example = "בְּמַצָּב פָּעִיל הָאַפְּלִיקַצְיָה מְקַבֶּלֶת אֶת מְלֹא מַשְׁאַבֵּי הַמַּכְשִׁיר.",
             exampleNative = "В מַצָּב פָּעִיל приложение получает все ресурсы устройства.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176922L, 176923L, 176924L, 176925L)),
         WordEntity(
             id = 176922, setId = 1769, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_lifecycle", transliteration = "reka",
@@ -275,8 +256,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Состояние, когда программа работает, не показываясь пользователю на экране.",
             example = "מַעֲרֶכֶת הַהַפְעָלָה מַגְבִּילָה תּוֹכְנוֹת בְּרֶקַע כְּדֵי לַחֲסוֹךְ סוֹלְלָה.",
             exampleNative = "ОС ограничивает программы в רֶקַע, чтобы экономить батарею.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176921L, 176923L, 176924L, 176925L)),
         WordEntity(
             id = 176923, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_lifecycle", transliteration = "makhzor khayey aktiviti",
@@ -285,8 +265,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Цепочка стадий, которую экран в Android проходит — от создания до закрытия.",
             example = "טָעוּת בְּמַחֲזוֹר חַיֵּי אַקְטִיבִיטִי גּוֹרֶמֶת לִדְלִיפַת זִכָּרוֹן.",
             exampleNative = "Ошибка в מַחֲזוֹר חַיֵּי אַקְטִיבִיטִי приводит к утечке памяти.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176921L, 176922L, 176924L, 176925L)),
         WordEntity(
             id = 176924, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_lifecycle", transliteration = "vyu-model",
@@ -295,8 +274,7 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Компонент, держащий данные экрана и переживающий поворот устройства и смену конфигурации.",
             example = "וְיוּ-מוֹדֶל פּוֹתֵר אֶת בְּעָיַית אִבּוּד הַנְּתוּנִים בְּסִיבּוּב מַסָךְ.",
             exampleNative = "וְיוּ-מוֹדֶל решает проблему потери данных при повороте экрана.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176921L, 176922L, 176923L, 176925L)),
         WordEntity(
             id = 176925, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "mobile_lifecycle", transliteration = "shikhzur matsav",
@@ -305,7 +283,6 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Возврат экрана туда, где он был, до того как система закрыла программу.",
             example = "שִׁחְזוּר מַצָּב טוֹב נוֹתֵן הַרְגָּשָׁה שֶׁהַתּוֹכְנָה לֹא נֶעֶצְרָה כְּלָל.",
             exampleNative = "Хороший שִׁחְזוּר מַצָּב создаёт ощущение, что программа вообще не останавливалась.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176921L, 176922L, 176923L, 176924L)),
     )
 }

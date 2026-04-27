@@ -70,8 +70,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Самая первая инвестиция небольшой суммы — на доказательство идеи и прототип.",
             example = "סָגַרְנוּ סִיד שֶׁל מִילְיוֹן וָחֵצִי דּוֹלָר מֵאַרְבָּעָה אֶנְגֵ'לִים.",
             exampleNative = "Мы закрыли סִיד на полтора миллиона долларов от четырёх ангелов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175902L, 175903L, 175904L, 175905L)),
         WordEntity(
             id = 175902, setId = 1759, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_rounds", transliteration = "seyris ey",
@@ -80,8 +79,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Серьёзный сбор — когда уже есть рабочий продукт и первые платящие клиенты.",
             example = "סֵירִיס אֵיי הָיָה עֲשָׂרָה מִילְיוֹן דּוֹלָר בְּהוֹבָלַת קֶרֶן אָמֵרִיקָאִית.",
             exampleNative = "סֵירִיס אֵיי был на десять миллионов долларов под лидом американского фонда.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175901L, 175903L, 175904L, 175905L)),
         WordEntity(
             id = 175903, setId = 1759, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_rounds", transliteration = "mimun gesher",
@@ -90,8 +88,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Короткое вливание денег между двумя крупными этапами — чтобы фирма дотянула.",
             example = "לָקַחְנוּ מִימּוּן גֶּשֶׁר שֶׁל שְׁלוֹשָׁה חֳדָשִׁים לִפְנֵי הַסְּגִירָה הַסּוֹפִית.",
             exampleNative = "Мы взяли מִימּוּן גֶּשֶׁר на три месяца до окончательного закрытия раунда.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175901L, 175902L, 175904L, 175905L)),
         WordEntity(
             id = 175904, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_rounds", transliteration = "shlav tsmikha",
@@ -100,8 +97,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Период быстрой экспансии в новые рынки — после того как продукт нашёл свою аудиторию.",
             example = "בִּשְׁלַב צְמִיחָה שָׂכַרְנוּ אַרְבָּעִים אַנְשֵׁי מְכִירוֹת בְּחֵצִי שָׁנָה.",
             exampleNative = "В שְׁלַב צְמִיחָה мы наняли сорок продажников за полгода.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175901L, 175902L, 175903L, 175905L)),
         WordEntity(
             id = 175905, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_rounds", transliteration = "mezanin",
@@ -110,8 +106,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Смесь долга и акций перед выходом на биржу — высокая ставка, но гибкие условия.",
             example = "מֵזָנִין הִתְאִים לָנוּ כִּי לֹא רָצִינוּ לִדְלֹל אֶת הַמַּיְיסְדִים שׁוּב.",
             exampleNative = "מֵזָנִין нам подошёл — мы не хотели снова разводнять основателей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175901L, 175902L, 175903L, 175904L)),
 
         // ── startup_investors (5) — типы инвесторов ──
         WordEntity(
@@ -122,8 +117,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Богатый частник, вкладывающий свои деньги на самых ранних этапах предпринимательства.",
             example = "אֶנְגֵ'ל וָתִיק נָתַן לָנוּ צֵ'ק שֶׁל מָאתַיִם אֶלֶף שֶׁקֶל אַחֲרֵי שִׂיחָה אַחַת.",
             exampleNative = "Опытный אֶנְגֵ'ל выдал нам чек на двести тысяч шекелей после одного разговора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175907L, 175908L, 175909L, 175910L)),
         WordEntity(
             id = 175907, setId = 1759, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_investors", transliteration = "keren hon sikun",
@@ -132,8 +126,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Профессиональная контора — собирает деньги у крупных вкладчиков и распределяет на десятки фирм.",
             example = "קֶרֶן הוֹן סִיכּוּן יִשְׂרְאֵלִית הוֹבִילָה אֶת הַסִּבּוּב וְהֵבִיאָה שׁוּתָפִים נוֹסָפִים.",
             exampleNative = "Израильская קֶרֶן הוֹן סִיכּוּן возглавила раунд и привела ещё партнёров.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175906L, 175908L, 175909L, 175910L)),
         WordEntity(
             id = 175908, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_investors", transliteration = "korporeyt vi-si",
@@ -142,8 +135,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Инвест-рукав крупной корпорации — ищет стратегическую синергию с молодой фирмой.",
             example = "קוֹרְפּוֹרֵייט וִי-סִי שֶׁל אִינְטֵל הִשְׁקִיעַ בָּנוּ בִּסְכוּם נָאֶה.",
             exampleNative = "קוֹרְפּוֹרֵייט וִי-סִי от Intel вложил в нас приличную сумму.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175906L, 175907L, 175909L, 175910L)),
         WordEntity(
             id = 175909, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_investors", transliteration = "femili ofis",
@@ -152,8 +144,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Частный офис, ведущий капитал одной семьи — обычно на сотни миллионов.",
             example = "פֶמִילִי אוֹפִיס מִלּוֹנְדּוֹן הִשְׁתַּתֵּף בַּסִּבּוּב כְּמַשְׁקִיעַ אִסְטְרָטֶגִי שָׁקֵט.",
             exampleNative = "פֶמִילִי אוֹפִיס из Лондона участвовал в раунде как тихий стратегический инвестор.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175906L, 175907L, 175908L, 175910L)),
         WordEntity(
             id = 175910, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_investors", transliteration = "el-pi",
@@ -162,8 +153,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Пассивный вкладчик в фонд — кладёт деньги, но не решает по конкретным сделкам.",
             example = "אֵל-פִּי גָּדוֹל יָצָא מֵהַקֶּרֶן וְכָל הַתִּכְנוּן הָאֱסְטְרָטֶגִי הִשְׁתַּנָּה.",
             exampleNative = "Крупный אֵל-פִּי вышел из фонда — и весь стратегический план поменялся.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175906L, 175907L, 175908L, 175909L)),
 
         // ── startup_programs (5) — программы поддержки ──
         WordEntity(
@@ -174,8 +164,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Трёхмесячная программа — помогает основателям ускорить рост в обмен на маленький процент.",
             example = "הִתְקַבַּלְנוּ לְאַקְסֶלֵרָטוֹר יוּקְרָתִי בְּסַן פְרַנְצִיסְקוֹ אַחֲרֵי שִׁבְעָה רָאֲיוֹנוֹת.",
             exampleNative = "Нас взяли в престижный אַקְסֶלֵרָטוֹר в Сан-Франциско после семи интервью.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175912L, 175913L, 175914L, 175915L)),
         WordEntity(
             id = 175912, setId = 1759, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_programs", transliteration = "studyo startap",
@@ -194,8 +183,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Финальное событие программы — каждый поток показывает живой продукт большому залу инвесторов.",
             example = "בַּדֵּמוֹ דֵּיי הָיוּ מָאתַיִם מַשְׁקִיעִים וְהוֹתִירָה אוֹתָנוּ בְּלִי קוֹל מֵרֹב הַתְלָהֲבוּת.",
             exampleNative = "На דֵּמוֹ דֵּיי было двести инвесторов — мы охрипли от восторга.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175911L, 175912L, 175914L, 175915L)),
         WordEntity(
             id = 175914, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_programs", transliteration = "takharut startapim",
@@ -214,8 +202,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Денежная сумма от государства — без требования возврата и без отдачи акций.",
             example = "קִבַּלְנוּ מַעֲנָק מֶחְקָר מֵרָשׁוּת הַחַדְשָׁנוּת לִפְנֵי הַסִּבּוּב הָרִאשׁוֹן.",
             exampleNative = "Мы получили מַעֲנָק מֶחְקָר от Управления инноваций до первого раунда.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175911L, 175912L, 175913L, 175914L)),
 
         // ── startup_deal (5) — юридические термины сделки ──
         WordEntity(
@@ -226,8 +213,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Короткая юридически необязательная бумага — резюмирует ключевые пункты сделки до контракта.",
             example = "הַמַּשְׁקִיעַ הָרָאשִׁי שָׁלַח דַּף תְּנָאִים בְּעֶרֶב חַג הַפֶּסַח.",
             exampleNative = "Главный инвестор прислал דַּף תְּנָאִים в канун Песаха.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175917L, 175918L, 175919L, 175920L)),
         WordEntity(
             id = 175917, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_deal", transliteration = "seif",
@@ -236,8 +222,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Простой инструмент сбора — инвестор даёт деньги сейчас, акции получает только в следующем раунде.",
             example = "שִׁבְעָה אֶנְגֵ'לִים נִכְנְסוּ דֶּרֶךְ סֵיף בְּלִי שֶׁקִּבַּעְנוּ עֲדַיִן הַעֲרָכָה.",
             exampleNative = "Семь ангелов зашли через סֵיף — оценку мы ещё не зафиксировали.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175916L, 175918L, 175919L, 175920L)),
         WordEntity(
             id = 175918, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_deal", transliteration = "shtar hamara",
@@ -246,8 +231,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Заём, превращающийся автоматом в акции на следующей крупной сделке — по согласованной скидке.",
             example = "שְׁטַר הַמָרָה אִפְשֵׁר לָנוּ לִדְחוֹת אֶת וִיכּוּחַ הַהַעֲרָכָה לְעוֹד שָׁנָה.",
             exampleNative = "שְׁטַר הַמָרָה позволил нам отложить спор об оценке ещё на год.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175916L, 175917L, 175919L, 175920L)),
         WordEntity(
             id = 175919, setId = 1759, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_deal", transliteration = "tikrat shovi",
@@ -256,8 +240,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Заранее заданный максимум — защищает раннего инвестора от слишком высокой оценки.",
             example = "תִּקְרַת שׁוֹוִי שֶׁל חֲמִשָּׁה מִילְיוֹנִים נִשְׁמְעָה לָנוּ הוֹגֶנֶת בְּשִׁבְעָה בָּעֶרֶב.",
             exampleNative = "תִּקְרַת שׁוֹוִי в пять миллионов казалась нам справедливой в семь вечера.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175916L, 175917L, 175918L, 175920L)),
         WordEntity(
             id = 175920, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_deal", transliteration = "hidul'dul mnayot",
@@ -266,8 +249,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Процесс — доля старых владельцев падает, потому что выпускают бумаги новому вкладчику.",
             example = "הַמַּיְיסְדִים סָבְלוּ מֵהִדּוּלְדּוּל מְנָיוֹת שֶׁל חֲמֵשׁ עֶשְׂרֵה אָחוּז.",
             exampleNative = "Основатели пострадали от הִדּוּלְדּוּל מְנָיוֹת на пятнадцать процентов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175916L, 175917L, 175918L, 175919L)),
 
         // ── startup_pitch (5) — питч и due diligence ──
         WordEntity(
@@ -278,8 +260,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Короткая презентация в десяток слайдов — рассказывает историю стартапа потенциальному инвестору.",
             example = "עָבַדְנוּ עַל פִּיטְץ' דֶּק שָׁבוּעַ שָׁלֵם וְהֶחֱלַפְנוּ אוֹתוֹ אַרְבַּע פְּעָמִים.",
             exampleNative = "Мы пилили פִּיטְץ' דֶּק целую неделю и переделывали четыре раза.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175922L, 175923L, 175924L, 175925L)),
         WordEntity(
             id = 175922, setId = 1759, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_pitch", transliteration = "matsegert mashkim",
@@ -288,8 +269,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Более развёрнутая версия бизнес-истории — для долгой встречи с финансистами.",
             example = "מַצֶּגֶת מַשְׁקִיעִים בִּשְׁלוֹשִׁים שְׁקוּפִיּוֹת עָנְתָה עַל כָּל הַשְּׁאֵלוֹת מֵרֹאשׁ.",
             exampleNative = "מַצֶּגֶת מַשְׁקִיעִים на тридцать слайдов закрыла все вопросы заранее.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175921L, 175923L, 175924L, 175925L)),
         WordEntity(
             id = 175923, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_pitch", transliteration = "ne'um ma'alit",
@@ -298,8 +278,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Сжатое описание на тридцать секунд — что делает фирма, без чисел.",
             example = "פָּגַשְׁתִּי שֻׁתָּף שֶׁל הַקֶּרֶן בִּקְפִיטֶרְיָה וְהִסְפַּקְתִּי לִדְחֹף נְאוּם מַעֲלִית.",
             exampleNative = "Я встретил партнёра фонда в кафетерии — успел втиснуть נְאוּם מַעֲלִית.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175921L, 175922L, 175924L, 175925L)),
         WordEntity(
             id = 175924, setId = 1759, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "startup_pitch", transliteration = "she'elot bdikat ne'ot",
@@ -308,8 +287,7 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Подробный список вопросов от инвестора — до подписания и перевода денег.",
             example = "שְׁאֵלוֹת בְּדִיקַת נֶאוֹת הִגִּיעוּ בְּקֹבֶץ אֶקְסֵל עִם מָאתַיִם פְּרִיטִים.",
             exampleNative = "שְׁאֵלוֹת בְּדִיקַת נֶאוֹת пришли в Excel-файле на двести пунктов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175921L, 175922L, 175923L, 175925L)),
         WordEntity(
             id = 175925, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "startup_pitch", transliteration = "shkufit trakshen",
@@ -318,7 +296,6 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Ключевая страница презентации — графики быстрого роста и возврата клиентов.",
             example = "שְׁקוּפִית טְרַקְשֶׁן עִם קַו עוֹלֶה חַד שִׁכְנְעָה אֶת הַמַּשְׁקִיעַ תּוֹךְ דַּקָּה.",
             exampleNative = "שְׁקוּפִית טְרַקְשֶׁן с резко растущей кривой убедила инвестора за минуту.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175921L, 175922L, 175923L, 175924L)),
     )
 }

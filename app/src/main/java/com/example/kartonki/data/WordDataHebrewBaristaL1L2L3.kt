@@ -117,7 +117,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Мягкий горячий напиток с обилием молока и каплей крепкого сверху.",
             example = "אִשְׁתִּי בּוֹחֶרֶת לָאטֶה גָּדוֹל בְּלִי סֻכָּר.",
             exampleNative = "Жена выбирает большое לָאטֶה без сахара.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173901L, 173902L, 173903L, 173905L)),
         WordEntity(
             id = 173905, setId = 1739, languagePair = "he-ru", rarity = "COMMON",
@@ -139,7 +138,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Горячий напиток из настоя сухих листьев в кипятке.",
             example = "אִמָּא רוֹצָה תֵּה יָרֹק עִם נַעֲנָע.",
             exampleNative = "Мама хочет тёмный תֵּה с мятой.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173907L, 173908L, 173909L, 173910L)),
         WordEntity(
             id = 173907, setId = 1739, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -159,7 +157,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Густой праздничный напиток из настоящего шоколада, растворённого в молоке.",
             example = "בַּחֲנֻכָּה הִכַנּוּ שׁוֹקוֹלָד חַם לְכָל הַמִּשְׁפָּחָה.",
             exampleNative = "В Хануку мы готовили שׁוֹקוֹלָד חַם всей семье.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173906L, 173907L, 173909L, 173910L)),
         WordEntity(
             id = 173909, setId = 1739, languagePair = "he-ru", rarity = "COMMON",
@@ -169,7 +166,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Сладкая жидкость, выжимаемая из свежих фруктов или овощей.",
             example = "סִחַטְנוּ מִיץ תַּפּוּזִים לְלַקּוֹחוֹת בַּבֹּקֶר.",
             exampleNative = "Мы выдавили апельсиновый מִיץ для гостей утром.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173906L, 173907L, 173908L, 173910L)),
         WordEntity(
             id = 173910, setId = 1739, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -179,7 +175,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Холодный кисло-сладкий напиток из лимона, сахара и студёной воды.",
             example = "בְּחֹם הַקַּיִץ אֲנִי מַזְמִין לִימוֹנָדָה כָּל יוֹם.",
             exampleNative = "В летнюю жару я заказываю לִימוֹנָדָה каждый день.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173906L, 173907L, 173908L, 173909L)),
 
         // ── barista_food (5) — еда в кофейне ──
@@ -191,7 +186,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Французская выпечка-полумесяц из жирного слоёного теста.",
             example = "הוּא טָבַל קְרוּאָסוֹן בְּכוֹס לִפְנֵי הָעֲבוֹדָה.",
             exampleNative = "Он окунул קְרוּאָסוֹן в чашку перед работой.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173912L, 173913L, 173914L, 173915L)),
         WordEntity(
             id = 173912, setId = 1739, languagePair = "he-ru", rarity = "COMMON",
@@ -201,7 +195,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Сладкое многослойное блюдо круглой формы для праздника или десерта.",
             example = "אֶצְלָנוּ הַיּוֹם עוּגָה עִם פֵּרוֹת וְקֶצֶף.",
             exampleNative = "У нас сегодня עוּגָה с фруктами и взбитыми сливками.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173911L, 173913L, 173914L, 173915L)),
         WordEntity(
             id = 173913, setId = 1739, languagePair = "he-ru", rarity = "COMMON",
@@ -211,7 +204,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Маленькое сухое лакомство с шоколадом или орехами внутри.",
             example = "הַלָּקוֹחַ קִבֵּל עוּגִיָּה חִנָּם עִם הַמַּשְׁקֶה.",
             exampleNative = "Клиент получил עוּגִיָּה бесплатно к напитку.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173911L, 173912L, 173914L, 173915L)),
         WordEntity(
             id = 173914, setId = 1739, languagePair = "he-ru", rarity = "COMMON",
@@ -231,7 +223,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Прохладная еда из нарезанных овощей с маслом и солью.",
             example = "סָלָט יְרַקְרַק מַתְאִים לִי לַאֲרוּחַת צָהֳרַיִם.",
             exampleNative = "Зелёный סָלָט подходит мне на обед.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173911L, 173912L, 173913L, 173914L)),
 
         // ── barista_extras (5) — добавки ──
@@ -243,7 +234,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Белый сладкий песок, что добавляют к напитку или десерту.",
             example = "הוּא בִּקֵּשׁ שְׁתֵּי כַּפּוֹת סֻכָּר חוּם בַּלָּאטֶה.",
             exampleNative = "Он попросил две ложки коричневого סֻכָּר в латте.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173917L, 173918L, 173919L, 173920L)),
         WordEntity(
             id = 173917, setId = 1739, languagePair = "he-ru", rarity = "COMMON",
@@ -253,7 +243,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Белая жидкость от коровы или растения для добавки в напиток.",
             example = "אֵין חָלָב טִבְעוֹנִי, רַק שֶׁל פָּרָה.",
             exampleNative = "Нет растительного חָלָב, только коровье.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173916L, 173918L, 173919L, 173920L)),
         WordEntity(
             id = 173918, setId = 1739, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -263,7 +252,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Жирная густая часть, что годится в напиток или десерт.",
             example = "הִיא בִּקְשָׁה שַׁמֶּנֶת מוּקְצֶפֶת עַל הַשּׁוֹקוֹלָד הַחַם.",
             exampleNative = "Она попросила שַׁמֶּנֶת взбитые на горячий шоколад.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173916L, 173917L, 173919L, 173920L)),
         WordEntity(
             id = 173919, setId = 1739, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -283,7 +271,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Коричневый ароматный порошок коры дерева для посыпки на пенку.",
             example = "פִּיזַרְתִּי קִנָּמוֹן בְּעַד הַשַּׁבְלוֹנָה עַל הַלָּאטֶה.",
             exampleNative = "Я посыпал קִנָּמוֹן через трафарет на латте.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173916L, 173917L, 173918L, 173919L)),
 
         // ── barista_service (5) — обслуживание клиентов ──
@@ -295,7 +282,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Просьба клиента о том, что он хочет съесть или выпить.",
             example = "הוֹסַפְתִּי קְרוּאָסוֹן לַהַזְמָנָה שֶׁל הַזּוּג.",
             exampleNative = "Я добавил круассан к הַזְמָנָה этой пары.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173922L, 173923L, 173924L, 173925L)),
         WordEntity(
             id = 173922, setId = 1739, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -305,7 +291,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Маленький предмет на ножках, куда ставят чашку и тарелку.",
             example = "הִיא יָשְׁבָה עַל שֻׁלְחָן לְיַד הַחַלּוֹן.",
             exampleNative = "Она села за שֻׁלְחָן у окна.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173921L, 173923L, 173924L, 173925L)),
         WordEntity(
             id = 173923, setId = 1739, languagePair = "he-ru", rarity = "COMMON",
@@ -315,7 +300,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Список напитков и еды, что предлагает кофейня клиенту.",
             example = "הַתַּפְרִיט הַחָדָשׁ כָּלַל מַשְׁקָאוֹת קַיִץ.",
             exampleNative = "Новое תַּפְרִיט включило летние напитки.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(173921L, 173922L, 173924L, 173925L)),
         WordEntity(
             id = 173924, setId = 1739, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -352,7 +336,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Профессионал, что готовит горячие напитки за стойкой.",
             example = "בָּרִיסְטָה חָדָשׁ הִתְחִיל לַעֲבֹד אֶצְלֵנוּ הַשָּׁבוּעַ.",
             exampleNative = "Новый בָּרִיסְטָה начал работать у нас на этой неделе.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174003L, 174004L, 174005L)),
         WordEntity(
             id = 174002, setId = 1740, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -372,7 +355,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Металлическая ручка с дырчатой корзиной под молотый продукт.",
             example = "הַפּוֹרְטָפִילְטֶר נִשְׁאַר תָּמִיד חַם בִּצְמוּד לַמְּכוֹנָה.",
             exampleNative = "פּוֹרְטָפִילְטֶר всегда греется впритык к машине.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174001L, 174004L, 174005L)),
         WordEntity(
             id = 174004, setId = 1740, languagePair = "he-ru", rarity = "RARE",
@@ -424,7 +406,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Сила, с которой вода идёт сквозь слой; девять атмосфер — норма.",
             example = "לַחַץ מַיִם נָמוּךְ מִדַּי גּוֹרֵם לְטַעַם מַיִּימִי.",
             exampleNative = "Низкий לַחַץ מַיִם даёт водянистый вкус.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174010L)),
         WordEntity(
             id = 174009, setId = 1740, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -434,7 +415,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Степень нагретости воды в момент пролива через засыпку.",
             example = "הַחֹם שֶׁל הַמַּיִם צָרִיךְ לִהְיוֹת תִּשְׁעִים וְשָׁלֹשׁ מַעֲלוֹת.",
             exampleNative = "חֹם воды должен быть девяносто три градуса.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174006L, 174007L)),
         WordEntity(
             id = 174010, setId = 1740, languagePair = "he-ru", rarity = "RARE",
@@ -444,7 +424,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Числовое отношение сухой засыпки к массе жидкости в чашке.",
             example = "אֲנִי עוֹבֵד בְּיַחַס חִלּוּץ שֶׁל אֶחָד לִשְׁנַיִם.",
             exampleNative = "Я работаю в יַחַס חִלּוּץ один к двум.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174008L)),
 
         // ── barista_milk_art (5) — пар и латте-арт ──
@@ -456,7 +435,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Белый горячий газ из трубки, что греет и взбивает белую жидкость.",
             example = "הָאֵד מֵהַצִּנּוֹר הִשְׁמִיעַ קוֹל חָלוּק וְעָדִין.",
             exampleNative = "אֵד из трубки шипел гладко и нежно.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174013L, 174014L, 174015L)),
         WordEntity(
             id = 174012, setId = 1740, languagePair = "he-ru", rarity = "RARE",
@@ -466,8 +444,7 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Воздушная и горячая прослойка наверху бокала из воздуха и сливочной массы.",
             example = "קֶצֶף חָלָב טוֹב נִרְאֶה בָּרָק וְמַתְמִיד דַּקּוֹת.",
             exampleNative = "Хороший קֶצֶף חָלָב блестит и стоит минутами.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174011L)),
         WordEntity(
             id = 174013, setId = 1740, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "barista_milk_art", transliteration = "late-art",
@@ -476,7 +453,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Искусство рисунка наверху чашки потоком пенки и движением руки.",
             example = "הוּא לוֹמֵד לָאטֶה־אַרְט שָׁלֹשׁ שָׁעוֹת בְּכָל יוֹם.",
             exampleNative = "Он учит לָאטֶה־אַרְט по три часа каждый день.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174011L, 174014L, 174015L)),
         WordEntity(
             id = 174014, setId = 1740, languagePair = "he-ru", rarity = "RARE",
@@ -486,7 +462,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Рисунок в виде листа лилии или папоротника с симметричными штрихами.",
             example = "הוּא צִיֵּר רוֹזֶטָה מֻשְׁלֶמֶת מֵהַנִּסָּיוֹן הָרִאשׁוֹן.",
             exampleNative = "Он нарисовал безупречную רוֹזֶטָה с первой попытки.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174011L, 174013L, 174015L)),
         WordEntity(
             id = 174015, setId = 1740, languagePair = "he-ru", rarity = "RARE",
@@ -496,7 +471,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Повторяющийся узор слоями вверх, похожий на весенний цветок.",
             example = "טוּלִיפָּן בֶּן חָמֵשׁ שִׁכְבוֹת קָשֶׁה בְּמְיוּחָד.",
             exampleNative = "טוּלִיפָּן на пять слоёв особенно сложен.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174011L, 174013L, 174014L)),
 
         // ── barista_pos_screen (5) — касса и экраны ──
@@ -538,7 +512,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Услуга, где курьер забирает напиток и везёт домой или в офис.",
             example = "הַזְמָנוֹת מִשְׁלוֹחַ יָשִׁיר תָּפְסוּ חֵצִי מֵהָעֲבוֹדָה.",
             exampleNative = "Заказы מִשְׁלוֹחַ יָשִׁיר занимают половину работы.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174016L, 174020L)),
         WordEntity(
             id = 174020, setId = 1740, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -570,7 +543,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Первые действия утром: прогрев аппарата и настройка мельницы.",
             example = "פְּתִיחָה אִיטִית גּוֹרֶמֶת לְמַשְׁקֶה רִאשׁוֹן רַע.",
             exampleNative = "Медленная פְּתִיחָה портит первый утренний бокал.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174021L, 174023L, 174025L)),
         WordEntity(
             id = 174023, setId = 1740, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -580,7 +552,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Действия в конце дня: чистка, пересчёт денег и выключение тока.",
             example = "סְגִירָה לוֹקַחַת אֶצְלִי כִּשְׁלֹשִׁים דַּקּוֹת.",
             exampleNative = "סְגִירָה занимает у меня минут тридцать.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174021L, 174022L, 174025L)),
         WordEntity(
             id = 174024, setId = 1740, languagePair = "he-ru", rarity = "RARE",
@@ -590,7 +561,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Период наибольшей нагрузки, когда все работники идут к станку.",
             example = "בִּשְׁעַת שִׂיא יֵשׁ תּוֹר שֶׁל עֲשָׂרָה אֲנָשִׁים.",
             exampleNative = "В שְׁעַת שִׂיא очередь из десяти посетителей.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174025, setId = 1740, languagePair = "he-ru", rarity = "RARE",
@@ -600,7 +570,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Месячный договор клиента на один напиток в день за фиксированную сумму.",
             example = "קָנִיתִי מָנוּי הַחֹדֶשׁ וְכָל יוֹם בָּא בָּאוֹתָהּ שָׁעָה.",
             exampleNative = "Я взял מָנוּי на месяц и хожу каждый день в одно время.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174021L, 174022L, 174023L)),
 
         // ══════════════════════════════════════════════════════════════════════
@@ -617,7 +586,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Высшая ступень качества зерна — выше восьмидесяти баллов в дегустации.",
             example = "אֲנַחְנוּ מַגִּישִׁים רַק סְפֵּשַׁלְטִי טָרִי מִחֲוָוֹת קְטַנּוֹת.",
             exampleNative = "Мы подаём только свежий סְפֵּשַׁלְטִי с малых ферм.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174102L, 174103L, 174105L)),
         WordEntity(
             id = 174102, setId = 1741, languagePair = "he-ru", rarity = "RARE",
@@ -627,7 +595,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Деликатный вид с яркой кислинкой, что растёт в высокогорных областях.",
             example = "אֲרָבִּיקָה מֵאַתְיוֹפְּיָה נִשְׁאֶרֶת אַהֲבָתִי הַגְּדוֹלָה.",
             exampleNative = "אֲרָבִּיקָה из Эфиопии — моя главная любовь.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174101L, 174103L, 174105L)),
         WordEntity(
             id = 174103, setId = 1741, languagePair = "he-ru", rarity = "RARE",
@@ -637,7 +604,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Крепкий горьковатый вид с двойной дозой кофеина против обычной арабики.",
             example = "רוֹבּוּסְטָה מַכְנִיסָה גּוּף סָמִיךְ לַתַּעֲרֹבֶת הָאִיטַלְקִית.",
             exampleNative = "רוֹבּוּסְטָה даёт плотное тело итальянской смеси.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174101L, 174102L)),
         WordEntity(
             id = 174104, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -647,7 +613,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Продукт с одной фермы без смешения с зёрнами других хозяйств.",
             example = "מָקוֹר יָחִיד מִקֶּנְיָה זָכָה אֵצֶל הַחוֹבְבִים בְּהַעֲרָכָה רַבָּה.",
             exampleNative = "מָקוֹר יָחִיד из Кении завоевал высокую оценку у любителей.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174105, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -657,7 +622,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Сочетание разных сортов ради баланса между кислинкой, телом и сластью.",
             example = "הַתַּעֲרֹבֶת הָאִיטַלְקִית כּוֹלֶלֶת אַרְבָּעָה מְקוֹרוֹת.",
             exampleNative = "Итальянская תַּעֲרֹבֶת включает четыре источника.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174101L, 174102L, 174103L)),
 
         // ── barista_roast (5) — обжарка ──
@@ -679,7 +643,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Короткая степень, сохраняющая фруктовость и кислинку в напитке.",
             example = "קְלִיָּה בְּהִירָה דּוֹרֶשֶׁת מַיִם חַמִּים יוֹתֵר לַחִלּוּץ.",
             exampleNative = "קְלִיָּה בְּהִירָה требует более горячей воды для пролива.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174108L, 174109L, 174110L)),
         WordEntity(
             id = 174108, setId = 1741, languagePair = "he-ru", rarity = "RARE",
@@ -689,7 +652,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Промежуточная ступень с балансом сладости, тела и мягкой кислинки.",
             example = "קְלִיָּה בֵּינוֹנִית מַתְאִימָה גַּם לְמַשְׁקֶה כֵּהֶה וְגַם לְחָלָב.",
             exampleNative = "קְלִיָּה בֵּינוֹנִית подходит и под чёрный, и под молоко.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174107L, 174109L, 174110L)),
         WordEntity(
             id = 174109, setId = 1741, languagePair = "he-ru", rarity = "RARE",
@@ -699,7 +661,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Долгая ступень с горчинкой, плотным телом и маслом на поверхности.",
             example = "אִיטַלְיָה אוֹהֶבֶת קְלִיָּה כֵּהָה וְעָשִׁירָה.",
             exampleNative = "Италия любит קְלִיָּה כֵּהָה и насыщенную.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174107L, 174108L, 174110L)),
         WordEntity(
             id = 174110, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -709,7 +670,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Точная кривая времени и температуры, по которой обжарщик ведёт каждый сорт.",
             example = "פְּרוֹפִיל קְלִיָּה לְקֶנְיָה אוֹרֵךְ אַחַד עָשָׂר וַחֲצִי דַּקּוֹת.",
             exampleNative = "פְּרוֹפִיל קְלִיָּה для Кении длится одиннадцать с половиной минут.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174107L, 174108L, 174109L)),
 
         // ── barista_taste (5) — вкус и оценка ──
@@ -731,7 +691,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Острое и весёлое ощущение, что напоминает лимон или свежий цитрус.",
             example = "חַמְצִיצוּת בְּהִירָה הִיא סִימָן שֶׁל זַן רָם.",
             exampleNative = "Яркая חַמְצִיצוּת — признак высокогорного сорта.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174111L, 174115L)),
         WordEntity(
             id = 174113, setId = 1741, languagePair = "he-ru", rarity = "RARE",
@@ -741,7 +700,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Завершающий отпечаток во рту после последнего глотка чашки.",
             example = "טַעַם שֶׁנִּשְׁאָר אָרֹךְ מְעִיד עַל גַּרְעִין מְעוּלֶה.",
             exampleNative = "Долгий טַעַם שֶׁנִּשְׁאָר свидетельствует о высоком зерне.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174114L)),
         WordEntity(
             id = 174114, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -751,7 +709,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Принятая в профессии схема, что показывает группы возможных ароматов.",
             example = "לוּחַ טְעָמִים עוֹזֵר לִי לִכְתֹּב הֶעָרוֹת מְדֻיָּקוֹת.",
             exampleNative = "לוּחַ טְעָמִים помогает мне писать точные пометки.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174113L)),
         WordEntity(
             id = 174115, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -761,7 +718,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Тонкие следы вкуса при глотке: шоколад, орех или цитрус.",
             example = "אֲנִי טוֹעֵם נוֹטוֹת שֶׁל פֵּרוֹת יַעַר בָּזֶה.",
             exampleNative = "Я чувствую נוֹטוֹת лесных ягод в этом.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174111L, 174112L)),
 
         // ── barista_extraction (5) — экстракция ──
@@ -773,7 +729,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Процесс, в котором горячая вода переносит вкус из засыпки в чашку.",
             example = "חִלּוּץ אִיטִי גּוֹרֵם לְטַעַם מַר וְכָבֵד.",
             exampleNative = "Медленный חִלּוּץ даёт горький и тяжёлый вкус.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174119L, 174120L)),
         WordEntity(
             id = 174117, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -783,7 +738,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Сбой, когда вода не успела вынуть сахара из засыпки.",
             example = "תַּת־חִלּוּץ נִכָּר בְּטַעַם חָמוּץ וְקָצָר.",
             exampleNative = "תַּת־חִלּוּץ узнаётся по кислому и короткому вкусу.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174118L)),
         WordEntity(
             id = 174118, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -793,7 +747,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Сбой, когда вода вынула и горькие соединения из-за слишком долгого пролива.",
             example = "חִלּוּץ יֶתֶר נוֹתֵן טַעַם מָאוּס שֶׁל קְלִפָּה.",
             exampleNative = "חִלּוּץ יֶתֶר даёт противный привкус кожуры.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174117L)),
         WordEntity(
             id = 174119, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -803,7 +756,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Быстрый ход воды по одной щели, а не по всему слою равномерно.",
             example = "תְּעָלַת מַיִם פּוֹגַעַת קָשׁוֹת בָּרֹשֶׁם הַסּוֹפִי.",
             exampleNative = "תְּעָלַת מַיִם сильно бьёт по итоговому впечатлению.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174116L, 174120L)),
         WordEntity(
             id = 174120, setId = 1741, languagePair = "he-ru", rarity = "RARE",
@@ -813,7 +765,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Профессиональная церемония дегустации для оценки и сравнения сортов.",
             example = "קַאפִּינְג שְׁבוּעִי מְשַׁפֵּר אֶת הַחֵךְ שֶׁל הַצֶּוֶת.",
             exampleNative = "Еженедельный קַאפִּינְג улучшает нёбо команды.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174116L, 174119L)),
 
         // ── barista_industry (5) — индустрия и торговля ──
@@ -825,7 +776,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Человек, что выращивает кусты на ферме и собирает с них спелые ягоды.",
             example = "הַחַוַּאי בְּקוֹלוֹמְבְּיָה מַכְנִיס לָנוּ פֵּרוֹת מְעוּלִים.",
             exampleNative = "חַוַּאי в Колумбии поставляет нам отменные ягоды.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174124L, 174125L)),
         WordEntity(
             id = 174122, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -835,7 +785,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Торговля фермы напрямую с обжарщиком без посредников — справедливее по оплате.",
             example = "סַחַר יָשִׁיר מַעֲלֶה אֶת רָמַת הַחַיִּים בִּכְפָרִים מְרֻחָקִים.",
             exampleNative = "סַחַר יָשִׁיר поднимает уровень жизни в дальних деревнях.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174123L)),
         WordEntity(
             id = 174123, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -845,7 +794,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Официальный знак, что подтверждает достойные условия и минимальный заработок.",
             example = "אֲנַחְנוּ קוֹנִים רַק זַנִּים עִם תַּסְרִיר הוֹגֵן.",
             exampleNative = "Мы покупаем только сорта с תַּסְרִיר הוֹגֵן.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174122L)),
         WordEntity(
             id = 174124, setId = 1741, languagePair = "he-ru", rarity = "RARE",
@@ -855,7 +803,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Зависимость качества сорта от времени сбора урожая в течение года.",
             example = "הָעוֹנָתִיּוּת מְשַׁנָּה אֶת הַתַּפְרִיט שֶׁלָּנוּ פַּעֲמַיִם בַּשָּׁנָה.",
             exampleNative = "עוֹנָתִיּוּת меняет наше меню дважды в год.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174121L, 174125L)),
         WordEntity(
             id = 174125, setId = 1741, languagePair = "he-ru", rarity = "EPIC",
@@ -865,7 +812,6 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Профессиональное событие, где спецы показывают мастерство перед судьями.",
             example = "אֲנִי מִתְכּוֹנֵן לַתַּחֲרוּת הָאַרְצִית כָּל אַחַר צָהֳרַיִם.",
             exampleNative = "Я готовлюсь к национальному תַּחֲרוּת каждый день после обеда.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174121L, 174124L)),
     )
 }

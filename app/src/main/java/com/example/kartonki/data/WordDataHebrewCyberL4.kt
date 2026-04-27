@@ -60,8 +60,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Заказная проверка: легальный хакер пробует сломать систему и доложить о слабых местах.",
             example = "מִבְחַן חֲדִירָה לִפְנֵי הַשִּׁחְרוּר חָשַׂף בָּאג קְרִיטִי בָּאוֹתֶנְטִיקַצְיָה.",
             exampleNative = "מִבְחַן חֲדִירָה перед релизом вскрыл критический баг в аутентификации.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176802L, 176803L, 176804L, 176805L)),
         WordEntity(
             id = 176802, setId = 1768, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_pentesting", transliteration = "red tim",
@@ -70,8 +69,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Атакующая команда — имитирует настоящую атаку, чтобы проверить защиту фирмы.",
             example = "רֵד טִים הִצְלִיחַ לְהַגִּיעַ לְשֶׁרֶת הַשְּׁכֹר תּוֹךְ שָׁלֹשׁ שָׁעוֹת.",
             exampleNative = "רֵד טִים дотянулся до зарплатного сервера за три часа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176801L, 176803L, 176804L, 176805L)),
         WordEntity(
             id = 176803, setId = 1768, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_pentesting", transliteration = "blu tim",
@@ -80,8 +78,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Защитная команда — ловит атаки в реальном времени и останавливает их на боевом окружении.",
             example = "בְּלוּ טִים שֶׁל הַחֶבְרָה זִהָה אֶת הַסְּרִיקָה תּוֹךְ שְׁתֵּי דַּקּוֹת.",
             exampleNative = "בְּלוּ טִם фирмы засёк скан за две минуты.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176801L, 176802L, 176804L, 176805L)),
         WordEntity(
             id = 176804, setId = 1768, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_pentesting", transliteration = "srikat khulshot",
@@ -90,8 +87,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Автоматический проход по серверу или приложению — найти известные слабые точки.",
             example = "סְרִיקַת חוּלְשׁוֹת שְׁבוּעִית מַרִיצָה אֶת נֶסוּס עַל כָּל הַסְּבִיבָה.",
             exampleNative = "Еженедельный סְרִיקַת חוּלְשׁוֹת гоняет Nessus по всему окружению.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176801L, 176802L, 176803L, 176805L)),
         WordEntity(
             id = 176805, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_pentesting", transliteration = "eksploit",
@@ -100,8 +96,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Код — пользуется конкретным багом и получает запрещённый доступ к системе.",
             example = "אֶקְסְפְּלוֹיט פֻּרְסַם בָּרֶשֶׁת לִפְנֵי שֶׁהוֹצִיאוּ פַּאצְ׳ רִשְׁמִי.",
             exampleNative = "אֶקְסְפְּלוֹיט выложили в сеть до выхода официального патча.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176801L, 176802L, 176803L, 176804L)),
 
         // ── cyber_response (5) — реагирование на инциденты и SOC ──
         WordEntity(
@@ -122,8 +117,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Расследование дисков, логов и памяти — понять, как именно случился взлом.",
             example = "פוֹרֶנְזִיקָה דִּיגִיטָלִית גִּלְּתָה שֶׁהַפּוֹרֵץ נִשְׁאַר בָּרֶשֶׁת חֳדָשַׁיִם.",
             exampleNative = "פוֹרֶנְזִיקָה דִּיגִיטָלִית показала, что взломщик сидел в сети два месяца.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176806L, 176808L, 176809L, 176810L)),
         WordEntity(
             id = 176808, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_response", transliteration = "siman hitparzut",
@@ -132,8 +126,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Маленькая деталь в логе — IP, хеш или домен — выдаёт, что зашёл кто-то чужой.",
             example = "סִימַן הִתְפָּרְצוּת חָדָשׁ הִגִּיעַ מִקְּהִילַת הָאַבְטָחָה הַבֵּינְלְאֻמִּית.",
             exampleNative = "Новый סִימַן הִתְפָּרְצוּת пришёл от мирового security-комьюнити.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176806L, 176807L, 176809L, 176810L)),
         WordEntity(
             id = 176809, setId = 1768, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_response", transliteration = "siyem",
@@ -142,8 +135,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Система — собирает логи отовсюду и сигналит, когда они складываются в подозрительную картину.",
             example = "סִיֵם הִתְרִיעַ עַל מֵאָה נִסְיוֹנוֹת כְּנִיסָה בְּדַקָּה לְחֶשְׁבּוֹן הַמְּנַהֵל.",
             exampleNative = "סִיֵם сигналил о ста попытках входа в минуту в админский аккаунт.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176806L, 176807L, 176808L, 176810L)),
         WordEntity(
             id = 176810, setId = 1768, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_response", transliteration = "merkaz tafu'a avtakha",
@@ -152,8 +144,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Комната с экранами — аналитики мониторят кибер-события двадцать четыре часа в сутки.",
             example = "מֶרְכַּז תַּפְעוּל אַבְטָחָה הוּקַם בָּקַמְפּוּס אַחֲרֵי הַתְקָפַת הַכֹּפֶר.",
             exampleNative = "מֶרְכַּז תַּפְעוּל אַבְטָחָה открыли в кампусе после атаки шифровальщика.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176806L, 176807L, 176808L, 176809L)),
 
         // ── cyber_governance (5) — нормативка, стандарты, регуляция ──
         WordEntity(
@@ -164,8 +155,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Соответствие фирмы всем законам и стандартам, что действуют для неё в кибер-сфере.",
             example = "צִיּוּת רֶגוּלָטוֹרִי דּוֹרֵשׁ דּוּ\"חַ רֻבְעוֹנִי לִמְבַקֵּר רָאשִׁי.",
             exampleNative = "צִיּוּת רֶגוּלָטוֹרִי требует квартальный отчёт для главного аудитора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176812L, 176813L, 176814L, 176815L)),
         WordEntity(
             id = 176812, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_governance", transliteration = "aiso esrim ve-sheva elef",
@@ -174,8 +164,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Международный стандарт — определяет, как организация обязана управлять защитой данных.",
             example = "אַייסוֹ 27001 הִתְקַבֵּל אַחֲרֵי שָׁנָה וָחֵצִי שֶׁל הַכָנָה רְצוּפָה.",
             exampleNative = "אַייסוֹ 27001 получили после полутора лет непрерывной подготовки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176811L, 176813L, 176814L, 176815L)),
         WordEntity(
             id = 176813, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_governance", transliteration = "odit sok shtaim",
@@ -184,8 +173,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Внешняя проверка — как облачный провайдер хранит данные клиентов.",
             example = "אוֹדִיט סוֹק 2 חוֹבָה לְכָל סְטַארְטָאפּ שֶׁמּוֹכֵר לְשׁוּק אָמֵרִיקָנִי.",
             exampleNative = "אוֹדִיט סוֹק 2 — обязалово для каждого стартапа, что продаёт на рынке США.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176811L, 176812L, 176814L, 176815L)),
         WordEntity(
             id = 176814, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_governance", transliteration = "takkanat haganat meida eropit",
@@ -194,8 +182,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Континентальный закон — обязывает фирму беречь личные данные каждого гражданина.",
             example = "תַּקָּנַת הֲגַנַּת מֵידָע אֵירוֹפִּית חִיְּבָה אוֹתָנוּ לִמְחֹק לְקוֹחוֹת לְפִי דְּרִישָׁה.",
             exampleNative = "תַּקָּנַת הֲגַנַּת מֵידָע אֵירוֹפִּית обязала нас удалять клиентов по запросу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176811L, 176812L, 176813L, 176815L)),
         WordEntity(
             id = 176815, setId = 1768, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_governance", transliteration = "akhsun meida mekomi",
@@ -204,8 +191,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Требование: данные граждан страны хранятся только на серверах внутри неё.",
             example = "אִחְסוּן מֵידָע מְקוֹמִי הֶחְלִיט בְּאֵיזוֹ אֲזוֹרֵי עָנָן נוּכַל לִעֲבֹד.",
             exampleNative = "אִחְסוּן מֵידָע מְקוֹמִי определил, в каких облачных регионах нам можно работать.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176811L, 176812L, 176813L, 176814L)),
 
         // ── cyber_advanced (5) — современные архитектуры безопасности ──
         WordEntity(
@@ -216,8 +202,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Подход: ни юзер, ни сервер не считается доверенным заранее — каждый запрос проверяется заново.",
             example = "מַעֲבָר לְזִירוֹ טְרַסְט הֶעֱלִים אֶת הַסְּגִירוּת שֶׁל הָרֶשֶׁת הַפְּנִימִית.",
             exampleNative = "Переход на זִירוֹ טְרַסְט убрал замкнутость внутренней сети.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176817L, 176818L, 176819L, 176820L)),
         WordEntity(
             id = 176817, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_advanced", transliteration = "mikro-segmentatsya",
@@ -226,8 +211,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Деление сети на крошечные зоны — взломщик не сможет свободно по ней двигаться.",
             example = "מִיקְרוֹ-סֶגְמֶנְטַצְיָה בְּקוּבֶּרְנֵטֶס מַגְבִּילָה כָּל פּוֹד לִשְׁכֵנִים מֻגְדָּרִים.",
             exampleNative = "מִיקְרוֹ-סֶגְמֶנְטַצְיָה в Kubernetes ограничивает каждый под определёнными соседями.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176816L, 176818L, 176819L, 176820L)),
         WordEntity(
             id = 176818, setId = 1768, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_advanced", transliteration = "bi-vai-o-di",
@@ -236,8 +220,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Политика — разрешает работнику подключаться к системам фирмы со своего личного телефона.",
             example = "בִּי-וַי-אוֹ-דִּי דּוֹרֵשׁ הַתְקָנַת אַפְּלִיקַצְיַת נִהוּל מַכְשִׁירִים עַל כָּל מַכְשִׁיר.",
             exampleNative = "בִּי-וַי-אוֹ-דִּי требует MDM-приложение на каждом устройстве.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176816L, 176817L, 176819L, 176820L)),
         WordEntity(
             id = 176819, setId = 1768, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_advanced", transliteration = "avtakhat konteyner",
@@ -246,8 +229,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Проверка и закалка докер-образов и среды выполнения — до загрузки в облако.",
             example = "אַבְטָחַת קוֹנְטֵיינֶר חָסְמָה תְּמוּנָה עִם סְפְרִיָּה פְּגִיעָה.",
             exampleNative = "אַבְטָחַת קוֹנְטֵיינֶר заблокировала образ с уязвимой библиотекой.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176816L, 176817L, 176818L, 176820L)),
         WordEntity(
             id = 176820, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_advanced", transliteration = "saplay tsheyn atak",
@@ -256,8 +238,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Взлом через внешнего поставщика — задевает сотни фирм, что используют один и тот же инструмент.",
             example = "סַפְּלַיי צֵ'יין אַטָאק עַל סוֹלָרְוִוינְדְס הִדְהֵד בִּמְמַשְׁלַת אַרְצוֹת הַבְּרִית.",
             exampleNative = "סַפְּלַיי צֵ'יין אַטָאק на SolarWinds аукнулась в правительстве США.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176816L, 176817L, 176818L, 176819L)),
 
         // ── cyber_cryptography (5) — криптографические примитивы ──
         WordEntity(
@@ -268,8 +249,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Способ — один и тот же секрет служит и для запирания, и для открывания данных.",
             example = "הַצְפָּנָה סִימֶטְרִית מַתְאִימָה לְקֳבָצִים גְּדוֹלִים בְּגַלְלָ מְהִירוּתָהּ.",
             exampleNative = "הַצְפָּנָה סִימֶטְרִית подходит большим файлам — за счёт скорости.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176822L, 176823L, 176824L, 176825L)),
         WordEntity(
             id = 176822, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_cryptography", transliteration = "maftea'kh tsiburi",
@@ -278,8 +258,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Комбинация, которую может видеть каждый — для зашифровки данных или проверки подписи.",
             example = "מַפְתֵּחַ צִבּוּרִי מְפֻרְסָם בָּשֶׁרֶת כָּךְ שֶׁכָּל אֶחָד יָכוֹל לִשְׁלֹחַ הוֹדָעָה מֻצְפֶּנֶת.",
             exampleNative = "מַפְתֵּחַ צִבּוּרִי опубликован на сервере — каждый может слать зашифрованное сообщение.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176821L, 176823L, 176824L, 176825L)),
         WordEntity(
             id = 176823, setId = 1768, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_cryptography", transliteration = "funktsiyat gibuv",
@@ -288,8 +267,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Математика — превращает любой файл в короткую и постоянную строку, без обратного хода.",
             example = "פוּנְקְצִיַּת גִּיבּוּב מְשַׁמֶּשֶׁת לִשְׁמִירַת סִיסְמָאוֹת בְּלִי לְשָׁמְרָן בְּגָלוּי.",
             exampleNative = "פוּנְקְצִיַּת גִּיבּוּב хранит пароли так, чтобы они не лежали в открытом виде.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176821L, 176822L, 176824L, 176825L)),
         WordEntity(
             id = 176824, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_cryptography", transliteration = "khatima digitalit",
@@ -298,8 +276,7 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Математический знак — доказывает, что документ отправил конкретный человек и его не правили.",
             example = "חֲתִימָה דִּיגִיטָלִית עַל הַחוֹזֶה מַחְלִיפָה אֶת הָעֵט בָּעֵסֶק הַבֵּינְלְאֻמִּי.",
             exampleNative = "חֲתִימָה דִּיגִיטָלִית на договоре заменяет ручку в международном бизнесе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176821L, 176822L, 176823L, 176825L)),
         WordEntity(
             id = 176825, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "cyber_cryptography", transliteration = "salt kriptografi",
@@ -308,7 +285,6 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Случайная строка — добавляют к паролю до подсчёта, чтобы две одинаковые дали разный результат.",
             example = "סָאלְט קְרִיפְּטוֹגְרָפִי יִחוּדִי לְכָל מִשְׁתַּמֵּשׁ מוֹנֵעַ הַתְקָפָה בְּטַבְלָאוֹת מוּכָנוֹת.",
             exampleNative = "Уникальный для каждого юзера סָאלְט קְרִיפְּטוֹגְרָפִי блокирует атаку по готовым таблицам.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176821L, 176822L, 176823L, 176824L)),
     )
 }

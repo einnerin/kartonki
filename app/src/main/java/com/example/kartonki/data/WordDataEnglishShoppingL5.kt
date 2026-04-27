@@ -63,8 +63,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Дополнительная ценность, которую узнаваемое имя добавляет обычному товару.",
             example = "Decades of careful advertising built the company's massive brand equity.",
             exampleNative = "Десятилетия аккуратной рекламы построили огромный brand equity компании.",
-            pos = "noun", semanticGroup = "shopping_brand_equity",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_brand_equity", fillInBlankExclusions = listOf(35702L, 35703L, 35705L)),
 
         WordEntity(id = 35702, setId = 357, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "share of voice", transliteration = "[ʃɛr əv vɔɪs]", translation = "доля голоса (доля рекламного шума)",
@@ -72,8 +71,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Насколько громко одна фирма звучит на фоне конкурентов во всех каналах.",
             example = "Their summer campaign doubled the agency's share of voice on television.",
             exampleNative = "Летняя кампания удвоила share of voice агентства на телевидении.",
-            pos = "noun", semanticGroup = "shopping_brand_equity",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_brand_equity", fillInBlankExclusions = listOf(35701L, 35703L, 35705L)),
 
         WordEntity(id = 35703, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "halo effect", transliteration = "[ˈheɪloʊ ɪˈfɛkt]", translation = "эффект ореола (одно достоинство красит всё)",
@@ -81,8 +79,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Когда одно хорошее качество заставляет покупателей думать, что и всё остальное хорошо.",
             example = "A famous chef on the box creates a strong halo effect for the cereal.",
             exampleNative = "Известный шеф на коробке создаёт сильный halo effect для хлопьев.",
-            pos = "noun", semanticGroup = "shopping_brand_equity",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_brand_equity", fillInBlankExclusions = listOf(35701L, 35702L, 35705L, 35713L)),
 
         WordEntity(id = 35704, setId = 357, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "top-of-mind", transliteration = "[tɑp əv maɪnd]", translation = "сразу всплывающий в памяти (о бренде)",
@@ -90,8 +87,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Марка, которую покупатель мгновенно называет, услышав название категории товаров.",
             example = "For soft drinks, that red logo remains the top-of-mind choice worldwide.",
             exampleNative = "В газировке тот красный логотип остаётся top-of-mind выбором по всему миру.",
-            pos = "adjective", semanticGroup = "shopping_brand_equity",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "shopping_brand_equity"),
 
         WordEntity(id = 35705, setId = 357, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "salience", transliteration = "[ˈseɪliəns]", translation = "заметность (бренда в памяти покупателя)",
@@ -99,8 +95,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Насколько легко имя всплывает в голове покупателя в момент выбора.",
             example = "Bright packaging boosts the salience of a snack on a crowded shelf.",
             exampleNative = "Яркая упаковка поднимает salience снэка на переполненной полке.",
-            pos = "noun", semanticGroup = "shopping_brand_equity",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_brand_equity", fillInBlankExclusions = listOf(35701L, 35702L, 35703L)),
 
         // ── shopping_consumer_law (5) ─────────────────────────────────────
 
@@ -110,8 +105,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Государственный закон, защищающий обычных покупателей от нечестных продавцов.",
             example = "He cited the consumer protection act when the dealer refused to refund.",
             exampleNative = "Он сослался на consumer protection act, когда дилер отказал в возврате.",
-            pos = "noun", semanticGroup = "shopping_consumer_law",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_consumer_law", fillInBlankExclusions = listOf(35707L, 35708L, 35709L, 35710L)),
 
         WordEntity(id = 35707, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "liability waiver", transliteration = "[ˌlaɪəˈbɪlɪti ˈweɪvər]", translation = "отказ от ответственности",
@@ -119,8 +113,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Подписанная бумага, что продавец не платит, если что-то пойдёт не так.",
             example = "Skydiving schools always make students sign a strict liability waiver.",
             exampleNative = "Школы парашютного спорта всегда дают курсантам подписать жёсткий liability waiver.",
-            pos = "noun", semanticGroup = "shopping_consumer_law",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_consumer_law", fillInBlankExclusions = listOf(35706L, 35708L, 35709L, 35710L)),
 
         WordEntity(id = 35708, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "statutory right", transliteration = "[ˈstæʧəˌtɔri raɪt]", translation = "законное право (потребителя по закону)",
@@ -128,8 +121,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Защита, данная каждому покупателю государством — её не отменит ни один магазин.",
             example = "Returning a faulty kettle is a statutory right in most European countries.",
             exampleNative = "Возврат бракованного чайника — statutory right в большинстве стран Европы.",
-            pos = "noun", semanticGroup = "shopping_consumer_law",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_consumer_law", fillInBlankExclusions = listOf(35706L, 35707L, 35709L, 35710L)),
 
         WordEntity(id = 35709, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "recall notice", transliteration = "[ˈriˌkɔl ˈnoʊtɪs]", translation = "уведомление об отзыве (товара)",
@@ -137,8 +129,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Официальное сообщение, просящее покупателей вернуть опасную вещь производителю.",
             example = "A fresh recall notice covered every car sold last spring.",
             exampleNative = "Свежий recall notice охватил все машины, проданные прошлой весной.",
-            pos = "noun", semanticGroup = "shopping_consumer_law",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_consumer_law", fillInBlankExclusions = listOf(35706L, 35707L, 35708L, 35710L)),
 
         WordEntity(id = 35710, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "cooling-off period", transliteration = "[ˈkuːlɪŋ ɒf ˈpɪərɪəd]", translation = "период отказа от покупки",
@@ -146,8 +137,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Несколько дней после покупки, когда покупатель ещё может отменить заказ.",
             example = "By law a fourteen-day cooling-off period covers most online orders here.",
             exampleNative = "По закону четырнадцатидневный cooling-off period распространяется на большинство онлайн-заказов.",
-            pos = "noun", semanticGroup = "shopping_consumer_law",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_consumer_law", fillInBlankExclusions = listOf(35706L, 35707L, 35708L, 35709L)),
 
         // ── shopping_marketing_psych (5) ──────────────────────────────────
 
@@ -157,8 +147,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Как формулировка одного и того же предложения подталкивает покупателя к иному выбору.",
             example = "\"Ninety percent fat-free\" sells better — a textbook framing effect.",
             exampleNative = "«Девяносто процентов без жира» продаётся лучше — хрестоматийный framing effect.",
-            pos = "noun", semanticGroup = "shopping_marketing_psych",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_marketing_psych", fillInBlankExclusions = listOf(35712L, 35713L, 35714L, 35715L)),
 
         WordEntity(id = 35712, setId = 357, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "loss aversion", transliteration = "[lɔs əˈvərʒən]", translation = "неприятие потерь",
@@ -166,8 +155,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Стремление сохранить имеющееся, а не рискнуть им ради равной по размеру прибыли.",
             example = "Free-trial offers exploit loss aversion once shoppers feel ownership.",
             exampleNative = "Бесплатные пробные периоды используют loss aversion, когда покупатель уже привык.",
-            pos = "noun", semanticGroup = "shopping_marketing_psych",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_marketing_psych", fillInBlankExclusions = listOf(35711L, 35713L, 35714L, 35715L)),
 
         WordEntity(id = 35713, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "social proof", transliteration = "[ˈsoʊʃəl pruf]", translation = "социальное доказательство",
@@ -175,8 +163,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Сигнал, что многие другие уже выбрали эту вещь — значит, она хорошая.",
             example = "Five-star reviews provide the social proof that turns visitors into buyers.",
             exampleNative = "Пятизвёздные отзывы дают social proof, превращающий посетителей в покупателей.",
-            pos = "noun", semanticGroup = "shopping_marketing_psych",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_marketing_psych", fillInBlankExclusions = listOf(35703L, 35711L, 35712L, 35714L, 35715L)),
 
         WordEntity(id = 35714, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "reciprocity rule", transliteration = "[ˌrɛsəˈprɑsɪti rul]", translation = "правило взаимности",
@@ -184,8 +171,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Социальная привычка: маленькая бесплатная услуга подталкивает людей отплатить.",
             example = "Free chocolate by the bill exploits the reciprocity rule for bigger tips.",
             exampleNative = "Бесплатный шоколад к счёту использует reciprocity rule ради больших чаевых.",
-            pos = "noun", semanticGroup = "shopping_marketing_psych",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_marketing_psych", fillInBlankExclusions = listOf(35711L, 35712L, 35713L, 35715L)),
 
         WordEntity(id = 35715, setId = 357, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "choice paralysis", transliteration = "[ʧɔɪs pəˈræləsɪs]", translation = "паралич выбора",
@@ -193,8 +179,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Когда слишком много вариантов на полке замораживают покупателя — он не берёт ничего.",
             example = "A wall of forty jam jars is a textbook case of choice paralysis.",
             exampleNative = "Стена из сорока банок варенья — учебный choice paralysis.",
-            pos = "noun", semanticGroup = "shopping_marketing_psych",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_marketing_psych", fillInBlankExclusions = listOf(35711L, 35712L, 35713L, 35714L)),
 
         // ── shopping_strategy (5) ─────────────────────────────────────────
 
@@ -204,8 +189,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Уникальное место, которое фирма занимает в голове покупателя на фоне соперников.",
             example = "Their competitive positioning rests on speed, never on the lowest price.",
             exampleNative = "Их competitive positioning держится на скорости, а не на самой низкой цене.",
-            pos = "noun", semanticGroup = "shopping_strategy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_strategy", fillInBlankExclusions = listOf(35717L, 35718L, 35719L, 35720L)),
 
         WordEntity(id = 35717, setId = 357, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "blue ocean strategy", transliteration = "[blu ˈoʊʃən ˈstrætəʤi]", translation = "стратегия голубого океана (новый рынок без конкуренции)",
@@ -213,8 +197,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Создать свежий пустой рынок, где соперники ещё не дерутся за покупателей.",
             example = "Cirque du Soleil's blue ocean strategy invented theatre without animals.",
             exampleNative = "Blue ocean strategy Cirque du Soleil изобрела цирк-театр без животных.",
-            pos = "noun", semanticGroup = "shopping_strategy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_strategy", fillInBlankExclusions = listOf(35716L, 35718L, 35719L, 35720L)),
 
         WordEntity(id = 35718, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "vertical integration", transliteration = "[ˈvərtɪkəl ˌɪntəˈgreɪʃən]", translation = "вертикальная интеграция (контроль всей цепочки)",
@@ -222,8 +205,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Когда одна фирма владеет каждым шагом от сырья до продажи в магазине.",
             example = "Their vertical integration gives them full control over coffee from farm to cup.",
             exampleNative = "Их vertical integration даёт полный контроль над кофе от фермы до чашки.",
-            pos = "noun", semanticGroup = "shopping_strategy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_strategy", fillInBlankExclusions = listOf(35716L, 35717L, 35719L, 35720L)),
 
         WordEntity(id = 35719, setId = 357, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "disintermediation", transliteration = "[dɪsˌɪntərˌmidiˈeɪʃən]", translation = "отказ от посредников (прямые продажи)",
@@ -231,8 +213,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Убрать посредников, чтобы производитель добирался до конечного покупателя напрямую.",
             example = "Online platforms drove disintermediation across the entire travel industry.",
             exampleNative = "Онлайн-площадки запустили disintermediation во всей туристической отрасли.",
-            pos = "noun", semanticGroup = "shopping_strategy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_strategy", fillInBlankExclusions = listOf(35716L, 35717L, 35718L, 35720L)),
 
         WordEntity(id = 35720, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "dynamic pricing", transliteration = "[daɪˈnæmɪk ˈpraɪsɪŋ]", translation = "динамическое ценообразование",
@@ -240,8 +221,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Система, где стоимость меняется час за часом в зависимости от спроса и запасов.",
             example = "Airlines use dynamic pricing to push fares up close to departure day.",
             exampleNative = "Авиакомпании используют dynamic pricing, чтобы поднять тарифы у даты вылета.",
-            pos = "noun", semanticGroup = "shopping_strategy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_strategy", fillInBlankExclusions = listOf(35716L, 35717L, 35718L, 35719L)),
 
         // ── shopping_global_trade (5) ─────────────────────────────────────
 
@@ -251,8 +231,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Ограничение на количество иностранного товара, которое страна впускает за год.",
             example = "An import quota on cheap textiles protects small local sewing workshops.",
             exampleNative = "Import quota на дешёвый текстиль защищает мелкие местные швейные мастерские.",
-            pos = "noun", semanticGroup = "shopping_global_trade",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_global_trade", fillInBlankExclusions = listOf(35725L)),
 
         WordEntity(id = 35722, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "customs duty", transliteration = "[ˈkəstəmz ˈduti]", translation = "таможенная пошлина",
@@ -260,8 +239,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Деньги, которые государство берёт, когда посылка из-за рубежа пересекает границу.",
             example = "A heavy customs duty was added to the camera shipped from Japan.",
             exampleNative = "К камере, отправленной из Японии, добавили большой customs duty.",
-            pos = "noun", semanticGroup = "shopping_global_trade",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_global_trade", fillInBlankExclusions = listOf(35721L, 35723L, 35724L, 35725L)),
 
         WordEntity(id = 35723, setId = 357, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "harmonized code", transliteration = "[ˈhɑrməˌnaɪzd koʊd]", translation = "гармонизированный код (международная классификация товаров)",
@@ -269,8 +247,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Всемирный номер, точно говорящий таможне, какой именно товар внутри коробки.",
             example = "Each box needs a harmonized code on the export paperwork.",
             exampleNative = "Каждой коробке нужен harmonized code в экспортных бумагах.",
-            pos = "noun", semanticGroup = "shopping_global_trade",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_global_trade", fillInBlankExclusions = listOf(35722L, 35724L)),
 
         WordEntity(id = 35724, setId = 357, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "free trade agreement", transliteration = "[fri treɪd əˈgrimənt]", translation = "соглашение о свободной торговле",
@@ -278,8 +255,7 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Договор двух стран, отменяющий большинство налогов на товары между ними.",
             example = "The free trade agreement made olive oil from Spain much cheaper here.",
             exampleNative = "Free trade agreement сделало оливковое масло из Испании здесь намного дешевле.",
-            pos = "noun", semanticGroup = "shopping_global_trade",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_global_trade", fillInBlankExclusions = listOf(35721L, 35722L, 35723L, 35725L)),
 
         WordEntity(id = 35725, setId = 357, languagePair = "en-ru", rarity = "EPIC",
             original = "embargo", transliteration = "[ɛmˈbɑrgoʊ]", translation = "эмбарго (запрет на торговлю)",
@@ -287,7 +263,6 @@ object WordDataEnglishShoppingL5 {
             definitionNative = "Государственный запрет торговать определёнными товарами с другой страной.",
             example = "The embargo stopped luxury watches from reaching local shop windows.",
             exampleNative = "Embargo прекратило поступление дорогих часов на местные витрины.",
-            pos = "noun", semanticGroup = "shopping_global_trade",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "shopping_global_trade", fillInBlankExclusions = listOf(35721L, 35722L, 35723L, 35724L)),
     )
 }

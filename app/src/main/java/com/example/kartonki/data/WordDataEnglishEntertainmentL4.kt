@@ -60,8 +60,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Фирма, которая финансирует, организует и контролирует съёмки фильмов или сериалов.",
             example = "Her small production company shot the documentary in just six weeks.",
             exampleNative = "Её небольшая production company сняла документалку всего за шесть недель.",
-            pos = "noun", semanticGroup = "entertainment_production",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_production", fillInBlankExclusions = listOf(35802L, 35803L, 35804L, 35805L)),
 
         WordEntity(id = 35802, setId = 358, languagePair = "en-ru", rarity = "EPIC",
             original = "executive producer", transliteration = "[ɪɡˈzɛkjətɪv prəˈdusər]",
@@ -70,8 +69,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Старший человек, обеспечивающий финансирование и курирующий весь проект.",
             example = "The executive producer flew in to oversee the final cut last week.",
             exampleNative = "Executive producer прилетел проконтролировать финальный монтаж на прошлой неделе.",
-            pos = "noun", semanticGroup = "entertainment_production",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_production", fillInBlankExclusions = listOf(35801L, 35803L, 35804L, 35805L)),
 
         WordEntity(id = 35803, setId = 358, languagePair = "en-ru", rarity = "EPIC",
             original = "location scouting", transliteration = "[loʊˈkeɪʃən ˈskaʊtɪŋ]",
@@ -80,8 +78,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Работа по поиску реальных мест, где можно снимать фильм или сериал.",
             example = "They spent two months on location scouting across rural Iceland.",
             exampleNative = "Они потратили два месяца на location scouting по сельской Исландии.",
-            pos = "noun", semanticGroup = "entertainment_production",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_production", fillInBlankExclusions = listOf(35801L, 35802L, 35804L, 35805L)),
 
         WordEntity(id = 35804, setId = 358, languagePair = "en-ru", rarity = "EPIC",
             original = "post-production", transliteration = "[poʊst prəˈdʌkʃən]",
@@ -90,8 +87,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Всё, что делают с фильмом после съёмок — монтаж, цвет, музыка, эффекты.",
             example = "The team is still in post-production and the trailer drops next month.",
             exampleNative = "Команда ещё в post-production, а трейлер выйдет в следующем месяце.",
-            pos = "noun", semanticGroup = "entertainment_production",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_production", fillInBlankExclusions = listOf(35801L, 35802L, 35803L, 35805L)),
 
         WordEntity(id = 35805, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "sound design", transliteration = "[saʊnd dɪˈzaɪn]",
@@ -100,8 +96,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Искусство создания всех шумов и атмосферы, нужных фильму или игре.",
             example = "The eerie sound design made the cabin feel haunted from the start.",
             exampleNative = "Жуткий sound design делал хижину зловещей с первой минуты.",
-            pos = "noun", semanticGroup = "entertainment_production",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_production", fillInBlankExclusions = listOf(35801L, 35802L, 35803L, 35804L)),
 
         // ── entertainment_festivals (5) ───────────────────────────────────
 
@@ -112,8 +107,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Многодневное событие, где показывают и судят множество новых фильмов.",
             example = "Her debut feature won the top prize at a small European film festival.",
             exampleNative = "Её дебют взял главный приз на небольшом европейском film festival.",
-            pos = "noun", semanticGroup = "entertainment_festivals",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_festivals", fillInBlankExclusions = listOf(35807L, 35808L, 35809L, 35810L)),
 
         WordEntity(id = 35807, setId = 358, languagePair = "en-ru", rarity = "EPIC",
             original = "world premiere", transliteration = "[wɜrld prɛˈmɪr]",
@@ -122,8 +116,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Самый первый публичный показ фильма где-либо в мире.",
             example = "The world premiere was held in Cannes with the cast on the red carpet.",
             exampleNative = "World premiere прошла в Каннах с актёрами на красной дорожке.",
-            pos = "noun", semanticGroup = "entertainment_festivals",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_festivals", fillInBlankExclusions = listOf(35806L, 35808L, 35809L, 35810L)),
 
         WordEntity(id = 35808, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "official selection", transliteration = "[əˈfɪʃəl səˈlɛkʃən]",
@@ -132,8 +125,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Список работ, выбранных жюри для участия в основной конкурсной программе.",
             example = "Their short made the official selection at three international fests this year.",
             exampleNative = "Их короткометражка попала в official selection трёх международных фестов в этом году.",
-            pos = "noun", semanticGroup = "entertainment_festivals",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_festivals", fillInBlankExclusions = listOf(35806L, 35807L, 35809L, 35810L)),
 
         WordEntity(id = 35809, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "retrospective", transliteration = "[ˌrɛtrəˈspɛktɪv]",
@@ -142,8 +134,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Программа фестиваля, собирающая в одном месте ранние работы автора.",
             example = "The festival opened with a retrospective of the late director's early films.",
             exampleNative = "Фестиваль открыла retrospective ранних фильмов покойного режиссёра.",
-            pos = "noun", semanticGroup = "entertainment_festivals",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_festivals", fillInBlankExclusions = listOf(35806L, 35807L)),
 
         WordEntity(id = 35810, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "audience award", transliteration = "[ˈɔdiəns əˈwɔrd]",
@@ -152,8 +143,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Приз фестиваля, выбираемый голосованием зрителей, а не жюри.",
             example = "The crowd-pleasing comedy walked away with the audience award on closing night.",
             exampleNative = "Народная комедия унесла audience award в закрывающий вечер фестиваля.",
-            pos = "noun", semanticGroup = "entertainment_festivals",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_festivals", fillInBlankExclusions = listOf(35806L, 35807L, 35808L, 35809L)),
 
         // ── entertainment_gaming (5) ──────────────────────────────────────
 
@@ -164,8 +154,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Профессиональное соревнование, где команды или соло-игроки сражаются за крупные призовые.",
             example = "He flew to Seoul for an esports tournament with a million-dollar pool.",
             exampleNative = "Он полетел в Сеул на esports tournament с миллионным призовым фондом.",
-            pos = "noun", semanticGroup = "entertainment_gaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_gaming"),
 
         WordEntity(id = 35812, setId = 358, languagePair = "en-ru", rarity = "EPIC",
             original = "battle pass", transliteration = "[ˈbætəl pæs]",
@@ -174,8 +163,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Платный трек сезонных наград, которые открываются за выполнение ежедневных задач.",
             example = "He bought the new battle pass to unlock the legendary skin set.",
             exampleNative = "Он купил новый battle pass, чтобы открыть легендарный набор скинов.",
-            pos = "noun", semanticGroup = "entertainment_gaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_gaming", fillInBlankExclusions = listOf(35811L, 35813L, 35814L, 35815L)),
 
         WordEntity(id = 35813, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "microtransaction", transliteration = "[ˌmaɪkroʊtrænˈzækʃən]",
@@ -184,8 +172,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Маленький платёж внутри приложения за косметику, валюту или мелкие бонусы.",
             example = "Critics blast the studio for hiding gear behind another microtransaction.",
             exampleNative = "Критики ругают студию за то, что снаряжение спрятано за очередной microtransaction.",
-            pos = "noun", semanticGroup = "entertainment_gaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_gaming", fillInBlankExclusions = listOf(35811L, 35812L, 35814L, 35815L)),
 
         WordEntity(id = 35814, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "downloadable content", transliteration = "[ˌdaʊnˈloʊdəbəl ˈkɑntɛnt]",
@@ -194,8 +181,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Дополнительные миссии, карты или предметы, добавленные к игре после основного релиза.",
             example = "The new downloadable content adds a snowy island and three boss fights.",
             exampleNative = "Новый downloadable content добавляет снежный остров и три битвы с боссами.",
-            pos = "noun", semanticGroup = "entertainment_gaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_gaming", fillInBlankExclusions = listOf(35811L, 35812L, 35813L, 35815L)),
 
         WordEntity(id = 35815, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "season pass", transliteration = "[ˈsizən pæs]",
@@ -204,8 +190,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Пакетный пропуск, открывающий все запланированные дополнения за один игровой год.",
             example = "Loyal fans grabbed the season pass on day one to skip the queue.",
             exampleNative = "Преданные фанаты взяли season pass в первый же день, чтобы не ждать.",
-            pos = "noun", semanticGroup = "entertainment_gaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_gaming", fillInBlankExclusions = listOf(35811L, 35812L, 35813L, 35814L)),
 
         // ── entertainment_streaming (5) ───────────────────────────────────
 
@@ -216,8 +201,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Онлайн-сервис, который доставляет фильмы и сериалы зрителям по запросу.",
             example = "The major streaming platform paid huge sums for exclusive sci-fi rights.",
             exampleNative = "Крупная streaming platform заплатила огромные суммы за эксклюзивные научно-фантастические права.",
-            pos = "noun", semanticGroup = "entertainment_streaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_streaming", fillInBlankExclusions = listOf(35801L, 35817L, 35818L, 35819L, 35820L)),
 
         WordEntity(id = 35817, setId = 358, languagePair = "en-ru", rarity = "EPIC",
             original = "original series", transliteration = "[əˈrɪʤənəl ˈsɪriz]",
@@ -226,8 +210,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Сериал, который снят и принадлежит стриминговому сервису, а не куплен у студии.",
             example = "Her original series was renewed for two more seasons after one weekend.",
             exampleNative = "Её original series продлили ещё на два сезона уже после первых выходных.",
-            pos = "noun", semanticGroup = "entertainment_streaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_streaming", fillInBlankExclusions = listOf(35816L, 35818L, 35819L, 35820L)),
 
         WordEntity(id = 35818, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "watch party", transliteration = "[wɑʧ ˈpɑrti]",
@@ -236,8 +219,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Онлайн-сеанс, где друзья одновременно смотрят одно шоу и переписываются в чате.",
             example = "We hosted a watch party for the finale and chatted through every twist.",
             exampleNative = "Мы устроили watch party на финал и обсуждали в чате каждый поворот.",
-            pos = "noun", semanticGroup = "entertainment_streaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_streaming", fillInBlankExclusions = listOf(35816L, 35819L, 35820L)),
 
         WordEntity(id = 35819, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "simulcast", transliteration = "[ˈsaɪməlˌkæst]",
@@ -246,8 +228,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Трансляция, идущая в разных регионах или платформах в один и тот же час.",
             example = "The new anime gets a global simulcast minutes after the Tokyo airing.",
             exampleNative = "Новое аниме идёт на глобальный simulcast через минуты после показа в Токио.",
-            pos = "noun", semanticGroup = "entertainment_streaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_streaming", fillInBlankExclusions = listOf(35807L, 35816L, 35817L, 35818L, 35820L)),
 
         WordEntity(id = 35820, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "viewership rating", transliteration = "[ˈvjuərʃɪp ˈreɪtɪŋ]",
@@ -256,8 +237,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Число, показывающее, сколько людей подключились к программе или трансляции.",
             example = "The drama beat every rival in the weekly viewership rating chart.",
             exampleNative = "Драма обошла всех соперников в недельной таблице viewership rating.",
-            pos = "noun", semanticGroup = "entertainment_streaming",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_streaming", fillInBlankExclusions = listOf(35816L, 35817L, 35818L, 35819L)),
 
         // ── entertainment_creative (5) ────────────────────────────────────
 
@@ -268,8 +248,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Нанятый сценарист, тихо чинящий слабые сцены в чужом черновике.",
             example = "The studio paid a script doctor to sharpen the second-act plot.",
             exampleNative = "Студия заплатила script doctor, чтобы тот заострил сюжет во втором акте.",
-            pos = "noun", semanticGroup = "entertainment_creative",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_creative", fillInBlankExclusions = listOf(35822L, 35823L, 35824L)),
 
         WordEntity(id = 35822, setId = 358, languagePair = "en-ru", rarity = "EPIC",
             original = "location manager", transliteration = "[loʊˈkeɪʃən ˈmænəʤər]",
@@ -278,8 +257,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Член группы, оформляющий разрешения и доступ для каждой съёмочной площадки.",
             example = "Their location manager negotiated to close a busy bridge for one night.",
             exampleNative = "Их location manager договорился закрыть оживлённый мост на одну ночь.",
-            pos = "noun", semanticGroup = "entertainment_creative",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_creative", fillInBlankExclusions = listOf(35802L, 35821L, 35823L, 35824L, 35825L)),
 
         WordEntity(id = 35823, setId = 358, languagePair = "en-ru", rarity = "EPIC",
             original = "casting director", transliteration = "[ˈkæstɪŋ dɪˈrɛktər]",
@@ -288,8 +266,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Специалист, который находит и подбирает актёров на каждую роль в проекте.",
             example = "A sharp casting director can quietly save a film from poor performances.",
             exampleNative = "Толковый casting director способен тихо спасти фильм от слабой игры.",
-            pos = "noun", semanticGroup = "entertainment_creative",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_creative", fillInBlankExclusions = listOf(35821L, 35822L, 35824L, 35825L)),
 
         WordEntity(id = 35824, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "foley artist", transliteration = "[ˈfoʊli ˈɑrtɪst]",
@@ -298,8 +275,7 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Специалист, вручную воссоздающий бытовые звуки для звуковой дорожки фильма.",
             example = "The foley artist crunched lettuce to mimic boots walking through wet snow.",
             exampleNative = "Foley artist хрустел салатом, имитируя шаги ботинок по мокрому снегу.",
-            pos = "noun", semanticGroup = "entertainment_creative",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_creative", fillInBlankExclusions = listOf(35821L, 35822L, 35823L, 35825L)),
 
         WordEntity(id = 35825, setId = 358, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "intimacy coordinator", transliteration = "[ˈɪntəməsi koʊˈɔrdəˌneɪtər]",
@@ -308,7 +284,6 @@ object WordDataEnglishEntertainmentL4 {
             definitionNative = "Специалист на площадке, оберегающий актёров и их комфорт в чувствительных сценах.",
             example = "An intimacy coordinator now joins almost every major shoot from day one.",
             exampleNative = "Intimacy coordinator теперь присутствует почти на каждой крупной съёмке с первого дня.",
-            pos = "noun", semanticGroup = "entertainment_creative",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "entertainment_creative", fillInBlankExclusions = listOf(35802L)),
     )
 }

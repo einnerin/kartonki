@@ -67,8 +67,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Человек, который пишет инструкции для компьютера на специальном языке.",
             example = "כָּל מְתַכְנֵת בְּחֶבְרָה שֶׁלָּנוּ עוֹבֵד בִּשְׁתֵּי שָׂפוֹת.",
             exampleNative = "Каждый מְתַכְנֵת в нашей фирме работает на двух языках.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174502L, 174503L, 174504L, 174505L)),
         WordEntity(
             id = 174502, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "hightech_intro", transliteration = "mefateakh",
@@ -87,8 +86,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Тот, кто ищет проблемы в продукте до того, как он попадёт к клиенту.",
             example = "קְיוּ אֵיי מָצָא חָמֵשׁ בְּעָיוֹת בַּגִּרְסָה הָאַחֲרוֹנָה.",
             exampleNative = "קְיוּ אֵיי нашёл пять проблем в последней версии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174501L, 174502L, 174504L, 174505L)),
         WordEntity(
             id = 174504, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_intro", transliteration = "menahel mutsar",
@@ -97,8 +95,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Отвечает за видение продукта и за то, что строится в первую очередь.",
             example = "מְנַהֵל מוּצָר הִצִּיג רוֹאוּדְמַפ לַחֲצִי שָׁנָה הַבָּא.",
             exampleNative = "מְנַהֵל מוּצָר показал роадмап на следующие полгода.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174501L, 174502L, 174503L, 174505L)),
         WordEntity(
             id = 174505, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "hightech_intro", transliteration = "me'atsev",
@@ -119,8 +116,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Большая система, на которой работают много сервисов или приложений.",
             example = "כָּל הַחֶבְרָה הַחֲדָשָׁה רָצָה עַל פְּלַטְפוֹרְמָה אַחַת בָּעָנָן.",
             exampleNative = "Вся новая компания работает на одной פְּלַטְפוֹרְמָה в облаке.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174507L, 174508L, 174509L, 174510L)),
         WordEntity(
             id = 174507, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_products", transliteration = "aplikatsya",
@@ -129,8 +125,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Маленькая программа в телефоне для одного дела — карты, музыка или сообщения.",
             example = "הוֹרַדְתִּי אַפְּלִיקַצְיָה חֲדָשָׁה לְמַעֲקַב אַחֲרֵי הוֹצָאוֹת.",
             exampleNative = "Я скачал новое אַפְּלִיקַצְיָה для отслеживания расходов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174506L, 174508L, 174509L, 174510L)),
         WordEntity(
             id = 174508, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "hightech_products", transliteration = "sait",
@@ -149,8 +144,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Новая возможность в продукте — её добавляют, чтобы юзеры хотели его сильнее.",
             example = "הַפִיצְ׳ר הֶחָדָשׁ קָפַץ לַחָבְרֵי הַצֶּוֶות בַּהַתְחָלָה.",
             exampleNative = "Свежий פִיצְ׳ר сначала достался членам команды.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174506L, 174507L, 174508L, 174510L)),
         WordEntity(
             id = 174510, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_products", transliteration = "bag",
@@ -159,8 +153,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Поломка в продукте — он ведёт себя не так, как ожидается.",
             example = "פָּתַחְתִּי כַּרְטִיס עַל בָּאג שֶׁמַּפִּיל אֶת הַטֹּפֶס.",
             exampleNative = "Я завёл тикет на בָּאג, из-за которого падает форма.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174506L, 174507L, 174508L, 174509L)),
 
         // ── hightech_tools (5) — рабочие инструменты ──
         WordEntity(
@@ -211,8 +204,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Маленькая штука в руке — двигает курсор по экрану.",
             example = "הַסּוֹלְלָה שֶׁל הָעַכְבָּר הָאַלְחוּטִי נִגְמְרָה לִי שׁוּב.",
             exampleNative = "Батарейка беспроводного עַכְבָּר у меня снова села.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174511L, 174512L, 174513L, 174514L)),
 
         // ── hightech_workplace (5) — место работы ──
         WordEntity(
@@ -233,8 +225,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Один большой зал без стен между столами разных сотрудников.",
             example = "בָּאוֹפֶּן סְפֵייס שֶׁלָּנוּ קָשֶׁה לְהִתְרַכֵּז בְּלִי אֹזְנִיּוֹת.",
             exampleNative = "В нашем אוֹפֶּן סְפֵייס сложно сосредоточиться без наушников.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174516L, 174518L, 174519L, 174520L)),
         WordEntity(
             id = 174518, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_workplace", transliteration = "khadar yeshivot",
@@ -243,8 +234,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Закрытый кабинет со столом и экраном — для важных бесед без шума снаружи.",
             example = "הִזְמַנְתִּי חֲדַר יְשִׁיבוֹת לְשִׂיחָה עִם הַלָּקוֹחַ בָּאַרְבַּע.",
             exampleNative = "Я забронировал חֲדַר יְשִׁיבוֹת для разговора с клиентом в четыре.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174516L, 174517L, 174519L, 174520L)),
         WordEntity(
             id = 174519, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_workplace", transliteration = "mitbakhon",
@@ -263,8 +253,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Место под зданием, где сотрудники оставляют машину.",
             example = "הַחֲנָיָה בַּחֶבְרָה הָיְתָה מְלֵאָה כְּבָר בְּשֶׁבַע וָחֵצִי.",
             exampleNative = "חֲנָיָה в фирме была забита уже к половине восьмого.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174516L, 174517L, 174518L, 174519L)),
 
         // ── hightech_basic_actions (5) — базовые действия и события ──
         WordEntity(
@@ -275,8 +264,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Набирать инструкции на специальном языке — чтобы машина что-то сделала.",
             example = "אֲנִי אוֹהֵב לִכְתֹּב קוֹד עִם מוּזִיקָה בָּאֹזְנִיּוֹת בַּלַּיְלָה.",
             exampleNative = "Я люблю לִכְתֹּב קוֹד под музыку в наушниках по ночам.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174522L)),
         WordEntity(
             id = 174522, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "hightech_basic_actions", transliteration = "levadek",
@@ -285,7 +273,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Искать источник ошибки в коде и исправлять её.",
             example = "יָשַׁבְתִּי לְבַדֵּק אֶת הַשֵּׁרוּת עַד שָׁלוֹשׁ בַּלַּיְלָה.",
             exampleNative = "Я сидел לְבַדֵּק сервис до трёх ночи.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174523, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -295,8 +282,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Момент, когда новая версия продукта выходит к юзерам наружу.",
             example = "הָרִילִיס נִדְחָה בְּשָׁבוּעַ בִּגְלַל בְּעָיוֹת בַּשֵּׁרוּת.",
             exampleNative = "רִילִיס сдвинули на неделю из-за проблем в сервисе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174524L, 174525L)),
         WordEntity(
             id = 174524, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_basic_actions", transliteration = "miting",
@@ -305,8 +291,7 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Запланированный разговор нескольких людей в Зуме или в кабинете.",
             example = "יֵשׁ לִי מִיטִינְג עִם הַמְּעַצֵּב בְּעֶשֶׂר וָרֶבַע.",
             exampleNative = "У меня מִיטִינְג с дизайнером в десять пятнадцать.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174523L, 174525L)),
         WordEntity(
             id = 174525, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "hightech_basic_actions", transliteration = "imeil",
@@ -315,7 +300,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Текстовое сообщение по сети — с одного адреса на другой.",
             example = "שָׁלַחְתִּי אִימֵייל לַמַּנְהֵל עִם סִכּוּם הַשָּׁבוּעַ.",
             exampleNative = "Я отправил אִימֵייל руководителю с итогами недели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174523L, 174524L)),
     )
 }

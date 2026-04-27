@@ -58,8 +58,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Что-то не так — нужно разобраться: в продукте или в жизни.",
             example = "מָצָאתִי בְּעָיָה קְטַנָּה בַּדַּף הָרָאשִׁי שֶׁל הָאַתָר.",
             exampleNative = "Я нашёл небольшую בְּעָיָה на главной странице сайта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177102L, 177103L, 177104L, 177105L, 177113L, 177114L)),
         WordEntity(
             id = 177102, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_basics", transliteration = "takala",
@@ -68,8 +67,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Момент, когда система перестаёт работать как надо — внезапно для всех.",
             example = "תַּקָּלָה בַּשָּׂרָת הִפִּילָה אֶת הַשֵּׁרוּת לַחֲצִי שָׁעָה הַבֹּקֶר.",
             exampleNative = "תַּקָּלָה на сервере положила сервис на полчаса с утра.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177101L, 177103L, 177104L, 177105L, 177113L, 177114L)),
         WordEntity(
             id = 177103, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "qa_basics", transliteration = "bdika",
@@ -78,8 +76,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Действие — кто-то смотрит на что-то, чтобы понять, всё ли в порядке.",
             example = "כָּל בְּדִיקָה שֶׁלִּי לוֹקַחַת בְּעֵרֶךְ עֶשֶׂר דַּקּוֹת בַּטֶּלֶפוֹן.",
             exampleNative = "Каждая моя בְּדִיקָה занимает примерно десять минут на телефоне.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177101L, 177102L, 177104L, 177105L, 177125L)),
         WordEntity(
             id = 177104, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_basics", transliteration = "ma'arekhet",
@@ -88,8 +85,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Набор частей, что работают вместе — например, сайт, сервер и база данных.",
             example = "כָּל מַעֲרֶכֶת חֲדָשָׁה דּוֹרֶשֶׁת בְּדִיקָה יְסוֹדִית לִפְנֵי הַשִׁחְרוּר.",
             exampleNative = "Любая новая מַעֲרֶכֶת требует тщательной проверки до релиза.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177101L, 177102L, 177105L)),
         WordEntity(
             id = 177105, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "qa_basics", transliteration = "kaftor",
@@ -98,8 +94,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Маленькая зона на экране — там написан текст, по ней щёлкают.",
             example = "הַכַּפְתּוֹר הַכָּתֹם בָּרֹאשׁ שׁוֹלֵחַ אֶת הַטֹּפֶס מִיָּד לַשָּׂרָת.",
             exampleNative = "Оранжевый כַּפְתּוֹר сверху сразу шлёт форму на сервер.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177101L, 177102L, 177103L, 177104L)),
 
         // ── qa_actions (5) — базовые действия пользователя ──
         WordEntity(
@@ -110,8 +105,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Тронуть пальцем или мышкой что-то маленькое на экране.",
             example = "צָרִיךְ לִלְחֹץ פַּעֲמַיִם עַל הַתְּמוּנָה כְּדֵי לְהַגְדִּיל אוֹתָהּ.",
             exampleNative = "Нужно לִלְחֹץ дважды на картинку, чтобы её увеличить.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177107L, 177108L, 177109L, 177110L)),
         WordEntity(
             id = 177107, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "qa_actions", transliteration = "liftoakh",
@@ -130,8 +124,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Перестать показывать окно или вкладку — освободить место на экране.",
             example = "הַמַּעֲרֶכֶת בִּקְּשָׁה לִסְגֹּר אֶת כָּל הַחַלּוֹנוֹת לִפְנֵי הָעִדְכּוּן.",
             exampleNative = "Система попросила לִסְגֹּר все окна перед обновлением.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177106L, 177107L, 177109L, 177110L)),
         WordEntity(
             id = 177109, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "qa_actions", transliteration = "lemale",
@@ -140,8 +133,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Написать текст во всех полях формы — перед тем как её отправить.",
             example = "צָרִיךְ לְמַלֵּא שֵׁם וְכַתֹּבֶת לִפְנֵי שֶׁאֶפְשָׁר לְהִתְקַדֵּם.",
             exampleNative = "Надо לְמַלֵּא имя и адрес — без этого не продвинуться.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177106L, 177107L, 177108L, 177110L)),
         WordEntity(
             id = 177110, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "qa_actions", transliteration = "lishloakh",
@@ -162,7 +154,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Состояние устройства или сервиса — не отзывается на действия пользователя.",
             example = "הַחִפּוּשׂ בָּאַתָר לֹא עוֹבֵד מֵהַבֹּקֶר וְלָקוֹחוֹת מִתְלוֹנְנִים.",
             exampleNative = "Поиск на сайте לֹא עוֹבֵד с утра — клиенты жалуются.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177112, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -172,8 +163,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Ответ программы — отличается от того, что должно быть по верному расчёту.",
             example = "הָאַתָר הֶחְזִיר תּוֹצָאָה לֹא נְכוֹנָה לַחִבּוּר שֶׁל שְׁנֵי מִסְפָּרִים.",
             exampleNative = "Сайт выдал תּוֹצָאָה לֹא נְכוֹנָה на сложение двух чисел.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177113L, 177114L)),
         WordEntity(
             id = 177113, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_findings", transliteration = "krisa",
@@ -182,8 +172,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Внезапный конец программы — экран исчезает, всё закрывается без предупреждения.",
             example = "אַחֲרֵי קְרִיסָה הַטֶּלֶפוֹן הִתְחִיל מֵחָדָשׁ וְאִבַּדְתִּי אֶת הַטֹּפֶס.",
             exampleNative = "После קְרִיסָה телефон перезапустился — и я потерял форму.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177102L, 177112L, 177114L)),
         WordEntity(
             id = 177114, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_findings", transliteration = "tki'a",
@@ -192,8 +181,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Программа перестала отвечать, но не закрылась — экран будто заморожен.",
             example = "הַתְּקִיעָה שֶׁל הָאַפְּלִיקַצְיָה גָּרְמָה לִי לְהַתְחִיל אֶת הַטֶּלֶפוֹן.",
             exampleNative = "תְּקִיעָה приложения заставила меня перезагрузить телефон.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177112L, 177113L)),
         WordEntity(
             id = 177115, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
             pos = "adjective", semanticGroup = "qa_findings", transliteration = "iti",
@@ -202,7 +190,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Такой, что занимает больше времени, чем нужно — без живости, без плавности.",
             example = "הָאַתָר אִטִּי בָּעַרְבּוּ וְכִמְעַט אַף לָקוֹחַ לֹא מַצְלִיחַ לְשַׁלֵּם.",
             exampleNative = "Сайт אִטִּי вечером — почти ни один клиент не успевает оплатить.",
-            isFillInBlankSafe = false,
         ),
 
         // ── qa_report (5) — поля баг-репорта ──
@@ -214,8 +201,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Короткий текст — рассказывает, как что-то выглядит или как произошёл случай.",
             example = "כָּתַבְתִּי תֵּאוּר קָצָר שֶׁל מָה שֶׁקָּרָה לִפְנֵי שֶׁהַטֶּלֶפוֹן נִכְבָּה.",
             exampleNative = "Я написал короткое תֵּאוּר того, что произошло перед выключением телефона.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177117L, 177118L, 177119L, 177120L)),
         WordEntity(
             id = 177117, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_report", transliteration = "tsilum masakh",
@@ -266,8 +252,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Профессионал — ищет проблемы в продукте до того, как тот дойдёт до клиента.",
             example = "כָּל טֶסְטֶר חָדָשׁ לוֹמֵד שָׁבוּעַ אֵיךְ הַמַּעֲרֶכֶת בְּנוּיָה.",
             exampleNative = "Каждый новый טֶסְטֶר неделю учит, как устроена система.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177122L, 177123L, 177124L, 177125L)),
         WordEntity(
             id = 177122, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "qa_team_basic", transliteration = "metakhnet",
@@ -276,8 +261,7 @@ object WordDataHebrewQaL1 {
             definitionNative = "Профессионал — пишет машине инструкции на специальном языке.",
             example = "מְתַכְנֵת מִנִּיסָּיוֹן תִּקֵּן אֶת הַשְּׁגִיאָה תּוֹךְ עֶשְׂרִים דַּקּוֹת.",
             exampleNative = "Опытный מְתַכְנֵת исправил ошибку всего за двадцать минут.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177121L, 177123L, 177124L, 177125L)),
         WordEntity(
             id = 177123, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "qa_team_basic", transliteration = "menahel",
@@ -306,7 +290,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Один кусок работы — выдают человеку с дедлайном и ответственным.",
             example = "קִבַּלְתִּי מְשִׂימָה חֲדָשָׁה לִבְדֹּק אֶת דַּף הַתַּשְׁלוּם בָּעֶרֶב.",
             exampleNative = "Мне досталась новая מְשִׂימָה — проверить страницу оплаты вечером.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177103L, 177121L, 177122L, 177123L, 177124L)),
     )
 }

@@ -62,8 +62,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Личный разговор с человеком из аудитории — понять, как он живёт и что у него болит.",
             example = "רֵאָיוֹן מִשְׁתַּמְּשִׁים אֶחָד גִּלָּה לָנוּ בַּעֲיָה שֶׁלֹּא הִכַּרְנוּ.",
             exampleNative = "Один רֵאָיוֹן מִשְׁתַּמְּשִׁים открыл нам проблему, о которой мы не знали.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176502L, 176503L, 176504L, 176505L)),
         WordEntity(
             id = 176502, setId = 1765, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pm_research", transliteration = "seker",
@@ -72,8 +71,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Одинаковая анкета сразу для многих людей — получить числа, а не только истории.",
             example = "שָׁלַחְנוּ סֶקֶר קָצָר וְקִבַּלְנוּ אֶלֶף תְּשׁוּבוֹת בְּיוֹמַיִם.",
             exampleNative = "Мы разослали короткий סֶקֶר и получили тысячу ответов за два дня.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176501L, 176503L, 176504L, 176505L)),
         WordEntity(
             id = 176503, setId = 1765, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "pm_research", transliteration = "personah",
@@ -82,8 +80,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Воображаемая фигура — сводит группу клиентов к имени, возрасту и главной нужде.",
             example = "בָּנִינוּ פֶּרְסוֹנָה שֶׁל אִמָּא עוֹבֶדֶת בַּת שְׁלוֹשִׁים וּשְׁמוֹנֶה.",
             exampleNative = "Мы построили פֶּרְסוֹנָה работающей мамы тридцати восьми лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176501L, 176502L, 176504L, 176505L)),
         WordEntity(
             id = 176504, setId = 1765, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "pm_research", transliteration = "jobs tu bi dan",
@@ -92,8 +89,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Подход: ради какой задачи в жизни люди «нанимают» продукт.",
             example = "ג׳וֹבְּס טוּ בִּי דָּאן עָזַר לָנוּ לְהָבִין שֶׁמַּתְחָרִים שֶׁלָּנוּ הֵם וֵוייז וּסְפּוֹטִיפַי.",
             exampleNative = "ג׳וֹבְּס טוּ בִּי דָּאן помог понять — наши конкуренты Waze и Spotify.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176501L, 176502L, 176503L, 176505L)),
         WordEntity(
             id = 176505, setId = 1765, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pm_research", transliteration = "mishuv lakokhot",
@@ -102,8 +98,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Замечания и жалобы после использования продукта — в чате, почте или опросах.",
             example = "מִשּׁוּב לָקוֹחוֹת מֵהַחֹדֶשׁ הָאַחֲרוֹן הִצְבִּיעַ עַל בָּעיוֹת בָּאוֹנְבּוֹרְדִּינְג.",
             exampleNative = "מִשּׁוּב לָקוֹחוֹת за последний месяц указал на проблемы в онбординге.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176501L, 176502L, 176503L, 176504L)),
 
         // ── pm_planning (5) — планирование работы ──
         WordEntity(
@@ -114,8 +109,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Подробный документ — что делает фича, для кого и как поймём, что удалась.",
             example = "כָּתַבְתִּי פִּי-אַר-דִּי בָּהִיר וְהַצֶּוֶות אִשֵּׁר אוֹתוֹ בְּלִי שְׁאֵלוֹת.",
             exampleNative = "Я написал чёткий פִּי-אַר-דִּי, и команда утвердила его без вопросов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176507L, 176508L, 176509L, 176510L)),
         WordEntity(
             id = 176507, setId = 1765, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pm_planning", transliteration = "baklog mutsar",
@@ -124,8 +118,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Упорядоченный список всех будущих работ над продуктом — от важного к менее важному.",
             example = "בַּקְלוֹג מוּצָר שֶׁלָּנוּ גָּדַל לִשְׁתַּיִם מֵאוֹת מְשִׂימוֹת בִּתְחִלַּת הַשָּׁנָה.",
             exampleNative = "Наш בַּקְלוֹג מוּצָר вырос до двухсот задач к началу года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176506L, 176508L, 176509L, 176510L)),
         WordEntity(
             id = 176508, setId = 1765, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pm_planning", transliteration = "tikhnun sprint",
@@ -134,8 +127,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Встреча в начале двух недель: команда выбирает, какие задачи довести до конца.",
             example = "תִּכְנוּן סְפְּרִינְט הַשָּׁבוּעַ לָקַח שָׁעָה וָחֵצִי בִּלְבַד.",
             exampleNative = "תִּכְנוּן סְפְּרִינְט на этой неделе занял всего полтора часа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176506L, 176507L, 176509L, 176510L)),
         WordEntity(
             id = 176509, setId = 1765, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "pm_planning", transliteration = "tiadduf",
@@ -144,8 +136,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Решение — что делать первым, что отложить — по ценности клиенту и стоимости команде.",
             example = "תִּעְדוּף נָכוֹן חוֹסֵךְ חֳדָשִׁים שֶׁל פִּתּוּחַ עַל פִיצֶ׳רִים שֶׁאַף אֶחָד לֹא רוֹצֶה.",
             exampleNative = "Правильный תִּעְדוּף экономит месяцы разработки на ненужных фичах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176506L, 176507L, 176508L, 176510L)),
         WordEntity(
             id = 176510, setId = 1765, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pm_planning", transliteration = "yuzer stori",
@@ -154,8 +145,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Короткая фраза «как такой-то я хочу X, чтобы Y» — так пишут требования.",
             example = "כָּל יוּזֶר סְטוֹרִי בַּסְּפְּרִינְט קִבֵּל קְרִיטֶרְיוֹן קַבָּלָה בָּהִיר.",
             exampleNative = "Каждая יוּזֶר סְטוֹרִי в спринте получила чёткий критерий приёмки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176506L, 176507L, 176508L, 176509L)),
 
         // ── pm_metrics (5) — продуктовые метрики ──
         WordEntity(
@@ -166,8 +156,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Единственный показатель — реально ли продукт даёт ценность клиентам со временем.",
             example = "נוֹרְט סְטָאר שֶׁל סְפּוֹטִיפַי הוּא דַּקּוֹת הַאֲזָנָה לְמִשְׁתַּמֵּשׁ.",
             exampleNative = "נוֹרְט סְטָאר у Spotify — минуты прослушивания на пользователя.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176512L, 176513L, 176514L, 176515L)),
         WordEntity(
             id = 176512, setId = 1765, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pm_metrics", transliteration = "shiur hamara",
@@ -196,8 +185,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Насколько люди действуют в продукте — кликают, скроллят, оставляют комментарии.",
             example = "מְעֻרָבוּת בַּפִיד יָרְדָה אַחֲרֵי שֶׁשִּׁנִּינוּ אֶת הָאַלְגוֹרִיתְם.",
             exampleNative = "מְעֻרָבוּת в ленте упала после того, как мы поменяли алгоритм.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176511L, 176512L, 176513L, 176515L)),
         WordEntity(
             id = 176515, setId = 1765, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "pm_metrics", transliteration = "masa lakoakh",
@@ -218,8 +206,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Встреча или серия писем — продакт получает согласие от всех заинтересованных отделов.",
             example = "תֵּאוּם בַּעֲלֵי עִנְיָן לָקַח שָׁבוּעַ עַד שֶׁיָּצָאנוּ לְפִתּוּחַ.",
             exampleNative = "תֵּאוּם בַּעֲלֵי עִנְיָן занял неделю, пока мы вышли на разработку.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176517L, 176518L, 176519L, 176520L)),
         WordEntity(
             id = 176517, setId = 1765, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "pm_collaboration", transliteration = "skirat itsuv",
@@ -228,8 +215,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Короткая встреча: дизайнер показывает варианты экранов, а команда даёт замечания по компонентам.",
             example = "סְקִירַת עִצּוּב לְמָסַךְ הַתַּשְׁלוּם נִקְבְּעָה לְיוֹם רְבִיעִי בְּשָׁלוֹשׁ.",
             exampleNative = "סְקִירַת עִצּוּב для экрана оплаты назначили на среду в три.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176516L, 176518L, 176519L, 176520L)),
         WordEntity(
             id = 176518, setId = 1765, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "pm_collaboration", transliteration = "mifrat handasi",
@@ -238,8 +224,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Документ инженера до кодинга — как система выполнит требования продукта.",
             example = "מִפְרָט הַנְדָּסִי הוּכַן עַל יְדֵי הַטֵּק לִיד אַחֲרֵי שֶׁאִישַׁרְתִּי אֶת הַפִּי-אַר-דִּי.",
             exampleNative = "מִפְרָט הַנְדָּסִי подготовил тимлид после того, как я утвердил PRD.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176516L, 176517L, 176519L, 176520L)),
         WordEntity(
             id = 176519, setId = 1765, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "pm_collaboration", transliteration = "go-tu-market",
@@ -248,8 +233,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Общий план — как добраться до первых клиентов: маркетинг, цены и каналы продаж.",
             example = "גוֹ-טוּ-מַארְקֶט לְשׁוּק הָאַמֵרִיקַאי דָּרַשׁ שֻׁתָּפִים מְקוֹמִיִּים.",
             exampleNative = "גוֹ-טוּ-מַארְקֶט на американский рынок потребовал местных партнёров.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176516L, 176517L, 176518L, 176520L)),
         WordEntity(
             id = 176520, setId = 1765, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pm_collaboration", transliteration = "checklist hashaka",
@@ -258,8 +242,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Список проверок до открытия фичи всем — документация, поддержка и коммуникации.",
             example = "צֶ׳קְלִיסְט הַשָּׁקָה הָיָה מָלֵא לְגַמְרֵי לִפְנֵי הַסְּגִירָה הָאַחֲרוֹנָה.",
             exampleNative = "צֶ׳קְלִיסְט הַשָּׁקָה был полностью закрыт перед финальным гейтом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176516L, 176517L, 176518L, 176519L)),
 
         // ── pm_lifecycle (5) — фазы жизненного цикла продукта ──
         WordEntity(
@@ -270,8 +253,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Стадия до кодинга — выясняют, что у клиента болит и стоит ли вообще делать.",
             example = "דִּיסְקָבֶרִי שֶׁל הַפִיצֶ׳ר הֶחָדָשׁ נִמְשַׁךְ שִׁשָּׁה שָׁבוּעוֹת שְׁלֵמִים.",
             exampleNative = "דִּיסְקָבֶרִי новой фичи длился целых шесть недель.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176522L, 176523L, 176524L, 176525L)),
         WordEntity(
             id = 176522, setId = 1765, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pm_lifecycle", transliteration = "bdikat hanakha",
@@ -280,8 +262,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Маленький быстрый эксперимент — верно ли утверждение о рынке, до вложения кода.",
             example = "בְּדִיקַת הַנָּחָה עִם דַּף נְחִיתָה הוֹכִיחָה שֶׁאַף אֶחָד לֹא רוֹצֶה אֶת הַפִיצֶ׳ר.",
             exampleNative = "בְּדִיקַת הַנָּחָה с лендингом доказала: фича никому не нужна.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176521L, 176523L, 176524L, 176525L)),
         WordEntity(
             id = 176523, setId = 1765, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "pm_lifecycle", transliteration = "shlav pituakh",
@@ -300,8 +281,7 @@ object WordDataHebrewPmL3 {
             definitionNative = "Момент, когда фичу открывают всем клиентам после финальных проверок и согласований.",
             example = "עֲלִיָּה לְאֲוִיר נִדְחֲתָה בְּשָׁבוּעַ בִּגְלַל בָּאג חָמוּר בָּאוֹנְבּוֹרְדִּינְג.",
             exampleNative = "עֲלִיָּה לְאֲוִיר перенесли на неделю из-за серьёзного бага в онбординге.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176521L, 176522L, 176523L, 176525L)),
         WordEntity(
             id = 176525, setId = 1765, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "pm_lifecycle", transliteration = "iteratsya",
@@ -310,7 +290,6 @@ object WordDataHebrewPmL3 {
             definitionNative = "Очередной круг улучшений — после того, как ясно, что не сработало.",
             example = "אַחֲרֵי אִיטֵרַצְיָה שְׁלִישִׁית הַצֶּוֶות מָצָא אֶת הָעִצּוּב הַנָּכוֹן.",
             exampleNative = "После третьей אִיטֵרַצְיָה команда нашла правильный дизайн.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176521L, 176522L, 176523L, 176524L)),
     )
 }

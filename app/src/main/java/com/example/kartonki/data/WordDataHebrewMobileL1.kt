@@ -77,8 +77,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Умный телефон с большим дисплеем, что запускает много программ и выходит в сеть.",
             example = "קָנִיתִי סְמַארְטְפוֹן חָדָשׁ עִם מַצְלֵמָה טוֹבָה לַטִּיּוּל.",
             exampleNative = "Я купил новый סְמַארְטְפוֹן с хорошей камерой для поездки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178301L, 178303L, 178304L, 178305L)),
         WordEntity(
             id = 178303, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "mobile_basic_device", transliteration = "masakh",
@@ -119,8 +118,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Маленькая программа в телефоне для одного дела — карты, музыка или сообщения.",
             example = "הוֹרַדְתִּי אַפְּלִיקַצְיָה חֲדָשָׁה לְמַעֲקָב אַחֲרֵי הוֹצָאוֹת.",
             exampleNative = "Я скачал новое אַפְּלִיקַצְיָה для отслеживания расходов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178307L, 178308L, 178309L, 178310L)),
         WordEntity(
             id = 178307, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_basic_app", transliteration = "aikon",
@@ -129,8 +127,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Маленький цветной рисунок — запускает программу, когда по нему касаются.",
             example = "סִידַּרְתִּי אֶת כָּל הָאַיְקוֹן בְּסֵדֶר חָדָשׁ לְפִי צֶבַע.",
             exampleNative = "Я разложил все אַיְקוֹן по новому порядку — по цвету.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178306L, 178308L, 178309L, 178310L)),
         WordEntity(
             id = 178308, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "mobile_basic_app", transliteration = "tapet",
@@ -139,8 +136,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Фоновая картинка — её видно за иконками, когда открываешь телефон.",
             example = "הֶחְלַפְתִּי טַפֵּט לִתְמוּנָה שֶׁל הַיְּלָדִים בַּחוֹף.",
             exampleNative = "Я поменял טַפֵּט на снимок детей на пляже.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178306L, 178307L, 178309L, 178310L)),
         WordEntity(
             id = 178309, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_basic_app", transliteration = "hom skrin",
@@ -149,8 +145,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Первая страница — открывается после кнопки «домой» или разблокировки телефона.",
             example = "שַׂמְתִּי בַּהוֹם סְקְרִין רַק שָׁלוֹשׁ אַפְּלִיקַצְיוֹת חֲשׁוּבוֹת.",
             exampleNative = "Я оставил на הוֹם סְקְרִין только три важных приложения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178306L, 178307L, 178308L, 178310L)),
         WordEntity(
             id = 178310, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_basic_app", transliteration = "kitsur derekh",
@@ -171,8 +166,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Маленький участок на дисплее — выполняет одно действие, когда по нему касаются.",
             example = "לָחַצְתִּי בִּטְעוּת עַל הַכַּפְתּוֹר הָאָדֹם שֶׁל מְחִיקַת הַחֶשְׁבּוֹן.",
             exampleNative = "Я случайно нажал на красный כַּפְתּוֹר удаления аккаунта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178312L, 178313L, 178314L, 178315L)),
         WordEntity(
             id = 178312, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_basic_ui_simple", transliteration = "sde tekst",
@@ -191,8 +185,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Список вариантов — раскрывается с кнопки и предлагает выбрать одно действие.",
             example = "פָּתַחְתִּי אֶת הַתַּפְרִיט וּבָחַרְתִּי בְּהוֹסָפַת חֶשְׁבּוֹן שֵׁנִי.",
             exampleNative = "Я открыл תַּפְרִיט и выбрал добавление второго аккаунта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178311L, 178312L, 178314L, 178315L)),
         WordEntity(
             id = 178314, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_basic_ui_simple", transliteration = "meteg",
@@ -223,8 +216,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Короткий контакт одного пальца с дисплеем — обычное действие для запуска программы.",
             example = "נְגִיעָה אַחַת בָּאַיְקוֹן פּוֹתַחַת אֶת הַתּוֹכְנָה תּוֹךְ שְׁנִיָּה.",
             exampleNative = "Одна נְגִיעָה по иконке открывает программу за секунду.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178317L, 178319L, 178320L)),
         WordEntity(
             id = 178317, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_basic_actions", transliteration = "swaip",
@@ -243,8 +235,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Удержание пальца на дисплее несколько секунд — открывает дополнительные опции.",
             example = "לְחִיצָה אֲרֻכָּה עַל הָאַיְקוֹן הִרְאֲתָה לִי אֶת תַּפְרִיט הַמְּחִיקָה.",
             exampleNative = "לְחִיצָה אֲרֻכָּה по иконке показала мне меню удаления.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178320L)),
         WordEntity(
             id = 178319, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_basic_actions", transliteration = "tsvita",
@@ -253,8 +244,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Движение двух пальцев — сходятся или расходятся — для смены размера картинки.",
             example = "צְבִיטָה עַל הַמַּפָּה הִגְדִּילָה אֶת הָרְחוֹב שֶׁחִפַּשְׂתִּי.",
             exampleNative = "צְבִיטָה по карте увеличила улицу, которую я искал.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178316L, 178317L)),
         WordEntity(
             id = 178320, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "mobile_basic_actions", transliteration = "klik kaful",
@@ -263,8 +253,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Два быстрых касания подряд по одному месту — для приближения или отметки лайком.",
             example = "קְלִיק כָּפוּל עַל הַתְּמוּנָה בָּאִינְסְטָגְרָם נָתַן לְחָבֵר לֵב אָדֹם.",
             exampleNative = "קְלִיק כָּפוּל по фото в Инстаграме поставил другу красное сердечко.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178318L)),
 
         // ── mobile_basic_install (5) — управление приложениями ──
         WordEntity(
@@ -275,8 +264,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Процесс копирования новой программы в телефон — чтобы её можно было запустить.",
             example = "הַהַתְקָנָה לָקְחָה לִי כִּמְעַט עֶשֶׂר דַּקּוֹת בִּגְלַל אִינְטֶרְנֶט אִטִּי.",
             exampleNative = "הַתְקָנָה заняла у меня почти десять минут — медленный интернет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178322L, 178323L, 178324L)),
         WordEntity(
             id = 178322, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "mobile_basic_install", transliteration = "idkun",
@@ -285,8 +273,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Более новая версия — заменяет старую, добавляет фичи и чинит проблемы.",
             example = "הוֹרַדְתִּי עִדְכּוּן גָּדוֹל בַּלַּיְלָה כְּדֵי לֹא לְהַפְרִיעַ לָעֲבוֹדָה.",
             exampleNative = "Я скачал большое עִדְכּוּן ночью — чтобы не мешать работе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178321L, 178323L, 178324L)),
         WordEntity(
             id = 178323, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "mobile_basic_install", transliteration = "hasara",
@@ -295,8 +282,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Полный вывод программы из телефона — иконка и файлы исчезают вместе.",
             example = "הֶחְלַטְתִּי עַל הֲסָרָה שֶׁל מִשְׂחָקִים יְשָׁנִים כְּדֵי לְפַנּוֹת מָקוֹם.",
             exampleNative = "Я решился на הֲסָרָה старых игр — чтобы освободить место.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178321L, 178322L, 178324L)),
         WordEntity(
             id = 178324, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_basic_install", transliteration = "harshaot",
@@ -305,8 +291,7 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Согласия, что программа просит у пользователя — на камеру, микрофон или местоположение.",
             example = "סֵרַבְתִּי לָתֵת הַרְשָׁאוֹת לְמִיקְרוֹפוֹן בְּמִשְׂחָק לִילָדִים קָטָן.",
             exampleNative = "Я отказал в הַרְשָׁאוֹת на микрофон в маленькой детской игре.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178321L, 178322L, 178323L)),
         WordEntity(
             id = 178325, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "mobile_basic_install", transliteration = "khanut tokhnot",
@@ -315,7 +300,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Цифровое место — там скачивают или покупают официальные программы для телефона.",
             example = "חִפַּשְׂתִּי בַּחֲנוּת תּוֹכְנוֹת מַשֶּׁהוּ לִלְמִידַת עִבְרִית בָּאוֹטוֹבּוּס.",
             exampleNative = "Я искал в חֲנוּת תּוֹכְנוֹת что-то для изучения иврита в автобусе.",
-            isFillInBlankSafe = false,
         ),
     )
 }

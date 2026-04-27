@@ -70,8 +70,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Человек в команде, который придумывает новые алгоритмы и публикует научные статьи.",
             example = "אֶם-אֶל רִיסֵרְצֶ'ר חָדָשׁ הִצְטָרֵף לַצֶּוֶות יָשַׁר מִדּוֹקְטוֹרָט בְּסְטָנְפוֹרְד.",
             exampleNative = "Новый אֶם-אֶל רִיסֵרְצֶ'ר пришёл в команду прямо после докторантуры в Стэнфорде.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175702L, 175703L, 175704L, 175705L)),
         WordEntity(
             id = 175702, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aiml_team", transliteration = "applaid sayantist",
@@ -80,8 +79,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Учёный, который доводит академические идеи до решений, реально работающих у клиентов.",
             example = "אַפְּלַייד סַייאַנְטִיסְט בְּאָמָזוֹן עוֹבֵד עַל מַעֲרֶכֶת הַמְלָצוֹת בִּזְמַן אֱמֶת.",
             exampleNative = "אַפְּלַייד סַייאַנְטִיסְט в Amazon работает над системой рекомендаций в реальном времени.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175701L, 175703L, 175704L, 175705L)),
         WordEntity(
             id = 175703, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aiml_team", transliteration = "em-el inzhʼinir",
@@ -90,8 +88,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Инженер, что строит трубопроводы тренировки и применения ИИ в реальной среде.",
             example = "אֶם-אֶל אִינְגִ'ינִיר תִּקֵּן בָּאג שֶׁגָּרַם לְהַטָיָה בִּתְחַזּוּת הַמְּחִירִים.",
             exampleNative = "אֶם-אֶל אִינְגִ'ינִיר починил баг, из-за которого предсказания цен были смещены.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175701L, 175702L, 175704L, 175705L)),
         WordEntity(
             id = 175704, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aiml_team", transliteration = "em-lops inzhʼinir",
@@ -100,8 +97,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Инженер, отвечающий за инфраструктуру, выкладку и слежку за моделями в продакшене.",
             example = "מַ\"לוֹפְּס אִינְגִ'ינִיר אוֹטוֹמַט אֶת הַסְּבָב הַשָּׁבוּעִי שֶׁל אִימּוּן מֵחָדָשׁ.",
             exampleNative = "מַ\"לוֹפְּס אִינְגִ'ינִיר автоматизировал еженедельный цикл переобучения моделей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175701L, 175702L, 175703L, 175705L)),
         WordEntity(
             id = 175705, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aiml_team", transliteration = "hed of ei-ai",
@@ -110,8 +106,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Старший управленец, решающий технологическое видение и бюджет всех ИИ-возможностей фирмы.",
             example = "הֵד אוֹף אֵיי-אַיי קָבַע שֶׁכָּל מוּצָר חָדָשׁ יִכְלוֹל יְכוֹלוֹת גֵ'נֵרָטִיבִיּוֹת.",
             exampleNative = "הֵד אוֹף אֵיי-אַיי решил, что любой новый продукт будет содержать генеративные функции.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175701L, 175702L, 175703L, 175704L)),
 
         // ── aiml_platform (5) — инфраструктура ML-платформы ──
         WordEntity(
@@ -122,8 +117,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Центральный склад готовых признаков — их делят между командами и моделями.",
             example = "פִיצֶ'ר סְטוֹר חָסַךְ לָנוּ חֹדֶשׁ עֲבוֹדָה כְּפוּלָה עַל אוֹתָם נְתוּנִים.",
             exampleNative = "פִיצֶ'ר סְטוֹר сэкономил нам месяц двойной работы над одними и теми же данными.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175707L, 175708L, 175709L, 175710L)),
         WordEntity(
             id = 175707, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aiml_platform", transliteration = "eksperiment treking",
@@ -132,8 +126,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Система, что хранит итоги каждого прогона — для быстрого сравнения версий.",
             example = "בְּלִי אֶקְסְפֶּרִימֶנְט טְרֵקִינְג נִשְׁכַּח אֵיזוֹ הִיפֶּרְפָּרָמֶטֶר נָתְנָה אֶת הַתּוֹצָאָה.",
             exampleNative = "Без אֶקְסְפֶּרִימֶנְט טְרֵקִינְג забывается, какой гиперпараметр дал лучший результат.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175706L, 175708L, 175709L, 175710L)),
         WordEntity(
             id = 175708, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aiml_platform", transliteration = "GPU klaster",
@@ -142,8 +135,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Связка из сотен графических карт — для тяжёлых тренировок моделей.",
             example = "GPU קְלַסְטֶר חָדָשׁ הִקְטִין אֶת זְמַן הָאִימּוּן מִשָּׁבוּעַ לְשָׁעוֹת.",
             exampleNative = "Новый GPU קְלַסְטֶר сократил время тренировки с недели до часов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175706L, 175707L, 175709L, 175710L)),
         WordEntity(
             id = 175709, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aiml_platform", transliteration = "mivkhan A/B",
@@ -152,8 +144,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Контролируемое сравнение двух версий продукта на схожих группах пользователей.",
             example = "מִבְחַן A/B הוֹכִיחַ שֶׁכַּפְתּוֹר יָרֹק מַעֲלֶה הַמְרוֹת בְּשִׁבְעָה אָחוּז.",
             exampleNative = "מִבְחַן A/B доказал, что зелёная кнопка повышает конверсию на семь процентов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175706L, 175707L, 175708L, 175710L)),
         WordEntity(
             id = 175710, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aiml_platform", transliteration = "data leikhaus",
@@ -162,8 +153,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Архитектура — соединяет дешёвое хранение озера данных со строгими проверками склада.",
             example = "מַעֲבָר לְדַּאטָה לֵייקְהָאוּס חָסַךְ לָנוּ מֵאוֹת אַלְפֵי דּוֹלָר עַל סְנוֹפְלֵייק.",
             exampleNative = "Переход на דַּאטָה לֵייקְהָאוּס сэкономил сотни тысяч долларов на Snowflake.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175706L, 175707L, 175708L, 175709L)),
 
         // ── aiml_ethics (5) — этика, риски и ответственный AI ──
         WordEntity(
@@ -174,8 +164,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Поиск мест, где модель плохо обращается с группами по полу, расе или возрасту.",
             example = "זִיהוּי הַטָיוֹת חָשַׂף שֶׁהַמּוֹדֵל פָּחוֹת מְדֻיָּק עַל פָּנִים כֵּהוֹת.",
             exampleNative = "זִיהוּי הַטָיוֹת показал, что модель менее точна на тёмных лицах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175712L, 175713L, 175714L, 175715L)),
         WordEntity(
             id = 175712, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aiml_ethics", transliteration = "hognut",
@@ -184,8 +173,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Принцип равенства автоматических решений между всеми группами пользователей.",
             example = "וַעֲדַת הוֹגְנוּת בָּדְקָה כָּל אַלְגוֹרִיתְם לִפְנֵי שֶׁעָלָה לִפְּרוֹדַקְשֶׁן.",
             exampleNative = "Комитет по הוֹגְנוּת проверял каждый алгоритм перед выходом в продакшен.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175711L, 175713L, 175714L, 175715L)),
         WordEntity(
             id = 175713, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aiml_ethics", transliteration = "halutsinatsiyot",
@@ -194,8 +182,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Уверенные ответы языковой модели — звучат правдоподобно, но факты выдуманы.",
             example = "הָלוּצִינַצְיוֹת שֶׁל הַצָּ'אטְבּוֹט גָּרְמוּ לִתְלוּנָה רִשְׁמִית מִלָּקוֹחַ.",
             exampleNative = "הָלוּצִינַצְיוֹת чат-бота привели к официальной жалобе от клиента.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175711L, 175712L, 175714L, 175715L)),
         WordEntity(
             id = 175714, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aiml_ethics", transliteration = "hesberiyut",
@@ -204,8 +191,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Способность объяснить простыми словами, почему модель выбрала именно этот ответ.",
             example = "הֶסְבֵּרִיוּת חֲשׁוּבָה בִּמְיֻחָד בְּאַשְׁרַאי שֶׁבּוֹ הַחְלָטָה מְשַׁנָּה חַיֵּי אָדָם.",
             exampleNative = "הֶסְבֵּרִיוּת особенно важна в кредитах, где решение меняет жизнь человека.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175711L, 175712L, 175713L, 175715L)),
         WordEntity(
             id = 175715, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aiml_ethics", transliteration = "ei-ai alaynment",
@@ -226,8 +212,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Внутренние правила: кто разрешает запуск модели и по каким нормам.",
             example = "מְדִינִיּוּת אֵיי-אַיי גוֹבֵרְנֶנְס דּוֹרֶשֶׁת אִישּׁוּר מִשְׁפָּטִי לְכָל יְכוֹלָה גֵ'נֵרָטִיבִית.",
             exampleNative = "Политика אֵיי-אַיי גוֹבֵרְנֶנְס требует юридическое одобрение для каждой генеративной функции.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175717L, 175718L, 175719L, 175720L)),
         WordEntity(
             id = 175717, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aiml_governance", transliteration = "kompliyens",
@@ -236,8 +221,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Регулярное следование требованиям закона и официальным правилам — в каждом действии бизнеса.",
             example = "קוֹמְפְּלָיֶנְס בְּחֶבְרַת בִּיטּוּחַ דּוֹרֵשׁ תִּעוּד שֶׁל כָּל הַחְלָטַת מוֹדֵל.",
             exampleNative = "קוֹמְפְּלָיֶנְס в страховой требует документировать каждое решение модели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175716L, 175718L, 175719L, 175720L)),
         WordEntity(
             id = 175718, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aiml_governance", transliteration = "model card",
@@ -246,8 +230,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Короткий документ — на чём модель тренировалась, для чего годится и где плохо работает.",
             example = "מוֹדֵל קַארְד עַל גִ'יטְהָאבּ הוּא תְּנָאי לְשִׁתּוּף מוֹדֵל בְּקוֹד פָּתוּחַ.",
             exampleNative = "מוֹדֵל קַארְד на GitHub — обязательное условие для публикации открытой модели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175716L, 175717L, 175719L, 175720L)),
         WordEntity(
             id = 175719, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aiml_governance", transliteration = "odit treyl",
@@ -256,8 +239,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Неизменяемая последовательность записей — кто, что и когда делал в системе.",
             example = "אוֹדִיט טְרֵייל מְלָאֵה הוּא תְּנָאי בְּסִיסִי בְּכָל מַעֲרֶכֶת רְפוּאִית.",
             exampleNative = "Полный אוֹדִיט טְרֵייל — базовое условие в любой медицинской системе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175716L, 175717L, 175718L, 175720L)),
         WordEntity(
             id = 175720, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aiml_governance", transliteration = "khok ha-ei-ai",
@@ -266,8 +248,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Европейский закон — делит умные системы по уровню риска и налагает разные требования.",
             example = "חוֹק הָאֵיי-אַיי יְחַיֵּב חֶבְרוֹת אֲמֵרִיקָאִיוֹת לְשַׁנּוֹת מוּצָרִים שֶׁנִּמְכָּרִים בָּאִיחוּד.",
             exampleNative = "חוֹק הָאֵיי-אַיי заставит американские фирмы переделать продукты для рынка ЕС.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175716L, 175717L, 175718L, 175719L)),
 
         // ── aiml_strategy (5) — стратегия AI на уровне компании ──
         WordEntity(
@@ -278,8 +259,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Сумма денег и часов, что фирма выделяет на тренировку и работу умных систем.",
             example = "תַּקְצִיב חִישּׁוּב שֶׁל הַחֶבְרָה הָיָה גָּדוֹל יוֹתֵר מִתַּקְצִיב הַמַּשָּׂכוֹרוֹת.",
             exampleNative = "תַּקְצִיב חִישּׁוּב фирмы оказался больше бюджета на зарплаты.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175722L, 175724L, 175725L)),
         WordEntity(
             id = 175722, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aiml_strategy", transliteration = "khavat sharatim",
@@ -288,8 +268,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Огромное здание с тысячами охлаждаемых машин — крутят тренировки днём и ночью.",
             example = "חַוַּת שְׁרָתִים בְּטֶקְסַס מִתְחַמֶּמֶת כָּל-כָּךְ שֶׁבָּנִינוּ מַעֲרֶכֶת קֵרוּר עַצְמָאִית.",
             exampleNative = "חַוַּת שְׁרָתִים в Техасе так греется, что мы построили автономную систему охлаждения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175721L, 175724L, 175725L)),
         WordEntity(
             id = 175723, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "aiml_strategy", transliteration = "bne o kne",
@@ -298,7 +277,6 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Стратегическая дилемма — сделать решение самому или взять готовый инструмент.",
             example = "הַחְלָטַת בְּנֵה אוֹ קְנֵה בִּמְשִׁיכַת מוֹדֵלִים נָחְתְּכָה לְטוֹבַת אַנְתְ'רוֹפִּיק.",
             exampleNative = "Решение בְּנֵה אוֹ קְנֵה по моделям было сделано в пользу Anthropic.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175724, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -308,8 +286,7 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Замер: сколько денег фирма заработала на каждом шекеле, вложенном в умные системы.",
             example = "הֶחְזֵר עַל אֵיי-אַיי בִּפְּרוֹיֶיקְט הָיָה שְׁלִילִי שָׁנָתַיִם לִפְנֵי שֶׁהָפַךְ לְחִיּוּבִי.",
             exampleNative = "הֶחְזֵר עַל אֵיי-אַיי в проекте был отрицательным два года, прежде чем стал плюсом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175721L, 175722L, 175725L)),
         WordEntity(
             id = 175725, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aiml_strategy", transliteration = "mutsar ei-ai-feirst",
@@ -318,7 +295,6 @@ object WordDataHebrewAiMlL5 {
             definitionNative = "Продукт, в котором умные функции — сердце, а не поздняя надстройка над готовым.",
             example = "מוּצָר אֵיי-אַיי-פֵירְסְט מַתְחִיל מֵהַשְּׁאֵלָה אֵיךְ הַמּוֹדֵל יִפְתֹּר אֶת הַבְּעָיָה.",
             exampleNative = "מוּצָר אֵיי-אַיי-פֵירְסְט начинается с вопроса, как именно модель решит задачу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175721L, 175722L, 175724L)),
     )
 }

@@ -65,8 +65,7 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Привычная манера человека жить, питаться и двигаться каждый день.",
             example = "אֹרַח חַיִּים פָּעִיל מַאֲרִיךְ אֶת הַחַיִּים בְּשָׁנִים רַבּוֹת.",
             exampleNative = "Активный אֹרַח חַיִּים продлевает жизнь на много лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(172702L)),
         WordEntity(
             id = 172702, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "wellness_lifestyle", transliteration = "shigra",
@@ -85,7 +84,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Действие, которое человек повторяет автоматически без раздумий.",
             example = "לִשְׁתּוֹת כּוֹס מַיִם בַּבֹּקֶר הוּא הֶרְגֵּל מְצֻיָּן.",
             exampleNative = "Стакан воды утром — отличный הֶרְגֵּל.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172702L, 172704L, 172705L)),
         WordEntity(
             id = 172704, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -95,7 +93,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Ощущение энергии и ясности после отдыха или прохладного душа.",
             example = "מִקְלַחַת בַּבֹּקֶר נוֹתֶנֶת לִי רַעֲנָנוּת לְכָל הַיּוֹם.",
             exampleNative = "Утренний душ дарит мне רַעֲנָנוּת на весь день.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172702L, 172703L, 172705L)),
         WordEntity(
             id = 172705, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -105,7 +102,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Перерыв в работе и нагрузке, чтобы восстановить силы.",
             example = "אַחֲרֵי שְׁעַת הַחֲדַר כֹּשֶׁר אֲנִי צָרִיךְ מְנוּחָה.",
             exampleNative = "После часа в зале мне нужна מְנוּחָה.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172702L, 172703L, 172704L)),
 
         // ── body_movement (5) — повседневное движение ──
@@ -117,7 +113,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Спокойное передвижение на ногах в неспешном темпе.",
             example = "הֲלִיכָה שֶׁל חֲצִי שָׁעָה בִּפְעָמַיִם בְּשָׁבוּעַ מַסְפִּיקָה לִי.",
             exampleNative = "Получасовой הֲלִיכָה дважды в неделю мне хватает.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172707L, 172708L, 172709L, 172710L)),
         WordEntity(
             id = 172707, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -127,7 +122,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Резкое движение, отрывающее тело от земли усилием ног.",
             example = "הַיֶּלֶד עָשָׂה קְפִיצָה גְּבוֹהָה מֵעַל הַסַּפְסָל.",
             exampleNative = "Мальчик сделал высокий קְפִיצָה через скамейку.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172706L, 172708L, 172709L, 172710L)),
         WordEntity(
             id = 172708, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -137,7 +131,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Подъём ноги вперёд и опускание её на землю при ходьбе.",
             example = "כָּל צַעַד מְקָרֵב אוֹתִי לָעֲשָׂרַת אֲלָפִים הַיּוֹמִיִּים.",
             exampleNative = "Каждый צַעַד приближает меня к дневной норме в десять тысяч.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172706L, 172707L, 172709L, 172710L)),
         WordEntity(
             id = 172709, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -147,7 +140,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Перемещение тела или его части в пространстве.",
             example = "תְּנוּעָה רַכָּה שֶׁל הַזְּרוֹעַ עוֹזֶרֶת לְהַרְפּוֹת אֶת הַכָּתֵף.",
             exampleNative = "Мягкая תְּנוּעָה рукой расслабляет плечо.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172706L, 172707L, 172708L, 172710L)),
         WordEntity(
             id = 172710, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -169,7 +161,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Тот, кто долго работает физически и не сдаётся быстро.",
             example = "הוּא רָעוּף וּמְסַיֵּם אֶת הָעֲלִיָּה לַהָר בְּלִי הַפְסָקָה.",
             exampleNative = "Он רָעוּף и доходит до вершины горы без передышки.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172712L, 172713L, 172714L, 172715L)),
         WordEntity(
             id = 172712, setId = 1727, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -189,7 +180,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Тот, кто двигается и реагирует быстро и точно.",
             example = "הוּא זָרִיז וְקוֹלֵט אֶת הַכַּדּוּר בָּאֲוִיר.",
             exampleNative = "Он זָרִיז и ловит мяч прямо в воздухе.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172711L, 172712L, 172714L, 172715L)),
         WordEntity(
             id = 172714, setId = 1727, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -199,7 +189,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Человек плотного сложения, выдерживающий большие нагрузки.",
             example = "הַסַּבָּא חָסֹן וְעוֹדֶנּוּ סוֹחֵב שַׂקֵּי מֶלֶט.",
             exampleNative = "Дед חָסֹן и до сих пор таскает мешки с цементом.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172711L, 172712L, 172713L, 172715L)),
         WordEntity(
             id = 172715, setId = 1727, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -221,7 +210,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Помещение с тренажёрами, в котором занимаются физкультурой.",
             example = "אֲנִי קוֹנֶה מָנוּי לַחֲדַר כֹּשֶׁר לֹא רָחוֹק מִן הַבַּיִת.",
             exampleNative = "Я покупаю абонемент в חֲדַר כֹּשֶׁר недалеко от дома.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172717L, 172718L, 172719L, 172720L)),
         WordEntity(
             id = 172717, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -231,7 +219,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Короткое физическое движение, повторяемое ради улучшения тела.",
             example = "הַמַּדְרִיךְ הִסְבִּיר אֶת הַתַּרְגִּיל הֶחָדָשׁ בִּדְבָרִים פְּשׁוּטִים.",
             exampleNative = "Инструктор объяснил новый תַּרְגִּיל простыми словами.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172716L, 172718L, 172719L, 172720L)),
         WordEntity(
             id = 172718, setId = 1727, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -241,7 +228,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Дневная активность, измеряемая количеством сделанных шагов.",
             example = "אַפְּלִיקַצְיָה בַּטֶּלֶפוֹן עוֹקֶבֶת אַחַר תְּנוּעָה בְּצַעֲדִים שֶׁלִּי.",
             exampleNative = "Приложение в телефоне следит за моей תְּנוּעָה בְּצַעֲדִים.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172716L, 172717L, 172719L, 172720L)),
         WordEntity(
             id = 172719, setId = 1727, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -251,7 +237,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Тот, кто следит за едой, сном и движением ради хорошего тела.",
             example = "הוּא שׁוֹמֵר בְּרִיאוּת וְלָכֵן הוֹלֵךְ בָּרֶגֶל לָעֲבוֹדָה.",
             exampleNative = "Он שׁוֹמֵר בְּרִיאוּת и поэтому ходит на работу пешком.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172716L, 172717L, 172718L, 172720L)),
         WordEntity(
             id = 172720, setId = 1727, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -261,7 +246,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Группа людей, собирающихся раз в неделю на постоянное занятие.",
             example = "רָשַׁמְתִּי אֶת הַיֶּלֶד לַחוּג סְפּוֹרְט בִּמְרַכֵּז הַקְּהִילָה.",
             exampleNative = "Я записал ребёнка в חוּג סְפּוֹרְט в общинном центре.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172716L, 172717L, 172718L, 172719L)),
 
         // ── wellness_diet (5) — здоровое питание ──
@@ -273,7 +257,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Всё, что человек ест и пьёт в течение дня.",
             example = "תְּזוּנָה מְאֻזֶּנֶת חֲשׁוּבָה לֹא פָּחוֹת מֵאִמּוּן קָבוּעַ.",
             exampleNative = "Сбалансированная תְּזוּנָה важна не меньше регулярных нагрузок.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172722L, 172723L, 172724L)),
         WordEntity(
             id = 172722, setId = 1727, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -283,7 +266,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Жёсткие правила еды ради снижения веса или иной цели.",
             example = "הָרוֹפֵא הִמְלִיץ לִי עַל דִּיאֵטָה דַּלַּת מֶלַח.",
             exampleNative = "Врач посоветовал мне דִּיאֵטָה с пониженной солью.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172721L, 172723L, 172724L)),
         WordEntity(
             id = 172723, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -293,7 +275,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Зелёные или цветные растения, растущие в земле или на кустах.",
             example = "צַלַּחַת שֶׁל יְרָקוֹת טְרִיִּים מוֹסִיפָה הַרְבֵּה וִיטָמִינִים.",
             exampleNative = "Тарелка свежих יְרָקוֹת добавляет много витаминов.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172721L, 172722L, 172724L)),
         WordEntity(
             id = 172724, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -303,7 +284,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Лёгкая еда между основными приёмами без лишнего сахара и жиров.",
             example = "תַּפּוּחַ עִם שְׁקֵדִים הוּא חֲטִיף בָּרִיא טִיפּוּסִי.",
             exampleNative = "Яблоко с миндалём — типичный חֲטִיף בָּרִיא.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172721L, 172722L, 172723L)),
         WordEntity(
             id = 172725, setId = 1727, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -313,7 +293,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Привычка пить много жидкости в течение дня для здоровья.",
             example = "בַּקֵּיץ הַחַם הָרוֹפְאִים מַזְכִּירִים שְׁתִיָּה מְרֻבָּה.",
             exampleNative = "Жарким летом врачи напоминают про שְׁתִיָּה מְרֻבָּה.",
-            isFillInBlankSafe = false,
         ),
 
         // ══════════════════════════════════════════════════════════════════════
@@ -332,7 +311,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Степень усилия, которое человек вкладывает в движение или подход.",
             example = "הַמַּדְרִיךְ הִגְבִּיר אֶת הַעֲמִיצוּת שֶׁל הַתַּרְגִּיל הָאַחֲרוֹן.",
             exampleNative = "Инструктор поднял עֲמִיצוּת последнего упражнения.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172802L, 172803L, 172804L, 172805L)),
         WordEntity(
             id = 172802, setId = 1728, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -342,7 +320,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Способность долго работать без остановки и снижения темпа.",
             example = "אִמּוּן בַּיָּם בּוֹנֶה סְבֹלֶת לֵב וְרֵיאוֹת.",
             exampleNative = "Морские заплывы строят סְבֹלֶת сердца и лёгких.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172801L, 172803L, 172804L, 172805L)),
         WordEntity(
             id = 172803, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -352,7 +329,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Постоянная скорость действия — бега, дыхания или ударов.",
             example = "שָׁמַרְתִּי קֶצֶב נוֹחַ לָרוּץ אֶת כָּל חֲצִי הַמָּרָתוֹן.",
             exampleNative = "Я держал удобный קֶצֶב весь полумарафон.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172801L, 172802L, 172804L, 172805L)),
         WordEntity(
             id = 172804, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -362,7 +338,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Период, когда мышцы возвращают силу после тяжёлой работы.",
             example = "הִתְאוֹשְׁשׁוּת אִטִּית מַעֲלָה אֶת הַסַּכָּנָה לִפְצִיעָה.",
             exampleNative = "Медленная הִתְאוֹשְׁשׁוּת поднимает риск травмы.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172801L, 172802L, 172803L, 172805L)),
         WordEntity(
             id = 172805, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -372,7 +347,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Накапливающееся усилие за одно занятие или неделю.",
             example = "עוֹמֶס גָּבוֹהַּ מִדַּי גּוֹרֵם לִשְׁבִירַת הַשִּׁגְרָה.",
             exampleNative = "Слишком высокий עוֹמֶס сбивает регулярность.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172801L, 172802L, 172803L, 172804L)),
 
         // ── exercises_strength (5) — силовые упражнения ──
@@ -394,7 +368,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Упражнение опускания и подъёма корпуса со сгибанием ног.",
             example = "כְּפִיפַת בִּרְכַּיִם נְכוֹנָה דּוֹרֶשֶׁת גַּב יָשָׁר וַעֲקֵבִים בָּקַּרְקַע.",
             exampleNative = "Правильная כְּפִיפַת בִּרְכַּיִם требует ровной спины и пяток в полу.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172808, setId = 1728, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -404,7 +377,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Результат упражнений, укрепляющих мышцы передней части пресса.",
             example = "שִׁשָּׁה חֳדָשִׁים בִּקְבִיעוּת נָתְנוּ לוֹ בָּטֶן שְׁטוּחָה.",
             exampleNative = "Полгода регулярности дали ему בָּטֶן שְׁטוּחָה.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172806L, 172809L, 172810L)),
         WordEntity(
             id = 172809, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -414,7 +386,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Горизонтальный упор на предплечья и носки для всего корпуса.",
             example = "פְּלַאנְק שֶׁל דַּקָּה כָּל יוֹם מַרְגִּישׁ בָּגַב.",
             exampleNative = "Минута פְּלַאנְק каждый день чувствуется в спине.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172806L, 172808L, 172810L)),
         WordEntity(
             id = 172810, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -424,7 +395,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Работа со снарядами для роста крупных мышц спины и ног.",
             example = "הֲרָמַת מִשְׁקָלוֹת דּוֹרֶשֶׁת תְּשׁוּמַת לֵב לְטֶכְנִיקָה.",
             exampleNative = "הֲרָמַת מִשְׁקָלוֹת требует внимания к технике.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172806L, 172808L, 172809L)),
 
         // ── fitness_equipment (5) — снаряжение и инструменты ──
@@ -436,7 +406,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Тренажёр с движущейся лентой для бега на месте в зале.",
             example = "כָּל בֹּקֶר אֲנִי עַל הַהֲלִיכוֹן רֶבַע שָׁעָה.",
             exampleNative = "Каждое утро я по четверти часа на הֲלִיכוֹן.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172812L)),
         WordEntity(
             id = 172812, setId = 1728, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -446,7 +415,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Тренажёр-велосипед, на котором крутят педали стоя на месте.",
             example = "אוֹפַן כֹּשֶׁר בַּסָּלוֹן חוֹסֵךְ לִי נְסִיעָה לַחֲדַר כֹּשֶׁר.",
             exampleNative = "אוֹפַן כֹּשֶׁר в гостиной экономит мне дорогу в зал.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172811L)),
         WordEntity(
             id = 172813, setId = 1728, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -456,7 +424,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Лёгкий шнур, который крутят над головой и под ногами с прыжками.",
             example = "חֶבֶל קְפִיצָה הוּא הַכְּלִי הַזּוֹל בְּיוֹתֵר לְקַרְדִּיוֹ.",
             exampleNative = "חֶבֶל קְפִיצָה — самый дешёвый снаряд для кардио.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172814L, 172815L)),
         WordEntity(
             id = 172814, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -466,7 +433,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Мягкий нескользящий мат, который кладут на пол для занятий.",
             example = "מִזְרוֹן יוֹגָה אֵיכוּתִי מוֹנֵעַ פְּצִיעוֹת בְּעַמּוּד הַשִּׁדְרָה.",
             exampleNative = "Качественный מִזְרוֹן יוֹגָה защищает позвоночник от травм.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172813L, 172815L)),
         WordEntity(
             id = 172815, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -476,7 +442,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Неустойчивая платформа для тренировки равновесия и кора.",
             example = "לוּחַ זְרִימָה עוֹזֵר אַחֲרֵי פְּגִיעָה בָּקַּרְסֹל.",
             exampleNative = "לוּחַ זְרִימָה помогает после повреждения голеностопа.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172813L, 172814L)),
 
         // ── sport_nutrition (5) — спортивное питание ──
@@ -488,7 +453,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Главный пищевой компонент, из которого строятся мышцы.",
             example = "בֵּיצָה גְּדוֹלָה נוֹתֶנֶת שִׁשָּׁה גְּרַם חֶלְבּוֹן.",
             exampleNative = "Большое яйцо даёт шесть граммов חֶלְבּוֹן.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172817L, 172818L, 172820L)),
         WordEntity(
             id = 172817, setId = 1728, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -508,7 +472,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Компонент еды, обеспечивающий долгое и плотное топливо.",
             example = "אֲבוֹקָדוֹ עָשִׁיר בְּשֻׁמָּן בָּרִיא.",
             exampleNative = "Авокадо богато полезным שֻׁמָּן.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172816L, 172817L, 172820L)),
         WordEntity(
             id = 172819, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -518,7 +481,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Напиток из порошка, насыщенного белком, с молоком или водой.",
             example = "אַחֲרֵי הַתַּרְגִּיל אֲנִי שׁוֹתֶה שֵׁיק חֶלְבּוֹנִי טְרִי.",
             exampleNative = "После упражнений я пью свежий שֵׁיק חֶלְבּוֹנִי.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172820, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -528,7 +490,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Препарат к еде, восполняющий нехватку витаминов или минералов.",
             example = "הַמְּאַמֵּן הִמְלִיץ לִי עַל תּוֹסָף בַּרְזֶל לִפְנֵי הַמֵּרוֹץ.",
             exampleNative = "Тренер посоветовал мне תּוֹסָף железа перед стартом.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172816L, 172817L, 172818L)),
 
         // ── body_metrics (5) — измерения и параметры ──
@@ -540,7 +501,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Доля жировой ткани в общей массе тела человека.",
             example = "מַד מַיוּחָד מוֹדֵד לִי אֶת הָאֲחוּז שֻׁמָּן בַּבַּיִת.",
             exampleNative = "Особый прибор измеряет мне אֲחוּז שֻׁמָּן дома.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172822L, 172823L, 172825L)),
         WordEntity(
             id = 172822, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -560,7 +520,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Размер в сантиметрах вокруг самой узкой части живота.",
             example = "הֶקֵּף מָתְנַיִם הוּא סִימָן טוֹב לְבְרִיאוּת הַלֵּב.",
             exampleNative = "הֶקֵּף מָתְנַיִם — хороший индикатор здоровья сердца.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172821L, 172822L, 172825L)),
         WordEntity(
             id = 172824, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -570,7 +529,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Единица энергии, которую еда даёт телу для дневной работы.",
             example = "תַּפּוּחַ בֵּינוֹנִי מַחֲזִיק כְּמֵאָה קָלוֹרְיָה.",
             exampleNative = "Среднее яблоко держит около ста קָלוֹרְיָה.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172825, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -580,7 +538,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Число ударов сердца в минуту в полностью спокойном состоянии.",
             example = "דֹּפֶק מְנוּחָה נָמוּךְ מְעִיד עַל לֵב חָסֹן.",
             exampleNative = "Низкий דֹּפֶק מְנוּחָה говорит о крепком сердце.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172821L, 172822L, 172823L)),
 
         // ══════════════════════════════════════════════════════════════════════
@@ -599,7 +556,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Метод чередования взрывных отрезков работы с короткими паузами.",
             example = "אִמּוּן אִינְטֶרְוָלִים שׂוֹרֵף קָלוֹרְיוֹת שָׁעוֹת אַחֲרֵי הַסּוֹף.",
             exampleNative = "אִמּוּן אִינְטֶרְוָלִים жжёт калории часами после конца сессии.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172902L, 172903L)),
         WordEntity(
             id = 172902, setId = 1729, languagePair = "he-ru", rarity = "RARE",
@@ -609,7 +565,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Упражнение, копирующее обычное действие — поднять ребёнка или сумку.",
             example = "תְּנוּעָה תִּפְקוּדִית עוֹזֶרֶת לַסַּבָּא לְהָרִים אֶת הַנֶּכֶד מֵהָרִצְפָּה.",
             exampleNative = "תְּנוּעָה תִּפְקוּדִית помогает деду поднять внука с пола.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172901L, 172903L)),
         WordEntity(
             id = 172903, setId = 1729, languagePair = "he-ru", rarity = "RARE",
@@ -619,7 +574,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Тип упражнения, при котором мышца напрягается без изменения длины.",
             example = "פְּלַאנְק הוּא תַּרְגִּיל אִיזוֹמֶטְרִי קְלָאסִי לַליבָּה.",
             exampleNative = "Планка — классический אִיזוֹמֶטְרִי для кора.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172901L, 172902L)),
         WordEntity(
             id = 172904, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
@@ -629,7 +583,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Метод мощных прыжков, активирующий быстрые мышечные волокна.",
             example = "פְּלִיוֹמֶטְרִיָה בּוֹנָה כֹּחַ נִפְצוֹץ בַּמַּסּוּעִים.",
             exampleNative = "פְּלִיוֹמֶטְרִיָה строит взрывную мощь у спринтеров.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172905L)),
         WordEntity(
             id = 172905, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
@@ -639,7 +592,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Планирование циклов нагрузки по неделям и месяцам ради пика.",
             example = "פֶּרְדִיזַצְיָה נְכוֹנָה מוֹנַעַת הַתְשָׁשׁוּת בְּאֶמְצַע הַעוֹנָה.",
             exampleNative = "Правильная פֶּרְדִיזַצְיָה предотвращает истощение в середине сезона.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172904L)),
 
         // ── biomechanics_basics (5) — биомеханика любителя ──
@@ -651,7 +603,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Способ держать тело при стоянии и сидении.",
             example = "יְצִיבָה זְקוּפָה מַפְחִיתָה כְּאֵבִים בַּגַּב הַתַּחְתּוֹן.",
             exampleNative = "Прямая יְצִיבָה снижает боль в пояснице.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172907L, 172909L, 172910L)),
         WordEntity(
             id = 172907, setId = 1729, languagePair = "he-ru", rarity = "RARE",
@@ -661,7 +612,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Диапазон, в котором сустав двигается без боли.",
             example = "נַיָּדוּת טוֹבָה בַּכָּתֵף מוֹנַעַת פְּצִיעוֹת בִּשְׂחִיָּה.",
             exampleNative = "Хорошая נַיָּדוּת плеча защищает от травм при плавании.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172906L, 172909L, 172910L)),
         WordEntity(
             id = 172908, setId = 1729, languagePair = "he-ru", rarity = "RARE",
@@ -671,8 +621,7 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Способность держать тело устойчиво против силы тяжести.",
             example = "שִׁוּוּי מִשְׁקָל יוֹרֵד עִם הַגִּיל וְלָכֵן צָרִיךְ לְתַרְגֵּל.",
             exampleNative = "שִׁוּוּי מִשְׁקָל падает с возрастом и требует тренировки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(172906L, 172907L)),
         WordEntity(
             id = 172909, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "biomechanics_basics", transliteration = "kineziologya",
@@ -681,7 +630,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Область, изучающая движение человеческого тела на стыке наук.",
             example = "קִינֵזְיוֹלוֹגְיָה מַסְבִּירָה לָמָּה כּוֹאֵב לִי הַגַּב הַתַּחְתּוֹן.",
             exampleNative = "קִינֵזְיוֹלוֹגְיָה объясняет, почему болит моя поясница.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172906L, 172907L, 172910L)),
         WordEntity(
             id = 172910, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
@@ -691,7 +639,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Чувство положения тела в пространстве без участия зрения.",
             example = "תַּרְגִּילִים בְּעֵינַיִם עֲצוּמוֹת מְשַׁפְּרִים פְּרוֹפְּרִיוֹצֶפְּצְיָה.",
             exampleNative = "Упражнения с закрытыми глазами улучшают פְּרוֹפְּרִיוֹצֶפְּצְיָה.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172906L, 172907L, 172909L)),
 
         // ── nutrition_science (5) — нутрициология ──
@@ -723,7 +670,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Заряженные соли, балансирующие жидкости тела при потоотделении.",
             example = "מַשְׁקֶה אִיזוֹטוֹנִי מְשִׁיב אֶלֶקְטְרוֹלִיט אַחֲרֵי מֵרוֹץ אָרֹךְ.",
             exampleNative = "Изотонический напиток восполняет אֶלֶקְטְרוֹלִיט после долгой пробежки.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172911L, 172912L, 172914L)),
         WordEntity(
             id = 172914, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
@@ -733,7 +679,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Хранилище сахара в мышцах и печени, питающее усилие.",
             example = "מָנָה שֶׁל פָּסְטָה לִפְנֵי מָרָתוֹן מְמַלֵּאת אֶת הַגְּלִיקוֹגֵן.",
             exampleNative = "Порция пасты перед марафоном пополняет גְּלִיקוֹגֵן.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172911L, 172912L, 172913L)),
         WordEntity(
             id = 172915, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
@@ -743,7 +688,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Короткий отрезок после нагрузки, когда белок усваивается лучше.",
             example = "חַלּוֹן אֲנַבּוֹלִי הוּא סִיבָּה לֶאֱכוֹל מִיָּד אַחֲרֵי הָאִמּוּן.",
             exampleNative = "חַלּוֹן אֲנַבּוֹלִי — повод поесть сразу после занятия.",
-            isFillInBlankSafe = false,
         ),
 
         // ── body_systems (5) — системы тела с фитнес-точки ──
@@ -765,7 +709,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Лёгкие и бронхи, забирающие кислород и выводящие углекислоту.",
             example = "אִמּוּן בָּהָרִים מְשַׁפֵּר אֶת מַעֲרֶכֶת הַנְּשִׁימָה בִּדְרָמָתִיּוּת.",
             exampleNative = "Тренировка в горах резко улучшает מַעֲרֶכֶת הַנְּשִׁימָה.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172916L, 172918L)),
         WordEntity(
             id = 172918, setId = 1729, languagePair = "he-ru", rarity = "RARE",
@@ -775,7 +718,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Ткань, скрепляющая мышцы, кости и суставы воедино.",
             example = "מְתִיחוֹת אִטּוֹת מְשַׁפְּרוֹת אֶת הַרִקְמָה חִבּוּרִית.",
             exampleNative = "Медленная растяжка улучшает רִקְמָה חִבּוּרִית.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172916L, 172917L)),
         WordEntity(
             id = 172919, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
@@ -785,7 +727,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Тонкая оболочка, обхватывающая каждую мышцу.",
             example = "עִסּוּי שֶׁל פַסְצְיָה מַפְחִית כְּאֵב לְאַחַר אִמּוּן קָשֶׁה.",
             exampleNative = "Массаж פַסְצְיָה снимает боль после тяжёлой нагрузки.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172920L)),
         WordEntity(
             id = 172920, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
@@ -795,7 +736,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Прочное волокно, соединяющее мышцу с костью и передающее силу.",
             example = "פְּגִיעָה בַּגִּיד שֶׁל אָכִילֵס שׁוֹלַחַת רָץ לְהַפְסָקָה אֲרֻכָּה.",
             exampleNative = "Травма ахилла-גִּיד отправляет бегуна в долгий отпуск.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172919L)),
 
         // ── performance_tracking (5) — мониторинг и метрики ──
@@ -807,7 +747,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Максимум кислорода, который тело усваивает за минуту.",
             example = "צְרִיכַת חַמְצָן מֵרַבִּית גְּבוֹהָה הִיא סִימָן לְכוֹשֶׁר אַתְלֵטִי.",
             exampleNative = "Высокая צְרִיכַת חַמְצָן מֵרַבִּית — признак спортивной формы.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172922L, 172925L)),
         WordEntity(
             id = 172922, setId = 1729, languagePair = "he-ru", rarity = "RARE",
@@ -817,7 +756,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Скорость превращения еды в доступную организму энергию.",
             example = "קֶצֶב חִלּוּף חָמָרִים יוֹרֵד בִּלְילוֹת שֶׁל שֵׁנָה גְּרוּעָה.",
             exampleNative = "קֶצֶב חִלּוּף חָמָרִים падает после ночей плохого сна.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172921L, 172925L)),
         WordEntity(
             id = 172923, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
@@ -837,7 +775,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Падение результатов из-за чрезмерной нагрузки без отдыха.",
             example = "שְׁחִיקָה גּוֹרֶמֶת לִישׁוֹן גָּרוּעַ וּלְעַצְבָּנוּת.",
             exampleNative = "שְׁחִיקָה рушит сон и делает раздражительным.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172923L)),
         WordEntity(
             id = 172925, setId = 1729, languagePair = "he-ru", rarity = "EPIC",
@@ -847,7 +784,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Интенсивность, после которой кислота копится быстрее, чем выводится.",
             example = "סַף חוּמְצַת חָלָב נִקְבָּע בְּמַעְבָּדָה עִם בְּדִיקָת דָּם.",
             exampleNative = "סַף חוּמְצַת חָלָב замеряют в лаборатории по крови.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(172921L, 172922L)),
     )
 }

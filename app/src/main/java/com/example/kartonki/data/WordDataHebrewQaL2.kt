@@ -55,8 +55,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Короткая автопроверка одной функции — без зависимости от всей системы.",
             example = "כָּל מְפַתֵּחַ צָרִיךְ לִכְתֹּב יוּנִיט טֶסְט לְכָל פּוּנְקְצְיָה חֲדָשָׁה.",
             exampleNative = "Каждый разработчик должен писать יוּנִיט טֶסְט для любой новой функции.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176102L, 176103L, 176104L, 176105L)),
         WordEntity(
             id = 176102, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_test_types", transliteration = "integratzia test",
@@ -65,8 +64,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Проверяет, что несколько отдельных компонентов корректно работают вместе.",
             example = "אִינְטֶגְרַצְיָה טֶסְט תָּפַס תַּקָּלָה בַּחִיבּוּר בֵּין הַשֵּׁרֵת לְמַסַּד הַנְּתוּנִים.",
             exampleNative = "אִינְטֶגְרַצְיָה טֶסְט поймал поломку связки сервера и базы данных.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176101L, 176103L, 176104L, 176105L)),
         WordEntity(
             id = 176103, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_test_types", transliteration = "i-tu-i",
@@ -75,8 +73,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Проверка всего пути пользователя — от входа до оплаты включительно.",
             example = "הַ-אִי-טוּ-אִי שֶׁל הַתַּשְׁלוּם נִכְשַׁל אַחֲרֵי הַשִּׁדְרוּג שֶׁל הַסְּפֵרָיָה.",
             exampleNative = "Платёжный אִי-טוּ-אִי упал после обновления библиотеки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176101L, 176102L, 176104L, 176105L)),
         WordEntity(
             id = 176104, setId = 1761, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_test_types", transliteration = "smok test",
@@ -85,8 +82,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Быстрый набор базовых проверок — стартует ли система вообще, до прочих тестов.",
             example = "אַחֲרֵי כָּל דֶּפְּלוֹי הַ-סְמוֹק טֶסְט רָץ אוֹטוֹמָטִית עַל הַסְּבִיבָה הַחֲדָשָׁה.",
             exampleNative = "После каждого выката סְמוֹק טֶסְט автоматически прогоняется по новой среде.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176101L, 176102L, 176103L, 176105L)),
         WordEntity(
             id = 176105, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_test_types", transliteration = "saniti chek",
@@ -95,8 +91,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Беглый прогон главной фичи — убедиться, что ничего критичного не сломалось.",
             example = "לִפְנֵי הַשִּׁחְרוּר עָשִׂינוּ סָנִיטִי צֵ'ק יְדָנִי עַל שְׁלוֹשָׁה דַּפֵּי הַמַּפְתֵּחַ.",
             exampleNative = "Перед релизом мы вручную делали סָנִיטִי צֵ'ק по трём ключевым страницам.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176101L, 176102L, 176103L, 176104L)),
 
         // ── qa_bug_lifecycle (5) — жизненный цикл бага ──
         WordEntity(
@@ -107,8 +102,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Короткий документ — точно описывает, как обнаружили поломку и как её повторить.",
             example = "כָּתַבְתִּי בָּאג רִיפּוֹרְט מְסֻדָּר עִם וִידֵאוֹ קָצָר וְלוֹגִים שֶׁל הַדַּפְדְּפָן.",
             exampleNative = "Я составил аккуратный בָּאג רִיפּוֹרְט с коротким видео и логами браузера.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176107L, 176108L, 176109L, 176110L)),
         WordEntity(
             id = 176107, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_bug_lifecycle", transliteration = "severiti",
@@ -117,8 +111,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Степень тяжести поломки — мелкая досада или падение всего сервиса.",
             example = "סֵבֵרִיטִי עֶלְיוֹנָה הוּגְדְּרָה כִּי הַמִּשְׁתַּמְּשִׁים לֹא הִצְלִיחוּ לְהַשְׁלִים רְכִישָׁה.",
             exampleNative = "Высший סֵבֵרִיטִי выставили, потому что пользователи не могли завершить покупку.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176106L, 176108L, 176109L, 176110L)),
         WordEntity(
             id = 176108, setId = 1761, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_bug_lifecycle", transliteration = "reprodaktzia",
@@ -127,8 +120,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Заставить поломку случиться снова — на глазах разработчика или на другой среде.",
             example = "בְּלִי רֶפְּרוֹדַקְצְיָה אֲמִינָה אִי אֶפְשָׁר לְתַקֵּן שׁוּם בָּאג מֻרְכָּב.",
             exampleNative = "Без надёжной רֶפְּרוֹדַקְצְיָה невозможно починить ни один сложный баг.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176106L, 176107L, 176109L, 176110L)),
         WordEntity(
             id = 176109, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_bug_lifecycle", transliteration = "ishur tikun",
@@ -137,8 +129,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Повторная проверка тестировщика после того, как разработчик заявил о починке.",
             example = "אַחֲרֵי אִישׁוּר תִּיקּוּן הַתִּיקֶט עָבַר לְסַטָּטוּס סָגוּר בַּמַּעֲרֶכֶת.",
             exampleNative = "После אִישׁוּר תִּיקּוּן тикет перешёл в закрытый статус в системе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176106L, 176107L, 176108L, 176110L)),
         WordEntity(
             id = 176110, setId = 1761, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_bug_lifecycle", transliteration = "sgira",
@@ -159,8 +150,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Документ с общей стратегией — что, как и когда проверяют до релиза.",
             example = "כָּתַבְנוּ טֶסְט פְּלָאן מְפֹרָט לִפְנֵי הַתְחָלַת הַחֹדֶשׁ הַחֲדָשׁ שֶׁל הַפִיצֶ׳רִים.",
             exampleNative = "Мы написали подробный טֶסְט פְּלָאן до начала нового месяца с фичами.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176112L, 176113L, 176114L, 176115L)),
         WordEntity(
             id = 176112, setId = 1761, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_manual", transliteration = "mikre bdika",
@@ -169,8 +159,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Описание конкретной ситуации — точные шаги и ожидаемый результат от программы.",
             example = "כָּל מִקְרֵה בְּדִיקָה רָשׁוּם בַּמַּעֲרֶכֶת עִם תְּנָאִים מַקְדִּימִים וּשְׁלָבִים מִסְפָּרִיִּים.",
             exampleNative = "Каждый מִקְרֵה בְּדִיקָה записан в системе с предусловиями и нумерованными шагами.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176111L, 176113L, 176114L, 176115L)),
         WordEntity(
             id = 176113, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_manual", transliteration = "tarkhish",
@@ -189,8 +178,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Короткий список пунктов «поставить галочку» — чтобы ничего важного не забыть.",
             example = "הַ-צֵ'קְלִיסְט שֶׁל הַשִּׁחְרוּר כָּלַל אַרְבַּע עֶשְׂרֵה נְקֻדּוֹת חוֹבָה לְכָל מְפַתֵּחַ.",
             exampleNative = "צֵ'קְלִיסְט релиза включал четырнадцать обязательных пунктов для каждого разработчика.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176111L, 176112L, 176113L, 176115L)),
         WordEntity(
             id = 176115, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_manual", transliteration = "exploratori",
@@ -199,8 +187,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Незапланированный стиль — тестировщик общается с программой как любопытный пользователь.",
             example = "סֶשֵׁן אֶקְסְפְּלוֹרָטוֹרִי שֶׁל שָׁעָה גִּלָּה אַרְבָּעָה בָּאגִים שֶׁאוֹטוֹמַצְיָה פִּסְפְּסָה.",
             exampleNative = "Часовая сессия אֶקְסְפְּלוֹרָטוֹרִי нашла четыре бага, которые автоматизация прошляпила.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176111L, 176112L, 176113L, 176114L)),
 
         // ── qa_environment (5) — тестовые среды и инфраструктура ──
         WordEntity(
@@ -211,8 +198,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Изолированная система — там можно прогонять проверки, не мешая пользователям.",
             example = "סְבִיבַת טֶסְטִים שֶׁלָּנוּ נוֹפֶלֶת כָּל יוֹם רִאשׁוֹן בִּגְלַל גִּבּוּי כָּבֵד.",
             exampleNative = "Наша סְבִיבַת טֶסְטִים падает каждое воскресенье из-за тяжёлого бэкапа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176117L, 176118L, 176119L, 176120L)),
         WordEntity(
             id = 176117, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_environment", transliteration = "sandboks",
@@ -221,8 +207,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Безопасное место для свободных экспериментов — без риска для боевых данных.",
             example = "מְפַתְּחֵי הַ-API מְשַׁחְקִים בַּסַנְדְבּוֹקְס לִפְנֵי שֶׁמְּחַבְּרִים לַקּוֹחוֹת אֲמִתִּיִּים.",
             exampleNative = "Разработчики API играются в סַנְדְבּוֹקְס, прежде чем подключать настоящих клиентов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176116L, 176118L, 176119L, 176120L)),
         WordEntity(
             id = 176118, setId = 1761, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_environment", transliteration = "prodakshen",
@@ -231,8 +216,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Боевая среда, которая видна реальным клиентам в мире — там любая ошибка заметна сразу.",
             example = "אַף פַּעַם לֹא מְדַבְּרִים יָשִׁיר עִם פְּרוֹדַקְשֶׁן בְּלִי גִּבּוּי וְבִדְקָה כְּפוּלָה.",
             exampleNative = "Никогда не лезут напрямую в פְּרוֹדַקְשֶׁן без бэкапа и двойной проверки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176116L, 176117L, 176119L, 176120L)),
         WordEntity(
             id = 176119, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_environment", transliteration = "datat test",
@@ -241,8 +225,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Набор фейковых пользователей, товаров и сделок — заранее заготовленных для проверок.",
             example = "צָרִיךְ לְרַעֲנֵן אֶת דָּאטַת טֶסְט שֶׁל הַתַּשְׁלוּמִים אַחֲרֵי כָּל גִּרְסָה.",
             exampleNative = "Платёжную דָּאטַת טֶסְט надо обновлять после каждой версии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176116L, 176117L, 176118L, 176120L)),
         WordEntity(
             id = 176120, setId = 1761, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_environment", transliteration = "mok",
@@ -251,8 +234,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Фейковая замена внешнего сервиса — отдаёт фиксированный ответ и работает быстро.",
             example = "כְּדַי לִבְדֹּק לְלֹא רֶשֶׁת בָּנִינוּ מוֹק שֶׁל שֵׁרוּת הַתַּשְׁלוּמִים שֶׁל סְטְרַייפ.",
             exampleNative = "Чтобы тестировать офлайн, мы собрали מוֹק платёжного сервиса Stripe.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176116L, 176117L, 176118L, 176119L)),
 
         // ── qa_communication (5) — взаимодействие с разработкой ──
         WordEntity(
@@ -263,8 +245,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Условие, которое тестировщик требует выполнить, прежде чем одобрить фичу.",
             example = "הַתִּיקֶט לֹא נִכְנַס לַסְּפְּרִינְט לִפְנֵי שֶׁכָּל קְרִיטֶרְיוֹן קַבָּלָה הָיָה כָּתוּב.",
             exampleNative = "Тикет не вошёл в спринт, пока каждый קְרִיטֶרְיוֹן קַבָּלָה не был расписан.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176122L, 176123L, 176124L, 176125L)),
         WordEntity(
             id = 176122, setId = 1761, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "qa_communication", transliteration = "ritest",
@@ -273,8 +254,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Повторный прогон того же сценария после того, как разработчик заявил о починке.",
             example = "אַחֲרֵי כָּל הוֹטְפִיקְס אֲנִי עוֹשָׂה רִיטֶסְט יָדָנִי שֶׁל שְׁלוֹשָׁה תַּרְחִישִׁים מַקְבִּילִים.",
             exampleNative = "После каждого хотфикса я делаю ручной רִיטֶסְט трёх параллельных сценариев.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176115L, 176121L, 176123L, 176124L, 176125L)),
         WordEntity(
             id = 176123, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_communication", transliteration = "sayn-of",
@@ -283,8 +263,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Формальное согласие тестировщика, что продукт готов к выкатке клиентам.",
             example = "בְּלִי סַיְין-אוֹף שֶׁל QA הַשִׁחְרוּר נִדְחָה לְמַחְרָת בַּבֹּקֶר.",
             exampleNative = "Без סַיְין-אוֹף от QA релиз отложили на следующее утро.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176121L, 176122L, 176124L, 176125L)),
         WordEntity(
             id = 176124, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_communication", transliteration = "regresia suit",
@@ -293,8 +272,7 @@ object WordDataHebrewQaL2 {
             definitionNative = "Постоянный набор проверок перед каждой версией — чтобы старое не сломалось.",
             example = "רֶגְרֶסְיָה סוּיט שֶׁלָּנוּ רָץ עַל הַשֵּׁרֵת שָׁלוֹשׁ שָׁעוֹת בְּלַיְלָה לִפְנֵי הַשִׁחְרוּר.",
             exampleNative = "Наш רֶגְרֶסְיָה סוּיט крутится на сервере три часа ночью перед релизом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176121L, 176122L, 176123L, 176125L)),
         WordEntity(
             id = 176125, setId = 1761, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "qa_communication", transliteration = "eskalatzia",
@@ -303,7 +281,6 @@ object WordDataHebrewQaL2 {
             definitionNative = "Передача проблемы кому-то старше, когда команда не справляется сама.",
             example = "אַחֲרֵי שָׁעָה בְּלִי תְּשׁוּבָה הֶחְלַטְתִּי עַל אֶסְקָלַצְיָה לַמְּנַהֵל הַטֶּכְנִי.",
             exampleNative = "Через час без ответа я решился на אֶסְקָלַצְיָה к техническому руководителю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176121L, 176122L, 176123L, 176124L)),
     )
 }

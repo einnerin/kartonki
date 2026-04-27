@@ -55,8 +55,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Короткий цикл работы — пару недель, в конце команда сдаёт результат.",
             example = "סְפְּרִינְט הַבָּא מַתְחִיל בְּיוֹם רִאשׁוֹן וְכוֹלֵל שִׁיפּוּצֵי בִּיצוּעִים.",
             exampleNative = "Следующий סְפְּרִינְט начинается в воскресенье и включает оптимизацию производительности.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174602L, 174603L, 174604L, 174605L)),
         WordEntity(
             id = 174602, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_agile", transliteration = "deili",
@@ -65,8 +64,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Короткая встреча по утрам — каждый разработчик говорит, что сделал и что планирует.",
             example = "בַּדֵּיְילִי שֶׁל הַבֹּקֶר הִתְלוֹנַנְתִּי עַל חֲסִימָה בְּהַרְשָׁאוֹת שֶׁל הַשֵּׁרֵת.",
             exampleNative = "На утреннем דֵּיְילִי я пожаловался на блок с правами доступа на сервере.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174601L, 174603L, 174604L, 174605L)),
         WordEntity(
             id = 174603, setId = 1746, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hightech_agile", transliteration = "retrospektiv",
@@ -75,8 +73,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Встреча в конце цикла — обсуждают, что прошло хорошо и что нужно улучшить.",
             example = "בָּרֶטְרוֹסְפֶּקְטִיב הֶחְלַטְנוּ לְקַצֵּר אֶת אֹרֶךְ הַפְּגִישׁוֹת בָּעֲתִיד.",
             exampleNative = "На רֶטְרוֹסְפֶּקְטִיב мы решили в будущем сократить продолжительность встреч.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174601L, 174602L, 174604L, 174605L)),
         WordEntity(
             id = 174604, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_agile", transliteration = "planing",
@@ -85,8 +82,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Встреча, на которой выбирают, какие задачи войдут в ближайший цикл.",
             example = "פְּלָנִינְג שֶׁל יוֹם שֵׁנִי אָרַךְ שָׁעָתַיִם בִּגְלַל מַחְלוֹקוֹת עַל הָעֲדִיפוּת.",
             exampleNative = "פְּלָנִינְג в понедельник длился два часа из-за споров о приоритетах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174601L, 174602L, 174603L, 174605L)),
         WordEntity(
             id = 174605, setId = 1746, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hightech_agile", transliteration = "rifaynment",
@@ -95,8 +91,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Сессия, где команда уточняет описания задач до формального планирования.",
             example = "בָּרִיפַיְינְמֶנְט גִּלִּינוּ שֶׁמְּשִׂימָה אַחַת דּוֹרֶשֶׁת חֲקִירָה אֲרֻוכָּה.",
             exampleNative = "На רִיפַיְינְמֶנְט мы поняли, что одна задача требует долгого исследования.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174601L, 174602L, 174603L, 174604L)),
 
         // ── hightech_code_review (5) — процесс ревью кода ──
         WordEntity(
@@ -107,8 +102,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Просьба влить изменения кода из побочной ветки в главную ветку проекта.",
             example = "פָּתַחְתִּי פּוּל רִיקְוֶסְט עִם תֵּאוּר מַקִּיף וְצִילּוּמֵי מָסָךְ.",
             exampleNative = "Я открыл פּוּל רִיקְוֶסְט с подробным описанием и скриншотами.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174607L, 174608L, 174609L, 174610L)),
         WordEntity(
             id = 174607, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_code_review", transliteration = "kod rivyu",
@@ -127,8 +121,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Зелёный значок от ревьюера — все изменения готовы к слиянию.",
             example = "מְחַכֶּה לָאַפְּרוּב הָאַחֲרוֹן מֵהָאַרְכִיטֶקְט לִפְנֵי שֶׁמַּעֲבִיר לַפְּרוֹדָקְשִׁן.",
             exampleNative = "Жду последний אַפְּרוּב от архитектора, прежде чем выкатывать на продакшн.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174606L, 174607L, 174609L, 174610L)),
         WordEntity(
             id = 174609, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_code_review", transliteration = "merj",
@@ -147,8 +140,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Цветной показ строк, которые добавились или удалились между двумя версиями.",
             example = "הִסְתַּכַּלְתִּי עַל הַדִּיף וְהֵבַנְתִּי שֶׁשָּׁכַחְתִּי לְמָחֹק קוֹד דִּיבּוּג.",
             exampleNative = "Я посмотрел на דִּיף и понял, что забыл удалить отладочный код.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174606L, 174607L, 174608L, 174609L)),
 
         // ── hightech_bugs (5) — работа с багами ──
         WordEntity(
@@ -159,8 +151,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Запись в системе отслеживания задач — описывает поломку или просьбу.",
             example = "פָּתַחְתִּי תִּיקֶט עִם צִילּוּמֵי מָסָךְ וְלוֹגִים מֵהַשֵּׁרֵת הַמֶּרְכָּזִי.",
             exampleNative = "Я открыл תִּיקֶט со скриншотами и логами с центрального сервера.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174612L, 174613L, 174614L, 174615L)),
         WordEntity(
             id = 174612, setId = 1746, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hightech_bugs", transliteration = "shikhzur bag",
@@ -169,8 +160,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Последовательность шагов, после которой поломка повторяется на глазах у разработчика.",
             example = "בְּלִי שִׁחְזוּר בָּאג אֲמִין הַמְּפַתֵּחַ אֵינוֹ יָכוֹל לְתַקֵּן כְּלוּם.",
             exampleNative = "Без надёжного שִׁחְזוּר בָּאג разработчик вообще ничего не починит.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174611L, 174613L, 174614L, 174615L)),
         WordEntity(
             id = 174613, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_bugs", transliteration = "status",
@@ -189,8 +179,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Степень важности — определяет, в каком порядке разработчики берут задачи.",
             example = "הַתִּיקֶט קִבֵּל עֲדִיפוּת גְּבוֹהָה כִּי כָּל הָאֲתָר הָיָה לֹא נָגִישׁ.",
             exampleNative = "Тикет получил высокую עֲדִיפוּת, потому что весь сайт был недоступен.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174612L, 174613L, 174615L)),
         WordEntity(
             id = 174615, setId = 1746, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hightech_bugs", transliteration = "edzh-keys",
@@ -199,8 +188,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Редкий пограничный сценарий, когда программа ведёт себя не как обычно.",
             example = "הַתַּקָּלָה קָרְתָה רַק בְּאֶג'-קֵייס שֶׁל מִשְׁתַּמֵּשׁ עִם תִּשְׁעִים תָּגִּיּוֹת בָּרְשִׁימָה.",
             exampleNative = "Сбой случился только в אֶג'-קֵייס у пользователя с девяноста тегами в списке.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174611L, 174612L, 174613L, 174614L)),
 
         // ── hightech_release (5) — релизы и развёртывание ──
         WordEntity(
@@ -211,8 +199,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Среда, почти как продакшен — там проверяют сборку до выкатки на пользователей.",
             example = "הַפִיצֶ׳ר עָבַד נִפְלָא בְּסְטֵייגִ'ינְג אֲבָל קָרַס תּוֹךְ דַּקָּה בַּפְּרוֹדַקְשֶׁן.",
             exampleNative = "Фича прекрасно работала в סְטֵייגִ'ינְג, но рухнула за минуту в проде.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174617L, 174618L, 174619L, 174620L)),
         WordEntity(
             id = 174617, setId = 1746, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hightech_release", transliteration = "deploy",
@@ -221,8 +208,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Действие, которое переносит свежий код на серверы пользователей в мире.",
             example = "דֶּפְּלוֹי שֶׁל יוֹם שִׁישִּׁי גָּרַם לְלַחַץ בַּצֶּוֶות עַד הַסִּיּוּם.",
             exampleNative = "דֶּפְּלוֹי в пятницу вызвал стресс в команде до самого завершения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174616L, 174618L, 174619L, 174620L)),
         WordEntity(
             id = 174618, setId = 1746, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hightech_release", transliteration = "rolbek",
@@ -231,8 +217,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Быстрый возврат на прежний слой — после того, как в новом нашли поломку.",
             example = "עָשִׂינוּ רוֹלְבֵּק חָמֵשׁ דַּקּוֹת אַחֲרֵי שֶׁתָּפַסְנוּ עֲלִיָּה בְּשִׁעוּר הַשְּׁגִיאוֹת.",
             exampleNative = "Мы сделали רוֹלְבֵּק через пять минут, как заметили рост ошибок.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174616L, 174617L, 174619L, 174620L)),
         WordEntity(
             id = 174619, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_release", transliteration = "hotfiks",
@@ -241,8 +226,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Срочная мелкая правка — выходит к пользователям, не дожидаясь обычного цикла.",
             example = "הִכִּינּוּ הוֹטְפִיקְס בְּלַיְלָה אַחֲרֵי שֶׁמִּשְׁתַּמְּשִׁים לֹא הִצְלִיחוּ לְהִתְחַבֵּר.",
             exampleNative = "Мы подготовили הוֹטְפִיקְס ночью, после того как пользователи не могли войти.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174616L, 174617L, 174618L, 174620L)),
         WordEntity(
             id = 174620, setId = 1746, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hightech_release", transliteration = "cheinjlog",
@@ -251,8 +235,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Письменный список всех правок и починок между одним слоем и следующим.",
             example = "כָּתַבְתִּי צֵ׳יְינְגְ׳לוֹג בָּהִיר עִם קַטָגוֹרְיוֹת לְפִיצֶ׳רִים וּתִקּוּנִים.",
             exampleNative = "Я написал понятный צֵ׳יְינְגְ׳לוֹג с категориями для фич и починок.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174616L, 174617L, 174618L, 174619L)),
 
         // ── hightech_team_comm (5) — коммуникация в команде ──
         WordEntity(
@@ -263,8 +246,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Старший разработчик — направляет людей в команде и отвечает за технический результат.",
             example = "הַתִּימְלִיד שֶׁלִּי מְקַיֵּם פְּגִישׁוֹת אֲרֻוכּוֹת עִם כָּל מְפַתֵּחַ בְּסוֹף הַחֹדֶשׁ.",
             exampleNative = "Мой תִּימְלִיד проводит длинные встречи с каждым разработчиком в конце месяца.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174622L, 174623L, 174624L, 174625L)),
         WordEntity(
             id = 174622, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_team_comm", transliteration = "menejer",
@@ -283,8 +265,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Личная еженедельная встреча руководителя с каждым из людей команды отдельно.",
             example = "בָּוַן-אוֹן-וַן דִּבַּרְנוּ עַל מַסְלוּל הַקַּרְיֵרָה שֶׁלִּי לְשָׁלוֹשׁ שָׁנִים קָדִימָה.",
             exampleNative = "На וַן-אוֹן-וַן мы говорили о моей карьерной траектории на три года вперёд.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174621L, 174622L, 174624L, 174625L)),
         WordEntity(
             id = 174624, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_team_comm", transliteration = "fidbek",
@@ -293,8 +274,7 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Честный отклик о работе человека — помогает ему понять, что продолжать или менять.",
             example = "פִידְבֵּק יָשִׁיר מֵעֲמִיתִים שִׁפֵּר אֶת הָעֲבוֹדָה שֶׁלִּי מֵרָבָעוֹן לְרָבָעוֹן.",
             exampleNative = "Прямой פִידְבֵּק от коллег улучшал мою работу от квартала к кварталу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174621L, 174622L, 174623L, 174625L)),
         WordEntity(
             id = 174625, setId = 1746, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hightech_team_comm", transliteration = "sink",
@@ -303,7 +283,6 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Короткая встреча двух команд или людей — обновить друг друга по продвижению.",
             example = "קָבַעְתִּי סִינְק שְׁבוּעִי עִם צֶוֶות הַמּוּצָר כְּדֵי לִמְנֹעַ הַפְתָּעוֹת.",
             exampleNative = "Я назначил еженедельный סִינְק с продуктовой командой, чтобы избежать сюрпризов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174621L, 174622L, 174623L, 174624L)),
     )
 }

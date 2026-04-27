@@ -59,7 +59,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Гормон стресса, выделяемый надпочечниками для мобилизации энергии под давлением.",
             example = "Chronic stress keeps cortisol elevated for hours after the event.",
             exampleNative = "Хронический стресс держит cortisol повышенным часами после события.",
-            pos = "noun", semanticGroup = "health_endocrine", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_endocrine", fillInBlankExclusions = listOf(35502L, 35503L, 35504L, 35505L)),
 
         WordEntity(id = 35502, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "insulin sensitivity", transliteration = "[ˈɪnsjəlɪn ˌsensəˈtɪvəti]", translation = "чувствительность к инсулину",
@@ -67,7 +67,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Насколько хорошо тело отвечает на гормон сахара крови после приёма пищи.",
             example = "Regular sprints can improve insulin sensitivity within a few weeks.",
             exampleNative = "Регулярные спринты улучшают insulin sensitivity за несколько недель.",
-            pos = "noun", semanticGroup = "health_endocrine", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_endocrine", fillInBlankExclusions = listOf(35501L, 35503L, 35504L, 35505L, 35507L, 35508L)),
 
         WordEntity(id = 35503, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "thyroid hormone", transliteration = "[ˈθaɪrɔɪd ˈhɔːrmoʊn]", translation = "тиреоидный гормон",
@@ -75,7 +75,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Вещество шейной железы, задающее, насколько быстро каждая клетка тратит топливо.",
             example = "Low thyroid hormone leaves the patient cold, slow and tired all day.",
             exampleNative = "Низкий thyroid hormone оставляет пациента зябким, медлительным и уставшим целый день.",
-            pos = "noun", semanticGroup = "health_endocrine", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_endocrine", fillInBlankExclusions = listOf(35501L, 35502L, 35504L, 35505L)),
 
         WordEntity(id = 35504, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "adrenal fatigue", transliteration = "[əˈdriːnəl fəˈtiːɡ]", translation = "адреналовая усталость",
@@ -83,7 +83,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Спорное название для глубокой усталости, приписываемой перегруженным надпочечникам.",
             example = "Some clinicians dismiss adrenal fatigue as a fashionable misdiagnosis.",
             exampleNative = "Некоторые клиницисты отвергают adrenal fatigue как модный неверный диагноз.",
-            pos = "noun", semanticGroup = "health_endocrine", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_endocrine", fillInBlankExclusions = listOf(35501L, 35502L, 35503L, 35505L, 35511L)),
 
         WordEntity(id = 35505, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "leptin", transliteration = "[ˈleptɪn]", translation = "лептин (гормон сытости)",
@@ -91,7 +91,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Гормон жировой клетки, сообщающий мозгу, что организм поел достаточно.",
             example = "Poor sleep blunts leptin and drives midnight snacking.",
             exampleNative = "Плохой сон притупляет leptin и провоцирует ночные перекусы.",
-            pos = "noun", semanticGroup = "health_endocrine", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_endocrine", fillInBlankExclusions = listOf(35501L, 35502L, 35503L, 35504L)),
 
         // ── health_physiology (5) ─────────────────────────────────────────────
 
@@ -101,7 +101,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Тихий приём тела удерживать температуру, соль и сахар почти постоянными.",
             example = "Sweating is a basic tool of homeostasis on a hot afternoon.",
             exampleNative = "Потоотделение — базовый инструмент homeostasis жарким днём.",
-            pos = "noun", semanticGroup = "health_physiology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_physiology", fillInBlankExclusions = listOf(35507L, 35508L, 35509L, 35510L)),
 
         WordEntity(id = 35507, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "mitochondrial function", transliteration = "[ˌmaɪtəˈkɒndriəl ˈfʌŋkʃən]", translation = "митохондриальная функция",
@@ -109,7 +109,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Насколько хорошо крошечные энергостанции внутри клетки превращают еду в энергию.",
             example = "Endurance training boosts mitochondrial function in slow-twitch muscle fibres.",
             exampleNative = "Тренировка выносливости поднимает mitochondrial function в медленных волокнах.",
-            pos = "noun", semanticGroup = "health_physiology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_physiology", fillInBlankExclusions = listOf(35502L, 35506L, 35508L, 35509L, 35510L)),
 
         WordEntity(id = 35508, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "neuroplasticity", transliteration = "[ˌnʊəroʊplæˈstɪsəti]", translation = "нейропластичность",
@@ -117,7 +117,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Пожизненная способность мозга перестраиваться при освоении нового навыка.",
             example = "Daily piano practice slowly reshapes the brain through neuroplasticity.",
             exampleNative = "Ежедневные занятия фортепиано медленно меняют мозг через neuroplasticity.",
-            pos = "noun", semanticGroup = "health_physiology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_physiology", fillInBlankExclusions = listOf(35506L, 35507L, 35509L, 35510L)),
 
         WordEntity(id = 35509, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "autophagy", transliteration = "[ɔːˈtɒfəʤi]", translation = "аутофагия (самоочищение клеток)",
@@ -125,7 +125,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Уборка в клетке: переваривание собственных изношенных деталей для вторичной переработки.",
             example = "Long fasting is said to ramp up autophagy in healthy adults.",
             exampleNative = "Долгое голодание, как считается, усиливает autophagy у здоровых взрослых.",
-            pos = "noun", semanticGroup = "health_physiology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_physiology", fillInBlankExclusions = listOf(35502L, 35506L, 35507L, 35508L, 35510L)),
 
         WordEntity(id = 35510, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "telomere", transliteration = "[ˈtiːlɵmɪər]", translation = "теломера (концевой участок ДНК)",
@@ -133,7 +133,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Защитный колпачок на конце хромосомы, укорачивающийся при каждом делении клетки.",
             example = "Researchers link short telomere length to faster biological aging.",
             exampleNative = "Учёные связывают короткую длину telomere с ускоренным биологическим старением.",
-            pos = "noun", semanticGroup = "health_physiology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_physiology", fillInBlankExclusions = listOf(35506L, 35507L, 35508L, 35509L)),
 
         // ── health_pathology (5) ──────────────────────────────────────────────
 
@@ -143,7 +143,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Медленный тлеющий процесс в тканях, тихо разрушающий органы годами.",
             example = "Belly fat fuels chronic inflammation across the whole body.",
             exampleNative = "Жир на животе подпитывает chronic inflammation по всему телу.",
-            pos = "noun", semanticGroup = "health_pathology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pathology", fillInBlankExclusions = listOf(35512L, 35513L, 35514L, 35515L)),
 
         WordEntity(id = 35512, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "autoimmune disease", transliteration = "[ˌɔːtoʊɪˈmjuːn dɪˈziːz]", translation = "аутоиммунное заболевание",
@@ -151,7 +151,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Расстройство, при котором защитные клетки принимают свои ткани за чужаков.",
             example = "Lupus is the textbook example of an autoimmune disease.",
             exampleNative = "Волчанка — хрестоматийный пример autoimmune disease.",
-            pos = "noun", semanticGroup = "health_pathology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pathology", fillInBlankExclusions = listOf(35513L)),
 
         WordEntity(id = 35513, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "oxidative stress", transliteration = "[ˈɒksɪdeɪtɪv stres]", translation = "окислительный стресс",
@@ -159,7 +159,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Химический износ, когда нестабильные молекулы повреждают мембраны клеток и ДНК.",
             example = "Heavy smoking drives oxidative stress in the lungs day after day.",
             exampleNative = "Тяжёлое курение нагнетает oxidative stress в лёгких изо дня в день.",
-            pos = "noun", semanticGroup = "health_pathology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pathology", fillInBlankExclusions = listOf(35511L, 35512L, 35514L, 35515L)),
 
         WordEntity(id = 35514, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "metabolic syndrome", transliteration = "[ˌmetəˈbɒlɪk ˈsɪndroʊm]", translation = "метаболический синдром",
@@ -167,7 +167,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Сочетание жира на животе, высокого сахара и давления, предвещающее болезни сердца.",
             example = "His doctor flagged metabolic syndrome at the yearly check-up.",
             exampleNative = "Врач отметил metabolic syndrome на ежегодном осмотре.",
-            pos = "noun", semanticGroup = "health_pathology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pathology", fillInBlankExclusions = listOf(35511L, 35512L, 35513L, 35515L)),
 
         WordEntity(id = 35515, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "sarcopenia", transliteration = "[ˌsɑːrkoʊˈpiːniə]", translation = "саркопения (возрастная потеря мышц)",
@@ -175,7 +175,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Возрастное уменьшение мышечной массы, подбирающееся после шестого десятка.",
             example = "Resistance training is the main shield against sarcopenia in old age.",
             exampleNative = "Силовой тренинг — главный щит от sarcopenia в старости.",
-            pos = "noun", semanticGroup = "health_pathology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pathology", fillInBlankExclusions = listOf(35511L, 35512L, 35513L, 35514L)),
 
         // ── health_pharmacology (5) ───────────────────────────────────────────
 
@@ -185,7 +185,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Наука о пути лекарства в теле: всасывание, распределение, расщепление и выведение.",
             example = "Liver failure dramatically alters the pharmacokinetics of many medicines.",
             exampleNative = "Печёночная недостаточность резко меняет pharmacokinetics многих лекарств.",
-            pos = "noun", semanticGroup = "health_pharmacology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pharmacology", fillInBlankExclusions = listOf(35517L, 35518L, 35519L, 35520L)),
 
         WordEntity(id = 35517, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "bioavailability", transliteration = "[ˌbaɪoʊəˌveɪləˈbɪləti]", translation = "биодоступность",
@@ -193,7 +193,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Доля проглоченного вещества, реально достигающая кровотока.",
             example = "Taking iron with vitamin C raises its bioavailability noticeably.",
             exampleNative = "Приём железа с витамином C заметно повышает его bioavailability.",
-            pos = "noun", semanticGroup = "health_pharmacology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pharmacology", fillInBlankExclusions = listOf(35516L, 35518L, 35519L, 35520L)),
 
         WordEntity(id = 35518, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "drug interaction", transliteration = "[drʌɡ ˌɪntərˈækʃən]", translation = "лекарственное взаимодействие",
@@ -201,7 +201,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Эффект, когда два лекарства меняют силу друг друга внутри организма.",
             example = "The pharmacist warned about a serious drug interaction with grapefruit juice.",
             exampleNative = "Фармацевт предупредил о серьёзном drug interaction с грейпфрутовым соком.",
-            pos = "noun", semanticGroup = "health_pharmacology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pharmacology", fillInBlankExclusions = listOf(35516L, 35517L, 35519L, 35520L)),
 
         WordEntity(id = 35519, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "contraindication", transliteration = "[ˌkɒntrəˌɪndɪˈkeɪʃən]", translation = "противопоказание",
@@ -209,7 +209,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Конкретная причина, по которой лечение нельзя назначать данному пациенту.",
             example = "Pregnancy is a clear contraindication for many strong antibiotics.",
             exampleNative = "Беременность — явное contraindication для многих сильных антибиотиков.",
-            pos = "noun", semanticGroup = "health_pharmacology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pharmacology", fillInBlankExclusions = listOf(35516L, 35517L, 35518L, 35520L)),
 
         WordEntity(id = 35520, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "off-label use", transliteration = "[ˌɔːf ˈleɪbəl juːs]", translation = "применение вне инструкции",
@@ -217,7 +217,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Назначение лекарства от проблемы, не указанной в его официальной инструкции.",
             example = "Doctors sometimes try off-label use of beta-blockers for stage fright.",
             exampleNative = "Врачи иногда пробуют off-label use бета-блокаторов от страха сцены.",
-            pos = "noun", semanticGroup = "health_pharmacology", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_pharmacology", fillInBlankExclusions = listOf(35516L, 35517L, 35518L, 35519L)),
 
         // ── health_clinical (5) ───────────────────────────────────────────────
 
@@ -227,7 +227,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Золотой стандарт исследования: случай решает, кто получит новое лекарство или пустышку.",
             example = "A well-run randomized controlled trial settled the old debate.",
             exampleNative = "Качественное randomized controlled trial разрешило давний спор.",
-            pos = "noun", semanticGroup = "health_clinical", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_clinical", fillInBlankExclusions = listOf(35522L, 35523L, 35524L, 35525L)),
 
         WordEntity(id = 35522, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "placebo effect", transliteration = "[pləˈsiːboʊ ɪˈfekt]", translation = "эффект плацебо",
@@ -235,7 +235,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Настоящее телесное улучшение, вызванное верой в фальшивое или пустое лечение.",
             example = "Pain studies must always account for the placebo effect.",
             exampleNative = "Исследования боли обязаны учитывать placebo effect.",
-            pos = "noun", semanticGroup = "health_clinical", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_clinical", fillInBlankExclusions = listOf(35521L, 35523L, 35524L, 35525L)),
 
         WordEntity(id = 35523, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "evidence-based practice", transliteration = "[ˈevɪdəns beɪst ˈpræktɪs]", translation = "доказательная практика",
@@ -243,7 +243,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Лечение пациентов только методами, подтверждёнными аккуратными опубликованными работами.",
             example = "Modern hospitals are slowly switching to evidence-based practice.",
             exampleNative = "Современные больницы постепенно переходят на evidence-based practice.",
-            pos = "noun", semanticGroup = "health_clinical", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_clinical", fillInBlankExclusions = listOf(35521L, 35522L, 35524L, 35525L)),
 
         WordEntity(id = 35524, setId = 355, languagePair = "en-ru", rarity = "EPIC",
             original = "longitudinal study", transliteration = "[ˌlɒnʤəˈtjuːdənəl ˈstʌdi]", translation = "лонгитюдное исследование",
@@ -251,7 +251,7 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Исследовательский проект, наблюдающий за одними и теми же людьми много лет.",
             example = "A famous longitudinal study tracked nurses for over forty years.",
             exampleNative = "Знаменитое longitudinal study следило за медсёстрами более сорока лет.",
-            pos = "noun", semanticGroup = "health_clinical", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_clinical", fillInBlankExclusions = listOf(35521L, 35522L, 35523L, 35525L)),
 
         WordEntity(id = 35525, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "biomarker", transliteration = "[ˈbaɪoʊˌmɑːrkər]", translation = "биомаркер",
@@ -259,6 +259,6 @@ object WordDataEnglishHealthFitnessL5 {
             definitionNative = "Измеримый сигнал в крови или ткани, отражающий болезнь или её течение.",
             example = "PSA is a useful biomarker for tracking prostate trouble in older men.",
             exampleNative = "ПСА — полезный biomarker для отслеживания проблем простаты у пожилых мужчин.",
-            pos = "noun", semanticGroup = "health_clinical", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "health_clinical", fillInBlankExclusions = listOf(35521L, 35522L, 35523L, 35524L)),
     )
 }

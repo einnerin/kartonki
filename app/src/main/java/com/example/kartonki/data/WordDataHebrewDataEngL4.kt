@@ -58,8 +58,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Платформа для передачи событий в реальном времени между сервисами без потери сообщений.",
             example = "קָאפְקָה מַעֲבִירָה אֶצְלֵנוּ עֶשְׂרִים אֶלֶף אֵירוּעִים בְּשְׁנִיָּה בִּשְׁעוֹת הַשִּׂיא.",
             exampleNative = "קָאפְקָה прокачивает у нас двадцать тысяч событий в секунду в часы пик.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176402L, 176403L, 176404L, 176405L)),
         WordEntity(
             id = 176402, setId = 1764, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_realtime", transliteration = "broker hodaot",
@@ -68,8 +67,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Центральный сервис — передаёт события от отправителей к получателям, не связывая их напрямую.",
             example = "בְּרוֹקֶר הוֹדָעוֹת מְזַיֵּן עַשְׂרוֹת מִיקְרוֹסֶרְוִיסִים בְּלִי לֵדַעַת אֵיךְ הֵם בְּנוּיִים.",
             exampleNative = "בְּרוֹקֶר הוֹדָעוֹת кормит десятки микросервисов, не зная, как они устроены.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176401L, 176403L, 176404L, 176405L)),
         WordEntity(
             id = 176403, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_realtime", transliteration = "mesira khad-paamit",
@@ -78,8 +76,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Гарантия: каждое событие обработается ровно один раз — не задвоится и не потеряется.",
             example = "מְסִירָה חַד-פַּעֲמִית קְרִיטִית לְמַעֲרֶכֶת תַּשְׁלוּמִים שֶׁלֹּא תַּחְיֵב פַּעֲמַיִם.",
             exampleNative = "מְסִירָה חַד-פַּעֲמִית критична для платежей — чтобы не списать дважды.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176401L, 176402L, 176404L, 176405L)),
         WordEntity(
             id = 176404, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_realtime", transliteration = "si-di-si",
@@ -88,8 +85,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Техника — ловит каждое изменение в исходной БД и шлёт его дальше как поток.",
             example = "סִי-דִּי-סִי מֵהַ-פּוֹסְטְגְּרֵס מַזִּין אֶת הַ-מַחְסָן בִּזְמַן אֱמֶת.",
             exampleNative = "סִי-דִּי-סִי с Postgres питает хранилище в реальном времени.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176401L, 176402L, 176403L, 176405L)),
         WordEntity(
             id = 176405, setId = 1764, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_realtime", transliteration = "ibud strim",
@@ -98,8 +94,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Непрерывный расчёт по летящим событиям — без ожидания закрытого файла со всеми данными.",
             example = "עִבּוּד סְטְרִים בְּ-פְלִינְק נוֹתֵן לָנוּ סְטָטִיסְטִיקָה כָּל שָׁנִיָּה.",
             exampleNative = "עִבּוּד סְטְרִים в Flink даёт нам статистику каждую секунду.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176401L, 176402L, 176403L, 176404L)),
 
         // ── de_serving (5) — слой подачи данных аналитикам и приложениям ──
         WordEntity(
@@ -110,8 +105,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Часть, которая отдаёт готовые ответы продукту — после того как все расчёты прошли в фоне.",
             example = "שִׁכְבַת הַגָּשָׁה רָצָה עַל רֶדִיס לִמְהִירוּת מַקְסִימָלִית.",
             exampleNative = "שִׁכְבַת הַגָּשָׁה работает на Redis — для максимальной скорости.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176407L, 176408L, 176409L, 176410L)),
         WordEntity(
             id = 176407, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_serving", transliteration = "tatsuga materializd",
@@ -120,8 +114,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Заранее сохранённый результат тяжёлого запроса — чтобы не пересчитывать заново с нуля.",
             example = "תָּצוּגָה מַטֶ׳רִיאָלַייזְד מִתְעַדְכֶּנֶת אַחַת לְחָמֵשׁ דַּקּוֹת בַּלַּיְלָה.",
             exampleNative = "תָּצוּגָה מַטֶ׳רִיאָלַייזְד обновляется раз в пять минут ночью.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176406L, 176408L, 176409L, 176410L)),
         WordEntity(
             id = 176408, setId = 1764, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_serving", transliteration = "olap",
@@ -140,8 +133,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Тип СУБД — заточена под множество коротких операций параллельно, обычно от живого приложения.",
             example = "אוֹלְטִיפִּי לֹא מַתְאִים לְשְׁאֵלוֹת שֶׁעוֹבְרוֹת עַל מִילְיוֹנֵי שׁוּרוֹת.",
             exampleNative = "אוֹלְטִיפִּי не подходит для запросов по миллионам строк.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176406L, 176407L, 176408L, 176410L)),
         WordEntity(
             id = 176410, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_serving", transliteration = "optimizatsyat she'ilta",
@@ -150,8 +142,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Улучшение того, как обращение к БД исполняется — чтобы ответ пришёл быстрее и с меньшими ресурсами.",
             example = "אוֹפְּטִימִיזַצְיַת שְׁאִילְתָּה הוֹרִידָה אֶת הַזְּמַן מִשָּׁלוֹשׁ דַּקּוֹת לְחָמֵשׁ שְׁנִיּוֹת.",
             exampleNative = "אוֹפְּטִימִיזַצְיַת שְׁאִילְתָּה опустила время с трёх минут до пяти секунд.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176406L, 176407L, 176408L, 176409L)),
 
         // ── de_governance (5) — управление и каталогизация данных ──
         WordEntity(
@@ -162,8 +153,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Реестр метаданных — описывает, какие таблицы есть в фирме и что значит каждая колонка.",
             example = "דָּאטָה קָטָלוֹג בְּ-קוֹלִיבְּרָה חוֹסֵךְ שָׁעוֹת חִפּוּשׂ לְכָל עוֹבֵד חָדָשׁ.",
             exampleNative = "דָּאטָה קָטָלוֹג в Collibra экономит часы поиска каждому новичку.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176412L, 176413L, 176414L, 176415L)),
         WordEntity(
             id = 176412, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_governance", transliteration = "linaaz' data",
@@ -172,8 +162,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Карта — показывает, откуда пришло каждое поле в таблице через все шаги от истока до конца.",
             example = "לִינְאָז׳ דָּאטָה עָזַר לָנוּ לִמְצֹא בָּאג שֶׁהִשְׁפִּיעַ עַל שִׁשָּׁה דּוּחוֹת.",
             exampleNative = "לִינְאָז׳ דָּאטָה помог найти баг, повлиявший на шесть отчётов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176411L, 176413L, 176414L, 176415L)),
         WordEntity(
             id = 176413, setId = 1764, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_governance", transliteration = "giluy data",
@@ -182,8 +171,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Процесс — сотрудник находит таблицы, нужные для своей задачи, среди тысяч массивов.",
             example = "גִּלּוּי דָּאטָה הָפַךְ לְקַל אַחֲרֵי שֶׁהִתְקַנּוּ אֲמוּנְדְסֶן.",
             exampleNative = "גִּלּוּי דָּאטָה стал лёгким — после того как мы поставили Amundsen.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176411L, 176412L, 176414L, 176415L)),
         WordEntity(
             id = 176414, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_governance", transliteration = "khoze data",
@@ -192,8 +180,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Формальное соглашение между потребителем данных и поставщиком — о структуре и качестве того, что передают.",
             example = "חוֹזֶה דָּאטָה מָנַע מֵאִתָּנוּ שִׁבּוּר דּוּחוֹת בְּכָל פַּעַם שֶׁ-בֶּקְאֶנְד מְשַׁנֶּה שָׂדֶה.",
             exampleNative = "חוֹזֶה דָּאטָה не дал нам ломать отчёты каждый раз, когда бэкенд менял поле.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176411L, 176412L, 176413L, 176415L)),
         WordEntity(
             id = 176415, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_governance", transliteration = "data stuward",
@@ -202,8 +189,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Ответственный человек в бизнесе — следит за качеством данных и тем, чтобы каждый понимал, что видит.",
             example = "דָּאטָה סְטְוַארְד מִתְחוּם הַשִּׁוּוּק עוֹשֶׂה רִוִיוּ לְכָל שָׂדֶה חָדָשׁ.",
             exampleNative = "דָּאטָה סְטְוַארְד из маркетинга делает ревью каждому новому полю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176411L, 176412L, 176413L, 176414L)),
 
         // ── de_quality_advanced (5) — продвинутые проверки качества ──
         WordEntity(
@@ -214,8 +200,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Система — автоматически ловит выбросы и странные паттерны внутри потока данных.",
             example = "אִיתוּר חֲרִיגוֹת תָּפַס יְרִידָה שֶׁל שִׁבְעִים אָחוּז בְּהַרְשָׁמוֹת תּוֹךְ דַּקּוֹת.",
             exampleNative = "אִיתוּר חֲרִיגוֹת поймал падение регистраций на семьдесят процентов за минуты.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176417L, 176418L, 176419L, 176420L)),
         WordEntity(
             id = 176417, setId = 1764, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_quality_advanced", transliteration = "raananut data",
@@ -224,8 +209,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Метрика — сколько времени прошло с обновления таблицы по сравнению с согласованным порогом.",
             example = "רַעֲנַנּוּת דָּאטָה שֶׁל הַטַּבְלָה הַזּוֹ צְרִיכָה לִהְיוֹת מִתַּחַת לְשָׁעָה.",
             exampleNative = "רַעֲנַנּוּת דָּאטָה этой таблицы должна быть меньше часа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176416L, 176418L, 176419L, 176420L)),
         WordEntity(
             id = 176418, setId = 1764, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_quality_advanced", transliteration = "bdikat shlemut",
@@ -234,8 +218,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Сверка — все ожидаемые записи действительно пришли, без пустых или пропущенных строк.",
             example = "בְּדִיקַת שְׁלֵמוּת מָצְאָה שֶׁחָסְרוּ אַלְפַּיִם הַזְמָנוֹת מִיּוֹם רִאשׁוֹן.",
             exampleNative = "בְּדִיקַת שְׁלֵמוּת нашла пропавшие две тысячи заказов с воскресенья.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176416L, 176417L, 176419L, 176420L)),
         WordEntity(
             id = 176419, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_quality_advanced", transliteration = "bdikat ikviyut",
@@ -244,8 +227,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Сверка — одни и те же числа в разных таблицах совпадают друг с другом после всех трансформаций.",
             example = "בְּדִיקַת עִקְבִיּוּת חָשְׂפָה פַּעַר שֶׁל שְׁמוֹנָה אָחוּז בֵּין הַ-מַחְסָן לַ-דּוּחוֹת.",
             exampleNative = "בְּדִיקַת עִקְבִיּוּת вскрыла разрыв в восемь процентов между хранилищем и отчётами.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176416L, 176417L, 176418L, 176420L)),
         WordEntity(
             id = 176420, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_quality_advanced", transliteration = "profayling data",
@@ -254,8 +236,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Автоматический обзор полей — диапазоны значений, доля пустых, распределение — до постройки пайплайна.",
             example = "פְּרוֹפַיְילִינְג דָּאטָה גִּלָּה שֶׁשְּׁלִישׁ מֵהָעַמּוּדוֹת רֵיקוֹת לַחֲלוּטִין.",
             exampleNative = "פְּרוֹפַיְילִינְג דָּאטָה показал, что треть колонок полностью пуста.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176416L, 176417L, 176418L, 176419L)),
 
         // ── de_team (5) — роли и состав команды дата-инжиниринга ──
         WordEntity(
@@ -266,8 +247,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Специалист — строит трубы, которые гонят информацию из приложений в хранилище.",
             example = "מְהַנְדֵס דָּאטָה חָדָשׁ הִצְטָרֵף לַצֶּוֶות בִּתְחִלַּת הַשָּׁנָה הַכַּסְפִּית.",
             exampleNative = "מְהַנְדֵס דָּאטָה присоединился к команде в начале финансового года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176422L, 176423L, 176424L, 176425L)),
         WordEntity(
             id = 176422, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_team", transliteration = "analitiks endzhenir",
@@ -276,8 +256,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Гибридная роль — мост между аналитиками и инженерами, строит модели в dbt.",
             example = "אֲנָלִיטִיקְס אֶנְגִ׳נְיֶר אַחְרַאי עַל כָּל הַמּוֹדֵלִים הָעֲסָקִיִּים בַּ-מַחְסָן.",
             exampleNative = "אֲנָלִיטִיקְס אֶנְגִ׳נְיֶר отвечает за все бизнес-модели в хранилище.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176421L, 176423L, 176424L, 176425L)),
         WordEntity(
             id = 176423, setId = 1764, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_team", transliteration = "arkhitekt data",
@@ -286,8 +265,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Сеньорный человек — рисует общую картину потоков информации в организации на годы вперёд.",
             example = "אַרְכִיטֶקְט דָּאטָה הִצִּיג מַפַּת דְּרָכִים לְמַעֲבָר לַעֲנָן.",
             exampleNative = "אַרְכִיטֶקְט דָּאטָה представил roadmap миграции в облако.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176421L, 176422L, 176424L, 176425L)),
         WordEntity(
             id = 176424, setId = 1764, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "de_team", transliteration = "tsevet platforma",
@@ -296,8 +274,7 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Группа отвечает за общую инфраструктуру — инструменты, серверы и доступы для всей фирмы.",
             example = "צֶוֶות פְּלָטְפוֹרְמָה דּוֹחֵף שִׁדְרוּג שֶׁל סְנוֹאוּפְלֵיק בְּכָל הַחֲטִיבָה.",
             exampleNative = "צֶוֶות פְּלָטְפוֹרְמָה катит апгрейд Snowflake по всему дивизиону.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176421L, 176422L, 176423L, 176425L)),
         WordEntity(
             id = 176425, setId = 1764, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "de_team", transliteration = "rotatsyat toranut",
@@ -306,7 +283,6 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Расписание — люди в команде по очереди отвечают на сбои в проде в ночные часы.",
             example = "רוֹטָצְיַת תּוֹרָנוּת אֶצְלֵנוּ מִתְחַלֶּפֶת כָּל יוֹם רִאשׁוֹן בַּבֹּקֶר.",
             exampleNative = "רוֹטָצְיַת תּוֹרָנוּת у нас меняется каждое воскресенье утром.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(176421L, 176422L, 176423L, 176424L)),
     )
 }

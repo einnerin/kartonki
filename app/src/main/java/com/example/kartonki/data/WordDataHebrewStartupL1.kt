@@ -67,8 +67,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Организация, где люди работают вместе и продают что-то клиентам.",
             example = "הַחֶבְרָה שֶׁלָּנוּ הוּקְמָה לִפְנֵי שְׁנָתַיִם בְּתֵל אָבִיב.",
             exampleNative = "Наша חֶבְרָה была основана два года назад в Тель-Авиве.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178802L, 178803L, 178804L, 178805L)),
         WordEntity(
             id = 178802, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_company", transliteration = "start-ap",
@@ -97,8 +96,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Контора с парой сотрудников — каждый знает там всех.",
             example = "פִירְמָה קְטַנָּה כְּמוֹ שֶׁלָּנוּ נוֹתֶנֶת לָעוֹבְדִים הַרְבֵּה אַחְרָיוּת.",
             exampleNative = "פִירְמָה קְטַנָּה вроде нашей даёт сотрудникам много ответственности.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178801L, 178802L, 178803L, 178805L)),
         WordEntity(
             id = 178805, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_company", transliteration = "kehilat ha-yazamim",
@@ -107,8 +105,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Люди, что открыли свои дела, и встречаются обмениваться историями и советами.",
             example = "קְהִילַּת הַיְּזָמִים בְּיִשְׂרָאֵל נֶחְשֶׁבֶת בֵּין הַחָזָקוֹת בָּעוֹלָם.",
             exampleNative = "קְהִילַּת הַיְּזָמִים в Израиле считается одной из сильнейших в мире.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178801L, 178802L, 178803L, 178804L)),
 
         // ── startup_basic_people (5) — кто там работает ──
         WordEntity(
@@ -159,8 +156,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Человек, что присоединился к команде сразу после основателей и делал всё подряд.",
             example = "הָעוֹבֵד רִאשׁוֹן שֶׁלָּנוּ עוֹדֶנּוּ אַחְרַאי עַל שֵׁרוּת לְלָקוֹחוֹת.",
             exampleNative = "Наш עוֹבֵד רִאשׁוֹן до сих пор отвечает за поддержку клиентов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178806L, 178807L, 178808L, 178809L)),
 
         // ── startup_basic_money (5) — деньги стартапа ──
         WordEntity(
@@ -171,8 +167,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "То, что вкладывают из личных сбережений, чтобы начать без чужой помощи.",
             example = "הִשְׁקַעְנוּ כֶּסֶף עַצְמִי כְּדֵי לִבְנוֹת אֶת הַגִּרְסָה הָרִאשׁוֹנָה לְבַד.",
             exampleNative = "Мы вложили כֶּסֶף עַצְמִי, чтобы построить первую версию сами.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178812L, 178813L, 178814L, 178815L)),
         WordEntity(
             id = 178812, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "startup_basic_money", transliteration = "giyus hon",
@@ -181,8 +176,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Когда бизнес просит деньги у людей со стороны, чтобы расти быстрее.",
             example = "גִּיּוּס הוֹן רִאשׁוֹן לָקַח לָנוּ חֲצִי שָׁנָה וְהַרְבֵּה פְּגִישׁוֹת.",
             exampleNative = "Первое גִּיּוּס הוֹן заняло у нас полгода и кучу встреч.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178811L, 178813L, 178814L, 178815L)),
         WordEntity(
             id = 178813, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "startup_basic_money", transliteration = "revakh",
@@ -191,8 +185,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "То, что остаётся от клиентских денег после оплаты всех расходов.",
             example = "רֶוַח קָטָן מִכָּל לָקוֹחַ הוֹפֵךְ לְסַכּוּם רְצִינִי בְּסוֹף הַשָּׁנָה.",
             exampleNative = "Маленький רֶוַח с каждого клиента превращается в серьёзную сумму к концу года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178811L, 178812L, 178814L, 178815L)),
         WordEntity(
             id = 178814, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_money", transliteration = "hefsed",
@@ -201,8 +194,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Когда потратили больше, чем заработали — и остаются в минусе.",
             example = "הָרִבְעוֹן הָרִאשׁוֹן נִסְגַּר בְּהֶפְסֵד בִּגְלַל הַעֲסָקַת מְפַתְּחִים.",
             exampleNative = "Первый квартал закрылся в הֶפְסֵד из-за найма разработчиков.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178811L, 178812L, 178813L, 178815L)),
         WordEntity(
             id = 178815, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_money", transliteration = "taktsiv",
@@ -211,8 +203,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "План, сколько денег можно потратить на каждое дело за месяц или год.",
             example = "הַתַּקְצִיב לְשִׁוּוּק הַחֹדֶשׁ קָטָן מִדַּי לְפִי הַמְּעַצֵּב.",
             exampleNative = "תַּקְצִיב на маркетинг этого месяца, по мнению дизайнера, маловат.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178811L, 178812L, 178813L, 178814L)),
 
         // ── startup_basic_growth (5) — как растёт ──
         WordEntity(
@@ -223,8 +214,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Когда бизнес становится больше — людей, денег и городов больше.",
             example = "הַהִתְפַּתְּחוּת הָאֲמִיתִּית הִתְחִילָה רַק אַחֲרֵי שָׁנָה וָחֵצִי.",
             exampleNative = "Настоящее הִתְפַּתְּחוּת началось только через полтора года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178817L, 178818L, 178819L, 178820L)),
         WordEntity(
             id = 178817, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_growth", transliteration = "lakokhot",
@@ -233,8 +223,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Люди, что платят за ваш сервис или продукт.",
             example = "מֵאָה לָקוֹחוֹת רִאשׁוֹנִים מַגִּיעִים בְּדֶרֶךְ כְּלָל מֵהֶמְלָצוֹת שֶׁל חֲבֵרִים.",
             exampleNative = "Первые сто לָקוֹחוֹת обычно приходят по рекомендациям друзей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178816L, 178818L, 178819L, 178820L)),
         WordEntity(
             id = 178818, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_growth", transliteration = "harkhava",
@@ -243,8 +232,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Когда добавляют новые направления, продукты или места к тому, что уже делают.",
             example = "הַהַרְחָבָה לְשׁוּק הָעִסְקִי דָּרְשָׁה צֶוֶות מְכִירוֹת חָדָשׁ לְגַמְרֵי.",
             exampleNative = "הַרְחָבָה на корпоративный рынок потребовала совсем новой команды продаж.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178816L, 178817L, 178819L, 178820L)),
         WordEntity(
             id = 178819, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "startup_basic_growth", transliteration = "shuk zar",
@@ -253,8 +241,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Другая страна, куда продают, когда родной страны уже мало для развития.",
             example = "כְּנִיסָה לְשׁוּק זָר דָּרְשָׁה תִּרְגּוּם וְשִׁנּוּי שִׁיטוֹת תַּשְׁלוּם.",
             exampleNative = "Выход на שׁוּק זָר потребовал перевода и смены платёжных способов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178816L, 178817L, 178818L, 178820L)),
         WordEntity(
             id = 178820, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_growth", transliteration = "hatslakha",
@@ -263,8 +250,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Когда трудное, что вы задумали, и правда случилось — даже лучше ожиданий.",
             example = "הַהַצְלָחָה שֶׁל הַקַּמְפֵּיין הִפְתִּיעָה גַּם אֶת הַמְּיַסְּדִים בְּעַצְמָם.",
             exampleNative = "הַצְלָחָה кампании удивила и самих основателей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178816L, 178817L, 178818L, 178819L, 178822L)),
 
         // ── startup_basic_risk (5) — что может пойти не так ──
         WordEntity(
@@ -275,8 +261,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Шанс, что произойдёт плохое — оплата не придёт, продукт не продастся.",
             example = "כָּל פְּתִיחַת עֵסֶק כּוֹלֶלֶת סִיכּוּן לְאַבֵּד אֶת הַחִסָּכוֹן הָאִישִׁי.",
             exampleNative = "В любом запуске бизнеса есть סִיכּוּן потерять личные сбережения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178822L, 178823L, 178824L, 178825L)),
         WordEntity(
             id = 178822, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_risk", transliteration = "kishalon",
@@ -285,8 +270,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Когда бизнес не получился и его нужно закрывать после того, как кончились деньги.",
             example = "כִּשָּׁלוֹן רִאשׁוֹן לִמֵּד אוֹתִי לִשְׁאֹל לָקוֹחוֹת לִפְנֵי הַפִּתּוּחַ.",
             exampleNative = "Первый כִּשָּׁלוֹן научил меня спрашивать клиентов до разработки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178821L, 178823L, 178824L, 178825L)),
         WordEntity(
             id = 178823, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_risk", transliteration = "takharut",
@@ -295,8 +279,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Когда другие фирмы продают похожее и каждая хочет тех же клиентов.",
             example = "הַתַּחֲרוּת בַּשּׁוּק הַמְּקוֹמִי גָּדְלָה מְאוֹד אַחֲרֵי הַמַּגֵּפָה.",
             exampleNative = "תַּחֲרוּת на местном рынке сильно выросла после пандемии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178821L, 178822L, 178824L, 178825L)),
         WordEntity(
             id = 178824, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "startup_basic_risk", transliteration = "ta'ut",
@@ -305,8 +288,7 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Решение, что оказалось неверным уже после вложенных времени и денег.",
             example = "הָיְתָה לִי טָעוּת לִשְׂכֹּר מִשְׂרָד גָּדוֹל לִפְנֵי הַלָּקוֹחַ הָרִאשׁוֹן.",
             exampleNative = "Я сделал טָעוּת, сняв большой офис до первого клиента.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178821L, 178822L, 178823L, 178825L)),
         WordEntity(
             id = 178825, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_basic_risk", transliteration = "maskana khashuva",
@@ -315,7 +297,6 @@ object WordDataHebrewStartupL1 {
             definitionNative = "То, что осознают после неудачного дела — чтобы его не повторять.",
             example = "מַסְקָנָה חֲשׁוּבָה מֵהָרִבְעוֹן הַזֶּה הִיא לְדַבֵּר עִם הַשּׁוּק מֻקְדָּם יוֹתֵר.",
             exampleNative = "מַסְקָנָה חֲשׁוּבָה этого квартала — говорить с рынком пораньше.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178821L, 178822L, 178823L, 178824L)),
     )
 }

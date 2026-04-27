@@ -73,8 +73,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Замглавы, который ведёт отдел исследований и разработки — десятки или сотни инженеров.",
             example = "וִי-פִּי אַר-אֶנְד-דִּי קָבַע יַעַד שֶׁל שְׁתֵּי מַהְדּוּרוֹת מֵייגָ'וֹר בַּשָּׁנָה.",
             exampleNative = "וִי-פִּי אַר-אֶנְד-דִּי поставил цель — два мажорных релиза в год.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174901L, 174903L, 174904L, 174905L)),
         WordEntity(
             id = 174903, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_leadership", transliteration = "si-pi-o",
@@ -93,8 +92,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Быстрый рост числа сотрудников без потери качества или культуры.",
             example = "סְקֵיילִינְג צֶוֶות מֵעֶשְׂרִים לְמֵאָה אִישׁ שָׁבַר לָנוּ אֶת הַתִּקְשׁוֹרֶת הַפְּנִימִית.",
             exampleNative = "סְקֵיילִינְג צֶוֶות с двадцати до ста человек сломал нашу внутреннюю коммуникацию.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174901L, 174902L, 174903L, 174905L)),
         WordEntity(
             id = 174905, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_leadership", transliteration = "mivne irguni",
@@ -103,8 +101,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "То, как устроены отделы и кому кто подчиняется внутри фирмы.",
             example = "מִבְנֶה אִרְגּוּנִי שָׁטוּחַ הִתְאִים לִשְׁלֹשִׁים אִישׁ אֲבָל לֹא לְמֵאתַיִם.",
             exampleNative = "Плоский מִבְנֶה אִרְגּוּנִי годился для тридцати человек, но не для двухсот.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174901L, 174902L, 174903L, 174904L)),
 
         // ── hightech_funding (5) — раунды и инвестиции ──
         WordEntity(
@@ -115,8 +112,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Цикл инвестирования, в котором стартап получает деньги от группы инвесторов.",
             example = "סָגַרְנוּ רַאוּנְד גִּיּוּס שֶׁל שְׁלֹשִׁים מִילְיוֹן דּוֹלָר בְּסוֹף הַשָּׁנָה.",
             exampleNative = "Мы закрыли רַאוּנְד גִּיּוּס на тридцать миллионов долларов в конце года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174907L, 174908L, 174909L, 174910L)),
         WordEntity(
             id = 174907, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_funding", transliteration = "dyu-dilijens",
@@ -125,8 +121,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Глубокая проверка инвестором — перед тем как решить переводить деньги.",
             example = "דְּיוּ-דִּילִיגֶ'נְס לָקַח חֳדָשַׁיִם וְעִכֵּב לָנוּ אֶת הַחֲתִימָה.",
             exampleNative = "דְּיוּ-דִּילִיגֶ'נְס занял два месяца и задержал нам подписание.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174906L, 174908L, 174909L, 174910L)),
         WordEntity(
             id = 174908, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_funding", transliteration = "term shit",
@@ -135,8 +130,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Короткая необязывающая бумага — резюмирует ключевые условия будущей сделки.",
             example = "הַמַּשְׁקִיעַ הָרָאשִׁי שָׁלַח טֶרְם שִׁיט עִם הַעֲרָכָה גְּבוֹהָה מֵהַצָּפוּי.",
             exampleNative = "Главный инвестор прислал טֶרְם שִׁיט с оценкой выше ожидаемой.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174906L, 174907L, 174909L, 174910L)),
         WordEntity(
             id = 174909, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_funding", transliteration = "sho'i hevra",
@@ -145,8 +139,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Полная сумма, в которую оценивают стартап на основе текущего распределения долей.",
             example = "שׁוֹוִי חֶבְרָה אַחֲרֵי הַרַּאוּנְד הִגִּיעַ לְמִילְיַארְד דּוֹלָר.",
             exampleNative = "שׁוֹוִי חֶבְרָה после раунда дошла до миллиарда долларов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174906L, 174907L, 174908L, 174910L)),
         WordEntity(
             id = 174910, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_funding", transliteration = "dilul",
@@ -155,8 +148,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Падение доли старых владельцев, когда фирма выпускает новые акции.",
             example = "הַמַּיְיסְדִים סָבְלוּ מִדִּילּוּל שֶׁל עֶשְׂרִים אָחוּז בָּרַאוּנְד הָאַחֲרוֹן.",
             exampleNative = "Основатели пострадали от דִּילּוּל в двадцать процентов в последнем раунде.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174906L, 174907L, 174908L, 174909L)),
 
         // ── hightech_exit (5) — IPO, M&A, выход ──
         WordEntity(
@@ -167,8 +159,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Когда частный стартап становится публичным, и его акции торгуются на бирже.",
             example = "הַחֶבְרָה הִתְכּוֹנְנָה לְהַנְפָּקָה בְּנָאסְדָאק אַחֲרֵי שֶׁבַע שְׁנוֹת צְמִיחָה.",
             exampleNative = "Фирма готовилась к הַנְפָּקָה на NASDAQ после семи лет роста.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174912L, 174913L, 174914L, 174915L)),
         WordEntity(
             id = 174912, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_exit", transliteration = "mizug ve-rekhisha",
@@ -177,8 +168,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Сделка, в которой одна фирма покупает другую — или обе сливаются в одно лицо.",
             example = "מִיזּוּג וּרְכִישָׁה עִם תַּאֲגִיד אָמֵרִיקָאִי הִכְפִּיל אֶת מִסְפַּר הָעוֹבְדִים שֶׁלָּנוּ.",
             exampleNative = "מִיזּוּג וּרְכִישָׁה с американской корпорацией удвоил наше число сотрудников.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174911L, 174913L, 174914L, 174915L)),
         WordEntity(
             id = 174913, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_exit", transliteration = "akvi-hayer",
@@ -187,8 +177,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Тип сделки, где главная цель — сами сотрудники, а не продукт или технология.",
             example = "גוּגַל בִּצְּעָה אַקְוִוי-הַיְיר וּקָלְטָה רַק שִׁישָּׁה מְהַנְדְּסִים מֵהַסְּטַרְטְאַפּ.",
             exampleNative = "Google провёл אַקְוִוי-הַיְיר и забрал лишь шесть инженеров со стартапа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174911L, 174912L, 174914L, 174915L)),
         WordEntity(
             id = 174914, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_exit", transliteration = "ekzit",
@@ -197,8 +186,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Событие, когда основатели и инвесторы превращают свою долю в живые деньги.",
             example = "אֶקְזִיט שֶׁל מֵאָה וַחֲמִישִּׁים מִילְיוֹן דּוֹלָר שִׁנָּה לְכֻלָּם אֶת הַחַיִּים.",
             exampleNative = "אֶקְזִיט в сто пятьдесят миллионов долларов изменил всем жизнь.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174911L, 174912L, 174913L, 174915L)),
         WordEntity(
             id = 174915, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_exit", transliteration = "kep teibel",
@@ -207,8 +195,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Подробная таблица — кто владеет каким процентом и каждым типом ценной бумаги.",
             example = "קֶפ טֵייבֶּל מְבֻלְבָּל הִבְהִיל אֶת הַמַּשְׁקִיעַ הַחָדָשׁ בַּדִּילִיגֶ'נְס.",
             exampleNative = "Запутанный קֶפ טֵייבֶּל напугал нового инвестора при проверке.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174911L, 174912L, 174913L, 174914L)),
 
         // ── hightech_strategy (5) — стратегические термины ──
         WordEntity(
@@ -219,8 +206,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Решение, как продукт воспринимается на рынке и с кем именно он соперничает.",
             example = "שִׁנִּינוּ אֶת הַפּוֹזִיצְיוֹנִינְג אַחֲרֵי שֶׁשְּׁתֵּי חֲבָרוֹת חֲדָשׁוֹת נִכְנְסוּ לַשּׁוּק.",
             exampleNative = "Мы переделали פּוֹזִיצְיוֹנִינְג после того как на рынок вышли две новые компании.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174917L, 174918L, 174919L, 174920L)),
         WordEntity(
             id = 174917, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_strategy", transliteration = "moat",
@@ -229,8 +215,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Глубокое преимущество, которое мешает соперникам уводить клиентов фирмы.",
             example = "אֶפֶקְט הָרֶשֶׁת יָצַר לְוָוטְסְאַפּ מוֹאָט שֶׁאַף אֶחָד לֹא הִצְלִיחַ לִשְׁבֹּר.",
             exampleNative = "Сетевой эффект создал WhatsApp такой מוֹאָט, что никто не сумел пробить.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174916L, 174918L, 174919L, 174920L)),
         WordEntity(
             id = 174918, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_strategy", transliteration = "yitaron takharuti",
@@ -249,8 +234,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Стадия, когда рынок жадно покупает то, что предлагает стартап.",
             example = "בְּלִי פִּי-אֶם-אֶף אַף מַשְׁקִיעַ לֹא יִכָּנֵס לַסִּיבּוּב הַבָּא.",
             exampleNative = "Без פִּי-אֶם-אֶף ни один инвестор не зайдёт в следующий цикл.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174916L, 174917L, 174918L, 174920L)),
         WordEntity(
             id = 174920, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_strategy", transliteration = "pivot",
@@ -259,8 +243,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Резкий поворот в бизнес-направлении, когда продукт или рынок не идут как задумано.",
             example = "אַחֲרֵי שָׁנָה בְּלִי לְקוֹחוֹת בִּצַּעְנוּ פִיבּוֹט מִ-בִּי-טוּ-סִי לְ-בִּי-טוּ-בִּי.",
             exampleNative = "После года без клиентов мы сделали פִיבּוֹט с B2C на B2B.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174916L, 174917L, 174918L, 174919L)),
 
         // ── hightech_culture (5) — корпоративная культура и удержание ──
         WordEntity(
@@ -271,8 +254,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Процент уходящих сотрудников за год от всего персонала.",
             example = "אַטְרִישֶׁן שֶׁל עֶשְׂרִים וַחֲמִישָּׁה אָחוּז הִדְלִיק נוּרָה אֲדֻמָּה לַהַנְהָלָה.",
             exampleNative = "אַטְרִישֶׁן в двадцать пять процентов зажёг красную лампу руководству.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174922L, 174923L, 174924L, 174925L)),
         WordEntity(
             id = 174922, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_culture", transliteration = "shimur ovdim",
@@ -281,8 +263,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Совокупность мер компании, чтобы хорошие люди оставались надолго.",
             example = "שִׁמּוּר עוֹבְדִים אֵצֶל אִינְטֵל מִתְבַּסֵּס עַל בּוֹנוּסִים שְׁנָתִיִּים גְּדוֹלִים.",
             exampleNative = "שִׁמּוּר עוֹבְדִים в Intel держится на крупных годовых бонусах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174921L, 174923L, 174924L, 174925L)),
         WordEntity(
             id = 174923, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_culture", transliteration = "ona'ut",
@@ -291,8 +272,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Чувство сотрудника, что результаты — лично его, а не одного начальника.",
             example = "אוֹנָאוּת חֲזָקָה אֵצֶל מְהַנְדְּסִים גּוֹרֶמֶת לָהֶם לִפְתֹּחַ בָּגִים בְּלִי בַּקָּשָׁה.",
             exampleNative = "Сильное אוֹנָאוּת у инженеров приводит к тому, что они чинят баги без просьбы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174921L, 174922L, 174924L, 174925L)),
         WordEntity(
             id = 174924, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "hightech_culture", transliteration = "akhrayutiyut",
@@ -301,8 +281,7 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Готовность отчитываться за поступки и итоги, не сваливая на окружение.",
             example = "אַחְרָיוּתִיּוּת אִישִׁית עָשְׂתָה אֶת הַהֶבְדֵּל בֵּין צֶוֶות חָזָק לְבֵינוֹנִי.",
             exampleNative = "Личная אַחְרָיוּתִיּוּת сделала разницу между сильной и средней командой.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174921L, 174922L, 174923L, 174925L)),
         WordEntity(
             id = 174925, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "hightech_culture", transliteration = "mo'tag ma'asik",
@@ -311,7 +290,6 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Образ фирмы в глазах кандидатов, которые ещё в неё не пришли.",
             example = "מוֹתַג מַעֲסִיק חָזָק חוֹסֵךְ מְלֵא כֶּסֶף עַל מוֹדַעוֹת דְּרוּשִׁים.",
             exampleNative = "Сильный מוֹתַג מַעֲסִיק экономит много денег на объявлениях о вакансиях.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(174921L, 174922L, 174923L, 174924L)),
     )
 }

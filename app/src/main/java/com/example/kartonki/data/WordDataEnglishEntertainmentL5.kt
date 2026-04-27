@@ -68,8 +68,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Cahiers critics built auteur theory around Hitchcock and Hawks.",
             exampleNative = "Критики Cahiers выстроили auteur theory вокруг Хичкока и Хоукса.",
             pos = "noun", semanticGroup = "entertainment_theory",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35902L, 35903L, 35904L, 35905L)),
 
         WordEntity(
             id = 35902, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -80,8 +79,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Welles packed every mise-en-scène with deep focus and dramatic shadows.",
             exampleNative = "Уэллс наполнял каждую mise-en-scène глубокой резкостью и тенями.",
             pos = "noun", semanticGroup = "entertainment_theory",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35901L, 35903L, 35904L, 35905L)),
 
         WordEntity(
             id = 35903, setId = 359, languagePair = "en-ru", rarity = "EPIC",
@@ -92,8 +90,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "A radio playing in the kitchen counts as diegetic sound on screen.",
             exampleNative = "Радио на кухне считается diegetic sound внутри сцены.",
             pos = "noun", semanticGroup = "entertainment_theory",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35901L, 35902L, 35904L, 35905L)),
 
         WordEntity(
             id = 35904, setId = 359, languagePair = "en-ru", rarity = "EPIC",
@@ -104,8 +101,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Deadpool breaks the fourth wall and winks straight at the camera.",
             exampleNative = "Дэдпул ломает fourth wall и подмигивает прямо в камеру.",
             pos = "noun", semanticGroup = "entertainment_theory",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35901L, 35902L, 35903L, 35905L)),
 
         WordEntity(
             id = 35905, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -116,8 +112,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Vader's heavy leitmotif warns the audience before he even appears.",
             exampleNative = "Тяжёлый leitmotif Вейдера предупреждает зрителя до его появления.",
             pos = "noun", semanticGroup = "entertainment_theory",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35901L, 35902L, 35903L, 35904L)),
 
         // ── entertainment_criticism (5) ───────────────────────────────────
 
@@ -130,8 +125,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Each film critic on the panel ranked the year's top ten differently.",
             exampleNative = "Каждый film critic в жюри расставил топ года по-своему.",
             pos = "noun", semanticGroup = "entertainment_criticism",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35907L, 35908L, 35909L, 35910L)),
 
         WordEntity(
             id = 35907, setId = 359, languagePair = "en-ru", rarity = "EPIC",
@@ -142,8 +136,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "The festival jury runs a quiet peer review on every selected entry.",
             exampleNative = "Жюри фестиваля проводит тихий peer review каждой отобранной работы.",
             pos = "noun", semanticGroup = "entertainment_criticism",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35906L, 35908L, 35909L, 35910L)),
 
         WordEntity(
             id = 35908, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -154,8 +147,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Her longform essay on Lynch ran twelve thousand words across two issues.",
             exampleNative = "Её longform essay о Линче занял двенадцать тысяч слов в двух номерах.",
             pos = "noun", semanticGroup = "entertainment_criticism",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35906L, 35907L, 35909L, 35910L)),
 
         WordEntity(
             id = 35909, setId = 359, languagePair = "en-ru", rarity = "EPIC",
@@ -166,8 +158,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "The journal ran a retrospective analysis of Kubrick on his anniversary.",
             exampleNative = "Журнал опубликовал retrospective analysis Кубрика к его юбилею.",
             pos = "noun", semanticGroup = "entertainment_criticism",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35906L, 35907L, 35908L, 35910L)),
 
         WordEntity(
             id = 35910, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -178,8 +169,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Her semiotic reading of the poster unpacked every colour and gesture.",
             exampleNative = "Её semiotic reading постера разобрало каждый цвет и жест.",
             pos = "noun", semanticGroup = "entertainment_criticism",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35906L, 35907L, 35908L, 35909L)),
 
         // ── entertainment_philosophy (5) ──────────────────────────────────
 
@@ -192,7 +182,6 @@ object WordDataEnglishEntertainmentL5 {
             example = "A great opera offers an aesthetic experience hard to find elsewhere.",
             exampleNative = "Большая опера дарит aesthetic experience, редкую где-либо ещё.",
             pos = "noun", semanticGroup = "entertainment_philosophy",
-            isFillInBlankSafe = false,
         ),
 
         WordEntity(
@@ -204,8 +193,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Good fantasy earns your suspension of disbelief in the first chapter.",
             exampleNative = "Хорошее фэнтези заслуживает suspension of disbelief в первой главе.",
             pos = "noun", semanticGroup = "entertainment_philosophy",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35911L, 35913L, 35914L, 35915L)),
 
         WordEntity(
             id = 35913, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -216,8 +204,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Greek tragedy aimed at catharsis through pity and fear in the audience.",
             exampleNative = "Греческая трагедия стремилась к catharsis через жалость и страх.",
             pos = "noun", semanticGroup = "entertainment_philosophy",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35911L, 35912L, 35914L, 35915L)),
 
         WordEntity(
             id = 35914, setId = 359, languagePair = "en-ru", rarity = "EPIC",
@@ -228,8 +215,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Caspar Friedrich's misty cliffs aim at the sublime, not at pretty views.",
             exampleNative = "Туманные скалы Фридриха целят в sublime, а не в красивый пейзаж.",
             pos = "noun", semanticGroup = "entertainment_philosophy",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35911L, 35912L, 35913L, 35915L)),
 
         WordEntity(
             id = 35915, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -240,8 +226,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Wagner dreamed of a gesamtkunstwerk where every art served the same vision.",
             exampleNative = "Вагнер мечтал о gesamtkunstwerk, где все искусства служат одному замыслу.",
             pos = "noun", semanticGroup = "entertainment_philosophy",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35912L, 35913L, 35914L)),
 
         // ── entertainment_industry_econ (5) ───────────────────────────────
 
@@ -254,8 +239,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "The studio's quiet drama posted a surprising box office return abroad.",
             exampleNative = "Тихая драма студии показала неожиданный box office return за рубежом.",
             pos = "noun", semanticGroup = "entertainment_industry_econ",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35917L, 35918L, 35919L, 35920L)),
 
         WordEntity(
             id = 35917, setId = 359, languagePair = "en-ru", rarity = "EPIC",
@@ -266,8 +250,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Veteran actors live for years on residual payment from a hit sitcom.",
             exampleNative = "Ветераны годами живут на residual payment от хитового ситкома.",
             pos = "noun", semanticGroup = "entertainment_industry_econ",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35916L, 35918L, 35919L, 35920L)),
 
         WordEntity(
             id = 35918, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -278,8 +261,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Toys and theme parks deliver more ancillary revenue than the films themselves.",
             exampleNative = "Игрушки и парки приносят больше ancillary revenue, чем сами фильмы.",
             pos = "noun", semanticGroup = "entertainment_industry_econ",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35916L, 35917L, 35919L, 35920L)),
 
         WordEntity(
             id = 35919, setId = 359, languagePair = "en-ru", rarity = "EPIC",
@@ -290,8 +272,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Friends earned a fortune from its long syndication deal in the nineties.",
             exampleNative = "«Друзья» заработали состояние на долгом syndication deal в девяностые.",
             pos = "noun", semanticGroup = "entertainment_industry_econ",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35916L, 35917L, 35918L, 35920L)),
 
         WordEntity(
             id = 35920, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -302,8 +283,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Marvel's blockbuster economics rests on huge worldwide opening weekends.",
             exampleNative = "Blockbuster economics Marvel держится на огромных мировых стартах.",
             pos = "noun", semanticGroup = "entertainment_industry_econ",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35916L, 35917L, 35918L, 35919L)),
 
         // ── entertainment_advanced_genre (5) ──────────────────────────────
 
@@ -316,8 +296,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "García Márquez built whole novels on calm, lyrical magical realism.",
             exampleNative = "Гарсиа Маркес выстраивал целые романы на спокойном magical realism.",
             pos = "noun", semanticGroup = "entertainment_advanced_genre",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35922L, 35923L, 35924L, 35925L)),
 
         WordEntity(
             id = 35922, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -328,8 +307,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Buñuel's films pushed surrealism deeper into mainstream cinema.",
             exampleNative = "Фильмы Бунюэля продвинули surrealism глубже в массовый кинематограф.",
             pos = "noun", semanticGroup = "entertainment_advanced_genre",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35921L, 35923L, 35924L, 35925L)),
 
         WordEntity(
             id = 35923, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -340,8 +318,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "Murakami's quiet novels read like slipstream more than pure fantasy.",
             exampleNative = "Тихие романы Мураками читаются скорее как slipstream, чем фэнтези.",
             pos = "noun", semanticGroup = "entertainment_advanced_genre",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35921L, 35922L, 35924L, 35925L)),
 
         WordEntity(
             id = 35924, setId = 359, languagePair = "en-ru", rarity = "EPIC",
@@ -352,8 +329,7 @@ object WordDataEnglishEntertainmentL5 {
             example = "True Detective made the anthology series fashionable on cable again.",
             exampleNative = "«Настоящий детектив» вернул моду на anthology series на кабельном.",
             pos = "noun", semanticGroup = "entertainment_advanced_genre",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35921L, 35922L, 35923L, 35925L)),
 
         WordEntity(
             id = 35925, setId = 359, languagePair = "en-ru", rarity = "LEGENDARY",
@@ -364,7 +340,6 @@ object WordDataEnglishEntertainmentL5 {
             example = "Sky Captain leans hard on dieselpunk to picture a thirties that never was.",
             exampleNative = "«Небесный капитан» жмёт на dieselpunk, рисуя тридцатые, каких не было.",
             pos = "noun", semanticGroup = "entertainment_advanced_genre",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(35921L, 35922L, 35923L, 35924L)),
     )
 }

@@ -73,8 +73,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Сайт или страница, где собрано множество свободных позиций в одном месте.",
             example = "סָרַקְתִּי לוּחַ דְּרוּשִׁים גָּדוֹל בְּכָל בֹּקֶר עִם הַקָּפֶה.",
             exampleNative = "Я просматривал большую לוּחַ דְּרוּשִׁים каждое утро с кофе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175302L, 175303L, 175304L, 175305L)),
         WordEntity(
             id = 175302, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_search_listings", transliteration = "tkhumey akhrayut",
@@ -83,8 +82,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Список задач, которые сотрудник выполняет каждый день на этой позиции.",
             example = "תְּחוּמֵי אַחְרָיוּת הָיוּ רְחָבִים מִדַּי לִשְׁתֵּי שָׁנוֹת נִסָּיוֹן.",
             exampleNative = "תְּחוּמֵי אַחְרָיוּת оказались слишком широкими для двух лет опыта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175301L, 175303L, 175304L, 175305L)),
         WordEntity(
             id = 175303, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_search_listings", transliteration = "sha'ot gmishot",
@@ -93,8 +91,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "График, при котором работник сам выбирает время начала и конца дня.",
             example = "שָׁעוֹת גְּמִישׁוֹת חָשׁוּבוֹת לִי בִּגְלַל הַיְּלָדִים בַּגַּן.",
             exampleNative = "שָׁעוֹת גְּמִישׁוֹת важны мне из-за детей в саду.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175301L, 175302L, 175304L, 175305L)),
         WordEntity(
             id = 175304, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_listings", transliteration = "misra hibridit",
@@ -103,8 +100,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Формат: половина в офисе, половина из дома — несколько дней в неделю там и там.",
             example = "מִשְׂרָה הִיבְּרִידִית מַאֲפְשֶׁרֶת לִי לָגוּר רָחוֹק יוֹתֵר מִתֵּל אָבִיב.",
             exampleNative = "מִשְׂרָה הִיבְּרִידִית позволяет мне жить дальше от Тель-Авива.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175301L, 175302L, 175303L, 175305L)),
         WordEntity(
             id = 175305, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_search_listings", transliteration = "sinun totsa'ot",
@@ -113,8 +109,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Сужение длинного списка по месту, уровню или объёму — чтобы видеть только подходящее.",
             example = "אַחֲרֵי סִנּוּן תּוֹצָאוֹת נִשְׁאֲרוּ לִי שְׁתֵּים עֶשְׂרֵה הַצָּעוֹת.",
             exampleNative = "После סִנּוּן תּוֹצָאוֹת у меня осталось двенадцать предложений.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175301L, 175302L, 175303L, 175304L)),
 
         // ── job_search_applying (5) — отклик и трекинг ──
         WordEntity(
@@ -125,8 +120,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Передача резюме и сертификатов в фирму как часть подачи на вакансию.",
             example = "שְׁלִיחַת מַסְמָכִים אוֹרֶכֶת חֲצִי שָׁעָה לְכָל מִשְׂרָה.",
             exampleNative = "שְׁלִיחַת מַסְמָכִים занимает полчаса на каждую вакансию.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175307L, 175308L, 175309L, 175310L)),
         WordEntity(
             id = 175307, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_search_applying", transliteration = "ishur kabala",
@@ -135,8 +129,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Автосообщение от фирмы: материалы, которые ты отправил, дошли до них.",
             example = "אִישׁוּר קַבָּלָה הִגִּיעַ לְמַיְל תּוֹךְ דַּקָּה אַחַת בִּלְבַד.",
             exampleNative = "אִישׁוּר קַבָּלָה пришёл на почту всего за одну минуту.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175306L, 175308L, 175309L, 175310L)),
         WordEntity(
             id = 175308, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_applying", transliteration = "dkhiya menumeket",
@@ -145,8 +138,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Отрицательный ответ от фирмы с кратким объяснением, почему кандидат не подошёл.",
             example = "דְּחִיָּה מְנֻמֶּקֶת עוֹזֶרֶת לִי לְהַשְׁתַּפֵּר לִפְנֵי הָרֵאָיוֹן הַבָּא.",
             exampleNative = "דְּחִיָּה מְנֻמֶּקֶת помогает мне расти перед следующим интервью.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175306L, 175307L, 175309L, 175310L)),
         WordEntity(
             id = 175309, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_applying", transliteration = "bakashat mashov",
@@ -155,8 +147,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Обращение к фирме после отказа: чтобы узнать, что улучшить в следующий раз.",
             example = "שָׁלַחְתִּי בַּקָּשַׁת מַשׁוֹב מְנֻמֶּסֶת אַחֲרֵי הָרֵאָיוֹן הַשֵּׁנִי.",
             exampleNative = "Я отправил вежливую בַּקָּשַׁת מַשׁוֹב после второго интервью.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175306L, 175307L, 175308L, 175310L)),
         WordEntity(
             id = 175310, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_search_applying", transliteration = "ma'akav hitkadmut",
@@ -165,8 +156,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Таблица или приложение: записывают, как каждое обращение в фирму движется дальше.",
             example = "מַעֲקַב הִתְקַדְּמוּת מְסֻדָּר חָסַךְ לִי שָׁעוֹת בַּשָּׁבוּעַ הַשֵּׁנִי.",
             exampleNative = "Упорядоченный מַעֲקַב הִתְקַדְּמוּת сэкономил мне часы на второй неделе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175306L, 175307L, 175308L, 175309L)),
 
         // ── job_search_networking (5) — нетворкинг и связи ──
         WordEntity(
@@ -177,8 +167,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Большое мероприятие: тысячи людей сферы встречаются, слушают доклады и знакомятся.",
             example = "כֵּנֶס מִקְצוֹעִי בְּתֵל אָבִיב הֵבִיא לִי שְׁתֵּי הִכָּרוּיוֹת חֲשׁוּבוֹת.",
             exampleNative = "כֵּנֶס מִקְצוֹעִי в Тель-Авиве принёс мне два важных знакомства.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175312L, 175313L, 175314L, 175315L)),
         WordEntity(
             id = 175312, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_search_networking", transliteration = "mitap",
@@ -197,8 +186,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Письмо или хорошие слова — кто-то говорит о тебе фирме, которая ищет сотрудника.",
             example = "הֶמְלָצָה אִישִׁית מִבּוֹס יָשָׁן פָּתְחָה לִי דֶּלֶת בְּלִי רֵאָיוֹן רִאשׁוֹן.",
             exampleNative = "הֶמְלָצָה אִישִׁית от старого босса открыла мне дверь без первого интервью.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175311L, 175312L, 175314L, 175315L)),
         WordEntity(
             id = 175314, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_networking", transliteration = "kesher kham",
@@ -207,8 +195,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Знакомство через общего друга, а не с нуля — это сильно поднимает шанс ответа.",
             example = "קֶשֶׁר חַם דֶּרֶךְ עָמִית לְלִימּוּדִים הוֹבִיל אוֹתִי לְמַנְכָּ\"ל.",
             exampleNative = "קֶשֶׁר חַם через коллегу по учёбе вывел меня на гендиректора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175311L, 175312L, 175313L, 175315L)),
         WordEntity(
             id = 175315, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_networking", transliteration = "hafnaya pnimit",
@@ -217,8 +204,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Когда сотрудник внутри фирмы передаёт твоё резюме рекрутеру изнутри.",
             example = "הַפְנָיָה פְּנִימִית מֵחָבֵר זִרְזָה אֶת הַתַּהֲלִיךְ בְּשָׁבוּעַ שָׁלֵם.",
             exampleNative = "הַפְנָיָה פְּנִימִית от друга ускорила процесс на целую неделю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175311L, 175312L, 175313L, 175314L)),
 
         // ── job_search_agency (5) — кадровые агентства и посредники ──
         WordEntity(
@@ -229,8 +215,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Внешний бизнес-посредник между ищущими работу и работодателями — берёт процент.",
             example = "חֶבְרַת הַשָּׂמָה הִצִּיעָה לִי שָׁלוֹשׁ מִשְׂרוֹת בִּתְעַשִּׂיַּת הַסַּיְבֶּר.",
             exampleNative = "חֶבְרַת הַשָּׂמָה предложила мне три позиции в кибер-индустрии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175317L, 175318L, 175319L, 175320L)),
         WordEntity(
             id = 175317, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_agency", transliteration = "yo'ets karyera",
@@ -239,8 +224,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Профессионал — помогает понять, куда идти на рынке и как правильно себя подать.",
             example = "יוֹעֵץ קַרְיֶירָה עָזַר לִי לְזַהוֹת חֲזָקוֹת שֶׁלֹּא רָאִיתִי לְבַד.",
             exampleNative = "יוֹעֵץ קַרְיֶירָה помог мне увидеть сильные стороны, которых я не замечал.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175316L, 175318L, 175319L, 175320L)),
         WordEntity(
             id = 175318, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_agency", transliteration = "ma'agar mu'amadim",
@@ -249,8 +233,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Большой набор резюме готовых людей — рекрутеры подбирают оттуда.",
             example = "אֲנִי בְּתוֹךְ מַאֲגַר מוּעֳמָדִים שֶׁל שָׁלוֹשׁ סוֹכְנֻיוֹת בּוֹ זְמַנִּית.",
             exampleNative = "Я внутри מַאֲגַר מוּעֳמָדִים трёх агентств одновременно.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175316L, 175317L, 175319L, 175320L)),
         WordEntity(
             id = 175319, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_agency", transliteration = "amlat itur",
@@ -259,8 +242,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Сумма, которую работодатель платит агентству, когда приведённый кандидат принят.",
             example = "עֲמָלַת אִתּוּר נֶעֱנֵית בְּשָׁלִישׁ הַמַּשְׂכֹּרֶת הַשְּׁנָתִית בַּחֲבִילָה.",
             exampleNative = "עֲמָלַת אִתּוּר встаёт в треть годовой зарплаты в этой схеме.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175316L, 175317L, 175318L, 175320L)),
         WordEntity(
             id = 175320, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_agency", transliteration = "heskem bil'adiyut",
@@ -269,8 +251,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Контракт: ищущий работу обещает только одному агентству заниматься его кейсом.",
             example = "סָרַבְתִּי לַחְתֹּם עַל הֶסְכֵּם בִּלְעַדִיּוּת לִשְׁנָתַיִם.",
             exampleNative = "Я отказался подписывать הֶסְכֵּם בִּלְעַדִיּוּת на два года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175316L, 175317L, 175318L, 175319L)),
 
         // ── job_search_alt_paths (5) — альтернативные пути в индустрию ──
         WordEntity(
@@ -281,8 +262,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Должность на короткий срок с известной датой окончания — на пару месяцев или проект.",
             example = "עֲבוֹדָה זְמַנִּית בַּקֵּיץ נָתְנָה לִי הַכְנָסָה בִּזְמַן הַחִפּוּשׂ.",
             exampleNative = "עֲבוֹדָה זְמַנִּית летом дала мне доход во время поиска.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175322L, 175323L, 175324L, 175325L)),
         WordEntity(
             id = 175322, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_search_alt_paths", transliteration = "frilans",
@@ -291,8 +271,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Формат: ты сам по себе, берёшь проекты у нескольких клиентов, не привязан к одному офису.",
             example = "אַחֲרֵי שָׁנָה שֶׁל פְרִילַנְס הֶחְלַטְתִּי לַחֲזוֹר לְמִשְׂרָה קְבוּעָה.",
             exampleNative = "После года פְרִילַנְס я решил вернуться на постоянную позицию.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175321L, 175323L, 175324L, 175325L)),
         WordEntity(
             id = 175323, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_alt_paths", transliteration = "hitmakhut ma'asit",
@@ -301,8 +280,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Короткий период в фирме, где новичок учится делу рядом с опытными сотрудниками.",
             example = "הִתְמַחוּת מַעֲשִׂית בַּסְּטַרְטְאַפּ הֶעֱנִיקָה לִי נִסָּיוֹן אֲמִיתִּי.",
             exampleNative = "הִתְמַחוּת מַעֲשִׂית в стартапе дала мне настоящий боевой опыт.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175321L, 175322L, 175324L, 175325L)),
         WordEntity(
             id = 175324, setId = 1753, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "job_search_alt_paths", transliteration = "shinuy karyera",
@@ -311,8 +289,7 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Переход из одной сферы в совершенно другую — иногда после дополнительного обучения.",
             example = "שִׁנּוּי קַרְיֶירָה מֵהוֹרָאָה לְהַייטֵק לָקַח לִי שָׁלוֹשׁ שָׁנִים.",
             exampleNative = "שִׁנּוּי קַרְיֶירָה из преподавания в хайтек занял у меня три года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175321L, 175322L, 175323L, 175325L)),
         WordEntity(
             id = 175325, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_search_alt_paths", transliteration = "hakhshara intensivit",
@@ -321,7 +298,6 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Плотная учебная программа на несколько месяцев — учит новой профессии с нуля.",
             example = "הַכְשָׁרָה אִינְטֶנְסִיבִית פָּתְחָה לִי דֶּלֶת לְהַייטֵק.",
             exampleNative = "הַכְשָׁרָה אִינְטֶנְסִיבִית открыла мне дверь в хайтек.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(175321L, 175322L, 175323L, 175324L)),
     )
 }

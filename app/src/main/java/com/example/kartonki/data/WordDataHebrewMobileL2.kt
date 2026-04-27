@@ -57,8 +57,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Внутренний экран — пользователь подгоняет под себя поведение программы.",
             example = "פָּתַחְתִּי הַגְדָּרוֹת אַפְּלִיקַצְיָה כְּדֵי לְהַשְׁתִּיק רַעַשׁ בְּעֵת קְרִיאוֹת.",
             exampleNative = "Я открыл הַגְדָּרוֹת אַפְּלִיקַצְיָה, чтобы заглушить шум во время звонков.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178402L, 178403L, 178404L, 178405L)),
         WordEntity(
             id = 178402, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_settings_basic", transliteration = "arket keha",
@@ -67,8 +66,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Чёрный или серый цветовой набор — удобен глазам при чтении ночью.",
             example = "עַרְכַּת כֵּהָה חוֹסֶכֶת סוֹלְלָה בְּמַסַּכִּים מִסּוּג אוֹלֶד.",
             exampleNative = "עַרְכַּת כֵּהָה экономит батарею на OLED-экранах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178401L, 178403L, 178404L, 178405L)),
         WordEntity(
             id = 178403, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_settings_basic", transliteration = "arket behira",
@@ -77,8 +75,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Белый или пастельный цветовой набор — удобен для чтения днём на солнце.",
             example = "עַרְכַּת בְּהִירָה מַתְאִימָה לְשִׁמּוּשׁ בַּחוּץ בְּאוֹר חָזָק.",
             exampleNative = "עַרְכַּת בְּהִירָה подходит для использования на улице при ярком свете.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178401L, 178402L, 178404L, 178405L)),
         WordEntity(
             id = 178404, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_settings_basic", transliteration = "godel gufan",
@@ -87,8 +84,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Высота букв на экране — от мелкого и плотного до крупного и чёткого для слабого зрения.",
             example = "סָבָתָא בִּקְּשָׁה לְהַגְדִּיל אֶת גֹּדֶל גּוּפָן בִּקְרִיאַת הוֹדָעוֹת.",
             exampleNative = "Бабушка попросила увеличить גֹּדֶל גּוּפָן при чтении сообщений.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178401L, 178402L, 178403L, 178405L)),
         WordEntity(
             id = 178405, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_settings_basic", transliteration = "sfat memshak",
@@ -97,8 +93,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Язык, на котором показываются все кнопки, меню и сообщения системы.",
             example = "שִׁנִּיתִי שְׂפַת מִמְשָׁק לְעִבְרִית אַחֲרֵי הָעֲלִיָּה לִיְשְׂרָאֵל.",
             exampleNative = "Я сменил שְׂפַת מִמְשָׁק на иврит после репатриации в Израиль.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178401L, 178402L, 178403L, 178404L)),
 
         // ── mobile_network_basic (5) — сетевые настройки и подключения ──
         WordEntity(
@@ -109,8 +104,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Выход в сеть через антенны сотовой компании — без кабелей и роутеров рядом.",
             example = "אִינְטֶרְנֶט סֶלוּלָרִי הִצִּיל אוֹתִי כְּשֶׁהַמְּשַׂחֵק נִשְׁבַּר בָּרַכֶּבֶת.",
             exampleNative = "אִינְטֶרְנֶט סֶלוּלָרִי выручил меня, когда роутер сломался в поезде.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178407L, 178408L, 178409L, 178410L)),
         WordEntity(
             id = 178407, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_network_basic", transliteration = "khibur vay-fay",
@@ -119,8 +113,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Беспроводная связь короткого радиуса с роутером дома или в кафе.",
             example = "חִבּוּר וַויי-פַיי בַּנָּמַל הָיָה אִטִּי וְלֹא הִסְפִּיק לְוִידֵאוֹ.",
             exampleNative = "חִבּוּר וַויי-פַיי в порту был медленный и не тянул видео.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178406L, 178408L, 178409L, 178410L)),
         WordEntity(
             id = 178408, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_network_basic", transliteration = "hagbalat tuna",
@@ -129,8 +122,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Месячный потолок байт — выше него скорость падает или выход в сеть блокируется.",
             example = "הַגְבָּלַת תּוּנָּה שֶׁל הַחֲבִילָה שֶׁלִּי נִגְמְרָה בְּאֶמְצַע הַחֹדֶשׁ.",
             exampleNative = "הַגְבָּלַת תּוּנָּה моего тарифа закончилась в середине месяца.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178406L, 178407L, 178409L, 178410L)),
         WordEntity(
             id = 178409, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_network_basic", transliteration = "matsav tisa",
@@ -139,8 +131,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Состояние, отключающее весь беспроводной сигнал устройства одним нажатием.",
             example = "הִדְלַקְתִּי מַצַּב טִיסָה לִפְנֵי הַהַמְרָאָה כְּמוֹ שֶׁבִּקְּשָׁה הַדַּיֶּלֶת.",
             exampleNative = "Я включил מַצַּב טִיסָה перед взлётом, как попросила бортпроводница.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178406L, 178407L, 178408L, 178410L)),
         WordEntity(
             id = 178410, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_network_basic", transliteration = "hotspot",
@@ -149,8 +140,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Сервис на телефоне — отдаёт сотовый трафик другим компьютерам поблизости.",
             example = "פָּתַחְתִּי הוֹטְסְפּוֹט בָּרֶכֶב כְּדֵי שֶׁהַיְּלָדִים יִצְפּוּ בְּסֶרֶט.",
             exampleNative = "Я открыл הוֹטְסְפּוֹט в машине, чтобы дети посмотрели фильм.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178406L, 178407L, 178408L, 178409L)),
 
         // ── mobile_permissions_basic (5) — системные разрешения ──
         WordEntity(
@@ -161,8 +151,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Согласие пользователя — программа открывает объектив и снимает кадры или ролики.",
             example = "בִּקְּשָׁה לְהַרְשָׁאַת מַצְלֵמָה קוֹפֶצֶת בַּפְּעָם הָרִאשׁוֹנָה.",
             exampleNative = "Запрос הַרְשָׁאַת מַצְלֵמָה всплывает при первом запуске.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178412L, 178413L, 178414L, 178415L)),
         WordEntity(
             id = 178412, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_permissions_basic", transliteration = "gisha la-mikrofon",
@@ -171,8 +160,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Согласие — код записывает голос из окружения через внутренний компонент.",
             example = "בְּלִי גִּישָׁה לַמִּיקְרוֹפוֹן הוּדְעוֹת קוֹלִיּוֹת לֹא יַעַבְדוּ בִּכְלָל.",
             exampleNative = "Без גִּישָׁה לַמִּיקְרוֹפוֹן голосовые сообщения вообще не заработают.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178411L, 178413L, 178414L, 178415L)),
         WordEntity(
             id = 178413, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_permissions_basic", transliteration = "albom tmunot",
@@ -181,8 +169,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Коллекция кадров устройства — программа хочет читать, выбирать или загружать оттуда.",
             example = "הַתּוֹכְנָה בִּקְּשָׁה לְהִכָּנֵס לְאַלְבּוֹם תְּמוּנוֹת לִפְנֵי שֶׁהֶעֶלְתָה אֶת הָאַוּטָר.",
             exampleNative = "Программа попросилась в אַלְבּוֹם תְּמוּנוֹת, прежде чем загрузить аватар.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178411L, 178412L, 178414L, 178415L)),
         WordEntity(
             id = 178414, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_permissions_basic", transliteration = "itur mikum",
@@ -191,8 +178,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Согласие коду определять, где находится устройство — по спутникам или вышкам.",
             example = "אִיתּוּר מִיקּוּם נִדְרָשׁ כְּדֵי שֶׁהַמָּפָּה תַּצִּיג אוֹתִי בִּנְקֻדָּה הַנְּכוֹנָה.",
             exampleNative = "אִיתּוּר מִיקּוּם нужен, чтобы карта показала меня в правильной точке.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178411L, 178412L, 178413L, 178415L)),
         WordEntity(
             id = 178415, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_permissions_basic", transliteration = "haskamat hodaot",
@@ -201,8 +187,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Согласие пользователя системе — показывать оповещения, даже когда программа закрыта.",
             example = "בְּלִי הַסְכָּמַת הוֹדָעוֹת לֹא תֵּדְעוּ עַל הוֹרָדַת מְחִיר אוֹ הוֹדָעָה חֲדָשָׁה.",
             exampleNative = "Без הַסְכָּמַת הוֹדָעוֹת вы не узнаете о снижении цены или новом сообщении.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178411L, 178412L, 178413L, 178414L)),
 
         // ── mobile_resources (5) — ресурсы и локализация ──
         WordEntity(
@@ -213,8 +198,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Место в проекте — там лежат статичные файлы: шрифты, ролики или demo-данные.",
             example = "שָׂמְתִּי אֶת קֹבֶץ הַנְּתוּנִים בְּתוֹךְ תִּיקִיַּת אַסֵטְס וְקָרָאתִי אוֹתוֹ בִּזְמַן רִיצָה.",
             exampleNative = "Я положил файл с данными в תִּיקִיַּת אַסֵטְס и читал его во время выполнения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178417L, 178418L, 178419L, 178420L)),
         WordEntity(
             id = 178417, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_resources", transliteration = "drovebel",
@@ -223,8 +207,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Графическое представление — иконка, фон или фигура — код подтягивает и кладёт на экран.",
             example = "הִצַּבְתִּי דְּרוֹאֶבֶּל חָדָשׁ לַכַּפְתּוֹר הָרָאשִׁי בִּשְׁתֵּי דְּחִיפוּיוֹת לַמַּאֲגָר.",
             exampleNative = "Я добавил новый דְּרוֹאֶבֶּל для главной кнопки в двух коммитах в репозиторий.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178416L, 178418L, 178419L, 178420L)),
         WordEntity(
             id = 178418, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_resources", transliteration = "mashaav makhrozet",
@@ -233,8 +216,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Текст лежит в отдельном файле с идентификатором — так его легко заменить или перевести.",
             example = "כָּל הַכּוֹתָרוֹת בָּאַפְּלִיקַצְיָה כְּתוּבוֹת כְּמַשָּׁאַב מַחְרֹזֶת לְפִי הַשָּׂפָה.",
             exampleNative = "Все заголовки в приложении записаны как מַשָּׁאַב מַחְרֹזֶת по языку.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178416L, 178417L, 178419L, 178420L)),
         WordEntity(
             id = 178419, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_resources", transliteration = "lokalizatsya",
@@ -243,8 +225,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Подгонка программы под язык и культуру страны — перевод, валюта, формат даты.",
             example = "לוֹקַלִיזַצְיָה לְעִבְרִית דָּרְשָׁה לְהָפֹךְ אֶת כָּל הַמָּסָכִים לְכִוּוּן יָמִין.",
             exampleNative = "לוֹקַלִיזַצְיָה на иврит потребовала развернуть все экраны направо.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178416L, 178417L, 178418L, 178420L)),
         WordEntity(
             id = 178420, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_resources", transliteration = "rezolutsya",
@@ -253,8 +234,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Количество точек по длине и ширине — определяет чёткость изображения.",
             example = "רֶזוֹלוּצְיָה גְּבוֹהָה שֶׁל הָאַייקוֹן נִרְאֲתָה מְטֻשְׁטֶשֶׁת בְּמַסַּכִּים יְשָׁנִים.",
             exampleNative = "Высокая רֶזוֹלוּצְיָה иконки выглядела размыто на старых экранах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178416L, 178417L, 178418L, 178419L)),
 
         // ── mobile_debug_basic (5) — отладка приложения ──
         WordEntity(
@@ -265,8 +245,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Список строк — программа пишет на ходу: что произошло и когда.",
             example = "כָּתַבְתִּי שׁוּרַת לוֹג בְּכָל פְּעֻלָּה כְּדֵי לִמְצֹא תַּקָּלוֹת מְהֵרָה.",
             exampleNative = "Я писал строку לוֹג на каждое действие, чтобы быстро находить поломки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178422L, 178423L, 178424L, 178425L)),
         WordEntity(
             id = 178422, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mobile_debug_basic", transliteration = "konsolat mefateakh",
@@ -285,8 +264,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Метка останавливает выполнение на конкретной строке — посмотреть значения в этот момент.",
             example = "שָׂמְתִּי בְּרֵייקְפּוֹינְט בַּלּוּלָאָה כְּדֵי לִתְפֹּס בְּדִיּוּק מָתַי הָאִינְדֶּקְס מִתְקַלְקֵל.",
             exampleNative = "Я поставил בְּרֵייקְפּוֹינְט в цикле, чтобы поймать момент, когда индекс портится.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178421L, 178422L, 178424L, 178425L)),
         WordEntity(
             id = 178424, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_debug_basic", transliteration = "bild dibug",
@@ -295,8 +273,7 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Версия кода со встроенными средствами проверки — медленнее, но удобна для разбора.",
             example = "בִּילְד דִּיבּוּג שֶׁל יוֹם שִׁישִּׁי שָׁקַל פִּי שְׁנַיִם מִגִּרְסַת הַפְּרוֹדָקְשֶׁן.",
             exampleNative = "בִּילְד דִּיבּוּג в пятницу весил вдвое больше продакшен-версии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178421L, 178422L, 178423L, 178425L)),
         WordEntity(
             id = 178425, setId = 1784, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_debug_basic", transliteration = "simulator",
@@ -305,7 +282,6 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Программа на компьютере прикидывается мобильным устройством — проверять код без телефона.",
             example = "סִימוּלָטוֹר שֶׁל אַיי-פוֹן יוֹתֵר מָהִיר מֵאֱמוּלָטוֹר אַנְדְּרוֹאִיד בְּמַק.",
             exampleNative = "סִימוּלָטוֹר для iPhone быстрее эмулятора Android на Mac.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178421L, 178422L, 178423L, 178424L)),
     )
 }

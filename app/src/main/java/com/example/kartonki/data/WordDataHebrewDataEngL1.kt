@@ -66,8 +66,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Знак, что говорит о количестве — один, два, сто или тысяча.",
             example = "כָּל מִסְפָּר בָּעַמּוּדָה הַזּוֹ אָמוּר לִהְיוֹת חִיוּבִי.",
             exampleNative = "Каждый מִסְפָּר в этой колонке должен быть положительным.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177401L, 177403L, 177404L, 177405L)),
         WordEntity(
             id = 177403, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "data_basics", transliteration = "tekst",
@@ -76,8 +75,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Буквы и слова, складывающиеся в фразу — в отличие от числа или даты.",
             example = "הוֹסַפְתִּי עַמּוּדַת טֶקְסְט קְצָרָה לְהֶעָרוֹת מֵהַלָּקוֹחַ.",
             exampleNative = "Я добавил короткую колонку טֶקְסְט для заметок от клиента.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177401L, 177402L, 177404L, 177405L)),
         WordEntity(
             id = 177404, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_basics", transliteration = "ta'arikh",
@@ -96,8 +94,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Слово, опознающее человека, фирму или место — как Дан, Гугл или Хайфа.",
             example = "כָּל שֵׁם בַּטַּבְלָה כָּתוּב בְּאוֹתִיּוֹת גְּדוֹלוֹת בָּאַנְגְּלִית.",
             exampleNative = "Каждое שֵׁם в таблице написано большими буквами по-английски.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177401L, 177402L, 177403L, 177404L)),
 
         // ── data_storage (5) — где данные лежат ──
         WordEntity(
@@ -108,8 +105,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Единица информации в компьютере с именем — например, документ, картинка или ролик.",
             example = "שָׁלַחְתִּי לְךָ קֹבֶץ עִם כָּל הַמְּכִירוֹת שֶׁל הַחֹדֶשׁ הַשֶּׁעָבַר.",
             exampleNative = "Я отправил тебе קֹבֶץ со всеми продажами за прошлый месяц.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177407L, 177408L, 177409L, 177410L)),
         WordEntity(
             id = 177407, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "data_storage", transliteration = "tikiya",
@@ -118,8 +114,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Место в компьютере, что собирает несколько файлов вместе — как ящик в столе.",
             example = "פָּתַחְתִּי תִּיקִיָּה חֲדָשָׁה לְכָל הַדּוּחוֹת שֶׁל הָרֶבַע הַזֶּה.",
             exampleNative = "Я открыл свежую תִּיקִיָּה для всех отчётов этого квартала.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177406L, 177408L, 177409L, 177410L)),
         WordEntity(
             id = 177408, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "data_storage", transliteration = "mismakh",
@@ -138,8 +133,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Тип файла — например Excel, PDF или CSV для таблиц.",
             example = "הַלָּקוֹחַ בִּקֵּשׁ אֶת הַדּוּחַ בְּפוֹרְמָט אֶקְסֶל וְלֹא בְּפִי-דִּי-אֵף.",
             exampleNative = "Клиент попросил отчёт в פוֹרְמָט Excel, а не в PDF.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177406L, 177407L, 177408L, 177410L)),
         WordEntity(
             id = 177410, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_storage", transliteration = "godel",
@@ -148,8 +142,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Сколько места занимает файл в компьютере — измеряется в мегах или гигах.",
             example = "גֹּדֶל הַקֹּבֶץ הָיָה גָּדוֹל מִדַּי לִשְׁלִיחָה בָּדּוֹאַר.",
             exampleNative = "גֹּדֶל файла оказался слишком велик для отправки по почте.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177406L, 177407L, 177408L, 177409L)),
 
         // ── data_table (5) — структура таблицы ──
         WordEntity(
@@ -160,8 +153,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Сетка строк и столбцов — упорядочивает информацию по категориям.",
             example = "בָּנִיתִי טַבְלָה שֶׁל מִשְׁתַּמְּשִׁים עִם חָמֵשׁ עַמּוּדוֹת בִּלְבַד.",
             exampleNative = "Я построил טַבְלָה пользователей всего из пяти колонок.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177412L, 177413L, 177414L, 177415L)),
         WordEntity(
             id = 177412, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "data_table", transliteration = "shura",
@@ -170,8 +162,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Горизонтальная линия в таблице — рассказывает об одном клиенте или одной сделке.",
             example = "כָּל שׁוּרָה בַּטַּבְלָה הַזּוֹ הִיא הַזְמָנָה אַחַת מֵהָאָתָר.",
             exampleNative = "Каждая שׁוּרָה в этой таблице — один заказ с сайта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177411L, 177413L, 177414L, 177415L)),
         WordEntity(
             id = 177413, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "data_table", transliteration = "amuda",
@@ -180,8 +171,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Вертикальная линия в таблице — держит одну характеристику для каждой строки, как возраст или город.",
             example = "מָחַקְתִּי עַמּוּדָה שֶׁל מִסְפַּר טֶלֶפוֹן כִּי לֹא הָיִינוּ צְרִיכִים אוֹתָהּ.",
             exampleNative = "Я удалил עַמּוּדָה номера телефона — она нам не нужна.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177411L, 177412L, 177414L, 177415L)),
         WordEntity(
             id = 177414, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_table", transliteration = "ta",
@@ -190,8 +180,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Маленький квадратик в таблице — место встречи одной строки с одним столбцом.",
             example = "כָּתַבְתִּי נֻסְחָה בַּתָּא הַזֶּה כְּדֵי לְחַשֵּׁב אֶת הַסְּכוּם.",
             exampleNative = "Я написал формулу в этом תָּא, чтобы посчитать сумму.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177411L, 177412L, 177413L, 177415L)),
         WordEntity(
             id = 177415, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "data_table", transliteration = "koteret",
@@ -200,8 +189,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Самая верхняя строка таблицы — говорит, что в каждом столбце.",
             example = "שִׁנִּיתִי אֶת הַכּוֹתֶרֶת מֵ-״תַּאֲרִיךְ״ לְ-״תַּאֲרִיךְ הַזְמָנָה״.",
             exampleNative = "Я сменил כּוֹתֶרֶת с «дата» на «дата заказа».",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177411L, 177412L, 177413L, 177414L)),
 
         // ── data_actions (5) — что делают с данными ──
         WordEntity(
@@ -222,8 +210,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Оставить работу в компьютере — чтобы она не пропала после выключения.",
             example = "אַל תִּשְׁכַּח לִשְׁמֹר אֶת הַטַּבְלָה לִפְנֵי שֶׁאַתָּה סוֹגֵר אֶת הַמָּסָךְ.",
             exampleNative = "Не забудь לִשְׁמֹר таблицу перед закрытием экрана.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177416L, 177418L, 177419L, 177420L)),
         WordEntity(
             id = 177418, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "data_actions", transliteration = "leyatse",
@@ -232,8 +219,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Вывести таблицу наружу в другой формат — например Excel или CSV.",
             example = "צָרִיךְ לְיַצֵּא אֶת הָרְשִׁימָה כְּדֵי לִשְׁלֹחַ לַלָּקוֹחַ.",
             exampleNative = "Нужно לְיַצֵּא список — чтобы отправить клиенту.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177416L, 177417L, 177419L, 177420L)),
         WordEntity(
             id = 177419, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "data_actions", transliteration = "leyabe",
@@ -242,8 +228,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Втянуть данные из внешнего файла внутрь текущей системы.",
             example = "אֶפְשָׁר לְיַבֵּא אֶת רְשִׁימַת אַנְשֵׁי הַקֶּשֶׁר יְשִׁירוֹת מִ-ג׳יִימֵייל.",
             exampleNative = "Можно לְיַבֵּא список контактов прямо из Gmail.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177416L, 177417L, 177418L, 177420L)),
         WordEntity(
             id = 177420, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "data_actions", transliteration = "lesanen",
@@ -252,8 +237,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Оставить только строки, что подходят под условие — а остальные временно спрятать.",
             example = "אֶפְשָׁר לְסַנֵּן אֶת הַטַּבְלָה לְפִי הָעִיר וּלְקַבֵּל רַק אֶת תֵּל-אָבִיב.",
             exampleNative = "Можно לְסַנֵּן таблицу по городу — и получить только Тель-Авив.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177416L, 177417L, 177418L, 177419L)),
 
         // ── data_reports (5) — что показывают начальству ──
         WordEntity(
@@ -274,8 +258,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Рисунок с кругом или столбиками — показывает, как сумма делится между частями.",
             example = "הוֹסַפְתִּי דִּיאַגְרָמָה צִבְעוֹנִית לְהַצָּגַת חֲלוּקַת הַמְּכִירוֹת.",
             exampleNative = "Я добавил цветную דִּיאַגְרָמָה — для показа разбивки продаж.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177421L, 177423L, 177424L, 177425L)),
         WordEntity(
             id = 177423, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_reports", transliteration = "graf",
@@ -284,8 +267,7 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Рисунок с поднимающейся или падающей линией — показывает, как число меняется во времени.",
             example = "הַגְּרָף מַרְאֶה עֲלִיָּה חַדָּה בַּהַזְמָנוֹת מֵרֹאשׁ הַשָּׁנָה.",
             exampleNative = "גְּרָף показывает резкий рост заказов с начала года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177421L, 177422L, 177424L, 177425L)),
         WordEntity(
             id = 177424, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "data_reports", transliteration = "sikum",

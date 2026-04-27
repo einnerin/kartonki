@@ -67,8 +67,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Программа, понимающая обычный язык и помогающая в повседневных задачах.",
             example = "מַחְשֵׁב חָכָם עוֹזֵר לִי לִכְתֹּב מַכְתָּבִים בָּעֲבוֹדָה.",
             exampleNative = "מַחְשֵׁב חָכָם помогает мне писать письма на работе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178602L, 178605L, 178607L)),
         WordEntity(
             id = 178602, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aiml_basic_concepts", transliteration = "ma'arekhet khakhama",
@@ -77,8 +76,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Программа, что сама решает, как помочь человеку в любой ситуации.",
             example = "מַעֲרֶכֶת חֲכָמָה בַּמְּכוֹנִית מַזְהִירָה אוֹתִי מִפְּנֵי הוֹלְכֵי רֶגֶל.",
             exampleNative = "מַעֲרֶכֶת חֲכָמָה в машине предупреждает меня о пешеходах.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178601L, 178603L, 178604L)),
         WordEntity(
             id = 178603, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aiml_basic_concepts", transliteration = "algoritm",
@@ -87,8 +85,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Последовательность шагов, по которой программа принимает решение.",
             example = "הָאַלְגוֹרִיתְם שֶׁל יוּטְיוּב יוֹדֵעַ אֵיזֶה סִרְטוֹן אוֹהַב.",
             exampleNative = "אַלְגוֹרִיתְם YouTube знает, какое видео мне нравится.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178602L, 178604L)),
         WordEntity(
             id = 178604, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aiml_basic_concepts", transliteration = "lemida",
@@ -97,8 +94,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Процесс, в котором программа узнаёт закономерности из множества примеров.",
             example = "לְמִידָה שֶׁל הָעוֹזֵר נִמְשֶׁכֶת חֳדָשִׁים אֲרֻכִּים.",
             exampleNative = "לְמִידָה ассистента занимает долгие месяцы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178602L, 178603L)),
         WordEntity(
             id = 178605, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "aiml_basic_concepts", transliteration = "moakh ha-makhshev",
@@ -107,8 +103,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Часть, что обрабатывает информацию и определяет ответ устройства.",
             example = "מֹחַ הַמַּחְשֵׁב עוֹבֵד מַהֵר יוֹתֵר מֵאָדָם בְּחִישּׁוּבִים.",
             exampleNative = "מֹחַ הַמַּחְשֵׁב считает быстрее человека.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178601L)),
 
         // ── aiml_basic_tools (5) — популярные инструменты ──
         WordEntity(
@@ -119,8 +114,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Популярный чат от OpenAI — отвечает в письменной форме на любой вопрос.",
             example = "בִּקַּשְׁתִּי מִ-צָ'אט-גִ'י-פִּי-טִי לְסַכֵּם לִי אֶת הַסֶּרֶט.",
             exampleNative = "Я попросил צָ'אט-גִ'י-פִּי-טִי сделать саммари фильма.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178607L, 178608L, 178609L, 178610L)),
         WordEntity(
             id = 178607, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "aiml_basic_tools", transliteration = "ozer koli",
@@ -129,7 +123,6 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Программа в телефоне — слышит просьбу голосом и отвечает голосом.",
             example = "אֲנִי מְבַקֵּשׁ מֵהָעוֹזֵר קוֹלִי לְהִתְקַשֵּׁר לְאַבָּא.",
             exampleNative = "Я прошу עוֹזֵר קוֹלִי позвонить отцу.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178608, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
@@ -149,8 +142,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Подборки видео или товаров — подобраны под то, что тебе нравится.",
             example = "הַהַמְלָצוֹת בְּנֶטְפְלִיקְס תָּמִיד מַתְאִימוֹת לִי יוֹתֵר מִדַּי.",
             exampleNative = "הַמְלָצוֹת в Netflix всегда подходят мне даже слишком.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178606L, 178608L, 178610L)),
         WordEntity(
             id = 178610, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aiml_basic_tools", transliteration = "khipush",
@@ -171,8 +163,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Набрать или произнести то, что ты хочешь узнать у программы.",
             example = "אַתָּה יָכוֹל לִשְׁאֹל שְׁאֵלָה בְּכָל שָׂפָה כִּמְעַט.",
             exampleNative = "Ты можешь לִשְׁאֹל שְׁאֵלָה почти на любом языке.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178612L, 178613L, 178614L, 178615L)),
         WordEntity(
             id = 178612, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "aiml_basic_actions", transliteration = "lekabel tshuva",
@@ -181,8 +172,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Увидеть на экране или услышать то, что программа поняла и сказала.",
             example = "לְקַבֵּל תְּשׁוּבָה מָהִירָה הוּא הַיִּתְרוֹן הַגָּדוֹל בִּצְ'אטים אֵלֶּה.",
             exampleNative = "לְקַבֵּל תְּשׁוּבָה быстро — большое преимущество таких чатов.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178611L, 178613L, 178614L, 178615L)),
         WordEntity(
             id = 178613, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "aiml_basic_actions", transliteration = "livdok uvda",
@@ -191,8 +181,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Заглянуть в серьёзный источник — правда ли то, что сказала программа.",
             example = "כְּדַאי לִבְדֹּק עוּבְדָה לִפְנֵי שֶׁמְּצַטְּטִים אֶת הַצַּ'אט.",
             exampleNative = "Стоит לִבְדֹּק עוּבְדָה прежде чем цитировать чат.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178611L, 178612L, 178614L, 178615L)),
         WordEntity(
             id = 178614, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "aiml_basic_actions", transliteration = "lehafik tmuna",
@@ -201,8 +190,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Попросить программу нарисовать новый рисунок по твоему описанию.",
             example = "נִסִּיתִי לְהַפִיק תְּמוּנָה שֶׁל חָתוּל אַסְטְרוֹנָאוּט עַל הַיָּרֵחַ.",
             exampleNative = "Я пробовал לְהַפִיק תְּמוּנָה кота-астронавта на Луне.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178611L, 178612L, 178613L, 178615L)),
         WordEntity(
             id = 178615, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "aiml_basic_actions", transliteration = "lehamshikh sikha",
@@ -211,8 +199,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Написать ещё одно сообщение в том же окне — без открытия нового чата.",
             example = "אֶפְשָׁר לְהַמְשִׁיךְ שִׂיחָה גַּם אַחֲרֵי שָׁבוּעַ אוֹ חֳדָשַׁיִם.",
             exampleNative = "Можно לְהַמְשִׁיךְ שִׂיחָה даже спустя неделю или два месяца.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178611L, 178612L, 178613L, 178614L)),
 
         // ── aiml_basic_user_view (5) — взгляд пользователя ──
         WordEntity(
@@ -223,8 +210,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Короткая фраза от тебя — чтобы навести программу на нужный тебе результат.",
             example = "רֶמֶז קָטָן וּמְדֻיָּק נוֹתֵן בְּדֶרֶךְ כְּלָל תּוֹצָאָה טוֹבָה יוֹתֵר.",
             exampleNative = "Короткий и точный רֶמֶז обычно даёт результат лучше.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178617L, 178618L, 178619L, 178620L)),
         WordEntity(
             id = 178617, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aiml_basic_user_view", transliteration = "shgia",
@@ -233,8 +219,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Неправильный ответ программы — она даже не знает, что промахнулась.",
             example = "שָׂמְתִּי לֵב לִשְׁגִיאָה גְּדוֹלָה בִּתְשׁוּבַת הַצַּ'אט הַבֹּקֶר.",
             exampleNative = "Я заметил большую שְׁגִיאָה в ответе чата сегодня утром.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178616L, 178618L, 178619L, 178620L)),
         WordEntity(
             id = 178618, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aiml_basic_user_view", transliteration = "diyuk",
@@ -243,8 +228,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Насколько ответ соответствует правде и тому, что ты спросил.",
             example = "הַדִּיּוּק שֶׁל הָעוֹזֵר עָלָה הַרְבֵּה בַּגִּרְסָה הָאַחֲרוֹנָה.",
             exampleNative = "דִּיּוּק ассистента сильно вырос в свежей версии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178616L, 178617L, 178619L, 178620L)),
         WordEntity(
             id = 178619, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aiml_basic_user_view", transliteration = "yetsiratiyut",
@@ -253,8 +237,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Способность выдавать новые и неожиданные идеи — для песни, рисунка или рассказа.",
             example = "יְצִירָתִיוּת שֶׁל הַצַּ'אט הִפְתִּיעָה אוֹתִי בִּכְתִיבַת שִׁיר חֲתוּנָה.",
             exampleNative = "יְצִירָתִיוּת чата удивила меня — он написал свадебную песню.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178616L, 178617L, 178618L, 178620L)),
         WordEntity(
             id = 178620, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aiml_basic_user_view", transliteration = "magbala",
@@ -263,8 +246,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Граница, которую программа не может или не вправе перешагнуть.",
             example = "יֵשׁ מַגְבָּלָה עַל אֹרֶךְ הַטֶּקְסְט שֶׁהָעוֹזֵר מְקַבֵּל בְּבַת אַחַת.",
             exampleNative = "Есть מַגְבָּלָה на длину текста, которую ассистент берёт сразу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178616L, 178617L, 178618L, 178619L)),
 
         // ── aiml_basic_safety (5) — безопасность и приватность ──
         WordEntity(
@@ -275,8 +257,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Защита сведений о пользователе от кражи или утечки в сеть.",
             example = "אַבְטָחַת מֵידַע חֲזָקָה חֲשׁוּבָה בְּצַ'אט שֶׁל בַּנְק אוֹ קֻפַּת חוֹלִים.",
             exampleNative = "Сильная אַבְטָחַת מֵידַע важна в чате банка или больничной кассы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178623L, 178625L)),
         WordEntity(
             id = 178622, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aiml_basic_safety", transliteration = "emun",
@@ -285,8 +266,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Чувство — на ответ можно положиться даже в важных делах.",
             example = "אֵין לִי עֲדַיִן אֵמוּן בָּעוֹזֵר בְּשֶׁל בְּרִיאוּת הַיְּלָדִים שֶׁלִּי.",
             exampleNative = "У меня пока нет אֵמוּן к ассистенту в делах здоровья детей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178624L, 178625L)),
         WordEntity(
             id = 178623, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "aiml_basic_safety", transliteration = "shlita enoshit",
@@ -295,8 +275,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Состояние, когда человек всегда может остановить программу или поправить её.",
             example = "בְּלִי שְׁלִיטָה אֱנוֹשִׁית, מַעֲרֶכֶת חֲזָקָה יְכוֹלָה לִטְעוֹת קָשֶׁה.",
             exampleNative = "Без שְׁלִיטָה אֱנוֹשִׁית сильная система может крепко промахнуться.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178621L)),
         WordEntity(
             id = 178624, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aiml_basic_safety", transliteration = "akhrayut",
@@ -305,8 +284,7 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Обязанность объяснить и заплатить, если автоматический ответ принёс вред.",
             example = "אַחֲרָיוּת עַל פְּגִיעָה רְפוּאִית נוֹפֶלֶת עַל הָרוֹפֵא, לֹא עַל הַצַּ'אט.",
             exampleNative = "אַחֲרָיוּת за врачебный вред лежит на враче, а не на чате.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178622L, 178625L)),
         WordEntity(
             id = 178625, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aiml_basic_safety", transliteration = "privatiyut",
@@ -315,7 +293,6 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Право скрыть личные тайны от чужих фирм и систем.",
             example = "אֲנִי לֹא מַכְנִיס שֵׁמוֹת שֶׁל יְלָדִים לַצַּ'אט בִּגְלַל פְּרָטִיוּת.",
             exampleNative = "Я не пишу имена детей в чат — из-за פְּרָטִיוּת.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(178621L, 178622L, 178624L)),
     )
 }

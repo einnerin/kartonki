@@ -64,8 +64,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "גִּישָׁה בִּקֹּרֶת שֶׁרוֹאָה בַּבַּמַּאי אֶת הַקּוֹל הַיּוֹצֵר הַמֶּרְכָּזִי שֶׁל הַסֶּרֶט.",
             definitionNative = "Подход, видящий в режиссёре главный творческий голос фильма, как у писателя.",
             example = "תּוֹרַת הַמְּחַבֵּר הִשְׁפִּיעָה עָמֹק עַל בִּקֹּרֶת הַקּוֹלְנוֹעַ הַצָּרְפָתִית.",
-            exampleNative = "תּוֹרַת הַמְּחַבֵּר глубоко повлияла на французскую кинокритику.",
-            isFillInBlankSafe = false),
+            exampleNative = "תּוֹרַת הַמְּחַבֵּר глубоко повлияла на французскую кинокритику.", fillInBlankExclusions = listOf(179502L, 179503L, 179504L)),
 
         WordEntity(id = 179502, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_theory", transliteration = "efekt kuleshov",
@@ -73,8 +72,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "תּוֹפָעָה שֶׁבָּהּ הַצּוֹפֶה מַעֲנִיק מַשְׁמָעוּת לִדְמוּת לְפִי שׁוֹט סָמוּךְ.",
             definitionNative = "Явление, при котором смысл лица героя задаётся соседним по монтажу кадром.",
             example = "מוֹרֵי קוֹלְנוֹעַ מַדְגִּימִים אֶפֶּקְט קוּלֶשׁוֹב כְּדֵי לְלַמֵּד עֲרִיכָה.",
-            exampleNative = "Преподаватели кино показывают אֶפֶּקְט קוּלֶשׁוֹב, чтобы объяснить монтаж.",
-            isFillInBlankSafe = false),
+            exampleNative = "Преподаватели кино показывают אֶפֶּקְט קוּלֶשׁוֹב, чтобы объяснить монтаж.", fillInBlankExclusions = listOf(179501L, 179503L, 179504L)),
 
         WordEntity(id = 179503, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_theory", transliteration = "tslil diegeti",
@@ -82,8 +80,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "קוֹל שֶׁמִּקּוֹרוֹ נִמְצָא בְּתוֹךְ הָעוֹלָם שֶׁל הַסִּפּוּר וְהַדְּמֻיּוֹת שׁוֹמְעוֹת אוֹתוֹ.",
             definitionNative = "Звук, источник которого находится внутри мира истории и слышен героям.",
             example = "צְלִיל דִּיֵגֶטִי שֶׁל רַדְיוֹ בָּרֶכֶב מַעֲגִין אֶת הַסְּצֵנָה.",
-            exampleNative = "צְלִיל דִּיֵגֶטִי автомобильного радио заземляет сцену в реальности.",
-            isFillInBlankSafe = false),
+            exampleNative = "צְלִיל דִּיֵגֶטִי автомобильного радио заземляет сцену в реальности.", fillInBlankExclusions = listOf(179501L, 179502L, 179504L)),
 
         WordEntity(id = 179504, setId = 1795, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "entertainment_theory", transliteration = "kir revii",
@@ -100,8 +97,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "מוֹטִיב חוֹזֵר — מַנְגִּינָה אוֹ דִּמּוּי — שֶׁמִּתְקַשֵּׁר לִדְמוּת אוֹ לְרַעְיוֹן.",
             definitionNative = "Повторяющийся мотив — мелодия или образ, — связанный с героем или идеей.",
             example = "לְכָל גִּבּוֹר בַּסַּאגָה יֵשׁ לֵיטְמוֹטִיב מוּסִיקָלִי מִשֶּׁלּוֹ.",
-            exampleNative = "У каждого героя саги есть свой музыкальный לֵיטְמוֹטִיב.",
-            isFillInBlankSafe = false),
+            exampleNative = "У каждого героя саги есть свой музыкальный לֵיטְמוֹטִיב."),
 
         // ── entertainment_criticism (5) — кинокритика и анализ ────────────
 
@@ -120,8 +116,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "טֶקְסְט עִתּוֹנָאִי מַעֲמִיק שֶׁעוֹלֶה עַל אַלְפֵי מִלִּים וְחוֹקֵר נוֹשֵׂא לְעֹמֶק.",
             definitionNative = "Подробный журналистский текст на тысячи слов, что глубоко исследует тему.",
             example = "הַמַּגָּזִין פִּרְסֵם כַּתָּבָה אֲרֻכָּה עַל הַמְּחַבֵּר הַסּוֹדִי שֶׁל הַסִּדְרָה.",
-            exampleNative = "Журнал опубликовал כַּתָּבָה אֲרֻכָּה о тайном авторе сериала.",
-            isFillInBlankSafe = false),
+            exampleNative = "Журнал опубликовал כַּתָּבָה אֲרֻכָּה о тайном авторе сериала.", fillInBlankExclusions = listOf(179506L, 179508L, 179509L, 179510L)),
 
         WordEntity(id = 179508, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_criticism", transliteration = "nituakh retrospektivi",
@@ -129,8 +124,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "הִתְבּוֹנְנוּת בִּיצִירָה שָׁנִים אַחֲרֵי יְצִיאָתָהּ — בְּהֶקְשֵׁר שֶׁל זְמַנָּהּ.",
             definitionNative = "Взгляд на произведение спустя годы после выхода, в свете его эпохи.",
             example = "נִתּוּחַ רֶטְרוֹסְפֶּקְטִיבִי חָשַׂף שִׁכְבוֹת חֲדָשׁוֹת בַּסֶּרֶט הַיָּשָׁן.",
-            exampleNative = "נִתּוּחַ רֶטְרוֹסְפֶּקְטִיבִי вскрыл новые слои в старой картине.",
-            isFillInBlankSafe = false),
+            exampleNative = "נִתּוּחַ רֶטְרוֹסְפֶּקְטִיבִי вскрыл новые слои в старой картине.", fillInBlankExclusions = listOf(179506L, 179507L, 179509L, 179510L)),
 
         WordEntity(id = 179509, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_criticism", transliteration = "kri'ah semyotit",
@@ -138,8 +132,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "פֵּרוּשׁ יְצִירָה דַּרְכֵי הַסְּמָלִים וְהַסִּימָנִים שֶׁבָּהּ — וְלֹא הָעֲלִילָה לְבַד.",
             definitionNative = "Толкование произведения через знаки и символы, а не только через сюжет.",
             example = "קְרִיאָה סֶמְיוֹטִית שֶׁל הַסֵּרֶט מְגַלָּה רְבָדִים שֶׁל מַשְׁמָעוּת תַּת-מוּדָעַת.",
-            exampleNative = "קְרִיאָה סֶמְיוֹטִית картины открывает пласты бессознательных значений.",
-            isFillInBlankSafe = false),
+            exampleNative = "קְרִיאָה סֶמְיוֹטִית картины открывает пласты бессознательных значений.", fillInBlankExclusions = listOf(179506L, 179507L, 179508L, 179510L)),
 
         WordEntity(id = 179510, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_criticism", transliteration = "poetika shel sippur",
@@ -147,8 +140,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "חֵקֶר עֶקְרוֹנוֹת הַבְּנִיָּה הָאָמָנוּתִית שֶׁל יְצִירָה סִפּוּרִית.",
             definitionNative = "Изучение принципов художественного построения нарративного произведения.",
             example = "פּוֹאֶטִיקָה שֶׁל סִפּוּר מְלַמֶּדֶת אֶת הַתַּלְמִיד לְפָרֵק טֶקְסְט סָבוּךְ.",
-            exampleNative = "פּוֹאֶטִיקָה שֶׁל סִפּוּר учит студента разбирать сложный текст.",
-            isFillInBlankSafe = false),
+            exampleNative = "פּוֹאֶטִיקָה שֶׁל סִפּוּר учит студента разбирать сложный текст.", fillInBlankExclusions = listOf(179506L, 179507L, 179508L, 179509L)),
 
         // ── entertainment_philosophy (5) — философия искусства ────────────
 
@@ -158,8 +150,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "מַצָּב נַפְשִׁי מְיֻחָד שֶׁמִּתְעוֹרֵר בְּקָהָל בִּזְמַן מִפְגָּשׁ עִם יְצִירָה.",
             definitionNative = "Особое душевное состояние, что возникает у публики при встрече с произведением.",
             example = "הַסֶּרֶט הָעֲנוּג חוֹלֵל חֲוָיָה אָמָנוּתִית עֲמוּקָה בְּכָל הָאוּלָם.",
-            exampleNative = "Тонкий фильм пробудил глубокую חֲוָיָה אָמָנוּתִית во всём зале.",
-            isFillInBlankSafe = false),
+            exampleNative = "Тонкий фильм пробудил глубокую חֲוָיָה אָמָנוּתִית во всём зале.", fillInBlankExclusions = listOf(179512L, 179513L, 179515L)),
 
         WordEntity(id = 179512, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_philosophy", transliteration = "hash'ayat i-emun",
@@ -167,8 +158,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "נְכוֹנוּת הַצּוֹפֶה לְהִתְעַלֵּם זְמַנִּית מֵאִי-סְבִירוּת כְּדֵי לֵהָנוֹת מֵהַסִּפּוּר.",
             definitionNative = "Готовность зрителя на время забыть о неправдоподобии ради вовлечения в историю.",
             example = "בְּלִי הַשְׁעָיַת אִי-אֱמוּן אִי אֶפְשָׁר לֵהָנוֹת מִסֵּרֶט פַנְטָסְיָה.",
-            exampleNative = "Без הַשְׁעָיַת אִי-אֱמוּן невозможно получать удовольствие от фэнтези.",
-            isFillInBlankSafe = false),
+            exampleNative = "Без הַשְׁעָיַת אִי-אֱמוּן невозможно получать удовольствие от фэнтези.", fillInBlankExclusions = listOf(179511L, 179515L)),
 
         WordEntity(id = 179513, setId = 1795, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "entertainment_philosophy", transliteration = "katarzis",
@@ -176,8 +166,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "הִזְדַּכְּכוּת רִגְשִׁית שֶׁל הַקָּהָל אַחֲרֵי טְרָגֶדְיָה — שִׁחְרוּר פְּנִימִי.",
             definitionNative = "Эмоциональное очищение публики после трагедии — внутреннее освобождение.",
             example = "הַסּוֹף הַמַּרְעִיד שֶׁל הַסֶּרֶט הִשִּׁיג קָתַרְזִיס אֲמִתִּי.",
-            exampleNative = "Пронзительный финал фильма дал зрителю настоящий קָתַרְזִיס.",
-            isFillInBlankSafe = false),
+            exampleNative = "Пронзительный финал фильма дал зрителю настоящий קָתַרְזִיס.", fillInBlankExclusions = listOf(179511L, 179514L)),
 
         WordEntity(id = 179514, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "entertainment_philosophy", transliteration = "ha-nisgav",
@@ -185,8 +174,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "תְּחוּשַׁת רוֹמְמוּת מְעוֹרֶבֶת בְּחַרְדָה מוּל יְצִירָה רַבַּת עָצְמָה.",
             definitionNative = "Чувство восторга, смешанного с трепетом, перед произведением огромной мощи.",
             example = "הַסְּצֵנָה הָרַחֲבָה שֶׁל הַיָּם מַעֲבֶרֶת אֶת הַנִּשְׂגָּב לַצּוֹפֶה.",
-            exampleNative = "Раскинувшаяся сцена моря передаёт הַנִּשְׂגָּב зрителю.",
-            isFillInBlankSafe = false),
+            exampleNative = "Раскинувшаяся сцена моря передаёт הַנִּשְׂגָּב зрителю.", fillInBlankExclusions = listOf(179513L)),
 
         WordEntity(id = 179515, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_philosophy", transliteration = "yetzira kolelet",
@@ -194,8 +182,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "חִבּוּר שֶׁל מוּסִיקָה, תְּמוּנָה, טֶקְסְט וְתְנוּעָה לְכְלִי בִּטּוּי אָמָנוּתִי אֶחָד.",
             definitionNative = "Сплав музыки, образа, текста и движения в единое художественное высказывание.",
             example = "וָגְנֶר חָלַם עַל יְצִירָה כּוֹלֶלֶת שֶׁתְּאַחֵד אֶת כָּל הָאָמָנוּיוֹת.",
-            exampleNative = "Вагнер мечтал о יְצִירָה כּוֹלֶלֶת, что объединит все искусства разом.",
-            isFillInBlankSafe = false),
+            exampleNative = "Вагнер мечтал о יְצִירָה כּוֹלֶלֶת, что объединит все искусства разом.", fillInBlankExclusions = listOf(179511L, 179512L)),
 
         // ── entertainment_economics (5) — экономика индустрии ─────────────
 
@@ -205,8 +192,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "סְכוּם הַכֶּסֶף שֶׁסֵּרֶט מַכְנִיס מִכַּרְטִיסִים בְּבָתֵּי הַקּוֹלְנוֹעַ.",
             definitionNative = "Сумма, которую фильм собирает с продажи билетов в кинотеатрах по миру.",
             example = "הַסֶּרֶט שָׁבַר אֶת שִׂיא הַבּוֹקְס אוֹפִיס בְּסוֹף שָׁבוּעַ הַפְּתִיחָה.",
-            exampleNative = "Фильм побил рекорд בּוֹקְס אוֹפִיס в первый же уикенд показа.",
-            isFillInBlankSafe = false),
+            exampleNative = "Фильм побил рекорд בּוֹקְס אוֹפִיס в первый же уикенд показа.", fillInBlankExclusions = listOf(179518L, 179520L)),
 
         WordEntity(id = 179517, setId = 1795, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "entertainment_economics", transliteration = "tamlugim",
@@ -214,8 +200,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "תַּשְׁלוּם תְּקוּפָתִי לְיוֹצֵר עַל כָּל שִׁמּוּשׁ בִּיצִירָתוֹ עַל יְדֵי אַחֵר.",
             definitionNative = "Регулярная плата автору за каждое использование его произведения другим.",
             example = "הַזַּמָּר חַי בַּשָּׁנִים הָאַחֲרוֹנוֹת מִתַּמְלוּגִים שֶׁל לַהִיט יָשָׁן.",
-            exampleNative = "Певец последние годы живёт на תַּמְלוּגִים от старого хита.",
-            isFillInBlankSafe = false),
+            exampleNative = "Певец последние годы живёт на תַּמְלוּגִים от старого хита.", fillInBlankExclusions = listOf(179518L, 179519L)),
 
         WordEntity(id = 179518, setId = 1795, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "entertainment_economics", transliteration = "hakhnasot nilvot",
@@ -223,8 +208,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "כֶּסֶף שֶׁמֵּגִיעַ מִמְכִירַת מוּצָרִים נִלְוִים — חֻלְצוֹת, צַעֲצוּעִים, רִשּׁוּיוֹת.",
             definitionNative = "Выручка от продажи побочных товаров — футболок, игрушек, лицензионных прав.",
             example = "הַכְנָסוֹת נִלְווֹת מֵהַסֵּרֶט עָבְרוּ אֶת רֵוַח הַקֻּפָּה עַצְמָהּ.",
-            exampleNative = "הַכְנָסוֹת נִלְווֹת от франшизы превзошли прибыль самого проката.",
-            isFillInBlankSafe = false),
+            exampleNative = "הַכְנָסוֹת נִלְווֹת от франшизы превзошли прибыль самого проката.", fillInBlankExclusions = listOf(179516L, 179517L, 179519L, 179520L)),
 
         WordEntity(id = 179519, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "entertainment_economics", transliteration = "sindikatsya",
@@ -232,8 +216,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "מְכִירָה חוֹזֶרֶת שֶׁל סִדְרָה לְעֶרֶב רַב שֶׁל עֲרוּצִים אַחֲרֵי שִׁדּוּרָהּ הָרִאשׁוֹן.",
             definitionNative = "Перепродажа сериала множеству каналов после первого эфира на главной сети.",
             example = "סִינְדִיקַצְיָה שֶׁל הַסִּטְקוֹם מַזְרִימָה רֶוַח עוֹד עָשׂוֹר אַחֲרֵי הַסּוֹף.",
-            exampleNative = "סִינְדִיקַצְיָה ситкома приносит прибыль ещё десятилетие после финала.",
-            isFillInBlankSafe = false),
+            exampleNative = "סִינְדִיקַצְיָה ситкома приносит прибыль ещё десятилетие после финала.", fillInBlankExclusions = listOf(179517L, 179518L)),
 
         WordEntity(id = 179520, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_economics", transliteration = "hekhzer hashka'ah",
@@ -241,8 +224,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "יַחַס בֵּין הַכְנָסַת הַסֶּרֶט לְבֵין הַסְּכוּם שֶׁהֻצַּא עַל הֲפָקָתוֹ וְשִׁוּוּקוֹ.",
             definitionNative = "Соотношение сборов фильма к сумме, потраченной на его создание и продвижение.",
             example = "הֶחְזֵר הַשְׁקָעָה שֶׁל הַסֶּרֶט הָעַצְמָאִי הִפְתִּיעַ אֶת הַסְּטוּדְיוֹ הַגָּדוֹל.",
-            exampleNative = "הֶחְזֵר הַשְׁקָעָה независимой картины удивил большую студию.",
-            isFillInBlankSafe = false),
+            exampleNative = "הֶחְזֵר הַשְׁקָעָה независимой картины удивил большую студию.", fillInBlankExclusions = listOf(179516L, 179518L)),
 
         // ── entertainment_advanced_genres (5) — продвинутые жанры ─────────
 
@@ -252,8 +234,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "סִגְנוֹן שֶׁבּוֹ פְּלָאִים מְשׁוּלָּבִים בְּחַיֵּי יוֹם-יוֹם בְּלִי שֶׁאִישׁ יִתְפַּלֵּא.",
             definitionNative = "Стиль, где чудеса вплетены в обыденную жизнь, и никто им не удивляется.",
             example = "רֵיאָלִיזְם מָאגִי אָפְיָנִי לִיצִירוֹתָיו שֶׁל גַּבְּרִיאֵל גַּרְסִיָּה מַארְקֶס.",
-            exampleNative = "רֵיאָלִיזְם מָאגִי характерен для прозы Габриэля Гарсиа Маркеса.",
-            isFillInBlankSafe = false),
+            exampleNative = "רֵיאָלִיזְם מָאגִי характерен для прозы Габриэля Гарсиа Маркеса.", fillInBlankExclusions = listOf(179522L, 179523L, 179524L)),
 
         WordEntity(id = 179522, setId = 1795, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "entertainment_advanced_genres", transliteration = "neo nuar",
@@ -261,8 +242,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "פִּיתּוּחַ מוֹדֶרְנִי שֶׁל סִרְטֵי פֶּשַׁע אֲפֵלִים — צֵל כָּבֵד, גִּבּוֹר מִתְלַבֵּט, עוֹלָם לֹא וַדָּאִי.",
             definitionNative = "Современная версия мрачных фильмов о преступлениях — тяжёлые тени, противоречивый герой, неясный мир.",
             example = "נֵיאוֹ-נוּאַר אָמֵרִיקָאִי שֶׁל שְׁנוֹת הַשִּׁבְעִים בָּעַט בְּסוֹד הָאָבוֹת הַמּוֹסְדִיִּים.",
-            exampleNative = "Американский נֵיאוֹ-נוּאַר семидесятых ударил по тайне отцов-основателей.",
-            isFillInBlankSafe = false),
+            exampleNative = "Американский נֵיאוֹ-נוּאַר семидесятых ударил по тайне отцов-основателей.", fillInBlankExclusions = listOf(179521L, 179523L, 179524L)),
 
         WordEntity(id = 179523, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_advanced_genres", transliteration = "bidyon muzar",
@@ -288,8 +268,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "דְּמוּי-עַתִּיד שֶׁמְּעַצֵּב מְכוֹנוֹת כְּבֵדוֹת בְּרוּחַ שְׁנוֹת הַשְּׁלוֹשִׁים וְהָאַרְבָּעִים.",
             definitionNative = "Образ будущего с тяжёлыми машинами в духе тридцатых и сороковых годов.",
             example = "הַמִּשְׂחָק הַחָדָשׁ מְעַצֵּב עוֹלָם בְּסִגְנוֹן דִיזֶל-פַּאנְק עָצוּב וּמְעֻשָּׁן.",
-            exampleNative = "Новая игра рисует мрачный закопчённый мир в стиле דִיזֶל-פַּאנְק.",
-            isFillInBlankSafe = false),
+            exampleNative = "Новая игра рисует мрачный закопчённый мир в стиле דִיזֶל-פַּאנְק."),
 
     )
 }

@@ -61,8 +61,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Команда на языке SQL — достаёт или меняет строки в таблице.",
             example = "כָּתַבְתִּי שְׁאִילְתָּה שֶׁמַּחְזִירָה אֶת כָּל הַלְּקוֹחוֹת מֵרוּסְיָה.",
             exampleNative = "Я написал שְׁאִילְתָּה, которая возвращает всех клиентов из России.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177502L, 177503L, 177504L, 177505L)),
         WordEntity(
             id = 177502, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_sql_basic", transliteration = "join",
@@ -71,8 +70,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Действие, объединяющее две таблицы по общей колонке — получается одна широкая строка.",
             example = "בְּלִי ג׳וֹיְן בֵּין הַזְמָנוֹת לִלְקוֹחוֹת, אִי אֶפְשָׁר לִרְאוֹת אֶת שְׁמוֹת הַקּוֹנִים.",
             exampleNative = "Без ג׳וֹיְן между заказами и клиентами не увидеть имена покупателей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177501L, 177503L, 177504L, 177505L)),
         WordEntity(
             id = 177503, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_sql_basic", transliteration = "tnay sinun",
@@ -81,8 +79,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Правило, оставляющее только подходящие строки — например, сумма больше тысячи.",
             example = "הוֹסַפְתִּי תְּנַאי סִינּוּן עַל הַתַּאֲרִיךְ, וְהַדּוּחַ הִתְקַצֵּר פִּי עֲשָׂרָה.",
             exampleNative = "Я добавил תְּנַאי סִינּוּן по дате — и отчёт сократился в десять раз.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177501L, 177502L, 177504L, 177505L)),
         WordEntity(
             id = 177504, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_sql_basic", transliteration = "kibutz",
@@ -91,8 +88,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Объединение строк по общему значению в колонке — чтобы суммировать, считать или усреднять.",
             example = "קִבּוּץ לְפִי מְדִינָה הֶרְאָה שֶׁשְּׁלִישׁ הַמְּכִירוֹת מַגִּיעַ מִגֶּרְמַנְיָה.",
             exampleNative = "קִבּוּץ по стране показал, что треть продаж идёт из Германии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177501L, 177502L, 177503L, 177505L)),
         WordEntity(
             id = 177505, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_sql_basic", transliteration = "miyun",
@@ -101,8 +97,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Упорядочивание результатов по колонке — от меньшего к большему, от свежего к старому и т.п.",
             example = "מִיּוּן לְפִי הַכְנָסָה יוֹרֶדֶת שָׂם אֶת הַלְּקוֹחוֹת הַגְּדוֹלִים בְּרֹאשׁ הָרְשִׁימָה.",
             exampleNative = "מִיּוּן по убыванию выручки ставит крупных клиентов в начало списка.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177501L, 177502L, 177503L, 177504L)),
 
         // ── data_excel (5) — работа в Excel ──
         WordEntity(
@@ -113,8 +108,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Выражение, считающее значение в ячейке через другие ячейки — начинается со знака равно.",
             example = "כָּתַבְתִּי פוֹרְמוּלָה שֶׁסּוֹכֶמֶת אֶת כָּל הַחֶשְׁבּוֹנִיּוֹת מֵהַחֹדֶשׁ הַקּוֹדֵם.",
             exampleNative = "Я написал פוֹרְמוּלָה, которая суммирует все счета за прошлый месяц.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177507L, 177508L, 177509L, 177510L)),
         WordEntity(
             id = 177507, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_excel", transliteration = "tavlat tsir",
@@ -123,8 +117,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Инструмент в Excel — сводит данные по строкам и столбцам по выбору пользователя.",
             example = "טַבְלַת צִיר חָשְׂפָה שֶׁשּׁלֹשָׁה מוּצָרִים אַחֲרָאִים עַל מֶחֱצִית הָרֶוַח.",
             exampleNative = "טַבְלַת צִיר показала, что три товара дают половину прибыли.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177506L, 177508L, 177509L, 177510L)),
         WordEntity(
             id = 177508, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_excel", transliteration = "makro",
@@ -153,8 +146,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Сплошная группа ячеек на листе — например A1 до C20 — над которой работает формула.",
             example = "סִמַּנְתִּי טְוָוח שֶׁל מֵאָה שׁוּרוֹת וְצִבַּעְתִּי אוֹתוֹ צָהֹב.",
             exampleNative = "Я выделил טְוָוח из ста строк и закрасил его жёлтым.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177506L, 177507L, 177508L, 177509L)),
 
         // ── data_bi (5) — BI-дашборды ──
         WordEntity(
@@ -165,8 +157,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Один экран — собирает главные графики и цифры о работе бизнеса.",
             example = "הַמְּנַהֵל פּוֹתֵחַ לוּחַ בַּקָּרָה שֶׁל הַמְּכִירוֹת כָּל בֹּקֶר.",
             exampleNative = "Руководитель открывает לוּחַ בַּקָּרָה продаж каждое утро.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177512L, 177513L, 177514L, 177515L)),
         WordEntity(
             id = 177512, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_bi", transliteration = "vidzhet",
@@ -175,8 +166,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Отдельный визуальный элемент на экране — график, шкала или большое число — показывает одну метрику.",
             example = "הוֹסַפְתִּי וִידְגֶ׳ט שֶׁל סַךְ הַהַזְמָנוֹת בַּפִּנָּה הָעֶלְיוֹנָה שְׂמָאלָה.",
             exampleNative = "Я добавил וִידְגֶ׳ט с общим числом заказов в левом верхнем углу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177511L, 177513L, 177514L, 177515L)),
         WordEntity(
             id = 177513, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_bi", transliteration = "slayser",
@@ -185,8 +175,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Интерактивная кнопка на дашборде — нажатие сужает все графики до одного значения.",
             example = "סְלַייסֶר שֶׁל אֵזוֹר מַתְמַקֵּד אוֹתִי בְּמֶרְכָּז הָאָרֶץ בְּלַחִיצָה אַחַת.",
             exampleNative = "סְלַייסֶר по региону одним кликом фокусирует меня на центре страны.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177511L, 177512L, 177514L, 177515L)),
         WordEntity(
             id = 177514, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_bi", transliteration = "dril-daun",
@@ -195,8 +184,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Клик-переход с верхнего итога вглубь — к подробностям, лежащим под ним.",
             example = "דְּרִיל-דָּאוּן עַל הָרֶבַע הָרִאשׁוֹן הוֹרִיד אוֹתִי לְרָמַת הַחֳדָשִׁים הַבּוֹדְדִים.",
             exampleNative = "דְּרִיל-דָּאוּן по первому кварталу опустил меня до уровня отдельных месяцев.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177511L, 177512L, 177513L, 177515L)),
         WordEntity(
             id = 177515, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_bi", transliteration = "metrika",
@@ -217,8 +205,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Короткий файл кода на Python — выполняет одну задачу, например, переносит данные из одного файла в другой.",
             example = "סְקְרִיפְּט פַּייתוֹן רָץ כָּל בֹּקֶר וּמַכִּין אֶת הַדּוּחַ הַיּוֹמִי.",
             exampleNative = "סְקְרִיפְּט פַּייתוֹן запускается каждое утро и готовит ежедневный отчёт.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177517L, 177518L, 177519L, 177520L)),
         WordEntity(
             id = 177517, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_scripts", transliteration = "pandas",
@@ -227,8 +214,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Популярная библиотека Python для работы с таблицами — читает, фильтрует и анализирует легко.",
             example = "בְּפַּנְדָּס שׁוּרָה אַחַת מַחֲלִיפָה עֶשְׂרִים שׁוּרוֹת קוֹד רָגִיל.",
             exampleNative = "В פַּנְדָּס одна строка заменяет двадцать строк обычного кода.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177516L, 177518L, 177519L, 177520L)),
         WordEntity(
             id = 177518, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_scripts", transliteration = "si-es-vi",
@@ -237,8 +223,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Простой формат файла — каждая строка это запись, а колонки разделены запятыми.",
             example = "הַלָּקוֹחַ שָׁלַח לִי קֹבֶץ סִי-אֶס-וִי עִם חֲמֵשׁ-עֶשְׂרֵה אֶלֶף שׁוּרוֹת.",
             exampleNative = "Клиент прислал мне файл סִי-אֶס-וִי с пятнадцатью тысячами строк.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177516L, 177517L, 177519L, 177520L)),
         WordEntity(
             id = 177519, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_scripts", transliteration = "json",
@@ -247,8 +232,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Структурированный формат для вложенных данных — поля, списки и вложенные объекты.",
             example = "כָּל תְּגוּבָה מֵהָ-API חוֹזֶרֶת כְּג׳וֹסוֹן עִם חֲמִשָּׁה שָׂדוֹת רָאשִׁיִּים.",
             exampleNative = "Каждый ответ от API возвращается как ג׳וֹסוֹן с пятью главными полями.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177516L, 177517L, 177518L, 177520L)),
         WordEntity(
             id = 177520, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "data_scripts", transliteration = "log",
@@ -279,8 +263,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Программное обращение к внешнему сервису — возвращает свежие данные по адресу и с авторизацией.",
             example = "כָּל קְרִיאַת API לַשֵּׁרוּת שֶׁל מֶזֶג הָאֲוִיר עוֹלָה לָנוּ אֲגוֹרָה אַחַת.",
             exampleNative = "Каждый קְרִיאַת API к погодному сервису стоит нам одну агору.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177521L, 177523L, 177524L, 177525L)),
         WordEntity(
             id = 177523, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_sources", transliteration = "khibur lemasad",
@@ -289,8 +272,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Открытый канал между скриптом и базой — через адрес, логин и пароль — по нему ходят запросы.",
             example = "הַחִבּוּר לְמַסָּד נָפַל בְּאֶמְצַע הַלַּיְלָה וְכָל הָעֲבוֹדָה נֶעֶצְרָה.",
             exampleNative = "חִבּוּר לְמַסָּד упал посреди ночи — и вся работа встала.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177521L, 177522L, 177524L, 177525L)),
         WordEntity(
             id = 177524, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_sources", transliteration = "eksport",
@@ -299,8 +281,7 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Вынос результатов из системы во внешний формат — для передачи другим.",
             example = "אֶקְסְפּוֹרְט שֶׁל הַלְּקוֹחוֹת הַפְּעִילִים לוֹקֵחַ פָּחוֹת מֵחֲצִי דַּקָּה.",
             exampleNative = "אֶקְסְפּוֹרְט активных клиентов занимает меньше полминуты.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177521L, 177522L, 177523L, 177525L)),
         WordEntity(
             id = 177525, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_sources", transliteration = "integratsya",
@@ -309,7 +290,6 @@ object WordDataHebrewDataEngL2 {
             definitionNative = "Постоянная связка двух систем, обменивающихся данными автоматически — без ручной передачи.",
             example = "הָאִינְטֶגְרַצְיָה עִם זַאפְּיֶר חוֹסֶכֶת לָנוּ שָׁלוֹשׁ שָׁעוֹת עֲבוֹדָה כָּל יוֹם.",
             exampleNative = "אִינְטֶגְרַצְיָה с Zapier экономит нам три часа работы каждый день.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(177521L, 177522L, 177523L, 177524L)),
     )
 }
