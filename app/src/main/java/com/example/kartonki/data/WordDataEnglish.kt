@@ -10611,18 +10611,19 @@ object WordDataEnglish {
         ),
 
         // 1-B ── Семья ─────────────────────────────────────────────────────────
-        // COMMON×21 = 21 (setId=8 целиком COMMON, UNCOMMON-слов «Семьи» нет)
+        // COMMON×12 (setId=8) + UNCOMMON×9 (setId=284) = 21
         DeckSeed(
             name = "Семья",
             level = 1,
             wordOriginals = listOf(
-                // COMMON ×21
+                // COMMON ×12 — setId=8
                 "mother", "father", "brother", "sister",
                 "son", "daughter", "grandfather", "grandmother",
                 "husband", "wife", "uncle", "aunt",
-                "cousin", "nephew", "niece", "baby",
-                "family", "parent", "child", "boy",
-                "girl",
+                // UNCOMMON ×9 — setId=284
+                "relative", "sibling", "in-law", "stepchild",
+                "stepparent", "guardian", "godparent", "ancestor",
+                "descendant",
             ),
         ),
 
