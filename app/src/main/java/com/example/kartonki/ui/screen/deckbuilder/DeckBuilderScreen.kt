@@ -1,5 +1,6 @@
 package com.example.kartonki.ui.screen.deckbuilder
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -54,6 +55,7 @@ import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.component.RarityFilterChips
+import com.example.kartonki.ui.component.WordDetailOverlay
 import com.example.kartonki.ui.theme.LocalAppStrings
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -67,6 +69,7 @@ fun DeckBuilderScreen(
     var levelMenuExpanded by remember { mutableStateOf(false) }
     var searchActive by remember { mutableStateOf(false) }
     var searchQuery by remember { mutableStateOf("") }
+    var selectedWord by remember { mutableStateOf<Word?>(null) }
     // Fresh state (position 0) whenever filter or search changes
     val deckListState = remember(uiState.rarityFilter, searchQuery) { LazyListState() }
     val availableListState = remember(uiState.rarityFilter, searchQuery) { LazyListState() }
@@ -204,6 +207,7 @@ fun DeckBuilderScreen(
                     actionEnabled = { true },
                     actionColor = { errorColor },
                     onAction = { viewModel.removeCard(it) },
+                    onWordClick = { selectedWord = it },
                     modifier = Modifier.weight(1f),
                 )
                 1 -> CardList(
@@ -214,11 +218,18 @@ fun DeckBuilderScreen(
                     actionEnabled = { if (it.id in deckCardIds) true else uiState.canAdd(it) },
                     actionColor = { if (it.id in deckCardIds) errorColor else primaryColor },
                     onAction = { if (it.id in deckCardIds) viewModel.removeCard(it) else viewModel.addCard(it) },
+                    onWordClick = { selectedWord = it },
                     modifier = Modifier.weight(1f),
                 )
             }
         }
     }
+
+    // Word detail overlay — system Back closes it before navigating away
+    WordDetailOverlay(
+        word = selectedWord,
+        onDismiss = { selectedWord = null },
+    )
 }
 
 @Composable
@@ -230,6 +241,7 @@ private fun CardList(
     actionEnabled: (Word) -> Boolean,
     actionColor: (Word) -> Color,
     onAction: (Word) -> Unit,
+    onWordClick: (Word) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     if (cards.isEmpty()) {
@@ -246,6 +258,7 @@ private fun CardList(
                 enabled = actionEnabled(word),
                 actionColor = actionColor(word),
                 onAction = { onAction(word) },
+                onWordClick = { onWordClick(word) },
             )
             HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
         }
@@ -259,10 +272,12 @@ private fun DeckCardItem(
     enabled: Boolean,
     actionColor: Color,
     onAction: () -> Unit,
+    onWordClick: () -> Unit,
 ) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
+            .clickable(onClick = onWordClick)
             .padding(horizontal = 12.dp, vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(8.dp),

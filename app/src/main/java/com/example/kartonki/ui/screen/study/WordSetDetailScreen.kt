@@ -1,5 +1,6 @@
 package com.example.kartonki.ui.screen.study
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -31,6 +32,9 @@ import androidx.compose.material3.IconButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -42,6 +46,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.R
 import com.example.kartonki.domain.model.Word
+import com.example.kartonki.ui.component.WordDetailOverlay
 import com.example.kartonki.ui.theme.LocalAppStrings
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -53,6 +58,7 @@ fun WordSetDetailScreen(
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
+    var selectedWord by remember { mutableStateOf<Word?>(null) }
 
     Scaffold(
         topBar = {
@@ -147,7 +153,7 @@ fun WordSetDetailScreen(
                         contentPadding = PaddingValues(vertical = 4.dp),
                     ) {
                         items(uiState.words) { word ->
-                            WordListItem(word = word)
+                            WordListItem(word = word, onClick = { selectedWord = word })
                             HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
                         }
                     }
@@ -155,14 +161,21 @@ fun WordSetDetailScreen(
             }
         }
     }
+
+    // Word detail overlay — system Back closes it before navigating away
+    WordDetailOverlay(
+        word = selectedWord,
+        onDismiss = { selectedWord = null },
+    )
 }
 
 @Composable
-private fun WordListItem(word: Word) {
+private fun WordListItem(word: Word, onClick: () -> Unit) {
     val rarityColor = Color(word.rarity.colorArgb)
     Row(
         modifier = Modifier
             .fillMaxWidth()
+            .clickable(onClick = onClick)
             .padding(horizontal = 16.dp, vertical = 10.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically,

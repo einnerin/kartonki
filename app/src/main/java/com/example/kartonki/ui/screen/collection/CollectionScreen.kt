@@ -52,6 +52,7 @@ import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.component.WordCard
+import com.example.kartonki.ui.component.WordDetailOverlay
 import com.example.kartonki.ui.theme.LocalAppStrings
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -143,43 +144,11 @@ fun CollectionScreen(
                 }
             }
 
-            // ── Word card overlay ─────────────────────────────────────────────
-            AnimatedVisibility(
-                visible = selectedWord != null,
-                enter = fadeIn(),
-                exit = fadeOut(),
-            ) {
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .background(Color.Black.copy(alpha = 0.6f))
-                        .clickable(
-                            interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() },
-                            indication = null,
-                            onClick = { selectedWord = null },
-                        ),
-                    contentAlignment = Alignment.Center,
-                ) {
-                    AnimatedVisibility(
-                        visible = selectedWord != null,
-                        enter = scaleIn(initialScale = 0.85f) + fadeIn(),
-                        exit = scaleOut(targetScale = 0.85f) + fadeOut(),
-                    ) {
-                        selectedWord?.let { word ->
-                            WordCard(
-                                word = word,
-                                modifier = Modifier
-                                    .padding(horizontal = 24.dp)
-                                    .clickable(
-                                        interactionSource = remember { androidx.compose.foundation.interaction.MutableInteractionSource() },
-                                        indication = null,
-                                        onClick = {},
-                                    ),
-                            )
-                        }
-                    }
-                }
-            }
+            // ── Word card overlay (system Back closes it before screen-back) ──
+            WordDetailOverlay(
+                word = selectedWord,
+                onDismiss = { selectedWord = null },
+            )
         }
     }
 }
