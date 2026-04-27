@@ -47,8 +47,6 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.ui.theme.AccentBlue
 import com.example.kartonki.ui.theme.AccentGold
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 
 @Composable
@@ -77,7 +75,7 @@ fun LoginScreen(
         modifier = Modifier
             .fillMaxSize()
             .background(
-                Brush.verticalGradient(listOf(Color(0xFF0D1B30), BgDeep))
+                Brush.verticalGradient(listOf(MaterialTheme.colorScheme.surface, MaterialTheme.colorScheme.background))
             )
             .statusBarsPadding()
             .navigationBarsPadding(),
@@ -102,7 +100,7 @@ fun LoginScreen(
             Text(
                 text = "Войдите, чтобы играть онлайн\nи сохранять статистику",
                 style = MaterialTheme.typography.bodyMedium,
-                color = TextSecondary,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center,
             )
 
@@ -129,7 +127,7 @@ fun LoginScreen(
                 Text(
                     text = "Аккаунт Google нужен для онлайн PvP\nи синхронизации прогресса.",
                     style = MaterialTheme.typography.bodySmall,
-                    color = TextSecondary.copy(alpha = 0.6f),
+                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f),
                     textAlign = TextAlign.Center,
                 )
             }

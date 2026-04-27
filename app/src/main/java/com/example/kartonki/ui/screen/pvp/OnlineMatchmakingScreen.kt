@@ -61,8 +61,6 @@ import com.example.kartonki.ui.component.DeckInvalidBadge
 import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.AccentPurple
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -85,7 +83,7 @@ fun OnlineMatchmakingScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Brush.verticalGradient(listOf(Color(0xFF0D1B30), BgDeep)))
+            .background(Brush.verticalGradient(listOf(MaterialTheme.colorScheme.surface, MaterialTheme.colorScheme.background)))
             .statusBarsPadding()
             .navigationBarsPadding(),
     ) {
@@ -163,7 +161,7 @@ private fun DeckSelectContent(
         Text(
             text = "Выберите колоду и найдите соперника",
             style = MaterialTheme.typography.bodyMedium,
-            color = TextSecondary,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
 
         Spacer(Modifier.height(40.dp))
@@ -286,13 +284,13 @@ private fun SearchingContent(onCancel: () -> Unit) {
             text = "Ищем соперника...",
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = MaterialTheme.colorScheme.onBackground,
         )
         Spacer(Modifier.height(8.dp))
         Text(
             text = "Мы ищем игрока с колодой того же уровня.\nОтмените поиск в любой момент.",
             style = MaterialTheme.typography.bodyMedium,
-            color = TextSecondary,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(horizontal = 40.dp),
         )
@@ -324,11 +322,11 @@ private fun SearchingContent(onCancel: () -> Unit) {
         Button(
             onClick = onCancel,
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFF1A1A2E),
-                contentColor = Color.White,
+                containerColor = MaterialTheme.colorScheme.surface,
+                contentColor = MaterialTheme.colorScheme.onSurface,
             ),
             modifier = Modifier
-                .border(1.dp, Color(0xFF444466), RoundedCornerShape(50))
+                .border(1.dp, MaterialTheme.colorScheme.outline, RoundedCornerShape(50))
                 .clip(RoundedCornerShape(50)),
         ) {
             Text("✕  Отменить поиск")

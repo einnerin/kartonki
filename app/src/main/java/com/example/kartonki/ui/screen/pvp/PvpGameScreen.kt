@@ -79,11 +79,7 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.width
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.domain.model.Word
-import com.example.kartonki.ui.theme.BgCard
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.BgMedium
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.TextSecondary
 
 private val SurrenderRed = Color(0xFFEF5350)
 
@@ -98,7 +94,7 @@ fun PvpGameScreen(
 
     if (state.isLoading) {
         Box(
-            modifier = Modifier.fillMaxSize().background(BgDeep),
+            modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background),
             contentAlignment = Alignment.Center,
         ) {
             CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
@@ -168,12 +164,12 @@ private fun HandSelectionScreen(
     }
 
     Scaffold(
-        containerColor = BgDeep,
+        containerColor = MaterialTheme.colorScheme.background,
         topBar = {
             TopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = BgMedium,
-                    titleContentColor = Color.White,
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface,
                 ),
                 title = {
                     val s = LocalAppStrings.current
@@ -217,7 +213,7 @@ private fun HandSelectionScreen(
                     highlightIndex = state.currentPlayerIndex,
                 )
             }
-            HorizontalDivider(color = BgCard)
+            HorizontalDivider(color = MaterialTheme.colorScheme.surfaceContainer)
 
             Column(
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
@@ -227,7 +223,7 @@ private fun HandSelectionScreen(
                 Text(
                     text = s.pvpSelectCard,
                     style = MaterialTheme.typography.titleSmall,
-                    color = TextSecondary,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
@@ -236,7 +232,7 @@ private fun HandSelectionScreen(
                     Text(
                         text = s.pvpInDeck(deckCards.size),
                         style = MaterialTheme.typography.bodySmall,
-                        color = TextSecondary.copy(alpha = 0.7f),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
                     )
                     DeckRarityIndicator(deckCards)
                 }
@@ -286,12 +282,12 @@ private fun QuizScreen(
     }
 
     Scaffold(
-        containerColor = BgDeep,
+        containerColor = MaterialTheme.colorScheme.background,
         topBar = {
             TopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = BgMedium,
-                    titleContentColor = Color.White,
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface,
                 ),
                 title = {
                     val s = LocalAppStrings.current
@@ -335,7 +331,7 @@ private fun QuizScreen(
                     highlightIndex = phase.defenderIndex,
                 )
             }
-            HorizontalDivider(color = BgCard)
+            HorizontalDivider(color = MaterialTheme.colorScheme.surfaceContainer)
 
             Column(modifier = Modifier.weight(1f)) {
                 Column(
@@ -350,14 +346,14 @@ private fun QuizScreen(
                     Text(
                         text = phase.quiz.questionLabel,
                         style = MaterialTheme.typography.labelLarge,
-                        color = TextSecondary,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
 
                     Text(
                         text = phase.quiz.question,
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold,
-                        color = Color.White,
+                        color = MaterialTheme.colorScheme.onBackground,
                         softWrap = true,
                     )
 
@@ -443,7 +439,7 @@ private fun GameOverScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Brush.verticalGradient(listOf(Color(0xFF0D1B30), BgDeep)))
+            .background(Brush.verticalGradient(listOf(MaterialTheme.colorScheme.surface, MaterialTheme.colorScheme.background)))
             .navigationBarsPadding()
             .padding(32.dp),
         contentAlignment = Alignment.Center,
@@ -458,7 +454,7 @@ private fun GameOverScreen(
                 style = MaterialTheme.typography.headlineLarge,
                 fontWeight = FontWeight.ExtraBold,
                 textAlign = TextAlign.Center,
-                color = Color.White,
+                color = MaterialTheme.colorScheme.onBackground,
             )
 
             if (reasonText != null) {
@@ -477,7 +473,7 @@ private fun GameOverScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .clip(RoundedCornerShape(12.dp))
-                        .background(BgCard)
+                        .background(MaterialTheme.colorScheme.surfaceContainer)
                         .padding(horizontal = 16.dp, vertical = 12.dp),
                 ) {
                     Row(
@@ -489,7 +485,7 @@ private fun GameOverScreen(
                             player.name,
                             style = MaterialTheme.typography.titleLarge,
                             fontWeight = if (player == winner) FontWeight.ExtraBold else FontWeight.Normal,
-                            color = if (player == winner) MaterialTheme.colorScheme.primary else TextSecondary,
+                            color = if (player == winner) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
                         )
                         Text(
                             s.pvpScore(player.score),
@@ -507,7 +503,7 @@ private fun GameOverScreen(
                 text = if (winner != null) s.pvpWinner(winner.name) else s.pvpDraw,
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold,
-                color = if (winner != null) MaterialTheme.colorScheme.primary else TextSecondary,
+                color = if (winner != null) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center,
             )
 
@@ -571,7 +567,7 @@ internal fun MultiplierRow(
     Row(
         modifier = modifier
             .fillMaxWidth()
-            .background(BgMedium)
+            .background(MaterialTheme.colorScheme.surface)
             .padding(horizontal = 12.dp, vertical = 6.dp),
         horizontalArrangement = Arrangement.SpaceBetween,
     ) {
@@ -580,7 +576,7 @@ internal fun MultiplierRow(
             Row(
                 modifier = Modifier
                     .clip(RoundedCornerShape(10.dp))
-                    .background(if (isActive) BgCard else Color.Transparent)
+                    .background(if (isActive) MaterialTheme.colorScheme.surfaceContainer else Color.Transparent)
                     .padding(horizontal = 10.dp, vertical = 6.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -589,7 +585,7 @@ internal fun MultiplierRow(
                     Text(
                         text = player.name,
                         style = MaterialTheme.typography.labelMedium,
-                        color = if (isActive) Color.White else TextSecondary,
+                        color = if (isActive) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.onSurfaceVariant,
                         fontWeight = if (isActive) FontWeight.Bold else FontWeight.Normal,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis,
@@ -669,9 +665,6 @@ internal fun TimerWidget(timeRemaining: Int) {
 
 // ─── Multiplier hint overlay ──────────────────────────────────────────────────
 
-private val HintBg     = Color(0xFF1A2535)
-private val HintBorder = Color(0xFF2D4A6E)
-
 @Composable
 private fun MultiplierHintOverlay(
     anchorBottomPx: Int,
@@ -680,6 +673,8 @@ private fun MultiplierHintOverlay(
     val density = LocalDensity.current
     val arrowSize = with(density) { 10.dp.toPx() }
     val cardHorizontalPadding = with(density) { 16.dp.toPx() }
+    val hintBg = MaterialTheme.colorScheme.surfaceContainerHigh
+    val hintBorder = MaterialTheme.colorScheme.outline
 
     // Full-screen scrim — tap outside card to dismiss
     Box(
@@ -716,7 +711,7 @@ private fun MultiplierHintOverlay(
                     lineTo(0f, h)
                     close()
                 }
-                drawPath(path, color = HintBorder)
+                drawPath(path, color = hintBorder)
                 // Inner fill (slightly smaller)
                 val inner = Path().apply {
                     moveTo(w / 2f, 2f)
@@ -724,7 +719,7 @@ private fun MultiplierHintOverlay(
                     lineTo(2f, h)
                     close()
                 }
-                drawPath(inner, color = HintBg)
+                drawPath(inner, color = hintBg)
             }
 
             // Tooltip card
@@ -733,8 +728,8 @@ private fun MultiplierHintOverlay(
                     .fillMaxWidth()
                     .shadow(8.dp, RoundedCornerShape(16.dp))
                     .clip(RoundedCornerShape(16.dp))
-                    .background(HintBg)
-                    .border(1.dp, HintBorder, RoundedCornerShape(16.dp))
+                    .background(hintBg)
+                    .border(1.dp, hintBorder, RoundedCornerShape(16.dp))
                     .padding(horizontal = 16.dp, vertical = 14.dp),
                 verticalArrangement = Arrangement.spacedBy(10.dp),
             ) {
@@ -748,14 +743,14 @@ private fun MultiplierHintOverlay(
                         text = "Множитель очков",
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.ExtraBold,
-                        color = Color.White,
+                        color = MaterialTheme.colorScheme.onSurface,
                     )
                 }
 
                 Text(
                     text = "Правильные ответы подряд увеличивают множитель — вы зарабатываете больше очков за каждую карту!",
                     style = MaterialTheme.typography.bodySmall,
-                    color = TextSecondary,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                     lineHeight = 18.sp,
                 )
 
@@ -790,7 +785,7 @@ private fun MultiplierHintOverlay(
                             Text(
                                 text = label,
                                 style = MaterialTheme.typography.labelSmall,
-                                color = TextSecondary,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 fontSize = 10.sp,
                             )
                         }

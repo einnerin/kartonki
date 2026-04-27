@@ -27,10 +27,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
-import com.example.kartonki.ui.theme.BgCard
 import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.LocalTtsManager
-import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 import com.example.kartonki.ui.theme.localizedName
 
@@ -49,7 +47,7 @@ fun WordCard(
             .glowEffect(rarityColor, glowRadius = 14.dp, cornerRadius = 16.dp),
         shape = RoundedCornerShape(16.dp),
         border = BorderStroke(1.5.dp, rarityColor.copy(alpha = 0.7f)),
-        colors = CardDefaults.cardColors(containerColor = BgCard),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainer),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
     ) {
         Column(modifier = Modifier.padding(horizontal = 20.dp, vertical = 16.dp)) {
@@ -61,7 +59,7 @@ fun WordCard(
                     textDirection = if (isRtl) TextDirection.Rtl else TextDirection.Ltr,
                 ),
                 fontWeight = FontWeight.Bold,
-                color = Color.White,
+                color = MaterialTheme.colorScheme.onSurface,
             )
 
             // ── Transliteration + TTS button ─────────────────────────────────
@@ -73,7 +71,7 @@ fun WordCard(
                         Text(
                             text = word.transliteration!!,
                             style = MaterialTheme.typography.bodyMedium,
-                            color = TextSecondary,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
                             modifier = Modifier.weight(1f, fill = false),
                         )
                     } else {
@@ -107,7 +105,7 @@ fun WordCard(
                     Text(
                         text = def,
                         style = MaterialTheme.typography.bodyMedium,
-                        color = TextSecondary,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                         maxLines = 2,
                         overflow = TextOverflow.Ellipsis,
                         fontStyle = FontStyle.Italic,

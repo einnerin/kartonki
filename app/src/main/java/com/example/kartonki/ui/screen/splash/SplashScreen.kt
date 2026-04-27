@@ -1,5 +1,6 @@
 package com.example.kartonki.ui.screen.splash
 
+import androidx.compose.material3.MaterialTheme
 import android.graphics.BitmapFactory
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -23,7 +24,9 @@ import androidx.compose.ui.unit.dp
 import com.example.kartonki.R
 import kotlinx.coroutines.delay
 
-private val BgDeep = Color(0xFF0D0D1A)
+// Splash bg is fixed brand color — runs before any theme is read, so it should
+// not depend on light/dark mode.
+private val SplashBg = Color(0xFF0D0D1A)
 
 @Composable
 fun SplashScreen(onSplashFinished: () -> Unit) {
@@ -39,7 +42,7 @@ fun SplashScreen(onSplashFinished: () -> Unit) {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(BgDeep),
+            .background(SplashBg),
         contentAlignment = Alignment.Center,
     ) {
         bitmap?.let {

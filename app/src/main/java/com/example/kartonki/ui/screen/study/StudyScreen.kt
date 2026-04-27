@@ -75,10 +75,6 @@ import com.example.kartonki.R
 import com.example.kartonki.ui.component.OnResume
 import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.component.SearchBar
-import com.example.kartonki.ui.theme.BgCard
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.BgMedium
-import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 
 private val FavoriteGold = Color(0xFFFFC107)
@@ -103,12 +99,12 @@ fun StudyScreen(
     OnResume { viewModel.refresh() }
 
     Scaffold(
-        containerColor = BgDeep,
+        containerColor = MaterialTheme.colorScheme.background,
         topBar = {
             TopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = BgMedium,
-                    titleContentColor = Color.White,
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface,
                 ),
                 title = { Text(LocalAppStrings.current.studyTitle, fontWeight = FontWeight.Bold) },
                 navigationIcon = {
@@ -118,7 +114,7 @@ fun StudyScreen(
                 },
                 actions = {
                     IconButton(onClick = { searchActive = true }) {
-                        Icon(Icons.Default.Search, contentDescription = "Поиск", tint = Color.White)
+                        Icon(Icons.Default.Search, contentDescription = "Поиск", tint = MaterialTheme.colorScheme.onSurface)
                     }
                 },
             )
@@ -137,8 +133,8 @@ fun StudyScreen(
             @Suppress("DEPRECATION")
             TabRow(
                 selectedTabIndex = uiState.selectedTab,
-                containerColor = BgMedium,
-                contentColor = Color.White,
+                containerColor = MaterialTheme.colorScheme.surface,
+                contentColor = MaterialTheme.colorScheme.onSurface,
                 indicator = { tabPositions ->
                     TabRowDefaults.SecondaryIndicator(
                         modifier = Modifier.tabIndicatorOffset(tabPositions[uiState.selectedTab]),
@@ -157,8 +153,8 @@ fun StudyScreen(
                                 fontWeight = if (uiState.selectedTab == index) FontWeight.Bold else FontWeight.Normal,
                             )
                         },
-                        selectedContentColor = Color.White,
-                        unselectedContentColor = Color.White.copy(alpha = 0.5f),
+                        selectedContentColor = MaterialTheme.colorScheme.onSurface,
+                        unselectedContentColor = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
                 }
             }
@@ -193,7 +189,7 @@ fun StudyScreen(
                     modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
                 )
             }
-            if (!searchActive) HorizontalDivider(color = Color.White.copy(alpha = 0.08f))
+            if (!searchActive) HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
 
             val listState = rememberLazyListState()
 
@@ -232,14 +228,14 @@ fun StudyScreen(
                         Text(
                             text = "Нет избранных наборов",
                             style = MaterialTheme.typography.titleMedium,
-                            color = Color.White,
+                            color = MaterialTheme.colorScheme.onBackground,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.Center,
                         )
                         Text(
                             text = "Нажми звёздочку на любом наборе, чтобы добавить его сюда",
                             style = MaterialTheme.typography.bodySmall,
-                            color = TextSecondary,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
                             textAlign = TextAlign.Center,
                         )
                     }
@@ -265,7 +261,7 @@ fun StudyScreen(
                                             Text(
                                                 text = "Ничего не найдено",
                                                 style = MaterialTheme.typography.bodyLarge,
-                                                color = TextSecondary,
+                                                color = MaterialTheme.colorScheme.onSurfaceVariant,
                                             )
                                         }
                                     }
@@ -427,8 +423,9 @@ private fun ProblemChipHintCard(
 
 @Composable
 private fun FavoriteStarButton(isFavorite: Boolean, onClick: () -> Unit) {
+    val inactiveColor = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f)
     val starColor by animateColorAsState(
-        targetValue = if (isFavorite) FavoriteGold else Color.White.copy(alpha = 0.3f),
+        targetValue = if (isFavorite) FavoriteGold else inactiveColor,
         animationSpec = spring(stiffness = Spring.StiffnessMedium),
         label = "starColor",
     )
@@ -469,7 +466,7 @@ private fun TopicHeader(
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .background(BgDeep)
+            .background(MaterialTheme.colorScheme.background)
             .clickable(onClick = onClick)
             .padding(horizontal = 16.dp, vertical = 10.dp),
         verticalAlignment = Alignment.CenterVertically,
@@ -479,7 +476,7 @@ private fun TopicHeader(
             text = topic,
             style = MaterialTheme.typography.titleSmall,
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = MaterialTheme.colorScheme.onBackground,
         )
         Row(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -488,12 +485,12 @@ private fun TopicHeader(
             Text(
                 text = "$count",
                 style = MaterialTheme.typography.labelSmall,
-                color = TextSecondary,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
             Icon(
                 imageVector = if (isExpanded) Icons.Filled.KeyboardArrowUp else Icons.Filled.KeyboardArrowDown,
                 contentDescription = if (isExpanded) "Свернуть" else "Развернуть",
-                tint = TextSecondary,
+                tint = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
     }
@@ -506,8 +503,9 @@ private fun WordSetCard(
     onToggleFavorite: () -> Unit,
 ) {
     val rarityColor = remember(item.rarity) { Color(item.rarity.colorArgb) }
-    val cardBrush = remember(rarityColor) {
-        Brush.verticalGradient(colors = listOf(BgCard, rarityColor.copy(alpha = 0.06f)))
+    val surfaceColor = MaterialTheme.colorScheme.surfaceContainer
+    val cardBrush = remember(rarityColor, surfaceColor) {
+        Brush.verticalGradient(colors = listOf(surfaceColor, rarityColor.copy(alpha = 0.06f)))
     }
     val progress = if (item.totalWords == 0) 0f
                    else item.introducedWords.toFloat() / item.totalWords
@@ -532,7 +530,7 @@ private fun WordSetCard(
                     text = item.description.ifBlank { item.name },
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
-                    color = Color.White,
+                    color = MaterialTheme.colorScheme.onSurface,
                     maxLines = 3,
                     overflow = TextOverflow.Ellipsis,
                     modifier = Modifier.weight(1f).padding(top = 4.dp),
@@ -540,7 +538,7 @@ private fun WordSetCard(
                 Text(
                     text = "${item.introducedWords} / ${item.totalWords}",
                     style = MaterialTheme.typography.labelSmall,
-                    color = TextSecondary,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                     fontWeight = FontWeight.Medium,
                     modifier = Modifier.padding(top = 6.dp),
                 )

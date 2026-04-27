@@ -327,7 +327,7 @@ private fun TranslationPanel(
 ) {
     val s = LocalAppStrings.current
     val accentColor = if (isCorrect) ColorCorrect else ColorIncorrect
-    val bgColor     = if (isCorrect) ColorCorrectBg else ColorIncorrectBg
+    val bgColor     = accentColor.copy(alpha = 0.15f)
     val borderColor = if (isCorrect) ColorCorrectBorder else ColorIncorrectBorder
 
     Surface(
@@ -361,7 +361,7 @@ private fun TranslationPanel(
                         textDirection = if (isRtl) TextDirection.Rtl else TextDirection.Ltr,
                     ),
                     fontWeight = FontWeight.Bold,
-                    color = Color.White,
+                    color = MaterialTheme.colorScheme.onSurface,
                 )
                 Text(
                     text = "  →  ",
@@ -379,7 +379,7 @@ private fun TranslationPanel(
                 Text(
                     text = transliteration,
                     style = MaterialTheme.typography.bodySmall,
-                    color = Color.White.copy(alpha = 0.6f),
+                    color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
                 )
             }
         }

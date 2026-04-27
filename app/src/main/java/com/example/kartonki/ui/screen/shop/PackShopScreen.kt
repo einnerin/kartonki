@@ -45,11 +45,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.BgCard
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.BgMedium
 import com.example.kartonki.ui.theme.RarityLegendary
-import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -67,9 +63,9 @@ fun PackShopScreen(
         topBar = {
             TopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = BgMedium,
+                    containerColor = MaterialTheme.colorScheme.surface,
                     titleContentColor = AccentGold,
-                    navigationIconContentColor = Color.White,
+                    navigationIconContentColor = MaterialTheme.colorScheme.onSurface,
                 ),
                 title = {
                     Text(s.shopTitle, fontWeight = FontWeight.Bold)
@@ -85,7 +81,7 @@ fun PackShopScreen(
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Brush.verticalGradient(listOf(Color(0xFF0D1B30), BgDeep)))
+                .background(Brush.verticalGradient(listOf(MaterialTheme.colorScheme.surface, MaterialTheme.colorScheme.background)))
                 .padding(innerPadding)
                 .navigationBarsPadding(),
         ) {
@@ -151,7 +147,7 @@ private fun TokenBalanceHeader(
             text = if (isCapReached) s.shopDailyLimitReached
                    else s.shopDailyProgress(dailyDone, dailyMax),
             style = MaterialTheme.typography.bodySmall,
-            color = if (isCapReached) RarityLegendary.copy(alpha = 0.85f) else TextSecondary,
+            color = if (isCapReached) RarityLegendary.copy(alpha = 0.85f) else MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center,
         )
     }
@@ -201,7 +197,7 @@ private fun FreePackSection(
         Text(
             text = s.shopPackCards,
             style = MaterialTheme.typography.bodyMedium,
-            color = TextSecondary,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center,
         )
 
@@ -211,7 +207,7 @@ private fun FreePackSection(
         Text(
             text = s.shopCountLabel,
             style = MaterialTheme.typography.labelLarge,
-            color = TextSecondary,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.fillMaxWidth(),
         )
         Spacer(Modifier.height(8.dp))
@@ -241,12 +237,12 @@ private fun FreePackSection(
                         modifier = Modifier.weight(1f),
                         shape = RoundedCornerShape(12.dp),
                         colors = ButtonDefaults.outlinedButtonColors(
-                            contentColor = if (canAfford) AccentGold else TextSecondary,
+                            contentColor = if (canAfford) AccentGold else MaterialTheme.colorScheme.onSurfaceVariant,
                         ),
                         border = androidx.compose.foundation.BorderStroke(
                             1.dp,
                             if (canAfford) AccentGold.copy(alpha = 0.5f)
-                            else TextSecondary.copy(alpha = 0.2f),
+                            else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.2f),
                         ),
                         contentPadding = PaddingValues(horizontal = 4.dp, vertical = 10.dp),
                     ) {
@@ -262,7 +258,7 @@ private fun FreePackSection(
         Text(
             text = s.shopCost(state.cost),
             style = MaterialTheme.typography.bodyMedium,
-            color = if (state.canAfford) AccentGold else TextSecondary,
+            color = if (state.canAfford) AccentGold else MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier.fillMaxWidth(),
             textAlign = TextAlign.Center,
         )
@@ -304,22 +300,22 @@ private fun FreePackSection(
                     .fillMaxWidth()
                     .height(56.dp)
                     .clip(RoundedCornerShape(16.dp))
-                    .background(BgCard)
-                    .border(1.dp, TextSecondary.copy(alpha = 0.3f), RoundedCornerShape(16.dp)),
+                    .background(MaterialTheme.colorScheme.surfaceContainer)
+                    .border(1.dp, MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.3f), RoundedCornerShape(16.dp)),
                 contentAlignment = Alignment.Center,
             ) {
                 Text(
                     text = s.shopInsufficientTokens,
                     fontSize = 15.sp,
                     fontWeight = FontWeight.Medium,
-                    color = TextSecondary,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
             Spacer(Modifier.height(8.dp))
             Text(
                 text = s.shopEarnPacks,
                 style = MaterialTheme.typography.bodySmall,
-                color = TextSecondary.copy(alpha = 0.6f),
+                color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f),
                 textAlign = TextAlign.Center,
             )
         }

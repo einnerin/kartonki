@@ -39,8 +39,6 @@ import androidx.compose.ui.unit.sp
 import com.example.kartonki.data.remote.FirebaseAuthManager
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.AccentPurple
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 
 @Composable
@@ -55,7 +53,7 @@ fun PvpModeSelectScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Brush.verticalGradient(listOf(Color(0xFF0D1B30), BgDeep)))
+            .background(Brush.verticalGradient(listOf(MaterialTheme.colorScheme.surface, MaterialTheme.colorScheme.background)))
             .statusBarsPadding()
             .navigationBarsPadding(),
     ) {
@@ -92,7 +90,7 @@ fun PvpModeSelectScreen(
             Text(
                 text = "Сразись с другим игроком",
                 style = MaterialTheme.typography.bodyMedium,
-                color = TextSecondary,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
 
             Spacer(Modifier.height(48.dp))
@@ -156,10 +154,10 @@ private fun ModeCard(
                 else Modifier
             )
             .clip(RoundedCornerShape(20.dp))
-            .background(if (enabled) gradient else Brush.horizontalGradient(listOf(Color(0xFF1A1A2E), Color(0xFF1A1A2E))))
+            .background(if (enabled) gradient else Brush.horizontalGradient(listOf(MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.colorScheme.surfaceVariant)))
             .border(
                 1.5.dp,
-                if (enabled) glowColor.copy(alpha = 0.5f) else Color(0xFF333355),
+                if (enabled) glowColor.copy(alpha = 0.5f) else MaterialTheme.colorScheme.outline,
                 RoundedCornerShape(20.dp)
             )
             .clickable(
@@ -180,20 +178,20 @@ private fun ModeCard(
                     text = title,
                     style = MaterialTheme.typography.titleLarge,
                     fontWeight = FontWeight.Bold,
-                    color = if (enabled) Color.White else TextSecondary,
+                    color = if (enabled) Color.White else MaterialTheme.colorScheme.onSurfaceVariant,
                 )
                 Spacer(Modifier.height(4.dp))
                 Text(
                     text = subtitle,
                     style = MaterialTheme.typography.bodySmall,
-                    color = if (enabled) Color.White.copy(alpha = 0.75f) else TextSecondary.copy(alpha = 0.5f),
+                    color = if (enabled) Color.White.copy(alpha = 0.75f) else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f),
                     textAlign = TextAlign.Start,
                 )
             }
             Text(
                 text = "›",
                 fontSize = 24.sp,
-                color = if (enabled) Color.White else TextSecondary.copy(alpha = 0.3f),
+                color = if (enabled) Color.White else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.3f),
             )
         }
     }

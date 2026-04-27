@@ -163,7 +163,7 @@ private fun ProblemWordsBannerStats(
         modifier = modifier
             .clip(RoundedCornerShape(14.dp))
             .background(
-                Brush.horizontalGradient(listOf(Color(0xFF3D1A00), Color(0xFF5A2800)))
+                Brush.horizontalGradient(listOf(warningColor.copy(alpha = 0.18f), warningColor.copy(alpha = 0.28f)))
             )
             .border(1.5.dp, warningColor.copy(alpha = 0.7f), RoundedCornerShape(14.dp))
             .clickable(

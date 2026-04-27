@@ -49,11 +49,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.theme.AccentGold
-import com.example.kartonki.ui.theme.BgCard
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.BgMedium
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.TextSecondary
 
 private val OnlineSurrenderRed = Color(0xFFEF5350)
 
@@ -85,7 +81,7 @@ fun OnlinePvpGameScreen(
 
     if (uiState.isLoading) {
         Box(
-            modifier = Modifier.fillMaxSize().background(BgDeep),
+            modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background),
             contentAlignment = Alignment.Center,
         ) {
             CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
@@ -95,13 +91,13 @@ fun OnlinePvpGameScreen(
 
     uiState.connectionError?.let { err ->
         Box(
-            modifier = Modifier.fillMaxSize().background(BgDeep).padding(32.dp),
+            modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background).padding(32.dp),
             contentAlignment = Alignment.Center,
         ) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text("⚠️", fontSize = 40.sp)
                 Spacer(Modifier.height(12.dp))
-                Text(err, color = Color.White, textAlign = TextAlign.Center)
+                Text(err, color = MaterialTheme.colorScheme.onBackground, textAlign = TextAlign.Center)
                 Spacer(Modifier.height(24.dp))
                 Button(onClick = onNavigateHome) { Text("На главную") }
             }
@@ -212,12 +208,12 @@ private fun OnlineHandSelectionScreen(
 ) {
     val s = LocalAppStrings.current
     Scaffold(
-        containerColor = BgDeep,
+        containerColor = MaterialTheme.colorScheme.background,
         topBar = {
             TopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = BgMedium,
-                    titleContentColor = Color.White,
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface,
                 ),
                 title = { Text(title, fontWeight = FontWeight.Bold) },
                 actions = {
@@ -243,7 +239,7 @@ private fun OnlineHandSelectionScreen(
     ) { innerPadding ->
         Column(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
             MultiplierRow(players = players, highlightIndex = highlightIndex)
-            HorizontalDivider(color = BgCard)
+            HorizontalDivider(color = MaterialTheme.colorScheme.surfaceContainer)
             Column(
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
                 verticalArrangement = Arrangement.spacedBy(4.dp),
@@ -251,7 +247,7 @@ private fun OnlineHandSelectionScreen(
                 Text(
                     text = s.pvpSelectCard,
                     style = MaterialTheme.typography.titleSmall,
-                    color = TextSecondary,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
@@ -260,7 +256,7 @@ private fun OnlineHandSelectionScreen(
                     Text(
                         text = s.pvpInDeck(remainingDeck.size),
                         style = MaterialTheme.typography.bodySmall,
-                        color = TextSecondary.copy(alpha = 0.7f),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
                     )
                     DeckRarityIndicator(remainingDeck)
                 }
@@ -294,12 +290,12 @@ private fun OnlineWaitingScreen(
 ) {
     val s = LocalAppStrings.current
     Scaffold(
-        containerColor = BgDeep,
+        containerColor = MaterialTheme.colorScheme.background,
         topBar = {
             TopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = BgMedium,
-                    titleContentColor = Color.White,
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface,
                 ),
                 title = { Text(title, fontWeight = FontWeight.Bold) },
                 actions = {
@@ -325,7 +321,7 @@ private fun OnlineWaitingScreen(
     ) { innerPadding ->
         Column(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
             MultiplierRow(players = players, highlightIndex = highlightIndex)
-            HorizontalDivider(color = BgCard)
+            HorizontalDivider(color = MaterialTheme.colorScheme.surfaceContainer)
             Box(
                 modifier = Modifier.weight(1f).fillMaxWidth(),
                 contentAlignment = Alignment.Center,
@@ -333,7 +329,7 @@ private fun OnlineWaitingScreen(
                 Text(
                     text = message,
                     style = MaterialTheme.typography.titleMedium,
-                    color = TextSecondary,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                     textAlign = TextAlign.Center,
                     modifier = Modifier.padding(horizontal = 32.dp),
                 )
@@ -361,12 +357,12 @@ private fun OnlineQuizScreen(
     val answered = phase.selectedAnswer != null
 
     Scaffold(
-        containerColor = BgDeep,
+        containerColor = MaterialTheme.colorScheme.background,
         topBar = {
             TopAppBar(
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = BgMedium,
-                    titleContentColor = Color.White,
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface,
                 ),
                 title = { Text(title, fontWeight = FontWeight.Bold) },
                 actions = {
@@ -392,7 +388,7 @@ private fun OnlineQuizScreen(
     ) { innerPadding ->
         Column(modifier = Modifier.fillMaxSize().padding(innerPadding)) {
             MultiplierRow(players = players, highlightIndex = highlightIndex)
-            HorizontalDivider(color = BgCard)
+            HorizontalDivider(color = MaterialTheme.colorScheme.surfaceContainer)
 
             Column(modifier = Modifier.weight(1f)) {
                 Column(
@@ -415,14 +411,14 @@ private fun OnlineQuizScreen(
                     Text(
                         text = phase.questionLabel,
                         style = MaterialTheme.typography.labelLarge,
-                        color = TextSecondary,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
 
                     Text(
                         text = phase.question,
                         style = MaterialTheme.typography.headlineSmall,
                         fontWeight = FontWeight.Bold,
-                        color = Color.White,
+                        color = MaterialTheme.colorScheme.onBackground,
                         softWrap = true,
                     )
 
@@ -497,7 +493,7 @@ private fun OnlineGameOverScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Brush.verticalGradient(listOf(Color(0xFF0D1B30), BgDeep)))
+            .background(Brush.verticalGradient(listOf(MaterialTheme.colorScheme.surface, MaterialTheme.colorScheme.background)))
             .navigationBarsPadding()
             .padding(32.dp),
         contentAlignment = Alignment.Center,
@@ -525,7 +521,7 @@ private fun OnlineGameOverScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .clip(RoundedCornerShape(12.dp))
-                        .background(BgCard)
+                        .background(MaterialTheme.colorScheme.surfaceContainer)
                         .padding(horizontal = 16.dp, vertical = 12.dp),
                 ) {
                     Row(
@@ -537,7 +533,7 @@ private fun OnlineGameOverScreen(
                             text = name,
                             style = MaterialTheme.typography.titleLarge,
                             fontWeight = if (name == winnerName) FontWeight.ExtraBold else FontWeight.Normal,
-                            color = if (name == winnerName) MaterialTheme.colorScheme.primary else TextSecondary,
+                            color = if (name == winnerName) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
                         )
                         Text(
                             text = s.pvpScore(score),
@@ -555,7 +551,7 @@ private fun OnlineGameOverScreen(
                 text = if (winnerName != null) s.pvpWinner(winnerName) else s.pvpDraw,
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold,
-                color = if (winnerName != null) MaterialTheme.colorScheme.primary else TextSecondary,
+                color = if (winnerName != null) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center,
             )
 

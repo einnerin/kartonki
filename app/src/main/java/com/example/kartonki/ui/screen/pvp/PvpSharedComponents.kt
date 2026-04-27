@@ -40,8 +40,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.kartonki.domain.model.Word
-import com.example.kartonki.ui.theme.BgCard
-import com.example.kartonki.ui.theme.TextSecondary
 
 // ─── Answer state ─────────────────────────────────────────────────────────────
 
@@ -77,8 +75,8 @@ fun PvpAnswerButton(
     val (bgColor, borderColor, textColor) = when (answerState) {
         PvpAnswerState.Correct -> Triple(CorrectGreen.copy(alpha = 0.25f), CorrectGreenBorder, CorrectGreenBorder)
         PvpAnswerState.Wrong   -> Triple(WrongRed.copy(alpha = 0.25f),    WrongRedBorder,     WrongRedBorder)
-        PvpAnswerState.Dimmed  -> Triple(BgCard.copy(alpha = 0.4f),       Color(0xFF2A3E54),  TextSecondary.copy(alpha = 0.4f))
-        PvpAnswerState.Normal  -> Triple(BgCard,                          MaterialTheme.colorScheme.outline, Color.White)
+        PvpAnswerState.Dimmed  -> Triple(MaterialTheme.colorScheme.surfaceContainer.copy(alpha = 0.4f),       MaterialTheme.colorScheme.outline.copy(alpha = 0.4f),  MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.4f))
+        PvpAnswerState.Normal  -> Triple(MaterialTheme.colorScheme.surfaceContainer,                          MaterialTheme.colorScheme.outline, MaterialTheme.colorScheme.onSurface)
     }
 
     Box(
@@ -125,7 +123,7 @@ fun PvpResultPanel(
     modifier: Modifier = Modifier,
 ) {
     val accentColor = if (isCorrect) Color(0xFF66BB6A) else Color(0xFFEF5350)
-    val bgColor     = if (isCorrect) Color(0xFF1A3A1A) else Color(0xFF3A1A1A)
+    val bgColor     = accentColor.copy(alpha = 0.15f)
     val borderColor = if (isCorrect) Color(0xFF4CAF50) else Color(0xFFC62828)
 
     Column(
@@ -148,7 +146,7 @@ fun PvpResultPanel(
         }
         Text(
             text = buildAnnotatedString {
-                withStyle(SpanStyle(color = Color.White, fontWeight = FontWeight.Bold)) {
+                withStyle(SpanStyle(color = MaterialTheme.colorScheme.onSurface, fontWeight = FontWeight.Bold)) {
                     append(wordOriginal)
                 }
                 withStyle(SpanStyle(color = accentColor, baselineShift = BaselineShift(0.12f))) {
@@ -191,7 +189,7 @@ fun PvpHandCard(
             .fillMaxWidth()
             .clip(RoundedCornerShape(12.dp))
             .border(1.dp, rarityColor.copy(alpha = 0.6f), RoundedCornerShape(12.dp))
-            .background(BgCard)
+            .background(MaterialTheme.colorScheme.surfaceContainer)
             .clickable(interactionSource = interactionSource, indication = null, onClick = onClick)
             .padding(horizontal = 10.dp, vertical = 10.dp),
     ) {
@@ -199,14 +197,14 @@ fun PvpHandCard(
             text = word.original,
             style = MaterialTheme.typography.bodyMedium,
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = MaterialTheme.colorScheme.onSurface,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
         )
         Text(
             text = word.translation,
             style = MaterialTheme.typography.labelSmall,
-            color = TextSecondary,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
         )
@@ -312,7 +310,7 @@ fun PvpTimerBar(
             .fillMaxWidth()
             .height(6.dp)
             .clip(RoundedCornerShape(3.dp))
-            .background(Color(0xFF333355)),
+            .background(MaterialTheme.colorScheme.surfaceVariant),
     ) {
         Box(
             modifier = Modifier

@@ -201,7 +201,7 @@ private fun ProblemWordRow(
                 text = word.original,
                 style = MaterialTheme.typography.bodyLarge,
                 fontWeight = FontWeight.Medium,
-                color = if (isSelected) Color.White else MaterialTheme.colorScheme.onSurfaceVariant,
+                color = if (isSelected) MaterialTheme.colorScheme.onBackground else MaterialTheme.colorScheme.onSurfaceVariant,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
             )

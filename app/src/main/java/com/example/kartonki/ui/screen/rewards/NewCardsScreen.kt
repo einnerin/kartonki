@@ -35,9 +35,6 @@ import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.BgCard
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 
 @Composable
@@ -53,7 +50,7 @@ fun NewCardsScreen(
             .fillMaxSize()
             .background(
                 Brush.verticalGradient(
-                    colors = listOf(Color(0xFF0D1B30), BgDeep),
+                    colors = listOf(MaterialTheme.colorScheme.surface, MaterialTheme.colorScheme.background),
                 )
             )
             .statusBarsPadding()
@@ -80,7 +77,7 @@ fun NewCardsScreen(
                 Text(
                     text = s.newCardsSubtitle,
                     style = MaterialTheme.typography.bodyMedium,
-                    color = TextSecondary,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
 
@@ -143,7 +140,7 @@ private fun NewCardRow(word: Word) {
             .fillMaxWidth()
             .glowEffect(rarityColor, glowRadius = 12.dp, cornerRadius = 14.dp, alpha = 0.35f)
             .clip(RoundedCornerShape(14.dp))
-            .background(BgCard)
+            .background(MaterialTheme.colorScheme.surfaceContainer)
             .border(1.dp, rarityColor.copy(alpha = 0.6f), RoundedCornerShape(14.dp))
             .padding(horizontal = 16.dp, vertical = 14.dp),
         verticalAlignment = Alignment.CenterVertically,
@@ -156,14 +153,14 @@ private fun NewCardRow(word: Word) {
                 text = word.original,
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.Bold,
-                color = Color.White,
+                color = MaterialTheme.colorScheme.onSurface,
                 fontSize = 18.sp,
             )
             Spacer(Modifier.height(2.dp))
             Text(
                 text = word.translation,
                 style = MaterialTheme.typography.bodyMedium,
-                color = TextSecondary,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
     }

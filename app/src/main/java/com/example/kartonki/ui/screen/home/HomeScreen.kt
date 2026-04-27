@@ -53,8 +53,6 @@ import com.example.kartonki.ui.theme.AccentBlue
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.AccentPurple
 import com.example.kartonki.ui.theme.AccentTeal
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 
 @Composable
@@ -80,7 +78,7 @@ fun HomeScreen(
             .fillMaxSize()
             .background(
                 Brush.verticalGradient(
-                    colors = listOf(Color(0xFF0D1B30), BgDeep),
+                    colors = listOf(MaterialTheme.colorScheme.surface, MaterialTheme.colorScheme.background),
                 )
             )
             .statusBarsPadding()
@@ -119,7 +117,7 @@ fun HomeScreen(
                     Text(
                         text = s.homeSubtitle,
                         style = MaterialTheme.typography.bodyMedium,
-                        color = TextSecondary,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                         textAlign = TextAlign.Center,
                     )
                 }
@@ -228,20 +226,20 @@ private fun TokensIndicator(
     val isActiveProgress = !capReached && activityCount in 1..2
 
     val borderColor = when {
-        capReached -> TextSecondary.copy(alpha = 0.25f)
+        capReached -> MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.25f)
         isActiveProgress -> AccentGold
         else -> AccentGold.copy(alpha = 0.3f)
     }
     val bgColor = when {
-        capReached -> Color(0xFF1A1A1A)
+        capReached -> MaterialTheme.colorScheme.surfaceVariant
         isActiveProgress -> Color(0xFF2A1E00)
-        else -> Color(0xFF111A26)
+        else -> MaterialTheme.colorScheme.surfaceVariant
     }
     val labelText = if (capReached) s.homeDailyLimitDone else "$activityCount/3"
     val labelColor = when {
-        capReached -> TextSecondary.copy(alpha = 0.6f)
+        capReached -> MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f)
         isActiveProgress -> AccentGold
-        else -> TextSecondary
+        else -> MaterialTheme.colorScheme.onSurfaceVariant
     }
 
     Box(

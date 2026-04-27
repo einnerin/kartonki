@@ -38,7 +38,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.TextSecondary
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -159,7 +158,7 @@ fun BetaInfoDialog(
                         Text(
                             text = "⎘",
                             fontSize = 18.sp,
-                            color = TextSecondary,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
                     }
                 }

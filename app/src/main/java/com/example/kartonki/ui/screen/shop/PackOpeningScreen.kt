@@ -55,9 +55,6 @@ import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.RarityBadge
 import com.example.kartonki.ui.theme.AccentGold
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.ui.theme.BgCard
-import com.example.kartonki.ui.theme.BgDeep
-import com.example.kartonki.ui.theme.TextSecondary
 import com.example.kartonki.ui.theme.glowEffect
 
 @Composable
@@ -86,7 +83,7 @@ fun PackOpeningScreen(
             .fillMaxSize()
             .background(
                 Brush.verticalGradient(
-                    colors = listOf(Color(0xFF080C14), Color(0xFF0F1828), BgDeep),
+                    colors = listOf(MaterialTheme.colorScheme.surface, MaterialTheme.colorScheme.surfaceVariant, MaterialTheme.colorScheme.background),
                 )
             )
             .statusBarsPadding()
@@ -134,7 +131,7 @@ private fun LoadingPhase(loadingText: String) {
         Text(
             text = loadingText,
             style = MaterialTheme.typography.bodyLarge,
-            color = TextSecondary,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
     }
 }
@@ -169,7 +166,7 @@ private fun StackRevealPhase(
                 total,
             ),
             style = MaterialTheme.typography.bodySmall,
-            color = TextSecondary,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
 
         // Card stack — fills the rest of vertical space
@@ -209,7 +206,7 @@ private fun StackRevealPhase(
                 TextButton(onClick = onSkipAll) {
                     Text(
                         text = s.packOpeningRevealAll,
-                        color = TextSecondary,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                         fontSize = 14.sp,
                     )
                 }
@@ -252,7 +249,7 @@ private fun SummaryPhase(
         Text(
             text = s.packOpeningProgress(cards.size, cards.size),
             style = MaterialTheme.typography.bodySmall,
-            color = TextSecondary,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
 
         if (compensationTokens > 0) {
@@ -423,11 +420,11 @@ private fun StackedCard(
             .background(
                 if (isFaceUp) {
                     Brush.verticalGradient(
-                        listOf(rarityColor.copy(alpha = 0.35f), BgCard),
+                        listOf(rarityColor.copy(alpha = 0.35f), MaterialTheme.colorScheme.surfaceContainer),
                     )
                 } else {
                     Brush.verticalGradient(
-                        listOf(BgCard, Color(0xFF0D1520)),
+                        listOf(MaterialTheme.colorScheme.surfaceContainer, MaterialTheme.colorScheme.surface),
                     )
                 }
             )
@@ -466,7 +463,7 @@ private fun StackedCard(
                         text = word.original,
                         style = MaterialTheme.typography.displaySmall,
                         fontWeight = FontWeight.ExtraBold,
-                        color = Color.White,
+                        color = MaterialTheme.colorScheme.onSurface,
                         fontSize = 30.sp,
                         maxLines = 2,
                         overflow = TextOverflow.Ellipsis,
@@ -474,7 +471,7 @@ private fun StackedCard(
                     Text(
                         text = word.translation,
                         style = MaterialTheme.typography.titleMedium,
-                        color = TextSecondary,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                         maxLines = 2,
                         overflow = TextOverflow.Ellipsis,
                     )
@@ -501,7 +498,7 @@ private fun SummaryCard(
             .clip(RoundedCornerShape(14.dp))
             .background(
                 Brush.verticalGradient(
-                    listOf(rarityColor.copy(alpha = 0.3f), BgCard),
+                    listOf(rarityColor.copy(alpha = 0.3f), MaterialTheme.colorScheme.surfaceContainer),
                 )
             )
             .border(1.dp, rarityColor.copy(alpha = 0.7f), RoundedCornerShape(14.dp))
@@ -518,14 +515,14 @@ private fun SummaryCard(
                 text = word.original,
                 style = MaterialTheme.typography.labelLarge,
                 fontWeight = FontWeight.Bold,
-                color = Color.White,
+                color = MaterialTheme.colorScheme.onSurface,
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
             )
             Text(
                 text = word.translation,
                 style = MaterialTheme.typography.labelSmall,
-                color = TextSecondary,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
             )
