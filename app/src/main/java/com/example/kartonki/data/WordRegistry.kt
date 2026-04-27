@@ -108,8 +108,14 @@ object WordRegistry {
                 WordDataEnglishFinanceL1.sets +
                 WordDataEnglishFinanceL5.sets +
                 WordDataEnglishHealthFitnessL1L2L3.sets +
+                WordDataEnglishHealthFitnessL4.sets +
+                WordDataEnglishHealthFitnessL5.sets +
                 WordDataEnglishShoppingL1L2L3.sets +
+                WordDataEnglishShoppingL4.sets +
+                WordDataEnglishShoppingL5.sets +
                 WordDataEnglishEntertainmentL1L2L3.sets +
+                WordDataEnglishEntertainmentL4.sets +
+                WordDataEnglishEntertainmentL5.sets +
                 WordDataHebrewHealthFitnessL1L2L3.sets +
                 WordDataHebrewShoppingL1L2L3.sets +
                 WordDataHebrewEntertainmentL1L2L3.sets +
@@ -267,7 +273,23 @@ object WordRegistry {
                 WordDataHebrewMobileL2.sets +
                 WordDataHebrewMobileL3.sets +
                 WordDataHebrewMobileL4.sets +
-                WordDataHebrewMobileL5.sets
+                WordDataHebrewMobileL5.sets +
+                WordDataHebrewAiMlL1.sets +
+                WordDataHebrewAiMlL2.sets +
+                WordDataHebrewStartupL1.sets +
+                WordDataHebrewStartupL2.sets +
+                WordDataHebrewHealthFitnessL4.sets +
+                WordDataHebrewHealthFitnessL5.sets +
+                WordDataHebrewShoppingL4.sets +
+                WordDataHebrewShoppingL5.sets +
+                WordDataHebrewEntertainmentL4.sets +
+                WordDataHebrewEntertainmentL5.sets +
+                WordDataHebrewBaristaL4.sets +
+                WordDataHebrewBaristaL5.sets +
+                WordDataHebrewBarberL4.sets +
+                WordDataHebrewBarberL5.sets +
+                WordDataHebrewPlumberL4.sets +
+                WordDataHebrewPlumberL5.sets
     }
 
     private val _allWordsRaw: List<WordEntity> by lazy {
@@ -331,8 +353,14 @@ object WordRegistry {
                 WordDataEnglishFinanceL1.words +
                 WordDataEnglishFinanceL5.words +
                 WordDataEnglishHealthFitnessL1L2L3.words +
+                WordDataEnglishHealthFitnessL4.words +
+                WordDataEnglishHealthFitnessL5.words +
                 WordDataEnglishShoppingL1L2L3.words +
+                WordDataEnglishShoppingL4.words +
+                WordDataEnglishShoppingL5.words +
                 WordDataEnglishEntertainmentL1L2L3.words +
+                WordDataEnglishEntertainmentL4.words +
+                WordDataEnglishEntertainmentL5.words +
                 WordDataHebrewHealthFitnessL1L2L3.words +
                 WordDataHebrewShoppingL1L2L3.words +
                 WordDataHebrewEntertainmentL1L2L3.words +
@@ -491,7 +519,23 @@ object WordRegistry {
                 WordDataHebrewMobileL2.words +
                 WordDataHebrewMobileL3.words +
                 WordDataHebrewMobileL4.words +
-                WordDataHebrewMobileL5.words
+                WordDataHebrewMobileL5.words +
+                WordDataHebrewAiMlL1.words +
+                WordDataHebrewAiMlL2.words +
+                WordDataHebrewStartupL1.words +
+                WordDataHebrewStartupL2.words +
+                WordDataHebrewHealthFitnessL4.words +
+                WordDataHebrewHealthFitnessL5.words +
+                WordDataHebrewShoppingL4.words +
+                WordDataHebrewShoppingL5.words +
+                WordDataHebrewEntertainmentL4.words +
+                WordDataHebrewEntertainmentL5.words +
+                WordDataHebrewBaristaL4.words +
+                WordDataHebrewBaristaL5.words +
+                WordDataHebrewBarberL4.words +
+                WordDataHebrewBarberL5.words +
+                WordDataHebrewPlumberL4.words +
+                WordDataHebrewPlumberL5.words
     }
 
     val allPrebuiltDecks: List<DeckSeed> by lazy {
