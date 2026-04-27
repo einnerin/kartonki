@@ -4,9 +4,11 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -26,13 +28,17 @@ import kotlinx.coroutines.delay
 
 private val SplashBg = Color(0xFF0D0D1A)
 
-// logo.png is 1024×1024. Around the squircle artwork there are ~141 px of
-// fully-transparent margin and 1 px of nearly-white anti-alias halo
-// (RGB ≈ 206/207/213). At 220-dp render that 1 px stretches to a visible
-// thin stripe along the squircle perimeter. Inset crop removes both the
-// transparent margin and the halo before the bitmap reaches the GPU,
-// giving a clean splash without any clip/scale tricks.
-private const val LOGO_INSET_FRACTION = 0.142f  // ~145 px on a 1024 px source
+// Geometry of logo.png (1024×1024):
+//   - 141 px transparent margin around the squircle artwork
+//   - 1 px almost-white anti-alias halo on the squircle perimeter
+//   - squircle corner radius ~168 px in source space
+// Inset crop drops the transparent margin AND the halo on straight edges,
+// but at the rounded corners the halo follows the squircle curve and lies
+// inside the cropped rectangle. We mask it by drawing a SplashBg-colored
+// border over the rendered Image — width 4 dp covers the ~1 phys-px halo
+// with a comfortable tolerance, and the rounded-corner shape matches the
+// squircle radius in render space (≈ 50 dp at 220 dp size).
+private const val LOGO_INSET_FRACTION = 0.142f
 
 @Composable
 fun SplashScreen(onSplashFinished: () -> Unit) {
@@ -62,12 +68,29 @@ fun SplashScreen(onSplashFinished: () -> Unit) {
         contentAlignment = Alignment.Center,
     ) {
         bitmap?.let {
-            Image(
-                bitmap = it,
-                contentDescription = "Kartonki",
-                contentScale = ContentScale.Fit,
+            Box(
                 modifier = Modifier.size(220.dp),
-            )
+                contentAlignment = Alignment.Center,
+            ) {
+                Image(
+                    bitmap = it,
+                    contentDescription = "Kartonki",
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier.fillMaxSize(),
+                )
+                // Mask halo: dark border drawn over the Image perimeter.
+                // SplashBg matches the screen bg, so the border is invisible
+                // against it but covers the white halo under the squircle curve.
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .border(
+                            width = 4.dp,
+                            color = SplashBg,
+                            shape = RoundedCornerShape(50.dp),
+                        ),
+                )
+            }
         }
     }
 }
