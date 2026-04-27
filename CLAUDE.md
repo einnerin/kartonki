@@ -73,6 +73,9 @@ bash scripts/validate/validate_all.sh 9
 # Агрегированная проверка всей базы (ID-коллизии, дубли тем, разброс редкости и т.д.)
 python scripts/validate/find_real_dupes.py
 
+# Preset PvP колоды (DeckSeed) — orphans / wrong rarity / level-limit overflow
+python scripts/validate/validate_preset_decks.py
+
 # FILL_IN_BLANK pipeline для одного сета
 python scripts/validate/fill_in_blank_prompt.py --set-id 9          # генерит промпт для LLM
 python scripts/validate/generate_fill_in_blank_exclusions.py \

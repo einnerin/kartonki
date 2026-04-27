@@ -203,6 +203,17 @@ $(echo "$CHANGED_DATA_ONLY" | head -5 | sed 's/^/    /')
       fi
     fi
   fi
+
+  # 2d. Preset PvP decks — проверяем что DeckSeed.wordOriginals реально
+  # резолвятся в эффективную rarity, без orphan'ов / wrong-rarity / overflow.
+  # Любое изменение WordData* может сломать DeckSeed (изменилась rarity слова,
+  # удалили слово, создали cross-topic коллизию). См. docs/claude/preset-decks.md.
+  if ! python scripts/validate/validate_preset_decks.py > /tmp/kartonki-decks.log 2>&1; then
+    ERRORS+=("validate_preset_decks.py обнаружил проблемы в preset PvP колодах:
+$(tail -30 /tmp/kartonki-decks.log | sed 's/^/    /')
+Полный отчёт: python scripts/validate/validate_preset_decks.py
+Документация: docs/claude/preset-decks.md")
+  fi
 fi
 
 # ── 3. Финальный вердикт ─────────────────────────────────────────────────────

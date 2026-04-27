@@ -49,10 +49,12 @@
 
 16c. **Hebrew form_mismatch (2026-04-23) — 605 слов помечены `isFillInBlankSafe = false`.** Hebrew морфология (биньян, огласовки, артикли) часто приводит к тому, что форма слова в example отличается от `original`. Подстрочная замена `example.replace(original, "_____")` не срабатывает. Пока не реализован Hebrew-aware квиз — эти слова unsafe для FILL_IN_BLANK. Технически чинится либо переписыванием examples (Phase B), либо специальной Hebrew-aware логикой подстановки (отдельный engineering проект).
 
-16d. **Preset decks (2026-04-23) — известный техдолг.** 129 несоответствий в распределении редкостей для пресетных PvP-колод:
-    - Старый rarity-rework изменил редкости слов, не обновив колоды.
-    - Некоторые Hebrew-колоды ссылаются на удалённые/переименованные слова.
-    Тест `SeedDataAuditTest.preset_decks_rarity_distribution` помечен `@Ignore` до отдельного полировочного прогона колод (PvP mode). Не блокирует Phase A FILL_IN_BLANK работу.
+16d. **Preset decks (обновлено 2026-04-27) — закрыто валидатором.** Раньше техдолг (~129 несоответствий: orphan-слова, cross-topic rarity collisions, level-limit overflows). Теперь:
+    - Создан `scripts/validate/validate_preset_decks.py` — ловит ORPHAN / WRONG_RARITY / LIMIT_VIOLATION с учётом WordRegistry порядка (last-write-wins как в Room).
+    - Подключён в pre-commit hook (раздел 2d): любая правка `WordData*.kt` блокируется коммитом, если ломает какую-либо DeckSeed — даже если автор редактировал совсем другой набор.
+    - Все 28 preset-колод приведены в порядок (commits bd21486..459ef64 за 2026-04-27).
+    Полная документация по DeckSeed, типичным багам и workflow фикса — [`preset-decks.md`](preset-decks.md).
+    Тест `SeedDataAuditTest.preset_decks_rarity_distribution` всё ещё `@Ignore`, потому что использует first-occurrence (вместо last-write-wins) — Python-валидатор корректнее. Можно удалить или починить тест отдельной задачей.
 
 ### Мета
 
