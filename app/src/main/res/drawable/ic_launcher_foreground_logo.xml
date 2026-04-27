@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Logo with extra inset (was 14%) so the PNG's anti-alias halo sits inside
-     the adaptive icon's safe zone and gets clipped by the launcher mask
-     (circle/squircle/rounded square). -->
 <inset xmlns:android="http://schemas.android.com/apk/res/android"
     android:drawable="@drawable/logo"
-    android:inset="20%" />
+    android:inset="14%" />
