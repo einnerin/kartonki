@@ -26,8 +26,6 @@ import androidx.compose.ui.unit.dp
 import com.example.kartonki.R
 import kotlinx.coroutines.delay
 
-// Splash bg matches @color/splash_background — system splash → Compose splash
-// без мерцания. Запускается до загрузки темы.
 private val SplashBg = Color(0xFF0D0D1A)
 
 @Composable
@@ -48,20 +46,25 @@ fun SplashScreen(onSplashFinished: () -> Unit) {
         contentAlignment = Alignment.Center,
     ) {
         bitmap?.let {
-            // Hiding the PNG's anti-alias halo by scaling the bitmap up by ~6%
-            // INSIDE a slightly-smaller squircle clip. Modifier order matters:
-            // .clip → .scale means scale is applied first (bigger image), then
-            // clipped — the white pixel ring at the very edge falls outside the
-            // clip bounds and is cut off.
-            Image(
-                bitmap = it,
-                contentDescription = "Kartonki",
-                contentScale = ContentScale.Fit,
+            // Clip belongs to the OUTER Box, scale belongs to the INNER Image.
+            // The Image is rendered ~10% larger than its layout bounds; the
+            // outer Box clips to a squircle of the original size, so the PNG's
+            // white anti-alias ring lands outside the clip and is cut off.
+            Box(
                 modifier = Modifier
                     .size(220.dp)
-                    .clip(RoundedCornerShape(48.dp))
-                    .scale(1.06f),
-            )
+                    .clip(RoundedCornerShape(48.dp)),
+                contentAlignment = Alignment.Center,
+            ) {
+                Image(
+                    bitmap = it,
+                    contentDescription = "Kartonki",
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .scale(1.10f),
+                )
+            }
         }
     }
 }
