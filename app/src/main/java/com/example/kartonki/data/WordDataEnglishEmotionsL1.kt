@@ -65,7 +65,7 @@ object WordDataEnglishEmotionsL1 {
             example = "She was happy to see her best friend at the door.",
             exampleNative = "Она была happy, когда увидела лучшую подругу на пороге.",
             pos = "adjective", semanticGroup = "emotions_basic_positive",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(36003L, 36004L, 36005L, 36006L, 36008L, 36010L, 36011L, 36013L, 36014L, 36015L)),
 
         WordEntity(id = 36002, setId = 360, languagePair = "en-ru", rarity = "COMMON",
             original = "joy", transliteration = "[ʤɔɪ]", translation = "радость",
@@ -73,8 +73,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Светлое весёлое чувство — когда хочется прыгать от победы.",
             example = "The children shouted with joy when they saw the puppy.",
             exampleNative = "Дети закричали от joy, увидев маленького щенка.",
-            pos = "noun", semanticGroup = "emotions_basic_positive",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_basic_positive"),
 
         WordEntity(id = 36003, setId = 360, languagePair = "en-ru", rarity = "COMMON",
             original = "glad", transliteration = "[glæd]", translation = "рад",
@@ -82,8 +81,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Доволен тем, что случилось хорошее — обычно мимолётно.",
             example = "I'm so glad you came to my birthday party tonight.",
             exampleNative = "Я так glad, что ты пришёл ко мне на день рождения.",
-            pos = "adjective", semanticGroup = "emotions_basic_positive",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_basic_positive", fillInBlankExclusions = listOf(36001L, 36004L, 36005L, 36006L, 36013L, 36015L)),
 
         WordEntity(id = 36004, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "cheerful", transliteration = "[ˈʧɪrfəl]", translation = "весёлый",
@@ -92,7 +90,7 @@ object WordDataEnglishEmotionsL1 {
             example = "The cheerful waiter made everyone smile during dinner.",
             exampleNative = "cheerful официант смешил каждого гостя за ужином.",
             pos = "adjective", semanticGroup = "emotions_basic_positive",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(36001L, 36003L, 36005L, 36006L, 36007L, 36009L, 36010L, 36011L, 36014L)),
 
         WordEntity(id = 36005, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "pleased", transliteration = "[plizd]", translation = "довольный",
@@ -101,7 +99,7 @@ object WordDataEnglishEmotionsL1 {
             example = "The teacher was pleased with the way she answered the question.",
             exampleNative = "Учительница была pleased тем, как девочка ответила на вопрос.",
             pos = "adjective", semanticGroup = "emotions_basic_positive",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(36001L, 36003L, 36004L, 36006L, 36009L, 36013L, 36014L, 36015L)),
 
         // ── emotions_basic_negative (5) ───────────────────────────────────
 
@@ -112,7 +110,7 @@ object WordDataEnglishEmotionsL1 {
             example = "He looked sad after he heard the bad news.",
             exampleNative = "Он выглядел sad, когда услышал плохие новости.",
             pos = "adjective", semanticGroup = "emotions_basic_negative",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(36001L, 36003L, 36004L, 36005L, 36007L, 36008L, 36009L, 36010L, 36011L, 36013L, 36014L, 36015L)),
 
         WordEntity(id = 36007, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "mad", transliteration = "[mæd]", translation = "сердитый",
@@ -120,8 +118,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Сильно недоволен кем-то — как когда друг нарушает обещание.",
             example = "Dad was mad at me for losing the house keys again.",
             exampleNative = "Папа был mad на меня за то, что я снова потерял ключи.",
-            pos = "adjective", semanticGroup = "emotions_basic_negative",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_basic_negative", fillInBlankExclusions = listOf(36006L, 36008L, 36009L, 36010L)),
 
         WordEntity(id = 36008, setId = 360, languagePair = "en-ru", rarity = "COMMON",
             original = "afraid", transliteration = "[əˈfreɪd]", translation = "испуганный",
@@ -129,8 +126,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Полон страха — как ребёнок, который слышит громкий звук ночью.",
             example = "The little boy was afraid of the dog next door.",
             exampleNative = "Малыш был afraid соседского пса за забором.",
-            pos = "adjective", semanticGroup = "emotions_basic_negative",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_basic_negative", fillInBlankExclusions = listOf(36006L, 36007L, 36009L, 36010L)),
 
         WordEntity(id = 36009, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "annoyed", transliteration = "[əˈnɔɪd]", translation = "раздражённый",
@@ -138,8 +134,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Задет чем-то мелким, но настойчивым — мухой или шумным соседом.",
             example = "She got annoyed when the kids kept knocking on her door.",
             exampleNative = "Она была annoyed, когда дети снова и снова стучались в дверь.",
-            pos = "adjective", semanticGroup = "emotions_basic_negative",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_basic_negative", fillInBlankExclusions = listOf(36006L, 36007L, 36008L, 36010L, 36014L)),
 
         WordEntity(id = 36010, setId = 360, languagePair = "en-ru", rarity = "COMMON",
             original = "tired", transliteration = "[taɪərd]", translation = "усталый",
@@ -147,8 +142,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Хочется отдохнуть — тело и голова тяжёлые после долгого дня.",
             example = "She was too tired to cook and ordered pizza instead.",
             exampleNative = "Она была слишком tired, чтобы готовить, и заказала пиццу.",
-            pos = "adjective", semanticGroup = "emotions_basic_negative",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_basic_negative", fillInBlankExclusions = listOf(36006L, 36007L, 36008L, 36009L)),
 
         // ── emotions_basic_states (5) ─────────────────────────────────────
 
@@ -158,8 +152,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Без тревоги — дышит ровно, говорит мягко, не суетится.",
             example = "Try to stay calm and tell me what really happened.",
             exampleNative = "Постарайся быть calm и расскажи, что на самом деле случилось.",
-            pos = "adjective", semanticGroup = "emotions_basic_states",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_basic_states", fillInBlankExclusions = listOf(36012L, 36013L, 36014L, 36015L)),
 
         WordEntity(id = 36012, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "fine", transliteration = "[faɪn]", translation = "в порядке",
@@ -167,8 +160,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Внутри нормально — ни большой беды, ни сильной радости, просто ровно.",
             example = "Don't worry about me — I'm fine after a good night's sleep.",
             exampleNative = "Не волнуйся обо мне — я fine после хорошего ночного сна.",
-            pos = "adjective", semanticGroup = "emotions_basic_states",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_basic_states", fillInBlankExclusions = listOf(36001L, 36005L, 36011L, 36013L, 36014L, 36015L)),
 
         WordEntity(id = 36013, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "amazed", transliteration = "[əˈmeɪzd]", translation = "поражённый",
@@ -176,8 +168,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Полон удивления чем-то невероятным — фокусом или огромным видом.",
             example = "We were amazed by the fireworks above the harbour last night.",
             exampleNative = "Мы были amazed салютом над гаванью прошлой ночью.",
-            pos = "adjective", semanticGroup = "emotions_basic_states",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_basic_states", fillInBlankExclusions = listOf(36005L, 36011L, 36012L, 36014L, 36015L)),
 
         WordEntity(id = 36014, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "confused", transliteration = "[kənˈfjuzd]", translation = "растерянный",
@@ -185,8 +176,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Не понимает, что происходит — как при чтении карты вверх ногами.",
             example = "He looked confused when the teacher changed the rules halfway.",
             exampleNative = "Он выглядел confused, когда учитель сменил правила посреди игры.",
-            pos = "adjective", semanticGroup = "emotions_basic_states",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_basic_states", fillInBlankExclusions = listOf(36001L, 36006L, 36009L, 36011L, 36012L, 36013L, 36015L)),
 
         WordEntity(id = 36015, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "shocked", transliteration = "[ʃɑkt]", translation = "потрясённый",
@@ -195,7 +185,7 @@ object WordDataEnglishEmotionsL1 {
             example = "She was shocked to hear that her old school had burned down.",
             exampleNative = "Она была shocked, услышав, что её старая школа сгорела.",
             pos = "adjective", semanticGroup = "emotions_basic_states",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(36001L, 36003L, 36005L, 36006L, 36011L, 36012L, 36013L, 36014L)),
 
         // ── emotions_basic_actions (5) ────────────────────────────────────
 
@@ -205,8 +195,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Поднять уголки рта — показать, что тебе хорошо или приятно.",
             example = "The baby will smile every time she sees her mother.",
             exampleNative = "Малышка smile каждый раз, когда видит маму рядом.",
-            pos = "verb", semanticGroup = "emotions_basic_actions",
-            isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_basic_actions", fillInBlankExclusions = listOf(36017L, 36018L, 36019L, 36020L)),
 
         WordEntity(id = 36017, setId = 360, languagePair = "en-ru", rarity = "COMMON",
             original = "laugh", transliteration = "[læf]", translation = "смеяться",
@@ -214,8 +203,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Издавать весёлые звуки голосом, когда что-то очень забавно.",
             example = "We laugh together every time we watch that old comedy.",
             exampleNative = "Мы вместе laugh каждый раз, когда смотрим эту старую комедию.",
-            pos = "verb", semanticGroup = "emotions_basic_actions",
-            isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_basic_actions", fillInBlankExclusions = listOf(36016L, 36018L, 36019L, 36020L)),
 
         WordEntity(id = 36018, setId = 360, languagePair = "en-ru", rarity = "COMMON",
             original = "cry", transliteration = "[kraɪ]", translation = "плакать",
@@ -223,8 +211,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Ронять слёзы из глаз, когда обидно, больно или очень грустно.",
             example = "The little boy began to cry when he dropped his ice cream.",
             exampleNative = "Малыш начал cry, когда уронил мороженое на землю.",
-            pos = "verb", semanticGroup = "emotions_basic_actions",
-            isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_basic_actions", fillInBlankExclusions = listOf(36016L, 36017L, 36019L, 36020L)),
 
         WordEntity(id = 36019, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "frown", transliteration = "[fraʊn]", translation = "хмуриться",
@@ -232,8 +219,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Опустить брови — показать недовольство или сильное раздумье.",
             example = "Grandpa began to frown when he heard the loud music next door.",
             exampleNative = "Дедушка стал frown, услышав громкую музыку у соседей.",
-            pos = "verb", semanticGroup = "emotions_basic_actions",
-            isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_basic_actions", fillInBlankExclusions = listOf(36016L, 36017L, 36018L, 36020L)),
 
         WordEntity(id = 36020, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "sigh", transliteration = "[saɪ]", translation = "вздыхать",
@@ -241,8 +227,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Выпустить долгий медленный выдох — от усталости, грусти или облегчения.",
             example = "She let out a sigh as she sat down after a long shift.",
             exampleNative = "Она издала sigh, садясь после долгой смены.",
-            pos = "verb", semanticGroup = "emotions_basic_actions",
-            isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_basic_actions", fillInBlankExclusions = listOf(36016L, 36017L, 36018L, 36019L)),
 
         // ── emotions_basic_express (5) ────────────────────────────────────
 
@@ -252,8 +237,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Знать что-то внутри — радость, боль, холод или грусть друга.",
             example = "I feel happy when my whole family sits at the table together.",
             exampleNative = "Я feel радость, когда вся семья садится за стол вместе.",
-            pos = "verb", semanticGroup = "emotions_basic_express",
-            isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_basic_express", fillInBlankExclusions = listOf(36025L)),
 
         WordEntity(id = 36022, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "mood", transliteration = "[mud]", translation = "настроение",
@@ -261,8 +245,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Как ты себя чувствуешь сейчас — весело, грустно, сердито или средне.",
             example = "He was in a great mood after passing all his exams.",
             exampleNative = "У него было прекрасное mood после сдачи всех экзаменов.",
-            pos = "noun", semanticGroup = "emotions_basic_express",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_basic_express", fillInBlankExclusions = listOf(36023L, 36024L)),
 
         WordEntity(id = 36023, setId = 360, languagePair = "en-ru", rarity = "COMMON",
             original = "heart", transliteration = "[hɑrt]", translation = "сердце",
@@ -270,8 +253,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Место внутри тебя, где живут любовь и тёплые чувства.",
             example = "Her warm heart helped many lonely children find a home.",
             exampleNative = "Её доброе heart помогло многим одиноким детям найти дом.",
-            pos = "noun", semanticGroup = "emotions_basic_express",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_basic_express", fillInBlankExclusions = listOf(36022L, 36024L)),
 
         WordEntity(id = 36024, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "tear", transliteration = "[tɪr]", translation = "слеза",
@@ -279,8 +261,7 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Капля влаги из глаза, когда очень грустно или очень тронут.",
             example = "A single tear rolled down her cheek as she read the letter.",
             exampleNative = "Одинокая tear скатилась по её щеке, пока она читала письмо.",
-            pos = "noun", semanticGroup = "emotions_basic_express",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_basic_express", fillInBlankExclusions = listOf(36022L, 36023L)),
 
         WordEntity(id = 36025, setId = 360, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "hug", transliteration = "[hʌg]", translation = "обнимать",
@@ -288,7 +269,6 @@ object WordDataEnglishEmotionsL1 {
             definitionNative = "Обхватить кого-то руками — показать любовь или поддержать.",
             example = "She ran to hug her brother at the airport gate.",
             exampleNative = "Она побежала hug брата у выхода в аэропорту.",
-            pos = "verb", semanticGroup = "emotions_basic_express",
-            isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_basic_express", fillInBlankExclusions = listOf(36021L)),
     )
 }

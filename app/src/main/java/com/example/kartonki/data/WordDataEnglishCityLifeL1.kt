@@ -55,7 +55,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Здание, куда люди приносят деньги, чтобы хранить, и где их потом снимают.",
             example = "She walked into the bank to deposit her first paycheck.",
             exampleNative = "Она зашла в bank, чтобы положить свою первую зарплату.",
-            pos = "noun", semanticGroup = "city_basic_places", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_places", fillInBlankExclusions = listOf(36502L, 36503L, 36504L, 36505L)),
 
         WordEntity(id = 36502, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "post office", transliteration = "[poʊst ˈɔfɪs]", translation = "почта",
@@ -63,7 +63,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Место, откуда отправляют письма и посылки в другие города.",
             example = "He stopped by the post office to send a parcel to his sister.",
             exampleNative = "Он заглянул в post office, чтобы отправить посылку сестре.",
-            pos = "noun", semanticGroup = "city_basic_places", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_places", fillInBlankExclusions = listOf(36501L, 36503L, 36504L, 36505L)),
 
         WordEntity(id = 36503, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "pharmacy", transliteration = "[ˈfɑrməsi]", translation = "аптека",
@@ -71,7 +71,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Магазин, где продают лекарства и таблетки, если человек заболел.",
             example = "There is a small pharmacy on the corner that opens until midnight.",
             exampleNative = "На углу есть маленькая pharmacy, которая работает до полуночи.",
-            pos = "noun", semanticGroup = "city_basic_places", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_places", fillInBlankExclusions = listOf(36501L, 36502L, 36504L, 36505L)),
 
         WordEntity(id = 36504, setId = 365, languagePair = "en-ru", rarity = "COMMON",
             original = "supermarket", transliteration = "[ˈsupərˌmɑrkɪt]", translation = "супермаркет",
@@ -79,7 +79,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Большой магазин самообслуживания с едой, напитками и бытовыми товарами.",
             example = "We do our weekly shopping at the supermarket every Saturday morning.",
             exampleNative = "Каждое субботнее утро мы делаем недельные закупки в supermarket.",
-            pos = "noun", semanticGroup = "city_basic_places", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_places", fillInBlankExclusions = listOf(36501L, 36502L, 36503L, 36505L)),
 
         WordEntity(id = 36505, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "library", transliteration = "[ˈlaɪˌbrɛri]", translation = "библиотека",
@@ -87,7 +87,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Тихое место, где бесплатно берут книги и читают за столами.",
             example = "The children spent the rainy afternoon reading at the public library.",
             exampleNative = "Дети провели дождливый день за чтением в городской library.",
-            pos = "noun", semanticGroup = "city_basic_places", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_places", fillInBlankExclusions = listOf(36501L, 36502L, 36503L, 36504L)),
 
         // ── city_basic_streets (5) ────────────────────────────────────────
 
@@ -97,7 +97,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Длинная полоса между домами, где едут машины и идут люди.",
             example = "Their flat is on a quiet street with old chestnut trees.",
             exampleNative = "Их квартира на тихой street со старыми каштанами.",
-            pos = "noun", semanticGroup = "city_basic_streets", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_streets", fillInBlankExclusions = listOf(36507L, 36508L, 36509L, 36510L, 36520L)),
 
         WordEntity(id = 36507, setId = 365, languagePair = "en-ru", rarity = "COMMON",
             original = "sidewalk", transliteration = "[ˈsaɪdˌwɔk]", translation = "тротуар",
@@ -105,7 +105,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Узкая мощёная полоса вдоль дороги, по которой ходят пешеходы.",
             example = "She tripped on a loose tile on the sidewalk near the cafe.",
             exampleNative = "Она споткнулась о шатающуюся плитку на sidewalk у кафе.",
-            pos = "noun", semanticGroup = "city_basic_streets", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_streets", fillInBlankExclusions = listOf(36506L, 36508L, 36509L, 36510L, 36520L)),
 
         WordEntity(id = 36508, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "traffic light", transliteration = "[ˈtræfɪk laɪt]", translation = "светофор",
@@ -113,7 +113,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Коробка с красной, жёлтой и зелёной лампами — она говорит машинам, когда ехать.",
             example = "Turn left at the second traffic light and you will see the post office.",
             exampleNative = "На втором traffic light поверни налево, и увидишь почту.",
-            pos = "noun", semanticGroup = "city_basic_streets", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_streets", fillInBlankExclusions = listOf(36506L, 36507L, 36509L, 36510L, 36517L, 36520L)),
 
         WordEntity(id = 36509, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "bus stop", transliteration = "[bəs stɑp]", translation = "автобусная остановка",
@@ -121,7 +121,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Небольшое место на улице, где автобусы забирают пассажиров.",
             example = "An old man was reading a newspaper at the bus stop.",
             exampleNative = "Пожилой мужчина читал газету на bus stop.",
-            pos = "noun", semanticGroup = "city_basic_streets", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_streets", isFillInBlankSafe = false, fillInBlankExclusions = listOf(36501L, 36502L, 36503L, 36505L, 36506L, 36507L, 36508L, 36510L, 36520L)),
 
         WordEntity(id = 36510, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "crosswalk", transliteration = "[ˈkrɔsˌwɔk]", translation = "пешеходный переход",
@@ -129,7 +129,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Белые полосы на дороге, по которым безопасно идут с одной стороны на другую.",
             example = "The kids waited at the crosswalk until the green man appeared.",
             exampleNative = "Дети ждали на crosswalk, пока появится зелёный человечек.",
-            pos = "noun", semanticGroup = "city_basic_streets", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_streets", fillInBlankExclusions = listOf(36506L, 36507L, 36508L, 36509L, 36520L)),
 
         // ── city_basic_services (5) ───────────────────────────────────────
 
@@ -139,7 +139,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Человек за стойкой, который помогает оформить документы или ответить на вопрос.",
             example = "The friendly clerk explained how to fill out the paper form.",
             exampleNative = "Любезный clerk объяснил, как заполнить бумажную форму.",
-            pos = "noun", semanticGroup = "city_basic_services", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_services", fillInBlankExclusions = listOf(36512L, 36513L, 36514L, 36515L)),
 
         WordEntity(id = 36512, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "complaint", transliteration = "[kəmˈpleɪnt]", translation = "жалоба",
@@ -147,7 +147,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "То, что говорят или пишут, когда что-то было плохо и нужно это исправить.",
             example = "She filed a polite complaint about the broken elevator in the building.",
             exampleNative = "Она подала вежливый complaint про сломанный лифт в здании.",
-            pos = "noun", semanticGroup = "city_basic_services", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_services", fillInBlankExclusions = listOf(36511L, 36513L, 36514L, 36515L)),
 
         WordEntity(id = 36513, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "opening hours", transliteration = "[ˈoʊpənɪŋ ˈaʊrz]", translation = "часы работы",
@@ -155,7 +155,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Время в течение дня, когда заведение пускает посетителей.",
             example = "Check the opening hours before you walk all the way there.",
             exampleNative = "Проверь opening hours, прежде чем тащиться туда пешком.",
-            pos = "noun", semanticGroup = "city_basic_services", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_services", isFillInBlankSafe = false, fillInBlankExclusions = listOf(36511L, 36512L, 36514L, 36515L, 36516L, 36517L, 36518L, 36519L)),
 
         WordEntity(id = 36514, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "business card", transliteration = "[ˈbɪznəs kɑrd]", translation = "визитная карточка",
@@ -163,7 +163,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Небольшой бумажный прямоугольник с именем и телефоном человека.",
             example = "He pulled a business card from his wallet and handed it over.",
             exampleNative = "Он достал business card из кошелька и передал её.",
-            pos = "noun", semanticGroup = "city_basic_services", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_services", fillInBlankExclusions = listOf(36511L, 36512L, 36518L)),
 
         WordEntity(id = 36515, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "appointment", transliteration = "[əˈpɔɪntmənt]", translation = "приём (по записи)",
@@ -171,7 +171,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Назначенное время, когда врач или контора готовы тебя принять.",
             example = "I have an appointment with the dentist tomorrow at three.",
             exampleNative = "У меня appointment у стоматолога завтра в три.",
-            pos = "noun", semanticGroup = "city_basic_services", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_services", fillInBlankExclusions = listOf(36513L)),
 
         // ── city_basic_navigate (5) ───────────────────────────────────────
 
@@ -181,7 +181,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Название улицы и номер дома, где кто-то живёт.",
             example = "Please write your home address on the back of the form.",
             exampleNative = "Напиши, пожалуйста, свой домашний address на обратной стороне бланка.",
-            pos = "noun", semanticGroup = "city_basic_navigate", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_navigate", fillInBlankExclusions = listOf(36517L, 36518L, 36519L, 36520L)),
 
         WordEntity(id = 36517, setId = 365, languagePair = "en-ru", rarity = "COMMON",
             original = "sign", transliteration = "[saɪn]", translation = "вывеска / знак",
@@ -189,7 +189,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Табличка с буквами или картинками, которая сообщает, что это за место.",
             example = "A bright sign above the door said the cafe was open.",
             exampleNative = "Яркий sign над дверью сообщал, что кафе открыто.",
-            pos = "noun", semanticGroup = "city_basic_navigate", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_navigate", fillInBlankExclusions = listOf(36516L, 36518L, 36519L, 36520L)),
 
         WordEntity(id = 36518, setId = 365, languagePair = "en-ru", rarity = "COMMON",
             original = "map", transliteration = "[mæp]", translation = "карта (города)",
@@ -197,7 +197,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Плоский рисунок улиц, по которому находят дорогу куда-то.",
             example = "She unfolded a paper map of the old town to find the museum.",
             exampleNative = "Она развернула бумажный map старого города, чтобы найти музей.",
-            pos = "noun", semanticGroup = "city_basic_navigate", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_navigate", fillInBlankExclusions = listOf(36516L, 36517L, 36519L, 36520L)),
 
         WordEntity(id = 36519, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "direction", transliteration = "[dəˈrɛkʃən]", translation = "направление",
@@ -205,7 +205,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Сторона, куда нужно идти — налево, направо, вверх, вниз.",
             example = "She asked a stranger for the direction to the train station.",
             exampleNative = "Она спросила у прохожего direction до вокзала.",
-            pos = "noun", semanticGroup = "city_basic_navigate", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_navigate", fillInBlankExclusions = listOf(36509L, 36516L, 36517L, 36518L, 36520L)),
 
         WordEntity(id = 36520, setId = 365, languagePair = "en-ru", rarity = "COMMON",
             original = "corner", transliteration = "[ˈkɔrnər]", translation = "угол (улицы)",
@@ -213,7 +213,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Точка, где встречаются две улицы и можно повернуть в одну из сторон.",
             example = "The bakery is right on the corner of Park and Maple Street.",
             exampleNative = "Пекарня прямо на corner Парк и Кленовой улицы.",
-            pos = "noun", semanticGroup = "city_basic_navigate", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "city_basic_navigate", fillInBlankExclusions = listOf(36516L, 36517L, 36518L, 36519L)),
 
         // ── city_basic_actions (5) ────────────────────────────────────────
 
@@ -223,7 +223,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Отдать деньги в обмен на вещь или услугу.",
             example = "You can pay at the counter near the front door.",
             exampleNative = "Можно pay у стойки возле входной двери.",
-            pos = "verb", semanticGroup = "city_basic_actions", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "city_basic_actions", fillInBlankExclusions = listOf(36522L, 36523L, 36524L, 36525L)),
 
         WordEntity(id = 36522, setId = 365, languagePair = "en-ru", rarity = "COMMON",
             original = "ask", transliteration = "[æsk]", translation = "спрашивать, просить",
@@ -231,7 +231,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Сказать кому-то слова, чтобы получить ответ или какую-то помощь.",
             example = "If you are lost, ask a kind stranger for directions.",
             exampleNative = "Если ты заблудился, ask у доброго прохожего, куда идти.",
-            pos = "verb", semanticGroup = "city_basic_actions", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "city_basic_actions", fillInBlankExclusions = listOf(36521L, 36523L, 36524L, 36525L)),
 
         WordEntity(id = 36523, setId = 365, languagePair = "en-ru", rarity = "COMMON",
             original = "wait", transliteration = "[weɪt]", translation = "ждать",
@@ -239,7 +239,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Оставаться на одном месте, пока что-то не случится или кто-то не придёт.",
             example = "Please wait here while I check if the doctor is free.",
             exampleNative = "Пожалуйста, wait здесь, пока я узнаю, свободен ли врач.",
-            pos = "verb", semanticGroup = "city_basic_actions", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "city_basic_actions", fillInBlankExclusions = listOf(36521L, 36522L, 36524L, 36525L)),
 
         WordEntity(id = 36524, setId = 365, languagePair = "en-ru", rarity = "COMMON",
             original = "find", transliteration = "[faɪnd]", translation = "найти",
@@ -247,7 +247,7 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Увидеть или получить то, что искал.",
             example = "It took us an hour to find the small museum on the back street.",
             exampleNative = "Мы целый час пытались find маленький музей на заднем переулке.",
-            pos = "verb", semanticGroup = "city_basic_actions", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "city_basic_actions", fillInBlankExclusions = listOf(36521L, 36522L, 36523L, 36525L)),
 
         WordEntity(id = 36525, setId = 365, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "enter", transliteration = "[ˈɛntər]", translation = "входить (в здание)",
@@ -255,6 +255,6 @@ object WordDataEnglishCityLifeL1 {
             definitionNative = "Пройти внутрь здания, комнаты или другого закрытого места.",
             example = "Visitors must enter the museum through the main glass doors.",
             exampleNative = "Посетители должны enter в музей через главные стеклянные двери.",
-            pos = "verb", semanticGroup = "city_basic_actions", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "city_basic_actions", fillInBlankExclusions = listOf(36521L, 36522L, 36523L, 36524L)),
     )
 }

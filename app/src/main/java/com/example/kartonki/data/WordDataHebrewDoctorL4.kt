@@ -78,8 +78,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Базовый защитный слой, что получает каждый житель от государства без доплаты.",
             example = "מָגֵן בְּרִיאוּת מַגִּיעַ אוֹטוֹמָטִית לְכָל תּוֹשָׁב מִיּוֹם הָעֲלִיָּה.",
             exampleNative = "Медицинский страховой щит положен автоматически каждому жителю с дня репатриации.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180502L, 180503L)),
         WordEntity(
             id = 180502, setId = 1805, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "doctor_kupot", transliteration = "kupa tzibburit",
@@ -88,8 +87,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Некоммерческая организация, что выдаёт лечение по бюджету от государства, а не ради прибыли.",
             example = "קֻפָּה צִיבּוּרִית מְחֻיֶּבֶת לְקַבֵּל כָּל פּוֹנֶה בְּלִי קֶשֶׁר לְמַצָּב הַבְּרִיאוּת.",
             exampleNative = "Общественная медицинская касса обязана принимать любого обратившегося независимо от его состояния.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180501L, 180503L)),
         WordEntity(
             id = 180503, setId = 1805, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "doctor_kupot", transliteration = "sherutei makabi",
@@ -98,8 +96,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Официальное название второй по размеру сети в стране, что фигурирует в законах.",
             example = "שֵׁרוּתֵי מַכַּבִּי פָּתְחוּ סָנִיף חָדָשׁ לְיַד הַתַּחֲנָה הַמֶּרְכָּזִית.",
             exampleNative = "Сеть «Шерутей Маккаби» открыла новый филиал рядом с центральной автостанцией.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180501L, 180502L, 180505L)),
         WordEntity(
             id = 180504, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "doctor_kupot", transliteration = "meukhedet",
@@ -108,8 +105,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Третья касса — поменьше, предлагает льготы пожилым и семьям.",
             example = "סָבָתָא שֶׁלִּי מְבֻטַּחַת בִּמְאֻחֶדֶת כְּבָר עֶשְׂרִים שָׁנָה.",
             exampleNative = "Моя бабушка застрахована в מְאֻחֶדֶת уже двадцать лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180505L)),
         WordEntity(
             id = 180505, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "doctor_kupot", transliteration = "leumit",
@@ -118,8 +114,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Самая маленькая касса — выбор тех, кто ищет низкий членский взнос.",
             example = "לֵאוּמִית פָּתְחָה סָנִיף חָדָשׁ בְּעִיר הַפְּרִיפֶרְיָה הַשָּׁנָה.",
             exampleNative = "לֵאוּמִית открыла новый филиал в периферийном городе в этом году.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180503L, 180504L)),
 
         // ── doctor_health_basket (5) — корзина здоровья и самоучастие ──
         WordEntity(
@@ -130,8 +125,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Список услуг, на которые каждый застрахованный имеет право без доплаты от государства.",
             example = "סַל הַבְּרִיאוּת מִתְעַדְכֵּן כָּל שָׁנָה עַל יְדֵי וַעֲדָה צִבּוּרִית.",
             exampleNative = "סַל הַבְּרִיאוּת обновляется каждый год общественной комиссией.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180507L, 180508L, 180509L, 180510L)),
         WordEntity(
             id = 180507, setId = 1805, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "doctor_health_basket", transliteration = "trufot basal",
@@ -140,8 +134,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Препараты, утверждённые для гос. финансирования — больной платит лишь малую долю.",
             example = "הָרוֹפֵא בָּחַר תְּרוּפוֹת בַּסַּל כְּדֵי לַחֲסֹךְ לִי כֶּסֶף.",
             exampleNative = "Врач выбрал תְּרוּפוֹת בַּסַּל, чтобы сэкономить мне деньги.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180506L, 180508L, 180509L, 180510L)),
         WordEntity(
             id = 180508, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "doctor_health_basket", transliteration = "sherutim mikhuts lasal",
@@ -150,8 +143,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Лечения, не входящие в общественный список — пациент финансирует их сам.",
             example = "טִפּוּל זֶה נֶחְשָׁב לְשֵׁרוּתִים מִחוּץ לַסַּל וְעוֹלֶה מָמוֹן רַב.",
             exampleNative = "Это лечение считается שֵׁרוּתִים מִחוּץ לַסַּל и стоит немалых денег.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180506L, 180507L, 180509L, 180510L)),
         WordEntity(
             id = 180509, setId = 1805, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "doctor_health_basket", transliteration = "hishtatfut atsmit",
@@ -160,8 +152,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Небольшая сумма, что больной платит сам за визит или за рецепт.",
             example = "הִשְׁתַּתְּפוּת עַצְמִית לְבִקּוּר אֵצֶל יוֹעֵץ — שְׁלוֹשִׁים שֶׁקֶל.",
             exampleNative = "הִשְׁתַּתְּפוּת עַצְמִית за визит к консультанту — тридцать шекелей.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180506L, 180507L, 180508L, 180510L)),
         WordEntity(
             id = 180510, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "doctor_health_basket", transliteration = "ptor mehishtatfut",
@@ -170,8 +161,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Право не платить эту сумму — даётся пожилым и хронически больным.",
             example = "אַבָּא קִבֵּל פְּטוֹר מֵהִשְׁתַּתְּפוּת בִּגְלַל מַחֲלָה כְרוֹנִית.",
             exampleNative = "Папа получил פְּטוֹר מֵהִשְׁתַּתְּפוּת из-за хронической болезни.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180506L, 180507L, 180508L, 180509L)),
 
         // ── doctor_commitment (5) — гарантийные обязательства и направления ──
         WordEntity(
@@ -182,8 +172,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Официальный вердикт страховщика — финансировать лечение пациента или отказать.",
             example = "הַחְלָטַת קֻפָּה הִגִּיעָה בְּמֵייל וְהִיא חִיּוּבִית עַל הַטִּפּוּל הַחָדָשׁ.",
             exampleNative = "Решение страховой кассы пришло по почте и оно положительное по новому лечению.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180512L, 180513L, 180514L, 180515L)),
         WordEntity(
             id = 180512, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "doctor_commitment", transliteration = "ishur tekhni",
@@ -192,8 +181,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Формальное одобрение, что все условия выполнены — без дополнительного мед. обсуждения.",
             example = "אִישּׁוּר טֶכְנִי לַבְּדִיקָה הִגִּיעַ בְּמֵייל בְּתוֹךְ שָׁעָה.",
             exampleNative = "אִישּׁוּר טֶכְנִי на проверку пришёл по почте в течение часа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180511L, 180513L, 180514L, 180515L)),
         WordEntity(
             id = 180513, setId = 1805, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "doctor_commitment", transliteration = "rofe yoets",
@@ -202,8 +190,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Специалист, к которому идут на разовый визит за мнением в его области.",
             example = "הָרוֹפֵא הָרִאשׁוֹנִי שָׁלַח אוֹתִי לְרוֹפֵא יוֹעֵץ בְּלֵב.",
             exampleNative = "Семейный врач направил меня к רוֹפֵא יוֹעֵץ по сердцу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180511L, 180512L, 180514L, 180515L)),
         WordEntity(
             id = 180514, setId = 1805, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "doctor_commitment", transliteration = "rofe rishoni",
@@ -222,8 +209,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Бланк, разрешающий лечение без обычной очереди — выдаёт специалист в экстренной ситуации.",
             example = "הָרוֹפֵא חָתַם הַפְנָיָה דְחוּפָה לְבֵית חוֹלִים בְּאוֹתוֹ עֶרֶב.",
             exampleNative = "Врач подписал הַפְנָיָה דְחוּפָה в больницу в тот же вечер.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180511L, 180512L, 180513L, 180514L)),
 
         // ── doctor_supplemental (5) — дополнительные страховки ──
         WordEntity(
@@ -234,8 +220,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Второй слой покрытия от самой кассы — добавляет услуги сверх базы.",
             example = "בִּטּוּחַ מַשְׁלִים מְכַסֶּה לִי בְּחִירַת מְנַתֵּחַ בָּבֵית-הַחוֹלִים.",
             exampleNative = "בִּטּוּחַ מַשְׁלִים покрывает мне выбор хирурга в больнице.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180517L, 180518L, 180519L, 180520L)),
         WordEntity(
             id = 180517, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "doctor_supplemental", transliteration = "polisa pratit",
@@ -244,8 +229,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Договор со страховой вне кассы — для индивидуального и дорогого расширения.",
             example = "פּוֹלִיסָה פְּרָטִית טוֹבָה עוֹלָה אַלְפֵי שְׁקָלִים בַּשָּׁנָה.",
             exampleNative = "Хорошая פּוֹלִיסָה פְּרָטִית стоит тысячи шекелей в год.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180516L, 180518L, 180519L, 180520L)),
         WordEntity(
             id = 180518, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "doctor_supplemental", transliteration = "kisuy lemakhalot kashot",
@@ -254,8 +238,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Крупная разовая выплата тому, у кого нашли рак или мозговое событие.",
             example = "כִּסּוּי לְמַחֲלוֹת קָשׁוֹת עוֹזֵר לְכַסּוֹת חֳדָשִׁים בְּלִי עֲבוֹדָה.",
             exampleNative = "כִּסּוּי לְמַחֲלוֹת קָשׁוֹת помогает покрыть месяцы без работы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180516L, 180517L, 180519L, 180520L)),
         WordEntity(
             id = 180519, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "doctor_supplemental", transliteration = "shikhva shlishit",
@@ -264,8 +247,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Уровень глубже дополнительной — для тех, кто хочет ещё и частный поверх всего.",
             example = "הַבּוֹחֵר בְּשִׁכְבָה שְׁלִישִׁית מְשַׁלֵּם שָׁלוֹשׁ פְּרֵמְיוֹת.",
             exampleNative = "Кто выбирает שִׁכְבָה שְׁלִישִׁית, платит три премии параллельно.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180516L, 180517L, 180518L, 180520L)),
         WordEntity(
             id = 180520, setId = 1805, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "doctor_supplemental", transliteration = "bituakh siudi",
@@ -274,8 +256,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Покрытие пожилого, что себя не обслуживает и нуждается в ежедневной помощи дома.",
             example = "בִּיטוּחַ סִיעוּדִי מְמַמֵּן עוֹבֶדֶת זָרָה לְסָבָתָא בַּבַּיִת.",
             exampleNative = "בִּיטוּחַ סִיעוּדִי финансирует иностранную работницу для бабушки дома.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180516L, 180517L, 180518L, 180519L)),
 
         // ── doctor_specialty_clinics (5) — специализированные клиники ──
         WordEntity(
@@ -286,8 +267,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Место, где делают мелкие операции без госпитализации на ночь.",
             example = "פִּנּוּ אוֹתִי לְמִרְפְּאָה כִּירוּרְגִית לְהוֹצָאַת שׁוּמָן.",
             exampleNative = "Меня направили в מִרְפְּאָה כִּירוּרְגִית на удаление жировика.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180522L, 180523L, 180524L, 180525L)),
         WordEntity(
             id = 180522, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "doctor_specialty_clinics", transliteration = "mirpaat keev",
@@ -296,8 +276,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Многопрофильная команда, что лечит взрослых, страдающих долгие месяцы.",
             example = "מִרְפְּאַת כְּאֵב הִצִּיעָה לִי שִׁלּוּב שֶׁל תְּרוּפָה וְהִתְעַמְּלוּת.",
             exampleNative = "מִרְפְּאַת כְּאֵב предложила мне сочетание препарата и гимнастики.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180521L, 180523L, 180524L, 180525L)),
         WordEntity(
             id = 180523, setId = 1805, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "doctor_specialty_clinics", transliteration = "mirpaat shikum",
@@ -306,8 +285,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Место, что возвращает людей к функционированию после аварии или инсульта.",
             example = "אַחֲרֵי הָאֵרוּעַ הַמֹּחִי הִגַּעְתִּי לְמִרְפְּאַת שִׁקּוּם כָּל שָׁבוּעַ.",
             exampleNative = "После инсульта я ходил в מִרְפְּאַת שִׁקּוּם два раза в неделю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180521L, 180522L, 180524L, 180525L)),
         WordEntity(
             id = 180524, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "doctor_specialty_clinics", transliteration = "ishpuz yom",
@@ -316,8 +294,7 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Приход в больницу утром и уход домой вечером — без ночёвки.",
             example = "קִבַּלְתִּי כִימוֹתֶרַפְּיָה בְּמַסְלוּל אִשְׁפּוּז יוֹם פַּעַם בִּשְׁבוּעַיִם.",
             exampleNative = "Я получал химию по маршруту אִשְׁפּוּז יוֹם раз в две недели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180521L, 180522L, 180523L, 180525L)),
         WordEntity(
             id = 180525, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "doctor_specialty_clinics", transliteration = "mirpeet khuts",
@@ -326,7 +303,6 @@ object WordDataHebrewDoctorL4 {
             definitionNative = "Подразделение внутри больницы, что принимает пациентов без их госпитализации.",
             example = "מִרְפֵּאת חוּץ אוֹרְתוֹפֶּדִית בְּהַדָסָה פְּתוּחָה כָּל בֹּקֶר.",
             exampleNative = "מִרְפֵּאת חוּץ ортопедическая в Хадассе открыта каждое утро.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180521L, 180522L, 180523L, 180524L)),
     )
 }

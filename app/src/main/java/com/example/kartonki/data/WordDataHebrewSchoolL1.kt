@@ -89,8 +89,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Тот, кто ходит на уроки и слушает объяснения преподавателя.",
             example = "כָּל תַּלְמִיד בַּכִּתָּה הֵבִיא מַחְבֶּרֶת חֲדָשָׁה.",
             exampleNative = "Каждый תַּלְמִיד в классе принёс новую тетрадь.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181201L, 181202L, 181203L, 181204L)),
 
         // ─── kids_school_basic_school (5) ─────────────────────────────────
         WordEntity(
@@ -102,8 +101,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Здание, куда дети ходят учиться чтению, счёту и другим предметам.",
             example = "בֵּית סֵפֶר חָדָשׁ נִפְתַּח קָרוֹב לַשְּׁכוּנָה שֶׁלָּנוּ.",
             exampleNative = "Новый בֵּית סֵפֶר открылся совсем рядом с нашим домом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181207L, 181208L, 181209L, 181210L)),
         WordEntity(
             id = 181207, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "kids_school_basic_school",
@@ -113,8 +111,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Комната со столами, где дети сидят на уроке.",
             example = "הַכִּתָּה שֶׁלִּי גְּדוֹלָה וּמוּאֶרֶת בְּשֶׁמֶשׁ.",
             exampleNative = "Моя כִּתָּה большая и солнечная по утрам.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181206L, 181208L, 181209L, 181210L)),
         WordEntity(
             id = 181208, setId = 1812, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kids_school_basic_school",
@@ -124,8 +121,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Открытое место рядом со школой, где дети играют на перемене.",
             example = "כָּל הַיְלָדִים יָצְאוּ לַחֲצַר בֵּית הַסֵּפֶר עִם הַכַּדּוּר.",
             exampleNative = "Все ребята выскочили в חֲצַר בֵּית הַסֵּפֶר с большим мячом.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181206L, 181207L, 181209L, 181210L)),
         WordEntity(
             id = 181209, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "kids_school_basic_school",
@@ -135,8 +131,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Громкий звуковой сигнал, который сообщает о начале или конце урока.",
             example = "הַפַּעֲמוֹן צִלְצֵל וְהַיְּלָדִים רָצוּ לַכִּתָּה.",
             exampleNative = "פַּעֲמוֹן зазвенел, и дети помчались обратно в класс.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181206L, 181208L, 181210L)),
         WordEntity(
             id = 181210, setId = 1812, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kids_school_basic_school",
@@ -146,8 +141,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Короткое время между уроками, когда едят и играют во дворе.",
             example = "בַּהַפְסָקָה אָכַלְתִּי כָּרִיךְ עִם גְּבִינָה צְהֻבָּה.",
             exampleNative = "На הַפְסָקָה я съел бутерброд с жёлтым сыром.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181206L, 181207L, 181208L, 181209L)),
 
         // ─── kids_school_basic_supplies (5) ───────────────────────────────
         WordEntity(
@@ -159,8 +153,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Сумка, которую носят за спиной с книгами и тетрадями.",
             example = "שַׂמְתִּי בַּתִּיק קֻפְסַת אֹכֶל וּבַקְבּוּק מַיִם.",
             exampleNative = "Я положил в תִּיק коробочку с обедом и бутылку воды.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181212L, 181213L, 181214L, 181215L)),
         WordEntity(
             id = 181212, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "kids_school_basic_supplies",
@@ -170,8 +163,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Сшитые вместе листы со связным текстом или материалом для изучения.",
             example = "פָּתַחְתִּי סֵפֶר חָדָשׁ וְהִתְחַלְתִּי לִקְרֹא.",
             exampleNative = "Я открыл новый סֵפֶר и начал читать.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181211L, 181213L, 181214L, 181215L)),
         WordEntity(
             id = 181213, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "kids_school_basic_supplies",
@@ -192,8 +184,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Тонкая деревянная палочка с грифелем внутри — ей рисуют или пишут.",
             example = "הָעִפָּרוֹן שֶׁלִּי נִשְׁבַּר וְלָקַחְתִּי אַחֵר מֵהַתִּיק.",
             exampleNative = "Мой עִפָּרוֹן сломался, и я достал из рюкзака другой.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181212L, 181213L, 181215L)),
         WordEntity(
             id = 181215, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "kids_school_basic_supplies",
@@ -203,8 +194,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "То, что глаза видят на листе или предмете — например, красный или синий.",
             example = "בָּחַרְתִּי צֶבַע יָרוֹק לְצַיֵּר אֶת הַדֶּשֶׁא.",
             exampleNative = "Я выбрал зелёный צֶבַע, чтобы нарисовать траву.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181211L, 181212L, 181213L, 181214L)),
 
         // ─── kids_school_basic_actions (5) ────────────────────────────────
         WordEntity(
@@ -216,8 +206,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Получать новые знания через слушание, чтение и упражнения.",
             example = "אֲנִי אוֹהֵב לִלְמֹד שָׂפוֹת חֲדָשׁוֹת בָּעֶרֶב.",
             exampleNative = "Мне нравится לִלְמֹד новые языки по вечерам.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181217L, 181218L, 181219L, 181220L)),
         WordEntity(
             id = 181217, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "kids_school_basic_actions",
@@ -227,8 +216,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Изображать буквы или слова на листе с помощью карандаша или ручки.",
             example = "הַיְלָדִים לוֹמְדִים לִכְתֹּב אֶת שְׁמָם בְּכִתָּה א'.",
             exampleNative = "Дети учатся לִכְתֹּב своё имя ещё в первом классе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181216L, 181218L, 181219L, 181220L)),
         WordEntity(
             id = 181218, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "kids_school_basic_actions",
@@ -238,8 +226,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Понимать буквы и слова, написанные на странице или в книге.",
             example = "אֲנִי אוֹהֵב לִקְרֹא לִפְנֵי הַשֵּׁנָה.",
             exampleNative = "Я люблю לִקְרֹא перед самым сном.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181216L, 181217L, 181219L, 181220L)),
         WordEntity(
             id = 181219, setId = 1812, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "kids_school_basic_actions",
@@ -249,8 +236,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Создавать изображение на бумаге карандашом, краской или кистью.",
             example = "הַבַּת שֶׁלִּי אוֹהֶבֶת לְצַיֵּר חַיּוֹת קְטַנּוֹת בָּעֶרֶב.",
             exampleNative = "Моя дочка любит לְצַיֵּר по вечерам маленьких зверушек.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181216L, 181217L, 181218L, 181220L)),
         WordEntity(
             id = 181220, setId = 1812, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "kids_school_basic_actions",
@@ -260,8 +246,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Заниматься игрой ради удовольствия — одному или с друзьями.",
             example = "הַיְלָדִים יוֹצְאִים לְשַׂחֵק בַּחֲצֵר אַחֲרֵי הַשִּׁעוּרִים.",
             exampleNative = "Ребята выходят לְשַׂחֵק во двор сразу после уроков.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181216L, 181217L, 181218L, 181219L)),
 
         // ─── kids_school_basic_grades (5) ─────────────────────────────────
         WordEntity(
@@ -295,8 +280,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Письменная проверка, которая показывает, что ребёнок знает.",
             example = "מָחָר יֵשׁ לָנוּ מִבְחָן בָּהִיסְטוֹרְיָה.",
             exampleNative = "Завтра у нас מִבְחָן по истории древнего мира.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181221L, 181222L, 181224L, 181225L)),
         WordEntity(
             id = 181224, setId = 1812, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kids_school_basic_grades",
@@ -306,8 +290,7 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Число, которое показывает, насколько хорошо ребёнок ответил на проверке.",
             example = "קִיבַּלְתִּי צִיּוּן גָּבוֹהַּ בַּמִּבְחָן הָאַחֲרוֹן.",
             exampleNative = "Я получил высокий צִיּוּן за последнюю контрольную работу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181221L, 181222L, 181223L, 181225L)),
         WordEntity(
             id = 181225, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "kids_school_basic_grades",

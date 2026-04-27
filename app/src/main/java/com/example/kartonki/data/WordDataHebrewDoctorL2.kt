@@ -55,8 +55,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Встреча у врача в тот же день — когда состояние не терпит ожидания.",
             example = "קִבַּלְתִּי תּוֹר דָּחוּף לַצָּהֳרַיִם בִּגְלַל חֹם גָּבוֹהַּ.",
             exampleNative = "Получил תּוֹר דָּחוּף на полдень из-за высокой температуры.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180302L, 180303L, 180304L, 180305L)),
         WordEntity(
             id = 180302, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "doctor_appointment", transliteration = "bitul tor",
@@ -65,8 +64,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Сообщить в клинику, что не придёшь — чтобы освободить место другим.",
             example = "בִּטּוּל תּוֹר אֶפְשָׁרִי בָּאַפְּלִיקַצְיָה עַד שְׁלוֹשׁ שָׁעוֹת קֹדֶם.",
             exampleNative = "בִּטּוּל תּוֹר возможно через приложение за три часа до приёма.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180301L, 180303L, 180304L, 180305L)),
         WordEntity(
             id = 180303, setId = 1803, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "doctor_appointment", transliteration = "dkhiyat tor",
@@ -75,8 +73,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Сдвиг встречи на другой день — по причине клиники или пациента.",
             example = "הִתְקַשְׁרוּ מֵהַקֻּפָּה וּבִקְשׁוּ דְּחִיַּת תּוֹר לַשָּׁבוּעַ הַבָּא.",
             exampleNative = "Звонили из больничной кассы и просили דְּחִיַּת תּוֹר на следующую неделю.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180301L, 180302L, 180304L, 180305L)),
         WordEntity(
             id = 180304, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "doctor_appointment", transliteration = "mazkira refuit",
@@ -85,8 +82,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Женщина на ресепшне — оформляет справки, очередь и впускает к врачу.",
             example = "מַזְכִּירָה רְפוּאִית בִּקְשָׁה מִמֶּנִּי תְּעוּדַת זֶהוּת בַּכְּנִיסָה.",
             exampleNative = "מַזְכִּירָה רְפוּאִית попросила у меня удостоверение на входе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180301L, 180302L, 180303L, 180305L)),
         WordEntity(
             id = 180305, setId = 1803, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "doctor_appointment", transliteration = "yoets refui",
@@ -95,8 +91,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Профессионал — помогает выбрать врача, лечение или дальнейший путь.",
             example = "יוֹעֵץ רְפוּאִי הִמְלִיץ לִי לִפְנוֹת לַקַּרְדִּיוֹלוֹג.",
             exampleNative = "יוֹעֵץ רְפוּאִי посоветовал мне обратиться к кардиологу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180301L, 180302L, 180303L, 180304L)),
 
         // ── doctor_measurements (5) — давление, пульс, вес, рост, температура ──
         WordEntity(
@@ -107,8 +102,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Сила, с которой жидкость в теле давит на стенки внутренних трубок.",
             example = "הָאָחוֹת מָדְדָה לִי לַחַץ דָּם לִפְנֵי הַכְּנִיסָה לָרוֹפֵא.",
             exampleNative = "Медсестра измерила мне לַחַץ דָּם перед входом к врачу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180307L, 180310L)),
         WordEntity(
             id = 180307, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "doctor_measurements", transliteration = "dofek",
@@ -117,8 +111,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Толчки, которые чувствуешь на запястье или шее — отголоски сердца.",
             example = "הָרוֹפֵא בָּדַק דֹּפֶק וְרָשַׁם שִׁבְעִים לְדַקָּה.",
             exampleNative = "Врач проверил דֹּפֶק и записал семьдесят в минуту.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180306L, 180308L, 180309L)),
         WordEntity(
             id = 180308, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "doctor_measurements", transliteration = "mishkal",
@@ -127,8 +120,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Насколько человек тяжёлый — измеряют в килограммах на специальных весах.",
             example = "אַחַת לְשָׁנָה הָרוֹפֵא בּוֹדֵק מִשְׁקָל וְרוֹשֵׁם בַּתִּיק.",
             exampleNative = "Раз в год врач проверяет מִשְׁקָל и записывает в карту.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180307L, 180309L)),
         WordEntity(
             id = 180309, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "doctor_measurements", transliteration = "gova",
@@ -147,8 +139,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Проверка градусником, насколько тело горячее — показывает, есть ли воспаление.",
             example = "מְדִידַת חוֹם בַּכְּנִיסָה לַמִּרְפָּאָה הִיא חוֹבָה לְכֻלָּם.",
             exampleNative = "מְדִידַת חוֹם при входе в клинику обязательна для всех.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180306L)),
 
         // ── doctor_simple_procedures (5) — осмотры и пальпация ──
         WordEntity(
@@ -159,8 +150,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Рутинный осмотр всего тела — без фокуса на одной жалобе.",
             example = "אַחַת לְשָׁנָה אֲנִי הוֹלֵךְ לִבְּדִיקָה כְּלָלִית אֵצֶל הָרוֹפֵא.",
             exampleNative = "Раз в год я хожу на בְּדִיקָה כְּלָלִית к врачу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180312L, 180313L, 180314L, 180315L)),
         WordEntity(
             id = 180312, setId = 1803, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "doctor_simple_procedures", transliteration = "akshava la-lev",
@@ -169,8 +159,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Врач прикладывает прибор к груди — слышит толчки и внутренние шумы.",
             example = "אַחֲרֵי הַקְשָׁבָה לַלֵּב הָרוֹפֵא אָמַר שֶׁהַכֹּל תָּקִין.",
             exampleNative = "После הַקְשָׁבָה לַלֵּב врач сказал, что всё в порядке.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180311L, 180313L, 180314L, 180315L)),
         WordEntity(
             id = 180313, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "doctor_simple_procedures", transliteration = "bdikat garon",
@@ -179,8 +168,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Врач смотрит фонариком и деревянной палочкой — ищет красноту или ранку.",
             example = "אַחֲרֵי בְּדִיקַת גָּרוֹן הִתְבָּרֵר שֶׁיֵּשׁ דַּלֶּקֶת חַזָּקָה.",
             exampleNative = "После בְּדִיקַת גָּרוֹן выяснилось, что воспаление сильное.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180311L, 180312L, 180314L, 180315L)),
         WordEntity(
             id = 180314, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "doctor_simple_procedures", transliteration = "bdikat ozen",
@@ -189,8 +177,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Врач вставляет прибор с лампочкой — ищет жидкость или воспаление внутри.",
             example = "הַיֶּלֶד בָּכָה בְּמַהֲלָךְ בְּדִיקַת אֹזֶן בְּאֶצְלוֹ דַּלֶּקֶת.",
             exampleNative = "Ребёнок плакал во время בְּדִיקַת אֹזֶן — у него воспаление.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180311L, 180312L, 180313L, 180315L)),
         WordEntity(
             id = 180315, setId = 1803, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "doctor_simple_procedures", transliteration = "mishush beten",
@@ -199,8 +186,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Врач надавливает руками на живот — нащупывает, где больно или напряжено.",
             example = "מִישּׁוּשׁ בֶּטֶן זִיהָה לָרוֹפֵא נְקֻדָּה רְגִישָׁה בַּצַּד הַיְמָנִי.",
             exampleNative = "מִישּׁוּשׁ בֶּטֶן помогло врачу найти чувствительную точку справа.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180311L, 180312L, 180313L, 180314L)),
 
         // ── doctor_history (5) — анамнез: фон, аллергии, операции, семья, лекарства ──
         WordEntity(
@@ -211,8 +197,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "История прошлых болезней человека — помогает решить, как лечить сейчас.",
             example = "הָרוֹפֵא בִּקֵּשׁ לְפָרֵט רֶקַע רְפוּאִי לִפְנֵי הַנִּתּוּחַ.",
             exampleNative = "Врач попросил рассказать רֶקַע רְפוּאִי перед операцией.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180318L, 180319L, 180320L)),
         WordEntity(
             id = 180317, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "doctor_history", transliteration = "alergiyot",
@@ -221,7 +206,6 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Резкие реакции тела на еду, лекарство или пыль — например, сыпь.",
             example = "צִיַּיְנְתִּי בַּטֹּפֶס אֲלֶרְגְיוֹת לִתְרוּפַת אַנְטִיבְּיוֹטִיקָה.",
             exampleNative = "Я указал в анкете אֲלֶרְגְיוֹת на антибиотики.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180318, setId = 1803, languagePair = "he-ru", rarity = "RARE",
@@ -231,8 +215,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Все прошлые хирургические вмешательства — важно для решения о лечении.",
             example = "בַּטֹּפֶס פֵּרַטְתִּי נִתּוּחִים קוֹדְמִים בְּעֶשֶׂר הַשָּׁנִים.",
             exampleNative = "В анкете я перечислил נִתּוּחִים קוֹדְמִים за десять лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180316L, 180319L, 180320L)),
         WordEntity(
             id = 180319, setId = 1803, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "doctor_history", transliteration = "makhalot mishpakha",
@@ -241,8 +224,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Болезни, которые передаются по генам — например, от родителей или от деда внуку.",
             example = "מַחֲלוֹת מִשְׁפָּחָה כּוֹלְלוֹת אֵצְלֵנוּ סוּכֶּרֶת וּמַחֲלוֹת לֵב.",
             exampleNative = "מַחֲלוֹת מִשְׁפָּחָה у нас включают диабет и сердечные болезни.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180316L, 180318L, 180320L)),
         WordEntity(
             id = 180320, setId = 1803, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "doctor_history", transliteration = "trufot kvuot",
@@ -251,8 +233,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Препараты, которые человек принимает каждый день без перерыва — из-за хронической болезни.",
             example = "סַבָּא לוֹקֵחַ תְּרוּפוֹת קְבוּעוֹת לְלַחַץ דָּם וּלְכוֹלֶסְטֶרוֹל.",
             exampleNative = "Дед принимает תְּרוּפוֹת קְבוּעוֹת от давления и холестерина.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180316L, 180318L, 180319L)),
 
         // ── doctor_referrals (5) — направления, эпикриз, освобождение, справки ──
         WordEntity(
@@ -263,8 +244,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Письмо от семейного врача — даёт право на встречу с узким специалистом.",
             example = "קִבַּלְתִּי הַפְנָיָה לְמוּמְחֶה בָּעוֹר בִּגְלַל פְּרִיחָה מוּזָרָה.",
             exampleNative = "Получил הַפְנָיָה לְמוּמְחֶה по коже из-за странной сыпи.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180322L, 180323L, 180324L, 180325L)),
         WordEntity(
             id = 180322, setId = 1803, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "doctor_referrals", transliteration = "mikhtav akhlama",
@@ -273,8 +253,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Документ из больницы в конце госпитализации — итог: что было и что делать дальше.",
             example = "הָבֵא מִכְתָּב הַחְלָמָה לָרוֹפֵא הַמִּשְׁפַּחְתִּי אַחֲרֵי הַשִּׁחְרוּר.",
             exampleNative = "Принеси מִכְתָּב הַחְלָמָה семейному врачу после выписки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180321L, 180323L, 180324L, 180325L)),
         WordEntity(
             id = 180323, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "doctor_referrals", transliteration = "ptor kholim",
@@ -283,8 +262,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Официальная справка — освобождает от учёбы или заданий из-за состояния.",
             example = "הַתַּלְמִידָה הֵבִיאָה פְּטוֹר חוֹלִים לְשִׁעוּר הַסְּפּוֹרְט.",
             exampleNative = "Школьница принесла פְּטוֹר חוֹלִים для урока физкультуры.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180321L, 180322L, 180324L, 180325L)),
         WordEntity(
             id = 180324, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "doctor_referrals", transliteration = "ishur avoda",
@@ -293,8 +271,7 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Документ от врача — объясняет работодателю, почему сотрудник не явился.",
             example = "הַמַּעֲבִיד דָּרַשׁ אִישּׁוּר עֲבוֹדָה לְכָל יוֹם הֵיעָדְרוּת.",
             exampleNative = "Работодатель потребовал אִישּׁוּר עֲבוֹדָה за каждый день отсутствия.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180321L, 180322L, 180323L, 180325L)),
         WordEntity(
             id = 180325, setId = 1803, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "doctor_referrals", transliteration = "ishur nesia",
@@ -303,7 +280,6 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Медицинский документ — разрешает полёт или долгую поездку при состоянии здоровья.",
             example = "לִפְנֵי הַטִּיסָה לְרוּסְיָה בִּקְשׁוּ אִישּׁוּר נְסִיעָה מֵהָרוֹפֵא.",
             exampleNative = "Перед полётом в Россию попросили אִישּׁוּר נְסִיעָה от врача.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180321L, 180322L, 180323L, 180324L)),
     )
 }

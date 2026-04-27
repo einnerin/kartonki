@@ -66,8 +66,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Способность умом понять, что чувствует другой, не переживая то же самое.",
             example = "Therapists rely on cognitive empathy to make sense of a client's inner world.",
             exampleNative = "Терапевты опираются на cognitive empathy, чтобы разобраться во внутреннем мире клиента.",
-            pos = "noun", semanticGroup = "emotions_empathy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_empathy", fillInBlankExclusions = listOf(36302L, 36303L, 36304L, 36305L)),
 
         WordEntity(id = 36302, setId = 363, languagePair = "en-ru", rarity = "EPIC",
             original = "compassion fatigue", transliteration = "[kəmˈpæʃən fəˈtiɡ]",
@@ -76,8 +75,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Эмоциональное истощение у тех, кто каждый день заботится о страдающих.",
             example = "After ten years in oncology, the nurse felt deep compassion fatigue.",
             exampleNative = "После десяти лет в онкологии медсестра ощутила глубокую compassion fatigue.",
-            pos = "noun", semanticGroup = "emotions_empathy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_empathy", fillInBlankExclusions = listOf(36301L, 36303L, 36304L, 36305L)),
 
         WordEntity(id = 36303, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "mirror neuron", transliteration = "[ˈmɪrər ˈnʊrɑn]",
@@ -86,8 +84,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Клетка мозга, реагирующая и на твоё действие, и на действие другого человека.",
             example = "Scientists believe mirror neuron activity helps babies learn to imitate adults.",
             exampleNative = "Учёные считают, что mirror neuron активность помогает младенцам подражать взрослым.",
-            pos = "noun", semanticGroup = "emotions_empathy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_empathy", fillInBlankExclusions = listOf(36301L, 36302L, 36304L, 36305L)),
 
         WordEntity(id = 36304, setId = 363, languagePair = "en-ru", rarity = "EPIC",
             original = "perspective taking", transliteration = "[pərˈspɛktɪv ˈteɪkɪŋ]",
@@ -96,8 +93,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Попытка представить ситуацию глазами и чувствами другого человека.",
             example = "Good mediators master perspective taking before saying a single word.",
             exampleNative = "Хорошие медиаторы осваивают perspective taking прежде чем сказать хоть слово.",
-            pos = "noun", semanticGroup = "emotions_empathy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_empathy", fillInBlankExclusions = listOf(36301L, 36302L, 36303L, 36305L)),
 
         WordEntity(id = 36305, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "attunement", transliteration = "[əˈtunmənt]",
@@ -106,8 +102,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Тихое умение чувствовать состояние другого и мягко подстраиваться под него.",
             example = "Her attunement to the child's mood made every session feel safe.",
             exampleNative = "Её attunement к настроению ребёнка делало каждую сессию безопасной.",
-            pos = "noun", semanticGroup = "emotions_empathy",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_empathy", fillInBlankExclusions = listOf(36301L, 36302L, 36303L, 36304L)),
 
         // ── emotions_regulation (5) ───────────────────────────────────────
 
@@ -118,8 +113,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Умение направлять то, что чувствуешь, под момент и собственные цели.",
             example = "Therapy taught him emotion regulation strategies for stressful meetings.",
             exampleNative = "Терапия научила его стратегиям emotion regulation для стрессовых встреч.",
-            pos = "noun", semanticGroup = "emotions_regulation",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_regulation", fillInBlankExclusions = listOf(36307L, 36308L, 36309L, 36310L)),
 
         WordEntity(id = 36307, setId = 363, languagePair = "en-ru", rarity = "EPIC",
             original = "suppression", transliteration = "[səˈprɛʃən]",
@@ -128,8 +122,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Удержание чувства, чтобы оно оставалось скрытым от других и от себя.",
             example = "Long-term suppression of grief often leads to physical health issues.",
             exampleNative = "Длительная suppression горя часто ведёт к проблемам с физическим здоровьем.",
-            pos = "noun", semanticGroup = "emotions_regulation",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_regulation", fillInBlankExclusions = listOf(36306L, 36308L, 36309L, 36310L)),
 
         WordEntity(id = 36308, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "reappraisal", transliteration = "[ˌriəˈpreɪzəl]",
@@ -138,8 +131,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Новый взгляд на трудную ситуацию, чтобы прочесть её спокойнее.",
             example = "Cognitive reappraisal helped her stop seeing the criticism as a personal attack.",
             exampleNative = "Когнитивная reappraisal помогла ей перестать видеть критику как личную атаку.",
-            pos = "noun", semanticGroup = "emotions_regulation",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_regulation", fillInBlankExclusions = listOf(36306L, 36307L, 36309L, 36310L)),
 
         WordEntity(id = 36309, setId = 363, languagePair = "en-ru", rarity = "EPIC",
             original = "mindfulness", transliteration = "[ˈmaɪndfəlnəs]",
@@ -148,8 +140,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Мягкое внимание к настоящему моменту без оценки того, что в нём появляется.",
             example = "A daily mindfulness practice slowly changed how he reacted to anger.",
             exampleNative = "Ежедневная mindfulness практика постепенно меняла его реакцию на гнев.",
-            pos = "noun", semanticGroup = "emotions_regulation",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_regulation", fillInBlankExclusions = listOf(36306L, 36307L, 36308L, 36310L)),
 
         WordEntity(id = 36310, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "self-soothing", transliteration = "[sɛlf ˈsuðɪŋ]",
@@ -158,8 +149,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Умение унять себя через небольшие добрые жесты, когда тяжело.",
             example = "Healthy self-soothing might be a warm bath, a walk, or a soft blanket.",
             exampleNative = "Здоровое self-soothing — это тёплая ванна, прогулка или мягкий плед.",
-            pos = "noun", semanticGroup = "emotions_regulation",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_regulation", fillInBlankExclusions = listOf(36306L, 36307L, 36308L, 36309L)),
 
         // ── emotions_intelligence (5) ─────────────────────────────────────
 
@@ -170,8 +160,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Умение читать чувства — свои и чужие — и поступать с ними мудро.",
             example = "Modern leaders need strong emotional intelligence as much as technical skill.",
             exampleNative = "Современным лидерам нужен сильный emotional intelligence не меньше технических навыков.",
-            pos = "noun", semanticGroup = "emotions_intelligence",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_intelligence", fillInBlankExclusions = listOf(36312L, 36313L, 36314L, 36315L)),
 
         WordEntity(id = 36312, setId = 363, languagePair = "en-ru", rarity = "EPIC",
             original = "self-awareness", transliteration = "[sɛlf əˈwɛrnəs]",
@@ -180,8 +169,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Знание о том, что чувствуешь, почему и как это влияет на выбор.",
             example = "Years of journaling deepened her self-awareness around old family patterns.",
             exampleNative = "Годы дневников углубили её self-awareness в отношении старых семейных паттернов.",
-            pos = "noun", semanticGroup = "emotions_intelligence",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_intelligence", fillInBlankExclusions = listOf(36311L, 36313L, 36314L, 36315L)),
 
         WordEntity(id = 36313, setId = 363, languagePair = "en-ru", rarity = "EPIC",
             original = "social cue", transliteration = "[ˈsoʊʃəl kju]",
@@ -190,8 +178,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Маленькая подсказка на лице, в голосе или жесте, как реагировать.",
             example = "He missed the social cue and kept talking long after everyone wanted to leave.",
             exampleNative = "Он не заметил social cue и продолжал говорить, когда все хотели уйти.",
-            pos = "noun", semanticGroup = "emotions_intelligence",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_intelligence", fillInBlankExclusions = listOf(36311L, 36312L, 36314L, 36315L)),
 
         WordEntity(id = 36314, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "interpersonal radar", transliteration = "[ˌɪntərˈpɜrsənəl ˈreɪdɑr]",
@@ -200,8 +187,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Почти интуитивное чутьё на смену настроения в комнате людей.",
             example = "Her interpersonal radar caught the tension before anyone said a word.",
             exampleNative = "Её interpersonal radar уловил напряжение раньше, чем кто-то заговорил.",
-            pos = "noun", semanticGroup = "emotions_intelligence",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_intelligence", fillInBlankExclusions = listOf(36311L, 36312L, 36313L, 36315L)),
 
         WordEntity(id = 36315, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "emotional bandwidth", transliteration = "[ɪˈmoʊʃənəl ˈbændwɪdθ]",
@@ -210,8 +196,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Сколько чувств и заботы человек выдерживает, прежде чем перегрузиться.",
             example = "After the funeral she had no emotional bandwidth left for office drama.",
             exampleNative = "После похорон у неё не осталось emotional bandwidth на офисные драмы.",
-            pos = "noun", semanticGroup = "emotions_intelligence",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_intelligence", fillInBlankExclusions = listOf(36311L, 36312L, 36313L, 36314L)),
 
         // ── emotions_complex_concepts (5) ─────────────────────────────────
 
@@ -222,8 +207,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Внутреннее раздвоение между двумя правдами — человек говорит и чувствует обе.",
             example = "She felt deep equivocation about leaving a job she both loved and hated.",
             exampleNative = "Она чувствовала глубокую equivocation от ухода с работы, которую любила и ненавидела.",
-            pos = "noun", semanticGroup = "emotions_complex_concepts",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_complex_concepts", fillInBlankExclusions = listOf(36317L, 36318L, 36319L, 36320L)),
 
         WordEntity(id = 36317, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "cognitive dissonance", transliteration = "[ˈkɑɡnətɪv ˈdɪsənəns]",
@@ -232,8 +216,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Неприятное ощущение, когда поступки расходятся с тем, во что вроде бы веришь.",
             example = "Buying a fur coat caused her real cognitive dissonance as an animal lover.",
             exampleNative = "Покупка шубы вызвала у неё настоящий cognitive dissonance как у любительницы животных.",
-            pos = "noun", semanticGroup = "emotions_complex_concepts",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_complex_concepts", fillInBlankExclusions = listOf(36316L, 36318L, 36319L, 36320L)),
 
         WordEntity(id = 36318, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "existential dread", transliteration = "[ˌɛɡzɪˈstɛnʃəl drɛd]",
@@ -242,8 +225,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Тяжёлый страх о смысле, смертности и огромности мира вокруг.",
             example = "Late at night, existential dread made him stare at the dark ceiling for hours.",
             exampleNative = "Поздно ночью existential dread заставлял его часами смотреть в тёмный потолок.",
-            pos = "noun", semanticGroup = "emotions_complex_concepts",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_complex_concepts", fillInBlankExclusions = listOf(36316L, 36317L, 36319L, 36320L)),
 
         WordEntity(id = 36319, setId = 363, languagePair = "en-ru", rarity = "EPIC",
             original = "euphoria", transliteration = "[juˈfɔriə]",
@@ -252,8 +234,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Волна сильнейшего счастья, что почти отрывает от земли.",
             example = "Crossing the finish line filled her with a strange, weightless euphoria.",
             exampleNative = "Финиш наполнил её странной, невесомой euphoria.",
-            pos = "noun", semanticGroup = "emotions_complex_concepts",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_complex_concepts", fillInBlankExclusions = listOf(36316L, 36317L, 36318L, 36320L)),
 
         WordEntity(id = 36320, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "melancholy", transliteration = "[ˈmɛlənkɑli]",
@@ -262,8 +243,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Мягкая, тянущаяся грусть без ясной причины, остающаяся на время.",
             example = "Autumn evenings filled the old poet with a familiar melancholy.",
             exampleNative = "Осенние вечера наполняли старого поэта привычной melancholy.",
-            pos = "noun", semanticGroup = "emotions_complex_concepts",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_complex_concepts", fillInBlankExclusions = listOf(36316L, 36317L, 36318L, 36319L)),
 
         // ── emotions_attachment (5) ───────────────────────────────────────
 
@@ -274,8 +254,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Паттерн того, как человек ищет близости и реагирует на дистанцию в любви.",
             example = "Couples therapy started with mapping each partner's attachment style.",
             exampleNative = "Парная терапия началась с описания attachment style каждого партнёра.",
-            pos = "noun", semanticGroup = "emotions_attachment",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_attachment", fillInBlankExclusions = listOf(36322L, 36323L, 36324L, 36325L)),
 
         WordEntity(id = 36322, setId = 363, languagePair = "en-ru", rarity = "EPIC",
             original = "secure attachment", transliteration = "[sɪˈkjʊr əˈtætʃmənt]",
@@ -284,8 +263,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Спокойная связь, где близость безопасна, а короткие разлуки не пугают.",
             example = "Secure attachment in childhood often makes adult relationships smoother.",
             exampleNative = "Secure attachment в детстве часто делает взрослые отношения более ровными.",
-            pos = "noun", semanticGroup = "emotions_attachment",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_attachment", fillInBlankExclusions = listOf(36321L, 36323L, 36324L, 36325L)),
 
         WordEntity(id = 36323, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "anxious attachment", transliteration = "[ˈæŋkʃəs əˈtætʃmənt]",
@@ -294,8 +272,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Связь с постоянным беспокойством, что близкий человек отдалится.",
             example = "His anxious attachment showed up every time she didn't answer texts quickly.",
             exampleNative = "Его anxious attachment проявлялся каждый раз, когда она не отвечала на сообщения быстро.",
-            pos = "noun", semanticGroup = "emotions_attachment",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_attachment", fillInBlankExclusions = listOf(36321L, 36322L, 36324L, 36325L)),
 
         WordEntity(id = 36324, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "avoidant attachment", transliteration = "[əˈvɔɪdənt əˈtætʃmənt]",
@@ -304,8 +281,7 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Паттерн, где близость душит, а дистанция кажется безопаснее.",
             example = "People with avoidant attachment often shut down during emotional talks.",
             exampleNative = "Люди с avoidant attachment часто закрываются во время эмоциональных разговоров.",
-            pos = "noun", semanticGroup = "emotions_attachment",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_attachment", fillInBlankExclusions = listOf(36321L, 36322L, 36323L, 36325L)),
 
         WordEntity(id = 36325, setId = 363, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "codependence", transliteration = "[ˌkoʊdɪˈpɛndəns]",
@@ -314,7 +290,6 @@ object WordDataEnglishEmotionsL4 {
             definitionNative = "Связь, где ценность одного зависит от спасения или угождения другому.",
             example = "Years of codependence left her unable to name a single hobby of her own.",
             exampleNative = "Годы codependence оставили её без единого собственного увлечения.",
-            pos = "noun", semanticGroup = "emotions_attachment",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_attachment", fillInBlankExclusions = listOf(36321L, 36322L, 36323L, 36324L)),
     )
 }

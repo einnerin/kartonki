@@ -62,8 +62,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Новый дорожный документ с электронным чипом, хранящим данные владельца.",
             example = "מֵאָז שָׁנָה שֶׁעָבְרָה כּוּלָּם מְקַבְּלִים דַּרְכּוֹן בִּיוֹמֶטְרִי בִּלְבַד.",
             exampleNative = "С прошлого года всем выдают только דַּרְכּוֹן בִּיוֹמֶטְרִי.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180801L, 180803L, 180804L)),
         WordEntity(
             id = 180803, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "bureau_id_papers", transliteration = "тацлум паспорт",
@@ -72,8 +71,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Маленький официальный снимок лица — без головного убора и тёмных очков.",
             example = "צִילַּמְתִּי תַּצְלוּם פַּסְפּוֹרְט מָחֳרָתַיִם לִפְנֵי הַתּוֹר.",
             exampleNative = "Я сделал תַּצְלוּם פַּסְפּוֹרְט за день до записи.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180801L, 180802L, 180804L)),
         WordEntity(
             id = 180804, setId = 1808, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "bureau_id_papers", transliteration = "картис магнэти",
@@ -82,8 +80,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Маленький пластик с полосой или чипом, дающий доступ в учреждение.",
             example = "הַשּׁוֹמֵר מַעֲבִיר אֶת הַכַּרְטִיס מָגְנֶטִי לִיד הַקּוֹרֵא בַּכְּנִיסָה.",
             exampleNative = "Охранник проводит כַּרְטִיס מָגְנֶטִי возле считывателя на входе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180801L, 180802L, 180803L)),
         WordEntity(
             id = 180805, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_id_papers", transliteration = "ниспах",
@@ -104,8 +101,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Промежуток времени, в течение которого документ или одобрение считаются действительными.",
             example = "הַתֹּקֶף שֶׁל הָאַשְׁרָה שֶׁלִּי מִסְתַּיֵּם בְּסוֹף הַחֹדֶשׁ.",
             exampleNative = "תֹּקֶף моей визы заканчивается в конце месяца.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180807L, 180808L, 180810L)),
         WordEntity(
             id = 180807, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_visas", transliteration = "hаараха",
@@ -114,8 +110,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Официальная добавка времени к документу, который скоро истечёт, чтобы и дальше им пользоваться.",
             example = "הִגַּשְׁתִּי בַּקָּשָׁה לְהַאֲרָכָה שֶׁל שֵׁשָׁה חֳדָשִׁים נוֹסָפִים.",
             exampleNative = "Я подал просьбу о הַאֲרָכָה ещё на полгода.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180806L, 180808L, 180810L)),
         WordEntity(
             id = 180808, setId = 1808, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "bureau_visas", transliteration = "хидуш",
@@ -144,8 +139,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Нанесение официального оттиска на документ или паспорт — например, при пересечении границы.",
             example = "אַחֲרֵי הַהַחְתָּמָה אֶפְשָׁר לָצֵאת בִּטֶרְמִינָל הַיְצִיאָה.",
             exampleNative = "После הַחְתָּמָה можно идти в зал вылета.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180806L, 180807L, 180808L)),
 
         // ── bureau_permits (5) ────────────────────────────────────────────
         WordEntity(
@@ -156,8 +150,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Главный госорган, занимающийся ID-удостоверениями, паспортами и разрешениями на пребывание.",
             example = "הִתְקַשַּׁרְתִּי לְרַשׁוּת הָאֻכְלוּסִין לְזַמֵּן תּוֹר חָדָשׁ.",
             exampleNative = "Я позвонил в רַשׁוּת הָאֻכְלוּסִין записаться на новую очередь.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180812L)),
         WordEntity(
             id = 180812, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "bureau_permits", transliteration = "маамад хуки",
@@ -166,8 +159,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Официальное определение положения человека в стране — гражданин, житель или иностранец.",
             example = "בְּלִי מַעֲמָד חוּקִי קָבוּעַ אִי אֶפְשָׁר לִפְתֹּחַ חֶשְׁבּוֹן בַּנְק.",
             exampleNative = "Без постоянного מַעֲמָד חוּקִי нельзя открыть банковский счёт.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180811L)),
         WordEntity(
             id = 180813, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_permits", transliteration = "зхаут",
@@ -186,8 +178,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Официальное действие, при котором группа людей становится единым юридическим лицом.",
             example = "הַהִתְאַגְּדוּת שֶׁל הַעֲמוּתָה דּוֹרֶשֶׁת חֲתִימָה עַל תַּקָּנוֹן.",
             exampleNative = "הִתְאַגְּדוּת некоммерческой организации требует подписать устав.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180813L, 180815L)),
         WordEntity(
             id = 180815, setId = 1808, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "bureau_permits", transliteration = "апостиль",
@@ -196,8 +187,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Краткое международное удостоверение того, что иностранный документ подписан по закону у себя в стране.",
             example = "תְּעוּדַת לֵדָה זָרָה מְחַיֶּבֶת אַפּוֹסְטִיל לִפְנֵי הַגָּשָׁה.",
             exampleNative = "Иностранному свидетельству о рождении нужен אַפּוֹסְטִיל до подачи.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180813L, 180814L)),
 
         // ── bureau_fees (5) ───────────────────────────────────────────────
         WordEntity(
@@ -208,8 +198,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Фиксированная сумма, которую платят государству за официальную услугу — например, выдачу документа.",
             example = "שִׁלַּמְתִּי אֶת הָאַגְרָה בָּדֹּאַר וְקִבַּלְתִּי שׁוֹבֵר.",
             exampleNative = "Я заплатил אַגְרָה на почте и получил квитанцию.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180817L, 180818L)),
         WordEntity(
             id = 180817, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "bureau_fees", transliteration = "дмей типуль",
@@ -218,8 +207,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Небольшой платёж, который контора берёт за рассмотрение бланка и работу с ним.",
             example = "צָרִיךְ לְהַעֲבִיר דְּמֵי טִפּוּל לִפְנֵי שֶׁבּוֹדְקִים אֶת הַבַּקָּשָׁה.",
             exampleNative = "Нужно перевести דְּמֵי טִפּוּל до того, как рассмотрят заявление.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180816L, 180819L, 180820L)),
         WordEntity(
             id = 180818, setId = 1808, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "bureau_fees", transliteration = "шума",
@@ -248,8 +236,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Маленький отрезной талон, который банк возвращает после перевода нужной суммы.",
             example = "צָרְפוּ אֶת הַתְּלוּשׁ תַּשְׁלוּם לַטֹּפֶס וְהַגִּישׁוּ לַמִּשְׂרָד.",
             exampleNative = "Подколите תְּלוּשׁ תַּשְׁלוּם к бланку и сдайте в контору.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180817L, 180819L)),
 
         // ── bureau_correspond (5) ─────────────────────────────────────────
         WordEntity(
@@ -260,8 +247,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Короткое письмо, которое человек посылает в учреждение, чтобы попросить помощи или объяснений.",
             example = "הַפְּנִיָּה שֶׁלִּי לַמִּשְׂרָד נִשְׁלְחָה בַּדֹּאַר הָאֶלֶקְטְרוֹנִי.",
             exampleNative = "פְּנִיָּה в министерство я отправил по электронной почте.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180823L)),
         WordEntity(
             id = 180822, setId = 1808, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "bureau_correspond", transliteration = "маанэ ришми",
@@ -270,8 +256,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Подписанное письмо от госоргана, передающее письменное решение по обращению.",
             example = "קִבַּלְתִּי מַעֲנֵה רִשְׁמִי כַּעֲבֹר שְׁלוֹשָׁה שָׁבוּעוֹת בִּלְבַד.",
             exampleNative = "מַעֲנֵה רִשְׁמִי я получил всего через три недели.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180824L, 180825L)),
         WordEntity(
             id = 180823, setId = 1808, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "bureau_correspond", transliteration = "асмахта",
@@ -280,7 +265,6 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Уникальное сочетание букв и цифр, которое опознаёт официальное действие в системе.",
             example = "מָסְרוּ לִי אַסְמַכְתָּא לְעִקּוּב אַחֲרֵי הַטִּפּוּל בַּפְּנִיָּה.",
             exampleNative = "Мне выдали אַסְמַכְתָּא для отслеживания работы по обращению.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180824, setId = 1808, languagePair = "he-ru", rarity = "RARE",
@@ -290,8 +274,7 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Перевод иностранного документа на другой язык — заверенный квалифицированным специалистом.",
             example = "צָרִיךְ תַּרְגּוּם נוֹטָרְיוֹנִי שֶׁל הַתְּעוּדָה לְהַגָּשָׁה לַמּוֹסָד.",
             exampleNative = "Для подачи в учреждение нужен תַּרְגּוּם נוֹטָרְיוֹנִי справки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180822L, 180825L)),
         WordEntity(
             id = 180825, setId = 1808, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "bureau_correspond", transliteration = "hэетек нээман ламакор",
@@ -300,7 +283,6 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Копия документа со штампом и подписью, удостоверяющими полное соответствие оригиналу.",
             example = "בַּתִּיק הִכְנַסְתִּי הַעְתֵּק נֶאֱמָן לַמָּקוֹר שֶׁל הַחוֹזֶה.",
             exampleNative = "В дело я вложил הַעְתֵּק נֶאֱמָן לַמָּקוֹר договора.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180822L, 180824L)),
     )
 }

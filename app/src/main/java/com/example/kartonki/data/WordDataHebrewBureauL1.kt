@@ -48,8 +48,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Короткая бумага от учреждения, сообщающая человеку решение или сведения.",
             example = "קִבַּלְתִּי הוֹדָעָה עַל פְּגִישָׁה בַּמִּשְׂרָד.",
             exampleNative = "Я получил הוֹדָעָה о встрече в ведомстве.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180702L, 180703L, 180704L, 180705L, 180713L, 180721L, 180722L)),
         WordEntity(
             id = 180702, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "bureau_basic_docs", transliteration = "тмуна",
@@ -58,8 +57,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Изображение лица, которое наклеивают на бланк для опознания владельца.",
             example = "צָרִיךְ תְּמוּנָה חֲדָשָׁה לְבַקָּשַׁת הַדַּרְכּוֹן.",
             exampleNative = "Нужна свежая תְּמוּנָה для заявления на паспорт.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180701L, 180703L, 180704L, 180705L)),
         WordEntity(
             id = 180703, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "bureau_basic_docs", transliteration = "цилум",
@@ -68,8 +66,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Точная копия оригинального листа, сделанная аппаратом и выглядящая как оригинал.",
             example = "צָרְפוּ צִילּוּם בָּהִיר שֶׁל הַדַּרְכּוֹן.",
             exampleNative = "Приложите чёткий צִילּוּם паспорта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180701L, 180702L, 180704L, 180705L)),
         WordEntity(
             id = 180704, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_basic_docs", transliteration = "меатафа",
@@ -110,8 +107,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Высокий стол у входа в учреждение, за которым работает служащий.",
             example = "נִגַּשְׁתִּי לַדַּלְפֵּק לְמַסֹּר אֶת הַמְּעַטָּפָה.",
             exampleNative = "Я подошёл к דַּלְפֵּק, чтобы передать конверт.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180706L, 180708L, 180709L, 180710L)),
         WordEntity(
             id = 180708, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_basic_office", transliteration = "шелет",
@@ -152,8 +148,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Цепочка людей, которые ждут друг за другом обслуживания у служащего.",
             example = "עָמַדְתִּי בַּתּוֹר שָׁעָה שְׁלֵמָה.",
             exampleNative = "Я простоял в תּוֹר целый час.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180712L, 180713L, 180714L, 180715L)),
         WordEntity(
             id = 180712, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "bureau_basic_queue", transliteration = "миспар",
@@ -162,8 +157,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Цифра, которую печатает аппарат у входа, чтобы определить твою очерёдность.",
             example = "לָקַחְתִּי מִסְפָּר וְחִכִּיתִי שֶׁיִּקְרְאוּ לִי.",
             exampleNative = "Я взял מִסְפָּר и ждал, пока меня вызовут.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180711L, 180713L, 180714L, 180715L)),
         WordEntity(
             id = 180713, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_basic_queue", transliteration = "hазмана",
@@ -172,8 +166,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Дата и время, заранее назначенные для приёма у государственного служащего.",
             example = "יֵשׁ לִי הַזְמָנָה לְיוֹם רִאשׁוֹן בַּבֹּקֶר.",
             exampleNative = "У меня הַזְמָנָה на воскресенье утром.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180701L, 180711L, 180712L, 180714L, 180715L)),
         WordEntity(
             id = 180714, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_basic_queue", transliteration = "hамтана",
@@ -182,8 +175,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Время, которое проводят сидя в тишине до вызова к служащему.",
             example = "הַהַמְתָּנָה לַתּוֹר הָיְתָה אֲרֻכָּה מְאֹד.",
             exampleNative = "הַמְתָּנָה в очереди была очень долгой.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180712L, 180713L, 180715L)),
         WordEntity(
             id = 180715, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_basic_queue", transliteration = "ришум",
@@ -192,8 +184,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Внесение имени и данных человека в официальный список в системе ведомства.",
             example = "הָרִשּׁוּם לְקֻרְסֵי עִבְרִית נִסְגָּר מָחָר.",
             exampleNative = "רִשּׁוּם на курсы иврита закрывается завтра.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180711L, 180712L, 180713L, 180714L)),
 
         // ── bureau_basic_actions (5) ──────────────────────────────────────
         WordEntity(
@@ -204,8 +195,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Вписывать данные в пустые графы готового бланка от руки или на компьютере.",
             example = "צָרִיךְ לְמַלֵּא אֶת כָּל הַשּׁוּרוֹת בִּכְתָב בָּרוּר.",
             exampleNative = "Нужно לְמַלֵּא все строки разборчивым почерком.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180717L, 180718L, 180719L, 180720L)),
         WordEntity(
             id = 180717, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "bureau_basic_actions", transliteration = "лахтом",
@@ -214,8 +204,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Писать своё имя от руки в конце бумаги, чтобы официально её утвердить.",
             example = "אַל תִּשְׁכַּח לַחְתֹּם בְּסוֹף הַטֹּפֶס.",
             exampleNative = "Не забудь לַחְתֹּם в конце бланка.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180716L, 180718L, 180719L, 180720L)),
         WordEntity(
             id = 180718, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "bureau_basic_actions", transliteration = "леhагиш",
@@ -244,8 +233,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Расспросить и получить точные сведения о состоянии дела или об услуге.",
             example = "אֲנִי רוֹצֶה לְבָרֵר מָה קוֹרֶה עִם הַבַּקָּשָׁה.",
             exampleNative = "Я хочу לְבָרֵר, что происходит с заявлением.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180716L, 180717L, 180718L, 180719L)),
 
         // ── bureau_basic_response (5) ─────────────────────────────────────
         WordEntity(
@@ -276,8 +264,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Сообщение учреждения о том, что просьба или заявление гражданина не одобрены.",
             example = "קִבַּלְנוּ סֵרוּב לְבַקָּשַׁת הָאַשְׁרָה.",
             exampleNative = "Мы получили סֵרוּב в просьбе о визе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180721L, 180722L, 180724L, 180725L)),
         WordEntity(
             id = 180724, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_basic_response", transliteration = "тлуна",
@@ -286,8 +273,7 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Письменное обращение в инстанцию о плохом обслуживании или несправедливом решении.",
             example = "הִגַּשְׁתִּי תְּלוּנָה עַל הַפָּקִיד הַגַּס.",
             exampleNative = "Я подал תְּלוּנָה на грубого служащего.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(180721L, 180722L, 180723L, 180725L)),
         WordEntity(
             id = 180725, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "bureau_basic_response", transliteration = "кабала",

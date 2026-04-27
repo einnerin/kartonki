@@ -69,8 +69,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Тихое удовольствие от того, что у недруга всё пошло не так.",
             example = "He felt a flash of schadenfreude when his rival lost the race.",
             exampleNative = "Он ощутил вспышку schadenfreude, когда соперник проиграл забег.",
-            pos = "noun", semanticGroup = "emotions_loanwords",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_loanwords", fillInBlankExclusions = listOf(36402L, 36403L, 36404L, 36405L)),
 
         WordEntity(id = 36402, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "weltschmerz", transliteration = "[ˈvɛltʃmɛrts]",
@@ -79,8 +78,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Глубокая печаль от того, что мир далёк от того, каким мог бы быть.",
             example = "Romantic poets often wrote of a quiet weltschmerz behind their verses.",
             exampleNative = "Романтики часто прятали за стихами тихий weltschmerz о мире.",
-            pos = "noun", semanticGroup = "emotions_loanwords",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_loanwords", fillInBlankExclusions = listOf(36401L, 36403L, 36404L, 36405L, 36407L, 36410L, 36420L)),
 
         WordEntity(id = 36403, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "saudade", transliteration = "[saʊˈdɑːdə]",
@@ -89,8 +87,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Горько-сладкая тоска по чему-то ушедшему — может быть, навсегда.",
             example = "Fado music carries a deep saudade for old Lisbon and lost love.",
             exampleNative = "В музыке фаду слышится глубокое saudade по старому Лиссабону.",
-            pos = "noun", semanticGroup = "emotions_loanwords",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_loanwords", fillInBlankExclusions = listOf(36401L, 36402L, 36404L, 36405L)),
 
         WordEntity(id = 36404, setId = 364, languagePair = "en-ru", rarity = "EPIC",
             original = "hygge", transliteration = "[ˈhuːɡə]",
@@ -99,8 +96,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Уютное довольство от свечей, тёплых напитков и тихих вечеров дома.",
             example = "On winter nights they wrap in blankets and chase a feeling of hygge.",
             exampleNative = "Зимними вечерами они кутаются в пледы и ловят hygge.",
-            pos = "noun", semanticGroup = "emotions_loanwords",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_loanwords", fillInBlankExclusions = listOf(36401L, 36402L, 36403L, 36405L)),
 
         WordEntity(id = 36405, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "sonder", transliteration = "[ˈsɒndər]",
@@ -109,8 +105,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Головокружительное озарение: у каждого прохожего своя такая же жизнь.",
             example = "Crossing the busy square, she felt a wave of sonder for every stranger.",
             exampleNative = "Пересекая площадь, она ощутила волну sonder к каждому прохожему.",
-            pos = "noun", semanticGroup = "emotions_loanwords",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_loanwords", fillInBlankExclusions = listOf(36401L, 36402L, 36403L, 36404L)),
 
         // ── emotions_existential (5) ──────────────────────────────────────
 
@@ -121,8 +116,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Глубокий страх перед свободой, смыслом и собственным выбором.",
             example = "Teenage angst poured out of every page of his early diary.",
             exampleNative = "Подростковая angst сочилась с каждой страницы его раннего дневника.",
-            pos = "noun", semanticGroup = "emotions_existential",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_existential", fillInBlankExclusions = listOf(36407L, 36408L, 36409L, 36410L)),
 
         WordEntity(id = 36407, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "ennui", transliteration = "[ɒnˈwiː]",
@@ -131,8 +125,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Тяжёлое отупение духа, когда ничто в мире не цепляет интерес.",
             example = "By midsummer the long holidays had settled into a quiet ennui.",
             exampleNative = "К середине лета долгие каникулы осели тихим ennui.",
-            pos = "noun", semanticGroup = "emotions_existential",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_existential", fillInBlankExclusions = listOf(36402L, 36406L, 36408L, 36409L, 36410L)),
 
         WordEntity(id = 36408, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "anomie", transliteration = "[ˈænəmi]",
@@ -141,8 +134,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Внутренний дрейф, когда старые правила и общие смыслы больше не ведут.",
             example = "After the factory closed, a creeping anomie spread through the small town.",
             exampleNative = "После закрытия завода городок охватило ползучее anomie.",
-            pos = "noun", semanticGroup = "emotions_existential",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_existential", fillInBlankExclusions = listOf(36406L, 36407L, 36409L, 36410L)),
 
         WordEntity(id = 36409, setId = 364, languagePair = "en-ru", rarity = "EPIC",
             original = "alienation", transliteration = "[ˌeɪliəˈneɪʃən]",
@@ -151,8 +143,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Холодное чувство чужака — и в собственной жизни, и среди близких.",
             example = "Years of remote work brought a slow alienation he could not name.",
             exampleNative = "Годы удалёнки принесли медленное alienation, которое он не умел назвать.",
-            pos = "noun", semanticGroup = "emotions_existential",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_existential", fillInBlankExclusions = listOf(36406L, 36407L, 36408L, 36410L)),
 
         WordEntity(id = 36410, setId = 364, languagePair = "en-ru", rarity = "EPIC",
             original = "malaise", transliteration = "[məˈleɪz]",
@@ -161,8 +152,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Смутное недомогание — тело и душа не в ладу, причины не назовёшь.",
             example = "A grey malaise hung over the office in the weeks before the layoffs.",
             exampleNative = "Серое malaise висело над офисом недели до сокращений.",
-            pos = "noun", semanticGroup = "emotions_existential",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_existential", fillInBlankExclusions = listOf(36406L, 36407L, 36408L, 36409L)),
 
         // ── emotions_literary (5) ─────────────────────────────────────────
 
@@ -173,8 +163,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Захватывающий трепет такой силы, что граничит со страхом — буря, бездна.",
             example = "Standing at the cliff's edge, she tasted the sublime in every gust.",
             exampleNative = "У края обрыва она пробовала sublime в каждом порыве ветра.",
-            pos = "noun", semanticGroup = "emotions_literary",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_literary", fillInBlankExclusions = listOf(36412L, 36413L, 36414L, 36415L)),
 
         WordEntity(id = 36412, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "pathos", transliteration = "[ˈpeɪθɒs]",
@@ -183,8 +172,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Качество в искусстве, что трогает сердце и вызывает слёзы жалости.",
             example = "The film's final scene carried a pathos no review could quite capture.",
             exampleNative = "В финале фильма звучал такой pathos, что рецензии не могли его передать.",
-            pos = "noun", semanticGroup = "emotions_literary",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_literary", fillInBlankExclusions = listOf(36411L, 36413L, 36414L, 36415L)),
 
         WordEntity(id = 36413, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "bathos", transliteration = "[ˈbeɪθɒs]",
@@ -193,8 +181,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Резкое падение от высокого чувства к нелепому — жалость сменяет смешок.",
             example = "A solemn eulogy slid into bathos when his phone began ringing loudly.",
             exampleNative = "Скорбная речь съехала в bathos, когда зазвонил его телефон.",
-            pos = "noun", semanticGroup = "emotions_literary",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_literary", fillInBlankExclusions = listOf(36411L, 36412L, 36414L, 36415L)),
 
         WordEntity(id = 36414, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "catharsis", transliteration = "[kəˈθɑːrsɪs]",
@@ -203,8 +190,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Очищающее высвобождение запертого чувства — через искусство или слёзы.",
             example = "Writing the long letter brought her a quiet catharsis at last.",
             exampleNative = "Длинное письмо наконец принесло ей тихий catharsis.",
-            pos = "noun", semanticGroup = "emotions_literary",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_literary", fillInBlankExclusions = listOf(36411L, 36412L, 36413L, 36415L)),
 
         WordEntity(id = 36415, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "hubris", transliteration = "[ˈhjuːbrɪs]",
@@ -213,8 +199,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Слепящая гордость, что толкает героя за разумные границы — к падению.",
             example = "His hubris drove him to ignore every warning from his closest advisors.",
             exampleNative = "Его hubris заставила его пропустить мимо ушей все предостережения.",
-            pos = "noun", semanticGroup = "emotions_literary",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_literary", fillInBlankExclusions = listOf(36411L, 36412L, 36413L, 36414L)),
 
         // ── emotions_philosophical (5) ────────────────────────────────────
 
@@ -225,8 +210,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Тревожная странность в знакомом — глаза куклы, пустая улица под фонарём.",
             example = "The deserted village had an uncanny stillness that froze every guest.",
             exampleNative = "В покинутой деревне стояла uncanny тишина, морозящая гостей.",
-            pos = "adjective", semanticGroup = "emotions_philosophical",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_philosophical", fillInBlankExclusions = listOf(36419L)),
 
         WordEntity(id = 36417, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "numinous", transliteration = "[ˈnuːmɪnəs]",
@@ -235,8 +219,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Дрожащий трепет перед тем, что кажется божественным, — безбрежным, святым.",
             example = "Ancient cathedrals can stir a numinous hush even in the secular visitor.",
             exampleNative = "Древние соборы будят numinous тишину даже у светского гостя.",
-            pos = "adjective", semanticGroup = "emotions_philosophical",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_philosophical"),
 
         WordEntity(id = 36418, setId = 364, languagePair = "en-ru", rarity = "EPIC",
             original = "transcendence", transliteration = "[trænˈsɛndəns]",
@@ -245,8 +228,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Выход за пределы обыденного — в духовное, безграничное, вечное.",
             example = "Long meditation can bring a quiet transcendence the words cannot hold.",
             exampleNative = "Долгая медитация способна дать тихое transcendence, что не вмещают слова.",
-            pos = "noun", semanticGroup = "emotions_philosophical",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_philosophical", fillInBlankExclusions = listOf(36420L)),
 
         WordEntity(id = 36419, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "ineffable", transliteration = "[ɪnˈɛfəbəl]",
@@ -255,8 +237,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Слишком огромное, святое или странное, чтобы вместиться в любые слова.",
             example = "She stared at the dawn and felt an ineffable peace settle inside her.",
             exampleNative = "Она глядела на рассвет, и ineffable покой оседал внутри.",
-            pos = "adjective", semanticGroup = "emotions_philosophical",
-            isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_philosophical", fillInBlankExclusions = listOf(36416L)),
 
         WordEntity(id = 36420, setId = 364, languagePair = "en-ru", rarity = "EPIC",
             original = "apophenia", transliteration = "[ˌæpəˈfiːniə]",
@@ -265,8 +246,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Жутковатая тяга видеть смысл в случайностях — лица в облаках, знаки судьбы.",
             example = "Late-night reading of conspiracies fed his apophenia until every coincidence glowed.",
             exampleNative = "Чтение конспирологии ночами питало его apophenia до свечения каждого совпадения.",
-            pos = "noun", semanticGroup = "emotions_philosophical",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_philosophical", fillInBlankExclusions = listOf(36418L)),
 
         // ── emotions_dark_advanced (5) ────────────────────────────────────
 
@@ -277,8 +257,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Замирание чувств, когда слишком много ужаса валится за раз — не вынести.",
             example = "Aid workers describe a psychic numbing after their fifth war zone in a row.",
             exampleNative = "Гуманитарщики описывают psychic numbing после пятой подряд горячей точки.",
-            pos = "noun", semanticGroup = "emotions_dark_advanced",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_dark_advanced", fillInBlankExclusions = listOf(36422L, 36423L, 36425L)),
 
         WordEntity(id = 36422, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "derealization", transliteration = "[diːˌriːəlaɪˈzeɪʃən]",
@@ -287,8 +266,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Странное чувство, что мир стал ненастоящим — будто декорация или сон.",
             example = "After the accident she had bouts of derealization for nearly three months.",
             exampleNative = "После аварии у неё были приступы derealization почти три месяца.",
-            pos = "noun", semanticGroup = "emotions_dark_advanced",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_dark_advanced", fillInBlankExclusions = listOf(36421L, 36423L, 36424L, 36425L)),
 
         WordEntity(id = 36423, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "dissociation", transliteration = "[dɪˌsoʊsiˈeɪʃən]",
@@ -297,8 +275,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Парящее отстранение от собственного тела и чувств — будто наблюдаешь со стороны.",
             example = "The therapist explained that dissociation often follows severe early trauma.",
             exampleNative = "Терапевт объяснил, что dissociation часто следует за ранней тяжёлой травмой.",
-            pos = "noun", semanticGroup = "emotions_dark_advanced",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_dark_advanced", fillInBlankExclusions = listOf(36421L, 36422L, 36424L, 36425L)),
 
         WordEntity(id = 36424, setId = 364, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "anhedonia", transliteration = "[ˌænhiːˈdoʊniə]",
@@ -307,8 +284,7 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Серая неспособность ничему радоваться — еда, музыка, друзья тускнеют.",
             example = "Deep depression often brings an anhedonia that loved hobbies cannot break.",
             exampleNative = "Тяжёлая депрессия часто приносит anhedonia, что не лечится прежним хобби.",
-            pos = "noun", semanticGroup = "emotions_dark_advanced",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_dark_advanced"),
 
         WordEntity(id = 36425, setId = 364, languagePair = "en-ru", rarity = "EPIC",
             original = "languishing", transliteration = "[ˈlæŋɡwɪʃɪŋ]",
@@ -317,7 +293,6 @@ object WordDataEnglishEmotionsL5 {
             definitionNative = "Плоское серединное состояние — не в депрессии, не цветёшь, просто пусто.",
             example = "Through the long pandemic many described a chronic languishing rather than grief.",
             exampleNative = "За долгую пандемию многие описывали хроническое languishing, не горе.",
-            pos = "noun", semanticGroup = "emotions_dark_advanced",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_dark_advanced", fillInBlankExclusions = listOf(36421L, 36422L, 36423L, 36424L)),
     )
 }

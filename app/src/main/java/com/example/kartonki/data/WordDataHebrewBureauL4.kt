@@ -52,8 +52,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Ведомство, отвечающее за удостоверения личности, гражданство и регистрацию жителей.",
             example = "מִשְׂרָד הַפְּנִים אִשֵּׁר לִי לְהַחְלִיף שֵׁם מִשְׁפָּחָה.",
             exampleNative = "מִשְׂרָד הַפְּנִים одобрил мне смену фамилии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181002L, 181003L, 181004L, 181005L)),
         WordEntity(
             id = 181002, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_ministries", transliteration = "рашут hа-ухлусин",
@@ -62,8 +61,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Исполнительный орган, занимающийся визами, паспортами и въездом иностранцев.",
             example = "רָשׁוּת הָאֻכְלוּסִין קוֹבַעַת תּוֹר רַק לְעוֹד חֳדָשַׁיִם.",
             exampleNative = "רָשׁוּת הָאֻכְלוּסִין даёт запись только через два месяца.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181001L, 181003L, 181004L, 181005L)),
         WordEntity(
             id = 181003, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_ministries", transliteration = "мосад ле-битуах леуми",
@@ -72,8 +70,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Орган, передающий пенсии, пособия по инвалидности, безработице и материнству.",
             example = "מוֹסַד לְבִיטּוּחַ לְאוּמִי הִכִּיר בִּפְגִיעָה שֶׁלִּי בָּעֲבוֹדָה.",
             exampleNative = "מוֹסַד לְבִיטּוּחַ לְאוּמִי признал мою травму на работе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181001L, 181002L, 181004L, 181005L)),
         WordEntity(
             id = 181004, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_ministries", transliteration = "рашут hа-мисим",
@@ -82,8 +79,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Государственное ведомство, собирающее доходы с граждан и предприятий по законам страны.",
             example = "רָשׁוּת הַמִּסִּים שָׁלְחָה דְּרִישַׁת חוֹב עַל שָׁנָה שֶׁעָבְרָה.",
             exampleNative = "רָשׁוּת הַמִּסִּים прислало требование о долге за прошлый год.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181001L, 181002L, 181003L, 181005L)),
         WordEntity(
             id = 181005, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_ministries", transliteration = "мисрад hа-хуц",
@@ -92,8 +88,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Ведомство, занимающееся связями с другими странами, посольствами и дипломатией.",
             example = "מִשְׂרָד הַחוּץ פִּרְסֵם אַזְהָרַת מַסָּע לְכַמָּה מְדִינוֹת בָּאֵיזוֹר.",
             exampleNative = "מִשְׂרָד הַחוּץ выпустил предупреждение о поездках в несколько стран региона.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181001L, 181002L, 181003L, 181004L)),
 
         // ── bureau_milueim (3 EPIC + 2 LEGENDARY) — резервная служба ──
         WordEntity(
@@ -104,8 +99,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Короткие сборы демобилизованных военных, возвращающихся в армию во время войны или учений.",
             example = "שֵׁרוּת מִלּוּאִים הַשָּׁנָה אָרַךְ שִׁשִּׁים יוֹם רְצוּפִים.",
             exampleNative = "שֵׁרוּת מִלּוּאִים в этом году длилась шестьдесят дней подряд.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181007L, 181008L, 181009L, 181010L)),
         WordEntity(
             id = 181007, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_milueim", transliteration = "цав милуим",
@@ -114,8 +108,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Официальное письмо армии, обязывающее явиться на базу к указанной дате по закону.",
             example = "קִבַּלְתִּי צַו מִלּוּאִים שָׁבוּעַ לִפְנֵי הַחַג.",
             exampleNative = "Я получил צַו מִלּוּאִים за неделю до праздника.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181006L, 181008L, 181009L, 181010L, 181017L)),
         WordEntity(
             id = 181008, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_milueim", transliteration = "бакаша лидхия",
@@ -124,8 +117,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Официальное обращение перенести срок явки или заседания по обоснованной личной причине.",
             example = "הִגַּשְׁנוּ בָּקָשָׁה לִדְחִיָּה כִּי אִשְׁתִּי בָּחֹדֶשׁ הַתְּשִׁיעִי.",
             exampleNative = "Мы подали בָּקָשָׁה לִדְחִיָּה — жена на девятом месяце.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181006L, 181007L, 181009L, 181010L)),
         WordEntity(
             id = 181009, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_milueim", transliteration = "ваада рефуит",
@@ -134,8 +126,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Заседание врачей-специалистов, решающих о пригодности к армии или о проценте инвалидности.",
             example = "וַעֲדָה רְפוּאִית קָבְעָה לוֹ פְּטוֹר זְמַנִּי בִּגְלַל גַּב.",
             exampleNative = "וַעֲדָה רְפוּאִית назначила ему временное освобождение из-за спины.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181006L, 181007L, 181008L, 181010L)),
         WordEntity(
             id = 181010, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_milueim", transliteration = "птор милуим",
@@ -144,8 +135,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Официальное подтверждение, снимающее с человека необходимость явиться в армию по призыву.",
             example = "אַחֲרֵי הַנִּתּוּחַ הוּא קִבֵּל פְּטוֹר מִלּוּאִים קָבוּעַ.",
             exampleNative = "После операции он получил постоянное פְּטוֹר מִלּוּאִים.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181006L, 181007L, 181008L, 181009L)),
 
         // ── bureau_legal_docs (2 EPIC + 3 LEGENDARY) — нотариальные документы ──
         WordEntity(
@@ -156,8 +146,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Официальная процедура, при которой юрист подтверждает, что человек поставил автограф лично перед ним.",
             example = "צָרִיךְ אִמּוּת חֲתִימָה כְּדֵי לִשְׁלֹחַ אֶת הַחוֹזֶה לַקּוֹנְסוּלִיָּה.",
             exampleNative = "Нужно אִמּוּת חֲתִימָה, чтобы отправить договор в консульство.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181012L, 181013L, 181014L, 181015L)),
         WordEntity(
             id = 181012, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_legal_docs", transliteration = "ийпуй коах",
@@ -176,8 +165,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Международный штамп, делающий официальную бумагу годной для использования в чужой стране.",
             example = "בְּלִי אֲפּוֹסְטִיל הַתְּעוּדָה לֹא תִּתְקַבֵּל בְּגֶרְמַנְיָה.",
             exampleNative = "Без אֲפּוֹסְטִיל справка не будет принята в Германии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181011L)),
         WordEntity(
             id = 181014, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_legal_docs", transliteration = "тацhир мушба",
@@ -186,8 +174,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Письменный документ перед юристом, имеющий полную силу свидетельства в суде.",
             example = "הִיא נָתְנָה תַּצְהִיר מֻשְׁבַּע עַל הַתְּאוּנָה שֶׁרָאֲתָה.",
             exampleNative = "Она дала תַּצְהִיר מֻשְׁבַּע об аварии, которую видела.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181011L, 181012L, 181015L)),
         WordEntity(
             id = 181015, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_legal_docs", transliteration = "хатима электронит",
@@ -196,8 +183,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Зашифрованный цифровой знак, опознающий человека в онлайн-документах без рукописи.",
             example = "חֲתִימָה אִלֶקְטְרוֹנִית מֵהַטֵּלֵפוֹן מַסְפִּיקָה לְכָל טֹפֶס בַּמַּעֲרֶכֶת.",
             exampleNative = "חֲתִימָה אִלֶקְטְרוֹנִית с телефона годится для любой формы в системе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181011L, 181012L, 181014L)),
 
         // ── bureau_collections (2 EPIC + 3 LEGENDARY) — взыскание и долги ──
         WordEntity(
@@ -208,8 +194,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Сумма, которую следует вернуть другому лицу и которая ещё не выплачена полностью.",
             example = "הוּא צָבַר חוֹב כַּסְפִּי גָּדוֹל אַחֲרֵי שֶׁסָּגַר אֶת הָעֵסֶק.",
             exampleNative = "Он накопил большой חוֹב כַּסְפִּי после закрытия бизнеса.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181017L, 181018L, 181020L)),
         WordEntity(
             id = 181017, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_collections", transliteration = "цав ташлум",
@@ -218,8 +203,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Судебное распоряжение, обязывающее человека перевести сумму денег в короткий определённый срок.",
             example = "צַו תַּשְׁלוּם הִגִּיעַ בַּדֹּאַר רָשׁוּם בַּשָּׁבוּעַ שֶׁעָבַר.",
             exampleNative = "צַו תַּשְׁלוּם пришёл заказным письмом на прошлой неделе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181007L, 181016L, 181018L, 181020L)),
         WordEntity(
             id = 181018, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_collections", transliteration = "hоцаа ла-поаль",
@@ -228,8 +212,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Государственная служба, принудительно взыскивающая судебные решения по денежным делам.",
             example = "הוֹצָאָה לַפֹּעַל פָּתְחָה לִי תִּיק חָדָשׁ בְּתֵל אָבִיב.",
             exampleNative = "הוֹצָאָה לַפֹּעַל открыла мне новое дело в Тель-Авиве.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181016L, 181017L, 181020L)),
         WordEntity(
             id = 181019, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "bureau_collections", transliteration = "икуль",
@@ -238,7 +221,6 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Юридическое действие, замораживающее собственность или банковский счёт до улаживания требуемой суммы.",
             example = "הַבַּנְק עָשָׂה עִקּוּל עַל הַמַּשְׂכֹּרֶת שֶׁלָּהּ בְּצַו בֵּית מִשְׁפָּט.",
             exampleNative = "Банк наложил עִקּוּל на её зарплату по решению суда.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181020, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -248,8 +230,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Официальный договор между должником и держателями долга о новом графике выплат.",
             example = "אַחֲרֵי מַשָּׂא וּמַתָּן אָרֹךְ נֶחְתַּם הֶסְדֵּר נוֹשִׁים בִּפְנֵי בֵּית הַמִּשְׁפָּט.",
             exampleNative = "После долгих переговоров перед судом подписали соглашение с кредиторами.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181016L, 181017L, 181018L)),
 
         // ── bureau_status (1 EPIC + 4 LEGENDARY) — гражданский статус ──
         WordEntity(
@@ -260,8 +241,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Официальное действие, при котором государство вносит новую пару в базу жителей после свадьбы.",
             example = "רֵישׁוּם נִשּׂוּאִין נַעֲשָׂה בַּמִּשְׂרָד שָׁבוּעַ אַחֲרֵי הַטֶּקֶס.",
             exampleNative = "רֵישׁוּם נִשּׂוּאִין был сделан в ведомстве через неделю после церемонии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181023L, 181024L, 181025L)),
         WordEntity(
             id = 181022, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "bureau_status", transliteration = "hитъазрехут",
@@ -270,7 +250,6 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Процесс, при котором иностранец становится полноправным жителем страны по своему заявлению.",
             example = "הִתְאַזְרְחוּת אוֹרֶכֶת בָּרֶגַע חָמֵשׁ שָׁנִים שֶׁל בְּדִיקוֹת.",
             exampleNative = "הִתְאַזְרְחוּת сейчас занимает пять лет проверок.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181023, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -280,8 +259,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Юридическое положение, дающее право находиться в стране бессрочно с правами, но без паспорта.",
             example = "תּוֹשָׁבוּת קֶבַע מַתִּירָה לוֹ לִחְיוֹת בָּאָרֶץ עֶשְׂרִים שָׁנָה.",
             exampleNative = "תּוֹשָׁבוּת קֶבַע позволяет ему жить в стране уже двадцать лет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181021L, 181024L, 181025L)),
         WordEntity(
             id = 181024, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_status", transliteration = "псак дин",
@@ -290,8 +268,7 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Письменное окончательное заключение судьи, закрывающее дело и определяющее его исход.",
             example = "פִּסַק דִּין נִתַּן רַק חֳדָשַׁיִם אַחֲרֵי הַדִּיּוּן הָאַחֲרוֹן.",
             exampleNative = "פִּסַק דִּין был вынесен только через два месяца после последнего слушания.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181021L, 181023L, 181025L)),
         WordEntity(
             id = 181025, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_status", transliteration = "цав hасмаха",
@@ -300,7 +277,6 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Официальное распоряжение, дающее лицу или органу право действовать от имени государства в определённой сфере.",
             example = "צַו הַסְמָכָה חָדָשׁ אִפְשֵׁר לוֹ לַחֲתֹם בִּשְׁמוֹ שֶׁל הַשַּׂר.",
             exampleNative = "Новый צַו הַסְמָכָה позволил ему подписывать от имени министра.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181021L, 181023L, 181024L)),
     )
 }

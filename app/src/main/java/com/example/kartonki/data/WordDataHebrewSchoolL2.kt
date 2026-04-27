@@ -47,8 +47,7 @@ object WordDataHebrewSchoolL2 {
             example = "אנחנו רושמים את הבן שלנו ל גַּן יְלָדִים בשכונה",
             exampleNative = "Мы записываем сына в детский сад в нашем районе.",
             pos = "noun",
-            semanticGroup = "school_kindergarten",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_kindergarten", fillInBlankExclusions = listOf(181302L, 181303L, 181304L, 181305L, 181306L)),
 
         WordEntity(
             id = 181302, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -60,8 +59,7 @@ object WordDataHebrewSchoolL2 {
             example = "הבת שלי עוברת השנה ל גַּן חוֹבָה",
             exampleNative = "Моя дочь в этом году идёт в обязательную подготовительную группу.",
             pos = "noun",
-            semanticGroup = "school_kindergarten",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_kindergarten", fillInBlankExclusions = listOf(181301L, 181303L, 181304L, 181305L)),
 
         WordEntity(
             id = 181303, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -73,8 +71,7 @@ object WordDataHebrewSchoolL2 {
             example = "ה גַּנֶּנֶת קוראת סיפור לילדים בבוקר",
             exampleNative = "Воспитательница читает детям книжку по утрам.",
             pos = "noun",
-            semanticGroup = "school_kindergarten",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_kindergarten", fillInBlankExclusions = listOf(181301L, 181302L, 181304L, 181305L, 181308L)),
 
         WordEntity(
             id = 181304, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -86,8 +83,7 @@ object WordDataHebrewSchoolL2 {
             example = "הפעוט שלנו הולך כל בוקר ל פָּעוֹטוֹן",
             exampleNative = "Наш малыш каждое утро идёт в ясли.",
             pos = "noun",
-            semanticGroup = "school_kindergarten",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_kindergarten", fillInBlankExclusions = listOf(181301L, 181302L, 181303L, 181305L, 181306L)),
 
         WordEntity(
             id = 181305, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -99,8 +95,7 @@ object WordDataHebrewSchoolL2 {
             example = "קיבלנו סבסוד עבור מַעוֹן יוֹם של הבת שלנו",
             exampleNative = "Нам дали скидку на ясли-сад для дочери.",
             pos = "noun",
-            semanticGroup = "school_kindergarten",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_kindergarten", fillInBlankExclusions = listOf(181301L, 181302L, 181303L, 181304L, 181306L)),
 
         // ── school_after_school (5) ─────────────────────────────────────────
 
@@ -114,8 +109,7 @@ object WordDataHebrewSchoolL2 {
             example = "הילד שלנו נשאר ב צַהֲרוֹן עד ארבע אחר הצהריים",
             exampleNative = "Наш ребёнок остаётся в продлёнке до четырёх часов.",
             pos = "noun",
-            semanticGroup = "school_after_school",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_after_school", fillInBlankExclusions = listOf(181307L, 181308L, 181309L, 181310L)),
 
         WordEntity(
             id = 181307, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -128,7 +122,7 @@ object WordDataHebrewSchoolL2 {
             exampleNative = "Он ходит на факультатив сверх базы по математике по вторникам.",
             pos = "noun",
             semanticGroup = "school_after_school",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(181306L, 181308L, 181309L, 181310L, 181316L, 181318L, 181319L, 181320L)),
 
         WordEntity(
             id = 181308, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -140,8 +134,7 @@ object WordDataHebrewSchoolL2 {
             example = "ה מַטְפֶלֶת אוספת את הילדים מהגן בארבע",
             exampleNative = "Няня забирает детей из сада в четыре часа.",
             pos = "noun",
-            semanticGroup = "school_after_school",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_after_school", fillInBlankExclusions = listOf(181303L, 181306L, 181307L, 181309L, 181310L)),
 
         WordEntity(
             id = 181309, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -153,8 +146,7 @@ object WordDataHebrewSchoolL2 {
             example = "השנה יש לכל הכיתה חוּג מְחֻיָּב של ספורט",
             exampleNative = "В этом году у всего класса обязательная секция по спорту.",
             pos = "noun",
-            semanticGroup = "school_after_school",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_after_school", fillInBlankExclusions = listOf(181306L, 181307L, 181308L, 181310L)),
 
         WordEntity(
             id = 181310, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -166,8 +158,7 @@ object WordDataHebrewSchoolL2 {
             example = "הכיתה יוצאת ל מָסַע סִיוּם בצפון בשבוע הבא",
             exampleNative = "Класс едет в выпускной поход на север на следующей неделе.",
             pos = "noun",
-            semanticGroup = "school_after_school",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_after_school", fillInBlankExclusions = listOf(181306L, 181307L, 181308L, 181309L)),
 
         // ── school_meetings (5) ─────────────────────────────────────────────
 
@@ -181,8 +172,7 @@ object WordDataHebrewSchoolL2 {
             example = "ה אֲסֵפַת הוֹרִים תתקיים ביום רביעי בערב",
             exampleNative = "Родительское собрание пройдёт в среду вечером.",
             pos = "noun",
-            semanticGroup = "school_meetings",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_meetings", fillInBlankExclusions = listOf(181312L, 181313L, 181314L, 181315L)),
 
         WordEntity(
             id = 181312, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -194,8 +184,7 @@ object WordDataHebrewSchoolL2 {
             example = "ה וַעַד הוֹרִים מארגן מסיבת סוף שנה לכיתה",
             exampleNative = "Родительский комитет организует праздник в конце года.",
             pos = "noun",
-            semanticGroup = "school_meetings",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_meetings", fillInBlankExclusions = listOf(181311L, 181313L, 181314L, 181315L)),
 
         WordEntity(
             id = 181313, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -207,8 +196,7 @@ object WordDataHebrewSchoolL2 {
             example = "קבעתי פְּגִישָׁה אִישִׁית עם המחנכת על הציונים",
             exampleNative = "Я записался на личную встречу с учителем — поговорить об оценках.",
             pos = "noun",
-            semanticGroup = "school_meetings",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_meetings", fillInBlankExclusions = listOf(181311L, 181312L, 181314L, 181315L)),
 
         WordEntity(
             id = 181314, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -220,8 +208,7 @@ object WordDataHebrewSchoolL2 {
             example = "המחנכת רשמה הערה ב מַחְבֶּרֶת תִּקְשׁוֹרֶת אתמול",
             exampleNative = "Учительница вчера оставила запись в дневнике связи с родителями.",
             pos = "noun",
-            semanticGroup = "school_meetings",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_meetings", fillInBlankExclusions = listOf(181311L, 181312L, 181313L, 181315L)),
 
         WordEntity(
             id = 181315, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -233,8 +220,7 @@ object WordDataHebrewSchoolL2 {
             example = "ה יוֹם הוֹרִים מתקיים פעם בסמסטר אחר הצהריים",
             exampleNative = "День открытых дверей в школе бывает раз в семестр после обеда.",
             pos = "noun",
-            semanticGroup = "school_meetings",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_meetings", fillInBlankExclusions = listOf(181311L, 181312L, 181313L, 181314L)),
 
         // ── school_activities (5) ───────────────────────────────────────────
 
@@ -248,8 +234,7 @@ object WordDataHebrewSchoolL2 {
             example = "הילדה שלי הולכת ל חוּג צִיּוּר פעמיים בשבוע",
             exampleNative = "Моя дочь ходит на кружок рисования два раза в неделю.",
             pos = "noun",
-            semanticGroup = "school_activities",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_activities", fillInBlankExclusions = listOf(181317L, 181318L, 181319L, 181320L)),
 
         WordEntity(
             id = 181317, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -261,8 +246,7 @@ object WordDataHebrewSchoolL2 {
             example = "הוא הצטרף ל מַקְהֵלָה של בית הספר השנה",
             exampleNative = "Он в этом году пришёл в хор школы.",
             pos = "noun",
-            semanticGroup = "school_activities",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_activities", fillInBlankExclusions = listOf(181316L, 181318L, 181319L, 181320L)),
 
         WordEntity(
             id = 181318, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -274,8 +258,7 @@ object WordDataHebrewSchoolL2 {
             example = "הבן שלי זכה בטורניר של חוּג שָׂחְמָט בשבוע שעבר",
             exampleNative = "Мой сын на прошлой неделе выиграл турнир шахматного кружка.",
             pos = "noun",
-            semanticGroup = "school_activities",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_activities", fillInBlankExclusions = listOf(181316L, 181317L, 181319L, 181320L)),
 
         WordEntity(
             id = 181319, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -287,8 +270,7 @@ object WordDataHebrewSchoolL2 {
             example = "אנחנו מסיעים אותו ל חוּג סְפּוֹרְט אחרי הלימודים",
             exampleNative = "Мы возим его на спортивную секцию после уроков.",
             pos = "noun",
-            semanticGroup = "school_activities",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_activities", fillInBlankExclusions = listOf(181316L, 181317L, 181318L, 181320L)),
 
         WordEntity(
             id = 181320, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -300,8 +282,7 @@ object WordDataHebrewSchoolL2 {
             example = "הוא בנה רובוט עם גלגלים ב חוּג רוֹבּוֹטִיקָה",
             exampleNative = "Он собрал робота на колёсах в кружке робототехники.",
             pos = "noun",
-            semanticGroup = "school_activities",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_activities", fillInBlankExclusions = listOf(181316L, 181317L, 181318L, 181319L)),
 
         // ── school_routine (5) ──────────────────────────────────────────────
 
@@ -315,8 +296,7 @@ object WordDataHebrewSchoolL2 {
             example = "המורה רושם בִּקּוּר אִישִׁי בתחילת כל שיעור",
             exampleNative = "Учитель отмечает посещаемость в начале каждого урока.",
             pos = "noun",
-            semanticGroup = "school_routine",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_routine", fillInBlankExclusions = listOf(181322L, 181323L, 181324L, 181325L)),
 
         WordEntity(
             id = 181322, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -328,8 +308,7 @@ object WordDataHebrewSchoolL2 {
             example = "בתעודה כתוב שה נוֹכְחוּת שלו בסדר גמור",
             exampleNative = "В табеле написано, что присутствие на уроках у него в порядке.",
             pos = "noun",
-            semanticGroup = "school_routine",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_routine", fillInBlankExclusions = listOf(181321L, 181323L, 181324L, 181325L)),
 
         WordEntity(
             id = 181323, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -341,8 +320,7 @@ object WordDataHebrewSchoolL2 {
             example = "המחנכת ביקשה הסבר על ה חִיסּוּר של אתמול",
             exampleNative = "Учительница попросила объяснение пропуска занятия за вчера.",
             pos = "noun",
-            semanticGroup = "school_routine",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_routine", fillInBlankExclusions = listOf(181321L, 181322L, 181324L, 181325L)),
 
         WordEntity(
             id = 181324, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -354,8 +332,7 @@ object WordDataHebrewSchoolL2 {
             example = "המורה כעסה על ה אִחוּר של חצי שעה הבוקר",
             exampleNative = "Учительница рассердилась за опоздание на полчаса утром.",
             pos = "noun",
-            semanticGroup = "school_routine",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_routine", fillInBlankExclusions = listOf(181321L, 181322L, 181323L, 181325L)),
 
         WordEntity(
             id = 181325, setId = 1813, languagePair = "he-ru", rarity = "RARE",
@@ -367,7 +344,6 @@ object WordDataHebrewSchoolL2 {
             example = "ב פֶּסֶק זְמַן הילדים אוכלים כריך ורצים בחצר",
             exampleNative = "В перерыв дети едят бутерброд и бегают по двору.",
             pos = "noun",
-            semanticGroup = "school_routine",
-            isFillInBlankSafe = false),
+            semanticGroup = "school_routine", fillInBlankExclusions = listOf(181321L, 181322L, 181323L, 181324L)),
     )
 }

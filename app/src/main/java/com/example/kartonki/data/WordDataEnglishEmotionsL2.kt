@@ -46,7 +46,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Чувство неудобства в общении — как пролить кофе на незнакомца.",
             example = "There was an awkward silence after his joke fell flat.",
             exampleNative = "После его неудачной шутки повисла awkward тишина.",
-            pos = "adjective", semanticGroup = "emotions_social", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_social", fillInBlankExclusions = listOf(36104L, 36105L, 36110L, 36111L, 36116L)),
 
         WordEntity(id = 36102, setId = 361, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "shy", transliteration = "[ʃaɪ]", translation = "застенчивый",
@@ -54,7 +54,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Тихий с новыми людьми — боится заговорить или выделиться.",
             example = "He felt shy when his teacher asked him to read aloud.",
             exampleNative = "Он чувствовал себя shy, когда учитель попросил его читать вслух.",
-            pos = "adjective", semanticGroup = "emotions_social", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_social", fillInBlankExclusions = listOf(36101L, 36104L, 36105L, 36116L, 36118L)),
 
         WordEntity(id = 36103, setId = 361, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "envy", transliteration = "[ˈɛnvi]", translation = "зависть",
@@ -62,7 +62,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Кислое чувство, когда у другого есть то, чего хочется тебе.",
             example = "She felt a bit of envy when her friend got the new job.",
             exampleNative = "Она ощутила лёгкую envy, когда подруга получила новую работу.",
-            pos = "noun", semanticGroup = "emotions_social", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_social", fillInBlankExclusions = listOf(36117L, 36120L, 36122L)),
 
         WordEntity(id = 36104, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "insecure", transliteration = "[ˌɪnsɪˈkjʊr]", translation = "неуверенный в себе",
@@ -70,7 +70,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Сомневающийся в себе — боится, что недостаточно хорош или умён.",
             example = "She felt insecure about her accent when speaking in meetings.",
             exampleNative = "Она чувствовала себя insecure из-за акцента на совещаниях.",
-            pos = "adjective", semanticGroup = "emotions_social", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_social", fillInBlankExclusions = listOf(36101L, 36102L, 36105L, 36116L, 36118L)),
 
         WordEntity(id = 36105, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "isolated", transliteration = "[ˈaɪsəleɪtɪd]", translation = "изолированный",
@@ -78,7 +78,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Отрезанный от других — рядом нет друзей, не с кем поделиться днём.",
             example = "After moving abroad he felt isolated in his small apartment.",
             exampleNative = "Переехав за границу, он чувствовал себя isolated в маленькой квартире.",
-            pos = "adjective", semanticGroup = "emotions_social", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_social", fillInBlankExclusions = listOf(36101L, 36102L, 36104L, 36116L, 36118L)),
 
         // ── emotions_gratitude (5) ────────────────────────────────────────
 
@@ -88,7 +88,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Радостный и тёплый внутри — кто-то помог или был добр к тебе.",
             example = "I am thankful for the warm meal after such a cold day.",
             exampleNative = "Я thankful за горячую еду после такого холодного дня.",
-            pos = "adjective", semanticGroup = "emotions_gratitude", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_gratitude", fillInBlankExclusions = listOf(36108L, 36110L)),
 
         WordEntity(id = 36107, setId = 361, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "kindness", transliteration = "[ˈkaɪndnəs]", translation = "доброта",
@@ -96,7 +96,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Тепло и помощь другим — мелочи, которые делают чей-то день лучше.",
             example = "Her kindness to the lost child touched everyone in the shop.",
             exampleNative = "Её kindness к потерявшемуся ребёнку тронула всех в магазине.",
-            pos = "noun", semanticGroup = "emotions_gratitude", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_gratitude", fillInBlankExclusions = listOf(36109L)),
 
         WordEntity(id = 36108, setId = 361, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "considerate", transliteration = "[kənˈsɪdərət]", translation = "внимательный к другим",
@@ -104,7 +104,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Думает о чувствах других, прежде чем сказать или сделать.",
             example = "It was considerate of him to bring soup when she was sick.",
             exampleNative = "Было considerate с его стороны принести суп, когда она болела.",
-            pos = "adjective", semanticGroup = "emotions_gratitude", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_gratitude", fillInBlankExclusions = listOf(36106L, 36110L)),
 
         WordEntity(id = 36109, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "generosity", transliteration = "[ˌʤɛnəˈrɑsəti]", translation = "щедрость",
@@ -112,7 +112,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Готовность отдавать — время, деньги, помощь — ничего не ожидая взамен.",
             example = "His generosity surprised the whole village after the flood.",
             exampleNative = "Его generosity поразила всю деревню после наводнения.",
-            pos = "noun", semanticGroup = "emotions_gratitude", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_gratitude", fillInBlankExclusions = listOf(36107L)),
 
         WordEntity(id = 36110, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "appreciative", transliteration = "[əˈpriʃətɪv]", translation = "признательный",
@@ -120,7 +120,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Показывает, что ценит сделанное — словами, улыбкой или запиской.",
             example = "The teacher was appreciative of the small gift from her students.",
             exampleNative = "Учительница была appreciative за маленький подарок от учеников.",
-            pos = "adjective", semanticGroup = "emotions_gratitude", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_gratitude", fillInBlankExclusions = listOf(36106L, 36108L)),
 
         // ── emotions_hope (5) ─────────────────────────────────────────────
 
@@ -130,7 +130,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Возбуждён и готов — едва может дождаться чего-то хорошего.",
             example = "The kids were eager to open their presents on the morning.",
             exampleNative = "Дети были eager поскорее открыть подарки утром.",
-            pos = "adjective", semanticGroup = "emotions_hope", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_hope"),
 
         WordEntity(id = 36112, setId = 361, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "wish", transliteration = "[wɪʃ]", translation = "желать",
@@ -138,7 +138,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Хотеть, чтобы что-то сбылось — даже если это кажется маловероятным.",
             example = "I wish my brother could visit us for the holidays this year.",
             exampleNative = "Я wish, чтобы брат мог приехать к нам на праздники в этом году.",
-            pos = "verb", semanticGroup = "emotions_hope", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_hope"),
 
         WordEntity(id = 36113, setId = 361, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "expectation", transliteration = "[ˌɛkspɛkˈteɪʃən]", translation = "ожидание",
@@ -146,7 +146,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Картинка в голове о том, как что-то сложится — работа, поездка, встреча.",
             example = "Her expectation of the new film was higher than the film itself.",
             exampleNative = "Её expectation от нового фильма было выше, чем сам фильм.",
-            pos = "noun", semanticGroup = "emotions_hope", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_hope", fillInBlankExclusions = listOf(36114L, 36115L)),
 
         WordEntity(id = 36114, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "anticipation", transliteration = "[ænˌtɪsəˈpeɪʃən]", translation = "предвкушение",
@@ -154,7 +154,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Приятное покалывание от ожидания — считаешь часы до чего-то весёлого.",
             example = "The children watched the clock with anticipation before the trip.",
             exampleNative = "Дети смотрели на часы с anticipation перед поездкой.",
-            pos = "noun", semanticGroup = "emotions_hope", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_hope", fillInBlankExclusions = listOf(36113L, 36115L)),
 
         WordEntity(id = 36115, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "longing", transliteration = "[ˈlɔŋɪŋ]", translation = "томление",
@@ -162,7 +162,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Тихая глубокая тоска по кому-то или чему-то далёкому — дому, человеку, морю.",
             example = "She felt a longing for her grandmother's old village every spring.",
             exampleNative = "Она ощущала longing по бабушкиной старой деревне каждую весну.",
-            pos = "noun", semanticGroup = "emotions_hope", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_hope"),
 
         // ── emotions_disappoint (5) ───────────────────────────────────────
 
@@ -172,7 +172,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Плохо себя чувствуешь после неудачи — голос может даже дрогнуть.",
             example = "She was upset after losing her favourite scarf on the train.",
             exampleNative = "Она была upset, потеряв любимый шарф в поезде.",
-            pos = "adjective", semanticGroup = "emotions_disappoint", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_disappoint", fillInBlankExclusions = listOf(36101L, 36104L, 36118L)),
 
         WordEntity(id = 36117, setId = 361, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "regret", transliteration = "[rɪˈɡrɛt]", translation = "сожаление",
@@ -180,7 +180,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Тяжёлое чувство о прошлом выборе, который хотелось бы изменить.",
             example = "He spoke with deep regret about the words he had said.",
             exampleNative = "Он говорил с глубоким regret о сказанных тогда словах.",
-            pos = "noun", semanticGroup = "emotions_disappoint", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_disappoint", fillInBlankExclusions = listOf(36120L, 36122L)),
 
         WordEntity(id = 36118, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "disheartened", transliteration = "[dɪsˈhɑrtənd]", translation = "упавший духом",
@@ -188,7 +188,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Потерял внутренний огонь после неудачи — нет сил, надежда тускла.",
             example = "He felt disheartened after the third rejection from a publisher.",
             exampleNative = "Он чувствовал себя disheartened после третьего отказа издателя.",
-            pos = "adjective", semanticGroup = "emotions_disappoint", isFillInBlankSafe = false),
+            pos = "adjective", semanticGroup = "emotions_disappoint", fillInBlankExclusions = listOf(36101L, 36104L, 36116L)),
 
         WordEntity(id = 36119, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "let down", transliteration = "[lɛt daʊn]", translation = "подвести / разочаровать",
@@ -196,7 +196,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Нарушить обещание или надежду — оставить человека грустным.",
             example = "Don't let down your team during the most important game.",
             exampleNative = "Не let down свою команду в самой важной игре.",
-            pos = "phrase", semanticGroup = "emotions_disappoint", isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "emotions_disappoint"),
 
         WordEntity(id = 36120, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "remorse", transliteration = "[rɪˈmɔrs]", translation = "раскаяние",
@@ -204,7 +204,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Острая боль за что-то плохое, что сделал — и желание это исправить.",
             example = "He showed real remorse and wrote a long apology letter.",
             exampleNative = "Он проявил настоящее remorse и написал длинное письмо с извинениями.",
-            pos = "noun", semanticGroup = "emotions_disappoint", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_disappoint", fillInBlankExclusions = listOf(36117L)),
 
         // ── emotions_relations (5) ────────────────────────────────────────
 
@@ -214,7 +214,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "С теплом следить за кем-то — чтобы был в безопасности, сыт, здоров.",
             example = "She will care for her grandmother every weekend after work.",
             exampleNative = "Она будет care о бабушке каждые выходные после работы.",
-            pos = "verb", semanticGroup = "emotions_relations", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_relations", fillInBlankExclusions = listOf(36123L, 36124L, 36125L)),
 
         WordEntity(id = 36122, setId = 361, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "sympathy", transliteration = "[ˈsɪmpəθi]", translation = "сочувствие",
@@ -222,7 +222,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Мягкое чувство к чужой боли — разделять её на расстоянии.",
             example = "I felt sympathy for the family who lost their home in the fire.",
             exampleNative = "Я почувствовал sympathy к семье, потерявшей дом в пожаре.",
-            pos = "noun", semanticGroup = "emotions_relations", isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "emotions_relations", fillInBlankExclusions = listOf(36103L, 36117L, 36120L)),
 
         WordEntity(id = 36123, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "soothe", transliteration = "[suð]", translation = "успокаивать",
@@ -230,7 +230,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Смягчить боль или страх — спокойным голосом, чаем или мягкой рукой.",
             example = "The mother began to soothe her crying baby with a quiet song.",
             exampleNative = "Мама начала soothe плачущего малыша тихой песенкой.",
-            pos = "verb", semanticGroup = "emotions_relations", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_relations", fillInBlankExclusions = listOf(36121L, 36124L, 36125L)),
 
         WordEntity(id = 36124, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "reassure", transliteration = "[ˌriəˈʃʊr]", translation = "ободрять",
@@ -238,7 +238,7 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Сказать, что всё будет хорошо — спокойными словами снять тревогу.",
             example = "The doctor tried to reassure the nervous patient before the test.",
             exampleNative = "Врач пытался reassure нервного пациента перед анализом.",
-            pos = "verb", semanticGroup = "emotions_relations", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_relations", fillInBlankExclusions = listOf(36121L, 36123L, 36125L)),
 
         WordEntity(id = 36125, setId = 361, languagePair = "en-ru", rarity = "RARE",
             original = "uplift", transliteration = "[ˌʌpˈlɪft]", translation = "поднимать дух",
@@ -246,6 +246,6 @@ object WordDataEnglishEmotionsL2 {
             definitionNative = "Приподнять настроение — внести немного света в мрачное состояние.",
             example = "Her warm letter helped uplift his mood after a hard week.",
             exampleNative = "Её тёплое письмо помогло uplift его настроение после трудной недели.",
-            pos = "verb", semanticGroup = "emotions_relations", isFillInBlankSafe = false),
+            pos = "verb", semanticGroup = "emotions_relations", fillInBlankExclusions = listOf(36121L, 36123L, 36124L)),
     )
 }

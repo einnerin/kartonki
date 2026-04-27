@@ -61,7 +61,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Долгий банковский займ на покупку дома, выплачиваемый помесячно.",
             example = "They took out a thirty-year home loan to buy their first apartment.",
             exampleNative = "Они взяли тридцатилетний home loan, чтобы купить первую квартиру.",
-            pos = "noun", semanticGroup = "city_housing", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_housing",
             fillInBlankExclusions = listOf(36702L, 36703L, 36705L)),
 
         WordEntity(id = 36702, setId = 367, languagePair = "en-ru", rarity = "RARE",
@@ -70,7 +70,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Подписанная бумага с правилами между владельцем и снимающим жильё.",
             example = "Read the rent agreement carefully before you sign anything.",
             exampleNative = "Внимательно прочитай rent agreement, прежде чем что-либо подписывать.",
-            pos = "noun", semanticGroup = "city_housing", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_housing",
             fillInBlankExclusions = listOf(36701L, 36703L, 36704L, 36705L)),
 
         WordEntity(id = 36703, setId = 367, languagePair = "en-ru", rarity = "RARE",
@@ -79,7 +79,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Деньги вперёд на случай, если съёмщик что-то сломает в квартире.",
             example = "She lost half her security deposit because of the stained carpet.",
             exampleNative = "Она потеряла половину security deposit из-за пятен на ковре.",
-            pos = "noun", semanticGroup = "city_housing", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_housing",
             fillInBlankExclusions = listOf(36701L, 36702L, 36705L)),
 
         WordEntity(id = 36704, setId = 367, languagePair = "en-ru", rarity = "RARE",
@@ -88,7 +88,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Владелец квартиры или дома, пускающий жильцов за плату.",
             example = "Our landlord raised the rent twice in a single year.",
             exampleNative = "Наш landlord поднимал плату дважды за один год.",
-            pos = "noun", semanticGroup = "city_housing", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_housing",
             fillInBlankExclusions = listOf(36702L)),
 
         WordEntity(id = 36705, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -97,7 +97,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Длина срока в договоре, на который снимается жильё.",
             example = "The lease term ends in June, so we must decide whether to renew.",
             exampleNative = "Lease term заканчивается в июне, нужно решить — продлевать или нет.",
-            pos = "noun", semanticGroup = "city_housing", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_housing",
             fillInBlankExclusions = listOf(36701L, 36702L, 36703L)),
 
         // ── city_delivery (5) ─────────────────────────────────────────────
@@ -108,7 +108,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Услуга, при которой заказ привозят на адрес до конца того же дня.",
             example = "The bookstore offers same-day delivery within the city center.",
             exampleNative = "Книжный предлагает same-day delivery в пределах центра города.",
-            pos = "noun", semanticGroup = "city_delivery", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_delivery",
             fillInBlankExclusions = listOf(36707L, 36708L, 36710L)),
 
         WordEntity(id = 36707, setId = 367, languagePair = "en-ru", rarity = "RARE",
@@ -117,7 +117,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Плоский камень или ступенька прямо снаружи входной двери дома.",
             example = "The courier left the parcel on the doorstep without ringing the bell.",
             exampleNative = "Курьер оставил посылку на doorstep, не позвонив в звонок.",
-            pos = "noun", semanticGroup = "city_delivery", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_delivery",
             fillInBlankExclusions = listOf(36708L)),
 
         WordEntity(id = 36708, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -126,7 +126,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Близкое место, куда покупатели сами приходят забрать посылки.",
             example = "I chose a pick-up point near the metro instead of home delivery.",
             exampleNative = "Я выбрал pick-up point у метро вместо доставки на дом.",
-            pos = "noun", semanticGroup = "city_delivery", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_delivery",
             fillInBlankExclusions = listOf(36706L, 36707L, 36710L)),
 
         WordEntity(id = 36709, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -135,7 +135,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Пометка: курьер должен взять вашу роспись на бумаге перед передачей.",
             example = "The package is signature required, so someone must be home today.",
             exampleNative = "Посылка signature required, поэтому кто-то должен быть дома.",
-            pos = "phrase", semanticGroup = "city_delivery", isFillInBlankSafe = false,
+            pos = "phrase", semanticGroup = "city_delivery",
             fillInBlankExclusions = listOf(36710L)),
 
         WordEntity(id = 36710, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -144,7 +144,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Попытка курьера, не удавшаяся, потому что никого не было по адресу.",
             example = "After the missed delivery, I rescheduled the package for Saturday morning.",
             exampleNative = "После missed delivery я перенёс посылку на утро субботы.",
-            pos = "noun", semanticGroup = "city_delivery", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_delivery",
             fillInBlankExclusions = listOf(36706L, 36708L, 36709L)),
 
         // ── city_clinic (5) ───────────────────────────────────────────────
@@ -155,7 +155,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Небольшой медцентр, куда приходят к врачу без ночёвки в больнице.",
             example = "The clinic on the corner is open until eight every weekday evening.",
             exampleNative = "Clinic на углу работает до восьми по будням вечером.",
-            pos = "noun", semanticGroup = "city_clinic", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_clinic",
             fillInBlankExclusions = listOf(36712L)),
 
         WordEntity(id = 36712, setId = 367, languagePair = "en-ru", rarity = "RARE",
@@ -164,7 +164,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Первый уровень медицинской помощи — местный врач для повседневных проблем.",
             example = "Most colds and headaches are handled at the primary care office.",
             exampleNative = "Простуду и головную боль лечат в кабинете primary care.",
-            pos = "noun", semanticGroup = "city_clinic", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_clinic",
             fillInBlankExclusions = listOf(36711L, 36713L, 36714L, 36715L)),
 
         WordEntity(id = 36713, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -173,7 +173,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Посещение без записи, когда приходишь и ждёшь в очереди.",
             example = "The walk-in option saved me when I caught a sudden fever on Sunday.",
             exampleNative = "Walk-in выручил меня, когда я внезапно слёг с температурой в воскресенье.",
-            pos = "noun", semanticGroup = "city_clinic", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_clinic",
             fillInBlankExclusions = listOf(36712L, 36714L)),
 
         WordEntity(id = 36714, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -182,7 +182,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Короткая записка от одного врача, отправляющая тебя к другому, более узкому.",
             example = "Without a referral letter, the cardiologist won't see you next week.",
             exampleNative = "Без referral letter кардиолог не примет тебя на следующей неделе.",
-            pos = "noun", semanticGroup = "city_clinic", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_clinic",
             fillInBlankExclusions = listOf(36712L, 36713L, 36715L)),
 
         WordEntity(id = 36715, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -191,7 +191,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Маленькая фиксированная сумма от пациента за визит, остальное платит страховка.",
             example = "My insurance plan has a twenty-dollar co-pay for any specialist visit.",
             exampleNative = "В моей страховке co-pay двадцать долларов за визит к специалисту.",
-            pos = "noun", semanticGroup = "city_clinic", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_clinic",
             fillInBlankExclusions = listOf(36712L, 36714L)),
 
         // ── city_traffic_law (5) ──────────────────────────────────────────
@@ -202,7 +202,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Официальный штраф водителю, ехавшему быстрее, чем разрешено.",
             example = "He got a speeding ticket on the highway near the airport last night.",
             exampleNative = "Он получил speeding ticket на шоссе у аэропорта прошлой ночью.",
-            pos = "noun", semanticGroup = "city_traffic_law", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_traffic_law",
             fillInBlankExclusions = listOf(36717L, 36718L, 36719L, 36720L)),
 
         WordEntity(id = 36717, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -211,7 +211,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Отметки на учёте водителя за нарушения; много отметок — лишение прав.",
             example = "Two more points on license and he'll lose the right to drive.",
             exampleNative = "Ещё два points on license — и он лишится права водить.",
-            pos = "phrase", semanticGroup = "city_traffic_law", isFillInBlankSafe = false,
+            pos = "phrase", semanticGroup = "city_traffic_law",
             fillInBlankExclusions = listOf(36716L, 36718L)),
 
         WordEntity(id = 36718, setId = 367, languagePair = "en-ru", rarity = "RARE",
@@ -220,7 +220,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Оставленная машина там, где нельзя — например, на въезде или у пожарной полосы.",
             example = "She found a parking violation slip tucked under her windshield wiper.",
             exampleNative = "Она нашла бумажку о parking violation под щёткой стеклоочистителя.",
-            pos = "noun", semanticGroup = "city_traffic_law", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_traffic_law",
             fillInBlankExclusions = listOf(36716L, 36717L, 36719L, 36720L)),
 
         WordEntity(id = 36719, setId = 367, languagePair = "en-ru", rarity = "RARE",
@@ -229,7 +229,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Прибор на дороге, делающий снимки машин, нарушающих правила движения.",
             example = "A traffic camera caught him running the red light on Main Street.",
             exampleNative = "Traffic camera засняла, как он проехал на красный на главной улице.",
-            pos = "noun", semanticGroup = "city_traffic_law", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_traffic_law",
             fillInBlankExclusions = listOf(36716L, 36718L, 36720L)),
 
         WordEntity(id = 36720, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -238,7 +238,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Официальная бумага, обязывающая прийти к судье в назначенный день.",
             example = "After ignoring the fine, he received a court summons in the post.",
             exampleNative = "После игнорирования штрафа он получил court summons по почте.",
-            pos = "noun", semanticGroup = "city_traffic_law", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_traffic_law",
             fillInBlankExclusions = listOf(36716L, 36717L, 36718L)),
 
         // ── city_utilities (5) ────────────────────────────────────────────
@@ -249,7 +249,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Ежемесячная бумага, сколько ты должен заплатить за воду, газ или свет.",
             example = "The utility bill jumped sharply after the freezing winter month.",
             exampleNative = "Utility bill резко вырос после морозного зимнего месяца.",
-            pos = "noun", semanticGroup = "city_utilities", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_utilities",
             fillInBlankExclusions = listOf(36722L, 36723L, 36725L)),
 
         WordEntity(id = 36722, setId = 367, languagePair = "en-ru", rarity = "RARE",
@@ -258,7 +258,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Маленький прибор, измеряющий, сколько воды поступает в твоё жильё.",
             example = "The plumber checked the water meter before sealing the new pipe.",
             exampleNative = "Сантехник проверил water meter перед опечатыванием новой трубы.",
-            pos = "noun", semanticGroup = "city_utilities", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_utilities",
             fillInBlankExclusions = listOf(36721L, 36723L, 36725L)),
 
         WordEntity(id = 36723, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -267,7 +267,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Цена за единицу электричества, которую компания берёт с домохозяйств.",
             example = "The new electricity tariff applies to all flats from January first.",
             exampleNative = "Новый electricity tariff действует для всех квартир с первого января.",
-            pos = "noun", semanticGroup = "city_utilities", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_utilities",
             fillInBlankExclusions = listOf(36721L, 36722L, 36724L, 36725L)),
 
         WordEntity(id = 36724, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -276,7 +276,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Компания, продающая подключение, по которому интернет приходит в квартиру.",
             example = "We switched our internet provider after months of slow evening speeds.",
             exampleNative = "Мы сменили internet provider после месяцев медленной скорости по вечерам.",
-            pos = "noun", semanticGroup = "city_utilities", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_utilities",
             fillInBlankExclusions = listOf(36723L, 36725L)),
 
         WordEntity(id = 36725, setId = 367, languagePair = "en-ru", rarity = "EPIC",
@@ -285,7 +285,7 @@ object WordDataEnglishCityLifeL3 {
             definitionNative = "Городская служба, увозящая мусор с улиц и дворов каждую неделю.",
             example = "Garbage collection in our district happens every Tuesday before sunrise.",
             exampleNative = "Garbage collection в нашем районе бывает каждый вторник до рассвета.",
-            pos = "noun", semanticGroup = "city_utilities", isFillInBlankSafe = false,
+            pos = "noun", semanticGroup = "city_utilities",
             fillInBlankExclusions = listOf(36721L, 36723L, 36724L)),
     )
 }

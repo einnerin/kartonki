@@ -76,8 +76,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Высшая судебная инстанция Израиля по апелляциям и конституционным вопросам.",
             example = "בֵּית הַמִּשְׁפָּט הָעֶלְיוֹן קִבֵּעַ הֲלָכָה חֲדָשָׁה בָּעִנְיָן.",
             exampleNative = "בֵּית הַמִּשְׁפָּט הָעֶלְיוֹן установил новый прецедент по делу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181102L, 181103L, 181104L, 181105L)),
         WordEntity(
             id = 181102, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_high_court", transliteration = "hахлата такдимит",
@@ -86,8 +85,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Решение, ставшее обязательным образцом для нижестоящих судов в схожих делах.",
             example = "הַהַחְלָטָה תַּקְדִּימִית שִׁנְּתָה אֶת גִּבּוּשׁ הַזְּכֻיּוֹת בִּמְקוֹם הָעֲבוֹדָה.",
             exampleNative = "הַחְלָטָה תַּקְדִּימִית изменила понимание прав на рабочем месте.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181101L, 181104L, 181105L)),
         WordEntity(
             id = 181103, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "bureau_high_court", transliteration = "багац",
@@ -96,8 +94,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Так зовут Верховный суд, когда тот рассматривает иски против органов власти.",
             example = "עוֹתְרִים פָּנוּ לַבַּג\"ץ נֶגֶד הַחְלָטַת הַשַּׂר.",
             exampleNative = "Истцы обратились в בַּג\"ץ против решения министра.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181101L)),
         WordEntity(
             id = 181104, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_high_court", transliteration = "арка'а ахарона",
@@ -106,8 +103,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Последняя судебная инстанция, куда можно обратиться до окончательного закрытия дела.",
             example = "הָעוֹתֵר הִגִּיעַ לְעַרְכָּאָה אַחֲרוֹנָה אַחֲרֵי שָׁנִים שֶׁל הִתְדַּיְּנוּת.",
             exampleNative = "Истец дошёл до עַרְכָּאָה אַחֲרוֹנָה после многих лет тяжб.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181101L, 181102L, 181105L)),
         WordEntity(
             id = 181105, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_high_court", transliteration = "самхут шипутит",
@@ -128,8 +124,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Отклонение иска в самом начале без проверки его по существу.",
             example = "הַשּׁוֹפֵט הוֹרָה עַל דְּחִיָּה עַל הַסַּף בְּשֶׁל הֶעְדֵּר עִילָּה.",
             exampleNative = "Судья постановил דְּחִיָּה עַל הַסַּף ввиду отсутствия основания.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181107L, 181108L, 181109L, 181110L)),
         WordEntity(
             id = 181107, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_appeals", transliteration = "бакашат ршут леар'эа",
@@ -148,8 +143,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Редкая процедура, когда расширенный состав судей пересматривает уже закрытое дело.",
             example = "הַנָּשִׂיא אִשֵּׁר דִּיּוּן נוֹסָף בִּגְלַל חֲשִׁיבוּת הַשְּׁאֵלָה.",
             exampleNative = "Председатель утвердил דִּיּוּן נוֹסָף ввиду важности правового вопроса.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181106L, 181107L, 181109L, 181110L)),
         WordEntity(
             id = 181109, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_appeals", transliteration = "ацират бицуа",
@@ -168,8 +162,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Правило, что нельзя заново судить дело, уже окончательно разрешённое судьёй.",
             example = "הַתְּבִיעָה נִדְחֲתָה בִּגְלַל מַעֲשֵׂה בֵּית דִּין מִתַּיק קוֹדֵם.",
             exampleNative = "Иск отклонили из-за מַעֲשֵׂה בֵּית דִּין по предыдущему делу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181106L, 181107L, 181108L, 181109L)),
 
         // ── bureau_constitution (5) — конституционные основы ──
         WordEntity(
@@ -180,8 +173,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Закон высшего ранга, что задаёт устройство власти и права человека в стране.",
             example = "חוֹק יְסוֹד מַגֵּן עַל כְּבוֹד הָאָדָם וְעַל חֵרוּתוֹ הַבָּסִיסִית.",
             exampleNative = "חוֹק יְסוֹד защищает достоинство человека и его свободу.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181112L, 181113L, 181114L, 181115L)),
         WordEntity(
             id = 181112, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_constitution", transliteration = "пискат hитгабрут",
@@ -190,8 +182,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Статья, что разрешает Кнессету принять закон вопреки его отмене Верховным судом.",
             example = "הַוִּיכּוּחַ עַל פִּסְקַת הִתְגַּבְּרוּת פִּלֵּג אֶת הַחֶבְרָה הַיִּשְׂרְאֵלִית.",
             exampleNative = "Спор о פִּסְקַת הִתְגַּבְּרוּת расколол израильское общество.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181111L, 181113L, 181114L, 181115L)),
         WordEntity(
             id = 181113, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_constitution", transliteration = "сэиф ницхи",
@@ -200,8 +191,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Статья закона, что нельзя изменить даже очень большим большинством голосов в парламенте.",
             example = "הַחֻקָּה הַגֶּרְמָנִית כּוֹלֶלֶת סְעִיף נִצְחִי עַל כְּבוֹד הָאָדָם.",
             exampleNative = "Германская конституция содержит סְעִיף נִצְחִי о достоинстве человека.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181111L, 181112L, 181114L, 181115L)),
         WordEntity(
             id = 181114, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_constitution", transliteration = "hагнат зхуйот",
@@ -210,8 +200,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Юридический механизм, что охраняет свободу человека от посягательств власти или другого.",
             example = "הֲגָנַת זְכֻיּוֹת הִיא יְסוֹד מֶרְכָּזִי שֶׁל הַשִּׁיטָה הַדֵּמוֹקְרָטִית.",
             exampleNative = "הֲגָנַת זְכֻיּוֹת — центральная основа демократической системы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181111L, 181112L, 181113L, 181115L)),
         WordEntity(
             id = 181115, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_constitution", transliteration = "мишпат хукати",
@@ -220,8 +209,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Отрасль права, что изучает устройство власти и взаимоотношения её ветвей.",
             example = "הִיא מְלַמֶּדֶת מִשְׁפָּט חֻקָּתִי בְּאוּנִיבֶרְסִיטָה הָעִבְרִית.",
             exampleNative = "Она преподаёт מִשְׁפָּט חֻקָּתִי в Еврейском университете.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181111L, 181112L, 181113L, 181114L)),
 
         // ── bureau_state_audit (5) — государственный контроль ──
         WordEntity(
@@ -232,8 +220,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Независимое должностное лицо, что проверяет работу госорганов и публикует отчёты.",
             example = "מְבַקֵּר הַמְּדִינָה חָשַׂף לִיקּוּיִים חֲמוּרִים בְּמִשְׂרַד הַתַּחְבּוּרָה.",
             exampleNative = "מְבַקֵּר הַמְּדִינָה вскрыл серьёзные нарушения в министерстве транспорта.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181117L, 181118L, 181119L, 181120L)),
         WordEntity(
             id = 181117, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_state_audit", transliteration = "ваадат хакира",
@@ -242,8 +229,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Официальный коллектив, созданный для разбора серьёзного происшествия и оценки ответственности.",
             example = "וַעֲדַת חֲקִירָה מַמְלַכְתִּית הוּקְמָה אַחֲרֵי הָאָסוֹן בְּמֵירוֹן.",
             exampleNative = "После трагедии в Мероне создали государственную וַעֲדַת חֲקִירָה.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181116L, 181118L, 181119L, 181120L)),
         WordEntity(
             id = 181118, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_state_audit", transliteration = "нohель асдара",
@@ -262,8 +248,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Открытый документ, описывающий выводы официальной проверки органа власти.",
             example = "דּוּחַ בִּקֹּרֶת חָמוּר חָשַׂף בִּזְבּוּז כְּסָפִים בָּעִירִיָּה.",
             exampleNative = "Жёсткий דּוּחַ בִּקֹּרֶת вскрыл растрату средств в мэрии.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181116L, 181117L, 181118L, 181120L)),
         WordEntity(
             id = 181120, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_state_audit", transliteration = "hит'алмут ми-мамца'им",
@@ -272,8 +257,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Когда ведомство не исправляет нарушения, на которые указал официальный отчёт.",
             example = "הִתְעַלְּמוּת מִמַּמְצָאִים שֶׁל הַמְּבַקֵּר עוֹרֶרֶת כַּעַס צִבּוּרִי גָּדוֹל.",
             exampleNative = "הִתְעַלְּמוּת מִמַּמְצָאִים контролёра вызывает большое возмущение публики.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181116L, 181117L, 181118L, 181119L)),
 
         // ── bureau_top_legal (5) — продвинутая правовая терминология ──
         WordEntity(
@@ -284,8 +268,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Учение, что определяет, когда властное действие изначально лишено силы.",
             example = "הַשּׁוֹפֵט יִישֵּׂם דּוֹקְטְרִינַת בִּטְלוּת עַל הַמִּכְרָז הַפָּגוּם.",
             exampleNative = "Судья применит דּוֹקְטְרִינַת בִּטְלוּת к порочному тендеру.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181122L, 181123L, 181124L, 181125L)),
         WordEntity(
             id = 181122, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_top_legal", transliteration = "хасинут парламентарит",
@@ -294,8 +277,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Особая защита депутатов от исков и преследований за их публичную деятельность.",
             example = "הוּא נִיצֵּל חֲסִינוּת פַּרְלָמֶנְטָרִית כְּדֵי לְהָגֵן עַל הַצְהָרוֹתָיו.",
             exampleNative = "Он использовал חֲסִינוּת פַּרְלָמֶנְטָרִית, чтобы прикрыть свои заявления.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181121L, 181123L, 181124L, 181125L)),
         WordEntity(
             id = 181123, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_top_legal", transliteration = "хозэ ахид",
@@ -304,8 +286,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Бланк, заранее заготовленный фирмой и предлагаемый клиенту без права изменить условия.",
             example = "הַחוֹזֶה אָחִיד שֶׁל הַבַּנְק נִבְדַּק עַל יְדֵי בֵּית הַדִּין הַמְּיֻחָד.",
             exampleNative = "חוֹזֶה אָחִיד банка проверил особый трибунал.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181121L, 181122L, 181124L, 181125L)),
         WordEntity(
             id = 181124, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_top_legal", transliteration = "цав асэ",
@@ -314,8 +295,7 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Судебное предписание, что обязывает лицо или орган совершить конкретное активное действие.",
             example = "בֵּית הַמִּשְׁפָּט הוֹצִיא צַו עֲשֵׂה לִפְנוֹת אֶת הַמִּתְקָן הַסָּגוּר.",
             exampleNative = "Суд издал צַו עֲשֵׂה об освобождении закрытого помещения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181121L, 181122L, 181123L, 181125L)),
         WordEntity(
             id = 181125, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "bureau_top_legal", transliteration = "такнон ирони",
@@ -324,7 +304,6 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Свод местных правил, что городской совет принимает для упорядочивания жизни в городе.",
             example = "הַתַּקָּנוֹן עִירוֹנִי אוֹסֵר רַעַשׁ בִּשְׁעוֹת הַמְּנוּחָה הַצְּהָרַיִם.",
             exampleNative = "תַּקָּנוֹן עִירוֹנִי запрещает шум в обеденные часы тишины.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181121L, 181122L, 181123L, 181124L)),
     )
 }

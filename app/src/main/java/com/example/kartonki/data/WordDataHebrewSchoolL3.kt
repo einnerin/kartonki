@@ -74,8 +74,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Школьный предмет про числа, фигуры и решение задач.",
             example = "הַמּוֹרָה לְמָתֵמָטִיקָה הִסְבִּירָה אֵיךְ פּוֹתְרִים מִשְׁוָאוֹת.",
             exampleNative = "Учительница по מָתֵמָטִיקָה объяснила, как решать уравнения.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181402L, 181403L, 181404L, 181405L)),
         WordEntity(
             id = 181402, setId = 1814, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "school_subjects", transliteration = "anglit",
@@ -84,8 +83,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Главный обязательный предмет по иностранному языку в школах.",
             example = "הַתַּלְמִידִים לוֹמְדִים אַנְגְלִית מִכִּתָּה ג' וְעַד סוֹף הַתִּיכוֹן.",
             exampleNative = "Ученики учат אַנְגְלִית с третьего класса до конца старшей школы.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181401L, 181403L, 181404L, 181405L)),
         WordEntity(
             id = 181403, setId = 1814, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "school_subjects", transliteration = "historya",
@@ -94,8 +92,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Предмет о событиях прошлого народов и государств.",
             example = "בְּשִׁעוּר הִיסְטוֹרְיָה דִּבַּרְנוּ עַל מִלְחֶמֶת הָעַצְמָאוּת.",
             exampleNative = "На уроке הִיסְטוֹרְיָה мы говорили о Войне за независимость.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181401L, 181402L, 181404L, 181405L)),
         WordEntity(
             id = 181404, setId = 1814, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "school_subjects", transliteration = "madaim",
@@ -104,8 +101,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Совмещённый предмет с физикой, химией и биологией для младших.",
             example = "בְּשִׁעוּר מַדָּעִים בָּנִינוּ הַיּוֹם דֶּגֶם שֶׁל הַר גַּעַשׁ.",
             exampleNative = "На уроке מַדָּעִים мы сегодня собрали модель вулкана.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181401L, 181402L, 181403L, 181405L)),
         WordEntity(
             id = 181405, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "school_subjects", transliteration = "geografya",
@@ -114,8 +110,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Предмет про карты, климат и жизнь людей в разных регионах.",
             example = "מוֹרֵה הַגֵּאוֹגְרַפְיָה הֵבִיא אַטְלָס חָדָשׁ לְכָל כִּתָּה.",
             exampleNative = "Учитель גֵּאוֹגְרַפְיָה принёс в каждый класс новый атлас.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181401L, 181402L, 181403L, 181404L)),
 
         // ── school_exams (5) — экзамены и оценивание ──
         WordEntity(
@@ -126,8 +121,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Короткая проверка по одной теме, которую учитель даёт почти без предупреждения.",
             example = "הַמּוֹרָה הוֹדִיעָה עַל בּוֹחַן פִּתְאוֹמִי בְּלֹא הֲכָנָה מֻקְדֶּמֶת.",
             exampleNative = "Учительница объявила внезапный בּוֹחַן без подготовки.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181407L, 181410L)),
         WordEntity(
             id = 181407, setId = 1814, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "school_exams", transliteration = "bkhina",
@@ -136,8 +130,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Официальная и долгая проверка по материалу целой главы или семестра.",
             example = "הַתַּלְמִידִים נִכְנְסוּ לַכִּתָּה לִפְנֵי הַבְּחִינָה בְּשֶׁקֶט מֻחְלָט.",
             exampleNative = "Ученики вошли в класс перед בְּחִינָה в полной тишине.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181406L, 181410L)),
         WordEntity(
             id = 181408, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_exams", transliteration = "mivkhan bagrut",
@@ -146,8 +139,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Государственный экзамен в конце старшей школы, дающий право на аттестат.",
             example = "מִבְחָן בָּגְרוּת בְּמָתֵמָטִיקָה נֶעֱרָךְ בְּשֶׁקֶט מַתָּן בְּכָל הָאָרֶץ.",
             exampleNative = "מִבְחָן בָּגְרוּת по математике проводят в один день по всей стране.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181409L, 181423L)),
         WordEntity(
             id = 181409, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_exams", transliteration = "tziyun bagrut",
@@ -156,8 +148,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Итоговая оценка по предмету после взвешивания экзамена и годового балла.",
             example = "צִיּוּן בָּגְרוּת גָּבוֹהַ בְּפִיסִיקָה פָּתַח לוֹ דֶּרֶךְ לָאוּנִיבֶרְסִיטָה.",
             exampleNative = "Высокий צִיּוּן בָּגְרוּת по физике открыл ему дорогу в университет.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181408L)),
         WordEntity(
             id = 181410, setId = 1814, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "school_exams", transliteration = "makhatzit",
@@ -178,8 +169,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Организованный выездной день класса с учителями на природу или в музей.",
             example = "בַּשָּׁבוּעַ שֶׁעָבַר יָצָאנוּ לְטִיּוּל בֵּית-סִפְרִי לַגָּלִיל הַתַּחְתּוֹן.",
             exampleNative = "На прошлой неделе мы выехали на טִיּוּל בֵּית-סִפְרִי в Нижнюю Галилею.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181412L, 181413L, 181414L, 181415L)),
         WordEntity(
             id = 181412, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_excursions", transliteration = "masa siyum",
@@ -188,8 +178,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Длинный поход на три–пять дней в конце выпускного потока.",
             example = "מַסַּע סִיוּם שֶׁל י\"ב עוֹבֵר בְּשׁוֹרַת מַסְלוּלִים בַּמִּדְבָּר.",
             exampleNative = "מַסַּע סִיוּם двенадцатого класса проходит цепью маршрутов в пустыне.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181411L, 181413L, 181414L, 181415L)),
         WordEntity(
             id = 181413, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_excursions", transliteration = "yemei shayit",
@@ -198,8 +187,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Внешкольная программа с плаванием на лодке или корабле для классов на побережье.",
             example = "יְמֵי שַׁיִט הָפְכוּ לְמַסּוֹרֶת בַּתִּיכוֹן הַיַּמִּי שֶׁלָּנוּ.",
             exampleNative = "יְמֵי שַׁיִט стали традицией в нашей морской школе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181411L, 181412L, 181414L, 181415L)),
         WordEntity(
             id = 181414, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_excursions", transliteration = "sadna khuts-sifrit",
@@ -208,8 +196,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Практическое занятие за стенами учреждения, проводимое внешним организатором.",
             example = "הַשִּׁכְבָה יָצְאָה לְסַדְנָה חוּץ-סִפְרִית עַל מַעְבָּדָה רוֹבּוֹטִית.",
             exampleNative = "Поток выехал на סַדְנָה חוּץ-סִפְרִית по робототехнической лаборатории.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181411L, 181412L, 181413L, 181415L)),
         WordEntity(
             id = 181415, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_excursions", transliteration = "khidush pedagogi",
@@ -218,8 +205,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Творческий метод или проект, который учитель вносит в класс, чтобы зажечь интерес.",
             example = "הַמּוֹרָה הִכְנִיסָה חִדּוּשׁ פֶּדָגוֹגִי שֶׁל מִשְׂחָקֵי תַּפְקִידִים.",
             exampleNative = "Учительница ввела חִדּוּשׁ פֶּדָגוֹגִי с ролевыми играми.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181411L, 181412L, 181413L, 181414L)),
 
         // ── school_certificates (5) — аттестация и табели ──
         WordEntity(
@@ -230,8 +216,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Документ конца года с оценками ученика по всем предметам.",
             example = "הַיֶּלֶד הֵבִיא הַבַּיְתָה תְּעוּדָה שְׁנָתִית עִם צִיּוּנִים גְּבוֹהִים מְאוֹד.",
             exampleNative = "Ребёнок принёс домой תְּעוּדָה שְׁנָתִית с очень высокими оценками.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181417L, 181418L, 181419L, 181420L)),
         WordEntity(
             id = 181417, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_certificates", transliteration = "teudat bagrut",
@@ -240,8 +225,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Официальный документ конца старшей школы, подтверждающий право учиться в университете.",
             example = "תְּעוּדַת בָּגְרוּת מְלֵאָה הִיא תְּנַאי לִרְשׁוּת לַתֹּאַר הָרִאשׁוֹן.",
             exampleNative = "Полный תְּעוּדַת בָּגְרוּת — условие допуска к бакалавриату.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181416L, 181418L, 181419L, 181420L)),
         WordEntity(
             id = 181418, setId = 1814, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "school_certificates", transliteration = "teudat siyum",
@@ -250,8 +234,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Документ, что ученик успешно закончил определённый этап учёбы.",
             example = "בְּטֶקֶס הַסִּיּוּם חִלְּקוּ לְכָל בּוֹגֵר תְּעוּדַת סִיּוּם וְפֶרַח.",
             exampleNative = "На церемонии каждому выпускнику вручили תְּעוּדַת סִיּוּם и цветок.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181416L, 181417L, 181419L, 181420L)),
         WordEntity(
             id = 181419, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_certificates", transliteration = "gilyon tziyunim",
@@ -260,8 +243,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Подробный бланк всех оценок ученика за несколько лет.",
             example = "הָאוּנִיבֶרְסִיטָה דָּרְשָׁה גִּלְיוֹן צִיּוּנִים מְקוֹרִי לָרִשּׁוּם.",
             exampleNative = "Университет потребовал оригинальный גִּלְיוֹן צִיּוּנִים при записи.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181416L, 181417L, 181418L, 181420L)),
         WordEntity(
             id = 181420, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_certificates", transliteration = "ishur nokhekhut",
@@ -270,8 +252,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Краткая бумага из школы, подтверждающая, что ребёнок ходит на уроки регулярно.",
             example = "הַמַּזְכִּירָה הִדְפִּיסָה אִישּׁוּר נוֹכְחוּת לַבִּטּוּחַ הַלְּאֻמִּי.",
             exampleNative = "Секретарша распечатала אִישּׁוּר נוֹכְחוּת для Битуах Леуми.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181416L, 181417L, 181418L, 181419L)),
 
         // ── school_secondary (5) — средняя и старшая школа ──
         WordEntity(
@@ -282,8 +263,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Промежуточная ступень между начальной и старшей, охватывает 7–9 классы.",
             example = "בְּנִי עוֹבֵר לַחֲטִיבַת בֵּינַיִם בְּסוֹף הַשָּׁנָה הַזֹּאת.",
             exampleNative = "Мой сын переходит в חֲטִיבַת בֵּינַיִם в конце этого года.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181422L, 181423L, 181424L, 181425L)),
         WordEntity(
             id = 181422, setId = 1814, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "school_secondary", transliteration = "tikhon",
@@ -292,7 +272,6 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Последняя школьная ступень, с десятого по двенадцатый класс.",
             example = "בַּתִּיכוֹן הַתַּלְמִידִים בּוֹחֲרִים מִקְצוֹעוֹת מֻגְבָּרִים לַבָּגְרוּת.",
             exampleNative = "В תִּיכוֹן ученики выбирают профильные предметы для багрута.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181423, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
@@ -302,8 +281,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Профильный предмет о звёздах и Солнечной системе в старшей школе.",
             example = "אַסְטְרוֹנוֹמְיָה תִּיכוֹנִית הִיא בְּחִירָה נְדִירָה לְתַלְמִידִים.",
             exampleNative = "אַסְטְרוֹנוֹמְיָה תִּיכוֹנִית — редкий выбор среди учеников.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181421L, 181424L, 181425L)),
         WordEntity(
             id = 181424, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_secondary", transliteration = "megamat limudim",
@@ -312,8 +290,7 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Углублённый учебный кластер по одной области, выбираемый в старшей школе.",
             example = "אֲחוֹתִי בָּחֲרָה בִּמְגַמַּת לִימּוּדִים בְּפִיסִיקָה וּמַחְשְׁבִים.",
             exampleNative = "Сестра выбрала מְגַמַּת לִימּוּדִים по физике и информатике.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181421L, 181423L, 181425L)),
         WordEntity(
             id = 181425, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "school_secondary", transliteration = "yoetz khinukhi",
@@ -322,7 +299,6 @@ object WordDataHebrewSchoolL3 {
             definitionNative = "Школьный сотрудник, который поддерживает учеников в учебных или личных трудностях.",
             example = "יוֹעֵץ חִינּוּכִי הִזְמִין אֶת הַהוֹרִים לְשִׂיחָה עַל הַהִתְקַדְּמוּת.",
             exampleNative = "יוֹעֵץ חִינּוּכִי пригласил родителей на беседу о прогрессе.",
-            isFillInBlankSafe = false,
-        ),
+         fillInBlankExclusions = listOf(181421L, 181423L, 181424L)),
     )
 }

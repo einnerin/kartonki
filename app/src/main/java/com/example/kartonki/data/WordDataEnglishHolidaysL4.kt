@@ -49,7 +49,7 @@ object WordDataEnglishHolidaysL4 {
             example = "Every house glowed with oil lamps on the night of Diwali.",
             exampleNative = "Каждый дом светился масляными лампами в ночь Diwali.",
             pos = "noun", semanticGroup = "holidays_world",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(37302L, 37303L, 37304L, 37305L, 37316L, 37317L, 37318L, 37320L)),
 
         WordEntity(id = 37302, setId = 373, languagePair = "en-ru", rarity = "EPIC",
             original = "Lunar New Year", transliteration = "[ˈluːnər njuː jɪər]", translation = "лунный Новый год",
@@ -58,7 +58,7 @@ object WordDataEnglishHolidaysL4 {
             example = "Families gather for dumplings and red envelopes during Lunar New Year.",
             exampleNative = "Семьи собираются за пельменями и красными конвертами на Lunar New Year.",
             pos = "noun", semanticGroup = "holidays_world",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(37301L, 37303L, 37304L, 37305L, 37316L, 37317L, 37318L, 37320L)),
 
         WordEntity(id = 37303, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "Hanukkah", transliteration = "[ˈhɑːnəkə]", translation = "Ханука",
@@ -67,7 +67,7 @@ object WordDataEnglishHolidaysL4 {
             example = "She lit the first candle on the eve of Hanukkah.",
             exampleNative = "Она зажгла первую свечу накануне Hanukkah.",
             pos = "noun", semanticGroup = "holidays_world",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(37301L, 37302L, 37304L, 37305L, 37316L, 37317L, 37318L, 37320L)),
 
         WordEntity(id = 37304, setId = 373, languagePair = "en-ru", rarity = "EPIC",
             original = "Mardi Gras", transliteration = "[ˈmɑːrdi ɡrɑː]", translation = "Марди Гра / жирный вторник",
@@ -76,7 +76,7 @@ object WordDataEnglishHolidaysL4 {
             example = "The streets of New Orleans overflow with masks during Mardi Gras.",
             exampleNative = "Улицы Нового Орлеана переполнены масками во время Mardi Gras.",
             pos = "noun", semanticGroup = "holidays_world",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(37301L, 37302L, 37303L, 37305L, 37316L, 37317L, 37318L, 37320L)),
 
         WordEntity(id = 37305, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "Day of the Dead", transliteration = "[deɪ əv ðə dɛd]", translation = "День мёртвых",
@@ -85,7 +85,7 @@ object WordDataEnglishHolidaysL4 {
             example = "Marigolds and sugar skulls line every altar on Day of the Dead.",
             exampleNative = "Бархатцы и сахарные черепа украшают каждый алтарь в Day of the Dead.",
             pos = "noun", semanticGroup = "holidays_world",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(37301L, 37302L, 37303L, 37304L, 37316L, 37317L, 37318L, 37320L)),
 
         // ── holidays_ethnography (5) ──────────────────────────────────────
 
@@ -95,8 +95,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Истории, песни и обычаи простых людей — передаются от бабушек внукам.",
             example = "Russian folklore is full of brave tsareviches and clever foxes.",
             exampleNative = "Русский folklore полон храбрых царевичей и хитрых лис.",
-            pos = "noun", semanticGroup = "holidays_ethnography",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_ethnography", fillInBlankExclusions = listOf(37307L, 37308L, 37309L, 37310L)),
 
         WordEntity(id = 37307, setId = 373, languagePair = "en-ru", rarity = "EPIC",
             original = "oral tradition", transliteration = "[ˈɔːrəl trəˈdɪʃən]", translation = "устная традиция",
@@ -104,8 +103,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Способ сохранять рассказы или правила, передавая их голосом из поколения в поколение.",
             example = "The bards kept the entire epic alive through oral tradition.",
             exampleNative = "Барды сохранили весь эпос через oral tradition.",
-            pos = "noun", semanticGroup = "holidays_ethnography",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_ethnography", fillInBlankExclusions = listOf(37306L, 37308L, 37309L, 37310L)),
 
         WordEntity(id = 37308, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "superstition", transliteration = "[ˌsuːpərˈstɪʃən]", translation = "суеверие",
@@ -113,8 +111,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Народная вера, что некое действие несёт удачу или беду, вопреки здравому смыслу.",
             example = "An old superstition warns travellers never to whistle indoors.",
             exampleNative = "Старое superstition советует путникам никогда не свистеть в доме.",
-            pos = "noun", semanticGroup = "holidays_ethnography",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_ethnography", fillInBlankExclusions = listOf(37306L, 37307L, 37309L, 37310L)),
 
         WordEntity(id = 37309, setId = 373, languagePair = "en-ru", rarity = "EPIC",
             original = "taboo", transliteration = "[təˈbuː]", translation = "табу / запрет",
@@ -122,8 +119,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Строгое культурное «нельзя» — то, чего не говорят, не трогают и не едят.",
             example = "Mentioning the chief's name was a strong taboo in the village.",
             exampleNative = "Упоминание имени вождя было крепким taboo в деревне.",
-            pos = "noun", semanticGroup = "holidays_ethnography",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_ethnography", fillInBlankExclusions = listOf(37306L, 37307L, 37308L, 37310L)),
 
         WordEntity(id = 37310, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "totem", transliteration = "[ˈtoʊtəm]", translation = "тотем",
@@ -131,8 +127,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Животное или растение, которое род считает священным предком и защитником.",
             example = "The eagle was the totem of their northern clan.",
             exampleNative = "Орёл был totem их северного клана.",
-            pos = "noun", semanticGroup = "holidays_ethnography",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_ethnography", fillInBlankExclusions = listOf(37306L, 37307L, 37308L, 37309L)),
 
         // ── holidays_religious (5) ────────────────────────────────────────
 
@@ -142,8 +137,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Долгое священное путешествие к святому месту — часто пешком, как духовный долг.",
             example = "Once a year my grandfather made a quiet pilgrimage to the old monastery.",
             exampleNative = "Раз в год дед совершал тихое pilgrimage в старый монастырь.",
-            pos = "noun", semanticGroup = "holidays_religious",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_religious", fillInBlankExclusions = listOf(37312L, 37313L, 37314L, 37315L)),
 
         WordEntity(id = 37312, setId = 373, languagePair = "en-ru", rarity = "EPIC",
             original = "fasting", transliteration = "[ˈfæstɪŋ]", translation = "пост (воздержание от пищи)",
@@ -151,8 +145,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Отказ от пищи на установленный срок ради духовной или телесной дисциплины.",
             example = "During Ramadan many practise fasting from dawn until sunset.",
             exampleNative = "Во время Рамадана многие соблюдают fasting от рассвета до заката.",
-            pos = "noun", semanticGroup = "holidays_religious",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_religious", fillInBlankExclusions = listOf(37311L, 37313L, 37314L, 37315L)),
 
         WordEntity(id = 37313, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "communion", transliteration = "[kəˈmjuːnjən]", translation = "причастие",
@@ -160,8 +153,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Христианский обряд хлеба и вина в память о Тайной вечере.",
             example = "The children received their first communion in white robes.",
             exampleNative = "Дети приняли первое communion в белых одеждах.",
-            pos = "noun", semanticGroup = "holidays_religious",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_religious", fillInBlankExclusions = listOf(37311L, 37312L, 37314L, 37315L)),
 
         WordEntity(id = 37314, setId = 373, languagePair = "en-ru", rarity = "EPIC",
             original = "baptism", transliteration = "[ˈbæptɪzəm]", translation = "крещение",
@@ -169,8 +161,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Христианский водный обряд, отмечающий вступление человека в церковь.",
             example = "Her baptism took place in the small chapel by the river.",
             exampleNative = "Её baptism прошло в маленькой часовне у реки.",
-            pos = "noun", semanticGroup = "holidays_religious",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_religious", fillInBlankExclusions = listOf(37311L, 37312L, 37313L, 37315L)),
 
         WordEntity(id = 37315, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "ordination", transliteration = "[ˌɔːrdəˈneɪʃən]", translation = "рукоположение / посвящение в сан",
@@ -178,8 +169,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Торжественный акт, в котором человек становится священником, монахом или раввином.",
             example = "His ordination was attended by the bishop and the whole village.",
             exampleNative = "На его ordination присутствовали епископ и вся деревня.",
-            pos = "noun", semanticGroup = "holidays_religious",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_religious", fillInBlankExclusions = listOf(37311L, 37312L, 37313L, 37314L)),
 
         // ── holidays_pagan_roots (5) ──────────────────────────────────────
 
@@ -190,7 +180,7 @@ object WordDataEnglishHolidaysL4 {
             example = "The standing stones align with the sun at the festival of midwinter.",
             exampleNative = "Стоячие камни выстраиваются к солнцу на праздник midwinter.",
             pos = "noun", semanticGroup = "holidays_pagan_roots",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(37301L, 37302L, 37303L, 37304L, 37305L, 37317L, 37318L, 37319L, 37320L)),
 
         WordEntity(id = 37317, setId = 373, languagePair = "en-ru", rarity = "EPIC",
             original = "Lughnasadh", transliteration = "[ˈluːnəsə]", translation = "Лугнасад (кельтский праздник урожая)",
@@ -199,7 +189,7 @@ object WordDataEnglishHolidaysL4 {
             example = "Old farmers reaped the first wheat right at the festival of Lughnasadh.",
             exampleNative = "Старые крестьяне жали первую пшеницу прямо на праздник Lughnasadh.",
             pos = "noun", semanticGroup = "holidays_pagan_roots",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(37301L, 37302L, 37303L, 37304L, 37305L, 37316L, 37318L, 37319L, 37320L)),
 
         WordEntity(id = 37318, setId = 373, languagePair = "en-ru", rarity = "EPIC",
             original = "harvest festival", transliteration = "[ˈhɑːrvɪst ˈfɛstɪvəl]", translation = "праздник урожая",
@@ -207,8 +197,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Деревенское торжество в конце лета, когда зерно уже собрано.",
             example = "The whole valley dances together at the autumn harvest festival.",
             exampleNative = "Вся долина пляшет вместе на осеннем harvest festival.",
-            pos = "noun", semanticGroup = "holidays_pagan_roots",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_pagan_roots", fillInBlankExclusions = listOf(37316L, 37317L, 37319L, 37320L)),
 
         WordEntity(id = 37319, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "bonfire", transliteration = "[ˈbɑːnfaɪər]", translation = "костёр (праздничный)",
@@ -216,8 +205,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Высокий уличный огонь для торжества — по старым поверьям, отгоняет злых духов.",
             example = "Children leapt over the bonfire to welcome the new season.",
             exampleNative = "Дети прыгали через bonfire, встречая новый сезон.",
-            pos = "noun", semanticGroup = "holidays_pagan_roots",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_pagan_roots", fillInBlankExclusions = listOf(37316L, 37317L, 37318L, 37320L)),
 
         WordEntity(id = 37320, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "May Day", transliteration = "[meɪ deɪ]", translation = "майский день (весенний праздник)",
@@ -226,7 +214,7 @@ object WordDataEnglishHolidaysL4 {
             example = "The girls wove crowns of daisies for May Day.",
             exampleNative = "Девушки плели венки из ромашек к May Day.",
             pos = "noun", semanticGroup = "holidays_pagan_roots",
-            isFillInBlankSafe = false),
+            isFillInBlankSafe = false, fillInBlankExclusions = listOf(37301L, 37302L, 37303L, 37304L, 37305L, 37316L, 37317L, 37318L, 37319L)),
 
         // ── holidays_modern (5) ───────────────────────────────────────────
 
@@ -236,8 +224,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Нерелигиозный выходной, отмечающий событие страны или города.",
             example = "The town declared a civic holiday for its 200th anniversary.",
             exampleNative = "Город объявил civic holiday в честь своего 200-летия.",
-            pos = "noun", semanticGroup = "holidays_modern",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_modern", fillInBlankExclusions = listOf(37322L, 37323L, 37324L, 37325L)),
 
         WordEntity(id = 37322, setId = 373, languagePair = "en-ru", rarity = "EPIC",
             original = "public holiday", transliteration = "[ˈpʌblɪk ˈhɑːlədeɪ]", translation = "государственный выходной",
@@ -245,8 +232,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Официальный выходной, когда магазины, банки и школы обычно закрыты.",
             example = "Trains run on a reduced timetable on every public holiday.",
             exampleNative = "Поезда ходят по сокращённому расписанию в каждый public holiday.",
-            pos = "noun", semanticGroup = "holidays_modern",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_modern", fillInBlankExclusions = listOf(37321L, 37323L, 37324L, 37325L)),
 
         WordEntity(id = 37323, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "national holiday", transliteration = "[ˈnæʃənəl ˈhɑːlədeɪ]", translation = "национальный праздник",
@@ -254,8 +240,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Выходной, закреплённый законом страны, чтобы чествовать важное общее событие.",
             example = "Independence Day became a national holiday in eighteen seventy-six.",
             exampleNative = "День независимости стал national holiday в тысяча восемьсот семьдесят шестом.",
-            pos = "noun", semanticGroup = "holidays_modern",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_modern", fillInBlankExclusions = listOf(37321L, 37322L, 37324L, 37325L)),
 
         WordEntity(id = 37324, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "paid leave", transliteration = "[peɪd liːv]", translation = "оплачиваемый отпуск",
@@ -263,8 +248,7 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Время вне работы, которое работодатель всё равно оплачивает — на отдых или болезнь.",
             example = "Most companies grant extra paid leave for major family events.",
             exampleNative = "Большинство компаний дают дополнительный paid leave на крупные семейные события.",
-            pos = "noun", semanticGroup = "holidays_modern",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_modern", fillInBlankExclusions = listOf(37321L, 37322L, 37323L, 37325L)),
 
         WordEntity(id = 37325, setId = 373, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "bank holiday", transliteration = "[bæŋk ˈhɑːlədeɪ]", translation = "банковский выходной (брит.)",
@@ -272,7 +256,6 @@ object WordDataEnglishHolidaysL4 {
             definitionNative = "Британский будний день, в который банки закрыты, а большинство людей дома.",
             example = "The motorway was packed before the long bank holiday weekend.",
             exampleNative = "Автомагистраль была забита перед долгими выходными bank holiday.",
-            pos = "noun", semanticGroup = "holidays_modern",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "holidays_modern", fillInBlankExclusions = listOf(37321L, 37322L, 37323L, 37324L)),
     )
 }
