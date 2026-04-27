@@ -16,6 +16,20 @@ import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.random.Random
 
+/**
+ * Result of opening one or more packs.
+ *
+ * @param cards every card pulled (5 × pack count). Already inserted into the
+ *              user's collection.
+ * @param duplicateRewardTokens total tokens awarded as compensation for cards
+ *              the user already owned. The caller does NOT need to credit the
+ *              user — it has already been added to their token balance.
+ */
+data class PackResult(
+    val cards: List<Word>,
+    val duplicateRewardTokens: Int,
+)
+
 @Singleton
 class PackRepository @Inject constructor(
     private val wordDao: WordDao,
@@ -25,32 +39,75 @@ class PackRepository @Inject constructor(
     private val _pendingNewCards = MutableStateFlow<List<Word>>(emptyList())
     val pendingNewCards: StateFlow<List<Word>> = _pendingNewCards.asStateFlow()
 
-    val activityCount: Flow<Int>  = userPrefs.activityCount
-    val freePackCount: Flow<Int>  = userPrefs.freePackCount
-    val languagePair: Flow<String> = userPrefs.languagePair
+    val activityCount: Flow<Int>      = userPrefs.activityCount
+    val freePackCount: Flow<Int>      = userPrefs.freePackCount       // legacy, kept for compat (returns 0 after migration)
+    val tokensBalance: Flow<Int>      = userPrefs.tokensBalance
+    val dailyActivityCount: Flow<Int> = userPrefs.dailyActivityCount
+    val languagePair: Flow<String>    = userPrefs.languagePair
 
     fun clearPendingNewCards() {
         _pendingNewCards.value = emptyList()
     }
 
+    /**
+     * Registers one completed activity. Counts toward the daily limit and grants
+     * tokens every [UserPreferencesRepository.ACTIVITIES_PER_TOKEN_GRANT] activities.
+     *
+     * Activities beyond [UserPreferencesRepository.DAILY_ACTIVITY_LIMIT] in a single
+     * day are silently ignored — the user has hit the daily token cap.
+     */
     suspend fun onActivityCompleted() {
+        val counted = userPrefs.registerDailyActivity()
+        if (!counted) return  // daily cap reached
+
         val current = userPrefs.getActivityCount()
         val next = current + 1
-        if (next >= 3) {
+        if (next >= UserPreferencesRepository.ACTIVITIES_PER_TOKEN_GRANT) {
             userPrefs.setActivityCount(0)
-            userPrefs.setFreePackCount(userPrefs.getFreePackCount() + 1)
+            userPrefs.addTokens(UserPreferencesRepository.TOKENS_PER_PACK)
         } else {
             userPrefs.setActivityCount(next)
         }
     }
 
-    suspend fun consumeAndOpenPacks(count: Int): List<Word> {
-        val current = userPrefs.getFreePackCount()
-        val toConsume = minOf(count, current)
-        if (toConsume > 0) {
-            userPrefs.setFreePackCount(current - toConsume)
+    fun canAffordPacks(count: Int): Boolean {
+        val cost = count * UserPreferencesRepository.TOKENS_PER_PACK
+        return userPrefs.getTokensBalance() >= cost
+    }
+
+    /**
+     * Spends [count] × [UserPreferencesRepository.TOKENS_PER_PACK] tokens and opens that many packs.
+     * Returns empty result if the user can't afford.
+     *
+     * Cards already in the user's collection generate compensation tokens
+     * (see [DUPLICATE_COMPENSATION]). The compensation is credited automatically
+     * to the token balance and reflected in [PackResult.duplicateRewardTokens].
+     */
+    suspend fun purchasePacksWithTokens(count: Int): PackResult {
+        if (count <= 0) return PackResult(emptyList(), 0)
+        val cost = count * UserPreferencesRepository.TOKENS_PER_PACK
+        val balance = userPrefs.getTokensBalance()
+        if (balance < cost) return PackResult(emptyList(), 0)
+        userPrefs.setTokensBalance(balance - cost)
+
+        val ownedIds = collectionDao.getCollectedWordIds().toHashSet()
+        val cards = mutableListOf<Word>()
+        var compensation = 0
+        repeat(count) {
+            val pack = generatePackCards()
+            for (w in pack) {
+                if (w.id in ownedIds) {
+                    compensation += DUPLICATE_COMPENSATION[w.rarity] ?: 0
+                } else {
+                    ownedIds += w.id  // a duplicate within the same multi-pack purchase still counts as already-owned
+                }
+                cards += w
+            }
         }
-        return (1..toConsume).flatMap { generatePackCards() }
+        if (compensation > 0) {
+            userPrefs.addTokens(compensation)
+        }
+        return PackResult(cards, compensation)
     }
 
     private suspend fun generatePackCards(): List<Word> {
@@ -135,6 +192,15 @@ class PackRepository @Inject constructor(
             "RARE"      to 0.25f,
             "EPIC"      to 0.125f,
             "LEGENDARY" to 0.0375f,
+        )
+
+        /** Token compensation when a pulled card is already in the player's collection. */
+        val DUPLICATE_COMPENSATION = mapOf(
+            Rarity.COMMON    to 10,
+            Rarity.UNCOMMON  to 20,
+            Rarity.RARE      to 50,
+            Rarity.EPIC      to 100,
+            Rarity.LEGENDARY to 200,
         )
     }
 }

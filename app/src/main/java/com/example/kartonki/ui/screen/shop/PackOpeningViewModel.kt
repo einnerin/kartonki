@@ -17,6 +17,8 @@ data class PackOpeningUiState(
     val isLoading: Boolean = true,
     val cards: List<Word> = emptyList(),
     val revealedIndices: Set<Int> = emptySet(),
+    val compensationTokens: Int = 0,
+    val purchaseFailed: Boolean = false,
 ) {
     val allRevealed: Boolean get() = cards.isNotEmpty() && revealedIndices.size >= cards.size
     val revealedCount: Int get() = revealedIndices.size
@@ -36,18 +38,38 @@ class PackOpeningViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            val cards = packRepository.consumeAndOpenPacks(packCount)
-            _uiState.update { it.copy(isLoading = false, cards = cards) }
-            // pack_opened — по одному event на каждый pack (можно хорошо раскрыть rarity-распределение)
-            val highest = cards.maxByOrNull { com.example.kartonki.domain.model.Rarity.valueOf(it.rarity.name).points }?.rarity?.name ?: "COMMON"
+            val result = packRepository.purchasePacksWithTokens(packCount)
+            if (result.cards.isEmpty()) {
+                _uiState.update { it.copy(isLoading = false, purchaseFailed = true) }
+                return@launch
+            }
+            _uiState.update {
+                it.copy(
+                    isLoading = false,
+                    cards = result.cards,
+                    compensationTokens = result.duplicateRewardTokens,
+                )
+            }
+            // Per-pack analytics. Duplicate count is per-purchase total — we
+            // keep highestRarity per-purchase too (good enough for cohort stats).
+            val highest = result.cards
+                .maxByOrNull { com.example.kartonki.domain.model.Rarity.valueOf(it.rarity.name).points }
+                ?.rarity?.name ?: "COMMON"
+            // Cards per pack always 5 by PackRepository contract.
+            val cardsPerPack = (result.cards.size / packCount.coerceAtLeast(1))
+            // Approximate duplicate count per pack — split evenly. Used for analytics only.
+            val duplicatesTotal = if (result.duplicateRewardTokens > 0) {
+                // Estimate from compensation table is noisy; just expose per-pack share.
+                (result.duplicateRewardTokens / 10).coerceAtLeast(1)  // very rough; we mainly care it's > 0
+            } else 0
             repeat(packCount) {
                 analytics.log(
                     com.example.kartonki.analytics.AnalyticsEvent.PackOpened(
                         packType = "standard",
-                        newCardsCount = cards.size / packCount.coerceAtLeast(1),
-                        duplicatesCount = 0,  // duplicate detection — Фаза 5 если понадобится
+                        newCardsCount = cardsPerPack,
+                        duplicatesCount = duplicatesTotal / packCount.coerceAtLeast(1),
                         highestRarityObtained = highest,
-                        packSource = "activity_reward",
+                        packSource = "tokens",
                     )
                 )
             }

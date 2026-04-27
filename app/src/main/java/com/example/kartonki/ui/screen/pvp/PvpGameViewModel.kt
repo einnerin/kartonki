@@ -81,6 +81,11 @@ class PvpGameViewModel @Inject constructor(
     private var matchFinishedLogged = false
     private var roundsPlayed = 0
 
+    private companion object {
+        /** Minimum rounds played for a non-NORMAL game ending to still count toward token progress. */
+        const val PVP_MIN_ROUNDS_FOR_ACTIVITY = 10
+    }
+
     private val deck1Id: Long = checkNotNull(savedStateHandle[Route.PvpGame.ARG_DECK1_ID])
     private val deck2Id: Long = checkNotNull(savedStateHandle[Route.PvpGame.ARG_DECK2_ID])
     private val p1Name: String = savedStateHandle[Route.PvpGame.ARG_P1_NAME] ?: "Игрок 1"
@@ -197,6 +202,8 @@ class PvpGameViewModel @Inject constructor(
         val state = _uiState.value
         val quizPhase = state.phase as? PvpPhase.Quiz ?: return
         val selected = quizPhase.selectedAnswer ?: return
+
+        roundsPlayed += 1
 
         val card = quizPhase.quiz.playedCard
         val isCorrect = selected.equals(quizPhase.quiz.correctAnswer, ignoreCase = true)
@@ -341,7 +348,15 @@ class PvpGameViewModel @Inject constructor(
                 player2Score = players[1].score,
                 wasSurrender = reason == GameOverReason.FORFEIT,
             )
-            packRepository.onActivityCompleted()
+            // A match counts toward token progress only if it ran a meaningful
+            // length: either the deck played out naturally, or the player
+            // surrendered/AFK'd after at least PVP_MIN_ROUNDS_FOR_ACTIVITY rounds.
+            // Quick surrenders no longer farm tokens.
+            val countsAsActivity = reason == GameOverReason.NORMAL ||
+                roundsPlayed >= PVP_MIN_ROUNDS_FOR_ACTIVITY
+            if (countsAsActivity) {
+                packRepository.onActivityCompleted()
+            }
         }
         _uiState.update {
             it.copy(players = players, phase = PvpPhase.GameOver(loserIndex = loserIndex, reason = reason))

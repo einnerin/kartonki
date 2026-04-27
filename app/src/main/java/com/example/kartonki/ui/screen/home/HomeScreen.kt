@@ -177,10 +177,12 @@ fun HomeScreen(
             }
         }
 
-        // Free pack indicator (top-left corner) — declared after Column to sit on top
-        FreePackIndicator(
+        // Tokens progress indicator (top-left corner) — shows N/3 progress
+        // toward the next 100-token grant. When the daily activity cap is
+        // reached, switches to "see you tomorrow" state. Always opens the shop.
+        TokensIndicator(
             activityCount = packState.activityCount,
-            freePackCount = packState.freePackCount,
+            dailyActivityCount = packState.dailyActivityCount,
             onClick = onNavigateToShop,
             modifier = Modifier
                 .align(Alignment.TopStart)
@@ -212,20 +214,39 @@ fun HomeScreen(
 }
 
 @Composable
-private fun FreePackIndicator(
+private fun TokensIndicator(
     activityCount: Int,
-    freePackCount: Int,
+    dailyActivityCount: Int,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val isReady = freePackCount >= 1
-    val glowAlpha = if (isReady) 0.5f else 0f
-    val borderColor = if (isReady) AccentGold else AccentGold.copy(alpha = 0.3f)
-    val bgColor = if (isReady) Color(0xFF2A1E00) else Color(0xFF111A26)
+    val s = LocalAppStrings.current
+    // 9 = DAILY_ACTIVITY_LIMIT (3 grants of 100 tokens per day).
+    val capReached = dailyActivityCount >= 9
+    // Glow only while actively progressing — motivates the player. Off when
+    // idle at 0 (just got reward / no activity yet) or when daily cap is hit.
+    val isActiveProgress = !capReached && activityCount in 1..2
+
+    val borderColor = when {
+        capReached -> TextSecondary.copy(alpha = 0.25f)
+        isActiveProgress -> AccentGold
+        else -> AccentGold.copy(alpha = 0.3f)
+    }
+    val bgColor = when {
+        capReached -> Color(0xFF1A1A1A)
+        isActiveProgress -> Color(0xFF2A1E00)
+        else -> Color(0xFF111A26)
+    }
+    val labelText = if (capReached) s.homeDailyLimitDone else "$activityCount/3"
+    val labelColor = when {
+        capReached -> TextSecondary.copy(alpha = 0.6f)
+        isActiveProgress -> AccentGold
+        else -> TextSecondary
+    }
 
     Box(
         modifier = modifier
-            .then(if (isReady) Modifier.glowEffect(AccentGold, 10.dp, 20.dp, glowAlpha) else Modifier)
+            .then(if (isActiveProgress) Modifier.glowEffect(AccentGold, 10.dp, 20.dp, 0.5f) else Modifier)
             .clip(RoundedCornerShape(20.dp))
             .background(bgColor)
             .border(1.dp, borderColor, RoundedCornerShape(20.dp))
@@ -241,12 +262,12 @@ private fun FreePackIndicator(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(5.dp),
         ) {
-            Text("🎴", fontSize = 14.sp)
+            Text(if (capReached) "💤" else "🎴", fontSize = 14.sp)
             Text(
-                text = if (isReady) LocalAppStrings.current.homePackReady else "$activityCount/3",
+                text = labelText,
                 style = MaterialTheme.typography.labelMedium,
                 fontWeight = FontWeight.Bold,
-                color = if (isReady) AccentGold else TextSecondary,
+                color = labelColor,
             )
         }
     }

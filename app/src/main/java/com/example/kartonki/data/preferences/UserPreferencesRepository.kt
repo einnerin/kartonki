@@ -7,6 +7,9 @@ import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.map
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -17,6 +20,18 @@ class UserPreferencesRepository @Inject constructor(
     private val prefs: SharedPreferences =
         context.getSharedPreferences("user_prefs", Context.MODE_PRIVATE)
 
+    init {
+        // One-time migration: FREE_PACK_COUNT * 100 → TOKENS_BALANCE.
+        val legacyPacks = prefs.getInt("free_pack_count", 0)
+        if (legacyPacks > 0) {
+            val currentTokens = prefs.getInt("tokens_balance", 0)
+            prefs.edit()
+                .putInt("tokens_balance", currentTokens + legacyPacks * TOKENS_PER_PACK)
+                .putInt("free_pack_count", 0)
+                .apply()
+        }
+    }
+
     private object Keys {
         const val IS_DARK_THEME            = "is_dark_theme"
         const val USERNAME                 = "username"
@@ -24,7 +39,10 @@ class UserPreferencesRepository @Inject constructor(
         const val LANGUAGE_PAIR            = "language_pair"
         const val NATIVE_LANGUAGE          = "native_language"
         const val ACTIVITY_COUNT           = "activity_count"
-        const val FREE_PACK_COUNT          = "free_pack_count"
+        const val FREE_PACK_COUNT          = "free_pack_count"  // deprecated — migrated to TOKENS_BALANCE
+        const val TOKENS_BALANCE           = "tokens_balance"
+        const val DAILY_ACTIVITY_COUNT     = "daily_activity_count"
+        const val LAST_ACTIVITY_DATE       = "last_activity_date"  // "yyyy-MM-dd" local
         const val PVP_MULTIPLIER_HINT_SEEN = "pvp_multiplier_hint_seen"
         const val DEFINITION_QUIZ_MODE     = "definition_quiz_mode"   // "foreign" | "native" | "both"
         const val QUIZ_TYPES_ENABLED       = "quiz_types_enabled"    // comma-separated keys
@@ -49,7 +67,14 @@ class UserPreferencesRepository @Inject constructor(
     companion object {
         val KNOWN_QUIZ_TYPES:   Set<String> = setOf("translation", "definition", "fill_blank")
         val DEFAULT_QUIZ_TYPES: Set<String> = KNOWN_QUIZ_TYPES
+
+        const val TOKENS_PER_PACK             = 100
+        const val ACTIVITIES_PER_TOKEN_GRANT  = 3
+        const val DAILY_ACTIVITY_LIMIT        = 9   // 3 grants × 3 activities = 300 tokens / day
     }
+
+    private fun todayStr(): String =
+        SimpleDateFormat("yyyy-MM-dd", Locale.US).format(Date())
 
     /** Emits on every SharedPreferences change. */
     private fun prefsFlow(): Flow<SharedPreferences> = callbackFlow {
@@ -66,8 +91,23 @@ class UserPreferencesRepository @Inject constructor(
     val avatarChoice: Flow<String>      = prefsFlow().map { it.getString(Keys.AVATAR_CHOICE, "🎮") ?: "🎮" }
     val languagePair: Flow<String>      = prefsFlow().map { it.getString(Keys.LANGUAGE_PAIR, "en-ru") ?: "en-ru" }
     val nativeLanguage: Flow<String>    = prefsFlow().map { it.getString(Keys.NATIVE_LANGUAGE, "ru") ?: "ru" }
-    val activityCount: Flow<Int>        = prefsFlow().map { it.getInt(Keys.ACTIVITY_COUNT, 0) }
+    /**
+     * Progress toward the next 100-token grant (0..2). Resets at midnight along
+     * with [dailyActivityCount] — same temporal scope so the two counters never
+     * disagree visually (e.g. "1/3" on Home + "0/9 today" in shop is impossible).
+     */
+    val activityCount: Flow<Int>        = prefsFlow().map { p ->
+        val lastDate = p.getString(Keys.LAST_ACTIVITY_DATE, null)
+        if (lastDate == todayStr()) p.getInt(Keys.ACTIVITY_COUNT, 0) else 0
+    }
     val freePackCount: Flow<Int>        = prefsFlow().map { it.getInt(Keys.FREE_PACK_COUNT, 0) }
+    val tokensBalance: Flow<Int>        = prefsFlow().map { it.getInt(Keys.TOKENS_BALANCE, 0) }
+
+    /** Daily activity count for *today*. Returns 0 if last activity was on a different date. */
+    val dailyActivityCount: Flow<Int>   = prefsFlow().map { p ->
+        val lastDate = p.getString(Keys.LAST_ACTIVITY_DATE, null)
+        if (lastDate == todayStr()) p.getInt(Keys.DAILY_ACTIVITY_COUNT, 0) else 0
+    }
 
     fun setDarkTheme(isDark: Boolean)    = prefs.edit().putBoolean(Keys.IS_DARK_THEME, isDark).apply()
     fun setUsername(name: String)        = prefs.edit().putString(Keys.USERNAME, name).apply()
@@ -75,12 +115,50 @@ class UserPreferencesRepository @Inject constructor(
     fun setLanguagePair(pair: String)    = prefs.edit().putString(Keys.LANGUAGE_PAIR, pair).apply()
     fun setNativeLanguage(lang: String)  = prefs.edit().putString(Keys.NATIVE_LANGUAGE, lang).apply()
 
-    fun getActivityCount(): Int    = prefs.getInt(Keys.ACTIVITY_COUNT, 0)
+    /** Same midnight-reset semantics as [activityCount] flow. */
+    fun getActivityCount(): Int {
+        val lastDate = prefs.getString(Keys.LAST_ACTIVITY_DATE, null)
+        return if (lastDate == todayStr()) prefs.getInt(Keys.ACTIVITY_COUNT, 0) else 0
+    }
     fun getFreePackCount(): Int    = prefs.getInt(Keys.FREE_PACK_COUNT, 0)
+    fun getTokensBalance(): Int    = prefs.getInt(Keys.TOKENS_BALANCE, 0)
     fun getLanguagePair(): String  = prefs.getString(Keys.LANGUAGE_PAIR, "en-ru") ?: "en-ru"
 
     fun setActivityCount(n: Int)  = prefs.edit().putInt(Keys.ACTIVITY_COUNT, n).apply()
     fun setFreePackCount(n: Int)  = prefs.edit().putInt(Keys.FREE_PACK_COUNT, n).apply()
+    fun setTokensBalance(n: Int)  = prefs.edit().putInt(Keys.TOKENS_BALANCE, n.coerceAtLeast(0)).apply()
+    fun addTokens(n: Int)         = setTokensBalance(getTokensBalance() + n)
+
+    /** Daily activity count for today (auto-resets across midnight). */
+    fun getDailyActivityCount(): Int {
+        val lastDate = prefs.getString(Keys.LAST_ACTIVITY_DATE, null)
+        return if (lastDate == todayStr()) prefs.getInt(Keys.DAILY_ACTIVITY_COUNT, 0) else 0
+    }
+
+    /**
+     * Tries to register one more activity toward today's quota.
+     * Returns true if it counted (under DAILY_ACTIVITY_LIMIT), false if the daily cap was reached.
+     *
+     * If the previous activity was on a different date, the progress-to-next-grant
+     * counter ([Keys.ACTIVITY_COUNT]) is also reset, so it cannot lag behind a
+     * fresh day.
+     */
+    fun registerDailyActivity(): Boolean {
+        val today = todayStr()
+        val lastDate = prefs.getString(Keys.LAST_ACTIVITY_DATE, null)
+        val isNewDay = lastDate != today
+        val current = if (isNewDay) 0 else prefs.getInt(Keys.DAILY_ACTIVITY_COUNT, 0)
+        if (current >= DAILY_ACTIVITY_LIMIT) return false
+        val edit = prefs.edit()
+            .putInt(Keys.DAILY_ACTIVITY_COUNT, current + 1)
+            .putString(Keys.LAST_ACTIVITY_DATE, today)
+        if (isNewDay) {
+            // Wipe stale grant-progress so Home and Shop never disagree across midnight.
+            edit.putInt(Keys.ACTIVITY_COUNT, 0)
+        }
+        edit.apply()
+        return true
+    }
 
     fun getPvpMultiplierHintSeen(): Boolean = prefs.getBoolean(Keys.PVP_MULTIPLIER_HINT_SEEN, false)
     fun setPvpMultiplierHintSeen()          = prefs.edit().putBoolean(Keys.PVP_MULTIPLIER_HINT_SEEN, true).apply()
