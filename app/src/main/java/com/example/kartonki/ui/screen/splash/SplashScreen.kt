@@ -1,40 +1,30 @@
 package com.example.kartonki.ui.screen.splash
 
-import androidx.compose.material3.MaterialTheme
-import android.graphics.BitmapFactory
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ImageBitmap
-import androidx.compose.ui.graphics.asImageBitmap
-import androidx.compose.foundation.Image
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.kartonki.R
 import kotlinx.coroutines.delay
 
 // Splash bg is fixed brand color — runs before any theme is read, so it should
-// not depend on light/dark mode.
+// not depend on light/dark mode. Matches @color/splash_background used by the
+// theme's windowBackground (so the system splash and the Compose splash blend
+// without a flicker).
 private val SplashBg = Color(0xFF0D0D1A)
 
 @Composable
 fun SplashScreen(onSplashFinished: () -> Unit) {
-    val context = LocalContext.current
-
-    var bitmap by remember { mutableStateOf<ImageBitmap?>(null) }
     LaunchedEffect(Unit) {
-        bitmap = BitmapFactory.decodeResource(context.resources, R.drawable.logo)?.asImageBitmap()
         delay(2000)
         onSplashFinished()
     }
@@ -45,13 +35,13 @@ fun SplashScreen(onSplashFinished: () -> Unit) {
             .background(SplashBg),
         contentAlignment = Alignment.Center,
     ) {
-        bitmap?.let {
-            Image(
-                bitmap = it,
-                contentDescription = "Kartonki",
-                contentScale = ContentScale.Fit,
-                modifier = Modifier.size(220.dp),
-            )
-        }
+        // Vector logo — same asset as the adaptive launcher foreground, no PNG
+        // anti-alias halo around the rounded card.
+        Image(
+            painter = painterResource(R.drawable.ic_launcher_foreground),
+            contentDescription = "Kartonki",
+            contentScale = ContentScale.Fit,
+            modifier = Modifier.size(220.dp),
+        )
     }
 }
