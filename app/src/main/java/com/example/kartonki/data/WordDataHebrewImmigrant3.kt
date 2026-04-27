@@ -26,7 +26,7 @@ object WordDataHebrewImmigrant3 {
         // ──────────────────────────────────────────────────────
 
         WordEntity(
-            id = 103101, setId = 1031, languagePair = "he-ru", rarity = "COMMON",
+            id = 103101, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "gan yeladim",
             original = "גַּן יְלָדִים", translation = "детский сад",
             definition = "מוֹסָד חִינּוּכִי לִילָדִים לִפְנֵי הַגִּיל שֶׁל בֵּית הַסֵּפֶר.",

@@ -215,7 +215,7 @@ object WordDataEnglishBatch13 {
             example = "Their engagement lasted almost two years before the wedding.",
             exampleNative = "Об engagement они рассказали родителям за семейным воскресным обедом.",
             pos = "noun", semanticGroup = "family_wedding_marriage", fillInBlankExclusions = listOf(28503L, 28507L, 28521L)),
-        WordEntity(id = 28502, setId = 285, languagePair = "en-ru", rarity = "UNCOMMON",
+        WordEntity(id = 28502, setId = 285, languagePair = "en-ru", rarity = "RARE",
             original = "wedding", transliteration = "[ˈwedɪŋ]", translation = "свадьба",
             definition = "The big day when two people become spouses in front of family.",
             definitionNative = "Тот самый день, когда двое становятся супругами при родных и друзьях.",

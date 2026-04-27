@@ -116,6 +116,21 @@ object WordRegistry {
                 WordDataEnglishEntertainmentL1L2L3.sets +
                 WordDataEnglishEntertainmentL4.sets +
                 WordDataEnglishEntertainmentL5.sets +
+                WordDataEnglishEmotionsL1.sets +
+                WordDataEnglishEmotionsL2.sets +
+                WordDataEnglishEmotionsL3.sets +
+                WordDataEnglishEmotionsL4.sets +
+                WordDataEnglishEmotionsL5.sets +
+                WordDataEnglishCityLifeL1.sets +
+                WordDataEnglishCityLifeL2.sets +
+                WordDataEnglishCityLifeL3.sets +
+                WordDataEnglishCityLifeL4.sets +
+                WordDataEnglishCityLifeL5.sets +
+                WordDataEnglishHolidaysL1.sets +
+                WordDataEnglishHolidaysL2.sets +
+                WordDataEnglishHolidaysL3.sets +
+                WordDataEnglishHolidaysL4.sets +
+                WordDataEnglishHolidaysL5.sets +
                 WordDataHebrewHealthFitnessL1L2L3.sets +
                 WordDataHebrewShoppingL1L2L3.sets +
                 WordDataHebrewEntertainmentL1L2L3.sets +
@@ -289,7 +304,22 @@ object WordRegistry {
                 WordDataHebrewBarberL4.sets +
                 WordDataHebrewBarberL5.sets +
                 WordDataHebrewPlumberL4.sets +
-                WordDataHebrewPlumberL5.sets
+                WordDataHebrewPlumberL5.sets +
+                WordDataHebrewDoctorL1.sets +
+                WordDataHebrewDoctorL2.sets +
+                WordDataHebrewDoctorL3.sets +
+                WordDataHebrewDoctorL4.sets +
+                WordDataHebrewDoctorL5.sets +
+                WordDataHebrewBureauL1.sets +
+                WordDataHebrewBureauL2.sets +
+                WordDataHebrewBureauL3.sets +
+                WordDataHebrewBureauL4.sets +
+                WordDataHebrewBureauL5.sets +
+                WordDataHebrewSchoolL1.sets +
+                WordDataHebrewSchoolL2.sets +
+                WordDataHebrewSchoolL3.sets +
+                WordDataHebrewSchoolL4.sets +
+                WordDataHebrewSchoolL5.sets
     }
 
     private val _allWordsRaw: List<WordEntity> by lazy {
@@ -361,6 +391,21 @@ object WordRegistry {
                 WordDataEnglishEntertainmentL1L2L3.words +
                 WordDataEnglishEntertainmentL4.words +
                 WordDataEnglishEntertainmentL5.words +
+                WordDataEnglishEmotionsL1.words +
+                WordDataEnglishEmotionsL2.words +
+                WordDataEnglishEmotionsL3.words +
+                WordDataEnglishEmotionsL4.words +
+                WordDataEnglishEmotionsL5.words +
+                WordDataEnglishCityLifeL1.words +
+                WordDataEnglishCityLifeL2.words +
+                WordDataEnglishCityLifeL3.words +
+                WordDataEnglishCityLifeL4.words +
+                WordDataEnglishCityLifeL5.words +
+                WordDataEnglishHolidaysL1.words +
+                WordDataEnglishHolidaysL2.words +
+                WordDataEnglishHolidaysL3.words +
+                WordDataEnglishHolidaysL4.words +
+                WordDataEnglishHolidaysL5.words +
                 WordDataHebrewHealthFitnessL1L2L3.words +
                 WordDataHebrewShoppingL1L2L3.words +
                 WordDataHebrewEntertainmentL1L2L3.words +
@@ -535,7 +580,22 @@ object WordRegistry {
                 WordDataHebrewBarberL4.words +
                 WordDataHebrewBarberL5.words +
                 WordDataHebrewPlumberL4.words +
-                WordDataHebrewPlumberL5.words
+                WordDataHebrewPlumberL5.words +
+                WordDataHebrewDoctorL1.words +
+                WordDataHebrewDoctorL2.words +
+                WordDataHebrewDoctorL3.words +
+                WordDataHebrewDoctorL4.words +
+                WordDataHebrewDoctorL5.words +
+                WordDataHebrewBureauL1.words +
+                WordDataHebrewBureauL2.words +
+                WordDataHebrewBureauL3.words +
+                WordDataHebrewBureauL4.words +
+                WordDataHebrewBureauL5.words +
+                WordDataHebrewSchoolL1.words +
+                WordDataHebrewSchoolL2.words +
+                WordDataHebrewSchoolL3.words +
+                WordDataHebrewSchoolL4.words +
+                WordDataHebrewSchoolL5.words
     }
 
     val allPrebuiltDecks: List<DeckSeed> by lazy {

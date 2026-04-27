@@ -1965,7 +1965,7 @@ object WordDataEnglishExpanded {
             definitionNative = "Заделывать трещины водостойким герметиком.", exampleNative = "Нанесите герметик вокруг ванны, чтобы вода не просачивалась за плитку."),
 
         // ━━━ SET 202 +12 — Праздники ━━━
-        WordEntity(id = 20211, original = "invitation", transliteration = "[ˌɪnvɪˈteɪʃən]", translation = "приглашение", rarity = "COMMON", setId = 202, languagePair = "en-ru", pos = "noun", semanticGroup = "celebrations",
+        WordEntity(id = 20211, original = "invitation", transliteration = "[ˌɪnvɪˈteɪʃən]", translation = "приглашение", rarity = "UNCOMMON", setId = 202, languagePair = "en-ru", pos = "noun", semanticGroup = "celebrations",
             definition = "A written or spoken request asking someone to attend an event.", example = "She sent out invitations to fifty guests.",
             definitionNative = "Письменная или устная просьба посетить мероприятие.", exampleNative = "Она разослала приглашения пятидесяти гостям.", isFillInBlankSafe = false),
         WordEntity(id = 20212, original = "bride", transliteration = "[braɪd]", translation = "невеста", rarity = "COMMON", setId = 202, languagePair = "en-ru", pos = "noun", semanticGroup = "celebrations",
@@ -2257,7 +2257,7 @@ object WordDataEnglishExpanded {
         WordEntity(id = 22009, original = "victim", transliteration = "[ˈvɪktɪm]", translation = "жертва", rarity = "UNCOMMON", setId = 220, languagePair = "en-ru", pos = "noun", semanticGroup = "law",
             definition = "A person who has been hurt or harmed as a result of a crime.", example = "The victim was asked to identify her attacker.",
             definitionNative = "Человек, пострадавший в результате преступления.", exampleNative = "Жертву попросили опознать нападавшего.", fillInBlankExclusions = listOf(22015L, 22020L)),
-        WordEntity(id = 22010, original = "fine", transliteration = "[faɪn]", translation = "штраф", rarity = "COMMON", setId = 220, languagePair = "en-ru", pos = "noun", semanticGroup = "law",
+        WordEntity(id = 22010, original = "fine", transliteration = "[faɪn]", translation = "штраф", rarity = "UNCOMMON", setId = 220, languagePair = "en-ru", pos = "noun", semanticGroup = "law",
             definition = "A sum of money that must be paid as a punishment.", example = "He was issued a fine for parking illegally.",
             definitionNative = "Денежная сумма, которую необходимо уплатить в качестве наказания.", exampleNative = "Ему выписали штраф за незаконную парковку.", fillInBlankExclusions = listOf(22019L)),
         WordEntity(id = 22011, original = "lawyer", transliteration = "[ˈlɔjər]", translation = "адвокат / юрист", rarity = "UNCOMMON", setId = 220, languagePair = "en-ru", pos = "noun", semanticGroup = "law",

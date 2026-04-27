@@ -100,7 +100,7 @@ object WordDataEnglishEverydayL3 {
             exampleNative = "Старые песни девяностых вызывают nostalgic чувства о школе.",
             pos = "adjective", semanticGroup = "everyday_emotions", fillInBlankExclusions = listOf(32706L, 32708L, 32709L, 32710L)),
 
-        WordEntity(id = 32708, setId = 327, languagePair = "en-ru", rarity = "UNCOMMON",
+        WordEntity(id = 32708, setId = 327, languagePair = "en-ru", rarity = "RARE",
             original = "restless", transliteration = "[ˈrestləs]", translation = "беспокойный, неугомонный",
             definition = "Unable to relax or stay still — full of nervous energy you can't release.",
             definitionNative = "Не способный расслабиться или сидеть на месте — полный нервной энергии.",

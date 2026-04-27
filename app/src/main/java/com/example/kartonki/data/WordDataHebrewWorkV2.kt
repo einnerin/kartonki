@@ -123,7 +123,7 @@ object WordDataHebrewWorkV2 {
             isFillInBlankSafe = false,
         ),
         WordEntity(
-            id = 164007, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
+            id = 164007, setId = 1640, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "service_profession",
             original = "גַּנֶּנֶת", translation = "воспитательница в детсаду",
             transliteration = "ганенет",

@@ -1234,7 +1234,7 @@ object WordDataHebrewAliyaV2 {
             exampleNative = "Израиль считается парламентской דֵּמוֹקְרַטְיָה.",
          fillInBlankExclusions = listOf(161415L, 161417L)),
         WordEntity(
-            id = 161417, setId = 1614, languagePair = "he-ru", rarity = "RARE",
+            id = 161417, setId = 1614, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "aliya_rights", transliteration = "khok yesod",
             original = "חוֹק יְסוֹד", translation = "Основной закон (конституционный)",
             definition = "חוֹק מַעֲמָד עֶלְיוֹן בַּאֲרוֹךְ בְּסִיס הַמִּשְׁטַר הַיִּשְׂרְאֵלִי.",
