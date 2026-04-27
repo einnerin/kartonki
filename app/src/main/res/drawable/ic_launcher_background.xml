@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Rarity-themed radial gradient: legendary gold core → epic purple →
+     deep navy edge. Mirrors the rarity palette in ui/theme/Color.kt. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
@@ -12,9 +14,12 @@
                 android:type="radial"
                 android:centerX="54"
                 android:centerY="54"
-                android:gradientRadius="76">
-                <item android:offset="0.0" android:color="#FF0E1C2E"/>
-                <item android:offset="1.0" android:color="#FF04080E"/>
+                android:gradientRadius="78">
+                <item android:offset="0.00" android:color="#FFF5A623"/>  <!-- LEGENDARY core -->
+                <item android:offset="0.35" android:color="#FF8A4B1F"/>  <!-- amber → deep amber -->
+                <item android:offset="0.62" android:color="#FF4A2168"/>  <!-- EPIC dimmed -->
+                <item android:offset="0.85" android:color="#FF1A2540"/>  <!-- RARE-deep -->
+                <item android:offset="1.00" android:color="#FF080C14"/>  <!-- bg deep -->
             </gradient>
         </aapt:attr>
     </path>
