@@ -71,6 +71,7 @@ fun HomeScreen(
     LaunchedEffect(Unit) { visible = true }
     val packState by packViewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
+    var showBetaDialog by remember { mutableStateOf(false) }
 
     OnResume { homeViewModel.refresh() }
 
@@ -195,6 +196,18 @@ fun HomeScreen(
         ) {
             Text("⚙", fontSize = 22.sp, color = AccentGold.copy(alpha = 0.8f))
         }
+
+        // Beta badge (bottom center) — clicking opens feedback dialog
+        BetaBadge(
+            onClick = { showBetaDialog = true },
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = 32.dp),
+        )
+    }
+
+    if (showBetaDialog) {
+        BetaInfoDialog(onDismiss = { showBetaDialog = false })
     }
 }
 

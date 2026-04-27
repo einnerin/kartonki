@@ -30,6 +30,16 @@ data class AppStrings(
     val homeProblemWordsSubtitle: String,
     val homePackReady: String,
 
+    // Beta badge & feedback dialog
+    val betaBadge: String,
+    val betaDialogTitle: String,
+    val betaDialogText: String,
+    val betaDialogEmailLabel: String,
+    val betaDialogCopyEmail: String,
+    val betaDialogEmailCopied: String,
+    val betaDialogWriteEmail: String,
+    val betaDialogClose: String,
+
     // Study
     val studyTitle: String,
     val studyBack: String,
@@ -271,6 +281,15 @@ val RuStrings = AppStrings(
     homeProblemWordsSubtitle = "Поработать над ошибками?",
     homePackReady          = "Пак готов!",
 
+    betaBadge              = "БЕТА",
+    betaDialogTitle        = "Бета-версия",
+    betaDialogText         = "Приложение находится на стадии тестирования. Будем благодарны за любую обратную связь! Отправляйте свои идеи и комментарии на почту:",
+    betaDialogEmailLabel   = "Почта для обратной связи",
+    betaDialogCopyEmail    = "Скопировать",
+    betaDialogEmailCopied  = "Скопировано",
+    betaDialogWriteEmail   = "Написать письмо",
+    betaDialogClose        = "Закрыть",
+
     studyTitle = "Изучать слова",
     studyBack  = "← Назад",
 
@@ -479,6 +498,15 @@ val EnStrings = AppStrings(
     homeProblemWordsTitle  = { n -> "Problem words: $n" },
     homeProblemWordsSubtitle = "Work on your mistakes?",
     homePackReady          = "Pack ready!",
+
+    betaBadge              = "BETA",
+    betaDialogTitle        = "Beta version",
+    betaDialogText         = "The app is in testing. We'd be grateful for any feedback! Send ideas and comments to:",
+    betaDialogEmailLabel   = "Feedback email",
+    betaDialogCopyEmail    = "Copy",
+    betaDialogEmailCopied  = "Copied",
+    betaDialogWriteEmail   = "Write an email",
+    betaDialogClose        = "Close",
 
     studyTitle = "Study words",
     studyBack  = "← Back",
@@ -689,6 +717,15 @@ val DeStrings = AppStrings(
     homeProblemWordsSubtitle = "Fehler aufarbeiten?",
     homePackReady          = "Pack bereit!",
 
+    betaBadge              = "BETA",
+    betaDialogTitle        = "Beta-Version",
+    betaDialogText         = "Die App befindet sich in der Testphase. Wir freuen uns über jedes Feedback! Schick deine Ideen und Kommentare an:",
+    betaDialogEmailLabel   = "Feedback-E-Mail",
+    betaDialogCopyEmail    = "Kopieren",
+    betaDialogEmailCopied  = "Kopiert",
+    betaDialogWriteEmail   = "E-Mail schreiben",
+    betaDialogClose        = "Schließen",
+
     studyTitle = "Wörter lernen",
     studyBack  = "← Zurück",
 
@@ -897,6 +934,15 @@ val FrStrings = AppStrings(
     homeProblemWordsTitle  = { n -> "Mots difficiles : $n" },
     homeProblemWordsSubtitle = "Travailler ses erreurs ?",
     homePackReady          = "Pack prêt !",
+
+    betaBadge              = "BÊTA",
+    betaDialogTitle        = "Version bêta",
+    betaDialogText         = "L'application est en phase de test. Tout retour est le bienvenu ! Envoie tes idées et commentaires à :",
+    betaDialogEmailLabel   = "E-mail de retour",
+    betaDialogCopyEmail    = "Copier",
+    betaDialogEmailCopied  = "Copié",
+    betaDialogWriteEmail   = "Écrire un e-mail",
+    betaDialogClose        = "Fermer",
 
     studyTitle = "Apprendre des mots",
     studyBack  = "← Retour",
@@ -1107,6 +1153,15 @@ val EsStrings = AppStrings(
     homeProblemWordsSubtitle = "¿Trabajar los errores?",
     homePackReady          = "¡Pack listo!",
 
+    betaBadge              = "BETA",
+    betaDialogTitle        = "Versión beta",
+    betaDialogText         = "La aplicación está en pruebas. ¡Cualquier comentario es bienvenido! Envía tus ideas y opiniones a:",
+    betaDialogEmailLabel   = "Correo de feedback",
+    betaDialogCopyEmail    = "Copiar",
+    betaDialogEmailCopied  = "Copiado",
+    betaDialogWriteEmail   = "Escribir correo",
+    betaDialogClose        = "Cerrar",
+
     studyTitle = "Aprender palabras",
     studyBack  = "← Atrás",
 
@@ -1315,6 +1370,15 @@ val ZhStrings = AppStrings(
     homeProblemWordsTitle  = { n -> "问题单词：$n" },
     homeProblemWordsSubtitle = "练习错误单词？",
     homePackReady          = "卡包准备好了！",
+
+    betaBadge              = "测试版",
+    betaDialogTitle        = "测试版",
+    betaDialogText         = "应用正在测试中。欢迎任何反馈！请将想法和意见发送至：",
+    betaDialogEmailLabel   = "反馈邮箱",
+    betaDialogCopyEmail    = "复制",
+    betaDialogEmailCopied  = "已复制",
+    betaDialogWriteEmail   = "写邮件",
+    betaDialogClose        = "关闭",
 
     studyTitle = "学习单词",
     studyBack  = "← 返回",
@@ -1525,6 +1589,15 @@ val JaStrings = AppStrings(
     homeProblemWordsSubtitle = "ミスを復習しますか？",
     homePackReady          = "パック準備完了！",
 
+    betaBadge              = "ベータ",
+    betaDialogTitle        = "ベータ版",
+    betaDialogText         = "アプリはテスト中です。フィードバックをお寄せください！ご意見・ご感想は次のメールへ：",
+    betaDialogEmailLabel   = "フィードバック用メール",
+    betaDialogCopyEmail    = "コピー",
+    betaDialogEmailCopied  = "コピーしました",
+    betaDialogWriteEmail   = "メールを書く",
+    betaDialogClose        = "閉じる",
+
     studyTitle = "単語を学ぶ",
     studyBack  = "← 戻る",
 
@@ -1733,6 +1806,15 @@ val ArStrings = AppStrings(
     homeProblemWordsTitle  = { n -> "كلمات صعبة: $n" },
     homeProblemWordsSubtitle = "مراجعة الأخطاء؟",
     homePackReady          = "الحزمة جاهزة!",
+
+    betaBadge              = "بيتا",
+    betaDialogTitle        = "نسخة بيتا",
+    betaDialogText         = "التطبيق في مرحلة الاختبار. نرحّب بأي ملاحظات! أرسل أفكارك وتعليقاتك إلى:",
+    betaDialogEmailLabel   = "بريد الملاحظات",
+    betaDialogCopyEmail    = "نسخ",
+    betaDialogEmailCopied  = "تم النسخ",
+    betaDialogWriteEmail   = "اكتب رسالة",
+    betaDialogClose        = "إغلاق",
 
     studyTitle = "تعلّم الكلمات",
     studyBack  = "← رجوع",
