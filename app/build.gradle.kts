@@ -61,7 +61,8 @@ android {
             //   1. ./gradlew assembleRelease  → install APK → exercise critical flows
             //   2. flip isMinifyEnabled = true → repeat
             //   3. flip isShrinkResources = true → repeat
-            isMinifyEnabled = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
