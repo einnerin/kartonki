@@ -134,9 +134,13 @@ object WordRegistry {
                 WordDataEnglishWeatherL1.sets +
                 WordDataEnglishWeatherL2.sets +
                 WordDataEnglishWeatherL3.sets +
+                WordDataEnglishWeatherL4.sets +
+                WordDataEnglishWeatherL5.sets +
                 WordDataEnglishAppearanceL1.sets +
                 WordDataEnglishAppearanceL2.sets +
                 WordDataEnglishAppearanceL3.sets +
+                WordDataEnglishAppearanceL4.sets +
+                WordDataEnglishAppearanceL5.sets +
                 WordDataHebrewHealthFitnessL1L2L3.sets +
                 WordDataHebrewShoppingL1L2L3.sets +
                 WordDataHebrewEntertainmentL1L2L3.sets +
@@ -417,9 +421,13 @@ object WordRegistry {
                 WordDataEnglishWeatherL1.words +
                 WordDataEnglishWeatherL2.words +
                 WordDataEnglishWeatherL3.words +
+                WordDataEnglishWeatherL4.words +
+                WordDataEnglishWeatherL5.words +
                 WordDataEnglishAppearanceL1.words +
                 WordDataEnglishAppearanceL2.words +
                 WordDataEnglishAppearanceL3.words +
+                WordDataEnglishAppearanceL4.words +
+                WordDataEnglishAppearanceL5.words +
                 WordDataHebrewHealthFitnessL1L2L3.words +
                 WordDataHebrewShoppingL1L2L3.words +
                 WordDataHebrewEntertainmentL1L2L3.words +
