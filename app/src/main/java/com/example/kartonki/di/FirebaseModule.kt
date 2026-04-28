@@ -23,8 +23,11 @@ object FirebaseModule {
         val existing = FirebaseApp.getApps(context)
         if (existing.isNotEmpty()) return FirebaseApp.getInstance()
 
+        // Firebase mobilesdk_app_id for com.einerin.kartonki — registered
+        // 2026-04-27 alongside the old com.example.kartonki app (still in
+        // google-services.json under client[1] for emergency rollback).
         val options = FirebaseOptions.Builder()
-            .setApplicationId("1:75116979020:android:77edb30deed49a3fa3a5e9")
+            .setApplicationId("1:75116979020:android:e18e4f82b679f85ea3a5e9")
             .setApiKey("AIzaSyDynvSZY0b2zBRoqba3E_9QkYLVGD8kM0w")
             .setProjectId("kartonki-e18c5")
             .setGcmSenderId("75116979020")

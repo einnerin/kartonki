@@ -29,7 +29,12 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.kartonki"
+        // Permanent identity in Google Play — chosen 2026-04-27 to replace the
+        // example.* placeholder before first publish. Cannot be changed after
+        // upload to Play Store. Kotlin package (namespace) stays as
+        // "com.example.kartonki" to avoid touching every import in the codebase
+        // — applicationId and namespace are independent and don't have to match.
+        applicationId = "com.einerin.kartonki"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
