@@ -1,6 +1,6 @@
 # План релиза в Google Play Store
 
-**Статус на 2026-04-28:** Кодовая release-инфра готова. Осталась физическая часть (keystore, Play Console аккаунт, листинг). Стратегия — Internal testing → Open testing (бета для первых пользователей) → Production.
+**Статус на 2026-04-29:** Кодовая release-инфра готова, **keystore создан и проверен на телефоне, ID verification approved**. Осталась физическая часть в Play Console (создание приложения, листинг, загрузка AAB). Стратегия — Internal testing → Open testing (бета для первых пользователей) → Production.
 
 Когда возвращаешься к задаче — **начни с чтения этого файла**. Он описывает где мы остановились и что дальше.
 
@@ -69,69 +69,50 @@
 
 ---
 
-## ⏳ Что осталось — release-подготовка
+## ✅ Сделано 2026-04-29
 
-### 1. Signing keystore (критически важно, **НЕЛЬЗЯ потерять потом**)
+### Release keystore (создан, проверен)
+- **Файл:** `C:\Users\Einerin\.android-keystores\kartonki-release.jks`
+- **Параметры:** RSA 2048, SHA384withRSA, validity 10000 дней (~2053), alias `kartonki`
+- **DN:** `CN=kartonki.developer, C=IL`
+- **Release SHA-1:** `C3:6F:3C:D2:ED:59:45:BA:0A:4B:49:56:95:76:05:C8:B3:5C:8D:DC` — добавлен в Firebase Console
+- **Release SHA-256:** `09:76:E6:6A:0C:B3:96:94:7B:B2:5A:C2:EB:E6:59:81:9F:96:47:AD:74:2F:4F:4C:E0:29:AB:3C:1D:B5:41:DF`
+- **Debug SHA-1:** `C7:79:05:36:20:D1:98:07:90:78:0F:C0:92:3B:0B:64:43:5A:7B:F8` — добавлен в Firebase Console
+- **Бэкапы:** Google Drive
+- **Пароли:** в Bitwarden vault
+- **`keystore.properties`** в корне репо (gitignored), Gradle подписывает автоматически
 
-Keystore = файл с твоей подписью. Без него Play Store не пустит апдейты (проверяет что новый APK подписан тем же ключом что и первый).
+### `app/google-services.json` обновлён с новыми SHA-1
 
-**Действия:**
-1. Сгенерировать через Android Studio: `Build → Generate Signed Bundle / APK → Create new keystore`
-2. Или через командную строку:
-   ```powershell
-   "C:\Program Files\Android\Android Studio\jbr\bin\keytool.exe" -genkey -v -keystore kartonki-release.jks -keyalg RSA -keysize 2048 -validity 10000 -alias kartonki
-   ```
-3. **Запомни/сохрани в менеджере паролей:**
-   - Store password (общий пароль keystore)
-   - Key password (пароль конкретного ключа, можно такой же)
-   - Key alias (`kartonki` в примере)
-4. **Положи keystore вне репо** — например в `C:\Users\Einerin\.android-keystores\kartonki-release.jks`
-5. **Сделай бэкап** этого файла (Google Drive / Dropbox / внешний диск). Потеря = невозможность апдейтов навсегда
+### AAB и APK собраны и проверены
+- AAB: `app/build/outputs/bundle/release/app-release.aab` (12.8 MB)
+- APK: `app/build/outputs/apk/release/app-release.apk` (8.3 MB) — установлен на телефон через `adb install -r`
+- Smoke-test пройден: study-сессия, квизы (FILL_IN_BLANK/DEFINITION/MCT), PvP local, коллекция, паки, settings, TTS, achievements, **Google Sign-In работает в release**
 
-### 2. Создать `keystore.properties`
+### Play Console verification approved
+- ID verification: **APPROVED** 2026-04-29 (Teudat Zehut + Sefah)
+- Адрес: Hashlavim 10, кв. 4, Givatayim 5325615, Israel
+- Блокировка снята — можно создавать приложения
 
-После генерации keystore — рядом с `app/build.gradle.kts` (в корне репо) создать файл `keystore.properties` (он уже в `.gitignore`):
+## ⏳ Что осталось
 
-```properties
-storeFile=C:/Users/Einerin/.android-keystores/kartonki-release.jks
-storePassword=...
-keyAlias=kartonki
-keyPassword=...
-```
+### Build команды для повторных сборок
 
-После этого `assembleRelease` подпишется реальным ключом, без debug-fallback warning'а. Никаких изменений в `build.gradle.kts` не нужно — он уже умеет читать этот файл.
-
-### 3. Версионирование (готово)
-
-`versionCode = 1`, `versionName = "0.1.0"`. При каждом обновлении в Play — `versionCode += 1` (иначе Play отклонит апдейт). `versionName` менять по semver (`0.1.1` → `0.2.0` → `1.0.0` для production).
-
-### 4. Собрать Release AAB
-
-Play Store предпочитает `.aab` (Android App Bundle), не `.apk`. Gradle команда:
-```
-JAVA_HOME="C:/Program Files/Android/Android Studio/jbr" ./gradlew bundleRelease -x lintVitalAnalyzeRelease
-```
-(флаг `-x` пропускает lint, который сейчас падает из-за неподнятого локального Maven-прокси на 127.0.0.1:18080. Перед production-релизом нужно поднять прокси или fix конфигурацию репозиториев и пройти lint один раз.)
-
-Результат: `app/build/outputs/bundle/release/app-release.aab`.
-
-### 5. Протестировать release-билд на телефоне (можно ДО создания keystore'а — fallback на debug-подпись)
-
+**AAB для загрузки в Play Console:**
 ```powershell
+$env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
+./gradlew bundleRelease -x lintVitalAnalyzeRelease -x lintVitalReportRelease -x lintVitalRelease -x lint -x lintRelease -x lintAnalyzeRelease -x lintReportRelease
+```
+
+**APK для прямой установки на телефон:**
+```powershell
+$env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
+./gradlew assembleRelease -x lintVitalAnalyzeRelease -x lintVitalReportRelease -x lintVitalRelease -x lint -x lintRelease -x lintAnalyzeRelease -x lintReportRelease
 & "C:\Users\Einerin\AppData\Local\Android\Sdk\platform-tools\adb.exe" install -r "C:\Users\Einerin\AndroidStudioProjects\Kartonki\app\build\outputs\apk\release\app-release.apk"
 ```
 
-Прогнать все основные сценарии:
-- Онбординг (если есть)
-- Вход в study-сессию, квиз FILL_IN_BLANK / DEFINITION
-- PvP local
-- PvP online (требует Google Sign-In → нужен SHA-1 в Firebase Console для com.einerin.kartonki)
-- Настройки
-- Достижения
-- Коллекция, открытие паков
-- TTS на иврите/английском
-
-Если что-то падает — проблема в ProGuard rules, лог в Logcat. Добавить targeted `-keep` в `app/proguard-rules.pro`.
+### Versioning
+`versionCode = 1`, `versionName = "0.1.0"`. При каждом обновлении в Play — `versionCode += 1`. `versionName` по semver.
 
 ---
 
@@ -195,7 +176,9 @@ JAVA_HOME="C:/Program Files/Android/Android Studio/jbr" ./gradlew bundleRelease 
 | Privacy policy URL (ru) | https://einnerin.github.io/kartonki/legal/privacy-policy | Для Play Console |
 | Privacy policy URL (en) | https://einnerin.github.io/kartonki/legal/privacy-policy-en | Опционально |
 | google-services.json | `app/google-services.json` | **В .gitignore**, не коммитить |
-| Signing keystore | *ещё не создан* | Создать **вне репо**, бэкапнуть в облако |
+| Signing keystore | `C:\Users\Einerin\.android-keystores\kartonki-release.jks` | Создан 2026-04-29, бэкап в Google Drive, пароли в Bitwarden |
+| Release SHA-1 | `C3:6F:3C:D2:ED:59:45:BA:0A:4B:49:56:95:76:05:C8:B3:5C:8D:DC` | Добавлен в Firebase для `com.einerin.kartonki` |
+| Debug SHA-1 | `C7:79:05:36:20:D1:98:07:90:78:0F:C0:92:3B:0B:64:43:5A:7B:F8` | Добавлен в Firebase |
 | keystore.properties | корень репо | **В .gitignore**, паттерн в build.gradle.kts |
 | Release AAB | `app/build/outputs/bundle/release/` | После сборки |
 | Бэкап старого google-services.json | пользователь сохранил локально 2026-04-28 | Для отката если новая регистрация Firebase сломается |
@@ -207,19 +190,21 @@ JAVA_HOME="C:/Program Files/Android/Android Studio/jbr" ./gradlew bundleRelease 
 
 Скажи Claude: **«Возвращаемся к release-подготовке, читай `docs/claude/release-plan.md`»**
 
-Текущий статус (2026-04-28): кодовая часть готова. Очерёдность дальше:
+Текущий статус (2026-04-29): кодовая часть и keystore готовы, AAB собран, ID verification approved. Очерёдность дальше:
 
-1. **Тестовая установка release-APK на телефон** — `app/build/outputs/apk/release/app-release.apk` уже есть (debug-подписанный, 7.8 MB после R8). Убедиться что приложение работает после минификации — все основные сценарии.
-2. **SHA-1 в Firebase Console для Google Sign-In** — иначе вход через Google в debug сломан после смены applicationId.
-3. **Сгенерировать release keystore** — `keytool -genkey ...`, положить вне репо, **сделать минимум 2 бэкапа в облака**. Пароли — в менеджер паролей.
-4. **Создать `keystore.properties`** — рядом с build.gradle.kts (gitignore'нут).
-5. **Регистрация Play Console аккаунта** — $25, ID-верификация 1-3 дня.
-6. **Параллельно листинг материалы**: иконка 512×512, feature graphic 1024×500, скриншоты, описание (короткое 80 символов + полное 4000).
-7. **Поднять локальный Maven proxy** перед production-сборкой (или fix конфигурацию репозиториев) — чтобы lint прошёл без `-x lintVitalAnalyzeRelease`.
-8. **Загрузка в Internal testing** — для себя + 3-4 тестеров (часы на ревью).
-9. **Параллельно Closed testing** с 12 тестерами на 14 дней (запускает таймер production access).
-10. **Open testing** — публичная бета для первых пользователей (Early access tag).
-11. **Production** — после 14 дней Closed test и заявки на production access.
+1. **Play Console → Create app**:
+   - Название: обсуждалось `Картонки — учи слова с игрой` или `Kartonki`
+   - Default language: ru-RU
+   - Тип: Education App
+   - Free
+2. **Setup checklist в Console** — Privacy URL `https://einnerin.github.io/kartonki/legal/privacy-policy`, App access (без логин-стенки), Ads (нет), Content rating (IARC), Target audience (13+), Data safety form, government/news/COVID-19 → No.
+3. **Main store listing** — иконка 512×512, feature graphic 1024×500, скриншоты, короткое (≤80) и полное (≤4000) описание. Listing-материалы можно готовить параллельно.
+4. **Загрузка AAB в Internal testing** — `app/build/outputs/bundle/release/app-release.aab` уже собран. Создать релиз, указать release notes.
+5. **После первой загрузки AAB — Production SHA-1**: Play Console → Release → Setup → App integrity → App signing key certificate → скопировать SHA-1 → добавить в Firebase Console для `com.einerin.kartonki` четвёртым отпечатком (без него Google Sign-In у production-пользователей не сработает).
+6. **Параллельно Closed testing** с 12 тестерами на 14 дней (запускает таймер production access).
+7. **Open testing** — публичная бета для первых пользователей (Early access tag).
+8. **Production** — после 14 дней Closed test и заявки на production access.
+9. **Поднять локальный Maven proxy** перед production-сборкой (или fix конфигурацию репозиториев) — чтобы lint прошёл без 7 `-x` флагов.
 
 ---
 
