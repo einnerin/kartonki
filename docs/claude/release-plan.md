@@ -116,31 +116,18 @@ $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 
 ---
 
-## ⏳ Твоя часть — визуал и листинг
+## ✅ Сделано 2026-04-29 (вечер) — листинг-артефакты
 
-**Можешь начать в любой момент параллельно с release-подготовкой:**
+Все материалы для Play Console листинга в `docs/release-assets/`:
 
-### Иконка приложения
-- **512×512 PNG** — для листинга в Play Store
-- Также нужна в приложении (вероятно уже есть в `app/src/main/res/mipmap-*`)
-
-### Feature graphic
-- **1024×500 PNG** — баннер, показывается на карточке приложения в Play Store
-- Можно сделать в Figma / Canva / Paint.NET — простой фон + название + подзаголовок
-
-### Скриншоты
-- Минимум 2, рекомендую 4-8
-- Разрешение любое, но одинаковое для всех
-- Снимки через эмулятор: **Extended Controls** (три точки справа) → **Camera** → **Take screenshot**
-- Или с телефона: `adb exec-out screencap -p > screenshot.png`
-
-### Описание
-- **Короткое** — до 80 символов. Пример: «Учи иностранные слова через квизы и PvP-карточки»
-- **Полное** — до 4000 символов. Разделы:
-  - Что приложение делает
-  - Ключевые фичи (PvE интервальное повторение, PvP локальный и онлайн, коллекция карт, достижения)
-  - Поддерживаемые языки (en-ru, he-ru)
-  - Преимущества перед конкурентами (если хочешь)
+| Файл | Что внутри |
+|---|---|
+| `play_store_icon_512.png` | Иконка 512×512 PNG (RGB, без alpha) — готова к загрузке. Регенерируется `python scripts/release/make_play_icon.py` |
+| `feature_graphic_1024x500.png` | Draft feature graphic. ОК для Internal/Open testing, для Production желательно заменить дизайнерским вариантом. Регенерируется `python scripts/release/make_feature_graphic.py` |
+| `listing-ru.md` | App name (≤30), short description (≤80), full description (~1900 симв из 4000), release notes для Internal — на русском, варианты на выбор |
+| `data-safety-form.md` | Шпаргалка для Data safety form в Console — по каждому типу данных (Personal info, App activity, Crash logs, Device IDs) с источниками в коде |
+| `content-rating-iarc.md` | Шпаргалка для IARC questionnaire (категория Education, ожидаемый рейтинг 3+) |
+| `screenshots-guide.md` | Инструкция как снимать 4-6 скриншотов: какие экраны, на эмуляторе или телефоне, команды adb. Сами скрины снимает пользователь, складывать в `docs/release-assets/screenshots/NN-name.png` |
 
 ---
 
@@ -205,6 +192,25 @@ $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 7. **Open testing** — публичная бета для первых пользователей (Early access tag).
 8. **Production** — после 14 дней Closed test и заявки на production access.
 9. **Поднять локальный Maven proxy** перед production-сборкой (или fix конфигурацию репозиториев) — чтобы lint прошёл без 7 `-x` флагов.
+
+---
+
+## ⚠️ Известные блокеры перед Production (не блокируют Internal)
+
+### In-app account deletion
+Google требует с 2024: если приложение позволяет создать аккаунт, оно должно предоставить **in-app кнопку «Удалить аккаунт»** + **web-ссылку для удаления без установки**. Сейчас удаление только через email `einerin40@gmail.com` (упомянуто в `docs/legal/privacy-policy.md`, SLA 30 дней).
+
+Что нужно сделать:
+- Добавить кнопку «Удалить аккаунт» в `SettingsScreen` для авторизованных пользователей. Действие: подтверждение → вызов Firebase Auth `delete()` + удаление документа в Firestore `/users/{uid}` + очистка PvP истории в RTDB
+- Опционально: лендинг с формой запроса на удаление для не-установивших (можно простую страницу в `docs/legal/`)
+
+Для Internal testing — не блокер (review нет, доступ только по opt-in URL). Для Open/Production — блокирующий.
+
+### Feature graphic
+Текущий — placeholder из `make_feature_graphic.py`. Для Production желательно заменить дизайнерским (Figma/Canva), для Open testing — допустим.
+
+### Скриншоты
+Не сняты. Без них Console не даст загрузить листинг (минимум 2 phone screenshots обязательны). См. `docs/release-assets/screenshots-guide.md`.
 
 ---
 
