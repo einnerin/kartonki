@@ -66,29 +66,33 @@ adb shell rm /sdcard/screen.png
 
 **На Windows + Git Bash** этот путь надёжнее чем `adb exec-out screencap -p > screen.png`, потому что Bash может побить бинарный stream символами CRLF. Через `screencap → pull` PNG идёт через файл, без преобразований.
 
-Для удобства — функция в Bash:
+Для удобства — готовый скрипт `scripts/release/shot.sh`:
 
 ```bash
-shot() {
-  local name="${1:-screen}"
-  local path="docs/release-assets/screenshots/${name}.png"
-  mkdir -p docs/release-assets/screenshots
-  adb shell screencap -p /sdcard/_shot.png
-  adb pull /sdcard/_shot.png "$path"
-  adb shell rm /sdcard/_shot.png
-  echo "saved: $path"
-}
+# по одному кадру за вызов — кладёт в docs/release-assets/screenshots/<name>.png
+bash scripts/release/shot.sh 01-card
+bash scripts/release/shot.sh 02-quiz
+bash scripts/release/shot.sh 03-themes
 
-# usage:
-shot 01-card
-shot 02-quiz
+# чистый статус-бар: 12:00, battery 100%, wifi 4, без уведомлений
+bash scripts/release/shot.sh demo-on
+# вернуть статус-бар в нормальный режим
+bash scripts/release/shot.sh demo-off
 ```
 
 ### Вариант C — release-сборка на телефоне
 
-Сейчас на телефоне **release-сборка** (после теста 2026-04-29). Это удобно — можно снимать прям с неё, цвета и icon идентичны тому что увидят пользователи. Проверь только что app в нормальном состоянии (есть прогресс, есть карточки в коллекции).
+Сейчас на телефоне **release-сборка** от 2026-04-29 (без in-app deletion флоу). Если хочешь снимать с актуальной версии (включая кнопку «Удалить аккаунт» в Settings — хотя она не идёт в скрины листинга), накати свежую:
 
-Если хочешь снимать с **debug** — `adb uninstall com.einerin.kartonki` и поставить debug заново через Run.
+```bash
+bash scripts/release/install-release.sh --build
+# или, если AAB/APK уже свежий, просто:
+bash scripts/release/install-release.sh
+```
+
+Цвета и иконка release-сборки идентичны тому что увидят пользователи. Проверь только что app в нормальном состоянии (есть прогресс, есть карточки в коллекции, серия ≥ 2 дня).
+
+Если хочешь снимать с **debug** — `adb uninstall com.einerin.kartonki` и поставить debug заново через Run в Android Studio.
 
 ---
 
