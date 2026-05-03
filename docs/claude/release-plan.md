@@ -164,7 +164,9 @@ $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 | Privacy policy URL (en) | https://einnerin.github.io/kartonki/legal/privacy-policy-en | Опционально |
 | google-services.json | `app/google-services.json` | **В .gitignore**, не коммитить |
 | Signing keystore | `C:\Users\Einerin\.android-keystores\kartonki-release.jks` | Создан 2026-04-29, бэкап в Google Drive, пароли в Bitwarden |
-| Release SHA-1 | `C3:6F:3C:D2:ED:59:45:BA:0A:4B:49:56:95:76:05:C8:B3:5C:8D:DC` | Добавлен в Firebase для `com.einerin.kartonki` |
+| Release SHA-1 (upload key) | `C3:6F:3C:D2:ED:59:45:BA:0A:4B:49:56:95:76:05:C8:B3:5C:8D:DC` | Наш keystore. В Firebase для `com.einerin.kartonki` |
+| Production SHA-1 (Play App Signing) | `13:C4:3C:51:F0:9C:0F:F4:9A:72:E4:85:95:4C:35:63:73:C5:B5:1D` | Google'овский ключ, которым подписаны сборки в Play Store. В Firebase для `com.einerin.kartonki` (добавлен 2026-05-03) |
+| Production SHA-256 | `91:7A:61:DC:E6:0A:D1:EB:94:42:16:E5:93:F5:57:7C:2D:AF:0B:46:86:D9:3C:F4:B2:80:AC:ED:69:CD:DD:BE` | Для Digital Asset Links / OAuth client config |
 | Debug SHA-1 | `C7:79:05:36:20:D1:98:07:90:78:0F:C0:92:3B:0B:64:43:5A:7B:F8` | Добавлен в Firebase |
 | keystore.properties | корень репо | **В .gitignore**, паттерн в build.gradle.kts |
 | Release AAB | `app/build/outputs/bundle/release/` | После сборки |
