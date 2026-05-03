@@ -161,6 +161,7 @@ object WordRegistry {
                 WordDataEnglishMusicL3.sets +
                 WordDataEnglishMusicL4.sets +
                 WordDataEnglishMusicL5.sets +
+                WordDataEnglishIdiomsL1.sets +
                 WordDataHebrewHealthFitnessL1L2L3.sets +
                 WordDataHebrewShoppingL1L2L3.sets +
                 WordDataHebrewEntertainmentL1L2L3.sets +
@@ -379,7 +380,8 @@ object WordRegistry {
                 WordDataHebrewIsraeliCuisineL2.sets +
                 WordDataHebrewIsraeliCuisineL3.sets +
                 WordDataHebrewIsraeliCuisineL4.sets +
-                WordDataHebrewIsraeliCuisineL5.sets
+                WordDataHebrewIsraeliCuisineL5.sets +
+                WordDataHebrewIdiomsL1.sets
     }
 
     private val _allWordsRaw: List<WordEntity> by lazy {
@@ -496,6 +498,7 @@ object WordRegistry {
                 WordDataEnglishMusicL3.words +
                 WordDataEnglishMusicL4.words +
                 WordDataEnglishMusicL5.words +
+                WordDataEnglishIdiomsL1.words +
                 WordDataHebrewHealthFitnessL1L2L3.words +
                 WordDataHebrewShoppingL1L2L3.words +
                 WordDataHebrewEntertainmentL1L2L3.words +
@@ -715,7 +718,8 @@ object WordRegistry {
                 WordDataHebrewIsraeliCuisineL2.words +
                 WordDataHebrewIsraeliCuisineL3.words +
                 WordDataHebrewIsraeliCuisineL4.words +
-                WordDataHebrewIsraeliCuisineL5.words
+                WordDataHebrewIsraeliCuisineL5.words +
+                WordDataHebrewIdiomsL1.words
     }
 
     val allPrebuiltDecks: List<DeckSeed> by lazy {
