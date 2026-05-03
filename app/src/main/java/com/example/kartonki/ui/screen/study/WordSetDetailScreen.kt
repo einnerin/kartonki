@@ -46,6 +46,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.R
 import com.example.kartonki.domain.model.Word
+import com.example.kartonki.ui.component.OnResume
 import com.example.kartonki.ui.component.WordDetailOverlay
 import com.example.kartonki.ui.theme.LocalAppStrings
 
@@ -59,6 +60,9 @@ fun WordSetDetailScreen(
     val uiState by viewModel.uiState.collectAsState()
     val s = LocalAppStrings.current
     var selectedWord by remember { mutableStateOf<Word?>(null) }
+
+    // Возврат из StudySession — обновить «Изучено: X/Y» без флэша спиннером
+    OnResume { viewModel.refreshProgress() }
 
     Scaffold(
         topBar = {

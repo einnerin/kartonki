@@ -80,4 +80,18 @@ class WordSetDetailViewModel @Inject constructor(
             }
         }
     }
+
+    /**
+     * Только перечитывает прогресс — не флэшит loading-спиннером и не дёргает
+     * analytics. Вызывается при возврате на экран из study-сессии: пользователь
+     * уже видит старый список слов, мы тихо обновляем "Изучено: X/Y" с актуального
+     * состояния прогресса в БД.
+     */
+    fun refreshProgress() {
+        viewModelScope.launch {
+            val progress = progressRepository.getProgressForSet(setId)
+            val introduced = progress.count { p -> p.level > 0 }
+            _uiState.update { it.copy(introducedWords = introduced) }
+        }
+    }
 }
