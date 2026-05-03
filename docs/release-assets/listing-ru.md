@@ -105,5 +105,6 @@ v0.1.0 — первая internal-сборка для тестеров.
 | Contact email | `einerin40@gmail.com` |
 | Contact website | (оставить пустым — корень GitHub Pages 404, лендинга нет) |
 | Privacy policy URL | `https://einnerin.github.io/kartonki/legal/privacy-policy` |
+| Account deletion URL (если Console спросит) | `https://einnerin.github.io/kartonki/legal/account-deletion` |
 
 **Education vs Word Game:** обсуждали в прошлой сессии — Education точнее по сути (приоритет — обучение, игра — упаковка). Word Game подразумевает развлечение как самоцель и хуже выдаётся семьям/студентам, которые ищут вокабуляр.

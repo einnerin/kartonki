@@ -1,6 +1,6 @@
 # Privacy Policy — Kartonki
 
-**Effective date:** 2026-04-21
+**Effective date:** 2026-05-03
 **Developer contact:** einerin40@gmail.com
 
 Kartonki ("the App") is an Android application for learning foreign words through flashcards and game mechanics. This policy describes what data we collect, why, and how to manage it.
@@ -53,8 +53,9 @@ For more about Google's data processing: [https://policies.google.com/privacy](h
 
 ## Your rights
 
-- **Delete data:** uninstall the App — collection stops. Accumulated anonymous analytics automatically expires after 14 months.
-- **Delete account:** email einerin40@gmail.com — we will delete your Firebase profile, online collection, and PvP history within 30 days.
+- **Delete account in-app:** Settings → Account → "Delete account". Removes immediately: Firebase profile, online PvP statistics, active matchmaking slots. See [account deletion guide](account-deletion-en.md) for details.
+- **Delete account without app access:** email einerin40@gmail.com with the Google account address — we will delete it within 30 days.
+- **Delete local data:** uninstall the App — local progress, analytics, and Installation ID are reset. Cloud analytics expires automatically after 14 months.
 - **Opt out of analytics:** an "opt out of anonymous analytics" toggle in settings will be added in a future version. To opt out now, uninstall the App.
 
 ## Changes to this policy

@@ -12,9 +12,11 @@
 |---|---|
 | Does your app collect or share any of the required user data types? | **Yes** |
 | Is all of the user data collected by your app encrypted in transit? | **Yes** (Firebase: TLS) |
-| Do you provide a way for users to request that their data be deleted? | **Yes** (через email, см. ниже про Production-блокер) |
+| Do you provide a way for users to request that their data be deleted? | **Yes** |
 
-**⚠️ Production-блокер про deletion:** Google с 2024 требует **in-app account deletion** + **web-based deletion path** для приложений с user accounts. У нас сейчас только email-based deletion в политике (`einerin40@gmail.com`, SLA 30 дней). Для **Internal testing — OK** (нет review). Для **Open / Production** — нужно либо добавить кнопку «Удалить аккаунт» в Settings, либо лендинг с формой. Открыт вопрос как известный TODO.
+**Account deletion paths (готовы 2026-05-03):**
+- **In-app:** Settings → Аккаунт → «Удалить аккаунт» (видно для signed-in non-anonymous; реализовано в `AccountDeletionRepository`). Удаляет: Auth user, Firestore `/users/{uid}`, RTDB matchmaking_lobby slots с этим uid. При `RECENT_LOGIN_REQUIRED` — auto-reauth + retry.
+- **Web URL** (для поля Console «Account deletion URL»): `https://einnerin.github.io/kartonki/legal/account-deletion` — инструкция в приложении + email fallback на 30-дневное удаление
 
 ---
 

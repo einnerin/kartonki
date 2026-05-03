@@ -97,6 +97,15 @@ fun SettingsScreen(
         viewModel.handleGoogleSignInResult(result.data)
     }
 
+    // Re-auth для удаления аккаунта: запустить Google Sign-In, после чего VM
+    // автоматически повторит deleteAccount().
+    LaunchedEffect(state.requestReauthForDelete) {
+        if (state.requestReauthForDelete) {
+            googleSignInLauncher.launch(viewModel.getGoogleSignInIntent(context))
+            viewModel.onReauthLaunched()
+        }
+    }
+
     val photoPickerLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.PickVisualMedia(),
     ) { uri: Uri? ->
@@ -136,6 +145,45 @@ fun SettingsScreen(
                 onSignIn = { googleSignInLauncher.launch(viewModel.getGoogleSignInIntent(context)) },
             )
             Spacer(Modifier.height(8.dp))
+
+            // Кнопка удаления аккаунта — только для авторизованных через Google.
+            // Анонимы не имеют persisted account и удалять нечего.
+            if (state.isSignedIn && !state.isAnonymous) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(MaterialTheme.colorScheme.surfaceVariant, RoundedCornerShape(12.dp))
+                        .clickable(enabled = !state.isDeletingAccount) { viewModel.onDeleteAccountClick() }
+                        .padding(horizontal = 16.dp, vertical = 14.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    Column(Modifier.weight(1f)) {
+                        Text(
+                            "Удалить аккаунт",
+                            style = MaterialTheme.typography.bodyLarge,
+                            fontWeight = FontWeight.Medium,
+                            color = MaterialTheme.colorScheme.error,
+                        )
+                        Text(
+                            "Без возможности восстановления",
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
+                    if (state.isDeletingAccount) {
+                        androidx.compose.material3.CircularProgressIndicator(
+                            modifier = Modifier.size(20.dp),
+                            strokeWidth = 2.dp,
+                            color = MaterialTheme.colorScheme.error,
+                        )
+                    } else {
+                        Text("›", style = MaterialTheme.typography.headlineSmall,
+                            color = MaterialTheme.colorScheme.error)
+                    }
+                }
+                Spacer(Modifier.height(8.dp))
+            }
 
             // ── Profile ────────────────────────────────────────────────────────
             SectionHeader(s.settingsProfileSection)
@@ -590,6 +638,67 @@ fun SettingsScreen(
             },
             dismissButton = {
                 TextButton(onClick = viewModel::onSignOutDismiss) { Text("Отмена") }
+            },
+        )
+    }
+
+    // Delete account: подтверждение
+    if (state.showDeleteAccountDialog) {
+        AlertDialog(
+            onDismissRequest = viewModel::onDeleteAccountDismiss,
+            title = { Text("Удалить аккаунт?") },
+            text = {
+                Text(
+                    "Это действие нельзя отменить. Будут удалены:\n" +
+                    "• Профиль в облаке (имя, email, аватар)\n" +
+                    "• История онлайн PvP\n" +
+                    "• Возможность входа с этого Google-аккаунта\n\n" +
+                    "Локальный прогресс изучения слов останется на устройстве."
+                )
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = viewModel::onDeleteAccountConfirmed,
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.error),
+                ) { Text("Удалить") }
+            },
+            dismissButton = {
+                TextButton(onClick = viewModel::onDeleteAccountDismiss) { Text("Отмена") }
+            },
+        )
+    }
+
+    // Delete account: re-auth required
+    if (state.deleteAccountReauthRequired) {
+        AlertDialog(
+            onDismissRequest = viewModel::onDeleteReauthRequiredDismiss,
+            title = { Text("Подтвердите вход") },
+            text = {
+                Text(
+                    "Из соображений безопасности нужно войти заново. " +
+                    "После входа удаление продолжится автоматически."
+                )
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = viewModel::onReauthForDeleteRequested,
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.error),
+                ) { Text("Войти и удалить") }
+            },
+            dismissButton = {
+                TextButton(onClick = viewModel::onDeleteReauthRequiredDismiss) { Text("Отмена") }
+            },
+        )
+    }
+
+    // Delete account: error
+    state.deleteAccountError?.let { err ->
+        AlertDialog(
+            onDismissRequest = viewModel::dismissDeleteAccountError,
+            title = { Text("Ошибка удаления") },
+            text = { Text(err) },
+            confirmButton = {
+                TextButton(onClick = viewModel::dismissDeleteAccountError) { Text("OK") }
             },
         )
     }

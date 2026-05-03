@@ -197,14 +197,10 @@ $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 
 ## ⚠️ Известные блокеры перед Production (не блокируют Internal)
 
-### In-app account deletion
-Google требует с 2024: если приложение позволяет создать аккаунт, оно должно предоставить **in-app кнопку «Удалить аккаунт»** + **web-ссылку для удаления без установки**. Сейчас удаление только через email `einerin40@gmail.com` (упомянуто в `docs/legal/privacy-policy.md`, SLA 30 дней).
-
-Что нужно сделать:
-- Добавить кнопку «Удалить аккаунт» в `SettingsScreen` для авторизованных пользователей. Действие: подтверждение → вызов Firebase Auth `delete()` + удаление документа в Firestore `/users/{uid}` + очистка PvP истории в RTDB
-- Опционально: лендинг с формой запроса на удаление для не-установивших (можно простую страницу в `docs/legal/`)
-
-Для Internal testing — не блокер (review нет, доступ только по opt-in URL). Для Open/Production — блокирующий.
+### In-app account deletion ✅ сделано 2026-05-03
+- **In-app:** Settings → Аккаунт → «Удалить аккаунт» (только для signed-in non-anonymous). Реализовано в `AccountDeletionRepository`: чистка Firebase Auth user → Firestore `/users/{uid}` → matchmaking_lobby slots. При `FirebaseAuthRecentLoginRequiredException` — auto-reauth через Google Sign-In + retry.
+- **Web fallback:** `docs/legal/account-deletion.md` (+EN). URL: `https://einnerin.github.io/kartonki/legal/account-deletion`. Содержит инструкцию по in-app deletion + email fallback (30 дней).
+- **Privacy policy** обновлена 2026-05-03 — упоминает оба способа.
 
 ### Feature graphic
 Текущий — placeholder из `make_feature_graphic.py`. Для Production желательно заменить дизайнерским (Figma/Canva), для Open testing — допустим.

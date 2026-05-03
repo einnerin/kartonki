@@ -7,6 +7,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.preferences.UserPreferencesRepository
+import com.example.kartonki.data.remote.AccountDeletionRepository
 import com.example.kartonki.data.remote.FirebaseAuthManager
 import com.example.kartonki.data.remote.FirestoreUserRepository
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -103,6 +104,13 @@ data class SettingsUiState(
     val signOutDone: Boolean = false,
     val isSigningIn: Boolean = false,
     val signInError: String? = null,
+    // Account deletion (Google Play требует in-app delete с 2024)
+    val showDeleteAccountDialog: Boolean = false,
+    val isDeletingAccount: Boolean = false,
+    val deleteAccountReauthRequired: Boolean = false,
+    val deleteAccountError: String? = null,
+    /** Сигнал UI запустить Google Sign-In для re-auth перед повторной попыткой delete. */
+    val requestReauthForDelete: Boolean = false,
     // Tester mode (7 taps on app version)
     val testerModeEnabled: Boolean = false,
 )
@@ -118,10 +126,18 @@ class SettingsViewModel @Inject constructor(
     private val prefs: UserPreferencesRepository,
     private val authManager: FirebaseAuthManager,
     private val userRepository: FirestoreUserRepository,
+    private val accountDeletion: AccountDeletionRepository,
     @ApplicationContext private val appContext: Context,
 ) : ViewModel() {
 
     private val WEB_CLIENT_ID = "75116979020-g8b7ug8lknrfbrid1alk9agtqd2skn78.apps.googleusercontent.com"
+
+    /**
+     * Если delete-account встретил RECENT_LOGIN_REQUIRED, мы запускаем reauth-flow:
+     * Google Sign-In, после успешного возврата — повторяем deleteAccount(). Этот
+     * флаг переживает между state-обновлениями и нужен только VM.
+     */
+    private var pendingDeleteAfterSignIn: Boolean = false
 
     private val _uiState = MutableStateFlow(SettingsUiState())
     val uiState: StateFlow<SettingsUiState> = _uiState.asStateFlow()
@@ -339,6 +355,52 @@ class SettingsViewModel @Inject constructor(
     }
     fun onSignOutNavigated() = _uiState.update { it.copy(signOutDone = false) }
 
+    // ── Account deletion ──────────────────────────────────────────────────────
+    fun onDeleteAccountClick() = _uiState.update {
+        it.copy(showDeleteAccountDialog = true, deleteAccountError = null)
+    }
+    fun onDeleteAccountDismiss() = _uiState.update { it.copy(showDeleteAccountDialog = false) }
+    fun onDeleteAccountConfirmed() = viewModelScope.launch {
+        _uiState.update { it.copy(showDeleteAccountDialog = false, isDeletingAccount = true) }
+        runDelete()
+    }
+    fun onDeleteReauthRequiredDismiss() = _uiState.update {
+        it.copy(deleteAccountReauthRequired = false)
+    }
+    /** Юзер согласился войти заново для подтверждения удаления. */
+    fun onReauthForDeleteRequested() {
+        pendingDeleteAfterSignIn = true
+        _uiState.update {
+            it.copy(deleteAccountReauthRequired = false, requestReauthForDelete = true)
+        }
+    }
+    /** UI вызывает после launch'а Sign-In intent, чтобы погасить флаг. */
+    fun onReauthLaunched() = _uiState.update { it.copy(requestReauthForDelete = false) }
+    fun dismissDeleteAccountError() = _uiState.update { it.copy(deleteAccountError = null) }
+
+    private suspend fun runDelete() {
+        when (val r = accountDeletion.deleteAccount()) {
+            AccountDeletionRepository.Result.Success -> {
+                authManager.signOut(appContext, WEB_CLIENT_ID)
+                _uiState.update { it.copy(isDeletingAccount = false, signOutDone = true) }
+            }
+            AccountDeletionRepository.Result.ReauthRequired -> {
+                _uiState.update {
+                    it.copy(isDeletingAccount = false, deleteAccountReauthRequired = true)
+                }
+            }
+            AccountDeletionRepository.Result.NotSignedIn -> {
+                // Аккаунта уже нет — считаем успехом, выкидываем на login.
+                _uiState.update { it.copy(isDeletingAccount = false, signOutDone = true) }
+            }
+            is AccountDeletionRepository.Result.Error -> {
+                _uiState.update {
+                    it.copy(isDeletingAccount = false, deleteAccountError = r.message)
+                }
+            }
+        }
+    }
+
     fun getGoogleSignInIntent(context: Context): Intent =
         authManager.getGoogleSignInIntent(context, WEB_CLIENT_ID)
 
@@ -357,10 +419,16 @@ class SettingsViewModel @Inject constructor(
                     .onSuccess { profile ->
                         userRepository.saveProfile(profile)
                         _uiState.update { it.copy(isSigningIn = false) }
+                        if (pendingDeleteAfterSignIn) {
+                            pendingDeleteAfterSignIn = false
+                            _uiState.update { it.copy(isDeletingAccount = true) }
+                            runDelete()
+                        }
                     }
                     .onFailure { e ->
                         val msg = e.message?.takeIf { it.isNotBlank() } ?: e.javaClass.simpleName
                         Log.e(TAG, "Google sign-in failed: $msg", e)
+                        pendingDeleteAfterSignIn = false
                         _uiState.update { it.copy(isSigningIn = false, signInError = "Ошибка входа: $msg") }
                     }
             } catch (e: ApiException) {
@@ -371,10 +439,12 @@ class SettingsViewModel @Inject constructor(
                     else -> "Ошибка Google Sign-In (код ${e.statusCode})"
                 }
                 Log.e(TAG, msg, e)
+                pendingDeleteAfterSignIn = false
                 _uiState.update { it.copy(isSigningIn = false, signInError = msg) }
             } catch (e: Exception) {
                 val msg = e.message?.takeIf { it.isNotBlank() } ?: e.javaClass.simpleName
                 Log.e(TAG, "handleGoogleSignInResult exception: $msg", e)
+                pendingDeleteAfterSignIn = false
                 _uiState.update { it.copy(isSigningIn = false, signInError = msg) }
             }
         }
