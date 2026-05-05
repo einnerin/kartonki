@@ -111,6 +111,8 @@ WordEntity(
      app/src/main/java/com/example/kartonki/data/WordData*.kt | sort -u
    ```
    Близкие написания (Хай-тек ↔ Хайтек), расширения (Маркетинг ↔ Маркетинг и реклама), синонимы (Здоровье ↔ Здоровье и фитнес) — **не плодить**, использовать существующее. Старая тема выигрывает над «улучшенным» новым именем; переименовать существующее — только осознанной отдельной задачей со слиянием. Защита: `find_real_dupes.py` → `check_topic_synonyms` (warning при близких именах). См. `memory/feedback_no_duplicate_topics.md`.
+
+   **Имя темы — на русском.** Интерфейсный язык приложения — русский, темы пишутся по-русски (✅ «Фразовые глаголы», ✅ «Маркетинг», ✅ «Хайтек»). Допустимые исключения — только устоявшиеся латинские аббревиатуры без короткого русского эквивалента: ✅ «AI и ML», ✅ «IT», ✅ «SaaS», ✅ «QA и тестирование», ✅ «Data Engineering». ❌ Не использовать английские слова при наличии русского термина: «Phrasal Verbs» → «Фразовые глаголы», «Marketing» → «Маркетинг», «Hi-Tech» → «Хайтек».
 2. **`name = topic`, без вариаций.** Описание (`description`) — то, чем сет отличается от других в той же теме (подтема, акцент, контекст). Проверь что в той же теме нет сета с таким же `description` — `grep -E 'description = "<твой description>"' app/src/main/java/com/example/kartonki/data/WordData*.kt`.
 3. **Все поля WordSetEntity заполнены**: id, name (= topic), description (без CEFR, уникальный в теме), languagePair, topic, level. (orderIndex опционален — не указывай в новых наборах.)
 4. **Ровно 25 слов.** Каждое WordEntity имеет id (по формуле), setId, languagePair, rarity, original, translation, + transliteration для he-ru.

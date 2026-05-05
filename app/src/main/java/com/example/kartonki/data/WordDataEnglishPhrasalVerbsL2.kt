@@ -6,7 +6,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 /**
  * English vocabulary — Фразовые глаголы (L2, UNCOMMON+RARE).
  *
- * Set 411: «Phrasal Verbs» — продолжение L1 (set 410). Уровень B1:
+ * Set 411: «Фразовые глаголы» — продолжение L1 (set 410). Уровень B1:
  *          phrasal verbs про учёбу/работу, проблемы и неудачи, изменения
  *          и новые занятия, отношения с людьми, а также действия с
  *          деньгами и вещами. По сравнению с L1 здесь смыслы реже
@@ -51,9 +51,9 @@ object WordDataEnglishPhrasalVerbsL2 {
             id = 411,
             languagePair = "en-ru",
             orderIndex = 411,
-            name = "Phrasal Verbs",
+            name = "Фразовые глаголы",
             description = "Фразовые глаголы про учёбу, проблемы, изменения, отношения и деньги",
-            topic = "Phrasal Verbs",
+            topic = "Фразовые глаголы",
             level = 2,
         ),
     )
@@ -61,7 +61,7 @@ object WordDataEnglishPhrasalVerbsL2 {
     val words: List<WordEntity> = listOf(
 
         // ╔══════════════════════════════════════════════════════════════════╗
-        // ║ Set 411 — Phrasal Verbs: продолжение (L2, UNCOMMON+RARE)         ║
+        // ║ Set 411 — Фразовые глаголы: продолжение (L2, UNCOMMON+RARE)         ║
         // ╚══════════════════════════════════════════════════════════════════╝
 
         // ── phrasal_l2_work_study (5) ─────────────────────────────────────

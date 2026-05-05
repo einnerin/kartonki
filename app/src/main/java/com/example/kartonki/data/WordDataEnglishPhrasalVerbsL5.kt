@@ -6,7 +6,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 /**
  * English vocabulary — Фразовые глаголы (L5, EPIC+LEGENDARY).
  *
- * Set 414: «Phrasal Verbs» — уровень носителя.
+ * Set 414: «Фразовые глаголы» — уровень носителя.
  *          Phrasal verbs уровня C2: архаичные, литературные, юридические,
  *          формальные регистры, эмоционально-возвышенная речь.
  *          Финальная ступень линейки L1 (410) – L2 (411) – L3 (412) – L4 (413).
@@ -57,9 +57,9 @@ object WordDataEnglishPhrasalVerbsL5 {
             id = 414,
             languagePair = "en-ru",
             orderIndex = 414,
-            name = "Phrasal Verbs",
+            name = "Фразовые глаголы",
             description = "Архаичные, литературные, юридические и эмоционально-возвышенные фразовые глаголы для уровня носителя",
-            topic = "Phrasal Verbs",
+            topic = "Фразовые глаголы",
             level = 5,
         ),
     )
@@ -67,7 +67,7 @@ object WordDataEnglishPhrasalVerbsL5 {
     val words: List<WordEntity> = listOf(
 
         // ╔══════════════════════════════════════════════════════════════════╗
-        // ║ Set 414 — Phrasal Verbs: уровень носителя (L5, EPIC+LEGENDARY)   ║
+        // ║ Set 414 — Фразовые глаголы: уровень носителя (L5, EPIC+LEGENDARY)   ║
         // ╚══════════════════════════════════════════════════════════════════╝
 
         // ── phrasal_l5_archaic_literary (5) ────────────────────────────────

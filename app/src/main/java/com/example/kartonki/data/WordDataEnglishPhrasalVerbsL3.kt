@@ -6,7 +6,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 /**
  * English vocabulary — Фразовые глаголы (L3, UNCOMMON+RARE).
  *
- * Set 412: «Phrasal Verbs» — углублённый уровень.
+ * Set 412: «Фразовые глаголы» — углублённый уровень.
  *          Phrasal verbs уровня B2: бизнес-лексика, сложные действия,
  *          социальная динамика, принятие решений и описание исходов.
  *          Продолжение L1 (set 410, A2-B1) и L2 (set 411, B1-B2).
@@ -48,9 +48,9 @@ object WordDataEnglishPhrasalVerbsL3 {
             id = 412,
             languagePair = "en-ru",
             orderIndex = 412,
-            name = "Phrasal Verbs",
+            name = "Фразовые глаголы",
             description = "Фразовые глаголы для бизнеса, сложных действий, социальных конфликтов, решений и исходов",
-            topic = "Phrasal Verbs",
+            topic = "Фразовые глаголы",
             level = 3,
         ),
     )
@@ -58,7 +58,7 @@ object WordDataEnglishPhrasalVerbsL3 {
     val words: List<WordEntity> = listOf(
 
         // ╔══════════════════════════════════════════════════════════════════╗
-        // ║ Set 412 — Phrasal Verbs: углублённый (L3, UNCOMMON+RARE)         ║
+        // ║ Set 412 — Фразовые глаголы: углублённый (L3, UNCOMMON+RARE)         ║
         // ╚══════════════════════════════════════════════════════════════════╝
 
         // ── phrasal_l3_business (5) ────────────────────────────────────────

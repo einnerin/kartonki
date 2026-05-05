@@ -6,7 +6,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 /**
  * English vocabulary — Фразовые глаголы (L1, UNCOMMON+RARE).
  *
- * Set 410: «Phrasal Verbs» — основы.
+ * Set 410: «Фразовые глаголы» — основы.
  *          Базовые англоязычные phrasal verbs уровня A2-B1: фразовые
  *          лексемы вида «verb + particle», у которых смысл часто не
  *          складывается из значений отдельных слов. Это первый сет
@@ -56,9 +56,9 @@ object WordDataEnglishPhrasalVerbsL1 {
             id = 410,
             languagePair = "en-ru",
             orderIndex = 410,
-            name = "Phrasal Verbs",
+            name = "Фразовые глаголы",
             description = "Базовые фразовые глаголы про движение, рутину, отношения, действия и общение",
-            topic = "Phrasal Verbs",
+            topic = "Фразовые глаголы",
             level = 1,
         ),
     )
@@ -66,7 +66,7 @@ object WordDataEnglishPhrasalVerbsL1 {
     val words: List<WordEntity> = listOf(
 
         // ╔══════════════════════════════════════════════════════════════════╗
-        // ║ Set 410 — Phrasal Verbs: основы (L1, UNCOMMON+RARE)              ║
+        // ║ Set 410 — Фразовые глаголы: основы (L1, UNCOMMON+RARE)              ║
         // ╚══════════════════════════════════════════════════════════════════╝
 
         // ── phrasal_l1_movement (5) ───────────────────────────────────────

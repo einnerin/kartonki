@@ -6,7 +6,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
 /**
  * English vocabulary — Фразовые глаголы (L4, RARE+EPIC).
  *
- * Set 413: «Phrasal Verbs» — профессиональный уровень.
+ * Set 413: «Фразовые глаголы» — профессиональный уровень.
  *          Phrasal verbs уровня C1: продвинутый бизнес-регистр,
  *          сложные эмоциональные оттенки, тонкие действия в социальном
  *          контексте, преодоление препятствий и более книжные/высокие
@@ -50,9 +50,9 @@ object WordDataEnglishPhrasalVerbsL4 {
             id = 413,
             languagePair = "en-ru",
             orderIndex = 413,
-            name = "Phrasal Verbs",
+            name = "Фразовые глаголы",
             description = "Фразовые глаголы для продвинутого бизнеса, тонких эмоций, незаметных действий, преодоления препятствий и высокого регистра",
-            topic = "Phrasal Verbs",
+            topic = "Фразовые глаголы",
             level = 4,
         ),
     )
@@ -60,7 +60,7 @@ object WordDataEnglishPhrasalVerbsL4 {
     val words: List<WordEntity> = listOf(
 
         // ╔══════════════════════════════════════════════════════════════════╗
-        // ║ Set 413 — Phrasal Verbs: профессиональный (L4, RARE+EPIC)        ║
+        // ║ Set 413 — Фразовые глаголы: профессиональный (L4, RARE+EPIC)        ║
         // ╚══════════════════════════════════════════════════════════════════╝
 
         // ── phrasal_l4_advanced_business (5) ───────────────────────────────
