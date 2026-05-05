@@ -33,7 +33,7 @@ object WordDataHebrewBureauL3 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1809, languagePair = "he-ru", orderIndex = 1809,
-            name = "Бюрократия и документы: углублённый",
+            name = "Бюрократия и документы",
             description = "Углублённый: налоги, банковские документы, недвижимость, страхование",
             topic = "Бюрократия и документы", level = 3,
         ),

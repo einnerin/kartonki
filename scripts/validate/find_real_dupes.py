@@ -302,6 +302,91 @@ def check_derivatives_in_sets(all_words, staged_files):
     return errors
 
 
+def _normalize_topic(t):
+    """
+    Normalize a topic name for synonym detection:
+    - lowercase
+    - ё → е
+    - strip dashes, spaces, underscores, dots
+    Two topics with the same normalized form are flagged as a near-duplicate
+    pair (e.g. "Хай-тек" and "Хайтек" both normalize to "хайтек").
+    """
+    s = (t or "").lower().replace("ё", "е")
+    return re.sub(r"[\s\-_.]", "", s)
+
+
+def _levenshtein(a, b):
+    """Tiny iterative Levenshtein. Used only on short strings (topic names),
+    so the O(n·m) cost is fine. Returns int distance."""
+    if a == b:
+        return 0
+    if not a:
+        return len(b)
+    if not b:
+        return len(a)
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        cur = [i] + [0] * len(b)
+        for j, cb in enumerate(b, 1):
+            cost = 0 if ca == cb else 1
+            cur[j] = min(cur[j - 1] + 1, prev[j] + 1, prev[j - 1] + cost)
+        prev = cur
+    return prev[-1]
+
+
+def check_topic_synonyms(all_sets):
+    """
+    Flag pairs of distinct topic names within the same languagePair that look
+    like accidental duplicates: same after normalization, or Levenshtein
+    distance ≤ 2 on the normalized form (catches "Хай-тек" ↔ "Хайтек",
+    "Хайтек" ↔ "Хайтэк", typos in re-typed names).
+
+    Always returns warnings — does not block, because two close-but-distinct
+    topics may be intentional ("Программист" profession vs "Программирование"
+    discipline). The reviewer eyeballs and decides.
+
+    Reason: 2026-05-05 incident — "Хай-тек" (7 sets) and "Хайтек" (5 sets)
+    co-existed for weeks as separate topics; "Религия" (7) and "Религия и
+    праздники" (6) likewise. UI shows two tiles for one theme. Catch this at
+    pre-commit, not at audit-time.
+    """
+    pairs = []
+    by_lang = defaultdict(set)
+    for s in all_sets:
+        if s["topic"]:
+            by_lang[s["lang"]].add(s["topic"])
+
+    for lang, topics in by_lang.items():
+        topics = sorted(topics)
+        for i in range(len(topics)):
+            ni = _normalize_topic(topics[i])
+            for j in range(i + 1, len(topics)):
+                nj = _normalize_topic(topics[j])
+                if ni == nj:
+                    pairs.append((lang, topics[i], topics[j], "идентичные после нормализации"))
+                elif min(len(ni), len(nj)) >= 4 and _levenshtein(ni, nj) <= 2:
+                    pairs.append((lang, topics[i], topics[j], f"Левенштейн={_levenshtein(ni, nj)}"))
+                else:
+                    # Topic-extension check: one ORIGINAL topic is a prefix
+                    # (or suffix) of the other AND the boundary lands on a
+                    # whitespace/dash. This catches "Религия" ⊂ "Религия и
+                    # праздники" and "Транспорт" ⊂ "Транспорт в Израиле" but
+                    # rejects "Спорт" ⊂ "Транспорт" (boundary on a letter).
+                    short, long_ = sorted([topics[i], topics[j]], key=len)
+                    if len(long_) - len(short) >= 2 and (
+                        long_.startswith(short) or long_.endswith(short)
+                    ):
+                        # Position of the boundary character in the long topic.
+                        if long_.startswith(short):
+                            boundary = long_[len(short)] if len(long_) > len(short) else " "
+                        else:
+                            boundary = long_[-len(short) - 1] if len(long_) > len(short) else " "
+                        if not boundary.isalnum():
+                            pairs.append((lang, topics[i], topics[j],
+                                          "одно — префикс/суффикс другого"))
+    return pairs
+
+
 LEVEL_KEYWORDS = {1: "основ", 2: "продвинут", 3: "углублён", 4: "профессионал", 5: "носитель"}
 
 
@@ -711,6 +796,36 @@ def main():
             for e in name_staged:
                 print(e)
             print()
+
+    # ── Topic synonyms — warning, runs always (catches dup themes) ────────────
+    syn_pairs = check_topic_synonyms(all_sets)
+    if syn_pairs:
+        # In pre-commit mode (staged_files set), highlight pairs touching staged
+        # sets first; the rest are still shown as informational so reviewers
+        # always see the full near-duplicate picture.
+        staged_topics = (
+            {(s["lang"], s["topic"]) for s in all_sets if s["file"] in staged_files}
+            if staged_files else set()
+        )
+        staged_related = [p for p in syn_pairs
+                          if (p[0], p[1]) in staged_topics or (p[0], p[2]) in staged_topics]
+        other = [p for p in syn_pairs if p not in staged_related]
+
+        print(f"=== ⚠️  Близкие имена тем (возможные дубли): {len(syn_pairs)} ===\n")
+        if staged_related:
+            print(f"  В staged-файлах ({len(staged_related)}):")
+            for lang, t1, t2, reason in staged_related:
+                print(f"    [{lang}] '{t1}'  ←→  '{t2}'  ({reason})")
+            print()
+        if other:
+            print(f"  Pre-existing (info, {len(other)}):")
+            for lang, t1, t2, reason in other:
+                print(f"    [{lang}] '{t1}'  ←→  '{t2}'  ({reason})")
+            print()
+        print("  Если это одна и та же тема — слить (см. memory/feedback_no_duplicate_topics.md).")
+        print("  Если темы намеренно разные — игнорировать варнинг.\n")
+    else:
+        print("=== ⚠️  Близкие имена тем: ✅ нет ===\n")
 
     # ── Result ────────────────────────────────────────────────────────────────
     print("━" * 60)

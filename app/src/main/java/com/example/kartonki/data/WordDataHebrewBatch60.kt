@@ -9,9 +9,9 @@ object WordDataHebrewBatch60 {
 
         WordSetEntity(
             id = 1335, languagePair = "he-ru", orderIndex = 1335,
-            name = "Хай-тек",
+            name = "Хайтек",
             description = "Стек, задачи, оффер",
-            topic = "Хай-тек",
+            topic = "Хайтек",
             level = 1),
 
         WordSetEntity(
@@ -67,7 +67,7 @@ object WordDataHebrewBatch60 {
 
     val words: List<WordEntity> get() = listOf(
 
-        // ── Set 1335: Хай-тек: основы 2 (level=1, COMMON+UNCOMMON) ─────────
+        // ── Set 1335: Хайтек: основы 2 (level=1, COMMON+UNCOMMON) ─────────
 
         WordEntity(id = 133501, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
             original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),

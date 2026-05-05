@@ -99,13 +99,7 @@ object WordDataHebrewIsraeliTransportL5 {
             definition = "כְּלִי שַׁיִט שֶׁמַּפְלִיג מִתַּחַת לְפְּנֵי הַיָּם בִּשְׁבִיל מִשִּׂים צְבָאִיִּים.",
             definitionNative = "Судно, плавающее под водой для военных задач.",
             example = "צוֹלֶלֶת חָזְרָה לְבָסִיס חֵיפָה אַחֲרֵי שִׁשִּׁים יְמֵי סִיּוּר.",
-            exampleNative = "צוֹלֶלֶת вернулась на базу Хайфы после шестидесяти дней патрулирования."
-        )",
-            transliteration = "онийа",
-            definition = "כְּלִי שַׁיִט גָּדוֹל בִּלְשׁוֹן הַמִּקְרָא וּבִלְשׁוֹן סִפְרוּתִית גְּבוֹהָה לְמַסַּע יָם.",
-            definitionNative = "Большое судно в библейском и литературном регистре для морского путешествия.",
-            example = "אֳנִיָּה תַּרְשִׁישָׁה הִפְלִיגָה אֶל מֵעֵבֶר לַיָּם בִּסְפֵר יוֹנָה.",
-            exampleNative = "אֳנִיָּה в Таршиш отплыла за море в Книге Ионы.",
+            exampleNative = "צוֹלֶלֶת вернулась на базу Хайфы после шестидесяти дней патрулирования.",
          fillInBlankExclusions = listOf(185601L, 185603L, 185605L)),
         WordEntity(
             id = 185603, setId = 1856, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -148,12 +142,6 @@ object WordDataHebrewIsraeliTransportL5 {
             definitionNative = "Этап крутого набора высоты самолёта от низкой к крейсерской.",
             example = "נְסִיקָה הַתְחִילָה מִיָּד אַחֲרֵי הַהַמְרָאָה מִשְּׂדֵה הַתְּעוּפָה.",
             exampleNative = "נְסִיקָה началась сразу после взлёта с аэродрома."
-        )",
-            transliteration = "hамраа",
-            definition = "פְּעֻלַּת עֲלִיַּת הַמָּטוֹס מֵהַקַּרְקַע אֶל הָאֲוִיר בִּתְחִלַּת הַטִּיסָה.",
-            definitionNative = "Действие подъёма самолёта с земли в воздух в начале полёта.",
-            example = "הַהַמְרָאָה הִתְעַכְּבָה בְּעֶשֶׂר דַּקּוֹת בִּגְלַל רוּחוֹת חָזָקוֹת.",
-            exampleNative = "הַמְרָאָה задержалась на десять минут из-за сильных боковых ветров.",
         ),
         WordEntity(
             id = 185607, setId = 1856, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -164,7 +152,7 @@ object WordDataHebrewIsraeliTransportL5 {
             definitionNative = "Форма самолёта, что определяет обтекание воздухом.",
             example = "מַעֲטֶה אֲוִיר חָדָשׁ הִפְחִית אֶת צְרִיכַת הַדֶּלֶק בְּעֶשֶׂר אֲחוּזִים.",
             exampleNative = "Новый מַעֲטֶה אֲוִיר снизил расход топлива на десять процентов."
-        )),
+        ),
         WordEntity(
             id = 185608, setId = 1856, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "transport_l5_aviation_advanced",
@@ -174,7 +162,7 @@ object WordDataHebrewIsraeliTransportL5 {
             definitionNative = "Сильный направленный воздушный поток в стратосфере.",
             example = "שׁוֹעֲטָה גָּרְמָה לַמָּטוֹס לְהַגִּיעַ לְפָּרִיז שָׁעָה לִפְנֵי הַזְּמַן.",
             exampleNative = "שׁוֹעֲטָה помогла самолёту прилететь в Париж на час раньше."
-        )),
+        ),
         WordEntity(
             id = 185609, setId = 1856, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "transport_l5_aviation_advanced",

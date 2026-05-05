@@ -21,13 +21,13 @@
 
 ### Качество текстов
 
-7. **Стандарт качества определений** (`definition`, `definitionNative`) — живой стиль учителя, ≤14 слов/80 символов, нет однокоренных с original/translation, формула «суть — например, X, Y, Z» максимум 60-70% слов набора (правило 8 стандарта). См. [`quality_standards_definitions.md`](quality_standards_definitions.md).
-8. **Стандарт качества example-предложений** — целевое слово в форме `original`, ≤12 слов/80 символов, живая речь носителя. Rule 2 «Однозначность пропуска» смягчено — близкие соседи теперь ловит runtime pipeline (см. правило 17b ниже). См. [`quality_standards_examples.md`](quality_standards_examples.md).
+7. **Стандарт качества определений** (`definition`, `definitionNative`) — живой стиль учителя, ≤16 слов / ≤90 символов (смягчено 2026-04-24 с 14/80 для релиза), нет однокоренных с original/translation, формула «суть — например, X, Y, Z» максимум 60-70% слов набора (правило 8 стандарта). См. [`quality_standards_definitions.md`](quality_standards_definitions.md).
+8. **Стандарт качества example-предложений** — целевое слово в форме `original`, ≤14 слов / ≤90 символов (англ.), ≤12 слов / ≤80 символов (иврит). Живая речь носителя. Rule 2 «Однозначность пропуска» смягчено — близкие соседи теперь ловит runtime pipeline (см. правило 17b ниже). См. [`quality_standards_examples.md`](quality_standards_examples.md).
 
 ### Идентификация и структура
 
 9. **Формула ID** — `id = setId × 100 + позиция (1..25)`. Позиция глобальная по всем файлам, если набор разнесён. См. [`word-sets.md`](word-sets.md).
-10. **Формат имени набора** — `"<topic>: <уровень> [N]"`. Применяется только к встроенным наборам. Для UGC — отдельный трек (см. [`ugc-plan.md`](ugc-plan.md)). Валидатор `check_name_consistency` в `find_real_dupes.py`.
+10. **Формат имени набора** — `name = topic` (финал 2026-04-24). Все различия между сетами одной темы (уровень, подтема, акцент) живут только в `description`; `description` всех сетов в теме должны быть уникальны. Применяется только к встроенным наборам — для UGC отдельный трек (см. [`ugc-plan.md`](ugc-plan.md)). Валидатор `check_name_consistency` в `find_real_dupes.py` ослаблен до проверки `name.startswith(topic)` (пропускает старый формат у legacy-сетов), но новые сеты всегда `name = topic`. Историю смены формата см. в `memory/feedback_set_naming_pattern.md`.
 11. **Описание без CEFR-меток** — никаких «(A1)», «B2» в `description`. Блокирующая проверка с 2026-04-23 (regex case-insensitive). См. `find_real_dupes.py#check_description_cefr`.
 
 ### Процесс
