@@ -20,9 +20,9 @@ object WordDataHebrewReligionL1 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1701, languagePair = "he-ru", orderIndex = 201,
-            name = "Религия",
+            name = "Религия и праздники",
             description = "Базовые понятия иудаизма: молитва, праздники, синагога",
-            topic = "Религия", level = 1,
+            topic = "Религия и праздники", level = 1,
         ),
     )
 

@@ -23,23 +23,23 @@ object WordDataHebrewBatch50 {
 
         WordSetEntity(
             id = 1282, languagePair = "he-ru", orderIndex = 1282,
-            name = "Религия",
+            name = "Религия и праздники",
             description = "Религиозные течения, ритуалы и священные тексты",
-            topic = "Религия",
+            topic = "Религия и праздники",
             level = 3),
 
         WordSetEntity(
             id = 1283, languagePair = "he-ru", orderIndex = 1283,
-            name = "Религия",
+            name = "Религия и праздники",
             description = "Теология, мистика и профессиональная религиозная лексика",
-            topic = "Религия",
+            topic = "Религия и праздники",
             level = 4),
 
         WordSetEntity(
             id = 1284, languagePair = "he-ru", orderIndex = 1284,
-            name = "Религия",
+            name = "Религия и праздники",
             description = "Академическое религиоведение, философия религии и библейская критика",
-            topic = "Религия",
+            topic = "Религия и праздники",
             level = 5),
 
         WordSetEntity(
@@ -547,12 +547,12 @@ object WordDataHebrewBatch50 {
                 WordEntity(
             id = 128208, setId = 1282, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "religion_prayers",
-            original = "כַּוָּנָה", translation = "кавана (молитвенное намерение)",
-            transliteration = "kavana",
-            definition = "רִכּוּז פְּנִימִי וּמַחְשָׁבָה מְמֻקֶּדֶת בִּזְמַן תְּפִלָּה אוֹ קִיּוּם מִצְוָה.",
-            definitionNative = "Внутренняя сосредоточенность и осознанная мысль во время молитвы или исполнения заповеди.",
-            example = "תְּפִלָּה בְּלִי כַּוָּנָה דּוֹמָה לְגוּף בְּלִי נְשָׁמָה.",
-            exampleNative = "Молитва без כַּוָּנָה подобна телу без души.", fillInBlankExclusions = listOf(128201L, 128202L, 128207L, 128210L)),
+            original = "הַלֵּל", translation = "Халель (псалмы хвалы)",
+            transliteration = "halel",
+            definition = "סִדְרַת מִזְמוֹרֵי תְּהִלִּים שֶׁאוֹמְרִים בִּימֵי חַג כְּגוֹן פֶּסַח אוֹ סֻכּוֹת.",
+            definitionNative = "Сборник псалмов хвалы — читают в праздники: Песах, Сукот, Шавуот.",
+            example = "בְּחַג הַסֻּכּוֹת קוֹרְאִים הַלֵּל בְּקוֹל רָם בְּבֵית הַכְּנֶסֶת.",
+            exampleNative = "На Сукот הַלֵּל читают вслух всей общиной в синагоге."),
 
                 WordEntity(
             id = 128209, setId = 1282, languagePair = "he-ru", rarity = "RARE",

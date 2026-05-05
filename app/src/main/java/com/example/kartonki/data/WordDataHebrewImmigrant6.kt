@@ -394,12 +394,12 @@ object WordDataHebrewImmigrant6 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 114716, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kosher", transliteration = "berakha",
-            original = "בְּרָכָה", translation = "благословение / браха",
-            definition = "נוּסְחַת תְּפִלָּה קְצָרָה הַנֶּאֱמֶרֶת לִפְנֵי אֲכִילָה, שְׁתִיָּה אוֹ מַעֲשֶׂה.",
-            definitionNative = "Короткая молитвенная формула, произносимая перед едой, питьём или действием.",
-            example = "לִפְנֵי שֶׁאָכַל, אָמַר אֶת הַבְּרָכָה הַמַּתְאִימָה.",
-            exampleNative = "Перед едой он произнёс подходящую בְּרָכָה.",
+            pos = "noun", semanticGroup = "kosher", transliteration = "glat",
+            original = "גְלַאט", translation = "глатт (особо строгий кашрут на мясо)",
+            definition = "רָמָה מַחְמִירָה בִּבְשַׂר בָּקָר — בְּלִי בְּעָיוֹת בָּרֵיאוֹת שֶׁל הַחַיָּה.",
+            definitionNative = "Высокий уровень требований к говядине — лёгкие животного без повреждений.",
+            example = "הַחֲרֵדִים מַעֲדִיפִים לִקְנוֹת בָּשָׂר גְלַאט בִּלְבַד.",
+            exampleNative = "Харедим покупают только говядину גְלַאט.",
         ),
         WordEntity(
             id = 114717, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",

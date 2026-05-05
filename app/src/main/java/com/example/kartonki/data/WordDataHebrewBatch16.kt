@@ -8,16 +8,16 @@ object WordDataHebrewBatch16 {
     val sets: List<WordSetEntity> = listOf(
         WordSetEntity(
             id = 1070, languagePair = "he-ru", orderIndex = 1070,
-            name = "Религия",
+            name = "Религия и праздники",
             description = "Базовая религиозная лексика",
-            topic = "Религия",
+            topic = "Религия и праздники",
             level = 2
         ),
         WordSetEntity(
             id = 1071, languagePair = "he-ru", orderIndex = 1071,
-            name = "Религия",
+            name = "Религия и праздники",
             description = "Течения, тексты, обряды",
-            topic = "Религия",
+            topic = "Религия и праздники",
             level = 2
         ),
         WordSetEntity(
@@ -466,12 +466,12 @@ object WordDataHebrewBatch16 {
 
         WordEntity(
             id = 107122, setId = 1071, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "religion_advanced", transliteration = "gilgul",
-            original = "גִּלְגּוּל", translation = "гилгул (перевоплощение душ)",
-            definition = "הָאֵמוּנָה הַקַּבָּלִית שֶׁהַנֶּפֶשׁ עוֹבֶרֶת לְגוּף חָדָשׁ לְאַחַר הַמָּוֶת.",
-            definitionNative = "Каббалистическое верование о переходе души в новое тело после смерти.",
-            example = "לְפִי הַקַּבָּלָה, גִּלְגּוּל הַנְּשָׁמוֹת הוּא חֵלֶק מִיּוֹד הָאֱמוּנָה.",
-            exampleNative = "По каббале, גִּלְגּוּל душ является частью религиозного учения.",
+            pos = "phrase", semanticGroup = "religion_advanced", transliteration = "psak halakha",
+            original = "פְּסַק הֲלָכָה", translation = "галахическое постановление (решение раввина)",
+            definition = "הַחְלָטַת הָרַב בִּשְׁאֵלָה דָּתִית קוֹנְקְרֵטִית — בַּכַּשְׁרוּת אוֹ בְּשַׁבָּת.",
+            definitionNative = "Решение раввина по конкретному вопросу — например, кашрута, шаббата или семьи.",
+            example = "הָרַב נָתַן פְּסַק הֲלָכָה בִּשְׁאֵלַת הַכַּשְׁרוּת לְבַסּוֹף.",
+            exampleNative = "Раввин в итоге дал פְּסַק הֲלָכָה по вопросу кашрута.",
         ),
         WordEntity(
             id = 107123, setId = 1071, languagePair = "he-ru", rarity = "RARE",
