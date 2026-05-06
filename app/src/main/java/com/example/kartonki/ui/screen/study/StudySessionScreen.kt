@@ -329,7 +329,6 @@ private fun TranslationPanel(
     isCorrect: Boolean,
     isRtl: Boolean = false,
 ) {
-    val s = LocalAppStrings.current
     val ttsManager = LocalTtsManager.current
     val accentColor = if (isCorrect) ColorCorrect else ColorIncorrect
     val bgColor     = accentColor.copy(alpha = 0.15f)
@@ -347,15 +346,6 @@ private fun TranslationPanel(
                 .padding(horizontal = 16.dp, vertical = 12.dp),
             verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
-            if (!isCorrect) {
-                Text(
-                    text = s.studyIncorrect,
-                    style = MaterialTheme.typography.labelMedium,
-                    fontWeight = FontWeight.ExtraBold,
-                    color = accentColor,
-                )
-            }
-
             // ── Слово + кнопка озвучки ───────────────────────────────────────
             Row(
                 modifier = Modifier.fillMaxWidth(),
