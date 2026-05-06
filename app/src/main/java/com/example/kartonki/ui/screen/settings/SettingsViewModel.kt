@@ -222,6 +222,10 @@ class SettingsViewModel @Inject constructor(
                         isAnonymous                  = current.isAnonymous,
                         accountEmail                 = current.accountEmail,
                         accountDisplayName           = current.accountDisplayName,
+                        // Preserve flags driven by their own dedicated collectors —
+                        // otherwise main combine() rebuild zeroes them.
+                        testerModeEnabled            = current.testerModeEnabled,
+                        lockPortraitOrientation      = current.lockPortraitOrientation,
                     )
                 }
             }
