@@ -113,6 +113,8 @@ data class SettingsUiState(
     val requestReauthForDelete: Boolean = false,
     // Tester mode (7 taps on app version)
     val testerModeEnabled: Boolean = false,
+    // Display
+    val lockPortraitOrientation: Boolean = false,
 )
 
 val AVATAR_EMOJI_OPTIONS = listOf(
@@ -146,6 +148,11 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch {
             prefs.testerModeEnabled.collect { enabled ->
                 _uiState.update { it.copy(testerModeEnabled = enabled) }
+            }
+        }
+        viewModelScope.launch {
+            prefs.lockPortraitOrientation.collect { lock ->
+                _uiState.update { it.copy(lockPortraitOrientation = lock) }
             }
         }
         viewModelScope.launch {
@@ -255,6 +262,10 @@ class SettingsViewModel @Inject constructor(
     }
 
     fun onThemeToggle(isDark: Boolean) = viewModelScope.launch { prefs.setDarkTheme(isDark) }
+
+    fun onLockPortraitToggle(lock: Boolean) = viewModelScope.launch {
+        prefs.setLockPortraitOrientation(lock)
+    }
 
     fun onShowLanguagePicker() = _uiState.update { it.copy(showLanguagePicker = true) }
     fun onDismissLanguagePicker() = _uiState.update { it.copy(showLanguagePicker = false) }

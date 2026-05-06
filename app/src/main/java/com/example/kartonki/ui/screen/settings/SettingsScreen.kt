@@ -333,6 +333,12 @@ fun SettingsScreen(
                     onCheckedChange = viewModel::onThemeToggle,
                 )
             }
+            SettingsRow(label = s.settingsLockPortrait) {
+                Switch(
+                    checked = state.lockPortraitOrientation,
+                    onCheckedChange = viewModel::onLockPortraitToggle,
+                )
+            }
 
             // ── Language ───────────────────────────────────────────────────────
             // Native-language picker is hidden until we ship more than one

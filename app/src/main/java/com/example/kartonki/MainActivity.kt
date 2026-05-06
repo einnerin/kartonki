@@ -1,11 +1,13 @@
 package com.example.kartonki
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.navigation.compose.rememberNavController
@@ -34,6 +36,16 @@ class MainActivity : ComponentActivity() {
         setContent {
             val isDarkTheme by mainViewModel.isDarkTheme.collectAsState()
             val nativeLanguage by mainViewModel.nativeLanguage.collectAsState()
+            val lockPortrait by mainViewModel.lockPortraitOrientation.collectAsState()
+            // Applies setting reactively — toggle in Settings updates orientation
+            // immediately without requiring an app restart.
+            LaunchedEffect(lockPortrait) {
+                requestedOrientation = if (lockPortrait) {
+                    ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+                } else {
+                    ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
+                }
+            }
             KartonkiTheme(darkTheme = isDarkTheme) {
                 CompositionLocalProvider(
                     LocalAppStrings provides appStringsFor(nativeLanguage),

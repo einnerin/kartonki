@@ -62,6 +62,7 @@ class UserPreferencesRepository @Inject constructor(
         const val SEARCH_BACK_BEHAVIOR          = "search_back_behavior"        // "clear" | "restore"
         const val TESTER_MODE_ENABLED           = "tester_mode_enabled"         // Boolean — анонимный маркер для фильтрации аналитики
         const val INSTALL_COHORT_WEEK           = "install_cohort_week"         // String "YYYY-WW" — для cohort-аналитики
+        const val LOCK_PORTRAIT_ORIENTATION     = "lock_portrait_orientation"   // Boolean — заблокировать вертикальную ориентацию
     }
 
     companion object {
@@ -87,6 +88,7 @@ class UserPreferencesRepository @Inject constructor(
     }
 
     val isDarkTheme: Flow<Boolean>      = prefsFlow().map { it.getBoolean(Keys.IS_DARK_THEME, true) }
+    val lockPortraitOrientation: Flow<Boolean> = prefsFlow().map { it.getBoolean(Keys.LOCK_PORTRAIT_ORIENTATION, false) }
     val username: Flow<String>          = prefsFlow().map { it.getString(Keys.USERNAME, "Игрок") ?: "Игрок" }
     val avatarChoice: Flow<String>      = prefsFlow().map { it.getString(Keys.AVATAR_CHOICE, "🎮") ?: "🎮" }
     val languagePair: Flow<String>      = prefsFlow().map { it.getString(Keys.LANGUAGE_PAIR, "en-ru") ?: "en-ru" }
@@ -110,6 +112,7 @@ class UserPreferencesRepository @Inject constructor(
     }
 
     fun setDarkTheme(isDark: Boolean)    = prefs.edit().putBoolean(Keys.IS_DARK_THEME, isDark).apply()
+    fun setLockPortraitOrientation(lock: Boolean) = prefs.edit().putBoolean(Keys.LOCK_PORTRAIT_ORIENTATION, lock).apply()
     fun setUsername(name: String)        = prefs.edit().putString(Keys.USERNAME, name).apply()
     fun setAvatarChoice(choice: String)  = prefs.edit().putString(Keys.AVATAR_CHOICE, choice).apply()
     fun setLanguagePair(pair: String)    = prefs.edit().putString(Keys.LANGUAGE_PAIR, pair).apply()

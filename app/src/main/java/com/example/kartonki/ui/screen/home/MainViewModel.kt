@@ -18,4 +18,7 @@ class MainViewModel @Inject constructor(
 
     val nativeLanguage: StateFlow<String> = prefs.nativeLanguage
         .stateIn(viewModelScope, SharingStarted.Eagerly, "ru")
+
+    val lockPortraitOrientation: StateFlow<Boolean> = prefs.lockPortraitOrientation
+        .stateIn(viewModelScope, SharingStarted.Eagerly, false)
 }
