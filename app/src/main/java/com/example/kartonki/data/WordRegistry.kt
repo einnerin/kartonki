@@ -172,6 +172,10 @@ object WordRegistry {
                 WordDataEnglishPhrasalVerbsL4.sets +
                 WordDataEnglishPhrasalVerbsL5.sets +
                 WordDataEnglishAiMlL1.sets +
+                WordDataEnglishAiMlL2.sets +
+                WordDataEnglishAiMlL3.sets +
+                WordDataEnglishAiMlL4.sets +
+                WordDataEnglishAiMlL5.sets +
                 WordDataHebrewHealthFitnessL1L2L3.sets +
                 WordDataHebrewShoppingL1L2L3.sets +
                 WordDataHebrewEntertainmentL1L2L3.sets +
@@ -529,6 +533,10 @@ object WordRegistry {
                 WordDataEnglishPhrasalVerbsL4.words +
                 WordDataEnglishPhrasalVerbsL5.words +
                 WordDataEnglishAiMlL1.words +
+                WordDataEnglishAiMlL2.words +
+                WordDataEnglishAiMlL3.words +
+                WordDataEnglishAiMlL4.words +
+                WordDataEnglishAiMlL5.words +
                 WordDataHebrewHealthFitnessL1L2L3.words +
                 WordDataHebrewShoppingL1L2L3.words +
                 WordDataHebrewEntertainmentL1L2L3.words +
