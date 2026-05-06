@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.draw.clip
@@ -46,6 +47,7 @@ import com.example.kartonki.domain.model.StudyQuizType
 import com.example.kartonki.domain.model.StudyStep
 import com.example.kartonki.ui.component.WordCard
 import com.example.kartonki.ui.theme.LocalAppStrings
+import com.example.kartonki.ui.theme.LocalTtsManager
 
 private val ColorCorrect       = Color(0xFF66BB6A)
 private val ColorCorrectBg     = Color(0xFF1A3A1A)
@@ -246,6 +248,7 @@ internal fun QuizContent(
                     original = step.word.original,
                     translation = step.word.translation,
                     transliteration = step.word.transliteration,
+                    languagePair = step.word.languagePair,
                     isCorrect = answered.isCorrect,
                     isRtl = isHebrew,
                 )
@@ -322,10 +325,12 @@ private fun TranslationPanel(
     original: String,
     translation: String,
     transliteration: String? = null,
+    languagePair: String,
     isCorrect: Boolean,
     isRtl: Boolean = false,
 ) {
     val s = LocalAppStrings.current
+    val ttsManager = LocalTtsManager.current
     val accentColor = if (isCorrect) ColorCorrect else ColorIncorrect
     val bgColor     = accentColor.copy(alpha = 0.15f)
     val borderColor = if (isCorrect) ColorCorrectBorder else ColorIncorrectBorder
@@ -340,7 +345,6 @@ private fun TranslationPanel(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp, vertical = 12.dp),
-            horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
             if (!isCorrect) {
@@ -351,30 +355,32 @@ private fun TranslationPanel(
                     color = accentColor,
                 )
             }
+
+            // ── Слово + кнопка озвучки ───────────────────────────────────────
             Row(
-                horizontalArrangement = Arrangement.Center,
+                modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text(
                     text = original,
-                    style = MaterialTheme.typography.bodyLarge.copy(
+                    style = MaterialTheme.typography.titleLarge.copy(
                         textDirection = if (isRtl) TextDirection.Rtl else TextDirection.Ltr,
                     ),
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.weight(1f),
                 )
-                Text(
-                    text = "  →  ",
-                    style = MaterialTheme.typography.bodyLarge,
-                    color = accentColor,
-                )
-                Text(
-                    text = translation,
-                    style = MaterialTheme.typography.bodyLarge,
-                    fontWeight = FontWeight.Bold,
-                    color = accentColor,
-                )
+                if (ttsManager != null) {
+                    IconButton(
+                        onClick = { ttsManager.speak(original, languagePair) },
+                        modifier = Modifier.size(32.dp),
+                    ) {
+                        Text("🔊", fontSize = 16.sp)
+                    }
+                }
             }
+
+            // ── Транслитерация (если есть) ──────────────────────────────────
             if (transliteration != null) {
                 Text(
                     text = transliteration,
@@ -382,6 +388,15 @@ private fun TranslationPanel(
                     color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
                 )
             }
+
+            // ── Перевод во всю ширину ───────────────────────────────────────
+            Text(
+                text = translation,
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.Bold,
+                color = accentColor,
+                modifier = Modifier.fillMaxWidth(),
+            )
         }
     }
 }
