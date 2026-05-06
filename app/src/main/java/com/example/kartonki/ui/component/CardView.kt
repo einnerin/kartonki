@@ -54,7 +54,7 @@ fun WordCard(
         // Для иврита всё прижимается к правому краю — слово, транслитерация
         // (Row с TTS-кнопкой), перевод, определение. Кнопка озвучки остаётся
         // справа физически, текст слева от неё прижат к правому краю.
-        val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
+        val textAlign = if (isRtl) TextAlign.Right else TextAlign.Left
         Column(modifier = Modifier.padding(horizontal = 20.dp, vertical = 16.dp)) {
 
             // ── Word ─────────────────────────────────────────────────────────

@@ -185,7 +185,7 @@ fun PvpHandCard(
     )
 
     val isRtl = word.languagePair.startsWith("he")
-    val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
+    val textAlign = if (isRtl) TextAlign.Right else TextAlign.Left
 
     Column(
         modifier = modifier

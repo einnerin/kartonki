@@ -199,7 +199,7 @@ private fun ProblemWordRow(
             onCheckedChange = { onToggle() },
         )
         val isRtl = word.languagePair.startsWith("he")
-        val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
+        val textAlign = if (isRtl) TextAlign.Right else TextAlign.Left
         Column(modifier = Modifier.weight(1f)) {
             Text(
                 text = word.original,

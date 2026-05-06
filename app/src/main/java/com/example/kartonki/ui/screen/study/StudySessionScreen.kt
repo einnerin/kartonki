@@ -350,7 +350,7 @@ private fun TranslationPanel(
             // Для иврита всё содержимое (слово, транслитерация, перевод)
             // прижимается к правому краю — визуально согласованный блок.
             // Кнопка 🔊 всегда справа физически (привычное место).
-            val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
+            val textAlign = if (isRtl) TextAlign.Right else TextAlign.Left
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically,
