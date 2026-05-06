@@ -347,6 +347,10 @@ private fun TranslationPanel(
             verticalArrangement = Arrangement.spacedBy(4.dp),
         ) {
             // ── Слово + кнопка озвучки ───────────────────────────────────────
+            // Для иврита всё содержимое (слово, транслитерация, перевод)
+            // прижимается к правому краю — визуально согласованный блок.
+            // Кнопка 🔊 всегда справа физически (привычное место).
+            val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically,
@@ -358,6 +362,7 @@ private fun TranslationPanel(
                     ),
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.onSurface,
+                    textAlign = textAlign,
                     modifier = Modifier.weight(1f),
                 )
                 if (ttsManager != null) {
@@ -376,6 +381,8 @@ private fun TranslationPanel(
                     text = transliteration,
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
+                    textAlign = textAlign,
+                    modifier = Modifier.fillMaxWidth(),
                 )
             }
 
@@ -385,6 +392,7 @@ private fun TranslationPanel(
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.Bold,
                 color = accentColor,
+                textAlign = textAlign,
                 modifier = Modifier.fillMaxWidth(),
             )
         }

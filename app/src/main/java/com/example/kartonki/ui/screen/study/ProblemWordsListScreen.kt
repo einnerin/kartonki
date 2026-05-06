@@ -43,6 +43,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -196,14 +198,20 @@ private fun ProblemWordRow(
             checked = isSelected,
             onCheckedChange = { onToggle() },
         )
+        val isRtl = word.languagePair.startsWith("he")
+        val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
         Column(modifier = Modifier.weight(1f)) {
             Text(
                 text = word.original,
-                style = MaterialTheme.typography.bodyLarge,
+                style = MaterialTheme.typography.bodyLarge.copy(
+                    textDirection = if (isRtl) TextDirection.Rtl else TextDirection.Ltr,
+                ),
                 fontWeight = FontWeight.Medium,
                 color = if (isSelected) MaterialTheme.colorScheme.onBackground else MaterialTheme.colorScheme.onSurfaceVariant,
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
+                textAlign = textAlign,
+                modifier = Modifier.fillMaxWidth(),
             )
             Text(
                 text = word.translation,
@@ -212,6 +220,8 @@ private fun ProblemWordRow(
                         else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f),
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
+                textAlign = textAlign,
+                modifier = Modifier.fillMaxWidth(),
             )
         }
         RarityBadge(rarity = word.rarity)

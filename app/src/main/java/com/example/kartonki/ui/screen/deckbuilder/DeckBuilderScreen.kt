@@ -46,6 +46,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.R
@@ -282,16 +284,24 @@ private fun DeckCardItem(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(8.dp),
     ) {
+        val isRtl = word.languagePair.startsWith("he")
+        val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
         Column(modifier = Modifier.weight(1f)) {
             Text(
                 text = word.original,
-                style = MaterialTheme.typography.bodyLarge,
+                style = MaterialTheme.typography.bodyLarge.copy(
+                    textDirection = if (isRtl) TextDirection.Rtl else TextDirection.Ltr,
+                ),
                 fontWeight = FontWeight.Medium,
+                textAlign = textAlign,
+                modifier = Modifier.fillMaxWidth(),
             )
             Text(
                 text = word.translation,
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
+                textAlign = textAlign,
+                modifier = Modifier.fillMaxWidth(),
             )
         }
         RarityBadge(rarity = word.rarity)

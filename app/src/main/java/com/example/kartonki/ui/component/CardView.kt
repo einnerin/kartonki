@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -50,6 +51,10 @@ fun WordCard(
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainer),
         elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
     ) {
+        // Для иврита всё прижимается к правому краю — слово, транслитерация
+        // (Row с TTS-кнопкой), перевод, определение. Кнопка озвучки остаётся
+        // справа физически, текст слева от неё прижат к правому краю.
+        val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
         Column(modifier = Modifier.padding(horizontal = 20.dp, vertical = 16.dp)) {
 
             // ── Word ─────────────────────────────────────────────────────────
@@ -60,6 +65,8 @@ fun WordCard(
                 ),
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onSurface,
+                textAlign = textAlign,
+                modifier = Modifier.fillMaxWidth(),
             )
 
             // ── Transliteration + TTS button ─────────────────────────────────
@@ -72,7 +79,8 @@ fun WordCard(
                             text = word.transliteration!!,
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            modifier = Modifier.weight(1f, fill = false),
+                            textAlign = textAlign,
+                            modifier = Modifier.weight(1f),
                         )
                     } else {
                         Spacer(modifier = Modifier.weight(1f))
@@ -96,6 +104,8 @@ fun WordCard(
                 style = MaterialTheme.typography.headlineSmall,
                 color = rarityColor,
                 fontWeight = FontWeight.Medium,
+                textAlign = textAlign,
+                modifier = Modifier.fillMaxWidth(),
             )
 
             // ── Definition (LEGENDARY only) ───────────────────────────────────
@@ -109,6 +119,8 @@ fun WordCard(
                         maxLines = 2,
                         overflow = TextOverflow.Ellipsis,
                         fontStyle = FontStyle.Italic,
+                        textAlign = textAlign,
+                        modifier = Modifier.fillMaxWidth(),
                     )
                 }
             }

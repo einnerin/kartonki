@@ -37,6 +37,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.BaselineShift
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.kartonki.domain.model.Word
@@ -183,6 +184,9 @@ fun PvpHandCard(
         label = "pvp_card_scale",
     )
 
+    val isRtl = word.languagePair.startsWith("he")
+    val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
+
     Column(
         modifier = modifier
             .graphicsLayer(scaleX = scale, scaleY = scale)
@@ -195,11 +199,15 @@ fun PvpHandCard(
     ) {
         Text(
             text = word.original,
-            style = MaterialTheme.typography.bodyMedium,
+            style = MaterialTheme.typography.bodyMedium.copy(
+                textDirection = if (isRtl) TextDirection.Rtl else TextDirection.Ltr,
+            ),
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.onSurface,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
+            textAlign = textAlign,
+            modifier = Modifier.fillMaxWidth(),
         )
         Text(
             text = word.translation,
@@ -207,6 +215,8 @@ fun PvpHandCard(
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
+            textAlign = textAlign,
+            modifier = Modifier.fillMaxWidth(),
         )
         Spacer(Modifier.height(2.dp))
         Row(

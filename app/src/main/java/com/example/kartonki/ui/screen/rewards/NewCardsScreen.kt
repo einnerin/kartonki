@@ -29,6 +29,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.kartonki.domain.model.Word
@@ -148,19 +150,27 @@ private fun NewCardRow(word: Word) {
     ) {
         RarityBadge(rarity = word.rarity)
 
+        val isRtl = word.languagePair.startsWith("he")
+        val textAlign = if (isRtl) TextAlign.End else TextAlign.Start
         Column(modifier = Modifier.weight(1f)) {
             Text(
                 text = word.original,
-                style = MaterialTheme.typography.titleMedium,
+                style = MaterialTheme.typography.titleMedium.copy(
+                    textDirection = if (isRtl) TextDirection.Rtl else TextDirection.Ltr,
+                ),
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onSurface,
                 fontSize = 18.sp,
+                textAlign = textAlign,
+                modifier = Modifier.fillMaxWidth(),
             )
             Spacer(Modifier.height(2.dp))
             Text(
                 text = word.translation,
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
+                textAlign = textAlign,
+                modifier = Modifier.fillMaxWidth(),
             )
         }
     }
