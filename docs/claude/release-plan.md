@@ -101,15 +101,17 @@
 **AAB для загрузки в Play Console:**
 ```powershell
 $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
-./gradlew bundleRelease -x lintVitalAnalyzeRelease -x lintVitalReportRelease -x lintVitalRelease -x lint -x lintRelease -x lintAnalyzeRelease -x lintReportRelease
+./gradlew bundleRelease
 ```
 
 **APK для прямой установки на телефон:**
 ```powershell
 $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
-./gradlew assembleRelease -x lintVitalAnalyzeRelease -x lintVitalReportRelease -x lintVitalRelease -x lint -x lintRelease -x lintAnalyzeRelease -x lintReportRelease
+./gradlew assembleRelease
 & "C:\Users\Einerin\AppData\Local\Android\Sdk\platform-tools\adb.exe" install -r "C:\Users\Einerin\AndroidStudioProjects\Kartonki\app\build\outputs\apk\release\app-release.apk"
 ```
+
+(С 2026-05-07 `settings.gradle.kts` автоматически поднимает `maven_proxy.js`, если он не запущен — `-x lint*` хак больше не нужен.)
 
 ### Versioning
 `versionCode = 1`, `versionName = "0.1.0"`. При каждом обновлении в Play — `versionCode += 1`. `versionName` по semver.
@@ -193,7 +195,7 @@ $env:JAVA_HOME = "C:\Program Files\Android\Android Studio\jbr"
 6. **Параллельно Closed testing** с 12 тестерами на 14 дней (запускает таймер production access).
 7. **Open testing** — публичная бета для первых пользователей (Early access tag).
 8. **Production** — после 14 дней Closed test и заявки на production access.
-9. **Поднять локальный Maven proxy** перед production-сборкой (или fix конфигурацию репозиториев) — чтобы lint прошёл без 7 `-x` флагов.
+9. ~~**Поднять локальный Maven proxy** перед production-сборкой~~ ✅ Закрыто 2026-05-07 — `settings.gradle.kts` сам запускает `node maven_proxy.js`, если он не слушает на :18080.
 
 ---
 
