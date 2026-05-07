@@ -55,6 +55,17 @@ android {
     }
 
     buildTypes {
+        debug {
+            // Suffix позволяет debug-сборке (Android Studio Run) сосуществовать
+            // с release-сборкой (.aab/.apk из Play Store) на одном устройстве.
+            // Без suffix'а они конфликтуют по applicationId + разной подписи —
+            // Android отказывается ставить второй APK поверх первого, требует
+            // `adb uninstall` каждый раз при переключении.
+            // Firebase: для com.einerin.kartonki.debug зарегистрирован отдельный
+            // Android-app в Firebase Console (2026-05-07), debug-keystore SHA-1
+            // прописан там же — Google Sign-In в debug-сборке работает.
+            applicationIdSuffix = ".debug"
+        }
         release {
             // minify/shrink stay OFF until we've verified ProGuard rules don't break anything.
             // Toggle to true (one separate commit each) only after a smoke-test cycle:
