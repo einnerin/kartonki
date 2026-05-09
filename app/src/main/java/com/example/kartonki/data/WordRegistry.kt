@@ -120,6 +120,7 @@ object WordRegistry {
                 WordDataEnglishEntertainmentL1L2L3.sets +
                 WordDataEnglishEntertainmentL4.sets +
                 WordDataEnglishEntertainmentL5.sets +
+                WordDataEnglishEntertainmentGaming.sets +
                 WordDataEnglishEmotionsL1.sets +
                 WordDataEnglishEmotionsL2.sets +
                 WordDataEnglishEmotionsL3.sets +
@@ -505,6 +506,7 @@ object WordRegistry {
                 WordDataEnglishEntertainmentL1L2L3.words +
                 WordDataEnglishEntertainmentL4.words +
                 WordDataEnglishEntertainmentL5.words +
+                WordDataEnglishEntertainmentGaming.words +
                 WordDataEnglishEmotionsL1.words +
                 WordDataEnglishEmotionsL2.words +
                 WordDataEnglishEmotionsL3.words +
