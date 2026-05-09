@@ -172,6 +172,7 @@ object WordRegistry {
                 WordDataEnglishPhrasalVerbsL3.sets +
                 WordDataEnglishPhrasalVerbsL4.sets +
                 WordDataEnglishPhrasalVerbsL5.sets +
+                WordDataEnglishPhrasalVerbsMotion.sets +
                 WordDataEnglishAiMlL1.sets +
                 WordDataEnglishAiMlL2.sets +
                 WordDataEnglishAiMlL3.sets +
@@ -548,6 +549,7 @@ object WordRegistry {
                 WordDataEnglishPhrasalVerbsL3.words +
                 WordDataEnglishPhrasalVerbsL4.words +
                 WordDataEnglishPhrasalVerbsL5.words +
+                WordDataEnglishPhrasalVerbsMotion.words +
                 WordDataEnglishAiMlL1.words +
                 WordDataEnglishAiMlL2.words +
                 WordDataEnglishAiMlL3.words +
