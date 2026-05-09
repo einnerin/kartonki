@@ -408,6 +408,7 @@ object WordRegistry {
                 WordDataHebrewIdiomsL3.sets +
                 WordDataHebrewIdiomsL4.sets +
                 WordDataHebrewIdiomsL5.sets +
+                WordDataHebrewIdiomsTanakh.sets +
                 WordDataHebrewIsraeliTransportL1.sets +
                 WordDataHebrewIsraeliTransportL2.sets +
                 WordDataHebrewIsraeliTransportL3.sets +
@@ -786,6 +787,7 @@ object WordRegistry {
                 WordDataHebrewIdiomsL3.words +
                 WordDataHebrewIdiomsL4.words +
                 WordDataHebrewIdiomsL5.words +
+                WordDataHebrewIdiomsTanakh.words +
                 WordDataHebrewIsraeliTransportL1.words +
                 WordDataHebrewIsraeliTransportL2.words +
                 WordDataHebrewIsraeliTransportL3.words +
