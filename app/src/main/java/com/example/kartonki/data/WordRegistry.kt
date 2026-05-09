@@ -180,6 +180,7 @@ object WordRegistry {
                 WordDataEnglishSpace.sets +
                 WordDataEnglishLiterature.sets +
                 WordDataEnglishAnimals.sets +
+                WordDataEnglishGeography.sets +
                 WordDataHebrewHealthFitnessL1L2L3.sets +
                 WordDataHebrewShoppingL1L2L3.sets +
                 WordDataHebrewEntertainmentL1L2L3.sets +
@@ -549,6 +550,7 @@ object WordRegistry {
                 WordDataEnglishSpace.words +
                 WordDataEnglishLiterature.words +
                 WordDataEnglishAnimals.words +
+                WordDataEnglishGeography.words +
                 WordDataHebrewHealthFitnessL1L2L3.words +
                 WordDataHebrewShoppingL1L2L3.words +
                 WordDataHebrewEntertainmentL1L2L3.words +
