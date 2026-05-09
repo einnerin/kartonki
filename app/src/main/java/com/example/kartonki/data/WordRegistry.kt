@@ -154,6 +154,7 @@ object WordRegistry {
                 WordDataEnglishInternetL3.sets +
                 WordDataEnglishInternetL4.sets +
                 WordDataEnglishInternetL5.sets +
+                WordDataEnglishInternetPlatforms.sets +
                 WordDataEnglishCinemaL1.sets +
                 WordDataEnglishCinemaL2.sets +
                 WordDataEnglishCinemaL3.sets +
@@ -534,6 +535,7 @@ object WordRegistry {
                 WordDataEnglishInternetL3.words +
                 WordDataEnglishInternetL4.words +
                 WordDataEnglishInternetL5.words +
+                WordDataEnglishInternetPlatforms.words +
                 WordDataEnglishCinemaL1.words +
                 WordDataEnglishCinemaL2.words +
                 WordDataEnglishCinemaL3.words +
