@@ -112,6 +112,7 @@ object WordRegistry {
                 WordDataEnglishHealthFitnessL1L2L3.sets +
                 WordDataEnglishHealthFitnessL4.sets +
                 WordDataEnglishHealthFitnessL5.sets +
+                WordDataEnglishHealthFitnessTraining.sets +
                 WordDataEnglishShoppingL1L2L3.sets +
                 WordDataEnglishShoppingL4.sets +
                 WordDataEnglishShoppingL5.sets +
@@ -491,6 +492,7 @@ object WordRegistry {
                 WordDataEnglishHealthFitnessL1L2L3.words +
                 WordDataEnglishHealthFitnessL4.words +
                 WordDataEnglishHealthFitnessL5.words +
+                WordDataEnglishHealthFitnessTraining.words +
                 WordDataEnglishShoppingL1L2L3.words +
                 WordDataEnglishShoppingL4.words +
                 WordDataEnglishShoppingL5.words +
