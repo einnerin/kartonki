@@ -74,6 +74,7 @@ object WordRegistry {
                 WordDataEnglishHistory2.sets +
                 WordDataEnglishHistoryL4.sets +
                 WordDataEnglishHistoryL5.sets +
+                WordDataEnglishHistoryAncient.sets +
                 WordDataEnglishClothing2.sets +
                 WordDataEnglishClothingL5.sets +
                 WordDataEnglishSports2.sets +
@@ -455,6 +456,7 @@ object WordRegistry {
                 WordDataEnglishHistory2.words +
                 WordDataEnglishHistoryL4.words +
                 WordDataEnglishHistoryL5.words +
+                WordDataEnglishHistoryAncient.words +
                 WordDataEnglishClothing2.words +
                 WordDataEnglishClothingL5.words +
                 WordDataEnglishSports2.words +
