@@ -78,6 +78,7 @@ object WordRegistry {
                 WordDataEnglishSports2.sets +
                 WordDataEnglishSportsL4.sets +
                 WordDataEnglishSportsL5.sets +
+                WordDataEnglishSportsFootball.sets +
                 WordDataEnglishTransport2.sets +
                 WordDataEnglishTransportL5.sets +
                 WordDataEnglishHomeL5.sets +
@@ -452,6 +453,7 @@ object WordRegistry {
                 WordDataEnglishSports2.words +
                 WordDataEnglishSportsL4.words +
                 WordDataEnglishSportsL5.words +
+                WordDataEnglishSportsFootball.words +
                 WordDataEnglishTransport2.words +
                 WordDataEnglishTransportL5.words +
                 WordDataEnglishHomeL5.words +
