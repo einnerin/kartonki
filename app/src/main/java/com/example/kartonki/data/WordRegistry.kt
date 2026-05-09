@@ -161,6 +161,7 @@ object WordRegistry {
                 WordDataEnglishCinemaL3.sets +
                 WordDataEnglishCinemaL4.sets +
                 WordDataEnglishCinemaL5.sets +
+                WordDataEnglishCinemaGenres.sets +
                 WordDataEnglishMusicL1.sets +
                 WordDataEnglishMusicL2.sets +
                 WordDataEnglishMusicL3.sets +
@@ -543,6 +544,7 @@ object WordRegistry {
                 WordDataEnglishCinemaL3.words +
                 WordDataEnglishCinemaL4.words +
                 WordDataEnglishCinemaL5.words +
+                WordDataEnglishCinemaGenres.words +
                 WordDataEnglishMusicL1.words +
                 WordDataEnglishMusicL2.words +
                 WordDataEnglishMusicL3.words +
