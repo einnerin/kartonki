@@ -176,6 +176,7 @@ object WordRegistry {
                 WordDataEnglishAiMlL3.sets +
                 WordDataEnglishAiMlL4.sets +
                 WordDataEnglishAiMlL5.sets +
+                WordDataEnglishBusiness.sets +
                 WordDataHebrewHealthFitnessL1L2L3.sets +
                 WordDataHebrewShoppingL1L2L3.sets +
                 WordDataHebrewEntertainmentL1L2L3.sets +
@@ -537,6 +538,7 @@ object WordRegistry {
                 WordDataEnglishAiMlL3.words +
                 WordDataEnglishAiMlL4.words +
                 WordDataEnglishAiMlL5.words +
+                WordDataEnglishBusiness.words +
                 WordDataHebrewHealthFitnessL1L2L3.words +
                 WordDataHebrewShoppingL1L2L3.words +
                 WordDataHebrewEntertainmentL1L2L3.words +
