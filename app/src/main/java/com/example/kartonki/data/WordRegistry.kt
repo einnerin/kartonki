@@ -167,6 +167,7 @@ object WordRegistry {
                 WordDataEnglishMusicL3.sets +
                 WordDataEnglishMusicL4.sets +
                 WordDataEnglishMusicL5.sets +
+                WordDataEnglishMusicGenres.sets +
                 WordDataEnglishIdiomsL1.sets +
                 WordDataEnglishIdiomsL2.sets +
                 WordDataEnglishIdiomsL3.sets +
@@ -550,6 +551,7 @@ object WordRegistry {
                 WordDataEnglishMusicL3.words +
                 WordDataEnglishMusicL4.words +
                 WordDataEnglishMusicL5.words +
+                WordDataEnglishMusicGenres.words +
                 WordDataEnglishIdiomsL1.words +
                 WordDataEnglishIdiomsL2.words +
                 WordDataEnglishIdiomsL3.words +
