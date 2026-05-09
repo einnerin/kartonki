@@ -412,6 +412,7 @@ object WordRegistry {
                 WordDataHebrewIsraeliTransportL4.sets +
                 WordDataHebrewIsraeliTransportL5.sets +
                 WordDataHebrewCinemaL1.sets +
+                WordDataHebrewCinemaL2L5.sets +
                 WordDataHebrewLiterature.sets +
                 WordDataHebrewMusic.sets +
                 WordDataHebrewDating.sets +
@@ -786,6 +787,7 @@ object WordRegistry {
                 WordDataHebrewIsraeliTransportL4.words +
                 WordDataHebrewIsraeliTransportL5.words +
                 WordDataHebrewCinemaL1.words +
+                WordDataHebrewCinemaL2L5.words +
                 WordDataHebrewLiterature.words +
                 WordDataHebrewMusic.words +
                 WordDataHebrewDating.words +
