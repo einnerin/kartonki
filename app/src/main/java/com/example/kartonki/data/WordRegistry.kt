@@ -67,6 +67,7 @@ object WordRegistry {
                 WordDataEnglishArchitectureStyles.sets +
                 WordDataEnglishBatch16.sets +
                 WordDataEnglishBatch17.sets +
+                WordDataEnglishCityUrbanization.sets +
                 WordDataEnglishBatch18.sets +
                 WordDataEnglishJournalism2.sets +
                 WordDataEnglishJournalismL4.sets +
@@ -453,6 +454,7 @@ object WordRegistry {
                 WordDataEnglishArchitectureStyles.words +
                 WordDataEnglishBatch16.words +
                 WordDataEnglishBatch17.words +
+                WordDataEnglishCityUrbanization.words +
                 WordDataEnglishBatch18.words +
                 WordDataEnglishJournalism2.words +
                 WordDataEnglishJournalismL4.words +
