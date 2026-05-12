@@ -15,7 +15,36 @@
 
 - ✅ Используем `FirebaseAnalytics.getInstance(firebaseApp)` — работает с существующим FirebaseApp
 - ❌ Плагин `google-services` не подключаем — не переделываем текущую архитектуру
+- ⚠️ **БЕЗ плагина — обязательны string-resources** в `app/src/main/res/values/firebase_config.xml` (`google_app_id`, `google_api_key`, `gcm_defaultSenderId`, `project_id`, `firebase_database_url`, `google_storage_bucket`). Иначе `FirebaseInitProvider` не создаёт default app до `Application.onCreate()`, и **Firebase Analytics SDK не запускает AppMeasurement service — события молча отбрасываются**. Auth/Firestore/RTDB работают и без ресурсов (используют переданный FirebaseApp lazy), Analytics — нет. См. инцидент 2026-05-12 ниже.
+- 📁 Для debug-сборки (`applicationId = com.einerin.kartonki.debug`) `google_app_id` переопределяется в `app/src/debug/res/values/firebase_config.xml` — debug-события идут в свой Data Stream и не смешиваются с production.
 - ❌ Crashlytics откладываем — требует плагин; MVP пишет краш-события через собственный `UncaughtExceptionHandler` в `app_crash` event
+
+### Инцидент 2026-05-12 — Analytics молчала полтора месяца
+
+С момента внедрения аналитики (2026-04-...) до 2026-05-12 **ни одно событие не доходило** до Firebase Analytics, хотя SDK был интегрирован, 26 callsite'ов вызывали `analytics.log()`, и `BuildConfig.DEBUG → user_id=dev_einnerin` работал в коде.
+
+**Симптом:** Firebase Console → Analytics → Realtime / Events за 28 дней — нули. В GA4 Admin → Data Streams все три stream'а («Kartonki» com.example, «kartonki» com.einerin, «Kartonki Debug») статус `No data received in past 48 hours` — при том что property подключена и enabled.
+
+**Корневая причина:** Firebase Analytics SDK при старте полагается на `FirebaseInitProvider` (ContentProvider, регистрируется автоматически через manifest merger Firebase SDK). Провайдер запускается **до** `Application.onCreate()` и пытается создать default `FirebaseApp` через `FirebaseApp.initializeApp(context)` — overload без явных `FirebaseOptions`, который читает их из string-resources (`@string/google_app_id` и т.д.). Эти ресурсы обычно генерирует `google-services` plugin из `google-services.json`. **Без плагина — ресурсов нет**, FirebaseInitProvider логирует warning «FirebaseApp initialization unsuccessful» и тихо отключается. **Затем** наш `FirebaseModule` через Hilt создаёт default app вручную с правильными опциями — но к этому моменту Firebase Analytics SDK уже зафиксировал «no default app» и **не запустил AppMeasurement service**. События логируются в `FirebaseAnalytics`-instance, но никуда не отправляются.
+
+**Фикс:** добавлены ресурсы `app/src/main/res/values/firebase_config.xml` (release) + `app/src/debug/res/values/firebase_config.xml` (debug override `google_app_id`). FirebaseInitProvider теперь создаёт default app сам, а `FirebaseModule` через `if (existing.isNotEmpty()) return FirebaseApp.getInstance()` его подхватывает (код уже был готов к этому случаю).
+
+**Подтверждение фикса (Logcat debug-сборки 2026-05-12 14:11):**
+```
+FirebaseInitProvider: FirebaseApp initialization successful
+FA: App measurement enabled for app package, google app id:
+    com.einerin.kartonki.debug, 1:75116979020:android:03c5b03c9389e64da3a5e9
+FA: App measurement initialized, version: 165000
+FA-SVC: Logging event: origin=auto, name=first_open(_f)
+FA-SVC: Logging event: origin=auto, name=screen_view(_vs), ga_screen_class=MainActivity
+Analytics: event=tab_selected params={tab_name=splash}
+FA-SVC: Uploading data. app, uncompressed size, data: com.einerin.kartonki.debug, 680
+FA-SVC: Successful upload. Got network response. code, size: 204, 0
+```
+
+Production-фикс залит в v0.1.13 (versionCode 14) → Closed Testing 2026-05-12.
+
+**Если в будущем переезжаем на `google-services` plugin** (например для Crashlytics) — ресурсы из `firebase_config.xml` нужно удалить, иначе будет конфликт (plugin сгенерирует те же имена через build/generated). И наоборот: если удаляем ресурсы — Analytics снова замолчит.
 
 ### Новые файлы
 

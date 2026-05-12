@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Firebase config — release-сборка (com.einerin.kartonki).
+
+  Эти ресурсы обычно генерирует google-services plugin из google-services.json.
+  Мы плагин не подключаем (см. docs/claude/analytics-plan.md), но ресурсы нужны:
+  без них FirebaseInitProvider не создаёт default FirebaseApp до Application.onCreate(),
+  и Firebase Analytics SDK не запускает AppMeasurement service — события молча
+  отбрасываются. С ресурсами FirebaseInitProvider создаёт app сам, наш FirebaseModule
+  через FirebaseApp.getApps() видит существующий и просто его возвращает.
+
+  google_app_id здесь — для release. Для debug-сборки переопределён в
+  app/src/debug/res/values/firebase_config.xml.
+
+  Значения скопированы из google-services.json (client[0] = com.einerin.kartonki).
+  api_key — публичный client-идентификатор Firebase, не секрет: ограничен SHA-1
+  + package name через OAuth-clients в Google Cloud Console.
+-->
+<resources>
+    <string name="google_app_id" translatable="false">1:75116979020:android:e18e4f82b679f85ea3a5e9</string>
+    <string name="google_api_key" translatable="false">AIzaSyDynvSZY0b2zBRoqba3E_9QkYLVGD8kM0w</string>
+    <string name="gcm_defaultSenderId" translatable="false">75116979020</string>
+    <string name="project_id" translatable="false">kartonki-e18c5</string>
+    <string name="firebase_database_url" translatable="false">https://kartonki-e18c5-default-rtdb.europe-west1.firebasedatabase.app</string>
+    <string name="google_storage_bucket" translatable="false">kartonki-e18c5.firebasestorage.app</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDynvSZY0b2zBRoqba3E_9QkYLVGD8kM0w</string>
+</resources>

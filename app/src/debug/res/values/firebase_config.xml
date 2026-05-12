@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Firebase config — debug-сборка (com.einerin.kartonki.debug).
+
+  Переопределяет google_app_id из app/src/main/res/values/firebase_config.xml.
+  Остальные ресурсы (project_id, api_key и т.д.) общие — наследуются из main.
+
+  Значение скопировано из google-services.json (client[1] = com.einerin.kartonki.debug).
+  Этот mobilesdk_app_id привязан к Android-app «Kartonki Debug» в Firebase Console
+  с SHA-1 debug-keystore. Благодаря отдельному app id, debug-события (user_id=dev_einnerin)
+  пишутся в отдельный Data Stream и не смешиваются с production-стримом.
+-->
+<resources>
+    <string name="google_app_id" translatable="false">1:75116979020:android:03c5b03c9389e64da3a5e9</string>
+</resources>

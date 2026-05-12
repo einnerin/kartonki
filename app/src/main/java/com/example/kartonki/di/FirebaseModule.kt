@@ -1,6 +1,7 @@
 package com.example.kartonki.di
 
 import android.content.Context
+import com.example.kartonki.BuildConfig
 import com.google.firebase.FirebaseApp
 import com.google.firebase.FirebaseOptions
 import com.google.firebase.auth.FirebaseAuth
@@ -17,17 +18,22 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object FirebaseModule {
 
+    // mobilesdk_app_id из google-services.json. Release и debug — разные
+    // Android-app'ы в Firebase Console, чтобы debug-события (user_id=dev_einnerin)
+    // не смешивались с production-стримом и debug-сборка могла использовать
+    // свой OAuth client + SHA-1 debug-keystore для Google Sign-In.
+    private const val RELEASE_APP_ID = "1:75116979020:android:e18e4f82b679f85ea3a5e9"
+    private const val DEBUG_APP_ID = "1:75116979020:android:03c5b03c9389e64da3a5e9"
+
     @Provides
     @Singleton
     fun provideFirebaseApp(@ApplicationContext context: Context): FirebaseApp {
         val existing = FirebaseApp.getApps(context)
         if (existing.isNotEmpty()) return FirebaseApp.getInstance()
 
-        // Firebase mobilesdk_app_id for com.einerin.kartonki — registered
-        // 2026-04-27 alongside the old com.example.kartonki app (still in
-        // google-services.json under client[1] for emergency rollback).
+        val applicationId = if (BuildConfig.DEBUG) DEBUG_APP_ID else RELEASE_APP_ID
         val options = FirebaseOptions.Builder()
-            .setApplicationId("1:75116979020:android:e18e4f82b679f85ea3a5e9")
+            .setApplicationId(applicationId)
             .setApiKey("AIzaSyDynvSZY0b2zBRoqba3E_9QkYLVGD8kM0w")
             .setProjectId("kartonki-e18c5")
             .setGcmSenderId("75116979020")
