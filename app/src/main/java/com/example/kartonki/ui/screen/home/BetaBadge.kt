@@ -34,6 +34,7 @@ import androidx.compose.ui.platform.ClipEntry
 import androidx.compose.ui.platform.LocalClipboard
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.kartonki.ui.theme.AccentGold
@@ -119,20 +120,24 @@ fun BetaInfoDialog(
                         modifier = Modifier
                             .weight(1f)
                             .clickable { sendFeedbackEmail(context) }
-                            .padding(horizontal = 12.dp, vertical = 10.dp),
+                            .padding(start = 10.dp, end = 4.dp, top = 10.dp, bottom = 10.dp),
                         verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                        horizontalArrangement = Arrangement.spacedBy(6.dp),
                     ) {
                         Text(
                             text = "✉",
-                            fontSize = 18.sp,
+                            fontSize = 16.sp,
                             color = AccentGold,
                         )
                         Text(
                             text = FEEDBACK_EMAIL,
                             style = MaterialTheme.typography.bodyMedium,
+                            fontSize = 13.sp,
                             color = AccentGold,
                             fontWeight = FontWeight.Medium,
+                            maxLines = 1,
+                            softWrap = false,
+                            overflow = TextOverflow.Visible,
                         )
                     }
                     IconButton(
@@ -153,11 +158,11 @@ fun BetaInfoDialog(
                                 ).show()
                             }
                         },
-                        modifier = Modifier.size(40.dp),
+                        modifier = Modifier.size(36.dp),
                     ) {
                         Text(
                             text = "⎘",
-                            fontSize = 18.sp,
+                            fontSize = 16.sp,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
                     }
