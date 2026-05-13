@@ -94,6 +94,7 @@ object WordRegistry {
                 WordDataEnglishMedicineAnatomy.sets +
                 WordDataEnglishScienceL1.sets +
                 WordDataEnglishScienceL5.sets +
+                WordDataEnglishSciencePhysics.sets +
                 WordDataEnglishEducationL5.sets +
                 WordDataEnglishEverydayL3.sets +
                 WordDataEnglishEverydayL4.sets +
@@ -485,6 +486,7 @@ object WordRegistry {
                 WordDataEnglishMedicineAnatomy.words +
                 WordDataEnglishScienceL1.words +
                 WordDataEnglishScienceL5.words +
+                WordDataEnglishSciencePhysics.words +
                 WordDataEnglishEducationL5.words +
                 WordDataEnglishEverydayL3.words +
                 WordDataEnglishEverydayL4.words +
