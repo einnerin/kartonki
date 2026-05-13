@@ -102,6 +102,7 @@ object WordRegistry {
                 WordDataEnglishPoliticsL5.sets +
                 WordDataEnglishNatureL4.sets +
                 WordDataEnglishNatureL5.sets +
+                WordDataEnglishNatureGeology.sets +
                 WordDataEnglishPsychologyL1.sets +
                 WordDataEnglishTravelL3.sets +
                 WordDataEnglishTravelL4.sets +
@@ -491,6 +492,7 @@ object WordRegistry {
                 WordDataEnglishPoliticsL5.words +
                 WordDataEnglishNatureL4.words +
                 WordDataEnglishNatureL5.words +
+                WordDataEnglishNatureGeology.words +
                 WordDataEnglishPsychologyL1.words +
                 WordDataEnglishTravelL3.words +
                 WordDataEnglishTravelL4.words +
