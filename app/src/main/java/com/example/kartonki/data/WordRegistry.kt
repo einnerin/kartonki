@@ -118,6 +118,7 @@ object WordRegistry {
                 WordDataEnglishPhilosophyL2.sets +
                 WordDataEnglishFinanceL1.sets +
                 WordDataEnglishFinanceL5.sets +
+                WordDataEnglishFinanceMarkets.sets +
                 WordDataEnglishHealthFitnessL1L2L3.sets +
                 WordDataEnglishHealthFitnessL4.sets +
                 WordDataEnglishHealthFitnessL5.sets +
@@ -512,6 +513,7 @@ object WordRegistry {
                 WordDataEnglishPhilosophyL2.words +
                 WordDataEnglishFinanceL1.words +
                 WordDataEnglishFinanceL5.words +
+                WordDataEnglishFinanceMarkets.words +
                 WordDataEnglishHealthFitnessL1L2L3.words +
                 WordDataEnglishHealthFitnessL4.words +
                 WordDataEnglishHealthFitnessL5.words +
