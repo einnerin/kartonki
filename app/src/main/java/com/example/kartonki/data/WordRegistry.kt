@@ -91,6 +91,7 @@ object WordRegistry {
                 WordDataEnglishCultureL1.sets +
                 WordDataEnglishMedicineL4.sets +
                 WordDataEnglishMedicineL5.sets +
+                WordDataEnglishMedicineAnatomy.sets +
                 WordDataEnglishScienceL1.sets +
                 WordDataEnglishScienceL5.sets +
                 WordDataEnglishEducationL5.sets +
@@ -479,6 +480,7 @@ object WordRegistry {
                 WordDataEnglishCultureL1.words +
                 WordDataEnglishMedicineL4.words +
                 WordDataEnglishMedicineL5.words +
+                WordDataEnglishMedicineAnatomy.words +
                 WordDataEnglishScienceL1.words +
                 WordDataEnglishScienceL5.words +
                 WordDataEnglishEducationL5.words +
