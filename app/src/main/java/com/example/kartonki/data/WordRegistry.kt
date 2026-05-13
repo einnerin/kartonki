@@ -455,7 +455,8 @@ object WordRegistry {
                 WordDataHebrewEducationEdTech.sets +
                 WordDataHebrewWorkRemote.sets +
                 WordDataHebrewJournalismDigital.sets +
-                WordDataHebrewReligionShabbat.sets
+                WordDataHebrewReligionShabbat.sets +
+                WordDataHebrewReligionPesach.sets
     }
 
     private val _allWordsRaw: List<WordEntity> by lazy {
@@ -867,7 +868,8 @@ object WordRegistry {
                 WordDataHebrewEducationEdTech.words +
                 WordDataHebrewWorkRemote.words +
                 WordDataHebrewJournalismDigital.words +
-                WordDataHebrewReligionShabbat.words
+                WordDataHebrewReligionShabbat.words +
+                WordDataHebrewReligionPesach.words
     }
 
     val allPrebuiltDecks: List<DeckSeed> by lazy {
