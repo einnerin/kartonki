@@ -116,6 +116,7 @@ object WordRegistry {
                 WordDataEnglishTechAlgorithms.sets +
                 WordDataEnglishPhilosophyL1.sets +
                 WordDataEnglishPhilosophyL2.sets +
+                WordDataEnglishPhilosophySchools.sets +
                 WordDataEnglishFinanceL1.sets +
                 WordDataEnglishFinanceL5.sets +
                 WordDataEnglishFinanceMarkets.sets +
@@ -511,6 +512,7 @@ object WordRegistry {
                 WordDataEnglishTechAlgorithms.words +
                 WordDataEnglishPhilosophyL1.words +
                 WordDataEnglishPhilosophyL2.words +
+                WordDataEnglishPhilosophySchools.words +
                 WordDataEnglishFinanceL1.words +
                 WordDataEnglishFinanceL5.words +
                 WordDataEnglishFinanceMarkets.words +
