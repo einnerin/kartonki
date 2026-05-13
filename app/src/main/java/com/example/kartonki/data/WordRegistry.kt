@@ -72,6 +72,7 @@ object WordRegistry {
                 WordDataEnglishJournalism2.sets +
                 WordDataEnglishJournalismL4.sets +
                 WordDataEnglishJournalismL5.sets +
+                WordDataEnglishJournalismDigital.sets +
                 WordDataEnglishHistory2.sets +
                 WordDataEnglishHistoryL4.sets +
                 WordDataEnglishHistoryL5.sets +
@@ -469,6 +470,7 @@ object WordRegistry {
                 WordDataEnglishJournalism2.words +
                 WordDataEnglishJournalismL4.words +
                 WordDataEnglishJournalismL5.words +
+                WordDataEnglishJournalismDigital.words +
                 WordDataEnglishHistory2.words +
                 WordDataEnglishHistoryL4.words +
                 WordDataEnglishHistoryL5.words +
