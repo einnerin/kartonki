@@ -87,6 +87,7 @@ object WordRegistry {
                 WordDataEnglishHomeL5.sets +
                 WordDataEnglishFoodL4.sets +
                 WordDataEnglishFoodL5.sets +
+                WordDataEnglishFoodSpices.sets +
                 WordDataEnglishCultureL1.sets +
                 WordDataEnglishMedicineL4.sets +
                 WordDataEnglishMedicineL5.sets +
@@ -474,6 +475,7 @@ object WordRegistry {
                 WordDataEnglishHomeL5.words +
                 WordDataEnglishFoodL4.words +
                 WordDataEnglishFoodL5.words +
+                WordDataEnglishFoodSpices.words +
                 WordDataEnglishCultureL1.words +
                 WordDataEnglishMedicineL4.words +
                 WordDataEnglishMedicineL5.words +
