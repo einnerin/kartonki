@@ -112,6 +112,7 @@ object WordRegistry {
                 WordDataEnglishTravelL5.sets +
                 WordDataEnglishWorkL3.sets +
                 WordDataEnglishWorkL5.sets +
+                WordDataEnglishWorkRemote.sets +
                 WordDataEnglishTechL5.sets +
                 WordDataEnglishTechAlgorithms.sets +
                 WordDataEnglishPhilosophyL1.sets +
@@ -508,6 +509,7 @@ object WordRegistry {
                 WordDataEnglishTravelL5.words +
                 WordDataEnglishWorkL3.words +
                 WordDataEnglishWorkL5.words +
+                WordDataEnglishWorkRemote.words +
                 WordDataEnglishTechL5.words +
                 WordDataEnglishTechAlgorithms.words +
                 WordDataEnglishPhilosophyL1.words +
