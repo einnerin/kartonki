@@ -98,6 +98,7 @@ object WordRegistry {
                 WordDataEnglishScienceL5.sets +
                 WordDataEnglishSciencePhysics.sets +
                 WordDataEnglishEducationL5.sets +
+                WordDataEnglishEducationEdTech.sets +
                 WordDataEnglishEverydayL3.sets +
                 WordDataEnglishEverydayL4.sets +
                 WordDataEnglishEverydayL5.sets +
@@ -496,6 +497,7 @@ object WordRegistry {
                 WordDataEnglishScienceL5.words +
                 WordDataEnglishSciencePhysics.words +
                 WordDataEnglishEducationL5.words +
+                WordDataEnglishEducationEdTech.words +
                 WordDataEnglishEverydayL3.words +
                 WordDataEnglishEverydayL4.words +
                 WordDataEnglishEverydayL5.words +
