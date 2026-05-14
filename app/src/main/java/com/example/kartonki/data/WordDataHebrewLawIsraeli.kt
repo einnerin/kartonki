@@ -16,14 +16,17 @@ import com.example.kartonki.data.db.entity.WordSetEntity
  * с израильской юридической системой.
  *
  * Распределение редкости (validate_rarity_spread: 2 смежных уровня):
- *   RARE — 13 слов (B2): базовая терминология израильских судов и
- *     гражданского процесса (Шалом, Мехози, Мишпаха, Авода, Эльйон,
- *     товэа, нитба, ктав твиа, hазмана ле-диюн, тик мишпати, мооэд диюн,
- *     псак дин, hаршаа).
- *   EPIC — 12 слов (C1): специализированная лексика — высшие инстанции
- *     (БАГАЦ), раввинский и ювенальный суды, коллегиальный состав,
- *     процессуальные понятия (цав икув йэциа, hаадаа, онэш аль тнай,
+ *   RARE — 11 слов (B2): базовая терминология израильских судов и
+ *     гражданского процесса (Шалом, Мехози, Мишпаха, Авода, БАГАЦ,
+ *     мооэд диюн, товэа, нитба, тик мишпати, hаршаа, hазмана ле-диюн).
+ *   EPIC — 14 слов (C1): специализированная лексика — Верховный суд,
+ *     раввинский и ювенальный суды, коллегиальный состав, ктав твиа
+ *     (юр. оформление), процессуальные понятия (цав икув йэциа, hазмана
+ *     ле-диюн, протокол hа-диюн, псак дин, hаадаа, онэш аль тнай,
  *     хазакат хафут, нэтэль hохаха).
+ *   Rarity выровнен с существующими дублями в других темах:
+ *     Эльйон=EPIC (BureauL5), ктав твиа=EPIC (UrbanLifeL4),
+ *     псак дин=EPIC (UrbanLifeL4), БАГАЦ=RARE (PoliticsIsraeli).
  *
  * Не пересекается со словами в существующих he-ru сетах темы «Право»
  * (1063, 1064, 1089, 1195, 1278, 1279, 1495, 1496, 1537, 1703) — те
@@ -141,7 +144,7 @@ object WordDataHebrewLawIsraeli {
 
         // ── Group: law_il_high_courts (3 words) ───────────────────────────────
 
-        WordEntity(id = 191407, setId = 1914, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 191407, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
             original = "בֵּית הַמִּשְׁפָּט הָעֶלְיוֹן",
             translation = "Верховный суд (высшая инстанция)",
             definition = "הָעָרְכָּה הָעֶלְיוֹנָה בְּמַעֲרֶכֶת הַמִּשְׁפָּט בְּיִשְׂרָאֵל — דָּנָה בְּעֶרְעוּרִים סוֹפִיִּים וְקוֹבַעַת תַּקְדִּים.",
@@ -152,7 +155,7 @@ object WordDataHebrewLawIsraeli {
             pos = "phrase", semanticGroup = "law_il_high_courts",
             isFillInBlankSafe = false),
 
-        WordEntity(id = 191408, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
+        WordEntity(id = 191408, setId = 1914, languagePair = "he-ru", rarity = "RARE",
             original = "בָּג\"ץ",
             translation = "БАГАЦ (Высший суд справедливости)",
             definition = "כִּנּוּי לְבֵית הַמִּשְׁפָּט הָעֶלְיוֹן כְּשֶׁהוּא יוֹשֵׁב כְּעָרְכָּה מִנְהָלִית מוּל רָשׁוּיוֹת הַמְּדִינָה.",
@@ -233,7 +236,7 @@ object WordDataHebrewLawIsraeli {
 
         // ── Group: law_il_civil_process (6 words) ─────────────────────────────
 
-        WordEntity(id = 191415, setId = 1914, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 191415, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
             original = "כְּתַב תְּבִיעָה",
             translation = "исковое заявление",
             definition = "הַמִּסְמָךְ הָרִאשׁוֹן בַּהֲלִיךְ הָאֶזְרָחִי — פּוֹתֵחַ אֶת הַתִּיק וּמַצִּיג אֶת הַטְּעָנוֹת וְהַסְּעָדִים.",
@@ -288,7 +291,7 @@ object WordDataHebrewLawIsraeli {
             pos = "phrase", semanticGroup = "law_il_civil_process",
             isFillInBlankSafe = false),
 
-        WordEntity(id = 191420, setId = 1914, languagePair = "he-ru", rarity = "RARE",
+        WordEntity(id = 191420, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
             original = "פְּסַק דִּין",
             translation = "судебное решение (приговор)",
             definition = "הַהַכְרָעָה הַסּוֹפִית שֶׁל בֵּית הַמִּשְׁפָּט בַּתִּיק — מַסְקָנוֹת עֻבְדָּתִיוֹת, מִשְׁפָּטִיוֹת וְהַסְּעַד.",
