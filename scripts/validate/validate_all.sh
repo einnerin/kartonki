@@ -19,6 +19,7 @@ CHECKS=(
   "validate_rarity_spread.sh"
   "validate_no_duplicates.sh"
   "validate_no_cognates.sh"
+  "validate_no_headword_in_def.sh"
   "validate_blank_ambiguity.sh"
 )
 
@@ -39,7 +40,7 @@ done
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 if [ $FAIL -eq 0 ]; then
-  echo "✅ setId=$SETID: все 8 проверок пройдены"
+  echo "✅ setId=$SETID: все 9 проверок пройдены"
 else
   echo "❌ setId=$SETID: есть блокирующие нарушения (см. выше)"
 fi
