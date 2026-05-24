@@ -256,7 +256,7 @@ object WordDataHebrewAdvanced {
             pos = "noun", semanticGroup = "emotion",
             transliteration = "ka'as",
             original = "כַּעַס", translation = "гнев",
-            definition = "רגש עז של כעס ותסכול.",
+            definition = "רגש עז של זעם ותסכול.",
             definitionNative = "Сильное чувство злости и разочарования.",
             example = "הַכַּעַס שלו התפרץ פתאום.",
             exampleNative = "Его כַּעַס внезапно вырвался наружу.",

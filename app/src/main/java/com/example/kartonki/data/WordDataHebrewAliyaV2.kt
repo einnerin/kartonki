@@ -1043,7 +1043,7 @@ object WordDataHebrewAliyaV2 {
             id = 161323, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_culture_food", transliteration = "khumus",
             original = "חוּמוּס", translation = "хумус",
-            definition = "מִמְרָח גַּרְגְּרֵי חוּמוּס עִם טְחִינָה וְלִימוֹן.",
+            definition = "מִמְרָח גַּרְגְּרֵי קִטְנִיּוֹת עִם טְחִינָה וְלִימוֹן.",
             definitionNative = "Паста из нута с кунжутной тхиной и лимоном.",
             example = "אָכַלְנוּ חוּמוּס טוֹב בְּעַבָּאסִי.",
             exampleNative = "Мы ели хороший חוּמוּס в «Аббаси».",

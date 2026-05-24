@@ -143,7 +143,7 @@ object WordDataHebrewBaristaL1L2L3 {
             id = 173907, setId = 1739, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "barista_other_drinks", transliteration = "kakao",
             original = "קָקָאוֹ", translation = "какао",
-            definition = "מַשְׁקֶה חַם וּמָתוֹק מֵאֲבַק פּוֹלֵי קָקָאוֹ עִם חָלָב.",
+            definition = "מַשְׁקֶה חַם וּמָתוֹק מֵאֲבַק פּוֹלִים קְלוּיִים עִם חָלָב.",
             definitionNative = "Сладкий горячий напиток из порошка плодов с молоком.",
             example = "הַיֶּלֶד אוֹהֵב קָקָאוֹ חַם בְּעֶרֶב חַרְפִּי.",
             exampleNative = "Ребёнок любит горячее קָקָאוֹ зимним вечером.",

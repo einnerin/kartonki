@@ -205,7 +205,7 @@ object WordDataHebrewBatch11 {
             id = 105620, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather_general", transliteration = "avir naki",
             original = "אֲוִיר נַקִּי", translation = "чистый воздух; свежий воздух",
-            definition = "אֲוִיר נְקִי מִזִּיהוּם וְעָשִׁיר בְּחַמְצָן, הַנּוֹצָר בְּאֵיזוֹרִים פְּתוּחִים.",
+            definition = "אֲוִיר חוֹפְשִׁי מִזִּיהוּם וְעָשִׁיר בְּחַמְצָן, הַנּוֹצָר בְּאֵיזוֹרִים פְּתוּחִים.",
             definitionNative = "Воздух без загрязнений и богатый кислородом, характерный для открытых пространств.",
             example = "בַּהָרִים נוֹשְׁמִים אֲוִיר נַקִּי וּמְרַעֲנֵן.",
             exampleNative = "В горах дышат אֲוִיר נַקִּי и освежающим воздухом.",

@@ -317,7 +317,7 @@ object WordDataHebrewBatch13 {
             id = 106406, setId = 1064, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern_advanced", transliteration = "hitkhayevút",
             original = "הִתְחַיְּבוּת", translation = "обязательство; обязанность",
-            definition = "הִתְחַיְּבוּת מִשְׁפָּטִית לְבַצֵּעַ אוֹ לְהִמָּנַע מִפְּעֻלָּה.",
+            definition = "מְחֻיָּבוּת מִשְׁפָּטִית לְבַצֵּעַ אוֹ לְהִמָּנַע מִפְּעֻלָּה.",
             definitionNative = "Юридическое обязательство выполнить или воздержаться от совершения действия.",
             example = "הַחֻלְשָׁה בְּהִתְחַיְּבוּת הַחוֹזִית אִפְשְׁרָה לְהַגִּישׁ תְּבִיעָה.",
             exampleNative = "Нарушение הִתְחַיְּבוּת по договору дало основание для подачи иска.",

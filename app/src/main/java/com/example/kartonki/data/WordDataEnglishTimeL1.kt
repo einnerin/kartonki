@@ -199,7 +199,7 @@ object WordDataEnglishTimeL1 {
 
         WordEntity(id = 38518, setId = 385, languagePair = "en-ru", rarity = "COMMON",
             original = "ago", transliteration = "[əˈɡoʊ]", translation = "тому назад",
-            definition = "Used to count how long ago something happened — three days, two years.",
+            definition = "Used to count time passed since an event — three days, two years.",
             definitionNative = "Используется, чтобы посчитать, сколько прошло — три дня, два года.",
             example = "I saw your sister at the cafe two days ago.",
             exampleNative = "Я видел твою сестру в кафе два дня ago.",

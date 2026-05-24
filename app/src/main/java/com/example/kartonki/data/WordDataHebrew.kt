@@ -137,7 +137,7 @@ object WordDataHebrew {
             exampleNative = "Сделай עֵדְכּוּן приложения, чтобы исправить ошибки.",
             rarity = "UNCOMMON", languagePair = "he-ru", setId = 1001, pos = "noun", semanticGroup = "actions", fillInBlankExclusions = listOf(100106L, 100113L, 100116L, 100119L, 100121L)),
         WordEntity(id = 100121, original = "לְחִיצָה", transliteration = "lekhitsa", translation = "клик, нажатие",
-            definition = "לחיצה על כפתור עכבר או מסך מגע לבחירת פריט.",
+            definition = "פְּעוּלַת בְּחִירָה עַל כַּפְתּוֹר עַכְבָּר אוֹ מָסָךְ מַגָּע.",
             definitionNative = "Нажатие кнопки мыши или тачскрина для выбора или активации элемента.",
             example = "לְחִיצָה כפולה על הסמל פותחת את התוכנה.",
             exampleNative = "Одна לְחִיצָה на иконку откроет программу.",

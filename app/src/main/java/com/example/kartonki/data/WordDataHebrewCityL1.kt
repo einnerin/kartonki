@@ -218,7 +218,7 @@ object WordDataHebrewCityL1 {
             id = 170523, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city_buildings", transliteration = "snif",
             original = "סְנִיף", translation = "отделение",
-            definition = "סָנִיף קָטָן שֶׁל בַּנְק אוֹ דֹּאַר בְּשְׁכוּנָה אוֹ בָּרְחוֹב.",
+            definition = "מִשְׂרָד קָטָן שֶׁל בַּנְק אוֹ דֹּאַר בְּשְׁכוּנָה אוֹ בָּרְחוֹב.",
             definitionNative = "Маленькая контора банка или почты в районе или на улице.",
             example = "פָּתַחְתִּי חֶשְׁבּוֹן בַּסְּנִיף הַחָדָשׁ קָרוֹב לַבַּיִת שֶׁלִּי.",
             exampleNative = "Я открыл счёт в новом סְנִיף рядом со своим домом.",

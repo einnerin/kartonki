@@ -568,7 +568,7 @@ object WordDataHebrewMore {
             id = 101111, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather", transliteration = "keshet",
             original = "קֶשֶׁת", translation = "радуга",
-            definition = "קֶשֶׁת צְבָעִים בַּשָּׁמַיִם אַחֲרֵי גֶּשֶׁם.",
+            definition = "קַו צִבְעוֹנִי מְעֻגָּל בַּשָּׁמַיִם אַחֲרֵי גֶּשֶׁם.",
             definitionNative = "Дуга цветов на небе после дождя.",
             example = "רָאִינוּ קֶשֶׁת יָפָה אַחֲרֵי הַגֶּשֶׁם.",
             exampleNative = "После дождя мы увидели красивую קֶשֶׁת.",

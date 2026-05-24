@@ -549,7 +549,7 @@ object WordDataHebrewWorkV2 {
             pos = "verb", semanticGroup = "work_actions",
             original = "לְאַחֵר", translation = "опаздывать",
             transliteration = "леахер",
-            definition = "לְהַגִּיעַ לַמָּקוֹם לְאַחַר הַשָּׁעָה הַקְּבוּעָה שֶׁצָּרִיךְ.",
+            definition = "לְהַגִּיעַ לַמָּקוֹם בְּזְמַן מְאֻחָר מֵהַשָּׁעָה הַקְּבוּעָה.",
             definitionNative = "Приходить куда-либо позже назначенного времени.",
             example = "אֲנִי לֹא אוֹהֵב לְאַחֵר לִפְגִישׁוֹת.",
             exampleNative = "Я не люблю לְאַחֵר на встречи.",

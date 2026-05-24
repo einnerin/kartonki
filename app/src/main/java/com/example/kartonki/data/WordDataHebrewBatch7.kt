@@ -152,7 +152,7 @@ object WordDataHebrewBatch7 {
             id = 104415, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "sakit",
             original = "שַׂקִּית", translation = "пакет",
-            definition = "שַׂקִּית נְיָר אוֹ פְּלַסְטִיק לְהַכְנָסַת קְנִיּוֹת בַּחֲנוּת.",
+            definition = "אֲרִיזַת נְיָר אוֹ פְּלַסְטִיק לְהַכְנָסַת קְנִיּוֹת בַּחֲנוּת.",
             definitionNative = "Бумажный или пластиковый пакет для покупок в магазине.",
             example = "בְּיִשְׂרָאֵל מְשַׁלְּמִים עַל שַׂקִּית פְּלַסְטִיק.",
             exampleNative = "В Израиле платят за пластиковый שַׂקִּית.",

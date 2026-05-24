@@ -212,7 +212,7 @@ object WordDataHebrewTimeL1 {
             pos = "adverb", semanticGroup = "time_l1_relative",
             original = "הַיּוֹם", translation = "сегодня",
             transliteration = "hайом",
-            definition = "הַיּוֹם הַזֶּה — הַיּוֹם שֶׁאֲנַחְנוּ נִמְצָאִים בּוֹ עַכְשָׁו.",
+            definition = "הַזְּמַן שֶׁבּוֹ אֲנַחְנוּ נִמְצָאִים עַכְשָׁו — הַתַּאֲרִיךְ הַנּוֹכְחִי בַּלּוּחַ.",
             definitionNative = "Этот день — день, в котором мы находимся прямо сейчас.",
             example = "הַיּוֹם יֵשׁ לִי הַרְבֵּה עֲבוֹדָה בַּמִּשְׂרָד.",
             exampleNative = "הַיּוֹם у меня очень много работы в офисе с самого утра.",

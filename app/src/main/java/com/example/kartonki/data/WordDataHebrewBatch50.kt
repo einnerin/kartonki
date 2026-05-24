@@ -625,7 +625,7 @@ object WordDataHebrewBatch50 {
             pos = "noun", semanticGroup = "religion_authority",
             original = "דַּיָּן", translation = "раввинский судья",
             transliteration = "dayan",
-            definition = "רַב מֻסְמָךְ הַדָּן בְּעִנְיְנֵי גֵּרוּשִׁין, מָמוֹן וַהֲלָכָה בְּבֵית דִּין.",
+            definition = "רַב מֻסְמָךְ הַפּוֹסֵק בְּעִנְיְנֵי גֵּרוּשִׁין, מָמוֹן וַהֲלָכָה בְּבֵית מִשְׁפָּט תּוֹרָנִי.",
             definitionNative = "Уполномоченный раввин, ведущий дела о разводах, имуществе и галахе в религиозном суде.",
             example = "הַדַּיָּן שָׁמַע אֶת הַטַּעֲנוֹת לִפְנֵי שֶׁפָּסַק.",
             exampleNative = "דַּיָּן выслушал доводы сторон, прежде чем вынести решение.", fillInBlankExclusions = listOf(128204L, 128223L)),

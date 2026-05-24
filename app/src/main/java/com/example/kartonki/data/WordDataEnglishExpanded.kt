@@ -2496,7 +2496,7 @@ object WordDataEnglishExpanded {
             id = 22209, setId = 222, languagePair = "en-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "fashion",
             original = "cashmere", transliteration = "[ˈkæʒmɪr]", translation = "кашемир",
-            definition = "A fine, soft wool obtained from cashmere goats, used in luxury knitwear.",
+            definition = "A fine, soft wool from highland goats, used in luxury knitwear.",
             example = "A cashmere sweater is warm, lightweight, and incredibly soft to the touch.",
             exampleNative = "Этот свитер тёплый, лёгкий и невероятно нежный на ощупь.", definitionNative = "Тонкая мягкая шерсть высокогорных коз для дорогих трикотажных вещей.", fillInBlankExclusions = listOf(22202L, 22205L, 22207L, 22211L, 22217L, 22219L)),
         WordEntity(id = 22210, original = "style", transliteration = "[staɪl]", translation = "стиль", rarity = "COMMON", setId = 222, languagePair = "en-ru", pos = "noun", semanticGroup = "fashion",

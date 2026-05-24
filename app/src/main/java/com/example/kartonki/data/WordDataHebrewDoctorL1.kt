@@ -121,7 +121,7 @@ object WordDataHebrewDoctorL1 {
             id = 180207, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "doctor_basic_symptoms", transliteration = "khom",
             original = "חֹם", translation = "температура (жар)",
-            definition = "מַצָּב שֶׁבּוֹ הַגּוּף חַם מִדַּי — לְרוֹב סִימָן שֶׁל הִצְטַנְּנוּת אוֹ זִיהוּם.",
+            definition = "מַצָּב שֶׁבּוֹ הַגּוּף מִתְחַמֵּם מִדַּי — לְרוֹב סִימָן שֶׁל הִצְטַנְּנוּת אוֹ זִיהוּם.",
             definitionNative = "Состояние, когда тело слишком горячее — обычно знак простуды или инфекции.",
             example = "לַיֶּלֶד יֵשׁ חֹם שֶׁל אַרְבָּעִים מַעֲלוֹת מֵאֶמֶשׁ.",
             exampleNative = "У ребёнка חֹם сорок градусов со вчерашнего вечера.",

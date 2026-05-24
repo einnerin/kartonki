@@ -65,7 +65,7 @@ object WordDataHebrewBatch18 {
             id = 107604, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "matsaget",
             original = "מַצָּגֶת", translation = "презентация; слайд-шоу",
-            definition = "מִצְגֶּת חֲזוּתִית שֶׁל שְׁקוּפִיּוֹת הַמִּשְׁמֶשֶׁת לְהַצָּגַת מֵידָע.",
+            definition = "הַצָּגָה חֲזוּתִית שֶׁל שְׁקוּפִיּוֹת הַמְּשַׁמֶּשֶׁת לְהַעֲבָרַת מֵידָע.",
             definitionNative = "Визуальный показ слайдов, используемых для представления информации.",
             example = "הַמַּצָּגֶת הוּכְנָה לְקְרַאת הַכְּנָס.",
             exampleNative = "מַצָּגֶת была подготовлена к конференции.",

@@ -206,7 +206,7 @@ object WordDataEnglishBatch9 {
             pos = "preposition", semanticGroup = "prep_spatial_containment", fillInBlankExclusions = listOf(26903L, 26915L, 26916L)),
         WordEntity(id = 26902, setId = 269, languagePair = "en-ru", rarity = "COMMON",
             original = "on", translation = "на (на поверхности)",
-            definition = "Shows something is resting on a surface — table, shelf or floor.",
+            definition = "Shows something rests upon a surface — table, shelf or floor.",
             definitionNative = "Когда предмет лежит или стоит на поверхности: столе, полке, полу.",
             example = "Your phone is on the kitchen table next to the bread.",
             exampleNative = "Оставь книгу on столе — завтра заберу в библиотеку.",

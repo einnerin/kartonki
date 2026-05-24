@@ -68,7 +68,7 @@ object WordDataEnglishPhilosophyL1 {
 
         WordEntity(id = 34103, setId = 341, languagePair = "en-ru", rarity = "COMMON",
             original = "real", transliteration = "[ril]", translation = "настоящий",
-            definition = "True and not made up — like a real dog, not a toy one.",
+            definition = "True and not made up — like a live dog, not a toy one.",
             definitionNative = "Настоящий, не выдуманный — как живая собака, а не игрушка.",
             example = "The little boy thought the painted apple was a real one.",
             exampleNative = "Малыш подумал, что нарисованное яблоко real.",

@@ -335,7 +335,7 @@ object WordDataHebrewImmigrant2 {
             id = 102715, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities", transliteration = "khayuv",
             original = "חַיּוּב", translation = "начисление / списание",
-            definition = "רִשּׁוּם חִיּוּב בְּחֶשְׁבּוֹן עַל שְׁמוּשׁ בְּשֵׁרוּת.",
+            definition = "דְּרִישַׁת תַּשְׁלוּם בְּחֶשְׁבּוֹן עַל שְׁמוּשׁ בְּשֵׁרוּת.",
             definitionNative = "Запись дебета на счёте за использование сервиса.",
             example = "רָאִיתִי חַיּוּב חָדָשׁ מֵחֶבְרַת הַגָּז בַּחֶשְׁבּוֹן.",
             exampleNative = "Я увидел новый חַיּוּב от газовой компании на счёте.",

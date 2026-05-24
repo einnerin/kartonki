@@ -242,7 +242,7 @@ object WordDataEnglishDating {
 
         WordEntity(id = 44520, setId = 445, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "ex", transliteration = "[eks]", translation = "бывший, бывшая",
-            definition = "A person you used to date but no longer do — short for ex-partner.",
+            definition = "A person you used to date but no longer do — your former partner.",
             definitionNative = "Тот, с кем у тебя были отношения раньше, а сейчас уже нет.",
             example = "Her ex still sends polite birthday messages every January.",
             exampleNative = "Её ex до сих пор шлёт вежливые поздравления в январе.",
