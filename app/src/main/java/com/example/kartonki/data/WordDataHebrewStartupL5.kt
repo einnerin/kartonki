@@ -280,7 +280,6 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Отрезок времени, в который основателям нельзя продавать акции после выхода на биржу.",
             example = "תְּקוּפַת לוֹקְאַפּ שֶׁל שִׁשָּׁה חֳדָשִׁים נִגְמְרָה רַק אַחֲרֵי הַחַג.",
             exampleNative = "תְּקוּפַת לוֹקְאַפּ в шесть месяцев истекла лишь после праздников.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176024, setId = 1760, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -299,7 +298,6 @@ object WordDataHebrewStartupL5 {
             definitionNative = "Счёт у третьей стороны, что держит деньги, пока не выполнены все условия сделки.",
             example = "אֶסְקְרוֹ הִחְזִיק עֶשֶׂר אָחוּז מֵהַסְּכוּם לְמֶשֶׁךְ שָׁנָה אַחֲרֵי הַסְּגִירָה.",
             exampleNative = "אֶסְקְרוֹ держал десять процентов суммы целый год после закрытия.",
-            isFillInBlankSafe = false,
         ),
     )
 }

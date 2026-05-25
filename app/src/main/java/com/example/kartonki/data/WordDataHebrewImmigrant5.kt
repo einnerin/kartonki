@@ -41,8 +41,7 @@ object WordDataHebrewImmigrant5 {
             definition = "מִי שֶׁמְּשַׁלֵּם כֶּסֶף עַל מֻצָר אוֹ שֵׁרוּת.",
             definitionNative = "Тот, кто платит деньги за товар или услугу.",
             example = "הַקּוֹנֶה בִּקֵּשׁ הֲנָחָה עַל הַיְּרָקוֹת.",
-            exampleNative = "קוֹנֶה попросил скидку на овощи.",
-         isFillInBlankSafe = false),
+            exampleNative = "קוֹנֶה попросил скидку на овощи."),
         WordEntity(
             id = 114303, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "shuk", transliteration = "hanача",
@@ -59,8 +58,7 @@ object WordDataHebrewImmigrant5 {
             definition = "מַכְשִׁיר לְמַדִּידַת כּוֹבֶד שֶׁל מֻצָר.",
             definitionNative = "Прибор для измерения веса товара.",
             example = "הַמּוֹכֵר שָׁם אֶת הַפֵּרוֹת עַל הַמִּשְׁקָל.",
-            exampleNative = "Продавец положил фрукты на מִשְׁקָל.",
-         isFillInBlankSafe = false),
+            exampleNative = "Продавец положил фрукты на מִשְׁקָל."),
         WordEntity(
             id = 114305, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "shuk", transliteration = "l'hitmakaḥ",
@@ -131,8 +129,7 @@ object WordDataHebrewImmigrant5 {
             definition = "כְּלִי אֲרִיזָה מִנְיָלוֹן אוֹ נְיָר לְהַכָּנַסַת מֻצָרִים.",
             definitionNative = "Лёгкая ёмкость из пластика или бумаги — туда складывают покупки.",
             example = "שַׂמְתִּי אֶת הַיְּרָקוֹת בַּשְּׂקִית.",
-            exampleNative = "Я положил овощи в שְׂקִית.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я положил овощи в שְׂקִית."),
         WordEntity(
             id = 114313, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "shuk", transliteration = "agora",
@@ -167,8 +164,7 @@ object WordDataHebrewImmigrant5 {
             definition = "מָקוֹם בַּחֲנוּת שֶׁבּוֹ מְשַׁלְּמִים עַל הַקְּנִיּוֹת.",
             definitionNative = "Место в магазине, где платят за покупки.",
             example = "הַתּוֹר לַקּוּפָּה אָרֹךְ הַיּוֹם.",
-            exampleNative = "Очередь к קוּפָּה сегодня длинная.",
-         isFillInBlankSafe = false),
+            exampleNative = "Очередь к קוּפָּה сегодня длинная."),
         WordEntity(
             id = 114317, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "shuk", transliteration = "kilogram",

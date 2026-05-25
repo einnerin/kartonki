@@ -69,7 +69,6 @@ object WordDataHebrewShoppingL4 {
             definitionNative = "Состояние, когда товары добавлены, но оплата так и не прошла.",
             example = "כָּל סַל נָטוּשׁ מַפְעִיל אִי-מֶיְל אוֹטוֹמָטִי לְהַחְזָרַת הַגּוֹלֵשׁ.",
             exampleNative = "Каждый סַל נָטוּשׁ запускает автописьмо для возврата покупателя.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179203, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
@@ -88,7 +87,6 @@ object WordDataHebrewShoppingL4 {
             definitionNative = "Большой комплекс, где собирают, упаковывают и развозят посылки.",
             example = "הַחֶבְרָה פָּתְחָה מֶרְכַּז שִׁנּוּעַ נוֹסָף בִּדְרוֹם הָאָרֶץ.",
             exampleNative = "Фирма открыла ещё один מֶרְכַּז שִׁנּוּעַ на юге страны.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179205, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
@@ -118,7 +116,6 @@ object WordDataHebrewShoppingL4 {
             definitionNative = "Официальный посредник, доносящий товары производителя до магазинов.",
             example = "הַיַּצְרָן הֶחְלִיף אֶת הַמָּפִיץ הַיִּשְׂרְאֵלִי אַחֲרֵי שָׁנִים שֶׁל שִׁתּוּף.",
             exampleNative = "Производитель сменил израильского מָפִיץ после долгих лет работы.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179208, setId = 1792, languagePair = "he-ru", rarity = "EPIC",

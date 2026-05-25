@@ -199,7 +199,6 @@ object WordDataHebrewHightechL4 {
             definitionNative = "Документ, какие фичи приедут в каждом квартале на ближайшие полгода.",
             example = "רוֹדְמָאפּ לִשְׁנַת אַלְפַּיִם עֶשְׂרִים וְשֶׁבַע פֻּרְסַם בְּתוֹם נוֹטְיוֹן.",
             exampleNative = "רוֹדְמָאפּ на двадцать седьмой год опубликовали в общем Notion.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174817, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",

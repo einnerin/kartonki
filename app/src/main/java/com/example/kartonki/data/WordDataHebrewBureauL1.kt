@@ -75,7 +75,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Бумажный карман с клапаном, в котором отправляют письмо или бумаги по почте.",
             example = "שַׂמְתִּי אֶת הַטֹּפֶס בְּתוֹךְ הַמְּעַטָּפָה.",
             exampleNative = "Я положил бланк внутрь מְעַטָּפָה.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180705, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -85,7 +84,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Маленькая нумерованная часть внутри официального документа или договора.",
             example = "צָרִיךְ לְמַלֵּא רַק אֶת הַסְּעִיף הָרִאשׁוֹן.",
             exampleNative = "Нужно заполнить только первый סְעִיף.",
-            isFillInBlankSafe = false,
         ),
 
         // ── bureau_basic_office (5) ───────────────────────────────────────
@@ -97,7 +95,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Государственное помещение, где служащие принимают граждан и оформляют обращения.",
             example = "הַמִּשְׂרָד פָּתוּחַ רַק עַד שְׁתֵּים עֶשְׂרֵה.",
             exampleNative = "מִשְׂרָד открыт только до двенадцати.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180707, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -116,7 +113,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Маленькая дощечка со словами или стрелкой, указывающая путь внутри здания.",
             example = "הַשֶּׁלֶט עַל הַדֶּלֶת מַרְאֶה אֶת מִסְפַּר הַחֶדֶר.",
             exampleNative = "שֶׁלֶט на двери показывает номер кабинета.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180709, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -126,7 +122,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Один из ярусов здания, до которого добираются на лифте или по лестнице.",
             example = "מִשְׂרַד הַפְּנִים נִמְצָא בַּקּוֹמָה הַשְּׁלִישִׁית.",
             exampleNative = "МВД находится на третьей קוֹמָה.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180710, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -136,7 +131,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Женщина, которая ведёт расписание и записывает посетителей в учреждении.",
             example = "הַמַּזְכִּירָה שָׁלְחָה לִי הוֹדָעָה בַּמַּיְל.",
             exampleNative = "מַזְכִּירָה прислала мне уведомление по электронной почте.",
-            isFillInBlankSafe = false,
         ),
 
         // ── bureau_basic_queue (5) ────────────────────────────────────────
@@ -213,7 +207,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Передать готовый бланк или бумаги служащему, который должен ими заняться.",
             example = "לְהַגִּישׁ אֶת הַבַּקָּשָׁה צָרִיךְ עַד יוֹם חֲמִישִׁי.",
             exampleNative = "לְהַגִּישׁ заявление надо до четверга.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180719, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -223,7 +216,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Заранее условиться о дате и часе встречи у государственного служащего.",
             example = "צְרִיכִים לִקְבֹּעַ פְּגִישָׁה דֶּרֶךְ הָאֲתָר.",
             exampleNative = "Нужно לִקְבֹּעַ встречу через сайт.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180720, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -244,7 +236,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Официальное решение учреждения по поданному обращению или заявлению.",
             example = "חִכִּינוּ חֹדֶשׁ שָׁלֵם לִתְשׁוּבָה מֵהַמִּשְׂרָד.",
             exampleNative = "Мы ждали целый месяц תְּשׁוּבָה из ведомства.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180722, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
@@ -254,7 +245,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Написанный лист, который шлют по почте от учреждения по официальному вопросу.",
             example = "הַמִּכְתָּב הִגִּיעַ עִם חוֹתֶמֶת שֶׁל הַבַּנְק.",
             exampleNative = "מִכְתָּב пришло с печатью банка.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180723, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -282,7 +272,6 @@ object WordDataHebrewBureauL1 {
             definitionNative = "Официальная бумажка, удостоверяющая, что вы внесли оплату в учреждение.",
             example = "שִׁמְרוּ אֶת הַקַּבָּלָה עַד סוֹף הַשָּׁנָה.",
             exampleNative = "Сохраните קַבָּלָה до конца года.",
-            isFillInBlankSafe = false,
         ),
     )
 }

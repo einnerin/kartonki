@@ -66,7 +66,7 @@ object WordDataHebrewMedicineAnatomy {
             exampleNative = "Диабет первого типа развивается, когда לַבְלָב перестаёт производить инсулин.",
             transliteration = "лавлав",
             pos = "noun", semanticGroup = "medicine_anatomy_digestive",
-            fillInBlankExclusions = listOf(189501L, 189503L, 189504L, 189505L, 189506L, 189507L)),
+            fillInBlankExclusions = listOf(189501L, 189503L, 189504L, 189505L, 189506L, 189507L), isFillInBlankSafe = false),
 
         WordEntity(id = 189503, setId = 1895, languagePair = "he-ru", rarity = "RARE",
             original = "כִּיס מָרָה",

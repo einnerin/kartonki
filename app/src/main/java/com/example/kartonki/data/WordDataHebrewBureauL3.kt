@@ -146,8 +146,7 @@ object WordDataHebrewBureauL3 {
             definition = "מִסְמָךְ שֶׁמַּעֲבִיר בַּעֲלוּת עַל דִּירָה אוֹ קַרְקַע מִצַּד אֶחָד לַשֵּׁנִי.",
             definitionNative = "Документ, передающий собственность на жильё или землю от одного человека другому.",
             example = "עוֹרֵךְ הַדִּין הִכְתִּיב אֶת חוֹזֵה רֶכֶשׁ בִּפְגִישַׁת הַחֲתִימָה.",
-            exampleNative = "Адвокат продиктовал חוֹזֵה רֶכֶשׁ на встрече для подписей.",
-            isFillInBlankSafe = false),
+            exampleNative = "Адвокат продиктовал חוֹזֵה רֶכֶשׁ на встрече для подписей."),
         WordEntity(
             id = 180913, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_realty_docs", transliteration = "nesakh tabu",
@@ -155,8 +154,7 @@ object WordDataHebrewBureauL3 {
             definition = "הַעְתֵּק רִשְׁמִי שֶׁל הַפֵּרוּט עַל הַזְּכוּיוֹת בַּדִּירָה אוֹ בַּקַּרְקַע.",
             definitionNative = "Официальная копия записей о правах на квартиру или участок земли.",
             example = "הַקּוֹנֶה דָּרַשׁ נְסַח טַאבּוּ עָדְכָּנִי לִפְנֵי הַחֲתִימָה.",
-            exampleNative = "Покупатель потребовал свежий נְסַח טַאבּוּ перед подписанием.",
-            isFillInBlankSafe = false),
+            exampleNative = "Покупатель потребовал свежий נְסַח טַאבּוּ перед подписанием."),
         WordEntity(
             id = 180914, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_realty_docs", transliteration = "mas rekhesh",
@@ -164,8 +162,7 @@ object WordDataHebrewBureauL3 {
             definition = "תַּשְׁלוּם חַד-פַּעֲמִי לַמְּדִינָה שֶׁמְּשַׁלֵּם הַקּוֹנֶה בִּקְנִיַּת דִּירָה.",
             definitionNative = "Разовая выплата казне — её делает покупатель при сделке с жильём.",
             example = "מַס רֶכֶשׁ עַל דִּירָה רִאשׁוֹנָה נָמוּךְ יוֹתֵר.",
-            exampleNative = "מַס רֶכֶשׁ при покупке первого жилья ниже обычного.",
-            isFillInBlankSafe = false),
+            exampleNative = "מַס רֶכֶשׁ при покупке первого жилья ниже обычного."),
         WordEntity(
             id = 180915, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_realty_docs", transliteration = "shtar khakhira",

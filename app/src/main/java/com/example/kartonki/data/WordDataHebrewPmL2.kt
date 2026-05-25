@@ -116,7 +116,6 @@ object WordDataHebrewPmL2 {
             definitionNative = "Описание того, что аудитория хочет делать в продукте — не как инженер это построит.",
             example = "דְּרִישַׁת מִשְׁתַּמֵּשׁ בָּהִירָה חוֹסֶכֶת לְפָחוֹת עֲשָׂרָה יָמִים שֶׁל בִּלְבּוּל בָּצֶוֶות.",
             exampleNative = "Чёткая דְּרִישַׁת מִשְׁתַּמֵּשׁ экономит минимум десять дней путаницы в команде.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177807, setId = 1778, languagePair = "he-ru", rarity = "RARE",
@@ -144,7 +143,6 @@ object WordDataHebrewPmL2 {
             definitionNative = "Подробный рисунок будущего экрана — показывает, как фича будет выглядеть до сборки.",
             example = "אִשַּׁרְתִּי אֶת הַמּוֹקאַפּ אַחֲרֵי שְׁתֵּי סִבּוּבֵי הֶעָרוֹת מֵהָעִיצּוּב.",
             exampleNative = "Я утвердил מוֹקאַפּ после двух раундов замечаний от дизайна.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177810, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -239,7 +237,6 @@ object WordDataHebrewPmL2 {
             definitionNative = "Повторная проверка через время — убедиться, что задача, о которой договорились, реально сделана.",
             example = "שָׁלַחְתִּי פוֹלוֹ-אַפּ בְּמֵייל אַחֲרֵי שָׁבוּעַ לְכָל הַשּׁוּתָפִים בַּפְּגִישָׁה.",
             exampleNative = "Я отправил פוֹלוֹ-אַפּ письмом через неделю всем участникам встречи.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177820, setId = 1778, languagePair = "he-ru", rarity = "RARE",
@@ -260,7 +257,6 @@ object WordDataHebrewPmL2 {
             definitionNative = "Короткая встреча стоя на четверть часа — каждый в двух предложениях говорит, чем занят.",
             example = "סְטֶנְדְאַפּ בְּתֵשַׁע בַּבֹּקֶר נִמְשָׁךְ שְׁמוֹנֶה דַּקּוֹת בִּלְבַד הַיּוֹם.",
             exampleNative = "סְטֶנְדְאַפּ в девять утра занял сегодня всего восемь минут.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177822, setId = 1778, languagePair = "he-ru", rarity = "RARE",
@@ -297,7 +293,6 @@ object WordDataHebrewPmL2 {
             definitionNative = "Цифровая картинка того, что сейчас на дисплее — удобно объяснить без слов.",
             example = "שָׁלַחְתִּי צִילּוּם מָסָךְ שֶׁל הַשְּׁגִיאָה לְעָרוּץ הַצֶּוֶות בְּסְלַאק.",
             exampleNative = "Я отправил צִילּוּם מָסָךְ ошибки в командный канал Slack.",
-            isFillInBlankSafe = false,
         ),
     )
 }

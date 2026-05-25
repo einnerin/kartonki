@@ -83,7 +83,6 @@ object WordDataHebrewQaL5 {
             definitionNative = "Профессиональный лидер маленькой группы — раздаёт задачи и сопровождает квалификацию.",
             example = "הַטֶּסְט לִיד עָבַר עַל כָּל תַּסְרִיט וְנָתַן הֶעָרוֹת לִפְנֵי הַחֲתִימָה.",
             exampleNative = "Наш טֶסְט לִיד прошёлся по каждому сценарию и оставил замечания до подписи.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177304, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",

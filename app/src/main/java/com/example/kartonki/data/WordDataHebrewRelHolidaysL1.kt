@@ -118,7 +118,6 @@ object WordDataHebrewRelHolidaysL1 {
             definitionNative = "Мягкая коричневая сладкая выпечка, которую готовят на Новый год к сладкому году.",
             example = "אִמָּא אוֹפָה עֻגַת דְּבַשׁ גְּבוֹהָה לְכָל הָאוֹרְחִים.",
             exampleNative = "Мама печёт высокий עֻגַת דְּבַשׁ для всех гостей.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 171009, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -128,7 +127,6 @@ object WordDataHebrewRelHolidaysL1 {
             definitionNative = "Дольки фрукта, обмакнутые в золотистую жидкость — символ доброго года.",
             example = "בְּעֶרֶב הַחַג טָבַלְנוּ תַּפּוּחֵי דְּבַשׁ עַל הַשֻּׁלְחָן.",
             exampleNative = "В праздничный вечер мы обмакнули תַּפּוּחֵי דְּבַשׁ за столом.",
-            isFillInBlankSafe = false,
         ),
 
         // ── holidays_celebration (5 — 3 COMMON + 2 UNCOMMON; трапеза и гости) ──

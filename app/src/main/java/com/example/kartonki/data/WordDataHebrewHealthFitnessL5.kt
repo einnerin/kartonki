@@ -256,7 +256,6 @@ object WordDataHebrewHealthFitnessL5 {
             definitionNative = "Реальное ухудшение самочувствия — только из-за негативного ожидания больного.",
             example = "אֶפֶקְט נוֹצֵבּוֹ גָּרַם לְמְשַׁתְּפִים לָחוּשׁ בְּחִילָה גַּם מִכַּדּוּר סָכָּר.",
             exampleNative = "אֶפֶקְט נוֹצֵבּוֹ заставил участников чувствовать тошноту даже от сахарной таблетки.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179123, setId = 1791, languagePair = "he-ru", rarity = "EPIC",

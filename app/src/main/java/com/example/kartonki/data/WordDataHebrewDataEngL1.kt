@@ -56,7 +56,6 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Упорядоченная информация в компьютере — числа, имена или даты.",
             example = "כָּל הַנְּתוּנִים שֶׁל הַלָּקוֹחוֹת יוֹשְׁבִים בַּמַּחְשֵׁב הָרָאשִׁי.",
             exampleNative = "Все נְתוּנִים клиентов лежат на главном компьютере.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177402, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
@@ -84,7 +83,6 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "День в календаре — например, тридцатое марта две тысячи двадцать третьего.",
             example = "כָּל שׁוּרָה כּוֹלֶלֶת תַּאֲרִיךְ שֶׁל הָעִסְקָה בְּפוֹרְמָט אָמֵרִיקָאִי.",
             exampleNative = "Каждая строка содержит תַּאֲרִיךְ сделки в американском формате.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177405, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
@@ -123,7 +121,6 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Файл с упорядоченным текстом — договор, официальное письмо или памятка для сотрудников.",
             example = "צֵרַפְתִּי מִסְמָךְ עִם הַסְבֵּר עַל הַשְּׁדוֹת הַחֲדָשִׁים בַּטַּבְלָה.",
             exampleNative = "Я приложил מִסְמָךְ с пояснением о новых полях в таблице.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177409, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -200,7 +197,6 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Кликнуть по файлу — чтобы увидеть его содержимое на экране.",
             example = "אֲנִי לֹא מַצְלִיחַ לִפְתֹּחַ אֶת הַקֹּבֶץ הַזֶּה — אוּלַי הוּא שָׁבוּר.",
             exampleNative = "У меня не получается לִפְתֹּחַ этот файл — может, он сломан.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177417, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
@@ -248,7 +244,6 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Документ, показывающий руководителю, что произошло в бизнесе за неделю или месяц.",
             example = "אֲנִי שׁוֹלֵחַ דּוּחַ לַמַּנְהֵל בְּכָל יוֹם רִאשׁוֹן בַּבֹּקֶר.",
             exampleNative = "Я отправляю דּוּחַ руководителю каждое воскресенье утром.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177422, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -276,7 +271,6 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Одно число, складывающее все строки — например, сумма продаж за месяц.",
             example = "הַסִּכּוּם בַּשּׁוּרָה הַתַּחְתּוֹנָה לֹא תוֹאֵם אֶת הַחֶשְׁבּוֹנִית.",
             exampleNative = "סִכּוּם в нижней строке не сходится со счётом-фактурой.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177425, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -286,7 +280,6 @@ object WordDataHebrewDataEngL1 {
             definitionNative = "Большой файл — полная копия таблицы, обычно для бэкапа или проверки.",
             example = "הַ-דַּאמְפּ הַיּוֹמִי שֶׁל הַמַּסַּד שָׁמוּר בָּעָנָן לְשִׁבְעָה יָמִים אֲחוֹרָה.",
             exampleNative = "Ежедневный דַּאמְפּ базы хранится в облаке семь дней назад.",
-            isFillInBlankSafe = false,
         ),
     )
 }

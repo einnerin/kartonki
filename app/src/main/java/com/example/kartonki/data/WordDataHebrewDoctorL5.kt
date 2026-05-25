@@ -71,7 +71,6 @@ object WordDataHebrewDoctorL5 {
             definitionNative = "Скопление клеток, что бесконтрольно растёт и может расползаться по телу.",
             example = "הַבְּדִיקָה אִשְּׁרָה שֶׁמְּדֻבָּר בְּגִדּוּל מְמַאֵר וְלֹא בְּצִיסְטָה.",
             exampleNative = "Анализ подтвердил, что это גִּדּוּל מְמַאֵר, а не киста.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180603, setId = 1806, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -253,7 +252,6 @@ object WordDataHebrewDoctorL5 {
             definitionNative = "Дорогие препараты, что больничная касса оплачивает лишь после особого утверждения.",
             example = "הַתַּכְשִׁיר נִכְלָל בִּתְרוּפוֹת בְּהִתְחַיְּבוּת — חַיִּים לְמַלֵּא טֹפֶס מַתְאִים.",
             exampleNative = "Препарат входит в תְּרוּפוֹת בְּהִתְחַיְּבוּת — нужно заполнить специальный бланк.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180622, setId = 1806, languagePair = "he-ru", rarity = "EPIC",

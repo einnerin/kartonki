@@ -67,7 +67,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Маленькое устройство в руке, в нём говорят, пишут и читают новости.",
             example = "שָׁכַחְתִּי אֶת הַטֶּלֶפוֹן בַּמֹּנִית כְּשֶׁחָזַרְתִּי הַבַּיְתָה.",
             exampleNative = "Я забыл טֶלֶפוֹן в такси, когда возвращался домой.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178302, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -86,7 +85,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Стеклянная панель на лицевой стороне устройства — там видно картинки и текст.",
             example = "הַמָּסָךְ שֶׁל הַטֶּלֶפוֹן נִשְׁבַּר אַחֲרֵי שֶׁנָּפַל עַל הָרִצְפָּה.",
             exampleNative = "מָסָךְ телефона разбился после того, как он упал на пол.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178304, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -96,7 +94,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Маленькая штука внутри устройства — копит электричество и даёт работать без провода.",
             example = "הַסּוֹלְלָה נִגְמְרָה לִי בְּאֶמְצַע שִׂיחָה חֲשׁוּבָה עִם אִמָּא.",
             exampleNative = "סוֹלְלָה села у меня посреди важного разговора с мамой.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178305, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
@@ -106,7 +103,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Кабель и насадка в розетку — они наполняют батарею, когда та слабеет.",
             example = "שָׁכַחְתִּי אֶת הַמַּטְעֵן בְּמָלוֹן וְעַכְשָׁו אֲנִי בְּלִי טֶלֶפוֹן.",
             exampleNative = "Я забыл מַטְעֵן в гостинице и теперь без телефона.",
-            isFillInBlankSafe = false,
         ),
 
         // ── mobile_basic_app (5) — приложение и его места на телефоне ──
@@ -154,7 +150,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Иконка, ведущая прямо к функции или странице — без захода в общее меню.",
             example = "יָצַרְתִּי קִיצּוּר דֶּרֶךְ לַשִּׂיחָה עִם אִשְׁתִּי עַל הַמָּסָךְ.",
             exampleNative = "Я создал קִיצּוּר דֶּרֶךְ для звонка жене прямо на дисплей.",
-            isFillInBlankSafe = false,
         ),
 
         // ── mobile_basic_ui_simple (5) — простые элементы интерфейса ──
@@ -175,7 +170,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Место в форме — туда печатают имя, пароль или сообщение по запросу программы.",
             example = "הַשְּׂדֵה טֶקְסְט שֶׁל הַסִּיסְמָה לֹא אִפְשֵׁר לִי לִכְתוֹב יוֹתֵר מִשֵּׁשׁ אוֹתִיּוֹת.",
             exampleNative = "שְׂדֵה טֶקְסְט пароля не дал мне написать больше шести букв.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178313, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
@@ -194,7 +188,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Маленький бегунок ходит вправо-влево — включает или выключает свойство.",
             example = "כִּבִּיתִי אֶת הַמֶּתֶג שֶׁל הַהוֹדָעוֹת בַּלַּיְלָה לִפְנֵי הַשֵּׁנָה.",
             exampleNative = "Я выключил מֶתֶג уведомлений на ночь перед сном.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178315, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -204,7 +197,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Тонкая полоска с точкой — её тянут пальцем, чтобы увеличить или уменьшить значение.",
             example = "מָשַׁכְתִּי אֶת הַסְּלַיידֶר שֶׁל הַבְּהִירוּת לַמַּקְסִימוּם בַּשֶּׁמֶשׁ.",
             exampleNative = "Я потянул סְלַיידֶר яркости на максимум — на солнце.",
-            isFillInBlankSafe = false,
         ),
 
         // ── mobile_basic_actions (5) — базовые жесты ──
@@ -225,7 +217,6 @@ object WordDataHebrewMobileL1 {
             definitionNative = "Быстрое движение пальцем в одну сторону по дисплею — для смены страниц или сообщений.",
             example = "עָשִׂיתִי סְוַייפּ לִשְׂמֹאל וּמָחַקְתִּי בִּטְעוּת הוֹדָעָה חֲשׁוּבָה.",
             exampleNative = "Я сделал סְוַייפּ влево и случайно стёр важное сообщение.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178318, setId = 1783, languagePair = "he-ru", rarity = "COMMON",

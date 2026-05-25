@@ -163,9 +163,16 @@ object QuizBuilder {
             }
             StudyQuizType.FILL_IN_BLANK -> {
                 val raw = word.example!!
-                val sentence = raw.replace(word.original, "_____", ignoreCase = true)
-                // If the word doesn't appear in the sentence, the blank cannot be created → fallback
-                if (sentence == raw) return fallbackTranslation(word, distractorPool)
+                // Hebrew uses prefix-aware matcher (handles ה/ב/ל/מ/כ/ו/ש attached
+                // to the root); other languages use strict case-insensitive replace.
+                val sentence = if (word.languagePair == "he-ru") {
+                    HebrewBlankMatcher.replaceOriginalWithBlank(raw, word.original)
+                        ?: return fallbackTranslation(word, distractorPool)
+                } else {
+                    val s = raw.replace(word.original, "_____", ignoreCase = true)
+                    if (s == raw) return fallbackTranslation(word, distractorPool)
+                    s
+                }
                 val fillBlankDistractors = pickDistractors(word, distractorPool, forFillInBlank = true)
                 val wrongs = uniqueDistractorTexts(
                     fillBlankDistractors, correct = word.original, count = 3,

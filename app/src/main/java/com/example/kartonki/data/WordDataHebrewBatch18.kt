@@ -50,8 +50,7 @@ object WordDataHebrewBatch18 {
             definition = "אָדָם הַמְּצַלֵּם תְּמוּנוֹת אוֹ סֶרֶט לְמַטָּרוֹת עִיתּוֹנוּת אוֹ אֲמָנוּת.",
             definitionNative = "Человек, снимающий фотографии или видео в журналистских или художественных целях.",
             example = "הַמְּצַלֵּם תִּיעֵד אֶת הָאֵרוּעַ מֵהַשּׁוּרָה הָרִאשׁוֹנָה.",
-            exampleNative = "מְצַלֵּם задокументировал событие из первого ряда.",
-         isFillInBlankSafe = false),
+            exampleNative = "מְצַלֵּם задокументировал событие из первого ряда."),
         WordEntity(
             id = 107603, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "sidra",
@@ -59,8 +58,7 @@ object WordDataHebrewBatch18 {
             definition = "תָּכְנִית טֶלֶוִיזְיָה בַּעֲלַת פְּרָקִים מְשֻׁלְשָׁלִים.",
             definitionNative = "Телепередача с последовательными эпизодами.",
             example = "הַסְּדָרָה הַדְּרָמָטִית הִגִּיעָה לְעוֹנָה שְׁלִישִׁית.",
-            exampleNative = "Драматический סְדָרָה вышел в третий сезон.",
-         isFillInBlankSafe = false),
+            exampleNative = "Драматический סְדָרָה вышел в третий сезон."),
         WordEntity(
             id = 107604, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "matsaget",
@@ -68,8 +66,7 @@ object WordDataHebrewBatch18 {
             definition = "הַצָּגָה חֲזוּתִית שֶׁל שְׁקוּפִיּוֹת הַמְּשַׁמֶּשֶׁת לְהַעֲבָרַת מֵידָע.",
             definitionNative = "Визуальный показ слайдов, используемых для представления информации.",
             example = "הַמַּצָּגֶת הוּכְנָה לְקְרַאת הַכְּנָס.",
-            exampleNative = "מַצָּגֶת была подготовлена к конференции.",
-         isFillInBlankSafe = false),
+            exampleNative = "מַצָּגֶת была подготовлена к конференции."),
         WordEntity(
             id = 107605, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "tasrit",
@@ -97,8 +94,7 @@ object WordDataHebrewBatch18 {
             definition = "צֶוֶות הָעִיתוֹנָאִים וְהָעוֹרְכִים הָעוֹבְדִים יַחַד בְּמִסְדְּרוֹן.",
             definitionNative = "Команда журналистов и редакторов, работающих вместе в редакции.",
             example = "הַמַּעֲרֶכֶת עָבְדָה עַד אֶמְצַע הַלַּיְלָה לִפְנֵי הַפִּרְסוּם.",
-            exampleNative = "Редакция работала до полуночи перед публикацией.",
-         isFillInBlankSafe = false),
+            exampleNative = "Редакция работала до полуночи перед публикацией."),
         WordEntity(
             id = 107608, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "analíst",
@@ -124,8 +120,7 @@ object WordDataHebrewBatch18 {
             definition = "אָדָם אוֹ מָסְמָךְ שֶׁמֵּהֶם מְקַבֵּל הָעִיתוֹנָאי מֵידָע.",
             definitionNative = "Человек или документ, из которого журналист получает информацию.",
             example = "הָעִיתוֹנָאי שָׁמַר עַל סוֹדִיּוּת הַמְּקוֹר שֶׁלּוֹ.",
-            exampleNative = "Журналист сохранял конфиденциальность своего источника.",
-         isFillInBlankSafe = false),
+            exampleNative = "Журналист сохранял конфиденциальность своего источника."),
         WordEntity(
             id = 107611, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "sikúr",
@@ -133,8 +128,7 @@ object WordDataHebrewBatch18 {
             definition = "כִּיסּוּי עִיתוֹנָאִי שֶׁל אֵרוּעַ אוֹ נוֹשֵׂא בְּאֶמְצָעֵי הַתִּקְשׁוֹרֶת.",
             definitionNative = "Журналистское освещение события или темы в СМИ.",
             example = "הַסִּיקּוּר שֶׁל הַמִּשְׁפָּט הָיָה נָרְחָב בְּכָל הָעִיתּוֹנוֹת.",
-            exampleNative = "Освещение процесса было обширным во всех газетах.",
-         isFillInBlankSafe = false),
+            exampleNative = "Освещение процесса было обширным во всех газетах."),
         WordEntity(
             id = 107612, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "podcast",
@@ -216,8 +210,7 @@ object WordDataHebrewBatch18 {
             definition = "אָדָם הַמַּנְהֵל תָּכְנִית טֶלֶוִיזְיָה אוֹ אִירוּעַ בְּגִלּוּי פָּנִים.",
             definitionNative = "Человек, который перед камерой объявляет гостей и темы шоу.",
             example = "הַמַּגִּישׁ הָיָה חַד וּנְבוֹן בְּמַהֲלַךְ הַרְאָיוֹן.",
-            exampleNative = "Ведущий был остроумен и умён во время интервью.",
-         isFillInBlankSafe = false),
+            exampleNative = "Ведущий был остроумен и умён во время интервью."),
         WordEntity(
             id = 107621, setId = 1076, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "media", transliteration = "itonaout khokeret",
@@ -244,8 +237,7 @@ object WordDataHebrewBatch18 {
             definition = "עֲרִיכָה וְחִיבּוּר שֶׁל צִילּוּמִים לְיְצִירַת סֶרֶט אוֹ סְדֵרָה.",
             definitionNative = "Редактирование и соединение снятого материала для создания фильма или передачи.",
             example = "הַמּוּנְטָאז הֵבִיא בְּהִירוּת רִגְשִׁית לַסֶּרֶט הַדּוֹקוּמֶנְטָרִי.",
-            exampleNative = "מוּנְטָאז придал документальному фильму эмоциональную ясность.",
-         isFillInBlankSafe = false),
+            exampleNative = "מוּנְטָאז придал документальному фильму эмоциональную ясность."),
         WordEntity(
             id = 107624, setId = 1076, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "media", transliteration = "etika itonait",
@@ -275,8 +267,7 @@ object WordDataHebrewBatch18 {
             definition = "שִׁיטָה שִׁיטָתִית לְחֵקֶר הָעוֹלָם בְּאֶמְצָעוּת תְּצִפִּיּוֹת וְנִיסּוּיִים.",
             definitionNative = "Систематический метод исследования мира с помощью наблюдений и экспериментов.",
             example = "הַמַּדָּע שִׁינָּה אֶת חַיֵּינוּ לְחַלּוּטִין.",
-            exampleNative = "Наука полностью изменила нашу жизнь.",
-         isFillInBlankSafe = false),
+            exampleNative = "Наука полностью изменила нашу жизнь."),
         WordEntity(
             id = 107702, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science", transliteration = "madaan",
@@ -293,8 +284,7 @@ object WordDataHebrewBatch18 {
             definition = "בְּדִיקָה מְבַקֶּרֶת לְאִישּׁוּר אוֹ הֲפְרָכַת הִיפּוֹתֵזָה.",
             definitionNative = "Контролируемая проверка для подтверждения или опровержения гипотезы.",
             example = "הַנִּיסּוּי הִצְלִיחַ אַחֲרֵי עֶשֶׂר חֲזָרוֹת.",
-            exampleNative = "Эксперимент удался после десяти повторений.",
-         isFillInBlankSafe = false),
+            exampleNative = "Эксперимент удался после десяти повторений."),
         WordEntity(
             id = 107704, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science", transliteration = "mekhkar",
@@ -302,8 +292,7 @@ object WordDataHebrewBatch18 {
             definition = "עֲבוֹדָה שִׁיטָתִית שֶׁמַּטָּרָתָהּ לְהַרְחִיב יְדִיעוֹת בְּתְּחוּם מְסוּיָּם.",
             definitionNative = "Систематическая работа с целью расширения знаний в определённой области.",
             example = "הַמֶּחְקָר פָּוְרַסֵּם בְּכְּתַב עֵת בֵּינְלְאוּמִי.",
-            exampleNative = "Исследование опубликовано в международном журнале.",
-         isFillInBlankSafe = false),
+            exampleNative = "Исследование опубликовано в международном журнале."),
         WordEntity(
             id = 107705, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science", transliteration = "teoriya",
@@ -349,8 +338,7 @@ object WordDataHebrewBatch18 {
             definition = "מַכְשִׁיר הַמַּגְדִּיל עֲצָמִים זְעִירִים לִרְאִיָּה.",
             definitionNative = "Прибор, увеличивающий крошечные объекты для наблюдения.",
             example = "תַּחַת הַמִּיקְרוֹסְקוֹפּ רָאִינוּ תָּאִים חַיִּים.",
-            exampleNative = "Под микроскопом мы увидели живые клетки.",
-         isFillInBlankSafe = false),
+            exampleNative = "Под микроскопом мы увидели живые клетки."),
         WordEntity(
             id = 107710, setId = 1077, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "science", transliteration = "molekula",
@@ -412,8 +400,7 @@ object WordDataHebrewBatch18 {
             definition = "מַדְעָן הָעוֹבֵד בַּאֲסֵיפַת נְתוּנִים וְנִיתּוּחָם.",
             definitionNative = "Учёный, занимающийся сбором и анализом данных.",
             example = "הַמְּחַקֶּרֶת זָכְתָה בְּמִלְגָה לְמֶחְקָר הַגֶּנוֹם.",
-            exampleNative = "Исследовательница получила грант на изучение генома.",
-         isFillInBlankSafe = false),
+            exampleNative = "Исследовательница получила грант на изучение генома."),
 
         // 25 words: 6 COMMON + 19 UNCOMMON
         WordEntity(
@@ -495,8 +482,7 @@ object WordDataHebrewBatch18 {
             definition = "סְקִירָה קְצָרָה שֶׁל הַנְּקוּדוֹת הָעִיקָּרִיּוֹת שֶׁל מֶחְקָר אוֹ עֲבוֹדָה.",
             definitionNative = "Краткий обзор основных положений исследования или работы.",
             example = "הַסִּיכּוּם הַמִּנְהָלִי תָּאַר אֶת הַמִּמְצָאִים הָעִיקָּרִיִּים.",
-            exampleNative = "Исполнительный סִיכּוּם описал ключевые выводы.",
-         isFillInBlankSafe = false),
+            exampleNative = "Исполнительный סִיכּוּם описал ключевые выводы."),
 
         // ── Set 1078: Экология ─────────────────────────────────────────────
 
@@ -508,8 +494,7 @@ object WordDataHebrewBatch18 {
             definition = "תְּקוּפָה מְמוּשֶׁכֶת שֶׁל מַחְסוֹר בְּגֶשֶׁם הַגּוֹרֶמֶת נֶזֶק לַחֲקָלָאוּת.",
             definitionNative = "Продолжительный период нехватки осадков, наносящий ущерб сельскому хозяйству.",
             example = "הַיּוֹבֵשׁ גָּרַם לְאֻבְדַּן יְבוּלִים בְּחֶלְקֵי אֲפְרִיקָה.",
-            exampleNative = "יוֹבֵשׁ привела к потере урожая в частях Африки.",
-         isFillInBlankSafe = false),
+            exampleNative = "יוֹבֵשׁ привела к потере урожая в частях Африки."),
         WordEntity(
             id = 107802, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "shkhavat ozon",
@@ -636,8 +621,7 @@ object WordDataHebrewBatch18 {
             definition = "גַּל יָם עָצוּם הַנִּגְרָם מֵרַעְיְדַת אֲדָמָה תַּת-יַמִּית.",
             definitionNative = "Огромная морская волна, вызванная подводным землетрясением.",
             example = "הַצּוּנָמִי הָרַסָּנִי בְּיַפָּן 2011 גָּרַם לְנֶזֶק עֲצוּם.",
-            exampleNative = "Разрушительное цунами в Японии в 2011 году причинило огромный ущерб.",
-         isFillInBlankSafe = false),
+            exampleNative = "Разрушительное цунами в Японии в 2011 году причинило огромный ущерб."),
         WordEntity(
             id = 107816, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "minim besakhnat hikhhada",
@@ -645,8 +629,7 @@ object WordDataHebrewBatch18 {
             definition = "חַיּוֹת וְצְמָחִים שֶׁאוּכְלוּסִיָּתָם יָרְדָה לְרָמוֹת מְסוּכָּנוֹת.",
             definitionNative = "Животные и растения, чьи популяции снизились до опасного уровня.",
             example = "הַנָּמֵר הָאֲדוֹם הוּא אֶחַד הַמִּינִים בְּסַכָּנַת הִכְחָדָה בְּיִשְׂרָאֵל.",
-            exampleNative = "Рыжая лисица — один из видов под угрозой исчезновения в Израиле.",
-         isFillInBlankSafe = false),
+            exampleNative = "Рыжая лисица — один из видов под угрозой исчезновения в Израиле."),
 
         // RARE (B2),
         WordEntity(
@@ -665,8 +648,7 @@ object WordDataHebrewBatch18 {
             definition = "מַגְוַּן הַמִּינִים הַחַיִּים בְּאֵקוֹסִיסְטֶם אוֹ בַּכַּדּוּר כֻּלּוֹ.",
             definitionNative = "Разнообразие живых видов в экосистеме или на всей планете.",
             example = "יִשְׂרָאֵל עֲשִׁירָה בְּבִיוֹמְגַּוּוָן בִּזְכוּת מִקּוּם בֵּין יַבָּשׁוֹת.",
-            exampleNative = "Фауна Израиля богата биоразнообразием благодаря расположению между тремя континентами.",
-         isFillInBlankSafe = false),
+            exampleNative = "Фауна Израиля богата биоразнообразием благодаря расположению между тремя континентами."),
         WordEntity(
             id = 107819, setId = 1078, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "ecology", transliteration = "tabaat plastik",

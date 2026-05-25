@@ -86,7 +86,6 @@ object WordDataHebrewAiMlL4 {
             definitionNative = "Прогон предсказаний по большой пачке записей сразу — обычно ночью или вне пиков.",
             example = "אִינְפֶרֶנְס בָּאצ' עַל מִילְיוֹן לְקוֹחוֹת הִסְתַּיֵּם בְּתוֹךְ שְׁתֵּי שָׁעוֹת.",
             exampleNative = "אִינְפֶרֶנְס בָּאצ' на миллион клиентов завершился за два часа.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175605, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",

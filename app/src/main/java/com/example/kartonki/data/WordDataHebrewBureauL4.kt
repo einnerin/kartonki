@@ -155,7 +155,6 @@ object WordDataHebrewBureauL4 {
             definitionNative = "Бумага, дающая другому человеку право действовать от вашего имени в банке или суде.",
             example = "נָתַתִּי לְאָחִי יִיפּוּי כֹּחַ לְמַכּוֹר אֶת הַדִּירָה בְּמָקוֹמִי.",
             exampleNative = "Я выдал брату יִיפּוּי כֹּחַ продать квартиру вместо меня.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181013, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",

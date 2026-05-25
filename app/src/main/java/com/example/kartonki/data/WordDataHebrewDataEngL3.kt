@@ -125,7 +125,6 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Прогон, собирающий большую партию данных и обрабатывающий её разом по расписанию.",
             example = "עִבּוּד בָּאצ׳ יוֹמִי מְסַכֵּם אֶת כָּל הָעִסְקוֹת וְשׁוֹלֵחַ דּוּחַ לַהַנְהָלָה.",
             exampleNative = "Ежедневный עִבּוּד בָּאצ׳ суммирует все сделки и шлёт отчёт руководству.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176309, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
@@ -164,7 +163,6 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Классическая платформа — хранит и обрабатывает данные на большом кластере дешёвых машин.",
             example = "הַחֶבְרָה הוֹרִידָה אֶת אֶשְׁכּוֹל הָאדוּפּ הַיָּשָׁן וְעָבְרָה לְעָנָן.",
             exampleNative = "Фирма погасила старый кластер הָאדוּפּ и переехала в облако.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176313, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
@@ -203,7 +201,6 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Инструмент — задаёт и запускает порядок прогона задач по данным, по расписанию и зависимостям.",
             example = "אֵיירְפְלוֹאוּ שׁוֹלֵחַ הַתְרָעָה לְסְלֶק כְּשֶׁמְּשִׂימָה נוֹפֶלֶת בָּאֶמְצַע הַלַּיְלָה.",
             exampleNative = "אֵיירְפְלוֹאוּ шлёт алёрт в Slack, когда задача падает посреди ночи.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176317, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
@@ -222,7 +219,6 @@ object WordDataHebrewDataEngL3 {
             definitionNative = "Компонент, решающий, когда стартовать каждую задачу — по часам или по приходу нового файла.",
             example = "הַמְּתַזְמֵן הִפְעִיל אֶת הַעִבּוּד מִיָּד אַחֲרֵי שֶׁהַקֹּבֶץ נָחַת בְּ-S3.",
             exampleNative = "מְתַזְמֵן запустил обработку, как только файл сел в S3.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176319, setId = 1763, languagePair = "he-ru", rarity = "RARE",

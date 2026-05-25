@@ -45,7 +45,6 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Маленький человек, который ещё не вырос — ходит в сад или школу.",
             example = "הַיֶּלֶד רָץ עִם הַתִּיק שֶׁלּוֹ אֶל בֵּית הַסֵּפֶר.",
             exampleNative = "Этот יֶלֶד бежит с рюкзаком прямо в школу.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181202, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
@@ -56,7 +55,6 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Маленький человек женского пола — ходит в садик или начальную школу.",
             example = "הַיַּלְדָּה צִיְּרָה פֶּרַח בָּרֹד עַל הַדַּף הַחָדָשׁ.",
             exampleNative = "Эта יַלְדָּה нарисовала розовый цветок на чистом листке.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181203, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
@@ -67,7 +65,6 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Мужчина, который объясняет материал детям в школе.",
             example = "הַמּוֹרֶה כָּתַב אֶת הַתַּרְגִּיל הַחָדָשׁ עַל הַלּוּחַ.",
             exampleNative = "מוֹרֶה написал новое задание на доске.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181204, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
@@ -78,7 +75,6 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Женщина, которая ведёт уроки и объясняет материал в классе.",
             example = "הַמּוֹרָה הִקְרִיאָה סִיפּוּר קָצָר לִפְנֵי הַהַפְסָקָה.",
             exampleNative = "מוֹרָה прочитала короткий рассказ перед самой переменой.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181205, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
@@ -173,7 +169,6 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Книжечка с пустыми листами, в которой записывают задания и упражнения.",
             example = "כָּתַבְתִּי בַּמַּחְבֶּרֶת אֶת הַתַּשׁוּבָה הַנְּכוֹנָה.",
             exampleNative = "Я записал в מַחְבֶּרֶת правильный ответ.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181214, setId = 1812, languagePair = "he-ru", rarity = "COMMON",
@@ -258,7 +253,6 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Промежуток времени в школе, когда преподаватель объясняет новый материал.",
             example = "הַשִּׁעוּר הָרִאשׁוֹן הַיּוֹם הוּא חֶשְׁבּוֹן.",
             exampleNative = "Первый שִׁעוּר сегодня — это математика.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181222, setId = 1812, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -300,7 +294,6 @@ object WordDataHebrewSchoolL1 {
             definitionNative = "Пятница и суббота — дни, когда нет уроков и нет работы.",
             example = "בְּסוֹף שָׁבוּעַ נָסַעְנוּ עִם הַמִּשְׁפָּחָה לַיָּם.",
             exampleNative = "В סוֹף שָׁבוּעַ мы поехали всей семьёй на море.",
-            isFillInBlankSafe = false,
         ),
     )
 }

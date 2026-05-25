@@ -78,7 +78,6 @@ object WordDataHebrewCyberL1 {
             definitionNative = "Цепочка букв и цифр — даёт тебе войти в учётную запись.",
             example = "שָׁכַחְתִּי אֶת הַסִּיסְמָה וְהָיִיתִי צָרִיךְ לְאַפֵּס אוֹתָהּ.",
             exampleNative = "Я забыл סִיסְמָה и пришлось её сбрасывать.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178002, setId = 1780, languagePair = "he-ru", rarity = "COMMON",
@@ -106,7 +105,6 @@ object WordDataHebrewCyberL1 {
             definitionNative = "Уникальная комбинация — есть только у тебя, ею открываешь свой цифровой сейф.",
             example = "כָּתַבְתִּי אֶת הַמַּפְתֵּחַ סוֹדִי עַל פֶּתֶק וְהֶחְבֵּאתִי בַּכַּסֶּפֶת.",
             exampleNative = "Я записал מַפְתֵּחַ סוֹדִי на бумажку и спрятал в сейфе.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178005, setId = 1780, languagePair = "he-ru", rarity = "COMMON",
@@ -116,7 +114,6 @@ object WordDataHebrewCyberL1 {
             definitionNative = "Состояние, когда телефон спит и не открывается без кода или отпечатка.",
             example = "נְעִילַת מָסָךְ נִפְתַּחַת אֶצְלִי בִּטְבִיעַת אֶצְבַּע.",
             exampleNative = "נְעִילַת מָסָךְ у меня снимается отпечатком пальца.",
-            isFillInBlankSafe = false,
         ),
 
         // ── cyber_account_protection (5) — защита учётной записи ──
@@ -137,7 +134,6 @@ object WordDataHebrewCyberL1 {
             definitionNative = "Человек, что открывает сайт или приложение — читать, покупать или писать сообщения.",
             example = "כָּל מִשְׁתַּמֵּשׁ חָדָשׁ מְקַבֵּל מַדְרִיךְ קָצָר בַּכְּנִיסָה הָרִאשׁוֹנָה.",
             exampleNative = "Каждый новый מִשְׁתַּמֵּשׁ получает короткий гид при первом входе.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178008, setId = 1780, languagePair = "he-ru", rarity = "COMMON",
@@ -232,7 +228,6 @@ object WordDataHebrewCyberL1 {
             definitionNative = "Сайт с зелёным замочком и валидным адресом — там можно вводить данные без боязни.",
             example = "אֲנִי קוֹנֶה רַק בְּאֲתָר בָּטוּחַ עִם מַנְעוּל בַּשּׁוּרָה הָעֶלְיוֹנָה.",
             exampleNative = "Я покупаю только в אֲתָר בָּטוּחַ с замочком в верхней строке.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178018, setId = 1780, languagePair = "he-ru", rarity = "COMMON",
@@ -242,7 +237,6 @@ object WordDataHebrewCyberL1 {
             definitionNative = "Человек незнакомый, что присылает сообщение — не друг и не известная контора.",
             example = "לֹא לוֹחֲצִים עַל קְבָצִים מִשּׁוֹלֵחַ זָר בַּדֹּאַר.",
             exampleNative = "Не нажимать на файлы от שׁוֹלֵחַ זָר в почте.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178019, setId = 1780, languagePair = "he-ru", rarity = "COMMON",

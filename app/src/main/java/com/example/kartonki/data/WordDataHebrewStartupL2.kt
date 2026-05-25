@@ -98,7 +98,6 @@ object WordDataHebrewStartupL2 {
             definitionNative = "Другая фирма, продающая что-то похожее тем же клиентам.",
             example = "הַמַּתְחָרֶה הָרָאשִׁי שֶׁלָּנוּ פָּתַח מִשְׂרָד בְּחֵיפָה לִפְנֵי שָׁבוּעַ.",
             exampleNative = "Главный наш מַתְחָרֶה открыл офис в Хайфе неделю назад.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178904, setId = 1789, languagePair = "he-ru", rarity = "RARE",
@@ -155,7 +154,6 @@ object WordDataHebrewStartupL2 {
             definitionNative = "Живой прогон штуки на настоящих данных — не одни картинки в презентации.",
             example = "גִּרְסַת דֵּמוֹ אִפְשְׁרָה לַלָּקוֹחַ לִלְחֹץ עַל כַּפְתּוֹרִים בְּעַצְמוֹ.",
             exampleNative = "גִּרְסַת דֵּמוֹ позволила клиенту самому понажимать на кнопки.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178910, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -185,7 +183,6 @@ object WordDataHebrewStartupL2 {
             definitionNative = "Маленький рисованный знак, по которому фирму узнают на упаковке, сайте и визитках.",
             example = "מְעַצֶּבֶת חֲבֵרָה הִכִינָה לָנוּ לוֹגוֹ פָּשׁוּט בִּשְׁנֵי צְבָעִים.",
             exampleNative = "Подруга-дизайнер сделала нам простой לוֹגוֹ в двух цветах.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178913, setId = 1789, languagePair = "he-ru", rarity = "RARE",
@@ -260,7 +257,6 @@ object WordDataHebrewStartupL2 {
             definitionNative = "Сделка, в которой незнакомый человек переводит деньги за то, что мы построили.",
             example = "הַמְּכִירָה רִאשׁוֹנָה הָיְתָה לְלָקוֹחַ מֵרָמַת גָּן בְּמָאתַיִם שֶׁקֶל.",
             exampleNative = "מְכִירָה רִאשׁוֹנָה досталась клиенту из Рамат-Гана за двести шекелей.",
-            isFillInBlankSafe = false,
         ),
 
         // ── startup_lifecycle_basic (5) — этапы жизни ранней компании ──
@@ -299,7 +295,6 @@ object WordDataHebrewStartupL2 {
             definitionNative = "Другая дорога, которую фирма выбирает после того, как первая оказалась негодной.",
             example = "אַחֲרֵי חֲצִי שָׁנָה שֶׁל כִּשְׁלוֹנוֹת בָּחַרְנוּ כִּוּוּן חָדָשׁ לְגַמְרֵי.",
             exampleNative = "После полугода неудач мы выбрали совершенно כִּוּוּן חָדָשׁ.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178925, setId = 1789, languagePair = "he-ru", rarity = "RARE",

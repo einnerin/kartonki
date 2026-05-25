@@ -107,8 +107,7 @@ object WordDataHebrewEntertainmentL5 {
             definition = "אִישׁ מִקְצוֹעַ שֶׁכּוֹתֵב הַעֲרָכוֹת מְעֻמָּקוֹת עַל סְרָטִים בָּעִתּוֹנוּת.",
             definitionNative = "Профессионал, что пишет глубокие разборы фильмов в прессе или онлайн.",
             example = "מְבַקֵּר קוֹלְנוֹעַ וָתִיק קָבַע שֶׁזֶּה הַסֶּרֶט הֲכִי טוֹב הַשָּׁנָה.",
-            exampleNative = "Опытный מְבַקֵּר קוֹלְנוֹעַ объявил это лучшей картиной года.",
-            isFillInBlankSafe = false),
+            exampleNative = "Опытный מְבַקֵּר קוֹלְנוֹעַ объявил это лучшей картиной года."),
 
         WordEntity(id = 179507, setId = 1795, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "entertainment_criticism", transliteration = "katava arukah",

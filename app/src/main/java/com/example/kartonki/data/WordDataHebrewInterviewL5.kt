@@ -230,7 +230,6 @@ object WordDataHebrewInterviewL5 {
             definitionNative = "Сколько недель проходит от первого звонка рекрутера до подписания офера.",
             example = "מֶשֶׁךְ הַתַּהֲלִיךְ בַּחֶבְרָה הַזֹּאת הוּא חָמֵשׁ שָׁבוּעוֹת בְּמְמֻצָּע.",
             exampleNative = "מֶשֶׁךְ הַתַּהֲלִיךְ в этой фирме — пять недель в среднем.",
-            isFillInBlankSafe = false,
         ),
 
         // ── interview_subtleties_culture (5) — израильские особенности ──

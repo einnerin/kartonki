@@ -114,7 +114,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Добраться до содержимого, что было закрыто — страница в сети, окно или файл.",
             example = "נִסִּיתִי לִפְתֹּחַ אֶת הַקֹּבֶץ אֲבָל הַתּוֹכְנָה לֹא הִגִּיבָה.",
             exampleNative = "Я попробовал לִפְתֹּחַ файл, но программа не реагировала.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177108, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
@@ -142,7 +141,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Передать форму или сообщение со своего экрана получателю по сети.",
             example = "אָסוּר לִשְׁלֹחַ אֶת הַטֹּפֶס לִפְנֵי שֶׁכָּל הַשָּׂדוֹת מְלֵאִים.",
             exampleNative = "Нельзя לִשְׁלֹחַ форму, пока не все поля заполнены.",
-            isFillInBlankSafe = false,
         ),
 
         // ── qa_findings (5) — что находит тестировщик ──
@@ -210,7 +208,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Картинка — сохраняет то, что видно на телефоне или компьютере прямо сейчас.",
             example = "צֵירַפְתִּי צִילּוּם מָסָךְ שֶׁל הַשְּׁגִיאָה לַהוֹדָעָה לַמְּפַתֵּחַ.",
             exampleNative = "Я приложил צִילּוּם מָסָךְ ошибки к сообщению разработчику.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177118, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
@@ -220,7 +217,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Череда мелких действий — выполняют одно за другим до самого конца.",
             example = "רָשַׁמְתִּי בַּדּוּ\"חַ אֶת הַשְּׁלָבִים שֶׁגָּרְמוּ לַשְּׁגִיאָה בַּדַּף.",
             exampleNative = "Я записал в отчёт שְׁלָבִים, что привели к ошибке на странице.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177119, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -230,7 +226,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Что должно было случиться по плану — до того как начали проверку.",
             example = "הַצִּפִּיָּה הָיְתָה שֶׁהַטֹּפֶס יִשְׁמֹר אוֹתוֹ אֲבָל הוּא נֶעֱלַם לְגַמְרֵי.",
             exampleNative = "צִפִּיָּה — что форма сохранит данные, но они исчезли совсем.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177120, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
@@ -240,7 +235,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Одно-два предложения — собирают главное из длинного отчёта.",
             example = "הַסִּכּוּם שֶׁל הַדּוּחַ כָּלַל שָׁלוֹשׁ בְּעָיוֹת חֲדָשׁוֹת בַּגִּרְסָה.",
             exampleNative = "סִכּוּם отчёта включал три новые проблемы в версии.",
-            isFillInBlankSafe = false,
         ),
 
         // ── qa_team_basic (5) — кто рядом по работе ──
@@ -270,7 +264,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Человек, что решает, чем команда займётся сегодня — и помогает, если кто-то застрял.",
             example = "הַמְּנַהֵל בִּקֵּשׁ מִמֶּנִּי לִשְׁלֹחַ דּוּ\"חַ עַד סוֹף הַיּוֹם.",
             exampleNative = "מְנַהֵל попросил меня прислать отчёт до конца дня.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177124, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
@@ -280,7 +273,6 @@ object WordDataHebrewQaL1 {
             definitionNative = "Группа людей — работают вместе над одним продуктом, говорят каждый день.",
             example = "הַצֶּוֶות שֶׁלָּנוּ נִפְגָּשׁ כָּל בֹּקֶר בְּתֵשַׁע לְעֶשֶׂר דַּקּוֹת.",
             exampleNative = "Наш צֶוֶות встречается каждое утро в девять на десять минут.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177125, setId = 1771, languagePair = "he-ru", rarity = "COMMON",

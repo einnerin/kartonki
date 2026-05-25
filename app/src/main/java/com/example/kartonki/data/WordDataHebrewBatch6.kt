@@ -107,8 +107,7 @@ object WordDataHebrewBatch6 {
             definition = "אִישׁ מִקְצוֹעַ הַמַּדְרִיךְ וּמְפַתֵּחַ כּוֹשֵׁר שֶׁל סְפּוֹרְטַאי.",
             definitionNative = "Профессионал, который тренирует и развивает спортсмена.",
             example = "הַמְּאַמֵּן נָתַן לוֹ תָּכְנִית אִמּוּן שְׁבוּעִית.",
-            exampleNative = "מְאַמֵּן дал ему еженедельный план тренировок.",
-         isFillInBlankSafe = false),
+            exampleNative = "מְאַמֵּן дал ему еженедельный план тренировок."),
         WordEntity(
             id = 104110, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "sport_equipment", transliteration = "mashkolet",
@@ -188,8 +187,7 @@ object WordDataHebrewBatch6 {
             definition = "פְּעִילוּת סְפּוֹרְטִיבִית בְּמַיִם, נָפוֹצָה כְּבִּידוּר וּכְסְפּוֹרְט תַּחֲרוּתִי.",
             definitionNative = "Спортивная активность в воде, распространённая как отдых и соревновательный спорт.",
             example = "שְׁחִייָה יוֹמִית בַּבְּרֵכָה מְחַזֶּקֶת אֶת הַגּוּף וְהָרֵיאוֹת.",
-            exampleNative = "Ежедневное שְׁחִייָה в бассейне укрепляет тело и лёгкие.",
-         isFillInBlankSafe = false),
+            exampleNative = "Ежедневное שְׁחִייָה в бассейне укрепляет тело и лёгкие."),
         WordEntity(
             id = 104119, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "sport_training", transliteration = "itsa",
@@ -215,8 +213,7 @@ object WordDataHebrewBatch6 {
             definition = "קְבוּצַת שַׂחְקָנִים הַנִּבְחֶרֶת לְיַיצֵּג אֶת הַמְּדִינָה אוֹ הָעִיר.",
             definitionNative = "Команда игроков, отобранных для представления страны или города.",
             example = "הוּא שִׂחֵק בַּנִּבְחֶרֶת הַלְּאוּמִּית שָׁלוֹשׁ שָׁנִים.",
-            exampleNative = "Он играл в נִבְחֶרֶת национальной сборной три года.",
-         isFillInBlankSafe = false),
+            exampleNative = "Он играл в נִבְחֶרֶת национальной сборной три года."),
         WordEntity(
             id = 104122, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "sport_training", transliteration = "hitkhamemut",
@@ -271,8 +268,7 @@ object WordDataHebrewBatch6 {
             definition = "עוֹבֵד מִסְעָדָה הַמְּשָׁרֵת אֶת הַלָּקוֹחוֹת וּמֵבִיא אֶת הַמָּנוֹת.",
             definitionNative = "Работник ресторана, который обслуживает клиентов и приносит блюда.",
             example = "הִזְמַנּוּ אֶת הַמֶּלְצָר כְּדֵי לְהַזְמִין מָנָה עִיקָרִית.",
-            exampleNative = "Мы подозвали מֶלְצָר, чтобы заказать основное блюдо.",
-         isFillInBlankSafe = false),
+            exampleNative = "Мы подозвали מֶלְצָר, чтобы заказать основное блюдо."),
         WordEntity(
             id = 104203, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "restaurant_food", transliteration = "shnitsel",
@@ -493,8 +489,7 @@ object WordDataHebrewBatch6 {
             definition = "כְּלִי בִּישּׁוּל שָׁטוּחַ הַמְּשַׁמֵּשׁ לְטִיגּוּן בְּשֶׁמֶן עַל הָאֵשׁ.",
             definitionNative = "Плоская посуда для жарки на масле на огне.",
             example = "חִמַּמְתִּי שֶׁמֶן בַּמַּחְבָּת וְטִיגַּנְתִּי בֵּיצָה.",
-            exampleNative = "Я разогрел масло в מַחְבָּת и пожарил яйцо.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я разогрел масло в מַחְבָּת и пожарил яйцо."),
         WordEntity(
             id = 104302, setId = 1043, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "sir",
@@ -502,8 +497,7 @@ object WordDataHebrewBatch6 {
             definition = "כְּלִי בִּישּׁוּל עָמֹק עִם כִּסּוּי הַמְּשַׁמֵּשׁ לְבִשּׁוּל מְרַקִים וְנְזִידִים.",
             definitionNative = "Глубокая кухонная посуда с крышкой для варки супов и тушёных блюд.",
             example = "שַׂמְתִּי אֶת הַסִּיר עַל הַכִּירָה לְבַשֵּׁל מָרָק.",
-            exampleNative = "Я поставил סִיר на плиту варить суп.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я поставил סִיר на плиту варить суп."),
         WordEntity(
             id = 104303, setId = 1043, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "kitchen_vegetables", transliteration = "batsal",
@@ -610,8 +604,7 @@ object WordDataHebrewBatch6 {
             definition = "תַּעֲרֹבֶת נוֹזְלִית אוֹ חֲצִי-נוֹזְלִית הַמְּשַׁמֶּשֶׁת לְהַטְעָמָה אוֹ לְהַרְטָבַת מָזוֹן.",
             definitionNative = "Жидкая или полужидкая смесь для придания вкуса или увлажнения еды.",
             example = "הַפַּסְטָה הָיְתָה טְעִימָה בִּזְכוּת הָרֹּטֶב הָאִיטַלְקִי.",
-            exampleNative = "Паста была вкусной благодаря итальянскому רֹּטֶב.",
-         isFillInBlankSafe = false),
+            exampleNative = "Паста была вкусной благодаря итальянскому רֹּטֶב."),
         WordEntity(
             id = 104315, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kitchen_basics", transliteration = "bishul",
@@ -628,8 +621,7 @@ object WordDataHebrewBatch6 {
             definition = "מַכְשִׁיר חַשְׁמַלִּי לְחִמּוּם מַיִם מַהִיר לְהַכְנַת תֵּה אוֹ קָפֶה.",
             definitionNative = "Электрический прибор для быстрого нагрева воды для чая или кофе.",
             example = "הִרְתַּחְתִּי מַיִם בַּמִּיחָם לְהַכְנַת תֵּה.",
-            exampleNative = "Я вскипятил воду в מִיחָם для чая.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я вскипятил воду в מִיחָם для чая."),
         WordEntity(
             id = 104317, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "masnan",
@@ -637,8 +629,7 @@ object WordDataHebrewBatch6 {
             definition = "כְּלִי מְנֻקָּב הַמְּשַׁמֵּשׁ לְסִינּוּן נוֹזְלִים מִמָּזוֹן מְבֻשָּׁל.",
             definitionNative = "Посуда с отверстиями для сцеживания жидкости с варёной еды.",
             example = "שַׂמְתִּי אֶת הַפַּסְטָה בַּמָּסָנָן לְנִיקּוּז הַמַּיִם.",
-            exampleNative = "Я откинул пасту на מָסָנָן, чтобы слить воду.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я откинул пасту на מָסָנָן, чтобы слить воду."),
         WordEntity(
             id = 104318, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "megara",
@@ -646,8 +637,7 @@ object WordDataHebrewBatch6 {
             definition = "כְּלִי מִטְבָּח בַּעַל מִשְׁטָח מְחוֹרָר לִגְרִידַת גְּבִינָה, יְרָקוֹת וּפֵרוֹת.",
             definitionNative = "Кухонный инструмент с зубчатой поверхностью для натирания сыра, овощей и фруктов.",
             example = "גָּרַדְתִּי גְּבִינָה עַל הַמְּגֵרָה לְתוֹךְ הַפַּסְטָה.",
-            exampleNative = "Я натёр сыр на מְגֵרָה в пасту.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я натёр сыр на מְגֵרָה в пасту."),
         WordEntity(
             id = 104319, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kitchen_spices", transliteration = "melakh gas",
@@ -691,8 +681,7 @@ object WordDataHebrewBatch6 {
             definition = "כְּלִי גְּדוֹל עִם יָד אֲרֻכָּה לְחִלּוּק מָרָק וְנְזִידִים.",
             definitionNative = "Большой ковш с длинной ручкой для разливания супов и тушёных блюд.",
             example = "מִילַּאתִי אֶת הַקְּעָרוֹת בְּכַף מְרַק.",
-            exampleNative = "Я наполнил тарелки כַּף מְרַק.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я наполнил тарелки כַּף מְרַק."),
         WordEntity(
             id = 104324, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "kaf ets",
@@ -700,8 +689,7 @@ object WordDataHebrewBatch6 {
             definition = "כַּף עֲשׂוּיָה עֵץ, מַתְאִימָה לְעִרְבּוּב מָאכָלִים בְּלִי לְגָרֵד כֵּלִים.",
             definitionNative = "Ложка из дерева, подходящая для помешивания еды без царапания посуды.",
             example = "עֵרַבְבְּתִּי אֶת הָרֹטֶב בְּכַף עֵץ כְּדֵי לֹא לְשַׂרֵּט אֶת הַסִּיר.",
-            exampleNative = "Я мешал соус כַּף עֵץ, чтобы не царапать кастрюлю.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я мешал соус כַּף עֵץ, чтобы не царапать кастрюлю."),
         WordEntity(
             id = 104325, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "kira",

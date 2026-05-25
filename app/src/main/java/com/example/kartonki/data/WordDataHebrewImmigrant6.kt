@@ -52,8 +52,7 @@ object WordDataHebrewImmigrant6 {
             definition = "חַיָּל בְּדַרְגָּה גְּבוֹהָה הַמְּפַקֵּד עַל חַיָּלִים אֲחֵרִים.",
             definitionNative = "Военнослужащий высокого звания, командующий другими солдатами.",
             example = "הַקְּצִין הִסְבִּיר לַחַיָּלִים אֶת תָּכְנִית הַמִּשְׁמָר.",
-            exampleNative = "קְצִין объяснил солдатам план дежурства.",
-         isFillInBlankSafe = false),
+            exampleNative = "קְצִין объяснил солдатам план дежурства."),
         WordEntity(
             id = 114604, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "miluyim",
@@ -79,8 +78,7 @@ object WordDataHebrewImmigrant6 {
             definition = "תַּרְגִּיל הַמְּאַמֵּן חַיָּלִים בְּמַשִּׂימוֹת קְרָבִיּוֹת אוֹ טֶכְנִיּוֹת.",
             definitionNative = "Упражнение, обучающее солдат боевым или техническим задачам.",
             example = "לֶאֱמוּן הַלַּיְלָה הֵם יָצְאוּ עִם כָּל הַצִּיּוּד.",
-            exampleNative = "На ночное אִמּוּן они вышли со всей экипировкой.",
-         isFillInBlankSafe = false),
+            exampleNative = "На ночное אִמּוּן они вышли со всей экипировкой."),
         WordEntity(
             id = 114607, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "shakhror",
@@ -88,8 +86,7 @@ object WordDataHebrewImmigrant6 {
             definition = "שִׁחְרוּרוֹ הָרַשְׁמִי שֶׁל חַיָּל מֵהַשֵּׁרוּת הַצְּבָאִי.",
             definitionNative = "Официальное освобождение солдата из рядов вооружённых сил.",
             example = "יוֹם הַשַּׁחְרוּר שֶׁלּוֹ הָיָה הַיּוֹם הַשָּׂמֵחַ בְּחַיָּיו.",
-            exampleNative = "День שַׁחְרוּר был самым счастливым днём в его жизни.",
-         isFillInBlankSafe = false),
+            exampleNative = "День שַׁחְרוּר был самым счастливым днём в его жизни."),
         WordEntity(
             id = 114608, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "sherut tsva'i",
@@ -142,8 +139,7 @@ object WordDataHebrewImmigrant6 {
             definition = "הַעֲבָרַת מֵידַע בֵּין חַיָּלִים אוֹ יְחִידוֹת בְּרַדְיוֹ אוֹ בְּאֶמְצָעִים אֲחֵרִים.",
             definitionNative = "Передача информации между солдатами или подразделениями по радио или другим средствам.",
             example = "חַיָּל הַקֶּשֶׁר שָׁלַח דִּוּוּחַ לַמַּפְקֵד.",
-            exampleNative = "Связной передал донесение командиру по קֶשֶׁר.",
-         isFillInBlankSafe = false),
+            exampleNative = "Связной передал донесение командиру по קֶשֶׁר."),
         WordEntity(
             id = 114614, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "mikhshol",
@@ -178,8 +174,7 @@ object WordDataHebrewImmigrant6 {
             definition = "מַקוֹם בּוֹ מַפְקְדִים מְקַבְּלִים הַחְלָטוֹת וּמְנַהֲלִים פְּעוּלּוֹת צְבָאִיּוֹת.",
             definitionNative = "Место, где командиры принимают решения и руководят военными операциями.",
             example = "הַמִּפְקָדָה הָרָאשִׁית שֶׁל צה\"ל נִמְצֵאת בְּתֵל-הַשּׁוֹמֵר.",
-            exampleNative = "Главная מִפְקָדָה ЦАХАЛа находится в Тель-ха-Шомере.",
-         isFillInBlankSafe = false),
+            exampleNative = "Главная מִפְקָדָה ЦАХАЛа находится в Тель-ха-Шомере."),
         WordEntity(
             id = 114618, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "khativa",
@@ -196,8 +191,7 @@ object WordDataHebrewImmigrant6 {
             definition = "חַיָּל מְיֻחָד הַמְּאוּמָן לִנְחִיתָה בְּמַצְנֵחַ מֵאֲוִיר.",
             definitionNative = "Специально подготовленный солдат, обученный десантироваться с парашютом с воздуха.",
             example = "כָּל צָנָן בַּיְּחִידָה עָבַר אִמּוּן צְנִיחָה קָשֶׁה.",
-            exampleNative = "Каждый צָנָן в части прошёл тяжёлую парашютную подготовку.",
-         isFillInBlankSafe = false),
+            exampleNative = "Каждый צָנָן в части прошёл тяжёлую парашютную подготовку."),
         WordEntity(
             id = 114620, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "takkan",
@@ -205,8 +199,7 @@ object WordDataHebrewImmigrant6 {
             definition = "מִסְפַּר הַמַּשְׂרוֹת הַמְּאוּשָּׁרוֹת בְּיְחִידָה אוֹ בְּמִשְׂרָד.",
             definitionNative = "Число утверждённых должностей в воинской части или ведомстве.",
             example = "הַמְּפַקֵּד אִשֵּׁר תַּקָּן חָדָשׁ לְקַצִּין מוֹדִיעִין נוֹסָף.",
-            exampleNative = "Командир утвердил новый תַּקָּן для дополнительного офицера разведки.",
-         isFillInBlankSafe = false),
+            exampleNative = "Командир утвердил новый תַּקָּן для дополнительного офицера разведки."),
         WordEntity(
             id = 114621, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military", transliteration = "totekhan",
@@ -300,8 +293,7 @@ object WordDataHebrewImmigrant6 {
             definition = "שְׁחִיטַת בַּעֲלֵי חַיִּים בְּדֶרֶךְ מְיֻחֶדֶת עַל פִּי הַהֲלָכָה הַיְּהוּדִית.",
             definitionNative = "Забой животных по особому методу согласно еврейскому религиозному закону.",
             example = "הַשְּׁחִיטָה הַכְּשֵׁרָה מְבוּצַעַת עַל יְדֵי שׁוֹחֵט מוּסְמָךְ.",
-            exampleNative = "Кошерная שְׁחִיטָה выполняется сертифицированным шохетом.",
-         isFillInBlankSafe = false),
+            exampleNative = "Кошерная שְׁחִיטָה выполняется сертифицированным шохетом."),
         WordEntity(
             id = 114706, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kosher", transliteration = "hafrada",
@@ -381,8 +373,7 @@ object WordDataHebrewImmigrant6 {
             definition = "מָקוֹם בּוֹ אוֹפִים לֶחֶם, עוּגוֹת וּמִאֲפִים אֲחֵרִים.",
             definitionNative = "Место, где пекут хлеб, пирожные и другую выпечку.",
             example = "הַמַּאֲפִיָּה הַזּוֹ כְּשֵׁרָה לְמֶהְדְּרִין וּפְתוּחָה בְּחוֹל הַמּוֹעֵד.",
-            exampleNative = "Эта מַאֲפִיָּה кошерная меадрин и открыта в холь-а-моэд.",
-         isFillInBlankSafe = false),
+            exampleNative = "Эта מַאֲפִיָּה кошерная меадрин и открыта в холь-а-моэд."),
         WordEntity(
             id = 114715, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kosher", transliteration = "netilat yadayim",
@@ -435,8 +426,7 @@ object WordDataHebrewImmigrant6 {
             definition = "דַּרְגַּת כַּשְׁרוּת גְּבוֹהָה יוֹתֵר מִן הַבָּסִיסִי, לְמַחְמִירִים בְּהֲלָכָה.",
             definitionNative = "Более высокий уровень кашрута по сравнению с базовым, для тех, кто строго следует закону.",
             example = "הַמּוֹצָרִים הַמְּהַדְּרִין יְקָרִים יוֹתֵר אֲבָל מְבֻקָּשִׁים.",
-            exampleNative = "Продукты מְהַדְּרִין дороже, но пользуются спросом.",
-         isFillInBlankSafe = false),
+            exampleNative = "Продукты מְהַדְּרִין дороже, но пользуются спросом."),
         WordEntity(
             id = 114721, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kosher", transliteration = "shokhet",
@@ -444,8 +434,7 @@ object WordDataHebrewImmigrant6 {
             definition = "אָדָם מוּסְמָךְ הַמְּבַצֵּעַ שְׁחִיטָה כְּשֵׁרָה שֶׁל בְּעָלֵי חַיִּים.",
             definitionNative = "Сертифицированный человек, выполняющий кошерный забой животных.",
             example = "הַשּׁוֹחֵט עָבַד בַּמִּטְבָּחַיִם שֶׁל הָעִיר כְּבָר עֶשְׂרִים שָׁנָה.",
-            exampleNative = "שׁוֹחֵט работает на городских бойнях уже двадцать лет.",
-         isFillInBlankSafe = false),
+            exampleNative = "שׁוֹחֵט работает на городских бойнях уже двадцать лет."),
         WordEntity(
             id = 114722, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kosher", transliteration = "kharakim",
@@ -471,8 +460,7 @@ object WordDataHebrewImmigrant6 {
             definition = "חֵלֶק מִגּוּף הַבְּהֵמָה; אִסּוּר תּוֹרָנִי לֶאֱכֹל חֵלֶק שֶׁנִּתְלַשׁ מֵחַיָּה חַיָּה.",
             definitionNative = "Часть тела животного; «эвер мин хахай» — библейский запрет есть орган живого существа.",
             example = "אֵבֶר מִן הַחַי הוּא אֶחָד מִשֶּׁבַע מִצְווֹת בְּנֵי נֹחַ.",
-            exampleNative = "אֶבֶר מִן הַחַי — одна из семи Ноевых заповедей.",
-         isFillInBlankSafe = false),
+            exampleNative = "אֶבֶר מִן הַחַי — одна из семи Ноевых заповедей."),
         WordEntity(
             id = 114725, setId = 1147, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kosher", transliteration = "halakha",
@@ -480,7 +468,6 @@ object WordDataHebrewImmigrant6 {
             definition = "מַעֲרֶכֶת הַחוֹקִים וְהַמִּנְהָגִים שֶׁל הַיַּהֲדוּת הַמַּסּוֹרָתִית.",
             definitionNative = "Система законов и обычаев традиционного иудаизма.",
             example = "עַל פִּי הַהֲלָכָה, יֵשׁ לְהַמְתִּין שֵׁשׁ שָׁעוֹת אַחַר בָּשָׂר.",
-            exampleNative = "По הַלָּכָה после мяса нужно ждать шесть часов.",
-         isFillInBlankSafe = false),
+            exampleNative = "По הַלָּכָה после мяса нужно ждать шесть часов."),
     )
 }

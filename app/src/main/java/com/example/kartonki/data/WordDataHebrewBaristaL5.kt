@@ -276,7 +276,6 @@ object WordDataHebrewBaristaL5 {
             definitionNative = "Профподход — как принять людей, чтобы чувствовали себя дома и вернулись.",
             example = "תּוֹרַת הָאֵירוּחַ הַיַּפָּנִית מְלַמֶּדֶת שֶׁכָּל פְּרָט קָטָן חָשׁוּב.",
             exampleNative = "Японская תּוֹרַת הָאֵירוּחַ учит, что важна каждая мелочь.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179725, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",

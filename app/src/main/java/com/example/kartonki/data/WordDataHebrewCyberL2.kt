@@ -187,7 +187,6 @@ object WordDataHebrewCyberL2 {
             definitionNative = "Выключение и включение устройства — завершает установку свежих изменений.",
             example = "הַמַּעֲרֶכֶת בִּקְּשָׁה אִתְחוּל מְחֻדָּשׁ אַחֲרֵי הַהַתְקָנָה.",
             exampleNative = "Система попросила אִתְחוּל מְחֻדָּשׁ после установки.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178115, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -255,7 +254,6 @@ object WordDataHebrewCyberL2 {
             definitionNative = "Файл, прицепленный к почтовому сообщению — открывается одним кликом.",
             example = "לֹא פָּתַחְתִּי אֶת הַטֹּפֶס מְצֹרָף כִּי הַשּׁוֹלֵחַ הָיָה לֹא מֻכָּר.",
             exampleNative = "Я не открыл טֹפֶס מְצֹרָף — отправитель был незнакомый.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178122, setId = 1781, languagePair = "he-ru", rarity = "RARE",
@@ -265,7 +263,6 @@ object WordDataHebrewCyberL2 {
             definitionNative = "Убедиться, что email-адрес настоящий, а не похожая копия — обманывает глаз.",
             example = "אִימוּת שׁוֹלֵחַ זָהִיר חָשַׂף אוֹת אַחַת שׁוֹנָה בִּכְתֹבֶת.",
             exampleNative = "Внимательный אִימוּת שׁוֹלֵחַ показал одну изменённую букву в адресе.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178123, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",

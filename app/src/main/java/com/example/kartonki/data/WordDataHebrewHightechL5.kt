@@ -63,7 +63,6 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Самый старший человек, отвечающий за все архитектурные и технологические решения.",
             example = "הַסִּי-טִי-אוֹ אִישֵּׁר אֶת הַמַּעֲבָר לְעַנְנֵי גוּגַל בִּישִׁיבָה הַשָּׁבוּעִית.",
             exampleNative = "סִי-טִי-אוֹ утвердил переход на Google Cloud на еженедельной встрече.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174902, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -82,7 +81,6 @@ object WordDataHebrewHightechL5 {
             definitionNative = "Старший управленец, отвечающий за видение и долгий план всех продуктовых линий.",
             example = "הַסִּי-פִּי-אוֹ הֶחֱלִיט לְבַטֵּל קַו מוּצָר חֲלָשׁ וּלְהַפְנוֹת אֶת הַמַּשְׁאַבִּים.",
             exampleNative = "סִי-פִּי-אוֹ решил закрыть слабую продуктовую линию и перенаправить ресурсы.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174904, setId = 1749, languagePair = "he-ru", rarity = "EPIC",

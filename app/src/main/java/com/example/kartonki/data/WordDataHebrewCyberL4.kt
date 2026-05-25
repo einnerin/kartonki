@@ -107,7 +107,6 @@ object WordDataHebrewCyberL4 {
             definitionNative = "Упорядоченный процесс — команда запускает его при атаке, чтобы остановить и разобрать.",
             example = "תְּגוּבַת אֵרוּעַ בַּחֶבְרָה מְוַסֶּתֶת לְפִי פְּלֵייבּוּקִים מוּכָנִים מֵרֹאשׁ.",
             exampleNative = "תְּגוּבַת אֵרוּעַ в фирме идёт по плейбукам, готовым заранее.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176807, setId = 1768, languagePair = "he-ru", rarity = "LEGENDARY",

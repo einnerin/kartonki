@@ -111,8 +111,7 @@ object WordDataHebrewImmigrant4 {
             definition = "לֶחֶם שַׁבָּתִי מְקֻלָּע שֶׁנֶּאֱפֶה לִכְבוֹד שַׁבָּת וְחַגִּים.",
             definitionNative = "Плетёный субботний хлеб, выпекаемый в честь Шаббата и праздников.",
             example = "סָבְתָא אוֹפָה חָלָה טְרִיָּה לְכָל סְעֻדַּת שַׁבָּת.",
-            exampleNative = "Бабушка печёт свежую חָלָה к каждой субботней трапезе.",
-         isFillInBlankSafe = false),
+            exampleNative = "Бабушка печёт свежую חָלָה к каждой субботней трапезе."),
         WordEntity(
             id = 103511, setId = 1035, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holidays", transliteration = "omer",
@@ -129,8 +128,7 @@ object WordDataHebrewImmigrant4 {
             definition = "מְנוֹרַת שֶׁבַע קָנִים — סֵמֶל יַהֲדוּת; חֲנֻכִּיָּה לַחֲנֻכָּה.",
             definitionNative = "Семиветвевой светильник — символ иудаизма; ханукия для Хануки.",
             example = "הַמְּנוֹרָה הִיא סֵמֶל הַמְּדִינָה שֶׁל יִשְׂרָאֵל.",
-            exampleNative = "מְנוֹרָה — это государственный символ Израиля.",
-         isFillInBlankSafe = false),
+            exampleNative = "מְנוֹרָה — это государственный символ Израиля."),
         WordEntity(
             id = 103513, setId = 1035, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holidays", transliteration = "matana",
@@ -229,8 +227,7 @@ object WordDataHebrewImmigrant4 {
             definition = "מִדְבַּר הַנֶּגֶב בְּדָרוֹם יִשְׂרָאֵל — הַחֵלֶק הַגָּדוֹל בְּיוֹתֵר שֶׁל הָאָרֶץ.",
             definitionNative = "Огромная сухая пустыня на юге Израиля — крупнейшая часть страны.",
             example = "מִצְפֵּה רָמוֹן נִמְצֵא בְּמֶרְכַּז הַנֶּגֶב.",
-            exampleNative = "Мицпе-Рамон расположен в центре הַנֶּגֶב.",
-         isFillInBlankSafe = false),
+            exampleNative = "Мицпе-Рамон расположен в центре הַנֶּגֶב."),
         WordEntity(
             id = 103703, setId = 1037, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "nature", transliteration = "galil",
@@ -301,8 +298,7 @@ object WordDataHebrewImmigrant4 {
             definition = "כָּל מַה שֶׁקַּיָּים בָּעוֹלָם מִחוּץ לְמַה שֶׁיָּצַר הָאָדָם.",
             definitionNative = "Всё, что существует в мире за пределами созданного человеком.",
             example = "אֲנִי אוֹהֵב לָצֵאת לַטֶּבַע בַּסּוֹף שָׁבוּעַ.",
-            exampleNative = "Я люблю выходить на טַבַּע в выходные дни.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я люблю выходить на טַבַּע в выходные дни."),
         WordEntity(
             id = 103711, setId = 1037, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "nature", transliteration = "shmurat teva",
@@ -319,8 +315,7 @@ object WordDataHebrewImmigrant4 {
             definition = "מַכְלוֹל הַצְּמָחִים הַגְּדֵלִים בְּאֵזוֹר מְסוּיָּם.",
             definitionNative = "Совокупность растений, произрастающих на определённой территории.",
             example = "הַצִּמְחִיָּה בַּגָּלִיל שׁוֹנָה מְאֹד מִזּוֹ שֶׁבַּנֶּגֶב.",
-            exampleNative = "צִמְחִיָּה в Галилее сильно отличается от растительности Негева.",
-         isFillInBlankSafe = false),
+            exampleNative = "צִמְחִיָּה в Галилее сильно отличается от растительности Негева."),
         WordEntity(
             id = 103713, setId = 1037, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "nature", transliteration = "khayot bar",
@@ -364,8 +359,7 @@ object WordDataHebrewImmigrant4 {
             definition = "שֶׁקַע אַרְצִי בֵּין הָרִים אוֹ גְּבָעוֹת, לְרוֹב פּוֹרֶה.",
             definitionNative = "Земное углубление между горами или холмами, как правило плодородное.",
             example = "עֶמֶק יִזְרְעֶאל הוּא אֵזוֹר חַקְלָאִי חָשׁוּב בְּיִשְׂרָאֵל.",
-            exampleNative = "עַמָּק Изреель — важный сельскохозяйственный район Израиля.",
-         isFillInBlankSafe = false),
+            exampleNative = "עַמָּק Изреель — важный сельскохозяйственный район Израиля."),
         WordEntity(
             id = 103718, setId = 1037, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "nature", transliteration = "kholot",
@@ -391,7 +385,6 @@ object WordDataHebrewImmigrant4 {
             definition = "שֶׁטַח פָּתוּחַ שֶׁל אֲדָמָה חַקְלָאִית אוֹ טֶבַע.",
             definitionNative = "Открытое пространство сельскохозяйственной или природной земли.",
             example = "שָׂדֶה גָּדוֹל שֶׁל חִטָּה מִשְׂתָּרֵעַ מֵעֵבֶר לַגִּבְעָה.",
-            exampleNative = "Большой שָׂדֶה пшеницы простирается за холмом.",
-         isFillInBlankSafe = false),
+            exampleNative = "Большой שָׂדֶה пшеницы простирается за холмом."),
     )
 }

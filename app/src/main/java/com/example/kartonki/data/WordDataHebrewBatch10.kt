@@ -74,8 +74,7 @@ object WordDataHebrewBatch10 {
             definition = "אֵשׁ גְּדוֹלָה שֶׁמַּדְלִיקִים בַּחוּץ, בִּמְיֻחָד בְּלַג בָּעֹמֶר.",
             definitionNative = "Большой огонь, зажигаемый на улице, особенно на Лаг ба-Омер.",
             example = "הַיְּלָדִים שָׁרוּ סְבִיב הַמְּדוּרָה בְּלַג בָּעֹמֶר.",
-            exampleNative = "Дети пели вокруг מְדוּרָה на Лаг ба-Омер.",
-         isFillInBlankSafe = false),
+            exampleNative = "Дети пели вокруг מְדוּרָה на Лаг ба-Омер."),
         WordEntity(
             id = 105307, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holiday_calendar", transliteration = "shavuot",
@@ -128,8 +127,7 @@ object WordDataHebrewBatch10 {
             definition = "כְּלִי נְגִינָה עֲשׂוּי מִקֶּרֶן אַיִל שֶׁתּוֹקְעִים בּוֹ בְּרֹאשׁ הַשָּׁנָה.",
             definitionNative = "Музыкальный инструмент из бараньего рога, в который трубят в Рош а-Шана.",
             example = "קוֹל הַשּׁוֹפָר מְסַמֵּן אֶת תְּחִילַת הַתְּפִלָּה.",
-            exampleNative = "Звук שׁוֹפָר возвещает начало молитвы.",
-         isFillInBlankSafe = false),
+            exampleNative = "Звук שׁוֹפָר возвещает начало молитвы."),
         WordEntity(
             id = 105313, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holiday_shabbat", transliteration = "hadlakat nerot",

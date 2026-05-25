@@ -59,7 +59,6 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Запись клиента до прихода — по телефону, в приложении или на сайте.",
             example = "בְּלִי הַזְמָנָה מֵרָאשׁ קָשֶׁה לִקְבּוֹעַ פְּגִישָׁה בְּשַׁבָּת.",
             exampleNative = "Без הַזְמָנָה מֵרָאשׁ трудно попасть к мастеру в субботу.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179903, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
@@ -135,7 +134,6 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Группа специалистов, выстраивающая цельный визуальный замысел съёмки или шоу.",
             example = "הַצֶּוֶת יוֹצֵר חָשַׁב עַל כָּל פְּרַט בַּקַמְפַּיְן הֶחָדָשׁ.",
             exampleNative = "צֶוֶת יוֹצֵר продумал каждую деталь новой кампании.",
-            isFillInBlankSafe = false,
         ),
 
         // ── barber_training_advanced (5) ──────────────────────────────────────
@@ -165,7 +163,6 @@ object WordDataHebrewBarberL5 {
             definitionNative = "Тот, кто работает рядом с опытным мастером, чтобы получить практику в деле.",
             example = "הַמַּתְמַחֶה הֶחָדָשׁ שׁוֹטֵף וְעוֹזֵר בִּכְלֵי הָעֲבוֹדָה.",
             exampleNative = "Новый מַתְמַחֶה моет и помогает с инвентарём.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179914, setId = 1799, languagePair = "he-ru", rarity = "LEGENDARY",

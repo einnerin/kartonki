@@ -82,7 +82,6 @@ object WordDataHebrewBarberL4 {
             definitionNative = "Природное вещество, задающее естественный тон каждой пряди.",
             example = "כַּמּוּת הַמֶּלָנִין יוֹרֶדֶת עִם הַשָּׁנִים אֶצְלוֹ.",
             exampleNative = "Количество מֶלָנִין с годами у него снижается.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179805, setId = 1798, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -92,7 +91,6 @@ object WordDataHebrewBarberL4 {
             definitionNative = "Точная смесь продуктов и пропорций ради нужного результата.",
             example = "הַנֻּסְחָה רְשׁוּמָה בַּכַּרְטִיס הָאִישִׁי שֶׁל הַלָּקוֹחָה.",
             exampleNative = "נֻסְחָה записана в личной карточке клиентки.",
-            isFillInBlankSafe = false,
         ),
 
         // ── barber_advanced_techniques (5) ────────────────────────────────────
@@ -122,7 +120,6 @@ object WordDataHebrewBarberL4 {
             definitionNative = "Сочетание свободной кисти с металлическими листами для изоляции.",
             example = "פוֹאִיל-יָאז' מַגְבִּיר אֶת הַחֲדוּת בְּלִי לְוַתֵּר עַל רֹךְ.",
             exampleNative = "פוֹאִיל-יָאז' усиливает чёткость без потери мягкости.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179809, setId = 1798, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -161,7 +158,6 @@ object WordDataHebrewBarberL4 {
             definitionNative = "Короткая процедура, обновляющая тон в нижних двух сантиметрах прядей.",
             example = "נְגִיעַת שֹׁרֶשׁ אֶחָת לְשִׁשָּׁה שָׁבוּעוֹת מַסְפִּיקָה לָהּ.",
             exampleNative = "Одной נְגִיעַת שֹׁרֶשׁ раз в шесть недель ей хватает.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179813, setId = 1798, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -200,7 +196,6 @@ object WordDataHebrewBarberL4 {
             definitionNative = "Внешний слой крошечных чешуек, защищающий каждую прядь снаружи.",
             example = "הַקּוּטִיקוּלָה נִפְתַּחַת בַּחֹם וְנִסְגֶּרֶת בַּקֹּר.",
             exampleNative = "קוּטִיקוּלָה раскрывается в тепле и закрывается в холоде.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179817, setId = 1798, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -266,7 +261,6 @@ object WordDataHebrewBarberL4 {
             definitionNative = "Ощущение на ощупь и вид — гладкое, грубое, округлое или тонкое.",
             example = "הַטֶּקְסְטוּרָה הַטִּבְעִית שֶׁלָּהּ דּוֹמָה לְמֶשִׁי קַל.",
             exampleNative = "Природная טֶקְסְטוּרָה у неё похожа на лёгкий шёлк.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179824, setId = 1798, languagePair = "he-ru", rarity = "LEGENDARY",

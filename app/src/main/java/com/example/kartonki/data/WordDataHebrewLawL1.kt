@@ -81,7 +81,6 @@ object WordDataHebrewLawL1 {
             definitionNative = "Любая официальная бумага с подписью или печатью — например, договор или справка.",
             example = "שָׁכַחְתִּי אֶת הַמִּסְמָךְ הֶחָשׁוּב בַּמִּשְׂרָד.",
             exampleNative = "Я забыл важный מִסְמָךְ в офисе.",
-            isFillInBlankSafe = false,
         ),
 
         // ── law_office_paperwork (5) ──────────────────────────────────────
@@ -111,7 +110,6 @@ object WordDataHebrewLawL1 {
             definitionNative = "Готовый листок с графами, куда вписывают личные данные или просьбу.",
             example = "מִלֵּאתִי אֶת הַטֹּפֶס לְקַבָּלַת הַסַּל קְלִיטָה.",
             exampleNative = "Я заполнил טֹפֶס для получения корзины абсорбции.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170309, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
@@ -141,7 +139,6 @@ object WordDataHebrewLawL1 {
             definitionNative = "Орган, который следит за общественным порядком и соблюдением закона.",
             example = "הִתְקַשַּׁרְנוּ לַמִּשְׁטָרָה אַחֲרֵי הַתְּאוּנָה בָּרְחוֹב.",
             exampleNative = "Мы позвонили в מִשְׁטָרָה после аварии на улице.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170312, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
@@ -178,7 +175,6 @@ object WordDataHebrewLawL1 {
             definitionNative = "Учреждение чужой страны, занимающееся паспортами и делами своих граждан за рубежом.",
             example = "הַקּוֹנְסוּלִיָּה הָרוּסִית פְּתוּחָה רַק שָׁלוֹשׁ פְּעָמִים בַּשָּׁבוּעַ.",
             exampleNative = "Российская קוֹנְסוּלִיָּה открыта только три раза в неделю.",
-            isFillInBlankSafe = false,
         ),
 
         // ── UNCOMMON (10) ─────────────────────────────────────────────────
@@ -210,7 +206,6 @@ object WordDataHebrewLawL1 {
             definitionNative = "Точная копия оригинала, сделанная на копировальном аппарате и приложенная к бланку.",
             example = "צָרְפוּ צִילּוּם מִסְמָךְ שֶׁל הַדַּרְכּוֹן לְבַקָּשָׁה.",
             exampleNative = "К заявлению приложите צִילּוּם מִסְמָךְ паспорта.",
-            isFillInBlankSafe = false,
         ),
 
         // ── law_status_basic (4) ──────────────────────────────────────────
@@ -231,7 +226,6 @@ object WordDataHebrewLawL1 {
             definitionNative = "Тот, кто живёт в стране на постоянной основе, но ещё не гражданин.",
             example = "תּוֹשָׁב קָבוּעַ זַכַּאי לְבִיטּוּחַ לְאוּמִּי.",
             exampleNative = "תּוֹשָׁב קָבוּעַ имеет право на национальное страхование.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170321, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -241,7 +235,6 @@ object WordDataHebrewLawL1 {
             definitionNative = "То, что положено каждому по закону — свобода слова, равенство, имущество.",
             example = "כָּל עוֹלֶה חַיָּב לְהַכִּיר אֶת הַזְּכֻיּוֹת שֶׁלּוֹ בָּאָרֶץ.",
             exampleNative = "Каждый репатриант обязан знать свои זְכֻיּוֹת в стране.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170322, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",

@@ -225,8 +225,7 @@ object WordDataHebrewHealthKupatHolim {
             example = "הִגַּעְתִּי לְתִקְרַת תַּשְׁלוּם בְּחֹדֶשׁ מַרְץ וְלֹא שִׁלַּמְתִּי יוֹתֵר.",
             exampleNative = "Я достигла תִּקְרַת תַּשְׁלוּם в марте и больше ничего не платила.",
             transliteration = "тикрат ташлум",
-            pos = "phrase", semanticGroup = "health_il_payments",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "health_il_payments"),
 
         // ── Group: health_il_diagnostics (5 words) ────────────────────────────
 

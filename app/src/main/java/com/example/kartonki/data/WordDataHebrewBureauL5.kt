@@ -133,7 +133,6 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Официальная просьба к вышестоящему суду разрешить открыть апелляционное производство.",
             example = "עוֹרֵךְ הַדִּין הִגִּישׁ בַּקָּשַׁת רְשׁוּת לְעַרֵּעַ לְבֵית הַמִּשְׁפָּט הָעֶלְיוֹן.",
             exampleNative = "Адвокат подал בַּקָּשַׁת רְשׁוּת לְעַרֵּעַ в Верховный суд.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181108, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -152,7 +151,6 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Временный приказ, что замораживает приведение решения в исполнение до итога апелляции.",
             example = "הַשּׁוֹפֵט נָתַן עֲצִירַת בִּצּוּעַ עַד שֶׁיּוּכְרַע הָעֶרְעוּר.",
             exampleNative = "Судья дал עֲצִירַת בִּצּוּעַ до решения по апелляции.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181110, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -238,7 +236,6 @@ object WordDataHebrewBureauL5 {
             definitionNative = "Внутренний документ ведомства, что задаёт, как должна идти процедура.",
             example = "הַנּוֹהֵל אַסְדָּרָה הַחָדָשׁ קוֹבֵעַ זְמַנֵּי תְּגוּבָה לְבַקָּשׁוֹת הַצִּבּוּר.",
             exampleNative = "Новый נוֹהֵל אַסְדָּרָה задаёт сроки ответа на обращения граждан.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181119, setId = 1811, languagePair = "he-ru", rarity = "EPIC",

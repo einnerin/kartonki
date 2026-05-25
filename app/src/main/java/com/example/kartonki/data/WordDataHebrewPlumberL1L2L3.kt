@@ -70,7 +70,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Полый канал для подачи воды или другой жидкости в доме.",
             example = "הַצִּנּוֹר תַּחַת הַכִּיּוֹר דּוֹלֵף מֵאֶמֶשׁ.",
             exampleNative = "צִנּוֹר под раковиной течёт со вчерашнего вечера.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174202, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
@@ -118,7 +117,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Уголок для мытья с подачей воды сверху через распылитель.",
             example = "הַמִּקְלַחַת לֹא מְזַלֶּפֶת חָזָק כְּמוֹ פַּעַם.",
             exampleNative = "מִקְלַחַת уже не льёт так сильно, как раньше.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174207, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
@@ -128,7 +126,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Прозрачная жидкость для питья, мытья и приготовления еды.",
             example = "הַמַּיִם בָּרְחוֹב נֻתְּקוּ עַד הַצָּהֳרַיִם.",
             exampleNative = "מַיִם в нашем квартале отключили до полудня.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174208, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -223,7 +220,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Металлический инструмент для затягивания и откручивания гаек.",
             example = "הוּא לָקַח מַפְתֵּחַ וְסָגַר אֶת הָאֻמָּה הַחֲלוּדָה.",
             exampleNative = "Он взял מַפְתֵּחַ и затянул ржавую гайку.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174218, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
@@ -262,7 +258,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Мастер, обслуживающий трубы, краны и водопровод в квартире.",
             example = "הַשְּׁרַבְרָב הִגִּיעַ עִם אַרְגַּז כֵּלִים גָּדוֹל.",
             exampleNative = "שְׁרַבְרָב пришёл с большим ящиком инструментов.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174222, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -281,7 +276,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Сумма, которую платят за работу или товар.",
             example = "הַמְּחִיר שֶׁל הַתִּקּוּן הָיָה הוֹגֵן.",
             exampleNative = "מְחִיר ремонта оказалась честной.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174224, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -328,7 +322,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Изогнутая трубка под раковиной, не пропускающая запахи из стока.",
             example = "פֵּרַקְנוּ אֶת הַסִּיפוֹן וְנִקִּינוּ אוֹתוֹ מִשֵּׂעָר.",
             exampleNative = "Мы разобрали סִיפוֹן и очистили его от волос.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174303, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -347,7 +340,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Короткая втулка, соединяющая две трубы в один поток.",
             example = "הַמַּחֲבֵר הַחָדָשׁ הִחְזִיק אֶת הַלַּחַץ בְּלִי בְּעָיוֹת.",
             exampleNative = "Новый מַחֲבֵר держит давление без жалоб.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174305, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -368,7 +360,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Широкое резиновое кольцо для плотного соединения трубы и устройства.",
             example = "הַשַּׁרְוּלִית שֶׁל הָאַסְלָה הִתְבַּלְּתָה אַחֲרֵי שְׁנָתַיִם.",
             exampleNative = "שַׁרְוּלִית унитаза износилась за два года.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174307, setId = 1743, languagePair = "he-ru", rarity = "RARE",
@@ -396,7 +387,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Короткая металлическая деталь с наружной резьбой для стыковки труб.",
             example = "הַנִּיפֶּל הִתְבַּלְבֵּל בִּגְלַל לַחַץ גָּבוֹהַּ.",
             exampleNative = "נִיפֶּל сорвало из-за слишком высокого давления.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174310, setId = 1743, languagePair = "he-ru", rarity = "RARE",
@@ -444,7 +434,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Электроприбор, нагревающий и сваривающий два конца трубы.",
             example = "הַמַּלְחֵם לְצִנּוֹרוֹת מִתְחַמֵּם לְשָׁלֹשׁ מֵאוֹת מַעֲלוֹת.",
             exampleNative = "מַלְחֵם לְצִנּוֹרוֹת греется до трёхсот градусов.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174315, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -454,7 +443,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Электроинструмент, быстро вкручивающий шурупы без усилий.",
             example = "הַמַּבְרֵגָה הִתְעַיְּפָה אַחֲרֵי חֲצִי שָׁעָה.",
             exampleNative = "מַבְרֵגָה разрядилась через полчаса работы.",
-            isFillInBlankSafe = false,
         ),
 
         // ── plumbing_works_advanced (5) — продвинутые операции ──
@@ -532,7 +520,6 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Прибор, считающий количество воды, поступающей в квартиру.",
             example = "הַמַּד מַיִם בַּחֲנִיָּה מַרְאֶה זְרִימָה דַּקָּה.",
             exampleNative = "מַד מַיִם в подвале показывает тонкую утечку.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174324, setId = 1743, languagePair = "he-ru", rarity = "RARE",

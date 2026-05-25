@@ -121,8 +121,7 @@ object WordDataHebrewSchoolL2 {
             example = "הוא רשום ל חוּג עַל יְסוֹדִי של מתמטיקה ביום שלישי.",
             exampleNative = "Он ходит на факультатив сверх базы по математике по вторникам.",
             pos = "noun",
-            semanticGroup = "school_after_school",
-            isFillInBlankSafe = false, fillInBlankExclusions = listOf(181306L, 181308L, 181309L, 181310L, 181316L, 181318L, 181319L, 181320L)),
+            semanticGroup = "school_after_school", fillInBlankExclusions = listOf(181306L, 181308L, 181309L, 181310L, 181316L, 181318L, 181319L, 181320L)),
 
         WordEntity(
             id = 181308, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",

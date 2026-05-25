@@ -132,7 +132,6 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Сетевой инструмент — переносит текст с одного языка на другой.",
             example = "הַמְּתַרְגֵּם תִּרְגֵּם לִי תַּפְרִיט שָׁלֵם בָּמִּסְעָדָה הָאִיטַלְקִית.",
             exampleNative = "מְתַרְגֵּם перевёл мне меню в итальянском ресторане.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178609, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
@@ -151,7 +150,6 @@ object WordDataHebrewAiMlL1 {
             definitionNative = "Нахождение ответа в сети по словам, которые ты набираешь в окошке.",
             example = "חִיפּוּשׂ קָצָר בְּגוּגְל פָּתַר לִי אֶת הַשְּׁאֵלָה תּוֹךְ דַּקָּה.",
             exampleNative = "Короткий חִיפּוּשׂ в Google решил мой вопрос за минуту.",
-            isFillInBlankSafe = false,
         ),
 
         // ── aiml_basic_actions (5) — простые действия с ИИ ──

@@ -63,7 +63,6 @@ object WordDataHebrewCleaningL4 {
             definitionNative = "Машина для блеска поверхностей, работающая двойным круговым ходом.",
             example = "הַטֶּכְנַאי נָקָה אֶת הַשַּׁיִשׁ בְּפּוֹלִישֵׁר אוֹרְבִּיטָלִי.",
             exampleNative = "Техник навёл блеск на мраморе с помощью פּוֹלִישֵׁר אוֹרְבִּיטָלִי.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(171601L, 171603L, 171604L, 171605L, 171606L, 171607L, 171608L, 171609L)),
         WordEntity(
             id = 171603, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
@@ -73,7 +72,6 @@ object WordDataHebrewCleaningL4 {
             definitionNative = "Профессиональный аппарат, что вытягивает влагу и грязь изнутри ковра или обивки.",
             example = "הַטֶּכְנַאי הִשְׁתַּמֵּשׁ בַּמַּכְשִׁיר אֶקְסְטְרַקְצְיָה לְשָׁטִיחֵי הַמִּשְׂרָד.",
             exampleNative = "Техник применил מַכְשִׁיר אֶקְסְטְרַקְצְיָה для офисных ковров.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 171604, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
@@ -150,7 +148,6 @@ object WordDataHebrewCleaningL4 {
             definitionNative = "Документ, гарантирующий, что услуга не прервётся при сбое или замене подрядчика.",
             example = "הַחוֹזֶה כָּלַל הֶסְכֵּם רְצִיפוּת שֵׁרוּת לְמֶשֶׁךְ שָׁלוֹשׁ שָׁנִים.",
             exampleNative = "Контракт включал הֶסְכֵּם רְצִיפוּת שֵׁרוּת сроком на три года.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(171612L, 171613L, 171614L, 171615L, 171617L, 171621L, 171622L, 171625L)),
         WordEntity(
             id = 171612, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -160,7 +157,6 @@ object WordDataHebrewCleaningL4 {
             definitionNative = "Открытая процедура, в которой компании подают заявки на контракт по уборке.",
             example = "הַמִּשְׂרָד פִּרְסֵם מִכְרַז שֵׁרוּתֵי נִקּוּי לִשְׁלוֹשׁ קוֹמוֹת.",
             exampleNative = "Министерство объявило מִכְרַז שֵׁרוּתֵי נִקּוּי на три этажа.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(171611L, 171613L, 171614L, 171615L, 171621L, 171622L, 171624L, 171625L)),
         WordEntity(
             id = 171613, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -179,7 +175,6 @@ object WordDataHebrewCleaningL4 {
             definitionNative = "Таблица дат, что определяет, когда выполнят каждую задачу по уборке.",
             example = "מְנַהֵל הָאוֹבְּיֶקְט אִשֵּׁר אֶת לוּחַ זְמַנֵּי בִּצּוּעַ לְשָׁבוּעַ הַבָּא.",
             exampleNative = "Управляющий объекта утвердил לוּחַ זְמַנֵּי בִּצּוּעַ на следующую неделю.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 171615, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -200,7 +195,6 @@ object WordDataHebrewCleaningL4 {
             definitionNative = "Свод признанных норм качества, действующих в Австралии и Новой Зеландии.",
             example = "הַחֶבְרָה הִתְחַיְּבָה לַעֲבֹד לְפִי תִּקְנֵי אִיכוּת אוֹסְטְרָלִיִּים.",
             exampleNative = "Компания обязалась работать по תִּקְנֵי אִיכוּת אוֹסְטְרָלִיִּים.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(171614L, 171617L, 171618L, 171619L, 171620L, 171621L, 171622L, 171624L, 171625L)),
         WordEntity(
             id = 171617, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -248,7 +242,6 @@ object WordDataHebrewCleaningL4 {
             definitionNative = "Метод расчёта цены по площади пола, требующего уборки.",
             example = "הַהַצָּעָה כָּלְלָה תַּמְחוּר לְפִי מֶטֶר רָבוּעַ עַל כָּל הַקּוֹמָה.",
             exampleNative = "Предложение содержало תַּמְחוּר לְפִי מֶטֶר רָבוּעַ за весь этаж.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 171622, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -267,7 +260,6 @@ object WordDataHebrewCleaningL4 {
             definitionNative = "Подборка прежних достижений с разными заказчиками для подтверждения уровня.",
             example = "מְנַהֵל הַמְּכִירוֹת שָׁלַח פּוֹרְטְפוֹלְיוֹ לָקוֹחוֹת לַמַּזְמִין.",
             exampleNative = "Менеджер по продажам отправил פּוֹרְטְפוֹלְיוֹ לָקוֹחוֹת заказчику.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(171611L, 171614L, 171616L, 171618L, 171619L, 171620L, 171621L, 171622L, 171624L, 171625L)),
         WordEntity(
             id = 171624, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",

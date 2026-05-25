@@ -72,7 +72,6 @@ object WordDataHebrewPmL5 {
             definitionNative = "Самый старший человек, отвечающий за общее видение всех продуктовых линий компании.",
             example = "הַסִּי-פִּי-אוֹ הִצִּיג בָּעֲצֶרֶת אֶת הַתּוֹכְנִית לְשָׁלוֹשׁ שָׁנִים קָדִימָה.",
             exampleNative = "סִי-פִּי-אוֹ представил на собрании план на три года вперёд.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177902, setId = 1779, languagePair = "he-ru", rarity = "EPIC",
@@ -232,7 +231,6 @@ object WordDataHebrewPmL5 {
             definitionNative = "Продакт, который работает над внутренней инфраструктурой — её используют все остальные команды.",
             example = "פִּי-אֵם פְּלַטְפוֹרְמָה הִשְׁקִיעַ חֲצִי שָׁנָה בִּבְנִיַּת מַעֲרֶכֶת הַתְרָאוֹת אַחַת.",
             exampleNative = "פִּי-אֵם פְּלַטְפוֹרְמָה вложил полгода в построение единой системы уведомлений.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(177901L, 177902L, 177903L, 177904L, 177905L, 177916L, 177917L, 177919L, 177920L)),
         WordEntity(
             id = 177919, setId = 1779, languagePair = "he-ru", rarity = "EPIC",
@@ -280,7 +278,6 @@ object WordDataHebrewPmL5 {
             definitionNative = "Инструмент — делит возможности на четыре типа: обязательные, желаемые, удивляющие и безразличные.",
             example = "מוֹדֶל קַאנוֹ עָזַר לִקְבֹּעַ אֵיזוֹ פִיצֶ'רִים בֶּאֱמֶת יִשְׂמְחוּ אֶת הַלָּקוֹחוֹת.",
             exampleNative = "מוֹדֶל קַאנוֹ помог решить — какие фичи действительно обрадуют клиентов.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177924, setId = 1779, languagePair = "he-ru", rarity = "LEGENDARY",

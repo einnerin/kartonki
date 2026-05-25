@@ -173,7 +173,6 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Команда предпринимателей, что запускает несколько компаний параллельно и ведёт их с самого начала.",
             example = "סְטוּדִיוֹ סְטַארְט-אַפּ מִתֵּל אָבִיב בָּנָה לָנוּ אֶת הַחֶבְרָה תּוֹךְ שִׁשָּׁה חֳדָשִׁים.",
             exampleNative = "סְטוּדִיוֹ סְטַארְט-אַפּ из Тель-Авива построил нам компанию за полгода.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175913, setId = 1759, languagePair = "he-ru", rarity = "EPIC",
@@ -192,7 +191,6 @@ object WordDataHebrewStartupL4 {
             definitionNative = "Соревновательное мероприятие — несколько молодых фирм борются за денежный приз и засветку.",
             example = "זָכִינוּ בְּתַחֲרוּת סְטַרְטְאַפִּים אֵירוֹפִּית עִם פְּרָס שֶׁל חֲמִישִּׁים אֶלֶף יוֹרוֹ.",
             exampleNative = "Мы выиграли תַּחֲרוּת סְטַרְטְאַפִּים в Европе с призом в пятьдесят тысяч евро.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175915, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",

@@ -62,8 +62,7 @@ object WordDataHebrewImmigrantExtra {
             definition = "אֲנָשִׁים הַגָּרִים בַּבִּנְיָן אוֹ לְיַד הַדִּירָה.",
             definitionNative = "Люди, живущие в одном доме или рядом с квартирой.",
             example = "הַשְּׁכֵנִים שֶׁלָּנוּ מְאֹד נֶחְמָדִים וְתָּמִיד עוֹזְרִים.",
-            exampleNative = "Наши שְׁכֵנִים очень хорошие и всегда помогают.",
-         isFillInBlankSafe = false),
+            exampleNative = "Наши שְׁכֵנִים очень хорошие и всегда помогают."),
         WordEntity(
             id = 102624, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "apartment", transliteration = "merkhav",
@@ -159,8 +158,7 @@ object WordDataHebrewImmigrantExtra {
             definition = "אִשָּׁה הַמְּלַמֶּדֶת תַּלְמִידִים בְּבֵית סֵפֶר.",
             definitionNative = "Женщина, обучающая учеников в школе.",
             example = "הַמּוֹרָה שֶׁל הַכִּתָּה שֶׁלִּי מְלַמֶּדֶת מַתְמָטִיקָה.",
-            exampleNative = "מוֹרָה нашего класса преподаёт математику.",
-         isFillInBlankSafe = false),
+            exampleNative = "מוֹרָה нашего класса преподаёт математику."),
         WordEntity(
             id = 103122, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "khadar kita",
@@ -177,8 +175,7 @@ object WordDataHebrewImmigrantExtra {
             definition = "מֶחֱצִית שֶׁל שָׁנַת הַלִּימּוּדִים בְּמוֹסָד אָקָדֵמִי.",
             definitionNative = "Половина учебного года в академическом заведении.",
             example = "הַסֶּמֶסְטֶר הָרִאשׁוֹן מַתְחִיל בְּאוֹקְטוֹבֶּר.",
-            exampleNative = "Первый סֶמֶסְטֶר начинается в октябре.",
-         isFillInBlankSafe = false),
+            exampleNative = "Первый סֶמֶסְטֶר начинается в октябре."),
         WordEntity(
             id = 103124, setId = 1031, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "school", transliteration = "te'uda",
@@ -227,8 +224,7 @@ object WordDataHebrewImmigrantExtra {
             definition = "פֶּתֶק דָּבִיק שֶׁמָּדְבִּיקִים עַל חֲבִילוֹת עִם פְּרָטִים אוֹ לְעִיטּוּר.",
             definitionNative = "Клейкий ярлычок, наклеиваемый на посылки с данными или для украшения.",
             example = "הַמַּדְבֵּקָה עַל הַחֲבִילָה מְכִילָה אֶת שֵׁם הַמְּקַבֵּל וְאֶת הַכְּתוֹבֶת.",
-            exampleNative = "מַדְבֵּקָה на посылке содержит имя получателя и адрес.",
-         isFillInBlankSafe = false),
+            exampleNative = "מַדְבֵּקָה на посылке содержит имя получателя и адрес."),
         WordEntity(
             id = 103224, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post", transliteration = "shover",

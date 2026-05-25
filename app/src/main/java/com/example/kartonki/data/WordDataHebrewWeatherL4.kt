@@ -281,8 +281,7 @@ object WordDataHebrewWeatherL4 {
             definition = "מָלֵא רַעַם עָז וְקוֹלוֹת חֲזָקִים — עַל שָׁמַיִם, סוּפָה אוֹ עָנָן.",
             definitionNative = "Полный мощных раскатов и громовых звуков — о небе, грозе или туче.",
             example = "שָׁמַיִם רוֹעֲמִים נִפְתְּחוּ פִּתְאוֹם מֵעַל הַכִּפָּר.",
-            exampleNative = "רוֹעֵם небосвод внезапно раскрылся над посёлком.",
-        ),
+            exampleNative = "רוֹעֵם небосвод внезапно раскрылся над посёлком.", isFillInBlankSafe = false),
         WordEntity(
             id = 182024, setId = 1820, languagePair = "he-ru", rarity = "RARE",
             pos = "adjective", semanticGroup = "weather_l4_descriptive_high",

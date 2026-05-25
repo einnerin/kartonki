@@ -111,7 +111,6 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Проверка кода, который написал кто-то другой — с замечаниями и предложениями.",
             example = "קוֹד רִיוויוּ שֶׁלִּי גִּלָּה שָׁלוֹשׁ דְּלִיפוֹת זִכָּרוֹן בְּמוֹדוּל הַפְּלִיטָה.",
             exampleNative = "Мой קוֹד רִיוויוּ выявил три утечки памяти в модуле выгрузки.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174608, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -130,7 +129,6 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Действие, которое объединяет правки из двух веток в одну общую.",
             example = "אַחֲרֵי הַמֶּרְג׳ נִשְׁבַּר טֶסְט אוֹטוֹמָטִי בְּצִינוֹר הָאִינְטֶגְרַצְיָה.",
             exampleNative = "После מֶרְג׳ сломался автотест в пайплайне интеграции.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174610, setId = 1746, languagePair = "he-ru", rarity = "RARE",
@@ -169,7 +167,6 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Текущий этап задачи в системе — открыт, в работе, закрыт или отклонён.",
             example = "הַסְּטָטוּס הִשְׁתַּנָּה לְ-«בִּבְדִיקָה» אַחֲרֵי שֶׁהַטֶסְטֵר קִבֵּל אֶת הַמְּשִׂימָה.",
             exampleNative = "סְטָטוּס сменился на «на проверке» после того, как тестировщик принял задачу.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174614, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -255,7 +252,6 @@ object WordDataHebrewHightechL2 {
             definitionNative = "Отвечает за людей — зарплату, повышения, обратную связь и личный рост.",
             example = "הַמֶּנֶגֶ׳ר מָסַר לִי שֶׁאֲנִי מוּכָן לְהַעֲלָאַת דַּרְגָּה בִּתְחִלַּת הַשָּׁנָה.",
             exampleNative = "מֶנֶגֶ׳ר сообщил мне, что я готов к повышению грейда в начале года.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174623, setId = 1746, languagePair = "he-ru", rarity = "RARE",

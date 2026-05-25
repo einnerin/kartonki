@@ -52,7 +52,6 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Девять личных цифр, по которым государство опознаёт человека во всех бумагах.",
             example = "כִּתְבוּ אֶת הַמִּסְפַּר זֶהוּת בָּרֻבְּרִיקָה הָעֶלְיוֹנָה שֶׁל הַטֹּפֶס.",
             exampleNative = "Впишите מִסְפַּר זֶהוּת в верхнюю графу бланка.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180802, setId = 1808, languagePair = "he-ru", rarity = "RARE",
@@ -89,7 +88,6 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Дополнительный листок, прикреплённый к удостоверению — со сведениями о членах семьи.",
             example = "אִבַּדְתִּי אֶת הַנִּסְפַּח וְצָרִיךְ לְהַזְמִין אוֹתוֹ מֵחָדָשׁ.",
             exampleNative = "Я потерял נִסְפַּח и должен заказать новый.",
-            isFillInBlankSafe = false,
         ),
 
         // ── bureau_visas (5) ──────────────────────────────────────────────
@@ -119,7 +117,6 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Выдача такого же документа взамен истёкшего — без изменения содержимого.",
             example = "הַחִידּוּשׁ שֶׁל הַדַּרְכּוֹן עוֹלֶה כַּמָּה מֵאוֹת שְׁקָלִים.",
             exampleNative = "חִידּוּשׁ загранпаспорта стоит несколько сотен шекелей.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180809, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -129,7 +126,6 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Последний день, когда документ ещё действителен — потом нужен новый.",
             example = "בִּדְקוּ אֶת הַמּוֹעֵד תְּפוּגָה לִפְנֵי הַטִּיסָה לְחוּ\"ל.",
             exampleNative = "Проверьте מוֹעֵד תְּפוּגָה перед вылетом за границу.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180810, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -168,7 +164,6 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Условие, при котором человек вправе получить льготу, скидку или услугу от государства.",
             example = "הַזְּכָאוּת לַסַּל קְלִיטָה תַּקֵּפָה בְּשָׁנָה הָרִאשׁוֹנָה.",
             exampleNative = "זְכָאוּת на корзину абсорбции действует в первый год.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180814, setId = 1808, languagePair = "he-ru", rarity = "RARE",
@@ -216,7 +211,6 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Официальный подсчёт, который делает государство, чтобы установить, сколько человек должен заплатить.",
             example = "הַשּׁוּמָה הִגִּיעָה בַּדֹּאַר עִם פֵּרוּט שֶׁל כָּל הַמַּרְכִּיבִים.",
             exampleNative = "שׁוּמָה пришла по почте — с разбивкой по всем составляющим.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180819, setId = 1808, languagePair = "he-ru", rarity = "RARE",
@@ -226,7 +220,6 @@ object WordDataHebrewBureauL2 {
             definitionNative = "Дополнительный платёж за договоры и дорогие документы — раньше его клеили маленькими наклейками.",
             example = "בִּטְלוּ אֶת הַמַּס בּוּלִים עַל מְכִירַת דִּירוֹת בִּשְׁנַת אַלְפָּיִם וְשֵׁשׁ.",
             exampleNative = "מַס בּוּלִים на продажу квартир отменили в две тысячи шестом году.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180820, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",

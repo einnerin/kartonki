@@ -70,8 +70,7 @@ object WordDataHebrewAppearanceL5 {
             definition = "אֵזוֹר הַמָּתְנַיִם וְהָאֲגָן בִּלְשׁוֹן הַמִּקְרָא — מָקוֹם שֶׁל כֹּחַ וְשׁוֹשֶׁלֶת.",
             definitionNative = "Область поясницы и таза в библейском слоге — место силы и продолжения рода.",
             example = "בָּרֲכוּ אֶת הַזָּקֵן וְאָמְרוּ שֶׁיּוֹצְאֵי חֲלָצָיו יִרְבּוּ.",
-            exampleNative = "Старца благословили — да умножатся вышедшие из его חֲלָצַיִם.",
-        ),
+            exampleNative = "Старца благословили — да умножатся вышедшие из его חֲלָצַיִם.", isFillInBlankSafe = false),
         WordEntity(
             id = 182603, setId = 1826, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "appearance_l5_biblical",
@@ -112,8 +111,7 @@ object WordDataHebrewAppearanceL5 {
             definition = "מִלָּה סִפְרוּתִית גְּבוֹהָה לָאַף — נְפוֹצָה בִּשְׁפַת שִׁירָה וּפְרוֹזָה יָשָׁן.",
             definitionNative = "Литературное возвышенное слово для носа — встречается в стихах и старой прозе.",
             example = "הַמְּשׁוֹרֵר תֵּאֵר אֶת חוֹטְמָהּ הָעֲדִין שֶׁל הַגְּבִירָה הַזְּקֵנָה.",
-            exampleNative = "Поэт описал тонкий חוֹטֶם пожилой госпожи.",
-        ),
+            exampleNative = "Поэт описал тонкий חוֹטֶם пожилой госпожи.", isFillInBlankSafe = false),
         WordEntity(
             id = 182607, setId = 1826, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "appearance_l5_poetic_face",
@@ -122,8 +120,7 @@ object WordDataHebrewAppearanceL5 {
             definition = "הַחֵלֶק הַצְּדָדִי שֶׁל הַפָּנִים בְּלָשׁוֹן שִׁירִית — בְּעִקָּר עַל אִשָּׁה צְעִירָה.",
             definitionNative = "Боковая часть лица в поэтическом слоге — обычно о юной деве.",
             example = "דִּמְעָה שְׁקוּפָה זָלְגָה עַל לֶחְיָהּ הַחִוֶּרֶת בִּדְמָמָה.",
-            exampleNative = "Прозрачная слеза скатилась по бледной לֶחִי её в полной тишине.",
-        ),
+            exampleNative = "Прозрачная слеза скатилась по бледной לֶחִי её в полной тишине.", isFillInBlankSafe = false),
         WordEntity(
             id = 182608, setId = 1826, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "appearance_l5_poetic_face",
@@ -194,8 +191,7 @@ object WordDataHebrewAppearanceL5 {
             definition = "פַּסֵּי הַיָּד הַפְּנִימִיִּים בְּלָשׁוֹן גְּבוֹהָה — בָּהֶם נוֹשְׂאִים אוֹ פּוֹשְׁטִים בִּתְפִלָּה.",
             definitionNative = "Внутренние плоскости рук в высоком слоге — их простирают в молитве или подношении.",
             example = "הַזָּקֵן פָּשַׁט אֶת כַּפּוֹת יָדָיו לַשָּׁמַיִם בְּתַחֲנוּן חֲרִישִׁי.",
-            exampleNative = "Старец воздел כַּפּוֹת יָדַיִם к небу в тихой мольбе.",
-        ),
+            exampleNative = "Старец воздел כַּפּוֹת יָדַיִם к небу в тихой мольбе.", isFillInBlankSafe = false),
         WordEntity(
             id = 182615, setId = 1826, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "appearance_l5_archaic_body",
@@ -298,8 +294,7 @@ object WordDataHebrewAppearanceL5 {
             definition = "כָּפוּף קָדִימָה מֵרֹב צַעַר אוֹ מִשָּׁנִים — לְשׁוֹן סִפְרוּתִית גְּבוֹהָה.",
             definitionNative = "Согнутый вперёд от тяжести скорби или прожитых лет — высокий литературный слог.",
             example = "הָאַלְמָנָה הַזְּקֵנָה הָלְכָה שָׁחוּחָה לְבֵית הַקְּבָרוֹת בַּגֶּשֶׁם.",
-            exampleNative = "Старая вдова шла שָׁחוּחָה к кладбищу под дождём.",
-        ),
+            exampleNative = "Старая вдова шла שָׁחוּחָה к кладбищу под дождём.", isFillInBlankSafe = false),
         WordEntity(
             id = 182625, setId = 1826, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "adjective", semanticGroup = "appearance_l5_descriptive_high",

@@ -47,7 +47,6 @@ object WordDataHebrewWeatherL1 {
             definitionNative = "Голубой свод над нами, где видны солнце, луна и звёзды.",
             example = "הַשָּׁמַיִם הָיוּ כְּחוּלִים לְגַמְרֵי הַבֹּקֶר.",
             exampleNative = "Сегодня утром שָׁמַיִם были совершенно безоблачно-голубые.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181702, setId = 1817, languagePair = "he-ru", rarity = "COMMON",
@@ -58,7 +57,6 @@ object WordDataHebrewWeatherL1 {
             definitionNative = "Большое горячее светило, что освещает Землю днём.",
             example = "הַשֶּׁמֶשׁ זָרְחָה בַּחֲלוֹן הַחֶדֶר שֶׁלִּי.",
             exampleNative = "שֶׁמֶשׁ заглянуло в окно моей комнаты с самого утра.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181703, setId = 1817, languagePair = "he-ru", rarity = "COMMON",
@@ -79,7 +77,6 @@ object WordDataHebrewWeatherL1 {
             definitionNative = "Округлое светило ночного неба, меняющее форму каждый месяц.",
             example = "הַיָּרֵחַ הָיָה מָלֵא וְעָגֹל מֵעַל הָהָר.",
             exampleNative = "יָרֵחַ был полным и круглым прямо над горой.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181705, setId = 1817, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -132,7 +129,6 @@ object WordDataHebrewWeatherL1 {
             definitionNative = "Очень слабый дождик, при котором капли падают редко и медленно.",
             example = "הַטִּפְטוּף נִמְשָׁךְ כָּל הַבֹּקֶר בְּלִי לְהִתְחַזֵּק.",
             exampleNative = "טִפְטוּף моросил всё утро, так и не превращаясь в ливень.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181710, setId = 1817, languagePair = "he-ru", rarity = "COMMON",
@@ -165,7 +161,6 @@ object WordDataHebrewWeatherL1 {
             definitionNative = "Ощущение низкой температуры — от него хочется поёжиться и закутаться.",
             example = "הַקֹּר בַּלַּיְלָה לֹא נָתַן לִי לְהֵרָדֵם בְּלִי שְׂמִיכָה.",
             exampleNative = "Ночной קֹר не давал мне уснуть без плотного одеяла.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181713, setId = 1817, languagePair = "he-ru", rarity = "COMMON",
@@ -238,7 +233,6 @@ object WordDataHebrewWeatherL1 {
             definitionNative = "Когда нет воды и нет влаги — например, после долгой засухи.",
             example = "הָאֲדָמָה הָיְתָה יָבֵשׁ אַחֲרֵי שְׁבוּעוֹת בְּלִי גֶּשֶׁם.",
             exampleNative = "Земля стала יָבֵשׁ после многих недель без единого дождя.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181720, setId = 1817, languagePair = "he-ru", rarity = "COMMON",
@@ -281,7 +275,6 @@ object WordDataHebrewWeatherL1 {
             definitionNative = "Выделять капельки воды на коже от жары или от физической нагрузки.",
             example = "הִתְחַלְתִּי לְהַזִּיעַ מִיָּד אַחֲרֵי שֶׁיָּצָאתִי לַשֶּׁמֶשׁ.",
             exampleNative = "Я начал לְהַזִּיעַ сразу же, как вышел на солнцепёк.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 181724, setId = 1817, languagePair = "he-ru", rarity = "COMMON",

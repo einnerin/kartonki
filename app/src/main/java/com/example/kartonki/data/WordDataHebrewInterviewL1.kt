@@ -85,7 +85,6 @@ object WordDataHebrewInterviewL1 {
             definitionNative = "Человек или фирма, что платят зарплату взамен на работу.",
             example = "הַמַּעֲסִיק שֶׁלִּי הַקּוֹדֵם הָיָה הוֹגֵן וְשִׁלֵּם בַּזְּמַן.",
             exampleNative = "Мой прежний מַעֲסִיק был справедливым и платил вовремя.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175204, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
@@ -104,7 +103,6 @@ object WordDataHebrewInterviewL1 {
             definitionNative = "Сумма денег, что человек получает раз в месяц за свою работу.",
             example = "הַמַּשְׂכֹּרֶת מִתְקַבֶּלֶת בַּחֶשְׁבּוֹן בָּעֲשִׂירִי לַחֹדֶשׁ.",
             exampleNative = "מַשְׂכֹּרֶת приходит на счёт десятого числа месяца.",
-            isFillInBlankSafe = false,
         ),
 
         // ── interview_meeting (5) — про встречу: время, место, помещение ──
@@ -125,7 +123,6 @@ object WordDataHebrewInterviewL1 {
             definitionNative = "Промежуток времени в шестьдесят минут — им меряют день.",
             example = "הַמְּגַיֵּיס בִּקֵּשׁ לְהִפָּגֵשׁ בַּשָּׁעָה תֵּשַׁע בַּבֹּקֶר.",
             exampleNative = "Рекрутер попросил встретиться в שָׁעָה девять утра.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175208, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -135,7 +132,6 @@ object WordDataHebrewInterviewL1 {
             definitionNative = "Конкретный день в месяце, когда происходит событие — например, пятого мая.",
             example = "הַתַּאֲרִיךְ שֶׁל הָרֵאָיוֹן הַשֵּׁנִי נִקְבַּע לִשְׁלִישִׁי הַבָּא.",
             exampleNative = "תַּאֲרִיךְ второго собеседования назначен на следующий вторник.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175209, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
@@ -174,7 +170,6 @@ object WordDataHebrewInterviewL1 {
             definitionNative = "Помещение, где сотрудники сидят за компьютером каждый день.",
             example = "הַמִּשְׂרָד הֶחָדָשׁ נִמְצָא בַּקּוֹמָה הַחֲמִישִּׁית.",
             exampleNative = "Новый מִשְׂרָד находится на пятом этаже.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175213, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
@@ -184,7 +179,6 @@ object WordDataHebrewInterviewL1 {
             definitionNative = "Тот, кто отвечает за группу людей и решает, что делать.",
             example = "הַמַּנְהֵל הַיָּשִׁיר שֶׁלִּי הָיָה נוֹכֵחַ בָּרֵאָיוֹן.",
             exampleNative = "Мой прямой מַנְהֵל присутствовал на собеседовании.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175214, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
@@ -194,7 +188,6 @@ object WordDataHebrewInterviewL1 {
             definitionNative = "Маленькая группа людей, что работают вместе над одной целью.",
             example = "הַצֶּוֶת שֶׁלָּנוּ סִיֵּם אֶת הַפְּרוֹיֶקְט לִפְנֵי הַזְּמַן.",
             exampleNative = "Наш צֶוֶת закончил проект раньше срока.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175215, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -215,7 +208,6 @@ object WordDataHebrewInterviewL1 {
             definitionNative = "Слово, которым зовут человека — то, что говорят первым на собеседовании.",
             example = "הַמְּרַאֲיֵין רָשַׁם אֶת הַשֵּׁם שֶׁלִּי בַּמַּחְבֶּרֶת לִפְנֵי שֶׁדִּבַּרְנוּ.",
             exampleNative = "Интервьюер записал мой שֵׁם в блокнот, прежде чем мы заговорили.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175217, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
@@ -263,7 +255,6 @@ object WordDataHebrewInterviewL1 {
             definitionNative = "Маленькое устройство в кармане — говорят или шлют сообщение далёкому собеседнику.",
             example = "הַטֶּלֶפוֹן צִלְצֵל בָּאֶמְצַע הַמִּקְלַחַת — הַמְּגַיֵּיס מִתְקַשֵּׁר.",
             exampleNative = "טֶלֶפוֹן зазвонил посреди душа — это рекрутер.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175222, setId = 1752, languagePair = "he-ru", rarity = "COMMON",

@@ -71,7 +71,6 @@ object WordDataHebrewEntertainmentL4 {
             definitionNative = "Старший человек, что добывает бюджет и ведёт весь проект до конца.",
             example = "הַמְּפַקֵּחַ עֶלְיוֹן הִגִּיעַ לַסְּטוּדְיוֹ לְפַקֵּחַ עַל הַעֲרִיכָה הַסּוֹפִית.",
             exampleNative = "מְפַקֵּחַ עֶלְיוֹן прилетел в студию контролировать финальный монтаж.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179403, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -110,7 +109,6 @@ object WordDataHebrewEntertainmentL4 {
             definitionNative = "Многодневное событие, где показывают и оценивают новые фильмы.",
             example = "סִרְטָהּ הָרִאשׁוֹן זָכָה בַּגָּבִיעַ בְּפֶסְטִיבָל קוֹלְנוֹעַ אֵירוֹפִּי קָטָן.",
             exampleNative = "Её дебют получил кубок на маленьком европейском פֶסְטִיבָל קוֹלְנוֹעַ.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179407, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
@@ -194,7 +192,6 @@ object WordDataHebrewEntertainmentL4 {
             definitionNative = "Пакетный билет, что открывает все запланированные дополнения за игровой год.",
             example = "מַעֲרִיצִים נֶאֱמָנִים חָטְפוּ אֶת הַמִּנּוּי עוֹנָתִי בַּיּוֹם הָרִאשׁוֹן בְּלִי לְהַסֵּס.",
             exampleNative = "Преданные фанаты схватили מִנּוּי עוֹנָתִי в первый же день не раздумывая.",
-            isFillInBlankSafe = false,
         ),
 
         // ── entertainment_streaming (5) — стриминг-платформы ──
@@ -215,7 +212,6 @@ object WordDataHebrewEntertainmentL4 {
             definitionNative = "Шоу, что стриминговый сервис снял сам, а не купил у другой студии.",
             example = "הַסִּדְרָה מְקוֹרִית שֶׁלָּהּ הוֹאֲרָכָה לִשְׁתֵּי עוֹנוֹת אַחֲרֵי סוֹף שָׁבוּעַ אֶחָד.",
             exampleNative = "Её סִדְרָה מְקוֹרִית продлили на два сезона уже после первых выходных.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179418, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
@@ -263,7 +259,6 @@ object WordDataHebrewEntertainmentL4 {
             definitionNative = "Член группы, что оформляет разрешения и доступ к каждой съёмочной площадке.",
             example = "הַמְּנַהֵל לוֹקֵיישֵׁן שֶׁלָּהֶם הִשִּׂיג סְגִירַת גֶּשֶׁר עָמוּס לְלַיְלָה אֶחָד.",
             exampleNative = "Их מְנַהֵל לוֹקֵיישֵׁן добился закрытия оживлённого моста на одну ночь.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179423, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
@@ -282,7 +277,6 @@ object WordDataHebrewEntertainmentL4 {
             definitionNative = "Специалист, что вручную воссоздаёт бытовые шумы для звуковой дорожки.",
             example = "אָמָּן רַעַשׁ רָמַס חַסָּה לְחַקּוֹת צְעִידָה בְּמַגָּפַיִם עַל שֶׁלֶג רָטֹב.",
             exampleNative = "אָמָּן רַעַשׁ давил салат, имитируя шаги в сапогах по мокрому снегу.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179425, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",

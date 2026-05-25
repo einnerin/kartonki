@@ -47,7 +47,6 @@ object WordDataHebrewAppearanceL1 {
             definitionNative = "Верхняя часть тела человека — там находятся мозг и лицо.",
             example = "כּוֹאֵב לִי הָרֹאשׁ אַחֲרֵי יוֹם אָרֹךְ בַּמִּשְׂרָד.",
             exampleNative = "У меня болит רֹאשׁ после долгого дня в офисе.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 182202, setId = 1822, languagePair = "he-ru", rarity = "COMMON",
@@ -58,7 +57,6 @@ object WordDataHebrewAppearanceL1 {
             definitionNative = "Часть тела с пальцами — ею держат предметы и пишут.",
             example = "הוּא נָתַן לִי אֶת הַסֵּפֶר עִם יָד אַחַת.",
             exampleNative = "Он передал мне книгу одной יָד.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(182201L, 182203L, 182204L, 182205L, 182208L, 182209L, 182211L, 182212L, 182214L)),
         WordEntity(
             id = 182203, setId = 1822, languagePair = "he-ru", rarity = "COMMON",
@@ -69,7 +67,6 @@ object WordDataHebrewAppearanceL1 {
             definitionNative = "Часть тела, на которой стоят и с помощью которой ходят.",
             example = "אַחֲרֵי הָרִיצָה כּוֹאֶבֶת לִי רֶגֶל אַחַת.",
             exampleNative = "После пробежки у меня болит одна רֶגֶל.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(182201L, 182202L, 182204L, 182205L, 182208L, 182209L, 182211L, 182212L, 182214L)),
         WordEntity(
             id = 182204, setId = 1822, languagePair = "he-ru", rarity = "COMMON",
@@ -90,7 +87,6 @@ object WordDataHebrewAppearanceL1 {
             definitionNative = "Передняя часть тела между грудью и тазом — там переваривается еда.",
             example = "אָכַלְתִּי יוֹתֵר מִדַּי וְעַכְשָׁו כּוֹאֶבֶת לִי הַבֶּטֶן.",
             exampleNative = "Я съел слишком много, и теперь у меня болит בֶּטֶן.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(182201L, 182202L, 182203L, 182204L, 182208L, 182209L, 182211L, 182212L, 182214L)),
 
         // ─── body_face_parts (5) ──────────────────────────────────────────
@@ -279,7 +275,6 @@ object WordDataHebrewAppearanceL1 {
             definitionNative = "Движение губ вверх — знак радости или удовольствия.",
             example = "הַיֶּלֶד הִסְתַּכֵּל עָלַי עִם חִיּוּךְ גָּדוֹל.",
             exampleNative = "Мальчик посмотрел на меня с большим חִיּוּךְ.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 182224, setId = 1822, languagePair = "he-ru", rarity = "UNCOMMON",

@@ -78,7 +78,6 @@ object WordDataHebrewCyberL5 {
             definitionNative = "Старший управленец, отвечающий за стратегию и бюджет цифровой защиты в организации.",
             example = "סִי-אַייסוֹ הִצִּיג לַדִּירֶקְטוֹרְיוֹן תָּכְנִית רַב-שְׁנָתִית לְצִמְצוּם סִיכּוּנִים.",
             exampleNative = "סִי-אַייסוֹ представил совету директоров многолетний план снижения рисков.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178202, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -115,7 +114,6 @@ object WordDataHebrewCyberL5 {
             definitionNative = "Связной — переводит между нуждами бизнеса и требованиями защиты внутри одного дивизиона.",
             example = "בִּי-אַייסוֹ שֶׁל דִּיוִוִיזְיַת הַתַּשְׁלוּמִים יוֹשֵׁב כָּל יוֹם עִם הַסְּמַנְכַּ״ל.",
             exampleNative = "בִּי-אַייסוֹ платёжного дивизиона ежедневно встречается с VP.",
-            isFillInBlankSafe = false,
         ),
 
         // ── cyber_threat_intelligence (5) — разведка угроз ──
@@ -286,7 +284,6 @@ object WordDataHebrewCyberL5 {
             definitionNative = "Максимум данных, которые позволено потерять при сбое — измеряют в минутах или часах.",
             example = "אַר-פִּי-אוֹ שֶׁל חָמֵשׁ דַּקּוֹת חִיֵּיב גִּבּוּי רְצוּף שֶׁל הַמָּסַד.",
             exampleNative = "אַר-פִּי-אוֹ в пять минут потребовал непрерывного бэкапа базы.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178224, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -296,7 +293,6 @@ object WordDataHebrewCyberL5 {
             definitionNative = "Предельное время простоя системы — пока бизнес не пострадает по-настоящему.",
             example = "אַר-טִי-אוֹ שֶׁל אַרְבַּע שָׁעוֹת לְמַעֲרֶכֶת הַתַּשְׁלוּמִים הָיָה תָּקִיף מִדַּי.",
             exampleNative = "אַר-טִי-אוֹ в четыре часа для платёжной системы оказался слишком жёстким.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178225, setId = 1782, languagePair = "he-ru", rarity = "EPIC",

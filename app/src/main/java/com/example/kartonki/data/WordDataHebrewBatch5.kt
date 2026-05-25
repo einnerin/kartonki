@@ -40,8 +40,7 @@ object WordDataHebrewBatch5 {
             definition = "אָדָם הַאַחְרָאִי לְבִטְחוֹן הַמִּתְרַחֲצִים בַּחוֹף.",
             definitionNative = "Человек, ответственный за безопасность купающихся на пляже.",
             example = "הַמַּצִּיל קָפַץ לַיָּם לְהַצִּיל אֶת הַיֶּלֶד.",
-            exampleNative = "מַצִּיל прыгнул в море, чтобы спасти ребёнка.",
-         isFillInBlankSafe = false),
+            exampleNative = "מַצִּיל прыгнул в море, чтобы спасти ребёнка."),
         WordEntity(
             id = 103803, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "beach_basics", transliteration = "sira",
@@ -76,8 +75,7 @@ object WordDataHebrewBatch5 {
             definition = "אֵזוֹר מוּגָן מֵאוֹר הַשֶּׁמֶשׁ עַל יְדֵי עֵץ אוֹ שְׁמִשִׁיָּה.",
             definitionNative = "Место, защищённое от солнечных лучей деревом или зонтиком.",
             example = "יָשַׁבְנוּ בַּצֵּל כְּדֵי לְהִתְקָרֵר מֵהַחוֹם.",
-            exampleNative = "Мы сели в צֵל, чтобы спастись от жары.",
-         isFillInBlankSafe = false),
+            exampleNative = "Мы сели в צֵל, чтобы спастись от жары."),
         WordEntity(
             id = 103807, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "beach_basics", transliteration = "krem shemesh",
@@ -94,8 +92,7 @@ object WordDataHebrewBatch5 {
             definition = "כַּדּוּר גָּדוֹל מְנֻפָּח לְמִשְׂחָקִים בַּחוֹף אוֹ בַּבְּרֵכָה.",
             definitionNative = "Большой яркий мяч с воздухом внутри — для игр на пляже или в бассейне.",
             example = "הַיְּלָדִים שִׂחֲקוּ בְּכַדּוּר יָם כׇּל הַיּוֹם.",
-            exampleNative = "Дети играли с כַּדּוּר יָם весь день.",
-         isFillInBlankSafe = false),
+            exampleNative = "Дети играли с כַּדּוּר יָם весь день."),
         WordEntity(
             id = 103809, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "beach_basics", transliteration = "avanim",
@@ -184,8 +181,7 @@ object WordDataHebrewBatch5 {
             definition = "בַּד גָּדוֹל הַקּוֹלֵט רוּחַ לְהַנָּעַת סִירָה.",
             definitionNative = "Большое полотно, улавливающее ветер для движения лодки.",
             example = "הָרוּחַ הַחֲזָקָה מִלְּאָה אֶת הַמִּפְרָשׂ וְהַסִּירָה הֶאִיצָה.",
-            exampleNative = "Сильный ветер наполнил מִפְרָשׂ, и лодка ускорилась.",
-         isFillInBlankSafe = false),
+            exampleNative = "Сильный ветер наполнил מִפְרָשׂ, и лодка ускорилась."),
         WordEntity(
             id = 103819, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beach_equipment", transliteration = "mashvot",
@@ -202,8 +198,7 @@ object WordDataHebrewBatch5 {
             definition = "מִבְנֶה עֵץ אוֹ בֶּטוֹן הַמִּתְפַּשֵּׁט לְתוֹךְ הַיָּם לְעֲגִינַת סִירוֹת.",
             definitionNative = "Деревянная или бетонная конструкция, выдающаяся в море для швартовки лодок.",
             example = "עָמַדְנוּ עַל הַמֶּזַח וְהִבַּטְנוּ לְעֵבֶר הָאוֹפֶק.",
-            exampleNative = "Мы стояли на מֶזַח и смотрели в сторону горизонта.",
-         isFillInBlankSafe = false),
+            exampleNative = "Мы стояли на מֶזַח и смотрели в сторону горизонта."),
         WordEntity(
             id = 103821, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beach_nature", transliteration = "tmanun",
@@ -276,8 +271,7 @@ object WordDataHebrewBatch5 {
             definition = "מְסַמֵּךְ נִישּׂוּאִין יְהוּדִי הַמְּגַדֵּר אֶת חוֹבוֹת הַבַּעַל כְּלַפֵּי אִשְׁתּוֹ.",
             definitionNative = "Еврейский брачный договор, определяющий обязанности мужа перед женой.",
             example = "חָתְמוּ עַל הַקְּטוּבָּה לִפְנֵי הַחוּפָּה.",
-            exampleNative = "Подписали קְטוּבָּה перед хупой.",
-         isFillInBlankSafe = false),
+            exampleNative = "Подписали קְטוּבָּה перед хупой."),
         WordEntity(
             id = 103904, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "wedding_basics", transliteration = "zugiyut",
@@ -294,8 +288,7 @@ object WordDataHebrewBatch5 {
             definition = "הַטֶּקֶס הַמְּשַׁפְּטִי וְהַדָּתִי שֶׁל הִתְאַחֲדוּת הַזּוּג.",
             definitionNative = "Юридическая и религиозная церемония объединения пары.",
             example = "הַנִּשּׂוּאִין נֶחְגְּגוּ בְּנוֹכְחוּת שְׁתֵּי הַמִּשְׁפָּחוֹת.",
-            exampleNative = "נִשּׂוּאִין отмечали в присутствии обеих семей.",
-         isFillInBlankSafe = false),
+            exampleNative = "נִשּׂוּאִין отмечали в присутствии обеих семей."),
         WordEntity(
             id = 103906, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "edim",
@@ -321,8 +314,7 @@ object WordDataHebrewBatch5 {
             definition = "יְלָדִים שֶׁל הַבָּנִים אוֹ הַבָּנוֹת — הַדּוֹר הַשְּׁלִישִׁי בַּמִּשְׁפָּחָה.",
             definitionNative = "Дети детей — третье поколение в семье.",
             example = "הַסַּבָּא וְהַסַּבְתָּא שָׂמְחוּ לְרָאוֹת אֶת הַנְּכָדִים בַּחֲתוּנָּה.",
-            exampleNative = "Дедушка и бабушка были рады видеть נְכָדִים на свадьбе.",
-         isFillInBlankSafe = false),
+            exampleNative = "Дедушка и бабушка были рады видеть נְכָדִים на свадьбе."),
         WordEntity(
             id = 103909, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "khupa",
@@ -348,8 +340,7 @@ object WordDataHebrewBatch5 {
             definition = "אֲרוּחָה חֲגִיגִית גְּדוֹלָה לְכָבוֹד אֵירוּעַ מְיֻחָד.",
             definitionNative = "Большая праздничная трапеза в честь особого события.",
             example = "הַסְּעוּדָה שֶׁל הַחֲתוּנָּה כָּלְלָה עֲשָׂרָה מָנוֹת שׁוֹנוֹת.",
-            exampleNative = "סְעוּדָה на свадьбе включала десять различных блюд.",
-         isFillInBlankSafe = false),
+            exampleNative = "סְעוּדָה на свадьбе включала десять различных блюд."),
         WordEntity(
             id = 103912, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "wedding_celebration", transliteration = "ne'um",

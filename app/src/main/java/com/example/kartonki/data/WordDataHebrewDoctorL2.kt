@@ -129,7 +129,6 @@ object WordDataHebrewDoctorL2 {
             definitionNative = "Расстояние от ног до макушки — измеряют в сантиметрах в клинике.",
             example = "הָאָחוֹת רָשְׁמָה גֹּבַהּ מֵאָה וְשִׁבְעִים בַּתִּיק הָרְפוּאִי.",
             exampleNative = "Медсестра записала גֹּבַהּ сто семьдесят в медкарту.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180310, setId = 1803, languagePair = "he-ru", rarity = "UNCOMMON",

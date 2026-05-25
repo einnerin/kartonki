@@ -71,7 +71,6 @@ object WordDataHebrewGreetingsL4 {
             definitionNative = "Формальные слова приветствия, которыми обмениваются лидеры государств.",
             example = "הַנָּשִׂיא פָּתַח אֶת הָעֶרֶב בְּבִרְכוֹת מְדִינִיּוֹת.",
             exampleNative = "Президент открыл вечер словами בִּרְכוֹת מְדִינִיּוֹת.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170904, setId = 1709, languagePair = "he-ru", rarity = "EPIC",
@@ -110,7 +109,6 @@ object WordDataHebrewGreetingsL4 {
             definitionNative = "Формальные слова приветствия гостям в начале академического или общественного события.",
             example = "הַנָּשִׂיא פָּתַח בְּבִרְכַּת הַבָּאִים חֲמִימָה.",
             exampleNative = "Президент открыл тёплыми בִּרְכַּת הַבָּאִים.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170908, setId = 1709, languagePair = "he-ru", rarity = "EPIC",
@@ -129,7 +127,6 @@ object WordDataHebrewGreetingsL4 {
             definitionNative = "Формальные выражения благодарности научным руководителям и грантодателям.",
             example = "הַחוֹקֵר נָעַל אֶת הַהַרְצָאָה בְּדִבְרֵי תּוֹדָה אַקָדֶמִיִּים.",
             exampleNative = "Учёный закрыл лекцию словами דִּבְרֵי תּוֹדָה אַקָדֶמִיִּים.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170910, setId = 1709, languagePair = "he-ru", rarity = "EPIC",
@@ -177,7 +174,6 @@ object WordDataHebrewGreetingsL4 {
             definitionNative = "Принятая формальная фраза в начале служебного уведомления от учреждения.",
             example = "הִנְּנִי לְהוֹדִיעַ עַל קַבָּלָתְךָ לַתַּפְקִיד.",
             exampleNative = "הִנְּנִי לְהוֹדִיעַ о вашем назначении на должность.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170915, setId = 1709, languagePair = "he-ru", rarity = "EPIC",
@@ -207,7 +203,6 @@ object WordDataHebrewGreetingsL4 {
             definitionNative = "Стих из Псалмов для встречи почётного гостя или паломника.",
             example = "אָמְרוּ לוֹ \"בָּרוּךְ הַבָּא בְּשֵׁם יְיָ\".",
             exampleNative = "Ему сказали בָּרוּךְ הַבָּא בְּשֵׁם יְיָ при входе.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170918, setId = 1709, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -226,7 +221,6 @@ object WordDataHebrewGreetingsL4 {
             definitionNative = "Зачин жреческого благословения, звучит на торжественных церемониях.",
             example = "הַכֹּהֵן פָּתַח בְּ\"יְבָרֶכְךָ יְיָ\".",
             exampleNative = "Священник начал словами יְבָרֶכְךָ יְיָ.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170920, setId = 1709, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -247,7 +241,6 @@ object WordDataHebrewGreetingsL4 {
             definitionNative = "Формальная фраза при упоминании усопшего на церемонии или в извещении.",
             example = "הַמַּנְחֶה אָמַר \"יְהִי זִכְרוֹ בָּרוּךְ\" בָּאַזְכָּרָה.",
             exampleNative = "Ведущий произнёс יְהִי זִכְרוֹ בָּרוּךְ на поминальном собрании.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170922, setId = 1709, languagePair = "he-ru", rarity = "LEGENDARY",

@@ -171,7 +171,6 @@ object WordDataHebrewDriverL4 {
             definitionNative = "Дорогой товар, который сопровождают охрана и усиленная безопасность.",
             example = "מַשָּׂא יְקַר עֵרֶךְ נוֹסַע תָּמִיד עִם שְׁנֵי נְהָגִים.",
             exampleNative = "מַשָּׂא יְקַר עֵרֶךְ всегда едет с двумя водителями.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 171515, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -266,7 +265,6 @@ object WordDataHebrewDriverL4 {
             definitionNative = "Когда два полиса покрывают один и тот же риск на одну машину.",
             example = "כְּפֶל בִּטּוּחַ מַסְבִּיךְ אֶת הַתְּבִיעָה אַחֲרֵי הַתְּאוּנָה.",
             exampleNative = "כְּפֶל בִּטּוּחַ усложняет выплату после ДТП.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 171525, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",

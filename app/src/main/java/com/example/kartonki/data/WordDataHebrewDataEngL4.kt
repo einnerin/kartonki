@@ -123,7 +123,6 @@ object WordDataHebrewDataEngL4 {
             definitionNative = "Тип хранилища — заточен под тяжёлые запросы по миллионам строк, для отчётов и аналитики.",
             example = "מַעֲבָר לְ-אוֹלָאפּ הוֹרִיד אֶת זְמַן הַדּוּחוֹת מֵחֲצִי שָׁעָה לְדַקָּה.",
             exampleNative = "Переход на אוֹלָאפּ опустил время отчётов с получаса до минуты.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176409, setId = 1764, languagePair = "he-ru", rarity = "EPIC",

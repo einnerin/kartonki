@@ -60,8 +60,7 @@ object WordDataHebrewWeatherL3 {
             definition = "מַרְאֶה אֶת תְּמוּנַת הָאֲוִיר עַל שֶׁטַח רָחָב בְּרֶגַע אֶחָד.",
             definitionNative = "Показывающий целиком картину воздуха над большой территорией в один миг.",
             example = "הַמַּפָּה הַסִּינוֹפְּטִית הֶרְאֲתָה שֶׁפֶל עָמֹק מֵעַל הַיָּם.",
-            exampleNative = "סִינוֹפְּטִי карта показывала глубокий минимум над морем.",
-        ),
+            exampleNative = "סִינוֹפְּטִי карта показывала глубокий минимум над морем.", isFillInBlankSafe = false),
         WordEntity(
             id = 181903, setId = 1819, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "weather_l3_meteorology",

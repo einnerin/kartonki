@@ -76,7 +76,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Сотрудник, который строит цифровые продукты от начала до конца.",
             example = "מְפַתֵּחַ צָעִיר הִצְטָרֵף לַצֶּוֶות שֶׁלִּי בְּחֹדֶשׁ שֶׁעָבַר.",
             exampleNative = "Молодой מְפַתֵּחַ присоединился к моей команде в прошлом месяце.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174503, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -104,7 +103,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Человек, который придумывает, как выглядит экран и удобно ли им пользоваться.",
             example = "הַמְּעַצֵּב שֶׁלָּנוּ מַחְלִיף צֶבַע שֶׁל כַּפְתּוֹר חָשׁוּב.",
             exampleNative = "Наш מְעַצֵּב меняет цвет важной кнопки.",
-            isFillInBlankSafe = false,
         ),
 
         // ── hightech_products (5) — продукт и его части ──
@@ -134,7 +132,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Страница в сети с постоянным адресом — её открывают в браузере.",
             example = "הַסַּיְט שֶׁל הַחֶבְרָה לֹא נִטְעַן הַבֹּקֶר בִּגְלַל תַּקָּלָה.",
             exampleNative = "Корпоративный סַיְט не загружался с утра из-за сбоя.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174509, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -164,7 +161,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Электрическая машина, что обрабатывает данные и запускает программы.",
             example = "הַמַּחְשֵׁב בָּעֲבוֹדָה מַתְחִיל לְהִיוֹת אִטִּי בַּצָּהֳרַיִם.",
             exampleNative = "Рабочий מַחְשֵׁב начинает тормозить ближе к обеду.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174512, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -174,7 +170,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Переносной компьютер с батареей — берут на встречу или домой.",
             example = "לָקַחְתִּי לַפְטוֹפּ לַמִּסְפָּרָה כְּדֵי לַעֲנוֹת לַמַּנְהֵל.",
             exampleNative = "Я взял לַפְטוֹפּ в парикмахерскую, чтобы ответить руководителю.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174513, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
@@ -184,7 +179,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Большая стеклянная панель, что показывает картинку с компьютера.",
             example = "חִבַּרְתִּי מָסָךְ נוֹסָף כְּדֵי לִרְאוֹת שְׁנֵי קְבָצִים בְּיַחַד.",
             exampleNative = "Я подключил второй מָסָךְ, чтобы видеть два файла рядом.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174514, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
@@ -194,7 +188,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Доска с кнопками букв и цифр — нужна, чтобы печатать в компьютер.",
             example = "שָׁפַכְתִּי קָפֶה עַל הַמַּקְלֶדֶת הַחֲדָשָׁה בְּטָעוּת.",
             exampleNative = "Я случайно пролил кофе на новую מַקְלֶדֶת.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174515, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
@@ -215,7 +208,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Здание или этаж, куда сотрудники приходят работать вместе днём.",
             example = "הַמִּשְׂרָד שֶׁלָּנוּ נִמְצָא בַּקּוֹמָה הַשְּׁמִינִית בְּהֶרְצְלִיָּה.",
             exampleNative = "Наш מִשְׂרָד находится на восьмом этаже в Герцлии.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174517, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -243,7 +235,6 @@ object WordDataHebrewHightechL1 {
             definitionNative = "Уголок на работе с кофемашиной и снеками — берут бесплатно.",
             example = "כָּל בֹּקֶר אֲנִי פּוֹגֵשׁ אֶת הַצֶּוֶות בַּמִּטְבָּחוֹן.",
             exampleNative = "Каждое утро я встречаюсь с командой в מִטְבָּחוֹן.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174520, setId = 1745, languagePair = "he-ru", rarity = "COMMON",

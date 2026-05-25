@@ -82,8 +82,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַפּוֹעֵל יְרוּשָׁלַיִם נִצְּחָה אֶת מַכַּבִּי בַּדֶּרְבִּי הַחָשׁוּב.",
             exampleNative = "הַפּוֹעֵל יְרוּשָׁלַיִם обыграл Маккаби в важном дерби.",
             transliteration = "hа-поэль йерушалаим",
-            pos = "phrase", semanticGroup = "sport_basketball_clubs",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_clubs"),
 
         WordEntity(id = 191502, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "לִיגַת הָעַל בְּכַדּוּרְסַל",
@@ -93,8 +92,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַקְּבוּצָה עָלְתָה לְלִיגַת הָעַל בְּכַדּוּרְסַל לְאַחַר עוֹנָה מַרְשִׁימָה.",
             exampleNative = "Клуб поднялся в לִיגַת הָעַל בְּכַדּוּרְסַל после впечатляющего сезона.",
             transliteration = "лигат hа-аль бэ-кадурсаль",
-            pos = "phrase", semanticGroup = "sport_basketball_clubs",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_clubs"),
 
         WordEntity(id = 191503, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "יוּרוֹלִיגָה",
@@ -104,8 +102,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַפְּרוֹיֶקְט בַּיוּרוֹלִיגָה נִכְשַׁל אַחֲרֵי הֶפְסֵד בַּשְּׁמִינִית.",
             exampleNative = "Поход в יוּרוֹלִיגָה закончился поражением в одной восьмой.",
             transliteration = "юролига",
-            pos = "noun", semanticGroup = "sport_basketball_clubs",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_clubs"),
 
         WordEntity(id = 191504, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "NBA",
@@ -115,8 +112,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַשַּׂחְקָן הַיִּשְׂרְאֵלִי חֲתַם חוֹזֶה בַּNBA בְּגִיל עֶשְׂרִים וּשְׁתַּיִם.",
             exampleNative = "Израильский игрок подписал контракт в NBA в двадцать два года.",
             transliteration = "ни-би-эй",
-            pos = "noun", semanticGroup = "sport_basketball_clubs",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_clubs"),
 
         WordEntity(id = 191505, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "פַיְנָל פוֹר",
@@ -126,8 +122,7 @@ object WordDataHebrewSportsBasketball {
             example = "מַכַּבִּי הִגִּיעָה לַפַיְנָל פוֹר אַחֲרֵי שֶׁנִּצְּחָה בַּחֲצִי גְּמָר.",
             exampleNative = "Маккаби вышел в פַיְנָל פוֹר после победы в плей-офф.",
             transliteration = "фэйнал фор",
-            pos = "phrase", semanticGroup = "sport_basketball_clubs",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_clubs"),
 
         // ── Group: sport_basketball_positions (5 words) ───────────────────────
 
@@ -139,8 +134,7 @@ object WordDataHebrewSportsBasketball {
             example = "שַׂחְקָן מַסְמִיךְ הַצָּעִיר חִלֵּק שְׁתֵּים־עֶשְׂרֵה אַסִיסְטִים בָּעֶרֶב.",
             exampleNative = "Молодой שַׂחְקָן מַסְמִיךְ отдал двенадцать передач за вечер.",
             transliteration = "сахкан масмих",
-            pos = "phrase", semanticGroup = "sport_basketball_positions",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_positions"),
 
         WordEntity(id = 191507, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "שׁוֹמֵר זוֹרֵק",
@@ -150,8 +144,7 @@ object WordDataHebrewSportsBasketball {
             example = "שׁוֹמֵר זוֹרֵק הָאוֹרֵחַ קָלַע שֶׁבַע זְרִיקוֹת שָׁלוֹשׁ בַּמִּשְׂחָק.",
             exampleNative = "Гостевой שׁוֹמֵר זוֹרֵק забил семь трёхочковых за матч.",
             transliteration = "шомэр зорэк",
-            pos = "phrase", semanticGroup = "sport_basketball_positions",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_positions"),
 
         WordEntity(id = 191508, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "כָּנָף",
@@ -161,8 +154,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַכָּנָף הַגָּבוֹהַּ אָסַף שְׁמוֹנֶה רִיבָּאוּנְדִים בַּמַּחֲצִית הָרִאשׁוֹנָה.",
             exampleNative = "Высокий כָּנָף собрал восемь подборов в первой половине.",
             transliteration = "канаф",
-            pos = "noun", semanticGroup = "sport_basketball_positions",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_positions"),
 
         WordEntity(id = 191509, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מֶרְכָּז",
@@ -172,8 +164,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַמֶּרְכָּז שֶׁל הַקְּבוּצָה גָּבוֹהַּ שְׁנֵי מֶטֶר וְעֶשֶׂר.",
             exampleNative = "מֶרְכָּז команды ростом два метра десять.",
             transliteration = "мэрказ",
-            pos = "noun", semanticGroup = "sport_basketball_positions",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_positions"),
 
         WordEntity(id = 191510, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "חֲמִישִׁיָּה פּוֹתַחַת",
@@ -196,8 +187,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַזְּרִיקָה הָאַחֲרוֹנָה שֶׁלּוֹ פָּגְעָה בַּחִישּׁוּק וְלֹא נִכְנְסָה.",
             exampleNative = "Его последняя זְרִיקָה ударилась о дужку и не попала.",
             transliteration = "зрика",
-            pos = "noun", semanticGroup = "sport_basketball_play",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_play"),
 
         WordEntity(id = 191512, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "זְרִיקַת שָׁלוֹשׁ",
@@ -207,8 +197,7 @@ object WordDataHebrewSportsBasketball {
             example = "בְּדַקָּה הָאַחֲרוֹנָה הוּא כָּבַשׁ זְרִיקַת שָׁלוֹשׁ מַכְרִיעָה.",
             exampleNative = "На последней минуте он забил решающую זְרִיקַת שָׁלוֹשׁ.",
             transliteration = "зрикат шалош",
-            pos = "phrase", semanticGroup = "sport_basketball_play",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_play"),
 
         WordEntity(id = 191513, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "זְרִיקַת עוֹנְשִׁין",
@@ -229,8 +218,7 @@ object WordDataHebrewSportsBasketball {
             example = "הוּא סָגַר אֶת הָרֵבָע בְּהַטְבָּעָה מְרַשֶּׁמֶת מֵעַל הַיָּרִיב.",
             exampleNative = "Он закрыл четверть эффектной הַטְבָּעָה над защитником.",
             transliteration = "hатбаа",
-            pos = "noun", semanticGroup = "sport_basketball_play",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_play"),
 
         WordEntity(id = 191515, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "כַּדְרוּר",
@@ -240,8 +228,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַכַּדְרוּר הַמָּהִיר שֶׁלּוֹ עָקַף שְׁנֵי שׁוֹמְרִים בַּדֶּרֶךְ לַסַּל.",
             exampleNative = "Его быстрый כַּדְרוּר прошёл двух защитников по пути к кольцу.",
             transliteration = "кадрур",
-            pos = "noun", semanticGroup = "sport_basketball_play",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_play"),
 
         // ── Group: sport_basketball_defense (5 words) ─────────────────────────
 
@@ -253,8 +240,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַחֲסִימָה שֶׁל הַמֶּרְכָּז גָּרְמָה לְקָהָל לָקוּם עַל הָרַגְלַיִם.",
             exampleNative = "חֲסִימָה центрового подняла трибуны на ноги.",
             transliteration = "хасима",
-            pos = "noun", semanticGroup = "sport_basketball_defense",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_defense"),
 
         WordEntity(id = 191517, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "חֲטָפָה",
@@ -264,8 +250,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַחֲטָפָה שֶׁל הַשַּׂחְקָן הַמַּסְמִיךְ הָפְכָה לְהַטְבָּעָה מַהִירָה.",
             exampleNative = "חֲטָפָה разыгрывающего обернулась быстрой הַטְבָּעָה.",
             transliteration = "хатафа",
-            pos = "noun", semanticGroup = "sport_basketball_defense",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_defense"),
 
         WordEntity(id = 191518, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "עֲבֵרָה אִישִׁית",
@@ -286,8 +271,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַשּׁוֹפֵט שָׁרַק עֲבֵרַת מַגָּע בְּמַאֲבָק עַל הָרִיבָּאוּנְד.",
             exampleNative = "Судья свистнул עֲבֵרַת מַגָּע при борьбе за подбор.",
             transliteration = "авэрат мага",
-            pos = "phrase", semanticGroup = "sport_basketball_defense",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_defense"),
 
         WordEntity(id = 191520, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "עֲבֵרָה טֶכְנִית",
@@ -297,8 +281,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַמְּאַמֵּן קִבֵּל עֲבֵרָה טֶכְנִית עַל הַצְּעָקוֹת מֵהַסַּפְסָל.",
             exampleNative = "Тренер получил עֲבֵרָה טֶכְנִית за крики со скамейки.",
             transliteration = "авэра тэхнит",
-            pos = "phrase", semanticGroup = "sport_basketball_defense",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_defense"),
 
         // ── Group: sport_basketball_game (5 words) ────────────────────────────
 
@@ -310,8 +293,7 @@ object WordDataHebrewSportsBasketball {
             example = "בַּרֵבַע הַשְּׁלִישִׁי הַקְּבוּצָה צִמְצְמָה אֶת הַפֶּעֵר לִשְׁתֵּי נְקֻדּוֹת.",
             exampleNative = "В третьем רֵבַע команда сократила отставание до двух очков.",
             transliteration = "рэва",
-            pos = "noun", semanticGroup = "sport_basketball_game",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_game"),
 
         WordEntity(id = 191522, setId = 1915, languagePair = "he-ru", rarity = "RARE",
             original = "שְׁעוֹן הַזְּרִיקָה",
@@ -321,8 +303,7 @@ object WordDataHebrewSportsBasketball {
             example = "שְׁעוֹן הַזְּרִיקָה הִתְקָרֵב לְאֶפֶס וְהוּא נֶאֱלַץ לִזְרוֹק מֵרָחוֹק.",
             exampleNative = "שְׁעוֹן הַזְּרִיקָה подходил к нулю, и пришлось бросать издалека.",
             transliteration = "шэон hа-зрика",
-            pos = "phrase", semanticGroup = "sport_basketball_game",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_game"),
 
         WordEntity(id = 191523, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "הַאֲרָכָה",
@@ -332,8 +313,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַמִּשְׂחָק הוּכְרַע רַק בַּהַאֲרָכָה הַשְּׁנִיָּה אַחֲרֵי תֵּיקוּ.",
             exampleNative = "Исход решился только во второй הַאֲרָכָה после ничейного основного времени.",
             transliteration = "hаараха",
-            pos = "noun", semanticGroup = "sport_basketball_game",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "sport_basketball_game"),
 
         WordEntity(id = 191524, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "פְּסִיקַת זְמַן",
@@ -343,8 +323,7 @@ object WordDataHebrewSportsBasketball {
             example = "הַמְּאַמֵּן בִּקֵּשׁ פְּסִיקַת זְמַן בְּדַקָּה הָאַחֲרוֹנָה לְפִי תּוֹכְנִית מַהֲלָךְ.",
             exampleNative = "Тренер взял פְּסִיקַת זְמַן на последней минуте, чтобы разобрать комбинацию.",
             transliteration = "псикат зман",
-            pos = "phrase", semanticGroup = "sport_basketball_game",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "sport_basketball_game"),
 
         WordEntity(id = 191525, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "נְקֻדָּה",

@@ -73,7 +73,6 @@ object WordDataHebrewPmL1 {
             definitionNative = "Тот, кто открывает продукт и пользуется им в обычной жизни.",
             example = "כָּל מִשְׁתַּמֵּשׁ חָדָשׁ עוֹבֵר אוֹנְבּוֹרְדִּינְג שֶׁל שָׁלוֹשׁ דַּקּוֹת.",
             exampleNative = "Каждый новый מִשְׁתַּמֵּשׁ проходит онбординг на три минуты.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177702, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
@@ -83,7 +82,6 @@ object WordDataHebrewPmL1 {
             definitionNative = "Человек или фирма, что платит деньги за услугу или товар.",
             example = "כָּל לָקוֹחַ חָשׁוּב לָנוּ — בִּמְיֻחָד בַּחֹדֶשׁ הָרִאשׁוֹן אַחֲרֵי הַהַשְׁקָה.",
             exampleNative = "Каждый לָקוֹחַ нам важен — особенно в первый месяц после запуска.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177703, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -234,7 +232,6 @@ object WordDataHebrewPmL1 {
             definitionNative = "То, чего человеку не хватает в жизни — он заплатит, чтобы получить ответ на это.",
             example = "זִהִינוּ צֹרֶךְ אֲמִיתִּי בְּקֶרֶב הוֹרִים שֶׁעוֹבְדִים מֵהַבַּיִת.",
             exampleNative = "Мы выявили реальный צֹרֶךְ среди родителей, что работают из дома.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177719, setId = 1777, languagePair = "he-ru", rarity = "COMMON",

@@ -71,8 +71,7 @@ object WordDataHebrewTransportV2 {
             definition = "רֶכֶב פְּרָטִי בַּעַל אַרְבָּעָה גַּלְגַּלִּים לִנְסִיעָה.",
             definitionNative = "Частное транспортное средство на четырёх колёсах.",
             example = "הַמְּכוֹנִית שֶׁלִּי חוֹנָה בַּחֲצַר.",
-            exampleNative = "Моя מְכוֹנִית припаркована во дворе.",
-            isFillInBlankSafe = false),
+            exampleNative = "Моя מְכוֹנִית припаркована во дворе."),
         WordEntity(
             id = 163003, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "road_vehicles", transliteration = "monit",
@@ -88,8 +87,7 @@ object WordDataHebrewTransportV2 {
             definition = "אוֹטוֹבּוּס קָטָן לְהוֹבָלַת מְעַט נוֹסְעִים.",
             definitionNative = "Небольшой автобус для перевозки немногих пассажиров.",
             example = "הַמִּינִיבּוּס יוֹצֵא מִמֶּרְכַּז הָעִיר.",
-            exampleNative = "מִינִיבּוּס отправляется из центра города.",
-            isFillInBlankSafe = false),
+            exampleNative = "מִינִיבּוּס отправляется из центра города."),
         WordEntity(
             id = 163005, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "road_vehicles", transliteration = "ofnoa",
@@ -97,8 +95,7 @@ object WordDataHebrewTransportV2 {
             definition = "רֶכֶב דּוּ-גַּלְגַּלִּי בַּעַל מָנוֹעַ לִנְסִיעָה מְהִירָה.",
             definitionNative = "Двухколёсное транспортное средство с мотором для быстрой езды.",
             example = "הָאוֹפַנּוֹעַ עָבַר אֶת הַמְּכוֹנִיּוֹת בַּפְּקָק.",
-            exampleNative = "אוֹפַנּוֹעַ обогнал машины в пробке.",
-            isFillInBlankSafe = false),
+            exampleNative = "אוֹפַנּוֹעַ обогнал машины в пробке."),
         WordEntity(
             id = 163006, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "road_vehicles", transliteration = "mashait",
@@ -106,8 +103,7 @@ object WordDataHebrewTransportV2 {
             definition = "רִכְבֵי הוֹבָלָה גְּדוֹלִים לְמִטְעָנִים כְּבֵדִים.",
             definitionNative = "Крупные грузовые автомобили для тяжёлых грузов.",
             example = "הַמַּשָּׂאִיוֹת מַעֲבִירוֹת סְחוֹרָה לַחֲנוּיוֹת.",
-            exampleNative = "מַשָּׂאִיוֹת перевозят товар в магазины.",
-            isFillInBlankSafe = false),
+            exampleNative = "מַשָּׂאִיוֹת перевозят товар в магазины."),
         WordEntity(
             id = 163007, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "road_vehicles", transliteration = "otobus kaful",
@@ -115,8 +111,7 @@ object WordDataHebrewTransportV2 {
             definition = "אוֹטוֹבּוּס בַּעַל שְׁתֵּי קוֹמוֹת לְנוֹסְעִים.",
             definitionNative = "Автобус с двумя этажами для пассажиров.",
             example = "רָאִיתִי אוֹטוֹבּוּס כָּפוּל בְּלוֹנְדוֹן.",
-            exampleNative = "Я видел אוֹטוֹבּוּס כָּפוּל в Лондоне.",
-            isFillInBlankSafe = false, fillInBlankExclusions = listOf(163001L, 163002L, 163003L, 163004L, 163005L, 163006L, 163008L, 163009L, 163010L, 163011L, 163012L, 163013L, 163014L, 163015L, 163016L, 163017L, 163018L, 163019L, 163020L, 163021L, 163022L, 163024L)),
+            exampleNative = "Я видел אוֹטוֹבּוּס כָּפוּל в Лондоне.", fillInBlankExclusions = listOf(163001L, 163002L, 163003L, 163004L, 163005L, 163006L, 163008L, 163009L, 163010L, 163011L, 163012L, 163013L, 163014L, 163015L, 163016L, 163017L, 163018L, 163019L, 163020L, 163021L, 163022L, 163024L)),
 
         // ── rail_vehicles (5) ──
         WordEntity(
@@ -134,8 +129,7 @@ object WordDataHebrewTransportV2 {
             definition = "רַכֶּבֶת עִירוֹנִית הַנּוֹסַעַת מִתַּחַת לַאֲדָמָה.",
             definitionNative = "Городской поезд, движущийся под землёй.",
             example = "בְּפָּרִיז יֵשׁ מֶטְרוֹ גָּדוֹל מְאוֹד.",
-            exampleNative = "В Париже большое מֶטְרוֹ.",
-            isFillInBlankSafe = false),
+            exampleNative = "В Париже большое מֶטְרוֹ."),
         WordEntity(
             id = 163010, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "rail_vehicles", transliteration = "rakevet kala",
@@ -160,8 +154,7 @@ object WordDataHebrewTransportV2 {
             definition = "רַכֶּבֶת הַנּוֹסַעַת בַּלַּיְלָה לְמֶרְחַקִּים.",
             definitionNative = "Поезд, идущий ночью на дальние расстояния.",
             example = "לָקַחְתִּי רַכֶּבֶת לַיְלָה לְוִינָה.",
-            exampleNative = "Я ехал רַכֶּבֶת לַיְלָה в Вену.",
-            isFillInBlankSafe = false, fillInBlankExclusions = listOf(163001L, 163002L, 163003L, 163004L, 163008L, 163009L, 163010L, 163011L, 163013L, 163014L, 163024L)),
+            exampleNative = "Я ехал רַכֶּבֶת לַיְלָה в Вену.", fillInBlankExclusions = listOf(163001L, 163002L, 163003L, 163004L, 163008L, 163009L, 163010L, 163011L, 163013L, 163014L, 163024L)),
 
         // ── air_water (6) ──
         WordEntity(
@@ -171,8 +164,7 @@ object WordDataHebrewTransportV2 {
             definition = "כְּלִי טַיִס בַּעַל כְּנָפַיִם לְטִיסָה מֶרְחַקִּים.",
             definitionNative = "Летательный аппарат с крыльями для дальних перелётов.",
             example = "הַמָּטוֹס נָחַת בִּשְׂדֵה הַתְּעוּפָה.",
-            exampleNative = "מָטוֹס приземлился в аэропорту.",
-            isFillInBlankSafe = false),
+            exampleNative = "מָטוֹס приземлился в аэропорту."),
         WordEntity(
             id = 163014, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "air_water", transliteration = "aviron",
@@ -196,8 +188,7 @@ object WordDataHebrewTransportV2 {
             definition = "כְּלִי שַׁיִט בְּיַם אוֹ בְּמַיִם לְהוֹבָלָה אוֹ לַיְדוּעַ.",
             definitionNative = "Плавучее средство для перевозок или путешествий по морю.",
             example = "הַסְּפִינָה עָגְנָה בַּנָּמָל.",
-            exampleNative = "סְפִינָה встала на якорь в порту.",
-            isFillInBlankSafe = false),
+            exampleNative = "סְפִינָה встала на якорь в порту."),
         WordEntity(
             id = 163017, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "air_water", transliteration = "sirat siyur",
@@ -231,8 +222,7 @@ object WordDataHebrewTransportV2 {
             definition = "קוֹרְקִינֶט עִם מָנוֹעַ חַשְׁמַלִּי לִנְסִיעָה בָּעִיר.",
             definitionNative = "Самокат с электромотором для городских поездок.",
             example = "אֲנִי נוֹסֵעַ עַל קָוָנוֹעַ לָעֲבוֹדָה.",
-            exampleNative = "Я езжу на קָוָנוֹעַ на работу.",
-            isFillInBlankSafe = false),
+            exampleNative = "Я езжу на קָוָנוֹעַ на работу."),
         WordEntity(
             id = 163021, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "personal_vehicles", transliteration = "ofanei hegeh",
@@ -291,8 +281,7 @@ object WordDataHebrewTransportV2 {
             definition = "לָלֶכֶת מִמָּקוֹם לְמָקוֹם בְּכְלִי תַּחְבּוּרָה.",
             definitionNative = "Перемещаться из одного места в другое на транспорте.",
             example = "אֲנַחְנוּ מְתַכְנְנִים לִנְסוֹעַ לְחֵיפָה מָחָר בַּבֹּקֶר.",
-            exampleNative = "Мы планируем לִנְסוֹעַ в Хайфу завтра утром.",
-            isFillInBlankSafe = false),
+            exampleNative = "Мы планируем לִנְסוֹעַ в Хайфу завтра утром."),
         WordEntity(
             id = 163102, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "travel_verbs", transliteration = "lalekhet",
@@ -308,8 +297,7 @@ object WordDataHebrewTransportV2 {
             definition = "לְהִכָּנֵס לַמָּקוֹם שֶׁאֵלָיו נָסַעְנוּ.",
             definitionNative = "Войти в место, куда направлялись.",
             example = "הָרַכֶּבֶת אֲמוּרָה לְהַגִּיעַ בְּעוֹד עֶשֶׂר דַּקּוֹת.",
-            exampleNative = "Поезд должен לְהַגִּיעַ через десять минут.",
-            isFillInBlankSafe = false),
+            exampleNative = "Поезд должен לְהַגִּיעַ через десять минут."),
         WordEntity(
             id = 163104, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "travel_verbs", transliteration = "lalot",
@@ -317,8 +305,7 @@ object WordDataHebrewTransportV2 {
             definition = "לְהִכָּנֵס לְכְלִי תַּחְבּוּרָה לִפְנֵי הַנְּסִיעָה.",
             definitionNative = "Входить в транспорт перед поездкой.",
             example = "צָרִיךְ לַעֲלוֹת לָאוֹטוֹבּוּס בַּתַּחֲנָה הָרִאשׁוֹנָה.",
-            exampleNative = "Надо לַעֲלוֹת в автобус на первой остановке.",
-            isFillInBlankSafe = false),
+            exampleNative = "Надо לַעֲלוֹת в автобус на первой остановке."),
         WordEntity(
             id = 163105, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "travel_verbs", transliteration = "laredet",
@@ -326,8 +313,7 @@ object WordDataHebrewTransportV2 {
             definition = "לָצֵאת מִכְּלִי תַּחְבּוּרָה אַחֲרֵי הַנְּסִיעָה.",
             definitionNative = "Покинуть автобус, поезд или машину в конце поездки.",
             example = "אֲנִי צָרִיךְ לָרֶדֶת בַּתַּחֲנָה הַבָּאָה לִפְנֵי הַגֶּשֶׁר.",
-            exampleNative = "Мне надо לָרֶדֶת на следующей остановке перед мостом.",
-            isFillInBlankSafe = false),
+            exampleNative = "Мне надо לָרֶדֶת на следующей остановке перед мостом."),
 
         // ── tickets (5) ──
         WordEntity(
@@ -353,8 +339,7 @@ object WordDataHebrewTransportV2 {
             definition = "תַּמּוּנָה גֵּאוֹגְרַפִית שֶׁמַּרְאָה רְחוֹבוֹת וּמְקוֹמוֹת.",
             definitionNative = "Географическое изображение улиц и мест.",
             example = "הִסְתַּכַּלְתִּי בַּמַּפָּה לְמָצֹא אֶת הַדֶּרֶךְ.",
-            exampleNative = "Я смотрел в מַפָּה, чтобы найти дорогу.",
-            isFillInBlankSafe = false),
+            exampleNative = "Я смотрел в מַפָּה, чтобы найти дорогу."),
         WordEntity(
             id = 163109, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "tickets", transliteration = "kod qr",
@@ -380,8 +365,7 @@ object WordDataHebrewTransportV2 {
             definition = "אָדָם שֶׁמִּטַּיֵּל בִּכְלִי תַּחְבּוּרָה כְּלָקוֹחַ.",
             definitionNative = "Человек, перевозимый транспортом как клиент.",
             example = "הַנּוֹסֵעַ שִׁילֵּם עַל הַנְּסִיעָה.",
-            exampleNative = "נוֹסֵעַ заплатил за поездку.",
-            isFillInBlankSafe = false),
+            exampleNative = "נוֹסֵעַ заплатил за поездку."),
         WordEntity(
             id = 163112, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "people", transliteration = "nosaat",
@@ -389,8 +373,7 @@ object WordDataHebrewTransportV2 {
             definition = "אִשָּׁה הַמְּטַיֶּלֶת בִּכְלִי תַּחְבּוּרָה כְּלָקוֹחָה.",
             definitionNative = "Женщина, перевозимая транспортом как клиент.",
             example = "הַנּוֹסַעַת יָשְׁבָה לְיַד הַחַלּוֹן.",
-            exampleNative = "נוֹסַעַת сидела у окна.",
-            isFillInBlankSafe = false),
+            exampleNative = "נוֹסַעַת сидела у окна."),
         WordEntity(
             id = 163113, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "people", transliteration = "nahag monit",
@@ -398,8 +381,7 @@ object WordDataHebrewTransportV2 {
             definition = "אָדָם הַמּוֹבִיל נוֹסְעִים בִּמְכוֹנִית תַּחְבּוּרָה צִיבּוּרִית.",
             definitionNative = "Человек, управляющий такси и везущий клиентов.",
             example = "הַנֶּהָג מוֹנִית עָזַר לִי עִם הַמִּזְוָדוֹת.",
-            exampleNative = "נֶהָג מוֹנִית помог мне с чемоданами.",
-            isFillInBlankSafe = false),
+            exampleNative = "נֶהָג מוֹנִית помог мне с чемоданами."),
         WordEntity(
             id = 163114, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "people", transliteration = "holekh regel",
@@ -483,8 +465,7 @@ object WordDataHebrewTransportV2 {
             definition = "כֶּסֶף עָגוֹל מִמַּתֶּכֶת בְּסֵכוּם קָטָן.",
             definitionNative = "Круглые металлические деньги небольшой суммы.",
             example = "הִכְנַסְתִּי מַטְבֵּעַ לְאוֹטוֹמַט הַכַּרְטִיסִים.",
-            exampleNative = "Я вложил מַטְבֵּעַ в билетный автомат.",
-            isFillInBlankSafe = false),
+            exampleNative = "Я вложил מַטְבֵּעַ в билетный автомат."),
         WordEntity(
             id = 163124, setId = 1631, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "fuel_money", transliteration = "cha-cha",
@@ -548,8 +529,7 @@ object WordDataHebrewTransportV2 {
             definition = "דֶּלְפֵּק בְּתַחֲנָה שֶׁבּוֹ קוֹנִים כַּרְטִיסִים.",
             definitionNative = "Стойка на станции, где покупают билеты.",
             example = "הִגַּעְתִּי לַקּוּפָּה לִפְנֵי הַסְּגִירָה.",
-            exampleNative = "Я подошёл к קוּפָּה до закрытия.",
-            isFillInBlankSafe = false),
+            exampleNative = "Я подошёл к קוּפָּה до закрытия."),
         WordEntity(
             id = 163206, setId = 1632, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "stations", transliteration = "shaar knisa",
@@ -557,8 +537,7 @@ object WordDataHebrewTransportV2 {
             definition = "מִתְקָן בַּכְּנִיסָה לְתַחֲנָה שֶׁמַּתִּיר מַעֲבָר לְאַחַר תַּשְׁלוּם.",
             definitionNative = "Устройство на входе станции, пропускающее после оплаты.",
             example = "הֶעֱבַרְתִּי אֶת הָרַב-קַו בַּשַּׁעַר כְּנִיסָה.",
-            exampleNative = "Я приложил Рав-Кав к שַׁעַר כְּנִיסָה.",
-            isFillInBlankSafe = false),
+            exampleNative = "Я приложил Рав-Кав к שַׁעַר כְּנִיסָה."),
 
         // ── schedule (5) ──
         WordEntity(
@@ -619,8 +598,7 @@ object WordDataHebrewTransportV2 {
             definition = "אוֹסֶף הַתַּחֲנוֹת וְהַקְּטָעִים שֶׁל קַו תַּחְבּוּרָה.",
             definitionNative = "Совокупность остановок и отрезков линии транспорта.",
             example = "הַמַּסְלוּל הָאָרוֹךְ לוֹקֵחַ שְׁעָתַיִם.",
-            exampleNative = "Длинный מַסְלוּל занимает два часа.",
-            isFillInBlankSafe = false),
+            exampleNative = "Длинный מַסְלוּל занимает два часа."),
         WordEntity(
             id = 163214, setId = 1632, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "routes", transliteration = "express",
@@ -637,8 +615,7 @@ object WordDataHebrewTransportV2 {
             definition = "מָקוֹם שֶׁבּוֹ אֶפְשָׁר לַעֲבוֹר בֵּין קַוֵּי תַּחְבּוּרָה שׁוֹנִים.",
             definitionNative = "Место, где можно пересаживаться между разными линиями.",
             example = "הַמַּחְלָפָה בְּנָמֵל תְּעוּפָה נוֹחָה מְאוֹד.",
-            exampleNative = "מַחְלָפָה в аэропорту удобная.",
-            isFillInBlankSafe = false),
+            exampleNative = "מַחְלָפָה в аэропорту удобная."),
         WordEntity(
             id = 163216, setId = 1632, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "routes", transliteration = "takhana beyneyma",
@@ -646,8 +623,7 @@ object WordDataHebrewTransportV2 {
             definition = "תַּחֲנָה בְּמַסְלוּל שֶׁאֵינָהּ נְקוּדַת הַהַתְחָלָה וְלֹא הַסּוֹף.",
             definitionNative = "Остановка в пути — не начальная и не конечная.",
             example = "עָצַרְנוּ בְּתַחֲנַת בֵּינַיִים בְּרָמְלָה.",
-            exampleNative = "Мы остановились на תַּחֲנַת בֵּינַיִים в Рамле.",
-            isFillInBlankSafe = false),
+            exampleNative = "Мы остановились на תַּחֲנַת בֵּינַיִים в Рамле."),
 
         // ── train_cars (5) ──
         WordEntity(
@@ -657,8 +633,7 @@ object WordDataHebrewTransportV2 {
             definition = "תָּא בְּרַכֶּבֶת לְנוֹסְעִים אוֹ לִסְחוֹרוֹת.",
             definitionNative = "Отсек поезда для пассажиров или груза.",
             example = "יָשַׁבְתִּי בַּקְּרוֹן הַשֵּׁנִי מֵהַצַּד.",
-            exampleNative = "Я сидел в קְרוֹן втором с краю.",
-            isFillInBlankSafe = false),
+            exampleNative = "Я сидел в קְרוֹן втором с краю."),
         WordEntity(
             id = 163218, setId = 1632, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "train_cars", transliteration = "karon shkhiva",
@@ -725,8 +700,7 @@ object WordDataHebrewTransportV2 {
             definition = "בַּעַל תַּפְקִיד שֶׁמַּפְקִיחַ עַל תְּקִינוּת הַשֵּׁרוּת וְעַל הַנּוֹסְעִים.",
             definitionNative = "Должностное лицо, контролирующее работу и пассажиров.",
             example = "הַמַּפְקִיחַ עָלָה לָרַכֶּבֶת לִבְדוֹק.",
-            exampleNative = "מַפְקִיחַ зашёл в поезд на проверку.",
-            isFillInBlankSafe = false),
+            exampleNative = "מַפְקִיחַ зашёл в поезд на проверку."),
 
         // ══════════════════════════════════════════════════════════════════════
         // Set 1633 — Транспорт: продвинутый V2 — машина (UNCOMMON)
@@ -775,8 +749,7 @@ object WordDataHebrewTransportV2 {
             definition = "מַכְשִׁיר בַּמְּכוֹנִית שֶׁמּוֹרֶה אֶת הַדֶּרֶךְ לַיַּעַד.",
             definitionNative = "Прибор в машине, показывающий дорогу до цели.",
             example = "הַמַּצְפֵּן נְסִיעָה הוֹבִיל אוֹתִי מַהֵר הַבַּיְתָה.",
-            exampleNative = "מַצְפֵּן נְסִיעָה быстро привёл меня домой.",
-            isFillInBlankSafe = false),
+            exampleNative = "מַצְפֵּן נְסִיעָה быстро привёл меня домой."),
 
         // ── fuel (4) ──
         WordEntity(
@@ -890,8 +863,7 @@ object WordDataHebrewTransportV2 {
             definition = "פְּגִיעָה בַּמְּכוֹנִית אוֹ בְּרְכוּשׁ אַחֵר.",
             definitionNative = "Поломка машины или иного имущества — например, после аварии.",
             example = "הַנֶּזֶק לָרֶכֶב מְכוּסֶּה עַל יְדֵי הַבִּיטּוּחַ.",
-            exampleNative = "נֶזֶק машине покрывает страховка.",
-            isFillInBlankSafe = false),
+            exampleNative = "נֶזֶק машине покрывает страховка."),
         WordEntity(
             id = 163319, setId = 1633, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "accidents", transliteration = "pgia",
@@ -943,8 +915,7 @@ object WordDataHebrewTransportV2 {
             definition = "מָקוֹם שֶׁבּוֹ מְתַקְּנִים מְכוֹנִיּוֹת וּבוֹדְקִים אוֹתָן.",
             definitionNative = "Место, где ремонтируют и обслуживают машины.",
             example = "לָקַחְתִּי אֶת הָרֶכֶב לַמּוּסָךְ לִבְדִיקָה.",
-            exampleNative = "Я отвёз машину в מוּסָךְ на проверку.",
-            isFillInBlankSafe = false),
+            exampleNative = "Я отвёз машину в מוּסָךְ на проверку."),
         WordEntity(
             id = 163325, setId = 1633, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "parking_service", transliteration = "tidlul",
@@ -952,8 +923,7 @@ object WordDataHebrewTransportV2 {
             definition = "מָקוֹם שֶׁבּוֹ מְמַלְּאִים דֶּלֶק לַמְּכוֹנִיּוֹת.",
             definitionNative = "Место, где заправляют машины топливом.",
             example = "עָצַרְנוּ בְּתַחֲנַת תִּדְלוּק לַמַלֵּא דֶּלֶק.",
-            exampleNative = "Мы остановились на תַּחֲנַת תִּדְלוּק заправиться.",
-            isFillInBlankSafe = false),
+            exampleNative = "Мы остановились на תַּחֲנַת תִּדְלוּק заправиться."),
 
         // ══════════════════════════════════════════════════════════════════════
         // Set 1634 — Транспорт: углублённый V2 — аэропорт (RARE)
@@ -977,8 +947,7 @@ object WordDataHebrewTransportV2 {
             definition = "נְסִיעָה בִּכְלִי טַיִס בֵּין שְׂדוֹת תְּעוּפָה.",
             definitionNative = "Перемещение на летательном аппарате между аэропортами.",
             example = "הַטִּיסָה לְלוֹנְדוֹן לוֹקַחַת חָמֵשׁ שָׁעוֹת.",
-            exampleNative = "טִיסָה в Лондон занимает пять часов.",
-            isFillInBlankSafe = false),
+            exampleNative = "טִיסָה в Лондон занимает пять часов."),
         WordEntity(
             id = 163403, setId = 1634, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "departure", transliteration = "yetsia",
@@ -1037,8 +1006,7 @@ object WordDataHebrewTransportV2 {
             definition = "רְצוּעַת קַרְקַע בְּשָׂדֶה תְּעוּפָה שֶׁעָלֶיהָ נוֹחֲתִים מְטוֹסִים.",
             definitionNative = "Полоса в аэропорту, на которую приземляются самолёты.",
             example = "הַמִּסְלוּל נְחִיתָה סָגוּר בְּגִלּוּי עֲרָפֶל.",
-            exampleNative = "מִסְלוּל נְחִיתָה закрыт из-за тумана.",
-            isFillInBlankSafe = false),
+            exampleNative = "מִסְלוּל נְחִיתָה закрыт из-за тумана."),
         WordEntity(
             id = 163410, setId = 1634, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "arrival", transliteration = "hemshekh tisa",
@@ -1046,8 +1014,7 @@ object WordDataHebrewTransportV2 {
             definition = "טִיסָה הַמְּחַבֶּרֶת בֵּין מָטוֹס אֶחָד לְמָטוֹס שֵׁנִי.",
             definitionNative = "Рейс, соединяющий один самолёт с другим.",
             example = "הֶמְשֵׁךְ טִיסָה שֶׁלָּנוּ בִּמְנְכֶן.",
-            exampleNative = "הֶמְשֵׁךְ טִיסָה у нас в Мюнхене.",
-            isFillInBlankSafe = false, fillInBlankExclusions = listOf(163401L, 163402L, 163403L, 163405L, 163406L, 163407L, 163408L, 163409L)),
+            exampleNative = "הֶמְשֵׁךְ טִיסָה у нас в Мюнхене.", fillInBlankExclusions = listOf(163401L, 163402L, 163403L, 163405L, 163406L, 163407L, 163408L, 163409L)),
 
         // ── security (5) ──
         WordEntity(
@@ -1109,8 +1076,7 @@ object WordDataHebrewTransportV2 {
             definition = "תִּיק קָשִׁיחַ וְגָדוֹל לְאֶרְאַחְסוּן בְּגָדִים בִּנְסִיעָה.",
             definitionNative = "Большая жёсткая сумка для хранения вещей в поездке.",
             example = "הַמִּזְוָדָה שֶׁלִּי עַל הַמַּסְלוּל.",
-            exampleNative = "Мой מִזְוָדָה на ленте.",
-            isFillInBlankSafe = false),
+            exampleNative = "Мой מִזְוָדָה на ленте."),
         WordEntity(
             id = 163418, setId = 1634, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "baggage", transliteration = "tik yad",
@@ -1193,8 +1159,7 @@ object WordDataHebrewTransportV2 {
             definition = "מַדָּע נִיהוּל הַזָּרִימָה שֶׁל סְחוֹרוֹת וּמִשְׁאָבִים.",
             definitionNative = "Наука управления потоками товаров и ресурсов.",
             example = "הַלּוֹגִיסְטִיקָה הַיָּעִילָה חוֹסֶכֶת כֶּסֶף.",
-            exampleNative = "Эффективная לוֹגִיסְטִיקָה экономит деньги.",
-            isFillInBlankSafe = false),
+            exampleNative = "Эффективная לוֹגִיסְטִיקָה экономит деньги."),
         WordEntity(
             id = 163502, setId = 1635, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "logistics", transliteration = "shalsheret aspaka",
@@ -1219,8 +1184,7 @@ object WordDataHebrewTransportV2 {
             definition = "מָקוֹם בּוֹ מַחֲזִיקִים סְחוֹרוֹת לִפְנֵי מִשְׁלוֹחַ לַקּוֹנִים.",
             definitionNative = "Место хранения товаров перед отгрузкой покупателям.",
             example = "הַמַּחְסַן הֲפָצָה מְשָׁרֵת אֶת צְפוֹן הָאָרֶץ.",
-            exampleNative = "מַחְסַן הֲפָצָה обслуживает север страны.",
-            isFillInBlankSafe = false),
+            exampleNative = "מַחְסַן הֲפָצָה обслуживает север страны."),
         WordEntity(
             id = 163505, setId = 1635, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "logistics", transliteration = "nihul mlay",
@@ -1238,8 +1202,7 @@ object WordDataHebrewTransportV2 {
             definition = "שֶׁל הוֹבָלַת מִטְעָן וְלֹא שֶׁל נוֹסְעִים.",
             definitionNative = "Связанный с перевозкой груза, а не пассажиров.",
             example = "הַמָּטוֹס הַמִּטְעָנִי לֹא נוֹשֵׂא נוֹסְעִים.",
-            exampleNative = "מִטְעָנִי самолёт не перевозит пассажиров.",
-            isFillInBlankSafe = false),
+            exampleNative = "מִטְעָנִי самолёт не перевозит пассажиров."),
         WordEntity(
             id = 163507, setId = 1635, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "freight", transliteration = "mitan tsipori",
@@ -1255,8 +1218,7 @@ object WordDataHebrewTransportV2 {
             definition = "תֵּבָה סְטַנְדַּרְטִית שֶׁל מַתֶּכֶת לְהוֹבָלַת סְחוֹרוֹת בְּיָם.",
             definitionNative = "Стандартный металлический ящик для морских грузов.",
             example = "הַמְּכוֹלָה נִפְרְקָה בַּנָּמֵל חֵיפָה.",
-            exampleNative = "מְכוֹלָה была разгружена в порту Хайфы.",
-            isFillInBlankSafe = false),
+            exampleNative = "מְכוֹלָה была разгружена в порту Хайфы."),
         WordEntity(
             id = 163509, setId = 1635, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "freight", transliteration = "mashait hovala",
@@ -1272,8 +1234,7 @@ object WordDataHebrewTransportV2 {
             definition = "תְּנוּעַת סְחוֹרָה לְמֶרְחַקִּים גְּדוֹלִים בֵּין מְדִינוֹת.",
             definitionNative = "Перевозка товара на дальние расстояния между странами.",
             example = "הוֹבָלָה אֲרוּכַּת טְוָח דּוֹרֶשֶׁת תִּכְנוּן.",
-            exampleNative = "הוֹבָלָה אֲרוּכַּת טְוָח требует планирования.",
-            isFillInBlankSafe = false, fillInBlankExclusions = listOf(163501L, 163502L, 163505L, 163507L, 163508L, 163509L, 163512L, 163513L, 163514L)),
+            exampleNative = "הוֹבָלָה אֲרוּכַּת טְוָח требует планирования.", fillInBlankExclusions = listOf(163501L, 163502L, 163505L, 163507L, 163508L, 163509L, 163512L, 163513L, 163514L)),
 
         // ── delivery (5) ──
         WordEntity(
@@ -1316,8 +1277,7 @@ object WordDataHebrewTransportV2 {
             definition = "הַשָּׁלָב הָאַחֲרוֹן שֶׁל מִשְׁלוֹחַ, עַד דֶּלֶת הַלָּקוֹחַ.",
             definitionNative = "Последний этап доставки — до двери клиента.",
             example = "הַמַּיל אַחֲרוֹן הַיָּקָר בְּיוֹתֵר בְּמִשְׁלוֹחַ.",
-            exampleNative = "מַיל אַחֲרוֹן — самый дорогой в доставке.",
-            isFillInBlankSafe = false),
+            exampleNative = "מַיל אַחֲרוֹן — самый дорогой в доставке."),
 
         // ── traffic_rules (5) ──
         WordEntity(
@@ -1403,7 +1363,6 @@ object WordDataHebrewTransportV2 {
             definition = "מוֹסָד מִשְׁפָּטִי הַדָּן בַּעֲבֵרוֹת תַּחְבּוּרָה.",
             definitionNative = "Судебный орган, рассматривающий нарушения ПДД.",
             example = "הַמִּשְׁפָּט יִתְקַיֵּם בְּבֵית מִשְׁפָּט לְתַחְבּוּרָה.",
-            exampleNative = "Суд состоится в בֵּית מִשְׁפָּט לְתַחְבּוּרָה.",
-            isFillInBlankSafe = false),
+            exampleNative = "Суд состоится в בֵּית מִשְׁפָּט לְתַחְבּוּרָה."),
     )
 }

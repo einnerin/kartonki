@@ -210,11 +210,11 @@ object WordDataHebrewAdvanced {
             example = "הקלד אֶת כְּתוֹבֶת הָאֲתַר בשורת הדפדפן.",
             exampleNative = "Введи כְּתוֹבֶת אֲתַר в адресную строку браузера.",
          isFillInBlankSafe = false),
-                WordEntity(id = 101419, original = "בִּדּוּד", transliteration = "[biˈdud]", translation = "изоляция (контейнера или процесса)", rarity = "RARE", setId = 1014, languagePair = "he-ru", pos = "noun", semanticGroup = "system_architecture",
+                WordEntity(id = 101419, original = "בִּדּוּד", transliteration = "bidud", translation = "изоляция (контейнера или процесса)", rarity = "RARE", setId = 1014, languagePair = "he-ru", pos = "noun", semanticGroup = "system_architecture",
             definition = "the separation of a process or container from others to prevent interference.",
             example = "בִּדּוּד הַמַּכָל מוֹנֵעַ הִתְפַּשְּׁטוּת תַּקָּלוֹת בֵּין הַשֵּׁרוּתִים.",
             definitionNative = "Разделение процесса или контейнера от других для предотвращения взаимовлияния.",
-            exampleNative = "בִּדּוּד контейнеров предотвращает распространение сбоев между сервисами.", isFillInBlankSafe = false),
+            exampleNative = "בִּדּוּד контейнеров предотвращает распространение сбоев между сервисами."),
 
         // ──────────────────────────────────────────────────────
         // Set 115 — Работа и карьера (A2–B2),
@@ -593,11 +593,11 @@ object WordDataHebrewAdvanced {
             definitionNative = "Способ, которым человек действует или ведёт себя в различных ситуациях.",
             exampleNative = "Позитивная הִתְנַהֲגוּת на работе укрепляет атмосферу в команде.", fillInBlankExclusions = listOf(101606L, 101607L, 101611L, 101613L, 101616L, 101617L, 101619L, 101620L, 101623L)),
 
-                WordEntity(id = 101625, original = "הִתְרַגְּשׁוּת", transliteration = "[hitraɡeˈʃut]", translation = "волнение; сильное эмоциональное возбуждение", rarity = "UNCOMMON", setId = 1016, languagePair = "he-ru", pos = "noun", semanticGroup = "emotions",
+                WordEntity(id = 101625, original = "הִתְרַגְּשׁוּת", transliteration = "hitragshut", translation = "волнение; сильное эмоциональное возбуждение", rarity = "UNCOMMON", setId = 1016, languagePair = "he-ru", pos = "noun", semanticGroup = "emotions",
             definition = "a strong feeling of enthusiasm, joy, or emotional agitation.",
             example = "הָיְתָה הִתְרַגְּשׁוּת גְּדוֹלָה בָּאוּלָם כְּשֶׁהַזּוֹכֶה הוּכְרַז.",
             definitionNative = "Сильное чувство воодушевления, радости или эмоционального возбуждения.",
-            exampleNative = "В зале царило הִתְרַגְּשׁוּת, когда объявили победителя.", isFillInBlankSafe = false),
+            exampleNative = "В зале царило הִתְרַגְּשׁוּת, когда объявили победителя."),
 
         // Set 117 — +15 (было 10, стало 25),
         WordEntity(id = 101711, setId = 1017, languagePair = "he-ru", rarity = "RARE", original = "קוֹגְנִיטִיבִיזְם", transliteration = "kognitivizm", translation = "когнитивизм", pos = "noun", semanticGroup = "abstract",
@@ -841,7 +841,7 @@ object WordDataHebrewAdvanced {
             definition = "a non-interactive cinematic sequence within a video game.",
             example = "הַסְּצֵינָה שאחרי הניצחון הייתה מרגשת מאוד.",
             definitionNative = "Неинтерактивная кинематографическая вставка в видеоигре.",
-            exampleNative = "סְצֵינָה после победы была очень трогательной.", isFillInBlankSafe = false),
+            exampleNative = "סְצֵינָה после победы была очень трогательной."),
 
         WordEntity(id = 101815, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "שְׁבִירַת שִׂיא", transliteration = "shvirat sia", translation = "побитие рекорда", pos = "noun", semanticGroup = "gaming",
             definition = "achieving a score or time that surpasses the previous best record.",
@@ -884,7 +884,7 @@ object WordDataHebrewAdvanced {
             definition = "a group of players who cooperate regularly in a game.",
             example = "הִצְטָרַפְנוּ לְגִלְדָּה חֲזָקָה בַּמִּשְׂחָק.",
             definitionNative = "Группа игроков, которые регулярно взаимодействуют в игре.",
-            exampleNative = "Мы вступили в сильную גִּלְדָּה в игре.", isFillInBlankSafe = false),
+            exampleNative = "Мы вступили в сильную גִּלְדָּה в игре."),
 
         WordEntity(id = 101822, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "מִשְׂחָק תַּפְקִידִים", transliteration = "miskhak tafkidim", translation = "ролевая игра; RPG", pos = "noun", semanticGroup = "gaming",
             definition = "a game genre where players assume the roles of characters in a fictional world.",
@@ -896,7 +896,7 @@ object WordDataHebrewAdvanced {
             definition = "an early version of a game released to a limited audience for testing.",
             example = "השתתפתי בְּבֶאטָה של המשחק לפני ההשקה.",
             definitionNative = "Ранняя версия игры, выпущенная для ограниченной аудитории для тестирования.",
-            exampleNative = "Я участвовал в בֶּאטָה игры до официального выпуска.", isFillInBlankSafe = false),
+            exampleNative = "Я участвовал в בֶּאטָה игры до официального выпуска."),
 
         WordEntity(id = 101824, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "מוֹד", transliteration = "mod", translation = "мод; пользовательская модификация", pos = "noun", semanticGroup = "gaming",
             definition = "a modification made by players to change or extend the original game.",

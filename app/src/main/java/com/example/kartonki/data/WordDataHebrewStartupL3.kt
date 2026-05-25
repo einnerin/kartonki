@@ -84,7 +84,6 @@ object WordDataHebrewStartupL3 {
             definitionNative = "Проблема, болезненная настолько, что люди готовы платить за её решение.",
             example = "בְּלִי כְּאֵב לָקוֹחַ אֲמִיתִּי הַסְּטַארְט-אַפּ נִשְׁאָר רַק תַּרְגִּיל אֲקָדֵמִי.",
             exampleNative = "Без настоящей כְּאֵב לָקוֹחַ стартап остаётся лишь академическим упражнением.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175805, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
@@ -123,7 +122,6 @@ object WordDataHebrewStartupL3 {
             definitionNative = "Главный человек — решает по видению и бюджету, общается с инвесторами.",
             example = "הַסִּי-אִי-אוֹ נִפְגַּשׁ עִם שְׁלוֹשָׁה קְרָנוֹת בַּשָּׁבוּעַ הַקָּרוֹב.",
             exampleNative = "סִי-אִי-אוֹ встречается с тремя фондами на следующей неделе.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175809, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
@@ -162,7 +160,6 @@ object WordDataHebrewStartupL3 {
             definitionNative = "Частично работающий образец — показывает, как замысел будет выглядеть в действии.",
             example = "פְּרוֹטוֹטִיפּ בְּפִיגְמָה הִסְפִּיק לָנוּ כְּדֵי לְשַׁכְנֵעַ אֶת הַמַּלְאָךְ הָרִאשׁוֹן.",
             exampleNative = "פְּרוֹטוֹטִיפּ в Figma хватило, чтобы убедить первого ангела.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175813, setId = 1758, languagePair = "he-ru", rarity = "RARE",
@@ -172,7 +169,6 @@ object WordDataHebrewStartupL3 {
             definitionNative = "Одна страница в интернете — объясняет продукт и просит email или оплату.",
             example = "הַלֶּנְדִּינְג הָרִאשׁוֹן שֶׁלָּנוּ אָסַף שָׁלוֹשׁ מֵאוֹת רִשּׁוּמִים בְּסוֹף שָׁבוּעַ.",
             exampleNative = "Наш первый לֶנְדִּינְג собрал триста регистраций за выходные.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175814, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
@@ -229,7 +225,6 @@ object WordDataHebrewStartupL3 {
             definitionNative = "Системное сравнение продукта с тем, что предлагают другие игроки на рынке.",
             example = "הַנִּיתוּחַ תַּחֲרוּת חָשַׂף שְׁתֵּי חֶבְרוֹת שֶׁעוֹשׂוֹת כִּמְעַט בְּדִיּוּק אֶת אוֹתוֹ דָּבָר.",
             exampleNative = "נִיתוּחַ תַּחֲרוּת вскрыл две фирмы, делающие почти то же самое.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175820, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
@@ -259,7 +254,6 @@ object WordDataHebrewStartupL3 {
             definitionNative = "Способ строить бизнес — только на деньги основателей и выручку, без внешнего финансирования.",
             example = "בּוּטְסְטרַאפּ דּוֹרֵשׁ סַבְלָנוּת אֲבָל מַשְׁאִיר אֶת הַשְּׁלִיטָה אֵצֶל הַמַּיְיסְּדִים.",
             exampleNative = "בּוּטְסְטרַאפּ требует терпения, но оставляет контроль в руках основателей.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175823, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
@@ -287,7 +281,6 @@ object WordDataHebrewStartupL3 {
             definitionNative = "Короткая фраза о том, зачем фирма существует и кому она хочет служить в мире.",
             example = "הַמִּיסְיוֹן הַבָּרוּר עָזַר לָנוּ לִדְחוֹת לְקוֹחוֹת שֶׁלֹּא הִתְאִימוּ לַחֶבְרָה.",
             exampleNative = "Чёткий מִיסְיוֹן помог нам отказывать клиентам, которые фирме не подходили.",
-            isFillInBlankSafe = false,
         ),
     )
 }

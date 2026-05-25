@@ -65,7 +65,6 @@ object WordDataHebrewArchL4 {
             definitionNative = "Стальные стержни, спрятанные внутри бетона ради прочности.",
             example = "פּוֹעֲלִים סִדְּרוּ אֶת הַזִּיּוּן לִפְנֵי שְׁפִיכַת הַבֶּטוֹן.",
             exampleNative = "Рабочие уложили זִיּוּן перед заливкой бетона.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170604, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
@@ -75,7 +74,6 @@ object WordDataHebrewArchL4 {
             definitionNative = "Лёгкая внутренняя стена, делящая комнаты без нагрузки.",
             example = "פֵּרַקְנוּ אֶת הַמְּחִיצָה בֵּין הַסָּלוֹן וְהַמִּטְבָּח.",
             exampleNative = "Мы снесли מְחִיצָה между гостиной и кухней.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170605, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
@@ -143,7 +141,6 @@ object WordDataHebrewArchL4 {
             definitionNative = "Точный графический документ с размерами и масштабом.",
             example = "הָאַדְרִיכָל הִגִּישׁ אֶת הַשִּׂרְטוּט הַסּוֹפִי לָעִירִיָּה.",
             exampleNative = "Архитектор сдал итоговый שִׂרְטוּט в мэрию.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170612, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
@@ -162,7 +159,6 @@ object WordDataHebrewArchL4 {
             definitionNative = "Вертикальное сечение здания, показывающее устройство этажей.",
             example = "הַחֲתָךְ מַרְאֶה אֶת גֹּבַהּ הַתִּקְרָה בְּכָל קוֹמָה.",
             exampleNative = "חֲתָךְ показывает высоту потолков на каждом этаже.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170614, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
@@ -228,7 +224,6 @@ object WordDataHebrewArchL4 {
             definitionNative = "Японское движение, проектировавшее города как сменяемые клетки.",
             example = "מִגְדַּל הַקַּפְּסוּלוֹת בְּטוֹקְיוֹ הָיָה סֵמֶל הַמֶּטָבּוֹלִיזְם.",
             exampleNative = "Капсульная башня в Токио стала символом מֶטָבּוֹלִיזְם.",
-            isFillInBlankSafe = false,
         ),
 
         // ── architecture_classical_pro (5) — классические термины и детали ──

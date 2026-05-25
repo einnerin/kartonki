@@ -95,7 +95,6 @@ object WordDataHebrewInterview {
             definitionNative = "Сборник прежних работ — показывает твой стиль и профессиональный уровень.",
             example = "הַמְּעַצֶּבֶת הֵבִיאָה פּוֹרְטְפוֹלְיוֹ דִּיגִיטָלִי עִם שִׁישִּׁים פְּרוֹיֶקְטִים.",
             exampleNative = "Дизайнерша принесла цифровое פּוֹרְטְפוֹלְיוֹ из шестидесяти проектов.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175004, setId = 1750, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -125,7 +124,6 @@ object WordDataHebrewInterview {
             definitionNative = "Человек, который ищет подходящих людей на вакансии в разных компаниях.",
             example = "הַמְּגַיֵּיס הִתְקַשֵּׁר אֵלַי יוֹם אַחַר שֶׁשָּׁלַחְתִּי אֶת הַקּוֹרוֹת חַיִּים.",
             exampleNative = "מְגַיֵּיס позвонил мне через день после того как я отправил резюме.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175007, setId = 1750, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -144,7 +142,6 @@ object WordDataHebrewInterview {
             definitionNative = "Первый этап отсева кандидатов: смотрят CV и проводят короткую беседу.",
             example = "אַחֲרֵי הַסְּקְרִינִינְג קִבַּלְתִּי הַזְמָנָה לְשִׂיחָה טֶכְנִית.",
             exampleNative = "После סְקְרִינִינְג я получил приглашение на технический разговор.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175009, setId = 1750, languagePair = "he-ru", rarity = "RARE",
@@ -257,7 +254,6 @@ object WordDataHebrewInterview {
             definitionNative = "Набор языков программирования и инструментов, которыми инженер владеет каждый день.",
             example = "הִצַּגְתִּי אֶת הַסְּטָאק טֶכְנוֹלוֹגִי שֶׁלִּי: רִיאֵקְט, נוֹד וּפּוֹסְטְגְּרֶס.",
             exampleNative = "Я показал свой סְטָאק טֶכְנוֹלוֹגִי: React, Node и Postgres.",
-            isFillInBlankSafe = false,
         ),
 
         // ── interview_motivation (5) — мотивация и сильные стороны ──
@@ -269,7 +265,6 @@ object WordDataHebrewInterview {
             definitionNative = "Настоящая причина, что движет человеком — не деньги и не давление снаружи.",
             example = "הַשּׁוֹאֵל בִּקֵּשׁ לְהָבִין מָה הַמּוֹטִיבַצְיָה פְּנִימִית שֶׁלִּי לְהַחְלִיף תַּפְקִיד.",
             exampleNative = "Спрашивающий хотел понять, что у меня за מוֹטִיבַצְיָה פְּנִימִית — поменять должность.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175022, setId = 1750, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -279,7 +274,6 @@ object WordDataHebrewInterview {
             definitionNative = "Качества, в которых ты лучше всего — то, что выходит без усилий.",
             example = "אַחַד הַצְּדָדִים חֲזָקִים שֶׁלִּי הוּא דִּבּוּר מוּל קָהָל גָּדוֹל.",
             exampleNative = "Одна из моих צְדָדִים חֲזָקִים — это речь перед большой аудиторией.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175023, setId = 1750, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -323,7 +317,6 @@ object WordDataHebrewInterview {
             definitionNative = "Задача на код в ограниченное время — решают при интервьюере для проверки мышления.",
             example = "קוֹדִינְג צֶ׳אלֶנְג׳ הָיָה אַלְגוֹרִיתְם גְּרָפִים בַּפְּלַטְפוֹרְמָה הַחִיצוֹנִית.",
             exampleNative = "קוֹדִינְג צֶ׳אלֶנְג׳ оказался алгоритмом на графах на внешней платформе.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175102, setId = 1751, languagePair = "he-ru", rarity = "RARE",
@@ -407,7 +400,6 @@ object WordDataHebrewInterview {
             definitionNative = "Совместная работа нескольких людей к одной цели — без соперничества внутри.",
             example = "הֵבַנְתִּי שֶׁשִּׁתּוּף פְּעֻלָּה חָשׁוּב שָׁם יוֹתֵר מִיֵּשֵׁג אִישִׁי.",
             exampleNative = "Я понял, что שִׁתּוּף פְּעֻלָּה там важнее личного достижения.",
-            isFillInBlankSafe = false,
         ),
 
         // ── interview_offer (5) — оффер и его компоненты ──
@@ -475,7 +467,6 @@ object WordDataHebrewInterview {
             definitionNative = "Ограниченные акции, которые приходят сотруднику постепенно по графику фирмы.",
             example = "אַר-אֶס-יוּ אֵצֶל מֵטָא הִתְפַּצְּלוּ עַל אַרְבַּע שָׁנִים בְּדִיוּק.",
             exampleNative = "אַר-אֶס-יוּ в Meta поделили ровно на четыре года.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175118, setId = 1751, languagePair = "he-ru", rarity = "RARE",

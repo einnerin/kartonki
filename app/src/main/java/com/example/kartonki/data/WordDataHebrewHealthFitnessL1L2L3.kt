@@ -74,7 +74,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Постоянный порядок дел, повторяющихся утром и вечером.",
             example = "הַשִּׁגְרָה הַבְּרִיאָה שֶׁלִּי כּוֹלֶלֶת הֲלִיכָה לְפְנֵי אֲרוּחַת בֹּקֶר.",
             exampleNative = "Моя здоровая שִׁגְרָה включает прогулку до завтрака.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172703, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
@@ -149,7 +148,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Утреннее распрямление рук и спины сразу после пробуждения.",
             example = "גֵּאוּחַ אָרֹךְ עוֹזֵר לִי לְהִתְעוֹרֵר בַּבֹּקֶר.",
             exampleNative = "Долгий גֵּאוּחַ помогает мне проснуться по утрам.",
-            isFillInBlankSafe = false,
         ),
 
         // ── body_state (5) — состояние тела ──
@@ -462,7 +460,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Компонент еды, дающий организму первое доступное топливо.",
             example = "אֹרֶז וּפָסְטָה מְלֵאִים בְּפַחְמֵימָה.",
             exampleNative = "Рис и паста богаты פַּחְמֵימָה.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172818, setId = 1728, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -510,7 +507,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Число из веса и роста для оценки избыточной массы.",
             example = "הָרוֹפֵא חִשַּׁב לִי אֶת הַמַּדַּד מַסַּת גּוּף בַּבְּדִיקָה.",
             exampleNative = "Врач посчитал мой מַדַּד מַסַּת גּוּף на осмотре.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172823, setId = 1728, languagePair = "he-ru", rarity = "RARE",
@@ -650,7 +646,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Один из трёх крупных пищевых компонентов организма.",
             example = "אֶפְלִיקַצְיַת הַתְּזוּנָה סוֹפֶרֶת אֶת הַמַּקְרוֹ אוֹטוֹמָטִית.",
             exampleNative = "Приложение по питанию считает мне מַקְרוֹ автоматически.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172912, setId = 1729, languagePair = "he-ru", rarity = "RARE",
@@ -660,7 +655,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Малое по массе питательное вещество, важное для клеток.",
             example = "צִנְקְ וְבַרְזֶל הֵם מִיקְרוֹ קְרִיטִי לִסְפּוֹרְטָאִים.",
             exampleNative = "Цинк и железо — критический מִיקְרוֹ для атлетов.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172913, setId = 1729, languagePair = "he-ru", rarity = "RARE",
@@ -699,7 +693,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Сердце и сосуды, отвечающие за разнос кислорода по телу.",
             example = "אִמּוּן קַרְדְיוֹ מְחַזֵּק אֶת הַמַּעֲרֶכֶת לֵב־כְּלִי דָּם.",
             exampleNative = "Кардио укрепляет מַעֲרֶכֶת לֵב־כְּלִי דָּם.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172917, setId = 1729, languagePair = "he-ru", rarity = "RARE",
@@ -765,7 +758,6 @@ object WordDataHebrewHealthFitnessL1L2L3 {
             definitionNative = "Период, когда результаты замирают и перестают расти.",
             example = "פְּלָטוֹ נִשְׁבָּר עִם שִׁנּוּי בְּתָכְנִית הָאִמּוּן.",
             exampleNative = "פְּלָטוֹ ломается через смену плана тренировок.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 172924, setId = 1729, languagePair = "he-ru", rarity = "EPIC",

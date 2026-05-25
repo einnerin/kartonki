@@ -254,7 +254,6 @@ object WordDataHebrewMobileL2 {
             definitionNative = "Инструмент — разработчик видит сообщения системы в реальном времени и шлёт команды.",
             example = "קוֹנְסוֹלַת מְפַתֵּחַ הִצִּיעָה לִי הַשְׁלָמָה אוֹטוֹמָטִית בִּשְׁתֵּי שׁוּרוֹת.",
             exampleNative = "קוֹנְסוֹלַת מְפַתֵּחַ предложила мне автодополнение в две строки.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178423, setId = 1784, languagePair = "he-ru", rarity = "RARE",

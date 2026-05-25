@@ -67,7 +67,6 @@ object WordDataHebrewDataEngL5 {
             definitionNative = "Подход — каждый бизнес-домен сам отвечает за свои данные как за продукт.",
             example = "מַעֲבָר לְדָּאטָה מֵשׁ פִּזֵּר אֶת הָאַחְרָיוּת מֵהַצֶּוֶות הַמֶּרְכָּזִי לְכָל יְחִידוֹת הַחֶבְרָה.",
             exampleNative = "Переход на דָּאטָה מֵשׁ распределил ответственность с центра по подразделениям.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177602, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -142,7 +141,6 @@ object WordDataHebrewDataEngL5 {
             definitionNative = "Заранее сохранённая сводка крупных чисел, чтобы отчёты возвращались мгновенно.",
             example = "צְבִירָה מֵרֹאשׁ שֶׁל הַמְּכִירוֹת לְפִי חֹדֶשׁ מַחְזִירָה אֶת הַדּוּחַ בְּפָחוֹת מִשְּׁנִיָּה.",
             exampleNative = "צְבִירָה מֵרֹאשׁ продаж по месяцу возвращает отчёт меньше чем за секунду.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177610, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
@@ -210,7 +208,6 @@ object WordDataHebrewDataEngL5 {
             definitionNative = "Высший управленец C-level — отвечает за стратегический актив информации в бизнесе.",
             example = "סִי-דִּי-אוֹ הוּגַשׁ יָשִׁיר לַמְּנַכָּ״ל וְלֹא לַסַּמְנְכָּ״ל הַטֶּכְנוֹלוֹגִי.",
             exampleNative = "סִי-דִּי-אוֹ подчиняется напрямую CEO, а не техническому VP.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177617, setId = 1776, languagePair = "he-ru", rarity = "EPIC",

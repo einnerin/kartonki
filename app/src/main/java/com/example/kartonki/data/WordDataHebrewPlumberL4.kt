@@ -60,7 +60,6 @@ object WordDataHebrewPlumberL4 {
             definitionNative = "Объём жидкости через трубу за время, например литры в минуту.",
             example = "הַסְּפִיקָה יָרְדָה בִּגְלַל שִׁכְבַת מִשְׁקָע פְּנִימִית.",
             exampleNative = "סְפִיקָה упала из-за слоя отложений внутри.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180003, setId = 1800, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -108,7 +107,6 @@ object WordDataHebrewPlumberL4 {
             definitionNative = "Прибор со стрелкой, измеряющий силу давления внутри системы.",
             example = "הַמַּד לַחַץ מַרְאֶה שִׁשָּׁה בָּאר בְּקַו הַחַם.",
             exampleNative = "מַד לַחַץ показывает шесть бар на горячей линии.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180008, setId = 1800, languagePair = "he-ru", rarity = "EPIC",

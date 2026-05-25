@@ -76,7 +76,6 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Свежий бизнес, что ищет путь быстрого роста через свежую идею.",
             example = "סְטַארְט-אַפּ מִתֵּל אָבִיב גִּיֵּס שְׁנֵי מִילְיוֹן דּוֹלָר לְפִתּוּחַ הַמּוּצָר.",
             exampleNative = "סְטַארְט-אַפּ из Тель-Авива поднял два миллиона долларов на разработку продукта.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178803, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
@@ -86,7 +85,6 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Что-то, что только открывают, чтобы зарабатывать самостоятельно.",
             example = "אַחֲרֵי הַשֵּׁרוּת פָּתַחְתִּי עֵסֶק חָדָשׁ עִם חָבֵר מֵהַתִּיכוֹן.",
             exampleNative = "После службы я открыл עֵסֶק חָדָשׁ с другом со школы.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178804, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
@@ -116,7 +114,6 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Человек, который открыл бизнес с нуля и решает всё на старте.",
             example = "הַמְּיַסֵּד הָרִאשׁוֹן עוֹדֶנּוּ עוֹבֵד בַּחֶבְרָה אַחֲרֵי עֶשֶׂר שָׁנִים.",
             exampleNative = "Первый מְיַסֵּד до сих пор работает в фирме спустя десять лет.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178807, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -126,7 +123,6 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Тот, кто даёт фирме деньги, чтобы получить долю прибыли в будущем.",
             example = "מַשְׁקִיעַ מֵאַמֵרִיקָה הִתְעַנְיֵן בָּרַעְיוֹן שֶׁלָּנוּ אַחֲרֵי הַכֶּנֶס.",
             exampleNative = "מַשְׁקִיעַ из Америки заинтересовался нашей идеей после конференции.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178808, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -136,7 +132,6 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Опытный человек, что даёт советы фирме за плату или акции.",
             example = "הַיּוֹעֵץ שֶׁלָּנוּ הִצִּיעַ לְפַשֵּׁט אֶת הַמּוּצָר לְשׁוּק קָטָן יוֹתֵר.",
             exampleNative = "Наш יוֹעֵץ предложил упростить продукт для рынка поменьше.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178809, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -146,7 +141,6 @@ object WordDataHebrewStartupL1 {
             definitionNative = "Опытный человек, что сопровождает молодого и помогает ему расти в работе.",
             example = "חוֹנֵךְ טוֹב יָכוֹל לַחְסֹךְ לִיזָם שָׁנִים שֶׁל טָעֻיּוֹת.",
             exampleNative = "Хороший חוֹנֵךְ способен сэкономить предпринимателю годы ошибок.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178810, setId = 1788, languagePair = "he-ru", rarity = "COMMON",

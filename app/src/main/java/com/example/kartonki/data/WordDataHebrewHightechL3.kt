@@ -139,7 +139,6 @@ object WordDataHebrewHightechL3 {
             definitionNative = "Буфер, в котором задачи стоят в очереди, чтобы сервисы обрабатывали их по порядку.",
             example = "מֶסֶג׳ קְיוּ מְפָרֵק לוֹאוּד גָּדוֹל לְבַקָּשׁוֹת קְטַנּוֹת.",
             exampleNative = "מֶסֶג׳ קְיוּ разбивает большую нагрузку на маленькие задачи.",
-            isFillInBlankSafe = false,
         ),
 
         // ── hightech_database (5) — базы данных ──
@@ -169,7 +168,6 @@ object WordDataHebrewHightechL3 {
             definitionNative = "Команда к базе — попросить прочитать или изменить записи.",
             example = "הַשְּׁאִילְתָּה הַזֹּאת שׁוֹלֶפֶת אֶת כָּל הַלָּקוֹחוֹת מֵהַשָּׁבוּעַ הַשּׁוֹעֵב.",
             exampleNative = "Эта שְׁאִילְתָּה вытаскивает всех клиентов с прошлой недели.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174714, setId = 1747, languagePair = "he-ru", rarity = "RARE",
@@ -179,7 +177,6 @@ object WordDataHebrewHightechL3 {
             definitionNative = "Скрипт, переводящий базу с одной версии на новую — без потери данных.",
             example = "הַמִּיגְרַצְיָה הָאַחֲרוֹנָה הוֹסִיפָה שָׂדֶה לַזֶּהוּת בִּשְׁלוֹשׁ טַבְלָאוֹת.",
             exampleNative = "Последняя מִיגְרַצְיָה добавила поле для идентификации в трёх таблицах.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174715, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
@@ -274,7 +271,6 @@ object WordDataHebrewHightechL3 {
             definitionNative = "Временная зона в быстрой памяти — хранит частые ответы, чтобы не запрашивать заново.",
             example = "שִׁכְבַת קֵישׁ מוּל הַמָּסַד הוֹרִידָה אֶת זְמַן הַתְּגוּבָה לְעֶשֶׂר אֲלָפִית הַשָּׁנִיָּה.",
             exampleNative = "שִׁכְבַת קֵישׁ перед базой опустила время отклика до десяти миллисекунд.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 174725, setId = 1747, languagePair = "he-ru", rarity = "EPIC",

@@ -85,7 +85,6 @@ object WordDataHebrewDoctorL1 {
             definitionNative = "Сотрудник, что ходит за больным — кормит, сопровождает и помогает встать.",
             example = "הַמְּטַפֵּל בַּמַּחְלָקָה עָזַר לְסַבָּא לָלֶכֶת לַשֵּׁרוּתִים.",
             exampleNative = "מְטַפֵּל в отделении помог дедушке дойти до туалета.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180204, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
@@ -104,7 +103,6 @@ object WordDataHebrewDoctorL1 {
             definitionNative = "Женщина у входа в клинику — записывает больных и отвечает на звонки.",
             example = "הַמַּזְכִּירָה בַּקֻּפָּה הִדְפִּיסָה לִי טֹפֶס לַבְּדִיקָה.",
             exampleNative = "מַזְכִּירָה в кассе распечатала мне форму для обследования.",
-            isFillInBlankSafe = false,
         ),
 
         // ── doctor_basic_symptoms (5) — что чувствует пациент ──
@@ -172,7 +170,6 @@ object WordDataHebrewDoctorL1 {
             definitionNative = "Бумажка от врача — разрешает забрать определённое лекарство в аптеке.",
             example = "שָׁכַחְתִּי אֶת הַמִּרְשָׁם בַּבַּיִת וְהָלַכְתִּי שׁוּב לַמִּרְפָּאָה.",
             exampleNative = "Я забыл מִרְשָׁם дома и снова пошёл в клинику.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180213, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -191,7 +188,6 @@ object WordDataHebrewDoctorL1 {
             definitionNative = "Сладкое жидкое средство — пьют со специальной ложечкой.",
             example = "נָתַתִּי לַיֶּלֶד סִירוֹפּ לְשִׁעוּל לִפְנֵי הַשֵּׁנָה.",
             exampleNative = "Я дал ребёнку סִירוֹפּ от кашля перед сном.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 180215, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -248,7 +244,6 @@ object WordDataHebrewDoctorL1 {
             definitionNative = "Перестать что-то делать и дать телу набрать силы — лёжа или во сне.",
             example = "הָרוֹפֵא אָמַר לִי לָנוּחַ בַּבַּיִת לְפָחוֹת שְׁלוֹשָׁה יָמִים.",
             exampleNative = "Врач сказал мне לָנוּחַ дома хотя бы три дня.",
-            isFillInBlankSafe = false,
         ),
 
         // ── doctor_basic_visit (5) — слова визита ──

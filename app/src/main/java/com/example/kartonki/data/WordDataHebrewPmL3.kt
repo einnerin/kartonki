@@ -175,7 +175,6 @@ object WordDataHebrewPmL3 {
             definitionNative = "Число разных людей, заходивших в продукт за один сутки.",
             example = "דַּאוּ קָפַץ מֵעֶשְׂרִים אֶלֶף לְשִׁבְעִים אֶלֶף אַחֲרֵי שֶׁעָלִינוּ לִטְלִיוִיזְיָה.",
             exampleNative = "דַּאוּ скакнул с двадцати тысяч до семидесяти после выхода на телевидение.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176514, setId = 1765, languagePair = "he-ru", rarity = "RARE",
@@ -271,7 +270,6 @@ object WordDataHebrewPmL3 {
             definitionNative = "Период, когда команда строит фичу по спецификации и проверяет её внутри.",
             example = "שְׁלַב פִּתּוּחַ נִמְשַׁךְ שְׁמוֹנָה שָׁבוּעוֹת בִּגְלַל אִינְטֶגְרַצְיוֹת רְחָבוֹת.",
             exampleNative = "שְׁלַב פִּתּוּחַ длился восемь недель из-за широких интеграций.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176524, setId = 1765, languagePair = "he-ru", rarity = "RARE",

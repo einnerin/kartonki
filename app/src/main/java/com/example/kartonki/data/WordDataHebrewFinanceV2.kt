@@ -53,7 +53,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Официальная валюта Израиля, состоит из ста мелких единиц.",
             example = "שִׁילַּמְתִּי בְּשֶׁקֶל חָדָשׁ עַל הַקִּילוֹ תַּפּוּחִים.",
             exampleNative = "Я заплатил в שֶׁקֶל חָדָשׁ за килограмм яблок.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162002, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
@@ -81,7 +80,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Маленький металлический кружок с фиксированной денежной стоимостью.",
             example = "הַיֶּלֶד שָׂם מַטְבֵּעַ בַּקּוּפְסָה.",
             exampleNative = "Ребёнок положил מַטְבֵּעַ в коробочку.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162005, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
@@ -227,7 +225,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Небольшая сумма, которую отдают нуждающемуся или благотворителям.",
             example = "הוּא נָתַן צְדָקָה לְיֶלֶד בָּרְחוֹב.",
             exampleNative = "Он дал צְדָקָה мальчику на улице.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162001L, 162002L, 162003L, 162004L, 162005L, 162014L, 162015L, 162021L, 162022L)),
         WordEntity(
             id = 162021, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
@@ -255,7 +252,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Сберегать деньги в сторону и не тратить их на всё подряд.",
             example = "אֲנַחְנוּ מְנַסִּים לַחֲסוֹךְ לִקְנִיַּת מַחְשֵׁב.",
             exampleNative = "Мы стараемся לַחֲסוֹךְ на покупку компьютера.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162024, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
@@ -295,7 +291,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Личная банковская карта, списывающая деньги прямо со счёта при оплате.",
             example = "שִׁלַּמְתִּי עַל הָאֹכֶל בְּכַרְטִיס חִיּוּב אִישִׁי.",
             exampleNative = "Я заплатил за еду через כַּרְטִיס חִיּוּב אִישִׁי.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162103, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
@@ -314,7 +309,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Число, которое показывает, сколько денег есть или нужно заплатить.",
             example = "הַסְּכוּם בַּחֶשְׁבּוֹן הָיָה גָּדוֹל מִמָּה שֶׁחָשַׁבְתִּי.",
             exampleNative = "סְכוּם в счёте оказался больше, чем я думал.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162105, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
@@ -343,7 +337,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Работник магазина, который предлагает товары и принимает оплату.",
             example = "הַמּוֹכֵר עָזַר לִי לִמְצוֹא מִדָּה מַתְאִימָה.",
             exampleNative = "מוֹכֵר помог мне найти подходящий размер.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162108, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
@@ -362,7 +355,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Небольшой магазин, где продают еду, посуду и хозтовары.",
             example = "קָנִיתִי סַבּוֹן בַּחֲנוּת כָּל-בּוֹ בָּרְחוֹב.",
             exampleNative = "Я купил мыло в חֲנוּת כָּל-בּוֹ на соседней улице.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162110, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
@@ -372,7 +364,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Официальная бумажка из магазина с подтверждением оплаты покупки.",
             example = "תִּשְׁמְרִי אֶת הַקַּבָּלָה לְמִקְרֶה שֶׁל הֶחְזֵר.",
             exampleNative = "Сохрани קַבָּלָה на случай возврата.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162111, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
@@ -400,7 +391,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Покупать что-то важное, часто в деловой или формальной речи.",
             example = "הַמִּשְׁפָּחָה מְתַכְנֶנֶת לִרְכֹּשׁ דִּירָה חֲדָשָׁה בַּקַּיִץ.",
             exampleNative = "Семья планирует לִרְכֹּשׁ новую квартиру летом.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162114, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
@@ -410,7 +400,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Открытое место, где под навесами продают овощи и хозтовары.",
             example = "בַּשּׁוּק הָעִיר תָּמִיד יֵשׁ הַרְבֵּה אֲנָשִׁים.",
             exampleNative = "На שׁוּק הָעִיר всегда много людей.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162115, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
@@ -449,7 +438,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Отправить деньги через израильское приложение-перевод Bit.",
             example = "הֶחְלַטְתִּי לְהַעֲבִיר בְּבִיט לַחֲבֵרָה.",
             exampleNative = "Я решил לְהַעֲבִיר בְּבִיט подруге.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162119, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
@@ -629,7 +617,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Личный росчерк от руки на бланке, подтверждающий согласие на действие.",
             example = "הַבַּנְק דּוֹרֵשׁ חֲתִימַת לָקוֹחַ עַל כָּל בַּקָּשָׁה.",
             exampleNative = "Банк требует חֲתִימַת לָקוֹחַ на каждой заявке.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162213, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -648,7 +635,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Текущая сумма на счёте после всех зачислений и списаний.",
             example = "יִתְרַת הַחֶשְׁבּוֹן הָיְתָה קְטַנָּה מְאוֹד בָּעֲשִׂירִי.",
             exampleNative = "יִתְרַת הַחֶשְׁבּוֹן была очень мала десятого числа.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162202L, 162203L, 162207L, 162208L, 162212L, 162213L, 162217L, 162219L, 162225L)),
         WordEntity(
             id = 162215, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -772,7 +758,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Полная сумма по договору до всех удержаний и налогов.",
             example = "הַשָּׂכָר בְּרוּטוֹ שֶׁלִּי עָלָה בְּעֶשֶׂר אֲחוּזִים.",
             exampleNative = "שָׂכָר בְּרוּטוֹ вырос на десять процентов.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162303, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -792,7 +777,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Процент, который государство удерживает с зарплаты по шкале ставок.",
             example = "בַּתְּלוּשׁ מוֹפִיעַ מַס הַכְנָסָה שֶׁל אֶלֶף שֶׁקֶל.",
             exampleNative = "В расчётке указан מַס הַכְנָסָה в тысячу шекелей.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162301L, 162302L, 162303L, 162305L, 162306L, 162307L, 162308L, 162309L, 162310L, 162311L, 162312L, 162313L, 162315L, 162316L, 162317L, 162318L, 162319L, 162320L, 162321L, 162324L, 162325L)),
         WordEntity(
             id = 162305, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -830,7 +814,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Регулярные платежи за электричество, воду, газ и городской налог на жильё.",
             example = "חֶשְׁבּוֹנוֹת קוֹמוּנָלִים הִגִּיעוּ בְּבַת אַחַת.",
             exampleNative = "חֶשְׁבּוֹנוֹת קוֹמוּנָלִים пришли все разом.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162309L, 162310L, 162311L, 162312L, 162313L, 162315L, 162319L, 162321L, 162324L, 162325L)),
         WordEntity(
             id = 162309, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -860,7 +843,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Платёж муниципалитету за площадь квартиры, по квадратам и району.",
             example = "אַרְנוֹנָה עִירוֹנִית עוֹלָה יוֹתֵר בְּתֵל אָבִיב.",
             exampleNative = "אַרְנוֹנָה עִירוֹנִית выше в Тель-Авиве.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162301L, 162305L, 162308L, 162309L, 162310L, 162312L, 162317L, 162324L, 162325L)),
         WordEntity(
             id = 162312, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -889,7 +871,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Ежемесячный документ с брутто, нетто, налогами и удержаниями работника.",
             example = "שָׁמַרְתִּי כָּל תְּלוּשׁ שָׂכָר מְפֻרָט בַּתִּיקִיָּה.",
             exampleNative = "Я сохранил каждую תְּלוּשׁ שָׂכָר מְפֻרָט в папке.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162301L, 162302L, 162303L, 162309L, 162310L, 162311L, 162312L, 162317L, 162318L, 162320L, 162321L, 162324L, 162325L)),
         WordEntity(
             id = 162315, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -936,7 +917,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Сумма, которую работодатель платит работнику при увольнении после года.",
             example = "קִבַּלְתִּי פִּיצּוּיֵי פִּטּוּרִין אַחֲרֵי שְׁמוֹנֶה שָׁנִים.",
             exampleNative = "Я получил פִּיצּוּיֵי פִּטּוּרִין после восьми лет работы.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162301L, 162302L, 162303L, 162305L, 162306L, 162307L, 162308L, 162309L, 162310L, 162311L, 162312L, 162313L, 162314L, 162316L, 162317L, 162318L, 162320L, 162321L, 162324L, 162325L)),
         WordEntity(
             id = 162320, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -955,7 +935,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Годовая выплата работнику на отдых и продолжение работы.",
             example = "דְּמֵי הַבְרָאָה שְׁנָתִיִּים הִגִּיעוּ בְּאוֹגוּסְט.",
             exampleNative = "דְּמֵי הַבְרָאָה שְׁנָתִיִּים пришли в августе.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162301L, 162302L, 162303L, 162308L, 162313L, 162314L, 162319L, 162320L)),
         WordEntity(
             id = 162322, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -1032,7 +1011,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Разбиение большой суммы на серию равных платежей в течение нескольких месяцев.",
             example = "קָנִינוּ מְקָרֵר בְּתַשְׁלוּמִים בִּפְרִיסָה.",
             exampleNative = "Мы купили холодильник в תַּשְׁלוּמִים בִּפְרִיסָה.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162405, setId = 1624, languagePair = "he-ru", rarity = "RARE",
@@ -1051,7 +1029,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Покупка акций стабильных компаний по цене ниже внутренней стоимости.",
             example = "הַשְׁקָעָה בִּמְנָיוֹת עֵרֶךְ מֵבִיאָה רֶוַח בָּטוּחַ בַּטְּוָח אָרוֹךְ.",
             exampleNative = "הַשְׁקָעָה בִּמְנָיוֹת עֵרֶךְ приносит надёжный доход в долгую.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162407, setId = 1624, languagePair = "he-ru", rarity = "RARE",
@@ -1145,7 +1122,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Размещать деньги в активы с надеждой на заметную прибыль через много лет.",
             example = "הֶחְלַטְתִּי לְהַשְׁקִיעַ בַּטְּוָח אָרוֹךְ בְּמַס שְׁמָר.",
             exampleNative = "Я решил לְהַשְׁקִיעַ בַּטְּוָח אָרוֹךְ через дочерний фонд.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162417, setId = 1624, languagePair = "he-ru", rarity = "RARE",
@@ -1239,7 +1215,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Постоянный рост уровня цен, продолжающийся месяцами или годами.",
             example = "אִינְפְלַצְיָה מַמְשִׁיכָה שׁוֹחֶקֶת אֶת הַחִסָּכוֹן שֶׁל אֶזְרָחִים.",
             exampleNative = "אִינְפְלַצְיָה מַמְשִׁיכָה съедает сбережения граждан.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162502L, 162503L, 162511L, 162512L, 162514L, 162515L, 162517L, 162519L)),
         WordEntity(
             id = 162502, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1249,7 +1224,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Общее снижение цен в течение долгого времени, сжимающее потребление.",
             example = "דֵפְלַצְיָה מִתְמַשֶּׁכֶת מְסוּכֶּנֶת לַעֲבוֹדָה וְגִיּוּס.",
             exampleNative = "דֵפְלַצְיָה מִתְמַשֶּׁכֶת опасна для занятости и найма.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162503L, 162511L, 162512L, 162514L, 162515L, 162517L, 162519L)),
         WordEntity(
             id = 162503, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1259,7 +1233,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Денежная стоимость всех товаров и услуг, произведённых в стране за год.",
             example = "תּוֹצָר מְקוֹמִי גּוֹלְמִי גָּדַל בָּרֶבַע הָרִאשׁוֹן.",
             exampleNative = "תּוֹצָר מְקוֹמִי גּוֹלְמִי вырос в первом квартале.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162502L, 162505L, 162506L, 162508L, 162511L, 162512L, 162514L, 162515L, 162517L, 162518L, 162519L, 162520L, 162521L, 162525L)),
         WordEntity(
             id = 162504, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1279,7 +1252,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Устойчивый разрыв между расходами и доходами государства, не зависящий от цикла.",
             example = "גֵּרָעוֹן תַּקְצִיבִי מִבְנִי הוֹלֵךְ וְגָדֵל בָּעֲשׂוֹרִים הָאַחֲרוֹנִים.",
             exampleNative = "גֵּרָעוֹן תַּקְצִיבִי מִבְנִי растёт в последние десятилетия.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162503L, 162504L, 162506L, 162513L, 162514L, 162517L, 162518L, 162521L, 162522L)),
         WordEntity(
             id = 162506, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1289,7 +1261,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Суммарные обязательства государства перед заграницей и собственным населением.",
             example = "חוֹב לְאוּמִּי כּוֹלֵל עָלָה לְשִׁשִּׁים אָחוּז מֵהַתּוֹצָר.",
             exampleNative = "חוֹב לְאוּמִּי כּוֹלֵל поднялся до шестидесяти процентов ВВП.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162504L, 162505L, 162513L, 162514L, 162517L, 162518L, 162522L)),
         WordEntity(
             id = 162507, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1335,7 +1306,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Соотношение валют, определяемое рынком по свободному спросу и предложению.",
             example = "שַׁעַר חֲלִיפִין צָף מְשַׁקֵּף אֶת מַצַּב הַכַּלְכָּלָה.",
             exampleNative = "שַׁעַר חֲלִיפִין צָף отражает состояние экономики.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162512L, 162514L, 162515L, 162517L, 162519L)),
         WordEntity(
             id = 162512, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1345,7 +1315,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Стабильная в долгую валюта, принятая для торговли и сбережений по всему миру.",
             example = "יִשְׂרָאֵל שׁוֹמֶרֶת רֶזֶרְבוֹת בְּמַטְבֵּעַ קָשֶׁה בֵּינְלְאוּמִּי.",
             exampleNative = "Израиль хранит резервы в מַטְבֵּעַ קָשֶׁה בֵּינְלְאוּמִּי.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162511L, 162514L, 162515L, 162517L, 162519L)),
         WordEntity(
             id = 162513, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1364,7 +1333,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Процент людей в трудоспособном возрасте, ищущих и не находящих работу.",
             example = "שִׁעוּר אַבְטָלָה לְאוּמִּי יָרַד בַּחֲצִי הַשָּׁנָה.",
             exampleNative = "שִׁעוּר אַבְטָלָה לְאוּמִּי снизился за полгода.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162505L, 162506L, 162511L, 162512L, 162515L, 162517L, 162519L, 162520L, 162525L)),
         WordEntity(
             id = 162515, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1374,7 +1342,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Действия Банка Израиля по снижению ставки и поощрению кредитов и инвестиций.",
             example = "מְדִינִיּוּת מוֹנֶטָרִית מַרְחִיבָה הִגְבִּירָה אֶת הַצְּרִיכָה.",
             exampleNative = "מְדִינִיּוּת מוֹנֶטָרִית מַרְחִיבָה ускорила потребление.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162511L, 162512L, 162514L, 162517L, 162519L)),
         WordEntity(
             id = 162516, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1393,7 +1360,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Ежемесячный показатель изменения цен типовой потребительской корзины семьи.",
             example = "מַדָּד הַמְּחִירִים לַצַּרְכָן עָלָה בַּחֲצִי אָחוּז.",
             exampleNative = "מַדָּד הַמְּחִירִים לַצַּרְכָן вырос на полпроцента.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162505L, 162506L, 162511L, 162512L, 162514L, 162515L, 162518L, 162519L, 162520L, 162525L)),
         WordEntity(
             id = 162518, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1403,7 +1369,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Объём иностранных валют, хранимых Банком Израиля для защиты шекеля.",
             example = "רֶזֶרְבוֹת מַטְבֵּעַ חוּץ הִגִּיעוּ לְשִׂיא חָדָשׁ.",
             exampleNative = "רֶזֶרְבוֹת מַטְבֵּעַ חוּץ достигли нового максимума.",
-            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(162501L, 162503L, 162504L, 162505L, 162506L, 162513L, 162517L, 162520L, 162521L, 162522L, 162525L)),
         WordEntity(
             id = 162519, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
@@ -1450,7 +1415,6 @@ object WordDataHebrewFinanceV2 {
             definitionNative = "Действие центробанка по удержанию низкой инфляции и стабильности курса.",
             example = "בַּנְק יִשְׂרָאֵל פּוֹעֵל לְיַצֵּב מְחִירִים מַקְרוֹ.",
             exampleNative = "Банк Израиля работает, чтобы לְיַצֵּב מְחִירִים מַקְרוֹ.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 162524, setId = 1625, languagePair = "he-ru", rarity = "EPIC",

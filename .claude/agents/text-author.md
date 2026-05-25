@@ -210,6 +210,8 @@ bash scripts/validate/validate_all.sh <setId>
 | `validate_original_in_example` | `example` не содержит `original` (или 3-буквенный stem с Hebrew-prefix tolerance) — переписать example так, чтобы изучаемое слово реально в нём было |
 | `validate_no_foreign_in_examplenative` | `exampleNative` начинается со строчной латинской/русской — переписать русское начало с заглавной |
 | `validate_no_clerical` | Канцелярит в любом из 4 полей — заменить на живой язык (см. список запрещённых токенов в `validate_no_clerical.py`) |
+| `validate_hebrew_transliteration_format` | (he-ru) Hebrew transliteration в IPA-стиле (`[biˈdud]`, `ŋ`) — переписать в латинскую транскрипцию (`bidud`, `marketing`). Никаких IPA-символов и скобок `[...]`. |
+| `validate_blank_ambiguity_hebrew` | (he-ru) Слово помечено `isFillInBlankSafe=true` но `HebrewBlankMatcher` не находит original в example. Либо переписать example чтобы original (или с prefix-letter `[הבלמכוש]`) реально был в нём, либо явно поставить `isFillInBlankSafe = false`. |
 | `validate_fields_filled` пропускает, а `validate_group_sizes`/`validate_pos_values` падают | Это не твоя зона (pos/semanticGroup — работа metadata-filler). Значит ими не заполнено в этом setId. В отчёте пометь, что `metadata-filler` должен пройтись после тебя |
 
 Агент НЕ трогает `pos` и `semanticGroup` (это зона metadata-filler), но **сам проверяет**, что 4 текстовых поля удовлетворяют соответствующим валидаторам: `validate_fields_filled` (в части 4 text-полей), `validate_text_lengths`, `validate_no_cognates`.

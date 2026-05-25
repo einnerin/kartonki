@@ -54,7 +54,6 @@ object WordDataHebrewBaristaL4 {
             definitionNative = "Свойства почвы, климата и высоты, отпечатанные во вкусе сорта с конкретного места.",
             example = "הַטֵּרוּאָר שֶׁל הַזַּן הַזֶּה מַזְכִּיר אֲדָמַת הָרֵי גְּוָאטֶמָלָה.",
             exampleNative = "טֵרוּאָר этого сорта напоминает почву гор Гватемалы.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179602, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
@@ -111,7 +110,6 @@ object WordDataHebrewBaristaL4 {
             definitionNative = "Мелкие однородные пузырьки, дающие гладкую фактуру как у краски.",
             example = "בְּלִי קֶצֶף מִיקְרוֹ אִי אֶפְשָׁר לְצַיֵּר דְּגָמִים מְדֻיָּקִים.",
             exampleNative = "Без קֶצֶף מִיקְרוֹ нельзя нарисовать аккуратные узоры.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179608, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
@@ -159,7 +157,6 @@ object WordDataHebrewBaristaL4 {
             definitionNative = "Отрезок после первого щелчка, в котором достраивается итоговый вкус.",
             example = "זְמַן פִּתּוּחַ אָרֹךְ נוֹתֵן גּוּף עָבֶה וּמְתִיקוּת עֲמֻקָּה.",
             exampleNative = "Долгое זְמַן פִּתּוּחַ даёт густое тело и глубокую сладость.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 179613, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -187,7 +184,6 @@ object WordDataHebrewBaristaL4 {
             definitionNative = "Первый период обжарки, в котором уходит большая часть влаги из косточки.",
             example = "בְּפֶרֶק יִבּוּשׁ הַחֹם נִשְׁאָר נָמוּךְ וְהַזֶּרַע מַחֲלִיף צֶבַע.",
             exampleNative = "В פֶּרֶק יִבּוּשׁ жар держится низким, и зерно меняет цвет.",
-            isFillInBlankSafe = false,
         ),
 
         // ── barista_brewing_advanced (5) — продвинутая заварка ──
@@ -282,7 +278,6 @@ object WordDataHebrewBaristaL4 {
             definitionNative = "Авторская подача участника с добавками из ягод, фруктов или специй.",
             example = "הַסִּיגְנָטוּרָה שֶׁלִּי כּוֹלֶלֶת בָּזִיל קָר וּטְלוֹאָת לִימוֹן.",
             exampleNative = "הַסִּיגְנָטוּרָה моя содержит холодный базилик и лимонную капельку.",
-            isFillInBlankSafe = false,
         ),
     )
 }

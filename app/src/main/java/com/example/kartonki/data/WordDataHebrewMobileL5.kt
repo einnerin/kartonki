@@ -119,7 +119,6 @@ object WordDataHebrewMobileL5 {
             definitionNative = "Один склад кода, где живут вместе iOS, Android и общие библиотеки.",
             example = "הַמַּעֲבָר לְ-מוֹנוֹרֵפּוֹ הִקְפִּיא לָנוּ פִּתּוּחַ לְשָׁבוּעַ שָׁלֵם.",
             exampleNative = "Переход на מוֹנוֹרֵפּוֹ заморозил нам разработку на целую неделю.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178507, setId = 1785, languagePair = "he-ru", rarity = "EPIC",
@@ -203,7 +202,6 @@ object WordDataHebrewMobileL5 {
             definitionNative = "Дистанционный механизм погасить фичу или версию — когда обнаружили серьёзную проблему.",
             example = "קִיל סְוִוץ' עָצַר אֶת הַתַּשְׁלוּמִים אַחֲרֵי שֶׁשֶּׁרֶת חִיצוֹנִי הִתְמוֹטֵט.",
             exampleNative = "קִיל סְוִוץ' остановил оплаты после того как внешний сервер рухнул.",
-            isFillInBlankSafe = false,
         ),
 
         // ── mobile_compliance (5) — регуляторика и правила сторов ──
@@ -271,7 +269,6 @@ object WordDataHebrewMobileL5 {
             definitionNative = "Подробный файл — показывает каждое действие процессора и памяти во время работы Android.",
             example = "טְרֵייס פֵּרְפֶטוֹ חָשַׂף קְפִיצָה שֶׁל ג'יסי דַּוְקָא בָּרֶגַע הַקְּרִיטִי.",
             exampleNative = "טְרֵייס פֵּרְפֶטוֹ выявил скачок GC именно в самый критичный момент.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 178523, setId = 1785, languagePair = "he-ru", rarity = "LEGENDARY",

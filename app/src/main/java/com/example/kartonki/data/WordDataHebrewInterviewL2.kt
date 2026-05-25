@@ -176,7 +176,6 @@ object WordDataHebrewInterviewL2 {
             definitionNative = "Маленькая неформальная встреча людей сферы после работы — в пабе или офисе.",
             example = "בַּמִּיטָאפּ פָּגַשְׁתִּי בָּחוּר שֶׁעוֹבֵד בַּחֶבְרָה שֶׁל חֲלוֹמוֹתַי.",
             exampleNative = "На מִיטָאפּ я встретил парня из фирмы моей мечты.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 175313, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",

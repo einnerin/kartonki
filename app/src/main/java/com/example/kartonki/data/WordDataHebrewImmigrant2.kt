@@ -63,8 +63,7 @@ object WordDataHebrewImmigrant2 {
             definition = "הַחֶדֶר הָרָאשִׁי בַּדִּירָה, שָׁם מְקַבְּלִים אוֹרְחִים.",
             definitionNative = "Главная комната в квартире, где принимают гостей.",
             example = "הַסָּלוֹן גָּדוֹל וּבָהִיר עִם מִרְפֶּסֶת.",
-            exampleNative = "סָלוֹן большой и светлый, с балконом.",
-         isFillInBlankSafe = false),
+            exampleNative = "סָלוֹן большой и светлый, с балконом."),
         WordEntity(
             id = 102606, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "shoker",
@@ -81,8 +80,7 @@ object WordDataHebrewImmigrant2 {
             definition = "הַבְּעָלִים שֶׁל הַדִּירָה הַמַּשְׂכִּירִים אוֹתָהּ לָשׁוֹכֵר.",
             definitionNative = "Владелец квартиры, сдающий её арендатору.",
             example = "הַמַּשְׂכִּיר אָסַר עַל חֲיוֹת בַּדִּירָה.",
-            exampleNative = "מַשְׂכִּיר запретил держать животных в квартире.",
-         isFillInBlankSafe = false),
+            exampleNative = "מַשְׂכִּיר запретил держать животных в квартире."),
         WordEntity(
             id = 102608, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "dalan",
@@ -99,8 +97,7 @@ object WordDataHebrewImmigrant2 {
             definition = "רָמָה אַחַת בְּבִנְיָן שֶׁבָּהּ נִמְצָאוֹת הַדִּירוֹת.",
             definitionNative = "Один уровень в здании, на котором расположены квартиры.",
             example = "הַדִּירָה שֶׁלָּנוּ בַּקּוֹמָה הַשְּׁלִישִׁית.",
-            exampleNative = "Наша квартира на третьем קוֹמָה.",
-         isFillInBlankSafe = false),
+            exampleNative = "Наша квартира на третьем קוֹמָה."),
         WordEntity(
             id = 102610, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "pikadon",
@@ -117,8 +114,7 @@ object WordDataHebrewImmigrant2 {
             definition = "יָצִיאָה מֵחוּץ לַדִּירָה עִם מַעֲקֶה.",
             definitionNative = "Выступ снаружи квартиры с перилами.",
             example = "אֲנִי אוֹהֵב לִשְׁתּוֹת קָפֶה בַּמִּרְפֶּסֶת בַּבֹּקֶר.",
-            exampleNative = "Я люблю пить кофе на מִרְפֶּסֶת по утрам.",
-         isFillInBlankSafe = false),
+            exampleNative = "Я люблю пить кофе на מִרְפֶּסֶת по утрам."),
         WordEntity(
             id = 102612, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "ma'alit",
@@ -126,8 +122,7 @@ object WordDataHebrewImmigrant2 {
             definition = "מַכְשִׁיר הַמַּעֲלֶה וּמוֹרִיד אֲנָשִׁים בֵּין קוֹמוֹת הַבְּנִיָּן.",
             definitionNative = "Устройство, поднимающее и опускающее людей между этажами здания.",
             example = "הַמַּעֲלִית לֹא עוֹבֶדֶת הַיּוֹם, צָרִיךְ לָלֶכֶת בַּמַּדְרֵגוֹת.",
-            exampleNative = "מַעֲלִית сегодня не работает, нужно идти по лестнице.",
-         isFillInBlankSafe = false),
+            exampleNative = "מַעֲלִית сегодня не работает, нужно идти по лестнице."),
         WordEntity(
             id = 102613, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "makhsan",
@@ -135,8 +130,7 @@ object WordDataHebrewImmigrant2 {
             definition = "חֶדֶר קָטָן לְאִחְסוּן חֲפָצִים שֶׁאֵין מֶקוֹם לָהֶם בַּדִּירָה.",
             definitionNative = "Маленькая комната для хранения вещей, которым нет места в квартире.",
             example = "שָׂמַנוּ אֶת הָאוֹפַנַּיִם בַּמַּחְסָן.",
-            exampleNative = "Мы поставили велосипеды в מַחְסָן.",
-         isFillInBlankSafe = false),
+            exampleNative = "Мы поставили велосипеды в מַחְסָן."),
         WordEntity(
             id = 102614, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "housing", transliteration = "takala",
@@ -248,8 +242,7 @@ object WordDataHebrewImmigrant2 {
             definition = "אִישּׁוּר בִּכְתָב עַל תַּשְׁלוּם שֶׁבוּצַּע.",
             definitionNative = "Письменное подтверждение произведённого платежа.",
             example = "שְׁמוֹר אֶת הַקְּבָּלָה לְכָל תַּשְׁלוּם שְׁכִירוּת.",
-            exampleNative = "Храни קְבָּלָה за каждый арендный платёж.",
-         isFillInBlankSafe = false),
+            exampleNative = "Храни קְבָּלָה за каждый арендный платёж."),
         WordEntity(
             id = 102706, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities", transliteration = "khov",
@@ -275,8 +268,7 @@ object WordDataHebrewImmigrant2 {
             definition = "מְעַבָּר מְחֻבָּר לְהַעֲבָרַת מַיִם, גָּז אוֹ נוֹזְלִים אֲחֵרִים.",
             definitionNative = "Соединённый канал для передачи воды, газа или других жидкостей.",
             example = "יֵשׁ בְּעָיָה בַּצִּנּוֹר — הַמַּיִם לֹא זוֹרְמִים.",
-            exampleNative = "Есть проблема с צִנּוֹר — вода не течёт.",
-         isFillInBlankSafe = false),
+            exampleNative = "Есть проблема с צִנּוֹר — вода не течёт."),
         WordEntity(
             id = 102709, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities", transliteration = "delef",
@@ -329,8 +321,7 @@ object WordDataHebrewImmigrant2 {
             definition = "תְּהַלִיךְ הֲשָׁבַת מַכְשִׁיר אוֹ מִבְנֶה לְפַעֲלוּתוֹ הַתְּקִינָה.",
             definitionNative = "Процесс восстановления прибора или конструкции в рабочее состояние.",
             example = "קָרָאנוּ לְחַשְׁמַלַאי לְתִקּוּן הַשֶּׁבֶר.",
-            exampleNative = "Мы вызвали электрика для תִּקּוּן поломки.",
-         isFillInBlankSafe = false),
+            exampleNative = "Мы вызвали электрика для תִּקּוּן поломки."),
         WordEntity(
             id = 102715, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities", transliteration = "khayuv",

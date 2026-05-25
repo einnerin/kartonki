@@ -140,7 +140,7 @@ object WordDataHebrewNatureIsraeli {
             example = "אֶלֶף עֲגוּרִים יָרְדוּ בַּשָּׂדֶה לְיַד הַכְּפָר בְּנוֹבֶמְבֶּר.",
             exampleNative = "Тысячи עֲגוּרִים сели на поле у деревни в ноябре.",
             transliteration = "агур",
-            pos = "noun", semanticGroup = "nature_il_birds"),
+            pos = "noun", semanticGroup = "nature_il_birds", isFillInBlankSafe = false),
 
         WordEntity(id = 191308, setId = 1913, languagePair = "he-ru", rarity = "RARE",
             original = "רָחָם",

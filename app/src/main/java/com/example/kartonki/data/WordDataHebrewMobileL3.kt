@@ -169,7 +169,6 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Официальная среда разработки от Google для приложений под её систему.",
             example = "אַנְדְרוֹייד סְטוּדִיוֹ מַצִּיעַ אֶמוּלָטוֹר מוּבְנֶה לִבְדִיקַת הַקּוֹד.",
             exampleNative = "אַנְדְרוֹייד סְטוּדִיוֹ предлагает встроенный эмулятор для проверки кода.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176914, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
@@ -199,7 +198,6 @@ object WordDataHebrewMobileL3 {
             definitionNative = "Визуальное расположение элементов на экране — что где и какого размера.",
             example = "הַמְּעַצֵּב שִׁנָּה אֶת הַלֵּייאַאוּט שֶׁל הַטֹּפֶס פַּעֲמַיִם בִּשְׁבוּעַיִם.",
             exampleNative = "Дизайнер менял לֵייאַאוּט формы дважды за две недели.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 176917, setId = 1769, languagePair = "he-ru", rarity = "RARE",

@@ -107,7 +107,6 @@ object WordDataHebrewMobileL4 {
             definitionNative = "Улучшение заголовка, описания и ключевых слов в сторе — чтобы выходить выше в поиске.",
             example = "אֵיי-אֶס-אוֹ הִקְפִּיץ אֶת הַהוֹרָדוֹת בְּעֶשְׂרִים אָחוּז בְּחֹדֶשׁ.",
             exampleNative = "אֵיי-אֶס-אוֹ поднял загрузки на двадцать процентов за месяц.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177007, setId = 1770, languagePair = "he-ru", rarity = "EPIC",
@@ -267,7 +266,6 @@ object WordDataHebrewMobileL4 {
             definitionNative = "Слой связи между JS-движком и нативной частью — передаёт сообщения в обе стороны.",
             example = "בְּרִידְג' בְּרֵייאַקְט נֵייטִיב הָיָה צַוַּאר בַּקְבּוּק בִּגְלִילוֹת אֲרֻכּוֹת.",
             exampleNative = "בְּרִידְג' в React Native стал бутылочным горлышком при длинных списках.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 177024, setId = 1770, languagePair = "he-ru", rarity = "LEGENDARY",

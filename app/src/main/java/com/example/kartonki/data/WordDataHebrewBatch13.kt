@@ -51,8 +51,7 @@ object WordDataHebrewBatch13 {
             definition = "מוֹסָד רִשְׁמִי הַמַּכְרִיעַ בְּסַכְסוּכִים וּמַחִיל אֶת הַחוֹק.",
             definitionNative = "Официальный орган, разрешающий споры и применяющий закон.",
             example = "הַתִּיק הוּגַּשׁ לְבֵית מִשְׁפָּט שָׁלוֹם בָּעִיר.",
-            exampleNative = "Дело было подано в מוֹסָד בֵּית מִשְׁפָּט шалом в городе.",
-         isFillInBlankSafe = false),
+            exampleNative = "Дело было подано в מוֹסָד בֵּית מִשְׁפָּט шалом в городе."),
         WordEntity(
             id = 106303, setId = 1063, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "shofét",
@@ -60,8 +59,7 @@ object WordDataHebrewBatch13 {
             definition = "פָּקִיד שִׁפּוּטִי בַּעַל סַמְכוּת לִפְסֹק בִּסְכָסוּכִים מִשְׁפָּטִיִּים.",
             definitionNative = "Должностное лицо с полномочиями выносить решения по правовым спорам.",
             example = "הַשּׁוֹפֵט הִזְמִין אֶת שְׁנֵי הַצְּדָדִים לִישִׁיבַת בֵּינַיִם.",
-            exampleNative = "שׁוֹפֵט вызвал обе стороны на промежуточное заседание.",
-         isFillInBlankSafe = false),
+            exampleNative = "שׁוֹפֵט вызвал обе стороны на промежуточное заседание."),
         WordEntity(
             id = 106304, setId = 1063, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "khok",
@@ -106,8 +104,7 @@ object WordDataHebrewBatch13 {
             definition = "עוֹרֵךְ דִּין הַמְּייצֵג אֶת הַנֶּאֱשָׁם בְּהֶלִיכֵי מִשְׁפָּט.",
             definitionNative = "Адвокат, представляющий обвиняемого в судебном процессе.",
             example = "הַסָּנֵגוֹר הִגִּישׁ בַּקָּשָׁה לְשִׁחְרוּר בְּעֵרוּבוֹן.",
-            exampleNative = "סָנֵגוֹר подал ходатайство об освобождении под залог.",
-         isFillInBlankSafe = false),
+            exampleNative = "סָנֵגוֹר подал ходатайство об освобождении под залог."),
         WordEntity(
             id = 106309, setId = 1063, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern", transliteration = "tviyá",
@@ -330,8 +327,7 @@ object WordDataHebrewBatch13 {
             definition = "עָנַף הַמִּשְׁפָּט הָעוֹסֵק בְּיַחֲסִים מִסְחָרִיִּים בֵּין חֶבְרוֹת וְיַחִידִים.",
             definitionNative = "Отрасль права, регулирующая коммерческие отношения между компаниями и частными лицами.",
             example = "הַמִּשְׂרָד מִתְמַחֶה בְּדִין מִסְחָרִי וְדִין חֶבְרוֹת.",
-            exampleNative = "Контора специализируется на דִּין מִסְחָרִי и корпоративном праве.",
-         isFillInBlankSafe = false),
+            exampleNative = "Контора специализируется на דִּין מִסְחָרִי и корпоративном праве."),
         WordEntity(
             id = 106408, setId = 1064, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern_advanced", transliteration = "kinyán ruhani",
@@ -348,8 +344,7 @@ object WordDataHebrewBatch13 {
             definition = "מִי שֶׁהוּגַּשׁ נֶגְדּוֹ כֶּתֶב אִישּׁוּם בְּבֵית מִשְׁפָּט.",
             definitionNative = "Тот, против кого предъявлено обвинительное заключение в суде.",
             example = "הַנֶּאֱשָׁם שָׁמַר עַל זְכוּת הַשְּׁתִיקָה לְאוֹרֶךְ כָּל הַחֲקִירָה.",
-            exampleNative = "נֶאֱשָׁם сохранял право на молчание на протяжении всего допроса.",
-         isFillInBlankSafe = false),
+            exampleNative = "נֶאֱשָׁם сохранял право на молчание на протяжении всего допроса."),
         WordEntity(
             id = 106410, setId = 1064, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern_advanced", transliteration = "katégor",
@@ -357,8 +352,7 @@ object WordDataHebrewBatch13 {
             definition = "גוֹרֶם הַמַּגִּישׁ אִשּׁוּמִים בִּשְׁמָה שֶׁל הַמְּדִינָה אוֹ הַנִּפְגָּע.",
             definitionNative = "Сторона, предъявляющая обвинения от имени государства или потерпевшего.",
             example = "הַקַּטֵּגוֹר טָעַן כִּי הָרְאָיוֹת חַד-מַשְׁמָעִיּוֹת.",
-            exampleNative = "קַטֵּגוֹר заявил, что доказательства однозначны.",
-         isFillInBlankSafe = false),
+            exampleNative = "קַטֵּגוֹר заявил, что доказательства однозначны."),
         WordEntity(
             id = 106411, setId = 1064, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern_advanced", transliteration = "ktav ishúm",

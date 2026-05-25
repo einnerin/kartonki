@@ -54,7 +54,6 @@ object WordDataHebrewReligionL1 {
             definitionNative = "Маленький пергамент с отрывками из Торы, прикреплённый к дверному косяку.",
             example = "אִמָּא נוֹשֶׁקֶת לַמְּזוּזָה לִפְנֵי הַיְּצִיאָה.",
             exampleNative = "Мама целует מְזוּזָה перед выходом из дома.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170103, setId = 1701, languagePair = "he-ru", rarity = "COMMON",
@@ -84,7 +83,6 @@ object WordDataHebrewReligionL1 {
             definitionNative = "Седьмой день недели, день покоя и святости в иудаизме.",
             example = "בַּשַּׁבָּת אֲנַחְנוּ לֹא עוֹבְדִים.",
             exampleNative = "В שַׁבָּת мы не работаем.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170106, setId = 1701, languagePair = "he-ru", rarity = "COMMON",
@@ -94,7 +92,6 @@ object WordDataHebrewReligionL1 {
             definitionNative = "Особый плетёный хлеб, который едят за субботним или праздничным столом.",
             example = "אַבָּא בּוֹצֵעַ אֶת הַחַלָּה בִּתְחִלַּת סְעֻדַּת הַשַּׁבָּת.",
             exampleNative = "Папа преломляет חַלָּה в начале субботней трапезы.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170107, setId = 1701, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -209,7 +206,6 @@ object WordDataHebrewReligionL1 {
             definitionNative = "Выделенный для религиозного назначения, обладающий особым высшим статусом.",
             example = "יוֹם הַשַּׁבָּת קָדוֹשׁ לְעַם יִשְׂרָאֵל.",
             exampleNative = "Суббота — קָדוֹשׁ день для еврейского народа.",
-            isFillInBlankSafe = false,
         ),
 
         // ── religion_soul (4 — 2 COMMON + 2 UNCOMMON; душа и потусторонний мир) ──
@@ -230,7 +226,6 @@ object WordDataHebrewReligionL1 {
             definitionNative = "Высшее место, где, согласно религии, пребывает Всевышний.",
             example = "הוּא הִבִּיט לַשָּׁמַיִם וְהִתְפַּלֵּל.",
             exampleNative = "Он посмотрел в שָׁמַיִם и помолился.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170121, setId = 1701, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -240,7 +235,6 @@ object WordDataHebrewReligionL1 {
             definitionNative = "Райское место на небесах, где обитают души праведников.",
             example = "סָבָא שֶׁלִּי בְּגַן עֵדֶן עַכְשָׁו.",
             exampleNative = "Мой дедушка теперь в גַּן עֵדֶן.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170122, setId = 1701, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -262,7 +256,6 @@ object WordDataHebrewReligionL1 {
             definitionNative = "Человек, который передаёт народу слова Бога и предупреждает о грядущем.",
             example = "מֹשֶׁה רַבֵּנוּ הָיָה הַנָּבִיא הַגָּדוֹל בְּיוֹתֵר.",
             exampleNative = "Моисей был величайшим נָבִיא.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 170124, setId = 1701, languagePair = "he-ru", rarity = "UNCOMMON",

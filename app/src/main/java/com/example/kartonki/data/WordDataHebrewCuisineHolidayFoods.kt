@@ -156,8 +156,7 @@ object WordDataHebrewCuisineHolidayFoods {
             example = "סָבְתָּא הָאַשְׁכְּנַזִּית בִּשְּׁלָה קְרֶפְּלָךְ בְּמָרָק הַתַּרְנְגוֹלֶת.",
             exampleNative = "Ашкеназская бабушка отварила קְרֶפְּלָךְ в курином бульоне.",
             transliteration = "крэплах",
-            pos = "noun", semanticGroup = "food_holidays_purim",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "food_holidays_purim"),
 
         WordEntity(id = 191608, setId = 1916, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "סְעוּדַת פּוּרִים",
@@ -335,8 +334,7 @@ object WordDataHebrewCuisineHolidayFoods {
             example = "אַחֲרֵי הַלְוָיָה הִגִּישׁוּ לֶחֶם וּבֵיצָה קָשָׁה לָאֲבֵלִים.",
             exampleNative = "После похорон скорбящим подали хлеб и בֵּיצָה קָשָׁה.",
             transliteration = "бэйца каша",
-            pos = "phrase", semanticGroup = "food_holidays_other",
-            isFillInBlankSafe = false),
+            pos = "phrase", semanticGroup = "food_holidays_other"),
 
         WordEntity(id = 191625, setId = 1916, languagePair = "he-ru", rarity = "RARE",
             original = "טִישׁ",
@@ -346,7 +344,6 @@ object WordDataHebrewCuisineHolidayFoods {
             example = "הַחֲסִידִים הִתְכַּנְּסוּ לְטִישׁ אָרֹךְ בְּלֵיל שִׂמְחַת תּוֹרָה.",
             exampleNative = "Хасиды собрались на долгий טִישׁ в вечер Симхат Торы.",
             transliteration = "тиш",
-            pos = "noun", semanticGroup = "food_holidays_other",
-            isFillInBlankSafe = false),
+            pos = "noun", semanticGroup = "food_holidays_other"),
     )
 }

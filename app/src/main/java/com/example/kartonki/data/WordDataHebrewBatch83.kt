@@ -75,7 +75,6 @@ object WordDataHebrewBatch83 {
             definitionNative = "День строгого поста в память о разрушении Иерусалимского святилища.",
             example = "בְּתִשְׁעָה בְּאָב לֹא אוֹכְלִים וְיוֹשְׁבִים עַל הָרִצְפָּה.",
             exampleNative = "В תִּשְׁעָה בְּאָב не едят и сидят на полу в знак скорби.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 151206, setId = 1512, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -130,7 +129,6 @@ object WordDataHebrewBatch83 {
             definitionNative = "День воздержания от еды и питья ради покаяния или скорбной памяти.",
             example = "אָסוּר לֶאֱכֹל מֵהַשַּׁחַר עַד הַלַּיְלָה בְּתַעֲנִית.",
             exampleNative = "Запрещено есть с рассвета до ночи в день תַּעֲנִית.",
-            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 151212, setId = 1512, languagePair = "he-ru", rarity = "RARE",
@@ -257,7 +255,6 @@ object WordDataHebrewBatch83 {
             definitionNative = "Каббалистическая идея: Творец прячет свой свет, освобождая место для мира.",
             example = "תּוֹרַת הַצִּמְצוּם הִיא יְסוֹד הַקַּבָּלָה הָאֲרִיזַ\"לִית.",
             exampleNative = "Учение о צִמְצוּם — основа каббалы рабби Ицхака Лурии.",
-            isFillInBlankSafe = false,
         ),
 
         // ──────────────────────────────────────────────────────────────────
