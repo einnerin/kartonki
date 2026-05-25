@@ -225,7 +225,7 @@ object WordDataEnglishNatureGeology {
         WordEntity(
             id = 46322, original = "fissure", transliteration = "[ˈfɪʃər]", translation = "трещина / расщелина",
             definition = "A long narrow crack in rock or in the ground, often from pressure or an earthquake.",
-            definitionNative = "Длинная узкая трещина в породе или в земле: часто от давления или землетрясения.",
+            definitionNative = "Длинный узкий разлом в породе или в земле: часто от давления или землетрясения.",
             example = "Smoke and steam hissed out of a wide fissure near the volcano's base.",
             exampleNative = "Дым и пар с шипением вырывались из широкой fissure у подножия вулкана.",
             rarity = "EPIC", setId = 463, languagePair = "en-ru", pos = "noun",

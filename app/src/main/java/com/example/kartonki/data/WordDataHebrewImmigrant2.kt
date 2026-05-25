@@ -381,7 +381,7 @@ object WordDataHebrewImmigrant2 {
             pos = "noun", semanticGroup = "utilities", transliteration = "pinui",
             original = "פִּנּוּי", translation = "вывоз / утилизация",
             definition = "הוֹצָאַת אַשְׁפָּה אוֹ פְּסֹלֶת מֵהַמְּקוֹם עַל יְדֵי שֵׁרוּת.",
-            definitionNative = "Вывоз мусора или отходов с места силами соответствующей службы.",
+            definitionNative = "Удаление мусора или отходов с места силами соответствующей службы.",
             example = "פִּנּוּי אַשְׁפָּה מִתְבַּצֵּעַ פַּעֲמַיִם בְּשָׁבוּעַ בָּרְחוֹב שֶׁלָּנוּ.",
             exampleNative = "פִּנּוּי мусора происходит дважды в неделю на нашей улице.",
          fillInBlankExclusions = listOf(102710L)),

@@ -242,7 +242,7 @@ object WordDataEnglishMusicL1 {
         WordEntity(id = 40022, setId = 400, languagePair = "en-ru", rarity = "COMMON",
             original = "band", transliteration = "[bænd]", translation = "группа",
             definition = "A small group of people who play music together — usually three to six.",
-            definitionNative = "Небольшая группа людей, которые играют музыку вместе — обычно три-шесть человек.",
+            definitionNative = "Небольшой коллектив людей, которые играют музыку вместе — обычно три-шесть человек.",
             example = "Their band practices in the garage every Friday evening.",
             exampleNative = "Их band репетирует в гараже каждый вечер пятницы.",
             pos = "noun", semanticGroup = "music_l1_people", fillInBlankExclusions = listOf(40021L, 40023L, 40024L, 40025L)),

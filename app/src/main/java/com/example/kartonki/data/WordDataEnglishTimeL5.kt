@@ -164,7 +164,7 @@ object WordDataEnglishTimeL5 {
             transliteration = "[ˈjɛstərˌjɪr]",
             translation = "минувшие годы (поэт./книжн.)",
             definition = "The years that have already gone by — a poetic word for a recent vanished past.",
-            definitionNative = "Уже минувшие годы — поэтическое слово о недавнем растаявшем прошлом.",
+            definitionNative = "Прежние времена — поэтическое слово о недавнем растаявшем прошлом.",
             example = "Songs of yesteryear filled the smoky tavern that night.",
             exampleNative = "Песни yesteryear заполнили дымную таверну той ночью.",
             pos = "noun", semanticGroup = "time_l5_literary", fillInBlankExclusions = listOf(38901L, 38902L, 38906L, 38907L, 38908L, 38909L)),

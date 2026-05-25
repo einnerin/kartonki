@@ -800,7 +800,7 @@ object WordDataEnglishBatch11 {
         WordEntity(id = 27810, setId = 278, languagePair = "en-ru", rarity = "COMMON",
             original = "track", translation = "дорожка / трек",
             definition = "A special oval path where people run or cars race.",
-            definitionNative = "Овальная дорожка, по которой бегают или гоняют машины.",
+            definitionNative = "Овальный круг на стадионе, по которому бегают или гоняют машины.",
             example = "The runners warmed up on the track before the race.",
             exampleNative = "После школы мы бегаем по track за стадионом.",
             pos = "noun", semanticGroup = "sport_running", fillInBlankExclusions = listOf(27813L, 27814L, 27818L)),

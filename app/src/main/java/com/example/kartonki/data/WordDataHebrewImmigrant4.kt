@@ -227,7 +227,7 @@ object WordDataHebrewImmigrant4 {
             pos = "noun", semanticGroup = "nature", transliteration = "negev",
             original = "נֶגֶב", translation = "Негев (пустыня на юге Израиля)",
             definition = "מִדְבַּר הַנֶּגֶב בְּדָרוֹם יִשְׂרָאֵל — הַחֵלֶק הַגָּדוֹל בְּיוֹתֵר שֶׁל הָאָרֶץ.",
-            definitionNative = "Пустыня Негев на юге Израиля — крупнейшая часть страны.",
+            definitionNative = "Огромная сухая пустыня на юге Израиля — крупнейшая часть страны.",
             example = "מִצְפֵּה רָמוֹן נִמְצֵא בְּמֶרְכַּז הַנֶּגֶב.",
             exampleNative = "Мицпе-Рамон расположен в центре הַנֶּגֶב.",
          isFillInBlankSafe = false),

@@ -745,7 +745,7 @@ object WordDataEnglishAnimals {
         WordEntity(id = 43814, setId = 438, languagePair = "en-ru", rarity = "EPIC",
             original = "ibex", transliteration = "[ˈaɪˌbɛks]", translation = "горный козёл",
             definition = "A wild mountain goat with huge curved horns that climbs sheer cliffs.",
-            definitionNative = "Дикий горный козёл с огромными изогнутыми рогами — карабкается по отвесным скалам.",
+            definitionNative = "Дикий обитатель высокогорий с огромными изогнутыми рогами — карабкается по отвесным скалам.",
             example = "A bold ibex balanced on a tiny ledge above the gorge.",
             exampleNative = "Смелый ibex стоял на крошечном выступе над ущельем.",
             pos = "noun", semanticGroup = "animal_african", fillInBlankExclusions = listOf(43811L, 43812L, 43813L, 43815L)),

@@ -79,7 +79,7 @@ object WordDataEnglishJournalismL4 {
             original = "lede", transliteration = "[liːd]", translation = "первый абзац (\"зачин\")",
             pos = "noun", semanticGroup = "journalism_editorial_process",
             definition = "The opening paragraph that hooks the reader and states the main point.",
-            definitionNative = "Первый абзац материала — зацепляет читателя и излагает суть новости.",
+            definitionNative = "Открывающая часть статьи — цепляет читателя и излагает суть новости.",
             example = "A strong lede can save even a dull story from the bin.",
             exampleNative = "Сильный lede может спасти даже скучный материал от корзины.",
             fillInBlankExclusions = listOf(31005L, 31025L),

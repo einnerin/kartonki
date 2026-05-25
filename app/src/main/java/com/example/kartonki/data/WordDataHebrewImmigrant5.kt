@@ -129,7 +129,7 @@ object WordDataHebrewImmigrant5 {
             pos = "noun", semanticGroup = "shuk", transliteration = "s'kit",
             original = "שְׂקִית", translation = "пакет / мешочек",
             definition = "כְּלִי אֲרִיזָה מִנְיָלוֹן אוֹ נְיָר לְהַכָּנַסַת מֻצָרִים.",
-            definitionNative = "Упаковочный пакет из пластика или бумаги для товаров.",
+            definitionNative = "Лёгкая ёмкость из пластика или бумаги — туда складывают покупки.",
             example = "שַׂמְתִּי אֶת הַיְּרָקוֹת בַּשְּׂקִית.",
             exampleNative = "Я положил овощи в שְׂקִית.",
          isFillInBlankSafe = false),

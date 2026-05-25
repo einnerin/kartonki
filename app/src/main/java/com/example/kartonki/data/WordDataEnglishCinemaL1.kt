@@ -216,7 +216,7 @@ object WordDataEnglishCinemaL1 {
         WordEntity(id = 39519, setId = 395, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "opener", transliteration = "[ˈoʊpənər]", translation = "первая сцена",
             definition = "The first scene of a film or show that pulls you in right away.",
-            definitionNative = "Самая первая сцена фильма или сериала, которая сразу тебя цепляет.",
+            definitionNative = "Самый начальный эпизод фильма или сериала, который сразу тебя цепляет.",
             example = "The opener with the car chase made me sit up and pay attention.",
             exampleNative = "Opener с погоней на машинах заставил меня выпрямиться и смотреть внимательно.",
             pos = "noun", semanticGroup = "cinema_l1_watching", fillInBlankExclusions = listOf(39501L, 39516L, 39517L, 39520L, 39524L, 39525L)),

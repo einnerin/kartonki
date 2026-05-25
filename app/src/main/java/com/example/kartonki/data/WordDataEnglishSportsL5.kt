@@ -113,7 +113,7 @@ object WordDataEnglishSportsL5 {
         WordEntity(id = 31610, setId = 316, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "gauntlet", translation = "перчатка (для соколиной охоты)",
             definition = "A thick leather glove that protects the hand carrying a falcon.",
-            definitionNative = "Толстая кожаная перчатка — защищает руку, на которой сидит сокол.",
+            definitionNative = "Толстая кожаная рукавица — защищает руку, на которой сидит сокол.",
             example = "He pulled on the heavy gauntlet before raising his arm.",
             exampleNative = "Он надел тяжёлый gauntlet, прежде чем поднять руку.",
             transliteration = "[ˈgɔntlət]",

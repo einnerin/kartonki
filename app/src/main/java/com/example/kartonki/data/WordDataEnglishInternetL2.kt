@@ -61,7 +61,7 @@ object WordDataEnglishInternetL2 {
         WordEntity(id = 39102, setId = 391, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "mention", transliteration = "[ˈmɛnʃən]", translation = "упоминание (с @)",
             definition = "A short note about a user with the @ sign so they get a ping.",
-            definitionNative = "Короткое упоминание пользователя со знаком @, чтобы ему пришло оповещение.",
+            definitionNative = "Короткая отметка пользователя со знаком @, чтобы ему пришло оповещение.",
             example = "He got a friendly mention from a famous chef on the platform.",
             exampleNative = "Он получил дружеский mention от известного шеф-повара на платформе.",
             pos = "noun", semanticGroup = "internet_l2_engagement", fillInBlankExclusions = listOf(39101L, 39104L, 39105L, 39106L, 39110L, 39118L, 39123L, 39124L)),

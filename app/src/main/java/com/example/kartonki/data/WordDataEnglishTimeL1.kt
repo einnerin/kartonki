@@ -258,7 +258,7 @@ object WordDataEnglishTimeL1 {
         WordEntity(id = 38525, setId = 385, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "yearly", transliteration = "[ˈjɪrli]", translation = "ежегодный",
             definition = "Happening one time each year — like a birthday or a check-up.",
-            definitionNative = "Происходящий один раз в каждом году — как день рождения или ежегодный осмотр.",
+            definitionNative = "Случающийся один раз за двенадцать месяцев — как день рождения или регулярный осмотр.",
             example = "We have a yearly family trip to the lake.",
             exampleNative = "У нас yearly семейная поездка на озеро.",
             pos = "adjective", semanticGroup = "time_l1_freq", fillInBlankExclusions = listOf(38520L, 38523L, 38524L)),

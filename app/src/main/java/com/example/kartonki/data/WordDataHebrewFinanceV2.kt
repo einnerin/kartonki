@@ -252,7 +252,7 @@ object WordDataHebrewFinanceV2 {
             pos = "verb", semanticGroup = "buy_sell_actions", transliteration = "лехасех",
             original = "לַחֲסוֹךְ", translation = "откладывать / копить",
             definition = "לָשִׂים כֶּסֶף בַּצַּד וְלֹא לְהוֹצִיא אוֹתוֹ עַל כָּל דָּבָר.",
-            definitionNative = "Откладывать деньги в сторону и не тратить их на всё подряд.",
+            definitionNative = "Сберегать деньги в сторону и не тратить их на всё подряд.",
             example = "אֲנַחְנוּ מְנַסִּים לַחֲסוֹךְ לִקְנִיַּת מַחְשֵׁב.",
             exampleNative = "Мы стараемся לַחֲסוֹךְ на покупку компьютера.",
             isFillInBlankSafe = false,

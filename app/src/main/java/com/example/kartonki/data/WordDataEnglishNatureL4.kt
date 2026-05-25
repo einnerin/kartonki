@@ -195,7 +195,7 @@ object WordDataEnglishNatureL4 {
         WordEntity(id = 33217, setId = 332, languagePair = "en-ru", rarity = "RARE",
             original = "preservation", transliteration = "[ˌprɛzərˈveɪʃən]", translation = "сохранение (в нетронутом виде)",
             definition = "Keeping a place exactly as it is, without letting people use or change it.",
-            definitionNative = "Сохранение места ровно таким, какое оно есть, без человеческого использования или изменения.",
+            definitionNative = "Поддержание места ровно таким, какое оно есть, без вмешательства людей.",
             example = "Strict preservation of the old-growth forest leaves it untouched by loggers.",
             exampleNative = "Строгая preservation старого леса оставляет его нетронутым лесорубами.",
             pos = "noun", semanticGroup = "nature_conservation",

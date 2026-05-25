@@ -248,7 +248,7 @@ object WordDataEnglishIdiomsL1 {
         WordEntity(id = 40522, setId = 405, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "hit the road", transliteration = "[hɪt ðə roʊd]", translation = "отправиться в путь",
             definition = "To leave a place and start a journey.",
-            definitionNative = "Уйти откуда-то и отправиться в путь. Дословно — «ударить по дороге».",
+            definitionNative = "Уехать с места и тронуться в долгую поездку — дословно «ударить по дороге».",
             example = "It's getting late — we should hit the road soon.",
             exampleNative = "Уже поздно — нам пора hit the road.",
             pos = "phrase", semanticGroup = "idioms_l1_actions", fillInBlankExclusions = listOf(40512L, 40521L, 40523L, 40524L, 40525L)),

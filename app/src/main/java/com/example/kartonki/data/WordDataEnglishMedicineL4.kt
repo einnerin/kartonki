@@ -82,7 +82,7 @@ object WordDataEnglishMedicineL4 {
         WordEntity(id = 32205, setId = 322, languagePair = "en-ru", rarity = "RARE",
             original = "prognosis", transliteration = "[prɑɡˈnoʊsɪs]", translation = "прогноз (исхода болезни)",
             definition = "A medical forecast of how a disease is likely to develop and end.",
-            definitionNative = "Медицинский прогноз: как болезнь, вероятно, будет развиваться и чем закончится.",
+            definitionNative = "Медицинское предсказание: как болезнь, вероятно, будет развиваться и чем закончится.",
             example = "Without surgery the prognosis remains poor over the next two years.",
             exampleNative = "Без операции prognosis остаётся неблагоприятным в ближайшие два года.",
             pos = "noun", semanticGroup = "medicine_diagnosis", fillInBlankExclusions = listOf(32201L, 32202L, 32203L, 32204L)),

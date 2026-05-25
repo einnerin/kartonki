@@ -205,7 +205,7 @@ object WordDataEnglishTimeL4 {
         WordEntity(id = 38818, setId = 388, languagePair = "en-ru", rarity = "EPIC",
             original = "hereinafter", transliteration = "[ˌhɪrɪnˈæftər]", translation = "далее (по тексту)",
             definition = "From this point on in a written paper — a formal pointer used by lawyers.",
-            definitionNative = "С этого места и далее в бумаге — формальный указатель, которым пользуются юристы.",
+            definitionNative = "С этого места и до конца документа — формальный указатель, которым пользуются юристы.",
             example = "The buyer, hereinafter called the Client, agrees to the terms.",
             exampleNative = "Покупатель, hereinafter именуемый Клиентом, соглашается с условиями.",
             pos = "adverb", semanticGroup = "time_l4_relative_formal", fillInBlankExclusions = listOf(38816L, 38817L, 38819L, 38820L)),

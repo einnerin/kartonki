@@ -225,7 +225,7 @@ object WordDataEnglishHealthFitnessL4 {
         WordEntity(id = 35421, setId = 354, languagePair = "en-ru", rarity = "EPIC",
             original = "taper", transliteration = "[ˈteɪpər]", translation = "снижение нагрузки (перед стартом)",
             definition = "A planned drop in training load shortly before a big race or contest.",
-            definitionNative = "Запланированное снижение нагрузки незадолго до крупного старта или соревнования.",
+            definitionNative = "Запланированное облегчение тренировок незадолго до крупного старта или соревнования.",
             example = "A two-week taper sharpens the legs before a marathon.",
             exampleNative = "Двухнедельный taper свежит ноги перед марафоном.",
             pos = "noun", semanticGroup = "health_pro_training", fillInBlankExclusions = listOf(35422L, 35425L)),

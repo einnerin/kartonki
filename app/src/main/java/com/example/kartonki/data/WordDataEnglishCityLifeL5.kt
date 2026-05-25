@@ -256,7 +256,7 @@ object WordDataEnglishCityLifeL5 {
         WordEntity(id = 36925, setId = 369, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "levy", transliteration = "[ˈlɛvi]", translation = "сбор / налог (введённый властью)",
             definition = "A charge that an authority imposes on people to raise public money.",
-            definitionNative = "Сбор, который власть налагает на людей ради общей казны.",
+            definitionNative = "Особый платёж, который власть налагает на людей ради общей казны.",
             example = "Voters approved a small levy to keep the public library open longer.",
             exampleNative = "Жители одобрили небольшой levy, чтобы библиотека работала дольше.",
             pos = "noun", semanticGroup = "city_advanced_finance", fillInBlankExclusions = listOf(36921L, 36922L, 36923L, 36924L)),

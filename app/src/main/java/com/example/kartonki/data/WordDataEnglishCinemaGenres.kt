@@ -209,7 +209,7 @@ object WordDataEnglishCinemaGenres {
         WordEntity(id = 45619, setId = 456, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "docuseries", transliteration = "[ˈdɑkjəˌsɪriz]", translation = "документальный сериал",
             definition = "A non-fiction show built from real footage that runs across several episodes.",
-            definitionNative = "Документальный сериал из настоящих съёмок, идущий через несколько серий.",
+            definitionNative = "Многочастная история из реальных съёмок — про природу, людей или события.",
             example = "Their docuseries about wildfire crews captured every long sleepless night.",
             exampleNative = "Их docuseries о пожарных бригадах снял каждую долгую бессонную ночь.",
             pos = "noun", semanticGroup = "cinema_genres_tv_formats", fillInBlankExclusions = listOf(45616L, 45617L, 45618L, 45620L)),

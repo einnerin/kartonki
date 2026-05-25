@@ -675,7 +675,7 @@ object WordDataHebrewBatch15 {
             pos = "noun", semanticGroup = "politics", transliteration = "shvuá",
             original = "שְׁבוּעָה", translation = "присяга; клятва",
             definition = "הַצְהָרָה חַגִּיגִית שֶׁל אֱמוּנִים לַמְּדִינָה אוֹ לַתַּפְקִיד.",
-            definitionNative = "Торжественная присяга на верность государству или должности.",
+            definitionNative = "Торжественное обещание верности государству или должности.",
             example = "כֻּלָּם נִשְׁבְּעוּ שְׁבוּעַת אֱמוּנִים בְּטֶקֶס הַכְּנִיסָה לַתַּפְקִיד.",
             exampleNative = "Все принесли שְׁבוּעָה верности на церемонии вступления в должность.",
          isFillInBlankSafe = false),

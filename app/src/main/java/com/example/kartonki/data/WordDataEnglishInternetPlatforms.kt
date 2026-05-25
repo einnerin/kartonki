@@ -217,7 +217,7 @@ object WordDataEnglishInternetPlatforms {
         WordEntity(id = 45419, setId = 454, languagePair = "en-ru", rarity = "RARE",
             original = "ad-free", transliteration = "[ˌæd ˈfri]", translation = "без рекламы (о платном тарифе)",
             definition = "Of a paid plan that lets you watch or read with no ads breaking the flow.",
-            definitionNative = "О платном тарифе, который позволяет смотреть или читать без рекламы, рвущей поток.",
+            definitionNative = "О платном тарифе, где можно смотреть или читать без баннеров и роликов.",
             example = "I finally paid for the ad-free version of my favourite podcast app.",
             exampleNative = "Я наконец заплатил за ad-free версию любимого подкаст-приложения.",
             pos = "adjective", semanticGroup = "internet_l6_creator_econ"),

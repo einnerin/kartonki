@@ -332,7 +332,7 @@ object WordDataHebrewAdvanced {
         WordEntity(id = 101701, setId = 1017, languagePair = "he-ru", rarity = "UNCOMMON", original = "תְּפִיסָה", transliteration = "tepisa", translation = "концепция; восприятие", pos = "noun", semanticGroup = "abstract",
             definition = "a way of understanding or interpreting something; a concept or idea",
             example = "תְּפִיסַת הָעוֹלָם שלו שונה לחלוטין.",
-            definitionNative = "Способ понять или интерпретировать что-либо; концепция или идея.",
+            definitionNative = "Способ понять или интерпретировать что-либо; устоявшееся представление или идея.",
             exampleNative = "Его תְּפִיסָה мира совершенно отличается.", isFillInBlankSafe = false),
 
         WordEntity(

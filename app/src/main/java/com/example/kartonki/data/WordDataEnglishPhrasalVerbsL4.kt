@@ -76,7 +76,7 @@ object WordDataEnglishPhrasalVerbsL4 {
         WordEntity(id = 41302, setId = 413, languagePair = "en-ru", rarity = "EPIC",
             original = "drum up", transliteration = "[drʌm ʌp]", translation = "раздобыть, привлечь (поддержку, бизнес)",
             definition = "To get support, interest or business through active effort.",
-            definitionNative = "Активными усилиями раздобыть поддержку, интерес или клиентов.",
+            definitionNative = "Активными усилиями добиться поддержки, интереса или клиентов.",
             example = "We need to drum up new clients before the quarter ends.",
             exampleNative = "Нам нужно drum up новых клиентов до конца квартала.",
             pos = "phrase", semanticGroup = "phrasal_l4_advanced_business", fillInBlankExclusions = listOf(41301L, 41303L, 41304L, 41305L, 41320L, 41324L)),
