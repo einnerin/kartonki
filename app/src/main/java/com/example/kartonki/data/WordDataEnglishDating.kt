@@ -704,7 +704,7 @@ object WordDataEnglishDating {
             definition = "A close romantic connection, often discreet and outside marriage.",
             definitionNative = "Тесная романтическая связь — часто скрытая или вне брака.",
             example = "The diplomat's liaison with the journalist made the front page.",
-            exampleNative = "liaison дипломата с журналисткой попала на первую полосу.",
+            exampleNative = "Тайная liaison дипломата с журналисткой попала на первую полосу.",
             pos = "noun", semanticGroup = "dating_emotions_l3", fillInBlankExclusions = listOf(44721L, 44722L, 44723L)),
 
         // ╔══════════════════════════════════════════════════════════════════╗
@@ -913,7 +913,7 @@ object WordDataEnglishDating {
             definition = "Hit so hard by new love that you walk around dazed and silent.",
             definitionNative = "Настолько сражён новой любовью, что ходишь оглушённый и молчишь.",
             example = "The lovestruck student forgot his keys three days in a row.",
-            exampleNative = "lovestruck студент трижды подряд забыл ключи.",
+            exampleNative = "Совершенно lovestruck студент трижды подряд забыл ключи дома.",
             pos = "adjective", semanticGroup = "dating_terms_l4"),
 
         // ╔══════════════════════════════════════════════════════════════════╗
@@ -1057,7 +1057,7 @@ object WordDataEnglishDating {
             definition = "Filled with romantic feelings or eager for an intimate moment.",
             definitionNative = "Полный романтических чувств или жаждущий близости.",
             example = "The amorous knight wrote a sonnet under her tower window.",
-            exampleNative = "amorous рыцарь сочинил сонет под окном её башни.",
+            exampleNative = "Влюблённый amorous рыцарь сочинил сонет под окном её башни.",
             pos = "adjective", semanticGroup = "dating_archaic_states", fillInBlankExclusions = listOf(44918L, 44919L, 44920L, 44921L)),
 
         WordEntity(id = 44918, setId = 449, languagePair = "en-ru", rarity = "LEGENDARY",

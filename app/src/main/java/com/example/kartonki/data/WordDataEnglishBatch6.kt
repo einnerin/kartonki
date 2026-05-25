@@ -276,8 +276,8 @@ object WordDataEnglishBatch6 {
             rarity = "UNCOMMON", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "business_project", fillInBlankExclusions = listOf(26011L)),
 
         WordEntity(id = 26013, original = "enclosure", transliteration = "[ɪnˈkloʊʒər]", translation = "вложение (в официальном письме)",
-            definition = "A document included with a formal letter, noted at the bottom as 'Enc.'",
-            definitionNative = "Бумага, приложенная к официальному документу — внизу ставят пометку 'Enc.'",
+            definition = "A document included with a formal letter, noted at the bottom as 'Enc.'.",
+            definitionNative = "Бумага, приложенная к официальному документу — внизу ставят пометку 'Enc.'.",
             example = "Please find the signed contract as an enclosure.",
             exampleNative = "В конце письма напиши Enc. если есть enclosure.",
             rarity = "RARE", setId = 260, languagePair = "en-ru", pos = "noun", semanticGroup = "document_parts", fillInBlankExclusions = listOf(26018L)),

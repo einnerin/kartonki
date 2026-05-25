@@ -977,7 +977,7 @@ object WordDataHebrewMedicineV2 {
             pos = "phrase", semanticGroup = "tests_advanced", transliteration = "bdikat ultrasaund",
             original = "בְּדִיקַת אוּלְטְרַסָאוּנְד", translation = "ультразвук",
             definition = "בְּדִיקָה הַמִּשְׁתַּמֶּשֶׁת בְּגַלֵּי קוֹל לִבְדֹּק אֵיבָר.",
-            definitionNative = "Процедура проверки органа посредством звуковых волн.",
+            definitionNative = "Проверка органа с помощью звуковых волн высокой частоты.",
             example = "בְּדִיקַת אוּלְטְרַסָאוּנְד נִמְשְׁכָה רֶבַע שָׁעָה.",
             exampleNative = "בְּדִיקַת אוּלְטְרַסָאוּנְד длилась четверть часа.",
             isFillInBlankSafe = false, fillInBlankExclusions = listOf(160405L, 160406L, 160407L, 160408L, 160409L, 160410L, 160413L, 160414L, 160418L, 160422L)),

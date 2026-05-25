@@ -150,7 +150,7 @@ object WordDataEnglishCinemaL3 {
             definition = "A group of leading actors who share the screen instead of one star carrying the film.",
             definitionNative = "Группа ведущих актёров, которые делят экран поровну, вместо того чтобы фильм держался на одной звезде.",
             example = "The heist movie's ensemble cast gave every thief a memorable scene.",
-            exampleNative = "ensemble cast в фильме об ограблении подарил каждому вору запоминающуюся сцену.",
+            exampleNative = "Сильный ensemble cast в фильме об ограблении подарил каждому вору запоминающуюся сцену.",
             pos = "noun", semanticGroup = "cinema_l3_industry_pro", fillInBlankExclusions = listOf(39712L, 39713L, 39714L, 39715L)),
 
         WordEntity(id = 39712, setId = 397, languagePair = "en-ru", rarity = "RARE",
@@ -182,7 +182,7 @@ object WordDataEnglishCinemaL3 {
             definition = "A dramatic film that tells the life story of a real, often famous person.",
             definitionNative = "Игровой фильм, рассказывающий историю жизни реального, часто известного человека.",
             example = "The biopic about the jazz pioneer earned three Oscar nominations.",
-            exampleNative = "biopic о пионере джаза получил три номинации на «Оскар».",
+            exampleNative = "Новый biopic о пионере джаза получил три номинации на «Оскар».",
             pos = "noun", semanticGroup = "cinema_l3_industry_pro", fillInBlankExclusions = listOf(39711L, 39712L, 39713L, 39714L, 39716L, 39719L)),
 
         // ── cinema_l3_genres_advanced (5) ─────────────────────────────────
@@ -200,7 +200,7 @@ object WordDataEnglishCinemaL3 {
             definition = "A style that pretends the film is real recordings discovered after the events.",
             definitionNative = "Стиль, при котором фильм выдают за настоящие записи, найденные уже после событий.",
             example = "The found-footage horror was shot entirely on shaky home cameras.",
-            exampleNative = "found-footage хоррор сняли целиком на трясущиеся домашние камеры.",
+            exampleNative = "Этот found-footage хоррор сняли целиком на трясущиеся домашние камеры.",
             pos = "adjective", semanticGroup = "cinema_l3_genres_advanced", fillInBlankExclusions = listOf(39712L, 39713L, 39714L)),
 
         WordEntity(id = 39718, setId = 397, languagePair = "en-ru", rarity = "RARE",
@@ -216,7 +216,7 @@ object WordDataEnglishCinemaL3 {
             definition = "A British style of drama showing the gritty daily life of working-class families.",
             definitionNative = "Британский тип драмы, показывающий грубую повседневную жизнь рабочих семей.",
             example = "The kitchen-sink drama unfolds entirely in a tiny council flat.",
-            exampleNative = "kitchen-sink drama разворачивается целиком в крошечной муниципальной квартире.",
+            exampleNative = "Эта kitchen-sink drama разворачивается целиком в крошечной муниципальной квартире.",
             pos = "noun", semanticGroup = "cinema_l3_genres_advanced", fillInBlankExclusions = listOf(39712L, 39713L, 39714L, 39715L, 39716L, 39718L, 39720L)),
 
         WordEntity(id = 39720, setId = 397, languagePair = "en-ru", rarity = "EPIC",
@@ -224,7 +224,7 @@ object WordDataEnglishCinemaL3 {
             definition = "A patient style that lingers on long, quiet shots and asks the viewer to wait.",
             definitionNative = "Терпеливый стиль, который задерживается на длинных тихих кадрах и просит зрителя ждать.",
             example = "Tarr's slow cinema demands attention many viewers can't give it.",
-            exampleNative = "slow cinema Тарра требует внимания, которое не каждый зритель готов отдать.",
+            exampleNative = "Медитативное slow cinema Тарра требует внимания, которое не каждый готов отдать.",
             pos = "noun", semanticGroup = "cinema_l3_genres_advanced", fillInBlankExclusions = listOf(39712L, 39713L, 39714L, 39715L, 39716L, 39718L, 39719L)),
 
         // ── cinema_l3_critique (5) ────────────────────────────────────────
@@ -250,7 +250,7 @@ object WordDataEnglishCinemaL3 {
             definition = "A high public honour or strong praise given for outstanding work.",
             definitionNative = "Высокая публичная награда или сильная похвала за выдающуюся работу.",
             example = "The lifetime achievement accolade brought the old director to tears.",
-            exampleNative = "accolade за вклад в кино довела старого режиссёра до слёз.",
+            exampleNative = "Высокая accolade за вклад в кино довела старого режиссёра до слёз.",
             pos = "noun", semanticGroup = "cinema_l3_critique", fillInBlankExclusions = listOf(39721L, 39722L, 39724L, 39725L)),
 
         WordEntity(id = 39724, setId = 397, languagePair = "en-ru", rarity = "EPIC",

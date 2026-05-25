@@ -790,7 +790,7 @@ object WordDataHebrewBatch49 {
             original = "מוֹנַרְכְיָה", transliteration = "monarkhya", translation = "монархия",
             pos = "noun", semanticGroup = "politics_government_forms",
             definition = "מִשְׁטָר שֶׁבּוֹ רֹאשׁ הַמְּדִינָה הוּא מֶלֶךְ אוֹ מַלְכָּה לְכָל הַחַיִּים.",
-            definitionNative = "Строй, где главой страны пожизненно является король или королева.",
+            definitionNative = "Строй, где страну пожизненно возглавляет король или королева.",
             example = "בְּרִיטַנְיָה נִשְׁאֲרָה מוֹנַרְכְיָה חוּקָתִית עַד הַיּוֹם.",
             exampleNative = "Британия осталась конституционной מוֹנַרְכְיָה до сегодня.", fillInBlankExclusions = listOf(127503L, 127506L, 127507L, 127508L)),
         WordEntity(id = 127510, setId = 1275, languagePair = "he-ru", rarity = "RARE",

@@ -228,7 +228,7 @@ object WordDataHebrewLawL1 {
             pos = "phrase", semanticGroup = "law_status_basic", transliteration = "тошав кавуа",
             original = "תּוֹשָׁב קָבוּעַ", translation = "постоянный житель / резидент",
             definition = "מִי שֶׁגָּר בָּאָרֶץ דֶּרֶךְ קֶבַע אַךְ עֲדַיִן אֵינוֹ אֶזְרָח.",
-            definitionNative = "Тот, кто живёт в стране на постоянной основе, но ещё не является гражданином.",
+            definitionNative = "Тот, кто живёт в стране на постоянной основе, но ещё не гражданин.",
             example = "תּוֹשָׁב קָבוּעַ זַכַּאי לְבִיטּוּחַ לְאוּמִּי.",
             exampleNative = "תּוֹשָׁב קָבוּעַ имеет право на национальное страхование.",
             isFillInBlankSafe = false,

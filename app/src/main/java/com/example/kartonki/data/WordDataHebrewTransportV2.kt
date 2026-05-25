@@ -290,8 +290,8 @@ object WordDataHebrewTransportV2 {
             original = "לִנְסוֹעַ", translation = "ехать / путешествовать",
             definition = "לָלֶכֶת מִמָּקוֹם לְמָקוֹם בְּכְלִי תַּחְבּוּרָה.",
             definitionNative = "Перемещаться из одного места в другое на транспорте.",
-            example = "אֲנַחְנוּ נוֹסְעִים לְחֵיפָה בַּבֹּקֶר.",
-            exampleNative = "Мы לִנְסוֹעַ в Хайфу утром.",
+            example = "אֲנַחְנוּ מְתַכְנְנִים לִנְסוֹעַ לְחֵיפָה מָחָר בַּבֹּקֶר.",
+            exampleNative = "Мы планируем לִנְסוֹעַ в Хайфу завтра утром.",
             isFillInBlankSafe = false),
         WordEntity(
             id = 163102, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
@@ -316,8 +316,8 @@ object WordDataHebrewTransportV2 {
             original = "לַעֲלוֹת", translation = "садиться (в транспорт)",
             definition = "לְהִכָּנֵס לְכְלִי תַּחְבּוּרָה לִפְנֵי הַנְּסִיעָה.",
             definitionNative = "Входить в транспорт перед поездкой.",
-            example = "אֲנִי עוֹלֶה לָאוֹטוֹבּוּס בַּתַּחֲנָה.",
-            exampleNative = "Я לַעֲלוֹת в автобус на остановке.",
+            example = "צָרִיךְ לַעֲלוֹת לָאוֹטוֹבּוּס בַּתַּחֲנָה הָרִאשׁוֹנָה.",
+            exampleNative = "Надо לַעֲלוֹת в автобус на первой остановке.",
             isFillInBlankSafe = false),
         WordEntity(
             id = 163105, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
@@ -325,8 +325,8 @@ object WordDataHebrewTransportV2 {
             original = "לָרֶדֶת", translation = "выходить (из транспорта)",
             definition = "לָצֵאת מִכְּלִי תַּחְבּוּרָה אַחֲרֵי הַנְּסִיעָה.",
             definitionNative = "Покинуть автобус, поезд или машину в конце поездки.",
-            example = "אֲנִי יוֹרֵד בַּתַּחֲנָה הַבָּאָה.",
-            exampleNative = "Я לָרֶדֶת на следующей остановке.",
+            example = "אֲנִי צָרִיךְ לָרֶדֶת בַּתַּחֲנָה הַבָּאָה לִפְנֵי הַגֶּשֶׁר.",
+            exampleNative = "Мне надо לָרֶדֶת на следующей остановке перед мостом.",
             isFillInBlankSafe = false),
 
         // ── tickets (5) ──
@@ -644,7 +644,7 @@ object WordDataHebrewTransportV2 {
             pos = "noun", semanticGroup = "routes", transliteration = "takhana beyneyma",
             original = "תַּחֲנַת בֵּינַיִים", translation = "промежуточная остановка",
             definition = "תַּחֲנָה בְּמַסְלוּל שֶׁאֵינָהּ נְקוּדַת הַהַתְחָלָה וְלֹא הַסּוֹף.",
-            definitionNative = "Остановка в пути, не являющаяся начальной и не конечной.",
+            definitionNative = "Остановка в пути — не начальная и не конечная.",
             example = "עָצַרְנוּ בְּתַחֲנַת בֵּינַיִים בְּרָמְלָה.",
             exampleNative = "Мы остановились на תַּחֲנַת בֵּינַיִים в Рамле.",
             isFillInBlankSafe = false),

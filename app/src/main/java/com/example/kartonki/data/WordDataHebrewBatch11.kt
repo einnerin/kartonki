@@ -311,7 +311,7 @@ object WordDataHebrewBatch11 {
             pos = "noun", semanticGroup = "pets_general", transliteration = "ba'al khayim",
             original = "בַּעַל חַיִּים", translation = "животное; живое существо",
             definition = "כָּל יְצוּר חַי שֶׁאֵינוֹ אָדָם.",
-            definitionNative = "Любое живое существо, не являющееся человеком.",
+            definitionNative = "Любое живое существо, кроме человека.",
             example = "חָשׁוּב לְהִתְיַחֵס לְכָל בַּעַל חַיִּים בְּכָבוֹד.",
             exampleNative = "Важно относиться к каждому בַּעַל חַיִּים с уважением.",
         ),

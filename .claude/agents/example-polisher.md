@@ -87,6 +87,25 @@ tools: Read, Grep, Glob, Edit, Bash
 - «שימושי ל...» в качестве стержня предложения
 - прочие учебные шаблоны 80-х
 
+### 6. Терминатор предложения
+`example` и `exampleNative` ОБЯЗАНЫ заканчиваться на `.`, `!`, `?`, `…` или закрывающую кавычку. Проверяется hard-блок-валидатором `validate_text_terminators`. Без точки = блок коммита.
+
+### 7. exampleNative — синхронно с example
+Когда правишь `example` — почти всегда нужно править и `exampleNative` (русский перевод). Они идут парой.
+
+**Железные правила для `exampleNative`:**
+- **Начинается с заглавной русской буквы** (или с цифры / открывающей кавычки / тире). Строчная латинская в начале = непереведённое английское слово, hard-блок-валидатор `validate_no_foreign_in_examplenative` это ловит. Строчная русская = грамматика. Hebrew-буквы в начале допустимы (язык без case).
+- Всё предложение — на русском. Латиница ≥3 букв допустима только когда это сам `original`, вшитый в русский текст как design pattern: «Наш dog каждый вечер встречает меня», «Большое תּוֹדָה за помощь». Латинский глагол/прилагательное в произвольном месте без перевода = баг.
+- Заканчивается терминатором (см. правило 6).
+
+**Анти-паттерн (мусор после copy-paste из English example):**
+```
+example:       "The proliferation of nuclear weapons poses a serious threat..."
+exampleNative: "proliferation ядерного оружия создаёт серьёзную угрозу..."
+                ↑ должно быть «Распространение ядерного оружия...»
+```
+Subagent перевёл хвост, забыл первое слово. Так делать НЕЛЬЗЯ.
+
 Если не можешь переписать без нарушения железного правила — флаг `needs_human_review`, старое оставить.
 
 ## Шаблон работы
@@ -120,7 +139,17 @@ tools: Read, Grep, Glob, Edit, Bash
 
 Edit **по каждому example отдельно**, ищем по уникальному контексту `setId = N + original = "word"`. Это даёт чистый git diff.
 
-**НЕ менять** другие поля: `original`, `translation`, `definition`, `id`, `setId`, `rarity`, `ipa`, `transliteration`.
+**НЕ менять** другие поля: `original`, `translation`, `definition`, `definitionNative`, `id`, `setId`, `rarity`, `ipa`, `transliteration`. Если меняешь `example`, можно (и обычно нужно) синхронно править `exampleNative` — это парные поля.
+
+## Финальная валидация (обязательно)
+
+После всех Edit'ов прогони для каждого затронутого setId:
+```bash
+bash scripts/validate/validate_original_in_example.sh <setId>
+bash scripts/validate/validate_no_foreign_in_examplenative.sh <setId>
+bash scripts/validate/validate_text_terminators.sh <setId>
+```
+Все три должны выдать ✅. Если ❌ — переделай конкретные слова и повтори. Не возвращай отчёт пока все три зелёные.
 
 ## Особые случаи
 

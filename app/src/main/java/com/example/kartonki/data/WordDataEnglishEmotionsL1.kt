@@ -88,7 +88,7 @@ object WordDataEnglishEmotionsL1 {
             definition = "Bright and full of fun — humming a tune, smiling at strangers.",
             definitionNative = "Светлый и полный веселья — напевает мелодию, улыбается прохожим.",
             example = "The cheerful waiter made everyone smile during dinner.",
-            exampleNative = "cheerful официант смешил каждого гостя за ужином.",
+            exampleNative = "Весёлый cheerful официант смешил каждого гостя за ужином.",
             pos = "adjective", semanticGroup = "emotions_basic_positive",
             isFillInBlankSafe = false, fillInBlankExclusions = listOf(36001L, 36003L, 36005L, 36006L, 36007L, 36009L, 36010L, 36011L, 36014L)),
 

@@ -51,6 +51,18 @@ tools: Read, Grep, Glob, Edit, Bash
 - Согласование с русской грамматикой вокруг вставки (падеж, род, число где применимо — слово остаётся в базовой форме, но окружение подстраивается)
 - **Для английских прилагательных** (urban, residential, grilled, vegetarian и т.п.) — **предпочитай предикативную позицию** («Блюдо вышло bland», «Всё это urban», «Наш квартал строго residential»), а не атрибутивную перед русским существительным («urban шум», «grilled стейк» — звучит как калька). Атрибутивная допустима, но часто сбоит стилистически — избегай, если есть альтернатива.
 - Слово в предложении должно иметь **чёткую синтаксическую роль**: подлежащее, объект в нужном падеже, или предикатив. Не вешать его случайно рядом с другим подлежащим.
+- **Начинается с заглавной русской буквы** (или цифры / открывающей кавычки / тире / Hebrew-буквы). НЕ со строчной латинской — это маркер копипасты из English example без перевода первого слова. Hard-блок-валидатор `validate_no_foreign_in_examplenative`.
+
+**Анти-паттерн (не повторять):**
+```
+example:       "The proliferation of nuclear weapons poses a serious threat..."
+exampleNative: "proliferation ядерного оружия создаёт серьёзную угрозу..."
+                ↑ должно быть «Распространение ядерного оружия...»
+```
+Subagent перевёл хвост и забыл первое слово. Hard-блок ловит.
+
+### Для ВСЕХ 4 полей
+- **Заканчивается терминатором** (`.` / `!` / `?` / `…` / `"`). Hard-блок-валидатор `validate_text_terminators`.
 
 Если не можешь написать хотя бы одно поле без нарушения железных правил — помечай запись `needs_human_review: true` и оставляй поле пустым/пропусти.
 
@@ -190,8 +202,14 @@ bash scripts/validate/validate_all.sh <setId>
 | Валидатор | Что делать |
 |-----------|-----------|
 | `validate_fields_filled` | Найти слова с незаполненным полем (пропустил Edit?), дописать по стандарту |
-| `validate_text_lengths` | Сократить: `definition`/`definitionNative` ≤14 слов/80 симв; `example` ≤12/80 (англ) или ≤10/70 (иврит); `exampleNative` ≤14/90 |
+| `validate_text_lengths` | Сократить: `definition`/`definitionNative` ≤16 слов/90 симв; `example` ≤14/90 (англ) или ≤12/80 (иврит); `exampleNative` ≤14/90 |
 | `validate_no_cognates` | Переписать определение без однокоренных (учесть исключение для многословных `original`) |
+| `validate_no_headword_in_def` | `original` не должен литерально стоять в собственном `definition` — переписать через смысл |
+| `validate_no_translation_in_defnative` | Русский `translation` не должен литерально стоять в собственном `definitionNative` — переписать без повторения перевода |
+| `validate_text_terminators` | Любое из 4 text-полей не заканчивается на `.`/`!`/`?`/`…`/`"` — добавить терминатор |
+| `validate_original_in_example` | `example` не содержит `original` (или 3-буквенный stem с Hebrew-prefix tolerance) — переписать example так, чтобы изучаемое слово реально в нём было |
+| `validate_no_foreign_in_examplenative` | `exampleNative` начинается со строчной латинской/русской — переписать русское начало с заглавной |
+| `validate_no_clerical` | Канцелярит в любом из 4 полей — заменить на живой язык (см. список запрещённых токенов в `validate_no_clerical.py`) |
 | `validate_fields_filled` пропускает, а `validate_group_sizes`/`validate_pos_values` падают | Это не твоя зона (pos/semanticGroup — работа metadata-filler). Значит ими не заполнено в этом setId. В отчёте пометь, что `metadata-filler` должен пройтись после тебя |
 
 Агент НЕ трогает `pos` и `semanticGroup` (это зона metadata-filler), но **сам проверяет**, что 4 текстовых поля удовлетворяют соответствующим валидаторам: `validate_fields_filled` (в части 4 text-полей), `validate_text_lengths`, `validate_no_cognates`.

@@ -354,8 +354,8 @@ object WordDataHebrewBatch9 {
             original = "צְבִי", translation = "газель, олень",
             definition = "יוֹנֵק פָּרֶא קַל רַגְלַיִם הַחַי בַּטֶּבַע הַיִּשְׂרְאֵלִי.",
             definitionNative = "Быстроногое дикое млекопитающее, живущее в израильской природе.",
-            example = "רָאִינוּ עֵדֶר צְבָאִים בַּבּוֹקֶר בְּמִדְבַּר יְהוּדָה.",
-            exampleNative = "Мы видели стадо צְבִי утром в Иудейской пустыне.",
+            example = "צְבִי קַל רַגְלַיִם דִּלֵּג בֵּין הַסְּלָעִים בַּמִּדְבָּר.",
+            exampleNative = "Быстроногая צְבִי перескочила между камнями в пустыне.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 105212, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -472,7 +472,7 @@ object WordDataHebrewBatch9 {
             definition = "שֶׁטַח לְח וְרַטוּב מָלֵא צְמָחִים הָעוֹלִים בְּמַיִם.",
             definitionNative = "Увлажнённая низкая местность с водными растениями.",
             example = "הַבְּצָה שְׁבְּאֵזוֹר הַטֶּבַע הִיא בְּית גִדְוּל לְצִפּוֹרֵי מַיִם.",
-            exampleNative = "Болото в природном заповеднике является домом для водных птиц.",
+            exampleNative = "Болото в природном заповеднике — дом для водных птиц.",
          fillInBlankExclusions = listOf(105208L, 105209L, 105217L, 105223L)),
         WordEntity(
             id = 105225, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",

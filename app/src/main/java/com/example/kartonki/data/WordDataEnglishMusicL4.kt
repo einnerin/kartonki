@@ -155,7 +155,7 @@ object WordDataEnglishMusicL4 {
             definition = "A loud Sufi devotional style sung by a group with hand drums and clapping.",
             definitionNative = "Громкий суфийский духовный стиль, который поёт группа с ручными барабанами и хлопками.",
             example = "Nusrat's qawwali could lift a whole audience into a state close to a trance.",
-            exampleNative = "qawwali Нусрата мог поднять целый зал в состояние, близкое к трансу.",
+            exampleNative = "Знаменитое qawwali Нусрата могло поднять целый зал в состояние, близкое к трансу.",
             pos = "noun", semanticGroup = "music_l4_world_traditions", fillInBlankExclusions = listOf(40306L, 40307L, 40308L, 40309L)),
 
         // ── music_l4_avant_garde (5) ──────────────────────────────────────

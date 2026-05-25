@@ -253,7 +253,7 @@ object WordDataEnglishCinemaGenres {
             definition = "A gritty western made cheaply in Italy in the sixties, often with a lone gunslinger.",
             definitionNative = "Жёсткий вестерн, дёшево снятый в Италии в шестидесятые, часто с одиноким стрелком.",
             example = "Leone's spaghetti western made Eastwood a global star almost overnight.",
-            exampleNative = "spaghetti western Леоне сделал Иствуда мировой звездой почти за одну ночь.",
+            exampleNative = "Знаменитый spaghetti western Леоне сделал Иствуда мировой звездой почти за ночь.",
             pos = "noun", semanticGroup = "cinema_genres_hybrid_intl", fillInBlankExclusions = listOf(45621L, 45622L, 45623L, 45625L)),
 
         WordEntity(id = 45625, setId = 456, languagePair = "en-ru", rarity = "UNCOMMON",

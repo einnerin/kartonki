@@ -83,7 +83,7 @@ object WordDataEnglishInternetL3 {
             definition = "The process by which a search engine reads a page and adds it to its catalogue.",
             definitionNative = "Процесс, при котором поисковик читает страницу и заносит её в свой каталог.",
             example = "Google's indexing of the new blog took about three days.",
-            exampleNative = "indexing нового блога в Google заняло около трёх дней.",
+            exampleNative = "Полное indexing нового блога в Google заняло около трёх дней.",
             pos = "noun", semanticGroup = "internet_l3_infrastructure", fillInBlankExclusions = listOf(39201L, 39202L, 39204L, 39205L, 39206L, 39209L, 39216L)),
 
         WordEntity(id = 39204, setId = 392, languagePair = "en-ru", rarity = "RARE",
@@ -141,7 +141,7 @@ object WordDataEnglishInternetL3 {
             definition = "Banning a person from a major service so they can no longer reach their audience there.",
             definitionNative = "Запрет человеку пользоваться крупным сервисом, чтобы он больше не мог обращаться там к своей аудитории.",
             example = "The deplatforming of the radio host sparked a fierce free-speech debate.",
-            exampleNative = "deplatforming радиоведущего разожгло яростный спор о свободе слова.",
+            exampleNative = "Громкое deplatforming радиоведущего разожгло яростный спор о свободе слова.",
             pos = "noun", semanticGroup = "internet_l3_algorithms", fillInBlankExclusions = listOf(39206L, 39207L, 39208L, 39209L, 39211L, 39215L, 39221L, 39223L, 39225L)),
 
         // ── internet_l3_culture (5) ───────────────────────────────────────
@@ -159,7 +159,7 @@ object WordDataEnglishInternetL3 {
             definition = "Acting as if only \"real\" fans deserve to enter a hobby and judging newcomers harshly.",
             definitionNative = "Поведение, при котором решают, что в хобби достойны входить только «настоящие» фанаты, и строго оценивают новичков.",
             example = "The forum's gatekeeping drove away every beginner who asked a basic question.",
-            exampleNative = "gatekeeping на форуме отпугивал каждого новичка, задавшего простой вопрос.",
+            exampleNative = "Жёсткий gatekeeping на форуме отпугивал каждого новичка, задавшего простой вопрос.",
             pos = "noun", semanticGroup = "internet_l3_culture", fillInBlankExclusions = listOf(39208L, 39209L, 39210L, 39211L, 39213L, 39215L, 39216L, 39221L, 39222L, 39223L, 39225L)),
 
         WordEntity(id = 39213, setId = 392, languagePair = "en-ru", rarity = "RARE",
@@ -193,7 +193,7 @@ object WordDataEnglishInternetL3 {
             definition = "The process of turning a free audience or product into a steady source of money.",
             definitionNative = "Процесс превращения бесплатной аудитории или продукта в стабильный источник денег.",
             example = "Channel monetization usually starts after one thousand subscribers.",
-            exampleNative = "monetization канала обычно стартует после тысячи подписчиков.",
+            exampleNative = "Полная monetization канала обычно стартует после тысячи подписчиков.",
             pos = "noun", semanticGroup = "internet_l3_business", fillInBlankExclusions = listOf(39217L, 39218L, 39219L, 39220L)),
 
         WordEntity(id = 39217, setId = 392, languagePair = "en-ru", rarity = "RARE",

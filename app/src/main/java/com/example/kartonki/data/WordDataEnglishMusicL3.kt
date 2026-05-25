@@ -86,7 +86,7 @@ object WordDataEnglishMusicL3 {
             definition = "A showy solo passage near the end of a concerto where the player improvises.",
             definitionNative = "Эффектный сольный фрагмент ближе к концу концерта, где исполнитель импровизирует.",
             example = "The pianist's cadenza brought the whole hall to silent attention.",
-            exampleNative = "cadenza пианиста заставила весь зал замереть в внимании.",
+            exampleNative = "Виртуозная cadenza пианиста заставила весь зал замереть.",
             pos = "noun", semanticGroup = "music_l3_theory", fillInBlankExclusions = listOf(40201L, 40202L, 40205L)),
 
         WordEntity(id = 40204, setId = 402, languagePair = "en-ru", rarity = "RARE",
@@ -94,7 +94,7 @@ object WordDataEnglishMusicL3 {
             definition = "Made without a main key — no single note feels like the home base.",
             definitionNative = "Написанный без главной тональности — ни одна нота не звучит как «домашняя».",
             example = "Schoenberg's atonal pieces shocked audiences used to clear major and minor.",
-            exampleNative = "atonal сочинения Шёнберга шокировали слушателей, привыкших к ясному мажору и минору.",
+            exampleNative = "Резко atonal сочинения Шёнберга шокировали слушателей, привыкших к ясному мажору.",
             pos = "adjective", semanticGroup = "music_l3_theory"),
 
         WordEntity(id = 40205, setId = 402, languagePair = "en-ru", rarity = "RARE",
@@ -142,7 +142,7 @@ object WordDataEnglishMusicL3 {
         WordEntity(id = 40210, setId = 402, languagePair = "en-ru", rarity = "RARE",
             original = "frontman", transliteration = "[ˈfrʌntˌmæn]", translation = "фронтмен (главный солист группы)",
             definition = "The lead singer who is the public face of a rock or pop band.",
-            definitionNative = "Главный вокалист, который является публичным лицом рок- или поп-группы.",
+            definitionNative = "Главный вокалист — публичное лицо рок- или поп-группы.",
             example = "The charismatic frontman whipped the crowd into a frenzy.",
             exampleNative = "Харизматичный frontman довёл толпу до неистовства.",
             pos = "noun", semanticGroup = "music_l3_performance", fillInBlankExclusions = listOf(40206L, 40207L, 40208L, 40209L)),
@@ -270,7 +270,7 @@ object WordDataEnglishMusicL3 {
             definition = "Performed with such precision that no mistake of skill can be heard.",
             definitionNative = "Исполненный с такой точностью, что не слышно ни одной технической ошибки.",
             example = "The young pianist's technically flawless reading still felt cold to many critics.",
-            exampleNative = "technically flawless исполнение юного пианиста многим критикам всё равно показалось холодным.",
+            exampleNative = "Совершенно technically flawless исполнение юного пианиста многим критикам показалось холодным.",
             pos = "adjective", semanticGroup = "music_l3_critique", fillInBlankExclusions = listOf(40221L, 40222L, 40223L)),
     )
 }

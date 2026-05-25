@@ -213,7 +213,7 @@ object WordDataHebrewBatch13 {
             pos = "noun", semanticGroup = "law_intern", transliteration = "ed eynáyim",
             original = "עֵד עֵינַיִים", translation = "очевидец; свидетель",
             definition = "אָדָם שֶׁרָאָה בְּעֵינָיו אֶת הָאֲרוּעַ שֶׁבְּנוֹשֵׂא הַמִּשְׁפָּט.",
-            definitionNative = "Человек, лично видевший событие, являющееся предметом судебного разбирательства.",
+            definitionNative = "Человек, лично видевший событие, которое разбирают в суде.",
             example = "עֵד עֵינַיִים זִיהָה אֶת הַנֶּאֱשָׁם בְּוַדָּאוּת.",
             exampleNative = "עֵד עֵינַיִים с уверенностью опознал обвиняемого.",
          fillInBlankExclusions = listOf(106312L)),

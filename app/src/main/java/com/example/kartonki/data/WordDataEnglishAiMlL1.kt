@@ -123,7 +123,7 @@ object WordDataEnglishAiMlL1 {
             definition = "The long process of showing examples to a system so it improves.",
             definitionNative = "Долгий процесс показа примеров системе, чтобы она стала лучше.",
             example = "The training process took two weeks on the new servers.",
-            exampleNative = "training заняло две недели на новых серверах.",
+            exampleNative = "Этап training занял две недели на новых серверах.",
             pos = "noun", semanticGroup = "ai_ml_actions"),
 
         WordEntity(id = 41511, setId = 415, languagePair = "en-ru", rarity = "UNCOMMON",
@@ -147,7 +147,7 @@ object WordDataEnglishAiMlL1 {
             definition = "A guess about what will happen, based on examples we already have.",
             definitionNative = "Догадка о будущем — на основе примеров, что у нас уже есть.",
             example = "The weather prediction for tomorrow says rain in the morning.",
-            exampleNative = "prediction погоды на завтра — дождь утром.",
+            exampleNative = "Модель сделала prediction погоды на завтра — дождь утром.",
             pos = "noun", semanticGroup = "ai_ml_actions"),
 
         // ── ai_ml_metrics (3) ─────────────────────────────────────────────

@@ -243,7 +243,7 @@ object WordDataEnglishTimeL3 {
         WordEntity(id = 38723, setId = 387, languagePair = "en-ru", rarity = "RARE",
             original = "eon", transliteration = "[ˈiˌɑn]", translation = "эон, очень длинный период",
             definition = "An extremely long stretch of time, often used for ages of the Earth.",
-            definitionNative = "Крайне длинный отрезок времени, часто используется для эпох Земли.",
+            definitionNative = "Крайне длинный отрезок времени — так говорят о геологических эпохах Земли.",
             example = "These rocks were formed an eon ago, deep in the planet's past.",
             exampleNative = "Эти камни сформировались eon назад, глубоко в прошлом планеты.",
             pos = "noun", semanticGroup = "time_l3_units_specialized", fillInBlankExclusions = listOf(38724L)),

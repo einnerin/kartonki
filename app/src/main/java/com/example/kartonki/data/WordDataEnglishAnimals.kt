@@ -918,7 +918,7 @@ object WordDataEnglishAnimals {
         WordEntity(id = 43912, setId = 439, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "arachnid", transliteration = "[əˈræknɪd]", translation = "паукообразное",
             definition = "An eight-legged arthropod like a spider, scorpion or tick — never an insect.",
-            definitionNative = "Восьминогое членистоногое — паук, скорпион или клещ; насекомым не является.",
+            definitionNative = "Восьминогое членистоногое — паук, скорпион или клещ; но не насекомое.",
             example = "Every arachnid relies on eight legs and silk or venom to hunt.",
             exampleNative = "Каждый arachnid охотится при помощи восьми ног, паутины или яда.",
             pos = "noun", semanticGroup = "animal_classification", fillInBlankExclusions = listOf(43909L, 43910L, 43911L, 43913L)),
