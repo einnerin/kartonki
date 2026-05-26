@@ -151,6 +151,25 @@ bash scripts/validate/validate_text_terminators.sh <setId>
 ```
 Все три должны выдать ✅. Если ❌ — переделай конкретные слова и повтори. Не возвращай отчёт пока все три зелёные.
 
+## ОБЯЗАТЕЛЬНО: после изменения example — перепрогон FILL_IN_BLANK pipeline
+
+Поле `fillInBlankExclusions` рассчитано на основе ТЕКУЩЕГО `example` каждого слова в setе. Когда ты меняешь `example` — `fillInBlankExclusions` для **ВСЕХ** слов этого setа становятся stale (новый пример может изменить, какие соседи подходят как distractors).
+
+После Edit `example` обязательно прогнать для каждого затронутого setId:
+```bash
+python scripts/validate/generate_fill_in_blank_exclusions.py --set-id <setId> --apply
+```
+(Это safety-net only прогон без LLM — auto-добавит same-semGroup+pos соседей в exclusions и **запишет hash** в `pipeline_hashes.json`. Без этого `validate_fillinblank_exclusions_fresh` заблокирует коммит.)
+
+Если в setе есть слова с явно ambiguous examples (несколько разных pos/semGroup могут подойти) — лучше прогон с LLM:
+```bash
+python scripts/validate/fill_in_blank_prompt.py --set-id <setId>
+# → отправить промпт LLM/subagent → получить /tmp/out.json
+python scripts/validate/generate_fill_in_blank_exclusions.py \
+    --set-id <setId> --llm-output /tmp/out.json --apply
+```
+Документация: [`docs/claude/fill-in-blank-pipeline.md`](../../docs/claude/fill-in-blank-pipeline.md).
+
 ## Особые случаи
 
 ### Слово из нескольких смыслов

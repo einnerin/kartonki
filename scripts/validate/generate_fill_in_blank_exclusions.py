@@ -22,6 +22,7 @@ Usage:
 See docs/claude/fill-in-blank-pipeline.md.
 """
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -29,6 +30,47 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from _parser import ROOT, parse_words
+
+# Hash file recording the (sorted-id, example) digest for each set that has
+# been through the FILL_IN_BLANK pipeline. Used by
+# validate_fillinblank_exclusions_fresh to detect stale exclusions after
+# subsequent example edits.
+HASH_FILE = Path(__file__).parent / "pipeline_hashes.json"
+
+
+def compute_set_hash(set_words: list[dict]) -> str:
+    """SHA-256 of sorted [(id, example), ...]. Sensitive only to:
+       - the set of word IDs (add/remove → new hash)
+       - the example text of each word (rewrite → new hash)
+    NOT sensitive to: definition/translation/rarity/pos/etc — those don't
+    affect which neighbors fit as FILL_IN_BLANK distractors.
+    """
+    pairs = sorted(
+        ((w["id"], w.get("example") or "") for w in set_words),
+        key=lambda p: p[0],
+    )
+    payload = json.dumps(pairs, ensure_ascii=False, sort_keys=True)
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def load_pipeline_hashes() -> dict[str, str]:
+    if not HASH_FILE.exists():
+        return {}
+    try:
+        return json.loads(HASH_FILE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def write_pipeline_hash(set_id: int, set_words: list[dict]) -> None:
+    """Record current hash for [set_id]. Called from --apply and
+    --flip-safety-flag once changes have been written to WordData*.kt."""
+    hashes = load_pipeline_hashes()
+    hashes[str(set_id)] = compute_set_hash(set_words)
+    HASH_FILE.write_text(
+        json.dumps(hashes, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
 
 
 # Approximation — good enough for English.
@@ -439,6 +481,12 @@ def main() -> None:
         print(f"Phase 3: {flipped} words flipped to safe=true, "
               f"{kept} kept unsafe (form_mismatch or >= "
               f"{TOO_GENERIC_THRESHOLD} exclusions).", flush=True)
+        # Re-load set_words after file mutations to capture any changes
+        # (safety-flag flips don't change examples, but defensive).
+        fresh_words = load_set_words(args.set_id)
+        write_pipeline_hash(args.set_id, fresh_words)
+        print(f"Recorded pipeline hash for setId={args.set_id} → "
+              f"{HASH_FILE.name}", flush=True)
         if flipped > 0:
             new_ver = bump_word_data_version()
             if new_ver is not None:
@@ -446,6 +494,12 @@ def main() -> None:
     elif args.apply:
         total = apply_to_files(set_words, result, dry_run=False)
         print(f"Applied: {total} exclusion fields injected.", flush=True)
+        # Record the hash AFTER injection: future example edits will invalidate
+        # this hash, triggering validate_fillinblank_exclusions_fresh.
+        fresh_words = load_set_words(args.set_id)
+        write_pipeline_hash(args.set_id, fresh_words)
+        print(f"Recorded pipeline hash for setId={args.set_id} → "
+              f"{HASH_FILE.name}", flush=True)
         if total > 0:
             new_ver = bump_word_data_version()
             if new_ver is not None:

@@ -87,7 +87,7 @@ object WordDataHebrewBaristaL1L2L3 {
             definitionNative = "Горячий тёмный напиток из обжаренных зёрен на воде.",
             example = "אֲנִי שׁוֹתֶה קָפֶה שָׁחֹר כָּל בֹּקֶר לִפְנֵי הָעֲבוֹדָה.",
             exampleNative = "Я пью чёрный קָפֶה каждое утро перед работой.",
-        ),
+         fillInBlankExclusions = listOf(173902L, 173903L, 173904L, 173905L)),
         WordEntity(
             id = 173902, setId = 1739, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "barista_drinks_basic", transliteration = "espreso",

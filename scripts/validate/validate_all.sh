@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Aggregated validator: runs all 17 checks on a given setId.
+# Aggregated validator: runs all 18 checks on a given setId.
 # Exit 0 only if all checks pass (warnings OK). Exit 1 if any blocks.
 set -u
 cd "$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
@@ -28,6 +28,7 @@ CHECKS=(
   "validate_hebrew_transliteration_format.sh"
   "validate_blank_ambiguity_hebrew.sh"
   "validate_no_foreign_script_in_original.sh"
+  "validate_fillinblank_exclusions_fresh.sh"
   "validate_blank_ambiguity.sh"
 )
 
@@ -48,7 +49,7 @@ done
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 if [ $FAIL -eq 0 ]; then
-  echo "✅ setId=$SETID: все 17 проверок пройдены"
+  echo "✅ setId=$SETID: все 18 проверок пройдены"
 else
   echo "❌ setId=$SETID: есть блокирующие нарушения (см. выше)"
 fi

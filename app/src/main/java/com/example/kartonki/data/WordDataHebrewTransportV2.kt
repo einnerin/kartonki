@@ -305,7 +305,7 @@ object WordDataHebrewTransportV2 {
             definition = "לְהִכָּנֵס לְכְלִי תַּחְבּוּרָה לִפְנֵי הַנְּסִיעָה.",
             definitionNative = "Входить в транспорт перед поездкой.",
             example = "צָרִיךְ לַעֲלוֹת לָאוֹטוֹבּוּס בַּתַּחֲנָה הָרִאשׁוֹנָה.",
-            exampleNative = "Надо לַעֲלוֹת в автобус на первой остановке."),
+            exampleNative = "Надо לַעֲלוֹת в автобус на первой остановке.", fillInBlankExclusions = listOf(163101L, 163102L, 163103L, 163105L)),
         WordEntity(
             id = 163105, setId = 1631, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "travel_verbs", transliteration = "laredet",
@@ -313,7 +313,7 @@ object WordDataHebrewTransportV2 {
             definition = "לָצֵאת מִכְּלִי תַּחְבּוּרָה אַחֲרֵי הַנְּסִיעָה.",
             definitionNative = "Покинуть автобус, поезд или машину в конце поездки.",
             example = "אֲנִי צָרִיךְ לָרֶדֶת בַּתַּחֲנָה הַבָּאָה לִפְנֵי הַגֶּשֶׁר.",
-            exampleNative = "Мне надо לָרֶדֶת на следующей остановке перед мостом."),
+            exampleNative = "Мне надо לָרֶדֶת на следующей остановке перед мостом.", fillInBlankExclusions = listOf(163101L, 163102L, 163103L, 163104L)),
 
         // ── tickets (5) ──
         WordEntity(

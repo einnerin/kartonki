@@ -234,7 +234,7 @@ object WordDataHebrewIsraeliTransportL3 {
             definitionNative = "Тяжёлая машина для перемещения земли и камней на стройках.",
             example = "דַּחְפּוֹר עָבַד יוֹמָיִם בָּאֲתָר כְּדֵי לְפַנּוֹת אֶת הַשֶּׁטַח.",
             exampleNative = "דַּחְפּוֹר работал два дня на участке, чтобы расчистить площадку.",
-        ),
+         fillInBlankExclusions = listOf(185418L, 185420L)),
         WordEntity(
             id = 185418, setId = 1854, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_l3_logistics",

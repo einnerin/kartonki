@@ -192,6 +192,10 @@ needs_human_review: K (с причинами, если были)
 После того, как Edit'ы по всем 25 словам сделаны — **обязательно** прогнать:
 
 ```bash
+# Шаг 1: FILL_IN_BLANK pipeline (новый сет всегда требует hash-запись)
+python scripts/validate/generate_fill_in_blank_exclusions.py --set-id <setId> --apply
+
+# Шаг 2: Все 18 валидаторов
 bash scripts/validate/validate_all.sh <setId>
 ```
 
@@ -212,6 +216,8 @@ bash scripts/validate/validate_all.sh <setId>
 | `validate_no_clerical` | Канцелярит в любом из 4 полей — заменить на живой язык (см. список запрещённых токенов в `validate_no_clerical.py`) |
 | `validate_hebrew_transliteration_format` | (he-ru) Hebrew transliteration в IPA-стиле (`[biˈdud]`, `ŋ`) — переписать в латинскую транскрипцию (`bidud`, `marketing`). Никаких IPA-символов и скобок `[...]`. |
 | `validate_blank_ambiguity_hebrew` | (he-ru) Слово помечено `isFillInBlankSafe=true` но `HebrewBlankMatcher` не находит original в example. Либо переписать example чтобы original (или с prefix-letter `[הבלמכוש]`) реально был в нём, либо явно поставить `isFillInBlankSafe = false`. |
+| `validate_no_foreign_script_in_original` | Mixed-script опечатка в `original` (арабская `ت` U+062A вместо ивритской `ת` U+05EA, кириллическая `а` вместо латинской и т.п.). Заменить на правильный кодпоинт. |
+| `validate_fillinblank_exclusions_fresh` | `example` или состав слов setа изменились после последнего прогона FILL_IN_BLANK pipeline. Прогнать: `python scripts/validate/generate_fill_in_blank_exclusions.py --set-id <N> --apply` (safety-net only) или с LLM через `fill_in_blank_prompt.py` (см. `docs/claude/fill-in-blank-pipeline.md`). |
 | `validate_fields_filled` пропускает, а `validate_group_sizes`/`validate_pos_values` падают | Это не твоя зона (pos/semanticGroup — работа metadata-filler). Значит ими не заполнено в этом setId. В отчёте пометь, что `metadata-filler` должен пройтись после тебя |
 
 Агент НЕ трогает `pos` и `semanticGroup` (это зона metadata-filler), но **сам проверяет**, что 4 текстовых поля удовлетворяют соответствующим валидаторам: `validate_fields_filled` (в части 4 text-полей), `validate_text_lengths`, `validate_no_cognates`.

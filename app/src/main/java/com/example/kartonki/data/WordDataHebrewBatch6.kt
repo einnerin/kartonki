@@ -187,7 +187,7 @@ object WordDataHebrewBatch6 {
             definition = "פְּעִילוּת סְפּוֹרְטִיבִית בְּמַיִם, נָפוֹצָה כְּבִּידוּר וּכְסְפּוֹרְט תַּחֲרוּתִי.",
             definitionNative = "Спортивная активность в воде, распространённая как отдых и соревновательный спорт.",
             example = "שְׁחִייָה יוֹמִית בַּבְּרֵכָה מְחַזֶּקֶת אֶת הַגּוּף וְהָרֵיאוֹת.",
-            exampleNative = "Ежедневное שְׁחִייָה в бассейне укрепляет тело и лёгкие."),
+            exampleNative = "Ежедневное שְׁחִייָה в бассейне укрепляет тело и лёгкие.", fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104105L, 104106L, 104107L, 104113L, 104114L, 104115L, 104117L, 104125L)),
         WordEntity(
             id = 104119, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "sport_training", transliteration = "itsa",

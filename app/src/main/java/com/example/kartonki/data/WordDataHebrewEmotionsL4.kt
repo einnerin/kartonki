@@ -165,7 +165,7 @@ object WordDataHebrewEmotionsL4 {
             definitionNative = "Долгое время нести тяжёлую душевную или телесную боль.",
             example = "קָשֶׁה לִסְבֹּל אֶת הַחֹם הַזֶּה בְּלִי מַזְגָּן בַּבַּיִת.",
             exampleNative = "Трудно לִסְבֹּל такую жару без кондиционера дома.",
-        ),
+         fillInBlankExclusions = listOf(183012L, 183013L, 183014L)),
         WordEntity(
             id = 183012, setId = 1830, languagePair = "he-ru", rarity = "EPIC",
             pos = "verb", semanticGroup = "emotions_l4_verbs_pro",
@@ -175,7 +175,7 @@ object WordDataHebrewEmotionsL4 {
             definitionNative = "Громко и движениями выражать большую и высокую радость — слово книжное.",
             example = "הָעָם הֵחֵל לַעֲלֹז בְּקוֹל גָּדוֹל לִשְׁמַע בְּשׂוֹרַת הַשָּׁלוֹם.",
             exampleNative = "Народ начал לַעֲלֹז громким голосом на весть о мире.",
-        ),
+         fillInBlankExclusions = listOf(183011L, 183013L, 183014L)),
         WordEntity(
             id = 183013, setId = 1830, languagePair = "he-ru", rarity = "EPIC",
             pos = "verb", semanticGroup = "emotions_l4_verbs_pro",
@@ -185,7 +185,7 @@ object WordDataHebrewEmotionsL4 {
             definitionNative = "С огромной силой хотеть чего-то и ощущать его нехватку до внутренней боли.",
             example = "הוּא הֵחֵל לִשְׁתּוֹקֵק לַחֲזֹר הַבַּיְתָה אַחֲרֵי שָׁנִים בְּחוּץ לָאָרֶץ.",
             exampleNative = "Он начал לִשְׁתּוֹקֵק вернуться домой после лет за границей.",
-        ),
+         fillInBlankExclusions = listOf(183011L, 183012L, 183014L)),
         WordEntity(
             id = 183014, setId = 1830, languagePair = "he-ru", rarity = "EPIC",
             pos = "verb", semanticGroup = "emotions_l4_verbs_pro",

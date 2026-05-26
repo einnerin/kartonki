@@ -350,7 +350,7 @@ object WordDataHebrewBatch9 {
             definition = "יוֹנֵק פָּרֶא קַל רַגְלַיִם הַחַי בַּטֶּבַע הַיִּשְׂרְאֵלִי.",
             definitionNative = "Быстроногое дикое млекопитающее, живущее в израильской природе.",
             example = "צְבִי קַל רַגְלַיִם דִּלֵּג בֵּין הַסְּלָעִים בַּמִּדְבָּר.",
-            exampleNative = "Быстроногая צְבִי перескочила между камнями в пустыне."),
+            exampleNative = "Быстроногая צְבִי перескочила между камнями в пустыне.", fillInBlankExclusions = listOf(105212L, 105218L, 105219L)),
         WordEntity(
             id = 105212, setId = 1052, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hiking_wildlife", transliteration = "tan",

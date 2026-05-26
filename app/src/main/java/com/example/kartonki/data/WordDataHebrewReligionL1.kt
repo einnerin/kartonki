@@ -92,7 +92,7 @@ object WordDataHebrewReligionL1 {
             definitionNative = "Особый плетёный хлеб, который едят за субботним или праздничным столом.",
             example = "אַבָּא בּוֹצֵעַ אֶת הַחַלָּה בִּתְחִלַּת סְעֻדַּת הַשַּׁבָּת.",
             exampleNative = "Папа преломляет חַלָּה в начале субботней трапезы.",
-        ),
+         fillInBlankExclusions = listOf(170105L, 170107L)),
         WordEntity(
             id = 170107, setId = 1701, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_shabbat", transliteration = "kabalat shabat",

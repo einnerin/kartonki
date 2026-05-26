@@ -254,7 +254,7 @@ object WordDataHebrewIsraeliTransportL2 {
             definitionNative = "Не успеть сесть в автобус или поезд до того, как они уедут.",
             example = "אֲנִי לֹא רוֹצֶה לְפַסְפֵּס אֶת הָרַכֶּבֶת הָאַחֲרוֹנָה הַלַּיְלָה.",
             exampleNative = "Я не хочу לְפַסְפֵּס последний поезд сегодня ночью.",
-        ),
+         fillInBlankExclusions = listOf(185316L, 185317L, 185319L, 185320L)),
         WordEntity(
             id = 185319, setId = 1853, languagePair = "he-ru", rarity = "RARE",
             pos = "verb", semanticGroup = "transport_l2_actions_advanced",

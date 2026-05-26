@@ -121,7 +121,7 @@ object WordDataHebrewEmotionsL5 {
             definitionNative = "Огненный, исполинский гнев из речи пророков — горячий и пылающий, как пламя.",
             example = "הָאֵל שָׁפַךְ אֶת חֵמָה עַל הָעָם הַסּוֹרֵר וְהַמּוֹרֵד.",
             exampleNative = "Господь излил חֵמָה на народ строптивый и непокорный.",
-        ),
+         fillInBlankExclusions = listOf(183101L, 183102L, 183103L, 183105L)),
 
         WordEntity(
             id = 183105, setId = 1831, languagePair = "he-ru", rarity = "EPIC",
@@ -258,7 +258,7 @@ object WordDataHebrewEmotionsL5 {
             definitionNative = "Тосковать всей душой о чём-то возвышенном или далёком — поэтический глагол.",
             example = "נַפְשׁוֹ הֵחֵלָה לִכְסֹף לְאֶרֶץ אֲבוֹתָיו בִּימֵי הַגָּלוּת.",
             exampleNative = "Душа его стала לִכְסֹף по земле отцов в дни изгнания.",
-        ),
+         fillInBlankExclusions = listOf(183117L, 183118L, 183119L, 183120L)),
 
         WordEntity(
             id = 183117, setId = 1831, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -269,7 +269,7 @@ object WordDataHebrewEmotionsL5 {
             definitionNative = "Желать с великой силой того, что тебе не принадлежит — библейский глагол из Десяти Заповедей.",
             example = "אָסוּר לַחְמֹד אֶת רְכוּשׁ הָרֵעַ — כָּךְ מְצַוָּה הַתּוֹרָה.",
             exampleNative = "Запрещено לַחְמֹד имущество ближнего — так велит Тора.",
-        ),
+         fillInBlankExclusions = listOf(183116L, 183118L, 183119L, 183120L)),
 
         WordEntity(
             id = 183118, setId = 1831, languagePair = "he-ru", rarity = "EPIC",
@@ -280,7 +280,7 @@ object WordDataHebrewEmotionsL5 {
             definitionNative = "Произносить поэтические слова скорби об усопшем или о великой утрате — библейское понятие.",
             example = "הַנָּבִיא יְשַׁעְיָהוּ הֵחֵל לְקוֹנֵן עַל חֻרְבַּן יְרוּשָׁלַיִם.",
             exampleNative = "Пророк Исаия стал לְקוֹנֵן о разрушении Иерусалима.",
-        ),
+         fillInBlankExclusions = listOf(183116L, 183117L, 183119L, 183120L)),
 
         WordEntity(
             id = 183119, setId = 1831, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -291,7 +291,7 @@ object WordDataHebrewEmotionsL5 {
             definitionNative = "Издавать глубокие звуки внутренней боли — литературный и библейский глагол.",
             example = "הַזָּקֵן הֵחֵל לְהֵאָנֵק בְּלִבּוֹ עַל מַר גּוֹרָלוֹ.",
             exampleNative = "Старец стал לְהֵאָנֵק в сердце своём о горькой судьбе.",
-        ),
+         fillInBlankExclusions = listOf(183116L, 183117L, 183118L, 183120L)),
 
         WordEntity(
             id = 183120, setId = 1831, languagePair = "he-ru", rarity = "EPIC",
@@ -302,7 +302,7 @@ object WordDataHebrewEmotionsL5 {
             definitionNative = "Обретать внутреннее утешение после утраты или горя — глагол высокого регистра.",
             example = "הָאַלְמָן הֵחֵל לְהִתְנַחֵם בְּזִכְרוֹן הַחֶסֶד שֶׁבֵּין הַשְּׁנַיִם.",
             exampleNative = "Вдовец стал לְהִתְנַחֵם памятью о благодати между ними.",
-        ),
+         fillInBlankExclusions = listOf(183116L, 183117L, 183118L, 183119L)),
 
         // ── emotions_l5_descriptive_high (5) — высокая литературная лексика
 

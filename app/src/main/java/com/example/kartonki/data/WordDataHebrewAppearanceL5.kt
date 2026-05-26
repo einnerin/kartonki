@@ -201,7 +201,7 @@ object WordDataHebrewAppearanceL5 {
             definitionNative = "Внутренний орган женщины в библейском слоге — место зачатия и символ милосердия.",
             example = "הָרֶחֶם נֶחְשָׁב בַּמִּקְרָא לְסֵמֶל שֶׁל רַחֲמִים וְחַיִּים.",
             exampleNative = "רֶחֶם в Писании считается символом милосердия и жизни.",
-        ),
+         fillInBlankExclusions = listOf(182611L, 182612L, 182613L)),
 
         // ─── appearance_l5_aesthetic_advanced (5) — высокая эстетика ──────
         WordEntity(
