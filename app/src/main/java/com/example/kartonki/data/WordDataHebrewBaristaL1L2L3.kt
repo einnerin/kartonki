@@ -611,7 +611,7 @@ object WordDataHebrewBaristaL1L2L3 {
             id = 174106, setId = 1741, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "barista_roast", transliteration = "kliya",
             original = "קְלִיָּה", translation = "обжарка",
-            definition = "הָעֲבוֹדָה הַתֶּרְמִית שֶׁמַּפְכָה גַּרְעִינִים יְרֻקִּים לִכְהֻלִּים וְרֵיחָנִיִּים.",
+            definition = "הָעֲבוֹדָה הַתֶּרְמִית שֶׁמַּהְפֶּכֶת גַּרְעִינִים יְרֻקִּים לִכְהֻלִּים וְרֵיחָנִיִּים.",
             definitionNative = "Тепловая работа, превращающая зелёные семена в коричневые и душистые.",
             example = "הַקְּלִיָּה הָעֲדִינָה שָׁמְרָה עַל הַדְּקֻיּוֹת שֶׁל הַזַּן.",
             exampleNative = "Деликатная קְלִיָּה сохранила тонкости сорта.",

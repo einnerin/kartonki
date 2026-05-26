@@ -192,7 +192,7 @@ object WordDataHebrewBatch66 {
             example = "נְסִיעָה שְׁכִירָה לַנַּמַל יָקְרָה יוֹתֵר בַּלַּיְלָה.",
             exampleNative = "נְסִיעָה שְׁכִירָה до аэропорта дороже ночью."),
         WordEntity(id = 138322, setId = 1383, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מֶרְחָק נְסִיעָה", transliteration = "merkhaz nesi'a", translation = "расстояние поездки",
+            original = "מֶרְחָק נְסִיעָה", transliteration = "merkhak nesi'a", translation = "расстояние поездки",
             pos = "phrase", semanticGroup = "driver_traffic_basics",
             definition = "כַּמָּה קִילוֹמֶטְרִים יֵשׁ בֵּין נְקֻדַּת הַהַתְחָלָה לִנְקֻדַּת הַסּוֹף.",
             definitionNative = "Сколько километров между точкой старта и точкой прибытия.",

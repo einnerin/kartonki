@@ -203,12 +203,12 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171516L, 171518L, 171519L, 171520L)),
         WordEntity(
             id = 171518, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_special_vehicle", transliteration = "asfalt-ma'aravel",
-            original = "אַסְפַלְט-מַעֲרָבֵל", translation = "автобетоносмеситель, миксер",
-            definition = "מַשְׁאִית עִם תֹּף סוֹבֵב הַמְעַרְבֵּל בֶּטוֹן בַּדֶּרֶךְ לָאֲתָר.",
-            definitionNative = "Машина с вращающимся барабаном, перемешивающим бетон в пути.",
-            example = "אַסְפַלְט-מַעֲרָבֵל הִגִּיעַ לָאֲתָר בְּדִיּוּק לְפִי הַזְּמַן.",
-            exampleNative = "אַסְפַלְט-מַעֲרָבֵל подъехал на стройку точно по графику.",
+            pos = "phrase", semanticGroup = "driver_special_vehicle", transliteration = "me'arbel beton",
+            original = "מְעַרְבֵּל בֶּטוֹן", translation = "автобетоносмеситель, миксер",
+            definition = "מַשְׁאִית עִם תֹּף סוֹבֵב שֶׁמַּחֲזִיק אֶת הַתַּעֲרֹבֶת נוֹזְלִית עַד לָאֲתָר.",
+            definitionNative = "Машина с вращающимся барабаном, держащим смесь жидкой до стройки.",
+            example = "מְעַרְבֵּל בֶּטוֹן הִגִּיעַ לָאֲתָר בְּדִיּוּק לְפִי הַזְּמַן.",
+            exampleNative = "מְעַרְבֵּל בֶּטוֹן подъехал на стройку точно по графику.",
          fillInBlankExclusions = listOf(171516L, 171517L, 171519L, 171520L)),
         WordEntity(
             id = 171519, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",

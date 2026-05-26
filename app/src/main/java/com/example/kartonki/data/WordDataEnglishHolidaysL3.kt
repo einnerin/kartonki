@@ -221,11 +221,11 @@ object WordDataEnglishHolidaysL3 {
         // ── holidays_traditions (5) — Традиционные обычаи и обряды ─────────
 
         WordEntity(id = 37221, setId = 372, languagePair = "en-ru", rarity = "RARE",
-            original = "salutation", transliteration = "[ˌsæljəˈteɪʃən]", translation = "приветственное слово",
-            definition = "A warm spoken greeting at the start of a speech or letter to honour someone.",
-            definitionNative = "Тёплое словесное приветствие в начале речи или письма в чью-то честь.",
-            example = "Her grandfather gave a touching salutation at the wedding dinner.",
-            exampleNative = "Дед произнёс трогательную salutation за свадебным ужином.",
+            original = "salutation", transliteration = "[ˌsæljəˈteɪʃən]", translation = "приветственное обращение",
+            definition = "A formal opening of a letter — for example \"Dear Sir\" or \"Dear Madam\" before the main text.",
+            definitionNative = "Формальное обращение в начале письма — вроде «Уважаемый господин» перед основным текстом.",
+            example = "She typed a polite salutation at the top of the cover letter.",
+            exampleNative = "Она напечатала вежливое salutation в самом верху сопроводительного письма.",
             pos = "noun", semanticGroup = "holidays_traditions", fillInBlankExclusions = listOf(37222L, 37223L, 37224L, 37225L)),
 
         WordEntity(id = 37222, setId = 372, languagePair = "en-ru", rarity = "RARE",

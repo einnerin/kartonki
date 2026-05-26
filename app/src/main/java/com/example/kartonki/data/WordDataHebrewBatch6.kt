@@ -121,7 +121,7 @@ object WordDataHebrewBatch6 {
             id = 104111, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "sport_training", transliteration = "ke'irul",
             original = "קֵירוּר", translation = "заминка, охлаждение",
-            definition = "פַּעֲלוּלֵי הַרְגָּעָה לְאַחַר אִמּוּן לְמֶנִּיעַת כְּאֵבֵי שְׂרִירִים.",
+            definition = "תַּרְגִילֵי הַרְגָּעָה לְאַחַר אִמּוּן לְמֶנִּיעַת כְּאֵבֵי שְׂרִירִים.",
             definitionNative = "Упражнения после тренировки для предотвращения мышечных болей.",
             example = "חָשׁוּב לַעֲשׂוֹת קֵירוּר אַחֲרֵי כָּל אִמּוּן אִינְטֶנְסִיבִי.",
             exampleNative = "Важно делать קֵירוּר после каждой интенсивной тренировки.",

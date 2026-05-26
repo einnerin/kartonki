@@ -249,12 +249,12 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178216L, 178217L, 178218L, 178220L)),
         WordEntity(
             id = 178220, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_governance_advanced", transliteration = "mishketet nist",
-            original = "מִשְׁקֶּתֶת נִיסְט", translation = "NIST cybersecurity framework",
-            definition = "מַסְגֶּרֶת אָמֵרִיקָאִית עִם חָמֵשׁ פֻּנְקְצִיּוֹת — לְזַהוֹת, לְהָגֵן, לְגַלּוֹת, לְהָגִיב וּלְהִתְאוֹשֵׁשׁ.",
-            definitionNative = "Американская рамка с пятью функциями — опознать, защитить, обнаружить, ответить и восстановиться.",
-            example = "הִתְאֵמְנוּ אֶת תָּכְנִית הָעֲבוֹדָה לְמִשְׁקֶּתֶת נִיסְט.",
-            exampleNative = "Подогнали рабочий план под מִשְׁקֶּתֶת נִיסְט.",
+            pos = "noun", semanticGroup = "cyber_governance_advanced", transliteration = "misgeret nist",
+            original = "מִסְגֶּרֶת נִיסְט", translation = "NIST cybersecurity framework",
+            definition = "מוֹדֶל אָמֵרִיקָאִי עִם חָמֵשׁ פֻּנְקְצִיּוֹת — לְזַהוֹת, לְהָגֵן, לְגַלּוֹת, לְהָגִיב וּלְהִתְאוֹשֵׁשׁ.",
+            definitionNative = "Американская модель с пятью функциями — опознать, защитить, обнаружить, ответить и восстановиться.",
+            example = "הִתְאֵמְנוּ אֶת תָּכְנִית הָעֲבוֹדָה לְמִסְגֶּרֶת נִיסְט.",
+            exampleNative = "Подогнали рабочий план под מִסְגֶּרֶת נִיסְט.",
          fillInBlankExclusions = listOf(178216L, 178217L, 178218L, 178219L)),
 
         // ── cyber_business_continuity (5) — непрерывность и страхование ──

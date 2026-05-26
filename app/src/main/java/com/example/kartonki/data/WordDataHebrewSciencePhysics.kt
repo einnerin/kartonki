@@ -283,13 +283,13 @@ object WordDataHebrewSciencePhysics {
             pos = "noun", semanticGroup = "science_physics_thermo", fillInBlankExclusions = listOf(189721L, 189723L, 189724L, 189725L)),
 
         WordEntity(id = 189723, setId = 1897, languagePair = "he-ru", rarity = "RARE",
-            original = "קַרְקוּב",
+            original = "קְרִינָה",
             translation = "излучение / радиация",
             definition = "פְּלִיטָה שֶׁל אֵנֶרְגִיָּה אוֹ חֲלָקִיקִים מִגּוּף לַחוּצָה, בְּצוּרַת גַּלִּים אוֹ קַרְנַיִם.",
             definitionNative = "Испускание энергии или частиц телом наружу — в виде волн или лучей.",
-            example = "הַטֶּכְנַאי לוֹבֵשׁ אֲפֻדָּה מְעֻפֶּרֶת כְּדֵי לְהָגֵן מִפְּנֵי קַרְקוּב.",
-            exampleNative = "Техник надевает свинцовый жилет, чтобы защититься от קַרְקוּב.",
-            transliteration = "каркув",
+            example = "הַטֶּכְנַאי לוֹבֵשׁ אֲפֻדָּה מְעֻפֶּרֶת כְּדֵי לְהָגֵן מִפְּנֵי קְרִינָה.",
+            exampleNative = "Техник надевает свинцовый жилет, чтобы защититься от קְרִינָה.",
+            transliteration = "крина́",
             pos = "noun", semanticGroup = "science_physics_thermo", fillInBlankExclusions = listOf(189721L, 189722L, 189724L, 189725L)),
 
         WordEntity(id = 189724, setId = 1897, languagePair = "he-ru", rarity = "RARE",

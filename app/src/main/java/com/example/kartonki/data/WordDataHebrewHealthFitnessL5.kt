@@ -165,12 +165,12 @@ object WordDataHebrewHealthFitnessL5 {
          fillInBlankExclusions = listOf(179111L, 179113L, 179114L, 179115L)),
         WordEntity(
             id = 179113, setId = 1791, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "health_pathology", transliteration = "okets khamtsoni",
-            original = "עֹקֶץ חַמְצוֹנִי", translation = "окислительный стресс",
+            pos = "noun", semanticGroup = "health_pathology", transliteration = "stres khimtsuni",
+            original = "סְטְרֶס חִמְצוּנִי", translation = "окислительный стресс",
             definition = "מַצָּב שֶׁל עֹדֶף רַדִּיקָלִים חָפְשִׁיִּים שֶׁפּוֹגְעִים בִּדְנָ\"א וּבִקְרוּמֵי תָאִים.",
             definitionNative = "Перебор свободных радикалов — повреждают ДНК и клеточные мембраны.",
-            example = "עֹקֶץ חַמְצוֹנִי מוּגְבָּר מַחֲרִיף סוּכֶּרֶת וּמַחֲלוֹת לֵב.",
-            exampleNative = "Усиленный עֹקֶץ חַמְצוֹנִי утяжеляет диабет и сердечные болезни.",
+            example = "סְטְרֶס חִמְצוּנִי מוּגְבָּר מַחֲרִיף סוּכֶּרֶת וּמַחֲלוֹת לֵב.",
+            exampleNative = "Усиленный סְטְרֶס חִמְצוּנִי утяжеляет диабет и сердечные болезни.",
          fillInBlankExclusions = listOf(179111L, 179112L, 179114L, 179115L)),
         WordEntity(
             id = 179114, setId = 1791, languagePair = "he-ru", rarity = "LEGENDARY",

@@ -219,12 +219,12 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103814L, 103817L, 103818L, 103819L, 103825L)),
         WordEntity(
             id = 103823, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_nature", transliteration = "artsavit",
-            original = "עַרְצַבִּית", translation = "морская звезда",
-            definition = "יְצוּר יָמִי בְּצוּרַת כּוֹכָב עִם חָמֵשׁ זְרוֹעוֹת.",
-            definitionNative = "Морское существо в форме звезды с пятью лучами.",
-            example = "מָצַאנוּ עַרְצַבִּית צְבַעוֹנִית עַל קַרְקַע הַיָּם.",
-            exampleNative = "Мы нашли красочную עַרְצַבִּית на морском дне.",
+            pos = "phrase", semanticGroup = "beach_nature", transliteration = "kokhav yam",
+            original = "כּוֹכַב יָם", translation = "морская звезда",
+            definition = "יְצוּר מֵימִי עִם חָמֵשׁ זְרוֹעוֹת שֶׁמִּתְפַּשֵּׁט עַל סְלָעִים וְחוֹל.",
+            definitionNative = "Водное существо с пятью лучами, что распластано на камнях и песке.",
+            example = "מָצַאנוּ כּוֹכַב יָם צִבְעוֹנִי עַל הַסְּלָעִים בַּחוֹף.",
+            exampleNative = "Мы нашли красочную כּוֹכַב יָם на скалах у берега.",
          fillInBlankExclusions = listOf(103812L, 103813L, 103815L, 103820L, 103821L, 103824L)),
         WordEntity(
             id = 103824, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",

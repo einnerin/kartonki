@@ -581,7 +581,7 @@ object WordDataHebrewAnimals {
             definition = "חַיַּת טֶרֶף חֲזָקָה מֵאַמֶרִיקָה הַדְּרוֹמִית עִם פֶּה רָב-עֹצְמָה.",
             definitionNative = "Сильный хищник из Южной Америки с очень мощной челюстью.",
             example = "הַיָּגוּאָר טָרַף קַיְמָן בִּשְׂפַת נָהָר אֲמָזוֹנַס.",
-            exampleNative = "יָגוּאָר задрал кайманa у берега Амазонки.",
+            exampleNative = "יָגוּאָר задрал каймана у берега Амазонки.",
         ),
         WordEntity(
             id = 187504, setId = 1875, languagePair = "he-ru", rarity = "EPIC",

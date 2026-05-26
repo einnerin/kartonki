@@ -134,6 +134,73 @@ WordEntity(id = 28903, setId = 289, languagePair = "en-ru", rarity = "RARE",
 - Не пытайся обработать больше одного setId за раз — даже если файл содержит несколько.
 - Если в промпте несколько setId — обработай **только первый** (по порядку), остальные оставь. Родитель запустит тебя снова.
 
+## Anti-patterns от quality audit 2026-05-26
+
+Эти классы багов **уже находили в продакшне**. Не повторяй.
+
+### 1. Несуществующие Hebrew слова в `original`
+Audit нашёл: `מַפְכָה` (вместо `מַהְפֶּכֶת`), `מִשְׁקֶּתֶת` (нет такого слова),
+`קַרְקוּב` для «излучения» (это «гниение»), `עַרְצַבִּית` для «морской звезды»
+(это «многоножка»), `פַּעֲלוּלֵי` для «упражнения» (это «трюки»),
+`אַסְפַלְט-מַעֲרָבֵל` для «бетоносмесителя» (это «асфальтомешалка»),
+`עֹקֶץ חַמְצוֹנִי` для «окислительного стресса» (псевдо-термин).
+
+**Правило:** для каждого Hebrew `original` — мысленно проверь существование
+слова в современном иврите И соответствие `translation`. Если не уверен —
+поставь `needs_human_review: true` и оставь поле пустым. Лучше пропустить
+запись, чем закрепить несуществующий термин.
+
+### 2. Mixed-script опечатки (латинская «b» вместо кириллической «б»)
+Audit нашёл: «**b**ывает» в exampleNative (Set 76) — латинская `b` U+0062
+вместо кириллической `б` U+0431. Глаз не отличит, кодпоинты разные →
+сломан spell-check, search, future processing.
+
+Аналогично в `original`: арабская `ت` U+062A вместо ивритской `ת` U+05EA.
+
+**Правило:** при копипасте Hebrew/Russian слов — следи за script. Hard-блок
+валидатор `validate_no_mixed_script_in_words` ловит mixed-script в text-полях.
+
+### 3. `original` отсутствует в `exampleNative`
+Audit нашёл (Set 76): `obstreperous` → exampleNative «Буйную толпу пришлось
+успокаивать охране» — оригинал НЕ упомянут → карточка теряет учебную связь
+между формой и смыслом.
+
+**Правило:** exampleNative ВСЕГДА содержит `original` (или его инфлексию
+для Hebrew). Hard-блок валидатор `validate_original_in_examplenative`.
+
+### 4. Семантический сдвиг определения
+Audit нашёл (Set 372): `salutation` определено как «warm spoken greeting…
+to honour someone» (= toast/tribute), а реальное значение — formal opening
+of letter (Dear Sir, Best regards).
+
+**Правило:** для редких/абстрактных слов с близкими синонимами — сверься
+со словарём или OED-style источником прежде чем писать definition. Не
+смешивай близкие, но разные понятия.
+
+### 5. Монотонные шаблоны examples
+Audit нашёл (Set 439, Животные LEGENDARY): 14 из 25 examples начинаются с
+«Every X does Y» — звучит как энциклопедия, не живая речь.
+
+**Правило:** в одном setе ≤60% examples с одинаковым 2-словным началом.
+Hard-блок валидатор `validate_example_variety`. Разнообразь приёмы:
+повествование, прямая речь, вопрос, восклицание, обращение.
+
+### 6. Padding эвфемизмами в LEGENDARY
+Audit нашёл (Set 1887, Сад L5): «фазам ночного небесного спутника» вместо
+«фазам луны». Subagent растягивает фразу искусственно ради длины.
+
+**Правило:** лимит ≤16 слов / ≤90 символов — это **максимум**, не цель.
+Лучше 8 слов с живым смыслом, чем 14 с padding. Эвфемизмы как обход
+очевидного слова — анти-паттерн.
+
+### 7. Канцелярит в L1 базовой лексике
+Audit нашёл (Set 4 «Одежда» L1): «Изделия, надеваемые на руки, с отдельными
+пальцами» (gloves), «Полоска материала, носимая вокруг талии поверх одежды»
+(belt). Для COMMON L1 — никаких причастных оборотов «надеваемые/носимая».
+
+**Правило:** для L1-COMMON — детская речь, без причастных оборотов.
+«Их носят на руках в холод», «Им закрывают талию поверх брюк».
+
 ## Что НЕ делать
 
 - ❌ Не менять `original`, `translation`, `transliteration`, `rarity`, `id`, `setId`, `languagePair`
@@ -219,6 +286,9 @@ bash scripts/validate/validate_all.sh <setId>
 | `validate_blank_ambiguity_hebrew` | (he-ru) Слово помечено `isFillInBlankSafe=true` но `HebrewBlankMatcher` не находит original в example. Либо переписать example чтобы original (или с prefix-letter `[הבלמכוש]`) реально был в нём, либо явно поставить `isFillInBlankSafe = false`. |
 | `validate_no_foreign_script_in_original` | Mixed-script опечатка в `original` (арабская `ت` U+062A вместо ивритской `ת` U+05EA, кириллическая `а` вместо латинской и т.п.). Заменить на правильный кодпоинт. |
 | `validate_fillinblank_exclusions_fresh` | `example` или состав слов setа изменились после последнего прогона FILL_IN_BLANK pipeline. Прогнать: `python scripts/validate/generate_fill_in_blank_exclusions.py --set-id <N> --apply` (safety-net only) или с LLM через `fill_in_blank_prompt.py` (см. `docs/claude/fill-in-blank-pipeline.md`). |
+| `validate_original_in_examplenative` | `exampleNative` не содержит `original` — карточка теряет учебную связь. Переписать чтобы `original` вшит в русское предложение как маркер. |
+| `validate_no_mixed_script_in_words` | Mixed-script внутри одного слова — латинская «b» в кириллическом, арабская «ت» в иврите. Опечатка. Исправить кодпоинт. |
+| `validate_example_variety` | Examples в setе монотонны — >60% начинаются одинаково (`Every X`, `The X` и т.п.). Переписать часть с разными приёмами. |
 | `validate_fields_filled` пропускает, а `validate_group_sizes`/`validate_pos_values` падают | Это не твоя зона (pos/semanticGroup — работа metadata-filler). Значит ими не заполнено в этом setId. В отчёте пометь, что `metadata-filler` должен пройтись после тебя |
 
 Агент НЕ трогает `pos` и `semanticGroup` (это зона metadata-filler), но **сам проверяет**, что 4 текстовых поля удовлетворяют соответствующим валидаторам: `validate_fields_filled` (в части 4 text-полей), `validate_text_lengths`, `validate_no_cognates`.
