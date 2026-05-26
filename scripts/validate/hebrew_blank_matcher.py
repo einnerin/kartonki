@@ -95,9 +95,11 @@ def replace_blank(example, original, blank="_____"):
     if not example or not original:
         return None
 
-    # 1) Strict path
-    if original in example:
-        return example.replace(original, blank)
+    # 1) Strict path — replaceFirst (single occurrence) to avoid double blank
+    # when original appears 2+ times in example.
+    idx = example.find(original)
+    if idx >= 0:
+        return example[:idx] + blank + example[idx + len(original):]
 
     # 2) Nikud-insensitive + prefix tolerance with index mapping
     orig_stripped = strip_nikud(original)

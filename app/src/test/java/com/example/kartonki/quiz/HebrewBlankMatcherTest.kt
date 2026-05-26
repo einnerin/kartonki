@@ -103,4 +103,22 @@ class HebrewBlankMatcherTest {
         )
         assertEquals("אֲנִי אוֹהֵב ___.", result)
     }
+
+    @Test fun `original appearing twice in example produces single blank not two`() {
+        // Real-world case: «לֹא, אֲנִי לֹא עָיֵף עַכְשָׁיו.» — "No, I'm not tired".
+        // Naive replace-all would create two blanks. We want exactly one.
+        val result = HebrewBlankMatcher.replaceOriginalWithBlank(
+            example = "לֹא, אֲנִי לֹא עָיֵף עַכְשָׁיו.",
+            original = "לֹא",
+        )
+        assertEquals("_____, אֲנִי לֹא עָיֵף עַכְשָׁיו.", result)
+    }
+
+    @Test fun `english-style example with original twice produces single blank`() {
+        val result = HebrewBlankMatcher.replaceOriginalWithBlank(
+            example = "I run and run again.",
+            original = "run",
+        )
+        assertEquals("I _____ and run again.", result)
+    }
 }

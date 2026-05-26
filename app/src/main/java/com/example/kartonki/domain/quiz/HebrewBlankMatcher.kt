@@ -65,8 +65,14 @@ object HebrewBlankMatcher {
         blank: String = "_____",
     ): String? {
         // 1) Strict path (cheap, handles all en-ru and well-aligned he-ru cases).
-        val strict = example.replace(original, blank, ignoreCase = false)
-        if (strict != example) return strict
+        // replaceFirst — if the original word appears multiple times in the example
+        // (e.g. «לֹא, אֲנִי לֹא עָיֵף» — "no, I'm not tired"), we want exactly ONE
+        // blank, not two.
+        val firstIdx = example.indexOf(original)
+        if (firstIdx >= 0) {
+            return example.substring(0, firstIdx) + blank +
+                example.substring(firstIdx + original.length)
+        }
 
         // 2) Nikud-insensitive search with prefix tolerance.
         if (original.isBlank()) return null

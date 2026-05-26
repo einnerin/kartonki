@@ -169,9 +169,13 @@ object QuizBuilder {
                     HebrewBlankMatcher.replaceOriginalWithBlank(raw, word.original)
                         ?: return fallbackTranslation(word, distractorPool)
                 } else {
-                    val s = raw.replace(word.original, "_____", ignoreCase = true)
-                    if (s == raw) return fallbackTranslation(word, distractorPool)
-                    s
+                    // replaceFirst — if the original appears multiple times in the
+                    // example (rare for en-ru but possible: «I run because running
+                    // helps me» for original "run"), we want exactly ONE blank.
+                    val pat = Regex(Regex.escape(word.original), RegexOption.IGNORE_CASE)
+                    val match = pat.find(raw) ?: return fallbackTranslation(word, distractorPool)
+                    raw.substring(0, match.range.first) + "_____" +
+                        raw.substring(match.range.last + 1)
                 }
                 val fillBlankDistractors = pickDistractors(word, distractorPool, forFillInBlank = true)
                 val wrongs = uniqueDistractorTexts(

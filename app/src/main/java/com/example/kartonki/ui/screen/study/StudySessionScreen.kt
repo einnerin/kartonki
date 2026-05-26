@@ -32,7 +32,10 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.collectAsState
+import androidx.compose.ui.platform.LocalLayoutDirection
+import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -223,18 +226,28 @@ internal fun QuizContent(
                 shape = MaterialTheme.shapes.medium,
                 modifier = Modifier.fillMaxWidth(),
             ) {
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    modifier = Modifier.padding(horizontal = 20.dp, vertical = 24.dp),
-                ) {
-                    Text(
-                        text = step.question,
-                        style = MaterialTheme.typography.headlineMedium.copy(
-                            textDirection = if (isHebrewQuestionRtl) TextDirection.Rtl else TextDirection.Ltr,
-                        ),
-                        fontWeight = FontWeight.Bold,
-                        textAlign = TextAlign.Center,
-                    )
+                // Force the question-card's layout direction explicitly. textDirection
+                // on the Text style alone is unreliable when the string starts with
+                // neutral chars (e.g. FILL_IN_BLANK begins with the underscore blank
+                // "_____ tahanat haotobus?" — without an explicit layout direction
+                // the paragraph renders LTR-aligned, putting the blank on the left
+                // instead of at the right where the Hebrew sentence logically begins).
+                val questionDirection =
+                    if (isHebrewQuestionRtl) LayoutDirection.Rtl else LayoutDirection.Ltr
+                CompositionLocalProvider(LocalLayoutDirection provides questionDirection) {
+                    Column(
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        modifier = Modifier.padding(horizontal = 20.dp, vertical = 24.dp),
+                    ) {
+                        Text(
+                            text = step.question,
+                            style = MaterialTheme.typography.headlineMedium.copy(
+                                textDirection = if (isHebrewQuestionRtl) TextDirection.Rtl else TextDirection.Ltr,
+                            ),
+                            fontWeight = FontWeight.Bold,
+                            textAlign = TextAlign.Center,
+                        )
+                    }
                 }
             }
             MultipleChoiceSection(
