@@ -283,51 +283,61 @@ private fun MultipleChoiceSection(
     optionsRtl: Boolean = false,
     onOptionSelected: (String) -> Unit,
 ) {
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        options.forEach { option ->
-            val isCorrect  = answered != null && option.equals(answered.correctAnswer, ignoreCase = true)
-            val isSelected = answered != null && option.equals(answered.selectedAnswer, ignoreCase = true)
-            val isWrong    = isSelected && !isCorrect
+    // Force the options' layout direction explicitly. Same reason as the
+    // question card (StudySessionScreen): textDirection style alone is
+    // unreliable when strings start with neutral chars or contain multi-word
+    // Hebrew that should flow RTL. Wrapping the entire Column in
+    // LocalLayoutDirection=Rtl makes each option button reliably right-aligned
+    // (and the Text inside RTL-flowed).
+    val optionsLayoutDirection =
+        if (optionsRtl) LayoutDirection.Rtl else LayoutDirection.Ltr
+    CompositionLocalProvider(LocalLayoutDirection provides optionsLayoutDirection) {
+        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            options.forEach { option ->
+                val isCorrect  = answered != null && option.equals(answered.correctAnswer, ignoreCase = true)
+                val isSelected = answered != null && option.equals(answered.selectedAnswer, ignoreCase = true)
+                val isWrong    = isSelected && !isCorrect
 
-            val (bgColor, borderColor, textColor) = when {
-                answered == null -> Triple(
-                    MaterialTheme.colorScheme.surfaceVariant,
-                    MaterialTheme.colorScheme.outline,
-                    MaterialTheme.colorScheme.onSurface,
-                )
-                isCorrect -> Triple(ColorCorrectBg, ColorCorrectBorder, ColorCorrect)
-                isWrong   -> Triple(ColorIncorrectBg, ColorIncorrectBorder, ColorIncorrect)
-                else      -> Triple(
-                    MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.4f),
-                    MaterialTheme.colorScheme.outline.copy(alpha = 0.3f),
-                    MaterialTheme.colorScheme.onSurface.copy(alpha = 0.35f),
-                )
-            }
+                val (bgColor, borderColor, textColor) = when {
+                    answered == null -> Triple(
+                        MaterialTheme.colorScheme.surfaceVariant,
+                        MaterialTheme.colorScheme.outline,
+                        MaterialTheme.colorScheme.onSurface,
+                    )
+                    isCorrect -> Triple(ColorCorrectBg, ColorCorrectBorder, ColorCorrect)
+                    isWrong   -> Triple(ColorIncorrectBg, ColorIncorrectBorder, ColorIncorrect)
+                    else      -> Triple(
+                        MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.4f),
+                        MaterialTheme.colorScheme.outline.copy(alpha = 0.3f),
+                        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.35f),
+                    )
+                }
 
-            OutlinedButton(
-                onClick = { onOptionSelected(option) },
-                enabled = answered == null,
-                shape = RoundedCornerShape(12.dp),
-                border = androidx.compose.foundation.BorderStroke(
-                    width = if (isCorrect || isWrong) 2.dp else 1.dp,
-                    color = borderColor,
-                ),
-                colors = ButtonDefaults.outlinedButtonColors(
-                    containerColor = bgColor,
-                    contentColor = textColor,
-                    disabledContainerColor = bgColor,
-                    disabledContentColor = textColor,
-                ),
-                modifier = Modifier.fillMaxWidth(),
-            ) {
-                Text(
-                    text = option,
-                    textAlign = TextAlign.Center,
-                    style = MaterialTheme.typography.bodyLarge.copy(
-                        textDirection = if (optionsRtl) TextDirection.Rtl else TextDirection.Ltr,
+                OutlinedButton(
+                    onClick = { onOptionSelected(option) },
+                    enabled = answered == null,
+                    shape = RoundedCornerShape(12.dp),
+                    border = androidx.compose.foundation.BorderStroke(
+                        width = if (isCorrect || isWrong) 2.dp else 1.dp,
+                        color = borderColor,
                     ),
-                    fontWeight = if (isCorrect || isWrong) FontWeight.Bold else FontWeight.Normal,
-                )
+                    colors = ButtonDefaults.outlinedButtonColors(
+                        containerColor = bgColor,
+                        contentColor = textColor,
+                        disabledContainerColor = bgColor,
+                        disabledContentColor = textColor,
+                    ),
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Text(
+                        text = option,
+                        textAlign = TextAlign.Center,
+                        style = MaterialTheme.typography.bodyLarge.copy(
+                            textDirection = if (optionsRtl) TextDirection.Rtl else TextDirection.Ltr,
+                        ),
+                        fontWeight = if (isCorrect || isWrong) FontWeight.Bold else FontWeight.Normal,
+                    )
+                }
             }
         }
     }
