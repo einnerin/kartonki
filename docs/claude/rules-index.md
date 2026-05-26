@@ -24,6 +24,18 @@
 7. **Стандарт качества определений** (`definition`, `definitionNative`) — живой стиль учителя, ≤16 слов / ≤90 символов (смягчено 2026-04-24 с 14/80 для релиза), нет однокоренных с original/translation, формула «суть — например, X, Y, Z» максимум 60-70% слов набора (правило 8 стандарта). См. [`quality_standards_definitions.md`](quality_standards_definitions.md).
 8. **Стандарт качества example-предложений** — целевое слово в форме `original`, ≤14 слов / ≤90 символов (англ.), ≤12 слов / ≤80 символов (иврит). Живая речь носителя. Rule 2 «Однозначность пропуска» смягчено — близкие соседи теперь ловит runtime pipeline (см. правило 17b ниже). См. [`quality_standards_examples.md`](quality_standards_examples.md).
 
+8a. **Hard-блок валидаторы качества текстов (2026-05-25..26)** — 7 новых валидаторов закрывают классы багов, ранее ловившиеся только при ручном аудите. Все подключены в `validate_all.sh` (16 проверок total), pre-commit hook автоматически их применяет.
+
+   - `validate_no_headword_in_def` — `original` (en/he) не должен литерально стоять в собственном `definition` (квиз превращается в matching). Hard block.
+   - `validate_no_translation_in_defnative` — русский `translation` не должен литерально стоять в собственном `definitionNative` (тавтология на LEGENDARY card flip). Симметричен предыдущему.
+   - `validate_text_terminators` — все 4 text-поля заканчиваются на `.!?…")]`. Типографическая чистота.
+   - `validate_original_in_example` — `original` (или его 3-char stem с Hebrew prefix tolerance) должен присутствовать в `example`. Иначе FILL_IN_BLANK ломается.
+   - `validate_no_foreign_in_examplenative` — `exampleNative` начинается с заглавной русской/Hebrew/цифры/кавычки. Строчная латинская в начале = непереведённое английское слово (известный класс багов).
+   - `validate_no_clerical` — запрещены канцеляризмы из `quality_standards_*.md` («являться», «осуществить», «представляет собой», «характеризуется», «используется для», «данный объект» и пр.).
+   - `validate_hebrew_transliteration_format` — Hebrew `transliteration` латиницей без IPA-символов (`makhshev`, не `[makhˈʃev]`). Skip для skeleton-сетов.
+   - `validate_blank_ambiguity_hebrew` — Python-port `HebrewBlankMatcher`; ловит safe-но-runtime-не-найдёт слова в Hebrew FILL_IN_BLANK.
+   - `validate_no_foreign_script_in_original` — `original` использует script соответствующий languagePair (Hebrew для he-ru, Latin для en-ru). Ловит mixed-script опечатки типа арабская `ت` U+062A vs ивритская `ת` U+05EA.
+
 ### Идентификация и структура
 
 9. **Формула ID** — `id = setId × 100 + позиция (1..25)`. Позиция глобальная по всем файлам, если набор разнесён. См. [`word-sets.md`](word-sets.md).
@@ -47,7 +59,12 @@
     Распределение: en-ru почти полностью заполнено (99.9%), he-ru на 84% skeleton.
     FILL_IN_BLANK pipeline (правило 17b) может работать на ~280 заполненных наборах из 739. Заполнение skeleton-слов текстами — отдельный проект через агенты `text-author` + `metadata-filler`.
 
-16c. **Hebrew form_mismatch (2026-04-23) — 605 слов помечены `isFillInBlankSafe = false`.** Hebrew морфология (биньян, огласовки, артикли) часто приводит к тому, что форма слова в example отличается от `original`. Подстрочная замена `example.replace(original, "_____")` не срабатывает. Пока не реализован Hebrew-aware квиз — эти слова unsafe для FILL_IN_BLANK. Технически чинится либо переписыванием examples (Phase B), либо специальной Hebrew-aware логикой подстановки (отдельный engineering проект).
+16c. **Hebrew FILL_IN_BLANK runtime (обновлено 2026-05-26) — закрыто `HebrewBlankMatcher`.** Раньше: 1014 слов помечены `isFillInBlankSafe = false` (6.8% Hebrew), потому что strict `example.replace(original, "_____")` ломался на Hebrew-префиксах (`לְבֵית` vs `בֵּית`). Теперь:
+   - `app/.../domain/quiz/HebrewBlankMatcher.kt` — runtime matcher с tolerance к префиксам `ה/ב/ל/מ/כ/ו/ש` + комбинациям + nikud + multi-word с per-token prefix + word-boundary.
+   - Подключён в `QuizBuilder.kt:165` для `languagePair == "he-ru"`; en-ru сохраняет strict replace.
+   - 10 unit-тестов (`HebrewBlankMatcherTest`) + integration-тесты в `QuizBuilderTest` для Hebrew FILL_IN_BLANK веток.
+   - Python-port `scripts/validate/hebrew_blank_matcher.py` ⇄ Kotlin parity, используется в `validate_blank_ambiguity_hebrew`.
+   - Net result: 1014 → 255 unsafe (6.8% → 1.7%). Оставшиеся 255 — реальные suffix-flexions (`חוֹטֶם → חוֹטְמָהּ`), runtime корректно fallback к MULTIPLE_CHOICE_TRANSLATION.
 
 16d. **Preset decks (обновлено 2026-04-27) — закрыто валидатором.** Раньше техдолг (~129 несоответствий: orphan-слова, cross-topic rarity collisions, level-limit overflows). Теперь:
     - Создан `scripts/validate/validate_preset_decks.py` — ловит ORPHAN / WRONG_RARITY / LIMIT_VIOLATION с учётом WordRegistry порядка (last-write-wins как в Room).
@@ -74,3 +91,4 @@
 ## История обновлений
 
 - **2026-04-22..23** — большая сессия обхода правил. Добавлены/уточнены 17 правил, реализован FILL_IN_BLANK pipeline (Фазы 1-3 на пилотном наборе 9). Две проверки переведены из warning в block: CEFR в описаниях (№11), транслитерация he-ru (№15). `orderIndex` задокументирован как исторический (№16).
+- **2026-05-25..26** — серия аудитов и фиксов 9 классов багов (headword-in-def, translation-in-defNative, терминаторы, copy-paste в exampleNative, missing original в example, канцелярит, IPA в Hebrew translit, mixed-script в original, Hebrew FILL_IN_BLANK runtime). 7 новых hard-блок-валидаторов (правило 8a). Hebrew FILL_IN_BLANK обновлён runtime matcher'ом (правило 16c). `validate_all.sh` теперь 16 проверок.

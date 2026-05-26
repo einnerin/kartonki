@@ -366,4 +366,80 @@ class QuizBuilderTest {
                 step.options.any { it.equals(step.correctAnswer, ignoreCase = true) })
         }
     }
+
+    // ── HebrewBlankMatcher integration via FILL_IN_BLANK ──────────────────────
+
+    private fun hebrewWord(
+        id: Long,
+        original: String,
+        example: String?,
+    ) = Word(
+        id = id, original = original, translation = "перевод$id", rarity = Rarity.COMMON,
+        languagePair = "he-ru", pos = "noun", semanticGroup = "test",
+        definition = "תֵּאוּר $id.", definitionNative = "Это слово $id.",
+        example = example, exampleNative = "Русский пример $id.",
+        transliteration = "translit$id",
+    )
+
+    @Test fun `FILL_IN_BLANK hebrew with prefix lamed produces correct blank`() {
+        // original "בֵּית מִשְׁפָּט" appears as "לְבֵית מִשְׁפָּט" in example (prefix ל).
+        // Strict replace would fail; HebrewBlankMatcher should succeed.
+        val word = hebrewWord(1, "בֵּית מִשְׁפָּט",
+            example = "הַתְּבִיעָה הֻגְּשָׁה לְבֵית מִשְׁפָּט בְּתֵל אָבִיב.")
+        val pool = (2L..20L).map { hebrewWord(it, "מילה$it", "אני רואה מילה$it.") }
+        val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, pool + word)
+        assertEquals(StudyQuizType.FILL_IN_BLANK, step.type)
+        assertTrue("Question must contain blank marker; got: ${step.question}",
+            step.question.contains("_____"))
+        assertEquals(word.original, step.correctAnswer)
+    }
+
+    @Test fun `FILL_IN_BLANK hebrew with double-prefix multi-token`() {
+        // Compound phrase: article ה on both noun and adjective.
+        val word = hebrewWord(1, "קַלְמָר עֲנָק",
+            example = "הַקַּלְמָר הָעֲנָק נֵאֱבַק עִם לִוְיָתָן.")
+        val pool = (2L..20L).map { hebrewWord(it, "מילה$it", "אני רואה מילה$it.") }
+        val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, pool + word)
+        assertTrue(step.question.contains("_____"))
+        assertEquals(word.original, step.correctAnswer)
+    }
+
+    @Test fun `FILL_IN_BLANK hebrew suffix-flexion falls back to translation`() {
+        // Real form mismatch: original singular, example uses possessive suffix.
+        // Matcher returns null → fallbackTranslation kicks in.
+        val word = hebrewWord(1, "חוֹטֶם",
+            example = "הַמְּשׁוֹרֵר תֵּאֵר אֶת חוֹטְמָהּ הָעֲדִין.")
+        val pool = (2L..20L).map { hebrewWord(it, "מילה$it", "אני רואה מילה$it.") }
+        val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, pool + word)
+        // Fallback to MULTIPLE_CHOICE_TRANSLATION when blank can't be made
+        assertEquals(StudyQuizType.MULTIPLE_CHOICE_TRANSLATION, step.type)
+        assertEquals(word.translation, step.correctAnswer)
+    }
+
+    @Test fun `FILL_IN_BLANK english still uses strict replace (case-insensitive)`() {
+        // English path unchanged: case-insensitive substring replace.
+        val word = makeWord(1, original = "cookie",
+            example = "I baked a Cookie for my daughter.")
+        val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, fullWords + word)
+        assertTrue("Strict replace should swap 'Cookie' (case-insensitive)",
+            step.question.contains("_____"))
+    }
+
+    @Test fun `FILL_IN_BLANK falls back when example empty`() {
+        val word = hebrewWord(1, "כֶּלֶב", example = "")
+        val pool = (2L..20L).map { hebrewWord(it, "מילה$it", "אני רואה מילה$it.") }
+        // availableQuizTypesFor filters out FILL_IN_BLANK when example is null/blank,
+        // but buildQuizStep handles the case via fallback when invoked directly.
+        // Empty example string still hits matcher → returns null → fallback.
+        val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, pool + word)
+        assertEquals(StudyQuizType.MULTIPLE_CHOICE_TRANSLATION, step.type)
+    }
+
+    @Test fun `FILL_IN_BLANK hebrew with bare ה article on single word`() {
+        val word = hebrewWord(1, "כֶּלֶב", example = "הַכֶּלֶב נָבַח כָּל הַלַּיְלָה.")
+        val pool = (2L..20L).map { hebrewWord(it, "מילה$it", "אני רואה מילה$it.") }
+        val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, pool + word)
+        assertEquals(StudyQuizType.FILL_IN_BLANK, step.type)
+        assertTrue(step.question.contains("_____"))
+    }
 }
