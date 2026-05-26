@@ -211,9 +211,9 @@ object WordDataEnglishBatch18 {
         // UNCOMMON — boardgame_structure (структура партии)
         WordEntity(id = 30106, original = "round", transliteration = "[raʊnd]", translation = "раунд", rarity = "UNCOMMON", setId = 301, languagePair = "en-ru", pos = "noun", semanticGroup = "boardgame_structure",
             definition = "One full circle of the table — everyone has played once.",
-            example = "We played four rounds before taking a break.",
+            example = "The final round was tense — everyone was almost out of cards.",
             definitionNative = "Круг партии, после которого все игроки уже сделали по ходу.",
-            exampleNative = "Мы сыграли четыре round и устроили перерыв.", isFillInBlankSafe = false),
+            exampleNative = "В последнем round решилось всё — он выложил последнюю карту.", isFillInBlankSafe = false, fillInBlankExclusions = listOf(30107L, 30108L, 30109L, 30110L)),
         WordEntity(id = 30107, original = "match", transliteration = "[mæʧ]", translation = "партия, матч", rarity = "UNCOMMON", setId = 301, languagePair = "en-ru", pos = "noun", semanticGroup = "boardgame_structure",
             definition = "A whole game from start to finish, with a clear winner.",
             example = "They played a long match that lasted two hours.",

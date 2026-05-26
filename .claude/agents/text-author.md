@@ -212,6 +212,7 @@ bash scripts/validate/validate_all.sh <setId>
 | `validate_no_translation_in_defnative` | Русский `translation` не должен литерально стоять в собственном `definitionNative` — переписать без повторения перевода |
 | `validate_text_terminators` | Любое из 4 text-полей не заканчивается на `.`/`!`/`?`/`…`/`"` — добавить терминатор |
 | `validate_original_in_example` | `example` не содержит `original` (или 3-буквенный stem с Hebrew-prefix tolerance) — переписать example так, чтобы изучаемое слово реально в нём было |
+| `validate_original_strict_in_example` | (en-ru) `original` отсутствует в `example` БУКВА-В-БУКВУ. Inflexion (`cookies` для `cookie`, `eats` для `eat`) ломает FILL_IN_BLANK → уродливый «___s» / «___ed» в UI. Перепиши example в базовой форме слова. Pluralia tantum (scissors, trousers, ...) whitelisted. |
 | `validate_no_foreign_in_examplenative` | `exampleNative` начинается со строчной латинской/русской — переписать русское начало с заглавной |
 | `validate_no_clerical` | Канцелярит в любом из 4 полей — заменить на живой язык (см. список запрещённых токенов в `validate_no_clerical.py`) |
 | `validate_hebrew_transliteration_format` | (he-ru) Hebrew transliteration в IPA-стиле (`[biˈdud]`, `ŋ`) — переписать в латинскую транскрипцию (`bidud`, `marketing`). Никаких IPA-символов и скобок `[...]`. |

@@ -237,9 +237,9 @@ object WordDataEnglishBatch3 {
 
                 WordEntity(id = 25107, original = "borrow", transliteration = "[ˈbɒrəʊ]", translation = "занимать (деньги), брать в долг", rarity = "COMMON", setId = 251, languagePair = "en-ru", pos = "verb", semanticGroup = "banking_credit_loan",
             definition = "To take money or a thing and promise to return it later.",
-            example = "They borrowed money from the bank to buy a new car.",
+            example = "Can I borrow your charger? My phone is completely dead.",
             definitionNative = "Получить деньги или вещь, пообещав вернуть их позже.",
-            exampleNative = "Они borrow деньги в банке на покупку новой машины.", isFillInBlankSafe = false),
+            exampleNative = "Можно borrow у тебя зарядку? Телефон совсем сел.", isFillInBlankSafe = false),
 
         WordEntity(id = 25108, original = "savings", transliteration = "[ˈseɪvɪŋz]", translation = "сбережения",
             definition = "Money you keep aside, usually in a bank, for later needs.",

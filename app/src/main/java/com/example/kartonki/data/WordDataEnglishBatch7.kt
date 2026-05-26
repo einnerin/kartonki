@@ -476,7 +476,7 @@ object WordDataEnglishBatch7 {
             original = "hour", transliteration = "[aʊər]", translation = "час",
             definition = "A span of sixty minutes — one slice of the twenty-four day cycle.",
             definitionNative = "Отрезок времени в шестьдесят минут — сутки разделены на двадцать четыре.",
-            example = "The movie lasts almost three hours, bring some snacks.",
+            example = "I'll be there in about an hour — wait for me.",
             exampleNative = "Подожди ровно один hour, я скоро подъеду.",
             pos = "noun", semanticGroup = "time_duration_short", isFillInBlankSafe = false),
         WordEntity(id = 26416, setId = 264, languagePair = "en-ru", rarity = "UNCOMMON",
