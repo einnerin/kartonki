@@ -1,29 +1,67 @@
 #!/usr/bin/env bash
-# Regression test for all 8 validators.
-# Uses KARTONKI_DATA_DIR to point _parser at fixtures in this directory.
+# Regression test for 19 hard-блок-валидаторов (из 21 в validate_all.sh).
+# Исключены validate_group_sizes и validate_no_cognates — оба advisory-only
+# (всегда exit 0, см. комментарии в их .py файлах).
 #
-# Expects:
-#   good_set (setId=9991) — every validator exits 0
-#   bad_set  (setId=9992) — every validator exits 1 (each fixture word violates
-#                           one specific rule)
+# Uses KARTONKI_DATA_DIR to point _parser at fixtures in this directory,
+# and KARTONKI_HASHES_FILE to point fill-in-blank fresh validator at a stale
+# test hash file.
+#
+# Fixtures:
+#   GOOD = 9991 (en-ru) — every validator must exit 0
+#   BAD_EN = 9992 — en-ru core violations
+#   BAD_HE = 9993 — he-ru specific (IPA translit, mixed-script, blank ambiguity)
+#   BAD_MONOTONE = 9994 — 11 examples all starting "Every test ..."
+#
+# Per-validator: assigns a specific bad set the validator is expected to fail on
+# (since Hebrew validators skip non-Hebrew, example_variety needs ≥10 examples,
+# fillinblank_fresh needs an entry in pipeline_hashes.json).
 set -u
 cd "$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
 
 export KARTONKI_DATA_DIR=scripts/validate/tests
+export KARTONKI_HASHES_FILE="$PWD/scripts/validate/tests/pipeline_hashes_test.json"
 
 GOOD=9991
-BAD=9992
+BAD_EN=9992
+BAD_HE=9993
+BAD_MONOTONE=9994
 HERE="scripts/validate"
 
-CHECKS=(
-  "validate_fields_filled"
-  "validate_pos_values"
-  "validate_group_sizes"
-  "validate_text_lengths"
-  "validate_rarity_spread"
-  "validate_no_duplicates"
-  "validate_no_cognates"
-  "validate_blank_ambiguity"
+# (validator_name, bad_setId) — good_setId is always 9991.
+# Total: 21 validators.
+TESTS=(
+  # ── Hard-блок (en-ru, fail-able) ───────────────────────────────────────────
+  "validate_fields_filled $BAD_EN"
+  "validate_pos_values $BAD_EN"
+  "validate_text_lengths $BAD_EN"
+  "validate_rarity_spread $BAD_EN"
+  "validate_no_duplicates $BAD_EN"
+  "validate_blank_ambiguity $BAD_EN"
+  "validate_no_headword_in_def $BAD_EN"
+  "validate_no_translation_in_defnative $BAD_EN"
+  "validate_text_terminators $BAD_EN"
+  "validate_original_in_example $BAD_EN"
+  "validate_original_strict_in_example $BAD_EN"
+  "validate_no_foreign_in_examplenative $BAD_EN"
+  "validate_no_clerical $BAD_EN"
+  "validate_no_mixed_script_in_words $BAD_EN"
+  "validate_fillinblank_exclusions_fresh $BAD_EN"
+  # ── Hebrew-specific (need he-ru fixture) ───────────────────────────────────
+  "validate_hebrew_transliteration_format $BAD_HE"
+  "validate_blank_ambiguity_hebrew $BAD_HE"
+  "validate_no_foreign_script_in_original $BAD_HE"
+  # ── Monotone-examples (needs ≥10 examples with same prefix) ────────────────
+  "validate_example_variety $BAD_MONOTONE"
+
+  # ── ИСКЛЮЧЕНЫ из регрессии (advisory-only, всегда exit 0): ─────────────────
+  #   validate_group_sizes — после Phase 2 эксперимента (2026-04-23) переведён
+  #     в WARN-only: bulk-regrouping имел каскадные побочки на blank_ambiguity,
+  #     не оправдывало pain. group_sizes печатает warning, но не блокирует.
+  #   validate_no_cognates — heuristic с известными FP (особенно Hebrew, где
+  #     стем находит сам себя). Warning-only пока эвристика не уточнена.
+  # Оба остаются в validate_all.sh для информативного output, но не могут
+  # быть проверены через bad-fixture (они никогда не возвращают 1).
 )
 
 PASS=0
@@ -47,22 +85,26 @@ check_result() {
 }
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Regression tests для валидаторов"
+echo "Regression tests для 21 валидатора"
 echo "KARTONKI_DATA_DIR=$KARTONKI_DATA_DIR"
+echo "KARTONKI_HASHES_FILE=$KARTONKI_HASHES_FILE"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-# Good fixture должен проходить все проверки (exit 0)
+# Good fixture: каждый валидатор должен пройти (exit 0)
 echo ""
 echo "── GOOD FIXTURE (setId=$GOOD): каждый валидатор должен вернуть 0 ──"
-for c in "${CHECKS[@]}"; do
-  check_result "$c" "$GOOD" "0" "good"
+for t in "${TESTS[@]}"; do
+  validator=$(echo "$t" | awk '{print $1}')
+  check_result "$validator" "$GOOD" "0" "good"
 done
 
-# Bad fixture должен валить каждую проверку (exit 1)
+# Bad fixtures: каждый валидатор должен заблокировать СВОЙ bad-setId (exit 1)
 echo ""
-echo "── BAD FIXTURE (setId=$BAD): каждый валидатор должен вернуть 1 ──"
-for c in "${CHECKS[@]}"; do
-  check_result "$c" "$BAD" "1" "bad"
+echo "── BAD FIXTURES: каждый валидатор должен вернуть 1 на своём bad-setId ──"
+for t in "${TESTS[@]}"; do
+  validator=$(echo "$t" | awk '{print $1}')
+  bad_set=$(echo "$t" | awk '{print $2}')
+  check_result "$validator" "$bad_set" "1" "bad"
 done
 
 echo ""

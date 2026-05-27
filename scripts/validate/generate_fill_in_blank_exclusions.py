@@ -24,6 +24,7 @@ See docs/claude/fill-in-blank-pipeline.md.
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -35,7 +36,13 @@ from _parser import ROOT, parse_words
 # been through the FILL_IN_BLANK pipeline. Used by
 # validate_fillinblank_exclusions_fresh to detect stale exclusions after
 # subsequent example edits.
-HASH_FILE = Path(__file__).parent / "pipeline_hashes.json"
+#
+# Overridable via KARTONKI_HASHES_FILE — used by scripts/validate/tests/run_tests.sh
+# to point at a test fixture with intentionally-stale hashes for regression testing.
+HASH_FILE = Path(os.environ.get(
+    "KARTONKI_HASHES_FILE",
+    str(Path(__file__).parent / "pipeline_hashes.json"),
+))
 
 
 def compute_set_hash(set_words: list[dict]) -> str:

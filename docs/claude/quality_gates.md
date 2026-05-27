@@ -12,7 +12,7 @@
 |---|---------|------------|-----------|-------------------|
 | 1 | **Стандарты качества** | Фиксируют правила: живой стиль, лимиты длин, опасные близнецы | `docs/claude/quality_standards_*.md` | Читаются людьми и агентами перед работой |
 | 2 | **Skills читают стандарты** | `/add-words` шаг 0: чтение 3 стандартов обязательно | `.claude/skills/add-words/SKILL.md` | При запуске skill'а |
-| 3 | **Валидационные скрипты** | 21 hard-блок-проверка + aggregator (`validate_all.sh`) + scan-only audit | `scripts/validate/` | По запросу (ручной/CI/hook) |
+| 3 | **Валидационные скрипты** | 19 hard-блок + 2 advisory (group_sizes, no_cognates) = 21 в `validate_all.sh` + scan-only audit | `scripts/validate/` | По запросу (ручной/CI/hook) |
 | 4 | **Skill+агенты обязаны валидацию** | Блокирующее правило: `validate_all.sh` до возврата 0 | SKILL.md шаг 7, text-author/metadata-filler | Перед возвратом отчёта агентом |
 | 5 | **Pre-commit hook** | Локальная защита: `.py` в корне, worktrees, submodule, WordData-валидация, bump `WordDataVersion.CURRENT` при любом изменении данных | `.githooks/pre-commit` | Перед каждым `git commit` |
 | 6 | **CI — blocking PR workflow** | Валидация только изменённых setIds. Красный = блокирует мерж | `.github/workflows/validate-words-pr.yml` | На push/PR к main при изменении WordData |
@@ -51,7 +51,7 @@ bash scripts/validate/validate_group_sizes.sh 262
 ```bash
 bash scripts/validate/tests/run_tests.sh
 ```
-16 проверок: 8 валидаторов × 2 фикстуры (good_set должен пройти, bad_set должен упасть). Покрыты только 8 из 21 валидаторов — остальные добавлены позже без fixture-расширения, **техдолг**.
+38 проверок: 19 hard-блок-валидаторов × 2 фикстуры (good_set должен пройти, bad_set должен упасть). 2 advisory-валидатора (group_sizes, no_cognates) исключены — они всегда exit 0 и не могут провалиться на bad-фикстуре. Фикстуры: 9991 (good en-ru), 9992 (bad en-ru), 9993 (bad he-ru), 9994 (monotone examples).
 
 ## Что делать при провале каждого уровня
 
