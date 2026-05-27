@@ -79,6 +79,8 @@
 
 17b. **FILL_IN_BLANK exclusions pipeline** (связанное правило, введено 2026-04-22) — трёхслойная защита квиза от неоднозначных дистракторов: раздельная стратегия `QuizBuilder` для FILL_IN_BLANK, поле `fillInBlankExclusions` со списком соседей-синонимов, `isFillInBlankSafe = false` для безнадёжных. См. [`fill-in-blank-pipeline.md`](fill-in-blank-pipeline.md).
 
+17c. **Pipeline overview как единая карта** (введено 2026-05-27 audit Phase C) — [`pipeline-overview.md`](pipeline-overview.md) описывает все компоненты pipeline'а (контент, стандарты, исполнители, валидаторы, gates), жизненные циклы (новый сет, правка example, правка definition, batch-аудит) и навигационную карту в одном файле. Не дублирует правила — только ссылается на детальные doc'и.
+
 ## Источник правды
 
 1. **Репо-документы (`docs/claude/*.md`)** — ЕДИНСТВЕННЫЙ источник правды. Все правила и стандарты живут тут.
