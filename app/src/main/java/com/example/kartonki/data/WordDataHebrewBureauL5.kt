@@ -145,12 +145,12 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181106L, 181107L, 181109L, 181110L)),
         WordEntity(
             id = 181109, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_appeals", transliteration = "ацират бицуа",
-            original = "עֲצִירַת בִּצּוּעַ", translation = "приостановка исполнения (решения)",
+            pos = "phrase", semanticGroup = "bureau_appeals", transliteration = "икув бицуа",
+            original = "עִכּוּב בִּצּוּעַ", translation = "приостановка исполнения (решения)",
             definition = "צַו זְמַנִּי הַמַּשְׁהֶה אֶת הוֹצָאַת פְּסַק הַדִּין לַפֹּעַל עַד הַכְרָעַת הָעֶרְעוּר.",
             definitionNative = "Временный приказ, что замораживает приведение решения в исполнение до итога апелляции.",
-            example = "הַשּׁוֹפֵט נָתַן עֲצִירַת בִּצּוּעַ עַד שֶׁיּוּכְרַע הָעֶרְעוּר.",
-            exampleNative = "Судья дал עֲצִירַת בִּצּוּעַ до решения по апелляции.",
+            example = "הַשּׁוֹפֵט נָתַן עִכּוּב בִּצּוּעַ עַד שֶׁיּוּכְרַע הָעֶרְעוּר.",
+            exampleNative = "Судья дал עִכּוּב בִּצּוּעַ до решения по апелляции.",
         ),
         WordEntity(
             id = 181110, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",

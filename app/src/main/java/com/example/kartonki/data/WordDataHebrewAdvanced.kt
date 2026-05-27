@@ -244,12 +244,12 @@ object WordDataHebrewAdvanced {
         WordEntity(
             id = 101602, setId = 1016, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "emotion",
-            transliteration = "etsev",
-            original = "עֶצֶב", translation = "грусть",
+            transliteration = "atsvut",
+            original = "עַצְבוּת", translation = "грусть",
             definition = "רגש של אכזבה, אובדן או כאב נפשי.",
             definitionNative = "Чувство разочарования, потери или душевной боли.",
-            example = "עֶצֶב גדול ירד עליו לאחר הפרידה.",
-            exampleNative = "После расставания на него нашла большая עֶצֶב.",
+            example = "עַצְבוּת גדולה ירדה עליו לאחר הפרידה.",
+            exampleNative = "После расставания на него нашла большая עַצְבוּת.",
          fillInBlankExclusions = listOf(101601L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L)),
         WordEntity(
             id = 101603, setId = 1016, languagePair = "he-ru", rarity = "COMMON",
@@ -569,7 +569,7 @@ object WordDataHebrewAdvanced {
             definitionNative = "Склонность видеть плохое и ожидать негативного исхода.",
             exampleNative = "Излишняя פֶּסִימִיּוּת может мешать успеху.", fillInBlankExclusions = listOf(101606L, 101607L, 101608L, 101611L, 101613L, 101616L, 101617L, 101618L, 101619L, 101621L, 101623L, 101624L)),
 
-        WordEntity(id = 101621, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "לְחַץ", transliteration = "lekhatz", translation = "стресс; давление", pos = "noun", semanticGroup = "emotion",
+        WordEntity(id = 101621, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "לְחַץ", transliteration = "lakhats", translation = "стресс; давление", pos = "noun", semanticGroup = "emotion",
             definition = "mental strain caused by difficult demands or circumstances.",
             example = "לְחַץ בעבודה השפיע על בריאותו.",
             definitionNative = "Психическое напряжение, вызванное сложными требованиями или обстоятельствами.",

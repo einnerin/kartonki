@@ -137,12 +137,12 @@ object WordDataHebrewMobileL4 {
          fillInBlankExclusions = listOf(177006L, 177007L, 177008L, 177010L)),
         WordEntity(
             id = 177010, setId = 1770, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "mobile_distribution", transliteration = "steyjed rolaut movayl",
-            original = "סְטֵייגֵּ'ד רוֹלאַאוּט מוֹבַייל", translation = "поэтапный выпуск (mobile)",
+            pos = "noun", semanticGroup = "mobile_distribution", transliteration = "rolaut madurag bemovayl",
+            original = "רוֹלְאַאוּט מַדּוּרָג בְּמוֹבַייל", translation = "поэтапный выпуск (mobile)",
             definition = "הַחְשָׂפַת גִּרְסָה חֲדָשָׁה רַק לְאָחוּז קָטָן מֵהַמַּתְקִינִים, וּמְגַדִּילִים אוֹתוֹ בְּהַדְרָגָה.",
             definitionNative = "Раздача новой версии лишь маленькой доле скачавших — постепенно увеличивая охват.",
-            example = "סְטֵייגֵּ'ד רוֹלאַאוּט מוֹבַייל הִתְחִיל מֵחָמֵשׁ אָחוּז וְעָלָה בְּכָל יוֹם.",
-            exampleNative = "סְטֵייגֵּ'ד רוֹלאַאוּט מוֹבַייל начался с пяти процентов и рос каждый день.",
+            example = "רוֹלְאַאוּט מַדּוּרָג בְּמוֹבַייל הִתְחִיל מֵחָמֵשׁ אָחוּז וְעָלָה בְּכָל יוֹם.",
+            exampleNative = "רוֹלְאַאוּט מַדּוּרָג בְּמוֹבַייל начался с пяти процентов и рос каждый день.",
          fillInBlankExclusions = listOf(177006L, 177007L, 177008L, 177009L)),
 
         // ── mobile_features (5) — фичи устройства и пользовательского опыта ──

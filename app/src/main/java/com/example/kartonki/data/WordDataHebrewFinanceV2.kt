@@ -404,7 +404,7 @@ object WordDataHebrewFinanceV2 {
         WordEntity(
             id = 162115, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "receipts", transliteration = "хешбонит маас",
-            original = "חֶשְׁבּוֹנִית מַס", translation = "налоговый чек",
+            original = "חֶשְׁבּוֹנִית מַס", translation = "счёт-фактура (налоговая)",
             definition = "מִסְמָךְ שֶׁמּוֹצִיא עוֹסֵק רָשׁוּם וּמַרְאֶה אֶת הַמָּס הַכָּלוּל.",
             definitionNative = "Документ от зарегистрированного бизнеса с указанным НДС внутри.",
             example = "בִּקַּשְׁתִּי חֶשְׁבּוֹנִית מַס מֵהַשַּׁרְבְּרָב.",

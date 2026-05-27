@@ -259,14 +259,54 @@ needs_human_review: K (с причинами, если были)
 После того, как Edit'ы по всем 25 словам сделаны — **обязательно** прогнать:
 
 ```bash
-# Шаг 1: FILL_IN_BLANK pipeline (новый сет всегда требует hash-запись)
+# Шаг 1: Для he-ru сетов — semantic verification (см. секцию ниже)
+# Шаг 2: FILL_IN_BLANK pipeline (новый сет всегда требует hash-запись)
 python scripts/validate/generate_fill_in_blank_exclusions.py --set-id <setId> --apply
 
-# Шаг 2: Все 18 валидаторов
+# Шаг 3: Все 21 валидатора
 bash scripts/validate/validate_all.sh <setId>
 ```
 
 **Правило:** агент НЕ возвращает отчёт, пока `validate_all.sh` не вернёт 0.
+
+## ОБЯЗАТЕЛЬНО для he-ru: semantic self-verification
+
+Quality audit 2026-05-26 нашёл ~20% Hebrew слов с проблемами:
+несуществующие термины (פַּרְקוֹדָנִים, חַיְטוּי, אֶזֶם), неправильные значения
+(הַחְרָגָה для маргинализации = «исключение»; חוֹדֵר פְּנִימִי = «проникающий
+внутрь» — оксюморон), niqqud-ошибки (כְּרָטִיס → должно כַּרְטִיס).
+
+**Перед возвратом отчёта for he-ru сета** — самопроверка каждого Hebrew
+`original` по списку:
+
+1. **Существует ли слово в современном иврите?** Не выдумано, не псевдо-
+   термин с -ם/-יזם суффиксом. Проверь по словарю в голове (или Google в
+   уме): «употребляет ли native speaker это слово?». Если сомневаешься —
+   `needs_human_review: true`, поле пустое.
+
+2. **Соответствует ли смысл translation?** Не путать близкие синонимы:
+   - `אומנות` (craft) vs `אמנות` (art)
+   - `חודר` (penetrator, external) vs `איום פנימי` (insider threat)
+   - `חילוץ` (rescue) vs `מיצוי` (extraction)
+   - `כורח` (against-will, only in idiom) vs `כפייה` (forced labor)
+   - `החרגה` (exception) vs `הדרה` (marginalization)
+   - `יכולת` (capability) vs `פונקציה` (function)
+
+3. **Правильный ли niqqud?**
+   - Construct (smikhut) обычно patah-shva: כַּרְטִיס, не כְּרָטִיס
+   - `וַעֲדָה` (committee) — patah-hataf-patah-kamatz, не וְעָדָה
+   - `לַחַץ` (pressure noun) — patah-patah, не לְחַץ (imperative)
+   - `הַמְלָצָה` (recommendation) — patah, не הֶמְלָצָה
+   - Plural construct hirik: `תִּקְנֵי`, не `תַּקְנֵי`
+
+4. **Mixed-script?** Латинская `h` в кириллице (для Hebrew transliteration)
+   — допустимо (Бауhаус, Йеhуда). Любой другой mix = опечатка.
+
+5. **Double-marking (ktiv male + dagesh)?** Выбери одно: либо `קְהִילָּה`
+   ktiv male (без dagesh) либо `קְהִלָּה` ktiv haser (с dagesh, без yud).
+   Не оба сразу.
+
+Если есть сомнение — `needs_human_review: true`, не закрепляй неуверенное.
 
 Если валидация упала — проанализировать вывод, исправить нарушения, повторить. Типичные провалы (см. стандарты и `quality_standards_metadata.md`):
 

@@ -47,12 +47,12 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104703L)),
         WordEntity(
             id = 104703, setId = 1047, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mall_clothing", transliteration = "kheder halvasha",
-            original = "חֶדֶר הַלְבָּשָׁה", translation = "примерочная",
-            definition = "חֶדֶר קָטָן בְּחֲנוּת שֶׁבּוֹ אֶפְשָׁר לְהַלְבִּישׁ וְלִבְדֹּק אֶת הַבֶּגֶד.",
-            definitionNative = "Маленькая кабина в магазине, где можно примерить одежду.",
-            example = "נִסִּיתִי אֶת הַחוּלְצָה בְּחֶדֶר הַהַלְבָּשָׁה לִפְנֵי הַקְּנִיָּה.",
-            exampleNative = "Я примерил рубашку в חֶדֶר הַלְבָּשָׁה перед покупкой.",
+            pos = "noun", semanticGroup = "mall_clothing", transliteration = "ta medida",
+            original = "תָּא מְדִידָה", translation = "примерочная",
+            definition = "חֶדֶר קָטָן בְּחֲנוּת שֶׁבּוֹ אֶפְשָׁר לִלְבֹּשׁ בֶּגֶד וְלִבְדֹּק אוֹתוֹ עַל הַגּוּף.",
+            definitionNative = "Маленькая кабина в магазине, где можно надеть и проверить одежду на себе.",
+            example = "נִסִּיתִי אֶת הַחוּלְצָה בְּתָא מְדִידָה לִפְנֵי הַקְּנִיָּה.",
+            exampleNative = "Я примерил рубашку в תָּא מְדִידָה перед покупкой.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 104704, setId = 1047, languagePair = "he-ru", rarity = "COMMON",

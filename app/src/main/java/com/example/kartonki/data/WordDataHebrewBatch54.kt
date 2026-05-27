@@ -418,7 +418,7 @@ object WordDataHebrewBatch54 {
 
         WordEntity(id = 130614, setId = 1306, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "construction_specialists_safety", transliteration = "banai",
-            original = "בַּנָּאי", translation = "каменщик",
+            original = "בַּנָּאי", translation = "строитель",
             definition = "פּוֹעֵל שֶׁמַּנִּיחַ לְבֵנִים אוֹ אֲבָנִים זֶה עַל גַּב זֶה לְקִיר יָשָׁר.",
             definitionNative = "Рабочий, кладущий кирпичи или камни ровными рядами.",
             example = "הַבַּנָּאי הִנִּיחַ אֶת הַשּׁוּרָה הָאַחֲרוֹנָה לִפְנֵי הָעֶרֶב.",

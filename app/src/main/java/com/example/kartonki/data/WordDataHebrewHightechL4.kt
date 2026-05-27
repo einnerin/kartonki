@@ -240,12 +240,12 @@ object WordDataHebrewHightechL4 {
         // ── hightech_security (5) — безопасность и аудит ──
         WordEntity(
             id = 174821, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_security", transliteration = "pen-test",
-            original = "פֶּנְ-טֶסְט", translation = "пентест",
+            pos = "noun", semanticGroup = "hightech_security", transliteration = "pentest",
+            original = "פֶּנְטֶסְט", translation = "пентест",
             definition = "בְּדִיקָה מְכֻוֶּנֶת שֶׁבָּהּ אִישׁ חִיצוֹנִי מְנַסֶּה לְפְרֹץ לַמַּעֲרֶכֶת כְּדֵי לִמְצֹא חוּלְשׁוֹת.",
             definitionNative = "Целевая проверка: внешний человек ломает систему, чтобы найти слабые места.",
-            example = "פֶּנְ-טֶסְט שְׁנָתִי גִּלָּה שָׁלוֹשׁ חוּלְשׁוֹת קְרִיטִיּוֹת בַּסֶּרְוֵוס.",
-            exampleNative = "Ежегодный פֶּנְ-טֶסְט выявил три критические дыры в сервисе.",
+            example = "פֶּנְטֶסְט שְׁנָתִי גִּלָּה שָׁלוֹשׁ חוּלְשׁוֹת קְרִיטִיּוֹת בַּסֶּרְוֵוס.",
+            exampleNative = "Ежегодный פֶּנְטֶסְט выявил три критические дыры в сервисе.",
          fillInBlankExclusions = listOf(174822L, 174823L, 174824L, 174825L)),
         WordEntity(
             id = 174822, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",

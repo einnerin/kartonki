@@ -404,12 +404,12 @@ object WordDataHebrewBaristaL1L2L3 {
          fillInBlankExclusions = listOf(174006L, 174007L)),
         WordEntity(
             id = 174010, setId = 1740, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "barista_recipe", transliteration = "yakhas chiluts",
-            original = "יַחַס חִלּוּץ", translation = "соотношение экстракции",
+            pos = "phrase", semanticGroup = "barista_recipe", transliteration = "yakhas mitsui",
+            original = "יַחַס מִיצּוּי", translation = "соотношение экстракции",
             definition = "הַיַּחַס הַמִּסְפָּרִי בֵּין הָאָבָק הַיָּבֵשׁ לְמִשְׁקַל הַנּוֹזֵל בַּכּוֹס.",
             definitionNative = "Числовое отношение сухой засыпки к массе жидкости в чашке.",
-            example = "אֲנִי עוֹבֵד בְּיַחַס חִלּוּץ שֶׁל אֶחָד לִשְׁנַיִם.",
-            exampleNative = "Я работаю в יַחַס חִלּוּץ один к двум.",
+            example = "אֲנִי עוֹבֵד בְּיַחַס מִיצּוּי שֶׁל אֶחָד לִשְׁנַיִם.",
+            exampleNative = "Я работаю в יַחַס מִיצּוּי один к двум.",
          fillInBlankExclusions = listOf(174008L)),
 
         // ── barista_milk_art (5) — пар и латте-арт ──

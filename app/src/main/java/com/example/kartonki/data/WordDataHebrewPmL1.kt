@@ -151,7 +151,7 @@ object WordDataHebrewPmL1 {
         WordEntity(
             id = 177710, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "pm_basic_product", transliteration = "yekholet",
-            original = "יְכוֹלֶת", translation = "функция",
+            original = "יְכוֹלֶת", translation = "возможность, способность (capability)",
             definition = "מַשֶּׁהוּ שֶׁהַמּוּצָר יוֹדֵעַ לַעֲשׂוֹת — לְמָשָׁל לְהַתְרִיעַ אוֹ לְשַׁמֵּר נְתוּנִים.",
             definitionNative = "То, что продукт умеет делать — например, оповещать или сохранять данные.",
             example = "הוֹסַפְנוּ יְכוֹלֶת חֲדָשָׁה לְשִׁתּוּף קָבְצֵי וִידֵאוֹ בֵּין צְוָתִים.",

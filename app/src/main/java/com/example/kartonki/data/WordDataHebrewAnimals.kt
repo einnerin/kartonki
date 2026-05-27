@@ -1101,12 +1101,12 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187706L, 187708L, 187709L, 187710L)),
         WordEntity(
             id = 187708, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_phyla", transliteration = "parkodanim",
-            original = "פַּרְקוֹדָנִים", translation = "членистоногие",
-            definition = "מַעֲרֶכֶת עֲנָקִית שֶׁל בַּעֲלֵי חַיִּים עִם שֶׁלֶד חִיצוֹנִי וּפְרָקִים.",
-            definitionNative = "Гигантский тип беспозвоночных с наружным скелетом и членистыми конечностями.",
-            example = "הַפַּרְקוֹדָנִים הֵם הַמַּעֲרֶכֶת הַגְּדוֹלָה בְּיוֹתֵר בַּמַּמְלָכָה הַחַיָּה.",
-            exampleNative = "פַּרְקוֹדָנִים — самый крупный тип в животном царстве.",
+            pos = "noun", semanticGroup = "animal_taxonomy_phyla", transliteration = "pruke raglayim",
+            original = "פְּרוּקֵי רַגְלַיִם", translation = "членистоногие",
+            definition = "מַעֲרֶכֶת עֲנָקִית שֶׁל יְצוּרִים בַּעֲלֵי שֶׁלֶד חִיצוֹנִי וְגֵפַיִם מְחֻלָּקוֹת לִקְטָעִים.",
+            definitionNative = "Гигантский тип беспозвоночных с наружным скелетом и сегментированными конечностями.",
+            example = "פְּרוּקֵי רַגְלַיִם הֵם הַקְּבוּצָה הַגְּדוֹלָה בְּיוֹתֵר בַּמַּמְלָכָה הַחַיָּה.",
+            exampleNative = "פְּרוּקֵי רַגְלַיִם — самый крупный таксон в животном царстве.",
          fillInBlankExclusions = listOf(187706L, 187707L, 187709L, 187710L)),
         WordEntity(
             id = 187709, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",

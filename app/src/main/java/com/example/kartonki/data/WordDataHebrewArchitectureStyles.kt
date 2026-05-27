@@ -164,12 +164,12 @@ object WordDataHebrewArchitectureStyles {
             pos = "phrase", semanticGroup = "arch_styles_revival", fillInBlankExclusions = listOf(190805L, 190808L, 190810L, 190817L)),
 
         WordEntity(id = 190810, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
-            original = "סִגְנוֹן פֵדֵרָלִי",
+            original = "סִגְנוֹן פֶדֶרָלִי",
             translation = "федеральный стиль",
             definition = "סִגְנוֹן אֲמֵרִיקָאִי מֻקְדָּם סְבִיב 1800 — עַמּוּדִים דַּקִּים, חַלּוֹנוֹת מְנִיפָה וְסִימֶטְרִיָּה שַׁלְוָה.",
             definitionNative = "Ранний американский стиль около 1800 года: тонкие колонны, веерные окна и спокойная симметрия.",
-            example = "הַרְבֵּה בָּתִּים יְשָׁנִים בְּבּוֹסְטוֹן הֵם דֻּגְמָה מְאֻפֶּקֶת לְסִגְנוֹן פֵדֵרָלִי.",
-            exampleNative = "Многие старые дома Бостона — сдержанная сִגְנוֹן פֵדֵרָלִי.",
+            example = "הַרְבֵּה בָּתִּים יְשָׁנִים בְּבּוֹסְטוֹן הֵם דֻּגְמָה מְאֻפֶּקֶת לְסִגְנוֹן פֶדֶרָלִי.",
+            exampleNative = "Многие старые дома Бостона — сдержанная сִגְנוֹן פֶדֶרָלִי.",
             transliteration = "сигнон федэрали",
             pos = "phrase", semanticGroup = "arch_styles_revival", fillInBlankExclusions = listOf(190805L, 190808L, 190809L, 190817L)),
 

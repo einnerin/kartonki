@@ -477,14 +477,14 @@ object WordDataHebrewBatch49 {
             exampleNative = "Студенты обсудили אֱתִיקָה בָּאוֹפְנָה против денежной выгоды."
         , fillInBlankExclusions = listOf(127301L, 127302L, 127306L, 127308L)),
         WordEntity(id = 127321, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "עֲבוֹדַת כּוֹרֵחַ", transliteration = "avodat korekh",
+            original = "עֲבוֹדַת כְּפִיָּה", transliteration = "avodat kfiya",
             translation = "принудительный труд / потогонные мастерские",
             pos = "noun", semanticGroup = "fashion_industry",
             definition = "הַעֲסָקָה בִּתְנָאִים קָשִׁים בְּשָׂכָר נָמוּךְ וְלֹא מֵרָצוֹן חוֹפְשִׁי.",
             definitionNative = "Эксплуатация в тяжёлых условиях за низкую плату и не по свободной воле.",
-            example = "הַחֲקִירָה חָשְׂפָה עֲבוֹדַת כּוֹרֵחַ בְּמִפְעָלִים בְּאַסְיָה.",
-            exampleNative = "Расследование вскрыло עֲבוֹדַת כּוֹרֵחַ на фабриках Азии."
-        ),
+            example = "הַחֲקִירָה חָשְׂפָה עֲבוֹדַת כְּפִיָּה בְּמִפְעָלִים בְּאַסְיָה.",
+            exampleNative = "Расследование вскрыло עֲבוֹדַת כְּפִיָּה на фабриках Азии."
+        , fillInBlankExclusions = listOf(127311L, 127312L, 127319L, 127322L)),
         WordEntity(id = 127322, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
             original = "שַׁרְשֶׁרֶת קַמְעוֹנַאִית", transliteration = "sharsheret kame'onait",
             translation = "розничная сеть магазинов",
@@ -653,12 +653,12 @@ object WordDataHebrewBatch49 {
             exampleNative = "Дизайнер привнёс דְּקוֹנְסְטְרוּקְצְיָה שֶׁל הָאוֹפְנָה в коллекцию."
         , fillInBlankExclusions = listOf(127410L, 127411L, 127412L, 127413L, 127415L, 127423L)),
         WordEntity(id = 127417, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אוֹפְנָה וּגְדֶר", transliteration = "ofna ugeder", translation = "мода и гендер",
+            original = "אוֹפְנָה וּמִגְדָּר", transliteration = "ofna umigdar", translation = "мода и гендер",
             pos = "phrase", semanticGroup = "fashion_sociology",
-            definition = "כֵּיצַד הַטְּרֶנְדִים הַכְלָלִיִּים שֶׁל הַתְּקוּפָה מַגְדִּירִים נָשִׁי וּגְבָרִי.",
+            definition = "כֵּיצַד הַטְּרֶנְדִים הַכְלָלִיִּים שֶׁל הַתְּקוּפָה קוֹבְעִים מָה נֶחְשָׁב נָשִׁי וּגְבָרִי.",
             definitionNative = "Как общие тренды эпохи задают рамки женственного и мужского.",
-            example = "הַפָּנֶל הָאַחֲרוֹן הָיָה עַל אוֹפְנָה וּגְדֶר בְּפַרִיז.",
-            exampleNative = "Последняя панель была про אוֹפְנָה וּגְדֶר в Париже."
+            example = "הַפָּנֶל הָאַחֲרוֹן הָיָה עַל אוֹפְנָה וּמִגְדָּר בְּפַרִיז.",
+            exampleNative = "Последняя панель была про אוֹפְנָה וּמִגְדָּר в Париже."
         , fillInBlankExclusions = listOf(127401L, 127414L, 127418L, 127419L, 127421L, 127422L, 127424L, 127425L)),
         WordEntity(id = 127418, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "מִגְדָּר וּלְבוּשׁ", transliteration = "migdar ulevush", translation = "гендер и одежда",
@@ -1145,12 +1145,12 @@ object WordDataHebrewBatch49 {
             exampleNative = "Книга утверждает, что Европа вошла в эпоху פּוֹסְט-דֵּמוֹקְרַטְיָה."
         , fillInBlankExclusions = listOf(127705L, 127707L)),
         WordEntity(id = 127702, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הַחְרָגָה פּוֹלִיטִית", transliteration = "hakhragah politit", translation = "политическая маргинализация / исключение",
+            original = "הַדָּרָה פּוֹלִיטִית", transliteration = "hadara politit", translation = "политическая маргинализация / исключение",
             pos = "noun", semanticGroup = "politics_theory_critical",
-            definition = "תַּהֲלִיךְ שֶׁבּוֹ קְבוּצוֹת מְסֻיָּמוֹת נִדְחָקוֹת מִחוּץ לַשִּׂיחַ הַצִּבּוּרִי וּלְקַבָּלַת הַחַחְלָטוֹת.",
+            definition = "תַּהֲלִיךְ שֶׁבּוֹ קְבוּצוֹת מְסֻיָּמוֹת נִדְחָקוֹת מִחוּץ לַשִּׂיחַ הַצִּבּוּרִי וּלְקַבָּלַת הַחְלָטוֹת.",
             definitionNative = "Процесс, при котором группы вытесняются из публичного разговора и решений.",
-            example = "הַמַּאֲמָר בּוֹחֵן אֶת הַחְרָגָה פּוֹלִיטִית שֶׁל מִעוּטִים בָּעִיר.",
-            exampleNative = "Статья изучает הַחְרָגָה פּוֹלִיטִית меньшинств в городе."
+            example = "הַמַּאֲמָר בּוֹחֵן אֶת הַדָּרָה פּוֹלִיטִית שֶׁל מִעוּטִים בָּעִיר.",
+            exampleNative = "Статья изучает הַדָּרָה פּוֹלִיטִית меньшинств в городе."
         ),
         WordEntity(id = 127703, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "סְדֶר יוֹם פּוֹלִיטִי", transliteration = "seder yom politi", translation = "политическая повестка дня",

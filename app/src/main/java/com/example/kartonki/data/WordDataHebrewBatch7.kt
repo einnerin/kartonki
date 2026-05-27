@@ -225,11 +225,11 @@ object WordDataHebrewBatch7 {
         WordEntity(
             id = 104424, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "supermarket_basics", transliteration = "egozim",
-            original = "אֱגּוֹזִים", translation = "орехи",
-            definition = "פֵּרוֹת יַבְּשִׁים עָשִׁירִים בְּשׁוּמָנִים בְּרִיאִים כּגוֹן אֱגּוֹז מֶלֶךְ וּשְׁקֵדִים.",
-            definitionNative = "Сухофрукты, богатые полезными жирами: грецкий орех, миндаль и др.",
-            example = "קָנִיתִי שַׂקִּית אֱגּוֹזִים מְעֹרָבִים לַחֲטִיף.",
-            exampleNative = "Я купил пакет смешанных אֱגּוֹזִים для перекуса.",
+            original = "אֱגוֹזִים", translation = "орехи",
+            definition = "פֵּרוֹת יַבְּשִׁים עָשִׁירִים בְּשׁוּמָנִים בְּרִיאִים כְּגוֹן שְׁקֵדִים, פִּיסְטוּקִים וְקָשְׁיוּ.",
+            definitionNative = "Сухофрукты, богатые полезными жирами: миндаль, фисташки или кешью.",
+            example = "קָנִיתִי שַׂקִּית אֱגוֹזִים מְעֹרָבִים לַחֲטִיף.",
+            exampleNative = "Я купил пакет смешанных אֱגוֹזִים для перекуса.",
          fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104416L, 104417L, 104421L, 104422L, 104423L, 104425L)),
         WordEntity(
             id = 104425, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",

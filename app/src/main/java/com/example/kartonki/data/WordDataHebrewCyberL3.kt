@@ -151,12 +151,12 @@ object WordDataHebrewCyberL3 {
         // ── cyber_network (5) — сетевая защита и периметр ──
         WordEntity(
             id = 176711, setId = 1767, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_network", transliteration = "fayer-oul",
-            original = "פַייאֵרוֹאוּל", translation = "файрвол (брандмауэр)",
+            pos = "noun", semanticGroup = "cyber_network", transliteration = "fayerol",
+            original = "פַייֶרוֹל", translation = "файрвол (брандмауэр)",
             definition = "מִסְנָן רֶשֶׁת שֶׁבּוֹדֵק כָּל בַּקָּשָׁה נִכְנֶסֶת וְיוֹצֵאת וְחוֹסֵם אֶת הַחֲשׁוּדוֹת.",
             definitionNative = "Сетевой фильтр — проверяет каждый входящий и исходящий запрос и блокирует подозрительные.",
-            example = "פַייאֵרוֹאוּל שֶׁל הַחֶבְרָה חוֹסֵם גִּישָׁה לְאַתְרֵי שִׁיתּוּף קְבָצִים.",
-            exampleNative = "פַייאֵרוֹאוּל фирмы блокирует доступ к файлообменникам.",
+            example = "פַייֶרוֹל שֶׁל הַחֶבְרָה חוֹסֵם גִּישָׁה לְאַתְרֵי שִׁיתּוּף קְבָצִים.",
+            exampleNative = "פַייֶרוֹל фирмы блокирует доступ к файлообменникам.",
          fillInBlankExclusions = listOf(176712L, 176713L, 176714L, 176715L)),
         WordEntity(
             id = 176712, setId = 1767, languagePair = "he-ru", rarity = "RARE",

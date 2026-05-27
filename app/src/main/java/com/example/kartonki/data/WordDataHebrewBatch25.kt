@@ -186,7 +186,7 @@ object WordDataHebrewBatch25 {
 
         WordEntity(id = 109919, setId = 1099, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cyber_threat_concepts", transliteration = "tkifa mhuunet",
-            original = "תְּקִיפָה מְכֻוֶּנֶת", translation = "целенаправленная атака (APT)",
+            original = "תְּקִיפָה מְכֻוֶּנֶת", translation = "целенаправленная атака",
             definition = "חֲדִירָה מְמֻשֶּׁכֶת וְשֶׁקֶטָה לְאִרְגוּן אֶחָד שֶׁנִּבְחַר מֵרֹאשׁ, לְשֵׁם רִגּוּל אוֹ גְּנִיבָה.",
             definitionNative = "Длительное и тихое вторжение в одну заранее выбранную организацию ради конкретных секретных сведений.",
             example = "תְּקִיפָה מְכֻוֶּנֶת עַל הַצָּבָא נִמְשְׁכָה חֳדָשִׁים לִפְנֵי שֶׁהִתְגַּלְּתָה.",

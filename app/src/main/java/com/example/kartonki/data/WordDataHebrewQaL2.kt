@@ -264,12 +264,12 @@ object WordDataHebrewQaL2 {
          fillInBlankExclusions = listOf(176121L, 176122L, 176124L, 176125L)),
         WordEntity(
             id = 176124, setId = 1761, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "qa_communication", transliteration = "regresia suit",
-            original = "רֶגְרֶסְיָה סוּיט", translation = "регрессионный набор",
+            pos = "noun", semanticGroup = "qa_communication", transliteration = "khavilat regresia",
+            original = "חֲבִילַת רֶגְרֶסְיָה", translation = "регрессионный набор",
             definition = "אוֹסֶף קָבוּעַ שֶׁל בְּדִיקוֹת שֶׁרָצוֹת לִפְנֵי כָּל גִּרְסָה — שֶׁשּׁוּם דָּבָר יָשָׁן לֹא נִשְׁבַּר.",
             definitionNative = "Постоянный набор проверок перед каждой версией — чтобы старое не сломалось.",
-            example = "רֶגְרֶסְיָה סוּיט שֶׁלָּנוּ רָץ עַל הַשֵּׁרֵת שָׁלוֹשׁ שָׁעוֹת בְּלַיְלָה לִפְנֵי הַשִׁחְרוּר.",
-            exampleNative = "Наш רֶגְרֶסְיָה סוּיט крутится на сервере три часа ночью перед релизом.",
+            example = "חֲבִילַת רֶגְרֶסְיָה שֶׁלָּנוּ רָצָה עַל הַשֵּׁרֵת שָׁלוֹשׁ שָׁעוֹת בְּלַיְלָה לִפְנֵי הַשִׁחְרוּר.",
+            exampleNative = "Наша חֲבִילַת רֶגְרֶסְיָה крутится на сервере три часа ночью перед релизом.",
          fillInBlankExclusions = listOf(176121L, 176122L, 176123L, 176125L)),
         WordEntity(
             id = 176125, setId = 1761, languagePair = "he-ru", rarity = "RARE",

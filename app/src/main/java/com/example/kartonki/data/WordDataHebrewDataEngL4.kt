@@ -88,12 +88,12 @@ object WordDataHebrewDataEngL4 {
          fillInBlankExclusions = listOf(176401L, 176402L, 176403L, 176405L)),
         WordEntity(
             id = 176405, setId = 1764, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_realtime", transliteration = "ibud strim",
-            original = "עִבּוּד סְטְרִים", translation = "потоковая обработка",
-            definition = "חִשּׁוּב רָצִיף עַל אֵירוּעִים זוֹרְמִים מִבְּלִי לְחַכּוֹת לְקֹבֶץ סָגוּר עִם כָּל הַנְּתוּנִים.",
+            pos = "noun", semanticGroup = "de_realtime", transliteration = "ibud zramim",
+            original = "עִיבּוּד זְרָמִים", translation = "потоковая обработка",
+            definition = "חִשּׁוּב רָצִיף עַל אֵירוּעִים מַגִּיעִים מִבְּלִי לְחַכּוֹת לְקֹבֶץ סָגוּר עִם כָּל הַנְּתוּנִים.",
             definitionNative = "Непрерывный расчёт по летящим событиям — без ожидания закрытого файла со всеми данными.",
-            example = "עִבּוּד סְטְרִים בְּ-פְלִינְק נוֹתֵן לָנוּ סְטָטִיסְטִיקָה כָּל שָׁנִיָּה.",
-            exampleNative = "עִבּוּד סְטְרִים в Flink даёт нам статистику каждую секунду.",
+            example = "עִיבּוּד זְרָמִים בְּ-פְלִינְק נוֹתֵן לָנוּ סְטָטִיסְטִיקָה כָּל שָׁנִיָּה.",
+            exampleNative = "עִיבּוּד זְרָמִים в Flink даёт нам статистику каждую секунду.",
          fillInBlankExclusions = listOf(176401L, 176402L, 176403L, 176404L)),
 
         // ── de_serving (5) — слой подачи данных аналитикам и приложениям ──

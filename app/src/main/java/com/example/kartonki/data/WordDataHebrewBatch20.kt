@@ -130,10 +130,10 @@ object WordDataHebrewBatch20 {
         WordEntity(
             id = 108410, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cooking", transliteration = "panira",
-            original = "פַּנִּירָה", translation = "панировка",
+            original = "פָּנִירָה", translation = "панировка",
             definition = "צִיפּוּי שֶׁל פֵּרוּרֵי לֶחֶם אוֹ קֶמַח עַל הַמָּזוֹן לְקִבּוּל קְרוּם זָהֹב בַּטִּיגּוּן.",
             definitionNative = "Покрытие из крошек хлеба или муки на продукте перед обжаркой во фритюре.",
-            example = "הַשֶּׁף הוֹסִיף שׁוּמְשׁוּם לַפַּנִּירָה לְקְרִיסְפִּיּוּת.",
+            example = "הַשֶּׁף הוֹסִיף שׁוּמְשׁוּם לַפָּנִירָה לְקְרִיסְפִּיּוּת.",
             exampleNative = "Шеф добавил кунжут в панировку для хрусткости.",
         ),
         WordEntity(

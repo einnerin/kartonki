@@ -270,12 +270,12 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179721L, 179722L, 179724L, 179725L)),
         WordEntity(
             id = 179724, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_culture", transliteration = "torat haerukh",
-            original = "תּוֹרַת הָאֵירוּחַ", translation = "наука гостеприимства",
+            pos = "noun", semanticGroup = "barista_culture", transliteration = "omanut haerukh",
+            original = "אֳמָנוּת הָאֵירוּחַ", translation = "искусство гостеприимства",
             definition = "גִּישָׁה מִקְצוֹעִית אֵיךְ לְקַבֵּל אֲנָשִׁים בְּאֹפֶן שֶׁיַּרְגִּישׁוּ בְּבַיִת וְיַחְזְרוּ שׁוּב.",
             definitionNative = "Профподход — как принять людей, чтобы чувствовали себя дома и вернулись.",
-            example = "תּוֹרַת הָאֵירוּחַ הַיַּפָּנִית מְלַמֶּדֶת שֶׁכָּל פְּרָט קָטָן חָשׁוּב.",
-            exampleNative = "Японская תּוֹרַת הָאֵירוּחַ учит, что важна каждая мелочь.",
+            example = "אֳמָנוּת הָאֵירוּחַ הַיַּפָּנִית מְלַמֶּדֶת שֶׁכָּל פְּרָט קָטָן חָשׁוּב.",
+            exampleNative = "Японская אֳמָנוּת הָאֵירוּחַ учит, что важна каждая мелочь.",
         ),
         WordEntity(
             id = 179725, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",

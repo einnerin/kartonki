@@ -180,11 +180,11 @@ object WordDataHebrewInterviewL2 {
         WordEntity(
             id = 175313, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_search_networking", transliteration = "hamlatsa ishit",
-            original = "הֶמְלָצָה אִישִׁית", translation = "личная рекомендация",
+            original = "הַמְלָצָה אִישִׁית", translation = "личная рекомендация",
             definition = "מִכְתָּב אוֹ דְּבָרִים טוֹבִים שֶׁמִּישֶׁהוּ אוֹמֵר עֲלֵיךָ לְחֶבְרָה שֶׁמְּחַפֶּשֶׂת עוֹבֵד.",
             definitionNative = "Письмо или хорошие слова — кто-то говорит о тебе фирме, которая ищет сотрудника.",
-            example = "הֶמְלָצָה אִישִׁית מִבּוֹס יָשָׁן פָּתְחָה לִי דֶּלֶת בְּלִי רֵאָיוֹן רִאשׁוֹן.",
-            exampleNative = "הֶמְלָצָה אִישִׁית от старого босса открыла мне дверь без первого интервью.",
+            example = "הַמְלָצָה אִישִׁית מִבּוֹס יָשָׁן פָּתְחָה לִי דֶּלֶת בְּלִי רֵאָיוֹן רִאשׁוֹן.",
+            exampleNative = "הַמְלָצָה אִישִׁית от старого босса открыла мне дверь без первого интервью.",
          fillInBlankExclusions = listOf(175311L, 175312L, 175314L, 175315L)),
         WordEntity(
             id = 175314, setId = 1753, languagePair = "he-ru", rarity = "RARE",

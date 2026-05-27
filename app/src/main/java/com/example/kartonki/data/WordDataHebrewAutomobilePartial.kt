@@ -411,12 +411,12 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171312L, 171314L, 171315L, 171319L, 171320L)),
         WordEntity(
             id = 171314, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust", transliteration = "ma'arekhet hitpaltut",
-            original = "מַעֲרֶכֶת הִתְפַּלְּטוּת", translation = "выпускная система",
+            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust", transliteration = "ma'arekhet plita",
+            original = "מַעֲרֶכֶת פְּלִיטָה", translation = "выпускная система",
             definition = "סדרת צינורות וממירים שמסלקים את גזי השרפה החוצה.",
             definitionNative = "Связка труб и катализаторов, выводящая горелые газы наружу.",
-            example = "מַעֲרֶכֶת הִתְפַּלְּטוּת חלודה שורקת בכל סיבוב.",
-            exampleNative = "Ржавая מַעֲרֶכֶת הִתְפַּלְּטוּת свистит на каждом повороте.",
+            example = "מַעֲרֶכֶת פְּלִיטָה חלודה שורקת בכל סיבוב.",
+            exampleNative = "Ржавая מַעֲרֶכֶת פְּלִיטָה свистит на каждом повороте.",
          fillInBlankExclusions = listOf(171312L, 171313L, 171315L)),
         WordEntity(
             id = 171315, setId = 1713, languagePair = "he-ru", rarity = "EPIC",

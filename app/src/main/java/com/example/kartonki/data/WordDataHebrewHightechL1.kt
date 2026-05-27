@@ -174,7 +174,7 @@ object WordDataHebrewHightechL1 {
         WordEntity(
             id = 174513, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "hightech_tools", transliteration = "masakh",
-            original = "מָסָךְ", translation = "монитор",
+            original = "מָסָךְ", translation = "экран",
             definition = "לוּחַ זְכוּכִית גָּדוֹל שֶׁמַּרְאֶה אֶת הַתְּמוּנָה מֵהַמַּחְשֵׁב.",
             definitionNative = "Большая стеклянная панель, что показывает картинку с компьютера.",
             example = "חִבַּרְתִּי מָסָךְ נוֹסָף כְּדֵי לִרְאוֹת שְׁנֵי קְבָצִים בְּיַחַד.",

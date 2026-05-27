@@ -164,11 +164,11 @@ object WordDataHebrewMobileL3 {
         WordEntity(
             id = 176913, setId = 1769, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "mobile_android", transliteration = "android studyo",
-            original = "אַנְדְרוֹייד סְטוּדִיוֹ", translation = "Android Studio",
+            original = "אַנְדְרוֹאִיד סְטוּדְיוֹ", translation = "Android Studio",
             definition = "סְבִיבַת פִּתּוּחַ רִשְׁמִית שֶׁל גוּגְל לְפִתּוּחַ אַפְּלִיקַצְיוֹת לַמַּעֲרֶכֶת שֶׁלָּהּ.",
             definitionNative = "Официальная среда разработки от Google для приложений под её систему.",
-            example = "אַנְדְרוֹייד סְטוּדִיוֹ מַצִּיעַ אֶמוּלָטוֹר מוּבְנֶה לִבְדִיקַת הַקּוֹד.",
-            exampleNative = "אַנְדְרוֹייד סְטוּדִיוֹ предлагает встроенный эмулятор для проверки кода.",
+            example = "אַנְדְרוֹאִיד סְטוּדְיוֹ מַצִּיעַ אֶמוּלָטוֹר מוּבְנֶה לִבְדִיקַת הַקּוֹד.",
+            exampleNative = "אַנְדְרוֹאִיד סְטוּדְיוֹ предлагает встроенный эмулятор для проверки кода.",
         ),
         WordEntity(
             id = 176914, setId = 1769, languagePair = "he-ru", rarity = "EPIC",

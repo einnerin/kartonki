@@ -174,12 +174,12 @@ object WordDataHebrewDriverL4 {
         ),
         WordEntity(
             id = 171515, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_special_cargo", transliteration = "mit'an bilti shagir",
-            original = "מַטְעָן בִּלְתִּי שָׁגִיר", translation = "нестандартный груз",
+            pos = "phrase", semanticGroup = "driver_special_cargo", transliteration = "mit'an bilti shigrati",
+            original = "מַטְעָן בִּלְתִּי שִׁגְרָתִי", translation = "нестандартный груз",
             definition = "מִטְעָן שֶׁאֵינוֹ נִכְנָס בִּגְדָלִים רְגִילִים — אָרֹךְ, גָּבוֹהַּ אוֹ כָּבֵד מְאוֹד.",
             definitionNative = "Груз, не вписывающийся в типовые габариты по длине, высоте или весу.",
-            example = "מַטְעָן בִּלְתִּי שָׁגִיר נוֹסַע רַק בַּלַּיְלָה עִם לִוּוּי.",
-            exampleNative = "מַטְעָן בִּלְתִּי שָׁגִיר ездит только ночью с сопровождением.",
+            example = "מַטְעָן בִּלְתִּי שִׁגְרָתִי נוֹסַע רַק בַּלַּיְלָה עִם לִוּוּי.",
+            exampleNative = "מַטְעָן בִּלְתִּי שִׁגְרָתִי ездит только ночью с сопровождением.",
          fillInBlankExclusions = listOf(171511L, 171512L, 171513L, 171514L)),
 
         // ── driver_special_vehicle (5) — спецтехника, составы ──

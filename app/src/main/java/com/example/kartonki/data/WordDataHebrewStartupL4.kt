@@ -214,12 +214,12 @@ object WordDataHebrewStartupL4 {
          fillInBlankExclusions = listOf(175917L, 175918L, 175919L, 175920L)),
         WordEntity(
             id = 175917, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "startup_deal", transliteration = "seif",
-            original = "סֵיף", translation = "SAFE (упрощённая инвест-форма)",
+            pos = "phrase", semanticGroup = "startup_deal", transliteration = "heskem SAFE",
+            original = "הֶסְכֵּם SAFE", translation = "SAFE (упрощённая инвест-форма)",
             definition = "כְּלִי גִּיּוּס פָּשׁוּט שֶׁבּוֹ הַמַּשְׁקִיעַ נוֹתֵן כֶּסֶף הַיּוֹם וּמְקַבֵּל מְנָיוֹת רַק בָּרַאוּנְד הַבָּא.",
             definitionNative = "Простой инструмент сбора — инвестор даёт деньги сейчас, акции получает только в следующем раунде.",
-            example = "שִׁבְעָה אֶנְגֵ'לִים נִכְנְסוּ דֶּרֶךְ סֵיף בְּלִי שֶׁקִּבַּעְנוּ עֲדַיִן הַעֲרָכָה.",
-            exampleNative = "Семь ангелов зашли через סֵיף — оценку мы ещё не зафиксировали.",
+            example = "שִׁבְעָה אֶנְגֵ'לִים נִכְנְסוּ דֶּרֶךְ הֶסְכֵּם SAFE בְּלִי שֶׁקִּבַּעְנוּ עֲדַיִן הַעֲרָכָה.",
+            exampleNative = "Семь ангелов зашли через הֶסְכֵּם SAFE — оценку мы ещё не зафиксировали.",
          fillInBlankExclusions = listOf(175916L, 175918L, 175919L, 175920L)),
         WordEntity(
             id = 175918, setId = 1759, languagePair = "he-ru", rarity = "LEGENDARY",

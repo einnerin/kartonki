@@ -748,13 +748,13 @@ object WordDataHebrewEveryday {
             exampleNative = "Наш מִטְבָּח новый и просторный.",
          fillInBlankExclusions = listOf(100701L, 100702L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
-            id = 100704, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
+            id = 100704, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "furniture", transliteration = "mita",
-            original = "מִיטָּה", translation = "кровать",
+            original = "מִיטָה", translation = "кровать",
             definition = "רָהִיט לִשְׁכִיבָה וּשְׁנִינָּה.",
             definitionNative = "Мебель для лежания и сна.",
-            example = "מִיטָּה שֶׁלִּי רַכָּה וּנוֹחָה.",
-            exampleNative = "Моя מִיטָּה мягкая и удобная.",
+            example = "מִיטָה שֶׁלִּי רַכָּה וּנוֹחָה.",
+            exampleNative = "Моя מִיטָה мягкая и удобная.",
          fillInBlankExclusions = listOf(100705L, 100706L, 100717L, 100723L, 100724L)),
         WordEntity(
             id = 100705, setId = 1007, languagePair = "he-ru", rarity = "COMMON",

@@ -246,11 +246,11 @@ object WordDataHebrewCleaningL4 {
         WordEntity(
             id = 171622, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "cleaning_business_ops", transliteration = "model manui khodshi",
-            original = "מוֹדֵל מָנוּי חָדְשִׁי", translation = "модель подписки (ежемесячная)",
+            original = "מוֹדֵל מָנוּי חוֹדְשִׁי", translation = "модель подписки (ежемесячная)",
             definition = "סִדּוּר תַּשְׁלוּם קָבוּעַ בּוֹ הַלָּקוֹחַ מְשַׁלֵּם סְכוּם זֵהֶה כָּל חֹדֶשׁ.",
             definitionNative = "Постоянная схема оплаты, при которой клиент платит одинаковую сумму каждый месяц.",
-            example = "הַחֶבְרָה עָבְרָה לְמוֹדֵל מָנוּי חָדְשִׁי בְּחוֹזֵי לָקוֹחוֹת מַפְתֵּחַ.",
-            exampleNative = "Компания перешла на מוֹדֵל מָנוּי חָדְשִׁי с ключевыми клиентами.",
+            example = "הַחֶבְרָה עָבְרָה לְמוֹדֵל מָנוּי חוֹדְשִׁי בְּחוֹזֵי לָקוֹחוֹת מַפְתֵּחַ.",
+            exampleNative = "Компания перешла на מוֹדֵל מָנוּי חוֹדְשִׁי с ключевыми клиентами.",
          fillInBlankExclusions = listOf(171621L, 171623L, 171624L, 171625L)),
         WordEntity(
             id = 171623, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",

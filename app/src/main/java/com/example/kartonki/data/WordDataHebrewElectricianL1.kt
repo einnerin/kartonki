@@ -271,11 +271,11 @@ object WordDataHebrewElectricianL1 {
         WordEntity(
             id = 172625, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "electrician_problems", transliteration = "omes yater",
-            original = "עוֹמֶס יַתֵר", translation = "перегрузка сети",
+            original = "עוֹמֶס יָתֵר", translation = "перегрузка сети",
             definition = "מַצָּב שֶׁבּוֹ יוֹתֵר מִדַּי מַכְשִׁירִים מְחֻבָּרִים וְהַחַשְׁמַל מִתְחַמֵּם.",
             definitionNative = "Случай, когда подключено слишком много приборов и проводка начинает греться.",
-            example = "עוֹמֶס יַתֵר גָּרַם לַמַּפְסֵק לִקְפֹּץ כְּבָר פַּעֲמַיִם הַיּוֹם.",
-            exampleNative = "עוֹמֶס יַתֵר заставил автомат сработать уже дважды за день.",
+            example = "עוֹמֶס יָתֵר גָּרַם לַמַּפְסֵק לִקְפֹּץ כְּבָר פַּעֲמַיִם הַיּוֹם.",
+            exampleNative = "עוֹמֶס יָתֵר заставил автомат сработать уже дважды за день.",
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172623L, 172624L)),
     )
 }

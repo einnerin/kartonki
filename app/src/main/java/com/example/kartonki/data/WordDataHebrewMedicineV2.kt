@@ -593,12 +593,12 @@ object WordDataHebrewMedicineV2 {
             example = "צָרִיךְ אִישׁוּר רְפוּאִי לְגַן הַיְּלָדִים.",
             exampleNative = "Нужен אִישׁוּר רְפוּאִי в детсад.", fillInBlankExclusions = listOf(160205L, 160206L, 160216L, 160217L, 160223L, 160225L)),
         WordEntity(id = 160225, setId = 1602, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "medical_certificates", transliteration = "te'udat khole",
-            original = "תְּעוּדַת חוֹלֶה", translation = "справка о болезни",
-            definition = "מִסְמָךְ רְפוּאִי שֶׁמְּאַשֵּׁר יְמֵי מַחֲלָה שֶׁל עוֹבֵד.",
+            pos = "phrase", semanticGroup = "medical_certificates", transliteration = "te'udat makhala",
+            original = "תְּעוּדַת מַחֲלָה", translation = "справка о болезни",
+            definition = "מִסְמָךְ רְפוּאִי שֶׁמְּאַשֵּׁר יְמֵי הֶעְדֵּר מֵעֲבוֹדָה בִּגְלַל בְּעָיָה רְפוּאִית.",
             definitionNative = "Бумага с указанием количества дней нетрудоспособности.",
-            example = "הֵבֵאתִי תְּעוּדַת חוֹלֶה לָעֲבוֹדָה.",
-            exampleNative = "Принёс на работу תְּעוּדַת חוֹלֶה.", fillInBlankExclusions = listOf(160205L, 160207L, 160223L, 160224L)),
+            example = "הֵבֵאתִי תְּעוּדַת מַחֲלָה לָעֲבוֹדָה.",
+            exampleNative = "Принёс на работу תְּעוּדַת מַחֲלָה.", fillInBlankExclusions = listOf(160205L, 160207L, 160223L, 160224L)),
 
         // ══════════════════════════════════════════════════════════════════════
         // Set 1603 — Медицина: продвинутый — распространённые болезни (UNCOMMON, A2-B1)
@@ -962,11 +962,11 @@ object WordDataHebrewMedicineV2 {
         // ── rehab (3) ──
         WordEntity(id = 160423, setId = 1604, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "rehab", transliteration = "shikum tifkudi",
-            original = "שִׁיקוּם תְּפִקּוּדִי", translation = "реабилитация функциональная",
+            original = "שִׁיקוּם תִּפְקוּדִי", translation = "реабилитация функциональная",
             definition = "טִיפּוּל שֶׁמַּחֲזִיר אֶת הַיְּכוֹלֶת לְפָעוֹל יוֹמְיוֹם.",
             definitionNative = "Лечение, возвращающее способность к повседневным действиям.",
-            example = "הִתְחַלְתִּי שִׁיקוּם תְּפִקּוּדִי אַחֲרֵי נִיתּוּחַ.",
-            exampleNative = "Начал שִׁיקוּם תְּפִקּוּדִי после вмешательства.", fillInBlankExclusions = listOf(160422L, 160424L, 160425L)),
+            example = "הִתְחַלְתִּי שִׁיקוּם תִּפְקוּדִי אַחֲרֵי נִיתּוּחַ.",
+            exampleNative = "Начал שִׁיקוּם תִּפְקוּדִי после вмешательства.", fillInBlankExclusions = listOf(160422L, 160424L, 160425L)),
         WordEntity(id = 160424, setId = 1604, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "rehab", transliteration = "makhshir hanasha-ma",
             original = "מַכְשִׁיר הֲנָשָׁמָה", translation = "ИВЛ",

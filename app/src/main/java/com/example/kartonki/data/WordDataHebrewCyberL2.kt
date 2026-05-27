@@ -191,11 +191,11 @@ object WordDataHebrewCyberL2 {
         WordEntity(
             id = 178115, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "cyber_updates", transliteration = "girsa adkanit",
-            original = "גִּרְסָה עַדְכָּנִית", translation = "актуальная версия",
+            original = "גִּרְסָה עֲדְכָּנִית", translation = "актуальная версия",
             definition = "הַמַּהֲדוּרָה הָאַחֲרוֹנָה שֶׁל הַתּוֹכְנָה שֶׁכּוֹלֶלֶת אֶת כָּל הַתִּקּוּנִים הַחֲדָשִׁים.",
             definitionNative = "Последний выпуск программы — со всеми свежими починками внутри.",
-            example = "אֲנִי מַחֲזִיק אֶת הַטֶּלֶפוֹן בַּגִּרְסָה עַדְכָּנִית בְּכָל פַּעַם.",
-            exampleNative = "Я держу телефон в גִּרְסָה עַדְכָּנִית каждый раз.",
+            example = "אֲנִי מַחֲזִיק אֶת הַטֶּלֶפוֹן בַּגִּרְסָה עֲדְכָּנִית בְּכָל פַּעַם.",
+            exampleNative = "Я держу телефон в גִּרְסָה עֲדְכָּנִית каждый раз.",
          fillInBlankExclusions = listOf(178111L, 178112L, 178113L, 178114L)),
 
         // ── cyber_safe_browsing (5) — безопасный сёрфинг ──
@@ -275,12 +275,12 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178121L, 178122L, 178124L, 178125L)),
         WordEntity(
             id = 178124, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_email_safety", transliteration = "masnen zevel",
-            original = "מַסְנֵן זֶבֶל", translation = "спам-фильтр",
-            definition = "כְּלִי אוֹטוֹמָטִי שֶׁמַּפְרִיד הוֹדָעוֹת פִּרְסֹמֶת מְעַצְבָּנוֹת מִדֹּאַר רָגִיל.",
-            definitionNative = "Автоматический инструмент — отделяет рекламные сообщения-надоеды от обычной почты.",
-            example = "מַסְנֵן זֶבֶל תָּפַס תִּשְׁעִים אֲחוּזִים מֵהַהוֹדָעוֹת הַמְּטַפְשׁוֹת.",
-            exampleNative = "מַסְנֵן זֶבֶל поймал девяносто процентов глупых сообщений.",
+            pos = "noun", semanticGroup = "cyber_email_safety", transliteration = "masnen doar zevel",
+            original = "מַסְנֵן דּוֹאַר זֶבֶל", translation = "спам-фильтр",
+            definition = "כְּלִי אוֹטוֹמָטִי שֶׁמַּפְרִיד הוֹדָעוֹת פִּרְסֹמֶת מְעַצְבָּנוֹת מֵהוֹדָעוֹת רְגִילוֹת.",
+            definitionNative = "Автоматический инструмент — отделяет рекламные сообщения-надоеды от обычных писем.",
+            example = "מַסְנֵן דּוֹאַר זֶבֶל תָּפַס תִּשְׁעִים אֲחוּזִים מֵהַהוֹדָעוֹת הַמְּטַפְשׁוֹת.",
+            exampleNative = "מַסְנֵן דּוֹאַר זֶבֶל поймал девяносто процентов глупых сообщений.",
          fillInBlankExclusions = listOf(178121L, 178122L, 178123L, 178125L)),
         WordEntity(
             id = 178125, setId = 1781, languagePair = "he-ru", rarity = "RARE",

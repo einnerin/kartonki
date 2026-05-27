@@ -141,12 +141,12 @@ object WordDataHebrewBatch50 {
             exampleNative = "כֵּן בֶּטַח, рад тебе помочь."
         , fillInBlankExclusions = listOf(128003L, 128004L, 128007L, 128008L, 128020L)),
         WordEntity(id = 128010, setId = 1280, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "farewell_wishes", transliteration = "behodaya",
-            original = "בְּהוֹדָיָה", translation = "с благодарностью (завершение письма)",
+            pos = "phrase", semanticGroup = "farewell_wishes", transliteration = "betoda",
+            original = "בְּתוֹדָה", translation = "с благодарностью (завершение письма)",
             definition = "חֲתִימָה מְנֻמֶּסֶת בְּסוֹף הוֹדָעָה רִשְׁמִית כְּדֵי לְהַבִּיעַ הַעֲרָכָה לַנִּמְעָן.",
             definitionNative = "Вежливая подпись в конце официального сообщения для выражения признательности адресату.",
-            example = "אֲנִי מְצַפֶּה לִתְשׁוּבַתְכֶם, בְּהוֹדָיָה.",
-            exampleNative = "Жду вашего ответа, בְּהוֹדָיָה."
+            example = "אֲנִי מְצַפֶּה לִתְשׁוּבַתְכֶם, בְּתוֹדָה.",
+            exampleNative = "Жду вашего ответа, בְּתוֹדָה."
         , fillInBlankExclusions = listOf(128006L, 128012L, 128013L, 128014L, 128015L)),
         WordEntity(id = 128011, setId = 1280, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "praise_admiration", transliteration = "ein kamokha",
@@ -346,11 +346,11 @@ object WordDataHebrewBatch50 {
         WordEntity(
             id = 128110, setId = 1281, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "greeting_register", transliteration = "safa bilti formalit",
-            original = "שַׂפָּה בִּלְתִּי פּוֹרְמָלִית", translation = "неформальный языковой регистр",
+            original = "שָׂפָה בִּלְתִּי פּוֹרְמָלִית", translation = "неформальный языковой регистр",
             definition = "סִגְנוֹן יוֹמְיוֹמִי וְחָפְשִׁי הַשָּׁגוּר בֵּין מַכָּרִים — שִׂיחָה עִם חָבֵר אוֹ בְּנֵי מִשְׁפָּחָה.",
             definitionNative = "Повседневный и свободный стиль речи, обычный среди близких знакомых.",
-            example = "בְּמִכְתַּב לְחָבֵר נָקַט שַׂפָּה בִּלְתִּי פּוֹרְמָלִית.",
-            exampleNative = "В письме другу он избрал שַׂפָּה בִּלְתִּי פּוֹרְמָלִית.", fillInBlankExclusions = listOf(128109L, 128116L)),
+            example = "בְּמִכְתַּב לְחָבֵר נָקַט שָׂפָה בִּלְתִּי פּוֹרְמָלִית.",
+            exampleNative = "В письме другу он избрал שָׂפָה בִּלְתִּי פּוֹרְמָלִית.", fillInBlankExclusions = listOf(128109L, 128116L)),
         WordEntity(
             id = 128111, setId = 1281, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "greeting_pragmatics_theory", transliteration = "semantika shel nimusin",
@@ -1578,12 +1578,12 @@ object WordDataHebrewBatch50 {
         WordEntity(
             id = 128620, setId = 1286, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "sport_business",
-            original = "מָשְׁכוּרַת שַׂחְקָן", translation = "зарплата игрока",
+            original = "מַשְׂכֹּרֶת שַׂחְקָן", translation = "зарплата игрока",
             transliteration = "maskoret shakhkan",
             definition = "תַּשְׁלוּם קָבוּעַ שֶׁמְּשַׁלֵּם הַמּוֹעֲדוֹן עַל פְּעִילוּת מִקְצוֹעִית בְּמִגְרָשׁ וּמִחוּצָה לוֹ.",
             definitionNative = "Регулярная выплата клуба за профессиональную деятельность на арене и вне её.",
-            example = "מָשְׁכוּרַת שַׂחְקָן בַּלִּיגָה הָעִלִּית גָּדְלָה מְאוֹד.",
-            exampleNative = "מָשְׁכוּרַת שַׂחְקָן в высшем дивизионе сильно выросла.", fillInBlankExclusions = listOf(128601L, 128602L, 128603L, 128610L, 128611L)),
+            example = "מַשְׂכֹּרֶת שַׂחְקָן בַּלִּיגָה הָעִלִּית גָּדְלָה מְאוֹד.",
+            exampleNative = "מַשְׂכֹּרֶת שַׂחְקָן в высшем дивизионе сильно выросла.", fillInBlankExclusions = listOf(128601L, 128602L, 128603L, 128610L, 128611L)),
         WordEntity(
             id = 128621, setId = 1286, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "sport_business",

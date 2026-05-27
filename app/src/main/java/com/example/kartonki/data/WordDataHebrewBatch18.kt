@@ -490,11 +490,11 @@ object WordDataHebrewBatch18 {
         WordEntity(
             id = 107801, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "yovesh",
-            original = "יוֹבֵשׁ", translation = "засуха; сушь",
+            original = "יוֹבֶשׁ", translation = "засуха; сушь",
             definition = "תְּקוּפָה מְמוּשֶׁכֶת שֶׁל מַחְסוֹר בְּגֶשֶׁם הַגּוֹרֶמֶת נֶזֶק לַחֲקָלָאוּת.",
             definitionNative = "Продолжительный период нехватки осадков, наносящий ущерб сельскому хозяйству.",
-            example = "הַיּוֹבֵשׁ גָּרַם לְאֻבְדַּן יְבוּלִים בְּחֶלְקֵי אֲפְרִיקָה.",
-            exampleNative = "יוֹבֵשׁ привела к потере урожая в частях Африки."),
+            example = "הַיּוֹבֶשׁ גָּרַם לְאֻבְדַּן יְבוּלִים בְּחֶלְקֵי אֲפְרִיקָה.",
+            exampleNative = "יוֹבֶשׁ привела к потере урожая в частях Африки."),
         WordEntity(
             id = 107802, setId = 1078, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "ecology", transliteration = "shkhavat ozon",
@@ -688,12 +688,12 @@ object WordDataHebrewBatch18 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 107823, setId = 1078, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "ecology", transliteration = "migvan biologit",
-            original = "מִגְוּוֹן בִּיוֹלוֹגִי", translation = "биологическое разнообразие",
-            definition = "מֶגְוַּוּן הַמִּינִים הַחַיִּים בְּאֵקוֹסִיסְטֶם, בְּאֵזוֹר אוֹ בַּכַּדּוּר כֻּלּוֹ.",
+            pos = "noun", semanticGroup = "ecology", transliteration = "migvan biologi",
+            original = "מִגְוָון בִּיוֹלוֹגִי", translation = "биологическое разнообразие",
+            definition = "שֶׁפַע הַמִּינִים הַחַיִּים בְּאֵקוֹסִיסְטֶם, בְּאֵזוֹר אוֹ בַּכַּדּוּר כֻּלּוֹ.",
             definitionNative = "Разнообразие живых видов в экосистеме, регионе или на всей планете.",
-            example = "פְּגִיעָה בְּמִגְוּוֹן הַבִּיוֹלוֹגִי מַסְכֶּנֶת אֶת יְצִיבוּת הָאֶקוֹסִיסְטֶם.",
-            exampleNative = "Ущерб מִגְוּוֹן בִּיוֹלוֹגִי угрожает стабильности экосистемы.",
+            example = "מִגְוָון בִּיוֹלוֹגִי גָּדוֹל שׁוֹמֵר עַל יְצִיבוּת הָאֵקוֹסִיסְטֶם.",
+            exampleNative = "מִגְוָון בִּיוֹלוֹגִי охраняет стабильность экосистемы.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 107824, setId = 1078, languagePair = "he-ru", rarity = "RARE",

@@ -186,7 +186,7 @@ object WordDataHebrewIsraeliCuisineL4 {
         WordEntity(
             id = 184513, setId = 1845, languagePair = "he-ru", rarity = "EPIC",
             pos = "adjective", semanticGroup = "cuisine_l4_advanced_kosher",
-            original = "פְּסוּלָה", translation = "негодная, некошерная (о пище)",
+            original = "פְּסוּלָה", translation = "недействительная, дисквалифицированная",
             transliteration = "псула",
             definition = "אֹכֶל אוֹ מַצְרָךְ שֶׁאֵינוֹ מַתְאִים עַל פִּי הַהֲלָכָה וְאָסוּר לַאֲכִילָה.",
             definitionNative = "Еда или продукт, что не соответствует галахе и запрещён к употреблению.",

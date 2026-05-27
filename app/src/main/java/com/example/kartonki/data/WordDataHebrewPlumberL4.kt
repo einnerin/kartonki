@@ -63,12 +63,12 @@ object WordDataHebrewPlumberL4 {
         ),
         WordEntity(
             id = 180003, setId = 1800, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "plumber_hydraulics", transliteration = "makat lakhats",
-            original = "מַכַּת לַחַץ", translation = "гидроудар",
+            pos = "phrase", semanticGroup = "plumber_hydraulics", transliteration = "makat patish",
+            original = "מַכַּת פַּטִּישׁ", translation = "гидроудар",
             definition = "גַּל פִּתְאוֹמִי שֶׁל לַחַץ הַנּוֹצָר כְּשֶׁעוֹצְרִים זְרִימָה מְהִירָה בְּבַת אַחַת.",
             definitionNative = "Резкая волна давления, возникающая при внезапной остановке быстрого потока.",
-            example = "מַכַּת לַחַץ פִּצְּחָה אֶת הַחִבּוּר הַחַלָּשׁ בַּקִּיר.",
-            exampleNative = "מַכַּת לַחַץ разорвала слабое соединение внутри стены.",
+            example = "מַכַּת פַּטִּישׁ פִּצְּחָה אֶת הַחִבּוּר הַחַלָּשׁ בַּקִּיר.",
+            exampleNative = "מַכַּת פַּטִּישׁ разорвала слабое соединение внутри стены.",
          fillInBlankExclusions = listOf(180001L, 180004L, 180005L)),
         WordEntity(
             id = 180004, setId = 1800, languagePair = "he-ru", rarity = "LEGENDARY",

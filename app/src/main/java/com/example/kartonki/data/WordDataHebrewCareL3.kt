@@ -130,12 +130,12 @@ object WordDataHebrewCareL3 {
         // ── care_mobility (5) — перемещение лежачего и поддержка движения ──
         WordEntity(
             id = 172511, setId = 1725, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "care_mobility", transliteration = "tezuza mimita",
-            original = "תְּזוּזָה מִמִּטָּה", translation = "перевод с кровати",
-            definition = "הָעֲבָרָה זְהִירָה שֶׁל מְטוּפָּל מִשְּׁכִיבָה לִישִׁיבָה אוֹ עֲמִידָה.",
-            definitionNative = "Бережный перевод подопечного из лежачего в сидячее или стоячее.",
-            example = "תְּזוּזָה מִמִּטָּה נַעֲשֵׂית עִם תְּמִיכָה שֶׁל שְׁתֵּי יָדַיִם.",
-            exampleNative = "תְּזוּזָה מִמִּטָּה выполняется с поддержкой обеими руками.", fillInBlankExclusions = listOf(172512L, 172513L, 172514L, 172515L)),
+            pos = "phrase", semanticGroup = "care_mobility", transliteration = "ha'avara mimita",
+            original = "הַעֲבָרָה מִמִּטָּה", translation = "перевод с кровати",
+            definition = "סִיּוּעַ זָהִיר לִמְטוּפָּל לָקוּם מִשְּׁכִיבָה לִישִׁיבָה אוֹ לַעֲמִידָה.",
+            definitionNative = "Бережная помощь подопечному подняться из лежачего в сидячее или стоячее.",
+            example = "הַעֲבָרָה מִמִּטָּה נַעֲשֵׂית עִם תְּמִיכָה שֶׁל שְׁתֵּי יָדַיִם.",
+            exampleNative = "הַעֲבָרָה מִמִּטָּה выполняется с поддержкой обеими руками.", fillInBlankExclusions = listOf(172512L, 172513L, 172514L, 172515L)),
         WordEntity(
             id = 172512, setId = 1725, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "care_mobility", transliteration = "ha'avara lekise galgalim",

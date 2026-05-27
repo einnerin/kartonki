@@ -1278,12 +1278,12 @@ object WordDataHebrewWorkV2 {
         WordEntity(
             id = 164419, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "remote_and_projects",
-            original = "תָּאֲרִיךְ יַעַד", translation = "дедлайн; крайний срок",
+            original = "תַּאֲרִיךְ יַעַד", translation = "дедлайн; крайний срок",
             transliteration = "таарих яад",
             definition = "הַיּוֹם הָאַחֲרוֹן שֶׁבּוֹ צָרִיךְ לְהַגִּישׁ אֶת הַמּוּצָר אוֹ הַמְּסִמָּךְ.",
             definitionNative = "Последний день, когда нужно сдать продукт или документ.",
-            example = "תָּאֲרִיךְ יַעַד נִדְחָה בִּשְׁנֵי יְמֵי עֲבוֹדָה.",
-            exampleNative = "תָּאֲרִיךְ יַעַד перенесли на два рабочих дня.",
+            example = "תַּאֲרִיךְ יַעַד נִדְחָה בִּשְׁנֵי יְמֵי עֲבוֹדָה.",
+            exampleNative = "תַּאֲרִיךְ יַעַד перенесли на два рабочих дня.",
          fillInBlankExclusions = listOf(164416L, 164417L, 164418L, 164420L, 164421L, 164422L, 164423L, 164424L, 164425L)),
         WordEntity(
             id = 164420, setId = 1644, languagePair = "he-ru", rarity = "RARE",
@@ -1442,12 +1442,12 @@ object WordDataHebrewWorkV2 {
         WordEntity(
             id = 164510, setId = 1645, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "strategy_and_planning",
-            original = "בַּחֲנוּת שׁוּק", translation = "исследование рынка",
-            transliteration = "бхинат шук",
+            original = "חֵקֶר שׁוּק", translation = "исследование рынка",
+            transliteration = "хекер шук",
             definition = "תַּהֲלִיךְ אִסּוּף מֵידָע עַל צַרְכָנִים וּמְתַחֲרִים לִפְנֵי הֶחְלָטָה.",
             definitionNative = "Процесс сбора данных о покупателях и конкурентах до решения.",
-            example = "בַּחֲנוּת שׁוּק מֻקְדֶּמֶת חָסְכָה לַחֶבְרָה מַהֲלָךְ טוֹעֶה.",
-            exampleNative = "Предварительная בַּחֲנוּת שׁוּק уберегла фирму от ошибки.",
+            example = "חֵקֶר שׁוּק מֻקְדָּם חָסַךְ לַחֶבְרָה מַהֲלָךְ טוֹעֶה.",
+            exampleNative = "Предварительный חֵקֶר שׁוּק уберёг фирму от ошибки.",
          fillInBlankExclusions = listOf(164506L, 164507L, 164508L, 164509L, 164522L)),
 
         WordEntity(

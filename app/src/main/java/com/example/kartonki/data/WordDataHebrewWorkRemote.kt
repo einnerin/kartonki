@@ -134,13 +134,13 @@ object WordDataHebrewWorkRemote {
             pos = "phrase", semanticGroup = "work_remote_freelance", fillInBlankExclusions = listOf(190308L, 190309L, 190310L)),
 
         WordEntity(id = 190308, setId = 1903, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תַּעֲרִיף שָׁעָה",
+            original = "תַּעֲרִיף שָׁעָתִי",
             translation = "почасовая ставка",
             definition = "סְכוּם הַכֶּסֶף שֶׁבַּעַל הַמִּקְצוֹעַ גּוֹבֶה עַל כָּל שִׁשִּׁים דַּקּוֹת שֶׁל עֲבוֹדָה.",
             definitionNative = "Сумма, которую специалист берёт за каждые шестьдесят минут работы.",
-            example = "הוּא הֶעֱלָה אֶת תַּעֲרִיף שָׁעָה לַחֲמִישִּׁים דּוֹלָר אַחֲרֵי שָׁנָה.",
-            exampleNative = "Он поднял תַּעֲרִיף שָׁעָה до пятидесяти долларов через год.",
-            transliteration = "тариф шаа",
+            example = "הוּא הֶעֱלָה אֶת תַּעֲרִיף שָׁעָתִי לַחֲמִישִּׁים דּוֹלָר אַחֲרֵי שָׁנָה.",
+            exampleNative = "Он поднял תַּעֲרִיף שָׁעָתִי до пятидесяти долларов через год.",
+            transliteration = "тариф шаати",
             pos = "phrase", semanticGroup = "work_remote_freelance", fillInBlankExclusions = listOf(190307L, 190309L, 190310L)),
 
         WordEntity(id = 190309, setId = 1903, languagePair = "he-ru", rarity = "UNCOMMON",

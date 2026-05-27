@@ -107,12 +107,12 @@ object WordDataHebrewQaL4 {
          fillInBlankExclusions = listOf(177207L, 177208L, 177209L, 177210L)),
         WordEntity(
             id = 177207, setId = 1772, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_observability", transliteration = "nibuy takalot",
-            original = "נִבּוּי תְּקָלוֹת", translation = "defect prediction",
-            definition = "מוֹדֶל שֶׁמַּחֲזֶה בְּאֵיזוֹ קְבָצִים סָבִיר שֶׁתִּפֹּל בְּעָיָה לִפְנֵי שֶׁהַסָּבָב בִּכְלָל יָרוּץ.",
+            pos = "noun", semanticGroup = "qa_observability", transliteration = "khizuy takalot",
+            original = "חִזּוּי תְּקָלוֹת", translation = "defect prediction",
+            definition = "מוֹדֶל שֶׁמְּזַהֶה מֵרֹאשׁ בְּאֵיזוֹ קְבָצִים סָבִיר שֶׁתִּפֹּל בְּעָיָה לִפְנֵי שֶׁהַסָּבָב יָרוּץ.",
             definitionNative = "Модель — прогноз, в каких файлах вероятна поломка, ещё до запуска прогона.",
-            example = "נִבּוּי תְּקָלוֹת הִכְוִין אוֹתָנוּ לִשְׁלוֹשָׁה מוֹדוּלִים מְסֻכָּנִים לִפְנֵי הָרִילִיז.",
-            exampleNative = "נִבּוּי תְּקָלוֹת направил нас на три рисковых модуля до релиза.",
+            example = "חִזּוּי תְּקָלוֹת הִכְוִין אוֹתָנוּ לִשְׁלוֹשָׁה מוֹדוּלִים מְסֻכָּנִים לִפְנֵי הָרִילִיז.",
+            exampleNative = "חִזּוּי תְּקָלוֹת направил нас на три рисковых модуля до релиза.",
          fillInBlankExclusions = listOf(177206L, 177208L, 177209L, 177210L)),
         WordEntity(
             id = 177208, setId = 1772, languagePair = "he-ru", rarity = "LEGENDARY",

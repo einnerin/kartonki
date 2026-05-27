@@ -165,12 +165,12 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172111L, 172112L, 172114L, 172115L)),
         WordEntity(
             id = 172114, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_threats", transliteration = "khoder pnimi",
-            original = "חוֹדֵר פְּנִימִי", translation = "внутренний нарушитель",
+            pos = "phrase", semanticGroup = "security_threats", transliteration = "iyum pnimi",
+            original = "אִיּוּם פְּנִימִי", translation = "внутренний нарушитель",
             definition = "עוֹבֵד מִבִּפְנִים שֶׁמְּנַצֵּל גִּישָׁה חֻקִּית לְמַטָּרוֹת אֲסוּרוֹת.",
             definitionNative = "Свой сотрудник, использующий законный доступ во вред компании.",
-            example = "חוֹדֵר פְּנִימִי מְסֻכָּן יוֹתֵר מִתּוֹקֵף חִיצוֹנִי.",
-            exampleNative = "חוֹדֵר פְּנִימִי опаснее любого внешнего нападающего.",
+            example = "אִיּוּם פְּנִימִי מְסֻכָּן יוֹתֵר מִתּוֹקֵף חִיצוֹנִי.",
+            exampleNative = "אִיּוּם פְּנִימִי опаснее любого внешнего нападающего.",
          fillInBlankExclusions = listOf(172111L, 172112L, 172113L, 172115L)),
         WordEntity(
             id = 172115, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",

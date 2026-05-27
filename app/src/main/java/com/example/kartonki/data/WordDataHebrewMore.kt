@@ -629,12 +629,12 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101118, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "arpal",
-            original = "עָרְפָּל", translation = "туман",
+            pos = "noun", semanticGroup = "weather", transliteration = "arafel",
+            original = "עֲרָפֶל", translation = "туман",
             definition = "שְׁכָבָה צְפוּפָה שֶׁל אֵדֵי מַיִם בַּאֲוִיר.",
             definitionNative = "Плотный слой водяных паров в воздухе.",
-            example = "הָיָה עָרְפָּל סָמִיךְ בַּבֹּקֶר.",
-            exampleNative = "Утром был густой עָרְפָּל.",
+            example = "הָיָה עֲרָפֶל סָמִיךְ בַּבֹּקֶר.",
+            exampleNative = "Утром был густой עֲרָפֶל.",
          fillInBlankExclusions = listOf(101104L, 101106L)),
         WordEntity(
             id = 101119, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",

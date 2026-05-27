@@ -166,12 +166,12 @@ object WordDataHebrewDoctorL4 {
         // ── doctor_commitment (5) — гарантийные обязательства и направления ──
         WordEntity(
             id = 180511, setId = 1805, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "doctor_commitment", transliteration = "hakhlatat kupa",
-            original = "הַחְלָטַת קֻפָּה", translation = "решение страховой кассы",
+            pos = "phrase", semanticGroup = "doctor_commitment", transliteration = "hakhlatat kupat kholim",
+            original = "הַחְלָטַת קֻפַּת חוֹלִים", translation = "решение страховой кассы",
             definition = "קְבִיעָה רִשְׁמִית שֶׁל הַגּוּף הַמְבַטֵּחַ אִם לְמַמֵּן טִפּוּל לְמְבֻטָּח אוֹ לִדְחוֹתוֹ.",
             definitionNative = "Официальный вердикт страховщика — финансировать лечение пациента или отказать.",
-            example = "הַחְלָטַת קֻפָּה הִגִּיעָה בְּמֵייל וְהִיא חִיּוּבִית עַל הַטִּפּוּל הַחָדָשׁ.",
-            exampleNative = "Решение страховой кассы пришло по почте и оно положительное по новому лечению.",
+            example = "הַחְלָטַת קֻפַּת חוֹלִים הִגִּיעָה בְּמֵייל וְהִיא חִיּוּבִית עַל הַטִּפּוּל.",
+            exampleNative = "Решение страховой кассы пришло по почте и оно положительное по лечению.",
          fillInBlankExclusions = listOf(180512L, 180513L, 180514L, 180515L)),
         WordEntity(
             id = 180512, setId = 1805, languagePair = "he-ru", rarity = "LEGENDARY",

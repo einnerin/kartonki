@@ -164,12 +164,12 @@ object WordDataHebrewNatureGeology {
             pos = "noun", semanticGroup = "nature_geology_minerals", fillInBlankExclusions = listOf(189609L, 189610L, 189611L, 189613L, 189614L, 189615L)),
 
         WordEntity(id = 189613, setId = 1896, languagePair = "he-ru", rarity = "RARE",
-            original = "אֲגָאט",
+            original = "אַגָט",
             translation = "агат",
             definition = "אֶבֶן חֵן מִשְׁכָבוֹת קְוַרְץ צִבְעוֹנִיּוֹת, מַרְאָה דְּגָמִים בְּצוּרַת רְצוּעוֹת קוֹנְצֶנְטְרִיּוֹת.",
             definitionNative = "Самоцвет из слоистых разновидностей кварца; показывает узор в виде концентрических полос.",
-            example = "בִּמְעָרָה לְיַד הַכִּנֶּרֶת מָצָא הַטַּיָּל גַּלְעִינֵי אֲגָאט קְטַנִּים בֵּין הָאֲבָנִים.",
-            exampleNative = "В пещере у Кинерета турист нашёл маленькие ядра אֲגָאט среди камней.",
+            example = "בִּמְעָרָה לְיַד הַכִּנֶּרֶת מָצָא הַטַּיָּל גַּלְעִינֵי אַגָט קְטַנִּים בֵּין הָאֲבָנִים.",
+            exampleNative = "В пещере у Кинерета турист нашёл маленькие ядра אַגָט среди камней.",
             transliteration = "агат",
             pos = "noun", semanticGroup = "nature_geology_minerals", fillInBlankExclusions = listOf(189609L, 189610L, 189611L, 189612L, 189614L, 189615L)),
 

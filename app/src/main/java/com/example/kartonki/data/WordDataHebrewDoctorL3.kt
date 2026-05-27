@@ -126,12 +126,12 @@ object WordDataHebrewDoctorL3 {
             exampleNative = "תַּרְבִּית גָּרוֹן подтвердил бактериальную, а не вирусную инфекцию.", fillInBlankExclusions = listOf(180406L, 180408L, 180410L)),
         WordEntity(
             id = 180410, setId = 1804, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "doctor_tests", transliteration = "hormonei tireoid",
-            original = "הוֹרְמוֹנֵי תִּרְאוֹיד", translation = "гормоны щитовидной железы",
+            pos = "phrase", semanticGroup = "doctor_tests", transliteration = "hormonei balutat hatris",
+            original = "הוֹרְמוֹנֵי בַּלּוּטַת הַתְּרִיס", translation = "гормоны щитовидной железы",
             definition = "חוֹמָרִים מִבְּלוּטָה בַּצַּוָּאר שֶׁמַּכְתִּיבִים אֶת קֶצֶב הַחִילּוּף בַּגּוּף.",
             definitionNative = "Вещества из железы на шее, задающие скорость обмена веществ.",
-            example = "הוֹרְמוֹנֵי תִּרְאוֹיד הָיוּ נְמוּכִים וְהִסְבִּירוּ אֶת הָעֲיֵפוּת הַמַּתְמֶדֶת.",
-            exampleNative = "הוֹרְמוֹנֵי תִּרְאוֹיד оказались низкими и объяснили постоянную усталость.", fillInBlankExclusions = listOf(180406L, 180408L, 180409L)),
+            example = "הוֹרְמוֹנֵי בַּלּוּטַת הַתְּרִיס הָיוּ נְמוּכִים וְהִסְבִּירוּ אֶת הָעֲיֵפוּת.",
+            exampleNative = "הוֹרְמוֹנֵי בַּלּוּטַת הַתְּרִיס оказались низкими и объяснили усталость.", fillInBlankExclusions = listOf(180406L, 180408L, 180409L)),
 
         // ── doctor_examinations (5) — инструментальные обследования ──
         WordEntity(
