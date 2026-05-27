@@ -311,7 +311,7 @@ object WordDataHebrewAdvanced {
             definition = "a feeling of self-consciousness, awkwardness, or embarrassment in a situation.",
             example = "מְבוּכָה גְּדוֹלָה אֲחֲזַתּוּ כְּשֶׁנָּפַל בְּפוּמְבֵּי.",
             definitionNative = "Чувство неловкости или замешательства в ситуации.",
-            exampleNative = "Его охватила мְבוּכָה, когда он упал на людях.", fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L, 101625L)),
+            exampleNative = "Его охватила מְבוּכָה, когда он упал на людях.", fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101610L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L, 101625L)),
 
         WordEntity(id = 101610, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "אַכְזָבָה", transliteration = "akhzavah", translation = "разочарование", pos = "noun", semanticGroup = "emotion",
             definition = "a feeling of sadness caused by unfulfilled hopes or expectations.",
@@ -859,7 +859,7 @@ object WordDataHebrewAdvanced {
             definition = "a game mode where two or more players participate simultaneously.",
             example = "שִׂחַקְנוּ בְּמוּלְטִי-פְּלֵיֶּר וְהִגַּעְנוּ לַסִּיבוּב הַגָּמוּר.",
             definitionNative = "Режим игры, в котором одновременно участвуют двое и более игроков.",
-            exampleNative = "Я записался на мировой טוּרְנִיר по шахматам.", fillInBlankExclusions = listOf(101818L, 101819L, 101823L)),
+            exampleNative = "Мы играем в מוּלְטִי-פְּלֵיֶּר каждый вечер по сети.", fillInBlankExclusions = listOf(101818L, 101819L, 101823L)),
 
         WordEntity(id = 101818, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "אוֹנְלַיְן", transliteration = "onlayn", translation = "онлайн; в сети", pos = "adjective", semanticGroup = "gaming",
             definition = "connected to the internet and accessible to other players.",

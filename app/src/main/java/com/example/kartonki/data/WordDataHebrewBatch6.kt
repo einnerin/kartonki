@@ -44,7 +44,7 @@ object WordDataHebrewBatch6 {
             definition = "תְּנוּעָה שֶׁמַּאֲרִיכָה שְׁרִירִים לְפְנֵי אוֹ אַחֲרֵי אִמּוּן.",
             definitionNative = "Движение, растягивающее мышцы до или после тренировки.",
             example = "חָשׁוּב לַעֲשׂוֹת מְתִיחוֹת לִפְנֵי הַרִיצָה כְּדֵי לְמַנּוֹעַ פְּצִיעוֹת.",
-            exampleNative = "Важно делать מְתִיחוֹת перед бегом, чтобы избежать травм.",
+            exampleNative = "Важно делать растяжку перед бегом, чтобы избежать травм.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 104103, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
@@ -429,7 +429,7 @@ object WordDataHebrewBatch6 {
             definition = "מָנָה זְעִירָה לְנִיסָיוֹן אוֹ לְשִׁיתּוּף, לְרֹב מוּגֶשֶׁת בְּמִסְעָדוֹת סִגְנוֹן טַפַּס.",
             definitionNative = "Небольшая порция для пробы или совместного употребления, как правило в ресторанах в стиле тапас.",
             example = "הִזְמַנּוּ כַּמָּה מָנוֹת קְטַנּוֹת לְשֻׁתָּפוּת.",
-            exampleNative = "Мы заказали несколько מָנוֹת קְטַנּוֹת на всех.",
+            exampleNative = "Я заказал маленькую מָנָה קְטַנָּה для пробы.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 104221, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -568,7 +568,7 @@ object WordDataHebrewBatch6 {
             definition = "חוֹמֶר הַמִּשְׁמֵשׁ לְהוֹסָפַת טַעַם אוֹ רֵיחַ לְמָזוֹן.",
             definitionNative = "Вещество, добавляемое для усиления вкуса или аромата еды.",
             example = "הַמִּטְבָּח הַיִּשְׂרְאֵלִי עָשִׁיר בְּתַבְלִינִים אֲרוֹמָתִיִּים.",
-            exampleNative = "Израильская кухня богата ароматными תַּבְלִינִים.",
+            exampleNative = "Израильская кухня богата ароматными специями.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 104311, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",

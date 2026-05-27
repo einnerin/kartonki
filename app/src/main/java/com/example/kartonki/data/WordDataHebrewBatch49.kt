@@ -201,7 +201,7 @@ object WordDataHebrewBatch49 {
             definition = "הַצּוּרָה הַכְּלָלִית שֶׁל בֶּגֶד עַל הַגּוּף — צָמוּד, רָחָב אוֹ יָשָׁר.",
             definitionNative = "Общая форма изделия на теле — облегающая, свободная или прямая.",
             example = "הַחֻלְצָה הַזּוֹ בְּגִּזְרָה צְמוּדָה לַגוּף.",
-            exampleNative = "Эта рубашка имеет облегающий гִּזְרָה."
+            exampleNative = "Эта рубашка имеет облегающий крой по фигуре."
         , fillInBlankExclusions = listOf(127211L, 127216L, 127222L, 127224L)),
         WordEntity(id = 127216, setId = 1272, languagePair = "he-ru", rarity = "RARE",
             original = "מְכַפֶּלֶת", transliteration = "mekhapelet",

@@ -152,7 +152,7 @@ object WordDataEnglishMedicineL4 {
             definition = "Excess fluid trapped in body tissues, making them swell.",
             definitionNative = "Избыток жидкости в тканях организма, приводящий к их набуханию.",
             example = "Pitting edema of both ankles suggested decompensated heart failure.",
-            exampleNative = "Едема обеих лодыжек с ямкой при надавливании указывала на декомпенсацию сердечной недостаточности.",
+            exampleNative = "Edema обеих лодыжек с ямкой указывала на декомпенсацию сердечной недостаточности.",
             pos = "noun", semanticGroup = "medicine_symptoms", fillInBlankExclusions = listOf(32211L, 32212L, 32214L, 32215L)),
 
         WordEntity(id = 32214, setId = 322, languagePair = "en-ru", rarity = "EPIC",

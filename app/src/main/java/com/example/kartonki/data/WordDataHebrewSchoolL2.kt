@@ -243,7 +243,7 @@ object WordDataHebrewSchoolL2 {
             definition = "קבוצה של תלמידים ששרים יחד בליווי מורה למוזיקה ומופיעים באירועים.",
             definitionNative = "Группа учеников — поют вместе с учителем музыки и выступают на праздниках.",
             example = "הוא הצטרף ל מַקְהֵלָה של בית הספר השנה.",
-            exampleNative = "Он в этом году пришёл в хор школы.",
+            exampleNative = "Он в этом году пришёл в מַקְהֵלָה школы.",
             pos = "noun",
             semanticGroup = "school_activities", fillInBlankExclusions = listOf(181316L, 181318L, 181319L, 181320L)),
 

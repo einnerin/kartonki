@@ -207,7 +207,7 @@ object WordDataHebrewBatch10 {
             definition = "כִּסּוּי לַפָּנִים שֶׁמַּסְתִּיר אֶת הַזֶּהוּת; נְהוּג בְּפּוּרִים.",
             definitionNative = "Накладка на лицо, скрывающая личность; принято надевать на Пурим.",
             example = "הַיְּלָדִים לָבְשׁוּ תַּחְפּוֹשׂוֹת וּמָסֵכּוֹת בְּפּוּרִים.",
-            exampleNative = "Дети надели карнавальные костюмы и מָסֵכּוֹת на Пурим.",
+            exampleNative = "Дети надели карнавальные костюмы и маски на Пурим.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 105322, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",

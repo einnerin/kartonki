@@ -269,7 +269,7 @@ object WordDataHebrewFinanceV2 {
             definition = "עוֹלֶה מְעַט בְּגִין הַנָּחָה זְמַנִּית בַּחֲנוּת.",
             definitionNative = "Стоит мало из-за временной скидки в магазине.",
             example = "הַחֻלְצָה הָיְתָה זוֹלָה בְּמִבְצָע בַּשִּׁשִּׁי.",
-            exampleNative = "Рубашка была זוֹלָה בְּמִבְצָע в пятницу.",
+            exampleNative = "Рубашка была дешёвой по акции в пятницу.",
             isFillInBlankSafe = false,
         ),
 

@@ -87,7 +87,7 @@ object WordDataHebrewArchitectureStyles {
             definition = "סִגְנוֹן אַנְגְּלִי שֶׁל הַמֵּאָה הַשְּׁמוֹנֶה־עֶשְׂרֵה — סִימֶטְרִיָּה קְפֵדָנִית וְחֲזִיתוֹת לְבֵנָה אֲדֻמָּה.",
             definitionNative = "Английский стиль XVIII века: строгая симметрия и красно-кирпичные фасады.",
             example = "הָעִיר בָּאת מְפֻרְסֶמֶת בַּטוּרֵי הַבָּתִּים הַגֵּאוֹרְגִ׳יָאנִיִּים שֶׁלָּהּ.",
-            exampleNative = "Город Бат знаменит изящными гֵּאוֹרְגִ׳יָאנִי-террасами.",
+            exampleNative = "Город Бат знаменит изящными георгианскими террасами.",
             transliteration = "гэорджиани",
             pos = "adjective", semanticGroup = "arch_styles_english_historical", fillInBlankExclusions = listOf(190801L, 190803L)),
 
@@ -169,7 +169,7 @@ object WordDataHebrewArchitectureStyles {
             definition = "סִגְנוֹן אֲמֵרִיקָאִי מֻקְדָּם סְבִיב 1800 — עַמּוּדִים דַּקִּים, חַלּוֹנוֹת מְנִיפָה וְסִימֶטְרִיָּה שַׁלְוָה.",
             definitionNative = "Ранний американский стиль около 1800 года: тонкие колонны, веерные окна и спокойная симметрия.",
             example = "הַרְבֵּה בָּתִּים יְשָׁנִים בְּבּוֹסְטוֹן הֵם דֻּגְמָה מְאֻפֶּקֶת לְסִגְנוֹן פֶדֶרָלִי.",
-            exampleNative = "Многие старые дома Бостона — сдержанная сִגְנוֹן פֶדֶרָלִי.",
+            exampleNative = "Многие старые дома Бостона — сдержанный федеральный стиль.",
             transliteration = "сигнон федэрали",
             pos = "phrase", semanticGroup = "arch_styles_revival", fillInBlankExclusions = listOf(190805L, 190808L, 190809L, 190817L)),
 

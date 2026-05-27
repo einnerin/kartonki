@@ -128,7 +128,7 @@ object WordDataHebrewBatch18 {
             definition = "כִּיסּוּי עִיתוֹנָאִי שֶׁל אֵרוּעַ אוֹ נוֹשֵׂא בְּאֶמְצָעֵי הַתִּקְשׁוֹרֶת.",
             definitionNative = "Журналистское освещение события или темы в СМИ.",
             example = "הַסִּיקּוּר שֶׁל הַמִּשְׁפָּט הָיָה נָרְחָב בְּכָל הָעִיתּוֹנוֹת.",
-            exampleNative = "Освещение процесса было обширным во всех газетах."),
+            exampleNative = "Медиаосвещение процесса было обширным во всех газетах."),
         WordEntity(
             id = 107612, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media", transliteration = "podcast",
@@ -163,7 +163,7 @@ object WordDataHebrewBatch18 {
             definition = "דַּף מִידַּע קָצָר הַמְּחֻלָּק לָרַבִּים.",
             definitionNative = "Краткий информационный листок, распространяемый для широкой аудитории.",
             example = "חִלַּקְנוּ עֲלוֹנִים בַּרְחוֹב לִפְנֵי הַהַצְבָּעָה.",
-            exampleNative = "Мы раздавали листовки на улице перед голосованием.",
+            exampleNative = "Мы раздавали бюллетени на улице перед голосованием.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 107616, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",

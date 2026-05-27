@@ -112,7 +112,7 @@ object WordDataHebrewImmigrant6 {
             definition = "חַיָּל חָדָשׁ שֶׁנִּמְצָא בְּשַׁלְבֵי הָאִמּוּן הַבָּסִיסִי.",
             definitionNative = "Новый солдат, проходящий начальную подготовку.",
             example = "הַטִּירוֹנִים הִתְחִילוּ אֶת הָאִמּוּן הַבָּסִיסִי הַשָּׁבוּעַ.",
-            exampleNative = "טִירוֹנִים начали базовую подготовку на этой неделе.",
+            exampleNative = "Новобранцы начали базовую подготовку на этой неделе.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 114611, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",

@@ -294,7 +294,7 @@ object WordDataHebrewAppearanceL5 {
             definition = "כָּפוּף קָדִימָה מֵרֹב צַעַר אוֹ מִשָּׁנִים — לְשׁוֹן סִפְרוּתִית גְּבוֹהָה.",
             definitionNative = "Согнутый вперёд от тяжести скорби или прожитых лет — высокий литературный слог.",
             example = "הָאַלְמָנָה הַזְּקֵנָה הָלְכָה שָׁחוּחָה לְבֵית הַקְּבָרוֹת בַּגֶּשֶׁם.",
-            exampleNative = "Старая вдова шла שָׁחוּחָה к кладбищу под дождём.", isFillInBlankSafe = false),
+            exampleNative = "Старая вдова шла сгорбленная к кладбищу под дождём.", isFillInBlankSafe = false),
         WordEntity(
             id = 182625, setId = 1826, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "adjective", semanticGroup = "appearance_l5_descriptive_high",

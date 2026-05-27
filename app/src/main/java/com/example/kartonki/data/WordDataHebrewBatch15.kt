@@ -114,7 +114,7 @@ object WordDataHebrewBatch15 {
             definition = "חַיָּל שֶׁתַּפְקִידוֹ הָעִיקָרִי הִשְׁתַּתְּפוּת בְּפְּעִילוּת קְרָבִית.",
             definitionNative = "Солдат, основная задача которого — участие в боевых действиях.",
             example = "לוֹחֲמֵי הַיְּחִידָה שִׂימּוּ עַל כֶּתֶף אֶת הַמִּשְׁמֶרֶת.",
-            exampleNative = "Бойцы подразделения заступили на дежурство.",
+            exampleNative = "Боец לוֹחֵם подразделения заступил на дежурство.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 106711, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",

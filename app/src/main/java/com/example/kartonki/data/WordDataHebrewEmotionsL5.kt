@@ -336,7 +336,7 @@ object WordDataHebrewEmotionsL5 {
             definition = "מִי שֶׁאֵין דֶּרֶךְ לְהָקֵל אֶת צַעֲרוֹ אוֹ אֶת אֶבְלוֹ — בִּטּוּי סִפְרוּתִי כָּבֵד.",
             definitionNative = "Тот, чьё горе или скорбь не утолить никаким средством — тяжёлое литературное выражение.",
             example = "הָאֵם נִשְׁאֲרָה חֲסֶרֶת נֶחָמָה לְאַחַר אָבְדָן בְּנָהּ הַיָּחִיד.",
-            exampleNative = "Мать осталась חֲסֶרֶת נֶחָמָה после потери единственного сына.", isFillInBlankSafe = false),
+            exampleNative = "Мать осталась безутешна после потери единственного сына.", isFillInBlankSafe = false),
 
         WordEntity(
             id = 183124, setId = 1831, languagePair = "he-ru", rarity = "LEGENDARY",

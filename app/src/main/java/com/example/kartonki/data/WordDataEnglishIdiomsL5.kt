@@ -129,7 +129,7 @@ object WordDataEnglishIdiomsL5 {
             definition = "Harmed by the very plan or device with which you intended to harm others.",
             definitionNative = "Пойман в ловушку, что приготовил для других. «Petard» — старая бомба, которая сама поднимала.",
             example = "Time will hoist by your own petard the blackmailer who leaked those letters.",
-            exampleNative = "Шантажист оказался hoist by his own petard, когда его письма утекли.",
+            exampleNative = "Шантажист оказался hoist by your own petard, когда его письма утекли.",
             pos = "phrase", semanticGroup = "idioms_l5_literary_archaic",  fillInBlankExclusions = listOf(40906L, 40908L, 40909L, 40910L)),
 
         WordEntity(id = 40908, setId = 409, languagePair = "en-ru", rarity = "LEGENDARY",

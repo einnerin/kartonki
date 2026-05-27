@@ -403,7 +403,7 @@ object WordDataHebrewBatch51 {
             definition = "גִּישָׁה הַטּוֹעֶנֶת שֶׁאֱמוּנָה הִיא יְדִיעָה אִם הִיא נוֹצְרָה דֶּרֶךְ תַּהֲלִיךְ אָמִין.",
             definitionNative = "Подход: убеждение становится знанием, если возникло через стабильно работающий процесс.",
             example = "גוֹלְדְמָן הוּא הוֹגֶה מֶרְכָּזִי בִּתֵּיאוֹרְיַת הָאֲמִינוּת.",
-            exampleNative = "Голдман — центральный автор тִֵ֤יאוֹרְיַת הָאֲמִינוּת.", fillInBlankExclusions = listOf(129215L, 129217L)),
+            exampleNative = "Голдман — центральный автор теории надёжности в эпистемологии.", fillInBlankExclusions = listOf(129215L, 129217L)),
         WordEntity(id = 129217, setId = 1292, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "philosophy_epistemology",
             original = "אֶקְסְטֶרְנַלִיזְם אֶפִּיסְטֵמִי", transliteration = "eksternalizm epistemi", translation = "эпистемический экстернализм",

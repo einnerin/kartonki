@@ -34,7 +34,7 @@ object WordDataHebrewAccountingL2 {
             definition = "מסמך כתוב להוצאת כסף מחשבון בנק עבור מקבל מסוים.",
             definitionNative = "Бумага с подписью, по которой банк выдаёт деньги получателю.",
             example = "הוא שילם את שכר הדירה ב צֵ'יק חודשי.",
-            exampleNative = "Он заплатил аренду ежемесячным чеком.",
+            exampleNative = "Он заплатил аренду ежемесячным צֵ'יק.",
             pos = "noun",
             semanticGroup = "accounting_documents",
          fillInBlankExclusions = listOf(171402L, 171403L, 171404L, 171405L, 171406L, 171410L)),

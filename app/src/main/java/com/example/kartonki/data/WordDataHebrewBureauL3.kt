@@ -212,7 +212,7 @@ object WordDataHebrewBureauL3 {
             definition = "אֶמְצָעִים מִשְׁפָּטִיִּים שֶׁמַּגִּיעִים לַלָּקוֹחַ כְּשֶׁהַחוֹזֶה הוּפַר נֶגְדּוֹ.",
             definitionNative = "Юридические инструменты, положенные клиенту, если соглашение нарушили.",
             example = "עוֹרֵךְ הַדִּין הִסְבִּיר אֵילוּ סַעֲדִים יַשׁ לַמְּבֻטָּח.",
-            exampleNative = "Адвокат объяснил, какие сַעֲדִים есть у застрахованного.", fillInBlankExclusions = listOf(180918L)),
+            exampleNative = "Адвокат объяснил, какие средства правовой защиты есть у клиента.", fillInBlankExclusions = listOf(180918L)),
 
         // ── bureau_certificates (5) — официальные справки ──
         WordEntity(

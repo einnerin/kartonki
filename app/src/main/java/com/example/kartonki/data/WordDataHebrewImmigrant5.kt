@@ -137,7 +137,7 @@ object WordDataHebrewImmigrant5 {
             definition = "מַטְבֵּעַ הַיִּשְׂרְאֵלִי הַקָּטָן בְּיוֹתֵר, מֵאִית הַשֶּׁקֶל.",
             definitionNative = "Наименьшая израильская монета, одна сотая шекеля.",
             example = "הַמְּחִיר הוּא שְׁלוֹשָׁה שְׁקָלִים וַחֲמִשִּׁים אֲגוֹרוֹת.",
-            exampleNative = "Цена — три шекеля и пятьдесят אֲגוֹרוֹת.",
+            exampleNative = "Одна агора — самая мелкая монета в Израиле.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 114314, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
@@ -199,7 +199,7 @@ object WordDataHebrewImmigrant5 {
             definition = "פְּרִי מָתוֹק בְּצוּרַת דְּמָעָה, בְּדֶרֶךְ כְּלָל צָהֹב אוֹ יָרֹק.",
             definitionNative = "Сладкий грушевидный фрукт, обычно жёлтый или зелёный.",
             example = "קָנִיתִי חֲמִישָּׁה אֲגָסִים בַּשּׁוּק.",
-            exampleNative = "Я купил пять אֲגָסִים на рынке.",
+            exampleNative = "Я купил пять груш на рынке.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 114321, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",

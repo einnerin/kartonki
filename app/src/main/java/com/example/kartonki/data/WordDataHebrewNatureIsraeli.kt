@@ -138,7 +138,7 @@ object WordDataHebrewNatureIsraeli {
             definition = "צִפּוֹר נוֹדֶדֶת גְּדוֹלָה הָעוֹצֶרֶת בְּאַגְמוֹן הַחוּלָה בַּסְּתָו וּבָאָבִיב.",
             definitionNative = "Крупная перелётная птица, останавливающаяся в Хульской долине осенью и весной.",
             example = "אֶלֶף עֲגוּרִים יָרְדוּ בַּשָּׂדֶה לְיַד הַכְּפָר בְּנוֹבֶמְבֶּר.",
-            exampleNative = "Тысячи עֲגוּרִים сели на поле у деревни в ноябре.",
+            exampleNative = "Тысячи журавлей сели на поле у деревни в ноябре.",
             transliteration = "агур",
             pos = "noun", semanticGroup = "nature_il_birds", isFillInBlankSafe = false),
 

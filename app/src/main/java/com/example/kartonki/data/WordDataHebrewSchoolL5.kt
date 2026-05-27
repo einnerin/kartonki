@@ -225,7 +225,7 @@ object WordDataHebrewSchoolL5 {
             definition = "מַעֲרֶכֶת בְּדִיקוֹת חִיצוֹנִיּוֹת שֶׁל מִשְׂרַד הַחִנּוּךְ לְמַדִּידַת רָמָה שֶׁל בָּתֵּי סֵפֶר.",
             definitionNative = "Внешние замеры от министерства, по которым сравнивают школы между собой по уровню.",
             example = "תּוֹצְאוֹת מֵיצָב פֻּרְסְמוּ הַשָּׁבוּעַ וְעוֹרְרוּ דִּיוּן צִבּוּרִי.",
-            exampleNative = "Результаты мейцава вышли на этой неделе и вызвали бурную дискуссию.", fillInBlankExclusions = listOf(181616L, 181618L, 181619L)),
+            exampleNative = "Результаты מֵיצָב вышли на этой неделе и вызвали бурную дискуссию.", fillInBlankExclusions = listOf(181616L, 181618L, 181619L)),
 
         WordEntity(
             id = 181618, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",

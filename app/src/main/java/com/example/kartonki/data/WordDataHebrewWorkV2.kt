@@ -397,7 +397,7 @@ object WordDataHebrewWorkV2 {
             definition = "עוֹבֵד שֶׁמְּקַבֵּל הוֹרָאוֹת מֵאָדָם בָּכִיר מִמֶּנּוּ בַּצֶּוֶות.",
             definitionNative = "Работник, получающий указания от более старшего сотрудника.",
             example = "יֵשׁ לוֹ שְׁלֹשָׁה כְּפוּפִים בַּמַּחְלָקָה.",
-            exampleNative = "У него три כְּפוּפִים в отделе.",
+            exampleNative = "У него три подчинённых в отделе.",
             isFillInBlankSafe = false,
         ),
         WordEntity(

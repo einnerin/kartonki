@@ -151,7 +151,7 @@ object WordDataHebrewHightechL4 {
             definition = "מַדָּד מַסְפָּרִי קָבוּעַ שֶׁבּוֹדֵק עַד כַּמָּה מַחְלָקָה מַשִּׂיגָה אֶת הַיַּעַד הָעִקָּרִי שֶׁלָּהּ.",
             definitionNative = "Постоянный числовой индикатор — насколько отдел двигает свою главную цель.",
             example = "קֵיי-פִּי-אַיי שֶׁל הַצֶּוֶות הָיָה לְהוֹרִיד אֶת זְמַן הַתְּגוּבָה.",
-            exampleNative = "Командный KPI был — снизить время ответа.",
+            exampleNative = "Командный קֵיי-פִּי-אַיי был — снизить время ответа.",
          fillInBlankExclusions = listOf(174812L, 174813L, 174814L, 174815L)),
         WordEntity(
             id = 174812, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
