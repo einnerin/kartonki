@@ -12,7 +12,7 @@
 |---|---------|------------|-----------|-------------------|
 | 1 | **Стандарты качества** | Фиксируют правила: живой стиль, лимиты длин, опасные близнецы | `docs/claude/quality_standards_*.md` | Читаются людьми и агентами перед работой |
 | 2 | **Skills читают стандарты** | `/add-words` шаг 0: чтение 3 стандартов обязательно | `.claude/skills/add-words/SKILL.md` | При запуске skill'а |
-| 3 | **Валидационные скрипты** | 7 чистых проверок + aggregator + audit | `scripts/validate/` | По запросу (ручной/CI/hook) |
+| 3 | **Валидационные скрипты** | 21 hard-блок-проверка + aggregator (`validate_all.sh`) + scan-only audit | `scripts/validate/` | По запросу (ручной/CI/hook) |
 | 4 | **Skill+агенты обязаны валидацию** | Блокирующее правило: `validate_all.sh` до возврата 0 | SKILL.md шаг 7, text-author/metadata-filler | Перед возвратом отчёта агентом |
 | 5 | **Pre-commit hook** | Локальная защита: `.py` в корне, worktrees, submodule, WordData-валидация, bump `WordDataVersion.CURRENT` при любом изменении данных | `.githooks/pre-commit` | Перед каждым `git commit` |
 | 6 | **CI — blocking PR workflow** | Валидация только изменённых setIds. Красный = блокирует мерж | `.github/workflows/validate-words-pr.yml` | На push/PR к main при изменении WordData |
@@ -32,7 +32,7 @@ bash scripts/install-hooks.sh
 ```bash
 bash scripts/validate/validate_all.sh 262
 ```
-Прогоняет все 7 валидаторов. Exit 0 = всё хорошо, exit 1 = есть блокирующие нарушения.
+Прогоняет все 21 валидатор. Exit 0 = всё хорошо, exit 1 = есть блокирующие нарушения.
 
 **Вся база:**
 ```bash
@@ -51,7 +51,7 @@ bash scripts/validate/validate_group_sizes.sh 262
 ```bash
 bash scripts/validate/tests/run_tests.sh
 ```
-14 проверок: 7 валидаторов × 2 фикстуры (good_set должен пройти, bad_set должен упасть).
+16 проверок: 8 валидаторов × 2 фикстуры (good_set должен пройти, bad_set должен упасть). Покрыты только 8 из 21 валидаторов — остальные добавлены позже без fixture-расширения, **техдолг**.
 
 ## Что делать при провале каждого уровня
 
