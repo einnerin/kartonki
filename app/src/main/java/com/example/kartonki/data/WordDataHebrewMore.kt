@@ -439,8 +439,11 @@ object WordDataHebrewMore {
             original = "פָּשַׁט", translation = "снять (одежду)",
             definition = "לְהָסִיר בֶּגֶד מֵהַגּוּף.",
             definitionNative = "Стянуть с себя рубашку, штаны или куртку — например, вернувшись домой.",
+            // Пример использует спряжённую форму פָּשַׁטְתִּי (1 л.) — base form פָּשַׁט в нём
+            // отсутствует, blank построить нельзя → form_mismatch, вне FILL_IN_BLANK.
             example = "פָּשַׁטְתִּי אֶת הַמְּעִיל בַּבַּיִת.",
             exampleNative = "Я פָּשַׁט пальто, войдя домой.",
+            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 101022, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",

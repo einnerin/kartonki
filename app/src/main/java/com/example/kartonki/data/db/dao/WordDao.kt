@@ -6,13 +6,9 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.kartonki.data.db.entity.WordEntity
-import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface WordDao {
-    @Query("SELECT * FROM words ORDER BY rarity DESC, original ASC")
-    fun getAllWords(): Flow<List<WordEntity>>
-
     @Query("SELECT * FROM words WHERE id = :id")
     suspend fun getWordById(id: Long): WordEntity?
 
@@ -36,9 +32,6 @@ interface WordDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(word: WordEntity): Long
 
-    @Query("SELECT * FROM words ORDER BY RANDOM() LIMIT :limit")
-    suspend fun getRandomWords(limit: Int): List<WordEntity>
-
     /**
      * Random pick by language + rarity, excluding a denylist of `original`s.
      * Used by [com.example.kartonki.data.repository.PackRepository] so a 5-card
@@ -59,14 +52,8 @@ interface WordDao {
         limit: Int,
     ): List<WordEntity>
 
-    @Query("SELECT * FROM words WHERE rarity = :rarity ORDER BY id ASC")
-    suspend fun getWordsByRarity(rarity: String): List<WordEntity>
-
     @Query("SELECT * FROM words WHERE original = :original LIMIT 1")
     suspend fun getWordByOriginal(original: String): WordEntity?
-
-    @Query("SELECT * FROM words WHERE original = :original AND languagePair = :languagePair LIMIT 1")
-    suspend fun getWordByOriginalAndLanguage(original: String, languagePair: String): WordEntity?
 
     /**
      * Batch lookup for the seed-deck migration path: maps a list of `original`
@@ -78,9 +65,6 @@ interface WordDao {
      */
     @Query("SELECT * FROM words WHERE languagePair = :languagePair AND original IN (:originals)")
     suspend fun getWordsByOriginalsAndLanguage(originals: List<String>, languagePair: String): List<WordEntity>
-
-    @Query("SELECT * FROM words ORDER BY rarity DESC, original ASC")
-    suspend fun getAllWordsOnce(): List<WordEntity>
 
     @Query("SELECT * FROM words WHERE languagePair = :languagePair ORDER BY rarity DESC, original ASC")
     suspend fun getAllWordsByLanguage(languagePair: String): List<WordEntity>

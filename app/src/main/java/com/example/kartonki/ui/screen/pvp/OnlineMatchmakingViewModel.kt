@@ -155,11 +155,10 @@ class OnlineMatchmakingViewModel @Inject constructor(
     }
 
     fun cancelSearch() {
-        val user = authManager.currentUser.value ?: return
+        authManager.currentUser.value ?: return
+        // Реальная очистка слота в очереди — в awaitClose у findMatch-флоу,
+        // его дёргает cancel() джобы. Отдельный leaveQueue был пустым no-op.
         searchJob?.cancel()
-        viewModelScope.launch {
-            matchmakingRepository.leaveQueue(user.uid)
-        }
         _uiState.update { it.copy(phase = OnlineMatchmakingUiState.Phase.DeckSelect) }
         logMatchmakingResult(com.example.kartonki.analytics.MatchmakingOutcome.CANCELLED)
     }

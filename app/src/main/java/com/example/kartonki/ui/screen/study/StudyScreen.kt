@@ -240,6 +240,12 @@ fun StudyScreen(
                         )
                     }
                 } else {
+                    // Grouping/sorting ~684 sets is non-trivial — memoize so it runs
+                    // only when the state (or search query) actually changes, not on
+                    // every recomposition reaching this LazyColumn.
+                    val grouped = remember(uiState) { uiState.groupedSets(uiState.activeFilters) }
+                    val searchGroups = remember(uiState, searchQuery) { uiState.searchGroupedSets(searchQuery) }
+                    val filteredSets = remember(uiState) { uiState.filteredSets }
                     LazyColumn(
                         state = listState,
                         modifier = Modifier.fillMaxSize(),
@@ -249,7 +255,6 @@ fun StudyScreen(
                         when {
                             // ── Search mode: grouped by topic ──────────────────────────────
                             searchActive && searchQuery.isNotEmpty() -> {
-                                val searchGroups = uiState.searchGroupedSets(searchQuery)
                                 if (searchGroups.isEmpty()) {
                                     item(key = "search_empty") {
                                         Box(
@@ -294,7 +299,6 @@ fun StudyScreen(
                             }
                             // ── Normal grouped view (tab 0) ────────────────────────────────
                             uiState.selectedTab == 0 -> {
-                                val grouped = uiState.groupedSets(uiState.activeFilters)
                                 val hasTopics = grouped.any { it.topic.isNotEmpty() }
                                 if (!hasTopics) {
                                     items(grouped.flatMap { it.sets }, key = { it.id }) { item ->
@@ -330,7 +334,7 @@ fun StudyScreen(
                             }
                             // ── Favourites tab: flat list ──────────────────────────────────
                             else -> {
-                                items(uiState.filteredSets, key = { it.id }) { item ->
+                                items(filteredSets, key = { it.id }) { item ->
                                     WordSetCard(
                                         item = item,
                                         onClick = { onNavigateToSetDetail(item.id) },

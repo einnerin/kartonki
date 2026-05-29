@@ -57,4 +57,11 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
+    override fun onDestroy() {
+        // Release the native TTS engine only on a real finish, not on config-change
+        // recreation (TtsManager re-inits lazily if used again).
+        if (isFinishing) ttsManager.shutdown()
+        super.onDestroy()
+    }
 }

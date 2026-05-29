@@ -133,11 +133,12 @@ class ProblemWordsSessionViewModel @Inject constructor(
             // Load stored mastered-types map, filtered to session words. Use to
             // (a) exclude already-passed types from quiz generation (variety),
             // (b) decide at session end whether a word reached mastery.
+            val sessionWordIds = words.mapTo(HashSet()) { it.id }
             beforeMasteredTypes = prefs.getProblemSessionMasteredTypes()
                 .mapValues { (_, names) ->
                     names.mapNotNull { runCatching { StudyQuizType.valueOf(it) }.getOrNull() }.toSet()
                 }
-                .filterKeys { it in words.map(Word::id).toSet() }
+                .filterKeys { it in sessionWordIds }
 
             // Compute what quiz types are physically possible for each word,
             // given the current pool and user settings. Mastery threshold is
@@ -176,8 +177,6 @@ class ProblemWordsSessionViewModel @Inject constructor(
             }
         }
     }
-
-    fun onIntroductionContinue() = advanceStep()
 
     fun onMultipleChoiceAnswer(selected: String) {
         val step = _uiState.value.currentStep as? StudyStep.Quiz ?: return

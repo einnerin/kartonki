@@ -3,6 +3,7 @@ package com.example.kartonki.data.remote
 import android.content.Context
 import android.content.Intent
 import android.util.Log
+import com.example.kartonki.BuildConfig
 import com.example.kartonki.domain.model.UserProfile
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -50,18 +51,18 @@ class FirebaseAuthManager @Inject constructor(
         getGoogleSignInClient(context, webClientId).signInIntent
 
     suspend fun firebaseSignInWithGoogle(idToken: String): Result<UserProfile> = runCatching {
-        Log.d(TAG, "firebaseSignInWithGoogle: creating credential")
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         val currentUser = auth.currentUser
         val task = if (currentUser != null && currentUser.isAnonymous) {
-            Log.d(TAG, "firebaseSignInWithGoogle: linking anonymous account to Google")
+            if (BuildConfig.DEBUG) Log.d(TAG, "firebaseSignInWithGoogle: linking anonymous account to Google")
             currentUser.linkWithCredential(credential)
         } else {
-            Log.d(TAG, "firebaseSignInWithGoogle: calling signInWithCredential...")
+            if (BuildConfig.DEBUG) Log.d(TAG, "firebaseSignInWithGoogle: calling signInWithCredential...")
             auth.signInWithCredential(credential)
         }
         val result = task.awaitTask()
-        Log.d(TAG, "firebaseSignInWithGoogle: success, user=${result.user?.uid}")
+        // uid — это идентификатор пользователя; не логируем в release.
+        if (BuildConfig.DEBUG) Log.d(TAG, "firebaseSignInWithGoogle: success")
         result.user?.toProfile() ?: error("Firebase user is null after sign-in")
     }.also { result ->
         result.onFailure { e -> Log.e(TAG, "firebaseSignInWithGoogle failed: ${e.javaClass.simpleName}: ${e.message}", e) }

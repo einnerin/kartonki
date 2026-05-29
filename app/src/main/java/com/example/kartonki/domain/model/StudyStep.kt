@@ -10,8 +10,6 @@ enum class StudyQuizType {
 }
 
 sealed class StudyStep {
-    data class Introduction(val word: Word) : StudyStep()
-
     data class Quiz(
         val word: Word,
         val type: StudyQuizType,

@@ -30,7 +30,6 @@ data class DeckBuilderUiState(
     val deckName: String = "",
     val deckLevel: Int = 1,
     val deckCards: List<Word> = emptyList(),
-    val availableCards: List<Word> = emptyList(),
     val allOwnedCards: List<Word> = emptyList(),
     val selectedTab: Int = 0,
     val rarityFilter: Set<Rarity> = emptySet(),
@@ -141,14 +140,12 @@ class DeckBuilderViewModel @Inject constructor(
         val languagePair = prefs.getLanguagePair()
         val allOwned = collectionRepository.getOwnedWords(languagePair = languagePair).sortedByRarityDesc()
         val inDeck = allOwned.filter { it.id in deckWordIds }
-        val available = allOwned.filter { it.id !in deckWordIds }
         _uiState.update {
             it.copy(
                 isLoading = false,
                 deckName = deckName,
                 deckLevel = deckLevel,
                 deckCards = inDeck,
-                availableCards = available,
                 allOwnedCards = allOwned,
                 // Open on "All cards" tab when deck is empty (newly created)
                 selectedTab = if (inDeck.isEmpty()) 1 else it.selectedTab,

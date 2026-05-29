@@ -209,8 +209,6 @@ class MatchmakingRepository @Inject constructor(
             })
         }
     }
-
-    suspend fun leaveQueue(uid: String) { /* cleanup is handled by awaitClose */ }
 }
 
 // Firebase can return arrays as List<Long>, List<Int>, ArrayList<Any>, or HashMap<String, Any>.

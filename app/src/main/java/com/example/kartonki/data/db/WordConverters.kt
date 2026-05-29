@@ -13,5 +13,8 @@ class WordConverters {
 
     @TypeConverter
     fun stringToLongList(value: String): List<Long> =
-        if (value.isEmpty()) emptyList() else value.split(",").map { it.toLong() }
+        if (value.isEmpty()) emptyList()
+        // toLongOrNull — tolerate a malformed/corrupt stored value rather than
+        // crashing word loading on a bad DB read.
+        else value.split(",").mapNotNull { it.trim().toLongOrNull() }
 }

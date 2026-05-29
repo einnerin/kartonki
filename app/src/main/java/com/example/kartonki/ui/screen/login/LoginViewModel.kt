@@ -3,6 +3,7 @@ package com.example.kartonki.ui.screen.login
 import android.content.Context
 import android.content.Intent
 import android.util.Log
+import com.example.kartonki.BuildConfig
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.kartonki.data.remote.FirebaseAuthManager
@@ -49,10 +50,12 @@ class LoginViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true, error = null) }
             try {
-                Log.d(TAG, "handleGoogleSignInResult: data=${data != null}")
                 val task = GoogleSignIn.getSignedInAccountFromIntent(data)
                 val account = task.getResult(ApiException::class.java)
-                Log.d(TAG, "handleGoogleSignInResult: account=${account.email}, idToken=${if (account.idToken != null) "present" else "NULL"}")
+                // Никогда не логируем email (PII) — только наличие idToken, и только в debug.
+                if (BuildConfig.DEBUG) {
+                    Log.d(TAG, "handleGoogleSignInResult: idToken=${if (account.idToken != null) "present" else "NULL"}")
+                }
                 val idToken = account.idToken ?: run {
                     Log.e(TAG, "idToken is null — SHA-1 fingerprint probably not registered in Firebase Console")
                     _uiState.update { it.copy(isLoading = false, error = "Ошибка входа: ID токен не получен. Проверьте настройки Firebase Console.") }

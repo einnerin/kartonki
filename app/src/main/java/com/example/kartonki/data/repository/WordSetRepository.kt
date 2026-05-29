@@ -28,23 +28,7 @@ class WordSetRepository @Inject constructor(
     suspend fun getSetById(id: Long): WordSetEntity? = wordSetDao.getSetById(id)
 
     suspend fun getWordsInSet(setId: Long): List<Word> =
-        wordSetDao.getWordsInSet(setId).map { entity ->
-            Word(
-                id = entity.id,
-                original = entity.original,
-                translation = entity.translation,
-                definition = entity.definition,
-                example = entity.example,
-                rarity = Rarity.valueOf(entity.rarity),
-                languagePair = entity.languagePair,
-                pos = entity.pos,
-                semanticGroup = entity.semanticGroup,
-                transliteration = entity.transliteration,
-                definitionNative = entity.definitionNative,
-                exampleNative = entity.exampleNative,
-                isFillInBlankSafe = entity.isFillInBlankSafe,
-            )
-        }
+        wordSetDao.getWordsInSet(setId).map { it.toDomain() }
 
     suspend fun getWordCountInSet(setId: Long): Int = wordSetDao.getWordCountInSet(setId)
 
@@ -90,23 +74,7 @@ class WordSetRepository @Inject constructor(
         val groups = sessionWords.mapNotNull { it.semanticGroup }.distinct()
         return groups.flatMap { group ->
             wordDao.getWordsBySemanticGroup(group, langPair, excludeIds, limitPerGroup)
-                .map { entity ->
-                    Word(
-                        id = entity.id,
-                        original = entity.original,
-                        translation = entity.translation,
-                        definition = entity.definition,
-                        example = entity.example,
-                        rarity = Rarity.valueOf(entity.rarity),
-                        languagePair = entity.languagePair,
-                        pos = entity.pos,
-                        semanticGroup = entity.semanticGroup,
-                        transliteration = entity.transliteration,
-                        definitionNative = entity.definitionNative,
-                        exampleNative = entity.exampleNative,
-                        isFillInBlankSafe = entity.isFillInBlankSafe,
-                    )
-                }
+                .map { it.toDomain() }
         }.distinctBy { it.id }
     }
 

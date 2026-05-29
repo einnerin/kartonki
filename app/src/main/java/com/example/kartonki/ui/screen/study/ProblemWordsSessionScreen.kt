@@ -111,11 +111,6 @@ fun ProblemWordsSessionScreen(
                         modifier = Modifier.align(Alignment.End).padding(end = 16.dp, top = 2.dp),
                     )
                     when (val step = uiState.currentStep) {
-                        is StudyStep.Introduction -> IntroductionContent(
-                            step = step,
-                            onContinue = { viewModel.onIntroductionContinue() },
-                            modifier = Modifier.fillMaxSize().padding(16.dp),
-                        )
                         is StudyStep.Quiz -> QuizContent(
                             step = step,
                             answerState = uiState.answerState,

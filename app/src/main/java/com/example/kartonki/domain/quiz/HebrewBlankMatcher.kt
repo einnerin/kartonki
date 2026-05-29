@@ -68,8 +68,19 @@ object HebrewBlankMatcher {
         // replaceFirst — if the original word appears multiple times in the example
         // (e.g. «לֹא, אֲנִי לֹא עָיֵף» — "no, I'm not tired"), we want exactly ONE
         // blank, not two.
+        //
+        // Word-bounded: the bare root must not sit inside a prefixed/inflected form.
+        // Without this, a nikud-aligned original like «כֶּלֶב» matches inside
+        // «הַכֶּלֶב» and leaves the article dangling next to the blank («הַ_____»),
+        // leaking a grammatical hint. When the strict hit isn't word-bounded we fall
+        // through to the prefix-aware path (step 2), which absorbs the prefix.
+        // Boundaries skip nikud marks, since a prefix letter (ה) and its vowel (ַ)
+        // sit between the prefix and the root.
         val firstIdx = example.indexOf(original)
-        if (firstIdx >= 0) {
+        if (firstIdx >= 0 &&
+            !hasHebrewLetterBefore(example, firstIdx) &&
+            !hasHebrewLetterAfter(example, firstIdx + original.length)
+        ) {
             return example.substring(0, firstIdx) + blank +
                 example.substring(firstIdx + original.length)
         }
@@ -147,6 +158,20 @@ object HebrewBlankMatcher {
 
     private val HEBREW_LETTER_RANGE = 'א'..'ת'
     private fun isHebrewLetter(c: Char): Boolean = c in HEBREW_LETTER_RANGE
+
+    /** True if a Hebrew letter sits immediately before [idx], skipping nikud marks. */
+    private fun hasHebrewLetterBefore(s: String, idx: Int): Boolean {
+        var i = idx - 1
+        while (i >= 0 && s[i] in NIKUD_RANGE) i--
+        return i >= 0 && isHebrewLetter(s[i])
+    }
+
+    /** True if a Hebrew letter sits immediately at/after [idx], skipping nikud marks. */
+    private fun hasHebrewLetterAfter(s: String, idx: Int): Boolean {
+        var i = idx
+        while (i < s.length && s[i] in NIKUD_RANGE) i++
+        return i < s.length && isHebrewLetter(s[i])
+    }
 
     /** Remove Hebrew nikud (vowel points) from a string. */
     private fun stripNikud(text: String): String {

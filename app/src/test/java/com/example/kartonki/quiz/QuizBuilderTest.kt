@@ -417,12 +417,41 @@ class QuizBuilderTest {
     }
 
     @Test fun `FILL_IN_BLANK english still uses strict replace (case-insensitive)`() {
-        // English path unchanged: case-insensitive substring replace.
+        // English path: whole-word, case-insensitive replace.
         val word = makeWord(1, original = "cookie",
             example = "I baked a Cookie for my daughter.")
         val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, fullWords + word)
-        assertTrue("Strict replace should swap 'Cookie' (case-insensitive)",
+        assertTrue("Whole-word replace should swap 'Cookie' (case-insensitive)",
             step.question.contains("_____"))
+    }
+
+    @Test fun `FILL_IN_BLANK does not match headword inside a longer word`() {
+        // "run" appears only inside "running" — a substring match would blank the
+        // middle of a word ("I love _____ning daily."). Word-bounded match must
+        // reject it and fall back to translation.
+        val word = makeWord(99, original = "run", example = "I love running daily.")
+        val allWords = listOf(word) + (1L..6L).map { makeWord(it) }
+        val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, allWords)
+        assertEquals("Substring 'run' inside 'running' must NOT make a blank — should fall back",
+            StudyQuizType.MULTIPLE_CHOICE_TRANSLATION, step.type)
+    }
+
+    @Test fun `FILL_IN_BLANK blanks a standalone headword`() {
+        val word = makeWord(99, original = "run", example = "I run every morning.")
+        val allWords = listOf(word) + (1L..6L).map { makeWord(it) }
+        val step = QuizBuilder.buildQuizStep(word, StudyQuizType.FILL_IN_BLANK, allWords)
+        assertEquals(StudyQuizType.FILL_IN_BLANK, step.type)
+        assertTrue("Standalone 'run' must be blanked", step.question.contains("_____"))
+    }
+
+    @Test fun `availableQuizTypesFor omits FILL_IN_BLANK when headword only appears inside a longer word`() {
+        // Guards the ProblemWords mastery deadlock: availableQuizTypesFor must not
+        // promise FILL_IN_BLANK when buildQuizStep would silently downgrade it.
+        val word = makeWord(99, original = "run", example = "I love running.", isFillInBlankSafe = true)
+        val allWords = listOf(word) + (1L..10L).map { makeWord(it) }
+        val types = QuizBuilder.availableQuizTypesFor(word, allWords)
+        assertFalse("FILL_IN_BLANK must not be 'available' when no standalone headword in example",
+            StudyQuizType.FILL_IN_BLANK in types)
     }
 
     @Test fun `FILL_IN_BLANK falls back when example empty`() {

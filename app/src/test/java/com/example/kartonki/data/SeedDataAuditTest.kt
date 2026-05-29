@@ -75,11 +75,12 @@ class SeedDataAuditTest {
 
     @Test fun `HE — all words have required base fields`() {
         // Known tech debt (audit 2026-04-23): ~84% of he-ru words are "skeleton"
-        // — only basic fields (original, translation, rarity, transliteration)
-        // are filled. Full population is Phase B (see rules-index.md#16b).
+        // — only basic fields (original, translation, rarity) are filled. Full
+        // population is Phase B (see rules-index.md#16b).
         //
-        // This test enforces only TRULY mandatory fields (Rule 16): translation,
-        // transliteration. Optional fields (definition/example/pos/semanticGroup)
+        // Transliteration is intentionally NOT required for Hebrew anymore
+        // (commit e224a66 — niqud + TTS cover pronunciation), so only translation
+        // is enforced here. Optional fields (definition/example/pos/semanticGroup)
         // are known to be incomplete and are tracked separately.
         val allHebrew = WordDataHebrew.words +
                 WordDataHebrewEveryday.words +
@@ -88,22 +89,25 @@ class SeedDataAuditTest {
         fail("Hebrew words missing required base fields", allHebrew.mapNotNull { w ->
             listOfNotNull(
                 if (w.translation.isBlank())    "Set ${w.setId} '${w.original}': blank translation" else null,
-                if (w.transliteration == null)  "Set ${w.setId} '${w.original}': null transliteration" else null,
             )
         }.flatten())
     }
 
     @Test fun `HE — FILL_IN_BLANK Hebrew example sentences contain the Hebrew word`() {
-        // Same architecture as EN test: skip isFillInBlankSafe=false words,
-        // which are explicitly excluded from FILL_IN_BLANK quiz.
+        // Validate with the SAME matcher the quiz uses at runtime
+        // ([HebrewBlankMatcher]) rather than a strict `contains` — Hebrew words
+        // legitimately appear with attached prefixes (ה/ב/ל/…) and varying nikud,
+        // which the matcher handles. A plain `contains` would flag working words
+        // as broken. Skip isFillInBlankSafe=false words (excluded from the quiz).
         val allHebrew = WordDataHebrew.words +
                 WordDataHebrewEveryday.words +
                 WordDataHebrewMore.words +
                 WordDataHebrewAdvanced.words
-        fail("Hebrew FILL_IN_BLANK broken — Hebrew word absent from Hebrew example",
+        fail("Hebrew FILL_IN_BLANK broken — Hebrew word not locatable in example",
             allHebrew.filter { w ->
                 w.isFillInBlankSafe && w.example != null &&
-                    !w.example.contains(w.original)
+                    com.example.kartonki.domain.quiz.HebrewBlankMatcher
+                        .replaceOriginalWithBlank(w.example, w.original) == null
             }.map { w -> "Set ${w.setId} '${w.original}': '${w.example}'" }
         )
     }

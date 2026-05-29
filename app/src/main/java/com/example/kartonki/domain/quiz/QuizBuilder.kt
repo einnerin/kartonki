@@ -73,12 +73,45 @@ object QuizBuilder {
             // generic examples); same-semanticGroup ambiguity is handled by
             // fillInBlankExclusions at distractor-pick time.
             // See docs/claude/fill-in-blank-pipeline.md.
-            if (word.example != null && word.isFillInBlankSafe && allWords.size >= 4) {
+            //
+            // blankSentenceFor != null is the key guard: only promise FILL_IN_BLANK
+            // when the headword can actually be located in the example. Otherwise
+            // buildQuizStep would silently downgrade to MULTIPLE_CHOICE_TRANSLATION,
+            // and ProblemWords mastery (which caps its distinct-type threshold at
+            // this set's size) could wedge — the word would never reach a threshold
+            // it can't physically answer.
+            if (word.isFillInBlankSafe && allWords.size >= 4 && blankSentenceFor(word) != null) {
                 available.add(StudyQuizType.FILL_IN_BLANK)
             }
         }
 
         return available
+    }
+
+    /**
+     * Renders [word]'s example with the headword replaced by a blank, or null if
+     * the headword cannot be located in the example (so FILL_IN_BLANK isn't viable).
+     *
+     * Hebrew uses the prefix-aware matcher (handles ה/ב/ל/מ/כ/ו/ש attached to the
+     * root); other languages use a whole-word, case-insensitive match — word-bounded
+     * via Unicode-letter lookarounds so e.g. "run" does NOT match inside "running"
+     * (which would otherwise blank the middle of a longer word).
+     *
+     * The single source of truth for both [availableQuizTypesFor] and [buildQuizStep],
+     * so "available" never disagrees with what build can actually produce.
+     */
+    internal fun blankSentenceFor(word: Word): String? {
+        val raw = word.example ?: return null
+        return if (word.languagePair == "he-ru") {
+            HebrewBlankMatcher.replaceOriginalWithBlank(raw, word.original)
+        } else {
+            // (?<!\p{L}) / (?!\p{L}) — not preceded/followed by a letter, i.e. a
+            // standalone word. find()/first match → exactly ONE blank even if the
+            // headword appears multiple times in the example.
+            val pat = Regex("(?<!\\p{L})" + Regex.escape(word.original) + "(?!\\p{L})", RegexOption.IGNORE_CASE)
+            val match = pat.find(raw) ?: return null
+            raw.substring(0, match.range.first) + "_____" + raw.substring(match.range.last + 1)
+        }
     }
 
     // internal = accessible from the test source-set (same module) but not from outside the module
@@ -162,21 +195,8 @@ object QuizBuilder {
                     correctAnswer = word.original)
             }
             StudyQuizType.FILL_IN_BLANK -> {
-                val raw = word.example!!
-                // Hebrew uses prefix-aware matcher (handles ה/ב/ל/מ/כ/ו/ש attached
-                // to the root); other languages use strict case-insensitive replace.
-                val sentence = if (word.languagePair == "he-ru") {
-                    HebrewBlankMatcher.replaceOriginalWithBlank(raw, word.original)
-                        ?: return fallbackTranslation(word, distractorPool)
-                } else {
-                    // replaceFirst — if the original appears multiple times in the
-                    // example (rare for en-ru but possible: «I run because running
-                    // helps me» for original "run"), we want exactly ONE blank.
-                    val pat = Regex(Regex.escape(word.original), RegexOption.IGNORE_CASE)
-                    val match = pat.find(raw) ?: return fallbackTranslation(word, distractorPool)
-                    raw.substring(0, match.range.first) + "_____" +
-                        raw.substring(match.range.last + 1)
-                }
+                val sentence = blankSentenceFor(word)
+                    ?: return fallbackTranslation(word, distractorPool)
                 val fillBlankDistractors = pickDistractors(word, distractorPool, forFillInBlank = true)
                 val wrongs = uniqueDistractorTexts(
                     fillBlankDistractors, correct = word.original, count = 3,

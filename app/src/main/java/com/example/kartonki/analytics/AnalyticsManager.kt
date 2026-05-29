@@ -2,6 +2,7 @@ package com.example.kartonki.analytics
 
 import android.os.Bundle
 import android.util.Log
+import com.example.kartonki.BuildConfig
 import com.google.firebase.analytics.FirebaseAnalytics
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -66,7 +67,9 @@ class FirebaseAnalyticsManager @Inject constructor(
 
     companion object {
         private const val TAG = "Analytics"
-        private const val DEBUG_LOG = true  // видно в Logcat при разработке
+        // Только в debug-сборке. В release нельзя сыпать имена событий, user
+        // properties и userId в Logcat (видно любому с READ_LOGS/adb).
+        private val DEBUG_LOG = BuildConfig.DEBUG
     }
 }
 

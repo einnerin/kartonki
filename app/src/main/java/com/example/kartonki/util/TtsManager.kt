@@ -15,12 +15,20 @@ class TtsManager @Inject constructor(
     @Volatile private var isReady = false
 
     init {
+        initEngine()
+    }
+
+    private fun initEngine() {
         tts = TextToSpeech(context) { status ->
             isReady = status == TextToSpeech.SUCCESS
         }
     }
 
     fun speak(text: String, languagePair: String) {
+        // Lazily re-create the engine if it was released (e.g. the Activity finished
+        // and was relaunched within the same process — this is a process-lifetime
+        // @Singleton, so [shutdown] doesn't permanently break playback).
+        if (tts == null) initEngine()
         if (!isReady) return
         val engine = tts ?: return
         val locale = localeFor(languagePair)
@@ -35,5 +43,13 @@ class TtsManager @Inject constructor(
     private fun localeFor(languagePair: String): Locale = when {
         languagePair.startsWith("he") -> Locale("he", "IL")
         else -> Locale.US
+    }
+
+    /** Releases the native TTS engine. Call when the app is finishing. */
+    fun shutdown() {
+        tts?.stop()
+        tts?.shutdown()
+        tts = null
+        isReady = false
     }
 }

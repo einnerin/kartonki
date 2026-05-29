@@ -348,7 +348,12 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any?>) {
         "is_fatal" to isFatal,
     ))
 
-    /** Маркер включения tester-mode. Также вызывает setUserId("tester"). */
+    /**
+     * Маркер включения tester-mode (скелет — пока нигде не логируется).
+     * Сама атрибуция tester'а делается через user_id="tester" в
+     * [com.example.kartonki.KartonkiApplication.initAnalytics] при старте приложения,
+     * а не этим событием.
+     */
     object TesterModeEnabled : AnalyticsEvent("tester_mode_enabled", emptyMap())
 }
 

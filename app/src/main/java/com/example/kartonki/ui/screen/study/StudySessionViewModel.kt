@@ -109,8 +109,6 @@ class StudySessionViewModel @Inject constructor(
         }
     }
 
-    fun onIntroductionContinue() = advanceStep()
-
     fun onMultipleChoiceAnswer(selected: String) {
         val step = _uiState.value.currentStep as? StudyStep.Quiz ?: return
         if (_uiState.value.answerState != AnswerState.Unanswered) return
@@ -177,7 +175,6 @@ class StudySessionViewModel @Inject constructor(
     private fun logWordSeenIfNew() {
         val step = _uiState.value.currentStep ?: return
         val word = when (step) {
-            is StudyStep.Introduction -> step.word
             is StudyStep.Quiz -> step.word
         }
         currentStepShownAtMs = System.currentTimeMillis()

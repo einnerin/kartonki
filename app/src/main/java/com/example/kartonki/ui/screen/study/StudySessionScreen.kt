@@ -48,7 +48,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.domain.model.StudyQuizType
 import com.example.kartonki.domain.model.StudyStep
-import com.example.kartonki.ui.component.WordCard
 import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.LocalTtsManager
 
@@ -116,14 +115,6 @@ fun StudySessionScreen(
                     // pass, while weight(1f) cleanly takes the space remaining
                     // after the progress bar and counter.
                     when (val step = uiState.currentStep) {
-                        is StudyStep.Introduction -> IntroductionContent(
-                            step = step,
-                            onContinue = { viewModel.onIntroductionContinue() },
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .weight(1f)
-                                .padding(16.dp),
-                        )
                         is StudyStep.Quiz -> QuizContent(
                             step = step,
                             answerState = uiState.answerState,
@@ -138,31 +129,6 @@ fun StudySessionScreen(
                     }
                 }
             }
-        }
-    }
-}
-
-@Composable
-internal fun IntroductionContent(
-    step: StudyStep.Introduction,
-    onContinue: () -> Unit,
-    modifier: Modifier = Modifier,
-) {
-    val s = LocalAppStrings.current
-    Column(
-        modifier = modifier.verticalScroll(rememberScrollState()),
-        verticalArrangement = Arrangement.spacedBy(16.dp),
-    ) {
-        Text(
-            text = s.studyNewWord,
-            style = MaterialTheme.typography.labelLarge,
-            color = MaterialTheme.colorScheme.primary,
-            fontWeight = FontWeight.SemiBold,
-        )
-        WordCard(word = step.word)
-        Spacer(Modifier.weight(1f))
-        Button(onClick = onContinue, modifier = Modifier.fillMaxWidth()) {
-            Text(s.studyGotIt)
         }
     }
 }
