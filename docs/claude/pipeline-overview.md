@@ -75,7 +75,7 @@
   ↓
 6. Skill прогоняет FILL_IN_BLANK pipeline (LLM-augmented для нюансов)
   ↓
-7. validate_all.sh × 5 setIds → 21 проверка зелёные
+7. validate_all.sh × 5 setIds → 20 проверок зелёные
   ↓
 8. WordDataVersion bump + регистрация в WordRegistry
   ↓
@@ -141,7 +141,7 @@ git commit → pre-commit hook → push
 | Preset PvP колоды | [`preset-decks.md`](preset-decks.md) |
 | Новый язык (fr-ru, ar-ru) | [`new-language.md`](new-language.md) |
 | Запустить один валидатор | `bash scripts/validate/validate_<name>.sh <setId>` |
-| Запустить все 21 проверки | `bash scripts/validate/validate_all.sh <setId>` |
+| Запустить все 20 проверок | `bash scripts/validate/validate_all.sh <setId>` |
 | Полный аудит базы | `bash scripts/validate/audit_all_files.sh` (~15 мин) |
 | Структура файла данных | `app/src/main/java/com/example/kartonki/data/WordData*.kt` |
 

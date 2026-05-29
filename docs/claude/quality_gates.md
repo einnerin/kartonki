@@ -32,7 +32,7 @@ bash scripts/install-hooks.sh
 ```bash
 bash scripts/validate/validate_all.sh 262
 ```
-Прогоняет все 21 валидатор. Exit 0 = всё хорошо, exit 1 = есть блокирующие нарушения.
+Прогоняет все 20 валидаторов. Exit 0 = всё хорошо, exit 1 = есть блокирующие нарушения.
 
 **Вся база:**
 ```bash
