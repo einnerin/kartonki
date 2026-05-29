@@ -34,7 +34,7 @@ object WordDataHebrewMore {
 
         WordEntity(
             id = 100901, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "ir",
+            pos = "noun", semanticGroup = "city",
             original = "עִיר", translation = "город",
             definition = "יִשּׁוּב גָּדוֹל עִם אוֹכְלוֹסִיָּה רַבָּה.",
             definitionNative = "Крупный населённый пункт с большим количеством жителей.",
@@ -43,7 +43,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100921L)),
         WordEntity(
             id = 100902, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "kikar",
+            pos = "noun", semanticGroup = "city",
             original = "כִּכָּר", translation = "площадь",
             definition = "מָקוֹם פָּתוּחַ רָחָב בְּמֶרְכַּז הָעִיר.",
             definitionNative = "Открытое широкое пространство в центре города.",
@@ -52,7 +52,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100906L, 100921L)),
         WordEntity(
             id = 100903, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "park",
+            pos = "noun", semanticGroup = "city",
             original = "פַּרְק", translation = "парк",
             definition = "שֶׁטַח יָרֹק בָּעִיר לְנוֹפֵשׁ וּלְטִיּוּל.",
             definitionNative = "Зелёная зона в городе для отдыха и прогулок.",
@@ -61,7 +61,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100914L, 100916L, 100918L)),
         WordEntity(
             id = 100904, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "beit kholim",
+            pos = "noun", semanticGroup = "city",
             original = "בֵּית חוֹלִים", translation = "больница",
             definition = "מוֹסָד רְפוּאִי לְטִפּוּל בַּחוֹלִים.",
             definitionNative = "Медицинское учреждение для лечения больных.",
@@ -70,7 +70,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100905L, 100907L, 100908L, 100909L, 100910L, 100911L, 100912L, 100913L, 100922L, 100923L, 100924L)),
         WordEntity(
             id = 100905, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "beit sefer",
+            pos = "noun", semanticGroup = "city",
             original = "בֵּית סֵפֶר", translation = "школа",
             definition = "מוֹסָד חִינּוּכִי לִילָדִים.",
             definitionNative = "Образовательное учреждение для детей.",
@@ -79,7 +79,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 100906, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "universita",
+            pos = "noun", semanticGroup = "city",
             original = "אוּנִיבֶרְסִיטָה", translation = "университет",
             definition = "מוֹסָד לְהַשְׂכָּלָה גְּבוֹהָה.",
             definitionNative = "Учреждение высшего образования.",
@@ -88,7 +88,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100905L)),
         WordEntity(
             id = 100907, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "bank",
+            pos = "noun", semanticGroup = "city",
             original = "בַּנְק", translation = "банк",
             definition = "מוֹסָד פִּינַנְסִי לְשִׁמּוּר כֶּסֶף וּמַתַּן הַלְוָאוֹת.",
             definitionNative = "Финансовое учреждение для хранения денег и выдачи кредитов.",
@@ -97,7 +97,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100904L, 100905L, 100908L, 100909L, 100910L, 100923L, 100925L)),
         WordEntity(
             id = 100908, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "do'ar",
+            pos = "noun", semanticGroup = "city",
             original = "דֹּאַר", translation = "почта",
             definition = "שֵׁרוּת לְמִשְׁלוֹחַ מִכְתָּבִים וְחֲבִילוֹת.",
             definitionNative = "Служба для отправки писем и посылок.",
@@ -106,7 +106,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 100909, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "beit kafe",
+            pos = "noun", semanticGroup = "city",
             original = "בֵּית קָפֶה", translation = "кафе",
             definition = "מָקוֹם לִשְׁתּוֹת קָפֶה וְלֶאֱכֹל.",
             definitionNative = "Заведение для питья кофе и еды.",
@@ -115,7 +115,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100903L, 100910L, 100914L)),
         WordEntity(
             id = 100910, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "malon",
+            pos = "noun", semanticGroup = "city",
             original = "מָלוֹן", translation = "гостиница",
             definition = "מָקוֹם לִינָה לְאוֹרְחִים וְתַיָּרִים.",
             definitionNative = "Место для ночлега гостей и туристов.",
@@ -124,7 +124,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100903L, 100909L, 100911L, 100913L, 100916L, 100922L, 100924L)),
         WordEntity(
             id = 100911, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "muze'on",
+            pos = "noun", semanticGroup = "city",
             original = "מוּזֵיאוֹן", translation = "музей",
             definition = "מוֹסָד לְשִׁמּוּר וְהַצָּגַת אוֹצְרוֹת תַּרְבּוּתִיִּים.",
             definitionNative = "Учреждение для хранения и демонстрации культурных ценностей.",
@@ -133,7 +133,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100907L, 100908L, 100913L)),
         WordEntity(
             id = 100912, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "sinema",
+            pos = "noun", semanticGroup = "city",
             original = "סִינֶמָה", translation = "кинотеатр",
             definition = "מָקוֹם לְצַפּוֹת בְּסַרְטֵי קוֹלְנוֹעַ.",
             definitionNative = "Место для просмотра кинофильмов.",
@@ -142,7 +142,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 100913, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "te'atron",
+            pos = "noun", semanticGroup = "city",
             original = "תֵּיאַטְרוֹן", translation = "театр",
             definition = "מָקוֹם לְהַצָּגוֹת בָּמָה וּמוּסִיקָה.",
             definitionNative = "Место для театральных и музыкальных представлений.",
@@ -151,7 +151,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 100914, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "gan",
+            pos = "noun", semanticGroup = "city",
             original = "גַּן", translation = "сад",
             definition = "שֶׁטַח שְׁתוּל צְמָחִים וּפְרָחִים.",
             definitionNative = "Участок, засаженный растениями и цветами.",
@@ -160,7 +160,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100903L, 100909L, 100913L, 100916L, 100917L, 100918L, 100919L, 100922L)),
         WordEntity(
             id = 100915, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "breikha",
+            pos = "noun", semanticGroup = "city",
             original = "בְּרֵכָה", translation = "бассейн",
             definition = "מִבְנֶה מָלֵא מַיִם לְשִׁחִיָּה.",
             definitionNative = "Сооружение с водой для плавания.",
@@ -169,7 +169,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100916L, 100919L)),
         WordEntity(
             id = 100916, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "khof",
+            pos = "noun", semanticGroup = "city",
             original = "חוֹף", translation = "пляж / берег",
             definition = "שֶׁטַח חוֹל בְּצַד הַיָּם.",
             definitionNative = "Песчаная полоса у моря.",
@@ -178,7 +178,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100903L, 100910L, 100914L, 100915L, 100917L, 100918L, 100919L, 100924L)),
         WordEntity(
             id = 100917, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "har",
+            pos = "noun", semanticGroup = "city",
             original = "הַר", translation = "гора",
             definition = "גּוּף אֶרֶץ גָּבוֹהַּ בּוֹלֵט.",
             definitionNative = "Высокое возвышение земной поверхности.",
@@ -187,7 +187,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 100918, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "ya'ar",
+            pos = "noun", semanticGroup = "city",
             original = "יַעַר", translation = "лес",
             definition = "שֶׁטַח גָּדוֹל מְכֻסֶּה עֵצִים.",
             definitionNative = "Большая территория, покрытая деревьями.",
@@ -196,7 +196,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 100919, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "nahar",
+            pos = "noun", semanticGroup = "city",
             original = "נָהָר", translation = "река",
             definition = "זֶרֶם מַיִם טִבְעִי הַזּוֹרֵם בָּאָרֶץ.",
             definitionNative = "Естественный водный поток, текущий по земле.",
@@ -205,7 +205,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 100920, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "kfar",
+            pos = "noun", semanticGroup = "city",
             original = "כְּפָר", translation = "деревня",
             definition = "יִשּׁוּב קָטָן בַּכְּפַר.",
             definitionNative = "Небольшой населённый пункт в сельской местности.",
@@ -214,7 +214,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 100921, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "shkhu​na",
+            pos = "noun", semanticGroup = "city",
             original = "שְׁכוּנָה", translation = "район",
             definition = "אֵזוֹר מוּגְדָּר בָּעִיר.",
             definitionNative = "Определённая часть города.",
@@ -223,7 +223,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100901L)),
         WordEntity(
             id = 100922, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "beit kneset",
+            pos = "noun", semanticGroup = "city",
             original = "בֵּית כְּנֶסֶת", translation = "синагога",
             definition = "מָקוֹם תְּפִלָּה לַיְּהוּדִים.",
             definitionNative = "Место молитвы для евреев.",
@@ -232,7 +232,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100904L, 100905L, 100909L, 100910L, 100911L, 100913L)),
         WordEntity(
             id = 100923, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "supermarket",
+            pos = "noun", semanticGroup = "city",
             original = "סוּפֶּרְמַרְקֵט", translation = "супермаркет",
             definition = "חֲנוּת גְּדוֹלָה לְמִכְלָאוֹת וּמַצְרְכֵי יוֹם-יוֹם.",
             definitionNative = "Большой магазин продуктов и товаров повседневного спроса.",
@@ -241,7 +241,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(100903L, 100904L, 100905L, 100907L, 100908L, 100909L, 100910L, 100911L, 100913L, 100914L, 100922L, 100924L)),
         WordEntity(
             id = 100924, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "gan khayot",
+            pos = "noun", semanticGroup = "city",
             original = "גַּן חַיּוֹת", translation = "зоопарк",
             definition = "מָקוֹם שֶׁבּוֹ מַחֲזִיקִים חַיּוֹת לְתַצּוּגָה.",
             definitionNative = "Место, где содержат животных для показа.",
@@ -255,7 +255,7 @@ object WordDataHebrewMore {
 
         WordEntity(
             id = 101001, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "beged",
+            pos = "noun", semanticGroup = "clothing",
             original = "בֶּגֶד", translation = "одежда",
             definition = "לְבוּשׁ כְּלָלִי הַמְּכַסֶּה אֶת הַגּוּף.",
             definitionNative = "Общее обозначение одежды, покрывающей тело.",
@@ -264,7 +264,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101006L, 101007L, 101009L, 101010L, 101023L, 101025L)),
         WordEntity(
             id = 101002, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "khultsa",
+            pos = "noun", semanticGroup = "clothing",
             original = "חֻלְצָה", translation = "рубашка / футболка",
             definition = "בֶּגֶד עֶלְיוֹן לְחֵלֶק הָעֶלְיוֹן שֶׁל הַגּוּף.",
             definitionNative = "Верхняя одежда для верхней части тела.",
@@ -273,7 +273,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101004L, 101005L, 101008L, 101012L, 101014L, 101018L, 101019L)),
         WordEntity(
             id = 101003, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "mikhnasayim",
+            pos = "noun", semanticGroup = "clothing",
             original = "מִכְנָסַיִם", translation = "брюки / штаны",
             definition = "בֶּגֶד לְחֵלֶק הַתַּחְתּוֹן שֶׁל הַגּוּף עִם שְׁתֵּי רַגְלַיִם.",
             definitionNative = "Одежда для нижней части тела с двумя штанинами.",
@@ -282,7 +282,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101015L, 101024L)),
         WordEntity(
             id = 101004, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "simla",
+            pos = "noun", semanticGroup = "clothing",
             original = "שִׂמְלָה", translation = "платье",
             definition = "בֶּגֶד לְנָשִׁים הַמְּכַסֶּה מֵהַכֶּתֶף עַד לְמַטָּה.",
             definitionNative = "Женская одежда, покрывающая от плеча и вниз.",
@@ -291,7 +291,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101002L, 101005L, 101008L, 101012L, 101014L, 101018L, 101019L)),
         WordEntity(
             id = 101005, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "khatsa'it",
+            pos = "noun", semanticGroup = "clothing",
             original = "חֲצָאִית", translation = "юбка",
             definition = "בֶּגֶד לְנָשִׁים לְחֵלֶק הַתַּחְתּוֹן.",
             definitionNative = "Женская одежда для нижней части тела.",
@@ -300,7 +300,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101002L, 101004L, 101012L, 101014L, 101019L)),
         WordEntity(
             id = 101006, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "me'il",
+            pos = "noun", semanticGroup = "clothing",
             original = "מְעִיל", translation = "пальто / куртка",
             definition = "בֶּגֶד חִיצוֹנִי חַם לִזְמַן קַר.",
             definitionNative = "Верхняя тёплая одежда для холодной погоды.",
@@ -309,7 +309,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101001L, 101002L, 101003L, 101004L, 101007L, 101009L, 101010L, 101011L, 101012L, 101024L, 101025L)),
         WordEntity(
             id = 101007, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "gerev",
+            pos = "noun", semanticGroup = "clothing",
             original = "גֶּרֶב", translation = "носок",
             definition = "כִּיסּוּי לְרֶגֶל הַמּוּכְנָס לַנַּעַל.",
             definitionNative = "Покрытие для ноги, надеваемое под обувь.",
@@ -318,7 +318,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101008, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "na'al",
+            pos = "noun", semanticGroup = "clothing",
             original = "נַעַל", translation = "туфля / обувь",
             definition = "כִּיסּוּי לְרֶגֶל מֵחוֹמֶר קָשֶׁה.",
             definitionNative = "Жёсткое покрытие для ноги.",
@@ -327,7 +327,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101018L, 101019L)),
         WordEntity(
             id = 101009, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "kova",
+            pos = "noun", semanticGroup = "clothing",
             original = "כּוֹבַע", translation = "шапка / шляпа",
             definition = "כִּיסּוּי לָרֹאשׁ.",
             definitionNative = "Покрытие для головы.",
@@ -336,7 +336,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101001L, 101002L, 101003L, 101004L, 101005L, 101007L, 101008L, 101013L, 101014L, 101015L, 101018L, 101019L, 101024L, 101025L)),
         WordEntity(
             id = 101010, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "tsa'if",
+            pos = "noun", semanticGroup = "clothing",
             original = "צַעִיף", translation = "шарф",
             definition = "בַּד אָרֹךְ לְכִיסּוּי הַצַּוָּאר בַּחֹרֶף.",
             definitionNative = "Длинная ткань для обёртывания шеи зимой.",
@@ -345,7 +345,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101001L, 101002L, 101003L, 101006L, 101007L, 101009L, 101011L, 101012L, 101025L)),
         WordEntity(
             id = 101011, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "kfafot",
+            pos = "noun", semanticGroup = "clothing",
             original = "כְּפָפוֹת", translation = "перчатки",
             definition = "כִּיסּוּי לַיָּדַיִם מִפְּנֵי הַקּוֹר.",
             definitionNative = "Покрытие для рук от холода.",
@@ -354,7 +354,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101012, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "pijama",
+            pos = "noun", semanticGroup = "clothing",
             original = "פִּיגַ'מָה", translation = "пижама",
             definition = "בֶּגֶד שֵׁנָה רָפוּי לְלַיְלָה.",
             definitionNative = "Свободная одежда для сна.",
@@ -363,7 +363,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101001L, 101002L, 101003L, 101007L, 101009L, 101025L)),
         WordEntity(
             id = 101013, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "khagur",
+            pos = "noun", semanticGroup = "clothing",
             original = "חָגוֹר", translation = "ремень / пояс",
             definition = "רְצוּעָה לְהַדְּקַת הַמִּכְנָסַיִם.",
             definitionNative = "Кожаная или тканевая полоса вокруг талии, чтобы брюки не сползали.",
@@ -372,7 +372,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101014, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "aniva",
+            pos = "noun", semanticGroup = "clothing",
             original = "עֲנִיבָה", translation = "галстук",
             definition = "בַּד אָרֹךְ קָשׁוּר סְבִיב הַצַּוָּאר.",
             definitionNative = "Длинная ткань, завязанная вокруг шеи.",
@@ -381,7 +381,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101001L, 101002L, 101003L, 101004L, 101005L, 101006L, 101008L, 101009L, 101018L, 101019L, 101024L, 101025L)),
         WordEntity(
             id = 101015, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "mishkafayim",
+            pos = "noun", semanticGroup = "clothing",
             original = "מִשְׁקָפַיִם", translation = "очки",
             definition = "עֲדָשׁוֹת בְּמַסְגֶּרֶת לְשִׁפּוּר הָרְאִיָּה.",
             definitionNative = "Линзы в оправе для улучшения зрения.",
@@ -390,7 +390,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101016, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "tik",
+            pos = "noun", semanticGroup = "clothing",
             original = "תַּיִק", translation = "сумка / рюкзак",
             definition = "כֵּלִי לְנִשּׂוּא חֲפָצִים אִישִׁיִּים.",
             definitionNative = "Ёмкость для переноски личных вещей.",
@@ -399,7 +399,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101017, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "arnak",
+            pos = "noun", semanticGroup = "clothing",
             original = "אַרְנָק", translation = "кошелёк",
             definition = "תִּיק קָטָן לְכֶסֶף וְכַרְטִיסֵי אַשְׁרַאי.",
             definitionNative = "Маленькая сумка для денег и карточек.",
@@ -408,7 +408,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101018, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "taba'at",
+            pos = "noun", semanticGroup = "clothing",
             original = "טַבַּעַת", translation = "кольцо",
             definition = "תַּכְשִׁיט עָגוֹל הַמּוּכְנָס לָאֶצְבַּע.",
             definitionNative = "Круглое украшение, надеваемое на палец.",
@@ -417,7 +417,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101001L, 101002L, 101004L, 101005L, 101008L, 101009L, 101010L, 101014L, 101019L, 101024L, 101025L)),
         WordEntity(
             id = 101019, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "sharsheret",
+            pos = "noun", semanticGroup = "clothing",
             original = "שַׁרְשֶׁרֶת", translation = "цепочка / ожерелье",
             definition = "תַּכְשִׁיט הַמּוּכְנָס סְבִיב הַצַּוָּאר.",
             definitionNative = "Украшение, надеваемое вокруг шеи.",
@@ -426,7 +426,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101001L, 101002L, 101004L, 101005L, 101006L, 101009L, 101010L, 101014L, 101018L, 101024L, 101025L)),
         WordEntity(
             id = 101020, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "clothing", transliteration = "lavash",
+            pos = "verb", semanticGroup = "clothing",
             original = "לָבַשׁ", translation = "надеть / носить",
             definition = "לְהַלְבִּישׁ בֶּגֶד עַל הַגּוּף.",
             definitionNative = "Облачиться в рубашку, штаны или куртку — например, выходя утром из дома.",
@@ -435,7 +435,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101021, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "clothing", transliteration = "pashat",
+            pos = "verb", semanticGroup = "clothing",
             original = "פָּשַׁט", translation = "снять (одежду)",
             definition = "לְהָסִיר בֶּגֶד מֵהַגּוּף.",
             definitionNative = "Стянуть с себя рубашку, штаны или куртку — например, вернувшись домой.",
@@ -444,7 +444,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101022, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "kvisa",
+            pos = "noun", semanticGroup = "clothing",
             original = "כְּבִיסָה", translation = "стирка / бельё",
             definition = "פְּעוּלַּת כִּיבּוּס בְּגָדִים.",
             definitionNative = "Процесс стирки одежды.",
@@ -453,7 +453,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101023, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "bad",
+            pos = "noun", semanticGroup = "clothing",
             original = "בַּד", translation = "ткань / материал",
             definition = "חֹמֶר גֶּלֶם לְיִצּוּר בְּגָדִים.",
             definitionNative = "Сырьё для изготовления одежды.",
@@ -462,7 +462,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101024, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "madim",
+            pos = "noun", semanticGroup = "clothing",
             original = "מַדִּים", translation = "форма / мундир",
             definition = "בְּגָדִים אֲחִידִים הַנִּלְבָּשִׁים בִּידֵי אֲנָשֵׁי מִקְצוֹעַ.",
             definitionNative = "Единообразная одежда, носимая представителями профессии.",
@@ -476,7 +476,7 @@ object WordDataHebrewMore {
 
         WordEntity(
             id = 101101, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "mezeg avir",
+            pos = "noun", semanticGroup = "weather",
             original = "מֶזֶג אֲוִיר", translation = "погода",
             definition = "מַצַּב הָאֲוִיר הָאַטְמוֹסְפֵרִי בָּאֵזוֹר.",
             definitionNative = "Состояние атмосферного воздуха в данном районе.",
@@ -485,7 +485,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101102L, 101112L, 101113L, 101114L, 101115L, 101116L, 101123L)),
         WordEntity(
             id = 101102, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "shemesh",
+            pos = "noun", semanticGroup = "weather",
             original = "שֶׁמֶשׁ", translation = "солнце",
             definition = "כּוֹכַב הָאוֹר הַמֵּאִיר אֶת כַּדּוּר הָאָרֶץ.",
             definitionNative = "Звезда, освещающая Землю.",
@@ -494,7 +494,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101103, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "geshem",
+            pos = "noun", semanticGroup = "weather",
             original = "גֶּשֶׁם", translation = "дождь",
             definition = "מַיִם הַנּוֹפְלִים מֵהַשָּׁמַיִם.",
             definitionNative = "Вода, падающая с неба.",
@@ -503,7 +503,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101104L, 101106L, 101109L, 101110L, 101118L)),
         WordEntity(
             id = 101104, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "sheleg",
+            pos = "noun", semanticGroup = "weather",
             original = "שֶׁלֶג", translation = "снег",
             definition = "גְּבִישֵׁי קֶרַח לְבָנִים הַנּוֹפְלִים מֵהַשָּׁמַיִם.",
             definitionNative = "Белые ледяные кристаллы, падающие с неба.",
@@ -512,7 +512,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101103L)),
         WordEntity(
             id = 101105, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "ru'akh",
+            pos = "noun", semanticGroup = "weather",
             original = "רוּחַ", translation = "ветер",
             definition = "תְּנוּעַת אֲוִיר אֶת הָרוּחַ.",
             definitionNative = "Движение воздуха.",
@@ -521,7 +521,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101106, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "anan",
+            pos = "noun", semanticGroup = "weather",
             original = "עָנָן", translation = "облако / туча",
             definition = "הִצְטַבְּרוּת אֵדֵי מַיִם בָּאֲוִיר.",
             definitionNative = "Скопление водяных паров в воздухе.",
@@ -530,7 +530,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101109L)),
         WordEntity(
             id = 101107, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adjective", semanticGroup = "weather", transliteration = "kham",
+            pos = "adjective", semanticGroup = "weather",
             original = "חַם", translation = "жарко / горячий",
             definition = "בַּעַל טֶמְפֶּרָטוּרָה גְּבוֹהָה.",
             definitionNative = "Имеющий высокую температуру.",
@@ -539,7 +539,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101108L)),
         WordEntity(
             id = 101108, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adjective", semanticGroup = "weather", transliteration = "kar",
+            pos = "adjective", semanticGroup = "weather",
             original = "קַר", translation = "холодно / холодный",
             definition = "בַּעַל טֶמְפֶּרָטוּרָה נְמוּכָה.",
             definitionNative = "Имеющий низкую температуру.",
@@ -548,7 +548,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101107L)),
         WordEntity(
             id = 101109, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "barak",
+            pos = "noun", semanticGroup = "weather",
             original = "בָּרָק", translation = "молния",
             definition = "פְּרִיקַת חַשְׁמַל אַטְמוֹסְפֵרִית.",
             definitionNative = "Атмосферный электрический разряд.",
@@ -557,7 +557,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101102L, 101106L, 101111L, 101121L)),
         WordEntity(
             id = 101110, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "ra'am",
+            pos = "noun", semanticGroup = "weather",
             original = "רַעַם", translation = "гром",
             definition = "קוֹל חָזָק בָּאֲוִיר הַנּוֹבֵעַ מִבָּרָק.",
             definitionNative = "Громкий звук в атмосфере, вызванный молнией.",
@@ -566,7 +566,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101103L)),
         WordEntity(
             id = 101111, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "keshet",
+            pos = "noun", semanticGroup = "weather",
             original = "קֶשֶׁת", translation = "радуга",
             definition = "קַו צִבְעוֹנִי מְעֻגָּל בַּשָּׁמַיִם אַחֲרֵי גֶּשֶׁם.",
             definitionNative = "Дуга цветов на небе после дождя.",
@@ -575,7 +575,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101102L)),
         WordEntity(
             id = 101112, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "ona",
+            pos = "noun", semanticGroup = "weather",
             original = "עוֹנָה", translation = "сезон / время года",
             definition = "אַחַת מֵאַרְבַּע תְּקוּפוֹת הַשָּׁנָה.",
             definitionNative = "Одно из четырёх времён года.",
@@ -584,7 +584,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101113, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "aviv",
+            pos = "noun", semanticGroup = "weather",
             original = "אָבִיב", translation = "весна",
             definition = "הָעוֹנָה שֶׁבָּהּ הַטֶּבַע מִתְחַדֵּשׁ.",
             definitionNative = "Сезон, когда природа обновляется.",
@@ -593,7 +593,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101114L, 101115L, 101116L)),
         WordEntity(
             id = 101114, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "kayits",
+            pos = "noun", semanticGroup = "weather",
             original = "קַיִץ", translation = "лето",
             definition = "הָעוֹנָה הַחַמָּה בְּשָׁנָה.",
             definitionNative = "Жаркий сезон года.",
@@ -602,7 +602,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101113L, 101115L, 101116L)),
         WordEntity(
             id = 101115, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "stav",
+            pos = "noun", semanticGroup = "weather",
             original = "סְתָיו", translation = "осень",
             definition = "הָעוֹנָה שֶׁבָּהּ הֶעָלִים נוֹשְׁרִים.",
             definitionNative = "Сезон, когда опадают листья.",
@@ -611,7 +611,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101113L, 101114L, 101116L)),
         WordEntity(
             id = 101116, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "khoref",
+            pos = "noun", semanticGroup = "weather",
             original = "חֹרֶף", translation = "зима",
             definition = "הָעוֹנָה הַקָּרָה בְּשָׁנָה.",
             definitionNative = "Холодный сезон года.",
@@ -620,7 +620,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101113L, 101114L, 101115L)),
         WordEntity(
             id = 101117, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "temperatura",
+            pos = "noun", semanticGroup = "weather",
             original = "טֶמְפֶּרָטוּרָה", translation = "температура",
             definition = "מִדַּת הַחֹם.",
             definitionNative = "Мера теплоты.",
@@ -629,7 +629,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101118, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "arafel",
+            pos = "noun", semanticGroup = "weather",
             original = "עֲרָפֶל", translation = "туман",
             definition = "שְׁכָבָה צְפוּפָה שֶׁל אֵדֵי מַיִם בַּאֲוִיר.",
             definitionNative = "Плотный слой водяных паров в воздухе.",
@@ -638,7 +638,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101104L, 101106L)),
         WordEntity(
             id = 101119, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "shimshiya",
+            pos = "noun", semanticGroup = "weather",
             original = "שִׁמְשִׁיָּה", translation = "зонт",
             definition = "כְּלִי לַהֲגָנָה מִגֶּשֶׁם אוֹ שֶׁמֶשׁ.",
             definitionNative = "Приспособление для защиты от дождя или солнца.",
@@ -647,7 +647,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101120, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "sufa",
+            pos = "noun", semanticGroup = "weather",
             original = "סוּפָה", translation = "буря / шторм",
             definition = "מִשְׁטַר רוּחוֹת חֲזָקוֹת עִם גֶּשֶׁם.",
             definitionNative = "Режим сильных ветров с дождём.",
@@ -656,7 +656,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101105L, 101124L)),
         WordEntity(
             id = 101121, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "anavim",
+            pos = "noun", semanticGroup = "weather",
             original = "עֲנָנִים", translation = "облака",
             definition = "מֵי אוֹ גְּבִישֵׁי קֶרַח הַמְּרַחֲפִים בְּאַטְמוֹסְפֵרָה.",
             definitionNative = "Капли воды или кристаллы льда, парящие в атмосфере.",
@@ -665,7 +665,7 @@ object WordDataHebrewMore {
         ),
         WordEntity(
             id = 101122, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "shamayim",
+            pos = "noun", semanticGroup = "weather",
             original = "שָׁמַיִם", translation = "небо",
             definition = "הַמֶּרְחָב הָאַטְמוֹסְפֵרִי מֵעַל לָאָרֶץ.",
             definitionNative = "Атмосферное пространство над землёй.",
@@ -674,7 +674,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101121L)),
         WordEntity(
             id = 101123, setId = 1011, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "yam",
+            pos = "noun", semanticGroup = "weather",
             original = "יָם", translation = "море",
             definition = "גּוּף מַיִם גָּדוֹל וּמָלוּחַ.",
             definitionNative = "Большой солёный водоём.",
@@ -699,7 +699,7 @@ object WordDataHebrewMore {
         // Set 109 — +1 (было 24, стало 25),
         WordEntity(
             id = 100925, setId = 1009, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city", transliteration = "merkaz ir",
+            pos = "noun", semanticGroup = "city",
             original = "מֶרְכַּז עִיר", translation = "центр города",
             definition = "הָאֵזוֹר הַמֶּרְכָּזִי שֶׁל הָעִיר עִם חֲנוּיוֹת וּמִשְׂרָדִים.",
             definitionNative = "Центральный район города с магазинами и офисами.",
@@ -710,7 +710,7 @@ object WordDataHebrewMore {
         // Set 110 — +1 (было 24, стало 25),
         WordEntity(
             id = 101025, setId = 1010, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing", transliteration = "sveder",
+            pos = "noun", semanticGroup = "clothing",
             original = "סְוֶדֶר", translation = "свитер",
             definition = "בֶּגֶד צֶמֶר עָלְיוֹן חַם לִזְמַן קַר.",
             definitionNative = "Тёплая шерстяная верхняя одежда для холодного времени.",
@@ -721,7 +721,7 @@ object WordDataHebrewMore {
         // Set 111 — +2 (было 23, стало 25),
         WordEntity(
             id = 101124, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "lakhut",
+            pos = "noun", semanticGroup = "weather",
             original = "לַחוּת", translation = "влажность",
             definition = "כַּמּוּת אֵדֵי הַמַּיִם הַנְּמֻצָּאִים בָּאֲוִיר.",
             definitionNative = "Количество водяных паров, содержащихся в воздухе.",
@@ -730,7 +730,7 @@ object WordDataHebrewMore {
          fillInBlankExclusions = listOf(101117L)),
         WordEntity(
             id = 101125, setId = 1011, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather", transliteration = "batssoret",
+            pos = "noun", semanticGroup = "weather",
             original = "בַּצֹּרֶת", translation = "засуха",
             definition = "תְּקוּפָה מְמוּשֶׁכֶת שֶׁל חֹסֶר גְּשָׁמִים.",
             definitionNative = "Длительный период без дождей.",

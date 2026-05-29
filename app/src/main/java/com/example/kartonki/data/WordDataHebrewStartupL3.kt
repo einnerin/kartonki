@@ -51,7 +51,7 @@ object WordDataHebrewStartupL3 {
         // ── startup_idea (5) — идея и её валидация ──
         WordEntity(
             id = 175801, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_idea", transliteration = "kontsept mutsar",
+            pos = "noun", semanticGroup = "startup_idea",
             original = "קוֹנְצֶפְּט מוּצָר", translation = "концепт продукта",
             definition = "תֵּאוּר מַעֲשִׂי שֶׁל מוּצָר עָתִידִי — מָה הוּא עוֹשֶׂה, לְמִי וְאֵיךְ נִרְאֶה.",
             definitionNative = "Конкретное описание будущего продукта — что делает, для кого, как выглядит.",
@@ -60,7 +60,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175802L, 175803L, 175804L, 175805L, 175811L, 175812L)),
         WordEntity(
             id = 175802, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_idea", transliteration = "hash'ara iskit",
+            pos = "noun", semanticGroup = "startup_idea",
             original = "הַשְׁעָרָה עִסְקִית", translation = "бизнес-предположение",
             definition = "אֲמִירָה שֶׁל הַמְּיַסֵּד עַל הַשּׁוּק שֶׁיֵּשׁ לִבְדֹּק בְּמַעֲשֶׂה לִפְנֵי הַשְׁקָעַת מַשָּׁאַבִּים.",
             definitionNative = "Утверждение основателя о рынке — нужно проверить на практике до вложения ресурсов.",
@@ -69,7 +69,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175801L, 175803L, 175804L, 175805L)),
         WordEntity(
             id = 175803, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_idea", transliteration = "validatsya",
+            pos = "noun", semanticGroup = "startup_idea",
             original = "וָלִידַצְיָה", translation = "валидация (идеи)",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ בּוֹדְקִים אִם לְקוֹחוֹת בֶּאֱמֶת רוֹצִים לְשַׁלֵּם עַל מַה שֶׁמְּתַכְנְנִים.",
             definitionNative = "Процесс, в котором проверяют, готовы ли клиенты реально платить за то, что планируют.",
@@ -78,7 +78,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175801L, 175802L, 175804L, 175805L, 175815L)),
         WordEntity(
             id = 175804, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_idea", transliteration = "ke'ev lakoah",
+            pos = "noun", semanticGroup = "startup_idea",
             original = "כְּאֵב לָקוֹחַ", translation = "боль клиента",
             definition = "בְּעָיָה כּוֹאֶבֶת מַסְפִּיק שֶׁאֲנָשִׁים מוּכָנִים לְשַׁלֵּם כְּדֵי לִפְתֹּר אוֹתָהּ.",
             definitionNative = "Проблема, болезненная настолько, что люди готовы платить за её решение.",
@@ -87,7 +87,7 @@ object WordDataHebrewStartupL3 {
         ),
         WordEntity(
             id = 175805, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_idea", transliteration = "kastomer development",
+            pos = "noun", semanticGroup = "startup_idea",
             original = "קַסְטוֹמֶר דֶּוֶולוֹפְּמֶנְט", translation = "customer development (исследование клиентов)",
             definition = "שִׁיטָה שֶׁל רֵאָיוֹנוֹת עִם מִשְׁתַּמְּשִׁים פּוֹטֶנְצְיָאלִיִּים כְּדֵי לְהָבִין אֶת הַצְּרָכִים שֶׁלָּהֶם.",
             definitionNative = "Метод интервью с потенциальными пользователями — чтобы понять их реальные нужды.",
@@ -98,7 +98,7 @@ object WordDataHebrewStartupL3 {
         // ── startup_team (5) — состав ранней команды ──
         WordEntity(
             id = 175806, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_team", transliteration = "faunder",
+            pos = "noun", semanticGroup = "startup_team",
             original = "פָאוּנְדֶר", translation = "основатель (founder)",
             definition = "אִישׁ שֶׁהֵקִים אֶת הַחֶבְרָה מֵאֶפֶס וְלוֹקֵחַ אֶת הַסִּכּוּן הָרִאשׁוֹן עַל עַצְמוֹ.",
             definitionNative = "Человек, поднявший фирму с нуля и взявший на себя первый риск.",
@@ -107,7 +107,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175807L, 175808L, 175809L, 175810L)),
         WordEntity(
             id = 175807, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_team", transliteration = "shutafut hakama",
+            pos = "noun", semanticGroup = "startup_team",
             original = "שׁוּתָפוּת הַקָמָה", translation = "со-учредительство (партнёрство при основании)",
             definition = "מַעֲרֶכֶת יַחֲסִים בֵּין שְׁנֵי אֲנָשִׁים שֶׁפּוֹתְחִים יַחַד עֵסֶק וּמַחֲלֹקִים אַחְרָיוּת.",
             definitionNative = "Отношения двух людей, открывающих вместе бизнес и делящих ответственность.",
@@ -116,7 +116,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175806L, 175808L, 175809L, 175810L)),
         WordEntity(
             id = 175808, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_team", transliteration = "si-i-o",
+            pos = "noun", semanticGroup = "startup_team",
             original = "סִי-אִי-אוֹ", translation = "CEO (генеральный директор)",
             definition = "הָאָדָם הָרָאשִׁי שֶׁמַּחְלִיט עַל הַחֲזוֹן וְעַל הַתַּקְצִיב וְעוֹמֵד מוּל הַמַּשְׁקִיעִים.",
             definitionNative = "Главный человек — решает по видению и бюджету, общается с инвесторами.",
@@ -125,7 +125,7 @@ object WordDataHebrewStartupL3 {
         ),
         WordEntity(
             id = 175809, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_team", transliteration = "mehandes rashi",
+            pos = "noun", semanticGroup = "startup_team",
             original = "מְהַנְדֵּס רָאשִׁי", translation = "главный инженер (технический руководитель стартапа)",
             definition = "הָאַחְרַאי הַטֶּכְנִי הַבָּכִיר שֶׁבּוֹחֵר טֶכְנוֹלוֹגְיוֹת וּמְכַוֵּן אֶת הָאַרְכִיטֶקְטוּרָה.",
             definitionNative = "Старший технический ответственный — выбирает технологии и задаёт архитектуру.",
@@ -134,7 +134,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175806L, 175807L, 175808L, 175810L)),
         WordEntity(
             id = 175810, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_team", transliteration = "hashlamat meyumanuyot",
+            pos = "noun", semanticGroup = "startup_team",
             original = "הַשְׁלָמַת מְיֻמָּנֻיּוֹת", translation = "взаимодополнение компетенций (skill complementarity)",
             definition = "מַצָּב שֶׁבּוֹ כָּל אֶחָד בַּצֶּוֶות מֵבִיא יְכוֹלוֹת שׁוֹנוֹת — וְיַחַד הֵם מְכַסִּים אֶת הַכֹּל.",
             definitionNative = "Ситуация, когда каждый в команде приносит свои навыки — и вместе они закрывают всё.",
@@ -145,7 +145,7 @@ object WordDataHebrewStartupL3 {
         // ── startup_mvp (5) — MVP и итерации ──
         WordEntity(
             id = 175811, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_mvp", transliteration = "em-vi-pi",
+            pos = "noun", semanticGroup = "startup_mvp",
             original = "אֶם-וִי-פִּי", translation = "MVP (минимально жизнеспособный продукт)",
             definition = "גִּרְסָה רָזָה בְּיוֹתֵר שֶׁעוֹשָׂה רַק דָּבָר אֶחָד וּמַסְפִּיקָה כְּדֵי לִבְדֹּק בִּקּוּשׁ.",
             definitionNative = "Самая лёгкая версия — делает только одно и достаточна, чтобы проверить спрос.",
@@ -154,7 +154,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175812L, 175813L, 175814L, 175815L)),
         WordEntity(
             id = 175812, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_mvp", transliteration = "prototip",
+            pos = "noun", semanticGroup = "startup_mvp",
             original = "פְּרוֹטוֹטִיפּ", translation = "прототип (стартапа)",
             definition = "דֻּגְמָה עוֹבֶדֶת בְּאֹפֶן חֶלְקִי שֶׁמַּמְחִישָׁה אֵיךְ הָרַעְיוֹן יִרְאֶה בִּפְעֻלָּה.",
             definitionNative = "Частично работающий образец — показывает, как замысел будет выглядеть в действии.",
@@ -163,7 +163,7 @@ object WordDataHebrewStartupL3 {
         ),
         WordEntity(
             id = 175813, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_mvp", transliteration = "lending",
+            pos = "noun", semanticGroup = "startup_mvp",
             original = "לֶנְדִּינְג", translation = "лендинг (посадочная страница)",
             definition = "דַּף יָחִיד בָּאִינְטֶרְנֶט שֶׁמַּסְבִּיר אֶת הַמּוּצָר וּמְבַקֵּשׁ אִי-מֵייל אוֹ תַּשְׁלוּם.",
             definitionNative = "Одна страница в интернете — объясняет продукт и просит email или оплату.",
@@ -172,7 +172,7 @@ object WordDataHebrewStartupL3 {
         ),
         WordEntity(
             id = 175814, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_mvp", transliteration = "beta tester",
+            pos = "noun", semanticGroup = "startup_mvp",
             original = "בֵּיטָא טֶסְטֶר", translation = "бета-тестер",
             definition = "מִשְׁתַּמֵּשׁ מֻקְדָּם שֶׁמְּקַבֵּל גִּישָׁה לִפְנֵי הַשְׁאָר וּמַחֲזִיר מַשְׁוֹב מַעֲשִׂי.",
             definitionNative = "Ранний пользователь, получающий доступ раньше остальных и присылающий практический отклик.",
@@ -181,7 +181,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175811L, 175812L, 175813L, 175815L)),
         WordEntity(
             id = 175815, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_mvp", transliteration = "iteratsya",
+            pos = "noun", semanticGroup = "startup_mvp",
             original = "אִיטֵרַצְיָה", translation = "итерация (цикл доработки)",
             definition = "סִבּוּב אֶחָד שֶׁל שִׁפּוּר עַל בָּסִיס מַשְׁוֹב — שׁוֹלְחִים, בּוֹדְקִים, מְשַׁנִּים, מַחְזִירִים.",
             definitionNative = "Один круг улучшения по фидбеку — выпустили, проверили, изменили, выпустили снова.",
@@ -192,7 +192,7 @@ object WordDataHebrewStartupL3 {
         // ── startup_market_fit (5) — поиск рынка и позиционирование ──
         WordEntity(
             id = 175816, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_market_fit", transliteration = "kahal yaad",
+            pos = "noun", semanticGroup = "startup_market_fit",
             original = "קְהַל יַעַד", translation = "целевая аудитория",
             definition = "קְבוּצָה מְסֻיֶּמֶת שֶׁל אֲנָשִׁים שֶׁהַמּוּצָר נוֹעַד בִּשְׁבִילָם וְלֹא בִּשְׁבִיל כֻּלָּם.",
             definitionNative = "Конкретная группа людей, для которых сделан продукт — а не для всех подряд.",
@@ -201,7 +201,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175817L, 175818L, 175819L, 175820L)),
         WordEntity(
             id = 175817, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_market_fit", transliteration = "prodakt market fit",
+            pos = "noun", semanticGroup = "startup_market_fit",
             original = "פְּרוֹדָאקְט מָארְקֶט פִיט", translation = "product-market fit (PMF)",
             definition = "מַצָּב שֶׁבּוֹ הַשּׁוּק מוֹשֵׁךְ אֶת הַמּוּצָר חָזָק יוֹתֵר מִמַּה שֶׁהַחֶבְרָה מַצְלִיחָה לְסַפֵּק.",
             definitionNative = "Состояние, когда рынок тянет продукт сильнее, чем фирма успевает поставлять.",
@@ -210,7 +210,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175816L, 175818L, 175819L, 175820L)),
         WordEntity(
             id = 175818, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_market_fit", transliteration = "nisha",
+            pos = "noun", semanticGroup = "startup_market_fit",
             original = "נִישָׁה", translation = "ниша (сегмент рынка)",
             definition = "פִּינָה צָרָה בַּשּׁוּק עִם קָהָל מְסֻיָּם שֶׁהַשְּׁחָקָנִים הַגְּדוֹלִים מְזַלְזְלִים בָּהּ.",
             definitionNative = "Узкий уголок рынка с конкретной публикой — большие игроки им пренебрегают.",
@@ -219,7 +219,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175816L, 175817L, 175819L, 175820L)),
         WordEntity(
             id = 175819, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_market_fit", transliteration = "nituakh tahrut",
+            pos = "noun", semanticGroup = "startup_market_fit",
             original = "נִיתוּחַ תַּחֲרוּת", translation = "конкурентный анализ",
             definition = "הַשְׁוָאָה שִׁיטָתִית שֶׁל הַמּוּצָר מוּל מָה שֶׁהַשְּׁחָקָנִים הָאֲחֵרִים בַּשּׁוּק מַצִּיעִים.",
             definitionNative = "Системное сравнение продукта с тем, что предлагают другие игроки на рынке.",
@@ -228,7 +228,7 @@ object WordDataHebrewStartupL3 {
         ),
         WordEntity(
             id = 175820, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_market_fit", transliteration = "trakshen",
+            pos = "noun", semanticGroup = "startup_market_fit",
             original = "טְרַאקְשֶׁן", translation = "traction (тяга, ранний рост)",
             definition = "סִימָנִים מְדִידִים שֶׁל גִּדּוּל אֲמִיתִּי — מִשְׁתַּמְּשִׁים חֲדָשִׁים, הַכְנָסָה וְשִׁמּוּשׁ קָבוּעַ.",
             definitionNative = "Измеримые признаки реального роста — новые юзеры, выручка и постоянное использование.",
@@ -239,7 +239,7 @@ object WordDataHebrewStartupL3 {
         // ── startup_culture (5) — культура раннего стартапа ──
         WordEntity(
             id = 175821, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_culture", transliteration = "shinui kivun",
+            pos = "noun", semanticGroup = "startup_culture",
             original = "שִׁינּוּי כִּוּוּן", translation = "пивот (резкая смена курса)",
             definition = "הַחְלָטָה לְהַחְלִיף אֶת הַשּׁוּק אוֹ אֶת הַמּוּצָר אַחֲרֵי שֶׁהַמַּסְלוּל הָרִאשׁוֹן לֹא עוֹבֵד.",
             definitionNative = "Решение сменить рынок или продукт после того, как первый путь не сработал.",
@@ -248,7 +248,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175822L, 175823L, 175824L, 175825L)),
         WordEntity(
             id = 175822, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_culture", transliteration = "butstrap",
+            pos = "noun", semanticGroup = "startup_culture",
             original = "בּוּטְסְטרַאפּ", translation = "bootstrap (развитие без инвесторов)",
             definition = "צוּרַת בְּנִיָּה שֶׁל עֵסֶק רַק מִכֶּסֶף הַמַּיְיסְּדִים וּמֵהַכְנָסוֹת לְלֹא מְמַמְּנִים חִיצוֹנִיִּים.",
             definitionNative = "Способ строить бизнес — только на деньги основателей и выручку, без внешнего финансирования.",
@@ -257,7 +257,7 @@ object WordDataHebrewStartupL3 {
         ),
         WordEntity(
             id = 175823, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_culture", transliteration = "hasl",
+            pos = "noun", semanticGroup = "startup_culture",
             original = "הַסְל", translation = "hustle (драйв и упорство)",
             definition = "אֶנֶרְגְיָה שֶׁל לִרְדֹּף אַחֲרֵי הָזְדַּמְּנֻיּוֹת בְּלִי לֵאוּת — לִשְׁלֹחַ, לִשְׁאֹל, לְהַתְחִיל.",
             definitionNative = "Энергия гнаться за возможностями без устали — писать, спрашивать, начинать.",
@@ -266,7 +266,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175821L, 175822L, 175824L, 175825L)),
         WordEntity(
             id = 175824, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "startup_culture", transliteration = "gisha me'oravet",
+            pos = "noun", semanticGroup = "startup_culture",
             original = "גִּישָׁה מְעֹרָבֶת", translation = "hands-on подход (вовлечённый стиль)",
             definition = "סִגְנוֹן עֲבוֹדָה שֶׁבּוֹ הַמְּנַהֵל יוֹרֵד לִפְרָטִים וְעוֹשֶׂה דְּבָרִים בַּיָּדַיִם בְּעַצְמוֹ.",
             definitionNative = "Стиль работы, при котором руководитель спускается до деталей и делает руками сам.",
@@ -275,7 +275,7 @@ object WordDataHebrewStartupL3 {
          fillInBlankExclusions = listOf(175821L, 175822L, 175823L, 175825L)),
         WordEntity(
             id = 175825, setId = 1758, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_culture", transliteration = "misyon",
+            pos = "noun", semanticGroup = "startup_culture",
             original = "מִיסְיוֹן", translation = "миссия стартапа",
             definition = "מִשְׁפָּט קָצָר שֶׁמַּסְבִּיר לָמָּה הַחֶבְרָה קַיֶּמֶת וְאֶת מִי הִיא רוֹצָה לְשָׁרֵת בָּעוֹלָם.",
             definitionNative = "Короткая фраза о том, зачем фирма существует и кому она хочет служить в мире.",

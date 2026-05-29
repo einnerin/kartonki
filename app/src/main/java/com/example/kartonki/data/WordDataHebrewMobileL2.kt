@@ -51,7 +51,7 @@ object WordDataHebrewMobileL2 {
         // ── mobile_settings_basic (5) — настройки приложения ──
         WordEntity(
             id = 178401, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_settings_basic", transliteration = "hagdarot aplikatsya",
+            pos = "noun", semanticGroup = "mobile_settings_basic",
             original = "הַגְדָּרוֹת אַפְּלִיקַצְיָה", translation = "настройки приложения",
             definition = "מָסָךְ פְּנִימִי שֶׁבּוֹ הַמִּשְׁתַּמֵּשׁ מַתְאִים לְעַצְמוֹ אֶת הִתְנַהֲגוּת הַתּוֹכְנָה.",
             definitionNative = "Внутренний экран — пользователь подгоняет под себя поведение программы.",
@@ -60,7 +60,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178402L, 178403L, 178404L, 178405L)),
         WordEntity(
             id = 178402, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_settings_basic", transliteration = "arket keha",
+            pos = "noun", semanticGroup = "mobile_settings_basic",
             original = "עַרְכַּת כֵּהָה", translation = "тёмная тема",
             definition = "מַעֲרֶכֶת צְבָעִים שְׁחוֹרָה אוֹ אֲפֹרָה — נוֹחָה לָעַיִן בִּקְרִיאָה בַּלַּיְלָה.",
             definitionNative = "Чёрный или серый цветовой набор — удобен глазам при чтении ночью.",
@@ -69,7 +69,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178401L, 178403L, 178404L, 178405L)),
         WordEntity(
             id = 178403, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_settings_basic", transliteration = "arket behira",
+            pos = "noun", semanticGroup = "mobile_settings_basic",
             original = "עַרְכַּת בְּהִירָה", translation = "светлая тема",
             definition = "מַעֲרֶכֶת צְבָעִים לְבָנָה אוֹ פַּסְטֶל — קְרִיאָה נוֹחָה בְּשֶׁמֶשׁ יוֹם.",
             definitionNative = "Белый или пастельный цветовой набор — удобен для чтения днём на солнце.",
@@ -78,7 +78,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178401L, 178402L, 178404L, 178405L)),
         WordEntity(
             id = 178404, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_settings_basic", transliteration = "godel gufan",
+            pos = "noun", semanticGroup = "mobile_settings_basic",
             original = "גֹּדֶל גּוּפָן", translation = "размер шрифта",
             definition = "אֹרֶךְ הָאוֹתִיּוֹת עַל הַמָּסָךְ — מִקָּטָן וְצָפוּף וְעַד גָּדוֹל וּבָרוּר לְעַיִן חַלָּשָׁה.",
             definitionNative = "Высота букв на экране — от мелкого и плотного до крупного и чёткого для слабого зрения.",
@@ -87,7 +87,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178401L, 178402L, 178403L, 178405L)),
         WordEntity(
             id = 178405, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_settings_basic", transliteration = "sfat memshak",
+            pos = "noun", semanticGroup = "mobile_settings_basic",
             original = "שְׂפַת מִמְשָׁק", translation = "язык интерфейса",
             definition = "הַשָּׂפָה שֶׁבָּהּ מוּצָגוֹת כָּל הַכַּפְתּוֹרִים, הַתָּפְרִיטִים וְהוֹדָעוֹת הַמַּעֲרֶכֶת.",
             definitionNative = "Язык, на котором показываются все кнопки, меню и сообщения системы.",
@@ -98,7 +98,7 @@ object WordDataHebrewMobileL2 {
         // ── mobile_network_basic (5) — сетевые настройки и подключения ──
         WordEntity(
             id = 178406, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_network_basic", transliteration = "internet selulari",
+            pos = "noun", semanticGroup = "mobile_network_basic",
             original = "אִינְטֶרְנֶט סֶלוּלָרִי", translation = "мобильный интернет",
             definition = "חִבּוּר לָרֶשֶׁת דֶּרֶךְ אַנְטֶנּוֹת חֶבְרַת הַטֵּלֵפוֹן — בְּלִי תְּלוּת בְּכַבְלִים אוֹ נְקֻדּוֹת קְרוֹבוֹת.",
             definitionNative = "Выход в сеть через антенны сотовой компании — без кабелей и роутеров рядом.",
@@ -107,7 +107,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178407L, 178408L, 178409L, 178410L)),
         WordEntity(
             id = 178407, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_network_basic", transliteration = "khibur vay-fay",
+            pos = "noun", semanticGroup = "mobile_network_basic",
             original = "חִבּוּר וַויי-פַיי", translation = "Wi-Fi подключение",
             definition = "קֶשֶׁר אַלְחוּטִי קָצָר טְוַח לַנַּתְבַּב בַּבַּיִת אוֹ בְּבֵית הַקָּפֶה.",
             definitionNative = "Беспроводная связь короткого радиуса с роутером дома или в кафе.",
@@ -116,7 +116,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178406L, 178408L, 178409L, 178410L)),
         WordEntity(
             id = 178408, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_network_basic", transliteration = "hagbalat tuna",
+            pos = "noun", semanticGroup = "mobile_network_basic",
             original = "הַגְבָּלַת תּוּנָּה", translation = "ограничение трафика",
             definition = "תִּקְרָה חָדְשִׁית שֶׁל בַּיְטִים שֶׁמֵּעַל לָהּ הַסֶּפֶּק יוֹרֵד אוֹ הַגְּלִישָׁה נֶחְסֶמֶת.",
             definitionNative = "Месячный потолок байт — выше него скорость падает или выход в сеть блокируется.",
@@ -125,7 +125,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178406L, 178407L, 178409L, 178410L)),
         WordEntity(
             id = 178409, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_network_basic", transliteration = "matsav tisa",
+            pos = "noun", semanticGroup = "mobile_network_basic",
             original = "מַצַּב טִיסָה", translation = "режим самолёта",
             definition = "מְצָב שֶׁמְּכַבֶּה אֶת כָּל הָאוֹת הָאַלְחוּטִי שֶׁל הַמַּכְשִׁיר בְּלַחִיצָה אַחַת.",
             definitionNative = "Состояние, отключающее весь беспроводной сигнал устройства одним нажатием.",
@@ -134,7 +134,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178406L, 178407L, 178408L, 178410L)),
         WordEntity(
             id = 178410, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_network_basic", transliteration = "hotspot",
+            pos = "noun", semanticGroup = "mobile_network_basic",
             original = "הוֹטְסְפּוֹט", translation = "точка доступа (hotspot)",
             definition = "שֵׁרוּת שֶׁמַּפְעִיל הַטֵּלֵפוֹן וּמְשַׁתֵּף אֶת הַחֲבִילָה הַסֶּלוּלָרִית עִם מַחְשְׁבִים אֲחֵרִים.",
             definitionNative = "Сервис на телефоне — отдаёт сотовый трафик другим компьютерам поблизости.",
@@ -145,7 +145,7 @@ object WordDataHebrewMobileL2 {
         // ── mobile_permissions_basic (5) — системные разрешения ──
         WordEntity(
             id = 178411, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_permissions_basic", transliteration = "harshaat matslema",
+            pos = "noun", semanticGroup = "mobile_permissions_basic",
             original = "הַרְשָׁאַת מַצְלֵמָה", translation = "разрешение камеры",
             definition = "אִשּׁוּר שֶׁל הַמִּשְׁתַּמֵּשׁ לַתּוֹכְנָה לִפְתֹּחַ אֶת הָעֵדֶשׁ וּלְצַלֵּם תְּמוּנוֹת אוֹ סְרָטוֹנִים.",
             definitionNative = "Согласие пользователя — программа открывает объектив и снимает кадры или ролики.",
@@ -154,7 +154,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178412L, 178413L, 178414L, 178415L)),
         WordEntity(
             id = 178412, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_permissions_basic", transliteration = "gisha la-mikrofon",
+            pos = "noun", semanticGroup = "mobile_permissions_basic",
             original = "גִּישָׁה לַמִּיקְרוֹפוֹן", translation = "доступ к микрофону",
             definition = "אִשּׁוּר שֶׁמְּאַפְשֵׁר לְקוֹד לְהַקְלִיט קוֹל מֵהַסְּבִיבָה דֶּרֶךְ הָרְכִיב הַפְּנִימִי.",
             definitionNative = "Согласие — код записывает голос из окружения через внутренний компонент.",
@@ -163,7 +163,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178411L, 178413L, 178414L, 178415L)),
         WordEntity(
             id = 178413, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_permissions_basic", transliteration = "albom tmunot",
+            pos = "noun", semanticGroup = "mobile_permissions_basic",
             original = "אַלְבּוֹם תְּמוּנוֹת", translation = "доступ к фото",
             definition = "אֹסֶף הַתְּצוּגוֹת שֶׁל הַמַּכְשִׁיר שֶׁתּוֹכְנָה רוֹצָה לִקְרֹא, לִבְחֹר אוֹ לְהַעֲלוֹת מִמֶּנּוּ.",
             definitionNative = "Коллекция кадров устройства — программа хочет читать, выбирать или загружать оттуда.",
@@ -172,7 +172,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178411L, 178412L, 178414L, 178415L)),
         WordEntity(
             id = 178414, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_permissions_basic", transliteration = "itur mikum",
+            pos = "noun", semanticGroup = "mobile_permissions_basic",
             original = "אִיתּוּר מִיקּוּם", translation = "разрешение геолокации",
             definition = "אִשּׁוּר לְקוֹד לִקְבֹּעַ אֵיפֹה הַמַּכְשִׁיר נִמְצָא — לְפִי לַוְיָנִים אוֹ אַנְטֶנּוֹת.",
             definitionNative = "Согласие коду определять, где находится устройство — по спутникам или вышкам.",
@@ -181,7 +181,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178411L, 178412L, 178413L, 178415L)),
         WordEntity(
             id = 178415, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_permissions_basic", transliteration = "haskamat hodaot",
+            pos = "noun", semanticGroup = "mobile_permissions_basic",
             original = "הַסְכָּמַת הוֹדָעוֹת", translation = "разрешения уведомлений",
             definition = "אִשּׁוּר שֶׁל הַמִּשְׁתַּמֵּשׁ לַמַּעֲרֶכֶת לְהַצִּיג עִדְכּוּנִים גַּם כְּשֶׁהַתּוֹכְנָה סְגוּרָה.",
             definitionNative = "Согласие пользователя системе — показывать оповещения, даже когда программа закрыта.",
@@ -192,7 +192,7 @@ object WordDataHebrewMobileL2 {
         // ── mobile_resources (5) — ресурсы и локализация ──
         WordEntity(
             id = 178416, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_resources", transliteration = "tikiyat asets",
+            pos = "noun", semanticGroup = "mobile_resources",
             original = "תִּיקִיַּת אַסֵטְס", translation = "папка assets",
             definition = "מָקוֹם בָּפְּרוֹיֶקְט שֶׁבּוֹ מַחְזִיקִים קְבָצִים סְטָטִיִּים — פוֹנְטִים, סְרָטִים אוֹ נְתוּנֵי דֶּמוֹ.",
             definitionNative = "Место в проекте — там лежат статичные файлы: шрифты, ролики или demo-данные.",
@@ -201,7 +201,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178417L, 178418L, 178419L, 178420L)),
         WordEntity(
             id = 178417, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_resources", transliteration = "drovebel",
+            pos = "noun", semanticGroup = "mobile_resources",
             original = "דְּרוֹאֶבֶּל", translation = "drawable (графический ресурс)",
             definition = "תְּצוּגָה גְּרָפִית — אַייקוֹן, רֶקַע אוֹ צוּרָה — שֶׁהַקּוֹד מוֹשֵׁךְ וּמַצְלִיב עַל הַמָּסָךְ.",
             definitionNative = "Графическое представление — иконка, фон или фигура — код подтягивает и кладёт на экран.",
@@ -210,7 +210,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178416L, 178418L, 178419L, 178420L)),
         WordEntity(
             id = 178418, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_resources", transliteration = "mashaav makhrozet",
+            pos = "noun", semanticGroup = "mobile_resources",
             original = "מַשָּׁאַב מַחְרֹזֶת", translation = "string-ресурс",
             definition = "טֶקְסְט שָׁמוּר בְּקֹבֶץ נִפְרָד עִם מַזָהֶה — כָּךְ קַל לְהַחֲלִיפוֹ אוֹ לְתַרְגְּמוֹ.",
             definitionNative = "Текст лежит в отдельном файле с идентификатором — так его легко заменить или перевести.",
@@ -219,7 +219,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178416L, 178417L, 178419L, 178420L)),
         WordEntity(
             id = 178419, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_resources", transliteration = "lokalizatsya",
+            pos = "noun", semanticGroup = "mobile_resources",
             original = "לוֹקַלִיזַצְיָה", translation = "локализация",
             definition = "הַתְאָמַת הַתּוֹכְנָה לִשְׂפָה וְלִתְרְבּוּת שֶׁל מְדִינָה — תַּרְגוּם, מַטְבֵּעַ, פוֹרְמָט תַּאֲרִיךְ.",
             definitionNative = "Подгонка программы под язык и культуру страны — перевод, валюта, формат даты.",
@@ -228,7 +228,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178416L, 178417L, 178418L, 178420L)),
         WordEntity(
             id = 178420, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_resources", transliteration = "rezolutsya",
+            pos = "noun", semanticGroup = "mobile_resources",
             original = "רֶזוֹלוּצְיָה", translation = "разрешение картинки",
             definition = "כַּמּוּת הַנְּקֻדּוֹת בְּכָל אֹרֶךְ וְרֹחַב — קוֹבַעַת אֶת חֲדּוּת הַתְּצוּגָה.",
             definitionNative = "Количество точек по длине и ширине — определяет чёткость изображения.",
@@ -239,7 +239,7 @@ object WordDataHebrewMobileL2 {
         // ── mobile_debug_basic (5) — отладка приложения ──
         WordEntity(
             id = 178421, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_debug_basic", transliteration = "log",
+            pos = "noun", semanticGroup = "mobile_debug_basic",
             original = "לוֹג", translation = "лог приложения",
             definition = "רְשִׁימָה שׁוּרוֹת שֶׁהַתּוֹכְנָה כּוֹתֶבֶת בִּזְמַן רִיצָה — מָה קָרָה וּמָתַי.",
             definitionNative = "Список строк — программа пишет на ходу: что произошло и когда.",
@@ -248,7 +248,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178422L, 178423L, 178424L, 178425L)),
         WordEntity(
             id = 178422, setId = 1784, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_debug_basic", transliteration = "konsolat mefateakh",
+            pos = "noun", semanticGroup = "mobile_debug_basic",
             original = "קוֹנְסוֹלַת מְפַתֵּחַ", translation = "консоль разработчика",
             definition = "כְּלִי שֶׁבּוֹ הַמְּפַתֵּחַ רוֹאֶה הוֹדָעוֹת מַעֲרֶכֶת בִּזְמַן אֱמֶת וְשׁוֹלֵחַ פְּקֻדּוֹת.",
             definitionNative = "Инструмент — разработчик видит сообщения системы в реальном времени и шлёт команды.",
@@ -257,7 +257,7 @@ object WordDataHebrewMobileL2 {
         ),
         WordEntity(
             id = 178423, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_debug_basic", transliteration = "breykpoint",
+            pos = "noun", semanticGroup = "mobile_debug_basic",
             original = "בְּרֵייקְפּוֹינְט", translation = "breakpoint (точка останова)",
             definition = "סִימָן שֶׁעוֹצֵר אֶת הָרִיצָה בְּשׁוּרָה מְסֻיֶּמֶת — כְּדֵי לִבְדֹּק עֶרְכִּים בָּרֶגַע הַזֶּה.",
             definitionNative = "Метка останавливает выполнение на конкретной строке — посмотреть значения в этот момент.",
@@ -266,7 +266,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178421L, 178422L, 178424L, 178425L)),
         WordEntity(
             id = 178424, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_debug_basic", transliteration = "bild dibug",
+            pos = "noun", semanticGroup = "mobile_debug_basic",
             original = "בִּילְד דִּיבּוּג", translation = "отладочная сборка",
             definition = "גִּרְסַת קוֹד עִם כְּלֵי בְּדִיקָה פְּנִימִיִּים — אִטִּית יוֹתֵר אֲבָל נוֹחָה לַחֲקִירָה.",
             definitionNative = "Версия кода со встроенными средствами проверки — медленнее, но удобна для разбора.",
@@ -275,7 +275,7 @@ object WordDataHebrewMobileL2 {
          fillInBlankExclusions = listOf(178421L, 178422L, 178423L, 178425L)),
         WordEntity(
             id = 178425, setId = 1784, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_debug_basic", transliteration = "simulator",
+            pos = "noun", semanticGroup = "mobile_debug_basic",
             original = "סִימוּלָטוֹר", translation = "симулятор",
             definition = "תּוֹכְנָה עַל הַמַּחְשֵׁב שֶׁמַּעֲמִידָה פָּנִים שֶׁל מַכְשִׁיר נַיָּד — לִבְדִיקַת קוֹד בְּלִי טֵלֵפוֹן.",
             definitionNative = "Программа на компьютере прикидывается мобильным устройством — проверять код без телефона.",

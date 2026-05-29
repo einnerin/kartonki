@@ -50,7 +50,7 @@ object WordDataHebrewDataEngL1 {
         // ── data_basics (5) — базовые понятия о данных ──
         WordEntity(
             id = 177401, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_basics", transliteration = "netunim",
+            pos = "noun", semanticGroup = "data_basics",
             original = "נְתוּנִים", translation = "данные",
             definition = "מֵידָע מְסֻדָּר שֶׁשּׁוֹמְרִים בַּמַּחְשֵׁב — מִסְפָּרִים, שֵׁמוֹת אוֹ תַּאֲרִיכִים.",
             definitionNative = "Упорядоченная информация в компьютере — числа, имена или даты.",
@@ -59,7 +59,7 @@ object WordDataHebrewDataEngL1 {
         ),
         WordEntity(
             id = 177402, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_basics", transliteration = "mispar",
+            pos = "noun", semanticGroup = "data_basics",
             original = "מִסְפָּר", translation = "число",
             definition = "סִימָן שֶׁמְּסַפֵּר כַּמָּה יֵשׁ — אֶחָד, שְׁתַּיִם, מֵאָה אוֹ אֶלֶף.",
             definitionNative = "Знак, что говорит о количестве — один, два, сто или тысяча.",
@@ -68,7 +68,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177401L, 177403L, 177404L, 177405L)),
         WordEntity(
             id = 177403, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_basics", transliteration = "tekst",
+            pos = "noun", semanticGroup = "data_basics",
             original = "טֶקְסְט", translation = "текст",
             definition = "אוֹתִיּוֹת וּמִילִים שֶׁמַּרְכִּיבוֹת מִשְׁפָּט — לְעֻמַּת מִסְפָּר אוֹ תַּאֲרִיךְ.",
             definitionNative = "Буквы и слова, складывающиеся в фразу — в отличие от числа или даты.",
@@ -77,7 +77,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177401L, 177402L, 177404L, 177405L)),
         WordEntity(
             id = 177404, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_basics", transliteration = "ta'arikh",
+            pos = "noun", semanticGroup = "data_basics",
             original = "תַּאֲרִיךְ", translation = "дата",
             definition = "יוֹם בַּלּוּחַ שָׁנָה — לְמָשָׁל שְׁלוֹשִׁים בְּמַארְס אַלְפַּיִם עֶשְׂרִים וְשָׁלֹשׁ.",
             definitionNative = "День в календаре — например, тридцатое марта две тысячи двадцать третьего.",
@@ -86,7 +86,7 @@ object WordDataHebrewDataEngL1 {
         ),
         WordEntity(
             id = 177405, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_basics", transliteration = "shem",
+            pos = "noun", semanticGroup = "data_basics",
             original = "שֵׁם", translation = "имя",
             definition = "מִילָה שֶׁמְּזַהָה אָדָם, חֶבְרָה אוֹ מָקוֹם — כְּמוֹ דָּן, גוּגֶל אוֹ חֵיפָה.",
             definitionNative = "Слово, опознающее человека, фирму или место — как Дан, Гугл или Хайфа.",
@@ -97,7 +97,7 @@ object WordDataHebrewDataEngL1 {
         // ── data_storage (5) — где данные лежат ──
         WordEntity(
             id = 177406, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_storage", transliteration = "kovets",
+            pos = "noun", semanticGroup = "data_storage",
             original = "קֹבֶץ", translation = "файл",
             definition = "יְחִידָה שֶׁל מֵידָע בַּמַּחְשֵׁב עִם שֵׁם — לְמָשָׁל מִסְמָךְ, תְּמוּנָה אוֹ סֶרְטוֹן.",
             definitionNative = "Единица информации в компьютере с именем — например, документ, картинка или ролик.",
@@ -106,7 +106,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177407L, 177408L, 177409L, 177410L)),
         WordEntity(
             id = 177407, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_storage", transliteration = "tikiya",
+            pos = "noun", semanticGroup = "data_storage",
             original = "תִּיקִיָּה", translation = "папка",
             definition = "מְקוֹם בַּמַּחְשֵׁב שֶׁאוֹסֵף כַּמָּה קְבָצִים יַחַד — כְּמוֹ מַגֵּרָה בְּשֻׁלְחָן.",
             definitionNative = "Место в компьютере, что собирает несколько файлов вместе — как ящик в столе.",
@@ -115,7 +115,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177406L, 177408L, 177409L, 177410L)),
         WordEntity(
             id = 177408, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_storage", transliteration = "mismakh",
+            pos = "noun", semanticGroup = "data_storage",
             original = "מִסְמָךְ", translation = "документ",
             definition = "קֹבֶץ עִם טֶקְסְט מְסֻדָּר — חוֹזֶה, מִכְתָּב רִשְׁמִי אוֹ דַּף הוֹרָאוֹת לָעוֹבְדִים.",
             definitionNative = "Файл с упорядоченным текстом — договор, официальное письмо или памятка для сотрудников.",
@@ -124,7 +124,7 @@ object WordDataHebrewDataEngL1 {
         ),
         WordEntity(
             id = 177409, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_storage", transliteration = "format",
+            pos = "noun", semanticGroup = "data_storage",
             original = "פוֹרְמָט", translation = "формат",
             definition = "סוּג שֶׁל קֹבֶץ — לְמָשָׁל אֶקְסֶל, פִּי-דִּי-אֵף אוֹ סִי-אֵס-וִי לְטַבְלָאוֹת.",
             definitionNative = "Тип файла — например Excel, PDF или CSV для таблиц.",
@@ -133,7 +133,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177406L, 177407L, 177408L, 177410L)),
         WordEntity(
             id = 177410, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_storage", transliteration = "godel",
+            pos = "noun", semanticGroup = "data_storage",
             original = "גֹּדֶל", translation = "размер (файла)",
             definition = "כַּמָּה מָקוֹם הַקֹּבֶץ תּוֹפֵס בַּמַּחְשֵׁב — נִמְדַּד בְּמֶגָה אוֹ ג׳יגָה.",
             definitionNative = "Сколько места занимает файл в компьютере — измеряется в мегах или гигах.",
@@ -144,7 +144,7 @@ object WordDataHebrewDataEngL1 {
         // ── data_table (5) — структура таблицы ──
         WordEntity(
             id = 177411, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_table", transliteration = "tavla",
+            pos = "noun", semanticGroup = "data_table",
             original = "טַבְלָה", translation = "таблица",
             definition = "רֶשֶׁת שֶׁל שׁוּרוֹת וְעַמּוּדוֹת שֶׁמְּסַדֶּרֶת מֵידָע לְפִי קָטֵגוֹרְיוֹת.",
             definitionNative = "Сетка строк и столбцов — упорядочивает информацию по категориям.",
@@ -153,7 +153,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177412L, 177413L, 177414L, 177415L)),
         WordEntity(
             id = 177412, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_table", transliteration = "shura",
+            pos = "noun", semanticGroup = "data_table",
             original = "שׁוּרָה", translation = "строка",
             definition = "קַו אוֹפְקִי בַּטַּבְלָה — שֶׁמְּסַפֵּר עַל לָקוֹחַ אֶחָד אוֹ עַל עִסְקָה אַחַת.",
             definitionNative = "Горизонтальная линия в таблице — рассказывает об одном клиенте или одной сделке.",
@@ -162,7 +162,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177411L, 177413L, 177414L, 177415L)),
         WordEntity(
             id = 177413, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_table", transliteration = "amuda",
+            pos = "noun", semanticGroup = "data_table",
             original = "עַמּוּדָה", translation = "столбец",
             definition = "קַו אֲנָכִי בַּטַּבְלָה — שֶׁמַּחֲזִיק תְּכוּנָה אַחַת לְכָל שׁוּרָה, כְּמוֹ גִּיל אוֹ עִיר.",
             definitionNative = "Вертикальная линия в таблице — держит одну характеристику для каждой строки, как возраст или город.",
@@ -171,7 +171,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177411L, 177412L, 177414L, 177415L)),
         WordEntity(
             id = 177414, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_table", transliteration = "ta",
+            pos = "noun", semanticGroup = "data_table",
             original = "תָּא", translation = "ячейка",
             definition = "רִבּוּעַ קָטָן בַּטַּבְלָה — הַמִּפְגָּשׁ שֶׁל שׁוּרָה אַחַת עִם עַמּוּדָה אַחַת.",
             definitionNative = "Маленький квадратик в таблице — место встречи одной строки с одним столбцом.",
@@ -180,7 +180,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177411L, 177412L, 177413L, 177415L)),
         WordEntity(
             id = 177415, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_table", transliteration = "koteret",
+            pos = "noun", semanticGroup = "data_table",
             original = "כּוֹתֶרֶת", translation = "заголовок (столбца)",
             definition = "הַשּׁוּרָה הָעֶלְיוֹנָה שֶׁל הַטַּבְלָה — שֶׁמַּגִּידָה מָה כָּל עַמּוּדָה מְכִילָה.",
             definitionNative = "Самая верхняя строка таблицы — говорит, что в каждом столбце.",
@@ -191,7 +191,7 @@ object WordDataHebrewDataEngL1 {
         // ── data_actions (5) — что делают с данными ──
         WordEntity(
             id = 177416, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "data_actions", transliteration = "liftoakh",
+            pos = "verb", semanticGroup = "data_actions",
             original = "לִפְתֹּחַ", translation = "открыть (файл)",
             definition = "לִלְחֹץ עַל קֹבֶץ כְּדֵי לִרְאוֹת אֶת הַתֹּכֶן שֶׁבּוֹ עַל הַמָּסָךְ.",
             definitionNative = "Кликнуть по файлу — чтобы увидеть его содержимое на экране.",
@@ -200,7 +200,7 @@ object WordDataHebrewDataEngL1 {
         ),
         WordEntity(
             id = 177417, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "data_actions", transliteration = "lishmor",
+            pos = "verb", semanticGroup = "data_actions",
             original = "לִשְׁמֹר", translation = "сохранить",
             definition = "לְהַשְׁאִיר אֶת הָעֲבוֹדָה בַּמַּחְשֵׁב כְּדֵי שֶׁלֹּא תֹּאבַד אַחֲרֵי כִּבּוּי.",
             definitionNative = "Оставить работу в компьютере — чтобы она не пропала после выключения.",
@@ -209,7 +209,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177416L, 177418L, 177419L, 177420L)),
         WordEntity(
             id = 177418, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "data_actions", transliteration = "leyatse",
+            pos = "verb", semanticGroup = "data_actions",
             original = "לְיַצֵּא", translation = "экспортировать",
             definition = "לְהוֹצִיא אֶת הַטַּבְלָה הַחוּצָה לְפוֹרְמָט אַחֵר — לְמָשָׁל אֶקְסֶל אוֹ סִי-אֵס-וִי.",
             definitionNative = "Вывести таблицу наружу в другой формат — например Excel или CSV.",
@@ -218,7 +218,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177416L, 177417L, 177419L, 177420L)),
         WordEntity(
             id = 177419, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "data_actions", transliteration = "leyabe",
+            pos = "verb", semanticGroup = "data_actions",
             original = "לְיַבֵּא", translation = "импортировать",
             definition = "לִמְשֹׁךְ נְתוּנִים מִקֹּבֶץ חִיצוֹנִי פְּנִימָה לַמַּעֲרֶכֶת הַנּוֹכְחִית.",
             definitionNative = "Втянуть данные из внешнего файла внутрь текущей системы.",
@@ -227,7 +227,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177416L, 177417L, 177418L, 177420L)),
         WordEntity(
             id = 177420, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "data_actions", transliteration = "lesanen",
+            pos = "verb", semanticGroup = "data_actions",
             original = "לְסַנֵּן", translation = "фильтровать",
             definition = "לְהַשְׁאִיר רַק אֶת הַשּׁוּרוֹת שֶׁעוֹמְדוֹת בִּתְנַאי — וּלְהַסְתִּיר אֶת הַשְּׁאָר זְמַנִּית.",
             definitionNative = "Оставить только строки, что подходят под условие — а остальные временно спрятать.",
@@ -238,7 +238,7 @@ object WordDataHebrewDataEngL1 {
         // ── data_reports (5) — что показывают начальству ──
         WordEntity(
             id = 177421, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_reports", transliteration = "duakh",
+            pos = "noun", semanticGroup = "data_reports",
             original = "דּוּחַ", translation = "отчёт",
             definition = "מִסְמָךְ שֶׁמַּרְאֶה לַמַּנְהֵל מָה קָרָה בָּעֵסֶק בְּתֹם שָׁבוּעַ אוֹ חֹדֶשׁ.",
             definitionNative = "Документ, показывающий руководителю, что произошло в бизнесе за неделю или месяц.",
@@ -247,7 +247,7 @@ object WordDataHebrewDataEngL1 {
         ),
         WordEntity(
             id = 177422, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_reports", transliteration = "diagrama",
+            pos = "noun", semanticGroup = "data_reports",
             original = "דִּיאַגְרָמָה", translation = "диаграмма",
             definition = "צִיּוּר עִם עִגּוּל אוֹ עַמּוּדוֹת — מַרְאֶה אֵיךְ הַסַּךְ מִתְחַלֵּק בֵּין חֲלָקִים.",
             definitionNative = "Рисунок с кругом или столбиками — показывает, как сумма делится между частями.",
@@ -256,7 +256,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177421L, 177423L, 177424L, 177425L)),
         WordEntity(
             id = 177423, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_reports", transliteration = "graf",
+            pos = "noun", semanticGroup = "data_reports",
             original = "גְּרָף", translation = "график",
             definition = "צִיּוּר עִם קַו עוֹלֶה אוֹ יוֹרֵד — מַרְאֶה אֵיךְ מִסְפָּר מִשְׁתַּנֶּה לְאֹרֶךְ זְמַן.",
             definitionNative = "Рисунок с поднимающейся или падающей линией — показывает, как число меняется во времени.",
@@ -265,7 +265,7 @@ object WordDataHebrewDataEngL1 {
          fillInBlankExclusions = listOf(177421L, 177422L, 177424L, 177425L)),
         WordEntity(
             id = 177424, setId = 1774, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "data_reports", transliteration = "sikum",
+            pos = "noun", semanticGroup = "data_reports",
             original = "סִכּוּם", translation = "итог",
             definition = "מִסְפָּר אֶחָד שֶׁמְּחַבֵּר אֶת כָּל הַשּׁוּרוֹת — לְמָשָׁל סַךְ הַמְּכִירוֹת לַחֹדֶשׁ.",
             definitionNative = "Одно число, складывающее все строки — например, сумма продаж за месяц.",
@@ -274,7 +274,7 @@ object WordDataHebrewDataEngL1 {
         ),
         WordEntity(
             id = 177425, setId = 1774, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_reports", transliteration = "damp",
+            pos = "noun", semanticGroup = "data_reports",
             original = "דַּאמְפּ", translation = "выгрузка (dump)",
             definition = "קֹבֶץ גָּדוֹל שֶׁמַּכִיל הַעְתָּקָה שְׁלֵמָה שֶׁל הַטַּבְלָה — בְּדֶרֶךְ כְּלָל לְגִבּוּי אוֹ לִבְדִיקָה.",
             definitionNative = "Большой файл — полная копия таблицы, обычно для бэкапа или проверки.",

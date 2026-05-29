@@ -73,7 +73,7 @@ object WordDataHebrewSchoolL5 {
         // ── school_policy_he (5) — образовательная политика Израиля ──
         WordEntity(
             id = 181601, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_policy_he", transliteration = "misrád hakhinúkh",
+            pos = "noun", semanticGroup = "school_policy_he",
             original = "מִשְׂרַד הַחִנּוּךְ", translation = "Министерство образования",
             definition = "מוֹסָד מֶמְשַׁלְתִּי שֶׁקּוֹבֵעַ אֶת מַדִּינִיּוּת הַלִּמּוּדִים בְּכָל בָּתֵּי הַסֵּפֶר.",
             definitionNative = "Государственный орган, который задаёт правила учёбы для всех школ страны.",
@@ -82,7 +82,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181602, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_policy_he", transliteration = "réformat dovrát",
+            pos = "noun", semanticGroup = "school_policy_he",
             original = "רֵפוֹרְמַת דּוֹבְרָת", translation = "реформа Доврат",
             definition = "תָּכְנִית לְשִׁנּוּי מַעֲרֶכֶת הַחִנּוּךְ שֶׁהֻצְעָה בִּשְׁנַת אַלְפַּיִם וְאַרְבַּע.",
             definitionNative = "План перестройки израильской системы школ, предложенный в две тысячи четвёртом году.",
@@ -91,7 +91,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181603, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_policy_he", transliteration = "khinúkh khová",
+            pos = "noun", semanticGroup = "school_policy_he",
             original = "חִנּוּךְ חוֹבָה", translation = "обязательное образование",
             definition = "חוֹק שֶׁמְּחַיֵּב כָּל יֶלֶד בְּגִיל מְסֻיָּם לְהַגִּיעַ לְמוֹסַד לִמּוּדִים.",
             definitionNative = "Закон, по которому каждый ребёнок определённого возраста должен ходить в учебное заведение.",
@@ -100,7 +100,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181604, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_policy_he", transliteration = "vá'ad horím artsí",
+            pos = "noun", semanticGroup = "school_policy_he",
             original = "וַעַד הוֹרִים אַרְצִי", translation = "общенациональный родительский комитет",
             definition = "גּוּף שֶׁמְּיַצֵּג הוֹרִים בְּכָל הַמְּדִינָה מוּל מִשְׂרַד הַחִנּוּךְ וְהַכְּנֶסֶת.",
             definitionNative = "Орган, который представляет родителей всей страны перед министерством и парламентом.",
@@ -109,7 +109,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181605, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_policy_he", transliteration = "ta'aríf akhíd",
+            pos = "noun", semanticGroup = "school_policy_he",
             original = "תַּעֲרִיף אָחִיד", translation = "единый тариф родительских платежей",
             definition = "טַבְלָה רִשְׁמִית שֶׁל סְכוּמִים שֶׁמּוּתָּר לְבֵית סֵפֶר לִגְבּוֹת מֵהוֹרִים בַּשָּׁנָה.",
             definitionNative = "Официальная таблица сумм, которые школа имеет право брать с родителей за год.",
@@ -119,7 +119,7 @@ object WordDataHebrewSchoolL5 {
         // ── school_academic_lex (5) — академический иврит ──
         WordEntity(
             id = 181606, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_academic_lex", transliteration = "tezát mekhkár",
+            pos = "noun", semanticGroup = "school_academic_lex",
             original = "תֵּזַת מֶחְקָר", translation = "тезис исследования",
             definition = "רַעֲיוֹן מֶרְכָּזִי שֶׁעֲבוֹדָה אֲקָדֵמִית בָּאָה לְהוֹכִיחַ אוֹ לְבַסֵּס בִּרְאָיוֹת.",
             definitionNative = "Главная мысль, которую научная работа берётся доказать или подкрепить фактами.",
@@ -128,7 +128,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181607, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_academic_lex", transliteration = "hashará mada'ít",
+            pos = "noun", semanticGroup = "school_academic_lex",
             original = "הַשְׁעָרָה מַדָּעִית", translation = "научная гипотеза",
             definition = "נִחוּשׁ מְבֻסָּס שֶׁחוֹקֵר מַצִּיעַ לִפְנֵי שֶׁהוּא בּוֹדֵק אוֹתוֹ בַּמַּעֲבָדָה.",
             definitionNative = "Обоснованная догадка, которую исследователь выдвигает до проверки в лаборатории.",
@@ -137,7 +137,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181608, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_academic_lex", transliteration = "biblyográfya",
+            pos = "noun", semanticGroup = "school_academic_lex",
             original = "בִּיבְּלִיוֹגְרַפְיָה", translation = "библиография",
             definition = "רְשִׁימָה מְסֻדֶּרֶת שֶׁל מָקוֹרוֹת שֶׁעֲלֵיהֶם נִשְׁעֶנֶת עֲבוֹדָה אֲקָדֵמִית.",
             definitionNative = "Упорядоченный список источников, на которые опирается научная работа.",
@@ -146,7 +146,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181609, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_academic_lex", transliteration = "metodológya",
+            pos = "noun", semanticGroup = "school_academic_lex",
             original = "מֶתוֹדוֹלוֹגְיָה", translation = "методология исследования",
             definition = "פֵּרוּט שֶׁל הַדֶּרֶךְ שֶׁבָּהּ נֶאֱסָפִים נְתוּנִים וְנִבְדָּקוֹת הַשְׁעָרוֹת בְּמֶחְקָר.",
             definitionNative = "Описание того, как в работе собирают данные и проверяют выдвинутые предположения.",
@@ -155,7 +155,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181610, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_academic_lex", transliteration = "ma'amár shafút",
+            pos = "noun", semanticGroup = "school_academic_lex",
             original = "מַאֲמָר שָׁפוּט", translation = "рецензированная статья",
             definition = "כְּתָבָה אֲקָדֵמִית שֶׁעָבְרָה בְּדִיקָה שֶׁל מֻמְחִים אֲנוֹנִימִיִּים לִפְנֵי פִּרְסוּם.",
             definitionNative = "Научная публикация, которую перед выходом проверили анонимные эксперты в той же области.",
@@ -165,7 +165,7 @@ object WordDataHebrewSchoolL5 {
         // ── school_pedagogy (5) — педагогические течения и методики ──
         WordEntity(
             id = 181611, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_pedagogy", transliteration = "shitát montessóri",
+            pos = "noun", semanticGroup = "school_pedagogy",
             original = "שִׁיטַת מוֹנְטֶסוֹרִי", translation = "методика Монтессори",
             definition = "גִּישָׁה שֶׁבָּהּ הַיֶּלֶד בּוֹחֵר בְּעַצְמוֹ פְּעִילוּת וְלוֹמֵד דֶּרֶךְ חָמָרִים מוּחָשִׁיִּים.",
             definitionNative = "Подход, при котором ребёнок сам выбирает занятие и учится через осязаемые материалы.",
@@ -174,7 +174,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181612, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_pedagogy", transliteration = "horaá meduyéret",
+            pos = "noun", semanticGroup = "school_pedagogy",
             original = "הוֹרָאָה מְדֻיֶּרֶת", translation = "дифференцированное обучение",
             definition = "סִגְנוֹן לִמּוּד שֶׁבּוֹ הַמּוֹרֶה מַתְאִים מְשִׂימוֹת לִכְשָׁרִים שׁוֹנִים בְּתוֹךְ אוֹתָהּ כִּתָּה.",
             definitionNative = "Стиль работы, при котором учитель подбирает задания под разный уровень детей в одном классе.",
@@ -183,7 +183,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181613, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_pedagogy", transliteration = "limúd mevussás-proyékt",
+            pos = "noun", semanticGroup = "school_pedagogy",
             original = "לִמּוּד מְבֻסַּס פְּרוֹיֶקְט", translation = "проектное обучение",
             definition = "שִׁיטָה שֶׁבָּהּ תַּלְמִידִים חוֹקְרִים שְׁאֵלָה אֲמִתִּית לְאֹרֶךְ שָׁבוּעוֹת בִּמְקוֹם רַק לִשְׁמֹעַ שִׁעוּר.",
             definitionNative = "Подход, при котором ученики неделями копают настоящий вопрос вместо обычного слушания уроков.",
@@ -192,7 +192,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181614, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_pedagogy", transliteration = "khinúkh rigshí",
+            pos = "noun", semanticGroup = "school_pedagogy",
             original = "חִנּוּךְ רִגְשִׁי", translation = "эмоциональное воспитание",
             definition = "תְּחוּם שֶׁמְּלַמֵּד יְלָדִים לְזַהוֹת רְגָשׁוֹת שֶׁל עַצְמָם וְשֶׁל אֲחֵרִים וּלְהָגִיב נָכוֹן.",
             definitionNative = "Направление, которое учит детей распознавать чувства — свои и чужие — и грамотно на них откликаться.",
@@ -201,7 +201,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181615, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_pedagogy", transliteration = "shilúv",
+            pos = "noun", semanticGroup = "school_pedagogy",
             original = "שִׁלּוּב", translation = "инклюзия (учеников с особыми нуждами)",
             definition = "כְּשֶׁתַּלְמִיד עִם צְרָכִים מְיֻחָדִים לוֹמֵד יַחַד עִם כֻּלָּם בַּכִּתָּה הָרְגִילָה.",
             definitionNative = "Когда ученик с особыми потребностями учится со всеми вместе в обычном классе.",
@@ -211,7 +211,7 @@ object WordDataHebrewSchoolL5 {
         // ── school_assessment (5) — аккредитация и стандарты ──
         WordEntity(
             id = 181616, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_assessment", transliteration = "bagrút",
+            pos = "noun", semanticGroup = "school_assessment",
             original = "בַּגְרוּת", translation = "аттестат зрелости",
             definition = "תְּעוּדָה רִשְׁמִית שֶׁמַּקְבְּלִים בְּסוֹף הַתִּיכוֹן אַחֲרֵי שִׁשָּׁה אוֹ שִׁבְעָה מִבְחָנִים.",
             definitionNative = "Официальный документ в конце старшей школы — после шести-семи государственных экзаменов.",
@@ -220,7 +220,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181617, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_assessment", transliteration = "meytsáv",
+            pos = "noun", semanticGroup = "school_assessment",
             original = "מֵיצָב", translation = "стандартизированный школьный тест (мейцав)",
             definition = "מַעֲרֶכֶת בְּדִיקוֹת חִיצוֹנִיּוֹת שֶׁל מִשְׂרַד הַחִנּוּךְ לְמַדִּידַת רָמָה שֶׁל בָּתֵּי סֵפֶר.",
             definitionNative = "Внешние замеры от министерства, по которым сравнивают школы между собой по уровню.",
@@ -229,7 +229,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181618, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_assessment", transliteration = "mivkhán psikhométri",
+            pos = "noun", semanticGroup = "school_assessment",
             original = "מִבְחָן פְּסִיכוֹמֶטְרִי", translation = "психометрический тест",
             definition = "מַעֲרֶכֶת שְׁאֵלוֹת שֶׁבּוֹדֶקֶת חֲשִׁיבָה כַּמּוּתִית, מִלּוּלִית וְאַנְגְּלִית לִקְרַאת אוּנִיבֶרְסִיטָה.",
             definitionNative = "Серия заданий по числам, словам и английскому — для поступления в университет.",
@@ -238,7 +238,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181619, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_assessment", transliteration = "haaraká khitsonít",
+            pos = "noun", semanticGroup = "school_assessment",
             original = "הַעֲרָכָה חִיצוֹנִית", translation = "внешняя оценка",
             definition = "בְּדִיקָה שֶׁעוֹרֵךְ מוּמְחֶה מִבַּחוּץ כְּדֵי לִבְחֹן אֶת אֵיכוּת הַלִּמּוּדִים בְּבֵית סֵפֶר.",
             definitionNative = "Проверка, которую проводит специалист со стороны — чтобы оценить качество учёбы в школе.",
@@ -247,7 +247,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181620, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "school_assessment", transliteration = "hasmakhá akadémit",
+            pos = "phrase", semanticGroup = "school_assessment",
             original = "הַסְמָכָה אֲקָדֶמִית", translation = "академическое утверждение",
             definition = "אִישּׁוּר רִשְׁמִי שֶׁמּוֹסָד יָכוֹל לְהַעֲנִיק תְּאָרִים בְּעוֹלָם הַלִּמּוּדִים הַגְּבוֹהִים.",
             definitionNative = "Официальное подтверждение, что заведение вправе присваивать степени в высшей школе.",
@@ -257,7 +257,7 @@ object WordDataHebrewSchoolL5 {
         // ── school_admin_infra (5) — администрация и инфраструктура ──
         WordEntity(
             id = 181621, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_admin_infra", transliteration = "menahél bet-séfer",
+            pos = "noun", semanticGroup = "school_admin_infra",
             original = "מְנַהֵל בֵּית סֵפֶר", translation = "директор школы",
             definition = "אִישׁ שֶׁאַחְרַאי עַל כָּל הַמַּעֲרֶכֶת — מוֹרִים, תַּלְמִידִים, תַּקְצִיב וְקֶשֶׁר עִם הוֹרִים.",
             definitionNative = "Тот, кто отвечает за всё — учителей, учеников, бюджет и связь с родителями.",
@@ -266,7 +266,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181622, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_admin_infra", transliteration = "kámpus khinukhí",
+            pos = "noun", semanticGroup = "school_admin_infra",
             original = "קַמְפּוּס חִנּוּכִי", translation = "образовательный кампус",
             definition = "מִתְחָם רָחָב שֶׁמְּאַחֵד מִסְפַּר בָּתֵּי סֵפֶר וּמִתְקְנֵי סְפּוֹרְט תַּחַת נִיהוּל אֶחָד.",
             definitionNative = "Большая территория, которая собирает несколько школ и спортсооружений под общим управлением.",
@@ -275,7 +275,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181623, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_admin_infra", transliteration = "moétset hamorím",
+            pos = "noun", semanticGroup = "school_admin_infra",
             original = "מוֹעֶצֶת הַמּוֹרִים", translation = "педагогический совет",
             definition = "כְּנֶס שֶׁל כָּל הַמּוֹרִים בְּבֵית סֵפֶר לְהַחְלָטוֹת עַל תַּלְמִידִים, צִיּוּנִים וּמַעֲבָרִים.",
             definitionNative = "Сбор всех учителей школы — решают по ученикам, оценкам и переводам в следующий класс.",
@@ -284,7 +284,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181624, setId = 1816, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "school_admin_infra", transliteration = "pikúakh meshrád",
+            pos = "noun", semanticGroup = "school_admin_infra",
             original = "פִּקּוּחַ מִשְׂרָדִי", translation = "школьная инспекция (министерская)",
             definition = "גּוּף שֶׁל מִשְׂרַד הַחִנּוּךְ שֶׁבּוֹדֵק אֶת רָמַת הַהוֹרָאָה וְקִיּוּם הַתָּכְנִית בְּבָתֵּי סֵפֶר.",
             definitionNative = "Подразделение министерства, которое следит за уровнем преподавания и выполнением программы.",
@@ -293,7 +293,7 @@ object WordDataHebrewSchoolL5 {
 
         WordEntity(
             id = 181625, setId = 1816, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_admin_infra", transliteration = "rakáz shikhvá",
+            pos = "noun", semanticGroup = "school_admin_infra",
             original = "רַכָּז שִׁכְבָה", translation = "координатор параллели",
             definition = "מוֹרֶה שֶׁאַחְרַאי עַל כָּל הַכִּתּוֹת בְּאוֹתוֹ גִיל וּמְתַאֵם בֵּין הַמְּחַנְּכוֹת שֶׁלָּהֶן.",
             definitionNative = "Учитель, который отвечает за все классы одного возраста и согласует работу их классных руководителей.",

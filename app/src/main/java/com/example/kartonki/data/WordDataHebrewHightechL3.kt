@@ -50,7 +50,7 @@ object WordDataHebrewHightechL3 {
         // ── hightech_frontend (5) — клиентская разработка ──
         WordEntity(
             id = 174701, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_frontend", transliteration = "freymverk",
+            pos = "noun", semanticGroup = "hightech_frontend",
             original = "פְרֵיימְוֶורְק", translation = "фреймворк",
             definition = "סֵט מוּכָן שֶׁל קוֹד וְכֵלִים שֶׁעֲלֵיהֶם בּוֹנִים אַפְּלִיקַצְיָה — חוֹסֵךְ זְמַן.",
             definitionNative = "Готовый набор кода и инструментов, на котором собирают приложение — экономит время.",
@@ -59,7 +59,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174702L, 174703L, 174704L, 174705L)),
         WordEntity(
             id = 174702, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_frontend", transliteration = "komponent",
+            pos = "noun", semanticGroup = "hightech_frontend",
             original = "קוֹמְפּוֹנֶנְט", translation = "компонент UI",
             definition = "חֲתִיכַת מִמְשָׁק עַצְמָאִית, כְּמוֹ כַּפְתּוֹר אוֹ טֹפֶס, שֶׁמַּרְכִּיבִים מִמֶּנָּה דַּף.",
             definitionNative = "Самостоятельный кусок интерфейса — кнопка или форма — из которого собирают страницу.",
@@ -68,7 +68,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174701L, 174703L, 174704L, 174705L)),
         WordEntity(
             id = 174703, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_frontend", transliteration = "render",
+            pos = "noun", semanticGroup = "hightech_frontend",
             original = "רֶנְדֶר", translation = "рендеринг (отрисовка)",
             definition = "הַשָּׁלָב שֶׁבּוֹ הַדַּפְדְּפָן הוֹפֵךְ קוֹד לְתְּמוּנָה אֲמִיתִּית עַל הַמָּסָךְ.",
             definitionNative = "Этап, когда браузер превращает код в реальную картинку на экране.",
@@ -77,7 +77,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174701L, 174702L, 174704L, 174705L)),
         WordEntity(
             id = 174704, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_frontend", transliteration = "nihul steyt",
+            pos = "noun", semanticGroup = "hightech_frontend",
             original = "נִיהוּל סְטֵייט", translation = "управление состоянием (state-management)",
             definition = "שִׁיטָה לִשְׁמֹר וּלְעַדְכֵּן נְתוּנִים מְשֻׁתָּפִים בֵּין חֲלָקִים שׁוֹנִים שֶׁל הָאַפְּלִיקַצְיָה.",
             definitionNative = "Способ хранить и обновлять общие данные между разными частями приложения.",
@@ -86,7 +86,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174701L, 174702L, 174703L, 174705L)),
         WordEntity(
             id = 174705, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_frontend", transliteration = "bandler",
+            pos = "noun", semanticGroup = "hightech_frontend",
             original = "בַּנְדְּלֶר", translation = "сборщик (bundler)",
             definition = "כְּלִי שֶׁמְּאַחֵד הַרְבֵּה קַבְצֵי קוֹד לִקְבָצִים מְעַטִים שֶׁהַדַּפְדְּפָן טוֹעֵן מַהֵר.",
             definitionNative = "Инструмент, объединяющий много файлов кода в несколько — браузер грузит их быстрее.",
@@ -97,7 +97,7 @@ object WordDataHebrewHightechL3 {
         // ── hightech_backend (5) — серверная сторона ──
         WordEntity(
             id = 174706, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_backend", transliteration = "endpoint",
+            pos = "noun", semanticGroup = "hightech_backend",
             original = "אֶנְדְּפּוֹינְט", translation = "эндпоинт",
             definition = "כְּתֹבֶת מְסֻיֶּמֶת שֶׁאֵלֶיהָ הָאַפְּלִיקַצְיָה פּוֹנָה כְּדֵי לִקְרֹא אוֹ לִכְתֹּב נְתוּנִים.",
             definitionNative = "Конкретный адрес, к которому приложение обращается, чтобы прочитать или записать данные.",
@@ -106,7 +106,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174707L, 174708L, 174709L, 174710L)),
         WordEntity(
             id = 174707, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_backend", transliteration = "ey-pi-ay",
+            pos = "noun", semanticGroup = "hightech_backend",
             original = "אֵיי-פִּי-אַיי", translation = "API (REST-интерфейс)",
             definition = "חֻקֵּי הַשִּׂיחָה בֵּין שְׁתֵּי תּוֹכְנוֹת — מָה לִשְׁאֹל וּבְאֵיזֶה פוֹרְמָט מְקַבְּלִים תְּשׁוּבָה.",
             definitionNative = "Правила разговора между двумя программами — что спрашивать и в каком формате приходит ответ.",
@@ -115,7 +115,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174706L, 174708L, 174709L, 174710L)),
         WordEntity(
             id = 174708, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_backend", transliteration = "midlveyer",
+            pos = "noun", semanticGroup = "hightech_backend",
             original = "מִידְלְוֵוייר", translation = "middleware",
             definition = "שִׁכְבַת קוֹד שֶׁיּוֹשֶׁבֶת בֵּין הַבַּקָּשָׁה לְבֵין הַלּוֹגִיקָה וּמְבַצַּעַת בְּדִיקוֹת אוֹ רִישׁוּם.",
             definitionNative = "Слой кода между запросом и логикой — проверяет, логирует или меняет данные.",
@@ -124,7 +124,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174706L, 174707L, 174709L, 174710L)),
         WordEntity(
             id = 174709, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_backend", transliteration = "o-ar-em",
+            pos = "noun", semanticGroup = "hightech_backend",
             original = "אוֹ-אַר-אֶם", translation = "ORM (объектно-реляционный слой)",
             definition = "סִפְרִיָּה שֶׁמְּתַרְגֶּמֶת קוֹד תּוֹכְנָה לִשְׁאִילְתוֹת מָסַד בְּלִי לִכְתֹּב SQL בַּיָּד.",
             definitionNative = "Библиотека, переводящая код в обращения к базе — без писания SQL руками.",
@@ -133,7 +133,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174706L, 174707L, 174708L, 174710L)),
         WordEntity(
             id = 174710, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_backend", transliteration = "mesej kyu",
+            pos = "noun", semanticGroup = "hightech_backend",
             original = "מֶסֶג׳ קְיוּ", translation = "очередь сообщений",
             definition = "תָּא בּוּפֶר שֶׁמַּחְזִיק עֲבוֹדוֹת בְּהַמְתָּנָה כְּדֵי שֶׁשֵׁרוּתִים יְעַבְּדוּ אוֹתָן בַּתּוֹר.",
             definitionNative = "Буфер, в котором задачи стоят в очереди, чтобы сервисы обрабатывали их по порядку.",
@@ -144,7 +144,7 @@ object WordDataHebrewHightechL3 {
         // ── hightech_database (5) — базы данных ──
         WordEntity(
             id = 174711, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_database", transliteration = "skhema",
+            pos = "noun", semanticGroup = "hightech_database",
             original = "סְכֵמָה", translation = "схема БД",
             definition = "תֵּאוּר שֶׁל מִבְנֶה הַמָּסַד — אֵילוּ טַבְלָאוֹת קַיָּמוֹת וְאֵילוּ שָׂדוֹת בָּהֶן.",
             definitionNative = "Описание устройства базы — какие таблицы существуют и какие в них поля.",
@@ -153,7 +153,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174712L, 174713L, 174714L, 174715L)),
         WordEntity(
             id = 174712, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_database", transliteration = "indeks",
+            pos = "noun", semanticGroup = "hightech_database",
             original = "אִינְדֶּקְס", translation = "индекс (БД)",
             definition = "מִבְנֶה עֵזֶר שֶׁמְּזָרֵז חִפּוּשׂ עַל שָׂדֶה מְסֻיָּם בְּטַבְלָאוֹת גְּדוֹלוֹת.",
             definitionNative = "Вспомогательная структура — ускоряет поиск по конкретному полю в больших таблицах.",
@@ -162,7 +162,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174711L, 174713L, 174714L, 174715L)),
         WordEntity(
             id = 174713, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_database", transliteration = "she'ilta",
+            pos = "noun", semanticGroup = "hightech_database",
             original = "שְׁאִילְתָּה", translation = "запрос (query)",
             definition = "פְּקוּדָה שֶׁמַּגִּיעָה לַמָּסַד וּמְבַקֶּשֶׁת לִקְרֹא אוֹ לְשַׁנּוֹת רְשׁוּמוֹת.",
             definitionNative = "Команда к базе — попросить прочитать или изменить записи.",
@@ -171,7 +171,7 @@ object WordDataHebrewHightechL3 {
         ),
         WordEntity(
             id = 174714, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_database", transliteration = "migratsya",
+            pos = "noun", semanticGroup = "hightech_database",
             original = "מִיגְרַצְיָה", translation = "миграция (схемы)",
             definition = "סְקְרִיפְּט שֶׁמְּשַׁנֶּה אֶת הַמָּסַד מִגִּרְסָה אַחַת לַחֲדָשָׁה בְּלִי לְאַבֵּד נְתוּנִים.",
             definitionNative = "Скрипт, переводящий базу с одной версии на новую — без потери данных.",
@@ -180,7 +180,7 @@ object WordDataHebrewHightechL3 {
         ),
         WordEntity(
             id = 174715, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_database", transliteration = "replikatsya",
+            pos = "noun", semanticGroup = "hightech_database",
             original = "רֶפְּלִיקַצְיָה", translation = "репликация (БД)",
             definition = "הַעְתָּקָה אוֹטוֹמָטִית שֶׁל נְתוּנִים מִשָּׂרָת רָאשִׁי לְשָׂרָתִים מִשְׁנִיִּים.",
             definitionNative = "Автоматическое копирование данных с главного сервера на дополнительные.",
@@ -191,7 +191,7 @@ object WordDataHebrewHightechL3 {
         // ── hightech_cloud (5) — облачная инфраструктура ──
         WordEntity(
             id = 174716, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_cloud", transliteration = "sherut anan",
+            pos = "noun", semanticGroup = "hightech_cloud",
             original = "שֵׁירוּת עָנָן", translation = "облачный сервис",
             definition = "תַּחֲנַת חִישּׁוּב מְרֻחֶקֶת שֶׁמַּשְׂכִּירָה כֹּחַ וְזִכָּרוֹן לְפִי שִׂמּוּשׁ אֲמִיתִּי.",
             definitionNative = "Удалённая вычислительная станция — сдаёт мощность и память по реальному использованию.",
@@ -200,7 +200,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174717L, 174718L, 174719L, 174720L)),
         WordEntity(
             id = 174717, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_cloud", transliteration = "konteyner",
+            pos = "noun", semanticGroup = "hightech_cloud",
             original = "קוֹנְטֵיינֶר", translation = "контейнер",
             definition = "אֲרִיזָה קַלָּה שֶׁכּוֹלֶלֶת תּוֹכְנָה וְאֶת כָּל מָה שֶׁצְּרִיכָה לִרְאֹץ בְּכָל מָקוֹם.",
             definitionNative = "Лёгкая упаковка с программой и всем, что ей нужно — запускается где угодно.",
@@ -209,7 +209,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174716L, 174718L, 174719L, 174720L)),
         WordEntity(
             id = 174718, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_cloud", transliteration = "orkestratsya",
+            pos = "noun", semanticGroup = "hightech_cloud",
             original = "אוֹרְקֶסְטְרַצְיָה", translation = "оркестрация",
             definition = "תֵּאוּם אוֹטוֹמָטִי שֶׁל הַרְבֵּה קוֹנְטֵיינֶרִים — מִי קָם, מִי נָפַל וּמִי מְקַבֵּל תְּנוּעָה.",
             definitionNative = "Автокоординация многих контейнеров — кто стартовал, кто упал и кто получает трафик.",
@@ -218,7 +218,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174716L, 174717L, 174719L, 174720L)),
         WordEntity(
             id = 174719, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_cloud", transliteration = "skeyling",
+            pos = "noun", semanticGroup = "hightech_cloud",
             original = "סְקֵיילִינְג", translation = "масштабирование (scaling)",
             definition = "הוֹסָפָה אוֹטוֹמָטִית שֶׁל מַשְׁאַבִּים כְּשֶׁיֵשׁ הַרְבֵּה תְּנוּעָה — וְהוֹרָדָה כְּשֶׁשֶּׁקֶט.",
             definitionNative = "Автодобавление ресурсов при росте трафика и снятие — когда тихо.",
@@ -227,7 +227,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174716L, 174717L, 174718L, 174720L)),
         WordEntity(
             id = 174720, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_cloud", transliteration = "regyon",
+            pos = "noun", semanticGroup = "hightech_cloud",
             original = "רֶגְיוֹן", translation = "регион (облачный)",
             definition = "אֵזוֹר גֵּאוֹגְרָפִי שֶׁבּוֹ סַפָּק הָעָנָן מַחֲזִיק חַוָּת שָׂרָתִים פִיסִית.",
             definitionNative = "Географическая зона, в которой облачный провайдер физически держит дата-центр.",
@@ -238,7 +238,7 @@ object WordDataHebrewHightechL3 {
         // ── hightech_arch_patterns (5) — архитектурные паттерны ──
         WordEntity(
             id = 174721, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_arch_patterns", transliteration = "maykroservis",
+            pos = "noun", semanticGroup = "hightech_arch_patterns",
             original = "מַיקְרוֹסֶרְוִיס", translation = "микросервис",
             definition = "שֵׁרוּת קָטָן וְעַצְמָאִי שֶׁאַחְרַאי עַל יְכוֹלֶת אַחַת בִּלְבַד וּמְדַבֵּר עִם אֲחֵרִים.",
             definitionNative = "Маленький независимый сервис — отвечает за одну задачу и общается с другими.",
@@ -247,7 +247,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174722L, 174723L, 174724L, 174725L)),
         WordEntity(
             id = 174722, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_arch_patterns", transliteration = "monolit",
+            pos = "noun", semanticGroup = "hightech_arch_patterns",
             original = "מוֹנוֹלִית", translation = "монолит",
             definition = "אַפְּלִיקַצְיָה גְּדוֹלָה אַחַת שֶׁכָּל הַחֲלָקִים שֶׁלָּהּ אֲרוּזִים יַחַד וְעוֹלִים בִּפְעֻלָּה אַחַת.",
             definitionNative = "Одно большое приложение — все его части упакованы вместе и поднимаются одной командой.",
@@ -256,7 +256,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174721L, 174723L, 174724L, 174725L)),
         WordEntity(
             id = 174723, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_arch_patterns", transliteration = "ivent sorsing",
+            pos = "noun", semanticGroup = "hightech_arch_patterns",
             original = "אִיוֶנְט סוֹרְסִינְג", translation = "event sourcing",
             definition = "גִּישָׁה שֶׁשּׁוֹמֶרֶת כָּל פְּעֻלָּה כְּאֵירוּעַ נִפְרָד וּבוֹנָה אֶת הַמַּצָּב מֵהֶם בַּסּוֹף.",
             definitionNative = "Подход — каждое действие сохраняют как отдельное событие, и из них собирают итоговое состояние.",
@@ -265,7 +265,7 @@ object WordDataHebrewHightechL3 {
          fillInBlankExclusions = listOf(174721L, 174722L, 174724L, 174725L)),
         WordEntity(
             id = 174724, setId = 1747, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_arch_patterns", transliteration = "shikhvat kesh",
+            pos = "noun", semanticGroup = "hightech_arch_patterns",
             original = "שִׁכְבַת קֵישׁ", translation = "кэш-слой",
             definition = "אֵזוֹר זְמַנִּי בְּזִכָּרוֹן מָהִיר שֶׁשּׁוֹמֵר תְּשׁוּבוֹת תְּכוּפוֹת כְּדֵי לֹא לִדְרֹשׁ אוֹתָן שׁוּב.",
             definitionNative = "Временная зона в быстрой памяти — хранит частые ответы, чтобы не запрашивать заново.",
@@ -274,7 +274,7 @@ object WordDataHebrewHightechL3 {
         ),
         WordEntity(
             id = 174725, setId = 1747, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_arch_patterns", transliteration = "loud balanser",
+            pos = "noun", semanticGroup = "hightech_arch_patterns",
             original = "לוֹאוּד בָּלַנְסֶר", translation = "балансировщик нагрузки",
             definition = "רְכִיב שֶׁמְּחַלֵּק בַּקָּשׁוֹת נִכְנָסוֹת בֵּין מַסְפַּר שָׂרָתִים כְּדֵי שֶׁאַף אֶחָד לֹא יִקְרֹס.",
             definitionNative = "Компонент, делящий входящие запросы между несколькими серверами — чтобы никто не упал.",

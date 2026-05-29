@@ -60,7 +60,7 @@ object WordDataHebrewCyberL2 {
         // ── cyber_2fa (5) — двухэтапная проверка входа ──
         WordEntity(
             id = 178101, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_2fa", transliteration = "imut du-shlabi",
+            pos = "noun", semanticGroup = "cyber_2fa",
             original = "אִימוּת דּוּ-שְׁלַבִּי", translation = "двухэтапная проверка",
             definition = "כְּנִיסָה לַחֶשְׁבּוֹן בִּשְׁנֵי שְׁלַבִּים — סִיסְמָה וְעוֹד אִישּׁוּר נוֹסָף.",
             definitionNative = "Вход в аккаунт в два шага — пароль и ещё одно подтверждение.",
@@ -69,7 +69,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178102L, 178103L, 178104L, 178105L)),
         WordEntity(
             id = 178102, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_2fa", transliteration = "kod be-es-em-es",
+            pos = "noun", semanticGroup = "cyber_2fa",
             original = "קוֹד בְּאֶס-אֶם-אֶס", translation = "код по SMS",
             definition = "מִסְפָּר חַד-פַּעֲמִי שֶׁמַּגִּיעַ לַטֶּלֶפוֹן בַּהוֹדָעָה לְפִי בַּקָּשַׁת הָאֲתָר.",
             definitionNative = "Одноразовое число — приходит на телефон сообщением по запросу сайта.",
@@ -78,7 +78,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178101L, 178103L, 178104L, 178105L)),
         WordEntity(
             id = 178103, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_2fa", transliteration = "kod me-aplikatsya",
+            pos = "noun", semanticGroup = "cyber_2fa",
             original = "קוֹד מֵאַפְּלִיקַצְיָה", translation = "код из приложения",
             definition = "מִסְפָּר שֶׁמִּתְחַלֵּף כָּל שְׁלוֹשִׁים שְׁנִיּוֹת בְּתוֹךְ אַפְּלִיקַצְיָה מְיֻחֶדֶת בַּטֶּלֶפוֹן.",
             definitionNative = "Число, меняется каждые тридцать секунд — внутри особого приложения на телефоне.",
@@ -87,7 +87,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178101L, 178102L, 178104L, 178105L)),
         WordEntity(
             id = 178104, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_2fa", transliteration = "maftea'kh fizi",
+            pos = "noun", semanticGroup = "cyber_2fa",
             original = "מַפְתֵּחַ פִיזִי", translation = "физический ключ (USB-токен)",
             definition = "הִתְקַן קָטָן שֶׁמִּתְחַבֵּר לַמַּחְשֵׁב וּמְאַשֵּׁר אֶת הַזֶּהוּת בִּלְחִיצָה אַחַת.",
             definitionNative = "Маленькое устройство — подключается к компьютеру и подтверждает личность одним нажатием.",
@@ -96,7 +96,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178101L, 178102L, 178103L, 178105L)),
         WordEntity(
             id = 178105, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_2fa", transliteration = "kod giboi",
+            pos = "noun", semanticGroup = "cyber_2fa",
             original = "קוֹד גִּבּוּי", translation = "резервный код (для восстановления)",
             definition = "רְשִׁימָה שֶׁל מִסְפָּרִים שֶׁמַּדְפִּיסִים מֵרֹאשׁ — לְמִקְרֶה שֶׁאַתָּה מְאַבֵּד גִּישָׁה לַטֶּלֶפוֹן.",
             definitionNative = "Список чисел — печатают заранее на случай, если потеряешь доступ к телефону.",
@@ -107,7 +107,7 @@ object WordDataHebrewCyberL2 {
         // ── cyber_backup (5) — резервные копии данных ──
         WordEntity(
             id = 178106, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_backup", transliteration = "otek shamur",
+            pos = "noun", semanticGroup = "cyber_backup",
             original = "עֹתֶק שָׁמוּר", translation = "резервная копия",
             definition = "מַעֲתִיק שֶׁל הַקְּבָצִים שֶׁמַּחֲזִיקִים בְּמָקוֹם נִפְרָד לְמִקְרֶה שֶׁהַמְּקוֹרִיִּים יֹאבְדוּ.",
             definitionNative = "Двойник файлов — держат отдельно, если оригиналы вдруг пропадут.",
@@ -116,7 +116,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178107L, 178108L, 178109L)),
         WordEntity(
             id = 178107, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_backup", transliteration = "giboi be-anan",
+            pos = "noun", semanticGroup = "cyber_backup",
             original = "גִּבּוּי בֶּעָנָן", translation = "облачный бэкап",
             definition = "שְׁמִירָה אוֹטוֹמָטִית שֶׁל הַקְּבָצִים בַּשְּׁרָתִים שֶׁל גוּגֶל אוֹ אַפֶּל בָּאִינְטֶרְנֶט.",
             definitionNative = "Автоматическое сохранение файлов на серверах Google или Apple в интернете.",
@@ -125,7 +125,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178106L, 178108L, 178109L)),
         WordEntity(
             id = 178108, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_backup", transliteration = "giboi mekomi",
+            pos = "noun", semanticGroup = "cyber_backup",
             original = "גִּבּוּי מְקוֹמִי", translation = "локальный бэкап (на диск)",
             definition = "הַעְתָּקָה שֶׁל הַקְּבָצִים לְכוֹנָן חִיצוֹנִי שֶׁמְּחַבְּרִים לַמַּחְשֵׁב פִּיזִית.",
             definitionNative = "Копирование файлов на внешний диск, который физически подключают к компьютеру.",
@@ -134,7 +134,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178106L, 178107L, 178109L)),
         WordEntity(
             id = 178109, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_backup", transliteration = "shikhzur kvatsim",
+            pos = "noun", semanticGroup = "cyber_backup",
             original = "שִׁחְזוּר קְבָצִים", translation = "восстановление файлов",
             definition = "הַחְזָרָה שֶׁל מִסְמָכִים שֶׁאָבְדוּ אוֹ נִמְחֲקוּ — מִתּוֹךְ הַעְתָּק שֶׁשָׁמוּר מֵרֹאשׁ.",
             definitionNative = "Возврат документов, которые пропали или удалились — из заранее сохранённого двойника.",
@@ -143,7 +143,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178106L, 178107L, 178108L)),
         WordEntity(
             id = 178110, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "adjective", semanticGroup = "cyber_backup", transliteration = "metspan",
+            pos = "adjective", semanticGroup = "cyber_backup",
             original = "מֻצְפָּן", translation = "зашифрованный (о копии)",
             definition = "סָגוּר עַל יְדֵי קוֹד סוֹדִי — בְּלִי הַסִּיסְמָה הַנְּכוֹנָה אִי-אֶפְשָׁר לִקְרֹא אוֹתוֹ.",
             definitionNative = "Запертый секретным кодом — без правильного пароля прочитать его нельзя.",
@@ -154,7 +154,7 @@ object WordDataHebrewCyberL2 {
         // ── cyber_updates (5) — обновления и патчи ──
         WordEntity(
             id = 178111, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_updates", transliteration = "idkun ma'arekhet",
+            pos = "noun", semanticGroup = "cyber_updates",
             original = "עִדְכּוּן מַעֲרֶכֶת", translation = "обновление системы",
             definition = "גִּרְסָה חֲדָשָׁה שֶׁל הַתּוֹכְנָה שֶׁמַּתְקִינִים עַל הַמַּכְשִׁיר וּמַחְלִיפָה אֶת הַיְּשָׁנָה.",
             definitionNative = "Свежая версия программы — ставят на устройство, она заменяет старую.",
@@ -163,7 +163,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178112L, 178113L, 178114L, 178115L)),
         WordEntity(
             id = 178112, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_updates", transliteration = "tlay avtakha",
+            pos = "noun", semanticGroup = "cyber_updates",
             original = "טְלַאי אַבְטָחָה", translation = "патч безопасности",
             definition = "תִּקּוּן קָטָן שֶׁסּוֹגֵר חוֹר מְסֻכָּן בַּתּוֹכְנָה לִפְנֵי שֶׁתּוֹקְפִים יְנַצְּלוּ אוֹתוֹ.",
             definitionNative = "Маленькая починка — закрывает опасную дыру в программе до того, как ею воспользуются.",
@@ -172,7 +172,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178111L, 178113L, 178114L, 178115L)),
         WordEntity(
             id = 178113, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_updates", transliteration = "tikkun nekudat torpa",
+            pos = "noun", semanticGroup = "cyber_updates",
             original = "תִּקּוּן נְקֻדַּת תֻּרְפָּה", translation = "исправление уязвимости",
             definition = "סְגִירָה שֶׁל מָקוֹם חַלָּשׁ בַּקּוֹד שֶׁאִפְשֵׁר לְהָאקֵרִים לְהִכָּנֵס לַמַּחְשֵׁב.",
             definitionNative = "Заделка слабого места в коде — через него хакеры могли войти в компьютер.",
@@ -181,7 +181,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178111L, 178112L, 178114L, 178115L)),
         WordEntity(
             id = 178114, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_updates", transliteration = "ipul mekhudash",
+            pos = "noun", semanticGroup = "cyber_updates",
             original = "אִתְחוּל מְחֻדָּשׁ", translation = "плановая перезагрузка",
             definition = "כִּבּוּי וְהַדְלָקָה שֶׁל הַמַּכְשִׁיר שֶׁמַּשְׁלִימִים אֶת הַהַתְקָנָה שֶׁל הַשִּׁנּוּיִים הַחֲדָשִׁים.",
             definitionNative = "Выключение и включение устройства — завершает установку свежих изменений.",
@@ -190,7 +190,7 @@ object WordDataHebrewCyberL2 {
         ),
         WordEntity(
             id = 178115, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_updates", transliteration = "girsa adkanit",
+            pos = "noun", semanticGroup = "cyber_updates",
             original = "גִּרְסָה עֲדְכָּנִית", translation = "актуальная версия",
             definition = "הַמַּהֲדוּרָה הָאַחֲרוֹנָה שֶׁל הַתּוֹכְנָה שֶׁכּוֹלֶלֶת אֶת כָּל הַתִּקּוּנִים הַחֲדָשִׁים.",
             definitionNative = "Последний выпуск программы — со всеми свежими починками внутри.",
@@ -201,7 +201,7 @@ object WordDataHebrewCyberL2 {
         // ── cyber_safe_browsing (5) — безопасный сёрфинг ──
         WordEntity(
             id = 178116, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_safe_browsing", transliteration = "vaifai tsiburi",
+            pos = "noun", semanticGroup = "cyber_safe_browsing",
             original = "וַאיְ-פַיי צִיבּוּרִי", translation = "публичный Wi-Fi",
             definition = "רֶשֶׁת אַלְחוּטִית פְּתוּחָה בְּבֵית קָפֶה אוֹ בִּשְׂדֵה תְּעוּפָה — לְלֹא סִיסְמָה אוֹ עִם סִיסְמָה מְשֻׁתֶּפֶת.",
             definitionNative = "Открытая беспроводная сеть в кафе или аэропорту — без пароля или с общим паролем.",
@@ -210,7 +210,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178117L, 178118L, 178119L, 178120L)),
         WordEntity(
             id = 178117, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_safe_browsing", transliteration = "khibur mugan",
+            pos = "noun", semanticGroup = "cyber_safe_browsing",
             original = "חִבּוּר מֻגָּן", translation = "защищённое соединение",
             definition = "קֶשֶׁר מֻצְפָּן בֵּין הַדַּפְדְּפָן לָאֲתָר — אַף אֶחָד בָּאֶמְצַע לֹא יָכוֹל לִקְרֹא אוֹתוֹ.",
             definitionNative = "Шифрованная связь между браузером и сайтом — никто посередине не прочтёт.",
@@ -219,7 +219,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178116L, 178118L, 178119L, 178120L)),
         WordEntity(
             id = 178118, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_safe_browsing", transliteration = "siman manul",
+            pos = "noun", semanticGroup = "cyber_safe_browsing",
             original = "סִימַן מַנְעוּל", translation = "значок замочка (в адресной строке)",
             definition = "אִיקוֹן קָטָן בְּצַד הַכְּתֹבֶת שֶׁמַּרְאֶה שֶׁהַתִּקְשֹׁרֶת עִם הָאֲתָר מֻצְפֶּנֶת.",
             definitionNative = "Маленькая иконка рядом с адресом — показывает, что связь с сайтом зашифрована.",
@@ -228,7 +228,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178116L, 178117L, 178119L, 178120L)),
         WordEntity(
             id = 178119, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_safe_browsing", transliteration = "bdikat ktovet",
+            pos = "noun", semanticGroup = "cyber_safe_browsing",
             original = "בְּדִיקַת כְּתֹבֶת", translation = "проверка адреса сайта",
             definition = "קְרִיאָה שֶׁל הַשּׁוּרָה הָעֶלְיוֹנָה כְּדֵי לְוַדֵּא שֶׁאַתָּה לֹא בְּאֲתָר מְזֻיָּף שֶׁמְּחַקֶּה אֶת הָאֲמִתִּי.",
             definitionNative = "Чтение верхней строки — убедиться, что ты не на поддельном сайте, что копирует настоящий.",
@@ -237,7 +237,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178116L, 178117L, 178118L, 178120L)),
         WordEntity(
             id = 178120, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_safe_browsing", transliteration = "gli'a peratit",
+            pos = "noun", semanticGroup = "cyber_safe_browsing",
             original = "גְּלִישָׁה פְּרָטִית", translation = "режим инкогнито",
             definition = "מַצָּב שֶׁל הַדַּפְדְּפָן שֶׁבּוֹ הַהִיסְטוֹרְיָה וְהָעוּגִיּוֹת לֹא נִשְׁמָרוֹת בַּמַּחְשֵׁב.",
             definitionNative = "Состояние браузера — история и cookies не сохраняются на компьютере.",
@@ -248,7 +248,7 @@ object WordDataHebrewCyberL2 {
         // ── cyber_email_safety (5) — гигиена электронной почты ──
         WordEntity(
             id = 178121, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_email_safety", transliteration = "tofes mtsoraf",
+            pos = "noun", semanticGroup = "cyber_email_safety",
             original = "טֹפֶס מְצֹרָף", translation = "вложение в письме",
             definition = "קֹבֶץ שֶׁמְּצַרְפִים לְהוֹדָעַת דֹּאַר — קוֹרֵא מַחְשֵׁב פּוֹתֵחַ אוֹתוֹ בִּלְחִיצָה.",
             definitionNative = "Файл, прицепленный к почтовому сообщению — открывается одним кликом.",
@@ -257,7 +257,7 @@ object WordDataHebrewCyberL2 {
         ),
         WordEntity(
             id = 178122, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_email_safety", transliteration = "imut sholeakh",
+            pos = "noun", semanticGroup = "cyber_email_safety",
             original = "אִימוּת שׁוֹלֵחַ", translation = "проверка отправителя",
             definition = "וִדּוּא שֶׁכְּתֹבֶת הַמַּיְלָר אֲמִתִּית וְלֹא הַעְתָּקָה דּוֹמָה שֶׁמַּטְעָה אֶת הָעַיִן.",
             definitionNative = "Убедиться, что email-адрес настоящий, а не похожая копия — обманывает глаз.",
@@ -266,7 +266,7 @@ object WordDataHebrewCyberL2 {
         ),
         WordEntity(
             id = 178123, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_email_safety", transliteration = "arkhion hoda'ot",
+            pos = "noun", semanticGroup = "cyber_email_safety",
             original = "אַרְכִיּוֹן הוֹדָעוֹת", translation = "архив сообщений",
             definition = "תִּקְיָה שֶׁבָּהּ שׁוֹמְרִים מַיְלִים יְשָׁנִים לְלֹא לִמְחֹק אוֹתָם — לְשִׁמּוּשׁ עָתִידִי.",
             definitionNative = "Папка для старых писем — храним, не удаляя, на будущее.",
@@ -275,7 +275,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178121L, 178122L, 178124L, 178125L)),
         WordEntity(
             id = 178124, setId = 1781, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "cyber_email_safety", transliteration = "masnen doar zevel",
+            pos = "noun", semanticGroup = "cyber_email_safety",
             original = "מַסְנֵן דּוֹאַר זֶבֶל", translation = "спам-фильтр",
             definition = "כְּלִי אוֹטוֹמָטִי שֶׁמַּפְרִיד הוֹדָעוֹת פִּרְסֹמֶת מְעַצְבָּנוֹת מֵהוֹדָעוֹת רְגִילוֹת.",
             definitionNative = "Автоматический инструмент — отделяет рекламные сообщения-надоеды от обычных писем.",
@@ -284,7 +284,7 @@ object WordDataHebrewCyberL2 {
          fillInBlankExclusions = listOf(178121L, 178122L, 178123L, 178125L)),
         WordEntity(
             id = 178125, setId = 1781, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "cyber_email_safety", transliteration = "siman fishing",
+            pos = "noun", semanticGroup = "cyber_email_safety",
             original = "סִימַן פִישִׁינְג", translation = "маркер фишинга",
             definition = "סִיגְנָל בּוֹלֵט בַּהוֹדָעָה — שְׁגִיאוֹת כְּתִיב, לַחַץ דָּחוּף אוֹ קִשּׁוּר חָשׁוּד.",
             definitionNative = "Заметный сигнал в письме — ошибки, срочное давление или подозрительная ссылка.",

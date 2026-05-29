@@ -27,7 +27,7 @@ object WordDataHebrewImmigrant5 {
 
         WordEntity(
             id = 114301, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "dukan",
+            pos = "noun", semanticGroup = "shuk",
             original = "דּוּכָן", translation = "прилавок / ларёк",
             definition = "מִבְנֶה קָטָן בַּשּׁוּק שֶׁבּוֹ מוֹכְרִים מֻצָרִים.",
             definitionNative = "Небольшое сооружение на рынке, где продают товары.",
@@ -36,7 +36,7 @@ object WordDataHebrewImmigrant5 {
         ),
         WordEntity(
             id = 114302, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "kone",
+            pos = "noun", semanticGroup = "shuk",
             original = "קוֹנֶה", translation = "покупатель",
             definition = "מִי שֶׁמְּשַׁלֵּם כֶּסֶף עַל מֻצָר אוֹ שֵׁרוּת.",
             definitionNative = "Тот, кто платит деньги за товар или услугу.",
@@ -44,7 +44,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "קוֹנֶה попросил скидку на овощи."),
         WordEntity(
             id = 114303, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "hanача",
+            pos = "noun", semanticGroup = "shuk",
             original = "הֲנָחָה", translation = "скидка",
             definition = "הוֹרָדַת מְחִיר לְצוֹרֶךְ מְכִירָה אוֹ כְּמֵחֻוָּה לַלָּקוֹחַ.",
             definitionNative = "Снижение цены для продажи или в знак уважения к покупателю.",
@@ -53,7 +53,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114312L)),
         WordEntity(
             id = 114304, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "mishkal",
+            pos = "noun", semanticGroup = "shuk",
             original = "מִשְׁקָל", translation = "весы / вес",
             definition = "מַכְשִׁיר לְמַדִּידַת כּוֹבֶד שֶׁל מֻצָר.",
             definitionNative = "Прибор для измерения веса товара.",
@@ -61,7 +61,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Продавец положил фрукты на מִשְׁקָל."),
         WordEntity(
             id = 114305, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "shuk", transliteration = "l'hitmakaḥ",
+            pos = "verb", semanticGroup = "shuk",
             original = "לְהִתְמַקֵּחַ", translation = "торговаться / торг",
             definition = "לְנַסּוֹת לְהוֹרִיד אֶת הַמְּחִיר בַּדִּבּוּר עִם הַמּוֹכֵר.",
             definitionNative = "Пытаться снизить цену в разговоре с продавцом.",
@@ -70,7 +70,7 @@ object WordDataHebrewImmigrant5 {
         ),
         WordEntity(
             id = 114306, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "m'chira",
+            pos = "noun", semanticGroup = "shuk",
             original = "מְכִירָה", translation = "продажа / распродажа",
             definition = "פְּעוּלַת מְסִירַת מֻצָר תְּמוּרַת כֶּסֶף.",
             definitionNative = "Действие передачи товара в обмен на деньги.",
@@ -79,7 +79,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114303L)),
         WordEntity(
             id = 114307, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "perot",
+            pos = "noun", semanticGroup = "shuk",
             original = "פֵּרוֹת", translation = "фрукты",
             definition = "חֵלֶק הַצֶּמַח הַמְּכִיל זְרָעִים וְנֶאֱכָל טָרִי.",
             definitionNative = "Часть растения, содержащая семена и употребляемая в пищу свежей.",
@@ -88,7 +88,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114308L, 114309L, 114310L, 114311L, 114318L, 114319L, 114321L, 114322L, 114324L)),
         WordEntity(
             id = 114308, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "y'rakot",
+            pos = "noun", semanticGroup = "shuk",
             original = "יְרָקוֹת", translation = "овощи",
             definition = "צְמָחִים נֶאֱכָלִים כְּגוֹן עַגְבָנִיָּה, מְלָפְפוֹן וְגֶזֶר.",
             definitionNative = "Съедобные растения, такие как помидор, огурец и морковь.",
@@ -97,7 +97,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114307L, 114309L, 114318L)),
         WordEntity(
             id = 114309, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "shuk", transliteration = "esbei tibul",
+            pos = "phrase", semanticGroup = "shuk",
             original = "עֶשְׂבֵּי תִּיבּוּל", translation = "пряные травы / зелень",
             definition = "צְמָחִים אֲרוֹמַטִיִּים כְּגוֹן נַעֲנַע, פֶּטְרוֹזִילְיָה וְכוּסְבָּרָה.",
             definitionNative = "Ароматические растения, такие как мята, петрушка и кинза.",
@@ -106,7 +106,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114307L, 114308L, 114310L, 114318L, 114319L, 114320L, 114321L, 114322L, 114323L)),
         WordEntity(
             id = 114310, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "humus",
+            pos = "noun", semanticGroup = "shuk",
             original = "חֻמּוּס", translation = "хумус",
             definition = "מַחִית מַטְעֶמֶת מֵחֻמְּצִיוֹת עִם טְחִינָה וְלִימוֹן.",
             definitionNative = "Питательная паста из нута с тахини и лимоном.",
@@ -115,7 +115,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114319L, 114320L, 114321L, 114322L)),
         WordEntity(
             id = 114311, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "shvarma",
+            pos = "noun", semanticGroup = "shuk",
             original = "שַׁוַּרְמָה", translation = "шаурма",
             definition = "מַנַּת בָּשָׂר צָלוּי הַמּוֹגֶשֶׁת בְּפִיתָה עִם תּוֹסָפוֹת.",
             definitionNative = "Блюдо из жареного мяса, подаваемого в пите с добавками.",
@@ -124,7 +124,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114307L, 114308L, 114310L, 114318L, 114320L, 114323L, 114324L)),
         WordEntity(
             id = 114312, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "s'kit",
+            pos = "noun", semanticGroup = "shuk",
             original = "שְׂקִית", translation = "пакет / мешочек",
             definition = "כְּלִי אֲרִיזָה מִנְיָלוֹן אוֹ נְיָר לְהַכָּנַסַת מֻצָרִים.",
             definitionNative = "Лёгкая ёмкость из пластика или бумаги — туда складывают покупки.",
@@ -132,7 +132,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Я положил овощи в שְׂקִית."),
         WordEntity(
             id = 114313, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "agora",
+            pos = "noun", semanticGroup = "shuk",
             original = "אֲגוֹרָה", translation = "агора (мелкая монета)",
             definition = "מַטְבֵּעַ הַיִּשְׂרְאֵלִי הַקָּטָן בְּיוֹתֵר, מֵאִית הַשֶּׁקֶל.",
             definitionNative = "Наименьшая израильская монета, одна сотая шекеля.",
@@ -141,7 +141,7 @@ object WordDataHebrewImmigrant5 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 114314, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "khanut",
+            pos = "noun", semanticGroup = "shuk",
             original = "חֲנוּת", translation = "магазин",
             definition = "מָקוֹם שֶׁבּוֹ מוֹכְרִים מֻצָרִים לַלָּקוֹחוֹת.",
             definitionNative = "Место, где продают товары покупателям.",
@@ -150,7 +150,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114315L)),
         WordEntity(
             id = 114315, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "machólet",
+            pos = "noun", semanticGroup = "shuk",
             original = "מְכֹלֶת", translation = "продуктовый магазин / бакалея",
             definition = "חֲנוּת קְטַנָּה הַמּוֹכֶרֶת מַזּוֹן וּמוּצָרֵי יוֹמְיוֹם.",
             definitionNative = "Небольшой магазин, торгующий едой и товарами повседневного спроса.",
@@ -159,7 +159,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114314L, 114316L)),
         WordEntity(
             id = 114316, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "kupa",
+            pos = "noun", semanticGroup = "shuk",
             original = "קוּפָּה", translation = "касса",
             definition = "מָקוֹם בַּחֲנוּת שֶׁבּוֹ מְשַׁלְּמִים עַל הַקְּנִיּוֹת.",
             definitionNative = "Место в магазине, где платят за покупки.",
@@ -167,7 +167,7 @@ object WordDataHebrewImmigrant5 {
             exampleNative = "Очередь к קוּפָּה сегодня длинная."),
         WordEntity(
             id = 114317, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "kilogram",
+            pos = "noun", semanticGroup = "shuk",
             original = "כִּילוֹגְרָם", translation = "килограмм",
             definition = "יְחִידַת מִשְׁקָל הַשָּׁוָה לְאֶלֶף גְּרָמִים.",
             definitionNative = "Единица веса, равная тысяче граммов.",
@@ -176,7 +176,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114312L)),
         WordEntity(
             id = 114318, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "zeitim",
+            pos = "noun", semanticGroup = "shuk",
             original = "זֵיתִים", translation = "оливки / маслины",
             definition = "פְּרִי הַזַּיִת, נֶאֱכָל כָּבוּשׁ אוֹ מְשַׁמֵּשׁ לְהַפָּקַת שֶׁמֶן.",
             definitionNative = "Плод оливкового дерева, употребляемый маринованным или для производства масла.",
@@ -185,7 +185,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114307L, 114308L)),
         WordEntity(
             id = 114319, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "limon",
+            pos = "noun", semanticGroup = "shuk",
             original = "לִימוֹן", translation = "лимон",
             definition = "פְּרִי חָמוּץ צָהֹב הַמְּשַׁמֵּשׁ לְבִישּׁוּל וּלְשֵׁרוּתֵי בְּרִיאוּת.",
             definitionNative = "Жёлтый кислый фрукт, используемый в кулинарии и для здоровья.",
@@ -194,7 +194,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114321L, 114323L)),
         WordEntity(
             id = 114320, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "agas",
+            pos = "noun", semanticGroup = "shuk",
             original = "אֲגַס", translation = "груша",
             definition = "פְּרִי מָתוֹק בְּצוּרַת דְּמָעָה, בְּדֶרֶךְ כְּלָל צָהֹב אוֹ יָרֹק.",
             definitionNative = "Сладкий грушевидный фрукт, обычно жёлтый или зелёный.",
@@ -203,7 +203,7 @@ object WordDataHebrewImmigrant5 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 114321, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "maionez",
+            pos = "noun", semanticGroup = "shuk",
             original = "מַיּוֹנֵז", translation = "майонез",
             definition = "רֹטֶב קְרֵמִי עָשׂוּי מִבֵּיצִים וְשֶׁמֶן לְתִבּוּל.",
             definitionNative = "Кремообразный соус из яиц и масла для заправки блюд.",
@@ -212,7 +212,7 @@ object WordDataHebrewImmigrant5 {
         ),
         WordEntity(
             id = 114322, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "shuk", transliteration = "shemen zayit",
+            pos = "phrase", semanticGroup = "shuk",
             original = "שֶׁמֶן זַיִת", translation = "оливковое масло",
             definition = "שֶׁמֶן הַמֻּפָּק מִפֵּרוֹת הַזַּיִת, נָפוֹץ בְּבִישּׁוּל יִשְׂרְאֵלִי.",
             definitionNative = "Масло, получаемое из плодов оливы, широко используемое в израильской кухне.",
@@ -221,7 +221,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114310L)),
         WordEntity(
             id = 114323, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "eshkolit",
+            pos = "noun", semanticGroup = "shuk",
             original = "אֶשְׁכּוֹלִית", translation = "грейпфрут",
             definition = "פְּרִי הֶדֶר גָּדוֹל וְחָמְצוּצִי, נָפוֹץ בְּיִשְׂרָאֵל.",
             definitionNative = "Крупный кисловатый цитрусовый фрукт, широко распространённый в Израиле.",
@@ -230,7 +230,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114307L, 114308L, 114319L, 114320L)),
         WordEntity(
             id = 114324, setId = 1143, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "pita",
+            pos = "noun", semanticGroup = "shuk",
             original = "פִּיתָה", translation = "пита (лепёшка)",
             definition = "לֶחֶם שָׁטוּחַ יִשְׂרְאֵלִי שֶׁנֶּאֱכָל עִם חֻמּוּס, שַׁוַּרְמָה וְעוֹד.",
             definitionNative = "Израильская плоская лепёшка, которую едят с хумусом, шаурмой и другим.",
@@ -239,7 +239,7 @@ object WordDataHebrewImmigrant5 {
          fillInBlankExclusions = listOf(114308L, 114309L, 114311L, 114318L)),
         WordEntity(
             id = 114325, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shuk", transliteration = "m'zuman",
+            pos = "noun", semanticGroup = "shuk",
             original = "מְזוּמָן", translation = "наличные деньги",
             definition = "כֶּסֶף פִּיזִי בְּשֵׁם מַטְבְּעוֹת וּשְׁטָרוֹת, בְּנִגּוּד לְכַרְטִיס אַשְׁרַאי.",
             definitionNative = "Физические деньги в виде монет и купюр, в отличие от кредитной карты.",

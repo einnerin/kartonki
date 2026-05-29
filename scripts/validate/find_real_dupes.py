@@ -18,8 +18,6 @@ Blocking errors (exit 1) — staged files only:
   7. Derivative/same-root word pairs within the same NEW staged set.
   8. Description contains CEFR level notation (A1/B1 etc, case-insensitive) — use
      rarity colour instead. Promoted from warning to blocking 2026-04-23.
-  9. he-ru word missing `transliteration`. Base has 0 missing across 13 875 words;
-     blocking prevents regression. Promoted from warning to blocking 2026-04-23.
 
 Warnings (never block):
  10. Rarity spread in modified/non-staged files (old data, fixed in Phase 4).
@@ -461,25 +459,6 @@ def check_name_consistency(all_sets, staged_files):
     return errors
 
 
-def check_transliteration_missing(all_words, staged_files):
-    """Block commit if ANY staged he-ru word is missing transliteration.
-
-    Promoted from warning (new-sets-only) to blocking (all staged) on
-    2026-04-23: audit confirmed 0 missing across 13 875 he-ru words, so
-    blocking prevents regression at zero migration cost.
-    """
-    errors = []
-    for w in all_words:
-        if w["lang"] != "he-ru":
-            continue
-        if w["file"] not in staged_files:
-            continue
-        if not w.get("has_translit"):
-            errors.append(f"  Word {w['id']} '{w['original']}' [set {w['setId']}, "
-                          f"{w['file']}]: нет transliteration")
-    return errors
-
-
 def check_description_cefr(all_sets, staged_files):
     """Block commit if staged set descriptions mention A1/B1/etc — rarity colour is enough.
 
@@ -733,19 +712,6 @@ def main():
             print()
         else:
             print("  ✅ Описания чистые от CEFR-меток\n")
-
-    # ── 9. Транслитерация he-ru — BLOCKING (2026-04-23) ───────────────────────
-    if staged_files:
-        translit_errors = check_transliteration_missing(all_words, staged_files)
-        print(f"=== 9. Нет transliteration в staged he-ru словах: "
-              f"{len(translit_errors)} ===\n")
-        if translit_errors:
-            has_errors = True
-            for e in translit_errors:
-                print(e)
-            print()
-        else:
-            print("  ✅ Все he-ru слова с transliteration\n")
 
     # ── 10. Rarity-коллизии — BLOCKING для новых, info для pre-existing ──────
     # Same (lang, original) with different rarity in different files: DB resolves

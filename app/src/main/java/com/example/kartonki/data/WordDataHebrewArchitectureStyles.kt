@@ -78,7 +78,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Старый английский стиль: тёмные деревянные балки на белых стенах и крутые крыши.",
             example = "הַבַּיִת הַקָּטָן הוּא טוּדוֹר אוֹתֶנְטִי לְגַמְרֵי.",
             exampleNative = "Этот домик — совершенно подлинный טוּדוֹר.",
-            transliteration = "тудор",
             pos = "adjective", semanticGroup = "arch_styles_english_historical", fillInBlankExclusions = listOf(190802L, 190803L, 190806L, 190807L, 190811L, 190812L, 190816L, 190818L, 190820L, 190821L)),
 
         WordEntity(id = 190802, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -88,7 +87,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Английский стиль XVIII века: строгая симметрия и красно-кирпичные фасады.",
             example = "הָעִיר בָּאת מְפֻרְסֶמֶת בַּטוּרֵי הַבָּתִּים הַגֵּאוֹרְגִ׳יָאנִיִּים שֶׁלָּהּ.",
             exampleNative = "Город Бат знаменит изящными георгианскими террасами.",
-            transliteration = "гэорджиани",
             pos = "adjective", semanticGroup = "arch_styles_english_historical", fillInBlankExclusions = listOf(190801L, 190803L)),
 
         WordEntity(id = 190803, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -98,7 +96,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Английский стиль около 1900 года: дома просторнее и светлее, чем викторианские.",
             example = "הַדִּירָה שֶׁלָּהֶם נִמְצֵאת בְּבַיִת אֶדְוַרְדִיאָנִי גָּבוֹהַּ.",
             exampleNative = "Их квартира — в высоком אֶדְוַרְדִיאָנִי-доме.",
-            transliteration = "эдварди-ани",
             pos = "adjective", semanticGroup = "arch_styles_english_historical", fillInBlankExclusions = listOf(190801L, 190802L)),
 
         WordEntity(id = 190804, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -108,7 +105,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Английский стиль около 1810 года: белая штукатурка и тонкие чугунные балконы.",
             example = "בְּבְּרַייְטוֹן יֵשׁ רְחוֹבוֹת שְׁלֵמִים שֶׁל בָּתֵּי רֵגֶ׳נְסִי בְּצֶבַע שַׁמֶּנֶת.",
             exampleNative = "В Брайтоне целые улицы кремовых רֵגֶ׳נְסִי-домов.",
-            transliteration = "рэдженси",
             pos = "noun", semanticGroup = "arch_styles_english_historical", fillInBlankExclusions = listOf(190801L, 190803L, 190806L, 190807L)),
 
         // ── Group: arch_styles_revival (6 words) ──────────────────────────────
@@ -120,7 +116,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Стиль XIX века, копирующий аттические храмы — колонны и треугольные фронтоны.",
             example = "בֵּית הַמִּשְׁפָּט הַיָּשָׁן הוּא תְּחִיָּה יְוָנִית מְפֹאֶרֶת מִ־1830.",
             exampleNative = "Старое здание суда — величественная תְּחִיָּה יְוָנִית 1830-х.",
-            transliteration = "тхия йванит",
             pos = "phrase", semanticGroup = "arch_styles_revival", fillInBlankExclusions = listOf(190808L, 190809L, 190810L)),
 
         WordEntity(id = 190806, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -130,7 +125,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Возрождение XIX века: возвращает стрельчатые арки и высокие шпили средневековых соборов.",
             example = "הַפַּרְלָמֶנְט הַבְּרִיטִי הוּא צִיּוּן דֶּרֶךְ נֵאוֹ-גוֹתִי מְפֻרְסָם.",
             exampleNative = "Британский парламент — знаменитый ориентир נֵאוֹ-גוֹתִי.",
-            transliteration = "нэо-готи",
             pos = "noun", semanticGroup = "arch_styles_revival", fillInBlankExclusions = listOf(190801L, 190807L, 190811L, 190812L, 190816L, 190818L, 190820L, 190821L)),
 
         WordEntity(id = 190807, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -140,7 +134,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Поздний ренессансный стиль: нарочито нарушал классические правила ради эффекта и напряжения.",
             example = "אַרְמוֹן רוֹמַנוֹ בְּמַנְטוּאָה הוּא דֻּגְמָה שְׁנוּנָה לְמַנְיֶרִיזְם.",
             exampleNative = "Дворец Романо в Мантуе — остроумный пример מַנְיֶרִיזְם.",
-            transliteration = "маниэризм",
             pos = "noun", semanticGroup = "arch_styles_revival", fillInBlankExclusions = listOf(190806L, 190811L, 190812L, 190818L, 190820L, 190821L)),
 
         WordEntity(id = 190808, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -150,7 +143,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Пышный французский стиль из парижской школы: симметрия, колонны и пышная резьба.",
             example = "תַּחֲנַת גְּרַנְד סֶנְטְרָל בְּנִיוּ יוֹרְק הִיא פְּנִינַת סִגְנוֹן בּוֹזָאר.",
             exampleNative = "Гранд-Сентрал в Нью-Йорке — жемчужина סִגְנוֹן בּוֹזָאר.",
-            transliteration = "сигнон бозар",
             pos = "phrase", semanticGroup = "arch_styles_revival", fillInBlankExclusions = listOf(190805L, 190809L, 190810L, 190817L)),
 
         WordEntity(id = 190809, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -160,7 +152,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Парадный стиль эпохи Наполеона: тяжёлые колонны, золото и римские военные мотивы.",
             example = "כְּנֵסִיַּת מַדְלֶן בְּפָּרִיז הִיא הַדֻּגְמָה הַנּוֹעֶזֶת לְסִגְנוֹן אַמְפִּיר.",
             exampleNative = "Церковь Мадлен в Париже — самый смелый пример סִגְנוֹן אַמְפִּיר.",
-            transliteration = "сигнон ампир",
             pos = "phrase", semanticGroup = "arch_styles_revival", fillInBlankExclusions = listOf(190805L, 190808L, 190810L, 190817L)),
 
         WordEntity(id = 190810, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -170,7 +161,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Ранний американский стиль около 1800 года: тонкие колонны, веерные окна и спокойная симметрия.",
             example = "הַרְבֵּה בָּתִּים יְשָׁנִים בְּבּוֹסְטוֹן הֵם דֻּגְמָה מְאֻפֶּקֶת לְסִגְנוֹן פֶדֶרָלִי.",
             exampleNative = "Многие старые дома Бостона — сдержанный федеральный стиль.",
-            transliteration = "сигнон федэрали",
             pos = "phrase", semanticGroup = "arch_styles_revival", fillInBlankExclusions = listOf(190805L, 190808L, 190809L, 190817L)),
 
         // ── Group: arch_styles_early_modern (5 words) ─────────────────────────
@@ -182,7 +172,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Стиль около 1900 года: вьющиеся «растительные» линии, ковка и витражи.",
             example = "כְּנִיסוֹת הָרַכֶּבֶת הַתַּחְתִּית בְּפָּרִיז הֵן יְצִירוֹת אַרְט נוּבוֹ קְלָאסִיּוֹת.",
             exampleNative = "Входы парижского метро — классические работы אַרְט נוּבוֹ.",
-            transliteration = "арт нуво",
             pos = "phrase", semanticGroup = "arch_styles_early_modern"),
 
         WordEntity(id = 190812, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -192,7 +181,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Итальянское движение до Первой мировой: культ скорости, машин и высоких башен.",
             example = "סַנְט אֶלִיָּא צִיֵּר עָרִים שֶׁל פוּטוּרִיזְם שֶׁמֵּעוֹלָם לֹא נִבְנוּ.",
             exampleNative = "Сант-Элиа рисовал города פוּטוּרִיזְם, которые так и не построили.",
-            transliteration = "футуризм",
             pos = "noun", semanticGroup = "arch_styles_early_modern", fillInBlankExclusions = listOf(190807L, 190815L, 190818L, 190820L, 190821L)),
 
         WordEntity(id = 190813, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -202,7 +190,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Стиль 1930-х: скруглённые углы, длинные горизонтальные линии и облик океанского лайнера.",
             example = "מִזְנוֹנֵי מַיָאמִי הַיְשָׁנִים מַצִּיגִים פִּתּוּלֵי סְטְרִימְלַיין מוֹדֶרְן וּכְרוֹם.",
             exampleNative = "Старые закусочные Майами щеголяют изгибами סְטְרִימְלַיין מוֹדֶרְן и хромом.",
-            transliteration = "стримлайн модэрн",
             pos = "phrase", semanticGroup = "arch_styles_early_modern", fillInBlankExclusions = listOf(190811L, 190814L)),
 
         WordEntity(id = 190814, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -212,7 +199,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Голландское движение: здание сводится к плоскостям в основных цветах и чёрно-белом.",
             example = "בֵּית רִיטְוֵלְד שְׁרוֹדֶר הוּא הַבִּנְיָן הַשָּׁלֵם הַיָּחִיד שֶׁל דֵה סְטֵייל.",
             exampleNative = "Дом Шрёдер Ритвельда — единственное полное здание דֵה סְטֵייל.",
-            transliteration = "дэ стэйл",
             pos = "phrase", semanticGroup = "arch_styles_early_modern", fillInBlankExclusions = listOf(190811L, 190813L, 190815L)),
 
         WordEntity(id = 190815, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -222,7 +208,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Ренессансное течение XVI века по правилам венецианского зодчего Андреа Палладио.",
             example = "וִילּוֹת בְּצָפוֹן אִיטַלְיָה הֵן הַדֻּגְמָה הַטְּהוֹרָה שֶׁל פַּלָּאדְיָאנִיוּת.",
             exampleNative = "Виллы на севере Италии — чистейший пример פַּלָּאדְיָאנִיוּת.",
-            transliteration = "паладиэнут",
             pos = "noun", semanticGroup = "arch_styles_early_modern", fillInBlankExclusions = listOf(190807L, 190812L, 190820L, 190821L)),
 
         // ── Group: arch_styles_late_modern (5 words) ──────────────────────────
@@ -234,7 +219,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Стиль конца XX века: выносит наружу трубы, балки и лифты.",
             example = "מֶרְכַּז פּוֹמְפִּידוּ הוּא הַבִּנְיָן הַנּוֹעָז שֶׁל הַיי-טֶק בְּפָּרִיז.",
             exampleNative = "Центр Помпиду — самое смелое здание הַיי-טֶק в Париже.",
-            transliteration = "hай-тэк",
             pos = "phrase", semanticGroup = "arch_styles_late_modern", fillInBlankExclusions = listOf(190811L, 190817L, 190818L, 190819L, 190820L)),
 
         WordEntity(id = 190817, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -244,7 +228,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Американский стиль начала XX века: низкие крыши и горизонтальные линии, прижатые к земле.",
             example = "בֵּית רוֹבִּי שֶׁל פְרֶנְק לוֹיְד רַייְט הוּא אַיְקוֹן שֶׁל סִגְנוֹן הַפְּרֵרְיָה.",
             exampleNative = "Дом Роби Райта — икона סִגְנוֹן הַפְּרֵרְיָה.",
-            transliteration = "сигнон hа-прэрия",
             pos = "phrase", semanticGroup = "arch_styles_late_modern", fillInBlankExclusions = listOf(190808L, 190809L, 190810L, 190816L, 190819L)),
 
         WordEntity(id = 190818, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -254,7 +237,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Стиль середины XX века: голый бетон, тяжёлые объёмы и грубые линии.",
             example = "הַרְבֵּה מְשַׂרְדֵי מֶמְשָׁלָה בִּירוּשָׁלַיִם הֵם בְּרוּטָלִיזְם טִיפּוּסִי.",
             exampleNative = "Многие правительственные здания Иерусалима — типичный בְּרוּטָלִיזְם.",
-            transliteration = "бруталист",
             pos = "noun", semanticGroup = "arch_styles_late_modern", fillInBlankExclusions = listOf(190807L, 190812L, 190820L, 190821L)),
 
         WordEntity(id = 190819, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -264,7 +246,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Движение после Первой мировой: белые коробки, плоские крыши и горизонтальные окна.",
             example = "תֵּל אָבִיב נִבְנְתָה בְּחֶלְקָהּ עַל פִּי הַסִּגְנוֹן הַבֵּינְלְאוּמִי.",
             exampleNative = "Тель-Авив отчасти строился по הַסִּגְנוֹן הַבֵּינְלְאוּמִי.",
-            transliteration = "hа-сигнон hа-бэйнлэуми",
             pos = "phrase", semanticGroup = "arch_styles_late_modern", fillInBlankExclusions = listOf(190816L, 190817L)),
 
         WordEntity(id = 190820, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -274,7 +255,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Цифровой подход: форма здания задаётся математическими кривыми на компьютере.",
             example = "הַבִּנְיָנִים הַשּׁוֹטְפִים שֶׁל זָהָא חָדִיד הֵם פְּנֵי פָּרָמֵטְרִיצִיזְם.",
             exampleNative = "Текучие здания Захи Хадид — лицо פָּרָמֵטְרִיצִיזְם.",
-            transliteration = "парамэтрицизм",
             pos = "noun", semanticGroup = "arch_styles_late_modern", fillInBlankExclusions = listOf(190807L, 190812L, 190818L, 190821L)),
 
         // ── Group: arch_styles_israeli (5 words) ──────────────────────────────
@@ -286,7 +266,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Подход: свободно смешивает части разных исторических стилей в одном здании.",
             example = "הָרְחוֹב רוֹטְשִׁילְד בְּתֵל אָבִיב מָלֵא בְּאֶקְלֶקְטִיצִיזְם שֶׁל שְׁנוֹת הָעֶשְׂרִים.",
             exampleNative = "Улица Ротшильда в Тель-Авиве полна אֶקְלֶקְטִיצִיזְם 1920-х.",
-            transliteration = "эклэктицизм",
             pos = "noun", semanticGroup = "arch_styles_israeli", fillInBlankExclusions = listOf(190807L, 190812L, 190818L, 190820L)),
 
         WordEntity(id = 190822, setId = 1908, languagePair = "he-ru", rarity = "RARE",
@@ -296,7 +275,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Прозвание сердца Тель-Авива — объект ЮНЕСКО с большим скоплением выбеленных бауhаус-домов.",
             example = "טִיּוּל בְּרֶגֶל בְּהָעִיר הַלְּבָנָה מַתְחִיל מִשְּׂדֵרוֹת רוֹטְשִׁילְד.",
             exampleNative = "Пешая прогулка по הָעִיר הַלְּבָנָה начинается с бульвара Ротшильда.",
-            transliteration = "hа-ир hа-лвана",
             pos = "phrase", semanticGroup = "arch_styles_israeli", fillInBlankExclusions = listOf(190823L, 190824L, 190825L)),
 
         WordEntity(id = 190823, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -306,7 +284,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Местная вариация немецкого движения, приспособленная к жаре: затенённые балконы и белые стены.",
             example = "הַסַּדְנָה מַסְבִּירָה אֵיךְ בָּאוּהָאוּס תֵּל אָבִיב הִתְמוֹדֵד עִם הָאַקְלִים.",
             exampleNative = "Семинар объясняет, как בָּאוּהָאוּס תֵּל אָבִיב справлялся с климатом.",
-            transliteration = "бау-hаус тэль-авив",
             pos = "phrase", semanticGroup = "arch_styles_israeli", fillInBlankExclusions = listOf(190822L, 190824L, 190825L)),
 
         WordEntity(id = 190824, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -316,7 +293,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Стиль колоний немецких темплеров в Палестине — иерусалимский камень и красные крыши.",
             example = "סָרוֹנָה בְּתֵל אָבִיב שִׁמֵּרָה אֶת הָאַדְרִיכָלוּת הַתֵּמְפְּלָרִית הַמְּקוֹרִית.",
             exampleNative = "Сарона в Тель-Авиве сохранила исходную אַדְרִיכָלוּת תֵּמְפְּלָרִית.",
-            transliteration = "адрихалут тэмпларит",
             pos = "phrase", semanticGroup = "arch_styles_israeli"),
 
         WordEntity(id = 190825, setId = 1908, languagePair = "he-ru", rarity = "EPIC",
@@ -326,7 +302,6 @@ object WordDataHebrewArchitectureStyles {
             definitionNative = "Подход: подгоняет здание под местное солнце, ветер и влажность, не полагаясь на кондиционеры.",
             example = "הַמִּבְנֶה הֶחָדָשׁ בַּנֶּגֶב מַדְגִּים אַדְרִיכָלוּת בִּיוֹקְלִימָטִית.",
             exampleNative = "Новое здание в Негеве демонстрирует אַדְרִיכָלוּת בִּיוֹקְלִימָטִית.",
-            transliteration = "адрихалут био-климатит",
             pos = "phrase", semanticGroup = "arch_styles_israeli", fillInBlankExclusions = listOf(190822L, 190823L, 190824L)),
     )
 }

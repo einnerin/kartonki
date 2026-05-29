@@ -48,84 +48,84 @@ object WordDataHebrewBatch52 {
         // ── Set 1295: Хайтек: основы (level=1, COMMON+UNCOMMON) ────────────
 
         WordEntity(id = 129501, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַחְשֵׁב נָיָּד", transliteration = "makhshev nayad", translation = "ноутбук"),
+            original = "מַחְשֵׁב נָיָּד", translation = "ноутбук"),
 
         WordEntity(id = 129502, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "תּוֹכְנָה", transliteration = "tokhna", translation = "программа, ПО"),
+            original = "תּוֹכְנָה", translation = "программа, ПО"),
 
         WordEntity(id = 129503, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "מוֹבַּיְל", transliteration = "mobail", translation = "мобильный / смартфон"),
+            original = "מוֹבַּיְל", translation = "мобильный / смартфон"),
 
         WordEntity(id = 129504, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "בַּג", transliteration = "bag", translation = "баг, ошибка в коде"),
+            original = "בַּג", translation = "баг, ошибка в коде"),
 
         WordEntity(id = 129505, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "שֶׁרֶת עָנָן", transliteration = "sheret anan", translation = "облачный сервер"),
+            original = "שֶׁרֶת עָנָן", translation = "облачный сервер"),
 
         WordEntity(id = 129506, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶשֶׁת אִינְטֶרְנֶט", transliteration = "reshet internet", translation = "сеть интернет"),
+            original = "רֶשֶׁת אִינְטֶרְנֶט", translation = "сеть интернет"),
 
         WordEntity(id = 129507, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "מֵיְדָן", transliteration = "meidan", translation = "панель управления / дашборд"),
+            original = "מֵיְדָן", translation = "панель управления / дашборд"),
 
         WordEntity(id = 129508, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "צֶוֶת", transliteration = "tsevet", translation = "команда"),
+            original = "צֶוֶת", translation = "команда"),
 
         WordEntity(id = 129509, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "חַשְׁבּוֹן מִשְׁתַּמֵּשׁ", transliteration = "kheshbon mishtamesh", translation = "учётная запись пользователя"),
+            original = "חַשְׁבּוֹן מִשְׁתַּמֵּשׁ", translation = "учётная запись пользователя"),
 
         WordEntity(id = 129510, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׁתַּמֵּשׁ", transliteration = "mishtamesh", translation = "пользователь"),
+            original = "מַשְׁתַּמֵּשׁ", translation = "пользователь"),
 
         WordEntity(id = 129511, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "גִּישָׁה", transliteration = "gisha", translation = "доступ / вход в систему"),
+            original = "גִּישָׁה", translation = "доступ / вход в систему"),
 
         WordEntity(id = 129512, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "צ'ַאט", transliteration = "chat", translation = "чат"),
+            original = "צ'ַאט", translation = "чат"),
 
         WordEntity(id = 129513, setId = 1295, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַסָּך", transliteration = "masakh", translation = "монитор / экран"),
+            original = "מַסָּך", translation = "монитор / экран"),
 
         WordEntity(id = 129514, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַמְשָׁק מִשְׁתַּמֵּשׁ", transliteration = "mamshak mishtamesh", translation = "пользовательский интерфейс"),
+            original = "מַמְשָׁק מִשְׁתַּמֵּשׁ", translation = "пользовательский интерфейс"),
 
         WordEntity(id = 129515, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַסָּד נְתוּנִים", transliteration = "masad netunin", translation = "база данных"),
+            original = "מַסָּד נְתוּנִים", translation = "база данных"),
 
         WordEntity(id = 129516, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֵדְכּוּן תּוֹכְנָה", transliteration = "idkun tokhna", translation = "обновление программы"),
+            original = "עֵדְכּוּן תּוֹכְנָה", translation = "обновление программы"),
 
         WordEntity(id = 129517, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "טֶמְפְּלֵט", transliteration = "templet", translation = "шаблон / template"),
+            original = "טֶמְפְּלֵט", translation = "шаблон / template"),
 
         WordEntity(id = 129518, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תַּמִּיכָה טֶכְנִית", transliteration = "tmiha tekhnit", translation = "техническая поддержка"),
+            original = "תַּמִּיכָה טֶכְנִית", translation = "техническая поддержка"),
 
         WordEntity(id = 129519, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מֻפְעָל", transliteration = "muflal", translation = "запущен, активен (о сервисе)"),
+            original = "מֻפְעָל", translation = "запущен, активен (о сервисе)"),
 
         WordEntity(id = 129520, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֲבִילַת תּוֹכְנָה", transliteration = "khavila tokhna", translation = "пакет программ"),
+            original = "חֲבִילַת תּוֹכְנָה", translation = "пакет программ"),
 
         WordEntity(id = 129521, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "טִיקֶט", transliteration = "tiket", translation = "тикет, заявка"),
+            original = "טִיקֶט", translation = "тикет, заявка"),
 
         WordEntity(id = 129522, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַהֲדוּרָה", transliteration = "mahadura", translation = "релиз / выпуск (версия ПО)"),
+            original = "מַהֲדוּרָה", translation = "релиз / выпуск (версия ПО)"),
 
         WordEntity(id = 129523, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סְטַרְטַאפּ", transliteration = "startup", translation = "стартап"),
+            original = "סְטַרְטַאפּ", translation = "стартап"),
 
         WordEntity(id = 129524, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מִמּוּן זֶרַע", transliteration = "mimun zera", translation = "посевное финансирование (seed)"),
+            original = "מִמּוּן זֶרַע", translation = "посевное финансирование (seed)"),
 
         WordEntity(id = 129525, setId = 1295, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "טוֹקֶן", transliteration = "token", translation = "токен (аутентификации)"),
+            original = "טוֹקֶן", translation = "токен (аутентификации)"),
 
         // ── Set 1296: Хайтек: продвинутый (level=2, UNCOMMON+RARE) ─────────
 
         WordEntity(id = 129601, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַלְגּוֹרִיתְם", transliteration = "algoritm", translation = "алгоритм",
+            original = "אַלְגּוֹרִיתְם", translation = "алгоритм",
             definition = "סֵדֶר צְעָדִים בָּרוּר שֶׁפּוֹתֵר בְּעָיָה מְסוּיֶּמֶת.",
             definitionNative = "Чёткий порядок шагов — например, для поиска, сортировки или маршрута.",
             example = "כָּתַבְנוּ אַלְגּוֹרִיתְם פָּשׁוּט לְמִיּוּן רְשִׁימוֹת.",
@@ -133,7 +133,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_code_basics"),
 
         WordEntity(id = 129602, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פוּנְקְצִיָּה", transliteration = "funktsiya", translation = "функция",
+            original = "פוּנְקְצִיָּה", translation = "функция",
             definition = "קֶטַע קוֹד עִם שֵׁם, שֶׁמְּקַבֵּל קְלָט וּמַחֲזִיר תּוֹצָאָה.",
             definitionNative = "Кусок кода с именем — берёт данные на вход и отдаёт результат.",
             example = "הוּא בָּנָה פוּנְקְצִיָּה קְצָרָה לְחִישׁוּב מַע״מ.",
@@ -141,7 +141,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_code_basics"),
 
         WordEntity(id = 129603, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מִשְׁתַּנֶּה", transliteration = "mishtane", translation = "переменная",
+            original = "מִשְׁתַּנֶּה", translation = "переменная",
             definition = "תָּא בַּזִּכָּרוֹן עִם שֵׁם, שֶׁאֶפְשָׁר לְהַחֲלִיף אֶת הָעֵרֶךְ בּוֹ.",
             definitionNative = "Именованная ячейка в памяти — туда кладут число, текст или объект.",
             example = "שָׁכַחְתִּי לְאַתְחֵל אֶת הַמִּשְׁתַּנֶּה וְקִבַּלְתִּי שְׁגִיאָה.",
@@ -149,7 +149,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_code_basics"),
 
         WordEntity(id = 129604, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַאֲגַר גִּיט", transliteration = "ma'agar git", translation = "git-репозиторий",
+            original = "מַאֲגַר גִּיט", translation = "git-репозиторий",
             definition = "מָקוֹם שֶׁשּׁוֹמֵר אֶת הַקּוֹד וְאֶת כָּל הַהִיסְטוֹרְיָה שֶׁל הַשִּׁנּוּיִים.",
             definitionNative = "Хранилище кода со всей историей правок — обычно на GitHub или GitLab.",
             example = "שִׁכְפַּלְתִּי מַאֲגַר גִּיט חָדָשׁ עַל הַמַּחְשֵׁב שֶׁלִּי.",
@@ -157,7 +157,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_git"),
 
         WordEntity(id = 129605, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֲנָף", transliteration = "anaf", translation = "ветка (git branch)",
+            original = "עֲנָף", translation = "ветка (git branch)",
             definition = "עוֹתֶק מַקְבִּיל שֶׁל הַקּוֹד, שֶׁבּוֹ עוֹבְדִים עַל פִיצָ'ר חָדָשׁ.",
             definitionNative = "Параллельная копия кода в git — там пилят новую фичу или фикс.",
             example = "פָּתַחְתִּי עֲנָף נִפְרָד לְתִיקּוּן הַבַּג הַזֶּה.",
@@ -165,7 +165,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_git"),
 
         WordEntity(id = 129606, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שֵׁרוּת API", transliteration = "sherut API", translation = "API-сервис",
+            original = "שֵׁרוּת API", translation = "API-сервис",
             definition = "תָּכְנָה שֶׁמַּחְזִירָה נְתוּנִים לְפִי בַּקָּשָׁה דֶּרֶךְ הָאִינְטֶרְנֶט.",
             definitionNative = "Программа отвечает на запросы по сети и отдаёт данные другим приложениям.",
             example = "הָאַפְּלִיקַצְיָה פּוֹנָה לְשֵׁרוּת API שֶׁל מֶזֶג הָאֲוִיר.",
@@ -173,7 +173,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_code_basics"),
 
         WordEntity(id = 129607, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מִחְזוֹר פִּיתּוּחַ", transliteration = "mikhzor pituyakh", translation = "цикл разработки",
+            original = "מִחְזוֹר פִּיתּוּחַ", translation = "цикл разработки",
             definition = "סִבּוּב שָׁלֵם שֶׁל תִּכְנוּן, כְּתִיבָה, בְּדִיקָה וּמְסִירָה לַלָּקוֹחַ.",
             definitionNative = "Полный круг от плана и кода до тестов и сдачи заказчику.",
             example = "כָּל מִחְזוֹר פִּיתּוּחַ אֶצְלֵנוּ אוֹרֵךְ שְׁבוּעַיִם.",
@@ -181,7 +181,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_process"),
 
         WordEntity(id = 129608, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "ספְּרִינְט", transliteration = "sprint", translation = "спринт (agile)",
+            original = "ספְּרִינְט", translation = "спринт (agile)",
             definition = "פֶּרֶק זְמַן קָצָר וְקָבוּעַ שֶׁבּוֹ הַצֶּוֶת מְסַיֵּם רְשִׁימַת מְשִׂימוֹת.",
             definitionNative = "Короткий фиксированный отрезок времени — команда успевает закрыть пачку задач.",
             example = "סִיַּמְנוּ אֶת הַספְּרִינְט עִם כָּל הַמְּשִׂימוֹת בַּקְּלַף.",
@@ -189,7 +189,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_process"),
 
         WordEntity(id = 129609, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "בְּדִיקוֹת יְחִידָה", transliteration = "bdikot yekhida", translation = "юнит-тесты",
+            original = "בְּדִיקוֹת יְחִידָה", translation = "юнит-тесты",
             definition = "קוֹד קָטָן שֶׁבּוֹדֵק שֶׁפּוּנְקְצִיָּה אַחַת עוֹבֶדֶת כְּמוֹ שֶׁצָּרִיךְ.",
             definitionNative = "Маленький код, проверяющий, что одна функция работает как задумано.",
             example = "כָּל קוֹמִיט אֵצֶל הַמְּפַתֵּחַ מַרִיץ בְּדִיקוֹת יְחִידָה.",
@@ -197,7 +197,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_testing"),
 
         WordEntity(id = 129610, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַדְרִיךְ טֶכְנִי", transliteration = "madrikH tekhni", translation = "технический гайд / руководство",
+            original = "מַדְרִיךְ טֶכְנִי", translation = "технический гайд / руководство",
             definition = "מִסְמָךְ שֶׁמַּסְבִּיר אֵיךְ לְהַתְקִין, לְהַפְעִיל אוֹ לְתַחְזֵק כְּלִי.",
             definitionNative = "Документ — как поставить, запустить или поддерживать инструмент.",
             example = "כָּתַבְתִּי מַדְרִיךְ טֶכְנִי קָצָר לְמִתְחִילִים בַּצֶּוֶת.",
@@ -205,7 +205,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_process"),
 
         WordEntity(id = 129611, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "בְּחִינַת קוֹד", transliteration = "bkhimat kod", translation = "код-ревью",
+            original = "בְּחִינַת קוֹד", translation = "код-ревью",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ עָמִית קוֹרֵא אֶת הַשִּׁנּוּיִים וְנוֹתֵן הֶעָרוֹת.",
             definitionNative = "Когда коллега читает твои правки и оставляет замечания перед мержем.",
             example = "אֲנִי מְחַכֶּה לְבְּחִינַת קוֹד מֵהַטֶּק-לִיד שֶׁלִּי.",
@@ -213,7 +213,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_git"),
 
         WordEntity(id = 129612, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּרִיסַת קוֹד", transliteration = "prisat kod", translation = "деплой, развёртывание кода",
+            original = "פְּרִיסַת קוֹד", translation = "деплой, развёртывание кода",
             definition = "הַעֲבָרַת גִּרְסָה חֲדָשָׁה לַשָּׁרָתִים, כְּדֵי שֶׁמִּשְׁתַּמְּשִׁים יִרְאוּ אוֹתָהּ.",
             definitionNative = "Выкатка свежей версии на сервера, чтобы её увидели реальные пользователи.",
             example = "בִּצַּעְנוּ פְּרִיסַת קוֹד לַפְּרוֹדַקְשֶׁן בִּשְׁתַּיִם בַּלַּיְלָה.",
@@ -221,7 +221,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_release"),
 
         WordEntity(id = 129613, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "מַסְגֶּרֶת פִּיתּוּחַ", transliteration = "masgeret pituyakh", translation = "фреймворк разработки",
+            original = "מַסְגֶּרֶת פִּיתּוּחַ", translation = "фреймворк разработки",
             definition = "אוֹסֶף כְּלִים מוּכָן שֶׁבּוֹ בּוֹנִים אַפְּלִיקַצְיוֹת מַהֵר יוֹתֵר.",
             definitionNative = "Готовый набор инструментов — на нём собирают приложение быстрее с нуля.",
             example = "בָּחַרְנוּ מַסְגֶּרֶת פִּיתּוּחַ פּוֹפּוּלָרִית לַפְּרוֹיֶּקְט הֶחָדָשׁ.",
@@ -229,7 +229,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_tools"),
 
         WordEntity(id = 129614, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "מְהַדֵּר", transliteration = "mehadder", translation = "компилятор",
+            original = "מְהַדֵּר", translation = "компилятор",
             definition = "תָּכְנָה שֶׁמְּתַרְגֶּמֶת קוֹד מָקוֹר לְשָׂפָה שֶׁהַמַּחְשֵׁב מֵבִין.",
             definitionNative = "Программа переводит исходный код в язык, понятный самому железу.",
             example = "הַמְּהַדֵּר זָרַק שְׁגִיאָה כְּבָר בַּשּׁוּרָה הַשְּׁלִישִׁית.",
@@ -237,7 +237,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_tools"),
 
         WordEntity(id = 129615, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "מְנַפֵּה שְׁגִיאוֹת", transliteration = "menape shgi'ot", translation = "отладчик, дебаггер",
+            original = "מְנַפֵּה שְׁגִיאוֹת", translation = "отладчик, дебаггер",
             definition = "כְּלִי שֶׁמַּאֲפִשֵׁר לְעַצֵּב הָרָצָה וְלִרְאוֹת מָה קוֹרֵה בְּכָל שׁוּרָה.",
             definitionNative = "Инструмент — пошагово гонит код и показывает, что в каждой строке.",
             example = "פָּתַחְתִּי מְנַפֵּה שְׁגִיאוֹת לְהָבִין לָמָּה הַלּוּלָאָה תּוֹקַעַת.",
@@ -245,7 +245,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_tools"),
 
         WordEntity(id = 129616, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "רִיפַקְטוֹרִינְג", transliteration = "refactoring", translation = "рефакторинг",
+            original = "רִיפַקְטוֹרִינְג", translation = "рефакторинг",
             definition = "סִדּוּר מֵחָדָשׁ שֶׁל קוֹד קַיָּם, בְּלִי לְשַׁנּוֹת אֶת הַהִתְנַהֲגוּת שֶׁלּוֹ.",
             definitionNative = "Чистка готового кода без правок поведения — ради читаемости и удобства.",
             example = "אַחֲרֵי רִיפַקְטוֹרִינְג קַל הַקּוֹד נִקְרָא הַרְבֵּה יוֹתֵר טוֹב.",
@@ -253,7 +253,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_git"),
 
         WordEntity(id = 129617, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "אִינְטֶגְרַצְיָה רְצִיפָה", transliteration = "integratsiya retsufa", translation = "непрерывная интеграция (CI)",
+            original = "אִינְטֶגְרַצְיָה רְצִיפָה", translation = "непрерывная интеграция (CI)",
             definition = "כָּל קוֹמִיט מוּזָּג מִיָּד, נִבְנֶה וְעוֹבֵר אוֹסֶף בְּדִיקוֹת אוֹטוֹמָטִי.",
             definitionNative = "Каждый коммит сразу собирается и прогоняется через автотесты на сервере.",
             example = "הַצֶּוֶת הִתְקִין אִינְטֶגְרַצְיָה רְצִיפָה עַל GitHub Actions.",
@@ -261,7 +261,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_testing"),
 
         WordEntity(id = 129618, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "אוֹטוֹמַצְיַת בְּדִיקוֹת", transliteration = "otomatsiyat bdikot", translation = "автоматизация тестирования",
+            original = "אוֹטוֹמַצְיַת בְּדִיקוֹת", translation = "автоматизация тестирования",
             definition = "כְּתִיבַת סְקְרִיפְּטִים שֶׁמַּרִיצִים בְּדִיקוֹת בְּלִי הִתְעָרְבוּת אֱנוֹשִׁית.",
             definitionNative = "Скрипты сами прогоняют проверки — без живого тестировщика за рулём.",
             example = "הוֹסַפְנוּ אוֹטוֹמַצְיַת בְּדִיקוֹת לַתַּהֲלִיךְ שֶׁל הַפְּרִיסָה.",
@@ -269,7 +269,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_testing"),
 
         WordEntity(id = 129619, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "רוֹלְבֶּק", transliteration = "rolbek", translation = "роллбэк (откат версии)",
+            original = "רוֹלְבֶּק", translation = "роллбэк (откат версии)",
             definition = "חֲזָרָה מַהִירָה לַגִּרְסָה הַקּוֹדֶמֶת אַחֲרֵי שֶׁמַּשֶּׁהוּ הִתְפּוֹצֵץ בַּפְּרוֹדַקְשֶׁן.",
             definitionNative = "Быстрый возврат к прошлой версии, когда на проде что-то рвануло.",
             example = "אַחֲרֵי הַקְּרִיסָה עָשִׂינוּ רוֹלְבֶּק תוֹךְ חָמֵשׁ דַּקּוֹת.",
@@ -277,7 +277,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_release"),
 
         WordEntity(id = 129620, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּרָמֶטֶר פוּנְקְצִיָּה", transliteration = "parametr funktsiya", translation = "параметр функции",
+            original = "פְּרָמֶטֶר פוּנְקְצִיָּה", translation = "параметр функции",
             definition = "עֵרֶךְ קְלָט שֶׁמַּעֲבִירִים פְּנִימָה כְּדֵי לְהַשְׁפִּיעַ עַל הַתּוֹצָאָה.",
             definitionNative = "Входное значение — его передают внутрь, чтобы повлиять на результат.",
             example = "הַבַּג הִתְגַּלָּה בְּפְּרָמֶטֶר פוּנְקְצִיָּה שֶׁלֹּא נִבְדַּק כָּרָאוּי.",
@@ -285,7 +285,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_code_basics"),
 
         WordEntity(id = 129621, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "רֶגְרֵסִיָּה", transliteration = "regressiya", translation = "регрессия (тестирование)",
+            original = "רֶגְרֵסִיָּה", translation = "регрессия (тестирование)",
             definition = "מַצָּב שֶׁבּוֹ פִּיצָ'ר יָשָׁן וְעוֹבֵד נִשְׁבָּר אַחֲרֵי שִׁנּוּי בַּקּוֹד.",
             definitionNative = "Когда после правки кода ломается старая, давно работавшая фича.",
             example = "תָּפַסְנוּ רֶגְרֵסִיָּה לִפְנֵי שֶׁהַגִּרְסָה יָצְאָה לַפְּרוֹדַקְשֶׁן.",
@@ -293,7 +293,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_testing"),
 
         WordEntity(id = 129622, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "מְשִׁימַת פִּיתּוּחַ", transliteration = "meshimat pituyakh", translation = "задача разработки (issue)",
+            original = "מְשִׁימַת פִּיתּוּחַ", translation = "задача разработки (issue)",
             definition = "כַּרְטִיס בִּמְעַרֶכֶת הַצֶּוֶת עִם תֵּאוּר עֲבוֹדָה לְמִישֶׁהוּ מֵהַמְּפַתְּחִים.",
             definitionNative = "Карточка в трекере с описанием — что должен сделать конкретный разработчик.",
             example = "לָקַחְתִּי לְעַצְמִי מְשִׁימַת פִּיתּוּחַ קְטַנָּה לִפְנֵי הַחַג.",
@@ -301,7 +301,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_process"),
 
         WordEntity(id = 129623, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "מִזוּג קוֹד", transliteration = "mizug kod", translation = "слияние кода (merge)",
+            original = "מִזוּג קוֹד", translation = "слияние кода (merge)",
             definition = "אִיחוּד שִׁנּוּיִים מִשְּׁנֵי עֲנָפִים שׁוֹנִים לְעָנָף אֶחָד מְשׁוּתָּף.",
             definitionNative = "Когда правки из двух разных веток собирают в одну общую.",
             example = "אַחֲרֵי הַבְּחִינָה הַטֶּק-לִיד אִישֵּׁר אֶת מִזוּג קוֹד לַמַּסְטֶר.",
@@ -309,7 +309,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_git"),
 
         WordEntity(id = 129624, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "סְבִיבַת הַפְעָלָה", transliteration = "svivat haf'ala", translation = "производственная среда (прод)",
+            original = "סְבִיבַת הַפְעָלָה", translation = "производственная среда (прод)",
             definition = "הַשָּׁרָתִים הַחַיִּים שֶׁבָּהֶם מִשְׁתַּמְּשִׁים אֲמִיתִיִּים פּוֹגְשִׁים אֶת הַמַּעֲרֶכֶת.",
             definitionNative = "Боевые сервера — там реальные пользователи встречаются с системой.",
             example = "אָסוּר לְבַצֵּעַ נִיסּוּיִים יְשִׁירוֹת בְּסְבִיבַת הַפְעָלָה.",
@@ -317,7 +317,7 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_release"),
 
         WordEntity(id = 129625, setId = 1296, languagePair = "he-ru", rarity = "RARE",
-            original = "תַּשְׁתִּית הַקוֹד", transliteration = "tashtit hakod", translation = "кодовая база",
+            original = "תַּשְׁתִּית הַקוֹד", translation = "кодовая база",
             definition = "כְּלַל הַקְּבָצִים וְהַמּוֹדוּלִים שֶׁמְּרַכִּיבִים אֶת הַמּוּצָר הַתָּכְנָתִי כֻּלּוֹ.",
             definitionNative = "Все файлы и модули, из которых собран программный продукт целиком.",
             example = "תַּשְׁתִּית הַקוֹד שֶׁל הַסְּטַרְטַאפּ צָמְחָה לְמֵאוֹת אַלְפֵי שׁוּרוֹת.",
@@ -327,232 +327,232 @@ object WordDataHebrewBatch52 {
         // ── Set 1297: Хайтек: углублённый (level=3, RARE+EPIC) ─────────────
 
         WordEntity(id = 129701, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "מִיקְרוֹ-שֵׁרוּתִים", transliteration = "mikro-sherutim", translation = "микросервисы"),
+            original = "מִיקְרוֹ-שֵׁרוּתִים", translation = "микросервисы"),
 
         WordEntity(id = 129702, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "מַחְשׁוֹב קְצָה", transliteration = "makhshuv ktsа", translation = "граничные вычисления / edge computing"),
+            original = "מַחְשׁוֹב קְצָה", translation = "граничные вычисления / edge computing"),
 
         WordEntity(id = 129703, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "מַכָּלוּת", transliteration = "makhalut", translation = "контейнеризация"),
+            original = "מַכָּלוּת", translation = "контейнеризация"),
 
         WordEntity(id = 129704, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "אוֹרְכֶסְטְרַצְיַת שֵׁרוּתִים", transliteration = "orkestratsiayat sherutim", translation = "оркестрация сервисов"),
+            original = "אוֹרְכֶסְטְרַצְיַת שֵׁרוּתִים", translation = "оркестрация сервисов"),
 
         WordEntity(id = 129705, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "אִיזוּן עוֹמְסִים", transliteration = "izun ‌omasim", translation = "балансировка нагрузки"),
+            original = "אִיזוּן עוֹמְסִים", translation = "балансировка нагрузки"),
 
         WordEntity(id = 129706, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "יְכוֹלֶת הַרְחָבָה", transliteration = "yekolet harkhava", translation = "масштабируемость"),
+            original = "יְכוֹלֶת הַרְחָבָה", translation = "масштабируемость"),
 
         WordEntity(id = 129707, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "מַטְמוּן שֵׁרוּת", transliteration = "matmon sherut", translation = "кэширование сервиса"),
+            original = "מַטְמוּן שֵׁרוּת", translation = "кэширование сервиса"),
 
         WordEntity(id = 129708, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "תּוֹר הוֹדָעוֹת", transliteration = "tor hoda'ot", translation = "очередь сообщений"),
+            original = "תּוֹר הוֹדָעוֹת", translation = "очередь сообщений"),
 
         WordEntity(id = 129709, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "אַרְכִיטֶקְטוּרַת אַחְזָקָה", transliteration = "arkhitektura akhzaka", translation = "событийно-ориентированная архитектура"),
+            original = "אַרְכִיטֶקְטוּרַת אַחְזָקָה", translation = "событийно-ориентированная архитектура"),
 
         WordEntity(id = 129710, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "מוֹנִיטוֹרִינְג", transliteration = "monitoring", translation = "мониторинг"),
+            original = "מוֹנִיטוֹרִינְג", translation = "мониторинг"),
 
         WordEntity(id = 129711, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "רִישּׁוּם יּוֹמָן", transliteration = "rishum yoman", translation = "логирование"),
+            original = "רִישּׁוּם יּוֹמָן", translation = "логирование"),
 
         WordEntity(id = 129712, setId = 1297, languagePair = "he-ru", rarity = "RARE",
-            original = "בִּצּוּעִים", transliteration = "bitsui'im", translation = "производительность (системы)"),
+            original = "בִּצּוּעִים", translation = "производительность (системы)"),
 
         WordEntity(id = 129713, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "אַרְכִיטֶקְטוּרָה", transliteration = "arkhitektura", translation = "архитектура (программная)"),
+            original = "אַרְכִיטֶקְטוּרָה", translation = "архитектура (программная)"),
 
         WordEntity(id = 129714, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "הַצְפָּנַת קוֹד", transliteration = "hatspanat kod", translation = "шифрование кода / данных"),
+            original = "הַצְפָּנַת קוֹד", translation = "шифрование кода / данных"),
 
         WordEntity(id = 129715, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "אִימוּת מִשְׁתַּמֵּשׁ", transliteration = "imut mishtamesh", translation = "аутентификация пользователя"),
+            original = "אִימוּת מִשְׁתַּמֵּשׁ", translation = "аутентификация пользователя"),
 
         WordEntity(id = 129716, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "הַרְשָׁאַת גִּישָׁה", transliteration = "harsha'at gisha", translation = "авторизация доступа"),
+            original = "הַרְשָׁאַת גִּישָׁה", translation = "авторизация доступа"),
 
         WordEntity(id = 129717, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "אֲסִימוֹן גִּישָׁה", transliteration = "asimon gisha", translation = "токен доступа"),
+            original = "אֲסִימוֹן גִּישָׁה", translation = "токен доступа"),
 
         WordEntity(id = 129718, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "שְׁכַּבַת בֵּינַיִם", transliteration = "shkhavat benayim", translation = "middleware (промежуточный слой)"),
+            original = "שְׁכַּבַת בֵּינַיִם", translation = "middleware (промежуточный слой)"),
 
         WordEntity(id = 129719, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "פוּנְקְצִיַּת גִּיבּוּב", transliteration = "funktsiyat gibub", translation = "хэш-функция"),
+            original = "פוּנְקְצִיַּת גִּיבּוּב", translation = "хэш-функция"),
 
         WordEntity(id = 129720, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "שֵׁרוּת REST", transliteration = "sherut REST", translation = "REST-сервис"),
+            original = "שֵׁרוּת REST", translation = "REST-сервис"),
 
         WordEntity(id = 129721, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "שְׁאֵלָתָת GraphQL", transliteration = "she'eltat GraphQL", translation = "GraphQL-запрос"),
+            original = "שְׁאֵלָתָת GraphQL", translation = "GraphQL-запрос"),
 
         WordEntity(id = 129722, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "DevOps", transliteration = "DevOps", translation = "DevOps (методология разработки и эксплуатации)"),
+            original = "DevOps", translation = "DevOps (методология разработки и эксплуатации)"),
 
         WordEntity(id = 129723, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "פְּרִיסָה רְצִיפָה", transliteration = "prisa retsufa", translation = "непрерывное развёртывание (CD)"),
+            original = "פְּרִיסָה רְצִיפָה", translation = "непрерывное развёртывание (CD)"),
 
         WordEntity(id = 129724, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "שִׁבּוּשׁ אַחְזָקָה", transliteration = "shibush akhzaka", translation = "сбой в работе сервиса"),
+            original = "שִׁבּוּשׁ אַחְזָקָה", translation = "сбой в работе сервиса"),
 
         WordEntity(id = 129725, setId = 1297, languagePair = "he-ru", rarity = "EPIC",
-            original = "סוֹקֵר אֲבְטָחָה", transliteration = "soker avtakha", translation = "аудит безопасности"),
+            original = "סוֹקֵר אֲבְטָחָה", translation = "аудит безопасности"),
 
         // ── Set 1298: Хайтек: профессиональный (level=4, EPIC+LEGENDARY) ───
 
         WordEntity(id = 129801, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "תַּבְנִיּוֹת אַרְכִיטֶקְטוּרָה", transliteration = "tavniyot arkhitektura", translation = "архитектурные паттерны"),
+            original = "תַּבְנִיּוֹת אַרְכִיטֶקְטוּרָה", translation = "архитектурные паттерны"),
 
         WordEntity(id = 129802, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "עִצּוּב מוּנְחֶה-תְּחוּמִים", transliteration = "itsub munkhe-tkhumim", translation = "доменно-ориентированное проектирование (DDD)"),
+            original = "עִצּוּב מוּנְחֶה-תְּחוּמִים", translation = "доменно-ориентированное проектирование (DDD)"),
 
         WordEntity(id = 129803, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "הַפְרָדַת פְּקוּדָה-שְׁאֵלָה", transliteration = "hafradat pkuda-she'ela", translation = "CQRS (разделение команд и запросов)"),
+            original = "הַפְרָדַת פְּקוּדָה-שְׁאֵלָה", translation = "CQRS (разделение команд и запросов)"),
 
         WordEntity(id = 129804, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "מָקוֹר אַחְזָקָה", transliteration = "makor akhzaka", translation = "event sourcing (источник событий)"),
+            original = "מָקוֹר אַחְזָקָה", translation = "event sourcing (источник событий)"),
 
         WordEntity(id = 129805, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "מַעֲרֶכֶת מְבוּזֶּרֶת", transliteration = "ma'arekhet mevuzeret", translation = "распределённая система"),
+            original = "מַעֲרֶכֶת מְבוּזֶּרֶת", translation = "распределённая система"),
 
         WordEntity(id = 129806, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "קוֹנְסֶנְסוּס מְבוּזָּר", transliteration = "konsensus mevuzar", translation = "распределённый консенсус"),
+            original = "קוֹנְסֶנְסוּס מְבוּזָּר", translation = "распределённый консенсус"),
 
         WordEntity(id = 129807, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "מֵשֶׁק עִמּוּד", transliteration = "meshek imud", translation = "пропускная способность (throughput)"),
+            original = "מֵשֶׁק עִמּוּד", translation = "пропускная способность (throughput)"),
 
         WordEntity(id = 129808, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "הֶחְלֵפַת הֶקְשֵׁר", transliteration = "hekhliefat heksher", translation = "переключение контекста (context switching)"),
+            original = "הֶחְלֵפַת הֶקְשֵׁר", translation = "переключение контекста (context switching)"),
 
         WordEntity(id = 129809, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "חוֹב תַּשְׁתִּיתִי", transliteration = "khov tashtiti", translation = "технический инфраструктурный долг"),
+            original = "חוֹב תַּשְׁתִּיתִי", translation = "технический инфраструктурный долг"),
 
         WordEntity(id = 129810, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "הֶסְכֵּם רָמַת שֵׁרוּת", transliteration = "heskem ramat sherut", translation = "SLA (соглашение об уровне сервиса)"),
+            original = "הֶסְכֵּם רָמַת שֵׁרוּת", translation = "SLA (соглашение об уровне сервиса)"),
 
         WordEntity(id = 129811, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "יַעַד רָמַת שֵׁרוּת", transliteration = "ya'ad ramat sherut", translation = "SLO (цель уровня сервиса)"),
+            original = "יַעַד רָמַת שֵׁרוּת", translation = "SLO (цель уровня сервиса)"),
 
         WordEntity(id = 129812, setId = 1298, languagePair = "he-ru", rarity = "EPIC",
-            original = "רָדַאר טֶכְנוֹלוֹגִי", transliteration = "radar tekhnologi", translation = "технологический радар"),
+            original = "רָדַאר טֶכְנוֹלוֹגִי", translation = "технологический радар"),
 
         WordEntity(id = 129813, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תֶּאוֹרֶם CAP", transliteration = "te'orem CAP", translation = "теорема CAP (согласованность, доступность, разделение)"),
+            original = "תֶּאוֹרֶם CAP", translation = "теорема CAP (согласованность, доступность, разделение)"),
 
         WordEntity(id = 129814, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הַתְכַּנְסוּת אַרְכִיטֶקְטוּרָה", transliteration = "hitkansut arkhitektura", translation = "конвергенция архитектуры"),
+            original = "הַתְכַּנְסוּת אַרְכִיטֶקְטוּרָה", translation = "конвергенция архитектуры"),
 
         WordEntity(id = 129815, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "סְטִיַּת אַרְכִיטֶקְטוּרָה", transliteration = "stiytayat arkhitektura", translation = "дивергенция / дрейф архитектуры"),
+            original = "סְטִיַּת אַרְכִיטֶקְטוּרָה", translation = "дивергенция / дрейф архитектуры"),
 
         WordEntity(id = 129816, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "עֵרֶךְ עֵסְקִי", transliteration = "erekh iski", translation = "бизнес-ценность (продукта)"),
+            original = "עֵרֶךְ עֵסְקִי", translation = "бизнес-ценность (продукта)"),
 
         WordEntity(id = 129817, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הַנְדָּסַת אֲמִינוּת אֲתָרִים", transliteration = "handsat aminut atarim", translation = "SRE (Site Reliability Engineering)"),
+            original = "הַנְדָּסַת אֲמִינוּת אֲתָרִים", translation = "SRE (Site Reliability Engineering)"),
 
         WordEntity(id = 129818, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אַבְטָחַת מֵידָע", transliteration = "avtakhat meida", translation = "информационная безопасность"),
+            original = "אַבְטָחַת מֵידָע", translation = "информационная безопасность"),
 
         WordEntity(id = 129819, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "כֶּשֶׁל יְחִיד", transliteration = "keshal yekhid", translation = "единая точка отказа (SPOF)"),
+            original = "כֶּשֶׁל יְחִיד", translation = "единая точка отказа (SPOF)"),
 
         WordEntity(id = 129820, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "חוֹלְשׁוֹת אַרְכִיטֶקְטוּרָה", transliteration = "kholshot arkhitektura", translation = "архитектурные уязвимости"),
+            original = "חוֹלְשׁוֹת אַרְכִיטֶקְטוּרָה", translation = "архитектурные уязвимости"),
 
         WordEntity(id = 129821, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מֵטְרִיקוֹת עֵסְקִיּוֹת", transliteration = "metrикot iskiyot", translation = "бизнес-метрики"),
+            original = "מֵטְרִיקוֹת עֵסְקִיּוֹת", translation = "бизнес-метрики"),
 
         WordEntity(id = 129822, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "שַׁיִּישׁ נְתוּנִים", transliteration = "shayish netunin", translation = "шардирование данных"),
+            original = "שַׁיִּישׁ נְתוּנִים", translation = "шардирование данных"),
 
         WordEntity(id = 129823, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "כִּיוּל מַעֲרֶכֶת", transliteration = "kiyul ma'arekhet", translation = "калибровка системы"),
+            original = "כִּיוּל מַעֲרֶכֶת", translation = "калибровка системы"),
 
         WordEntity(id = 129824, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הַסְכָּמַת פְּלַטְפוֹרְמָה", transliteration = "haskamat platforma", translation = "аттестация платформы"),
+            original = "הַסְכָּמַת פְּלַטְפוֹרְמָה", translation = "аттестация платформы"),
 
         WordEntity(id = 129825, setId = 1298, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פֶּדֶרַצְיַת שֵׁרוּתִים", transliteration = "federatsiyat sherutim", translation = "федерация сервисов"),
+            original = "פֶּדֶרַצְיַת שֵׁרוּתִים", translation = "федерация сервисов"),
 
         // ── Set 1299: Хайтек: носитель языка (level=5, LEGENDARY) ─────────
 
         WordEntity(id = 129901, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מֶרְחָב בְּעָיוֹת תּוֹכְנָה", transliteration = "merkhav be'ayot tokhna", translation = "проблемное пространство (software)"),
+            original = "מֶרְחָב בְּעָיוֹת תּוֹכְנָה", translation = "проблемное пространство (software)"),
 
         WordEntity(id = 129902, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הִתְפַּתְּחוּת מְאֻחֶדֶת פְּלַטְפוֹרְמוֹת", transliteration = "hitpatkhut me'ukhedet platformot", translation = "конвергентная эволюция платформ"),
+            original = "הִתְפַּתְּחוּת מְאֻחֶדֶת פְּלַטְפוֹרְמוֹת", translation = "конвергентная эволюция платформ"),
 
         WordEntity(id = 129903, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פָּרָדִיגְמָה הַנְדָּסִית", transliteration = "paradigma handasit", translation = "инженерная парадигма"),
+            original = "פָּרָדִיגְמָה הַנְדָּסִית", translation = "инженерная парадигма"),
 
         WordEntity(id = 129904, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תּוֹדָעָה מְחַקֶּרֶת", transliteration = "toda'a mekhakeret", translation = "рефлексивность системы"),
+            original = "תּוֹדָעָה מְחַקֶּרֶת", translation = "рефлексивность системы"),
 
         WordEntity(id = 129905, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מֶטָ-תִּכְנוּת", transliteration = "meta-tikhnun", translation = "метапрограммирование"),
+            original = "מֶטָ-תִּכְנוּת", translation = "метапрограммирование"),
 
         WordEntity(id = 129906, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אוֹנְטוֹלוֹגְיַת נְתוּנִים", transliteration = "ontologiyat netunin", translation = "онтология данных"),
+            original = "אוֹנְטוֹלוֹגְיַת נְתוּנִים", translation = "онтология данных"),
 
         WordEntity(id = 129907, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אֶפִּיסְטֵמוֹלוֹגְיַת הַנְדָּסָה", transliteration = "epistemologiyat handasa", translation = "эпистемология инженерии"),
+            original = "אֶפִּיסְטֵמוֹלוֹגְיַת הַנְדָּסָה", translation = "эпистемология инженерии"),
 
         WordEntity(id = 129908, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תַּאֵּם תַּהֲלִיכִים", transliteration = "ta'em tahallikhim", translation = "ортогональность процессов"),
+            original = "תַּאֵּם תַּהֲלִיכִים", translation = "ортогональность процессов"),
 
         WordEntity(id = 129909, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מַעֲרֶכֶת אֶמֶרְגֶּנְטִית", transliteration = "ma'arekhet emergentit", translation = "эмерджентная система"),
+            original = "מַעֲרֶכֶת אֶמֶרְגֶּנְטִית", translation = "эмерджентная система"),
 
         WordEntity(id = 129910, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תְּאוֹרְיַת הַמַּעֲרָכוֹת הַמְּסוּבָּכוֹת", transliteration = "teoriyat hama'arakhot hamesubakoт", translation = "теория сложных систем"),
+            original = "תְּאוֹרְיַת הַמַּעֲרָכוֹת הַמְּסוּבָּכוֹת", translation = "теория сложных систем"),
 
         WordEntity(id = 129911, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "שִׁינּוּי פָּרָדִיגְמָטִי", transliteration = "shinui paradigmati", translation = "парадигматический сдвиг"),
+            original = "שִׁינּוּי פָּרָדִיגְמָטִי", translation = "парадигматический сдвиг"),
 
         WordEntity(id = 129912, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הִסְתָּגְלוּת מַעֲרֶכֶת", transliteration = "histaglut ma'arekhet", translation = "адаптивность системы"),
+            original = "הִסְתָּגְלוּת מַעֲרֶכֶת", translation = "адаптивность системы"),
 
         WordEntity(id = 129913, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "קַטָסְטְרוֹפִיּוּת מִדַּעִית", transliteration = "katastrofiyut mida'it", translation = "катастрофичность при масштабировании"),
+            original = "קַטָסְטְרוֹפִיּוּת מִדַּעִית", translation = "катастрофичность при масштабировании"),
 
         WordEntity(id = 129914, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הַנְדָּסַת הִסָּיוּן", transliteration = "handsat hisayun", translation = "инженерия умозаключений (inference engineering)"),
+            original = "הַנְדָּסַת הִסָּיוּן", translation = "инженерия умозаключений (inference engineering)"),
 
         WordEntity(id = 129915, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "בִּינָה מֵחַקֶּרֶת", transliteration = "bina mekhakeret", translation = "рефлексивный интеллект"),
+            original = "בִּינָה מֵחַקֶּרֶת", translation = "рефлексивный интеллект"),
 
         WordEntity(id = 129916, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תְּאוֹרְיַת הַסִּבּוּכִיּוּת", transliteration = "teoriyat hasivukhiyut", translation = "теория вычислительной сложности"),
+            original = "תְּאוֹרְיַת הַסִּבּוּכִיּוּת", translation = "теория вычислительной сложности"),
 
         WordEntity(id = 129917, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "עֲקְרוֹנוֹת הַהַנְדָּסָה הַרַּכָּה", transliteration = "ikronot hahhandasa haraka", translation = "принципы разработки ПО"),
+            original = "עֲקְרוֹנוֹת הַהַנְדָּסָה הַרַּכָּה", translation = "принципы разработки ПО"),
 
         WordEntity(id = 129918, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "כָּלְכָּלַת פְּלַטְפוֹרְמוֹת", transliteration = "kalkala platformot", translation = "экономика платформ"),
+            original = "כָּלְכָּלַת פְּלַטְפוֹרְמוֹת", translation = "экономика платформ"),
 
         WordEntity(id = 129919, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פִּילוֹסוֹפִיַּת מֶחְקַר הַמַּחְשׁוֹב", transliteration = "filosofiyat mekhkar hamakhshuv", translation = "философия компьютерных наук"),
+            original = "פִּילוֹסוֹפִיַּת מֶחְקַר הַמַּחְשׁוֹב", translation = "философия компьютерных наук"),
 
         WordEntity(id = 129920, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "סוֹצְיוֹ-טֶכְנִי", transliteration = "sotsyo-tekhni", translation = "социотехнический (подход)"),
+            original = "סוֹצְיוֹ-טֶכְנִי", translation = "социотехнический (подход)"),
 
         WordEntity(id = 129921, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "שִׁיח הַדִּיגִיטַל", transliteration = "siakh hadigital", translation = "дискурс цифровизации"),
+            original = "שִׁיח הַדִּיגִיטַל", translation = "дискурс цифровизации"),
 
         WordEntity(id = 129922, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "גּוּשׁ קוֹד עַצְמִי", transliteration = "gush kod atsmi", translation = "самомодифицирующийся код"),
+            original = "גּוּשׁ קוֹד עַצְמִי", translation = "самомодифицирующийся код"),
 
         WordEntity(id = 129923, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תְּכוּנוֹת אֶמֶרְגֶּנְטִיּוֹת", transliteration = "tekhnunot emergentiyot", translation = "эмерджентные свойства системы"),
+            original = "תְּכוּנוֹת אֶמֶרְגֶּנְטִיּוֹת", translation = "эмерджентные свойства системы"),
 
         WordEntity(id = 129924, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תְּלוּת הַמַּעֲרֶכֶת", transliteration = "telut hama'arekhet", translation = "зависимость / связность системы"),
+            original = "תְּלוּת הַמַּעֲרֶכֶת", translation = "зависимость / связность системы"),
 
         WordEntity(id = 129925, setId = 1299, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "קוּבְּיָה שְׁחוֹרָה", transliteration = "kuvya shekhora", translation = "чёрный ящик (принцип в инженерии)"),
+            original = "קוּבְּיָה שְׁחוֹרָה", translation = "чёрный ящик (принцип в инженерии)"),
     )
 }

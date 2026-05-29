@@ -47,7 +47,7 @@ object WordDataHebrewFinanceV2 {
         // ── Set 1620 — Основы: деньги (level 1, COMMON) ───────────────────
         WordEntity(
             id = 162001, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "currency_units", transliteration = "шекель хадаш",
+            pos = "noun", semanticGroup = "currency_units",
             original = "שֶׁקֶל חָדָשׁ", translation = "новый шекель (валюта)",
             definition = "הַמַּטְבֵּעַ הָרִשְׁמִי שֶׁל מְדִינַת יִשְׂרָאֵל, מִתְחַלֵּק לְמֵאָה אֲגוֹרוֹת.",
             definitionNative = "Официальная валюта Израиля, состоит из ста мелких единиц.",
@@ -56,7 +56,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162002, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "currency_units", transliteration = "агора",
+            pos = "noun", semanticGroup = "currency_units",
             original = "אֲגוֹרָה", translation = "агора (1/100 шекеля)",
             definition = "מַטְבֵּעַ קָטָן בְּיִשְׂרָאֵל, חֵלֶק מֵאָה מֵהַשֶּׁקֶל.",
             definitionNative = "Мелкая разменная монета в Израиле, одна сотая шекеля.",
@@ -65,7 +65,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162001L, 162015L)),
         WordEntity(
             id = 162003, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "cash_forms", transliteration = "мазуман",
+            pos = "noun", semanticGroup = "cash_forms",
             original = "מָזוּמָן", translation = "наличные деньги",
             definition = "כֶּסֶף בִּשְׁטָרוֹת וּמַטְבְּעוֹת, לֹא בְּכַרְטִיס וְלֹא בְּהַעֲבָרָה.",
             definitionNative = "Купюры и монеты на руках, а не на карте или переводом.",
@@ -74,7 +74,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162004L, 162005L, 162006L)),
         WordEntity(
             id = 162004, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "cash_forms", transliteration = "матбеа",
+            pos = "noun", semanticGroup = "cash_forms",
             original = "מַטְבֵּעַ", translation = "монета",
             definition = "דִּיסְקָה קְטַנָּה מִמַּתֶּכֶת בְּעֵרֶךְ כַּסְפִּי קָבוּעַ.",
             definitionNative = "Маленький металлический кружок с фиксированной денежной стоимостью.",
@@ -83,7 +83,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162005, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "cash_forms", transliteration = "штар кесеф",
+            pos = "noun", semanticGroup = "cash_forms",
             original = "שְׁטַר כֶּסֶף", translation = "купюра / банкнота",
             definition = "פִּסַּת נְיָר רִשְׁמִית בְּעֵרֶךְ כַּסְפִּי, כְּמוֹ מֵאָה שֶׁקֶל.",
             definitionNative = "Официальный бумажный знак деньгами, например сто шекелей.",
@@ -92,7 +92,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162003L, 162004L, 162006L)),
         WordEntity(
             id = 162006, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "cash_forms", transliteration = "арнак",
+            pos = "noun", semanticGroup = "cash_forms",
             original = "אַרְנָק", translation = "кошелёк",
             definition = "כְּלִי קָטָן לְהַחֲזָקַת מָזוּמָן וּתְעוּדוֹת בַּכִּיס אוֹ בַּתִּיק.",
             definitionNative = "Маленький предмет для хранения наличных и документов в кармане.",
@@ -101,7 +101,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162003L, 162004L, 162005L)),
         WordEntity(
             id = 162007, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "price_labels", transliteration = "таг мехир",
+            pos = "noun", semanticGroup = "price_labels",
             original = "תַּג מְחִיר", translation = "ценник",
             definition = "פֶּתֶק קָטָן עַל מוּצָר שֶׁמַּרְאֶה כַּמָּה הוּא עוֹלֶה.",
             definitionNative = "Маленькая бирка на товаре, где написано, сколько он стоит.",
@@ -110,7 +110,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162008L)),
         WordEntity(
             id = 162008, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "price_labels", transliteration = "мивца",
+            pos = "noun", semanticGroup = "price_labels",
             original = "מִבְצָע", translation = "акция / спецпредложение",
             definition = "הַצָּעָה זְמַנִּית שֶׁל מְחִיר מוּזָל אוֹ שְׁנַיִם בְּמַחִיר אֶחָד.",
             definitionNative = "Временное предложение со сниженной ценой или «два по цене одного».",
@@ -119,7 +119,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162007L)),
         WordEntity(
             id = 162009, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "buy_sell_actions", transliteration = "ликнот",
+            pos = "verb", semanticGroup = "buy_sell_actions",
             original = "לִקְנוֹת", translation = "покупать",
             definition = "לְקַבֵּל מוּצָר תְּמוּרַת כֶּסֶף בַּחֲנוּת אוֹ בָּאִינְטֶרְנֶט.",
             definitionNative = "Получить товар за деньги в магазине или через интернет.",
@@ -128,7 +128,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162010L, 162023L, 162024L)),
         WordEntity(
             id = 162010, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "buy_sell_actions", transliteration = "лимкор",
+            pos = "verb", semanticGroup = "buy_sell_actions",
             original = "לִמְכֹּר", translation = "продавать",
             definition = "לָתֵת מוּצָר אוֹ שֵׁרוּת תְּמוּרַת כֶּסֶף לְקוֹנֶה.",
             definitionNative = "Отдать товар или услугу другому человеку за деньги.",
@@ -137,7 +137,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162009L, 162023L, 162024L)),
         WordEntity(
             id = 162011, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adjective", semanticGroup = "price_adjectives", transliteration = "якар",
+            pos = "adjective", semanticGroup = "price_adjectives",
             original = "יָקָר", translation = "дорогой",
             definition = "עוֹלֶה הַרְבֵּה כֶּסֶף, יוֹתֵר מִמָּה שֶׁמַּתְאִים לָרֹב הָאֲנָשִׁים.",
             definitionNative = "Стоит много денег, больше того, что подходит большинству людей.",
@@ -146,7 +146,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162012L, 162013L, 162025L)),
         WordEntity(
             id = 162012, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adjective", semanticGroup = "price_adjectives", transliteration = "битхашбули",
+            pos = "adjective", semanticGroup = "price_adjectives",
             original = "בַּהֶישֵׂג יָד", translation = "доступный по цене",
             definition = "מְחִיר שֶׁאָדָם רָגִיל יָכוֹל לְשַׁלֵּם בְּלִי לְהָצֵר עַל עַצְמוֹ.",
             definitionNative = "Цена, которую обычный человек может заплатить без напряжения.",
@@ -155,7 +155,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162011L, 162013L, 162025L)),
         WordEntity(
             id = 162013, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adjective", semanticGroup = "price_adjectives", transliteration = "хинам",
+            pos = "adjective", semanticGroup = "price_adjectives",
             original = "חִינָּם", translation = "бесплатно",
             definition = "בְּלִי לְשַׁלֵּם כְּלוּם, מְקַבְּלִים מַשֶּׁהוּ כְּמַתָּנָה.",
             definitionNative = "Без какой-либо оплаты, получают что-то в подарок.",
@@ -164,7 +164,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162011L, 162012L, 162025L)),
         WordEntity(
             id = 162014, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "money_general", transliteration = "кесеф",
+            pos = "noun", semanticGroup = "money_general",
             original = "כֶּסֶף", translation = "деньги",
             definition = "אֶמְצָעִי תַּשְׁלוּם שֶׁבּוֹ קוֹנִים וּמוֹכְרִים כָּל מוּצָר אוֹ שֵׁרוּת.",
             definitionNative = "Средство оплаты, с помощью которого покупают и продают товары.",
@@ -173,7 +173,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162003L, 162015L, 162016L, 162017L, 162018L)),
         WordEntity(
             id = 162015, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "money_general", transliteration = "пруто",
+            pos = "noun", semanticGroup = "money_general",
             original = "פְּרוּטָה", translation = "копейка / мелкая монета",
             definition = "מַטְבֵּעַ קָטָן מְאוֹד, מְשַׁמֵּשׁ בְּבִיטּוּי עַל סְכוּם זָעִיר.",
             definitionNative = "Очень мелкая монета, в выражениях означает ничтожную сумму.",
@@ -182,7 +182,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162002L, 162014L, 162016L)),
         WordEntity(
             id = 162016, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "money_general", transliteration = "хисахон муколи",
+            pos = "noun", semanticGroup = "money_general",
             original = "חִסָּכוֹן מִשְׁפַּחְתִּי", translation = "семейные сбережения",
             definition = "כֶּסֶף שֶׁמִּשְׁפָּחָה שָׂמָה בַּצַּד לַאֲרוּחוֹת חָשׁוּב בַּעֲתִיד.",
             definitionNative = "Деньги, которые семья откладывает на важные будущие траты.",
@@ -191,7 +191,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162003L, 162014L, 162015L, 162018L)),
         WordEntity(
             id = 162017, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "daily_money", transliteration = "оцаа",
+            pos = "noun", semanticGroup = "daily_money",
             original = "הוֹצָאָה", translation = "трата / расход",
             definition = "כֶּסֶף שֶׁיּוֹצֵא מִן הַכִּיס בְּעַד קְנִיָּה אוֹ תַּשְׁלוּם.",
             definitionNative = "Деньги, которые уходят из кармана на покупку или платёж.",
@@ -200,7 +200,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162018L, 162019L)),
         WordEntity(
             id = 162018, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "daily_money", transliteration = "ахнаса йомит",
+            pos = "noun", semanticGroup = "daily_money",
             original = "הַכְנָסָה יוֹמִית", translation = "дневной доход",
             definition = "סַךְ הַכֶּסֶף שֶׁאָדָם אוֹ עֵסֶק מַרְוִיחַ בְּיוֹם אֶחָד.",
             definitionNative = "Сумма денег, которую человек или бизнес зарабатывает за день.",
@@ -210,7 +210,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162019, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "daily_money", transliteration = "киса",
+            pos = "noun", semanticGroup = "daily_money",
             original = "כִּיס", translation = "карман (с деньгами)",
             definition = "מָקוֹם קָטָן בַּבֶּגֶד שֶׁבּוֹ שָׂמִים מַפְתֵּחוֹת, מַטְבְּעוֹת אוֹ נְיָר.",
             definitionNative = "Небольшое место в одежде, куда кладут ключи и мелкие монеты.",
@@ -219,7 +219,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162017L, 162018L)),
         WordEntity(
             id = 162020, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "small_transactions", transliteration = "цедака",
+            pos = "noun", semanticGroup = "small_transactions",
             original = "צְדָקָה", translation = "милостыня / пожертвование",
             definition = "כֶּסֶף קָטָן שֶׁנּוֹתְנִים לְנִצְרָךְ אוֹ לְאִרְגּוּן עֶזְרָה.",
             definitionNative = "Небольшая сумма, которую отдают нуждающемуся или благотворителям.",
@@ -228,7 +228,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162001L, 162002L, 162003L, 162004L, 162005L, 162014L, 162015L, 162021L, 162022L)),
         WordEntity(
             id = 162021, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "small_transactions", transliteration = "тешер",
+            pos = "noun", semanticGroup = "small_transactions",
             original = "תֶּשֶׁר", translation = "чаевые",
             definition = "תּוֹסֶפֶת קְטַנָּה שֶׁמַּשְׁאִירִים לְמֶלְצָר אוֹ לְנַהָג כַּהֲעָרָכָה.",
             definitionNative = "Небольшая надбавка официанту или водителю в знак благодарности.",
@@ -237,7 +237,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162014L, 162020L, 162022L)),
         WordEntity(
             id = 162022, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "small_transactions", transliteration = "маагуль",
+            pos = "noun", semanticGroup = "small_transactions",
             original = "עִיגּוּל לְמַעְלָה", translation = "округление вверх (чека)",
             definition = "הוֹסָפָה קְטַנָּה לַסְּכוּם בַּקַּסָּה כְּדֵי לְוַתֵּר עַל אֲגוֹרוֹת.",
             definitionNative = "Небольшая добавка к сумме в кассе, чтобы убрать мелкие агорот.",
@@ -246,7 +246,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162020L, 162021L)),
         WordEntity(
             id = 162023, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "buy_sell_actions", transliteration = "лехасех",
+            pos = "verb", semanticGroup = "buy_sell_actions",
             original = "לַחֲסוֹךְ", translation = "откладывать / копить",
             definition = "לָשִׂים כֶּסֶף בַּצַּד וְלֹא לְהוֹצִיא אוֹתוֹ עַל כָּל דָּבָר.",
             definitionNative = "Сберегать деньги в сторону и не тратить их на всё подряд.",
@@ -255,7 +255,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162024, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "buy_sell_actions", transliteration = "лехотзи",
+            pos = "verb", semanticGroup = "buy_sell_actions",
             original = "לְהוֹצִיא", translation = "тратить (деньги)",
             definition = "לָתֵת כֶּסֶף תְּמוּרַת מוּצָר אוֹ בִּדּוּר בַּיּוֹם-יוֹם.",
             definitionNative = "Отдавать деньги за товары или развлечения в повседневной жизни.",
@@ -264,7 +264,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162009L, 162010L, 162023L)),
         WordEntity(
             id = 162025, setId = 1620, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adjective", semanticGroup = "price_adjectives", transliteration = "золь мехир",
+            pos = "adjective", semanticGroup = "price_adjectives",
             original = "זוֹל בְּמִבְצָע", translation = "дешёвый по акции",
             definition = "עוֹלֶה מְעַט בְּגִין הַנָּחָה זְמַנִּית בַּחֲנוּת.",
             definitionNative = "Стоит мало из-за временной скидки в магазине.",
@@ -276,7 +276,7 @@ object WordDataHebrewFinanceV2 {
         // ── Set 1621 — Основы: оплата (level 1, COMMON) ───────────────────
         WordEntity(
             id = 162101, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "payment_methods", transliteration = "цек",
+            pos = "noun", semanticGroup = "payment_methods",
             original = "צֶ'ק בַּנְקַאִי", translation = "банковский чек",
             definition = "פֶּתֶק רִשְׁמִי מֵהַבַּנְק שֶׁבּוֹ רוֹשְׁמִים סְכוּם וּשְׁמוֹ שֶׁל מְקַבֵּל.",
             definitionNative = "Официальный бланк банка, где вписывают сумму и имя получателя.",
@@ -285,7 +285,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162102L, 162119L, 162125L)),
         WordEntity(
             id = 162102, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "payment_methods", transliteration = "картис хиюв эйши",
+            pos = "noun", semanticGroup = "payment_methods",
             original = "כַּרְטִיס חִיּוּב אִישִׁי", translation = "личная дебетовая карта",
             definition = "כַּרְטִיס בַּנְק אִישִׁי שֶׁמּוֹשֵׁךְ כֶּסֶף יָשִׁיר מֵהַחֶשְׁבּוֹן בְּעֵת הַתַּשְׁלוּם.",
             definitionNative = "Личная банковская карта, списывающая деньги прямо со счёта при оплате.",
@@ -294,7 +294,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162103, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "transfer_actions", transliteration = "лехаавир",
+            pos = "verb", semanticGroup = "transfer_actions",
             original = "לְהַעֲבִיר", translation = "переводить (деньги)",
             definition = "לִשְׁלוֹחַ כֶּסֶף מֵחֶשְׁבּוֹן אֶחָד לְחֶשְׁבּוֹן אַחֵר דֶּרֶךְ הַבַּנְק אוֹ אָפְלִיקַצְיָה.",
             definitionNative = "Отправить деньги с одного счёта на другой через банк или приложение.",
@@ -303,7 +303,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162112L, 162113L, 162118L)),
         WordEntity(
             id = 162104, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "payment_amount", transliteration = "схум",
+            pos = "noun", semanticGroup = "payment_amount",
             original = "סְכוּם", translation = "сумма",
             definition = "מִסְפָּר שֶׁמְּצַיֵּן כַּמָּה כֶּסֶף יֵשׁ אוֹ כַּמָּה מְשַׁלְּמִים.",
             definitionNative = "Число, которое показывает, сколько денег есть или нужно заплатить.",
@@ -312,7 +312,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162105, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "payment_amount", transliteration = "ташлум",
+            pos = "noun", semanticGroup = "payment_amount",
             original = "תַּשְׁלוּם", translation = "платёж / оплата",
             definition = "פְּעוּלָה שֶׁל נְתִינַת כֶּסֶף עַל מוּצָר אוֹ שֵׁרוּת שֶׁקִּבַּלְנוּ.",
             definitionNative = "Действие передачи денег за купленный товар или услугу.",
@@ -321,7 +321,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162104L, 162116L, 162122L)),
         WordEntity(
             id = 162106, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shop_places", transliteration = "купа",
+            pos = "noun", semanticGroup = "shop_places",
             original = "קוּפָּה רוֹשֶׁמֶת", translation = "касса (в магазине)",
             definition = "הַדֶּלְפֵּק בַּחֲנוּת שֶׁבּוֹ מְשַׁלְּמִים עַל הַמּוּצָרִים שֶׁלָּקַחְנוּ.",
             definitionNative = "Стойка в магазине, где платят за выбранные товары.",
@@ -331,7 +331,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162107, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shop_people", transliteration = "мохер",
+            pos = "noun", semanticGroup = "shop_people",
             original = "מוֹכֵר", translation = "продавец (в магазине)",
             definition = "עוֹבֵד בַּחֲנוּת שֶׁמַּצִּיעַ מוּצָרִים לַלָּקוֹחוֹת וּמְקַבֵּל תַּשְׁלוּם.",
             definitionNative = "Работник магазина, который предлагает товары и принимает оплату.",
@@ -340,7 +340,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162108, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shop_people", transliteration = "конэ",
+            pos = "noun", semanticGroup = "shop_people",
             original = "קוֹנֶה", translation = "покупатель",
             definition = "אָדָם שֶׁנִּכְנָס לַחֲנוּת כְּדֵי לִקְנוֹת מַשֶּׁהוּ לְעַצְמוֹ.",
             definitionNative = "Человек, заходящий в магазин, чтобы купить что-то для себя.",
@@ -349,7 +349,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162107L, 162117L)),
         WordEntity(
             id = 162109, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shop_places", transliteration = "ханут колболь",
+            pos = "noun", semanticGroup = "shop_places",
             original = "חֲנוּת כָּל-בּוֹ", translation = "универсам / магазин «всё есть»",
             definition = "חֲנוּת קְטַנָּה אוֹ בֵּינוֹנִית שֶׁמּוֹכֶרֶת אֹכֶל, כֵּלִים וּמוּצְרֵי בַּיִת.",
             definitionNative = "Небольшой магазин, где продают еду, посуду и хозтовары.",
@@ -358,7 +358,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162110, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "receipts", transliteration = "кабала",
+            pos = "noun", semanticGroup = "receipts",
             original = "קַבָּלָה", translation = "квитанция / чек-квитанция",
             definition = "נְיָר רִשְׁמִי מֵהַחֲנוּת שֶׁמְּאַשֵּׁר שֶׁשִּׁלַּמְנוּ עַל הַקְּנִיָּה.",
             definitionNative = "Официальная бумажка из магазина с подтверждением оплаты покупки.",
@@ -367,7 +367,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162111, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "receipts", transliteration = "одеф катан",
+            pos = "noun", semanticGroup = "receipts",
             original = "עוֹדֶף קָטָן", translation = "мелкая сдача",
             definition = "הַכֶּסֶף הַקָּטָן שֶׁמְּקַבְּלִים חֲזָרָה אַחֲרֵי שֶׁשִּׁלַּמְנוּ יוֹתֵר.",
             definitionNative = "Небольшая сумма, которую возвращают после оплаты чуть больше цены.",
@@ -376,7 +376,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162110L, 162115L, 162120L)),
         WordEntity(
             id = 162112, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "transfer_actions", transliteration = "лешалем",
+            pos = "verb", semanticGroup = "transfer_actions",
             original = "לְשַׁלֵּם בְּמָזוּמָן", translation = "оплачивать наличными",
             definition = "לָתֵת שְׁטָרוֹת וּמַטְבְּעוֹת יָשִׁיר בַּקַּסָּה בְּלִי כַּרְטִיס.",
             definitionNative = "Отдавать в кассу купюры и монеты напрямую, без банковской карты.",
@@ -385,7 +385,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162103L, 162113L, 162118L, 162123L)),
         WordEntity(
             id = 162113, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "transfer_actions", transliteration = "лерухош",
+            pos = "verb", semanticGroup = "transfer_actions",
             original = "לִרְכֹּשׁ", translation = "приобретать (книжн.)",
             definition = "לִקְנוֹת מַשֶּׁהוּ חָשׁוּב, לְעִתִּים קְרוֹבוֹת בְּעֶסֶק אוֹ בִּטְקָסִים.",
             definitionNative = "Покупать что-то важное, часто в деловой или формальной речи.",
@@ -394,7 +394,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162114, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shop_places", transliteration = "шук",
+            pos = "noun", semanticGroup = "shop_places",
             original = "שׁוּק הָעִיר", translation = "городской рынок",
             definition = "מָקוֹם פָּתוּחַ שֶׁבּוֹ מוֹכְרִים יְרָקוֹת, פֵּרוֹת וְחֶפְצֵי בַּיִת בַּחוּץ.",
             definitionNative = "Открытое место, где под навесами продают овощи и хозтовары.",
@@ -403,7 +403,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162115, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "receipts", transliteration = "хешбонит маас",
+            pos = "noun", semanticGroup = "receipts",
             original = "חֶשְׁבּוֹנִית מַס", translation = "счёт-фактура (налоговая)",
             definition = "מִסְמָךְ שֶׁמּוֹצִיא עוֹסֵק רָשׁוּם וּמַרְאֶה אֶת הַמָּס הַכָּלוּל.",
             definitionNative = "Документ от зарегистрированного бизнеса с указанным НДС внутри.",
@@ -412,7 +412,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162110L, 162111L, 162120L)),
         WordEntity(
             id = 162116, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "payment_amount", transliteration = "мехир софи",
+            pos = "noun", semanticGroup = "payment_amount",
             original = "מְחִיר סוֹפִי", translation = "итоговая цена",
             definition = "הַסְּכוּם שֶׁמְּשַׁלְּמִים אַחֲרֵי מִבְצָעִים, מִיסִּים וְתוֹסָפוֹת.",
             definitionNative = "Итоговая сумма к оплате после скидок, налогов и надбавок.",
@@ -422,7 +422,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162117, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shop_people", transliteration = "касаит",
+            pos = "noun", semanticGroup = "shop_people",
             original = "קַסָּאִית חֲדָשָׁה", translation = "(новая) кассирша",
             definition = "עוֹבֶדֶת חֲדָשָׁה בַּסּוּפֶּר שֶׁלּוֹמֶדֶת לְהַפְעִיל אֶת הַקּוּפָּה.",
             definitionNative = "Новая работница супермаркета, которая учится обслуживать кассу.",
@@ -432,7 +432,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162118, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "transfer_actions", transliteration = "леавер баясмин",
+            pos = "verb", semanticGroup = "transfer_actions",
             original = "לְהַעֲבִיר בְּבִּיט", translation = "перевести через Bit",
             definition = "לִשְׁלוֹחַ כֶּסֶף דֶּרֶךְ אָפְלִיקָצְיַת הַתַּשְׁלוּם בִּיט הַיִּשְׂרְאֵלִית.",
             definitionNative = "Отправить деньги через израильское приложение-перевод Bit.",
@@ -441,7 +441,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162119, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "payment_methods", transliteration = "масоф тахзур",
+            pos = "noun", semanticGroup = "payment_methods",
             original = "מַסּוֹף הַחְזָרָה", translation = "терминал возврата",
             definition = "מַכְשִׁיר בַּחֲנוּת שֶׁמַּחְזִיר לַכַּרְטִיס אֶת הַכֶּסֶף עַל פְּרִיט מֻחְזָר.",
             definitionNative = "Устройство в магазине, которое возвращает деньги на карту при возврате.",
@@ -451,7 +451,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162120, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "receipts", transliteration = "патек хумра",
+            pos = "noun", semanticGroup = "receipts",
             original = "פֶּתֶק הַחְזָרָה", translation = "талон возврата",
             definition = "דַּף קָטָן מֵהַחֲנוּת שֶׁמְּאַפְשֵׁר לְהַחְזִיר מוּצָר בְּתוֹךְ יָמִים.",
             definitionNative = "Небольшой листок из магазина, по которому можно сдать товар обратно.",
@@ -461,7 +461,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162121, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shop_places", transliteration = "декпек",
+            pos = "noun", semanticGroup = "shop_places",
             original = "דֶּלְפֵּק הַמּוֹכֵר", translation = "прилавок продавца",
             definition = "מִשְׁטָח גָּבוֹהַ בַּחֲנוּת שֶׁעָלָיו הַסּוֹחֵר מַצִּיעַ אֶת הַסְּחוֹרָה.",
             definitionNative = "Высокая стойка, за которой торговец выкладывает товар для клиента.",
@@ -470,7 +470,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162106L, 162109L, 162114L, 162124L)),
         WordEntity(
             id = 162122, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "payment_amount", transliteration = "мамаш",
+            pos = "noun", semanticGroup = "payment_amount",
             original = "מַעֲ״מ", translation = "НДС (налог на добавленную стоимость)",
             definition = "אָחוּז מִן הַסְּכוּם שֶׁהַחֲנוּת מוֹסִיפָה עַל כָּל מוּצָר לְטוֹבַת הַמְּדִינָה.",
             definitionNative = "Процент от цены, который магазин добавляет в пользу государства.",
@@ -479,7 +479,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162104L, 162105L, 162116L, 162125L)),
         WordEntity(
             id = 162123, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "buy_sell_actions", transliteration = "лекабель ахава",
+            pos = "verb", semanticGroup = "buy_sell_actions",
             original = "לְקַבֵּל הַחְזָר", translation = "получать возврат (денег)",
             definition = "לָקַחַת חֲזָרָה אֶת הַכֶּסֶף מֵהַחֲנוּת אַחֲרֵי בִּטּוּל קְנִיָּה.",
             definitionNative = "Забирать деньги обратно у магазина после отмены покупки.",
@@ -488,7 +488,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162124, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "shop_places", transliteration = "мирказ книйот",
+            pos = "noun", semanticGroup = "shop_places",
             original = "מֶרְכַּז קְנִיּוֹת", translation = "торговый центр",
             definition = "בִּנְיָן גָּדוֹל עִם הַרְבֵּה חֲנֻיּוֹת וּמִסְעָדוֹת תַּחַת קוֹרַת גָּג.",
             definitionNative = "Большое здание с множеством магазинов и кафе под одной крышей.",
@@ -497,7 +497,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162106L, 162109L, 162114L, 162121L)),
         WordEntity(
             id = 162125, setId = 1621, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "payment_methods", transliteration = "тосефет хинамь",
+            pos = "noun", semanticGroup = "payment_methods",
             original = "הַנָּחָה לַסְטוּדֶנְט", translation = "скидка студентам",
             definition = "הֲפָחָתָה זְמַנִּית בַּמְּחִיר הַמּוּצֶעֶת לְמִי שֶׁלּוֹמֵד בְּאוּנִיבֶרְסִיטָה.",
             definitionNative = "Временное снижение цены для тех, кто учится в университете.",
@@ -508,7 +508,7 @@ object WordDataHebrewFinanceV2 {
         // ── Set 1622 — Банк (level 2, UNCOMMON) ──────────────────────────
         WordEntity(
             id = 162201, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_places", transliteration = "банк",
+            pos = "noun", semanticGroup = "bank_places",
             original = "בַּנְק מִסְחָרִי", translation = "коммерческий банк",
             definition = "מוֹסָד פִּינַנְסִי שֶׁמְּנַהֵל חֶשְׁבּוֹנוֹת וּמַלְוֶה כֶּסֶף לְלָקוֹחוֹת.",
             definitionNative = "Финансовая организация, ведущая счета и выдающая займы клиентам.",
@@ -518,7 +518,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162202, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_accounts", transliteration = "хешбон овер вашав",
+            pos = "noun", semanticGroup = "bank_accounts",
             original = "חֶשְׁבּוֹן עוֹבֵר וָשָׁב", translation = "текущий счёт (расчётный)",
             definition = "הַחֶשְׁבּוֹן הָרָגִיל בַּבַּנְק לְכָל הַהַעֲבָרוֹת וְתַשְׁלוּמֵי הַיּוֹם-יוֹם.",
             definitionNative = "Обычный счёт в банке для повседневных переводов и оплат.",
@@ -527,7 +527,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162203L, 162213L, 162214L, 162219L)),
         WordEntity(
             id = 162203, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_accounts", transliteration = "миспар хешбон",
+            pos = "noun", semanticGroup = "bank_accounts",
             original = "מִסְפַּר חֶשְׁבּוֹן הַבַּנְק", translation = "номер банковского счёта",
             definition = "קוֹד מִסְפָּרִי יְחִידִי שֶׁמְּזַהֶה חֶשְׁבּוֹן בְּבַנְק מְסוּיָם.",
             definitionNative = "Уникальный код из цифр, по которому определяется счёт в банке.",
@@ -536,7 +536,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162202L, 162207L, 162212L, 162213L, 162214L, 162217L, 162219L)),
         WordEntity(
             id = 162204, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_cards", transliteration = "картис бенкаи",
+            pos = "noun", semanticGroup = "bank_cards",
             original = "כַּרְטִיס בַּנְק רָגִיל", translation = "обычная банковская карта",
             definition = "פִּיסַת פְּלַסְטִיק שֶׁמַּנְפִּיק הַבַּנְק לְשִׁמּוּשׁ בְּקַסְפּוֹמָט וּבְקַסָּה.",
             definitionNative = "Пластиковая карточка от банка для банкомата и оплаты в кассе.",
@@ -545,7 +545,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162214L, 162215L, 162216L, 162218L, 162221L)),
         WordEntity(
             id = 162205, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "bank_actions", transliteration = "лимшох мезуман",
+            pos = "verb", semanticGroup = "bank_actions",
             original = "לִמְשׁוֹךְ מְזוּמָן", translation = "снимать наличные",
             definition = "לְהוֹצִיא כֶּסֶף מֵהַחֶשְׁבּוֹן עַל יְדֵי הַכַּסְפּוֹמָט אוֹ הַפָּקִיד.",
             definitionNative = "Получать деньги со счёта через банкомат или у банковского служащего.",
@@ -554,7 +554,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162206L, 162222L, 162223L)),
         WordEntity(
             id = 162206, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "bank_actions", transliteration = "лехафкид",
+            pos = "verb", semanticGroup = "bank_actions",
             original = "לְהַפְקִיד כֶּסֶף", translation = "класть деньги (на счёт)",
             definition = "לָשִׂים מָזוּמָן אוֹ צֶ'ק בַּבַּנְק כְּדֵי לְהַגְדִּיל אֶת הַיִּתְרָה.",
             definitionNative = "Положить наличные или чек в банк, чтобы увеличить баланс счёта.",
@@ -563,7 +563,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162205L, 162222L, 162223L)),
         WordEntity(
             id = 162207, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_transfers", transliteration = "хаавара банкаит",
+            pos = "noun", semanticGroup = "bank_transfers",
             original = "הַעֲבָרָה בַּנְקַאִית פְּנִימִית", translation = "внутренний банковский перевод",
             definition = "הַעֲבָרַת כֶּסֶף בֵּין שְׁנֵי חֶשְׁבּוֹנוֹת בְּאוֹתוֹ בַּנְק בְּלִי עַמְלָה.",
             definitionNative = "Перевод денег между двумя счетами в одном банке без комиссии.",
@@ -572,7 +572,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162217L, 162224L)),
         WordEntity(
             id = 162208, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_fees", transliteration = "амалат бинкам",
+            pos = "noun", semanticGroup = "bank_fees",
             original = "עַמְלַת נִיהוּל", translation = "комиссия за обслуживание",
             definition = "סְכוּם קָבוּעַ שֶׁהַבַּנְק גּוֹבֶה מִלָּקוֹחַ עַל נִיהוּל הַחֶשְׁבּוֹן.",
             definitionNative = "Фиксированная сумма, которую банк берёт за ведение счёта.",
@@ -582,7 +582,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162209, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_places", transliteration = "каспомат",
+            pos = "noun", semanticGroup = "bank_places",
             original = "כַּסְפּוֹמָט אוֹטוֹמָטִי", translation = "автоматический банкомат",
             definition = "מַכְשִׁיר בָּרְחוֹב שֶׁמַּפְעִיל מְשִׁיכַת מָזוּמָן וּבְדִיקַת יִתְרָה.",
             definitionNative = "Уличный аппарат для выдачи наличных и проверки остатка на счёте.",
@@ -592,7 +592,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162210, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_places", transliteration = "сниф",
+            pos = "noun", semanticGroup = "bank_places",
             original = "סְנִיף רָאשִׁי", translation = "главное отделение (банка)",
             definition = "מִשְׂרָד מְרוּכָּז שֶׁל הַבַּנְק שֶׁבּוֹ מְטַפְּלִים בִּבְקָשׁוֹת חָשׁוּבוֹת.",
             definitionNative = "Центральный офис банка, где решают важные вопросы клиентов.",
@@ -602,7 +602,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162211, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_people", transliteration = "пакид бенк",
+            pos = "noun", semanticGroup = "bank_people",
             original = "פָּקִיד הַבַּנְק", translation = "банковский клерк",
             definition = "עוֹבֵד שֶׁמְּקַבֵּל לָקוֹחוֹת בַּסְּנִיף וְעוֹזֵר בְּחֶשְׁבּוֹנוֹת וּבִטְפָסִים.",
             definitionNative = "Сотрудник отделения, принимающий клиентов и помогающий с бланками.",
@@ -611,7 +611,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162220L)),
         WordEntity(
             id = 162212, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_forms", transliteration = "хатима",
+            pos = "noun", semanticGroup = "bank_forms",
             original = "חֲתִימַת לָקוֹחַ", translation = "подпись клиента",
             definition = "סִימּוּן אִישִׁי בְּיָד שֶׁאָדָם שָׂם עַל טֹפֶס לְאִשּׁוּר פְּעוּלָה.",
             definitionNative = "Личный росчерк от руки на бланке, подтверждающий согласие на действие.",
@@ -620,7 +620,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162213, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_accounts", transliteration = "хешбон хесахон",
+            pos = "noun", semanticGroup = "bank_accounts",
             original = "חֶשְׁבּוֹן חִסָּכוֹן", translation = "сберегательный счёт",
             definition = "חֶשְׁבּוֹן מְיוּחָד שֶׁבּוֹ שׁוֹמְרִים כֶּסֶף לַזְּמַן אָרוֹךְ בְּרִיבִּית.",
             definitionNative = "Специальный счёт для долгого хранения денег с начислением процента.",
@@ -629,7 +629,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162202L, 162203L, 162214L, 162215L, 162219L)),
         WordEntity(
             id = 162214, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_accounts", transliteration = "йитра",
+            pos = "noun", semanticGroup = "bank_accounts",
             original = "יִתְרַת הַחֶשְׁבּוֹן", translation = "остаток на счёте",
             definition = "הַסְּכוּם הַנּוֹכְחִי שֶׁיֵּשׁ בַּחֶשְׁבּוֹן לְאַחַר כָּל הַהַכְנָסוֹת וְהַהוֹצָאוֹת.",
             definitionNative = "Текущая сумма на счёте после всех зачислений и списаний.",
@@ -638,7 +638,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162202L, 162203L, 162207L, 162208L, 162212L, 162213L, 162217L, 162219L, 162225L)),
         WordEntity(
             id = 162215, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_cards", transliteration = "картис асраи",
+            pos = "noun", semanticGroup = "bank_cards",
             original = "כַּרְטִיס אַשְׁרַאי בֵּינְלְאוּמִי", translation = "международная кредитная карта",
             definition = "כַּרְטִיס שֶׁמַּרְשֶׁה לְשַׁלֵּם בְּחוּ״ל וְלִפְרוֹס אֶת הַתַּשְׁלוּם לִתְקוּפוֹת.",
             definitionNative = "Карта, по которой платят за рубежом и растягивают оплату на периоды.",
@@ -647,7 +647,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162204L, 162207L, 162219L, 162221L)),
         WordEntity(
             id = 162216, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_fees", transliteration = "сехах хиюв",
+            pos = "noun", semanticGroup = "bank_fees",
             original = "חִיּוּב חוֹדְשִׁי", translation = "ежемесячное списание",
             definition = "סְכוּם קָבוּעַ שֶׁיּוֹרֵד מֵהַחֶשְׁבּוֹן בְּכָל חוֹדֶשׁ בְּאוֹתוֹ הַתַּאֲרִיךְ.",
             definitionNative = "Фиксированная сумма, которая уходит со счёта каждый месяц в один день.",
@@ -656,7 +656,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162208L, 162224L, 162225L)),
         WordEntity(
             id = 162217, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_transfers", transliteration = "орат керва",
+            pos = "noun", semanticGroup = "bank_transfers",
             original = "הוֹרָאַת קֶבַע", translation = "постоянное платёжное поручение",
             definition = "הוֹרָאָה אוֹטוֹמָטִית לַבַּנְק לְשַׁלֵּם סְכוּם קָבוּעַ כָּל חוֹדֶשׁ לְגוֹרֵם אֶחָד.",
             definitionNative = "Автоматическое распоряжение банку раз в месяц платить фиксированную сумму получателю.",
@@ -665,7 +665,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162202L, 162207L, 162213L, 162224L)),
         WordEntity(
             id = 162218, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_forms", transliteration = "дапдефус",
+            pos = "noun", semanticGroup = "bank_forms",
             original = "דַּף חֶשְׁבּוֹן חוֹדְשִׁי", translation = "ежемесячная банковская выписка",
             definition = "דּוּחַ מְפֻרָט שֶׁל כָּל הַהַכְנָסוֹת וְהַהוֹצָאוֹת בַּחֶשְׁבּוֹן בְּחוֹדֶשׁ אֶחָד.",
             definitionNative = "Подробный отчёт обо всех поступлениях и расходах со счёта за один месяц.",
@@ -675,7 +675,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162219, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_accounts", transliteration = "минус",
+            pos = "noun", semanticGroup = "bank_accounts",
             original = "מִסְגֶּרֶת אַשְׁרַאי", translation = "кредитная линия (минус)",
             definition = "סְכוּם מֻתָּר שֶׁאֶפְשָׁר לָרֶדֶת בּוֹ מִתַּחַת לְאֶפֶס בַּחֶשְׁבּוֹן.",
             definitionNative = "Разрешённая сумма, на которую счёт может уйти в минус.",
@@ -685,7 +685,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162220, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_people", transliteration = "йоетц",
+            pos = "noun", semanticGroup = "bank_people",
             original = "יוֹעֵץ פִּינַנְסִי בַּבַּנְק", translation = "банковский финконсультант",
             definition = "עוֹבֵד שֶׁמְּיַעֵץ לְלָקוֹחַ עַל חִסָּכוֹן, הַלְוָאוֹת וְהַשְׁקָעוֹת.",
             definitionNative = "Работник банка, который советует клиенту по сбережениям и займам.",
@@ -694,7 +694,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162211L)),
         WordEntity(
             id = 162221, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_cards", transliteration = "код сори",
+            pos = "noun", semanticGroup = "bank_cards",
             original = "קוֹד סוֹדִי לַכַּרְטִיס", translation = "секретный код для карты",
             definition = "אַרְבַּע סְפָרוֹת שֶׁמַּקִּישִׁים בַּמַּסּוֹף כְּדֵי לְאַשֵּׁר קְנִיָּה.",
             definitionNative = "Четыре цифры, которые вводят на терминале для подтверждения покупки.",
@@ -704,7 +704,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162222, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "bank_actions", transliteration = "лепатах хешбон",
+            pos = "verb", semanticGroup = "bank_actions",
             original = "לִפְתּוֹחַ חֶשְׁבּוֹן בַּנְק", translation = "открывать банковский счёт",
             definition = "לְהַתְחִיל קֶשֶׁר עִם בַּנְק וּלְמַלֵּא טְפָסִים לְנִיהוּל חֶשְׁבּוֹן חָדָשׁ.",
             definitionNative = "Начать отношения с банком и оформить бланки на ведение нового счёта.",
@@ -713,7 +713,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162205L, 162206L, 162223L)),
         WordEntity(
             id = 162223, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "bank_actions", transliteration = "лесагер хешбон",
+            pos = "verb", semanticGroup = "bank_actions",
             original = "לִסְגּוֹר חֶשְׁבּוֹן בַּנְק", translation = "закрывать банковский счёт",
             definition = "לְסַיֵּם אֶת הַקֶּשֶׁר עִם הַבַּנְק וּלְהַעֲבִיר אֶת הַיִּתְרָה הַחוּצָה.",
             definitionNative = "Завершить отношения с банком и перевести остаток денег наружу.",
@@ -722,7 +722,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162205L, 162206L, 162222L)),
         WordEntity(
             id = 162224, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_transfers", transliteration = "зикуй бехешбон",
+            pos = "noun", semanticGroup = "bank_transfers",
             original = "זִיכּוּי בַּחֶשְׁבּוֹן", translation = "зачисление на счёт",
             definition = "הוֹסָפָה שֶׁל כֶּסֶף לַחֶשְׁבּוֹן כְּשֶׁמִּישֶׁהוּ מַעֲבִיר אוֹ מַחְזִיר לָנוּ.",
             definitionNative = "Прибавление денег на счёт, когда кто-то переводит или возвращает.",
@@ -731,7 +731,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162207L, 162217L)),
         WordEntity(
             id = 162225, setId = 1622, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bank_fees", transliteration = "рибит овер вашав",
+            pos = "noun", semanticGroup = "bank_fees",
             original = "רִיבִּית עַל מִינוּס", translation = "процент за минус на счёте",
             definition = "תּוֹסֶפֶת שֶׁהַבַּנְק גּוֹבֶה כְּשֶׁחֶשְׁבּוֹן נִכְנָס לְמִסְגֶּרֶת הַחוֹבָה.",
             definitionNative = "Надбавка банка за то, что счёт уходит в долговой лимит (минус).",
@@ -742,7 +742,7 @@ object WordDataHebrewFinanceV2 {
         // ── Set 1623 — Зарплата и счета (level 2, UNCOMMON) ──────────────
         WordEntity(
             id = 162301, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salary_parts", transliteration = "маскорет ходшит",
+            pos = "noun", semanticGroup = "salary_parts",
             original = "מַשְׂכּוֹרֶת חוֹדְשִׁית", translation = "ежемесячная зарплата",
             definition = "הַסְּכוּם שֶׁהָעוֹבֵד מְקַבֵּל מֵהַמַּעֲבִיד בְּכָל חוֹדֶשׁ עֲבוּר עֲבוֹדָתוֹ.",
             definitionNative = "Сумма, которую работник получает от работодателя каждый месяц.",
@@ -752,7 +752,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162302, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salary_parts", transliteration = "сахар бруто",
+            pos = "noun", semanticGroup = "salary_parts",
             original = "שָׂכָר בְּרוּטוֹ", translation = "зарплата брутто (до вычетов)",
             definition = "הַסְּכוּם הַמָּלֵא שֶׁכָּתוּב בְּחוֹזֶה לִפְנֵי נִיכּוּיִים וּמִסִּים.",
             definitionNative = "Полная сумма по договору до всех удержаний и налогов.",
@@ -761,7 +761,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162303, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salary_parts", transliteration = "сахар нето",
+            pos = "noun", semanticGroup = "salary_parts",
             original = "שָׂכָר נֶטּוֹ סוֹפִי", translation = "зарплата нетто (на руки)",
             definition = "הַסְּכוּם שֶׁנִּשְׁאָר לָעוֹבֵד בַּחֶשְׁבּוֹן אַחֲרֵי כָּל הַנִּיכּוּיִים.",
             definitionNative = "Сумма, которая остаётся на счёт работника после всех удержаний.",
@@ -771,7 +771,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162304, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "taxes", transliteration = "мас ахнаса",
+            pos = "noun", semanticGroup = "taxes",
             original = "מַס הַכְנָסָה", translation = "подоходный налог",
             definition = "אָחוּז שֶׁהַמְּדִינָה לוֹקַחַת מֵהַשָּׂכָר לְפִי סַרְגֵּל מַדְרֵגוֹת.",
             definitionNative = "Процент, который государство удерживает с зарплаты по шкале ставок.",
@@ -780,7 +780,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162301L, 162302L, 162303L, 162305L, 162306L, 162307L, 162308L, 162309L, 162310L, 162311L, 162312L, 162313L, 162315L, 162316L, 162317L, 162318L, 162319L, 162320L, 162321L, 162324L, 162325L)),
         WordEntity(
             id = 162305, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "social_benefits", transliteration = "пенсия татзубирит",
+            pos = "noun", semanticGroup = "social_benefits",
             original = "פֶּנְסְיָה תַּעֲסוּקָתִית", translation = "рабочая пенсия (профессиональная)",
             definition = "חִסָּכוֹן לְפֶרִישָׁה שֶׁהַמַּעֲבִיד וְהָעוֹבֵד מַפְקִידִים בַּקֶּרֶן בְּכָל חוֹדֶשׁ.",
             definitionNative = "Пенсионный фонд, куда работодатель и работник отчисляют каждый месяц.",
@@ -789,7 +789,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162301L, 162306L, 162307L, 162313L, 162317L, 162319L, 162320L)),
         WordEntity(
             id = 162306, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "social_benefits", transliteration = "битуах бриют",
+            pos = "noun", semanticGroup = "social_benefits",
             original = "בִּיטוּחַ בְּרִיאוּת מַמְלַכְתִּי", translation = "государственная медстраховка",
             definition = "תַּשְׁלוּם חוֹבָה לַמְּדִינָה שֶׁמְּמַמֵּן שֵׁירוּתִים רְפוּאִיִּים בְּסִיסִיִּים לְכָל תּוֹשָׁב.",
             definitionNative = "Обязательный платёж государству за базовые медуслуги для каждого жителя.",
@@ -798,7 +798,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162304L, 162305L, 162307L, 162313L, 162317L, 162319L)),
         WordEntity(
             id = 162307, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "social_benefits", transliteration = "ниху пенсия",
+            pos = "noun", semanticGroup = "social_benefits",
             original = "נִיכּוּי פֶּנְסְיָה", translation = "удержание в пенсионный фонд",
             definition = "סְכוּם שֶׁיּוֹרֵד בְּכָל חוֹדֶשׁ מֵהַשָּׂכָר לְטוֹבַת הַפֶּנְסְיָה שֶׁל הָעוֹבֵד.",
             definitionNative = "Сумма, удерживаемая ежемесячно с зарплаты на будущую пенсию работника.",
@@ -808,7 +808,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162308, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utility_bills", transliteration = "хешбонот коммуналим",
+            pos = "noun", semanticGroup = "utility_bills",
             original = "חֶשְׁבּוֹנוֹת קוֹמוּנָלִים", translation = "коммунальные счета",
             definition = "תַּשְׁלוּמִים קְבוּעִים עַל חַשְׁמַל, מַיִם, גַּז וְאַרְנוֹנָה לַדִּירָה.",
             definitionNative = "Регулярные платежи за электричество, воду, газ и городской налог на жильё.",
@@ -817,7 +817,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162309L, 162310L, 162311L, 162312L, 162313L, 162315L, 162319L, 162321L, 162324L, 162325L)),
         WordEntity(
             id = 162309, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utility_bills", transliteration = "хешбон хашмаль",
+            pos = "noun", semanticGroup = "utility_bills",
             original = "חֶשְׁבּוֹן חַשְׁמַל דּוּ-חוֹדְשִׁי", translation = "двухмесячный счёт за электричество",
             definition = "הַחִיּוּב שֶׁחֶבְרַת הַחַשְׁמַל שׁוֹלַחַת עַל צְרִיכַת חַשְׁמַל כָּל חוֹדָשַׁיִם.",
             definitionNative = "Счёт, который электрокомпания присылает за потребление раз в два месяца.",
@@ -827,7 +827,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162310, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utility_bills", transliteration = "хешбон маим",
+            pos = "noun", semanticGroup = "utility_bills",
             original = "חֶשְׁבּוֹן מַיִם רִבְעוֹנִי", translation = "квартальный счёт за воду",
             definition = "הַחִיּוּב עַל צְרִיכַת מַיִם בַּדִּירָה שֶׁמַּגִּיעַ אֶחָד לִשְׁלוֹשָׁה חוֹדָשִׁים.",
             definitionNative = "Счёт за расход воды в квартире, приходящий раз в три месяца.",
@@ -837,7 +837,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162311, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utility_bills", transliteration = "арнона ирияти",
+            pos = "noun", semanticGroup = "utility_bills",
             original = "אַרְנוֹנָה עִירוֹנִית", translation = "арнона (муниципальный налог)",
             definition = "תַּשְׁלוּם לָעִירִיָּה עַל שְׁטַח הַדִּירָה, לְפִי מֶטְרִים וְאֵזוֹר מְגוּרִים.",
             definitionNative = "Платёж муниципалитету за площадь квартиры, по квадратам и району.",
@@ -846,7 +846,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162301L, 162305L, 162308L, 162309L, 162310L, 162312L, 162317L, 162324L, 162325L)),
         WordEntity(
             id = 162312, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utility_bills", transliteration = "хешбон газ",
+            pos = "noun", semanticGroup = "utility_bills",
             original = "חֶשְׁבּוֹן גַּז בָּישּׁוּל", translation = "счёт за бытовой газ",
             definition = "הַסְּכוּם שֶׁמְּשַׁלְּמִים עַל צְרִיכַת הַגַּז לַבִּישּׁוּל וְהַחִמּוּם בַּבַּיִת.",
             definitionNative = "Сумма за использование газа для готовки и обогрева в квартире.",
@@ -856,7 +856,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162313, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "social_benefits", transliteration = "дмей битуах",
+            pos = "noun", semanticGroup = "social_benefits",
             original = "דְּמֵי בִּיטוּחַ לְאוּמִּי", translation = "взнос в Битуах Леуми",
             definition = "תַּשְׁלוּם חוֹבָה לַמּוֹסָד לְבִיטוּחַ לְאוּמִּי שֶׁמַּגִּיעַ לְכָל תּוֹשָׁב.",
             definitionNative = "Обязательный взнос в Институт национального страхования для каждого жителя.",
@@ -865,7 +865,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162305L, 162306L, 162307L, 162308L, 162317L, 162319L, 162321L)),
         WordEntity(
             id = 162314, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salary_parts", transliteration = "тлуш маскорет",
+            pos = "noun", semanticGroup = "salary_parts",
             original = "תְּלוּשׁ שָׂכָר מְפֻרָט", translation = "подробная расчётная ведомость",
             definition = "מִסְמָךְ חוֹדְשִׁי שֶׁמְּפָרֵט בְּרוּטוֹ, נֶטוֹ, מִסִּים וְנִיכּוּיִים שֶׁל הָעוֹבֵד.",
             definitionNative = "Ежемесячный документ с брутто, нетто, налогами и удержаниями работника.",
@@ -874,7 +874,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162301L, 162302L, 162303L, 162309L, 162310L, 162311L, 162312L, 162317L, 162318L, 162320L, 162321L, 162324L, 162325L)),
         WordEntity(
             id = 162315, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "taxes", transliteration = "нкудот зикуй",
+            pos = "noun", semanticGroup = "taxes",
             original = "נְקוּדוֹת זִיכּוּי עוֹלֶה", translation = "пункты льготы репатрианта",
             definition = "הֲנָחַת מַס שֶׁנִּיתֶנֶת לְעוֹלֶה חָדָשׁ בַּשָּׁנִים הָרִאשׁוֹנוֹת בַּאָרֶץ.",
             definitionNative = "Налоговая льгота для нового репатрианта в первые годы жизни в стране.",
@@ -883,7 +883,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162304L, 162316L, 162318L)),
         WordEntity(
             id = 162316, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "taxes", transliteration = "сал клита",
+            pos = "noun", semanticGroup = "taxes",
             original = "סַל קְלִיטַת עוֹלֶה", translation = "корзина абсорбции репатрианта",
             definition = "תַּשְׁלוּם מֵהַמִּשְׂרַד לִקְלִיטָה לְעוֹלֶה חָדָשׁ בְּחוֹדָשָׁיו הָרִאשׁוֹנִים.",
             definitionNative = "Выплата от Министерства абсорбции новому репатрианту в первые месяцы.",
@@ -893,7 +893,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162317, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "social_benefits", transliteration = "кицбат йеладим",
+            pos = "noun", semanticGroup = "social_benefits",
             original = "קִצְבַּת יְלָדִים חוֹדְשִׁית", translation = "ежемесячное пособие на детей",
             definition = "סְכוּם קָבוּעַ מֵהַמְּדִינָה לַמִּשְׁפָּחָה עַל כָּל יֶלֶד עַד גִּיל שְׁמוֹנֶה עֶשְׂרֵה.",
             definitionNative = "Фиксированная выплата семье от государства на каждого ребёнка до восемнадцати.",
@@ -902,7 +902,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162301L, 162305L, 162306L, 162307L, 162313L, 162319L)),
         WordEntity(
             id = 162318, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "taxes", transliteration = "тофес 101",
+            pos = "noun", semanticGroup = "taxes",
             original = "טֹפֶס מֵאָה וְאֶחָד", translation = "форма 101 (для налогов)",
             definition = "טֹפֶס שֶׁעוֹבֵד מְמַלֵּא בִּתְחִלַּת כָּל שָׁנָה לְקַבָּלַת נְקוּדוֹת זִיכּוּי.",
             definitionNative = "Бланк, который работник заполняет в начале каждого года для получения льгот.",
@@ -911,7 +911,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162304L, 162315L, 162316L)),
         WordEntity(
             id = 162319, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "social_benefits", transliteration = "пицуим",
+            pos = "noun", semanticGroup = "social_benefits",
             original = "פִּיצּוּיֵי פִּטּוּרִין", translation = "выходное пособие (компенсация)",
             definition = "סְכוּם שֶׁהַמַּעֲבִיד מְשַׁלֵּם לָעוֹבֵד כְּשֶׁמְּפַטְּרִים אוֹתוֹ אַחֲרֵי שָׁנָה.",
             definitionNative = "Сумма, которую работодатель платит работнику при увольнении после года.",
@@ -920,7 +920,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162301L, 162302L, 162303L, 162305L, 162306L, 162307L, 162308L, 162309L, 162310L, 162311L, 162312L, 162313L, 162314L, 162316L, 162317L, 162318L, 162320L, 162321L, 162324L, 162325L)),
         WordEntity(
             id = 162320, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salary_parts", transliteration = "шаот носафот",
+            pos = "noun", semanticGroup = "salary_parts",
             original = "שָׁעוֹת נוֹסָפוֹת", translation = "сверхурочные часы",
             definition = "שָׁעוֹת עֲבוֹדָה מֵעֵבֶר לַיּוֹם הָרָגִיל שֶׁמְּשֻׁלָּמוֹת בְּתוֹסֶפֶת אָחוּז.",
             definitionNative = "Часы сверх обычного рабочего дня, оплачиваемые с надбавкой в процентах.",
@@ -929,7 +929,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162301L, 162302L, 162303L, 162314L, 162321L)),
         WordEntity(
             id = 162321, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salary_parts", transliteration = "дмей хавраа",
+            pos = "noun", semanticGroup = "salary_parts",
             original = "דְּמֵי הַבְרָאָה שְׁנָתִיִּים", translation = "ежегодная выплата на отдых",
             definition = "תַּשְׁלוּם שָׁנָתִי שֶׁעוֹבֵד מְקַבֵּל לְהוֹצָאוֹת נְפִישָׁה וְהֶמְשֵׁךְ עֲבוֹדָה.",
             definitionNative = "Годовая выплата работнику на отдых и продолжение работы.",
@@ -938,7 +938,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162301L, 162302L, 162303L, 162308L, 162313L, 162314L, 162319L, 162320L)),
         WordEntity(
             id = 162322, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "salary_actions", transliteration = "леавед рофэ",
+            pos = "verb", semanticGroup = "salary_actions",
             original = "לְהַגִּישׁ דּוּחַ שָׁנָתִי", translation = "подавать годовой отчёт",
             definition = "לְהַעֲבִיר לִרְשׁוּת הַמַּסִּים נְתוּנִים עַל הַכְנָסוֹת וְהוֹצָאוֹת בְּשָׁנָה שֶׁעָבְרָה.",
             definitionNative = "Передать налоговой данные о доходах и расходах за прошедший год.",
@@ -947,7 +947,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162323L)),
         WordEntity(
             id = 162323, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "salary_actions", transliteration = "лебакеш маанак",
+            pos = "verb", semanticGroup = "salary_actions",
             original = "לְבַקֵּשׁ מַעֲנַק עוֹלֶה", translation = "запрашивать грант репатрианта",
             definition = "לָגֶשֶׁת לַמִּשְׂרַד הַקְּלִיטָה וּלְמַלֵּא טְפָסִים לְקַבָּלַת תַּשְׁלוּם חַד-פַּעֲמִי.",
             definitionNative = "Обратиться в Министерство абсорбции и оформить бланки на разовую выплату.",
@@ -956,7 +956,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162322L)),
         WordEntity(
             id = 162324, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utility_bills", transliteration = "шхор дира",
+            pos = "noun", semanticGroup = "utility_bills",
             original = "שְׂכַר דִּירָה חוֹדְשִׁי", translation = "ежемесячная арендная плата",
             definition = "הַסְּכוּם שֶׁהַשּׂוֹכֵר מְשַׁלֵּם לַבַּעֲלִים עַל הַמְּגוּרִים בַּדִּירָה בְּכָל חוֹדֶשׁ.",
             definitionNative = "Сумма, которую арендатор платит владельцу за проживание каждый месяц.",
@@ -966,7 +966,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162325, setId = 1623, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utility_bills", transliteration = "ваад байт",
+            pos = "noun", semanticGroup = "utility_bills",
             original = "וַעַד בַּיִת חוֹדְשִׁי", translation = "ежемесячный взнос на содержание дома",
             definition = "תַּשְׁלוּם לְקֻפָּה מְשֻׁתֶּפֶת שֶׁל דַּיָּרֵי הַבִּנְיָן לְנִיקַיוֹן וְתַחֲזוּקָה.",
             definitionNative = "Взнос в общую кассу жильцов дома на уборку и ремонт подъезда.",
@@ -978,7 +978,7 @@ object WordDataHebrewFinanceV2 {
         // ── Set 1624 — Инвестиции и кредиты (level 3, RARE) ──────────────
         WordEntity(
             id = 162401, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "loan_products", transliteration = "алваа мизранит",
+            pos = "noun", semanticGroup = "loan_products",
             original = "הַלְוָאָה מִזְרָנִית", translation = "потребительский займ",
             definition = "הַלְוָאָה לְצִרְכֵי צְרִיכָה פְּרָטִית לְלֹא בִּטְחוֹנוֹת כַּמַּשְׁכַּנְתָּא.",
             definitionNative = "Заём на личные нужды без залога в виде недвижимости.",
@@ -987,7 +987,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162402L, 162418L, 162424L)),
         WordEntity(
             id = 162402, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "loan_products", transliteration = "машканта декель",
+            pos = "noun", semanticGroup = "loan_products",
             original = "מַשְׁכַּנְתָּא לְדִירָה רִאשׁוֹנָה", translation = "ипотека на первую квартиру",
             definition = "הַלְוָאָה גְּדוֹלָה מֵהַבַּנְק לִרְכִישַׁת דִּירָה, בְּרוֹב הַמִּקְרִים לְעֶשְׂרוֹת שָׁנִים.",
             definitionNative = "Большой кредит от банка на покупку квартиры, обычно на десятки лет.",
@@ -996,7 +996,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162401L, 162418L, 162424L)),
         WordEntity(
             id = 162403, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "loan_params", transliteration = "рибит кваа",
+            pos = "noun", semanticGroup = "loan_params",
             original = "רִיבִּית קְבוּעָה לֹא צְמוּדָה", translation = "фиксированная нецепная ставка",
             definition = "אָחוּז תַּשְׁלוּם קָבוּעַ שֶׁלֹּא מִשְׁתַּנֶּה לְפִי מַדַּד אוֹ מַטְבֵּעַ.",
             definitionNative = "Фиксированный процентный платёж, не меняющийся от индекса или валюты.",
@@ -1005,7 +1005,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162404L, 162405L, 162412L, 162421L)),
         WordEntity(
             id = 162404, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "loan_params", transliteration = "ташлумим мудагим",
+            pos = "noun", semanticGroup = "loan_params",
             original = "תַּשְׁלוּמִים בִּפְרִיסָה", translation = "рассрочка (серия платежей)",
             definition = "פְּרִיסַת סְכוּם גָּדוֹל לְמִסְפַּר תַּשְׁלוּמִים שָׁוִים לְאוֹרֶךְ מִסְפַּר חוֹדָשִׁים.",
             definitionNative = "Разбиение большой суммы на серию равных платежей в течение нескольких месяцев.",
@@ -1014,7 +1014,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162405, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "loan_params", transliteration = "биталмон",
+            pos = "noun", semanticGroup = "loan_params",
             original = "בִּטָּחוֹן מוּחָשִׁי", translation = "материальный залог",
             definition = "רְכוּשׁ שֶׁמֵּעֲמִידִים לַבַּנְק לְהַבְטִיחַ אֶת הַהַלְוָאָה בְּמִקְרֶה שֶׁל כִּשָּׁלוֹן.",
             definitionNative = "Имущество, передаваемое банку в обеспечение займа на случай неплатежа.",
@@ -1023,7 +1023,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162403L, 162404L, 162412L, 162421L)),
         WordEntity(
             id = 162406, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "investments", transliteration = "ашкая бенайот",
+            pos = "noun", semanticGroup = "investments",
             original = "הַשְׁקָעָה בִּמְנָיוֹת עֵרֶךְ", translation = "инвестиция в акции стоимости",
             definition = "רְכִישַׁת מְנָיוֹת שֶׁל חֲבָרוֹת יַצִּיבוֹת בְּמִחִיר נָמוּךְ מִן הַשּׁוֹוִי הַפְּנִימִי.",
             definitionNative = "Покупка акций стабильных компаний по цене ниже внутренней стоимости.",
@@ -1032,7 +1032,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162407, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "investments", transliteration = "менайат идит",
+            pos = "noun", semanticGroup = "investments",
             original = "מְנָיַת דִּיבִידֶנְד", translation = "дивидендная акция",
             definition = "נְיָר עֵרֶךְ שֶׁמַּעֲנִיק לַבַּעֲלִים תַּשְׁלוּם קָבוּעַ פַּעֲמַיִם אוֹ אַרְבַּע בַּשָּׁנָה.",
             definitionNative = "Акция, дающая владельцу регулярную выплату два-четыре раза в год.",
@@ -1041,7 +1041,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162406L, 162408L, 162409L, 162413L, 162414L, 162420L, 162423L)),
         WordEntity(
             id = 162408, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "investments", transliteration = "игерет медина",
+            pos = "noun", semanticGroup = "investments",
             original = "אִגֶּרֶת חוֹב מֶמְשַׁלְתִּית", translation = "государственная облигация",
             definition = "הַלְוָאָה שֶׁהַמְּדִינָה לוֹקַחַת מֵהַצִּבּוּר וּמַחְזִירָה עִם רִיבִּית בְּמוֹעֵד קָבוּעַ.",
             definitionNative = "Заём, который государство берёт у публики и возвращает с процентом в срок.",
@@ -1050,7 +1050,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162406L, 162407L, 162409L, 162413L, 162414L, 162420L, 162423L)),
         WordEntity(
             id = 162409, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "investments", transliteration = "керен незилут",
+            pos = "noun", semanticGroup = "investments",
             original = "קֶרֶן נְזִילוּת יְרוּשָׁלַיִם", translation = "ликвидный инвестфонд",
             definition = "קֶרֶן שֶׁנִּיתֶנֶת לִמְכִירָה מְהִירָה בְּלִי לְהַפְסִיד חֵלֶק גָּדוֹל מֵהַסְּכוּם.",
             definitionNative = "Фонд, который можно быстро продать без потери существенной части суммы.",
@@ -1059,7 +1059,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162406L, 162407L, 162408L, 162413L, 162414L, 162420L, 162423L)),
         WordEntity(
             id = 162410, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "markets", transliteration = "бурса баарец",
+            pos = "noun", semanticGroup = "markets",
             original = "בּוּרְסָה תֵל אָבִיב", translation = "Тель-Авивская биржа",
             definition = "הַזִּירָה הָרִשְׁמִית בְּיִשְׂרָאֵל לְמִסְחַר בִּמְנָיוֹת, אִגְּרוֹת וְקַרְנוֹת.",
             definitionNative = "Официальная площадка Израиля для торговли акциями, облигациями и фондами.",
@@ -1069,7 +1069,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162411, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "markets", transliteration = "брокер осадот",
+            pos = "noun", semanticGroup = "markets",
             original = "בְּרוֹקֶר מֻרְשֶׁה", translation = "лицензированный брокер",
             definition = "מְתַוֵּךְ מְקֻבָּל שֶׁמְּבַצֵּעַ פְּעוּלוֹת קְנִיָּה וּמְכִירָה בַּבּוּרְסָה עֲבוּר לָקוֹחוֹת.",
             definitionNative = "Признанный посредник, который совершает операции на бирже для клиентов.",
@@ -1079,7 +1079,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162412, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "loan_params", transliteration = "мадад мехирим",
+            pos = "noun", semanticGroup = "loan_params",
             original = "הַצְמָדָה לַמַּדָּד", translation = "привязка к индексу (цен)",
             definition = "עֶדְכּוּן הַחוֹב אוֹ הַסְּכוּם לְפִי שִׁנּוּי בְּמַדַּד הַמְּחִירִים לַצַּרְכָן.",
             definitionNative = "Корректировка долга или суммы по изменению потребительского индекса цен.",
@@ -1088,7 +1088,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162403L, 162404L, 162405L, 162421L)),
         WordEntity(
             id = 162413, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "investments", transliteration = "менайат ток",
+            pos = "noun", semanticGroup = "investments",
             original = "מְנָיַת טֶכְנוֹלוֹגְיָה", translation = "технологическая акция",
             definition = "נְיָר עֵרֶךְ שֶׁל חֶבְרָה בַּתְּחוּם הַמַּחְשֵׁב, הַתּוֹכְנָה אוֹ הַמּוֹבִיל.",
             definitionNative = "Бумага компании из сферы компьютеров, ПО или мобильной связи.",
@@ -1097,7 +1097,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162406L, 162407L, 162408L, 162409L, 162414L, 162420L, 162423L)),
         WordEntity(
             id = 162414, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "investments", transliteration = "керен нехсаим",
+            pos = "noun", semanticGroup = "investments",
             original = "קֶרֶן נְכָסִים מְגוּוֶנֶת", translation = "диверсифицированный фонд активов",
             definition = "הַשְׁקָעָה שֶׁמְּפַזֶּרֶת אֶת הַכֶּסֶף עַל מְנָיוֹת, אִגְּרוֹת וּנְדַלָּ״ן בְּעֵת אַחַת.",
             definitionNative = "Инвестиция, распределяющая деньги между акциями, облигациями и недвижимостью.",
@@ -1106,7 +1106,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162406L, 162407L, 162408L, 162409L, 162413L, 162420L, 162423L)),
         WordEntity(
             id = 162415, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "markets", transliteration = "шаар хилифин",
+            pos = "noun", semanticGroup = "markets",
             original = "שַׁעַר חֲלִיפִין יַצִּיב", translation = "устойчивый валютный курс",
             definition = "יַחַס קָבוּעַ יַחֲסִית בֵּין שְׁנֵי מַטְבְּעוֹת שֶׁאֵינוֹ מִשְׁתַּנֶּה בְּמַהֲלַךְ שָׁבוּעוֹת.",
             definitionNative = "Относительно постоянное соотношение валют, не меняющееся в течение недель.",
@@ -1116,7 +1116,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162416, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "verb", semanticGroup = "investment_actions", transliteration = "леашкиа",
+            pos = "verb", semanticGroup = "investment_actions",
             original = "לְהַשְׁקִיעַ בַּטְּוָח אָרוֹךְ", translation = "инвестировать вдолгую",
             definition = "לָשִׂים כֶּסֶף בְּנִכְסִים לְתִקְוָה שֶׁל רֶוַח מַשְׁמָעוּתִי לְאַחַר שָׁנִים רַבּוֹת.",
             definitionNative = "Размещать деньги в активы с надеждой на заметную прибыль через много лет.",
@@ -1125,7 +1125,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162417, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "verb", semanticGroup = "investment_actions", transliteration = "лепазер сиккун",
+            pos = "verb", semanticGroup = "investment_actions",
             original = "לְפַזֵּר סִיכּוּן", translation = "диверсифицировать риск",
             definition = "לְחַלֵּק הַשְׁקָעוֹת לְגוֹרָמִים שׁוֹנִים כְּדֵי לְהַקְטִין אֶת הַסִּכּוּי לְהֶפְסֵד גָּדוֹל.",
             definitionNative = "Распределять вложения по разным активам, чтобы уменьшить риск больших потерь.",
@@ -1134,7 +1134,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162416L, 162422L)),
         WordEntity(
             id = 162418, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "loan_products", transliteration = "алваа мевтахат",
+            pos = "noun", semanticGroup = "loan_products",
             original = "הַלְוָאָה מֻבְטַחַת מְדִינָה", translation = "гарантированный государством заём",
             definition = "הַלְוָאָה עִם תְּנָאִים טוֹבִים שֶׁהַמְּדִינָה עֲרֵבָה לָהּ לְעוֹלִים אוֹ לְעַסְקֵי קָטָן.",
             definitionNative = "Заём на выгодных условиях, где государство выступает гарантом для репатриантов или малого бизнеса.",
@@ -1143,7 +1143,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162401L, 162402L, 162424L)),
         WordEntity(
             id = 162419, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "markets", transliteration = "шук мишни",
+            pos = "noun", semanticGroup = "markets",
             original = "שׁוּק הָאִגָּרוֹת הַמִּשְׁנִי", translation = "вторичный рынок облигаций",
             definition = "זִירָה שֶׁל מִסְחָר בִּנְיָרוֹת עֵרֶךְ אַחֲרֵי שֶׁהִנְפִּיקוּ אוֹתָם לַצִּבּוּר.",
             definitionNative = "Площадка для торгов ценными бумагами уже после их первичного выпуска.",
@@ -1152,7 +1152,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162410L, 162411L, 162415L, 162425L)),
         WordEntity(
             id = 162420, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "investments", transliteration = "керен гемель",
+            pos = "noun", semanticGroup = "investments",
             original = "קֻפַּת גֶּמֶל לְהַשְׁקָעָה", translation = "купат гемель для инвестиций",
             definition = "מַכְשִׁיר חִסָּכוֹן לְטַוָח בֵּינוֹנִי עִם הֲטָבוֹת מַס יְחוּדִיּוֹת לְעוֹבְדִים.",
             definitionNative = "Инструмент среднесрочных сбережений с особыми налоговыми льготами для работников.",
@@ -1161,7 +1161,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162406L, 162407L, 162408L, 162409L, 162413L, 162414L, 162423L)),
         WordEntity(
             id = 162421, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "loan_params", transliteration = "луах силукин",
+            pos = "noun", semanticGroup = "loan_params",
             original = "לוּחַ סִלּוּקִין שֶׁל מַשְׁכַּנְתָּא", translation = "график погашения ипотеки",
             definition = "טַבְלָה שֶׁמַּרְאָה כָּל תַּשְׁלוּם חוֹדְשִׁי, חֵלֶק הַקֶּרֶן וְחֵלֶק הָרִיבִּית.",
             definitionNative = "Таблица с каждым ежемесячным платежом, долей тела займа и долей процента.",
@@ -1170,7 +1170,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162403L, 162404L, 162405L, 162412L)),
         WordEntity(
             id = 162422, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "verb", semanticGroup = "investment_actions", transliteration = "леашлим",
+            pos = "verb", semanticGroup = "investment_actions",
             original = "לְהַשְׁלִים פִּירָעוֹן מֻקְדָּם", translation = "досрочно погашать заём",
             definition = "לְהַחְזִיר אֶת כָּל חוֹב הַהַלְוָאָה לִפְנֵי סוֹף הַתְּקוּפָה שֶׁרָשׁוּם בַּחוֹזֶה.",
             definitionNative = "Вернуть весь остаток долга раньше срока, прописанного в договоре.",
@@ -1179,7 +1179,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162416L, 162417L)),
         WordEntity(
             id = 162423, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "investments", transliteration = "тешуа тика",
+            pos = "noun", semanticGroup = "investments",
             original = "תְּשׁוּאַת תִּיק הַשְׁקָעוֹת", translation = "доходность инвестпортфеля",
             definition = "אָחוּז הָרֶוַח הַמִּצְטַבֵּר מִכָּל הַנְּכָסִים בַּתִּיק בִּתְקוּפָה נְתוּנָה.",
             definitionNative = "Процент совокупной прибыли от всех активов портфеля за период.",
@@ -1189,7 +1189,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162424, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "loan_products", transliteration = "машканта хозарт",
+            pos = "noun", semanticGroup = "loan_products",
             original = "מִחְזוּר מַשְׁכַּנְתָּא מָלֵא", translation = "полное рефинансирование ипотеки",
             definition = "הַחְלָפַת הַלְוָאָה קַיֶּמֶת בְּהַלְוָאָה חֲדָשָׁה עִם תְּנָאִים טוֹבִים יוֹתֵר.",
             definitionNative = "Замена действующего кредита на новый с более выгодными условиями.",
@@ -1198,7 +1198,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162401L, 162402L, 162418L)),
         WordEntity(
             id = 162425, setId = 1624, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "markets", transliteration = "мейда финансим",
+            pos = "noun", semanticGroup = "markets",
             original = "מֵידָע פִּינַנְסִי פּוּמְבִּי", translation = "публичная финансовая информация",
             definition = "דִּווּחַ פָּתוּחַ שֶׁל חֶבְרָה עַל מַצָּבָהּ הַכַּסְפִּי, מַגִּיעַ לְכָל מַשְׁקִיעַ בָּאִנְטֶרְנֶט.",
             definitionNative = "Открытый отчёт компании о финансовом положении, доступный любому инвестору.",
@@ -1209,7 +1209,7 @@ object WordDataHebrewFinanceV2 {
         // ── Set 1625 — Экономика (level 4, EPIC) ─────────────────────────
         WordEntity(
             id = 162501, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "macro_indicators", transliteration = "инфляция",
+            pos = "noun", semanticGroup = "macro_indicators",
             original = "אִינְפְלַצְיָה מַמְשִׁיכָה", translation = "устойчивая инфляция",
             definition = "עֲלִיָּה קְבוּעָה בִּרְמַת הַמְּחִירִים שֶׁמַּמְשִׁיכָה לְחוֹדָשִׁים אוֹ שָׁנִים.",
             definitionNative = "Постоянный рост уровня цен, продолжающийся месяцами или годами.",
@@ -1218,7 +1218,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162502L, 162503L, 162511L, 162512L, 162514L, 162515L, 162517L, 162519L)),
         WordEntity(
             id = 162502, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "macro_indicators", transliteration = "дефляция",
+            pos = "noun", semanticGroup = "macro_indicators",
             original = "דֵפְלַצְיָה מִתְמַשֶּׁכֶת", translation = "затяжная дефляция",
             definition = "יְרִידַת מְחִירִים כְּלַלִּית לְתִקוּפָה אֲרוּכָּה שֶׁמְּקַטֶּנֶת צְרִיכָה.",
             definitionNative = "Общее снижение цен в течение долгого времени, сжимающее потребление.",
@@ -1227,7 +1227,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162503L, 162511L, 162512L, 162514L, 162515L, 162517L, 162519L)),
         WordEntity(
             id = 162503, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "macro_indicators", transliteration = "тоцер мекоми",
+            pos = "noun", semanticGroup = "macro_indicators",
             original = "תּוֹצָר מְקוֹמִי גּוֹלְמִי", translation = "валовой внутренний продукт (ВВП)",
             definition = "הַסְּכוּם הַכַּסְפִּי שֶׁל כָּל הַמּוּצָרִים וְהַשֵּׁרוּתִים שֶׁיּוּצְרוּ בַּמְּדִינָה בְּשָׁנָה.",
             definitionNative = "Денежная стоимость всех товаров и услуг, произведённых в стране за год.",
@@ -1236,7 +1236,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162502L, 162505L, 162506L, 162508L, 162511L, 162512L, 162514L, 162515L, 162517L, 162518L, 162519L, 162520L, 162521L, 162525L)),
         WordEntity(
             id = 162504, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "state_finance", transliteration = "тикцив медина",
+            pos = "noun", semanticGroup = "state_finance",
             original = "תַּקְצִיב מְדִינָה שְׁנָתִי", translation = "годовой государственный бюджет",
             definition = "תָּכְנִית רִשְׁמִית שֶׁל הַמְּדִינָה לְהַכְנָסוֹת וְהוֹצָאוֹת לַשָּׁנָה הַבָּאָה.",
             definitionNative = "Официальный план доходов и расходов государства на предстоящий год.",
@@ -1246,7 +1246,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162505, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "state_finance", transliteration = "гираон",
+            pos = "noun", semanticGroup = "state_finance",
             original = "גֵּרָעוֹן תַּקְצִיבִי מִבְנִי", translation = "структурный бюджетный дефицит",
             definition = "פַּעַר קָבוּעַ בֵּין הַהוֹצָאוֹת לַהַכְנָסוֹת שֶׁל הַמְּדִינָה לְלֹא קֶשֶׁר לְמַחְזוֹר עֵסֶק.",
             definitionNative = "Устойчивый разрыв между расходами и доходами государства, не зависящий от цикла.",
@@ -1255,7 +1255,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162503L, 162504L, 162506L, 162513L, 162514L, 162517L, 162518L, 162521L, 162522L)),
         WordEntity(
             id = 162506, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "state_finance", transliteration = "хов медина",
+            pos = "noun", semanticGroup = "state_finance",
             original = "חוֹב לְאוּמִּי כּוֹלֵל", translation = "совокупный государственный долг",
             definition = "הַסְּכוּם הַכּוֹלֵל שֶׁל כָּל הַהַלְוָאוֹת שֶׁל הַמְּדִינָה לַחוּץ-לָאָרֶץ וְלַצִּבּוּר.",
             definitionNative = "Суммарные обязательства государства перед заграницей и собственным населением.",
@@ -1264,7 +1264,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162504L, 162505L, 162513L, 162514L, 162517L, 162518L, 162522L)),
         WordEntity(
             id = 162507, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "corporate_finance", transliteration = "дивиденд",
+            pos = "noun", semanticGroup = "corporate_finance",
             original = "דִּיבִידֶנְד רְבָעוֹנִי", translation = "квартальный дивиденд",
             definition = "תַּשְׁלוּם שֶׁחֶבְרָה מְחַלֶּקֶת לְבַעֲלֵי הַמְּנָיוֹת אֶחָד לִשְׁלוֹשָׁה חוֹדָשִׁים.",
             definitionNative = "Выплата компании держателям акций раз в три месяца.",
@@ -1273,7 +1273,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162508L, 162509L, 162520L, 162525L)),
         WordEntity(
             id = 162508, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "corporate_finance", transliteration = "хон ацми",
+            pos = "noun", semanticGroup = "corporate_finance",
             original = "הוֹן עַצְמִי מַשְׁמָעוּתִי", translation = "значительный собственный капитал",
             definition = "הַחֵלֶק הַפְּנִימִי שֶׁל הַחֶבְרָה לְאַחַר חִיסּוּר הַחוֹבוֹת וְהַהִתְחַיְבוּיּוֹת.",
             definitionNative = "Внутренняя доля компании после вычета долгов и обязательств.",
@@ -1282,7 +1282,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162507L, 162509L, 162520L, 162525L)),
         WordEntity(
             id = 162509, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "corporate_finance", transliteration = "нзилут чезарит",
+            pos = "noun", semanticGroup = "corporate_finance",
             original = "נְזִילוּת מִיָּדִית", translation = "мгновенная ликвидность",
             definition = "הַיְכוֹלֶת שֶׁל הַחֶבְרָה לְשַׁלֵּם חוֹבוֹת מִיָּד בְּלִי לִמְכּוֹר נְכָסִים אָרוֹךְ טַוַח.",
             definitionNative = "Способность компании сразу покрыть долги без распродажи долгих активов.",
@@ -1291,7 +1291,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162507L, 162508L, 162512L, 162518L, 162520L, 162525L)),
         WordEntity(
             id = 162510, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "investment_vehicles", transliteration = "керен гидур",
+            pos = "noun", semanticGroup = "investment_vehicles",
             original = "קֶרֶן גִּדּוּר אַגְרֶסִיבִית", translation = "агрессивный хедж-фонд",
             definition = "קֶרֶן הַשְׁקָעָה שֶׁמִּשְׁתַּמֶּשֶׁת בִּכְלִים מַתְקַדְּמִים לְהַשְׂגַת רֶוַח גָּבוֹהַ בְּסִכּוּן גָּבוֹהַ.",
             definitionNative = "Инвестфонд со сложными инструментами ради высокой доходности при высоком риске.",
@@ -1300,7 +1300,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162508L, 162509L, 162516L, 162521L)),
         WordEntity(
             id = 162511, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "macro_indicators", transliteration = "шаар хилуфин",
+            pos = "noun", semanticGroup = "macro_indicators",
             original = "שַׁעַר חֲלִיפִין צָף", translation = "плавающий валютный курс",
             definition = "יַחַס בֵּין מַטְבְּעוֹת שֶׁנִּקְבָּע בַּשּׁוּק לְפִי הֵיצֵעַ וְבִּיקוּשׁ חוֹפְשִׁיִּים.",
             definitionNative = "Соотношение валют, определяемое рынком по свободному спросу и предложению.",
@@ -1309,7 +1309,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162512L, 162514L, 162515L, 162517L, 162519L)),
         WordEntity(
             id = 162512, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "macro_indicators", transliteration = "матбеа кашэ",
+            pos = "noun", semanticGroup = "macro_indicators",
             original = "מַטְבֵּעַ קָשֶׁה בֵּינְלְאוּמִּי", translation = "твёрдая международная валюта",
             definition = "מַטְבֵּעַ שֶׁיַּצִּיב לְטַוַח אָרוֹךְ וּמְקוּבָּל לְמִסְחָר וְחִסָּכוֹן עוֹלָמִי.",
             definitionNative = "Стабильная в долгую валюта, принятая для торговли и сбережений по всему миру.",
@@ -1318,7 +1318,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162511L, 162514L, 162515L, 162517L, 162519L)),
         WordEntity(
             id = 162513, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "state_finance", transliteration = "ваадат кесафим",
+            pos = "noun", semanticGroup = "state_finance",
             original = "וַעֲדַת הַכְּסָפִים", translation = "финансовая комиссия (Кнессета)",
             definition = "גּוּף חֲקִיקָתִי שֶׁמְּאַשֵּׁר פְּעֻלּוֹת כַּסְפִּיּוֹת מֶרְכָּזִיּוֹת לְאֹשֶר הַמְּדִינָה.",
             definitionNative = "Законодательный орган, утверждающий ключевые финансовые действия государства.",
@@ -1327,7 +1327,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162504L, 162505L, 162506L, 162518L, 162522L)),
         WordEntity(
             id = 162514, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "macro_indicators", transliteration = "шиур авталь",
+            pos = "noun", semanticGroup = "macro_indicators",
             original = "שִׁעוּר אַבְטָלָה לְאוּמִּי", translation = "национальный уровень безработицы",
             definition = "אָחוּז הָאֲנָשִׁים בְּגִיל הָעֲבוֹדָה שֶׁמְּחַפְּשִׂים עֲבוֹדָה וְלֹא מוֹצְאִים.",
             definitionNative = "Процент людей в трудоспособном возрасте, ищущих и не находящих работу.",
@@ -1336,7 +1336,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162505L, 162506L, 162511L, 162512L, 162515L, 162517L, 162519L, 162520L, 162525L)),
         WordEntity(
             id = 162515, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "macro_indicators", transliteration = "мединиюот",
+            pos = "noun", semanticGroup = "macro_indicators",
             original = "מְדִינִיּוּת מוֹנֶטָרִית מַרְחִיבָה", translation = "стимулирующая монетарная политика",
             definition = "פְּעוּלוֹת בַּנְק יִשְׂרָאֵל לְהוֹרִיד רִיבִּית וְלֶעוֹדֵד הַלְוָאוֹת וְהַשְׁקָעוֹת.",
             definitionNative = "Действия Банка Израиля по снижению ставки и поощрению кредитов и инвестиций.",
@@ -1345,7 +1345,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162511L, 162512L, 162514L, 162517L, 162519L)),
         WordEntity(
             id = 162516, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "investment_vehicles", transliteration = "нихсей сиккун",
+            pos = "noun", semanticGroup = "investment_vehicles",
             original = "נִכְסֵי סִיכּוּן גְּבוֹהִים", translation = "рисковые активы (high-risk)",
             definition = "הַשְׁקָעוֹת עִם סִיכּוּי לְרֶוַח גָּדוֹל אַךְ גַּם לְאוֹבְדַן רוֹב הַסְּכוּם.",
             definitionNative = "Вложения с шансом большой прибыли, но и потери большей части суммы.",
@@ -1354,7 +1354,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162510L, 162521L)),
         WordEntity(
             id = 162517, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "macro_indicators", transliteration = "мадад махирей цархан",
+            pos = "noun", semanticGroup = "macro_indicators",
             original = "מַדָּד הַמְּחִירִים לַצַּרְכָן", translation = "индекс потребительских цен",
             definition = "מַדָּד חוֹדְשִׁי שֶׁמּוֹדֵד שִׁנּוּי בִּמְחִירֵי סַל צְרִיכָה טִיפּוּסִי שֶׁל מִשְׁפָּחָה.",
             definitionNative = "Ежемесячный показатель изменения цен типовой потребительской корзины семьи.",
@@ -1363,7 +1363,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162502L, 162503L, 162505L, 162506L, 162511L, 162512L, 162514L, 162515L, 162518L, 162519L, 162520L, 162525L)),
         WordEntity(
             id = 162518, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "state_finance", transliteration = "резерва хуциот",
+            pos = "noun", semanticGroup = "state_finance",
             original = "רֶזֶרְבוֹת מַטְבֵּעַ חוּץ", translation = "валютные резервы государства",
             definition = "כַּמּוּת הַמַּטְבְּעוֹת הַזָּרִים שֶׁשּׁוֹמֵר בַּנְק יִשְׂרָאֵל לְהָגֵן עַל הַשֶּׁקֶל.",
             definitionNative = "Объём иностранных валют, хранимых Банком Израиля для защиты шекеля.",
@@ -1372,7 +1372,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162501L, 162503L, 162504L, 162505L, 162506L, 162513L, 162517L, 162520L, 162521L, 162522L, 162525L)),
         WordEntity(
             id = 162519, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "macro_indicators", transliteration = "мисхар хуц",
+            pos = "noun", semanticGroup = "macro_indicators",
             original = "מִסְחָר חוּץ מִסְחָרִי", translation = "внешняя коммерческая торговля",
             definition = "הַיֵצוּא וְהַיֵּבוּא שֶׁל סְחוֹרוֹת וְשֵׁירוּתִים בֵּין הַמְּדִינָה לִמְדִינוֹת זָרוֹת.",
             definitionNative = "Экспорт и импорт товаров и услуг между страной и иностранными партнёрами.",
@@ -1382,7 +1382,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162520, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "corporate_finance", transliteration = "ревах нето хеврати",
+            pos = "noun", semanticGroup = "corporate_finance",
             original = "רֶוַח נֶטּוֹ תַּאֲגִידִי", translation = "чистая корпоративная прибыль",
             definition = "הַסְּכוּם שֶׁנִּשְׁאָר לַחֶבְרָה אַחֲרֵי כָּל הַהוֹצָאוֹת וְהַמִּסִּים בִּרְבָעוֹן.",
             definitionNative = "Сумма, остающаяся у компании после всех расходов и налогов за квартал.",
@@ -1391,7 +1391,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162507L, 162508L, 162509L, 162521L, 162525L)),
         WordEntity(
             id = 162521, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "investment_vehicles", transliteration = "тейк хошвим",
+            pos = "noun", semanticGroup = "investment_vehicles",
             original = "תִּיק הַשְׁקָעוֹת מוּסָדִי", translation = "институциональный инвестпортфель",
             definition = "אוֹסֶף נְכָסִים שֶׁל גּוּף גָּדוֹל כְּמוֹ קֶרֶן פֶּנְסְיָה אוֹ חֶבְרַת בִּיטוּחַ.",
             definitionNative = "Набор активов крупного игрока — пенсионного фонда или страховой компании.",
@@ -1400,7 +1400,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162503L, 162506L, 162510L, 162516L, 162518L, 162520L, 162525L)),
         WordEntity(
             id = 162522, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "state_finance", transliteration = "мас рехом риалит",
+            pos = "noun", semanticGroup = "state_finance",
             original = "מַס רֶוַח הוֹן רֵיאָלִי", translation = "налог на реальный прирост капитала",
             definition = "אָחוּז שֶׁהַמְּדִינָה גּוֹבָה מֵהַחֵלֶק שֶׁל הָרֶוַח לְאַחַר הַצְמָדָה וּמִסִּים.",
             definitionNative = "Процент, удерживаемый с части прибыли после инфляционной индексации.",
@@ -1409,7 +1409,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162504L, 162505L, 162506L, 162513L, 162518L)),
         WordEntity(
             id = 162523, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "verb", semanticGroup = "macro_actions", transliteration = "леяцев махирим",
+            pos = "verb", semanticGroup = "macro_actions",
             original = "לְיַצֵּב מְחִירִים מַקְרוֹ", translation = "стабилизировать цены (макро)",
             definition = "פְּעוּלַת הַבַּנְק הַמֶּרְכָּזִי לִשְׁמוֹר עַל אִינְפְלַצְיָה נְמוּכָה וְיַצִּיבוּת שַׁעַר הַמַּטְבֵּעַ.",
             definitionNative = "Действие центробанка по удержанию низкой инфляции и стабильности курса.",
@@ -1418,7 +1418,7 @@ object WordDataHebrewFinanceV2 {
         ),
         WordEntity(
             id = 162524, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "verb", semanticGroup = "macro_actions", transliteration = "лемамен гираон",
+            pos = "verb", semanticGroup = "macro_actions",
             original = "לְמַמֵּן גֵּרָעוֹן מְדִינִי", translation = "финансировать государственный дефицит",
             definition = "לְכַסּוֹת אֶת הַפַּעַר בַּתַּקְצִיב בְּהַנְפָּקַת אִגָּרוֹת חוֹב לַצִּבּוּר אוֹ בְּלִוּוּי חוּץ.",
             definitionNative = "Закрывать бюджетный разрыв выпуском облигаций или внешним займом.",
@@ -1427,7 +1427,7 @@ object WordDataHebrewFinanceV2 {
          fillInBlankExclusions = listOf(162523L)),
         WordEntity(
             id = 162525, setId = 1625, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "corporate_finance", transliteration = "шуот шук",
+            pos = "noun", semanticGroup = "corporate_finance",
             original = "שְׁוִי שׁוּק כּוֹלֵל", translation = "совокупная рыночная капитализация",
             definition = "הַסְּכוּם הַכּוֹלֵל שֶׁל כָּל מְנָיוֹת הַחֶבְרָה לְפִי הַמְּחִיר הָאַחֲרוֹן בַּבּוּרְסָה.",
             definitionNative = "Совокупная стоимость всех акций компании по последней цене на бирже.",

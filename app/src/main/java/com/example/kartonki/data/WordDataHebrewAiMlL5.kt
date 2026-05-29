@@ -64,7 +64,7 @@ object WordDataHebrewAiMlL5 {
         // ── aiml_team (5) — роли и должности в ML-команде ──
         WordEntity(
             id = 175701, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_team", transliteration = "em-el riserchʼer",
+            pos = "noun", semanticGroup = "aiml_team",
             original = "אֶם-אֶל רִיסֵרְצֶ'ר", translation = "ML-исследователь",
             definition = "אִישׁ צֶוֶות שֶׁמְּפַתֵּחַ אַלְגוֹרִיתְמִים חֲדָשִׁים וּמְפַרְסֵם מַאֲמָרִים בְּכֵנָסִים מַדָּעִיִּים.",
             definitionNative = "Человек в команде, который придумывает новые алгоритмы и публикует научные статьи.",
@@ -73,7 +73,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175702L, 175703L, 175704L, 175705L)),
         WordEntity(
             id = 175702, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_team", transliteration = "applaid sayantist",
+            pos = "noun", semanticGroup = "aiml_team",
             original = "אַפְּלַייד סַייאַנְטִיסְט", translation = "applied scientist",
             definition = "אִישׁ מֶחְקָר שֶׁמּוֹרִיד רַעֲיוֹנוֹת אֲקָדֵמִיִּים לְפִתְרוֹנוֹת שֶׁבָּאֱמֶת רָצִים אֵצֶל לָקוֹחוֹת.",
             definitionNative = "Учёный, который доводит академические идеи до решений, реально работающих у клиентов.",
@@ -82,7 +82,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175701L, 175703L, 175704L, 175705L)),
         WordEntity(
             id = 175703, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_team", transliteration = "em-el inzhʼinir",
+            pos = "noun", semanticGroup = "aiml_team",
             original = "אֶם-אֶל אִינְגִ'ינִיר", translation = "ML-инженер",
             definition = "מְהַנְדֵּס שֶׁבּוֹנֶה צִנּוֹרוֹת אִימּוּן וְיִישּׂוּם שֶׁל בִּינָה מְלָאכוּתִית בְּסְבִיבָה אֲמִיתִית.",
             definitionNative = "Инженер, что строит трубопроводы тренировки и применения ИИ в реальной среде.",
@@ -91,7 +91,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175701L, 175702L, 175704L, 175705L)),
         WordEntity(
             id = 175704, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_team", transliteration = "em-lops inzhʼinir",
+            pos = "noun", semanticGroup = "aiml_team",
             original = "מַ\"לוֹפְּס אִינְגִ'ינִיר", translation = "MLOps-инженер",
             definition = "מְהַנְדֵּס שֶׁאַחְרָאִי עַל הַתַּשְׁתִּית, פְּרִיסָה וּמַעֲקָב אַחַר מוֹדֵלִים בְּפְּרוֹדַקְשֶׁן.",
             definitionNative = "Инженер, отвечающий за инфраструктуру, выкладку и слежку за моделями в продакшене.",
@@ -100,7 +100,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175701L, 175702L, 175703L, 175705L)),
         WordEntity(
             id = 175705, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_team", transliteration = "hed of ei-ai",
+            pos = "noun", semanticGroup = "aiml_team",
             original = "הֵד אוֹף אֵיי-אַיי", translation = "Head of AI (глава направления ИИ)",
             definition = "מְנַהֵל בָּכִיר שֶׁמַּחְלִיט עַל הַחֲזוֹן הַטֶּכְנוֹלוֹגִי וְהַתַּקְצִיב שֶׁל כָּל יְכוֹלוֹת הַבִּינָה.",
             definitionNative = "Старший управленец, решающий технологическое видение и бюджет всех ИИ-возможностей фирмы.",
@@ -111,7 +111,7 @@ object WordDataHebrewAiMlL5 {
         // ── aiml_platform (5) — инфраструктура ML-платформы ──
         WordEntity(
             id = 175706, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_platform", transliteration = "fichʼer stor",
+            pos = "noun", semanticGroup = "aiml_platform",
             original = "פִיצֶ'ר סְטוֹר", translation = "feature store (хранилище фич)",
             definition = "מַחְסָן מֶרְכָּזִי שֶׁל מַאֲפְיֵינִים מְעֻבָּדִים שֶׁאוֹתָם מְשַׁתְּפִים בֵּין צְוָתִים וּבֵין מוֹדֵלִים.",
             definitionNative = "Центральный склад готовых признаков — их делят между командами и моделями.",
@@ -120,7 +120,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175707L, 175708L, 175709L, 175710L)),
         WordEntity(
             id = 175707, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_platform", transliteration = "eksperiment treking",
+            pos = "noun", semanticGroup = "aiml_platform",
             original = "אֶקְסְפֶּרִימֶנְט טְרֵקִינְג", translation = "experiment tracking",
             definition = "מַעֲרֶכֶת שֶׁשּׁוֹמֶרֶת תּוֹצְאוֹת שֶׁל כָּל רִיצָה כְּדֵי לְהַשְׁווֹת גִּרְסָאוֹת בִּמְהִירוּת.",
             definitionNative = "Система, что хранит итоги каждого прогона — для быстрого сравнения версий.",
@@ -129,7 +129,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175706L, 175708L, 175709L, 175710L)),
         WordEntity(
             id = 175708, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_platform", transliteration = "GPU klaster",
+            pos = "noun", semanticGroup = "aiml_platform",
             original = "GPU קְלַסְטֶר", translation = "GPU-кластер",
             definition = "אֲסֵפָה שֶׁל מַאוֹת כַּרְטִיסִים גְּרָפִיִּים מְחֻבָּרִים יַחַד לְהַפְעָלָה שֶׁל אִימּוּנִים כְּבֵדִים.",
             definitionNative = "Связка из сотен графических карт — для тяжёлых тренировок моделей.",
@@ -138,7 +138,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175706L, 175707L, 175709L, 175710L)),
         WordEntity(
             id = 175709, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_platform", transliteration = "mivkhan A/B",
+            pos = "noun", semanticGroup = "aiml_platform",
             original = "מִבְחַן A/B", translation = "A/B-тест",
             definition = "הַשְׁוָאָה מְבֻקֶּרֶת בֵּין שְׁתֵּי גִּרְסָאוֹת מוּצָר עַל קְבוּצוֹת מִשְׁתַּמְשִׁים מֻקְבָּלוֹת.",
             definitionNative = "Контролируемое сравнение двух версий продукта на схожих группах пользователей.",
@@ -147,7 +147,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175706L, 175707L, 175708L, 175710L)),
         WordEntity(
             id = 175710, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_platform", transliteration = "data leikhaus",
+            pos = "noun", semanticGroup = "aiml_platform",
             original = "דַּאטָה לֵייקְהָאוּס", translation = "data lakehouse",
             definition = "אַרְכִיטֶקְטוּרָה הַמְשַׁלֶּבֶת אִחְסוּן זוֹל שֶׁל אֲגַם נְתוּנִים עִם בְּדִיקוֹת קְפֵדָנִיּוֹת שֶׁל מַחְסָן.",
             definitionNative = "Архитектура — соединяет дешёвое хранение озера данных со строгими проверками склада.",
@@ -158,7 +158,7 @@ object WordDataHebrewAiMlL5 {
         // ── aiml_ethics (5) — этика, риски и ответственный AI ──
         WordEntity(
             id = 175711, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_ethics", transliteration = "zihui hatayot",
+            pos = "noun", semanticGroup = "aiml_ethics",
             original = "זִיהוּי הַטָיוֹת", translation = "детекция предвзятости (bias detection)",
             definition = "תַּהֲלִיךְ שֶׁמּוֹצֵא אֵיפֹה הַמּוֹדֵל מַפְלֶה קְבוּצוֹת אוּכְלוּסִיָּה לְפִי מִין, גִּזְעָה אוֹ גִּיל.",
             definitionNative = "Поиск мест, где модель плохо обращается с группами по полу, расе или возрасту.",
@@ -167,7 +167,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175712L, 175713L, 175714L, 175715L)),
         WordEntity(
             id = 175712, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_ethics", transliteration = "hognut",
+            pos = "noun", semanticGroup = "aiml_ethics",
             original = "הוֹגְנוּת", translation = "справедливость (fairness в AI)",
             definition = "עִקָּרוֹן שֶׁמִּתְחַיֵּב לִשְׁוִויוֹן בְּהַחְלָטוֹת אוֹטוֹמָטִיּוֹת לְכָל קְבוּצוֹת מִשְׁתַּמְשִׁים.",
             definitionNative = "Принцип равенства автоматических решений между всеми группами пользователей.",
@@ -176,7 +176,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175711L, 175713L, 175714L, 175715L)),
         WordEntity(
             id = 175713, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_ethics", transliteration = "halutsinatsiyot",
+            pos = "noun", semanticGroup = "aiml_ethics",
             original = "הָלוּצִינַצְיוֹת", translation = "галлюцинации (выдуманные ответы LLM)",
             definition = "תְּשׁוּבוֹת בְּטוּחוֹת שֶׁל מוֹדֵל שָׂפָה שֶׁנִּשְׁמָעוֹת אֲמִינוֹת אֲבָל מַמְצִיאוֹת עוּבְדוֹת.",
             definitionNative = "Уверенные ответы языковой модели — звучат правдоподобно, но факты выдуманы.",
@@ -185,7 +185,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175711L, 175712L, 175714L, 175715L)),
         WordEntity(
             id = 175714, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_ethics", transliteration = "hesberiyut",
+            pos = "noun", semanticGroup = "aiml_ethics",
             original = "הֶסְבֵּרִיוּת", translation = "интерпретируемость (interpretability)",
             definition = "יְכוֹלֶת לְהַרְאוֹת בְּשָׂפָה פְּשׁוּטָה לָמָּה הַמּוֹדֵל בָּחַר תְּשׁוּבָה זוֹ עַל פְּנֵי אַחֶרֶת.",
             definitionNative = "Способность объяснить простыми словами, почему модель выбрала именно этот ответ.",
@@ -194,7 +194,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175711L, 175712L, 175713L, 175715L)),
         WordEntity(
             id = 175715, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_ethics", transliteration = "ei-ai alaynment",
+            pos = "noun", semanticGroup = "aiml_ethics",
             original = "אֵיי-אַיי אַלַיינְמֶנְט", translation = "AI alignment (согласование целей ИИ)",
             definition = "מְחֲקָר שֶׁמְּוַדֵּא שֶׁמַּעֲרָכוֹת חֲכָמוֹת מְמַלְּאוֹת אַחַר כַּוָּונוֹת אֱנוֹשִׁיּוֹת וְלֹא סוֹטוֹת מֵהֶן.",
             definitionNative = "Исследования: умные системы следуют человеческим намерениям и не уходят в сторону.",
@@ -206,7 +206,7 @@ object WordDataHebrewAiMlL5 {
         // ── aiml_governance (5) — governance и регуляторика AI ──
         WordEntity(
             id = 175716, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_governance", transliteration = "ei-ai governens",
+            pos = "noun", semanticGroup = "aiml_governance",
             original = "אֵיי-אַיי גוֹבֵרְנֶנְס", translation = "AI governance (управление AI в фирме)",
             definition = "מַעֲרֶכֶת נְהָלִים פְּנִימִיִּים שֶׁקּוֹבַעַת מִי מְאַשֵּׁר הַשָּׁקַת מוֹדֵל וְעַל אֵיזֶה תַּקָּנוֹת.",
             definitionNative = "Внутренние правила: кто разрешает запуск модели и по каким нормам.",
@@ -215,7 +215,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175717L, 175718L, 175719L, 175720L)),
         WordEntity(
             id = 175717, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_governance", transliteration = "kompliyens",
+            pos = "noun", semanticGroup = "aiml_governance",
             original = "קוֹמְפְּלָיֶנְס", translation = "compliance (соответствие нормам)",
             definition = "עֲמִידָה שִׁיטָתִית בְּדַרְשׁוֹת חוֹק וְתַקָּנוֹת רִשְׁמִיּוֹת בְּכָל פְּעֻלָּה עִסְקִית.",
             definitionNative = "Регулярное следование требованиям закона и официальным правилам — в каждом действии бизнеса.",
@@ -224,7 +224,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175716L, 175718L, 175719L, 175720L)),
         WordEntity(
             id = 175718, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_governance", transliteration = "model card",
+            pos = "noun", semanticGroup = "aiml_governance",
             original = "מוֹדֵל קַארְד", translation = "model card (паспорт модели)",
             definition = "מִסְמָךְ קָצָר שֶׁמְּתָאֵר עַל מָה הַמּוֹדֵל אֻמַּן, לְמָה הוּא מַתְאִים וְאֵיפֹה הוּא נִכְשַׁל.",
             definitionNative = "Короткий документ — на чём модель тренировалась, для чего годится и где плохо работает.",
@@ -233,7 +233,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175716L, 175717L, 175719L, 175720L)),
         WordEntity(
             id = 175719, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_governance", transliteration = "odit treyl",
+            pos = "noun", semanticGroup = "aiml_governance",
             original = "אוֹדִיט טְרֵייל", translation = "audit trail (журнал аудита)",
             definition = "רֶצֶף רְשׁוּמוֹת בְּלִתִּי נִיתָּן לְשִׁינּוּי שֶׁמְּתָעֵד מִי עָשָׂה מָה וּמָתַי בַּמַּעֲרֶכֶת.",
             definitionNative = "Неизменяемая последовательность записей — кто, что и когда делал в системе.",
@@ -242,7 +242,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175716L, 175717L, 175718L, 175720L)),
         WordEntity(
             id = 175720, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_governance", transliteration = "khok ha-ei-ai",
+            pos = "noun", semanticGroup = "aiml_governance",
             original = "חוֹק הָאֵיי-אַיי", translation = "AI Act (европейский закон о регулировании ИИ)",
             definition = "רֶגוּלַצְיָה אֵירוֹפִּית שֶׁמְּסַוֶּגֶת מַעֲרָכוֹת חֲכָמוֹת לְפִי רָמַת סִכּוּן וְכוֹפָה דְּרִישׁוֹת בְּהֶתְאֵם.",
             definitionNative = "Европейский закон — делит умные системы по уровню риска и налагает разные требования.",
@@ -253,7 +253,7 @@ object WordDataHebrewAiMlL5 {
         // ── aiml_strategy (5) — стратегия AI на уровне компании ──
         WordEntity(
             id = 175721, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_strategy", transliteration = "taktsiv khishuv",
+            pos = "noun", semanticGroup = "aiml_strategy",
             original = "תַּקְצִיב חִישּׁוּב", translation = "compute budget (бюджет вычислений)",
             definition = "סְכוּם הַכֶּסֶף וְהַשָּׁעוֹת שֶׁהַחֶבְרָה מַקְצָה לְאִימּוּן וְלִרְצוֹף שֶׁל מַעֲרָכוֹת חֲכָמוֹת.",
             definitionNative = "Сумма денег и часов, что фирма выделяет на тренировку и работу умных систем.",
@@ -262,7 +262,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175722L, 175724L, 175725L)),
         WordEntity(
             id = 175722, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_strategy", transliteration = "khavat sharatim",
+            pos = "noun", semanticGroup = "aiml_strategy",
             original = "חַוַּת שְׁרָתִים", translation = "серверная ферма (GPU farm)",
             definition = "מָבְנֶה עָנָק עִם אַלְפֵי מַחְשְׁבִים מְקֻרָרִים שֶׁמַּפְעִילִים אֶת הָאִימּוּן יוֹמָם וָלַיְלָה.",
             definitionNative = "Огромное здание с тысячами охлаждаемых машин — крутят тренировки днём и ночью.",
@@ -271,7 +271,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175721L, 175724L, 175725L)),
         WordEntity(
             id = 175723, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "aiml_strategy", transliteration = "bne o kne",
+            pos = "phrase", semanticGroup = "aiml_strategy",
             original = "בְּנֵה אוֹ קְנֵה", translation = "build vs buy (строить или покупать)",
             definition = "דִּילֶמָה אִסְטְרָטֶגִית: לְפַתֵּחַ פִּתְרוֹן בְּעַצְמְךָ אוֹ לְהִשְׁתַּמֵּשׁ בְּכֵלִים מוּכָנִים.",
             definitionNative = "Стратегическая дилемма — сделать решение самому или взять готовый инструмент.",
@@ -280,7 +280,7 @@ object WordDataHebrewAiMlL5 {
         ),
         WordEntity(
             id = 175724, setId = 1757, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_strategy", transliteration = "hekhzer al ei-ai",
+            pos = "noun", semanticGroup = "aiml_strategy",
             original = "הֶחְזֵר עַל אֵיי-אַיי", translation = "ROI of AI (отдача от вложений в ИИ)",
             definition = "מְדִידָה כַּמָּה כֶּסֶף הַחֶבְרָה הִרְוִיחָה מִכָּל שֶׁקֶל שֶׁהֻשְׁקַע בְּפִתּוּחַ מַעֲרָכוֹת חֲכָמוֹת.",
             definitionNative = "Замер: сколько денег фирма заработала на каждом шекеле, вложенном в умные системы.",
@@ -289,7 +289,7 @@ object WordDataHebrewAiMlL5 {
          fillInBlankExclusions = listOf(175721L, 175722L, 175725L)),
         WordEntity(
             id = 175725, setId = 1757, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_strategy", transliteration = "mutsar ei-ai-feirst",
+            pos = "noun", semanticGroup = "aiml_strategy",
             original = "מוּצָר אֵיי-אַיי-פֵירְסְט", translation = "AI-first продукт",
             definition = "מוּצָר שֶׁבּוֹ הַיְכוֹלוֹת הַחֲכָמוֹת הֵן הַלֵּב, לֹא תּוֹסֶפֶת מְאֻחֶרֶת לְמָה שֶׁכְּבָר קַיָּם.",
             definitionNative = "Продукт, в котором умные функции — сердце, а не поздняя надстройка над готовым.",

@@ -24,7 +24,7 @@ object WordDataHebrewBatch7 {
 
         WordEntity(
             id = 104401, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "agala",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "עֲגָלָה", translation = "тележка (покупательская)",
             definition = "כְּלִי גַּלְגַּלִּים לְהַנָּחַת קְנִיּוֹת בַּסּוּפֶּרְמַרְקֶט.",
             definitionNative = "Колёсная корзина для покупок в супермаркете.",
@@ -33,7 +33,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104402, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "sal kniyot",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "סַל קְנִיּוֹת", translation = "корзина для покупок",
             definition = "סַל נָשׂוּא לְהַנָּחַת מוּצָרִים מְעַטִּים בַּסּוּפֶּרְמַרְקֶט.",
             definitionNative = "Ручная корзина для небольшого количества покупок в супермаркете.",
@@ -42,7 +42,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104401L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104403, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "mutzar",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "מוּצָר", translation = "товар, продукт",
             definition = "דָּבָר הַמְּיֻצָּר לִמְכִירָה בַּסּוּפֶּרְמַרְקֶט.",
             definitionNative = "Изделие, произведённое для продажи в супермаркете.",
@@ -50,7 +50,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Я проверил срок годности מוּצָר."),
         WordEntity(
             id = 104404, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "kupon",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "קֻפּוֹן", translation = "купон; скидочный талон",
             definition = "שׁוֹבֵר הַמְּאַפְשֵׁר הֲנָחָה אוֹ הֲטָבָה בְּרְכִישַׁת מוּצָרִים בַּסּוּפֶּרְמַרְקֵט.",
             definitionNative = "Ваучер, дающий скидку или льготу при покупке товаров в супермаркете.",
@@ -59,7 +59,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104405L, 104406L, 104408L, 104412L, 104413L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104405, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "mekhir",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "מְחִיר", translation = "цена",
             definition = "הַסְּכוּם הַכַּסְפִּי שֶׁמְּשַׁלְּמִים עַל מוּצָר אוֹ שֵׁרוּת.",
             definitionNative = "Денежная сумма, которую платят за товар или услугу.",
@@ -67,7 +67,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "מְחִיר масла вырос в этом месяце."),
         WordEntity(
             id = 104406, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "kasai",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "קַסָּאי", translation = "кассир",
             definition = "עוֹבֵד הָעוֹמֵד בַּקֻּפָּה וּמְטַפֵּל בְּתַשְׁלוּמֵי הַקּוֹנִים.",
             definitionNative = "Работник, который стоит за кассой и принимает оплату.",
@@ -75,7 +75,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Я спросил קַסָּאי, где находится нужный мне товар."),
         WordEntity(
             id = 104407, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_people", transliteration = "kasait",
+            pos = "noun", semanticGroup = "supermarket_people",
             original = "קַסַּאִית", translation = "кассирша",
             definition = "עוֹבֶדֶת הָעוֹמֶדֶת בַּקֻּפָּה וּמְטַפֶּלֶת בְּתַשְׁלוּמֵי הַקּוֹנִים.",
             definitionNative = "Работница, которая стоит за кассой и принимает оплату.",
@@ -83,7 +83,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "קַסַּאִית быстро просканировала все товары."),
         WordEntity(
             id = 104408, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "madaf",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "מָדָף", translation = "полка",
             definition = "מִשְׁטָח אֲנָכִי בְּחֶנוּת שֶׁמַּצִּיגִים עָלָיו מוּצָרִים לִמְכִירָה.",
             definitionNative = "Горизонтальная поверхность в магазине, на которой выставлены товары.",
@@ -92,7 +92,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104409, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "supermarket_quality", transliteration = "tari",
+            pos = "adjective", semanticGroup = "supermarket_quality",
             original = "טָרִי", translation = "свежий",
             definition = "מָזוֹן שֶׁלֹּא עָבַר עִבּוּד וְנִמְכָּר בְּמַצְּבוֹ הַטִּבְעִי.",
             definitionNative = "Продукт, не прошедший обработку и продаваемый в натуральном виде.",
@@ -100,7 +100,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Свежий טָרִי хлеб продаётся только утром."),
         WordEntity(
             id = 104410, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "supermarket_quality", transliteration = "kafua",
+            pos = "adjective", semanticGroup = "supermarket_quality",
             original = "קָפוּא", translation = "замороженный",
             definition = "מָזוֹן שֶׁשֻּׁמַּר בְּטֶמְפֶּרָטוּרָה שֶׁל מִינוּס לְשִׁמּוּר לְאֹרֶךְ זְמַן.",
             definitionNative = "Продукт, хранившийся при минусовой температуре для длительного хранения.",
@@ -109,7 +109,7 @@ object WordDataHebrewBatch7 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104411, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_labels", transliteration = "ta'arikh tokef",
+            pos = "noun", semanticGroup = "supermarket_labels",
             original = "תַּאֲרִיךְ תֹּקֶף", translation = "срок годности",
             definition = "הַתַּאֲרִיךְ הָאַחֲרוֹן שֶׁבּוֹ מוּתָּר לְהִשְׁתַּמֵּשׁ בַּמּוּצָר.",
             definitionNative = "Последняя дата, до которой разрешено использовать продукт.",
@@ -118,7 +118,7 @@ object WordDataHebrewBatch7 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104412, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_deals", transliteration = "hanakha",
+            pos = "noun", semanticGroup = "supermarket_deals",
             original = "הַנָּחָה", translation = "скидка",
             definition = "הוֹרָדַת מְחִיר שֶׁנּוֹתֵן הַמּוֹכֵר לְקוֹנֶה.",
             definitionNative = "Снижение цены, предоставляемое продавцом покупателю.",
@@ -127,7 +127,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104404L, 104413L)),
         WordEntity(
             id = 104413, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_deals", transliteration = "mivtza",
+            pos = "noun", semanticGroup = "supermarket_deals",
             original = "מָבְצָע", translation = "акция, распродажа",
             definition = "הַצָּעָה מְיֻחֶדֶת לִמְכִירַת מוּצָר בְּמְחִיר מוּפְחָת לְזְמַן מוּגְבָּל.",
             definitionNative = "Специальное предложение по продаже товара по сниженной цене на ограниченный срок.",
@@ -136,7 +136,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104404L, 104412L)),
         WordEntity(
             id = 104414, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "mitzrah",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "מִצְרָח", translation = "стеллаж / полка с товарами",
             definition = "מַדָּף אוֹ שׁוּרַת מַדָּפִים בְּחֲנוּת שָׁם מְסֻדָּרִים מוּצָרִים לְמֶכֶר.",
             definitionNative = "Полка или ряд полок в магазине, на которых выставлены товары для продажи.",
@@ -144,7 +144,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Упаковки с хлопьями расставлены на מִצְרַח завтраков."),
         WordEntity(
             id = 104415, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "sakit",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "שַׂקִּית", translation = "пакет",
             definition = "אֲרִיזַת נְיָר אוֹ פְּלַסְטִיק לְהַכְנָסַת קְנִיּוֹת בַּחֲנוּת.",
             definitionNative = "Бумажный или пластиковый мешок для покупок в магазине.",
@@ -153,7 +153,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104416L, 104417L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104416, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "kartis ashrai",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "כַּרְטִיס אַשְׁרַאי", translation = "кредитная карта",
             definition = "כַּרְטִיס בַּנְקָאִי לְתַשְׁלוּם בְּחֶנוּיּוֹת וּבְאִינְטֶרְנֶט.",
             definitionNative = "Банковская карта для оплаты в магазинах и в интернете.",
@@ -161,7 +161,7 @@ object WordDataHebrewBatch7 {
             exampleNative = "Я заплатил כַּרְטִיס אַשְׁרַאי, потому что не было наличных."),
         WordEntity(
             id = 104417, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "mits tapuzim",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "מִיץ תַּפּוּזִים", translation = "апельсиновый сок",
             definition = "מֶשְׁקֶה פְּרוּת הַנִּסְחָט מִתַּפּוּזִים טְרִיִּים אוֹ מְרוּכָּז.",
             definitionNative = "Фруктовый напиток, выжатый из свежих или концентрированных апельсинов.",
@@ -170,7 +170,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104418L, 104421L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104418, setId = 1044, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "supermarket_dairy", transliteration = "yogurt",
+            pos = "noun", semanticGroup = "supermarket_dairy",
             original = "יוֹגוּרְט", translation = "йогурт",
             definition = "מוּצַר חָלָב מְּחֻמָּץ עֲשִׁיר בְּחֶלְבּוֹנוֹת וּבְּחִידְקֵי חָלָב.",
             definitionNative = "Кисломолочный продукт, богатый белками и молочными бактериями.",
@@ -179,7 +179,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104419L, 104421L, 104424L, 104425L)),
         WordEntity(
             id = 104419, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_dairy", transliteration = "shamenet",
+            pos = "noun", semanticGroup = "supermarket_dairy",
             original = "שַׁמְנֶת", translation = "сметана",
             definition = "מוּצַר חָלָב שֶׁנּוֹצָר מֵחֶמְאַת חָלָב בַּעַל מְרַקָּם עָבֶה.",
             definitionNative = "Молочный продукт, получаемый из сливок молока, с густой консистенцией.",
@@ -188,7 +188,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104418L, 104421L, 104422L, 104423L)),
         WordEntity(
             id = 104420, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_meat", transliteration = "nkaniyk",
+            pos = "noun", semanticGroup = "supermarket_meat",
             original = "נְקָנִיק", translation = "сосиска, колбаса",
             definition = "מוּצַר בָּשָׂר מְעֻבָּד הַנָּמְכָּר בְּצִינּוּר דַּק מְמֻלָּא.",
             definitionNative = "Переработанный мясной продукт, продаваемый в тонкой оболочке.",
@@ -197,7 +197,7 @@ object WordDataHebrewBatch7 {
         ),
         WordEntity(
             id = 104421, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "ktaniyot",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "קְטָנִיּוֹת", translation = "бобовые (горох, фасоль, чечевица)",
             definition = "קַבּוּצַת מָזוֹן הַכּוֹלֶלֶת עֲדָשִׁים, שְׁעוּעִית, חוּמּוּס וְאֵפוּנָה.",
             definitionNative = "Группа продуктов: чечевица, фасоль, нут, горох.",
@@ -206,7 +206,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104422L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104422, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "tavlin",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "תְּבָלִין", translation = "специи, пряности",
             definition = "חֹמְרֵי טַעַם וְרֵיחַ הַמּוּסָפִים לְמָזוֹן לְהַעֲשָׁרַת הַטַּעַם.",
             definitionNative = "Ароматические добавки к пище для усиления вкуса.",
@@ -215,7 +215,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104421L, 104423L, 104424L, 104425L)),
         WordEntity(
             id = 104423, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "shumshum",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "שֻׁמְשּׁוּם", translation = "кунжут (семена сезама)",
             definition = "זְרָעִים קְטַנִּים הַמְּשַׁמְּשִׁים לְבִישּׁוּל, בִּמְיֻחָד בְּלֶחֶם וּסְלָטִים.",
             definitionNative = "Маленькие семена, используемые в кулинарии, особенно для хлеба и салатов.",
@@ -224,7 +224,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104415L, 104416L, 104417L, 104421L, 104422L, 104424L, 104425L)),
         WordEntity(
             id = 104424, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "egozim",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "אֱגוֹזִים", translation = "орехи",
             definition = "פֵּרוֹת יַבְּשִׁים עָשִׁירִים בְּשׁוּמָנִים בְּרִיאִים כְּגוֹן שְׁקֵדִים, פִּיסְטוּקִים וְקָשְׁיוּ.",
             definitionNative = "Сухофрукты, богатые полезными жирами: миндаль, фисташки или кешью.",
@@ -233,7 +233,7 @@ object WordDataHebrewBatch7 {
          fillInBlankExclusions = listOf(104401L, 104402L, 104403L, 104404L, 104405L, 104406L, 104408L, 104414L, 104416L, 104417L, 104421L, 104422L, 104423L, 104425L)),
         WordEntity(
             id = 104425, setId = 1044, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "supermarket_basics", transliteration = "riva",
+            pos = "noun", semanticGroup = "supermarket_basics",
             original = "רִיבָּה", translation = "джем, варенье",
             definition = "מַמְרַח פֵּרוֹת מְבֻשָּׁל עִם סֻכָּר הַמְּשַׁמֵּשׁ לְמְרִיחָה עַל לֶחֶם.",
             definitionNative = "Фруктовый намазной продукт, сваренный с сахаром, для намазывания на хлеб.",

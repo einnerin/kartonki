@@ -61,7 +61,7 @@ object WordDataHebrewAiMlL1 {
         // ── aiml_basic_concepts (5) — базовые понятия ──
         WordEntity(
             id = 178601, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_concepts", transliteration = "makhshev khakham",
+            pos = "phrase", semanticGroup = "aiml_basic_concepts",
             original = "מַחְשֵׁב חָכָם", translation = "умный компьютер (общий термин для AI)",
             definition = "תּוֹכְנָה שֶׁעוֹנָה לְשָׂפָה רְגִילָה וְעוֹזֶרֶת בִּמְשִׂימוֹת יוֹם-יוֹם.",
             definitionNative = "Программа, понимающая обычный язык и помогающая в повседневных задачах.",
@@ -70,7 +70,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178602L, 178605L, 178607L)),
         WordEntity(
             id = 178602, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aiml_basic_concepts", transliteration = "ma'arekhet khakhama",
+            pos = "noun", semanticGroup = "aiml_basic_concepts",
             original = "מַעֲרֶכֶת חֲכָמָה", translation = "умная система",
             definition = "תּוֹכְנָה שֶׁמַּחְלִיטָה לְבַד אֵיךְ לַעֲזֹר לָאָדָם בְּכָל מַצָּב.",
             definitionNative = "Программа, что сама решает, как помочь человеку в любой ситуации.",
@@ -79,7 +79,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178601L, 178603L, 178604L)),
         WordEntity(
             id = 178603, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aiml_basic_concepts", transliteration = "algoritm",
+            pos = "noun", semanticGroup = "aiml_basic_concepts",
             original = "אַלְגוֹרִיתְם", translation = "алгоритм",
             definition = "סִדְרָה שֶׁל צְעָדִים שֶׁעַל פִּיהֶם הַתּוֹכְנָה מְקַבֶּלֶת הַחְלָטָה.",
             definitionNative = "Последовательность шагов, по которой программа принимает решение.",
@@ -88,7 +88,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178602L, 178604L)),
         WordEntity(
             id = 178604, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_concepts", transliteration = "lemida",
+            pos = "noun", semanticGroup = "aiml_basic_concepts",
             original = "לְמִידָה", translation = "обучение",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ הַתּוֹכְנָה מַכִּירָה דְּפוּסִים מִתּוֹךְ הַרְבֵּה דֻּגְמָאוֹת.",
             definitionNative = "Процесс, в котором программа узнаёт закономерности из множества примеров.",
@@ -97,7 +97,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178602L, 178603L)),
         WordEntity(
             id = 178605, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_concepts", transliteration = "moakh ha-makhshev",
+            pos = "phrase", semanticGroup = "aiml_basic_concepts",
             original = "מֹחַ הַמַּחְשֵׁב", translation = "мозг компьютера",
             definition = "הַחֵלֶק שֶׁמְּעַבֵּד מֵידָע וְקוֹבֵעַ אֵיךְ יַעֲנֶה הַמַּכְשִׁיר.",
             definitionNative = "Часть, что обрабатывает информацию и определяет ответ устройства.",
@@ -108,7 +108,7 @@ object WordDataHebrewAiMlL1 {
         // ── aiml_basic_tools (5) — популярные инструменты ──
         WordEntity(
             id = 178606, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_tools", transliteration = "chat-ji-pi-ti",
+            pos = "noun", semanticGroup = "aiml_basic_tools",
             original = "צָ'אט-גִ'י-פִּי-טִי", translation = "ChatGPT",
             definition = "צַ'אט פּוֹפּוּלָרִי שֶׁל אוֹפֶּן-אֵיי-אַי שֶׁעוֹנֶה עַל כָּל שְׁאֵלָה בִּכְתָב.",
             definitionNative = "Популярный чат от OpenAI — отвечает в письменной форме на любой вопрос.",
@@ -117,7 +117,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178607L, 178608L, 178609L, 178610L)),
         WordEntity(
             id = 178607, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_tools", transliteration = "ozer koli",
+            pos = "phrase", semanticGroup = "aiml_basic_tools",
             original = "עוֹזֵר קוֹלִי", translation = "голосовой помощник",
             definition = "תּוֹכְנָה בַּטֶּלֶפוֹן שֶׁשּׁוֹמַעַת בַּקָּשָׁה בְּפֶה וְעוֹנָה בְּקוֹל.",
             definitionNative = "Программа в телефоне — слышит просьбу голосом и отвечает голосом.",
@@ -126,7 +126,7 @@ object WordDataHebrewAiMlL1 {
         ),
         WordEntity(
             id = 178608, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_tools", transliteration = "metargem",
+            pos = "noun", semanticGroup = "aiml_basic_tools",
             original = "מְתַרְגֵּם", translation = "переводчик",
             definition = "כְּלִי בָּרֶשֶׁת שֶׁמַּעֲבִיר טֶקְסְט מִשָּׂפָה אַחַת לְשָׂפָה אַחֶרֶת.",
             definitionNative = "Сетевой инструмент — переносит текст с одного языка на другой.",
@@ -135,7 +135,7 @@ object WordDataHebrewAiMlL1 {
         ),
         WordEntity(
             id = 178609, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_tools", transliteration = "hamlatsot",
+            pos = "noun", semanticGroup = "aiml_basic_tools",
             original = "הַמְלָצוֹת", translation = "рекомендации",
             definition = "הַצָּעוֹת שֶׁל סִרְטוֹנִים אוֹ מוּצָרִים שֶׁמֻּתְאָמוֹת לְמָה שֶׁאַתָּה אוֹהֵב.",
             definitionNative = "Подборки видео или товаров — подобраны под то, что тебе нравится.",
@@ -144,7 +144,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178606L, 178608L, 178610L)),
         WordEntity(
             id = 178610, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_tools", transliteration = "khipush",
+            pos = "noun", semanticGroup = "aiml_basic_tools",
             original = "חִיפּוּשׂ", translation = "поиск",
             definition = "מְצִיאַת תְּשׁוּבָה בָּרֶשֶׁת לְפִי מִלִּים שֶׁאַתָּה מַקְלִיד בָּמִּסְגֶּרֶת.",
             definitionNative = "Нахождение ответа в сети по словам, которые ты набираешь в окошке.",
@@ -155,7 +155,7 @@ object WordDataHebrewAiMlL1 {
         // ── aiml_basic_actions (5) — простые действия с ИИ ──
         WordEntity(
             id = 178611, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_actions", transliteration = "lish'ol she'ela",
+            pos = "phrase", semanticGroup = "aiml_basic_actions",
             original = "לִשְׁאֹל שְׁאֵלָה", translation = "задать вопрос",
             definition = "לְהַקְלִיד אוֹ לוֹמַר מַשֶּׁהוּ שֶׁאַתָּה רוֹצֶה לָדַעַת מִן הַתּוֹכְנָה.",
             definitionNative = "Набрать или произнести то, что ты хочешь узнать у программы.",
@@ -164,7 +164,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178612L, 178613L, 178614L, 178615L)),
         WordEntity(
             id = 178612, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_actions", transliteration = "lekabel tshuva",
+            pos = "phrase", semanticGroup = "aiml_basic_actions",
             original = "לְקַבֵּל תְּשׁוּבָה", translation = "получить ответ",
             definition = "לִרְאוֹת עַל הַמָּסָךְ אוֹ לִשְׁמֹעַ מָה שֶׁהַתּוֹכְנָה הֵבִינָה וְעָנְתָה.",
             definitionNative = "Увидеть на экране или услышать то, что программа поняла и сказала.",
@@ -173,7 +173,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178611L, 178613L, 178614L, 178615L)),
         WordEntity(
             id = 178613, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_actions", transliteration = "livdok uvda",
+            pos = "phrase", semanticGroup = "aiml_basic_actions",
             original = "לִבְדֹּק עוּבְדָה", translation = "проверить факт",
             definition = "לִרְאוֹת בְּמָקוֹר רְצִינִי אִם מָה שֶׁהַתּוֹכְנָה אָמְרָה אֲמִתִּי.",
             definitionNative = "Заглянуть в серьёзный источник — правда ли то, что сказала программа.",
@@ -182,7 +182,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178611L, 178612L, 178614L, 178615L)),
         WordEntity(
             id = 178614, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_actions", transliteration = "lehafik tmuna",
+            pos = "phrase", semanticGroup = "aiml_basic_actions",
             original = "לְהַפִיק תְּמוּנָה", translation = "создать картинку",
             definition = "לְבַקֵּשׁ מֵהַתּוֹכְנָה לְצַיֵּר צִיּוּר חָדָשׁ לְפִי הַתֵּאוּר שֶׁלְּךָ.",
             definitionNative = "Попросить программу нарисовать новый рисунок по твоему описанию.",
@@ -191,7 +191,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178611L, 178612L, 178613L, 178615L)),
         WordEntity(
             id = 178615, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_actions", transliteration = "lehamshikh sikha",
+            pos = "phrase", semanticGroup = "aiml_basic_actions",
             original = "לְהַמְשִׁיךְ שִׂיחָה", translation = "продолжить разговор",
             definition = "לִכְתֹּב הוֹדָעָה נוֹסֶפֶת בְּאוֹתוֹ הַחַלּוֹן בְּלִי לִפְתֹּחַ צַ'אט חָדָשׁ.",
             definitionNative = "Написать ещё одно сообщение в том же окне — без открытия нового чата.",
@@ -202,7 +202,7 @@ object WordDataHebrewAiMlL1 {
         // ── aiml_basic_user_view (5) — взгляд пользователя ──
         WordEntity(
             id = 178616, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aiml_basic_user_view", transliteration = "remez",
+            pos = "noun", semanticGroup = "aiml_basic_user_view",
             original = "רֶמֶז", translation = "подсказка",
             definition = "מִשְׁפָּט קָצָר שֶׁאַתָּה נוֹתֵן כְּדֵי לְכַוֵּן אֶת הַתּוֹכְנָה לְמָה אַתָּה רוֹצֶה.",
             definitionNative = "Короткая фраза от тебя — чтобы навести программу на нужный тебе результат.",
@@ -211,7 +211,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178617L, 178618L, 178619L, 178620L)),
         WordEntity(
             id = 178617, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_user_view", transliteration = "shgia",
+            pos = "noun", semanticGroup = "aiml_basic_user_view",
             original = "שְׁגִיאָה", translation = "ошибка",
             definition = "תְּשׁוּבָה לֹא נְכוֹנָה שֶׁהַתּוֹכְנָה נוֹתֶנֶת בְּלִי לָדַעַת שֶׁהִיא טוֹעָה.",
             definitionNative = "Неправильный ответ программы — она даже не знает, что промахнулась.",
@@ -220,7 +220,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178616L, 178618L, 178619L, 178620L)),
         WordEntity(
             id = 178618, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_user_view", transliteration = "diyuk",
+            pos = "noun", semanticGroup = "aiml_basic_user_view",
             original = "דִּיּוּק", translation = "точность",
             definition = "כַּמָּה הַתְּשׁוּבָה מַתְאִימָה לָאֱמֶת וְלִשְׁאֵלָה שֶׁשָּׁאַלְתָּ.",
             definitionNative = "Насколько ответ соответствует правде и тому, что ты спросил.",
@@ -229,7 +229,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178616L, 178617L, 178619L, 178620L)),
         WordEntity(
             id = 178619, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aiml_basic_user_view", transliteration = "yetsiratiyut",
+            pos = "noun", semanticGroup = "aiml_basic_user_view",
             original = "יְצִירָתִיוּת", translation = "креативность",
             definition = "יְכֹלֶת לְהַצִּיעַ רַעֲיוֹנוֹת חֲדָשִׁים וְלֹא צְפוּיִים — לְשִׁיר, לְצִיוּר אוֹ לְסִפּוּר.",
             definitionNative = "Способность выдавать новые и неожиданные идеи — для песни, рисунка или рассказа.",
@@ -238,7 +238,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178616L, 178617L, 178618L, 178620L)),
         WordEntity(
             id = 178620, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_user_view", transliteration = "magbala",
+            pos = "noun", semanticGroup = "aiml_basic_user_view",
             original = "מַגְבָּלָה", translation = "ограничение",
             definition = "גְּבוּל שֶׁהַתּוֹכְנָה לֹא יְכוֹלָה אוֹ לֹא מֻרְשֵׁית לַעֲבֹר אוֹתוֹ.",
             definitionNative = "Граница, которую программа не может или не вправе перешагнуть.",
@@ -249,7 +249,7 @@ object WordDataHebrewAiMlL1 {
         // ── aiml_basic_safety (5) — безопасность и приватность ──
         WordEntity(
             id = 178621, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_safety", transliteration = "avtakhat meida",
+            pos = "phrase", semanticGroup = "aiml_basic_safety",
             original = "אַבְטָחַת מֵידַע", translation = "безопасность данных",
             definition = "שְׁמִירָה עַל פְּרָטִים שֶׁל מִשְׁתַּמֵּשׁ מִפְּנֵי גְּנֵבָה אוֹ דְּלִיפָה לָרֶשֶׁת.",
             definitionNative = "Защита сведений о пользователе от кражи или утечки в сеть.",
@@ -258,7 +258,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178623L, 178625L)),
         WordEntity(
             id = 178622, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_safety", transliteration = "emun",
+            pos = "noun", semanticGroup = "aiml_basic_safety",
             original = "אֵמוּן", translation = "доверие",
             definition = "תְּחוּשָׁה שֶׁאֶפְשָׁר לִסְמֹךְ עַל הַתְּשׁוּבָה גַּם בְּעִנְיָנִים חֲשׁוּבִים.",
             definitionNative = "Чувство — на ответ можно положиться даже в важных делах.",
@@ -267,7 +267,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178624L, 178625L)),
         WordEntity(
             id = 178623, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "aiml_basic_safety", transliteration = "shlita enoshit",
+            pos = "phrase", semanticGroup = "aiml_basic_safety",
             original = "שְׁלִיטָה אֱנוֹשִׁית", translation = "контроль человека (над AI)",
             definition = "מַצָּב שֶׁבּוֹ אָדָם תָּמִיד יָכוֹל לַעֲצוֹר אֶת הַתּוֹכְנָה אוֹ לְשַׁנּוֹת אוֹתָהּ.",
             definitionNative = "Состояние, когда человек всегда может остановить программу или поправить её.",
@@ -276,7 +276,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178621L)),
         WordEntity(
             id = 178624, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aiml_basic_safety", transliteration = "akhrayut",
+            pos = "noun", semanticGroup = "aiml_basic_safety",
             original = "אַחֲרָיוּת", translation = "ответственность",
             definition = "חוֹבָה לְהַסְבִּיר וּלְשַׁלֵּם אִם תְּשׁוּבָה אוֹטוֹמָטִית גָּרְמָה לְנֶזֶק.",
             definitionNative = "Обязанность объяснить и заплатить, если автоматический ответ принёс вред.",
@@ -285,7 +285,7 @@ object WordDataHebrewAiMlL1 {
          fillInBlankExclusions = listOf(178622L, 178625L)),
         WordEntity(
             id = 178625, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aiml_basic_safety", transliteration = "privatiyut",
+            pos = "noun", semanticGroup = "aiml_basic_safety",
             original = "פְּרָטִיוּת", translation = "приватность",
             definition = "זְכוּת לִשְׁמֹר עַל סוֹדוֹת אִישִׁיִּים מִפְּנֵי חֶבְרוֹת וּמַעֲרָכוֹת זָרוֹת.",
             definitionNative = "Право скрыть личные тайны от чужих фирм и систем.",

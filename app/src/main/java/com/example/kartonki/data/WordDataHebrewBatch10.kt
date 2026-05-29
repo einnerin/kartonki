@@ -24,7 +24,7 @@ object WordDataHebrewBatch10 {
 
         WordEntity(
             id = 105301, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holiday_basics", transliteration = "yom tov",
+            pos = "noun", semanticGroup = "holiday_basics",
             original = "יוֹם טוֹב", translation = "праздничный день; йом-тов (религ. праздник)",
             definition = "יוֹם חַג דָּתִי אוֹ לְאֻמִּי; גַּם בִּרְכַּת חַג.",
             definitionNative = "Религиозный или национальный праздник; также праздничное приветствие.",
@@ -33,7 +33,7 @@ object WordDataHebrewBatch10 {
          fillInBlankExclusions = listOf(105304L, 105305L)),
         WordEntity(
             id = 105302, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holiday_food", transliteration = "matza",
+            pos = "noun", semanticGroup = "holiday_food",
             original = "מַצָּה", translation = "маца (пресный хлеб)",
             definition = "לֶחֶם שָׁטוּחַ וְיָבֵשׁ שֶׁנֶּאֱכָל בְּחַג הַפֶּסַח.",
             definitionNative = "Плоский сухой хлеб без дрожжей, который едят на Пасху.",
@@ -42,7 +42,7 @@ object WordDataHebrewBatch10 {
         ),
         WordEntity(
             id = 105303, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holiday_prayer", transliteration = "tefila",
+            pos = "noun", semanticGroup = "holiday_prayer",
             original = "תְּפִילָה", translation = "молитва",
             definition = "פְּנִיָּה לְאֵלֹהִים בְּדִבּוּר אוֹ בְּלֵב, בְּיַחִיד אוֹ בְּצִבּוּר.",
             definitionNative = "Обращение к Богу словами или в мыслях, лично или в общине.",
@@ -51,7 +51,7 @@ object WordDataHebrewBatch10 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105304, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holiday_celebration", transliteration = "khagiga",
+            pos = "noun", semanticGroup = "holiday_celebration",
             original = "חַגִּיגָה", translation = "праздник, торжество",
             definition = "אֵירוּעַ שִׂמְחָה שֶׁל קְהִלָּה אוֹ מִשְׁפָּחָה לִכְבוֹד אוֹקָזְיָה מְיֻחֶדֶת.",
             definitionNative = "Радостное событие общины или семьи в честь особого повода.",
@@ -60,7 +60,7 @@ object WordDataHebrewBatch10 {
          fillInBlankExclusions = listOf(105306L)),
         WordEntity(
             id = 105305, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holiday_basics", transliteration = "tzom",
+            pos = "noun", semanticGroup = "holiday_basics",
             original = "צוֹם", translation = "пост (воздержание от еды)",
             definition = "הִמְנָעוּת מֵאֲכִילָה וּשְׁתִיָּה לִתְקוּפָה מְסֻיֶּמֶת מִטַּעֲמִים דָּתִיִּים.",
             definitionNative = "Воздержание от еды и питья в течение определённого времени по религиозным причинам.",
@@ -69,7 +69,7 @@ object WordDataHebrewBatch10 {
          fillInBlankExclusions = listOf(105301L)),
         WordEntity(
             id = 105306, setId = 1053, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holiday_lagbomer", transliteration = "medura",
+            pos = "noun", semanticGroup = "holiday_lagbomer",
             original = "מְדוּרָה", translation = "костёр",
             definition = "אֵשׁ גְּדוֹלָה שֶׁמַּדְלִיקִים בַּחוּץ, בִּמְיֻחָד בְּלַג בָּעֹמֶר.",
             definitionNative = "Большой огонь, зажигаемый на улице, особенно на Лаг ба-Омер.",
@@ -77,7 +77,7 @@ object WordDataHebrewBatch10 {
             exampleNative = "Дети пели вокруг מְדוּרָה на Лаг ба-Омер."),
         WordEntity(
             id = 105307, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_calendar", transliteration = "shavuot",
+            pos = "noun", semanticGroup = "holiday_calendar",
             original = "שָׁבוּעוֹת", translation = "Шавуот (праздник дарования Торы)",
             definition = "חַג יְהוּדִי הַחָל 50 יוֹם לְאַחַר פֶּסַח, בּוֹ חוֹגְגִים מַתַּן תּוֹרָה.",
             definitionNative = "Еврейский праздник, отмечаемый через 50 дней после Пасхи, в честь дарования Торы.",
@@ -86,7 +86,7 @@ object WordDataHebrewBatch10 {
         ),
         WordEntity(
             id = 105308, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_national", transliteration = "yom ha'atzma'ut",
+            pos = "noun", semanticGroup = "holiday_national",
             original = "יוֹם הָעַצְמָאוּת", translation = "День независимости Израиля",
             definition = "חַג לְאֻמִּי שֶׁל מְדִינַת יִשְׂרָאֵל, הַנֶּחְגָּג בְּה' בְּאִיָּר.",
             definitionNative = "Национальный праздник Государства Израиль, отмечаемый 5 ияра.",
@@ -95,7 +95,7 @@ object WordDataHebrewBatch10 {
          fillInBlankExclusions = listOf(105309L, 105315L)),
         WordEntity(
             id = 105309, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_national", transliteration = "yom hashoah",
+            pos = "noun", semanticGroup = "holiday_national",
             original = "יוֹם הַשּׁוֹאָה", translation = "День памяти Катастрофы (Йом hаШоа)",
             definition = "יוֹם זִכָּרוֹן לְשֵׁשֶׁת מִילְיוֹנֵי הַיְּהוּדִים שֶׁנִּרְצְחוּ בַּשּׁוֹאָה.",
             definitionNative = "День памяти шести миллионов евреев, погибших в Катастрофе.",
@@ -104,7 +104,7 @@ object WordDataHebrewBatch10 {
          fillInBlankExclusions = listOf(105308L, 105315L)),
         WordEntity(
             id = 105310, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_lagbomer", transliteration = "lag ba'omer",
+            pos = "noun", semanticGroup = "holiday_lagbomer",
             original = "לַג בָּעֹמֶר", translation = "Лаг ба-Омер",
             definition = "חַג יְהוּדִי הַנֶּחְגָּג בִּשְׂרֵפוֹת מְדוּרוֹת, בְּל\"ג לָעֹמֶר.",
             definitionNative = "Еврейский праздник, отмечаемый кострами, на 33-й день омера.",
@@ -113,7 +113,7 @@ object WordDataHebrewBatch10 {
          fillInBlankExclusions = listOf(105306L)),
         WordEntity(
             id = 105311, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_sukkot", transliteration = "sukka",
+            pos = "noun", semanticGroup = "holiday_sukkot",
             original = "סֻכָּה", translation = "сукка (праздничный шалаш)",
             definition = "מִבְנֶה זְמַנִּי הַנִּבְנֶה לְחַג הַסֻּכּוֹת, בְּגַגּוֹ פַּלְמִית אוֹ עֲנָפִים.",
             definitionNative = "Временная постройка для праздника Суккот с крышей из пальмовых листьев.",
@@ -122,7 +122,7 @@ object WordDataHebrewBatch10 {
         ),
         WordEntity(
             id = 105312, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_rosh_hashana", transliteration = "shofar",
+            pos = "noun", semanticGroup = "holiday_rosh_hashana",
             original = "שׁוֹפָר", translation = "шофар (бараний рог)",
             definition = "כְּלִי נְגִינָה עֲשׂוּי מִקֶּרֶן אַיִל שֶׁתּוֹקְעִים בּוֹ בְּרֹאשׁ הַשָּׁנָה.",
             definitionNative = "Музыкальный инструмент из бараньего рога, в который трубят в Рош а-Шана.",
@@ -130,7 +130,7 @@ object WordDataHebrewBatch10 {
             exampleNative = "Звук שׁוֹפָר возвещает начало молитвы."),
         WordEntity(
             id = 105313, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_shabbat", transliteration = "hadlakat nerot",
+            pos = "noun", semanticGroup = "holiday_shabbat",
             original = "הַדְלָקַת נֵרוֹת", translation = "зажигание свечей",
             definition = "טֶקֶס דָּתִי שֶׁל הַעֲלָאַת אֵשׁ עַל נֵרוֹת לִכְבוֹד שַׁבָּת אוֹ חַג.",
             definitionNative = "Религиозный обряд зажигания свечей в честь Шаббата или праздника.",
@@ -139,7 +139,7 @@ object WordDataHebrewBatch10 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105314, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_hanukkah", transliteration = "nerot khanuka",
+            pos = "noun", semanticGroup = "holiday_hanukkah",
             original = "נֵרוֹת חֲנֻכָּה", translation = "ханукальные свечи",
             definition = "נֵרוֹת מְיֻחָדִים שֶׁמַּדְלִיקִים בְּחֲנֻכִּיָּה שְׁמוֹנָה לֵילוֹת בְּחֲנֻכָּה.",
             definitionNative = "Специальные свечи, зажигаемые в ханукии восемь ночей на Хануку.",
@@ -148,7 +148,7 @@ object WordDataHebrewBatch10 {
         ),
         WordEntity(
             id = 105315, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_national", transliteration = "yom yerushalayim",
+            pos = "noun", semanticGroup = "holiday_national",
             original = "יוֹם יְרוּשָׁלַיִם", translation = "День Иерусалима",
             definition = "יוֹם לְאֻמִּי הַמְּצַיֵּן אֶת אִיחוּד יְרוּשָׁלַיִם בְּמִלְחֶמֶת שֵׁשֶׁת הַיָּמִים.",
             definitionNative = "Национальный праздник, отмечающий воссоединение Иерусалима в ходе Шестидневной войны.",
@@ -157,7 +157,7 @@ object WordDataHebrewBatch10 {
          fillInBlankExclusions = listOf(105308L, 105309L)),
         WordEntity(
             id = 105316, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_memorial", transliteration = "ner zikaron",
+            pos = "noun", semanticGroup = "holiday_memorial",
             original = "נֵר זִכָּרוֹן", translation = "поминальная свеча",
             definition = "נֵר שֶׁמַּדְלִיקִים לְזֵכֶר אָדָם שֶׁנִּפְטַר, בְּיוֹם פְּטִירָתוֹ אוֹ בַּיָּמִים הַקְּדוֹשִׁים.",
             definitionNative = "Свеча, зажигаемая в память об умершем в годовщину смерти или в священные дни.",
@@ -166,7 +166,7 @@ object WordDataHebrewBatch10 {
          fillInBlankExclusions = listOf(105322L)),
         WordEntity(
             id = 105317, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_shavuot", transliteration = "bikurim",
+            pos = "noun", semanticGroup = "holiday_shavuot",
             original = "בִּכּוּרִים", translation = "бикурим (праздник первых плодов)",
             definition = "טֶקֶס הַגָּשַׁת פֵּרוֹת הַבִּכּוּרִים לַמִּקְדָּשׁ, חָגוּג בְּשָׁבוּעוֹת.",
             definitionNative = "Обряд принесения первых плодов в Храм, отмечаемый на Шавуот.",
@@ -175,7 +175,7 @@ object WordDataHebrewBatch10 {
          fillInBlankExclusions = listOf(105307L)),
         WordEntity(
             id = 105318, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "synagogue_aliya", transliteration = "aliya latora",
+            pos = "noun", semanticGroup = "synagogue_aliya",
             original = "עֲלִיָּה לַתּוֹרָה", translation = "алия ла-Тора (вызов к Торе)",
             definition = "כָּבוֹד דָּתִי הַנִּתָּן לְבֵן-קְהִלָּה לָקוּם לְבֵימָה וְלִקְרֹא מִן הַתּוֹרָה בְּשַׁבָּת.",
             definitionNative = "Религиозная честь, оказываемая члену общины: подняться на биму и читать из Торы в субботу.",
@@ -184,7 +184,7 @@ object WordDataHebrewBatch10 {
         ),
         WordEntity(
             id = 105319, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "ethics_charity", transliteration = "tsedaka",
+            pos = "noun", semanticGroup = "ethics_charity",
             original = "צְדָקָה", translation = "благотворительность, пожертвование",
             definition = "נְתִינַת כֶּסֶף אוֹ עֶזְרָה לַנְּזְקָקִים כְּחוֹבָה דָּתִית וּמוּסָרִית.",
             definitionNative = "Денежное пожертвование или помощь нуждающимся как религиозная и нравственная обязанность.",
@@ -193,7 +193,7 @@ object WordDataHebrewBatch10 {
         ),
         WordEntity(
             id = 105320, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "synagogue_ark", transliteration = "aron kodesh",
+            pos = "noun", semanticGroup = "synagogue_ark",
             original = "אָרוֹן קֹדֶשׁ", translation = "Арон кодеш (ковчег в синагоге)",
             definition = "הָאָרוֹן שֶׁבּוֹ מַנִּיחִים אֶת סִפְרֵי הַתּוֹרָה בְּבֵית הַכְּנֶסֶת.",
             definitionNative = "Ковчег в синагоге, в котором хранятся свитки Торы.",
@@ -202,7 +202,7 @@ object WordDataHebrewBatch10 {
         ),
         WordEntity(
             id = 105321, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holiday_purim", transliteration = "masekha",
+            pos = "noun", semanticGroup = "holiday_purim",
             original = "מָסֵכָּה", translation = "маска; карнавальный костюм",
             definition = "כִּסּוּי לַפָּנִים שֶׁמַּסְתִּיר אֶת הַזֶּהוּת; נְהוּג בְּפּוּרִים.",
             definitionNative = "Накладка на лицо, скрывающая личность; принято надевать на Пурим.",
@@ -211,7 +211,7 @@ object WordDataHebrewBatch10 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105322, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "shabbat_candles", transliteration = "ner shabat",
+            pos = "noun", semanticGroup = "shabbat_candles",
             original = "נֵר שַׁבָּת", translation = "субботние свечи",
             definition = "נֵרוֹת שֶׁמַּדְלִיקִים בְּעֶרֶב שַׁבָּת לִכְבוֹד הַשַּׁבָּת.",
             definitionNative = "Свечи, зажигаемые в канун субботы в честь шаббата.",
@@ -220,7 +220,7 @@ object WordDataHebrewBatch10 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105323, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "yom_kippur", transliteration = "kipur",
+            pos = "noun", semanticGroup = "yom_kippur",
             original = "כִּפּוּר", translation = "искупление (Йом Кипур)",
             definition = "מוֹשָׂג יְהוּדִי שֶׁל סְלִיחָה וְכַפָּרָה עַל חֲטָאִים; הַיּוֹם הַקָּדוֹשׁ בְּיוֹתֵר בַּלּוּחַ הָעִבְרִי.",
             definitionNative = "Еврейская концепция прощения и искупления грехов; Йом Кипур — самый священный день.",
@@ -229,7 +229,7 @@ object WordDataHebrewBatch10 {
         ),
         WordEntity(
             id = 105324, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "conversion", transliteration = "ger",
+            pos = "noun", semanticGroup = "conversion",
             original = "גֵּר", translation = "прозелит, новообращённый",
             definition = "אֶחָד שֶׁהִתְגַּיֵּר וְקִיבֵּל עָלָיו אֶת הַיַּהֲדוּת.",
             definitionNative = "Человек, принявший иудаизм путём гиюра.",
@@ -238,7 +238,7 @@ object WordDataHebrewBatch10 {
         ),
         WordEntity(
             id = 105325, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "prayer_shema", transliteration = "kriat shma",
+            pos = "noun", semanticGroup = "prayer_shema",
             original = "קְרִיאַת שְׁמַע", translation = "Шма Исраэль (молитва-исповедание веры)",
             definition = "הַתְּפִלָּה הַיְּסוֹדִית בְּיַהֲדוּת שֶׁמַּכְרִיזָה עַל אֶחְדוּת הָאֵל.",
             definitionNative = "Основная молитва в иудаизме, провозглашающая единство Бога.",

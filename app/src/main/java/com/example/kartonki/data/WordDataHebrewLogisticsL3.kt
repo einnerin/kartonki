@@ -44,7 +44,7 @@ object WordDataHebrewLogisticsL3 {
         // ── logistics_warehouse_ops (5) — операции на складе ──
         WordEntity(
             id = 171801, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_warehouse_ops", transliteration = "ezor ikhsun",
+            pos = "phrase", semanticGroup = "logistics_warehouse_ops",
             original = "אֵזוֹר אִחְסוּן", translation = "зона хранения",
             definition = "חֵלֶק מִן הַמַּחְסָן שֶׁבּוֹ מַנִּיחִים סְחוֹרָה לְפִי קָטֵגוֹרְיָה.",
             definitionNative = "Часть склада, куда раскладывают товар по группам и категориям.",
@@ -53,7 +53,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171802L, 171803L, 171804L, 171805L)),
         WordEntity(
             id = 171802, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_warehouse_ops", transliteration = "madafei ikhsun",
+            pos = "phrase", semanticGroup = "logistics_warehouse_ops",
             original = "מַדְפֵי אִחְסוּן", translation = "стеллажи (для хранения)",
             definition = "מַסְגָּרוֹת מַתָּכֶת גְּבוֹהוֹת לְהַנָּחַת סְחוֹרָה בְּקוֹמוֹת.",
             definitionNative = "Высокие металлические рамы — для хранения товара рядами и ярусами.",
@@ -62,7 +62,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171801L, 171803L, 171804L, 171805L)),
         WordEntity(
             id = 171803, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_warehouse_ops", transliteration = "sfirat melai",
+            pos = "phrase", semanticGroup = "logistics_warehouse_ops",
             original = "סְפִירַת מְלַאי", translation = "инвентаризация",
             definition = "בְּדִיקָה יְדוּעָה כַּמָּה פְּרִיטִים יֵשׁ בָּאֱמֶת מוּל הָרָשׁוּם בַּמַּחְשֵׁב.",
             definitionNative = "Сверка реального количества товаров с числами в учётной системе.",
@@ -71,7 +71,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171801L, 171802L, 171804L, 171805L)),
         WordEntity(
             id = 171804, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_warehouse_ops", transliteration = "pikuakh melai",
+            pos = "phrase", semanticGroup = "logistics_warehouse_ops",
             original = "פִּקּוּחַ מְלַאי", translation = "контроль складских запасов",
             definition = "מַעֲקָב יוֹמִי שֶׁל כַּמּוּת הַמּוּצָרִים כְּדֵי לֹא לְהַגִּיעַ לְחֶסֶר.",
             definitionNative = "Ежедневная проверка запасов, чтобы не остаться без товара на полках.",
@@ -80,7 +80,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171801L, 171802L, 171803L, 171805L)),
         WordEntity(
             id = 171805, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_warehouse_ops", transliteration = "petakh te'ina",
+            pos = "phrase", semanticGroup = "logistics_warehouse_ops",
             original = "פֶּתַח טְעִינָה", translation = "погрузочные ворота",
             definition = "שַׁעַר רָחָב שֶׁבּוֹ מַשָּׂאִיּוֹת נִגָּשׁוֹת לַמַּחְסָן לְקַבֵּל סְחוֹרָה.",
             definitionNative = "Широкие ворота, к которым подъезжают грузовики для загрузки товара.",
@@ -91,7 +91,7 @@ object WordDataHebrewLogisticsL3 {
         // ── logistics_route_planning (5) — планирование маршрутов ──
         WordEntity(
             id = 171806, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_route_planning", transliteration = "tikhnun maslulim",
+            pos = "phrase", semanticGroup = "logistics_route_planning",
             original = "תַּכְנוּן מַסְלוּלִים", translation = "планирование маршрутов",
             definition = "בְּחִירַת הַדְּרָכִים הַטּוֹבוֹת בְּיוֹתֵר לְכָל מַשָּׂאִית בַּיּוֹם הָעוֹבֵד.",
             definitionNative = "Подбор лучших дорог для каждой машины на предстоящий рабочий день.",
@@ -100,7 +100,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171807L, 171808L, 171809L, 171810L)),
         WordEntity(
             id = 171807, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_route_planning", transliteration = "tizmun mishlokhim",
+            pos = "phrase", semanticGroup = "logistics_route_planning",
             original = "תִּזְמוּן מִשְׁלוֹחִים", translation = "график доставок",
             definition = "סִדּוּר שְׁעָתִי שֶׁל הַסְּפָקוֹת לְפִי בַּקָּשׁוֹת הַלְּקוֹחוֹת.",
             definitionNative = "Часовое расписание поставок, составленное под пожелания клиентов.",
@@ -109,7 +109,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171806L, 171808L, 171809L, 171810L)),
         WordEntity(
             id = 171808, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_route_planning", transliteration = "svav hovala",
+            pos = "phrase", semanticGroup = "logistics_route_planning",
             original = "סְבָב הוֹבָלָה", translation = "транспортный круг (рейс по точкам)",
             definition = "מַסְלוּל סָגוּר שֶׁבּוֹ הַנֶּהָג מִתְחִיל וּמְסַיֵּם בְּאוֹתוֹ הַמָּקוֹם.",
             definitionNative = "Замкнутый рейс, начинающийся и кончающийся в одной точке базы.",
@@ -118,7 +118,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171806L, 171807L, 171809L, 171810L)),
         WordEntity(
             id = 171809, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_route_planning", transliteration = "optimum nefakh",
+            pos = "phrase", semanticGroup = "logistics_route_planning",
             original = "אוֹפְּטִימוּם נֶפַח", translation = "оптимальное использование объёма",
             definition = "סִדּוּר חֲבִילוֹת בְּתוֹךְ הָרֶכֶב שֶׁמְּמַלֵּא אֶת הַמָּקוֹם בְּלִי לְהַשְׁאִיר רֶוַח.",
             definitionNative = "Укладка коробок в кузове так, чтобы не пропадало ни одного куба места.",
@@ -127,7 +127,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171806L, 171807L, 171808L, 171810L)),
         WordEntity(
             id = 171810, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_route_planning", transliteration = "omes yomi",
+            pos = "phrase", semanticGroup = "logistics_route_planning",
             original = "עוֹמֶס יוֹמִי", translation = "дневная нагрузка (на автопарк)",
             definition = "כַּמּוּת הַמִּשְׁלוֹחִים שֶׁכָּל צֶוֶת צָרִיךְ לְהַעֲבִיר בְּמֶשֶׁךְ הַמִּשְׁמֶרֶת.",
             definitionNative = "Объём поставок, который бригада должна развезти за одну смену.",
@@ -138,7 +138,7 @@ object WordDataHebrewLogisticsL3 {
         // ── logistics_cargo_tracking (5) — отслеживание грузов ──
         WordEntity(
             id = 171811, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_cargo_tracking", transliteration = "status mishloakh",
+            pos = "phrase", semanticGroup = "logistics_cargo_tracking",
             original = "סְטָטוּס מִשְׁלוֹחַ", translation = "статус отправления",
             definition = "צִיּוּן בַּמַּעֲרֶכֶת אֵיפֹה הַחֲבִילָה כָּעֵת — בַּמַּחְסָן, בַּדֶּרֶךְ אוֹ נִמְסְרָה.",
             definitionNative = "Пометка в системе: где сейчас посылка — на складе, в пути или вручена.",
@@ -147,7 +147,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171812L, 171813L, 171814L, 171815L)),
         WordEntity(
             id = 171812, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_cargo_tracking", transliteration = "ishur kabala",
+            pos = "phrase", semanticGroup = "logistics_cargo_tracking",
             original = "אִשּׁוּר קְבָלָה", translation = "подтверждение получения",
             definition = "חֲתִימָה אוֹ צִילוּם שֶׁל הַנִּמְעָן בִּזְמַן שֶׁהַחֲבִילָה הוֹשַׁג בְּיָדָיו.",
             definitionNative = "Подпись или фото получателя в момент, когда посылка вручена в руки.",
@@ -156,7 +156,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171811L, 171813L, 171814L, 171815L)),
         WordEntity(
             id = 171813, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_cargo_tracking", transliteration = "zihui tag",
+            pos = "phrase", semanticGroup = "logistics_cargo_tracking",
             original = "זִהוּי תָּג", translation = "идентификация по метке (RFID)",
             definition = "קְרִיאָה אוֹטוֹמָטִית שֶׁל קוֹדְ עַל הָאֲרִיזָה בְּלִי לִפְתֹּחַ אוֹתָהּ.",
             definitionNative = "Автоматическое чтение кода на упаковке без вскрытия коробки.",
@@ -165,7 +165,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171811L, 171812L, 171814L, 171815L)),
         WordEntity(
             id = 171814, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_cargo_tracking", transliteration = "hoda'at ikhur",
+            pos = "phrase", semanticGroup = "logistics_cargo_tracking",
             original = "הוֹדָעַת אִחוּר", translation = "уведомление о задержке",
             definition = "מֶסֶר אוֹטוֹמָטִי שֶׁמּוֹדִיעַ לַלָּקוֹחַ שֶׁהַמִּשְׁלוֹחַ יַגִּיעַ מְאֻחָר.",
             definitionNative = "Авто-сообщение клиенту о том, что доставка прибудет позже срока.",
@@ -174,7 +174,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171811L, 171812L, 171813L, 171815L)),
         WordEntity(
             id = 171815, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_cargo_tracking", transliteration = "tag itur",
+            pos = "phrase", semanticGroup = "logistics_cargo_tracking",
             original = "תָּג אִיתוּר", translation = "GPS-трекер на грузе",
             definition = "מַכְשִׁיר קָטָן עַל הָאֲרִיזָה הַשּׁוֹלֵחַ אֶת מְקוֹמוֹ בִּזְמַן אֲמִיתִּי.",
             definitionNative = "Маленькое устройство на упаковке, передающее координаты в реальном времени.",
@@ -185,7 +185,7 @@ object WordDataHebrewLogisticsL3 {
         // ── logistics_driver_coordination (5) — координация с водителями ──
         WordEntity(
             id = 171816, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_driver_coordination", transliteration = "tadrukh nehag",
+            pos = "phrase", semanticGroup = "logistics_driver_coordination",
             original = "תַּדְרוּךְ נֶהָג", translation = "инструктаж водителя",
             definition = "פְּגִישָׁה קְצָרָה לִפְנֵי נְסִיעָה עִם הֶסְבֵּר עַל מַסְלוּל וּלְקוֹחוֹת.",
             definitionNative = "Короткая встреча перед рейсом — пройтись по маршруту и клиентам.",
@@ -194,7 +194,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171817L, 171818L, 171819L, 171820L)),
         WordEntity(
             id = 171817, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_driver_coordination", transliteration = "ha'amasat masa",
+            pos = "phrase", semanticGroup = "logistics_driver_coordination",
             original = "הַעֲמָסַת מַשָּׂא", translation = "погрузка груза",
             definition = "הַעֲבָרַת חֲבִילוֹת מִן הַמַּחְסָן אֶל תּוֹךְ הָרֶכֶב לִפְנֵי הַיְּצִיאָה.",
             definitionNative = "Перенос коробок со склада в кузов перед самым выездом машины.",
@@ -203,7 +203,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171816L, 171818L, 171819L, 171820L)),
         WordEntity(
             id = 171818, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_driver_coordination", transliteration = "tahalikh prika",
+            pos = "phrase", semanticGroup = "logistics_driver_coordination",
             original = "תַּהֲלִיךְ פְּרִיקָה", translation = "процесс разгрузки",
             definition = "סֵדֶר הַפְּעֻלּוֹת בִּרְדִיפַת הַסְּחוֹרָה מִן הָרֶכֶב אֶל הַמַּחְסָן.",
             definitionNative = "Порядок действий при выгрузке товара из машины обратно в склад.",
@@ -212,7 +212,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171816L, 171817L, 171819L, 171820L)),
         WordEntity(
             id = 171819, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_driver_coordination", transliteration = "khalukat mishmarot",
+            pos = "phrase", semanticGroup = "logistics_driver_coordination",
             original = "חֲלוּקַת מִשְׁמָרוֹת", translation = "распределение смен (среди водителей)",
             definition = "סִדּוּר מִי נוֹסֵעַ בַּבֹּקֶר וּמִי בָּעֶרֶב לְפִי זְמִינוּת הַצֶּוֶת.",
             definitionNative = "Расписание, кто едет утром и кто вечером, по доступности бригады.",
@@ -221,7 +221,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171816L, 171817L, 171818L, 171820L)),
         WordEntity(
             id = 171820, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_driver_coordination", transliteration = "svav nehagim",
+            pos = "phrase", semanticGroup = "logistics_driver_coordination",
             original = "סְבָב נְהָגִים", translation = "ротация водителей",
             definition = "הַחְלָפָה תְּקוּפָתִית בֵּין הַנְּהָגִים עַל אוֹתוֹ הַמַּסְלוּל.",
             definitionNative = "Периодическая смена водителей, едущих по одному и тому же рейсу.",
@@ -232,7 +232,7 @@ object WordDataHebrewLogisticsL3 {
         // ── logistics_supply_chain (5) — цепочка поставок ──
         WordEntity(
             id = 171821, setId = 1718, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "logistics_supply_chain", transliteration = "sapak rashi",
+            pos = "phrase", semanticGroup = "logistics_supply_chain",
             original = "סַפָּק רָאשִׁי", translation = "основной поставщик",
             definition = "חֶבְרָה שֶׁמְּסַפֶּקֶת אֶת רֹב הַסְּחוֹרָה לַלָּקוֹחַ עַל בָּסִיס קָבוּעַ.",
             definitionNative = "Компания, которая поставляет основную долю товара клиенту на регулярной основе.",
@@ -241,7 +241,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171822L, 171823L, 171824L, 171825L)),
         WordEntity(
             id = 171822, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_supply_chain", transliteration = "hazmanat rekhesh",
+            pos = "phrase", semanticGroup = "logistics_supply_chain",
             original = "הַזְמָנַת רֶכֶשׁ", translation = "заявка на закупку",
             definition = "מִסְמָךְ רִשְׁמִי שֶׁבּוֹ מְבַקְּשִׁים לִקְנוֹת סְחוֹרָה מִסַּפָּק חִיצוֹנִי.",
             definitionNative = "Официальная бумага с просьбой купить товар у внешнего поставщика.",
@@ -250,7 +250,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171821L, 171823L, 171824L, 171825L)),
         WordEntity(
             id = 171823, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_supply_chain", transliteration = "mishloakh nikhnas",
+            pos = "phrase", semanticGroup = "logistics_supply_chain",
             original = "מִשְׁלוֹחַ נִכְנָס", translation = "входящая поставка",
             definition = "סְחוֹרָה שֶׁמַּגִּיעָה אֶל הַחֶבְרָה מֵחוּץ — לְקַבָּלָה וּלְאִחְסוּן.",
             definitionNative = "Товар, прибывающий в компанию извне, на приёмку и хранение.",
@@ -259,7 +259,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171821L, 171822L, 171824L, 171825L)),
         WordEntity(
             id = 171824, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_supply_chain", transliteration = "mishloakh yotse",
+            pos = "phrase", semanticGroup = "logistics_supply_chain",
             original = "מִשְׁלוֹחַ יוֹצֵא", translation = "исходящая отгрузка",
             definition = "סְחוֹרָה שֶׁעוֹזֶבֶת אֶת הַמַּחְסָן בִּכְוּוּן הַלָּקוֹחַ הַסּוֹפִי.",
             definitionNative = "Товар, покидающий склад в направлении конечного покупателя.",
@@ -268,7 +268,7 @@ object WordDataHebrewLogisticsL3 {
             fillInBlankExclusions = listOf(171821L, 171822L, 171823L, 171825L)),
         WordEntity(
             id = 171825, setId = 1718, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "logistics_supply_chain", transliteration = "skhora gmura",
+            pos = "phrase", semanticGroup = "logistics_supply_chain",
             original = "סְחוֹרָה גְּמוּרָה", translation = "готовая продукция",
             definition = "מוּצָר שֶׁעָבַר אֶת כָּל שָׁלָבֵי הַיְּצוּר וּמוּכָן לִשְׁלִיחָה לַלָּקוֹחַ.",
             definitionNative = "Изделие, прошедшее все стадии производства и готовое к отправке клиенту.",

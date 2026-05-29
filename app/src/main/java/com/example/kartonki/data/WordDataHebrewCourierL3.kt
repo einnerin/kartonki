@@ -44,7 +44,7 @@ object WordDataHebrewCourierL3 {
         // ── courier_routes_advanced (5) — маршрут и точки на нём ──
         WordEntity(
             id = 171701, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_routes_advanced", transliteration = "nekudat isuf",
+            pos = "phrase", semanticGroup = "courier_routes_advanced",
             original = "נְקוּדַת אִיסּוּף", translation = "точка забора посылки",
             definition = "מָקוֹם שֶׁבּוֹ הַשָּׁלִיחַ אוֹסֵף חֲבִילוֹת מֵהַשּׁוֹלֵחַ לִפְנֵי מַסְלוּל.",
             definitionNative = "Место, откуда курьер забирает товар у отправителя перед рейсом.",
@@ -54,7 +54,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171702L, 171703L, 171704L, 171705L)),
         WordEntity(
             id = 171702, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_routes_advanced", transliteration = "ktovet meshana",
+            pos = "phrase", semanticGroup = "courier_routes_advanced",
             original = "כְּתֹבֶת מְשַׁנָּה", translation = "изменённый адрес доставки",
             definition = "מַעַן חָדָשׁ שֶׁהַלָּקוֹחַ מְבַקֵּשׁ אַחֲרֵי שֶׁהַחֲבִילָה כְּבָר בַּדֶּרֶךְ.",
             definitionNative = "Новый адрес, который заказчик просит уже после выезда курьера.",
@@ -64,7 +64,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171701L, 171703L, 171704L, 171705L, 171712L)),
         WordEntity(
             id = 171703, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_routes_advanced", transliteration = "takhanat beinayim",
+            pos = "phrase", semanticGroup = "courier_routes_advanced",
             original = "תַּחֲנַת בֵּינַיִם", translation = "промежуточная остановка",
             definition = "עֲצִירָה קְצָרָה לִמְסִירַת חֲבִילָה אַחַת בְּאֶמְצַע מַסְלוּל אָרוֹךְ.",
             definitionNative = "Короткая остановка для одной выдачи на середине длинного рейса.",
@@ -74,7 +74,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171701L, 171702L, 171704L, 171705L)),
         WordEntity(
             id = 171704, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_routes_advanced", transliteration = "me'akeh hamaslul",
+            pos = "phrase", semanticGroup = "courier_routes_advanced",
             original = "מְעַקֶּה הַמַּסְלוּל", translation = "объезд по маршруту",
             definition = "סְטִיָּה זְמַנִּית מֵהַדֶּרֶךְ הָרְגִילָה בִּגְלַל סְגִירָה אוֹ עֲבוֹדוֹת.",
             definitionNative = "Временный обход обычной дороги из-за работ или закрытий.",
@@ -84,7 +84,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171701L, 171702L, 171703L, 171705L, 171708L, 171710L, 171714L, 171724L, 171725L)),
         WordEntity(
             id = 171705, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_routes_advanced", transliteration = "siyur yomi",
+            pos = "phrase", semanticGroup = "courier_routes_advanced",
             original = "סִיּוּר יוֹמִי", translation = "дневной обход курьера",
             definition = "סֵדֶר הַנְּסִיעוֹת שֶׁהַשָּׁלִיחַ מְבַצֵּעַ מֵהַבֹּקֶר עַד סוֹף הַמִּשְׁמֶרֶת.",
             definitionNative = "Порядок поездок курьера от утра до конца смены.",
@@ -96,7 +96,7 @@ object WordDataHebrewCourierL3 {
         // ── courier_delivery_types (5) — режимы и типы доставок ──
         WordEntity(
             id = 171706, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_delivery_types", transliteration = "mishloakh miyadi",
+            pos = "phrase", semanticGroup = "courier_delivery_types",
             original = "מִשְׁלוֹחַ מִיָּדִי", translation = "моментальная доставка",
             definition = "שֵׁרוּת שֶׁבּוֹ הַחֲבִילָה מַגִּיעָה תּוֹךְ שָׁעָה אוֹ פָּחוֹת.",
             definitionNative = "Услуга, при которой посылка приходит в течение часа или быстрее.",
@@ -106,7 +106,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171707L, 171708L, 171709L, 171710L)),
         WordEntity(
             id = 171707, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_delivery_types", transliteration = "mishloakh metuzman",
+            pos = "phrase", semanticGroup = "courier_delivery_types",
             original = "מִשְׁלוֹחַ מְתֻזְמָן", translation = "доставка в назначенное время",
             definition = "מְסִירָה בְּחַלּוֹן זְמַן צַר שֶׁהַלָּקוֹחַ בָּחַר מֵרֹאשׁ.",
             definitionNative = "Выдача в узком окне времени, заранее выбранном получателем.",
@@ -116,7 +116,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171705L, 171706L, 171708L, 171709L, 171710L, 171724L)),
         WordEntity(
             id = 171708, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_delivery_types", transliteration = "mishloakh komot",
+            pos = "phrase", semanticGroup = "courier_delivery_types",
             original = "מִשְׁלוֹחַ קוֹמוֹת", translation = "доставка с подъёмом на этаж",
             definition = "שֵׁרוּת שֶׁבּוֹ הַשָּׁלִיחַ מֵרִים אֶת הַחֲבִילָה עַד דֶּלֶת הַדִּיָּרָה.",
             definitionNative = "Услуга, когда курьер поднимает посылку прямо к двери квартиры.",
@@ -126,7 +126,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171706L, 171707L, 171709L, 171710L, 171722L)),
         WordEntity(
             id = 171709, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_delivery_types", transliteration = "mishloakh shavir",
+            pos = "phrase", semanticGroup = "courier_delivery_types",
             original = "מִשְׁלוֹחַ שָׁבִיר", translation = "доставка хрупкого товара",
             definition = "הוֹבָלָה זְהִירָה שֶׁל פְּרִיט שֶׁעָלוּל לְהִשָּׁבֵר מֵרַעַד אוֹ נְפִילָה.",
             definitionNative = "Бережная перевозка предмета, который легко разбить от тряски.",
@@ -136,7 +136,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171706L, 171707L, 171708L, 171710L)),
         WordEntity(
             id = 171710, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_delivery_types", transliteration = "mishloakh avor",
+            pos = "phrase", semanticGroup = "courier_delivery_types",
             original = "מִשְׁלוֹחַ עֲבוֹר", translation = "доставка через посредника",
             definition = "מְסִירָה דֶּרֶךְ אָדָם שְׁלִישִׁי שֶׁמַּעֲבִיר אֶת הַחֲבִילָה לַמְּקַבֵּל.",
             definitionNative = "Передача через третье лицо, которое доносит товар получателю.",
@@ -148,7 +148,7 @@ object WordDataHebrewCourierL3 {
         // ── courier_problems (5) — проблемные ситуации ──
         WordEntity(
             id = 171711, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_problems", transliteration = "seruv lekabel",
+            pos = "phrase", semanticGroup = "courier_problems",
             original = "סֵרוּב לְקַבֵּל", translation = "отказ получателя принять",
             definition = "מַצָּב שֶׁבּוֹ הַלָּקוֹחַ אוֹמֵר שֶׁאֵינוֹ רוֹצֶה אֶת הַפְּרִיט שֶׁהֻזְמַן.",
             definitionNative = "Случай, когда заказчик заявляет, что не хочет заказанный товар.",
@@ -158,7 +158,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171712L, 171713L, 171714L, 171715L)),
         WordEntity(
             id = 171712, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_problems", transliteration = "ktovet shguya",
+            pos = "phrase", semanticGroup = "courier_problems",
             original = "כְּתֹבֶת שְׁגוּיָה", translation = "ошибочный адрес",
             definition = "מַעַן לֹא נָכוֹן שֶׁנִּרְשַׁם בְּהַזְמָנָה וְלֹא קַיָּם בַּמְצִיאוּת.",
             definitionNative = "Неправильный адрес, записанный в заказе и не существующий в реальности.",
@@ -168,7 +168,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171701L, 171702L, 171703L, 171711L, 171713L, 171714L, 171715L, 171717L, 171721L)),
         WordEntity(
             id = 171713, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_problems", transliteration = "khavila avuda",
+            pos = "phrase", semanticGroup = "courier_problems",
             original = "חֲבִילָה אֲבוּדָה", translation = "потерянная посылка",
             definition = "פְּרִיט שֶׁנֶּעֱלַם אֵי שָׁם בֵּין הַמַּחְסָן לַמְּקַבֵּל וְלֹא נִמְצָא.",
             definitionNative = "Товар, исчезнувший где-то между складом и получателем.",
@@ -178,7 +178,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171702L, 171711L, 171712L, 171714L, 171715L, 171722L)),
         WordEntity(
             id = 171714, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_problems", transliteration = "ikuv bimsira",
+            pos = "phrase", semanticGroup = "courier_problems",
             original = "עִכּוּב בִּמְסִירָה", translation = "задержка доставки",
             definition = "אִחוּר בִּזְמַן הַהַגָּעָה אֵצֶל הַלָּקוֹחַ מֵעֵבֶר לְמַה שֶּׁהֻבְטַח.",
             definitionNative = "Опоздание прибытия к заказчику сверх обещанного срока.",
@@ -188,7 +188,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171704L, 171710L, 171711L, 171712L, 171713L, 171715L, 171716L, 171717L, 171718L)),
         WordEntity(
             id = 171715, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_problems", transliteration = "takala barekhev",
+            pos = "phrase", semanticGroup = "courier_problems",
             original = "תַּקָּלָה בָּרֶכֶב", translation = "поломка транспорта",
             definition = "כִּשָּׁלוֹן טֶכְנִי בָּאוֹפַנּוֹעַ אוֹ בָּרֶכֶב שֶׁעוֹצֵר אֶת הַסִּבּוּב.",
             definitionNative = "Техническая неисправность скутера или машины, прерывающая рейс.",
@@ -200,7 +200,7 @@ object WordDataHebrewCourierL3 {
         // ── courier_calculations (5) — расчёты и тарифы ──
         WordEntity(
             id = 171716, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_calculations", transliteration = "ta'arif basis",
+            pos = "phrase", semanticGroup = "courier_calculations",
             original = "תַּעֲרִיף בָּסִיס", translation = "базовый тариф доставки",
             definition = "מְחִיר הַתְחָלָתִי שֶׁכָּל לָקוֹחַ מְשַׁלֵּם לִפְנֵי תּוֹסָפוֹת.",
             definitionNative = "Стартовая цена, которую заказчик платит до любых надбавок.",
@@ -210,7 +210,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171717L, 171718L, 171719L, 171720L)),
         WordEntity(
             id = 171717, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_calculations", transliteration = "tosefet merkhak",
+            pos = "phrase", semanticGroup = "courier_calculations",
             original = "תּוֹסֶפֶת מֶרְחָק", translation = "доплата за дальность",
             definition = "סְכוּם נוֹסָף שֶׁמֻּתְוָסֵף לְכָל קִילוֹמֶטֶר מֵעֵבֶר לִתְחוּם הָרָגִיל.",
             definitionNative = "Сумма, добавляемая за каждый километр сверх стандартной зоны.",
@@ -220,7 +220,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171716L, 171718L, 171719L, 171720L, 171723L)),
         WordEntity(
             id = 171718, setId = 1717, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "courier_calculations", transliteration = "dmei khaniya",
+            pos = "phrase", semanticGroup = "courier_calculations",
             original = "דְּמֵי חֲנִיָּה", translation = "оплата парковки",
             definition = "כֶּסֶף שֶׁהַשָּׁלִיחַ מוֹצִיא עַל מָקוֹם חֲנָיָה לְיָד הַלָּקוֹחַ.",
             definitionNative = "Деньги, что курьер тратит на стоянку рядом с клиентом.",
@@ -230,7 +230,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171716L, 171717L, 171719L, 171720L)),
         WordEntity(
             id = 171719, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_calculations", transliteration = "tashlum bimzuman",
+            pos = "phrase", semanticGroup = "courier_calculations",
             original = "תַּשְׁלוּם בִּמְזוּמָן", translation = "оплата наличными при получении",
             definition = "כֶּסֶף שֶׁהַמְּקַבֵּל מוֹסֵר לַשָּׁלִיחַ בָּרֶגַע שֶׁמְּקַבֵּל אֶת הַפְּרִיט.",
             definitionNative = "Деньги, что получатель отдаёт курьеру в момент получения товара.",
@@ -240,7 +240,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171716L, 171717L, 171718L, 171720L)),
         WordEntity(
             id = 171720, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_calculations", transliteration = "kabala bikhtav",
+            pos = "phrase", semanticGroup = "courier_calculations",
             original = "קַבָּלָה בִּכְתָב", translation = "письменная квитанция",
             definition = "פֶּתֶק רָשְׁמִי שֶׁמְּאַשֵּׁר אֶת סְכוּם הַתַּשְׁלוּם וְאֶת הַתַּאֲרִיךְ.",
             definitionNative = "Официальная бумага, удостоверяющая сумму и дату оплаты.",
@@ -252,7 +252,7 @@ object WordDataHebrewCourierL3 {
         // ── courier_handoff (5) — передача и подтверждение получения ──
         WordEntity(
             id = 171721, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_handoff", transliteration = "srikat barkod",
+            pos = "phrase", semanticGroup = "courier_handoff",
             original = "סְרִיקַת בָּרְקוֹד", translation = "сканирование штрихкода",
             definition = "פְּעֻלָּה שֶׁמְּעַדְכֶּנֶת בַּמַּעֲרֶכֶת שֶׁהַחֲבִילָה הִגִּיעָה לַיָּעַד.",
             definitionNative = "Действие, отмечающее в системе прибытие посылки на точку.",
@@ -262,7 +262,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171722L, 171723L, 171724L, 171725L)),
         WordEntity(
             id = 171722, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_handoff", transliteration = "msira lashakhen",
+            pos = "phrase", semanticGroup = "courier_handoff",
             original = "מְסִירָה לְשָׁכֵן", translation = "выдача соседу",
             definition = "מַצָּב שֶׁבּוֹ הַחֲבִילָה נִשְׁאֶרֶת אֵצֶל אָדָם מֵהַבִּנְיָן הַסָּמוּךְ.",
             definitionNative = "Случай, когда товар оставляют у человека из соседней квартиры.",
@@ -272,7 +272,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171701L, 171702L, 171712L, 171717L, 171721L, 171723L, 171724L, 171725L)),
         WordEntity(
             id = 171723, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_handoff", transliteration = "msira ishit",
+            pos = "phrase", semanticGroup = "courier_handoff",
             original = "מְסִירָה אִישִׁית", translation = "вручение лично в руки",
             definition = "הַעֲבָרַת הַפְּרִיט יָשִׁיר לְיַד הַמְּקַבֵּל בְּלִי מְתַוְּכִים.",
             definitionNative = "Передача товара прямо в руки получателю без посредников.",
@@ -282,7 +282,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171720L, 171721L, 171722L, 171724L, 171725L)),
         WordEntity(
             id = 171724, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_handoff", transliteration = "ishur bitmuna",
+            pos = "phrase", semanticGroup = "courier_handoff",
             original = "אִישּׁוּר בִּתְמוּנָה", translation = "фото-подтверждение получения",
             definition = "צִלּוּם שֶׁמַּרְאֶה אֶת הַחֲבִילָה אֵצֶל הַמְּקַבֵּל לִרְאָיָה.",
             definitionNative = "Снимок, показывающий посылку у получателя как доказательство.",
@@ -292,7 +292,7 @@ object WordDataHebrewCourierL3 {
          fillInBlankExclusions = listOf(171711L, 171721L, 171722L, 171723L, 171725L)),
         WordEntity(
             id = 171725, setId = 1717, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "courier_handoff", transliteration = "ma'akav khavila",
+            pos = "phrase", semanticGroup = "courier_handoff",
             original = "מַעֲקָב חֲבִילָה", translation = "проверка статуса посылки",
             definition = "בְּדִיקָה אֵיפֹה הַפְּרִיט נִמְצָא בְּכָל שָׁלָב מֵהַשּׁוֹלֵחַ עַד הַסּוֹף.",
             definitionNative = "Проверка местонахождения товара на каждом шаге пути.",

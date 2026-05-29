@@ -49,7 +49,7 @@ object WordDataHebrewBureauL3 {
         // ── bureau_taxes (5) — налоги ──
         WordEntity(
             id = 180901, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_taxes", transliteration = "mas shuli",
+            pos = "phrase", semanticGroup = "bureau_taxes",
             original = "מַס שׁוּלִי", translation = "предельная ставка налога",
             definition = "אֲחוּז הַמַּס הַגָּבוֹהַּ בְּיוֹתֵר שֶׁאָדָם מְשַׁלֵּם עַל הַשֶּׁקֶל הָאַחֲרוֹן.",
             definitionNative = "Доля, которую государство берёт с самой верхней части дохода человека.",
@@ -57,7 +57,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "מַס שׁוּלִי растёт, когда зарплата переходит в новую ступень.", fillInBlankExclusions = listOf(180902L, 180903L, 180904L, 180905L)),
         WordEntity(
             id = 180902, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_taxes", transliteration = "tlush maskoret",
+            pos = "phrase", semanticGroup = "bureau_taxes",
             original = "תְּלוּשׁ מַשְׂכֹּרֶת", translation = "расчётный листок (зарплатный)",
             definition = "דַּף שֶׁמַּפְרִיט אֶת כָּל הַסְּכוּמִים וְהַנִּיכּוּיִים בַּמַּשְׂכֹּרֶת הַחוֹדֶשֶׁת.",
             definitionNative = "Бумага с разбивкой всех сумм и удержаний за месяц работы.",
@@ -65,7 +65,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "В начале месяца работодатель шлёт תְּלוּשׁ מַשְׂכֹּרֶת на почту.", fillInBlankExclusions = listOf(180901L, 180903L, 180904L, 180905L, 180921L)),
         WordEntity(
             id = 180903, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_taxes", transliteration = "hahzer mas",
+            pos = "phrase", semanticGroup = "bureau_taxes",
             original = "הַחְזֵר מַס", translation = "возврат налога",
             definition = "כֶּסֶף שֶׁהַמְּדִינָה מַחֲזִירָה כְּשֶׁשִּׁלַּמְתָּ יוֹתֵר מִדַּי בְּמֶשֶׁךְ הַשָּׁנָה.",
             definitionNative = "Деньги, которые казна возвращает, если за год удержали больше нужного.",
@@ -73,7 +73,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Я подал заявку и получил неплохой הַחְזֵר מַס.", fillInBlankExclusions = listOf(180901L, 180902L, 180904L, 180905L)),
         WordEntity(
             id = 180904, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_taxes", transliteration = "nikudot zikuy",
+            pos = "phrase", semanticGroup = "bureau_taxes",
             original = "נִקּוּדוֹת זִכּוּי", translation = "налоговые баллы льготы",
             definition = "יְחִידוֹת חִישּׁוּב שֶׁמַּפְחִיתוֹת אֶת הַסְּכוּם הַחוֹדְשִׁי הַמְּנֻכֶּה לְמַס.",
             definitionNative = "Расчётные единицы, на которые уменьшают ежемесячную сумму удержания.",
@@ -81,7 +81,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Если родился ребёнок, маме добавляют נִקּוּדוֹת זִכּוּי в анкете.", fillInBlankExclusions = listOf(180901L, 180902L, 180903L, 180905L)),
         WordEntity(
             id = 180905, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_taxes", transliteration = "ptor mimas",
+            pos = "phrase", semanticGroup = "bureau_taxes",
             original = "פָּטוֹר מִמַּס", translation = "освобождение от налога",
             definition = "הֶחְלָטָה רִשְׁמִית שֶׁאוֹמֶרֶת שֶׁעַל הַכְנָסָה מְסֻיֶּמֶת לֹא מְשַׁלְּמִים כְּלוּם.",
             definitionNative = "Решение властей, что с конкретного дохода платить казне не нужно.",
@@ -91,7 +91,7 @@ object WordDataHebrewBureauL3 {
         // ── bureau_bank_docs (5) — банковские документы ──
         WordEntity(
             id = 180906, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_bank_docs", transliteration = "cheshbon bank",
+            pos = "phrase", semanticGroup = "bureau_bank_docs",
             original = "חֶשְׁבּוֹן בַּנְק", translation = "банковский счёт",
             definition = "מָקוֹם שָׁמוּר בַּמּוֹסָד הַפִּינַנְסִי שֶׁבּוֹ מַחְזִיקִים אֶת הַכֶּסֶף.",
             definitionNative = "Личное место в финансовом учреждении — там лежат деньги клиента.",
@@ -99,7 +99,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Я открыл חֶשְׁבּוֹן בַּנְק сразу после приезда в страну.", fillInBlankExclusions = listOf(180908L, 180909L, 180910L)),
         WordEntity(
             id = 180907, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "bureau_bank_docs", transliteration = "check",
+            pos = "noun", semanticGroup = "bureau_bank_docs",
             original = "צֵ'ק", translation = "чек (платёжный)",
             definition = "פֶּתֶק נְיָר שֶׁמְּשַׁלְּמִים בּוֹ סְכוּם מוּגְדָּר מֵחֶשְׁבּוֹן הַבַּנְק.",
             definitionNative = "Бумажка для оплаты конкретной суммы прямо со счёта в банке.",
@@ -107,7 +107,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Я отдал хозяину квартиры צֵ'ק на полгода вперёд."),
         WordEntity(
             id = 180908, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_bank_docs", transliteration = "harshaa lekhiyuv",
+            pos = "phrase", semanticGroup = "bureau_bank_docs",
             original = "הַרְשָׁאָה לְחִיּוּב", translation = "разрешение на списание (с счёта)",
             definition = "מִסְמָךְ שֶׁמַּתִּיר לְעֵסֶק לִקְחַת תַּשְׁלוּם יָשָׁר מֵהַחֶשְׁבּוֹן בַּמּוֹעֵד.",
             definitionNative = "Документ, дающий компании право снимать оплату прямо со счёта.",
@@ -115,7 +115,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Я подписал הַרְשָׁאָה לְחִיּוּב в электрической компании.", fillInBlankExclusions = listOf(180906L, 180909L, 180910L)),
         WordEntity(
             id = 180909, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_bank_docs", transliteration = "ishur yitra",
+            pos = "phrase", semanticGroup = "bureau_bank_docs",
             original = "אִישּׁוּר יִתְרָה", translation = "справка об остатке на счёте",
             definition = "מִסְמָךְ רִשְׁמִי מֵהַבַּנְק שֶׁמְּצַיֵּן כַּמָּה כֶּסֶף יֵשׁ בַּחֶשְׁבּוֹן עַכְשָׁו.",
             definitionNative = "Официальная бумага из банка о текущей сумме на счёте клиента.",
@@ -123,7 +123,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Посольство затребовало אִישּׁוּר יִתְרָה за два года.", fillInBlankExclusions = listOf(180906L, 180908L, 180910L)),
         WordEntity(
             id = 180910, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_bank_docs", transliteration = "haavara bankait",
+            pos = "phrase", semanticGroup = "bureau_bank_docs",
             original = "הֶעֲבָרָה בַּנְקָאִית", translation = "банковский перевод",
             definition = "פְּעוּלָה שֶׁמַּעֲבִירָה כֶּסֶף בֵּין שְׁנֵי חֶשְׁבּוֹנוֹת בְּהוֹרָאַת הַלָּקוֹחַ.",
             definitionNative = "Действие — деньги перемещаются между двумя счетами по поручению клиента.",
@@ -133,7 +133,7 @@ object WordDataHebrewBureauL3 {
         // ── bureau_realty_docs (5) — документы по недвижимости ──
         WordEntity(
             id = 180911, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_realty_docs", transliteration = "khoze skhirut",
+            pos = "phrase", semanticGroup = "bureau_realty_docs",
             original = "חוֹזֵה שְׂכִירוּת", translation = "договор аренды квартиры",
             definition = "הֶסְכֵּם כָּתוּב בֵּין בַּעַל הַבַּיִת לַדַּיָּר עַל תְּנָאֵי הַמְּגוּרִים.",
             definitionNative = "Письменный договор хозяина с жильцом — об условиях проживания.",
@@ -141,7 +141,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Мы подписали חוֹזֵה שְׂכִירוּת на два года с опцией продления.", fillInBlankExclusions = listOf(180912L, 180913L, 180914L, 180915L)),
         WordEntity(
             id = 180912, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_realty_docs", transliteration = "khoze rekhesh",
+            pos = "phrase", semanticGroup = "bureau_realty_docs",
             original = "חוֹזֵה רֶכֶשׁ", translation = "договор купли-продажи (недвижимости)",
             definition = "מִסְמָךְ שֶׁמַּעֲבִיר בַּעֲלוּת עַל דִּירָה אוֹ קַרְקַע מִצַּד אֶחָד לַשֵּׁנִי.",
             definitionNative = "Документ, передающий собственность на жильё или землю от одного человека другому.",
@@ -149,7 +149,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Адвокат продиктовал חוֹזֵה רֶכֶשׁ на встрече для подписей."),
         WordEntity(
             id = 180913, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_realty_docs", transliteration = "nesakh tabu",
+            pos = "phrase", semanticGroup = "bureau_realty_docs",
             original = "נְסַח טַאבּוּ", translation = "выписка из реестра прав на имущество",
             definition = "הַעְתֵּק רִשְׁמִי שֶׁל הַפֵּרוּט עַל הַזְּכוּיוֹת בַּדִּירָה אוֹ בַּקַּרְקַע.",
             definitionNative = "Официальная копия записей о правах на квартиру или участок земли.",
@@ -157,7 +157,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Покупатель потребовал свежий נְסַח טַאבּוּ перед подписанием."),
         WordEntity(
             id = 180914, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_realty_docs", transliteration = "mas rekhesh",
+            pos = "phrase", semanticGroup = "bureau_realty_docs",
             original = "מַס רֶכֶשׁ", translation = "налог на покупку недвижимости",
             definition = "תַּשְׁלוּם חַד-פַּעֲמִי לַמְּדִינָה שֶׁמְּשַׁלֵּם הַקּוֹנֶה בִּקְנִיַּת דִּירָה.",
             definitionNative = "Разовая выплата казне — её делает покупатель при сделке с жильём.",
@@ -165,7 +165,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "מַס רֶכֶשׁ при покупке первого жилья ниже обычного."),
         WordEntity(
             id = 180915, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_realty_docs", transliteration = "shtar khakhira",
+            pos = "phrase", semanticGroup = "bureau_realty_docs",
             original = "שֶׁטָר חֲכִירָה", translation = "договор долгосрочной аренды земли",
             definition = "מִסְמָךְ שֶׁנּוֹתֵן זְכוּת שִׁמּוּשׁ בַּקַּרְקַע לְשָׁנִים רַבּוֹת לְלֹא בַּעֲלוּת.",
             definitionNative = "Документ — даёт право пользоваться землёй много лет без передачи собственности.",
@@ -175,7 +175,7 @@ object WordDataHebrewBureauL3 {
         // ── bureau_insurance (5) — страхование ──
         WordEntity(
             id = 180916, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_insurance", transliteration = "bituakh dira",
+            pos = "phrase", semanticGroup = "bureau_insurance",
             original = "בִּטּוּחַ דִּירָה", translation = "страхование квартиры",
             definition = "הֶסְכֵּם שֶׁמַּגֵּן עַל הַדִּירָה וְעַל הָרְכוּשׁ בִּפְנֵי שְׂרֵפָה אוֹ פְּרִיצָה.",
             definitionNative = "Соглашение, защищающее жильё и имущество от пожара или взлома.",
@@ -183,7 +183,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "בִּטּוּחַ דִּירָה покрыло ущерб от затопления на кухне.", fillInBlankExclusions = listOf(180917L, 180919L)),
         WordEntity(
             id = 180917, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_insurance", transliteration = "polisat khaim",
+            pos = "phrase", semanticGroup = "bureau_insurance",
             original = "פּוֹלִיסַת חַיִּים", translation = "полис страхования жизни",
             definition = "מִסְמָךְ הֶסְכֵּם שֶׁמְּבַטִּיחַ סְכוּם לַמִּשְׁפָּחָה בְּמִקְרֵה פְּטִירַת הַמְּבֻטָּח.",
             definitionNative = "Договор-документ, гарантирующий деньги семье в случае смерти застрахованного.",
@@ -191,7 +191,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Папа подписал פּוֹלִיסַת חַיִּים для защиты детей.", fillInBlankExclusions = listOf(180916L, 180919L)),
         WordEntity(
             id = 180918, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "bureau_insurance", transliteration = "tagmulim",
+            pos = "noun", semanticGroup = "bureau_insurance",
             original = "תַּגְמוּלִים", translation = "страховое возмещение",
             definition = "סְכוּם הַכֶּסֶף שֶׁחֶבְרַת הַבִּטּוּחַ מְשַׁלֶּמֶת לַלָּקוֹחַ אַחֲרֵי אֵרוּעַ מְכֻסֶּה.",
             definitionNative = "Сумма от страховой клиенту после случая, который входит в покрытие.",
@@ -199,7 +199,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "После аварии я получил תַּגְמוּלִים в течение двух недель.", fillInBlankExclusions = listOf(180920L)),
         WordEntity(
             id = 180919, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_insurance", transliteration = "hishtatfut atsmit",
+            pos = "phrase", semanticGroup = "bureau_insurance",
             original = "הִשְׁתַּתְּפוּת עַצְמִית", translation = "франшиза (взнос самого клиента)",
             definition = "סְכוּם שֶׁהַלָּקוֹחַ מְשַׁלֵּם מִכִּיסוֹ לִפְנֵי שֶׁהַחֶבְרָה מְכַסָּה אֶת הַיֶּתֶר.",
             definitionNative = "Сумма из своего кармана клиента — до того как компания платит остаток.",
@@ -207,7 +207,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "После аварии я заплатил הִשְׁתַּתְּפוּת עַצְמִית в тысячу шекелей.", fillInBlankExclusions = listOf(180916L, 180917L)),
         WordEntity(
             id = 180920, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "bureau_insurance", transliteration = "saadim",
+            pos = "noun", semanticGroup = "bureau_insurance",
             original = "סַעֲדִים", translation = "средства правовой защиты (по страховке)",
             definition = "אֶמְצָעִים מִשְׁפָּטִיִּים שֶׁמַּגִּיעִים לַלָּקוֹחַ כְּשֶׁהַחוֹזֶה הוּפַר נֶגְדּוֹ.",
             definitionNative = "Юридические инструменты, положенные клиенту, если соглашение нарушили.",
@@ -217,7 +217,7 @@ object WordDataHebrewBureauL3 {
         // ── bureau_certificates (5) — официальные справки ──
         WordEntity(
             id = 180921, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_certificates", transliteration = "ishur taasuka",
+            pos = "phrase", semanticGroup = "bureau_certificates",
             original = "אִישּׁוּר תַּעֲסוּקָה", translation = "справка с места работы",
             definition = "מִסְמָךְ מֵהַמַּעֲסִיק שֶׁמְּצַיֵּן שֶׁאָדָם עוֹבֵד שָׁם בְּתַפְקִיד מְסֻיָּם.",
             definitionNative = "Бумага от работодателя — что человек служит у них в конкретной должности.",
@@ -225,7 +225,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Банк затребовал אִישּׁוּר תַּעֲסוּקָה для оформления ипотеки.", fillInBlankExclusions = listOf(180902L, 180922L, 180923L, 180924L, 180925L)),
         WordEntity(
             id = 180922, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_certificates", transliteration = "hatsharat hon",
+            pos = "phrase", semanticGroup = "bureau_certificates",
             original = "הַצְהָרַת הוֹן", translation = "декларация об имуществе",
             definition = "טֹפֶס רִשְׁמִי שֶׁמְּפָרֵט אֶת כָּל הָרְכוּשׁ וְהַחִסָּכוֹן שֶׁל הָאָדָם לַשִּׁלְטוֹנוֹת.",
             definitionNative = "Официальная анкета — всё имущество и сбережения человека для государства.",
@@ -233,7 +233,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Налоговый инспектор требует הַצְהָרַת הוֹן раз в десять лет.", fillInBlankExclusions = listOf(180921L, 180923L, 180924L, 180925L)),
         WordEntity(
             id = 180923, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_certificates", transliteration = "teudat bagrut",
+            pos = "phrase", semanticGroup = "bureau_certificates",
             original = "תְּעוּדַת בָּגְרוּת", translation = "аттестат зрелости",
             definition = "מִסְמָךְ רִשְׁמִי שֶׁמְּצַיֵּן הַשְׁלָמָה שֶׁל בֵּית סֵפֶר תִּיכוֹן בְּהַצְלָחָה.",
             definitionNative = "Официальный документ — выпускник средней школы успешно завершил курс.",
@@ -241,7 +241,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Без תְּעוּדַת בָּגְרוּת сложно поступить в университет.", fillInBlankExclusions = listOf(180921L, 180922L, 180924L, 180925L)),
         WordEntity(
             id = 180924, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_certificates", transliteration = "teudat shikhrur",
+            pos = "phrase", semanticGroup = "bureau_certificates",
             original = "תְּעוּדַת שִׁחְרוּר", translation = "справка об увольнении из армии",
             definition = "מִסְמָךְ צְבָאִי שֶׁמְּעִיד עַל סִיּוּם הַשֵּׁירוּת הַסָּדִיר וְהַסְטָטוּס שֶׁל הַחַיָּל.",
             definitionNative = "Военный документ — об окончании срочной службы и статусе бывшего солдата.",
@@ -249,7 +249,7 @@ object WordDataHebrewBureauL3 {
             exampleNative = "Работодатели попросили показать תְּעוּדַת שִׁחְרוּר на собеседовании.", fillInBlankExclusions = listOf(180921L, 180922L, 180923L, 180925L)),
         WordEntity(
             id = 180925, setId = 1809, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_certificates", transliteration = "mirsham plili",
+            pos = "phrase", semanticGroup = "bureau_certificates",
             original = "מִרְשָׁם פְּלִילִי", translation = "справка о судимости (выписка из реестра)",
             definition = "מִסְמָךְ מֵהַמְּדִינָה שֶׁמַּרְאֶה הַאִם רָשׁוּם נֶגֶד הָאָדָם רֶקַע מִשְׁפָּטִי.",
             definitionNative = "Бумага из госреестра — числится ли за человеком уголовное дело.",

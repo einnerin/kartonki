@@ -48,7 +48,7 @@ object WordDataHebrewBatch20 {
         // EPIC (C1),
         WordEntity(
             id = 108401, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "miz an plas",
+            pos = "noun", semanticGroup = "cooking",
             original = "מִיז אָן פְּלָס", translation = "мизанплас (подготовка ингредиентов перед готовкой)",
             definition = "סִידּוּר מֻקְפָּד שֶׁל כָּל הַמַּרְכִּיבִים בִּכְלֵי קְטָנִים לִפְנֵי הַדְלָקַת הָאֵשׁ.",
             definitionNative = "Упорядоченная раскладка всех составляющих до начала приготовления.",
@@ -57,7 +57,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108402, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "demi glas",
+            pos = "noun", semanticGroup = "cooking",
             original = "דֵּמִי גְלַס", translation = "деми-гляс (концентрированный соус)",
             definition = "רוֹטֵב חוּם סָמִיךְ הַמִּתְקַבֵּל מֵצִמְצוּם אָרֹךְ שֶׁל מַרַק עַצְמוֹת בָּקָר.",
             definitionNative = "Густой коричневый соус из выпаренного мясного бульона для блюд из говядины.",
@@ -66,7 +66,7 @@ object WordDataHebrewBatch20 {
          fillInBlankExclusions = listOf(108403L, 108404L, 108408L, 108412L)),
         WordEntity(
             id = 108403, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "beshamel",
+            pos = "noun", semanticGroup = "cooking",
             original = "בֶּשָׁמֶל", translation = "соус бешамель",
             definition = "רוֹטֵב לָבָן צָרְפַתִי קְלָאסִי שֶׁמַּכִינִים מֵחָלָב, חֶמְאָה וְקֶמַח לָבָן.",
             definitionNative = "Классический белый французский соус на молоке с мукой и маслом.",
@@ -75,7 +75,7 @@ object WordDataHebrewBatch20 {
          fillInBlankExclusions = listOf(108402L)),
         WordEntity(
             id = 108404, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "vinigret",
+            pos = "noun", semanticGroup = "cooking",
             original = "וִינַיְגְרֵט", translation = "винегрет (масляно-уксусная заправка)",
             definition = "תַּחְלִיב חַד שֶׁל שֶׁמֶן וְחוֹמֶץ עִם תַּבְלִינִים לְהַטְבָּלַת עָלִים יְרֻקִּים.",
             definitionNative = "Эмульсия из растительного масла, уксуса и приправ для заправки салата.",
@@ -84,7 +84,7 @@ object WordDataHebrewBatch20 {
          fillInBlankExclusions = listOf(108402L, 108403L)),
         WordEntity(
             id = 108405, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "shliqa",
+            pos = "noun", semanticGroup = "cooking",
             original = "שְׁלִיקָה", translation = "варка-пашот (в едва кипящей жидкости)",
             definition = "בִּשּׁוּל עָדִין שֶׁל מָזוֹן בְּמַיִם רוֹחֲשִׁים סְבִיב שְׁמוֹנִים מַעֲלוֹת בִּלְבַד.",
             definitionNative = "Деликатное приготовление продукта в едва кипящей воде около восьмидесяти градусов.",
@@ -93,7 +93,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108406, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "zgiga",
+            pos = "noun", semanticGroup = "cooking",
             original = "זְגִיגָה", translation = "глазирование (покрытие блестящим соусом)",
             definition = "מְשִׁיחַת שִׁכְבָה מַבְרִיקָה שֶׁל סִירוֹפּ אוֹ רוֹטֶב מָתוֹק עַל הַקִּינּוּחַ.",
             definitionNative = "Покрытие блюда блестящим слоем сиропа, желе или восстановленного соуса.",
@@ -102,7 +102,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108407, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "breizing",
+            pos = "noun", semanticGroup = "cooking",
             original = "בְּרֵיזִינְג", translation = "брезирование (тушение в малом количестве жидкости)",
             definition = "תִּבְשׁוּל אִטִּי שֶׁל בָּשָׂר תַּחַת מִכְסֶה בִּמְעַט נוֹזֵל וִירָקוֹת רֵיחָנִיִּים.",
             definitionNative = "Медленное томление мяса под крышкой в малом количестве ароматной жидкости.",
@@ -111,7 +111,7 @@ object WordDataHebrewBatch20 {
          fillInBlankExclusions = listOf(108414L, 108420L)),
         WordEntity(
             id = 108408, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "marak etsem",
+            pos = "noun", semanticGroup = "cooking",
             original = "מַרַק עֶצֶם", translation = "костный бульон",
             definition = "נוֹזֵל עָשִׁיר וְעָמֹק בְּטַעַם הַמִּתְבַּשֵּׁל שָׁעוֹת רַבּוֹת מֵאֶבָרֵי בָּקָר וִירָקוֹת.",
             definitionNative = "Насыщенная жидкость, полученная длительной варкой говяжьих мослов и овощей.",
@@ -120,7 +120,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108409, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "rotev em",
+            pos = "noun", semanticGroup = "cooking",
             original = "רוֹטֵב אֵם", translation = "материнский соус (base sauce)",
             definition = "תַּעֲרֹבֶת בְּסִיסִית בַּמִּטְבָּח הַצָּרְפָתִי הַמְּשַׁמֶּשֶׁת יְסוֹד לִרְטָבִים נוֹסָפִים.",
             definitionNative = "Базовый французский соус, служащий основой для производных вариантов.",
@@ -129,7 +129,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108410, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "panira",
+            pos = "noun", semanticGroup = "cooking",
             original = "פָּנִירָה", translation = "панировка",
             definition = "צִיפּוּי שֶׁל פֵּרוּרֵי לֶחֶם אוֹ קֶמַח עַל הַמָּזוֹן לְקִבּוּל קְרוּם זָהֹב בַּטִּיגּוּן.",
             definitionNative = "Покрытие из крошек хлеба или муки на продукте перед обжаркой во фритюре.",
@@ -138,7 +138,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108411, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "batsek alim",
+            pos = "noun", semanticGroup = "cooking",
             original = "בָּצֵק עָלִים", translation = "слоёное тесто",
             definition = "מַאֲפֶה מֵאוֹת שִׁכְבוֹת דַּקִּיקוֹת שֶׁל קֶמַח עִם חֶמְאָה הַמּוּפְרָדוֹת בָּאֲפִיָּה.",
             definitionNative = "Нежное тесто из тонких пластов с прослойками сливочного масла.",
@@ -147,7 +147,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108412, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "makhmasa",
+            pos = "noun", semanticGroup = "cooking",
             original = "מַחְמָצָה", translation = "закваска для хлеба",
             definition = "עִיסַּת קֶמַח וּמַיִם חַיָּה עִם שְׁמָרִים פְּרָאִיִים שֶׁמַּתְפִּיחָה לֶחֶם בְּלִי שְׁמָרִים.",
             definitionNative = "Живая культура диких дрожжей и бактерий для подъёма хлебного теста.",
@@ -156,7 +156,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108413, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "pastrami",
+            pos = "noun", semanticGroup = "cooking",
             original = "פַּסְטְרִימִי", translation = "пастрами (вяленая копчёная говядина)",
             definition = "בְּשַׂר בָּקָר מָלוּחַ וּמְעֻשָּׁן עִם קְרוּם פִּלְפֵּל וְכֻסְבָּרָה — מָנָה יְהוּדִית-נְיוּ יוֹרְקִית.",
             definitionNative = "Солёная копчёная говядина с острой пряной коркой из перца и кориандра.",
@@ -165,7 +165,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108414, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "so-vi",
+            pos = "noun", semanticGroup = "cooking",
             original = "סוֹ-וִי", translation = "су-вид (готовка в вакуумном пакете)",
             definition = "בִּשּׁוּל בְּשַׂקִּית וָקוּם בְּטֶמְפֶּרָטוּרָה נְמוּכָה וּמְדֻיֶּקֶת לְמֶשֶׁךְ שָׁעוֹת אֲרֻכּוֹת.",
             definitionNative = "Приготовление в герметичном пакете при точной низкой температуре в воде.",
@@ -174,7 +174,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108415, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "zaafran",
+            pos = "noun", semanticGroup = "cooking",
             original = "זָעְפְּרָן", translation = "шафран",
             definition = "הַתַּבְלִין הַיָּקָר בָּעוֹלָם, חוּטִים אֲדֻמִּים-כְּתֻמִּים מִתּוֹךְ פֶּרַח כַּרְכֹּם.",
             definitionNative = "Дорогая красно-оранжевая пряность из рылец цветка крокуса.",
@@ -183,7 +183,7 @@ object WordDataHebrewBatch20 {
          fillInBlankExclusions = listOf(108416L)),
         WordEntity(
             id = 108416, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "shalot",
+            pos = "noun", semanticGroup = "cooking",
             original = "שָׁלוֹט", translation = "шалот (лук-шалот)",
             definition = "בָּצָל קָטָן וּמֻאֳרָךְ בְּטַעַם עָדִין וּמָתוֹק, מַתְאִים לִרְטָבִים צָרְפַתִיִּים.",
             definitionNative = "Сладкая луковица с продолговатой головкой и тонким мягким ароматом.",
@@ -192,7 +192,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108417, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "emulsiya",
+            pos = "noun", semanticGroup = "cooking",
             original = "אֶמוּלְסִיָּה", translation = "эмульсия",
             definition = "תַּעֲרֹבֶת יַצִּיבָה שֶׁל שְׁנֵי נוֹזְלִים שֶׁלֹּא מִתְעָרְבִים, כְּמוֹ שֶׁמֶן וּמַיִם בְּמַיוֹנֵז.",
             definitionNative = "Устойчивая смесь двух несмешивающихся жидкостей вроде масла и воды.",
@@ -201,7 +201,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108418, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "reduktsiya",
+            pos = "noun", semanticGroup = "cooking",
             original = "רֶדוּקְצְיָה", translation = "редукция (упаривание соуса)",
             definition = "אִדּוּי אִטִּי שֶׁל נוֹזֵל עַל הָאֵשׁ עַד שֶׁהַטַּעַם מִתְרַכֵּז וְהַמִּרְקָם נַעֲשֶׂה סָמִיךְ.",
             definitionNative = "Уваривание жидкости до концентрации вкуса и густой консистенции.",
@@ -210,7 +210,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108419, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "blanching",
+            pos = "noun", semanticGroup = "cooking",
             original = "בְּלַנְשִׁינְג", translation = "бланширование",
             definition = "טְבִילָה קְצָרָה שֶׁל יְרָקוֹת בְּמַיִם רוֹתְחִים וּמִיָּד אַחַר כָּךְ בְּקַעֲרַת קֶרַח.",
             definitionNative = "Кратковременное погружение продукта в кипяток с последующим охлаждением во льду.",
@@ -219,7 +219,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108420, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "konfi",
+            pos = "noun", semanticGroup = "cooking",
             original = "קוֹנְפִי", translation = "конфи (медленное томление в жире)",
             definition = "תִּבְשׁוּל אִטִּי שֶׁל רֶגֶל בַּרְוָז אוֹ אַוָּז טָבוּלָה כֻּלָּהּ בְּשׁוּמַן עַצְמָהּ.",
             definitionNative = "Медленное томление мяса в собственном жире при низкой температуре.",
@@ -228,7 +228,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108421, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "plating",
+            pos = "noun", semanticGroup = "cooking",
             original = "פְּלֵיטִינְג", translation = "сервировка блюда (plating)",
             definition = "אֳמָנוּת סִידּוּר הָאֹכֶל עַל הַצַּלַּחַת בְּצוּרָה יָפָה לְפִי כְּלָלֵי עִיצּוּב מִקְצוֹעִיִּים.",
             definitionNative = "Искусство эстетичного расположения еды на тарелке в дорогом ресторане.",
@@ -237,7 +237,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108422, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "gastronomiya",
+            pos = "noun", semanticGroup = "cooking",
             original = "גַּסְטְרוֹנוֹמִיָּה", translation = "гастрономия",
             definition = "אֳמָנוּת וּמַדָּע שֶׁל אֳכָלִים מְשׁוּבָּחִים, מֵהַהֲכָנָה וְעַד הַהֲנָאָה בַּפֶּה.",
             definitionNative = "Искусство и наука приготовления и наслаждения изысканной пищей.",
@@ -246,7 +246,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108423, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "mayar",
+            pos = "noun", semanticGroup = "cooking",
             original = "מֵיאָרְ", translation = "реакция Майяра (потемнение при жарке)",
             definition = "תְּגוּבָה כִּימִית בֵּין חֶלְבּוֹנִים וּסְכָּרִים בְּחוֹם גָּבוֹהַּ שֶׁיּוֹצֶרֶת קְרוּם זָהֹב וְטָעִים.",
             definitionNative = "Химическое потемнение белков и сахаров при сильном нагреве.",
@@ -255,7 +255,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108424, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "brunuaz",
+            pos = "noun", semanticGroup = "cooking",
             original = "בְּרוּנוֹאָז", translation = "брюнуаз (мелкая кубическая нарезка)",
             definition = "חִיתּוּךְ צָרְפַתִי שֶׁל יְרָקוֹת לְקוּבִיּוֹת זְעִירוֹת בְּגֹדֶל שְׁנֵי מ\"מ בִּלְבַד.",
             definitionNative = "Очень мелкая кубическая нарезка овощей размером два миллиметра.",
@@ -264,7 +264,7 @@ object WordDataHebrewBatch20 {
         ),
         WordEntity(
             id = 108425, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cooking", transliteration = "teruar",
+            pos = "noun", semanticGroup = "cooking",
             original = "טֶרוּאָר", translation = "терруар (влияние места на продукт)",
             definition = "צֵירוּף יִחוּדִי שֶׁל אַקְלִים, אֲדָמָה וּמָסוֹרֶת מְקוֹמִית שֶׁמְּעַצֵּב טַעַם יַיִן אוֹ גְבִינָה.",
             definitionNative = "Совокупность природных условий и традиций, формирующих вкус продукта.",

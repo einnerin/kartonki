@@ -55,7 +55,7 @@ object WordDataHebrewDataEngL2 {
         // ── data_sql_basic (5) — базовые SQL-операции ──
         WordEntity(
             id = 177501, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_sql_basic", transliteration = "she'ilta",
+            pos = "noun", semanticGroup = "data_sql_basic",
             original = "שְׁאִילְתָּה", translation = "запрос (SQL query)",
             definition = "פְּקֻדָּה כְּתוּבָה בְּשָׂפַת SQL שֶׁשּׁוֹלֶפֶת אוֹ מְעַדְכֶּנֶת שׁוּרוֹת בְּטַבְלָה.",
             definitionNative = "Команда на языке SQL — достаёт или меняет строки в таблице.",
@@ -64,7 +64,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177502L, 177503L, 177504L, 177505L)),
         WordEntity(
             id = 177502, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_sql_basic", transliteration = "join",
+            pos = "noun", semanticGroup = "data_sql_basic",
             original = "ג׳וֹיְן", translation = "джойн (объединение таблиц)",
             definition = "פְּעֻלָּה שֶׁמְּחַבֶּרֶת שְׁתֵּי טַבְלָאוֹת לְפִי עַמּוּדָה מְשֻׁתֶּפֶת — לְקַבֵּל שׁוּרָה רְחָבָה אַחַת.",
             definitionNative = "Действие, объединяющее две таблицы по общей колонке — получается одна широкая строка.",
@@ -73,7 +73,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177501L, 177503L, 177504L, 177505L)),
         WordEntity(
             id = 177503, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_sql_basic", transliteration = "tnay sinun",
+            pos = "noun", semanticGroup = "data_sql_basic",
             original = "תְּנַאי סִינּוּן", translation = "условие фильтра (WHERE)",
             definition = "כְּלָל שֶׁמַּשְׁאִיר רַק שׁוּרוֹת שֶׁעוֹמְדוֹת בּוֹ — לְמָשָׁל סְכוּם גָּדוֹל מֵאֶלֶף.",
             definitionNative = "Правило, оставляющее только подходящие строки — например, сумма больше тысячи.",
@@ -82,7 +82,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177501L, 177502L, 177504L, 177505L)),
         WordEntity(
             id = 177504, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_sql_basic", transliteration = "kibutz",
+            pos = "noun", semanticGroup = "data_sql_basic",
             original = "קִבּוּץ", translation = "группировка (GROUP BY)",
             definition = "אִחוּד שׁוּרוֹת לְפִי עֵרֶךְ מְשֻׁתָּף בְּעַמּוּדָה — כְּדֵי לִסְכֹּם, לִסְפֹּר אוֹ לְמַצֵּעַ.",
             definitionNative = "Объединение строк по общему значению в колонке — чтобы суммировать, считать или усреднять.",
@@ -91,7 +91,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177501L, 177502L, 177503L, 177505L)),
         WordEntity(
             id = 177505, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_sql_basic", transliteration = "miyun",
+            pos = "noun", semanticGroup = "data_sql_basic",
             original = "מִיּוּן", translation = "сортировка (ORDER BY)",
             definition = "סִדּוּר תּוֹצָאוֹת לְפִי עַמּוּדָה — מֵהַקָּטָן לַגָּדוֹל, מֵהַחָדָשׁ לַיָּשָׁן וְכוּ׳.",
             definitionNative = "Упорядочивание результатов по колонке — от меньшего к большему, от свежего к старому и т.п.",
@@ -102,7 +102,7 @@ object WordDataHebrewDataEngL2 {
         // ── data_excel (5) — работа в Excel ──
         WordEntity(
             id = 177506, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_excel", transliteration = "formula",
+            pos = "noun", semanticGroup = "data_excel",
             original = "פוֹרְמוּלָה", translation = "формула",
             definition = "בִּטּוּי שֶׁמְּחַשֵּׁב עֵרֶךְ בְּתָא עַל סְמַךְ תָּאִים אֲחֵרִים — מַתְחִיל בְּסִימָן שָׁוֶה.",
             definitionNative = "Выражение, считающее значение в ячейке через другие ячейки — начинается со знака равно.",
@@ -111,7 +111,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177507L, 177508L, 177509L, 177510L)),
         WordEntity(
             id = 177507, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_excel", transliteration = "tavlat tsir",
+            pos = "noun", semanticGroup = "data_excel",
             original = "טַבְלַת צִיר", translation = "сводная таблица (pivot)",
             definition = "כְּלִי בְּאֶקְסֶל שֶׁמְּסַכֵּם נְתוּנִים לְפִי שׁוּרוֹת וְעַמּוּדוֹת לְפִי בְּחִירַת הַמִּשְׁתַּמֵּשׁ.",
             definitionNative = "Инструмент в Excel — сводит данные по строкам и столбцам по выбору пользователя.",
@@ -120,7 +120,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177506L, 177508L, 177509L, 177510L)),
         WordEntity(
             id = 177508, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_excel", transliteration = "makro",
+            pos = "noun", semanticGroup = "data_excel",
             original = "מָקְרוֹ", translation = "макрос",
             definition = "סֵדֶר פְּעֻלּוֹת מֻקְלָט שֶׁאֶקְסֶל מַפְעִיל מֵחָדָשׁ בְּלַחִיצַת כַּפְתּוֹר אַחַת — חוֹסֵךְ עֲבוֹדָה יָדָנִית.",
             definitionNative = "Записанная последовательность действий — Excel повторяет её по одному клику, экономя ручной труд.",
@@ -129,7 +129,7 @@ object WordDataHebrewDataEngL2 {
         ),
         WordEntity(
             id = 177509, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_excel", transliteration = "gilayon",
+            pos = "noun", semanticGroup = "data_excel",
             original = "גִּלָּיוֹן", translation = "лист",
             definition = "דַּף נִפְרָד בְּתוֹךְ קֹבֶץ אֶקְסֶל אֶחָד — אֶפְשָׁר לִפְתֹּחַ כַּמָּה דַּפִּים בְּלַשׁוֹנִיּוֹת לְמַטָּה.",
             definitionNative = "Отдельная страница внутри одного файла Excel — несколько листов открываются вкладками снизу.",
@@ -139,7 +139,7 @@ object WordDataHebrewDataEngL2 {
         ),
         WordEntity(
             id = 177510, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_excel", transliteration = "tvakh",
+            pos = "noun", semanticGroup = "data_excel",
             original = "טְוָוח", translation = "диапазон ячеек",
             definition = "קְבוּצַת תָּאִים רְצוּפָה עַל הַגִּלָּיוֹן — לְמָשָׁל מִ-A1 עַד C20 — שֶׁפּוֹרְמוּלָה פּוֹעֶלֶת עָלֶיהָ.",
             definitionNative = "Сплошная группа ячеек на листе — например A1 до C20 — над которой работает формула.",
@@ -150,7 +150,7 @@ object WordDataHebrewDataEngL2 {
         // ── data_bi (5) — BI-дашборды ──
         WordEntity(
             id = 177511, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_bi", transliteration = "lukhot bakara",
+            pos = "noun", semanticGroup = "data_bi",
             original = "לוּחַ בַּקָּרָה", translation = "панель управления (BI)",
             definition = "מָסָךְ אֶחָד שֶׁמְּרַכֵּז גְּרָפִים וּמַסְפָּרִים עִקָּרִיִּים עַל הָעֵסֶק.",
             definitionNative = "Один экран — собирает главные графики и цифры о работе бизнеса.",
@@ -159,7 +159,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177512L, 177513L, 177514L, 177515L)),
         WordEntity(
             id = 177512, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_bi", transliteration = "vidzhet",
+            pos = "noun", semanticGroup = "data_bi",
             original = "וִידְגֶ׳ט", translation = "виджет",
             definition = "אֵיבָר חָזוּתִי בּוֹדֵד עַל הַמָּסָךְ — גְּרָף, מַחוֹג אוֹ מִסְפָּר גָּדוֹל — שֶׁמַּצִּיג מֵידָע אֶחָד.",
             definitionNative = "Отдельный визуальный элемент на экране — график, шкала или большое число — показывает одну метрику.",
@@ -168,7 +168,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177511L, 177513L, 177514L, 177515L)),
         WordEntity(
             id = 177513, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_bi", transliteration = "slayser",
+            pos = "noun", semanticGroup = "data_bi",
             original = "סְלַייסֶר", translation = "slicer (фильтр-кнопка)",
             definition = "כַּפְתּוֹר אִינְטֶרְאַקְטִיבִי עַל דַּשְׁבּוֹרְד שֶׁמְּצַמְצֵם בְּלַחִיצָה אֶת כָּל הַגְּרָפִים לְעֵרֶךְ אֶחָד.",
             definitionNative = "Интерактивная кнопка на дашборде — нажатие сужает все графики до одного значения.",
@@ -177,7 +177,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177511L, 177512L, 177514L, 177515L)),
         WordEntity(
             id = 177514, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_bi", transliteration = "dril-daun",
+            pos = "noun", semanticGroup = "data_bi",
             original = "דְּרִיל-דָּאוּן", translation = "drill-down (углубление)",
             definition = "מַעֲבָר בִּלְחִיצָה מִסַּךְ-הַכֹּל גָּבוֹהַ אֶל הַפֵּרוּט הַפְּנִימִי שֶׁעוֹמֵד מֵאָחוֹר.",
             definitionNative = "Клик-переход с верхнего итога вглубь — к подробностям, лежащим под ним.",
@@ -186,7 +186,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177511L, 177512L, 177513L, 177515L)),
         WordEntity(
             id = 177515, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_bi", transliteration = "metrika",
+            pos = "noun", semanticGroup = "data_bi",
             original = "מֶטְרִיקָה", translation = "метрика (показатель)",
             definition = "מִסְפָּר אֶחָד שֶׁמּוֹדֵד הֵבֵט מָסוּיָּם בָּעֵסֶק — הַכְנָסָה, אָחוּז עֲזִיבָה אוֹ זְמַן תְּגוּבָה.",
             definitionNative = "Одно число, измеряющее аспект бизнеса — выручка, процент оттока или время отклика.",
@@ -197,7 +197,7 @@ object WordDataHebrewDataEngL2 {
         // ── data_scripts (5) — скрипты для аналитики ──
         WordEntity(
             id = 177516, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_scripts", transliteration = "skript paython",
+            pos = "noun", semanticGroup = "data_scripts",
             original = "סְקְרִיפְּט פַּייתוֹן", translation = "Python-скрипт",
             definition = "קֹבֶץ קוֹד קָצָר בְּשָׂפַת פַּייתוֹן שֶׁמְּבַצֵּעַ מְשִׂימָה אַחַת — לְמָשָׁל מַעֲבִיר מֵידָע מִקֹּבֶץ אֶחָד לַשֵּׁנִי.",
             definitionNative = "Короткий файл кода на Python — выполняет одну задачу, например, переносит данные из одного файла в другой.",
@@ -206,7 +206,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177517L, 177518L, 177519L, 177520L)),
         WordEntity(
             id = 177517, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_scripts", transliteration = "pandas",
+            pos = "noun", semanticGroup = "data_scripts",
             original = "פַּנְדָּס", translation = "pandas (библиотека)",
             definition = "סִפְרִיָּה פּוֹפּוּלָרִית בְּפַּייתוֹן לַעֲבוֹדָה עִם טַבְלָאוֹת — קוֹרֵאת, מְסַנֶּנֶת וּמְנַתַּחַת בְּקַלּוּת.",
             definitionNative = "Популярная библиотека Python для работы с таблицами — читает, фильтрует и анализирует легко.",
@@ -215,7 +215,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177516L, 177518L, 177519L, 177520L)),
         WordEntity(
             id = 177518, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_scripts", transliteration = "si-es-vi",
+            pos = "noun", semanticGroup = "data_scripts",
             original = "סִי-אֶס-וִי", translation = "CSV (формат)",
             definition = "פוֹרְמָט קֹבֶץ פָּשׁוּט שֶׁבּוֹ כָּל שׁוּרָה הִיא רְשׁוּמָה וְהָעַמּוּדוֹת מֻפְרָדוֹת בְּפְסִיקִים.",
             definitionNative = "Простой формат файла — каждая строка это запись, а колонки разделены запятыми.",
@@ -224,7 +224,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177516L, 177517L, 177519L, 177520L)),
         WordEntity(
             id = 177519, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_scripts", transliteration = "json",
+            pos = "noun", semanticGroup = "data_scripts",
             original = "ג׳וֹסוֹן", translation = "JSON (формат)",
             definition = "פוֹרְמָט מֻבְנֶה לְמֵידָע מְקֻנַּן שֶׁמַּעֲבִירִים בֵּין שֵׁרוּתִים — שָׂדוֹת, רְשִׁימוֹת וְאוֹבְּיֶיקְטִים מְקֻנָּנִים.",
             definitionNative = "Структурированный формат для вложенных данных — поля, списки и вложенные объекты.",
@@ -233,7 +233,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177516L, 177517L, 177518L, 177520L)),
         WordEntity(
             id = 177520, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_scripts", transliteration = "log",
+            pos = "noun", semanticGroup = "data_scripts",
             original = "לוֹג", translation = "лог-файл (журнал)",
             definition = "תֵּעוּד אוֹטוֹמָטִי שֶׁל כָּל מָה שֶׁקּוֹרֶה לַתָּכְנִית — שְׁגִיאוֹת, אַזְהָרוֹת וְאֵירוּעִים רְגִילִים.",
             definitionNative = "Автоматическая запись всего, что происходит с программой — ошибки, предупреждения и обычные события.",
@@ -244,7 +244,7 @@ object WordDataHebrewDataEngL2 {
         // ── data_sources (5) — источники данных ──
         WordEntity(
             id = 177521, setId = 1775, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "data_sources", transliteration = "mkor netunim",
+            pos = "noun", semanticGroup = "data_sources",
             original = "מְקוֹר נְתוּנִים", translation = "источник данных",
             definition = "מַעֲרֶכֶת חִיצוֹנִית שֶׁמִּמֶּנָּה הַדּוּחַ אוֹ הַדַּשְׁבּוֹרְד שׁוֹאֵב מֵידָע — אַפְּלִיקַצְיָה, גִּלָּיוֹן אוֹ שֵׁרוּת.",
             definitionNative = "Внешняя система, из которой отчёт или дашборд берёт информацию — приложение, лист или сервис.",
@@ -254,7 +254,7 @@ object WordDataHebrewDataEngL2 {
         ),
         WordEntity(
             id = 177522, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_sources", transliteration = "kriat API",
+            pos = "noun", semanticGroup = "data_sources",
             original = "קְרִיאַת API", translation = "вызов API",
             definition = "פְּנִיָּה תֻּכְנָתִית לְשֵׁרוּת חִיצוֹנִי שֶׁמַּחֲזִיר מֵידָע מְעֻדְכָּן — לְפִי כְּתֹבֶת וְהַרְשָׁאָה.",
             definitionNative = "Программное обращение к внешнему сервису — возвращает свежие данные по адресу и с авторизацией.",
@@ -263,7 +263,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177521L, 177523L, 177524L, 177525L)),
         WordEntity(
             id = 177523, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_sources", transliteration = "khibur lemasad",
+            pos = "noun", semanticGroup = "data_sources",
             original = "חִבּוּר לְמַסָּד", translation = "подключение к БД",
             definition = "עֲרוּץ פָּתוּחַ בֵּין הַסְּקְרִיפְּט לַמַּסָּד — דֶּרֶךְ כְּתֹבֶת, מִשְׁתַּמֵּשׁ וְסִיסְמָה — שֶׁדַּרְכּוֹ עוֹבְרוֹת שְׁאֵלוֹת.",
             definitionNative = "Открытый канал между скриптом и базой — через адрес, логин и пароль — по нему ходят запросы.",
@@ -272,7 +272,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177521L, 177522L, 177524L, 177525L)),
         WordEntity(
             id = 177524, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_sources", transliteration = "eksport",
+            pos = "noun", semanticGroup = "data_sources",
             original = "אֶקְסְפּוֹרְט", translation = "экспорт",
             definition = "הוֹצָאַת תּוֹצָאוֹת מִתּוֹךְ הַמַּעֲרֶכֶת לְפוֹרְמָט חִיצוֹנִי — לְשִׁתּוּף עִם אֲחֵרִים.",
             definitionNative = "Вынос результатов из системы во внешний формат — для передачи другим.",
@@ -281,7 +281,7 @@ object WordDataHebrewDataEngL2 {
          fillInBlankExclusions = listOf(177521L, 177522L, 177523L, 177525L)),
         WordEntity(
             id = 177525, setId = 1775, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "data_sources", transliteration = "integratsya",
+            pos = "noun", semanticGroup = "data_sources",
             original = "אִינְטֶגְרַצְיָה", translation = "интеграция",
             definition = "חִבּוּר מָתְמִיד בֵּין שְׁתֵּי מַעֲרָכוֹת שֶׁמַּחֲלִיפוֹת מֵידָע אוֹטוֹמָטִית — בְּלִי הַעֲבָרָה יָדָנִית.",
             definitionNative = "Постоянная связка двух систем, обменивающихся данными автоматически — без ручной передачи.",

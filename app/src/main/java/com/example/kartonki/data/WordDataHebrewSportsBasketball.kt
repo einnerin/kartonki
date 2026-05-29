@@ -81,7 +81,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Иерусалимский баскетбольный клуб — многократный чемпион Израиля и обладатель европейских трофеев.",
             example = "הַפּוֹעֵל יְרוּשָׁלַיִם נִצְּחָה אֶת מַכַּבִּי בַּדֶּרְבִּי הַחָשׁוּב.",
             exampleNative = "הַפּוֹעֵל יְרוּשָׁלַיִם обыграл Маккаби в важном дерби.",
-            transliteration = "hа-поэль йерушалаим",
             pos = "phrase", semanticGroup = "sport_basketball_clubs", fillInBlankExclusions = listOf(191502L, 191505L)),
 
         WordEntity(id = 191502, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -91,7 +90,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Высший дивизион профессионального баскетбола в Израиле — двенадцать клубов.",
             example = "הַקְּבוּצָה עָלְתָה לְלִיגַת הָעַל בְּכַדּוּרְסַל לְאַחַר עוֹנָה מַרְשִׁימָה.",
             exampleNative = "Клуб поднялся в לִיגַת הָעַל בְּכַדּוּרְסַל после впечатляющего сезона.",
-            transliteration = "лигат hа-аль бэ-кадурсаль",
             pos = "phrase", semanticGroup = "sport_basketball_clubs", fillInBlankExclusions = listOf(191501L, 191505L)),
 
         WordEntity(id = 191503, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -101,7 +99,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Главный клубный турнир Европы по баскетболу — Маккаби Тель-Авив выигрывал его шесть раз.",
             example = "הַפְּרוֹיֶקְט בַּיוּרוֹלִיגָה נִכְשַׁל אַחֲרֵי הֶפְסֵד בַּשְּׁמִינִית.",
             exampleNative = "Поход в יוּרוֹלִיגָה закончился поражением в одной восьмой.",
-            transliteration = "юролига",
             pos = "noun", semanticGroup = "sport_basketball_clubs", fillInBlankExclusions = listOf(191504L)),
 
         WordEntity(id = 191504, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -111,7 +108,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Главная профессиональная лига США — мечта любого баскетболиста в мире.",
             example = "הַשַּׂחְקָן הַיִּשְׂרְאֵלִי חֲתַם חוֹזֶה בַּNBA בְּגִיל עֶשְׂרִים וּשְׁתַּיִם.",
             exampleNative = "Израильский игрок подписал контракт в NBA в двадцать два года.",
-            transliteration = "ни-би-эй",
             pos = "noun", semanticGroup = "sport_basketball_clubs", fillInBlankExclusions = listOf(191503L)),
 
         WordEntity(id = 191505, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -121,7 +117,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Полуфинал и финал Евролиги — четыре команды борются за кубок в один уикенд.",
             example = "מַכַּבִּי הִגִּיעָה לַפַיְנָל פוֹר אַחֲרֵי שֶׁנִּצְּחָה בַּחֲצִי גְּמָר.",
             exampleNative = "Маккаби вышел в פַיְנָל פוֹר после победы в плей-офф.",
-            transliteration = "фэйнал фор",
             pos = "phrase", semanticGroup = "sport_basketball_clubs", fillInBlankExclusions = listOf(191501L, 191502L)),
 
         // ── Group: sport_basketball_positions (5 words) ───────────────────────
@@ -133,7 +128,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Игрок, который ведёт атаку — разводит мяч и задаёт темп игры команды.",
             example = "הָרַכָּז הַצָּעִיר חִלֵּק שְׁתֵּים־עֶשְׂרֵה אַסִיסְטִים בָּעֶרֶב.",
             exampleNative = "Молодой רַכָּז отдал двенадцать передач за вечер.",
-            transliteration = "раказ",
             pos = "noun", semanticGroup = "sport_basketball_positions", fillInBlankExclusions = listOf(191508L, 191509L)),
 
         WordEntity(id = 191507, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -143,7 +137,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Защитник задней линии, специализируется на дальних бросках и наборе очков.",
             example = "שׁוֹמֵר זוֹרֵק הָאוֹרֵחַ קָלַע שֶׁבַע זְרִיקוֹת שָׁלוֹשׁ בַּמִּשְׂחָק.",
             exampleNative = "Гостевой שׁוֹמֵר זוֹרֵק забил семь трёхочковых за матч.",
-            transliteration = "шомэр зорэк",
             pos = "phrase", semanticGroup = "sport_basketball_positions", fillInBlankExclusions = listOf(191510L)),
 
         WordEntity(id = 191508, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -153,7 +146,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Игрок на краю пятёрки — сочетает силовую игру под кольцом с броском из-за дуги.",
             example = "הַכָּנָף הַגָּבוֹהַּ אָסַף שְׁמוֹנֶה רִיבָּאוּנְדִים בַּמַּחֲצִית הָרִאשׁוֹנָה.",
             exampleNative = "Высокий כָּנָף собрал восемь подборов в первой половине.",
-            transliteration = "канаф",
             pos = "noun", semanticGroup = "sport_basketball_positions", fillInBlankExclusions = listOf(191506L, 191509L)),
 
         WordEntity(id = 191509, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -163,7 +155,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Самый высокий игрок команды — играет под кольцом и отвечает за подборы и блоки.",
             example = "הַמֶּרְכָּז שֶׁל הַקְּבוּצָה גָּבוֹהַּ שְׁנֵי מֶטֶר וְעֶשֶׂר.",
             exampleNative = "מֶרְכָּז команды ростом два метра десять.",
-            transliteration = "мэрказ",
             pos = "noun", semanticGroup = "sport_basketball_positions"),
 
         WordEntity(id = 191510, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -173,7 +164,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Пятёрка игроков, выходящих на площадку в начале матча — сильнейший состав команды.",
             example = "הַחֲמִישִׁיָּה הַפּוֹתַחַת הִתְחִילָה אֶת הָעוֹנָה בְּהַרְכֵּב מוּכָּר.",
             exampleNative = "חֲמִישִׁיָּה פּוֹתַחַת начала сезон в привычном составе.",
-            transliteration = "хамишия потахат",
             pos = "phrase", semanticGroup = "sport_basketball_positions",
             isFillInBlankSafe = false),
 
@@ -186,7 +176,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Действие, когда игрок отправляет мяч в направлении кольца, чтобы набрать очки.",
             example = "הַזְּרִיקָה הָאַחֲרוֹנָה שֶׁלּוֹ פָּגְעָה בַּחִישּׁוּק וְלֹא נִכְנְסָה.",
             exampleNative = "Его последняя זְרִיקָה ударилась о дужку и не попала.",
-            transliteration = "зрика",
             pos = "noun", semanticGroup = "sport_basketball_play"),
 
         WordEntity(id = 191512, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -196,7 +185,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Бросок из-за линии в шесть метров двадцать пять — приносит команде три очка.",
             example = "בְּדַקָּה הָאַחֲרוֹנָה הוּא כָּבַשׁ זְרִיקַת שָׁלוֹשׁ מַכְרִיעָה.",
             exampleNative = "На последней минуте он забил решающую זְרִיקַת שָׁלוֹשׁ.",
-            transliteration = "зрикат шалош",
             pos = "phrase", semanticGroup = "sport_basketball_play"),
 
         WordEntity(id = 191513, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -206,7 +194,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Свободный бросок с линии в семь с половиной метров — назначается после фола соперника.",
             example = "הוּא הֶחְמִיץ אֶת שְׁתֵּי זְרִיקוֹת הָעוֹנְשִׁין בְּסוֹף הָרֵבָע.",
             exampleNative = "Он смазал обе זְרִיקַת עוֹנְשִׁין в концовке четверти.",
-            transliteration = "зрикат оншин",
             pos = "phrase", semanticGroup = "sport_basketball_play",
             isFillInBlankSafe = false),
 
@@ -217,7 +204,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Бросок сверху, когда игрок выпрыгивает и закладывает мяч прямо в кольцо.",
             example = "הוּא סָגַר אֶת הָרֵבָע בְּהַטְבָּעָה מְרַשֶּׁמֶת מֵעַל הַיָּרִיב.",
             exampleNative = "Он закрыл четверть эффектной הַטְבָּעָה над защитником.",
-            transliteration = "hатбаа",
             pos = "noun", semanticGroup = "sport_basketball_play", fillInBlankExclusions = listOf(191511L, 191515L)),
 
         WordEntity(id = 191515, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -227,7 +213,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Удары мячом о пол во время движения — единственный законный способ идти с мячом.",
             example = "הַכַּדְרוּר הַמָּהִיר שֶׁלּוֹ עָקַף שְׁנֵי שׁוֹמְרִים בַּדֶּרֶךְ לַסַּל.",
             exampleNative = "Его быстрый כַּדְרוּר прошёл двух защитников по пути к кольцу.",
-            transliteration = "кадрур",
             pos = "noun", semanticGroup = "sport_basketball_play", fillInBlankExclusions = listOf(191511L, 191514L)),
 
         // ── Group: sport_basketball_defense (5 words) ─────────────────────────
@@ -239,7 +224,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Действие, когда защитник в прыжке отбивает летящий мяч соперника и срывает атаку.",
             example = "הַחֲסִימָה שֶׁל הַמֶּרְכָּז גָּרְמָה לְקָהָל לָקוּם עַל הָרַגְלַיִם.",
             exampleNative = "חֲסִימָה центрового подняла трибуны на ноги.",
-            transliteration = "хасима",
             pos = "noun", semanticGroup = "sport_basketball_defense", fillInBlankExclusions = listOf(191517L)),
 
         WordEntity(id = 191517, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -249,7 +233,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Отбор мяча у соперника во время передачи или ведения — без нарушения правил.",
             example = "הַחֲטָפָה שֶׁל הַשַּׂחְקָן הַמַּסְמִיךְ הָפְכָה לְהַטְבָּעָה מַהִירָה.",
             exampleNative = "חֲטָפָה разыгрывающего обернулась быстрой הַטְבָּעָה.",
-            transliteration = "хатафа",
             pos = "noun", semanticGroup = "sport_basketball_defense", fillInBlankExclusions = listOf(191516L)),
 
         WordEntity(id = 191518, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -259,7 +242,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Запрещённый контакт защитника с игроком соперника — после пяти таких фолов удаление.",
             example = "הוּא יָצָא מֵהַמִּשְׂחָק עִם חָמֵשׁ עֲבֵרוֹת אִישִׁיוֹת בָּרֵבָע הָאַחֲרוֹן.",
             exampleNative = "Он покинул паркет с пятью עֲבֵרָה אִישִׁית в последней четверти.",
-            transliteration = "авэра ишит",
             pos = "phrase", semanticGroup = "sport_basketball_defense",
             isFillInBlankSafe = false),
 
@@ -270,7 +252,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Фол от толчка или удерживания соперника во время борьбы за позицию под кольцом.",
             example = "הַשּׁוֹפֵט שָׁרַק עֲבֵרַת מַגָּע בְּמַאֲבָק עַל הָרִיבָּאוּנְד.",
             exampleNative = "Судья свистнул עֲבֵרַת מַגָּע при борьбе за подбор.",
-            transliteration = "авэрат мага",
             pos = "phrase", semanticGroup = "sport_basketball_defense", fillInBlankExclusions = listOf(191518L, 191520L)),
 
         WordEntity(id = 191520, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -280,7 +261,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Наказание за неспортивное поведение — спор с арбитром, ругань или затяжка времени.",
             example = "הַמְּאַמֵּן קִבֵּל עֲבֵרָה טֶכְנִית עַל הַצְּעָקוֹת מֵהַסַּפְסָל.",
             exampleNative = "Тренер получил עֲבֵרָה טֶכְנִית за крики со скамейки.",
-            transliteration = "авэра тэхнит",
             pos = "phrase", semanticGroup = "sport_basketball_defense", fillInBlankExclusions = listOf(191518L, 191519L)),
 
         // ── Group: sport_basketball_game (5 words) ────────────────────────────
@@ -292,7 +272,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Один из четырёх равных периодов матча — десять минут в ФИБА и двенадцать в NBA.",
             example = "בַּרֵבַע הַשְּׁלִישִׁי הַקְּבוּצָה צִמְצְמָה אֶת הַפֶּעֵר לִשְׁתֵּי נְקֻדּוֹת.",
             exampleNative = "В третьем רֵבַע команда сократила отставание до двух очков.",
-            transliteration = "рэва",
             pos = "noun", semanticGroup = "sport_basketball_game", fillInBlankExclusions = listOf(191523L, 191525L)),
 
         WordEntity(id = 191522, setId = 1915, languagePair = "he-ru", rarity = "RARE",
@@ -302,7 +281,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Таймер на двадцать четыре секунды, за которые команда обязана бросить по кольцу.",
             example = "שְׁעוֹן הַזְּרִיקָה הִתְקָרֵב לְאֶפֶס וְהוּא נֶאֱלַץ לִזְרוֹק מֵרָחוֹק.",
             exampleNative = "שְׁעוֹן הַזְּרִיקָה подходил к нулю, и пришлось бросать издалека.",
-            transliteration = "шэон hа-зрика",
             pos = "phrase", semanticGroup = "sport_basketball_game", fillInBlankExclusions = listOf(191524L)),
 
         WordEntity(id = 191523, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -312,7 +290,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Пять дополнительных минут к матчу, который закончился вничью — играют до победы.",
             example = "הַמִּשְׂחָק הוּכְרַע רַק בַּהַאֲרָכָה הַשְּׁנִיָּה אַחֲרֵי תֵּיקוּ.",
             exampleNative = "Исход решился только во второй הַאֲרָכָה после ничейного основного времени.",
-            transliteration = "hаараха",
             pos = "noun", semanticGroup = "sport_basketball_game", fillInBlankExclusions = listOf(191521L, 191525L)),
 
         WordEntity(id = 191524, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -322,7 +299,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Короткая пауза по запросу тренера, чтобы дать указания по тактике или сбить ритм соперника.",
             example = "הַמְּאַמֵּן בִּקֵּשׁ פְּסִיקַת זְמַן בְּדַקָּה הָאַחֲרוֹנָה לְפִי תּוֹכְנִית מַהֲלָךְ.",
             exampleNative = "Тренер взял פְּסִיקַת זְמַן на последней минуте, чтобы разобрать комбинацию.",
-            transliteration = "псикат зман",
             pos = "phrase", semanticGroup = "sport_basketball_game", fillInBlankExclusions = listOf(191522L)),
 
         WordEntity(id = 191525, setId = 1915, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -332,7 +308,6 @@ object WordDataHebrewSportsBasketball {
             definitionNative = "Базовая единица счёта в матче — два за обычный бросок и три из-за дуги.",
             example = "הַקְּבוּצָה צָבְרָה תִּשְׁעִים נְקֻדּוֹת וְנִצְּחָה בְּהֶפְרֵשׁ דּוּ־סִפְרָתִי.",
             exampleNative = "Команда набрала девяносто נְקֻדָּה и победила с двузначной разницей.",
-            transliteration = "нэкуда",
             pos = "noun", semanticGroup = "sport_basketball_game",
             isFillInBlankSafe = false),
     )

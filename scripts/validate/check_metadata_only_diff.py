@@ -30,11 +30,21 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='repla
 #   - scripts/validate/generate_fill_in_blank_exclusions.py:
 #       --apply             → adds fillInBlankExclusions = listOf(<ids>)
 #       --flip-safety-flag  → removes isFillInBlankSafe = false
+#   - transliteration removal (he-ru, 2026-05-28): transliteration больше не
+#     используется у иврита. Массовое удаление поля — content-нейтрально
+#     (original/translation/definition/example не трогаются), поэтому маркер
+#     в whitelist. Значение в кавычках допускает экранированные кавычки
+#     (gershayim-акронимы вида du"kh).
 # Both leading-comma and trailing-comma forms are matched so trailing-comma
 # DSL lines don't produce false positives.
 _SAFE_MARKER = re.compile(r',?\s*isFillInBlankSafe\s*=\s*false')
 _EXCL_MARKER = re.compile(r',?\s*fillInBlankExclusions\s*=\s*listOf\([^)]*\)')
-_METADATA_MARKERS = [_SAFE_MARKER, _EXCL_MARKER]
+# transliteration: field only (no comma). Removing a field changes the
+# surrounding comma punctuation differently per layout (own-line, inline-
+# middle, end-of-line, last-arg), so commas are normalized away separately
+# in normalize_line() rather than baked into this marker.
+_TRANSLIT_MARKER = re.compile(r'transliteration\s*=\s*"(?:[^"\\]|\\.)*"')
+_METADATA_MARKERS = [_SAFE_MARKER, _EXCL_MARKER, _TRANSLIT_MARKER]
 
 _DATA_DIR_PREFIX = "app/src/main/java/com/example/kartonki/data/"
 
@@ -88,6 +98,15 @@ def parse_hunks(diff_text: str):
     return hunks
 
 
+def is_comment(line: str) -> bool:
+    """A pure comment line (block `*`, line `//`, or `/* ... */`). Comments are
+    not word content, so adding/removing them is content-neutral. WordEntity
+    field lines never start with these tokens, so filtering them out cannot
+    hide a real field change."""
+    s = line.strip()
+    return s.startswith('//') or s.startswith('*') or s.startswith('/*')
+
+
 def normalize_line(line: str) -> str:
     """Strip any whitelisted metadata marker from a line, then collapse
     whitespace.
@@ -105,7 +124,13 @@ def normalize_line(line: str) -> str:
     """
     for pat in _METADATA_MARKERS:
         line = pat.sub('', line, count=1)
-    return re.sub(r'\s+', ' ', line).strip()
+    line = re.sub(r'\s+', ' ', line).strip()
+    # Field removal leaves dangling comma punctuation that differs by layout.
+    # Commas carry no word content, so collapse the artifacts before comparing:
+    line = re.sub(r',\s*,', ',', line)   # double comma (inline-middle removal)
+    line = re.sub(r'\(\s*,', '(', line)  # leading comma after `(`
+    line = re.sub(r',\s*\)', ')', line)  # trailing comma before `)` (last-arg)
+    return line.strip(', ')              # leading/trailing commas (own/end-of-line)
 
 
 def validate(diff_file: str | None = None) -> int:
@@ -125,6 +150,12 @@ def validate(diff_file: str | None = None) -> int:
         if kt_file.endswith('WordDataVersion.kt'):
             # Bumped by any data commit; version change is required-adjacent,
             # not a content edit. Hook block 2c enforces the bump elsewhere.
+            continue
+        # Drop pure comment lines — content-neutral (e.g. removing a stale
+        # field-description comment when the field itself is removed).
+        removed = [l for l in removed if not is_comment(l)]
+        added = [l for l in added if not is_comment(l)]
+        if not removed and not added:
             continue
         # First try line-by-line comparison (strict). If counts differ, fall
         # back to joined-whitespace-collapsed comparison — this handles the
@@ -159,7 +190,7 @@ def validate(diff_file: str | None = None) -> int:
 
     if violations:
         print("❌ METADATA_ONLY_COMMIT check FAILED: diff touches non-whitelisted fields.")
-        print("   Whitelist: {isFillInBlankSafe, fillInBlankExclusions}. Anything else requires a normal commit.")
+        print("   Whitelist: {isFillInBlankSafe, fillInBlankExclusions, transliteration-removal} + pure comments. Anything else requires a normal commit.")
         for f, msg in violations[:25]:
             print(f"  {f}: {msg}")
         if len(violations) > 25:

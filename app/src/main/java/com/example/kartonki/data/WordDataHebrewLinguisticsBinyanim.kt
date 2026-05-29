@@ -77,7 +77,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Формы глагола по лицу, роду, числу и времени в одной породе: כָּתַבְתִּי, כָּתַבְתָּ, כָּתְבָה.",
             example = "הַתַּלְמִיד שִׁנֵּן אֶת הַנְּטִיָּה הַשְּׁלֵמָה שֶׁל הַפֹּעַל.",
             exampleNative = "Ученик зазубрил полную נְטִיָּה этого глагола.",
-            transliteration = "нэтия",
             pos = "noun", semanticGroup = "lang_morph_basics"),
 
         WordEntity(id = 191102, setId = 1911, languagePair = "he-ru", rarity = "RARE",
@@ -87,7 +86,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Буква или аффикс, что присоединяется к началу слова и меняет смысл, например ה' определённости.",
             example = "הַתְּחִילִּית מ' מַצְבִּיעָה לְעִתִּים עַל שֵׁם פְּעוּלָה.",
             exampleNative = "תְּחִילִּית מ' часто указывает на отглагольное существительное.",
-            transliteration = "тхилит",
             pos = "noun", semanticGroup = "lang_morph_basics", fillInBlankExclusions = listOf(191101L, 191103L, 191104L, 191105L)),
 
         WordEntity(id = 191103, setId = 1911, languagePair = "he-ru", rarity = "RARE",
@@ -97,7 +95,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Аффикс, что добавляется к концу слова и обозначает лицо, род, число или принадлежность.",
             example = "הַסִּיוֹמֶת -וֹת מְצַיֶּנֶת רַבּוֹת בִּשְׁמוֹת עֶצֶם נְקֵבָה.",
             exampleNative = "סִיוֹמֶת -וֹת обозначает множественное число женского рода у существительных.",
-            transliteration = "сиёмэт",
             pos = "noun", semanticGroup = "lang_morph_basics"),
 
         WordEntity(id = 191104, setId = 1911, languagePair = "he-ru", rarity = "RARE",
@@ -107,7 +104,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Связанная морфема, что присоединяется к корню или слову — префикс, инфикс или суффикс.",
             example = "כָּל מוּסְפִּית בַּמִּילָּה תּוֹרֶמֶת מַשְׁמָעוּת דִּקְדּוּקִית קוֹנְקְרֶטִית.",
             exampleNative = "Каждый מוּסְפִּית в слове вносит конкретный грамматический смысл.",
-            transliteration = "мусфит",
             pos = "noun", semanticGroup = "lang_morph_basics", fillInBlankExclusions = listOf(191101L, 191102L, 191103L, 191105L)),
 
         WordEntity(id = 191105, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -117,7 +113,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Короткое неизменяемое слово, что выполняет грамматическую функцию, например אֶת, גַּם, רַק.",
             example = "הַמִּילִּית אֶת מְסַמֶּנֶת מֻשָּׂא יָשִׁיר מְיֻדָּע.",
             exampleNative = "מִילִּית אֶת маркирует определённое прямое дополнение.",
-            transliteration = "милит",
             pos = "noun", semanticGroup = "lang_morph_basics"),
 
         // ── Group: lang_morph_binyanim (7 words) ──────────────────────────────
@@ -129,7 +124,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Базовая порода, что выражает простое действие: כָּתַב, אָמַר, רָץ.",
             example = "רוֹב פְּעָלִים שִׁמּוּשִׁיִּים בָּעִבְרִית שַׁיָּכִים לְבִנְיַן פָּעַל.",
             exampleNative = "Большинство ходовых глаголов иврита относятся к породе פָּעַל.",
-            transliteration = "пааль",
             pos = "noun", semanticGroup = "lang_morph_binyanim", fillInBlankExclusions = listOf(191108L, 191110L)),
 
         WordEntity(id = 191107, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -139,7 +133,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Порода, что выражает пассив или возвратность от פָּעַל: נִכְתַּב, נִפְגַּשׁ.",
             example = "הַסֵּפֶר נִכְתַּב בְּבִנְיַן נִפְעַל — צוּרָה סְבִילָה.",
             exampleNative = "Этот глагол стоит в בִּנְיַן נִפְעַל — страдательная форма.",
-            transliteration = "нифъаль",
             pos = "noun", semanticGroup = "lang_morph_binyanim", fillInBlankExclusions = listOf(191109L, 191111L)),
 
         WordEntity(id = 191108, setId = 1911, languagePair = "he-ru", rarity = "RARE",
@@ -149,7 +142,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Порода, что усиливает или меняет смысл корня: דִּבֵּר, לִמֵּד, סִפֵּר.",
             example = "בִּנְיַן פִּעֵל מַתְאִים לִפְעֻלּוֹת אִינְטֶנְסִיבִיּוֹת אוֹ חֲזָרָתִיּוֹת.",
             exampleNative = "Порода פִּעֵל подходит для интенсивных или многократных действий.",
-            transliteration = "пиэль",
             pos = "noun", semanticGroup = "lang_morph_binyanim", fillInBlankExclusions = listOf(191106L, 191110L)),
 
         WordEntity(id = 191109, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -159,7 +151,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Страдательная порода-пара к активному биньяну: דֻּבַּר, לֻמַּד, סֻפַּר — преимущественно в литературном языке.",
             example = "צוּרוֹת בִּנְיַן פֻּעַל נְדִירוֹת בְּעִבְרִית מְדֻבֶּרֶת.",
             exampleNative = "Формы בִּנְיַן פֻּעַל редки в разговорном иврите.",
-            transliteration = "пуаль",
             pos = "noun", semanticGroup = "lang_morph_binyanim", fillInBlankExclusions = listOf(191107L, 191111L)),
 
         WordEntity(id = 191110, setId = 1911, languagePair = "he-ru", rarity = "RARE",
@@ -169,7 +160,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Порода, что выражает каузатив — заставить кого-то сделать: הִכְתִּיב, הִרְקִיד, הִכְנִיס.",
             example = "הַמּוֹרָה הִשְׁתַּמְּשָׁה בְּבִנְיַן הִפְעִיל כְּדֵי לְהַסְבִּיר אֶת הַגְּרִימָה.",
             exampleNative = "Учительница использовала בִּנְיַן הִפְעִיל, чтобы объяснить каузатив.",
-            transliteration = "hифъиль",
             pos = "noun", semanticGroup = "lang_morph_binyanim", fillInBlankExclusions = listOf(191106L, 191108L)),
 
         WordEntity(id = 191111, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -179,7 +169,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Страдательная порода-пара к הִפְעִיל: הֻכְתַּב, הֻרְקַד, הֻכְנַס.",
             example = "הַתַּלְמִיד הִתְבַּלְבֵּל בֵּין הֻפְעַל לְפֻעַל בַּמִּבְחָן.",
             exampleNative = "Ученик перепутал הֻפְעַל с פֻּעַל на контрольной.",
-            transliteration = "hуфъаль",
             pos = "noun", semanticGroup = "lang_morph_binyanim", fillInBlankExclusions = listOf(191107L, 191109L)),
 
         WordEntity(id = 191112, setId = 1911, languagePair = "he-ru", rarity = "RARE",
@@ -189,7 +178,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Порода, что выражает действие, направленное на себя: הִתְלַבֵּשׁ, הִתְקַלֵּחַ, הִתְפַּלֵּל.",
             example = "בִּנְיַן הִתְפַּעֵל נָפוֹץ בִּפְעֻלּוֹת שֶׁל טִיפּוּל אִישִׁי.",
             exampleNative = "בִּנְיַן הִתְפַּעֵל част в глаголах ухода за собой.",
-            transliteration = "hитпаэль",
             pos = "noun", semanticGroup = "lang_morph_binyanim", fillInBlankExclusions = listOf(191106L, 191107L, 191108L, 191109L, 191110L, 191111L)),
 
         // ── Group: lang_morph_tenses (4 words) ────────────────────────────────
@@ -201,7 +189,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Форма глагола, что выражает действие в момент речи, совпадает с причастием.",
             example = "בְּעִבְרִית צוּרַת הַהוֹוֶה מְשַׁמֶּשֶׁת גַּם כְּשֵׁם תֹּאַר.",
             exampleNative = "В иврите форма הוֹוֶה служит и как причастие, и как прилагательное.",
-            transliteration = "hовэ",
             pos = "noun", semanticGroup = "lang_morph_tenses", fillInBlankExclusions = listOf(191114L, 191116L)),
 
         WordEntity(id = 191114, setId = 1911, languagePair = "he-ru", rarity = "RARE",
@@ -211,7 +198,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Форма глагола, что выражает приказ или просьбу: כְּתֹב, שֵׁב, לֵךְ.",
             example = "בִּלְשׁוֹן הַדִּבּוּר הַצִּוּוּי מוּחְלָף לְעִתִּים בְּעָתִיד.",
             exampleNative = "В разговорной речи צִוּוּי часто заменяется будущим временем.",
-            transliteration = "цивуй",
             pos = "noun", semanticGroup = "lang_morph_tenses"),
 
         WordEntity(id = 191115, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -221,7 +207,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Исходная форма глагола, что начинается с לְ-: לִכְתֹּב, לְדַבֵּר, לְהַסְבִּיר.",
             example = "שֵׁם הַפֹּעַל בָּא לְרֹב אַחֲרֵי פֹּעַל מוֹדָאלִי כְּמוֹ ״רוֹצֶה״.",
             exampleNative = "שֵׁם הַפֹּעַל обычно идёт после модального глагола вроде «хочу».",
-            transliteration = "шэм hа-поаль",
             pos = "phrase", semanticGroup = "lang_morph_tenses"),
 
         WordEntity(id = 191116, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -231,7 +216,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Форма глагола, что описывает деятеля и служит настоящим временем: כּוֹתֵב, מְדַבֵּר.",
             example = "הַבֵּינוֹנִי בָּעִבְרִית נוֹטֶה לְמִין, לְמִסְפָּר וּלְזִכָּרוֹן.",
             exampleNative = "בֵּינוֹנִי в иврите изменяется по роду и числу.",
-            transliteration = "бэйнони",
             pos = "noun", semanticGroup = "lang_morph_tenses", fillInBlankExclusions = listOf(191113L, 191114L)),
 
         // ── Group: lang_morph_weak_roots (4 words) ────────────────────────────
@@ -243,7 +227,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Группа, в которой все три согласные корня сохраняются во всех формах: כָּתַב, שָׁמַר.",
             example = "פְּעָלִים מִגִּזְרַת הַשְּׁלֵמִים נֶחֱשָׁבִים לְקַלִּים בְּלִמּוּד.",
             exampleNative = "Глаголы группы שְׁלֵמִים считаются простыми для изучения.",
-            transliteration = "шлэмим",
             pos = "noun", semanticGroup = "lang_morph_weak_roots", fillInBlankExclusions = listOf(191118L, 191119L, 191120L)),
 
         WordEntity(id = 191118, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -253,7 +236,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Группа, в которой первая согласная корня слабая — נ, י или א — и исчезает в спряжении.",
             example = "הַשֹּׁרֶשׁ נ.פ.ל מִגִּזְרַת נָחֵי פ״א — בְּעָתִיד יִפֹּל.",
             exampleNative = "Корень נ.פ.ל относится к נָחֵי פ״א — в будущем יִפֹּל.",
-            transliteration = "нахэй пэй",
             pos = "phrase", semanticGroup = "lang_morph_weak_roots", fillInBlankExclusions = listOf(191117L, 191119L, 191120L)),
 
         WordEntity(id = 191119, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -263,7 +245,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Группа, в которой средняя буква — ו или י, поэтому корень выглядит двусогласным: קָם, רָץ.",
             example = "פְּעָלִים מִגִּזְרַת נָחֵי ע״ו נִלְמָדִים בְּאוּלְפַּן בֵּית.",
             exampleNative = "Глаголы נָחֵי ע״ו проходят на ульпан-Бет.",
-            transliteration = "нахэй айин-вав",
             pos = "phrase", semanticGroup = "lang_morph_weak_roots", fillInBlankExclusions = listOf(191117L, 191118L, 191120L)),
 
         WordEntity(id = 191120, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -273,7 +254,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Группа, в которой третья согласная была ה или י и исчезает в спряжении: בָּנָה, קָנָה, רָאָה.",
             example = "בְּגִזְרַת נָחֵי ל״ה הַסּוֹף שֶׁל הַפֹּעַל מִתְחַלֵּף בִּנְטִיָּה.",
             exampleNative = "В группе נָחֵי ל״ה конец глагола меняется при спряжении.",
-            transliteration = "нахэй ламед-hэй",
             pos = "phrase", semanticGroup = "lang_morph_weak_roots", fillInBlankExclusions = listOf(191117L, 191118L, 191119L)),
 
         // ── Group: lang_morph_models (5 words) ────────────────────────────────
@@ -285,7 +265,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Слово, что описывает признак существительного и согласуется с ним: גָּדוֹל, יָפֶה, חָכָם.",
             example = "שֵׁם תֹּאַר בָּא תָּמִיד אַחֲרֵי שֵׁם הָעֶצֶם בָּעִבְרִית.",
             exampleNative = "שֵׁם תֹּאַר всегда идёт после существительного в иврите.",
-            transliteration = "шэм тоар",
             pos = "phrase", semanticGroup = "lang_morph_models", fillInBlankExclusions = listOf(191122L, 191124L)),
 
         WordEntity(id = 191122, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -295,7 +274,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Существительное, что обозначает понятие, чувство или качество без физической формы: חֵרוּת, אַהֲבָה, חָכְמָה.",
             example = "ה' הַיְדִיעָה לִפְנֵי שֵׁם מוּפְשָׁט נוֹתֶנֶת לוֹ גָּוֶן כְּלָלִי.",
             exampleNative = "Артикль ה' перед שֵׁם מוּפְשָׁט придаёт ему обобщающий оттенок.",
-            transliteration = "шэм муфшат",
             pos = "phrase", semanticGroup = "lang_morph_models", fillInBlankExclusions = listOf(191121L, 191124L)),
 
         WordEntity(id = 191123, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -305,7 +283,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Сочетание двух существительных, что выражает принадлежность: בֵּית סֵפֶר, מַחְבֶּרֶת הַתַּלְמִיד.",
             example = "בְּצוּרַת סְמִיכוּת הַשֵּׁם הָרִאשׁוֹן מְאַבֵּד ה' הַיְדִיעָה.",
             exampleNative = "В צוּרַת סְמִיכוּת первое слово теряет артикль ה'.",
-            transliteration = "цурат смихут",
             pos = "phrase", semanticGroup = "lang_morph_models", fillInBlankExclusions = listOf(191121L, 191122L, 191124L, 191125L)),
 
         WordEntity(id = 191124, setId = 1911, languagePair = "he-ru", rarity = "EPIC",
@@ -315,7 +292,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Слово, что описывает, как, когда или где совершается действие: מַהֵר, אֶתְמוֹל, כָּאן.",
             example = "תֹּאַר הַפֹּעַל ״מַהֵר״ מְשַׁנֶּה אֶת אֹפֶן הָרִיצָה.",
             exampleNative = "תֹּאַר הַפֹּעַל «מַהֵר» меняет образ действия.",
-            transliteration = "тоар hа-поаль",
             pos = "phrase", semanticGroup = "lang_morph_models", fillInBlankExclusions = listOf(191121L, 191122L)),
 
         WordEntity(id = 191125, setId = 1911, languagePair = "he-ru", rarity = "RARE",
@@ -325,7 +301,6 @@ object WordDataHebrewLinguisticsBinyanim {
             definitionNative = "Слово, что заменяет существительное и указывает на лицо: אֲנִי, אַתָּה, הִיא, אֲנַחְנוּ.",
             example = "בָּעִבְרִית כִּנּוּי גּוּף מוּשְׁמָט לְעִתִּים בְּעָבָר וּבְעָתִיד.",
             exampleNative = "В иврите כִּנּוּי גּוּף часто опускается в прошедшем и будущем.",
-            transliteration = "кинуй гуф",
             pos = "phrase", semanticGroup = "lang_morph_models", fillInBlankExclusions = listOf(191121L, 191122L, 191123L, 191124L)),
     )
 }

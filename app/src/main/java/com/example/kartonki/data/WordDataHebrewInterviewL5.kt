@@ -47,7 +47,7 @@ object WordDataHebrewInterviewL5 {
         // ── interview_subtleties_check (5) — проверка кандидата ──
         WordEntity(
             id = 175401, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_check", transliteration = "berur reka",
+            pos = "noun", semanticGroup = "interview_subtleties_check",
             original = "בֵּרוּר רֶקַע", translation = "проверка биографии (бэкграунд-чек)",
             definition = "תַּהֲלִיךְ שֶׁהַחֶבְרָה בּוֹדֶקֶת אֶת הֶעָבָר שֶׁל מֻעֳמָד לִפְנֵי שֶׁמְּגַיֶּסֶת אוֹתוֹ.",
             definitionNative = "Когда фирма проверяет прошлое кандидата перед тем, как взять на работу.",
@@ -56,7 +56,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175402L, 175403L, 175404L, 175405L)),
         WordEntity(
             id = 175402, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_check", transliteration = "poligraf",
+            pos = "noun", semanticGroup = "interview_subtleties_check",
             original = "פּוֹלִיגְרָף", translation = "полиграф (детектор лжи)",
             definition = "מַכְשִׁיר שֶׁמּוֹדֵד תְּגוּבוֹת הַגּוּף כְּדֵי לִבְדֹּק אִם הַנִּבְדָּק מְשַׁקֵּר בִּשְׁאֵלוֹת.",
             definitionNative = "Прибор измеряет реакции тела — врёт ли проверяемый при ответах.",
@@ -65,7 +65,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175401L, 175403L, 175404L, 175405L)),
         WordEntity(
             id = 175403, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_check", transliteration = "bdikat hamlatsot",
+            pos = "noun", semanticGroup = "interview_subtleties_check",
             original = "בְּדִיקַת הַמְלָצוֹת", translation = "проверка рекомендаций",
             definition = "שִׂיחָה שֶׁל הַמַּעֲסִיק עִם בּוֹסִים קוֹדְמִים שֶׁל הַמֻּעֳמָד לְבֵרוּר אֲמִינוּת.",
             definitionNative = "Звонок работодателя бывшим начальникам кандидата — узнать, можно ли доверять.",
@@ -74,7 +74,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175401L, 175402L, 175404L, 175405L)),
         WordEntity(
             id = 175404, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_check", transliteration = "ishur bitkhoni",
+            pos = "noun", semanticGroup = "interview_subtleties_check",
             original = "אִישּׁוּר בִּטְחוֹנִי", translation = "допуск к секретной информации",
             definition = "הַסְכָּמָה רִשְׁמִית שֶׁל הַמְּדִינָה לָתֵת לָאָדָם גִּישָׁה לְמֵידָע סוֹדִי שֶׁל צָבָא אוֹ מַדִּינָה.",
             definitionNative = "Официальное согласие государства допустить человека к секретным сведениям.",
@@ -83,7 +83,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175401L, 175402L, 175403L, 175405L)),
         WordEntity(
             id = 175405, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_check", transliteration = "tohar midot",
+            pos = "noun", semanticGroup = "interview_subtleties_check",
             original = "טוֹהַר מִדּוֹת", translation = "чистая репутация (без правонарушений)",
             definition = "מַצָּב שֶׁל אָדָם בְּלִי עָבָר פְּלִילִי אוֹ הַפָּרוֹת מוּסָר שֶׁמִּתְפַּרְסְמוֹת לָרַבִּים.",
             definitionNative = "Состояние, когда у человека нет уголовного прошлого или громких нарушений морали.",
@@ -94,7 +94,7 @@ object WordDataHebrewInterviewL5 {
         // ── interview_subtleties_legal (5) — юридические тонкости ──
         WordEntity(
             id = 175406, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_legal", transliteration = "hitkhayvut i-giluy",
+            pos = "noun", semanticGroup = "interview_subtleties_legal",
             original = "הִתְחַיְּבוּת אִי-גִּלּוּי", translation = "обязательство неразглашения (NDA)",
             definition = "הַסְכָּמָה בִּכְתָב לֹא לְסַפֵּר לְאַף אֶחָד עַל מַה שֶּׁעוֹבֵד יוֹדֵעַ עַל הַחֶבְרָה.",
             definitionNative = "Письменное согласие никому не рассказывать то, что сотрудник знает о фирме.",
@@ -103,7 +103,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175407L, 175408L, 175409L, 175410L)),
         WordEntity(
             id = 175407, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_legal", transliteration = "tniyat i-takharut",
+            pos = "noun", semanticGroup = "interview_subtleties_legal",
             original = "תְּנִיַית אִי-תַּחֲרוּת", translation = "пункт о запрете конкуренции",
             definition = "סָעִיף בַּחוֹזֶה הָאוֹסֵר עַל עוֹבֵד לַעֲבֹד אֵצֶל מִתְחָרֶה תּוֹךְ פֶּרֶק זְמַן קָבוּעַ.",
             definitionNative = "Пункт договора — нельзя пойти к конкуренту в течение оговорённого срока.",
@@ -112,7 +112,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175406L, 175408L, 175409L, 175410L)),
         WordEntity(
             id = 175408, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_legal", transliteration = "knas yetsi'a",
+            pos = "noun", semanticGroup = "interview_subtleties_legal",
             original = "קְנַס יְצִיאָה", translation = "штраф за досрочный уход",
             definition = "סְכוּם שֶׁעוֹבֵד מְשַׁלֵּם אִם הוּא עוֹזֵב לִפְנֵי שֶׁעָבְרָה תְּקוּפָה מִינִימָלִית בָּעֲבוֹדָה.",
             definitionNative = "Сумма, которую сотрудник платит, если уходит до минимального срока в работе.",
@@ -121,7 +121,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175406L, 175407L, 175409L, 175410L)),
         WordEntity(
             id = 175409, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_legal", transliteration = "tkufat hodaa mukdemet",
+            pos = "noun", semanticGroup = "interview_subtleties_legal",
             original = "תְּקוּפַת הוֹדָעָה מֻקְדֶּמֶת", translation = "срок предупреждения об уходе",
             definition = "הַזְּמַן בֵּין הַיּוֹם שֶׁבּוֹ עוֹבֵד מוֹדִיעַ עַל עֲזִיבָה לְבֵין יוֹם הַסִּיוּם בְּפֹעַל.",
             definitionNative = "Срок между днём, когда сотрудник предупреждает об уходе, и днём фактического ухода.",
@@ -130,7 +130,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175406L, 175407L, 175408L, 175410L)),
         WordEntity(
             id = 175410, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_legal", transliteration = "kinyan rukhani",
+            pos = "noun", semanticGroup = "interview_subtleties_legal",
             original = "קִנְיָן רוּחָנִי", translation = "интеллектуальная собственность",
             definition = "כָּל הַיְצִירָה הַמַּחְשַׁבְתִּית — קוֹד, פָּטֶנְט אוֹ מַתְכּוֹן — שֶׁשַּׁיֶּכֶת לְבַעֲלֶיהָ עַל פִּי חוֹק.",
             definitionNative = "Любое творение мысли — код, патент или рецепт — по закону принадлежит автору.",
@@ -141,7 +141,7 @@ object WordDataHebrewInterviewL5 {
         // ── interview_subtleties_compensation (5) — нюансы компенсации ──
         WordEntity(
             id = 175411, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_compensation", transliteration = "shikhlul ha-khavila",
+            pos = "noun", semanticGroup = "interview_subtleties_compensation",
             original = "שִׁכְלוּל הַחֲבִילָה", translation = "взвешенная оценка пакета",
             definition = "חִישּׁוּב שֶׁל הַשּׁוֹוִי הַכּוֹלֵל שֶׁל הַהַצָּעָה — שָׂכָר, הֲטָבוֹת, מְנָיוֹת וּבוֹנוּסִים.",
             definitionNative = "Подсчёт совокупной ценности предложения — оклад, льготы, акции и бонусы.",
@@ -150,7 +150,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175412L, 175413L, 175414L, 175415L)),
         WordEntity(
             id = 175412, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_compensation", transliteration = "bonus mutne",
+            pos = "noun", semanticGroup = "interview_subtleties_compensation",
             original = "בּוֹנוּס מֻתְנֶה", translation = "условный бонус (по KPI)",
             definition = "תַּשְׁלוּם נוֹסָף שֶׁמִּשְׁתַּלֵּם רַק אִם עוֹבֵד מַגִּיעַ לִיעָדִים מֻגְדָּרִים מֵרֹאשׁ.",
             definitionNative = "Доплата, которая идёт только если сотрудник дотягивает до заранее заданных целей.",
@@ -159,7 +159,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175411L, 175413L, 175414L, 175415L)),
         WordEntity(
             id = 175413, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_compensation", transliteration = "optsiyot avirot",
+            pos = "noun", semanticGroup = "interview_subtleties_compensation",
             original = "אוֹפְּצְיוֹת עֲבִירוֹת", translation = "переносимые опционы",
             definition = "זְכוּת לִקְנוֹת מְנָיוֹת שֶׁאֶפְשָׁר לְהַעֲבִיר לְקָרוֹב מִשְׁפָּחָה בְּלִי לְאַבֵּד אוֹתָהּ.",
             definitionNative = "Право купить акции, которое можно передать родственнику без потери.",
@@ -168,7 +168,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175411L, 175412L, 175414L, 175415L)),
         WordEntity(
             id = 175414, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_compensation", transliteration = "hafrashot pensiya",
+            pos = "noun", semanticGroup = "interview_subtleties_compensation",
             original = "הַפְרָשׁוֹת פֶּנְסְיָה", translation = "пенсионные отчисления",
             definition = "סְכוּמִים חֳדְשִׁיִּים שֶׁמַּעֲבִיד וְעוֹבֵד מַעֲבִירִים לְקֶרֶן לְעֵת זִקְנָה.",
             definitionNative = "Месячные суммы, что работодатель и сотрудник переводят в фонд на старость.",
@@ -177,7 +177,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175411L, 175412L, 175413L, 175415L)),
         WordEntity(
             id = 175415, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_compensation", transliteration = "keren hishtalmut",
+            pos = "noun", semanticGroup = "interview_subtleties_compensation",
             original = "קֶרֶן הִשְׁתַּלְמוּת", translation = "фонд повышения квалификации",
             definition = "חִסָּכוֹן עִם הֲטָבוֹת מַס שֶׁמְּמַמֵּן הַמַּעֲבִיד וְהָעוֹבֵד יָכוֹל לְמָשׁוֹךְ אַחֲרֵי שֵׁשׁ שָׁנִים.",
             definitionNative = "Накопление с налоговыми льготами от работодателя — снять можно через шесть лет.",
@@ -188,7 +188,7 @@ object WordDataHebrewInterviewL5 {
         // ── interview_subtleties_followup (5) — после интервью ──
         WordEntity(
             id = 175416, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_followup", transliteration = "mikhtav toda",
+            pos = "noun", semanticGroup = "interview_subtleties_followup",
             original = "מִכְתַּב תּוֹדָה", translation = "благодарственное письмо после интервью",
             definition = "הוֹדָעָה קְצָרָה בַּמֵּייל שֶׁמֻעֳמָד שׁוֹלֵחַ אַחֲרֵי שִׂיחָה כְּדֵי לִשְׁמֹר עַל קֶשֶׁר חִיוּבִי.",
             definitionNative = "Короткое сообщение по почте от кандидата после разговора — поддержать тёплый контакт.",
@@ -197,7 +197,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175417L, 175418L, 175419L, 175420L)),
         WordEntity(
             id = 175417, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_followup", transliteration = "ma'akav khozer",
+            pos = "noun", semanticGroup = "interview_subtleties_followup",
             original = "מַעֲקָב חוֹזֵר", translation = "повторное обращение (follow-up)",
             definition = "פְּנִיָּה שֶׁל הַמֻּעֳמָד אַחֲרֵי שֶׁעָבַר זְמַן בְּלִי שׁוּם תְּשׁוּבָה מֵהַחֶבְרָה.",
             definitionNative = "Когда кандидат сам пишет фирме после того, как прошло время без ответа.",
@@ -206,7 +206,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175416L, 175418L, 175419L, 175420L)),
         WordEntity(
             id = 175418, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_followup", transliteration = "ma'avar le-shalav",
+            pos = "noun", semanticGroup = "interview_subtleties_followup",
             original = "מַעֲבָר לְשָׁלָב", translation = "переход на следующий этап отбора",
             definition = "הוֹדָעָה מֵהַחֶבְרָה שֶׁהַמֻּעֳמָד עוֹבֵר הָלְאָה לִקְרַאת רֵאָיוֹן בָּא בַּתַּהֲלִיךְ.",
             definitionNative = "Сообщение от фирмы — кандидат идёт дальше, к следующему интервью в процессе.",
@@ -215,7 +215,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175416L, 175417L, 175419L, 175420L)),
         WordEntity(
             id = 175419, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_followup", transliteration = "hamtana le-hakhlata",
+            pos = "noun", semanticGroup = "interview_subtleties_followup",
             original = "הַמְתָּנָה לְהַחְלָטָה", translation = "ожидание решения (после финала)",
             definition = "תְּקוּפָה אַחֲרֵי הָרֵאָיוֹן הָאַחֲרוֹן שֶׁבָּהּ הַמֻּעֳמָד לֹא יוֹדֵעַ אִם קִבְּלוּ אוֹתוֹ.",
             definitionNative = "Время после финального интервью, пока кандидат не знает, взяли его или нет.",
@@ -224,7 +224,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175416L, 175417L, 175418L, 175420L)),
         WordEntity(
             id = 175420, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_followup", transliteration = "meshekh ha-tahalikh",
+            pos = "noun", semanticGroup = "interview_subtleties_followup",
             original = "מֶשֶׁךְ הַתַּהֲלִיךְ", translation = "длительность процесса найма",
             definition = "מִסְפַּר הַשָּׁבוּעוֹת מֵהַשִּׂיחָה הָרִאשׁוֹנָה עִם הַמְּגַיֵּיס וְעַד חֲתִימָה עַל אוֹפֶר.",
             definitionNative = "Сколько недель проходит от первого звонка рекрутера до подписания офера.",
@@ -235,7 +235,7 @@ object WordDataHebrewInterviewL5 {
         // ── interview_subtleties_culture (5) — израильские особенности ──
         WordEntity(
             id = 175421, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_culture", transliteration = "ra'ayon beiti",
+            pos = "noun", semanticGroup = "interview_subtleties_culture",
             original = "רֵאָיוֹן בֵּיתִי", translation = "интервью в неформальной обстановке",
             definition = "שִׂיחָה עִם מַעֲבִיד בְּבֵית קָפֶה אוֹ עַל קוּרְנֶר בְּלִי לוּחַ וּבְלִי חֲלִיפָה.",
             definitionNative = "Разговор с работодателем в кофейне или на углу — без доски и без костюма.",
@@ -244,7 +244,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175422L, 175423L, 175424L, 175425L)),
         WordEntity(
             id = 175422, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_culture", transliteration = "khimiya ishit",
+            pos = "noun", semanticGroup = "interview_subtleties_culture",
             original = "כִּימְיָה אִישִׁית", translation = "личная химия (взаимная симпатия)",
             definition = "תְּחוּשָׁה הֲדָדִית טוֹבָה בֵּין שְׁנֵי אֲנָשִׁים שֶׁלֹּא תָּמִיד אֶפְשָׁר לְהַסְבִּיר בְּמִילִּים.",
             definitionNative = "Взаимное хорошее ощущение между двумя людьми — не всегда выразимое словами.",
@@ -253,7 +253,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175421L, 175423L, 175424L, 175425L)),
         WordEntity(
             id = 175423, setId = 1754, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "interview_subtleties_culture", transliteration = "tikshoret yeshira",
+            pos = "noun", semanticGroup = "interview_subtleties_culture",
             original = "תִּקְשֹׁרֶת יְשִׁירָה", translation = "прямой стиль общения",
             definition = "סְגַנּוֹן דִּבּוּר שֶׁבּוֹ אוֹמְרִים בְּדִיּוּק מָה שֶׁחוֹשְׁבִים בְּלִי כְּסוּת מְנֻמֶּסֶת.",
             definitionNative = "Манера речи: говорят ровно то, что думают, без вежливой обёртки.",
@@ -262,7 +262,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175421L, 175422L, 175424L, 175425L)),
         WordEntity(
             id = 175424, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_culture", transliteration = "formaliyut mu'eitet",
+            pos = "noun", semanticGroup = "interview_subtleties_culture",
             original = "פוֹרְמָאלִיּוּת מוּעֶטֶת", translation = "минимум формальностей",
             definition = "סִגְנוֹן עֲבוֹדָה בְּלִי כְּתוֹבוֹת רִשְׁמִיּוֹת, בְּלִי חֲלִיפוֹת וּבְשֵׁמוֹת פְּרָטִיִּים.",
             definitionNative = "Стиль работы без формальных обращений, без костюмов и по именам.",
@@ -271,7 +271,7 @@ object WordDataHebrewInterviewL5 {
          fillInBlankExclusions = listOf(175421L, 175422L, 175423L, 175425L)),
         WordEntity(
             id = 175425, setId = 1754, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "interview_subtleties_culture", transliteration = "sgirat ma'agal",
+            pos = "noun", semanticGroup = "interview_subtleties_culture",
             original = "סְגִירַת מַעְגָּל", translation = "финальное закрытие (loop closing)",
             definition = "שִׂיחָה אוֹ מֵייל אַחֲרוֹן שֶׁמְּסַיֵּם אֶת הַתַּהֲלִיךְ — חִיּוּבִי אוֹ שְׁלִילִי — בְּלִי לְהַשְׁאִיר עַרְפִילִים.",
             definitionNative = "Последний звонок или письмо — закрывают процесс позитивно или негативно, без тумана.",

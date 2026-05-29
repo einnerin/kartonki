@@ -52,7 +52,7 @@ object WordDataHebrewHightechL4 {
         // ── hightech_devops (5) — конвейер разработки и доставки кода ──
         WordEntity(
             id = 174801, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_devops", transliteration = "si-ai-si-di",
+            pos = "noun", semanticGroup = "hightech_devops",
             original = "סִי-אַי-סִי-דִּי", translation = "CI/CD",
             definition = "תַּהֲלִיךְ אוֹטוֹמָטִי שֶׁבּוֹדֵק קוֹד חָדָשׁ וּמַעֲלֶה אוֹתוֹ לַשֶּׁרֶת בְּלִי הִתְעָרְבוּת אִישִׁית.",
             definitionNative = "Автоматический процесс — проверяет новый код и катит на сервер без рук человека.",
@@ -61,7 +61,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174802L, 174803L, 174804L, 174805L)),
         WordEntity(
             id = 174802, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_devops", transliteration = "paiplain deploy",
+            pos = "noun", semanticGroup = "hightech_devops",
             original = "פַּייפְּלַיין דֵּפְּלוֹי", translation = "пайплайн деплоя",
             definition = "שַׁרְשֶׁרֶת שֶׁל שְׁלַבִּים אַחֲרֵי מִיזּוּג קוֹד עַד שֶׁהַגִּרְסָה הַחֲדָשָׁה רָצָה אֵצֶל לָקוֹחוֹת.",
             definitionNative = "Цепочка шагов после слияния кода — пока новая версия не работает у клиентов.",
@@ -70,7 +70,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174801L, 174803L, 174804L, 174805L)),
         WordEntity(
             id = 174803, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_devops", transliteration = "infrastruktura ke-kod",
+            pos = "noun", semanticGroup = "hightech_devops",
             original = "אִינְפְרַסְטְרוּקְטוּרָה כְּקוֹד", translation = "infrastructure as code (IaC)",
             definition = "גִּישָׁה שֶׁבָּהּ שְׁרָתִים, רְשָׁתוֹת וּמַאֲגָרִים מֻגְדָּרִים בְּקֹבֶץ טֶקְסְט שֶׁמְּנוּהָל בִּגְ׳יט.",
             definitionNative = "Подход: серверы, сети и БД описаны в текстовом файле под Git-управлением.",
@@ -79,7 +79,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174801L, 174802L, 174804L, 174805L)),
         WordEntity(
             id = 174804, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_devops", transliteration = "skript otomatsya",
+            pos = "noun", semanticGroup = "hightech_devops",
             original = "סְקְרִיפְט אוֹטוֹמַצְיָה", translation = "скрипт автоматизации",
             definition = "קֹבֶץ קָצָר שֶׁמְּבַצֵּעַ פְּעֻלּוֹת חוֹזְרוֹת בְּלִי שֶׁמְהַנְדֵס יִכְתֹּב כָּל פַּעַם פְּקֻדָּה.",
             definitionNative = "Короткий файл — повторяет рутинные действия, чтобы инженер не вводил команду каждый раз.",
@@ -88,7 +88,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174801L, 174802L, 174803L, 174805L)),
         WordEntity(
             id = 174805, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_devops", transliteration = "artefakt bniya",
+            pos = "noun", semanticGroup = "hightech_devops",
             original = "אַרְטֵפַקְט בְּנִיָּה", translation = "артефакт сборки",
             definition = "קֹבֶץ סוֹפִי שֶׁיּוֹצֵא מִשְּׁלַב הַקּוֹמְפִּילַצְיָה וּמוּכָן לַהַעֲלָאָה לַסְּבִיבָה הַחַיָּה.",
             definitionNative = "Финальный файл из стадии компиляции — готов уехать на боевое окружение.",
@@ -99,7 +99,7 @@ object WordDataHebrewHightechL4 {
         // ── hightech_monitoring (5) — наблюдение за продакшеном ──
         WordEntity(
             id = 174806, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_monitoring", transliteration = "alert",
+            pos = "noun", semanticGroup = "hightech_monitoring",
             original = "אַלֶרְט", translation = "алерт",
             definition = "הוֹדָעָה אוֹטוֹמָטִית שֶׁנִּשְׁלַחַת לְצֶוֶות כְּשֶׁמַּשֶּׁהוּ בָּרֶכֶת חוֹרֵג מֵהַסַּף הַתַּקִּין.",
             definitionNative = "Автоматическое сообщение команде — когда что-то в системе вышло за нормальный порог.",
@@ -108,7 +108,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174807L, 174808L, 174809L, 174810L)),
         WordEntity(
             id = 174807, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_monitoring", transliteration = "dashbord",
+            pos = "noun", semanticGroup = "hightech_monitoring",
             original = "דַּשְׁבּוֹרְד", translation = "дашборд",
             definition = "מָסָךְ אֶחָד שֶׁמְּרַכֵּז גְּרָפִים וּמַסְפָּרִים חַיִּים עַל מַצַּב הַמַּעֲרֶכֶת בְּזְמַן אֱמֶת.",
             definitionNative = "Один экран — собирает живые графики и числа о состоянии системы прямо сейчас.",
@@ -117,7 +117,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174806L, 174808L, 174809L, 174810L)),
         WordEntity(
             id = 174808, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_monitoring", transliteration = "heltschek",
+            pos = "noun", semanticGroup = "hightech_monitoring",
             original = "הֶלְת׳צֶ׳ק", translation = "healthcheck",
             definition = "פְּנִיָּה תְּקוּפָתִית קְצָרָה לַשֶּׁרֶת שֶׁבּוֹדֶקֶת אִם הוּא חַי וְעוֹנֶה כָּרָאוּי.",
             definitionNative = "Короткий регулярный запрос на сервер — жив ли он и отвечает ли как надо.",
@@ -126,7 +126,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174806L, 174807L, 174809L, 174810L)),
         WordEntity(
             id = 174809, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_monitoring", transliteration = "agregatsyat logim",
+            pos = "noun", semanticGroup = "hightech_monitoring",
             original = "אַגְרֵגַצְיַת לוֹגִים", translation = "лог-агрегация",
             definition = "אִחוּד שׁוּרוֹת מֵהַרְבֵּה שְׁרָתִים לִמְקוֹם אֶחָד שֶׁבּוֹ קַל לְחַפֵּשׂ וּלְסַנֵּן.",
             definitionNative = "Объединение строк со многих серверов в одно место — где удобно искать и фильтровать.",
@@ -135,7 +135,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174806L, 174807L, 174808L, 174810L)),
         WordEntity(
             id = 174810, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_monitoring", transliteration = "takala biprodakshen",
+            pos = "noun", semanticGroup = "hightech_monitoring",
             original = "תַּקָּלָה בִּפְרוֹדַקְשֶׁן", translation = "инцидент в проде",
             definition = "אֵרוּעַ חָמוּר בַּסְּבִיבָה הַחַיָּה שֶׁדּוֹרֵשׁ צֶוֶות תּוֹרָנוּת לִתְקֹן מִיָּד.",
             definitionNative = "Серьёзное событие на боевом окружении — дежурная команда чинит немедленно.",
@@ -146,7 +146,7 @@ object WordDataHebrewHightechL4 {
         // ── hightech_metrics (5) — продуктовые метрики и цели ──
         WordEntity(
             id = 174811, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_metrics", transliteration = "kei-pi-ai",
+            pos = "noun", semanticGroup = "hightech_metrics",
             original = "קֵיי-פִּי-אַיי", translation = "KPI",
             definition = "מַדָּד מַסְפָּרִי קָבוּעַ שֶׁבּוֹדֵק עַד כַּמָּה מַחְלָקָה מַשִּׂיגָה אֶת הַיַּעַד הָעִקָּרִי שֶׁלָּהּ.",
             definitionNative = "Постоянный числовой индикатор — насколько отдел двигает свою главную цель.",
@@ -155,7 +155,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174812L, 174813L, 174814L, 174815L)),
         WordEntity(
             id = 174812, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_metrics", transliteration = "o-kei-ar",
+            pos = "noun", semanticGroup = "hightech_metrics",
             original = "אוֹ-קֵיי-אַר", translation = "OKR",
             definition = "מִסְגֶּרֶת רְבְעוֹנִית שֶׁל יַעַד שְׁאַפְתָּנִי וּכְמַסְפָּר תּוֹצָאוֹת מְדִידוֹת לְבִיצּוּעוֹ.",
             definitionNative = "Квартальная рамка: амбициозная цель плюс несколько измеримых результатов под неё.",
@@ -164,7 +164,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174811L, 174813L, 174814L, 174815L)),
         WordEntity(
             id = 174813, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_metrics", transliteration = "shimur mishtamshim",
+            pos = "noun", semanticGroup = "hightech_metrics",
             original = "שִׁמּוּר מִשְׁתַּמְּשִׁים", translation = "retention",
             definition = "אָחוּז הָאַנָשִׁים שֶׁמַּמְשִׁיכִים לְהִכָּנֵס לַמּוּצָר אַחֲרֵי שָׁבוּעַ אוֹ חֹדֶשׁ.",
             definitionNative = "Доля людей, которые продолжают заходить в продукт через неделю или месяц.",
@@ -173,7 +173,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174811L, 174812L, 174814L, 174815L)),
         WordEntity(
             id = 174814, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_metrics", transliteration = "netishat mishtamshim",
+            pos = "noun", semanticGroup = "hightech_metrics",
             original = "נְטִישַׁת מִשְׁתַּמְּשִׁים", translation = "churn",
             definition = "אָחוּז הַלָּקוֹחוֹת שֶׁמַּפְסִיקִים לְשַׁלֵּם אוֹ לְהִכָּנֵס בְּתוֹךְ פֶּרֶק זְמַן מֻגְדָּר.",
             definitionNative = "Доля клиентов, переставших платить или заходить за определённый период.",
@@ -182,7 +182,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174811L, 174812L, 174813L, 174815L)),
         WordEntity(
             id = 174815, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_metrics", transliteration = "en-pi-es",
+            pos = "noun", semanticGroup = "hightech_metrics",
             original = "אֶן-פִּי-אֵס", translation = "NPS",
             definition = "צִיּוּן בֵּין מָאתַיִם פְּלוּס לְמָאתַיִם מִינוּס שֶׁבּוֹדֵק כַּמָּה הַלָּקוֹחוֹת מַמְלִיצִים עַל הַמּוּצָר.",
             definitionNative = "Балл от минус ста до плюс ста — насколько клиенты рекомендуют продукт другим.",
@@ -193,7 +193,7 @@ object WordDataHebrewHightechL4 {
         // ── hightech_product (5) — продуктовая работа и эксперименты ──
         WordEntity(
             id = 174816, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_product", transliteration = "rodmap",
+            pos = "noun", semanticGroup = "hightech_product",
             original = "רוֹדְמָאפּ", translation = "roadmap",
             definition = "מַסְמָךְ שֶׁמַּרְאֶה אֵיזוֹ פִיצֶ׳רִים יַגִּיעוּ בְּכָל רֹבַע בַּחֲצִי שָׁנָה הַקְּרוֹבָה.",
             definitionNative = "Документ, какие фичи приедут в каждом квартале на ближайшие полгода.",
@@ -202,7 +202,7 @@ object WordDataHebrewHightechL4 {
         ),
         WordEntity(
             id = 174817, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_product", transliteration = "steykholder",
+            pos = "noun", semanticGroup = "hightech_product",
             original = "סְטֵייקְהוֹלְדֶר", translation = "stakeholder",
             definition = "אִישׁ פְּנִימִי בָּעֵסֶק שֶׁיֵּשׁ לוֹ אִינְטֶרֶס יָשִׁיר בְּהַצְלָחַת מַשֶּׁהוּ שֶׁמְּפַתְחִים.",
             definitionNative = "Внутренний человек в бизнесе, у которого прямой интерес в успехе разработки.",
@@ -211,7 +211,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174816L, 174818L, 174819L, 174820L)),
         WordEntity(
             id = 174818, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_product", transliteration = "geyting",
+            pos = "noun", semanticGroup = "hightech_product",
             original = "גֵּייטִינְג", translation = "gating (ограничение фичи)",
             definition = "חֲסִימָה זְמַנִּית שֶׁל יְכֹלֶת חֲדָשָׁה רַק לִקְבוּצַת מִשְׁתַּמְּשִׁים מְצֻמְצֶמֶת לְבַדִּיקָה.",
             definitionNative = "Временное закрытие новой возможности — только для маленькой группы пользователей на пробу.",
@@ -220,7 +220,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174816L, 174817L, 174819L, 174820L)),
         WordEntity(
             id = 174819, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_product", transliteration = "ei-bi test",
+            pos = "noun", semanticGroup = "hightech_product",
             original = "אֵיי-בִּי טֶסְט", translation = "A/B-тест",
             definition = "הַשְׁוָאָה בֵּין שְׁתֵּי גִּרְסָאוֹת שֶׁל מָסָךְ כְּדֵי לִרְאוֹת אֵיזוֹ מַבִּיאָה תּוֹצָאָה טוֹבָה יוֹתֵר.",
             definitionNative = "Сравнение двух версий экрана — какая даёт лучший результат.",
@@ -229,7 +229,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174816L, 174817L, 174818L, 174820L)),
         WordEntity(
             id = 174820, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_product", transliteration = "ficher flag",
+            pos = "noun", semanticGroup = "hightech_product",
             original = "פִיצֶ׳ר פְלַג", translation = "фиче-флаг",
             definition = "מַתְגֵּן בַּקּוֹד שֶׁמַּפְעִיל אוֹ מְכַבֶּה יְכוֹלוֹת בְּלִי לְשַׁחְרֵר גִּרְסָה חֲדָשָׁה.",
             definitionNative = "Переключатель в коде — включает или выключает функции без выпуска новой версии.",
@@ -240,7 +240,7 @@ object WordDataHebrewHightechL4 {
         // ── hightech_security (5) — безопасность и аудит ──
         WordEntity(
             id = 174821, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_security", transliteration = "pentest",
+            pos = "noun", semanticGroup = "hightech_security",
             original = "פֶּנְטֶסְט", translation = "пентест",
             definition = "בְּדִיקָה מְכֻוֶּנֶת שֶׁבָּהּ אִישׁ חִיצוֹנִי מְנַסֶּה לְפְרֹץ לַמַּעֲרֶכֶת כְּדֵי לִמְצֹא חוּלְשׁוֹת.",
             definitionNative = "Целевая проверка: внешний человек ломает систему, чтобы найти слабые места.",
@@ -249,7 +249,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174822L, 174823L, 174824L, 174825L)),
         WordEntity(
             id = 174822, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_security", transliteration = "pirtsat avtakha",
+            pos = "noun", semanticGroup = "hightech_security",
             original = "פִּרְצַת אַבְטָחָה", translation = "уязвимость",
             definition = "חוֹר בַּקּוֹד אוֹ בַּהַגְדָּרוֹת שֶׁמְּאַפְשֵׁר לְזָר לַעֲשׂוֹת מַשֶּׁהוּ שֶׁאָסוּר.",
             definitionNative = "Дыра в коде или настройках — даёт постороннему сделать запрещённое действие.",
@@ -258,7 +258,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174821L, 174823L, 174824L, 174825L)),
         WordEntity(
             id = 174823, setId = 1748, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_security", transliteration = "iyumey sayber",
+            pos = "noun", semanticGroup = "hightech_security",
             original = "אִיּוּמֵי סַייבֶּר", translation = "киберугрозы",
             definition = "סִכּוּנִים שֶׁתּוֹקְפִים מַעֲרֶכֶת מֵרֶשֶׁת — נִסְיוֹנוֹת פְּרִיצָה, גְּנֵבַת מֵידָע אוֹ שִׁבּוּשׁ.",
             definitionNative = "Сетевые риски — попытки взлома, кражи данных или нарушения работы системы.",
@@ -267,7 +267,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174821L, 174822L, 174824L, 174825L)),
         WordEntity(
             id = 174824, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_security", transliteration = "mivdak avtakha",
+            pos = "noun", semanticGroup = "hightech_security",
             original = "מִבְדַּק אַבְטָחָה", translation = "аудит безопасности",
             definition = "סְקִירָה רִשְׁמִית שֶׁל מְבַקֵּר חִיצוֹנִי עַל הַקּוֹד וְהַתַּהֲלִיכִים לְפִי תֶּקֶן מֻגְדָּר.",
             definitionNative = "Официальный обзор внешним проверяющим — кода и процессов по заданному стандарту.",
@@ -276,7 +276,7 @@ object WordDataHebrewHightechL4 {
          fillInBlankExclusions = listOf(174821L, 174822L, 174823L, 174825L)),
         WordEntity(
             id = 174825, setId = 1748, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_security", transliteration = "ji-di-pi-ar",
+            pos = "noun", semanticGroup = "hightech_security",
             original = "גִ׳י-דִּי-פִּי-אַר", translation = "GDPR",
             definition = "תַּקָּנָה אֵירוֹפֵּית שֶׁמְּחַיֶּבֶת חֶבְרוֹת לְהָגֵן עַל מֵידָע אִישִׁי שֶׁל אֶזְרָחֵי הַיַּבֶּשֶׁת.",
             definitionNative = "Европейский регламент — обязывает фирмы защищать персональные данные граждан континента.",

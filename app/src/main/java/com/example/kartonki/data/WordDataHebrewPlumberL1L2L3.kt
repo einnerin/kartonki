@@ -64,7 +64,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_fixtures (5) — сантехнические узлы ──
         WordEntity(
             id = 174201, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_fixtures", transliteration = "tsinor",
+            pos = "noun", semanticGroup = "plumbing_fixtures",
             original = "צִנּוֹר", translation = "труба",
             definition = "מַעֲבָר חָלוּל לְהַעֲבָרַת מַיִם אוֹ נוֹזֵל אַחֵר בַּבַּיִת.",
             definitionNative = "Полый канал для подачи воды или другой жидкости в доме.",
@@ -73,7 +73,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174202, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_fixtures", transliteration = "berez",
+            pos = "noun", semanticGroup = "plumbing_fixtures",
             original = "בֶּרֶז", translation = "кран (водопроводный)",
             definition = "מַתֶּקֶת קְטַנָּה שֶׁפּוֹתְחִים וְסוֹגְרִים אוֹתָהּ לְזְרִימַת מַיִם.",
             definitionNative = "Небольшое устройство для открывания и закрывания потока воды.",
@@ -82,7 +82,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174201L, 174203L, 174204L, 174205L)),
         WordEntity(
             id = 174203, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_fixtures", transliteration = "asla",
+            pos = "noun", semanticGroup = "plumbing_fixtures",
             original = "אַסְלָה", translation = "унитаз",
             definition = "כְּלִי קֶרָמִי בַּשֵּׁרוּתִים שֶׁמְּחֻבָּר לַבִּיּוּב וְשׁוֹטְפִים אוֹתוֹ.",
             definitionNative = "Керамический предмет в туалете, подключённый к канализации.",
@@ -91,7 +91,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174201L, 174202L, 174204L, 174205L)),
         WordEntity(
             id = 174204, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_fixtures", transliteration = "kiyor",
+            pos = "noun", semanticGroup = "plumbing_fixtures",
             original = "כִּיּוֹר", translation = "раковина",
             definition = "אַגָּן קָבוּעַ עִם בֶּרֶז שֶׁשּׁוֹטְפִים בּוֹ יָדַיִם וְכֵלִים.",
             definitionNative = "Закреплённая чаша с краном для мытья рук и посуды.",
@@ -100,7 +100,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174201L, 174202L, 174203L, 174205L)),
         WordEntity(
             id = 174205, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_fixtures", transliteration = "ambatya",
+            pos = "noun", semanticGroup = "plumbing_fixtures",
             original = "אַמְבַּטְיָה", translation = "ванна",
             definition = "כְּלִי גָּדוֹל לַטְּבִילָה עִם מַיִם חַמִּים בַּחֲדַר הָרַחֲצָה.",
             definitionNative = "Большая ёмкость для купания, наполненная тёплой водой.",
@@ -111,7 +111,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_water (5) — вода и её подача ──
         WordEntity(
             id = 174206, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_water", transliteration = "miklakhat",
+            pos = "noun", semanticGroup = "plumbing_water",
             original = "מִקְלַחַת", translation = "душ",
             definition = "פִּינַּת רַחֲצָה עִם זִלּוּף מַיִם מִלְמַעְלָה דֶּרֶךְ רֹאשׁ מְפַזֵּר.",
             definitionNative = "Уголок для мытья с подачей воды сверху через распылитель.",
@@ -120,7 +120,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174207, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_water", transliteration = "mayim",
+            pos = "noun", semanticGroup = "plumbing_water",
             original = "מַיִם", translation = "вода",
             definition = "נוֹזֵל שָׁקוּף שֶׁשּׁוֹתִים, מִתְרַחֲצִים וּמְבַשְּׁלִים אִתּוֹ.",
             definitionNative = "Прозрачная жидкость для питья, мытья и приготовления еды.",
@@ -129,7 +129,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174208, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "plumbing_water", transliteration = "mayim khamim",
+            pos = "phrase", semanticGroup = "plumbing_water",
             original = "מַיִם חַמִּים", translation = "горячая вода",
             definition = "מַיִם שֶׁעָבְרוּ חִמּוּם בַּדּוּד וּמְשַׁמְּשִׁים לְרַחֲצָה וּלְכֵלִים.",
             definitionNative = "Вода, нагретая в бойлере, для душа и мытья посуды.",
@@ -138,7 +138,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174209L)),
         WordEntity(
             id = 174209, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "plumbing_water", transliteration = "mayim karim",
+            pos = "phrase", semanticGroup = "plumbing_water",
             original = "מַיִם קָרִים", translation = "холодная вода",
             definition = "מַיִם בְּטֶמְפֶּרָטוּרָה שֶׁל הָרֶשֶׁת לִפְנֵי שֶׁעָבְרוּ חִמּוּם.",
             definitionNative = "Вода обычной температуры из-под крана, до нагрева.",
@@ -147,7 +147,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174208L)),
         WordEntity(
             id = 174210, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_water", transliteration = "zarnuk",
+            pos = "noun", semanticGroup = "plumbing_water",
             original = "זַרְנוּק", translation = "шланг",
             definition = "צִנּוֹר גָּמִישׁ אָרֹךְ לְהַעֲבָרַת מַיִם מִבֶּרֶז לַמָּקוֹם הַדָּרוּשׁ.",
             definitionNative = "Длинная гибкая трубка для подачи воды от крана туда, куда нужно.",
@@ -158,7 +158,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_problems (5) — поломки и аварии ──
         WordEntity(
             id = 174211, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_problems", transliteration = "delef",
+            pos = "noun", semanticGroup = "plumbing_problems",
             original = "דֶּלֶף", translation = "протечка",
             definition = "מַיִם בּוֹרְחִים מִצִּנּוֹר אוֹ בֶּרֶז שָׁבוּר וְנוֹזְלִים הַחוּצָה.",
             definitionNative = "Утечка воды из повреждённого крана или соединения трубы.",
@@ -167,7 +167,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174212L, 174213L, 174214L)),
         WordEntity(
             id = 174212, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_problems", transliteration = "stima",
+            pos = "noun", semanticGroup = "plumbing_problems",
             original = "סְתִימָה", translation = "засор",
             definition = "מָקוֹם שֶׁבּוֹ הַמַּיִם לֹא זוֹרְמִים בִּגְלַל לִכְלוּךְ אוֹ שֵׂעָר.",
             definitionNative = "Место в трубе, где вода не идёт из-за грязи или волос.",
@@ -176,7 +176,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174211L, 174213L, 174214L)),
         WordEntity(
             id = 174213, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_problems", transliteration = "tikun",
+            pos = "noun", semanticGroup = "plumbing_problems",
             original = "תִּקּוּן", translation = "ремонт",
             definition = "פְּעֻלָּה לְהַחְזָרַת מַתֶּקֶת שְׁבוּרָה לַעֲבוֹדָה תְּקִינָה.",
             definitionNative = "Действие по восстановлению сломанного устройства до рабочего состояния.",
@@ -185,7 +185,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174211L, 174212L, 174214L)),
         WordEntity(
             id = 174214, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_problems", transliteration = "etem",
+            pos = "noun", semanticGroup = "plumbing_problems",
             original = "אֶטֶם", translation = "прокладка (уплотнительная)",
             definition = "טַבַּעַת גּוּמִי דַּקָּה שֶׁמּוֹנַעַת זְלִיגַת מַיִם בְּחִבּוּר.",
             definitionNative = "Тонкое резиновое кольцо, не пропускающее воду через стык.",
@@ -194,7 +194,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174211L, 174212L, 174213L)),
         WordEntity(
             id = 174215, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "plumbing_problems", transliteration = "kriat kherum",
+            pos = "phrase", semanticGroup = "plumbing_problems",
             original = "קְרִיאַת חֵרוּם", translation = "аварийный вызов",
             definition = "פְּנִיָּה דְּחוּפָה לִשְׁרַבְרָב כְּשֶׁיֵּשׁ אָסוֹן מַיִם בַּלַּיְלָה.",
             definitionNative = "Срочный звонок сантехнику ночью при потопе или большой аварии.",
@@ -205,7 +205,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_tools_basic (5) — инструменты и подручные средства ──
         WordEntity(
             id = 174216, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "plumbing_tools_basic", transliteration = "kli avoda",
+            pos = "phrase", semanticGroup = "plumbing_tools_basic",
             original = "כְּלִי עֲבוֹדָה", translation = "инструмент (рабочий)",
             definition = "חֵפֶץ פָּשׁוּט שֶׁבְּעֶזְרָתוֹ הָאוּמָן מְבַצֵּעַ עֲבוֹדָה יְדָנִית.",
             definitionNative = "Простой предмет, которым мастер выполняет ручную работу.",
@@ -214,7 +214,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174220L)),
         WordEntity(
             id = 174217, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_tools_basic", transliteration = "mafteakh",
+            pos = "noun", semanticGroup = "plumbing_tools_basic",
             original = "מַפְתֵּחַ", translation = "ключ (гаечный)",
             definition = "כְּלִי בַּרְזֶל הַמְשַׁמֵּשׁ לִסְגִירָה וּפְתִיחָה שֶׁל אֻמּוֹת וּבְרָגִים.",
             definitionNative = "Металлический инструмент для затягивания и откручивания гаек.",
@@ -223,7 +223,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174218, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_tools_basic", transliteration = "dli",
+            pos = "noun", semanticGroup = "plumbing_tools_basic",
             original = "דְּלִי", translation = "ведро",
             definition = "כְּלִי קֵיבוּל עָגֹל עִם יָדִית לִנְשִׂיאַת מַיִם אוֹ פְסֹלֶת.",
             definitionNative = "Круглая ёмкость с ручкой для переноски воды или мусора.",
@@ -232,7 +232,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174217L, 174219L)),
         WordEntity(
             id = 174219, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_tools_basic", transliteration = "smartut",
+            pos = "noun", semanticGroup = "plumbing_tools_basic",
             original = "סְמַרְטוּט", translation = "тряпка",
             definition = "פִּסַּת בַּד יְשָׁנָה הַסּוֹפֶגֶת מַיִם וְלִכְלוּךְ מֵרִצְפָּה.",
             definitionNative = "Кусок старой ткани, впитывающей воду и грязь с пола.",
@@ -241,7 +241,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174217L, 174218L)),
         WordEntity(
             id = 174220, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "plumbing_tools_basic", transliteration = "hagaa labayit",
+            pos = "phrase", semanticGroup = "plumbing_tools_basic",
             original = "הַגָּעָה לַבַּיִת", translation = "выезд на дом",
             definition = "הִגָּעָה שֶׁל בַּעַל מִקְצוֹעַ לְבֵית הַלָּקוֹחַ עֲבוּר תַּשְׁלוּם.",
             definitionNative = "Прибытие специалиста на дом клиента за отдельную плату.",
@@ -252,7 +252,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_service (5) — заказ услуг сантехника ──
         WordEntity(
             id = 174221, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_service", transliteration = "shravrav",
+            pos = "noun", semanticGroup = "plumbing_service",
             original = "שְׁרַבְרָב", translation = "сантехник",
             definition = "אוּמָן הַמְּטַפֵּל בְּצִנּוֹרוֹת, בְּרָזִים וְאַסְלוֹת בַּבַּיִת.",
             definitionNative = "Мастер, обслуживающий трубы, краны и водопровод в квартире.",
@@ -261,7 +261,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174222, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_service", transliteration = "hazmana",
+            pos = "noun", semanticGroup = "plumbing_service",
             original = "הַזְמָנָה", translation = "заказ (вызов мастера)",
             definition = "בַּקָּשָׁה לַעֲבוֹדָה אוֹ לְשֵׁרוּת שֶׁמַּזְמִינִים מִבַּעַל מִקְצוֹעַ.",
             definitionNative = "Просьба о работе или услуге, оформленная у специалиста.",
@@ -270,7 +270,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174221L, 174223L, 174224L, 174225L)),
         WordEntity(
             id = 174223, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "plumbing_service", transliteration = "mekhir",
+            pos = "noun", semanticGroup = "plumbing_service",
             original = "מְחִיר", translation = "цена",
             definition = "סְכוּם הַכֶּסֶף שֶׁמְּשַׁלְּמִים עֲבוּר עֲבוֹדָה אוֹ עֲבוּר מוּצָר.",
             definitionNative = "Сумма, которую платят за работу или товар.",
@@ -279,7 +279,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174224, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_service", transliteration = "kheshbon",
+            pos = "noun", semanticGroup = "plumbing_service",
             original = "חֶשְׁבּוֹן", translation = "счёт (на оплату)",
             definition = "מִסְמָךְ הַמְּפָרֵט אֶת הַתַּשְׁלוּם עֲבוּר שֵׁרוּת אוֹ קְנִיָּה.",
             definitionNative = "Документ с подробной суммой к оплате за услугу или покупку.",
@@ -288,7 +288,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174221L, 174222L, 174223L, 174225L)),
         WordEntity(
             id = 174225, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_service", transliteration = "akhrayut",
+            pos = "noun", semanticGroup = "plumbing_service",
             original = "אַחְרָיוּת", translation = "гарантия (на работу)",
             definition = "הִתְחַיְּבוּת שֶׁל הַמַּתְקִין לְתַקֵּן בְּחִנָּם תּוֹךְ זְמַן מֻגְבָּל.",
             definitionNative = "Обязательство мастера бесплатно исправить поломку в срок.",
@@ -307,7 +307,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_fittings (5) — фитинги и соединения ──
         WordEntity(
             id = 174301, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "plumbing_fittings", transliteration = "berez meurbal",
+            pos = "phrase", semanticGroup = "plumbing_fittings",
             original = "בֶּרֶז מְעֻרְבָּל", translation = "смеситель",
             definition = "מַתֶּקֶת אַחַת הַמְּחַבֶּרֶת זֶרֶם חַם וְקַר לְזֶרֶם אֶחָד מְכֻוָּן.",
             definitionNative = "Устройство, объединяющее горячую и холодную воду в одну струю.",
@@ -316,7 +316,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174321L, 174322L)),
         WordEntity(
             id = 174302, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_fittings", transliteration = "sifon",
+            pos = "noun", semanticGroup = "plumbing_fittings",
             original = "סִיפוֹן", translation = "сифон",
             definition = "צִנּוֹר מַעֲקָלִי תַּחַת הַכִּיּוֹר שֶׁעוֹצֵר רֵיחוֹת מִן הַבִּיּוּב.",
             definitionNative = "Изогнутая трубка под раковиной, не пропускающая запахи из стока.",
@@ -325,7 +325,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174303, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_fittings", transliteration = "fiting",
+            pos = "noun", semanticGroup = "plumbing_fittings",
             original = "פִיטִינְג", translation = "фитинг (соединительный элемент)",
             definition = "חֵלֶק קָטָן הַמְחַבֵּר שְׁנֵי קְצוֹת צִנּוֹר אוֹ מַחֲלִיף כִּוּוּן.",
             definitionNative = "Малая деталь, скрепляющая два конца трубы или меняющая направление.",
@@ -334,7 +334,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174302L, 174304L, 174305L)),
         WordEntity(
             id = 174304, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_fittings", transliteration = "makhaver",
+            pos = "noun", semanticGroup = "plumbing_fittings",
             original = "מַחֲבֵר", translation = "муфта (соединение труб)",
             definition = "שַׁרְוּלִית קְצָרָה הַמַּצְמִידָה שְׁנֵי צִנּוֹרוֹת לְזֶרֶם אֶחָד.",
             definitionNative = "Короткая втулка, соединяющая две трубы в один поток.",
@@ -343,7 +343,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174305, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_fittings", transliteration = "matem",
+            pos = "noun", semanticGroup = "plumbing_fittings",
             original = "מַתְאֵם", translation = "переходник",
             definition = "חֵלֶק שֶׁמַּתְאִים בֵּין שְׁנֵי גְּדָלִים אוֹ סוּגֵי תֶּבֶר שׁוֹנִים.",
             definitionNative = "Деталь между разными размерами или типами резьбы.",
@@ -354,7 +354,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_sealing (5) — уплотнение и герметизация ──
         WordEntity(
             id = 174306, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_sealing", transliteration = "sharvulit",
+            pos = "noun", semanticGroup = "plumbing_sealing",
             original = "שַׁרְוּלִית", translation = "манжета (резиновая)",
             definition = "טַבַּעַת גּוּמִי רְחָבָה הַמְּהַדֶּקֶת חִבּוּר בֵּין צִנּוֹר וּמַתֶּקֶת.",
             definitionNative = "Широкое резиновое кольцо для плотного соединения трубы и устройства.",
@@ -363,7 +363,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174307, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_sealing", transliteration = "seret itum",
+            pos = "phrase", semanticGroup = "plumbing_sealing",
             original = "סֶרֶט אִטּוּם", translation = "фум-лента (уплотнительная)",
             definition = "סֶרֶט לָבָן דַּק שֶׁכּוֹרְכִים סְבִיב הַתֶּבֶר לִמְנֹעַ זְלִיגַת מַיִם.",
             definitionNative = "Тонкая белая лента для намотки на резьбу против протечек.",
@@ -372,7 +372,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174308L)),
         WordEntity(
             id = 174308, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "plumbing_sealing", transliteration = "devek silikon",
+            pos = "phrase", semanticGroup = "plumbing_sealing",
             original = "דֶּבֶק סִילִיקוֹן", translation = "силиконовый герметик",
             definition = "חֹמֶר אִטּוּם רַךְ הַמַּתְקַשֶּׁה וְעוֹצֵר חֲדִירַת מַיִם בְּפֵּרֶצֶת.",
             definitionNative = "Мягкий уплотнитель, застывающий и блокирующий проникновение воды.",
@@ -381,7 +381,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174307L)),
         WordEntity(
             id = 174309, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_sealing", transliteration = "nipl",
+            pos = "noun", semanticGroup = "plumbing_sealing",
             original = "נִיפֶּל", translation = "штуцер; ниппель",
             definition = "פִּיסַת מַתֶּכֶת קְצָרָה עִם תֶּבֶר חִיצוֹנִי לְחִבּוּר צִנּוֹרוֹת.",
             definitionNative = "Короткая металлическая деталь с наружной резьбой для стыковки труб.",
@@ -390,7 +390,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174310, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "plumbing_sealing", transliteration = "atimut",
+            pos = "noun", semanticGroup = "plumbing_sealing",
             original = "אֲטִימוּת", translation = "герметичность; водонепроницаемость",
             definition = "תְּכוּנָה שֶׁל מַעֲרֶכֶת שֶׁאֵינָהּ נוֹתֶנֶת לְמַיִם לַעֲבֹר הַחוּצָה.",
             definitionNative = "Свойство системы не пропускать воду наружу через стыки.",
@@ -401,7 +401,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_tools_advanced (5) — продвинутые инструменты ──
         WordEntity(
             id = 174311, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_tools_advanced", transliteration = "pompa",
+            pos = "noun", semanticGroup = "plumbing_tools_advanced",
             original = "פּוֹמְפָּה", translation = "вантуз",
             definition = "כְּלִי גּוּמִי עִם יָדִית הַמְפַנֶּה סְתִימוֹת בְּכִיּוֹר אוֹ בָּאַסְלָה.",
             definitionNative = "Резиновая чашка с ручкой для прочистки засоров в раковине или унитазе.",
@@ -410,7 +410,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174315L)),
         WordEntity(
             id = 174312, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_tools_advanced", transliteration = "slil shel shravrav",
+            pos = "phrase", semanticGroup = "plumbing_tools_advanced",
             original = "סְלִיל שֶׁל שְׁרַבְרָב", translation = "тросик сантехнический",
             definition = "כֶּבֶל גָּמִישׁ אָרֹךְ עִם רֹאשׁ הַחוֹדֵר עָמֹק וּמְפָרֵק סְתִימוֹת.",
             definitionNative = "Гибкий длинный канат, продирающийся вглубь и разбивающий пробку.",
@@ -419,7 +419,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174313L, 174314L)),
         WordEntity(
             id = 174313, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "plumbing_tools_advanced", transliteration = "mafteakh shvedi",
+            pos = "phrase", semanticGroup = "plumbing_tools_advanced",
             original = "מַפְתֵּחַ שְׁוֵדִי", translation = "разводной ключ (ключ-шведка)",
             definition = "מַפְתֵּחַ עִם לֹעַ מִתְכַּוְּנֵן הַמַּתְאִים אֶת עַצְמוֹ לְכָל גֹּדֶל אֻמָּה.",
             definitionNative = "Ключ с подвижной губкой, подстраивающейся под любой размер гайки.",
@@ -428,7 +428,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174312L, 174314L)),
         WordEntity(
             id = 174314, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_tools_advanced", transliteration = "malkhem letsinorot",
+            pos = "phrase", semanticGroup = "plumbing_tools_advanced",
             original = "מַלְחֵם לְצִנּוֹרוֹת", translation = "паяльник для труб",
             definition = "מַכְשִׁיר חַשְׁמָלִי הַמְחַמֵּם וּמְלַחֵם בֵּין שְׁנֵי קְצוֹת צִנּוֹר.",
             definitionNative = "Электроприбор, нагревающий и сваривающий два конца трубы.",
@@ -437,7 +437,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174315, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_tools_advanced", transliteration = "mavrega",
+            pos = "noun", semanticGroup = "plumbing_tools_advanced",
             original = "מַבְרֵגָה", translation = "шуруповёрт",
             definition = "מַכְשִׁיר חַשְׁמָלִי הַמַּכְנִיס בְּרָגִים מַהֵר וּבְלִי מַאֲמָץ.",
             definitionNative = "Электроинструмент, быстро вкручивающий шурупы без усилий.",
@@ -448,7 +448,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_works_advanced (5) — продвинутые операции ──
         WordEntity(
             id = 174316, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "plumbing_works_advanced", transliteration = "shtifat tsinorot",
+            pos = "phrase", semanticGroup = "plumbing_works_advanced",
             original = "שְׁטִיפַת צִנּוֹרוֹת", translation = "прочистка труб",
             definition = "פְּעֻלָּה לְהוֹצָאַת שֻׁמָּן וְלִכְלוּךְ מִן הַצִּנּוֹרוֹת בְּלַחַץ מַיִם.",
             definitionNative = "Удаление жира и грязи из труб напором воды.",
@@ -457,7 +457,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174317L, 174318L)),
         WordEntity(
             id = 174317, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "plumbing_works_advanced", transliteration = "bdika",
+            pos = "noun", semanticGroup = "plumbing_works_advanced",
             original = "בְּדִיקָה", translation = "инспекция; проверка",
             definition = "סִקּוּר יְסוֹדִי שֶׁל מַעֲרֶכֶת לְאִתּוּר תְּקָלוֹת לִפְנֵי שֶׁהֵן מִתְפָּרְצוֹת.",
             definitionNative = "Тщательный осмотр системы для поиска проблем до их прорыва.",
@@ -466,7 +466,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174318L, 174319L, 174320L)),
         WordEntity(
             id = 174318, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "plumbing_works_advanced", transliteration = "ivkhun",
+            pos = "noun", semanticGroup = "plumbing_works_advanced",
             original = "אִבְחוּן", translation = "диагностика",
             definition = "תְּהַלִיךְ זִהוּי הַסִּבָּה הַמְּדֻיֶּקֶת שֶׁל תְּקָלָה בְּמַעֲרֶכֶת.",
             definitionNative = "Процесс точного определения причины поломки в системе.",
@@ -475,7 +475,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174317L, 174319L, 174320L)),
         WordEntity(
             id = 174319, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "plumbing_works_advanced", transliteration = "peruk",
+            pos = "noun", semanticGroup = "plumbing_works_advanced",
             original = "פֵּרוּק", translation = "демонтаж",
             definition = "הוֹצָאַת מַתְקָן יָשָׁן מִמְּקוֹמוֹ לְפָנוֹת מָקוֹם לַחָדָשׁ.",
             definitionNative = "Снятие старого устройства с места ради установки нового.",
@@ -484,7 +484,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174317L, 174318L, 174320L)),
         WordEntity(
             id = 174320, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "plumbing_works_advanced", transliteration = "hatkana",
+            pos = "noun", semanticGroup = "plumbing_works_advanced",
             original = "הַתְקָנָה", translation = "монтаж; установка",
             definition = "חִבּוּר מַתְקָן חָדָשׁ לַמַּעֲרֶכֶת וּבְדִיקָה שֶׁהוּא עוֹבֵד.",
             definitionNative = "Подключение нового устройства к системе и проверка работы.",
@@ -495,7 +495,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_valves (5) — клапаны и краны спец-назначения ──
         WordEntity(
             id = 174321, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_valves", transliteration = "berez kaduri",
+            pos = "phrase", semanticGroup = "plumbing_valves",
             original = "בֶּרֶז כַּדּוּרִי", translation = "шаровой кран",
             definition = "מַתֶּקֶת סְגִירָה עִם כַּדּוּר חָלוּל פְּנִימִי לְעֶצְמָה מְהִירָה שֶׁל זֶרֶם.",
             definitionNative = "Запорное устройство с полым шариком для быстрой остановки потока.",
@@ -504,7 +504,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174322L, 174323L, 174324L, 174325L)),
         WordEntity(
             id = 174322, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_valves", transliteration = "shastom khad-kivuni",
+            pos = "phrase", semanticGroup = "plumbing_valves",
             original = "שַׁסְתּוֹם חַד-כִּוּוּנִי", translation = "обратный клапан",
             definition = "שַׁסְתּוֹם הַמַּזְרִים מַיִם רַק לְכִוּוּן אֶחָד וְעוֹצֵר זְרִימָה הָפוּכָה.",
             definitionNative = "Клапан, пропускающий воду в одну сторону и блокирующий обратку.",
@@ -514,7 +514,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174323, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_valves", transliteration = "mad mayim",
+            pos = "phrase", semanticGroup = "plumbing_valves",
             original = "מַד מַיִם", translation = "водомер; счётчик воды",
             definition = "מַכְשִׁיר הַסּוֹפֵר אֶת כַּמּוּת הַמַּיִם הַזּוֹרְמִים אֶל הַדִּירָה.",
             definitionNative = "Прибор, считающий количество воды, поступающей в квартиру.",
@@ -523,7 +523,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174324, setId = 1743, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_valves", transliteration = "sgirat mayim",
+            pos = "phrase", semanticGroup = "plumbing_valves",
             original = "סְגִירַת מַיִם", translation = "перекрытие воды",
             definition = "פְּעֻלָּה לְעֶצְמָה זְמַנִּית שֶׁל זְרִימַת הַמַּיִם הַכְּלָלִית בַּדִּירָה.",
             definitionNative = "Временная остановка общего потока воды в квартире.",
@@ -532,7 +532,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174321L, 174322L, 174323L)),
         WordEntity(
             id = 174325, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "plumbing_valves", transliteration = "hakhlafat berez",
+            pos = "phrase", semanticGroup = "plumbing_valves",
             original = "הַחְלָפַת בֶּרֶז", translation = "замена крана",
             definition = "הוֹצָאַת בֶּרֶז יָשָׁן וְהִתְקָנַת בֶּרֶז חָדָשׁ בְּמְקוֹמוֹ.",
             definitionNative = "Снятие старого крана и установка нового на его место.",
@@ -551,7 +551,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_heating (5) — отопление и нагрев ──
         WordEntity(
             id = 174401, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_heating", transliteration = "dud khimum",
+            pos = "phrase", semanticGroup = "plumbing_heating",
             original = "דּוּד חִמּוּם", translation = "бойлер (накопительный)",
             definition = "מֵיכַל מְבֻדָּד הַמְחַמֵּם וְשׁוֹמֵר עַל מַיִם חַמִּים לִשְׁעוֹת רַבּוֹת.",
             definitionNative = "Утеплённый бак, греющий и хранящий горячую воду много часов.",
@@ -560,7 +560,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174403L, 174404L, 174405L)),
         WordEntity(
             id = 174402, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "plumbing_heating", transliteration = "hasaka",
+            pos = "noun", semanticGroup = "plumbing_heating",
             original = "הַסָּקָה", translation = "отопление (система)",
             definition = "מַעֲרֶכֶת הַמְחַמֶּמֶת אֶת הַדִּירָה דֶּרֶךְ מַיִם הַזּוֹרְמִים בְּצִנּוֹרוֹת.",
             definitionNative = "Система обогрева квартиры за счёт горячей воды в трубах.",
@@ -569,7 +569,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174403, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_heating", transliteration = "mashevat sikhrur",
+            pos = "phrase", semanticGroup = "plumbing_heating",
             original = "מַשְׁאֵבַת סִחְרוּר", translation = "циркуляционный насос",
             definition = "מַשְׁאֵבָה הַמַּעֲבִירָה מַיִם חַמִּים בְּלוּלָאָה לְכָל פִּינַּת הַמַּעֲרֶכֶת.",
             definitionNative = "Насос, гоняющий горячую воду по контуру до каждой точки.",
@@ -578,7 +578,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174401L, 174404L, 174405L)),
         WordEntity(
             id = 174404, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_heating", transliteration = "shastom tlat-maavar",
+            pos = "phrase", semanticGroup = "plumbing_heating",
             original = "שַׁסְתּוֹם תְּלָת-מַעֲבָר", translation = "трёхходовой клапан",
             definition = "שַׁסְתּוֹם הַמַּפְנֶה זֶרֶם בֵּין שְׁלֹשָׁה כִּוּוּנִים לְשִׁתּוּף בֵּין מַעֲרָכוֹת חִמּוּם.",
             definitionNative = "Клапан, переключающий поток между тремя ветвями системы отопления.",
@@ -587,7 +587,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174401L, 174403L, 174405L)),
         WordEntity(
             id = 174405, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_heating", transliteration = "meikhal hitpashtut",
+            pos = "phrase", semanticGroup = "plumbing_heating",
             original = "מֵיכַל הִתְפַּשְּׁטוּת", translation = "расширительный бак",
             definition = "מֵיכַל קָטָן הַסּוֹפֵג עוֹדֶף לַחַץ כְּשֶׁמַּיִם חַמִּים מִתְרַחֲבִים.",
             definitionNative = "Малый бак, гасящий избыток давления при расширении горячей воды.",
@@ -598,7 +598,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_floor_systems (5) — системы пола, котельная, потери ──
         WordEntity(
             id = 174406, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_floor_systems", transliteration = "ritspa mekhamemet",
+            pos = "phrase", semanticGroup = "plumbing_floor_systems",
             original = "רִצְפָּה מְחַמֶּמֶת", translation = "тёплый пол",
             definition = "רֶשֶׁת צִנּוֹרוֹת מִתַּחַת לְרִצְפָּה הַמְחַמֶּמֶת אֶת הַחֶדֶר מִלְּמַטָּה.",
             definitionNative = "Сеть труб под полом, греющая комнату снизу вверх.",
@@ -607,7 +607,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174407L, 174409L, 174410L)),
         WordEntity(
             id = 174407, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_floor_systems", transliteration = "khadar dudim",
+            pos = "phrase", semanticGroup = "plumbing_floor_systems",
             original = "חֲדַר דּוּדִים", translation = "котельная (комната оборудования)",
             definition = "חֶדֶר טֶכְנִי שֶׁבּוֹ עוֹמְדִים הַדּוּדִים, הַמַּשְׁאֵבוֹת וּלוּחוֹת בַּקָּרָה.",
             definitionNative = "Техническое помещение с бойлерами, насосами и щитами управления.",
@@ -616,7 +616,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174406L, 174409L, 174410L)),
         WordEntity(
             id = 174408, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "plumbing_floor_systems", transliteration = "mafzer",
+            pos = "noun", semanticGroup = "plumbing_floor_systems",
             original = "מַפְזֵר", translation = "коллектор (распределительный)",
             definition = "צֹמֶת צִנּוֹרוֹת הַמְּחַלֶּקֶת זֶרֶם מַיִם לְכַמָּה לוּלָאוֹת מַקְבִּילוֹת.",
             definitionNative = "Узел, разделяющий поток на несколько параллельных контуров.",
@@ -625,7 +625,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174409, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_floor_systems", transliteration = "bdikat lakhats",
+            pos = "phrase", semanticGroup = "plumbing_floor_systems",
             original = "בְּדִיקַת לַחַץ", translation = "опрессовка (тест давлением)",
             definition = "בְּחִינַת מַעֲרֶכֶת בְּלַחַץ גָּבוֹהַּ זְמַן קָצוּב לְאִתּוּר נֶקֶב.",
             definitionNative = "Проверка системы повышенным давлением в течение заданного времени.",
@@ -634,7 +634,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174406L, 174407L, 174410L)),
         WordEntity(
             id = 174410, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_floor_systems", transliteration = "avedat khom",
+            pos = "phrase", semanticGroup = "plumbing_floor_systems",
             original = "אֲבֵדַת חֹם", translation = "теплопотери",
             definition = "כַּמּוּת הָאֵנֶרְגְּיָה הַתֶּרְמִית הַבּוֹרַחַת מִן הַמַּעֲרֶכֶת הַחוּצָה.",
             definitionNative = "Тепловая энергия, утекающая из системы наружу через стенки.",
@@ -645,7 +645,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_maintenance_pro (5) — профессиональное обслуживание ──
         WordEntity(
             id = 174411, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_maintenance_pro", transliteration = "bidud tsinorot",
+            pos = "phrase", semanticGroup = "plumbing_maintenance_pro",
             original = "בִּדּוּד צִנּוֹרוֹת", translation = "изоляция труб",
             definition = "שִׁכְבַת חֹמֶר עוֹטֶפֶת צִנּוֹר וּמוֹנַעַת אֲבֵדַת חֹם וְקֶפֶא.",
             definitionNative = "Слой материала вокруг трубы против потери тепла и замерзания.",
@@ -654,7 +654,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174412L, 174413L, 174414L, 174415L)),
         WordEntity(
             id = 174412, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_maintenance_pro", transliteration = "takhazuka monaat",
+            pos = "phrase", semanticGroup = "plumbing_maintenance_pro",
             original = "תַּחֲזוּקָה מוֹנַעַת", translation = "профилактика; превентивное обслуживание",
             definition = "טִפּוּל סָדִיר בְּמַתְקָן לִפְנֵי שֶׁתּוֹפִיעַ תְּקָלָה אַמִּיתִּית.",
             definitionNative = "Регулярный уход за оборудованием до появления реальной поломки.",
@@ -663,7 +663,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174411L, 174413L, 174414L, 174415L)),
         WordEntity(
             id = 174413, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_maintenance_pro", transliteration = "even kaltsit",
+            pos = "phrase", semanticGroup = "plumbing_maintenance_pro",
             original = "אֶבֶן קַלְצִיט", translation = "накипь (кальциевая)",
             definition = "מִשְׁקָע לָבָן קָשֶׁה הַמִּצְטַבֵּר עַל גּוּפֵי חִמּוּם וְעַל בְּרָזִים.",
             definitionNative = "Твёрдый белый налёт, оседающий на нагревателях и кранах.",
@@ -672,7 +672,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174411L, 174412L, 174414L, 174415L)),
         WordEntity(
             id = 174414, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_maintenance_pro", transliteration = "mishka sid",
+            pos = "phrase", semanticGroup = "plumbing_maintenance_pro",
             original = "מִשְׁקַע סִיד", translation = "известковый налёт",
             definition = "שִׁכְבָה דַּקָּה לְבָנָה הַמּוֹפִיעָה עַל זְכוּכִית וְעַל מַתֶּקֶת רַחֲצָה.",
             definitionNative = "Тонкий белый слой на стекле и сантехнике в ванной.",
@@ -681,7 +681,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174411L, 174412L, 174413L, 174415L)),
         WordEntity(
             id = 174415, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_maintenance_pro", transliteration = "nikuy khimi",
+            pos = "phrase", semanticGroup = "plumbing_maintenance_pro",
             original = "נִקּוּי כִימִי", translation = "химическая очистка",
             definition = "שִׁמּוּשׁ בְּחֻמְצָה מְבֻקֶּרֶת לְהַסָּרַת מִשְׁקָע מִתּוֹךְ צִנּוֹר.",
             definitionNative = "Применение контролируемой кислоты для снятия отложений изнутри.",
@@ -692,7 +692,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_drainage (5) — отвод и канализация ──
         WordEntity(
             id = 174416, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_drainage", transliteration = "endoskop tsinorot",
+            pos = "phrase", semanticGroup = "plumbing_drainage",
             original = "אֶנְדּוֹסְקוֹפ צִנּוֹרוֹת", translation = "эндоскоп для труб",
             definition = "מַצְלֵמָה גְּמִישָׁה עַל כֶּבֶל אָרֹךְ הַמְּגַלָּה תַּקָּלוֹת בְּתוֹךְ הַצִּנּוֹר.",
             definitionNative = "Гибкая камера на кабеле, показывающая поломки изнутри трубы.",
@@ -701,7 +701,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174417L, 174418L, 174420L)),
         WordEntity(
             id = 174417, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_drainage", transliteration = "prisat tsinorot",
+            pos = "phrase", semanticGroup = "plumbing_drainage",
             original = "פְּרִיסַת צִנּוֹרוֹת", translation = "разводка труб",
             definition = "מַעֲרֵךְ צִנּוֹרוֹת מֵהָרֶשֶׁת הָרָאשִׁית אֶל כָּל מַתֶּקֶת בַּדִּירָה.",
             definitionNative = "Сеть труб от стояка до каждой точки разбора в квартире.",
@@ -710,7 +710,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174416L, 174418L, 174420L)),
         WordEntity(
             id = 174418, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_drainage", transliteration = "amudat mayim",
+            pos = "phrase", semanticGroup = "plumbing_drainage",
             original = "עַמּוּדַת מַיִם", translation = "стояк (вертикальный канал)",
             definition = "צִנּוֹר אֳנָכִי הָעוֹבֵר דֶּרֶךְ קוֹמוֹת וּמְזִין אֶת כָּל הַדִּירוֹת.",
             definitionNative = "Вертикальная труба, проходящая через этажи и питающая квартиры.",
@@ -719,7 +719,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174416L, 174417L, 174420L)),
         WordEntity(
             id = 174419, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "plumbing_drainage", transliteration = "biyuv",
+            pos = "noun", semanticGroup = "plumbing_drainage",
             original = "בִּיּוּב", translation = "канализация",
             definition = "מַעֲרֶכֶת הַצִּנּוֹרוֹת הַמּוֹצִיאָה שְׁפָכִים מִן הַבַּיִת אֶל מָקוֹר טִפּוּל.",
             definitionNative = "Система труб, отводящая стоки из дома к очистным сооружениям.",
@@ -728,7 +728,7 @@ object WordDataHebrewPlumberL1L2L3 {
         ),
         WordEntity(
             id = 174420, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_drainage", transliteration = "maarekhet nikuz",
+            pos = "phrase", semanticGroup = "plumbing_drainage",
             original = "מַעֲרֶכֶת נִקּוּז", translation = "сливная система",
             definition = "מִכְלוֹל צִנּוֹרוֹת הָאוֹסֵף מַיִם מִשִּׁמּוּשׁ וּמַעֲבִיר אוֹתָם הָלְאָה.",
             definitionNative = "Совокупность труб для сбора и отвода использованной воды.",
@@ -739,7 +739,7 @@ object WordDataHebrewPlumberL1L2L3 {
         // ── plumbing_legal (5) — правовая сторона профессии ──
         WordEntity(
             id = 174421, setId = 1744, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "plumbing_legal", transliteration = "aspakat mayim",
+            pos = "phrase", semanticGroup = "plumbing_legal",
             original = "אַסְפָּקַת מַיִם", translation = "водоснабжение",
             definition = "זְרִימָה רְצוּפָה שֶׁל מַיִם לַבַּיִת מֵרֶשֶׁת הָעִיר.",
             definitionNative = "Постоянная подача воды в дом из городской магистрали.",
@@ -748,7 +748,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174422L, 174423L, 174424L)),
         WordEntity(
             id = 174422, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_legal", transliteration = "teken bniya",
+            pos = "phrase", semanticGroup = "plumbing_legal",
             original = "תֵּקֶן בְּנִיָּה", translation = "строительная норма",
             definition = "מִסְמָךְ רִשְׁמִי הַמַּגְדִּיר דְּרִישׁוֹת בְּטִיחוּת לְכָל מַעֲרֶכֶת בַּבַּיִת.",
             definitionNative = "Официальный документ с требованиями безопасности к системам в доме.",
@@ -757,7 +757,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174421L, 174423L, 174424L)),
         WordEntity(
             id = 174423, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_legal", transliteration = "teudat shravrav",
+            pos = "phrase", semanticGroup = "plumbing_legal",
             original = "תְּעוּדַת שְׁרַבְרָב", translation = "сертификат сантехника",
             definition = "אִשּׁוּר רִשְׁמִי הַמּוּכִיחַ שֶׁאוּמָן עָבַר הַכְשָׁרָה וּבְחִינוֹת מִקְצוֹעִיּוֹת.",
             definitionNative = "Документ, подтверждающий проф. подготовку и сданный экзамен мастера.",
@@ -766,7 +766,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174421L, 174422L, 174424L)),
         WordEntity(
             id = 174424, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "plumbing_legal", transliteration = "esek atsmai",
+            pos = "phrase", semanticGroup = "plumbing_legal",
             original = "עֵסֶק עַצְמָאִי", translation = "частная практика; самозанятость",
             definition = "אֹפֶן עֲבוֹדָה שֶׁל בַּעַל מִקְצוֹעַ בְּלִי מַעֲסִיק קָבוּעַ עַל שֵׁם עַצְמוֹ.",
             definitionNative = "Работа специалиста на себя без постоянного работодателя.",
@@ -775,7 +775,7 @@ object WordDataHebrewPlumberL1L2L3 {
          fillInBlankExclusions = listOf(174421L, 174422L, 174423L)),
         WordEntity(
             id = 174425, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "plumbing_legal", transliteration = "rishuy",
+            pos = "noun", semanticGroup = "plumbing_legal",
             original = "רִישׁוּי", translation = "лицензия; лицензирование",
             definition = "אִשּׁוּר חֻקִּי לַעֲסֹק בְּמִקְצוֹעַ הַטָּעוּן הַסְמָכָה רִשְׁמִית.",
             definitionNative = "Юридическое разрешение заниматься регулируемой профессией.",

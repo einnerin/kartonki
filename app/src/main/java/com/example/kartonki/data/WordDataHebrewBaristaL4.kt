@@ -48,7 +48,7 @@ object WordDataHebrewBaristaL4 {
         // ── barista_specialty (5) — спешелти, обработка, редкие сорта ──
         WordEntity(
             id = 179601, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_specialty", transliteration = "teruar",
+            pos = "noun", semanticGroup = "barista_specialty",
             original = "טֵרוּאָר", translation = "терруар",
             definition = "תְּכוּנוֹת קַרְקַע, אַקְלִים וְגֹבַהּ הַטְּבוּעוֹת בַּטַּעַם שֶׁל זַן מִמָּקוֹם מְסֻיָּם.",
             definitionNative = "Свойства почвы, климата и высоты, отпечатанные во вкусе сорта с конкретного места.",
@@ -57,7 +57,7 @@ object WordDataHebrewBaristaL4 {
         ),
         WordEntity(
             id = 179602, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_specialty", transliteration = "ibud rachuts",
+            pos = "phrase", semanticGroup = "barista_specialty",
             original = "עִבּוּד רָחוּץ", translation = "мытая обработка",
             definition = "שִׁיטַת הֲסָרַת הַבְּשָׂרִית מֵהַזֶּרַע בְּמַיִם זוֹרְמִים לִפְנֵי הַיִּבּוּשׁ.",
             definitionNative = "Способ снятия мякоти с косточки в проточной воде до начала просушки.",
@@ -66,7 +66,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179603L, 179605L)),
         WordEntity(
             id = 179603, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_specialty", transliteration = "honey",
+            pos = "noun", semanticGroup = "barista_specialty",
             original = "הוֹנִי", translation = "хани (медовая обработка)",
             definition = "דֶּרֶךְ בֵּינַיִם שֶׁמַּשְׁאִירָה רֹב הַסּוּכָּר עַל הַזֶּרַע בִּזְמַן הַיִּבּוּשׁ.",
             definitionNative = "Промежуточный путь, оставляющий часть сахара на косточке во время просушки.",
@@ -75,7 +75,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179601L, 179602L, 179604L)),
         WordEntity(
             id = 179604, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_specialty", transliteration = "geisha",
+            pos = "noun", semanticGroup = "barista_specialty",
             original = "גֵּישָׁה", translation = "гейша (сорт)",
             definition = "זַן יָקָר בַּעַל אֲרוֹמָה פִּרְחוֹנִית מְעוּדֶנֶת מִכַּפְרֵי הָרֵי פָּנָמָה.",
             definitionNative = "Дорогой сорт с тонким цветочным букетом из горных деревень Панамы.",
@@ -84,7 +84,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179601L, 179603L)),
         WordEntity(
             id = 179605, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "barista_specialty", transliteration = "mikro-lot",
+            pos = "phrase", semanticGroup = "barista_specialty",
             original = "מִיקְרוֹ־לוֹט", translation = "микро-лот",
             definition = "מָנָה זְעִירָה מֵחֶלְקָה אַחַת בְּחַוָּה אַחַת בְּעוֹנָה אַחַת בִּלְבָד.",
             definitionNative = "Крошечная партия с одного участка одной фермы за один сезон сбора.",
@@ -95,7 +95,7 @@ object WordDataHebrewBaristaL4 {
         // ── barista_latte_art (5) — продвинутые техники латте-арт ──
         WordEntity(
             id = 179606, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_latte_art", transliteration = "barbur",
+            pos = "noun", semanticGroup = "barista_latte_art",
             original = "בַּרְבּוּר", translation = "лебедь (узор)",
             definition = "צִיּוּר עֲדִין בְּצוּרַת עוֹף מַיִם עִם צַוָּאר וְכָנָף עַל הַכּוֹס.",
             definitionNative = "Изящный рисунок водной птицы с шеей и крылом наверху чашки.",
@@ -104,7 +104,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179609L)),
         WordEntity(
             id = 179607, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_latte_art", transliteration = "ketsef mikro",
+            pos = "phrase", semanticGroup = "barista_latte_art",
             original = "קֶצֶף מִיקְרוֹ", translation = "микропенка",
             definition = "בּוּעוֹת זְעִירוֹת אֲחִידוֹת שֶׁנּוֹתְנוֹת מִרְקָם חֲלַק כְּמוֹ צֶבַע.",
             definitionNative = "Мелкие однородные пузырьки, дающие гладкую фактуру как у краски.",
@@ -113,7 +113,7 @@ object WordDataHebrewBaristaL4 {
         ),
         WordEntity(
             id = 179608, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_latte_art", transliteration = "yetsika chofshit",
+            pos = "phrase", semanticGroup = "barista_latte_art",
             original = "יְצִיקָה חוֹפְשִׁית", translation = "свободная заливка (без шаблона)",
             definition = "צִיּוּר שֶׁל דְּגַם בְּלִי תּוֹסֶפֶת — רַק תְּנוּעַת הַיָּד וְהַזֶּרֶם הַלָּבָן.",
             definitionNative = "Узор без добавок — только движение руки и струя белой массы.",
@@ -122,7 +122,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179607L, 179609L, 179610L)),
         WordEntity(
             id = 179609, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_latte_art", transliteration = "etching",
+            pos = "noun", semanticGroup = "barista_latte_art",
             original = "אֶצְ׳ינְג", translation = "этчинг (дорисовка)",
             definition = "תּוֹסֶפֶת קַוִּים דַּקִּים בְּקֵיסָם דַּק עַל הַקֶּצֶף לְפֵרוּט שֶׁל הַתְּמוּנָה.",
             definitionNative = "Дорисовка тонких линий зубочисткой по пенке для уточнения картинки.",
@@ -131,7 +131,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179606L, 179608L)),
         WordEntity(
             id = 179610, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "barista_latte_art", transliteration = "shichvot meshulavot",
+            pos = "phrase", semanticGroup = "barista_latte_art",
             original = "שִׁכְבוֹת מְשׁוּלָבוֹת", translation = "комбинированный узор",
             definition = "הֶרְכֵּב שֶׁל כַּמָּה דְּגָמִים זֶה מֵעַל זֶה לִיצִירָה אַחַת מֻרְכֶּבֶת.",
             definitionNative = "Соединение нескольких рисунков один поверх другого в одну сложную композицию.",
@@ -142,7 +142,7 @@ object WordDataHebrewBaristaL4 {
         // ── barista_roasting (5) — обжарка: фазы, химия, профайлинг ──
         WordEntity(
             id = 179611, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_roasting", transliteration = "pitsuach rishon",
+            pos = "phrase", semanticGroup = "barista_roasting",
             original = "פִּצּוּחַ רִאשׁוֹן", translation = "первый крэк",
             definition = "רֶגַע נַקִּישָׁה רִאשׁוֹנָה בַּגַּרְעִין שֶׁמְּסַמֵּן יְצִיאָה לִדְרָגוֹת בְּהִירוֹת.",
             definitionNative = "Момент первого щелчка зерна, означающий выход на светлые степени обжарки.",
@@ -151,7 +151,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179612L, 179613L, 179614L, 179615L)),
         WordEntity(
             id = 179612, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_roasting", transliteration = "zman pituach",
+            pos = "phrase", semanticGroup = "barista_roasting",
             original = "זְמַן פִּתּוּחַ", translation = "время развития",
             definition = "הַשֶּׁבַע אַחֲרֵי הַנַּקִּישָׁה הָרִאשׁוֹנָה שֶׁבּוֹ נִבְנֶה הַטַּעַם הַסּוֹפִי.",
             definitionNative = "Отрезок после первого щелчка, в котором достраивается итоговый вкус.",
@@ -160,7 +160,7 @@ object WordDataHebrewBaristaL4 {
         ),
         WordEntity(
             id = 179613, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "barista_roasting", transliteration = "tguvat mayar",
+            pos = "phrase", semanticGroup = "barista_roasting",
             original = "תְּגוּבַת מַיָאר", translation = "реакция Майяра",
             definition = "תַּהֲלִיךְ כִּימִי שֶׁל סוּכָּרִים וְחֶלְבּוֹנִים — נוֹתֵן צֶבַע חוּם וְרֵיחַ קָלוּי.",
             definitionNative = "Химический процесс сахаров и белков — даёт коричневый цвет и жареный аромат.",
@@ -169,7 +169,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179611L, 179612L, 179614L, 179615L)),
         WordEntity(
             id = 179614, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "barista_roasting", transliteration = "shichrur gazim",
+            pos = "phrase", semanticGroup = "barista_roasting",
             original = "שִׁחְרוּר גַּזִּים", translation = "дегассинг",
             definition = "יְצִיאַת אַוִּיר מֵהַזֶּרַע בְּשָׁבוּעַ הָרִאשׁוֹן לִפְנֵי הַשִּׁמּוּשׁ הַטּוֹב.",
             definitionNative = "Выход воздуха из косточки в первую неделю до годного использования.",
@@ -178,7 +178,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179611L, 179612L, 179613L, 179615L)),
         WordEntity(
             id = 179615, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_roasting", transliteration = "perek yibush",
+            pos = "phrase", semanticGroup = "barista_roasting",
             original = "פֶּרֶק יִבּוּשׁ", translation = "фаза сушки (зерна)",
             definition = "פֶּרֶק רִאשׁוֹן בַּקַּלְיָה שֶׁבּוֹ יוֹצֵא הָרֹב שֶׁל הַלֶּחָה מֵהַזֶּרַע.",
             definitionNative = "Первый период обжарки, в котором уходит большая часть влаги из косточки.",
@@ -189,7 +189,7 @@ object WordDataHebrewBaristaL4 {
         // ── barista_brewing_advanced (5) — продвинутая заварка ──
         WordEntity(
             id = 179616, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_brewing_advanced", transliteration = "vi shishim",
+            pos = "phrase", semanticGroup = "barista_brewing_advanced",
             original = "וִי שִׁשִּׁים", translation = "V60 (воронка)",
             definition = "מַסְנֵן יָדָנִי בְּצוּרַת חֵרוּט עִם חֲרִיצִים שֶׁמְּכַוְּנִים אֶת זְרִימַת הַמַּיִם.",
             definitionNative = "Ручная воронка-конус с рёбрами, направляющими ход воды через слой засыпки.",
@@ -198,7 +198,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179617L, 179618L, 179619L)),
         WordEntity(
             id = 179617, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_brewing_advanced", transliteration = "aeropress",
+            pos = "noun", semanticGroup = "barista_brewing_advanced",
             original = "אֶרוֹפְּרֶס", translation = "аэропресс",
             definition = "מַכְשִׁיר נִשְׁלָף שֶׁל לַחַץ אֲוִיר יְדָנִי לְמָנָה אַחַת חֲזָקָה וּמְהִירָה.",
             definitionNative = "Ручной поршневой прибор с нажимом воздуха на одну быструю крепкую порцию.",
@@ -207,7 +207,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179616L, 179618L, 179619L, 179620L)),
         WordEntity(
             id = 179618, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_brewing_advanced", transliteration = "kemeks",
+            pos = "noun", semanticGroup = "barista_brewing_advanced",
             original = "קֶמֶקְס", translation = "кемекс",
             definition = "בַּקְבּוּק זְכוּכִית עִם צַוָּאר וְעוֹר מֻדְבָּק לְכוֹס סִינוּן אִיטִית וְצְלוּלָה.",
             definitionNative = "Стеклянный сосуд с горлом и кожаной стяжкой для медленной чистой фильтрации.",
@@ -216,7 +216,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179616L, 179617L, 179619L, 179620L)),
         WordEntity(
             id = 179619, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_brewing_advanced", transliteration = "pur-over",
+            pos = "phrase", semanticGroup = "barista_brewing_advanced",
             original = "פּוּר־אוֹבֶר", translation = "пуровер",
             definition = "שִׁיטָה אִיטִית שֶׁל שְׁפִיכַת מַיִם בְּיָד עַל אָבָק בְּמַסְנֵן נְיָר.",
             definitionNative = "Медленный способ ручного пролива воды по засыпке через бумажный фильтр.",
@@ -225,7 +225,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179616L, 179617L, 179618L)),
         WordEntity(
             id = 179620, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_brewing_advanced", transliteration = "harvayat batsek",
+            pos = "noun", semanticGroup = "barista_brewing_advanced",
             original = "הַרְוָיַת בָּצֵק", translation = "блум (первое смачивание)",
             definition = "שֶׁפֶךְ קָטָן רִאשׁוֹן שֶׁמַּפְרִישׁ אַוִּיר מֵהַטַּחֲנָה לִפְנֵי הַשֶּׁפֶךְ הָעִקָּרִי.",
             definitionNative = "Маленькая первая струя — выпускает воздух из помола до главного пролива.",
@@ -236,7 +236,7 @@ object WordDataHebrewBaristaL4 {
         // ── barista_competition (5) — чемпионаты, оценка, авторские подачи ──
         WordEntity(
             id = 179621, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_competition", transliteration = "alifut barista",
+            pos = "phrase", semanticGroup = "barista_competition",
             original = "אֲלִיפוּת בָּרִיסְטָה", translation = "чемпионат бариста",
             definition = "אֵרוּעַ אַרְצִי אוֹ עוֹלָמִי שֶׁבּוֹ מִקְצוֹעָנִים נִלְחָמִים עַל הַתֹּאַר.",
             definitionNative = "Национальное или мировое событие, где специалисты борются за лидерский титул.",
@@ -245,7 +245,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179622L, 179623L, 179624L)),
         WordEntity(
             id = 179622, setId = 1796, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "barista_competition", transliteration = "amadat hatsaga",
+            pos = "phrase", semanticGroup = "barista_competition",
             original = "עֲמָדַת הַצָּגָה", translation = "демо-станция",
             definition = "שֻׁלְחָן עֲבוֹדָה רִשְׁמִי שֶׁבּוֹ הַמִּתְמוֹדֵד מַכִין מָנוֹת לִפְנֵי הַקָּהָל.",
             definitionNative = "Официальный рабочий стол, на котором участник готовит порции перед публикой.",
@@ -254,7 +254,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179621L, 179623L, 179624L)),
         WordEntity(
             id = 179623, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "barista_competition", transliteration = "gilayon shiput",
+            pos = "phrase", semanticGroup = "barista_competition",
             original = "גִּלָּיוֹן שִׁפּוּט", translation = "судейский лист",
             definition = "דַּף רִשְׁמִי שֶׁבּוֹ הַשּׁוֹפֵט מְצַיֵּן צִיּוּן לְכָל פָּרָט שֶׁל הַמָּנָה.",
             definitionNative = "Официальный бланк, где судья выставляет балл за каждую деталь подачи.",
@@ -263,7 +263,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179621L, 179622L, 179624L)),
         WordEntity(
             id = 179624, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "barista_competition", transliteration = "gvia hatoea",
+            pos = "phrase", semanticGroup = "barista_competition",
             original = "גְּבִיעַ הַטּוֹעֵם", translation = "кубок дегустатора",
             definition = "תַּחֲרוּת זִהוּי זַנִּים בְּעִיווְרוֹן בִּזְמַן קָצוּב מוּל שָׁעוֹן עוֹצֵר.",
             definitionNative = "Состязание на угадывание сорта вслепую за фиксированное время на секундомер.",
@@ -272,7 +272,7 @@ object WordDataHebrewBaristaL4 {
          fillInBlankExclusions = listOf(179621L, 179622L, 179623L)),
         WordEntity(
             id = 179625, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_competition", transliteration = "signatura",
+            pos = "noun", semanticGroup = "barista_competition",
             original = "סִיגְנָטוּרָה", translation = "сигнатур (авторский напиток)",
             definition = "מַשְׁקֶה אִישִׁי שֶׁל הַמִּתְמוֹדֵד עִם תּוֹסְפוֹת שֶׁל פֵּרוֹת אוֹ תַּבְלִינִים.",
             definitionNative = "Авторская подача участника с добавками из ягод, фруктов или специй.",

@@ -46,7 +46,7 @@ object WordDataHebrewElectricianL1 {
         // ── electrician_tools (5) — ручные инструменты ──
         WordEntity(
             id = 172601, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "electrician_tools", transliteration = "mavreg",
+            pos = "noun", semanticGroup = "electrician_tools",
             original = "מַבְרֵג", translation = "отвёртка",
             definition = "כְּלִי יָד עִם יָדִית וּקְצֶה דַּק לִסְגוֹר וּפְתוֹחַ בּוֹרְגִים.",
             definitionNative = "Ручной инструмент с ручкой и тонким концом, чтобы крутить шурупы.",
@@ -55,7 +55,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true),
         WordEntity(
             id = 172602, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "electrician_tools", transliteration = "patish",
+            pos = "noun", semanticGroup = "electrician_tools",
             original = "פַּטִּישׁ", translation = "молоток",
             definition = "כְּלִי כָּבֵד עִם רֹאשׁ מַתֶּכֶת לְהַכּוֹת בְּמַסְמְרִים אוֹ קִירוֹת.",
             definitionNative = "Тяжёлый инструмент с металлической головкой — забивать гвозди или дюбели.",
@@ -64,7 +64,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true),
         WordEntity(
             id = 172603, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "electrician_tools", transliteration = "makdekha",
+            pos = "noun", semanticGroup = "electrician_tools",
             original = "מַקְדֵּחָה", translation = "дрель",
             definition = "מַכְשִׁיר מִסְתּוֹבֵב שֶׁעוֹשֶׂה חוֹר בְּקִיר אוֹ בְּעֵץ.",
             definitionNative = "Вращающийся инструмент, что делает отверстие в стене или дереве.",
@@ -73,7 +73,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true),
         WordEntity(
             id = 172604, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "electrician_tools", transliteration = "malkhem",
+            pos = "noun", semanticGroup = "electrician_tools",
             original = "מַלְחֵם", translation = "паяльник",
             definition = "כְּלִי חַם שֶׁמַּמֵּס בְּדִיל וּמְחַבֵּר רַגְלֵי חֲלָקִים אֶלֶקְטְרוֹנִיִּים.",
             definitionNative = "Горячий инструмент: плавит олово и склеивает выводы радиодеталей.",
@@ -82,7 +82,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true),
         WordEntity(
             id = 172605, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "electrician_tools", transliteration = "argaz kelim",
+            pos = "phrase", semanticGroup = "electrician_tools",
             original = "אַרְגַּז כֵּלִים", translation = "ящик с инструментами",
             definition = "תֵּיבָה נִישֵּׂאת שֶׁבְּתוֹכָהּ הַבַּעַל מְלָאכָה שׁוֹמֵר אֶת כָּל הַכֵּלִים.",
             definitionNative = "Переносная коробка, где мастер хранит весь свой набор приспособлений.",
@@ -93,7 +93,7 @@ object WordDataHebrewElectricianL1 {
         // ── electrician_lighting (5) — лампы, удлинители, выключатели ──
         WordEntity(
             id = 172606, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "electrician_lighting", transliteration = "panas",
+            pos = "noun", semanticGroup = "electrician_lighting",
             original = "פָּנָס", translation = "фонарик",
             definition = "מַכְשִׁיר קָטָן עִם בָּטְרִיָּה שֶׁמֵּאִיר בַּחֹשֶׁךְ כְּשֶׁאֵין אוֹר בָּחֶדֶר.",
             definitionNative = "Маленькая штука с батарейкой — светит в темноте, когда нет света в комнате.",
@@ -102,7 +102,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172601L, 172602L, 172603L, 172604L, 172605L, 172607L, 172609L)),
         WordEntity(
             id = 172607, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "electrician_lighting", transliteration = "nura led",
+            pos = "phrase", semanticGroup = "electrician_lighting",
             original = "נוּרָה לֵד", translation = "светодиодная лампа",
             definition = "מָקוֹר אוֹר חָדָשׁ שֶׁצּוֹרֵךְ מְעַט אֱנֶרְגִּיָּה וְכִמְעַט לֹא מִתְחַמֵּם.",
             definitionNative = "Современный источник света — мало ест энергии и почти не греется.",
@@ -111,7 +111,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172608L, 172609L, 172610L)),
         WordEntity(
             id = 172608, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "electrician_lighting", transliteration = "ta batriya",
+            pos = "phrase", semanticGroup = "electrician_lighting",
             original = "תָּא בָּטְרִיָּה", translation = "батарейный отсек",
             definition = "מָקוֹם בְּתוֹךְ מַכְשִׁיר שֶׁבּוֹ מַכְנִיסִים סוֹלְלוֹת כְּדֵי שֶׁהוּא יִפְעַל.",
             definitionNative = "Место внутри прибора, куда вставляют батарейки, чтобы он работал.",
@@ -120,7 +120,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172607L, 172609L, 172610L)),
         WordEntity(
             id = 172609, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "electrician_lighting", transliteration = "teka maarikh",
+            pos = "phrase", semanticGroup = "electrician_lighting",
             original = "תֶּקַע מַאֲרִיךְ", translation = "удлинитель / тройник",
             definition = "פַּס עִם כַּמָּה חוֹרִים שֶׁמְּחַבֵּר מַכְשִׁירִים רְחוֹקִים לַשֶּׁקַע בַּקִּיר.",
             definitionNative = "Длинный шнур с гнёздами — подключает приборы к дальней розетке.",
@@ -129,7 +129,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true),
         WordEntity(
             id = 172610, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "electrician_lighting", transliteration = "matag kir",
+            pos = "phrase", semanticGroup = "electrician_lighting",
             original = "מַתָּג קִיר", translation = "настенный выключатель",
             definition = "כַּפְתּוֹר בַּקִּיר שֶׁלּוֹחֲצִים עָלָיו כְּדֵי לִפְתֹּחַ אוֹ לִסְגֹּר אֶת הָאוֹר.",
             definitionNative = "Кнопка на стене — нажимают, чтобы зажечь или потушить освещение.",
@@ -140,7 +140,7 @@ object WordDataHebrewElectricianL1 {
         // ── electrician_actions (5) — простые операции ──
         WordEntity(
             id = 172611, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "electrician_actions", transliteration = "lekhaber khutim",
+            pos = "phrase", semanticGroup = "electrician_actions",
             original = "לְחַבֵּר חוּטִים", translation = "соединить провода",
             definition = "לִקְשׁוֹר שְׁנֵי קְצוֹת מַתֶּכֶת יַחַד כְּדֵי שֶׁהַזֶּרֶם יַעֲבוֹר בֵּינֵיהֶם.",
             definitionNative = "Свести вместе два металлических конца, чтобы ток шёл насквозь.",
@@ -149,7 +149,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172612L, 172613L, 172614L, 172615L)),
         WordEntity(
             id = 172612, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "electrician_actions", transliteration = "lehadlik or",
+            pos = "phrase", semanticGroup = "electrician_actions",
             original = "לְהַדְלִיק אוֹר", translation = "включить свет",
             definition = "לִלְחֹץ עַל הַכַּפְתּוֹר כְּדֵי שֶׁהַחֶדֶר יִהְיֶה מוּאָר.",
             definitionNative = "Нажать на кнопку, чтобы в комнате стало ярко.",
@@ -158,7 +158,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172611L, 172613L, 172614L, 172615L)),
         WordEntity(
             id = 172613, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "electrician_actions", transliteration = "lekhabot zerem",
+            pos = "phrase", semanticGroup = "electrician_actions",
             original = "לְכַבּוֹת זֶרֶם", translation = "отключить ток",
             definition = "לִסְגֹּר אֶת הַזְּרִימָה הַחַשְׁמַלִּית לִפְנֵי שֶׁנּוֹגְעִים בַּחוּטִים.",
             definitionNative = "Перекрыть электрический поток, прежде чем трогать жилы руками.",
@@ -167,7 +167,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172611L, 172612L, 172614L, 172615L)),
         WordEntity(
             id = 172614, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "electrician_actions", transliteration = "limdod metakh",
+            pos = "phrase", semanticGroup = "electrician_actions",
             original = "לִמְדֹּד מֶתַח", translation = "измерить напряжение",
             definition = "לִבְדֹּק בְּעֶזְרַת מַכְשִׁיר אִם יֵשׁ חַשְׁמַל וּבְכַמָּה הוּא חָזָק.",
             definitionNative = "Проверить прибором, есть ли электричество и насколько оно сильное.",
@@ -176,7 +176,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172611L, 172612L, 172613L, 172615L)),
         WordEntity(
             id = 172615, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "electrician_actions", transliteration = "lehakhlif nura",
+            pos = "phrase", semanticGroup = "electrician_actions",
             original = "לְהַחְלִיף נוּרָה", translation = "заменить лампочку",
             definition = "לְהוֹצִיא אֶת הַיְּשָׁנָה שֶׁשָּׂרְפָה וְלְהַכְנִיס חֲדָשָׁה בִּמְקוֹמָהּ.",
             definitionNative = "Достать перегоревшую старую и поставить на её место новую.",
@@ -187,7 +187,7 @@ object WordDataHebrewElectricianL1 {
         // ── electrician_safety (5) — средства защиты ──
         WordEntity(
             id = 172616, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "electrician_safety", transliteration = "kfafot gumi",
+            pos = "phrase", semanticGroup = "electrician_safety",
             original = "כְּפָפוֹת גוּמִי", translation = "резиновые перчатки",
             definition = "כִּסּוּי לַיָּדַיִם מֵחֹמֶר רַךְ שֶׁאֵינוֹ מַעֲבִיר זֶרֶם חַשְׁמַלִּי.",
             definitionNative = "Покрытие на руки из мягкого материала, что не пропускает ток.",
@@ -196,7 +196,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172618L, 172619L, 172620L)),
         WordEntity(
             id = 172617, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "electrician_safety", transliteration = "sulam",
+            pos = "noun", semanticGroup = "electrician_safety",
             original = "סוֹלָם", translation = "стремянка / лестница",
             definition = "כְּלִי עִם שְׁלַבֵּי עַלְיָה לְהַגִּיעַ לִמְקוֹמוֹת גְּבוֹהִים בַּתִּקְרָה אוֹ בַּקִּיר.",
             definitionNative = "Приспособление со ступенями для подъёма к высоким местам в потолке или стене.",
@@ -205,7 +205,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true),
         WordEntity(
             id = 172618, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "electrician_safety", transliteration = "kasdat avoda",
+            pos = "phrase", semanticGroup = "electrician_safety",
             original = "קַסְדַּת עֲבוֹדָה", translation = "рабочая каска",
             definition = "כּוֹבַע קָשֶׁה שֶׁמֵּגֵן עַל הָרֹאשׁ מִנְּפִילַת חֲפָצִים מִלְּמַעְלָה.",
             definitionNative = "Жёсткий головной убор — спасает голову от падающих сверху предметов.",
@@ -214,7 +214,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172603L, 172607L, 172616L, 172619L, 172620L)),
         WordEntity(
             id = 172619, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "electrician_safety", transliteration = "mishkafey betikhut",
+            pos = "phrase", semanticGroup = "electrician_safety",
             original = "מִשְׁקְפֵי בְּטִיחוּת", translation = "защитные очки",
             definition = "מִשְׁקָפַיִם שְׁקוּפִים שֶׁשּׁוֹמְרִים עַל הָעֵינַיִם מֵרְסִיסִים אוֹ אָבָק.",
             definitionNative = "Прозрачные очки, что берегут глаза от осколков или пыли.",
@@ -223,7 +223,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172616L, 172618L, 172620L)),
         WordEntity(
             id = 172620, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "electrician_safety", transliteration = "sikun hitkhashmelut",
+            pos = "phrase", semanticGroup = "electrician_safety",
             original = "סִכּוּן הִתְחַשְׁמְלוּת", translation = "риск удара током",
             definition = "אֶפְשָׁרוּת שֶׁאָדָם יִפָּגַע מֵרֶזְרֶם חַזָק כְּשֶׁהוּא נוֹגֵעַ בַּחוּטִים.",
             definitionNative = "Возможность пострадать от сильного тока, если коснуться оголённых жил.",
@@ -234,7 +234,7 @@ object WordDataHebrewElectricianL1 {
         // ── electrician_problems (5) — типичные мелкие проблемы ──
         WordEntity(
             id = 172621, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "electrician_problems", transliteration = "tkala",
+            pos = "noun", semanticGroup = "electrician_problems",
             original = "תְּקָלָה", translation = "неисправность",
             definition = "מַצָּב שֶׁבּוֹ מַכְשִׁיר אוֹ מַעֲרֶכֶת מַפְסִיקִים לַעֲבוֹד כְּמוֹ שֶׁצָּרִיךְ.",
             definitionNative = "Положение, когда прибор или система перестают работать как следует.",
@@ -243,7 +243,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172603L, 172607L, 172618L, 172622L)),
         WordEntity(
             id = 172622, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "electrician_problems", transliteration = "ashan",
+            pos = "noun", semanticGroup = "electrician_problems",
             original = "עָשָׁן", translation = "дым",
             definition = "עֲנַן אָפֹר אוֹ שָׁחֹר שֶׁעוֹלֶה כְּשֶׁמַּשֶּׁהוּ נִשְׂרָף אוֹ מִתְחַמֵּם מִדַּי.",
             definitionNative = "Серое или чёрное облако, что поднимается, когда что-то горит или сильно греется.",
@@ -252,7 +252,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172621L, 172624L)),
         WordEntity(
             id = 172623, setId = 1726, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "electrician_problems", transliteration = "mekhaseh sheka",
+            pos = "phrase", semanticGroup = "electrician_problems",
             original = "מְכַסֶּה שֶׁקַע", translation = "заглушка розетки",
             definition = "פִּסַּת פְּלַסְטִיק שֶׁמַּכְנִיסִים לַחוֹר כְּדֵי שֶׁתִּינוֹק לֹא יַכְנִיס יָד.",
             definitionNative = "Кусочек пластика в отверстие — чтобы малыш не сунул туда пальцы.",
@@ -261,7 +261,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172624L, 172625L)),
         WordEntity(
             id = 172624, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "electrician_problems", transliteration = "reyakh srifa",
+            pos = "phrase", semanticGroup = "electrician_problems",
             original = "רֵיחַ שְׂרִיפָה", translation = "запах гари",
             definition = "רֵיחַ חָרִיף שֶׁל פְּלַסְטִיק אוֹ חוּט שֶׁמִּתְחַמֵּם וּמִתְחִיל לְהִתְפַּחֵם.",
             definitionNative = "Резкий запах пластика или провода, что слишком разогрелся и тлеет.",
@@ -270,7 +270,7 @@ object WordDataHebrewElectricianL1 {
             isFillInBlankSafe = true, fillInBlankExclusions = listOf(172622L, 172623L, 172625L)),
         WordEntity(
             id = 172625, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "electrician_problems", transliteration = "omes yater",
+            pos = "phrase", semanticGroup = "electrician_problems",
             original = "עוֹמֶס יָתֵר", translation = "перегрузка сети",
             definition = "מַצָּב שֶׁבּוֹ יוֹתֵר מִדַּי מַכְשִׁירִים מְחֻבָּרִים וְהַחַשְׁמַל מִתְחַמֵּם.",
             definitionNative = "Случай, когда подключено слишком много приборов и проводка начинает греться.",

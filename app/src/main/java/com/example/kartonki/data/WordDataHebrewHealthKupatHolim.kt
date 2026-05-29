@@ -80,7 +80,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Официальное действие — выход из одной больничной кассы и вступление в другую.",
             example = "מַעֲבָר קֻפָּה מִתְבַּצֵּעַ דֶּרֶךְ הָאֲתָר שֶׁל הַבִּטּוּחַ הַלְּאֻמִּי.",
             exampleNative = "מַעֲבָר קֻפָּה оформляется через сайт Битуах Леуми за пару минут.",
-            transliteration = "маавар купа",
             pos = "phrase", semanticGroup = "health_il_kassot", fillInBlankExclusions = listOf(191702L, 191703L, 191704L, 191705L)),
 
         WordEntity(id = 191702, setId = 1917, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -90,7 +89,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Пластиковая карта кассы — идентифицирует пациента в клинике и в аптеке.",
             example = "בְּלִי כַּרְטִיס מְבֻטָּח הָאָחוֹת לֹא יְכוֹלָה לִפְתֹּחַ אֶת הַתִּיק.",
             exampleNative = "Без כַּרְטִיס מְבֻטָּח медсестра не сможет открыть мою медкарту.",
-            transliteration = "картис мэвутах",
             pos = "phrase", semanticGroup = "health_il_kassot", fillInBlankExclusions = listOf(191701L, 191703L, 191704L, 191705L)),
 
         WordEntity(id = 191703, setId = 1917, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -100,7 +98,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Офис в районе, где оформляют записи и сдают базовые анализы рядом с домом.",
             example = "סָנִיף קֻפַּת חוֹלִים נִפְתָּח בְּשֶׁבַע בַּבֹּקֶר וְעוֹמֵד עַד הָעֶרֶב.",
             exampleNative = "סָנִיף קֻפַּת חוֹלִים открывается в семь утра и стоит открытым до вечера.",
-            transliteration = "сниф купат холим",
             pos = "phrase", semanticGroup = "health_il_kassot", fillInBlankExclusions = listOf(191701L, 191702L, 191704L, 191705L)),
 
         WordEntity(id = 191704, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -110,7 +107,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Частные специалисты, заключившие соглашение с кассой, — визит у них дешевле полного.",
             example = "מָצָאתִי אוֹרְתוֹפֵד טוֹב בְּרֶשֶׁת רוֹפְאֵי הֶסְכֵּם בָּאֲתָר.",
             exampleNative = "Я нашла хорошего ортопеда в רֶשֶׁת רוֹפְאֵי הֶסְכֵּם прямо на сайте.",
-            transliteration = "рэшэт рофэй hэскэм",
             pos = "phrase", semanticGroup = "health_il_kassot", fillInBlankExclusions = listOf(191701L, 191702L, 191703L, 191705L)),
 
         WordEntity(id = 191705, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -120,7 +116,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Бонусная программа внутри кассы — скидки на спортивные кружки и на консультации диетолога.",
             example = "הִצְטָרַפְתִּי לְמוֹעֲדוֹן בְּרִיאוּת וְקִבַּלְתִּי הֲנָחָה עַל חֲדַר כֹּשֶׁר.",
             exampleNative = "Я записалась в מוֹעֲדוֹן בְּרִיאוּת и получила скидку на абонемент в зал.",
-            transliteration = "моадон бриют",
             pos = "phrase", semanticGroup = "health_il_kassot", fillInBlankExclusions = listOf(191701L, 191702L, 191703L, 191704L)),
 
         // ── Group: health_il_appointments (5 words) ───────────────────────────
@@ -132,7 +127,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Свободное время, забронированное заранее у врача через приложение или по телефону.",
             example = "קָבַעְתִּי תּוֹר רְפוּאִי לְעֵינַיִים לְעוֹד שְׁבוּעַיִם.",
             exampleNative = "Я записалась на תּוֹר רְפוּאִי к окулисту через две недели.",
-            transliteration = "тор рэфуи",
             pos = "phrase", semanticGroup = "health_il_appointments", fillInBlankExclusions = listOf(191707L, 191708L, 191709L, 191710L)),
 
         WordEntity(id = 191707, setId = 1917, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -142,7 +136,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Свободная запись только через месяцы — обычное явление у специалистов в кассе.",
             example = "קִבַּלְתִּי תּוֹר רָחוֹק לְעוֹר רַק בְּסוֹף הַשָּׁנָה.",
             exampleNative = "Мне дали תּוֹר רָחוֹק к дерматологу только на конец года.",
-            transliteration = "тор рахок",
             pos = "phrase", semanticGroup = "health_il_appointments", fillInBlankExclusions = listOf(191706L, 191708L, 191709L, 191710L)),
 
         WordEntity(id = 191708, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -152,7 +145,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Обследования и прививки, что делают заранее, — чтобы предупредить болезни до их появления.",
             example = "רְפוּאָה מְקַדֶּמֶת מַצִּילָה כֶּסֶף וְזְמַן בַּטְּוָוח הָאָרֹךְ.",
             exampleNative = "רְפוּאָה מְקַדֶּמֶת экономит деньги и время в долгосрочной перспективе.",
-            transliteration = "рэфуа мкадэмэт",
             pos = "phrase", semanticGroup = "health_il_appointments", fillInBlankExclusions = listOf(191706L, 191707L, 191709L, 191710L)),
 
         WordEntity(id = 191709, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -162,7 +154,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Приход врача на дом к пациенту — услуга для пожилых и для тех, кто не может ходить.",
             example = "הִזְמַנְתִּי בִּקּוּר בַּיִת רְפוּאִי לְסָבָתָא כִּי הִיא לֹא יְכוֹלָה לָצֵאת.",
             exampleNative = "Я заказала בִּקּוּר בַּיִת רְפוּאִי бабушке, потому что она не выходит из дома.",
-            transliteration = "бикур баит рэфуи",
             pos = "phrase", semanticGroup = "health_il_appointments", fillInBlankExclusions = listOf(191706L, 191707L, 191708L, 191710L)),
 
         WordEntity(id = 191710, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -172,7 +163,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Встреча с врачом в видео или в чате — без необходимости физически приходить в филиал.",
             example = "רְפוּאָה מֵרָחוֹק מַתְאִימָה לְמַחֲלוֹת קַלּוֹת וּלְמַעֲקַב כְּרוֹנִי.",
             exampleNative = "רְפוּאָה מֵרָחוֹק подходит для лёгких заболеваний и для хронического наблюдения.",
-            transliteration = "рэфуа мэрахок",
             pos = "phrase", semanticGroup = "health_il_appointments", fillInBlankExclusions = listOf(191706L, 191707L, 191708L, 191709L)),
 
         // ── Group: health_il_payments (5 words) ───────────────────────────────
@@ -184,7 +174,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Бланк, который заполняют, чтобы получить обратно деньги за медицинскую услугу.",
             example = "הֵגַשְׁתִּי טוֹפֶס בַּקָּשַׁת הַחְזֵר עַל בְּדִיקַת אוּלְטְרָה-סָאוּנְד.",
             exampleNative = "Я подала טוֹפֶס בַּקָּשַׁת הַחְזֵר на УЗИ, что делала в частной клинике.",
-            transliteration = "тофэс бакашат hахзэр",
             pos = "phrase", semanticGroup = "health_il_payments", fillInBlankExclusions = listOf(191712L, 191713L, 191714L, 191715L)),
 
         WordEntity(id = 191712, setId = 1917, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -194,7 +183,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Бумажный талон, что подтверждает оплату у стойки кассы, — хранят для возврата или для налоговой.",
             example = "שָׁמַרְתִּי תְּלוּשׁ קַבָּלָה כְּדֵי לְהַגִּישׁ לְמַס הַכְנָסָה בְּסוֹף הַשָּׁנָה.",
             exampleNative = "Я сохранила תְּלוּשׁ קַבָּלָה, чтобы подать в налоговую в конце года.",
-            transliteration = "тлуш кабала",
             pos = "phrase", semanticGroup = "health_il_payments", fillInBlankExclusions = listOf(191711L, 191713L, 191714L, 191715L)),
 
         WordEntity(id = 191713, setId = 1917, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -204,7 +192,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Фиксированная ежемесячная оплата за дополнительную программу кассы, поверх базовой страховки.",
             example = "דְּמֵי חָבֵר בָּעַלוּ הַשָּׁנָה בְּכַעֲשָׂרָה אֲחוּזִים.",
             exampleNative = "דְּמֵי חָבֵר подорожали в этом году примерно на десять процентов.",
-            transliteration = "дмэй хавэр",
             pos = "phrase", semanticGroup = "health_il_payments", fillInBlankExclusions = listOf(191711L, 191712L, 191714L, 191715L)),
 
         WordEntity(id = 191714, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -214,7 +201,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Официальный документ, что даёт скидку на лекарства и на визиты к специалистам — выдаёт семейный врач.",
             example = "קִבַּלְתִּי תְּעוּדַת חוֹלֶה כְרוֹנִי עַל לַחַץ דָּם גָּבוֹהַּ.",
             exampleNative = "Я получил תְּעוּדַת חוֹלֶה כְרוֹנִי из-за высокого давления — теперь скидка.",
-            transliteration = "тэудат холэ крони",
             pos = "phrase", semanticGroup = "health_il_payments", fillInBlankExclusions = listOf(191711L, 191712L, 191713L, 191715L)),
 
         WordEntity(id = 191715, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -224,7 +210,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Максимальная сумма, что больной платит за квартал, — выше неё касса покрывает всё сама.",
             example = "הִגַּעְתִּי לְתִקְרַת תַּשְׁלוּם בְּחֹדֶשׁ מַרְץ וְלֹא שִׁלַּמְתִּי יוֹתֵר.",
             exampleNative = "Я достигла תִּקְרַת תַּשְׁלוּם в марте и больше ничего не платила.",
-            transliteration = "тикрат ташлум",
             pos = "phrase", semanticGroup = "health_il_payments"),
 
         // ── Group: health_il_diagnostics (5 words) ────────────────────────────
@@ -236,7 +221,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Запись заранее на лабораторное обследование или визуализацию — через приложение или в филиале.",
             example = "הַזְמָנַת בְּדִיקָה לְמַעְבָּדָה מִתְבַּצַּעַת בִּשְׁתֵּי דַּקּוֹת בְּאַפְּלִיקַצְיָה.",
             exampleNative = "הַזְמָנַת בְּדִיקָה в лабораторию делается за две минуты в приложении.",
-            transliteration = "hазманат бдика",
             pos = "phrase", semanticGroup = "health_il_diagnostics", fillInBlankExclusions = listOf(191717L, 191718L, 191719L, 191720L)),
 
         WordEntity(id = 191717, setId = 1917, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -246,7 +230,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Формат отправки лабораторных результатов клиенту — без необходимости приходить в филиал.",
             example = "תּוֹצָאוֹת בַּמֵּייל הִגִּיעוּ בְּסוֹף הַיּוֹם הָאוֹתוֹ.",
             exampleNative = "תּוֹצָאוֹת בַּמֵּייל пришли уже к концу того же дня.",
-            transliteration = "тоцаот ба-мэйл",
             pos = "phrase", semanticGroup = "health_il_diagnostics", fillInBlankExclusions = listOf(191716L, 191718L, 191719L, 191720L)),
 
         WordEntity(id = 191718, setId = 1917, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -256,7 +239,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Внутренний снимок тела в излучении X — показывает кости и переломы, видимые сразу.",
             example = "צִילּוּם רֶנְטְגֵן שֶׁל הַיָּד גִּלָּה סֶדֶק קָטָן.",
             exampleNative = "צִילּוּם רֶנְטְגֵן кисти показал небольшую трещину в кости.",
-            transliteration = "цилум рэнтгэн",
             pos = "phrase", semanticGroup = "health_il_diagnostics", fillInBlankExclusions = listOf(191716L, 191717L, 191719L, 191720L)),
 
         WordEntity(id = 191719, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -266,7 +248,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Курс встреч с терапевтом — упражнения для восстановления движения после травмы.",
             example = "הָרוֹפֵא רָשַׁם טִיפּוּל פִיזְיוֹתֶרָפִּי לִשְׁמוֹנֶה מִפְגָּשִׁים.",
             exampleNative = "Врач выписал טִיפּוּל פִיזְיוֹתֶרָפִּי на восемь сеансов в районной клинике.",
-            transliteration = "типуль физиотэрапи",
             pos = "phrase", semanticGroup = "health_il_diagnostics", fillInBlankExclusions = listOf(191716L, 191717L, 191718L, 191720L)),
 
         WordEntity(id = 191720, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -276,7 +257,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Анализ крови, что выявляет риск наследственных болезней, — входит в корзину услуг для семей.",
             example = "זוֹגוֹת צְעִירִים עוֹשִׂים בְּדִיקָה גְּנֵטִית לִפְנֵי הֵרָיוֹן.",
             exampleNative = "Молодые пары делают בְּדִיקָה גְּנֵטִית до планирования беременности.",
-            transliteration = "бдика гэнэтит",
             pos = "phrase", semanticGroup = "health_il_diagnostics", fillInBlankExclusions = listOf(191716L, 191717L, 191718L, 191719L)),
 
         // ── Group: health_il_emergency (5 words) ──────────────────────────────
@@ -288,7 +268,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Национальный экстренный номер для вызова скорой и для медицинских указаний по телефону.",
             example = "הִתְקַשַּׁרְתִּי לְמוֹקֵד 101 כְּשֶׁאַבָּא הִתְעַלֵּף בַּסָּלוֹן.",
             exampleNative = "Я позвонил в מוֹקֵד 101, когда папа потерял сознание в гостиной.",
-            transliteration = "мокэд мэа вэ-эхад",
             pos = "phrase", semanticGroup = "health_il_emergency", fillInBlankExclusions = listOf(191722L, 191723L)),
 
         WordEntity(id = 191722, setId = 1917, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -298,7 +277,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Телефон кассы — дежурная медсестра сразу отвечает на медицинские вопросы и советует.",
             example = "מוֹקֵד קֻפָּה פּוֹתֵחַ עֶשְׂרִים וְאַרְבַּע שָׁעוֹת בְּיוֹם.",
             exampleNative = "מוֹקֵד קֻפָּה открыт двадцать четыре часа в сутки без выходных.",
-            transliteration = "мокэд купа",
             pos = "phrase", semanticGroup = "health_il_emergency", fillInBlankExclusions = listOf(191721L, 191723L)),
 
         WordEntity(id = 191723, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -308,7 +286,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Клиника, что работает вне обычных часов, — ночью и в шабат, когда филиалы кассы закрыты.",
             example = "שֵׁרוּת תּוֹרָנִי לְיַד הַבַּיִת פּוֹתֵחַ עַד חֲצוֹת.",
             exampleNative = "שֵׁרוּת תּוֹרָנִי рядом с домом работает до полуночи каждый вечер.",
-            transliteration = "шэрут торани",
             pos = "phrase", semanticGroup = "health_il_emergency", fillInBlankExclusions = listOf(191721L, 191722L)),
 
         WordEntity(id = 191724, setId = 1917, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -318,7 +295,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Сеть клиник для срочных состояний, что не требуют приёмного отделения больницы.",
             example = "לָקַחְתִּי אֶת הַיַּלְדָּה לְטֶרֶם בִּגְלַל חֹם גָּבוֹהַּ.",
             exampleNative = "Я повёз дочку в טֶרֶם из-за высокой температуры в субботу вечером.",
-            transliteration = "тэрэм",
             pos = "noun", semanticGroup = "health_il_emergency", fillInBlankExclusions = listOf(191725L)),
 
         WordEntity(id = 191725, setId = 1917, languagePair = "he-ru", rarity = "RARE",
@@ -328,7 +304,6 @@ object WordDataHebrewHealthKupatHolim {
             definitionNative = "Частная компания экстренной медицины — присылает врача на дом за минуты, по абонементу.",
             example = "מָנוּי בְּנַטָּלִי הִצִּיל לָנוּ לַיְלָה שָׁלֵם בְּלִי חֲדַר מִיּוּן.",
             exampleNative = "Абонемент в נַטָּלִי спас нам ночь — мы не поехали в приёмный покой.",
-            transliteration = "наталИ",
             pos = "noun", semanticGroup = "health_il_emergency", fillInBlankExclusions = listOf(191724L)),
     )
 }

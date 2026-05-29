@@ -68,7 +68,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Античная школа Диогена, отвергавшая богатство и условности ради простой жизни по природе.",
             example = "דִּיוֹגֶנֶס גָּלַּם צִינִיזְם — חַי בְּחָבִית וְלָעַג לְאָלֶכְּסַנְדֶּר.",
             exampleNative = "Диоген воплощал צִינִיזְם — жил в бочке и насмехался над Александром.",
-            transliteration = "циницизм",
             pos = "noun", semanticGroup = "philo_school_ancient", fillInBlankExclusions = listOf(190102L, 190103L, 190104L, 190105L)),
 
         WordEntity(id = 190102, setId = 1901, languagePair = "he-ru", rarity = "RARE",
@@ -78,7 +77,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Традиция Платона, утверждающая, что абстрактные формы реальнее изменчивого материального мира.",
             example = "מָתֵמָטִיקָאִי שֶׁאוֹמֵר שֶׁמִּסְפָּרִים קַיָּמִים בִּפְנֵי עַצְמָם נִכְנָס לְאַפְלָטוֹנִיזְם.",
             exampleNative = "Математик, говорящий, что числа существуют сами по себе, впадает в אַפְלָטוֹנִיזְם.",
-            transliteration = "афлатонизм",
             pos = "noun", semanticGroup = "philo_school_ancient", fillInBlankExclusions = listOf(190101L, 190103L, 190104L, 190105L)),
 
         WordEntity(id = 190103, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -88,7 +86,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Позднее течение Плотина: вся реальность исходит из единого высшего начала — Единого.",
             example = "פְּלוֹטִינוּס הִשְׁפִּיעַ עַל הַתֵּאוֹלוֹגְיָה הַנּוֹצְרִית דֶּרֶךְ נֵאוֹ־אַפְלָטוֹנִיזְם.",
             exampleNative = "Плотин повлиял на христианскую теологию через נֵאוֹ־אַפְלָטוֹנִיזְם.",
-            transliteration = "нэо-афлатонизм",
             pos = "noun", semanticGroup = "philo_school_ancient", fillInBlankExclusions = listOf(190101L, 190102L, 190104L, 190105L)),
 
         WordEntity(id = 190104, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -98,7 +95,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Средневековый метод Фомы Аквинского: совмещать религиозную веру с аристотелевской логикой.",
             example = "סְכוֹלַסְטִיקָה שָׁלְטָה בָּאוּנִיבֶרְסִיטָאוֹת אֵירוֹפָּה עַד הַתְּקוּפָה הַחֲדָשָׁה.",
             exampleNative = "סְכוֹלַסְטִיקָה господствовала в европейских университетах до Нового времени.",
-            transliteration = "схоластика",
             pos = "noun", semanticGroup = "philo_school_ancient", fillInBlankExclusions = listOf(190101L, 190102L, 190103L, 190105L)),
 
         WordEntity(id = 190105, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -108,7 +104,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Школа Аристотеля: наблюдение природы, логика и классификация наук.",
             example = "אֲרִיסְטוֹ הִקִּים אֶת פֵּרִיפַּטֶטִיזְם בַּלִּיקֵיוֹן וְלִמֵּד תּוֹךְ הִלּוּךְ עִם תַּלְמִידָיו.",
             exampleNative = "Аристотель основал פֵּרִיפַּטֶטִיזְם в Ликее и учил, прогуливаясь с учениками.",
-            transliteration = "пэрипатэтизм",
             pos = "noun", semanticGroup = "philo_school_ancient", fillInBlankExclusions = listOf(190101L, 190102L, 190103L, 190104L)),
 
         // ── Group: philo_school_continental (5 words) ─────────────────────────
@@ -120,7 +115,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Идея Ницше: всякая истина определена углом зрения и интересами того, кто на неё смотрит.",
             example = "דֶּרֶךְ פֶּרְסְפֶּקְטִיבִיזְם טָעַן נִיטְשֶׁה שֶׁאֵין עֻבְדּוֹת טְהוֹרוֹת, רַק קְרִיאוֹת.",
             exampleNative = "Через פֶּרְסְפֶּקְטִיבִיזְם Ницше доказывал: нет чистых фактов, только прочтения.",
-            transliteration = "пэрспэктивизм",
             pos = "noun", semanticGroup = "philo_school_continental", fillInBlankExclusions = listOf(190107L, 190108L, 190109L, 190110L)),
 
         WordEntity(id = 190107, setId = 1901, languagePair = "he-ru", rarity = "RARE",
@@ -130,7 +124,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Убеждение, что всё происходящее предрешено и человеческие усилия не могут это изменить.",
             example = "סִפְרוּת רוּסִית סְפוּגָה פָטָלִיזְם — מִדּוּאֵל פּוּשְׁקִין עַד קְרָבוֹת טוֹלְסְטוֹי.",
             exampleNative = "Русская литература пропитана פָטָלִיזְם — от дуэлей Пушкина до битв Толстого.",
-            transliteration = "фатализм",
             pos = "noun", semanticGroup = "philo_school_continental", fillInBlankExclusions = listOf(190106L, 190108L, 190109L, 190110L)),
 
         WordEntity(id = 190108, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -140,7 +133,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Американское движение Эмерсона и Торо: поиск истины в природе и интуиции.",
             example = "תוֹרוֹ פָּרַשׁ לְוַולְדֵּן כְּדֵי לְתַרְגֵּל טְרַנְסְצֶנְדֶנְטָלִיזְם בְּיַעַר.",
             exampleNative = "Торо удалился к Уолдену, чтобы практиковать טְרַנְסְצֶנְדֶנְטָלִיזְם в лесу.",
-            transliteration = "трансцэндэнтализм",
             pos = "noun", semanticGroup = "philo_school_continental", fillInBlankExclusions = listOf(190106L, 190107L, 190109L, 190110L)),
 
         WordEntity(id = 190109, setId = 1901, languagePair = "he-ru", rarity = "RARE",
@@ -150,7 +142,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Учение Маркса: история объясняется борьбой классов за средства производства и материальные условия.",
             example = "מַרְקְסִיזְם הִשְׁפִּיעַ עַל גַּלֵּי הַמַּהְפֵּכוֹת בַּמֵּאָה הָעֶשְׂרִים בְּכָל יַבֶּשֶׁת.",
             exampleNative = "מַרְקְסִיזְם повлиял на волны революций XX века на каждом континенте.",
-            transliteration = "маркъсизм",
             pos = "noun", semanticGroup = "philo_school_continental", fillInBlankExclusions = listOf(190106L, 190107L, 190108L, 190110L)),
 
         WordEntity(id = 190110, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -160,7 +151,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Подход Фрейда: поведение взрослого движимо в основном бессознательными влечениями и детскими комплексами.",
             example = "מְבַקְּרִים אוֹמְרִים שֶׁפְרוֹיְדִיזְם מַסְבִּיר הַכֹּל וְלָכֵן לֹא נִתָּן לְהַפְרָכָה.",
             exampleNative = "Критики говорят, что פְרוֹיְדִיזְם объясняет всё и потому неопровержим.",
-            transliteration = "фройдизм",
             pos = "noun", semanticGroup = "philo_school_continental", fillInBlankExclusions = listOf(190106L, 190107L, 190108L, 190109L)),
 
         // ── Group: philo_school_analytic_epistem (5 words) ────────────────────
@@ -172,7 +162,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Идея Конта: настоящее знание идёт только от наблюдения и опыта, а не от метафизических догадок.",
             example = "קוֹנְט הִצִּיעַ פּוֹזִיטִיבִיזְם כְּתַחֲלִיף לִתֵיאוֹלוֹגְיָה בַּסְבָרַת הָעוֹלָם.",
             exampleNative = "Конт предложил פּוֹזִיטִיבִיזְם как замену теологии в объяснении мира.",
-            transliteration = "позитивизм",
             pos = "noun", semanticGroup = "philo_school_analytic_epistem", fillInBlankExclusions = listOf(190112L, 190113L, 190114L, 190115L)),
 
         WordEntity(id = 190112, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -182,7 +171,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Позиция, что методы естественных наук — единственный путь к настоящему знанию о чём-либо важном.",
             example = "סַם הַרִיס מֻאֲשָׁם בְּסַיֶנְטִיזְם — כְּאִלּוּ מַדָּע פּוֹתֵר שְׁאֵלוֹת מוּסָר.",
             exampleNative = "Сэма Харриса обвиняют в סַיֶנְטִיזְם — будто наука решает вопросы морали.",
-            transliteration = "саентизм",
             pos = "noun", semanticGroup = "philo_school_analytic_epistem", fillInBlankExclusions = listOf(190111L, 190113L, 190114L, 190115L)),
 
         WordEntity(id = 190113, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -192,7 +180,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Подход Дьюи: идеи — инструмент для решения задач, их ценность измеряется практической пользой.",
             example = "דְּיוּאִי הִצִּיעַ אִינְסְטְרוּמֶנְטָלִיזְם כְּדַרְכּוֹ לְחַבֵּר חִנּוּךְ לְחַיֵּי יוֹם־יוֹם.",
             exampleNative = "Дьюи предложил אִינְסְטְרוּמֶנְטָלִיזְם, чтобы связать школу с повседневной жизнью.",
-            transliteration = "инструмэнтализм",
             pos = "noun", semanticGroup = "philo_school_analytic_epistem", fillInBlankExclusions = listOf(190111L, 190112L, 190114L, 190115L)),
 
         WordEntity(id = 190114, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -202,7 +189,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Позиция Пуанкаре: научные аксиомы — это удобные договорённости сообщества, а не открытие истины.",
             example = "קוֹנְוֶנְצְיוֹנָלִיזְם מַתִּיר לְכַמָּה גֵּאוֹמֶטְרְיוֹת לְחָיוֹת בְּמַקְבִּיל.",
             exampleNative = "קוֹנְוֶנְצְיוֹנָלִיזְם позволяет разным геометриям существовать параллельно.",
-            transliteration = "конвэнцйонализм",
             pos = "noun", semanticGroup = "philo_school_analytic_epistem", fillInBlankExclusions = listOf(190111L, 190112L, 190113L, 190115L)),
 
         WordEntity(id = 190115, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -212,7 +198,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Идея Пирса: всякое человеческое знание подлежит проверке и может оказаться ошибочным.",
             example = "פַלִיבִּילִיזְם הוֹפֵךְ אֶת הַמַּדָּע לְתַהֲלִיךְ פָּתוּחַ שֶׁל תִּקּוּן עַצְמִי.",
             exampleNative = "פַלִיבִּילִיזְם превращает науку в открытый процесс самоисправления.",
-            transliteration = "фалибилизм",
             pos = "noun", semanticGroup = "philo_school_analytic_epistem", fillInBlankExclusions = listOf(190111L, 190112L, 190113L, 190114L)),
 
         // ── Group: philo_school_metaphysics (5 words) ─────────────────────────
@@ -224,7 +209,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Позиция, что мир состоит из одного начала — будь то дух, материя или нечто иное.",
             example = "סְפִּינוֹזָה הֵגֵן עַל מוֹנִיזְם שֶׁבּוֹ אֱלֹהִים וְהַטֶּבַע הֵם אוֹתוֹ דָּבָר.",
             exampleNative = "Спиноза защищал מוֹנִיזְם, в котором Бог и природа — одно и то же.",
-            transliteration = "монизм",
             pos = "noun", semanticGroup = "philo_school_metaphysics", fillInBlankExclusions = listOf(190117L, 190118L, 190119L, 190120L)),
 
         WordEntity(id = 190117, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -234,7 +218,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Утверждение, что сознание — базовое свойство всей материи, а не только мозгов.",
             example = "סְטְרוֹסוֹן הֶחֱיָה אֶת פַּן־פְּסִיכִיזְם בְּכָךְ שֶׁאֲפִילוּ אֶלֶקְטְרוֹן יֵשׁ לוֹ פְּנִים.",
             exampleNative = "Стросон оживил פַּן־פְּסִיכִיזְם, утверждая, что даже у электрона есть внутреннее.",
-            transliteration = "пан-психизм",
             pos = "noun", semanticGroup = "philo_school_metaphysics", fillInBlankExclusions = listOf(190116L, 190118L, 190119L, 190120L)),
 
         WordEntity(id = 190118, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -244,7 +227,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Учение, оживлённое Бергсоном: в живом действует особое начало, не сводимое к физике и химии.",
             example = "וִיטָלִיזְם נָסוֹג כְּשֶׁבְּיוֹלוֹגְיָה מוֹלֵקוּלָרִית הִסְבִּירָה הַעֲבָרַת מֵידָע גֵּנֵטִי.",
             exampleNative = "וִיטָלִיזְם отступил, когда молекулярная биология объяснила передачу генетической информации.",
-            transliteration = "витализм",
             pos = "noun", semanticGroup = "philo_school_metaphysics", fillInBlankExclusions = listOf(190116L, 190117L, 190119L, 190120L)),
 
         WordEntity(id = 190119, setId = 1901, languagePair = "he-ru", rarity = "RARE",
@@ -254,7 +236,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Позиция, что мир объясняет себя сам — нет нужды в сверхъестественных силах или духовной инстанции.",
             example = "קְוַויְן דָּחַף נָטוּרָלִיזְם שֶׁבּוֹ פִּילוֹסוֹפְיָה רְצוּפָה עִם מַדָּעִי הַטֶּבַע.",
             exampleNative = "Куайн продвигал נָטוּרָלִיזְם, в котором философия едина с естественными науками.",
-            transliteration = "натурализм",
             pos = "noun", semanticGroup = "philo_school_metaphysics", fillInBlankExclusions = listOf(190116L, 190117L, 190118L, 190120L)),
 
         WordEntity(id = 190120, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -264,7 +245,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Идея Аристотеля: каждая сущность в природе действует ради внутренней цели.",
             example = "בְּיוֹלוֹגְיָה מוֹדֶרְנִית מוֹחֶקֶת תֶּלֵיאוֹלוֹגְיָה מִתּוֹךְ אֵבוֹלוּצְיָה עִוֶּרֶת.",
             exampleNative = "Современная биология выбрасывает תֶּלֵיאוֹלוֹגְיָה ради слепой эволюции.",
-            transliteration = "тэлэология",
             pos = "noun", semanticGroup = "philo_school_metaphysics", fillInBlankExclusions = listOf(190116L, 190117L, 190118L, 190119L)),
 
         // ── Group: philo_school_ethics (5 words) ──────────────────────────────
@@ -276,7 +256,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Подход Канта: поступок справедлив по правилу долга, направляющему его, а не по последствиям.",
             example = "דֵאוֹנְטוֹלוֹגְיָה אוֹסֶרֶת לְשַׁקֵּר גַּם כְּשֶׁשֶּׁקֶר קָטָן יָכוֹל לְהַצִּיל חַיִּים.",
             exampleNative = "דֵאוֹנְטוֹלוֹגְיָה запрещает лгать, даже когда маленькая ложь может спасти жизнь.",
-            transliteration = "дэонтология",
             pos = "noun", semanticGroup = "philo_school_ethics", fillInBlankExclusions = listOf(190123L, 190124L, 190125L)),
 
         WordEntity(id = 190122, setId = 1901, languagePair = "he-ru", rarity = "RARE",
@@ -286,7 +265,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Подход Аристотеля: вопрос не «какому правилу следовать», а «каким человеком становиться» в зрелой жизни.",
             example = "מָקְאִינְטַייר הֶחֱיָה אֶת אֶתִיקַת מִידּוֹת בַּסֵּפֶר «אַחֲרֵי הַסְּגֻלָּה».",
             exampleNative = "Макинтайр оживил אֶתִיקַת מִידּוֹת в книге «После добродетели».",
-            transliteration = "этикат мидот",
             pos = "phrase", semanticGroup = "philo_school_ethics"),
 
         WordEntity(id = 190123, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -296,7 +274,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Образ жизни, отказывающийся от телесного комфорта и наслаждения ради духовных или нравственных целей.",
             example = "נְזִירִים שֶׁל יְמֵי הַבֵּינַיִם תִּרְגְּלוּ אַסְקֶטִיזְם חָמוּר וְיָשְׁנוּ עַל אֶבֶן.",
             exampleNative = "Средневековые монахи практиковали суровый אַסְקֶטִיזְם и спали на камне.",
-            transliteration = "аскэтизм",
             pos = "noun", semanticGroup = "philo_school_ethics", fillInBlankExclusions = listOf(190121L, 190124L, 190125L)),
 
         WordEntity(id = 190124, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -306,7 +283,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Нравственная позиция: поступок оценивается только по последствиям, а не по намерению или правилу.",
             example = "קוֹנְסֵקְוֶנְצִיאָלִיזְם חָמוּר יָכוֹל לְהַצְדִּיק שֶׁקֶר קָטָן שֶׁמַּצִּיל חַיִּים.",
             exampleNative = "Строгий קוֹנְסֵקְוֶנְצִיאָלִיזְם может оправдать маленькую ложь, спасающую жизнь.",
-            transliteration = "консэквэнциализм",
             pos = "noun", semanticGroup = "philo_school_ethics", fillInBlankExclusions = listOf(190121L, 190123L, 190125L)),
 
         WordEntity(id = 190125, setId = 1901, languagePair = "he-ru", rarity = "EPIC",
@@ -316,7 +292,6 @@ object WordDataHebrewPhilosophySchools {
             definitionNative = "Течение Сэндела и Макинтайра: человек формируется общиной, и её ценности предшествуют праву индивида.",
             example = "סַנְדֵּל הִשְׁתַּמֵּשׁ בְּקוֹמוּנִיטָרִיזְם כְּדֵי לְבַקֵּר אֶת הַלִּיבֵּרָלִיזְם שֶׁל רוֹלְז.",
             exampleNative = "Сэндел использовал קוֹמוּנִיטָרִיזְם, чтобы критиковать либерализм Ролза.",
-            transliteration = "комунитаризм",
             pos = "noun", semanticGroup = "philo_school_ethics", fillInBlankExclusions = listOf(190121L, 190123L, 190124L)),
     )
 }

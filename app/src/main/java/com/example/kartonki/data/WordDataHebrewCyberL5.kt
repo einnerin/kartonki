@@ -72,7 +72,7 @@ object WordDataHebrewCyberL5 {
         // ── cyber_leadership (5) — security-руководители высшего звена ──
         WordEntity(
             id = 178201, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_leadership", transliteration = "si-ayso",
+            pos = "noun", semanticGroup = "cyber_leadership",
             original = "סִי-אַייסוֹ", translation = "CISO (директор по информационной безопасности)",
             definition = "מְנַהֵל בָּכִיר שֶׁאַחְרָאִי עַל כָּל הָאַסְטְרָטֶגְיָה וְעַל הַתַּקְצִיב שֶׁל הֲגָנָה דִיגִיטָלִית בָּאִרְגּוּן.",
             definitionNative = "Старший управленец, отвечающий за стратегию и бюджет цифровой защиты в организации.",
@@ -81,7 +81,7 @@ object WordDataHebrewCyberL5 {
         ),
         WordEntity(
             id = 178202, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_leadership", transliteration = "arkhitekt avtakha",
+            pos = "noun", semanticGroup = "cyber_leadership",
             original = "אַרְכִיטֵקְט אַבְטָחָה", translation = "архитектор безопасности",
             definition = "מְעַצֵּב מַעֲרָכוֹת שֶׁבּוֹחֵר אֵיךְ לְשַׁלֵּב הֲגָנָה לְתוֹךְ כָּל שִׁכְבָה שֶׁל הַמּוּצָר.",
             definitionNative = "Проектировщик систем — выбирает, как вшить защиту в каждый слой продукта.",
@@ -90,7 +90,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178201L, 178203L, 178204L, 178205L)),
         WordEntity(
             id = 178203, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_leadership", transliteration = "rosh ji-ar-si",
+            pos = "noun", semanticGroup = "cyber_leadership",
             original = "רֹאשׁ גִ׳י-אַר-סִי", translation = "head of GRC (governance, risk, compliance)",
             definition = "אִישׁ שֶׁמְּרַכֵּז אֶת כָּל הַנּוֹשְׂאִים שֶׁל מִשְׁטָר, סִיכּוּנִים וְעֵמִידָה בַּתְּקָנִים תַּחַת גַּג אֶחָד.",
             definitionNative = "Человек, сводящий под одну крышу все вопросы порядка, рисков и соответствия стандартам.",
@@ -99,7 +99,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178201L, 178202L, 178204L, 178205L)),
         WordEntity(
             id = 178204, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_leadership", transliteration = "mehandes rashi",
+            pos = "noun", semanticGroup = "cyber_leadership",
             original = "מְהַנְדֵּס רָאשִׁי", translation = "principal security engineer",
             definition = "אִישׁ טֶכְנִי בָּכִיר בְּיוֹתֵר שֶׁפּוֹתֵר אֶת הַבְּעָיוֹת הַקָּשׁוֹת בְּיוֹתֵר וּמַנְחֶה אֶת הַסְּגִילָה.",
             definitionNative = "Самый старший технарь — решает труднейшие задачи и задаёт техническое направление.",
@@ -108,7 +108,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178201L, 178202L, 178203L, 178205L)),
         WordEntity(
             id = 178205, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_leadership", transliteration = "bi-ayso",
+            pos = "noun", semanticGroup = "cyber_leadership",
             original = "בִּי-אַייסוֹ", translation = "BISO (бизнес-ориентированный CISO)",
             definition = "אִישׁ קֶשֶׁר שֶׁמְּתַרְגֵּם בֵּין צָרְכֵי הָעֵסֶק לְבֵין דְּרִישׁוֹת אַבְטָחָה בְּתוֹךְ דִּיוִויזְיָה מְסֻיֶּמֶת.",
             definitionNative = "Связной — переводит между нуждами бизнеса и требованиями защиты внутри одного дивизиона.",
@@ -119,7 +119,7 @@ object WordDataHebrewCyberL5 {
         // ── cyber_threat_intelligence (5) — разведка угроз ──
         WordEntity(
             id = 178206, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_threat_intelligence", transliteration = "modi'in iyumim",
+            pos = "noun", semanticGroup = "cyber_threat_intelligence",
             original = "מוֹדִיעִין אִיּוּמִים", translation = "threat intelligence (разведка угроз)",
             definition = "אִסּוּף וְעִבּוּד שֶׁל מֵידָע עַל תּוֹקְפִים וּשְׁיטוֹתֵיהֶם כְּדֵי לְהָכִין אֶת הַהֲגָנָה מֵרֹאשׁ.",
             definitionNative = "Сбор и обработка сведений о нападающих и их методах — чтобы готовить оборону заранее.",
@@ -128,7 +128,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178207L, 178208L, 178209L, 178210L)),
         WordEntity(
             id = 178207, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_threat_intelligence", transliteration = "feed indikatorim",
+            pos = "noun", semanticGroup = "cyber_threat_intelligence",
             original = "פִיד אִינְדִיקָטוֹרִים", translation = "фид индикаторов (IOC feed)",
             definition = "זֶרֶם רָצוּף שֶׁל סִימָנִים חֲשׁוּדִים מִקְּהִילָה בֵּינְלְאֻמִּית — נִכְנָס אוֹטוֹמָטִית לְמַעַרְכוֹת הַסִּינּוּן.",
             definitionNative = "Непрерывный поток подозрительных признаков от мирового сообщества — автоматом льётся в фильтры.",
@@ -137,7 +137,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178206L, 178208L, 178209L, 178210L)),
         WordEntity(
             id = 178208, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_threat_intelligence", transliteration = "tsayad iyumim",
+            pos = "noun", semanticGroup = "cyber_threat_intelligence",
             original = "צַיָּד אִיּוּמִים", translation = "threat hunting (охота за угрозами)",
             definition = "חִפּוּשׂ יָזוּם בְּלוֹגִים וּבְזִכָּרוֹן עַל סִימָנֵי תּוֹקֵף שֶׁאוּלַי כְּבָר נִמְצָא בָּרֶשֶׁת בְּלִי שֶׁהִתְרִיעַ.",
             definitionNative = "Активный поиск в логах и памяти — нет ли уже внутри сети нападавшего, что не подал сигнала.",
@@ -146,7 +146,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178206L, 178207L, 178209L, 178210L)),
         WordEntity(
             id = 178209, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_threat_intelligence", transliteration = "yikhus tkifa",
+            pos = "noun", semanticGroup = "cyber_threat_intelligence",
             original = "יִיחוּס תְּקִיפָה", translation = "attribution (атрибуция атаки)",
             definition = "הַחְלָטָה מְבֻסֶּסֶת רְאָיוֹת מִי הַקְּבוּצָה שֶׁעוֹמֶדֶת מֵאֲחוֹרֵי הַתְקָפָה — לְפִי כְּלִים, שָׂפָה וְזְמַנֵּי פְּעִילוּת.",
             definitionNative = "Доказательное решение, какая группа стоит за нападением — по инструментам, языку и часам активности.",
@@ -155,7 +155,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178206L, 178207L, 178208L, 178210L)),
         WordEntity(
             id = 178210, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_threat_intelligence", transliteration = "miter atak",
+            pos = "noun", semanticGroup = "cyber_threat_intelligence",
             original = "מִיטֶר אַטָאק", translation = "MITRE ATT&CK (фреймворк техник)",
             definition = "טַבְלָה רִשְׁמִית שֶׁמְּמַפָּה אֶת כָּל הַטַּכְטִיקוֹת וְהַטֶּכְנִיקוֹת שֶׁתּוֹקְפִים מִשְׁתַּמְּשִׁים בָּהֶן בָּעוֹלָם.",
             definitionNative = "Официальная таблица — карта всех тактик и техник, которыми пользуются нападающие в мире.",
@@ -166,7 +166,7 @@ object WordDataHebrewCyberL5 {
         // ── cyber_defense_in_depth (5) — многоуровневая оборона и автоматизация ──
         WordEntity(
             id = 178211, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_defense_in_depth", transliteration = "hagana rav-shikhvatit",
+            pos = "noun", semanticGroup = "cyber_defense_in_depth",
             original = "הֲגָנָה רַב-שִׁכְבָתִית", translation = "defense in depth (многоуровневая защита)",
             definition = "אַסְטְרָטֶגְיָה שֶׁבָּהּ כַּמָּה מַחְסוֹמִים עוֹמְדִים אֶחָד אַחֲרֵי הַשֵּׁנִי, כָּךְ שֶׁפְּרִיצָה אַחַת לֹא מַסְפִּיקָה.",
             definitionNative = "Стратегия — несколько барьеров стоят один за другим, чтобы одного пробоя не хватило.",
@@ -175,7 +175,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178212L, 178213L, 178214L, 178215L)),
         WordEntity(
             id = 178212, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_defense_in_depth", transliteration = "soar",
+            pos = "noun", semanticGroup = "cyber_defense_in_depth",
             original = "סוֹאָר", translation = "SOAR (оркестрация и автоматизация)",
             definition = "פְּלַטְפוֹרְמָה שֶׁמְּחַבֶּרֶת בֵּין כְּלֵי אַבְטָחָה וְמַרִיצָה תְּגוּבָה אוֹטוֹמָטִית עַל אֵרוּעִים שִׁגְרָתִיִּים.",
             definitionNative = "Платформа — связывает security-инструменты и катит автоматический ответ на рутинные события.",
@@ -184,7 +184,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178211L, 178213L, 178214L, 178215L)),
         WordEntity(
             id = 178213, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_defense_in_depth", transliteration = "otomatsiyat hagana",
+            pos = "noun", semanticGroup = "cyber_defense_in_depth",
             original = "אוֹטוֹמַצְיַת הֲגָנָה", translation = "security automation",
             definition = "הַחְלָפַת פְּעֻלּוֹת חוֹזְרוֹת שֶׁל אֲנָלִיסְט בִּסְקְרִיפְטִים שֶׁמַּגִּיבִים מִיָּד לְסִימָנִים מְסֻיָּמִים.",
             definitionNative = "Замена рутинных действий аналитика на скрипты — реагируют немедленно на конкретные сигналы.",
@@ -193,7 +193,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178211L, 178212L, 178214L, 178215L)),
         WordEntity(
             id = 178214, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_defense_in_depth", transliteration = "ranbuk",
+            pos = "noun", semanticGroup = "cyber_defense_in_depth",
             original = "רַאנְבּוּק", translation = "runbook (пошаговая инструкция)",
             definition = "מַסְמָךְ קָצָר וּמְפֹרָט שֶׁאוֹמֵר לַתּוֹרָן מָה לַעֲשׂוֹת צַעַד אַחַר צַעַד בִּמְקרֶה מֻגְדָּר.",
             definitionNative = "Краткий и подробный документ — говорит дежурному, что делать шаг за шагом в конкретном случае.",
@@ -202,7 +202,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178211L, 178212L, 178213L, 178215L)),
         WordEntity(
             id = 178215, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_defense_in_depth", transliteration = "pleybuk kakhol",
+            pos = "noun", semanticGroup = "cyber_defense_in_depth",
             original = "פְּלֵייבּוּק כָּחֹל", translation = "blue-team playbook (защитный сценарий)",
             definition = "אֹסֶף תַּסְרִיטֵי תְּגוּבָה לְצֶוֶות הַהֲגָנָה — אֵיךְ פּוֹעֲלִים מוּל סוּגֵי תְּקִיפוֹת שׁוֹנוֹת.",
             definitionNative = "Сборник реакций для защитной команды — как действовать при разных видах нападений.",
@@ -213,7 +213,7 @@ object WordDataHebrewCyberL5 {
         // ── cyber_governance_advanced (5) — governance высокого уровня ──
         WordEntity(
             id = 178216, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_governance_advanced", transliteration = "mediniyut avtakha",
+            pos = "noun", semanticGroup = "cyber_governance_advanced",
             original = "מְדִינִיּוּת אַבְטָחָה", translation = "security policy (политика безопасности)",
             definition = "מַסְמָךְ רִשְׁמִי שֶׁקּוֹבֵעַ אֵיזוֹ הִתְנַהֲגוּת מֻתֶּרֶת לְעוֹבְדִים מוּל מֵידָע וּמַעֲרָכוֹת בָּעֵסֶק.",
             definitionNative = "Официальный документ — определяет, какое поведение разрешено сотрудникам с данными и системами.",
@@ -222,7 +222,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178217L, 178218L, 178219L, 178220L)),
         WordEntity(
             id = 178217, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_governance_advanced", transliteration = "hadrakhat moda'ut",
+            pos = "noun", semanticGroup = "cyber_governance_advanced",
             original = "הַדְרָכַת מוּדָעוּת", translation = "тренинг по информбезопасности (awareness training)",
             definition = "סִדְרַת שִׁעוּרִים לְעוֹבְדִים שֶׁמְלַמֶּדֶת אוֹתָם לְזַהוֹת תַּרְמִיּוֹת וְלֹא לִמְסוֹר פְּרָטִים לַזָּרִים.",
             definitionNative = "Серия уроков для сотрудников — учит распознавать обманы и не выдавать сведения чужим.",
@@ -231,7 +231,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178216L, 178218L, 178219L, 178220L)),
         WordEntity(
             id = 178218, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_governance_advanced", transliteration = "matritzat sikunim",
+            pos = "noun", semanticGroup = "cyber_governance_advanced",
             original = "מַטְרִיצַת סִיכּוּנִים", translation = "risk register (реестр рисков)",
             definition = "טַבְלָה מְרֻכֶּזֶת שֶׁבָּהּ כָּל סִכּוּן יָדוּעַ נִרְשָׁם עִם הִסְתַּבְּרוּת, הַשְׁלָכָה וְאַחַרָאִי לְטִפּוּל.",
             definitionNative = "Сводная таблица — каждый известный риск записан с вероятностью, последствием и ответственным.",
@@ -240,7 +240,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178216L, 178217L, 178219L, 178220L)),
         WordEntity(
             id = 178219, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_governance_advanced", transliteration = "ayso esrim ve-sheva elef seventeen",
+            pos = "noun", semanticGroup = "cyber_governance_advanced",
             original = "אַייסוֹ 27017", translation = "ISO 27017 (cloud-стандарт)",
             definition = "תֶּקֶן בֵּינְלְאֻמִּי שֶׁמַּרְחִיב אֶת כְּלָלֵי אַבְטַחַת הַמֵּידָע בִּסְפֵצִיפִי לִסְבִיבַת עָנָן וְשֵׁרוּתִים מְשֻׁתָּפִים.",
             definitionNative = "Международный стандарт — расширяет правила защиты данных специально для облачной среды.",
@@ -249,7 +249,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178216L, 178217L, 178218L, 178220L)),
         WordEntity(
             id = 178220, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_governance_advanced", transliteration = "misgeret nist",
+            pos = "noun", semanticGroup = "cyber_governance_advanced",
             original = "מִסְגֶּרֶת נִיסְט", translation = "NIST cybersecurity framework",
             definition = "מוֹדֶל אָמֵרִיקָאִי עִם חָמֵשׁ פֻּנְקְצִיּוֹת — לְזַהוֹת, לְהָגֵן, לְגַלּוֹת, לְהָגִיב וּלְהִתְאוֹשֵׁשׁ.",
             definitionNative = "Американская модель с пятью функциями — опознать, защитить, обнаружить, ответить и восстановиться.",
@@ -260,7 +260,7 @@ object WordDataHebrewCyberL5 {
         // ── cyber_business_continuity (5) — непрерывность и страхование ──
         WordEntity(
             id = 178221, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_business_continuity", transliteration = "tokhnit hemshekhiyut",
+            pos = "noun", semanticGroup = "cyber_business_continuity",
             original = "תָּכְנִית הֶמְשֵׁכִיּוּת", translation = "business continuity plan (BCP)",
             definition = "מִסְמָךְ שֶׁמְפָרֵט אֵיךְ הַחֶבְרָה מַמְשִׁיכָה לִפְעֹל בִּזְמַן מַשְׁבֵּר חָמוּר אוֹ נְפִילַת מַעֲרָכוֹת.",
             definitionNative = "Документ — расписывает, как фирма продолжает работать во время серьёзного кризиса или падения систем.",
@@ -269,7 +269,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178222L, 178223L, 178224L, 178225L)),
         WordEntity(
             id = 178222, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_business_continuity", transliteration = "shikum me-ason",
+            pos = "noun", semanticGroup = "cyber_business_continuity",
             original = "שִׁיקּוּם מֵאָסוֹן", translation = "disaster recovery (восстановление после катастрофы)",
             definition = "אֹסֶף שֶׁל פְּרוֹצֶדוּרוֹת טֶכְנִיּוֹת לְהַחְזָרַת שְׁרָתִים וּמָסַדִּים אַחֲרֵי כִּשָּׁלוֹן רְחָב.",
             definitionNative = "Сборник технических процедур для возврата серверов и баз после крупного сбоя.",
@@ -278,7 +278,7 @@ object WordDataHebrewCyberL5 {
          fillInBlankExclusions = listOf(178221L, 178223L, 178224L, 178225L)),
         WordEntity(
             id = 178223, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_business_continuity", transliteration = "ar-pi-o",
+            pos = "noun", semanticGroup = "cyber_business_continuity",
             original = "אַר-פִּי-אוֹ", translation = "RPO (recovery point objective)",
             definition = "כַּמּוּת הַמֵּידָע הַמַּקְסִימָלִית שֶׁמּוּתָר לְהַפְסִיד בִּזְמַן תַּקָּלָה — נִמְדֶּדֶת בְּדַקּוֹת אוֹ שָׁעוֹת.",
             definitionNative = "Максимум данных, которые позволено потерять при сбое — измеряют в минутах или часах.",
@@ -287,7 +287,7 @@ object WordDataHebrewCyberL5 {
         ),
         WordEntity(
             id = 178224, setId = 1782, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "cyber_business_continuity", transliteration = "ar-ti-o",
+            pos = "noun", semanticGroup = "cyber_business_continuity",
             original = "אַר-טִי-אוֹ", translation = "RTO (recovery time objective)",
             definition = "מֶשֶׁךְ הַזְּמַן הַמַּקְסִימָלִי שֶׁמַּעֲרֶכֶת יְכוֹלָה לִהְיוֹת מֻשְׁבֶּתֶת לִפְנֵי שֶׁהָעֵסֶק נִפְגָּע מַמָּשׁ.",
             definitionNative = "Предельное время простоя системы — пока бизнес не пострадает по-настоящему.",
@@ -296,7 +296,7 @@ object WordDataHebrewCyberL5 {
         ),
         WordEntity(
             id = 178225, setId = 1782, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cyber_business_continuity", transliteration = "bituakh sayber",
+            pos = "noun", semanticGroup = "cyber_business_continuity",
             original = "בִּיטוּחַ סַייבֶּר", translation = "cyber insurance (киберстрахование)",
             definition = "פּוֹלִיסָה שֶׁמְכַסָּה הוֹצָאוֹת מִשְׁפָּטִיּוֹת וּכְסָפִים שֶׁל פִּיצּוּי לָקוֹחוֹת אַחֲרֵי דְּלִיפַת מֵידָע.",
             definitionNative = "Полис — покрывает судебные расходы и компенсации клиентам после утечки данных.",

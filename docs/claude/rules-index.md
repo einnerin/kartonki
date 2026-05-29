@@ -32,7 +32,6 @@
    - `validate_original_in_example` — `original` (или его 3-char stem с Hebrew prefix tolerance) должен присутствовать в `example`. Иначе FILL_IN_BLANK ломается.
    - `validate_no_foreign_in_examplenative` — `exampleNative` начинается с заглавной русской/Hebrew/цифры/кавычки. Строчная латинская в начале = непереведённое английское слово (известный класс багов).
    - `validate_no_clerical` — запрещены канцеляризмы из `quality_standards_*.md` («являться», «осуществить», «представляет собой», «характеризуется», «используется для», «данный объект» и пр.).
-   - `validate_hebrew_transliteration_format` — Hebrew `transliteration` латиницей без IPA-символов (`makhshev`, не `[makhˈʃev]`). Skip для skeleton-сетов.
    - `validate_blank_ambiguity_hebrew` — Python-port `HebrewBlankMatcher`; ловит safe-но-runtime-не-найдёт слова в Hebrew FILL_IN_BLANK.
    - `validate_no_foreign_script_in_original` — `original` использует script соответствующий languagePair (Hebrew для he-ru, Latin для en-ru). Ловит mixed-script опечатки типа арабская `ت` U+062A vs ивритская `ת` U+05EA.
 
@@ -50,8 +49,8 @@
 
 ### Данные
 
-15. **Транслитерация обязательна для he-ru** — каждое he-ru слово имеет `transliteration`. Блокирующая проверка с 2026-04-23. Валидатор `check_transliteration_missing` в `find_real_dupes.py`.
-16. **Обязательные поля WordSetEntity и WordEntity** — 6 обязательных в WordSetEntity (id, name, description, languagePair, topic, level), 6+1 в WordEntity (+ transliteration для he-ru). `orderIndex` исторический, в новых наборах можно опустить. См. [`word-sets.md`](word-sets.md).
+15. **Транслитерация — только для en-ru (IPA)** — у he-ru слов `transliteration` НЕ заполняется (убрано 2026-05-28: огласовка-никуд в `original` + TTS дают произношение, а схема транслитерации была рассинхронизирована). У en-ru `transliteration` = IPA в квадратных скобках (`[dɔg]`). Валидатор `validate_hebrew_transliteration_format` и проверка `check_transliteration_missing` удалены.
+16. **Обязательные поля WordSetEntity и WordEntity** — 6 обязательных в WordSetEntity (id, name, description, languagePair, topic, level), 6 в WordEntity (id, setId, languagePair, rarity, original, translation; для en-ru также `transliteration` = IPA). `orderIndex` исторический, в новых наборах можно опустить. См. [`word-sets.md`](word-sets.md).
 
 16b. **Покрытие опциональных полей (2026-04-23 аудит) — известный техдолг.** Из 18 475 слов:
     - ~63% без `definition`/`example` (нет FILL_IN_BLANK и DEFINITION-квизов)
@@ -95,3 +94,4 @@
 - **2026-04-22..23** — большая сессия обхода правил. Добавлены/уточнены 17 правил, реализован FILL_IN_BLANK pipeline (Фазы 1-3 на пилотном наборе 9). Две проверки переведены из warning в block: CEFR в описаниях (№11), транслитерация he-ru (№15). `orderIndex` задокументирован как исторический (№16).
 - **2026-05-25..27** — серия аудитов и фиксов 11 классов багов (headword-in-def, translation-in-defNative, терминаторы, copy-paste в exampleNative, missing original в example, канцелярит, IPA в Hebrew translit, mixed-script в original, Hebrew FILL_IN_BLANK runtime, mixed-script внутри слов, монотонные шаблоны examples). Hard-блок-валидаторы добавлены (правило 8a). Hebrew FILL_IN_BLANK обновлён runtime matcher'ом (правило 16c). `validate_all.sh` теперь **21 проверка**.
 - **2026-05-28** — pipeline audit (Phases A/B/C `8fd020a→9223ddd`) + fixture coverage 8→19 валидаторов (`036de06`, 38 регрессионных проверок) + batch-fix 60 сетов exampleNative anchor (`e5622bc`, 110 violations → 50 pre-existing tech-debt). Memory синхронизирована, релиз v0.1.14 готовится. Pipeline-overview.md (правило 17c) — единая навигация по системе.
+- **2026-05-28** — **убрана транслитерация у иврита** (правило 15 переписано). После ревью: схема he-ru transliteration была рассинхронизирована (латиница vs кириллица), а огласовка-никуд в `original` + TTS уже дают произношение. Вычищено ~15K `transliteration` из 267 `WordDataHebrew*.kt`, скрыто в UI (`CardView`, `StudySessionScreen`), удалён `validate_hebrew_transliteration_format` + проверка `check_transliteration_missing`, обновлены `add-words/SKILL.md` и доки. en-ru IPA не тронут. `validate_all.sh` теперь **20 проверок**, регрессия — 36.

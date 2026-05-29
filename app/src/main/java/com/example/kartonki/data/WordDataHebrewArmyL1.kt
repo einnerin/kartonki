@@ -29,7 +29,7 @@ object WordDataHebrewArmyL1 {
 
         // — army_basics (3, COMMON): צה״ל, דֶּגֶל, קְרָב —
         WordEntity(id = 170201, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "צה״ל", transliteration = "tsahal",
+            original = "צה״ל",
             translation = "ЦАХАЛ (армия Израиля)",
             pos = "noun", semanticGroup = "army_basics",
             definition = "רָאשֵׁי תֵּבוֹת לְשֵׁם הַצָּבָא הָרִשְׁמִי שֶׁל מְדִינַת יִשְׂרָאֵל.",
@@ -38,7 +38,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Каждый парень и каждая девушка идут в צה״ל в восемнадцать лет.", fillInBlankExclusions = listOf(170202L, 170203L)),
 
         WordEntity(id = 170202, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "דֶּגֶל", transliteration = "degel",
+            original = "דֶּגֶל",
             translation = "флаг",
             pos = "noun", semanticGroup = "army_basics",
             definition = "פִּסַּת בַּד עִם סֵמֶל אוֹ צֶבַע שֶׁמְּסַמֶּלֶת מְדִינָה אוֹ יְחִידָה.",
@@ -47,7 +47,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "На церемонии новобранцы с гордостью несут דֶּגֶל.", fillInBlankExclusions = listOf(170201L, 170203L)),
 
         WordEntity(id = 170203, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "קְרָב", transliteration = "krav",
+            original = "קְרָב",
             translation = "бой / сражение",
             pos = "noun", semanticGroup = "army_basics",
             definition = "הִתְנַגְּשׁוּת חֲמוּשָׁה בֵּין שְׁנֵי כּוֹחוֹת בְּשֶׁטַח אוֹ בָּאֲוִיר.",
@@ -57,7 +57,7 @@ object WordDataHebrewArmyL1 {
 
         // — army_units (6): COMMON כִּתָּה, פְּלוּגָה, מַחְלָקָה; UNCOMMON כּוֹחוֹת הַיַּבָּשָׁה, חֵיל הָאֲוִיר, חֵיל הַיָּם —
         WordEntity(id = 170204, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "כִּתָּה", transliteration = "kita",
+            original = "כִּתָּה",
             translation = "отделение (армейское)",
             pos = "noun", semanticGroup = "army_units",
             definition = "קְבוּצָה קְטַנָּה שֶׁל לוֹחֲמִים, בְּדֶרֶךְ כְּלָל שִׁשָּׁה עַד עֲשָׂרָה אֲנָשִׁים.",
@@ -66,7 +66,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "כִּתָּה вышла на ночное учение с новым מַפְקֵד.", fillInBlankExclusions = listOf(170205L, 170206L)),
 
         WordEntity(id = 170205, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "פְּלוּגָה", transliteration = "pluga",
+            original = "פְּלוּגָה",
             translation = "рота",
             pos = "noun", semanticGroup = "army_units",
             definition = "יְחִידָה צְבָאִית שֶׁל בְּעֵרֶךְ מֵאָה לוֹחֲמִים תַּחַת מַפְקֵד אֶחָד.",
@@ -75,7 +75,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "פְּלוּגָה собралась на построение перед выходом на местность.", fillInBlankExclusions = listOf(170204L, 170206L)),
 
         WordEntity(id = 170206, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַחְלָקָה", transliteration = "makhlaka",
+            original = "מַחְלָקָה",
             translation = "взвод",
             pos = "noun", semanticGroup = "army_units",
             definition = "תַּת־יְחִידָה שֶׁל כִּשְׁלוֹשִׁים לוֹחֲמִים בִּפְנִים פְּלוּגָה.",
@@ -84,7 +84,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Первая מַחְלָקָה выходит на охрану по графику."),
 
         WordEntity(id = 170207, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כּוֹחוֹת הַיַּבָּשָׁה", transliteration = "ko'khot ha'yabasha",
+            original = "כּוֹחוֹת הַיַּבָּשָׁה",
             translation = "сухопутные войска",
             pos = "phrase", semanticGroup = "army_units",
             definition = "חֵלֶק שֶׁל הַצָּבָא הַפּוֹעֵל עַל הַקַּרְקַע בְּטַנְקִים, רַגְלִים וְתוֹתָחִים.",
@@ -93,7 +93,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "כּוֹחוֹת הַיַּבָּשָׁה вошли в район после первой бомбёжки.", fillInBlankExclusions = listOf(170208L, 170209L)),
 
         WordEntity(id = 170208, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֵיל הָאֲוִיר", transliteration = "kheyl ha'avir",
+            original = "חֵיל הָאֲוִיר",
             translation = "ВВС / военно-воздушные силы",
             pos = "phrase", semanticGroup = "army_units",
             definition = "זְרוֹעַ הַצָּבָא הַמַּפְעִילָה מְטוֹסִים וּמַסּוֹקִים לַהֲגָנָה וְלַהַתְקָפָה.",
@@ -102,7 +102,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "חֵיל הָאֲוִיר провёл крупное учение над Негевом на этой неделе.", fillInBlankExclusions = listOf(170207L, 170209L)),
 
         WordEntity(id = 170209, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֵיל הַיָּם", transliteration = "kheyl ha'yam",
+            original = "חֵיל הַיָּם",
             translation = "ВМФ / военно-морские силы",
             pos = "phrase", semanticGroup = "army_units",
             definition = "זְרוֹעַ הַצָּבָא הַמַּפְעִילָה אֳנִיּוֹת וְצוֹלְלוֹת לְהָגֵן עַל הַחוֹף.",
@@ -112,7 +112,7 @@ object WordDataHebrewArmyL1 {
 
         // — army_weapons (3, COMMON): מַקְלֵעַ, אֶקְדָּח, טִיל —
         WordEntity(id = 170210, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַקְלֵעַ", transliteration = "maklea",
+            original = "מַקְלֵעַ",
             translation = "пулемёт",
             pos = "noun", semanticGroup = "army_weapons",
             definition = "כְּלִי יְרִיָּה אוֹטוֹמָטִי שֶׁיּוֹרֶה כַּדּוּרִים רַבִּים בִּזְמַן קָצָר.",
@@ -121,7 +121,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Боец нёс מַקְלֵעַ на плече в ночном марше."),
 
         WordEntity(id = 170211, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "אֶקְדָּח", transliteration = "ekdakh",
+            original = "אֶקְדָּח",
             translation = "пистолет",
             pos = "noun", semanticGroup = "army_weapons",
             definition = "כְּלִי יְרִיָּה קָטָן שֶׁמַּחְזִיקִים בְּיָד אַחַת לְמֶרְחָק קָצָר.",
@@ -130,7 +130,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Офицерша положила אֶקְדָּח в кобуру на ремне перед выходом.", fillInBlankExclusions = listOf(170210L, 170212L)),
 
         WordEntity(id = 170212, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "טִיל", transliteration = "til",
+            original = "טִיל",
             translation = "ракета",
             pos = "noun", semanticGroup = "army_weapons",
             definition = "כְּלִי נֶשֶׁק מְעוֹפֵף וּמַתְפּוֹצֵץ שֶׁיוֹצֵא מִמַּשְׁגֵּר לְפִי מַסְלוּל.",
@@ -140,7 +140,7 @@ object WordDataHebrewArmyL1 {
 
         // — army_gear (3, COMMON): אֲפוֹד, מַגָּף, אֲלוּנְקָה —
         WordEntity(id = 170213, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "אֲפוֹד", transliteration = "afod",
+            original = "אֲפוֹד",
             translation = "бронежилет",
             pos = "noun", semanticGroup = "army_gear",
             definition = "וְסֶט עָבֶה הַמְּכַסֶּה אֶת הֶחָזֶה וּמֵגֵן מִפְּגִיעוֹת קְלִיעִים.",
@@ -149,7 +149,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Каждый боец надевает אֲפוֹד перед выходом из блокпоста.", fillInBlankExclusions = listOf(170214L, 170215L)),
 
         WordEntity(id = 170214, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַגָּף", transliteration = "magaf",
+            original = "מַגָּף",
             translation = "берц / армейский ботинок",
             pos = "noun", semanticGroup = "army_gear",
             definition = "נַעַל גְּבוֹהָה וּקָשָׁה הַמּוּדְבֶּקֶת לָרֶגֶל לְהֲלִיכָה בַּשֶּׁטַח הַקָּשֶׁה.",
@@ -158,7 +158,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Новобранец начистил свой מַגָּף по приказу до построения."),
 
         WordEntity(id = 170215, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "אֲלוּנְקָה", transliteration = "alunka",
+            original = "אֲלוּנְקָה",
             translation = "носилки",
             pos = "noun", semanticGroup = "army_gear",
             definition = "מִתְקָן בַּד עִם שְׁתֵּי מוֹטוֹת לְסוּחֲבַת פָּצוּעַ אוֹ חוֹלֶה.",
@@ -168,7 +168,7 @@ object WordDataHebrewArmyL1 {
 
         // — army_base_life (4): COMMON מִשְׁמָר, שׁוֹמֵר, קַנְטִינָה; UNCOMMON הַשְׁבָּעָה —
         WordEntity(id = 170216, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "מִשְׁמָר", transliteration = "mishmar",
+            original = "מִשְׁמָר",
             translation = "стража / караул",
             pos = "noun", semanticGroup = "army_base_life",
             definition = "תַּפְקִיד שֶׁבּוֹ עוֹמְדִים שָׁעוֹת קְבוּעוֹת לִשְׁמֹר עַל בָּסִיס אוֹ עֶמְדָּה.",
@@ -177,7 +177,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Боец вышел на מִשְׁמָר в два часа ночи на пару часов.", fillInBlankExclusions = listOf(170217L, 170218L, 170219L)),
 
         WordEntity(id = 170217, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "שׁוֹמֵר", transliteration = "shomer",
+            original = "שׁוֹמֵר",
             translation = "часовой / дозорный",
             pos = "noun", semanticGroup = "army_base_life",
             definition = "אָדָם שֶׁעוֹמֵד בַּשַּׁעַר אוֹ בִּמְקוֹם רָגִישׁ לִבְדֹּק מִי נִכְנָס וּמִי יוֹצֵא.",
@@ -186,7 +186,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "שׁוֹמֵר остановил меня у ворот и попросил показать удостоверение."),
 
         WordEntity(id = 170218, setId = 1702, languagePair = "he-ru", rarity = "COMMON",
-            original = "קַנְטִינָה", transliteration = "kantina",
+            original = "קַנְטִינָה",
             translation = "кантина (магазин на базе)",
             pos = "noun", semanticGroup = "army_base_life",
             definition = "חֲנוּת קְטַנָּה בַּבָּסִיס שֶׁמּוֹכֶרֶת חַטִּיפִים, שְׁתִיָּה וּצְרָכִים יוֹמְיוֹמִיִּים.",
@@ -195,7 +195,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "После учения мы рванули в קַנְטִינָה за кофе и шоколадкой."),
 
         WordEntity(id = 170219, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הַשְׁבָּעָה", transliteration = "hashba'a",
+            original = "הַשְׁבָּעָה",
             translation = "присяга",
             pos = "noun", semanticGroup = "army_base_life",
             definition = "טֶקֶס שֶׁבּוֹ הַטִּירוֹן מַבְטִיחַ נֶאֱמָנוּת לַמְּדִינָה וְלַצָּבָא.",
@@ -205,7 +205,7 @@ object WordDataHebrewArmyL1 {
 
         // — army_service (3, UNCOMMON): קֶבַע, סָדִיר, דַּרְגָּה —
         WordEntity(id = 170220, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קֶבַע", transliteration = "keva",
+            original = "קֶבַע",
             translation = "кадровая (постоянная) служба",
             pos = "noun", semanticGroup = "army_service",
             definition = "שֵׁרוּת בְּתַשְׁלוּם לִתְקוּפָה אֲרֻכָּה לְאַחַר סִיּוּם הַשֵּׁרוּת הַחוֹבָה.",
@@ -214,7 +214,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Через три года он подписался на קֶבַע ещё на пять лет.", fillInBlankExclusions = listOf(170221L, 170222L)),
 
         WordEntity(id = 170221, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סָדִיר", transliteration = "sadir",
+            original = "סָדִיר",
             translation = "срочная (регулярная) служба",
             pos = "noun", semanticGroup = "army_service",
             definition = "תְּקוּפַת שֵׁרוּת חוֹבָה שֶׁל חַיָּל צָעִיר אַחֲרֵי הַטִּירוֹנוּת.",
@@ -223,7 +223,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Он закончил סָדִיר и начал учёбу в университете."),
 
         WordEntity(id = 170222, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דַּרְגָּה", transliteration = "darga",
+            original = "דַּרְגָּה",
             translation = "звание / воинское звание",
             pos = "noun", semanticGroup = "army_service",
             definition = "סִימָן עַל הַכָּתֵף הַמְּסַמֵּן אֶת הַמַּעֲמָד שֶׁל הַחַיָּל בַּצָּבָא.",
@@ -233,7 +233,7 @@ object WordDataHebrewArmyL1 {
 
         // — army_training (3, UNCOMMON): מַטָּוַח, קְלִיעָה, טַיָּס —
         WordEntity(id = 170223, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַטָּוַח", transliteration = "matvakh",
+            original = "מַטָּוַח",
             translation = "стрельбище / тир",
             pos = "noun", semanticGroup = "army_training",
             definition = "שֶׁטַח פָּתוּחַ וּמְסֻדָּר שֶׁבּוֹ חַיָּלִים מִתְאַמְּנִים בִּפְגִיעָה בְּמַטָּרוֹת.",
@@ -242,7 +242,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Взвод вышел на מַטָּוַח на два часа утренней тренировки."),
 
         WordEntity(id = 170224, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קְלִיעָה", transliteration = "kli'a",
+            original = "קְלִיעָה",
             translation = "стрельба / меткость",
             pos = "noun", semanticGroup = "army_training",
             definition = "פְּעֻלָּה שֶׁל יְרִיָּה בְּמַטָּרָה תּוֹךְ דִּיּוּק וּשְׁלִיטָה בַּכְּלִי.",
@@ -251,7 +251,7 @@ object WordDataHebrewArmyL1 {
             exampleNative = "Он получил высокую оценку за קְלִיעָה в конце недели тренировок.", fillInBlankExclusions = listOf(170223L, 170225L)),
 
         WordEntity(id = 170225, setId = 1702, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "טַיָּס", transliteration = "tayas",
+            original = "טַיָּס",
             translation = "лётчик / пилот",
             pos = "noun", semanticGroup = "army_training",
             definition = "אִישׁ שֶׁמְּפַעֵל מָטוֹס קְרָבִי לְאַחַר קוּרְס אָרֹךְ וְקָשֶׁה.",

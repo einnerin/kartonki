@@ -260,7 +260,7 @@ internal fun QuizContent(
                 TranslationPanel(
                     original = step.word.original,
                     translation = step.word.translation,
-                    transliteration = step.word.transliteration,
+                    transliteration = if (isHebrew) null else step.word.transliteration,
                     languagePair = step.word.languagePair,
                     isCorrect = answered.isCorrect,
                     isRtl = isHebrew,

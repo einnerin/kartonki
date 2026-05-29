@@ -34,7 +34,7 @@ object WordDataHebrewPoliticsL1 {
         // — politics_state (5): COMMON חוֹק, אֶזְרָח, דֶּגֶל; UNCOMMON אֵזְרָחוּת, הִמְנוֹן —
         WordEntity(
             id = 170701, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_state", transliteration = "khok",
+            pos = "noun", semanticGroup = "politics_state",
             original = "חוֹק", translation = "закон",
             definition = "כְּלָל רִשְׁמִי שֶׁהַמְּדִינָה מְחַיֶּבֶת אֶת כָּל הַתּוֹשָׁבִים לְקַיֵּם.",
             definitionNative = "Официальное правило, которое государство обязывает соблюдать всех жителей.",
@@ -43,7 +43,7 @@ object WordDataHebrewPoliticsL1 {
          fillInBlankExclusions = listOf(170703L, 170704L, 170705L, 170707L, 170709L)),
         WordEntity(
             id = 170702, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_state", transliteration = "ezrakh",
+            pos = "noun", semanticGroup = "politics_state",
             original = "אֶזְרָח", translation = "гражданин",
             definition = "אָדָם שֶׁשַּׁיָּךְ רִשְׁמִית לִמְדִינָה וְיֵשׁ לוֹ זְכֻיּוֹת וְחוֹבוֹת.",
             definitionNative = "Человек, который официально принадлежит стране и имеет права и обязанности.",
@@ -53,7 +53,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170703, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_state", transliteration = "degel",
+            pos = "noun", semanticGroup = "politics_state",
             original = "דֶּגֶל", translation = "флаг (государственный)",
             definition = "פִּסַּת בַּד עִם סֵמֶל הַמְּדִינָה הַמּוּנָפֶת בְּטֶקֶס רִשְׁמִי.",
             definitionNative = "Кусок ткани с гербом страны, что поднимают на официальной церемонии.",
@@ -63,7 +63,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170704, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_state", transliteration = "ezrakhut",
+            pos = "noun", semanticGroup = "politics_state",
             original = "אֵזְרָחוּת", translation = "гражданство",
             definition = "מַעֲמָד רִשְׁמִי שֶׁל הִשְׁתַּיְּכוּת לִמְדִינָה עִם זְכֻיּוֹת מְלֵאוֹת.",
             definitionNative = "Официальное положение принадлежности к стране с полным набором прав.",
@@ -73,7 +73,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170705, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_state", transliteration = "himnon",
+            pos = "noun", semanticGroup = "politics_state",
             original = "הִמְנוֹן", translation = "гимн (государственный)",
             definition = "שִׁיר רִשְׁמִי שֶׁל מְדִינָה הַמּוּשַׁר בְּטֶקֶס לְאֻמִּי.",
             definitionNative = "Официальная песня страны, которую исполняют на национальной церемонии.",
@@ -85,7 +85,7 @@ object WordDataHebrewPoliticsL1 {
         // — politics_government (5): COMMON מִשְׂרָד, חֻקָּה, מַס; UNCOMMON תַּקְצִיב, וֵטוֹ —
         WordEntity(
             id = 170706, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_government", transliteration = "misrad",
+            pos = "noun", semanticGroup = "politics_government",
             original = "מִשְׂרָד", translation = "министерство; ведомство",
             definition = "גּוּף מֶמְשַׁלְתִּי הָאַחְרַאִי עַל תְּחוּם מְסֻיָּם כְּמוֹ חִנּוּךְ אוֹ בְּרִיאוּת.",
             definitionNative = "Государственный орган, отвечающий за определённую сферу — образование или здравоохранение.",
@@ -95,7 +95,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170707, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_government", transliteration = "khuka",
+            pos = "noun", semanticGroup = "politics_government",
             original = "חֻקָּה", translation = "конституция",
             definition = "מִסְמָךְ עֶלְיוֹן שֶׁקּוֹבֵעַ אֶת הַכְּלָלִים הַבְּסִיסִיִּים שֶׁל מְדִינָה וְזַכֻיּוֹת תּוֹשָׁבִים.",
             definitionNative = "Высший документ, что задаёт основные правила государства и права жителей.",
@@ -105,7 +105,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170708, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_government", transliteration = "mas",
+            pos = "noun", semanticGroup = "politics_government",
             original = "מַס", translation = "налог",
             definition = "תַּשְׁלוּם חוּקִּי שֶׁתּוֹשָׁבִים מַעֲבִירִים לַמְּדִינָה לְמִמּוּן שֵׁרוּתִים צִבּוּרִיִּים.",
             definitionNative = "Законная выплата, что жители перечисляют государству на финансирование общественных служб.",
@@ -115,7 +115,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170709, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_government", transliteration = "taktsiv",
+            pos = "noun", semanticGroup = "politics_government",
             original = "תַּקְצִיב", translation = "бюджет (государственный)",
             definition = "תָּכְנִית כַּסְפִּית שָׁנָתִית שֶׁל הַמְּדִינָה לְהוֹצָאוֹת וְהַכְנָסוֹת.",
             definitionNative = "Годовой денежный план государства по расходам и доходам.",
@@ -125,7 +125,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170710, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_government", transliteration = "veto",
+            pos = "noun", semanticGroup = "politics_government",
             original = "וֵטוֹ", translation = "вето; запрет",
             definition = "סַמְכוּת רִשְׁמִית לִדְחוֹת הַחְלָטָה אוֹ לַעֲצוֹר חוֹק לִפְנֵי הַחַתִּימָה.",
             definitionNative = "Официальное полномочие отклонить решение или остановить закон до подписания.",
@@ -137,7 +137,7 @@ object WordDataHebrewPoliticsL1 {
         // — politics_elections (5): COMMON מוֹעֲמָד, בְּעַד, נֶגֶד; UNCOMMON רֶפֶרֶנְדּוּם, נְאֻם —
         WordEntity(
             id = 170711, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_elections", transliteration = "moamad",
+            pos = "noun", semanticGroup = "politics_elections",
             original = "מוֹעֲמָד", translation = "кандидат",
             definition = "אָדָם שֶׁמַּצִּיעַ אֶת עַצְמוֹ לְתַפְקִיד צִבּוּרִי וּמְבַקֵּשׁ קוֹלוֹת.",
             definitionNative = "Тот, кто предлагает себя на общественную должность и просит голоса.",
@@ -147,7 +147,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170712, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "preposition", semanticGroup = "politics_elections", transliteration = "be'ad",
+            pos = "preposition", semanticGroup = "politics_elections",
             original = "בְּעַד", translation = "за (в поддержку)",
             definition = "מִלָּה הַמְּצַיֶּנֶת תְּמִיכָה בְּהַצָּעָה אוֹ בְּמוֹעֲמָד בְּזְמַן הַצְבָּעָה.",
             definitionNative = "Слово, что обозначает поддержку предложения или кандидата при голосовании.",
@@ -157,7 +157,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170713, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "preposition", semanticGroup = "politics_elections", transliteration = "neged",
+            pos = "preposition", semanticGroup = "politics_elections",
             original = "נֶגֶד", translation = "против",
             definition = "מִלָּה הַמְּצַיֶּנֶת הִתְנַגְּדוּת לְהַצָּעָה אוֹ לְמוֹעֲמָד בְּזְמַן הַצְבָּעָה.",
             definitionNative = "Слово, что обозначает несогласие с предложением или кандидатом при голосовании.",
@@ -167,7 +167,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170714, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_elections", transliteration = "referendum",
+            pos = "noun", semanticGroup = "politics_elections",
             original = "רֶפֶרֶנְדּוּם", translation = "референдум",
             definition = "הַצְבָּעָה כְּלָלִית שֶׁל כָּל הָאֶזְרָחִים עַל שְׁאֵלָה אַחַת חֲשׁוּבָה.",
             definitionNative = "Общее голосование всех граждан по одному важному вопросу.",
@@ -177,7 +177,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170715, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_elections", transliteration = "ne'um",
+            pos = "noun", semanticGroup = "politics_elections",
             original = "נְאֻם", translation = "речь; выступление",
             definition = "דִּבּוּר רִשְׁמִי בְּפָנֵי קָהָל בְּנוֹשֵׂא צִבּוּרִי אוֹ פּוֹלִיטִי.",
             definitionNative = "Официальное обращение перед публикой по общественной или политической теме.",
@@ -189,7 +189,7 @@ object WordDataHebrewPoliticsL1 {
         // — politics_systems (5): COMMON דְּמוֹקְרַטְיָה, רֶפּוּבְּלִיקָה, פַּרְלָמֶנְט; UNCOMMON פֶּדֶרַצְיָה, מַהְפֵּכָה —
         WordEntity(
             id = 170716, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_systems", transliteration = "demokratya",
+            pos = "noun", semanticGroup = "politics_systems",
             original = "דְּמוֹקְרַטְיָה", translation = "демократия",
             definition = "שִׁיטַת מִמְשָׁל שֶׁבָּהּ הָעָם בּוֹחֵר אֶת מַנְהִיגָיו בִּבְחִירוֹת חֻפְשִׁיּוֹת.",
             definitionNative = "Система правления, в которой народ выбирает руководителей на свободных выборах.",
@@ -199,7 +199,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170717, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_systems", transliteration = "republika",
+            pos = "noun", semanticGroup = "politics_systems",
             original = "רֶפּוּבְּלִיקָה", translation = "республика",
             definition = "מְדִינָה שֶׁבָּהּ הָעָם בּוֹחֵר אֶת רֹאשׁ הַמְּדִינָה לִתְקוּפָה קְבוּעָה.",
             definitionNative = "Государство, в котором народ выбирает главу страны на установленный срок.",
@@ -209,7 +209,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170718, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_systems", transliteration = "parlament",
+            pos = "noun", semanticGroup = "politics_systems",
             original = "פַּרְלָמֶנְט", translation = "парламент",
             definition = "בֵּית מְחוֹקְקִים נִבְחָר הַמּוֹשְׁבֵי אֶת הַחֻקִּים שֶׁל הַמְּדִינָה.",
             definitionNative = "Выборный законодательный орган, что принимает законы государства.",
@@ -219,7 +219,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170719, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_systems", transliteration = "federatsya",
+            pos = "noun", semanticGroup = "politics_systems",
             original = "פֶּדֶרַצְיָה", translation = "федерация",
             definition = "אִיחוּד שֶׁל מְדִינוֹת אוֹ אֲזוֹרִים תַּחַת מִמְשָׁל מַרְכָּזִי וְחוֹק מְשֻׁתָּף.",
             definitionNative = "Союз государств или регионов под центральным правлением и общим законом.",
@@ -229,7 +229,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170720, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_systems", transliteration = "mahapekha",
+            pos = "noun", semanticGroup = "politics_systems",
             original = "מַהְפֵּכָה", translation = "революция",
             definition = "שִׁנּוּי גָּדוֹל וּפָתְאוֹמִי שֶׁל הַשִּׁלְטוֹן אוֹ הַמִּשְׁטָר בִּמְדִינָה.",
             definitionNative = "Большая и резкая смена власти или режима в стране.",
@@ -241,7 +241,7 @@ object WordDataHebrewPoliticsL1 {
         // — politics_society (5): COMMON מוֹלֶדֶת, לְאֹם, תּוֹשָׁב; UNCOMMON מִיעוּט, כְּהוּנָּה —
         WordEntity(
             id = 170721, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_society", transliteration = "moledet",
+            pos = "noun", semanticGroup = "politics_society",
             original = "מוֹלֶדֶת", translation = "родина",
             definition = "הָאֶרֶץ שֶׁבָּהּ אָדָם נוֹלַד וּמַרְגִּישׁ קֶשֶׁר עָמֹק וְלֵאֻמִּי.",
             definitionNative = "Страна, где человек появился на свет и ощущает глубокую национальную связь.",
@@ -251,7 +251,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170722, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_society", transliteration = "le'om",
+            pos = "noun", semanticGroup = "politics_society",
             original = "לְאֹם", translation = "нация; народность",
             definition = "קְבוּצָה גְּדוֹלָה שֶׁל אֲנָשִׁים עִם שָׂפָה, הִיסְטוֹרְיָה וּתְרְבּוּת מְשֻׁתָּפוֹת.",
             definitionNative = "Большая группа людей с общим языком, историей и культурой.",
@@ -261,7 +261,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170723, setId = 1707, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "politics_society", transliteration = "toshav",
+            pos = "noun", semanticGroup = "politics_society",
             original = "תּוֹשָׁב", translation = "житель; резидент",
             definition = "אָדָם שֶׁגָּר בְּאוֹפֶן קָבוּעַ בִּמְדִינָה אוֹ בְּעִיר מְסֻיֶּמֶת.",
             definitionNative = "Тот, кто на постоянной основе живёт в государстве или конкретном городе.",
@@ -271,7 +271,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170724, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_society", transliteration = "miut",
+            pos = "noun", semanticGroup = "politics_society",
             original = "מִיעוּט", translation = "меньшинство",
             definition = "קְבוּצָה קְטַנָּה יוֹתֵר שֶׁל אֲנָשִׁים בְּתוֹךְ אֻכְלוּסִיָּה גְּדוֹלָה יוֹתֵר.",
             definitionNative = "Меньшая группа людей внутри большего населения.",
@@ -281,7 +281,7 @@ object WordDataHebrewPoliticsL1 {
         ),
         WordEntity(
             id = 170725, setId = 1707, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "politics_society", transliteration = "kehuna",
+            pos = "noun", semanticGroup = "politics_society",
             original = "כְּהוּנָּה", translation = "срок полномочий; каденция",
             definition = "תְּקוּפָה רִשְׁמִית שֶׁבָּהּ נִבְחָר מְמַלֵּא תַּפְקִיד צִבּוּרִי לִפְנֵי בְּחִירוֹת חֲדָשׁוֹת.",
             definitionNative = "Официальный срок, в течение которого избранный занимает общественную должность до новых выборов.",

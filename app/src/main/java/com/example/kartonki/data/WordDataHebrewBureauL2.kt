@@ -46,7 +46,7 @@ object WordDataHebrewBureauL2 {
         // ── bureau_id_papers (5) ──────────────────────────────────────────
         WordEntity(
             id = 180801, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "bureau_id_papers", transliteration = "миспар зеhут",
+            pos = "phrase", semanticGroup = "bureau_id_papers",
             original = "מִסְפַּר זֶהוּת", translation = "номер удостоверения личности",
             definition = "תֵּשַׁע סִפְרוֹת אִישִׁיּוֹת שֶׁבָּהֶן הַמְּדִינָה מְזַהָה כָּל אָדָם בְּמִסְמָכִים.",
             definitionNative = "Девять личных цифр, по которым государство опознаёт человека во всех бумагах.",
@@ -55,7 +55,7 @@ object WordDataHebrewBureauL2 {
         ),
         WordEntity(
             id = 180802, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_id_papers", transliteration = "даркон биометри",
+            pos = "phrase", semanticGroup = "bureau_id_papers",
             original = "דַּרְכּוֹן בִּיוֹמֶטְרִי", translation = "биометрический паспорт",
             definition = "סֵפֶר נְסִיעוֹת חָדָשׁ עִם שְׁבָב אֶלֶקְטְרוֹנִי הַשּׁוֹמֵר עַל פְּרָטֵי הַבַּעַל.",
             definitionNative = "Новый дорожный документ с электронным чипом, хранящим данные владельца.",
@@ -64,7 +64,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180801L, 180803L, 180804L)),
         WordEntity(
             id = 180803, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "bureau_id_papers", transliteration = "тацлум паспорт",
+            pos = "phrase", semanticGroup = "bureau_id_papers",
             original = "תַּצְלוּם פַּסְפּוֹרְט", translation = "фото на паспорт",
             definition = "תְּמוּנָה רִשְׁמִית קְטַנָּה לְפָנִים בְּלִי כּוֹבַע אוֹ מִשְׁקָפַיִם כֵּהִים.",
             definitionNative = "Маленький официальный снимок лица — без головного убора и тёмных очков.",
@@ -73,7 +73,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180801L, 180802L, 180804L)),
         WordEntity(
             id = 180804, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_id_papers", transliteration = "картис магнэти",
+            pos = "phrase", semanticGroup = "bureau_id_papers",
             original = "כַּרְטִיס מָגְנֶטִי", translation = "магнитная карта (доступа)",
             definition = "פְּלַסְטִיק קָטָן עִם פַּס אוֹ שְׁבָב הַמַּתִּיר כְּנִיסָה לִמְקוֹם רִשְׁמִי.",
             definitionNative = "Маленький пластик с полосой или чипом, дающий доступ в учреждение.",
@@ -82,7 +82,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180801L, 180802L, 180803L)),
         WordEntity(
             id = 180805, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_id_papers", transliteration = "ниспах",
+            pos = "noun", semanticGroup = "bureau_id_papers",
             original = "נִסְפַּח", translation = "вкладыш / приложение к документу",
             definition = "דַּף נוֹסָף הַנִּצְמָד לִתְעוּדָה רִשְׁמִית עִם פְּרָטִים שֶׁל בְּנֵי מִשְׁפָּחָה.",
             definitionNative = "Дополнительный листок, прикреплённый к удостоверению — со сведениями о членах семьи.",
@@ -93,7 +93,7 @@ object WordDataHebrewBureauL2 {
         // ── bureau_visas (5) ──────────────────────────────────────────────
         WordEntity(
             id = 180806, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_visas", transliteration = "токеф",
+            pos = "noun", semanticGroup = "bureau_visas",
             original = "תֹּקֶף", translation = "срок действия",
             definition = "פֶּרֶק זְמַן שֶׁבּוֹ מִסְמָךְ אוֹ אִישּׁוּר נֶחְשָׁבִים חוּקִיִּים וְקַיָּמִים.",
             definitionNative = "Промежуток времени, в течение которого документ или одобрение считаются действительными.",
@@ -102,7 +102,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180807L, 180808L, 180810L)),
         WordEntity(
             id = 180807, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_visas", transliteration = "hаараха",
+            pos = "noun", semanticGroup = "bureau_visas",
             original = "הַאֲרָכָה", translation = "продление (срока)",
             definition = "הוֹסָפַת זְמַן רִשְׁמִית לְמִסְמָךְ קָרוֹב לִפּוּג, כְּדֵי לְהַמְשִׁיךְ לְהִשְׁתַּמֵּשׁ בּוֹ.",
             definitionNative = "Официальная добавка времени к документу, который скоро истечёт, чтобы и дальше им пользоваться.",
@@ -111,7 +111,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180806L, 180808L, 180810L)),
         WordEntity(
             id = 180808, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "bureau_visas", transliteration = "хидуш",
+            pos = "noun", semanticGroup = "bureau_visas",
             original = "חִידּוּשׁ", translation = "обновление документа",
             definition = "הוֹצָאָה שֶׁל מִסְמָךְ זֵהֶה בִּמְקוֹם זֶה שֶׁפַּג, בְּלִי לְשַׁנּוֹת אֶת תָּכְנוֹ.",
             definitionNative = "Выдача такого же документа взамен истёкшего — без изменения содержимого.",
@@ -120,7 +120,7 @@ object WordDataHebrewBureauL2 {
         ),
         WordEntity(
             id = 180809, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "bureau_visas", transliteration = "моэд тфуга",
+            pos = "phrase", semanticGroup = "bureau_visas",
             original = "מוֹעֵד תְּפוּגָה", translation = "дата истечения",
             definition = "הַיּוֹם הָאַחֲרוֹן שֶׁבּוֹ מִסְמָךְ עוֹדֶנּוּ חוּקִי — אַחֲרָיו צָרִיךְ חָדָשׁ.",
             definitionNative = "Последний день, когда документ ещё действителен — потом нужен новый.",
@@ -129,7 +129,7 @@ object WordDataHebrewBureauL2 {
         ),
         WordEntity(
             id = 180810, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_visas", transliteration = "hахтама",
+            pos = "noun", semanticGroup = "bureau_visas",
             original = "הַחְתָּמָה", translation = "проштамповка / простановка штампа",
             definition = "הַטְבָּעַת סִימָן רִשְׁמִי עַל מִסְמָךְ אוֹ עַל דַּרְכּוֹן בִּזְמַן מַעֲבַר גְּבוּל.",
             definitionNative = "Нанесение официального оттиска на документ или паспорт — например, при пересечении границы.",
@@ -140,7 +140,7 @@ object WordDataHebrewBureauL2 {
         // ── bureau_permits (5) ────────────────────────────────────────────
         WordEntity(
             id = 180811, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_permits", transliteration = "рашут hаухлусин",
+            pos = "phrase", semanticGroup = "bureau_permits",
             original = "רַשׁוּת הָאֻכְלוּסִין", translation = "Управление народонаселения и иммиграции",
             definition = "הַגּוּף הַמֶּמְשַׁלְתִּי הָרָאשִׁי שֶׁמְּטַפֵּל בִּתְעוּדוֹת זֶהוּת, דַּרְכּוֹנִים וְהֶיתֵּרֵי שְׁהִיָּה.",
             definitionNative = "Главный госорган, занимающийся ID-удостоверениями, паспортами и разрешениями на пребывание.",
@@ -149,7 +149,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180812L)),
         WordEntity(
             id = 180812, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "bureau_permits", transliteration = "маамад хуки",
+            pos = "phrase", semanticGroup = "bureau_permits",
             original = "מַעֲמָד חוּקִי", translation = "правовой статус",
             definition = "הַהַגְדָּרָה הָרִשְׁמִית שֶׁל אָדָם בָּאָרֶץ — אֶזְרָח, תּוֹשָׁב אוֹ זָר.",
             definitionNative = "Официальное определение положения человека в стране — гражданин, житель или иностранец.",
@@ -158,7 +158,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180811L)),
         WordEntity(
             id = 180813, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_permits", transliteration = "зхаут",
+            pos = "noun", semanticGroup = "bureau_permits",
             original = "זְכָאוּת", translation = "право на льготу",
             definition = "הַתְּנַאי שֶׁבּוֹ אָדָם רַשַּׁאי לְקַבֵּל הֲטָבָה, הֲנָחָה אוֹ שֵׁרוּת מֵהַמְּדִינָה.",
             definitionNative = "Условие, при котором человек вправе получить льготу, скидку или услугу от государства.",
@@ -167,7 +167,7 @@ object WordDataHebrewBureauL2 {
         ),
         WordEntity(
             id = 180814, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "bureau_permits", transliteration = "hитъагдут",
+            pos = "noun", semanticGroup = "bureau_permits",
             original = "הִתְאַגְּדוּת", translation = "регистрация юр. лица / создание объединения",
             definition = "פְּעוּלָה רִשְׁמִית שֶׁבָּהּ מִקְבֶּצֶת אֲנָשִׁים הוֹפֶכֶת לְגוּף חוּקִי אֶחָד.",
             definitionNative = "Официальное действие, при котором группа людей становится единым юридическим лицом.",
@@ -176,7 +176,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180813L, 180815L)),
         WordEntity(
             id = 180815, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "bureau_permits", transliteration = "апостиль",
+            pos = "noun", semanticGroup = "bureau_permits",
             original = "אַפּוֹסְטִיל", translation = "апостиль (международная заверка)",
             definition = "אִישּׁוּר בֵּין־לְאֻמִּי קָצָר שֶׁמּוֹכִיחַ שֶׁמִּסְמָךְ זָר נֶחְתַּם כָּחוּק בִּמְדִינָתוֹ.",
             definitionNative = "Краткое международное удостоверение того, что иностранный документ подписан по закону у себя в стране.",
@@ -187,7 +187,7 @@ object WordDataHebrewBureauL2 {
         // ── bureau_fees (5) ───────────────────────────────────────────────
         WordEntity(
             id = 180816, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_fees", transliteration = "агра",
+            pos = "noun", semanticGroup = "bureau_fees",
             original = "אַגְרָה", translation = "пошлина (государственная)",
             definition = "סְכוּם קָבוּעַ שֶׁמְּשַׁלְּמִים לַמְּדִינָה תְּמוּרַת שֵׁרוּת רִשְׁמִי כְּמוֹ הוֹצָאַת מִסְמָךְ.",
             definitionNative = "Фиксированная сумма, которую платят государству за официальную услугу — например, выдачу документа.",
@@ -196,7 +196,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180817L, 180818L)),
         WordEntity(
             id = 180817, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "bureau_fees", transliteration = "дмей типуль",
+            pos = "phrase", semanticGroup = "bureau_fees",
             original = "דְּמֵי טִפּוּל", translation = "плата за обработку (заявления)",
             definition = "תַּשְׁלוּם קָטָן שֶׁגּוֹבֶה הַמִּשְׂרָד עַל בְּדִיקַת הַטֹּפֶס וְהַטִּפּוּל בּוֹ.",
             definitionNative = "Небольшой платёж, который контора берёт за рассмотрение бланка и работу с ним.",
@@ -205,7 +205,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180816L, 180819L, 180820L)),
         WordEntity(
             id = 180818, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "bureau_fees", transliteration = "шума",
+            pos = "noun", semanticGroup = "bureau_fees",
             original = "שׁוּמָה", translation = "налоговая оценка / расчёт платежа",
             definition = "חִשּׁוּב רִשְׁמִי שֶׁעוֹשָׂה הַמְּדִינָה כְּדֵי לִקְבֹּעַ כַּמָּה אָדָם חַיָּב לְשַׁלֵּם.",
             definitionNative = "Официальный подсчёт, который делает государство, чтобы установить, сколько человек должен заплатить.",
@@ -214,7 +214,7 @@ object WordDataHebrewBureauL2 {
         ),
         WordEntity(
             id = 180819, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_fees", transliteration = "мас булим",
+            pos = "phrase", semanticGroup = "bureau_fees",
             original = "מַס בּוּלִים", translation = "гербовый сбор",
             definition = "תַּשְׁלוּם נוֹסָף עַל חוֹזִים וּמִסְמָכִים יְקָרִים — הָיָה נֶחְתָּם פַּעַם בִּדְבָקִיּוֹת קְטַנּוֹת.",
             definitionNative = "Дополнительный платёж за договоры и дорогие документы — раньше его клеили маленькими наклейками.",
@@ -223,7 +223,7 @@ object WordDataHebrewBureauL2 {
         ),
         WordEntity(
             id = 180820, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "bureau_fees", transliteration = "тлуш ташлум",
+            pos = "phrase", semanticGroup = "bureau_fees",
             original = "תְּלוּשׁ תַּשְׁלוּם", translation = "платёжная квитанция",
             definition = "פְּרוּסָה קְטַנָּה מֵהַטֹּפֶס שֶׁמַּחֲזִיר הַבַּנְק אַחֲרֵי הַעֲבָרַת הַסְּכוּם.",
             definitionNative = "Маленький отрезной талон, который банк возвращает после перевода нужной суммы.",
@@ -234,7 +234,7 @@ object WordDataHebrewBureauL2 {
         // ── bureau_correspond (5) ─────────────────────────────────────────
         WordEntity(
             id = 180821, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_correspond", transliteration = "пния",
+            pos = "noun", semanticGroup = "bureau_correspond",
             original = "פְּנִיָּה", translation = "обращение (в инстанцию)",
             definition = "מִכְתָּב קָצָר שֶׁאָדָם שׁוֹלֵחַ לְמִשְׂרָד כְּדֵי לְבַקֵּשׁ עֶזְרָה אוֹ הַסְבָּרָה.",
             definitionNative = "Короткое письмо, которое человек посылает в учреждение, чтобы попросить помощи или объяснений.",
@@ -243,7 +243,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180823L)),
         WordEntity(
             id = 180822, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_correspond", transliteration = "маанэ ришми",
+            pos = "phrase", semanticGroup = "bureau_correspond",
             original = "מַעֲנֵה רִשְׁמִי", translation = "официальный ответ",
             definition = "מִכְתָּב חָתוּם מִגּוּף מֶמְשַׁלְתִּי שֶׁמּוֹסֵר הַחְלָטָה כְּתוּבָה עַל פְּנִיָּה.",
             definitionNative = "Подписанное письмо от госоргана, передающее письменное решение по обращению.",
@@ -252,7 +252,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180824L, 180825L)),
         WordEntity(
             id = 180823, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "bureau_correspond", transliteration = "асмахта",
+            pos = "noun", semanticGroup = "bureau_correspond",
             original = "אַסְמַכְתָּא", translation = "номер-подтверждение / референс",
             definition = "צֵרוּף אוֹתִיּוֹת וּמִסְפָּרִים יִיחוּדִי הַמְּזַהֶה פְּעֻלָּה רִשְׁמִית בְּמַעֲרֶכֶת.",
             definitionNative = "Уникальное сочетание букв и цифр, которое опознаёт официальное действие в системе.",
@@ -261,7 +261,7 @@ object WordDataHebrewBureauL2 {
         ),
         WordEntity(
             id = 180824, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_correspond", transliteration = "таргум нотарьони",
+            pos = "phrase", semanticGroup = "bureau_correspond",
             original = "תַּרְגּוּם נוֹטָרְיוֹנִי", translation = "нотариальный перевод",
             definition = "הַעֲבָרַת מִסְמָךְ זָר לִשְׂפָה אַחֶרֶת — חֲתוּמָה בִּידֵי אִישׁ מִקְצוֹעַ מֻסְמָךְ.",
             definitionNative = "Перевод иностранного документа на другой язык — заверенный квалифицированным специалистом.",
@@ -270,7 +270,7 @@ object WordDataHebrewBureauL2 {
          fillInBlankExclusions = listOf(180822L, 180825L)),
         WordEntity(
             id = 180825, setId = 1808, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "bureau_correspond", transliteration = "hэетек нээман ламакор",
+            pos = "phrase", semanticGroup = "bureau_correspond",
             original = "הַעְתֵּק נֶאֱמָן לַמָּקוֹר", translation = "заверенная копия",
             definition = "צִילּוּם שֶׁל מִסְמָךְ עִם חוֹתֶמֶת וַחֲתִימָה הַמְּאַשְּׁרוֹת זֵהוּת מְלֵאָה לַמְּקוֹר.",
             definitionNative = "Копия документа со штампом и подписью, удостоверяющими полное соответствие оригиналу.",

@@ -61,7 +61,7 @@ object WordDataHebrewMobileL1 {
         // ── mobile_basic_device (5) — устройство и аппаратная часть ──
         WordEntity(
             id = 178301, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mobile_basic_device", transliteration = "telefon",
+            pos = "noun", semanticGroup = "mobile_basic_device",
             original = "טֶלֶפוֹן", translation = "телефон",
             definition = "מַכְשִׁיר קָטָן בַּיָּד שֶׁבּוֹ מְדַבְּרִים, כּוֹתְבִים וְקוֹרְאִים חֲדָשׁוֹת.",
             definitionNative = "Маленькое устройство в руке, в нём говорят, пишут и читают новости.",
@@ -70,7 +70,7 @@ object WordDataHebrewMobileL1 {
         ),
         WordEntity(
             id = 178302, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_device", transliteration = "smartfon",
+            pos = "noun", semanticGroup = "mobile_basic_device",
             original = "סְמַארְטְפוֹן", translation = "смартфон",
             definition = "טֶלֶפוֹן חָכָם עִם מָסָךְ גָּדוֹל שֶׁמַּרִיץ תּוֹכְנוֹת רַבּוֹת וּמִתְחַבֵּר לָרֶשֶׁת.",
             definitionNative = "Умный телефон с большим дисплеем, что запускает много программ и выходит в сеть.",
@@ -79,7 +79,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178301L, 178303L, 178304L, 178305L)),
         WordEntity(
             id = 178303, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mobile_basic_device", transliteration = "masakh",
+            pos = "noun", semanticGroup = "mobile_basic_device",
             original = "מָסָךְ", translation = "экран",
             definition = "לוּחַ זְכוּכִית בְּחֶלְקוֹ הַקִּדְמִי שֶׁל הַמַּכְשִׁיר — שָׁם רוֹאִים תְּמוּנוֹת וְטֶקְסְט.",
             definitionNative = "Стеклянная панель на лицевой стороне устройства — там видно картинки и текст.",
@@ -88,7 +88,7 @@ object WordDataHebrewMobileL1 {
         ),
         WordEntity(
             id = 178304, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_device", transliteration = "solela",
+            pos = "noun", semanticGroup = "mobile_basic_device",
             original = "סוֹלְלָה", translation = "аккумулятор",
             definition = "חֲתִיכָה קְטַנָּה בְּתוֹךְ הַמַּכְשִׁיר שֶׁאוֹגֶרֶת חַשְׁמַל וְנוֹתֶנֶת לוֹ לִפְעוֹל בְּלִי כַּבְל.",
             definitionNative = "Маленькая штука внутри устройства — копит электричество и даёт работать без провода.",
@@ -97,7 +97,7 @@ object WordDataHebrewMobileL1 {
         ),
         WordEntity(
             id = 178305, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mobile_basic_device", transliteration = "mat'en",
+            pos = "noun", semanticGroup = "mobile_basic_device",
             original = "מַטְעֵן", translation = "зарядное устройство",
             definition = "כַּבְל וּתוֹסֶפֶת לַקִּיר שֶׁמְּמַלְּאִים אֶת הַסּוֹלְלָה כְּשֶׁהִיא נֶחְלֶשֶׁת.",
             definitionNative = "Кабель и насадка в розетку — они наполняют батарею, когда та слабеет.",
@@ -108,7 +108,7 @@ object WordDataHebrewMobileL1 {
         // ── mobile_basic_app (5) — приложение и его места на телефоне ──
         WordEntity(
             id = 178306, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_app", transliteration = "aplikatsya",
+            pos = "noun", semanticGroup = "mobile_basic_app",
             original = "אַפְּלִיקַצְיָה", translation = "приложение",
             definition = "תּוֹכְנָה קְטַנָּה לַטֶּלֶפוֹן שֶׁעוֹשָׂה דָּבָר אֶחָד טוֹב — מַפָּה, מוּזִיקָה אוֹ הוֹדָעוֹת.",
             definitionNative = "Маленькая программа в телефоне для одного дела — карты, музыка или сообщения.",
@@ -117,7 +117,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178307L, 178308L, 178309L, 178310L)),
         WordEntity(
             id = 178307, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_app", transliteration = "aikon",
+            pos = "noun", semanticGroup = "mobile_basic_app",
             original = "אַיְקוֹן", translation = "иконка",
             definition = "צִיּוּר קָטָן וְצִבְעוֹנִי שֶׁמַּפְעִיל אֶת הַתּוֹכְנָה כְּשֶׁנּוֹגְעִים בּוֹ.",
             definitionNative = "Маленький цветной рисунок — запускает программу, когда по нему касаются.",
@@ -126,7 +126,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178306L, 178308L, 178309L, 178310L)),
         WordEntity(
             id = 178308, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mobile_basic_app", transliteration = "tapet",
+            pos = "noun", semanticGroup = "mobile_basic_app",
             original = "טַפֵּט", translation = "обои (заставка)",
             definition = "תְּמוּנַת רֶקַע שֶׁרוֹאִים מֵאֲחוֹרֵי הָאַיְקוֹנִים כְּשֶׁפּוֹתְחִים אֶת הַטֶּלֶפוֹן.",
             definitionNative = "Фоновая картинка — её видно за иконками, когда открываешь телефон.",
@@ -135,7 +135,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178306L, 178307L, 178309L, 178310L)),
         WordEntity(
             id = 178309, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_app", transliteration = "hom skrin",
+            pos = "noun", semanticGroup = "mobile_basic_app",
             original = "הוֹם סְקְרִין", translation = "главный экран",
             definition = "הַדַּף הָרִאשׁוֹן שֶׁנִּפְתָּח אַחֲרֵי לְחִיצָה עַל כַּפְתּוֹר הַבַּיִת אוֹ פְּתִיחַת הַטֶּלֶפוֹן.",
             definitionNative = "Первая страница — открывается после кнопки «домой» или разблокировки телефона.",
@@ -144,7 +144,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178306L, 178307L, 178308L, 178310L)),
         WordEntity(
             id = 178310, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_app", transliteration = "kitsur derekh",
+            pos = "noun", semanticGroup = "mobile_basic_app",
             original = "קִיצּוּר דֶּרֶךְ", translation = "ярлык",
             definition = "אַיְקוֹן שֶׁמּוֹבִיל יָשִׁיר לְפֻנְקְצְיָה אוֹ דַּף בְּלִי לַעֲבוֹר דֶּרֶךְ הַתַּפְרִיט הָרָאשִׁי.",
             definitionNative = "Иконка, ведущая прямо к функции или странице — без захода в общее меню.",
@@ -155,7 +155,7 @@ object WordDataHebrewMobileL1 {
         // ── mobile_basic_ui_simple (5) — простые элементы интерфейса ──
         WordEntity(
             id = 178311, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mobile_basic_ui_simple", transliteration = "kaftor",
+            pos = "noun", semanticGroup = "mobile_basic_ui_simple",
             original = "כַּפְתּוֹר", translation = "кнопка",
             definition = "אֵזוֹר קָטָן עַל הַמָּסָךְ שֶׁעוֹשֶׂה פְּעֻלָּה אַחַת כְּשֶׁנּוֹגְעִים בּוֹ.",
             definitionNative = "Маленький участок на дисплее — выполняет одно действие, когда по нему касаются.",
@@ -164,7 +164,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178312L, 178313L, 178314L, 178315L)),
         WordEntity(
             id = 178312, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_ui_simple", transliteration = "sde tekst",
+            pos = "noun", semanticGroup = "mobile_basic_ui_simple",
             original = "שְׂדֵה טֶקְסְט", translation = "поле ввода",
             definition = "מָקוֹם בַּטֹּפֶס שֶׁבּוֹ מַקְלִידִים שֵׁם, סִיסְמָה אוֹ הוֹדָעָה לְפִי בַּקָּשַׁת הַתּוֹכְנָה.",
             definitionNative = "Место в форме — туда печатают имя, пароль или сообщение по запросу программы.",
@@ -173,7 +173,7 @@ object WordDataHebrewMobileL1 {
         ),
         WordEntity(
             id = 178313, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mobile_basic_ui_simple", transliteration = "tafrit",
+            pos = "noun", semanticGroup = "mobile_basic_ui_simple",
             original = "תַּפְרִיט", translation = "меню",
             definition = "רְשִׁימָה שֶׁל אֶפְשָׁרֻיּוֹת שֶׁנִּפְתַּחַת מִכַּפְתּוֹר וּמַצִּיעָה לִבְחוֹר פְּעֻלָּה אַחַת.",
             definitionNative = "Список вариантов — раскрывается с кнопки и предлагает выбрать одно действие.",
@@ -182,7 +182,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178311L, 178312L, 178314L, 178315L)),
         WordEntity(
             id = 178314, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_ui_simple", transliteration = "meteg",
+            pos = "noun", semanticGroup = "mobile_basic_ui_simple",
             original = "מֶתֶג", translation = "переключатель",
             definition = "אֵזוֹר קָטָן שֶׁזָּז יָמִינָה אוֹ שְׂמֹאלָה — מַדְלִיק אוֹ מְכַבֶּה תְּכוּנָה.",
             definitionNative = "Маленький бегунок ходит вправо-влево — включает или выключает свойство.",
@@ -191,7 +191,7 @@ object WordDataHebrewMobileL1 {
         ),
         WordEntity(
             id = 178315, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_ui_simple", transliteration = "slayder",
+            pos = "noun", semanticGroup = "mobile_basic_ui_simple",
             original = "סְלַיידֶר", translation = "ползунок",
             definition = "פַּס דַּק עִם נְקֻדָּה שֶׁמּוֹשְׁכִים בָּאֶצְבַּע כְּדֵי לְהַגְדִּיל אוֹ לְהַקְטִין עֵרֶךְ.",
             definitionNative = "Тонкая полоска с точкой — её тянут пальцем, чтобы увеличить или уменьшить значение.",
@@ -202,7 +202,7 @@ object WordDataHebrewMobileL1 {
         // ── mobile_basic_actions (5) — базовые жесты ──
         WordEntity(
             id = 178316, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mobile_basic_actions", transliteration = "negi'a",
+            pos = "noun", semanticGroup = "mobile_basic_actions",
             original = "נְגִיעָה", translation = "тап (нажатие на экран)",
             definition = "מַגָּע קָצָר שֶׁל אֶצְבַּע אַחַת בַּמָּסָךְ — הַפְּעֻלָּה הָרָגִילָה לִפְתִיחַת תּוֹכְנָה.",
             definitionNative = "Короткий контакт одного пальца с дисплеем — обычное действие для запуска программы.",
@@ -211,7 +211,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178317L, 178319L, 178320L)),
         WordEntity(
             id = 178317, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_actions", transliteration = "swaip",
+            pos = "noun", semanticGroup = "mobile_basic_actions",
             original = "סְוַייפּ", translation = "свайп",
             definition = "תְּנוּעַת אֶצְבַּע מָהִירָה לְצַד מְסֻיָּם בַּמָּסָךְ — לְמַעֲבָר בֵּין דַּפִּים אוֹ הוֹדָעוֹת.",
             definitionNative = "Быстрое движение пальцем в одну сторону по дисплею — для смены страниц или сообщений.",
@@ -220,7 +220,7 @@ object WordDataHebrewMobileL1 {
         ),
         WordEntity(
             id = 178318, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "mobile_basic_actions", transliteration = "lekhitsa arukha",
+            pos = "phrase", semanticGroup = "mobile_basic_actions",
             original = "לְחִיצָה אֲרֻכָּה", translation = "долгое нажатие",
             definition = "הַחְזָקָה שֶׁל הָאֶצְבַּע עַל הַמָּסָךְ כַּמָּה שְׁנִיּוֹת כְּדֵי לִפְתֹּחַ אֶפְשָׁרֻיּוֹת נוֹסָפוֹת.",
             definitionNative = "Удержание пальца на дисплее несколько секунд — открывает дополнительные опции.",
@@ -229,7 +229,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178320L)),
         WordEntity(
             id = 178319, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_actions", transliteration = "tsvita",
+            pos = "noun", semanticGroup = "mobile_basic_actions",
             original = "צְבִיטָה", translation = "щипок (pinch — увеличение/уменьшение)",
             definition = "תְּנוּעָה שֶׁל שְׁתֵּי אֶצְבָּעוֹת — מִתְקָרְבוֹת אוֹ מִתְרַחֲקוֹת — לְשִׁנּוּי גֹּדֶל הַתְּמוּנָה.",
             definitionNative = "Движение двух пальцев — сходятся или расходятся — для смены размера картинки.",
@@ -238,7 +238,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178316L, 178317L)),
         WordEntity(
             id = 178320, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "mobile_basic_actions", transliteration = "klik kaful",
+            pos = "phrase", semanticGroup = "mobile_basic_actions",
             original = "קְלִיק כָּפוּל", translation = "двойной клик",
             definition = "שְׁתֵּי נְגִיעוֹת מְהִירוֹת זוֹ אַחַר זוֹ בְּאוֹתוֹ מָקוֹם — לְהַגְדָּלָה אוֹ סִימּוּן לַייק.",
             definitionNative = "Два быстрых касания подряд по одному месту — для приближения или отметки лайком.",
@@ -249,7 +249,7 @@ object WordDataHebrewMobileL1 {
         // ── mobile_basic_install (5) — управление приложениями ──
         WordEntity(
             id = 178321, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_install", transliteration = "hatkana",
+            pos = "noun", semanticGroup = "mobile_basic_install",
             original = "הַתְקָנָה", translation = "установка",
             definition = "תַּהֲלִיךְ הַעֲתָקָה שֶׁל תּוֹכְנָה חֲדָשָׁה לַטֶּלֶפוֹן כְּדֵי שֶׁאֶפְשָׁר יִהְיֶה לִפְתֹּחַ אוֹתָהּ.",
             definitionNative = "Процесс копирования новой программы в телефон — чтобы её можно было запустить.",
@@ -258,7 +258,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178322L, 178323L, 178324L)),
         WordEntity(
             id = 178322, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mobile_basic_install", transliteration = "idkun",
+            pos = "noun", semanticGroup = "mobile_basic_install",
             original = "עִדְכּוּן", translation = "обновление",
             definition = "גִּרְסָה חֲדָשָׁה יוֹתֵר שֶׁמַּחְלִיפָה אֶת הַיְּשָׁנָה — מוֹסִיפָה תְּכוּנוֹת וּמְתַקֶּנֶת בְּעָיוֹת.",
             definitionNative = "Более новая версия — заменяет старую, добавляет фичи и чинит проблемы.",
@@ -267,7 +267,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178321L, 178323L, 178324L)),
         WordEntity(
             id = 178323, setId = 1783, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mobile_basic_install", transliteration = "hasara",
+            pos = "noun", semanticGroup = "mobile_basic_install",
             original = "הֲסָרָה", translation = "удаление",
             definition = "הוֹצָאָה שֶׁל תּוֹכְנָה מֵהַטֶּלֶפוֹן בְּצוּרָה מְלֵאָה — הָאַיְקוֹן וְהַקְּבָצִים נֶעֱלָמִים יַחַד.",
             definitionNative = "Полный вывод программы из телефона — иконка и файлы исчезают вместе.",
@@ -276,7 +276,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178321L, 178322L, 178324L)),
         WordEntity(
             id = 178324, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mobile_basic_install", transliteration = "harshaot",
+            pos = "noun", semanticGroup = "mobile_basic_install",
             original = "הַרְשָׁאוֹת", translation = "разрешения",
             definition = "אִישׁוּרִים שֶׁהַתּוֹכְנָה מְבַקֶּשֶׁת מֵהַמִּשְׁתַּמֵּשׁ — לְמַצְלֵמָה, מִיקְרוֹפוֹן אוֹ מִיקּוּם.",
             definitionNative = "Согласия, что программа просит у пользователя — на камеру, микрофон или местоположение.",
@@ -285,7 +285,7 @@ object WordDataHebrewMobileL1 {
          fillInBlankExclusions = listOf(178321L, 178322L, 178323L)),
         WordEntity(
             id = 178325, setId = 1783, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "mobile_basic_install", transliteration = "khanut tokhnot",
+            pos = "phrase", semanticGroup = "mobile_basic_install",
             original = "חֲנוּת תּוֹכְנוֹת", translation = "магазин приложений",
             definition = "מָקוֹם דִּיגִיטָלִי שֶׁבּוֹ מוֹרִידִים אוֹ קוֹנִים תּוֹכְנוֹת רִשְׁמִיּוֹת לַטֶּלֶפוֹן.",
             definitionNative = "Цифровое место — там скачивают или покупают официальные программы для телефона.",

@@ -67,7 +67,7 @@ object WordDataHebrewInterviewL2 {
         // ── job_search_listings (5) — атрибуты и поиск вакансий ──
         WordEntity(
             id = 175301, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_listings", transliteration = "luakh drushim",
+            pos = "noun", semanticGroup = "job_search_listings",
             original = "לוּחַ דְּרוּשִׁים", translation = "доска вакансий",
             definition = "אֲתָר אוֹ עַמּוּד שֶׁבּוֹ מְפַרְסְמִים הַרְבֵּה מִשְׂרוֹת פְּנוּיוֹת בְּמָקוֹם אֶחָד.",
             definitionNative = "Сайт или страница, где собрано множество свободных позиций в одном месте.",
@@ -76,7 +76,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175302L, 175303L, 175304L, 175305L)),
         WordEntity(
             id = 175302, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_listings", transliteration = "tkhumey akhrayut",
+            pos = "noun", semanticGroup = "job_search_listings",
             original = "תְּחוּמֵי אַחְרָיוּת", translation = "зоны ответственности",
             definition = "רְשִׁימַת הַמְּשִׂימוֹת שֶׁעַל הָעוֹבֵד לְבַצֵּעַ בִּפְעוּלָה הַיּוֹמְיוֹמִית בַּמִּשְׂרָה.",
             definitionNative = "Список задач, которые сотрудник выполняет каждый день на этой позиции.",
@@ -85,7 +85,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175301L, 175303L, 175304L, 175305L)),
         WordEntity(
             id = 175303, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_listings", transliteration = "sha'ot gmishot",
+            pos = "noun", semanticGroup = "job_search_listings",
             original = "שָׁעוֹת גְּמִישׁוֹת", translation = "гибкие часы",
             definition = "סִדּוּר זְמַן שֶׁבּוֹ הָעוֹבֵד בּוֹחֵר מָתַי לְהַתְחִיל וּמָתַי לִגְמֹר אֶת הַיּוֹם.",
             definitionNative = "График, при котором работник сам выбирает время начала и конца дня.",
@@ -94,7 +94,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175301L, 175302L, 175304L, 175305L)),
         WordEntity(
             id = 175304, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_listings", transliteration = "misra hibridit",
+            pos = "noun", semanticGroup = "job_search_listings",
             original = "מִשְׂרָה הִיבְּרִידִית", translation = "гибридная позиция",
             definition = "פוֹרְמָט שֶׁל חֵצִי מִשְּׁרַד וְחֵצִי מֵרָחוֹק — כַּמָּה יָמִים בְּשָׁבוּעַ פֹּה וְשָׁם.",
             definitionNative = "Формат: половина в офисе, половина из дома — несколько дней в неделю там и там.",
@@ -103,7 +103,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175301L, 175302L, 175303L, 175305L)),
         WordEntity(
             id = 175305, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_listings", transliteration = "sinun totsa'ot",
+            pos = "noun", semanticGroup = "job_search_listings",
             original = "סִנּוּן תּוֹצָאוֹת", translation = "фильтрация результатов",
             definition = "צִמְצוּם רְשִׁימָה אֲרֻכָּה לְפִי מָקוֹם, רָמָה אוֹ הֶיקֵף, כְּדֵי לִרְאוֹת רַק מַתְאִים.",
             definitionNative = "Сужение длинного списка по месту, уровню или объёму — чтобы видеть только подходящее.",
@@ -114,7 +114,7 @@ object WordDataHebrewInterviewL2 {
         // ── job_search_applying (5) — отклик и трекинг ──
         WordEntity(
             id = 175306, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_applying", transliteration = "shlikhat masmakhim",
+            pos = "noun", semanticGroup = "job_search_applying",
             original = "שְׁלִיחַת מַסְמָכִים", translation = "отправка документов",
             definition = "פְּעֻלַּת הַעֲבָרַת קוֹרוֹת חַיִּים וּתְעוּדוֹת לַחֶבְרָה כְּחֵלֶק מִדְּחִיפַת מֻעֳמָדוּת.",
             definitionNative = "Передача резюме и сертификатов в фирму как часть подачи на вакансию.",
@@ -123,7 +123,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175307L, 175308L, 175309L, 175310L)),
         WordEntity(
             id = 175307, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_applying", transliteration = "ishur kabala",
+            pos = "noun", semanticGroup = "job_search_applying",
             original = "אִישׁוּר קַבָּלָה", translation = "подтверждение получения",
             definition = "מֶסֶר אוֹטוֹמָטִי מֵהַחֶבְרָה שֶׁאוֹמֵר שֶׁהַחֳמָרִים שֶׁשְּׁלַחְתָּ הִגִּיעוּ אֲלֵיהֶם.",
             definitionNative = "Автосообщение от фирмы: материалы, которые ты отправил, дошли до них.",
@@ -132,7 +132,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175306L, 175308L, 175309L, 175310L)),
         WordEntity(
             id = 175308, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_applying", transliteration = "dkhiya menumeket",
+            pos = "noun", semanticGroup = "job_search_applying",
             original = "דְּחִיָּה מְנֻמֶּקֶת", translation = "обоснованный отказ",
             definition = "תְּשׁוּבָה שְׁלִילִית מֵחֶבְרָה עִם הֶסְבֵּר קָצָר לָמָּה הַמֻּעֳמָד לֹא הִתְקַבֵּל.",
             definitionNative = "Отрицательный ответ от фирмы с кратким объяснением, почему кандидат не подошёл.",
@@ -141,7 +141,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175306L, 175307L, 175309L, 175310L)),
         WordEntity(
             id = 175309, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_applying", transliteration = "bakashat mashov",
+            pos = "noun", semanticGroup = "job_search_applying",
             original = "בַּקָּשַׁת מַשׁוֹב", translation = "запрос обратной связи",
             definition = "פְּנִיָּה לְחֶבְרָה אַחֲרֵי תְּשׁוּבָה שְׁלִילִית כְּדֵי לָדַעַת מָה לְשַׁפֵּר בַּפַּעַם הַבָּאָה.",
             definitionNative = "Обращение к фирме после отказа: чтобы узнать, что улучшить в следующий раз.",
@@ -150,7 +150,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175306L, 175307L, 175308L, 175310L)),
         WordEntity(
             id = 175310, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_applying", transliteration = "ma'akav hitkadmut",
+            pos = "noun", semanticGroup = "job_search_applying",
             original = "מַעֲקַב הִתְקַדְּמוּת", translation = "отслеживание прогресса",
             definition = "טַבְלָה אוֹ אַפְּלִיקַצְיָה שֶׁבָּהּ רוֹשְׁמִים אֵיךְ כָּל פְּנִיָּה לְחֶבְרָה זָזָה הָלְאָה.",
             definitionNative = "Таблица или приложение: записывают, как каждое обращение в фирму движется дальше.",
@@ -161,7 +161,7 @@ object WordDataHebrewInterviewL2 {
         // ── job_search_networking (5) — нетворкинг и связи ──
         WordEntity(
             id = 175311, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_networking", transliteration = "kenes miktso'i",
+            pos = "noun", semanticGroup = "job_search_networking",
             original = "כֵּנֶס מִקְצוֹעִי", translation = "отраслевая конференция",
             definition = "אֵירוּעַ גָּדוֹל שֶׁאַנְשֵׁי הַתְּחוּם נִפְגָּשִׁים בּוֹ, שׁוֹמְעִים הַרְצָאוֹת וּמַכִּירִים זֶה אֶת זֶה.",
             definitionNative = "Большое мероприятие: тысячи людей сферы встречаются, слушают доклады и знакомятся.",
@@ -170,7 +170,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175312L, 175313L, 175314L, 175315L)),
         WordEntity(
             id = 175312, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_networking", transliteration = "mitap",
+            pos = "noun", semanticGroup = "job_search_networking",
             original = "מִיטָאפּ", translation = "митап (отраслевая встреча)",
             definition = "מִפְגָּשׁ קָטָן וּלֹא רִשְׁמִי שֶׁל אַנְשֵׁי הַתְּחוּם אַחֲרֵי הָעֲבוֹדָה בְּפַאבּ אוֹ בְּמִשְׂרָד.",
             definitionNative = "Маленькая неформальная встреча людей сферы после работы — в пабе или офисе.",
@@ -179,7 +179,7 @@ object WordDataHebrewInterviewL2 {
         ),
         WordEntity(
             id = 175313, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_networking", transliteration = "hamlatsa ishit",
+            pos = "noun", semanticGroup = "job_search_networking",
             original = "הַמְלָצָה אִישִׁית", translation = "личная рекомендация",
             definition = "מִכְתָּב אוֹ דְּבָרִים טוֹבִים שֶׁמִּישֶׁהוּ אוֹמֵר עֲלֵיךָ לְחֶבְרָה שֶׁמְּחַפֶּשֶׂת עוֹבֵד.",
             definitionNative = "Письмо или хорошие слова — кто-то говорит о тебе фирме, которая ищет сотрудника.",
@@ -188,7 +188,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175311L, 175312L, 175314L, 175315L)),
         WordEntity(
             id = 175314, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_networking", transliteration = "kesher kham",
+            pos = "noun", semanticGroup = "job_search_networking",
             original = "קֶשֶׁר חַם", translation = "тёплый контакт (warm intro)",
             definition = "הִכָּרוּת דֶּרֶךְ חָבֵר מְשֻׁתָּף, לֹא מֵאֶפֶס — מַה שֶּׁמַעֲלֶה אֶת סִכּוּי הַתְּשׁוּבָה.",
             definitionNative = "Знакомство через общего друга, а не с нуля — это сильно поднимает шанс ответа.",
@@ -197,7 +197,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175311L, 175312L, 175313L, 175315L)),
         WordEntity(
             id = 175315, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_networking", transliteration = "hafnaya pnimit",
+            pos = "noun", semanticGroup = "job_search_networking",
             original = "הַפְנָיָה פְּנִימִית", translation = "внутренний реферал",
             definition = "כְּשֶׁעוֹבֵד בַּחֶבְרָה מַעֲבִיר אֶת קוֹרוֹת הַחַיִּים שֶׁלְּךָ יָשָׁר לַמְּגַיֵּיס מִבִּפְנִים.",
             definitionNative = "Когда сотрудник внутри фирмы передаёт твоё резюме рекрутеру изнутри.",
@@ -208,7 +208,7 @@ object WordDataHebrewInterviewL2 {
         // ── job_search_agency (5) — кадровые агентства и посредники ──
         WordEntity(
             id = 175316, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_agency", transliteration = "khevrat hasama",
+            pos = "noun", semanticGroup = "job_search_agency",
             original = "חֶבְרַת הַשָּׂמָה", translation = "кадровая компания",
             definition = "עֵסֶק חִיצוֹנִי שֶׁמְּחַבֵּר בֵּין מְחַפְּשֵׂי עֲבוֹדָה לְבֵין מַעֲסִיקִים — וְלוֹקֵחַ אֲחוּז.",
             definitionNative = "Внешний бизнес-посредник между ищущими работу и работодателями — берёт процент.",
@@ -217,7 +217,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175317L, 175318L, 175319L, 175320L)),
         WordEntity(
             id = 175317, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_agency", transliteration = "yo'ets karyera",
+            pos = "noun", semanticGroup = "job_search_agency",
             original = "יוֹעֵץ קַרְיֶירָה", translation = "карьерный консультант",
             definition = "אִישׁ מִקְצוֹעַ שֶׁעוֹזֵר לְהָבִין לְאָן לִפְנוֹת בַּשּׁוּק וְאֵיךְ לְהַצִּיג אֶת עַצְמְךָ נָכוֹן.",
             definitionNative = "Профессионал — помогает понять, куда идти на рынке и как правильно себя подать.",
@@ -226,7 +226,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175316L, 175318L, 175319L, 175320L)),
         WordEntity(
             id = 175318, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_agency", transliteration = "ma'agar mu'amadim",
+            pos = "noun", semanticGroup = "job_search_agency",
             original = "מַאֲגַר מוּעֳמָדִים", translation = "база кандидатов",
             definition = "אֹסֶף גָּדוֹל שֶׁל קוֹרוֹת חַיִּים שֶׁל אַנָשִׁים מוּכָנִים, שֶׁמְּגַיְּיסִים שׁוֹלְפִים מִמֶּנּוּ.",
             definitionNative = "Большой набор резюме готовых людей — рекрутеры подбирают оттуда.",
@@ -235,7 +235,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175316L, 175317L, 175319L, 175320L)),
         WordEntity(
             id = 175319, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_agency", transliteration = "amlat itur",
+            pos = "noun", semanticGroup = "job_search_agency",
             original = "עֲמָלַת אִתּוּר", translation = "комиссия за поиск (расценка агентства)",
             definition = "סְכוּם שֶׁמַּעֲסִיק מְשַׁלֵּם לַסּוֹכְנוּת אַחֲרֵי שֶׁהַמֻּעֳמָד שֶׁלָּהּ הִתְקַבֵּל.",
             definitionNative = "Сумма, которую работодатель платит агентству, когда приведённый кандидат принят.",
@@ -244,7 +244,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175316L, 175317L, 175318L, 175320L)),
         WordEntity(
             id = 175320, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_agency", transliteration = "heskem bil'adiyut",
+            pos = "noun", semanticGroup = "job_search_agency",
             original = "הֶסְכֵּם בִּלְעַדִיּוּת", translation = "эксклюзивный договор",
             definition = "חוֹזֶה שֶׁבּוֹ מְחַפֵּשׂ עֲבוֹדָה מַבְטִיחַ לַסּוֹכְנוּת אַחַת בִּלְבַד אֶת הַטִּפּוּל בּוֹ.",
             definitionNative = "Контракт: ищущий работу обещает только одному агентству заниматься его кейсом.",
@@ -255,7 +255,7 @@ object WordDataHebrewInterviewL2 {
         // ── job_search_alt_paths (5) — альтернативные пути в индустрию ──
         WordEntity(
             id = 175321, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_alt_paths", transliteration = "avoda zmanit",
+            pos = "noun", semanticGroup = "job_search_alt_paths",
             original = "עֲבוֹדָה זְמַנִּית", translation = "временная работа",
             definition = "תַּפְקִיד לִתְקוּפָה קְצָרָה עִם תַּאֲרִיךְ סִיּוּם יָדוּעַ — לְכַמָּה חֳדָשִׁים אוֹ לְפְּרוֹיֶקְט.",
             definitionNative = "Должность на короткий срок с известной датой окончания — на пару месяцев или проект.",
@@ -264,7 +264,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175322L, 175323L, 175324L, 175325L)),
         WordEntity(
             id = 175322, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_alt_paths", transliteration = "frilans",
+            pos = "noun", semanticGroup = "job_search_alt_paths",
             original = "פְרִילַנְס", translation = "фриланс",
             definition = "מָתְכֹּנֶת עַצְמָאִית: לוֹקְחִים פְּרוֹיֶקְטִים מִכַּמָּה לָקוֹחוֹת בְּלִי מַעֲסִיק קָבוּעַ.",
             definitionNative = "Формат: ты сам по себе, берёшь проекты у нескольких клиентов, не привязан к одному офису.",
@@ -273,7 +273,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175321L, 175323L, 175324L, 175325L)),
         WordEntity(
             id = 175323, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_alt_paths", transliteration = "hitmakhut ma'asit",
+            pos = "noun", semanticGroup = "job_search_alt_paths",
             original = "הִתְמַחוּת מַעֲשִׂית", translation = "практическая стажировка",
             definition = "תְּקוּפָה קְצָרָה בַּחֶבְרָה שֶׁבָּהּ מַתְחִיל לוֹמֵד אֶת הָעֲבוֹדָה לְצַד עוֹבְדִים מְנֻסִּים.",
             definitionNative = "Короткий период в фирме, где новичок учится делу рядом с опытными сотрудниками.",
@@ -282,7 +282,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175321L, 175322L, 175324L, 175325L)),
         WordEntity(
             id = 175324, setId = 1753, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "job_search_alt_paths", transliteration = "shinuy karyera",
+            pos = "noun", semanticGroup = "job_search_alt_paths",
             original = "שִׁנּוּי קַרְיֶירָה", translation = "смена карьеры",
             definition = "מַעֲבָר מִתְּחוּם אֶחָד לִתְחוּם אַחֵר לְגַמְרֵי, לְעִתִּים אַחֲרֵי לִימּוּדִים נוֹסָפִים.",
             definitionNative = "Переход из одной сферы в совершенно другую — иногда после дополнительного обучения.",
@@ -291,7 +291,7 @@ object WordDataHebrewInterviewL2 {
          fillInBlankExclusions = listOf(175321L, 175322L, 175323L, 175325L)),
         WordEntity(
             id = 175325, setId = 1753, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "job_search_alt_paths", transliteration = "hakhshara intensivit",
+            pos = "noun", semanticGroup = "job_search_alt_paths",
             original = "הַכְשָׁרָה אִינְטֶנְסִיבִית", translation = "интенсивная переподготовка",
             definition = "תָּכְנִית לִימּוּד צְפוּפָה שֶׁל כַּמָּה חֳדָשִׁים שֶׁמְּלַמֶּדֶת מִקְצוֹעַ חָדָשׁ מֵאֶפֶס.",
             definitionNative = "Плотная учебная программа на несколько месяцев — учит новой профессии с нуля.",

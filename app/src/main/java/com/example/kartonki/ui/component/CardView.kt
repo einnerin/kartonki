@@ -70,7 +70,9 @@ fun WordCard(
             )
 
             // ── Transliteration + TTS button ─────────────────────────────────
-            val hasTranslit = word.transliteration != null
+            // Для иврита транслитерацию не показываем: огласованный original
+            // (никуд) + озвучка TTS дают произношение без неё.
+            val hasTranslit = word.transliteration != null && !isRtl
             if (hasTranslit || ttsManager != null) {
                 Spacer(modifier = Modifier.height(4.dp))
                 Row(verticalAlignment = Alignment.CenterVertically) {

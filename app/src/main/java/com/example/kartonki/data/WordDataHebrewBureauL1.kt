@@ -42,7 +42,7 @@ object WordDataHebrewBureauL1 {
         // ── bureau_basic_docs (5) ─────────────────────────────────────────
         WordEntity(
             id = 180701, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_docs", transliteration = "hodаа",
+            pos = "noun", semanticGroup = "bureau_basic_docs",
             original = "הוֹדָעָה", translation = "уведомление",
             definition = "מִכְתָּב קָצָר מִמּוֹסָד שֶׁמּוֹסֵר לָאָדָם מֵידָע אוֹ הַחְלָטָה.",
             definitionNative = "Короткая бумага от учреждения, сообщающая человеку решение или сведения.",
@@ -51,7 +51,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180702L, 180703L, 180704L, 180705L, 180713L, 180721L, 180722L)),
         WordEntity(
             id = 180702, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "bureau_basic_docs", transliteration = "тмуна",
+            pos = "noun", semanticGroup = "bureau_basic_docs",
             original = "תְּמוּנָה", translation = "фотография (для документа)",
             definition = "צִיּוּר אוֹ דְּמוּת שֶׁל פָּנִים שֶׁמַּדְבִּיקִים עַל טֹפֶס לְזִהוּי.",
             definitionNative = "Изображение лица, которое наклеивают на бланк для опознания владельца.",
@@ -60,7 +60,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180701L, 180703L, 180704L, 180705L)),
         WordEntity(
             id = 180703, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "bureau_basic_docs", transliteration = "цилум",
+            pos = "noun", semanticGroup = "bureau_basic_docs",
             original = "צִילּוּם", translation = "фотокопия",
             definition = "הֶעְתֵּק שֶׁל דַּף מְקוֹרִי שֶׁמּוּכָן בְּמַכְשִׁיר וְנִרְאֶה בְּדִיּוּק כַּמָּקוֹר.",
             definitionNative = "Точная копия оригинального листа, сделанная аппаратом и выглядящая как оригинал.",
@@ -69,7 +69,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180701L, 180702L, 180704L, 180705L)),
         WordEntity(
             id = 180704, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_docs", transliteration = "меатафа",
+            pos = "noun", semanticGroup = "bureau_basic_docs",
             original = "מְעַטָּפָה", translation = "конверт",
             definition = "כִּיס נְיָר סָגוּר שֶׁבּוֹ שׁוֹלְחִים מִכְתָּב אוֹ מִסְמָכִים בַּדֹּאַר.",
             definitionNative = "Бумажный карман с клапаном, в котором отправляют письмо или бумаги по почте.",
@@ -78,7 +78,7 @@ object WordDataHebrewBureauL1 {
         ),
         WordEntity(
             id = 180705, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_docs", transliteration = "сэиф",
+            pos = "noun", semanticGroup = "bureau_basic_docs",
             original = "סְעִיף", translation = "пункт (документа) / параграф",
             definition = "חֵלֶק קָטָן וּמְמֻסְפָּר בְּתוֹךְ מִסְמָךְ אוֹ חוֹזֶה רִשְׁמִי.",
             definitionNative = "Маленькая нумерованная часть внутри официального документа или договора.",
@@ -89,7 +89,7 @@ object WordDataHebrewBureauL1 {
         // ── bureau_basic_office (5) ───────────────────────────────────────
         WordEntity(
             id = 180706, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "bureau_basic_office", transliteration = "мисрад",
+            pos = "noun", semanticGroup = "bureau_basic_office",
             original = "מִשְׂרָד", translation = "ведомство / контора",
             definition = "מָקוֹם רִשְׁמִי שֶׁבּוֹ פְּקִידִים מְקַבְּלִים תּוֹשָׁבִים וּמְטַפְּלִים בִּפְנִיּוֹת.",
             definitionNative = "Государственное помещение, где служащие принимают граждан и оформляют обращения.",
@@ -98,7 +98,7 @@ object WordDataHebrewBureauL1 {
         ),
         WordEntity(
             id = 180707, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_office", transliteration = "далпек",
+            pos = "noun", semanticGroup = "bureau_basic_office",
             original = "דַּלְפֵּק", translation = "стойка приёма",
             definition = "שֻׁלְחָן גָּבוֹהַּ בְּכְנִיסַת הַמִּשְׂרָד שֶׁאֶצְלוֹ עוֹמֵד הַפָּקִיד.",
             definitionNative = "Высокий стол у входа в учреждение, за которым работает служащий.",
@@ -107,7 +107,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180706L, 180708L, 180709L, 180710L)),
         WordEntity(
             id = 180708, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_office", transliteration = "шелет",
+            pos = "noun", semanticGroup = "bureau_basic_office",
             original = "שֶׁלֶט", translation = "табличка (с указателем)",
             definition = "לוּחַ קָטָן עִם מִלִּים אוֹ חֵץ שֶׁמַּרְאֶה לְאָן לָלֶכֶת בַּבִּנְיָן.",
             definitionNative = "Маленькая дощечка со словами или стрелкой, указывающая путь внутри здания.",
@@ -116,7 +116,7 @@ object WordDataHebrewBureauL1 {
         ),
         WordEntity(
             id = 180709, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_office", transliteration = "кома",
+            pos = "noun", semanticGroup = "bureau_basic_office",
             original = "קוֹמָה", translation = "этаж",
             definition = "אַחַת הַשִּׁכָבוֹת שֶׁל בִּנְיָן שֶׁמַּגִּיעִים אֵלֶיהָ בְּמַעֲלִית אוֹ בְּמַדְרֵגוֹת.",
             definitionNative = "Один из ярусов здания, до которого добираются на лифте или по лестнице.",
@@ -125,7 +125,7 @@ object WordDataHebrewBureauL1 {
         ),
         WordEntity(
             id = 180710, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_office", transliteration = "мазкира",
+            pos = "noun", semanticGroup = "bureau_basic_office",
             original = "מַזְכִּירָה", translation = "секретарь (женщина)",
             definition = "הָאִשָּׁה שֶׁקּוֹבַעַת תּוֹרִים וְשׁוֹמֶרֶת אֶת לוּחַ הַזְּמַנִּים בַּמִּשְׂרָד.",
             definitionNative = "Женщина, которая ведёт расписание и записывает посетителей в учреждении.",
@@ -136,7 +136,7 @@ object WordDataHebrewBureauL1 {
         // ── bureau_basic_queue (5) ────────────────────────────────────────
         WordEntity(
             id = 180711, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "bureau_basic_queue", transliteration = "тор",
+            pos = "noun", semanticGroup = "bureau_basic_queue",
             original = "תּוֹר", translation = "очередь (живая)",
             definition = "שׁוּרָה שֶׁל אֲנָשִׁים שֶׁמְּחַכִּים אֶחָד אַחֲרֵי הַשֵּׁנִי לְקַבָּלַת שֵׁרוּת.",
             definitionNative = "Цепочка людей, которые ждут друг за другом обслуживания у служащего.",
@@ -145,7 +145,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180712L, 180713L, 180714L, 180715L)),
         WordEntity(
             id = 180712, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "bureau_basic_queue", transliteration = "миспар",
+            pos = "noun", semanticGroup = "bureau_basic_queue",
             original = "מִסְפָּר", translation = "номер (в очереди)",
             definition = "הַסִּפְרָה שֶׁמַּדְפִּיס מְכוֹנָה בַּכְּנִיסָה כְּדֵי לִקְבֹּעַ אֶת תּוֹרְךָ.",
             definitionNative = "Цифра, которую печатает аппарат у входа, чтобы определить твою очерёдность.",
@@ -154,7 +154,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180711L, 180713L, 180714L, 180715L)),
         WordEntity(
             id = 180713, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_queue", transliteration = "hазмана",
+            pos = "noun", semanticGroup = "bureau_basic_queue",
             original = "הַזְמָנָה", translation = "запись (на приём)",
             definition = "תַּאֲרִיךְ וּשְׁעָה שֶׁקּוֹבְעִים מֵרֹאשׁ כְּדֵי לְהִתְקַבֵּל אֵצֶל פָּקִיד.",
             definitionNative = "Дата и время, заранее назначенные для приёма у государственного служащего.",
@@ -163,7 +163,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180701L, 180711L, 180712L, 180714L, 180715L)),
         WordEntity(
             id = 180714, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_queue", transliteration = "hамтана",
+            pos = "noun", semanticGroup = "bureau_basic_queue",
             original = "הַמְתָּנָה", translation = "ожидание",
             definition = "הַזְּמַן שֶׁבּוֹ יוֹשְׁבִים בַּשֶּׁקֶט עַד שֶׁפָּקִיד יִקְרָא לְשֵׁרוּת.",
             definitionNative = "Время, которое проводят сидя в тишине до вызова к служащему.",
@@ -172,7 +172,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180712L, 180713L, 180715L)),
         WordEntity(
             id = 180715, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_queue", transliteration = "ришум",
+            pos = "noun", semanticGroup = "bureau_basic_queue",
             original = "רִשּׁוּם", translation = "регистрация",
             definition = "הַכְנָסַת שֵׁם וּפְרָטִים שֶׁל אָדָם לְרְשִׁימָה רִשְׁמִית בְּמַחְשֵׁב הַמּוֹסָד.",
             definitionNative = "Внесение имени и данных человека в официальный список в системе ведомства.",
@@ -183,7 +183,7 @@ object WordDataHebrewBureauL1 {
         // ── bureau_basic_actions (5) ──────────────────────────────────────
         WordEntity(
             id = 180716, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "bureau_basic_actions", transliteration = "лемале",
+            pos = "verb", semanticGroup = "bureau_basic_actions",
             original = "לְמַלֵּא", translation = "заполнять (бланк)",
             definition = "לִכְתֹּב פְּרָטִים בְּתוֹךְ הַמִּשְׁבְּצוֹת הָרֵיקוֹת שֶׁל הַטֹּפֶס.",
             definitionNative = "Вписывать данные в пустые графы готового бланка от руки или на компьютере.",
@@ -192,7 +192,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180717L, 180718L, 180719L, 180720L)),
         WordEntity(
             id = 180717, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "bureau_basic_actions", transliteration = "лахтом",
+            pos = "verb", semanticGroup = "bureau_basic_actions",
             original = "לַחְתֹּם", translation = "подписывать",
             definition = "לִכְתֹּב אֶת הַשֵּׁם שֶׁלָּךְ בִּכְתָב יָד בְּסוֹף הַמִּסְמָךְ לְאִשּׁוּר.",
             definitionNative = "Писать своё имя от руки в конце бумаги, чтобы официально её утвердить.",
@@ -201,7 +201,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180716L, 180718L, 180719L, 180720L)),
         WordEntity(
             id = 180718, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "bureau_basic_actions", transliteration = "леhагиш",
+            pos = "verb", semanticGroup = "bureau_basic_actions",
             original = "לְהַגִּישׁ", translation = "подавать (заявление)",
             definition = "לְהַעֲבִיר טֹפֶס אוֹ נְיָרוֹת לַפָּקִיד שֶׁיְּטַפֵּל בָּהֶם.",
             definitionNative = "Передать готовый бланк или бумаги служащему, который должен ими заняться.",
@@ -210,7 +210,7 @@ object WordDataHebrewBureauL1 {
         ),
         WordEntity(
             id = 180719, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "bureau_basic_actions", transliteration = "ликбоа",
+            pos = "verb", semanticGroup = "bureau_basic_actions",
             original = "לִקְבֹּעַ", translation = "назначать (встречу)",
             definition = "לְהַחְלִיט מֵרֹאשׁ עַל תַּאֲרִיךְ וּשְׁעָה שֶׁל פְּגִישָׁה אֵצֶל הַפָּקִיד.",
             definitionNative = "Заранее условиться о дате и часе встречи у государственного служащего.",
@@ -219,7 +219,7 @@ object WordDataHebrewBureauL1 {
         ),
         WordEntity(
             id = 180720, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "bureau_basic_actions", transliteration = "леварер",
+            pos = "verb", semanticGroup = "bureau_basic_actions",
             original = "לְבָרֵר", translation = "выяснять (детали)",
             definition = "לִשְׁאֹל וּלְקַבֵּל מֵידָע מְדֻיָּק עַל מַצַּב הַתִּיק אוֹ שֵׁרוּת.",
             definitionNative = "Расспросить и получить точные сведения о состоянии дела или об услуге.",
@@ -230,7 +230,7 @@ object WordDataHebrewBureauL1 {
         // ── bureau_basic_response (5) ─────────────────────────────────────
         WordEntity(
             id = 180721, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "bureau_basic_response", transliteration = "тшува",
+            pos = "noun", semanticGroup = "bureau_basic_response",
             original = "תְּשׁוּבָה", translation = "ответ (от инстанции)",
             definition = "מַעֲנֶה רִשְׁמִי מֵהַמּוֹסָד עַל בַּקָּשָׁה אוֹ פְּנִיָּה שֶׁהוּגְּשָׁה.",
             definitionNative = "Официальное решение учреждения по поданному обращению или заявлению.",
@@ -239,7 +239,7 @@ object WordDataHebrewBureauL1 {
         ),
         WordEntity(
             id = 180722, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "bureau_basic_response", transliteration = "михтав",
+            pos = "noun", semanticGroup = "bureau_basic_response",
             original = "מִכְתָּב", translation = "письмо (официальное)",
             definition = "דַּף כָּתוּב שֶׁשּׁוֹלֵחַ מוֹסָד אוֹ אָדָם בַּדֹּאַר עַל עִנְיָן רִשְׁמִי.",
             definitionNative = "Написанный лист, который шлют по почте от учреждения по официальному вопросу.",
@@ -248,7 +248,7 @@ object WordDataHebrewBureauL1 {
         ),
         WordEntity(
             id = 180723, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_response", transliteration = "сэрув",
+            pos = "noun", semanticGroup = "bureau_basic_response",
             original = "סֵרוּב", translation = "отказ (официальный)",
             definition = "הוֹדָעַת מוֹסָד שֶׁלֹּא אִשֵּׁר בַּקָּשָׁה אוֹ פְּנִיָּה שֶׁל הַתּוֹשָׁב.",
             definitionNative = "Сообщение учреждения о том, что просьба или заявление гражданина не одобрены.",
@@ -257,7 +257,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180721L, 180722L, 180724L, 180725L)),
         WordEntity(
             id = 180724, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "bureau_basic_response", transliteration = "тлуна",
+            pos = "noun", semanticGroup = "bureau_basic_response",
             original = "תְּלוּנָה", translation = "жалоба",
             definition = "פְּנִיָּה כְּתוּבָה לְמוֹסָד עַל שֵׁרוּת רַע אוֹ עַל הַחְלָטָה לֹא הוֹגֶנֶת.",
             definitionNative = "Письменное обращение в инстанцию о плохом обслуживании или несправедливом решении.",
@@ -266,7 +266,7 @@ object WordDataHebrewBureauL1 {
          fillInBlankExclusions = listOf(180721L, 180722L, 180723L, 180725L)),
         WordEntity(
             id = 180725, setId = 1807, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "bureau_basic_response", transliteration = "кабала",
+            pos = "noun", semanticGroup = "bureau_basic_response",
             original = "קַבָּלָה", translation = "квитанция (об оплате)",
             definition = "פֶּתֶק רִשְׁמִי שֶׁמְּאַשֵּׁר שֶׁשִּׁלַּמְתָּ סְכוּם כֶּסֶף לַמּוֹסָד.",
             definitionNative = "Официальная бумажка, удостоверяющая, что вы внесли оплату в учреждение.",

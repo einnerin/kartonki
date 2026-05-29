@@ -53,7 +53,7 @@ object WordDataHebrewAiMlL4 {
         // ── aiml_pipeline (5) — пайплайн модели от данных до инференса ──
         WordEntity(
             id = 175601, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_pipeline", transliteration = "makhsan ficherim",
+            pos = "noun", semanticGroup = "aiml_pipeline",
             original = "מַחְסַן פִיצֶ׳רִים", translation = "feature store",
             definition = "מַאֲגָר מֶרְכָּזִי שֶׁבּוֹ שׁוֹמְרִים מַשְׁתָּנִים מוּכָנִים לְאִמּוּן וְלִשְׁלִיפָה בְּזְמַן אֱמֶת.",
             definitionNative = "Центральное хранилище — там лежат готовые признаки для обучения и быстрой выдачи онлайн.",
@@ -62,7 +62,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175602L, 175603L, 175604L, 175605L)),
         WordEntity(
             id = 175602, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_pipeline", transliteration = "model registri",
+            pos = "noun", semanticGroup = "aiml_pipeline",
             original = "מוֹדֵל רֵגִ'יסְטְרִי", translation = "model registry",
             definition = "סִפְרִיָּה מְסֻדֶּרֶת שֶׁל גִּרְסָאוֹת אַחֲרֵי אִמּוּן עִם מֶטָדָאטָה וּמֵידַע עַל בִּיצּוּעִים.",
             definitionNative = "Упорядоченная библиотека версий после обучения — с метаданными и сведениями о качестве.",
@@ -71,7 +71,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175601L, 175603L, 175604L, 175605L)),
         WordEntity(
             id = 175603, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_pipeline", transliteration = "model serving",
+            pos = "noun", semanticGroup = "aiml_pipeline",
             original = "מוֹדֵל סֵרְוִינְג", translation = "model serving",
             definition = "הַעֲמָדַת מוֹדֵל מְאֻמָּן מֵאֲחוֹרֵי אֵיי-פִּי-אַיי כְּדֵי שֶׁאַפְלִיקַצְיוֹת יוּכְלוּ לִשְׁלוֹחַ בַּקָּשׁוֹת.",
             definitionNative = "Поднятие обученной модели за API — чтобы приложения могли отправлять запросы.",
@@ -80,7 +80,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175601L, 175602L, 175604L, 175605L)),
         WordEntity(
             id = 175604, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_pipeline", transliteration = "inference batch",
+            pos = "noun", semanticGroup = "aiml_pipeline",
             original = "אִינְפֶרֶנְס בָּאצ'", translation = "batch inference",
             definition = "הַרָצַת תַּחֲזִיּוֹת עַל קְבוּצָה גְּדוֹלָה שֶׁל רְשׁוּמוֹת בְּבַת אַחַת, בְּדֶרֶךְ כְּלָל בַּלַּיְלָה.",
             definitionNative = "Прогон предсказаний по большой пачке записей сразу — обычно ночью или вне пиков.",
@@ -89,7 +89,7 @@ object WordDataHebrewAiMlL4 {
         ),
         WordEntity(
             id = 175605, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_pipeline", transliteration = "inference onlain",
+            pos = "noun", semanticGroup = "aiml_pipeline",
             original = "אִינְפֶרֶנְס אוֹנְלַיין", translation = "online inference",
             definition = "תַּחֲזִית מִיָּדִית עַל בַּקָּשָׁה אַחַת, בְּדֶרֶךְ כְּלָל בְּפָחוֹת מִמֵּאָה מִילִישְׁנִיּוֹת.",
             definitionNative = "Мгновенное предсказание на один запрос — обычно меньше ста миллисекунд.",
@@ -100,7 +100,7 @@ object WordDataHebrewAiMlL4 {
         // ── aiml_monitoring (5) — наблюдение за моделями в продакшене ──
         WordEntity(
             id = 175606, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_monitoring", transliteration = "data drift",
+            pos = "noun", semanticGroup = "aiml_monitoring",
             original = "דָּאטָה דְּרִיפְט", translation = "data drift",
             definition = "שִׁנּוּי הַדְרָגָתִי בְּהִתְפַּלְּגוּת הַקְּלַטִים שֶׁמַּגִּיעִים לַמּוֹדֵל לְעֻמַּת מַה שֶּׁרָאָה בְּאִמּוּן.",
             definitionNative = "Постепенный сдвиг распределения входов модели по сравнению с тем, что было на обучении.",
@@ -109,7 +109,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175607L, 175608L, 175609L, 175610L)),
         WordEntity(
             id = 175607, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_monitoring", transliteration = "deikhat model",
+            pos = "noun", semanticGroup = "aiml_monitoring",
             original = "דְּעִיכַת מוֹדֵל", translation = "model decay",
             definition = "יְרִידָה אִטִּית בְּאֵיכוּת תַּחֲזִיּוֹת לְאוֹרֶךְ זְמַן בִּגְלַל שִׁנּוּיִים בָּעוֹלָם הָאֲמִתִּי.",
             definitionNative = "Медленное падение качества предсказаний со временем — потому что мир снаружи меняется.",
@@ -118,7 +118,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175606L, 175608L, 175609L, 175610L)),
         WordEntity(
             id = 175608, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_monitoring", transliteration = "pigur tofa-a",
+            pos = "noun", semanticGroup = "aiml_monitoring",
             original = "פִּיגוּר תּוֹצָאָה", translation = "ground truth lag",
             definition = "פֶּרֶק הַזְּמַן בֵּין רֶגַע הַתַּחֲזִית לְבֵין רֶגַע שֶׁבּוֹ יוֹדְעִים מַה בֶּאֱמֶת קָרָה.",
             definitionNative = "Промежуток между моментом предсказания и моментом, когда станет известен реальный исход.",
@@ -127,7 +127,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175606L, 175607L, 175609L, 175610L)),
         WordEntity(
             id = 175609, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_monitoring", transliteration = "nitsfeyut",
+            pos = "noun", semanticGroup = "aiml_monitoring",
             original = "נִצְפֵּיּוּת", translation = "observability (наблюдаемость)",
             definition = "הַיְּכֹלֶת לַעֲקֹב אַחַר הִתְנַהֲגוּת הַמּוֹדֵל בַּשֶּׁטַח דֶּרֶךְ לוֹגִים, מַטְרִיקוֹת וּתְצוּגוֹת.",
             definitionNative = "Возможность следить за поведением модели в проде — через логи, метрики и графики.",
@@ -136,7 +136,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175606L, 175607L, 175608L, 175610L)),
         WordEntity(
             id = 175610, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_monitoring", transliteration = "tiud takhaziyot",
+            pos = "noun", semanticGroup = "aiml_monitoring",
             original = "תִּעוּד תַּחֲזִיּוֹת", translation = "prediction logging",
             definition = "שְׁמִירָה שֶׁל כָּל בַּקָּשָׁה וְהַתְּשׁוּבָה שֶׁל הַמּוֹדֵל לְצֹרֶךְ נִתּוּחַ וּבְדִיקָה אַחַר כָּךְ.",
             definitionNative = "Сохранение каждого запроса и ответа модели — для последующего анализа и проверки.",
@@ -147,7 +147,7 @@ object WordDataHebrewAiMlL4 {
         // ── aiml_llm (5) — большие языковые модели и работа с промптами ──
         WordEntity(
             id = 175611, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_llm", transliteration = "el-el-em",
+            pos = "noun", semanticGroup = "aiml_llm",
             original = "אֶל-אֶל-אֶם", translation = "LLM (большая языковая модель)",
             definition = "מוֹדֵל עָנָק שֶׁאֻמַּן עַל טֶקְסְט מֵרֹב הָאִינְטֶרְנֶט וְיוֹדֵעַ לְהָבִין וְלִכְתֹּב שָׂפָה טִבְעִית.",
             definitionNative = "Огромная сеть, обученная на тексте интернета — понимает и пишет естественный язык.",
@@ -156,7 +156,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175612L, 175613L, 175614L, 175615L)),
         WordEntity(
             id = 175612, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_llm", transliteration = "prompt",
+            pos = "noun", semanticGroup = "aiml_llm",
             original = "פְּרוֹמְפְּט", translation = "промпт (запрос к LLM)",
             definition = "הַטֶּקְסְט שֶׁמַּכְנִיסִים לַמּוֹדֵל כְּדֵי לְכַוֵּן אוֹתוֹ לְמַטָּלָה אוֹ לְסִגְנוֹן תְּשׁוּבָה.",
             definitionNative = "Текст, который кладут в модель — чтобы навести её на задачу или нужный стиль ответа.",
@@ -165,7 +165,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175611L, 175613L, 175614L, 175615L)),
         WordEntity(
             id = 175613, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_llm", transliteration = "prompt injiniring",
+            pos = "noun", semanticGroup = "aiml_llm",
             original = "פְּרוֹמְפְּט אִינְגִ'ינִירִינְג", translation = "prompt engineering",
             definition = "מְלָאכָה שֶׁל נִיסּוּחַ הוֹרָאוֹת לְמוֹדֵל כְּדֵי לְהוֹצִיא מִמֶּנּוּ אֶת הַתּוֹצָאָה הַטּוֹבָה בְּיוֹתֵר.",
             definitionNative = "Ремесло формулировки указаний для модели — чтобы выжать из неё лучший результат.",
@@ -174,7 +174,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175611L, 175612L, 175614L, 175615L)),
         WordEntity(
             id = 175614, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_llm", transliteration = "sistem prompt",
+            pos = "noun", semanticGroup = "aiml_llm",
             original = "סִיסְטֶם פְּרוֹמְפְּט", translation = "системный промпт",
             definition = "הוֹרָאָה קְבוּעָה שֶׁמּוֹסֶרֶת לַמּוֹדֵל אֵיךְ לְהִתְנַהֵג עוֹד לִפְנֵי שֶׁהַמִּשְׁתַּמֵּשׁ כּוֹתֵב מַשֶּׁהוּ.",
             definitionNative = "Постоянное указание модели — как себя вести, ещё до того как пользователь напишет.",
@@ -183,7 +183,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175611L, 175612L, 175613L, 175615L)),
         WordEntity(
             id = 175615, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_llm", transliteration = "fyu-shot",
+            pos = "noun", semanticGroup = "aiml_llm",
             original = "פְיוּ-שׁוֹט", translation = "few-shot (несколько примеров в промпте)",
             definition = "שִׁיטָה שֶׁבָּהּ נוֹתְנִים לַמּוֹדֵל שְׁנַיִם עַד חֲמִשָּׁה דֻּגְמָאוֹת מוּכָנוֹת לִפְנֵי הַשְּׁאֵלָה הָאֲמִתִּית.",
             definitionNative = "Приём: дают модели от двух до пяти готовых примеров перед настоящим вопросом.",
@@ -194,7 +194,7 @@ object WordDataHebrewAiMlL4 {
         // ── aiml_advanced (5) — продвинутые техники: fine-tuning, RAG, vectors ──
         WordEntity(
             id = 175616, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_advanced", transliteration = "fain-tyuning",
+            pos = "noun", semanticGroup = "aiml_advanced",
             original = "פַיין-טְיוּנִינְג", translation = "fine-tuning (тонкая донастройка)",
             definition = "אִמּוּן נוֹסָף וְקָצָר שֶׁל מוֹדֵל מוּכָן עַל דָּאטָה צְרָה כְּדֵי לְהַתְאִים אוֹתוֹ לְשִׂיחָה סְפֵצִיפִית.",
             definitionNative = "Короткая дообучение готовой модели на узких данных — чтобы заточить под конкретную задачу.",
@@ -203,7 +203,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175615L, 175617L, 175618L, 175619L, 175620L)),
         WordEntity(
             id = 175617, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_advanced", transliteration = "ar-ei-ji",
+            pos = "noun", semanticGroup = "aiml_advanced",
             original = "אַר-אֵיי-גִ'י", translation = "RAG (retrieval-augmented generation)",
             definition = "שִׁיטָה שֶׁבָּהּ הַמּוֹדֵל מְחַפֵּשׂ קֶטַע רֶלֶוַונְטִי בְּמָאֲגָר וּמַשְׁתַּמֵּשׁ בּוֹ לִפְנֵי שֶׁעוֹנֶה.",
             definitionNative = "Подход: модель ищет нужный кусок в хранилище и опирается на него прежде чем отвечать.",
@@ -212,7 +212,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175616L, 175618L, 175619L, 175620L)),
         WordEntity(
             id = 175618, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_advanced", transliteration = "vektor di-bi",
+            pos = "noun", semanticGroup = "aiml_advanced",
             original = "וֶקְטוֹר דֵּי-בִּי", translation = "vector database",
             definition = "מָאֲגָר מְיֻחָד שֶׁשּׁוֹמֵר וֶקְטוֹרִים מְסֻפָּרִים וּמוֹצֵא דּוֹמִים לָהֶם בִּמְהִירוּת גְּדוֹלָה.",
             definitionNative = "Особое хранилище числовых векторов — быстро находит близкие к запросу.",
@@ -221,7 +221,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175616L, 175617L, 175619L, 175620L)),
         WordEntity(
             id = 175619, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_advanced", transliteration = "model embedding",
+            pos = "noun", semanticGroup = "aiml_advanced",
             original = "מוֹדֵל אֶמְבֶּדִינְג", translation = "embedding model",
             definition = "רֶשֶׁת שֶׁמַּמִּירָה מִשְׁפָּט אוֹ תְּמוּנָה לְוֶקְטוֹר מְסֻפָּר שֶׁמַּעֲבִיר אֶת הַמַּשְׁמָעוּת שֶׁלּוֹ.",
             definitionNative = "Сеть, превращающая фразу или картинку в числовой вектор, отражающий её смысл.",
@@ -230,7 +230,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175616L, 175617L, 175618L, 175620L)),
         WordEntity(
             id = 175620, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_advanced", transliteration = "khipus semanti",
+            pos = "noun", semanticGroup = "aiml_advanced",
             original = "חִפּוּשׂ סֵמַנְטִי", translation = "семантический поиск",
             definition = "חִפּוּשׂ לְפִי מַשְׁמָעוּת וְלֹא לְפִי מִילִּים זֵהוֹת — מוֹצֵא תְּשׁוּבָה גַּם בְּנִיסּוּחַ אַחֵר.",
             definitionNative = "Поиск по смыслу, а не по совпадению слов — найдёт ответ даже в другой формулировке.",
@@ -241,7 +241,7 @@ object WordDataHebrewAiMlL4 {
         // ── aiml_evaluation (5) — оценка качества моделей ──
         WordEntity(
             id = 175621, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_evaluation", transliteration = "presizn",
+            pos = "noun", semanticGroup = "aiml_evaluation",
             original = "פְּרֵסִיזְ'ן", translation = "precision (точность)",
             definition = "מַדָּד שֶׁבּוֹדֵק כַּמָּה מִתּוֹךְ הַחִיּוּבִים שֶׁהַמּוֹדֵל הוֹצִיא הָיוּ בֶּאֱמֶת נְכוֹנִים.",
             definitionNative = "Метрика — какая доля положительных ответов модели оказалась действительно верной.",
@@ -250,7 +250,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175622L, 175623L, 175624L, 175625L)),
         WordEntity(
             id = 175622, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_evaluation", transliteration = "rikol",
+            pos = "noun", semanticGroup = "aiml_evaluation",
             original = "רִיקוֹל", translation = "recall (полнота)",
             definition = "מַדָּד שֶׁבּוֹדֵק כַּמָּה מִתּוֹךְ הַמִּקְרִים הַחִיּוּבִיִּים בָּאֱמֶת נִתְפְּסוּ עַל יְדֵי הַמּוֹדֵל.",
             definitionNative = "Метрика — какую долю реально положительных случаев модель успела поймать.",
@@ -259,7 +259,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175621L, 175623L, 175624L, 175625L)),
         WordEntity(
             id = 175623, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_evaluation", transliteration = "ef-van",
+            pos = "noun", semanticGroup = "aiml_evaluation",
             original = "אֵף-וָואן", translation = "F1 (мера F1)",
             definition = "מִסְפָּר אֶחָד שֶׁמְּשַׁקְלֵל בְּיַחַד דִּיּוּק וְכִיסּוּי כְּדֵי לְהַשְׁווֹת בֵּין מוֹדֵלִים.",
             definitionNative = "Одно число — сводит вместе точность и полноту, чтобы сравнивать модели.",
@@ -268,7 +268,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175621L, 175622L, 175624L, 175625L)),
         WordEntity(
             id = 175624, setId = 1756, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aiml_evaluation", transliteration = "ei-yu-si rok",
+            pos = "noun", semanticGroup = "aiml_evaluation",
             original = "אֵיי-יוּ-סִי רוֹק", translation = "AUC ROC",
             definition = "מַדָּד אֶחָד בֵּין אֶפֶס לְאֶחָד שֶׁמַּרְאֶה כַּמָּה טוֹב הַמּוֹדֵל מַפְרִיד בֵּין שְׁתֵּי קְבוּצוֹת.",
             definitionNative = "Одно число от нуля до единицы — насколько модель умеет разделять два класса.",
@@ -277,7 +277,7 @@ object WordDataHebrewAiMlL4 {
          fillInBlankExclusions = listOf(175621L, 175622L, 175623L, 175625L)),
         WordEntity(
             id = 175625, setId = 1756, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aiml_evaluation", transliteration = "ei-bi test modelim",
+            pos = "noun", semanticGroup = "aiml_evaluation",
             original = "אֵיי-בִּי טֶסְט מוֹדֵלִים", translation = "A/B-тест моделей",
             definition = "הַשְׁוָאָה חַיָּה בֵּין שְׁתֵּי גִּרְסָאוֹת רֶשֶׁת עַל מִשְׁתַּמְּשִׁים אֲמִתִּיִּים בְּחֶלְקֵי תְּנוּעָה שָׁוִים.",
             definitionNative = "Живое сравнение двух версий сети на реальных юзерах в равных долях трафика.",

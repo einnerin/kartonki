@@ -51,7 +51,7 @@ object WordDataHebrewMobileL3 {
         // ── mobile_platforms (5) — мобильные платформы ──
         WordEntity(
             id = 176901, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_platforms", transliteration = "ay-o-es",
+            pos = "noun", semanticGroup = "mobile_platforms",
             original = "אַיי-אוֹ-אֶס", translation = "iOS",
             definition = "מַעֲרֶכֶת הַהַפְעָלָה שֶׁל אַפֵּל לַמַּכְשִׁירִים הַנַּיָּדִים שֶׁלָּהּ.",
             definitionNative = "Операционная система Apple для её мобильных устройств — телефонов и планшетов.",
@@ -60,7 +60,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176902L, 176903L, 176904L, 176905L)),
         WordEntity(
             id = 176902, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_platforms", transliteration = "android",
+            pos = "noun", semanticGroup = "mobile_platforms",
             original = "אַנְדְרוֹייד", translation = "Android",
             definition = "מַעֲרֶכֶת הַפְעָלָה פְּתוּחָה שֶׁל גוּגְל לְמַכְשִׁירִים סְלוּלָרִיִּים מִיַּצְרָנִים שׁוֹנִים.",
             definitionNative = "Открытая ОС от Google для мобильных устройств разных производителей.",
@@ -69,7 +69,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176901L, 176903L, 176904L, 176905L)),
         WordEntity(
             id = 176903, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_platforms", transliteration = "aplikatsya nativit",
+            pos = "noun", semanticGroup = "mobile_platforms",
             original = "אַפְּלִיקַצְיָה נֵטִיבִית", translation = "нативное приложение",
             definition = "תּוֹכְנָה שֶׁנִּכְתְּבָה בִּשְׂפַת הַפְּלַטְפוֹרְמָה עַצְמָהּ — לְבִיצוּעִים מְהִירִים.",
             definitionNative = "Программа на родном языке платформы — для максимально быстрой работы.",
@@ -78,7 +78,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176901L, 176902L, 176904L, 176905L)),
         WordEntity(
             id = 176904, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_platforms", transliteration = "aplikatsya hibridit",
+            pos = "noun", semanticGroup = "mobile_platforms",
             original = "אַפְּלִיקַצְיָה הִיבְּרִידִית", translation = "гибридное приложение",
             definition = "תּוֹכְנָה שֶׁעוֹטֶפֶת קוֹד וֵוּב בְּתוֹךְ אֲרִיזָה שֶׁל מַכְשִׁיר נַיָּד.",
             definitionNative = "Программа, оборачивающая веб-код в обёртку мобильного устройства.",
@@ -87,7 +87,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176901L, 176902L, 176903L, 176905L)),
         WordEntity(
             id = 176905, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_platforms", transliteration = "kros-platforma",
+            pos = "noun", semanticGroup = "mobile_platforms",
             original = "קְרוֹס-פְּלַטְפוֹרְמָה", translation = "кросс-платформа",
             definition = "גִּישָׁה שֶׁבָּהּ אוֹתוֹ קוֹד רָץ עַל שְׁתֵּי מַעֲרָכוֹת הַפְעָלָה שׁוֹנוֹת.",
             definitionNative = "Подход, при котором один код работает на двух разных операционных системах.",
@@ -98,7 +98,7 @@ object WordDataHebrewMobileL3 {
         // ── mobile_ios (5) — iOS-стек ──
         WordEntity(
             id = 176906, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_ios", transliteration = "swift",
+            pos = "noun", semanticGroup = "mobile_ios",
             original = "סְוִויפְט", translation = "Swift",
             definition = "שְׂפַת תִּכְנוּת מוֹדֶרְנִית שֶׁל אַפֵּל — בְּטוּחָה, קְרִיאָה וּמְהִירָה.",
             definitionNative = "Современный язык программирования Apple — безопасный, читаемый и быстрый.",
@@ -107,7 +107,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176907L, 176908L, 176909L, 176910L)),
         WordEntity(
             id = 176907, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_ios", transliteration = "swift-yu-ay",
+            pos = "noun", semanticGroup = "mobile_ios",
             original = "סְוִויפְט-יוּ-אַיי", translation = "SwiftUI",
             definition = "סְפְרִיָּה הַצְהָרָתִית לִבְנִיַּת מָסָכִים בְּשׂוֹרוֹת קוֹד מְעַטוֹת.",
             definitionNative = "Декларативная библиотека для построения экранов в несколько строк кода.",
@@ -116,7 +116,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176906L, 176908L, 176909L, 176910L)),
         WordEntity(
             id = 176908, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_ios", transliteration = "yu-ay-kit",
+            pos = "noun", semanticGroup = "mobile_ios",
             original = "יוּ-אַיי-קִיט", translation = "UIKit",
             definition = "סְפְרִיַּת מִמְשָׁק וָוּתִיקָה שֶׁל אַפֵּל — בְּסִיס לְכָל אַפְּלִיקַצְיוֹת אַיי-אוֹ-אֶס יְשָׁנוֹת.",
             definitionNative = "Старая интерфейсная библиотека Apple — основа всех старых iOS-приложений.",
@@ -125,7 +125,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176906L, 176907L, 176909L, 176910L)),
         WordEntity(
             id = 176909, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_ios", transliteration = "ekskod",
+            pos = "noun", semanticGroup = "mobile_ios",
             original = "אֶקְסְקוֹד", translation = "Xcode",
             definition = "סְבִיבַת פִּתּוּחַ רִשְׁמִית שֶׁל אַפֵּל — בָּהּ כּוֹתְבִים, מַרְצִים וּמְפִיצִים.",
             definitionNative = "Официальная среда разработки от Apple — в ней пишут, запускают и публикуют.",
@@ -134,7 +134,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176906L, 176907L, 176908L, 176910L)),
         WordEntity(
             id = 176910, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_ios", transliteration = "ap stor",
+            pos = "noun", semanticGroup = "mobile_ios",
             original = "אַפּ סְטוֹר", translation = "App Store",
             definition = "חֲנוּת רִשְׁמִית שֶׁל אַפֵּל לְהוֹרָדַת תּוֹכְנוֹת לְאַיי-פוֹן וְאַיי-פֶּד.",
             definitionNative = "Официальный магазин Apple для скачивания программ на iPhone и iPad.",
@@ -145,7 +145,7 @@ object WordDataHebrewMobileL3 {
         // ── mobile_android (5) — Android-стек ──
         WordEntity(
             id = 176911, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_android", transliteration = "kotlin",
+            pos = "noun", semanticGroup = "mobile_android",
             original = "קוֹטְלִין", translation = "Kotlin",
             definition = "שְׂפַת תִּכְנוּת מוֹדֶרְנִית — הַשְּׂפָה הָרִשְׁמִית שֶׁל גוּגְל לְפִתּוּחַ אַנְדְרוֹייד.",
             definitionNative = "Современный язык программирования — официальный язык Google для разработки Android.",
@@ -154,7 +154,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176912L, 176913L, 176914L, 176915L)),
         WordEntity(
             id = 176912, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_android", transliteration = "jetpak kompoz",
+            pos = "noun", semanticGroup = "mobile_android",
             original = "גְ׳טפַּק קוֹמְפּוֹז", translation = "Jetpack Compose",
             definition = "סְפְרִיָּה חֲדָשָׁה לִבְנִיַּת מָסָכִים בְּצוּרָה הַצְהָרָתִית — דּוֹמָה לִ-סְוִויפְט-יוּ-אַיי.",
             definitionNative = "Новая библиотека для построения экранов декларативно — похожа на SwiftUI.",
@@ -163,7 +163,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176911L, 176913L, 176914L, 176915L)),
         WordEntity(
             id = 176913, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_android", transliteration = "android studyo",
+            pos = "noun", semanticGroup = "mobile_android",
             original = "אַנְדְרוֹאִיד סְטוּדְיוֹ", translation = "Android Studio",
             definition = "סְבִיבַת פִּתּוּחַ רִשְׁמִית שֶׁל גוּגְל לְפִתּוּחַ אַפְּלִיקַצְיוֹת לַמַּעֲרֶכֶת שֶׁלָּהּ.",
             definitionNative = "Официальная среда разработки от Google для приложений под её систему.",
@@ -172,7 +172,7 @@ object WordDataHebrewMobileL3 {
         ),
         WordEntity(
             id = 176914, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_android", transliteration = "greydl",
+            pos = "noun", semanticGroup = "mobile_android",
             original = "גְרֵייד׳ל", translation = "Gradle",
             definition = "כְּלִי בְּנִיָּה שֶׁמְּחַבֵּר תְּלוּיוֹת וְאוֹסֵף אֶת הַקּוֹד לְקֹבֶץ הַתְקָנָה אֶחָד.",
             definitionNative = "Сборочный инструмент — соединяет зависимости и собирает код в один установочный файл.",
@@ -181,7 +181,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176911L, 176912L, 176913L, 176915L)),
         WordEntity(
             id = 176915, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_android", transliteration = "pley stor",
+            pos = "noun", semanticGroup = "mobile_android",
             original = "פְּלֵיי סְטוֹר", translation = "Play Store",
             definition = "חֲנוּת רִשְׁמִית שֶׁל גוּגְל לְהוֹרָדַת תּוֹכְנוֹת לְמַכְשִׁירֵי אַנְדְרוֹייד.",
             definitionNative = "Официальный магазин Google для скачивания программ на устройства Android.",
@@ -192,7 +192,7 @@ object WordDataHebrewMobileL3 {
         // ── mobile_ui (5) — мобильный интерфейс ──
         WordEntity(
             id = 176916, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_ui", transliteration = "leyaaut",
+            pos = "noun", semanticGroup = "mobile_ui",
             original = "לֵייאַאוּט", translation = "лейаут (расположение элементов)",
             definition = "סִידּוּר חָזוּתִי שֶׁל אֶלֶמֶנְטִים עַל הַמָּסָךְ — מָה אֵיפֹה וּבְאֵיזֶה גּוֹדֶל.",
             definitionNative = "Визуальное расположение элементов на экране — что где и какого размера.",
@@ -201,7 +201,7 @@ object WordDataHebrewMobileL3 {
         ),
         WordEntity(
             id = 176917, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_ui", transliteration = "navigatsya",
+            pos = "noun", semanticGroup = "mobile_ui",
             original = "נָווִיגַצְיָה", translation = "навигация (между экранами)",
             definition = "מַעֲרֶכֶת הַמַּעֲבָרִים בֵּין מָסָכִים — אֵיךְ הַמִּשְׁתַּמֵּשׁ מַגִּיעַ מִדַּף לְדַף.",
             definitionNative = "Система переходов между экранами — как пользователь попадает со страницы на страницу.",
@@ -210,7 +210,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176916L, 176918L, 176919L, 176920L)),
         WordEntity(
             id = 176918, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_ui", transliteration = "animatsya",
+            pos = "noun", semanticGroup = "mobile_ui",
             original = "אַנִימַצְיָה", translation = "анимация (UI)",
             definition = "תְּנוּעָה חֲלָקָה שֶׁל אֶלֶמֶנְטִים עַל הַמָּסָךְ — שֶׁעוֹזֶרֶת לְהָבִין מָה קָרָה.",
             definitionNative = "Плавное движение элементов на экране — помогает понять, что произошло.",
@@ -219,7 +219,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176916L, 176917L, 176919L, 176920L)),
         WordEntity(
             id = 176919, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_ui", transliteration = "negishut",
+            pos = "noun", semanticGroup = "mobile_ui",
             original = "נְגִישׁוּת", translation = "доступность (a11y)",
             definition = "תְּמִיכָה בְּמִשְׁתַּמְּשִׁים עִם מֻגְבָּלוּיוֹת — קוֹרְאֵי מָסָךְ, גּוֹדֶל גּוּפָן וְכַדּוֹמֶה.",
             definitionNative = "Поддержка пользователей с ограниченными возможностями — экранные читалки, размер шрифта и т.д.",
@@ -228,7 +228,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176916L, 176917L, 176918L, 176920L)),
         WordEntity(
             id = 176920, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_ui", transliteration = "ar-ti-el",
+            pos = "noun", semanticGroup = "mobile_ui",
             original = "אַר-טִי-אֵל", translation = "RTL (справа-налево)",
             definition = "כִּוּוּן קְרִיאָה מִיָּמִין לִשְׂמֹאל — הֶכְרֵחִי לְעִבְרִית וַעֲרָבִית.",
             definitionNative = "Направление чтения справа налево — обязательно для иврита и арабского.",
@@ -239,7 +239,7 @@ object WordDataHebrewMobileL3 {
         // ── mobile_lifecycle (5) — жизненный цикл приложения ──
         WordEntity(
             id = 176921, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_lifecycle", transliteration = "matsav peil",
+            pos = "noun", semanticGroup = "mobile_lifecycle",
             original = "מַצָּב פָּעִיל", translation = "активное состояние (foreground)",
             definition = "הַמַּעֲמָד שֶׁבּוֹ הַתּוֹכְנָה רָצָה גְּלוּיָה עַל הַמָּסָךְ וּמְקַבֶּלֶת קְלָטִים מֵהַמִּשְׁתַּמֵּשׁ.",
             definitionNative = "Положение, когда программа работает видимой на экране и принимает ввод от пользователя.",
@@ -248,7 +248,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176922L, 176923L, 176924L, 176925L)),
         WordEntity(
             id = 176922, setId = 1769, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mobile_lifecycle", transliteration = "reka",
+            pos = "noun", semanticGroup = "mobile_lifecycle",
             original = "רֶקַע", translation = "фоновый режим (background)",
             definition = "מַצָּב שֶׁבּוֹ הַתּוֹכְנָה רָצָה בְּלִי שֶׁהַמִּשְׁתַּמֵּשׁ רוֹאֶה אוֹתָהּ עַל הַמָּסָךְ.",
             definitionNative = "Состояние, когда программа работает, не показываясь пользователю на экране.",
@@ -257,7 +257,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176921L, 176923L, 176924L, 176925L)),
         WordEntity(
             id = 176923, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_lifecycle", transliteration = "makhzor khayey aktiviti",
+            pos = "noun", semanticGroup = "mobile_lifecycle",
             original = "מַחֲזוֹר חַיֵּי אַקְטִיבִיטִי", translation = "lifecycle активити",
             definition = "רֶצֶף הַשְּׁלָבִים שֶׁמָּסָךְ בְּאַנְדְרוֹייד עוֹבֵר — מֵהַיְצִירָה וְעַד הַסְּגִירָה.",
             definitionNative = "Цепочка стадий, которую экран в Android проходит — от создания до закрытия.",
@@ -266,7 +266,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176921L, 176922L, 176924L, 176925L)),
         WordEntity(
             id = 176924, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_lifecycle", transliteration = "vyu-model",
+            pos = "noun", semanticGroup = "mobile_lifecycle",
             original = "וְיוּ-מוֹדֶל", translation = "ViewModel",
             definition = "רְכִיב שֶׁמַּחְזִיק נְתוּנֵי מָסָךְ וְשׂוֹרֵד סִיבּוּב מַכְשִׁיר וּשִׁנּוּי תֵּצוּגָה.",
             definitionNative = "Компонент, держащий данные экрана и переживающий поворот устройства и смену конфигурации.",
@@ -275,7 +275,7 @@ object WordDataHebrewMobileL3 {
          fillInBlankExclusions = listOf(176921L, 176922L, 176923L, 176925L)),
         WordEntity(
             id = 176925, setId = 1769, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "mobile_lifecycle", transliteration = "shikhzur matsav",
+            pos = "noun", semanticGroup = "mobile_lifecycle",
             original = "שִׁחְזוּר מַצָּב", translation = "восстановление состояния",
             definition = "הַחֲזָרַת תֵּצוּגָה לַמָּקוֹם שֶׁהָיְתָה לִפְנֵי שֶׁהַמַּעֲרֶכֶת סָגְרָה אֶת הַתּוֹכְנָה.",
             definitionNative = "Возврат экрана туда, где он был, до того как система закрыла программу.",

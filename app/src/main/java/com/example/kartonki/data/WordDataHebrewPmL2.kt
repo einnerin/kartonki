@@ -63,7 +63,7 @@ object WordDataHebrewPmL2 {
         // ── pm_processes (5) — методология и процессы ──
         WordEntity(
             id = 177801, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_processes", transliteration = "ejail",
+            pos = "noun", semanticGroup = "pm_processes",
             original = "אֶג׳ַייל", translation = "agile (методология)",
             definition = "גִּישָׁה לַעֲבוֹדָה שֶׁל קְבוּצוֹת קְטַנּוֹת — לְמַסֵּר תּוֹצָר חֶלְקִי בְּתֵדִירוּת גְּבוֹהָה.",
             definitionNative = "Подход к работе маленьких команд — выдавать частичный результат с высокой частотой.",
@@ -72,7 +72,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177802L, 177803L, 177804L, 177805L)),
         WordEntity(
             id = 177802, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_processes", transliteration = "skraam",
+            pos = "noun", semanticGroup = "pm_processes",
             original = "סְקְרָאם", translation = "scrum (фреймворк)",
             definition = "מָסְגֶּרֶת מְסֻדֶּרֶת שֶׁמְּחַלֶּקֶת עֲבוֹדָה לְמַחְזוֹרִים קְצוּבִים עִם פְּגִישׁוֹת קְבוּעוֹת.",
             definitionNative = "Упорядоченная рамка — делит работу на короткие циклы с фиксированными встречами.",
@@ -81,7 +81,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177801L, 177803L, 177804L, 177805L)),
         WordEntity(
             id = 177803, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_processes", transliteration = "luakh kanban",
+            pos = "noun", semanticGroup = "pm_processes",
             original = "לוּחַ קַנְבָּן", translation = "канбан-доска",
             definition = "שֶׁטַח חָזוּתִי עִם טוּרִים — כָּל מַטְלָה עוֹבֶרֶת מִשְּׂמֹאל לְיָמִין לְפִי שָׁלָב הָעֲבוֹדָה.",
             definitionNative = "Визуальная плоскость со столбцами — задача движется слева направо по этапам работы.",
@@ -90,7 +90,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177801L, 177802L, 177804L, 177805L)),
         WordEntity(
             id = 177804, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_processes", transliteration = "apdeit",
+            pos = "noun", semanticGroup = "pm_processes",
             original = "אַפְדֵּייט", translation = "апдейт (статус-апдейт)",
             definition = "הוֹדָעָה קְצָרָה לַשּׁוּתָפִים עַל הִתְקַדְּמוּת — מָה נַעֲשָׂה וּמָה נִשְׁאַר.",
             definitionNative = "Короткое сообщение смежникам о ходе дел — что сделано и что осталось.",
@@ -99,7 +99,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177801L, 177802L, 177803L, 177805L)),
         WordEntity(
             id = 177805, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_processes", transliteration = "koordinatsya",
+            pos = "noun", semanticGroup = "pm_processes",
             original = "קוֹאוֹרְדִּינַצְיָה", translation = "координация",
             definition = "סִדּוּר זְמַנִּים וּמְשִׂימוֹת בֵּין שְׁנֵי צְוָתִים אוֹ יוֹתֵר כְּדֵי שֶׁכֻּלָּם יִתְקַדְּמוּ יַחַד.",
             definitionNative = "Согласование сроков и задач между двумя или более командами — чтобы все шли вместе.",
@@ -110,7 +110,7 @@ object WordDataHebrewPmL2 {
         // ── pm_requirements (5) — требования и спецификация фичи ──
         WordEntity(
             id = 177806, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_requirements", transliteration = "drisha mishtamesh",
+            pos = "noun", semanticGroup = "pm_requirements",
             original = "דְּרִישַׁת מִשְׁתַּמֵּשׁ", translation = "пользовательское требование",
             definition = "תֵּאוּר מָה הַקָּהָל רוֹצֶה לַעֲשׂוֹת בַּמּוּצָר — לֹא אֵיךְ הַמְּהַנְדֵּס יְבַצֵּעַ אֶת זֶה.",
             definitionNative = "Описание того, что аудитория хочет делать в продукте — не как инженер это построит.",
@@ -119,7 +119,7 @@ object WordDataHebrewPmL2 {
         ),
         WordEntity(
             id = 177807, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_requirements", transliteration = "mikre katse",
+            pos = "noun", semanticGroup = "pm_requirements",
             original = "מִקְרֵה קָצֶה", translation = "пограничный случай",
             definition = "תַּרְחִישׁ נָדִיר עִם נְתוּנִים קִיצוֹנִיִּים שֶׁעָלוּל לִשְׁבֹּר אֶת הַפִיצֶ׳ר אִם לֹא חָשְׁבוּ עָלָיו.",
             definitionNative = "Редкий сценарий с экстремальными данными — может сломать фичу, если о нём не подумали.",
@@ -128,7 +128,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177806L, 177808L, 177809L, 177810L)),
         WordEntity(
             id = 177808, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_requirements", transliteration = "kriteryon kabala",
+            pos = "noun", semanticGroup = "pm_requirements",
             original = "קְרִיטֶרְיוֹן קַבָּלָה", translation = "критерий приёмки (acceptance criteria)",
             definition = "תְּנַאי בָּהִיר שֶׁעַל פִּיו הַטֶסְטֵר מַחְלִיט אִם הַפִיצֶ׳ר עָבַד אוֹ עוֹד דּוֹרֵשׁ עֲבוֹדָה.",
             definitionNative = "Чёткое условие — по нему тестировщик решает, зашла ли фича или ещё требует работы.",
@@ -137,7 +137,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177806L, 177807L, 177809L, 177810L)),
         WordEntity(
             id = 177809, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_requirements", transliteration = "mokap",
+            pos = "noun", semanticGroup = "pm_requirements",
             original = "מוֹקאַפּ", translation = "мокап (макет интерфейса)",
             definition = "צִיּוּר מְפֹרָט שֶׁל מָסָךְ עֲתִידִי — מַרְאֶה אֵיךְ פִיצֶ׳ר יִרְאֶה לִפְנֵי שֶׁמְּהַנְדְּסִים בּוֹנִים.",
             definitionNative = "Подробный рисунок будущего экрана — показывает, как фича будет выглядеть до сборки.",
@@ -146,7 +146,7 @@ object WordDataHebrewPmL2 {
         ),
         WordEntity(
             id = 177810, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_requirements", transliteration = "skitsa",
+            pos = "noun", semanticGroup = "pm_requirements",
             original = "סְקִיצָּה", translation = "скетч (эскиз)",
             definition = "צִיּוּר גַּס בְּעִפָּרוֹן עַל נְיָר — רַעְיוֹן רִאשׁוֹנִי לִפְנֵי שֶׁעוֹבְרִים לְמַסַּךְ דִּיגִיטָלִי.",
             definitionNative = "Грубый карандашный набросок на бумаге — первая идея до перехода на цифровой экран.",
@@ -157,7 +157,7 @@ object WordDataHebrewPmL2 {
         // ── pm_release (5) — релизы и версии ──
         WordEntity(
             id = 177811, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_release", transliteration = "shihrur mutsar",
+            pos = "noun", semanticGroup = "pm_release",
             original = "שִׁחְרוּר מוּצָר", translation = "релиз продукта",
             definition = "פְּתִיחָה רִשְׁמִית שֶׁל פִיצֶ׳ר חָדָשׁ אוֹ גִּרְסָה שְׁלֵמָה לְכָל הַקָּהָל בָּעוֹלָם.",
             definitionNative = "Официальное открытие новой фичи или целой версии всей аудитории в мире.",
@@ -166,7 +166,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177812L, 177813L, 177814L, 177815L)),
         WordEntity(
             id = 177812, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_release", transliteration = "rilis nots",
+            pos = "noun", semanticGroup = "pm_release",
             original = "רִילִיס נוֹטְס", translation = "release notes",
             definition = "טֶקְסְט קָצָר לַקָּהָל שֶׁמְּסַפֵּר מָה חָדָשׁ בַּגִּרְסָה — מָה נוֹסַף, מָה תֻּקַּן וּמָה הִשְׁתַּפֵּר.",
             definitionNative = "Короткий текст для аудитории — что нового в версии: что добавили, что починили, что улучшилось.",
@@ -175,7 +175,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177811L, 177813L, 177814L, 177815L)),
         WordEntity(
             id = 177813, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_release", transliteration = "yoman shinuyim",
+            pos = "noun", semanticGroup = "pm_release",
             original = "יוֹמַן שִׁנּוּיִים", translation = "журнал изменений (changelog)",
             definition = "מִסְמָךְ פְּנִימִי טֶכְנִי שֶׁמְּפָרֵט שׁוּרָה אַחַר שׁוּרָה כָּל תִּקּוּן בֵּין גִּרְסָה לְגִרְסָה.",
             definitionNative = "Внутренний технический документ — построчно перечисляет каждую правку между версиями.",
@@ -184,7 +184,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177811L, 177812L, 177814L, 177815L)),
         WordEntity(
             id = 177814, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_release", transliteration = "nihul girsaot",
+            pos = "noun", semanticGroup = "pm_release",
             original = "נִהוּל גִּרְסָאוֹת", translation = "управление версиями (versioning)",
             definition = "שִׁיטָה לְמִסְפּוּר וּלְשִׁמּוּר שֶׁל מַהֲדוּרוֹת מוּצָר — כְּדֵי שֶׁתָּמִיד יָדוּעַ אֵיזוֹ עוֹבֶדֶת אֵצֶל מִי.",
             definitionNative = "Способ нумерации и хранения сборок продукта — чтобы всегда знать, какая работает у кого.",
@@ -193,7 +193,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177811L, 177812L, 177813L, 177815L)),
         WordEntity(
             id = 177815, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_release", transliteration = "beta",
+            pos = "noun", semanticGroup = "pm_release",
             original = "בֵּטָה", translation = "бета (версия)",
             definition = "מַהֲדוּרָה כִּמְעַט-מוּכָנָה שֶׁמַּגִּיעָה רַק לִקְבוּצָה צְמוּדָה לְפִי הַזְמָנָה — לִפְנֵי שִׁחְרוּר רָשְׁמִי.",
             definitionNative = "Почти готовая сборка — попадает только к узкой группе по приглашению, до официального выпуска.",
@@ -204,7 +204,7 @@ object WordDataHebrewPmL2 {
         // ── pm_retro (5) — ретроспектива и закрытие цикла ──
         WordEntity(
             id = 177816, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_retro", transliteration = "sikum proyekt",
+            pos = "noun", semanticGroup = "pm_retro",
             original = "סִיכּוּם פְּרוֹיֶקְט", translation = "подведение итогов проекта",
             definition = "מִפְגָּשׁ בְּסוֹף הַשָּׁלָב שֶׁבּוֹ הַצֶּוֶות מַעֲרִיךְ אֶת הַתּוֹצָאוֹת מוּל מָה שֶׁהִבְטִיחַ.",
             definitionNative = "Встреча в конце этапа — команда сравнивает результаты с тем, что обещала.",
@@ -213,7 +213,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177817L, 177818L, 177819L, 177820L)),
         WordEntity(
             id = 177817, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_retro", transliteration = "lekakhim",
+            pos = "noun", semanticGroup = "pm_retro",
             original = "לֶקָחִים", translation = "извлечённые уроки (lessons learned)",
             definition = "תּוֹבָנוֹת מַעֲשִׂיּוֹת מֵעֲבוֹדָה שֶׁעָבְרָה — מָה כְּדַאי לַחֲזֹר עָלָיו וּמָה לֹא לַעֲשׂוֹת שׁוּב.",
             definitionNative = "Практические выводы из прошлой работы — что повторить, а что больше не делать.",
@@ -222,7 +222,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177816L, 177818L, 177819L, 177820L)),
         WordEntity(
             id = 177818, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_retro", transliteration = "prit peula",
+            pos = "noun", semanticGroup = "pm_retro",
             original = "פְּרִיט פְּעֻלָּה", translation = "action item",
             definition = "מַטָּלָה קוֹנְקְרֶטִית עִם שֵׁם אַחְרַאי וְתַאֲרִיךְ סִיּוּם — תּוֹצָאָה יְשִׁירָה שֶׁל פְּגִישָׁה.",
             definitionNative = "Конкретное дело с именем ответственного и сроком — прямой результат встречи.",
@@ -231,7 +231,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177816L, 177817L, 177819L, 177820L)),
         WordEntity(
             id = 177819, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_retro", transliteration = "follo-ap",
+            pos = "noun", semanticGroup = "pm_retro",
             original = "פוֹלוֹ-אַפּ", translation = "follow-up",
             definition = "בְּדִיקָה חוֹזֶרֶת לְאַחַר זְמַן — לִוְדֵא שֶׁמַּטָּלָה שֶׁהֻחְלְטָה עָלֶיהָ בֶּאֱמֶת בֻּצְּעָה.",
             definitionNative = "Повторная проверка через время — убедиться, что задача, о которой договорились, реально сделана.",
@@ -240,7 +240,7 @@ object WordDataHebrewPmL2 {
         ),
         WordEntity(
             id = 177820, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_retro", transliteration = "khasimot",
+            pos = "noun", semanticGroup = "pm_retro",
             original = "חֲסִימוֹת", translation = "блокеры (препятствия)",
             definition = "גוֹרְמִים חִיצוֹנִיִּים שֶׁעוֹצְרִים מַטָּלָה — הַמְתָּנָה לְאִישּׁוּר, גִּישׁוֹת חֲסֵרוֹת אוֹ צְוָתִים אֲחֵרִים.",
             definitionNative = "Внешние причины, из-за которых задача стоит — ожидание согласования, отсутствие доступа или другие команды.",
@@ -251,7 +251,7 @@ object WordDataHebrewPmL2 {
         // ── pm_communication (5) — коммуникация в команде и со смежниками ──
         WordEntity(
             id = 177821, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_communication", transliteration = "stendap",
+            pos = "noun", semanticGroup = "pm_communication",
             original = "סְטֶנְדְאַפּ", translation = "стендап (короткая стоячая встреча)",
             definition = "מִפְגָּשׁ קָצָר בַּעֲמִידָה שֶׁל רֶבַע שָׁעָה — כָּל אֶחָד מְסַפֵּר בִּשְׁתֵּי מִשְׁפָּטִים מָה הוּא עוֹשֶׂה.",
             definitionNative = "Короткая встреча стоя на четверть часа — каждый в двух предложениях говорит, чем занят.",
@@ -260,7 +260,7 @@ object WordDataHebrewPmL2 {
         ),
         WordEntity(
             id = 177822, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_communication", transliteration = "pgishat teum",
+            pos = "noun", semanticGroup = "pm_communication",
             original = "פְּגִישַׁת תֵּאוּם", translation = "координационная встреча",
             definition = "פְּגִישָׁה בֵּין שְׁנֵי צְוָתִים שֶׁמַּצְלִיבָה תָּכְנִיּוֹת לִפְנֵי שֶׁכָּל אֶחָד מַתְחִיל לִבְנוֹת.",
             definitionNative = "Встреча двух команд — сводят планы вместе, прежде чем каждая начнёт строить.",
@@ -269,7 +269,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177821L, 177823L, 177824L, 177825L)),
         WordEntity(
             id = 177823, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_communication", transliteration = "doar idkun",
+            pos = "noun", semanticGroup = "pm_communication",
             original = "דּוֹאַר עִדְכּוּן", translation = "email-апдейт (письмо с обновлением)",
             definition = "מֵייל מְסֻדָּר לַשּׁוּתָפִים — תַּקְצִיר הִתְקַדְּמוּת וְהַחְלָטוֹת מֵהַשָּׁבוּעַ הָאַחֲרוֹן.",
             definitionNative = "Упорядоченное письмо смежникам — сводка прогресса и решений за прошедшую неделю.",
@@ -278,7 +278,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177821L, 177822L, 177824L, 177825L)),
         WordEntity(
             id = 177824, setId = 1778, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "pm_communication", transliteration = "hatsagat ol-hends",
+            pos = "noun", semanticGroup = "pm_communication",
             original = "הַצָּגַת אוֹל-הֶנְדְּס", translation = "all-hands презентация",
             definition = "מַצָּגָה לְכָל הָעוֹבְדִים בַּחֶבְרָה בְּבַת אַחַת — בְּדֶרֶךְ כְּלָל פַּעַם בָּרֹבַע.",
             definitionNative = "Выступление перед всеми сотрудниками сразу — обычно раз в квартал.",
@@ -287,7 +287,7 @@ object WordDataHebrewPmL2 {
          fillInBlankExclusions = listOf(177821L, 177822L, 177823L, 177825L)),
         WordEntity(
             id = 177825, setId = 1778, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_communication", transliteration = "tsilum masakh",
+            pos = "noun", semanticGroup = "pm_communication",
             original = "צִילּוּם מָסָךְ", translation = "скриншот",
             definition = "תְּמוּנָה דִּיגִיטָלִית שֶׁל מָה שֶׁמּוֹפִיעַ בָּרֶגַע עַל הַתֶּצוּגָה — נוֹחָה לְהַסְבִּיר בְּלִי מִלִּים.",
             definitionNative = "Цифровая картинка того, что сейчас на дисплее — удобно объяснить без слов.",

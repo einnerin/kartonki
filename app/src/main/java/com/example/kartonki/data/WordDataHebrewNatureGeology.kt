@@ -48,7 +48,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Твёрдая зернистая магматическая порода из кварца и полевого шпата; встречается в горах и на кухонных столешницах.",
             example = "אֵילַת יוֹשֶׁבֶת עַל הָרֵי גְּרָנִיט אֲדֻמִּים בְּגִיל מֵאוֹת מִילְיוֹנֵי שָׁנָה.",
             exampleNative = "Эйлат стоит на красных горах גְּרָנִיט возрастом в сотни миллионов лет.",
-            transliteration = "гранит",
             pos = "noun", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189602L, 189603L, 189604L, 189605L, 189606L, 189607L, 189608L)),
 
         WordEntity(id = 189602, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -58,7 +57,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Тёмная вулканическая порода: образуется, когда жидкая лава быстро остывает на поверхности Земли.",
             example = "רָמַת הַגּוֹלָן מְכֻסָּה שְׁכָבוֹת עָבוֹת שֶׁל בַּזֶלֶת שֶׁחוֹרָה מֵהֶעָבָר הַוֻּלְקָנִי שֶׁלָּהּ.",
             exampleNative = "Голанские высоты покрыты толстыми чёрными слоями בַּזֶלֶת — наследие их вулканического прошлого.",
-            transliteration = "базэлэт",
             pos = "noun", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189601L, 189603L, 189604L, 189605L, 189606L, 189607L, 189608L)),
 
         WordEntity(id = 189603, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -68,7 +66,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Мягкая белая порода из остатков раковин мелких морских организмов; оставляет след на доске.",
             example = "הָרֵי יְהוּדָה בְּנוּיִים בְּעִקַּר מִגִּיר שֶׁנּוֹצָר עַל קַרְקָעִית יָם קַדְמוֹן.",
             exampleNative = "Иудейские горы сложены в основном из גִּיר, образовавшегося на дне древнего моря.",
-            transliteration = "гир",
             pos = "noun", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189601L, 189602L, 189605L, 189606L, 189607L, 189608L)),
 
         WordEntity(id = 189604, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -78,7 +75,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Осадочная порода из спрессованных песчинок; в пустыне встречается красного или жёлтого цвета.",
             example = "הָעַמּוּדִים הָאֲדֻמִּים שֶׁל פֶּטְרָה גְּלוּפִים יָשִׁיר בְּתוֹךְ חוֹל אֶבֶן עַתִּיק.",
             exampleNative = "Красные колонны Петры вырезаны прямо в древнем חוֹל אֶבֶן.",
-            transliteration = "холь эвэн",
             pos = "phrase", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189601L, 189602L, 189603L, 189605L, 189606L, 189607L, 189608L)),
 
         WordEntity(id = 189605, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -88,7 +84,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Тонкослоистая осадочная порода, раскалывающаяся на плоские плитки; когда-то служила для покрытия крыш.",
             example = "מִתַּחַת לַגַּג הָעַתִּיק חָשַׂף הָאַרְכֵיאוֹלוֹג רִצְפַּת צַפְחָה מֵהַתְּקוּפָה הָרוֹמִית.",
             exampleNative = "Под старой крышей археолог обнаружил пол из צַפְחָה ещё римской эпохи.",
-            transliteration = "цафха",
             pos = "noun", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189601L, 189602L, 189603L, 189604L, 189606L, 189607L, 189608L)),
 
         WordEntity(id = 189606, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -98,7 +93,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Чёрное природное стекло; образуется, когда вязкая лава остывает быстро и не успевает закристаллизоваться.",
             example = "בְּנֵי הָאָדָם הַקַּדְמוֹנִים לִטְּשׁוּ אוֹבְּסִידְיָאן לְסַכִּינִים חַדּוֹת בְּמֻחְלָט.",
             exampleNative = "Древние люди обтачивали אוֹבְּסִידְיָאן в исключительно острые ножи.",
-            transliteration = "обсидиан",
             pos = "noun", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189601L, 189602L, 189603L, 189605L, 189607L, 189608L, 189609L, 189614L)),
 
         WordEntity(id = 189607, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -108,7 +102,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Мягкая порода — смесь известковых частиц и глины; часто обнажается на склонах гор Негева.",
             example = "הַשְּׁכָבוֹת הָאֲפֹרוֹת שֶׁל כַּלְקָר מִתְפּוֹרְרוֹת מְהֵרָה תַּחַת גִּשְׁמֵי הַחֹרֶף.",
             exampleNative = "Серые слои כַּלְקָר быстро крошатся под зимними дождями.",
-            transliteration = "калькар",
             pos = "noun", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189601L, 189602L, 189603L, 189604L, 189605L, 189606L, 189608L)),
 
         WordEntity(id = 189608, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -118,7 +111,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Лёгкая вулканическая порода, полная пузырьков воздуха; плавает на воде и стирает сухую кожу.",
             example = "בַּחֲנוּת הַטֶּבַע מָכְרוּ אֶבֶן פּוּמִיס לְהַחֲלָקַת עָקֵב.",
             exampleNative = "В магазине натуральных средств продавался камень פּוּמִיס для шлифовки пятки.",
-            transliteration = "пумис",
             pos = "noun", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189601L, 189602L, 189603L, 189605L, 189606L, 189607L)),
 
         // ── Group: nature_geology_minerals (7 words) ──────────────────────────
@@ -130,7 +122,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Очень твёрдый прозрачный минерал, один из самых распространённых в коре; встречается в виде шестигранных кристаллов.",
             example = "בַּחוֹלוֹת חוֹף נְתַנְיָה רוֹב הַגַּרְגְּרִים הַזְּעִירִים הֵם בְּעֶצֶם קְוַרְץ.",
             exampleNative = "В песке пляжа Нетании большинство мелких крупинок — это на самом деле קְוַרְץ.",
-            transliteration = "кварц",
             pos = "noun", semanticGroup = "nature_geology_minerals", fillInBlankExclusions = listOf(189610L, 189611L, 189612L, 189613L, 189614L, 189615L)),
 
         WordEntity(id = 189610, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -140,7 +131,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Семейство минералов, составляющее большинство пород Земли; матово блестит в полированном граните.",
             example = "תַּחַת הַזְּכוּכִית הַמַּגְדֶּלֶת הַמּוֹרָה הֶרְאֲתָה גַּבִּישִׁים וְרֻדִּים שֶׁל פֶּלְדְּשַׁפַּט.",
             exampleNative = "Под лупой учительница показала розовые кристаллы פֶּלְדְּשַׁפַּט.",
-            transliteration = "пэлдшапат",
             pos = "noun", semanticGroup = "nature_geology_minerals", fillInBlankExclusions = listOf(189609L, 189611L, 189612L, 189613L, 189614L, 189615L)),
 
         WordEntity(id = 189611, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -150,7 +140,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Белый или прозрачный минерал, основной компонент известняка и мрамора; вскипает при контакте с кислотой.",
             example = "טִפּוֹת חוֹמֶץ עַל קָלְצִיט מַתְחִילוֹת לְבַעְבֵּעַ כִּמְעַט מִיָּד.",
             exampleNative = "Капли уксуса на קָלְצִיט почти сразу начинают пузыриться.",
-            transliteration = "кальцит",
             pos = "noun", semanticGroup = "nature_geology_minerals", fillInBlankExclusions = listOf(189609L, 189610L, 189612L, 189613L, 189614L, 189615L)),
 
         WordEntity(id = 189612, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -160,7 +149,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Фиолетовая разновидность кварца; популярный самоцвет для украшений и алтарных декораций.",
             example = "סָבָתִי קִבְּלָה אֲרִיגַת אַמֶתִיסְט סָגֹל בַּחֲתֻנָּתָהּ.",
             exampleNative = "Моя бабушка получила на свадьбу подвеску из фиолетового אַמֶתִיסְט.",
-            transliteration = "амэтист",
             pos = "noun", semanticGroup = "nature_geology_minerals", fillInBlankExclusions = listOf(189609L, 189610L, 189611L, 189613L, 189614L, 189615L)),
 
         WordEntity(id = 189613, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -170,7 +158,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Самоцвет из слоистых разновидностей кварца; показывает узор в виде концентрических полос.",
             example = "בִּמְעָרָה לְיַד הַכִּנֶּרֶת מָצָא הַטַּיָּל גַּלְעִינֵי אַגָט קְטַנִּים בֵּין הָאֲבָנִים.",
             exampleNative = "В пещере у Кинерета турист нашёл маленькие ядра אַגָט среди камней.",
-            transliteration = "агат",
             pos = "noun", semanticGroup = "nature_geology_minerals", fillInBlankExclusions = listOf(189609L, 189610L, 189611L, 189612L, 189614L, 189615L)),
 
         WordEntity(id = 189614, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -180,7 +167,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Жёлтый минерал с металлическим блеском, похож на золотые монеты; когда-то прозван «золотом дураков».",
             example = "הַכּוֹרֶה הִתְלַהֵב לְרֶגַע, אַךְ הָיָה זֶה רַק פִּירִיט וְלֹא זָהָב אֲמִתִּי.",
             exampleNative = "Шахтёр на миг обрадовался, но это был всего лишь פִּירִיט, а не настоящее золото.",
-            transliteration = "пирит",
             pos = "noun", semanticGroup = "nature_geology_minerals", fillInBlankExclusions = listOf(189609L, 189610L, 189611L, 189612L, 189613L, 189615L)),
 
         WordEntity(id = 189615, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -190,7 +176,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Ярко-жёлтый элемент с запахом тухлых яиц; встречается у горячих источников и вулканов.",
             example = "סְבִיב הַמַּעְיָנוֹת הַחַמִּים שֶׁל חַמַּת גָּדֵר הָאֲוִיר רָווּי רֵיחַ גּוֹפְרִית.",
             exampleNative = "Вокруг горячих источников Хамат-Гадера воздух пропитан запахом גּוֹפְרִית.",
-            transliteration = "гофрит",
             pos = "noun", semanticGroup = "nature_geology_minerals", fillInBlankExclusions = listOf(189609L, 189610L, 189611L, 189612L, 189613L, 189614L)),
 
         // ── Group: nature_geology_processes (5 words) ─────────────────────────
@@ -202,7 +187,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Расплавленная раскалённая порода, медленно текущая глубоко под поверхностью Земли.",
             example = "בַּמַּעֲבָדָה הִקְרִינוּ סֶרֶט שֶׁמַּרְאֶה אֵיךְ מַגְמָה עוֹלָה לְעֵבֶר לוֹעַ הַר הַגַּעַשׁ.",
             exampleNative = "В лаборатории показали фильм, как מַגְמָה поднимается к жерлу вулкана.",
-            transliteration = "магма",
             pos = "noun", semanticGroup = "nature_geology_processes", fillInBlankExclusions = listOf(189617L, 189618L, 189619L, 189620L)),
 
         WordEntity(id = 189617, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -212,7 +196,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Расплавленная порода, текущая по поверхности после извержения вулкана.",
             example = "בְּהָוָואִי הַתַּיָּרִים צוֹפִים מֵרָחוֹק בְּלָבָה כְּתֻמָּה שֶׁמַּגִּיעָה אֶל הַיָּם.",
             exampleNative = "На Гавайях туристы издали наблюдают, как оранжевая לָבָה достигает моря.",
-            transliteration = "лава",
             pos = "noun", semanticGroup = "nature_geology_processes", fillInBlankExclusions = listOf(189616L, 189618L, 189619L, 189620L)),
 
         WordEntity(id = 189618, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -222,7 +205,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Вещество, медленно опускающееся на дно моря или озера и накапливающееся слоями.",
             example = "קַרְקָעִית יָם הַמֶּלַח מְכֻסָּה מִשְׁקָע שֶׁל מֶלַח וּמִינֶרָלִים בְּעֹמֶק שֶׁל מֶטְרִים.",
             exampleNative = "Дно Мёртвого моря покрыто מִשְׁקָע из соли и минералов на глубину в несколько метров.",
-            transliteration = "мишка",
             pos = "noun", semanticGroup = "nature_geology_processes", fillInBlankExclusions = listOf(189616L, 189617L, 189619L, 189620L)),
 
         WordEntity(id = 189619, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -232,7 +214,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Длинная трещина в коре, вдоль которой участки земли по обе стороны смещаются друг относительно друга.",
             example = "בְּקִיעַ סוּרְיָה–אַפְרִיקָה עוֹבֵר בְּדִיּוּק לְאֹרֶךְ עֵמֶק הַיַּרְדֵּן.",
             exampleNative = "בְּקִיעַ Сирийско-Африканский проходит ровно вдоль Иорданской долины.",
-            transliteration = "бэкиа",
             pos = "noun", semanticGroup = "nature_geology_processes"),
 
         WordEntity(id = 189620, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -242,7 +223,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Большая впадина в земле, возникшая от извержения, удара метеорита или эрозии.",
             example = "מַכְתֵּשׁ רָמוֹן הוּא הַמַּכְתֵּשׁ הָאֲרֹזִיוֹנִי הַגָּדוֹל בְּיוֹתֵר בָּעוֹלָם.",
             exampleNative = "מַכְתֵּשׁ Рамон — крупнейший в мире эрозионный кратер.",
-            transliteration = "махтэш",
             pos = "noun", semanticGroup = "nature_geology_processes"),
 
         // ── Group: nature_geology_landforms (3 words) ─────────────────────────
@@ -254,7 +234,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Внешний твёрдый и тонкий слой Земли; на нём расположены континенты и моря.",
             example = "הָרְעִידוֹת בַּצָּפוֹן נִגְרְמוּ בְּעִקְבוֹת תְּזוּזוֹת אִטִּיוֹת בַּקֵּרוּם.",
             exampleNative = "Подземные толчки на севере вызваны медленными подвижками в קֵרוּם.",
-            transliteration = "керум",
             pos = "noun", semanticGroup = "nature_geology_landforms"),
 
         WordEntity(id = 189622, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -264,7 +243,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Толстый слой между корой и ядром Земли; в нём течёт горячая вязкая порода.",
             example = "זְרָמִים בְּמַעֲטֶפֶת הָאֲדָמָה מְזִיזִים יַבָּשׁוֹת.",
             exampleNative = "Потоки в מַעֲטֶפֶת הָאֲדָמָה смещают континенты.",
-            transliteration = "маатэфэт hа-адама",
             pos = "phrase", semanticGroup = "nature_geology_landforms", fillInBlankExclusions = listOf(189623L)),
 
         WordEntity(id = 189623, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
@@ -274,7 +252,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Трещина в породе, заполненная металлом или ценным минералом, осевшим из горячего раствора.",
             example = "כּוֹרֵי הַתִּימְנָע גִּלּוּ עוֹרֵק עַפְרָה עָשִׁיר בְּנְחֹשֶׁת לִפְנֵי שָׁלֹשֶׁת אֲלָפִים שָׁנָה.",
             exampleNative = "Горняки в долине Тимна обнаружили עוֹרֵק עַפְרָה, богатую медью, три тысячи лет назад.",
-            transliteration = "орэк афра",
             pos = "phrase", semanticGroup = "nature_geology_landforms", fillInBlankExclusions = listOf(189622L)),
 
         // ── Group: nature_geology_mining (2 words) ────────────────────────────
@@ -286,7 +263,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Открытое место в земле, где из стенок породы добывают камни или минералы.",
             example = "לֹא רָחוֹק מִמּוֹדִיעִין יֵשׁ מַחְצָב גָּדוֹל שֶׁמְּסַפֵּק חָצָץ לְכָל הָאֵזוֹר.",
             exampleNative = "Недалеко от Модиина есть большой מַחְצָב, который снабжает щебнем весь район.",
-            transliteration = "махцав",
             pos = "noun", semanticGroup = "nature_geology_mining", fillInBlankExclusions = listOf(189625L)),
 
         WordEntity(id = 189625, setId = 1896, languagePair = "he-ru", rarity = "RARE",
@@ -296,7 +272,6 @@ object WordDataHebrewNatureGeology {
             definitionNative = "Остаток древнего живого существа, сохранившийся в осадочной породе и со временем ставший камнем.",
             example = "בְּמַכְתֵּשׁ רָמוֹן מָצְאוּ מְאוּבָּן שֶׁל קוֹנְכִיָּה יַמִּית.",
             exampleNative = "В кратере Рамон нашли מְאוּבָּן морской раковины.",
-            transliteration = "мэубан",
             pos = "noun", semanticGroup = "nature_geology_mining", fillInBlankExclusions = listOf(189624L)),
     )
 }

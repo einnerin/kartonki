@@ -47,7 +47,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_driving_actions (5) — глаголы вождения ──
         WordEntity(
             id = 171201, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "auto_driving_actions", transliteration = "letadlek",
+            pos = "verb", semanticGroup = "auto_driving_actions",
             original = "לְתַדְלֵק", translation = "заправлять",
             definition = "למלא את מיכל הרכב בבנזין או סולר בתחנה.",
             definitionNative = "Залить горючее в бак на станции — обычно бензин или дизель.",
@@ -56,7 +56,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171202L, 171203L, 171204L, 171205L)),
         WordEntity(
             id = 171202, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "auto_driving_actions", transliteration = "linsoa",
+            pos = "verb", semanticGroup = "auto_driving_actions",
             original = "לִנְסֹעַ", translation = "ехать",
             definition = "להתקדם בכלי תחבורה ממקום אחד למקום אחר.",
             definitionNative = "Перемещаться на машине, поезде или автобусе от точки до точки.",
@@ -65,7 +65,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171203, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "auto_driving_actions", transliteration = "leha'et",
+            pos = "verb", semanticGroup = "auto_driving_actions",
             original = "לְהָאֵט", translation = "замедляться",
             definition = "להפחית מהירות לפני סיבוב, אור אדום או מכשול בכביש.",
             definitionNative = "Уменьшать скорость — перед поворотом, светофором или препятствием.",
@@ -74,7 +74,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171201L, 171202L, 171204L, 171205L)),
         WordEntity(
             id = 171204, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "auto_driving_actions", transliteration = "lehakhnot",
+            pos = "verb", semanticGroup = "auto_driving_actions",
             original = "לְהַחְנוֹת", translation = "парковать",
             definition = "להעמיד את הרכב במקום מוגדר וכבוי לזמן מה.",
             definitionNative = "Оставить машину в выделенном месте с заглушённым мотором.",
@@ -83,7 +83,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171201L, 171202L, 171203L, 171205L)),
         WordEntity(
             id = 171205, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "auto_driving_actions", transliteration = "le'akef",
+            pos = "verb", semanticGroup = "auto_driving_actions",
             original = "לְעַקֵּף", translation = "обгонять",
             definition = "לעבור רכב אחר משמאל ולחזור לנתיב לפניו.",
             definitionNative = "Объехать переднюю машину слева и вернуться в свой ряд.",
@@ -94,7 +94,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_signals_alerts (4) — звуковые и световые сигналы ──
         WordEntity(
             id = 171206, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "auto_signals_alerts", transliteration = "tsofar",
+            pos = "noun", semanticGroup = "auto_signals_alerts",
             original = "צוֹפָר", translation = "клаксон",
             definition = "התקן קולני שלוחצים עליו כדי להזהיר נהג אחר.",
             definitionNative = "Громкое устройство на руле, которое подаёт предупреждающий звук.",
@@ -103,7 +103,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171207, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "auto_signals_alerts", transliteration = "itut",
+            pos = "noun", semanticGroup = "auto_signals_alerts",
             original = "אִתּוּת", translation = "поворотник",
             definition = "אור צהוב מהבהב המראה לאיזה כיוון הנהג עומד לפנות.",
             definitionNative = "Мигающий жёлтый огонь, который показывает направление поворота.",
@@ -112,7 +112,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171206L, 171209L)),
         WordEntity(
             id = 171208, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "auto_signals_alerts", transliteration = "az'akat rekhev",
+            pos = "phrase", semanticGroup = "auto_signals_alerts",
             original = "אַזְעָקַת רֶכֶב", translation = "автосигнализация",
             definition = "מערכת קולנית שמופעלת כשמישהו מנסה לפרוץ למכונית.",
             definitionNative = "Система, которая громко срабатывает при попытке вскрыть машину.",
@@ -121,7 +121,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171209L)),
         WordEntity(
             id = 171209, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "auto_signals_alerts", transliteration = "sirena",
+            pos = "noun", semanticGroup = "auto_signals_alerts",
             original = "סִירֶנָה", translation = "сирена",
             definition = "צליל חזק וחוזר של רכב חירום הקורא לפנות מהדרך.",
             definitionNative = "Громкий повторяющийся вой машины спасателей или полиции.",
@@ -132,7 +132,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_interior_seats (4) — места и отсеки для людей ──
         WordEntity(
             id = 171210, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "auto_interior_seats", transliteration = "moshav nehag",
+            pos = "phrase", semanticGroup = "auto_interior_seats",
             original = "מוֹשַׁב נֶהָג", translation = "водительское сиденье",
             definition = "המקום שבו יושב מי שמוביל את הרכב, מול ההגה.",
             definitionNative = "Место за рулём, где сидит человек, ведущий машину.",
@@ -141,7 +141,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171211L, 171212L, 171213L, 171215L)),
         WordEntity(
             id = 171211, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "auto_interior_seats", transliteration = "moshav akhori",
+            pos = "phrase", semanticGroup = "auto_interior_seats",
             original = "מוֹשָׁב אֲחוֹרִי", translation = "заднее сиденье",
             definition = "ספסל מאחור לכמה אנשים, מאחורי הכיסאות הקדמיים.",
             definitionNative = "Скамья сзади, рассчитанная на нескольких пассажиров.",
@@ -150,7 +150,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171210L, 171212L, 171213L)),
         WordEntity(
             id = 171212, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "auto_interior_seats", transliteration = "moshav yeled",
+            pos = "phrase", semanticGroup = "auto_interior_seats",
             original = "מוֹשַׁב יֶלֶד", translation = "детское автокресло",
             definition = "כיסא מיוחד עם רצועות שמחזיק תינוק או פעוט בבטחה.",
             definitionNative = "Кресло с ремнями, держащее малыша безопасно во время поездки.",
@@ -159,7 +159,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171210L, 171211L, 171213L)),
         WordEntity(
             id = 171213, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "auto_interior_seats", transliteration = "ta nehag",
+            pos = "phrase", semanticGroup = "auto_interior_seats",
             original = "תָּא נֶהָג", translation = "кабина водителя",
             definition = "החלל הקדמי של הרכב שבו יושב מי שמוביל אותו.",
             definitionNative = "Передний отсек, где находится тот, кто управляет машиной.",
@@ -170,7 +170,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_body_exterior (5) — кузовные элементы снаружи ──
         WordEntity(
             id = 171214, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "auto_body_exterior", transliteration = "magen ruakh",
+            pos = "phrase", semanticGroup = "auto_body_exterior",
             original = "מָגֵן רוּחַ", translation = "лобовое стекло",
             definition = "החלון הגדול מקדימה דרכו הנהג רואה את הכביש.",
             definitionNative = "Большое переднее окно, через которое водитель смотрит на дорогу.",
@@ -179,7 +179,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171215, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "auto_body_exterior", transliteration = "gagon",
+            pos = "noun", semanticGroup = "auto_body_exterior",
             original = "גַּגּוֹן", translation = "багажник на крыше",
             definition = "קופסה או מתלה מעל הרכב להובלת מטען נוסף.",
             definitionNative = "Короб или стойка сверху для груза, который не влез в салон.",
@@ -188,7 +188,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171216, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "auto_body_exterior", transliteration = "galgal khilufi",
+            pos = "phrase", semanticGroup = "auto_body_exterior",
             original = "גַּלְגַּל חִילוּפִי", translation = "запасное колесо",
             definition = "צמיג נוסף שנושאים בתוך הרכב למקרה תקר בדרך.",
             definitionNative = "Дополнительная шина в багажнике на случай прокола в пути.",
@@ -197,7 +197,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171214L, 171217L, 171218L)),
         WordEntity(
             id = 171217, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "auto_body_exterior", transliteration = "magen bots",
+            pos = "phrase", semanticGroup = "auto_body_exterior",
             original = "מָגֵן בּוֹץ", translation = "брызговик",
             definition = "לוח גמיש מאחורי הגלגל שמונע התזת רפש על מכוניות אחרות.",
             definitionNative = "Гибкая пластина за колесом, не дающая грязи лететь на других.",
@@ -206,7 +206,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171207L, 171214L, 171215L, 171216L, 171218L, 171219L, 171221L)),
         WordEntity(
             id = 171218, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "auto_body_exterior", transliteration = "mikhse manoa",
+            pos = "phrase", semanticGroup = "auto_body_exterior",
             original = "מִכְסֵה מָנוֹעַ", translation = "капот",
             definition = "הלוח שמכסה את החלק הקדמי של הרכב מעל המנוע.",
             definitionNative = "Крышка спереди, под которой скрыт двигатель машины.",
@@ -217,7 +217,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_climate (3) — климат и вентиляция ──
         WordEntity(
             id = 171219, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "auto_climate", transliteration = "mazgan",
+            pos = "noun", semanticGroup = "auto_climate",
             original = "מַזְגָן", translation = "кондиционер",
             definition = "מערכת שמקררת את האוויר בתוך הרכב בקיץ החם.",
             definitionNative = "Прибор, охлаждающий воздух внутри машины жарким летом.",
@@ -226,7 +226,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171220, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "auto_climate", transliteration = "pitkhei avir",
+            pos = "phrase", semanticGroup = "auto_climate",
             original = "פִּתְחֵי אֲוִיר", translation = "воздуховоды",
             definition = "החורים בלוח שמהם יוצא אוויר קר או חם פנימה.",
             definitionNative = "Отверстия в панели, откуда дует тёплый или холодный поток.",
@@ -235,7 +235,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171221, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "auto_climate", transliteration = "ivrur",
+            pos = "noun", semanticGroup = "auto_climate",
             original = "אִוְרוּר", translation = "вентиляция",
             definition = "החלפת אוויר במכונית כדי שלא יהיה מחנק או ריח.",
             definitionNative = "Обмен воздуха в салоне, чтобы не было душно или запахов.",
@@ -246,7 +246,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_dashboard_controls (4) — приборы и педали ──
         WordEntity(
             id = 171222, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "auto_dashboard_controls", transliteration = "mad mehirut",
+            pos = "phrase", semanticGroup = "auto_dashboard_controls",
             original = "מַד מְהִירוּת", translation = "спидометр",
             definition = "השעון שמראה לנהג כמה קילומטרים לשעה הוא נוסע.",
             definitionNative = "Прибор, показывающий, как быстро идёт машина в данный момент.",
@@ -255,7 +255,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171223L, 171225L)),
         WordEntity(
             id = 171223, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "auto_dashboard_controls", transliteration = "mad delek",
+            pos = "phrase", semanticGroup = "auto_dashboard_controls",
             original = "מַד דֶּלֶק", translation = "указатель уровня топлива",
             definition = "הסמל בלוח שמראה כמה בנזין נשאר במיכל.",
             definitionNative = "Шкала на панели, показывающая остаток горючего в баке.",
@@ -264,7 +264,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171222L, 171225L)),
         WordEntity(
             id = 171224, setId = 1712, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "auto_dashboard_controls", transliteration = "davsha",
+            pos = "noun", semanticGroup = "auto_dashboard_controls",
             original = "דַּוְשָׁה", translation = "педаль",
             definition = "כפתור גדול ברגל שלוחצים עליו כדי להאיץ או לבלום.",
             definitionNative = "Большая ножная кнопка для разгона или остановки машины.",
@@ -273,7 +273,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171225, setId = 1712, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "auto_dashboard_controls", transliteration = "blem kherum",
+            pos = "phrase", semanticGroup = "auto_dashboard_controls",
             original = "בְּלֵם חֵרוּם", translation = "аварийный тормоз",
             definition = "ידית מיוחדת שמושכים בה כדי לעצור מיד במקרה של סכנה.",
             definitionNative = "Рычаг или кнопка для немедленной остановки в опасной ситуации.",
@@ -290,7 +290,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_engine_internals (6) — внутренние узлы двигателя ──
         WordEntity(
             id = 171301, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "auto_engine_internals", transliteration = "atam rosh",
+            pos = "phrase", semanticGroup = "auto_engine_internals",
             original = "אַטָם רֹאשׁ", translation = "прокладка ГБЦ",
             definition = "אטם דקיק בין ראש הציליינדרים לגוש המנוע, מונע דליפת לחץ.",
             definitionNative = "Тонкий уплотнитель между головкой блока и его корпусом.",
@@ -299,7 +299,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171302, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "auto_engine_internals", transliteration = "taba'at bokhna",
+            pos = "phrase", semanticGroup = "auto_engine_internals",
             original = "טַבַּעַת בּוֹכְנָה", translation = "поршневое кольцо",
             definition = "חישוק דק שמקיף את הבוכנה ושומר על אטימות בתוך הציליינדר.",
             definitionNative = "Узкий обруч на поршне, удерживающий герметичность внутри цилиндра.",
@@ -308,7 +308,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171301L, 171303L, 171304L, 171305L)),
         WordEntity(
             id = 171303, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_engine_internals", transliteration = "gal ptikha",
+            pos = "phrase", semanticGroup = "auto_engine_internals",
             original = "גַּל פִּתִיחָה", translation = "распределительный вал",
             definition = "ציר מסתובב שפותח וסוגר את השסתומים בזמן הנכון.",
             definitionNative = "Вращающаяся ось, которая в нужный миг открывает клапаны.",
@@ -317,7 +317,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171301L, 171302L, 171304L, 171305L)),
         WordEntity(
             id = 171304, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_engine_internals", transliteration = "tumkhot manoa",
+            pos = "phrase", semanticGroup = "auto_engine_internals",
             original = "תֻּמְכוֹת מְנוֹעַ", translation = "опоры двигателя",
             definition = "כריות גומי שמחזיקות את המנוע ובולעות רעידות מהדרך.",
             definitionNative = "Резиновые подушки, на которых держится мотор и гасятся вибрации.",
@@ -326,7 +326,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171305, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "auto_engine_internals", transliteration = "slil hatsata",
+            pos = "phrase", semanticGroup = "auto_engine_internals",
             original = "סְלִיל הַצָּתָה", translation = "катушка зажигания",
             definition = "רכיב חשמלי שמחזק את המתח כדי ליצור ניצוץ במצת.",
             definitionNative = "Электрический узел, повышающий напряжение для искры на свече.",
@@ -335,7 +335,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171301L, 171302L, 171303L, 171304L, 171306L, 171312L)),
         WordEntity(
             id = 171306, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "auto_engine_internals", transliteration = "solenoid",
+            pos = "noun", semanticGroup = "auto_engine_internals",
             original = "סוֹלֵנוֹאִיד", translation = "соленоид",
             definition = "סלילון חשמלי שמושך גרעין מתכת ופותח שסתומים או מצמדים.",
             definitionNative = "Электромагнитная катушка, тянущая шток для срабатывания клапанов.",
@@ -346,7 +346,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_cooling_system (5) — охлаждение ──
         WordEntity(
             id = 171307, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "auto_cooling_system", transliteration = "mash'evat mayim",
+            pos = "phrase", semanticGroup = "auto_cooling_system",
             original = "מַשְׁאֵבַת מַיִם", translation = "водяной насос",
             definition = "התקן שמזרים את נוזל הקירור דרך גוש המנוע והרדיאטור.",
             definitionNative = "Узел, гоняющий охлаждающую жидкость через мотор и радиатор.",
@@ -355,7 +355,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171308L, 171309L, 171310L, 171312L)),
         WordEntity(
             id = 171308, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_cooling_system", transliteration = "ma'avir khom",
+            pos = "phrase", semanticGroup = "auto_cooling_system",
             original = "מַעֲבִיר חֹם", translation = "теплообменник",
             definition = "התקן שמעביר חום מנוזל אחד לאחר בלי לערבב ביניהם.",
             definitionNative = "Узел, передающий тепло из одной жидкости в другую без смешения.",
@@ -364,7 +364,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171307L, 171309L, 171310L)),
         WordEntity(
             id = 171309, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_cooling_system", transliteration = "ma'agal kerur",
+            pos = "phrase", semanticGroup = "auto_cooling_system",
             original = "מַעֲגַל קֵרוּר", translation = "контур охлаждения",
             definition = "מערכת סגורה של צינורות ונוזל ששומרת על טמפרטורת המנוע.",
             definitionNative = "Замкнутая сеть труб с жидкостью, поддерживающая температуру мотора.",
@@ -373,7 +373,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171307L, 171308L, 171310L)),
         WordEntity(
             id = 171310, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_cooling_system", transliteration = "tsinor radyator",
+            pos = "phrase", semanticGroup = "auto_cooling_system",
             original = "צִינּוֹר רַדְיָאטוֹר", translation = "патрубок радиатора",
             definition = "צינור גמיש שמחבר את גוש המנוע למצנן ונושא נוזל חם.",
             definitionNative = "Гибкая трубка между мотором и радиатором с горячей жидкостью.",
@@ -382,7 +382,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171307L, 171308L, 171309L)),
         WordEntity(
             id = 171311, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "auto_cooling_system", transliteration = "termostat",
+            pos = "noun", semanticGroup = "auto_cooling_system",
             original = "טֶרְמוֹסְטָט", translation = "термостат",
             definition = "שסתום אוטומטי שפותח זרימת נוזל ברגע שהמנוע מתחמם.",
             definitionNative = "Клапан, открывающий поток жидкости при нагреве мотора.",
@@ -393,7 +393,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_fuel_oil_exhaust (4) — топливо, масло и выхлоп ──
         WordEntity(
             id = 171312, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust", transliteration = "mash'evat delek",
+            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust",
             original = "מַשְׁאֵבַת דֶּלֶק", translation = "топливный насос",
             definition = "אבזר חשמלי שמעביר בנזין מהמיכל אל המנוע בלחץ קבוע.",
             definitionNative = "Электронасос, гонящий горючее из бака к мотору под напором.",
@@ -402,7 +402,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171307L, 171313L, 171314L, 171315L)),
         WordEntity(
             id = 171313, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust", transliteration = "kayul mazrekim",
+            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust",
             original = "כַּיּוּל מַזְרֵקִים", translation = "калибровка форсунок",
             definition = "כיוון מדויק של פתחי הזרקת הדלק לפי מפרט יצרן.",
             definitionNative = "Точная настройка струй впрыска под параметры производителя.",
@@ -411,7 +411,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171312L, 171314L, 171315L, 171319L, 171320L)),
         WordEntity(
             id = 171314, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust", transliteration = "ma'arekhet plita",
+            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust",
             original = "מַעֲרֶכֶת פְּלִיטָה", translation = "выпускная система",
             definition = "סדרת צינורות וממירים שמסלקים את גזי השרפה החוצה.",
             definitionNative = "Связка труб и катализаторов, выводящая горелые газы наружу.",
@@ -420,7 +420,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171312L, 171313L, 171315L)),
         WordEntity(
             id = 171315, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust", transliteration = "hakhlafat shemen",
+            pos = "phrase", semanticGroup = "auto_fuel_oil_exhaust",
             original = "הַחְלָפַת שֶׁמֶן", translation = "замена масла",
             definition = "פעולת תחזוקה שבה מוציאים שמן ישן ומכניסים חדש למנוע.",
             definitionNative = "Регламентная работа: старая жидкость сливается, новая заливается.",
@@ -431,7 +431,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_brakes_chassis (5) — тормоза и шасси ──
         WordEntity(
             id = 171316, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "auto_brakes_chassis", transliteration = "ma'atsor disk",
+            pos = "phrase", semanticGroup = "auto_brakes_chassis",
             original = "מַעֲצוֹר דִּיסְק", translation = "дисковый тормоз",
             definition = "צלחת מתכת מסתובבת שכריות לוחצות עליה כדי לעצור גלגל.",
             definitionNative = "Вращающаяся стальная пластина, которую сжимают колодки для остановки.",
@@ -440,7 +440,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171317L, 171318L, 171319L, 171320L)),
         WordEntity(
             id = 171317, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "auto_brakes_chassis", transliteration = "kariot blamim",
+            pos = "phrase", semanticGroup = "auto_brakes_chassis",
             original = "כָּרִיוֹת בְּלָמִים", translation = "тормозные колодки",
             definition = "חלקי חיכוך מוחלפים שלוחצים על הדיסק או התוף לעצירה.",
             definitionNative = "Сменные фрикционные элементы, прижимающие диск или барабан.",
@@ -449,7 +449,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171316L, 171319L, 171320L)),
         WordEntity(
             id = 171318, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "auto_brakes_chassis", transliteration = "saren",
+            pos = "noun", semanticGroup = "auto_brakes_chassis",
             original = "סָרֵן", translation = "ось, мост",
             definition = "מוט עבה שמחבר שני גלגלים ומחזיק עליהם את משקל הרכב.",
             definitionNative = "Толстый стержень, соединяющий два колеса и несущий вес машины.",
@@ -458,7 +458,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171316L)),
         WordEntity(
             id = 171319, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "auto_brakes_chassis", transliteration = "izun galgalim",
+            pos = "phrase", semanticGroup = "auto_brakes_chassis",
             original = "אִיזּוּן גַּלְגַּלִּים", translation = "балансировка колёс",
             definition = "התאמת משקל סביב הצמיג כדי שהנהיגה לא תרעד במהירות.",
             definitionNative = "Подгонка веса по ободу шины, чтобы руль не дрожал на скорости.",
@@ -467,7 +467,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171315L, 171316L, 171317L, 171320L)),
         WordEntity(
             id = 171320, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_brakes_chassis", transliteration = "kavnun zviyot",
+            pos = "phrase", semanticGroup = "auto_brakes_chassis",
             original = "כַּוְונוּן זְוִיּוֹת", translation = "развал-схождение",
             definition = "קביעה מדויקת של כיוון הגלגלים יחסית לכביש ולציר.",
             definitionNative = "Точная настройка наклона колёс относительно дороги и оси.",
@@ -478,7 +478,7 @@ object WordDataHebrewAutomobilePartial {
         // ── auto_sensors_meters (5) — датчики и приборы диагностики ──
         WordEntity(
             id = 171321, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_sensors_meters", transliteration = "makhshev manoa",
+            pos = "phrase", semanticGroup = "auto_sensors_meters",
             original = "מַחְשֵׁב מְנוֹעַ", translation = "блок управления двигателем",
             definition = "מחשב קטן שאוסף נתונים ומחליט איך להפעיל את המנוע.",
             definitionNative = "Электронный модуль, управляющий впрыском, искрой и расходом мотора.",
@@ -487,7 +487,7 @@ object WordDataHebrewAutomobilePartial {
         ),
         WordEntity(
             id = 171322, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_sensors_meters", transliteration = "khayshan khamtsan",
+            pos = "phrase", semanticGroup = "auto_sensors_meters",
             original = "חַיְשַׁן חַמְצָן", translation = "лямбда-зонд",
             definition = "רכיב שמודד גזים אחרי השרפה ומדווח על איכות התערובת.",
             definitionNative = "Датчик, замеряющий состав выхлопа и точность смеси топлива.",
@@ -496,7 +496,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171321L, 171323L, 171324L, 171325L)),
         WordEntity(
             id = 171323, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_sensors_meters", transliteration = "khayshan zrima",
+            pos = "phrase", semanticGroup = "auto_sensors_meters",
             original = "חַיְשַׁן זְרִימָה", translation = "расходомер воздуха",
             definition = "התקן שמודד כמות אוויר שנשאבת אל המנוע בכל שנייה.",
             definitionNative = "Прибор, отслеживающий объём всасываемого мотором воздуха.",
@@ -505,7 +505,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171321L, 171322L, 171324L, 171325L)),
         WordEntity(
             id = 171324, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_sensors_meters", transliteration = "mad lakhats shemen",
+            pos = "phrase", semanticGroup = "auto_sensors_meters",
             original = "מַד לַחַץ שֶׁמֶן", translation = "датчик давления масла",
             definition = "אבזר שדורש הפסקה מיידית אם הסיכה במנוע נופלת.",
             definitionNative = "Прибор, требующий немедленно встать, если смазка падает в моторе.",
@@ -514,7 +514,7 @@ object WordDataHebrewAutomobilePartial {
          fillInBlankExclusions = listOf(171321L, 171322L, 171323L, 171325L)),
         WordEntity(
             id = 171325, setId = 1713, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "auto_sensors_meters", transliteration = "mad sivuvim",
+            pos = "phrase", semanticGroup = "auto_sensors_meters",
             original = "מַד סִיבּוּבִים", translation = "тахометр",
             definition = "השעון בלוח שמראה כמה פעמים המנוע מסתובב בדקה.",
             definitionNative = "Прибор, показывающий, сколько оборотов мотор делает в минуту.",

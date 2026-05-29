@@ -21,8 +21,7 @@ flag when 1-2 outsider chars are sandwiched in a ≥3-char native run.
 Specifically: a word is bad if it has chars from >1 script AND the minority
 script contributes only 1-2 chars (likely a typo, not legitimate brand mix).
 
-Fields scanned: definition, definitionNative, example, exampleNative
-(NOT transliteration — that's intentionally Latin-in-Hebrew-set).
+Fields scanned: definition, definitionNative, example, exampleNative.
 
 Usage: validate_no_mixed_script_in_words.py <setId>
 Exit: 0 = clean, 1 = violations, 2 = bad args

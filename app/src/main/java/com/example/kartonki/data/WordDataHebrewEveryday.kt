@@ -32,7 +32,7 @@ object WordDataHebrewEveryday {
 
         WordEntity(
             id = 100401, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "greeting", transliteration = "boker tov",
+            pos = "interjection", semanticGroup = "greeting",
             original = "בֹּקֶר טוֹב", translation = "доброе утро",
             definition = "ברכת בֹּקֶר הנאמרת בתחילת היום.",
             definitionNative = "Утреннее приветствие, употребляемое в начале дня.",
@@ -41,7 +41,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100402L, 100403L, 100404L, 100405L, 100406L)),
         WordEntity(
             id = 100402, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "greeting", transliteration = "toda",
+            pos = "interjection", semanticGroup = "greeting",
             original = "תּוֹדָה", translation = "спасибо",
             definition = "מִלָּה לְהַבִּיע הַכָּרַת הַטּוֹב כְּלַפֵּי מִישֶׁהוּ עַל עֶזְרָה.",
             definitionNative = "Слово для выражения признательности.",
@@ -50,7 +50,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100401L, 100403L, 100404L, 100405L, 100406L)),
         WordEntity(
             id = 100403, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "greeting", transliteration = "bevakasha",
+            pos = "interjection", semanticGroup = "greeting",
             original = "בְּבַקָּשָׁה", translation = "пожалуйста",
             definition = "ביטוי מנומס בְּעֵת בַּקָּשָׁה אוֹ קַבָּלַת תּוֹדָה.",
             definitionNative = "Вежливое слово при просьбе или в ответ на благодарность.",
@@ -59,7 +59,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100401L, 100402L, 100404L, 100405L, 100406L)),
         WordEntity(
             id = 100404, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "greeting", transliteration = "ken",
+            pos = "interjection", semanticGroup = "greeting",
             original = "כֵּן", translation = "да",
             definition = "תְּשׁוּבָה חִיּוּבִית לְשְׁאֵלָה.",
             definitionNative = "Положительный ответ на вопрос.",
@@ -68,7 +68,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100401L, 100402L, 100403L, 100405L, 100406L, 100422L)),
         WordEntity(
             id = 100405, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "greeting", transliteration = "lo",
+            pos = "interjection", semanticGroup = "greeting",
             original = "לֹא", translation = "нет",
             definition = "תְּשׁוּבָה שְׁלִילִית לְשְׁאֵלָה.",
             definitionNative = "Отрицательный ответ на вопрос.",
@@ -77,7 +77,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100401L, 100402L, 100403L, 100404L, 100406L, 100422L)),
         WordEntity(
             id = 100406, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "greeting", transliteration = "slicha",
+            pos = "interjection", semanticGroup = "greeting",
             original = "סְלִיחָה", translation = "извините",
             definition = "מִלָּה לְהִתְנַצֵּל אוֹ לְבַקֵּשׁ תְּשׂוּמַת לֵב.",
             definitionNative = "Слово для извинения или привлечения внимания.",
@@ -86,7 +86,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100401L, 100402L, 100403L, 100404L)),
         WordEntity(
             id = 100407, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "time", transliteration = "boker",
+            pos = "noun", semanticGroup = "time",
             original = "בֹּקֶר", translation = "утро",
             definition = "הַחֵלֶק הָרִאשׁוֹן שֶׁל הַיּוֹם, מֵהַזְּרִיחָה עַד הַצָּהֳרַיִם.",
             definitionNative = "Первая часть дня — от рассвета до полудня.",
@@ -95,7 +95,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100408L, 100409L, 100410L)),
         WordEntity(
             id = 100408, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "time", transliteration = "erev",
+            pos = "noun", semanticGroup = "time",
             original = "עֶרֶב", translation = "вечер",
             definition = "הַזְּמַן שֶׁבֵּין אַחַר הַצָּהֳרַיִם לַלַּיְלָה.",
             definitionNative = "Время суток между послеполуднем и ночью.",
@@ -104,7 +104,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100407L, 100409L, 100410L)),
         WordEntity(
             id = 100409, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "time", transliteration = "layla",
+            pos = "noun", semanticGroup = "time",
             original = "לַיְלָה", translation = "ночь",
             definition = "הַזְּמַן שֶׁבֵּין שְׁקִיעַת הַחַמָּה לַזְּרִיחָה.",
             definitionNative = "Тёмное время суток от заката до рассвета.",
@@ -113,7 +113,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100407L, 100408L, 100410L)),
         WordEntity(
             id = 100410, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "time", transliteration = "yom",
+            pos = "noun", semanticGroup = "time",
             original = "יוֹם", translation = "день",
             definition = "פֶּרֶק זְמַן שֶׁל עֶשְׂרִים וְאַרְבַּע שָׁעוֹת.",
             definitionNative = "Промежуток времени в двадцать четыре часа.",
@@ -122,7 +122,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100407L, 100408L, 100409L)),
         WordEntity(
             id = 100411, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "communication", transliteration = "shem",
+            pos = "noun", semanticGroup = "communication",
             original = "שֵׁם", translation = "имя",
             definition = "מִלָּה שֶׁמַּגְדִּירָה אֶת זֶהוּת אָדָם.",
             definitionNative = "Слово, определяющее личность человека.",
@@ -131,7 +131,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100419L, 100420L)),
         WordEntity(
             id = 100412, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "pronoun", semanticGroup = "question_word", transliteration = "mi",
+            pos = "pronoun", semanticGroup = "question_word",
             original = "מִי", translation = "кто",
             definition = "מִלַּת שְׁאֵלָה לְזִיהוּי אָדָם.",
             definitionNative = "Вопросительное слово для определения личности.",
@@ -140,7 +140,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100413L, 100415L)),
         WordEntity(
             id = 100413, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "pronoun", semanticGroup = "question_word", transliteration = "ma",
+            pos = "pronoun", semanticGroup = "question_word",
             original = "מָה", translation = "что",
             definition = "מִלַּת שְׁאֵלָה לְגַבֵּי דָּבָר אוֹ מַצָּב.",
             definitionNative = "Вопросительное слово о предмете или ситуации.",
@@ -149,7 +149,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100412L, 100414L, 100415L, 100416L, 100417L, 100418L)),
         WordEntity(
             id = 100414, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "eifo",
+            pos = "adverb", semanticGroup = "question_word",
             original = "אֵיפֹה", translation = "где",
             definition = "מִלַּת שְׁאֵלָה לְמָקוֹם.",
             definitionNative = "Вопросительное слово о местонахождении.",
@@ -158,7 +158,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100413L, 100415L, 100416L, 100417L, 100418L)),
         WordEntity(
             id = 100415, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "matai",
+            pos = "adverb", semanticGroup = "question_word",
             original = "מָתַי", translation = "когда",
             definition = "מִלַּת שְׁאֵלָה לְגַבֵּי זְמַן.",
             definitionNative = "Вопросительное слово о времени.",
@@ -167,7 +167,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100414L, 100416L, 100417L, 100418L)),
         WordEntity(
             id = 100416, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "lama",
+            pos = "adverb", semanticGroup = "question_word",
             original = "לָמָּה", translation = "почему",
             definition = "מִלַּת שְׁאֵלָה לִסְבָּה אוֹ לְהֶסְבֵּר.",
             definitionNative = "Вопросительное слово о причине или объяснении.",
@@ -176,7 +176,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100413L, 100414L, 100415L, 100417L, 100418L)),
         WordEntity(
             id = 100417, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "eich",
+            pos = "adverb", semanticGroup = "question_word",
             original = "אֵיךְ", translation = "как",
             definition = "מִלַּת שְׁאֵלָה לְגַבֵּי אֹפֶן פְּעוּלָה.",
             definitionNative = "Вопросительное слово об образе действия.",
@@ -185,7 +185,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100418, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "question_word", transliteration = "kama",
+            pos = "adverb", semanticGroup = "question_word",
             original = "כַּמָּה", translation = "сколько",
             definition = "מִלַּת שְׁאֵלָה לְכַמּוּת אוֹ מְחִיר.",
             definitionNative = "Вопросительное слово о количестве или цене.",
@@ -194,7 +194,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100414L, 100415L, 100416L, 100417L)),
         WordEntity(
             id = 100419, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "communication", transliteration = "pgisha",
+            pos = "noun", semanticGroup = "communication",
             original = "פְּגִישָׁה", translation = "встреча",
             definition = "מִפְגָּשׁ מְתוּכְנָן בֵּין שְׁנֵי אֲנָשִׁים אוֹ יוֹתֵר.",
             definitionNative = "Заранее назначенное свидание двух или более людей.",
@@ -203,7 +203,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100411L, 100420L)),
         WordEntity(
             id = 100420, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "communication", transliteration = "sicha",
+            pos = "noun", semanticGroup = "communication",
             original = "שִׂיחָה", translation = "разговор",
             definition = "חִלּוּף מִלִּים בֵּין שְׁנֵי אֲנָשִׁים אוֹ יוֹתֵר.",
             definitionNative = "Обмен словами между двумя или более людьми.",
@@ -212,7 +212,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100411L, 100419L)),
         WordEntity(
             id = 100421, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "greeting", transliteration = "lehitraot",
+            pos = "phrase", semanticGroup = "greeting",
             original = "לְהִתְרָאוֹת", translation = "до свидания",
             definition = "ביטוי פרידה מקובל בשפה העברית.",
             definitionNative = "Распространённое прощание на иврите.",
@@ -221,7 +221,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100402L, 100422L)),
         WordEntity(
             id = 100422, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "communication", transliteration = "beseder",
+            pos = "phrase", semanticGroup = "communication",
             original = "בְּסֵדֶר", translation = "хорошо / в порядке / ок",
             definition = "ביטוי הסכמה או אישור שהכל כשורה.",
             definitionNative = "Выражение согласия или подтверждения, что всё в норме.",
@@ -230,7 +230,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100404L, 100423L, 100424L)),
         WordEntity(
             id = 100423, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "communication", transliteration = "metsuyam",
+            pos = "adjective", semanticGroup = "communication",
             original = "מְצֻיָּן", translation = "отлично / замечательно",
             definition = "ביטוי שבח להצלחה או לאיכות גבוהה.",
             definitionNative = "Выражение похвалы за успех или высокое качество.",
@@ -239,7 +239,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100402L, 100422L)),
         WordEntity(
             id = 100424, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "communication", transliteration = "behatslacha",
+            pos = "phrase", semanticGroup = "communication",
             original = "בְּהַצְלָחָה", translation = "удачи / с успехом",
             definition = "ביטוי אִחוּלִים לְהַצְלָחָה בְּמַשֶּׁהוּ.",
             definitionNative = "Пожелание успеха в чём-либо.",
@@ -248,7 +248,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100422L)),
         WordEntity(
             id = 100425, setId = 1004, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adverb", semanticGroup = "communication", transliteration = "efshar",
+            pos = "adverb", semanticGroup = "communication",
             original = "אֶפְשָׁר", translation = "можно / возможно",
             definition = "מִלָּה שֶׁמַּרְאָה שֶׁמַּשֶּׁהוּ אֶפְשָׁרִי אוֹ מוּתָּר.",
             definitionNative = "Слово, выражающее возможность или разрешение.",
@@ -262,7 +262,7 @@ object WordDataHebrewEveryday {
 
         WordEntity(
             id = 100501, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "mishpacha",
+            pos = "noun", semanticGroup = "family",
             original = "מִשְׁפָּחָה", translation = "семья",
             definition = "קְבוּצַת אֲנָשִׁים הַקְּשׁוּרִים בִּקְשָׁרֵי דָּם אוֹ נִישׂוּאִים.",
             definitionNative = "Группа людей, связанных кровными узами или браком.",
@@ -271,7 +271,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100502, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "av",
+            pos = "noun", semanticGroup = "family",
             original = "אָב", translation = "отец",
             definition = "הָהוֹרֶה הַזָּכָר בַּמִּשְׁפָּחָה.",
             definitionNative = "Мужской родитель в семье.",
@@ -280,7 +280,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100503, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "em",
+            pos = "noun", semanticGroup = "family",
             original = "אֵם", translation = "мать",
             definition = "הָהוֹרֶה הַנְּקֵבָה בַּמִּשְׁפָּחָה.",
             definitionNative = "Женский родитель в семье.",
@@ -289,7 +289,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100504, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "ben",
+            pos = "noun", semanticGroup = "family",
             original = "בֵּן", translation = "сын",
             definition = "יֶלֶד זָכָר שֶׁל הוֹרִים.",
             definitionNative = "Мальчик по отношению к своим родителям.",
@@ -298,7 +298,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100505, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "bat",
+            pos = "noun", semanticGroup = "family",
             original = "בַּת", translation = "дочь",
             definition = "יַלְדָּה נְקֵבָה שֶׁל הוֹרִים.",
             definitionNative = "Девочка по отношению к своим родителям.",
@@ -307,7 +307,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100506, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "ach",
+            pos = "noun", semanticGroup = "family",
             original = "אָח", translation = "брат",
             definition = "בֵּן זָכָר שֶׁל אוֹתָם הוֹרִים.",
             definitionNative = "Мальчик, имеющий тех же родителей.",
@@ -316,7 +316,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100514L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100507, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "achot",
+            pos = "noun", semanticGroup = "family",
             original = "אָחוֹת", translation = "сестра",
             definition = "בַּת נְקֵבָה שֶׁל אוֹתָם הוֹרִים.",
             definitionNative = "Девочка, имеющая тех же родителей.",
@@ -325,7 +325,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100508, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "saba",
+            pos = "noun", semanticGroup = "family",
             original = "סָבָא", translation = "дедушка",
             definition = "אָב שֶׁל הָאָב אוֹ הָאֵם.",
             definitionNative = "Отец отца или матери.",
@@ -334,7 +334,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100509L, 100510L, 100511L, 100512L, 100513L, 100514L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100509, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "savta",
+            pos = "noun", semanticGroup = "family",
             original = "סָבְתָּא", translation = "бабушка",
             definition = "אֵם שֶׁל הָאָב אוֹ הָאֵם.",
             definitionNative = "Мать отца или матери.",
@@ -343,7 +343,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100510, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "dod",
+            pos = "noun", semanticGroup = "family",
             original = "דּוֹד", translation = "дядя",
             definition = "אָח שֶׁל הָאָב אוֹ הָאֵם.",
             definitionNative = "Брат отца или матери.",
@@ -352,7 +352,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100511L, 100512L, 100513L, 100514L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100511, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "doda",
+            pos = "noun", semanticGroup = "family",
             original = "דּוֹדָה", translation = "тётя",
             definition = "אָחוֹת שֶׁל הָאָב אוֹ הָאֵם.",
             definitionNative = "Сестра отца или матери.",
@@ -361,7 +361,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100512, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "baal",
+            pos = "noun", semanticGroup = "family",
             original = "בַּעַל", translation = "муж",
             definition = "הַגֶּבֶר שֶׁנָּשׂוּי לְאִשָּׁה.",
             definitionNative = "Мужчина, состоящий в браке с женщиной.",
@@ -370,7 +370,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100513L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100513, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "isha",
+            pos = "noun", semanticGroup = "family",
             original = "אִשָּׁה", translation = "женщина / жена",
             definition = "אָדָם מִמִּין נְקֵבָה בָּגוּר, אוֹ הַנָּשׂוּי לְאִישׁ.",
             definitionNative = "Взрослый человек женского пола или супруга.",
@@ -379,7 +379,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100514, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "people", transliteration = "yeled",
+            pos = "noun", semanticGroup = "people",
             original = "יֶלֶד", translation = "мальчик / ребёнок",
             definition = "אָדָם צָעִיר מְאוֹד בְּשָׁנוֹת הַיַּלְדוּת.",
             definitionNative = "Маленький человек в детском возрасте.",
@@ -388,7 +388,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100515L, 100516L, 100517L, 100518L, 100519L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100515, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "people", transliteration = "yalda",
+            pos = "noun", semanticGroup = "people",
             original = "יַלְדָּה", translation = "девочка",
             definition = "יֶלֶד מִמִּין נְקֵבָה.",
             definitionNative = "Ребёнок женского пола.",
@@ -397,7 +397,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100503L, 100505L, 100507L, 100509L, 100511L, 100513L, 100514L, 100516L, 100519L, 100520L, 100521L)),
         WordEntity(
             id = 100516, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "people", transliteration = "tinok",
+            pos = "noun", semanticGroup = "people",
             original = "תִּינוֹק", translation = "младенец",
             definition = "יֶלֶד קָטָן מְאוֹד שֶׁעֲדַיִן לֹא לָמַד לְדַבֵּר.",
             definitionNative = "Очень маленький ребёнок, который ещё не умеет говорить.",
@@ -406,7 +406,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100515L, 100517L, 100518L, 100519L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100517, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "people", transliteration = "zaken",
+            pos = "adjective", semanticGroup = "people",
             original = "זָקֵן", translation = "пожилой / старый",
             definition = "מִי שֶׁחַי שָׁנִים רַבּוֹת וּמֵבִין מִנִּסְיוֹן.",
             definitionNative = "Тот, кто прожил много лет и обладает жизненным опытом.",
@@ -415,7 +415,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100518L, 100519L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100518, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "people", transliteration = "tzair",
+            pos = "adjective", semanticGroup = "people",
             original = "צָעִיר", translation = "молодой",
             definition = "מִי שֶׁנּוֹלַד לְלֹא זְמַן רַב.",
             definitionNative = "Тот, кто родился недавно, юный.",
@@ -424,7 +424,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100517L, 100519L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100519, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "people", transliteration = "chaver",
+            pos = "noun", semanticGroup = "people",
             original = "חָבֵר", translation = "друг",
             definition = "אָדָם שֶׁאוֹהֵב לְבַלּוֹת אִתְּךָ וְסוֹמֵךְ עָלֶיךָ.",
             definitionNative = "Человек, которому доверяешь и с которым приятно проводить время.",
@@ -433,7 +433,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100515L, 100516L, 100517L, 100518L, 100520L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100520, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "people", transliteration = "shachen",
+            pos = "noun", semanticGroup = "people",
             original = "שָׁכֵן", translation = "сосед",
             definition = "אָדָם הַגָּר לְיַד הַבַּיִת שֶׁלְּךָ.",
             definitionNative = "Человек, живущий рядом с твоим домом.",
@@ -442,7 +442,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100502L, 100504L, 100506L, 100508L, 100510L, 100512L, 100514L, 100515L, 100516L, 100517L, 100518L, 100519L, 100521L, 100524L, 100525L)),
         WordEntity(
             id = 100521, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "people", transliteration = "ish",
+            pos = "noun", semanticGroup = "people",
             original = "אִישׁ", translation = "мужчина / человек",
             definition = "אָדָם בָּגִיר מִמִּין זָכָר.",
             definitionNative = "Взрослый человек мужского пола.",
@@ -451,7 +451,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100522, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "zug",
+            pos = "noun", semanticGroup = "family",
             original = "זוּג", translation = "пара / супруги",
             definition = "שְׁנֵי אֲנָשִׁים הַחַיִּים יַחַד בְּקֶשֶׁר זוּגִי.",
             definitionNative = "Двое людей, состоящих в близких отношениях или браке.",
@@ -460,7 +460,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100523, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "horim",
+            pos = "noun", semanticGroup = "family",
             original = "הוֹרִים", translation = "родители",
             definition = "אָב וְאֵם יַחְדָּו הַמְּגַדְּלִים אֶת יַלְדֵיהֶם.",
             definitionNative = "Отец и мать вместе, воспитывающие своих детей.",
@@ -469,7 +469,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100522L, 100524L, 100525L)),
         WordEntity(
             id = 100524, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "ben dod",
+            pos = "noun", semanticGroup = "family",
             original = "בֶּן דּוֹד", translation = "двоюродный брат / кузен",
             definition = "בֵּן שֶׁל הַדּוֹד אוֹ הַדּוֹדָה שֶׁלְּךָ.",
             definitionNative = "Сын твоего дяди или тёти.",
@@ -478,7 +478,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100514L, 100517L, 100518L, 100519L, 100520L, 100521L, 100522L, 100523L, 100525L)),
         WordEntity(
             id = 100525, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "family", transliteration = "nekhed",
+            pos = "noun", semanticGroup = "family",
             original = "נֶכֶד", translation = "внук",
             definition = "בֵּן שֶׁל הַבֵּן אוֹ הַבַּת שֶׁלְּךָ.",
             definitionNative = "Сын твоего сына или дочери.",
@@ -492,7 +492,7 @@ object WordDataHebrewEveryday {
 
         WordEntity(
             id = 100601, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "ochel",
+            pos = "noun", semanticGroup = "food",
             original = "אֹכֶל", translation = "еда",
             definition = "כָּל מַה שֶּׁאוֹכְלִים כְּדֵי לִחְיוֹת.",
             definitionNative = "Всё, что едят для поддержания жизни.",
@@ -501,7 +501,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100602, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "drink", transliteration = "mayim",
+            pos = "noun", semanticGroup = "drink",
             original = "מַיִם", translation = "вода",
             definition = "נוֹזֵל שָׁקוּף הַחִיּוּנִי לַחַיִּים.",
             definitionNative = "Прозрачная жидкость, необходимая для жизни.",
@@ -510,7 +510,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100604L, 100612L, 100613L, 100614L)),
         WordEntity(
             id = 100603, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "lechem",
+            pos = "noun", semanticGroup = "food",
             original = "לֶחֶם", translation = "хлеб",
             definition = "מַאֲפֶה הָעָשׂוּי מִקֶּמַח וּמַיִם.",
             definitionNative = "Выпечка из муки и воды.",
@@ -519,7 +519,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100604, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "drink", transliteration = "chalav",
+            pos = "noun", semanticGroup = "drink",
             original = "חָלָב", translation = "молоко",
             definition = "נוֹזֵל לָבָן מֵחַיּוֹת, כְּגוֹן פָּרָה.",
             definitionNative = "Белая жидкость от животных, например от коровы.",
@@ -528,7 +528,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100602L, 100606L, 100608L, 100609L, 100610L, 100612L, 100613L, 100614L)),
         WordEntity(
             id = 100605, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "beitza",
+            pos = "noun", semanticGroup = "food",
             original = "בֵּיצָה", translation = "яйцо",
             definition = "מָזוֹן עָגוֹל הַמְּיוּצָר עַל יְדֵי תַּרְנְגֹלֶת.",
             definitionNative = "Круглый продукт питания, производимый курицей.",
@@ -537,7 +537,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100606, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "basar",
+            pos = "noun", semanticGroup = "food",
             original = "בָּשָׂר", translation = "мясо",
             definition = "חֵלֶק מֵהַחַיָּה הַמִּשְׁמֵשׁ כְּמָזוֹן.",
             definitionNative = "Часть тела животного, используемая как пища.",
@@ -546,7 +546,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100607, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "of",
+            pos = "noun", semanticGroup = "food",
             original = "עוֹף", translation = "курица / птица",
             definition = "חַיָּה בַּעֲלַת כְּנָפַיִם, אוֹ בְּשָׂרָהּ כְּמָזוֹן.",
             definitionNative = "Птица или её мясо как продукт питания.",
@@ -555,7 +555,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100608, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "dag",
+            pos = "noun", semanticGroup = "food",
             original = "דָּג", translation = "рыба",
             definition = "בַּעַל חַיִּים הַחַי בַּמַּיִם, מְשַׁמֵּשׁ כְּמָזוֹן.",
             definitionNative = "Водное животное, используемое в пищу.",
@@ -564,7 +564,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100609, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "pri",
+            pos = "noun", semanticGroup = "food",
             original = "פְּרִי", translation = "фрукт",
             definition = "חֵלֶק מָתוֹק שֶׁל צֶמַח, מָלֵא בְּוִיטָמִינִים.",
             definitionNative = "Сладкая часть растения, богатая витаминами.",
@@ -573,7 +573,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100610, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "yerek",
+            pos = "noun", semanticGroup = "food",
             original = "יֶרֶק", translation = "овощ",
             definition = "צֶמַח אוֹ חֵלֶק מִצֶּמַח הַנֶּאֱכָל כְּמָזוֹן.",
             definitionNative = "Растение или его часть, употребляемая в пищу.",
@@ -582,7 +582,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100604L, 100605L, 100606L, 100607L, 100608L, 100609L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100611, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "tapuach",
+            pos = "noun", semanticGroup = "food",
             original = "תַּפּוּחַ", translation = "яблоко",
             definition = "פְּרִי עָגוֹל אָדוֹם אוֹ יָרוֹק עִם טַעַם מָתוֹק אוֹ חָמוּץ.",
             definitionNative = "Круглый красный или зелёный плод со сладким или кислым вкусом.",
@@ -591,7 +591,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100612, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "drink", transliteration = "kafe",
+            pos = "noun", semanticGroup = "drink",
             original = "קָפֶה", translation = "кофе",
             definition = "מַשְׁקֶה חַם וְכֵהֶה הָעָשׂוּי מִגַּרְעִינִים קְלוּיִים.",
             definitionNative = "Горячий напиток из кофейных зёрен.",
@@ -600,7 +600,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100602L, 100613L, 100614L)),
         WordEntity(
             id = 100613, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "drink", transliteration = "te",
+            pos = "noun", semanticGroup = "drink",
             original = "תֵּה", translation = "чай",
             definition = "מַשְׁקֶה חַם הָעָשׂוּי מֵעָלִים מְיוּבָּשִׁים.",
             definitionNative = "Горячий напиток из сушёных листьев.",
@@ -609,7 +609,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100602L, 100604L, 100612L, 100614L)),
         WordEntity(
             id = 100614, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "drink", transliteration = "mitz",
+            pos = "noun", semanticGroup = "drink",
             original = "מִיץ", translation = "сок",
             definition = "נוֹזֵל הַמְּסוּחָט מִפֵּרוֹת אוֹ יְרָקוֹת.",
             definitionNative = "Жидкость, отжатая из фруктов или овощей.",
@@ -618,7 +618,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100602L, 100604L, 100612L, 100613L)),
         WordEntity(
             id = 100615, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "salat",
+            pos = "noun", semanticGroup = "food",
             original = "סַלָּט", translation = "салат",
             definition = "מַנָּה קָרָה עָשׂוּיָה מִיְּרָקוֹת חֲתוּכִים.",
             definitionNative = "Холодное блюдо из нарезанных овощей.",
@@ -627,7 +627,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100616, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "merak",
+            pos = "noun", semanticGroup = "food",
             original = "מְרַק", translation = "суп",
             definition = "מַנָּה חַמָּה עִם נוֹזֵל, יְרָקוֹת וְלִפְעָמִים בָּשָׂר.",
             definitionNative = "Горячее блюдо с жидкостью, овощами и иногда мясом.",
@@ -636,7 +636,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100608L, 100609L, 100610L, 100611L, 100615L, 100617L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100617, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "uga",
+            pos = "noun", semanticGroup = "food",
             original = "עוּגָה", translation = "торт / пирог",
             definition = "מַאֲפֶה מָתוֹק לְחַגִּים וְלִימֵי הוּלֶּדֶת.",
             definitionNative = "Сладкая выпечка для праздников и дней рождения.",
@@ -645,7 +645,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100618L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100618, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "glida",
+            pos = "noun", semanticGroup = "food",
             original = "גְּלִידָה", translation = "мороженое",
             definition = "מַאֲכָל קָפוּא וּמָתוֹק הָעָשׂוּי מֵחָלָב.",
             definitionNative = "Сладкое замороженное лакомство из молока.",
@@ -654,7 +654,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100621L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100619, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "place", transliteration = "shuk",
+            pos = "noun", semanticGroup = "place",
             original = "שׁוּק", translation = "рынок",
             definition = "מָקוֹם שֶׁבּוֹ מוֹכְרִים וְקוֹנִים אֹכֶל וּמוּצָרִים.",
             definitionNative = "Место, где продают и покупают еду и товары.",
@@ -663,7 +663,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100620L)),
         WordEntity(
             id = 100620, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "place", transliteration = "misada",
+            pos = "noun", semanticGroup = "place",
             original = "מִסְעָדָה", translation = "ресторан",
             definition = "מָקוֹם שֶׁבּוֹ קוֹנִים וְאוֹכְלִים אֹכֶל מוּכָן.",
             definitionNative = "Место, где можно купить и съесть готовую еду.",
@@ -672,7 +672,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100619L)),
         WordEntity(
             id = 100621, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "gvina",
+            pos = "noun", semanticGroup = "food",
             original = "גְּבִינָה", translation = "сыр",
             definition = "מוּצָר חָלָבִי הָעָשׂוּי מֵחָלָב מְקוּפָּא.",
             definitionNative = "Молочный продукт, изготавливаемый из свёрнутого молока.",
@@ -681,7 +681,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100622L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100622, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "shemen",
+            pos = "noun", semanticGroup = "food",
             original = "שֶׁמֶן", translation = "масло / масло растительное",
             definition = "נוֹזֵל שֶׁמַּגִּיעַ מִצְּמָחִים אוֹ מֵחַיּוֹת, מְשַׁמֵּשׁ לְבִישּׁוּל.",
             definitionNative = "Жидкость из растений или животных, используемая для приготовления пищи.",
@@ -690,7 +690,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100623L, 100624L, 100625L)),
         WordEntity(
             id = 100623, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "melakh",
+            pos = "noun", semanticGroup = "food",
             original = "מֶלַח", translation = "соль",
             definition = "תַּבְלִין לָבָן הַמּוֹסִיף טַעַם לָאוֹכֶל.",
             definitionNative = "Белая приправа, добавляющая вкус пище.",
@@ -699,7 +699,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100624L, 100625L)),
         WordEntity(
             id = 100624, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "sukar",
+            pos = "noun", semanticGroup = "food",
             original = "סֻכָּר", translation = "сахар",
             definition = "חֹמֶר מָתוֹק הַמְּשַׁמֵּשׁ לְהַמְתָּקַת מַשְׁקָאוֹת וּמָזוֹן.",
             definitionNative = "Сладкое вещество, используемое для подслащивания напитков и еды.",
@@ -708,7 +708,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100601L, 100603L, 100604L, 100605L, 100606L, 100607L, 100608L, 100609L, 100610L, 100611L, 100615L, 100616L, 100617L, 100618L, 100621L, 100622L, 100623L, 100625L)),
         WordEntity(
             id = 100625, setId = 1006, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "food", transliteration = "pitsa",
+            pos = "noun", semanticGroup = "food",
             original = "פִּיצָּה", translation = "пицца",
             definition = "מַאֲפֶה אִיטַלְקִי עָגוֹל עִם עַגְבָנִיּוֹת, גְּבִינָה וּתּוֹסָפוֹת.",
             definitionNative = "Итальянская круглая выпечка с томатами, сыром и добавками.",
@@ -722,7 +722,7 @@ object WordDataHebrewEveryday {
 
         WordEntity(
             id = 100701, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "bayit",
+            pos = "noun", semanticGroup = "home",
             original = "בַּיִת", translation = "дом",
             definition = "מִבְנֶה שֶׁאֲנָשִׁים גָּרִים בּוֹ.",
             definitionNative = "Строение, в котором живут люди.",
@@ -731,7 +731,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100702L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100702, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "cheder",
+            pos = "noun", semanticGroup = "home",
             original = "חֶדֶר", translation = "комната",
             definition = "חָלָל סָגוּר בְּתוֹךְ בַּיִת.",
             definitionNative = "Закрытое пространство внутри дома.",
@@ -740,7 +740,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100703, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "mitbach",
+            pos = "noun", semanticGroup = "home",
             original = "מִטְבָּח", translation = "кухня",
             definition = "הַחֶדֶר שֶׁבּוֹ מְבַשְּׁלִים אֹכֶל.",
             definitionNative = "Комната, где готовят еду.",
@@ -749,7 +749,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100702L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100704, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "furniture", transliteration = "mita",
+            pos = "noun", semanticGroup = "furniture",
             original = "מִיטָה", translation = "кровать",
             definition = "רָהִיט לִשְׁכִיבָה וּשְׁנִינָּה.",
             definitionNative = "Мебель для лежания и сна.",
@@ -758,7 +758,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100705L, 100706L, 100717L, 100723L, 100724L)),
         WordEntity(
             id = 100705, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "furniture", transliteration = "kise",
+            pos = "noun", semanticGroup = "furniture",
             original = "כִּסֵּא", translation = "стул",
             definition = "רָהִיט לְיְשִׁיבָה לְאָדָם אֶחָד.",
             definitionNative = "Мебель для сидения одного человека.",
@@ -767,7 +767,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100704L, 100706L, 100717L, 100723L, 100724L)),
         WordEntity(
             id = 100706, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "furniture", transliteration = "shulchan",
+            pos = "noun", semanticGroup = "furniture",
             original = "שׁוּלְחָן", translation = "стол",
             definition = "רָהִיט אֻפְקִי עִם רַגְלַיִם לָאֲרוּחוֹת אוֹ לָעֲבוֹדָה.",
             definitionNative = "Горизонтальная мебель на ножках для еды или работы.",
@@ -776,7 +776,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100704L, 100705L, 100717L, 100723L, 100724L)),
         WordEntity(
             id = 100707, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "delet",
+            pos = "noun", semanticGroup = "home",
             original = "דֶּלֶת", translation = "дверь",
             definition = "פֶּתַח בַּקִּיר לַכְּנִיסָה וְהַיְצִיאָה, שֶׁנִּסְגָּר בְּצִיר.",
             definitionNative = "Проём в стене для входа и выхода, закрывающийся на петлях.",
@@ -785,7 +785,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100702L, 100703L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100708, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "chalon",
+            pos = "noun", semanticGroup = "home",
             original = "חַלּוֹן", translation = "окно",
             definition = "פֶּתַח בַּקִּיר שֶׁמַּכְנִיס אוֹר וָאֲוִיר.",
             definitionNative = "Отверстие в стене, пропускающее свет и воздух.",
@@ -794,7 +794,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100709, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "makalachat",
+            pos = "noun", semanticGroup = "home",
             original = "מַקְלַחַת", translation = "душ",
             definition = "מַתָּקָן הַמְּזַרְזֵק מַיִם לִרְחִיצָה.",
             definitionNative = "Устройство, распыляющее воду для купания.",
@@ -803,7 +803,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100702L, 100703L, 100707L, 100708L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100710, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "manul",
+            pos = "noun", semanticGroup = "home",
             original = "מַנְעוּל", translation = "замок",
             definition = "מַתָּקָן לִנְעִילַת דֶּלֶת.",
             definitionNative = "Устройство для запирания двери.",
@@ -812,7 +812,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100702L, 100703L, 100708L, 100709L, 100711L, 100712L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100711, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "mafteiach",
+            pos = "noun", semanticGroup = "home",
             original = "מַפְתֵּחַ", translation = "ключ",
             definition = "כְּלִי שֶׁפּוֹתֵחַ אֶת הַמַּנְעוּל.",
             definitionNative = "Инструмент, открывающий замок.",
@@ -821,7 +821,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100712, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "or",
+            pos = "noun", semanticGroup = "home",
             original = "אוֹר", translation = "свет",
             definition = "אֵנֶרְגִּיָה הַמֵּאִירָה אֶת הַחֲשֵׁכָה.",
             definitionNative = "Энергия, освещающая темноту.",
@@ -830,7 +830,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100713, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "appliance", transliteration = "shaon",
+            pos = "noun", semanticGroup = "appliance",
             original = "שָׁעוֹן", translation = "часы",
             definition = "מַתָּקָן לְמְדִידַת הַזְּמַן.",
             definitionNative = "Устройство для измерения времени.",
@@ -839,7 +839,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100714L, 100715L, 100716L, 100718L)),
         WordEntity(
             id = 100714, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "appliance", transliteration = "chashmal",
+            pos = "noun", semanticGroup = "appliance",
             original = "חַשְׁמַל", translation = "электричество",
             definition = "אֵנֶרְגִּיָה הַמַּפְעִילָה מְכוֹנוֹת וּמַנּוֹרוֹת.",
             definitionNative = "Энергия, приводящая в действие машины и лампы.",
@@ -848,7 +848,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100712L, 100713L, 100715L, 100716L, 100718L)),
         WordEntity(
             id = 100715, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "appliance", transliteration = "mazgan",
+            pos = "noun", semanticGroup = "appliance",
             original = "מַזְגָּן", translation = "кондиционер",
             definition = "מַתָּקָן לְקֵרוּר אוֹ חִמּוּם הָאֲוִיר בַּחֶדֶר.",
             definitionNative = "Устройство для охлаждения или обогрева воздуха в комнате.",
@@ -857,7 +857,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100713L, 100714L, 100716L, 100718L)),
         WordEntity(
             id = 100716, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "appliance", transliteration = "makrer",
+            pos = "noun", semanticGroup = "appliance",
             original = "מַקְרֵר", translation = "холодильник",
             definition = "מַתָּקָן לְשִׁמּוּר אֹכֶל בְּקֹר.",
             definitionNative = "Устройство для хранения еды в холоде.",
@@ -866,7 +866,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100713L, 100714L, 100715L, 100718L)),
         WordEntity(
             id = 100717, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "furniture", transliteration = "rahit",
+            pos = "noun", semanticGroup = "furniture",
             original = "רָהִיט", translation = "мебель",
             definition = "חֲפָצִים גְּדוֹלִים בַּבַּיִת כְּגוֹן שׁוּלְחָן, כִּסֵּא וּמִיטָּה.",
             definitionNative = "Крупные предметы в доме: стол, стул, кровать и другое.",
@@ -875,7 +875,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100704L, 100705L, 100706L, 100713L, 100715L, 100716L, 100719L, 100723L, 100724L)),
         WordEntity(
             id = 100718, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "appliance", transliteration = "sabon",
+            pos = "noun", semanticGroup = "appliance",
             original = "סַבּוֹן", translation = "мыло",
             definition = "חֹמֶר לְנִיקּוּי הַגּוּף בְּרְחִיצָה.",
             definitionNative = "Средство для очищения тела при мытье.",
@@ -884,7 +884,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100713L, 100714L, 100715L, 100716L)),
         WordEntity(
             id = 100719, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "shatiach",
+            pos = "noun", semanticGroup = "home",
             original = "שָׁטִיחַ", translation = "ковёр",
             definition = "בַּד עָבֶה לְכִיסּוּי הָרִיצְפָּה.",
             definitionNative = "Плотная ткань для покрытия пола.",
@@ -893,7 +893,7 @@ object WordDataHebrewEveryday {
         ),
         WordEntity(
             id = 100720, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "ambatya",
+            pos = "noun", semanticGroup = "home",
             original = "אַמְבַּטְיָה", translation = "ванна / ванная комната",
             definition = "חֶדֶר רַחְצָה עִם מַקְלַחַת אוֹ אַגָּן גָּדוֹל לְנִיקּוּי הַגּוּף.",
             definitionNative = "Место в доме с душем или большой купелью, где моются.",
@@ -902,7 +902,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100702L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100721L, 100722L, 100725L)),
         WordEntity(
             id = 100721, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "sherutim",
+            pos = "noun", semanticGroup = "home",
             original = "שֵׁרוּתִים", translation = "туалет",
             definition = "חֶדֶר שֶׁיֵּשׁ בּוֹ אָסְלָה לְצָרְכֵי הָאָדָם.",
             definitionNative = "Комната с унитазом для нужд человека.",
@@ -911,7 +911,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100722L, 100725L)),
         WordEntity(
             id = 100722, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "magevet",
+            pos = "noun", semanticGroup = "home",
             original = "מַגֶּבֶת", translation = "полотенце",
             definition = "בַּד רַךְ לְנִגּוּב הַגּוּף לְאַחַר הָאַמְבַּטְיָה.",
             definitionNative = "Мягкая ткань для вытирания тела после ванны или душа.",
@@ -920,7 +920,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100725L)),
         WordEntity(
             id = 100723, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "furniture", transliteration = "karit",
+            pos = "noun", semanticGroup = "furniture",
             original = "כָּרִית", translation = "подушка",
             definition = "שַׂקִּית רַכָּה שֶׁמַּנִּיחִים תַּחַת הָרֹאשׁ בְּזְמַן שֵׁינָה.",
             definitionNative = "Мягкий мешок, который кладут под голову во время сна.",
@@ -929,7 +929,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100704L, 100705L, 100706L, 100717L, 100724L)),
         WordEntity(
             id = 100724, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "furniture", transliteration = "smikha",
+            pos = "noun", semanticGroup = "furniture",
             original = "שְׂמִיכָה", translation = "одеяло",
             definition = "כִּיסּוּי חַם לְגוּף בְּזְמַן שֵׁינָה.",
             definitionNative = "Тёплое покрывало для тела во время сна.",
@@ -938,7 +938,7 @@ object WordDataHebrewEveryday {
          fillInBlankExclusions = listOf(100704L, 100705L, 100706L, 100717L, 100723L)),
         WordEntity(
             id = 100725, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home", transliteration = "madregot",
+            pos = "noun", semanticGroup = "home",
             original = "מַדְרֵגוֹת", translation = "лестница",
             definition = "מִבְנֶה שֶׁל שְׁלַבִּים לְעֲלִיָּה מִקּוֹמָה לְקוֹמָה.",
             definitionNative = "Конструкция из ступеней для подъёма с этажа на этаж.",

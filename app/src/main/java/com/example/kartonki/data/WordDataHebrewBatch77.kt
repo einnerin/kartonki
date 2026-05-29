@@ -29,7 +29,7 @@ object WordDataHebrewBatch77 {
         // ══════════════════════════════════════════════════════════════════════
         WordEntity(
             id = 149001, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_kinds", transliteration = "гольф",
+            pos = "noun", semanticGroup = "sport_kinds",
             original = "גוֹלֶף", translation = "гольф",
             definition = "מִשְׂחָק שֶׁבּוֹ מַכִּים בְּכַדּוּר קָטָן עִם מַקֵּל לְתוֹךְ חוֹר.",
             definitionNative = "Игра, где маленький мяч клюшкой загоняют в лунку на травяном поле.",
@@ -38,7 +38,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149002L, 149003L, 149004L, 149005L, 149006L)),
         WordEntity(
             id = 149002, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_kinds", transliteration = "аманут лахама",
+            pos = "noun", semanticGroup = "sport_kinds",
             original = "אָמָנוּת לַחֲמָה", translation = "боевые искусства",
             definition = "שִׁיטוֹת קְרָב כְּמוֹ קָרָאטֶה אוֹ גְּ'וּדוֹ, מְלַמְּדִים מִשְׁמַעַת וּמַגֵּן עַצְמִי.",
             definitionNative = "Каратэ, дзюдо и подобные системы рукопашной защиты и нападения.",
@@ -47,7 +47,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149001L, 149003L, 149004L, 149005L, 149006L)),
         WordEntity(
             id = 149003, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_kinds", transliteration = "хокэй аль hа-кэрах",
+            pos = "noun", semanticGroup = "sport_kinds",
             original = "הוֹקֵי עַל הַקֶּרַח", translation = "хоккей на льду",
             definition = "מִשְׂחַק קְבוּצָה עִם מַקְלוֹת וְדִיסְקִית, מְשַׂחֲקִים עִם מַחֲלִיקַיִם עַל זִירָה קָרָה.",
             definitionNative = "Командная игра шайбой и клюшкой на ледовом поле, играют на коньках.",
@@ -56,7 +56,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149001L, 149002L, 149004L, 149005L, 149006L)),
         WordEntity(
             id = 149004, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_kinds", transliteration = "эгроф",
+            pos = "noun", semanticGroup = "sport_kinds",
             original = "אֲגְרוֹף", translation = "бокс",
             definition = "סְפּוֹרְט קְרָב שֶׁבּוֹ שְׁנֵי יְרִיבִים מַכִּים זֶה אֶת זֶה בְּכַפּוֹת יָדַיִם בְּתוֹךְ זִירָה.",
             definitionNative = "Единоборство, где двое противников бьют друг друга кулаками в перчатках на ринге.",
@@ -65,7 +65,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149001L, 149002L, 149003L, 149005L, 149006L)),
         WordEntity(
             id = 149005, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_kinds", transliteration = "шахья",
+            pos = "noun", semanticGroup = "sport_kinds",
             original = "שַׁחְיָה", translation = "плавание",
             definition = "תְּנוּעָה בַּמַּיִם בְּעֶזְרַת יָדַיִם וְרַגְלַיִם, סְפּוֹרְט אוֹ פְּעֻלָּה לְהַנָאָה.",
             definitionNative = "Передвижение в воде с помощью рук и ног, как спорт или для удовольствия.",
@@ -74,7 +74,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149001L, 149002L, 149003L, 149004L, 149006L)),
         WordEntity(
             id = 149006, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_kinds", transliteration = "атлетика",
+            pos = "noun", semanticGroup = "sport_kinds",
             original = "אַתְלֵטִיקָה", translation = "лёгкая атлетика",
             definition = "תְּחוּם סְפּוֹרְט הַכּוֹלֵל רִיצָה, קְפִיצָה וְזְרִיקָה שֶׁל כֵּלִים.",
             definitionNative = "Раздел спорта: бег, прыжки и метание снарядов; на стадионе или арене.",
@@ -83,7 +83,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149001L, 149002L, 149003L, 149004L, 149005L)),
         WordEntity(
             id = 149007, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_roles", transliteration = "квуца",
+            pos = "noun", semanticGroup = "sport_roles",
             original = "קְבוּצָה", translation = "команда",
             definition = "אֲסוּפָה שֶׁל סְפּוֹרְטָאִים הַמְּשַׂחֲקִים יַחַד נֶגֶד יְרִיבִים.",
             definitionNative = "Группа спортсменов, играющих сообща против соперников по правилам.",
@@ -92,7 +92,7 @@ object WordDataHebrewBatch77 {
         ),
         WordEntity(
             id = 149008, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_roles", transliteration = "шахкан хилуф",
+            pos = "noun", semanticGroup = "sport_roles",
             original = "שַׁחְקַן חִלּוּף", translation = "запасной игрок",
             definition = "סְפּוֹרְטָאי שֶׁמְּחַכֶּה בְּצַד הַמִּגְרָשׁ וְעוֹלֶה לְשַׂחֵק בִּמְקוֹם חָבֵר אַחֵר.",
             definitionNative = "Спортсмен на скамейке, выходит на поле вместо уставшего или травмированного.",
@@ -101,7 +101,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149007L, 149009L, 149010L)),
         WordEntity(
             id = 149009, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_roles", transliteration = "капитан",
+            pos = "noun", semanticGroup = "sport_roles",
             original = "קַפִּיטָן", translation = "капитан команды",
             definition = "הַסְּפּוֹרְטָאי הָרָאשִׁי שֶׁמּוֹבִיל אֶת הַחֲבֵרִים בַּמִּגְרָשׁ וּמְקַבֵּל הַחְלָטוֹת.",
             definitionNative = "Главный игрок, ведёт партнёров на поле и принимает решения во время игры.",
@@ -110,7 +110,7 @@ object WordDataHebrewBatch77 {
         ),
         WordEntity(
             id = 149010, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_roles", transliteration = "шофэт",
+            pos = "noun", semanticGroup = "sport_roles",
             original = "שׁוֹפֵט", translation = "судья (спортивный)",
             definition = "אִישׁ הַמַּקְפִּיד עַל הַחֻקִּים בַּמִּשְׂחָק וּמְצַפְצֵף בִּשְׁעַת עֲבֵרָה.",
             definitionNative = "Человек, следит за правилами на поле и свистит при нарушениях.",
@@ -119,7 +119,7 @@ object WordDataHebrewBatch77 {
         ),
         WordEntity(
             id = 149011, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_outcome", transliteration = "картис адом",
+            pos = "noun", semanticGroup = "sport_outcome",
             original = "כַּרְטִיס אָדֹם", translation = "красная карточка",
             definition = "סִימָן שֶׁל הַשּׁוֹפֵט עַל עֲבֵרָה חֲמוּרָה, הַשַּׂחְקָן יוֹרֵד מִיָּד מֵהַמִּגְרָשׁ.",
             definitionNative = "Знак арбитра за грубое нарушение: игрок сразу покидает поле без замены.",
@@ -128,7 +128,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149015L, 149016L, 149017L, 149018L, 149019L, 149020L, 149021L)),
         WordEntity(
             id = 149012, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_event", transliteration = "ицтадьон",
+            pos = "noun", semanticGroup = "sport_event",
             original = "אִצְטַדְיוֹן", translation = "стадион",
             definition = "מִבְנֶה גָּדוֹל עִם מִגְרָשׁ וְכַרְטִיסֵי יְשִׁיבָה לַקָּהָל בִּשְׁעַת מִשְׂחָק.",
             definitionNative = "Большое сооружение с полем и трибунами для зрителей во время матчей.",
@@ -137,7 +137,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149013L, 149014L, 149022L, 149023L, 149024L, 149025L)),
         WordEntity(
             id = 149013, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_event", transliteration = "лига",
+            pos = "noun", semanticGroup = "sport_event",
             original = "לִיגָה", translation = "лига",
             definition = "אַרְגוּן שֶׁל קְבוּצוֹת הַמְּשַׂחֲקוֹת זוֹ נֶגֶד זוֹ בְּאוֹתָהּ רָמָה.",
             definitionNative = "Объединение клубов, играющих между собой по сетке турнира одного уровня.",
@@ -146,7 +146,7 @@ object WordDataHebrewBatch77 {
         ),
         WordEntity(
             id = 149014, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_event", transliteration = "алипут",
+            pos = "noun", semanticGroup = "sport_event",
             original = "אַלִּיפוּת", translation = "чемпионат",
             definition = "תַּחֲרוּת גְּדוֹלָה שֶׁבָּהּ קְבוּצוֹת אוֹ סְפּוֹרְטָאִים נִלְחָמִים עַל הַתֹּאַר הָרִאשׁוֹן.",
             definitionNative = "Крупный турнир, где команды или атлеты борются за главный титул.",
@@ -155,7 +155,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149012L, 149013L, 149015L, 149020L, 149022L, 149023L, 149024L, 149025L)),
         WordEntity(
             id = 149015, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_outcome", transliteration = "прас",
+            pos = "noun", semanticGroup = "sport_outcome",
             original = "פְּרָס", translation = "приз, награда",
             definition = "מַתָּנָה רִשְׁמִית כְּסֵפֶל אוֹ כֶּסֶף לַזּוֹכִים בְּתַחֲרוּת.",
             definitionNative = "Кубок, медаль или денежная сумма, которую вручают победителю турнира.",
@@ -164,7 +164,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149011L, 149016L, 149017L, 149018L, 149019L, 149020L, 149021L)),
         WordEntity(
             id = 149016, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_outcome", transliteration = "шийа",
+            pos = "noun", semanticGroup = "sport_outcome",
             original = "שִׁיָּא", translation = "рекорд",
             definition = "תּוֹצָאָה הֲכִי טוֹבָה שֶׁהוּשְׂגָה אֵי פַּעַם בְּסוּג סְפּוֹרְט מְסֻיָּם.",
             definitionNative = "Лучший показатель за всю историю в данном виде спорта или дисциплине.",
@@ -173,7 +173,7 @@ object WordDataHebrewBatch77 {
         ),
         WordEntity(
             id = 149017, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_outcome", transliteration = "тоцаа",
+            pos = "noun", semanticGroup = "sport_outcome",
             original = "תּוֹצָאָה", translation = "результат (счёт)",
             definition = "הַסְּפֹרֶת הַסּוֹפִית שֶׁל הַמִּשְׂחָק, בְּמִסְפָּרִים שְׁתֵּי הַקְּבוּצוֹת.",
             definitionNative = "Итоговый счёт матча в цифрах между двумя соперниками после финального свистка.",
@@ -182,7 +182,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149011L, 149015L, 149016L, 149018L, 149019L, 149020L, 149021L)),
         WordEntity(
             id = 149018, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_outcome", transliteration = "шаар",
+            pos = "noun", semanticGroup = "sport_outcome",
             original = "שַׁעַר", translation = "гол, ворота",
             definition = "מִסְגֶּרֶת בַּמִּגְרָשׁ שֶׁאֵלֶיהָ מַכְנִיסִים אֶת הַכַּדּוּר וְהַנְּקֻדָּה שֶׁמַּתְקַבֶּלֶת.",
             definitionNative = "Рамка на поле, куда забивают мяч в футболе; также само очко за такое попадание.",
@@ -191,7 +191,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149011L, 149015L, 149016L, 149017L, 149019L, 149020L, 149021L)),
         WordEntity(
             id = 149019, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_outcome", transliteration = "кэшалон",
+            pos = "noun", semanticGroup = "sport_outcome",
             original = "כְּשָׁלוֹן", translation = "поражение",
             definition = "סִיּוּם מִשְׂחָק עִם פָּחוֹת נְקֻדּוֹת מִן הַיָּרִיב, הֶפֶךְ מִנִּצָּחוֹן.",
             definitionNative = "Окончание игры с меньшим счётом, чем у соперника; противоположность победе.",
@@ -200,7 +200,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149011L, 149015L, 149016L, 149017L, 149018L, 149020L, 149021L)),
         WordEntity(
             id = 149020, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_outcome", transliteration = "ницахон",
+            pos = "noun", semanticGroup = "sport_outcome",
             original = "נִצָּחוֹן", translation = "победа",
             definition = "סִיּוּם תַּחֲרוּת עִם תּוֹצָאָה טוֹבָה יוֹתֵר מִן הַיָּרִיב.",
             definitionNative = "Успешное окончание матча с лучшим счётом, чем у соперника.",
@@ -209,7 +209,7 @@ object WordDataHebrewBatch77 {
         ),
         WordEntity(
             id = 149021, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_outcome", transliteration = "тэку",
+            pos = "noun", semanticGroup = "sport_outcome",
             original = "תֵּקוּ", translation = "ничья",
             definition = "סִיּוּם מִשְׂחָק שֶׁבּוֹ שְׁתֵּי הַקְּבוּצוֹת מַשִּׂיגוֹת אוֹתָהּ סְפֹרֶת.",
             definitionNative = "Итог матча с равным счётом обоих соперников; никто не выиграл.",
@@ -218,7 +218,7 @@ object WordDataHebrewBatch77 {
         ),
         WordEntity(
             id = 149022, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_event", transliteration = "рив'эй гамар",
+            pos = "noun", semanticGroup = "sport_event",
             original = "רִבְעֵי גָּמַר", translation = "четвертьфинал",
             definition = "שָׁלָב בַּתַּחֲרוּת עִם שְׁמוֹנֶה קְבוּצוֹת לִפְנֵי חֲצִי הַסּוֹף.",
             definitionNative = "Стадия плей-офф с восемью участниками перед полуфиналом.",
@@ -227,7 +227,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149012L, 149013L, 149014L, 149023L, 149024L, 149025L)),
         WordEntity(
             id = 149023, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_event", transliteration = "гамар",
+            pos = "noun", semanticGroup = "sport_event",
             original = "גָּמַר", translation = "финал",
             definition = "הַמִּשְׂחָק הָאַחֲרוֹן בַּתַּחֲרוּת בֵּין שְׁתֵּי הַקְּבוּצוֹת הַטּוֹבוֹת בְּיוֹתֵר.",
             definitionNative = "Решающий матч турнира между двумя сильнейшими участниками за главный титул.",
@@ -236,7 +236,7 @@ object WordDataHebrewBatch77 {
         , fillInBlankExclusions = listOf(149012L, 149013L, 149014L, 149022L, 149024L, 149025L)),
         WordEntity(
             id = 149024, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_event", transliteration = "мундиаль",
+            pos = "noun", semanticGroup = "sport_event",
             original = "מוּנְדִיאָל", translation = "чемпионат мира по футболу",
             definition = "תַּחֲרוּת בֵּין-לְאֻמִּית גְּדוֹלָה שֶׁל קְבוּצוֹת לְאֻמִּיוֹת אַחַת לְאַרְבַּע שָׁנִים.",
             definitionNative = "Главный международный футбольный турнир между сборными разных стран раз в четыре года.",
@@ -245,7 +245,7 @@ object WordDataHebrewBatch77 {
         ),
         WordEntity(
             id = 149025, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_event", transliteration = "эт hафсака",
+            pos = "noun", semanticGroup = "sport_event",
             original = "עֵת הַפְסָקָה", translation = "перерыв (тайм)",
             definition = "זְמַן מְנוּחָה קָצָר בְּאֶמְצַע הַמִּשְׂחָק לִשְׁתִיָּה וּלְהוֹרָאוֹת הַמְּאַמֵּן.",
             definitionNative = "Короткая пауза в середине игры для воды, отдыха и указаний от тренера.",

@@ -105,6 +105,56 @@ else
   cat "$TEST_DIR/out2b.txt" | sed 's/^/    /'
 fi
 
+# ── Test 2c: transliteration removal (all layouts) → accepted ──────────────
+# he-ru transliteration убрана 2026-05-28. Удаление поля content-нейтрально,
+# поэтому в whitelist. Проверяем все 4 раскладки: own-line, inline-middle,
+# end-of-line (с экранированной кавычкой gershayim), last-arg.
+
+cat > "$TEST_DIR/diff_translit.txt" <<'EOF'
+diff --git a/app/src/main/java/com/example/kartonki/data/WordDataHebrewX.kt b/app/src/main/java/com/example/kartonki/data/WordDataHebrewX.kt
+index abc..def 100644
+--- a/app/src/main/java/com/example/kartonki/data/WordDataHebrewX.kt
++++ b/app/src/main/java/com/example/kartonki/data/WordDataHebrewX.kt
+@@ -32,1 +31,0 @@
+-            transliteration = "chek",
+@@ -40,1 +40,1 @@
+-            original = "X", transliteration = "Y", translation = "Z"),
++            original = "X", translation = "Z"),
+@@ -50,1 +50,1 @@
+-            pos = "noun", semanticGroup = "school", transliteration = "du\"kh",
++            pos = "noun", semanticGroup = "school",
+@@ -60,1 +60,1 @@
+-            original = "A", translation = "B", transliteration = "C"),
++            original = "A", translation = "B"),
+EOF
+
+if python scripts/validate/check_metadata_only_diff.py --diff-file "$TEST_DIR/diff_translit.txt" > "$TEST_DIR/out2c.txt" 2>&1; then
+  report_pass "Тест 2c: удаление transliteration (4 раскладки) принято"
+else
+  report_fail "Тест 2c: должен был пройти, но check упал"
+  cat "$TEST_DIR/out2c.txt" | sed 's/^/    /'
+fi
+
+# ── Test 2d: transliteration removal + translation change → rejected ───────
+# Гарантия, что нормализация запятых не пропускает реальную content-правку.
+
+cat > "$TEST_DIR/diff_translit_bad.txt" <<'EOF'
+diff --git a/app/src/main/java/com/example/kartonki/data/WordDataHebrewX.kt b/app/src/main/java/com/example/kartonki/data/WordDataHebrewX.kt
+index abc..def 100644
+--- a/app/src/main/java/com/example/kartonki/data/WordDataHebrewX.kt
++++ b/app/src/main/java/com/example/kartonki/data/WordDataHebrewX.kt
+@@ -40,1 +40,1 @@
+-            original = "X", transliteration = "Y", translation = "Z"),
++            original = "X", translation = "CHANGED"),
+EOF
+
+if python scripts/validate/check_metadata_only_diff.py --diff-file "$TEST_DIR/diff_translit_bad.txt" > "$TEST_DIR/out2d.txt" 2>&1; then
+  report_fail "Тест 2d: должен был заблокировать translation-правку, но check прошёл"
+  cat "$TEST_DIR/out2d.txt" | sed 's/^/    /'
+else
+  report_pass "Тест 2d: translation-правка под видом translit-removal заблокирована"
+fi
+
 # ── Test 3: METADATA_ONLY_COMMIT=1 without LARGE_COMMIT_OK=1 → hook guard ──
 # Replicates the bash guard from .githooks/pre-commit block 2, тестируем его
 # в изоляции (без запуска целого хука, который требует git-репо в состоянии

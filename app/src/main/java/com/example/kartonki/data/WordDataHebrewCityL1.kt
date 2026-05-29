@@ -28,7 +28,7 @@ object WordDataHebrewCityL1 {
         // ── Группа: улицы и пешеходные пути (5) ─────────────────────────
         WordEntity(
             id = 170501, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_streets_walks", transliteration = "rekhov",
+            pos = "noun", semanticGroup = "city_streets_walks",
             original = "רְחוֹב", translation = "улица",
             definition = "דֶּרֶךְ בָּעִיר עִם בָּתִּים מִשְּׁנֵי הַצְּדָדִים שֶׁבָּהּ הוֹלְכִים וְנוֹסְעִים.",
             definitionNative = "Городская дорога с домами по обе стороны, по которой ходят и ездят.",
@@ -37,7 +37,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170502L, 170503L, 170518L, 170525L)),
         WordEntity(
             id = 170502, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_streets_walks", transliteration = "tsomet",
+            pos = "noun", semanticGroup = "city_streets_walks",
             original = "צֹמֶת", translation = "перекрёсток",
             definition = "מָקוֹם שֶׁבּוֹ נִפְגָּשׁוֹת שְׁתֵּי דְּרָכִים אוֹ יוֹתֵר בָּעִיר.",
             definitionNative = "Место, где встречаются две или больше городских дорог.",
@@ -46,7 +46,7 @@ object WordDataHebrewCityL1 {
         ),
         WordEntity(
             id = 170503, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_streets_walks", transliteration = "midrakha",
+            pos = "noun", semanticGroup = "city_streets_walks",
             original = "מִדְרָכָה", translation = "тротуар",
             definition = "מָקוֹם צַר לְצַד הַכְּבִישׁ שֶׁבּוֹ הוֹלְכִים אֲנָשִׁים בְּרֶגֶל.",
             definitionNative = "Узкая полоса вдоль дороги, по которой идут пешеходом.",
@@ -55,7 +55,7 @@ object WordDataHebrewCityL1 {
         ),
         WordEntity(
             id = 170518, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_streets_walks", transliteration = "ma'avar khatsiya",
+            pos = "noun", semanticGroup = "city_streets_walks",
             original = "מַעֲבַר חֲצִיָּה", translation = "пешеходный переход",
             definition = "פַּסִּים לְבָנִים עַל הַכְּבִישׁ שֶׁבָּהֶם הוֹלְכִים בְּרֶגֶל מִצַּד אֶל צַד.",
             definitionNative = "Белые полосы на дороге, по которым переходят пешком на другую сторону.",
@@ -64,7 +64,7 @@ object WordDataHebrewCityL1 {
         ),
         WordEntity(
             id = 170525, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_streets_walks", transliteration = "bulvar",
+            pos = "noun", semanticGroup = "city_streets_walks",
             original = "בּוּלְוַאר", translation = "бульвар",
             definition = "רְחוֹב רָחָב עִם עֵצִים וְסַפְסָלִים שֶׁבּוֹ נֶחְמָד לְטַיֵּל.",
             definitionNative = "Широкая улица с деревьями и скамейками — приятно гулять.",
@@ -75,7 +75,7 @@ object WordDataHebrewCityL1 {
         // ── Группа: городской транспорт (5) ──────────────────────────────
         WordEntity(
             id = 170504, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_transport", transliteration = "otobus",
+            pos = "noun", semanticGroup = "city_transport",
             original = "אוֹטוֹבּוּס", translation = "автобус",
             definition = "כְּלִי תַּחְבּוּרָה גָּדוֹל שֶׁמַּסִּיעַ הַרְבֵּה אֲנָשִׁים בָּעִיר.",
             definitionNative = "Большой транспорт, который везёт много людей по городу.",
@@ -84,7 +84,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170505L, 170506L, 170519L, 170520L)),
         WordEntity(
             id = 170505, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_transport", transliteration = "monit",
+            pos = "noun", semanticGroup = "city_transport",
             original = "מוֹנִית", translation = "такси",
             definition = "מְכוֹנִית עִם נֶהָג שֶׁאוֹתָהּ מַזְמִינִים תְּמוּרַת תַּשְׁלוּם.",
             definitionNative = "Машина с водителем, которую заказывают за плату.",
@@ -93,7 +93,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170504L, 170506L, 170519L)),
         WordEntity(
             id = 170506, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_transport", transliteration = "ofanayim",
+            pos = "noun", semanticGroup = "city_transport",
             original = "אוֹפַנַּיִם", translation = "велосипед",
             definition = "כְּלִי רֶכֶב קָטָן עִם שְׁנֵי גַּלְגַּלִּים שֶׁמֵּנִיעִים בְּרַגְלַיִם.",
             definitionNative = "Маленькое средство с двумя колёсами, на котором едут крутя педали ногами.",
@@ -102,7 +102,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170504L, 170505L, 170519L, 170520L)),
         WordEntity(
             id = 170519, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_transport", transliteration = "ofanoa",
+            pos = "noun", semanticGroup = "city_transport",
             original = "אוֹפַנּוֹעַ", translation = "мотоцикл",
             definition = "רֶכֶב קָטָן עִם שְׁנֵי גַּלְגַּלִּים וּמָנוֹעַ חָזָק לַנְּסִיעוֹת מְהִירוֹת.",
             definitionNative = "Маленький транспорт на двух колёсах с мощным мотором — для быстрой езды.",
@@ -111,7 +111,7 @@ object WordDataHebrewCityL1 {
         ),
         WordEntity(
             id = 170520, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_transport", transliteration = "rakevet",
+            pos = "noun", semanticGroup = "city_transport",
             original = "רַכֶּבֶת", translation = "поезд",
             definition = "תַּחְבּוּרָה גְּדוֹלָה עַל פַּסִּים שֶׁעוֹבֶרֶת בֵּין עָרִים בִּמְהִירוּת.",
             definitionNative = "Большой транспорт на рельсах, что быстро ходит между городами.",
@@ -122,7 +122,7 @@ object WordDataHebrewCityL1 {
         // ── Группа: дороги и точки сообщения (3) ─────────────────────────
         WordEntity(
             id = 170507, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_roads", transliteration = "kvish",
+            pos = "noun", semanticGroup = "city_roads",
             original = "כְּבִישׁ", translation = "дорога",
             definition = "נְתִיב מְזוּפָּת שֶׁעָלָיו נוֹסְעוֹת מְכוֹנִיּוֹת וְאוֹטוֹבּוּסִים.",
             definitionNative = "Асфальтированный путь, по которому ездят машины и автобусы.",
@@ -131,7 +131,7 @@ object WordDataHebrewCityL1 {
         ),
         WordEntity(
             id = 170508, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_roads", transliteration = "gesher",
+            pos = "noun", semanticGroup = "city_roads",
             original = "גֶּשֶׁר", translation = "мост",
             definition = "מִבְנֶה שֶׁמְּחַבֵּר שְׁנֵי צְדָדִים מֵעַל נָהָר אוֹ כְּבִישׁ.",
             definitionNative = "Сооружение, что соединяет два берега над рекой или дорогой.",
@@ -140,7 +140,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170507L, 170509L)),
         WordEntity(
             id = 170509, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_roads", transliteration = "takhana",
+            pos = "noun", semanticGroup = "city_roads",
             original = "תַּחֲנָה", translation = "остановка",
             definition = "מָקוֹם בָּרְחוֹב שֶׁבּוֹ עוֹצֵר אוֹטוֹבּוּס וְאֲנָשִׁים עוֹלִים אוֹ יוֹרְדִים.",
             definitionNative = "Место на улице, где останавливается автобус и люди заходят или выходят.",
@@ -151,7 +151,7 @@ object WordDataHebrewCityL1 {
         // ── Группа: магазины и общепит (4) ───────────────────────────────
         WordEntity(
             id = 170510, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_shops", transliteration = "khanut",
+            pos = "noun", semanticGroup = "city_shops",
             original = "חֲנוּת", translation = "магазин",
             definition = "מָקוֹם קָטָן שֶׁבּוֹ קוֹנִים מוּצָרִים תְּמוּרַת כֶּסֶף.",
             definitionNative = "Небольшое заведение, где покупают товары за деньги.",
@@ -160,7 +160,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170511L, 170512L, 170513L)),
         WordEntity(
             id = 170511, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_shops", transliteration = "beit mirkakhat",
+            pos = "noun", semanticGroup = "city_shops",
             original = "בֵּית מִרְקָחַת", translation = "аптека",
             definition = "מָקוֹם בָּעִיר שֶׁבּוֹ קוֹנִים תְּרוּפוֹת לְפִי מִרְשָׁם הָרוֹפֵא.",
             definitionNative = "Заведение в городе, где покупают лекарства по рецепту врача.",
@@ -169,7 +169,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170510L, 170512L, 170513L)),
         WordEntity(
             id = 170512, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_shops", transliteration = "shuk",
+            pos = "noun", semanticGroup = "city_shops",
             original = "שׁוּק", translation = "рынок",
             definition = "מָקוֹם פָּתוּחַ עִם הַרְבֵּה דּוּכָנִים לְמִכְרֵי יְרָקוֹת וּפֵרוֹת.",
             definitionNative = "Открытое место с прилавками, где продают овощи и фрукты.",
@@ -178,7 +178,7 @@ object WordDataHebrewCityL1 {
         ),
         WordEntity(
             id = 170513, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_shops", transliteration = "mis'ada",
+            pos = "noun", semanticGroup = "city_shops",
             original = "מִסְעָדָה", translation = "ресторан",
             definition = "מָקוֹם בָּעִיר שֶׁבּוֹ אוֹכְלִים אֲרוּחָה מוּכָנָה וּמְשַׁלְּמִים.",
             definitionNative = "Заведение в городе, где едят готовое блюдо и платят за него.",
@@ -189,7 +189,7 @@ object WordDataHebrewCityL1 {
         // ── Группа: общественные здания (4) ──────────────────────────────
         WordEntity(
             id = 170514, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_buildings", transliteration = "binyan",
+            pos = "noun", semanticGroup = "city_buildings",
             original = "בִּנְיָן", translation = "здание",
             definition = "מִבְנֶה גָּבוֹהַּ עִם קוֹמוֹת וַחֲדָרִים שֶׁבּוֹ גָּרִים אוֹ עוֹבְדִים.",
             definitionNative = "Высокое сооружение с этажами и комнатами — там живут или работают.",
@@ -198,7 +198,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170521L, 170522L, 170523L)),
         WordEntity(
             id = 170521, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_buildings", transliteration = "moadon",
+            pos = "noun", semanticGroup = "city_buildings",
             original = "מוֹעֲדוֹן", translation = "клуб",
             definition = "מָקוֹם שֶׁבּוֹ אֲנָשִׁים נִפְגָּשִׁים לְשֵׁם בִּלּוּי, רִקּוּד אוֹ הַרְצָאָה.",
             definitionNative = "Место, где люди встречаются для отдыха, танцев или лекции.",
@@ -207,7 +207,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170514L, 170522L, 170523L)),
         WordEntity(
             id = 170522, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_buildings", transliteration = "knesiya",
+            pos = "noun", semanticGroup = "city_buildings",
             original = "כְּנֵסִיָּה", translation = "церковь",
             definition = "בִּנְיָן דָּתִי שֶׁבּוֹ נוֹצְרִים מִתְפַּלְלִים וּמַקְשִׁיבִים לִדְרָשָׁה.",
             definitionNative = "Религиозное здание, где христиане молятся и слушают проповедь.",
@@ -216,7 +216,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170514L, 170521L, 170523L)),
         WordEntity(
             id = 170523, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_buildings", transliteration = "snif",
+            pos = "noun", semanticGroup = "city_buildings",
             original = "סְנִיף", translation = "отделение",
             definition = "מִשְׂרָד קָטָן שֶׁל בַּנְק אוֹ דֹּאַר בְּשְׁכוּנָה אוֹ בָּרְחוֹב.",
             definitionNative = "Маленькая контора банка или почты в районе или на улице.",
@@ -227,7 +227,7 @@ object WordDataHebrewCityL1 {
         // ── Группа: уличные объекты (4) ──────────────────────────────────
         WordEntity(
             id = 170515, setId = 1705, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "city_outdoor_objects", transliteration = "safsal",
+            pos = "noun", semanticGroup = "city_outdoor_objects",
             original = "סַפְסָל", translation = "скамейка",
             definition = "מוֹשָׁב אָרוֹךְ עָשׂוּי עֵץ אוֹ מַתֶּכֶת לִישִׁיבָה בָּרְחוֹב.",
             definitionNative = "Длинное сиденье из дерева или металла — посидеть на улице.",
@@ -236,7 +236,7 @@ object WordDataHebrewCityL1 {
         ),
         WordEntity(
             id = 170516, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_outdoor_objects", transliteration = "shelet",
+            pos = "noun", semanticGroup = "city_outdoor_objects",
             original = "שֶׁלֶט", translation = "знак",
             definition = "לוּחַ קָטָן עִם מִלִּים אוֹ צוּרוֹת שֶׁמַּסְבִּיר אוֹ מַזְהִיר בָּרְחוֹב.",
             definitionNative = "Небольшая табличка со словами или рисунком — что-то поясняет на улице.",
@@ -245,7 +245,7 @@ object WordDataHebrewCityL1 {
         ),
         WordEntity(
             id = 170517, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_outdoor_objects", transliteration = "pakh",
+            pos = "noun", semanticGroup = "city_outdoor_objects",
             original = "פַּח", translation = "мусорный бак",
             definition = "כְּלִי גָּדוֹל בָּרְחוֹב שֶׁאֵלָיו זוֹרְקִים לִכְלוּךְ וְאַשְׁפָּה.",
             definitionNative = "Большой контейнер на улице, куда выкидывают грязь и мусор.",
@@ -254,7 +254,7 @@ object WordDataHebrewCityL1 {
          fillInBlankExclusions = listOf(170515L, 170516L, 170524L)),
         WordEntity(
             id = 170524, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "city_outdoor_objects", transliteration = "mazraka",
+            pos = "noun", semanticGroup = "city_outdoor_objects",
             original = "מַזְרָקָה", translation = "фонтан",
             definition = "מִתְקָן שֶׁבּוֹ מַיִם קוֹפְצִים לַאֲוִיר לְקִשּׁוּט הַכִּכָּר.",
             definitionNative = "Сооружение, где вода взлетает струями вверх — украшает площадь.",

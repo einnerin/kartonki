@@ -45,7 +45,7 @@ object WordDataHebrewWaiterL4 {
         // ── waiter_wine_pro (5) — винная карта и подача вина ──
         WordEntity(
             id = 172001, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "waiter_wine_pro", transliteration = "dekanter",
+            pos = "noun", semanticGroup = "waiter_wine_pro",
             original = "דֵּיקַנְטֵר", translation = "декантер",
             definition = "כְּלִי זְכוּכִית רָחָב שֶׁבּוֹ מַעֲבִירִים אֶת הַמַּשְׁקֶה הָאָדֹם לְאִוְרוּר.",
             definitionNative = "Широкий стеклянный сосуд, куда переливают красное вино для аэрации.",
@@ -54,7 +54,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172002L, 172003L, 172004L, 172005L)),
         WordEntity(
             id = 172002, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "waiter_wine_pro", transliteration = "vintage",
+            pos = "noun", semanticGroup = "waiter_wine_pro",
             original = "וִינְטָאז'", translation = "винтаж, год урожая вина",
             definition = "שָׁנָה שֶׁבָּהּ נֶאֱסַף הָעֵנָב — מְצוּיֶּנֶת עַל הַתָּו וּמַשְׁפִּיעָה עַל אֵיכוּת.",
             definitionNative = "Год сбора винограда — пишется на этикетке и влияет на качество напитка.",
@@ -63,7 +63,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172001L, 172003L, 172004L, 172005L)),
         WordEntity(
             id = 172003, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_wine_pro", transliteration = "temperaturat hagasha",
+            pos = "phrase", semanticGroup = "waiter_wine_pro",
             original = "טַמְפֵּרָטוּרַת הַגָּשָׁה", translation = "температура подачи (вина)",
             definition = "מִדַּת הַחֹם הַמֻּמְלֶצֶת לִכְלוֹל בָּהּ מַשְׁקֶה כְּדֵי לְהַבְלִיט אֶת הַטַּעַם.",
             definitionNative = "Рекомендуемый градус напитка, при котором его вкус раскрывается лучше всего.",
@@ -72,7 +72,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172001L, 172002L, 172004L, 172005L)),
         WordEntity(
             id = 172004, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_wine_pro", transliteration = "bdikat pkak",
+            pos = "phrase", semanticGroup = "waiter_wine_pro",
             original = "בְּדִיקַת פְּקָק", translation = "проверка пробки на дефекты",
             definition = "הַבְחָנָה בְּרֵיחַ הַמַּגְנֵטָה כְּדֵי לְוַדֵּא שֶׁהַמַּשְׁקֶה לֹא הִתְקַלְקֵל.",
             definitionNative = "Проверка корка по запаху, чтобы убедиться: напиток не испорчен.",
@@ -81,7 +81,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172001L, 172002L, 172003L, 172005L)),
         WordEntity(
             id = 172005, setId = 1720, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "waiter_wine_pro", transliteration = "mezigat someliyer",
+            pos = "phrase", semanticGroup = "waiter_wine_pro",
             original = "מְזִיגַת סוֹמֵלְיֶר", translation = "профессиональное наливание сомелье",
             definition = "טֶכְנִיקָה מְדֻיֶּקֶת שֶׁל יְצִיקַת מַשְׁקֶה בְּזָוִית קְבוּעָה וּבְקֶצֶב מְבֻקָּר.",
             definitionNative = "Точная техника подачи напитка под фиксированным углом и в выверенном темпе.",
@@ -92,7 +92,7 @@ object WordDataHebrewWaiterL4 {
         // ── waiter_service_finesse (5) — тонкости сервиса ──
         WordEntity(
             id = 172006, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_service_finesse", transliteration = "hagasha sinkhronit",
+            pos = "phrase", semanticGroup = "waiter_service_finesse",
             original = "הַגָּשָׁה סִינְכְרוֹנִית", translation = "синхронная подача блюд",
             definition = "כָּל הַצַּלָּחוֹת מַגִּיעוֹת לַשֻּׁלְחָן בְּאוֹתוֹ רֶגַע — מֻנָּחוֹת בְּיַחַד.",
             definitionNative = "Все тарелки приходят на стол в один и тот же момент — ставят их вместе.",
@@ -101,7 +101,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172007L, 172008L, 172009L, 172010L)),
         WordEntity(
             id = 172007, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_service_finesse", transliteration = "ketsev hagasha",
+            pos = "phrase", semanticGroup = "waiter_service_finesse",
             original = "קֶצֶב הַגָּשָׁה", translation = "темп подачи блюд",
             definition = "הַזְּמַן בֵּין מָנָה לְמָנָה — לֹא מָהִיר מִדַּי וְלֹא אִטִּי שֶׁמַּרְגִּיז.",
             definitionNative = "Промежутки между блюдами — не слишком быстрые и не настолько долгие, что раздражают.",
@@ -110,7 +110,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172006L, 172008L, 172009L, 172010L)),
         WordEntity(
             id = 172008, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_service_finesse", transliteration = "pinui hashulkhan",
+            pos = "phrase", semanticGroup = "waiter_service_finesse",
             original = "פִּינּוּי הַשֻּׁלְחָן", translation = "расчистка стола между блюдами",
             definition = "אִסּוּף שָׁקֵט שֶׁל צַלָּחוֹת רֵיקוֹת וּמַפִּיּוֹת לִפְנֵי הַמָּנָה הַבָּאָה.",
             definitionNative = "Тихий сбор пустых тарелок и салфеток, прежде чем выйдет следующая перемена.",
@@ -119,7 +119,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172006L, 172007L, 172009L, 172010L)),
         WordEntity(
             id = 172009, setId = 1720, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "waiter_service_finesse", transliteration = "tfisat siniya",
+            pos = "phrase", semanticGroup = "waiter_service_finesse",
             original = "תְּפִיסַת סִינִיָּה", translation = "техника удержания подноса",
             definition = "אֲחִיזָה יַצִּיבָה עַל הַיָּד הַשְּׂמָאלִית שֶׁמַּשְׁאִירָה אֶת הַיְּמָנִית פְּנוּיָה.",
             definitionNative = "Стабильный хват на левой руке, оставляющий правую свободной для подачи.",
@@ -128,7 +128,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172006L, 172007L, 172008L, 172010L)),
         WordEntity(
             id = 172010, setId = 1720, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "waiter_service_finesse", transliteration = "hastarat tav",
+            pos = "phrase", semanticGroup = "waiter_service_finesse",
             original = "הַסְתָּרַת תָּו", translation = "сокрытие ценника при подаче",
             definition = "הַגָּשַׁת בַּקְבּוּק כָּךְ שֶׁהַמְּחִיר אֵינוֹ נֶחְשָׂף לִשְׁאָר הַסּוֹעֲדִים.",
             definitionNative = "Подача бутылки так, чтобы цена не показывалась остальным сидящим за столом.",
@@ -139,7 +139,7 @@ object WordDataHebrewWaiterL4 {
         // ── waiter_difficult_guests (5) — работа с проблемными гостями ──
         WordEntity(
             id = 172011, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_difficult_guests", transliteration = "tluna kharifa",
+            pos = "phrase", semanticGroup = "waiter_difficult_guests",
             original = "תְּלוּנָה חֲרִיפָה", translation = "острая жалоба",
             definition = "אִי-שְׂבִיעוּת רָצוֹן חָזָקָה מְאוֹד שֶׁדּוֹרֶשֶׁת תְּגוּבָה מִיָּדִית מֵהַצֶּוֶת.",
             definitionNative = "Очень сильное недовольство, требующее немедленной реакции от персонала.",
@@ -148,7 +148,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172012L, 172013L, 172014L, 172015L)),
         WordEntity(
             id = 172012, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_difficult_guests", transliteration = "ir'ur al kheshbon",
+            pos = "phrase", semanticGroup = "waiter_difficult_guests",
             original = "עִרְעוּר עַל חֶשְׁבּוֹן", translation = "оспаривание счёта",
             definition = "מַחְלוֹקֶת עַל סְכוּם הַתַּשְׁלוּם — לָקוֹחַ טוֹעֵן שֶׁמַשֶּׁהוּ נֶחְשָׁב לֹא נָכוֹן.",
             definitionNative = "Спор о сумме в чеке — гость утверждает, что что-то посчитали неверно.",
@@ -157,7 +157,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172011L, 172013L, 172014L, 172015L)),
         WordEntity(
             id = 172013, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_difficult_guests", transliteration = "i-haga'a",
+            pos = "phrase", semanticGroup = "waiter_difficult_guests",
             original = "אִי-הַגָּעָה", translation = "неявка по брони (no-show)",
             definition = "מַצָּב שֶׁבּוֹ הָאוֹרֵחַ הִזְמִין שֻׁלְחָן וְלֹא הוֹפִיעַ וְלֹא בִּטֵּל.",
             definitionNative = "Когда гость зарезервировал столик, но не пришёл и не отменил заранее.",
@@ -166,7 +166,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172011L, 172012L, 172014L, 172015L)),
         WordEntity(
             id = 172014, setId = 1720, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "waiter_difficult_guests", transliteration = "pitsui lako'akh",
+            pos = "phrase", semanticGroup = "waiter_difficult_guests",
             original = "פִּצּוּי לָקוֹחַ", translation = "компенсация недовольному гостю",
             definition = "מַתָּן שֵׁרוּת אוֹ מָנָה בְּחִנָּם כְּדֵי לְפַיֵּס מִישֶׁהוּ שֶׁנִּפְגַּע מֵהָעַסֵּק.",
             definitionNative = "Услуга или блюдо за счёт заведения, чтобы загладить впечатление у обиженного.",
@@ -175,7 +175,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172011L, 172012L, 172013L, 172015L)),
         WordEntity(
             id = 172015, setId = 1720, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "waiter_difficult_guests", transliteration = "ta'ana legitimit",
+            pos = "phrase", semanticGroup = "waiter_difficult_guests",
             original = "טַעֲנָה לְגִיטִימִית", translation = "обоснованная претензия",
             definition = "טִעוּן שֶׁל הָאוֹרֵחַ שֶׁבּוֹ צוֹדְקִים — מַשֶּׁהוּ אֵכָן הָיָה לֹא בְּסֵדֶר.",
             definitionNative = "Аргумент гостя, в котором он действительно прав — что-то и впрямь было плохо.",
@@ -186,7 +186,7 @@ object WordDataHebrewWaiterL4 {
         // ── waiter_banquet_pro (5) — банкетное обслуживание ──
         WordEntity(
             id = 172016, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_banquet_pro", transliteration = "tafrit sagur",
+            pos = "phrase", semanticGroup = "waiter_banquet_pro",
             original = "תַּפְרִיט סְגוּר", translation = "фиксированное меню банкета",
             definition = "רְשִׁימַת מָנוֹת קְבוּעָה לְכָל הַסּוֹעֲדִים — בְּלִי בְּחִירָה אִישִׁית.",
             definitionNative = "Заданный набор блюд на всех — без индивидуального выбора по карточке.",
@@ -195,7 +195,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172017L, 172018L, 172019L, 172020L)),
         WordEntity(
             id = 172017, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_banquet_pro", transliteration = "svav hagasha",
+            pos = "phrase", semanticGroup = "waiter_banquet_pro",
             original = "סְבַב הַגָּשָׁה", translation = "круг подачи (по столам)",
             definition = "מַסְלוּל קָבוּעַ שֶׁבּוֹ הַצֶּוֶת מְחַלֵּק אוֹתָהּ הַמָּנָה לְכָל הַסּוֹעֲדִים.",
             definitionNative = "Заданный маршрут, по которому бригада разносит одну и ту же перемену всем.",
@@ -204,7 +204,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172016L, 172018L, 172019L, 172020L)),
         WordEntity(
             id = 172018, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_banquet_pro", transliteration = "pre-pleyting",
+            pos = "phrase", semanticGroup = "waiter_banquet_pro",
             original = "פְּרֵה-פְּלֵיטִינְג", translation = "пред-сервировка тарелок",
             definition = "סִדּוּר אוֹכֶל עַל צַלָּחוֹת בַּמִּטְבָּח עוֹד לִפְנֵי שֶׁהָאוֹרְחִים יוֹשְׁבִים.",
             definitionNative = "Раскладывание еды по тарелкам на кухне ещё до того, как гости садятся за стол.",
@@ -213,7 +213,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172016L, 172017L, 172019L, 172020L)),
         WordEntity(
             id = 172019, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_banquet_pro", transliteration = "aspakat petit-four",
+            pos = "phrase", semanticGroup = "waiter_banquet_pro",
             original = "אַסְפָּקַת פֶּטִיט-פוּר", translation = "разнос мини-десертов",
             definition = "סִבּוּב אַחֲרוֹן עִם מִתוֹקִים זְעִירִים — לַפֶּה שֶׁמְּחַכֶּה לַקָּפֶה.",
             definitionNative = "Финальный обход с миниатюрными сладостями — к кофе после основного.",
@@ -222,7 +222,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172016L, 172017L, 172018L, 172020L)),
         WordEntity(
             id = 172020, setId = 1720, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "waiter_banquet_pro", transliteration = "prisat mezalgot",
+            pos = "phrase", semanticGroup = "waiter_banquet_pro",
             original = "פְּרִיסַת מְזַלְּגוֹת", translation = "раскладка приборов перед банкетом",
             definition = "סִדּוּר מְדֻיָּק שֶׁל סַכּוּ״ם בַּשֻּׁלְחָן לְפִי סֵדֶר הַמָּנוֹת הַצָּפוּי.",
             definitionNative = "Точная расстановка приборов на столе по порядку будущих перемен.",
@@ -233,7 +233,7 @@ object WordDataHebrewWaiterL4 {
         // ── waiter_premium_etiquette (5) — этикет премиум-ресторана ──
         WordEntity(
             id = 172021, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_premium_etiquette", transliteration = "birkat kabalat panim",
+            pos = "phrase", semanticGroup = "waiter_premium_etiquette",
             original = "בִּרְכַּת קַבָּלַת פָּנִים", translation = "приветствие гостей при входе",
             definition = "מִלִּים קָצָרוֹת וְחִיּוּךְ שֶׁמְּקַדְּמִים בָּהֶם אֶת הַבָּאִים בַּפֶּתַח.",
             definitionNative = "Короткие слова и улыбка, которыми встречают входящих в зале у двери.",
@@ -242,7 +242,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172022L, 172023L, 172024L, 172025L)),
         WordEntity(
             id = 172022, setId = 1720, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "waiter_premium_etiquette", transliteration = "birkat preda",
+            pos = "phrase", semanticGroup = "waiter_premium_etiquette",
             original = "בִּרְכַּת פְּרֵדָה", translation = "прощание с уходящими гостями",
             definition = "מִלִּים אֲדִיבוֹת בַּדֶּלֶת בְּסוֹף הָאֵירוּחַ — הַזְמָנָה לַחֲזֹר.",
             definitionNative = "Учтивые слова на выходе в конце визита — приглашение прийти ещё.",
@@ -251,7 +251,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172021L, 172023L, 172024L, 172025L)),
         WordEntity(
             id = 172023, setId = 1720, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "waiter_premium_etiquette", transliteration = "merkhak miktso'i",
+            pos = "phrase", semanticGroup = "waiter_premium_etiquette",
             original = "מֶרְחָק מְקֻצָּעִי", translation = "профессиональная дистанция с гостем",
             definition = "אִזּוּן בֵּין נִעוּמָה אֲדִיבָה לְבֵין סְפֵרָה אִישִׁית שֶׁל הַסּוֹעֵד.",
             definitionNative = "Баланс между приветливостью и личным пространством сидящего за столом.",
@@ -260,7 +260,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172021L, 172022L, 172024L, 172025L)),
         WordEntity(
             id = 172024, setId = 1720, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "waiter_premium_etiquette", transliteration = "pe'ulot bediskretsia",
+            pos = "phrase", semanticGroup = "waiter_premium_etiquette",
             original = "פָּעוֹלוֹת בְּדִיסְקְרֶצְיָה", translation = "действия с тактом, незаметно",
             definition = "פְּעֻלּוֹת קְטַנּוֹת שֶׁל הַצֶּוֶת שֶׁנַּעֲשׂוֹת בְּלִי לִמְשֹׁךְ תְּשׂוּמַת לֵב.",
             definitionNative = "Маленькие действия персонала, выполняемые так, чтобы их не замечали.",
@@ -269,7 +269,7 @@ object WordDataHebrewWaiterL4 {
             fillInBlankExclusions = listOf(172021L, 172022L, 172023L, 172025L)),
         WordEntity(
             id = 172025, setId = 1720, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "waiter_premium_etiquette", transliteration = "te'ima rishmit",
+            pos = "phrase", semanticGroup = "waiter_premium_etiquette",
             original = "טָעִימָה רִשְׁמִית", translation = "формальная дегустация (для одобрения)",
             definition = "טֶקֶס קָצָר שֶׁבּוֹ הָאוֹרֵחַ טוֹעֵם וּמְאַשֵּׁר אֶת הַבַּקְבּוּק לִפְנֵי הַמְּזִיגָה לְכֻלָּם.",
             definitionNative = "Краткий ритуал, в котором гость пробует и одобряет напиток до общего разлива.",

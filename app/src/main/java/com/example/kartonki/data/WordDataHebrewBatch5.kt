@@ -26,7 +26,7 @@ object WordDataHebrewBatch5 {
 
         WordEntity(
             id = 103801, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "beach_basics", transliteration = "galim",
+            pos = "noun", semanticGroup = "beach_basics",
             original = "גַּלִּים", translation = "волны",
             definition = "תְּנוּעַת מַיִם עַל פְּנֵי הַיָּם הַנּוֹצֶרֶת מֵרוּחַ.",
             definitionNative = "Колебание воды на поверхности моря, вызванное ветром.",
@@ -35,7 +35,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103802L, 103803L, 103806L, 103807L, 103809L)),
         WordEntity(
             id = 103802, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "beach_basics", transliteration = "matzil",
+            pos = "noun", semanticGroup = "beach_basics",
             original = "מַצִּיל", translation = "спасатель (на пляже)",
             definition = "אָדָם הַאַחְרָאִי לְבִטְחוֹן הַמִּתְרַחֲצִים בַּחוֹף.",
             definitionNative = "Человек, ответственный за безопасность купающихся на пляже.",
@@ -43,7 +43,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "מַצִּיל прыгнул в море, чтобы спасти ребёнка."),
         WordEntity(
             id = 103803, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "beach_basics", transliteration = "sira",
+            pos = "noun", semanticGroup = "beach_basics",
             original = "סִירָה", translation = "лодка, суднышко",
             definition = "כְּלִי שַׁיִּט קָטָן הַמֻּנָּע בְּמָשׁוֹטִים אוֹ מָנוֹעַ.",
             definitionNative = "Маленькое плавсредство, приводимое в движение вёслами или мотором.",
@@ -52,7 +52,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103801L, 103802L, 103806L, 103807L, 103809L, 103810L)),
         WordEntity(
             id = 103804, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "beach_activities", transliteration = "skhiya",
+            pos = "noun", semanticGroup = "beach_activities",
             original = "שְׂחִיָּה", translation = "плавание",
             definition = "פְּעֻלַּת תְּנוּעָה בְּמַיִם בְּאֶמְצָעוּת תְּנוּעוֹת הַגּוּף.",
             definitionNative = "Передвижение в воде с помощью движений тела.",
@@ -61,7 +61,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103808L, 103810L, 103811L, 103816L)),
         WordEntity(
             id = 103805, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "beach_activities", transliteration = "liskhot",
+            pos = "verb", semanticGroup = "beach_activities",
             original = "לִשְׂחוֹת", translation = "плавать",
             definition = "לָנוּעַ בְּתוֹךְ הַמַּיִם בְּאֶמְצָעוּת תְּנוּעוֹת הַגּוּף.",
             definitionNative = "Двигаться в воде с помощью движений тела.",
@@ -70,7 +70,7 @@ object WordDataHebrewBatch5 {
         ),
         WordEntity(
             id = 103806, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "beach_basics", transliteration = "tzel",
+            pos = "noun", semanticGroup = "beach_basics",
             original = "צֵל", translation = "тень, тенёк",
             definition = "אֵזוֹר מוּגָן מֵאוֹר הַשֶּׁמֶשׁ עַל יְדֵי עֵץ אוֹ שְׁמִשִׁיָּה.",
             definitionNative = "Место, защищённое от солнечных лучей деревом или зонтиком.",
@@ -78,7 +78,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Мы сели в צֵל, чтобы спастись от жары."),
         WordEntity(
             id = 103807, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "beach_basics", transliteration = "krem shemesh",
+            pos = "noun", semanticGroup = "beach_basics",
             original = "קֶרֶם שֶׁמֶשׁ", translation = "солнцезащитный крем",
             definition = "תָּכְשִׁיר הַמּוֹרָח עַל הָעוֹר לְהַגָנָה מִקְּרִינַת הַשֶּׁמֶשׁ.",
             definitionNative = "Крем, наносимый на кожу для защиты от солнечного излучения.",
@@ -87,7 +87,7 @@ object WordDataHebrewBatch5 {
         ),
         WordEntity(
             id = 103808, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "beach_activities", transliteration = "kadur yam",
+            pos = "noun", semanticGroup = "beach_activities",
             original = "כַּדּוּר יָם", translation = "надувной мяч (пляжный)",
             definition = "כַּדּוּר גָּדוֹל מְנֻפָּח לְמִשְׂחָקִים בַּחוֹף אוֹ בַּבְּרֵכָה.",
             definitionNative = "Большой яркий мяч с воздухом внутри — для игр на пляже или в бассейне.",
@@ -95,7 +95,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Дети играли с כַּדּוּר יָם весь день."),
         WordEntity(
             id = 103809, setId = 1038, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "beach_basics", transliteration = "avanim",
+            pos = "noun", semanticGroup = "beach_basics",
             original = "אֲבָנִים", translation = "камни (на берегу)",
             definition = "גּוּשֵׁי סֶלַע קְטַנִּים הַנִּמְצָאִים בְּחוֹף הַיָּם.",
             definitionNative = "Небольшие куски камня, встречающиеся на морском берегу.",
@@ -104,7 +104,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103801L, 103802L, 103803L, 103806L, 103807L)),
         WordEntity(
             id = 103810, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_activities", transliteration = "kayak",
+            pos = "noun", semanticGroup = "beach_activities",
             original = "קַיָּק", translation = "каяк",
             definition = "סִירָה צָרָה הַמֻּנָּעַת בְּמָשׁוֹט כָּפוּל.",
             definitionNative = "Узкое судно, приводимое в движение двусторонним веслом.",
@@ -113,7 +113,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103803L, 103804L, 103808L, 103811L, 103816L)),
         WordEntity(
             id = 103811, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_activities", transliteration = "glisha",
+            pos = "noun", semanticGroup = "beach_activities",
             original = "גְּלִישָׁה", translation = "сёрфинг",
             definition = "עֲלִיָּה עַל גַּלֵּי הַיָּם בְּאֶמְצָעוּת קֶרֶשׁ מְיוּחָד.",
             definitionNative = "Катание на морских волнах с помощью доски для сёрфинга.",
@@ -122,7 +122,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103804L, 103808L, 103810L, 103816L)),
         WordEntity(
             id = 103812, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_nature", transliteration = "sarafad",
+            pos = "noun", semanticGroup = "beach_nature",
             original = "סְרָפָד", translation = "медуза",
             definition = "יְצוּר יָמִי שְׁקוּף עִם זְרוֹעוֹת מְגָרוֹת הַגּוֹרְמוֹת כְּאֵב.",
             definitionNative = "Прозрачное морское существо с щупальцами, вызывающими жжение.",
@@ -131,7 +131,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103813L, 103815L, 103820L, 103821L, 103823L, 103824L)),
         WordEntity(
             id = 103813, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_nature", transliteration = "krish",
+            pos = "noun", semanticGroup = "beach_nature",
             original = "כְּרִישׁ", translation = "акула",
             definition = "דָּג טוֹרֵף גָּדוֹל עִם שִׁנַּיִם חַדּוֹת הַחַי בְּיַמּוֹת.",
             definitionNative = "Крупная хищная рыба с острыми зубами, обитающая в морях.",
@@ -140,7 +140,7 @@ object WordDataHebrewBatch5 {
         ),
         WordEntity(
             id = 103814, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_equipment", transliteration = "snorkel",
+            pos = "noun", semanticGroup = "beach_equipment",
             original = "שְׁנוֹרְקֶל", translation = "трубка для дыхания (снорклинг)",
             definition = "צִינּוֹר נְשִׁימָה הַמַּאֲפִשֵׁר לִנְשׁוֹם כְּשֶׁהַפָּנִים בְּתוֹךְ הַמַּיִם.",
             definitionNative = "Дыхательная трубка, позволяющая дышать с лицом под водой.",
@@ -149,7 +149,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103817L, 103818L, 103819L, 103822L, 103825L)),
         WordEntity(
             id = 103815, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_nature", transliteration = "konkhiya",
+            pos = "noun", semanticGroup = "beach_nature",
             original = "קוֹנְכִיָּה", translation = "раковина (морская)",
             definition = "קְלִיפַּת שְׁבַּלּוּל הַיָּם הַנִּמְצֵאת עַל הַחוֹף.",
             definitionNative = "Твёрдая красивая оболочка морской улитки или моллюска, найденная на берегу.",
@@ -158,7 +158,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103812L, 103813L, 103820L, 103821L, 103823L, 103824L)),
         WordEntity(
             id = 103816, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_activities", transliteration = "shayit",
+            pos = "noun", semanticGroup = "beach_activities",
             original = "שַׁיִּט", translation = "плавание (на лодке), прогулка по воде",
             definition = "תְּנוּעָה עַל פְּנֵי הַמַּיִם בְּאֶמְצָעוּת סִירָה אוֹ אֳנִיָּה.",
             definitionNative = "Передвижение по воде на лодке или судне.",
@@ -167,7 +167,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103804L, 103808L, 103810L, 103811L)),
         WordEntity(
             id = 103817, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_equipment", transliteration = "kresh glisha",
+            pos = "noun", semanticGroup = "beach_equipment",
             original = "קְרֶשׁ גְּלִישָׁה", translation = "доска для сёрфинга",
             definition = "לוּחַ שָׁטוּחַ הַמְּשֻׁמָּשׁ לְגְּלִישָׁה עַל גַּלֵּי הַיָּם.",
             definitionNative = "Плоская доска, используемая для катания на морских волнах.",
@@ -176,7 +176,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103814L, 103818L, 103819L, 103822L, 103825L)),
         WordEntity(
             id = 103818, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_equipment", transliteration = "mifras",
+            pos = "noun", semanticGroup = "beach_equipment",
             original = "מִפְרָשׂ", translation = "парус",
             definition = "בַּד גָּדוֹל הַקּוֹלֵט רוּחַ לְהַנָּעַת סִירָה.",
             definitionNative = "Большое полотно, улавливающее ветер для движения лодки.",
@@ -184,7 +184,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Сильный ветер наполнил מִפְרָשׂ, и лодка ускорилась."),
         WordEntity(
             id = 103819, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_equipment", transliteration = "mashvot",
+            pos = "noun", semanticGroup = "beach_equipment",
             original = "מָשׁוֹט", translation = "весло",
             definition = "מַקֵּל שָׁטוּחַ בְּקָצֵהוּ לְהַנָּעַת סִירָה בְּמַיִם.",
             definitionNative = "Плоская на конце палка для движения лодки по воде.",
@@ -193,7 +193,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103814L, 103817L, 103818L, 103822L, 103825L)),
         WordEntity(
             id = 103820, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_nature", transliteration = "mezakh",
+            pos = "noun", semanticGroup = "beach_nature",
             original = "מֶזַח", translation = "пирс, причал",
             definition = "מִבְנֶה עֵץ אוֹ בֶּטוֹן הַמִּתְפַּשֵּׁט לְתוֹךְ הַיָּם לְעֲגִינַת סִירוֹת.",
             definitionNative = "Деревянная или бетонная конструкция, выдающаяся в море для швартовки лодок.",
@@ -201,7 +201,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Мы стояли на מֶזַח и смотрели в сторону горизонта."),
         WordEntity(
             id = 103821, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_nature", transliteration = "tmanun",
+            pos = "noun", semanticGroup = "beach_nature",
             original = "תְּמַנוּן", translation = "осьминог",
             definition = "יְצוּר יָמִי עִם שְׁמוֹנָה זְרוֹעוֹת הַחַי בַּיָּם.",
             definitionNative = "Морское существо с восемью щупальцами, обитающее в море.",
@@ -210,7 +210,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103812L, 103813L, 103815L, 103820L, 103823L, 103824L)),
         WordEntity(
             id = 103822, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_equipment", transliteration = "mashkefei skhiya",
+            pos = "noun", semanticGroup = "beach_equipment",
             original = "מַשְׁקֵפִי שְׂחִיָּה", translation = "очки для плавания",
             definition = "מִשְׁקָפַיִם אֲטוּמִים לְמַיִם לְהַגָּנָה עַל הָעֵינַיִם בְּזְמַן שְׂחִיָּה.",
             definitionNative = "Водонепроницаемые очки для защиты глаз во время плавания.",
@@ -219,7 +219,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103814L, 103817L, 103818L, 103819L, 103825L)),
         WordEntity(
             id = 103823, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "beach_nature", transliteration = "kokhav yam",
+            pos = "phrase", semanticGroup = "beach_nature",
             original = "כּוֹכַב יָם", translation = "морская звезда",
             definition = "יְצוּר מֵימִי עִם חָמֵשׁ זְרוֹעוֹת שֶׁמִּתְפַּשֵּׁט עַל סְלָעִים וְחוֹל.",
             definitionNative = "Водное существо с пятью лучами, что распластано на камнях и песке.",
@@ -228,7 +228,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103812L, 103813L, 103815L, 103820L, 103821L, 103824L)),
         WordEntity(
             id = 103824, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_nature", transliteration = "shunit",
+            pos = "noun", semanticGroup = "beach_nature",
             original = "שׁוּנִית", translation = "риф",
             definition = "מִבְנֶה תַּת-מַיִּמִי שֶׁל אַלְמוֹגִים אוֹ סְלָעִים הַקָּרוֹב לְשְׁטַח הַיָּם.",
             definitionNative = "Подводная структура из кораллов или скал, близкая к поверхности воды.",
@@ -237,7 +237,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103812L, 103813L, 103815L, 103820L, 103821L, 103823L)),
         WordEntity(
             id = 103825, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "beach_equipment", transliteration = "kise khof",
+            pos = "noun", semanticGroup = "beach_equipment",
             original = "כִּסֵּא חוֹף", translation = "пляжный стул",
             definition = "כִּסֵּא מִתְקַפֵּל קַל הַמְּשֻׁמָּשׁ לְשְׁבִיָּה בַּחוֹף.",
             definitionNative = "Лёгкий складной стул для сидения на пляже.",
@@ -248,7 +248,7 @@ object WordDataHebrewBatch5 {
 
         WordEntity(
             id = 103901, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "tabaat nisuin",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "טַבַּעַת נִשּׂוּאִין", translation = "обручальное кольцо",
             definition = "טַבַּעַת הַמּוּחְלֶפֶת בֵּין הַחָתָן וְהַכַּלָּה בְּטֶקֶס הַנִּשּׂוּאִין.",
             definitionNative = "Кольцо, которым обмениваются жених и невеста во время бракосочетания.",
@@ -257,7 +257,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103902L, 103903L, 103906L, 103909L, 103913L, 103915L, 103917L, 103918L, 103920L, 103922L, 103924L)),
         WordEntity(
             id = 103902, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "sheva brakhot",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "שֶׁבַע בְּרָכוֹת", translation = "семь благословений (свадебные)",
             definition = "הַבְּרָכוֹת הַמְּסוֹרְתִיּוֹת הַנֶּאֱמָרוֹת בְּטֶקֶס הַחֲתוּנָּה הַיְּהוּדִית עַל הַזּוּג.",
             definitionNative = "Семь традиционных благословений, произносимых на еврейской свадьбе.",
@@ -266,7 +266,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103901L, 103903L, 103906L, 103913L, 103915L, 103917L, 103918L, 103920L, 103922L, 103924L)),
         WordEntity(
             id = 103903, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "ktuba",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "קְטוּבָּה", translation = "ктуба (брачный договор)",
             definition = "מְסַמֵּךְ נִישּׂוּאִין יְהוּדִי הַמְּגַדֵּר אֶת חוֹבוֹת הַבַּעַל כְּלַפֵּי אִשְׁתּוֹ.",
             definitionNative = "Еврейский брачный договор, определяющий обязанности мужа перед женой.",
@@ -274,7 +274,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Подписали קְטוּבָּה перед хупой."),
         WordEntity(
             id = 103904, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_basics", transliteration = "zugiyut",
+            pos = "noun", semanticGroup = "wedding_basics",
             original = "זוּגִיּוּת", translation = "супружество, партнёрство",
             definition = "מַעֲרֶכֶת יְחָסִים אִינְטִימִית בֵּין שְׁנֵי אֲנָשִׁים.",
             definitionNative = "Система близких отношений между двумя людьми.",
@@ -283,7 +283,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103905L, 103907L, 103908L, 103910L, 103916L, 103923L)),
         WordEntity(
             id = 103905, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_basics", transliteration = "nisuin",
+            pos = "noun", semanticGroup = "wedding_basics",
             original = "נִשּׂוּאִין", translation = "бракосочетание, вступление в брак",
             definition = "הַטֶּקֶס הַמְּשַׁפְּטִי וְהַדָּתִי שֶׁל הִתְאַחֲדוּת הַזּוּג.",
             definitionNative = "Юридическая и религиозная церемония объединения пары.",
@@ -291,7 +291,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "נִשּׂוּאִין отмечали в присутствии обеих семей."),
         WordEntity(
             id = 103906, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "edim",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "עֵדִים", translation = "свидетели (на свадьбе)",
             definition = "אֲנָשִׁים הַנּוֹכְחִים בְּטֶקֶס לְאִישּׁוּר חוּקִי שֶׁלּוֹ.",
             definitionNative = "Люди, присутствующие на церемонии для её юридического подтверждения.",
@@ -300,7 +300,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103901L, 103902L, 103903L, 103909L, 103913L, 103915L, 103917L, 103918L, 103920L, 103922L, 103924L)),
         WordEntity(
             id = 103907, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_basics", transliteration = "hitgarsut",
+            pos = "noun", semanticGroup = "wedding_basics",
             original = "הִתְגָּרְשׁוּת", translation = "развод",
             definition = "פִּרוּק רִשְׁמִי שֶׁל הַנִּישּׂוּאִין עַל פִּי חֹק.",
             definitionNative = "Официальное расторжение брака по закону.",
@@ -309,7 +309,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103904L, 103905L, 103908L, 103910L, 103916L, 103923L)),
         WordEntity(
             id = 103908, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_basics", transliteration = "nekhadim",
+            pos = "noun", semanticGroup = "wedding_basics",
             original = "נְכָדִים", translation = "внуки",
             definition = "יְלָדִים שֶׁל הַבָּנִים אוֹ הַבָּנוֹת — הַדּוֹר הַשְּׁלִישִׁי בַּמִּשְׁפָּחָה.",
             definitionNative = "Дети детей — третье поколение в семье.",
@@ -317,7 +317,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "Дедушка и бабушка были рады видеть נְכָדִים на свадьбе."),
         WordEntity(
             id = 103909, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "khupa",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "חוּפָּה", translation = "хупа (свадебный балдахин)",
             definition = "מִבְנֶה טֶקְסִי מְכוּסֶּה בְּבַד הַמְּסַמֵּל אֶת בֵּית הַזּוּג.",
             definitionNative = "Ритуальная конструкция под тканью, символизирующая дом супружеской пары.",
@@ -326,7 +326,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103901L, 103902L, 103903L, 103906L, 103913L, 103915L, 103917L, 103918L, 103920L, 103922L, 103924L)),
         WordEntity(
             id = 103910, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_basics", transliteration = "eirusin",
+            pos = "noun", semanticGroup = "wedding_basics",
             original = "אֵירוּסִין", translation = "помолвка",
             definition = "הַהַצְהָרָה הָרִשְׁמִית שֶׁזּוּג מִתְכַּוֵּן לְהִנָּשֵׂא.",
             definitionNative = "Официальное объявление о намерении пары пожениться.",
@@ -335,7 +335,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103904L, 103905L, 103907L, 103908L, 103916L, 103921L, 103923L)),
         WordEntity(
             id = 103911, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_celebration", transliteration = "seuda",
+            pos = "noun", semanticGroup = "wedding_celebration",
             original = "סְעוּדָה", translation = "пир, торжественная трапеза",
             definition = "אֲרוּחָה חֲגִיגִית גְּדוֹלָה לְכָבוֹד אֵירוּעַ מְיֻחָד.",
             definitionNative = "Большая праздничная трапеза в честь особого события.",
@@ -343,7 +343,7 @@ object WordDataHebrewBatch5 {
             exampleNative = "סְעוּדָה на свадьбе включала десять различных блюд."),
         WordEntity(
             id = 103912, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_celebration", transliteration = "ne'um",
+            pos = "noun", semanticGroup = "wedding_celebration",
             original = "נְאוּם", translation = "речь, тост",
             definition = "דְּבָרִים רִשְׁמִיִּים הַנֶּאֱמָרִים בְּטֶקֶס לִכְבוֹד אָדָם אוֹ אֵירוּעַ.",
             definitionNative = "Официальные слова, произносимые на церемонии в честь человека или события.",
@@ -352,7 +352,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103911L, 103914L, 103919L, 103921L, 103925L)),
         WordEntity(
             id = 103913, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "shevirat kos",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "שְׁבִירַת כּוֹס", translation = "разбивание бокала (свадебный обряд)",
             definition = "מָנְהַג יְהוּדִי שֶׁהַחָתָן שׁוֹבֵר כּוֹס זְכוּכִית בְּסוֹף טֶקֶס הַחֲתוּנָּה.",
             definitionNative = "Еврейский обычай, при котором жених разбивает стеклянный бокал в конце свадебной церемонии.",
@@ -361,7 +361,7 @@ object WordDataHebrewBatch5 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 103914, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_celebration", transliteration = "neshika",
+            pos = "noun", semanticGroup = "wedding_celebration",
             original = "נְשִׁיקָה", translation = "поцелуй",
             definition = "נְגִיעַת הַשְּׂפָתַיִם כְּסֵמֶל שֶׁל אַהֲבָה.",
             definitionNative = "Прикосновение губами как символ любви.",
@@ -370,7 +370,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103911L, 103912L, 103919L, 103921L, 103925L)),
         WordEntity(
             id = 103915, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "shoshvina",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "שׁוֹשְׁבִינָה", translation = "подружка невесты",
             definition = "חֲבֵרָה קְרוֹבָה שֶׁל הַכַּלָּה הַמְּלַוָּה אוֹתָהּ בְּטֶקֶס הַחֲתוּנָּה.",
             definitionNative = "Близкая подруга невесты, сопровождающая её во время свадебной церемонии.",
@@ -379,7 +379,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103901L, 103902L, 103903L, 103906L, 103909L, 103913L, 103917L, 103918L, 103920L, 103922L, 103924L)),
         WordEntity(
             id = 103916, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_basics", transliteration = "khalifa",
+            pos = "noun", semanticGroup = "wedding_basics",
             original = "חֲלִיפָה", translation = "костюм (мужской)",
             definition = "חֶבְרָה מְאֻגֶּדֶת שֶׁל מִכְנָסַיִם וּמַעִיל בְּצֶבַע אֶחָד.",
             definitionNative = "Комплект брюк и пиджака одного цвета.",
@@ -388,7 +388,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103904L, 103905L, 103907L, 103908L, 103910L, 103923L)),
         WordEntity(
             id = 103917, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "kabalat panim",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "קַבָּלַת פָּנִים", translation = "приём гостей (первая часть свадьбы)",
             definition = "הַחֵלֶק הָרִאשׁוֹן שֶׁל הָאֵירוּעַ שֶׁבּוֹ מְקַבְּלִים אֶת הָאוֹרְחִים.",
             definitionNative = "Первая часть мероприятия, в которой встречают гостей.",
@@ -397,7 +397,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103901L, 103902L, 103903L, 103906L, 103909L, 103913L, 103915L, 103918L, 103920L, 103922L, 103924L)),
         WordEntity(
             id = 103918, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "simlat kala",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "שִׂמְלַת כַּלָּה", translation = "свадебное платье",
             definition = "הַבְּגָד הַלָּבָן הַמְּיֻחָד שֶׁהַכַּלָּה לוֹבֶשֶׁת בְּיוֹם חֲתוּנָּתָהּ.",
             definitionNative = "Особое белое платье, которое невеста надевает в день свадьбы.",
@@ -406,7 +406,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103901L, 103902L, 103903L, 103906L, 103909L, 103913L, 103915L, 103917L, 103920L, 103922L, 103924L)),
         WordEntity(
             id = 103919, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_celebration", transliteration = "nagan",
+            pos = "noun", semanticGroup = "wedding_celebration",
             original = "נַגָּן", translation = "музыкант",
             definition = "אָדָם הַמְּנַגֵּן עַל כְּלִי נְגִינָה לְמִקְצוֹעוֹ.",
             definitionNative = "Человек, играющий на музыкальном инструменте профессионально.",
@@ -415,7 +415,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103911L, 103912L, 103914L, 103921L, 103925L)),
         WordEntity(
             id = 103920, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "zer prakhim",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "זֵר פְּרָחִים", translation = "букет цветов",
             definition = "אֶגֻּדַּת פְּרָחִים קְשׁוּרִים יַחַד לְנַאי אוֹ לְמַתָּנָה.",
             definitionNative = "Цветы, связанные вместе для подарка или украшения — например, на свадьбе.",
@@ -424,7 +424,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103901L, 103902L, 103903L, 103906L, 103909L, 103913L, 103915L, 103917L, 103918L, 103922L, 103924L)),
         WordEntity(
             id = 103921, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_celebration", transliteration = "yom nisuin",
+            pos = "noun", semanticGroup = "wedding_celebration",
             original = "יוֹם נִישּׂוּאִין", translation = "годовщина свадьбы",
             definition = "יוֹם חֲגִיגָה שֶׁל שָׁנָה נוֹסֶפֶת מִיּוֹם הַחֲתוּנָּה.",
             definitionNative = "Праздник очередной годовщины со дня свадьбы.",
@@ -433,7 +433,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103910L, 103911L, 103912L, 103914L, 103919L, 103925L)),
         WordEntity(
             id = 103922, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "ulam simkhot",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "אוּלָם שִׂמְחוֹת", translation = "банкетный зал (для торжеств)",
             definition = "אוּלָם גָּדוֹל הַמְּיֻעָד לְאֵירוּעֵי שִׂמְחָה כְּגוֹן חֲתוּנוֹת וּבַר-מִצְווֹת.",
             definitionNative = "Большой зал, предназначенный для торжественных мероприятий — свадеб и бар-мицв.",
@@ -442,7 +442,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103901L, 103902L, 103903L, 103906L, 103909L, 103913L, 103915L, 103917L, 103918L, 103920L, 103924L)),
         WordEntity(
             id = 103923, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_basics", transliteration = "khayim meshutatim",
+            pos = "noun", semanticGroup = "wedding_basics",
             original = "חַיִּים מְשֻׁתָּפִים", translation = "совместная жизнь",
             definition = "חֲיִיָּה יַחַד שֶׁל שְׁנֵי אֲנָשִׁים תַּחַת קֹרַת גַּג אַחַת.",
             definitionNative = "Совместное проживание двух людей под одной крышей.",
@@ -451,7 +451,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103904L, 103905L, 103907L, 103908L, 103910L, 103916L)),
         WordEntity(
             id = 103924, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_ceremony", transliteration = "kheder kala",
+            pos = "noun", semanticGroup = "wedding_ceremony",
             original = "חֶדֶר כַּלָּה", translation = "комната невесты",
             definition = "חֶדֶר מְיֻחָד שֶׁבּוֹ הַכַּלָּה מִתְכּוֹנֶנֶת לִפְנֵי הַחֲתוּנָּה.",
             definitionNative = "Отдельная комната, где невеста готовится перед свадьбой.",
@@ -460,7 +460,7 @@ object WordDataHebrewBatch5 {
          fillInBlankExclusions = listOf(103901L, 103902L, 103903L, 103906L, 103909L, 103913L, 103915L, 103917L, 103918L, 103920L, 103922L)),
         WordEntity(
             id = 103925, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "wedding_celebration", transliteration = "kibud",
+            pos = "noun", semanticGroup = "wedding_celebration",
             original = "כִּיבּוּד", translation = "угощение (на торжестве)",
             definition = "מַאֲכָלִים וּמַשְׁקָאוֹת הַמּוּגָּשִׁים לָאוֹרְחִים בְּאֵירוּעַ.",
             definitionNative = "Еда и напитки, подаваемые гостям на торжестве.",

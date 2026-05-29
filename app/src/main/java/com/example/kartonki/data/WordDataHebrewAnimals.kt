@@ -80,7 +80,7 @@ object WordDataHebrewAnimals {
         // ── animal_young (5) — малыши животных ───────────────────────────
         WordEntity(
             id = 187301, setId = 1873, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "animal_young", transliteration = "gozal",
+            pos = "noun", semanticGroup = "animal_young",
             original = "גּוֹזָל", translation = "птенец",
             definition = "צִפּוֹר צְעִירָה שֶׁעֲדַיִן בַּקֵּן וְלֹא יוֹדַעַת לָעוּף.",
             definitionNative = "Маленькая птица, ещё сидит в гнезде и не умеет летать.",
@@ -89,7 +89,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187302L, 187303L, 187304L, 187305L)),
         WordEntity(
             id = 187302, setId = 1873, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "animal_young", transliteration = "efroakh",
+            pos = "noun", semanticGroup = "animal_young",
             original = "אֶפְרוֹחַ", translation = "цыплёнок",
             definition = "תַּרְנְגוֹל קָטָן וְצָהֹב שֶׁבָּקַע מֵהַבֵּיצָה.",
             definitionNative = "Маленький жёлтый детёныш курицы, только что вылупившийся из яйца.",
@@ -98,7 +98,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187303, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_young", transliteration = "siakh",
+            pos = "noun", semanticGroup = "animal_young",
             original = "סְיָח", translation = "жеребёнок",
             definition = "סוּס צָעִיר עִם רַגְלַיִם דַּקּוֹת שֶׁעֲדַיִן יוֹנֵק מֵאִמּוֹ.",
             definitionNative = "Маленькая лошадь на тонких ножках, ещё пьёт молоко мамы.",
@@ -107,7 +107,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187304, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_young", transliteration = "egel",
+            pos = "noun", semanticGroup = "animal_young",
             original = "עֵגֶל", translation = "телёнок",
             definition = "פָּרָה צְעִירָה שֶׁעוֹד אֵינָהּ נוֹתֶנֶת חָלָב.",
             definitionNative = "Молодой детёныш коровы, ещё не дающий молока.",
@@ -116,7 +116,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187301L, 187302L, 187303L, 187305L)),
         WordEntity(
             id = 187305, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_young", transliteration = "gdi",
+            pos = "noun", semanticGroup = "animal_young",
             original = "גְּדִי", translation = "козлёнок",
             definition = "עֵז צְעִירָה עִם פַּרְוָה רַכָּה וְקַרְנַיִם קְטַנּוֹת.",
             definitionNative = "Молодой детёныш козы с мягкой шерстью и маленькими рожками.",
@@ -127,7 +127,7 @@ object WordDataHebrewAnimals {
         // ── animal_farm (6) — ферма ──────────────────────────────────────
         WordEntity(
             id = 187306, setId = 1873, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "animal_farm", transliteration = "tarnegolet",
+            pos = "noun", semanticGroup = "animal_farm",
             original = "תַּרְנְגֹלֶת", translation = "курица",
             definition = "צִפּוֹר חַוָּה לְבֵיצִים וּלְבָשָׂר, שֶׁאֵינָהּ עָפָה הַרְבֵּה.",
             definitionNative = "Домашняя птица для яиц и мяса, почти не летающая.",
@@ -136,7 +136,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187307L, 187308L, 187309L, 187310L, 187311L)),
         WordEntity(
             id = 187307, setId = 1873, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "animal_farm", transliteration = "tarnegol",
+            pos = "noun", semanticGroup = "animal_farm",
             original = "תַּרְנְגוֹל", translation = "петух",
             definition = "זָכָר שֶׁל תַּרְנְגֹלֶת עִם כַּרְבֹּלֶת אֲדֻמָּה שֶׁמַּתְרִיעַ בַּבֹּקֶר.",
             definitionNative = "Самец курицы с красным гребешком, кричащий по утрам.",
@@ -145,7 +145,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187306L, 187308L, 187309L, 187310L, 187311L)),
         WordEntity(
             id = 187308, setId = 1873, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "animal_farm", transliteration = "kheziru",
+            pos = "noun", semanticGroup = "animal_farm",
             original = "חֲזִיר", translation = "свинья",
             definition = "חַיָּה גְּדוֹלָה עִם פַּרְוָה דַּלָּה שֶׁאוֹהֶבֶת לְהִתְגַּלְגֵּל בַּבֹּץ.",
             definitionNative = "Крупное животное со скудной шерстью, любящее валяться в грязи.",
@@ -154,7 +154,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187306L, 187307L, 187309L, 187310L, 187311L)),
         WordEntity(
             id = 187309, setId = 1873, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "animal_farm", transliteration = "ez",
+            pos = "noun", semanticGroup = "animal_farm",
             original = "עֵז", translation = "коза",
             definition = "חַיַּת מֶשֶׁק עִם זָקָן וְקַרְנַיִם, נוֹתֶנֶת חָלָב וּגְבִינָה.",
             definitionNative = "Сельское животное с бородкой и рогами, дающее молоко и сыр.",
@@ -163,7 +163,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187306L, 187307L, 187308L, 187310L, 187311L)),
         WordEntity(
             id = 187310, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_farm", transliteration = "kevesh",
+            pos = "noun", semanticGroup = "animal_farm",
             original = "כֶּבֶשׂ", translation = "овца",
             definition = "חַיַּת מֶשֶׁק עִם פַּרְוָה לְבָנָה עָבָה שֶׁמֵּמֶנָּה עוֹשִׂים צֶמֶר.",
             definitionNative = "Сельское животное с густой белой шерстью, из которой делают пряжу.",
@@ -172,7 +172,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187311, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_farm", transliteration = "khamor",
+            pos = "noun", semanticGroup = "animal_farm",
             original = "חֲמוֹר", translation = "осёл",
             definition = "חַיָּה דּוֹמָה לְסוּס קָטָן עִם אֹזְנַיִם אֲרֻכּוֹת, נוֹשֵׂאת מַשָּׂאוֹת כְּבֵדִים.",
             definitionNative = "Похожий на маленькую лошадь зверь с длинными ушами, носит тяжести.",
@@ -183,7 +183,7 @@ object WordDataHebrewAnimals {
         // ── animal_birds_basic (5) — обычные птицы ───────────────────────
         WordEntity(
             id = 187312, setId = 1873, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "animal_birds_basic", transliteration = "barvaz",
+            pos = "noun", semanticGroup = "animal_birds_basic",
             original = "בַּרְוָז", translation = "утка",
             definition = "צִפּוֹר מַיִם עִם רַגְלַיִם שְׁטוּחוֹת שֶׁאוֹהֶבֶת לִשְׂחוֹת בְּבֵרֵכוֹת.",
             definitionNative = "Водоплавающая птица с лапками-перепонками, любит плавать в прудах.",
@@ -192,7 +192,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187313L, 187314L, 187315L, 187316L)),
         WordEntity(
             id = 187313, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_birds_basic", transliteration = "avaz",
+            pos = "noun", semanticGroup = "animal_birds_basic",
             original = "אַוָּז", translation = "гусь",
             definition = "צִפּוֹר מַיִם גְּדוֹלָה מִבַּרְוָז עִם צַוָּאר אָרֹךְ וְקוֹל רָם.",
             definitionNative = "Большая водоплавающая птица с длинной шеей и громким голосом.",
@@ -201,7 +201,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187312L, 187314L, 187315L, 187316L)),
         WordEntity(
             id = 187314, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_birds_basic", transliteration = "yona",
+            pos = "noun", semanticGroup = "animal_birds_basic",
             original = "יוֹנָה", translation = "голубь",
             definition = "צִפּוֹר אֲפֹרָה נְפוֹצָה בְּעָרִים, סֶמֶל הַשָּׁלוֹם.",
             definitionNative = "Серая птица, частый житель городов, символ мира.",
@@ -210,7 +210,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187312L, 187313L, 187315L, 187316L)),
         WordEntity(
             id = 187315, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_birds_basic", transliteration = "dror",
+            pos = "noun", semanticGroup = "animal_birds_basic",
             original = "דְּרוֹר", translation = "воробей",
             definition = "צִפּוֹר חוּמָה זְעִירָה הַמְצַיֶּצֶת בָּעֲצֵי הַחָצֵר.",
             definitionNative = "Маленькая коричневая птица, чирикающая в дворовых деревьях.",
@@ -219,7 +219,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187312L, 187313L, 187314L, 187316L)),
         WordEntity(
             id = 187316, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_birds_basic", transliteration = "orev",
+            pos = "noun", semanticGroup = "animal_birds_basic",
             original = "עוֹרֵב", translation = "ворон",
             definition = "צִפּוֹר שְׁחוֹרָה גְּדוֹלָה וְחָכְמָה בְּמְיֻחָד.",
             definitionNative = "Крупная чёрная птица, известная своим умом.",
@@ -230,7 +230,7 @@ object WordDataHebrewAnimals {
         // ── animal_marine_basic (4) — основные морские ───────────────────
         WordEntity(
             id = 187317, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_marine_basic", transliteration = "tsav yam",
+            pos = "noun", semanticGroup = "animal_marine_basic",
             original = "צָב יָם", translation = "морская черепаха",
             definition = "זוֹחֵל אִטִּי עִם שִׁרְיוֹן הַחַי בַּיָּם וּמַטִּיל בֵּיצִים בַּחוֹף.",
             definitionNative = "Медленная рептилия с панцирем, живёт в море и откладывает яйца на пляже.",
@@ -239,7 +239,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187318L, 187319L, 187320L)),
         WordEntity(
             id = 187318, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_marine_basic", transliteration = "sartan",
+            pos = "noun", semanticGroup = "animal_marine_basic",
             original = "סַרְטָן", translation = "краб",
             definition = "בַּעַל חַיִּים יָמִי עִם שֵׁשׁ רַגְלַיִם וּשְׁתֵּי צְבָתוֹת חֲזָקוֹת.",
             definitionNative = "Морское существо с шестью ногами и двумя сильными клешнями.",
@@ -248,7 +248,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187319, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_marine_basic", transliteration = "meduza",
+            pos = "noun", semanticGroup = "animal_marine_basic",
             original = "מֵדוּזָה", translation = "медуза",
             definition = "חַיָּה רַכָּה וְשְׁקוּפָה בַּיָּם שֶׁיְּכוֹלָה לִצְרֹב אֶת הַעוֹר.",
             definitionNative = "Мягкое прозрачное морское существо, способное обжечь кожу.",
@@ -257,7 +257,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187320, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_marine_basic", transliteration = "kokhav yam",
+            pos = "noun", semanticGroup = "animal_marine_basic",
             original = "כּוֹכָב יָם", translation = "морская звезда",
             definition = "חַיָּה יָמִית עִם חָמֵשׁ זְרוֹעוֹת הַנִּצְמֶדֶת לְסַלְעֵי הַיָּם.",
             definitionNative = "Морское существо с пятью лучами, прикрепляющееся к камням.",
@@ -268,7 +268,7 @@ object WordDataHebrewAnimals {
         // ── animal_insects_basic (5) — насекомые ─────────────────────────
         WordEntity(
             id = 187321, setId = 1873, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "animal_insects_basic", transliteration = "nemala",
+            pos = "noun", semanticGroup = "animal_insects_basic",
             original = "נְמָלָה", translation = "муравей",
             definition = "חֶרֶק קָטָן וְשָׁחֹר שֶׁעוֹבֵד בְּקֵן עִם אֲלָפִים אֲחֵרִים.",
             definitionNative = "Маленькое чёрное насекомое, живущее тысячами в общем гнезде.",
@@ -277,7 +277,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187322, setId = 1873, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "animal_insects_basic", transliteration = "zvuv",
+            pos = "noun", semanticGroup = "animal_insects_basic",
             original = "זְבוּב", translation = "муха",
             definition = "חֶרֶק מְעוֹפֵף מַטְרִיד הַמְצַמְצֵם לְיַד אוֹכֶל.",
             definitionNative = "Назойливое летающее насекомое, кружащее вокруг еды.",
@@ -286,7 +286,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187323, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_insects_basic", transliteration = "yatush",
+            pos = "noun", semanticGroup = "animal_insects_basic",
             original = "יַתּוּשׁ", translation = "комар",
             definition = "חֶרֶק זָעִיר שֶׁעוֹקֵץ וְשׁוֹתֶה דָּם בָּעֶרֶב.",
             definitionNative = "Крошечное насекомое, кусающее и пьющее кровь по вечерам.",
@@ -295,7 +295,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187324, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_insects_basic", transliteration = "parpar",
+            pos = "noun", semanticGroup = "animal_insects_basic",
             original = "פַּרְפַּר", translation = "бабочка",
             definition = "חֶרֶק עִם כְּנָפַיִם צִבְעוֹנִיּוֹת הַמְעוֹפֵף בֵּין פְּרָחִים.",
             definitionNative = "Насекомое с разноцветными крылышками, порхающее между цветами.",
@@ -304,7 +304,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187321L, 187322L, 187323L, 187325L)),
         WordEntity(
             id = 187325, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_insects_basic", transliteration = "khipushit",
+            pos = "noun", semanticGroup = "animal_insects_basic",
             original = "חִפּוּשִׁית", translation = "жук",
             definition = "חֶרֶק קָשֶׁה עִם כְּנָפַיִם נִסְתָּרוֹת תַּחַת מַעֲטֶה קָשִׁיחַ.",
             definitionNative = "Крепкое насекомое со спрятанными крыльями под жёстким панцирем.",
@@ -319,7 +319,7 @@ object WordDataHebrewAnimals {
         // ── animal_wild_mammals (8) — дикие млекопитающие ────────────────
         WordEntity(
             id = 187401, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_wild_mammals", transliteration = "shuʿal",
+            pos = "noun", semanticGroup = "animal_wild_mammals",
             original = "שׁוּעָל", translation = "лиса",
             definition = "חַיָּה אֲדֻמָּה עִם זָנָב גָּדוֹל הַחַיָּה בַּיַּעַר וּבָאֲחוּ.",
             definitionNative = "Рыжий зверь с пушистым хвостом, обитающий в лесу и в полях.",
@@ -328,7 +328,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187402, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_wild_mammals", transliteration = "ze'ev",
+            pos = "noun", semanticGroup = "animal_wild_mammals",
             original = "זְאֵב", translation = "волк",
             definition = "חַיַּת טֶרֶף גְּדוֹלָה דּוֹמָה לְכֶלֶב הַחַיָּה בַּלְהָקָה.",
             definitionNative = "Крупный хищник, похожий на собаку, живёт в стае.",
@@ -337,7 +337,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187403, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_wild_mammals", transliteration = "dov",
+            pos = "noun", semanticGroup = "animal_wild_mammals",
             original = "דֹּב", translation = "медведь",
             definition = "יוֹנֵק גָּדוֹל וְחָזָק בְּמְיֻחָד עִם פַּרְוָה עָבָה.",
             definitionNative = "Крупный сильный зверь с густым мехом, живущий в северных лесах.",
@@ -346,7 +346,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187401L, 187402L, 187404L, 187405L, 187406L, 187407L, 187408L)),
         WordEntity(
             id = 187404, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_wild_mammals", transliteration = "tahash",
+            pos = "noun", semanticGroup = "animal_wild_mammals",
             original = "תַּחַשׁ", translation = "барсук",
             definition = "יוֹנֵק לֵילִי עִם פַּסִּים שְׁחוֹר-לְבָנִים שֶׁחוֹפֵר מְחִלּוֹת עֲמֻקּוֹת.",
             definitionNative = "Ночной зверь с чёрно-белыми полосками, роющий глубокие норы.",
@@ -355,7 +355,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187405, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_wild_mammals", transliteration = "snai",
+            pos = "noun", semanticGroup = "animal_wild_mammals",
             original = "סְנָאי", translation = "белка",
             definition = "יוֹנֵק קָטָן וּזְרִיז עִם זָנָב מְפֻרְוָה הַחַי בַּעֵצִים.",
             definitionNative = "Маленький проворный зверёк с пушистым хвостом, живущий на деревьях.",
@@ -364,7 +364,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187406, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_wild_mammals", transliteration = "kipod",
+            pos = "noun", semanticGroup = "animal_wild_mammals",
             original = "קִפּוֹד", translation = "ёж",
             definition = "יוֹנֵק קָטָן עִם קוֹצִים חַדִּים שֶׁמִּתְגַּלְגֵּל לְכַדּוּר בְּסַכָּנָה.",
             definitionNative = "Маленький зверёк с острыми колючками, сворачивается в шар при опасности.",
@@ -373,7 +373,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187407, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_wild_mammals", transliteration = "khulda",
+            pos = "noun", semanticGroup = "animal_wild_mammals",
             original = "חֻלְדָּה", translation = "крыса",
             definition = "מַכְרֵסֶם גָּדוֹל עִם זָנָב עֵירֹם הַחַי קָרוֹב לְמַחְצְנוֹת אָדָם.",
             definitionNative = "Крупный грызун с голым хвостом, живущий рядом с жильём человека.",
@@ -382,7 +382,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187401L, 187402L, 187403L, 187404L, 187405L, 187406L, 187408L)),
         WordEntity(
             id = 187408, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_wild_mammals", transliteration = "atalef",
+            pos = "noun", semanticGroup = "animal_wild_mammals",
             original = "עֲטַלֵּף", translation = "летучая мышь",
             definition = "יוֹנֵק לֵילִי עָף, מְמַצֵּא דַּרְכּוֹ בְּקוֹל וְלֹא בָּעֵינַיִם.",
             definitionNative = "Ночное летающее млекопитающее, ориентируется звуком, а не зрением.",
@@ -393,7 +393,7 @@ object WordDataHebrewAnimals {
         // ── animal_birds_predator (5) — хищные птицы ─────────────────────
         WordEntity(
             id = 187409, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_birds_predator", transliteration = "nesher",
+            pos = "noun", semanticGroup = "animal_birds_predator",
             original = "נֶשֶׁר", translation = "орёл",
             definition = "צִפּוֹר טֶרֶף גְּדוֹלָה עִם רְאִיָּה חַדָּה הַדּוֹאָה גָּבוֹהַ בַּהָרִים.",
             definitionNative = "Крупная хищная птица с острым зрением, парящая высоко в горах.",
@@ -402,7 +402,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187410, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_birds_predator", transliteration = "yanshuf",
+            pos = "noun", semanticGroup = "animal_birds_predator",
             original = "יַנְשׁוּף", translation = "сова",
             definition = "צִפּוֹר לֵילִית עִם עֵינַיִם גְּדוֹלוֹת שֶׁמְּסַבֶּבֶת אֶת הָרֹאשׁ הַרְבֵּה.",
             definitionNative = "Ночная птица с большими глазами, поворачивающая голову почти полностью.",
@@ -411,7 +411,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187411, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_birds_predator", transliteration = "baz",
+            pos = "noun", semanticGroup = "animal_birds_predator",
             original = "בָּז", translation = "сокол",
             definition = "צִפּוֹר טֶרֶף קְטַנָּה וּמְהִירָה הַתּוֹפֶסֶת צִפּוֹרִים אֲחֵרוֹת בַּאֲוִיר.",
             definitionNative = "Маленькая быстрая хищная птица, ловящая других птиц прямо в воздухе.",
@@ -420,7 +420,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187409L, 187410L, 187412L, 187413L)),
         WordEntity(
             id = 187412, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_birds_predator", transliteration = "ayit",
+            pos = "noun", semanticGroup = "animal_birds_predator",
             original = "עַיִט", translation = "ястреб",
             definition = "צִפּוֹר טֶרֶף בְּגֹדֶל בֵּינוֹנִי עִם כְּנָפַיִם רְחָבוֹת הַחַיָּה בַּיַּעַר.",
             definitionNative = "Среднеразмерная хищная птица с широкими крыльями, обитает в лесу.",
@@ -429,7 +429,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187409L, 187410L, 187411L, 187413L)),
         WordEntity(
             id = 187413, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_birds_predator", transliteration = "daya",
+            pos = "noun", semanticGroup = "animal_birds_predator",
             original = "דַּיָּה", translation = "коршун",
             definition = "צִפּוֹר טֶרֶף עִם זָנָב מְפֻצָּל הַדּוֹאָה בְּמַעְגָּלִים גְּבוֹהִים.",
             definitionNative = "Хищная птица с раздвоенным хвостом, парит высокими кругами.",
@@ -440,7 +440,7 @@ object WordDataHebrewAnimals {
         // ── animal_reptiles (6) — рептилии ───────────────────────────────
         WordEntity(
             id = 187414, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_reptiles", transliteration = "nakhash",
+            pos = "noun", semanticGroup = "animal_reptiles",
             original = "נָחָשׁ", translation = "змея",
             definition = "זוֹחֵל אָרֹךְ בְּלִי רַגְלַיִם שֶׁמַּחֲלִיף עוֹר וְזוֹחֵל בָּעֵשֶׂב.",
             definitionNative = "Длинная безногая рептилия, меняющая кожу и ползающая в траве.",
@@ -449,7 +449,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187415, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_reptiles", transliteration = "tsav",
+            pos = "noun", semanticGroup = "animal_reptiles",
             original = "צָב", translation = "черепаха",
             definition = "זוֹחֵל אִטִּי עִם שִׁרְיוֹן קָשֶׁה הַחַי בָּאֲגַם וּבַיַּבָּשָׁה.",
             definitionNative = "Медленная рептилия с твёрдым панцирем, живёт в озёрах и на суше.",
@@ -458,7 +458,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187416, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_reptiles", transliteration = "letaa",
+            pos = "noun", semanticGroup = "animal_reptiles",
             original = "לְטָאָה", translation = "ящерица",
             definition = "זוֹחֵל קָטָן וּזְרִיז עִם זָנָב אָרֹךְ הַמְהַלֵּךְ עַל קִירוֹת.",
             definitionNative = "Маленькая проворная рептилия с длинным хвостом, бегает по стенам.",
@@ -467,7 +467,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187417, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_reptiles", transliteration = "tanin",
+            pos = "noun", semanticGroup = "animal_reptiles",
             original = "תַּנִּין", translation = "крокодил",
             definition = "זוֹחֵל גָּדוֹל וּמְסֻכָּן עִם שִׁנַּיִם חַדּוֹת הַחַי בִּנְהָרוֹת חַמִּים.",
             definitionNative = "Крупная опасная рептилия с острыми зубами, живёт в тёплых реках.",
@@ -476,7 +476,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187414L, 187415L, 187416L, 187418L, 187419L)),
         WordEntity(
             id = 187418, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_reptiles", transliteration = "khardon",
+            pos = "noun", semanticGroup = "animal_reptiles",
             original = "חַרְדּוֹן", translation = "агама",
             definition = "לְטָאָה בֵּינוֹנִית מִדְבָּרִית עִם רֹאשׁ קְשִׁיחַ הַמִּתְחַמֶּמֶת בַּשֶּׁמֶשׁ.",
             definitionNative = "Среднеразмерная пустынная ящерица с твёрдой головой, греется на солнце.",
@@ -485,7 +485,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187414L, 187415L, 187416L, 187417L, 187419L)),
         WordEntity(
             id = 187419, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_reptiles", transliteration = "tsefa",
+            pos = "noun", semanticGroup = "animal_reptiles",
             original = "צֶפַע", translation = "гадюка",
             definition = "נָחָשׁ אָרְסִי קָטָן עִם רֹאשׁ מְשֻׁלָּשׁ הַחַי בָּאִזּוֹר הַסַּלְעִי.",
             definitionNative = "Маленькая ядовитая змея с треугольной головой, обитает в скалах.",
@@ -496,7 +496,7 @@ object WordDataHebrewAnimals {
         // ── animal_amphibians (3) — амфибии ──────────────────────────────
         WordEntity(
             id = 187420, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_amphibians", transliteration = "tsfardea",
+            pos = "noun", semanticGroup = "animal_amphibians",
             original = "צְפַרְדֵּעַ", translation = "лягушка",
             definition = "דּוּ-חַיִּי קָטָן יָרֹק שֶׁקּוֹפֵץ וְקוֹלוֹ נִשְׁמַע לְיַד הָאֲגַם.",
             definitionNative = "Маленькая зелёная амфибия, прыгающая и квакающая возле пруда.",
@@ -505,7 +505,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187421, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_amphibians", transliteration = "krpada",
+            pos = "noun", semanticGroup = "animal_amphibians",
             original = "קַרְפָּדָה", translation = "жаба",
             definition = "דּוּ-חַיִּי עִם עוֹר יָבֵשׁ וְגָבוֹשִׁי, גָּדוֹל וְכָבֵד מִצְּפַרְדֵּעַ.",
             definitionNative = "Амфибия с сухой бугристой кожей, крупнее и тяжелее лягушки.",
@@ -514,7 +514,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187422, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_amphibians", transliteration = "salamandra",
+            pos = "noun", semanticGroup = "animal_amphibians",
             original = "סָלָמַנְדְּרָה", translation = "саламандра",
             definition = "דּוּ-חַיִּי דּוֹמֶה לִלְטָאָה עִם עוֹר חָלָק וְכִתְמֵי צֶבַע בּוֹלְטִים.",
             definitionNative = "Амфибия, похожая на ящерицу, с гладкой кожей и яркими пятнами.",
@@ -525,7 +525,7 @@ object WordDataHebrewAnimals {
         // ── animal_arachnids (3) — паукообразные ─────────────────────────
         WordEntity(
             id = 187423, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "animal_arachnids", transliteration = "akavish",
+            pos = "noun", semanticGroup = "animal_arachnids",
             original = "עַכָּבִישׁ", translation = "паук",
             definition = "פַּרְקוֹדָן עִם שְׁמוֹנֶה רַגְלַיִם הַטּוֹוֶה רֶשֶׁת לְלִכּוּד חֲרָקִים.",
             definitionNative = "Членистоногое с восемью лапами, плетёт сеть для ловли насекомых.",
@@ -534,7 +534,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187424, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_arachnids", transliteration = "akrav",
+            pos = "noun", semanticGroup = "animal_arachnids",
             original = "עַקְרָב", translation = "скорпион",
             definition = "פַּרְקוֹדָן מִדְבָּרִי עִם צְבָתוֹת וְעֹקֶץ אָרְסִי בִּקְצֵה הַזָּנָב.",
             definitionNative = "Пустынное паукообразное с клешнями и ядовитым жалом на хвосте.",
@@ -543,7 +543,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187423L, 187425L)),
         WordEntity(
             id = 187425, setId = 1874, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_arachnids", transliteration = "kana",
+            pos = "noun", semanticGroup = "animal_arachnids",
             original = "קְרָדִית", translation = "клещ",
             definition = "פַּרְקוֹדָן זָעִיר הַנִּצְמָד לְעוֹר חַיּוֹת וְאָדָם וְשׁוֹתֶה דָּם.",
             definitionNative = "Крошечное паукообразное, цепляющееся к коже и пьющее кровь.",
@@ -558,7 +558,7 @@ object WordDataHebrewAnimals {
         // ── animal_big_cats (5) — большие кошки ──────────────────────────
         WordEntity(
             id = 187501, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_big_cats", transliteration = "namer",
+            pos = "noun", semanticGroup = "animal_big_cats",
             original = "נָמֵר", translation = "леопард",
             definition = "חַיַּת טֶרֶף גְּדוֹלָה עִם פַּרְוָה צָהֻבָּה וְכִתְמֵי שָׁחוֹר עֲגֻלִּים.",
             definitionNative = "Крупный хищник с жёлтой шкурой и круглыми чёрными пятнами.",
@@ -567,7 +567,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187502, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_big_cats", transliteration = "barde'las",
+            pos = "noun", semanticGroup = "animal_big_cats",
             original = "בַּרְדְּלָס", translation = "гепард",
             definition = "חַיַּת טֶרֶף הַמְּהִירָה בָּעוֹלָם עִם פַּרְוָה מְנֻמֶּרֶת קְטַנָּה.",
             definitionNative = "Самый быстрый хищник в мире, с мелкими пятнами на шкуре.",
@@ -576,7 +576,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187501L, 187503L, 187504L, 187505L)),
         WordEntity(
             id = 187503, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_big_cats", transliteration = "ya'gu'ar",
+            pos = "noun", semanticGroup = "animal_big_cats",
             original = "יָגוּאָר", translation = "ягуар",
             definition = "חַיַּת טֶרֶף חֲזָקָה מֵאַמֶרִיקָה הַדְּרוֹמִית עִם פֶּה רָב-עֹצְמָה.",
             definitionNative = "Сильный хищник из Южной Америки с очень мощной челюстью.",
@@ -585,7 +585,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187504, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_big_cats", transliteration = "puma",
+            pos = "noun", semanticGroup = "animal_big_cats",
             original = "פּוּמָה", translation = "пума",
             definition = "חַיַּת טֶרֶף בֵּינוֹנִית עִם פַּרְוָה אֲחִידָה הַחַיָּה בְּהָרֵי אַמֶרִיקָה.",
             definitionNative = "Среднеразмерный хищник с однотонной шкурой, обитает в горах Америки.",
@@ -594,7 +594,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187501L, 187502L, 187503L, 187505L)),
         WordEntity(
             id = 187505, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_big_cats", transliteration = "lin'ks",
+            pos = "noun", semanticGroup = "animal_big_cats",
             original = "לִינְקְס", translation = "рысь",
             definition = "חַיַּת בַּר עִם צִיצוֹת בָּאֹזְנַיִם וּפַרְוָה עָבָה הַחַיָּה בָּאזוֹר הַקַּר.",
             definitionNative = "Дикая кошка с кисточками на ушах и густой шкурой, обитает в холодных лесах.",
@@ -605,7 +605,7 @@ object WordDataHebrewAnimals {
         // ── animal_marine_exotic (6) — экзотические морские ──────────────
         WordEntity(
             id = 187506, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_marine_exotic", transliteration = "dolfin",
+            pos = "noun", semanticGroup = "animal_marine_exotic",
             original = "דּוֹלְפִין", translation = "дельфин",
             definition = "יוֹנֵק יָמִי חָכָם בְּמְיֻחָד הַחַי בְּלַהֲקוֹת וְמִתְקַשֵּׁר בִּצְפִירוֹת.",
             definitionNative = "Очень умное морское млекопитающее, живёт стаями и общается свистом.",
@@ -614,7 +614,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187507L, 187508L, 187509L, 187510L, 187511L)),
         WordEntity(
             id = 187507, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_marine_exotic", transliteration = "livyatan",
+            pos = "noun", semanticGroup = "animal_marine_exotic",
             original = "לִוְיָתָן", translation = "кит",
             definition = "יוֹנֵק יָמִי עֲנָקִי, הַחַי הַגָּדוֹל בְּיוֹתֵר עַל פְּנֵי כַּדּוּר הָאָרֶץ.",
             definitionNative = "Гигантское морское млекопитающее, самое крупное живое существо на планете.",
@@ -623,7 +623,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187508, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_marine_exotic", transliteration = "tamnun",
+            pos = "noun", semanticGroup = "animal_marine_exotic",
             original = "תַּמְנוּן", translation = "осьминог",
             definition = "בַּעַל חַיִּים יָמִי עִם שְׁמוֹנֶה זְרוֹעוֹת שֶׁמַּחֲלִיף צֶבַע לְהֶסְוָאָה.",
             definitionNative = "Морской житель с восемью щупальцами, меняет цвет для маскировки.",
@@ -632,7 +632,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187506L, 187507L, 187509L, 187510L, 187511L)),
         WordEntity(
             id = 187509, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_marine_exotic", transliteration = "suson yam",
+            pos = "noun", semanticGroup = "animal_marine_exotic",
             original = "סוּסוֹן יָם", translation = "морской конёк",
             definition = "דַּג קָטָן וּמְיֻחָד עִם רֹאשׁ דּוֹמֶה לְסוּס שֶׁשׂוֹחֶה זָקוּף.",
             definitionNative = "Маленькая необычная рыбка с лошадиной головой, плавает вертикально.",
@@ -641,7 +641,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187506L, 187507L, 187508L, 187510L, 187511L)),
         WordEntity(
             id = 187510, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_marine_exotic", transliteration = "manta",
+            pos = "noun", semanticGroup = "animal_marine_exotic",
             original = "מַנְטָה", translation = "скат манта",
             definition = "דַּג גָּדוֹל שָׁטוּחַ עִם כַּנְפֵי שְׂחִיָּה רְחָבוֹת הַשָּׁט בְּחֶמְלָה.",
             definitionNative = "Крупная плоская рыба с широкими плавниками-крыльями, плавно скользящая.",
@@ -650,7 +650,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187511, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_marine_exotic", transliteration = "moreina",
+            pos = "noun", semanticGroup = "animal_marine_exotic",
             original = "מוֹרֵינָה", translation = "мурена",
             definition = "דַּג טוֹרֵף אָרֹךְ דּוֹמֶה לְנָחָשׁ הַמִּסְתַּתֵּר בְּסַלְעֵי שׂוּנִית.",
             definitionNative = "Длинная хищная рыба, похожая на змею, прячется в коралловых рифах.",
@@ -661,7 +661,7 @@ object WordDataHebrewAnimals {
         // ── animal_birds_exotic (5) — экзотические птицы ─────────────────
         WordEntity(
             id = 187512, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_birds_exotic", transliteration = "tavas",
+            pos = "noun", semanticGroup = "animal_birds_exotic",
             original = "טַוָּס", translation = "павлин",
             definition = "צִפּוֹר מְפֹאֶרֶת עִם זָנָב עָנָק שֶׁל נוֹצוֹת כְּחֻלּוֹת וּזְהֻבּוֹת.",
             definitionNative = "Великолепная птица с огромным хвостом из синих и золотистых перьев.",
@@ -670,7 +670,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187513, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_birds_exotic", transliteration = "fla'mingo",
+            pos = "noun", semanticGroup = "animal_birds_exotic",
             original = "פְלָמִינְגוֹ", translation = "фламинго",
             definition = "צִפּוֹר וֹרֻדָּה גְּבוֹהָה עִם רַגְלַיִם דַּקּוֹת הַחַיָּה בִּימֵי מֶלַח.",
             definitionNative = "Высокая розовая птица на тонких ногах, обитает на солёных озёрах.",
@@ -679,7 +679,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187514, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_birds_exotic", transliteration = "tukan",
+            pos = "noun", semanticGroup = "animal_birds_exotic",
             original = "טוּקָן", translation = "тукан",
             definition = "צִפּוֹר טְרוֹפִּית עִם מַקּוֹר עָנָק וְצִבְעוֹנִי הַחַי בְּיַעֲרוֹת גֶּשֶׁם.",
             definitionNative = "Тропическая птица с огромным разноцветным клювом, живёт в дождевых лесах.",
@@ -688,7 +688,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187515, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_birds_exotic", transliteration = "kolibri",
+            pos = "noun", semanticGroup = "animal_birds_exotic",
             original = "קוֹלִיבְּרִי", translation = "колибри",
             definition = "צִפּוֹר זְעִירָה הַמַּכְנִיפָה כָּל-כָּךְ מָהֵר שֶׁהִיא יְכוֹלָה לְרַחֵף בָּאֲוִיר.",
             definitionNative = "Крошечная птица, машет крыльями так быстро, что зависает в воздухе.",
@@ -697,7 +697,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187512L, 187513L, 187514L, 187516L)),
         WordEntity(
             id = 187516, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_birds_exotic", transliteration = "pinguin",
+            pos = "noun", semanticGroup = "animal_birds_exotic",
             original = "פִּינְגְוִוין", translation = "пингвин",
             definition = "צִפּוֹר יָמִית בִּלְתִּי-עָפָה הַחַיָּה בָּאַנְטַרְקְטִיקָה וְשׂוֹחָה הֵיטֵב.",
             definitionNative = "Нелетающая морская птица, обитает в Антарктиде, отлично плавает.",
@@ -708,7 +708,7 @@ object WordDataHebrewAnimals {
         // ── animal_nocturnal (5) — ночные звери ──────────────────────────
         WordEntity(
             id = 187517, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_nocturnal", transliteration = "rakun",
+            pos = "noun", semanticGroup = "animal_nocturnal",
             original = "רָקוּן", translation = "енот",
             definition = "יוֹנֵק לֵילִי עִם מַסֵּכָה שְׁחוֹרָה עַל הַפָּנִים שֶׁשּׁוֹטֵף אוֹכֶל בַּמַּיִם.",
             definitionNative = "Ночной зверь с чёрной маской на морде, моет еду в воде перед едой.",
@@ -717,7 +717,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187518L, 187519L, 187520L, 187521L)),
         WordEntity(
             id = 187518, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_nocturnal", transliteration = "opossum",
+            pos = "noun", semanticGroup = "animal_nocturnal",
             original = "אוֹפּוֹסוּם", translation = "опоссум",
             definition = "יוֹנֵק לֵילִי קַרְפָּדִי שֶׁמִּתְחַזֶּה לְמֵת כְּשֶׁהוּא בְּסַכָּנָה.",
             definitionNative = "Ночное сумчатое млекопитающее, притворяется мёртвым при опасности.",
@@ -726,7 +726,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187517L, 187519L, 187520L, 187521L)),
         WordEntity(
             id = 187519, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_nocturnal", transliteration = "lemur",
+            pos = "noun", semanticGroup = "animal_nocturnal",
             original = "לֶמוּר", translation = "лемур",
             definition = "פְּרִימָט קָטָן עִם עֵינַיִם גְּדוֹלוֹת הַחַי רַק בְּמָדָגָסְקָר.",
             definitionNative = "Маленький примат с большими глазами, обитает только на Мадагаскаре.",
@@ -735,7 +735,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187520, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_nocturnal", transliteration = "ginshi",
+            pos = "noun", semanticGroup = "animal_nocturnal",
             original = "גִּ'ינְשִׁי", translation = "генетта",
             definition = "יוֹנֵק טוֹרֵף לֵילִי קָטָן וּמְנוּמָר הַחַי בָּאַפְרִיקָה וּבְצָפוֹן יָם תִּיכוֹן.",
             definitionNative = "Маленький ночной пятнистый хищник, обитает в Африке и на севере Средиземноморья.",
@@ -744,7 +744,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187517L, 187518L, 187519L, 187521L)),
         WordEntity(
             id = 187521, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_nocturnal", transliteration = "loris",
+            pos = "noun", semanticGroup = "animal_nocturnal",
             original = "לוֹרִיס", translation = "лори",
             definition = "פְּרִימָט לֵילִי אִטִּי עִם עֵינַיִם עֲנָקִיּוֹת הַחַי בְּיַעֲרוֹת אַסְיָה.",
             definitionNative = "Медлительный ночной примат с огромными глазами, живёт в азиатских лесах.",
@@ -755,7 +755,7 @@ object WordDataHebrewAnimals {
         // ── animal_arthropods (4) — крупные членистоногие ────────────────
         WordEntity(
             id = 187522, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_arthropods", transliteration = "khargol",
+            pos = "noun", semanticGroup = "animal_arthropods",
             original = "חַרְגּוֹל", translation = "кузнечик",
             definition = "חֶרֶק יָרֹק קוֹפֵץ הַמַּשְׁמִיעַ צְלִיל בַּחַמּוֹת עֶרֶב הַקַּיִץ.",
             definitionNative = "Зелёное прыгающее насекомое, стрекочущее в тёплые летние вечера.",
@@ -764,7 +764,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187523L, 187524L, 187525L)),
         WordEntity(
             id = 187523, setId = 1875, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "animal_arthropods", transliteration = "tslatsal",
+            pos = "noun", semanticGroup = "animal_arthropods",
             original = "צְלָצַל", translation = "цикада",
             definition = "חֶרֶק קַיִץ הַמַּשְׁמִיעַ זִמְזוּם רַם בָּעֲצֵי הַזַּיִת.",
             definitionNative = "Летнее насекомое, издающее громкое стрекотание в кронах оливковых деревьев.",
@@ -773,7 +773,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187524, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_arthropods", transliteration = "shapirit",
+            pos = "noun", semanticGroup = "animal_arthropods",
             original = "שַׁפִּירִית", translation = "стрекоза",
             definition = "חֶרֶק עָף עִם אַרְבַּע כְּנָפַיִם שְׁקוּפוֹת הַצָּד מֵעַל בֵּרֵכוֹת.",
             definitionNative = "Летающее насекомое с четырьмя прозрачными крыльями, охотится над прудами.",
@@ -782,7 +782,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187525, setId = 1875, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_arthropods", transliteration = "merivnayim",
+            pos = "noun", semanticGroup = "animal_arthropods",
             original = "מַרְבֵּה רַגְלַיִם", translation = "многоножка",
             definition = "פַּרְקוֹדָן אָרֹךְ עִם עֲשָׂרוֹת רַגְלַיִם הַחַי תַּחַת אֶבֶן וְעָלִים.",
             definitionNative = "Длинное членистоногое с десятками ног, живёт под камнями и листвой.",
@@ -797,7 +797,7 @@ object WordDataHebrewAnimals {
         // ── animal_australia (5) — австралийская фауна ───────────────────
         WordEntity(
             id = 187601, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_australia", transliteration = "kanguru",
+            pos = "noun", semanticGroup = "animal_australia",
             original = "קֶנְגוֹרוֹ", translation = "кенгуру",
             definition = "יוֹנֵק כִּיסָנִי גָּדוֹל הַקּוֹפֵץ עַל רַגְלַיִם אֲחוֹרִיּוֹת חֲזָקוֹת.",
             definitionNative = "Крупное сумчатое млекопитающее, прыгающее на сильных задних лапах.",
@@ -806,7 +806,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187602, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_australia", transliteration = "ko'ala",
+            pos = "noun", semanticGroup = "animal_australia",
             original = "קוֹאָלָה", translation = "коала",
             definition = "יוֹנֵק כִּיסָנִי קָטָן עִם פַּרְוָה אֲפֹרָה הַחַי עַל עֵצֵי אֵיקָלִיפְּטוּס.",
             definitionNative = "Маленькое сумчатое с серой шерстью, живёт на эвкалиптовых деревьях.",
@@ -815,7 +815,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187603, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_australia", transliteration = "platypus",
+            pos = "noun", semanticGroup = "animal_australia",
             original = "פְּלָטִיפּוּס", translation = "утконос",
             definition = "יוֹנֵק נָדִיר עִם מַקּוֹר בַּרְוָז וְזָנָב בּוֹנֶה הַמַּטִּיל בֵּיצִים.",
             definitionNative = "Редкое млекопитающее с утиным клювом и хвостом бобра, откладывающее яйца.",
@@ -824,7 +824,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187601L, 187602L, 187604L, 187605L)),
         WordEntity(
             id = 187604, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_australia", transliteration = "wombat",
+            pos = "noun", semanticGroup = "animal_australia",
             original = "ווֹמְבָּט", translation = "вомбат",
             definition = "יוֹנֵק כִּיסָנִי כְּבַד-גּוּף הַחוֹפֵר מְחִלּוֹת עֲמֻקּוֹת בָּאֲדָמָה.",
             definitionNative = "Грузное сумчатое млекопитающее, роющее глубокие норы в земле.",
@@ -833,7 +833,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187601L, 187602L, 187603L, 187605L)),
         WordEntity(
             id = 187605, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_australia", transliteration = "ekhidna",
+            pos = "noun", semanticGroup = "animal_australia",
             original = "אֶכִידְנָה", translation = "ехидна",
             definition = "יוֹנֵק נָדִיר מָלֵא קוֹצִים הַמַּטִּיל בֵּיצִים וְאוֹכֵל נְמָלִים.",
             definitionNative = "Редкое колючее млекопитающее, откладывает яйца и питается муравьями.",
@@ -844,7 +844,7 @@ object WordDataHebrewAnimals {
         // ── animal_africa_endemic (5) — африканские эндемики ─────────────
         WordEntity(
             id = 187606, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_africa_endemic", transliteration = "ardvark",
+            pos = "noun", semanticGroup = "animal_africa_endemic",
             original = "אַרְדְּוַארְק", translation = "трубкозуб",
             definition = "יוֹנֵק לֵילִי אַפְרִיקָאִי עִם אַף אָרֹךְ וְלָשׁוֹן דַּבִּיקָה לְלִכּוּד נְמָלִים.",
             definitionNative = "Ночное африканское млекопитающее с длинным носом и липким языком для муравьёв.",
@@ -853,7 +853,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187607L, 187608L, 187609L, 187610L)),
         WordEntity(
             id = 187607, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_africa_endemic", transliteration = "okapi",
+            pos = "noun", semanticGroup = "animal_africa_endemic",
             original = "אוֹקַפִּי", translation = "окапи",
             definition = "יוֹנֵק נָדִיר מִקּוֹנְגוֹ הַדּוֹמֶה לְצֶבַע עִם פַּסִּים רַק עַל הָרַגְלַיִם.",
             definitionNative = "Редкое млекопитающее из Конго, похожее на жирафа с полосатыми ногами.",
@@ -862,7 +862,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187606L, 187608L, 187609L, 187610L)),
         WordEntity(
             id = 187608, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_africa_endemic", transliteration = "pengolin",
+            pos = "noun", semanticGroup = "animal_africa_endemic",
             original = "פֶּנְגוֹלִין", translation = "панголин",
             definition = "יוֹנֵק מְכֻסֶּה קַשְׂקַשִּׂים קָשִׁים שֶׁמִּתְגַּלְגֵּל לְכַדּוּר הָגָנָתִי.",
             definitionNative = "Млекопитающее, покрытое жёсткой чешуёй, сворачивается в защитный шар.",
@@ -871,7 +871,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187606L, 187607L, 187609L, 187610L)),
         WordEntity(
             id = 187609, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_africa_endemic", transliteration = "khamelyon",
+            pos = "noun", semanticGroup = "animal_africa_endemic",
             original = "חַמְלְיוֹן", translation = "хамелеон",
             definition = "לְטָאָה הַמַּחֲלִיפָה צֶבַע וְזוֹרֶקֶת לָשׁוֹן אֲרֻכָּה לְלִכּוּד חֲרָקִים.",
             definitionNative = "Ящерица, меняющая цвет и выбрасывающая длинный язык для ловли насекомых.",
@@ -880,7 +880,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187606L, 187607L, 187608L, 187610L)),
         WordEntity(
             id = 187610, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_africa_endemic", transliteration = "iguana",
+            pos = "noun", semanticGroup = "animal_africa_endemic",
             original = "אִיגוּאָנָה", translation = "игуана",
             definition = "לְטָאָה גְּדוֹלָה עִם רֶכֶס קוֹצִים לְאֹרֶךְ הַגָּב הַחַיָּה בָּאַמֶרִיקוֹת.",
             definitionNative = "Крупная ящерица с гребнем шипов вдоль спины, обитает в Америках.",
@@ -891,7 +891,7 @@ object WordDataHebrewAnimals {
         // ── animal_primates (5) — приматы ────────────────────────────────
         WordEntity(
             id = 187611, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_primates", transliteration = "shimpanze",
+            pos = "noun", semanticGroup = "animal_primates",
             original = "שִׁימְפַּנְזֶה", translation = "шимпанзе",
             definition = "פְּרִימָט חָכָם בְּמְיֻחָד הַחַי בִּלְהָקוֹת בְּיַעֲרוֹת אַפְרִיקָה.",
             definitionNative = "Очень умный примат, живущий стаями в африканских лесах.",
@@ -900,7 +900,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187612, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_primates", transliteration = "bonobo",
+            pos = "noun", semanticGroup = "animal_primates",
             original = "בּוֹנוֹבּוֹ", translation = "бонобо",
             definition = "פְּרִימָט נָדִיר מִקּוֹנְגוֹ קָרוֹב לִשִּׁימְפַּנְזֶה אַךְ עִם אֻפִי שָׁלֵו יוֹתֵר.",
             definitionNative = "Редкий примат из Конго, родственник шимпанзе, но с более миролюбивым нравом.",
@@ -909,7 +909,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187613, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_primates", transliteration = "gorila",
+            pos = "noun", semanticGroup = "animal_primates",
             original = "גּוֹרִילָה", translation = "горилла",
             definition = "הַפְּרִימָט הַגָּדוֹל בְּיוֹתֵר עִם פַּרְוָה כֵּהָה הַחַי בָּהָרֵי אַפְרִיקָה.",
             definitionNative = "Самый крупный примат с тёмной шерстью, живёт в горах Африки.",
@@ -918,7 +918,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187611L, 187612L, 187614L, 187615L)),
         WordEntity(
             id = 187614, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_primates", transliteration = "orangutan",
+            pos = "noun", semanticGroup = "animal_primates",
             original = "אוֹרַנְגוּטָן", translation = "орангутан",
             definition = "פְּרִימָט בְּפַרְוָה אֲדֻמָּה הַחַי לְבַד עַל עֲצֵי יַעֲרוֹת בּוֹרְנֵאוֹ.",
             definitionNative = "Примат с рыжей шерстью, живущий в одиночку на деревьях лесов Борнео.",
@@ -927,7 +927,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187611L, 187612L, 187613L, 187615L)),
         WordEntity(
             id = 187615, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_primates", transliteration = "tarsier",
+            pos = "noun", semanticGroup = "animal_primates",
             original = "טַרְסִיֶּר", translation = "долгопят",
             definition = "פְּרִימָט זָעִיר לֵילִי עִם עֵינַיִם עֲנָקִיּוֹת מְיֻחָדוֹת לִרְאִיַּת לַיְלָה.",
             definitionNative = "Крошечный ночной примат с огромными глазами, идеально видящими в темноте.",
@@ -938,7 +938,7 @@ object WordDataHebrewAnimals {
         // ── animal_rare_ungulates (5) — редкие копытные ──────────────────
         WordEntity(
             id = 187616, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_rare_ungulates", transliteration = "ye'el",
+            pos = "noun", semanticGroup = "animal_rare_ungulates",
             original = "יָעֵל", translation = "горный козёл; ибекс",
             definition = "חַיַּת בַּר עִם קַרְנַיִם מְעוּקָּמוֹת וַאֲרֻכּוֹת הַחַיָּה בִּצְוֵיקֵי הַמִּדְבָּר.",
             definitionNative = "Дикий зверь с длинными изогнутыми рогами, обитает на горных скалах.",
@@ -947,7 +947,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187617, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_rare_ungulates", transliteration = "tapir",
+            pos = "noun", semanticGroup = "animal_rare_ungulates",
             original = "טָאפִּיר", translation = "тапир",
             definition = "יוֹנֵק מְלֵא-גוּף עִם חוֹטֶם קָצָר וְזָרִיז הַחַי בְּיַעֲרוֹת טְרוֹפִּיִּים.",
             definitionNative = "Полнотелое млекопитающее с коротким подвижным хоботком, живёт в тропических лесах.",
@@ -956,7 +956,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187618, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_rare_ungulates", transliteration = "saiga",
+            pos = "noun", semanticGroup = "animal_rare_ungulates",
             original = "סַיְגָה", translation = "сайгак",
             definition = "אַנְטִילוֹפָה נָדִירָה עִם חוֹטֶם נָפוּחַ הַחַיָּה בִּעֲרָבוֹת אַסְיָה.",
             definitionNative = "Редкая антилопа с раздутым носом-хоботком, обитает в азиатских степях.",
@@ -965,7 +965,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187619, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_rare_ungulates", transliteration = "lama",
+            pos = "noun", semanticGroup = "animal_rare_ungulates",
             original = "לָאמָה", translation = "лама",
             definition = "יוֹנֵק דָּרוֹם-אַמֶרִיקָאִי עִם פַּרְוָה עָבָה הַמְשַׁמֵּשׁ לְהוֹבָלָה בָּהָרִים.",
             definitionNative = "Южноамериканское млекопитающее с густой шерстью — на нём возят грузы по горам.",
@@ -974,7 +974,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187620, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_rare_ungulates", transliteration = "muntjak",
+            pos = "noun", semanticGroup = "animal_rare_ungulates",
             original = "מוּנְטְיָאק", translation = "мунтжак",
             definition = "אַיָּל קָטָן וְנָדִיר מֵדְּרוֹם-מִזְרַח אַסְיָה עִם נִיבִים בְּפֶה.",
             definitionNative = "Маленький редкий олень из Юго-Восточной Азии с клыками во рту.",
@@ -985,7 +985,7 @@ object WordDataHebrewAnimals {
         // ── animal_marine_deep (5) — глубоководные ───────────────────────
         WordEntity(
             id = 187621, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_marine_deep", transliteration = "narval",
+            pos = "noun", semanticGroup = "animal_marine_deep",
             original = "נַרְוָל", translation = "нарвал",
             definition = "לִוְיָתָן קָטָן בְּסִיבָתִי עִם קֶרֶן אֲרֻכָּה הַחַי בִּמְאוֹרֵי הָאַרְקְטִיקָה.",
             definitionNative = "Маленький арктический китообразный с длинным винтообразным бивнем.",
@@ -994,7 +994,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187622, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_marine_deep", transliteration = "selakanat",
+            pos = "noun", semanticGroup = "animal_marine_deep",
             original = "סְלָקָנְט", translation = "целакант",
             definition = "דַּג קַדְמוֹנִי שֶׁנֶּחְשַׁב לְנִכְחָד עַד שֶׁהִתְגַּלָּה מֵחָדָשׁ בַּמְּאָה הַ-20.",
             definitionNative = "Древняя рыба, считавшаяся вымершей, пока её не открыли заново в XX веке.",
@@ -1003,7 +1003,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187623, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_marine_deep", transliteration = "axolotl",
+            pos = "noun", semanticGroup = "animal_marine_deep",
             original = "אַקְסוֹלוֹטְל", translation = "аксолотль",
             definition = "דּוּ-חַיִּי נָדִיר מִמֶּקְסִיקוֹ הַשּׁוֹמֵר עַל זִימִים גַּם כְּבוֹגֵר.",
             definitionNative = "Редкая мексиканская амфибия, сохраняющая жабры даже во взрослом виде.",
@@ -1012,7 +1012,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187621L, 187622L, 187624L, 187625L)),
         WordEntity(
             id = 187624, setId = 1876, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_marine_deep", transliteration = "kalmar anak",
+            pos = "noun", semanticGroup = "animal_marine_deep",
             original = "קַלְמָר עֲנָק", translation = "гигантский кальмар",
             definition = "רַכִּיכָה יָמִית עֲנָקִית עִם זְרוֹעוֹת אֲרֻכּוֹת הַחַיָּה בְּמַעֲמַקֵּי הָאוֹקְיָנוֹס.",
             definitionNative = "Гигантский морской моллюск с длинными щупальцами, живёт в океанских глубинах.",
@@ -1021,7 +1021,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187625, setId = 1876, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "animal_marine_deep", transliteration = "lutra",
+            pos = "noun", semanticGroup = "animal_marine_deep",
             original = "לוּטְרָה", translation = "выдра",
             definition = "יוֹנֵק טוֹרֵף מַיִם עִם פַּרְוָה עָמִיד הַחַי בִּנְהָרוֹת וְעַל חוֹפִים.",
             definitionNative = "Хищное водное млекопитающее с водонепроницаемой шерстью, живёт у рек и побережий.",
@@ -1036,7 +1036,7 @@ object WordDataHebrewAnimals {
         // ── animal_taxonomy_classes (5) — классы ─────────────────────────
         WordEntity(
             id = 187701, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_classes", transliteration = "yonek",
+            pos = "noun", semanticGroup = "animal_taxonomy_classes",
             original = "יוֹנֵק", translation = "млекопитающее",
             definition = "בַּעַל חַיִּים שֶׁנּוֹתֵן חָלָב לִילָדָיו וּבְדֶרֶךְ כְּלָל מְכֻסֶּה פַּרְוָה.",
             definitionNative = "Существо, выкармливающее детёнышей молоком и обычно покрытое шерстью.",
@@ -1045,7 +1045,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187702, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_classes", transliteration = "zokhel",
+            pos = "noun", semanticGroup = "animal_taxonomy_classes",
             original = "זוֹחֵל", translation = "пресмыкающееся; рептилия",
             definition = "בַּעַל חַיִּים בְּדַם קַר עִם קַשְׂקַשִּׂים שֶׁמַּטִּיל בֵּיצִים בַּיַּבָּשָׁה.",
             definitionNative = "Холоднокровное существо с чешуёй, откладывающее яйца на суше.",
@@ -1054,7 +1054,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187701L, 187703L, 187704L, 187705L)),
         WordEntity(
             id = 187703, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_classes", transliteration = "du-khayi",
+            pos = "noun", semanticGroup = "animal_taxonomy_classes",
             original = "דּוּ-חַיִּי", translation = "земноводное; амфибия",
             definition = "בַּעַל חַיִּים שֶׁחַי בְּחֵלֶק שֶׁל חַיָּיו בַּמַּיִם וּבְחֵלֶק עַל הַיַּבָּשָׁה.",
             definitionNative = "Существо, проводящее часть жизни в воде, а часть — на суше.",
@@ -1063,7 +1063,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187701L, 187702L, 187704L, 187705L)),
         WordEntity(
             id = 187704, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_classes", transliteration = "aviriyot",
+            pos = "noun", semanticGroup = "animal_taxonomy_classes",
             original = "אַוִיריוֹת", translation = "птицы (класс Aves)",
             definition = "מַחְלָקַת חֻלְיָתָנִים עִם נוֹצוֹת וּמַקּוֹר שֶׁמַּטִּילָה בֵּיצִים בַּקֵּן.",
             definitionNative = "Класс позвоночных с перьями и клювом, откладывающих яйца в гнезде.",
@@ -1072,7 +1072,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187701L, 187702L, 187703L, 187705L)),
         WordEntity(
             id = 187705, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_classes", transliteration = "dag",
+            pos = "noun", semanticGroup = "animal_taxonomy_classes",
             original = "דָּגִים", translation = "рыбы (класс)",
             definition = "בַּעֲלֵי חַיִּים יָמִיִּים בְּדַם קַר הַנּוֹשְׁמִים בְּזִימִים וְשׂוֹחִים בְּסַנְפִּירִים.",
             definitionNative = "Холоднокровные водные существа, дышащие жабрами и плавающие плавниками.",
@@ -1083,7 +1083,7 @@ object WordDataHebrewAnimals {
         // ── animal_taxonomy_phyla (5) — типы (phyla) ─────────────────────
         WordEntity(
             id = 187706, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_phyla", transliteration = "khasrei khulyot",
+            pos = "noun", semanticGroup = "animal_taxonomy_phyla",
             original = "חַסְרֵי חֻלְיוֹת", translation = "беспозвоночные",
             definition = "קְבוּצַת בַּעֲלֵי חַיִּים גְּדוֹלָה שֶׁאֵין בָּהֶם עַמּוּד שִׁדְרָה.",
             definitionNative = "Огромная группа существ, у которых нет позвоночника.",
@@ -1092,7 +1092,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187707L, 187708L, 187709L, 187710L)),
         WordEntity(
             id = 187707, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_phyla", transliteration = "khulyatanim",
+            pos = "noun", semanticGroup = "animal_taxonomy_phyla",
             original = "חֻלְיָתָנִים", translation = "позвоночные",
             definition = "תַּת-מַעֲרֶכֶת שֶׁל בַּעֲלֵי חַיִּים בַּעֲלֵי עַמּוּד שִׁדְרָה וְגֻלְגֹּלֶת.",
             definitionNative = "Подтип существ, обладающих внутренним хребтом и черепом.",
@@ -1101,7 +1101,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187706L, 187708L, 187709L, 187710L)),
         WordEntity(
             id = 187708, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_phyla", transliteration = "pruke raglayim",
+            pos = "noun", semanticGroup = "animal_taxonomy_phyla",
             original = "פְּרוּקֵי רַגְלַיִם", translation = "членистоногие",
             definition = "מַעֲרֶכֶת עֲנָקִית שֶׁל יְצוּרִים בַּעֲלֵי שֶׁלֶד חִיצוֹנִי וְגֵפַיִם מְחֻלָּקוֹת לִקְטָעִים.",
             definitionNative = "Гигантский тип беспозвоночных с наружным скелетом и сегментированными конечностями.",
@@ -1110,7 +1110,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187706L, 187707L, 187709L, 187710L)),
         WordEntity(
             id = 187709, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_phyla", transliteration = "rakikhot",
+            pos = "noun", semanticGroup = "animal_taxonomy_phyla",
             original = "רַכִּיכוֹת", translation = "моллюски",
             definition = "מַעֲרֶכֶת בַּעֲלֵי חַיִּים רַכִּים, רֻבָּם בַּעֲלֵי קוֹנְכִיּוֹת חוֹזְקוֹת.",
             definitionNative = "Тип мягкотелых существ, большинство которых обладают прочной раковиной.",
@@ -1119,7 +1119,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187706L, 187707L, 187708L, 187710L)),
         WordEntity(
             id = 187710, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_phyla", transliteration = "kosrei eor",
+            pos = "noun", semanticGroup = "animal_taxonomy_phyla",
             original = "קוֹצְנֵי עוֹר", translation = "иглокожие",
             definition = "מַעֲרֶכֶת יָמִית עִם סִימֶטְרְיָה רַדְיָאלִית שֶׁל חָמֵשׁ זְרוֹעוֹת.",
             definitionNative = "Морской тип с радиальной симметрией пятилучевого строения.",
@@ -1130,7 +1130,7 @@ object WordDataHebrewAnimals {
         // ── animal_taxonomy_orders (5) — отряды ──────────────────────────
         WordEntity(
             id = 187711, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_orders", transliteration = "tor'fim",
+            pos = "noun", semanticGroup = "animal_taxonomy_orders",
             original = "טוֹרְפִים", translation = "хищные (отряд)",
             definition = "סֵדֶר יוֹנְקִים עִם נִיבִים חַדִּים שֶׁאוֹכְלִים בָּעִקָּר בָּשָׂר.",
             definitionNative = "Отряд млекопитающих с острыми клыками, питающихся в основном мясом.",
@@ -1139,7 +1139,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187712, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_orders", transliteration = "makhresemim",
+            pos = "noun", semanticGroup = "animal_taxonomy_orders",
             original = "מַכְרְסְמִים", translation = "грызуны",
             definition = "סֵדֶר יוֹנְקִים עִם שִׁנֵּי חוֹתֶכֶת אֲרֻכּוֹת שֶׁגְּדֵלוֹת לְלֹא הֲפֻגָּה.",
             definitionNative = "Отряд млекопитающих с длинными резцами, постоянно растущими в течение жизни.",
@@ -1148,7 +1148,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187713, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_orders", transliteration = "primatim",
+            pos = "noun", semanticGroup = "animal_taxonomy_orders",
             original = "פְּרִימָטִים", translation = "приматы (отряд)",
             definition = "סֵדֶר יוֹנְקִים עִם מֹחַ מְפֻתָּח וְכַפּוֹת יָדַיִם בַּעֲלוֹת אֶצְבָּעוֹת מְתַפְקְדוֹת.",
             definitionNative = "Отряд млекопитающих с развитым мозгом и кистями с подвижными пальцами.",
@@ -1157,7 +1157,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187711L, 187712L, 187714L, 187715L)),
         WordEntity(
             id = 187714, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_orders", transliteration = "kisanim",
+            pos = "noun", semanticGroup = "animal_taxonomy_orders",
             original = "כִּיסָנִים", translation = "сумчатые",
             definition = "סֵדֶר יוֹנְקִים שֶׁבּוֹ הַצֶּאֱצָאִים מִתְפַּתְּחִים בְּכִיס חִיצוֹנִי שֶׁל הָאֵם.",
             definitionNative = "Отряд млекопитающих, чьи детёныши развиваются в наружной сумке матери.",
@@ -1166,7 +1166,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187711L, 187712L, 187713L, 187715L)),
         WordEntity(
             id = 187715, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_orders", transliteration = "ketaceim",
+            pos = "noun", semanticGroup = "animal_taxonomy_orders",
             original = "קֵטָצֵאִים", translation = "китообразные",
             definition = "סֵדֶר יוֹנְקִים יָמִיִּים שֶׁכָּל חַיֵּיהֶם עוֹבְרִים בְּתוֹךְ מַיִם.",
             definitionNative = "Отряд морских млекопитающих, проводящих всю жизнь в воде.",
@@ -1177,7 +1177,7 @@ object WordDataHebrewAnimals {
         // ── animal_taxonomy_concepts (5) — общие зоологические понятия ───
         WordEntity(
             id = 187716, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_concepts", transliteration = "endemi",
+            pos = "noun", semanticGroup = "animal_taxonomy_concepts",
             original = "אֶנְדֵּמִי", translation = "эндемик",
             definition = "מִין הַחַי רַק בְּאֵיזוֹר גֵּאוֹגְרָפִי מְצֻמְצָם וְלֹא נִמְצָא בְּשׁוּם מָקוֹם אַחֵר.",
             definitionNative = "Вид, обитающий только в одном географическом регионе и нигде больше.",
@@ -1186,7 +1186,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187717L, 187718L, 187719L, 187720L)),
         WordEntity(
             id = 187717, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_concepts", transliteration = "takson",
+            pos = "noun", semanticGroup = "animal_taxonomy_concepts",
             original = "טַקְסוֹן", translation = "таксон",
             definition = "יְחִידָה בְּמַעֲרֶכֶת הַסִּיוּג שֶׁל יְצוּרִים — מִדַּרְגַּת מַלְכוּת וְעַד דַּרְגַּת זָן.",
             definitionNative = "Единица классификации существ — от ранга царства до ранга расы.",
@@ -1195,7 +1195,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187716L, 187718L, 187719L, 187720L)),
         WordEntity(
             id = 187718, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_concepts", transliteration = "tat-min",
+            pos = "noun", semanticGroup = "animal_taxonomy_concepts",
             original = "תַּת-מִין", translation = "подвид",
             definition = "קְבוּצַת פְּרָטִים בְּמִין מַסּוּיָם שֶׁשּׁוֹנָה מְעַט מִשְּׁאָר הַמִּין בְּמַרְאֶה.",
             definitionNative = "Группа особей внутри одного вида, слегка отличающаяся от остальных по облику.",
@@ -1204,7 +1204,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187716L, 187717L, 187719L, 187720L)),
         WordEntity(
             id = 187719, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_concepts", transliteration = "be'al-khulyot",
+            pos = "noun", semanticGroup = "animal_taxonomy_concepts",
             original = "בַּעַל-חֻלְיוֹת", translation = "позвоночное",
             definition = "פֶּרֶט יָחִיד מִקְּבוּצַת בַּעֲלֵי הַחַיִּים שֶׁיֵּשׁ לָהֶם עַמּוּד שִׁדְרָה.",
             definitionNative = "Отдельная особь из группы существ, у которых есть внутренний хребет.",
@@ -1213,7 +1213,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187716L, 187717L, 187718L, 187720L)),
         WordEntity(
             id = 187720, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_concepts", transliteration = "tzimkhonim",
+            pos = "noun", semanticGroup = "animal_taxonomy_concepts",
             original = "צִמְחוֹנִיִּים", translation = "травоядные",
             definition = "קְבוּצַת בַּעֲלֵי חַיִּים שֶׁאוֹכְלִים רַק צְמָחִים וְלֹא בָּשָׂר.",
             definitionNative = "Группа существ, питающихся только растениями и не употребляющих мяса.",
@@ -1224,7 +1224,7 @@ object WordDataHebrewAnimals {
         // ── animal_taxonomy_ecology (5) — экология ──────────────────────
         WordEntity(
             id = 187721, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_ecology", transliteration = "tor'fan",
+            pos = "noun", semanticGroup = "animal_taxonomy_ecology",
             original = "טוֹרְפָן", translation = "хищник (плотоядный)",
             definition = "בַּעַל חַיִּים הַנִּזּוֹן בִּבְשַׂר חַיּוֹת אֲחֵרוֹת שֶׁתָּפַס בְּעַצְמוֹ.",
             definitionNative = "Существо, питающееся плотью других животных, добытых им самостоятельно.",
@@ -1233,7 +1233,7 @@ object WordDataHebrewAnimals {
          fillInBlankExclusions = listOf(187722L, 187723L, 187724L, 187725L)),
         WordEntity(
             id = 187722, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_ecology", transliteration = "nitzud",
+            pos = "noun", semanticGroup = "animal_taxonomy_ecology",
             original = "נְטוּעַ", translation = "добыча; жертва (экол.)",
             definition = "בַּעַל חַיִּים הַמְשַׁמֵּשׁ מַטָּרַת צַיִד לְבַעֲלֵי חַיִּים אֲחֵרִים.",
             definitionNative = "Существо, служащее объектом охоты для других хищных животных.",
@@ -1242,7 +1242,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187723, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_ecology", transliteration = "nedida",
+            pos = "noun", semanticGroup = "animal_taxonomy_ecology",
             original = "נְדִידָה", translation = "миграция (животных)",
             definition = "מַסָּע אַרֻךְ שֶׁל בַּעֲלֵי חַיִּים בֵּין שְׁנֵי אֵיזוֹרִים לְפִי עוֹנוֹת הַשָּׁנָה.",
             definitionNative = "Длительное перемещение животных между двумя регионами по сезонам года.",
@@ -1251,7 +1251,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187724, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_ecology", transliteration = "shimur",
+            pos = "noun", semanticGroup = "animal_taxonomy_ecology",
             original = "שִׁמּוּר", translation = "охрана природы (видов)",
             definition = "פְּעֻלּוֹת לְהַגַן עַל מִינִים בַּעֲלֵי סַכָּנַת הַכְּחָדָה וְעַל מַעֲרָכָה אֵקוֹלוֹגִיָּה.",
             definitionNative = "Действия для защиты вымирающих видов и сохранения экосистем.",
@@ -1260,7 +1260,7 @@ object WordDataHebrewAnimals {
         ),
         WordEntity(
             id = 187725, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "animal_taxonomy_ecology", transliteration = "hakhada",
+            pos = "noun", semanticGroup = "animal_taxonomy_ecology",
             original = "הַכְחָדָה", translation = "вымирание (видов)",
             definition = "הַעָלְמוּת מֻחְלֶטֶת שֶׁל מִין מֵעַל פְּנֵי כַּדּוּר הָאָרֶץ.",
             definitionNative = "Полное исчезновение биологического вида с лица Земли.",

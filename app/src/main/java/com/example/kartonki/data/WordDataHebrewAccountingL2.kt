@@ -29,7 +29,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171401, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "צֵ'יק",
-            transliteration = "chek",
             translation = "чек (банковский)",
             definition = "מסמך כתוב להוצאת כסף מחשבון בנק עבור מקבל מסוים.",
             definitionNative = "Бумага с подписью, по которой банк выдаёт деньги получателю.",
@@ -41,7 +40,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171402, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "פִּנְקָס שֵׁקִּים",
-            transliteration = "pinkas shekim",
             translation = "чековая книжка",
             definition = "ספרון מהבנק עם דפים לכתיבת תשלומים מהחשבון.",
             definitionNative = "Книжечка от банка с бланками для выписки платежей со счёта.",
@@ -53,7 +51,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171403, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תַּלוּשׁ מַשְׂכֹּרֶת",
-            transliteration = "talush maskoret",
             translation = "расчётный листок",
             definition = "מסמך חודשי לעובד עם פירוט שכר ניכויים והפרשות.",
             definitionNative = "Месячная распечатка от работодателя с разбивкой выплат и удержаний.",
@@ -65,7 +62,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171404, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תַּדְפִּיס בַּנְקָאִי",
-            transliteration = "tadpis bankai",
             translation = "выписка из банка",
             definition = "פלט מודפס של תנועות בחשבון לתקופה מסוימת.",
             definitionNative = "Распечатка движений по счёту за выбранный период.",
@@ -77,7 +73,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171405, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "סִיכוּם חוֹדְשִׁי",
-            transliteration = "sikum khodshi",
             translation = "месячный итог / месячная сводка",
             definition = "טבלה שמסכמת את כל הפעולות של החודש לעובדים ולספקים.",
             definitionNative = "Таблица, где собраны все операции месяца по сотрудникам и поставщикам.",
@@ -92,7 +87,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171406, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "הַעֲבָרָה בַּנְקָאִית",
-            transliteration = "ha'avara bankait",
             translation = "банковский перевод",
             definition = "פעולה להעביר כסף מחשבון אחד לחשבון של אדם או עסק אחר.",
             definitionNative = "Операция отправки денег с одного счёта на другой через банк.",
@@ -104,7 +98,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171407, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "עֶמְלָה",
-            transliteration = "amla",
             translation = "комиссия (банковская)",
             definition = "סכום קטן שגובה הבנק עבור פעולה או שירות פיננסי.",
             definitionNative = "Небольшая сумма, которую банк берёт за услугу или операцию.",
@@ -116,7 +109,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171408, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "פְּעוּלָה חֶשְׁבּוֹנַאִית",
-            transliteration = "pe'ula kheshbonait",
             translation = "учётная операция",
             definition = "כל רישום של תנועת כסף או נכס בספרי החברה.",
             definitionNative = "Любая запись о движении денег или имущества в книгах фирмы.",
@@ -128,7 +120,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171409, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "פְּרִיטָה",
-            transliteration = "prita",
             translation = "размен (купюр на мелкие)",
             definition = "החלפת שטר גדול לכמה שטרות או מטבעות קטנים יותר.",
             definitionNative = "Обмен крупной купюры на несколько мелких — деньгами или монетами.",
@@ -140,7 +131,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171410, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "הַעֲבָרָה לְזִכּוּי",
-            transliteration = "ha'avara lezikuy",
             translation = "перевод на пополнение",
             definition = "תנועה שמוסיפה כסף לחשבון של מקבל ולא מורידה ממנו.",
             definitionNative = "Поступление, которое прибавляет деньги получателю, а не списывает.",
@@ -155,7 +145,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171411, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מַחְזוֹר עִסְקִי",
-            transliteration = "makhzor iski",
             translation = "оборот / выручка фирмы",
             definition = "סך כל הכסף שעסק קיבל ממכירות לפני ניכוי הוצאות.",
             definitionNative = "Сумма всех поступлений от продаж — до вычета затрат.",
@@ -167,7 +156,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171412, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "הַכְנָסָה גוֹלְמִית",
-            transliteration = "hakhnasa golmit",
             translation = "валовой доход",
             definition = "סכום מלא שהתקבל ממכירה לפני ניכוי עלויות וניכוי מסים.",
             definitionNative = "Полное поступление от продаж — до вычета затрат и налогов.",
@@ -179,7 +167,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171413, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "רֶוַח גּוֹלְמִי",
-            transliteration = "revakh golmi",
             translation = "валовая прибыль",
             definition = "הפרש בין מכירות לעלות הסחורה לפני הוצאות אחרות.",
             definitionNative = "Разница между продажами и стоимостью товара — до прочих расходов.",
@@ -191,7 +178,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171414, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "רֶוַח נָקִי",
-            transliteration = "revakh naki",
             translation = "чистая прибыль",
             definition = "מה שנשאר אחרי כל ההוצאות והמסים בסוף תקופה.",
             definitionNative = "То, что остаётся после всех затрат и налогов за период.",
@@ -203,7 +189,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171415, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תּוֹסֶפֶת מַחִיר",
-            transliteration = "tosefet makhir",
             translation = "торговая наценка",
             definition = "אחוז שמוסיפים לעלות הקנייה כדי לקבוע את מחיר המכירה.",
             definitionNative = "Процент, который добавляют к закупочной цене, чтобы получить продажную.",
@@ -215,7 +200,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171416, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "שַׁעַר חֲלִיפִין",
-            transliteration = "sha'ar khalifin",
             translation = "обменный курс",
             definition = "יחס המרה בין מטבע אחד למטבע אחר ביום נתון.",
             definitionNative = "Соотношение, по которому одну валюту меняют на другую в этот день.",
@@ -230,7 +214,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171417, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "סְפָר רָאשִׁי",
-            transliteration = "sfar rashi",
             translation = "главная книга",
             definition = "ספר מרכזי שמרכז את כל הרשומות לפי חשבונות בעסק.",
             definitionNative = "Основной том, куда стекаются все записи по счетам фирмы.",
@@ -242,7 +225,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171418, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "סְפָר מָכִירוֹת",
-            transliteration = "sfar mekhirot",
             translation = "книга продаж",
             definition = "רישום מסודר של כל המכירות והחשבוניות שיוצאו ללקוחות.",
             definitionNative = "Реестр всех отгрузок и выставленных клиентам счетов.",
@@ -254,7 +236,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171419, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "סְפָר רְכִישׁוֹת",
-            transliteration = "sfar rekhishot",
             translation = "книга покупок",
             definition = "רישום מסודר של כל הקניות והחשבוניות שהתקבלו מספקים.",
             definitionNative = "Реестр всех закупок и счетов, которые пришли от поставщиков.",
@@ -266,7 +247,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171420, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "מָאזָן בּוֹחֵן",
-            transliteration = "ma'azan bokhen",
             translation = "пробный баланс",
             definition = "טבלת סיכום ביניים לבדיקת שוויון בין סכומי החובה והזכות.",
             definitionNative = "Промежуточная сводка для проверки равенства дебета и кредита.",
@@ -278,7 +258,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171421, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "אִישּׁוּר חֶשְׁבּוֹנוֹת",
-            transliteration = "ishur kheshbonot",
             translation = "сверка счетов",
             definition = "השוואה בין רישומי העסק לרישומי הבנק או הספק.",
             definitionNative = "Сравнение записей фирмы с данными банка или контрагента.",
@@ -290,7 +269,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171422, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "סְגִירַת תְּקוּפָה",
-            transliteration = "sgirat tkufa",
             translation = "закрытие периода",
             definition = "הליך לסיום רישום של חודש או רבעון לפני הוצאת דוחות.",
             definitionNative = "Процедура, которая завершает месяц или квартал перед выпуском отчётов.",
@@ -305,7 +283,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171423, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "זְכוּת",
-            transliteration = "zkhut",
             translation = "кредит (запись)",
             definition = "צד ימני ברישום שמראה הכנסה או גידול בהתחייבות לעסק.",
             definitionNative = "Правая сторона записи: показывает поступление или рост обязательства.",
@@ -317,7 +294,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171424, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "הוֹצָאוֹת קְבוּעוֹת",
-            transliteration = "hotsa'ot kvuot",
             translation = "постоянные расходы",
             definition = "תשלומים חודשיים קבועים שלא תלויים בנפח המכירות של העסק.",
             definitionNative = "Ежемесячные платежи, которые не зависят от объёма продаж.",
@@ -329,7 +305,6 @@ object WordDataHebrewAccountingL2 {
         WordEntity(
             id = 171425, setId = 1714, languagePair = "he-ru", rarity = "RARE",
             original = "חוֹב אָבוּד",
-            transliteration = "khov avud",
             translation = "безнадёжный долг",
             definition = "סכום שלקוח לא ישלם ושמוחקים אותו מהספרים בסוף השנה.",
             definitionNative = "Сумма, которую клиент не вернёт; её списывают в конце года.",

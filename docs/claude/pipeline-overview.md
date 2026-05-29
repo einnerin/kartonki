@@ -39,14 +39,14 @@
 
 | Уровень | Что | Запуск |
 |---|---|---|
-| Per-setId (19 hard-блок + 2 advisory) | Полный набор проверок одного сета | `bash scripts/validate/validate_all.sh <setId>` |
-| Глобальные | ID-коллизии, дубли тем, разброс редкости, name/topic, transliteration | `python scripts/validate/find_real_dupes.py` (pre-commit hook) |
+| Per-setId (18 hard-блок + 2 advisory) | Полный набор проверок одного сета | `bash scripts/validate/validate_all.sh <setId>` |
+| Глобальные | ID-коллизии, дубли тем, разброс редкости, name/topic | `python scripts/validate/find_real_dupes.py` (pre-commit hook) |
 | Preset DeckSeed | Orphans / wrong rarity / level-limit overflow | `python scripts/validate/validate_preset_decks.py` (pre-commit hook) |
 | FILL_IN_BLANK pipeline | hash-based staleness detection | `python scripts/validate/generate_fill_in_blank_exclusions.py --set-id N --apply` |
 | Scan-only (не блокирует) | `validate_original_in_examplenative` — exampleNative якорится к слову | Ручной батч-аудит |
 | Full-base audit | Прогон всех valid_all.sh по всем setIds | `bash scripts/validate/audit_all_files.sh` (~15 мин) |
 
-**21 валидатор внутри validate_all.sh** (19 hard-блок + 2 advisory: `validate_group_sizes`, `validate_no_cognates`) перечислены в самом скрипте. Регрессия валидаторов через fixture: `scripts/validate/tests/run_tests.sh` (19 × 2 = 38 проверок).
+**20 валидаторов внутри validate_all.sh** (18 hard-блок + 2 advisory: `validate_group_sizes`, `validate_no_cognates`) перечислены в самом скрипте. Регрессия валидаторов через fixture: `scripts/validate/tests/run_tests.sh` (36 проверок).
 
 ### Защита — 7 уровней
 

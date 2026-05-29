@@ -61,7 +61,7 @@ object WordDataHebrewStartupL1 {
         // ── startup_basic_company (5) — компания и сцена ──
         WordEntity(
             id = 178801, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_company", transliteration = "khevra",
+            pos = "noun", semanticGroup = "startup_basic_company",
             original = "חֶבְרָה", translation = "компания (фирма)",
             definition = "אִרְגּוּן שֶׁבּוֹ אֲנָשִׁים עוֹבְדִים יַחַד וּמוֹכְרִים מַשֶּׁהוּ לְלָקוֹחוֹת.",
             definitionNative = "Организация, где люди работают вместе и продают что-то клиентам.",
@@ -70,7 +70,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178802L, 178803L, 178804L, 178805L)),
         WordEntity(
             id = 178802, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_company", transliteration = "start-ap",
+            pos = "noun", semanticGroup = "startup_basic_company",
             original = "סְטַארְט-אַפּ", translation = "стартап",
             definition = "עֵסֶק טָרִי שֶׁמְּחַפֵּשׂ דֶּרֶךְ צְמִיחָה מְהִירָה בְּעֶזְרַת רַעְיוֹן חָדָשׁ.",
             definitionNative = "Свежий бизнес, что ищет путь быстрого роста через свежую идею.",
@@ -79,7 +79,7 @@ object WordDataHebrewStartupL1 {
         ),
         WordEntity(
             id = 178803, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_company", transliteration = "esek khadash",
+            pos = "noun", semanticGroup = "startup_basic_company",
             original = "עֵסֶק חָדָשׁ", translation = "новый бизнес",
             definition = "מַשֶּׁהוּ שֶׁבִּדְיוּק פּוֹתְחִים כְּדֵי לְהַרְוִויחַ כֶּסֶף בְּדֶרֶךְ עַצְמָאִית.",
             definitionNative = "Что-то, что только открывают, чтобы зарабатывать самостоятельно.",
@@ -88,7 +88,7 @@ object WordDataHebrewStartupL1 {
         ),
         WordEntity(
             id = 178804, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_company", transliteration = "firma ktana",
+            pos = "noun", semanticGroup = "startup_basic_company",
             original = "פִירְמָה קְטַנָּה", translation = "маленькая фирма",
             definition = "מִשְׂרָד עִם מְעַט עוֹבְדִים שֶׁכָּל אֶחָד שָׁם מַכִּיר אֶת כֻּלָּם.",
             definitionNative = "Контора с парой сотрудников — каждый знает там всех.",
@@ -97,7 +97,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178801L, 178802L, 178803L, 178805L)),
         WordEntity(
             id = 178805, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_company", transliteration = "kehilat ha-yazamim",
+            pos = "noun", semanticGroup = "startup_basic_company",
             original = "קְהִילַּת הַיְּזָמִים", translation = "сообщество предпринимателей",
             definition = "כָּל הָאֲנָשִׁים שֶׁפָּתְחוּ עֲסָקִים וְנִפְגָּשִׁים לְהַחֲלִיף סִפּוּרִים וְעֵצוֹת.",
             definitionNative = "Люди, что открыли свои дела, и встречаются обмениваться историями и советами.",
@@ -108,7 +108,7 @@ object WordDataHebrewStartupL1 {
         // ── startup_basic_people (5) — кто там работает ──
         WordEntity(
             id = 178806, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_people", transliteration = "meyased",
+            pos = "noun", semanticGroup = "startup_basic_people",
             original = "מְיַסֵּד", translation = "основатель",
             definition = "אִישׁ שֶׁפָּתַח עֵסֶק מִכְּלוּם וְלוֹקֵחַ הַחְלָטוֹת בַּהַתְחָלָה.",
             definitionNative = "Человек, который открыл бизнес с нуля и решает всё на старте.",
@@ -117,7 +117,7 @@ object WordDataHebrewStartupL1 {
         ),
         WordEntity(
             id = 178807, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_people", transliteration = "mashkia",
+            pos = "noun", semanticGroup = "startup_basic_people",
             original = "מַשְׁקִיעַ", translation = "инвестор",
             definition = "מִי שֶׁנּוֹתֵן כֶּסֶף לַחֶבְרָה כְּדֵי לְקַבֵּל חֵלֶק מֵהָרֶוַח בֶּעָתִיד.",
             definitionNative = "Тот, кто даёт фирме деньги, чтобы получить долю прибыли в будущем.",
@@ -126,7 +126,7 @@ object WordDataHebrewStartupL1 {
         ),
         WordEntity(
             id = 178808, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_people", transliteration = "yo'ets",
+            pos = "noun", semanticGroup = "startup_basic_people",
             original = "יוֹעֵץ", translation = "советник",
             definition = "אִישׁ מְנֻסֶּה שֶׁנּוֹתֵן עֵצוֹת לַחֶבְרָה תְּמוּרַת תַּשְׁלוּם אוֹ מְנָיוֹת.",
             definitionNative = "Опытный человек, что даёт советы фирме за плату или акции.",
@@ -135,7 +135,7 @@ object WordDataHebrewStartupL1 {
         ),
         WordEntity(
             id = 178809, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_people", transliteration = "khoneikh",
+            pos = "noun", semanticGroup = "startup_basic_people",
             original = "חוֹנֵךְ", translation = "наставник",
             definition = "מִישֶׁהוּ מְנֻסֶּה שֶׁמְּלַוֶּה אִישׁ צָעִיר וְעוֹזֵר לוֹ לִגְדּוֹל בָּעֲבוֹדָה.",
             definitionNative = "Опытный человек, что сопровождает молодого и помогает ему расти в работе.",
@@ -144,7 +144,7 @@ object WordDataHebrewStartupL1 {
         ),
         WordEntity(
             id = 178810, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_people", transliteration = "oved rishon",
+            pos = "noun", semanticGroup = "startup_basic_people",
             original = "עוֹבֵד רִאשׁוֹן", translation = "первый сотрудник",
             definition = "הָאִישׁ שֶׁהִצְטָרֵף לַצֶּוֶות מִיָּד אַחֲרֵי הַמְּיַסְּדִים וְעָשָׂה כִּמְעַט הַכֹּל.",
             definitionNative = "Человек, что присоединился к команде сразу после основателей и делал всё подряд.",
@@ -155,7 +155,7 @@ object WordDataHebrewStartupL1 {
         // ── startup_basic_money (5) — деньги стартапа ──
         WordEntity(
             id = 178811, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_money", transliteration = "kesef atsmi",
+            pos = "noun", semanticGroup = "startup_basic_money",
             original = "כֶּסֶף עַצְמִי", translation = "собственные деньги",
             definition = "מַה שֶּׁשָּׂמִים מֵהַחִסָּכוֹן הָאִישִׁי כְּדֵי לְהַתְחִיל בְּלִי לְבַקֵּשׁ מֵאַף אֶחָד.",
             definitionNative = "То, что вкладывают из личных сбережений, чтобы начать без чужой помощи.",
@@ -164,7 +164,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178812L, 178813L, 178814L, 178815L)),
         WordEntity(
             id = 178812, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_money", transliteration = "giyus hon",
+            pos = "noun", semanticGroup = "startup_basic_money",
             original = "גִּיּוּס הוֹן", translation = "привлечение капитала",
             definition = "כְּשֶׁעֵסֶק מְבַקֵּשׁ כֶּסֶף מֵאֲנָשִׁים מִבַּחוּץ כְּדֵי לִגְדּוֹל מַהֵר יוֹתֵר.",
             definitionNative = "Когда бизнес просит деньги у людей со стороны, чтобы расти быстрее.",
@@ -173,7 +173,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178811L, 178813L, 178814L, 178815L)),
         WordEntity(
             id = 178813, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_money", transliteration = "revakh",
+            pos = "noun", semanticGroup = "startup_basic_money",
             original = "רֶוַח", translation = "прибыль",
             definition = "מַה שֶּׁנִּשְׁאָר מֵהַכֶּסֶף שֶׁל הַלָּקוֹחוֹת אַחֲרֵי שֶׁמְּשַׁלְּמִים עַל הַכֹּל.",
             definitionNative = "То, что остаётся от клиентских денег после оплаты всех расходов.",
@@ -182,7 +182,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178811L, 178812L, 178814L, 178815L)),
         WordEntity(
             id = 178814, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_money", transliteration = "hefsed",
+            pos = "noun", semanticGroup = "startup_basic_money",
             original = "הֶפְסֵד", translation = "убыток",
             definition = "כְּשֶׁהוֹצִיאוּ יוֹתֵר כֶּסֶף מִמַּה שֶּׁהִכְנִיסוּ וְנִשְׁאָרִים בְּמִינוּס.",
             definitionNative = "Когда потратили больше, чем заработали — и остаются в минусе.",
@@ -191,7 +191,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178811L, 178812L, 178813L, 178815L)),
         WordEntity(
             id = 178815, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_money", transliteration = "taktsiv",
+            pos = "noun", semanticGroup = "startup_basic_money",
             original = "תַּקְצִיב", translation = "бюджет",
             definition = "תָּכְנִית כַּמָּה כֶּסֶף מֻתָּר לְהוֹצִיא עַל כָּל דָּבָר בַּחֹדֶשׁ אוֹ בַּשָּׁנָה.",
             definitionNative = "План, сколько денег можно потратить на каждое дело за месяц или год.",
@@ -202,7 +202,7 @@ object WordDataHebrewStartupL1 {
         // ── startup_basic_growth (5) — как растёт ──
         WordEntity(
             id = 178816, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_growth", transliteration = "hitpatkhut",
+            pos = "noun", semanticGroup = "startup_basic_growth",
             original = "הִתְפַּתְּחוּת", translation = "развитие",
             definition = "כְּשֶׁהֶעֵסֶק נַעֲשֶׂה גָּדוֹל יוֹתֵר — יוֹתֵר אֲנָשִׁים, יוֹתֵר כֶּסֶף, יוֹתֵר עָרִים.",
             definitionNative = "Когда бизнес становится больше — людей, денег и городов больше.",
@@ -211,7 +211,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178817L, 178818L, 178819L, 178820L)),
         WordEntity(
             id = 178817, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_growth", transliteration = "lakokhot",
+            pos = "noun", semanticGroup = "startup_basic_growth",
             original = "לָקוֹחוֹת", translation = "клиенты",
             definition = "אֲנָשִׁים שֶׁמְּשַׁלְּמִים בִּשְׁבִיל הַשֵּׁרוּת אוֹ הַמּוּצָר שֶׁלָּכֶם.",
             definitionNative = "Люди, что платят за ваш сервис или продукт.",
@@ -220,7 +220,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178816L, 178818L, 178819L, 178820L)),
         WordEntity(
             id = 178818, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_growth", transliteration = "harkhava",
+            pos = "noun", semanticGroup = "startup_basic_growth",
             original = "הַרְחָבָה", translation = "расширение",
             definition = "כְּשֶׁמּוֹסִיפִים תְּחוּמִים, מוּצָרִים אוֹ מְקוֹמוֹת חֲדָשִׁים לְמַה שֶּׁכְּבָר עוֹשִׂים.",
             definitionNative = "Когда добавляют новые направления, продукты или места к тому, что уже делают.",
@@ -229,7 +229,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178816L, 178817L, 178819L, 178820L)),
         WordEntity(
             id = 178819, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_growth", transliteration = "shuk zar",
+            pos = "noun", semanticGroup = "startup_basic_growth",
             original = "שׁוּק זָר", translation = "зарубежный рынок",
             definition = "מְדִינָה אַחֶרֶת שֶׁלְּשָׁם מוֹכְרִים אַחֲרֵי שֶׁהָאָרֶץ שֶׁלָּנוּ כְּבָר קְטַנָּה לְהַמְשֵׁךְ.",
             definitionNative = "Другая страна, куда продают, когда родной страны уже мало для развития.",
@@ -238,7 +238,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178816L, 178817L, 178818L, 178820L)),
         WordEntity(
             id = 178820, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_growth", transliteration = "hatslakha",
+            pos = "noun", semanticGroup = "startup_basic_growth",
             original = "הַצְלָחָה", translation = "успех",
             definition = "כְּשֶׁמַּשֶּׁהוּ קָשֶׁה שֶׁתִּכְנַנְתֶּם בָּאֱמֶת קָרָה וְעָבַד טוֹב יוֹתֵר מֵהַצָּפוּי.",
             definitionNative = "Когда трудное, что вы задумали, и правда случилось — даже лучше ожиданий.",
@@ -249,7 +249,7 @@ object WordDataHebrewStartupL1 {
         // ── startup_basic_risk (5) — что может пойти не так ──
         WordEntity(
             id = 178821, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_risk", transliteration = "sikun",
+            pos = "noun", semanticGroup = "startup_basic_risk",
             original = "סִיכּוּן", translation = "риск",
             definition = "סִכּוּי שֶׁדָּבָר רַע יִקְרֶה — תַּשְׁלוּם לֹא יָבוֹא, מוּצָר לֹא יִמָּכֵר.",
             definitionNative = "Шанс, что произойдёт плохое — оплата не придёт, продукт не продастся.",
@@ -258,7 +258,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178822L, 178823L, 178824L, 178825L)),
         WordEntity(
             id = 178822, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_risk", transliteration = "kishalon",
+            pos = "noun", semanticGroup = "startup_basic_risk",
             original = "כִּשָּׁלוֹן", translation = "провал",
             definition = "כְּשֶׁעֵסֶק לֹא הַצְלִיחַ וְצָרִיךְ לִסְגֹּר אוֹתוֹ אַחֲרֵי שֶׁהַכֶּסֶף נִגְמָר.",
             definitionNative = "Когда бизнес не получился и его нужно закрывать после того, как кончились деньги.",
@@ -267,7 +267,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178821L, 178823L, 178824L, 178825L)),
         WordEntity(
             id = 178823, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_risk", transliteration = "takharut",
+            pos = "noun", semanticGroup = "startup_basic_risk",
             original = "תַּחֲרוּת", translation = "конкуренция",
             definition = "כְּשֶׁחֲבָרוֹת אֲחֵרוֹת מוֹכְרוֹת מַשֶּׁהוּ דּוֹמֶה וְכָל אַחַת רוֹצָה אֶת אוֹתָם הַלָּקוֹחוֹת.",
             definitionNative = "Когда другие фирмы продают похожее и каждая хочет тех же клиентов.",
@@ -276,7 +276,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178821L, 178822L, 178824L, 178825L)),
         WordEntity(
             id = 178824, setId = 1788, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "startup_basic_risk", transliteration = "ta'ut",
+            pos = "noun", semanticGroup = "startup_basic_risk",
             original = "טָעוּת", translation = "ошибка",
             definition = "הַחְלָטָה שֶׁהִתְבָּרְרָה כִּלְקוּיָה אַחֲרֵי שֶׁכְּבָר הִשְׁקִיעוּ זְמַן וְכֶסֶף.",
             definitionNative = "Решение, что оказалось неверным уже после вложенных времени и денег.",
@@ -285,7 +285,7 @@ object WordDataHebrewStartupL1 {
          fillInBlankExclusions = listOf(178821L, 178822L, 178823L, 178825L)),
         WordEntity(
             id = 178825, setId = 1788, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_basic_risk", transliteration = "maskana khashuva",
+            pos = "noun", semanticGroup = "startup_basic_risk",
             original = "מַסְקָנָה חֲשׁוּבָה", translation = "важный вывод",
             definition = "מַה שֶּׁמְּבִינִים אַחֲרֵי דָּבָר שֶׁלֹּא הָלַךְ טוֹב כְּדֵי לֹא לַחְזֹר עָלָיו.",
             definitionNative = "То, что осознают после неудачного дела — чтобы его не повторять.",

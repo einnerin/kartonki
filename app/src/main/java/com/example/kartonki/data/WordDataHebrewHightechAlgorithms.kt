@@ -88,7 +88,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Упорядоченный набор элементов фиксированного размера с прямым доступом по числовому ключу.",
             example = "הַמּוּעֲמָד הֵסְבִּיר אֵיךְ לְמַיֵּן מַעֲרָךְ בִּסְבִיכוּת לוֹגָרִיתְמִית.",
             exampleNative = "Кандидат объяснил, как отсортировать מַעֲרָךְ за логарифмическую сложность.",
-            transliteration = "мараах",
             pos = "noun", semanticGroup = "tech_algo_structures_linear"),
 
         WordEntity(id = 191002, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -98,7 +97,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Динамическая структура, в которой каждый элемент хранит ссылку на следующий в памяти.",
             example = "הַמְפַתֵּחַ הִחְלִיף מַעֲרָךְ בִּרְשִׁימָה מְקֻשֶּׁרֶת כְּדֵי לְהוֹסִיף בְּקַלּוּת.",
             exampleNative = "Разработчик заменил массив на רְשִׁימָה מְקֻשֶּׁרֶת для лёгких вставок.",
-            transliteration = "ршима мэкушэрэт",
             pos = "phrase", semanticGroup = "tech_algo_structures_linear"),
 
         WordEntity(id = 191003, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -108,7 +106,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Переменная, которая хранит адрес в памяти, а не само значение.",
             example = "הוּא נִכְשַׁל בַּשְּׁאֵלָה כִּי שָׁכַח לְבַטֵּל מַצְבֵּעַ אַחֲרֵי שִׁחְרוּר.",
             exampleNative = "Он провалил вопрос, забыв обнулить מַצְבֵּעַ после освобождения памяти.",
-            transliteration = "мацбэа",
             pos = "noun", semanticGroup = "tech_algo_structures_linear"),
 
         WordEntity(id = 191004, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -118,7 +115,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Упорядоченный набор из трёх элементов фиксированного размера.",
             example = "הַפוּנְקְצִיָּה הֶחְזִירָה שָׁלִישִׁיָּה שֶׁל קוֹאוֹרְדִּינָטָה, סְטָטוּס וּשְׁגִיאָה.",
             exampleNative = "Функция вернула שָׁלִישִׁיָּה из координаты, статуса и ошибки.",
-            transliteration = "шлишия",
             pos = "noun", semanticGroup = "tech_algo_structures_linear", fillInBlankExclusions = listOf(191001L, 191003L)),
 
         // ── Group: tech_algo_structures_nonlinear (5 words) ───────────────────
@@ -130,7 +126,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Иерархическая структура, в которой у каждого узла не более двух потомков.",
             example = "הַשְּׁאֵלָה דָּרְשָׁה לְאַזֵּן עֵץ בִּינָרִי תּוֹךְ כְּדֵי הוֹסָפָה.",
             exampleNative = "Задача требовала балансировать עֵץ בִּינָרִי прямо во время вставки.",
-            transliteration = "эц бинари",
             pos = "phrase", semanticGroup = "tech_algo_structures_nonlinear", fillInBlankExclusions = listOf(191007L, 191008L)),
 
         WordEntity(id = 191006, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -140,7 +135,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Структура с частичным порядком, позволяющая быстро извлечь максимум.",
             example = "תּוֹר הָעֲדִיפוּיוֹת מוּמַשׁ עַל גַּבֵּי עָרְמָה בִּינָרִית.",
             exampleNative = "Очередь приоритетов реализована поверх двоичной עָרְמָה.",
-            transliteration = "арма",
             pos = "noun", semanticGroup = "tech_algo_structures_nonlinear", fillInBlankExclusions = listOf(191009L)),
 
         WordEntity(id = 191007, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -150,7 +144,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Структура, отображающая ключ в значение через функцию разброса со средней константной выборкой.",
             example = "הוּא בָּחַר טַבְלַת גִּיבּוּב כְּדֵי לְצַמְצֵם זְמַן הַחִיפּוּשׂ.",
             exampleNative = "Он выбрал טַבְלַת גִּיבּוּב, чтобы сократить время поиска.",
-            transliteration = "тавлат гибув",
             pos = "phrase", semanticGroup = "tech_algo_structures_nonlinear", fillInBlankExclusions = listOf(191005L, 191008L)),
 
         WordEntity(id = 191008, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -160,7 +153,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Множество вершин и рёбер с одним направлением для каждой связанной пары.",
             example = "תְּלוּת בֵּין מוֹדּוּלִים מְיֻצֶּגֶת בְּדֶרֶךְ כְּלָל גְּרָף מְכֻוָּן.",
             exampleNative = "Зависимости между модулями обычно представлены как גְּרָף מְכֻוָּן.",
-            transliteration = "граф мэхуван",
             pos = "phrase", semanticGroup = "tech_algo_structures_nonlinear", fillInBlankExclusions = listOf(191005L, 191007L)),
 
         WordEntity(id = 191009, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -170,7 +162,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Одиночная единица иерархической структуры, что хранит значение и ссылки на потомков.",
             example = "הָאַלְגוֹרִיתְם עוֹבֵר עַל כָּל צֹמֶת בְּעֵץ וּמַדְפִּיס אֶת הָעֵרֶךְ.",
             exampleNative = "Алгоритм проходит по каждому צֹמֶת בְּעֵץ и печатает значение.",
-            transliteration = "цомэт ба-эц",
             pos = "phrase", semanticGroup = "tech_algo_structures_nonlinear", fillInBlankExclusions = listOf(191006L)),
 
         // ── Group: tech_algo_sorting_search (5 words) ─────────────────────────
@@ -182,7 +173,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Способ найти значение в отсортированном списке многократным делением диапазона пополам.",
             example = "הַמְרַאֲיֵן בִּקֵּשׁ לְמַמֵּשׁ חִיפּוּשׂ בִּינָרִי בְּלִי רֵקוּרְסְיָה.",
             exampleNative = "Интервьюер попросил реализовать חִיפּוּשׂ בִּינָרִי без рекурсии.",
-            transliteration = "хипус бинари",
             pos = "phrase", semanticGroup = "tech_algo_sorting_search", fillInBlankExclusions = listOf(191011L, 191013L, 191014L)),
 
         WordEntity(id = 191011, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -192,7 +182,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Систематический обход всех узлов структуры в согласованном порядке.",
             example = "הַפִּתְרוֹן הִשְׁתַּמֵּשׁ בְּמַעֲבָר עַל עֵץ לְפִי הָעֹמֶק.",
             exampleNative = "Решение использовало מַעֲבָר עַל עֵץ в глубину.",
-            transliteration = "маавар аль эц",
             pos = "phrase", semanticGroup = "tech_algo_sorting_search", fillInBlankExclusions = listOf(191010L, 191013L, 191014L)),
 
         WordEntity(id = 191012, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -202,7 +191,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Процесс, что превращает вход любого размера в короткий выход постоянной длины.",
             example = "אַחֲסוּן סִיסְמָאוֹת תָּמִיד עוֹבֵר הַטְלָה לִפְנֵי כְּתִיבָה לְבָסִיס הַנְּתוּנִים.",
             exampleNative = "Хранение паролей всегда проходит הַטְלָה перед записью в базу.",
-            transliteration = "hатала",
             pos = "noun", semanticGroup = "tech_algo_sorting_search"),
 
         WordEntity(id = 191013, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -212,7 +200,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Простой алгоритм, обменивающий соседей, пока вся последовательность не упорядочится.",
             example = "בְּקוֹרְס מָבוֹא מַתְחִילִים תָּמִיד עִם מִיּוּן בּוּעוֹת.",
             exampleNative = "На вводном курсе всегда начинают с מִיּוּן בּוּעוֹת.",
-            transliteration = "миун буот",
             pos = "phrase", semanticGroup = "tech_algo_sorting_search", fillInBlankExclusions = listOf(191010L, 191011L, 191014L)),
 
         WordEntity(id = 191014, setId = 1910, languagePair = "he-ru", rarity = "RARE",
@@ -222,7 +209,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Алгоритм, что выбирает опорный элемент и рекурсивно разделяет вокруг него остальное.",
             example = "מִיּוּן מָהִיר רָץ בִּסְבִיכוּת מְמֻצַּעַת לוֹגָרִיתְמִית-לִינֵיאָרִית.",
             exampleNative = "מִיּוּן מָהִיר работает в среднем за линейно-логарифмическое время.",
-            transliteration = "миун маhир",
             pos = "phrase", semanticGroup = "tech_algo_sorting_search", fillInBlankExclusions = listOf(191010L, 191011L, 191013L)),
 
         // ── Group: tech_algo_concepts (4 words) ───────────────────────────────
@@ -234,7 +220,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Запись, что описывает, как время роста алгоритма зависит от размера входа без констант.",
             example = "הוּא נָתַן תְּשׁוּבָה נְכוֹנָה אֲבָל הִתְקַשָּׁה לְהוֹכִיחַ O גָּדוֹל בְּכָתָב.",
             exampleNative = "Он дал верный ответ, но затруднился доказать O גָּדוֹל на бумаге.",
-            transliteration = "О гадоль",
             pos = "phrase", semanticGroup = "tech_algo_concepts", fillInBlankExclusions = listOf(191016L, 191017L, 191018L)),
 
         WordEntity(id = 191016, setId = 1910, languagePair = "he-ru", rarity = "EPIC",
@@ -244,7 +229,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Длительность вычисления алгоритма на конкретном входе, в операциях или секундах.",
             example = "הַפְּרוֹפַיילֶר חָשַׂף שֶׁמֶּחֱצִית מִזְּמַן הָרִיצָה הוֹלֵךְ עַל שְׁאִילְתָּה אַחַת.",
             exampleNative = "Профайлер показал, что половину זְמַן רִיצָה съедает один запрос.",
-            transliteration = "зман рица",
             pos = "phrase", semanticGroup = "tech_algo_concepts"),
 
         WordEntity(id = 191017, setId = 1910, languagePair = "he-ru", rarity = "EPIC",
@@ -254,7 +238,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Подход, что разбивает задачу на повторяющиеся подзадачи и кеширует их результаты.",
             example = "פִתְרוֹן בְּתִכְנוּת דִּינָמִי הוֹרִיד אֶת הַסְּבִיכוּת מֵאֶקְסְפּוֹנֶנְצְיָאלִית לְפּוֹלִינוֹמִית.",
             exampleNative = "Решение через תִּכְנוּת דִּינָמִי опустило сложность с экспоненты до полинома.",
-            transliteration = "тихнут динами",
             pos = "phrase", semanticGroup = "tech_algo_concepts"),
 
         WordEntity(id = 191018, setId = 1910, languagePair = "he-ru", rarity = "EPIC",
@@ -264,7 +247,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Стратегия, что на каждом шаге берёт самое выгодное локальное решение.",
             example = "אַלְגוֹרִיתְם חַמְדָן לֹא תָּמִיד מוֹצֵא אֶת הַפִּתְרוֹן הָאוֹפְּטִימָלִי.",
             exampleNative = "אַלְגוֹרִיתְם חַמְדָן не всегда находит оптимальное решение.",
-            transliteration = "алгоритм хамдан",
             pos = "phrase", semanticGroup = "tech_algo_concepts", fillInBlankExclusions = listOf(191015L, 191016L, 191017L)),
 
         // ── Group: tech_algo_oop (5 words) ────────────────────────────────────
@@ -276,7 +258,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Принцип, что прячет внутреннее состояние объекта и открывает только заданный API.",
             example = "הֲכָלָה נְכוֹנָה מְצַמְצֶמֶת תְּלוּיוֹת בֵּין מוֹדּוּלִים שׁוֹנִים.",
             exampleNative = "Грамотная הֲכָלָה снижает связанность между разными модулями.",
-            transliteration = "hахала",
             pos = "noun", semanticGroup = "tech_algo_oop", fillInBlankExclusions = listOf(191020L, 191021L, 191022L)),
 
         WordEntity(id = 191020, setId = 1910, languagePair = "he-ru", rarity = "EPIC",
@@ -286,7 +267,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Механизм, при котором новый класс получает свойства и методы от родительского.",
             example = "הָאַרְכִיטֶקְט הִמְלִיץ לְהַחְלִיף הוֹרָשָׁה בְּהֶרְכֵּב לְצֹרֶךְ גְמִישׁוּת.",
             exampleNative = "Архитектор посоветовал заменить הוֹרָשָׁה на композицию ради гибкости.",
-            transliteration = "hораша",
             pos = "noun", semanticGroup = "tech_algo_oop", fillInBlankExclusions = listOf(191019L, 191021L, 191022L)),
 
         WordEntity(id = 191021, setId = 1910, languagePair = "he-ru", rarity = "EPIC",
@@ -296,7 +276,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Контракт, что задаёт, какие методы класс обязан реализовать, не указывая как.",
             example = "כָּל הָאַדַפְּטֶרִים בַּפְּרוֹיֶקְט מַמְּשִׁים אוֹתוֹ מִמְשָׁק.",
             exampleNative = "Все адаптеры в проекте реализуют один מִמְשָׁק.",
-            transliteration = "мимшак",
             pos = "noun", semanticGroup = "tech_algo_oop", fillInBlankExclusions = listOf(191019L, 191020L, 191022L)),
 
         WordEntity(id = 191022, setId = 1910, languagePair = "he-ru", rarity = "EPIC",
@@ -306,7 +285,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Процесс, что оставляет только важные для использования аспекты и прячет внутренние детали.",
             example = "הוּא הִצִּיעַ הַפְשָׁטָה דַּקָּה יוֹתֵר מֵעַל הַ-API.",
             exampleNative = "Он предложил более тонкую הַפְשָׁטָה поверх API.",
-            transliteration = "hафшата",
             pos = "noun", semanticGroup = "tech_algo_oop", fillInBlankExclusions = listOf(191019L, 191020L, 191021L)),
 
         WordEntity(id = 191023, setId = 1910, languagePair = "he-ru", rarity = "EPIC",
@@ -316,7 +294,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Шаблон, от которого нельзя породить объект напрямую и который раскрывает часть реализации.",
             example = "כָּל הַ-handlers יוֹרְשִׁים מִמַּחְלָקָה מוּפְשֶׁטֶת אַחַת מְרֻכֶּזֶת.",
             exampleNative = "Все хендлеры наследуют от одной центральной מַחְלָקָה מוּפְשֶׁטֶת.",
-            transliteration = "махлака муфшэтэт",
             pos = "phrase", semanticGroup = "tech_algo_oop"),
 
         // ── Group: tech_algo_lowlevel (2 words) ───────────────────────────────
@@ -328,7 +305,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Самостоятельная единица выполнения со своей памятью и общими или раздельными ресурсами системы.",
             example = "אַחֲרֵי שְׁלֹשָׁה סִבְבֵי בִּקֹּרֶת קוֹד הוּא כָּתַב מֵחָדָשׁ אֶת הַתַּהֲלִיךְ הָרֵקוּרְסִיבִי.",
             exampleNative = "После трёх раундов код-ревью он переписал תַּהֲלִיךְ из рекурсии в цикл.",
-            transliteration = "таhалих",
             pos = "noun", semanticGroup = "tech_algo_lowlevel"),
 
         WordEntity(id = 191025, setId = 1910, languagePair = "he-ru", rarity = "EPIC",
@@ -338,7 +314,6 @@ object WordDataHebrewHightechAlgorithms {
             definitionNative = "Баг, что возникает, когда два потока параллельно лезут к одному ресурсу без синхронизации.",
             example = "מַצַּב מֵרוּץ נָדִיר הִפִּיל אֶת הַשֵּׁרוּת רַק תַּחַת עֹמֶס כָּבֵד.",
             exampleNative = "Редкий מַצַּב מֵרוּץ ронял сервис только под тяжёлой нагрузкой.",
-            transliteration = "мацав мэруц",
             pos = "phrase", semanticGroup = "tech_algo_lowlevel"),
     )
 }

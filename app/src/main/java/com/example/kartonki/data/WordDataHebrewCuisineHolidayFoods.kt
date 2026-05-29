@@ -93,7 +93,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Шарик теста, обжаренный в масле, с начинкой из джема или крема и сахарной пудрой.",
             example = "בְּחַג הַחֲנֻכָּה אוֹכְלִים סוּפְגָּנִיָּה כְּסֵמֶל לְנֵס פַּךְ הַשֶּׁמֶן.",
             exampleNative = "В Хануку едят סוּפְגָּנִיָּה как символ чуда с кувшинчиком масла.",
-            transliteration = "суфганья",
             pos = "noun", semanticGroup = "food_holidays_hanukkah", fillInBlankExclusions = listOf(191602L)),
 
         WordEntity(id = 191602, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -103,7 +102,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Шарики теста, жаренные в масле и пропитанные медовым сиропом — сефардская традиция Хануки.",
             example = "סָבְתָּא מִתֶּימָן הֵכִינָה בִּמּוּאֵלוֹס לַנְּכָדִים בְּחַג הָאוּרִים.",
             exampleNative = "Йеменская бабушка приготовила бимуэлос внукам в праздник огней.",
-            transliteration = "бимуэлос",
             pos = "noun", semanticGroup = "food_holidays_hanukkah", fillInBlankExclusions = listOf(191601L)),
 
         WordEntity(id = 191603, setId = 1916, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -113,7 +111,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Масло из оливок — напоминает о чуде кувшинчика, горевшего восемь дней в Храме.",
             example = "טִגְּנוּ אֶת הַסּוּפְגָּנִיּוֹת בְּשֶׁמֶן זַיִת כְּמוֹ בַּמָּסֹרֶת הָעַתִּיקָה.",
             exampleNative = "Пончики жарили в שֶׁמֶן זַיִת по древней традиции праздника.",
-            transliteration = "шемен заит",
             pos = "phrase", semanticGroup = "food_holidays_hanukkah", fillInBlankExclusions = listOf(191604L)),
 
         WordEntity(id = 191604, setId = 1916, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -123,7 +120,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Мягкий творожный сыр — по преданию едят в память о Юдифи, угощавшей сыром Олоферна.",
             example = "אִמָּא הֵכִינָה לְבִיבוֹת עִם גְּבִינָה לְבָנָה לְכָבוֹד חֲנֻכָּה.",
             exampleNative = "Мама приготовила оладьи с גְּבִינָה לְבָנָה в честь Хануки.",
-            transliteration = "гвина лвана",
             pos = "phrase", semanticGroup = "food_holidays_hanukkah", fillInBlankExclusions = listOf(191603L)),
 
         // ── Group: food_holidays_purim (4 words) ──────────────────────────────
@@ -135,7 +131,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Набор еды, который дарят другу на Пурим — заповедь, прописанная в Книге Эстер.",
             example = "הַיְּלָדִים חִלְּקוּ מִשְׁלוֹחַ מָנוֹת לַשְּׁכֵנִים בְּבֹּקֶר פּוּרִים.",
             exampleNative = "Дети разнесли מִשְׁלוֹחַ מָנוֹת соседям в утро Пурима.",
-            transliteration = "мишлоах манот",
             pos = "phrase", semanticGroup = "food_holidays_purim", fillInBlankExclusions = listOf(191608L)),
 
         WordEntity(id = 191606, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -145,7 +140,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Сладкое треугольное печенье с начинкой из фруктов, мака или шоколада — символ короны царя.",
             example = "הָאוֹפָה הוֹצִיא מֵהַתַּנּוּר מַגַּשׁ שֶׁל כְּרֵיכִית רֵיחָנִית לְכָבוֹד הַחַג.",
             exampleNative = "Пекарь достал из печи поднос ароматных כְּרֵיכִית к празднику.",
-            transliteration = "крэйхит",
             pos = "noun", semanticGroup = "food_holidays_purim", fillInBlankExclusions = listOf(191607L)),
 
         WordEntity(id = 191607, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -155,7 +149,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Тестяные кармашки с фаршем из говядины — едят на Пурим и накануне Йом Кипур.",
             example = "סָבְתָּא הָאַשְׁכְּנַזִּית בִּשְּׁלָה קְרֶפְּלָךְ בְּמָרָק הַתַּרְנְגוֹלֶת.",
             exampleNative = "Ашкеназская бабушка отварила קְרֶפְּלָךְ в курином бульоне.",
-            transliteration = "крэплах",
             pos = "noun", semanticGroup = "food_holidays_purim"),
 
         WordEntity(id = 191608, setId = 1916, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -165,7 +158,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Праздничный обед в день Пурима — заповедь есть мясо и пить вино в радость праздника.",
             example = "סְעוּדַת פּוּרִים הִתְחִילָה אַחֲרֵי הַצָּהֳרַיִם וְנִמְשְׁכָה עַד הָעֶרֶב.",
             exampleNative = "סְעוּדַת פּוּרִים началась после полудня и продолжалась до вечера.",
-            transliteration = "сэудат пурим",
             pos = "phrase", semanticGroup = "food_holidays_purim", fillInBlankExclusions = listOf(191605L)),
 
         // ── Group: food_holidays_pesach (5 words) ─────────────────────────────
@@ -177,7 +169,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Маца особого надзора с самого сбора пшеницы — используется в вечер седера Песаха.",
             example = "הָרַב הִכִּין מַצַּת מִצְוָה עֲגֻלָּה מֵחִטָּה שְׁמוּרָה.",
             exampleNative = "Раввин приготовил круглую מַצַּת מִצְוָה из строго оберегаемой пшеницы.",
-            transliteration = "мацат мицва",
             pos = "phrase", semanticGroup = "food_holidays_pesach", fillInBlankExclusions = listOf(191611L, 191613L)),
 
         WordEntity(id = 191610, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -187,7 +178,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Шарики из мацовой муки с яйцами, которые варят в курином бульоне на Песах.",
             example = "הַדּוֹדָה גִּלְגְּלָה כּוֹפְתָּאוֹת רַכּוֹת לִפְנֵי לֵיל הַסֵּדֶר.",
             exampleNative = "Тётя слепила мягкие כּוֹפְתָּאוֹת перед вечером седера.",
-            transliteration = "кофтаот",
             pos = "noun", semanticGroup = "food_holidays_pesach", fillInBlankExclusions = listOf(191612L)),
 
         WordEntity(id = 191611, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -197,7 +187,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Ашкеназский завтрак Песаха: ломают мацу, замачивают в молоке и жарят с яйцами.",
             example = "אַבָּא טִגֵּן מַצָּה בְּרַייָה לַיְלָדִים בַּבֹּקֶר שֶׁל חֹל הַמּוֹעֵד.",
             exampleNative = "Папа пожарил детям מַצָּה בְּרַייָה утром холь hа-моэд.",
-            transliteration = "маца брэйа",
             pos = "phrase", semanticGroup = "food_holidays_pesach", fillInBlankExclusions = listOf(191609L, 191613L)),
 
         WordEntity(id = 191612, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -207,7 +196,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Горький овощ — латук или хрен — едят в седер в память о горечи египетского рабства.",
             example = "כָּל אֶחָד מֵהַמְּסֻבִּים טָבַל מָרוֹר בַּחֲרוֹסֶת לִפְנֵי הָאֲכִילָה.",
             exampleNative = "Каждый сидящий за столом обмакнул מָרוֹר в харосет перед едой.",
-            transliteration = "марор",
             pos = "noun", semanticGroup = "food_holidays_pesach", fillInBlankExclusions = listOf(191610L)),
 
         WordEntity(id = 191613, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -217,7 +205,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Прозрачный куриный бульон с шариками из мацы — классическая закуска на седер.",
             example = "כָּל מְסֻבָּה קִבְּלָה קְעָרָה שֶׁל מְרַק כּוֹפְתָּאוֹת חַם.",
             exampleNative = "Каждому гостю налили миску горячего מְרַק כּוֹפְתָּאוֹת.",
-            transliteration = "марк кофтаот",
             pos = "phrase", semanticGroup = "food_holidays_pesach", fillInBlankExclusions = listOf(191609L, 191611L)),
 
         // ── Group: food_holidays_shavuot (4 words) ────────────────────────────
@@ -229,7 +216,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Еда из молока и его производных — традиция праздника Шавуот, связанная с дарованием Торы.",
             example = "בְּחַג הַשָּׁבוּעוֹת עוֹרְכִים שֻׁלְחָן מָלֵא מַאֲכָלֵי חָלָב.",
             exampleNative = "На Шавуот накрывают стол, полный מַאֲכָלֵי חָלָב.",
-            transliteration = "маахалэй халав",
             pos = "phrase", semanticGroup = "food_holidays_shavuot", fillInBlankExclusions = listOf(191615L, 191617L)),
 
         WordEntity(id = 191615, setId = 1916, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -239,7 +225,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Густой торт из сливочного сыра на бисквитной основе — флагман кондитерской Шавуот.",
             example = "הַשֵּׁף אֲפָה עוּגַת גְּבִינָה גְּבוֹהָה עִם תּוּתִים טְרִיִּים לְמַעְלָה.",
             exampleNative = "Шеф испёк высокий עוּגַת גְּבִינָה со свежей клубникой сверху.",
-            transliteration = "угат гвина",
             pos = "phrase", semanticGroup = "food_holidays_shavuot", fillInBlankExclusions = listOf(191614L, 191617L)),
 
         WordEntity(id = 191616, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -249,7 +234,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Тонкий блинчик с начинкой из сладкого творога, свёрнутый конвертом и обжаренный до золота.",
             example = "סָבָה הַפּוֹלָנִיָּה הִכִּינָה בְּלִינְצֶ'ס לְכָבוֹד שָׁבוּעוֹת.",
             exampleNative = "Польская бабушка приготовила בְּלִינְצֶ'ס в честь Шавуот.",
-            transliteration = "блинцэс",
             pos = "noun", semanticGroup = "food_holidays_shavuot"),
 
         WordEntity(id = 191617, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -259,7 +243,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Тонкий французский блин с солёным или сладким сыром — современная вариация для молочного праздника.",
             example = "בַּמִּסְעָדָה הִגִּישׁוּ קְרֵפ גְּבִינָה עִם דְּבַשׁ וְאֱגוֹזִים.",
             exampleNative = "В ресторане подали קְרֵפ גְּבִינָה с мёдом и орехами.",
-            transliteration = "крэп гвина",
             pos = "phrase", semanticGroup = "food_holidays_shavuot", fillInBlankExclusions = listOf(191614L, 191615L)),
 
         // ── Group: food_holidays_shabbat (4 words) ────────────────────────────
@@ -271,7 +254,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Ашкеназское рагу из мяса и фасоли — томится с пятницы до субботнего утра.",
             example = "אַחֲרֵי הַתְּפִלָּה הִתְכַּנֵּסְנוּ לְאֱכֹל חוֹלְנְט חַם בְּבֵית הַסָּבָא.",
             exampleNative = "После молитвы мы собрались у деда, чтобы поесть горячий חוֹלְנְט.",
-            transliteration = "хольнт",
             pos = "noun", semanticGroup = "food_holidays_shabbat"),
 
         WordEntity(id = 191619, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -281,7 +263,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Лапша, запечённая в карамелизованном коричневом сахаре и чёрном перце — традиционное шабатнее блюдо Иерусалима.",
             example = "הָאוֹפֶה מוֹכֵר קוּגְל יְרוּשַׁלְמִי בְּכָל יוֹם שִׁישִּׁי בַּשּׁוּק.",
             exampleNative = "Пекарь продаёт קוּגְל יְרוּשַׁלְמִי каждую пятницу на рынке Махане-Йеhуда.",
-            transliteration = "кугль йерушалми",
             pos = "phrase", semanticGroup = "food_holidays_shabbat", fillInBlankExclusions = listOf(191620L, 191621L)),
 
         WordEntity(id = 191620, setId = 1916, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -291,7 +272,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Прозрачный отвар из птицы с овощами и лапшой — открывает шабатнюю трапезу в пятницу вечером.",
             example = "אִמָּא הִגִּישָׁה מְרַק תַּרְנְגוֹלֶת חַם אַחֲרֵי הַקִּדּוּשׁ.",
             exampleNative = "Мама подала горячий מְרַק תַּרְנְגוֹלֶת после кидуша.",
-            transliteration = "марк тарнэголет",
             pos = "phrase", semanticGroup = "food_holidays_shabbat", fillInBlankExclusions = listOf(191619L, 191621L)),
 
         WordEntity(id = 191621, setId = 1916, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -301,7 +281,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Каравай халы в форме круглой улитки — символ круговорота года и долголетия на Рош а-Шана.",
             example = "אָפִינוּ חַלָּה עֲגוּלָה עִם צִמּוּקִים לְרֹאשׁ הַשָּׁנָה.",
             exampleNative = "Мы испекли חַלָּה עֲגוּלָה с изюмом к Новому году.",
-            transliteration = "хала агула",
             pos = "phrase", semanticGroup = "food_holidays_shabbat", fillInBlankExclusions = listOf(191619L, 191620L)),
 
         // ── Group: food_holidays_other (4 words) ──────────────────────────────
@@ -313,7 +292,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Высушенные фрукты — финики, изюм, инжир — едят на Ту би-Шват в честь Нового года деревьев.",
             example = "עַל הַשֻּׁלְחָן הִנִּיחוּ צַלַּחַת שֶׁל פֵּירוֹת יְבֵשִׁים וַאֱגוֹזִים.",
             exampleNative = "На стол поставили блюдо с פֵּירוֹת יְבֵשִׁים и орехами.",
-            transliteration = "пэйрот йэвэшим",
             pos = "phrase", semanticGroup = "food_holidays_other", fillInBlankExclusions = listOf(191623L, 191624L)),
 
         WordEntity(id = 191623, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -323,7 +301,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Пшеница, ячмень, виноград, инжир, гранат, олива и финиковый мёд — семь плодов Эрец-Исраэль в Торе.",
             example = "בְּט\"וּ בִּשְׁבָט נָהוּג לִטְעֹם מִכָּל שִׁבְעַת הַמִּינִים.",
             exampleNative = "На Ту би-Шват принято попробовать каждый из שִׁבְעַת הַמִּינִים.",
-            transliteration = "шиват hа-миним",
             pos = "phrase", semanticGroup = "food_holidays_other", fillInBlankExclusions = listOf(191622L, 191624L)),
 
         WordEntity(id = 191624, setId = 1916, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -333,7 +310,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Яйцо, сваренное в скорлупе — символ траура в трапезе скорбящих и часть пасхального кеара.",
             example = "אַחֲרֵי הַלְוָיָה הִגִּישׁוּ לֶחֶם וּבֵיצָה קָשָׁה לָאֲבֵלִים.",
             exampleNative = "После похорон скорбящим подали хлеб и בֵּיצָה קָשָׁה.",
-            transliteration = "бэйца каша",
             pos = "phrase", semanticGroup = "food_holidays_other"),
 
         WordEntity(id = 191625, setId = 1916, languagePair = "he-ru", rarity = "RARE",
@@ -343,7 +319,6 @@ object WordDataHebrewCuisineHolidayFoods {
             definitionNative = "Праздничная трапеза за столом ребе в хасидской общине — пение, слова Торы и раздача шираим.",
             example = "הַחֲסִידִים הִתְכַּנְּסוּ לְטִישׁ אָרֹךְ בְּלֵיל שִׂמְחַת תּוֹרָה.",
             exampleNative = "Хасиды собрались на долгий טִישׁ в вечер Симхат Торы.",
-            transliteration = "тиш",
             pos = "noun", semanticGroup = "food_holidays_other"),
     )
 }

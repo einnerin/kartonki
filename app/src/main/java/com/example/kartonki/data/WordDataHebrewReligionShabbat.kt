@@ -76,7 +76,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Пиют XVI века, который поют в пятницу вечером, выходя навстречу Невесте.",
             example = "הַקְּהִילָּה פָּצְחָה בְּלֶכָה דוֹדִי וּפָנְתָה אֶל פֶּתַח בֵּית הַכְּנֶסֶת.",
             exampleNative = "Община запела לֶכָה דוֹדִי и обернулась ко входу в синагогу.",
-            transliteration = "лэха доди",
             pos = "phrase", semanticGroup = "religion_shabbat_ceremonies", fillInBlankExclusions = listOf(190502L, 190503L, 190504L, 190505L)),
 
         WordEntity(id = 190502, setId = 1905, languagePair = "he-ru", rarity = "RARE",
@@ -86,7 +85,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Песня, которой приветствуют ангелов служения, провожающих отца из синагоги домой.",
             example = "אַחֲרֵי שָׁלוֹם עֲלֵיכֶם הָאָב הִתְיַשֵּׁב לְקַדֵּשׁ עַל הַיַּיִן.",
             exampleNative = "После שָׁלוֹם עֲלֵיכֶם отец сел освящать вино.",
-            transliteration = "шалом алейхэм",
             pos = "phrase", semanticGroup = "religion_shabbat_ceremonies", fillInBlankExclusions = listOf(190501L, 190503L, 190504L, 190505L, 190506L)),
 
         WordEntity(id = 190503, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -96,7 +94,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Краткий обряд над вином в субботнее утро, перед второй дневной трапезой.",
             example = "אַחֲרֵי הַתְּפִילָּה הָאוֹרֵחַ עָשָׂה קִדּוּשָׁא רַבָּא עַל כּוֹסִית.",
             exampleNative = "После молитвы гость произнёс קִדּוּשָׁא רַבָּא над рюмкой.",
-            transliteration = "кидуша раба",
             pos = "phrase", semanticGroup = "religion_shabbat_ceremonies", fillInBlankExclusions = listOf(190501L, 190502L, 190504L, 190505L)),
 
         WordEntity(id = 190504, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -106,7 +103,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Витая свеча из нескольких фитилей, которую зажигают на исходе седьмого дня.",
             example = "הַיֶּלֶד אָחַז נֵר הַבְדָּלָה גָּבוֹהַ מֵעַל הַשֻּׁלְחָן.",
             exampleNative = "Мальчик держал נֵר הַבְדָּלָה высоко над столом.",
-            transliteration = "нэр hавдала",
             pos = "phrase", semanticGroup = "religion_shabbat_ceremonies", fillInBlankExclusions = listOf(190501L, 190502L, 190503L, 190505L, 190511L, 190512L, 190514L)),
 
         WordEntity(id = 190505, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -116,7 +112,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Обычай начинать седьмой день немного до заката и заканчивать после появления звёзд.",
             example = "הַמִּשְׁפָּחָה שׁוֹמֶרֶת תּוֹסֶפֶת שַׁבָּת שֶׁל רֶבַע שָׁעָה כָּל שִׁשִּׁי.",
             exampleNative = "Семья каждую пятницу соблюдает תּוֹסֶפֶת שַׁבָּת в четверть часа.",
-            transliteration = "тосэфэт шабат",
             pos = "phrase", semanticGroup = "religion_shabbat_ceremonies", fillInBlankExclusions = listOf(190501L, 190502L, 190503L, 190504L)),
 
         // ── Group: religion_shabbat_prayers (5 words) ─────────────────────────
@@ -128,7 +123,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Ночной молитвенный чин, который произносят после захода солнца.",
             example = "הָאָב נִכְנַס לְבֵית הַכְּנֶסֶת לְמַעֲרִיב מִיָּד אַחֲרֵי הַסְּעוּדָה.",
             exampleNative = "Отец зашёл в синагогу на מַעֲרִיב сразу после ужина.",
-            transliteration = "маарив",
             pos = "noun", semanticGroup = "religion_shabbat_prayers", fillInBlankExclusions = listOf(190507L, 190508L)),
 
         WordEntity(id = 190507, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -138,7 +132,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Послеполуденный молитвенный чин — между четвёртым часом дня и закатом.",
             example = "הִיא הִגִּיעָה לְמִנְחָה בְּדִיּוּק לִפְנֵי שֶׁסָּגְרוּ אֶת הַדְּלָתוֹת.",
             exampleNative = "Она пришла на מִנְחָה прямо перед тем, как закрыли двери.",
-            transliteration = "минха",
             pos = "noun", semanticGroup = "religion_shabbat_prayers", fillInBlankExclusions = listOf(190506L, 190508L)),
 
         WordEntity(id = 190508, setId = 1905, languagePair = "he-ru", rarity = "RARE",
@@ -148,7 +141,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Особый молитвенный чин субботы и праздников, читаемый сразу после чтения Торы.",
             example = "אַחֲרֵי מוּסָף הַקְּהִילָּה יָצְאָה לְקִדּוּשׁ בָּאוּלָם.",
             exampleNative = "После מוּסָף община вышла на угощение в зал.",
-            transliteration = "мусаф",
             pos = "noun", semanticGroup = "religion_shabbat_prayers", fillInBlankExclusions = listOf(190501L, 190502L, 190506L, 190507L, 190509L)),
 
         WordEntity(id = 190509, setId = 1905, languagePair = "he-ru", rarity = "RARE",
@@ -158,7 +150,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Действо, во время которого читают из священного свитка по недельной разбивке.",
             example = "בְּזְמַן קְרִיאַת הַתּוֹרָה הַיֶּלֶד עָמַד לְיַד הָאָב.",
             exampleNative = "Во время קְרִיאַת הַתּוֹרָה мальчик стоял рядом с отцом.",
-            transliteration = "криат hа-тора",
             pos = "phrase", semanticGroup = "religion_shabbat_prayers", fillInBlankExclusions = listOf(190501L, 190502L, 190503L, 190506L, 190507L, 190508L, 190510L, 190516L, 190517L, 190519L, 190520L)),
 
         WordEntity(id = 190510, setId = 1905, languagePair = "he-ru", rarity = "RARE",
@@ -168,7 +159,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Фиксированный отрывок из Пятикнижия, привязанный именно к текущей неделе года.",
             example = "פַּרְשַׁת הַשָּׁבוּעַ הַזּוֹ מְסַפֶּרֶת עַל יְצִיאַת מִצְרַיִם.",
             exampleNative = "פַּרְשַׁת הַשָּׁבוּעַ этой недели рассказывает об исходе из Египта.",
-            transliteration = "паршат hа-шавуа",
             pos = "phrase", semanticGroup = "religion_shabbat_prayers"),
 
         // ── Group: religion_shabbat_objects (5 words) ─────────────────────────
@@ -180,7 +170,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Смесь душистых трав, которой отгоняют печаль после исхода святого дня.",
             example = "הַסַּבְתָּא הִגִּישָׁה קֻפְסַת בְּשָׂמִים סְבִיב הַשֻּׁלְחָן.",
             exampleNative = "Бабушка пустила коробочку בְּשָׂמִים по кругу стола.",
-            transliteration = "бэсамим",
             pos = "noun", semanticGroup = "religion_shabbat_objects", fillInBlankExclusions = listOf(190512L)),
 
         WordEntity(id = 190512, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -190,7 +179,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Серебряный или стальной сосуд, держащий свечи для пятничного вечера.",
             example = "פָּמוֹט עָבָר בִּירוּשָּׁה מִסַּבְתָּא בְּפּוֹלִין.",
             exampleNative = "פָּמוֹט достался по наследству от бабушки из Польши.",
-            transliteration = "памот",
             pos = "noun", semanticGroup = "religion_shabbat_objects", fillInBlankExclusions = listOf(190511L, 190513L, 190514L)),
 
         WordEntity(id = 190513, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -200,7 +188,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Вышитая ткань, накрывающая хлеб на столе в промежутке между зажиганием и киддушем.",
             example = "מַפַּת חַלָּה לְבָנָה הִתְנַעְנְעָה כְּשֶׁפָּתְחוּ אֶת הַחַלּוֹן.",
             exampleNative = "Белая מַפַּת חַלָּה колыхнулась, когда открыли окно.",
-            transliteration = "мапат хала",
             pos = "phrase", semanticGroup = "religion_shabbat_objects", fillInBlankExclusions = listOf(190514L, 190515L)),
 
         WordEntity(id = 190514, setId = 1905, languagePair = "he-ru", rarity = "RARE",
@@ -210,7 +197,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Особая чарка, обычно серебряная, которую наполняют вином для благословения.",
             example = "אַבָּא הִגְבִּיהַ אֶת כּוֹס קִדּוּשׁ מֵעַל לַשֻּׁלְחָן.",
             exampleNative = "Папа поднял כּוֹס קִדּוּשׁ над столом.",
-            transliteration = "кос кидуш",
             pos = "phrase", semanticGroup = "religion_shabbat_objects"),
 
         WordEntity(id = 190515, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -220,7 +206,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Пара круглых хлебов, которые кладут под скатерть в память о двойной порции манны.",
             example = "הוּא בָּצַע לֶחֶם מִשְׁנֶה וְחִלֵּק לַכֻּלָּם.",
             exampleNative = "Он надломил לֶחֶם מִשְׁנֶה и раздал всем за столом.",
-            transliteration = "лэхэм мишнэ",
             pos = "phrase", semanticGroup = "religion_shabbat_objects", fillInBlankExclusions = listOf(190513L, 190514L)),
 
         // ── Group: religion_shabbat_meals (5 words) ───────────────────────────
@@ -232,7 +217,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Праздничный ужин в пятницу вечером — с рыбой, мясом и пением вокруг стола.",
             example = "לְסְעוּדַת שַׁבָּת אֶצְלָם תָּמִיד מַזְמִינִים שְׁכֵנִים.",
             exampleNative = "На סְעוּדַת שַׁבָּת у них всегда зовут соседей.",
-            transliteration = "сэудат шабат",
             pos = "phrase", semanticGroup = "religion_shabbat_meals", fillInBlankExclusions = listOf(190517L, 190518L, 190519L, 190520L)),
 
         WordEntity(id = 190517, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -242,7 +226,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Лёгкое застолье во второй половине дня, между послеполуденной молитвой и появлением звёзд.",
             example = "בַּסְּעוּדָה שְׁלִישִׁית הִגִּישׁוּ דָּג כָּבוּשׁ וְסָלָט.",
             exampleNative = "На סְעוּדָה שְׁלִישִׁית подали маринованную рыбу и салат.",
-            transliteration = "сэуда шлишит",
             pos = "phrase", semanticGroup = "religion_shabbat_meals"),
 
         WordEntity(id = 190518, setId = 1905, languagePair = "he-ru", rarity = "RARE",
@@ -252,7 +235,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Заповедь чувствовать в седьмой день удовольствие — вкусной пищей, сном, пением и отдыхом.",
             example = "עוֹנֶג שַׁבָּת אֶצְלָם זֶה שֵׁנָה אֲרוּכָה אַחֲרֵי הָאֲרוּחָה.",
             exampleNative = "עוֹנֶג שַׁבָּת у них — это долгий сон после еды.",
-            transliteration = "онэг шабат",
             pos = "phrase", semanticGroup = "religion_shabbat_meals", fillInBlankExclusions = listOf(190516L, 190517L, 190519L, 190520L)),
 
         WordEntity(id = 190519, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -262,7 +244,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Поздний четвёртый ужин, уже после hавдалы, которым провожают святой день.",
             example = "הַחֲסִידִים נִשְׁאֲרוּ לִמְלַוֶּה מַלְכָּה עִם גִּטָּרָה עַד חָצוֹת.",
             exampleNative = "Хасиды остались на מְלַוֶּה מַלְכָּה с гитарой до полуночи.",
-            transliteration = "мэлавэ малка",
             pos = "phrase", semanticGroup = "religion_shabbat_meals", fillInBlankExclusions = listOf(190516L, 190517L, 190518L, 190520L)),
 
         WordEntity(id = 190520, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -272,7 +253,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Короткое толкование, которое произносят между блюдами, на тему текущей недельной главы.",
             example = "הָאוֹרֵחַ הִכִּין דְּבַר תּוֹרָה קָצָר עַל יוֹסֵף וְאֶחָיו.",
             exampleNative = "Гость подготовил короткое דְּבַר תּוֹרָה об Иосифе и его братьях.",
-            transliteration = "двар тора",
             pos = "phrase", semanticGroup = "religion_shabbat_meals", fillInBlankExclusions = listOf(190509L, 190516L, 190517L, 190518L, 190519L)),
 
         // ── Group: religion_shabbat_laws (5 words) ────────────────────────────
@@ -284,7 +264,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Статус предмета, к которому нельзя прикасаться в седьмой день — деньги, ручки, молоток.",
             example = "הַטֶּלֶפוֹן נִשְׁאַר עַל הַשֻּׁלְחָן כִּי הוּא מוּקְצֶה.",
             exampleNative = "Телефон остался на столе, потому что он מוּקְצֶה.",
-            transliteration = "мукцэ",
             pos = "adjective", semanticGroup = "religion_shabbat_laws"),
 
         WordEntity(id = 190522, setId = 1905, languagePair = "he-ru", rarity = "RARE",
@@ -294,7 +273,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Созидательное действие — варка, письмо, разжигание огня — запретное в седьмой день.",
             example = "לְהַדְלִיק אוֹר זֹאת מְלָאכָה אֲסוּרָה לְפִי הַהֲלָכָה.",
             exampleNative = "Включить свет — это מְלָאכָה, запрещённая по закону.",
-            transliteration = "мэлаха",
             pos = "noun", semanticGroup = "religion_shabbat_laws", fillInBlankExclusions = listOf(190523L)),
 
         WordEntity(id = 190523, setId = 1905, languagePair = "he-ru", rarity = "EPIC",
@@ -304,7 +282,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Тонкая проволока, обводящая район и соединяющая его дворы в одно владение, чтобы разрешить носить.",
             example = "בְּלִי הָעֵירוּב אֵין אֵיךְ לְהוֹצִיא עֲגָלָה לָרְחוֹב.",
             exampleNative = "Без עֵירוּב коляску на улицу не вывезешь.",
-            transliteration = "эрув",
             pos = "noun", semanticGroup = "religion_shabbat_laws", fillInBlankExclusions = listOf(190522L)),
 
         WordEntity(id = 190524, setId = 1905, languagePair = "he-ru", rarity = "RARE",
@@ -314,7 +291,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Миг, когда на небе видны три звезды и святой день заканчивается.",
             example = "בְּצֵאת הַשַּׁבָּת הָאָב חָזַר לַטֶּלֶפוֹן וּלְחָדָשׁוֹת.",
             exampleNative = "В צֵאת הַשַּׁבָּת отец вернулся к телефону и новостям.",
-            transliteration = "цет hа-шабат",
             pos = "phrase", semanticGroup = "religion_shabbat_laws", fillInBlankExclusions = listOf(190525L)),
 
         WordEntity(id = 190525, setId = 1905, languagePair = "he-ru", rarity = "RARE",
@@ -324,7 +300,6 @@ object WordDataHebrewReligionShabbat {
             definitionNative = "Образ жизни со строгим вниманием ко всем запретам седьмого дня и к его заповедям.",
             example = "מֵאָז הָעֲלִיָּה הִיא אִמְּצָה שְׁמִירַת שַׁבָּת מְלֵאָה.",
             exampleNative = "После репатриации она приняла полное שְׁמִירַת שַׁבָּת.",
-            transliteration = "шмират шабат",
             pos = "phrase", semanticGroup = "religion_shabbat_laws", fillInBlankExclusions = listOf(190505L, 190518L, 190524L)),
     )
 }

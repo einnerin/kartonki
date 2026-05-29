@@ -74,7 +74,7 @@ object WordDataHebrewStartupL2 {
         // ── startup_market (5) — на каком рынке играет стартап ──
         WordEntity(
             id = 178901, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_market", transliteration = "shuk yaad",
+            pos = "noun", semanticGroup = "startup_market",
             original = "שׁוּק יַעַד", translation = "целевой рынок",
             definition = "הַתְּחוּם הַכַּלְכָּלִי שֶׁבּוֹ הַחֶבְרָה רוֹצָה לִמְכֹּר וְלִצְמֹחַ בַּשָּׁנִים הַקְּרוֹבוֹת.",
             definitionNative = "Та сфера экономики, где фирма хочет продавать и расти в ближайшие годы.",
@@ -83,7 +83,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178902L, 178903L, 178904L, 178905L, 178906L, 178924L)),
         WordEntity(
             id = 178902, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_market", transliteration = "tsorekh shuk",
+            pos = "noun", semanticGroup = "startup_market",
             original = "צֹרֶךְ שׁוּק", translation = "потребность рынка",
             definition = "מַשֶּׁהוּ שֶׁאֲנָשִׁים בָּעֵסֶק רוֹצִים אֲבָל לֹא מוֹצְאִים פִּתְרוֹן טוֹב כָּעֵת.",
             definitionNative = "Что-то, чего хотят люди в бизнесе, но хорошего решения сейчас не находят.",
@@ -92,7 +92,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178901L, 178903L, 178904L, 178905L, 178906L)),
         WordEntity(
             id = 178903, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_market", transliteration = "matkhare",
+            pos = "noun", semanticGroup = "startup_market",
             original = "מַתְחָרֶה", translation = "конкурент",
             definition = "חֶבְרָה אַחֶרֶת שֶׁמּוֹכֶרֶת מַשֶּׁהוּ דּוֹמֶה לְאוֹתָם לָקוֹחוֹת.",
             definitionNative = "Другая фирма, продающая что-то похожее тем же клиентам.",
@@ -101,7 +101,7 @@ object WordDataHebrewStartupL2 {
         ),
         WordEntity(
             id = 178904, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_market", transliteration = "nituakh shuk",
+            pos = "noun", semanticGroup = "startup_market",
             original = "נִיתוּחַ שׁוּק", translation = "анализ рынка",
             definition = "אִסּוּף נְתוּנִים עַל גֹּדֶל הַמִּגְזָר, הַלָּקוֹחוֹת וְהַסְּכוּמִים שֶׁמְּסַתּוֹבְבִים בּוֹ.",
             definitionNative = "Сбор данных о размере сектора, его клиентах и о деньгах, которые в нём ходят.",
@@ -110,7 +110,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178901L, 178902L, 178903L, 178905L, 178910L)),
         WordEntity(
             id = 178905, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_market", transliteration = "pelakh shuk",
+            pos = "noun", semanticGroup = "startup_market",
             original = "פֶּלַח שׁוּק", translation = "сегмент рынка",
             definition = "חֵלֶק מֻגְדָּר שֶׁל הַשּׁוּק עִם קָהָל מְסֻיָּם וְצוֹרֶךְ דּוֹמֶה.",
             definitionNative = "Очерченная часть рынка с конкретной публикой и схожей нуждой.",
@@ -121,7 +121,7 @@ object WordDataHebrewStartupL2 {
         // ── startup_customers_basic (5) — первое касание с клиентами ──
         WordEntity(
             id = 178906, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_customers_basic", transliteration = "lakoakh yaad",
+            pos = "noun", semanticGroup = "startup_customers_basic",
             original = "לָקוֹחַ יַעַד", translation = "целевой клиент",
             definition = "הָאָדָם הָאִידֵאָלִי שֶׁבִּשְׁבִילוֹ הַחֶבְרָה בּוֹנָה אֶת מָה שֶׁהִיא בּוֹנָה.",
             definitionNative = "Идеальный человек, ради которого фирма строит то, что она строит.",
@@ -130,7 +130,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178903L, 178907L, 178908L, 178909L, 178910L)),
         WordEntity(
             id = 178907, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_customers_basic", transliteration = "pgisha rishona",
+            pos = "noun", semanticGroup = "startup_customers_basic",
             original = "פְּגִישָׁה רִאשׁוֹנָה", translation = "первая встреча",
             definition = "מִפְגָּשׁ פָּתוּחַ עִם לָקוֹחַ פּוֹטֶנְצְיָאלִי שֶׁבּוֹ מַכִּירִים זֶה אֶת זֶה.",
             definitionNative = "Открытая встреча с потенциальным клиентом — где знакомятся друг с другом.",
@@ -139,7 +139,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178906L, 178908L, 178909L, 178910L, 178917L, 178920L)),
         WordEntity(
             id = 178908, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_customers_basic", transliteration = "hatsagat mutsar",
+            pos = "noun", semanticGroup = "startup_customers_basic",
             original = "הַצָּגַת מוּצָר", translation = "презентация продукта",
             definition = "מַעֲמָד שֶׁבּוֹ מַרְאִים לְלָקוֹחַ אֵיךְ הַדָּבָר עוֹבֵד וּמַה הוּא נוֹתֵן לוֹ.",
             definitionNative = "Момент, когда клиенту показывают, как штука работает и что она ему даёт.",
@@ -148,7 +148,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178906L, 178907L, 178909L, 178910L, 178917L)),
         WordEntity(
             id = 178909, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_customers_basic", transliteration = "girsat demo",
+            pos = "noun", semanticGroup = "startup_customers_basic",
             original = "גִּרְסַת דֵּמוֹ", translation = "демо-версия",
             definition = "סִיבּוּב חַי שֶׁל הַדָּבָר עִם נְתוּנִים אֲמִתִּיִּים — לֹא רַק תְּמוּנוֹת בְּמַצֶּגֶת.",
             definitionNative = "Живой прогон штуки на настоящих данных — не одни картинки в презентации.",
@@ -157,7 +157,7 @@ object WordDataHebrewStartupL2 {
         ),
         WordEntity(
             id = 178910, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_customers_basic", transliteration = "mashov",
+            pos = "noun", semanticGroup = "startup_customers_basic",
             original = "מַשּׁוֹב", translation = "обратная связь",
             definition = "מָה שֶׁהָאָדָם אוֹמֵר אַחֲרֵי שֶׁנִּסָּה — מָה הָיָה טוֹב וּמָה הִפְרִיעַ.",
             definitionNative = "То, что человек говорит после того, как попробовал — что было хорошо и что мешало.",
@@ -168,7 +168,7 @@ object WordDataHebrewStartupL2 {
         // ── startup_product_basic (5) — что и как называется в продукте ──
         WordEntity(
             id = 178911, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_product_basic", transliteration = "shem mutsar",
+            pos = "noun", semanticGroup = "startup_product_basic",
             original = "שֵׁם מוּצָר", translation = "название продукта",
             definition = "הַמִּלָּה הָרִאשׁוֹנָה שֶׁאֲנָשִׁים שׁוֹמְעִים — וְהִיא נִשְׁאֶרֶת אֶצְלָם בָּרֹאשׁ.",
             definitionNative = "Первое слово, которое люди слышат — оно у них и остаётся в голове.",
@@ -177,7 +177,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178912L, 178913L, 178914L, 178915L)),
         WordEntity(
             id = 178912, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_product_basic", transliteration = "logo",
+            pos = "noun", semanticGroup = "startup_product_basic",
             original = "לוֹגוֹ", translation = "логотип",
             definition = "סִימָן צְיוּרִי קָטָן שֶׁמְּזַהֶה אֶת הַחֶבְרָה עַל אֲרִיזוֹת, אֲתָר וּכְרָטִיסֵי בִּקּוּר.",
             definitionNative = "Маленький рисованный знак, по которому фирму узнают на упаковке, сайте и визитках.",
@@ -186,7 +186,7 @@ object WordDataHebrewStartupL2 {
         ),
         WordEntity(
             id = 178913, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_product_basic", transliteration = "yi'ud",
+            pos = "noun", semanticGroup = "startup_product_basic",
             original = "יִעוּד", translation = "миссия (главная цель компании)",
             definition = "מִשְׁפָּט קָצָר שֶׁאוֹמֵר בִּשְׁבִיל מָה הַחֶבְרָה קַיֶּמֶת בָּעוֹלָם.",
             definitionNative = "Короткая фраза, говорящая, ради чего фирма существует на свете.",
@@ -195,7 +195,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178911L, 178912L, 178914L, 178915L)),
         WordEntity(
             id = 178914, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_product_basic", transliteration = "havtakhat mutsar",
+            pos = "noun", semanticGroup = "startup_product_basic",
             original = "הַבְטָחַת מוּצָר", translation = "обещание продукта",
             definition = "הַתּוֹעֶלֶת הָאַחַת שֶׁהַלָּקוֹחַ מְקַבֵּל בְּוַדָּאוּת אִם יִקְנֶה.",
             definitionNative = "Та одна польза, которую клиент точно получит, если купит.",
@@ -204,7 +204,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178911L, 178912L, 178913L, 178915L)),
         WordEntity(
             id = 178915, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_product_basic", transliteration = "mekhir mutsar",
+            pos = "noun", semanticGroup = "startup_product_basic",
             original = "מְחִיר מוּצָר", translation = "цена продукта",
             definition = "הַסְּכוּם שֶׁהַלָּקוֹחַ מְשַׁלֵּם וְשֶׁמַּשְׁפִּיעַ עַל הַתְּחוּשָׁה אִם זֶה זוֹל אוֹ יָקָר.",
             definitionNative = "Сумма, которую клиент платит — она задаёт ощущение, дёшево это или дорого.",
@@ -215,7 +215,7 @@ object WordDataHebrewStartupL2 {
         // ── startup_sales_basic (5) — каналы первой продажи ──
         WordEntity(
             id = 178916, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_sales_basic", transliteration = "mikhtav kar",
+            pos = "noun", semanticGroup = "startup_sales_basic",
             original = "מִכְתָּב קָר", translation = "холодное письмо",
             definition = "פְּנִיָּה כְּתוּבָה לְאָדָם זָר שֶׁאֵין אִתּוֹ הֶכֵּרוּת קוֹדֶמֶת בִּכְלָל.",
             definitionNative = "Письменное обращение к незнакомому человеку, без всякого предыдущего знакомства.",
@@ -224,7 +224,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178917L, 178918L, 178919L, 178920L)),
         WordEntity(
             id = 178917, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_sales_basic", transliteration = "sikhat telefon",
+            pos = "noun", semanticGroup = "startup_sales_basic",
             original = "שִׂיחַת טֶלֶפוֹן", translation = "телефонный звонок",
             definition = "דִּבּוּר חַי בָּרְשֶׁת — שׁוֹמְעִים זֶה אֶת זֶה אֲבָל לֹא רוֹאִים פָּנִים.",
             definitionNative = "Живой разговор по сети — слышат друг друга, но лиц не видят.",
@@ -233,7 +233,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178907L, 178908L, 178916L, 178918L, 178919L, 178920L)),
         WordEntity(
             id = 178918, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_sales_basic", transliteration = "tiyutat khoze",
+            pos = "noun", semanticGroup = "startup_sales_basic",
             original = "טִיוּטַת חוֹזֶה", translation = "черновик договора",
             definition = "גִּרְסָה רָאשׁוֹנָה שֶׁל הַמִּסְמָךְ הַמִּשְׁפָּטִי שֶׁעֲדַיִן עוֹבֶרֶת תִּקּוּנִים.",
             definitionNative = "Первая редакция юридической бумаги — она ещё проходит правки.",
@@ -242,7 +242,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178916L, 178917L, 178919L, 178920L)),
         WordEntity(
             id = 178919, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_sales_basic", transliteration = "hanakha",
+            pos = "noun", semanticGroup = "startup_sales_basic",
             original = "הֲנָחָה", translation = "скидка",
             definition = "הוֹרָדָה זְמַנִּית בַּמְּחִיר שֶׁמְּעוֹדֶדֶת אֶת הַלָּקוֹחַ לְהַחְלִיט מַהֵר יוֹתֵר.",
             definitionNative = "Временное снижение цены — побуждает клиента решиться побыстрее.",
@@ -251,7 +251,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178916L, 178917L, 178918L, 178920L)),
         WordEntity(
             id = 178920, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_sales_basic", transliteration = "mkhira rishona",
+            pos = "noun", semanticGroup = "startup_sales_basic",
             original = "מְכִירָה רִאשׁוֹנָה", translation = "первая продажа",
             definition = "הַעִסְקָה שֶׁבָּהּ מִישֶׁהוּ לֹא מֻכָּר מַעֲבִיר כֶּסֶף תְּמוּרַת מָה שֶׁבָּנִינוּ.",
             definitionNative = "Сделка, в которой незнакомый человек переводит деньги за то, что мы построили.",
@@ -262,7 +262,7 @@ object WordDataHebrewStartupL2 {
         // ── startup_lifecycle_basic (5) — этапы жизни ранней компании ──
         WordEntity(
             id = 178921, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_lifecycle_basic", transliteration = "hashaka",
+            pos = "noun", semanticGroup = "startup_lifecycle_basic",
             original = "הַשְׁקָה", translation = "запуск (выход в свет)",
             definition = "הָרֶגַע שֶׁבּוֹ הַחֶבְרָה פּוֹתַחַת אֶת הַדֶּלֶת לַקָּהָל הָרָחָב לַשִּׁמּוּשׁ הָרִאשׁוֹן.",
             definitionNative = "Момент, когда фирма открывает дверь широкой публике для первого использования.",
@@ -271,7 +271,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178922L, 178923L, 178924L, 178925L)),
         WordEntity(
             id = 178922, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "startup_lifecycle_basic", transliteration = "tsmikha",
+            pos = "noun", semanticGroup = "startup_lifecycle_basic",
             original = "צְמִיחָה", translation = "рост (компании)",
             definition = "תְּקוּפָה שֶׁבָּהּ מִסְפַּר הַלָּקוֹחוֹת וְהַהַכְנָסוֹת עוֹלִים מֵחֹדֶשׁ לְחֹדֶשׁ.",
             definitionNative = "Период, когда количество клиентов и доходы поднимаются от месяца к месяцу.",
@@ -280,7 +280,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178923L, 178924L, 178925L)),
         WordEntity(
             id = 178923, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_lifecycle_basic", transliteration = "atsirat pe'ila",
+            pos = "noun", semanticGroup = "startup_lifecycle_basic",
             original = "עֲצִירַת פְּעִילוּת", translation = "приостановка деятельности",
             definition = "הַחְלָטָה לְהַפְסִיק לִמְכֹּר וּלְפַתֵּחַ זְמַנִּית כְּדֵי לִבְחֹן מָה הָלְאָה.",
             definitionNative = "Решение временно прекратить продажи и разработку — чтобы обдумать, что дальше.",
@@ -289,7 +289,7 @@ object WordDataHebrewStartupL2 {
          fillInBlankExclusions = listOf(178921L, 178922L, 178924L, 178925L)),
         WordEntity(
             id = 178924, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_lifecycle_basic", transliteration = "kivun khadash",
+            pos = "noun", semanticGroup = "startup_lifecycle_basic",
             original = "כִּוּוּן חָדָשׁ", translation = "новое направление",
             definition = "מַסְלוּל אַחֵר שֶׁהַחֶבְרָה בּוֹחֶרֶת אַחֲרֵי שֶׁהָרָאשׁוֹן הִתְבָּרֵר כְּלֹא מַתְאִים.",
             definitionNative = "Другая дорога, которую фирма выбирает после того, как первая оказалась негодной.",
@@ -298,7 +298,7 @@ object WordDataHebrewStartupL2 {
         ),
         WordEntity(
             id = 178925, setId = 1789, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "startup_lifecycle_basic", transliteration = "sgirat khevra",
+            pos = "noun", semanticGroup = "startup_lifecycle_basic",
             original = "סְגִירַת חֶבְרָה", translation = "закрытие компании",
             definition = "סוֹף הַדֶּרֶךְ שֶׁל הָעֵסֶק — מְפַטְּרִים עוֹבְדִים, מַחְזִירִים חוֹבוֹת וְסוֹגְרִים תִּיק.",
             definitionNative = "Конец пути бизнеса — увольняют людей, отдают долги, закрывают дело.",

@@ -66,7 +66,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Цифровой курс, открытый каждому в сети, чаще бесплатный, с тысячами слушателей одного потока.",
             example = "קוּרְסֵרָה הִשִּׁיקָה קוּרְס מָקוּוָן הֲמוֹנִי בִּלְמִידַת מְכוֹנָה.",
             exampleNative = "Coursera запустил קוּרְס מָקוּוָן הֲמוֹנִי по машинному обучению.",
-            transliteration = "курс мэкуван hэмони",
             pos = "phrase", semanticGroup = "edu_edtech_formats", fillInBlankExclusions = listOf(190202L, 190203L, 190204L, 190205L)),
 
         WordEntity(id = 190202, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -76,7 +75,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Формат, в котором ученик смотрит записанные занятия в удобное время, без живой встречи.",
             example = "לְמִידָה אַ־סִינְכְרוֹנִית מַתְאִימָה לְעוֹבְדִים בְּמִשְׁמָרוֹת מִתְחַלְּפוֹת.",
             exampleNative = "לְמִידָה אַ־סִינְכְרוֹנִית подходит работающим в сменных графиках.",
-            transliteration = "лмида а-синхронит",
             pos = "phrase", semanticGroup = "edu_edtech_formats", fillInBlankExclusions = listOf(190201L, 190203L, 190204L, 190205L)),
 
         WordEntity(id = 190203, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -86,7 +84,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Формат, в котором преподаватель и ученики встречаются в реальном времени по видео или очно.",
             example = "לְמִידָה סִינְכְרוֹנִית דּוֹרֶשֶׁת אִינְטֶרְנֵט יַצִּיב וּמַצְלֵמָה פְּעִילָה.",
             exampleNative = "לְמִידָה סִינְכְרוֹנִית требует стабильного интернета и рабочей камеры.",
-            transliteration = "лмида синхронит",
             pos = "phrase", semanticGroup = "edu_edtech_formats", fillInBlankExclusions = listOf(190201L, 190202L, 190204L, 190205L)),
 
         WordEntity(id = 190204, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -96,7 +93,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Курс, соединяющий очные встречи и онлайн-задания в одну программу.",
             example = "הָאוּנִיבֶרְסִיטָה הִשְׁאִירָה לְמִידָה מְשׁוּלֶּבֶת לְמַחֲצִית הַסֶּמִינָרִים.",
             exampleNative = "Университет оставил לְמִידָה מְשׁוּלֶּבֶת для половины семинаров.",
-            transliteration = "лмида мэшулэвэт",
             pos = "phrase", semanticGroup = "edu_edtech_formats", fillInBlankExclusions = listOf(190201L, 190202L, 190203L, 190205L)),
 
         WordEntity(id = 190205, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -106,7 +102,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Одно занятие, где часть класса сидит в комнате, а часть подключается удалённо одновременно.",
             example = "מַצְלֵמָה רְחָבַת זָוִית הִכְרִיחָה אֶת לְמִידָה הִיבְּרִידִית לִפְעֹל חָלָק.",
             exampleNative = "Широкоугольная камера позволила לְמִידָה הִיבְּרִידִית работать гладко.",
-            transliteration = "лмида hибридит",
             pos = "phrase", semanticGroup = "edu_edtech_formats", fillInBlankExclusions = listOf(190201L, 190202L, 190203L, 190204L)),
 
         // ── Group: edu_edtech_tools (5 words) ─────────────────────────────────
@@ -118,7 +113,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Платформа, где преподаватели публикуют задания, оценки и материалы всего курса.",
             example = "בֵּית הַסֵּפֶר עָבַר מ־Moodle ל־Canvas בְּגִלּוּי מַעֲרֶכֶת לְנִיהוּל לְמִידָה.",
             exampleNative = "Школа перешла с Moodle на Canvas, обновив מַעֲרֶכֶת לְנִיהוּל לְמִידָה.",
-            transliteration = "маарэхэт лэ-ниhуль лмида",
             pos = "phrase", semanticGroup = "edu_edtech_tools", fillInBlankExclusions = listOf(190207L, 190208L, 190209L, 190210L)),
 
         WordEntity(id = 190207, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -128,7 +122,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Видеокомната в прямом эфире: учитель и ученики встречаются онлайн вместо настоящего класса.",
             example = "כִּתָּה וִירְטוּאָלִית נִפְתְּחָה בְּדִיּוּק בְּתֵשַׁע בַּבֹּקֶר.",
             exampleNative = "כִּתָּה וִירְטוּאָלִית открылась ровно в девять утра.",
-            transliteration = "кита виртуалит",
             pos = "phrase", semanticGroup = "edu_edtech_tools", fillInBlankExclusions = listOf(190206L, 190208L, 190209L, 190210L)),
 
         WordEntity(id = 190208, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -138,7 +131,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Маленькая отдельная видеокомната, где группа класса работает вместе несколько минут.",
             example = "הִיא שָׁלְחָה כָּל קְבוּצָה לְחֲדַר פְּרִיצָה לְעֶשֶׂר דַּקּוֹת.",
             exampleNative = "Она отправила каждую группу в חֲדַר פְּרִיצָה на десять минут.",
-            transliteration = "хадар прица",
             pos = "phrase", semanticGroup = "edu_edtech_tools", fillInBlankExclusions = listOf(190206L, 190207L, 190209L, 190210L)),
 
         WordEntity(id = 190209, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -148,7 +140,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Функция в видеосвязи: показывает всем участникам экран докладчика в реальном времени.",
             example = "שִׁתּוּף מָסָךְ עָזַר לְצַיֵּג אֶת הַקּוֹד שׁוּרָה אַחַר שׁוּרָה.",
             exampleNative = "שִׁתּוּף מָסָךְ помог показать код строка за строкой.",
-            transliteration = "шитуф масах",
             pos = "phrase", semanticGroup = "edu_edtech_tools"),
 
         WordEntity(id = 190210, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -158,7 +149,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Бегущий текст под видео, показывающий слова лектора, создаётся распознаванием речи.",
             example = "כְּתוּבִיוֹת אוֹטוֹמָטִיוֹת עָזְרוּ לְסְטוּדֶנְט חֵרֵשׁ לַעֲקֹב אַחַר הַהַרְצָאָה.",
             exampleNative = "כְּתוּבִיוֹת אוֹטוֹמָטִיוֹת помогли глухому студенту следить за лекцией.",
-            transliteration = "ктувийот отоматийот",
             pos = "phrase", semanticGroup = "edu_edtech_tools", fillInBlankExclusions = listOf(190206L, 190207L, 190208L, 190209L)),
 
         // ── Group: edu_edtech_methods (5 words) ───────────────────────────────
@@ -170,7 +160,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Подход: дома смотрят лекцию, а в классе делают упражнения с учителем.",
             example = "בְּכִתָּה הָפוּכָה הַיְּלָדִים צוֹפִים בִּשְׁבָרִים לִפְנֵי שִׁעוּר.",
             exampleNative = "В כִּתָּה הָפוּכָה дети смотрят про дроби перед уроком.",
-            transliteration = "кита hафуха",
             pos = "phrase", semanticGroup = "edu_edtech_methods"),
 
         WordEntity(id = 190212, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -180,7 +169,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Добавление в уроки игровых элементов — очков, уровней, значков — для удержания вовлечённости.",
             example = "גֵיימִיפִיקַצְיָה שֶׁל דוּאוֹלִינְגוֹ מַחְזִיקָה מִשְׁתַּמְּשִׁים פְּעִילִים בְּכָל יוֹם.",
             exampleNative = "גֵיימִיפִיקַצְיָה Duolingo удерживает пользователей активными каждый день.",
-            transliteration = "геймификация",
             pos = "noun", semanticGroup = "edu_edtech_methods"),
 
         WordEntity(id = 190213, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -190,7 +178,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Программа подбирает следующее упражнение по точности предыдущих ответов ученика.",
             example = "לְמִידָה אַדַּפְּטִיבִית הֶחְזִירָה אוֹתוֹ לְשְׁבָרִים כְּשֶׁאַלְגֶּבְּרָה נֶחְלְשָׁה.",
             exampleNative = "לְמִידָה אַדַּפְּטִיבִית вернула его к дробям, когда алгебра просела.",
-            transliteration = "лмида адаптивит",
             pos = "phrase", semanticGroup = "edu_edtech_methods", fillInBlankExclusions = listOf(190211L, 190214L, 190215L)),
 
         WordEntity(id = 190214, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -200,7 +187,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Метод: учитель задаёт открытый вопрос, а класс собирает доказательства и формулирует ответ.",
             example = "לְמִידָה מְבוֹסֶּסֶת חֲקִירָה הָפְכָה אֶת הַשִּׁעוּר לְדִיּוּן עַל בְּטִיחוּת.",
             exampleNative = "לְמִידָה מְבוֹסֶּסֶת חֲקִירָה превратила урок в дискуссию о безопасности.",
-            transliteration = "лмида мэвосэсэт хакира",
             pos = "phrase", semanticGroup = "edu_edtech_methods", fillInBlankExclusions = listOf(190211L, 190213L, 190215L)),
 
         WordEntity(id = 190215, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -210,7 +196,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Серия наводящих вопросов: учитель ведёт ученика к самостоятельному открытию ответа.",
             example = "שִׁיטַת סוֹקְרָטֶס שִׁמְּשָׁה בְּפַקוּלְטוֹת הַמִּשְׁפָּטִים בְּהַרְוַארְד.",
             exampleNative = "שִׁיטַת סוֹקְרָטֶס используется на юрфаках Гарварда.",
-            transliteration = "шитат сократэс",
             pos = "phrase", semanticGroup = "edu_edtech_methods", fillInBlankExclusions = listOf(190211L, 190213L, 190214L)),
 
         // ── Group: edu_edtech_pedagogy (5 words) ──────────────────────────────
@@ -222,7 +207,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Формат курса, где каждый ученик сам решает, когда начать, как быстро идти и когда закончить.",
             example = "לְמִידָה עַצְמָאִית בְּפַיְתוֹן אִפְשְׁרָה לָהּ לִלְמֹד בַּהַפְסָקוֹת.",
             exampleNative = "לְמִידָה עַצְמָאִית по Python позволила ей учиться в перерывах.",
-            transliteration = "лмида ацмаит",
             pos = "phrase", semanticGroup = "edu_edtech_pedagogy", fillInBlankExclusions = listOf(190217L, 190219L, 190220L)),
 
         WordEntity(id = 190217, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -232,7 +216,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Онлайн-курс, где студенты стартуют и заканчивают вместе, с недельным дедлайном и групповым чатом.",
             example = "לְמִידָה בְּקוֹהוֹרְטָה יְקָרָה פִּי עֲשָׂרָה מ־MOOC אֲבָל שׁוֹמֶרֶת לוֹמְדִים.",
             exampleNative = "לְמִידָה בְּקוֹהוֹרְטָה в десять раз дороже MOOC, но удерживает учеников.",
-            transliteration = "лмида бэ-коhорта",
             pos = "phrase", semanticGroup = "edu_edtech_pedagogy", fillInBlankExclusions = listOf(190216L, 190219L, 190220L)),
 
         WordEntity(id = 190218, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -242,7 +225,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Раздел педагогики, изучающий методы обучения взрослых, в отличие от детской педагогики.",
             example = "אַנְדְּרָגוֹגְיָה מַדְגִּישָׁה אֶת נִסְיוֹן הַחַיִּים שֶׁל הַלּוֹמֵד הַמְּבוּגָּר.",
             exampleNative = "אַנְדְּרָגוֹגְיָה подчёркивает жизненный опыт взрослого ученика.",
-            transliteration = "андрагогия",
             pos = "noun", semanticGroup = "edu_edtech_pedagogy"),
 
         WordEntity(id = 190219, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -252,7 +234,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Общий цифровой экран, где учитель и ученики одновременно рисуют, пишут и клеят заметки.",
             example = "הִיא שִׂרְטְטָה תָּא עַל לוּחַ דִּיגִיטָלִי שִׁתּוּפִי בְּמִירוֹ.",
             exampleNative = "Она набросала клетку на לוּחַ דִּיגִיטָלִי שִׁתּוּפִי в Miro.",
-            transliteration = "луах дигитали шитуфи",
             pos = "phrase", semanticGroup = "edu_edtech_pedagogy", fillInBlankExclusions = listOf(190216L, 190217L, 190220L)),
 
         WordEntity(id = 190220, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -262,7 +243,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Инструмент в платформе обучения: задаёт вопрос и получает ответы всего класса за секунды.",
             example = "סֶקֶר חַי גִּלָּה שֶׁמַּחֲצִית הַכִּתָּה לֹא הֵבִינָה אֶת הַכְּלָל.",
             exampleNative = "סֶקֶר חַי показал, что половина класса не поняла правило.",
-            transliteration = "сэкэр хай",
             pos = "phrase", semanticGroup = "edu_edtech_pedagogy", fillInBlankExclusions = listOf(190216L, 190217L, 190219L)),
 
         // ── Group: edu_edtech_content (5 words) ───────────────────────────────
@@ -274,7 +254,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Учебные материалы под лицензией, позволяющей любому копировать, изменять и повторно использовать их бесплатно.",
             example = "הַמִּכְלָלָה הֶחְלִיפָה סֵפֶר יָקָר בְּמַשְׁאַבֵי חִינּוּךְ פְּתוּחִים.",
             exampleNative = "Колледж заменил дорогой учебник на מַשְׁאַבֵי חִינּוּךְ פְּתוּחִים.",
-            transliteration = "машабэй хинух птухим",
             pos = "phrase", semanticGroup = "edu_edtech_content", fillInBlankExclusions = listOf(190222L, 190223L, 190224L, 190225L)),
 
         WordEntity(id = 190222, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -284,7 +263,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Онлайн-значок в профиле, подтверждающий, что ученик завершил курс или освоил навык.",
             example = "הִיא הִדְבִּיקָה תָּג דִּיגִיטָלִי שֶׁל גוּגֵל לַפְּרוֹפִיל בְּלִינְקְדְאִין.",
             exampleNative = "Она прикрепила תָּג דִּיגִיטָלִי от Google к профилю LinkedIn.",
-            transliteration = "таг дигитали",
             pos = "phrase", semanticGroup = "edu_edtech_content", fillInBlankExclusions = listOf(190221L, 190223L, 190224L, 190225L)),
 
         WordEntity(id = 190223, setId = 1902, languagePair = "he-ru", rarity = "RARE",
@@ -294,7 +272,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Запланированный порядок курсов или тем, ведущий ученика от стартового уровня к чёткой цели.",
             example = "לִינְקְדְאִין הִצִּיעַ נְתִיב לְמִידָה שֶׁל שִׁשָּׁה קוּרְסִים לְמְנַהֵל מוּצָר.",
             exampleNative = "LinkedIn предложил נְתִיב לְמִידָה из шести курсов до менеджера продукта.",
-            transliteration = "нэтив лмида",
             pos = "phrase", semanticGroup = "edu_edtech_content", fillInBlankExclusions = listOf(190221L, 190222L, 190224L, 190225L)),
 
         WordEntity(id = 190224, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -304,7 +281,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Короткая формальная квалификация, подтверждающая один узкий навык, гораздо меньше полного диплома.",
             example = "הַסְמָכַת מִיקְרוֹ בְּ־SQL הֵבִיאָה לָהּ שָׁלוֹשׁ שִׂיחוֹת מִמְּגַיְּסִים.",
             exampleNative = "הַסְמָכַת מִיקְרוֹ по SQL принёс ей три звонка от рекрутёров.",
-            transliteration = "hасмахат микро",
             pos = "phrase", semanticGroup = "edu_edtech_content"),
 
         WordEntity(id = 190225, setId = 1902, languagePair = "he-ru", rarity = "EPIC",
@@ -314,7 +290,6 @@ object WordDataHebrewEducationEdTech {
             definitionNative = "Умение находить, оценивать и создавать контент в сети безопасно и критически.",
             example = "תָּכְנִית הַלִּימּוּדִים הוֹסִיפָה אוֹרְיָנוּת דִּיגִיטָלִית מִכִּתָּה ז.",
             exampleNative = "Учебная программа добавила אוֹרְיָנוּת דִּיגִיטָלִית с 7-го класса.",
-            transliteration = "орьянут дигитали",
             pos = "phrase", semanticGroup = "edu_edtech_content", fillInBlankExclusions = listOf(190221L, 190222L, 190223L, 190224L)),
     )
 }

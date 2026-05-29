@@ -52,7 +52,7 @@ object WordDataHebrewQaL1 {
         // ── qa_basics (5) — общая лексика тестирования ──
         WordEntity(
             id = 177101, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "qa_basics", transliteration = "ba'aya",
+            pos = "noun", semanticGroup = "qa_basics",
             original = "בְּעָיָה", translation = "проблема",
             definition = "מַשֶּׁהוּ שֶׁלֹּא בְּסֵדֶר וְצָרִיךְ לְטַפֵּל בּוֹ — בַּמּוּצָר אוֹ בַּחַיִּים.",
             definitionNative = "Что-то не так — нужно разобраться: в продукте или в жизни.",
@@ -61,7 +61,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177102L, 177103L, 177104L, 177105L, 177113L, 177114L)),
         WordEntity(
             id = 177102, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "qa_basics", transliteration = "takala",
+            pos = "noun", semanticGroup = "qa_basics",
             original = "תַּקָּלָה", translation = "сбой",
             definition = "רֶגַע שֶׁבּוֹ הַמַּעֲרֶכֶת מַפְסִיקָה לַעֲבוֹד נָכוֹן בְּלִי שֶׁמִּישֶׁהוּ צִפָּה לְכָךְ.",
             definitionNative = "Момент, когда система перестаёт работать как надо — внезапно для всех.",
@@ -70,7 +70,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177101L, 177103L, 177104L, 177105L, 177113L, 177114L)),
         WordEntity(
             id = 177103, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "qa_basics", transliteration = "bdika",
+            pos = "noun", semanticGroup = "qa_basics",
             original = "בְּדִיקָה", translation = "проверка",
             definition = "פְּעֻלָּה שֶׁל מִי שֶׁמַּסְתַּכֵּל בִּדְבַר־מָה כְּדֵי לָדַעַת אִם הַכֹּל בְּסֵדֶר.",
             definitionNative = "Действие — кто-то смотрит на что-то, чтобы понять, всё ли в порядке.",
@@ -79,7 +79,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177101L, 177102L, 177104L, 177105L, 177125L)),
         WordEntity(
             id = 177104, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "qa_basics", transliteration = "ma'arekhet",
+            pos = "noun", semanticGroup = "qa_basics",
             original = "מַעֲרֶכֶת", translation = "система",
             definition = "אוֹסֶף שֶׁל חֲלָקִים שֶׁעוֹבְדִים יַחַד — לְמָשָׁל אַתָר, שָׂרָת וּמָסַד נְתוּנִים.",
             definitionNative = "Набор частей, что работают вместе — например, сайт, сервер и база данных.",
@@ -88,7 +88,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177101L, 177102L, 177105L)),
         WordEntity(
             id = 177105, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "qa_basics", transliteration = "kaftor",
+            pos = "noun", semanticGroup = "qa_basics",
             original = "כַּפְתּוֹר", translation = "кнопка",
             definition = "אֵיזוֹר קָטָן עַל הַמָּסָךְ שֶׁכּוֹתֵב טֶקְסְט וְמְקַבֵּל לְחִיצָה מִמִּישֶׁהוּ.",
             definitionNative = "Маленькая зона на экране — там написан текст, по ней щёлкают.",
@@ -99,7 +99,7 @@ object WordDataHebrewQaL1 {
         // ── qa_actions (5) — базовые действия пользователя ──
         WordEntity(
             id = 177106, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "qa_actions", transliteration = "lilkhots",
+            pos = "verb", semanticGroup = "qa_actions",
             original = "לִלְחֹץ", translation = "нажать",
             definition = "לָגַעַת בְּאֶצְבַּע אוֹ בַּעַכְבָּר עַל מַשֶּׁהוּ קָטָן עַל הַמָּסָךְ.",
             definitionNative = "Тронуть пальцем или мышкой что-то маленькое на экране.",
@@ -108,7 +108,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177107L, 177108L, 177109L, 177110L)),
         WordEntity(
             id = 177107, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "qa_actions", transliteration = "liftoakh",
+            pos = "verb", semanticGroup = "qa_actions",
             original = "לִפְתֹּחַ", translation = "открыть",
             definition = "לְהַגִּיעַ לַתֹּכֶן שֶׁהָיָה סָגוּר — דַּף בָּרֶשֶׁת, חַלּוֹן אוֹ קֹבֶץ.",
             definitionNative = "Добраться до содержимого, что было закрыто — страница в сети, окно или файл.",
@@ -117,7 +117,7 @@ object WordDataHebrewQaL1 {
         ),
         WordEntity(
             id = 177108, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "qa_actions", transliteration = "lisgor",
+            pos = "verb", semanticGroup = "qa_actions",
             original = "לִסְגֹּר", translation = "закрыть",
             definition = "לְהַפְסִיק לְהַצִּיג חַלּוֹן אוֹ דַּף וּלְפַנּוֹת מָקוֹם עַל הַמָּסָךְ.",
             definitionNative = "Перестать показывать окно или вкладку — освободить место на экране.",
@@ -126,7 +126,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177106L, 177107L, 177109L, 177110L)),
         WordEntity(
             id = 177109, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "qa_actions", transliteration = "lemale",
+            pos = "verb", semanticGroup = "qa_actions",
             original = "לְמַלֵּא", translation = "заполнить",
             definition = "לִכְתֹּב טֶקְסְט בְּכָל הַשָּׂדוֹת שֶׁל טֹפֶס לִפְנֵי שֶׁשּׁוֹלְחִים אוֹתוֹ.",
             definitionNative = "Написать текст во всех полях формы — перед тем как её отправить.",
@@ -135,7 +135,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177106L, 177107L, 177108L, 177110L)),
         WordEntity(
             id = 177110, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "qa_actions", transliteration = "lishloakh",
+            pos = "verb", semanticGroup = "qa_actions",
             original = "לִשְׁלֹחַ", translation = "отправить",
             definition = "לְהַעֲבִיר טֹפֶס אוֹ הוֹדָעָה מֵהַמָּסָךְ שֶׁלִּי לַמְּקַבֵּל בָּרֶשֶׁת.",
             definitionNative = "Передать форму или сообщение со своего экрана получателю по сети.",
@@ -146,7 +146,7 @@ object WordDataHebrewQaL1 {
         // ── qa_findings (5) — что находит тестировщик ──
         WordEntity(
             id = 177111, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "qa_findings", transliteration = "lo oved",
+            pos = "phrase", semanticGroup = "qa_findings",
             original = "לֹא עוֹבֵד", translation = "не работает",
             definition = "מַצָּב שֶׁל מַכְשִׁיר אוֹ שֵׁרוּת שֶׁאֵינוֹ מַגִּיב לַפְּעֻלּוֹת שֶׁל הַמִּשְׁתַּמֵּשׁ.",
             definitionNative = "Состояние устройства или сервиса — не отзывается на действия пользователя.",
@@ -155,7 +155,7 @@ object WordDataHebrewQaL1 {
         ),
         WordEntity(
             id = 177112, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "qa_findings", transliteration = "totsa'a lo nekhona",
+            pos = "noun", semanticGroup = "qa_findings",
             original = "תּוֹצָאָה לֹא נְכוֹנָה", translation = "ошибочный результат",
             definition = "תְּשׁוּבָה שֶׁל הַתּוֹכְנָה שֶׁשּׁוֹנָה מִמָּה שֶׁצָּרִיךְ לְפִי הַחִשּׁוּב הַנָּכוֹן.",
             definitionNative = "Ответ программы — отличается от того, что должно быть по верному расчёту.",
@@ -164,7 +164,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177113L, 177114L)),
         WordEntity(
             id = 177113, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "qa_findings", transliteration = "krisa",
+            pos = "noun", semanticGroup = "qa_findings",
             original = "קְרִיסָה", translation = "вылет",
             definition = "סִיוּם פִּתְאוֹמִי שֶׁל תּוֹכְנָה — הַמָּסָךְ נֶעֱלָם וְהַכֹּל נִסְגַּר בְּלִי אַזְהָרָה.",
             definitionNative = "Внезапный конец программы — экран исчезает, всё закрывается без предупреждения.",
@@ -173,7 +173,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177102L, 177112L, 177114L)),
         WordEntity(
             id = 177114, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "qa_findings", transliteration = "tki'a",
+            pos = "noun", semanticGroup = "qa_findings",
             original = "תְּקִיעָה", translation = "зависание",
             definition = "מַצָּב שֶׁל תּוֹכְנָה שֶׁמַּפְסִיקָה לְהָגִיב אֲבָל לֹא נִסְגֶּרֶת — הַמָּסָךְ קָפוּא.",
             definitionNative = "Программа перестала отвечать, но не закрылась — экран будто заморожен.",
@@ -182,7 +182,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177112L, 177113L)),
         WordEntity(
             id = 177115, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adjective", semanticGroup = "qa_findings", transliteration = "iti",
+            pos = "adjective", semanticGroup = "qa_findings",
             original = "אִטִּי", translation = "медленный",
             definition = "כָּזֶה שֶׁלּוֹקֵחַ זְמַן רַב יוֹתֵר מִמָּה שֶׁצָּרִיךְ — לֹא זָרִיז וְלֹא חָלָק.",
             definitionNative = "Такой, что занимает больше времени, чем нужно — без живости, без плавности.",
@@ -193,7 +193,7 @@ object WordDataHebrewQaL1 {
         // ── qa_report (5) — поля баг-репорта ──
         WordEntity(
             id = 177116, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "qa_report", transliteration = "te'ur",
+            pos = "noun", semanticGroup = "qa_report",
             original = "תֵּאוּר", translation = "описание",
             definition = "טֶקְסְט קָצָר שֶׁמְּסַפֵּר אֵיךְ נִרְאֶה דָּבָר־מָה אוֹ אֵיךְ הִתְרַחֵשׁ אֵרוּעַ.",
             definitionNative = "Короткий текст — рассказывает, как что-то выглядит или как произошёл случай.",
@@ -202,7 +202,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177117L, 177118L, 177119L, 177120L)),
         WordEntity(
             id = 177117, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "qa_report", transliteration = "tsilum masakh",
+            pos = "noun", semanticGroup = "qa_report",
             original = "צִילּוּם מָסָךְ", translation = "скриншот",
             definition = "תְּמוּנָה שֶׁשּׁוֹמֶרֶת אֶת מָה שֶׁרוֹאִים עַל הַטֶּלֶפוֹן אוֹ עַל הַמַּחְשֵׁב כָּרֶגַע.",
             definitionNative = "Картинка — сохраняет то, что видно на телефоне или компьютере прямо сейчас.",
@@ -211,7 +211,7 @@ object WordDataHebrewQaL1 {
         ),
         WordEntity(
             id = 177118, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "qa_report", transliteration = "shlavim",
+            pos = "noun", semanticGroup = "qa_report",
             original = "שְׁלָבִים", translation = "шаги",
             definition = "סִדְרַת פְּעֻלּוֹת קְטַנּוֹת שֶׁעוֹשִׂים אַחַת אַחֲרֵי הַשְּׁנִיָּה עַד הַסּוֹף.",
             definitionNative = "Череда мелких действий — выполняют одно за другим до самого конца.",
@@ -220,7 +220,7 @@ object WordDataHebrewQaL1 {
         ),
         WordEntity(
             id = 177119, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "qa_report", transliteration = "tsipiya",
+            pos = "noun", semanticGroup = "qa_report",
             original = "צִפִּיָּה", translation = "ожидание (что должно было быть)",
             definition = "מָה שֶׁצָּרִיךְ הָיָה לִקְרוֹת לְפִי הַתָּכְנִית לִפְנֵי שֶׁמַּתְחִילִים אֶת הַבְּדִיקָה.",
             definitionNative = "Что должно было случиться по плану — до того как начали проверку.",
@@ -229,7 +229,7 @@ object WordDataHebrewQaL1 {
         ),
         WordEntity(
             id = 177120, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "qa_report", transliteration = "sikum",
+            pos = "noun", semanticGroup = "qa_report",
             original = "סִכּוּם", translation = "итог",
             definition = "מִשְׁפָּט אֶחָד אוֹ שְׁנַיִם שֶׁמְּקַבְּצִים אֶת הָעִקָּר מִדּוּחַ אָרֹךְ.",
             definitionNative = "Одно-два предложения — собирают главное из длинного отчёта.",
@@ -240,7 +240,7 @@ object WordDataHebrewQaL1 {
         // ── qa_team_basic (5) — кто рядом по работе ──
         WordEntity(
             id = 177121, setId = 1771, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "qa_team_basic", transliteration = "tester",
+            pos = "noun", semanticGroup = "qa_team_basic",
             original = "טֶסְטֶר", translation = "тестировщик",
             definition = "אִישׁ הַמִּקְצוֹעַ שֶׁמְּחַפֵּשׂ בְּעָיוֹת בַּמּוּצָר לִפְנֵי שֶׁמַּגִּיעַ לַלָּקוֹחַ.",
             definitionNative = "Профессионал — ищет проблемы в продукте до того, как тот дойдёт до клиента.",
@@ -249,7 +249,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177122L, 177123L, 177124L, 177125L)),
         WordEntity(
             id = 177122, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "qa_team_basic", transliteration = "metakhnet",
+            pos = "noun", semanticGroup = "qa_team_basic",
             original = "מְתַכְנֵת", translation = "программист",
             definition = "אִישׁ הַמִּקְצוֹעַ שֶׁכּוֹתֵב לַמַּחְשֵׁב הוֹרָאוֹת בְּשָׂפָה מְיֻחֶדֶת.",
             definitionNative = "Профессионал — пишет машине инструкции на специальном языке.",
@@ -258,7 +258,7 @@ object WordDataHebrewQaL1 {
          fillInBlankExclusions = listOf(177121L, 177123L, 177124L, 177125L)),
         WordEntity(
             id = 177123, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "qa_team_basic", transliteration = "menahel",
+            pos = "noun", semanticGroup = "qa_team_basic",
             original = "מְנַהֵל", translation = "руководитель",
             definition = "אָדָם שֶׁמַּחְלִיט מָה הַצֶּוֶות יַעֲשֶׂה הַיּוֹם וְעוֹזֵר כְּשֶׁמִּישֶׁהוּ נִתְקָע.",
             definitionNative = "Человек, что решает, чем команда займётся сегодня — и помогает, если кто-то застрял.",
@@ -267,7 +267,7 @@ object WordDataHebrewQaL1 {
         ),
         WordEntity(
             id = 177124, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "qa_team_basic", transliteration = "tsevet",
+            pos = "noun", semanticGroup = "qa_team_basic",
             original = "צֶוֶות", translation = "команда",
             definition = "קְבוּצַת אֲנָשִׁים שֶׁעוֹבְדִים יַחַד עַל אוֹתוֹ מוּצָר וּמְדַבְּרִים כָּל יוֹם.",
             definitionNative = "Группа людей — работают вместе над одним продуктом, говорят каждый день.",
@@ -276,7 +276,7 @@ object WordDataHebrewQaL1 {
         ),
         WordEntity(
             id = 177125, setId = 1771, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "qa_team_basic", transliteration = "mesima",
+            pos = "noun", semanticGroup = "qa_team_basic",
             original = "מְשִׂימָה", translation = "задача",
             definition = "פְּרִיט עֲבוֹדָה אֶחָד שֶׁמּוֹסְרִים לָאָדָם — עִם תַּאֲרִיךְ סִיוּם וְמִי אַחְרַאי.",
             definitionNative = "Один кусок работы — выдают человеку с дедлайном и ответственным.",

@@ -49,7 +49,7 @@ object WordDataHebrewHightechL2 {
         // ── hightech_agile (5) — церемонии scrum и agile-процесс ──
         WordEntity(
             id = 174601, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_agile", transliteration = "sprint",
+            pos = "noun", semanticGroup = "hightech_agile",
             original = "סְפְּרִינְט", translation = "спринт",
             definition = "מָחֲזוֹר עֲבוֹדָה קָצָר שֶׁל שָׁבוּעַיִם, שֶׁבְּסוֹפוֹ הַצֶּוֶות מַסְפִּיק לְמַסֵּר תּוֹצָר.",
             definitionNative = "Короткий цикл работы — пару недель, в конце команда сдаёт результат.",
@@ -58,7 +58,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174602L, 174603L, 174604L, 174605L)),
         WordEntity(
             id = 174602, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_agile", transliteration = "deili",
+            pos = "noun", semanticGroup = "hightech_agile",
             original = "דֵּיְילִי", translation = "дейли (ежедневная встреча)",
             definition = "פְּגִישָׁה קְצָרָה כָּל בֹּקֶר שֶׁבָּהּ כָּל מְפַתֵּחַ אוֹמֵר מָה עָשָׂה וּמָה יַעֲשֶׂה.",
             definitionNative = "Короткая встреча по утрам — каждый разработчик говорит, что сделал и что планирует.",
@@ -67,7 +67,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174601L, 174603L, 174604L, 174605L)),
         WordEntity(
             id = 174603, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_agile", transliteration = "retrospektiv",
+            pos = "noun", semanticGroup = "hightech_agile",
             original = "רֶטְרוֹסְפֶּקְטִיב", translation = "ретроспектива",
             definition = "פְּגִישָׁה בְּסוֹף מָחֲזוֹר שֶׁל דִּיוּן עַל מָה עָבַד טוֹב וּמָה צָרִיךְ לְשַׁפֵּר.",
             definitionNative = "Встреча в конце цикла — обсуждают, что прошло хорошо и что нужно улучшить.",
@@ -76,7 +76,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174601L, 174602L, 174604L, 174605L)),
         WordEntity(
             id = 174604, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_agile", transliteration = "planing",
+            pos = "noun", semanticGroup = "hightech_agile",
             original = "פְּלָנִינְג", translation = "планирование (planning)",
             definition = "פְּגִישָׁה שֶׁבָּהּ בּוֹחֲרִים אֵילוּ מְשִׂימוֹת יִכָּנְסוּ לַמָּחֲזוֹר הַקָּרוֹב.",
             definitionNative = "Встреча, на которой выбирают, какие задачи войдут в ближайший цикл.",
@@ -85,7 +85,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174601L, 174602L, 174603L, 174605L)),
         WordEntity(
             id = 174605, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_agile", transliteration = "rifaynment",
+            pos = "noun", semanticGroup = "hightech_agile",
             original = "רִיפַיְינְמֶנְט", translation = "рефайнмент (refinement)",
             definition = "סֶשֵׁן שֶׁבּוֹ הַצֶּוֶות מְלַטֵּשׁ אֶת תֵּאוּרֵי הַמְּשִׂימוֹת לִפְנֵי הַתְּכְנוּן הָרִשְׁמִי.",
             definitionNative = "Сессия, где команда уточняет описания задач до формального планирования.",
@@ -96,7 +96,7 @@ object WordDataHebrewHightechL2 {
         // ── hightech_code_review (5) — процесс ревью кода ──
         WordEntity(
             id = 174606, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_code_review", transliteration = "pul rikvest",
+            pos = "noun", semanticGroup = "hightech_code_review",
             original = "פּוּל רִיקְוֶסְט", translation = "pull request (PR)",
             definition = "בַּקָּשָׁה לְמַזְּגוּ שִׁנּוּיֵי קוֹד מֵעָנָף צָדָדִי אֶל הָעָנָף הָרָאשִׁי שֶׁל הַפּרוֹיֶקְט.",
             definitionNative = "Просьба влить изменения кода из побочной ветки в главную ветку проекта.",
@@ -105,7 +105,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174607L, 174608L, 174609L, 174610L)),
         WordEntity(
             id = 174607, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_code_review", transliteration = "kod rivyu",
+            pos = "noun", semanticGroup = "hightech_code_review",
             original = "קוֹד רִיוויוּ", translation = "ревью кода",
             definition = "בְּדִיקָה שֶׁל קוֹד שֶׁכָּתַב מִישֶׁהוּ אַחֵר, לְפִי הֶעָרוֹת וְשִׁפּוּרִים.",
             definitionNative = "Проверка кода, который написал кто-то другой — с замечаниями и предложениями.",
@@ -114,7 +114,7 @@ object WordDataHebrewHightechL2 {
         ),
         WordEntity(
             id = 174608, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_code_review", transliteration = "aprov",
+            pos = "noun", semanticGroup = "hightech_code_review",
             original = "אַפְּרוּב", translation = "аппрув (одобрение)",
             definition = "סִימָן יָרֹק שֶׁל בּוֹדֵק הַקּוֹד שֶׁכָּל הַשִּׁנּוּיִים מוּכָנִים לְהִתְמַזֵּג.",
             definitionNative = "Зелёный значок от ревьюера — все изменения готовы к слиянию.",
@@ -123,7 +123,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174606L, 174607L, 174609L, 174610L)),
         WordEntity(
             id = 174609, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_code_review", transliteration = "merj",
+            pos = "noun", semanticGroup = "hightech_code_review",
             original = "מֶרְג׳", translation = "мерж (слияние веток)",
             definition = "פְּעֻלָּה שֶׁמְּחַבֶּרֶת שִׁנּוּיִים מִשְּׁנֵי עֲנָפִים לְעָנָף אֶחָד מְשֻׁלָּב.",
             definitionNative = "Действие, которое объединяет правки из двух веток в одну общую.",
@@ -132,7 +132,7 @@ object WordDataHebrewHightechL2 {
         ),
         WordEntity(
             id = 174610, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_code_review", transliteration = "dif",
+            pos = "noun", semanticGroup = "hightech_code_review",
             original = "דִּיף", translation = "дифф (различия в коде)",
             definition = "תְּצוּגָה צָבְעוֹנִית שֶׁל הַשּׁוּרוֹת שֶׁנּוֹסְפוּ אוֹ נִמְחֲקוּ בֵּין שְׁתֵּי גִּרְסָאוֹת.",
             definitionNative = "Цветной показ строк, которые добавились или удалились между двумя версиями.",
@@ -143,7 +143,7 @@ object WordDataHebrewHightechL2 {
         // ── hightech_bugs (5) — работа с багами ──
         WordEntity(
             id = 174611, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_bugs", transliteration = "tiket",
+            pos = "noun", semanticGroup = "hightech_bugs",
             original = "תִּיקֶט", translation = "тикет",
             definition = "רְשׁוּמָה בַּמַּעֲרֶכֶת שֶׁל מַעֲקָב מְשִׂימוֹת שֶׁמְּתָאֶרֶת תַּקָּלָה אוֹ בַּקָּשָׁה.",
             definitionNative = "Запись в системе отслеживания задач — описывает поломку или просьбу.",
@@ -152,7 +152,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174612L, 174613L, 174614L, 174615L)),
         WordEntity(
             id = 174612, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_bugs", transliteration = "shikhzur bag",
+            pos = "noun", semanticGroup = "hightech_bugs",
             original = "שִׁחְזוּר בָּאג", translation = "воспроизведение бага",
             definition = "סֵדֶר שֶׁל פְּעֻלּוֹת שֶׁהוֹפֵךְ אֶת הַתַּקָּלָה לְעוֹבֶדֶת שׁוּב מוּל הַמְּפַתֵּחַ.",
             definitionNative = "Последовательность шагов, после которой поломка повторяется на глазах у разработчика.",
@@ -161,7 +161,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174611L, 174613L, 174614L, 174615L)),
         WordEntity(
             id = 174613, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_bugs", transliteration = "status",
+            pos = "noun", semanticGroup = "hightech_bugs",
             original = "סְטָטוּס", translation = "статус",
             definition = "הַשָּׁלָב הַנּוֹכְחִי שֶׁל מְשִׂימָה בַּמַּעֲרֶכֶת — פָּתוּחַ, בִּטִפּוּל, סָגוּר אוֹ נִדְחָה.",
             definitionNative = "Текущий этап задачи в системе — открыт, в работе, закрыт или отклонён.",
@@ -170,7 +170,7 @@ object WordDataHebrewHightechL2 {
         ),
         WordEntity(
             id = 174614, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_bugs", transliteration = "adifut",
+            pos = "noun", semanticGroup = "hightech_bugs",
             original = "עֲדִיפוּת", translation = "приоритет",
             definition = "דַּרְגַּת הַחֲשִׁיבוּת שֶׁמַּחְלִיטָה בְּאֵיזֶה סֵדֶר מְפַתְּחִים מְטַפְּלִים בִּמְשִׂימוֹת.",
             definitionNative = "Степень важности — определяет, в каком порядке разработчики берут задачи.",
@@ -179,7 +179,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174612L, 174613L, 174615L)),
         WordEntity(
             id = 174615, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_bugs", transliteration = "edzh-keys",
+            pos = "noun", semanticGroup = "hightech_bugs",
             original = "אֶג'-קֵייס", translation = "пограничный случай (edge case)",
             definition = "מָצָב גְּבוּל לֹא רָגִיל שֶׁבּוֹ הַתּוֹכְנָה מַתְנַהֶגֶת אַחֶרֶת מֵהַצָּפוּי.",
             definitionNative = "Редкий пограничный сценарий, когда программа ведёт себя не как обычно.",
@@ -190,7 +190,7 @@ object WordDataHebrewHightechL2 {
         // ── hightech_release (5) — релизы и развёртывание ──
         WordEntity(
             id = 174616, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_release", transliteration = "stejging",
+            pos = "noun", semanticGroup = "hightech_release",
             original = "סְטֵייגִ'ינְג", translation = "стейджинг (тестовая среда)",
             definition = "סְבִיבָה כִּמְעַט-זֵהָה לַפְּרוֹדַקְשֶׁן שֶׁבָּהּ בּוֹדְקִים גִּרְסָה לִפְנֵי שִׁחְרוּר לַמִּשְׁתַּמְּשִׁים.",
             definitionNative = "Среда, почти как продакшен — там проверяют сборку до выкатки на пользователей.",
@@ -199,7 +199,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174617L, 174618L, 174619L, 174620L)),
         WordEntity(
             id = 174617, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_release", transliteration = "deploy",
+            pos = "noun", semanticGroup = "hightech_release",
             original = "דֶּפְּלוֹי", translation = "деплой",
             definition = "פְּעֻלָּה שֶׁמַּעֲבִירָה קוֹד מַחְשֵׁב חָדָשׁ לַשְּׁרָתִים שֶׁל הַמִּשְׁתַּמְּשִׁים בָּעוֹלָם.",
             definitionNative = "Действие, которое переносит свежий код на серверы пользователей в мире.",
@@ -208,7 +208,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174616L, 174618L, 174619L, 174620L)),
         WordEntity(
             id = 174618, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_release", transliteration = "rolbek",
+            pos = "noun", semanticGroup = "hightech_release",
             original = "רוֹלְבֵּק", translation = "роллбек (откат)",
             definition = "חֲזָרָה מְהִירָה לַשִּׁכְבָה הַקּוֹדֶמֶת אַחֲרֵי שֶׁהִתְגַּלְּתָה תַּקָּלָה בַּחֲדָשָׁה.",
             definitionNative = "Быстрый возврат на прежний слой — после того, как в новом нашли поломку.",
@@ -217,7 +217,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174616L, 174617L, 174619L, 174620L)),
         WordEntity(
             id = 174619, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_release", transliteration = "hotfiks",
+            pos = "noun", semanticGroup = "hightech_release",
             original = "הוֹטְפִיקְס", translation = "хотфикс",
             definition = "תִּקּוּן דָּחוּף וּקְצַר טְוַח שֶׁיּוֹצֵא לַמִּשְׁתַּמְּשִׁים בְּלִי לְחַכּוֹת לַמָּחֲזוֹר הָרָגִיל.",
             definitionNative = "Срочная мелкая правка — выходит к пользователям, не дожидаясь обычного цикла.",
@@ -226,7 +226,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174616L, 174617L, 174618L, 174620L)),
         WordEntity(
             id = 174620, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_release", transliteration = "cheinjlog",
+            pos = "noun", semanticGroup = "hightech_release",
             original = "צֵ׳יְינְגְ׳לוֹג", translation = "чейнджлог",
             definition = "רְשִׁימָה כְּתוּבָה שֶׁל כָּל הַשִּׁנּוּיִים וְהַתִּיקּוּנִים בֵּין שִׁכְבָה לְשִׁכְבָה.",
             definitionNative = "Письменный список всех правок и починок между одним слоем и следующим.",
@@ -237,7 +237,7 @@ object WordDataHebrewHightechL2 {
         // ── hightech_team_comm (5) — коммуникация в команде ──
         WordEntity(
             id = 174621, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_team_comm", transliteration = "timlid",
+            pos = "noun", semanticGroup = "hightech_team_comm",
             original = "תִּימְלִיד", translation = "тимлид",
             definition = "מְפַתֵּחַ בָּכִיר שֶׁמַּדְרִיךְ אַנְשֵׁי הַצֶּוֶות וְאַחְרַאי עַל הַתּוֹצָר הַטֶּכְנִי.",
             definitionNative = "Старший разработчик — направляет людей в команде и отвечает за технический результат.",
@@ -246,7 +246,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174622L, 174623L, 174624L, 174625L)),
         WordEntity(
             id = 174622, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_team_comm", transliteration = "menejer",
+            pos = "noun", semanticGroup = "hightech_team_comm",
             original = "מֶנֶגֶ׳ר", translation = "менеджер",
             definition = "אַחְרַאי עַל אֲנָשִׁים — שָׂכָר, קִדּוּם, מַשּׁוֹב וּמְעוֹדֵד הִתְפַּתְּחוּת אִישִׁית.",
             definitionNative = "Отвечает за людей — зарплату, повышения, обратную связь и личный рост.",
@@ -255,7 +255,7 @@ object WordDataHebrewHightechL2 {
         ),
         WordEntity(
             id = 174623, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_team_comm", transliteration = "van-on-van",
+            pos = "noun", semanticGroup = "hightech_team_comm",
             original = "וַן-אוֹן-וַן", translation = "встреча 1-on-1",
             definition = "פְּגִישָׁה אִישִׁית שְׁבוּעִית שֶׁל הַמְּנַהֵל עִם כָּל אֶחָד מֵאַנְשֵׁי הַצֶּוֶות בְּנִפְרָד.",
             definitionNative = "Личная еженедельная встреча руководителя с каждым из людей команды отдельно.",
@@ -264,7 +264,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174621L, 174622L, 174624L, 174625L)),
         WordEntity(
             id = 174624, setId = 1746, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_team_comm", transliteration = "fidbek",
+            pos = "noun", semanticGroup = "hightech_team_comm",
             original = "פִידְבֵּק", translation = "фидбэк",
             definition = "תְּגוּבָה כְּנָה לַעֲבוֹדַת אָדָם שֶׁעוֹזֶרֶת לוֹ לְהָבִין מָה לְהַמְשִׁיךְ אוֹ לְשַׁנּוֹת.",
             definitionNative = "Честный отклик о работе человека — помогает ему понять, что продолжать или менять.",
@@ -273,7 +273,7 @@ object WordDataHebrewHightechL2 {
          fillInBlankExclusions = listOf(174621L, 174622L, 174623L, 174625L)),
         WordEntity(
             id = 174625, setId = 1746, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hightech_team_comm", transliteration = "sink",
+            pos = "noun", semanticGroup = "hightech_team_comm",
             original = "סִינְק", translation = "синк (синхронизация)",
             definition = "פְּגִישָׁה קְצָרָה שֶׁל שְׁנֵי צְוָתִים אוֹ אֲנָשִׁים לְעַדְכֵּן זֶה אֶת זֶה בַּהִתְקַדְּמוּת.",
             definitionNative = "Короткая встреча двух команд или людей — обновить друг друга по продвижению.",

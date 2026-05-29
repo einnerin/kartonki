@@ -47,7 +47,7 @@ object WordDataHebrewRelHolidaysL1 {
         // ── holidays_table (4 — 3 COMMON + 1 UNCOMMON; праздничный стол) ──
         WordEntity(
             id = 171001, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holidays_table", transliteration = "kosit",
+            pos = "noun", semanticGroup = "holidays_table",
             original = "כּוֹסִית", translation = "рюмка",
             definition = "כְּלִי קָטָן וְאָרֹךְ לִשְׁתִיַּת יַיִן בִּסְעוּדַת חַג.",
             definitionNative = "Маленький узкий бокал для вина за праздничным столом.",
@@ -56,7 +56,7 @@ object WordDataHebrewRelHolidaysL1 {
         ),
         WordEntity(
             id = 171002, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "holidays_table", transliteration = "meits anavim",
+            pos = "phrase", semanticGroup = "holidays_table",
             original = "מֵיץ עֲנָבִים", translation = "виноградный сок",
             definition = "מַשְׁקֶה מָתוֹק מִפֵּרוֹת אָדֻמִּים שֶׁשּׁוֹתִים יְלָדִים בַּקִּדּוּשׁ.",
             definitionNative = "Сладкий напиток из красных ягод, который пьют дети во время кидуша.",
@@ -65,7 +65,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171003L, 171004L)),
         WordEntity(
             id = 171003, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "holidays_table", transliteration = "bakbuk yain",
+            pos = "phrase", semanticGroup = "holidays_table",
             original = "בַּקְבּוּק יַיִן", translation = "бутылка вина",
             definition = "כְּלִי זְכוּכִית סָגוּר עִם מַשְׁקֶה אָדֹם לְשֻׁלְחַן הַחַג.",
             definitionNative = "Закрытый стеклянный сосуд с красным напитком для праздничного стола.",
@@ -74,7 +74,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171002L, 171004L)),
         WordEntity(
             id = 171004, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "holidays_table", transliteration = "mapat shabat",
+            pos = "phrase", semanticGroup = "holidays_table",
             original = "מַפַּת שַׁבָּת", translation = "субботняя скатерть",
             definition = "בַּד לָבָן יָפֶה שֶׁפּוֹרְשִׂים עַל הַשֻּׁלְחָן לִכְבוֹד הַחַג.",
             definitionNative = "Красивое белое полотно, которое стелют на стол ради праздника.",
@@ -85,7 +85,7 @@ object WordDataHebrewRelHolidaysL1 {
         // ── holidays_food (5 — 3 COMMON + 2 UNCOMMON; праздничные блюда) ──
         WordEntity(
             id = 171005, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holidays_food", transliteration = "sufganiya",
+            pos = "noun", semanticGroup = "holidays_food",
             original = "סֻפְגָּנִיָּה", translation = "пончик (ханукальный)",
             definition = "מַאֲפֶה עָגֹל מָתוֹק עִם רִבָּה בִּפְנִים שֶׁאוֹכְלִים בַּחֲנֻכָּה.",
             definitionNative = "Круглая сладкая выпечка с джемом внутри, которую едят на Хануку.",
@@ -94,7 +94,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171006L, 171007L)),
         WordEntity(
             id = 171006, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holidays_food", transliteration = "leviva",
+            pos = "noun", semanticGroup = "holidays_food",
             original = "לְבִיבָה", translation = "оладья (картофельная)",
             definition = "פְּרוּסָה שְׁטוּחָה מְטֻגֶּנֶת מִתַּפּוּחֵי אֲדָמָה לְשֻׁלְחַן הַחֲנֻכָּה.",
             definitionNative = "Жареный плоский ломтик из картошки, который подают на Хануку.",
@@ -103,7 +103,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171005L, 171007L)),
         WordEntity(
             id = 171007, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holidays_food", transliteration = "tmarim",
+            pos = "noun", semanticGroup = "holidays_food",
             original = "תְּמָרִים", translation = "финики",
             definition = "פֵּרוֹת קְטַנִּים חוּמִים וּמְתוּקִים שֶׁאוֹכְלִים בְּרֹאשׁ הַשָּׁנָה.",
             definitionNative = "Маленькие коричневые сладкие плоды, которые едят на еврейский Новый год.",
@@ -112,7 +112,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171005L, 171006L)),
         WordEntity(
             id = 171008, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "holidays_food", transliteration = "ugat dvash",
+            pos = "phrase", semanticGroup = "holidays_food",
             original = "עֻגַת דְּבַשׁ", translation = "медовик",
             definition = "מַאֲפֶה רַךְ וְחוּם מָתוֹק שֶׁמַּכִּינִים בְּרֹאשׁ הַשָּׁנָה לְשָׁנָה מְתוּקָה.",
             definitionNative = "Мягкая коричневая сладкая выпечка, которую готовят на Новый год к сладкому году.",
@@ -121,7 +121,7 @@ object WordDataHebrewRelHolidaysL1 {
         ),
         WordEntity(
             id = 171009, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "holidays_food", transliteration = "tapukhei dvash",
+            pos = "phrase", semanticGroup = "holidays_food",
             original = "תַּפּוּחֵי דְּבַשׁ", translation = "яблоки в мёду",
             definition = "פְּרוּסוֹת פְּרִי טוֹבְלוֹת בְּנוֹזֵל זְהֻבָּה — סִימָן לְשָׁנָה טוֹבָה.",
             definitionNative = "Дольки фрукта, обмакнутые в золотистую жидкость — символ доброго года.",
@@ -132,7 +132,7 @@ object WordDataHebrewRelHolidaysL1 {
         // ── holidays_celebration (5 — 3 COMMON + 2 UNCOMMON; трапеза и гости) ──
         WordEntity(
             id = 171010, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "holidays_celebration", transliteration = "arukhat khag",
+            pos = "phrase", semanticGroup = "holidays_celebration",
             original = "אֲרוּחַת חַג", translation = "праздничный обед",
             definition = "אֲכִילָה גְּדוֹלָה וּמְשֻׁתֶּפֶת בְּיוֹם מְיֻחָד שֶׁל הַשָּׁנָה.",
             definitionNative = "Большой совместный приём пищи в особый день года.",
@@ -141,7 +141,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171011L, 171012L, 171013L, 171014L)),
         WordEntity(
             id = 171011, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "holidays_celebration", transliteration = "orkhei hakhag",
+            pos = "phrase", semanticGroup = "holidays_celebration",
             original = "אוֹרְחֵי הַחַג", translation = "гости праздника",
             definition = "אֲנָשִׁים שֶׁבָּאוּ לַבַּיִת לַחֲגֹג בְּיוֹם הַמּוֹעֵד.",
             definitionNative = "Люди, которые пришли в дом отметить торжественный день вместе.",
@@ -150,7 +150,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171010L, 171012L, 171013L, 171014L)),
         WordEntity(
             id = 171012, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "holidays_celebration", transliteration = "matanot lekhag",
+            pos = "phrase", semanticGroup = "holidays_celebration",
             original = "מַתָּנוֹת לְחַג", translation = "подарки к празднику",
             definition = "דְּבָרִים יָפִים שֶׁנּוֹתְנִים לִילָדִים אוֹ לַחֲבֵרִים בְּיוֹם הַמּוֹעֵד.",
             definitionNative = "Красивые вещи, которые дарят детям или друзьям в торжественный день.",
@@ -159,7 +159,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171010L, 171011L, 171013L, 171014L)),
         WordEntity(
             id = 171013, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "holidays_celebration", transliteration = "se'uda khagigit",
+            pos = "phrase", semanticGroup = "holidays_celebration",
             original = "סְעוּדָה חֲגִיגִית", translation = "торжественная трапеза",
             definition = "אֲכִילָה רִשְׁמִית עִם בְּגָדִים יָפִים וּבְרָכוֹת מְיֻחָדוֹת.",
             definitionNative = "Официальный приём пищи с нарядной одеждой и особыми благословениями.",
@@ -168,7 +168,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171010L, 171011L, 171012L, 171014L)),
         WordEntity(
             id = 171014, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "holidays_celebration", transliteration = "se'udat shabat",
+            pos = "phrase", semanticGroup = "holidays_celebration",
             original = "סִעוּדַת שַׁבָּת", translation = "субботняя трапеза",
             definition = "אֲכִילָה אִטִּית וּמְהֻדֶּרֶת בְּיוֹם הַמְּנוּחָה הַשְּׁבִיעִי.",
             definitionNative = "Неспешный изысканный приём пищи в седьмой день покоя недели.",
@@ -179,7 +179,7 @@ object WordDataHebrewRelHolidaysL1 {
         // ── holidays_greetings (5 — 3 COMMON + 2 UNCOMMON; поздравления, восклицания) ──
         WordEntity(
             id = 171015, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "holidays_greetings", transliteration = "mazal tov",
+            pos = "phrase", semanticGroup = "holidays_greetings",
             original = "מַזַּל טוֹב", translation = "поздравляю!",
             definition = "אֲמִירַת שִׂמְחָה לְאָדָם שֶׁקָּרָה לוֹ דָּבָר טוֹב וְחָשׁוּב.",
             definitionNative = "Радостное восклицание человеку, у которого случилось что-то хорошее и важное.",
@@ -188,7 +188,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171016L, 171017L, 171018L, 171019L)),
         WordEntity(
             id = 171016, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "holidays_greetings", transliteration = "amen",
+            pos = "interjection", semanticGroup = "holidays_greetings",
             original = "אָמֵן", translation = "аминь",
             definition = "מִלָּה קְצָרָה שֶׁאוֹמְרִים לְאַחַר בְּרָכָה — סִימָן לְהַסְכָּמָה.",
             definitionNative = "Короткое слово после благословения — знак согласия и подтверждения.",
@@ -197,7 +197,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171015L, 171017L)),
         WordEntity(
             id = 171017, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "holidays_greetings", transliteration = "halleluya",
+            pos = "interjection", semanticGroup = "holidays_greetings",
             original = "הַלְלוּיָה", translation = "слава Богу!",
             definition = "קְרִיאַת שֶׁבַח וְשִׂמְחָה לְאֵל בִּזְמַן תְּפִלָּה אוֹ שִׁיר.",
             definitionNative = "Восторженное прославление Бога во время молитвы или песни.",
@@ -206,7 +206,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171016L)),
         WordEntity(
             id = 171018, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "holidays_greetings", transliteration = "shnat brakha",
+            pos = "phrase", semanticGroup = "holidays_greetings",
             original = "שְׁנַת בְּרָכָה", translation = "благословенный год",
             definition = "אִחוּל לְזְמַן טוֹב, בָּרִיא וּמְלֵא הַצְלָחָה לִפְנֵי הָאָדָם.",
             definitionNative = "Пожелание хорошего, здорового и удачного периода впереди.",
@@ -215,7 +215,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171015L, 171019L)),
         WordEntity(
             id = 171019, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "holidays_greetings", transliteration = "tsom kal",
+            pos = "phrase", semanticGroup = "holidays_greetings",
             original = "צוֹם קַל", translation = "лёгкого поста!",
             definition = "אִחוּל שֶׁאוֹמְרִים לִפְנֵי יוֹם שֶׁבּוֹ לֹא אוֹכְלִים וְלֹא שׁוֹתִים.",
             definitionNative = "Пожелание перед днём, когда нельзя есть и пить.",
@@ -226,7 +226,7 @@ object WordDataHebrewRelHolidaysL1 {
         // ── holidays_purim (3 — 2 COMMON + 1 UNCOMMON; атрибуты Пурима) ──
         WordEntity(
             id = 171020, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holidays_purim", transliteration = "masekha",
+            pos = "noun", semanticGroup = "holidays_purim",
             original = "מַסֵּכָה", translation = "маска (карнавальная)",
             definition = "כִּסּוּי לַפָּנִים שֶׁיְּלָדִים לוֹבְשִׁים בִּפְּעָמִיִם שֶׁל שִׂמְחָה.",
             definitionNative = "Покрытие на лицо, которое дети надевают по случаю весёлого торжества.",
@@ -235,7 +235,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171021L, 171022L)),
         WordEntity(
             id = 171021, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holidays_purim", transliteration = "ra'ashan",
+            pos = "noun", semanticGroup = "holidays_purim",
             original = "רַעֲשָׁן", translation = "трещотка (пуримская)",
             definition = "כְּלִי קָטָן שֶׁיְּלָדִים מְסוֹבְבִים כְּדֵי לְהַשְׁמִיעַ קוֹל גָּדוֹל.",
             definitionNative = "Маленький инструмент, которым дети крутят, чтобы получился громкий звук.",
@@ -244,7 +244,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171020L, 171022L)),
         WordEntity(
             id = 171022, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holidays_purim", transliteration = "malbushim",
+            pos = "noun", semanticGroup = "holidays_purim",
             original = "מַלְבּוּשִׁים", translation = "наряды (карнавальные)",
             definition = "בְּגָדִים מְיֻחָדִים שֶׁלּוֹבְשִׁים לִכְבוֹד יוֹם הַחַג הָעַלִּיז.",
             definitionNative = "Особые одеяния, которые надевают ради весёлого торжественного дня.",
@@ -255,7 +255,7 @@ object WordDataHebrewRelHolidaysL1 {
         // ── holidays_song (3 — 1 COMMON + 2 UNCOMMON; песнопения и шествия) ──
         WordEntity(
             id = 171023, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "holidays_song", transliteration = "dgalim",
+            pos = "noun", semanticGroup = "holidays_song",
             original = "דְּגָלִים", translation = "флажки (праздничные)",
             definition = "פִּסּוֹת בַּד צִבְעוֹנִיּוֹת עַל מַקֵּל שֶׁיְּלָדִים מְנִיפִים בְּחַג.",
             definitionNative = "Цветные кусочки ткани на палочке, которыми дети машут на торжестве.",
@@ -264,7 +264,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171022L, 171024L, 171025L)),
         WordEntity(
             id = 171024, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holidays_song", transliteration = "mizmor",
+            pos = "noun", semanticGroup = "holidays_song",
             original = "מִזְמוֹר", translation = "псалом",
             definition = "פֶּרֶק קָצָר שֶׁל שִׁיר וְתוֹדָה לֶאֱלֹהִים מִתּוֹךְ סֵפֶר תְּהִלִּים.",
             definitionNative = "Короткая глава песни-благодарности Богу из священной книги в Танахе.",
@@ -273,7 +273,7 @@ object WordDataHebrewRelHolidaysL1 {
          fillInBlankExclusions = listOf(171023L, 171025L)),
         WordEntity(
             id = 171025, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "holidays_song", transliteration = "tehila",
+            pos = "noun", semanticGroup = "holidays_song",
             original = "תְּהִילָּה", translation = "хвала, прославление",
             definition = "מִלִּים שֶׁל הוֹקָרָה גְּדוֹלָה לֶאֱלֹהִים בִּזְמַן הַתְּפִלָּה.",
             definitionNative = "Слова великого почитания Бога во время молитвы.",

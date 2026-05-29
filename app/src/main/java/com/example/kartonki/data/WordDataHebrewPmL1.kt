@@ -67,7 +67,7 @@ object WordDataHebrewPmL1 {
         // ── pm_basic_users (5) — кому продукт служит ──
         WordEntity(
             id = 177701, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_users", transliteration = "mishtamesh",
+            pos = "noun", semanticGroup = "pm_basic_users",
             original = "מִשְׁתַּמֵּשׁ", translation = "пользователь",
             definition = "מִי שֶׁפּוֹתֵחַ מוּצָר וּמַפְעִיל אוֹתוֹ בַּחַיִּים שֶׁל יוֹם-יוֹם.",
             definitionNative = "Тот, кто открывает продукт и пользуется им в обычной жизни.",
@@ -76,7 +76,7 @@ object WordDataHebrewPmL1 {
         ),
         WordEntity(
             id = 177702, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_users", transliteration = "lakoach",
+            pos = "noun", semanticGroup = "pm_basic_users",
             original = "לָקוֹחַ", translation = "клиент",
             definition = "אָדָם אוֹ חֶבְרָה שֶׁמְּשַׁלֵּם כֶּסֶף עַל הַשֵּׁרוּת אוֹ הַסַּחוֹרָה.",
             definitionNative = "Человек или фирма, что платит деньги за услугу или товар.",
@@ -85,7 +85,7 @@ object WordDataHebrewPmL1 {
         ),
         WordEntity(
             id = 177703, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_users", transliteration = "mevaker",
+            pos = "noun", semanticGroup = "pm_basic_users",
             original = "מְבַקֵּר", translation = "посетитель",
             definition = "מִי שֶׁנִּכְנָס לַדַּף אוֹ לָאַתָר רַק לְזְמַן קָצָר וְלֹא בְּהֶכְרֵחַ נִרְשָׁם.",
             definitionNative = "Тот, кто заходит на страницу или сайт ненадолго и не обязательно регистрируется.",
@@ -94,7 +94,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177701L, 177702L, 177704L, 177705L)),
         WordEntity(
             id = 177704, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_users", transliteration = "okev",
+            pos = "noun", semanticGroup = "pm_basic_users",
             original = "עוֹקֵב", translation = "подписчик",
             definition = "מִי שֶׁבָּחַר לְקַבֵּל עִדְכּוּנִים מֵהַחֶבְרָה בְּדֹאַר אוֹ בָּרֶשֶׁת הַחֶבְרָתִית.",
             definitionNative = "Тот, кто согласился получать обновления от компании по почте или в соцсети.",
@@ -103,7 +103,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177701L, 177702L, 177703L, 177705L)),
         WordEntity(
             id = 177705, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_users", transliteration = "kahal",
+            pos = "noun", semanticGroup = "pm_basic_users",
             original = "קָהָל", translation = "аудитория",
             definition = "קְבוּצָה גְּדוֹלָה שֶׁל אַנָשִׁים שֶׁהַמּוּצָר מְכַוֵּן אֲלֵיהֶם בְּסוֹף.",
             definitionNative = "Большая группа людей, на которую продукт в итоге нацелен.",
@@ -114,7 +114,7 @@ object WordDataHebrewPmL1 {
         // ── pm_basic_product (5) — что мы строим ──
         WordEntity(
             id = 177706, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_product", transliteration = "mutsar",
+            pos = "noun", semanticGroup = "pm_basic_product",
             original = "מוּצָר", translation = "продукт",
             definition = "מַשֶּׁהוּ שֶׁחֶבְרָה מַכִּינָה כְּדֵי לִמְכֹּר אוֹ לָתֵת לְאַנָשִׁים בַּחַיִּים שֶׁלָּהֶם.",
             definitionNative = "То, что компания делает на продажу или для людей в их жизни.",
@@ -123,7 +123,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177707L, 177708L, 177709L, 177710L)),
         WordEntity(
             id = 177707, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_product", transliteration = "sherut",
+            pos = "noun", semanticGroup = "pm_basic_product",
             original = "שֵׁרוּת", translation = "сервис",
             definition = "פְּעֻלָּה שֶׁחֶבְרָה עוֹשָׂה עֲבוּר אַנָשִׁים תְּמוּרַת תַּשְׁלוּם — לֹא חֵפֶץ פִיזִי.",
             definitionNative = "Действие, что фирма делает за плату — не физическая вещь, а помощь или работа.",
@@ -132,7 +132,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177706L, 177708L, 177709L, 177710L)),
         WordEntity(
             id = 177708, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_product", transliteration = "aplikatsya",
+            pos = "noun", semanticGroup = "pm_basic_product",
             original = "אַפְּלִיקַצְיָה", translation = "приложение",
             definition = "תּוֹכְנָה לַטֶּלֶפוֹן שֶׁעוֹשָׂה דָּבָר אֶחָד טוֹב — מַפָּה, מוּזִיקָה אוֹ קְנִיּוֹת.",
             definitionNative = "Программа в телефоне для одного дела — карты, музыка или покупки.",
@@ -141,7 +141,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177706L, 177707L, 177709L, 177710L)),
         WordEntity(
             id = 177709, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_product", transliteration = "atar",
+            pos = "noun", semanticGroup = "pm_basic_product",
             original = "אֲתַר", translation = "сайт",
             definition = "אֹסֶף דַּפִּים בָּרֶשֶׁת עִם כְּתֹבֶת קְבוּעָה שֶׁפּוֹתְחִים בַּדַּפְדְּפָן.",
             definitionNative = "Набор страниц в сети с постоянным адресом — открывают в браузере.",
@@ -150,7 +150,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177706L, 177707L, 177708L, 177710L)),
         WordEntity(
             id = 177710, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_product", transliteration = "yekholet",
+            pos = "noun", semanticGroup = "pm_basic_product",
             original = "יְכוֹלֶת", translation = "возможность, способность (capability)",
             definition = "מַשֶּׁהוּ שֶׁהַמּוּצָר יוֹדֵעַ לַעֲשׂוֹת — לְמָשָׁל לְהַתְרִיעַ אוֹ לְשַׁמֵּר נְתוּנִים.",
             definitionNative = "То, что продукт умеет делать — например, оповещать или сохранять данные.",
@@ -161,7 +161,7 @@ object WordDataHebrewPmL1 {
         // ── pm_basic_feedback (5) — что нам говорят пользователи ──
         WordEntity(
             id = 177711, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_feedback", transliteration = "khavat daat",
+            pos = "noun", semanticGroup = "pm_basic_feedback",
             original = "חַוַּת דַּעַת", translation = "отзыв",
             definition = "טֶקְסְט שֶׁלָּקוֹחַ כּוֹתֵב אַחֲרֵי שִׁמּוּשׁ — מָה הָיָה טוֹב וּמָה הִפְרִיעַ לוֹ.",
             definitionNative = "Текст, что клиент пишет после использования — что было хорошо и что мешало.",
@@ -170,7 +170,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177712L, 177713L, 177714L, 177715L)),
         WordEntity(
             id = 177712, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_feedback", transliteration = "derug",
+            pos = "noun", semanticGroup = "pm_basic_feedback",
             original = "דֵּרוּג", translation = "оценка",
             definition = "מַסְפָּר אוֹ כּוֹכָבִים שֶׁלָּקוֹחַ נוֹתֵן לַמּוּצָר — מֵאֶחָד עַד חֲמִשָּׁה לְרֹב.",
             definitionNative = "Цифра или звёзды, что клиент ставит продукту — обычно от одного до пяти.",
@@ -179,7 +179,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177711L, 177713L, 177714L, 177715L)),
         WordEntity(
             id = 177713, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_feedback", transliteration = "tguva",
+            pos = "noun", semanticGroup = "pm_basic_feedback",
             original = "תְּגוּבָה", translation = "комментарий",
             definition = "מִשְׁפָּט קָצָר שֶׁמִּישֶׁהוּ מוֹסִיף לְפוֹסְט אוֹ לְוִידֵאוֹ כְּדֵי לַעֲנוֹת אוֹ לְהַבִּיעַ דֵּעָה.",
             definitionNative = "Короткая фраза — её добавляют к посту или видео, чтобы ответить или высказать мнение.",
@@ -188,7 +188,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177711L, 177712L, 177714L, 177715L)),
         WordEntity(
             id = 177714, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_feedback", transliteration = "tluna",
+            pos = "noun", semanticGroup = "pm_basic_feedback",
             original = "תְּלוּנָה", translation = "жалоба",
             definition = "פְּנִיָּה כַּעֲסָנִית שֶׁלָּקוֹחַ שׁוֹלֵחַ כְּשֶׁמַּשֶּׁהוּ לֹא עוֹבֵד אוֹ פָּגַע בּוֹ.",
             definitionNative = "Сердитое обращение клиента — когда что-то не работает или его обидели.",
@@ -197,7 +197,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177711L, 177712L, 177713L, 177715L)),
         WordEntity(
             id = 177715, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_feedback", transliteration = "toda",
+            pos = "noun", semanticGroup = "pm_basic_feedback",
             original = "תּוֹדָה", translation = "благодарность",
             definition = "מִלָּה שֶׁאוֹמְרִים כְּשֶׁמִּישֶׁהוּ עָזַר אוֹ עָשָׂה דָּבָר טוֹב בִּשְׁבִיל אַחֵר.",
             definitionNative = "Слово, которое говорят, когда кто-то помог или сделал хорошее для другого.",
@@ -208,7 +208,7 @@ object WordDataHebrewPmL1 {
         // ── pm_basic_ideas (5) — откуда берётся работа ──
         WordEntity(
             id = 177716, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_ideas", transliteration = "rayon",
+            pos = "noun", semanticGroup = "pm_basic_ideas",
             original = "רַעְיוֹן", translation = "идея",
             definition = "מַחֲשָׁבָה חֲדָשָׁה עַל מַה שֶׁשָּׁוֶה לִבְנוֹת אוֹ לְשַׁפֵּר בַּמּוּצָר.",
             definitionNative = "Свежая мысль о том, что стоит построить или улучшить в продукте.",
@@ -217,7 +217,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177717L, 177718L, 177719L, 177720L)),
         WordEntity(
             id = 177717, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_ideas", transliteration = "bakasha",
+            pos = "noun", semanticGroup = "pm_basic_ideas",
             original = "בַּקָּשָׁה", translation = "запрос",
             definition = "פְּנִיָּה שֶׁלָּקוֹחַ שׁוֹלֵחַ כְּדֵי שֶׁנּוֹסִיף יְכוֹלֶת אוֹ נְשַׁנֶּה מַשֶּׁהוּ קַיָּם.",
             definitionNative = "Обращение клиента — чтобы мы добавили возможность или поменяли что-то существующее.",
@@ -226,7 +226,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177716L, 177718L, 177719L, 177720L)),
         WordEntity(
             id = 177718, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_ideas", transliteration = "tsorekh",
+            pos = "noun", semanticGroup = "pm_basic_ideas",
             original = "צֹרֶךְ", translation = "потребность",
             definition = "מַשֶּׁהוּ שֶׁחָסֵר לָאָדָם בַּחַיִּים — הוּא יְשַׁלֵּם כְּדֵי לְקַבֵּל פִּתְרוֹן בִּשְׁבִילוֹ.",
             definitionNative = "То, чего человеку не хватает в жизни — он заплатит, чтобы получить ответ на это.",
@@ -235,7 +235,7 @@ object WordDataHebrewPmL1 {
         ),
         WordEntity(
             id = 177719, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_ideas", transliteration = "beaya",
+            pos = "noun", semanticGroup = "pm_basic_ideas",
             original = "בְּעָיָה", translation = "проблема",
             definition = "מַצָּב שֶׁמַּפְרִיעַ לָאָדָם לְהַשִּׂיג מָה שֶׁהוּא רוֹצֶה אוֹ צָרִיךְ.",
             definitionNative = "Ситуация, что мешает человеку получить желаемое или нужное.",
@@ -244,7 +244,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177716L, 177717L, 177718L, 177720L)),
         WordEntity(
             id = 177720, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_ideas", transliteration = "pitaron",
+            pos = "noun", semanticGroup = "pm_basic_ideas",
             original = "פִּתְרוֹן", translation = "решение",
             definition = "דֶּרֶךְ לְהוֹצִיא אֶת הָאָדָם מִמַּצָּב קָשֶׁה אוֹ לַעֲנוֹת עַל מַה שֶׁחָסֵר לוֹ.",
             definitionNative = "Способ вытащить человека из трудной ситуации или дать ему то, чего не хватало.",
@@ -255,7 +255,7 @@ object WordDataHebrewPmL1 {
         // ── pm_basic_goals (5) — куда движемся ──
         WordEntity(
             id = 177721, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_goals", transliteration = "matara",
+            pos = "noun", semanticGroup = "pm_basic_goals",
             original = "מַטָּרָה", translation = "цель",
             definition = "מָקוֹם רָחוֹק שֶׁאֵלָיו רוֹצִים לְהַגִּיעַ בַּסּוֹף — בָּעֲבוֹדָה אוֹ בַּחַיִּים.",
             definitionNative = "Дальнее место, куда хотят прийти в итоге — на работе или в жизни.",
@@ -264,7 +264,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177722L, 177723L, 177724L, 177725L)),
         WordEntity(
             id = 177722, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_goals", transliteration = "mesima",
+            pos = "noun", semanticGroup = "pm_basic_goals",
             original = "מְשִׂימָה", translation = "задача",
             definition = "פְּעֻלָּה אַחַת שֶׁצָּרִיךְ לִגְמֹר עַד תַּאֲרִיךְ מְסֻיָּם — חֵלֶק מִתָּכְנִית גְּדוֹלָה יוֹתֵר.",
             definitionNative = "Одно действие, что нужно довести до конца к определённой дате — часть большего плана.",
@@ -273,7 +273,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177721L, 177723L, 177724L, 177725L)),
         WordEntity(
             id = 177723, setId = 1777, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pm_basic_goals", transliteration = "tokhnit",
+            pos = "noun", semanticGroup = "pm_basic_goals",
             original = "תָּכְנִית", translation = "план",
             definition = "רְשִׁימָה מְסֻדֶּרֶת שֶׁל צְעָדִים שֶׁעוֹשִׂים אֶחָד אַחֲרֵי הַשֵּׁנִי כְּדֵי לְהַגִּיעַ לַמַּטָּרָה.",
             definitionNative = "Упорядоченный список шагов — их делают один за другим, чтобы прийти к цели.",
@@ -282,7 +282,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177721L, 177722L, 177724L, 177725L)),
         WordEntity(
             id = 177724, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_goals", transliteration = "dedlain",
+            pos = "noun", semanticGroup = "pm_basic_goals",
             original = "דֶּדְלַיין", translation = "дедлайн",
             definition = "תַּאֲרִיךְ אַחֲרוֹן שֶׁעַד אֵלָיו חַיָּבִים לִגְמֹר מַשֶּׁהוּ — אַחֲרֵי זֶה כְּבָר מְאֻחָר.",
             definitionNative = "Последняя дата, к которой обязаны закончить — после неё уже поздно.",
@@ -291,7 +291,7 @@ object WordDataHebrewPmL1 {
          fillInBlankExclusions = listOf(177721L, 177722L, 177723L, 177725L)),
         WordEntity(
             id = 177725, setId = 1777, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pm_basic_goals", transliteration = "hatslakha",
+            pos = "noun", semanticGroup = "pm_basic_goals",
             original = "הַצְלָחָה", translation = "успех",
             definition = "תּוֹצָאָה טוֹבָה שֶׁבָּהּ הַמַּטָּרָה שֶׁתַּכְנַנּוּ הָגִיעָה לְמָקוֹם בָּהִיר וְנִמְדָּד.",
             definitionNative = "Хороший результат — когда задуманная цель пришла к ясному и измеримому исходу.",

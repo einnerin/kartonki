@@ -55,7 +55,7 @@ object WordDataHebrewBaristaL5 {
         // ── barista_management (5) — управление и кадровые роли ──
         WordEntity(
             id = 179701, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_management", transliteration = "menahel beit kafe",
+            pos = "noun", semanticGroup = "barista_management",
             original = "מְנַהֵל בֵּית קָפֶה", translation = "директор кофейни",
             definition = "אָדָם שֶׁאַחְרָאִי עַל כָּל מַה שֶּׁקּוֹרֶה בַּמָּקוֹם — צֶוֶת, כֶּסֶף וְלָקוֹחוֹת.",
             definitionNative = "Главный над всем заведением — командой, деньгами и гостями.",
@@ -64,7 +64,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179702L, 179703L, 179704L, 179705L)),
         WordEntity(
             id = 179702, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_management", transliteration = "akhrai aspaka",
+            pos = "noun", semanticGroup = "barista_management",
             original = "אַחֲרַאי הַסְפָּקָה", translation = "ответственный за поставки",
             definition = "עוֹבֵד שֶׁדּוֹאֵג לְכָךְ שֶׁתָּמִיד יִהְיוּ פּוֹלִים, חָלָב וּכְלֵי עֲבוֹדָה בַּמַּחְסָן.",
             definitionNative = "Сотрудник следит, чтобы на складе всегда были зёрна, молоко и инвентарь.",
@@ -73,7 +73,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179701L, 179703L, 179704L, 179705L)),
         WordEntity(
             id = 179703, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_management", transliteration = "sidur avoda",
+            pos = "noun", semanticGroup = "barista_management",
             original = "סִדּוּר עֲבוֹדָה", translation = "график работы",
             definition = "טַבְלָה שֶׁמּוֹרָה לְכָל אֶחָד בַּצֶּוֶת מָתַי לָבוֹא וּמָתַי לָלֶכֶת הַבַּיְתָה.",
             definitionNative = "Таблица — кому из команды когда приходить и когда домой.",
@@ -82,7 +82,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179701L, 179702L, 179704L, 179705L)),
         WordEntity(
             id = 179704, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_management", transliteration = "khalukat tafkidim",
+            pos = "noun", semanticGroup = "barista_management",
             original = "חֲלוּקַת תַּפְקִידִים", translation = "распределение обязанностей",
             definition = "כְּשֶׁכָּל אֶחָד בַּצֶּוֶת יוֹדֵעַ בְּדִיּוּק עַל מָה הוּא אַחְרָאִי בַּמִּשְׁמֶרֶת.",
             definitionNative = "Когда каждый в команде точно знает, за что отвечает в смену.",
@@ -91,7 +91,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179701L, 179702L, 179703L, 179705L)),
         WordEntity(
             id = 179705, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_management", transliteration = "giyus muamadim",
+            pos = "noun", semanticGroup = "barista_management",
             original = "גִּיּוּס מֻעֳמָדִים", translation = "найм кандидатов",
             definition = "תַּהֲלִיךְ שֶׁל חִפּוּשׁ אֲנָשִׁים חֲדָשִׁים, רֵאָיוֹן וּבְחִירָה לְעַבְדָה בַּמָּקוֹם.",
             definitionNative = "Поиск новых людей, собеседование и выбор сотрудника на работу.",
@@ -102,7 +102,7 @@ object WordDataHebrewBaristaL5 {
         // ── barista_economics (5) — экономика заведения ──
         WordEntity(
             id = 179706, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_economics", transliteration = "alut hakos",
+            pos = "noun", semanticGroup = "barista_economics",
             original = "עֲלוּת הַכּוֹס", translation = "себестоимость чашки",
             definition = "כַּמָּה כֶּסֶף יוֹצֵא לַבַּעְלִים לְהָכִין מָנָה אַחַת — חוּמְרֵי גֶּלֶם וְעֲבוֹדָה.",
             definitionNative = "Сколько уходит у хозяина на одну порцию — продукты и труд.",
@@ -111,7 +111,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179707L, 179708L, 179709L, 179710L)),
         WordEntity(
             id = 179707, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_economics", transliteration = "rivkhiyut",
+            pos = "noun", semanticGroup = "barista_economics",
             original = "רִוְוחִיּוּת", translation = "маржинальность, доходность",
             definition = "כַּמָּה כֶּסֶף נִשְׁאָר לַבַּעְלִים מִכָּל מְכִירָה אַחֲרֵי הַהוֹצָאוֹת.",
             definitionNative = "Сколько денег остаётся хозяину с каждой продажи после расходов.",
@@ -120,7 +120,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179706L, 179708L, 179709L, 179710L)),
         WordEntity(
             id = 179708, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_economics", transliteration = "sal kniya memutsa",
+            pos = "noun", semanticGroup = "barista_economics",
             original = "סַל קְנִיָּה מְמֻצָּע", translation = "средний чек заказа",
             definition = "סְכוּם טִיפּוּסִי שֶׁלָּקוֹחַ מְשַׁלֵּם בְּבִקּוּר אֶחָד עַל כָּל מָה שֶׁלָּקַח.",
             definitionNative = "Типичная сумма, которую гость платит за один визит.",
@@ -129,7 +129,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179706L, 179707L, 179709L, 179710L)),
         WordEntity(
             id = 179709, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_economics", transliteration = "makhzor yomi",
+            pos = "noun", semanticGroup = "barista_economics",
             original = "מַחְזוֹר יוֹמִי", translation = "дневной оборот",
             definition = "סַךְ הַכֶּסֶף שֶׁהַקֻּפָּה אָסְפָה מִכָּל הַמְּכִירוֹת מֵהַבֹּקֶר עַד הַסְּגִירָה.",
             definitionNative = "Итог всех чеков кассы за одни сутки работы.",
@@ -138,7 +138,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179706L, 179707L, 179708L, 179710L)),
         WordEntity(
             id = 179710, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_economics", transliteration = "pkhat khomarim",
+            pos = "noun", semanticGroup = "barista_economics",
             original = "פְּחָת חֳמָרִים", translation = "потери продуктов, списания",
             definition = "אֲבֵדָה כַּסְפִּית מִתּוֹצָר שֶׁהִתְקַלְקֵל, נִשְׁפַּךְ אוֹ עָבַר תָּאֲרִיךְ אַחֲרוֹן.",
             definitionNative = "Денежная утрата от испортившегося, разлитого или просроченного сырья.",
@@ -149,7 +149,7 @@ object WordDataHebrewBaristaL5 {
         // ── barista_quality (5) — контроль качества ──
         WordEntity(
             id = 179711, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_quality", transliteration = "kyu greider",
+            pos = "noun", semanticGroup = "barista_quality",
             original = "קְיוּ-גְרֵיידֶר", translation = "Q-grader (профдегустатор)",
             definition = "מֻמְחֶה מֻסְמָךְ בֵּינְלְאֻמִּי שֶׁנּוֹתֵן צִיּוּן רִשְׁמִי לְפוֹלִים יְרֻקִּים מֵאַרְצוֹת מָקוֹר.",
             definitionNative = "Сертифицированный международный эксперт ставит официальную оценку зелёным зёрнам.",
@@ -158,7 +158,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179712L, 179713L, 179714L, 179715L)),
         WordEntity(
             id = 179712, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_quality", transliteration = "bikoret eikhut",
+            pos = "noun", semanticGroup = "barista_quality",
             original = "בִּקֹּרֶת אֵיכוּת", translation = "аудит качества",
             definition = "בְּדִיקָה רִשְׁמִית שֶׁל אִישׁ חִיצוֹנִי אֵיךְ הַמָּקוֹם עוֹמֵד בְּסְטַנְדַּרְטִים מִקְצוֹעִיִּים.",
             definitionNative = "Официальная проверка постороннего — соответствует ли заведение профстандартам.",
@@ -167,7 +167,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179711L, 179713L, 179714L, 179715L)),
         WordEntity(
             id = 179713, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_quality", transliteration = "mivkhan hashvaati",
+            pos = "noun", semanticGroup = "barista_quality",
             original = "מִבְחָן הַשְׁוָאָתִי", translation = "сравнительный тест (cupping)",
             definition = "כְּשֶׁמַּגִּישִׁים יַחַד כַּמָּה דְּגָמִים סְמוּיִים כְּדֵי לְהַחְלִיט אֵיזֶה הָכִי טוֹב.",
             definitionNative = "Когда вместе подают несколько обезличенных образцов и выбирают лучший.",
@@ -176,7 +176,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179711L, 179712L, 179714L, 179715L)),
         WordEntity(
             id = 179714, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_quality", transliteration = "daf haarakha",
+            pos = "noun", semanticGroup = "barista_quality",
             original = "דַּף הַעֲרָכָה", translation = "оценочный лист",
             definition = "טֹפֶס עִם נְקֻדּוֹת לְצִיּוּן רֵיחַ, מִרְקָם וּתְכוּנוֹת שֶׁל כָּל דֶּגֶם נִבְדָּק.",
             definitionNative = "Бланк с пунктами для пометок о запахе, текстуре и свойствах каждого образца.",
@@ -185,7 +185,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179711L, 179712L, 179713L, 179715L)),
         WordEntity(
             id = 179715, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_quality", transliteration = "akhidut mashke",
+            pos = "noun", semanticGroup = "barista_quality",
             original = "אֲחִידוּת מַשְׁקֶה", translation = "единообразие напитка",
             definition = "כְּשֶׁכָּל מָנָה יוֹצֵאת בְּדִיּוּק כְּמוֹ הַקּוֹדֶמֶת, בְּלִי הַבְדֵּלִים בֵּין מִשְׁמְרוֹת.",
             definitionNative = "Когда каждая порция выходит ровно как предыдущая, без отличий между сменами.",
@@ -196,7 +196,7 @@ object WordDataHebrewBaristaL5 {
         // ── barista_training (5) — обучение и наставничество ──
         WordEntity(
             id = 179716, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_training", transliteration = "hakhshara miktsoit",
+            pos = "noun", semanticGroup = "barista_training",
             original = "הַכְשָׁרָה מִקְצוֹעִית", translation = "профессиональная подготовка",
             definition = "קוּרְס מְסֻדָּר שֶׁמְּלַמֵּד עוֹבֵד חָדָשׁ אֶת כָּל הַטְּכָנִיקוֹת מֵהַיְּסוֹדוֹת.",
             definitionNative = "Систематический курс — учит новичка всем техникам с азов.",
@@ -205,7 +205,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179717L, 179718L, 179719L, 179720L)),
         WordEntity(
             id = 179717, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_training", transliteration = "reshimat mesimot",
+            pos = "noun", semanticGroup = "barista_training",
             original = "רְשִׁימַת מְשִׁימוֹת", translation = "чек-лист задач",
             definition = "דַּף עִם פְּעֻלּוֹת מְסֻדָּרוֹת שֶׁצָּרִיךְ לְבַצֵּעַ וּלְסַמֵּן בְּאוֹתוֹ סֵדֶר כָּל בֹּקֶר.",
             definitionNative = "Лист с упорядоченными действиями — выполнить и отметить в том же порядке.",
@@ -214,7 +214,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179716L, 179718L, 179719L, 179720L)),
         WordEntity(
             id = 179718, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_training", transliteration = "teken sherut",
+            pos = "noun", semanticGroup = "barista_training",
             original = "תֶּקֶן שֵׁרוּת", translation = "стандарт обслуживания",
             definition = "מִסְמָךְ שֶׁמַּגְדִּיר אֵיךְ לְקַבֵּל לָקוֹחַ, לְדַבֵּר וְלִתֵּן מָנָה בְּכָל מִקְרֶה.",
             definitionNative = "Документ — как принять гостя, говорить и подавать заказ в каждом случае.",
@@ -223,7 +223,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179716L, 179717L, 179719L, 179720L)),
         WordEntity(
             id = 179719, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_training", transliteration = "khanikha",
+            pos = "noun", semanticGroup = "barista_training",
             original = "חֲנִיכָה", translation = "наставничество",
             definition = "כְּשֶׁעוֹבֵד וָתִיק מַעֲבִיר אֶת הַיֵּדַע שֶׁלּוֹ לְעוֹבֵד צָעִיר וְעוֹזֵר בִּצְעָדִים רִאשׁוֹנִים.",
             definitionNative = "Когда опытный передаёт знания молодому и помогает на первых шагах.",
@@ -232,7 +232,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179716L, 179717L, 179718L, 179720L)),
         WordEntity(
             id = 179720, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_training", transliteration = "hasmakha",
+            pos = "noun", semanticGroup = "barista_training",
             original = "הַסְמָכָה", translation = "сертификация",
             definition = "תְּעוּדָה רִשְׁמִית שֶׁמְּאַשֶּׁרֶת שֶׁאָדָם עָבַר מִבְחָנִים וְיוֹדֵעַ אֶת הַמִּקְצוֹעַ.",
             definitionNative = "Официальная бумага подтверждает, что человек сдал тесты и владеет ремеслом.",
@@ -243,7 +243,7 @@ object WordDataHebrewBaristaL5 {
         // ── barista_culture (5) — культура и философия ──
         WordEntity(
             id = 179721, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_culture", transliteration = "gal shlishi",
+            pos = "noun", semanticGroup = "barista_culture",
             original = "גַּל שְׁלִישִׁי", translation = "третья волна (кофейная культура)",
             definition = "תְּקוּפָה מוֹדֶרְנִית שֶׁבָּהּ הַמַּשְׁקֶה הַחַם נֶחְשָׁב לְאָמָּנוּת וְלֹא רַק לַסְּחוֹרָה.",
             definitionNative = "Современная эпоха — горячий напиток как искусство, а не товар.",
@@ -252,7 +252,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179722L, 179723L, 179724L, 179725L)),
         WordEntity(
             id = 179722, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_culture", transliteration = "moreshet kulinarit",
+            pos = "noun", semanticGroup = "barista_culture",
             original = "מוֹרֶשֶׁת קוּלִינָרִית", translation = "кулинарное наследие",
             definition = "מָסֹרֶת אֲרֻכָּה שֶׁל מַתְכּוֹנִים וְהֶרְגֵּלִים שֶׁעוֹבְרִים מִדּוֹר לְדוֹר בְּתוֹךְ עַם.",
             definitionNative = "Долгая традиция рецептов и привычек, идущая из поколения в поколение.",
@@ -261,7 +261,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179721L, 179723L, 179724L, 179725L)),
         WordEntity(
             id = 179723, setId = 1797, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "barista_culture", transliteration = "tarbut hashtiya",
+            pos = "noun", semanticGroup = "barista_culture",
             original = "תַּרְבּוּת הַשְּׁתִיָּה", translation = "культура питья",
             definition = "אֹסֶף שֶׁל מִנְהָגִים וְכְלָלִים אֵיךְ אֲנָשִׁים מַגִּישִׁים וּמְבַלִּים בְּזְמַן הַמַּשְׁקֶה.",
             definitionNative = "Свод обычаев — как подают и проводят время за чашкой в обществе.",
@@ -270,7 +270,7 @@ object WordDataHebrewBaristaL5 {
          fillInBlankExclusions = listOf(179721L, 179722L, 179724L, 179725L)),
         WordEntity(
             id = 179724, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_culture", transliteration = "omanut haerukh",
+            pos = "noun", semanticGroup = "barista_culture",
             original = "אֳמָנוּת הָאֵירוּחַ", translation = "искусство гостеприимства",
             definition = "גִּישָׁה מִקְצוֹעִית אֵיךְ לְקַבֵּל אֲנָשִׁים בְּאֹפֶן שֶׁיַּרְגִּישׁוּ בְּבַיִת וְיַחְזְרוּ שׁוּב.",
             definitionNative = "Профподход — как принять людей, чтобы чувствовали себя дома и вернулись.",
@@ -279,7 +279,7 @@ object WordDataHebrewBaristaL5 {
         ),
         WordEntity(
             id = 179725, setId = 1797, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "barista_culture", transliteration = "tsrikha etit",
+            pos = "noun", semanticGroup = "barista_culture",
             original = "צְרִיכָה אֶתִית", translation = "этичное потребление",
             definition = "בְּחִירָה לִקְנוֹת רַק מִסַּפָּקִים שֶׁמְּשַׁלְּמִים נָכוֹן לַחַוַּאִים וְשׁוֹמְרִים עַל הַטֶּבַע.",
             definitionNative = "Выбор покупать у тех, кто честно платит фермерам и бережёт природу.",

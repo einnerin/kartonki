@@ -45,7 +45,7 @@ object WordDataHebrewCookL4 {
         // ── cook_chef_brigade (5) — иерархия и станции бригады ──
         WordEntity(
             id = 172201, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cook_chef_brigade", transliteration = "su-shef",
+            pos = "noun", semanticGroup = "cook_chef_brigade",
             original = "סוּ-שֶׁף", translation = "су-шеф, заместитель шефа",
             definition = "סְגַן שֶׁל רֹאשׁ הַמִּטְבָּח שֶׁמְּנַהֵל אֶת הַמִּשְׁמֶרֶת בִּזְמַן הֶעְדֵּר.",
             definitionNative = "Заместитель главы кухни, ведущий смену в его отсутствие.",
@@ -54,7 +54,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172202L, 172203L, 172204L, 172205L)),
         WordEntity(
             id = 172202, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_chef_brigade", transliteration = "shef patiseri",
+            pos = "phrase", semanticGroup = "cook_chef_brigade",
             original = "שֶׁף פָּטִיסְרִי", translation = "шеф-кондитер",
             definition = "אַחְרַאי עַל קִנּוּחִים, מַאֲפִים וּמְנוֹת מְתוּקוֹת בְּמִטְבָּח גָּדוֹל.",
             definitionNative = "Ответственный за десерты, выпечку и сладкие подачи в большой кухне.",
@@ -63,7 +63,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172201L, 172203L, 172204L, 172205L)),
         WordEntity(
             id = 172203, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_chef_brigade", transliteration = "shef salot",
+            pos = "phrase", semanticGroup = "cook_chef_brigade",
             original = "שֶׁף סָאלוֹט", translation = "шеф холодной станции",
             definition = "אַחְרַאי עַל סָלָטִים, מָנוֹת קְרִירוֹת וּמַאֲכָלִים שֶׁאֵינָם מְבֻשָּׁלִים.",
             definitionNative = "Ответственный за салаты, холодные блюда и невареные закуски.",
@@ -72,7 +72,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172201L, 172202L, 172204L, 172205L)),
         WordEntity(
             id = 172204, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_chef_brigade", transliteration = "shef sote",
+            pos = "phrase", semanticGroup = "cook_chef_brigade",
             original = "שֶׁף סוֹטֶה", translation = "повар-сотейник, повар горячего цеха",
             definition = "טַבָּח שֶׁמְּתַמְחֶה בִּמְנוֹת מַחֲבַת חַמָּה עִם רֹטֶב מַהִיר.",
             definitionNative = "Повар, специализирующийся на сковороде с быстрым соусом.",
@@ -81,7 +81,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172201L, 172202L, 172203L, 172205L)),
         WordEntity(
             id = 172205, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_chef_brigade", transliteration = "shef gril",
+            pos = "phrase", semanticGroup = "cook_chef_brigade",
             original = "שֶׁף גָּרִיל", translation = "шеф гриль-станции",
             definition = "מִקְצוֹעָן הָאַחְרָאִי עַל בָּשָׂר וְדָגִים שֶׁמְּקַבְּלִים אֵשׁ פְּתוּחָה יְשִׁירָה.",
             definitionNative = "Профессионал, отвечающий за мясо и рыбу на открытом огне.",
@@ -92,7 +92,7 @@ object WordDataHebrewCookL4 {
         // ── cook_advanced_techniques (5) — продвинутые техники ──
         WordEntity(
             id = 172206, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_advanced_techniques", transliteration = "ishun kar",
+            pos = "phrase", semanticGroup = "cook_advanced_techniques",
             original = "עִשּׁוּן קַר", translation = "холодное копчение",
             definition = "טִפּוּל בְּעָשָׁן בִּטֶמְפֵּרָטוּרָה נְמוּכָה כְּדֵי לְשַׁמֵּר טַעַם בְּלִי לְבַשֵּׁל.",
             definitionNative = "Обработка дымом при низком градусе, чтобы дать аромат без варки.",
@@ -101,7 +101,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172207L, 172208L, 172209L, 172210L)),
         WordEntity(
             id = 172207, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_advanced_techniques", transliteration = "de-glasaz",
+            pos = "phrase", semanticGroup = "cook_advanced_techniques",
             original = "דֵּי-גְלָסָאז'", translation = "дегласирование, развод соуса жидкостью",
             definition = "מְזִיגַת יַיִן אוֹ צִיר עַל שְׁאֵרִיּוֹת מַחֲבַת לִיצִירַת רֹטֶב עָשִׁיר.",
             definitionNative = "Залив вина или бульона на остатки в сковороде для густого соуса.",
@@ -110,7 +110,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172206L, 172208L, 172209L, 172210L)),
         WordEntity(
             id = 172208, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cook_advanced_techniques", transliteration = "flambe",
+            pos = "noun", semanticGroup = "cook_advanced_techniques",
             original = "פְלָמְבֶּה", translation = "фламбирование, поджиг алкоголя",
             definition = "הַצָּתָה שֶׁל אַלְכּוֹהוֹל בַּמַּחֲבַת לְהוֹסִיף טַעַם וּלְהַצִּיג לָאוֹרֵחַ.",
             definitionNative = "Поджог алкоголя на сковороде ради вкуса и зрелища для гостя.",
@@ -119,7 +119,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172206L, 172207L, 172209L, 172210L)),
         WordEntity(
             id = 172209, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_advanced_techniques", transliteration = "redutsiya iti",
+            pos = "phrase", semanticGroup = "cook_advanced_techniques",
             original = "רֵדוּקְצְיָה אִטִּית", translation = "медленное уваривание соуса",
             definition = "צִמְצוּם נוֹזְלִים עַל אֵשׁ קְטַנָּה לְהַעֲשִׁיר אֶת הַטַּעַם וְהַמִּרְקָם.",
             definitionNative = "Уменьшение жидкости на малом огне для густоты и насыщенности.",
@@ -128,7 +128,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172206L, 172207L, 172208L, 172210L)),
         WordEntity(
             id = 172210, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_advanced_techniques", transliteration = "sferifikatsiya",
+            pos = "phrase", semanticGroup = "cook_advanced_techniques",
             original = "סְפֵרִיפִיקַצְיָה", translation = "сферификация (молекулярная)",
             definition = "הֲפִיכַת נוֹזֶל לְכַדּוּרִים זְעִירִים בְּקַלְצְיוּם — טֶכְנִיקָה מוֹלֶקוּלָרִית.",
             definitionNative = "Превращение жидкости в шарики через кальций — молекулярная техника.",
@@ -139,7 +139,7 @@ object WordDataHebrewCookL4 {
         // ── cook_signature_dishes (5) — авторские блюда и подача ──
         WordEntity(
             id = 172211, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_signature_dishes", transliteration = "manat khatima",
+            pos = "phrase", semanticGroup = "cook_signature_dishes",
             original = "מָנַת חֲתִימָה", translation = "фирменное блюдо шефа",
             definition = "פְּרִיט מִן הַתַּפְרִיט שֶׁמְּזֻהֶה אִישִׁית עִם הַטַּבָּח וּמַצִּיג סִגְנוֹן שֶׁלּוֹ.",
             definitionNative = "Блюдо из меню, ассоциирующееся лично с поваром и его стилем.",
@@ -148,7 +148,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172212L, 172213L, 172214L, 172215L)),
         WordEntity(
             id = 172212, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_signature_dishes", transliteration = "tafrit te'imot",
+            pos = "phrase", semanticGroup = "cook_signature_dishes",
             original = "תַּפְרִיט טְעִימוֹת", translation = "дегустационное меню",
             definition = "סִדְרַת מָנוֹת קְטַנּוֹת שֶׁבָּהּ הַשֶּׁף מַצִּיג אֶת מֵיטַב יְצִירוֹתָיו.",
             definitionNative = "Серия маленьких блюд, в которой шеф показывает свои лучшие работы.",
@@ -157,7 +157,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172211L, 172213L, 172214L, 172215L)),
         WordEntity(
             id = 172213, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_signature_dishes", transliteration = "shilov ta'amim",
+            pos = "phrase", semanticGroup = "cook_signature_dishes",
             original = "שִׁלּוּב טַעֲמִים", translation = "сочетание вкусов",
             definition = "אִחוּד שֶׁל מַרְכִּיבִים שׁוֹנִים לִיצִירַת הַרְמוֹנְיָה אַחַת בַּפֶּה.",
             definitionNative = "Соединение разных продуктов в единую гармонию во рту.",
@@ -166,7 +166,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172211L, 172212L, 172214L, 172215L)),
         WordEntity(
             id = 172214, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_signature_dishes", transliteration = "interpretatsiya kulinarit",
+            pos = "phrase", semanticGroup = "cook_signature_dishes",
             original = "אִינְטֶרְפְּרֶטַצְיָה קוּלִינָרִית", translation = "авторская трактовка классики",
             definition = "גִּרְסָה חֲדָשָׁה שֶׁל מָנָה מָסּוֹרְתִּית עִם נְגִיעָה אִישִׁית שֶׁל הַטַּבָּח.",
             definitionNative = "Новая версия классического блюда с личным почерком повара.",
@@ -175,7 +175,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172211L, 172212L, 172213L, 172215L)),
         WordEntity(
             id = 172215, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_signature_dishes", transliteration = "esttetikat tsalakhat",
+            pos = "phrase", semanticGroup = "cook_signature_dishes",
             original = "אֶסְתֶּטִיקַת צַלַּחַת", translation = "эстетика подачи на тарелке",
             definition = "אָמָּנוּת סִדּוּר הַמָּזוֹן עַל הַכְּלִי לְהַשְׁפִּיעַ עַל הָעַיִן לִפְנֵי הַפֶּה.",
             definitionNative = "Искусство выкладки еды, действующее на глаз раньше, чем на рот.",
@@ -186,7 +186,7 @@ object WordDataHebrewCookL4 {
         // ── cook_wine_pairing (5) — винные пары ──
         WordEntity(
             id = 172216, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_wine_pairing", transliteration = "shidukh yain",
+            pos = "phrase", semanticGroup = "cook_wine_pairing",
             original = "שִׁדּוּךְ יַיִן", translation = "винная пара к блюду",
             definition = "בְּחִירַת מַשְׁקֶה שֶׁמַּדְגִּישׁ אוֹ מְאַזֵּן אֶת טַעַם הָאֹכֶל.",
             definitionNative = "Подбор напитка, который подчеркивает или уравновешивает блюдо.",
@@ -195,7 +195,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172217L, 172218L, 172219L, 172220L)),
         WordEntity(
             id = 172217, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_wine_pairing", transliteration = "yain melaveh",
+            pos = "phrase", semanticGroup = "cook_wine_pairing",
             original = "יַיִן מְלַוֶּה", translation = "сопровождающее вино к блюду",
             definition = "מַשְׁקֶה שֶׁמּוֹסִיפִים לְמָנָה כְּדֵי לִיצֹר חֲוָיַת אֲרוּחָה שְׁלֵמָה.",
             definitionNative = "Напиток, добавленный к блюду для целостного впечатления от ужина.",
@@ -204,7 +204,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172216L, 172218L, 172219L, 172220L)),
         WordEntity(
             id = 172218, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_wine_pairing", transliteration = "ta'am mashlim",
+            pos = "phrase", semanticGroup = "cook_wine_pairing",
             original = "טַעַם מַשְׁלִים", translation = "комплементарный вкус",
             definition = "תְּכוּנָה בַּמַּשְׁקֶה אוֹ בָּאֹכֶל שֶׁמְּמַלֵּאת חָסֵר אֵצֶל בֶּן זוּגוֹ.",
             definitionNative = "Свойство напитка или еды, восполняющее то, чего не хватает партнёру.",
@@ -213,7 +213,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172216L, 172217L, 172219L, 172220L)),
         WordEntity(
             id = 172219, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_wine_pairing", transliteration = "yain levan kar",
+            pos = "phrase", semanticGroup = "cook_wine_pairing",
             original = "יַיִן לָבָן קַר", translation = "охлаждённое белое вино",
             definition = "מַשְׁקֶה בָּהִיר שֶׁמַּגִּישִׁים בְּקֵרוּר לִדְגֵי יָם וְעוֹף עָדִין.",
             definitionNative = "Светлый напиток, подаваемый охлаждённым к рыбе и нежной птице.",
@@ -222,7 +222,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172216L, 172217L, 172218L, 172220L)),
         WordEntity(
             id = 172220, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_wine_pairing", transliteration = "rezonans ta'amim",
+            pos = "phrase", semanticGroup = "cook_wine_pairing",
             original = "רֵזוֹנָנְס טַעֲמִים", translation = "резонанс вкусов вина и блюда",
             definition = "תּוֹפָעָה שֶׁבָּהּ הַמַּשְׁקֶה וְהָאֹכֶל מַגְדִּילִים זֶה אֶת זֶה בַּפֶּה.",
             definitionNative = "Явление, когда напиток и еда усиливают друг друга во рту.",
@@ -233,7 +233,7 @@ object WordDataHebrewCookL4 {
         // ── cook_banquet (5) — банкетная и фуршетная кухня ──
         WordEntity(
             id = 172221, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_banquet", transliteration = "bishul lebanket",
+            pos = "phrase", semanticGroup = "cook_banquet",
             original = "בִּישּׁוּל לְבַנְקֶט", translation = "банкетная готовка большими партиями",
             definition = "הֲכָנַת מָנוֹת בְּכַמּוּת גְּדוֹלָה לְאֵירוּעַ מְרֻכָּז עִם שָׁעָה אַחַת לְהַגָּשָׁה.",
             definitionNative = "Готовка большой партии для мероприятия с одним временем подачи.",
@@ -242,7 +242,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172222L, 172223L, 172224L, 172225L)),
         WordEntity(
             id = 172222, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_banquet", transliteration = "takhanat bufe",
+            pos = "phrase", semanticGroup = "cook_banquet",
             original = "תַּחֲנַת בּוּפֶה", translation = "буфетная станция на банкете",
             definition = "פִּנָּה עִם מָנוֹת חַמּוֹת אוֹ קָרוֹת שֶׁהָאוֹרְחִים לוֹקְחִים מֵעַצְמָם.",
             definitionNative = "Угол с горячими или холодными блюдами, что гости берут сами.",
@@ -251,7 +251,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172221L, 172223L, 172224L, 172225L)),
         WordEntity(
             id = 172223, setId = 1722, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cook_banquet", transliteration = "hovalat manot",
+            pos = "phrase", semanticGroup = "cook_banquet",
             original = "הוֹבָלַת מָנוֹת", translation = "вынос блюд для большой группы",
             definition = "הַעֲבָרַת אֹכֶל מֻכָן מֵהַמִּטְבָּח לָאוּלָם בְּצוּרָה מְהִירָה וּמְסֻדֶּרֶת.",
             definitionNative = "Перемещение готовой еды из кухни в зал быстро и упорядоченно.",
@@ -260,7 +260,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172221L, 172222L, 172224L, 172225L)),
         WordEntity(
             id = 172224, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_banquet", transliteration = "tafrit erua",
+            pos = "phrase", semanticGroup = "cook_banquet",
             original = "תַּפְרִיט אֵירוּעַ", translation = "меню банкета",
             definition = "רְשִׁימַת מָנוֹת שֶׁמּוּסְכָּמוֹת מֵרֹאשׁ עִם הַלָּקוֹחַ לְפִי תַּקְצִיב וּמַטָּרָה.",
             definitionNative = "Список блюд, согласованный с заказчиком по бюджету и поводу.",
@@ -269,7 +269,7 @@ object WordDataHebrewCookL4 {
             fillInBlankExclusions = listOf(172221L, 172222L, 172223L, 172225L)),
         WordEntity(
             id = 172225, setId = 1722, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cook_banquet", transliteration = "te'um im meltsarim",
+            pos = "phrase", semanticGroup = "cook_banquet",
             original = "תֵּאוּם עִם מֶלְצָרִים", translation = "координация с официантами",
             definition = "סִנְכְרוּן בֵּין מִטְבָּח לְצֶוֶת הָאוּלָם כְּדֵי שֶׁכָּל מָנָה תֵּצֵא בַּזְּמַן.",
             definitionNative = "Согласование кухни и зала, чтобы каждое блюдо вышло вовремя.",

@@ -48,7 +48,7 @@ object WordDataHebrewCleaningL4 {
         // ── cleaning_pro_equipment (5 EPIC) — профессиональное оборудование ──
         WordEntity(
             id = 171601, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "cleaning_pro_equipment", transliteration = "otoskraber",
+            pos = "noun", semanticGroup = "cleaning_pro_equipment",
             original = "אוֹטוֹסְקְרָבֶּר", translation = "поломоечная машина (автоскраббер)",
             definition = "מְכוֹנָה מִכְנִית הַשׁוֹטֶפֶת וְשׁוֹאֶבֶת מַיִם מֵרִצְפָּה גְּדוֹלָה.",
             definitionNative = "Самоходная машина, что моет и сразу всасывает воду с большого пола.",
@@ -57,7 +57,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171602L, 171603L, 171604L, 171605L)),
         WordEntity(
             id = 171602, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cleaning_pro_equipment", transliteration = "polisher orbitali",
+            pos = "phrase", semanticGroup = "cleaning_pro_equipment",
             original = "פּוֹלִישֵׁר אוֹרְבִּיטָלִי", translation = "орбитальный полировщик",
             definition = "מְכוֹנָה לְהַבְרָקָה שֶׁל מִשְׁטָחִים בְּתְנוּעָה סִיבוּבִית כְּפוּלָה.",
             definitionNative = "Машина для блеска поверхностей, работающая двойным круговым ходом.",
@@ -66,7 +66,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171601L, 171603L, 171604L, 171605L, 171606L, 171607L, 171608L, 171609L)),
         WordEntity(
             id = 171603, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cleaning_pro_equipment", transliteration = "makhshir extraktsiya",
+            pos = "phrase", semanticGroup = "cleaning_pro_equipment",
             original = "מַכְשִׁיר אֶקְסְטְרַקְצְיָה", translation = "экстракторная машина (для ковров)",
             definition = "כְּלִי מִקְצוֹעִי הַשׁוֹאֵב נוֹזֵל וְלִכְלוּךְ עָמֹק מִתּוֹךְ שָׁטִיחַ אוֹ רִפּוּד.",
             definitionNative = "Профессиональный аппарат, что вытягивает влагу и грязь изнутри ковра или обивки.",
@@ -75,7 +75,7 @@ object WordDataHebrewCleaningL4 {
         ),
         WordEntity(
             id = 171604, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cleaning_pro_equipment", transliteration = "mazik koli",
+            pos = "phrase", semanticGroup = "cleaning_pro_equipment",
             original = "מַזִּיק קוֹלִי", translation = "ультразвуковой очиститель",
             definition = "מַכְשִׁיר הַשּׁוֹלֵחַ גַּלִּים בְּתָדֶר גָּבוֹהַ לְהוֹרָדַת לִכְלוּךְ דַּקִּיק.",
             definitionNative = "Прибор, испускающий высокочастотные волны, чтобы снимать тонкую грязь.",
@@ -84,7 +84,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171602L, 171603L, 171605L)),
         WordEntity(
             id = 171605, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cleaning_pro_equipment", transliteration = "shoev ta'asiyati",
+            pos = "phrase", semanticGroup = "cleaning_pro_equipment",
             original = "שׁוֹאֵב תַּעֲשִׂיָּתִי", translation = "промышленный пылесос (для влажной/сухой уборки)",
             definition = "מַכְשִׁיר חָזָק שֶׁאוֹסֵף נוֹזְלִים וּפְסֹלֶת יָבֵשׁ בִּמְקוֹם עֲבוֹדָה גָּדוֹל.",
             definitionNative = "Мощный аппарат для сбора жидкости и сухого мусора в крупном цеху.",
@@ -95,7 +95,7 @@ object WordDataHebrewCleaningL4 {
         // ── cleaning_pro_chemistry (5 EPIC) — профессиональная химия ──
         WordEntity(
             id = 171606, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cleaning_pro_chemistry", transliteration = "mefig ktamim enzimati",
+            pos = "phrase", semanticGroup = "cleaning_pro_chemistry",
             original = "מְפִיג כְּתָמִים אֶנְזִימָטִי", translation = "энзимный пятновыводитель",
             definition = "תַּכְשִׁיר עַל בָּסִיס חֶלְבּוֹנִים הַמְפָרֵק לִכְלוּךְ אוֹרְגָּנִי.",
             definitionNative = "Средство на основе белков, что разлагает органическую грязь.",
@@ -104,7 +104,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171607L, 171608L, 171609L, 171610L)),
         WordEntity(
             id = 171607, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cleaning_pro_chemistry", transliteration = "khomer nikuy alkali",
+            pos = "phrase", semanticGroup = "cleaning_pro_chemistry",
             original = "חוֹמֶר נִקּוּי אַלְקָלִי", translation = "щелочное чистящее средство",
             definition = "תַּכְשִׁיר בָּזִיסִי בִּ-pH גָּבוֹהַ הַמְסַלֵּק שׁוּמָן וּלִכְלוּךְ כָּבֵד.",
             definitionNative = "Базовое средство с высоким pH, что снимает жир и тяжёлую грязь.",
@@ -113,7 +113,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171606L, 171608L, 171609L, 171610L)),
         WordEntity(
             id = 171608, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cleaning_pro_chemistry", transliteration = "tamisat she'am",
+            pos = "phrase", semanticGroup = "cleaning_pro_chemistry",
             original = "תַּמִּיסַת שֶׁעַם", translation = "раствор против известкового налёта",
             definition = "נוֹזֵל חָמוּץ הַמֵּסִיר שִׁכְבוֹת אֶבֶן מִקַּו הַמַּיִם וּמִבֶּרֶזִים.",
             definitionNative = "Кислая жидкость, что снимает каменные отложения с кранов и линий воды.",
@@ -122,7 +122,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171606L, 171607L, 171609L, 171610L)),
         WordEntity(
             id = 171609, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cleaning_pro_chemistry", transliteration = "mashlit shumanim",
+            pos = "phrase", semanticGroup = "cleaning_pro_chemistry",
             original = "מַשְׁלִיט שׁוּמָנִים", translation = "обезжириватель (промышленный)",
             definition = "תַּכְשִׁיר חָזָק לִפְעוּלָה עַל מִטְבָּחֵי תַּעֲשִׂיָּה וְלַחֲדַר מָנוֹעַ.",
             definitionNative = "Сильное средство для промышленных кухонь и моторных отсеков.",
@@ -131,7 +131,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171606L, 171607L, 171608L, 171610L)),
         WordEntity(
             id = 171610, setId = 1716, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "cleaning_pro_chemistry", transliteration = "hasarat grafiti",
+            pos = "phrase", semanticGroup = "cleaning_pro_chemistry",
             original = "הָסָרַת גְּרָפִיטִי", translation = "удаление граффити (специальная химия)",
             definition = "פְּעוּלָה מִקְצוֹעִית לְמְחִיקַת צִיּוּרֵי רַסָּסִים מִמִּשְׁטְחֵי בִּנְיָן.",
             definitionNative = "Профессиональная обработка для стирания краски-аэрозоля со стен.",
@@ -142,7 +142,7 @@ object WordDataHebrewCleaningL4 {
         // ── cleaning_contracts (5 LEGENDARY) — договорные процессы ──
         WordEntity(
             id = 171611, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_contracts", transliteration = "heskem retsifut sherut",
+            pos = "phrase", semanticGroup = "cleaning_contracts",
             original = "הֶסְכֵּם רְצִיפוּת שֵׁרוּת", translation = "соглашение о непрерывности обслуживания",
             definition = "מִסְמָךְ הַמַּבְטִיחַ שֶׁהַשֵּׁרוּת לֹא יִפָּסֵק גַּם בְּעֵת תַּקָּלָה אוֹ חֲלִיפָה שֶׁל קַבְלָן.",
             definitionNative = "Документ, гарантирующий, что услуга не прервётся при сбое или замене подрядчика.",
@@ -151,7 +151,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171612L, 171613L, 171614L, 171615L, 171617L, 171621L, 171622L, 171625L)),
         WordEntity(
             id = 171612, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_contracts", transliteration = "mikhraz sherutei nikuy",
+            pos = "phrase", semanticGroup = "cleaning_contracts",
             original = "מִכְרַז שֵׁרוּתֵי נִקּוּי", translation = "тендер на клининговые услуги",
             definition = "תַּהֲלִיךְ פּוּמְבִּי בּוֹ חֲבָרוֹת מַגִּישׁוֹת הַצָּעוֹת לְזָכִיָּה בְּחוֹזֶה נִקּוּי.",
             definitionNative = "Открытая процедура, в которой компании подают заявки на контракт по уборке.",
@@ -160,7 +160,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171611L, 171613L, 171614L, 171615L, 171621L, 171622L, 171624L, 171625L)),
         WordEntity(
             id = 171613, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_contracts", transliteration = "se'if i-takharut",
+            pos = "phrase", semanticGroup = "cleaning_contracts",
             original = "סְעִיף אִי-תַּחֲרוּת", translation = "пункт о неконкуренции (в договоре)",
             definition = "תְּנַאי הַמּוֹנֵעַ מֵעוֹבֵד אוֹ קַבְּלָן לִפְנוֹת לִקְלִיֶּנְט הַלָּקוֹחַ.",
             definitionNative = "Условие, запрещающее работнику или подрядчику переходить к клиенту заказчика.",
@@ -169,7 +169,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171611L, 171612L, 171614L, 171615L, 171617L, 171621L, 171622L)),
         WordEntity(
             id = 171614, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_contracts", transliteration = "luakh zmanei bitsua",
+            pos = "phrase", semanticGroup = "cleaning_contracts",
             original = "לוּחַ זְמַנֵּי בִּצּוּעַ", translation = "график исполнения работ",
             definition = "טַבְלַת תַּאֲרִיכִים הַקּוֹבַעַת מָתַי כָּל מְשִׁימַת נִקּוּי תְּבֻצַּע.",
             definitionNative = "Таблица дат, что определяет, когда выполнят каждую задачу по уборке.",
@@ -178,7 +178,7 @@ object WordDataHebrewCleaningL4 {
         ),
         WordEntity(
             id = 171615, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_contracts", transliteration = "se'if knasot",
+            pos = "phrase", semanticGroup = "cleaning_contracts",
             original = "סְעִיף קְנָסוֹת", translation = "пункт о штрафных санкциях",
             definition = "תְּנַאי הַקּוֹבֵעַ סְכוּם תַּשְׁלוּם עִם אִחוּר אוֹ אִי-עֲמִידָה בְּתֶקֶן.",
             definitionNative = "Условие, что фиксирует сумму выплаты при задержке или отступлении от стандарта.",
@@ -189,7 +189,7 @@ object WordDataHebrewCleaningL4 {
         // ── cleaning_pro_standards (5 LEGENDARY) — профессиональные стандарты ──
         WordEntity(
             id = 171616, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_pro_standards", transliteration = "tiknei eichut ostraliyim",
+            pos = "phrase", semanticGroup = "cleaning_pro_standards",
             original = "תִּקְנֵי אִיכוּת אוֹסְטְרָלִיִּים", translation = "австралийские стандарты качества (AS/NZS)",
             definition = "אֹסֶף תִּקְנוֹת אִיכוּת מוּכָּרִים בִּמְדִינוֹת אוֹסְטְרַלְיָה וְנִיו זִילַנְד.",
             definitionNative = "Свод признанных норм качества, действующих в Австралии и Новой Зеландии.",
@@ -198,7 +198,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171614L, 171617L, 171618L, 171619L, 171620L, 171621L, 171622L, 171624L, 171625L)),
         WordEntity(
             id = 171617, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_pro_standards", transliteration = "hasmakhat operator",
+            pos = "phrase", semanticGroup = "cleaning_pro_standards",
             original = "הַסְמָכַת אוֹפֶרָטוֹר", translation = "аттестация оператора (на технике)",
             definition = "תְּעוּדָה רִשְׁמִית הַמַּכְשִׁירָה אִישׁ צֶוֶת לְהַפְעִיל מְכוֹנָה כְּבֵדָה.",
             definitionNative = "Официальный документ, разрешающий сотруднику управлять тяжёлой машиной.",
@@ -207,7 +207,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171616L, 171618L, 171619L, 171620L)),
         WordEntity(
             id = 171618, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_pro_standards", transliteration = "teken BICSc",
+            pos = "phrase", semanticGroup = "cleaning_pro_standards",
             original = "תֶּקֶן BICSc", translation = "стандарт BICSc (британский институт клининга)",
             definition = "מַעֲרֶכֶת תְּקָנוֹת מִקְצוֹעִיָּה שֶׁל הַמּוֹסָד הַבְּרִיטִי לְעוֹבְדֵי נִקּוּי.",
             definitionNative = "Профессиональный свод правил британского института уборщиков.",
@@ -216,7 +216,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171616L, 171617L, 171619L, 171620L)),
         WordEntity(
             id = 171619, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_pro_standards", transliteration = "teken EN 13549",
+            pos = "phrase", semanticGroup = "cleaning_pro_standards",
             original = "תֶּקֶן EN 13549", translation = "европейский стандарт EN 13549 (методы оценки уборки)",
             definition = "תֶּקֶן אֵירוֹפִּי הַקּוֹבֵעַ שִׁיטוֹת לִמְדִידַת אֵיכוּת תּוֹצְאוֹת נִקּוּי.",
             definitionNative = "Европейская норма, что задаёт методы измерения качества результатов уборки.",
@@ -225,7 +225,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171616L, 171617L, 171618L, 171620L)),
         WordEntity(
             id = 171620, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_pro_standards", transliteration = "tag GS-37 shel grin sil",
+            pos = "phrase", semanticGroup = "cleaning_pro_standards",
             original = "תָּג GS-37 שֶׁל גְּרִין סִיל", translation = "сертификат GS-37 от Green Seal (эко)",
             definition = "תְּעוּדָה אֶקוֹלוֹגִית אֲמֶרִיקָאִית לַמּוּצְרֵי נִקּוּי בְּטוּחֵי סְבִיבָה.",
             definitionNative = "Американский экосертификат для безопасных для среды чистящих продуктов.",
@@ -236,7 +236,7 @@ object WordDataHebrewCleaningL4 {
         // ── cleaning_business_ops (5 LEGENDARY) — бизнес-операции ──
         WordEntity(
             id = 171621, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_business_ops", transliteration = "tamkhur lefi meter ravua",
+            pos = "phrase", semanticGroup = "cleaning_business_ops",
             original = "תַּמְחוּר לְפִי מֶטֶר רָבוּעַ", translation = "тарификация по квадратному метру",
             definition = "שִׁיטַת חִישּׁוּב מְחִיר לְפִי שֶׁטַח הָרִצְפָּה הַטָּעוּן נִקּוּי.",
             definitionNative = "Метод расчёта цены по площади пола, требующего уборки.",
@@ -245,7 +245,7 @@ object WordDataHebrewCleaningL4 {
         ),
         WordEntity(
             id = 171622, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_business_ops", transliteration = "model manui khodshi",
+            pos = "phrase", semanticGroup = "cleaning_business_ops",
             original = "מוֹדֵל מָנוּי חוֹדְשִׁי", translation = "модель подписки (ежемесячная)",
             definition = "סִדּוּר תַּשְׁלוּם קָבוּעַ בּוֹ הַלָּקוֹחַ מְשַׁלֵּם סְכוּם זֵהֶה כָּל חֹדֶשׁ.",
             definitionNative = "Постоянная схема оплаты, при которой клиент платит одинаковую сумму каждый месяц.",
@@ -254,7 +254,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171621L, 171623L, 171624L, 171625L)),
         WordEntity(
             id = 171623, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_business_ops", transliteration = "portfolio lakokhot",
+            pos = "phrase", semanticGroup = "cleaning_business_ops",
             original = "פּוֹרְטְפוֹלְיוֹ לָקוֹחוֹת", translation = "портфолио клиентов (для тендера)",
             definition = "אֹסֶף הִישֵּׂגֵי עָבָר עִם לְקוֹחוֹת שׁוֹנִים לְהוֹכָחַת מִקְצוֹעִיּוּת.",
             definitionNative = "Подборка прежних достижений с разными заказчиками для подтверждения уровня.",
@@ -263,7 +263,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171611L, 171614L, 171616L, 171618L, 171619L, 171620L, 171621L, 171622L, 171624L, 171625L)),
         WordEntity(
             id = 171624, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_business_ops", transliteration = "toranut mishmarot",
+            pos = "phrase", semanticGroup = "cleaning_business_ops",
             original = "תּוֹרָנוּת מִשְׁמָרוֹת", translation = "сменный график персонала",
             definition = "סִדּוּר חִלּוּפֵי עוֹבְדִים לְפִי שָׁעוֹת בּוֹקֶר, צָהֳרַיִם וְלַיְלָה.",
             definitionNative = "Расписание сменных бригад на утренние, дневные и ночные часы.",
@@ -272,7 +272,7 @@ object WordDataHebrewCleaningL4 {
          fillInBlankExclusions = listOf(171614L, 171621L, 171622L, 171623L, 171625L)),
         WordEntity(
             id = 171625, setId = 1716, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "cleaning_business_ops", transliteration = "omed avoda lefi sha'a",
+            pos = "phrase", semanticGroup = "cleaning_business_ops",
             original = "אוֹמֶד עֲבוֹדָה לְפִי שָׁעָה", translation = "почасовая оценка трудозатрат",
             definition = "חִישּׁוּב מָסְפַּר שְׁעוֹת אָדָם הַנִּדְרָשׁ לְהַשְׁלָמַת מְשִׁימָה מֻגְדֶּרֶת.",
             definitionNative = "Подсчёт количества человеко-часов, нужных для выполнения заданной задачи.",

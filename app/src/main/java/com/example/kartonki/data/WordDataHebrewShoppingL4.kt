@@ -54,7 +54,7 @@ object WordDataHebrewShoppingL4 {
         // ── shopping_ecommerce (5) — все EPIC ─────────────────────────────────
         WordEntity(
             id = 179201, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_ecommerce", transliteration = "машпех сгира",
+            pos = "phrase", semanticGroup = "shopping_ecommerce",
             original = "מַשְׁפֵּךְ סְגִירָה", translation = "воронка оформления заказа",
             definition = "סִדְרַת שְׁלַבִּים שֶׁעוֹבֵר הַגּוֹלֵשׁ מֵהַדַּף הָרִאשׁוֹן עַד תַּשְׁלוּם.",
             definitionNative = "Цепочка шагов от первой страницы до момента оплаты на сайте.",
@@ -63,7 +63,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179202L, 179203L, 179204L)),
         WordEntity(
             id = 179202, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_ecommerce", transliteration = "саль натуш",
+            pos = "phrase", semanticGroup = "shopping_ecommerce",
             original = "סַל נָטוּשׁ", translation = "брошенная корзина",
             definition = "מַצָּב שֶׁבּוֹ הַגּוֹלֵשׁ הוֹסִיף מוּצָרִים אַךְ עָזַב לִפְנֵי הַתַּשְׁלוּם.",
             definitionNative = "Состояние, когда товары добавлены, но оплата так и не прошла.",
@@ -72,7 +72,7 @@ object WordDataHebrewShoppingL4 {
         ),
         WordEntity(
             id = 179203, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_ecommerce", transliteration = "яхас хашлама",
+            pos = "phrase", semanticGroup = "shopping_ecommerce",
             original = "יַחַס הַשְׁלָמָה", translation = "коэффициент завершения",
             definition = "אָחוּז הַגּוֹלְשִׁים שֶׁמְּסַיְּמִים אֶת הַתַּהֲלִיךְ עַד הַסּוֹף בְּלִי לִנְטֹשׁ.",
             definitionNative = "Доля посетителей, доводящих процесс до конца без выхода.",
@@ -81,7 +81,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179201L, 179202L, 179204L)),
         WordEntity(
             id = 179204, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_ecommerce", transliteration = "мерказ шинуа",
+            pos = "phrase", semanticGroup = "shopping_ecommerce",
             original = "מֶרְכַּז שִׁנּוּעַ", translation = "центр выполнения заказов",
             definition = "מִתְקָן גָּדוֹל שֶׁבּוֹ אוֹסְפִים, אוֹרְזִים וּמְפַזְּרִים חֲבִילוֹת לְכָל קָצֶה.",
             definitionNative = "Большой комплекс, где собирают, упаковывают и развозят посылки.",
@@ -90,7 +90,7 @@ object WordDataHebrewShoppingL4 {
         ),
         WordEntity(
             id = 179205, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_ecommerce", transliteration = "дропшипинг",
+            pos = "noun", semanticGroup = "shopping_ecommerce",
             original = "דְּרוֹפְּשִׁיפִּינְג", translation = "дроп-шиппинг",
             definition = "מוֹדֶל שֶׁבּוֹ הַחֲנוּת הַוִּירְטוּאָלִית מוֹכֶרֶת בְּלִי לְהַחֲזִיק מְלַאי בְּעַצְמָהּ.",
             definitionNative = "Модель, в которой онлайн-точка продаёт без собственных запасов.",
@@ -101,7 +101,7 @@ object WordDataHebrewShoppingL4 {
         // ── shopping_supply (5) — все EPIC ────────────────────────────────────
         WordEntity(
             id = 179206, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_supply", transliteration = "хеврат халука",
+            pos = "phrase", semanticGroup = "shopping_supply",
             original = "חֶבְרַת חֲלוּקָה", translation = "оптовая компания",
             definition = "תַּאֲגִיד הַמּוֹכֵר כַּמֻּיּוֹת גְּדוֹלוֹת לַחֲנוּיוֹת קְטַנּוֹת בְּמוֹדֶל B2B.",
             definitionNative = "Корпорация, продающая большие партии магазинам по модели B2B.",
@@ -110,7 +110,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179207L, 179208L, 179209L, 179210L)),
         WordEntity(
             id = 179207, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_supply", transliteration = "мафиц",
+            pos = "noun", semanticGroup = "shopping_supply",
             original = "מָפִיץ", translation = "дистрибьютор",
             definition = "גּוֹרֵם רִשְׁמִי שֶׁמַּעֲבִיר אֶת מוּצְרֵי הַיַּצְרָן לַחֲנוּיוֹת בְּאֵזוֹר מֻגְדָּר.",
             definitionNative = "Официальный посредник, доносящий товары производителя до магазинов.",
@@ -119,7 +119,7 @@ object WordDataHebrewShoppingL4 {
         ),
         WordEntity(
             id = 179208, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_supply", transliteration = "ротацйат ихсун",
+            pos = "phrase", semanticGroup = "shopping_supply",
             original = "רוֹטַצְיַת אִחְסוּן", translation = "оборачиваемость склада",
             definition = "קֶצֶב הַחְלָפַת הַסְּחוֹרוֹת בַּמַּחְסָן בִּפְרָק זְמַן קָבוּעַ.",
             definitionNative = "Скорость, с которой запасы на складе сменяются за единицу времени.",
@@ -128,7 +128,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179206L, 179209L, 179210L)),
         WordEntity(
             id = 179209, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_supply", transliteration = "аспака рцуфа",
+            pos = "phrase", semanticGroup = "shopping_supply",
             original = "אַסְפָּקָה רְצוּפָה", translation = "поставка точно в срок",
             definition = "שִׁיטָה שֶׁבָּהּ הַסְּחוֹרָה מַגִּיעָה בְּדִיּוּק בָּרֶגַע שֶׁבּוֹ צְרִיכִים אוֹתָהּ.",
             definitionNative = "Метод, при котором товар приходит ровно тогда, когда требуется.",
@@ -137,7 +137,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179206L, 179208L, 179210L)),
         WordEntity(
             id = 179210, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_supply", transliteration = "maarekhet hakhzarot",
+            pos = "phrase", semanticGroup = "shopping_supply",
             original = "מַעֲרֶכֶת הַחְזָרוֹת", translation = "система возвратов товара",
             definition = "תַּהֲלִיךְ מְסֻדָּר שֶׁל קַבָּלָה, בְּדִיקָה וּמִיוּן שֶׁל סְחוֹרָה שֶׁלָּקוֹחוֹת מַחְזִירִים.",
             definitionNative = "Упорядоченный процесс приёма, проверки и сортировки товара, возвращённого клиентами.",
@@ -148,7 +148,7 @@ object WordDataHebrewShoppingL4 {
         // ── shopping_analytics (5) — 3 EPIC + 2 LEGENDARY ─────────────────────
         WordEntity(
             id = 179211, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_analytics", transliteration = "аналитикат атар",
+            pos = "phrase", semanticGroup = "shopping_analytics",
             original = "אֲנָלִיטִיקַת אֲתָר", translation = "веб-аналитика",
             definition = "אִסּוּף וּמְעַקָּב שֶׁל נְתוּנֵי הָאַתָר כְּדֵי לְהָבִין הִתְנַהֲגוּת גּוֹלְשִׁים.",
             definitionNative = "Сбор данных сайта для понимания того, как ведут себя посетители.",
@@ -157,7 +157,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179212L, 179213L, 179215L)),
         WordEntity(
             id = 179212, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_analytics", transliteration = "эрех лехоль хахаим",
+            pos = "phrase", semanticGroup = "shopping_analytics",
             original = "עֵרֶךְ לְכֹל הַחַיִּים", translation = "пожизненная ценность клиента",
             definition = "סַךְ הָרֶוַח הַצָּפוּי מֵאָדָם אֶחָד לְאֹרֶךְ כָּל הַשָּׁנִים שֶׁהוּא קוֹנֶה.",
             definitionNative = "Ожидаемая прибыль от одного человека за все годы покупок.",
@@ -166,7 +166,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179211L, 179213L, 179215L)),
         WordEntity(
             id = 179213, setId = 1792, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "shopping_analytics", transliteration = "тнуат мевакрим",
+            pos = "phrase", semanticGroup = "shopping_analytics",
             original = "תְּנוּעַת מְבַקְּרִים", translation = "поток посетителей",
             definition = "מִסְפַּר הָאֲנָשִׁים הָעוֹבְרִים אוֹ נִכְנָסִים לְמָקוֹם בְּמֶשֶׁךְ זְמַן מְסֻיָּם.",
             definitionNative = "Число людей, проходящих или входящих в место за единицу времени.",
@@ -175,7 +175,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179211L, 179212L, 179215L)),
         WordEntity(
             id = 179214, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_analytics", transliteration = "планограма",
+            pos = "noun", semanticGroup = "shopping_analytics",
             original = "פְּלָנוֹגְרָמָה", translation = "планограмма",
             definition = "תָּכְנִית גְּרָפִית הַמַּגְדִּירָה בִּמְדֻיָּק הֵיכָן יוּצַב כָּל מוּצָר עַל הַמַּדָּף.",
             definitionNative = "Графический план, точно указывающий место каждого товара на полке.",
@@ -184,7 +184,7 @@ object WordDataHebrewShoppingL4 {
         ),
         WordEntity(
             id = 179215, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_analytics", transliteration = "мешех шехут",
+            pos = "phrase", semanticGroup = "shopping_analytics",
             original = "מֶשֶׁךְ שְׁהוּת", translation = "время задержки на странице",
             definition = "פֶּרֶק הַזְּמַן שֶׁבּוֹ הַגּוֹלֵשׁ נִשְׁאָר בְּדַף אֶחָד לִפְנֵי שֶׁהוּא עוֹבֵר הָלְאָה.",
             definitionNative = "Сколько посетитель остаётся на одной странице, прежде чем уйти.",
@@ -195,7 +195,7 @@ object WordDataHebrewShoppingL4 {
         // ── shopping_behavior (5) — все LEGENDARY ─────────────────────────────
         WordEntity(
             id = 179216, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_behavior", transliteration = "рхиша дахафит",
+            pos = "phrase", semanticGroup = "shopping_behavior",
             original = "רְכִישָׁה דַּחֲפִית", translation = "импульсивная покупка",
             definition = "תַּגְמוּל מִיָּדִי שֶׁמַּשִּׂיגִים בִּלְקִיחָה לֹא מְתֻכְנֶנֶת שֶׁל פָּרִיט.",
             definitionNative = "Мгновенное удовольствие от незапланированного захвата вещи.",
@@ -204,7 +204,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179217L, 179218L, 179219L, 179220L)),
         WordEntity(
             id = 179217, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_behavior", transliteration = "иткашрут ригшит",
+            pos = "phrase", semanticGroup = "shopping_behavior",
             original = "הִתְקַשְּׁרוּת רִגְשִׁית", translation = "лояльность бренду",
             definition = "קֶשֶׁר עָמֹק בֵּין הַצַּרְכָן לִשְׁמוֹ שֶׁל יַצְרָן מְסֻיָּם הַחוֹרֵג מֵרַצְיוֹנָל.",
             definitionNative = "Глубокая привязка покупателя к одному имени производителя сверх логики.",
@@ -213,7 +213,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179216L, 179218L, 179219L, 179220L)),
         WordEntity(
             id = 179218, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_behavior", transliteration = "асиметрйат меда",
+            pos = "phrase", semanticGroup = "shopping_behavior",
             original = "אֲסִימֶטְרִיַּת מֵידָע", translation = "информационная асимметрия",
             definition = "פַּעַר בֵּין הַיֶּדַע שֶׁיֵּשׁ לַמּוֹכֵר עַל הַסְּחוֹרָה לְזֶה שֶׁל הַקּוֹנֶה.",
             definitionNative = "Разрыв между знанием продавца о товаре и знанием покупателя о нём.",
@@ -222,7 +222,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179216L, 179217L, 179219L, 179220L)),
         WordEntity(
             id = 179219, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_behavior", transliteration = "оген хатхала",
+            pos = "phrase", semanticGroup = "shopping_behavior",
             original = "עֹגֶן הַתְחָלָה", translation = "якорная цена",
             definition = "סְכוּם רִאשׁוֹן שֶׁמּוּצָג לַקּוֹנֶה וּמְעַצֵּב אֶת תְּחוּשַׁת הַשּׁוֹוִי שֶׁלּוֹ.",
             definitionNative = "Первая увиденная сумма, которая задаёт ощущение справедливой цены.",
@@ -231,7 +231,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179216L, 179217L, 179218L, 179220L)),
         WordEntity(
             id = 179220, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_behavior", transliteration = "эфект питайон",
+            pos = "phrase", semanticGroup = "shopping_behavior",
             original = "אֶפֶקְט פִּתָּיוֹן", translation = "эффект приманки",
             definition = "טַעֲנָה שִׁוּוּקִית שֶׁמּוֹסִיפָה אֶפְשָׁרוּת גְּרוּעָה כְּדֵי לְהַבְלִיט שְׁתַּיִם אֲחֵרוֹת.",
             definitionNative = "Маркетинговый ход: третий невыгодный вариант делает соседние ярче.",
@@ -242,7 +242,7 @@ object WordDataHebrewShoppingL4 {
         // ── shopping_premium (5) — все LEGENDARY ──────────────────────────────
         WordEntity(
             id = 179221, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_premium", transliteration = "муцар илит",
+            pos = "phrase", semanticGroup = "shopping_premium",
             original = "מוּצָר עִלִּית", translation = "товар класса люкс",
             definition = "פָּרִיט יָקָר בְּמְיֻחָד שֶׁפּוֹנֶה לְשִׁכְבָה הַעַשִּׁירָה בְּיוֹתֵר שֶׁל הַשּׁוּק.",
             definitionNative = "Особенно дорогой предмет, нацеленный на самую состоятельную аудиторию.",
@@ -251,7 +251,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179222L, 179223L, 179224L, 179225L)),
         WordEntity(
             id = 179222, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_premium", transliteration = "лейбель меацев",
+            pos = "phrase", semanticGroup = "shopping_premium",
             original = "לֵייבֶּל מְעַצֵּב", translation = "дизайнерская марка",
             definition = "סִימָן רִשְׁמִי שֶׁל יוֹצֵר אָפְנָה בּוֹדֵד הַחוֹרֵט אֶת שְׁמוֹ עַל כָּל פָּרִיט.",
             definitionNative = "Метка одиночного модельера, выгравированная на каждой его вещи.",
@@ -260,7 +260,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179221L, 179223L, 179224L, 179225L)),
         WordEntity(
             id = 179223, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_premium", transliteration = "махадура мугбелет",
+            pos = "phrase", semanticGroup = "shopping_premium",
             original = "מַהֲדוּרָה מֻגְבֶּלֶת", translation = "лимитированный выпуск",
             definition = "סִדְרַת יִחִידוֹת קְטַנָּה שֶׁל פָּרִיט אַחֲרֵי שֶׁמַּפְסִיקִים אֶת הַיִּצּוּר.",
             definitionNative = "Малая серия предмета, после которой производство останавливают.",
@@ -269,7 +269,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179221L, 179222L, 179224L, 179225L)),
         WordEntity(
             id = 179224, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_premium", transliteration = "тефер аль мида",
+            pos = "phrase", semanticGroup = "shopping_premium",
             original = "תֶּפֶר עַל מִדָּה", translation = "индивидуальный пошив",
             definition = "עֲבוֹדַת חֲיָּט שֶׁמַּתְאִימָה אֶת הַבֶּגֶד בְּדִיּוּק לְצוּרַת הַגּוּף.",
             definitionNative = "Работа портного с подгонкой одежды строго под фигуру заказчика.",
@@ -278,7 +278,7 @@ object WordDataHebrewShoppingL4 {
          fillInBlankExclusions = listOf(179221L, 179222L, 179223L, 179225L)),
         WordEntity(
             id = 179225, setId = 1792, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "shopping_premium", transliteration = "консьерж иши",
+            pos = "phrase", semanticGroup = "shopping_premium",
             original = "קוֹנְסְיֶרְז' אִישִׁי", translation = "консьерж-сервис",
             definition = "לִוּוּי בְּלָעֳדִי שֶׁל גּוֹרֵם פְּרָטִי הַמְּסַדֵּר כָּל בַּקָּשָׁה שֶׁל הַלָּקוֹחַ הַעַשִּׁיר.",
             definitionNative = "Эксклюзивный спутник, исполняющий любую просьбу богатого клиента.",

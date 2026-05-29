@@ -30,7 +30,7 @@ object WordDataHebrewBatch6 {
 
         WordEntity(
             id = 104101, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "kaduregel",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "כַּדּוּרֶגֶל", translation = "футбол",
             definition = "מִשְׂחַק קְבוּצָתִי שֶׁבּוֹ מְנַסִּים לְהַכְנִיס כַּדּוּר לִשְׁעַר הַיְּרִיב.",
             definitionNative = "Командная игра, в которой нужно забить мяч в ворота соперника.",
@@ -39,7 +39,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104102L, 104103L, 104105L, 104106L, 104107L, 104113L, 104114L, 104115L, 104117L, 104118L, 104125L)),
         WordEntity(
             id = 104102, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "metikha",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "מְתִיחָה", translation = "растяжка",
             definition = "תְּנוּעָה שֶׁמַּאֲרִיכָה שְׁרִירִים לְפְנֵי אוֹ אַחֲרֵי אִמּוּן.",
             definitionNative = "Движение, растягивающее мышцы до или после тренировки.",
@@ -48,7 +48,7 @@ object WordDataHebrewBatch6 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104103, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "ritza",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "רִיצָה", translation = "бег",
             definition = "פְּעֻלַּת תְּנוּעָה מְהִירָה עַל רַגְלַיִם לְשֵׁם כּוֹשֵׁר אוֹ תַּחֲרוּת.",
             definitionNative = "Быстрое передвижение на ногах для фитнеса или соревнований.",
@@ -57,7 +57,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104101L, 104102L, 104105L, 104106L, 104107L, 104108L, 104113L, 104114L, 104115L, 104117L, 104118L, 104125L)),
         WordEntity(
             id = 104104, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_facilities", transliteration = "makhon kosher",
+            pos = "noun", semanticGroup = "sport_facilities",
             original = "מַכּוֹן כּוֹשֵׁר", translation = "тренажёрный зал",
             definition = "מְקוֹם מְצֻיָּד בְּמַכְשִׁירֵי אִמּוּן לְשֵׁם שִׁיפּוּר הַכּוֹשֵׁר הַגּוּפָנִי.",
             definitionNative = "Место с тренажёрами для улучшения физической формы.",
@@ -66,7 +66,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104106L, 104108L, 104116L)),
         WordEntity(
             id = 104105, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "kadursal",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "כַּדּוּרְסָל", translation = "баскетбол",
             definition = "מִשְׂחַק קְבוּצָתִי שֶׁבּוֹ מְנַסִּים לְהַכְנִיס כַּדּוּר לְסַל הַיְּרִיב.",
             definitionNative = "Командная игра, в которой нужно забросить мяч в корзину соперника.",
@@ -75,7 +75,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104106L, 104107L, 104113L, 104114L, 104115L, 104117L, 104118L, 104125L)),
         WordEntity(
             id = 104106, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "yoga",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "יוֹגָה", translation = "йога",
             definition = "שִׁיטַת אִמּוּן הַמְּשַׁלֶּבֶת תַּנּוּחוֹת, נְשִׁימָה וּמֶדִיטַצְיָה.",
             definitionNative = "Практика, сочетающая позы, дыхание и медитацию.",
@@ -84,7 +84,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104105L, 104107L, 104113L, 104114L, 104115L, 104117L, 104118L, 104125L)),
         WordEntity(
             id = 104107, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "merots",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "מֵרוֹץ", translation = "забег, гонка",
             definition = "תַּחֲרוּת מְהִירוּת בֵּין מִשְׁתַּתְּפִים לְהַגִּיע לַיַּעַד רִאשׁוֹן.",
             definitionNative = "Соревнование на скорость между участниками.",
@@ -93,7 +93,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104105L, 104106L, 104113L, 104114L, 104115L, 104117L, 104118L, 104125L)),
         WordEntity(
             id = 104108, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_training", transliteration = "hit'amnut",
+            pos = "noun", semanticGroup = "sport_training",
             original = "הִתְאַמְּנוּת", translation = "тренировка",
             definition = "פְּעִילוּת גּוּפָנִית מְסֻדֶּרֶת לְשֵׁם שִׁיפּוּר הַכּוֹשֵׁר.",
             definitionNative = "Систематическая физическая активность для улучшения формы.",
@@ -102,7 +102,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104103L, 104106L, 104111L, 104118L, 104119L, 104122L)),
         WordEntity(
             id = 104109, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_people", transliteration = "me'amen",
+            pos = "noun", semanticGroup = "sport_people",
             original = "מְאַמֵּן", translation = "тренер",
             definition = "אִישׁ מִקְצוֹעַ הַמַּדְרִיךְ וּמְפַתֵּחַ כּוֹשֵׁר שֶׁל סְפּוֹרְטַאי.",
             definitionNative = "Профессионал, который тренирует и развивает спортсмена.",
@@ -110,7 +110,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "מְאַמֵּן дал ему еженедельный план тренировок."),
         WordEntity(
             id = 104110, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_equipment", transliteration = "mashkolet",
+            pos = "noun", semanticGroup = "sport_equipment",
             original = "מַשְׁקֹלֶת", translation = "гантель",
             definition = "כְּלִי אִמּוּן כָּבֵד הַמֻּחְזָק בַּיָּד לְחִיזּוּק שְׂרִירִים.",
             definitionNative = "Тяжёлый спортивный снаряд, удерживаемый в руке для укрепления мышц.",
@@ -119,7 +119,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104111, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_training", transliteration = "ke'irul",
+            pos = "noun", semanticGroup = "sport_training",
             original = "קֵירוּר", translation = "заминка, охлаждение",
             definition = "תַּרְגִילֵי הַרְגָּעָה לְאַחַר אִמּוּן לְמֶנִּיעַת כְּאֵבֵי שְׂרִירִים.",
             definitionNative = "Упражнения после тренировки для предотвращения мышечных болей.",
@@ -128,7 +128,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104102L, 104108L, 104119L, 104122L)),
         WordEntity(
             id = 104112, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_body", transliteration = "sririm",
+            pos = "noun", semanticGroup = "sport_body",
             original = "שְׂרִירִים", translation = "мышцы",
             definition = "רְקָמוֹת גּוּפָנִיּוֹת הָאַחְרָאִיּוֹת עַל תְּנוּעָה וְכֹחַ.",
             definitionNative = "Ткани тела, отвечающие за движение и силу.",
@@ -137,7 +137,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104113, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "takharut",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "תַּחֲרוּת", translation = "соревнование",
             definition = "אֵירוּעַ שֶׁבּוֹ מִתְחָרִים מִשְׁתַּתְּפִים לְהַשְׂגַת הַתּוֹצָאָה הַטּוֹבָה בְּיוֹתֵר.",
             definitionNative = "Мероприятие, в котором участники соревнуются за лучший результат.",
@@ -146,7 +146,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104105L, 104106L, 104107L, 104114L, 104115L, 104117L, 104118L, 104120L, 104125L)),
         WordEntity(
             id = 104114, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "kaduraf",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "כַּדּוּרְעָף", translation = "волейбол",
             definition = "מִשְׂחַק קְבוּצָתִי שֶׁבּוֹ מַעֲבִירִים כַּדּוּר מֵעַל רֶשֶׁת לְצַד הַיְּרִיב.",
             definitionNative = "Командная игра, в которой мяч перебивают через сетку на сторону соперника.",
@@ -155,7 +155,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104105L, 104106L, 104107L, 104113L, 104115L, 104117L, 104118L, 104125L)),
         WordEntity(
             id = 104115, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "tenis",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "טֶנִיס", translation = "теннис",
             definition = "מִשְׂחַק שֶׁבּוֹ מַכִּים בְּכַדּוּר בְּמַחְבֵּט מֵעַל רֶשֶׁת.",
             definitionNative = "Игра, в которой ракеткой бьют по мячу через сетку.",
@@ -164,7 +164,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104105L, 104106L, 104107L, 104113L, 104114L, 104117L, 104118L, 104125L)),
         WordEntity(
             id = 104116, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_facilities", transliteration = "migrash",
+            pos = "noun", semanticGroup = "sport_facilities",
             original = "מִגְרָשׁ", translation = "площадка, корт, поле",
             definition = "שֶׁטַח מְיֻעָד לְמִשְׂחָקֵי כַּדּוּר אוֹ פְּעִילוּת סְפּוֹרְטִיבִית.",
             definitionNative = "Площадь, предназначенная для игр с мячом или спортивной активности.",
@@ -173,7 +173,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104117, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "kadur yad",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "כַּדּוּר יָד", translation = "гандбол",
             definition = "מִשְׂחַק קְבוּצָתִי שֶׁבּוֹ זוֹרְקִים כַּדּוּר בַּיָּד לִשְׁעַר הַיְּרִיב.",
             definitionNative = "Командная игра, в которой бросают мяч руками в ворота соперника.",
@@ -182,7 +182,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104105L, 104106L, 104107L, 104113L, 104114L, 104115L, 104118L, 104125L)),
         WordEntity(
             id = 104118, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "skhiya",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "שְׁחִייָה", translation = "плавание",
             definition = "פְּעִילוּת סְפּוֹרְטִיבִית בְּמַיִם, נָפוֹצָה כְּבִּידוּר וּכְסְפּוֹרְט תַּחֲרוּתִי.",
             definitionNative = "Спортивная активность в воде, распространённая как отдых и соревновательный спорт.",
@@ -190,7 +190,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Ежедневное שְׁחִייָה в бассейне укрепляет тело и лёгкие.", fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104105L, 104106L, 104107L, 104113L, 104114L, 104115L, 104117L, 104125L)),
         WordEntity(
             id = 104119, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_training", transliteration = "itsa",
+            pos = "noun", semanticGroup = "sport_training",
             original = "אִיצָּה", translation = "ускорение, спринт",
             definition = "הַגְבָּרַת מְהִירוּת הַרִיצָה לְמֶשֶׁךְ זְמַן קָצָר.",
             definitionNative = "Увеличение скорости бега на короткое время.",
@@ -199,7 +199,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104108L, 104111L, 104122L)),
         WordEntity(
             id = 104120, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_competition", transliteration = "khatsi gmar",
+            pos = "noun", semanticGroup = "sport_competition",
             original = "חֲצִי גְּמָר", translation = "полуфинал",
             definition = "שַׁלְבֵּב הַתַּחֲרוּת שֶׁלִּפְנֵי הַגְּמָר, שֶׁבּוֹ מִתְחָרִים הַמְּשַׁתְּפִים הָעוֹלִים לַגְּמָר.",
             definitionNative = "Этап соревнования перед финалом, в котором определяются финалисты.",
@@ -208,7 +208,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104113L)),
         WordEntity(
             id = 104121, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_team", transliteration = "nivkheret",
+            pos = "noun", semanticGroup = "sport_team",
             original = "נִבְחֶרֶת", translation = "сборная (команда)",
             definition = "קְבוּצַת שַׂחְקָנִים הַנִּבְחֶרֶת לְיַיצֵּג אֶת הַמְּדִינָה אוֹ הָעִיר.",
             definitionNative = "Команда игроков, отобранных для представления страны или города.",
@@ -216,7 +216,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Он играл в נִבְחֶרֶת национальной сборной три года."),
         WordEntity(
             id = 104122, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_training", transliteration = "hitkhamemut",
+            pos = "noun", semanticGroup = "sport_training",
             original = "הִתְחַמְּמוּת", translation = "разминка",
             definition = "תַּרְגִּילִים קַלִּים לִפְנֵי הָאִמּוּן לְהַכְנַת הַגּוּף לְמַאֲמָץ.",
             definitionNative = "Лёгкие упражнения перед тренировкой для подготовки тела к нагрузке.",
@@ -225,7 +225,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104102L, 104108L, 104111L, 104119L)),
         WordEntity(
             id = 104123, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_football", transliteration = "penalti",
+            pos = "noun", semanticGroup = "sport_football",
             original = "פֶּנָלְטִי", translation = "пенальти",
             definition = "בְּעִיטַת עֹנְשִׁין מִנְּקוּדָה קְבוּעָה כְּלַפֵּי שַׁעַר הַיְּרִיב.",
             definitionNative = "Штрафной удар с фиксированной точки в сторону ворот соперника.",
@@ -234,7 +234,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104124, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_fitness", transliteration = "kosher gufani",
+            pos = "noun", semanticGroup = "sport_fitness",
             original = "כּוֹשֵׁר גּוּפָנִי", translation = "физическая форма",
             definition = "מַצָּב הַגּוּף מִבְּחִינַת הַיְכֹלֶת הַגּוּפָנִית וְהַבְּרִיאוּת הַכְּלָלִית.",
             definitionNative = "Состояние тела с точки зрения физических возможностей и общего здоровья.",
@@ -243,7 +243,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104125, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "sport_basics", transliteration = "ragbi",
+            pos = "noun", semanticGroup = "sport_basics",
             original = "רַגְבִּי", translation = "регби",
             definition = "מִשְׂחַק קְבוּצָתִי שֶׁבּוֹ נוֹשְׂאִים וְזוֹרְקִים כַּדּוּר אֵלִיפְּטִי לִזְכּוֹת בְּנְקוּדוֹת.",
             definitionNative = "Командная игра, в которой несут и бросают эллиптический мяч для набора очков.",
@@ -254,7 +254,7 @@ object WordDataHebrewBatch6 {
 
         WordEntity(
             id = 104201, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "restaurant_basics", transliteration = "tafrit",
+            pos = "noun", semanticGroup = "restaurant_basics",
             original = "תַּפְרִיט", translation = "меню",
             definition = "רְשִׁימַת הַמָּנוֹת וְהַמִּשְׁקָאוֹת הַמֻּצָּעִים בְּמִסְעָדָה אוֹ בֵּית קָפֶה.",
             definitionNative = "Список блюд и напитков, предлагаемых в ресторане или кафе.",
@@ -263,7 +263,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104204L, 104205L, 104206L)),
         WordEntity(
             id = 104202, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "restaurant_people", transliteration = "meltsar",
+            pos = "noun", semanticGroup = "restaurant_people",
             original = "מֶלְצָר", translation = "официант",
             definition = "עוֹבֵד מִסְעָדָה הַמְּשָׁרֵת אֶת הַלָּקוֹחוֹת וּמֵבִיא אֶת הַמָּנוֹת.",
             definitionNative = "Работник ресторана, который обслуживает клиентов и приносит блюда.",
@@ -271,7 +271,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Мы подозвали מֶלְצָר, чтобы заказать основное блюдо."),
         WordEntity(
             id = 104203, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "restaurant_food", transliteration = "shnitsel",
+            pos = "noun", semanticGroup = "restaurant_food",
             original = "שְׁנִיצֶל", translation = "шницель",
             definition = "נְתַח בָּשָׂר דַּק הַמְּצֻפֶּה פֵּרוּרֵי לֶחֶם וּמְטֻגָּן בְּשֶׁמֶן.",
             definitionNative = "Тонкий кусок мяса в панировке, обжаренный на масле.",
@@ -280,7 +280,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104214L, 104216L, 104217L, 104221L, 104222L, 104223L)),
         WordEntity(
             id = 104204, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "restaurant_basics", transliteration = "mishke",
+            pos = "noun", semanticGroup = "restaurant_basics",
             original = "מִשְׁקֶה", translation = "напиток",
             definition = "נוֹזֵל הַמַּתְאִים לִשְׁתִיָּה, כְּגוֹן מַיִם, מִיץ אוֹ קָפֶה.",
             definitionNative = "Жидкость, пригодная для питья, например вода, сок или кофе.",
@@ -289,7 +289,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104201L, 104205L, 104206L, 104224L)),
         WordEntity(
             id = 104205, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "restaurant_basics", transliteration = "arukha",
+            pos = "noun", semanticGroup = "restaurant_basics",
             original = "אֲרוּחָה", translation = "еда, приём пищи",
             definition = "מַאֲכָלִים הַנֶּאֱכָלִים בְּיַחַד בְּזְמַן מְסֻיָּם כְּגוֹן אֲרוּחַת בֹּקֶר, צָהֳרַיִם אוֹ עֶרֶב.",
             definitionNative = "Еда, которую едят вместе в определённое время — завтрак, обед или ужин.",
@@ -298,7 +298,7 @@ object WordDataHebrewBatch6 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104206, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "restaurant_basics", transliteration = "tsalakhat",
+            pos = "noun", semanticGroup = "restaurant_basics",
             original = "צַלַּחַת", translation = "тарелка",
             definition = "כְּלִי אֲכִילָה שָׁטוּחַ שֶׁמְּשַׁמֵּשׁ לְהַגָּשַׁת אֹכֶל.",
             definitionNative = "Плоская посуда для подачи еды.",
@@ -307,7 +307,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104201L, 104203L, 104204L, 104205L, 104208L, 104221L)),
         WordEntity(
             id = 104207, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_courses", transliteration = "mana rishona",
+            pos = "noun", semanticGroup = "restaurant_courses",
             original = "מָנָה רִאשׁוֹנָה", translation = "закуска, первое блюдо",
             definition = "הַמָּנָה הַמּוּגֶשֶׁת רִאשׁוֹנָה לִפְנֵי הַמָּנָה הָעִיקָרִית.",
             definitionNative = "Блюдо, подаваемое первым, перед основным.",
@@ -316,7 +316,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104208L, 104209L, 104220L)),
         WordEntity(
             id = 104208, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_courses", transliteration = "mana ikrit",
+            pos = "noun", semanticGroup = "restaurant_courses",
             original = "מָנָה עִיקָרִית", translation = "основное блюдо",
             definition = "הַחֵלֶק הַמֶּרְכָּזִי שֶׁל הָאֲרוּחָה, בְּדֶרֶךְ כְּלָל בָּשָׂר, דָּג אוֹ צֶמֶח.",
             definitionNative = "Центральная часть еды — обычно мясо, рыба или растительное блюдо.",
@@ -325,7 +325,7 @@ object WordDataHebrewBatch6 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104209, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_courses", transliteration = "kinuakh",
+            pos = "noun", semanticGroup = "restaurant_courses",
             original = "קִינּוּחַ", translation = "десерт",
             definition = "מָנָה מְתוּקָה הַמּוּגֶשֶׁת בְּסוֹף הָאֲרוּחָה.",
             definitionNative = "Сладкое блюдо, подаваемое в конце еды.",
@@ -334,7 +334,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104210, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "restaurant_kosher", transliteration = "khalavi",
+            pos = "adjective", semanticGroup = "restaurant_kosher",
             original = "חֲלָבִי", translation = "молочный (кошерный)",
             definition = "מָאכָל הַמְּכִיל מוּצְרֵי חָלָב וְאֵינוֹ מְעֹרָב עִם בָּשָׂר לְפִי כַּשְׁרוּת.",
             definitionNative = "Еда, содержащая молочные продукты и не смешанная с мясом по законам кашрута.",
@@ -343,7 +343,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104211, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "restaurant_kosher", transliteration = "basari",
+            pos = "adjective", semanticGroup = "restaurant_kosher",
             original = "בָּשָׂרִי", translation = "мясной (кошерный)",
             definition = "מָאכָל הַמְּכִיל בָּשָׂר וְאֵינוֹ מְעֹרָב עִם חָלָב לְפִי כַּשְׁרוּת.",
             definitionNative = "Еда, содержащая мясо и не смешанная с молочными продуктами по законам кашрута.",
@@ -352,7 +352,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104212, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "restaurant_diet", transliteration = "tsimkhoni",
+            pos = "adjective", semanticGroup = "restaurant_diet",
             original = "צִמְחוֹנִי", translation = "вегетарианский",
             definition = "מָאכָל שֶׁאֵינוֹ מְכִיל בְּשַׂר אוֹ דָּגִים, אַךְ יָכוֹל לְכַלֵּל מוּצְרֵי חָלָב.",
             definitionNative = "Еда без мяса и рыбы, но может содержать молочные продукты.",
@@ -361,7 +361,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104210L, 104211L)),
         WordEntity(
             id = 104213, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_payment", transliteration = "tip",
+            pos = "noun", semanticGroup = "restaurant_payment",
             original = "טִיפּ", translation = "чаевые",
             definition = "תַּשְׁלוּם נוֹסָף שֶׁנּוֹתְנִים לְמֶלְצָר בְּהַכָּרַת תּוֹדָה עַל הַשֵּׁרוּת.",
             definitionNative = "Дополнительная плата, даваемая официанту в знак благодарности за обслуживание.",
@@ -370,7 +370,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104214, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "restaurant_food", transliteration = "khumus",
+            pos = "noun", semanticGroup = "restaurant_food",
             original = "חוּמּוּס", translation = "хумус",
             definition = "מָאכָל יִשְׂרְאֵלִי עֲשׂוּי מִגַּרְגְּרֵי קִטְנִיּוֹת טְחוּנִים עִם שֶׁמֶן זַיִת וּתְחִינָה.",
             definitionNative = "Израильское блюдо из перемолотого нута с оливковым маслом и тхиной.",
@@ -379,7 +379,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104203L, 104216L, 104217L, 104221L, 104222L, 104223L)),
         WordEntity(
             id = 104215, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_booking", transliteration = "hazmant makom",
+            pos = "noun", semanticGroup = "restaurant_booking",
             original = "הַזְמָנַת מָקוֹם", translation = "бронирование столика",
             definition = "הַזְמָנָה מֵרֹאשׁ שֶׁל שֻׁלְחָן בְּמִסְעָדָה לְזְמַן מְסֻיָּם.",
             definitionNative = "Заблаговременный заказ столика в ресторане на определённое время.",
@@ -388,7 +388,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104216, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_food", transliteration = "shemen zayit",
+            pos = "noun", semanticGroup = "restaurant_food",
             original = "שֶׁמֶן זֵית", translation = "оливковое масло",
             definition = "שֶׁמֶן הַמֻּפְלָשׁ מִזֵּיתִים, נָפוֹץ בַּמִּטְבָּח הַיִּשְׂרְאֵלִי וְהַיָּם-תִּיכוֹנִי.",
             definitionNative = "Масло, получаемое из оливок, широко используемое в израильской и средиземноморской кухне.",
@@ -397,7 +397,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104203L, 104214L, 104217L, 104221L, 104222L, 104223L)),
         WordEntity(
             id = 104217, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_food", transliteration = "basar takhun",
+            pos = "noun", semanticGroup = "restaurant_food",
             original = "בְּשַׂר טָחוּן", translation = "фарш, рубленое мясо",
             definition = "בָּשָׂר דַּק כָּתוּשׁ הַמְּשַׁמֵּשׁ לְהַכְנַת קְצִיצוֹת וּבּוּרְגֶּרִים.",
             definitionNative = "Мелко рубленое мясо для приготовления котлет, бургеров и других блюд.",
@@ -406,7 +406,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104203L, 104214L, 104216L, 104221L, 104222L, 104223L)),
         WordEntity(
             id = 104218, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "restaurant_cooking", transliteration = "tsalui",
+            pos = "adjective", semanticGroup = "restaurant_cooking",
             original = "צָלוּי", translation = "жареный на гриле, запечённый",
             definition = "מָאכָל שֶׁבֻּשַּׁל בְּחוּם יָשִׁיר אוֹ בַּתַּנּוּר עַד לְהַשְׁחָמָה.",
             definitionNative = "Еда, приготовленная на прямом огне или в духовке до подрумянивания.",
@@ -415,7 +415,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104219L)),
         WordEntity(
             id = 104219, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "restaurant_cooking", transliteration = "afui",
+            pos = "adjective", semanticGroup = "restaurant_cooking",
             original = "אָפוּי", translation = "запечённый, выпеченный",
             definition = "מָאכָל שֶׁהוּכַן בַּתַּנּוּר בְּחוּם יַבֵּשׁ.",
             definitionNative = "Еда, приготовленная в духовке в сухом жару.",
@@ -424,7 +424,7 @@ object WordDataHebrewBatch6 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104220, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_courses", transliteration = "mana ktana",
+            pos = "noun", semanticGroup = "restaurant_courses",
             original = "מָנָה קְטַנָּה", translation = "маленькая порция, тапас",
             definition = "מָנָה זְעִירָה לְנִיסָיוֹן אוֹ לְשִׁיתּוּף, לְרֹב מוּגֶשֶׁת בְּמִסְעָדוֹת סִגְנוֹן טַפַּס.",
             definitionNative = "Небольшая порция для пробы или совместного употребления, как правило в ресторанах в стиле тапас.",
@@ -433,7 +433,7 @@ object WordDataHebrewBatch6 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104221, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_food", transliteration = "shakshuka",
+            pos = "noun", semanticGroup = "restaurant_food",
             original = "שַׁקְשׁוּקָה", translation = "шакшука",
             definition = "מָאכָל מְסוֹרָתִי שֶׁל בֵּיצִים מְבֻשָּׁלוֹת בְּרֹטֶב עַגְבָנִיּוֹת וּפְלָפְלִים.",
             definitionNative = "Традиционное блюдо из яиц, поджаренных в томатном соусе с перцем.",
@@ -442,7 +442,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104203L, 104214L, 104216L, 104217L, 104222L, 104223L)),
         WordEntity(
             id = 104222, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "restaurant_food", transliteration = "falafel",
+            pos = "noun", semanticGroup = "restaurant_food",
             original = "פָּלָאפֶל", translation = "фалафель",
             definition = "כַּדּוּרֵי חֻמּוּס אוֹ פּוּל טְחוּנִים וּמְטֻגָּנִים, מָאכָל יִשְׂרְאֵלִי קְלָסִי.",
             definitionNative = "Жареные шарики из молотого нута или фасоли — классическое израильское блюдо.",
@@ -451,7 +451,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104203L, 104216L, 104217L, 104221L, 104223L)),
         WordEntity(
             id = 104223, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_food", transliteration = "ma'adan",
+            pos = "noun", semanticGroup = "restaurant_food",
             original = "מַעֲדָן", translation = "деликатес, лакомство",
             definition = "מָאכָל אֵיכוּתִי וְיָקָר, הַנְּחֶשָׁב כְּמוֹצָר מֵעוּלֶּה אוֹ נָדִיר.",
             definitionNative = "Качественная и дорогая еда, считающаяся изысканным или редким продуктом.",
@@ -460,7 +460,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104203L, 104214L, 104216L, 104217L, 104221L, 104222L)),
         WordEntity(
             id = 104224, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_drinks", transliteration = "kos yayin",
+            pos = "noun", semanticGroup = "restaurant_drinks",
             original = "כּוֹס יַיִן", translation = "бокал вина",
             definition = "כְּלִי שְׁתִיָּה לְיַיִן, לְרֹב עֶרֶב גָּבוֹהַּ עִם בָּסִיס רָחָב.",
             definitionNative = "Посуда для вина, как правило высокий бокал с широким основанием.",
@@ -469,7 +469,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104204L)),
         WordEntity(
             id = 104225, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "restaurant_service", transliteration = "arukhat esek",
+            pos = "noun", semanticGroup = "restaurant_service",
             original = "אֲרוּחַת עֵסֶק", translation = "бизнес-ланч",
             definition = "אֲרוּחַת צָהֳרַיִם מְיֻחֶדֶת בְּמִסְעָדוֹת לְאֻכְלוּסִיַּת הָעוֹבְדִים בְּמֶחִיר מוּזָל.",
             definitionNative = "Специальный обед в ресторанах для работающих людей по сниженной цене.",
@@ -484,7 +484,7 @@ object WordDataHebrewBatch6 {
 
         WordEntity(
             id = 104301, setId = 1043, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "makhvat",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "מַחְבָּת", translation = "сковорода",
             definition = "כְּלִי בִּישּׁוּל שָׁטוּחַ הַמְּשַׁמֵּשׁ לְטִיגּוּן בְּשֶׁמֶן עַל הָאֵשׁ.",
             definitionNative = "Плоская посуда для жарки на масле на огне.",
@@ -492,7 +492,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Я разогрел масло в מַחְבָּת и пожарил яйцо."),
         WordEntity(
             id = 104302, setId = 1043, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "sir",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "סִיר", translation = "кастрюля, горшок",
             definition = "כְּלִי בִּישּׁוּל עָמֹק עִם כִּסּוּי הַמְּשַׁמֵּשׁ לְבִשּׁוּל מְרַקִים וְנְזִידִים.",
             definitionNative = "Глубокая кухонная посуда с крышкой для варки супов и тушёных блюд.",
@@ -500,7 +500,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Я поставил סִיר на плиту варить суп."),
         WordEntity(
             id = 104303, setId = 1043, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "kitchen_vegetables", transliteration = "batsal",
+            pos = "noun", semanticGroup = "kitchen_vegetables",
             original = "בָּצָל", translation = "лук",
             definition = "יֶרֶק נָפוֹץ בַּעַל טַעַם חָרִיף הַמְּשַׁמֵּשׁ לְבִישּׁוּל.",
             definitionNative = "Распространённый острый овощ, используемый в приготовлении пищи.",
@@ -509,7 +509,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104304L)),
         WordEntity(
             id = 104304, setId = 1043, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "kitchen_vegetables", transliteration = "shum",
+            pos = "noun", semanticGroup = "kitchen_vegetables",
             original = "שׁוּם", translation = "чеснок",
             definition = "תַּבְלִין חָרִיף בַּעַל רֵיחַ חָזָק הַנָּפוֹץ בְּמִטְבַּח יִשְׂרְאֵלִי.",
             definitionNative = "Острая приправа с сильным запахом, распространённая в израильской кухне.",
@@ -518,7 +518,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104303L)),
         WordEntity(
             id = 104305, setId = 1043, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "sakin",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "סַכִּין", translation = "нож",
             definition = "כְּלִי חִיתּוּךְ חַד הַמְּשַׁמֵּשׁ לְחִתּוּךְ מָזוֹן בַּמִּטְבָּח.",
             definitionNative = "Острый режущий инструмент для нарезки еды на кухне.",
@@ -527,7 +527,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104301L, 104302L, 104307L, 104316L, 104317L, 104318L, 104321L, 104322L, 104323L, 104324L, 104325L)),
         WordEntity(
             id = 104306, setId = 1043, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "kitchen_actions", transliteration = "litgon",
+            pos = "verb", semanticGroup = "kitchen_actions",
             original = "לִטְגֹּן", translation = "жарить",
             definition = "לְבַשֵּׁל אֹכֶל בְּשֶׁמֶן חַם עַל הָאֵשׁ.",
             definitionNative = "Готовить еду в горячем масле на огне.",
@@ -536,7 +536,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104313L)),
         WordEntity(
             id = 104307, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "tanur",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "תַּנּוּר", translation = "духовка, печь",
             definition = "מַכְשִׁיר חִמּוּם בַּמִּטְבָּח שֶׁמְּשַׁמֵּשׁ לַאֲפִיָּה וְצַלְיָה.",
             definitionNative = "Нагревательный прибор на кухне для выпечки и жарки.",
@@ -545,7 +545,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104301L, 104302L, 104305L, 104316L, 104317L, 104318L, 104321L, 104322L, 104323L, 104324L, 104325L)),
         WordEntity(
             id = 104308, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_basics", transliteration = "matkon",
+            pos = "noun", semanticGroup = "kitchen_basics",
             original = "מַתְכּוּן", translation = "рецепт",
             definition = "הוֹרָאוֹת שֶׁלַּב וּרְשִׁימַת מֵרְכּוּזִים לְהַכְנָת מָאכָל מְסֻיָּם.",
             definitionNative = "Пошаговые инструкции и список ингредиентов для приготовления определённого блюда.",
@@ -554,7 +554,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104314L, 104315L)),
         WordEntity(
             id = 104309, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_spices", transliteration = "kamon",
+            pos = "noun", semanticGroup = "kitchen_spices",
             original = "כַּמּוּן", translation = "тмин",
             definition = "תַּבְלִין עִם אֲרוֹמָה חָמָה, נָפוֹץ בַּמַּטְבָּח הַמִּזְרָחִי.",
             definitionNative = "Специя с тёплым ароматом, распространённая на восточной кухне.",
@@ -563,7 +563,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104303L, 104304L, 104310L, 104311L, 104319L)),
         WordEntity(
             id = 104310, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_spices", transliteration = "tavlin",
+            pos = "noun", semanticGroup = "kitchen_spices",
             original = "תַּבְלִין", translation = "специя, приправа",
             definition = "חוֹמֶר הַמִּשְׁמֵשׁ לְהוֹסָפַת טַעַם אוֹ רֵיחַ לְמָזוֹן.",
             definitionNative = "Вещество, добавляемое для усиления вкуса или аромата еды.",
@@ -572,7 +572,7 @@ object WordDataHebrewBatch6 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104311, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_ingredients", transliteration = "khema",
+            pos = "noun", semanticGroup = "kitchen_ingredients",
             original = "חֶמְאָה", translation = "сливочное масло",
             definition = "מוּצַר חֶלְבִּי שׁוּמָנִי הַמּוּפְלָשׁ מֵחָלָב וּמְשַׁמֵּשׁ לְבִישּׁוּל וַאֲפִיָּה.",
             definitionNative = "Жирный молочный продукт, вырабатываемый из молока и используемый для готовки и выпечки.",
@@ -581,7 +581,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104304L, 104309L, 104310L, 104312L, 104314L, 104319L)),
         WordEntity(
             id = 104312, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_ingredients", transliteration = "kemakh",
+            pos = "noun", semanticGroup = "kitchen_ingredients",
             original = "קֶמַח", translation = "мука",
             definition = "אָבָקָה לְבָנָה הַנַּעֲשֵׂית מִטְּחִינַת חִטָּה, הַמְּשַׁמֶּשֶׁת לְאֲפִיָּה.",
             definitionNative = "Белый порошок из молотой пшеницы, используемый в выпечке.",
@@ -590,7 +590,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104311L)),
         WordEntity(
             id = 104313, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "kitchen_actions", transliteration = "le'efot",
+            pos = "verb", semanticGroup = "kitchen_actions",
             original = "לֶאֱפוֹת", translation = "печь",
             definition = "לְהַכִין מָזוֹן בְּחוּם תַּנּוּר.",
             definitionNative = "Готовить еду в духовке при высокой температуре.",
@@ -599,7 +599,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104306L)),
         WordEntity(
             id = 104314, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_basics", transliteration = "rotev",
+            pos = "noun", semanticGroup = "kitchen_basics",
             original = "רֹטֶב", translation = "соус",
             definition = "תַּעֲרֹבֶת נוֹזְלִית אוֹ חֲצִי-נוֹזְלִית הַמְּשַׁמֶּשֶׁת לְהַטְעָמָה אוֹ לְהַרְטָבַת מָזוֹן.",
             definitionNative = "Жидкая или полужидкая смесь для придания вкуса или увлажнения еды.",
@@ -607,7 +607,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Паста была вкусной благодаря итальянскому רֹּטֶב."),
         WordEntity(
             id = 104315, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_basics", transliteration = "bishul",
+            pos = "noun", semanticGroup = "kitchen_basics",
             original = "בִּישּׁוּל", translation = "приготовление пищи, варка",
             definition = "תְּהָלִיךְ הֲכָנַת מָזוֹן בְּחוּם אוֹ אֵשׁ.",
             definitionNative = "Процесс приготовления еды с помощью тепла или огня.",
@@ -616,7 +616,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104308L, 104314L)),
         WordEntity(
             id = 104316, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "mikham",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "מִיחָם", translation = "электрический чайник",
             definition = "מַכְשִׁיר חַשְׁמַלִּי לְחִמּוּם מַיִם מַהִיר לְהַכְנַת תֵּה אוֹ קָפֶה.",
             definitionNative = "Электрический прибор для быстрого нагрева воды для чая или кофе.",
@@ -624,7 +624,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Я вскипятил воду в מִיחָם для чая."),
         WordEntity(
             id = 104317, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "masnan",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "מָסָנָן", translation = "дуршлаг, сито",
             definition = "כְּלִי מְנֻקָּב הַמְּשַׁמֵּשׁ לְסִינּוּן נוֹזְלִים מִמָּזוֹן מְבֻשָּׁל.",
             definitionNative = "Посуда с отверстиями для сцеживания жидкости с варёной еды.",
@@ -632,7 +632,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Я откинул пасту на מָסָנָן, чтобы слить воду."),
         WordEntity(
             id = 104318, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "megara",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "מְגֵרָה", translation = "тёрка",
             definition = "כְּלִי מִטְבָּח בַּעַל מִשְׁטָח מְחוֹרָר לִגְרִידַת גְּבִינָה, יְרָקוֹת וּפֵרוֹת.",
             definitionNative = "Кухонный инструмент с зубчатой поверхностью для натирания сыра, овощей и фруктов.",
@@ -640,7 +640,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Я натёр сыр на מְגֵרָה в пасту."),
         WordEntity(
             id = 104319, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_spices", transliteration = "melakh gas",
+            pos = "noun", semanticGroup = "kitchen_spices",
             original = "מְלַח גַּס", translation = "крупная соль, морская соль",
             definition = "מֶלַח בְּגַרְגְּרִים גְּדוֹלִים, מְשַׁמֵּשׁ לְתִיבּוּל בְּשָׂרִים וּלְבִישּׁוּל פַּסְטָה.",
             definitionNative = "Соль с крупными кристаллами, используемая для приправы мяса и варки пасты.",
@@ -649,7 +649,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104304L, 104309L, 104310L, 104311L)),
         WordEntity(
             id = 104320, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_clothing", transliteration = "mitsakhat",
+            pos = "noun", semanticGroup = "kitchen_clothing",
             original = "מֵצַחַת", translation = "фартук",
             definition = "בֶּגֶד מְגִנָּן הַנִּלְבָּשׁ עַל הַבְּגָדִים בְּזְמַן בִּישּׁוּל כְּדֵי לְהַגֵּן עֲלֵיהֶם.",
             definitionNative = "Защитная одежда, надеваемая поверх одежды во время готовки для её защиты.",
@@ -658,7 +658,7 @@ object WordDataHebrewBatch6 {
         ),
         WordEntity(
             id = 104321, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "are'vel",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "עֵרֶבֶל", translation = "скалка",
             definition = "גְּלִיל עֵץ הַמְּשַׁמֵּשׁ לְרִידּוּד בָּצֵק לְעֻבִּי הָרָצוּי.",
             definitionNative = "Деревянный цилиндр для раскатывания теста до нужной толщины.",
@@ -667,7 +667,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104301L, 104302L, 104305L, 104307L, 104316L, 104317L, 104318L, 104322L, 104323L, 104324L, 104325L)),
         WordEntity(
             id = 104322, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "kankan",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "קַנְקַן", translation = "кувшин, чайник (заварной)",
             definition = "כְּלִי שְׁתִיָּה לְשַׁמִּירַת וְהַגָּשַׁת תֵּה, מַיִם אוֹ שְׁתִיָּה קָרָה.",
             definitionNative = "Посуда для хранения и подачи чая, воды или холодного напитка.",
@@ -676,7 +676,7 @@ object WordDataHebrewBatch6 {
          fillInBlankExclusions = listOf(104301L, 104302L, 104305L, 104307L, 104316L, 104317L, 104318L, 104321L, 104323L, 104324L, 104325L)),
         WordEntity(
             id = 104323, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "kaf marak",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "כַּף מְרַק", translation = "половник, поварёшка",
             definition = "כְּלִי גְּדוֹל עִם יָד אֲרֻכָּה לְחִלּוּק מָרָק וְנְזִידִים.",
             definitionNative = "Большой ковш с длинной ручкой для разливания супов и тушёных блюд.",
@@ -684,7 +684,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Я наполнил тарелки כַּף מְרַק."),
         WordEntity(
             id = 104324, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "kaf ets",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "כַּף עֵץ", translation = "деревянная ложка",
             definition = "כַּף עֲשׂוּיָה עֵץ, מַתְאִימָה לְעִרְבּוּב מָאכָלִים בְּלִי לְגָרֵד כֵּלִים.",
             definitionNative = "Ложка из дерева, подходящая для помешивания еды без царапания посуды.",
@@ -692,7 +692,7 @@ object WordDataHebrewBatch6 {
             exampleNative = "Я мешал соус כַּף עֵץ, чтобы не царапать кастрюлю."),
         WordEntity(
             id = 104325, setId = 1043, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "kitchen_equipment", transliteration = "kira",
+            pos = "noun", semanticGroup = "kitchen_equipment",
             original = "כִּירָה", translation = "плита, конфорка",
             definition = "מַכְשִׁיר בִּישּׁוּל עִם לַהֲבוֹת אוֹ חַשְׁמַל לְחִמּוּם סִירִים וּמַחְבּוֹת.",
             definitionNative = "Кухонный прибор с горелками или электрическими конфорками для нагрева кастрюль и сковородок.",

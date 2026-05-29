@@ -46,7 +46,7 @@ object WordDataHebrewBureauL4 {
         // ── bureau_ministries (5 EPIC) — ведомства ──
         WordEntity(
             id = 181001, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_ministries", transliteration = "мисрад hа-пним",
+            pos = "phrase", semanticGroup = "bureau_ministries",
             original = "מִשְׂרָד הַפְּנִים", translation = "МВД (министерство внутренних дел)",
             definition = "הַגּוּף הַמֶּמְשַׁלְתִּי הָאַחְרַאי לִתְעוּדוֹת זֶהוּת, אֶזְרָחוּת וּלְמִרְשַׁם הָאֻכְלוּסִין.",
             definitionNative = "Ведомство, отвечающее за удостоверения личности, гражданство и регистрацию жителей.",
@@ -55,7 +55,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181002L, 181003L, 181004L, 181005L)),
         WordEntity(
             id = 181002, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_ministries", transliteration = "рашут hа-ухлусин",
+            pos = "phrase", semanticGroup = "bureau_ministries",
             original = "רָשׁוּת הָאֻכְלוּסִין", translation = "Управление по делам населения и иммиграции",
             definition = "הַזְּרוֹעַ הַמִּבְצָעִית הַמְּטַפֶּלֶת בְּאַשְׁרוֹת, דַּרְכּוֹנִים וּבִכְנִיסַת זָרִים לָאָרֶץ.",
             definitionNative = "Исполнительный орган, занимающийся визами, паспортами и въездом иностранцев.",
@@ -64,7 +64,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181001L, 181003L, 181004L, 181005L)),
         WordEntity(
             id = 181003, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_ministries", transliteration = "мосад ле-битуах леуми",
+            pos = "phrase", semanticGroup = "bureau_ministries",
             original = "מוֹסַד לְבִיטּוּחַ לְאוּמִי", translation = "Институт национального страхования (Битуах Леуми)",
             definition = "הַגּוּף הַמַּעֲבִיר קִצְבָּאוֹת זִקְנָה, נָכוּת, אַבְטָלָה וּדְמֵי לֵידָה לְכָל הַתּוֹשָׁבִים.",
             definitionNative = "Орган, передающий пенсии, пособия по инвалидности, безработице и материнству.",
@@ -73,7 +73,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181001L, 181002L, 181004L, 181005L)),
         WordEntity(
             id = 181004, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_ministries", transliteration = "рашут hа-мисим",
+            pos = "phrase", semanticGroup = "bureau_ministries",
             original = "רָשׁוּת הַמִּסִּים", translation = "Налоговое управление",
             definition = "הַגּוּף הַמֶּמְשַׁלְתִּי הָאוֹסֵף הַכְנָסוֹת מֵאֶזְרָחִים וּמֵעֲסָקִים לְפִי הַחֻקִּים שֶׁל הַמְּדִינָה.",
             definitionNative = "Государственное ведомство, собирающее доходы с граждан и предприятий по законам страны.",
@@ -82,7 +82,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181001L, 181002L, 181003L, 181005L)),
         WordEntity(
             id = 181005, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_ministries", transliteration = "мисрад hа-хуц",
+            pos = "phrase", semanticGroup = "bureau_ministries",
             original = "מִשְׂרָד הַחוּץ", translation = "МИД (министерство иностранных дел)",
             definition = "הַגּוּף הַמְּטַפֵּל בְּקֶשֶׁר עִם מְדִינוֹת זָרוֹת, שַׁגְרִירוּיוֹת וּקְשָׁרִים דִּיפְּלוֹמָטִיִּים.",
             definitionNative = "Ведомство, занимающееся связями с другими странами, посольствами и дипломатией.",
@@ -93,7 +93,7 @@ object WordDataHebrewBureauL4 {
         // ── bureau_milueim (3 EPIC + 2 LEGENDARY) — резервная служба ──
         WordEntity(
             id = 181006, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_milueim", transliteration = "шерут милуим",
+            pos = "phrase", semanticGroup = "bureau_milueim",
             original = "שֵׁרוּת מִלּוּאִים", translation = "резервистская служба",
             definition = "תְּקוּפָה קְצָרָה שֶׁל חַיָּלֵי קֶבַע מְשֻׁחְרָרִים הַחוֹזְרִים לַצָּבָא בִּזְמַן מִלְחָמָה אוֹ אִמּוּן.",
             definitionNative = "Короткие сборы демобилизованных военных, возвращающихся в армию во время войны или учений.",
@@ -102,7 +102,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181007L, 181008L, 181009L, 181010L)),
         WordEntity(
             id = 181007, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_milueim", transliteration = "цав милуим",
+            pos = "phrase", semanticGroup = "bureau_milueim",
             original = "צַו מִלּוּאִים", translation = "повестка на сборы",
             definition = "מִכְתָּב רִשְׁמִי שֶׁל הַצָּבָא הַמְּחַיֵּב הִתְיַצְּבוּת בְּבָסִיס בְּתַאֲרִיךְ נָקוּב לְפִי הַחֹק.",
             definitionNative = "Официальное письмо армии, обязывающее явиться на базу к указанной дате по закону.",
@@ -111,7 +111,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181006L, 181008L, 181009L, 181010L, 181017L)),
         WordEntity(
             id = 181008, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_milueim", transliteration = "бакаша лидхия",
+            pos = "phrase", semanticGroup = "bureau_milueim",
             original = "בָּקָשָׁה לִדְחִיָּה", translation = "просьба об отсрочке",
             definition = "פְּנִיָּה רִשְׁמִית לְהַעֲבִיר מוֹעֵד הִתְיַצְּבוּת אוֹ דִּיּוּן בִּגְלַל סִבָּה אִישִׁית מֻצְדֶּקֶת.",
             definitionNative = "Официальное обращение перенести срок явки или заседания по обоснованной личной причине.",
@@ -120,7 +120,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181006L, 181007L, 181009L, 181010L)),
         WordEntity(
             id = 181009, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_milueim", transliteration = "ваада рефуит",
+            pos = "phrase", semanticGroup = "bureau_milueim",
             original = "וַעֲדָה רְפוּאִית", translation = "медицинская комиссия",
             definition = "מוֹשָׁב שֶׁל מֻמְחִים בָּרִיאוּת שֶׁמַּחְלִיט עַל כְּשִׁירוּת לַצָּבָא אוֹ עַל אֲחוּזֵי נָכוּת.",
             definitionNative = "Заседание врачей-специалистов, решающих о пригодности к армии или о проценте инвалидности.",
@@ -129,7 +129,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181006L, 181007L, 181008L, 181010L)),
         WordEntity(
             id = 181010, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_milueim", transliteration = "птор милуим",
+            pos = "phrase", semanticGroup = "bureau_milueim",
             original = "פְּטוֹר מִלּוּאִים", translation = "освобождение от резервистской службы",
             definition = "אִישּׁוּר רִשְׁמִי הַמְשַׁחְרֵר אָדָם מֵהַצֹּרֶךְ לְהִתְיַצֵּב בַּצָּבָא בִּזְמַן קְרִיאָה.",
             definitionNative = "Официальное подтверждение, снимающее с человека необходимость явиться в армию по призыву.",
@@ -140,7 +140,7 @@ object WordDataHebrewBureauL4 {
         // ── bureau_legal_docs (2 EPIC + 3 LEGENDARY) — нотариальные документы ──
         WordEntity(
             id = 181011, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_legal_docs", transliteration = "имут хатима",
+            pos = "phrase", semanticGroup = "bureau_legal_docs",
             original = "אִמּוּת חֲתִימָה", translation = "заверение подписи (нотариальное)",
             definition = "פְּעוּלָה רִשְׁמִית בָּהּ עוֹרֵךְ דִּין מְאַשֵּׁר שֶׁאָדָם רָשַׁם אֶת שְׁמוֹ בְּפָנָיו אִישִׁית.",
             definitionNative = "Официальная процедура, при которой юрист подтверждает, что человек поставил автограф лично перед ним.",
@@ -149,7 +149,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181012L, 181013L, 181014L, 181015L)),
         WordEntity(
             id = 181012, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_legal_docs", transliteration = "ийпуй коах",
+            pos = "phrase", semanticGroup = "bureau_legal_docs",
             original = "יִיפּוּי כֹּחַ", translation = "доверенность",
             definition = "מִסְמָךְ הַנּוֹתֵן לְאָדָם אַחֵר זְכוּת לִפְעֹל בִּשְׁמֵךְ מוּל בַּנְק, מִשְׂרָד אוֹ בֵּית מִשְׁפָּט.",
             definitionNative = "Бумага, дающая другому человеку право действовать от вашего имени в банке или суде.",
@@ -158,7 +158,7 @@ object WordDataHebrewBureauL4 {
         ),
         WordEntity(
             id = 181013, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "bureau_legal_docs", transliteration = "апостиль",
+            pos = "noun", semanticGroup = "bureau_legal_docs",
             original = "אֲפּוֹסְטִיל", translation = "апостиль",
             definition = "חוֹתֶמֶת בֵּין־לְאֻמִּית שֶׁמַּכְשִׁירָה מִסְמָךְ רִשְׁמִי לְשִׁמּוּשׁ בִּמְדִינָה זָרָה.",
             definitionNative = "Международный штамп, делающий официальную бумагу годной для использования в чужой стране.",
@@ -167,7 +167,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181011L)),
         WordEntity(
             id = 181014, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_legal_docs", transliteration = "тацhир мушба",
+            pos = "phrase", semanticGroup = "bureau_legal_docs",
             original = "תַּצְהִיר מֻשְׁבַּע", translation = "аффидевит (показания под присягой)",
             definition = "מִסְמָךְ כָּתוּב מוּל עוֹרֵךְ דִּין שֶׁמְּקַבֵּל תֹּקֶף שֶׁל עֵדוּת לְכָל דָּבָר בְּבֵית מִשְׁפָּט.",
             definitionNative = "Письменный документ перед юристом, имеющий полную силу свидетельства в суде.",
@@ -176,7 +176,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181011L, 181012L, 181015L)),
         WordEntity(
             id = 181015, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_legal_docs", transliteration = "хатима электронит",
+            pos = "phrase", semanticGroup = "bureau_legal_docs",
             original = "חֲתִימָה אִלֶקְטְרוֹנִית", translation = "электронная подпись",
             definition = "סִימָן דִּיגִיטָלִי מֻצְפָּן הַמְּזַהֶה אָדָם בְּמִסְמָכִים מְקֻוָּנִים בְּלִי לִכְתֹּב בַּיָּד.",
             definitionNative = "Зашифрованный цифровой знак, опознающий человека в онлайн-документах без рукописи.",
@@ -187,7 +187,7 @@ object WordDataHebrewBureauL4 {
         // ── bureau_collections (2 EPIC + 3 LEGENDARY) — взыскание и долги ──
         WordEntity(
             id = 181016, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_collections", transliteration = "хов каспи",
+            pos = "phrase", semanticGroup = "bureau_collections",
             original = "חוֹב כַּסְפִּי", translation = "денежный долг (финансовое обязательство)",
             definition = "סְכוּם שֶׁאָדָם נִדְרָשׁ לְהַחְזִיר לְגוּף אַחֵר וְשֶׁעֲדַיִן לֹא שֻׁלַּם בְּמְלוֹאוֹ.",
             definitionNative = "Сумма, которую следует вернуть другому лицу и которая ещё не выплачена полностью.",
@@ -196,7 +196,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181017L, 181018L, 181020L)),
         WordEntity(
             id = 181017, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_collections", transliteration = "цав ташлум",
+            pos = "phrase", semanticGroup = "bureau_collections",
             original = "צַו תַּשְׁלוּם", translation = "приказ об оплате (исполнительный приказ)",
             definition = "הוֹרָאָה שִׁיפּוּטִית הַמְּחַיֶּבֶת אָדָם לְהַעֲבִיר סְכוּם כֶּסֶף תּוֹךְ זְמַן קָצוּב וּמֻגְדָּר.",
             definitionNative = "Судебное распоряжение, обязывающее человека перевести сумму денег в короткий определённый срок.",
@@ -205,7 +205,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181007L, 181016L, 181018L, 181020L)),
         WordEntity(
             id = 181018, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_collections", transliteration = "hоцаа ла-поаль",
+            pos = "phrase", semanticGroup = "bureau_collections",
             original = "הוֹצָאָה לַפֹּעַל", translation = "исполнительное производство",
             definition = "מַעֲרֶכֶת מֶמְשַׁלְתִּית שֶׁמַּכְרִיחָה אֲנָשִׁים לְקַיֵּם הַחְלָטוֹת בֵּית הַמִּשְׁפָּט בְּעִנְיְנֵי כֶּסֶף.",
             definitionNative = "Государственная служба, принудительно взыскивающая судебные решения по денежным делам.",
@@ -214,7 +214,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181016L, 181017L, 181020L)),
         WordEntity(
             id = 181019, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "bureau_collections", transliteration = "икуль",
+            pos = "noun", semanticGroup = "bureau_collections",
             original = "עִקּוּל", translation = "арест имущества (наложение взыскания)",
             definition = "פְּעוּלָה מִשְׁפָּטִית הַמַּקְפִּיאָה רְכוּשׁ אוֹ חֶשְׁבּוֹן בַּנְק עַד שֶׁיֻּסְדַּר הַסְּכוּם הַנִּדְרָשׁ.",
             definitionNative = "Юридическое действие, замораживающее собственность или банковский счёт до улаживания требуемой суммы.",
@@ -223,7 +223,7 @@ object WordDataHebrewBureauL4 {
         ),
         WordEntity(
             id = 181020, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_collections", transliteration = "hесдер ношим",
+            pos = "phrase", semanticGroup = "bureau_collections",
             original = "הֶסְדֵּר נוֹשִׁים", translation = "соглашение с кредиторами",
             definition = "הֶסְכֵּם רִשְׁמִי בֵּין חַיָּב לְבַעֲלֵי הַחוֹב עַל לוּחַ הַחְזָרוֹת חָדָשׁ.",
             definitionNative = "Официальный договор между должником и держателями долга о новом графике выплат.",
@@ -234,7 +234,7 @@ object WordDataHebrewBureauL4 {
         // ── bureau_status (1 EPIC + 4 LEGENDARY) — гражданский статус ──
         WordEntity(
             id = 181021, setId = 1810, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_status", transliteration = "решум нисуин",
+            pos = "phrase", semanticGroup = "bureau_status",
             original = "רֵישׁוּם נִשּׂוּאִין", translation = "регистрация брака",
             definition = "פְּעוּלָה רִשְׁמִית בָּהּ הַמְּדִינָה מַכְנִיסָה זוּג חָדָשׁ לְמַאֲגַר הַתּוֹשָׁבִים אַחֲרֵי הַחֲתֻנָּה.",
             definitionNative = "Официальное действие, при котором государство вносит новую пару в базу жителей после свадьбы.",
@@ -243,7 +243,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181023L, 181024L, 181025L)),
         WordEntity(
             id = 181022, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "bureau_status", transliteration = "hитъазрехут",
+            pos = "noun", semanticGroup = "bureau_status",
             original = "הִתְאַזְרְחוּת", translation = "натурализация (получение гражданства)",
             definition = "תַּהֲלִיךְ בּוֹ אָדָם זָר מְקַבֵּל מַעֲמָד מָלֵא שֶׁל בֶּן הַמְּדִינָה לְפִי בַּקָּשָׁתוֹ.",
             definitionNative = "Процесс, при котором иностранец становится полноправным жителем страны по своему заявлению.",
@@ -252,7 +252,7 @@ object WordDataHebrewBureauL4 {
         ),
         WordEntity(
             id = 181023, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_status", transliteration = "тошавут кева",
+            pos = "phrase", semanticGroup = "bureau_status",
             original = "תּוֹשָׁבוּת קֶבַע", translation = "статус постоянного жителя (ВНЖ)",
             definition = "מַעֲמָד חֻקִּי הַמַּתִּיר חַיִּים מֵתְמִידִים בָּאָרֶץ עִם זְכֻיּוֹת רַבּוֹת אֲבָל לְלֹא דַּרְכּוֹן.",
             definitionNative = "Юридическое положение, дающее право находиться в стране бессрочно с правами, но без паспорта.",
@@ -261,7 +261,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181021L, 181024L, 181025L)),
         WordEntity(
             id = 181024, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_status", transliteration = "псак дин",
+            pos = "phrase", semanticGroup = "bureau_status",
             original = "פִּסַק דִּין", translation = "судебное решение (приговор / вердикт)",
             definition = "הַחְלָטָה כְּתוּבָה וְסוֹפִית שֶׁל שׁוֹפֵט הַסּוֹגֶרֶת הַתִּיק וּקוֹבַעַת אֶת תּוֹצְאָתוֹ.",
             definitionNative = "Письменное окончательное заключение судьи, закрывающее дело и определяющее его исход.",
@@ -270,7 +270,7 @@ object WordDataHebrewBureauL4 {
          fillInBlankExclusions = listOf(181021L, 181023L, 181025L)),
         WordEntity(
             id = 181025, setId = 1810, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_status", transliteration = "цав hасмаха",
+            pos = "phrase", semanticGroup = "bureau_status",
             original = "צַו הַסְמָכָה", translation = "приказ о наделении полномочиями",
             definition = "הַחְלָטָה רִשְׁמִית הַנּוֹתֶנֶת לְאָדָם אוֹ גּוּף זְכוּת לִפְעֹל בְּשֵׁם הַמְּדִינָה בִּתְחוּם מְסֻיָּם.",
             definitionNative = "Официальное распоряжение, дающее лицу или органу право действовать от имени государства в определённой сфере.",

@@ -70,618 +70,618 @@ object WordDataHebrewBatch60 {
         // ── Set 1335: Хайтек: основы 2 (level=1, COMMON+UNCOMMON) ─────────
 
         WordEntity(id = 133501, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),
+            original = "רֶזוּמֵה", translation = "резюме"),
 
         WordEntity(id = 133502, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֵיאָיוֹן עֲבוֹדָה", transliteration = "re'ayon avoda", translation = "собеседование"),
+            original = "רֵיאָיוֹן עֲבוֹדָה", translation = "собеседование"),
 
         WordEntity(id = 133503, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "מְגַיֵּס", transliteration = "megayes", translation = "рекрутер"),
+            original = "מְגַיֵּס", translation = "рекрутер"),
 
         WordEntity(id = 133504, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "הֶצְעַת עֲבוֹדָה", transliteration = "hets'at avoda", translation = "предложение о работе, оффер"),
+            original = "הֶצְעַת עֲבוֹדָה", translation = "предложение о работе, оффер"),
 
         WordEntity(id = 133505, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּקוּפַת נִסָּיוֹן", transliteration = "tkufat nisayon", translation = "испытательный срок"),
+            original = "תְּקוּפַת נִסָּיוֹן", translation = "испытательный срок"),
 
         WordEntity(id = 133506, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׂכּוֹרֶת", transliteration = "maskoret", translation = "зарплата"),
+            original = "מַשְׂכּוֹרֶת", translation = "зарплата"),
 
         WordEntity(id = 133507, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "תֶּפְקִיד", transliteration = "tafkid", translation = "должность, роль"),
+            original = "תֶּפְקִיד", translation = "должность, роль"),
 
         WordEntity(id = 133508, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "כִּשּׁוּרִים", transliteration = "kishurim", translation = "навыки, умения"),
+            original = "כִּשּׁוּרִים", translation = "навыки, умения"),
 
         WordEntity(id = 133509, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "נִסָּיוֹן עֲבוֹדָה", transliteration = "nisayon avoda", translation = "опыт работы"),
+            original = "נִסָּיוֹן עֲבוֹדָה", translation = "опыт работы"),
 
         WordEntity(id = 133510, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַמְלָצָה", transliteration = "hamlitsa", translation = "рекомендация"),
+            original = "הַמְלָצָה", translation = "рекомендация"),
 
         WordEntity(id = 133511, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", transliteration = "khoze avoda", translation = "трудовой договор"),
+            original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор"),
 
         WordEntity(id = 133512, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "עֲבוֹדָה מֵרָחוֹק", transliteration = "avoda merakhok", translation = "удалённая работа"),
+            original = "עֲבוֹדָה מֵרָחוֹק", translation = "удалённая работа"),
 
         WordEntity(id = 133513, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "מִשְׁרָה מְלֵאָה", transliteration = "misra mele'a", translation = "полная занятость"),
+            original = "מִשְׁרָה מְלֵאָה", translation = "полная занятость"),
 
         WordEntity(id = 133514, setId = 1335, languagePair = "he-ru", rarity = "COMMON",
-            original = "מִשְׁרָה חֶלְקִית", transliteration = "misra khelkit", translation = "частичная занятость"),
+            original = "מִשְׁרָה חֶלְקִית", translation = "частичная занятость"),
 
         WordEntity(id = 133515, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סְטֶק טֶכְנוֹלוֹגִי", transliteration = "stek tekhnologi", translation = "технологический стек"),
+            original = "סְטֶק טֶכְנוֹלוֹגִי", translation = "технологический стек"),
 
         WordEntity(id = 133516, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פּוֹרְטְפוֹלְיוֹ", transliteration = "portfolio", translation = "портфолио"),
+            original = "פּוֹרְטְפוֹלְיוֹ", translation = "портфолио"),
 
         WordEntity(id = 133517, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַטְלַת בַּיִת", transliteration = "matla bayit", translation = "тестовое задание (take-home)"),
+            original = "מַטְלַת בַּיִת", translation = "тестовое задание (take-home)"),
 
         WordEntity(id = 133518, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַתְגַּר טֶכְנִי", transliteration = "atgar tekhni", translation = "техническое испытание"),
+            original = "אַתְגַּר טֶכְנִי", translation = "техническое испытание"),
 
         WordEntity(id = 133519, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פְּרוֹיֶקְט אִישִׁי", transliteration = "proyek ishi", translation = "личный проект (пет-проект)"),
+            original = "פְּרוֹיֶקְט אִישִׁי", translation = "личный проект (пет-проект)"),
 
         WordEntity(id = 133520, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַנְהֵל צֶוֶת", transliteration = "manhel tsevet", translation = "руководитель команды, тимлид"),
+            original = "מַנְהֵל צֶוֶת", translation = "руководитель команды, тимлид"),
 
         WordEntity(id = 133521, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "טְוַח שָׂכָר", transliteration = "tvakh sakhar", translation = "зарплатная вилка"),
+            original = "טְוַח שָׂכָר", translation = "зарплатная вилка"),
 
         WordEntity(id = 133522, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֶסְכֵּם סוֹדִיּוּת", transliteration = "heskem sodiut", translation = "соглашение о конфиденциальности (NDA)"),
+            original = "הֶסְכֵּם סוֹדִיּוּת", translation = "соглашение о конфиденциальности (NDA)"),
 
         WordEntity(id = 133523, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קְלִיטָה לַעֲבוֹדָה", transliteration = "klita la'avoda", translation = "онбординг, вступление в должность"),
+            original = "קְלִיטָה לַעֲבוֹדָה", translation = "онбординг, вступление в должность"),
 
         WordEntity(id = 133524, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סֶדֶר גִּיּוּס", transliteration = "seder giyus", translation = "процесс найма"),
+            original = "סֶדֶר גִּיּוּס", translation = "процесс найма"),
 
         WordEntity(id = 133525, setId = 1335, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רֵיאָיוֹן לָבָן", transliteration = "re'ayon lavan", translation = "whiteboard-интервью"),
+            original = "רֵיאָיוֹן לָבָן", translation = "whiteboard-интервью"),
 
         // ── Set 1336: Маркетинг: основы 2 (level=1, COMMON+UNCOMMON) ────────
 
         WordEntity(id = 133601, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),
+            original = "רֶזוּמֵה", translation = "резюме"),
 
         WordEntity(id = 133602, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֵיאָיוֹן עֲבוֹדָה", transliteration = "re'ayon avoda", translation = "собеседование"),
+            original = "רֵיאָיוֹן עֲבוֹדָה", translation = "собеседование"),
 
         WordEntity(id = 133603, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "תִּיק עֲבוֹדוֹת", transliteration = "tik avodot", translation = "портфолио работ"),
+            original = "תִּיק עֲבוֹדוֹת", translation = "портфолио работ"),
 
         WordEntity(id = 133604, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "נִסָּיוֹן שִׁיוּוּקִי", transliteration = "nisayon shivuki", translation = "маркетинговый опыт"),
+            original = "נִסָּיוֹן שִׁיוּוּקִי", translation = "маркетинговый опыт"),
 
         WordEntity(id = 133605, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׂכּוֹרֶת", transliteration = "maskoret", translation = "зарплата"),
+            original = "מַשְׂכּוֹרֶת", translation = "зарплата"),
 
         WordEntity(id = 133606, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "תֶּפְקִיד שִׁיוּוּקִי", transliteration = "tafkid shivuki", translation = "маркетинговая должность"),
+            original = "תֶּפְקִיד שִׁיוּוּקִי", translation = "маркетинговая должность"),
 
         WordEntity(id = 133607, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "הֶצְעַת עֲבוֹדָה", transliteration = "hets'at avoda", translation = "предложение о работе, оффер"),
+            original = "הֶצְעַת עֲבוֹדָה", translation = "предложение о работе, оффер"),
 
         WordEntity(id = 133608, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "כִּשּׁוּרִים", transliteration = "kishurim", translation = "навыки"),
+            original = "כִּשּׁוּרִים", translation = "навыки"),
 
         WordEntity(id = 133609, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּקוּפַת נִסָּיוֹן", transliteration = "tkufat nisayon", translation = "испытательный срок"),
+            original = "תְּקוּפַת נִסָּיוֹן", translation = "испытательный срок"),
 
         WordEntity(id = 133610, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", transliteration = "khoze avoda", translation = "трудовой договор"),
+            original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор"),
 
         WordEntity(id = 133611, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "אֵייג'נְסִי", transliteration = "ejnsi", translation = "агентство"),
+            original = "אֵייג'נְסִי", translation = "агентство"),
 
         WordEntity(id = 133612, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "תַּקְצִיב פִּרְסוּם", transliteration = "taktsiv pirssum", translation = "рекламный бюджет"),
+            original = "תַּקְצִיב פִּרְסוּם", translation = "рекламный бюджет"),
 
         WordEntity(id = 133613, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "תּוֹצָאוֹת קַמְפֵּיְן", transliteration = "totsa'ot kampein", translation = "результаты кампании"),
+            original = "תּוֹצָאוֹת קַמְפֵּיְן", translation = "результаты кампании"),
 
         WordEntity(id = 133614, setId = 1336, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַמְלָצָה", transliteration = "hamlitsa", translation = "рекомендация"),
+            original = "הַמְלָצָה", translation = "рекомендация"),
 
         WordEntity(id = 133615, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "קֶייס-סְטַאדִי", transliteration = "keys-stadi", translation = "кейс-стади, разбор кейса"),
+            original = "קֶייס-סְטַאדִי", translation = "кейс-стади, разбор кейса"),
 
         WordEntity(id = 133616, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אֶסְטְרָטֶגְיַת שִׁיוּוּק", transliteration = "estrategiyat shivuk", translation = "маркетинговая стратегия"),
+            original = "אֶסְטְרָטֶגְיַת שִׁיוּוּק", translation = "маркетинговая стратегия"),
 
         WordEntity(id = 133617, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מִיצּוּב מוּצָר", transliteration = "mitsub mutsad", translation = "позиционирование продукта"),
+            original = "מִיצּוּב מוּצָר", translation = "позиционирование продукта"),
 
         WordEntity(id = 133618, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מְדַדִּים", transliteration = "medadim", translation = "метрики"),
+            original = "מְדַדִּים", translation = "метрики"),
 
         WordEntity(id = 133619, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כְּלֵי שִׁיוּוּק", transliteration = "kle shivuk", translation = "маркетинговые инструменты"),
+            original = "כְּלֵי שִׁיוּוּק", translation = "маркетинговые инструменты"),
 
         WordEntity(id = 133620, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שִׁוּוּק תּוֹכֶן", transliteration = "shivuk tokhen", translation = "контент-маркетинг"),
+            original = "שִׁוּוּק תּוֹכֶן", translation = "контент-маркетинг"),
 
         WordEntity(id = 133621, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מְנַהֵל מוּצָר", transliteration = "menahel mutsad", translation = "менеджер по продукту"),
+            original = "מְנַהֵל מוּצָר", translation = "менеджер по продукту"),
 
         WordEntity(id = 133622, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גְּדִילָה אוֹרְגָּנִית", transliteration = "gdila organit", translation = "органический рост"),
+            original = "גְּדִילָה אוֹרְגָּנִית", translation = "органический рост"),
 
         WordEntity(id = 133623, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דּוּ\"חַ שִׁיוּוּקִי", transliteration = "du'akh shivuki", translation = "маркетинговый отчёт"),
+            original = "דּוּ\"חַ שִׁיוּוּקִי", translation = "маркетинговый отчёт"),
 
         WordEntity(id = 133624, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִינְסַיְטְס", transliteration = "insaits", translation = "инсайты (аналитические выводы)"),
+            original = "אִינְסַיְטְס", translation = "инсайты (аналитические выводы)"),
 
         WordEntity(id = 133625, setId = 1336, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "בְּרִיפ", transliteration = "brif", translation = "бриф, техническое задание"),
+            original = "בְּרִיפ", translation = "бриф, техническое задание"),
 
         // ── Set 1337: Строительство: основы 2 (level=1, COMMON+UNCOMMON) ────
 
         WordEntity(id = 133701, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),
+            original = "רֶזוּמֵה", translation = "резюме"),
 
         WordEntity(id = 133702, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֵיאָיוֹן עֲבוֹדָה", transliteration = "re'ayon avoda", translation = "собеседование"),
+            original = "רֵיאָיוֹן עֲבוֹדָה", translation = "собеседование"),
 
         WordEntity(id = 133703, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׂכּוֹרֶת", transliteration = "maskoret", translation = "зарплата"),
+            original = "מַשְׂכּוֹרֶת", translation = "зарплата"),
 
         WordEntity(id = 133704, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "נִסָּיוֹן בַּנְּיָה", transliteration = "nisayon banya", translation = "опыт в строительстве"),
+            original = "נִסָּיוֹן בַּנְּיָה", translation = "опыт в строительстве"),
 
         WordEntity(id = 133705, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "מִקְצוֹעַ בַּנְּיָה", transliteration = "miktsoa banya", translation = "строительная специальность"),
+            original = "מִקְצוֹעַ בַּנְּיָה", translation = "строительная специальность"),
 
         WordEntity(id = 133706, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּקוּפַת נִסָּיוֹן", transliteration = "tkufat nisayon", translation = "испытательный срок"),
+            original = "תְּקוּפַת נִסָּיוֹן", translation = "испытательный срок"),
 
         WordEntity(id = 133707, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "אֲתַר בַּנְּיָה", transliteration = "atar banya", translation = "строительная площадка"),
+            original = "אֲתַר בַּנְּיָה", translation = "строительная площадка"),
 
         WordEntity(id = 133708, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "פּוֹעֵל בַּנָּיָה", transliteration = "po'el banya", translation = "строительный рабочий"),
+            original = "פּוֹעֵל בַּנָּיָה", translation = "строительный рабочий"),
 
         WordEntity(id = 133709, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "צֶוֶת עֲבוֹדָה", transliteration = "tsevet avoda", translation = "рабочая бригада"),
+            original = "צֶוֶת עֲבוֹדָה", translation = "рабочая бригада"),
 
         WordEntity(id = 133710, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "כְּלֵי עֲבוֹדָה", transliteration = "kle avoda", translation = "рабочие инструменты"),
+            original = "כְּלֵי עֲבוֹדָה", translation = "рабочие инструменты"),
 
         WordEntity(id = 133711, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "בִּגְדֵי עֲבוֹדָה", transliteration = "bigde avoda", translation = "рабочая одежда, спецовка"),
+            original = "בִּגְדֵי עֲבוֹדָה", translation = "рабочая одежда, спецовка"),
 
         WordEntity(id = 133712, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "שָׁעוֹת עֲבוֹדָה", transliteration = "sha'ot avoda", translation = "рабочие часы"),
+            original = "שָׁעוֹת עֲבוֹדָה", translation = "рабочие часы"),
 
         WordEntity(id = 133713, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", transliteration = "khoze avoda", translation = "трудовой договор"),
+            original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор"),
 
         WordEntity(id = 133714, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַמְלָצָה", transliteration = "hamlitsa", translation = "рекомендация"),
+            original = "הַמְלָצָה", translation = "рекомендация"),
 
         WordEntity(id = 133715, setId = 1337, languagePair = "he-ru", rarity = "COMMON",
-            original = "בְּטִיחוּת בְּעֲבוֹדָה", transliteration = "btikhut be'avoda", translation = "безопасность труда"),
+            original = "בְּטִיחוּת בְּעֲבוֹדָה", translation = "безопасность труда"),
 
         WordEntity(id = 133716, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תְּעוּדַת מַקְצוֹעַ", transliteration = "te'udat miktsoa", translation = "профессиональное удостоверение"),
+            original = "תְּעוּדַת מַקְצוֹעַ", translation = "профессиональное удостоверение"),
 
         WordEntity(id = 133717, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רִשָּׁיוֹן עֲבוֹדָה", transliteration = "rishayaon avoda", translation = "разрешение на работу"),
+            original = "רִשָּׁיוֹן עֲבוֹדָה", translation = "разрешение на работу"),
 
         WordEntity(id = 133718, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פִּקּוּחַ בַּנְּיָה", transliteration = "pikuakh banya", translation = "строительный надзор"),
+            original = "פִּקּוּחַ בַּנְּיָה", translation = "строительный надзор"),
 
         WordEntity(id = 133719, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תָּכְנִית בַּנְּיָה", transliteration = "takhnit banya", translation = "строительный план, чертёж"),
+            original = "תָּכְנִית בַּנְּיָה", translation = "строительный план, чертёж"),
 
         WordEntity(id = 133720, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֶיתֵּר בַּנְּיָה", transliteration = "heiter banya", translation = "разрешение на строительство"),
+            original = "הֶיתֵּר בַּנְּיָה", translation = "разрешение на строительство"),
 
         WordEntity(id = 133721, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סַקְרָן בַּנְּיָה", transliteration = "sakran banya", translation = "строительный инспектор"),
+            original = "סַקְרָן בַּנְּיָה", translation = "строительный инспектор"),
 
         WordEntity(id = 133722, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מְפַקֵּחַ עֲבוֹדוֹת", transliteration = "mefake'akh avodot", translation = "мастер работ, прораб"),
+            original = "מְפַקֵּחַ עֲבוֹדוֹת", translation = "мастер работ, прораб"),
 
         WordEntity(id = 133723, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֵרוּב מִשְׂרוֹת", transliteration = "eruv misrot", translation = "совмещение специальностей"),
+            original = "עֵרוּב מִשְׂרוֹת", translation = "совмещение специальностей"),
 
         WordEntity(id = 133724, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מְנַהֵל פְּרוֹיֶקְט", transliteration = "menahel proyek", translation = "руководитель проекта"),
+            original = "מְנַהֵל פְּרוֹיֶקְט", translation = "руководитель проекта"),
 
         WordEntity(id = 133725, setId = 1337, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הַגְשַׁת מִכְרָז", transliteration = "hagashat mikhraz", translation = "подача тендерного предложения"),
+            original = "הַגְשַׁת מִכְרָז", translation = "подача тендерного предложения"),
 
         // ── Set 1338: Уход: основы 2 (level=1, COMMON+UNCOMMON) ─────────────
 
         WordEntity(id = 133801, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),
+            original = "רֶזוּמֵה", translation = "резюме"),
 
         WordEntity(id = 133802, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֵיאָיוֹן עֲבוֹדָה", transliteration = "re'ayon avoda", translation = "собеседование"),
+            original = "רֵיאָיוֹן עֲבוֹדָה", translation = "собеседование"),
 
         WordEntity(id = 133803, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׂכּוֹרֶת", transliteration = "maskoret", translation = "зарплата"),
+            original = "מַשְׂכּוֹרֶת", translation = "зарплата"),
 
         WordEntity(id = 133804, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "נִסָּיוֹן בְּטִיפּוּל", transliteration = "nisayon betipul", translation = "опыт ухода"),
+            original = "נִסָּיוֹן בְּטִיפּוּל", translation = "опыт ухода"),
 
         WordEntity(id = 133805, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "מִשְׁמֶרֶת", transliteration = "mishmeret", translation = "смена, дежурство"),
+            original = "מִשְׁמֶרֶת", translation = "смена, дежурство"),
 
         WordEntity(id = 133806, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "לוּחַ תּוֹרָנִיּוֹת", transliteration = "luakh toraniiot", translation = "график дежурств"),
+            original = "לוּחַ תּוֹרָנִיּוֹת", translation = "график дежурств"),
 
         WordEntity(id = 133807, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "מְטוּפָּל", transliteration = "metupal", translation = "подопечный, пациент"),
+            original = "מְטוּפָּל", translation = "подопечный, пациент"),
 
         WordEntity(id = 133808, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "מוֹסַד גֶרִיאַטְרִי", transliteration = "mosad geriatri", translation = "дом престарелых"),
+            original = "מוֹסַד גֶרִיאַטְרִי", translation = "дом престарелых"),
 
         WordEntity(id = 133809, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "סוֹכְנוּת טִיפּוּל", transliteration = "sokhnuyut tipul", translation = "агентство по уходу"),
+            original = "סוֹכְנוּת טִיפּוּל", translation = "агентство по уходу"),
 
         WordEntity(id = 133810, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "עֶזְרָה רִאשׁוֹנָה", transliteration = "ezra rishona", translation = "первая помощь"),
+            original = "עֶזְרָה רִאשׁוֹנָה", translation = "первая помощь"),
 
         WordEntity(id = 133811, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "לוּחַ זְמַנִּים", transliteration = "luakh zmanim", translation = "расписание"),
+            original = "לוּחַ זְמַנִּים", translation = "расписание"),
 
         WordEntity(id = 133812, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַמְלָצָה", transliteration = "hamlitsa", translation = "рекомендация"),
+            original = "הַמְלָצָה", translation = "рекомендация"),
 
         WordEntity(id = 133813, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", transliteration = "khoze avoda", translation = "трудовой договор"),
+            original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор"),
 
         WordEntity(id = 133814, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּקוּפַת נִסָּיוֹן", transliteration = "tkufat nisayon", translation = "испытательный срок"),
+            original = "תְּקוּפַת נִסָּיוֹן", translation = "испытательный срок"),
 
         WordEntity(id = 133815, setId = 1338, languagePair = "he-ru", rarity = "COMMON",
-            original = "כִּשּׁוּרֵי טִיפּוּל", transliteration = "kishurey tipul", translation = "навыки ухода"),
+            original = "כִּשּׁוּרֵי טִיפּוּל", translation = "навыки ухода"),
 
         WordEntity(id = 133816, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תְּעוּדַת הַסְמָכָה", transliteration = "te'udat hasmakha", translation = "сертификат, свидетельство"),
+            original = "תְּעוּדַת הַסְמָכָה", translation = "сертификат, свидетельство"),
 
         WordEntity(id = 133817, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֹמֶס עֲבוֹדָה", transliteration = "omes avoda", translation = "рабочая нагрузка"),
+            original = "עֹמֶס עֲבוֹדָה", translation = "рабочая нагрузка"),
 
         WordEntity(id = 133818, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַצָּב חֵרוּם", transliteration = "matsav kheirum", translation = "экстренная ситуация"),
+            original = "מַצָּב חֵרוּם", translation = "экстренная ситуация"),
 
         WordEntity(id = 133819, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֲגָשַׁת תְּרוּפוֹת", transliteration = "hagashat trufot", translation = "выдача медикаментов"),
+            original = "הֲגָשַׁת תְּרוּפוֹת", translation = "выдача медикаментов"),
 
         WordEntity(id = 133820, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֶקְשֵׁר עִם הַמִּשְׁפָּחָה", transliteration = "heksher im hamishpakha", translation = "контакт с семьёй"),
+            original = "הֶקְשֵׁר עִם הַמִּשְׁפָּחָה", translation = "контакт с семьёй"),
 
         WordEntity(id = 133821, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֲזָרָה בְּנְיִידוּת", transliteration = "azara benei'adut", translation = "помощь при передвижении"),
+            original = "עֲזָרָה בְּנְיִידוּת", translation = "помощь при передвижении"),
 
         WordEntity(id = 133822, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שְׁמִירַת כָּבוֹד", transliteration = "shmirat kavod", translation = "соблюдение достоинства пациента"),
+            original = "שְׁמִירַת כָּבוֹד", translation = "соблюдение достоинства пациента"),
 
         WordEntity(id = 133823, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דּוּ\"חַ יּוֹמִי", transliteration = "du'akh yomi", translation = "ежедневный отчёт"),
+            original = "דּוּ\"חַ יּוֹמִי", translation = "ежедневный отчёт"),
 
         WordEntity(id = 133824, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תֶּקֶן טִיפּוּל", transliteration = "taken tipul", translation = "стандарт ухода"),
+            original = "תֶּקֶן טִיפּוּל", translation = "стандарт ухода"),
 
         WordEntity(id = 133825, setId = 1338, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֶכְשֵׁר מִקְצוּעִי", transliteration = "heksher miktsui", translation = "профессиональная подготовка"),
+            original = "הֶכְשֵׁר מִקְצוּעִי", translation = "профессиональная подготовка"),
 
         // ── Set 1339: Бухгалтерия: основы 2 (level=1, COMMON+UNCOMMON) ──────
 
         WordEntity(id = 133901, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),
+            original = "רֶזוּמֵה", translation = "резюме"),
 
         WordEntity(id = 133902, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֵיאָיוֹן עֲבוֹדָה", transliteration = "re'ayon avoda", translation = "собеседование"),
+            original = "רֵיאָיוֹן עֲבוֹדָה", translation = "собеседование"),
 
         WordEntity(id = 133903, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׂכּוֹרֶת", transliteration = "maskoret", translation = "зарплата"),
+            original = "מַשְׂכּוֹרֶת", translation = "зарплата"),
 
         WordEntity(id = 133904, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "נִסָּיוֹן בְּחֶשְׁבּוֹנַאוּת", transliteration = "nisayon bakheshbonaut", translation = "опыт в бухгалтерии"),
+            original = "נִסָּיוֹן בְּחֶשְׁבּוֹנַאוּת", translation = "опыт в бухгалтерии"),
 
         WordEntity(id = 133905, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּקוּפַת נִסָּיוֹן", transliteration = "tkufat nisayon", translation = "испытательный срок"),
+            original = "תְּקוּפַת נִסָּיוֹן", translation = "испытательный срок"),
 
         WordEntity(id = 133906, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", transliteration = "khoze avoda", translation = "трудовой договор"),
+            original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор"),
 
         WordEntity(id = 133907, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַמְלָצָה", transliteration = "hamlitsa", translation = "рекомендация"),
+            original = "הַמְלָצָה", translation = "рекомендация"),
 
         WordEntity(id = 133908, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "כִּשּׁוּרִים", transliteration = "kishurim", translation = "навыки"),
+            original = "כִּשּׁוּרִים", translation = "навыки"),
 
         WordEntity(id = 133909, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "תֶּפְקִיד חֶשְׁבּוֹנַאי", transliteration = "tafkid kheshbonai", translation = "должность бухгалтера"),
+            original = "תֶּפְקִיד חֶשְׁבּוֹנַאי", translation = "должность бухгалтера"),
 
         WordEntity(id = 133910, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "חֶשְׁבּוֹנַאי רָאשִׁי", transliteration = "kheshbonai rashi", translation = "главный бухгалтер"),
+            original = "חֶשְׁבּוֹנַאי רָאשִׁי", translation = "главный бухгалтер"),
 
         WordEntity(id = 133911, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "תֹּכְנַת חֶשְׁבּוֹנַאוּת", transliteration = "tokhnat kheshbonaut", translation = "программа бухучёта"),
+            original = "תֹּכְנַת חֶשְׁבּוֹנַאוּת", translation = "программа бухучёта"),
 
         WordEntity(id = 133912, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "גִּלְיוֹן אֶלֶקְטְרוֹנִי", transliteration = "gilyon elektroni", translation = "электронная таблица (Excel)"),
+            original = "גִּלְיוֹן אֶלֶקְטְרוֹנִי", translation = "электронная таблица (Excel)"),
 
         WordEntity(id = 133913, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "דּוּ\"חַ כַּסְפִּי", transliteration = "du'akh kaspi", translation = "финансовый отчёт"),
+            original = "דּוּ\"חַ כַּסְפִּי", translation = "финансовый отчёт"),
 
         WordEntity(id = 133914, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "תַּקְצִיב", transliteration = "taktsiv", translation = "бюджет"),
+            original = "תַּקְצִיב", translation = "бюджет"),
 
         WordEntity(id = 133915, setId = 1339, languagePair = "he-ru", rarity = "COMMON",
-            original = "הֶצְעַת עֲבוֹדָה", transliteration = "hets'at avoda", translation = "предложение о работе, оффер"),
+            original = "הֶצְעַת עֲבוֹדָה", translation = "предложение о работе, оффер"),
 
         WordEntity(id = 133916, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רוֹאֵה חֶשְׁבּוֹן מוּסְמָךְ", transliteration = "ro'e kheshbon musmakh", translation = "сертифицированный бухгалтер (CPA)"),
+            original = "רוֹאֵה חֶשְׁבּוֹן מוּסְמָךְ", translation = "сертифицированный бухгалтер (CPA)"),
 
         WordEntity(id = 133917, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "נִהוּל כַּסְפִּים", transliteration = "nihul kaspim", translation = "финансовое управление"),
+            original = "נִהוּל כַּסְפִּים", translation = "финансовое управление"),
 
         WordEntity(id = 133918, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דֵּ\"חַ רְבִיעוֹנִי", transliteration = "de'akh revi'oni", translation = "квартальный отчёт"),
+            original = "דֵּ\"חַ רְבִיעוֹנִי", translation = "квартальный отчёт"),
 
         WordEntity(id = 133919, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַאֲזָן חֶשְׁבּוֹנוֹת", transliteration = "ma'azan kheshbonot", translation = "балансовый отчёт"),
+            original = "מַאֲזָן חֶשְׁבּוֹנוֹת", translation = "балансовый отчёт"),
 
         WordEntity(id = 133920, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דֵּ\"חַ רֶוַח וְהֶפְסֵד", transliteration = "de'akh revakh vehefed", translation = "отчёт о прибылях и убытках"),
+            original = "דֵּ\"חַ רֶוַח וְהֶפְסֵד", translation = "отчёт о прибылях и убытках"),
 
         WordEntity(id = 133921, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "גַּבִּאות מַס", transliteration = "gabaot mas", translation = "налоговая служба"),
+            original = "גַּבִּאות מַס", translation = "налоговая служба"),
 
         WordEntity(id = 133922, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הַגְשַׁת דּוּ\"חַ שָׁנָתִי", transliteration = "hagashat du'akh shnati", translation = "подача годового отчёта"),
+            original = "הַגְשַׁת דּוּ\"חַ שָׁנָתִי", translation = "подача годового отчёта"),
 
         WordEntity(id = 133923, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תְּעוּדַת הַסְמָכָה", transliteration = "te'udat hasmakha", translation = "профессиональный сертификат"),
+            original = "תְּעוּדַת הַסְמָכָה", translation = "профессиональный сертификат"),
 
         WordEntity(id = 133924, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פְּקִידַת שׂוּם", transliteration = "pkidat sum", translation = "налоговый инспектор"),
+            original = "פְּקִידַת שׂוּם", translation = "налоговый инспектор"),
 
         WordEntity(id = 133925, setId = 1339, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "סְגִירַת סְפָרִים", transliteration = "sgirat sfarim", translation = "закрытие книг (конец периода)"),
+            original = "סְגִירַת סְפָרִים", translation = "закрытие книг (конец периода)"),
 
         // ── Set 1340: Логистика: основы 2 (level=1, COMMON+UNCOMMON) ─────────
 
         WordEntity(id = 134001, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),
+            original = "רֶזוּמֵה", translation = "резюме"),
 
         WordEntity(id = 134002, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֵיאָיוֹן עֲבוֹדָה", transliteration = "re'ayon avoda", translation = "собеседование"),
+            original = "רֵיאָיוֹן עֲבוֹדָה", translation = "собеседование"),
 
         WordEntity(id = 134003, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׂכּוֹרֶת", transliteration = "maskoret", translation = "зарплата"),
+            original = "מַשְׂכּוֹרֶת", translation = "зарплата"),
 
         WordEntity(id = 134004, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "רִשָּׁיוֹן נְהִיגָה", transliteration = "rishayaon nehiga", translation = "водительские права"),
+            original = "רִשָּׁיוֹן נְהִיגָה", translation = "водительские права"),
 
         WordEntity(id = 134005, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "קְטֶגוֹרִיַּת רִשָּׁיוֹן", transliteration = "kategoriyat rishayaon", translation = "категория водительских прав"),
+            original = "קְטֶגוֹרִיַּת רִשָּׁיוֹן", translation = "категория водительских прав"),
 
         WordEntity(id = 134006, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "נִסָּיוֹן נְהִיגָה", transliteration = "nisayon nehiga", translation = "опыт вождения"),
+            original = "נִסָּיוֹן נְהִיגָה", translation = "опыт вождения"),
 
         WordEntity(id = 134007, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַסְלוּל מְשְׁלוֹחַ", transliteration = "maslul mishloakh", translation = "маршрут доставки"),
+            original = "מַסְלוּל מְשְׁלוֹחַ", translation = "маршрут доставки"),
 
         WordEntity(id = 134008, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּקוּפַת נִסָּיוֹן", transliteration = "tkufat nisayon", translation = "испытательный срок"),
+            original = "תְּקוּפַת נִסָּיוֹן", translation = "испытательный срок"),
 
         WordEntity(id = 134009, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", transliteration = "khoze avoda", translation = "трудовой договор"),
+            original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор"),
 
         WordEntity(id = 134010, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַמְלָצָה", transliteration = "hamlitsa", translation = "рекомендация"),
+            original = "הַמְלָצָה", translation = "рекомендация"),
 
         WordEntity(id = 134011, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "שָׁעוֹת עֲבוֹדָה", transliteration = "sha'ot avoda", translation = "рабочие часы"),
+            original = "שָׁעוֹת עֲבוֹדָה", translation = "рабочие часы"),
 
         WordEntity(id = 134012, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַחְסָן", transliteration = "makhsan", translation = "склад"),
+            original = "מַחְסָן", translation = "склад"),
 
         WordEntity(id = 134013, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "מְשָׁאִית", transliteration = "meshi'it", translation = "грузовик"),
+            original = "מְשָׁאִית", translation = "грузовик"),
 
         WordEntity(id = 134014, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "טֹפֶס הַזְמָנָה", transliteration = "toфes hazmana", translation = "бланк заказа"),
+            original = "טֹפֶס הַזְמָנָה", translation = "бланк заказа"),
 
         WordEntity(id = 134015, setId = 1340, languagePair = "he-ru", rarity = "COMMON",
-            original = "הֶצְעַת עֲבוֹדָה", transliteration = "hets'at avoda", translation = "предложение о работе, оффер"),
+            original = "הֶצְעַת עֲבוֹדָה", translation = "предложение о работе, оффер"),
 
         WordEntity(id = 134016, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַפְעִיל עָגוּרָן", transliteration = "maflil aguran", translation = "оператор погрузчика / крановщик"),
+            original = "מַפְעִיל עָגוּרָן", translation = "оператор погрузчика / крановщик"),
 
         WordEntity(id = 134017, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַנְהֵל לוֹגִיסְטִיקָה", transliteration = "manhel logistika", translation = "менеджер по логистике"),
+            original = "מַנְהֵל לוֹגִיסְטִיקָה", translation = "менеджер по логистике"),
 
         WordEntity(id = 134018, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דִּיסְפֶּטְשֶׁר", transliteration = "dispetsher", translation = "диспетчер"),
+            original = "דִּיסְפֶּטְשֶׁר", translation = "диспетчер"),
 
         WordEntity(id = 134019, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַעֲקַב מִשְׁלוֹחַ", transliteration = "ma'akav mishloakh", translation = "отслеживание груза"),
+            original = "מַעֲקַב מִשְׁלוֹחַ", translation = "отслеживание груза"),
 
         WordEntity(id = 134020, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַחְרָיוּת בִּיטּוּחַ", transliteration = "akhraiut bituakh", translation = "страховая ответственность"),
+            original = "אַחְרָיוּת בִּיטּוּחַ", translation = "страховая ответственность"),
 
         WordEntity(id = 134021, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִי-עֲמִידָה בְּמַסְלוּל", transliteration = "i-amida bemaslul", translation = "отклонение от маршрута"),
+            original = "אִי-עֲמִידָה בְּמַסְלוּל", translation = "отклонение от маршрута"),
 
         WordEntity(id = 134022, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִי-עֲמִידָה בִּזְמַן", transliteration = "i-amida bizman", translation = "нарушение сроков доставки"),
+            original = "אִי-עֲמִידָה בִּזְמַן", translation = "нарушение сроков доставки"),
 
         WordEntity(id = 134023, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "בְּדִיקַת רֶכֶב", transliteration = "bdikat rekhev", translation = "технический осмотр автомобиля"),
+            original = "בְּדִיקַת רֶכֶב", translation = "технический осмотр автомобиля"),
 
         WordEntity(id = 134024, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תְּנַאֵי הֲסָעָה", transliteration = "tnae hasa'a", translation = "условия перевозки"),
+            original = "תְּנַאֵי הֲסָעָה", translation = "условия перевозки"),
 
         WordEntity(id = 134025, setId = 1340, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כִּשּׁוּרִים לוֹגִיסְטִיִּים", transliteration = "kishurim logistiim", translation = "логистические навыки"),
+            original = "כִּשּׁוּרִים לוֹגִיסְטִיִּים", translation = "логистические навыки"),
 
         // ── Set 1341: Риэлтор: основы 3 (level=1, COMMON+UNCOMMON) ──────────
 
         WordEntity(id = 134101, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),
+            original = "רֶזוּמֵה", translation = "резюме"),
 
         WordEntity(id = 134102, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֵיאָיוֹן עֲבוֹדָה", transliteration = "re'ayon avoda", translation = "собеседование"),
+            original = "רֵיאָיוֹן עֲבוֹדָה", translation = "собеседование"),
 
         WordEntity(id = 134103, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׂכּוֹרֶת", transliteration = "maskoret", translation = "зарплата"),
+            original = "מַשְׂכּוֹרֶת", translation = "зарплата"),
 
         WordEntity(id = 134104, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "עַמְלָה", transliteration = "amla", translation = "комиссионные, процент от сделки"),
+            original = "עַמְלָה", translation = "комиссионные, процент от сделки"),
 
         WordEntity(id = 134105, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "נִסָּיוֹן בְּתִיוּוּךְ", transliteration = "nisayon betivukh", translation = "опыт в риэлторстве"),
+            original = "נִסָּיוֹן בְּתִיוּוּךְ", translation = "опыт в риэлторстве"),
 
         WordEntity(id = 134106, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּקוּפַת נִסָּיוֹן", transliteration = "tkufat nisayon", translation = "испытательный срок"),
+            original = "תְּקוּפַת נִסָּיוֹן", translation = "испытательный срок"),
 
         WordEntity(id = 134107, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", transliteration = "khoze avoda", translation = "трудовой договор"),
+            original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор"),
 
         WordEntity(id = 134108, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַמְלָצָה", transliteration = "hamlitsa", translation = "рекомендация"),
+            original = "הַמְלָצָה", translation = "рекомендация"),
 
         WordEntity(id = 134109, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַאֲגַר לְקוֹחוֹת", transliteration = "ma'agar lekukhot", translation = "база клиентов"),
+            original = "מַאֲגַר לְקוֹחוֹת", translation = "база клиентов"),
 
         WordEntity(id = 134110, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַצָּגַת נְכָס", transliteration = "hatsagat nakhas", translation = "показ объекта"),
+            original = "הַצָּגַת נְכָס", translation = "показ объекта"),
 
         WordEntity(id = 134111, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "מִשָּׂא וּמַתָּן", transliteration = "masa umatan", translation = "переговоры"),
+            original = "מִשָּׂא וּמַתָּן", translation = "переговоры"),
 
         WordEntity(id = 134112, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "הֶצְעַת עֲבוֹדָה", transliteration = "hets'at avoda", translation = "предложение о работе, оффер"),
+            original = "הֶצְעַת עֲבוֹדָה", translation = "предложение о работе, оффер"),
 
         WordEntity(id = 134113, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "כִּשּׁוּרֵי מֶכֶר", transliteration = "kishurey mekher", translation = "навыки продаж"),
+            original = "כִּשּׁוּרֵי מֶכֶר", translation = "навыки продаж"),
 
         WordEntity(id = 134114, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "הִיכָּרוּת עִם הַשּׁוּק", transliteration = "hikharut im hashuk", translation = "знание рынка"),
+            original = "הִיכָּרוּת עִם הַשּׁוּק", translation = "знание рынка"),
 
         WordEntity(id = 134115, setId = 1341, languagePair = "he-ru", rarity = "COMMON",
-            original = "שִׁיחַ קַר", transliteration = "siakh kar", translation = "холодный звонок"),
+            original = "שִׁיחַ קַר", translation = "холодный звонок"),
 
         WordEntity(id = 134116, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רִשָּׁיוֹן מְתִיוּוּךְ", transliteration = "rishayaon metivukh", translation = "лицензия риэлтора"),
+            original = "רִשָּׁיוֹן מְתִיוּוּךְ", translation = "лицензия риэлтора"),
 
         WordEntity(id = 134117, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הֶסְכֵּם שְׂכִירוּת", transliteration = "heskem skhirut", translation = "договор аренды"),
+            original = "הֶסְכֵּם שְׂכִירוּת", translation = "договор аренды"),
 
         WordEntity(id = 134118, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "הַעֲרָכַת שֵׁווּי", transliteration = "ha'arakat shevui", translation = "оценка стоимости объекта"),
+            original = "הַעֲרָכַת שֵׁווּי", translation = "оценка стоимости объекта"),
 
         WordEntity(id = 134119, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֲלוּקַת עַמְלָה", transliteration = "khalukat amla", translation = "раздел комиссионных"),
+            original = "חֲלוּקַת עַמְלָה", translation = "раздел комиссионных"),
 
         WordEntity(id = 134120, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רִישׁוּם בְּטַאבּוּ", transliteration = "rishum betabu", translation = "регистрация в земельном реестре (тabu)"),
+            original = "רִישׁוּם בְּטַאבּוּ", translation = "регистрация в земельном реестре (тabu)"),
 
         WordEntity(id = 134121, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "בּוֹנוּס מֶכֶר", transliteration = "bonus mekher", translation = "бонус за сделку"),
+            original = "בּוֹנוּס מֶכֶר", translation = "бонус за сделку"),
 
         WordEntity(id = 134122, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כְּנַסַת בַּיִת פְּתוּחָה", transliteration = "knisat bayit ptuha", translation = "открытый показ (open house)"),
+            original = "כְּנַסַת בַּיִת פְּתוּחָה", translation = "открытый показ (open house)"),
 
         WordEntity(id = 134123, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מִשְׂרַד תִּיוּוּךְ", transliteration = "misrad tivukh", translation = "риэлторское агентство"),
+            original = "מִשְׂרַד תִּיוּוּךְ", translation = "риэлторское агентство"),
 
         WordEntity(id = 134124, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פּוּנֵל לְקוֹחוֹת", transliteration = "funel lekukhot", translation = "воронка клиентов"),
+            original = "פּוּנֵל לְקוֹחוֹת", translation = "воронка клиентов"),
 
         WordEntity(id = 134125, setId = 1341, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַנְהֵל תִּיקִים", transliteration = "manhel tikim", translation = "управляющий портфелем объектов"),
+            original = "מַנְהֵל תִּיקִים", translation = "управляющий портфелем объектов"),
 
         // ── Set 1342: Журналист: основы 2 (level=1, COMMON+UNCOMMON) ─────────
 
         WordEntity(id = 134201, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֶזוּמֵה", transliteration = "rezume", translation = "резюме"),
+            original = "רֶזוּמֵה", translation = "резюме"),
 
         WordEntity(id = 134202, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "רֵיאָיוֹן עֲבוֹדָה", transliteration = "re'ayon avoda", translation = "собеседование"),
+            original = "רֵיאָיוֹן עֲבוֹדָה", translation = "собеседование"),
 
         WordEntity(id = 134203, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַשְׂכּוֹרֶת", transliteration = "maskoret", translation = "зарплата"),
+            original = "מַשְׂכּוֹרֶת", translation = "зарплата"),
 
         WordEntity(id = 134204, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "תִּיק עֲבוֹדוֹת", transliteration = "tik avodot", translation = "портфолио публикаций"),
+            original = "תִּיק עֲבוֹדוֹת", translation = "портфолио публикаций"),
 
         WordEntity(id = 134205, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "נִסָּיוֹן בְּעִיתוֹנַאוּת", transliteration = "nisayon beitonaut", translation = "опыт в журналистике"),
+            original = "נִסָּיוֹן בְּעִיתוֹנַאוּת", translation = "опыт в журналистике"),
 
         WordEntity(id = 134206, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּקוּפַת נִסָּיוֹן", transliteration = "tkufat nisayon", translation = "испытательный срок"),
+            original = "תְּקוּפַת נִסָּיוֹן", translation = "испытательный срок"),
 
         WordEntity(id = 134207, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "חוֹזֶה עֲבוֹדָה", transliteration = "khoze avoda", translation = "трудовой договор"),
+            original = "חוֹזֶה עֲבוֹדָה", translation = "трудовой договор"),
 
         WordEntity(id = 134208, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "הַמְלָצָה", transliteration = "hamlitsa", translation = "рекомендация"),
+            original = "הַמְלָצָה", translation = "рекомендация"),
 
         WordEntity(id = 134209, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "עוֹרֵךְ", transliteration = "orekh", translation = "редактор"),
+            original = "עוֹרֵךְ", translation = "редактор"),
 
         WordEntity(id = 134210, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "עוֹרֵךְ רָאשִׁי", transliteration = "orekh rashi", translation = "главный редактор"),
+            original = "עוֹרֵךְ רָאשִׁי", translation = "главный редактор"),
 
         WordEntity(id = 134211, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַעֲרֶכֶת עִיתּוֹן", transliteration = "ma'arekhet iton", translation = "редакция газеты"),
+            original = "מַעֲרֶכֶת עִיתּוֹן", translation = "редакция газеты"),
 
         WordEntity(id = 134212, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "כְּתַב עֵת", transliteration = "ktav et", translation = "журнал, периодическое издание"),
+            original = "כְּתַב עֵת", translation = "журнал, периодическое издание"),
 
         WordEntity(id = 134213, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "הֶצְעַת עֲבוֹדָה", transliteration = "hets'at avoda", translation = "предложение о работе, оффер"),
+            original = "הֶצְעַת עֲבוֹדָה", translation = "предложение о работе, оффер"),
 
         WordEntity(id = 134214, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "כְּתָבוֹת לְדוּגְמָה", transliteration = "ktavot ledugma", translation = "примеры публикаций / статей"),
+            original = "כְּתָבוֹת לְדוּגְמָה", translation = "примеры публикаций / статей"),
 
         WordEntity(id = 134215, setId = 1342, languagePair = "he-ru", rarity = "COMMON",
-            original = "תְּחוּם הִתְמַחֻיּוּת", transliteration = "tkhum hitmakhiut", translation = "область специализации"),
+            original = "תְּחוּם הִתְמַחֻיּוּת", translation = "область специализации"),
 
         WordEntity(id = 134216, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עִיתוֹנַאי עַצְמָאִי", transliteration = "itonai atsmay", translation = "независимый журналист, фрилансер"),
+            original = "עִיתוֹנַאי עַצְמָאִי", translation = "независимый журналист, фрилансер"),
 
         WordEntity(id = 134217, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "שְׂכַר טִרְחָה", transliteration = "skhar tirkha", translation = "гонорар"),
+            original = "שְׂכַר טִרְחָה", translation = "гонорар"),
 
         WordEntity(id = 134218, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "בְּדִיקַת עוּבְדוֹת", transliteration = "bdikat uvdot", translation = "проверка фактов (fact-checking)"),
+            original = "בְּדִיקַת עוּבְדוֹת", translation = "проверка фактов (fact-checking)"),
 
         WordEntity(id = 134219, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "נוֹשֵׂא כְּתָבָה", transliteration = "nose ktava", translation = "тема материала / статьи"),
+            original = "נוֹשֵׂא כְּתָבָה", translation = "тема материала / статьи"),
 
         WordEntity(id = 134220, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פּוֹרְמַט תּוֹכֶן", transliteration = "format tokhen", translation = "формат контента"),
+            original = "פּוֹרְמַט תּוֹכֶן", translation = "формат контента"),
 
         WordEntity(id = 134221, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תַּדְרִיךְ עִיתוֹנַאי", transliteration = "tadrikH itonai", translation = "брифинг для прессы"),
+            original = "תַּדְרִיךְ עִיתוֹנַאי", translation = "брифинг для прессы"),
 
         WordEntity(id = 134222, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "כִּיסּוּי אֲזוֹרִי", transliteration = "kisuy azori", translation = "региональное освещение событий"),
+            original = "כִּיסּוּי אֲזוֹרִי", translation = "региональное освещение событий"),
 
         WordEntity(id = 134223, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "רְשׁוּת שִׁדּוּר", transliteration = "reshut shidur", translation = "вещательная корпорация"),
+            original = "רְשׁוּת שִׁדּוּר", translation = "вещательная корпорация"),
 
         WordEntity(id = 134224, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֲבוֹדַת שֶׂדֶה", transliteration = "avodat sade", translation = "репортаж с места событий"),
+            original = "עֲבוֹדַת שֶׂדֶה", translation = "репортаж с места событий"),
 
         WordEntity(id = 134225, setId = 1342, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "זְכוּיּוֹת יוֹצְרִים", transliteration = "zkhuyot yotsrim", translation = "авторские права"),
+            original = "זְכוּיּוֹת יוֹצְרִים", translation = "авторские права"),
 
         // ── Set 1343: Архитектура: основы 2 (level=1, COMMON+UNCOMMON) ───────
 

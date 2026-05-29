@@ -46,7 +46,7 @@ object WordDataHebrewConstructionL2 {
         // ── construction_materials (5) — материалы под рукой ──
         WordEntity(
             id = 172401, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_materials", transliteration = "khol binyan",
+            pos = "phrase", semanticGroup = "construction_materials",
             original = "חוֹל בִּנְיָן", translation = "строительный песок",
             definition = "חֹמֶר דַּק וְצָהֹב שֶׁמְּעָרְבִים בּוֹ מֶלֶט וּמַיִם לִיצִיקָה.",
             definitionNative = "Сыпучий жёлтый материал, который мешают с цементом и водой.",
@@ -56,7 +56,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172402L, 172403L, 172404L, 172405L)),
         WordEntity(
             id = 172402, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_materials", transliteration = "tit binyan",
+            pos = "phrase", semanticGroup = "construction_materials",
             original = "טִיט בִּנְיָן", translation = "строительный раствор",
             definition = "תַּעֲרוֹבֶת רַכָּה שֶׁמְּחַבְּרִים בָּהּ לְבֵנִים אוֹ אֲבָנִים בַּקִּיר.",
             definitionNative = "Мягкая смесь, которой скрепляют кирпичи или камни в стене.",
@@ -66,7 +66,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172401L, 172403L, 172404L, 172405L)),
         WordEntity(
             id = 172403, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_materials", transliteration = "khatzatz",
+            pos = "noun", semanticGroup = "construction_materials",
             original = "חָצָץ", translation = "гравий, щебень",
             definition = "אֲבָנִים קְטַנּוֹת וּקְשׁוֹת שֶׁמְּפַזְּרִים מִתַּחַת לִיסוֹדוֹת.",
             definitionNative = "Мелкие твёрдые камешки, которые сыплют под фундамент.",
@@ -76,7 +76,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172401L, 172402L, 172404L, 172405L)),
         WordEntity(
             id = 172404, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_materials", transliteration = "livnei silikat",
+            pos = "phrase", semanticGroup = "construction_materials",
             original = "לִבְנֵי סִילִיקָט", translation = "силикатные блоки",
             definition = "בְּלוֹקִים לְבָנִים וְכְבֵדִים שֶׁבּוֹנִים מֵהֶם קִירוֹת פְּנִים.",
             definitionNative = "Белые тяжёлые блоки, из которых кладут внутренние стены.",
@@ -86,7 +86,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172401L, 172402L, 172403L, 172405L)),
         WordEntity(
             id = 172405, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_materials", transliteration = "ariakh",
+            pos = "noun", semanticGroup = "construction_materials",
             original = "אֲרִיחַ", translation = "плитка (керамическая)",
             definition = "לוּחַ קְטָן וְקָשֶׁה שֶׁמַּדְבִּיקִים עַל רִצְפָּה אוֹ קִיר אַמְבַּטְיָה.",
             definitionNative = "Маленькая твёрдая пластина, которую клеят на пол или на стену.",
@@ -98,7 +98,7 @@ object WordDataHebrewConstructionL2 {
         // ── construction_tools (5) — инструменты рабочего ──
         WordEntity(
             id = 172406, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_tools", transliteration = "patish",
+            pos = "noun", semanticGroup = "construction_tools",
             original = "פַּטִּישׁ", translation = "молоток",
             definition = "כְּלִי יָד עִם רֹאשׁ מַתֶּכֶת לְהַכָּאַת מַסְמְרִים אוֹ שְׁבִירָה.",
             definitionNative = "Ручной инструмент с железной головкой для забивания гвоздей.",
@@ -108,7 +108,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172407L, 172408L, 172409L, 172410L)),
         WordEntity(
             id = 172407, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_tools", transliteration = "ma'der",
+            pos = "noun", semanticGroup = "construction_tools",
             original = "מַעְדֵּר", translation = "мотыга, кирка",
             definition = "כְּלִי עִם לָהָב רָחָב לְעִבּוּד אֲדָמָה אוֹ פִּסּוּל סַלָּעִים.",
             definitionNative = "Инструмент с широким лезвием для рыхления земли или камней.",
@@ -118,7 +118,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172406L, 172408L, 172409L, 172410L)),
         WordEntity(
             id = 172408, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_tools", transliteration = "mritza",
+            pos = "noun", semanticGroup = "construction_tools",
             original = "מְרִיצָה", translation = "тачка",
             definition = "עֲגָלַת יָד עִם גַּלְגַּל אֶחָד לְהוֹבָלַת חֹמֶר כָּבֵד בָּאֲתָר.",
             definitionNative = "Ручная одноколёсная повозка для перевозки тяжёлых грузов.",
@@ -128,7 +128,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172406L, 172407L, 172409L, 172410L)),
         WordEntity(
             id = 172409, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_tools", transliteration = "mavreg",
+            pos = "noun", semanticGroup = "construction_tools",
             original = "מַבְרֵג", translation = "отвёртка",
             definition = "כְּלִי דַּק שֶׁסּוֹבְבִים אִתּוֹ בָּרְגִים פְּנִימָה אוֹ הַחוּצָה.",
             definitionNative = "Тонкий инструмент, которым вкручивают и выкручивают шурупы.",
@@ -138,7 +138,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172406L, 172407L, 172408L, 172410L)),
         WordEntity(
             id = 172410, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_tools", transliteration = "mekade'akh khashmali",
+            pos = "phrase", semanticGroup = "construction_tools",
             original = "מְקַדֵּחַ חַשְׁמָלִי", translation = "электродрель",
             definition = "מַכְשִׁיר נַייָּד שֶׁעוֹשֶׂה חוֹרִים בְּקִיר אוֹ בְּעֵץ בְּזְרִיזוּת.",
             definitionNative = "Переносной прибор, который быстро делает дыры в стене или дереве.",
@@ -150,7 +150,7 @@ object WordDataHebrewConstructionL2 {
         // ── construction_operations (5) — простые операции ──
         WordEntity(
             id = 172411, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "construction_operations", transliteration = "lakhpor",
+            pos = "verb", semanticGroup = "construction_operations",
             original = "לַחְפֹּר", translation = "копать, рыть",
             definition = "לְהוֹצִיא אֲדָמָה מֵהַקַּרְקַע בְּעֶזְרַת מַכְשִׁיר אוֹ יָדַיִם.",
             definitionNative = "Вынимать землю из почвы — лопатой, киркой или машиной.",
@@ -160,7 +160,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172412L, 172413L, 172414L, 172415L)),
         WordEntity(
             id = 172412, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "construction_operations", transliteration = "litzok",
+            pos = "verb", semanticGroup = "construction_operations",
             original = "לִיצֹק", translation = "заливать (бетон)",
             definition = "לְשַׁפֹּךְ חֹמֶר נוֹזְלִי לַתַּבְנִית כְּדֵי שֶׁיִּתְקַשֶּׁה לְצוּרָה.",
             definitionNative = "Подавать жидкую массу в форму, чтобы она застыла в нужном виде.",
@@ -170,7 +170,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172411L, 172413L, 172414L, 172415L)),
         WordEntity(
             id = 172413, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "construction_operations", transliteration = "litzboa",
+            pos = "verb", semanticGroup = "construction_operations",
             original = "לִצְבֹּעַ", translation = "красить",
             definition = "לְכַסּוֹת קִיר אוֹ עֵץ בְּשִׁכְבָה צִבְעוֹנִית בְּעֶזְרַת מִבְרֶשֶׁת.",
             definitionNative = "Покрывать стену или дерево цветным слоем при помощи кисти.",
@@ -180,7 +180,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172411L, 172412L, 172414L, 172415L)),
         WordEntity(
             id = 172414, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "verb", semanticGroup = "construction_operations", transliteration = "letayeakh",
+            pos = "verb", semanticGroup = "construction_operations",
             original = "לְטַיֵּחַ", translation = "штукатурить",
             definition = "לִמְרֹחַ שִׁכְבַת גֶּבֶס דַּקָּה עַל קִיר כְּדֵי שֶׁיִּהְיֶה חָלָק.",
             definitionNative = "Намазывать тонкий слой смеси на стену, чтобы она стала гладкой.",
@@ -190,7 +190,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172411L, 172412L, 172413L, 172415L)),
         WordEntity(
             id = 172415, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "verb", semanticGroup = "construction_operations", transliteration = "lehakhlik",
+            pos = "verb", semanticGroup = "construction_operations",
             original = "לְהַחְלִיק", translation = "выравнивать, заглаживать",
             definition = "לַעֲבֹר עַל מַשֶּׁהוּ עַד שֶׁיִּהְיֶה חָלָק וּבְלִי בְּלִיטוֹת.",
             definitionNative = "Проводить по поверхности, пока она не станет ровной и без бугров.",
@@ -202,7 +202,7 @@ object WordDataHebrewConstructionL2 {
         // ── construction_measurements (5) — мерить и проверять ──
         WordEntity(
             id = 172416, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "construction_measurements", transliteration = "limdod",
+            pos = "verb", semanticGroup = "construction_measurements",
             original = "לִמְדֹּד", translation = "измерять",
             definition = "לִבְדֹּק כַּמָּה מַשֶּׁהוּ אָרֹךְ אוֹ רָחָב בְּעֶזְרַת סֶרֶט אוֹ סַרְגֵּל.",
             definitionNative = "Узнавать длину или ширину чего-то лентой или линейкой.",
@@ -212,7 +212,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172417L, 172418L, 172419L, 172420L)),
         WordEntity(
             id = 172417, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_measurements", transliteration = "plas mayim",
+            pos = "phrase", semanticGroup = "construction_measurements",
             original = "פְּלַס מַיִם", translation = "уровень (водяной)",
             definition = "כְּלִי אָרֹךְ עִם בּוּעָה בְּתוֹךְ נוֹזֵל לִבְדִיקַת אֹפֶק יָשָׁר.",
             definitionNative = "Длинный инструмент с пузырьком в жидкости — проверять горизонталь.",
@@ -222,7 +222,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172416L, 172418L, 172419L, 172420L)),
         WordEntity(
             id = 172418, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_measurements", transliteration = "meter glila",
+            pos = "phrase", semanticGroup = "construction_measurements",
             original = "מֶטֶר גְּלִילָה", translation = "рулетка",
             definition = "סֶרֶט גָּמִישׁ עִם מִסְפָּרִים שֶׁמּוֹשְׁכִים מִקֻּפְסָה קְטַנָּה.",
             definitionNative = "Гибкая лента с цифрами, которую вытягивают из коробочки.",
@@ -232,7 +232,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172416L, 172417L, 172419L, 172420L)),
         WordEntity(
             id = 172419, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_measurements", transliteration = "anakh",
+            pos = "noun", semanticGroup = "construction_measurements",
             original = "אָנָךְ", translation = "отвес",
             definition = "מִשְׁקֹלֶת קְטַנָּה תְּלוּיָה עַל חוּט לִבְדִיקַת קַו אֲנָכִי.",
             definitionNative = "Маленький груз на верёвке — проверяет вертикаль стены.",
@@ -242,7 +242,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172416L, 172417L, 172418L, 172420L)),
         WordEntity(
             id = 172420, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_measurements", transliteration = "khad-zavit",
+            pos = "phrase", semanticGroup = "construction_measurements",
             original = "חַד-זָוִית", translation = "угольник, наугольник",
             definition = "כְּלִי בְּצוּרַת אוֹת L לִבְדִיקַת זָוִית שֶׁל תִּשְׁעִים מַעֲלוֹת.",
             definitionNative = "Инструмент в форме буквы Г — проверять прямой угол в девяносто градусов.",
@@ -254,7 +254,7 @@ object WordDataHebrewConstructionL2 {
         // ── construction_orders (5) — указания бригадира ──
         WordEntity(
             id = 172421, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "construction_orders", transliteration = "lehatkhil",
+            pos = "verb", semanticGroup = "construction_orders",
             original = "לְהַתְחִיל", translation = "начинать",
             definition = "לַעֲשׂוֹת אֶת הַצַּעַד הָרִאשׁוֹן שֶׁל מְשִׂימָה אוֹ עֲבוֹדָה חֲדָשָׁה.",
             definitionNative = "Делать первый шаг новой работы или задачи.",
@@ -264,7 +264,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172422L, 172423L, 172424L, 172425L)),
         WordEntity(
             id = 172422, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "construction_orders", transliteration = "lesayem",
+            pos = "verb", semanticGroup = "construction_orders",
             original = "לְסַיֵּם", translation = "заканчивать, завершать",
             definition = "לְהַגִּיעַ לַסּוֹף שֶׁל מְשִׂימָה וְלֹא לְהַשְׁאִיר חֲלָקִים פְּתוּחִים.",
             definitionNative = "Доходить до конца задачи и не оставлять открытых частей.",
@@ -274,7 +274,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172421L, 172423L, 172424L, 172425L)),
         WordEntity(
             id = 172423, setId = 1724, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_orders", transliteration = "maher yoter",
+            pos = "phrase", semanticGroup = "construction_orders",
             original = "מְהֵר יוֹתֵר", translation = "быстрее (давай!)",
             definition = "בַּקָּשָׁה מֵהַבּוֹס לַעֲבֹד בְּקֶצֶב גָּדוֹל יוֹתֵר מִכְּפִי שֶׁעוֹשִׂים עַכְשָׁו.",
             definitionNative = "Просьба от бригадира работать в большем темпе, чем сейчас.",
@@ -284,7 +284,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172421L, 172422L, 172424L, 172425L)),
         WordEntity(
             id = 172424, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_orders", transliteration = "ha'aver li",
+            pos = "phrase", semanticGroup = "construction_orders",
             original = "הַעֲבֵר לִי", translation = "передай мне (м. р.)",
             definition = "פְּקֻדָּה קְצָרָה לַחֲבֵר לְהוֹשִׁיט פְּרִיט שֶׁמּוֹנֵחַ קָרוֹב אֵלָיו.",
             definitionNative = "Короткая команда товарищу подать предмет, лежащий рядом с ним.",
@@ -294,7 +294,7 @@ object WordDataHebrewConstructionL2 {
             fillInBlankExclusions = listOf(172421L, 172422L, 172423L, 172425L)),
         WordEntity(
             id = 172425, setId = 1724, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_orders", transliteration = "ten li kli",
+            pos = "phrase", semanticGroup = "construction_orders",
             original = "תֵּן לִי כְּלִי", translation = "дай мне инструмент",
             definition = "בַּקָּשָׁה לְהָבִיא לַדּוֹבֵר מַכְשִׁיר עֲבוֹדָה שֶׁהוּא צָרִיךְ כָּעֵת.",
             definitionNative = "Просьба принести говорящему рабочий инструмент прямо сейчас.",

@@ -41,7 +41,7 @@ object WordDataHebrewArchL4 {
         // ── architecture_foundations (5) — несущие конструкции ──
         WordEntity(
             id = 170601, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_foundations", transliteration = "yesod",
+            pos = "noun", semanticGroup = "architecture_foundations",
             original = "יְסוֹד", translation = "фундамент",
             definition = "הַחֵלֶק הַתַּחְתּוֹן שֶׁל הַמִּבְנֶה הַנּוֹשֵׂא אֶת כָּל מִשְׁקַל הַבַּיִת.",
             definitionNative = "Нижняя часть здания, передающая нагрузку на грунт.",
@@ -50,7 +50,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170603L, 170604L, 170605L)),
         WordEntity(
             id = 170602, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "architecture_foundations", transliteration = "sheled mivne",
+            pos = "phrase", semanticGroup = "architecture_foundations",
             original = "שֶׁלֶד מִבְנֶה", translation = "каркас здания",
             definition = "מַעֲרֶכֶת קוֹרוֹת וְעַמּוּדִים שֶׁמַּחֲזִיקָה אֶת הַבַּיִת מִבִּפְנִים.",
             definitionNative = "Внутренняя система балок и стоек, держащая всё здание.",
@@ -59,7 +59,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170605L)),
         WordEntity(
             id = 170603, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_foundations", transliteration = "zikuy",
+            pos = "noun", semanticGroup = "architecture_foundations",
             original = "זִיּוּן", translation = "арматура",
             definition = "מוֹטוֹת בַּרְזֶל הַטְּמוּנִים בְּתוֹךְ הַבֶּטוֹן לְחִזּוּקוֹ.",
             definitionNative = "Стальные стержни, спрятанные внутри бетона ради прочности.",
@@ -68,7 +68,7 @@ object WordDataHebrewArchL4 {
         ),
         WordEntity(
             id = 170604, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_foundations", transliteration = "mekhitsa",
+            pos = "noun", semanticGroup = "architecture_foundations",
             original = "מְחִיצָה", translation = "перегородка",
             definition = "קִיר פְּנִימִי קַל הַמַּפְרִיד חֲדָרִים בְּלִי לָשֵׂאת מִשְׁקַל.",
             definitionNative = "Лёгкая внутренняя стена, делящая комнаты без нагрузки.",
@@ -77,7 +77,7 @@ object WordDataHebrewArchL4 {
         ),
         WordEntity(
             id = 170605, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_foundations", transliteration = "pilon",
+            pos = "noun", semanticGroup = "architecture_foundations",
             original = "פִּילוֹן", translation = "пилон",
             definition = "מִגְדָּל אוֹ עַמּוּד גָּבוֹהַּ הַמַּחֲזִיק כְּבָלִים שֶׁל גֶּשֶׁר תָּלוּי.",
             definitionNative = "Башня или стойка, держащая тросы висячего моста.",
@@ -88,7 +88,7 @@ object WordDataHebrewArchL4 {
         // ── architecture_materials (5) — современные стройматериалы ──
         WordEntity(
             id = 170606, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "architecture_materials", transliteration = "beton mezuyan",
+            pos = "phrase", semanticGroup = "architecture_materials",
             original = "בֶּטוֹן מְזֻיָּן", translation = "железобетон",
             definition = "תַּעֲרֹבֶת חֲזָקָה שֶׁל בֶּטוֹן עִם שִׁלְדַּת מַתֶּכֶת בְּתוֹכוֹ.",
             definitionNative = "Прочная смесь бетона со стальной арматурой внутри.",
@@ -97,7 +97,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170608L, 170609L)),
         WordEntity(
             id = 170607, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_materials", transliteration = "geves",
+            pos = "noun", semanticGroup = "architecture_materials",
             original = "גֶּבֶס", translation = "гипс; гипсокартон",
             definition = "חֹמֶר רַךְ לְבָנִיָּה פְּנִימִית שֶׁל קִירוֹת קַלִּים.",
             definitionNative = "Лёгкий материал для внутренних перегородок и потолков.",
@@ -106,7 +106,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170610L)),
         WordEntity(
             id = 170608, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "architecture_materials", transliteration = "bidud termi",
+            pos = "phrase", semanticGroup = "architecture_materials",
             original = "בִּדּוּד תֶּרְמִי", translation = "теплоизоляция",
             definition = "שִׁכְבָה הַמּוֹנַעַת אֲבֵדַת חֹם מֵהַבַּיִת בַּחֹרֶף.",
             definitionNative = "Слой, удерживающий тепло в доме зимой и прохладу летом.",
@@ -115,7 +115,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170606L, 170607L, 170609L, 170610L)),
         WordEntity(
             id = 170609, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "architecture_materials", transliteration = "aitum",
+            pos = "phrase", semanticGroup = "architecture_materials",
             original = "אִטּוּם", translation = "гидроизоляция",
             definition = "עֲבוֹדָה הַמּוֹנַעַת חֲדִירַת מַיִם דֶּרֶךְ הַגָּג אוֹ הַקִּירוֹת.",
             definitionNative = "Защитный слой против протечек влаги через крышу или стены.",
@@ -124,7 +124,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170606L, 170608L)),
         WordEntity(
             id = 170610, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_materials", transliteration = "sheleg",
+            pos = "noun", semanticGroup = "architecture_materials",
             original = "טִיט", translation = "цементный раствор",
             definition = "תַּעֲרֹבֶת רְטֻבָּה הַמְחַבֶּרֶת לְבֵנִים בִּשְׁעַת הַבְּנִיָּה.",
             definitionNative = "Влажная смесь, скрепляющая кирпичи во время кладки.",
@@ -135,7 +135,7 @@ object WordDataHebrewArchL4 {
         // ── architecture_design (5) — проектирование и чертежи ──
         WordEntity(
             id = 170611, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_design", transliteration = "sirtut",
+            pos = "noun", semanticGroup = "architecture_design",
             original = "שִׂרְטוּט", translation = "чертёж",
             definition = "צִיּוּר מְדֻיָּק שֶׁל הַמִּבְנֶה עִם מְמַדִּים וְקַוֵּי מִדָּה.",
             definitionNative = "Точный графический документ с размерами и масштабом.",
@@ -144,7 +144,7 @@ object WordDataHebrewArchL4 {
         ),
         WordEntity(
             id = 170612, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_design", transliteration = "skitsa",
+            pos = "noun", semanticGroup = "architecture_design",
             original = "סְקִיצָה", translation = "эскиз",
             definition = "שִׂרְטוּט רִאשׁוֹנִי וְגַס שֶׁל רַעְיוֹן הַמִּבְנֶה לְפְנֵי הַתָּכְנִית.",
             definitionNative = "Первый набросок идеи здания до точного проекта.",
@@ -153,7 +153,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170611L, 170613L, 170614L, 170615L)),
         WordEntity(
             id = 170613, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_design", transliteration = "khatakh",
+            pos = "noun", semanticGroup = "architecture_design",
             original = "חֲתָךְ", translation = "разрез (чертёж)",
             definition = "הַצָּגָה אֳנָכִית שֶׁל הַמִּבְנֶה כְּאִלּוּ נֶחְתַּךְ בְּסַכִּין דִּמְיוֹנִית.",
             definitionNative = "Вертикальное сечение здания, показывающее устройство этажей.",
@@ -162,7 +162,7 @@ object WordDataHebrewArchL4 {
         ),
         WordEntity(
             id = 170614, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "architecture_design", transliteration = "tokhnit av",
+            pos = "phrase", semanticGroup = "architecture_design",
             original = "תָּכְנִית אָב", translation = "генеральный план",
             definition = "מִסְמָךְ הַמַּגְדִּיר אֶת הַפִּתּוּחַ הָעֲתִידִי שֶׁל שְׁכוּנָה אוֹ עִיר.",
             definitionNative = "Документ, описывающий перспективное развитие района или города.",
@@ -171,7 +171,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170612L, 170615L)),
         WordEntity(
             id = 170615, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "architecture_design", transliteration = "perspektiva",
+            pos = "noun", semanticGroup = "architecture_design",
             original = "פֶּרְסְפֶּקְטִיבָה", translation = "перспектива",
             definition = "צִיּוּר תְּלַת־מֵמַדִּי הַמַּדְמֶה אֵיךְ יֵרָאֶה הַמִּבְנֶה לְעוֹבֵר אֹרַח.",
             definitionNative = "Объёмный рисунок здания глазами случайного прохожего.",
@@ -182,7 +182,7 @@ object WordDataHebrewArchL4 {
         // ── architecture_styles_pro (5) — направления XX–XXI вв. ──
         WordEntity(
             id = 170616, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "architecture_styles_pro", transliteration = "modernizm",
+            pos = "noun", semanticGroup = "architecture_styles_pro",
             original = "מוֹדֶרְנִיזְם", translation = "модернизм",
             definition = "תְּנוּעָה אַדְרִיכָלִית שֶׁל הַמֵּאָה הָעֶשְׂרִים הַדּוֹחָה קִשּׁוּטִים מְיֻתָּרִים.",
             definitionNative = "Течение XX века, отказавшееся от лишнего декора в пользу функции.",
@@ -191,7 +191,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170618L, 170619L, 170620L)),
         WordEntity(
             id = 170617, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_styles_pro", transliteration = "adrikhalut organit",
+            pos = "phrase", semanticGroup = "architecture_styles_pro",
             original = "אַדְרִיכָלוּת אוֹרְגָנִית", translation = "органическая архитектура",
             definition = "גִּישָׁה הַמְשַׁלֶּבֶת אֶת הַמִּבְנֶה בַּנּוֹף וּמְחַקָּה צוּרוֹת מִן הַטֶּבַע.",
             definitionNative = "Подход, вписывающий здание в ландшафт и подражающий формам природы.",
@@ -200,7 +200,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170616L, 170618L, 170619L, 170620L)),
         WordEntity(
             id = 170618, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "architecture_styles_pro", transliteration = "post-modernizm",
+            pos = "noun", semanticGroup = "architecture_styles_pro",
             original = "פּוֹסְט־מוֹדֶרְנִיזְם", translation = "постмодернизм",
             definition = "תְּגוּבָה לַסִּגְנוֹן הַמּוֹדֶרְנִי הַמַּחֲזִירָה הוּמוֹר וְצִיטוּטִים מֵהֶעָבָר.",
             definitionNative = "Реакция на сухой модернизм с возвратом игры цитатами и иронии.",
@@ -209,7 +209,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170616L, 170619L, 170620L)),
         WordEntity(
             id = 170619, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "architecture_styles_pro", transliteration = "dekonstruktivizm",
+            pos = "noun", semanticGroup = "architecture_styles_pro",
             original = "דֵּקוֹנְסְטְרוּקְטִיבִיזְם", translation = "деконструктивизм",
             definition = "סִגְנוֹן שֶׁשּׁוֹבֵר אֶת הַסִּימֶטְרְיָה וְיוֹצֵר רֹשֶׁם שֶׁל קְרִיסָה מְבֻיֶּמֶת.",
             definitionNative = "Стиль, ломающий симметрию ради эффекта управляемого распада.",
@@ -218,7 +218,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170616L, 170617L, 170618L, 170620L)),
         WordEntity(
             id = 170620, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "architecture_styles_pro", transliteration = "metabolizm",
+            pos = "noun", semanticGroup = "architecture_styles_pro",
             original = "מֶטָבּוֹלִיזְם", translation = "метаболизм (архитектура)",
             definition = "תְּנוּעָה יַפָּנִית שֶׁתִּכְנְנָה עָרִים כְּתָאִים מִתְחַלְּפִים בְּמוֹ הַזְּמַן.",
             definitionNative = "Японское движение, проектировавшее города как сменяемые клетки.",
@@ -229,7 +229,7 @@ object WordDataHebrewArchL4 {
         // ── architecture_classical_pro (5) — классические термины и детали ──
         WordEntity(
             id = 170621, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "architecture_classical_pro", transliteration = "pilaster",
+            pos = "noun", semanticGroup = "architecture_classical_pro",
             original = "פִּילַסְטֶר", translation = "пилястра",
             definition = "עַמּוּד שָׁטוּחַ הַבּוֹלֵט מְעַט מִן הַקִּיר וּמְשַׁמֵּשׁ קִשּׁוּט בִּלְבַד.",
             definitionNative = "Плоский выступ из стены, имитирующий колонну для украшения.",
@@ -238,7 +238,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170605L, 170622L, 170623L, 170624L, 170625L)),
         WordEntity(
             id = 170622, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "architecture_classical_pro", transliteration = "kontrafors",
+            pos = "noun", semanticGroup = "architecture_classical_pro",
             original = "קוֹנְטְרָפוֹרְס", translation = "контрфорс",
             definition = "תּוֹמֵךְ אֳנָכִי מָסִיבִי הַמַּחֲזִיק קִיר חִיצוֹנִי גָּבוֹהַּ מִפְּנֵי קְרִיסָה.",
             definitionNative = "Массивный наружный упор, удерживающий высокую стену собора.",
@@ -247,7 +247,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170621L, 170623L, 170624L, 170625L)),
         WordEntity(
             id = 170623, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "architecture_classical_pro", transliteration = "friz",
+            pos = "noun", semanticGroup = "architecture_classical_pro",
             original = "פְרִיז", translation = "фриз",
             definition = "פַּס מְעֻטָּר אֳפֻקִּי שֶׁעוֹבֵר לְאֹרֶךְ חֵלֶק עֶלְיוֹן שֶׁל קִיר.",
             definitionNative = "Узкая декоративная полоса наверху стены или в антаблементе.",
@@ -256,7 +256,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170621L, 170622L, 170624L, 170625L)),
         WordEntity(
             id = 170624, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "architecture_classical_pro", transliteration = "timpanon",
+            pos = "noun", semanticGroup = "architecture_classical_pro",
             original = "טִימְפָּנוֹן", translation = "тимпан",
             definition = "מִשְׁטָח מְשֻׁלָּשׁ מְעֻטָּר שֶׁמֵּעַל הַכְּנִיסָה הָרָאשִׁית שֶׁל הַמִּקְדָּשׁ.",
             definitionNative = "Треугольное декоративное поле над парадным входом храма.",
@@ -265,7 +265,7 @@ object WordDataHebrewArchL4 {
          fillInBlankExclusions = listOf(170605L, 170621L, 170622L, 170623L, 170625L)),
         WordEntity(
             id = 170625, setId = 1706, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "architecture_classical_pro", transliteration = "antablement",
+            pos = "noun", semanticGroup = "architecture_classical_pro",
             original = "אַנְטַבְּלֶמֶנְט", translation = "антаблемент",
             definition = "חֵלֶק עֶלְיוֹן שֶׁל הַסֵּדֶר הַקְּלָאסִי הַמּוּנָח עַל הָעַמּוּדִים.",
             definitionNative = "Верхняя часть классического ордера, лежащая на колоннах.",

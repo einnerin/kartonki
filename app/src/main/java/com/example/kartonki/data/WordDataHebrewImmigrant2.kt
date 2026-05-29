@@ -22,7 +22,7 @@ object WordDataHebrewImmigrant2 {
 
         WordEntity(
             id = 102601, setId = 1026, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "dira",
+            pos = "noun", semanticGroup = "housing",
             original = "דִּירָה", translation = "квартира",
             definition = "יְחִידַת מִגּוּרִים בְּתוֹךְ בְּנִיָּן, בְּדֶרֶךְ כְּלָל מוּשְׂכֶּרֶת אוֹ נִרְכֶּשֶׁת.",
             definitionNative = "Жилое помещение в здании, как правило арендуемое или приобретаемое.",
@@ -31,7 +31,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102602, setId = 1026, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "skhirut",
+            pos = "noun", semanticGroup = "housing",
             original = "שְׂכִירוּת", translation = "аренда",
             definition = "הַסְכֵּם שֶׁבּוֹ מִישֶׁהוּ מְשַׁלֵּם לָגוּר בִּנְכַס שֶׁל אַחֵר לְתְּקוּפָה מְסוּיֶּמֶת.",
             definitionNative = "Договор, по которому человек платит за проживание в чужой собственности на определённый срок.",
@@ -40,7 +40,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102603L, 102616L)),
         WordEntity(
             id = 102603, setId = 1026, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "skhar dira",
+            pos = "noun", semanticGroup = "housing",
             original = "שְׂכַר דִּירָה", translation = "плата за аренду / квартплата",
             definition = "הַסְכוּם הַחוֹדְשִׁי שֶׁהַשּׁוֹכֵר מְשַׁלֵּם לַמַּשְׂכִּיר.",
             definitionNative = "Ежемесячная сумма, которую арендатор платит арендодателю.",
@@ -49,7 +49,7 @@ object WordDataHebrewImmigrant2 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 102604, setId = 1026, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "binyan",
+            pos = "noun", semanticGroup = "housing",
             original = "בְּנִיָּן", translation = "здание / дом (многоквартирный)",
             definition = "מִבְנֶה שֶׁבּוֹ דִּירוֹת אוֹ שְׁטָחִים רַבִּים.",
             definitionNative = "Строение, в котором находятся несколько квартир или помещений.",
@@ -58,7 +58,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102605, setId = 1026, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "salon",
+            pos = "noun", semanticGroup = "housing",
             original = "סָלוֹן", translation = "гостиная / зал",
             definition = "הַחֶדֶר הָרָאשִׁי בַּדִּירָה, שָׁם מְקַבְּלִים אוֹרְחִים.",
             definitionNative = "Главная комната в квартире, где принимают гостей.",
@@ -66,7 +66,7 @@ object WordDataHebrewImmigrant2 {
             exampleNative = "סָלוֹן большой и светлый, с балконом."),
         WordEntity(
             id = 102606, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "shoker",
+            pos = "noun", semanticGroup = "housing",
             original = "שׁוֹכֵר", translation = "съёмщик / арендатор",
             definition = "מִי שֶׁגָּר בַּדִּירָה וּמְשַׁלֵּם שְׂכִירוּת לַבְּעָלִים.",
             definitionNative = "Тот, кто живёт в квартире и платит аренду владельцу.",
@@ -75,7 +75,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102607, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "maskir",
+            pos = "noun", semanticGroup = "housing",
             original = "מַשְׂכִּיר", translation = "арендодатель / хозяин квартиры",
             definition = "הַבְּעָלִים שֶׁל הַדִּירָה הַמַּשְׂכִּירִים אוֹתָהּ לָשׁוֹכֵר.",
             definitionNative = "Владелец квартиры, сдающий её арендатору.",
@@ -83,7 +83,7 @@ object WordDataHebrewImmigrant2 {
             exampleNative = "מַשְׂכִּיר запретил держать животных в квартире."),
         WordEntity(
             id = 102608, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "dalan",
+            pos = "noun", semanticGroup = "housing",
             original = "דַּלָּן", translation = "агент по недвижимости",
             definition = "מִי שֶׁמְּתַוֵּךְ בֵּין שׁוֹכְרִים לְמַשְׂכִּירִים וְגוֹבֶה עֲמָלָה.",
             definitionNative = "Посредник между арендаторами и арендодателями, берущий комиссию.",
@@ -92,7 +92,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102609, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "koma",
+            pos = "noun", semanticGroup = "housing",
             original = "קוֹמָה", translation = "этаж",
             definition = "רָמָה אַחַת בְּבִנְיָן שֶׁבָּהּ נִמְצָאוֹת הַדִּירוֹת.",
             definitionNative = "Один уровень в здании, на котором расположены квартиры.",
@@ -100,7 +100,7 @@ object WordDataHebrewImmigrant2 {
             exampleNative = "Наша квартира на третьем קוֹמָה."),
         WordEntity(
             id = 102610, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "pikadon",
+            pos = "noun", semanticGroup = "housing",
             original = "פִּקָּדוֹן", translation = "залог / депозит",
             definition = "סְכוּם כֶּסֶף שֶׁהַשּׁוֹכֵר מַפְקִיד לְהַבְטָחַת הַדִּירָה.",
             definitionNative = "Сумма денег, которую арендатор вносит в обеспечение квартиры.",
@@ -109,7 +109,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102603L)),
         WordEntity(
             id = 102611, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "mirpeset",
+            pos = "noun", semanticGroup = "housing",
             original = "מִרְפֶּסֶת", translation = "балкон",
             definition = "יָצִיאָה מֵחוּץ לַדִּירָה עִם מַעֲקֶה.",
             definitionNative = "Выступ снаружи квартиры с перилами.",
@@ -117,7 +117,7 @@ object WordDataHebrewImmigrant2 {
             exampleNative = "Я люблю пить кофе на מִרְפֶּסֶת по утрам."),
         WordEntity(
             id = 102612, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "ma'alit",
+            pos = "noun", semanticGroup = "housing",
             original = "מַעֲלִית", translation = "лифт",
             definition = "מַכְשִׁיר הַמַּעֲלֶה וּמוֹרִיד אֲנָשִׁים בֵּין קוֹמוֹת הַבְּנִיָּן.",
             definitionNative = "Устройство, поднимающее и опускающее людей между этажами здания.",
@@ -125,7 +125,7 @@ object WordDataHebrewImmigrant2 {
             exampleNative = "מַעֲלִית сегодня не работает, нужно идти по лестнице."),
         WordEntity(
             id = 102613, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "makhsan",
+            pos = "noun", semanticGroup = "housing",
             original = "מַחְסָן", translation = "кладовка / склад",
             definition = "חֶדֶר קָטָן לְאִחְסוּן חֲפָצִים שֶׁאֵין מֶקוֹם לָהֶם בַּדִּירָה.",
             definitionNative = "Маленькая комната для хранения вещей, которым нет места в квартире.",
@@ -133,7 +133,7 @@ object WordDataHebrewImmigrant2 {
             exampleNative = "Мы поставили велосипеды в מַחְסָן."),
         WordEntity(
             id = 102614, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "takala",
+            pos = "noun", semanticGroup = "housing",
             original = "תַּקָּלָה", translation = "неисправность / поломка",
             definition = "בְּעָיָה טֶכְנִית הַדּוֹרֶשֶׁת תִּקּוּן.",
             definitionNative = "Техническая проблема, требующая ремонта.",
@@ -142,7 +142,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102615, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "khatser",
+            pos = "noun", semanticGroup = "housing",
             original = "חָצֵר", translation = "двор / участок",
             definition = "שֶׁטַח פָּתוּחַ לְיַד הַבַּיִת אוֹ הַבְּנִיָּן.",
             definitionNative = "Открытое пространство рядом с домом или зданием.",
@@ -151,7 +151,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102611L)),
         WordEntity(
             id = 102616, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "khoze",
+            pos = "noun", semanticGroup = "housing",
             original = "חוֹזֶה", translation = "договор аренды",
             definition = "הֶסְכֵּם מִשְׁפָּטִי בֵּין הַשּׁוֹכֵר לְמַשְׂכִּיר הַמְּפָרֵט אֶת תְּנָאֵי הַשְּׂכִירוּת.",
             definitionNative = "Юридическое соглашение между арендатором и арендодателем, описывающее условия аренды.",
@@ -160,7 +160,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102617, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "vaad bayit",
+            pos = "noun", semanticGroup = "housing",
             original = "וַעַד בַּיִת", translation = "домовой комитет / правление",
             definition = "גּוּף נִבְחָר שֶׁל דַּיָּירִים הַמְּנַהֵל אֶת הַחֶלְקִים הַמְּשׁוּתָּפִים שֶׁל הַבְּנִיָּן.",
             definitionNative = "Выборный орган жильцов, управляющий общими частями здания.",
@@ -169,7 +169,7 @@ object WordDataHebrewImmigrant2 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 102618, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "arnona",
+            pos = "noun", semanticGroup = "housing",
             original = "אַרְנוֹנָה", translation = "арнона (муниципальный налог)",
             definition = "מַס מוּנִיצִיפָּלִי שֶׁמְּשַׁלְּמִים בַּעֲלֵי נְכָסִים לָעִירִיָּה.",
             definitionNative = "Муниципальный налог, уплачиваемый владельцами недвижимости в мэрию.",
@@ -178,7 +178,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102619, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "shiputs",
+            pos = "noun", semanticGroup = "housing",
             original = "שִׁפּוּץ", translation = "ремонт / реновация",
             definition = "עֲבוֹדוֹת שִׁפּוּר וְחִידּוּשׁ שֶׁל דִּירָה אוֹ בִּנְיָן.",
             definitionNative = "Работы по улучшению и обновлению квартиры или здания.",
@@ -187,7 +187,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102620, setId = 1026, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "housing", transliteration = "moda'a",
+            pos = "noun", semanticGroup = "housing",
             original = "מוֹדְעָה", translation = "объявление",
             definition = "הוֹדָעָה פֻּמְבִּית בִּכְתָב לְחִיפּוּשׁ אוֹ הַצָּעָה שֶׁל דִּירָה.",
             definitionNative = "Публичное письменное сообщение для поиска или предложения квартиры.",
@@ -201,7 +201,7 @@ object WordDataHebrewImmigrant2 {
 
         WordEntity(
             id = 102701, setId = 1027, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "gaz",
+            pos = "noun", semanticGroup = "utilities",
             original = "גָּז", translation = "газ",
             definition = "דְּלֶק לְבִּישּׁוּל וְחִמּוּם הַמְּסוּפָּק דֶּרֶךְ צִנּוֹרוֹת אוֹ בַּלּוֹנִים.",
             definitionNative = "Топливо для приготовления пищи и обогрева, подаваемое через трубы или баллоны.",
@@ -210,7 +210,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102703L, 102711L, 102722L)),
         WordEntity(
             id = 102702, setId = 1027, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "ashpa",
+            pos = "noun", semanticGroup = "utilities",
             original = "אַשְׁפָּה", translation = "мусор",
             definition = "פְּסֹלֶת וְשַׁיְּרֵי אֲכִילָה וּשְׁאָר חֲפָצִים שֶׁאֵין בָּהֶם שִׁימּוּשׁ.",
             definitionNative = "Отходы, объедки и прочие вещи, которым больше нет применения.",
@@ -219,7 +219,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102703, setId = 1027, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "internet",
+            pos = "noun", semanticGroup = "utilities",
             original = "אִינְטֶרְנֶט", translation = "интернет",
             definition = "רֶשֶׁת תִּקְשׁוֹרֶת עוֹלָמִית לְשִׁימּוּשׁ בְּמֵידָע וּבְתִּקְשׁוֹרֶת.",
             definitionNative = "Глобальная сеть для получения информации и общения.",
@@ -228,7 +228,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102701L, 102704L, 102707L, 102711L, 102723L)),
         WordEntity(
             id = 102704, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "mone",
+            pos = "noun", semanticGroup = "utilities",
             original = "מוֹנֶה", translation = "счётчик (газ / вода / электричество)",
             definition = "מַכְשִׁיר הַמּוֹדֵד כַּמּוּת צְרִיכַת חַשְׁמַל, גָּז אוֹ מַיִם.",
             definitionNative = "Прибор, измеряющий объём потребления электричества, газа или воды.",
@@ -237,7 +237,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102705, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "kabala",
+            pos = "noun", semanticGroup = "utilities",
             original = "קְבָּלָה", translation = "квитанция",
             definition = "אִישּׁוּר בִּכְתָב עַל תַּשְׁלוּם שֶׁבוּצַּע.",
             definitionNative = "Письменное подтверждение произведённого платежа.",
@@ -245,7 +245,7 @@ object WordDataHebrewImmigrant2 {
             exampleNative = "Храни קְבָּלָה за каждый арендный платёж."),
         WordEntity(
             id = 102706, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "khov",
+            pos = "noun", semanticGroup = "utilities",
             original = "חוֹב", translation = "долг",
             definition = "סְכוּם כֶּסֶף שֶׁחַיָּבִים לְמִישֶׁהוּ אוֹ לְחֶבְרָה.",
             definitionNative = "Сумма денег, которую должны кому-либо или компании.",
@@ -254,7 +254,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102715L)),
         WordEntity(
             id = 102707, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "boyler",
+            pos = "noun", semanticGroup = "utilities",
             original = "בּוֹיְלֶר", translation = "бойлер (водонагреватель)",
             definition = "מַכְשִׁיר לְחִמּוּם מַיִם לִשְׁמוּשׁ בַּבַּיִת.",
             definitionNative = "Прибор для нагрева воды, используемой в доме.",
@@ -263,7 +263,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102719L)),
         WordEntity(
             id = 102708, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "tsinor",
+            pos = "noun", semanticGroup = "utilities",
             original = "צִנּוֹר", translation = "труба",
             definition = "מְעַבָּר מְחֻבָּר לְהַעֲבָרַת מַיִם, גָּז אוֹ נוֹזְלִים אֲחֵרִים.",
             definitionNative = "Соединённый канал для передачи воды, газа или других жидкостей.",
@@ -271,7 +271,7 @@ object WordDataHebrewImmigrant2 {
             exampleNative = "Есть проблема с צִנּוֹר — вода не течёт."),
         WordEntity(
             id = 102709, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "delef",
+            pos = "noun", semanticGroup = "utilities",
             original = "דֶּלֶף", translation = "течь / протечка",
             definition = "כְּשֶׁמַּיִם בּוֹרְחִים מֵצִנּוֹר אוֹ מַתֶּקֶת שְׁבוּרָה.",
             definitionNative = "Когда вода вытекает из сломанной трубы или крана.",
@@ -280,7 +280,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102710, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "mikhzur",
+            pos = "noun", semanticGroup = "utilities",
             original = "מִחְזוּר", translation = "переработка / рециклинг",
             definition = "תְּהַלִיךְ עִיבּוּד מֵחָדָשׁ שֶׁל חֲפָצִים לְהַפְחָתַת פְּסֹלֶת.",
             definitionNative = "Процесс повторной обработки предметов для сокращения отходов.",
@@ -289,7 +289,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102702L, 102720L)),
         WordEntity(
             id = 102711, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "kevel",
+            pos = "noun", semanticGroup = "utilities",
             original = "כֶּבֶל", translation = "кабельное ТВ / кабель",
             definition = "חֶבֶר חַשְׁמַל לְשִׁידּוּר תּוֹכְנִיּוֹת טֵלֶוִויזְיָה.",
             definitionNative = "Электрический провод для трансляции телевизионных программ.",
@@ -298,7 +298,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102703L)),
         WordEntity(
             id = 102712, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "tashboren",
+            pos = "noun", semanticGroup = "utilities",
             original = "תַּשְׁבּוֹרֶן", translation = "инфраструктура (бытовая, ЖКХ)",
             definition = "מַעֲרֶכֶת הַצִּנּוֹרוֹת, הַחַשְׁמַל וְהַבִּיּוּב הַמְּשָׁרְתִים אֶת הַבַּיִת.",
             definitionNative = "Система труб, электричества и канализации, обслуживающих дом.",
@@ -307,7 +307,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102708L, 102711L)),
         WordEntity(
             id = 102713, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "alut",
+            pos = "noun", semanticGroup = "utilities",
             original = "עֲלוּת", translation = "стоимость / затраты",
             definition = "הַסְּכוּם שֶׁצָּרִיךְ לְשַׁלֵּם עַל מוֹצָר אוֹ שֵׁרוּת.",
             definitionNative = "Сумма, которую нужно заплатить за товар или услугу.",
@@ -316,7 +316,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102715L, 102718L)),
         WordEntity(
             id = 102714, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "tikkun",
+            pos = "noun", semanticGroup = "utilities",
             original = "תִּקּוּן", translation = "ремонт / починка",
             definition = "תְּהַלִיךְ הֲשָׁבַת מַכְשִׁיר אוֹ מִבְנֶה לְפַעֲלוּתוֹ הַתְּקִינָה.",
             definitionNative = "Процесс восстановления прибора или конструкции в рабочее состояние.",
@@ -324,7 +324,7 @@ object WordDataHebrewImmigrant2 {
             exampleNative = "Мы вызвали электрика для תִּקּוּן поломки."),
         WordEntity(
             id = 102715, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "khayuv",
+            pos = "noun", semanticGroup = "utilities",
             original = "חַיּוּב", translation = "начисление / списание",
             definition = "דְּרִישַׁת תַּשְׁלוּם בְּחֶשְׁבּוֹן עַל שְׁמוּשׁ בְּשֵׁרוּת.",
             definitionNative = "Запись дебета на счёте за использование сервиса.",
@@ -333,7 +333,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102706L, 102718L)),
         WordEntity(
             id = 102716, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "chevrat hakhashmal",
+            pos = "noun", semanticGroup = "utilities",
             original = "חֶבְרַת הַחַשְׁמַל", translation = "электрическая компания (Хеврат Хашмаль)",
             definition = "הַחֶבְרָה הַמֶּמְשַׁלְתִּית לְאַסְפָּקַת חַשְׁמַל בְּיִשְׂרָאֵל.",
             definitionNative = "Государственная компания по снабжению электричеством в Израиле.",
@@ -342,7 +342,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102722L)),
         WordEntity(
             id = 102717, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "horation keva",
+            pos = "noun", semanticGroup = "utilities",
             original = "הוֹרָאַת קֶבַע", translation = "автоплатёж / постоянное поручение",
             definition = "הַסְמָכָה אוֹטוֹמָטִית לַבַּנְק לְחַיֵּב חֶשְׁבּוֹן בְּסְכוּם קָבוּעַ כָּל חוֹדֶשׁ.",
             definitionNative = "Автоматическое поручение банку списывать фиксированную сумму каждый месяц.",
@@ -351,7 +351,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102718, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "ta'arif",
+            pos = "noun", semanticGroup = "utilities",
             original = "תַּעֲרִיף", translation = "тариф / ставка",
             definition = "מְחִיר מְבֻסָּס לְיֶחִידַת שֵׁרוּת כְּמוֹ קִילוֹוַט שָׁעָה שֶׁל חַשְׁמַל.",
             definitionNative = "Установленная цена за единицу сервиса, например за киловатт-час электричества.",
@@ -360,7 +360,7 @@ object WordDataHebrewImmigrant2 {
          fillInBlankExclusions = listOf(102713L, 102715L)),
         WordEntity(
             id = 102719, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "dud shemesh",
+            pos = "noun", semanticGroup = "utilities",
             original = "דּוּד שֶׁמֶשׁ", translation = "солнечный бойлер",
             definition = "מַכְשִׁיר עַל גַּג הַבַּיִת הַמְּחַמֵּם מַיִם בְּעֶזְרַת אֵנֶרְגְּיָה סוֹלָרִית.",
             definitionNative = "Устройство на крыше дома, нагревающее воду с помощью солнечной энергии.",
@@ -369,7 +369,7 @@ object WordDataHebrewImmigrant2 {
         ),
         WordEntity(
             id = 102720, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "utilities", transliteration = "pinui",
+            pos = "noun", semanticGroup = "utilities",
             original = "פִּנּוּי", translation = "вывоз / утилизация",
             definition = "הוֹצָאַת אַשְׁפָּה אוֹ פְּסֹלֶת מֵהַמְּקוֹם עַל יְדֵי שֵׁרוּת.",
             definitionNative = "Удаление мусора или отходов с места силами соответствующей службы.",

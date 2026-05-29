@@ -56,7 +56,7 @@ object WordDataHebrewEntertainmentL4 {
         // ── entertainment_production (5) — продакшн и индустрия ──
         WordEntity(
             id = 179401, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_production", transliteration = "khevrat hafakot",
+            pos = "phrase", semanticGroup = "entertainment_production",
             original = "חֶבְרַת הַפָּקוֹת", translation = "продюсерская компания",
             definition = "פִירְמָה שֶׁמְּמַמֶּנֶת וּמְאַרְגֶּנֶת אֶת הַצִּלּוּם שֶׁל סְרָטִים אוֹ סִדְרוֹת.",
             definitionNative = "Фирма, что финансирует и организует съёмки фильмов или сериалов.",
@@ -65,7 +65,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179402L, 179403L, 179404L, 179405L)),
         WordEntity(
             id = 179402, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_production", transliteration = "mefakeakh elyon",
+            pos = "phrase", semanticGroup = "entertainment_production",
             original = "מְפַקֵּחַ עֶלְיוֹן", translation = "исполнительный продюсер",
             definition = "אִישׁ בָּכִיר שֶׁמַּשִּׂיג תַּקְצִיב וּמַנְהִיג אֶת כָּל הַפְּרוֹיֶיקְט מִתְּחִלָּה לַסּוֹף.",
             definitionNative = "Старший человек, что добывает бюджет и ведёт весь проект до конца.",
@@ -74,7 +74,7 @@ object WordDataHebrewEntertainmentL4 {
         ),
         WordEntity(
             id = 179403, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_production", transliteration = "itur atarim",
+            pos = "phrase", semanticGroup = "entertainment_production",
             original = "אִתּוּר אֲתָרִים", translation = "поиск локаций",
             definition = "מְלָאכָה שֶׁל מְצִיאַת מְקוֹמוֹת אֲמִתִּיִּים שֶׁבָּהֶם נִתָּן לְצַלֵּם סֵרֶט.",
             definitionNative = "Работа по поиску реальных мест, где можно снимать кино.",
@@ -83,7 +83,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179401L, 179402L, 179404L, 179405L)),
         WordEntity(
             id = 179404, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_production", transliteration = "post prodakshen",
+            pos = "phrase", semanticGroup = "entertainment_production",
             original = "פּוֹסְט פְּרוֹדַקְשֶׁן", translation = "постпродакшн",
             definition = "כָּל מַה שֶּׁעוֹשִׂים לַסֵּרֶט אַחֲרֵי הַצִּלּוּם — עֲרִיכָה, צֶבַע, מוּסִיקָה וְאֶפֶקְטִים.",
             definitionNative = "Всё, что делают с фильмом после съёмки — монтаж, цвет, музыка, эффекты.",
@@ -92,7 +92,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179401L, 179402L, 179403L, 179405L)),
         WordEntity(
             id = 179405, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_production", transliteration = "itsuv tslilim",
+            pos = "phrase", semanticGroup = "entertainment_production",
             original = "עִצּוּב צְלִילִים", translation = "саунд-дизайн",
             definition = "אָמָּנוּת שֶׁל בְּנִיַּת כָּל הָרְעָשִׁים וְהָאֲוִירָה שֶׁסֵּרֶט אוֹ מִשְׂחָק זָקוּק לָהֶם.",
             definitionNative = "Искусство создания всех шумов и атмосферы, нужных фильму или игре.",
@@ -103,7 +103,7 @@ object WordDataHebrewEntertainmentL4 {
         // ── entertainment_festivals (5) — фестивали и премии ──
         WordEntity(
             id = 179406, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_festivals", transliteration = "festival kolnoa",
+            pos = "phrase", semanticGroup = "entertainment_festivals",
             original = "פֶסְטִיבָל קוֹלְנוֹעַ", translation = "кинофестиваль",
             definition = "אֵרוּעַ שֶׁל יָמִים אֲחָדִים שֶׁבּוֹ מַצִּיגִים וְשׁוֹפְטִים סְרָטִים חֲדָשִׁים.",
             definitionNative = "Многодневное событие, где показывают и оценивают новые фильмы.",
@@ -112,7 +112,7 @@ object WordDataHebrewEntertainmentL4 {
         ),
         WordEntity(
             id = 179407, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_festivals", transliteration = "bekhora olamit",
+            pos = "phrase", semanticGroup = "entertainment_festivals",
             original = "בְּכוֹרָה עוֹלָמִית", translation = "мировая премьера",
             definition = "הַהַקְרָנָה הַפּוּמְבִּית הָרִאשׁוֹנָה שֶׁל סֵרֶט בְּכָל מָקוֹם בָּעוֹלָם.",
             definitionNative = "Самый первый публичный показ фильма где-либо в мире.",
@@ -121,7 +121,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179406L, 179408L, 179410L)),
         WordEntity(
             id = 179408, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_festivals", transliteration = "mivkhar rishmi",
+            pos = "phrase", semanticGroup = "entertainment_festivals",
             original = "מִבְחָר רִשְׁמִי", translation = "официальная программа",
             definition = "רְשִׁימַת הַיְצִירוֹת שֶׁהַשּׁוֹפְטִים בָּחֲרוּ לְהִתְחָרוֹת בַּתּוֹכְנִית הַמֶּרְכָּזִית.",
             definitionNative = "Список работ, что жюри выбрало для конкурса основной программы.",
@@ -130,7 +130,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179406L, 179407L, 179410L)),
         WordEntity(
             id = 179409, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "entertainment_festivals", transliteration = "retrospektiva",
+            pos = "noun", semanticGroup = "entertainment_festivals",
             original = "רֶטְרוֹסְפֶּקְטִיבָה", translation = "ретроспектива",
             definition = "תּוֹכְנִית פֶסְטִיבָל הַחוֹזֶרֶת אֶל יְצִירוֹתָיו הַיְּשָׁנוֹת שֶׁל אָמָּן בִּמְקוֹם אֶחָד.",
             definitionNative = "Программа фестиваля, собирающая давние работы автора в одном месте.",
@@ -139,7 +139,7 @@ object WordDataHebrewEntertainmentL4 {
         ),
         WordEntity(
             id = 179410, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_festivals", transliteration = "pras hakahal",
+            pos = "phrase", semanticGroup = "entertainment_festivals",
             original = "פְּרָס הַקָּהָל", translation = "приз зрительских симпатий",
             definition = "פְּרָס פֶסְטִיבָל הַנִּבְחָר בְּהַצְבָּעַת הַצּוֹפִים וְלֹא עַל יְדֵי שׁוֹפְטִים.",
             definitionNative = "Награда фестиваля, выбираемая голосованием зрителей, а не жюри.",
@@ -150,7 +150,7 @@ object WordDataHebrewEntertainmentL4 {
         // ── entertainment_gaming (5) — гейминг-индустрия ──
         WordEntity(
             id = 179411, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_gaming", transliteration = "turnir esport",
+            pos = "phrase", semanticGroup = "entertainment_gaming",
             original = "טוּרְנִיר אֶסְפּוֹרְט", translation = "киберспортивный турнир",
             definition = "תַּחֲרוּת מִקְצוֹעִית שֶׁבָּהּ קְבוּצוֹת אוֹ שַׂחְקָנִים נִלְחָמִים עַל פְּרָסִים גְּדוֹלִים.",
             definitionNative = "Профессиональное соревнование, где команды или игроки бьются за крупные награды.",
@@ -159,7 +159,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179412L, 179413L, 179414L, 179415L)),
         WordEntity(
             id = 179412, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_gaming", transliteration = "mikro tashlum",
+            pos = "phrase", semanticGroup = "entertainment_gaming",
             original = "מִיקְרוֹ-תַּשְׁלוּם", translation = "микротранзакция",
             definition = "תַּשְׁלוּם זָעִיר בְּתוֹךְ הַמִּשְׂחָק עֲבוּר קִשּׁוּטִים, מַטְבֵּעוֹת אוֹ הֲטָבוֹת.",
             definitionNative = "Маленький платёж внутри игры за украшения, монеты или мелкие бонусы.",
@@ -168,7 +168,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179411L, 179413L, 179414L, 179415L)),
         WordEntity(
             id = 179413, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_gaming", transliteration = "batel pas",
+            pos = "phrase", semanticGroup = "entertainment_gaming",
             original = "בָּטֶל פַּאס", translation = "боевой пропуск",
             definition = "מַסְלוּל בְּתַשְׁלוּם שֶׁל פְּרָסִים עוֹנָתִיִּים שֶׁפּוֹתְחִים עַל יְדֵי מִשְׂחָק יוֹמִי.",
             definitionNative = "Платный трек сезонных наград, открывающихся за ежедневную игру.",
@@ -177,7 +177,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179411L, 179412L, 179414L, 179415L)),
         WordEntity(
             id = 179414, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_gaming", transliteration = "tokhen lehorada",
+            pos = "phrase", semanticGroup = "entertainment_gaming",
             original = "תּוֹכֶן לְהוֹרָדָה", translation = "загружаемый контент",
             definition = "מַשִּׂימוֹת, מַפּוֹת אוֹ פְּרִיטִים נוֹסָפִים שֶׁמּוֹסִיפִים לַמִּשְׂחָק אַחֲרֵי יְצִיאָתוֹ.",
             definitionNative = "Дополнительные миссии, карты или предметы, что добавляют к игре после релиза.",
@@ -186,7 +186,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179411L, 179412L, 179413L, 179415L)),
         WordEntity(
             id = 179415, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_gaming", transliteration = "minui onati",
+            pos = "phrase", semanticGroup = "entertainment_gaming",
             original = "מִנּוּי עוֹנָתִי", translation = "сезонный пропуск",
             definition = "כַּרְטִיס חֲבִילָה הַפּוֹתֵחַ אֶת כָּל הַתּוֹסָפוֹת הַמְּתֻכְנָנוֹת לִשְׁנַת מִשְׂחָק אַחַת.",
             definitionNative = "Пакетный билет, что открывает все запланированные дополнения за игровой год.",
@@ -197,7 +197,7 @@ object WordDataHebrewEntertainmentL4 {
         // ── entertainment_streaming (5) — стриминг-платформы ──
         WordEntity(
             id = 179416, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_streaming", transliteration = "platforma streaming",
+            pos = "phrase", semanticGroup = "entertainment_streaming",
             original = "פְּלַטְפוֹרְמַת סְטְרִימִינְג", translation = "стриминговая платформа",
             definition = "שֵׁרוּת מְקֻוָּן שֶׁמְּסַפֵּק סְרָטִים וְסִדְרוֹת לְצוֹפִים לְפִי דְרִישָׁה.",
             definitionNative = "Онлайн-сервис, что доставляет фильмы и сериалы зрителям по запросу.",
@@ -206,7 +206,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179417L, 179418L, 179419L, 179420L)),
         WordEntity(
             id = 179417, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_streaming", transliteration = "sidra mekorit",
+            pos = "phrase", semanticGroup = "entertainment_streaming",
             original = "סִדְרָה מְקוֹרִית", translation = "оригинальный сериал",
             definition = "תָּכְנִית שֶׁשֵּׁרוּת הַסְּטְרִימִינְג עָשָׂה בְּעַצְמוֹ וְלֹא קָנָה מִסְּטוּדְיוֹ אַחֵר.",
             definitionNative = "Шоу, что стриминговый сервис снял сам, а не купил у другой студии.",
@@ -215,7 +215,7 @@ object WordDataHebrewEntertainmentL4 {
         ),
         WordEntity(
             id = 179418, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_streaming", transliteration = "mesibat reshet",
+            pos = "phrase", semanticGroup = "entertainment_streaming",
             original = "מְסִבַּת רֶשֶׁת", translation = "совместный онлайн-просмотр",
             definition = "מִפְגָּשׁ מְקֻוָּן שֶׁבּוֹ חֲבֵרִים רוֹאִים יַחַד אֶת אוֹתָהּ הַתָּכְנִית עִם צַ'אט.",
             definitionNative = "Онлайн-встреча, где друзья смотрят одну программу вместе и переписываются.",
@@ -224,7 +224,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179416L, 179417L, 179419L, 179420L)),
         WordEntity(
             id = 179419, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_streaming", transliteration = "shikhrur masivi",
+            pos = "phrase", semanticGroup = "entertainment_streaming",
             original = "שִׁחְרוּר מַסִּיבִי", translation = "массовый выпуск (всех серий)",
             definition = "הוֹצָאָה שֶׁל כָּל פִּרְקֵי הָעוֹנָה בְּבַת אַחַת בְּמָקוֹם אַחַד לְשָׁבוּעַ.",
             definitionNative = "Выпуск всех серий сезона разом вместо одной за неделю.",
@@ -233,7 +233,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179416L, 179417L, 179418L, 179420L)),
         WordEntity(
             id = 179420, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_streaming", transliteration = "deyrug tsfiyot",
+            pos = "phrase", semanticGroup = "entertainment_streaming",
             original = "דֵּירוּג צְפִיּוֹת", translation = "рейтинг просмотров",
             definition = "מִסְפָּר הַמַּרְאֶה כַּמָּה אֲנָשִׁים הִתְחַבְּרוּ לְתָכְנִית אוֹ שִׁדּוּר.",
             definitionNative = "Число, что показывает, сколько людей подключились к программе или эфиру.",
@@ -244,7 +244,7 @@ object WordDataHebrewEntertainmentL4 {
         // ── entertainment_creative (5) — креативные индустрии ──
         WordEntity(
             id = 179421, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_creative", transliteration = "doktor tasrit",
+            pos = "phrase", semanticGroup = "entertainment_creative",
             original = "דּוֹקְטוֹר תַּסְרִיט", translation = "скрипт-доктор",
             definition = "כּוֹתֵב שָׂכוּר שֶׁמְּתַקֵּן בְּשֶׁקֶט סְצֵנוֹת חַלָּשׁוֹת בְּטְיוּטָה שֶׁל סוֹפֵר אַחֵר.",
             definitionNative = "Нанятый автор, что тихо чинит слабые сцены в чужом черновике.",
@@ -253,7 +253,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179422L, 179423L, 179424L, 179425L)),
         WordEntity(
             id = 179422, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_creative", transliteration = "menahel lokeyshen",
+            pos = "phrase", semanticGroup = "entertainment_creative",
             original = "מְנַהֵל לוֹקֵיישֵׁן", translation = "локейшн-менеджер",
             definition = "אִישׁ הַצֶּוֶת שֶׁמְּסַדֵּר אִשּׁוּרִים וּגְשִׁישׁוֹת לְכָל אֲתַר צִלּוּם.",
             definitionNative = "Член группы, что оформляет разрешения и доступ к каждой съёмочной площадке.",
@@ -262,7 +262,7 @@ object WordDataHebrewEntertainmentL4 {
         ),
         WordEntity(
             id = 179423, setId = 1794, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "entertainment_creative", transliteration = "akhrai lihuk",
+            pos = "phrase", semanticGroup = "entertainment_creative",
             original = "אַחְרָאִי לִיהוּק", translation = "директор по кастингу",
             definition = "מִקְצוֹעָן הַמּוֹצֵא וּבוֹחֵר שַׂחְקָנִים לְכָל תַּפְקִיד בַּפְּרוֹיֶיקְט.",
             definitionNative = "Профи, что находит и выбирает актёров на каждую роль в проекте.",
@@ -271,7 +271,7 @@ object WordDataHebrewEntertainmentL4 {
          fillInBlankExclusions = listOf(179421L, 179422L, 179424L, 179425L)),
         WordEntity(
             id = 179424, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_creative", transliteration = "aman raash",
+            pos = "phrase", semanticGroup = "entertainment_creative",
             original = "אָמָּן רַעַשׁ", translation = "фоли-артист",
             definition = "מוּמְחֶה הַמְּשַׁחְזֵר בְּיָדַיִם רְעָשִׁים יוֹמְיוֹמִיִּים לְפַסְקוֹל הַסֵּרֶט.",
             definitionNative = "Специалист, что вручную воссоздаёт бытовые шумы для звуковой дорожки.",
@@ -280,7 +280,7 @@ object WordDataHebrewEntertainmentL4 {
         ),
         WordEntity(
             id = 179425, setId = 1794, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "entertainment_creative", transliteration = "rakaz intimiyut",
+            pos = "phrase", semanticGroup = "entertainment_creative",
             original = "רַכָּז אִינְטִימִיּוּת", translation = "координатор интимных сцен",
             definition = "מִקְצוֹעָן עַל הַסֶּט הַשּׁוֹמֵר עַל בִּטְחוֹן הַשַּׂחְקָנִים בִּסְצֵנוֹת רְגִישׁוֹת.",
             definitionNative = "Профи на площадке, что бережёт безопасность актёров в чувствительных сценах.",

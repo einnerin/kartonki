@@ -81,7 +81,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Заповедь извлекать звуки из бараньего рога в утренней службе первого дня тишрея.",
             example = "תְּקִיעַת שׁוֹפָר תָּמִיד מַרְגִּישָׁה מַשֶּׁהוּ עָמוֹק בַּלֵּב.",
             exampleNative = "תְּקִיעַת שׁוֹפָר всегда задевает что-то глубоко в сердце.",
-            transliteration = "ткиат шофар",
             pos = "phrase", semanticGroup = "religion_yamim_rosh_hashana", fillInBlankExclusions = listOf(190703L, 190704L, 190710L, 190725L)),
 
         WordEntity(id = 190702, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -91,7 +90,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Обычай идти после полудня к проточной воде и вытряхивать карманы одежды над поверхностью.",
             example = "אַחֲרֵי הַסְּעוּדָה הָלַכְנוּ לְתַשְׁלִיךְ לְיַד הַנָּחַל.",
             exampleNative = "После трапезы мы пошли на תַּשְׁלִיךְ к ручью.",
-            transliteration = "ташлих",
             pos = "noun", semanticGroup = "religion_yamim_rosh_hashana"),
 
         WordEntity(id = 190703, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -101,7 +99,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Фрукт, обмакнутый в сладкое жидкое лакомство — его едят в начале трапезы как знак хорошего года.",
             example = "הַיֶּלֶד טָבַל אֶת הַתַּפּוּחַ בִּדְבַשׁ וְחִיֵּךְ רָחָב.",
             exampleNative = "Мальчик окунул תַּפּוּחַ בִּדְבַשׁ и широко улыбнулся.",
-            transliteration = "тапуах би-двашh",
             pos = "phrase", semanticGroup = "religion_yamim_rosh_hashana"),
 
         WordEntity(id = 190704, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -111,7 +108,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Кушанья, которые едят в первый вечер с короткой формулой — чтобы их имя намекало на удачу.",
             example = "אִמָּא הֵכִינָה אֶת כָּל סִימָנֵי הַשָּׁנָה עַל מַגָּשׁ אֶחָד.",
             exampleNative = "Мама подготовила все סִימָנֵי הַשָּׁנָה на одном подносе.",
-            transliteration = "симанэй hа-шана",
             pos = "phrase", semanticGroup = "religion_yamim_rosh_hashana", fillInBlankExclusions = listOf(190701L, 190703L)),
 
         WordEntity(id = 190705, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -121,7 +117,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Центральная часть праздничной службы мусаф — о власти Творца над миром, сопровождается трублением.",
             example = "אַחֲרֵי מַלְכֻיּוֹת הַחַזָּן עָצַר לִשְׁתּוֹת מַיִם.",
             exampleNative = "После מַלְכֻיּוֹת кантор остановился попить воды.",
-            transliteration = "малхуйот",
             pos = "noun", semanticGroup = "religion_yamim_rosh_hashana", fillInBlankExclusions = listOf(190706L)),
 
         WordEntity(id = 190706, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -131,7 +126,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Вторая часть праздничной службы мусаф — она напоминает о заслугах предков и заветах прошлого.",
             example = "בְּזִכְרוֹנוֹת הוּא תָּמִיד נִזְכָּר בְּאַבָּא שֶׁלּוֹ.",
             exampleNative = "На זִכְרוֹנוֹת он всегда вспоминает своего отца.",
-            transliteration = "зихронот",
             pos = "noun", semanticGroup = "religion_yamim_rosh_hashana", fillInBlankExclusions = listOf(190705L)),
 
         // ── Group: religion_yamim_yom_kippur (6 words) ────────────────────────
@@ -143,7 +137,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Арамейское вступление вечерней службы, в котором община отменяет невыполненные за год обещания.",
             example = "הַחַזָּן שָׁר אֶת כָּל נִדְרֵי שָׁלוֹשׁ פְּעָמִים בְּקוֹל רוֹעֵד.",
             exampleNative = "Кантор пропел כָּל נִדְרֵי трижды дрожащим голосом.",
-            transliteration = "коль нидрэй",
             pos = "phrase", semanticGroup = "religion_yamim_yom_kippur", fillInBlankExclusions = listOf(190708L, 190711L, 190712L, 190713L, 190714L)),
 
         WordEntity(id = 190708, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -153,7 +146,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Полный отказ от еды и питья в течение двадцати пяти часов — от заката до появления звёзд.",
             example = "צוֹם יוֹם כִּפּוּר שֶׁלִּי הַשָּׁנָה עָבַר קַל יוֹתֵר מִתָּמִיד.",
             exampleNative = "Мой צוֹם יוֹם כִּפּוּר в этом году прошёл легче обычного.",
-            transliteration = "цом йом кипур",
             pos = "phrase", semanticGroup = "religion_yamim_yom_kippur", fillInBlankExclusions = listOf(190707L, 190711L, 190712L, 190719L)),
 
         WordEntity(id = 190709, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -163,7 +155,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Обряд, в котором молящийся вслух признаёт свою долю в общественных провинностях, ударяя себя по груди.",
             example = "בִּזְמַן הַוִּידּוּי הוּא הִכָּה עַל הַחָזֶה לְאַט וּבְקוֹל.",
             exampleNative = "Во время וִידּוּי он бил себя по груди медленно и звучно.",
-            transliteration = "видуй",
             pos = "noun", semanticGroup = "religion_yamim_yom_kippur"),
 
         WordEntity(id = 190710, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -173,7 +164,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Действо, стирающее провинность перед Творцом и восстанавливающее обычные отношения человека со святыней.",
             example = "הוּא הָלַךְ אֵצֶל הַסַּבָּא לְבַקֵּשׁ כַּפָּרָה עַל הַדְּבָרִים.",
             exampleNative = "Он пошёл к дедушке просить כַּפָּרָה за свои слова.",
-            transliteration = "капара",
             pos = "noun", semanticGroup = "religion_yamim_yom_kippur", fillInBlankExclusions = listOf(190709L)),
 
         WordEntity(id = 190711, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -183,7 +173,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Краткое вступление исповеди, перечисляющее в алфавитном порядке виды провинностей.",
             example = "כָּל הַקָּהָל פָּתַח בְּאַשַׁמְנוּ בְּאוֹתוֹ הַטָּעַם.",
             exampleNative = "Вся община начала אַשַׁמְנוּ на один и тот же напев.",
-            transliteration = "ашамну",
             pos = "phrase", semanticGroup = "religion_yamim_yom_kippur"),
 
         WordEntity(id = 190712, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -193,7 +182,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Развёрнутая исповедь с подробным списком сорока пяти провинностей в порядке еврейской азбуки.",
             example = "עַל חֵטְא הִיא הַחֵלֶק הַכִּי אָרֹךְ בַּמַּחְזוֹר.",
             exampleNative = "עַל חֵטְא — самая длинная часть в молитвеннике.",
-            transliteration = "аль хэт",
             pos = "phrase", semanticGroup = "religion_yamim_yom_kippur", fillInBlankExclusions = listOf(190707L, 190708L, 190711L, 190713L, 190725L)),
 
         // ── Group: religion_yamim_machzor (5 words) ───────────────────────────
@@ -205,7 +193,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Центральная молитва в порядке стоячего обращения — каждая просьба открывается двойным воззванием к Творцу.",
             example = "אֲבִינוּ מַלְכֵּנוּ נֶאֱמַר עֲשָׂרוֹת פְּעָמִים בְּמֶשֶׁךְ הַחַג.",
             exampleNative = "אֲבִינוּ מַלְכֵּנוּ читают десятки раз за праздник.",
-            transliteration = "авину малкэйну",
             pos = "phrase", semanticGroup = "religion_yamim_machzor"),
 
         WordEntity(id = 190714, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -215,7 +202,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Постоянный псалом, которым открывается каждая из трёх дневных служб.",
             example = "הַשַּׁמָּשׁ הִכְרִיז עַל אַשְׁרֵי וְכֻלָּם קָמוּ.",
             exampleNative = "Служка объявил אַשְׁרֵי, и все встали.",
-            transliteration = "ашрэй",
             pos = "phrase", semanticGroup = "religion_yamim_machzor", fillInBlankExclusions = listOf(190707L, 190711L, 190712L, 190713L, 190716L, 190717L, 190724L)),
 
         WordEntity(id = 190715, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -225,7 +211,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Молитвенный служитель, что стоит перед амвоном и ведёт общину голосом в Великие дни.",
             example = "הַחַזָּן הֶחָדָשׁ עָשָׂה רֹשֶׁם עַל כֻּלָּם בְּכָל נִדְרֵי.",
             exampleNative = "Новый חַזָּן произвёл впечатление на всех на «Коль нидрэй».",
-            transliteration = "хазан",
             pos = "noun", semanticGroup = "religion_yamim_machzor"),
 
         WordEntity(id = 190716, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -235,7 +220,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Молитвенная традиция европейских общин — порядок обрядов и постоянные напевы евреев севера.",
             example = "בֵּית הַכְּנֶסֶת שֶׁלָּהֶם פּוֹעֵל לְפִי נוּסָח אַשְׁכְּנַז.",
             exampleNative = "Их синагога живёт по נוּסָח אַשְׁכְּנַז.",
-            transliteration = "нусах ашкеназ",
             pos = "phrase", semanticGroup = "religion_yamim_machzor", fillInBlankExclusions = listOf(190717L)),
 
         WordEntity(id = 190717, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -245,7 +229,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Молитвенная традиция средиземноморских и восточных общин — с иными напевами и порядком обрядов.",
             example = "הוּא גָּדַל בְּבֵית כְּנֶסֶת שֶׁל נוּסָח סְפָרַד.",
             exampleNative = "Он вырос в синагоге נוּסָח סְפָרַד.",
-            transliteration = "нусах сфарад",
             pos = "phrase", semanticGroup = "religion_yamim_machzor", fillInBlankExclusions = listOf(190716L)),
 
         // ── Group: religion_yamim_concepts (6 words) ──────────────────────────
@@ -257,7 +240,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Промежуток в десять дней между новолунием тишрея и вторым священным днём — для работы над собой.",
             example = "בְּעֲשֶׂרֶת יְמֵי תְּשׁוּבָה הוּא בִּקֵּשׁ סְלִיחָה מִכָּל חֲבֵרָיו.",
             exampleNative = "В עֲשֶׂרֶת יְמֵי תְּשׁוּבָה он попросил прощения у всех друзей.",
-            transliteration = "асэрэт йэмэй тшува",
             pos = "phrase", semanticGroup = "religion_yamim_concepts", fillInBlankExclusions = listOf(190719L, 190720L, 190721L, 190722L, 190723L)),
 
         WordEntity(id = 190719, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -267,7 +249,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Внутренняя работа разбора поступков с новолуния элуля — чтобы опознать собственные ошибки.",
             example = "אַחֲרֵי חֶשְׁבּוֹן נֶפֶשׁ הָגוּן הוּא הֶחְלִיט לְהִתְפַּיֵּס.",
             exampleNative = "После честного חֶשְׁבּוֹן נֶפֶשׁ он решил пойти на мировую.",
-            transliteration = "хэшбон нэфэш",
             pos = "phrase", semanticGroup = "religion_yamim_concepts"),
 
         WordEntity(id = 190720, setId = 1907, languagePair = "he-ru", rarity = "RARE",
@@ -277,7 +258,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Приветствие, принятое в десять дней — желают его друг другу до закрытия второго священного дня.",
             example = "הִיא חָתְמָה אֶת הַמִּכְתָּב בְּגְּמָר חֲתִימָה טוֹבָה.",
             exampleNative = "Она закончила письмо словами גְּמָר חֲתִימָה טוֹבָה.",
-            transliteration = "гмар хатима това",
             pos = "phrase", semanticGroup = "religion_yamim_concepts", fillInBlankExclusions = listOf(190718L, 190719L, 190721L, 190722L, 190723L)),
 
         WordEntity(id = 190721, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -287,7 +267,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Прозвание новолуния тишрея — дня, когда Творец выносит участь каждого создания на ближайший год.",
             example = "בְּיוֹם הַדִּין הָאַוִיר בְּבֵית הַכְּנֶסֶת קְשֶׁה וְשָׁקֵט.",
             exampleNative = "На יוֹם הַדִּין воздух в синагоге плотный и тихий.",
-            transliteration = "йом hа-дин",
             pos = "phrase", semanticGroup = "religion_yamim_concepts", fillInBlankExclusions = listOf(190718L, 190719L, 190720L, 190722L, 190723L)),
 
         WordEntity(id = 190722, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -297,7 +276,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Мидрашский образ книг, в которые Творец записывает тех, кому достанется ещё один год.",
             example = "שֶׁכֻּלָּנוּ נִכָּתֵב בְּסֵפֶר הַחַיִּים שֶׁל הָאָב.",
             exampleNative = "Чтобы все мы были вписаны в סֵפֶר הַחַיִּים Отца.",
-            transliteration = "сэфэр hа-хаим",
             pos = "phrase", semanticGroup = "religion_yamim_concepts", fillInBlankExclusions = listOf(190718L, 190719L, 190720L, 190721L, 190723L)),
 
         WordEntity(id = 190723, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -307,7 +285,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Традиционное приветствие первых семи дней — до самого второго священного дня.",
             example = "סָבָתָא חָתְמָה אֶת הַגְּלוּיוֹת בְּלְשָׁנָה טוֹבָה תִּכָּתֵבוּ.",
             exampleNative = "Бабушка подписала открытки словами לְשָׁנָה טוֹבָה תִּכָּתֵבוּ.",
-            transliteration = "ле-шана това тикатэву",
             pos = "phrase", semanticGroup = "religion_yamim_concepts"),
 
         // ── Group: religion_yamim_memory (2 words) ────────────────────────────
@@ -319,7 +296,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Короткий обряд после чтения Свитка, в котором дети называют по имени родителей, которых уже нет.",
             example = "בִּזְמַן יִזְכֹּר הַיְלָדִים יָצְאוּ הַחוּצָה.",
             exampleNative = "На יִזְכֹּר дети вышли наружу.",
-            transliteration = "йизкор",
             pos = "noun", semanticGroup = "religion_yamim_memory", fillInBlankExclusions = listOf(190707L, 190712L, 190725L)),
 
         WordEntity(id = 190725, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
@@ -329,7 +305,6 @@ object WordDataHebrewReligionYamimNoraim {
             definitionNative = "Особая часть службы мусаф второго священного дня — посвящённая близким, что ушли, и павшим народа.",
             example = "תְּפִלַּת יִזְכֹּר הָיְתָה הַשָּׁעָה הַקָּשָׁה שֶׁל הַיּוֹם.",
             exampleNative = "תְּפִלַּת יִזְכֹּר оказалась самым тяжёлым часом дня.",
-            transliteration = "тфилат йизкор",
             pos = "phrase", semanticGroup = "religion_yamim_memory", fillInBlankExclusions = listOf(190701L, 190710L)),
     )
 }

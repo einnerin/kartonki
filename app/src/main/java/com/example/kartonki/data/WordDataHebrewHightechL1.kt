@@ -61,7 +61,7 @@ object WordDataHebrewHightechL1 {
         // ── hightech_intro (5) — роли в хайтеке ──
         WordEntity(
             id = 174501, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_intro", transliteration = "metakhnet",
+            pos = "noun", semanticGroup = "hightech_intro",
             original = "מְתַכְנֵת", translation = "программист",
             definition = "אָדָם שֶׁכּוֹתֵב הוֹרָאוֹת לְמַחְשֵׁב בְּשָׂפָה מְיֻחֶדֶת.",
             definitionNative = "Человек, который пишет инструкции для компьютера на специальном языке.",
@@ -70,7 +70,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174502L, 174503L, 174504L, 174505L)),
         WordEntity(
             id = 174502, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_intro", transliteration = "mefateakh",
+            pos = "noun", semanticGroup = "hightech_intro",
             original = "מְפַתֵּחַ", translation = "разработчик",
             definition = "עוֹבֵד שֶׁבּוֹנֶה מוּצָרִים דִּיגִיטָלִיִּים מֵהַתְחָלָה עַד הַסּוֹף.",
             definitionNative = "Сотрудник, который строит цифровые продукты от начала до конца.",
@@ -79,7 +79,7 @@ object WordDataHebrewHightechL1 {
         ),
         WordEntity(
             id = 174503, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_intro", transliteration = "kyu ei",
+            pos = "noun", semanticGroup = "hightech_intro",
             original = "קְיוּ אֵיי", translation = "QA-инженер (тестировщик)",
             definition = "מִי שֶׁמְּחַפֵּשׂ בְּעָיוֹת בַּמּוּצָר לִפְנֵי שֶׁהוּא מַגִּיעַ לַלָּקוֹחַ.",
             definitionNative = "Тот, кто ищет проблемы в продукте до того, как он попадёт к клиенту.",
@@ -88,7 +88,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174501L, 174502L, 174504L, 174505L)),
         WordEntity(
             id = 174504, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_intro", transliteration = "menahel mutsar",
+            pos = "noun", semanticGroup = "hightech_intro",
             original = "מְנַהֵל מוּצָר", translation = "продуктовый менеджер",
             definition = "אַחְרַאי עַל הַחֲזוֹן שֶׁל הַמּוּצָר וְעַל מָה נִבְנֶה קֹדֶם.",
             definitionNative = "Отвечает за видение продукта и за то, что строится в первую очередь.",
@@ -97,7 +97,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174501L, 174502L, 174503L, 174505L)),
         WordEntity(
             id = 174505, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_intro", transliteration = "me'atsev",
+            pos = "noun", semanticGroup = "hightech_intro",
             original = "מְעַצֵּב", translation = "дизайнер",
             definition = "אִישׁ שֶׁמְּתַכְנֵן אֵיךְ הַמָּסָךְ נִרְאֶה וְאֵיךְ נוֹחַ לְהִשְׁתַּמֵּשׁ בּוֹ.",
             definitionNative = "Человек, который придумывает, как выглядит экран и удобно ли им пользоваться.",
@@ -108,7 +108,7 @@ object WordDataHebrewHightechL1 {
         // ── hightech_products (5) — продукт и его части ──
         WordEntity(
             id = 174506, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_products", transliteration = "platforma",
+            pos = "noun", semanticGroup = "hightech_products",
             original = "פְּלַטְפוֹרְמָה", translation = "платформа",
             definition = "מַעֲרֶכֶת גְּדוֹלָה שֶׁעָלֶיהָ רָצִים שֵׁרוּתִים אוֹ אַפְּלִיקַצְיוֹת רַבִּים.",
             definitionNative = "Большая система, на которой работают много сервисов или приложений.",
@@ -117,7 +117,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174507L, 174508L, 174509L, 174510L)),
         WordEntity(
             id = 174507, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_products", transliteration = "aplikatsya",
+            pos = "noun", semanticGroup = "hightech_products",
             original = "אַפְּלִיקַצְיָה", translation = "приложение",
             definition = "תּוֹכְנָה קְטַנָּה לַטֶּלֶפוֹן שֶׁעוֹשָׂה דָּבָר אֶחָד טוֹב — מַפָּה, מוּזִיקָה אוֹ הוֹדָעוֹת.",
             definitionNative = "Маленькая программа в телефоне для одного дела — карты, музыка или сообщения.",
@@ -126,7 +126,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174506L, 174508L, 174509L, 174510L)),
         WordEntity(
             id = 174508, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_products", transliteration = "sait",
+            pos = "noun", semanticGroup = "hightech_products",
             original = "סַיְט", translation = "сайт",
             definition = "דַּף בָּרֶשֶׁת עִם כְּתֹבֶת קְבוּעָה שֶׁפּוֹתְחִים בַּדַּפְדְּפָן.",
             definitionNative = "Страница в сети с постоянным адресом — её открывают в браузере.",
@@ -135,7 +135,7 @@ object WordDataHebrewHightechL1 {
         ),
         WordEntity(
             id = 174509, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_products", transliteration = "ficher",
+            pos = "noun", semanticGroup = "hightech_products",
             original = "פִיצְ׳ר", translation = "фича",
             definition = "יְכֹלֶת חֲדָשָׁה בַּמּוּצָר שֶׁמּוֹסִיפִים כְּדֵי שֶׁמִּשְׁתַּמְּשִׁים יִרְצוּ אוֹתוֹ יוֹתֵר.",
             definitionNative = "Новая возможность в продукте — её добавляют, чтобы юзеры хотели его сильнее.",
@@ -144,7 +144,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174506L, 174507L, 174508L, 174510L)),
         WordEntity(
             id = 174510, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_products", transliteration = "bag",
+            pos = "noun", semanticGroup = "hightech_products",
             original = "בָּאג", translation = "баг",
             definition = "שְׁגִיאָה בַּמּוּצָר שֶׁגּוֹרֶמֶת לוֹ לְהִתְנַהֵג לֹא כְּמוֹ שֶׁצָּפוּי.",
             definitionNative = "Поломка в продукте — он ведёт себя не так, как ожидается.",
@@ -155,7 +155,7 @@ object WordDataHebrewHightechL1 {
         // ── hightech_tools (5) — рабочие инструменты ──
         WordEntity(
             id = 174511, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_tools", transliteration = "makhshev",
+            pos = "noun", semanticGroup = "hightech_tools",
             original = "מַחְשֵׁב", translation = "компьютер",
             definition = "מְכוֹנָה חַשְׁמַלִּית שֶׁמְּעַבֶּדֶת מֵידָע וּמַרִיצָה תּוֹכְנוֹת.",
             definitionNative = "Электрическая машина, что обрабатывает данные и запускает программы.",
@@ -164,7 +164,7 @@ object WordDataHebrewHightechL1 {
         ),
         WordEntity(
             id = 174512, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_tools", transliteration = "laptop",
+            pos = "noun", semanticGroup = "hightech_tools",
             original = "לַפְטוֹפּ", translation = "ноутбук",
             definition = "מַחְשֵׁב נַיָּד עִם סוֹלְלָה שֶׁאֶפְשָׁר לָקַחַת לִישִׁיבָה אוֹ לַבַּיִת.",
             definitionNative = "Переносной компьютер с батареей — берут на встречу или домой.",
@@ -173,7 +173,7 @@ object WordDataHebrewHightechL1 {
         ),
         WordEntity(
             id = 174513, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_tools", transliteration = "masakh",
+            pos = "noun", semanticGroup = "hightech_tools",
             original = "מָסָךְ", translation = "экран",
             definition = "לוּחַ זְכוּכִית גָּדוֹל שֶׁמַּרְאֶה אֶת הַתְּמוּנָה מֵהַמַּחְשֵׁב.",
             definitionNative = "Большая стеклянная панель, что показывает картинку с компьютера.",
@@ -182,7 +182,7 @@ object WordDataHebrewHightechL1 {
         ),
         WordEntity(
             id = 174514, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_tools", transliteration = "makledet",
+            pos = "noun", semanticGroup = "hightech_tools",
             original = "מַקְלֶדֶת", translation = "клавиатура",
             definition = "לוּחַ עִם כַּפְתּוֹרֵי אוֹתִיּוֹת וּמִסְפָּרִים לִכְתִיבָה לְתוֹךְ הַמַּחְשֵׁב.",
             definitionNative = "Доска с кнопками букв и цифр — нужна, чтобы печатать в компьютер.",
@@ -191,7 +191,7 @@ object WordDataHebrewHightechL1 {
         ),
         WordEntity(
             id = 174515, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_tools", transliteration = "akhbar",
+            pos = "noun", semanticGroup = "hightech_tools",
             original = "עַכְבָּר", translation = "мышь (компьютерная)",
             definition = "מַכְשִׁיר קָטָן בַּיָּד שֶׁמַּזִיז אֶת הַסַּמָּן עַל הַמָּסָךְ.",
             definitionNative = "Маленькая штука в руке — двигает курсор по экрану.",
@@ -202,7 +202,7 @@ object WordDataHebrewHightechL1 {
         // ── hightech_workplace (5) — место работы ──
         WordEntity(
             id = 174516, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_workplace", transliteration = "misrad",
+            pos = "noun", semanticGroup = "hightech_workplace",
             original = "מִשְׂרָד", translation = "офис",
             definition = "בִּנְיָן אוֹ קוֹמָה שֶׁבָּהּ הָעוֹבְדִים מַגִּיעִים לַעֲבוֹד יַחַד בַּיּוֹם.",
             definitionNative = "Здание или этаж, куда сотрудники приходят работать вместе днём.",
@@ -211,7 +211,7 @@ object WordDataHebrewHightechL1 {
         ),
         WordEntity(
             id = 174517, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_workplace", transliteration = "open speis",
+            pos = "noun", semanticGroup = "hightech_workplace",
             original = "אוֹפֶּן סְפֵייס", translation = "опен-спейс",
             definition = "חֶדֶר אֶחָד גָּדוֹל בְּלִי קִירוֹת בֵּין שֻׁלְחָנוֹת שֶׁל עוֹבְדִים שׁוֹנִים.",
             definitionNative = "Один большой зал без стен между столами разных сотрудников.",
@@ -220,7 +220,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174516L, 174518L, 174519L, 174520L)),
         WordEntity(
             id = 174518, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_workplace", transliteration = "khadar yeshivot",
+            pos = "noun", semanticGroup = "hightech_workplace",
             original = "חֲדַר יְשִׁיבוֹת", translation = "переговорка",
             definition = "חֶדֶר סָגוּר עִם שֻׁלְחָן וּמָסָךְ לְשִׂיחוֹת חֲשׁוּבוֹת בְּלִי רַעַשׁ מִבַּחוּץ.",
             definitionNative = "Закрытый кабинет со столом и экраном — для важных бесед без шума снаружи.",
@@ -229,7 +229,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174516L, 174517L, 174519L, 174520L)),
         WordEntity(
             id = 174519, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_workplace", transliteration = "mitbakhon",
+            pos = "noun", semanticGroup = "hightech_workplace",
             original = "מִטְבָּחוֹן", translation = "мини-кухня",
             definition = "פִּינָה קְטַנָּה בָּעֲבוֹדָה עִם מְכוֹנַת קָפֶה וְחֲטִיפִים בְּחִנָּם.",
             definitionNative = "Уголок на работе с кофемашиной и снеками — берут бесплатно.",
@@ -238,7 +238,7 @@ object WordDataHebrewHightechL1 {
         ),
         WordEntity(
             id = 174520, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_workplace", transliteration = "khanaya",
+            pos = "noun", semanticGroup = "hightech_workplace",
             original = "חֲנָיָה", translation = "парковка",
             definition = "מָקוֹם תַּחַת הַבִּנְיָן שֶׁבּוֹ הָעוֹבְדִים מַשְׁאִירִים אֶת הָרֶכֶב.",
             definitionNative = "Место под зданием, где сотрудники оставляют машину.",
@@ -249,7 +249,7 @@ object WordDataHebrewHightechL1 {
         // ── hightech_basic_actions (5) — базовые действия и события ──
         WordEntity(
             id = 174521, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "hightech_basic_actions", transliteration = "likhtov kod",
+            pos = "phrase", semanticGroup = "hightech_basic_actions",
             original = "לִכְתֹּב קוֹד", translation = "писать код",
             definition = "לְהַקְלִיד הוֹרָאוֹת בְּשָׂפָה מְיֻחֶדֶת כְּדֵי שֶׁהַמַּחְשֵׁב יַעֲשֶׂה מַשֶּׁהוּ.",
             definitionNative = "Набирать инструкции на специальном языке — чтобы машина что-то сделала.",
@@ -258,7 +258,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174522L)),
         WordEntity(
             id = 174522, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "hightech_basic_actions", transliteration = "levadek",
+            pos = "verb", semanticGroup = "hightech_basic_actions",
             original = "לְבַדֵּק", translation = "отлаживать (дебажить)",
             definition = "לְחַפֵּשׂ אֶת מָקוֹר הַשְּׁגִיאָה בַּקּוֹד וּלְתַקֵּן אוֹתָהּ.",
             definitionNative = "Искать источник ошибки в коде и исправлять её.",
@@ -267,7 +267,7 @@ object WordDataHebrewHightechL1 {
         ),
         WordEntity(
             id = 174523, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_basic_actions", transliteration = "rilis",
+            pos = "noun", semanticGroup = "hightech_basic_actions",
             original = "רִילִיס", translation = "релиз",
             definition = "רֶגַע שֶׁבּוֹ גִּרְסָה חֲדָשָׁה שֶׁל הַמּוּצָר יוֹצֵאת לַמִּשְׁתַּמְּשִׁים בַּחוּץ.",
             definitionNative = "Момент, когда новая версия продукта выходит к юзерам наружу.",
@@ -276,7 +276,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174524L, 174525L)),
         WordEntity(
             id = 174524, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hightech_basic_actions", transliteration = "miting",
+            pos = "noun", semanticGroup = "hightech_basic_actions",
             original = "מִיטִינְג", translation = "митинг (созвон)",
             definition = "שִׂיחָה מְתֻכְנֶנֶת שֶׁל כַּמָּה אֲנָשִׁים בַּזּוּם אוֹ בַּחֶדֶר.",
             definitionNative = "Запланированный разговор нескольких людей в Зуме или в кабинете.",
@@ -285,7 +285,7 @@ object WordDataHebrewHightechL1 {
          fillInBlankExclusions = listOf(174523L, 174525L)),
         WordEntity(
             id = 174525, setId = 1745, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "hightech_basic_actions", transliteration = "imeil",
+            pos = "noun", semanticGroup = "hightech_basic_actions",
             original = "אִימֵייל", translation = "имейл",
             definition = "הוֹדָעַת טֶקְסְט שֶׁעוֹבֶרֶת בָּרֶשֶׁת מִכְּתֹבֶת אַחַת לִשְׁנִיָּה.",
             definitionNative = "Текстовое сообщение по сети — с одного адреса на другой.",

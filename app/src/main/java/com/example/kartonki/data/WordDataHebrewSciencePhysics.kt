@@ -61,7 +61,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Скорость изменения быстроты тела со временем — в любом направлении его движения.",
             example = "הָרֶכֶב הַחַשְׁמַלִּי לוֹחֵץ אוֹתְךָ לַמּוֹשָׁב בִּזְכוּת הַתְּאוּצָה הָעוֹצֶמְתִית שֶׁלּוֹ.",
             exampleNative = "Электромобиль вжимает в кресло благодаря своей мощной תְּאוּצָה.",
-            transliteration = "тэуца",
             pos = "noun", semanticGroup = "science_physics_mechanics", fillInBlankExclusions = listOf(189702L, 189703L, 189704L, 189705L)),
 
         WordEntity(id = 189702, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -71,7 +70,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Запас движения тела — произведение его массы на быстроту перемещения.",
             example = "הַמַּשָּׂאִית הִמְשִׁיכָה לְהִתְגַּלְגֵּל בִּגְלַל תְּנוּפָה גְּדוֹלָה מִדַּי לִבְלִימָה.",
             exampleNative = "Грузовик ещё катился: его תְּנוּפָה была слишком велика для резкого торможения.",
-            transliteration = "тнуфа",
             pos = "noun", semanticGroup = "science_physics_mechanics", fillInBlankExclusions = listOf(189701L, 189703L, 189704L, 189705L)),
 
         WordEntity(id = 189703, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -81,7 +79,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Природное свойство тела сохранять текущее состояние движения или покоя, пока что-то его не толкнёт.",
             example = "הַנּוֹסְעִים נִזְרָקִים קָדִימָה כִּי הַהִתְמַדָּה דּוֹחֶפֶת אוֹתָם אַחֲרֵי בְּלִימָה.",
             exampleNative = "Пассажиров кидает вперёд: הִתְמַדָּה толкает их и после резкой остановки.",
-            transliteration = "hитмада",
             pos = "noun", semanticGroup = "science_physics_mechanics", fillInBlankExclusions = listOf(189701L, 189702L, 189704L, 189705L)),
 
         WordEntity(id = 189704, setId = 1897, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -91,7 +88,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Сопротивление, которое создают соприкасающиеся поверхности, когда одна скользит по другой.",
             example = "סְקַיֶּרִים מוֹשְׁחִים אֶת הַסְּקִי בְּשַׁעֲוָה כְּדֵי לְצַמְצֵם חִיכּוּךְ עִם הַשֶּׁלֶג.",
             exampleNative = "Лыжники натирают лыжи мазью, чтобы уменьшить חִיכּוּךְ со снегом.",
-            transliteration = "хикух",
             pos = "noun", semanticGroup = "science_physics_mechanics"),
 
         WordEntity(id = 189705, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -101,7 +97,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Поворачивающее воздействие силы на тело вокруг оси — как при затягивании болта ключом.",
             example = "נַהָגֵי מַשָּׂאִיּוֹת מַעֲדִיפִים דִּיזֶל בִּזְכוּת טוֹרְק נָמוּךְ שֶׁמּוֹשֵׁךְ בָּהָר.",
             exampleNative = "Дальнобойщики любят дизель за низкооборотный טוֹרְק, тянущий груз в гору.",
-            transliteration = "торк",
             pos = "noun", semanticGroup = "science_physics_mechanics", fillInBlankExclusions = listOf(189701L, 189702L, 189703L, 189704L)),
 
         // ── Group: science_physics_energy (5 words) ───────────────────────────
@@ -113,7 +108,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Запас движения у тела: чем быстрее или тяжелее оно перемещается, тем этот запас больше.",
             example = "פַּטִּישׁ נוֹפֵל הוֹפֵךְ גֹּבַהּ לְאֶנֶרְגִיָּה קִינֶטִית וְתוֹקֵעַ מַסְמֵר.",
             exampleNative = "Падающий молоток превращает высоту в אֶנֶרְגִיָּה קִינֶטִית и забивает гвоздь.",
-            transliteration = "энэргия кинэтит",
             pos = "phrase", semanticGroup = "science_physics_energy", fillInBlankExclusions = listOf(189707L)),
 
         WordEntity(id = 189707, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -123,7 +117,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Скрытый запас, который тело хранит из-за своего положения или формы; готов перейти в движение при отпускании.",
             example = "קֶשֶׁת מְתוּחָה אוֹגֶרֶת אֶנֶרְגִיָּה פּוֹטֶנְצְיָאלִית וּמְשַׁחְרֶרֶת בַּיְּרִיָּה.",
             exampleNative = "Натянутый лук хранит אֶנֶרְגִיָּה פּוֹטֶנְצְיָאלִית и отдаёт её при выстреле.",
-            transliteration = "энэргия потэнциалит",
             pos = "phrase", semanticGroup = "science_physics_energy", fillInBlankExclusions = listOf(189706L)),
 
         WordEntity(id = 189708, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -133,7 +126,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Доля вложенной энергии, возвращающаяся полезным результатом; остальное уходит на тепло или шум.",
             example = "נוּרוֹת לֶד מְנַצְּחוֹת בִּנְצִילוּת: רֹב הַחַשְׁמַל הוֹפֵךְ לְאוֹר.",
             exampleNative = "Светодиодные лампы выигрывают по נְצִילוּת: почти весь ток идёт в свет.",
-            transliteration = "нэцилут",
             pos = "noun", semanticGroup = "science_physics_energy", fillInBlankExclusions = listOf(189709L, 189710L)),
 
         WordEntity(id = 189709, setId = 1897, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -143,7 +135,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Количество вещества, упакованного в одну единицу объёма тела.",
             example = "עוֹפֶרֶת שׁוֹקַעַת בְּמַיִם כִּי הַצְּפִיפוּת שֶׁלָּהּ גְּבוֹהָה מִשֶּׁל הַנּוֹזֵל.",
             exampleNative = "Свинец тонет в воде: его צְפִיפוּת намного выше, чем у воды.",
-            transliteration = "цфифут",
             pos = "noun", semanticGroup = "science_physics_energy"),
 
         WordEntity(id = 189710, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -153,7 +144,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Физическая величина, измеряющая воздействие силы или движения относительно оси или точки.",
             example = "הַמַּהַנְדֵּס חִשֵּׁב אֶת הַמּוֹמֶנְט שֶׁל הַמַּנּוֹף לִקְבִיעַת אֹרֶךְ הַזְּרוֹעַ.",
             exampleNative = "Инженер посчитал מוֹמֶנְט крана, чтобы решить, какой длины делать стрелу.",
-            transliteration = "момэнт",
             pos = "noun", semanticGroup = "science_physics_energy"),
 
         // ── Group: science_physics_electricity (5 words) ──────────────────────
@@ -165,7 +155,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Материал, легко пропускающий электрический ток; например, медь или алюминий.",
             example = "הַחַשְׁמַלַּאי בָּחַר חוּט נְחֹשֶׁת עָבֶה כִּי הוּא מוֹלִיךְ מְצוּיָן לְבַיִת.",
             exampleNative = "Электрик выбрал толстую медную жилу — она отличный מוֹלִיךְ для домашней проводки.",
-            transliteration = "молих",
             pos = "noun", semanticGroup = "science_physics_electricity"),
 
         WordEntity(id = 189712, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -175,7 +164,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Материал, почти не пропускающий ток или тепло; используется, чтобы блокировать их там, где надо.",
             example = "כְּפָפוֹת גּוּמִי הֵן מַבְדֵּד טוֹב וּמְגִנּוֹת עַל הַחַשְׁמַלַּאי מִפְּנֵי זֶרֶם.",
             exampleNative = "Резиновые перчатки — хороший מַבְדֵּד; защищают электрика от тока.",
-            transliteration = "мавдэд",
             pos = "noun", semanticGroup = "science_physics_electricity", fillInBlankExclusions = listOf(189711L, 189713L, 189714L, 189715L)),
 
         WordEntity(id = 189713, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -185,7 +173,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Притяжение или отталкивание, которое некоторые материалы и движущиеся заряды создают на железе, никеле и друг на друге.",
             example = "כּוֹנְנֵי דִּיסְק שׁוֹמְרִים נְתוּנִים בְּאֵזוֹרֵי מַגְנֵטִיוּת זְעִירִים עַל פְּלָטָה.",
             exampleNative = "Жёсткие диски хранят данные в крошечных участках מַגְנֵטִיוּת на пластине.",
-            transliteration = "магнэтиют",
             pos = "noun", semanticGroup = "science_physics_electricity", fillInBlankExclusions = listOf(189711L, 189712L, 189714L, 189715L)),
 
         WordEntity(id = 189714, setId = 1897, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -195,7 +182,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Базовое свойство частиц, заставляющее их притягиваться или отталкиваться через электрические поля.",
             example = "כְּשֶׁמּוֹרִידִים סְוֶדֶר צַמְרִי, הַשֵּׂעָר עוֹמֵד בִּגְלַל מַטְעָן סְטָטִי.",
             exampleNative = "Снимешь шерстяной свитер — волосы дыбом из-за статического מַטְעָן.",
-            transliteration = "матъан",
             pos = "noun", semanticGroup = "science_physics_electricity", fillInBlankExclusions = listOf(189711L, 189712L, 189713L, 189715L)),
 
         WordEntity(id = 189715, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -205,7 +191,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Катушка из провода: при прохождении тока становится сильным магнитом и «отключается», когда ток снят.",
             example = "בַּמִּגְרָשׁ הַגְּרוּטָאוֹת אֵלֶקְטְרוֹמַגְנֵט עָנָק מֵרִים גּוּפֵי רֶכֶב יְשָׁנִים בְּקַלּוּת.",
             exampleNative = "На свалке металлолома гигантский אֵלֶקְטְרוֹמַגְנֵט легко поднимает кузова старых машин.",
-            transliteration = "электромагнэт",
             pos = "noun", semanticGroup = "science_physics_electricity", fillInBlankExclusions = listOf(189711L, 189712L, 189713L, 189714L)),
 
         // ── Group: science_physics_optics_waves (5 words) ─────────────────────
@@ -217,7 +202,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Расстояние между двумя соседними гребнями волны; определяет цвет света или высоту звука.",
             example = "אוֹרֶךְ גַּל קָצָר יוֹתֵר נִרְאֶה לַעַיִן כְּצֶבַע סָגֹל אוֹ כָּחֹל.",
             exampleNative = "Более короткая אוֹרֶךְ גַּל кажется глазу фиолетовым или синим.",
-            transliteration = "орэх галь",
             pos = "phrase", semanticGroup = "science_physics_optics_waves"),
 
         WordEntity(id = 189717, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -227,7 +211,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Изгиб луча света при переходе в среду, где он движется с иной скоростью.",
             example = "קַשִּׁית בְּכוֹס מַיִם נִרְאֵית שְׁבוּרָה עַל פְּנֵי הַמַּיִם בִּגְלַל הַשְּׁבִירָה שֶׁל הָאוֹר.",
             exampleNative = "Соломинка в стакане воды кажется надломленной у поверхности из-за שְׁבִירָה света.",
-            transliteration = "швира",
             pos = "noun", semanticGroup = "science_physics_optics_waves"),
 
         WordEntity(id = 189718, setId = 1897, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -237,7 +220,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Изогнутый кусок стекла или пластика, отклоняющий лучи света и собирающий из них чёткое изображение.",
             example = "עֲדָשָׁה מְשֻׁרֶטֶת מְטַשְׁטֶשֶׁת כָּל תְּמוּנָה, גַּם עִם חַיֶּשֶׁן מְעֻלֶּה.",
             exampleNative = "Поцарапанная עֲדָשָׁה размывает кадр даже при отличном сенсоре.",
-            transliteration = "адаша",
             pos = "noun", semanticGroup = "science_physics_optics_waves", fillInBlankExclusions = listOf(189717L, 189719L, 189720L)),
 
         WordEntity(id = 189719, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -247,7 +229,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Диапазон волн или цветов, расположенных подряд по длине волны или частоте.",
             example = "הַקֶּשֶׁת בֶּעָנָן מַרְאָה אֶת כָּל הַסְּפֶּקְטְרוּם הַנִּרְאֶה, מֵאָדֹם עַד סָגֹל.",
             exampleNative = "Радуга в облаке показывает весь видимый סְפֶּקְטְרוּם — от красного до фиолетового.",
-            transliteration = "спэктрум",
             pos = "noun", semanticGroup = "science_physics_optics_waves"),
 
         WordEntity(id = 189720, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -257,7 +238,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Явление, при котором тело начинает сильно колебаться, когда внешняя сила толкает его на его же собственной частоте.",
             example = "הַזַּמֶּרֶת שָׁבְרָה כּוֹס יַיִן בִּזְכוּת תְּהוּדָה בֵּין קוֹלָהּ לַכּוֹס.",
             exampleNative = "Певица разбила бокал благодаря תְּהוּדָה между её голосом и стеклом.",
-            transliteration = "тэhуда",
             pos = "noun", semanticGroup = "science_physics_optics_waves", fillInBlankExclusions = listOf(189717L, 189718L, 189719L)),
 
         // ── Group: science_physics_thermo (5 words) ───────────────────────────
@@ -269,7 +249,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Мера беспорядка в системе; в замкнутых системах она имеет тенденцию расти со временем.",
             example = "כּוֹס קָפֶה מִתְקָרֶרֶת מַדְגִּימָה אֵיךְ אֶנְטְרוֹפְּיָה גְּדֵלָה בְּמַעֲרֶכֶת סְגוּרָה.",
             exampleNative = "Остывающий кофе показывает, как אֶנְטְרוֹפְּיָה растёт в замкнутой системе.",
-            transliteration = "энтропия",
             pos = "noun", semanticGroup = "science_physics_thermo", fillInBlankExclusions = listOf(189722L, 189723L, 189724L, 189725L)),
 
         WordEntity(id = 189722, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -279,7 +258,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Передача тепла или тока внутри тела за счёт прямого контакта его частиц друг с другом.",
             example = "מַחֲבַת נְחֹשֶׁת מְחַמֶּמֶת אֹכֶל בִּמְהִירוּת בִּגְלַל הַהוֹלָכָה הַטּוֹבָה שֶׁל הַמַּתֶּכֶת.",
             exampleNative = "Медная сковорода греет еду быстро благодаря хорошей הוֹלָכָה металла.",
-            transliteration = "hолаха",
             pos = "noun", semanticGroup = "science_physics_thermo", fillInBlankExclusions = listOf(189721L, 189723L, 189724L, 189725L)),
 
         WordEntity(id = 189723, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -289,7 +267,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Испускание энергии или частиц телом наружу — в виде волн или лучей.",
             example = "הַטֶּכְנַאי לוֹבֵשׁ אֲפֻדָּה מְעֻפֶּרֶת כְּדֵי לְהָגֵן מִפְּנֵי קְרִינָה.",
             exampleNative = "Техник надевает свинцовый жилет, чтобы защититься от קְרִינָה.",
-            transliteration = "крина́",
             pos = "noun", semanticGroup = "science_physics_thermo", fillInBlankExclusions = listOf(189721L, 189722L, 189724L, 189725L)),
 
         WordEntity(id = 189724, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -299,7 +276,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Степень густоты жидкости — насколько её внутренние слои тормозят друг друга при течении.",
             example = "לִדְבַשׁ קַר יֵשׁ צְמִיגוּת גְּבוֹהָה — לִשְׁפֹּךְ אוֹתוֹ זֶה כְּמוֹ גּוּמִי.",
             exampleNative = "У холодного мёда такая צְמִיגוּת, что лить — будто тянуть резину.",
-            transliteration = "цмигут",
             pos = "noun", semanticGroup = "science_physics_thermo", fillInBlankExclusions = listOf(189721L, 189722L, 189723L, 189725L)),
 
         WordEntity(id = 189725, setId = 1897, languagePair = "he-ru", rarity = "RARE",
@@ -309,7 +285,6 @@ object WordDataHebrewSciencePhysics {
             definitionNative = "Переход жидкости в газ на поверхности — без необходимости доходить до точки кипения.",
             example = "בְּקַיִץ יִשְׂרְאֵלִי הַכְּבִיסָה מִתְיַבֶּשֶׁת מַהֵר בִּגְלַל הִתְאַדּוּת.",
             exampleNative = "Израильским летом бельё сохнет быстро из-за הִתְאַדּוּת.",
-            transliteration = "hитадут",
             pos = "noun", semanticGroup = "science_physics_thermo", fillInBlankExclusions = listOf(189721L, 189722L, 189723L, 189724L)),
     )
 }

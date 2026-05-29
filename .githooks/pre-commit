@@ -32,8 +32,10 @@
 # ── METADATA_ONLY_COMMIT escape hatch ────────────────────────────────────────
 #
 # Флаг METADATA_ONLY_COMMIT=1 разрешает коммитить массовые правки, которые
-# добавляют только whitelisted metadata-поле во все WordEntity и не меняют
-# семантику слов. Текущий whitelist: {isFillInBlankSafe}.
+# затрагивают только whitelisted metadata-поля во всех WordEntity и не меняют
+# семантику слов. Текущий whitelist: {isFillInBlankSafe, fillInBlankExclusions,
+# transliteration-removal} + чистые строки-комментарии. Запятая-пунктуация
+# после удаления поля нормализуется (запятые не несут содержимого слова).
 #
 # Активируется ТОЛЬКО совместно с LARGE_COMMIT_OK=1 (защита от случайного
 # использования при обычной ручной правке).

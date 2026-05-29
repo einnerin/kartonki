@@ -71,7 +71,7 @@ object WordDataHebrewShoppingL5 {
         // ── shopping_brand_advanced (5) — продвинутая бренд-стратегия ──
         WordEntity(
             id = 179301, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_brand_advanced", transliteration = "hon hamutág",
+            pos = "noun", semanticGroup = "shopping_brand_advanced",
             original = "הוֹן הַמּוּתָג", translation = "капитал бренда",
             definition = "הָעֵרֶךְ הַכַּסְפִּי שֶׁלָּקוֹחוֹת מַעֲנִיקִים לְשֵׁם מֻכָּר מֵעַל הַמּוּצָר עַצְמוֹ.",
             definitionNative = "Денежная ценность, которую покупатели придают самому имени — сверх качеств товара.",
@@ -80,7 +80,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179302L, 179303L, 179304L, 179305L)),
         WordEntity(
             id = 179302, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_brand_advanced", transliteration = "arkhetíp hamutág",
+            pos = "noun", semanticGroup = "shopping_brand_advanced",
             original = "אַרְכֵיטִיפּ הַמּוּתָג", translation = "архетип бренда",
             definition = "דְּמוּת קְבוּעָה (גִּבּוֹר, חָכָם, מוֹרֵד) שֶׁמּוּתָג מְשַׂחֵק מוּל הַקְּהַל.",
             definitionNative = "Устойчивый образ — герой, мудрец, бунтарь — который компания играет перед публикой.",
@@ -89,7 +89,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179301L, 179303L, 179304L, 179305L)),
         WordEntity(
             id = 179303, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_brand_advanced", transliteration = "nétakh kolót",
+            pos = "noun", semanticGroup = "shopping_brand_advanced",
             original = "נֶתַח קוֹלוֹת", translation = "доля голоса",
             definition = "אֲחוּז הַזְּמַן וְהַשֶּׁטַח שֶׁמּוּתָג תּוֹפֵס בִּתְקְשׁוֹרֶת בְּהַשְׁוָאָה לַמִּתְחָרִים.",
             definitionNative = "Какую часть рекламного эфира и площадей компания занимает на фоне конкурентов.",
@@ -98,7 +98,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179301L, 179302L, 179304L, 179305L)),
         WordEntity(
             id = 179304, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_brand_advanced", transliteration = "hed hamutág",
+            pos = "noun", semanticGroup = "shopping_brand_advanced",
             original = "הֵד הַמּוּתָג", translation = "резонанс бренда",
             definition = "הַשָּׁלָב שֶׁבּוֹ הַלָּקוֹחַ מַרְגִּישׁ קֶשֶׁר אֲמִתִּי וּמַחֲזִיר רֶגֶשׁ לְחֶבְרָה.",
             definitionNative = "Стадия, когда покупатель чувствует настоящую связь с компанией и отвечает ей теплом.",
@@ -107,7 +107,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179301L, 179302L, 179303L, 179305L)),
         WordEntity(
             id = 179305, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_brand_advanced", transliteration = "éfekt hahilá",
+            pos = "noun", semanticGroup = "shopping_brand_advanced",
             original = "אֶפֶקְט הַהִילָה", translation = "эффект ореола",
             definition = "כְּשֶׁרֹשֶׁם חִיּוּבִי בְּתָחוּם אֶחָד מַטֶּה אֶת הַשִּׁפּוּט בִּשְׁאָר הַתְּחוּמִים.",
             definitionNative = "Когда хорошее впечатление в одной мелочи окрашивает оценку всего остального.",
@@ -118,7 +118,7 @@ object WordDataHebrewShoppingL5 {
         // ── shopping_consumer_law_he (5) — потребительское право Израиля ──
         WordEntity(
             id = 179306, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_consumer_law_he", transliteration = "khok haganát hatsarkhán",
+            pos = "noun", semanticGroup = "shopping_consumer_law_he",
             original = "חֹק הֲגַנַּת הַצַּרְכָן", translation = "закон о защите прав потребителей",
             definition = "חֲקִיקָה יִשְׂרְאֵלִית הַמְּגִנָּה עַל קוֹנִים מִפְּנֵי הַטְעָיָה וְתְנָאִים מַקְפְּחִים.",
             definitionNative = "Израильский закон, защищающий покупателей от обмана и кабальных условий продавца.",
@@ -127,7 +127,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179307L, 179308L, 179309L, 179310L)),
         WordEntity(
             id = 179307, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_consumer_law_he", transliteration = "ktav mastir",
+            pos = "noun", semanticGroup = "shopping_consumer_law_he",
             original = "כְּתָב מַסְתִּיר", translation = "отказ от гарантии",
             definition = "טֶקְסְט קָטָן שֶׁבּוֹ הַמּוֹכֵר מְבַטֵּל אַחֲרָיוּת עַל פְּגָמִים נִסְתָּרִים.",
             definitionNative = "Мелкий текст, которым продавец снимает с себя ответственность за скрытые недостатки.",
@@ -136,7 +136,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179306L, 179308L, 179309L, 179310L)),
         WordEntity(
             id = 179308, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_consumer_law_he", transliteration = "zkhút khukít",
+            pos = "noun", semanticGroup = "shopping_consumer_law_he",
             original = "זְכוּת חֻקִּית", translation = "право по закону",
             definition = "אֶפְשָׁרוּת שֶׁמְּדִינָה מַעֲנִיקָה לְקוֹנֶה וְאִי-אֶפְשָׁר לְוַתֵּר עָלֶיהָ בְּחוֹזֶה.",
             definitionNative = "Возможность, которую государство даёт покупателю и от которой нельзя отказаться договором.",
@@ -145,7 +145,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179306L, 179307L, 179309L, 179310L)),
         WordEntity(
             id = 179309, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_consumer_law_he", transliteration = "hashavát mutsár",
+            pos = "noun", semanticGroup = "shopping_consumer_law_he",
             original = "הֲשָׁבַת מוּצָר", translation = "отзыв партии товара",
             definition = "כְּשֶׁיַּצְרָן דּוֹרֵשׁ מִקּוֹנִים לְהַחְזִיר פְּרִיט בִּגְלַל סַכָּנָה אוֹ פְּגָם רָצִינִי.",
             definitionNative = "Когда производитель просит покупателей вернуть товар из-за опасности или серьёзного дефекта.",
@@ -154,7 +154,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179306L, 179307L, 179308L, 179310L)),
         WordEntity(
             id = 179310, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_consumer_law_he", transliteration = "tviá yitsugít",
+            pos = "noun", semanticGroup = "shopping_consumer_law_he",
             original = "תְּבִיעָה יִיצּוּגִית", translation = "коллективный иск",
             definition = "הַלִּיךְ מִשְׁפָּטִי שֶׁבּוֹ אִישׁ אֶחָד תּוֹבֵעַ בִּשְׁבִיל קְבוּצָה גְּדוֹלָה שֶׁל נִפְגָּעִים.",
             definitionNative = "Судебный процесс, где один истец действует от имени большой группы пострадавших.",
@@ -165,7 +165,7 @@ object WordDataHebrewShoppingL5 {
         // ── shopping_marketing_psych (5) — поведенческая психология покупки ──
         WordEntity(
             id = 179311, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_marketing_psych", transliteration = "hatayá kognitívit",
+            pos = "noun", semanticGroup = "shopping_marketing_psych",
             original = "הִטָּיָה קוֹגְנִיטִיבִית", translation = "когнитивное искажение",
             definition = "סְטִיָּה שִׁיטָתִית שֶׁל הַמַּחֲשָׁבָה מֵהֲגָיוֹן יָבֵשׁ בִּגְלַל קִצּוּרֵי דֶרֶךְ נַפְשִׁיִּים.",
             definitionNative = "Систематический сдвиг мышления от чистой логики из-за умственных коротких путей.",
@@ -174,7 +174,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179312L, 179313L, 179314L, 179315L)),
         WordEntity(
             id = 179312, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_marketing_psych", transliteration = "ikarón hamakhsór",
+            pos = "noun", semanticGroup = "shopping_marketing_psych",
             original = "עִקָּרוֹן הַמַּחְסוֹר", translation = "принцип дефицита",
             definition = "כְּלָל פְּסִיכוֹלוֹגִי: כְּשֶׁמַּשֶּׁהוּ נִדְמֶה נָדִיר, הָרָצוֹן לִקְנוֹתוֹ גָּדֵל.",
             definitionNative = "Психологическое правило: чем что-то кажется реже, тем сильнее тянет это купить.",
@@ -183,7 +183,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179311L, 179313L, 179314L, 179315L)),
         WordEntity(
             id = 179313, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_marketing_psych", transliteration = "hokhakhá khevratít",
+            pos = "noun", semanticGroup = "shopping_marketing_psych",
             original = "הוֹכָחָה חֶבְרָתִית", translation = "социальное доказательство",
             definition = "כְּשֶׁאֲנָשִׁים מַחְלִיטִים מַה לִּקְנוֹת לְפִי מַה שֶּׁאֲחֵרִים כְּבָר עָשׂוּ.",
             definitionNative = "Когда человек решает, что купить, ориентируясь на действия других людей.",
@@ -192,7 +192,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179311L, 179312L, 179314L, 179315L)),
         WordEntity(
             id = 179314, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_marketing_psych", transliteration = "khok hahadadiyút",
+            pos = "noun", semanticGroup = "shopping_marketing_psych",
             original = "חֹק הַהֲדָדִיּוּת", translation = "правило взаимности",
             definition = "נְטִיָּה לְהַחְזִיר טוֹבָה כַּאֲשֶׁר מְקַבְּלִים מַתָּנָה אוֹ דְּגִימָה חִנָּם.",
             definitionNative = "Желание ответить добром, когда тебе подарили что-то или дали бесплатный образец.",
@@ -201,7 +201,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179311L, 179312L, 179313L, 179315L)),
         WordEntity(
             id = 179315, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_marketing_psych", transliteration = "shituk habkhirá",
+            pos = "noun", semanticGroup = "shopping_marketing_psych",
             original = "שִׁתּוּק הַבְּחִירָה", translation = "паралич выбора",
             definition = "כְּשֶׁיֵּשׁ יוֹתֵר מִדַּי אֶפְשָׁרוּיוֹת וְהַקּוֹנֶה לֹא מַחְלִיט כְּלוּם.",
             definitionNative = "Когда вариантов слишком много и покупатель в итоге не выбирает ничего.",
@@ -212,7 +212,7 @@ object WordDataHebrewShoppingL5 {
         // ── shopping_strategy_advanced (5) — продвинутая стратегия рынка ──
         WordEntity(
             id = 179316, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_strategy_advanced", transliteration = "mikúm bashúk",
+            pos = "noun", semanticGroup = "shopping_strategy_advanced",
             original = "מִקּוּם בַּשּׁוּק", translation = "позиционирование на рынке",
             definition = "הַמָּקוֹם הָרְצוּי שֶׁמּוּתָג רוֹצֶה לִתְפֹּס בַּמַּחֲשָׁבָה שֶׁל הַקּוֹנֶה.",
             definitionNative = "Желаемое место, которое марка хочет занять в голове у покупателя.",
@@ -221,7 +221,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179317L, 179318L, 179319L, 179320L)),
         WordEntity(
             id = 179317, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_strategy_advanced", transliteration = "istrategiyát okiyanós kakhól",
+            pos = "noun", semanticGroup = "shopping_strategy_advanced",
             original = "אִסְטְרָטֶגְיַת אוֹקְיָנוֹס כָּחֹל", translation = "стратегия голубого океана",
             definition = "גִּישָׁה שֶׁבָּהּ חֶבְרָה יוֹצֶרֶת שׁוּק חָדָשׁ לְגַמְרֵי בְּמָקוֹם לְהִתְחָרוֹת בַּקַּיָּם.",
             definitionNative = "Подход, при котором фирма создаёт совсем новый рынок вместо борьбы в старом.",
@@ -230,7 +230,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179316L, 179318L, 179319L, 179320L)),
         WordEntity(
             id = 179318, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_strategy_advanced", transliteration = "integratsyá anakhít",
+            pos = "noun", semanticGroup = "shopping_strategy_advanced",
             original = "אִינְטֶגְרַצְיָה אֲנָכִית", translation = "вертикальная интеграция",
             definition = "כְּשֶׁחֶבְרָה רוֹכֶשֶׁת אֶת הַסַּפָּקִים שֶׁלָּהּ אוֹ אֶת רֶשֶׁת הַהֲפָצָה שֶׁלָּהּ.",
             definitionNative = "Когда компания скупает своих поставщиков или сеть распространения товара.",
@@ -239,7 +239,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179316L, 179317L, 179319L, 179320L)),
         WordEntity(
             id = 179319, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_strategy_advanced", transliteration = "diferentsyatsyá",
+            pos = "noun", semanticGroup = "shopping_strategy_advanced",
             original = "דִּיפֶרֶנְצְיַאצְיָה", translation = "дифференциация продукта",
             definition = "כְּשֶׁחֶבְרָה מַבְלִיטָה תְּכוּנָה יִחוּדִית כְּדֵי לְהֵרָאוֹת שׁוֹנָה מֵהַמִּתְחָרִים.",
             definitionNative = "Когда фирма выпячивает уникальную черту, чтобы выглядеть иначе на фоне конкурентов.",
@@ -248,7 +248,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179316L, 179317L, 179318L, 179320L)),
         WordEntity(
             id = 179320, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_strategy_advanced", transliteration = "tamkhúr dinámi",
+            pos = "noun", semanticGroup = "shopping_strategy_advanced",
             original = "תַּמְחוּר דִּינָמִי", translation = "динамическое ценообразование",
             definition = "שִׁיטָה שֶׁבָּהּ הַמְּחִיר מִשְׁתַּנֶּה בִּזְמַן אֲמִתִּי לְפִי בִּיקּוּשׁ וּזְמַן יוֹם.",
             definitionNative = "Подход, при котором цена меняется в реальном времени по спросу и часу суток.",
@@ -259,7 +259,7 @@ object WordDataHebrewShoppingL5 {
         // ── shopping_global_trade (5) — международная торговля ──
         WordEntity(
             id = 179321, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_global_trade", transliteration = "ta'aríf mékhes",
+            pos = "noun", semanticGroup = "shopping_global_trade",
             original = "תַּעֲרִיף מֶכֶס", translation = "таможенный тариф",
             definition = "טַבְלָה רִשְׁמִית שֶׁל אֲחוּזֵי הַתַּשְׁלוּם עַל סְחוֹרוֹת בִּכְנִיסָה לַמְּדִינָה.",
             definitionNative = "Официальная таблица процентов, которые берут с товара при ввозе в страну.",
@@ -268,7 +268,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179322L, 179323L, 179324L, 179325L)),
         WordEntity(
             id = 179322, setId = 1793, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "shopping_global_trade", transliteration = "mas yevú",
+            pos = "noun", semanticGroup = "shopping_global_trade",
             original = "מַס יְבוּא", translation = "импортный налог",
             definition = "תַּשְׁלוּם שֶׁמֵּטִיל הָאוֹצָר עַל מוּצָר שֶׁמַּגִּיעַ מֵחוּץ לָאָרֶץ.",
             definitionNative = "Сбор, который казна берёт с товара, прибывшего из-за границы.",
@@ -277,7 +277,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179321L, 179323L, 179324L, 179325L)),
         WordEntity(
             id = 179323, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_global_trade", transliteration = "kod harmonizatsyá",
+            pos = "noun", semanticGroup = "shopping_global_trade",
             original = "קוֹד הַרְמוֹנִיזַצְיָה", translation = "гармонизированный код",
             definition = "מִסְפָּר בֵּינְלְאֻמִּי שֶׁמְּזַהֶה כָּל מוּצָר בְּטָפְסֵי מֶכֶס בְּכָל הָעוֹלָם.",
             definitionNative = "Международный номер, по которому таможни всех стран узнают любой товар в декларации.",
@@ -286,7 +286,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179321L, 179322L, 179324L, 179325L)),
         WordEntity(
             id = 179324, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_global_trade", transliteration = "heském sákhar khofshí",
+            pos = "noun", semanticGroup = "shopping_global_trade",
             original = "הֶסְכֵּם סַחַר חוֹפְשִׁי", translation = "соглашение о свободной торговле",
             definition = "חוֹזֶה בֵּין מְדִינוֹת שֶׁמְּבַטֵּל אוֹ מַפְחִית אֶת הָמֶכֶס בֵּינֵיהֶן.",
             definitionNative = "Договор между странами, который убирает или снижает пошлины между ними.",
@@ -295,7 +295,7 @@ object WordDataHebrewShoppingL5 {
          fillInBlankExclusions = listOf(179321L, 179322L, 179323L, 179325L)),
         WordEntity(
             id = 179325, setId = 1793, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "shopping_global_trade", transliteration = "khérem sákhar",
+            pos = "noun", semanticGroup = "shopping_global_trade",
             original = "חֵרֶם סַחַר", translation = "торговое эмбарго",
             definition = "אִסּוּר רִשְׁמִי שֶׁמְּדִינָה מַטִּילָה עַל קֶנֶה אוֹ מְכִירָה מוּל מְדִינָה אַחֶרֶת.",
             definitionNative = "Официальный запрет, который страна вводит на покупку или продажу с другим государством.",

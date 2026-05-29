@@ -39,7 +39,7 @@ object WordDataHebrewLawL1 {
         // ── law_id_documents (5) ──────────────────────────────────────────
         WordEntity(
             id = 170301, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "law_id_documents", transliteration = "теудат зеут",
+            pos = "phrase", semanticGroup = "law_id_documents",
             original = "תְּעוּדַת זֶהוּת", translation = "удостоверение личности (теудат-зеут)",
             definition = "הַמִּסְמָךְ הָרִשְׁמִי שֶׁמְּזַהֶה תּוֹשָׁב יִשְׂרָאֵל לְכָל גּוּף מֶמְשַׁלְתִּי.",
             definitionNative = "Главный документ, который опознаёт жителя Израиля во всех государственных инстанциях.",
@@ -48,7 +48,7 @@ object WordDataHebrewLawL1 {
         ),
         WordEntity(
             id = 170302, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_id_documents", transliteration = "даркон",
+            pos = "noun", semanticGroup = "law_id_documents",
             original = "דַּרְכּוֹן", translation = "паспорт (заграничный)",
             definition = "סֵפֶר קָטָן מֵהַמְּדִינָה הַמַּתִּיר יְצִיאָה וּכְנִיסָה לִמְדִינוֹת זָרוֹת.",
             definitionNative = "Маленькая книжка от государства, разрешающая выезд и въезд в чужие страны.",
@@ -57,7 +57,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170303L, 170304L, 170305L)),
         WordEntity(
             id = 170303, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_id_documents", transliteration = "ашра",
+            pos = "noun", semanticGroup = "law_id_documents",
             original = "אַשְׁרָה", translation = "виза",
             definition = "הֶחְתֵּם רִשְׁמִי בַּדַּרְכּוֹן הַמַּתִּיר שְׁהוּת בִּמְדִינָה זָרָה.",
             definitionNative = "Официальная отметка в паспорте, разрешающая находиться в чужой стране.",
@@ -66,7 +66,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170302L, 170304L, 170305L)),
         WordEntity(
             id = 170304, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_id_documents", transliteration = "теуда",
+            pos = "noun", semanticGroup = "law_id_documents",
             original = "תְּעוּדָה", translation = "справка / свидетельство",
             definition = "כְּתָב רִשְׁמִי קָצָר הַמְאַשֵּׁר עֻבְדָּה אוֹ מַעֲמָד מְסֻיָּם שֶׁל אָדָם.",
             definitionNative = "Короткая официальная бумага, удостоверяющая определённый факт или статус человека.",
@@ -75,7 +75,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170302L, 170303L, 170305L)),
         WordEntity(
             id = 170305, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_id_documents", transliteration = "мисмах",
+            pos = "noun", semanticGroup = "law_id_documents",
             original = "מִסְמָךְ", translation = "документ (бумага)",
             definition = "כָּל דַּף רִשְׁמִי הַחָתוּם אוֹ הֶחָתוּם בְּחוֹתֶמֶת, כְּמוֹ חוֹזֶה אוֹ אִישּׁוּר.",
             definitionNative = "Любая официальная бумага с подписью или печатью — например, договор или справка.",
@@ -86,7 +86,7 @@ object WordDataHebrewLawL1 {
         // ── law_office_paperwork (5) ──────────────────────────────────────
         WordEntity(
             id = 170306, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_office_paperwork", transliteration = "хатима",
+            pos = "noun", semanticGroup = "law_office_paperwork",
             original = "חֲתִימָה", translation = "подпись",
             definition = "הַשֵּׁם שֶׁאָדָם כּוֹתֵב בְּיָדוֹ בְּסוֹף נְיָר כְּדֵי לְאַשֵּׁר אוֹתוֹ.",
             definitionNative = "Имя, которое человек пишет рукой в конце бумаги, чтобы её утвердить.",
@@ -95,7 +95,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170307L, 170308L, 170309L, 170310L)),
         WordEntity(
             id = 170307, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_office_paperwork", transliteration = "хотэмэт",
+            pos = "noun", semanticGroup = "law_office_paperwork",
             original = "חוֹתֶמֶת", translation = "печать / штамп",
             definition = "כְּלִי שֶׁמַּשְׁאִיר סִימָן רִשְׁמִי שֶׁל מִשְׂרָד אוֹ אִרְגוּן עַל הַמִּסְמָךְ.",
             definitionNative = "Инструмент, оставляющий официальный знак учреждения или организации на бумаге.",
@@ -104,7 +104,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170306L, 170308L, 170309L, 170310L)),
         WordEntity(
             id = 170308, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_office_paperwork", transliteration = "тофэс",
+            pos = "noun", semanticGroup = "law_office_paperwork",
             original = "טֹפֶס", translation = "бланк / форма",
             definition = "דַּף מוּכָן עִם רוֹבְּרִיקוֹת שֶׁמְּמַלְּאִים בִּפְרָטִים אִישִׁיִּים אוֹ בַּקָּשָׁה.",
             definitionNative = "Готовый листок с графами, куда вписывают личные данные или просьбу.",
@@ -113,7 +113,7 @@ object WordDataHebrewLawL1 {
         ),
         WordEntity(
             id = 170309, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_office_paperwork", transliteration = "ишур",
+            pos = "noun", semanticGroup = "law_office_paperwork",
             original = "אִישּׁוּר", translation = "подтверждение / справка",
             definition = "מִכְתָּב קָצָר מִגּוּף רִשְׁמִי הַמְּאַשֵּׁר שֶׁמַּשֶּׁהוּ נָכוֹן אוֹ הֻסְכַּם.",
             definitionNative = "Короткая бумага от учреждения, удостоверяющая, что нечто верно или одобрено.",
@@ -122,7 +122,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170304L, 170306L, 170307L, 170308L, 170310L)),
         WordEntity(
             id = 170310, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_office_paperwork", transliteration = "ришайон",
+            pos = "noun", semanticGroup = "law_office_paperwork",
             original = "רִשָּׁיוֹן", translation = "разрешение / лицензия",
             definition = "הֶיתֵּר רִשְׁמִי לַעֲשׂוֹת מַשֶּׁהוּ — לִנְהֹג, לִפְתֹּחַ עֵסֶק, לְהַחְזִיק נֶשֶׁק.",
             definitionNative = "Официальное право что-то делать — водить, открыть бизнес, держать оружие.",
@@ -133,7 +133,7 @@ object WordDataHebrewLawL1 {
         // ── law_authorities_basic (5) ─────────────────────────────────────
         WordEntity(
             id = 170311, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_authorities_basic", transliteration = "миштара",
+            pos = "noun", semanticGroup = "law_authorities_basic",
             original = "מִשְׁטָרָה", translation = "полиция",
             definition = "הַגּוּף הַשּׁוֹמֵר עַל הַסֵּדֶר הַצִּבּוּרִי וְעַל קִיּוּם הַחוֹק.",
             definitionNative = "Орган, который следит за общественным порядком и соблюдением закона.",
@@ -142,7 +142,7 @@ object WordDataHebrewLawL1 {
         ),
         WordEntity(
             id = 170312, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_authorities_basic", transliteration = "пакид",
+            pos = "noun", semanticGroup = "law_authorities_basic",
             original = "פָּקִיד", translation = "чиновник / служащий",
             definition = "עוֹבֵד מִשְׂרָד מֶמְשַׁלְתִּי הַמְּטַפֵּל בִּפְנִיּוֹת שֶׁל הַתּוֹשָׁבִים.",
             definitionNative = "Работник государственной конторы, который ведёт приём граждан и оформляет бумаги.",
@@ -151,7 +151,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170311L, 170313L, 170314L, 170315L)),
         WordEntity(
             id = 170313, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_authorities_basic", transliteration = "нотарьон",
+            pos = "noun", semanticGroup = "law_authorities_basic",
             original = "נוֹטָרְיוֹן", translation = "нотариус",
             definition = "אִישׁ מִקְצוֹעַ שֶׁמַּסְמִיךְ חֲתִימוֹת וּמְאַמֵּת תַּרְגּוּמִים שֶׁל מִסְמָכִים רִשְׁמִיִּים.",
             definitionNative = "Специалист, заверяющий подписи и удостоверяющий переводы официальных документов.",
@@ -160,7 +160,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170307L, 170311L, 170312L, 170314L, 170315L)),
         WordEntity(
             id = 170314, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_authorities_basic", transliteration = "шагрирут",
+            pos = "noun", semanticGroup = "law_authorities_basic",
             original = "שַׁגְרִירוּת", translation = "посольство",
             definition = "הַנְּצִיגוּת הָרָאשִׁית שֶׁל מְדִינָה זָרָה בָּעִיר הַבִּירָה.",
             definitionNative = "Главное представительство чужой страны в столице.",
@@ -169,7 +169,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170311L, 170312L, 170313L, 170315L)),
         WordEntity(
             id = 170315, setId = 1703, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "law_authorities_basic", transliteration = "консулия",
+            pos = "noun", semanticGroup = "law_authorities_basic",
             original = "קוֹנְסוּלִיָּה", translation = "консульство",
             definition = "מִשְׂרָד שֶׁל מְדִינָה זָרָה הַמְּטַפֵּל בְּדַרְכּוֹנִים וּבְעִנְיְנֵי אֶזְרָחֶיהָ בְּחוּל.",
             definitionNative = "Учреждение чужой страны, занимающееся паспортами и делами своих граждан за рубежом.",
@@ -182,7 +182,7 @@ object WordDataHebrewLawL1 {
         // ── law_civil_certificates (3) ────────────────────────────────────
         WordEntity(
             id = 170316, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "law_civil_certificates", transliteration = "теудат лейда",
+            pos = "phrase", semanticGroup = "law_civil_certificates",
             original = "תְּעוּדַת לֵידָה", translation = "свидетельство о рождении",
             definition = "מִסְמָךְ רִשְׁמִי הַמְּאַשֵּׁר אֶת תַּאֲרִיךְ וְהוֹרֵי הָאָדָם בִּשְׁעַת לֵידָתוֹ.",
             definitionNative = "Официальная бумага, удостоверяющая дату рождения человека и имена его родителей.",
@@ -191,7 +191,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170317L, 170318L)),
         WordEntity(
             id = 170317, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "law_civil_certificates", transliteration = "теудат нисуин",
+            pos = "phrase", semanticGroup = "law_civil_certificates",
             original = "תְּעוּדַת נִישׂוּאִין", translation = "свидетельство о браке",
             definition = "מִסְמָךְ רִשְׁמִי הַמּוֹכִיחַ שֶׁשְּׁנֵי אֲנָשִׁים נִשְּׂאוּ זֶה לְזוֹ עַל פִּי חוֹק.",
             definitionNative = "Официальная бумага, доказывающая, что два человека вступили в брак по закону.",
@@ -200,7 +200,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170316L, 170318L)),
         WordEntity(
             id = 170318, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "law_civil_certificates", transliteration = "цилум мисмах",
+            pos = "phrase", semanticGroup = "law_civil_certificates",
             original = "צִילּוּם מִסְמָךְ", translation = "копия документа (фотокопия)",
             definition = "הֶעְתֵּק נְאֱמָן לַמְּקוֹר שֶׁמּוּכָן בְּמַכְשִׁיר צִילּוּם וּמְצוֹרָף לַטֹּפֶס.",
             definitionNative = "Точная копия оригинала, сделанная на копировальном аппарате и приложенная к бланку.",
@@ -211,7 +211,7 @@ object WordDataHebrewLawL1 {
         // ── law_status_basic (4) ──────────────────────────────────────────
         WordEntity(
             id = 170319, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "law_status_basic", transliteration = "эзрахут",
+            pos = "noun", semanticGroup = "law_status_basic",
             original = "אֶזְרָחוּת", translation = "гражданство",
             definition = "הַמַּעֲמָד הַחֻקִּי שֶׁל אָדָם כְּשַׁיָּךְ לִמְדִינָה מְסֻיֶּמֶת עִם זְכֻיּוֹת מְלֵאוֹת.",
             definitionNative = "Юридический статус человека как принадлежащего к определённой стране с полным набором прав.",
@@ -220,7 +220,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170321L, 170322L)),
         WordEntity(
             id = 170320, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "law_status_basic", transliteration = "тошав кавуа",
+            pos = "phrase", semanticGroup = "law_status_basic",
             original = "תּוֹשָׁב קָבוּעַ", translation = "постоянный житель / резидент",
             definition = "מִי שֶׁגָּר בָּאָרֶץ דֶּרֶךְ קֶבַע אַךְ עֲדַיִן אֵינוֹ אֶזְרָח.",
             definitionNative = "Тот, кто живёт в стране на постоянной основе, но ещё не гражданин.",
@@ -229,7 +229,7 @@ object WordDataHebrewLawL1 {
         ),
         WordEntity(
             id = 170321, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "law_status_basic", transliteration = "зхуйот",
+            pos = "noun", semanticGroup = "law_status_basic",
             original = "זְכֻיּוֹת", translation = "права (личные)",
             definition = "הַדְּבָרִים שֶׁמַּגִּיעִים לְכָל אָדָם עַל פִּי חוֹק — חֻפְשַׁת דִּבּוּר, שִׁוְיוֹן, רְכוּשׁ.",
             definitionNative = "То, что положено каждому по закону — свобода слова, равенство, имущество.",
@@ -238,7 +238,7 @@ object WordDataHebrewLawL1 {
         ),
         WordEntity(
             id = 170322, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "law_status_basic", transliteration = "таариф",
+            pos = "noun", semanticGroup = "law_status_basic",
             original = "תַּעֲרִיף", translation = "пошлина / тариф",
             definition = "סְכוּם קָבוּעַ שֶׁמְּשַׁלְּמִים לַמְּדִינָה תְּמוּרַת שֵׁרוּת רִשְׁמִי כְּמוֹ דַּרְכּוֹן.",
             definitionNative = "Фиксированная сумма, которую платят государству за официальную услугу — например, паспорт.",
@@ -249,7 +249,7 @@ object WordDataHebrewLawL1 {
         // ── law_legal_actions_basic (3) ───────────────────────────────────
         WordEntity(
             id = 170323, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "law_legal_actions_basic", transliteration = "hагаша",
+            pos = "noun", semanticGroup = "law_legal_actions_basic",
             original = "הַגָּשָׁה", translation = "подача (заявления, документов)",
             definition = "הַעֲבָרַת טֹפֶס אוֹ מִסְמָכִים לַמִּשְׂרָד הָרָאוּי לְטִפּוּל בָּהֶם.",
             definitionNative = "Передача бланка или бумаг в учреждение, которое должно ими заняться.",
@@ -258,7 +258,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170325L)),
         WordEntity(
             id = 170324, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "law_legal_actions_basic", transliteration = "бакаша",
+            pos = "noun", semanticGroup = "law_legal_actions_basic",
             original = "בַּקָּשָׁה", translation = "заявление / прошение",
             definition = "פְּנִיָּה כְּתוּבָה לִרְשׁוּת הַמְּבַקֶּשֶׁת שֵׁרוּת אוֹ אִישּׁוּר רִשְׁמִי.",
             definitionNative = "Письменное обращение в орган с просьбой об услуге или официальном одобрении.",
@@ -267,7 +267,7 @@ object WordDataHebrewLawL1 {
          fillInBlankExclusions = listOf(170323L, 170325L)),
         WordEntity(
             id = 170325, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "law_legal_actions_basic", transliteration = "hитьяцвут",
+            pos = "noun", semanticGroup = "law_legal_actions_basic",
             original = "הִתְיַצְּבוּת", translation = "явка (по вызову)",
             definition = "הַגָּעָה אִישִׁית לְמִשְׂרָד אוֹ לִרְשׁוּת לְפִי הַזְמָנָה רִשְׁמִית.",
             definitionNative = "Личный приход в учреждение или ведомство по официальному вызову.",

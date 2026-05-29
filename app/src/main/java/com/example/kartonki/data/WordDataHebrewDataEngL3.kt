@@ -54,7 +54,7 @@ object WordDataHebrewDataEngL3 {
         // ── de_storage (5) — хранилища данных ──
         WordEntity(
             id = 176301, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_storage", transliteration = "data verhaus",
+            pos = "noun", semanticGroup = "de_storage",
             original = "דָּאטָה וֵייְארְהָאוּס", translation = "хранилище данных",
             definition = "מָסַד מֶרְכָּזִי גָּדוֹל שֶׁאוֹסֵף נְתוּנִים מִמְּקוֹרוֹת רַבִּים — בְּשָׁבִיל דּוּחוֹת וְאָנָלִיטִיקָה.",
             definitionNative = "Большая центральная база — собирает данные из многих источников для отчётов и аналитики.",
@@ -63,7 +63,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176302L, 176303L, 176304L, 176305L)),
         WordEntity(
             id = 176302, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_storage", transliteration = "data leyk",
+            pos = "noun", semanticGroup = "de_storage",
             original = "דָּאטָה לֵייק", translation = "озеро данных",
             definition = "אַחְסוּן זוֹל לְקַבְצֵי גַּלְמִי שׁוֹנִים — לוֹגִים, תְּמוּנוֹת, JSON — בְּלִי סְכֵמָה קְבוּעָה.",
             definitionNative = "Дешёвое хранилище разных сырых файлов — логов, картинок, JSON — без жёсткой схемы.",
@@ -72,7 +72,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176301L, 176303L, 176304L, 176305L)),
         WordEntity(
             id = 176303, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_storage", transliteration = "es shalosh",
+            pos = "noun", semanticGroup = "de_storage",
             original = "S3", translation = "S3 (объектное хранилище)",
             definition = "שֵׁרוּת אַחְסוּן עַל הָעָנָן שֶׁל אֲמָזוֹן — שׁוֹמֵר קַבְצֵי-עָנָק בְּמְחִיר נָמוּךְ לְפֵר ג׳יגה.",
             definitionNative = "Сервис хранения от Amazon — держит огромные файлы за низкую цену за гигабайт.",
@@ -81,7 +81,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176301L, 176302L, 176304L, 176305L)),
         WordEntity(
             id = 176304, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_storage", transliteration = "parket",
+            pos = "noun", semanticGroup = "de_storage",
             original = "פַּרְקֵט", translation = "Parquet (формат файлов)",
             definition = "פוֹרְמָט קְבָצִים דָּחוּס שֶׁשּׁוֹמֵר לְפִי עַמּוּדוֹת — קָרִיא מָהִיר בִּשְׁאֵילְתוֹת אָנָלִיטִיוֹת.",
             definitionNative = "Сжатый формат файлов, хранит по столбцам — быстро читается аналитическими запросами.",
@@ -90,7 +90,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176301L, 176302L, 176303L, 176305L)),
         WordEntity(
             id = 176305, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_storage", transliteration = "ihsun amudi",
+            pos = "noun", semanticGroup = "de_storage",
             original = "אִחְסוּן עַמּוּדִי", translation = "колоночное хранение",
             definition = "שִׁיטַת שְׁמִירָה שֶׁבָּהּ כָּל עַמּוּדָה יוֹשֶׁבֶת בְּקֹבֶץ נִפְרָד — מְצֻיָּן לְקְרִיאָה שֶׁל שָׂדוֹת בּוֹדְדִים.",
             definitionNative = "Способ хранения, где каждый столбец лежит в отдельном файле — отлично читать одиночные поля.",
@@ -101,7 +101,7 @@ object WordDataHebrewDataEngL3 {
         // ── de_etl (5) — конвейеры данных ──
         WordEntity(
             id = 176306, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_etl", transliteration = "i-ti-el",
+            pos = "noun", semanticGroup = "de_etl",
             original = "אֵי-טִי-אֵל", translation = "ETL (extract-transform-load)",
             definition = "תַּהֲלִיךְ שֶׁשּׁוֹאֵב נְתוּנִים מִמָּקוֹר, מְעַבֵּד אוֹתָם בְּדֶרֶךְ וְשׁוֹמֵר לַיַּעַד הַסּוֹפִי.",
             definitionNative = "Процесс — тянет данные из источника, обрабатывает по дороге и кладёт в финальное место.",
@@ -110,7 +110,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176307L, 176308L, 176309L, 176310L)),
         WordEntity(
             id = 176307, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_etl", transliteration = "i-el-ti",
+            pos = "noun", semanticGroup = "de_etl",
             original = "אֵי-אֵל-טִי", translation = "ELT (extract-load-transform)",
             definition = "גִּישָׁה הַפוּכָה לְאֵי-טִי-אֵל — קוֹדֵם טוֹעֲנִים גַּלְמִי לַמֶּחְסָן וְרַק שָׁם מְעַבְּדִים בִּשְׁאֵילְתוֹת.",
             definitionNative = "Подход наоборот — сначала грузят сырое в хранилище и только там обрабатывают запросами.",
@@ -119,7 +119,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176306L, 176308L, 176309L, 176310L)),
         WordEntity(
             id = 176308, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_etl", transliteration = "ibud batch",
+            pos = "noun", semanticGroup = "de_etl",
             original = "עִבּוּד בָּאצ׳", translation = "пакетная обработка",
             definition = "רִיצָה שֶׁאוֹסֶפֶת חֲבִילָה גְּדוֹלָה שֶׁל נְתוּנִים וּמְעַבֶּדֶת אוֹתָהּ יַחַד פַּעַם בִּזְמַן קָבוּעַ.",
             definitionNative = "Прогон, собирающий большую партию данных и обрабатывающий её разом по расписанию.",
@@ -128,7 +128,7 @@ object WordDataHebrewDataEngL3 {
         ),
         WordEntity(
             id = 176309, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_etl", transliteration = "khaluka be-zman emet",
+            pos = "noun", semanticGroup = "de_etl",
             original = "חֲלוּקָה בִּזְמַן אֱמֶת", translation = "обработка в реальном времени",
             definition = "קְלִיטַת אֵירוּעִים אֶחָד אֶחָד מִיָּד עִם הַגָּעָתָם — בְּלִי לְחַכּוֹת לְחֲבִילָה גְּדוֹלָה.",
             definitionNative = "Приём событий по одному сразу при поступлении — без ожидания большой партии.",
@@ -137,7 +137,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176306L, 176307L, 176308L, 176310L)),
         WordEntity(
             id = 176310, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_etl", transliteration = "paypline",
+            pos = "noun", semanticGroup = "de_etl",
             original = "פַּיְיפְּלַיְין", translation = "конвейер данных (pipeline)",
             definition = "שַׁרְשֶׁרֶת שֶׁל שְׁלָבִים שֶׁמַּעֲבִירָה נְתוּנִים מִמָּקוֹר אֶחָד דֶּרֶךְ עִבּוּדִים עַד לַתּוֹצָאָה.",
             definitionNative = "Цепочка шагов, ведущая данные от источника через обработки к итогу.",
@@ -148,7 +148,7 @@ object WordDataHebrewDataEngL3 {
         // ── de_processing (5) — обработка данных ──
         WordEntity(
             id = 176311, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_processing", transliteration = "spark",
+            pos = "noun", semanticGroup = "de_processing",
             original = "סְפַּארְק", translation = "Spark (движок обработки)",
             definition = "מָנוֹעַ עִבּוּד מָקְבִּילִי לְכַמֻּיּוֹת עֲצוּמוֹת — מְחַלֵּק עֲבוֹדָה בֵּין הַרְבֵּה מְכוֹנוֹת בָּעַת.",
             definitionNative = "Параллельный движок для огромных объёмов — делит работу между многими машинами сразу.",
@@ -157,7 +157,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176312L, 176313L, 176314L, 176315L)),
         WordEntity(
             id = 176312, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_processing", transliteration = "hadup",
+            pos = "noun", semanticGroup = "de_processing",
             original = "הָאדוּפּ", translation = "Hadoop (платформа)",
             definition = "מַעֲרֶכֶת קְלָאסִית לִשְׁמִירָה וְעִבּוּד נְתוּנִים עַל אֶשְׁכּוֹל גָּדוֹל שֶׁל מְכוֹנוֹת זְעוּמוֹת.",
             definitionNative = "Классическая платформа — хранит и обрабатывает данные на большом кластере дешёвых машин.",
@@ -166,7 +166,7 @@ object WordDataHebrewDataEngL3 {
         ),
         WordEntity(
             id = 176313, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_processing", transliteration = "map-rid'us",
+            pos = "noun", semanticGroup = "de_processing",
             original = "מָאפּ-רִידְיוּס", translation = "MapReduce (модель)",
             definition = "תַּבְנִית עִבּוּד מָקְבִּילִי בִּשְׁנֵי שְׁלָבִים — קוֹדֶם מְמַפִּים כָּל פְּרִיט וְאַחַר כָּךְ מְצַמְצְמִים יַחַד.",
             definitionNative = "Шаблон параллельной обработки в два шага — сначала разметить каждую запись, потом свернуть вместе.",
@@ -175,7 +175,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176311L, 176312L, 176314L, 176315L)),
         WordEntity(
             id = 176314, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_processing", transliteration = "partitsya",
+            pos = "noun", semanticGroup = "de_processing",
             original = "פַּרְטִיצְיָה", translation = "партиционирование",
             definition = "חֲלוּקַת טַבְלָה גְּדוֹלָה לִפְרוּסוֹת לְפִי תַּאֲרִיךְ אוֹ אֵזוֹר — כְּדֵי לִקְרֹא רַק אֶת הַחֵלֶק הַנָּחוּץ.",
             definitionNative = "Деление большой таблицы на куски по дате или региону — чтобы читать только нужный.",
@@ -184,7 +184,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176311L, 176312L, 176313L, 176315L)),
         WordEntity(
             id = 176315, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_processing", transliteration = "shafl",
+            pos = "noun", semanticGroup = "de_processing",
             original = "שָׁאפְל", translation = "shuffle (перемешивание)",
             definition = "שְׁלָב יָקָר שֶׁבּוֹ נְתוּנִים זוֹרְמִים בֵּין מְכוֹנוֹת בְּאֶשְׁכּוֹל כְּדֵי לְקַבֵּץ לְפִי מַפְתֵּחַ מְשֻׁתָּף.",
             definitionNative = "Дорогой шаг — данные текут между машинами в кластере, чтобы сгруппироваться по общему ключу.",
@@ -195,7 +195,7 @@ object WordDataHebrewDataEngL3 {
         // ── de_orchestration (5) — оркестрация задач ──
         WordEntity(
             id = 176316, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_orchestration", transliteration = "eyrflou",
+            pos = "noun", semanticGroup = "de_orchestration",
             original = "אֵיירְפְלוֹאוּ", translation = "Airflow (оркестратор)",
             definition = "כְּלִי שֶׁמַּגְדִּיר וּמַפְעִיל סֵדֶר רִיצָה שֶׁל מְשִׂימוֹת נְתוּנִים — עַל פִּי לוּחַ זְמַנִּים וּתְלוּת.",
             definitionNative = "Инструмент — задаёт и запускает порядок прогона задач по данным, по расписанию и зависимостям.",
@@ -204,7 +204,7 @@ object WordDataHebrewDataEngL3 {
         ),
         WordEntity(
             id = 176317, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_orchestration", transliteration = "deyag",
+            pos = "noun", semanticGroup = "de_orchestration",
             original = "דֵּיאַג", translation = "DAG (граф задач)",
             definition = "תַּרְשִׁים שֶׁל מְשִׂימוֹת בְּלוּלְאוֹת — חִצִּים מַרְאִים מַה רָץ אַחֲרֵי מַה וְלֹא חוֹזְרִים אַחוֹרָה.",
             definitionNative = "Схема задач без циклов — стрелки показывают, что после чего идёт, и не возвращаются назад.",
@@ -213,7 +213,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176316L, 176318L, 176319L, 176320L)),
         WordEntity(
             id = 176318, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_orchestration", transliteration = "metazmen",
+            pos = "noun", semanticGroup = "de_orchestration",
             original = "מְתַזְמֵן", translation = "планировщик",
             definition = "רְכִיב שֶׁמַּחֲלִיט מָתַי לְהַפְעִיל כָּל מְשִׂימָה לְפִי שָׁעוֹן אוֹ לְפִי הוֹפָעַת קֹבֶץ חָדָשׁ.",
             definitionNative = "Компонент, решающий, когда стартовать каждую задачу — по часам или по приходу нового файла.",
@@ -222,7 +222,7 @@ object WordDataHebrewDataEngL3 {
         ),
         WordEntity(
             id = 176319, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_orchestration", transliteration = "tlut bein meshimot",
+            pos = "noun", semanticGroup = "de_orchestration",
             original = "תְּלוּת בֵּין מְשִׂימוֹת", translation = "зависимость между задачами",
             definition = "כְּלָל שֶׁאוֹמֵר שֶׁמְּשִׂימָה אַחַת תַּתְחִיל רַק כְּשֶׁאַחֶרֶת סִיְּמָה בְּהַצְלָחָה — בִּשְׁבִיל סֵדֶר נָכוֹן.",
             definitionNative = "Правило — одна задача стартует только после успешного финиша другой, для правильного порядка.",
@@ -231,7 +231,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176316L, 176317L, 176318L, 176320L)),
         WordEntity(
             id = 176320, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_orchestration", transliteration = "bek-fil",
+            pos = "noun", semanticGroup = "de_orchestration",
             original = "בֶּקְפִיל", translation = "backfill (досчёт прошлого)",
             definition = "רִיצָה רֶטְרוֹאַקְטִיבִית עַל תַּאֲרִיכִים שֶׁעָבְרוּ — כְּדֵי לְמַלֵּא אֶת הַטַּבְלָה לְאַחַר תִּקּוּן בָּאג.",
             definitionNative = "Ретроактивный прогон по прошедшим датам — заполнить таблицу после починки бага.",
@@ -242,7 +242,7 @@ object WordDataHebrewDataEngL3 {
         // ── de_quality (5) — качество данных ──
         WordEntity(
             id = 176321, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_quality", transliteration = "eykhut data",
+            pos = "noun", semanticGroup = "de_quality",
             original = "אֵיכוּת דָּאטָה", translation = "качество данных",
             definition = "מִדָּה שֶׁל אֱמוּנָה בַּטַּבְלָאוֹת — אִם הַשּׁוּרוֹת מְלֵאוֹת, נְכוֹנוֹת וּעֲדִיכָנִיוֹת.",
             definitionNative = "Мера доверия к таблицам — насколько строки полные, корректные и свежие.",
@@ -251,7 +251,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176322L, 176323L, 176324L, 176325L)),
         WordEntity(
             id = 176322, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_quality", transliteration = "akhifat skhema",
+            pos = "noun", semanticGroup = "de_quality",
             original = "אַכִיפַת סְכֵמָה", translation = "контроль схемы",
             definition = "דְּחִיָּה אוֹטוֹמָטִית שֶׁל שׁוּרוֹת שֶׁלֹּא מַתְאִימוֹת לַמִּבְנֶה הַצָּפוּי — שֵׁם שָׂדֶה אוֹ סוּג שָׁגוּי.",
             definitionNative = "Автоматический отказ строкам, не подходящим под ожидаемое устройство — имя поля или тип.",
@@ -260,7 +260,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176321L, 176323L, 176324L, 176325L)),
         WordEntity(
             id = 176323, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_quality", transliteration = "deduplikatsya",
+            pos = "noun", semanticGroup = "de_quality",
             original = "דֶּדוּפְּלִיקַצְיָה", translation = "дедупликация",
             definition = "סִלּוּק שׁוּרוֹת זֵהוֹת שֶׁהִגִּיעוּ פַּעֲמַיִם בִּגְלַל נִסְיוֹן חוֹזֵר אוֹ בָּאג בָּאַסְפָנִים.",
             definitionNative = "Удаление одинаковых строк, попавших дважды из-за повтора попытки или бага в коллекторах.",
@@ -269,7 +269,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176321L, 176322L, 176324L, 176325L)),
         WordEntity(
             id = 176324, setId = 1763, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "de_quality", transliteration = "naitunim me'uharim",
+            pos = "noun", semanticGroup = "de_quality",
             original = "נְתוּנִים מְאֻחָרִים", translation = "поздно прибывшие данные",
             definition = "אֵירוּעִים שֶׁמַּגִּיעִים אַחֲרֵי שֶׁכְּבָר סָגַרְנוּ אֶת הַחַלּוֹן שֶׁלָּהֶם — בִּגְלַל רֶשֶׁת אִיטִּית אוֹ תּוֹר עָמוּס.",
             definitionNative = "События, приходящие после закрытия их окна — из-за медленной сети или забитой очереди.",
@@ -278,7 +278,7 @@ object WordDataHebrewDataEngL3 {
          fillInBlankExclusions = listOf(176321L, 176322L, 176323L, 176325L)),
         WordEntity(
             id = 176325, setId = 1763, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_quality", transliteration = "vatermark",
+            pos = "noun", semanticGroup = "de_quality",
             original = "וָוטֶרְמַארְק", translation = "watermark (граница времени)",
             definition = "סִימָן שֶׁאוֹמֵר עַד אֵיזוֹ נְקֻדַּת זְמַן רוֹאִים אֶת הַזֶּרֶם כִּשְׁלֵם — מָה שֶׁמְּאַחֵר אַחֲרֵי כֵן יִדָּחֶה.",
             definitionNative = "Метка — до какой точки во времени поток считается полным; всё опоздавшее после неё отбросят.",

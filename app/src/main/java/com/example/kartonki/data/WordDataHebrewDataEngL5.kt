@@ -61,7 +61,7 @@ object WordDataHebrewDataEngL5 {
         // ── de_architecture_advanced (5) — стратегические архитектуры данных ──
         WordEntity(
             id = 177601, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_architecture_advanced", transliteration = "data mesh",
+            pos = "noun", semanticGroup = "de_architecture_advanced",
             original = "דָּאטָה מֵשׁ", translation = "data mesh",
             definition = "גִּישָׁה שֶׁבָּהּ כָּל תְּחוּם עִסְקִי אַחְרַאי בְּעַצְמוֹ עַל הַמֵּידָע שֶׁלּוֹ כְּמוּצָר.",
             definitionNative = "Подход — каждый бизнес-домен сам отвечает за свои данные как за продукт.",
@@ -70,7 +70,7 @@ object WordDataHebrewDataEngL5 {
         ),
         WordEntity(
             id = 177602, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_architecture_advanced", transliteration = "data fabric",
+            pos = "noun", semanticGroup = "de_architecture_advanced",
             original = "דָּאטָה פֶבְּרִיק", translation = "data fabric",
             definition = "שִׁכְבָה אַחֲדוּתִית שֶׁמְּחַבֶּרֶת מַאֲגָרִים מְפֻזָּרִים לִתְחוּשָׁה שֶׁל מְקוֹר אֶחָד.",
             definitionNative = "Единый слой — связывает разрозненные хранилища в ощущение одного источника.",
@@ -79,7 +79,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177601L, 177603L, 177604L, 177605L)),
         WordEntity(
             id = 177603, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_architecture_advanced", transliteration = "leykhaus",
+            pos = "noun", semanticGroup = "de_architecture_advanced",
             original = "לֵייקְהָאוּס", translation = "lakehouse",
             definition = "אַרְכִיטֶקְטוּרָה שֶׁמְּשַׁלֶּבֶת אַחְסוּן זוֹל שֶׁל לֵייק עִם שְׁאֵלוֹת מְבֻנּוֹת שֶׁל מַחְסָן.",
             definitionNative = "Архитектура — соединяет дешёвое хранение озера со структурными запросами хранилища.",
@@ -88,7 +88,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177601L, 177602L, 177604L, 177605L)),
         WordEntity(
             id = 177604, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_architecture_advanced", transliteration = "arkhitekturat medalyon",
+            pos = "noun", semanticGroup = "de_architecture_advanced",
             original = "אַרְכִיטֶקְטוּרַת מֵדַלְיוֹן", translation = "medallion architecture",
             definition = "תַּבְנִית בִּשְׁלוֹשׁ שִׁכְבוֹת — בְּרוֹנְזֶה לְגַלְמִי, כֶּסֶף לְמְעוּבָּד, זָהָב לִמְזֻכָּךְ.",
             definitionNative = "Шаблон в три слоя — бронза для сырого, серебро для обработанного, золото для очищенного.",
@@ -97,7 +97,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177601L, 177602L, 177603L, 177605L)),
         WordEntity(
             id = 177605, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_architecture_advanced", transliteration = "tkhum data",
+            pos = "noun", semanticGroup = "de_architecture_advanced",
             original = "תְּחוּם דָּאטָה", translation = "data domain",
             definition = "אֵזוֹר עִסְקִי מֻגְדָּר — לְמָשָׁל מְכִירוֹת אוֹ לוֹגִיסְטִיקָה — שֶׁמַּחֲזִיק אֶת הַמֵּידָע שֶׁלּוֹ.",
             definitionNative = "Очерченная бизнес-зона — например, продажи или логистика — владеющая своими данными.",
@@ -108,7 +108,7 @@ object WordDataHebrewDataEngL5 {
         // ── de_query_advanced (5) — продвинутые запросы и движки ──
         WordEntity(
             id = 177606, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_query_advanced", transliteration = "she'ela federativit",
+            pos = "noun", semanticGroup = "de_query_advanced",
             original = "שְׁאֵלָה פֶדֵרָטִיבִית", translation = "federated query",
             definition = "פְּנִיָּה אַחַת שֶׁמּוֹשֶׁכֶת תּוֹצָאוֹת מִכַּמָּה מַאֲגָרִים נִפְרָדִים בְּלִי לְהַעֲתִיק אוֹתָם מֵרֹאשׁ.",
             definitionNative = "Один запрос — тянет результат из нескольких раздельных баз без копирования заранее.",
@@ -117,7 +117,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177607L, 177608L, 177609L, 177610L)),
         WordEntity(
             id = 177607, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_query_advanced", transliteration = "ihud mekorot",
+            pos = "noun", semanticGroup = "de_query_advanced",
             original = "אִיחוּד מְקוֹרוֹת", translation = "query federation (объединение источников)",
             definition = "טֶכְנִיקָה שֶׁמְּצִיגָה כַּמָּה מַאֲגָרִים שׁוֹנִים כְּמַעֲרֶכֶת אַחַת לַמִּשְׁתַּמֵּשׁ הַסּוֹפִי.",
             definitionNative = "Техника — показывает несколько разных хранилищ как одну систему конечному пользователю.",
@@ -126,7 +126,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177606L, 177608L, 177609L, 177610L)),
         WordEntity(
             id = 177608, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_query_advanced", transliteration = "dkhifat tnai",
+            pos = "noun", semanticGroup = "de_query_advanced",
             original = "דְּחִיפַת תְּנַאי", translation = "push-down predicate",
             definition = "אוֹפְּטִימִיזַצְיָה שֶׁבָּהּ הַסִּנּוּן מָתַחֲלִיף לְצַד הַמַּקוֹר — קוֹרְאִים פָּחוֹת שׁוּרוֹת.",
             definitionNative = "Оптимизация — фильтр уезжает на сторону источника, читается меньше строк.",
@@ -135,7 +135,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177606L, 177607L, 177609L, 177610L)),
         WordEntity(
             id = 177609, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_query_advanced", transliteration = "tsbira me-rosh",
+            pos = "noun", semanticGroup = "de_query_advanced",
             original = "צְבִירָה מֵרֹאשׁ", translation = "materialized aggregation",
             definition = "סִכּוּם שָׁמוּר מֵרֹאשׁ שֶׁל מַסְפָּרִים גְּדוֹלִים כְּדֵי שֶׁדּוּחוֹת יַחְזְרוּ מִיָּד.",
             definitionNative = "Заранее сохранённая сводка крупных чисел, чтобы отчёты возвращались мгновенно.",
@@ -144,7 +144,7 @@ object WordDataHebrewDataEngL5 {
         ),
         WordEntity(
             id = 177610, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_query_advanced", transliteration = "manoa amudi",
+            pos = "noun", semanticGroup = "de_query_advanced",
             original = "מָנוֹעַ עַמּוּדִי", translation = "columnar engine",
             definition = "תּוֹכְנָה שֶׁקּוֹרֵאת קַבְצֵי עַמּוּדוֹת מָהִיר וּמַרִיצָה שְׁאֵלוֹת אָנָלִיטִיוֹת בִּדְחִיסָה גְּבוֹהָה.",
             definitionNative = "Софт — быстро читает столбцовые файлы и катает аналитические запросы со сжатием.",
@@ -155,7 +155,7 @@ object WordDataHebrewDataEngL5 {
         // ── de_master_data (5) — управление мастер-данными ──
         WordEntity(
             id = 177611, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_master_data", transliteration = "em-di-em",
+            pos = "noun", semanticGroup = "de_master_data",
             original = "אֶם-דִּי-אֶם", translation = "master data management (MDM)",
             definition = "מַעֲרֶכֶת שֶׁמְּתַחְזֶקֶת גִּרְסָה אֶחָת אֲמִיתִית שֶׁל כָּל יֵשׁוּת חֲשׁוּבָה — לָקוֹחַ, מוּצָר אוֹ סַפָּק.",
             definitionNative = "Система — поддерживает одну истинную версию каждой важной сущности: клиент, продукт или поставщик.",
@@ -164,7 +164,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177612L, 177613L, 177614L, 177615L)),
         WordEntity(
             id = 177612, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_master_data", transliteration = "rishum mukhshar",
+            pos = "noun", semanticGroup = "de_master_data",
             original = "רִישׁוּם מֻכְשָׁר", translation = "golden record (эталонная запись)",
             definition = "הָרְשׁוּמָה הַסּוֹפִית וְהַנְּכוֹנָה בְּיוֹתֵר שֶׁל יֵשׁוּת — אַחֲרֵי שֶׁאִיחֲדוּ כָּל הַמְּקוֹרוֹת.",
             definitionNative = "Финальная и самая корректная запись о сущности — после слияния всех источников.",
@@ -173,7 +173,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177611L, 177613L, 177614L, 177615L)),
         WordEntity(
             id = 177613, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_master_data", transliteration = "iikuy kfilim",
+            pos = "noun", semanticGroup = "de_master_data",
             original = "נִיקּוּי כְּפִילִים", translation = "очистка дубликатов (data deduplication)",
             definition = "תַּהֲלִיךְ שֶׁמְּזַהֶה רְשׁוּמוֹת זֵהוֹת אוֹ דּוֹמוֹת מְאוֹד וּמַשְׁאִיר רַק אַחַת מֵהֶן.",
             definitionNative = "Процесс — находит идентичные или очень похожие записи и оставляет лишь одну.",
@@ -182,7 +182,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177611L, 177612L, 177614L, 177615L)),
         WordEntity(
             id = 177614, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_master_data", transliteration = "zihuy yeshuyot",
+            pos = "noun", semanticGroup = "de_master_data",
             original = "זִיהוּי יֵשׁוּיוֹת", translation = "entity resolution",
             definition = "טֶכְנִיקָה לְקַבֵּעַ שֶׁשְּׁתֵּי רְשׁוּמוֹת שׁוֹנוֹת מִמַּאֲגָרִים שׁוֹנִים מַתְיַחְסוֹת לְאוֹתוֹ אִישׁ.",
             definitionNative = "Техника — определить, что две разные записи из разных баз относятся к одному человеку.",
@@ -191,7 +191,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177611L, 177612L, 177613L, 177615L)),
         WordEntity(
             id = 177615, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_master_data", transliteration = "data referens",
+            pos = "noun", semanticGroup = "de_master_data",
             original = "דָּאטָה רֵפֶרֶנְס", translation = "reference data (справочники)",
             definition = "טַבְלָאוֹת קְבוּעוֹת שֶׁל קוֹדִים וְעֶרְכֵי בָּסִיס — לְמָשָׁל מְדִינוֹת, מַטְבְּעוֹת אוֹ סְטָטוּסִים.",
             definitionNative = "Постоянные таблицы кодов и базовых значений — например, страны, валюты или статусы.",
@@ -202,7 +202,7 @@ object WordDataHebrewDataEngL5 {
         // ── de_strategy (5) — стратегия данных и руководство ──
         WordEntity(
             id = 177616, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_strategy", transliteration = "si-di-o",
+            pos = "noun", semanticGroup = "de_strategy",
             original = "סִי-דִּי-אוֹ", translation = "CDO (директор по данным)",
             definition = "מְנַהֵל בָּכִיר בִּדְרַג הַהַנְהָלָה שֶׁאַחְרַאי עַל הַנֶּכֶס הָאִסְטְרָטֶגִי שֶׁל הַמֵּידָע בָּעֵסֶק.",
             definitionNative = "Высший управленец C-level — отвечает за стратегический актив информации в бизнесе.",
@@ -211,7 +211,7 @@ object WordDataHebrewDataEngL5 {
         ),
         WordEntity(
             id = 177617, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_strategy", transliteration = "estrategiyat data",
+            pos = "noun", semanticGroup = "de_strategy",
             original = "אֶסְטְרָטֶגְיַית דָּאטָה", translation = "data strategy",
             definition = "תּוֹכְנִית רַב-שְׁנָתִית שֶׁמַּגְדִּירָה אֵיךְ הָעֵסֶק מַפִּיק עֵרֶךְ מֵהַמֵּידָע שֶׁבִּרְשׁוּתוֹ.",
             definitionNative = "Многолетний план — как бизнес извлекает ценность из имеющейся информации.",
@@ -220,7 +220,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177616L, 177618L, 177619L, 177620L)),
         WordEntity(
             id = 177618, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_strategy", transliteration = "demokratizatsya",
+            pos = "noun", semanticGroup = "de_strategy",
             original = "דֵּמוֹקְרָטִיזַצְיָה", translation = "data democratization",
             definition = "מְגַמָּה שֶׁבָּהּ גִּישָׁה לַמֵּידָע נִפְתַּחַת לְכָל הָעוֹבְדִים, לֹא רַק לַמְּהַנְדְסִים אוֹ לַאֲנָלִיסְטִים.",
             definitionNative = "Тенденция — доступ к информации открывается всем сотрудникам, не только инженерам и аналитикам.",
@@ -229,7 +229,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177616L, 177617L, 177619L, 177620L)),
         WordEntity(
             id = 177619, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_strategy", transliteration = "oryanut data",
+            pos = "noun", semanticGroup = "de_strategy",
             original = "אוֹרְיָנוּת דָּאטָה", translation = "data literacy",
             definition = "יְכוֹלֶת שֶׁל עוֹבְדִים רְגִילִים לִקְרֹא, לְפָרֵשׁ וּלְקַבֵּל הַחְלָטוֹת לְפִי גְּרָפִים וּמַסְפָּרִים.",
             definitionNative = "Способность обычных работников читать, толковать и решать на основе графиков и чисел.",
@@ -238,7 +238,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177616L, 177617L, 177618L, 177620L)),
         WordEntity(
             id = 177620, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_strategy", transliteration = "tsuat data",
+            pos = "noun", semanticGroup = "de_strategy",
             original = "תְּשׁוּאַת דָּאטָה", translation = "ROI of data (отдача от данных)",
             definition = "מַדָּד שֶׁמּוֹדֵד כַּמָּה כֶּסֶף הָעֵסֶק רוֹוֵחַ מֵהָהַשְׁקָעָה בַּתַּשְׁתִּית וּבַצֶּוֶות שֶׁלַּמֵּידָע.",
             definitionNative = "Метрика — сколько денег бизнес зарабатывает с вложений в инфраструктуру и команду данных.",
@@ -249,7 +249,7 @@ object WordDataHebrewDataEngL5 {
         // ── de_advanced_governance (5) — продвинутая регуляция и этика данных ──
         WordEntity(
             id = 177621, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_advanced_governance", transliteration = "tushavut data",
+            pos = "noun", semanticGroup = "de_advanced_governance",
             original = "תּוֹשָׁבוּת דָּאטָה", translation = "data residency",
             definition = "דְּרִישָׁה שֶׁמֵּידָע פִיזִי יִשְׁמֹר בִּמְדִינָה מְסוּיֶמֶת — לְמָשָׁל אֵירוֹפָּה אוֹ יִשְׂרָאֵל.",
             definitionNative = "Требование — физически держать данные в определённой стране: например, в Европе или Израиле.",
@@ -258,7 +258,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177622L, 177623L, 177624L, 177625L)),
         WordEntity(
             id = 177622, setId = 1776, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "de_advanced_governance", transliteration = "ribonut data",
+            pos = "noun", semanticGroup = "de_advanced_governance",
             original = "רִיבּוֹנוּת דָּאטָה", translation = "data sovereignty",
             definition = "עֶקְרוֹן שֶׁלְּפִיו הַמֵּידָע כָּפוּף לְחֻקֵּי הַמְּדִינָה שֶׁבָּהּ הוּא נֶאֱסַף אוֹ נִשְׁמָר.",
             definitionNative = "Принцип — данные подчиняются законам страны, где их собирают или хранят.",
@@ -267,7 +267,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177621L, 177623L, 177624L, 177625L)),
         WordEntity(
             id = 177623, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_advanced_governance", transliteration = "zkhut nose ha-meyda",
+            pos = "noun", semanticGroup = "de_advanced_governance",
             original = "זְכוּת נוֹשֵׂא הַמֵּידָע", translation = "GDPR data subject right",
             definition = "סַמְכוּת שֶׁל אֶזְרָח אֵירוֹפֵּי לִדְרוֹשׁ מִן הַחֶבְרָה לִמְחֹק אוֹ לִשְׁלֹחַ אֵלָיו אֶת הַמֵּידָע עָלָיו.",
             definitionNative = "Полномочие европейца требовать у фирмы стереть или прислать ему данные о нём.",
@@ -276,7 +276,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177621L, 177622L, 177624L, 177625L)),
         WordEntity(
             id = 177624, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_advanced_governance", transliteration = "etika shel data",
+            pos = "noun", semanticGroup = "de_advanced_governance",
             original = "אֶתִיקָה שֶׁל דָּאטָה", translation = "data ethics",
             definition = "כְּלָלִים מוּסָרִיִּים שֶׁל אִסּוּף וְשִׁמּוּשׁ בְּמֵידָע — מֵעֵבֶר לְמָה שֶׁהַחוֹק מַתִּיר.",
             definitionNative = "Моральные правила сбора и использования информации — за пределами того, что позволяет закон.",
@@ -285,7 +285,7 @@ object WordDataHebrewDataEngL5 {
          fillInBlankExclusions = listOf(177621L, 177622L, 177623L, 177625L)),
         WordEntity(
             id = 177625, setId = 1776, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "de_advanced_governance", transliteration = "anonimizatsya",
+            pos = "noun", semanticGroup = "de_advanced_governance",
             original = "אֲנוֹנִימִיזַצְיָה", translation = "anonymization",
             definition = "תַּהֲלִיךְ שֶׁמּוֹחֵק מֵרְשׁוּמוֹת אֶת הַסִּימָנִים שֶׁמְּזַהִים אִישׁ פְּרָטִי בְּלִי לְבַטֵּל אֶת הַשִּׁמּוּשׁ.",
             definitionNative = "Процесс — стирает из записей метки, выдающие конкретного человека, без потери пригодности.",

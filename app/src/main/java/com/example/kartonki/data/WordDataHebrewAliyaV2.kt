@@ -77,7 +77,7 @@ object WordDataHebrewAliyaV2 {
         // ── greetings (4) ──
         WordEntity(
             id = 161001, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "aliya_greetings", transliteration = "shalom",
+            pos = "interjection", semanticGroup = "aliya_greetings",
             original = "שָׁלוֹם", translation = "привет; здравствуй; мир",
             definition = "בְּרָכָה נְפוֹצָה בְּעִבְרִית לִפְגִישָׁה אוֹ לִפְרֵידָה.",
             definitionNative = "Самое распространённое слово-обращение в Израиле при встрече или прощании.",
@@ -86,7 +86,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161002L, 161003L, 161004L, 161015L, 161016L, 161017L, 161018L, 161019L)),
         WordEntity(
             id = 161002, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "aliya_greetings", transliteration = "boker tov",
+            pos = "phrase", semanticGroup = "aliya_greetings",
             original = "בּוֹקֶר טוֹב", translation = "доброе утро",
             definition = "בְּרָכָה בְּשָׁעוֹת הַבּוֹקֶר בְּעִבְרִית מוּדֶרְנִית.",
             definitionNative = "Утреннее приветствие, используется до полудня.",
@@ -95,7 +95,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161001L, 161003L, 161004L, 161017L)),
         WordEntity(
             id = 161003, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "aliya_greetings", transliteration = "lehitra'ot",
+            pos = "phrase", semanticGroup = "aliya_greetings",
             original = "לְהִתְרָאוֹת", translation = "до свидания; увидимся",
             definition = "אוֹמְרִים בְּסוֹף מִפְגָּשׁ כְּשֶׁמִּתְכַּוְּנִים לְהֵיפָּגֵשׁ שׁוּב.",
             definitionNative = "Говорят при расставании, когда планируется встретиться снова.",
@@ -104,7 +104,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161001L, 161002L, 161004L, 161015L)),
         WordEntity(
             id = 161004, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "aliya_greetings", transliteration = "baruch haba",
+            pos = "phrase", semanticGroup = "aliya_greetings",
             original = "בָּרוּךְ הַבָּא", translation = "добро пожаловать",
             definition = "אוֹמְרִים לְמִי שֶׁמַּגִּיעַ לְבַיִת, לְמָקוֹם אוֹ לָאָרֶץ.",
             definitionNative = "Говорят гостю или новому репатрианту при прибытии.",
@@ -115,7 +115,7 @@ object WordDataHebrewAliyaV2 {
         // ── geography (4) ──
         WordEntity(
             id = 161005, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_geography", transliteration = "yisra'el",
+            pos = "noun", semanticGroup = "aliya_geography",
             original = "יִשְׂרָאֵל", translation = "Израиль",
             definition = "הַמְּדִינָה שֶׁקָּמָה בְּאֶרֶץ הַקּוֹדֶשׁ בִּשְׁנַת 1948.",
             definitionNative = "Государство на Ближнем Востоке, образованное в 1948 году.",
@@ -124,7 +124,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161006L, 161007L, 161008L)),
         WordEntity(
             id = 161006, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_geography", transliteration = "tel aviv",
+            pos = "noun", semanticGroup = "aliya_geography",
             original = "תֵּל אָבִיב", translation = "Тель-Авив",
             definition = "הָעִיר הַגְּדוֹלָה הַשְּׁנִיָּה וּמֶרְכַּז הָעֲסָקִים וְהַתַּרְבּוּת.",
             definitionNative = "Деловой и культурный центр страны на средиземноморском побережье.",
@@ -133,7 +133,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161007, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_geography", transliteration = "yerushalayim",
+            pos = "noun", semanticGroup = "aliya_geography",
             original = "יְרוּשָׁלַיִם", translation = "Иерусалим",
             definition = "עִיר הַבִּירָה, מְקוֹם הַכְּנֶסֶת וּמֶרְכָּז רוּחָנִי לִשְׁלוֹשׁ דָּתוֹת.",
             definitionNative = "Столица государства, духовный центр трёх мировых религий.",
@@ -142,7 +142,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161005L, 161006L, 161008L)),
         WordEntity(
             id = 161008, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_geography", transliteration = "haifa",
+            pos = "noun", semanticGroup = "aliya_geography",
             original = "חֵיפָה", translation = "Хайфа",
             definition = "עִיר נָמֵל גְּדוֹלָה בַּצָּפוֹן עַל מוֹרְדוֹת הַר הַכַּרְמֶל.",
             definitionNative = "Крупный северный портовый город на склонах горы Кармель.",
@@ -153,7 +153,7 @@ object WordDataHebrewAliyaV2 {
         // ── people (3) ──
         WordEntity(
             id = 161009, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_people", transliteration = "ole",
+            pos = "noun", semanticGroup = "aliya_people",
             original = "עוֹלֶה", translation = "репатриант; оле",
             definition = "אָדָם שֶׁחוֹזֵר לִחְיוֹת בָּאָרֶץ לְפִי חֹק הַשְּׁבוּת.",
             definitionNative = "Человек, вернувшийся жить на историческую родину по Закону о возвращении.",
@@ -162,7 +162,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161010L, 161011L, 161024L)),
         WordEntity(
             id = 161010, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_people", transliteration = "yisre'eli",
+            pos = "noun", semanticGroup = "aliya_people",
             original = "יִשְׂרְאֵלִי", translation = "израильтянин",
             definition = "אֶזְרָח שֶׁל הַמְּדִינָה, לֹא חָשׁוּב מִמָּה מָקוֹר שֶׁלּוֹ.",
             definitionNative = "Гражданин государства, независимо от происхождения.",
@@ -171,7 +171,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161009L, 161011L)),
         WordEntity(
             id = 161011, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_people", transliteration = "toshav",
+            pos = "noun", semanticGroup = "aliya_people",
             original = "תּוֹשָׁב", translation = "житель; резидент",
             definition = "אָדָם שֶׁגָּר בְּאָרֶץ מְסוּיֶמֶת, לֹא דַּוְקָא אֶזְרָח שֶׁלָּהּ.",
             definitionNative = "Лицо, постоянно проживающее в стране, не обязательно её гражданин.",
@@ -182,7 +182,7 @@ object WordDataHebrewAliyaV2 {
         // ── basic actions (3) ──
         WordEntity(
             id = 161012, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "aliya_basic_verbs", transliteration = "la'alot",
+            pos = "verb", semanticGroup = "aliya_basic_verbs",
             original = "לַעֲלוֹת", translation = "репатриироваться (досл. подниматься)",
             definition = "פֹּעַל בֶּסִיס שֶׁל הַמּוּשָׂג אַלִיָּה — מַעֲבָר לָאָרֶץ.",
             definitionNative = "Глагол, означающий переезд на историческую родину.",
@@ -191,7 +191,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161013L, 161014L)),
         WordEntity(
             id = 161013, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "aliya_basic_verbs", transliteration = "lagur",
+            pos = "verb", semanticGroup = "aliya_basic_verbs",
             original = "לָגוּר", translation = "жить; проживать",
             definition = "לִהְיוֹת בַּבַּיִת שֶׁבוֹ הָאָדָם נִמְצָא דֶּרֶךְ קֶבַע.",
             definitionNative = "Постоянно находиться в каком-либо месте как в доме.",
@@ -200,7 +200,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161012L, 161014L)),
         WordEntity(
             id = 161014, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "aliya_basic_verbs", transliteration = "lelamed",
+            pos = "verb", semanticGroup = "aliya_basic_verbs",
             original = "לִלְמֹד", translation = "учить; изучать",
             definition = "לִרְכֹּשׁ יֶדַע חָדָשׁ דֶּרֶךְ שִׁעוּרִים אוֹ קְרִיאָה.",
             definitionNative = "Получать новые знания через занятия, книги или практику.",
@@ -211,7 +211,7 @@ object WordDataHebrewAliyaV2 {
         // ── thanks / courtesy (3) ──
         WordEntity(
             id = 161015, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "aliya_courtesy", transliteration = "toda",
+            pos = "interjection", semanticGroup = "aliya_courtesy",
             original = "תּוֹדָה", translation = "спасибо",
             definition = "מִלָּה לְהַבָּעַת הַכָּרַת-טוֹבָה עַל עֶזְרָה אוֹ מַתָּנָה.",
             definitionNative = "Слово благодарности за оказанную помощь или услугу.",
@@ -220,7 +220,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161016L, 161017L)),
         WordEntity(
             id = 161016, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "aliya_courtesy", transliteration = "bevakasha",
+            pos = "interjection", semanticGroup = "aliya_courtesy",
             original = "בְּבַקָּשָׁה", translation = "пожалуйста",
             definition = "מִלַּת נִמּוּס שֶׁל בַּקָּשָׁה אוֹ תְּגוּבָה עַל 'תּוֹדָה'.",
             definitionNative = "Вежливое слово при просьбе или ответе на благодарность.",
@@ -229,7 +229,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161001L, 161002L, 161015L, 161017L, 161018L)),
         WordEntity(
             id = 161017, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "interjection", semanticGroup = "aliya_courtesy", transliteration = "slikha",
+            pos = "interjection", semanticGroup = "aliya_courtesy",
             original = "סְלִיחָה", translation = "извините; простите",
             definition = "בַּקָּשַׁת מְחִילָה עַל טָעוּת קְטַנָּה אוֹ לִמְשֹׁךְ תְּשׂוּמֶת לֵב.",
             definitionNative = "Извинение за мелкую оплошность или способ привлечь внимание.",
@@ -240,7 +240,7 @@ object WordDataHebrewAliyaV2 {
         // ── yes / no (3) ──
         WordEntity(
             id = 161018, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "aliya_yesno", transliteration = "ken",
+            pos = "adverb", semanticGroup = "aliya_yesno",
             original = "כֵּן", translation = "да",
             definition = "מִלַּת הֲסְכָּמָה חִיּוּבִית לִשְׁאֵלָה כְּלָלִית.",
             definitionNative = "Слово утвердительного согласия на общий вопрос.",
@@ -249,7 +249,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161001L, 161017L, 161019L, 161020L)),
         WordEntity(
             id = 161019, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "aliya_yesno", transliteration = "lo",
+            pos = "adverb", semanticGroup = "aliya_yesno",
             original = "לֹא", translation = "нет",
             definition = "מִלַּת שְׁלִילָה לִשְׁאֵלָה אוֹ הַצָּעָה.",
             definitionNative = "Слово отрицания в ответ на вопрос или предложение.",
@@ -258,7 +258,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161017L, 161018L, 161020L)),
         WordEntity(
             id = 161020, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "aliya_yesno", transliteration = "ulay",
+            pos = "adverb", semanticGroup = "aliya_yesno",
             original = "אוּלַי", translation = "может быть; возможно",
             definition = "מִלָּה לְבַטֵּא סָפֵק אוֹ אֶפְשָׁרוּת לֹא וַדָּאִית.",
             definitionNative = "Выражение сомнения или неуверенного допущения.",
@@ -269,7 +269,7 @@ object WordDataHebrewAliyaV2 {
         // ── time basics (3) ──
         WordEntity(
             id = 161021, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_time", transliteration = "yom",
+            pos = "noun", semanticGroup = "aliya_time",
             original = "יוֹם", translation = "день",
             definition = "יְחִידַת זְמַן שֶׁל עֶשְׂרִים וְאַרְבַּע שָׁעוֹת.",
             definitionNative = "Единица времени продолжительностью 24 часа.",
@@ -278,7 +278,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161022L)),
         WordEntity(
             id = 161022, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_time", transliteration = "shana",
+            pos = "noun", semanticGroup = "aliya_time",
             original = "שָׁנָה", translation = "год",
             definition = "פֶּרֶק זְמַן שֶׁל שְׁנֵים-עָשָׂר חוֹדָשִׁים.",
             definitionNative = "Период времени длиной двенадцать месяцев.",
@@ -287,7 +287,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161021L)),
         WordEntity(
             id = 161023, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "adverb", semanticGroup = "aliya_time", transliteration = "hayom",
+            pos = "adverb", semanticGroup = "aliya_time",
             original = "הַיּוֹם", translation = "сегодня",
             definition = "בְּיוֹם שֶׁאָנוּ נִמְצָאִים בּוֹ כַּעֵת.",
             definitionNative = "В текущие сутки; в тот день, в котором мы находимся.",
@@ -298,7 +298,7 @@ object WordDataHebrewAliyaV2 {
         // ── family basics (2) ──
         WordEntity(
             id = 161024, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_family_basic", transliteration = "mishpakha",
+            pos = "noun", semanticGroup = "aliya_family_basic",
             original = "מִשְׁפָּחָה", translation = "семья",
             definition = "הוֹרִים וִילָדִים שֶׁגָּרִים וְחַיִּים יַחַד בַּבַּיִת.",
             definitionNative = "Родители и дети, живущие вместе и связанные близкими узами.",
@@ -307,7 +307,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161025, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_family_basic", transliteration = "bayit",
+            pos = "noun", semanticGroup = "aliya_family_basic",
             original = "בַּיִת", translation = "дом",
             definition = "הַמָּקוֹם הַפְּרָטִי שֶׁבּוֹ הָאָדָם גָּר וְיָשֵׁן.",
             definitionNative = "Личное жилище, где человек живёт и отдыхает.",
@@ -324,7 +324,7 @@ object WordDataHebrewAliyaV2 {
         // ── id_cards (4) ──
         WordEntity(
             id = 161101, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_id_cards", transliteration = "teudat ole",
+            pos = "noun", semanticGroup = "aliya_id_cards",
             original = "תְּעוּדַת עוֹלֶה", translation = "удостоверение репатрианта",
             definition = "מִסְמַךְ זְמַנִּי שֶׁמַּעֲנִיק זְכֻיּוֹת הַקְּלִיטָה לָעוֹלֶה.",
             definitionNative = "Временный документ, дающий право на льготы новоприбывшего.",
@@ -333,7 +333,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161102L, 161103L, 161104L, 161108L, 161117L)),
         WordEntity(
             id = 161102, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_id_cards", transliteration = "darkon",
+            pos = "noun", semanticGroup = "aliya_id_cards",
             original = "דַּרְכּוֹן", translation = "паспорт",
             definition = "מִסְמַךְ רִשְׁמִי לְזֵהוּי הַנּוֹסֵעַ לְחוּץ לָאָרֶץ.",
             definitionNative = "Официальный документ для удостоверения личности при зарубежных поездках.",
@@ -342,7 +342,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161101L, 161103L, 161104L, 161108L, 161117L)),
         WordEntity(
             id = 161103, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_id_cards", transliteration = "rishayon",
+            pos = "noun", semanticGroup = "aliya_id_cards",
             original = "רִשָּׁיוֹן", translation = "разрешение; лицензия",
             definition = "אִישׁוּר רִשְׁמִי שֶׁמַּתִּיר לְבַצֵּעַ פְּעוּלָה מְסוּיֶמֶת.",
             definitionNative = "Официальный допуск на выполнение определённого действия.",
@@ -351,7 +351,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161101L, 161102L, 161104L, 161108L, 161115L)),
         WordEntity(
             id = 161104, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_id_cards", transliteration = "sefakh",
+            pos = "noun", semanticGroup = "aliya_id_cards",
             original = "סֶפַח", translation = "приложение к удостоверению (сфах)",
             definition = "דַּף נוֹסָף לִתְעוּדַת הַזֵּהוּת עִם פְּרָטֵי בְּנֵי הַמִּשְׁפָּחָה.",
             definitionNative = "Вкладыш к теудат-зеhут с данными членов семьи.",
@@ -362,7 +362,7 @@ object WordDataHebrewAliyaV2 {
         // ── offices (3) ──
         WordEntity(
             id = 161105, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_offices", transliteration = "misrad hapnim",
+            pos = "noun", semanticGroup = "aliya_offices",
             original = "מִשְׂרַד הַפְּנִים", translation = "МВД; Министерство внутренних дел",
             definition = "מִשְׂרָד מֶמְשַׁלְתִּי שֶׁמְּטַפֵּל בִּזֵהוּי וּבְסֶטָטוּס אוּכְלוֹסִין.",
             definitionNative = "Государственное ведомство, ведущее учёт жителей и статусов.",
@@ -371,7 +371,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161106L, 161107L, 161123L)),
         WordEntity(
             id = 161106, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_offices", transliteration = "misrad klita",
+            pos = "noun", semanticGroup = "aliya_offices",
             original = "מִשְׂרַד עֲלִיָּה", translation = "Министерство алии и интеграции",
             definition = "הַגּוּף שֶׁעוֹזֵר לָעוֹלִים בִּתְהַלִיךְ הַהִתְאַקְלְמוּת.",
             definitionNative = "Ведомство, помогающее репатриантам адаптироваться в стране.",
@@ -380,7 +380,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161105L, 161107L)),
         WordEntity(
             id = 161107, setId = 1611, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "aliya_offices", transliteration = "bituakh le'umi",
+            pos = "noun", semanticGroup = "aliya_offices",
             original = "בִּטּוּחַ לְאוּמִי", translation = "Битуах леуми; Национальное страхование",
             definition = "הַמּוֹסָד שֶׁמְּשַׁלֵּם קִצְבָּאוֹת וּמְבַטֵּחַ בְּרִיאוּת.",
             definitionNative = "Учреждение, выплачивающее пособия и социальные выплаты.",
@@ -391,7 +391,7 @@ object WordDataHebrewAliyaV2 {
         // ── passport_items (3) ──
         WordEntity(
             id = 161108, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_passport_items", transliteration = "ashra",
+            pos = "noun", semanticGroup = "aliya_passport_items",
             original = "אַשְׁרָה", translation = "виза",
             definition = "אִישׁוּר כְּנִיסָה אוֹ שְׁהִיָּה בְּאָרֶץ זָרָה.",
             definitionNative = "Разрешение на въезд или пребывание в другой стране.",
@@ -400,7 +400,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161101L, 161102L, 161103L, 161109L, 161110L, 161115L, 161117L)),
         WordEntity(
             id = 161109, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_passport_items", transliteration = "khotemet",
+            pos = "noun", semanticGroup = "aliya_passport_items",
             original = "חוֹתֶמֶת", translation = "печать; штамп",
             definition = "סִימָן רִשְׁמִי עַל מִסְמַךְ לְאִישׁוּר תָּקְפוּת.",
             definitionNative = "Официальный оттиск на документе как знак подтверждения.",
@@ -409,7 +409,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161108L, 161110L)),
         WordEntity(
             id = 161110, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_passport_items", transliteration = "tom tokef",
+            pos = "noun", semanticGroup = "aliya_passport_items",
             original = "תֹּם תֹּקֶף", translation = "истечение срока действия",
             definition = "הַתַּאֲרִיךְ שֶׁבּוֹ מִסְמַךְ מַפְסִיק לִהְיוֹת תַּקֵּף.",
             definitionNative = "Дата, после которой документ теряет юридическую силу.",
@@ -420,7 +420,7 @@ object WordDataHebrewAliyaV2 {
         // ── cert_bureau (3) ──
         WordEntity(
             id = 161111, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_cert_bureau", transliteration = "teudat leida",
+            pos = "noun", semanticGroup = "aliya_cert_bureau",
             original = "תְּעוּדַת לֵדָה", translation = "свидетельство о рождении",
             definition = "מִסְמַךְ רִשְׁמִי שֶׁמְּתַעֵד אֶת הַהוֹלִיד שֶׁל אָדָם.",
             definitionNative = "Официальный документ, фиксирующий факт и дату рождения.",
@@ -429,7 +429,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161101L, 161112L, 161113L, 161117L)),
         WordEntity(
             id = 161112, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_cert_bureau", transliteration = "teudat nisu'in",
+            pos = "noun", semanticGroup = "aliya_cert_bureau",
             original = "תְּעוּדַת נִשּׂוּאִין", translation = "свидетельство о браке",
             definition = "מִסְמַךְ שֶׁמְּאַשֵּׁר שֶׁזּוּג נָשׂוּי כַּחֹק.",
             definitionNative = "Документ, удостоверяющий официальное заключение брака.",
@@ -438,7 +438,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161101L, 161111L, 161113L)),
         WordEntity(
             id = 161113, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_cert_bureau", transliteration = "tirgum notaryoni",
+            pos = "noun", semanticGroup = "aliya_cert_bureau",
             original = "תִּרְגּוּם נוֹטָרִיוֹנִי", translation = "нотариальный перевод",
             definition = "תִּרְגּוּם שֶׁנֶּחֱתַם עַל יְדֵי נוֹטַרְיוֹן וְקָבִיל בָּרָשׁוּיוֹת.",
             definitionNative = "Перевод, заверенный нотариусом и принимаемый госорганами.",
@@ -449,7 +449,7 @@ object WordDataHebrewAliyaV2 {
         // ── statuses (3) ──
         WordEntity(
             id = 161114, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_statuses", transliteration = "ezrakhut",
+            pos = "noun", semanticGroup = "aliya_statuses",
             original = "אֶזְרָחוּת", translation = "гражданство",
             definition = "קֶשֶׁר מִשְׁפָּטִי קָבוּעַ בֵּין אָדָם לִמְדִינָה.",
             definitionNative = "Постоянная правовая связь человека с государством.",
@@ -458,7 +458,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161101L, 161108L, 161115L, 161116L)),
         WordEntity(
             id = 161115, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_statuses", transliteration = "ma'amad",
+            pos = "noun", semanticGroup = "aliya_statuses",
             original = "מַעֲמָד", translation = "статус (правовой)",
             definition = "סַטָטוּס רִשְׁמִי שֶׁל אָדָם בָּעֵינֵי הַמְּדִינָה.",
             definitionNative = "Правовое положение человека в глазах государства.",
@@ -467,7 +467,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161114L, 161116L)),
         WordEntity(
             id = 161116, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_statuses", transliteration = "ben zug",
+            pos = "noun", semanticGroup = "aliya_statuses",
             original = "בֶּן-זוּג", translation = "супруг; партнёр",
             definition = "הָאָדָם הַמְּחוּבָּר לַשֵּׁנִי בְּקֶשֶׁר זוּגִי רִשְׁמִי.",
             definitionNative = "Человек, состоящий в официальных отношениях с другим.",
@@ -478,7 +478,7 @@ object WordDataHebrewAliyaV2 {
         // ── biometric (3) ──
         WordEntity(
             id = 161117, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_biometric", transliteration = "teudat zehut biometrit",
+            pos = "noun", semanticGroup = "aliya_biometric",
             original = "תְּעוּדָה בִּיּוֹמֶטְרִית", translation = "биометрическое удостоверение",
             definition = "כַּרְטִיס חָכָם עִם שֶׁבָב וּנְתוּנֵי טְבִיעוֹת.",
             definitionNative = "Смарт-карта с чипом и отпечатками владельца.",
@@ -487,7 +487,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161101L, 161108L, 161118L, 161119L)),
         WordEntity(
             id = 161118, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_biometric", transliteration = "tviat etzbaot",
+            pos = "noun", semanticGroup = "aliya_biometric",
             original = "טְבִיעַת אֶצְבָּעוֹת", translation = "отпечатки пальцев",
             definition = "סִימָן יִחוּדִי בְּקַצֵה הָאֶצְבַּע, מְשַׁמֵּשׁ לְזֵהוּי.",
             definitionNative = "Уникальный узор на подушечках пальцев для идентификации.",
@@ -496,7 +496,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161117L, 161119L)),
         WordEntity(
             id = 161119, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_biometric", transliteration = "tmuna pasport",
+            pos = "noun", semanticGroup = "aliya_biometric",
             original = "תְּמוּנַת פַּסְפּוֹרְט", translation = "фото на документы",
             definition = "צִלּוּם פָּנִים רִשְׁמִי בְּגוֹדֶל סְטַנְדַּרְטִי.",
             definitionNative = "Официальное фото лица установленного размера для документов.",
@@ -507,7 +507,7 @@ object WordDataHebrewAliyaV2 {
         // ── procedure_verbs (3) ──
         WordEntity(
             id = 161120, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "aliya_procedure_verbs", transliteration = "lehagish",
+            pos = "verb", semanticGroup = "aliya_procedure_verbs",
             original = "לְהַגִּישׁ", translation = "подавать (заявление)",
             definition = "לִמְסוֹר מִסְמַכִים לִרְשׁוּת רִשְׁמִית לְטִפּוּל.",
             definitionNative = "Передать официальные бумаги в ведомство для обработки.",
@@ -516,7 +516,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161121, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "aliya_procedure_verbs", transliteration = "lemaleh",
+            pos = "verb", semanticGroup = "aliya_procedure_verbs",
             original = "לְמַלֵּא", translation = "заполнять (бланк)",
             definition = "לִרְשֹׁם פְּרָטִים נְדָרָשִׁים בְּטֹפֶס רֵיק.",
             definitionNative = "Вписывать требуемые данные в пустую форму.",
@@ -525,7 +525,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161120L, 161122L)),
         WordEntity(
             id = 161122, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "aliya_procedure_verbs", transliteration = "lekabel",
+            pos = "verb", semanticGroup = "aliya_procedure_verbs",
             original = "לְקַבֵּל", translation = "получать",
             definition = "לָקַחַת דָּבָר שֶׁנִּמְסָר אוֹ נִשְׁלַח לָאָדָם.",
             definitionNative = "Принимать то, что передаётся или присылается человеку.",
@@ -536,7 +536,7 @@ object WordDataHebrewAliyaV2 {
         // ── tax_basics (3) ──
         WordEntity(
             id = 161123, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_tax_basics", transliteration = "mas hakhnasa",
+            pos = "noun", semanticGroup = "aliya_tax_basics",
             original = "מַס הַכְנָסָה", translation = "подоходный налог",
             definition = "מַס שֶׁהָעוֹבֵד מְשַׁלֵּם עַל הָעוֹבָדָה שֶׁלּוֹ לִמְדִינָה.",
             definitionNative = "Обязательный сбор с дохода физического лица в пользу государства.",
@@ -545,7 +545,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161105L, 161106L, 161107L, 161124L, 161125L)),
         WordEntity(
             id = 161124, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_tax_basics", transliteration = "tik",
+            pos = "noun", semanticGroup = "aliya_tax_basics",
             original = "תִּיק", translation = "дело; досье",
             definition = "קֹבֶץ מִסְמָכִים רִשְׁמִי עַל אָדָם בָּרָשׁוּת.",
             definitionNative = "Папка официальных документов на человека в учреждении.",
@@ -554,7 +554,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161102L, 161103L, 161104L, 161123L, 161125L)),
         WordEntity(
             id = 161125, setId = 1611, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_tax_basics", transliteration = "kvitza",
+            pos = "noun", semanticGroup = "aliya_tax_basics",
             original = "קְבִיצָה", translation = "приёмные часы; встреча",
             definition = "שָׁעוֹת שֶׁבָּהֶן פָּקִיד פָּתוּחַ לְקַהַל הַקּוֹנִים.",
             definitionNative = "Часы, когда сотрудник принимает посетителей по записи.",
@@ -571,7 +571,7 @@ object WordDataHebrewAliyaV2 {
         // ── ulpan (4) ──
         WordEntity(
             id = 161201, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_ulpan", transliteration = "ulpan",
+            pos = "noun", semanticGroup = "aliya_ulpan",
             original = "אוּלְפָּן", translation = "ульпан; школа иврита",
             definition = "קוּרְס אִינְטֶנְסִיבִי לִלְמִידַת הַשָּׂפָה עַל יְדֵי עוֹלִים.",
             definitionNative = "Интенсивные курсы языка для приехавших в страну.",
@@ -580,7 +580,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161202L, 161203L, 161204L)),
         WordEntity(
             id = 161202, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_ulpan", transliteration = "kita",
+            pos = "noun", semanticGroup = "aliya_ulpan",
             original = "כִּתָּה", translation = "класс; группа",
             definition = "קְבוּצַת תַּלְמִידִים שֶׁלּוֹמֶדֶת יַחַד אוֹתוֹ חוֹמֶר.",
             definitionNative = "Учебный коллектив, занимающийся по одной программе вместе.",
@@ -589,7 +589,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161201L, 161203L, 161204L)),
         WordEntity(
             id = 161203, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_ulpan", transliteration = "dikduk",
+            pos = "noun", semanticGroup = "aliya_ulpan",
             original = "דִּקְדּוּק", translation = "грамматика",
             definition = "מַעֲרֶכֶת הַחוּקִים שֶׁל מִבְנֵה הַשָּׂפָה וְצוּרוֹתֶיהָ.",
             definitionNative = "Система правил построения языка и словоформ.",
@@ -598,7 +598,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161201L, 161202L, 161204L)),
         WordEntity(
             id = 161204, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_ulpan", transliteration = "ramat alef",
+            pos = "noun", semanticGroup = "aliya_ulpan",
             original = "רָמָה אָלֶף", translation = "уровень алеф (начальный)",
             definition = "הָרָמָה הַבֶּסִיסִית בְּיוֹתֵר שֶׁל לִמּוּדֵי הַשָּׂפָה.",
             definitionNative = "Самый начальный уровень курса иврита для новичков.",
@@ -609,7 +609,7 @@ object WordDataHebrewAliyaV2 {
         // ── housing (4) ──
         WordEntity(
             id = 161205, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_housing", transliteration = "dira",
+            pos = "noun", semanticGroup = "aliya_housing",
             original = "דִּירָה", translation = "квартира",
             definition = "יְחִידַת מְגוּרִים בְּתוֹךְ בִּנְיָן מְשׁוּתָּף.",
             definitionNative = "Отдельная жилая единица в общем жилом доме.",
@@ -618,7 +618,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161206L, 161207L, 161208L)),
         WordEntity(
             id = 161206, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_housing", transliteration = "skhirut",
+            pos = "noun", semanticGroup = "aliya_housing",
             original = "שְׂכִירוּת", translation = "аренда; съём жилья",
             definition = "תַּשְׁלוּם קָבוּעַ עַל שִׁמּוּשׁ בְּדִירָה שֶׁל אַחֵר.",
             definitionNative = "Регулярная плата за пользование чужой квартирой.",
@@ -627,7 +627,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161207, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_housing", transliteration = "khoze skhirut",
+            pos = "noun", semanticGroup = "aliya_housing",
             original = "חוֹזֶה שְׂכִירוּת", translation = "договор аренды",
             definition = "מִסְמַךְ מִשְׁפָּטִי בֵּין הַשּׂוֹכֵר לְבַעַל הַבַּיִת.",
             definitionNative = "Юридический документ между съёмщиком и владельцем жилья.",
@@ -636,7 +636,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161205L, 161206L, 161208L)),
         WordEntity(
             id = 161208, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_housing", transliteration = "pikadon",
+            pos = "noun", semanticGroup = "aliya_housing",
             original = "פִּקָּדוֹן", translation = "залог; депозит (жильё)",
             definition = "סְכוּם שֶׁמּוֹסְרִים לְמַשְׁכִּיר לְבִטָּחוֹן.",
             definitionNative = "Сумма, передаваемая арендодателю в качестве гарантии.",
@@ -647,7 +647,7 @@ object WordDataHebrewAliyaV2 {
         // ── health (3) ──
         WordEntity(
             id = 161209, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_health_hmo", transliteration = "kupat kholim",
+            pos = "noun", semanticGroup = "aliya_health_hmo",
             original = "קֻפַּת חוֹלִים", translation = "больничная касса",
             definition = "אִרְגּוּן בְּרִיאוּת שֶׁמְּסַפֵּק שֵׁרוּתֵי רְפוּאָה לַמְּבֻטָּחִים.",
             definitionNative = "Медицинская организация, оказывающая услуги застрахованным.",
@@ -656,7 +656,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161210L, 161211L)),
         WordEntity(
             id = 161210, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_health_hmo", transliteration = "makabi",
+            pos = "noun", semanticGroup = "aliya_health_hmo",
             original = "מַכַּבִּי", translation = "Маккаби (больничная касса)",
             definition = "אַחַת מְאַרְבַּע קוּפּוֹת הַחוֹלִים הַגְּדוֹלוֹת בָּאָרֶץ.",
             definitionNative = "Одна из четырёх крупных медицинских касс страны.",
@@ -665,7 +665,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161209L, 161211L)),
         WordEntity(
             id = 161211, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_health_hmo", transliteration = "klalit",
+            pos = "noun", semanticGroup = "aliya_health_hmo",
             original = "כְּלָלִית", translation = "Клалит (больничная касса)",
             definition = "הַקּוּפָּה הַגְּדוֹלָה בְּיוֹתֵר, וְתִיקָה וּפְרוּסָה בְּכָל הָאָרֶץ.",
             definitionNative = "Крупнейшая касса, старейшая и самая распространённая в стране.",
@@ -676,7 +676,7 @@ object WordDataHebrewAliyaV2 {
         // ── money (3) ──
         WordEntity(
             id = 161212, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_money_basics", transliteration = "shekel",
+            pos = "noun", semanticGroup = "aliya_money_basics",
             original = "שֶׁקֶל", translation = "шекель (валюта)",
             definition = "הַמַּטְבֵּעַ הָרִשְׁמִי שֶׁל הַמְּדִינָה מִשְּׁנַת אֶלֶף תְּשַׁע מֵאוֹת שְׁמוֹנִים וְחָמֵשׁ.",
             definitionNative = "Официальная денежная единица страны с 1985 года.",
@@ -685,7 +685,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161213L, 161214L)),
         WordEntity(
             id = 161213, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_money_basics", transliteration = "sal klita",
+            pos = "noun", semanticGroup = "aliya_money_basics",
             original = "סַל קְלִיטָה", translation = "корзина абсорбции",
             definition = "הַכְנָסָה שֶׁמְּקַבֵּל הָעוֹלֶה בְּשִׁשָּׁה חוֹדָשִׁים רִאשׁוֹנִים.",
             definitionNative = "Денежная помощь репатрианту в первые шесть месяцев.",
@@ -694,7 +694,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161212L, 161214L)),
         WordEntity(
             id = 161214, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_money_basics", transliteration = "arnona",
+            pos = "noun", semanticGroup = "aliya_money_basics",
             original = "אַרְנוֹנָה", translation = "арнона; муниципальный налог",
             definition = "מַס חֲדָשִׁי שֶׁמְּשַׁלְּמִים לָעִירִיָּה עַל דִּירָה.",
             definitionNative = "Ежемесячный сбор в пользу мэрии за жилую недвижимость.",
@@ -705,7 +705,7 @@ object WordDataHebrewAliyaV2 {
         // ── local services (3) ──
         WordEntity(
             id = 161215, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_local_services", transliteration = "maspen",
+            pos = "noun", semanticGroup = "aliya_local_services",
             original = "מַסְפֵּן", translation = "автобусная компания (мспен)",
             definition = "חֶבְרָה פְּרָטִית לְהוֹבָלַת נוֹסְעִים בַּקַּוִּים הַבֵּין-עִירוֹנִיִּים.",
             definitionNative = "Частная компания междугородних автобусных перевозок.",
@@ -714,7 +714,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161216L, 161217L)),
         WordEntity(
             id = 161216, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_local_services", transliteration = "rav kav",
+            pos = "noun", semanticGroup = "aliya_local_services",
             original = "רַב-קָו", translation = "проездной «рав-кав»",
             definition = "כַּרְטִיס חָכָם שֶׁעוֹבֵד בְּכָל הַתַּחְבּוּרָה הַצִּבּוּרִית.",
             definitionNative = "Единая смарт-карта для всего общественного транспорта.",
@@ -723,7 +723,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161215L, 161217L)),
         WordEntity(
             id = 161217, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_local_services", transliteration = "rakevet",
+            pos = "noun", semanticGroup = "aliya_local_services",
             original = "רַכֶּבֶת", translation = "поезд; железная дорога",
             definition = "כְּלִי תַּחְבּוּרָה עַל פַּסִּים בֵּין עָרִים.",
             definitionNative = "Рельсовый транспорт для междугородних маршрутов.",
@@ -734,7 +734,7 @@ object WordDataHebrewAliyaV2 {
         // ── kibbutz_life (3) ──
         WordEntity(
             id = 161218, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_kibbutz_life", transliteration = "kibbutz",
+            pos = "noun", semanticGroup = "aliya_kibbutz_life",
             original = "קִבּוּץ", translation = "киббуц (коммуна)",
             definition = "יִישׁוּב כַּפְרִי מְשֻׁתָּף שְׁעָרֵי תַּעֲסוּקָה וְשִׁוּוּי חֲלוּצִי.",
             definitionNative = "Сельская коммуна с общим трудом и исторически равным распределением.",
@@ -743,7 +743,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161219L, 161220L)),
         WordEntity(
             id = 161219, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_kibbutz_life", transliteration = "moshav",
+            pos = "noun", semanticGroup = "aliya_kibbutz_life",
             original = "מוֹשָׁב", translation = "мошав (село)",
             definition = "יִישׁוּב חַקְלָאִי שֶׁל מִשְׁפָּחוֹת פְּרָטִיּוֹת עִם שִׁתּוּף חֶלְקִי.",
             definitionNative = "Сельскохозяйственное поселение семей с частичным обобществлением.",
@@ -752,7 +752,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161218L, 161220L)),
         WordEntity(
             id = 161220, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_kibbutz_life", transliteration = "khaver kibbutz",
+            pos = "noun", semanticGroup = "aliya_kibbutz_life",
             original = "חֲבֵר קִבּוּץ", translation = "член киббуца",
             definition = "חֶלֶק מִקְהִילַת הַקִּבּוּץ בְּעָלַת זְכֻיּוֹת וַחֲבָרוּת מְלֵאָה.",
             definitionNative = "Полноправный участник общины со всеми общими правами.",
@@ -763,7 +763,7 @@ object WordDataHebrewAliyaV2 {
         // ── neighborhood (3) ──
         WordEntity(
             id = 161221, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_neighborhood", transliteration = "shkhuna",
+            pos = "noun", semanticGroup = "aliya_neighborhood",
             original = "שְׁכוּנָה", translation = "район; квартал",
             definition = "חֵלֶק מוּגְדָר שֶׁל עִיר עִם זֵהוּת מְקוֹמִית מְסוּיֶמֶת.",
             definitionNative = "Ограниченная часть города с определённым местным колоритом.",
@@ -772,7 +772,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161222, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_neighborhood", transliteration = "shakhen",
+            pos = "noun", semanticGroup = "aliya_neighborhood",
             original = "שָׁכֵן", translation = "сосед",
             definition = "אָדָם שֶׁגָּר לֵיָד, בְּאוֹתוֹ בִּנְיָן אוֹ רְחוֹב.",
             definitionNative = "Человек, живущий в том же доме или на той же улице.",
@@ -781,7 +781,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161223, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_neighborhood", transliteration = "va'ad bayit",
+            pos = "noun", semanticGroup = "aliya_neighborhood",
             original = "וַעַד בַּיִת", translation = "домоуправление; совет дома",
             definition = "וַעֲדָה שֶׁל דַּיָּרֵי הַבִּנְיָן לְהַפְעָלַת הָרְכוּשׁ הַמְּשׁוּתָּף.",
             definitionNative = "Совет жильцов здания по управлению общей собственностью.",
@@ -792,7 +792,7 @@ object WordDataHebrewAliyaV2 {
         // ── first_job (2) ──
         WordEntity(
             id = 161224, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_first_job", transliteration = "tlush maskoret",
+            pos = "noun", semanticGroup = "aliya_first_job",
             original = "תְּלוּשׁ מַשְׂכּוֹרֶת", translation = "зарплатная ведомость",
             definition = "מִסְמַךְ חוֹדְשִׁי שֶׁמְּפָרֵט שָׂכָר, נִכּוּיִים וּבִטּוּחִים.",
             definitionNative = "Ежемесячный документ с окладом, удержаниями и взносами.",
@@ -801,7 +801,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161225L)),
         WordEntity(
             id = 161225, setId = 1612, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_first_job", transliteration = "sakhar minimum",
+            pos = "noun", semanticGroup = "aliya_first_job",
             original = "שְׂכַר מִינִימוּם", translation = "минимальная зарплата",
             definition = "הַסְּכוּם הַנָּמוּךְ בְּיוֹתֵר שֶׁמַּעֲסִיק חַיָּב לְשַׁלֵּם לָעוֹבֵד.",
             definitionNative = "Наименьшая оплата труда, установленная законом.",
@@ -818,7 +818,7 @@ object WordDataHebrewAliyaV2 {
         // ── ethnic_groups (4) ──
         WordEntity(
             id = 161301, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_ethnic_groups", transliteration = "ashkenazi",
+            pos = "noun", semanticGroup = "aliya_ethnic_groups",
             original = "אַשְׁכְּנַזִּי", translation = "ашкеназ (еврей европейского происхождения)",
             definition = "יְהוּדִי שֶׁמָּקוֹרוֹ בְּקְהִילּוֹת מֶרְכַּז וּמִזְרַח אֵירוֹפָּה.",
             definitionNative = "Еврей, выходец из общин Центральной и Восточной Европы.",
@@ -827,7 +827,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161302L, 161303L, 161304L)),
         WordEntity(
             id = 161302, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_ethnic_groups", transliteration = "sfaradi",
+            pos = "noun", semanticGroup = "aliya_ethnic_groups",
             original = "סְפָרַדִּי", translation = "сефард (иудей испанской традиции)",
             definition = "יְהוּדִי שֶׁמָּקוֹרוֹ בִּקְהִילּוֹת סְפָרַד וְצָפוֹן אַפְרִיקָה.",
             definitionNative = "Еврей, выходец из общин Испании и Северной Африки.",
@@ -836,7 +836,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161301L, 161303L, 161304L)),
         WordEntity(
             id = 161303, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_ethnic_groups", transliteration = "mizrakhi",
+            pos = "noun", semanticGroup = "aliya_ethnic_groups",
             original = "מִזְרָחִי", translation = "мизрахи (восточный еврей)",
             definition = "יְהוּדִי שֶׁמָּקוֹרוֹ בִּקְהִילּוֹת מִזְרָח וּצְפוֹן אַפְרִיקָה.",
             definitionNative = "Еврей — потомок общин Ближнего Востока и Северной Африки.",
@@ -845,7 +845,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161301L, 161302L, 161304L)),
         WordEntity(
             id = 161304, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_ethnic_groups", transliteration = "etyopi",
+            pos = "noun", semanticGroup = "aliya_ethnic_groups",
             original = "אֶתְיוֹפִּי", translation = "эфиопский еврей",
             definition = "יְהוּדִי שֶׁמָּקוֹרוֹ בְּבֵית יִשְׂרָאֵל בְּאֶתְיוֹפְּיָה.",
             definitionNative = "Еврей из общины Бейта Исраэль, приехавший из Эфиопии.",
@@ -856,7 +856,7 @@ object WordDataHebrewAliyaV2 {
         // ── shabbat_basics (4) ──
         WordEntity(
             id = 161305, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_shabbat_basics", transliteration = "shabbat",
+            pos = "noun", semanticGroup = "aliya_shabbat_basics",
             original = "שַׁבָּת", translation = "суббота; Шабат",
             definition = "יוֹם מְנוּחָה שְׁבִיעִי, קֹדֶשׁ בַּיַּהֲדוּת מִשִּׁשִּׁי בַּעֶרֶב.",
             definitionNative = "Седьмой день недели, святой день отдыха с пятницы вечером.",
@@ -865,7 +865,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161306L, 161307L, 161308L, 161312L, 161313L, 161314L, 161315L)),
         WordEntity(
             id = 161306, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_shabbat_basics", transliteration = "kiddush",
+            pos = "noun", semanticGroup = "aliya_shabbat_basics",
             original = "קִדּוּשׁ", translation = "кидуш (освящение субботы)",
             definition = "בְּרָכָה עַל יַיִן בִּתְחִלַּת סְעוּדַת שַׁבָּת.",
             definitionNative = "Благословение над вином в начале субботней трапезы.",
@@ -874,7 +874,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161307, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_shabbat_basics", transliteration = "hallah",
+            pos = "noun", semanticGroup = "aliya_shabbat_basics",
             original = "חַלָּה", translation = "хала (субботний хлеб)",
             definition = "לֶחֶם מָתוֹק וּמוּקְפָץ לְסְעוּדַת שַׁבָּת וְחֲגִים.",
             definitionNative = "Плетёный сладкий хлеб для субботы и праздников.",
@@ -883,7 +883,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161306L, 161308L)),
         WordEntity(
             id = 161308, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_shabbat_basics", transliteration = "havdala",
+            pos = "noun", semanticGroup = "aliya_shabbat_basics",
             original = "הַבְדָּלָה", translation = "гавдала (проводы субботы)",
             definition = "טֶקֶס קָצָר בְּמוֹצָאֵי שַׁבָּת לְסִיּוּם יוֹם הַקֹּדֶשׁ.",
             definitionNative = "Короткий обряд в исходе субботы, знаменующий конец дня.",
@@ -894,7 +894,7 @@ object WordDataHebrewAliyaV2 {
         // ── kashrut (3) ──
         WordEntity(
             id = 161309, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_kashrut", transliteration = "kashrut",
+            pos = "noun", semanticGroup = "aliya_kashrut",
             original = "כַּשְׁרוּת", translation = "кашрут (пищевой закон)",
             definition = "מַעֲרֶכֶת הַחוּקִים לִמְאַכָלִים מוּתָּרִים בַּיַּהֲדוּת.",
             definitionNative = "Свод правил о разрешённой в иудаизме пище.",
@@ -903,7 +903,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161305L)),
         WordEntity(
             id = 161310, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "aliya_kashrut", transliteration = "kasher",
+            pos = "adjective", semanticGroup = "aliya_kashrut",
             original = "כָּשֵׁר", translation = "кошерный",
             definition = "מֻתָּר לַאֲכִילָה לְפִי חוּקֵי הַדִּין הַיְּהוּדִי.",
             definitionNative = "Разрешённый для еды по иудейскому закону.",
@@ -912,7 +912,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161311L)),
         WordEntity(
             id = 161311, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "aliya_kashrut", transliteration = "khalavi",
+            pos = "adjective", semanticGroup = "aliya_kashrut",
             original = "חֲלָבִי", translation = "молочный (по кашруту)",
             definition = "מָזוֹן הָעָשׂוּי מֵחָלָב וּמוּצְרֵי חָלָב.",
             definitionNative = "Категория пищи на основе коровьего продукта, по кашруту.",
@@ -923,7 +923,7 @@ object WordDataHebrewAliyaV2 {
         // ── holidays_intro (4) ──
         WordEntity(
             id = 161312, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_holidays_intro", transliteration = "khag",
+            pos = "noun", semanticGroup = "aliya_holidays_intro",
             original = "חַג", translation = "праздник",
             definition = "יוֹם מְיוּחָד שֶׁל חֲגִיגָה בַּלּוּחַ הָעִבְרִי.",
             definitionNative = "Особый торжественный день в еврейском календаре.",
@@ -932,7 +932,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161313L, 161314L, 161315L)),
         WordEntity(
             id = 161313, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_holidays_intro", transliteration = "rosh hashana",
+            pos = "noun", semanticGroup = "aliya_holidays_intro",
             original = "רֹאשׁ הַשָּׁנָה", translation = "Рош ха-Шана; еврейский Новый год",
             definition = "הַחַג שֶׁפּוֹתֵחַ אֶת הַשָּׁנָה הַיְּהוּדִית בַּסְּתָיו.",
             definitionNative = "Праздник, открывающий еврейский год осенью.",
@@ -941,7 +941,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161305L, 161312L, 161314L, 161315L)),
         WordEntity(
             id = 161314, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_holidays_intro", transliteration = "pesakh",
+            pos = "noun", semanticGroup = "aliya_holidays_intro",
             original = "פֶּסַח", translation = "Песах; Пасха еврейская",
             definition = "חַג הָאָבִיב לְזֵכֶר יְצִיאַת מִצְרַיִם, שִׁבְעַת יָמִים.",
             definitionNative = "Весенний праздник в память об Исходе из Египта, семь дней.",
@@ -950,7 +950,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161305L, 161312L, 161313L, 161315L)),
         WordEntity(
             id = 161315, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_holidays_intro", transliteration = "hanukkah",
+            pos = "noun", semanticGroup = "aliya_holidays_intro",
             original = "חֲנֻכָּה", translation = "Ханука",
             definition = "חַג הָאוֹרוֹת, שְׁמוֹנֶה יָמִים עִם חֲנוּכִּיָּה וּסְבִיבוֹן.",
             definitionNative = "Праздник огней длиной восемь дней с семисвечником и дрейделами.",
@@ -961,7 +961,7 @@ object WordDataHebrewAliyaV2 {
         // ── synagogue_basics (3) ──
         WordEntity(
             id = 161316, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_synagogue", transliteration = "beit knesset",
+            pos = "noun", semanticGroup = "aliya_synagogue",
             original = "בֵּית כְּנֶסֶת", translation = "синагога",
             definition = "מָקוֹם לִתְפִלָּה וּלְקְרִיאַת תּוֹרָה בַּיַּהֲדוּת.",
             definitionNative = "Место молитвы и чтения Торы в иудаизме.",
@@ -970,7 +970,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161317, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_synagogue", transliteration = "rav",
+            pos = "noun", semanticGroup = "aliya_synagogue",
             original = "רַב", translation = "раввин",
             definition = "מוֹרֶה וּמַנְהִיג רוּחָנִי בַּקְּהִילָּה הַיְּהוּדִית.",
             definitionNative = "Учитель и духовный лидер в иудейской общине.",
@@ -979,7 +979,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161316L, 161318L)),
         WordEntity(
             id = 161318, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_synagogue", transliteration = "kippa",
+            pos = "noun", semanticGroup = "aliya_synagogue",
             original = "כִּפָּה", translation = "кипа",
             definition = "כִּסּוּי רֹאשׁ קָטָן שֶׁלּוֹבְשִׁים גְּבָרִים יְהוּדִים דָּתִיִּים.",
             definitionNative = "Небольшой головной убор, носимый религиозными евреями-мужчинами.",
@@ -990,7 +990,7 @@ object WordDataHebrewAliyaV2 {
         // ── language_ethnic (3) ──
         WordEntity(
             id = 161319, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_language_ethnic", transliteration = "yiddish",
+            pos = "noun", semanticGroup = "aliya_language_ethnic",
             original = "יִידִישׁ", translation = "идиш",
             definition = "שָׂפָה יְהוּדִית אֵירוֹפִּית עַל בְּסִיס גֶּרְמָנִי יָשָׁן.",
             definitionNative = "Еврейский язык Европы на старогерманской основе.",
@@ -999,7 +999,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161320, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_language_ethnic", transliteration = "ladino",
+            pos = "noun", semanticGroup = "aliya_language_ethnic",
             original = "לָדִינוֹ", translation = "ладино; джудезмо",
             definition = "שָׂפָה יְהוּדִית סְפָרַדִּית יְמֵי בֵּינַיִים עִם הַשְׁפָּעָה עִבְרִית.",
             definitionNative = "Средневековый еврейско-испанский язык с ивритскими заимствованиями.",
@@ -1008,7 +1008,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161321, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_language_ethnic", transliteration = "aravit",
+            pos = "noun", semanticGroup = "aliya_language_ethnic",
             original = "עֲרָבִית", translation = "арабский язык",
             definition = "שָׂפָה שֵׁמִית רַחֲבָה בַּמִּזְרָח הַתִּיכוֹן וּבְיִשְׂרָאֵל.",
             definitionNative = "Семитский язык, распространённый на Ближнем Востоке и в Израиле.",
@@ -1019,7 +1019,7 @@ object WordDataHebrewAliyaV2 {
         // ── culture_food (2) ──
         WordEntity(
             id = 161322, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_culture_food", transliteration = "falafel",
+            pos = "noun", semanticGroup = "aliya_culture_food",
             original = "פָלָאפֶל", translation = "фалафель",
             definition = "כַּדּוּרֵי גַּרְגְּרֵי חוּמוּס טְחוּנִים וּמְטוּגָּנִים בְּשֶׁמֶן.",
             definitionNative = "Жаренные во фритюре шарики из молотого нута.",
@@ -1028,7 +1028,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161323L)),
         WordEntity(
             id = 161323, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_culture_food", transliteration = "khumus",
+            pos = "noun", semanticGroup = "aliya_culture_food",
             original = "חוּמוּס", translation = "хумус",
             definition = "מִמְרָח גַּרְגְּרֵי קִטְנִיּוֹת עִם טְחִינָה וְלִימוֹן.",
             definitionNative = "Паста из нута с кунжутной тхиной и лимоном.",
@@ -1039,7 +1039,7 @@ object WordDataHebrewAliyaV2 {
         // ── culture_music (2) ──
         WordEntity(
             id = 161324, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_culture_music", transliteration = "hora",
+            pos = "noun", semanticGroup = "aliya_culture_music",
             original = "הוֹרָה", translation = "хора (круговой танец)",
             definition = "רִקּוּד עִגּוּלִי מְסוּרָתִי בַּחֲגִיגוֹת יִשְׂרְאֵלִיּוֹת.",
             definitionNative = "Традиционный круговой танец на израильских торжествах.",
@@ -1048,7 +1048,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161325L)),
         WordEntity(
             id = 161325, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "aliya_culture_music", transliteration = "zemer ivri",
+            pos = "noun", semanticGroup = "aliya_culture_music",
             original = "זֶמֶר עִבְרִי", translation = "«земер иври»; песня на иврите",
             definition = "סַגְנוֹן שִׁירָה מוּזִיקָה עִבְרִית קְלָאסִי מִן הַשִּׁשִּׁים.",
             definitionNative = "Классический ивритский песенный стиль шестидесятых годов.",
@@ -1065,7 +1065,7 @@ object WordDataHebrewAliyaV2 {
         // ── knesset_basics (3) ──
         WordEntity(
             id = 161401, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_knesset_basics", transliteration = "kneset",
+            pos = "noun", semanticGroup = "aliya_knesset_basics",
             original = "כְּנֶסֶת", translation = "Кнессет; парламент Израиля",
             definition = "בֵּית הַמְּחוֹקְקִים שֶׁל הַמְּדִינָה, מֵאָה וְעֶשְׂרִים חֲבֵרִים.",
             definitionNative = "Законодательный орган страны из 120 депутатов.",
@@ -1074,7 +1074,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161402L, 161403L)),
         WordEntity(
             id = 161402, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_knesset_basics", transliteration = "khaver knesset",
+            pos = "noun", semanticGroup = "aliya_knesset_basics",
             original = "חֲבֵר כְּנֶסֶת", translation = "депутат Кнессета",
             definition = "נִבְחַר צִבּוּר שֶׁמְּיַצֵּג מִפְלָגָה בְּבֵית הַמְּחוֹקְקִים.",
             definitionNative = "Избранный представитель, защищающий интересы партии в парламенте.",
@@ -1083,7 +1083,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161401L, 161403L)),
         WordEntity(
             id = 161403, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_knesset_basics", transliteration = "ve'ada",
+            pos = "noun", semanticGroup = "aliya_knesset_basics",
             original = "וְעָדָה", translation = "комиссия; комитет (парламентский)",
             definition = "גּוּף פְּנִימִי שֶׁל הַכְּנֶסֶת הַמְטַפֵּל בְּנוֹשֵׂא מוּגְדָר.",
             definitionNative = "Специализированный орган Кнессета по определённой теме.",
@@ -1094,7 +1094,7 @@ object WordDataHebrewAliyaV2 {
         // ── government_branches (4) ──
         WordEntity(
             id = 161404, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_govt_branches", transliteration = "rosh memshala",
+            pos = "noun", semanticGroup = "aliya_govt_branches",
             original = "רֹאשׁ מֶמְשָׁלָה", translation = "премьер-министр",
             definition = "רֹאשׁ הָרָשׁוּת הַמְבַצַעַת וְנָשִׂיא הַמֶּמְשָׁלָה בְּיִשְׂרָאֵל.",
             definitionNative = "Глава исполнительной власти и правительства страны.",
@@ -1103,7 +1103,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161405L, 161406L, 161407L)),
         WordEntity(
             id = 161405, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_govt_branches", transliteration = "sar",
+            pos = "noun", semanticGroup = "aliya_govt_branches",
             original = "שָׂר", translation = "министр",
             definition = "חֲבֵר מֶמְשָׁלָה הָאַחֲרָאִי עַל תֵּיק מִשְׂרָדִי.",
             definitionNative = "Член правительства, возглавляющий конкретное ведомство.",
@@ -1112,7 +1112,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161406, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_govt_branches", transliteration = "nasi",
+            pos = "noun", semanticGroup = "aliya_govt_branches",
             original = "נָשִׂיא", translation = "президент (Израиля)",
             definition = "רֹאשׁ הַמְּדִינָה הַטִּקְסִי, בְּעָלַת סַמְכוּיוֹת מוּגְבָּלוֹת.",
             definitionNative = "Церемониальный глава государства с ограниченными полномочиями.",
@@ -1121,7 +1121,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161407, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_govt_branches", transliteration = "beit mishpat elyon",
+            pos = "noun", semanticGroup = "aliya_govt_branches",
             original = "בֵּית מִשְׁפָּט עֶלְיוֹן", translation = "Верховный суд",
             definition = "הָעֲרָכָאָה הַגְּבוֹהָה בְּיוֹתֵר בַּמַּעֲרֶכֶת הַמִּשְׁפָּטִית.",
             definitionNative = "Высшая судебная инстанция в государстве.",
@@ -1132,7 +1132,7 @@ object WordDataHebrewAliyaV2 {
         // ── parties_main (4) ──
         WordEntity(
             id = 161408, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_parties_main", transliteration = "likud",
+            pos = "noun", semanticGroup = "aliya_parties_main",
             original = "לִיכּוּד", translation = "Ликуд (правая партия)",
             definition = "מִפְלָגָה שְׁמָרָנִית יָמִין הַוָּתֶרֶת בְּיִשְׂרָאֵל.",
             definitionNative = "Правоцентристская консервативная партия, одна из крупнейших.",
@@ -1141,7 +1141,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161409, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_parties_main", transliteration = "ha'avoda",
+            pos = "noun", semanticGroup = "aliya_parties_main",
             original = "הָעֲבוֹדָה", translation = "Авода (лейбористская партия)",
             definition = "מִפְלָגָה סוֹצְיָאל-דֶּמוֹקְרָטִית וָתִיקָה מֵרֹאשׁוּת הַמְּדִינָה.",
             definitionNative = "Старейшая социал-демократическая партия, основавшая государство.",
@@ -1150,7 +1150,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161408L, 161410L, 161411L)),
         WordEntity(
             id = 161410, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_parties_main", transliteration = "shas",
+            pos = "noun", semanticGroup = "aliya_parties_main",
             original = "שָׁ״ס", translation = "ШАС (сефардская ультраортодоксальная партия)",
             definition = "מִפְלָגָה דָּתִית סְפָרַדִּית הַמְצִיגָה אִינְטֶרֶסִים חַרֲדִיִּים.",
             definitionNative = "Религиозная сефардская партия ультраортодоксальной общины.",
@@ -1159,7 +1159,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161408L, 161409L, 161411L)),
         WordEntity(
             id = 161411, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_parties_main", transliteration = "meretz",
+            pos = "noun", semanticGroup = "aliya_parties_main",
             original = "מֶרֶץ", translation = "МЕРЕЦ (левосионистская партия)",
             definition = "מִפְלָגָה סוֹצְיָאל-לִיבֶּרָלִית שְׂמֹאלִית וְחִלוֹנִית.",
             definitionNative = "Левосионистская социал-либеральная светская партия.",
@@ -1170,7 +1170,7 @@ object WordDataHebrewAliyaV2 {
         // ── elections (3) ──
         WordEntity(
             id = 161412, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_elections", transliteration = "bkhirot",
+            pos = "noun", semanticGroup = "aliya_elections",
             original = "בְּחִירוֹת", translation = "выборы",
             definition = "תַּהֲלִיךְ דֶּמוֹקְרָטִי לִבְחִירַת נְצִיגֵי הָעָם.",
             definitionNative = "Демократический процесс избрания представителей народа.",
@@ -1179,7 +1179,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161413L, 161414L)),
         WordEntity(
             id = 161413, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_elections", transliteration = "koalitzya",
+            pos = "noun", semanticGroup = "aliya_elections",
             original = "קוֹאָלִיצְיָה", translation = "коалиция",
             definition = "בְּרִית מִפְלָגוֹת הַיוֹצְרוֹת יַחַד מֶמְשָׁלָה רֹב.",
             definitionNative = "Союз партий, формирующих правительство большинства.",
@@ -1188,7 +1188,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161412L, 161414L)),
         WordEntity(
             id = 161414, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_elections", transliteration = "opozitsya",
+            pos = "noun", semanticGroup = "aliya_elections",
             original = "אוֹפּוֹזִיצְיָה", translation = "оппозиция",
             definition = "מִפְלָגוֹת שֶׁנֶּגֶד הָרֹב הַשָּׁלִיט בַּכְּנֶסֶת.",
             definitionNative = "Партии, противостоящие правящему большинству в парламенте.",
@@ -1199,7 +1199,7 @@ object WordDataHebrewAliyaV2 {
         // ── rights (3) ──
         WordEntity(
             id = 161415, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_rights", transliteration = "zkhuyot adam",
+            pos = "noun", semanticGroup = "aliya_rights",
             original = "זְכֻיּוֹת אָדָם", translation = "права человека",
             definition = "זְכֻיּוֹת בֶּסִיס הַמַּגִּיעוֹת לְכָל אָדָם מֵרוֹאַת לֵדָה.",
             definitionNative = "Базовые права каждого человека с момента рождения.",
@@ -1208,7 +1208,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161416L, 161417L)),
         WordEntity(
             id = 161416, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_rights", transliteration = "demokratya",
+            pos = "noun", semanticGroup = "aliya_rights",
             original = "דֵּמוֹקְרַטְיָה", translation = "демократия",
             definition = "שִׁלְטוֹן הָעָם בְּאֶמְצָעוּת נְצִיגִים נִבְחָרִים.",
             definitionNative = "Форма правления, при которой народ выбирает своих представителей.",
@@ -1217,7 +1217,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161415L, 161417L)),
         WordEntity(
             id = 161417, setId = 1614, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_rights", transliteration = "khok yesod",
+            pos = "noun", semanticGroup = "aliya_rights",
             original = "חוֹק יְסוֹד", translation = "Основной закон (конституционный)",
             definition = "חוֹק מַעֲמָד עֶלְיוֹן בַּאֲרוֹךְ בְּסִיס הַמִּשְׁטַר הַיִּשְׂרְאֵלִי.",
             definitionNative = "Закон высшего статуса, лежащий в основе государственного строя.",
@@ -1228,7 +1228,7 @@ object WordDataHebrewAliyaV2 {
         // ── ideology (3) ──
         WordEntity(
             id = 161418, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_ideology", transliteration = "tziyonut",
+            pos = "noun", semanticGroup = "aliya_ideology",
             original = "צִיּוֹנוּת", translation = "сионизм",
             definition = "תְּנוּעַת שִׁיבָת הָעָם הַיְּהוּדִי לְאַרְצוֹ הָהִיסְטוֹרִית.",
             definitionNative = "Национальное движение за возвращение евреев на историческую родину.",
@@ -1237,7 +1237,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161419, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_ideology", transliteration = "liberalim",
+            pos = "noun", semanticGroup = "aliya_ideology",
             original = "לִיבֵּרָלִי", translation = "либерал; либеральный",
             definition = "אָדָם בַּעַל דֵּעוֹת שֶׁל חֵרוּת הַפְּרָט וְזְכֻיּוֹת.",
             definitionNative = "Человек, отстаивающий свободу личности и её права.",
@@ -1246,7 +1246,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161418L, 161420L)),
         WordEntity(
             id = 161420, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_ideology", transliteration = "dati",
+            pos = "noun", semanticGroup = "aliya_ideology",
             original = "דָּתִי", translation = "религиозный; ортодоксальный",
             definition = "אָדָם שֶׁשּׁוֹמֵר מִצְווֹת דָּתִיוּת וְתוֹרַת יִשְׂרָאֵל.",
             definitionNative = "Человек, соблюдающий заповеди Торы и еврейскую традицию.",
@@ -1257,7 +1257,7 @@ object WordDataHebrewAliyaV2 {
         // ── civil_society (3) ──
         WordEntity(
             id = 161421, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_civil_society", transliteration = "amuta",
+            pos = "noun", semanticGroup = "aliya_civil_society",
             original = "עֲמוּתָה", translation = "некоммерческая организация",
             definition = "אִרְגּוּן רָשׁוּם שֶׁפּוֹעֵל לְטוֹבַת מַטָּרָה צִבּוּרִית.",
             definitionNative = "Зарегистрированная организация, действующая ради общественной цели.",
@@ -1266,7 +1266,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161403L, 161422L, 161423L)),
         WordEntity(
             id = 161422, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_civil_society", transliteration = "hafgana",
+            pos = "noun", semanticGroup = "aliya_civil_society",
             original = "הַפְגָּנָה", translation = "демонстрация; митинг",
             definition = "הִתְכַנְסוּת צִבּוּרִית לְהַבָּעַת מְחָאָה אוֹ עֲמְדָה.",
             definitionNative = "Публичное собрание для выражения протеста или позиции.",
@@ -1275,7 +1275,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161421L, 161423L)),
         WordEntity(
             id = 161423, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_civil_society", transliteration = "khevra ezrakhit",
+            pos = "noun", semanticGroup = "aliya_civil_society",
             original = "חֶבְרָה אֶזְרָחִית", translation = "гражданское общество",
             definition = "מְרַקֶּם שֶׁל אִרְגּוּנִים וְיוֹזְמוֹת מִחוּץ לַמֶּמְשָׁלָה.",
             definitionNative = "Сеть независимых организаций и инициатив вне государства.",
@@ -1286,7 +1286,7 @@ object WordDataHebrewAliyaV2 {
         // ── economy_gov (2) ──
         WordEntity(
             id = 161424, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_economy_gov", transliteration = "taktziv",
+            pos = "noun", semanticGroup = "aliya_economy_gov",
             original = "תַּקְצִיב", translation = "государственный бюджет",
             definition = "תוֹכְנִית הַכְנָסוֹת וְהוֹצָאוֹת שְׁנָתִית שֶׁל הַמְּדִינָה.",
             definitionNative = "Годовой план доходов и расходов государства.",
@@ -1295,7 +1295,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161425L)),
         WordEntity(
             id = 161425, setId = 1614, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "aliya_economy_gov", transliteration = "inflatsya",
+            pos = "noun", semanticGroup = "aliya_economy_gov",
             original = "אִינְפְלַצְיָה", translation = "инфляция",
             definition = "עֲלִיָּה כּוֹלֶלֶת בְּמְחִירִים וְיְרִידַת כֹּחַ הַקְּנִיָּה.",
             definitionNative = "Общий рост цен и падение покупательной способности денег.",
@@ -1312,7 +1312,7 @@ object WordDataHebrewAliyaV2 {
         // ── founding_docs (3) ──
         WordEntity(
             id = 161501, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_founding_docs", transliteration = "hakhrazat ha'atzmaut",
+            pos = "noun", semanticGroup = "aliya_founding_docs",
             original = "הַכְרָזַת הָעַצְמָאוּת", translation = "Декларация независимости Израиля",
             definition = "הַמִּסְמָךְ שֶׁהִכְרִיז עַל הָקָמַת הַמְּדִינָה בְּחַמִּישָׁה בְּאִיָּר 1948.",
             definitionNative = "Документ, провозгласивший создание государства 14 мая 1948 года.",
@@ -1321,7 +1321,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161502L, 161503L)),
         WordEntity(
             id = 161502, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_founding_docs", transliteration = "kaf tet be-november",
+            pos = "noun", semanticGroup = "aliya_founding_docs",
             original = "כ״ט בְּנוֹבֶמְבֶּר", translation = "29 ноября (резолюция ООН 1947)",
             definition = "הַתַּאֲרִיךְ שֶׁבּוֹ הַאוּם הֶחְלִיטָה עַל חֲלוּקַת אֶרֶץ יִשְׂרָאֵל.",
             definitionNative = "День, когда ООН приняла план раздела Палестины на два государства.",
@@ -1330,7 +1330,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161501L, 161503L, 161521L)),
         WordEntity(
             id = 161503, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_founding_docs", transliteration = "megilat ha'atzmaut",
+            pos = "noun", semanticGroup = "aliya_founding_docs",
             original = "מְגִלַּת הָעַצְמָאוּת", translation = "Свиток независимости",
             definition = "הַנּוּסָח הַחֲגִיגִי שֶׁקָּרָא בֶּן-גּוּרְיוֹן בְּהַקָּמַת הַמְּדִינָה.",
             definitionNative = "Торжественный текст, зачитанный Бен-Гурионом при основании государства.",
@@ -1341,7 +1341,7 @@ object WordDataHebrewAliyaV2 {
         // ── historic_wars (4) ──
         WordEntity(
             id = 161504, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_historic_wars", transliteration = "milkhemet sheshet hayamim",
+            pos = "noun", semanticGroup = "aliya_historic_wars",
             original = "מִלְחֶמֶת שֵׁשֶׁת הַיָּמִים", translation = "Шестидневная война (1967)",
             definition = "עִמּוּת מְהִיר בַּיּוּנִי 1967 שֶׁשִּׁנָּה אֶת גְּבוּלוֹת הַמְּדִינָה.",
             definitionNative = "Молниеносный конфликт июня 1967 года, изменивший границы государства.",
@@ -1350,7 +1350,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161505L, 161506L, 161507L)),
         WordEntity(
             id = 161505, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_historic_wars", transliteration = "milkhemet yom kippur",
+            pos = "noun", semanticGroup = "aliya_historic_wars",
             original = "מִלְחֶמֶת יוֹם הַכִּפּוּרִים", translation = "Война Судного дня (1973)",
             definition = "הַפְתָּעָה צְבָאִית שֶׁל מִצְרַיִם וְסוּרְיָה בַּשִּׁבְעִי בְּאוֹקְטוֹבֶּר 1973.",
             definitionNative = "Внезапное нападение Египта и Сирии 6 октября 1973 года.",
@@ -1359,7 +1359,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161504L, 161506L, 161507L)),
         WordEntity(
             id = 161506, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_historic_wars", transliteration = "milkhemet levanon",
+            pos = "noun", semanticGroup = "aliya_historic_wars",
             original = "מִלְחֶמֶת לְבָנוֹן", translation = "Ливанская война (1982)",
             definition = "מִבְצָע צְבָאִי בַּגְּבוּל הַצְּפוֹנִי מוּל אִרְגּוּנִים פָּלֶסְטִינִיִּים.",
             definitionNative = "Военная операция на северной границе против палестинских формирований.",
@@ -1368,7 +1368,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161504L, 161505L, 161507L)),
         WordEntity(
             id = 161507, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_historic_wars", transliteration = "intifada",
+            pos = "noun", semanticGroup = "aliya_historic_wars",
             original = "אִינְתִיפָאדָה", translation = "интифада (палестинское восстание)",
             definition = "מְרִידוֹת פָּלֶסְטִינִיִּים בְּשִׁטָחִים שֶׁמֵּעֵבֶר לַקַּו הַיָּרֹק.",
             definitionNative = "Палестинские восстания на территориях за «зелёной линией».",
@@ -1379,7 +1379,7 @@ object WordDataHebrewAliyaV2 {
         // ── founding_figures (4) ──
         WordEntity(
             id = 161508, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_founders", transliteration = "ben gurion",
+            pos = "noun", semanticGroup = "aliya_founders",
             original = "דָּוִד בֶּן-גּוּרְיוֹן", translation = "Давид Бен-Гурион",
             definition = "הָרֹאשׁ מֶמְשָׁלָה הָרִאשׁוֹן, הַמַּכְרִיז עַל הַמְּדִינָה.",
             definitionNative = "Первый премьер-министр, провозгласивший создание государства.",
@@ -1388,7 +1388,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161509L, 161510L, 161511L, 161512L, 161513L, 161514L)),
         WordEntity(
             id = 161509, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_founders", transliteration = "golda meir",
+            pos = "noun", semanticGroup = "aliya_founders",
             original = "גּוֹלְדָה מֵאִיר", translation = "Голда Меир",
             definition = "הָרָאשָׁה מֶמְשָׁלָה הָרִאשׁוֹנָה, מִנְהִיגָה בִּתְקוּפַת יוֹם כִּפּוּרִים.",
             definitionNative = "Первая женщина-премьер-министр, лидер в период Войны Судного дня.",
@@ -1397,7 +1397,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161508L, 161510L, 161511L, 161512L, 161513L, 161514L)),
         WordEntity(
             id = 161510, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_founders", transliteration = "herzl",
+            pos = "noun", semanticGroup = "aliya_founders",
             original = "תֵּאוֹדוֹר הֶרְצֶל", translation = "Теодор Герцль",
             definition = "חוֹזֶה הַמְּדִינָה, מְיָסֵד הַתְּנוּעָה הַצִּיּוֹנִית בְּסוֹף הָעֶשְׂרִים.",
             definitionNative = "Визионер государства, основатель сионистского движения конца XIX века.",
@@ -1406,7 +1406,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161508L, 161509L, 161511L, 161512L, 161513L, 161514L)),
         WordEntity(
             id = 161511, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_founders", transliteration = "weizmann",
+            pos = "noun", semanticGroup = "aliya_founders",
             original = "חַיִּים וַיצְמָן", translation = "Хаим Вейцман",
             definition = "הַנָּשִׂיא הָרִאשׁוֹן שֶׁל הַמְּדִינָה וּמַדְּעָן מוּכָּר.",
             definitionNative = "Первый президент страны и известный учёный-химик.",
@@ -1417,7 +1417,7 @@ object WordDataHebrewAliyaV2 {
         // ── pm_era (3) ──
         WordEntity(
             id = 161512, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_pm_era", transliteration = "yitskhak rabin",
+            pos = "noun", semanticGroup = "aliya_pm_era",
             original = "יִצְחָק רָבִּין", translation = "Ицхак Рабин",
             definition = "רֹאשׁ מֶמְשָׁלָה שֶׁחָתַם עַל הֶסְכֵּם אוֹסְלוֹ וְנִרְצַח בְּתֵל אָבִיב.",
             definitionNative = "Премьер-министр, подписавший соглашение Осло, убит в Тель-Авиве.",
@@ -1426,7 +1426,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161508L, 161509L, 161510L, 161511L, 161513L, 161514L)),
         WordEntity(
             id = 161513, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_pm_era", transliteration = "menakhem begin",
+            pos = "noun", semanticGroup = "aliya_pm_era",
             original = "מְנַחֵם בֶּגִין", translation = "Менахем Бегин",
             definition = "רֹאשׁ מֶמְשָׁלָה שֶׁחָתַם עַל הֶסְכֵּם הַשָּׁלוֹם עִם מִצְרַיִם.",
             definitionNative = "Премьер-министр, подписавший мирный договор с Египтом.",
@@ -1435,7 +1435,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161508L, 161509L, 161510L, 161511L, 161512L, 161514L)),
         WordEntity(
             id = 161514, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_pm_era", transliteration = "shimon peres",
+            pos = "noun", semanticGroup = "aliya_pm_era",
             original = "שִׁמְעוֹן פֶּרֶס", translation = "Шимон Перес",
             definition = "נָשִׂיא וְרֹאשׁ מֶמְשָׁלָה, מִדֶּמוּיוֹת הַמַּחֲנֶה הַיּוֹנִי.",
             definitionNative = "Президент и премьер, одна из ключевых фигур голубиного лагеря.",
@@ -1446,7 +1446,7 @@ object WordDataHebrewAliyaV2 {
         // ── conflict_terms (3) ──
         WordEntity(
             id = 161515, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_conflict_terms", transliteration = "kav yarok",
+            pos = "noun", semanticGroup = "aliya_conflict_terms",
             original = "קַו יָרֹק", translation = "«зелёная линия» (границы 1967)",
             definition = "קַו שְׁבִיתַת הַנֶּשֶׁק מִשְׁנַת 1949 לִפְנֵי שֵׁשֶׁת הַיָּמִים.",
             definitionNative = "Линия прекращения огня 1949 года до Шестидневной войны.",
@@ -1455,7 +1455,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161516, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_conflict_terms", transliteration = "hitnakhlut",
+            pos = "noun", semanticGroup = "aliya_conflict_terms",
             original = "הִתְנַחֲלוּת", translation = "поселение (за «зелёной линией»)",
             definition = "יִישׁוּב יְהוּדִי בִּשְׁטָחִים הַנִּכְבָּשִׁים לְאַחַר 1967.",
             definitionNative = "Еврейский населённый пункт на территориях, занятых после 1967 года.",
@@ -1464,7 +1464,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161515L, 161517L)),
         WordEntity(
             id = 161517, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_conflict_terms", transliteration = "mishtakhim",
+            pos = "noun", semanticGroup = "aliya_conflict_terms",
             original = "שְׁטָחִים", translation = "Территории (Иудея и Самария)",
             definition = "אֵזוֹרִים שֶׁמֵעֵבֶר לַקַּו הַיָּרֹק וּמְעוֹרָרִים וִכּוּחַ מִשְׁפָּטִי.",
             definitionNative = "Зоны за «зелёной линией», вызывающие спор о правовом статусе.",
@@ -1475,7 +1475,7 @@ object WordDataHebrewAliyaV2 {
         // ── peace_process (2) ──
         WordEntity(
             id = 161518, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_peace_process", transliteration = "heskem oslo",
+            pos = "noun", semanticGroup = "aliya_peace_process",
             original = "הֶסְכֵּם אוֹסְלוֹ", translation = "Соглашение Осло (1993)",
             definition = "מִסְמַךְ הַכָּרָה הַדָּדִי עִם הָרָשׁוּת הַפָּלֶסְטִינִית מ-1993.",
             definitionNative = "Документ взаимного признания с Палестинской администрацией 1993 года.",
@@ -1484,7 +1484,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161519, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_peace_process", transliteration = "heskem shalom",
+            pos = "noun", semanticGroup = "aliya_peace_process",
             original = "הֶסְכֵּם שָׁלוֹם", translation = "мирный договор",
             definition = "מִסְמַךְ הַפְסָקָה שֶׁל עִמּוּת צְבָאִי בֵּין מְדִינוֹת.",
             definitionNative = "Документ о прекращении военного конфликта между государствами.",
@@ -1495,7 +1495,7 @@ object WordDataHebrewAliyaV2 {
         // ── symbols_state (3) ──
         WordEntity(
             id = 161520, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_state_symbols", transliteration = "degel",
+            pos = "noun", semanticGroup = "aliya_state_symbols",
             original = "דֶּגֶל יִשְׂרָאֵל", translation = "флаг Израиля",
             definition = "הַסֶּמֶל הַלְאוּמִי, מָגֵן דָּוִד כָּחוֹל עַל רֶקַע לָבָן.",
             definitionNative = "Национальный символ с голубой звездой Давида на белом фоне.",
@@ -1504,7 +1504,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161521L, 161522L)),
         WordEntity(
             id = 161521, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_state_symbols", transliteration = "hatikva",
+            pos = "noun", semanticGroup = "aliya_state_symbols",
             original = "הַתִּקְוָה", translation = "«Атиква» (гимн)",
             definition = "הַהִמְנוֹן הַלְאוּמִי, בְּבַסִיס שִׁיר מֵהַמֵּאָה הַתְּשַׁע-עֶשְׂרֵה.",
             definitionNative = "Государственный гимн, основанный на стихотворении XIX века.",
@@ -1513,7 +1513,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161520L, 161522L)),
         WordEntity(
             id = 161522, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_state_symbols", transliteration = "menora",
+            pos = "noun", semanticGroup = "aliya_state_symbols",
             original = "מְנוֹרָה", translation = "менора (государственный герб)",
             definition = "הַסֶּמֶל הַמְּדִינָתִי — שִׁבְעַת הַקָּנִים עִם זֵרֵי זַיִת.",
             definitionNative = "Эмблема государства — семисвечник с оливковыми ветвями.",
@@ -1524,7 +1524,7 @@ object WordDataHebrewAliyaV2 {
         // ── zionist_movements (3) ──
         WordEntity(
             id = 161523, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_zionist_mvt", transliteration = "palmach",
+            pos = "noun", semanticGroup = "aliya_zionist_mvt",
             original = "פַּלְמָ״ח", translation = "ПАЛМАХ (ударные части Хаганы)",
             definition = "זְרוֹעַ הַלּוֹחֵם שֶׁל הַהָגָנָה לִפְנֵי הָקָמַת הַמְּדִינָה.",
             definitionNative = "Ударные отряды еврейской самообороны до создания государства.",
@@ -1533,7 +1533,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161524L, 161525L)),
         WordEntity(
             id = 161524, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_zionist_mvt", transliteration = "etzel",
+            pos = "noun", semanticGroup = "aliya_zionist_mvt",
             original = "אֶצֶ״ל", translation = "ЭЦЕЛ (Иргун)",
             definition = "אִרְגּוּן רֶוִיזְיוֹנִיסְטִי חֲשָׁאִי בִּתְקוּפַת הַמַּנְדַּט הַבְּרִיטִי.",
             definitionNative = "Подпольная ревизионистская организация во времена британского мандата.",
@@ -1542,7 +1542,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161523L, 161525L)),
         WordEntity(
             id = 161525, setId = 1615, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_zionist_mvt", transliteration = "aliya shniya",
+            pos = "noun", semanticGroup = "aliya_zionist_mvt",
             original = "עֲלִיָּה שְׁנִיָּה", translation = "Вторая алия (1904—1914)",
             definition = "גַּל עֲלִיָּה מֵרוּסְיָה בִּתְחִלַּת הַמֵּאָה הָעֶשְׂרִים.",
             definitionNative = "Волна репатриации из России в начале XX века.",
@@ -1560,7 +1560,7 @@ object WordDataHebrewAliyaV2 {
         // ── diaspora_terms (3) ──
         WordEntity(
             id = 161601, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_diaspora_terms", transliteration = "galut",
+            pos = "noun", semanticGroup = "aliya_diaspora_terms",
             original = "גָּלוּת", translation = "галут; изгнание",
             definition = "מַצָּב הַחַיִּים הַיְּהוּדִים מִחוּץ לְאֶרֶץ יִשְׂרָאֵל.",
             definitionNative = "Положение еврейской жизни вне исторической родины.",
@@ -1569,7 +1569,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161602L, 161603L)),
         WordEntity(
             id = 161602, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_diaspora_terms", transliteration = "tfutzot",
+            pos = "noun", semanticGroup = "aliya_diaspora_terms",
             original = "תְּפוּצוֹת", translation = "диаспора (в широком смысле)",
             definition = "כְּלַל הַקְּהִילּוֹת הַיְּהוּדִיוֹת בְּעוֹלָם מִחוּץ לָאָרֶץ.",
             definitionNative = "Совокупность еврейских общин за пределами Израиля.",
@@ -1578,7 +1578,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161601L, 161603L)),
         WordEntity(
             id = 161603, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_diaspora_terms", transliteration = "shtetl",
+            pos = "noun", semanticGroup = "aliya_diaspora_terms",
             original = "שְׁטֶעטְל", translation = "штетл (еврейское местечко)",
             definition = "עֲיָרָה יְהוּדִית קְטַנָּה בְּמִזְרַח אֵירוֹפָּה לְפְנֵי הַשּׁוֹאָה.",
             definitionNative = "Маленький еврейский городок в Восточной Европе до Холокоста.",
@@ -1589,7 +1589,7 @@ object WordDataHebrewAliyaV2 {
         // ── religious_study (4) ──
         WordEntity(
             id = 161604, setId = 1616, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "aliya_religious_study", transliteration = "yeshiva",
+            pos = "noun", semanticGroup = "aliya_religious_study",
             original = "יְשִׁיבָה", translation = "йешива (высшая религиозная школа)",
             definition = "מוֹסַד לִמּוּדֵי תּוֹרָה וְתַלְמוּד גָּבוֹהַ לִגְבָרִים דָּתִיִּים.",
             definitionNative = "Высшее религиозное учебное заведение для мужчин.",
@@ -1598,7 +1598,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161605L, 161606L, 161607L)),
         WordEntity(
             id = 161605, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_religious_study", transliteration = "talmud",
+            pos = "noun", semanticGroup = "aliya_religious_study",
             original = "תַּלְמוּד", translation = "Талмуд",
             definition = "קֹרְפּוּס פֵּרוּשִׁים וְדִיּוּנִים רַבָּנִיִּים עַל הַמִּשְׁנָה.",
             definitionNative = "Корпус раввинских комментариев и дискуссий вокруг Мишны.",
@@ -1607,7 +1607,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161604L, 161606L, 161607L)),
         WordEntity(
             id = 161606, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_religious_study", transliteration = "mishna",
+            pos = "noun", semanticGroup = "aliya_religious_study",
             original = "מִשְׁנָה", translation = "Мишна",
             definition = "הַקֹּדֶם שֶׁל הַתַּלְמוּד, אוֹסֶף הַלָּכוֹת שֶׁל תַּנָּאִים.",
             definitionNative = "Предшественница Талмуда, свод законов таннаев.",
@@ -1616,7 +1616,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161604L, 161605L, 161607L, 161608L, 161609L, 161610L, 161618L, 161621L, 161622L)),
         WordEntity(
             id = 161607, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_religious_study", transliteration = "halakha",
+            pos = "noun", semanticGroup = "aliya_religious_study",
             original = "הֲלָכָה", translation = "галаха (религиозный закон)",
             definition = "הַחֵלֶק הַמִּשְׁפָּטִי שֶׁל הַמָּסֹרֶת הַיְּהוּדִית, כְּלַלֵי הִתְנַהֲגוּת.",
             definitionNative = "Правовая часть еврейской традиции, система поведения.",
@@ -1627,7 +1627,7 @@ object WordDataHebrewAliyaV2 {
         // ── mystic_kabbala (3) ──
         WordEntity(
             id = 161608, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_mystic", transliteration = "kabbala",
+            pos = "noun", semanticGroup = "aliya_mystic",
             original = "קַבָּלָה", translation = "каббала",
             definition = "תּוֹרַת הַסּוֹד הַיְּהוּדִית עַל סִתְרֵי הָאֱלֹהוּת וְהַבְּרִיאָה.",
             definitionNative = "Еврейское мистическое учение о тайнах Бога и творения.",
@@ -1636,7 +1636,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161609, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_mystic", transliteration = "zohar",
+            pos = "noun", semanticGroup = "aliya_mystic",
             original = "זֹהַר", translation = "Зоар (главный текст каббалы)",
             definition = "חִבּוּר מִסְתּוֹרִי מִן הַמֵּאָה הַשְּׁלוֹשׁ-עֶשְׂרֵה עַל הַתּוֹרָה.",
             definitionNative = "Мистический труд XIII века — комментарий к Торе.",
@@ -1645,7 +1645,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161605L, 161608L, 161610L, 161617L, 161618L, 161619L)),
         WordEntity(
             id = 161610, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_mystic", transliteration = "sfirot",
+            pos = "noun", semanticGroup = "aliya_mystic",
             original = "סְפִירוֹת", translation = "сфирот (эманации Божества)",
             definition = "עֶשֶׂר אֲצִילוּיוֹת הָאֱלֹהוּת לְפִי הַתְּפִיסָה הַקַּבָּלִית.",
             definitionNative = "Десять эманаций Божественного в каббалистической системе.",
@@ -1656,7 +1656,7 @@ object WordDataHebrewAliyaV2 {
         // ── haredi_life (3) ──
         WordEntity(
             id = 161611, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_haredi_life", transliteration = "shtreimel",
+            pos = "noun", semanticGroup = "aliya_haredi_life",
             original = "שְׁטְרַיְמֶל", translation = "штреймл (меховая шляпа хасидов)",
             definition = "כּוֹבַע פַּרְוָה חֲסִידִי שֶׁלּוֹבְשִׁים בַּחֲגִים וּבַחֲתוּנּוֹת.",
             definitionNative = "Хасидская меховая шапка, которую надевают на праздники и свадьбы.",
@@ -1665,7 +1665,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161612L, 161613L)),
         WordEntity(
             id = 161612, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_haredi_life", transliteration = "avrekh",
+            pos = "noun", semanticGroup = "aliya_haredi_life",
             original = "אַבְרֵךְ", translation = "аврех (молодой учащийся женатый)",
             definition = "גֶּבֶר נָשׂוּי שֶׁמּוֹסֵר אֶת שְׁנָתוֹ לְלִמּוּדֵי תּוֹרָה.",
             definitionNative = "Женатый мужчина, посвящающий свои годы изучению Торы.",
@@ -1674,7 +1674,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161613, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_haredi_life", transliteration = "kollel",
+            pos = "noun", semanticGroup = "aliya_haredi_life",
             original = "כּוֹלֵל", translation = "коллель (йешива для женатых)",
             definition = "מוֹסַד תּוֹרָה לִגְבָרִים נְשׂוּאִים שֶׁלּוֹמְדִים בִּשְׂכַר-לִמּוּד.",
             definitionNative = "Религиозное учреждение для женатых учащихся со стипендией.",
@@ -1685,7 +1685,7 @@ object WordDataHebrewAliyaV2 {
         // ── messianic (3) ──
         WordEntity(
             id = 161614, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_messianic", transliteration = "mashiakh",
+            pos = "noun", semanticGroup = "aliya_messianic",
             original = "מָשִׁיחַ", translation = "Мессия; Машиах",
             definition = "הַגּוֹאֵל הֶעָתִיד שֶׁיָּבִיא אֶת אַחֲרִית הַיָּמִים.",
             definitionNative = "Грядущий избавитель, который принесёт конец дней.",
@@ -1694,7 +1694,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161615, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_messianic", transliteration = "geula",
+            pos = "noun", semanticGroup = "aliya_messianic",
             original = "גְּאֻלָּה", translation = "избавление; геула",
             definition = "הַשִּׁחְרוּר הָעֲתִידִי שֶׁל עָם יִשְׂרָאֵל וְהָעוֹלָם כּוּלוֹ.",
             definitionNative = "Грядущее освобождение народа и всего мира.",
@@ -1703,7 +1703,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161614L, 161616L)),
         WordEntity(
             id = 161616, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_messianic", transliteration = "akharit hayamim",
+            pos = "noun", semanticGroup = "aliya_messianic",
             original = "אַחֲרִית הַיָּמִים", translation = "конец дней",
             definition = "הַתְּקוּפָה הַמְּשִׁיחִית שֶׁל שָׁלוֹם וָצֶדֶק עוֹלָמִי.",
             definitionNative = "Мессианская эпоха всеобщего мира и справедливости.",
@@ -1714,7 +1714,7 @@ object WordDataHebrewAliyaV2 {
         // ── prayer_tradition (3) ──
         WordEntity(
             id = 161617, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_prayer_tradition", transliteration = "siddur",
+            pos = "noun", semanticGroup = "aliya_prayer_tradition",
             original = "סִדּוּר", translation = "сидур (молитвенник)",
             definition = "סֵפֶר הַתְּפִלּוֹת הַיּוֹמִיּוֹת וְהַחֲגִים.",
             definitionNative = "Книга ежедневных молитв и праздничных текстов.",
@@ -1723,7 +1723,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161618, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_prayer_tradition", transliteration = "piyyut",
+            pos = "noun", semanticGroup = "aliya_prayer_tradition",
             original = "פִּיּוּט", translation = "пиют (литургическое стихотворение)",
             definition = "שִׁירָה דָּתִית עִבְרִית שֶׁנֶּאֱמֶרֶת בַּתְּפִלּוֹת הַחֲגִים.",
             definitionNative = "Религиозные ивритские стихи для праздничных молитв.",
@@ -1732,7 +1732,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161617L, 161619L)),
         WordEntity(
             id = 161619, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_prayer_tradition", transliteration = "tikkun olam",
+            pos = "noun", semanticGroup = "aliya_prayer_tradition",
             original = "תִּקּוּן עוֹלָם", translation = "тикун олам (исправление мира)",
             definition = "רַעְיוֹן שֶׁל תַּקָּנַת הָעוֹלָם מִן הַמֻּסְרִי וְהַחֶבְרָתִי.",
             definitionNative = "Идея исправления мира в нравственном и социальном смыслах.",
@@ -1743,7 +1743,7 @@ object WordDataHebrewAliyaV2 {
         // ── prophetic_books (3) ──
         WordEntity(
             id = 161620, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_prophetic", transliteration = "navi",
+            pos = "noun", semanticGroup = "aliya_prophetic",
             original = "נָבִיא", translation = "пророк",
             definition = "אָדָם שֶׁמּוֹסֵר אֶת דְּבַר הָאֱלֹהִים לָעָם.",
             definitionNative = "Человек, передающий народу слово Божье.",
@@ -1752,7 +1752,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161621, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_prophetic", transliteration = "nevi'im",
+            pos = "noun", semanticGroup = "aliya_prophetic",
             original = "נְבִיאִים", translation = "Пророки (раздел Танаха)",
             definition = "הַחֵלֶק הַשֵּׁנִי שֶׁל הַתַּנָּ״ךְ, סִפְרֵי הַחֲזוֹן.",
             definitionNative = "Второй раздел Танаха — книги древних визионеров.",
@@ -1761,7 +1761,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161622, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_prophetic", transliteration = "ketuvim",
+            pos = "noun", semanticGroup = "aliya_prophetic",
             original = "כְּתוּבִים", translation = "Писания (Ктувим)",
             definition = "הַחֵלֶק הַשְּׁלִישִׁי שֶׁל הַתַּנָּ״ךְ — תְּהִלִּים, אִיּוֹב וְעוֹד.",
             definitionNative = "Третий раздел Танаха: Псалмы, Иов и другие тексты.",
@@ -1772,7 +1772,7 @@ object WordDataHebrewAliyaV2 {
         // ── temple_era (3) ──
         WordEntity(
             id = 161623, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_temple_era", transliteration = "beit hamikdash",
+            pos = "noun", semanticGroup = "aliya_temple_era",
             original = "בֵּית הַמִּקְדָּשׁ", translation = "Храм (иерусалимский)",
             definition = "הַמִּקְדָּשׁ הַמֶּרְכָּזִי שֶׁעָמַד עַל הַר הַבַּיִת בִּירוּשָׁלַיִם.",
             definitionNative = "Главное святилище иудаизма на Горе Мории в Иерусалиме.",
@@ -1782,7 +1782,7 @@ object WordDataHebrewAliyaV2 {
         ),
         WordEntity(
             id = 161624, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_temple_era", transliteration = "kohen",
+            pos = "noun", semanticGroup = "aliya_temple_era",
             original = "כֹּהֵן", translation = "коэн (священник Храма)",
             definition = "צֶאֱצָא שֶׁל אַהֲרֹן שֶׁעָבַד בְּעֲבוֹדַת הַמִּקְדָּשׁ.",
             definitionNative = "Потомок Аарона, служивший в Храме по линии священства.",
@@ -1791,7 +1791,7 @@ object WordDataHebrewAliyaV2 {
          fillInBlankExclusions = listOf(161623L, 161625L)),
         WordEntity(
             id = 161625, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "aliya_temple_era", transliteration = "sanhedrin",
+            pos = "noun", semanticGroup = "aliya_temple_era",
             original = "סַנְהֶדְרִין", translation = "Санхедрин (верховный суд)",
             definition = "בֵּית הַמִּשְׁפָּט הָעֶלְיוֹן שֶׁל שִׁבְעִים וְאֶחָד חֲכָמִים.",
             definitionNative = "Высший раввинский суд из семидесяти одного мудреца.",

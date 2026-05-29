@@ -69,7 +69,7 @@ object WordDataHebrewBatch49 {
         // ── Set 1272: Одежда: углублённый (level=3, UNCOMMON+RARE) ──────────────
 
         WordEntity(id = 127201, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "סַאטֶן", transliteration = "saten",
+            original = "סַאטֶן",
             translation = "атлас (ткань) / сатин",
             pos = "noun", semanticGroup = "clothing_fabric_synthetic",
             definition = "בַּד חָלָק וּמַבְרִיק שֶׁנּוֹעַד לְשִׂמְלוֹת חֲגִיגִיּוֹת וּלְכָּרִיּוֹת.",
@@ -78,7 +78,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Платье сшито из סַאטֶן и блестит при свете свечей."
         ),
         WordEntity(id = 127202, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "פַּוְנֶל", transliteration = "fanel",
+            original = "פַּוְנֶל",
             translation = "фланель",
             pos = "noun", semanticGroup = "clothing_fabric_synthetic",
             definition = "בַּד רַךְ וְחָמִים לְפִיגָ׳מוֹת וּלְחֻלְצוֹת חֹרֶף.",
@@ -87,7 +87,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Клетчатая рубашка сделана из плотной פַּוְנֶל."
         , fillInBlankExclusions = listOf(127201L, 127207L, 127209L, 127210L, 127212L, 127213L, 127214L, 127219L, 127220L, 127221L, 127223L)),
         WordEntity(id = 127203, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "מִדֵּי עֲבוֹדָה", transliteration = "midey avoda",
+            original = "מִדֵּי עֲבוֹדָה",
             translation = "рабочая форма / спецодежда",
             pos = "noun", semanticGroup = "clothing_styles",
             definition = "בְּגָדִים מְיוּחָדִים לַעֲבוֹדָה כְּמוֹ סַרְבָּל אוֹ חֻלְצַת מַחְסָנַאי.",
@@ -96,7 +96,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Сотрудникам выдают одинаковые מִדֵּי עֲבוֹדָה на заводе."
         , fillInBlankExclusions = listOf(127204L, 127205L, 127206L, 127217L, 127218L, 127225L)),
         WordEntity(id = 127204, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "תַּלְבֹּשֶׁת לְאוּמִית", transliteration = "talboshet leumit",
+            original = "תַּלְבֹּשֶׁת לְאוּמִית",
             translation = "национальный костюм",
             pos = "noun", semanticGroup = "clothing_styles",
             definition = "לְבוּשׁ מָסוֹרְתִּי שֶׁל עָם — לְמָשָׁל קִילְט סְקוֹטִי אוֹ קִימוֹנוֹ יַפָּנִי.",
@@ -105,7 +105,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Она надела תַּלְבֹּשֶׁת לְאוּמִית на фестиваль культуры."
         , fillInBlankExclusions = listOf(127203L, 127205L, 127206L, 127217L, 127218L, 127225L)),
         WordEntity(id = 127205, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "שִׂמְלַת עֶרֶב", transliteration = "simlat erev",
+            original = "שִׂמְלַת עֶרֶב",
             translation = "вечернее платье",
             pos = "noun", semanticGroup = "clothing_styles",
             definition = "פְּרִיט אֱלֶגַנְטִי וְאָרוּךְ לְנָשִׁים בְּאֵרוּעִים חֲגִיגִיִּים.",
@@ -114,7 +114,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Она выбрала чёрное שִׂמְלַת עֶרֶב на свадьбу."
         , fillInBlankExclusions = listOf(127203L, 127204L, 127206L, 127217L, 127218L, 127225L)),
         WordEntity(id = 127206, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "לְבוּשׁ רִשְׁמִי", transliteration = "levush rishmi",
+            original = "לְבוּשׁ רִשְׁמִי",
             translation = "официальная одежда / деловой стиль",
             pos = "noun", semanticGroup = "clothing_styles",
             definition = "סִגְנוֹן מְכֻבָּד שֶׁל חָלִיפוֹת וְעֲנִיבוֹת לִפְגִישׁוֹת רְצִינִיּוֹת.",
@@ -123,7 +123,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "На совет директоров требуется לְבוּשׁ רִשְׁמִי."
         , fillInBlankExclusions = listOf(127203L, 127204L, 127205L, 127217L, 127218L, 127225L)),
         WordEntity(id = 127207, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "פּוֹלִיאֶסְטֶר", transliteration = "poliester",
+            original = "פּוֹלִיאֶסְטֶר",
             translation = "полиэстер",
             pos = "noun", semanticGroup = "clothing_fabric_synthetic",
             definition = "סִיב מְלָאכוּתִי עָמִיד שֶׁמַּתְיַבֵּשׁ מַהֵר וְלֹא מִתְכַּוֵּץ.",
@@ -132,7 +132,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Рубашка из פּוֹלִיאֶסְטֶר остаётся гладкой даже после стирки."
         , fillInBlankExclusions = listOf(127201L, 127202L, 127209L, 127212L, 127219L, 127221L, 127223L)),
         WordEntity(id = 127208, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "אֲרִיג", transliteration = "arig",
+            original = "אֲרִיג",
             translation = "тканый материал / ткань",
             pos = "noun", semanticGroup = "clothing_fabric_natural",
             definition = "חוֹמֶר רָקוּם מֵחוּטִים שֶׁמְּשַׁמֵּשׁ לְבִיגוּד וְלֹרְהִיטִים.",
@@ -141,7 +141,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Этот אֲרִיג мягкий и бывает разных цветов."
         , fillInBlankExclusions = listOf(127209L, 127210L, 127213L, 127214L, 127220L)),
         WordEntity(id = 127209, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "פִּשְׁתָּן", transliteration = "pishtan",
+            original = "פִּשְׁתָּן",
             translation = "лён (ткань)",
             pos = "noun", semanticGroup = "clothing_fabric_natural",
             definition = "סִיב טִבְעִי קָרִיר וְנוֹשֵׁם — אִידֵיאָלִי לִבְגָדִים בַּקַּיִץ.",
@@ -150,7 +150,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Я люблю рубашки из פִּשְׁתָּן в жару."
         , fillInBlankExclusions = listOf(127201L, 127202L, 127207L, 127208L, 127210L, 127213L, 127214L, 127219L, 127220L, 127221L, 127223L)),
         WordEntity(id = 127210, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "קְטִיפָה", transliteration = "ktifa",
+            original = "קְטִיפָה",
             translation = "бархат",
             pos = "noun", semanticGroup = "clothing_fabric_natural",
             definition = "אָרִיג עָשִׁיר וְשָׂעִיר עִם מַגָּע רַךְ וּמַרְאֶה מְפוֹאָר.",
@@ -159,7 +159,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Старинный жакет сшит из красной קְטִיפָה."
         , fillInBlankExclusions = listOf(127201L, 127208L, 127209L, 127213L, 127214L, 127220L, 127223L)),
         WordEntity(id = 127211, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "שׁוּלַיִם", transliteration = "shulayim",
+            original = "שׁוּלַיִם",
             translation = "подол / кайма",
             pos = "noun", semanticGroup = "clothing_construction",
             definition = "הַקָּצֶה הַתַּחְתּוֹן שֶׁל בֶּגֶד אוֹ חֻלְצָה.",
@@ -168,7 +168,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "שׁוּלַיִם юбки случайно порвались."
         ),
         WordEntity(id = 127212, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "דֶּנִים", transliteration = "denim",
+            original = "דֶּנִים",
             translation = "джинсовая ткань / деним",
             pos = "noun", semanticGroup = "clothing_fabric_synthetic",
             definition = "בַּד כָּחוֹל גַּס שֶׁמִּמֶּנּוּ תּוֹפְרִים מִכְנְסֵי ג׳ִינְס וּמְעִילִים.",
@@ -177,7 +177,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Он купил куртку из דֶּנִים в дешёвом магазине."
         , fillInBlankExclusions = listOf(127201L, 127202L, 127207L, 127210L, 127213L, 127219L, 127220L, 127221L, 127223L)),
         WordEntity(id = 127213, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "קַשְׁמִיר", transliteration = "kashmir",
+            original = "קַשְׁמִיר",
             translation = "кашемир",
             pos = "noun", semanticGroup = "clothing_fabric_natural",
             definition = "צֶמֶר יָקָר מֵעִזִּים הִימָאלָאיוֹת — חַם, רַךְ וְקַל מְאוֹד.",
@@ -186,7 +186,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Бабушка связала мне свитер из קַשְׁמִיר на день рождения."
         ),
         WordEntity(id = 127214, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "תַּחֲרָה", transliteration = "takhara",
+            original = "תַּחֲרָה",
             translation = "кружево",
             pos = "noun", semanticGroup = "clothing_fabric_natural",
             definition = "רֶשֶׁת עֲדִינָה עִם דְּגָמִים פְּתוּחִים, בְּשִׂמְלוֹת כַּלָּה אוֹ בְּלָנְזֶ׳רִי.",
@@ -195,7 +195,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Воротничок сделан из старинного белого תַּחֲרָה."
         , fillInBlankExclusions = listOf(127201L, 127208L, 127209L, 127210L, 127213L, 127220L)),
         WordEntity(id = 127215, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "גִּזְרָה", transliteration = "gizra",
+            original = "גִּזְרָה",
             translation = "крой / силуэт",
             pos = "noun", semanticGroup = "clothing_construction",
             definition = "הַצּוּרָה הַכְּלָלִית שֶׁל בֶּגֶד עַל הַגּוּף — צָמוּד, רָחָב אוֹ יָשָׁר.",
@@ -204,7 +204,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Эта рубашка имеет облегающий крой по фигуре."
         , fillInBlankExclusions = listOf(127211L, 127216L, 127222L, 127224L)),
         WordEntity(id = 127216, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "מְכַפֶּלֶת", transliteration = "mekhapelet",
+            original = "מְכַפֶּלֶת",
             translation = "манжета / отворот",
             pos = "noun", semanticGroup = "clothing_construction",
             definition = "קַפֶּלֶת בַּד בִּקְצֵה הַשָּׁרְווּל אוֹ בִּקְצֵה הַמִּכְנָסַיִם.",
@@ -213,7 +213,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Он расправил מְכַפֶּלֶת перед встречей."
         , fillInBlankExclusions = listOf(127211L, 127215L, 127222L, 127224L)),
         WordEntity(id = 127217, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "גֻּלְפֶּן", transliteration = "gulfen",
+            original = "גֻּלְפֶּן",
             translation = "водолазка / гольф",
             pos = "noun", semanticGroup = "clothing_styles",
             definition = "חֻלְצָה חֲמִימָה עִם צַוָּארוֹן גָּבֹהַּ שֶׁמְּכַסֶּה אֶת הַצַּוָּאר.",
@@ -222,7 +222,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Зимой я ношу чёрный גֻּלְפֶּן под пиджаком."
         , fillInBlankExclusions = listOf(127203L, 127204L, 127205L, 127206L, 127218L, 127225L)),
         WordEntity(id = 127218, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "שִׂפְשָׁף", transliteration = "sifshaf",
+            original = "שִׂפְשָׁף",
             translation = "спортивные штаны / джоггеры",
             pos = "noun", semanticGroup = "clothing_styles",
             definition = "מִכְנָסַיִם רְחָבִים וְנוֹחִים מֵעוּגָה לְאִימוּנִים אוֹ לַבַּיִת.",
@@ -231,7 +231,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Он бегает в парке в сером שִׂפְשָׁף."
         , fillInBlankExclusions = listOf(127203L, 127204L, 127205L, 127206L, 127217L, 127225L)),
         WordEntity(id = 127219, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּלִיס", transliteration = "flis",
+            original = "פְּלִיס",
             translation = "флис",
             pos = "noun", semanticGroup = "clothing_fabric_synthetic",
             definition = "בַּד סִינְטֶטִי קַל, פְּעוֹלִי וְחַם — מַזְכִּיר צֶמֶר אֲבָל זוֹל יוֹתֵר.",
@@ -240,7 +240,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Ребёнок отправился в поход в зелёной куртке פְּלִיס."
         , fillInBlankExclusions = listOf(127201L, 127202L, 127207L, 127212L, 127220L, 127221L, 127223L)),
         WordEntity(id = 127220, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "קַנְבָּס", transliteration = "kanvas",
+            original = "קַנְבָּס",
             translation = "холст / канвас",
             pos = "noun", semanticGroup = "clothing_fabric_natural",
             definition = "בַּד גַּס וְעָבֶה שֶׁמְּשַׁמֵּשׁ לְתִיקִים, נַעֲלֵי סְפּוֹרְט וְצִיּוּרִים.",
@@ -249,7 +249,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Эта сумка сделана из прочного и жёсткого קַנְבָּס."
         , fillInBlankExclusions = listOf(127201L, 127208L, 127209L, 127210L, 127212L, 127213L, 127214L, 127223L)),
         WordEntity(id = 127221, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "שֶׁנְיֵל", transliteration = "shenyel",
+            original = "שֶׁנְיֵל",
             translation = "шениль",
             pos = "noun", semanticGroup = "clothing_fabric_synthetic",
             definition = "אָרִיג שָׂעִיר וּפְלוּמָתִי שֶׁמַּזְכִּיר זְחָלִים בַּמַּגָּע.",
@@ -258,7 +258,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Плед мягкий, потому что он сделан из שֶׁנְיֵל."
         , fillInBlankExclusions = listOf(127201L, 127202L, 127207L, 127210L, 127212L, 127213L, 127214L, 127219L, 127223L)),
         WordEntity(id = 127222, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "מַחַט", transliteration = "makhat",
+            original = "מַחַט",
             translation = "игла / иголка",
             pos = "noun", semanticGroup = "clothing_construction",
             definition = "כְּלִי מַתָּכְתִי דַּקִּיק עִם חוֹר בִּקְצֵה אֶחָד לְהַעֲבָרַת חוּט.",
@@ -267,7 +267,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Бабушка вдела нить в מַחַט и начала шить."
         ),
         WordEntity(id = 127223, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "טֶקְסְטִיל", transliteration = "tekstil",
+            original = "טֶקְסְטִיל",
             translation = "текстиль",
             pos = "noun", semanticGroup = "clothing_fabric_synthetic",
             definition = "מוּשָׂג כּוֹלֵל לְכָל סוּגֵי הַבַּדִּים וְהַסִּיבִים בַּשּׁוּק.",
@@ -276,7 +276,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Магазин продаёт טֶקְסְטִיל для дома и одежды."
         , fillInBlankExclusions = listOf(127201L, 127202L, 127207L, 127208L, 127212L, 127219L, 127221L)),
         WordEntity(id = 127224, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "בַּטְנָה", transliteration = "batna",
+            original = "בַּטְנָה",
             translation = "подкладка",
             pos = "noun", semanticGroup = "clothing_construction",
             definition = "שִׁכְבָה פְּנִימִית בְּתוֹךְ מְעִיל אוֹ ז׳ָקֶט שֶׁמַּחְלִיקָה אֶת הַלְּבִישָׁה.",
@@ -285,7 +285,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "בַּטְנָה пальто порвалась и нуждается в починке."
         , fillInBlankExclusions = listOf(127211L, 127215L, 127216L, 127222L)),
         WordEntity(id = 127225, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "אוֹבֶרְאוֹל", transliteration = "overall",
+            original = "אוֹבֶרְאוֹל",
             translation = "комбинезон / оверол",
             pos = "noun", semanticGroup = "clothing_styles",
             definition = "בֶּגֶד שָׁלֵם שֶׁמְּחַבֵּר חֻלְצָה וּמִכְנָסַיִם לְפְרִיט אֶחָד.",
@@ -297,7 +297,7 @@ object WordDataHebrewBatch49 {
         // ── Set 1273: Одежда: профессиональный (level=4, RARE+EPIC) ─────────────
 
         WordEntity(id = 127301, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "חַיָּטוּת", transliteration = "khayatut",
+            original = "חַיָּטוּת",
             translation = "портновское мастерство / пошив",
             pos = "noun", semanticGroup = "fashion_craft",
             definition = "מְלֶאכֶת יְצִירַת בְּגָדִים מוּתְאָמִים בַּמִּדָּה עַל פִּי הַגּוּף.",
@@ -306,7 +306,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Мой дед учился חַיָּטוּת в Париже в пятидесятых годах."
         , fillInBlankExclusions = listOf(127302L, 127303L, 127306L, 127308L, 127313L, 127320L)),
         WordEntity(id = 127302, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "סֶרֶט מִדָּה", transliteration = "seret mida",
+            original = "סֶרֶט מִדָּה",
             translation = "сантиметровая лента",
             pos = "noun", semanticGroup = "fashion_craft",
             definition = "רְצוּעָה גְּמִישָׁה עִם סִימּוּנֵי מִלִּימֶטְר לִמְדִידַת הַגּוּף.",
@@ -315,7 +315,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Портной достал סֶרֶט מִדָּה и измерил обхват груди."
         , fillInBlankExclusions = listOf(127301L, 127306L, 127308L, 127314L, 127320L)),
         WordEntity(id = 127303, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "עִצּוּב אוֹפְנָה", transliteration = "itsub ofna",
+            original = "עִצּוּב אוֹפְנָה",
             translation = "дизайн одежды / мод дизайн",
             pos = "noun", semanticGroup = "fashion_design",
             definition = "תְּחוּם מִקְצוֹעִי שֶׁל יְצִירַת קוֹלֶקְצְיוֹת בְּגָדִים חֲדָשׁוֹת.",
@@ -324,7 +324,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Она изучает עִצּוּב אוֹפְנָה в школе в Милане."
         , fillInBlankExclusions = listOf(127301L, 127309L, 127310L, 127313L, 127314L, 127315L)),
         WordEntity(id = 127304, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "תַּחְרוּת אוֹפְנָה", transliteration = "takharut ofna",
+            original = "תַּחְרוּת אוֹפְנָה",
             translation = "конкурс моды",
             pos = "noun", semanticGroup = "fashion_marketing",
             definition = "מַעֲמָד תַּחְרוּתִי שֶׁבּוֹ מְעַצְּבִים צְעִירִים מַצִּיגִים אֶת יְצִירוֹתָם.",
@@ -333,7 +333,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Она победила на международном תַּחְרוּת אוֹפְנָה в Париже."
         , fillInBlankExclusions = listOf(127307L, 127316L, 127318L, 127324L)),
         WordEntity(id = 127305, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "בִּגְדֵי יוֹקְרָה", transliteration = "bigdei yokra",
+            original = "בִּגְדֵי יוֹקְרָה",
             translation = "одежда люкс-класса",
             pos = "noun", semanticGroup = "fashion_couture",
             definition = "פְּרִיטֵי לְבוּשׁ יְקָרִים מִבֵּית אוֹפְנָה מְפוּרְסָם וּבִכְמוּיוֹת מוּגְבָּלוֹת.",
@@ -342,7 +342,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Бутик на бульваре продаёт только итальянские בִּגְדֵי יוֹקְרָה."
         , fillInBlankExclusions = listOf(127313L, 127317L, 127323L, 127325L)),
         WordEntity(id = 127306, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "חוּקֵי הַלְבָּשָׁה", transliteration = "khukei halvasha",
+            original = "חוּקֵי הַלְבָּשָׁה",
             translation = "дресс-код / правила одежды",
             pos = "noun", semanticGroup = "fashion_craft",
             definition = "כְּלָלִים רִשְׁמִיִּים לְאֵיךְ לְהִתְלַבֵּשׁ בְּמָקוֹם אוֹ בְּאֵרוּעַ מְסוּיָם.",
@@ -351,7 +351,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Офис опубликовал новые חוּקֵי הַלְבָּשָׁה на лето."
         , fillInBlankExclusions = listOf(127301L, 127302L, 127308L, 127320L)),
         WordEntity(id = 127307, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "פָּרְסוֹמֶת אוֹפְנָה", transliteration = "parshomet ofna",
+            original = "פָּרְסוֹמֶת אוֹפְנָה",
             translation = "реклама в сфере моды",
             pos = "noun", semanticGroup = "fashion_marketing",
             definition = "קַמְפֵּין שִׁוּוּקִי לְמוּצְרֵי לְבוּשׁ בִּכְלֵי הַתִּקְשׁוֹרֶת וּבָרֶשֶׁת.",
@@ -360,7 +360,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Модель снялась в פָּרְסוֹמֶת אוֹפְנָה для Dior."
         , fillInBlankExclusions = listOf(127304L, 127316L, 127318L, 127324L)),
         WordEntity(id = 127308, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "מָסוֹרֶת תַּפִּירָה", transliteration = "masoret tfira",
+            original = "מָסוֹרֶת תַּפִּירָה",
             translation = "традиция пошива",
             pos = "noun", semanticGroup = "fashion_craft",
             definition = "שַׁרְשֶׁרֶת יְדָעִים וּטְכְנִיקוֹת הָעוֹבֶרֶת מִדּוֹר לְדוֹר אֵצֶל חַיָּטִים.",
@@ -369,7 +369,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Семья хранит столетнюю מָסוֹרֶת תַּפִּירָה."
         , fillInBlankExclusions = listOf(127301L, 127302L, 127306L, 127320L)),
         WordEntity(id = 127309, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "גַּוָן", transliteration = "gavan",
+            original = "גַּוָן",
             translation = "оттенок / тон цвета",
             pos = "noun", semanticGroup = "fashion_design",
             definition = "וַרִיאַצְיָה עֲדִינָה שֶׁל צֶבַע, בְּהִירוּת אוֹ קְרִירוּת מוּסָפוֹת לַבָּסִיס.",
@@ -378,7 +378,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Дизайнер выбрала для платья голубоватый גַּוָן."
         , fillInBlankExclusions = listOf(127303L, 127310L, 127314L, 127315L)),
         WordEntity(id = 127310, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "פַּלֶטָה", transliteration = "paleta",
+            original = "פַּלֶטָה",
             translation = "цветовая палитра",
             pos = "noun", semanticGroup = "fashion_design",
             definition = "אוֹסֶף גּוֹנִים מְתוּכְנָן שֶׁמְּעַצֵּב בּוֹחֵר כְּבָסִיס לַקּוֹלֶקְצְיָה.",
@@ -387,7 +387,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Пастельная פַּלֶטָה характерна для весенней коллекции."
         , fillInBlankExclusions = listOf(127303L, 127309L, 127314L, 127315L)),
         WordEntity(id = 127311, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "יְצוּא אוֹפְנָה", transliteration = "yetsu ofna",
+            original = "יְצוּא אוֹפְנָה",
             translation = "экспорт продукции моды",
             pos = "noun", semanticGroup = "fashion_industry",
             definition = "מְכִירַת בְּגָדִים וְאֶבְזְרִים לְלָקוֹחוֹת בִּמְדִינוֹת אֲחֵרוֹת.",
@@ -396,7 +396,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Итальянский יְצוּא אוֹפְנָה вырос на десять процентов в этом году."
         , fillInBlankExclusions = listOf(127312L, 127319L, 127321L, 127322L)),
         WordEntity(id = 127312, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "יְבוּא אוֹפְנָה", transliteration = "yevu ofna",
+            original = "יְבוּא אוֹפְנָה",
             translation = "импорт продукции моды",
             pos = "noun", semanticGroup = "fashion_industry",
             definition = "הַכְנָסַת בְּגָדִים מִחוּ״ל לַשּׁוּק הַמְּקוֹמִי דֶּרֶךְ מְפִיצִים.",
@@ -405,7 +405,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "יְבוּא אוֹפְנָה из Турции снижает цены на местном рынке."
         , fillInBlankExclusions = listOf(127311L, 127319L, 127321L, 127322L)),
         WordEntity(id = 127313, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "כּוּטוּר", transliteration = "kutur",
+            original = "כּוּטוּר",
             translation = "кутюр / высокая мода",
             pos = "noun", semanticGroup = "fashion_couture",
             definition = "אוֹפְנָה עִלִּית שֶׁל פְּרִיטִים תְּפוּרִים בְּיָד לְפִי מִדּוֹת הַלָּקוֹחַ.",
@@ -414,7 +414,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Это платье — настоящий כּוּטוּר от дома Chanel."
         , fillInBlankExclusions = listOf(127305L, 127317L, 127323L, 127325L)),
         WordEntity(id = 127314, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "גֶּזֶר בֶּגֶד", transliteration = "gezer beged",
+            original = "גֶּזֶר בֶּגֶד",
             translation = "выкройка / лекало",
             pos = "noun", semanticGroup = "fashion_design",
             definition = "תַּבְנִית נְיָר אוֹ קַרְטוֹן שֶׁלְּפִיהָ גּוֹזְרִים אֶת הַבַּד.",
@@ -423,7 +423,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Дизайнер начертила новый גֶּזֶר בֶּגֶד для пальто."
         , fillInBlankExclusions = listOf(127303L, 127309L, 127310L, 127315L)),
         WordEntity(id = 127315, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "בּוּבַת תְּפִירָה", transliteration = "bubat tfira",
+            original = "בּוּבַת תְּפִירָה",
             translation = "манекен для шитья",
             pos = "noun", semanticGroup = "fashion_design",
             definition = "דֶּגֶם בְּצוּרַת גּוּף אָדָם שֶׁעָלָיו מַתְאִימִים בֶּגֶד תּוֹךְ כְּדֵי עֲבוֹדָה.",
@@ -432,7 +432,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "В студии стоит בּוּבַת תְּפִירָה со свадебным платьем."
         , fillInBlankExclusions = listOf(127303L, 127309L, 127310L, 127314L)),
         WordEntity(id = 127316, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "שְׁבוּעַ אוֹפְנָה", transliteration = "shvua ofna",
+            original = "שְׁבוּעַ אוֹפְנָה",
             translation = "неделя моды",
             pos = "noun", semanticGroup = "fashion_marketing",
             definition = "שִׁבְעָה יָמִים שֶׁבָּהֶם בָּתֵּי אוֹפְנָה מַצִּיגִים אֶת הַקּוֹלֶקְצְיוֹת הַחֲדָשׁוֹת.",
@@ -441,7 +441,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "שְׁבוּעַ אוֹפְנָה в Милане открывается в феврале."
         , fillInBlankExclusions = listOf(127304L, 127307L, 127318L, 127324L)),
         WordEntity(id = 127317, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "אוֹפְנַת-עַל", transliteration = "ofnat-al",
+            original = "אוֹפְנַת-עַל",
             translation = "супермодель",
             pos = "noun", semanticGroup = "fashion_couture",
             definition = "דּוּגְמָנִית מְפוּרְסֶמֶת בַּעֲלַת חוֹזִים יְקָרִים עִם מוֹתָגוֹת עִלִּית.",
@@ -450,7 +450,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Израильская אוֹפְנַת-עַל подписала контракт с Gucci."
         , fillInBlankExclusions = listOf(127305L, 127313L, 127323L, 127325L)),
         WordEntity(id = 127318, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "מִיתוּג אוֹפְנָה", transliteration = "mitug ofna",
+            original = "מִיתוּג אוֹפְנָה",
             translation = "брендинг в индустрии моды",
             pos = "noun", semanticGroup = "fashion_marketing",
             definition = "בְּנִיַּת זֶהוּת יִחוּדִית לְמוֹתָג בְּגָדִים בְּעֵינֵי הַלָּקוֹחוֹת.",
@@ -459,7 +459,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Удачный מִיתוּג אוֹפְנָה заставляет клиентов платить больше."
         , fillInBlankExclusions = listOf(127304L, 127307L, 127316L, 127324L)),
         WordEntity(id = 127319, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "תַּעֲשִׂיַּת הַטֶּקְסְטִיל", transliteration = "ta'asiyat hatekstil",
+            original = "תַּעֲשִׂיַּת הַטֶּקְסְטִיל",
             translation = "текстильная промышленность",
             pos = "noun", semanticGroup = "fashion_industry",
             definition = "עָנָף הַמְיַצֵּר בַּדִּים וְסִיבִים בְּמִפְעָלִים גְּדוֹלִים.",
@@ -468,7 +468,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "תַּעֲשִׂיַּת הַטֶּקְסְטִיל Бангладеш даёт работу миллионам."
         , fillInBlankExclusions = listOf(127311L, 127312L, 127321L, 127322L)),
         WordEntity(id = 127320, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "אֱתִיקָה בָּאוֹפְנָה", transliteration = "etika baofna",
+            original = "אֱתִיקָה בָּאוֹפְנָה",
             translation = "этика в индустрии моды",
             pos = "noun", semanticGroup = "fashion_craft",
             definition = "עֲקָרוֹנוֹת מוּסָר בְּנוֹגֵעַ לִתְנָאֵי עֲבוֹדָה, בַּעֲלֵי חַיִּים וּסְבִיבָה.",
@@ -477,7 +477,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Студенты обсудили אֱתִיקָה בָּאוֹפְנָה против денежной выгоды."
         , fillInBlankExclusions = listOf(127301L, 127302L, 127306L, 127308L)),
         WordEntity(id = 127321, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "עֲבוֹדַת כְּפִיָּה", transliteration = "avodat kfiya",
+            original = "עֲבוֹדַת כְּפִיָּה",
             translation = "принудительный труд / потогонные мастерские",
             pos = "noun", semanticGroup = "fashion_industry",
             definition = "הַעֲסָקָה בִּתְנָאִים קָשִׁים בְּשָׂכָר נָמוּךְ וְלֹא מֵרָצוֹן חוֹפְשִׁי.",
@@ -486,7 +486,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Расследование вскрыло עֲבוֹדַת כְּפִיָּה на фабриках Азии."
         , fillInBlankExclusions = listOf(127311L, 127312L, 127319L, 127322L)),
         WordEntity(id = 127322, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "שַׁרְשֶׁרֶת קַמְעוֹנַאִית", transliteration = "sharsheret kame'onait",
+            original = "שַׁרְשֶׁרֶת קַמְעוֹנַאִית",
             translation = "розничная сеть магазинов",
             pos = "noun", semanticGroup = "fashion_industry",
             definition = "קְבוּצַת חֲנוּיוֹת תַּחַת מוֹתָג אֶחָד הַמּוֹכֶרֶת יָשִׁיר לַצַּרְכָן הַסּוֹפִי.",
@@ -495,7 +495,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Эта שַׁרְשֶׁרֶת קַמְעוֹנַאִית открыла новый филиал в Тель-Авиве."
         ),
         WordEntity(id = 127323, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "אוֹפְנָה אַטִיּוֹת", transliteration = "ofna atiyot",
+            original = "אוֹפְנָה אַטִיּוֹת",
             translation = "медленная мода (slow fashion)",
             pos = "noun", semanticGroup = "fashion_couture",
             definition = "גִּישָׁה הַמַּעֲדִיפָה פְּרִיטִים אֵיכוּתִיִּים וַאֲרוּכֵי טְוָוח עַל צְרִיכָה מְהִירָה.",
@@ -504,7 +504,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Она верит в אוֹפְנָה אַטִיּוֹת и покупает мало, но качественно."
         , fillInBlankExclusions = listOf(127305L, 127313L, 127317L, 127325L)),
         WordEntity(id = 127324, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "תַּדְמִית מִתְאֶמֶת", transliteration = "tadmit mit'emet",
+            original = "תַּדְמִית מִתְאֶמֶת",
             translation = "согласованный имидж бренда",
             pos = "noun", semanticGroup = "fashion_marketing",
             definition = "מַרְאֶה אֶחָד וְקוֹהֶרֶנְטִי שֶׁל מוֹתָג בְּכָל עֲרוּצֵי הַתִּקְשׁוֹרֶת שֶׁלּוֹ.",
@@ -513,7 +513,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "תַּדְמִית מִתְאֶמֶת важнее для бренда, чем разовая кампания."
         , fillInBlankExclusions = listOf(127304L, 127307L, 127316L, 127318L)),
         WordEntity(id = 127325, setId = 1273, languagePair = "he-ru", rarity = "EPIC",
-            original = "מַעֲבָד אוֹפְנָה", transliteration = "ma'avad ofna",
+            original = "מַעֲבָד אוֹפְנָה",
             translation = "ателье / мастерская моды",
             pos = "noun", semanticGroup = "fashion_couture",
             definition = "סְטוּדְיוֹ קָטָן שֶׁבּוֹ מְעַצְּבִים וְחַיָּטִים יוֹצְרִים פְּרִיטִים אִישִׁיִּים.",
@@ -525,7 +525,7 @@ object WordDataHebrewBatch49 {
         // ── Set 1274: Одежда: носитель языка (level=5, EPIC+LEGENDARY) ──────────
 
         WordEntity(id = 127401, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "שִׁלְטוֹן הַגּוּף", transliteration = "shilton haguf", translation = "управление телом / биополитика (Фуко)",
+            original = "שִׁלְטוֹן הַגּוּף", translation = "управление телом / биополитика (Фуко)",
             pos = "phrase", semanticGroup = "fashion_sociology",
             definition = "רַעְיוֹן פוּקוֹ: הַחֶבְרָה מְכַוֶּנֶת אֶת הָאָדָם דֶּרֶךְ מַרְאֵהוּ וְלִבְבוּשׁוֹ.",
             definitionNative = "Идея Фуко: общество направляет человека через его вид и одежду.",
@@ -533,7 +533,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Лекция профессора была про שִׁלְטוֹן הַגּוּף через моду."
         , fillInBlankExclusions = listOf(127417L, 127418L, 127419L, 127421L, 127422L, 127424L, 127425L)),
         WordEntity(id = 127402, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מִינִימָלִיזְם בְּלְבוּשׁ", transliteration = "minimalizm bilvush", translation = "минимализм в одежде",
+            original = "מִינִימָלִיזְם בְּלְבוּשׁ", translation = "минимализм в одежде",
             pos = "phrase", semanticGroup = "fashion_styles",
             definition = "סִגְנוֹן שֶׁל פְּשׁוּטוּת וּקְוָוִים נְקִיִּים — גְּוָנִים רַכִּים וְלֹא יוֹתֵר מִכָּרוּחַ.",
             definitionNative = "Стиль простоты и чистых линий — мягкие тона, ничего лишнего.",
@@ -541,7 +541,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Её коллекция построена на מִינִימָלִיזְם בְּלְבוּשׁ и одном цвете."
         ),
         WordEntity(id = 127403, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מַקְסִימָלִיזְם בְּלְבוּשׁ", transliteration = "maksimalizm bilvush", translation = "максимализм в одежде",
+            original = "מַקְסִימָלִיזְם בְּלְבוּשׁ", translation = "максимализм в одежде",
             pos = "phrase", semanticGroup = "fashion_styles",
             definition = "גִּישָּׁה שֶׁל רֹב — הַרְבֵּה צְבָעִים, דְּפוּסִים וּפְרָטִים עַל גּוּף אֶחָד.",
             definitionNative = "Подход избыточности — много цвета, узоров и деталей на одном теле.",
@@ -549,7 +549,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Показ сделал ставку на מַקְסִימָלִיזְם בְּלְבוּשׁ и яркость."
         ),
         WordEntity(id = 127404, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "קוֹד לְבוּשׁ", transliteration = "kod levush", translation = "культурный код одежды",
+            original = "קוֹד לְבוּשׁ", translation = "культурный код одежды",
             pos = "phrase", semanticGroup = "fashion_movements",
             definition = "מַעֲרֶכֶת הַכְּלָלִים שֶׁל קְהִילָּה לָמָה הוֹלֵם לִלְבּוֹשׁ בִּמְקוֹם מְסוּיָם.",
             definitionNative = "Набор правил сообщества о том, что уместно носить в данном месте.",
@@ -557,7 +557,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "В банке действует строгий קוֹד לְבוּשׁ — только костюм и галстук."
         ),
         WordEntity(id = 127405, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פּוֹסְט-אוֹפְנָה", transliteration = "post-ofna", translation = "пост-мода",
+            original = "פּוֹסְט-אוֹפְנָה", translation = "пост-мода",
             pos = "noun", semanticGroup = "fashion_styles",
             definition = "תְּקוּפָה שֶׁאַחֲרֵי הַשִּׁלְטוֹן שֶׁל בָּתֵּי אוֹפְנָה גְּדוֹלִים עַל הַטַּעַם.",
             definitionNative = "Эпоха после того, как крупные дома моды перестали диктовать вкус.",
@@ -565,7 +565,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Критик утверждал, что мы живём в эпоху פּוֹסְט-אוֹפְנָה."
         , fillInBlankExclusions = listOf(127402L, 127403L, 127406L, 127420L)),
         WordEntity(id = 127406, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אַנְטִי-אוֹפְנָה", transliteration = "anti-ofna", translation = "анти-мода",
+            original = "אַנְטִי-אוֹפְנָה", translation = "анти-мода",
             pos = "noun", semanticGroup = "fashion_styles",
             definition = "גִּישָּׁה מְכוּוֶּנֶת נֶגֶד הַטְּרֶנְדִים הַחַיִּים — בְּחִירָה מוּדַעַת בַּפָּשׁוּט וּבַיָּשָׁן.",
             definitionNative = "Установка против современных трендов — осознанный выбор простого и старого.",
@@ -573,7 +573,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Художница заявила אַנְטִי-אוֹפְנָה как часть своей идентичности."
         , fillInBlankExclusions = listOf(127402L, 127403L, 127405L, 127409L)),
         WordEntity(id = 127407, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תַּעֲמוּלַת אוֹפְנָה", transliteration = "ta'amulat ofna", translation = "пропаганда моды",
+            original = "תַּעֲמוּלַת אוֹפְנָה", translation = "пропаганда моды",
             pos = "phrase", semanticGroup = "fashion_movements",
             definition = "שִׁיוּוק שֶׁל טַעַם מְסוּיָם כְּאִם הוּא הַיָּחִיד הַנָּכוֹן דֶּרֶךְ מְדִיָּה וּפִרְסוֹמוֹת.",
             definitionNative = "Навязывание одного вкуса как единственно верного через медиа и рекламу.",
@@ -581,7 +581,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Резкая статья осудила תַּעֲמוּלַת אוֹפְנָה в журналах."
         , fillInBlankExclusions = listOf(127404L, 127408L, 127414L, 127420L)),
         WordEntity(id = 127408, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "חֲרָם עַל אוֹפְנָה", transliteration = "kharem al ofna", translation = "бойкот моды",
+            original = "חֲרָם עַל אוֹפְנָה", translation = "бойкот моды",
             pos = "phrase", semanticGroup = "fashion_movements",
             definition = "סֵרוּב צִיבּוּרִי לִקְנוֹת בְּגָדִים שֶׁל מוֹתָג מִטַּעַם אֶתִי אוֹ פּוֹלִיטִי.",
             definitionNative = "Публичный отказ покупать одежду бренда по этическим или политическим причинам.",
@@ -589,7 +589,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Молодёжь затеяла חֲרָם עַל אוֹפְנָה загрязняющей и дешёвой."
         , fillInBlankExclusions = listOf(127404L, 127407L, 127414L, 127420L)),
         WordEntity(id = 127409, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "לְבוּשׁ מִינִי", transliteration = "levush mini", translation = "субкультурная одежда",
+            original = "לְבוּשׁ מִינִי", translation = "субкультурная одежда",
             pos = "phrase", semanticGroup = "fashion_styles",
             definition = "מַרְאֶה שֶׁל קְבוּצָה קְטַנָּה מֻבְחֶנֶת — פַּנְקִים, גוֹתִים אוֹ הִיפְּסְטֶרִים.",
             definitionNative = "Внешний вид небольшой выделяющейся группы — панков, готов или хипстеров.",
@@ -597,7 +597,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Документалка исследовала לְבוּשׁ מִינִי восьмидесятых."
         , fillInBlankExclusions = listOf(127402L, 127403L, 127405L, 127406L)),
         WordEntity(id = 127410, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "סֶמְיוֹטִיקָה שֶׁל לְבוּשׁ", transliteration = "semyotika shel levush", translation = "семиотика одежды",
+            original = "סֶמְיוֹטִיקָה שֶׁל לְבוּשׁ", translation = "семиотика одежды",
             pos = "phrase", semanticGroup = "fashion_theory",
             definition = "מַבָּט מַדָּעִי עַל בְּגָדִים כְּמַעֲרֶכֶת סִימָנִים שֶׁמּוֹסְרִים מֵידַע חֶבְרָתִי.",
             definitionNative = "Научный взгляд на одежду как систему знаков, передающих социальный смысл.",
@@ -605,7 +605,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Лекция открылась понятием סֶמְיוֹטִיקָה שֶׁל לְבוּשׁ у Барта."
         ),
         WordEntity(id = 127411, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תֵּיאוֹרְיַת הָאוֹפְנָה", transliteration = "teoriyat haofna", translation = "теория моды",
+            original = "תֵּיאוֹרְיַת הָאוֹפְנָה", translation = "теория моды",
             pos = "phrase", semanticGroup = "fashion_theory",
             definition = "תְּחוּם אָקָדֶמִי הַבּוֹחֵן לָמָה טַעֲמֵי הַלִּבוּשׁ מִשְׁתַּנִּים מִתְּקוּפָה לִתְקוּפָה.",
             definitionNative = "Академическая область, изучающая смену вкусов в одежде от эпохи к эпохе.",
@@ -613,7 +613,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Она писала докторат по תֵּיאוֹרְיַת הָאוֹפְנָה в университете."
         , fillInBlankExclusions = listOf(127410L, 127412L, 127413L, 127415L, 127416L, 127423L)),
         WordEntity(id = 127412, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פֵּרְשָׁנוּת הַמּוֹדָה", transliteration = "fershanut hamoda", translation = "критика и интерпретация моды",
+            original = "פֵּרְשָׁנוּת הַמּוֹדָה", translation = "критика и интерпретация моды",
             pos = "phrase", semanticGroup = "fashion_theory",
             definition = "קְרִיאָה פְּתוּחָה שֶׁל קוֹלֶקְצְיוֹת וְחֲפָצִים — מַה הֵם אוֹמְרִים עַל הַחֶבְרָה.",
             definitionNative = "Открытое прочтение коллекций и вещей — что они говорят об обществе.",
@@ -621,7 +621,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Рубрика в газете посвящена פֵּרְשָׁנוּת הַמּוֹדָה современности."
         , fillInBlankExclusions = listOf(127410L, 127411L, 127413L, 127415L, 127416L, 127423L)),
         WordEntity(id = 127413, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אוֹפְנָה כְּשִׁיח", transliteration = "ofna kesiakh", translation = "мода как дискурс",
+            original = "אוֹפְנָה כְּשִׁיח", translation = "мода как дискурс",
             pos = "phrase", semanticGroup = "fashion_theory",
             definition = "גִּישָּׁה הָרוֹאָה בַּבְּגָדִים שְׂפָה — דֶּרֶךְ לְדַבֵּר עַל כּוֹחַ וּמַעֲמָד.",
             definitionNative = "Взгляд на одежду как на язык — способ говорить о власти и статусе.",
@@ -629,7 +629,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Статья рассмотрела אוֹפְנָה כְּשִׁיח между поколениями."
         , fillInBlankExclusions = listOf(127410L, 127411L, 127412L, 127415L, 127416L, 127423L, 127425L)),
         WordEntity(id = 127414, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "זְהוּת וּלְבוּשׁ", transliteration = "zehut ulevush", translation = "идентичность и одежда",
+            original = "זְהוּת וּלְבוּשׁ", translation = "идентичность и одежда",
             pos = "phrase", semanticGroup = "fashion_movements",
             definition = "הַקֶּשֶׁר בֵּין מַה שֶׁאָדָם לוֹבֵשׁ לְבֵין מַה שֶׁהוּא אוֹמֵר עַל עַצְמוֹ.",
             definitionNative = "Связь между тем, что человек носит, и тем, что он говорит о себе.",
@@ -637,7 +637,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Симпозиум обсуждал זְהוּת וּלְבוּשׁ у мигрантов."
         ),
         WordEntity(id = 127415, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "לְבוּשׁ כְּסַמָּל", transliteration = "levush kesaval", translation = "одежда как символ",
+            original = "לְבוּשׁ כְּסַמָּל", translation = "одежда как символ",
             pos = "phrase", semanticGroup = "fashion_theory",
             definition = "הָרַעְיוֹן שֶׁפְּרִיט עַל הַגּוּף מוֹסֵר מֶסֶר — דַּרְגָּה, אֱמוּנָה אוֹ מִרְיָה.",
             definitionNative = "Идея, что вещь на теле несёт послание — звание, веру или протест.",
@@ -645,7 +645,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Статья разбирает לְבוּשׁ כְּסַמָּל в древних традициях."
         , fillInBlankExclusions = listOf(127410L, 127411L, 127412L, 127413L, 127416L, 127423L, 127425L)),
         WordEntity(id = 127416, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "דְּקוֹנְסְטְרוּקְצְיָה שֶׁל הָאוֹפְנָה", transliteration = "dekonstruktsiya shel haofna", translation = "деконструкция моды",
+            original = "דְּקוֹנְסְטְרוּקְצְיָה שֶׁל הָאוֹפְנָה", translation = "деконструкция моды",
             pos = "phrase", semanticGroup = "fashion_theory",
             definition = "שִׁיטָה הַמְפָרֶקֶת בְּגָדִים וּמַרְאָה אֶת הַתֶּפֶר, הַבִּטְנָה וְהָעֲבוֹדָה שֶׁבְּתוֹכָם.",
             definitionNative = "Приём разборки одежды, открывающий шов, подкладку и работу внутри.",
@@ -653,7 +653,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Дизайнер привнёс דְּקוֹנְסְטְרוּקְצְיָה שֶׁל הָאוֹפְנָה в коллекцию."
         , fillInBlankExclusions = listOf(127410L, 127411L, 127412L, 127413L, 127415L, 127423L)),
         WordEntity(id = 127417, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אוֹפְנָה וּמִגְדָּר", transliteration = "ofna umigdar", translation = "мода и гендер",
+            original = "אוֹפְנָה וּמִגְדָּר", translation = "мода и гендер",
             pos = "phrase", semanticGroup = "fashion_sociology",
             definition = "כֵּיצַד הַטְּרֶנְדִים הַכְלָלִיִּים שֶׁל הַתְּקוּפָה קוֹבְעִים מָה נֶחְשָׁב נָשִׁי וּגְבָרִי.",
             definitionNative = "Как общие тренды эпохи задают рамки женственного и мужского.",
@@ -661,7 +661,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Последняя панель была про אוֹפְנָה וּמִגְדָּר в Париже."
         , fillInBlankExclusions = listOf(127401L, 127414L, 127418L, 127419L, 127421L, 127422L, 127424L, 127425L)),
         WordEntity(id = 127418, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מִגְדָּר וּלְבוּשׁ", transliteration = "migdar ulevush", translation = "гендер и одежда",
+            original = "מִגְדָּר וּלְבוּשׁ", translation = "гендер и одежда",
             pos = "phrase", semanticGroup = "fashion_sociology",
             definition = "הָאוֹפֶן בּוֹ בְּחִירַת הַפְּרָטִים עַל הַגּוּף מְשַׁקֶּפֶת זֶהוּת מִינִית וְתַפְקִיד.",
             definitionNative = "То, как выбор предметов на теле отражает половую принадлежность и роль.",
@@ -669,7 +669,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Семинар рассмотрел מִגְדָּר וּלְבוּשׁ в еврейских общинах."
         ),
         WordEntity(id = 127419, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הוֹן סִמְלִי בְּלְבוּשׁ", transliteration = "hon simli bilvush", translation = "символический капитал в одежде (Бурдьё)",
+            original = "הוֹן סִמְלִי בְּלְבוּשׁ", translation = "символический капитал в одежде (Бурдьё)",
             pos = "phrase", semanticGroup = "fashion_sociology",
             definition = "מֻשָּׂג שֶׁל בּוּרְדְּיֶה: מַה שֶׁאָדָם לוֹבֵשׁ מְחַזֵּק כָּבוֹד וְהַכָּרָה בְּעֵינֵי הַחֶבְרָה.",
             definitionNative = "Понятие Бурдьё: то, что носишь, укрепляет почёт и признание в обществе.",
@@ -677,7 +677,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Лекция показала, что такое הוֹן סִמְלִי בְּלְבוּשׁ на одном случае."
         ),
         WordEntity(id = 127420, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "צְרִיכַת-יֶתֶר בְּאוֹפְנָה", transliteration = "tsrikat-yeter beofna", translation = "сверхпотребление в индустрии моды",
+            original = "צְרִיכַת-יֶתֶר בְּאוֹפְנָה", translation = "сверхпотребление в индустрии моды",
             pos = "phrase", semanticGroup = "fashion_movements",
             definition = "קְנִיָּה מֻפְרֶזֶת שֶׁל בְּגָדִים זוֹלִים שֶׁנִּזְרָקִים אַחֲרֵי לְבִישָׁה אֶחָת.",
             definitionNative = "Чрезмерная покупка дешёвых вещей, которые выбрасывают после одного раза.",
@@ -685,7 +685,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Доклад указал на צְרִיכַת-יֶתֶר בְּאוֹפְנָה среди молодёжи."
         , fillInBlankExclusions = listOf(127404L, 127407L, 127408L, 127414L, 127419L)),
         WordEntity(id = 127421, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "שִׁחְרוּר וּלְבוּשׁ", transliteration = "shikhrur ulevush", translation = "освобождение и одежда",
+            original = "שִׁחְרוּר וּלְבוּשׁ", translation = "освобождение и одежда",
             pos = "phrase", semanticGroup = "fashion_sociology",
             definition = "הַקֶּשֶׁר בֵּין וִתּוּר עַל מַחְסוֹמִים יְשָׁנִים לְבֵין חוֹפֶשׁ בִּבְחִירַת מַרְאֶה.",
             definitionNative = "Связь между отказом от старых запретов и свободой в выборе облика.",
@@ -693,7 +693,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Книга изучает שִׁחְרוּר וּלְבוּשׁ у феминисток шестидесятых."
         ),
         WordEntity(id = 127422, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מָעְמָד חֶבְרָתִי וּלְבוּשׁ", transliteration = "ma'amad khevrati velevush", translation = "социальный класс и одежда",
+            original = "מָעְמָד חֶבְרָתִי וּלְבוּשׁ", translation = "социальный класс и одежда",
             pos = "phrase", semanticGroup = "fashion_sociology",
             definition = "הַקֶּשֶׁר בֵּין מַעֲמַד אָדָם בַּכַּלְכָּלָה לְבֵין מַה שֶׁמֻּרְשֶׁה לוֹ לִלְבּוֹשׁ.",
             definitionNative = "Связь между положением человека в экономике и тем, что ему дозволено носить.",
@@ -701,7 +701,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Исследование изучало מָעְמָד חֶבְרָתִי וּלְבוּשׁ в Османской империи."
         ),
         WordEntity(id = 127423, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אֱסְתֶּטִיקָה שֶׁל לְבוּשׁ", transliteration = "estetika shel levush", translation = "эстетика одежды",
+            original = "אֱסְתֶּטִיקָה שֶׁל לְבוּשׁ", translation = "эстетика одежды",
             pos = "phrase", semanticGroup = "fashion_theory",
             definition = "מַה הַתּוֹרָה הַפִילוֹסוֹפִית אוֹמֶרֶת עַל יֹפִי, טַעַם וְהַרְמוֹנְיָה בַּבְּגָדִים.",
             definitionNative = "Что философия говорит о красоте, вкусе и гармонии в одежде.",
@@ -709,7 +709,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Лекция коснулась אֱסְתֶּטִיקָה שֶׁל לְבוּשׁ у Канта."
         ),
         WordEntity(id = 127424, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פּוֹלִיטִיקָה שֶׁל הַגּוּף", transliteration = "politika shel haguf", translation = "политика тела",
+            original = "פּוֹלִיטִיקָה שֶׁל הַגּוּף", translation = "политика тела",
             pos = "phrase", semanticGroup = "fashion_sociology",
             definition = "מַאֲבָק צִיבּוּרִי עַל זְכוּת לָדַעַת מָה לִלְבּוֹשׁ וְאֵיךְ לְהַרְאוֹת.",
             definitionNative = "Общественная борьба за право решать, что носить и как выглядеть.",
@@ -717,7 +717,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Новая книга анализирует פּוֹלִיטִיקָה שֶׁל הַגּוּף в Иране."
         , fillInBlankExclusions = listOf(127401L, 127410L, 127416L, 127417L, 127418L, 127419L, 127421L, 127422L, 127425L)),
         WordEntity(id = 127425, setId = 1274, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אוֹפְנָה כְּמַנּוּף חֶבְרָתִי", transliteration = "ofna kemanuf khevrati", translation = "мода как социальный рычаг",
+            original = "אוֹפְנָה כְּמַנּוּף חֶבְרָתִי", translation = "мода как социальный рычаг",
             pos = "phrase", semanticGroup = "fashion_sociology",
             definition = "שִׁיטָה שֶׁבָּהּ בְּגָדִים נַעֲשִׂים כְּלִי לְשִׁנּוּי, לִתְנוּעוֹת מְחָאָה וּלְהַעֲלָאַת מוּדָעוּת.",
             definitionNative = "Способ, которым одежда становится средством перемен, протеста и огласки.",
@@ -728,7 +728,7 @@ object WordDataHebrewBatch49 {
         // ── Set 1275: Политика: углублённый (level=3, UNCOMMON+RARE) ────────────
 
         WordEntity(id = 127501, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "דֵּמַגוֹגְיָה", transliteration = "demagogya", translation = "демагогия",
+            original = "דֵּמַגוֹגְיָה", translation = "демагогия",
             pos = "noun", semanticGroup = "politics_concepts",
             definition = "דִּבּוּר הַמְּעוֹרֵר רְגָשׁוֹת בְּעַם בְּלִי הַסְבֵּר אֲמִתִּי שֶׁל הַסּוּגְיָה.",
             definitionNative = "Речь, играющая на чувствах толпы без честного разбора темы.",
@@ -736,7 +736,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Кандидата уличили в דֵּמַגוֹגְיָה, когда он обещал лёгкие решения.", fillInBlankExclusions = listOf(127502L, 127504L, 127505L, 127521L, 127522L)),
 
         WordEntity(id = 127502, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּרוֹפָגַנְדָה", transliteration = "propaganda", translation = "пропаганда",
+            original = "פְּרוֹפָגַנְדָה", translation = "пропаганда",
             pos = "noun", semanticGroup = "politics_propaganda",
             definition = "הַפָצַת מֶסֶר חַד-צְדָדִי כְּדֵי לְעַצֵּב דֵּעָה צִיבּוּרִית.",
             definitionNative = "Распространение односторонней мысли ради нужного настроения толпы.",
@@ -744,7 +744,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Этот фильм — открытая פְּרוֹפָגַנְדָה во время войны.", fillInBlankExclusions = listOf(127501L, 127520L, 127521L, 127522L)),
 
         WordEntity(id = 127503, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "דִּיקְטָטוּרָה", transliteration = "diktatura", translation = "диктатура",
+            original = "דִּיקְטָטוּרָה", translation = "диктатура",
             pos = "noun", semanticGroup = "politics_government_forms",
             definition = "מִשְׁטָר שֶׁבּוֹ אָדָם אֶחָד מַחְזִיק בְּכָל הַכּוֹחַ בְּלִי בִּקּוֹרֶת.",
             definitionNative = "Строй, где один человек держит всю власть и не отчитывается.",
@@ -752,154 +752,154 @@ object WordDataHebrewBatch49 {
             exampleNative = "Страна жила под военной דִּיקְטָטוּרָה около тридцати лет.", fillInBlankExclusions = listOf(127506L, 127507L, 127508L, 127509L)),
 
         WordEntity(id = 127504, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "רִיבוֹנוּת", transliteration = "rivonoot", translation = "суверенитет",
+            original = "רִיבוֹנוּת", translation = "суверенитет",
             pos = "noun", semanticGroup = "politics_concepts",
             definition = "זְכוּת מְדִינָה לְהַחְלִיט עַל עִנְיָנֶיהָ בְּלִי הִתְעָרְבוּת מִחוּץ.",
             definitionNative = "Право страны решать свои дела без вмешательства извне.",
             example = "הַחוֹזֶה הַחָדָשׁ פָּגַע בְּרִיבוֹנוּת שֶׁל הַמְּדִינָה הַקְּטַנָּה.",
             exampleNative = "Новый договор задел רִיבוֹנוּת маленькой страны.", fillInBlankExclusions = listOf(127501L, 127505L)),
         WordEntity(id = 127505, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "לֶגִיטִימַצְיָה", transliteration = "legitimatsiya", translation = "легитимизация / обоснование",
+            original = "לֶגִיטִימַצְיָה", translation = "легитимизация / обоснование",
             pos = "noun", semanticGroup = "politics_concepts",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ הַצִּבּוּר מְקַבֵּל שִׁלְטוֹן אוֹ הַחְלָטָה כְּצוֹדְקִים.",
             definitionNative = "Процесс, когда народ признаёт власть или решение справедливыми.",
             example = "הַבְּחִירוֹת הַחָפְשִׁיּוֹת נָתְנוּ לֶגִיטִימַצְיָה לַמֶּמְשָׁלָה הַחֲדָשָׁה.",
             exampleNative = "Свободные выборы дали לֶגִיטִימַצְיָה новому правительству.", fillInBlankExclusions = listOf(127501L, 127504L)),
         WordEntity(id = 127506, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "תֵּיאוֹקְרַטְיָה", transliteration = "teookratya", translation = "теократия",
+            original = "תֵּיאוֹקְרַטְיָה", translation = "теократия",
             pos = "noun", semanticGroup = "politics_government_forms",
             definition = "מִשְׁטָר שֶׁבּוֹ מַנְהִיגֵי הַדָּת שׁוֹלְטִים עַל הַחַיִּים הַצִּיבּוּרִיִּים.",
             definitionNative = "Строй, где религиозные лидеры правят общественной жизнью.",
             example = "אִירָאן נֶחְשֶׁבֶת תֵּיאוֹקְרַטְיָה מֵאָז הַמַּהְפֵּכָה שֶׁל 1979.",
             exampleNative = "Иран считается תֵּיאוֹקְרַטְיָה с революции 1979 года.", fillInBlankExclusions = listOf(127503L, 127507L, 127508L, 127509L)),
         WordEntity(id = 127507, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "אוּטוֹקְרַטְיָה", transliteration = "utokratya", translation = "автократия",
+            original = "אוּטוֹקְרַטְיָה", translation = "автократия",
             pos = "noun", semanticGroup = "politics_government_forms",
             definition = "מִשְׁטָר שֶׁבּוֹ הַשִּׁלְטוֹן רוּכָּז בִּידֵי שַׁלִּיט יָחִיד וּבְלִי אִיזּוּן.",
             definitionNative = "Строй, где власть собрана у одного правителя и нет противовесов.",
             example = "הַחוֹקֵר הִשְׁוָה אֶת הַמִּשְׁטָר הַזֶּה לְאוּטוֹקְרַטְיָה קְלַסִּית.",
             exampleNative = "Исследователь сравнил этот режим с классической אוּטוֹקְרַטְיָה.", fillInBlankExclusions = listOf(127503L, 127506L, 127508L, 127509L)),
         WordEntity(id = 127508, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "אוֹלִיגַרְכִּיָה", transliteration = "oligarkhya", translation = "олигархия",
+            original = "אוֹלִיגַרְכִּיָה", translation = "олигархия",
             pos = "noun", semanticGroup = "politics_government_forms",
             definition = "שִׁלְטוֹן בִּידֵי קְבוּצָה צְרָה שֶׁל בַּעֲלֵי הוֹן וְהַשְׁפָּעָה.",
             definitionNative = "Власть в руках узкого круга богатых и влиятельных.",
             example = "הַעִתּוֹנַי כָּתַב שֶׁהַמְּדִינָה הָפְכָה לְאוֹלִיגַרְכִּיָה בִּפְנֵי הָעַם.",
             exampleNative = "Журналист написал, что страна на глазах превращается в אוֹלִיגַרְכִּיָה.", fillInBlankExclusions = listOf(127503L, 127506L, 127507L, 127509L)),
         WordEntity(id = 127509, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "מוֹנַרְכְיָה", transliteration = "monarkhya", translation = "монархия",
+            original = "מוֹנַרְכְיָה", translation = "монархия",
             pos = "noun", semanticGroup = "politics_government_forms",
             definition = "מִשְׁטָר שֶׁבּוֹ רֹאשׁ הַמְּדִינָה הוּא מֶלֶךְ אוֹ מַלְכָּה לְכָל הַחַיִּים.",
             definitionNative = "Строй, где страну пожизненно возглавляет король или королева.",
             example = "בְּרִיטַנְיָה נִשְׁאֲרָה מוֹנַרְכְיָה חוּקָתִית עַד הַיּוֹם.",
             exampleNative = "Британия осталась конституционной מוֹנַרְכְיָה до сегодня.", fillInBlankExclusions = listOf(127503L, 127506L, 127507L, 127508L)),
         WordEntity(id = 127510, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "שְׁמָרָנוּת", transliteration = "shmaranut", translation = "консерватизм",
+            original = "שְׁמָרָנוּת", translation = "консерватизм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "גִּישָּׁה הַמְּחַזֶּקֶת מָסּוֹרֶת וּמוֹסָדוֹת יְשָׁנִים מִפְּנֵי שִׁנּוּיִים מְהִירִים.",
             definitionNative = "Подход, защищающий традицию и старые устои от резких перемен.",
             example = "הַמִּפְלָגָה דּוֹגֶלֶת בְּשְׁמָרָנוּת בַּעֲנְיְינֵי מִשְׁפָּחָה וְחִנּוּךְ.",
             exampleNative = "Партия исповедует שְׁמָרָנוּת в вопросах семьи и образования.", fillInBlankExclusions = listOf(127511L, 127512L, 127513L, 127514L, 127515L, 127516L, 127517L)),
         WordEntity(id = 127511, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "נַאצִיוֹנַלִיזְם", transliteration = "natsionalizm", translation = "национализм",
+            original = "נַאצִיוֹנַלִיזְם", translation = "национализм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "תְּפִיסָה הַשָּׂמָה אֶת הָאֻמָּה שֶׁל הָאָדָם בְּמֶרְכַּז הַזֶּהוּת וְהַנֶּאֱמָנוּת.",
             definitionNative = "Взгляд, ставящий собственный народ в центр идентичности и преданности.",
             example = "הַמַּשְׁבֵּר הַכַּלְכָּלִי גִּבָּה אֶת הַנַּאצִיוֹנַלִיזְם בְּכַמָּה אֲרָצוֹת.",
             exampleNative = "Экономический кризис поднял נַאצִיוֹנַלִיזְם в нескольких странах."),
         WordEntity(id = 127512, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "גְּלוֹבָּלִיזְם", transliteration = "globalizm", translation = "глобализм",
+            original = "גְּלוֹבָּלִיזְם", translation = "глобализм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "גִּישָּׁה הַתּוֹמֶכֶת בְּשִׁתּוּף פְּעֻלָּה רָחָב בֵּין מְדִינוֹת וְשׁוּקֵי עוֹלָם פְּתוּחִים.",
             definitionNative = "Подход за широкое сотрудничество стран и открытые мировые рынки.",
             example = "מְבַקְּרֵי הַגְּלוֹבָּלִיזְם טוֹעֲנִים שֶׁהוּא פּוֹגֵעַ בְּעוֹבְדֵי הַמָּקוֹם.",
             exampleNative = "Критики גְּלוֹבָּלִיזְם считают, что он бьёт по местным работникам.", fillInBlankExclusions = listOf(127510L, 127511L, 127513L, 127514L, 127515L, 127516L, 127517L, 127520L)),
         WordEntity(id = 127513, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "פֶּדֶרָלִיזְם", transliteration = "federalizm", translation = "федерализм",
+            original = "פֶּדֶרָלִיזְם", translation = "федерализм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "סִדּוּר שֶׁבּוֹ הַכּוֹחַ מְחֻלָּק בֵּין מֶרְכָּז לִמְחוֹזוֹת בַּעֲלֵי עַצְמָאוּת.",
             definitionNative = "Устройство, где власть делится между центром и самостоятельными регионами.",
             example = "גֶּרְמַנְיָה בְּנוּיָה עַל פֶּדֶרָלִיזְם עִם שֵׁשׁ עֶשְׂרֵה מְדִינוֹת.",
             exampleNative = "Германия построена на פֶּדֶרָלִיזְם с шестнадцатью землями.", fillInBlankExclusions = listOf(127510L, 127511L, 127512L, 127514L, 127515L, 127516L, 127517L)),
         WordEntity(id = 127514, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "אָנַרְכִיזְם", transliteration = "anarkizm", translation = "анархизм",
+            original = "אָנַרְכִיזְם", translation = "анархизм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "תְּפִיסָה הַשּׁוֹלֶלֶת כָּל סַמְכוּת רִשְׁמִית שֶׁל מְדִינָה עַל הָאָדָם.",
             definitionNative = "Учение, отрицающее всякую формальную власть государства над человеком.",
             example = "הַסֵּפֶר עוֹסֵק בְּאָנַרְכִיזְם בִּתְקוּפַת הַמַּהְפֵּכָה הָרוּסִית.",
             exampleNative = "Книга посвящена אָנַרְכִיזְם в эпоху Русской революции.", fillInBlankExclusions = listOf(127510L, 127511L, 127512L, 127513L, 127515L, 127516L, 127517L)),
         WordEntity(id = 127515, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "טוֹטַלִיטָרִיזְם", transliteration = "totalitarizm", translation = "тоталитаризм",
+            original = "טוֹטַלִיטָרִיזְם", translation = "тоталитаризм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "מִשְׁטָר שֶׁבּוֹ הַשִּׁלְטוֹן מְפַקֵּחַ עַל כָּל פִּינָה בַּחַיִּים — צִיבּוּרִיִּים וְפְּרָטִיִּים.",
             definitionNative = "Строй, где власть следит за каждым уголком жизни — публичной и частной.",
             example = "הָרוֹמָן שֶׁל אוֹרְוֶל הוּא בִּקּוֹרֶת חֲרִיפָה עַל טוֹטַלִיטָרִיזְם.",
             exampleNative = "Роман Оруэлла — резкая критика טוֹטַלִיטָרִיזְם.", fillInBlankExclusions = listOf(127510L, 127511L, 127512L, 127513L, 127514L, 127516L, 127517L, 127520L)),
         WordEntity(id = 127516, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "פַּשִׁיזְם", transliteration = "pashizm", translation = "фашизм",
+            original = "פַּשִׁיזְם", translation = "фашизм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "תְּנוּעָה לְאֻמָּנִית קִיצוֹנִית הַדּוֹגֶלֶת בְּכוֹחַ, בִּמְנַהֵג חָזָק וּבְדִכּוּי הַיָּרִיב.",
             definitionNative = "Крайне националистическое движение за силу, сильного вождя и подавление инакомыслия.",
             example = "הַסֵּפֶר מְתָאֵר אֶת עֲלִיַּת הַפַּשִׁיזְם בְּאִיטַלְיָה בִּשְׁנוֹת הָעֶשְׂרִים.",
             exampleNative = "Книга описывает подъём פַּשִׁיזְם в Италии в двадцатые годы.", fillInBlankExclusions = listOf(127510L, 127511L, 127512L, 127513L, 127514L, 127515L, 127517L)),
         WordEntity(id = 127517, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "קוֹמוּנִיזְם", transliteration = "komunizm", translation = "коммунизм",
+            original = "קוֹמוּנִיזְם", translation = "коммунизм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "תְּפִיסָה הַשּׁוֹאֶפֶת לְבִטּוּל מַעֲמָדוֹת וּלְבַעֲלוּת מְשֻׁתֶּפֶת עַל הָרְכוּשׁ.",
             definitionNative = "Учение о ликвидации классов и общем владении имуществом.",
             example = "הַתַּלְמִידִים לָמְדוּ עַל קוֹמוּנִיזְם בְּשִׁעוּר הַהִיסְטוֹרְיָה.",
             exampleNative = "Ученики проходили קוֹמוּנִיזְם на уроке истории.", fillInBlankExclusions = listOf(127501L, 127502L, 127503L, 127504L, 127505L, 127506L, 127507L, 127508L, 127509L, 127510L, 127511L, 127512L, 127513L, 127514L, 127515L, 127516L, 127518L, 127520L, 127522L)),
         WordEntity(id = 127518, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "רֵאָלִיזְם פּוֹלִיטִי", transliteration = "realizm politi", translation = "политический реализм",
+            original = "רֵאָלִיזְם פּוֹלִיטִי", translation = "политический реализм",
             pos = "phrase", semanticGroup = "politics_concepts",
             definition = "גִּישָּׁה הַמַּדְגִּישָׁה אִינְטֶרֶסִים וְכוֹחַ עַל פְּנֵי עֶרְכֵי מוּסָר בִּקְבִיעוֹת מְדִינִיּוֹת.",
             definitionNative = "Подход, ставящий интересы и силу выше моральных ценностей в политике.",
             example = "הַסֵּפֶר מְלַמֵּד רֵאָלִיזְם פּוֹלִיטִי בְּעֵינַיִם שֶׁל מַכְיָאוֵלִי.",
             exampleNative = "Книга преподаёт רֵאָלִיזְם פּוֹלִיטִי глазами Макиавелли."),
         WordEntity(id = 127519, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּרוֹגְרֶסִיבִי", transliteration = "progresivi", translation = "прогрессивный",
+            original = "פְּרוֹגְרֶסִיבִי", translation = "прогрессивный",
             pos = "adjective", semanticGroup = "politics_concepts",
             definition = "כָּזֶה שֶׁדּוֹחֵף לְשִׁנּוּי חֶבְרָתִי וְלִרְפוֹרְמוֹת בְּצַד הַחֲלָשִׁים.",
             definitionNative = "Такой, кто толкает к социальным переменам и реформам в пользу слабых.",
             example = "הַמּוֹעֲמָד הַפְּרוֹגְרֶסִיבִי הִבְטִיחַ רְפוֹרְמַת בְּרִיאוּת רְחָבָה.",
             exampleNative = "פְּרוֹגְרֶסִיבִי кандидат пообещал широкую реформу здравоохранения."),
         WordEntity(id = 127520, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "אִימְפֶּרְיָאלִיזְם", transliteration = "imperializm", translation = "империализм",
+            original = "אִימְפֶּרְיָאלִיזְם", translation = "империализм",
             pos = "noun", semanticGroup = "politics_propaganda",
             definition = "מְדִינִיּוּת שֶׁל הַרְחָבַת שִׁלְטוֹן וְשְׁלִיטָה עַל אֲרָצוֹת אֲחֵרוֹת.",
             definitionNative = "Политика расширения власти и господства над другими землями.",
             example = "הַהִיסְטוֹרְיוֹן בָּחַן אֶת אִימְפֶּרְיָאלִיזְם הַבְּרִיטִי בְּהוֹדוּ.",
             exampleNative = "Историк изучал британский אִימְפֶּרְיָאלִיזְם в Индии.", fillInBlankExclusions = listOf(127502L, 127511L, 127513L, 127517L, 127522L)),
         WordEntity(id = 127521, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "רֵטוֹרִיקָה פּוֹלִיטִית", transliteration = "retorika politit", translation = "политическая риторика",
+            original = "רֵטוֹרִיקָה פּוֹלִיטִית", translation = "политическая риторика",
             pos = "phrase", semanticGroup = "politics_propaganda",
             definition = "אֳמָנוּת הַדִּבּוּר הַצִּיבּוּרִי שֶׁל מַנְהִיגִים כְּדֵי לִשְׁכְנֵעַ אֶת הַעָם.",
             definitionNative = "Искусство публичной речи политиков, чтобы убедить народ.",
             example = "הַמַּרְצֶה נִתֵּחַ אֶת הָרֵטוֹרִיקָה פּוֹלִיטִית בְּנְאוּם הַנָּשִׂיא.",
             exampleNative = "Лектор разобрал רֵטוֹרִיקָה פּוֹלִיטִית в речи президента.", fillInBlankExclusions = listOf(127501L, 127502L, 127522L, 127525L)),
         WordEntity(id = 127522, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "תַּעֲמוּלָה", transliteration = "ta'amula", translation = "агитация",
+            original = "תַּעֲמוּלָה", translation = "агитация",
             pos = "noun", semanticGroup = "politics_propaganda",
             definition = "פְּעִילוּת מְכוּוֶּנֶת לְשִׁכְנֵעַ אֲנָשִׁים לְהַצְבִּיעַ אוֹ לִתְמֹךְ בְּצַד מְסוּיָם.",
             definitionNative = "Целенаправленная работа, чтобы склонить людей голосовать или поддержать сторону.",
             example = "תַּעֲמוּלָה אֲגְרֶסִיבִית מִלְּאָה אֶת הָרְחוֹב לִפְנֵי הַבְּחִירוֹת.",
             exampleNative = "Агрессивная תַּעֲמוּלָה заполнила улицу перед выборами.", fillInBlankExclusions = listOf(127501L, 127502L, 127520L, 127521L)),
         WordEntity(id = 127523, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "כּוֹחַ רַךְ", transliteration = "koakh rakh", translation = "мягкая сила",
+            original = "כּוֹחַ רַךְ", translation = "мягкая сила",
             pos = "phrase", semanticGroup = "politics_power",
             definition = "יְכֹלֶת שֶׁל מְדִינָה לְשַׁכְנֵעַ דֶּרֶךְ תַּרְבּוּת, כַּלְכָּלָה וְעֶרְכִים בְּלִי לְאַיֵּם.",
             definitionNative = "Способность страны убеждать через культуру, экономику и ценности — без угроз.",
             example = "הוֹלִיווּד הִיא חֵלֶק חָשׁוּב מֵהַכּוֹחַ רַךְ הָאָמֵרִיקָנִי.",
             exampleNative = "Голливуд — важная часть американской כּוֹחַ רַךְ."),
         WordEntity(id = 127524, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "כּוֹחַ קָשֶׁה", transliteration = "koakh kashe", translation = "жёсткая сила",
+            original = "כּוֹחַ קָשֶׁה", translation = "жёсткая сила",
             pos = "phrase", semanticGroup = "politics_power",
             definition = "יְכֹלֶת שֶׁל מְדִינָה לִכְפּוֹת אֶת רְצוֹנָהּ דֶּרֶךְ צָבָא וְאֶמְצָעִים כַּלְכָּלִיִּים.",
             definitionNative = "Способность страны навязывать волю через армию и экономическое давление.",
             example = "הַסַּנְקְצְיוֹת הַחֲדָשׁוֹת הֵן דּוּגְמָה לְכּוֹחַ קָשֶׁה.",
             exampleNative = "Новые санкции — пример כּוֹחַ קָשֶׁה.", fillInBlankExclusions = listOf(127520L, 127523L)),
         WordEntity(id = 127525, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּנֵי הַמִּדִינָה", transliteration = "pnei hamidina", translation = "публичная дипломатия / имидж государства",
+            original = "פְּנֵי הַמִּדִינָה", translation = "публичная дипломатия / имидж государства",
             pos = "phrase", semanticGroup = "politics_propaganda",
             definition = "הַתַּדְמִית הַחִיצוֹנִית שֶׁל אֶרֶץ בְּעֵינֵי הָעוֹלָם וְהַתִּקְשׁוֹרֶת הַזָּרָה.",
             definitionNative = "Внешний образ страны в глазах мира и зарубежной прессы.",
@@ -909,7 +909,7 @@ object WordDataHebrewBatch49 {
         // ── Set 1276: Политика: профессиональный (level=4, RARE+EPIC) ───────────
 
         WordEntity(id = 127601, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "גֵּאוֹ-פּוֹלִיטִיקָה", transliteration = "geo-politika",
+            original = "גֵּאוֹ-פּוֹלִיטִיקָה",
             translation = "геополитика",
             pos = "noun", semanticGroup = "politics_geopolitics_meta",
             definition = "תְּחוּם הַבּוֹחֵן אֵיךְ מַפָּה וּמַשְׁאַבִּים מְעַצְּבִים יְחָסִים בֵּין מְדִינוֹת.",
@@ -918,7 +918,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "גֵּאוֹ-פּוֹלִיטִיקָה Чёрного моря тревожит весь Запад."
         , fillInBlankExclusions = listOf(127618L, 127623L)),
         WordEntity(id = 127602, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "שִׁיח פּוֹלִיטִי", transliteration = "siakh politi",
+            original = "שִׁיח פּוֹלִיטִי",
             translation = "политический разговор / нарратив",
             pos = "noun", semanticGroup = "politics_discourse",
             definition = "אֹסֶף מוֹטִיבִים וּמִילִּים שֶׁמַּנְהִיגִים חוֹזְרִים עָלָיו לְעַצֵּב חֲשִׁיבָה צִבּוּרִית.",
@@ -927,7 +927,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "שִׁיח פּוֹלִיטִי кампании сосредоточился на цене жилья."
         , fillInBlankExclusions = listOf(127603L, 127606L, 127607L, 127611L, 127621L, 127622L)),
         WordEntity(id = 127603, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "בִּיקּוֹרֶת הַשִּׁלְטוֹן", transliteration = "bikoret hashilton",
+            original = "בִּיקּוֹרֶת הַשִּׁלְטוֹן",
             translation = "критика власти",
             pos = "noun", semanticGroup = "politics_discourse",
             definition = "אֲמִירָה גְּלוּיָה נֶגֶד הַחְלָטוֹת הָרֹאשׁ עַל יְדֵי עִיתּוֹנָאִים אוֹ אֶזְרָחִים.",
@@ -936,7 +936,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "בִּיקּוֹרֶת הַשִּׁלְטוֹן в свободной прессе спасает демократии."
         , fillInBlankExclusions = listOf(127602L, 127606L, 127607L, 127611L)),
         WordEntity(id = 127604, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "רְצוֹן הָעָם", transliteration = "retson ha'am",
+            original = "רְצוֹן הָעָם",
             translation = "воля народа",
             pos = "noun", semanticGroup = "politics_state_theory",
             definition = "הָרְגָּשָׁה הַמְּשׁוּתֶּפֶת שֶׁל הַתּוֹשָׁבִים, הַבָּאָה לִידֵי בִּיטּוּי בִּבְחִירוֹת.",
@@ -945,7 +945,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Лидер утверждает, что воплощает רְצוֹן הָעָם."
         , fillInBlankExclusions = listOf(127605L, 127608L, 127609L, 127610L, 127616L, 127617L)),
         WordEntity(id = 127605, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "שִׁלְטוֹן הַחוֹק", transliteration = "shilton hakhok",
+            original = "שִׁלְטוֹן הַחוֹק",
             translation = "верховенство закона",
             pos = "noun", semanticGroup = "politics_governance",
             definition = "עִקָּרוֹן שֶׁבּוֹ הַכֹּל, גַּם הַשַּׂר, כְּפוּפִים לִכְלָלִים שָׁוִים.",
@@ -954,7 +954,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "В нормальной стране שִׁלְטוֹן הַחוֹק сильнее любого частного лица."
         , fillInBlankExclusions = listOf(127604L, 127617L, 127624L, 127625L)),
         WordEntity(id = 127606, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "מִסְגְּרוּת", transliteration = "misgrerut",
+            original = "מִסְגְּרוּת",
             translation = "фреймирование (политическое)",
             pos = "noun", semanticGroup = "politics_discourse",
             definition = "אָמָּנוּת בְּחִירַת הַזָּוִית שֶׁמַּכְתִּיבָה אֵיךְ הַצִּבּוּר יָבִין סוּגְיָה.",
@@ -963,7 +963,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Умное מִסְגְּרוּת сделало закон популярным."
         , fillInBlankExclusions = listOf(127602L, 127603L, 127607L, 127611L)),
         WordEntity(id = 127607, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "הֲגִדְרָה", transliteration = "hagidra",
+            original = "הֲגִדְרָה",
             translation = "переопределение / рефреймирование",
             pos = "noun", semanticGroup = "politics_discourse",
             definition = "שִׁינוּי הַזָּוִית שֶׁל סוּגְיָה כָּךְ שֶׁתֵּרָאֶה אַחֶרֶת לַצִּבּוּר.",
@@ -972,7 +972,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "הֲגִדְרָה реформы убедила многих колеблющихся избирателей."
         , fillInBlankExclusions = listOf(127602L, 127603L, 127606L, 127611L)),
         WordEntity(id = 127608, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "פִּילוֹסוֹפְיָה פּוֹלִיטִית", transliteration = "filosofya politit",
+            original = "פִּילוֹסוֹפְיָה פּוֹלִיטִית",
             translation = "политическая философия",
             pos = "noun", semanticGroup = "politics_state_theory",
             definition = "עִיּוּן עִקָּרִי בְּשְׁאֵלוֹת מַהוּ צֶדֶק, חוֹפֶשׁ וְכֹחַ לֵגִיטִימִי.",
@@ -981,7 +981,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Сократ заложил основу западной פִּילוֹסוֹפְיָה פּוֹלִיטִית."
         ),
         WordEntity(id = 127609, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "פּוֹלִיאַרְכִיָּה", transliteration = "poliarkhya",
+            original = "פּוֹלִיאַרְכִיָּה",
             translation = "полиархия (Даль)",
             pos = "noun", semanticGroup = "politics_state_theory",
             definition = "מוֹדֶל שֶׁל מִשְׁטָר רַב-קוֹלוֹת עִם תַּחְרוּת חָפְשִׁית וְהַשְׁתַּתְּפוּת רְחָבָה.",
@@ -990,7 +990,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Даль описал США как несовершенную פּוֹלִיאַרְכִיָּה."
         , fillInBlankExclusions = listOf(127604L, 127608L, 127610L, 127614L, 127615L, 127616L, 127617L)),
         WordEntity(id = 127610, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "תֵּיאוֹרְיַת הַמִּדִינָה", transliteration = "teoriyat hamidina",
+            original = "תֵּיאוֹרְיַת הַמִּדִינָה",
             translation = "теория государства",
             pos = "noun", semanticGroup = "politics_state_theory",
             definition = "תְּחוּם שֶׁל מַחֲשָׁבָה עַל מָקוֹר הַשִּׁלְטוֹן וְעַל מַטָּרוֹת הַסַּמְכוּת הַצִּבּוּרִית.",
@@ -999,7 +999,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Вебер внёс большой вклад в современную תֵּיאוֹרְיַת הַמִּדִינָה."
         ),
         WordEntity(id = 127611, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "דִּיסְקוּרְס פּוֹלִיטִי", transliteration = "diskurs politi",
+            original = "דִּיסְקוּרְס פּוֹלִיטִי",
             translation = "политический дискурс",
             pos = "noun", semanticGroup = "politics_discourse",
             definition = "אוֹרַח הַדִּיבּוּר שֶׁל מַנְהִיגִים וּמוּמְחִים עַל סוּגְיוֹת צִבּוּרִיּוֹת.",
@@ -1008,7 +1008,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "דִּיסְקוּרְס פּוֹלִיטִי в соцсетях стал плоским и громким."
         , fillInBlankExclusions = listOf(127602L, 127603L, 127606L, 127607L, 127621L, 127622L)),
         WordEntity(id = 127612, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "לִבֶּרְטָרִיָאנִיזְם", transliteration = "libertar'yanizm",
+            original = "לִבֶּרְטָרִיָאנִיזְם",
             translation = "либертарианство",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "אֱמוּנָה כִּי הַפְּרָט יוֹדֵעַ יוֹתֵר טוֹב וְהַמְּדִינָה צְרִיכָה לְהִתְעָרֵב מִינִימוּם.",
@@ -1017,7 +1017,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Американский לִבֶּרְטָרִיָאנִיזְם поддерживает массовое снижение налогов."
         , fillInBlankExclusions = listOf(127613L, 127614L, 127615L)),
         WordEntity(id = 127613, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "רֵפּוּבְּלִיקָנִיזְם", transliteration = "re'publi'kanizm",
+            original = "רֵפּוּבְּלִיקָנִיזְם",
             translation = "республиканизм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "מַחֲשֶׁבֶת מִשְׁטָר שֶׁבּוֹ הַתּוֹשָׁב הַחָפְשִׁי מִשְׁתַּתֵּף בְּחַיֵּי הָעִיר וְהָאוּמָה.",
@@ -1026,7 +1026,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "רֵפּוּבְּלִיקָנִיזְם по Цицерону подчёркивал долг гражданина."
         , fillInBlankExclusions = listOf(127612L, 127614L, 127615L)),
         WordEntity(id = 127614, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "פְּלוּטוֹקְרַטְיָה", transliteration = "plutokratya",
+            original = "פְּלוּטוֹקְרַטְיָה",
             translation = "плутократия",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "מַצָּב שֶׁבּוֹ בַּעֲלֵי הַהוֹן קוֹבְעִים אֶת הַהַחְלָטוֹת הָעִקָּרִיּוֹת בָּעַם.",
@@ -1035,7 +1035,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Критики предостерегают о медленном переходе к цифровой פְּלוּטוֹקְרַטְיָה."
         , fillInBlankExclusions = listOf(127609L, 127612L, 127613L, 127615L)),
         WordEntity(id = 127615, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "פָּטְרִיאַרְכַּת הַמִּדִינָה", transliteration = "patriarkat hamidina",
+            original = "פָּטְרִיאַרְכַּת הַמִּדִינָה",
             translation = "государственный патриархат",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "מַעֲרֶכֶת שֶׁבָּהּ הַמִּשְׂרָדִים וְהַחוּקִּים נוֹטִים לְהַעֲדִיף גְּבָרִים עַל פְּנֵי נָשִׁים.",
@@ -1044,7 +1044,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Движения за равенство борются с израильским פָּטְרִיאַרְכַּת הַמִּדִינָה."
         ),
         WordEntity(id = 127616, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "מַצַּב הַטֶּבַע", transliteration = "matsav hateva",
+            original = "מַצַּב הַטֶּבַע",
             translation = "естественное состояние (Гоббс/Руссо)",
             pos = "noun", semanticGroup = "politics_state_theory",
             definition = "מַצָּב מְדוּמָּן שֶׁל אָדָם לִפְנֵי שֶׁנּוֹלְדָה הַחֶבְרָה וְהַחוֹק.",
@@ -1053,7 +1053,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Гоббс описал מַצַּב הַטֶּבַע как шумное и жестокое."
         , fillInBlankExclusions = listOf(127604L, 127608L, 127609L, 127610L, 127617L)),
         WordEntity(id = 127617, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "רְצוֹן כְּלָלִי", transliteration = "retson klali",
+            original = "רְצוֹן כְּלָלִי",
             translation = "всеобщая воля (Руссо)",
             pos = "noun", semanticGroup = "politics_state_theory",
             definition = "כַּוָּנָה מְשׁוּתֶּפֶת שֶׁל הָאֲסֵפָה כּוּלָּהּ, מֵעֵבֶר לְאִינְטֶרֶס פְּרָטִי.",
@@ -1062,7 +1062,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Руссо утверждал, что закон рождается из רְצוֹן כְּלָלִי."
         , fillInBlankExclusions = listOf(127604L, 127608L, 127609L, 127610L, 127616L)),
         WordEntity(id = 127618, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "מֵטָ-פּוֹלִיטִיקָה", transliteration = "meta-politika",
+            original = "מֵטָ-פּוֹלִיטִיקָה",
             translation = "метаполитика",
             pos = "noun", semanticGroup = "politics_geopolitics_meta",
             definition = "הִסְתַּכְּלוּת עַל מַסְגְּרוֹת הַמִּשְׂחָק עַצְמָן, מֵעַל הַמַּחֲלוֹקוֹת הַיּוֹמִיּוֹת.",
@@ -1071,7 +1071,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Книги о מֵטָ-פּוֹלִיטִיקָה обсуждают сами правила игры."
         , fillInBlankExclusions = listOf(127601L, 127608L, 127610L, 127623L)),
         WordEntity(id = 127619, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "קְלִיֶינְטֵלִיזְם", transliteration = "kliyentelizm",
+            original = "קְלִיֶינְטֵלִיזְם",
             translation = "клиентелизм",
             pos = "noun", semanticGroup = "politics_clientelism",
             definition = "שִׁיטָה שֶׁבָּהּ מַצְבִּיעִים מְקַבְּלִים טוֹבוֹת תְּמוּרַת קוֹל בַּקַּלְפִּי.",
@@ -1080,7 +1080,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Местный קְלִיֶינְטֵלִיזְם подрывает доверие к институтам."
         , fillInBlankExclusions = listOf(127620L, 127621L, 127622L)),
         WordEntity(id = 127620, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "פַּטְרוֹנוּת פּוֹלִיטִית", transliteration = "patronut politit",
+            original = "פַּטְרוֹנוּת פּוֹלִיטִית",
             translation = "политический патронаж",
             pos = "noun", semanticGroup = "politics_clientelism",
             definition = "חֲלוּקַת מִשְׂרוֹת וְטוֹבוֹת בִּידֵי מַנְהִיג לְמַעַן נֶאֱמָנֵי כִּסְאוֹ.",
@@ -1089,7 +1089,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "פַּטְרוֹנוּת פּוֹלִיטִית наполнила отдел родственниками начальника."
         , fillInBlankExclusions = listOf(127619L, 127621L, 127622L)),
         WordEntity(id = 127621, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "אוֹפּוּרְטוּנִיזְם פּוֹלִיטִי", transliteration = "oportunizm politi",
+            original = "אוֹפּוּרְטוּנִיזְם פּוֹלִיטִי",
             translation = "политический оппортунизм",
             pos = "noun", semanticGroup = "politics_clientelism",
             definition = "נְטִיָּה לְשַׁנּוֹת עֶמְדָּה לְפִי הַתּוֹעֶלֶת הָרֶגַעִית בְּלִי עֶקְרוֹנוֹת.",
@@ -1098,7 +1098,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "אוֹפּוּרְטוּנִיזְם פּוֹלִיטִי заметен в голосованиях депутатов."
         , fillInBlankExclusions = listOf(127602L, 127611L, 127619L, 127620L, 127622L)),
         WordEntity(id = 127622, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "קוֹנְצֶנְסוּס פּוֹלִיטִי", transliteration = "kontsensus politi",
+            original = "קוֹנְצֶנְסוּס פּוֹלִיטִי",
             translation = "политический консенсус",
             pos = "noun", semanticGroup = "politics_clientelism",
             definition = "הַסְכָּמָה רְחָבָה בֵּין מִפְלָגוֹת יְרִיבוֹת עַל קַו פְּעוּלָה אֶחָד.",
@@ -1107,7 +1107,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Редкий קוֹנְצֶנְסוּס פּוֹלִיטִי возник во время экономического кризиса."
         , fillInBlankExclusions = listOf(127602L, 127611L, 127619L, 127620L, 127621L)),
         WordEntity(id = 127623, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "פּוֹלִיטִיזַצְיָה", transliteration = "politizatsya",
+            original = "פּוֹלִיטִיזַצְיָה",
             translation = "политизация",
             pos = "noun", semanticGroup = "politics_geopolitics_meta",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ נוֹשֵׂא נִצְבָּע בִּצְבָעֵי מַחֲנֶה וְהוֹפֵךְ לְזִירַת מַחֲלוֹקֶת.",
@@ -1116,7 +1116,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "פּוֹלִיטִיזַצְיָה климатологии вредит рациональному обсуждению."
         , fillInBlankExclusions = listOf(127601L, 127618L)),
         WordEntity(id = 127624, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "מְשִׁילוּת", transliteration = "meshilut",
+            original = "מְשִׁילוּת",
             translation = "управляемость / способность к управлению",
             pos = "noun", semanticGroup = "politics_governance",
             definition = "יְכוֹלֶת הַשִּׁלְטוֹן לְהַחְלִיט וּלְבַצֵּעַ בְּלִי שֶׁהַמַּעֲרֶכֶת תִּקְרֹס.",
@@ -1125,7 +1125,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Слабая מְשִׁילוּת приводит к задержке важных законов."
         , fillInBlankExclusions = listOf(127605L, 127625L)),
         WordEntity(id = 127625, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "מְדִינַת רְוָחָה", transliteration = "medinat revakha",
+            original = "מְדִינַת רְוָחָה",
             translation = "государство всеобщего благосостояния",
             pos = "noun", semanticGroup = "politics_governance",
             definition = "מוֹדֶל שֶׁבּוֹ הָאוּמָה דּוֹאֶגֶת לִבְרִיאוּת, חִינּוּךְ וּפֶנְסְיָה לְכָל אֶזְרָחֶיהָ.",
@@ -1137,7 +1137,7 @@ object WordDataHebrewBatch49 {
         // ── Set 1277: Политика: носитель языка (level=5, EPIC+LEGENDARY) ────────
 
         WordEntity(id = 127701, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פּוֹסְט-דֵּמוֹקְרַטְיָה", transliteration = "post-demokratya", translation = "постдемократия",
+            original = "פּוֹסְט-דֵּמוֹקְרַטְיָה", translation = "постдемократия",
             pos = "noun", semanticGroup = "politics_theory_power",
             definition = "מַצָּב הָעַכְשָׁוִי בּוֹ הַהַצְבָּעָה עוֹד קַיֶּמֶת אֲבָל הַחַחְלָטָה כְּבָר אֵצֶל אֵלִיטוֹת.",
             definitionNative = "Состояние, когда выборы есть, но решения уже принимают элиты, а не граждане.",
@@ -1145,7 +1145,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Книга утверждает, что Европа вошла в эпоху פּוֹסְט-דֵּמוֹקְרַטְיָה."
         , fillInBlankExclusions = listOf(127705L, 127707L)),
         WordEntity(id = 127702, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הַדָּרָה פּוֹלִיטִית", transliteration = "hadara politit", translation = "политическая маргинализация / исключение",
+            original = "הַדָּרָה פּוֹלִיטִית", translation = "политическая маргинализация / исключение",
             pos = "noun", semanticGroup = "politics_theory_critical",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ קְבוּצוֹת מְסֻיָּמוֹת נִדְחָקוֹת מִחוּץ לַשִּׂיחַ הַצִּבּוּרִי וּלְקַבָּלַת הַחְלָטוֹת.",
             definitionNative = "Процесс, при котором группы вытесняются из публичного разговора и решений.",
@@ -1153,7 +1153,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Статья изучает הַדָּרָה פּוֹלִיטִית меньшинств в городе."
         ),
         WordEntity(id = 127703, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "סְדֶר יוֹם פּוֹלִיטִי", transliteration = "seder yom politi", translation = "политическая повестка дня",
+            original = "סְדֶר יוֹם פּוֹלִיטִי", translation = "политическая повестка дня",
             pos = "phrase", semanticGroup = "politics_theory_concepts",
             definition = "רְשִׁימַת הַנּוֹשְׂאִים שֶׁמַּנְהִיג אוֹ תְּנוּעָה רוֹצִים לְקַדֵּם בְּעֵת מְסֻיֶּמֶת.",
             definitionNative = "Список тем, которые лидер или движение хотят продвигать в данный момент.",
@@ -1161,7 +1161,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Известный деятель сумел навязать прессе свой סְדֶר יוֹם פּוֹלִיטִי."
         , fillInBlankExclusions = listOf(127709L, 127710L, 127712L)),
         WordEntity(id = 127704, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פְּרָגְמָטִיזְם פּוֹלִיטִי", transliteration = "pragmatizm politi", translation = "политический прагматизм",
+            original = "פְּרָגְמָטִיזְם פּוֹלִיטִי", translation = "политический прагматизм",
             pos = "noun", semanticGroup = "politics_theory_concepts",
             definition = "גִּישָׁה הַשּׂוֹמֶת דָּגֵשׁ עַל תּוֹצָאוֹת מַעֲשִׂיּוֹת וְלֹא עַל עֶקְרוֹנוֹת מֻפְשָׁטִים.",
             definitionNative = "Подход, ставящий во главу угла практический результат, а не отвлечённые принципы.",
@@ -1169,7 +1169,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Губернатор объявил о פְּרָגְמָטִיזְם פּוֹלִיטִי вместо верности партии."
         ),
         WordEntity(id = 127705, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פָּנוֹפְּטִיקוֹן פּוֹלִיטִי", transliteration = "panoptikon politi", translation = "политический паноптикон",
+            original = "פָּנוֹפְּטִיקוֹן פּוֹלִיטִי", translation = "политический паноптикон",
             pos = "noun", semanticGroup = "politics_theory_power",
             definition = "מִבְנֶה פִּקּוּחַ שֶׁבּוֹ הַשִּׁלְטוֹן רוֹאֶה אֶת הָאֶזְרָחִים בְּלִי שֶׁהֵם רוֹאִים אוֹתוֹ.",
             definitionNative = "Структура надзора, при которой власть видит граждан, а они её нет.",
@@ -1177,7 +1177,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Фуко использовал понятие פָּנוֹפְּטִיקוֹן פּוֹלִיטִי для объяснения слежки."
         , fillInBlankExclusions = listOf(127701L, 127707L)),
         WordEntity(id = 127706, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מְדִינִיּוּת כּוֹח", transliteration = "medinitiyut koakh", translation = "силовая политика / политика с позиции силы",
+            original = "מְדִינִיּוּת כּוֹח", translation = "силовая политика / политика с позиции силы",
             pos = "phrase", semanticGroup = "politics_theory_power",
             definition = "תַּפִיסָה לְפִיהָ יְחָסִים בֵּין מְדִינוֹת מוּכָרְעִים בְּעִקָּר עַל יְדֵי עוֹצְמָה צְבָאִית וְכַלְכָּלִית.",
             definitionNative = "Подход, при котором отношения между странами решает в основном военная и финансовая мощь.",
@@ -1185,7 +1185,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Книга показывает классику מְדִינִיּוּת כּוֹח у Макиавелли."
         ),
         WordEntity(id = 127707, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פַּרָדִיגְמָה פּוֹלִיטִית", transliteration = "paradigma politit", translation = "политическая парадигма",
+            original = "פַּרָדִיגְמָה פּוֹלִיטִית", translation = "политическая парадигма",
             pos = "noun", semanticGroup = "politics_theory_power",
             definition = "מַסְגֶּרֶת רַעֲיוֹנִית הַמַּכְתִּיבָה אֵיךְ חוֹקְרִים וְעַסְקָנִים מְבִינִים אֶת הַמְּצִיאוּת הַצִּבּוּרִית.",
             definitionNative = "Рамка идей, задающая исследователям и политикам способ видеть общественную реальность.",
@@ -1193,7 +1193,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Исследовательница описала переход к новой פַרָדִיגְמָה פּוֹלִיטִית после войны."
         ),
         WordEntity(id = 127708, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "בִּיקּוֹרֶת אִידֵיאוֹלוֹגִית", transliteration = "bikoret ide'ologit", translation = "идеологическая критика",
+            original = "בִּיקּוֹרֶת אִידֵיאוֹלוֹגִית", translation = "идеологическая критика",
             pos = "phrase", semanticGroup = "politics_theory_critical",
             definition = "בְּחִינָה שִׁיטָתִית שֶׁל רַעֲיוֹנוֹת הַשּׁוֹלְטִים בַּחֶבְרָה כְּדֵי לַחְשֹׂף אִינְטֶרֶסִים סְמוּיִים.",
             definitionNative = "Системный разбор господствующих идей, чтобы вскрыть скрытые интересы за ними.",
@@ -1201,7 +1201,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Семинар по Марксу начался с בִּיקּוֹרֶת אִידֵיאוֹלוֹגִית капитала и труда."
         ),
         WordEntity(id = 127709, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "שְׁאֵלַת הַלֶּגִיטִימִיּוּת", transliteration = "she'elat halegi'timi'ut", translation = "вопрос легитимности",
+            original = "שְׁאֵלַת הַלֶּגִיטִימִיּוּת", translation = "вопрос легитимности",
             pos = "phrase", semanticGroup = "politics_theory_concepts",
             definition = "הַסָּפֵק הַיְּסוֹדִי אִם לַשִּׁלְטוֹן הַזֶּה יֵשׁ זְכוּת מוּסָרִית לִפְעֹל בְּשֵׁם הָעָם.",
             definitionNative = "Базовое сомнение в том, есть ли у этой власти моральное право действовать от имени народа.",
@@ -1209,7 +1209,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Модель ставит שְׁאֵלַת הַלֶּגִיטִימִיּוּת нового правительства."
         , fillInBlankExclusions = listOf(127703L, 127710L, 127712L)),
         WordEntity(id = 127710, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מִנְהָל הַסְּכָסוּך", transliteration = "minhal hasikhsukh", translation = "управление конфликтом",
+            original = "מִנְהָל הַסְּכָסוּך", translation = "управление конфликтом",
             pos = "phrase", semanticGroup = "politics_theory_concepts",
             definition = "הַשְׁתַּדְּלוּת מְסֻדֶּרֶת לְצַמְצֵם אַלִּימוּת בֵּין צְדָדִים וְלִמְצֹא הֶסְכֵּם בַּר־קַיָּמָא.",
             definitionNative = "Упорядоченная попытка снизить насилие между сторонами и найти устойчивую договорённость.",
@@ -1217,7 +1217,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "ООН предложила сторонам механизм מִנְהָל הַסְּכָסוּך."
         , fillInBlankExclusions = listOf(127703L, 127709L, 127712L)),
         WordEntity(id = 127711, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "דֶּמוֹקְרַטְיָה דֵּלִיבֶּרַטִיבִית", transliteration = "demokratya deliberativit", translation = "делиберативная демократия",
+            original = "דֶּמוֹקְרַטְיָה דֵּלִיבֶּרַטִיבִית", translation = "делиберативная демократия",
             pos = "phrase", semanticGroup = "politics_theory_normative",
             definition = "תְּפִיסָה לְפִיהָ הַחַחְלָטוֹת מִתְקַבְּלוֹת אַחֲרֵי דִּיּוּן צִבּוּרִי פָּתוּחַ וּשְׁקוּל בֵּין שָׁוִים.",
             definitionNative = "Подход, при котором решения принимают после открытого обсуждения равных голосов.",
@@ -1225,7 +1225,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Профессор предложил דֶּמוֹקְרַטְיָה דֵּלִיבֶּרַטִיבִית как лекарство от падения доверия."
         , fillInBlankExclusions = listOf(127713L, 127714L, 127717L, 127718L)),
         WordEntity(id = 127712, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תֵּיאוֹרְיַת הַסְּכָסוּך", transliteration = "teoriyat hasikhsukh", translation = "теория конфликта",
+            original = "תֵּיאוֹרְיַת הַסְּכָסוּך", translation = "теория конфликта",
             pos = "phrase", semanticGroup = "politics_theory_concepts",
             definition = "מַסְגֶּרֶת מַסְבִּירָה לְפִיהָ הַחֶבְרָה מִתְקַדֶּמֶת דְּרָךְ הִתְנַגְּשׁוּת אִינְטֶרֶסִים שׁוֹנִים.",
             definitionNative = "Объяснительная рамка: общество движется через столкновение разных интересов.",
@@ -1233,7 +1233,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Студент сравнил Маркса с Вебером в рамках תֵּיאוֹרְיַת הַסְּכָסוּך."
         , fillInBlankExclusions = listOf(127703L, 127709L, 127710L, 127714L)),
         WordEntity(id = 127713, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פּוֹלִיטִיקָה שֶׁל הַזֶּהוּת", transliteration = "politika shel hazehut", translation = "политика идентичности",
+            original = "פּוֹלִיטִיקָה שֶׁל הַזֶּהוּת", translation = "политика идентичности",
             pos = "phrase", semanticGroup = "politics_theory_normative",
             definition = "פְּעִילוּת צִבּוּרִית הַמְּמַקֶּדֶת בְּתוֹדָעַת קְבוּצָה — מוֹצָא, מִין אוֹ דָּת — וּזְכוּיוֹתֶיהָ.",
             definitionNative = "Активность, сосредоточенная на самосознании группы — происхождение, пол или вера — и её правах.",
@@ -1241,7 +1241,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Студентка представила работу о פּוֹלִיטִיקָה שֶׁל הַזֶּהוּת в Кении."
         , fillInBlankExclusions = listOf(127711L, 127714L, 127717L, 127718L)),
         WordEntity(id = 127714, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תֵּיאוֹרְיַת הַהַכָּרָה", transliteration = "teoriyat hahakara", translation = "теория признания (Хоннет)",
+            original = "תֵּיאוֹרְיַת הַהַכָּרָה", translation = "теория признания (Хоннет)",
             pos = "phrase", semanticGroup = "politics_theory_normative",
             definition = "גִּישַּׁת הוֹנֶט: כָּל אָדָם זָקוּק לַהוֹקָרָה חֶבְרָתִית כְּדֵי לַחְיוֹת בְּכָבוֹד.",
             definitionNative = "Подход Хоннета: каждому человеку нужно общественное уважение, чтобы жить достойно.",
@@ -1249,7 +1249,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Лектор подал תֵּיאוֹרְיַת הַהַכָּרָה как ответ марксистской критике."
         , fillInBlankExclusions = listOf(127711L, 127712L, 127713L, 127717L, 127718L)),
         WordEntity(id = 127715, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "שִׁיח הַשִּׁלְטוֹן", transliteration = "siakh hashilton", translation = "дискурс власти (Фуко)",
+            original = "שִׁיח הַשִּׁלְטוֹן", translation = "дискурс власти (Фуко)",
             pos = "phrase", semanticGroup = "politics_theory_critical",
             definition = "מַעֲרֶכֶת הָאֲמִירוֹת וְהַכְּלָלִים שֶׁעוֹצְבוּ עַל יְדֵי בַּעֲלֵי הַשִּׁלְטוֹן וּמְעַצְּבִים אֶת הַמַּחֲשָׁבָה.",
             definitionNative = "Совокупность утверждений и норм, выстроенная властью и формирующая мышление.",
@@ -1257,7 +1257,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Статья проанализировала שִׁיח הַשִּׁלְטוֹן в государственной прессе."
         , fillInBlankExclusions = listOf(127708L, 127716L, 127725L)),
         WordEntity(id = 127716, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "בִּיקּוֹרֶת פּוֹסְט-קוֹלוֹנְיָאלִית", transliteration = "bikoret post-kolonialit", translation = "постколониальная критика",
+            original = "בִּיקּוֹרֶת פּוֹסְט-קוֹלוֹנְיָאלִית", translation = "постколониальная критика",
             pos = "phrase", semanticGroup = "politics_theory_critical",
             definition = "הַשְׁקָפָה הַמּוֹדִיעָה אֶת הַשְּׁפָעַת מוֹשְׁלוֹת אֵירוֹפָּה עַל הַחֲשִׁיבָה גַּם אַחֲרֵי הַשִּׁחְרוּר.",
             definitionNative = "Подход, разоблачающий влияние европейских колоний на мышление и после освобождения.",
@@ -1265,7 +1265,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Семинар разбирал בִּיקּוֹרֶת פּוֹסְט-קוֹלוֹנְיָאלִית у Саида и Фанона."
         ),
         WordEntity(id = 127717, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "צֶדֶק חֶלְקוּקִי", transliteration = "tsedek khelkuki", translation = "дистрибутивная справедливость (Ролз)",
+            original = "צֶדֶק חֶלְקוּקִי", translation = "дистрибутивная справедливость (Ролз)",
             pos = "phrase", semanticGroup = "politics_theory_normative",
             definition = "עִקָּרוֹן רוֹלְזִי: חֲלוּקַת מַשְׁאַבֵּי חֶבְרָה בְּדֶרֶךְ הַמְבִיאָה תּוֹעֶלֶת מְרַבִּית לַחֲלָשִׁים.",
             definitionNative = "Принцип Ролза: распределять ресурсы так, чтобы максимально помочь самым слабым.",
@@ -1273,7 +1273,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Лектор подчеркнул צֶדֶק חֶלְקוּקִי в обсуждении прогрессивного налога."
         , fillInBlankExclusions = listOf(127711L, 127713L, 127714L, 127718L)),
         WordEntity(id = 127718, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תֵּיאוֹרְיַת הַבְּחִירָה הָרַסְיוֹנָלִית", transliteration = "teoriyat habkhira harasionalit", translation = "теория рационального выбора",
+            original = "תֵּיאוֹרְיַת הַבְּחִירָה הָרַסְיוֹנָלִית", translation = "теория рационального выбора",
             pos = "phrase", semanticGroup = "politics_theory_normative",
             definition = "הַנָּחָה שֶׁשַּׂחְקָנִים מְחַשְּׁבִים רֶוַח וְהֶפְסֵד וְאַחַר כָּךְ בּוֹחֲרִים אֶת הַמַּהֲלָךְ הַמּוּעָדָף.",
             definitionNative = "Допущение: игроки сначала считают выгоду и потери, а потом выбирают лучший ход.",
@@ -1281,7 +1281,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Модель опирается на תֵּיאוֹרְיַת הַבְּחִירָה הָרַסְיוֹנָלִית в экономике."
         , fillInBlankExclusions = listOf(127711L, 127713L, 127714L, 127717L)),
         WordEntity(id = 127719, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הִיסְטוֹרְיוֹגְרַפְיָה פּוֹלִיטִית", transliteration = "historiografya politit", translation = "политическая историография",
+            original = "הִיסְטוֹרְיוֹגְרַפְיָה פּוֹלִיטִית", translation = "политическая историография",
             pos = "noun", semanticGroup = "politics_disciplines",
             definition = "מַחֲקָר הַמְכַסֶּה אֵיךְ סִפּוּרֵי הָעָבָר נִכְתָּבִים וְעַל יְדֵי מִי בָּעוֹלָם הָאַקַדֶמִי.",
             definitionNative = "Изучение того, как и кем пишутся рассказы о прошлом в академической среде.",
@@ -1289,7 +1289,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Сборник посвящён הִיסְטוֹרְיוֹגְרַפְיָה פּוֹלִיטִית двадцатого века."
         , fillInBlankExclusions = listOf(127720L, 127721L, 127723L)),
         WordEntity(id = 127720, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אוֹנְטוֹלוֹגְיָה פּוֹלִיטִית", transliteration = "ontologya politit", translation = "политическая онтология",
+            original = "אוֹנְטוֹלוֹגְיָה פּוֹלִיטִית", translation = "политическая онтология",
             pos = "noun", semanticGroup = "politics_disciplines",
             definition = "תְּחוּם פִילוֹסוֹפִי הַשּׁוֹאֵל מַה קַיָּם מִלְּכַתְּחִילָה בָּעוֹלָם הַצִּבּוּרִי — סֻבְיֶיקְטִים, יְחָסִים, גְּבוּלוֹת.",
             definitionNative = "Философское поле, спрашивающее, что вообще существует в общественном мире — субъекты, связи, границы.",
@@ -1297,7 +1297,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Книга открывает разговор об אוֹנְטוֹלוֹגְיָה פּוֹלִיטִית вслед за Муфф."
         , fillInBlankExclusions = listOf(127719L, 127721L, 127723L)),
         WordEntity(id = 127721, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "דֵּמוֹגְרַפְיָה פּוֹלִיטִית", transliteration = "demografya politit", translation = "политическая демография",
+            original = "דֵּמוֹגְרַפְיָה פּוֹלִיטִית", translation = "политическая демография",
             pos = "noun", semanticGroup = "politics_disciplines",
             definition = "מַדָּע הַחוֹקֵר אֵיךְ מִבְנֶה הָאוּכְלוּסִיָּה מְעַצֵּב הַחְלָטוֹת וַתּוֹצְאוֹת בַּמַּמְלְכָה.",
             definitionNative = "Наука, изучающая, как состав населения формирует решения и итоги в государстве.",
@@ -1305,7 +1305,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Работа сосредоточилась на דֵמוֹגְרַפְיָה פּוֹלִיטִית Восточной Европы."
         ),
         WordEntity(id = 127722, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "כַּלְכָּלָה פּוֹלִיטִית", transliteration = "kalkala politit", translation = "политическая экономия",
+            original = "כַּלְכָּלָה פּוֹלִיטִית", translation = "политическая экономия",
             pos = "phrase", semanticGroup = "politics_disciplines",
             definition = "תְּחוּם הַחוֹקֵר אֵיךְ הָעוֹשֶׁר וְהַשִּׁלְטוֹן מְעַצְּבִים זֶה אֶת זֶה בְּמַעֲרֶכֶת חֶבְרָתִית.",
             definitionNative = "Поле, изучающее, как богатство и власть взаимно формируют друг друга в обществе.",
@@ -1313,7 +1313,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Смит и Маркс основали כַּלְכָּלָה פּוֹלִיטִית как дисциплину."
         , fillInBlankExclusions = listOf(127724L)),
         WordEntity(id = 127723, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אֶפִּיסְטֶמוֹלוֹגְיָה פּוֹלִיטִית", transliteration = "epistemologya politit", translation = "политическая эпистемология",
+            original = "אֶפִּיסְטֶמוֹלוֹגְיָה פּוֹלִיטִית", translation = "политическая эпистемология",
             pos = "noun", semanticGroup = "politics_disciplines",
             definition = "מַחְשָׁבָה עַל יְדִיעָה: אֵיךְ אֶזְרָחִים וְשַׂחְקָנִים יוֹדְעִים מַה שֶׁהֵם יוֹדְעִים עַל הַשִּׁלְטוֹן.",
             definitionNative = "Размышление о знании: как граждане и игроки знают то, что они знают о власти.",
@@ -1321,7 +1321,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Книга открывает главу об אֶפִּיסְטֶמוֹלוֹגְיָה פּוֹלִיטִית в эпоху сети."
         , fillInBlankExclusions = listOf(127719L, 127720L, 127721L)),
         WordEntity(id = 127724, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מֵטָ-פּוֹלִיטִיקָה בְּמוּבָנָהּ הָרָחָב", transliteration = "meta-politika bemuvana harokhav", translation = "метаполитика в широком смысле",
+            original = "מֵטָ-פּוֹלִיטִיקָה בְּמוּבָנָהּ הָרָחָב", translation = "метаполитика в широком смысле",
             pos = "phrase", semanticGroup = "politics_disciplines",
             definition = "מַבָּט מִלְּמַעְלָה עַל הָעוֹלָם הַצִּבּוּרִי בִּכְלָלוּתוֹ — שָׁרְשִׁים, גְּבוּלוֹת וְכִוּוּן.",
             definitionNative = "Взгляд сверху на публичный мир в целом — корни, границы и направление развития.",
@@ -1329,7 +1329,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Статья посвящена מֵטָ-פּוֹלִיטִיקָה בְּמוּבָנָהּ הָרָחָב со времён Аристотеля."
         , fillInBlankExclusions = listOf(127722L)),
         WordEntity(id = 127725, setId = 1277, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אָנָלִיזַת הַשִּׁיח", transliteration = "analizat hasiakh", translation = "дискурс-анализ",
+            original = "אָנָלִיזַת הַשִּׁיח", translation = "дискурс-анализ",
             pos = "phrase", semanticGroup = "politics_theory_critical",
             definition = "שִׁיטָה אַקַדֵמִית הַבּוֹחֶנֶת אֵיךְ טֶקְסְטִים וּדְבָרִים מַשְׁפִּיעִים עַל מַה שֶׁאֶפְשָׁר לוֹמַר וְלַעֲשׂוֹת.",
             definitionNative = "Академический метод: как тексты и речь определяют, что вообще можно сказать и сделать.",
@@ -1340,7 +1340,7 @@ object WordDataHebrewBatch49 {
         // ── Set 1278: Право: углублённый (level=3, UNCOMMON+RARE) ───────────────
 
         WordEntity(id = 127801, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "הִתְיַשְּׁנוּת", transliteration = "hitjashnut", translation = "срок исковой давности",
+            original = "הִתְיַשְּׁנוּת", translation = "срок исковой давности",
             pos = "noun", semanticGroup = "law_civil_remedies",
             definition = "זְמַן מֻגְבָּל שֶׁבּוֹ נִיתָּן לְהַגִּישׁ תְּבִיעָה, וְאַחֲרָיו אֵין לִפְנוֹת לְבֵית מִשְׁפָּט.",
             definitionNative = "Срок, в течение которого можно подать иск; после него суд не примет дело.",
@@ -1349,7 +1349,7 @@ object WordDataHebrewBatch49 {
         ),
 
         WordEntity(id = 127802, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "אִישׁוּם", transliteration = "ishum", translation = "обвинение / предъявление обвинения",
+            original = "אִישׁוּם", translation = "обвинение / предъявление обвинения",
             pos = "noun", semanticGroup = "law_criminal_process",
             definition = "הַחְלָטָה רִשְׁמִית שֶׁל הַתְּבִיעָה לְהַעֲמִיד אָדָם לְדִין עַל מַעֲשֶׂה אָסוּר.",
             definitionNative = "Решение прокуратуры привлечь человека к суду за запрещённое деяние.",
@@ -1358,7 +1358,7 @@ object WordDataHebrewBatch49 {
         ),
 
         WordEntity(id = 127803, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "כַּתָּב אִישׁוּם", transliteration = "ktav ishum", translation = "обвинительное заключение",
+            original = "כַּתָּב אִישׁוּם", translation = "обвинительное заключение",
             pos = "phrase", semanticGroup = "law_criminal_process",
             definition = "מִסְמָךְ רִשְׁמִי הַמְפָרֵט אֶת הָעֲבֵרוֹת וְאֶת הָרְאָיוֹת נֶגֶד הַנֶּאֱשָׁם.",
             definitionNative = "Документ с описанием правонарушений и улик против обвиняемого.",
@@ -1367,7 +1367,7 @@ object WordDataHebrewBatch49 {
         ),
 
         WordEntity(id = 127804, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "זָכוּת שְׁתִיקָה", transliteration = "zakhut shtika", translation = "право хранить молчание",
+            original = "זָכוּת שְׁתִיקָה", translation = "право хранить молчание",
             pos = "phrase", semanticGroup = "law_criminal_process",
             definition = "זְכוּת שֶׁל חָשׁוּד לֹא לַעֲנוֹת לְשׁוֹטְרִים בְּלִי לִפְגֹּעַ בְּמַעֲמָדוֹ.",
             definitionNative = "Право подозреваемого не отвечать полиции, не вредя своему положению.",
@@ -1376,7 +1376,7 @@ object WordDataHebrewBatch49 {
         ),
 
         WordEntity(id = 127805, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "עִסְקַת טִיעוּן", transliteration = "iskat tiyun", translation = "сделка с прокурором / plea deal",
+            original = "עִסְקַת טִיעוּן", translation = "сделка с прокурором / plea deal",
             pos = "phrase", semanticGroup = "law_criminal_process",
             definition = "הֶסְכֵּם בֵּין הַתּוֹבֵעַ לַנֶּאֱשָׁם עַל הוֹדָאָה תְּמוּרַת הֲקָלָה בָּעֹנֶשׁ.",
             definitionNative = "Договор прокурора и обвиняемого: признание вины в обмен на смягчение.",
@@ -1385,7 +1385,7 @@ object WordDataHebrewBatch49 {
         ),
 
         WordEntity(id = 127806, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "חִסּוּן דִּיפְּלוֹמָטִי", transliteration = "khisun diplomatit", translation = "дипломатический иммунитет",
+            original = "חִסּוּן דִּיפְּלוֹמָטִי", translation = "дипломатический иммунитет",
             pos = "phrase", semanticGroup = "law_immunities",
             definition = "פְּטוֹר מִשְׁפָּטִי לִשְׁלִיחֵי מְדִינָה זָרָה מִנֶּגֶד שִׁפּוּט הַמְּדִינָה הַמְאַרַחַת.",
             definitionNative = "Освобождение посланников чужой страны от суда принимающего государства.",
@@ -1394,7 +1394,7 @@ object WordDataHebrewBatch49 {
         ),
 
         WordEntity(id = 127807, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "הַפְקָעַת רְכוּשׁ", transliteration = "hafka'at rekhush", translation = "экспроприация имущества",
+            original = "הַפְקָעַת רְכוּשׁ", translation = "экспроприация имущества",
             pos = "phrase", semanticGroup = "law_torts",
             definition = "לְקִיחַת נְכָסִים מֵאָדָם פְּרָטִי לְצוֹרֶךְ צִיבּוּרִי תְּמוּרַת פִּיצּוּי.",
             definitionNative = "Изъятие собственности у частного лица для общественных нужд за компенсацию.",
@@ -1403,7 +1403,7 @@ object WordDataHebrewBatch49 {
         ),
 
         WordEntity(id = 127808, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "דִּין בֵּינְלְאֻמִּי", transliteration = "din beinleumi", translation = "международное право",
+            original = "דִּין בֵּינְלְאֻמִּי", translation = "международное право",
             pos = "phrase", semanticGroup = "law_branches",
             definition = "כְּלָלִים מְשׁוּתָּפִים שֶׁמַּסְדִּירִים יְחָסִים בֵּין מְדִינוֹת וְאִרְגּוּנִים בֵּינָן.",
             definitionNative = "Общие правила, регулирующие отношения между государствами и их организациями.",
@@ -1412,7 +1412,7 @@ object WordDataHebrewBatch49 {
         ),
 
         WordEntity(id = 127809, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "מֶדִיאָצְיָה", transliteration = "mediatsiya", translation = "медиация / посредничество",
+            original = "מֶדִיאָצְיָה", translation = "медиация / посредничество",
             pos = "noun", semanticGroup = "law_civil_remedies",
             definition = "הֲלִיךְ פְּתִירַת סִכְסוּךְ בְּעֶזְרַת אִישׁ מְקַשֵּׁר נֵייטְרָלִי, מִחוּץ לְבֵית מִשְׁפָּט.",
             definitionNative = "Решение спора с нейтральным посредником, без обращения в суд.",
@@ -1421,7 +1421,7 @@ object WordDataHebrewBatch49 {
         ),
 
         WordEntity(id = 127810, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "עוֹרֵךְ-דִּין פְּלִילִי", transliteration = "orekh-din plili", translation = "адвокат по уголовным делам",
+            original = "עוֹרֵךְ-דִּין פְּלִילִי", translation = "адвокат по уголовным делам",
             pos = "phrase", semanticGroup = "law_criminal_process",
             definition = "מִשְׁפְּטָן הַמַּגֵּן עַל חָשׁוּדִים וְנֶאֱשָׁמִים בְּעֲבֵרוֹת חֲמוּרוֹת.",
             definitionNative = "Юрист, защищающий подозреваемых и обвиняемых в тяжких правонарушениях.",
@@ -1429,7 +1429,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Семья наняла опытного עוֹרֵךְ-דִּין פְּלִילִי без отлагательств."
         ),
         WordEntity(id = 127811, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "מִשְׁפַּט חוּקְתִּי", transliteration = "mishpat khukti", translation = "конституционное право",
+            original = "מִשְׁפַּט חוּקְתִּי", translation = "конституционное право",
             pos = "phrase", semanticGroup = "law_branches",
             definition = "עֲנַף הַדִּין הָעוֹסֵק בְּמִבְנֵה הַמְּדִינָה וּבִזְכוּיוֹת הַיְּסוֹד שֶׁל הַתּוֹשָׁבִים.",
             definitionNative = "Отрасль, изучающая устройство государства и основные права жителей.",
@@ -1437,7 +1437,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "На экзамене дали сложный вопрос по מִשְׁפַּט חוּקְתִּי."
         ),
         WordEntity(id = 127812, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "חוֹק אֶזְרָחִי", transliteration = "khok ezrakhi", translation = "гражданский кодекс",
+            original = "חוֹק אֶזְרָחִי", translation = "гражданский кодекс",
             pos = "phrase", semanticGroup = "law_branches",
             definition = "קוֹבֶץ כְּלָלִים הַמְסַדֵּר חוֹזִים, רְכוּשׁ וִיחָסִים בֵּין אֲנָשִׁים בַּחַיֵּי הַיּוֹמְיוֹם.",
             definitionNative = "Свод правил о договорах, имуществе и бытовых отношениях между людьми.",
@@ -1445,7 +1445,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Поправку в חוֹק אֶזְרָחִי приняли после долгих споров в Кнессете."
         ),
         WordEntity(id = 127813, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "מִשְׁפַּט אֶזְרָחִי", transliteration = "mishpat ezrakhi", translation = "гражданское право",
+            original = "מִשְׁפַּט אֶזְרָחִי", translation = "гражданское право",
             pos = "phrase", semanticGroup = "law_branches",
             definition = "עֲנַף הַדִּין הָעוֹסֵק בְּסִכְסוּכִים בֵּין יְחִידִים, חוֹזִים וְנִזְקֵי רְכוּשׁ.",
             definitionNative = "Раздел юриспруденции о спорах между людьми, договорах и порче имущества.",
@@ -1453,7 +1453,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Большинство исков города идёт через מִשְׁפַּט אֶזְרָחִי."
         ),
         WordEntity(id = 127814, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "כּוֹנֵס נְכָסִים", transliteration = "kones nekhasim", translation = "конкурсный управляющий / ликвидатор",
+            original = "כּוֹנֵס נְכָסִים", translation = "конкурсный управляющий / ликвидатор",
             pos = "phrase", semanticGroup = "law_civil_remedies",
             definition = "בַּעַל תַּפְקִיד שֶׁמָּמוּנֶה לְנַהֵל וְלִמְכֹּר נְכָסִים שֶׁל חַיָּב חַדַל פֵּרָעוֹן.",
             definitionNative = "Назначаемое лицо, что управляет и продаёт имущество банкрота-должника.",
@@ -1461,7 +1461,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "כּוֹנֵס נְכָסִים продал квартиру для покрытия долгов банку."
         ),
         WordEntity(id = 127815, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "נְאָמָנוּת", transliteration = "ne'emanut", translation = "доверительное управление / траст",
+            original = "נְאָמָנוּת", translation = "доверительное управление / траст",
             pos = "noun", semanticGroup = "law_civil_remedies",
             definition = "הֶסְכֵּם שֶׁבּוֹ אֶחָד מַחְזִיק רְכוּשׁ עֲבוּר אַחֵר וּפוֹעֵל לְטוֹבָתוֹ בִּכְנוּת.",
             definitionNative = "Соглашение, по которому один держит имущество для другого и действует честно.",
@@ -1469,7 +1469,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Отец создал נְאָמָנוּת для детей перед переездом за рубеж."
         ),
         WordEntity(id = 127816, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "הֶלְוָאָה", transliteration = "halvaa", translation = "займ / ссуда",
+            original = "הֶלְוָאָה", translation = "займ / ссуда",
             pos = "noun", semanticGroup = "law_civil_remedies",
             definition = "סְכוּם כֶּסֶף שֶׁאֶחָד מַעֲבִיר לְאַחֵר עִם הִתְחַיְּבוּת לְהַחֲזִיר אוֹתוֹ אַחַר כָּךְ.",
             definitionNative = "Сумма денег, переданная другому с обязательством её потом вернуть.",
@@ -1477,7 +1477,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Взяли небольшую הֶלְוָאָה на ремонт кухни."
         ),
         WordEntity(id = 127817, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "מְשַׁכְּנֵתָא", transliteration = "meshakhanta", translation = "ипотека",
+            original = "מְשַׁכְּנֵתָא", translation = "ипотека",
             pos = "noun", semanticGroup = "law_civil_remedies",
             definition = "הַלְוָאָה אֲרֻכַּת טְוָוח לִקְנִיַּת דִּירָה, הַמְּשׁוּלֶּמֶת חֳדָשִׁים רַבִּים.",
             definitionNative = "Долгий заём на покупку жилья, выплачиваемый много лет каждый месяц.",
@@ -1485,7 +1485,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Пара внесла последний платёж по מְשַׁכְּנֵתָא на этой неделе."
         ),
         WordEntity(id = 127818, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "מִשְׁפַּט עֲבוֹדָה", transliteration = "mishpat avoda", translation = "трудовое право",
+            original = "מִשְׁפַּט עֲבוֹדָה", translation = "трудовое право",
             pos = "phrase", semanticGroup = "law_branches",
             definition = "עֲנַף הַדִּין הַמְסַדֵּר יְחָסִים בֵּין מַעֲבִידִים לְעוֹבְדִים וּזְכוּיוֹתֵיהֶם.",
             definitionNative = "Раздел юриспруденции об отношениях работодателей и сотрудников.",
@@ -1493,7 +1493,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Студент выбрал курс מִשְׁפַּט עֲבוֹדָה как факультатив."
         ),
         WordEntity(id = 127819, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "אֲפְלָיָה", transliteration = "aflaya", translation = "дискриминация",
+            original = "אֲפְלָיָה", translation = "дискриминация",
             pos = "noun", semanticGroup = "law_torts",
             definition = "יַחַס שׁוֹנֶה וְלֹא הוֹגֵן לַאֲנָשִׁים בִּגְלַל מָקוֹר, מִין אוֹ דָּת.",
             definitionNative = "Несправедливо разное отношение к людям из-за их происхождения, пола или веры.",
@@ -1501,7 +1501,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Компанию обвинили в אֲפְלָיָה к старшим сотрудницам."
         ),
         WordEntity(id = 127820, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "הֲטְרָדָה", transliteration = "hatrada", translation = "домогательство / харассмент",
+            original = "הֲטְרָדָה", translation = "домогательство / харассмент",
             pos = "noun", semanticGroup = "law_torts",
             definition = "הִתְנַהֲגוּת חוֹזֶרֶת וְלֹא רְצוּיָה הַפּוֹגַעַת בְּכָבוֹד אוֹ בְּשַׁלְוַת אַחֵר.",
             definitionNative = "Повторяющееся нежелательное поведение, ранящее достоинство или покой другого.",
@@ -1509,7 +1509,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Сотрудница пожаловалась на הֲטְרָדָה со стороны начальника отдела."
         ),
         WordEntity(id = 127821, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "הוֹצָאַת דִּיבָּה", transliteration = "hotsa'at diba", translation = "клевета / диффамация",
+            original = "הוֹצָאַת דִּיבָּה", translation = "клевета / диффамация",
             pos = "phrase", semanticGroup = "law_torts",
             definition = "פִּרְסוּם דְּבָרִים שִׁקְרִיִּים עַל אָדָם הַפּוֹגְעִים בְּשֵׁם טוֹב שֶׁלּוֹ.",
             definitionNative = "Распространение лживых сведений о человеке, ранящих его доброе имя.",
@@ -1517,7 +1517,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "На газету подали в суд за הוֹצָאַת דִּיבָּה из-за лживой статьи."
         ),
         WordEntity(id = 127822, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּגִיעָה בְּפְּרָטִיּוּת", transliteration = "pgia befrati'ut", translation = "нарушение неприкосновенности частной жизни",
+            original = "פְּגִיעָה בְּפְּרָטִיּוּת", translation = "нарушение неприкосновенности частной жизни",
             pos = "phrase", semanticGroup = "law_torts",
             definition = "חֲדִירָה לְחַיָּיו הָאִישִׁיִּים שֶׁל אָדָם בְּלִי רְשׁוּתוֹ אוֹ הַסְכָּמָתוֹ.",
             definitionNative = "Вторжение в личную жизнь человека без его разрешения или согласия.",
@@ -1525,7 +1525,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Снимать соседку через окно — явная פְּגִיעָה בְּפְּרָטִיּוּת."
         ),
         WordEntity(id = 127823, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "חָסִינוּת", transliteration = "khasimut", translation = "иммунитет (юридический)",
+            original = "חָסִינוּת", translation = "иммунитет (юридический)",
             pos = "noun", semanticGroup = "law_immunities",
             definition = "פְּטוֹר מִשְׁפָּטִי שֶׁמּוֹנֵעַ לְהַעֲמִיד בַּעַל תַּפְקִיד מְסוּיָּם לְדִין עַל מַעֲשָׂיו.",
             definitionNative = "Юридическая защита от привлечения должностного лица к суду за его действия.",
@@ -1533,7 +1533,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Депутаты Кнессета имеют חָסִינוּת от некоторых исков."
         ),
         WordEntity(id = 127824, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "הִסְגָּרָה", transliteration = "hisgara", translation = "экстрадиция",
+            original = "הִסְגָּרָה", translation = "экстрадиция",
             pos = "noun", semanticGroup = "law_immunities",
             definition = "הַעֲבָרָה רִשְׁמִית שֶׁל אָדָם מוּחְשָׁד מִמְּדִינָה אַחַת לִשְׁנִיָּה לְצוֹרֶךְ מִשְׁפָּט.",
             definitionNative = "Официальная передача подозреваемого из одной страны в другую для суда.",
@@ -1541,7 +1541,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Суд утвердил הִסְגָּרָה после долгого слушания."
         ),
         WordEntity(id = 127825, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "פְּשָׁרָה מִשְׁפָּטִית", transliteration = "pshara mishpatit", translation = "мировое соглашение / правовое урегулирование",
+            original = "פְּשָׁרָה מִשְׁפָּטִית", translation = "мировое соглашение / правовое урегулирование",
             pos = "phrase", semanticGroup = "law_civil_remedies",
             definition = "הֶסְכֵּם בֵּין צְדָדִים יְרִיבִים לְסַיֵּם תְּבִיעָה בְּלִי הַכְרָעַת בֵּית הַמִּשְׁפָּט.",
             definitionNative = "Договор противоборствующих сторон закончить тяжбу без решения суда.",
@@ -1553,7 +1553,7 @@ object WordDataHebrewBatch49 {
 
         WordEntity(
             id = 127901, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_critical_schools", transliteration = "hermeneutika mishpatit",
+            pos = "noun", semanticGroup = "law_critical_schools",
             original = "הֶרְמֶנֵיוּטִיקָה מִשְׁפָּטִית", translation = "юридическая герменевтика",
             definition = "תּוֹרַת הַפֵּירוּשׁ הַמְּיוּשֶׂמֶת לְטֶקְסְטִים מִשְׁפָּטִיִּים — חוּקָּה, חֻקִּים אוֹ פְּסַק דִּין.",
             definitionNative = "Учение о толковании текстов закона — конституции, кодексов, судебных решений.",
@@ -1561,7 +1561,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "הֶרְמֶנֵיוּטִיקָה מִשְׁפָּטִית предостерегает от наивного чтения статей конституции."),
         WordEntity(
             id = 127902, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_policy_procedure", transliteration = "tsedek restorativit",
+            pos = "noun", semanticGroup = "law_policy_procedure",
             original = "צֶדֶק רֶסְטוֹרָטִיבִי", translation = "восстановительное правосудие",
             definition = "גִּישָׁה הַשָּׂמָה דָּגֵשׁ עַל פִּיּוּס בֵּין נִפְגָּע לְפוֹגֵעַ — לֹא רַק עַל עֹנֶשׁ.",
             definitionNative = "Подход с акцентом на примирение жертвы и нарушителя, а не только на наказание.",
@@ -1569,7 +1569,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Школьные программы צֶדֶק רֶסְטוֹרָטִיבִי заменяют отстранение разговором."),
         WordEntity(
             id = 127903, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_social_sciences", transliteration = "kriminologya",
+            pos = "noun", semanticGroup = "law_social_sciences",
             original = "קְרִימִינוֹלוֹגְיָה", translation = "криминология",
             definition = "מַדָּע הַחוֹקֵר אֶת תּוֹפָעַת הַפֶּשַׁע — סִבּוֹתָיו, דְּפוּסָיו וְדַרְכֵי מְנִיעָתוֹ.",
             definitionNative = "Наука, изучающая преступность — её причины, закономерности и способы профилактики.",
@@ -1577,7 +1577,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Семинар по קְרִימִינוֹלוֹגְיָה был посвящён беловоротничковой преступности."),
         WordEntity(
             id = 127904, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_policy_procedure", transliteration = "medinitiyut plili",
+            pos = "noun", semanticGroup = "law_policy_procedure",
             original = "מְדִינִיּוּת פְּלִילִית", translation = "уголовная политика",
             definition = "קַו אֶסְטְרָטֵגִי שֶׁל הַמְּדִינָה בִּמְנִיעַת פֶּשַׁע, אַכִיפָה וְעֲנִישָׁה.",
             definitionNative = "Стратегический курс государства по борьбе с преступностью, надзору и наказанию.",
@@ -1585,7 +1585,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Жёсткая מְדִינִיּוּת פְּלִילִית не всегда снижает уровень преступности."),
         WordEntity(
             id = 127905, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_jurisprudence_theory", transliteration = "normativizm mishpati",
+            pos = "noun", semanticGroup = "law_jurisprudence_theory",
             original = "נוֹרְמָטִיבִיזְם מִשְׁפָּטִי", translation = "правовой нормативизм (Кельзен)",
             definition = "אַסְכּוֹלָה הָרוֹאָה אֶת הַמִּשְׁפָּט כְּמַעֲרֶכֶת כְּלָלִים טְהוּרָה, מְנֻתֶּקֶת מוּסָר וּפוֹלִיטִיקָה.",
             definitionNative = "Школа, видящая право как чистую систему норм, отделённую от морали и политики.",
@@ -1593,7 +1593,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Кельзен стремился обосновать נוֹרְמָטִיבִיזְם מִשְׁפָּטִי как науку, свободную от чувств."),
         WordEntity(
             id = 127906, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_policy_procedure", transliteration = "protsedura mishpatit",
+            pos = "noun", semanticGroup = "law_policy_procedure",
             original = "פְּרוֹצֶדוּרָה מִשְׁפָּטִית", translation = "правовая процедура",
             definition = "סֵדֶר הַצְּעָדִים הַמְּחֻיָּב לְבֵרוּר תְּבִיעָה — מִכְּתַב הַתְּבִיעָה וְעַד פְּסַק הַדִּין.",
             definitionNative = "Установленный порядок действий по делу — от подачи иска до вынесения решения.",
@@ -1601,7 +1601,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Нарушенная פְּרוֹצֶדוּרָה מִשְׁפָּטִית может привести к признанию доказательств недопустимыми."),
         WordEntity(
             id = 127907, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_branches_advanced", transliteration = "amana bein'le'umit",
+            pos = "noun", semanticGroup = "law_branches_advanced",
             original = "אֲמָנָה בֵּינְלְאוּמִית", translation = "международный договор / конвенция",
             definition = "הֶסְכֵּם רִשְׁמִי בֵּין מְדִינוֹת הַמְּחַיֵּב אֶת חוֹתְמָיו עַל פִּי הַדִּין הַבֵּינְלְאוּמִי.",
             definitionNative = "Официальное соглашение между государствами, обязательное для подписавших сторон.",
@@ -1609,7 +1609,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "אֲמָנָה בֵּינְלְאוּמִית о правах ребёнка ратифицирована большинством стран мира."),
         WordEntity(
             id = 127908, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_branches_advanced", transliteration = "mishpat amim",
+            pos = "noun", semanticGroup = "law_branches_advanced",
             original = "מִשְׁפַּט עַמִּים", translation = "международное публичное право / право народов",
             definition = "עָנָף מִשְׁפָּטִי הַמְסַדִּיר יְחָסִים בֵּין מְדִינוֹת וְאִרְגּוּנִים עַל-מְדִינָתִיִּים.",
             definitionNative = "Отрасль права, регулирующая отношения между государствами и наднациональными структурами.",
@@ -1617,7 +1617,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "מִשְׁפַּט עַמִּים запрещает применение химического оружия в ходе войны."),
         WordEntity(
             id = 127909, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_critical_schools", transliteration = "bikoret mishpatit",
+            pos = "noun", semanticGroup = "law_critical_schools",
             original = "בִּיקּוֹרֶת מִשְׁפָּטִית", translation = "правовая критика",
             definition = "זֶרֶם אֲקָדֵמִי הַחוֹשֵׂף הֲטָיוֹת חֶבְרָתִיּוֹת וּפוֹלִיטִיּוֹת בְּמַעֲרֶכֶת הַחֻקָּה.",
             definitionNative = "Академическое течение, обнажающее социальные и политические уклоны в системе закона.",
@@ -1625,7 +1625,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Феминистская בִּיקּוֹרֶת מִשְׁפָּטִית исследовала уклон судьи-мужчины."),
         WordEntity(
             id = 127910, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_policy_procedure", transliteration = "aravut mishpatit",
+            pos = "noun", semanticGroup = "law_policy_procedure",
             original = "עֲרָבוּת מִשְׁפָּטִית", translation = "юридическая гарантия",
             definition = "מַחֲוַת הִתְחַיְּבוּת רִשְׁמִית הַנּוֹתֶנֶת בִּטָּחוֹן לְקִיּוּם זְכוּת אוֹ חוֹבָה.",
             definitionNative = "Официальное обязательство, обеспечивающее реализацию права или исполнение долга.",
@@ -1633,7 +1633,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Прочная עֲרָבוּת מִשְׁפָּטִית — обязательное условие любой серьёзной ипотечной сделки."),
         WordEntity(
             id = 127911, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_jurisprudence_theory", transliteration = "mishpat tiv'i",
+            pos = "noun", semanticGroup = "law_jurisprudence_theory",
             original = "מִשְׁפַּט טֶבְעִי", translation = "естественное право",
             definition = "תְּפִיסָה הָרוֹאָה זְכֻיּוֹת אֲדָם כִּנְתוּנוֹת מֵעַצְמָן — לִפְנֵי כָּל חוֹק כָּתוּב.",
             definitionNative = "Учение, по которому права человека даны от рождения — до любых писаных законов.",
@@ -1641,7 +1641,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Сторонники מִשְׁפַּט טֶבְעִי утверждают: достоинство человека первичнее конституции."),
         WordEntity(
             id = 127912, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_policy_procedure", transliteration = "hegemonia mishpatit",
+            pos = "noun", semanticGroup = "law_policy_procedure",
             original = "הֶגְמוֹנְיָה מִשְׁפָּטִית", translation = "правовая гегемония",
             definition = "שְׁלִיטָה תַּרְבּוּתִית שֶׁל גִּישָׁה מִשְׁפָּטִית מְסֻיֶּמֶת עַל שְׂדֵה הַשִּׂיחַ.",
             definitionNative = "Культурное доминирование одного правового подхода над всем дискурсом эпохи.",
@@ -1649,7 +1649,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Либеральная הֶגְמוֹנְיָה מִשְׁפָּטִית сформировала модель свободного рынка на Западе."),
         WordEntity(
             id = 127913, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_social_sciences", transliteration = "sotsyologya mishpatit",
+            pos = "noun", semanticGroup = "law_social_sciences",
             original = "סוֹצְיוֹלוֹגְיָה מִשְׁפָּטִית", translation = "социология права",
             definition = "תְּחוּם הַחוֹקֵר אֵיךְ הַחֶבְרָה מְעַצֶּבֶת אֶת הַחֹק וְאֵיךְ הַחֹק חוֹזֵר וּמְעַצֵּב אוֹתָהּ.",
             definitionNative = "Дисциплина, изучающая, как общество формирует закон и как закон формирует общество.",
@@ -1657,7 +1657,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "סוֹצְיוֹלוֹגְיָה מִשְׁפָּטִית объясняет, почему одно наказание работает по-разному в разных общинах."),
         WordEntity(
             id = 127914, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_social_sciences", transliteration = "antropologya mishpatit",
+            pos = "noun", semanticGroup = "law_social_sciences",
             original = "אַנְתְּרוֹפּוֹלוֹגְיָה מִשְׁפָּטִית", translation = "правовая антропология",
             definition = "עִיּוּן בְּמִנְהָגֵי שֵׁבֶט וּקְהִילָה כְּשִׁכְבָה בִּלְתִּי כְתוּבָה שֶׁל סֵדֶר נוֹרְמָטִיבִי.",
             definitionNative = "Изучение племенных и общинных обычаев как неписаного слоя нормативного порядка.",
@@ -1665,7 +1665,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "אַנְתְּרוֹפּוֹלוֹגְיָה מִשְׁפָּטִית открывает древние нормы посредничества у племён Сахары."),
         WordEntity(
             id = 127915, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_social_sciences", transliteration = "ide'ologya mishpatit",
+            pos = "noun", semanticGroup = "law_social_sciences",
             original = "אֵידֵיאוֹלוֹגְיָה מִשְׁפָּטִית", translation = "правовая идеология",
             definition = "מַעֲרֶכֶת אֱמוּנוֹת עַל תַּפְקִיד הַחֹק — כְּגוֹן לִיבֵּרָלִיזְם, מַרְקְסִיזְם אוֹ שַׁמְרָנוּת.",
             definitionNative = "Система убеждений о роли закона — например, либерализм, марксизм или консерватизм.",
@@ -1673,7 +1673,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Скрытая אֵידֵיאוֹלוֹגְיָה מִשְׁפָּטִית направляет любое судебное решение, даже самое техническое."),
         WordEntity(
             id = 127916, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_branches_advanced", transliteration = "mishpat bein'le'umi privati",
+            pos = "noun", semanticGroup = "law_branches_advanced",
             original = "מִשְׁפַּט בֵּינְלְאוּמִי פְּרִיבָטִי", translation = "международное частное право",
             definition = "תְּחוּם הַקּוֹבֵעַ אֵיזוֹ מַעֲרֶכֶת דִּינִים תָּחוּל עַל סִכְסוּךְ אֶזְרָחִי חוֹצֶה גְּבוּלוֹת.",
             definitionNative = "Раздел, определяющий, какая правовая система применяется в трансграничном частном споре.",
@@ -1681,7 +1681,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "מִשְׁפַּט בֵּינְלְאוּמִי פְּרִיבָטִי решает, по законам какой страны делится наследство."),
         WordEntity(
             id = 127917, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_branches_advanced", transliteration = "mishpat minali elyon",
+            pos = "noun", semanticGroup = "law_branches_advanced",
             original = "מִשְׁפַּט מִנְהָלִי עֶלְיוֹן", translation = "высшее административное право",
             definition = "מַעֲרֶכֶת הַכְּלָלִים הַבּוֹדֶקֶת אֶת חֻקִּיּוּת מַעֲשֵׂי הַשִּׁלְטוֹן בְּעֶרְכָּאָה גְּבוֹהָה.",
             definitionNative = "Высший контроль над законностью действий органов власти в верховной инстанции.",
@@ -1689,7 +1689,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Иск в מִשְׁפַּט מִנְהָלִי עֶלְיוֹן отменил сомнительный тендер."),
         WordEntity(
             id = 127918, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_social_sciences", transliteration = "pelilologya",
+            pos = "noun", semanticGroup = "law_social_sciences",
             original = "פְּלִילוֹלוֹגְיָה", translation = "криминалистика (наука)",
             definition = "מַדַּע הַחֲקִירָה הַטֶּכְנִי — טְבִיעוֹת אֶצְבָּעוֹת, בָּלִיסְטִיקָה וּבְדִיקוֹת דִּי-אֵן-אֵי.",
             definitionNative = "Наука криминального расследования — отпечатки, баллистика, ДНК-экспертиза.",
@@ -1697,7 +1697,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Современная פְּלִילוֹלוֹגְיָה опирается на международные базы данных."),
         WordEntity(
             id = 127919, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_branches_advanced", transliteration = "mishpat khevrati",
+            pos = "noun", semanticGroup = "law_branches_advanced",
             original = "מִשְׁפַּט חֶבְרָתִי", translation = "социальное право",
             definition = "אַסְכּוֹלָה הַמְּחַיֶּבֶת אֶת הַמְּדִינָה לְהַבְטִיחַ רְוָחָה, חִנּוּךְ וּבְרִיאוּת לַכֹּל.",
             definitionNative = "Учение, обязывающее государство обеспечить благосостояние, образование и медицину для всех.",
@@ -1705,7 +1705,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "מִשְׁפַּט חֶבְרָתִי утвердил пенсию как право, а не как милость."),
         WordEntity(
             id = 127920, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_jurisprudence_theory", transliteration = "teoriyat hamishpat",
+            pos = "noun", semanticGroup = "law_jurisprudence_theory",
             original = "תֵּיאוֹרְיַת הַמִּשְׁפָּט", translation = "теория права",
             definition = "עִיּוּן יְסוֹדִי בִּשְׁאֵלוֹת מַהוּת הַחֹק, מָקוֹר תֹּקְפּוֹ וְזִיקָתוֹ לַמּוּסָר.",
             definitionNative = "Фундаментальное исследование сути закона, источника его силы и связи с моралью.",
@@ -1713,7 +1713,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "תֵּיאוֹרְיַת הַמִּשְׁפָּט — обязательный курс для каждого первокурсника."),
         WordEntity(
             id = 127921, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_critical_schools", transliteration = "kritika mishpatit",
+            pos = "noun", semanticGroup = "law_critical_schools",
             original = "קְרִיטִיקָה מִשְׁפָּטִית", translation = "критическая теория права (CLS)",
             definition = "תְּנוּעָה אָקָדֵמִית הַחוֹשֶׁפֶת אֶת תַּלוּת הַחֹק בְּכֹחַ פּוֹלִיטִי וּמַעֲמָדִי.",
             definitionNative = "Академическое движение, разоблачающее зависимость закона от политической и классовой власти.",
@@ -1721,7 +1721,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "קְרִיטִיקָה מִשְׁפָּטִית в Гарварде утверждала: нейтрального судебного решения не бывает."),
         WordEntity(
             id = 127922, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_critical_schools", transliteration = "post-kolonializm mishpati",
+            pos = "noun", semanticGroup = "law_critical_schools",
             original = "פּוֹסְטְ-קוֹלוֹנְיָאלִיזְם מִשְׁפָּטִי", translation = "постколониальная юриспруденция",
             definition = "גִּישָׁה הַחוֹקֶרֶת כֵּיצַד דִּינֵי הָאִימְפֶּרְיָה מַמְשִׁיכִים לְעַצֵּב מְדִינוֹת לְאַחַר עֲצְמָאוּת.",
             definitionNative = "Подход, изучающий, как имперские нормы продолжают формировать страны после независимости.",
@@ -1729,7 +1729,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "פּוֹסְטְ-קוֹלוֹנְיָאלִיזְם מִשְׁפָּטִי рассматривается в Индии через остатки британского права."),
         WordEntity(
             id = 127923, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_critical_schools", transliteration = "dekonstruktsiya mishpatit",
+            pos = "noun", semanticGroup = "law_critical_schools",
             original = "דֵּקוֹנְסְטְרוּקְצְיָה מִשְׁפָּטִית", translation = "правовая деконструкция",
             definition = "פֵּרוּק טֶקְסְט מִשְׁפָּטִי לִיסוֹדוֹתָיו כְּדֵי לַחְשֹׂף סְתִירוֹת וְהַשְׁתָּקוּיוֹת.",
             definitionNative = "Разбор юридического текста на элементы для выявления противоречий и умолчаний.",
@@ -1737,7 +1737,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "דֵּקוֹנְסְטְרוּקְצְיָה מִשְׁפָּטִית в духе Деррида обнажила насилие в языке конституции."),
         WordEntity(
             id = 127924, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_jurisprudence_theory", transliteration = "yurisprudentsya",
+            pos = "noun", semanticGroup = "law_jurisprudence_theory",
             original = "יוּרִיסְפְּרוּדֶנְצְיָה", translation = "юриспруденция",
             definition = "כְּלַל הַיֶּדַע הָעִיּוּנִי וְהַמַּעֲשִׂי שֶׁל מִקְצוֹעַ הַחֹק עַל אַסְכּוֹלוֹתָיו.",
             definitionNative = "Совокупность теоретических и практических знаний о праве и его школах.",
@@ -1745,7 +1745,7 @@ object WordDataHebrewBatch49 {
             exampleNative = "Книги по יוּרִיסְפְּרוּדֶנְצְיָה со времён Рима изучаются на каждом юрфаке и сегодня."),
         WordEntity(
             id = 127925, setId = 1279, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "law_jurisprudence_theory", transliteration = "meta-norma mishpatit",
+            pos = "noun", semanticGroup = "law_jurisprudence_theory",
             original = "מֵטָ-נוֹרְמָה מִשְׁפָּטִית", translation = "правовая метанорма",
             definition = "כְּלָל עֶלְיוֹן הַקּוֹבֵעַ אֵיךְ נוֹצָרוֹת, מִשְׁתַּנּוֹת וּפוֹקְעוֹת נוֹרְמוֹת רְגִילוֹת.",
             definitionNative = "Высшее правило, определяющее, как создаются, меняются и отменяются обычные нормы.",

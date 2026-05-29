@@ -61,7 +61,7 @@ object WordDataHebrewDoctorL1 {
         // ── doctor_basic_people (5) — кто в кабинете ──
         WordEntity(
             id = 180201, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_people", transliteration = "rofe",
+            pos = "noun", semanticGroup = "doctor_basic_people",
             original = "רוֹפֵא", translation = "врач",
             definition = "אִישׁ מִקְצוֹעַ שֶׁמְּטַפֵּל בַּחוֹלִים וְכוֹתֵב מִרְשָׁם לִתְרוּפוֹת.",
             definitionNative = "Специалист, что лечит больных и выписывает рецепты на лекарства.",
@@ -70,7 +70,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180202L, 180203L, 180204L, 180205L)),
         WordEntity(
             id = 180202, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_people", transliteration = "akhot",
+            pos = "noun", semanticGroup = "doctor_basic_people",
             original = "אָחוֹת", translation = "медсестра",
             definition = "אִשָּׁה שֶׁעוֹזֶרֶת לָרוֹפֵא, נוֹתֶנֶת זְרִיקוֹת וּמוֹדֶדֶת לַחַץ דָּם.",
             definitionNative = "Женщина, что помогает врачу — делает уколы и измеряет давление.",
@@ -79,7 +79,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180201L, 180203L, 180204L, 180205L)),
         WordEntity(
             id = 180203, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_people", transliteration = "metapel",
+            pos = "noun", semanticGroup = "doctor_basic_people",
             original = "מְטַפֵּל", translation = "санитар (ухаживающий)",
             definition = "עוֹבֵד שֶׁשּׁוֹמֵר עַל הַחוֹלֶה — מַאֲכִיל, מְלַוֶּוה וְעוֹזֵר לָקוּם.",
             definitionNative = "Сотрудник, что ходит за больным — кормит, сопровождает и помогает встать.",
@@ -88,7 +88,7 @@ object WordDataHebrewDoctorL1 {
         ),
         WordEntity(
             id = 180204, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_people", transliteration = "khole",
+            pos = "noun", semanticGroup = "doctor_basic_people",
             original = "חוֹלֶה", translation = "больной (пациент)",
             definition = "אָדָם שֶׁמַּרְגִּישׁ רַע אוֹ יֵשׁ לוֹ מַחֲלָה וְצָרִיךְ טִפּוּל.",
             definitionNative = "Человек, что плохо себя чувствует или болеет и нуждается в лечении.",
@@ -97,7 +97,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180201L, 180202L, 180203L, 180205L)),
         WordEntity(
             id = 180205, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "doctor_basic_people", transliteration = "mazkira",
+            pos = "noun", semanticGroup = "doctor_basic_people",
             original = "מַזְכִּירָה", translation = "регистратор (в клинике)",
             definition = "אִשָּׁה בִּכְנִיסָה לַמִּרְפָּאָה שֶׁרוֹשֶׁמֶת חוֹלִים וְעוֹנָה לַטֶּלֶפוֹן.",
             definitionNative = "Женщина у входа в клинику — записывает больных и отвечает на звонки.",
@@ -108,7 +108,7 @@ object WordDataHebrewDoctorL1 {
         // ── doctor_basic_symptoms (5) — что чувствует пациент ──
         WordEntity(
             id = 180206, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_symptoms", transliteration = "ke'ev",
+            pos = "noun", semanticGroup = "doctor_basic_symptoms",
             original = "כְּאֵב", translation = "боль",
             definition = "תְּחוּשָׁה לֹא נְעִימָה בַּגּוּף — חַד אוֹ עַמּוּם, קָצָר אוֹ אָרֹךְ.",
             definitionNative = "Неприятное ощущение в теле — острое или тупое, краткое или долгое.",
@@ -117,7 +117,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180207L, 180208L, 180209L, 180210L)),
         WordEntity(
             id = 180207, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "doctor_basic_symptoms", transliteration = "khom",
+            pos = "noun", semanticGroup = "doctor_basic_symptoms",
             original = "חֹם", translation = "температура (жар)",
             definition = "מַצָּב שֶׁבּוֹ הַגּוּף מִתְחַמֵּם מִדַּי — לְרוֹב סִימָן שֶׁל הִצְטַנְּנוּת אוֹ זִיהוּם.",
             definitionNative = "Состояние, когда тело слишком горячее — обычно знак простуды или инфекции.",
@@ -126,7 +126,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180206L, 180208L, 180209L, 180210L)),
         WordEntity(
             id = 180208, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_symptoms", transliteration = "shi'ul",
+            pos = "noun", semanticGroup = "doctor_basic_symptoms",
             original = "שִׁעוּל", translation = "кашель",
             definition = "פְּלִיטַת אֲוִיר חֲזָקָה מֵהַגָּרוֹן — לְרֹב כְּשֶׁמַּשֶּׁהוּ מַפְרִיעַ שָׁם.",
             definitionNative = "Резкий выброс воздуха из горла — обычно когда там что-то мешает.",
@@ -135,7 +135,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180206L, 180207L, 180209L, 180210L)),
         WordEntity(
             id = 180209, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_symptoms", transliteration = "tsina",
+            pos = "noun", semanticGroup = "doctor_basic_symptoms",
             original = "צִנָּה", translation = "простуда",
             definition = "מַחֲלָה קַלָּה שֶׁל הָאַף וְהַגָּרוֹן עִם נַזֶּלֶת וְקְצָת חֹם.",
             definitionNative = "Лёгкая болезнь носа и горла с насморком и небольшой температурой.",
@@ -144,7 +144,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180206L, 180207L, 180208L, 180210L)),
         WordEntity(
             id = 180210, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_symptoms", transliteration = "skharkhoret",
+            pos = "noun", semanticGroup = "doctor_basic_symptoms",
             original = "סְחַרְחֹרֶת", translation = "головокружение",
             definition = "תְּחוּשָׁה שֶׁהַחֶדֶר סוֹבֵב סְבִיבְךָ וְקָשֶׁה לַעֲמֹד יָשָׁר.",
             definitionNative = "Ощущение, будто комната вращается вокруг — и трудно стоять прямо.",
@@ -155,7 +155,7 @@ object WordDataHebrewDoctorL1 {
         // ── doctor_basic_meds (5) — что прописывают ──
         WordEntity(
             id = 180211, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_meds", transliteration = "trufa",
+            pos = "noun", semanticGroup = "doctor_basic_meds",
             original = "תְּרוּפָה", translation = "лекарство",
             definition = "חֹמֶר שֶׁלּוֹקְחִים כְּדֵי לְהַרְגִּישׁ טוֹב יוֹתֵר אוֹ לְהָקֵל עַל מַחֲלָה.",
             definitionNative = "Вещество, что принимают, чтобы стало лучше или болезнь полегчала.",
@@ -164,7 +164,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180212L, 180213L, 180214L, 180215L)),
         WordEntity(
             id = 180212, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_meds", transliteration = "mirsham",
+            pos = "noun", semanticGroup = "doctor_basic_meds",
             original = "מִרְשָׁם", translation = "рецепт",
             definition = "פֶּתֶק מֵהָרוֹפֵא שֶׁמַּרְשֶׁה לָקַחַת תְּרוּפָה מְסֻיֶּמֶת בְּבֵית הַמִּרְקַחַת.",
             definitionNative = "Бумажка от врача — разрешает забрать определённое лекарство в аптеке.",
@@ -173,7 +173,7 @@ object WordDataHebrewDoctorL1 {
         ),
         WordEntity(
             id = 180213, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "doctor_basic_meds", transliteration = "glula",
+            pos = "noun", semanticGroup = "doctor_basic_meds",
             original = "גְּלוּלָה", translation = "пилюля (таблетка)",
             definition = "כַּדּוּר קָטָן עָגֹל שֶׁבּוֹלְעִים עִם מַיִם בְּסוֹף הָאֲרוּחָה.",
             definitionNative = "Маленький круглый шарик — глотают с водой в конце еды.",
@@ -182,7 +182,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180211L, 180212L, 180214L, 180215L)),
         WordEntity(
             id = 180214, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_meds", transliteration = "sirop",
+            pos = "noun", semanticGroup = "doctor_basic_meds",
             original = "סִירוֹפּ", translation = "сироп",
             definition = "תְּרוּפָה נוֹזְלִית מְתוּקָה שֶׁשּׁוֹתִים עִם כַּפִּית מְיֻחֶדֶת.",
             definitionNative = "Сладкое жидкое средство — пьют со специальной ложечкой.",
@@ -191,7 +191,7 @@ object WordDataHebrewDoctorL1 {
         ),
         WordEntity(
             id = 180215, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "doctor_basic_meds", transliteration = "mishkha",
+            pos = "noun", semanticGroup = "doctor_basic_meds",
             original = "מִשְׁחָה", translation = "мазь",
             definition = "חֹמֶר סָמִיךְ שֶׁמּוֹרְחִים עַל הָעוֹר בִּמְקוֹם שֶׁכּוֹאֵב אוֹ מְגָרֵד.",
             definitionNative = "Густое средство — мажут на кожу там, где болит или чешется.",
@@ -202,7 +202,7 @@ object WordDataHebrewDoctorL1 {
         // ── doctor_basic_actions (5) — что делают на приёме ──
         WordEntity(
             id = 180216, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "doctor_basic_actions", transliteration = "likbo'a tor",
+            pos = "phrase", semanticGroup = "doctor_basic_actions",
             original = "לִקְבֹּעַ תּוֹר", translation = "записаться на приём",
             definition = "לִתְפֹּס מָקוֹם וְשָׁעָה אֵצֶל הָרוֹפֵא דֶּרֶךְ הַטֶּלֶפוֹן אוֹ הָאֲתָר.",
             definitionNative = "Занять место и время у врача — по телефону или через сайт.",
@@ -211,7 +211,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180217L, 180219L)),
         WordEntity(
             id = 180217, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "doctor_basic_actions", transliteration = "limdod khom",
+            pos = "phrase", semanticGroup = "doctor_basic_actions",
             original = "לִמְדֹּד חֹם", translation = "измерить температуру",
             definition = "לִבְדֹּק כַּמָּה חַם הַגּוּף בְּעֶזְרַת מַד חֹם תַּחַת הַלָּשׁוֹן אוֹ הַשֶּׁחִי.",
             definitionNative = "Проверить, насколько горячее тело — градусником под язык или подмышку.",
@@ -220,7 +220,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180216L, 180219L)),
         WordEntity(
             id = 180218, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "verb", semanticGroup = "doctor_basic_actions", transliteration = "lehitrape",
+            pos = "verb", semanticGroup = "doctor_basic_actions",
             original = "לְהִתְרַפֵּא", translation = "выздоравливать",
             definition = "לַחֲזֹר לְהַרְגִּישׁ טוֹב אַחֲרֵי מַחֲלָה אוֹ פְּצִיעָה.",
             definitionNative = "Снова чувствовать себя хорошо — после болезни или ушиба.",
@@ -229,7 +229,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180220L)),
         WordEntity(
             id = 180219, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "doctor_basic_actions", transliteration = "lishtot trufa",
+            pos = "phrase", semanticGroup = "doctor_basic_actions",
             original = "לִשְׁתּוֹת תְּרוּפָה", translation = "пить лекарство",
             definition = "לָקַחַת אֶת מַה שֶּׁהָרוֹפֵא רָשַׁם בִּזְמַן הַנָּכוֹן וּבַמִּינוּן הַנָּכוֹן.",
             definitionNative = "Принимать то, что врач выписал — в нужное время и в нужной дозе.",
@@ -238,7 +238,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180216L, 180217L)),
         WordEntity(
             id = 180220, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "verb", semanticGroup = "doctor_basic_actions", transliteration = "lanuakh",
+            pos = "verb", semanticGroup = "doctor_basic_actions",
             original = "לָנוּחַ", translation = "отдыхать",
             definition = "לְהַפְסִיק לַעֲשׂוֹת מַשֶּׁהוּ וְלָתֵת לַגּוּף לֶאֱסֹף כֹּחַ — בִּשְׁכִיבָה אוֹ בְּשֵׁנָה.",
             definitionNative = "Перестать что-то делать и дать телу набрать силы — лёжа или во сне.",
@@ -249,7 +249,7 @@ object WordDataHebrewDoctorL1 {
         // ── doctor_basic_visit (5) — слова визита ──
         WordEntity(
             id = 180221, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "doctor_basic_visit", transliteration = "tor",
+            pos = "noun", semanticGroup = "doctor_basic_visit",
             original = "תּוֹר", translation = "очередь / запись",
             definition = "מָקוֹם וְשָׁעָה שֶׁמְּחַכִּים בָּהֶם לְפֶגִישָׁה עִם הָרוֹפֵא.",
             definitionNative = "Место и время, где ждут встречи с врачом.",
@@ -258,7 +258,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180223L)),
         WordEntity(
             id = 180222, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "doctor_basic_visit", transliteration = "kheder rofe",
+            pos = "phrase", semanticGroup = "doctor_basic_visit",
             original = "חֶדֶר רוֹפֵא", translation = "кабинет врача",
             definition = "חֶדֶר קָטָן בַּמִּרְפָּאָה שֶׁבּוֹ הָרוֹפֵא בּוֹדֵק וּמְקַבֵּל חוֹלִים.",
             definitionNative = "Маленькая комната в клинике — там врач смотрит и принимает больных.",
@@ -267,7 +267,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180224L, 180225L)),
         WordEntity(
             id = 180223, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "doctor_basic_visit", transliteration = "hamlatsot",
+            pos = "noun", semanticGroup = "doctor_basic_visit",
             original = "הֶמְלָצוֹת", translation = "рекомендации (врача)",
             definition = "מַה שֶׁהָרוֹפֵא מְבַקֵּשׁ לַעֲשׂוֹת אַחֲרֵי הַבִּיקוּר — לִשְׁתּוֹת, לָנוּחַ, לַחֲזֹר.",
             definitionNative = "Что врач просит сделать после визита — пить, отдыхать, прийти снова.",
@@ -276,7 +276,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180221L)),
         WordEntity(
             id = 180224, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "doctor_basic_visit", transliteration = "ishur makhala",
+            pos = "phrase", semanticGroup = "doctor_basic_visit",
             original = "אִישּׁוּר מַחֲלָה", translation = "больничный лист",
             definition = "מִסְמָךְ מֵהָרוֹפֵא שֶׁמַּרְשֶׁה לֹא לָבוֹא לָעֲבוֹדָה בִּזְמַן מַחֲלָה.",
             definitionNative = "Документ от врача — разрешает не приходить на работу во время болезни.",
@@ -285,7 +285,7 @@ object WordDataHebrewDoctorL1 {
          fillInBlankExclusions = listOf(180222L, 180225L)),
         WordEntity(
             id = 180225, setId = 1802, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "doctor_basic_visit", transliteration = "hanpakat ishur",
+            pos = "phrase", semanticGroup = "doctor_basic_visit",
             original = "הַנְפָּקַת אִישּׁוּר", translation = "выдача справки",
             definition = "פְּעוּלָה שֶׁל הַמַּזְכִּירָה אוֹ הָרוֹפֵא — מוֹסְרִים לְךָ נְיָר רִשְׁמִי בַּיָּד.",
             definitionNative = "Действие регистратора или врача — выдают тебе официальную бумагу в руки.",

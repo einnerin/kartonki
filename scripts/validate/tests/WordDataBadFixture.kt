@@ -3,7 +3,7 @@ package scripts.validate.tests
 // TEST FIXTURE — не импортируется в приложение.
 // Три setId'а с намеренными нарушениями по каждому валидатору:
 //   9992 — en-ru, основные нарушения
-//   9993 — he-ru, специфичные для иврита (transliteration format, blank ambiguity,
+//   9993 — he-ru, специфичные для иврита (blank ambiguity,
 //          mixed-script с арабской ت вместо ивритской ת)
 //   9994 — en-ru, монотонные examples (триггер validate_example_variety,
 //          остальные валидаторы должны на нём пройти)
@@ -24,7 +24,7 @@ object WordDataBadFixture {
         ),
         WordSetEntity(
             id = 9993, languagePair = "he-ru", orderIndex = 9993,
-            name = "TestBadHe", description = "Invalid he-ru fixture — IPA translit, mixed-script, blank ambiguity",
+            name = "TestBadHe", description = "Invalid he-ru fixture — mixed-script, blank ambiguity",
             topic = "TestFixtureBadHe", level = 1,
         ),
         WordSetEntity(
@@ -202,9 +202,9 @@ object WordDataBadFixture {
         // setId=9993: Hebrew-специфичные нарушения
         // ════════════════════════════════════════════════════════════════════
 
-        // 16. violate validate_hebrew_transliteration_format — IPA-стиль в скобках
+        // 16. Filler / clean he-ru entry (нужен ≥4-й word для group_sizes на 9993)
         WordEntity(id = 999301, setId = 9993, languagePair = "he-ru", rarity = "COMMON",
-            original = "מַחְשֵׁב", transliteration = "[mɑxˈʃev]", translation = "компьютер",
+            original = "מַחְשֵׁב", translation = "компьютер",
             definition = "Устройство для обработки данных и вычислений.",
             definitionNative = "Машина для обработки данных и вычислений.",
             example = "מַחְשֵׁב חָדָשׁ עוֹמֵד עַל הַשּׁוּלְחָן.",
@@ -214,7 +214,7 @@ object WordDataBadFixture {
         // 17. violate validate_blank_ambiguity_hebrew — isFillInBlankSafe=true
         // но original в example вообще не найти даже с prefix-tolerance
         WordEntity(id = 999302, setId = 9993, languagePair = "he-ru", rarity = "COMMON",
-            original = "סֵפֶר", transliteration = "sefer", translation = "книга",
+            original = "סֵפֶר", translation = "книга",
             definition = "Множество страниц с буквами под одной обложкой.",
             definitionNative = "Связка страниц с текстом под одной обложкой.",
             example = "הוּא יָשַׁב לְיַד הַחַלּוֹן בַּשֶּׁקֶט הַגָּמוּר.",
@@ -225,7 +225,7 @@ object WordDataBadFixture {
         // 18. violate validate_no_foreign_script_in_original — арабская ت (U+062A)
         // вставлена в Hebrew original вместо ивритской ת (U+05EA)
         WordEntity(id = 999303, setId = 9993, languagePair = "he-ru", rarity = "COMMON",
-            original = "בَית", transliteration = "bayit", translation = "дом",
+            original = "בَית", translation = "дом",
             definition = "Здание, где живут люди.",
             definitionNative = "Здание, где живут люди и хранят вещи.",
             example = "הַבַּיִת הַגָּדוֹל עוֹמֵד עַל גִּבְעָה.",
@@ -234,7 +234,7 @@ object WordDataBadFixture {
 
         // 19. Filler — нужен 4-й word для прохождения group_sizes на 9993
         WordEntity(id = 999304, setId = 9993, languagePair = "he-ru", rarity = "COMMON",
-            original = "כֶּלֶב", transliteration = "kelev", translation = "собака",
+            original = "כֶּלֶב", translation = "собака",
             definition = "Домашнее животное на четырёх лапах.",
             definitionNative = "Домашнее животное, которое лает и виляет хвостом.",
             example = "הַכֶּלֶב רָץ אַחֲרֵי הַחָתוּל.",

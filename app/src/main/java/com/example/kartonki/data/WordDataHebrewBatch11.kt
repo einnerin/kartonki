@@ -30,7 +30,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105601, setId = 1056, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather_general", transliteration = "mezeg",
+            pos = "noun", semanticGroup = "weather_general",
             original = "מֵזֶג", translation = "погода (общее слово)",
             definition = "מַצַּב הָאֲוִיר בְּאֵיזוֹר מְסֻיָּם בְּזְמַן נָתוּן.",
             definitionNative = "Состояние атмосферы в определённом месте в данный момент.",
@@ -38,7 +38,7 @@ object WordDataHebrewBatch11 {
             exampleNative = "Какой מֵזֶג сегодня? Жарко или холодно?"),
         WordEntity(
             id = 105602, setId = 1056, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather_precipitation", transliteration = "tal",
+            pos = "noun", semanticGroup = "weather_precipitation",
             original = "טַל", translation = "роса",
             definition = "טִיפּוֹת מַיִם קְטַנּוֹת הַמִּצְטַבְּרוֹת עַל עֲשָׂבִים וְעָלִים בַּבֹּקֶר.",
             definitionNative = "Мелкие капли воды, оседающие на траве и листьях по утрам.",
@@ -47,7 +47,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105608L, 105613L, 105614L, 105617L, 105619L)),
         WordEntity(
             id = 105603, setId = 1056, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather_general", transliteration = "takhazit mezeg ha-avir",
+            pos = "noun", semanticGroup = "weather_general",
             original = "תַּחֲזִית מֶזֶג הָאֲוִיר", translation = "прогноз погоды",
             definition = "חִזּוּי מַדָּעִי שֶׁל מַצַּב הָאֲוִיר לַיָּמִים הַקְּרוֹבִים.",
             definitionNative = "Научное предсказание состояния погоды на ближайшие дни.",
@@ -56,7 +56,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105601L, 105606L, 105610L, 105620L, 105622L, 105623L, 105624L)),
         WordEntity(
             id = 105604, setId = 1056, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather_sky", transliteration = "anan geshem",
+            pos = "noun", semanticGroup = "weather_sky",
             original = "עֲנַן גֶּשֶׁם", translation = "дождевое облако",
             definition = "עָנָן כָּבֵד וְאָפֹר שֶׁמֵּמֶנּוּ יוֹרֵד גֶּשֶׁם.",
             definitionNative = "Тёмное тяжёлое облако, из которого идёт дождь.",
@@ -65,7 +65,7 @@ object WordDataHebrewBatch11 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105605, setId = 1056, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather_sky", transliteration = "yom me'unan",
+            pos = "noun", semanticGroup = "weather_sky",
             original = "יוֹם מָעוּנָן", translation = "пасмурный день",
             definition = "יוֹם שֶׁהַשָּׁמַיִם מְכֻסִּים בְּעֲנָנִים וְאֵין שֶׁמֶשׁ.",
             definitionNative = "День, когда небо покрыто облаками и нет солнца.",
@@ -74,7 +74,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105604L, 105606L, 105611L, 105612L, 105621L, 105622L)),
         WordEntity(
             id = 105606, setId = 1056, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "weather_general", transliteration = "erev kham",
+            pos = "noun", semanticGroup = "weather_general",
             original = "עֶרֶב חַם", translation = "тёплый вечер",
             definition = "שָׁעוֹת הָעֶרֶב עִם טֶמְפֶּרָטוּרָה נְעִימָה וְגָבוֹהָה.",
             definitionNative = "Вечерние часы с приятной и высокой температурой воздуха.",
@@ -84,7 +84,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105607, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_wind", transliteration = "khamsin",
+            pos = "noun", semanticGroup = "weather_wind",
             original = "חַמְסִין", translation = "хамсин (жаркий пустынный ветер)",
             definition = "רוּחַ חַמָּה וְיַבֵּשָׁה הַבָּאָה מֵהַמִּדְבָּר, אוֹפְיֵינִית לְאִזוֹר הַמֶּרְחָב.",
             definitionNative = "Горячий сухой ветер из пустыни, характерный для Ближнего Востока.",
@@ -93,7 +93,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105615L, 105618L)),
         WordEntity(
             id = 105608, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_precipitation", transliteration = "barad",
+            pos = "noun", semanticGroup = "weather_precipitation",
             original = "בָּרָד", translation = "град",
             definition = "גּוּשֵׁי קֶרַח קְטַנִּים הַנּוֹפְלִים מֵהַשָּׁמַיִם בְּמִקוֹם גֶּשֶׁם.",
             definitionNative = "Маленькие куски льда, падающие с неба вместо дождя.",
@@ -102,7 +102,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105602L, 105613L, 105617L, 105619L)),
         WordEntity(
             id = 105609, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_temperature", transliteration = "gal khom",
+            pos = "noun", semanticGroup = "weather_temperature",
             original = "גַּל חוֹם", translation = "волна жары (аномальная жара)",
             definition = "תְּקוּפָה מְמוּשֶׁכֶת שֶׁל חוֹם חָרִיג וְגָבוֹהַּ בְּמִיֻּחָד.",
             definitionNative = "Продолжительный период аномально высокой температуры воздуха.",
@@ -111,7 +111,7 @@ object WordDataHebrewBatch11 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105610, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_general", transliteration = "iklim",
+            pos = "noun", semanticGroup = "weather_general",
             original = "אִקְלִים", translation = "климат",
             definition = "מַצַּב מֶזֶג הָאֲוִיר הָאוֹפְיֵינִי לְאֵיזוֹר מְסֻיָּם לְאֹרֶךְ שָׁנִים רַבּוֹת.",
             definitionNative = "Характерное для данной территории погодное состояние на протяжении многих лет.",
@@ -120,7 +120,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105601L, 105603L, 105606L, 105620L, 105622L, 105623L, 105624L)),
         WordEntity(
             id = 105611, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_sky", transliteration = "arfil",
+            pos = "noun", semanticGroup = "weather_sky",
             original = "עַרְפִּיל", translation = "туман",
             definition = "אֲוִיר לַח מָלֵא בְּטִיפּוֹת מַיִם זְעִירוֹת הַמְּצַמְצְמוֹת אֶת הָרְאִיָּה.",
             definitionNative = "Влажный воздух с мельчайшими каплями воды, ухудшающий видимость.",
@@ -129,7 +129,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105604L, 105605L, 105607L, 105612L, 105621L)),
         WordEntity(
             id = 105612, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_sky", transliteration = "shemesh kofa'at",
+            pos = "noun", semanticGroup = "weather_sky",
             original = "שֶׁמֶשׁ קוֹפַחַת", translation = "палящее солнце",
             definition = "שֶׁמֶשׁ חַזְקָה בִּמְיֻחָד הַשּׂוֹרֶפֶת אֶת הָעוֹר וּמַרְגִּישָׁה חַמָּה.",
             definitionNative = "Особенно сильное солнце, жгущее кожу и дающее интенсивное тепло.",
@@ -137,7 +137,7 @@ object WordDataHebrewBatch11 {
             exampleNative = "Летом שֶׁמֶשׁ קוֹפַחַת — обязательно надо мазать солнцезащитный крем."),
         WordEntity(
             id = 105613, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_precipitation", transliteration = "ed",
+            pos = "noun", semanticGroup = "weather_precipitation",
             original = "אֵד", translation = "пар; испарение",
             definition = "מַיִם בְּמַצַּב גָּזִי הַנּוֹצָר כַּאֲשֶׁר הַנּוֹזֵל מִתְחַמֵּם.",
             definitionNative = "Вода в газообразном состоянии, образующаяся при нагревании жидкости.",
@@ -146,7 +146,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105602L, 105608L, 105617L, 105619L)),
         WordEntity(
             id = 105614, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_temperature", transliteration = "kfor",
+            pos = "noun", semanticGroup = "weather_temperature",
             original = "כְּפוֹר", translation = "иней; лёгкий мороз",
             definition = "שְׁכַבַת קֶרַח דַּקָּה הַנּוֹצֶרֶת עַל פָּנִים כְּשֶׁהַטֶּמְפֶּרָטוּרָה יוֹרֶדֶת מִתַּחַת לְאֶפֶס.",
             definitionNative = "Тонкий слой льда, образующийся на поверхностях при температуре ниже нуля.",
@@ -155,7 +155,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105602L, 105609L)),
         WordEntity(
             id = 105615, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_wind", transliteration = "se'ara",
+            pos = "noun", semanticGroup = "weather_wind",
             original = "סְעָרָה", translation = "буря; шторм",
             definition = "מֶזֶג אֲוִיר חָזָק עִם רוּחוֹת עֲזוֹת, גֶּשֶׁם כָּבֵד וְלִפְעָמִים בְּרָקִים.",
             definitionNative = "Сильная непогода с порывистым ветром, проливным дождём и иногда молниями.",
@@ -163,7 +163,7 @@ object WordDataHebrewBatch11 {
             exampleNative = "סְעָרָה ударила по побережью и повалила деревья."),
         WordEntity(
             id = 105616, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_seasons", transliteration = "onat ha-geshamim",
+            pos = "noun", semanticGroup = "weather_seasons",
             original = "עוֹנַת הַגְּשָׁמִים", translation = "сезон дождей (зима в Израиле)",
             definition = "תְּקוּפַת הַחוֹרֶף בְּיִשְׂרָאֵל בָּהּ יוֹרְדִים רֹב הַמִּשְׁקָעִים.",
             definitionNative = "Зимний период в Израиле, когда выпадает большинство осадков.",
@@ -173,7 +173,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105617, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_precipitation", transliteration = "perets geshem",
+            pos = "noun", semanticGroup = "weather_precipitation",
             original = "פֶּרֶץ גֶּשֶׁם", translation = "ливень; шквальный дождь",
             definition = "גֶּשֶׁם עָז וּפִתְאוֹמִי הַנּוֹפֵל בְּכַמּוּת גְּדוֹלָה בְּזְמַן קָצָר.",
             definitionNative = "Сильный внезапный дождь, выпадающий в большом количестве за короткое время.",
@@ -182,7 +182,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105602L, 105608L, 105613L, 105615L, 105619L)),
         WordEntity(
             id = 105618, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_wind", transliteration = "ruakh kala",
+            pos = "noun", semanticGroup = "weather_wind",
             original = "רוּחַ קַלָּה", translation = "лёгкий ветер; лёгкий бриз",
             definition = "רוּחַ עֲדִינָה וּנְעִימָה שֶׁאֵינָהּ מַפְרִיעָה.",
             definitionNative = "Мягкий и приятный ветерок, не доставляющий неудобств.",
@@ -191,7 +191,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105607L, 105615L)),
         WordEntity(
             id = 105619, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_precipitation", transliteration = "geshem kal",
+            pos = "noun", semanticGroup = "weather_precipitation",
             original = "גֶּשֶׁם קַל", translation = "мелкий дождь; морось",
             definition = "גֶּשֶׁם חַלָּשׁ עִם טִיפּוֹת קְטַנּוֹת, לֹא מַרְטִיב בְּעֹמֶק.",
             definitionNative = "Слабый дождь с мелкими каплями, не промачивающий насквозь.",
@@ -200,7 +200,7 @@ object WordDataHebrewBatch11 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105620, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_general", transliteration = "avir naki",
+            pos = "noun", semanticGroup = "weather_general",
             original = "אֲוִיר נַקִּי", translation = "чистый воздух; свежий воздух",
             definition = "אֲוִיר חוֹפְשִׁי מִזִּיהוּם וְעָשִׁיר בְּחַמְצָן, הַנּוֹצָר בְּאֵיזוֹרִים פְּתוּחִים.",
             definitionNative = "Воздух без загрязнений и богатый кислородом, характерный для открытых пространств.",
@@ -209,7 +209,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105601L, 105603L, 105606L, 105610L, 105622L, 105623L, 105624L)),
         WordEntity(
             id = 105621, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_sky", transliteration = "anan gavoha",
+            pos = "noun", semanticGroup = "weather_sky",
             original = "עֲנַן גָּבוֹהַּ", translation = "высокое облако; высотное облако",
             definition = "עָנָן הַנִּמְצָא בְּגֹבַהּ רַב, לְרֹב לָבָן וְדַק.",
             definitionNative = "Облако, расположенное на большой высоте, как правило белое и тонкое.",
@@ -218,7 +218,7 @@ object WordDataHebrewBatch11 {
         ),
         WordEntity(
             id = 105622, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_general", transliteration = "yom gashuim",
+            pos = "noun", semanticGroup = "weather_general",
             original = "יוֹם גְּשׁוּם", translation = "дождливый день",
             definition = "יוֹם שֶׁבּוֹ יוֹרֵד גֶּשֶׁם בְּמֶשֶׁךְ חֶלְקוֹ הַגָּדוֹל אוֹ כֻּלּוֹ.",
             definitionNative = "День, в который дождь идёт большую часть времени или весь день.",
@@ -227,7 +227,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105601L, 105603L, 105605L, 105606L, 105610L, 105620L, 105623L, 105624L)),
         WordEntity(
             id = 105623, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_general", transliteration = "avir yavesh",
+            pos = "noun", semanticGroup = "weather_general",
             original = "אֲוִיר יָבֵשׁ", translation = "сухой воздух",
             definition = "אֲוִיר עִם רָמַת לַחוּת נְמוּכָה, אוֹפְיֵינִי לְאֵיזוֹרִים צַחִיחִים.",
             definitionNative = "Воздух с низким уровнем влажности, характерный для засушливых регионов.",
@@ -236,7 +236,7 @@ object WordDataHebrewBatch11 {
         ),
         WordEntity(
             id = 105624, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_general", transliteration = "shinuy aklim",
+            pos = "noun", semanticGroup = "weather_general",
             original = "שִׁינּוּי אַקְלִים", translation = "изменение климата",
             definition = "שִׁנּוּיִים אֲרֻכֵּי טְוַח בְּדְפּוּסֵי מֶזֶג הָאֲוִיר הַגְּלוֹבָלִי.",
             definitionNative = "Долгосрочные изменения в глобальных погодных паттернах.",
@@ -245,7 +245,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105601L, 105603L, 105606L, 105610L, 105620L, 105622L, 105623L)),
         WordEntity(
             id = 105625, setId = 1056, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "weather_seasons", transliteration = "khoref kashe",
+            pos = "noun", semanticGroup = "weather_seasons",
             original = "חוֹרֶף קָשֶׁה", translation = "суровая зима; тяжёлая зима",
             definition = "עֶונַת חוֹרֶף עִם גְּשָׁמִים כְּבֵדִים, קֶרַח וּפְגָעִים קִיצוֹנִיִּים.",
             definitionNative = "Зимний сезон с сильными дождями, морозом и экстремальными погодными явлениями.",
@@ -260,7 +260,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105701, setId = 1057, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pets_animals", transliteration = "kelev",
+            pos = "noun", semanticGroup = "pets_animals",
             original = "כֶּלֶב", translation = "собака",
             definition = "בַּעַל חַיִּים נָאֱמָן הַנֶּחְשָׁב לְחַיַּת מַחְמָד נְפוֹצָה בְּיִשְׂרָאֵל.",
             definitionNative = "Верное животное, считающееся одним из самых популярных питомцев в Израиле.",
@@ -269,7 +269,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105702L, 105703L, 105709L, 105712L, 105713L, 105719L, 105723L)),
         WordEntity(
             id = 105702, setId = 1057, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pets_animals", transliteration = "khatul",
+            pos = "noun", semanticGroup = "pets_animals",
             original = "חָתוּל", translation = "кошка",
             definition = "חַיַּת מַחְמָד קְטַנָּה וְעַצְמָאִית.",
             definitionNative = "Небольшое самостоятельное домашнее животное.",
@@ -278,7 +278,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105701L, 105703L, 105705L, 105709L, 105712L, 105713L, 105714L, 105719L, 105723L)),
         WordEntity(
             id = 105703, setId = 1057, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pets_animals", transliteration = "arnav",
+            pos = "noun", semanticGroup = "pets_animals",
             original = "אַרְנָב", translation = "кролик",
             definition = "יוֹנֵק קָטָן עִם אֹזְנַיִם אֲרֻכּוֹת, נִיתָן לְגִידּוּל בַּבַּיִת.",
             definitionNative = "Маленькое млекопитающее с длинными ушами, подходящее для домашнего содержания.",
@@ -287,7 +287,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105701L, 105702L, 105705L, 105709L, 105712L, 105713L, 105714L, 105719L, 105723L)),
         WordEntity(
             id = 105704, setId = 1057, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pets_anatomy", transliteration = "zanav",
+            pos = "noun", semanticGroup = "pets_anatomy",
             original = "זָנָב", translation = "хвост",
             definition = "הַחֵלֶק הָאַחֲרוֹן שֶׁל גּוּף הַחַיָּה, מֵאַחוֹרֵי הַגּוּף.",
             definitionNative = "Задняя часть тела животного, расположенная позади туловища.",
@@ -296,7 +296,7 @@ object WordDataHebrewBatch11 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105705, setId = 1057, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pets_young", transliteration = "gur",
+            pos = "noun", semanticGroup = "pets_young",
             original = "גּוּר", translation = "щенок",
             definition = "כֶּלֶב צָעִיר.",
             definitionNative = "Совсем юная собака, ещё маленькая — ходит за мамой и любит играть.",
@@ -305,7 +305,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105701L, 105702L, 105703L, 105712L, 105713L, 105714L, 105719L)),
         WordEntity(
             id = 105706, setId = 1057, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "pets_general", transliteration = "ba'al khayim",
+            pos = "noun", semanticGroup = "pets_general",
             original = "בַּעַל חַיִּים", translation = "животное; живое существо",
             definition = "כָּל יְצוּר חַי שֶׁאֵינוֹ אָדָם.",
             definitionNative = "Любое живое существо, кроме человека.",
@@ -315,7 +315,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105707, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_care", transliteration = "veterinar",
+            pos = "noun", semanticGroup = "pets_care",
             original = "וֶטֶרִינָר", translation = "ветеринар",
             definition = "רוֹפֵא שֶׁמְּטַפֵּל בְּחַיּוֹת.",
             definitionNative = "Врач, лечащий животных.",
@@ -323,7 +323,7 @@ object WordDataHebrewBatch11 {
             exampleNative = "Мы отвезли кошку к וֶטֶרִינָר на ежегодный осмотр."),
         WordEntity(
             id = 105708, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_equipment", transliteration = "retsu'a",
+            pos = "noun", semanticGroup = "pets_equipment",
             original = "רְצוּעָה", translation = "поводок",
             definition = "רְצוּעַת עוֹר אוֹ אָרִיג הַמְּחַבֶּרֶת אֶת הַכֶּלֶב לַבְּעָלִים.",
             definitionNative = "Кожаный или тканевый ремень, соединяющий собаку с хозяином.",
@@ -332,7 +332,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105710L, 105716L, 105725L)),
         WordEntity(
             id = 105709, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_animals", transliteration = "degigim",
+            pos = "noun", semanticGroup = "pets_animals",
             original = "דְּגִיגִים", translation = "рыбки (аквариумные)",
             definition = "דָּגִים קְטַנִּים הַמְּגֻדָּלִים בְּאַקְוָרְיוּם בַּבַּיִת.",
             definitionNative = "Маленькие рыбы, которых держат в домашнем аквариуме.",
@@ -341,7 +341,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105701L, 105702L, 105703L, 105712L, 105713L, 105719L, 105723L)),
         WordEntity(
             id = 105710, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_equipment", transliteration = "teivat khol",
+            pos = "noun", semanticGroup = "pets_equipment",
             original = "תֵּיבַת חוֹל", translation = "лоток с песком (для кошки)",
             definition = "מִגֵּשׁ מָלֵא חוֹל מְיֻחָד שֶׁבּוֹ הַחָתוּל עוֹשֶׂה אֶת צָרָכָיו.",
             definitionNative = "Поддон со специальным наполнителем, куда кошка ходит в туалет.",
@@ -350,7 +350,7 @@ object WordDataHebrewBatch11 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105711, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_commerce", transliteration = "khanut khayot",
+            pos = "noun", semanticGroup = "pets_commerce",
             original = "חֲנוּת חַיּוֹת", translation = "зоомагазин",
             definition = "חֲנוּת שֶׁמּוֹכֶרֶת חַיּוֹת מַחְמָד וְאֶת כָּל הַצֹּרֶךְ שֶׁלָּהֶן.",
             definitionNative = "Магазин, в котором продают домашних животных и всё необходимое для них.",
@@ -359,7 +359,7 @@ object WordDataHebrewBatch11 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105712, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_animals", transliteration = "tuki",
+            pos = "noun", semanticGroup = "pets_animals",
             original = "תּוּכִּי", translation = "попугай",
             definition = "עוֹף צִבְעוֹנִי הַמְּסֻגָּל לְחַקּוֹת קוֹלוֹת אֲנוֹשִׁיִּים.",
             definitionNative = "Яркая птица, способная имитировать человеческую речь.",
@@ -368,7 +368,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105701L, 105702L, 105703L, 105709L, 105713L, 105719L, 105723L)),
         WordEntity(
             id = 105713, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_animals", transliteration = "oger",
+            pos = "noun", semanticGroup = "pets_animals",
             original = "אוֹגֶר", translation = "хомяк",
             definition = "מַכְרְסֵם קָטָן עִם לֶחָיַיִם גְּדוֹלוֹת, חַיַּת מַחְמָד פּוֹפּוּלָרִית לַיְּלָדִים.",
             definitionNative = "Маленький грызун с большими щёчками, популярный питомец среди детей.",
@@ -377,7 +377,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105702L, 105703L, 105709L, 105712L, 105714L, 105719L, 105723L)),
         WordEntity(
             id = 105714, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_young", transliteration = "guryon",
+            pos = "noun", semanticGroup = "pets_young",
             original = "גּוּרְיוֹן", translation = "котёнок",
             definition = "חָתוּל צָעִיר.",
             definitionNative = "Совсем юный пушистый питомец, который мурчит и играет с клубком ниток.",
@@ -386,7 +386,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105701L, 105702L, 105703L, 105705L, 105712L, 105713L)),
         WordEntity(
             id = 105715, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_behavior", transliteration = "neshikha",
+            pos = "noun", semanticGroup = "pets_behavior",
             original = "נְשִׁיכָה", translation = "укус",
             definition = "פְּגִיעָה בָּעוֹר בְּאֶמְצָעוּת הַשִּׁנַּיִם.",
             definitionNative = "Повреждение кожи с помощью зубов.",
@@ -395,7 +395,7 @@ object WordDataHebrewBatch11 {
         ),
         WordEntity(
             id = 105716, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_equipment", transliteration = "kalvon",
+            pos = "noun", semanticGroup = "pets_equipment",
             original = "כַּלְבּוֹן", translation = "ошейник",
             definition = "רְצוּעָה הַנִּקְשֶׁרֶת סְבִיב צַוַּאר הַכֶּלֶב.",
             definitionNative = "Ремень, застёгиваемый вокруг шеи собаки.",
@@ -405,7 +405,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105717, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_care", transliteration = "tipuakh",
+            pos = "noun", semanticGroup = "pets_care",
             original = "טִיפּוּחַ", translation = "уход (груминг)",
             definition = "טִיפּוּל בְּמַרְאֶה וְנִקָּיוֹן הַחַיָּה: רְחִיצָה, גִּיזּוּז וְטִיפּוּל בְּפַרְוָה.",
             definitionNative = "Забота о внешности и чистоте питомца: мытьё, стрижка и расчёсывание шерсти.",
@@ -414,7 +414,7 @@ object WordDataHebrewBatch11 {
         ),
         WordEntity(
             id = 105718, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_commerce", transliteration = "misperet khayot",
+            pos = "noun", semanticGroup = "pets_commerce",
             original = "מִסְפֵּרַת חַיּוֹת", translation = "грумерский салон; стрижка животных",
             definition = "מֶרְחָב מְקִצּוֹעִי שֶׁבּוֹ גּוֹזְזִים וּמְסַדְּרִים אֶת פַּרְוַת חַיּוֹת הַמַּחְמָד.",
             definitionNative = "Профессиональное заведение, где стригут и приводят в порядок шерсть домашних животных.",
@@ -422,7 +422,7 @@ object WordDataHebrewBatch11 {
             exampleNative = "Я привёл собаку в מִסְפֵּרַת חַיּוֹת перед праздником."),
         WordEntity(
             id = 105719, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_animals", transliteration = "khazir gine'a",
+            pos = "noun", semanticGroup = "pets_animals",
             original = "חֲזִיר גִּינֵאָה", translation = "морская свинка",
             definition = "מַכְרְסֵם קָטָן וְחֶבְרוּתִי, חַיַּת מַחְמָד פּוֹפּוּלָרִית בְּמִשְׁפָּחוֹת.",
             definitionNative = "Небольшой общительный грызун, популярный домашний питомец в семьях.",
@@ -431,7 +431,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105701L, 105702L, 105703L, 105705L, 105709L, 105712L, 105713L, 105714L, 105723L)),
         WordEntity(
             id = 105720, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_furniture", transliteration = "bayit la-kelev",
+            pos = "noun", semanticGroup = "pets_furniture",
             original = "בַּיִת לַכֶּלֶב", translation = "собачья будка; вольер",
             definition = "מִבְנֶה קָטָן בַּחוּץ הַמְּיֻעָד לְמְנוּחַת הַכֶּלֶב.",
             definitionNative = "Небольшое наружное строение, предназначенное для отдыха собаки.",
@@ -440,7 +440,7 @@ object WordDataHebrewBatch11 {
         ),
         WordEntity(
             id = 105721, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_care", transliteration = "mazon yavesh",
+            pos = "noun", semanticGroup = "pets_care",
             original = "מָזוֹן יָבֵשׁ", translation = "сухой корм",
             definition = "מָזוֹן מְעֻבָּד בְּצוּרַת גְּרָגֵרִים יְבֵשִׁים לְחַיּוֹת מַחְמָד.",
             definitionNative = "Переработанный корм в форме сухих гранул для домашних животных.",
@@ -449,7 +449,7 @@ object WordDataHebrewBatch11 {
         ),
         WordEntity(
             id = 105722, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_place", transliteration = "migrash klavim",
+            pos = "noun", semanticGroup = "pets_place",
             original = "מִגְרַשׁ כְּלָבִים", translation = "собачья площадка; dog park",
             definition = "שֶׁטַח מְגֻדָּר הַמְּיֻעָד לְכְּלָבִים לָרוּץ וּלְהִשְׁתַּחְרֵר בְּחוֹפְשִׁיּוּת.",
             definitionNative = "Огороженная территория, предназначенная для бега и выгула собак без поводка.",
@@ -458,7 +458,7 @@ object WordDataHebrewBatch11 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105723, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_animals", transliteration = "kelev shemer",
+            pos = "noun", semanticGroup = "pets_animals",
             original = "כֶּלֶב שֶׁמֶר", translation = "сторожевая собака",
             definition = "כֶּלֶב מְאֻמָּן לִשְׁמֹר עַל רְכוּשׁ אוֹ אֲנָשִׁים.",
             definitionNative = "Собака, обученная охранять имущество или людей.",
@@ -467,7 +467,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105701L, 105702L, 105703L, 105709L, 105712L, 105713L, 105719L)),
         WordEntity(
             id = 105724, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_care", transliteration = "mirpe'a veterinarit",
+            pos = "noun", semanticGroup = "pets_care",
             original = "מִרְפֵּאָה וֶטֶרִינָרִית", translation = "ветеринарная клиника",
             definition = "מוֹסָד רְפוּאִי לְחַיּוֹת שֶׁבּוֹ וֶטֶרִינָרִים מְאַבְחֲנִים וּמְטַפְּלִים.",
             definitionNative = "Медицинское учреждение для животных, где ветеринары ставят диагнозы и лечат.",
@@ -476,7 +476,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105707L, 105711L, 105717L, 105718L, 105721L)),
         WordEntity(
             id = 105725, setId = 1057, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "pets_equipment", transliteration = "tsa'atsu'a la-khayot",
+            pos = "noun", semanticGroup = "pets_equipment",
             original = "צַעֲצוּעַ לַחַיּוֹת", translation = "игрушка для питомца",
             definition = "חֵפֶץ מְיֻחָד שֶׁנוֹעַד לְשַׁעֲשֵׁעַ אֶת חַיַּת הַמַּחְמָד.",
             definitionNative = "Специальный предмет, предназначенный для развлечения домашнего животного.",
@@ -491,7 +491,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105801, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_emotion", transliteration = "matsav ruakh",
+            pos = "noun", semanticGroup = "mental_emotion",
             original = "מַצַּב רוּחַ", translation = "настроение; душевное состояние",
             definition = "הַמַּצָּב הָרִגְשִׁי הַנּוֹכְחִי שֶׁל אָדָם בְּזְמַן נָתוּן.",
             definitionNative = "Текущее эмоциональное состояние человека в данный момент.",
@@ -500,7 +500,7 @@ object WordDataHebrewBatch11 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 105802, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_self", transliteration = "hakara atsmit",
+            pos = "noun", semanticGroup = "mental_self",
             original = "הַכָּרָה עַצְמִית", translation = "самосознание; самоосознание",
             definition = "הַיְּכֹלֶת לְהַכִּיר אֶת הָרְגָשׁוֹת, הַמַּחְשָׁבוֹת וְהַדְּפוּסִים שֶׁלָּנוּ.",
             definitionNative = "Способность осознавать собственные эмоции, мысли и поведенческие паттерны.",
@@ -509,7 +509,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105809L, 105819L)),
         WordEntity(
             id = 105803, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_disorder", transliteration = "hafra'at kesev",
+            pos = "noun", semanticGroup = "mental_disorder",
             original = "הֲפְרָעַת קֶשֶׁב", translation = "СДВГ; расстройство внимания",
             definition = "הַפְרָעָה נוֹירוֹ-הִתְפַּתְחוּתִית הַמְּאֻפְּיֶנֶת בְּקֹשִׁי בְּרִיכּוּז וְאִיפּוּק.",
             definitionNative = "Нейроразвитийное расстройство, характеризующееся трудностями с концентрацией и самоконтролем.",
@@ -518,7 +518,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105807L, 105808L, 105817L, 105823L, 105824L, 105825L)),
         WordEntity(
             id = 105804, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_positive", transliteration = "histaglut",
+            pos = "noun", semanticGroup = "mental_positive",
             original = "הִסְתַּגְּלוּת", translation = "адаптация; приспособление",
             definition = "הַיְּכֹלֶת לְהִסְתַּגֵּל לְמָצָב חָדָשׁ אוֹ מְשַׁנֶּה.",
             definitionNative = "Способность приспосабливаться к новым или изменяющимся условиям.",
@@ -528,7 +528,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105805, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_professional", transliteration = "psikhoolog",
+            pos = "noun", semanticGroup = "mental_professional",
             original = "פְּסִיכוֹלוֹג", translation = "психолог",
             definition = "מוּמְחֶה בְּמַדְעֵי הַנֶּפֶשׁ הַמְּסַפֵּק תְּמִיכָה וְטִיפּוּל רִגְשִׁי.",
             definitionNative = "Специалист в области психологии, оказывающий эмоциональную поддержку и терапию.",
@@ -537,7 +537,7 @@ object WordDataHebrewBatch11 {
         ),
         WordEntity(
             id = 105806, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_practice", transliteration = "meditatzya",
+            pos = "noun", semanticGroup = "mental_practice",
             original = "מֶדִיטַצְיָה", translation = "медитация",
             definition = "תַּרְגּוּל שֶׁל רִכּוּז וְשַׁקֶּטֶת הַמַּחְשָׁבוֹת לְשַׁפֵּר אֶת הָרְוָחָה הַנַּפְשִׁית.",
             definitionNative = "Практика концентрации и успокоения мыслей для улучшения психологического благополучия.",
@@ -546,7 +546,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105822L)),
         WordEntity(
             id = 105807, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_disorder", transliteration = "panika",
+            pos = "noun", semanticGroup = "mental_disorder",
             original = "פָּנִיקָה", translation = "паника; паническая атака",
             definition = "פַּחַד עָצוּם וּפִתְאוֹמִי הַמְּלֻוֶּה בְּתַסְמִינִים גּוּפָנִיִּים.",
             definitionNative = "Внезапный сильный страх, сопровождаемый физическими симптомами.",
@@ -555,7 +555,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105803L, 105808L, 105817L, 105823L, 105824L, 105825L)),
         WordEntity(
             id = 105808, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_disorder", transliteration = "trauma",
+            pos = "noun", semanticGroup = "mental_disorder",
             original = "טְרָאוּמָה", translation = "травма (психологическая)",
             definition = "חֲוָיָה קָשָׁה שֶׁהַשְׁפָּעָתָהּ הַנַּפְשִׁית נִמְשֶׁכֶת זְמַן רַב לְאַחַר הָאֵרוּעַ.",
             definitionNative = "Тяжёлый опыт, психологическое воздействие которого сохраняется долгое время.",
@@ -564,7 +564,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105803L, 105807L, 105817L, 105823L, 105824L, 105825L)),
         WordEntity(
             id = 105809, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_self", transliteration = "dimuy atzmi",
+            pos = "noun", semanticGroup = "mental_self",
             original = "דִּימוּי עַצְמִי", translation = "самооценка; образ «я»",
             definition = "הָאֹפֶן שֶׁבּוֹ אֲנִי תּוֹפֵס אֶת עַצְמִי, אֶת גּוּפִי וְאֶת יְכֹלוֹתַי.",
             definitionNative = "Способ, которым я воспринимаю себя, своё тело и свои способности.",
@@ -573,7 +573,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105802L, 105811L, 105819L)),
         WordEntity(
             id = 105810, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_positive", transliteration = "motivatzya",
+            pos = "noun", semanticGroup = "mental_positive",
             original = "מוֹטִיבַצְיָה", translation = "мотивация",
             definition = "הַכֹּחַ הַפְּנִימִי הַמְּנִיעַ אֶת הָאָדָם לְפַעַל לְהַשָּׂגַת מַטָּרוֹת.",
             definitionNative = "Внутренняя сила, побуждающая человека действовать для достижения целей.",
@@ -582,7 +582,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105804L, 105811L, 105814L, 105818L)),
         WordEntity(
             id = 105811, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_positive", transliteration = "bittakhon atzmi",
+            pos = "noun", semanticGroup = "mental_positive",
             original = "בִּטְחוֹן עַצְמִי", translation = "уверенность в себе",
             definition = "אֱמוּנָה בְּיְכֹלוֹת שֶׁלָּנוּ לְהַתְמוֹדֵד עִם אֲתָגָרִים.",
             definitionNative = "Вера в собственные способности справляться с вызовами.",
@@ -591,7 +591,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105804L, 105809L, 105810L, 105814L, 105818L)),
         WordEntity(
             id = 105812, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_emotion", transliteration = "i-sheket",
+            pos = "noun", semanticGroup = "mental_emotion",
             original = "אִי-שֶׁקֶט", translation = "беспокойство; неспокойствие",
             definition = "תְּחוּשַׁת מְתַח וְחוֹסֶר שַׁקֶּטֶת, קֹשִׁי לְהָרָגַע.",
             definitionNative = "Ощущение напряжения и невозможности успокоиться.",
@@ -600,7 +600,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105801L, 105807L, 105813L)),
         WordEntity(
             id = 105813, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_emotion", transliteration = "konflikt",
+            pos = "noun", semanticGroup = "mental_emotion",
             original = "קוֹנְפְלִיקְט", translation = "конфликт",
             definition = "הִתְנַגְּשׁוּת בֵּין אֲנָשִׁים, קְבוּצוֹת אוֹ צְרָכִים פְּנִימִיִּים.",
             definitionNative = "Столкновение между людьми, группами или внутренними потребностями.",
@@ -609,7 +609,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105801L, 105812L)),
         WordEntity(
             id = 105814, setId = 1058, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mental_positive", transliteration = "rvakha nafsit",
+            pos = "noun", semanticGroup = "mental_positive",
             original = "רְוָחָה נַפְשִׁית", translation = "психологическое благополучие",
             definition = "מַצָּב שֶׁל בְּרִיאוּת רִגְשִׁית וּנַפְשִׁית הַמְּאַפְשֵׁר חַיִּים מְשַׁמְּעוּתִיִּים.",
             definitionNative = "Состояние эмоционального и психического здоровья, позволяющее вести осмысленную жизнь.",
@@ -619,7 +619,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105815, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_therapy", transliteration = "tipul nafshi",
+            pos = "noun", semanticGroup = "mental_therapy",
             original = "טִיפּוּל נַפְשִׁי", translation = "психотерапия; психологическое лечение",
             definition = "סְדֶרֶת פְּגִישׁוֹת עִם מְטַפֵּל מֻסְמָךְ לְשִׁפּוּר הַבְּרִיאוּת הַנַּפְשִׁית.",
             definitionNative = "Серия встреч с квалифицированным терапевтом для улучшения психического здоровья.",
@@ -628,7 +628,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105820L)),
         WordEntity(
             id = 105816, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_support", transliteration = "tmicha rig'shit",
+            pos = "noun", semanticGroup = "mental_support",
             original = "תְּמִיכָה רִגְשִׁית", translation = "эмоциональная поддержка",
             definition = "סִיּוּעַ וְהַקְשָׁבָה מִצַּד אֲנָשִׁים קְרוֹבִים בְּעֵת קֹשִׁי.",
             definitionNative = "Помощь и внимательное слушание со стороны близких людей в трудный момент.",
@@ -637,7 +637,7 @@ object WordDataHebrewBatch11 {
         ),
         WordEntity(
             id = 105817, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_disorder", transliteration = "he'eder sheyna",
+            pos = "noun", semanticGroup = "mental_disorder",
             original = "הֶעְדֵּר שֵׁנָה", translation = "недосыпание; лишение сна",
             definition = "מַצָּב שֶׁל חוֹסֶר בְּשֵׁנָה מַסְפֶּקֶת הַמַּשְׁפִּיעַ עַל הַתַּפְקוּד הַנַּפְשִׁי.",
             definitionNative = "Состояние недостаточного сна, негативно влияющее на психологическое функционирование.",
@@ -646,7 +646,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105803L, 105807L, 105808L, 105823L, 105824L, 105825L)),
         WordEntity(
             id = 105818, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_positive", transliteration = "khosen nafshi",
+            pos = "noun", semanticGroup = "mental_positive",
             original = "חֻסֶן נַפְשִׁי", translation = "психологическая устойчивость; резильентность",
             definition = "הַיְּכֹלֶת לִהִתְאוֹשֵׁשׁ מֵאֵרוּעִים קָשִׁים וּלְהִסְתַּגֵּל לְשִׁינּוּיִים.",
             definitionNative = "Способность восстанавливаться после тяжёлых событий и адаптироваться к переменам.",
@@ -655,7 +655,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105804L, 105810L, 105811L, 105814L)),
         WordEntity(
             id = 105819, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_self", transliteration = "gvulot ishiyim",
+            pos = "noun", semanticGroup = "mental_self",
             original = "גְּבוּלוֹת אִישִׁיִּים", translation = "личные границы",
             definition = "הַגְּדָרַת הַמֶּרְחָב הַפִּיזִי וְהַרִגְשִׁי שֶׁאָדָם מוֹכֵן לְקַבֵּל מֵאֲחֵרִים.",
             definitionNative = "Определение физического и эмоционального пространства, которое человек готов принять от других.",
@@ -664,7 +664,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105802L, 105809L)),
         WordEntity(
             id = 105820, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_therapy", transliteration = "shahrur rig'shi",
+            pos = "noun", semanticGroup = "mental_therapy",
             original = "שַׁחְרוּר רִגְשִׁי", translation = "эмоциональный выброс; катарсис",
             definition = "פְּרִיקַת רְגָשׁוֹת כְּבוּשִׁים בְּצוּרָה בְּרִיאָה — כְּגוֹן בְּכִי אוֹ שִׂיחָה.",
             definitionNative = "Высвобождение подавленных эмоций здоровым способом — например, через плач или разговор.",
@@ -673,7 +673,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105815L)),
         WordEntity(
             id = 105821, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_safe", transliteration = "merkhav batuakh",
+            pos = "noun", semanticGroup = "mental_safe",
             original = "מֶרְחָב בָּטוּחַ", translation = "безопасное пространство",
             definition = "סְבִיבָה פִּיזִית אוֹ רִגְשִׁית שֶׁבָּהּ אָדָם מַרְגִּישׁ חוֹפְשִׁי לְהִתְבַּטֵּא בְּלִי שְׁפִיטָה.",
             definitionNative = "Физическая или эмоциональная среда, в которой человек чувствует себя свободным выражать себя без осуждения.",
@@ -683,7 +683,7 @@ object WordDataHebrewBatch11 {
 
         WordEntity(
             id = 105822, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_practice", transliteration = "mindfulnes",
+            pos = "noun", semanticGroup = "mental_practice",
             original = "מִינְדְפוּלְנֶס", translation = "майндфулнес; осознанность",
             definition = "תַּרְגּוּל שֶׁל קֶשֶׁב מְכֻוָּן לָרֶגַע הַנּוֹכְחִי בְּלִי שִׁפּוּט.",
             definitionNative = "Практика намеренного внимания к настоящему моменту без оценочных суждений.",
@@ -692,7 +692,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105806L)),
         WordEntity(
             id = 105823, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_disorder", transliteration = "hafra'a du-kotevit",
+            pos = "noun", semanticGroup = "mental_disorder",
             original = "הַפְרָעָה דּוּ-קוֹטְבִית", translation = "биполярное расстройство",
             definition = "הַפְרָעָה נַפְשִׁית עִם תְּנוּדוֹת קִיצוֹנִיּוֹת בֵּין מַצְבֵּי רוּחַ גְּבוֹהִים וְנְמוּכִים.",
             definitionNative = "Психическое расстройство с резкими перепадами настроения между маниакальными и депрессивными эпизодами.",
@@ -701,7 +701,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105803L, 105807L, 105808L, 105817L, 105824L, 105825L)),
         WordEntity(
             id = 105824, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_disorder", transliteration = "post-traumati",
+            pos = "noun", semanticGroup = "mental_disorder",
             original = "פּוֹסְטְ-טְרָאוּמָטִי", translation = "посттравматический (ПТСР)",
             definition = "קָשׁוּר לְהַפְרָעַת דַּחַק פּוֹסְטְ-טְרָאוּמָטִית (PTSD) הַנִּגְרֶמֶת מֵאֵרוּעַ טְרָאוּמָטִי.",
             definitionNative = "Связанный с посттравматическим стрессовым расстройством (ПТСР), возникающим после травмирующего события.",
@@ -710,7 +710,7 @@ object WordDataHebrewBatch11 {
          fillInBlankExclusions = listOf(105803L, 105807L, 105808L, 105817L, 105823L, 105825L)),
         WordEntity(
             id = 105825, setId = 1058, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "mental_disorder", transliteration = "kfiyatiyut",
+            pos = "noun", semanticGroup = "mental_disorder",
             original = "כְּפִיָּתִיּוּת", translation = "навязчивость; компульсивность (ОКР)",
             definition = "נְטִיָּה לְבַצֵּעַ פְּעֻלּוֹת חוֹזְרוֹת וְנִשְׁנוֹת כְּדֵי לְהַפְחִית חֲרָדָה.",
             definitionNative = "Склонность к повторяющимся действиям для снижения тревоги, характерная для ОКР.",

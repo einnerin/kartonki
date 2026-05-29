@@ -35,7 +35,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Один из самых титулованных футбольных клубов Израиля, базируется в Тель-Авиве.",
             example = "מַכַּבִּי תֵּל אָבִיב נִצְּחָה אֶת הַיָּרִיבָה שֶׁלָּהּ שָׁלוֹשׁ אֶפֶס.",
             exampleNative = "מַכַּבִּי תֵּל אָבִיב обыграла соперника со счётом три ноль.",
-            transliteration = "макаби тэль авив",
             pos = "phrase", semanticGroup = "sport_football_clubs",
             fillInBlankExclusions = listOf(189202L, 189203L, 189204L, 189205L)),
 
@@ -45,7 +44,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Тель-авивский клуб, главный соперник Маккаби в дерби города.",
             example = "אוֹהֲדֵי הַפּוֹעֵל תֵּל אָבִיב מִילְאוּ אֶת הַיָּצִיעַ הַצְּפוֹנִי.",
             exampleNative = "Болельщики הַפּוֹעֵל תֵּל אָבִיב заполнили северную трибуну.",
-            transliteration = "hа-поэль тэль авив",
             pos = "phrase", semanticGroup = "sport_football_clubs",
             fillInBlankExclusions = listOf(189201L, 189203L, 189204L, 189205L)),
 
@@ -55,7 +53,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Иерусалимский клуб со страстной и шумной фанатской трибуной.",
             example = "בֵּיתָר יְרוּשָׁלַיִם הִשְׁלִימָה אֶת הָעוֹנָה בַּמָּקוֹם הַשְּׁלִישִׁי.",
             exampleNative = "בֵּיתָר יְרוּשָׁלַיִם завершила сезон на третьем месте.",
-            transliteration = "бэйтар йерушалаим",
             pos = "phrase", semanticGroup = "sport_football_clubs",
             fillInBlankExclusions = listOf(189201L, 189202L, 189204L, 189205L)),
 
@@ -65,7 +62,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Высший дивизион профессионального футбола в Израиле, аналог премьер-лиги.",
             example = "הַקְּבוּצָה עָלְתָה לְלִיגַת הָעַל אַחֲרֵי שָׁנִים בִּמְקוֹמוֹת נְמוּכִים.",
             exampleNative = "Команда поднялась в לִיגַת הָעַל после многих лет в низших дивизионах.",
-            transliteration = "лигат hа-аль",
             pos = "phrase", semanticGroup = "sport_football_clubs",
             fillInBlankExclusions = listOf(189201L, 189202L, 189203L, 189205L)),
 
@@ -75,7 +71,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Вторая по силе израильская лига; победитель выходит наверх.",
             example = "הוּא חֲתַם חוֹזֶה עִם קְבוּצָה מִלִּיגָה לְאֻמִּית הַשָּׁנָה.",
             exampleNative = "В этом сезоне он подписал контракт с клубом из לִיגָה לְאֻמִּית.",
-            transliteration = "лига леуммит",
             pos = "phrase", semanticGroup = "sport_football_clubs",
             fillInBlankExclusions = listOf(189201L, 189202L, 189203L, 189204L)),
 
@@ -87,7 +82,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Игрок в центре обороны, останавливает атакующих соперника.",
             example = "הַבַּלָּם הַגָּבוֹהַּ נִצַּח כָּל כַּדּוּר בָּאֲוִיר.",
             exampleNative = "Высокий בַּלָּם выигрывал каждое верховое единоборство.",
-            transliteration = "балам",
             pos = "noun", semanticGroup = "sport_football_roles",
             fillInBlankExclusions = listOf(189207L, 189208L, 189209L, 189210L)),
 
@@ -97,7 +91,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Игрок середины поля, связующее звено между обороной и атакой.",
             example = "הַקַּשָּׁר הַצָּעִיר הִשִּׂיג שְׁנֵי בִּישׁוּלִים בַּמַּחֲצִית הָרִאשׁוֹנָה.",
             exampleNative = "Молодой קַשָּׁר сделал две голевые передачи в первом тайме.",
-            transliteration = "кашар",
             pos = "noun", semanticGroup = "sport_football_roles",
             fillInBlankExclusions = listOf(189206L, 189208L, 189209L, 189210L)),
 
@@ -107,7 +100,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Человек, который поддерживает определённую команду и приходит на трибуны.",
             example = "כָּל אוֹהֵד שָׁר אֶת שְׁמוֹ שֶׁל הַחָלוּץ הַחָדָשׁ.",
             exampleNative = "Каждый אוֹהֵד скандировал имя нового нападающего.",
-            transliteration = "оhед",
             pos = "noun", semanticGroup = "sport_football_roles",
             fillInBlankExclusions = listOf(189206L, 189207L, 189209L, 189210L)),
 
@@ -117,7 +109,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Команда, играющая против нашей в данном матче.",
             example = "הַיָּרִיב הַגָּדוֹל בְּיוֹתֵר שֶׁלָּהֶם הוּא מַכַּבִּי תֵּל אָבִיב.",
             exampleNative = "Их главный יָרִיב — Маккаби Тель-Авив.",
-            transliteration = "йарив",
             pos = "noun", semanticGroup = "sport_football_roles",
             fillInBlankExclusions = listOf(189206L, 189207L, 189208L, 189210L)),
 
@@ -127,7 +118,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Команда или игрок, занявший первое место в сезоне.",
             example = "הַקְּבוּצָה הוּכְתְּרָה אַלּוּף לְאַחַר שֶׁנִּיצְּחָה אֶת בֵּיתָר יְרוּשָׁלַיִם.",
             exampleNative = "Команду провозгласили אַלּוּף после победы над Бейтаром.",
-            transliteration = "алуф",
             pos = "noun", semanticGroup = "sport_football_roles",
             fillInBlankExclusions = listOf(189206L, 189207L, 189208L, 189209L)),
 
@@ -139,7 +129,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Действие, когда игрок бьёт мяч ногой по воротам или партнёру.",
             example = "הָיְתָה לוֹ בְּעִיטָה חֲזָקָה מִחוּץ לָרַחֲבָה.",
             exampleNative = "У него получился сильный בְּעִיטָה из-за пределов штрафной.",
-            transliteration = "беита",
             pos = "noun", semanticGroup = "sport_football_play",
             fillInBlankExclusions = listOf(189212L, 189213L, 189214L, 189215L)),
 
@@ -149,7 +138,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Когда игрок отдаёт мяч партнёру по команде ногой или головой.",
             example = "הוּא נָתַן מַסִירָה מְדוּיֶּקֶת אֶל הַחָלוּץ הַחוֹפְשִׁי.",
             exampleNative = "Он отдал точную מַסִירָה на свободного нападающего.",
-            transliteration = "масира",
             pos = "noun", semanticGroup = "sport_football_play",
             fillInBlankExclusions = listOf(189211L, 189213L, 189214L, 189215L)),
 
@@ -159,7 +147,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Завершающий удар по воротам в концовке атаки команды.",
             example = "הַחָלוּץ הִפְגִּין גִּמּוּר קַר וְהִכְנִיס לְפִינָה.",
             exampleNative = "Нападающий показал хладнокровный גִּמּוּר и поразил угол.",
-            transliteration = "гимур",
             pos = "noun", semanticGroup = "sport_football_play",
             fillInBlankExclusions = listOf(189211L, 189212L, 189214L, 189215L)),
 
@@ -169,7 +156,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Запрещённое нарушение против игрока соперника, останавливает игру.",
             example = "הַשּׁוֹפֵט שָׁרַק עַל פָאוּל קָשֶׁה בָּרַחֲבָה.",
             exampleNative = "Судья свистнул на жёсткий פָאוּל в штрафной.",
-            transliteration = "фаул",
             pos = "noun", semanticGroup = "sport_football_play",
             fillInBlankExclusions = listOf(189211L, 189212L, 189213L, 189215L)),
 
@@ -179,7 +165,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Удар из углового сектора после того, как защита выбила мяч за линию.",
             example = "מִן הַקּוֹרְנֵר עָלָה הַחָלוּץ וְהֵבִיא שַׁעַר.",
             exampleNative = "С קוֹרְנֵר нападающий поднялся и забил гол.",
-            transliteration = "корнэр",
             pos = "noun", semanticGroup = "sport_football_play",
             fillInBlankExclusions = listOf(189211L, 189212L, 189213L, 189214L)),
 
@@ -191,7 +176,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Игра, которая проходит на стадионе соперника, не дома.",
             example = "הַקְּבוּצָה הִפְסִידָה אֶת מִשְׂחַק חוּץ הַחָשׁוּב בְּחֵיפָה.",
             exampleNative = "Команда проиграла важный מִשְׂחַק חוּץ в Хайфе.",
-            transliteration = "мисхак хуц",
             pos = "phrase", semanticGroup = "sport_football_match",
             fillInBlankExclusions = listOf(189217L, 189218L, 189219L, 189220L)),
 
@@ -201,7 +185,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Игра, которую команда проводит на собственном стадионе.",
             example = "הָאוֹהֲדִים הִגִּיעוּ בַּהֲמוֹנֵיהֶם לְמִשְׂחַק בַּיִת.",
             exampleNative = "Болельщики толпой пришли на מִשְׂחַק בַּיִת.",
-            transliteration = "мисхак байт",
             pos = "phrase", semanticGroup = "sport_football_match",
             fillInBlankExclusions = listOf(189216L, 189218L, 189219L, 189220L)),
 
@@ -211,7 +194,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Одна из двух частей матча; между ними устроен перерыв.",
             example = "בְּסוֹף הַמַּחֲצִית הָרִאשׁוֹנָה הַתּוֹצָאָה הָיְתָה אֶחָד אֶחָד.",
             exampleNative = "В конце первой מַחֲצִית счёт был один один.",
-            transliteration = "махацит",
             pos = "noun", semanticGroup = "sport_football_match",
             fillInBlankExclusions = listOf(189216L, 189217L, 189219L, 189220L)),
 
@@ -221,7 +203,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Дополнительные минуты, которые судья добавляет за остановки игры.",
             example = "הַשַּׁעַר הַמַּכְרִיעַ הוּבְקַע בְּתוֹסֶפֶת זְמַן.",
             exampleNative = "Решающий гол был забит в תּוֹסֶפֶת זְמַן.",
-            transliteration = "тосэфэт зман",
             pos = "phrase", semanticGroup = "sport_football_match",
             fillInBlankExclusions = listOf(189216L, 189217L, 189218L, 189220L)),
 
@@ -231,7 +212,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Зелёное травяное покрытие поля, на котором играют в футбол.",
             example = "אָסְפָסֶת הַמִּגְרָשׁ הָיְתָה רְטוּבָּה לְאַחַר הַגֶּשֶׁם.",
             exampleNative = "אָסְפָסֶת поля была мокрой после дождя.",
-            transliteration = "аспэсэт",
             pos = "noun", semanticGroup = "sport_football_match",
             fillInBlankExclusions = listOf(189216L, 189217L, 189218L, 189219L)),
 
@@ -243,7 +223,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Принципиальный матч двух команд из одного города или района.",
             example = "דֶּרְבִּי תֵּל אָבִיב הוּא הַמִּפְגָּשׁ הֲכִי מְעַנְיֵן בָּעוֹנָה.",
             exampleNative = "דֶּרְבִּי Тель-Авива — самое интересное противостояние сезона.",
-            transliteration = "дэрби",
             pos = "noun", semanticGroup = "sport_football_competitions",
             fillInBlankExclusions = listOf(189222L, 189223L, 189224L, 189225L)),
 
@@ -253,7 +232,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Израильский футбольный кубок на вылет с одним общим трофеем.",
             example = "הַקְּבוּצָה זָכְתָה בְּגָבִיעַ הַמְּדִינָה אַחֲרֵי שָׁלוֹשׁ שָׁנִים.",
             exampleNative = "Команда выиграла גָּבִיעַ הַמְּדִינָה спустя три года.",
-            transliteration = "гавиа hа-мдина",
             pos = "phrase", semanticGroup = "sport_football_competitions",
             fillInBlankExclusions = listOf(189221L, 189223L, 189224L, 189225L)),
 
@@ -263,7 +241,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Серия игр по жеребьёвке; в финале определяется победитель.",
             example = "הַטּוּרְנִיר הָאֵירוֹפֵּי יִתְקַיֵּם בַּחוֹדֶשׁ הַבָּא.",
             exampleNative = "Европейский טוּרְנִיר пройдёт в следующем месяце.",
-            transliteration = "турнир",
             pos = "noun", semanticGroup = "sport_football_competitions",
             fillInBlankExclusions = listOf(189221L, 189222L, 189224L, 189225L)),
 
@@ -273,7 +250,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Официальное предупреждение от арбитра за нарушение средней тяжести.",
             example = "הַקַּשָּׁר קִבֵּל כַּרְטִיס צָהֹב כְּבָר בַּדַּקָּה הַחֲמִישִׁית.",
             exampleNative = "Полузащитник получил כַּרְטִיס צָהֹב уже на пятой минуте.",
-            transliteration = "картис цаhов",
             pos = "phrase", semanticGroup = "sport_football_competitions",
             fillInBlankExclusions = listOf(189221L, 189222L, 189223L, 189225L)),
 
@@ -283,7 +259,6 @@ object WordDataHebrewSportsFootball {
             definitionNative = "Свободный удар, назначаемый после нарушения за пределами штрафной площади.",
             example = "מִבְּעִיטַת עוֹנְשִׁין מֵרָחוֹק עָלָה הַכַּדּוּר אֶל הַזָּוִית.",
             exampleNative = "С בְּעִיטַת עוֹנְשִׁין издалека мяч улетел в самый угол.",
-            transliteration = "беитат оншин",
             pos = "phrase", semanticGroup = "sport_football_competitions",
             fillInBlankExclusions = listOf(189221L, 189222L, 189223L, 189224L)),
     )

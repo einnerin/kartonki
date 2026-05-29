@@ -75,7 +75,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Процесс проверки, что человек или документ реально существуют и заслуживают доверия.",
             example = "אִימוּת מָקוֹר זִהָה תְּמוּנָה יְשָׁנָה מִשִּׁישִּׁים וְשֵׁשׁ.",
             exampleNative = "אִימוּת מָקוֹר опознал старое фото шестьдесят шестого года.",
-            transliteration = "имут макор",
             pos = "phrase", semanticGroup = "journalism_fact_checking", fillInBlankExclusions = listOf(190402L, 190403L, 190405L, 190424L)),
 
         WordEntity(id = 190402, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -85,7 +84,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Человек или документ, бывший на самом событии или создавший его — без посредников.",
             example = "הַתַּחְקִיר נִשְׁעַן עַל מָקוֹר רִאשׁוֹנִי שֶׁעָבַד בַּמִּשְׂרָד.",
             exampleNative = "Расследование опиралось на מָקוֹר רִאשׁוֹנִי из самого министерства.",
-            transliteration = "макор ришони",
             pos = "phrase", semanticGroup = "journalism_fact_checking", fillInBlankExclusions = listOf(190401L, 190403L, 190405L)),
 
         WordEntity(id = 190403, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -95,7 +93,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Человек или текст, рассказывающий о событии с чужих слов, не из личного опыта.",
             example = "סֵפֶר הִיסְטוֹרְיָה הוּא מָקוֹר מִשְׁנִי שֶׁמְּסַכֵּם תְּעוּדוֹת רַבּוֹת.",
             exampleNative = "Учебник истории — это מָקוֹר מִשְׁנִי, обобщающий много документов.",
-            transliteration = "макор мишни",
             pos = "phrase", semanticGroup = "journalism_fact_checking", fillInBlankExclusions = listOf(190401L, 190402L, 190405L)),
 
         WordEntity(id = 190404, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -105,7 +102,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Короткий абзац, который добавляют к статье, чтобы исправить найденную фактическую ошибку.",
             example = "הָעוֹרֵךְ פִּרְסֵם הִתַּקְּנוּת קְצָרָה בְּתַחְתִּית הַמַּאֲמָר.",
             exampleNative = "Редактор опубликовал короткую הִתַּקְּנוּת внизу статьи.",
-            transliteration = "hитакнут",
             pos = "noun", semanticGroup = "journalism_fact_checking", fillInBlankExclusions = listOf(190405L)),
 
         WordEntity(id = 190405, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -115,7 +111,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Резкий шаг, когда газета удаляет всю статью целиком из-за серьёзной ошибки.",
             example = "חֲזָרָה מִפִּרְסוּם נִדְרְשָׁה אַחֲרֵי שֶׁהַתְּמוּנָה הִתְבָּרְרָה מְזֻיֶּפֶת.",
             exampleNative = "חֲזָרָה מִפִּרְסוּם понадобилась, когда фото оказалось подделкой.",
-            transliteration = "хазара ми-пирсум",
             pos = "phrase", semanticGroup = "journalism_fact_checking", fillInBlankExclusions = listOf(190401L, 190402L, 190403L, 190404L)),
 
         // ── Group: journalism_disinformation (5 words) ────────────────────────
@@ -127,7 +122,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Неверная новость, которую распространяют от чистого сердца, без злого умысла.",
             example = "מֵידָע מוּטְעֶה עַל הַחִסּוּן הִתְפַּשֵּׁט בִּקְבוּצוֹת אִמָּהוֹת.",
             exampleNative = "מֵידָע מוּטְעֶה о прививке разлетелся по чатам мам.",
-            transliteration = "мэйда мутъе",
             pos = "phrase", semanticGroup = "journalism_disinformation", fillInBlankExclusions = listOf(190407L, 190408L, 190409L, 190410L)),
 
         WordEntity(id = 190407, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -137,7 +131,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Публикация, написанная с намерением ввести читателя в заблуждение ради политики или денег.",
             example = "יְדִיעַת כָּזָב עַל הַמּוּעֲמָד הוּפְצָה לִפְנֵי הַבְּחִירוֹת.",
             exampleNative = "יְדִיעַת כָּזָב о кандидате разошлась перед выборами.",
-            transliteration = "йедиат казав",
             pos = "phrase", semanticGroup = "journalism_disinformation", fillInBlankExclusions = listOf(190406L, 190408L, 190409L, 190410L)),
 
         WordEntity(id = 190408, setId = 1904, languagePair = "he-ru", rarity = "RARE",
@@ -147,7 +140,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Поддельное видео, созданное ИИ: человек говорит на нём то, чего на самом деле не произносил.",
             example = "זִיּוּף עָמוֹק שֶׁל הָרֹאשׁ מֶמְשָׁלָה הִטְעָה מִלְיוֹן צוֹפִים.",
             exampleNative = "זִיּוּף עָמוֹק премьера обманул миллион зрителей.",
-            transliteration = "зийуф амок",
             pos = "phrase", semanticGroup = "journalism_disinformation", fillInBlankExclusions = listOf(190406L, 190407L, 190409L, 190410L)),
 
         WordEntity(id = 190409, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -157,7 +149,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Картинка или видео, прошедшее лукавую правку, чтобы изменить исходный смысл.",
             example = "הָאֲתָר הִסִּיר תּוֹכֶן שׁוּטָה אַחֲרֵי תְּלוּנַת קוֹרְאִים.",
             exampleNative = "Сайт убрал תּוֹכֶן שׁוּטָה после жалобы читателей.",
-            transliteration = "тохэн шута",
             pos = "phrase", semanticGroup = "journalism_disinformation", fillInBlankExclusions = listOf(190406L, 190407L, 190408L, 190410L, 190413L)),
 
         WordEntity(id = 190410, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -167,7 +158,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Рассказ, объясняющий событие тайным заговором могущественной группы.",
             example = "תַּאֲחִיזוֹת קֶשֶׁר עַל הַיָּרֵחַ עֲדַיִן חַיּוֹת בָּרֶשֶׁת.",
             exampleNative = "תַּאֲחִיזוֹת קֶשֶׁר о Луне до сих пор живут в сети.",
-            transliteration = "таахизот кэшэр",
             pos = "phrase", semanticGroup = "journalism_disinformation", fillInBlankExclusions = listOf(190406L, 190407L, 190408L, 190409L)),
 
         // ── Group: journalism_digital_formats (5 words) ───────────────────────
@@ -179,7 +169,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Формат глубокого рассказа с фото и графикой, длиной в тысячи слов.",
             example = "הִיא קָרְאָה כַּתָּבָה אֲרוּכָה עַל מִשְׁפַּחַת רוֹמָנוֹב כָּל הַלַּיְלָה.",
             exampleNative = "Она читала כַּתָּבָה אֲרוּכָה о семье Романовых всю ночь.",
-            transliteration = "катава арука",
             pos = "phrase", semanticGroup = "journalism_digital_formats", fillInBlankExclusions = listOf(190412L, 190413L, 190414L, 190415L)),
 
         WordEntity(id = 190412, setId = 1904, languagePair = "he-ru", rarity = "RARE",
@@ -189,7 +178,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Регулярное письмо, приходящее подписчику в ящик, с обзором или авторской колонкой.",
             example = "הוּא מַפְעִיל עַלּוֹן דִּיגִיטָלִי שָׁבוּעִי עִם שְׁלוֹשִׁים אֶלֶף מַנּוּיִים.",
             exampleNative = "Он ведёт еженедельный עַלּוֹן דִּיגִיטָלִי с тридцатью тысячами подписчиков.",
-            transliteration = "алон дигитали",
             pos = "phrase", semanticGroup = "journalism_digital_formats", fillInBlankExclusions = listOf(190411L, 190413L, 190414L, 190415L)),
 
         WordEntity(id = 190413, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -199,7 +187,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Объявление, замаскированное под обычную статью и прячущее рекламный характер.",
             example = "סִימּוּן «בְּחָסוּת» מַבְדִּיל פִּרְסוֹמֶת יְלִידָה מִכַּתָּבָה אֲמִתִּית.",
             exampleNative = "Пометка «на правах» отличает פִּרְסוֹמֶת יְלִידָה от настоящей статьи.",
-            transliteration = "пирсомэт йэлида",
             pos = "phrase", semanticGroup = "journalism_digital_formats", fillInBlankExclusions = listOf(190411L, 190412L, 190414L, 190415L)),
 
         WordEntity(id = 190414, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -209,7 +196,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Барьер на сайте, закрывающий материал до тех пор, пока читатель не подпишется и не заплатит.",
             example = "חוֹמַת תַּשְׁלוּם נִפְתְּחָה אַחֲרֵי שְׁלוֹשׁ כַּתָּבוֹת בְּחִנָּם.",
             exampleNative = "חוֹמַת תַּשְׁלוּם включилась после трёх бесплатных статей.",
-            transliteration = "хомат ташлум",
             pos = "phrase", semanticGroup = "journalism_digital_formats", fillInBlankExclusions = listOf(190411L, 190412L, 190413L, 190415L)),
 
         WordEntity(id = 190415, setId = 1904, languagePair = "he-ru", rarity = "RARE",
@@ -219,7 +205,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Намекающая строчка, обещающая сногсшибательное открытие и не сдерживающая обещание в тексте.",
             example = "כּוֹתֶרֶת פִּתָּיוֹן הִכְנִיסָה אֶלֶף קְלִיקִים בְּשָׁעָה אַחַת.",
             exampleNative = "כּוֹתֶרֶת פִּתָּיוֹן принесла тысячу кликов за один час.",
-            transliteration = "котэрэт питайон",
             pos = "phrase", semanticGroup = "journalism_digital_formats", fillInBlankExclusions = listOf(190411L, 190412L, 190413L, 190414L, 190418L)),
 
         // ── Group: journalism_pro_lexicon (5 words) ───────────────────────────
@@ -231,7 +216,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Короткая строчка в начале статьи, сообщающая, откуда и какого числа сделан репортаж.",
             example = "שׁוֹרַת תַּאֲרִיךְ אָמְרָה «יְרוּשָׁלַיִם, יוֹם שֵׁנִי».",
             exampleNative = "שׁוֹרַת תַּאֲרִיךְ гласила «Иерусалим, понедельник».",
-            transliteration = "шурат тарих",
             pos = "phrase", semanticGroup = "journalism_pro_lexicon"),
 
         WordEntity(id = 190417, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -241,7 +225,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Первый абзац, цепляющий читателя и излагающий суть истории в нескольких предложениях.",
             example = "פֶּתִיחַת כַּתָּבָה חַדָּה הֶחְזִיקָה אֶת הַקּוֹרֵא עַד הַסּוֹף.",
             exampleNative = "Острая פֶּתִיחַת כַּתָּבָה удержала читателя до конца.",
-            transliteration = "птихат катава",
             pos = "phrase", semanticGroup = "journalism_pro_lexicon", fillInBlankExclusions = listOf(190416L, 190419L, 190420L)),
 
         WordEntity(id = 190418, setId = 1904, languagePair = "he-ru", rarity = "RARE",
@@ -251,7 +234,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "История, которую одна газета опубликовала первой, раньше конкурентов, и сделала темой дня.",
             example = "הַתַּחְקִירָן הִשִּׂיג סְקוּפ עַל שֹׁחַד בְּעִירִיָּה.",
             exampleNative = "Расследователь добыл סְקוּפ о взятках в мэрии.",
-            transliteration = "скуп",
             pos = "noun", semanticGroup = "journalism_pro_lexicon"),
 
         WordEntity(id = 190419, setId = 1904, languagePair = "he-ru", rarity = "RARE",
@@ -261,7 +243,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Авторская статья, в которой пишущий открыто высказывает позицию по злободневному вопросу.",
             example = "טוּר דֵּעוֹת חָרִיף שֶׁל הַסּוֹפֶרֶת עוֹרֵר וִכּוּחַ בָּרֶשֶׁת.",
             exampleNative = "Резкая טוּר דֵּעוֹת писательницы вызвала спор в сети.",
-            transliteration = "тур дэот",
             pos = "phrase", semanticGroup = "journalism_pro_lexicon", fillInBlankExclusions = listOf(190416L, 190417L, 190420L)),
 
         WordEntity(id = 190420, setId = 1904, languagePair = "he-ru", rarity = "RARE",
@@ -271,7 +252,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Работа, требующая месяцев сбора документов и свидетелей, чтобы вскрыть несправедливость.",
             example = "עִתּוֹנָאוּת חוֹקֶרֶת חָשְׂפָה אֶת הַפָּרָשָׁה לִפְנֵי הַפְּרַקְלִיטוּת.",
             exampleNative = "עִתּוֹנָאוּת חוֹקֶרֶת раскрыла дело раньше прокуратуры.",
-            transliteration = "итонаут хокэрэт",
             pos = "phrase", semanticGroup = "journalism_pro_lexicon", fillInBlankExclusions = listOf(190416L, 190417L, 190419L, 190425L)),
 
         // ── Group: journalism_workflow (5 words) ──────────────────────────────
@@ -283,7 +263,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Метод, собирающий улики из сетевых фото, карт и публичных постов, доступных каждому.",
             example = "מוֹדִיעִין מְקוֹרוֹת פְּתוּחִים אִתֵּר טַנְק לְפִי צֵל וְשֶׁמֶשׁ.",
             exampleNative = "מוֹדִיעִין מְקוֹרוֹת פְּתוּחִים нашёл танк по тени и солнцу.",
-            transliteration = "модиин мэкорот птухим",
             pos = "phrase", semanticGroup = "journalism_workflow", fillInBlankExclusions = listOf(190422L, 190423L, 190424L, 190425L)),
 
         WordEntity(id = 190422, setId = 1904, languagePair = "he-ru", rarity = "RARE",
@@ -293,7 +272,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Журналист, специализирующийся на одной узкой области и знающий лично всех её игроков.",
             example = "הוּא כְּתָב נֵגֶד לְבִּטָּחוֹן וּמַגִּיעַ לְכָל מְסִיבַּת עִתּוֹנָאִים.",
             exampleNative = "Он — כְּתָב נֵגֶד по обороне и бывает на каждом брифинге.",
-            transliteration = "ктав нэгэд",
             pos = "phrase", semanticGroup = "journalism_workflow", fillInBlankExclusions = listOf(190421L, 190423L, 190424L, 190425L)),
 
         WordEntity(id = 190423, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -303,7 +281,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Репортёр международного информагентства, поставляющий материалы сотням газет.",
             example = "כְּתַב צָבִיר שִׁדֵּר אֶת הַיְּדִיעָה לְ-AP חֲצִי שָׁעָה אַחֲרֵי הַפִּגּוּעַ.",
             exampleNative = "כְּתַב צָבִיר передал новость в AP через полчаса после теракта.",
-            transliteration = "ктав цавир",
             pos = "phrase", semanticGroup = "journalism_workflow", fillInBlankExclusions = listOf(190421L, 190422L, 190424L, 190425L)),
 
         WordEntity(id = 190424, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -313,7 +290,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Метод, который проверяет один и тот же факт по двум независимым источникам минимум.",
             example = "בְּדִיקָה צוֹלֶבֶת פָּסְלָה אֶת הַסִּפּוּר עַל הַשַּׂר אַחֲרֵי שָׁעָה.",
             exampleNative = "בְּדִיקָה צוֹלֶבֶת забраковала рассказ про министра за час.",
-            transliteration = "бдика цолэвэт",
             pos = "phrase", semanticGroup = "journalism_workflow", fillInBlankExclusions = listOf(190401L, 190421L, 190422L, 190423L, 190425L)),
 
         WordEntity(id = 190425, setId = 1904, languagePair = "he-ru", rarity = "EPIC",
@@ -323,7 +299,6 @@ object WordDataHebrewJournalismDigital {
             definitionNative = "Направление работы, добывающее истории из таблиц, баз данных и статистических графиков.",
             example = "עִתּוֹנָאוּת נְתוּנִים גִּלְּתָה מַגָּמָה בְּפַעֲרֵי שָׂכָר בְּצָפוֹן הָאָרֶץ.",
             exampleNative = "עִתּוֹנָאוּת נְתוּנִים нашла тренд в разнице зарплат на севере страны.",
-            transliteration = "итонаут нэтуним",
             pos = "phrase", semanticGroup = "journalism_workflow", fillInBlankExclusions = listOf(190420L, 190421L, 190422L, 190423L, 190424L)),
     )
 }

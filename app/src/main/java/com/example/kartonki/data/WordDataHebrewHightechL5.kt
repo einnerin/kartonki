@@ -57,7 +57,7 @@ object WordDataHebrewHightechL5 {
         // ── hightech_leadership (5) — C-level и структура команды ──
         WordEntity(
             id = 174901, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_leadership", transliteration = "si-ti-o",
+            pos = "noun", semanticGroup = "hightech_leadership",
             original = "סִי-טִי-אוֹ", translation = "CTO (технический директор)",
             definition = "הָאָדָם הַבָּכִיר שֶׁאַחְרָאִי עַל כָּל הַחֲלָטוֹת הָאַרְכִיטֶקְטוּרָה וְהַטֶּכְנוֹלוֹגְיָה.",
             definitionNative = "Самый старший человек, отвечающий за все архитектурные и технологические решения.",
@@ -66,7 +66,7 @@ object WordDataHebrewHightechL5 {
         ),
         WordEntity(
             id = 174902, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_leadership", transliteration = "vi-pi ar-en-di",
+            pos = "noun", semanticGroup = "hightech_leadership",
             original = "וִי-פִּי אַר-אֶנְד-דִּי", translation = "VP R&D (вице-президент по разработке)",
             definition = "סְגַן נָשִׂיא שֶׁמְּנַהֵל מַחְלֶקֶת מֶחְקָר וּפִתּוּחַ עִם עַשְׂרוֹת אוֹ מֵאוֹת מְהַנְדְּסִים.",
             definitionNative = "Замглавы, который ведёт отдел исследований и разработки — десятки или сотни инженеров.",
@@ -75,7 +75,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174901L, 174903L, 174904L, 174905L)),
         WordEntity(
             id = 174903, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_leadership", transliteration = "si-pi-o",
+            pos = "noun", semanticGroup = "hightech_leadership",
             original = "סִי-פִּי-אוֹ", translation = "CPO (директор по продукту)",
             definition = "מְנַהֵל בָּכִיר שֶׁאַחְרָאִי עַל הַחֲזוֹן וְעַל הַמַּפָּה הָאֲרֻכָּה שֶׁל כָּל קַוֵּי הַמּוּצָר.",
             definitionNative = "Старший управленец, отвечающий за видение и долгий план всех продуктовых линий.",
@@ -84,7 +84,7 @@ object WordDataHebrewHightechL5 {
         ),
         WordEntity(
             id = 174904, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_leadership", transliteration = "skeyling tsevet",
+            pos = "noun", semanticGroup = "hightech_leadership",
             original = "סְקֵיילִינְג צֶוֶות", translation = "масштабирование команды",
             definition = "תַּהֲלִיךְ שֶׁל גִּדּוּל מָהִיר בְּמִסְפַּר הָעוֹבְדִים בְּלִי לְאַבֵּד אֵיכוּת אוֹ תַּרְבּוּת.",
             definitionNative = "Быстрый рост числа сотрудников без потери качества или культуры.",
@@ -93,7 +93,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174901L, 174902L, 174903L, 174905L)),
         WordEntity(
             id = 174905, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_leadership", transliteration = "mivne irguni",
+            pos = "noun", semanticGroup = "hightech_leadership",
             original = "מִבְנֶה אִרְגּוּנִי", translation = "организационная структура",
             definition = "צוּרָה שֶׁבָּהּ מְסֻדָּרוֹת הַמַּחְלָקוֹת וְכַפִיפוּיוֹת בֵּין הָאַנָשִׁים בַּחֶבְרָה.",
             definitionNative = "То, как устроены отделы и кому кто подчиняется внутри фирмы.",
@@ -104,7 +104,7 @@ object WordDataHebrewHightechL5 {
         // ── hightech_funding (5) — раунды и инвестиции ──
         WordEntity(
             id = 174906, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_funding", transliteration = "raund giyus",
+            pos = "noun", semanticGroup = "hightech_funding",
             original = "רַאוּנְד גִּיּוּס", translation = "инвестиционный раунд",
             definition = "סִבּוּב שֶׁל הַשְׁקָעָה שֶׁבּוֹ סְטַרְטְאַפּ מְקַבֵּל כֶּסֶף מִקְבוּצָה שֶׁל מַשְׁקִיעִים.",
             definitionNative = "Цикл инвестирования, в котором стартап получает деньги от группы инвесторов.",
@@ -113,7 +113,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174907L, 174908L, 174909L, 174910L)),
         WordEntity(
             id = 174907, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_funding", transliteration = "dyu-dilijens",
+            pos = "noun", semanticGroup = "hightech_funding",
             original = "דְּיוּ-דִּילִיגֶ'נְס", translation = "due diligence (проверка перед сделкой)",
             definition = "בְּדִיקָה מַעֲמִיקָה שֶׁל מַשְׁקִיעַ לִפְנֵי שֶׁהוּא מַחְלִיט לְהַעֲבִיר אֶת הַכֶּסֶף.",
             definitionNative = "Глубокая проверка инвестором — перед тем как решить переводить деньги.",
@@ -122,7 +122,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174906L, 174908L, 174909L, 174910L)),
         WordEntity(
             id = 174908, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_funding", transliteration = "term shit",
+            pos = "noun", semanticGroup = "hightech_funding",
             original = "טֶרְם שִׁיט", translation = "term sheet (предварительные условия)",
             definition = "מִסְמָךְ קָצָר וְלֹא מְחַיֵּב שֶׁמְסַכֵּם אֶת הַתְּנָאִים הַעִקָּרִיִּים שֶׁל הָעִסְקָה.",
             definitionNative = "Короткая необязывающая бумага — резюмирует ключевые условия будущей сделки.",
@@ -131,7 +131,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174906L, 174907L, 174909L, 174910L)),
         WordEntity(
             id = 174909, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_funding", transliteration = "sho'i hevra",
+            pos = "noun", semanticGroup = "hightech_funding",
             original = "שׁוֹוִי חֶבְרָה", translation = "оценка компании (valuation)",
             definition = "הַסְּכוּם הַכּוֹלֵל שֶׁבּוֹ מַעֲרִיכִים אֶת הַסְּטַרְטְאַפּ עַל בָּסִיס שֶׁל הַחֻלָּקָה הָעַכְשָׁוִית.",
             definitionNative = "Полная сумма, в которую оценивают стартап на основе текущего распределения долей.",
@@ -140,7 +140,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174906L, 174907L, 174908L, 174910L)),
         WordEntity(
             id = 174910, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_funding", transliteration = "dilul",
+            pos = "noun", semanticGroup = "hightech_funding",
             original = "דִּילּוּל", translation = "разводнение долей (dilution)",
             definition = "יְרִידָה בָּאָחוּז שֶׁל הַבְּעָלִים הַוָּתִיקִים כְּשֶׁחֶבְרָה מַנְפִּיקָה מְנָיוֹת חֲדָשׁוֹת.",
             definitionNative = "Падение доли старых владельцев, когда фирма выпускает новые акции.",
@@ -151,7 +151,7 @@ object WordDataHebrewHightechL5 {
         // ── hightech_exit (5) — IPO, M&A, выход ──
         WordEntity(
             id = 174911, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_exit", transliteration = "hanpaka",
+            pos = "noun", semanticGroup = "hightech_exit",
             original = "הַנְפָּקָה", translation = "IPO (выход на биржу)",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ סְטַרְטְאַפּ פְּרָטִי הוֹפֵךְ לְצִבּוּרִי וּמְנָיוֹתָיו נִסְחָרוֹת בַּבּוּרְסָה.",
             definitionNative = "Когда частный стартап становится публичным, и его акции торгуются на бирже.",
@@ -160,7 +160,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174912L, 174913L, 174914L, 174915L)),
         WordEntity(
             id = 174912, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_exit", transliteration = "mizug ve-rekhisha",
+            pos = "noun", semanticGroup = "hightech_exit",
             original = "מִיזּוּג וּרְכִישָׁה", translation = "M&A (слияния и поглощения)",
             definition = "עִסְקָה שֶׁבָּהּ חֶבְרָה אַחַת קוֹנָה אַחֶרֶת אוֹ שְׁתֵּיהֶן מִתְאַחֲדוֹת לִישׁוּת אַחַת.",
             definitionNative = "Сделка, в которой одна фирма покупает другую — или обе сливаются в одно лицо.",
@@ -169,7 +169,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174911L, 174913L, 174914L, 174915L)),
         WordEntity(
             id = 174913, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_exit", transliteration = "akvi-hayer",
+            pos = "noun", semanticGroup = "hightech_exit",
             original = "אַקְוִוי-הַיְיר", translation = "acqui-hire (покупка ради команды)",
             definition = "סוּג שֶׁל קְנִיָּה שֶׁבּוֹ הַמַּטָּרָה הָעִיקָּרִית הִיא הָעוֹבְדִים, לֹא הַמּוּצָר אוֹ הַטֶּכְנוֹלוֹגְיָה.",
             definitionNative = "Тип сделки, где главная цель — сами сотрудники, а не продукт или технология.",
@@ -178,7 +178,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174911L, 174912L, 174914L, 174915L)),
         WordEntity(
             id = 174914, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_exit", transliteration = "ekzit",
+            pos = "noun", semanticGroup = "hightech_exit",
             original = "אֶקְזִיט", translation = "exit (выход основателей)",
             definition = "אֵרוּעַ שֶׁבּוֹ מַיְיסְדִים וּמַשְׁקִיעִים מַמִּירִים אֶת הַחֵלֶק שֶׁלָּהֶם לְכֶסֶף נָזִיל.",
             definitionNative = "Событие, когда основатели и инвесторы превращают свою долю в живые деньги.",
@@ -187,7 +187,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174911L, 174912L, 174913L, 174915L)),
         WordEntity(
             id = 174915, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_exit", transliteration = "kep teibel",
+            pos = "noun", semanticGroup = "hightech_exit",
             original = "קֶפ טֵייבֶּל", translation = "captable (таблица долей)",
             definition = "טַבְלָה מְפֹרֶטֶת שֶׁמַּרְאָה מִי מַחֲזִיק כָּל אָחוּז וְכָל סוּג שֶׁל נְיָר עֶרֶךְ בַּחֶבְרָה.",
             definitionNative = "Подробная таблица — кто владеет каким процентом и каждым типом ценной бумаги.",
@@ -198,7 +198,7 @@ object WordDataHebrewHightechL5 {
         // ── hightech_strategy (5) — стратегические термины ──
         WordEntity(
             id = 174916, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_strategy", transliteration = "pozitsyoning",
+            pos = "noun", semanticGroup = "hightech_strategy",
             original = "פּוֹזִיצְיוֹנִינְג", translation = "позиционирование (на рынке)",
             definition = "הַחְלָטָה אֵיךְ הַמּוּצָר נִתְפָּס בַּשּׁוּק וּמוּל מִי הוּא מַתְמוֹדֵד.",
             definitionNative = "Решение, как продукт воспринимается на рынке и с кем именно он соперничает.",
@@ -207,7 +207,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174917L, 174918L, 174919L, 174920L)),
         WordEntity(
             id = 174917, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_strategy", transliteration = "moat",
+            pos = "noun", semanticGroup = "hightech_strategy",
             original = "מוֹאָט", translation = "moat (защитный ров вокруг бизнеса)",
             definition = "יִתְרוֹן עָמֹק שֶׁמַּקְשֶׁה עַל מִתְחָרִים לִגְנוֹב אֶת הַלָּקוֹחוֹת שֶׁל הַחֶבְרָה.",
             definitionNative = "Глубокое преимущество, которое мешает соперникам уводить клиентов фирмы.",
@@ -216,7 +216,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174916L, 174918L, 174919L, 174920L)),
         WordEntity(
             id = 174918, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_strategy", transliteration = "yitaron takharuti",
+            pos = "noun", semanticGroup = "hightech_strategy",
             original = "יִתְרוֹן תַּחֲרוּתִי", translation = "конкурентное преимущество",
             definition = "מַשֶּׁהוּ שֶׁחֶבְרָה עוֹשָׂה טוֹב יוֹתֵר מֵאַחֵרִים וְקָשֶׁה לָהֶם לְהָדְבִּיק אוֹתָהּ.",
             definitionNative = "То, что фирма делает лучше прочих, — и им сложно её догнать.",
@@ -226,7 +226,7 @@ object WordDataHebrewHightechL5 {
         ),
         WordEntity(
             id = 174919, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_strategy", transliteration = "pi-em-ef",
+            pos = "noun", semanticGroup = "hightech_strategy",
             original = "פִּי-אֶם-אֶף", translation = "product-market fit (PMF)",
             definition = "הַשָּׁלָב שֶׁבּוֹ הַשּׁוּק קוֹנֶה בְּתֵיאָבוֹן אֶת מַה שֶּׁהַסְּטַרְטְאַפּ מַצִּיעַ.",
             definitionNative = "Стадия, когда рынок жадно покупает то, что предлагает стартап.",
@@ -235,7 +235,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174916L, 174917L, 174918L, 174920L)),
         WordEntity(
             id = 174920, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_strategy", transliteration = "pivot",
+            pos = "noun", semanticGroup = "hightech_strategy",
             original = "פִיבּוֹט", translation = "pivot (резкая смена курса)",
             definition = "שִׁינּוּי חַד בַּכִּוּוּן הָעִסְקִי כְּשֶׁמּוּצָר אוֹ שׁוּק לֹא עוֹבְדִים כְּמוֹ שֶׁתִּכְנְנוּ.",
             definitionNative = "Резкий поворот в бизнес-направлении, когда продукт или рынок не идут как задумано.",
@@ -246,7 +246,7 @@ object WordDataHebrewHightechL5 {
         // ── hightech_culture (5) — корпоративная культура и удержание ──
         WordEntity(
             id = 174921, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_culture", transliteration = "atrishen",
+            pos = "noun", semanticGroup = "hightech_culture",
             original = "אַטְרִישֶׁן", translation = "attrition (текучка кадров)",
             definition = "אָחוּז הָעוֹבְדִים שֶׁעוֹזְבִים אֶת הַחֶבְרָה בְּמֶשֶׁךְ שָׁנָה אַחַת לִכְלָל הַסֶּגֶל.",
             definitionNative = "Процент уходящих сотрудников за год от всего персонала.",
@@ -255,7 +255,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174922L, 174923L, 174924L, 174925L)),
         WordEntity(
             id = 174922, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_culture", transliteration = "shimur ovdim",
+            pos = "noun", semanticGroup = "hightech_culture",
             original = "שִׁמּוּר עוֹבְדִים", translation = "удержание сотрудников",
             definition = "מַעֲרֶכֶת אֶמְצָעִים שֶׁל הַחֶבְרָה כְּדֵי שֶׁאַנָשִׁים טוֹבִים יִשָּׁאֲרוּ זְמַן רַב.",
             definitionNative = "Совокупность мер компании, чтобы хорошие люди оставались надолго.",
@@ -264,7 +264,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174921L, 174923L, 174924L, 174925L)),
         WordEntity(
             id = 174923, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_culture", transliteration = "ona'ut",
+            pos = "noun", semanticGroup = "hightech_culture",
             original = "אוֹנָאוּת", translation = "ownership (чувство хозяина)",
             definition = "תְּחוּשָׁה שֶׁל עוֹבֵד שֶׁהַתּוֹצָאוֹת הֵן אִישִׁיּוֹת שֶׁלּוֹ, לֹא רַק שֶׁל הַמְּנַהֵל.",
             definitionNative = "Чувство сотрудника, что результаты — лично его, а не одного начальника.",
@@ -273,7 +273,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174921L, 174922L, 174924L, 174925L)),
         WordEntity(
             id = 174924, setId = 1749, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "hightech_culture", transliteration = "akhrayutiyut",
+            pos = "noun", semanticGroup = "hightech_culture",
             original = "אַחְרָיוּתִיּוּת", translation = "accountability (готовность отвечать за результат)",
             definition = "נְכוֹנוּת לָתֵת דִּין וְחֶשְׁבּוֹן עַל מַעֲשִׂים וּתְוֹצָאוֹת בְּלִי לְהַאֲשִׁים אֶת הַסְּבִיבָה.",
             definitionNative = "Готовность отчитываться за поступки и итоги, не сваливая на окружение.",
@@ -282,7 +282,7 @@ object WordDataHebrewHightechL5 {
          fillInBlankExclusions = listOf(174921L, 174922L, 174923L, 174925L)),
         WordEntity(
             id = 174925, setId = 1749, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hightech_culture", transliteration = "mo'tag ma'asik",
+            pos = "noun", semanticGroup = "hightech_culture",
             original = "מוֹתַג מַעֲסִיק", translation = "employer brand (бренд работодателя)",
             definition = "הַתַּדְמִית שֶׁל הַחֶבְרָה בְּעֵינֵי הַמֻּעֳמָדִים שֶׁעוֹד לֹא הִגִּיעוּ אֵלֶיהָ.",
             definitionNative = "Образ фирмы в глазах кандидатов, которые ещё в неё не пришли.",

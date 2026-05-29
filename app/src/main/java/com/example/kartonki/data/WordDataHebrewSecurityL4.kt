@@ -44,7 +44,7 @@ object WordDataHebrewSecurityL4 {
         // ── security_special_ops (5) — спецоперации ──
         WordEntity(
             id = 172101, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_special_ops", transliteration = "mivtsa khai",
+            pos = "phrase", semanticGroup = "security_special_ops",
             original = "מִבְצָע חַי", translation = "боевая операция (на земле)",
             definition = "פְּעוּלָה אֲמִיתִּית בַּשֶּׁטַח עִם סִכּוּן מַמָּשִׁי, לֹא תַּרְגִּיל.",
             definitionNative = "Реальное действие на местности с настоящим риском, не учения.",
@@ -53,7 +53,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172102L, 172103L, 172104L, 172105L, 172111L)),
         WordEntity(
             id = 172102, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_special_ops", transliteration = "shikhzur eiru'a",
+            pos = "phrase", semanticGroup = "security_special_ops",
             original = "שִׁחְזוּר אֵירוּעַ", translation = "реконструкция события",
             definition = "שִׁיחְזוּר מְדֻיָּק שֶׁל מַה שֶּׁקָּרָה כְּדֵי לְהָבִין אֵיךְ זֶה הִתְפַּתֵּחַ.",
             definitionNative = "Точное воспроизведение случившегося, чтобы понять ход событий.",
@@ -62,7 +62,7 @@ object WordDataHebrewSecurityL4 {
         ),
         WordEntity(
             id = 172103, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_special_ops", transliteration = "tatspit smuya",
+            pos = "phrase", semanticGroup = "security_special_ops",
             original = "תַּצְפִּית סְמוּיָה", translation = "скрытое наблюдение",
             definition = "מַעֲקָב מֵרָחוֹק מִבְּלִי שֶׁהַנֶּעֱקָב יָדַע עַל כָּךְ.",
             definitionNative = "Слежение издали так, чтобы объект не догадался об этом.",
@@ -71,7 +71,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172101L, 172102L, 172104L, 172105L)),
         WordEntity(
             id = 172104, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_special_ops", transliteration = "avtakha ishit",
+            pos = "phrase", semanticGroup = "security_special_ops",
             original = "אַבְטָחָה אִישִׁית", translation = "личная охрана VIP",
             definition = "שְׁמִירָה צְמוּדָה עַל אָדָם חָשׁוּב כָּל זְמַן שֶׁהוּא בְּתָנוּעָה.",
             definitionNative = "Постоянное сопровождение важного человека во всех его перемещениях.",
@@ -80,7 +80,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172101L, 172102L, 172103L, 172105L, 172111L)),
         WordEntity(
             id = 172105, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_special_ops", transliteration = "livui khamush",
+            pos = "phrase", semanticGroup = "security_special_ops",
             original = "לִוּוּי חָמוּשׁ", translation = "вооружённое сопровождение",
             definition = "צֶוֶת עִם נֶשֶׁק שֶׁמְּלַוֶּה רֶכֶב אוֹ מִטְעָן רָגִישׁ בַּדֶּרֶךְ.",
             definitionNative = "Группа с оружием, идущая рядом с машиной или ценным грузом.",
@@ -91,7 +91,7 @@ object WordDataHebrewSecurityL4 {
         // ── security_permits (5) — лицензии и допуски ──
         WordEntity(
             id = 172106, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_permits", transliteration = "rishyon iskei shmira",
+            pos = "phrase", semanticGroup = "security_permits",
             original = "רִשְׁיוֹן עִסְקֵי שְׁמִירָה", translation = "лицензия охранного бизнеса",
             definition = "אִישׁוּר רִשְׁמִי לַחֶבְרָה לְהַפְעִיל שֵׁרוּתֵי שְׁמִירָה תְּמוּרַת תַּשְׁלוּם.",
             definitionNative = "Официальное разрешение фирме оказывать охранные услуги за плату.",
@@ -100,7 +100,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172107L, 172108L, 172109L, 172110L)),
         WordEntity(
             id = 172107, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_permits", transliteration = "te'udat me'avteakh",
+            pos = "phrase", semanticGroup = "security_permits",
             original = "תְּעוּדַת מְאַבְטֵחַ", translation = "сертификат охранника",
             definition = "תְּעוּדָה הַמַּעֲנִיקָה לְאָדָם זְכוּת לַעֲבֹד כִּשְׁמָר מוּסְמָךְ.",
             definitionNative = "Свидетельство, дающее человеку право работать аттестованным сторожем.",
@@ -109,7 +109,7 @@ object WordDataHebrewSecurityL4 {
         ),
         WordEntity(
             id = 172108, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_permits", transliteration = "ishur bitakhoni",
+            pos = "phrase", semanticGroup = "security_permits",
             original = "אִישׁוּר בִּטָּחוֹנִי", translation = "допуск к секретной информации",
             definition = "הֶיתֵּר רִשְׁמִי לִגֶּשֶׁת לַחֳמָרִים סוֹדִיִּים אַחֲרֵי בְּדִיקָה אִישִׁית.",
             definitionNative = "Официальное право доступа к закрытым материалам после личной проверки.",
@@ -118,7 +118,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172106L, 172107L, 172109L, 172110L)),
         WordEntity(
             id = 172109, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_permits", transliteration = "ktav minui",
+            pos = "phrase", semanticGroup = "security_permits",
             original = "כְּתַב מִנּוּי", translation = "приказ о назначении",
             definition = "מִסְמָךְ הַקּוֹבֵעַ שֶׁאָדָם מוּסְמָךְ לְמַלֵּא תַּפְקִיד מְסֻיָּם בָּאַרְגּוּן.",
             definitionNative = "Бумага, утверждающая человека на конкретную должность в организации.",
@@ -127,7 +127,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172106L, 172107L, 172108L, 172110L)),
         WordEntity(
             id = 172110, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_permits", transliteration = "heter nesi'a",
+            pos = "phrase", semanticGroup = "security_permits",
             original = "הֶיתֵּר נְשִׁיאָה", translation = "разрешение на ношение",
             definition = "תְּעוּדָה רִשְׁמִית הַמְּתִירָה לִסְחֹב נֶשֶׁק קַל בְּגוּף הָאָדָם בַּחוּץ.",
             definitionNative = "Официальный документ на постоянное ношение лёгкого оружия при себе.",
@@ -138,7 +138,7 @@ object WordDataHebrewSecurityL4 {
         // ── security_threats (5) — типы угроз ──
         WordEntity(
             id = 172111, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_threats", transliteration = "iyum balisti",
+            pos = "phrase", semanticGroup = "security_threats",
             original = "אִיּוּם בָּלִיסְטִי", translation = "ракетная угроза",
             definition = "סַכָּנָה מִכֵּלִי יָרִי אוֹ טִילִים שֶׁעוֹפְפִים מֵעַל הָאֲוִיר.",
             definitionNative = "Опасность от снарядов или ракет, идущих по небу с большой скоростью.",
@@ -147,7 +147,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172112L, 172113L, 172114L, 172115L)),
         WordEntity(
             id = 172112, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_threats", transliteration = "tarkhish pigu'a",
+            pos = "phrase", semanticGroup = "security_threats",
             original = "תַּרְחִישׁ פִּגּוּעַ", translation = "сценарий теракта",
             definition = "תְּכוּנָה מַחְשְׁבָתִית אֵיךְ עָלוּל אוֹיֵב לִתְקֹף אֶת הָאֲתָר.",
             definitionNative = "Мысленная заготовка, как враг может напасть на охраняемый объект.",
@@ -156,7 +156,7 @@ object WordDataHebrewSecurityL4 {
         ),
         WordEntity(
             id = 172113, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_threats", transliteration = "gorem oyen",
+            pos = "phrase", semanticGroup = "security_threats",
             original = "גּוֹרֵם עוֹיֵן", translation = "враждебный элемент",
             definition = "אָדָם אוֹ קְבוּצָה הַמַּכַּוְּנִים לְהַזִּיק לָאֲתָר אוֹ לְעוֹבְדָיו.",
             definitionNative = "Человек или группа, имеющие намерение причинить вред объекту или людям.",
@@ -165,7 +165,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172111L, 172112L, 172114L, 172115L)),
         WordEntity(
             id = 172114, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_threats", transliteration = "iyum pnimi",
+            pos = "phrase", semanticGroup = "security_threats",
             original = "אִיּוּם פְּנִימִי", translation = "внутренний нарушитель",
             definition = "עוֹבֵד מִבִּפְנִים שֶׁמְּנַצֵּל גִּישָׁה חֻקִּית לְמַטָּרוֹת אֲסוּרוֹת.",
             definitionNative = "Свой сотрудник, использующий законный доступ во вред компании.",
@@ -174,7 +174,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172111L, 172112L, 172113L, 172115L)),
         WordEntity(
             id = 172115, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_threats", transliteration = "iyum saiber",
+            pos = "phrase", semanticGroup = "security_threats",
             original = "אֲיוּם סַיִיבֶּר", translation = "кибер-угроза",
             definition = "סַכָּנָה מִתְקֵפָה דֶּרֶךְ הָרֶשֶׁת עַל מַחְשְׁבֵי הָאֲתָר וְהַמַּעֲרָכוֹת.",
             definitionNative = "Опасность нападения через сеть на компьютеры объекта и его системы.",
@@ -185,7 +185,7 @@ object WordDataHebrewSecurityL4 {
         // ── security_response (5) — протоколы реагирования ──
         WordEntity(
             id = 172116, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_response", transliteration = "nohal histagrut",
+            pos = "phrase", semanticGroup = "security_response",
             original = "נֹהַל הַסְתָּגְרוּת", translation = "протокол укрытия (lockdown)",
             definition = "פְּקֻדָּה לִסְגֹּר דְּלָתוֹת וְלִשְׁאֵר בִּפְנִים עַד שֶׁתֻּכְרַז הַרְגָּעָה.",
             definitionNative = "Команда запереть двери и оставаться внутри до сигнала отбоя.",
@@ -194,7 +194,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172117L, 172118L, 172119L, 172120L)),
         WordEntity(
             id = 172117, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_response", transliteration = "tseva kod",
+            pos = "phrase", semanticGroup = "security_response",
             original = "צֶבַע קוֹד", translation = "цветовой код тревоги",
             definition = "סִימּוּן בִּצְבָעִים שֶׁמְּסַמֵּל אֶת חֻמְרַת הַמַּצָּב לַצֶּוֶת.",
             definitionNative = "Метка цветом, показывающая команде уровень опасности на данный момент.",
@@ -203,7 +203,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172116L, 172118L, 172119L, 172120L)),
         WordEntity(
             id = 172118, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_response", transliteration = "sharsheret pikud",
+            pos = "phrase", semanticGroup = "security_response",
             original = "שַׁרְשֶׁרֶת פִּקּוּד", translation = "цепочка командования",
             definition = "סֵדֶר קָבוּעַ מִי מְצַוֶּה עַל מִי, מֵהָרֹאשׁ עַד הַזּוּטָר.",
             definitionNative = "Чёткий порядок старшинства от руководства до младшего сотрудника.",
@@ -212,7 +212,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172116L, 172117L, 172119L, 172120L, 172124L, 172125L)),
         WordEntity(
             id = 172119, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_response", transliteration = "hashbatat iyum",
+            pos = "phrase", semanticGroup = "security_response",
             original = "הַשְׁבָּתַת אִיּוּם", translation = "нейтрализация угрозы",
             definition = "הַפְסָקַת פְּעוּלַת הַתּוֹקֵף לִפְנֵי שֶׁיַּזִּיק לְאָדָם אוֹ לִרְכוּשׁ.",
             definitionNative = "Прекращение действий нападающего раньше, чем он навредит людям или имуществу.",
@@ -221,7 +221,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172116L, 172117L, 172118L, 172120L)),
         WordEntity(
             id = 172120, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_response", transliteration = "de-eskalatsiya",
+            pos = "phrase", semanticGroup = "security_response",
             original = "דֶּה־אֶסְקָלָצְיָה", translation = "деэскалация",
             definition = "הוֹרָדַת מֶתַח בְּעֵת עִמּוּת בְּלִי לְהַחְרִיף וּבְלִי כֹּחַ.",
             definitionNative = "Снятие напряжения при конфликте без применения силы и обострения.",
@@ -232,7 +232,7 @@ object WordDataHebrewSecurityL4 {
         // ── security_command (5) — командование охраной ──
         WordEntity(
             id = 172121, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_command", transliteration = "katsin mivtsa'im",
+            pos = "phrase", semanticGroup = "security_command",
             original = "קָצִין מִבְצָעִים", translation = "оперативный офицер",
             definition = "אִישׁ פִּקּוּד הָאַחְרַאי עַל בִּצּוּעַ הַמְּשִׂימוֹת בַּשֶּׁטַח בְּכָל מִשְׁמֶרֶת.",
             definitionNative = "Командир, отвечающий за исполнение задач на местах в каждую смену.",
@@ -241,7 +241,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172122L, 172123L, 172124L, 172125L)),
         WordEntity(
             id = 172122, setId = 1721, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "security_command", transliteration = "mate avtakha",
+            pos = "phrase", semanticGroup = "security_command",
             original = "מַטֶּה אַבְטָחָה", translation = "штаб охраны",
             definition = "צֶוֶת בְּכִיר שֶׁמְּתַכְנֵן וּמְפַקֵּחַ עַל כָּל פְּעוּלוֹת הָאֲתָר.",
             definitionNative = "Группа старших сотрудников, планирующая и контролирующая работу объекта.",
@@ -250,7 +250,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172121L, 172123L, 172124L, 172125L)),
         WordEntity(
             id = 172123, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_command", transliteration = "takhkir mivtsa'i",
+            pos = "phrase", semanticGroup = "security_command",
             original = "תַּחְקִיר מִבְצָעִי", translation = "разбор операции",
             definition = "פְּגִישָׁה אַחֲרֵי הָאֵירוּעַ לִלְמֹד מַה עָבַד וּמַה לְשַׁפֵּר בַּפַּעַם הַבָּאָה.",
             definitionNative = "Встреча после события, чтобы понять, что удалось, а что улучшить.",
@@ -259,7 +259,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172102L, 172103L, 172121L, 172122L, 172124L, 172125L)),
         WordEntity(
             id = 172124, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_command", transliteration = "takanon haf'ala",
+            pos = "phrase", semanticGroup = "security_command",
             original = "תָּקָנוֹן הַפְעָלָה", translation = "правила применения силы",
             definition = "כְּלָלִים בְּרוּרִים מָתַי וְעַד כַּמָּה מֻתָּר לְהַפְעִיל כֹּחַ עַל אָדָם.",
             definitionNative = "Чёткий список случаев и пределов применения силы к человеку.",
@@ -268,7 +268,7 @@ object WordDataHebrewSecurityL4 {
          fillInBlankExclusions = listOf(172118L, 172121L, 172122L, 172123L, 172125L)),
         WordEntity(
             id = 172125, setId = 1721, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "security_command", transliteration = "te'um bein rashuyot",
+            pos = "phrase", semanticGroup = "security_command",
             original = "תֵּאוּם בֵּין רָשׁוּיוֹת", translation = "межведомственная координация",
             definition = "עֲבוֹדָה מְשֻׁתֶּפֶת בֵּין מִשְׁטָרָה, צָבָא וְגוּפֵי חֵרוּם בְּעֵת מַשְׁבֵּר.",
             definitionNative = "Совместная работа полиции, армии и служб экстренной помощи в кризис.",

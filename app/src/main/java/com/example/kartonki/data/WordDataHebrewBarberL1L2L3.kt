@@ -62,7 +62,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── barber_tools (5) ──────────────────────────────────────────────────
         WordEntity(
             id = 173601, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_tools", transliteration = "миспараим",
+            pos = "noun", semanticGroup = "barber_tools",
             original = "מִסְפָּרַיִים", translation = "ножницы",
             definition = "כְּלִי עִם שְׁתֵּי לַהֲבוֹת לִגְזִירַת בַּד אוֹ נְיָר אוֹ שֵׂעָר.",
             definitionNative = "Инструмент с двумя лезвиями для разрезания материала или волос.",
@@ -71,7 +71,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173602L, 173603L, 173604L, 173605L)),
         WordEntity(
             id = 173602, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_tools", transliteration = "масрек",
+            pos = "noun", semanticGroup = "barber_tools",
             original = "מַסְרֵק", translation = "расчёска",
             definition = "כְּלִי שָׁטוּחַ עִם שִׁנַּיִם דַּקּוֹת לְסִידּוּר וְהַחֲלָקַת הַשֵּׂעָר.",
             definitionNative = "Плоский инструмент с тонкими зубцами для разделения и приведения в порядок волос.",
@@ -80,7 +80,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173601L, 173603L, 173604L, 173605L)),
         WordEntity(
             id = 173603, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_tools", transliteration = "пэн",
+            pos = "noun", semanticGroup = "barber_tools",
             original = "פֵּן", translation = "фен",
             definition = "מַכְשִׁיר חַשְׁמַלִּי שֶׁמּוֹצִיא זֶרֶם אֲוִיר חַם לְיִיבּוּשׁ הָרֹאשׁ.",
             definitionNative = "Электроприбор, выдающий горячий поток воздуха для сушки головы.",
@@ -89,7 +89,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173601L, 173602L, 173604L, 173605L)),
         WordEntity(
             id = 173604, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_tools", transliteration = "таар",
+            pos = "noun", semanticGroup = "barber_tools",
             original = "תַּעַר", translation = "бритва",
             definition = "לַהַב חַד וְדַק לְהוֹרָדַת זְקָן אוֹ שְׂעָרוֹת מִן הָעוֹר.",
             definitionNative = "Острое тонкое лезвие для удаления бороды или волосков с кожи.",
@@ -98,7 +98,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173601L, 173602L, 173603L, 173605L)),
         WordEntity(
             id = 173605, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "barber_tools", transliteration = "магевет",
+            pos = "noun", semanticGroup = "barber_tools",
             original = "מַגֶּבֶת", translation = "полотенце",
             definition = "פִּסַּת בַּד סוֹפֵג שֶׁבָּהּ מְנַגְּבִים פָּנִים אוֹ רֹאשׁ אַחֲרֵי שְׁטִיפָה.",
             definitionNative = "Кусок впитывающей ткани, которым вытирают лицо или голову после мытья.",
@@ -109,7 +109,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── barber_haircuts (5) ───────────────────────────────────────────────
         WordEntity(
             id = 173606, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_haircuts", transliteration = "гизуз",
+            pos = "noun", semanticGroup = "barber_haircuts",
             original = "גִּזּוּז", translation = "стрижка (процесс)",
             definition = "פְּעֻלָּה שֶׁל קִיצּוּר אוֹ סִידּוּר שֵׂעָר בְּעֶזְרַת לְהָבִים.",
             definitionNative = "Действие по укорачиванию или приведению в порядок волос с помощью лезвий.",
@@ -118,7 +118,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173607L, 173608L, 173609L)),
         WordEntity(
             id = 173607, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_haircuts", transliteration = "сэар",
+            pos = "noun", semanticGroup = "barber_haircuts",
             original = "שֵׂעָר", translation = "волосы",
             definition = "חוּטִים דַּקִּים הַצּוֹמְחִים מִן הָעוֹר עַל הָרֹאשׁ אוֹ הַגּוּף.",
             definitionNative = "Тонкие нити, растущие из кожи на голове или теле.",
@@ -127,7 +127,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173606L, 173608L, 173609L)),
         WordEntity(
             id = 173608, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_haircuts", transliteration = "пони",
+            pos = "noun", semanticGroup = "barber_haircuts",
             original = "פּוֹנִי", translation = "чёлка",
             definition = "פַּס קָצָר שֶׁל שֵׂעָר הַיּוֹרֵד עַל הַמֵּצַח.",
             definitionNative = "Короткая прядка, спадающая на лоб со стороны лица.",
@@ -136,7 +136,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173606L, 173607L, 173609L)),
         WordEntity(
             id = 173609, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_haircuts", transliteration = "гилуах",
+            pos = "noun", semanticGroup = "barber_haircuts",
             original = "גִּלּוּחַ", translation = "бритьё",
             definition = "הוֹרָדַת שֵׂעָר מִן הַפָּנִים אוֹ הָרֹאשׁ עַד לְעוֹר חָלָק.",
             definitionNative = "Удаление волос с лица или головы до гладкой кожи.",
@@ -145,7 +145,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173610, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "adjective", semanticGroup = "barber_haircuts", transliteration = "кэрэах",
+            pos = "adjective", semanticGroup = "barber_haircuts",
             original = "קֵרֵחַ", translation = "лысый, побритый налысо",
             definition = "אָדָם שֶׁאֵין לוֹ שֵׂעָר עַל רֹאשׁוֹ — מִטֶּבַע אוֹ אַחֲרֵי גִּלּוּחַ מָלֵא.",
             definitionNative = "Человек без волос на голове — от природы или после полного бритья.",
@@ -156,7 +156,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── barber_men (5) ────────────────────────────────────────────────────
         WordEntity(
             id = 173611, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_men", transliteration = "закан",
+            pos = "noun", semanticGroup = "barber_men",
             original = "זָקָן", translation = "борода",
             definition = "הַשֵּׂעָר הַצּוֹמֵחַ עַל הַסַּנְטֵר וְעַל הַלְּחָיַיִם שֶׁל הַגֶּבֶר.",
             definitionNative = "Волосы, растущие на подбородке и щеках мужчины.",
@@ -165,7 +165,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173612L, 173613L, 173614L, 173615L)),
         WordEntity(
             id = 173612, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "barber_men", transliteration = "сафам",
+            pos = "noun", semanticGroup = "barber_men",
             original = "שָׂפָם", translation = "усы",
             definition = "הַשֵּׂעָר הַצּוֹמֵחַ מֵעַל לַשְּׂפָתַיִם שֶׁל הַגֶּבֶר.",
             definitionNative = "Волосы, растущие над верхней губой у мужчины.",
@@ -174,7 +174,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173611L, 173613L, 173614L, 173615L)),
         WordEntity(
             id = 173613, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "barber_men", transliteration = "зифим",
+            pos = "noun", semanticGroup = "barber_men",
             original = "זִיפִים", translation = "щетина",
             definition = "שֵׂעָרוֹת קָשׁוֹת וּקְצָרוֹת הַצּוֹמְחוֹת עַל פָּנִים שֶׁלֹּא הִתְגַּלְּחוּ.",
             definitionNative = "Жёсткие короткие волоски на небритом мужском лице.",
@@ -183,7 +183,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173611L, 173612L, 173614L, 173615L)),
         WordEntity(
             id = 173614, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "barber_men", transliteration = "пеот",
+            pos = "noun", semanticGroup = "barber_men",
             original = "פֵּאוֹת", translation = "пейсы, бакенбарды",
             definition = "פַּסֵּי שֵׂעָר הַיּוֹרְדִים בְּצַד הַפָּנִים לְיַד הָאֹזֶן.",
             definitionNative = "Полоски волос, спускающиеся по бокам лица возле уха.",
@@ -192,7 +192,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173611L, 173612L, 173613L, 173615L)),
         WordEntity(
             id = 173615, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "barber_men", transliteration = "барбер",
+            pos = "noun", semanticGroup = "barber_men",
             original = "בַּרְבֶּר", translation = "барбер (мужской мастер)",
             definition = "בַּעַל מִקְצוֹעַ שֶׁמִּתְמַחֶה בְּתִסְפֹּרוֹת וְעִיצּוּב זְקָנִים גְּבָרִים.",
             definitionNative = "Профессионал, специализирующийся на мужских причёсках и оформлении бороды.",
@@ -203,7 +203,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── salon_actions (5) ─────────────────────────────────────────────────
         WordEntity(
             id = 173616, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_actions", transliteration = "хафифа",
+            pos = "noun", semanticGroup = "salon_actions",
             original = "חֲפִיפָה", translation = "мытьё (волос)",
             definition = "שְׁטִיפַת רֹאשׁ בְּמַיִם וּמוּצָר נוֹזֵל מְיֻחָד לְנִקָּיוֹן.",
             definitionNative = "Промывание головы водой со специальной моющей жидкостью.",
@@ -212,7 +212,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173617L, 173618L, 173619L, 173620L)),
         WordEntity(
             id = 173617, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_actions", transliteration = "ибуш",
+            pos = "noun", semanticGroup = "salon_actions",
             original = "יִיבּוּשׁ", translation = "сушка",
             definition = "הוֹצָאַת מַיִם מִתּוֹךְ דָּבָר רָטוֹב בְּעֶזְרַת אֲוִיר חַם אוֹ זְמַן.",
             definitionNative = "Удаление влаги из мокрого предмета с помощью тёплого воздуха или времени.",
@@ -221,7 +221,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173618, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "salon_actions", transliteration = "кондишэнэр",
+            pos = "noun", semanticGroup = "salon_actions",
             original = "קוֹנְדִּישְׁנֶר", translation = "кондиционер (для волос)",
             definition = "מוּצָר נוֹזֵל הַמּוֹרָח אַחֲרֵי הַחֲפִיפָה לְרַכֵּךְ אֶת הַשֵּׂעָר.",
             definitionNative = "Жидкое средство, наносимое после мытья для смягчения и облегчения расчёсывания.",
@@ -230,7 +230,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173616L, 173617L, 173619L, 173620L)),
         WordEntity(
             id = 173619, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_actions", transliteration = "халук",
+            pos = "noun", semanticGroup = "salon_actions",
             original = "חֲלוּק", translation = "халат, пеньюар",
             definition = "בֶּגֶד פָּתוּחַ מִלְּפָנִים שֶׁעוֹטֵף אֶת הַלָּקוֹחַ בְּעֵת הַטִּיפּוּל.",
             definitionNative = "Открытая спереди одежда, в которую заворачивают клиента во время процедуры.",
@@ -239,7 +239,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173616L, 173617L, 173618L, 173620L)),
         WordEntity(
             id = 173620, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_actions", transliteration = "ришум",
+            pos = "noun", semanticGroup = "salon_actions",
             original = "רִישׁוּם", translation = "запись (на приём)",
             definition = "פְּעֻלָּה שֶׁל קְבִיעַת תַּאֲרִיךְ וּשְׁעָה לַטִּיפּוּל מֵרֹאשׁ.",
             definitionNative = "Резервирование даты и времени для процедуры заранее.",
@@ -250,7 +250,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── salon_people (5) ──────────────────────────────────────────────────
         WordEntity(
             id = 173621, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "salon_people", transliteration = "лакоах",
+            pos = "noun", semanticGroup = "salon_people",
             original = "לָקוֹחַ", translation = "клиент",
             definition = "אָדָם שֶׁמַּגִּיעַ לַסָּלוֹן כְּדֵי לְקַבֵּל שֵׁרוּת תְּמוּרַת תַּשְׁלוּם.",
             definitionNative = "Человек, приходящий в салон, чтобы получить услугу за плату.",
@@ -259,7 +259,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173622, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_people", transliteration = "уман",
+            pos = "noun", semanticGroup = "salon_people",
             original = "אֻמָּן", translation = "мастер",
             definition = "בַּעַל מִקְצוֹעַ עִם נִסָּיוֹן עָשִׁיר בְּתָחוּם הָעֲבוֹדָה שֶׁלּוֹ.",
             definitionNative = "Профессионал с большим опытом в своей рабочей области.",
@@ -268,7 +268,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173621L, 173623L, 173624L)),
         WordEntity(
             id = 173623, setId = 1736, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "salon_people", transliteration = "тор",
+            pos = "noun", semanticGroup = "salon_people",
             original = "תּוֹר", translation = "очередь",
             definition = "שׁוּרָה שֶׁל אֲנָשִׁים הַמַּמְתִּינִים זֶה אַחַר זֶה לְקַבֵּל שֵׁרוּת.",
             definitionNative = "Группа людей, ожидающих услуги один за другим.",
@@ -277,7 +277,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173621L, 173622L, 173624L)),
         WordEntity(
             id = 173624, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_people", transliteration = "тэшэр",
+            pos = "noun", semanticGroup = "salon_people",
             original = "תֶּשֶׁר", translation = "чаевые",
             definition = "כֶּסֶף נוֹסָף שֶׁמַּעֲנִיק הַלָּקוֹחַ לְנוֹתֵן הַשֵּׁרוּת מֵעֵבֶר לַמְּחִיר.",
             definitionNative = "Дополнительные деньги, которые клиент даёт работнику сверх стоимости.",
@@ -286,7 +286,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173621L, 173622L, 173623L)),
         WordEntity(
             id = 173625, setId = 1736, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "salon_people", transliteration = "мехир рагил",
+            pos = "phrase", semanticGroup = "salon_people",
             original = "מְחִיר רָגִיל", translation = "обычная цена",
             definition = "הַסְּכוּם הַסָּטַנְדַּרְטִי לְטִיפּוּל בְּלִי הֲנָחוֹת אוֹ מִבְצָעִים.",
             definitionNative = "Стандартная стоимость услуги без скидок и акций.",
@@ -301,7 +301,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── hair_color (5) ────────────────────────────────────────────────────
         WordEntity(
             id = 173701, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hair_color", transliteration = "цэва",
+            pos = "noun", semanticGroup = "hair_color",
             original = "צֶבַע", translation = "краска (для волос)",
             definition = "תַּכְשִׁיר נוֹזֵל אוֹ קְרֵם הַמְּשַׁנֶּה אֶת גּוֹן הָרֹאשׁ.",
             definitionNative = "Жидкое или кремовое средство, меняющее тон причёски.",
@@ -310,7 +310,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173702L, 173703L, 173704L)),
         WordEntity(
             id = 173702, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hair_color", transliteration = "пасим",
+            pos = "noun", semanticGroup = "hair_color",
             original = "פַּסִּים", translation = "мелирование",
             definition = "טֶכְנִיקָה שֶׁל צְבִיעַת קְוֻצּוֹת דַּקּוֹת בִּלְבַד לְאֶפֶקְט מְאֻוְרָר.",
             definitionNative = "Техника окрашивания только тонких прядей для лёгкого эффекта.",
@@ -319,7 +319,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173701L, 173703L, 173704L)),
         WordEntity(
             id = 173703, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hair_color", transliteration = "ѓаѓара",
+            pos = "noun", semanticGroup = "hair_color",
             original = "הַבְהָרָה", translation = "осветление",
             definition = "תַּהֲלִיךְ הוֹצָאַת פִּיגְמֶנְט מִקּוֹצוֹת לְקַבָּלַת גָּוֶן בָּהִיר יוֹתֵר.",
             definitionNative = "Процесс вывода пигмента из прядей ради более светлого тона.",
@@ -328,7 +328,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173701L, 173702L, 173704L)),
         WordEntity(
             id = 173704, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hair_color", transliteration = "гавэн",
+            pos = "noun", semanticGroup = "hair_color",
             original = "גָּוֶן", translation = "оттенок",
             definition = "וַרְיַאצְיָה עֲדִינָה שֶׁל צֶבַע — יוֹתֵר חַם, יוֹתֵר קַר אוֹ נֵיטְרָלִי.",
             definitionNative = "Тонкая разновидность тона — теплее, холоднее или нейтральнее.",
@@ -337,7 +337,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173701L, 173702L, 173703L)),
         WordEntity(
             id = 173705, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "hair_color", transliteration = "нияр кэсэф",
+            pos = "phrase", semanticGroup = "hair_color",
             original = "נְיָר כֶּסֶף", translation = "фольга (для окрашивания)",
             definition = "יְרִיעָה דַּקָּה הָעוֹטֶפֶת קְוֻצּוֹת בְּעֵת הַצְּבִיעָה לְבִידּוּד.",
             definitionNative = "Тонкий лист, оборачивающий пряди при окрашивании ради изоляции.",
@@ -348,7 +348,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── hair_styling (5) ──────────────────────────────────────────────────
         WordEntity(
             id = 173706, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hair_styling", transliteration = "месалсель",
+            pos = "noun", semanticGroup = "hair_styling",
             original = "מְסַלְסֵל", translation = "плойка",
             definition = "מַכְשִׁיר חַשְׁמַלִּי הַיּוֹצֵר תַּלְתַּלִּים בְּעֶזְרַת חֹם.",
             definitionNative = "Электроприбор, формирующий локоны при помощи нагрева.",
@@ -357,7 +357,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173707, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hair_styling", transliteration = "магѓэц",
+            pos = "noun", semanticGroup = "hair_styling",
             original = "מַגְהֵץ", translation = "утюжок",
             definition = "מַכְשִׁיר עִם שְׁנֵי לוּחוֹת חַמִּים לְהַחֲלָקָה שֶׁל קוֹצוֹת.",
             definitionNative = "Прибор с двумя горячими пластинами для разглаживания прядей.",
@@ -366,7 +366,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173708, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hair_styling", transliteration = "ишур",
+            pos = "noun", semanticGroup = "hair_styling",
             original = "יִישּׁוּר", translation = "выпрямление",
             definition = "פְּעֻלָּה שֶׁל הַחֲלָקַת קוֹצוֹת מְתֻלְתָּלוֹת לְצוּרָה יְשָׁרָה.",
             definitionNative = "Действие по разглаживанию вьющихся прядей до прямой формы.",
@@ -375,7 +375,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173709, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hair_styling", transliteration = "талталим",
+            pos = "noun", semanticGroup = "hair_styling",
             original = "תַּלְתַּלִּים", translation = "кудри",
             definition = "קוֹצוֹת מְעֻגָּלוֹת הַיּוֹצְרוֹת לוּלָאוֹת בִּצְבָתַיִם בְּלִי מַכְשִׁיר.",
             definitionNative = "Округлые пряди, образующие петельки и завитки сами собой.",
@@ -384,7 +384,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173706L, 173707L, 173708L, 173710L)),
         WordEntity(
             id = 173710, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hair_styling", transliteration = "нэфах",
+            pos = "noun", semanticGroup = "hair_styling",
             original = "נֶפַח", translation = "объём (волос)",
             definition = "תְּחוּשַׁת מָלֵא וּגֹבַהּ בַּקּוֹצוֹת מֵהַשְּׁרָשִׁים כְּלַפֵּי מַעְלָה.",
             definitionNative = "Ощущение пышности и высоты в прядях у корней вверх.",
@@ -395,7 +395,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── hair_treatment (5) ────────────────────────────────────────────────
         WordEntity(
             id = 173711, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "hair_treatment", transliteration = "масэхат сэар",
+            pos = "phrase", semanticGroup = "hair_treatment",
             original = "מַסֵּכַת שֵׂעָר", translation = "маска для волос",
             definition = "תַּכְשִׁיר עָשִׁיר הַמּוּרָח עַל הַקּוֹצוֹת לִכְמַה דַּקּוֹת לִפְנֵי שְׁטִיפָה.",
             definitionNative = "Насыщенный продукт, наносимый на пряди на несколько минут до смывания.",
@@ -404,7 +404,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173715L)),
         WordEntity(
             id = 173712, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hair_treatment", transliteration = "лак",
+            pos = "noun", semanticGroup = "hair_treatment",
             original = "לַק", translation = "лак (для волос)",
             definition = "תַּרְסִיס הַמְּקַבֵּעַ אֶת הַתִּסְרֹקֶת לְשָׁעוֹת אֲרֻכּוֹת.",
             definitionNative = "Аэрозоль, фиксирующий укладку на много часов.",
@@ -413,7 +413,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173713L, 173714L)),
         WordEntity(
             id = 173713, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hair_treatment", transliteration = "мус",
+            pos = "noun", semanticGroup = "hair_treatment",
             original = "מוּס", translation = "мусс",
             definition = "קֶצֶף קַל הַמּוּרָח עַל קוֹצוֹת רְטוּבוֹת לִתְמִיכָה בָּעִיצּוּב.",
             definitionNative = "Лёгкая пенка, наносимая на влажные пряди для поддержки укладки.",
@@ -422,7 +422,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173712L, 173714L)),
         WordEntity(
             id = 173714, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "hair_treatment", transliteration = "сейва",
+            pos = "noun", semanticGroup = "hair_treatment",
             original = "שֵׂיבָה", translation = "седина",
             definition = "קוֹצוֹת לְבָנוֹת אוֹ אֲפֹרוֹת הַמּוֹפִיעוֹת עִם הַגִּיל.",
             definitionNative = "Белые или серые пряди, появляющиеся с возрастом.",
@@ -431,7 +431,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173715, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "hair_treatment", transliteration = "бдикат квуца",
+            pos = "phrase", semanticGroup = "hair_treatment",
             original = "בְּדִיקַת קְוֻצָּה", translation = "проба пряди",
             definition = "נִסּוּי קָטָן עַל קְוֻצָּה אַחַת לִפְנֵי טִיפּוּל מָלֵא בַּצֶּבַע.",
             definitionNative = "Маленький тест на одной пряди перед полной процедурой окрашивания.",
@@ -442,7 +442,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── salon_clients (5) ─────────────────────────────────────────────────
         WordEntity(
             id = 173716, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_clients", transliteration = "ѓамлаца",
+            pos = "noun", semanticGroup = "salon_clients",
             original = "הַמְלָצָה", translation = "рекомендация",
             definition = "עֵצָה חִיּוּבִית שֶׁמַּעֲנִיק חָבֵר אוֹ מוּמְחֶה עַל אֲנָשִׁים אוֹ מָקוֹם.",
             definitionNative = "Положительный совет от друга или эксперта насчёт людей или места.",
@@ -451,7 +451,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173717L, 173718L, 173719L, 173720L)),
         WordEntity(
             id = 173717, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_clients", transliteration = "бикорет",
+            pos = "noun", semanticGroup = "salon_clients",
             original = "בִּקֹּרֶת", translation = "отзыв",
             definition = "הַעֲרָכָה כְּתוּבָה שֶׁל הַשֵּׁרוּת — מַה הָיָה טוֹב וּמַה לֹא.",
             definitionNative = "Письменная оценка услуги — что было хорошо, а что нет.",
@@ -460,7 +460,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173716L, 173718L, 173719L, 173720L)),
         WordEntity(
             id = 173718, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_clients", transliteration = "ѓанаха",
+            pos = "noun", semanticGroup = "salon_clients",
             original = "הֲנָחָה", translation = "скидка",
             definition = "הַפְחָתָה זְמַנִּית שֶׁל הַסְּכוּם הָרָגִיל לִפְעֻלָּה אוֹ לִקְבוּצָה.",
             definitionNative = "Временное снижение стандартной суммы за процедуру или для группы.",
@@ -469,7 +469,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173716L, 173717L, 173719L, 173720L)),
         WordEntity(
             id = 173719, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_clients", transliteration = "минуй",
+            pos = "noun", semanticGroup = "salon_clients",
             original = "מָנוּי", translation = "абонемент",
             definition = "תַּשְׁלוּם מֵרֹאשׁ עַל סִדְרָה שֶׁל פְּעֻלּוֹת בְּמְחִיר נָמוּךְ.",
             definitionNative = "Предоплата за серию посещений по более низкой стоимости.",
@@ -478,7 +478,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173716L, 173717L, 173718L, 173720L)),
         WordEntity(
             id = 173720, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_clients", transliteration = "пирсомет",
+            pos = "noun", semanticGroup = "salon_clients",
             original = "פִּרְסֹמֶת", translation = "реклама",
             definition = "מֶסֶר חִיצוֹנִי שֶׁמַּזְמִין אֲנָשִׁים לְהִשְׁתַּמֵּשׁ בַּשֵּׁרוּת.",
             definitionNative = "Внешнее сообщение, приглашающее людей пользоваться услугой.",
@@ -489,7 +489,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── salon_marketing (5) ───────────────────────────────────────────────
         WordEntity(
             id = 173721, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_marketing", transliteration = "ѓадраха",
+            pos = "noun", semanticGroup = "salon_marketing",
             original = "הַדְרָכָה", translation = "обучение мастера",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ עוֹבֵד מְקַבֵּל יֶדַע מִמּוֹמְחֶה כְּדֵי לְהִשְׁתַּפֵּר.",
             definitionNative = "Процесс, в котором сотрудник получает знания от эксперта ради роста.",
@@ -498,7 +498,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173722L, 173723L, 173725L)),
         WordEntity(
             id = 173722, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "salon_marketing", transliteration = "косметика",
+            pos = "noun", semanticGroup = "salon_marketing",
             original = "קוֹסְמֵטִיקָה", translation = "косметика (профессиональная)",
             definition = "מוּצָרִים מִקְצוֹעִיִּים לְטִיפּוּל בָּעוֹר וּבַשֵּׂעָר בְּמָקוֹם הָעֲבוֹדָה.",
             definitionNative = "Профессиональные продукты для ухода за кожей и волосами по месту работы.",
@@ -507,7 +507,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173721L, 173723L, 173725L)),
         WordEntity(
             id = 173723, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_marketing", transliteration = "инстаграм",
+            pos = "noun", semanticGroup = "salon_marketing",
             original = "אִינְסְטָגְרָם", translation = "инстаграм (как канал продвижения)",
             definition = "רֶשֶׁת חֶבְרָתִית שֶׁבָּהּ בַּעֲלֵי הַמִּקְצוֹעַ מַצִּיגִים תִּמּוּנוֹת לִפְנֵי וְאַחֲרֵי.",
             definitionNative = "Соцсеть, в которой профессионалы публикуют фото до и после.",
@@ -516,7 +516,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173721L, 173722L, 173725L)),
         WordEntity(
             id = 173724, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "salon_marketing", transliteration = "типул баит",
+            pos = "phrase", semanticGroup = "salon_marketing",
             original = "טִיפּוּל בַּיִת", translation = "домашний уход",
             definition = "מוּצָרִים וְשְׁגָרָה שֶׁהַלָּקוֹחַ מַמְשִׁיךְ לְבַד אַחֲרֵי הַסָּלוֹן.",
             definitionNative = "Продукты и привычки, которые клиент продолжает дома после салона.",
@@ -525,7 +525,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173725, setId = 1737, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_marketing", transliteration = "колористит",
+            pos = "noun", semanticGroup = "salon_marketing",
             original = "קוֹלוֹרִיסְטִית", translation = "колорист (женск.)",
             definition = "מֻמְחִית הַמִּתְמַחָה אַךְ וְרַק בִּצְבִיעוֹת מְסֻבָּכוֹת.",
             definitionNative = "Специалистка, занятая исключительно сложными окрашиваниями.",
@@ -540,7 +540,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── color_techniques (5) ──────────────────────────────────────────────
         WordEntity(
             id = 173801, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "color_techniques", transliteration = "балаяж",
+            pos = "noun", semanticGroup = "color_techniques",
             original = "בָּלָאיָאז'", translation = "балаяж",
             definition = "טֶכְנִיקָה צָרְפָתִית שֶׁל מְשִׁיחָה חָפְשִׁית בְּלִי נְיָר לְמַעֲבָר רַךְ.",
             definitionNative = "Французская техника свободной кисти без фольги ради мягкого перехода.",
@@ -549,7 +549,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173802, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "color_techniques", transliteration = "омбрэ",
+            pos = "noun", semanticGroup = "color_techniques",
             original = "אוֹמְבְּרֶה", translation = "омбре",
             definition = "מַעֲבַר גָּוֶן הַדְרָגָתִי מִכֵּהֶה בַּשְּׁרָשִׁים לְבָהִיר בַּקְּצָווֹת.",
             definitionNative = "Постепенный переход тона от тёмного у корней к светлому на кончиках.",
@@ -558,7 +558,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173801L, 173803L, 173804L, 173805L)),
         WordEntity(
             id = 173803, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "color_techniques", transliteration = "шатуш",
+            pos = "noun", semanticGroup = "color_techniques",
             original = "שָׁאטוּשׁ", translation = "шатуш",
             definition = "טֶכְנִיקָה אִיטַלְקִית שֶׁל הַבְהָרָה רַכָּה הַמְּחַקָּה הַשְׁפָּעַת שֶׁמֶשׁ.",
             definitionNative = "Итальянская техника мягкого осветления, имитирующая воздействие солнца.",
@@ -567,7 +567,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173804, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "color_techniques", transliteration = "эйртач",
+            pos = "noun", semanticGroup = "color_techniques",
             original = "אֵיירְטָאצ'", translation = "эйртач",
             definition = "טֶכְנִיקָה אֲמֵרִיקָאִית שֶׁל הַבְהָרַת קוֹצוֹת אֲרֻכּוֹת בְּעֶזְרַת מְיַבֵּשׁ.",
             definitionNative = "Американская техника осветления длинных прядей с использованием фена.",
@@ -576,7 +576,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173805, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "color_techniques", transliteration = "пигмент",
+            pos = "noun", semanticGroup = "color_techniques",
             original = "פִּיגְמֶנְט", translation = "пигмент",
             definition = "חֹמֶר הַנּוֹתֵן צֶבַע לְכָל קוֹצָה — טִבְעִי אוֹ מְלָאכוּתִי.",
             definitionNative = "Вещество, придающее цвет каждой пряди — естественное или искусственное.",
@@ -587,7 +587,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── hair_chemistry (5) ────────────────────────────────────────────────
         WordEntity(
             id = 173806, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "hair_chemistry", transliteration = "амонья",
+            pos = "noun", semanticGroup = "hair_chemistry",
             original = "אַמּוֹנִיָּה", translation = "аммиак",
             definition = "תַּרְכֹּבֶת חֲרִיפָה הַפּוֹתַחַת אֶת הַקּוֹצָה לִקְלִיטַת צֶבַע.",
             definitionNative = "Резкое соединение, раскрывающее прядь для впитывания краски.",
@@ -596,7 +596,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173808L, 173809L, 173810L)),
         WordEntity(
             id = 173807, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "hair_chemistry", transliteration = "мэй-хамцан",
+            pos = "phrase", semanticGroup = "hair_chemistry",
             original = "מֵי-חַמְצָן", translation = "окислитель, перекись",
             definition = "נוֹזֵל הַמַּפְעִיל אֶת הַצֶּבַע וּמַתְחִיל אֶת תַּהֲלִיךְ הַשִּׁנּוּי.",
             definitionNative = "Жидкость, активирующая краску и запускающая процесс изменения.",
@@ -605,7 +605,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173808, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hair_chemistry", transliteration = "мэнатрэль",
+            pos = "noun", semanticGroup = "hair_chemistry",
             original = "מְנַטְרֵל", translation = "нейтрализатор",
             definition = "תַּכְשִׁיר הָעוֹצֵר אֶת תַּגוֹבַת הַכִּימִיקָלִים בְּסוֹף הַטִּפּוּל.",
             definitionNative = "Средство, останавливающее реакцию химикатов в конце процедуры.",
@@ -614,7 +614,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173806L, 173809L, 173810L)),
         WordEntity(
             id = 173809, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hair_chemistry", transliteration = "тонэр",
+            pos = "noun", semanticGroup = "hair_chemistry",
             original = "טוֹנֵר", translation = "тоник (для коррекции тона)",
             definition = "תַּכְשִׁיר עָדִין הַמְּסַלֵּק גְּוָנִים צְהֻבִּים אַחֲרֵי הַבְהָרָה.",
             definitionNative = "Деликатное средство, убирающее жёлтые оттенки после осветления.",
@@ -623,7 +623,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173810, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hair_chemistry", transliteration = "рвия",
+            pos = "noun", semanticGroup = "hair_chemistry",
             original = "רְוִיָּה", translation = "насыщение (тоном)",
             definition = "מִידַת הַחָזָק שֶׁל הַגָּוֶן בַּקּוֹצָה אַחֲרֵי תַּהֲלִיךְ.",
             definitionNative = "Степень густоты тона в пряди после процедуры.",
@@ -634,7 +634,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── hair_treatments_pro (5) ───────────────────────────────────────────
         WordEntity(
             id = 173811, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "hair_treatments_pro", transliteration = "ѓахлака кэратин",
+            pos = "phrase", semanticGroup = "hair_treatments_pro",
             original = "הַחְלָקַת קֵרָטִין", translation = "кератиновое выпрямление",
             definition = "טִפּוּל מָסִיב הַסּוֹגֵר אֶת הַקּוֹצָה בְּעֶזְרַת חֶלְבּוֹן וְחֹם.",
             definitionNative = "Серьёзная процедура, запечатывающая прядь белком и теплом.",
@@ -643,7 +643,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173812L, 173814L)),
         WordEntity(
             id = 173812, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "hair_treatments_pro", transliteration = "ботокс сэар",
+            pos = "phrase", semanticGroup = "hair_treatments_pro",
             original = "בּוֹטוֹקְס שֵׂעָר", translation = "ботокс для волос",
             definition = "מַסֵּכָה רְפוּאִית עֲשִׁירָה בְּחֶלְבּוֹנִים הַמְּמַלֵּאת קוֹצוֹת פָּגוּעוֹת.",
             definitionNative = "Лечебная маска с белками, заполняющая повреждённые пряди.",
@@ -652,7 +652,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173811L, 173814L)),
         WordEntity(
             id = 173813, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hair_treatments_pro", transliteration = "ламинация",
+            pos = "noun", semanticGroup = "hair_treatments_pro",
             original = "לָמִינַצְיָה", translation = "ламинирование",
             definition = "צִיפּוּי דַּק וּמַבְרִיק שֶׁמַּגֵן עַל הַקּוֹצָה לְאוֹרֶךְ שָׁבוּעוֹת.",
             definitionNative = "Тонкое блестящее покрытие, защищающее прядь на несколько недель.",
@@ -661,7 +661,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173814, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "hair_treatments_pro", transliteration = "био-силсуль",
+            pos = "phrase", semanticGroup = "hair_treatments_pro",
             original = "בִּיוֹ-סִלְסוּל", translation = "биозавивка",
             definition = "טִפּוּל הַיּוֹצֵר תַּלְתַּלִּים קְבוּעִים בְּלִי כִּימִיקָלִים אֲגְרֶסִיבִיִּים.",
             definitionNative = "Процедура, формирующая стойкие локоны без агрессивных химикатов.",
@@ -670,7 +670,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173811L, 173812L)),
         WordEntity(
             id = 173815, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "hair_treatments_pro", transliteration = "шихзур",
+            pos = "noun", semanticGroup = "hair_treatments_pro",
             original = "שִׁחְזוּר", translation = "реконструкция (волос)",
             definition = "תַּהֲלִיךְ עָמֹק שֶׁמַּחֲזִיר חֹסֶן לְקוֹצוֹת חֲלָשׁוֹת מְאֹד.",
             definitionNative = "Глубокая процедура, возвращающая силу очень ослабленным прядям.",
@@ -681,7 +681,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── salon_business (5) ────────────────────────────────────────────────
         WordEntity(
             id = 173816, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_business", transliteration = "портфолио",
+            pos = "noun", semanticGroup = "salon_business",
             original = "פּוֹרְטְפוֹלְיוֹ", translation = "портфолио",
             definition = "אֹסֶף תִּמּוּנוֹת שֶׁל עֲבוֹדוֹת לְהַצָּגַת הַסִּגְנוֹן וְהָרָמָה.",
             definitionNative = "Подборка фотографий работ для демонстрации стиля и уровня.",
@@ -690,7 +690,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173817, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "salon_business", transliteration = "схирут кисэ",
+            pos = "phrase", semanticGroup = "salon_business",
             original = "שְׂכִירוּת כִּסֵּא", translation = "аренда кресла",
             definition = "הֶסְכֵּם שֶׁבּוֹ בַּעַל מִקְצוֹעַ עַצְמָאִי מְשַׁלֵּם דְּמֵי שִׁמּוּשׁ בְּמָקוֹם.",
             definitionNative = "Договор, по которому самозанятый платит за пользование местом.",
@@ -699,7 +699,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173818L)),
         WordEntity(
             id = 173818, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_business", transliteration = "ацмаут",
+            pos = "noun", semanticGroup = "salon_business",
             original = "עַצְמָאוּת", translation = "самозанятость",
             definition = "מַצָּב שֶׁל עֲבוֹדָה עֲצָמַאית בְּלִי מַעֲבִיד עִם דִּוּוּחַ עַצְמַי לַמַּס.",
             definitionNative = "Работа без работодателя с самостоятельной отчётностью по налогам.",
@@ -708,7 +708,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173816L, 173819L, 173820L)),
         WordEntity(
             id = 173819, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_business", transliteration = "барбершоп",
+            pos = "noun", semanticGroup = "salon_business",
             original = "בַּארְבֶּרְשׁוֹפּ", translation = "барбершоп",
             definition = "מָקוֹם מִקְצוֹעִי לְגֶבֶר בִּלְבַד עִם אַוִירָה כֶּפְרִית.",
             definitionNative = "Профессиональное место только для мужчин с особой деревенской атмосферой.",
@@ -717,7 +717,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173820, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_business", transliteration = "стайлист",
+            pos = "noun", semanticGroup = "salon_business",
             original = "סְטַיְילִיסְט", translation = "стилист-универсал",
             definition = "מֻמְחֶה הָעוֹבֵד עַל מַרְאֶה כּוֹלֵל — שֵׂעָר, צֶבַע וְעִיצּוּב.",
             definitionNative = "Эксперт, работающий с обликом целиком — стрижкой, цветом и образом.",
@@ -728,7 +728,7 @@ object WordDataHebrewBarberL1L2L3 {
         // ── salon_career (5) ──────────────────────────────────────────────────
         WordEntity(
             id = 173821, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_career", transliteration = "трэнд",
+            pos = "noun", semanticGroup = "salon_career",
             original = "טְרֶנְד", translation = "тренд (сезона)",
             definition = "כִּוּוּן פּוֹפּוּלָרִי בָּעוֹנָה שֶׁמַּשְׁפִּיעַ עַל בְּחִירוֹת לָקוֹחִים.",
             definitionNative = "Популярное направление сезона, влияющее на выбор клиентов.",
@@ -737,7 +737,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173822L, 173824L, 173825L)),
         WordEntity(
             id = 173822, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "salon_career", transliteration = "курс",
+            pos = "noun", semanticGroup = "salon_career",
             original = "קוּרְס", translation = "обучающий курс",
             definition = "סִדְרָה מוּסְדֶרֶת שֶׁל שִׁעוּרִים לְלִימּוּד מִקְצוֹעַ אוֹ טֶכְנִיקָה.",
             definitionNative = "Упорядоченная серия занятий ради освоения профессии или техники.",
@@ -746,7 +746,7 @@ object WordDataHebrewBarberL1L2L3 {
         ),
         WordEntity(
             id = 173823, setId = 1738, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "salon_career", transliteration = "мастер-клас",
+            pos = "phrase", semanticGroup = "salon_career",
             original = "מַאסְטֶר־קְלָאס", translation = "мастер-класс",
             definition = "מִפְגָּשׁ קָצָר עִם מֻמְחֶה שֶׁמַּדְגִּים טֶכְנִיקָה אַחַת בִּלְבַד.",
             definitionNative = "Короткая встреча с экспертом, демонстрирующим одну конкретную технику.",
@@ -755,7 +755,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173822L)),
         WordEntity(
             id = 173824, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "salon_career", transliteration = "ѓасмаха",
+            pos = "noun", semanticGroup = "salon_career",
             original = "הַסְמָכָה", translation = "сертификация, аккредитация",
             definition = "אִישּׁוּר רִשְׁמִי שֶׁבַּעַל הַמִּקְצוֹעַ בָּקִי בְּתָחוּם מְסֻיָּם.",
             definitionNative = "Официальное подтверждение того, что профессионал освоил конкретную область.",
@@ -764,7 +764,7 @@ object WordDataHebrewBarberL1L2L3 {
          fillInBlankExclusions = listOf(173821L, 173822L, 173825L)),
         WordEntity(
             id = 173825, setId = 1738, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "salon_career", transliteration = "шивук",
+            pos = "noun", semanticGroup = "salon_career",
             original = "שִׁווּק", translation = "маркетинг, продвижение",
             definition = "מַעֲרֶכֶת פְּעֻלּוֹת לְהַצָּגַת הַשֵּׁרוּת לְלָקוֹחוֹת חֲדָשִׁים.",
             definitionNative = "Совокупность действий по представлению услуги новым клиентам.",

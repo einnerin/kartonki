@@ -52,7 +52,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_structure (5) — несущие элементы каркаса ──
         WordEntity(id = 130501, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "construction_structure", transliteration = "shelet binyan",
+            pos = "phrase", semanticGroup = "construction_structure",
             original = "שֶׁלֶד בִּנְיָן", translation = "каркас здания / несущая конструкция",
             definition = "מַעֲרֶכֶת קוֹרוֹת וְעַמּוּדִים שֶׁמַּחֲזִיקִים אֶת כָּל הַבַּיִת מִבִּפְנִים.",
             definitionNative = "Сетка балок и стоек, на которой держится весь дом.",
@@ -60,7 +60,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Рабочие закончили שֶׁלֶד בִּנְיָן всего за месяц.", fillInBlankExclusions = listOf(130502L, 130503L, 130505L, 130506L, 130508L, 130509L, 130518L, 130519L, 130520L, 130521L, 130523L)),
 
         WordEntity(id = 130502, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "construction_structure", transliteration = "mekhitsa",
+            pos = "noun", semanticGroup = "construction_structure",
             original = "מֶחִיצָה", translation = "перегородка",
             definition = "קִיר פְּנִימִי קַל שֶׁמַּפְרִיד בֵּין חֲדָרִים בְּלִי לָשֵׂאת מִשְׁקַל.",
             definitionNative = "Лёгкая внутренняя стенка между комнатами, без нагрузки.",
@@ -68,7 +68,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Мы снесли מֶחִיצָה между гостиной и кухней."),
 
         WordEntity(id = 130509, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "construction_structure", transliteration = "amud tomekh",
+            pos = "phrase", semanticGroup = "construction_structure",
             original = "עַמּוּד תּוֹמֵךְ", translation = "несущая колонна / опорная стойка",
             definition = "מוֹט אֲנָכִי חָזָק שֶׁמַּחֲזִיק עָלָיו אֶת הַתִּקְרָה אוֹ הַקּוֹמָה.",
             definitionNative = "Вертикальная опора, на которой держится потолок или этаж.",
@@ -76,7 +76,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Инженер пометил עַמּוּד תּוֹמֵךְ красным крестом."),
 
         WordEntity(id = 130510, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "construction_structure", transliteration = "toshevet",
+            pos = "noun", semanticGroup = "construction_structure",
             original = "תּוֹשָׁבֶת", translation = "кронштейн / крепёж",
             definition = "פְּרִיט מַתֶּכֶת קָטָן שֶׁמְּחַבֵּר עֵץ אוֹ צִנּוֹר אֶל קִיר.",
             definitionNative = "Маленькая металлическая деталь — держит трубу или полку у стены.",
@@ -84,7 +84,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Он прикрутил новую תּוֹשָׁבֶת для полки.", fillInBlankExclusions = listOf(130502L, 130520L)),
 
         WordEntity(id = 130520, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_structure", transliteration = "yesodot",
+            pos = "noun", semanticGroup = "construction_structure",
             original = "יְסוֹדוֹת", translation = "фундамент / основание",
             definition = "הַחֵלֶק הַתַּחְתּוֹן שֶׁל הַבַּיִת שֶׁנּוֹשֵׂא אֶת כָּל הַמִּשְׁקַל לַקַּרְקַע.",
             definitionNative = "Нижняя часть здания, передающая весь вес на грунт.",
@@ -93,7 +93,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_basic_materials (5) — сыпучие и каменные материалы ──
         WordEntity(id = 130504, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "construction_basic_materials", transliteration = "khomer binyan",
+            pos = "phrase", semanticGroup = "construction_basic_materials",
             original = "חוֹמֶר בִּינְיָן", translation = "строительный материал",
             definition = "כָּל דָּבָר שֶׁמִּמֶּנּוּ עוֹשִׂים בַּיִת — אֶבֶן, עֵץ, בֶּטוֹן.",
             definitionNative = "Всё, из чего делают дом — камень, дерево, бетон.",
@@ -101,7 +101,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Склад забит мешками חוֹמֶר בִּינְיָן до потолка.", fillInBlankExclusions = listOf(130511L, 130512L, 130513L, 130514L)),
 
         WordEntity(id = 130511, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "construction_basic_materials", transliteration = "gevesh",
+            pos = "noun", semanticGroup = "construction_basic_materials",
             original = "גֶּבֶשׁ", translation = "гипс / штукатурка",
             definition = "אֲבָק לָבָן שֶׁמְּעָרְבִים בְּמַיִם וּמוֹרְחִים עַל קִיר לְהַחְלָקָה.",
             definitionNative = "Белый порошок, который мешают с водой и мажут на стену.",
@@ -109,7 +109,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Штукатур приготовил ведро גֶּבֶשׁ перед работой."),
 
         WordEntity(id = 130512, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "construction_basic_materials", transliteration = "even gir",
+            pos = "phrase", semanticGroup = "construction_basic_materials",
             original = "אֶבֶן גִּיר", translation = "известняк / известняковый камень",
             definition = "אֶבֶן רַכָּה וּלְבַנְבַּנָּה שֶׁבּוֹנִים מִמֶּנָּה קִירוֹת בְּיִשְׂרָאֵל.",
             definitionNative = "Мягкий светлый камень, из которого в Израиле строят стены.",
@@ -117,7 +117,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Фасад облицован местным אֶבֶן גִּיר.", fillInBlankExclusions = listOf(130504L, 130507L)),
 
         WordEntity(id = 130513, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "construction_basic_materials", transliteration = "melet",
+            pos = "noun", semanticGroup = "construction_basic_materials",
             original = "מֶלֶט", translation = "цемент",
             definition = "אֲבָק אָפֹר שֶׁמְּעָרְבִים עִם מַיִם וְחוֹל וְהוּא מַתְקַשֶּׁה כְּאֶבֶן.",
             definitionNative = "Серый порошок — смешиваешь с водой и песком, и он каменеет.",
@@ -125,7 +125,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Он добавил в смесь ещё один мешок מֶלֶט.", fillInBlankExclusions = listOf(130504L, 130511L, 130514L)),
 
         WordEntity(id = 130514, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "construction_basic_materials", transliteration = "afar",
+            pos = "noun", semanticGroup = "construction_basic_materials",
             original = "עָפָר", translation = "грунт / земля",
             definition = "הַשִּׁכְבָה הָעֶלְיוֹנָה שֶׁל הַקַּרְקַע שֶׁעָלֶיהָ עוֹמְדִים וְחוֹפְרִים.",
             definitionNative = "Верхний слой почвы — на нём стоят, по нему ходят и копают.",
@@ -134,7 +134,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_metalwork (5) — металл и электрика ──
         WordEntity(id = 130507, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "construction_metalwork", transliteration = "n'khoshet",
+            pos = "noun", semanticGroup = "construction_metalwork",
             original = "נְחֹשֶׁת", translation = "медь / медное соединение",
             definition = "מַתֶּכֶת אֲדַמְדַּמָּה רַכָּה שֶׁמַּעֲבִירָה חַשְׁמַל בְּקַלּוּת.",
             definitionNative = "Красноватый мягкий металл, хорошо пропускает ток.",
@@ -142,7 +142,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Электрик использовал тонкие провода נְחֹשֶׁת.", fillInBlankExclusions = listOf(130521L)),
 
         WordEntity(id = 130508, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "construction_metalwork", transliteration = "mibneh p'lada",
+            pos = "phrase", semanticGroup = "construction_metalwork",
             original = "מִבְנֵה פְּלָדָה", translation = "стальная конструкция",
             definition = "שֶׁלֶד עָשׂוּי כֻּלּוֹ מִקּוֹרוֹת מַתֶּכֶת חֲזָקוֹת מְאֹד.",
             definitionNative = "Каркас, целиком собранный из очень прочных балок.",
@@ -150,7 +150,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Новый склад построили как מִבְנֵה פְּלָדָה.", fillInBlankExclusions = listOf(130501L, 130522L, 130523L)),
 
         WordEntity(id = 130521, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_metalwork", transliteration = "ritukh",
+            pos = "noun", semanticGroup = "construction_metalwork",
             original = "רִתּוּךְ", translation = "сварка",
             definition = "חִבּוּר שְׁתֵּי חֲתִיכוֹת מַתֶּכֶת בְּעֶזְרַת אֵשׁ חַמָּה מְאֹד.",
             definitionNative = "Соединение двух кусков металла очень горячим пламенем.",
@@ -158,7 +158,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Рабочий закончил רִתּוּךְ на воротах."),
 
         WordEntity(id = 130522, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_metalwork", transliteration = "sarbit",
+            pos = "phrase", semanticGroup = "construction_metalwork",
             original = "שַׂרְבִיט", translation = "металлический прут / арматурный стержень",
             definition = "מוֹט בַּרְזֶל אָרֹךְ שֶׁמַּכְנִיסִים לְבֶטוֹן כְּדֵי לְחַזְּקוֹ.",
             definitionNative = "Длинный железный стержень, который закладывают в бетон.",
@@ -166,7 +166,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Он отпилил שַׂרְבִיט покороче острой пилой.", fillInBlankExclusions = listOf(130508L, 130509L, 130523L)),
 
         WordEntity(id = 130523, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_metalwork", transliteration = "khiyut khashmal",
+            pos = "phrase", semanticGroup = "construction_metalwork",
             original = "חִיוּט חַשְׁמַל", translation = "электропроводка",
             definition = "כָּל הַחוּטִים שֶׁמַּעֲבִירִים זֶרֶם לִשְׁקָעִים וּלְמָנוֹרוֹת בַּבַּיִת.",
             definitionNative = "Сеть проводов, по которым ток идёт к розеткам и лампам.",
@@ -175,7 +175,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_building_parts (5) — части здания и площадки ──
         WordEntity(id = 130503, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "construction_building_parts", transliteration = "ritspa",
+            pos = "noun", semanticGroup = "construction_building_parts",
             original = "רְצָפָה", translation = "пол",
             definition = "הַמִּשְׁטָח הַתַּחְתּוֹן בַּחֶדֶר שֶׁעָלָיו דּוֹרְכִים בָּרַגְלַיִם.",
             definitionNative = "Нижняя плоскость комнаты, по которой ходят ногами.",
@@ -183,7 +183,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Дети пролили сок на новую רְצָפָה.", fillInBlankExclusions = listOf(130502L, 130510L, 130518L, 130519L)),
 
         WordEntity(id = 130505, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "construction_building_parts", transliteration = "gag shatuakh",
+            pos = "phrase", semanticGroup = "construction_building_parts",
             original = "גֶּג שָׁטוּחַ", translation = "плоская кровля",
             definition = "כִּסּוּי עֶלְיוֹן שֶׁל הַבַּיִת שֶׁאֵין לוֹ שִׁפּוּעַ — אֶפְשָׁר לָלֶכֶת עָלָיו.",
             definitionNative = "Верх дома без наклона — по нему можно ходить.",
@@ -191,7 +191,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Летом мы поднялись на גֶּג שָׁטוּחַ смотреть фейерверк."),
 
         WordEntity(id = 130506, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "phrase", semanticGroup = "construction_building_parts", transliteration = "garem madregot",
+            pos = "phrase", semanticGroup = "construction_building_parts",
             original = "גֶּרֶם מַדְרֵגוֹת", translation = "лестничный пролёт / марш лестницы",
             definition = "סִדְרַת מַדְרֵגוֹת בֵּין שְׁתֵּי קוֹמוֹת אוֹ עַד הַמִּשְׁטָח הַבָּא.",
             definitionNative = "Ряд ступеней между этажами или до следующей площадки.",
@@ -199,7 +199,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Мы поднялись по גֶּרֶם מַדְרֵגוֹת без остановки.", fillInBlankExclusions = listOf(130505L, 130509L, 130518L)),
 
         WordEntity(id = 130518, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_building_parts", transliteration = "pigum",
+            pos = "noun", semanticGroup = "construction_building_parts",
             original = "פִּיגּוּם", translation = "строительные леса",
             definition = "פִּגּוּם מִתָּכֵן זְמַנִּי שֶׁעָלָיו עוֹמְדִים פּוֹעֲלִים בִּזְמַן עֲבוֹדָה גְּבוֹהָה.",
             definitionNative = "Временная конструкция, на которой стоят рабочие на высоте.",
@@ -207,7 +207,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Рабочий очень осторожно полез на פִּיגּוּם.", fillInBlankExclusions = listOf(130503L, 130505L, 130506L, 130509L, 130519L)),
 
         WordEntity(id = 130519, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_building_parts", transliteration = "te'ala",
+            pos = "noun", semanticGroup = "construction_building_parts",
             original = "תְּעָלָה", translation = "траншея / канава",
             definition = "חֲפִירָה אֲרֻכָּה וְצָרָה בָּאֲדָמָה — בִּשְׁבִיל צִנּוֹר אוֹ כֶּבֶל.",
             definitionNative = "Длинный узкий ров в земле — обычно под трубу или кабель.",
@@ -216,7 +216,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_management (5) — люди, техника и проекты ──
         WordEntity(id = 130515, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "construction_management", transliteration = "uman",
+            pos = "noun", semanticGroup = "construction_management",
             original = "אוּמָן", translation = "мастер / ремесленник",
             definition = "אִישׁ עֲבוֹדָה מְנֻסֶּה שֶׁיוֹדֵעַ לַעֲשׂוֹת מְלָאכָה בְּיָדַיִם הֵיטֵב.",
             definitionNative = "Опытный работник, умеющий делать сложную ручную работу.",
@@ -224,7 +224,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "אוּמָן аккуратно положил последнюю плитку.", fillInBlankExclusions = listOf(130516L, 130517L)),
 
         WordEntity(id = 130516, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_management", transliteration = "kablan",
+            pos = "noun", semanticGroup = "construction_management",
             original = "קַבְּלָן", translation = "прораб / подрядчик",
             definition = "אִישׁ שֶׁלּוֹקֵחַ אַחְרָיוּת עַל בְּנִיַּת הַבַּיִת וּמְשַׁלֵּם לַפּוֹעֲלִים.",
             definitionNative = "Тот, кто отвечает за стройку и платит рабочим.",
@@ -232,7 +232,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "קַבְּלָן пообещал закончить дом до зимы."),
 
         WordEntity(id = 130517, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_management", transliteration = "aguran",
+            pos = "noun", semanticGroup = "construction_management",
             original = "עֲגוּרָן", translation = "подъёмный кран",
             definition = "מְכוֹנָה גְּבוֹהָה עִם זְרוֹעַ אֲרֻכָּה שֶׁמְּרִימָה מַשָּׂאוֹת כְּבֵדִים.",
             definitionNative = "Высокая машина с длинной стрелой — поднимает тяжёлые грузы.",
@@ -240,7 +240,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "עֲגוּרָן поднял балку на восьмой этаж.", fillInBlankExclusions = listOf(130515L, 130516L)),
 
         WordEntity(id = 130524, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_management", transliteration = "takhnit handasit",
+            pos = "phrase", semanticGroup = "construction_management",
             original = "תָּכְנִית הַנְדָּסִית", translation = "инженерный чертёж / технический план",
             definition = "צִיּוּר מְדֻיָּק עִם מִדּוֹת — כָּךְ הַפּוֹעֲלִים יוֹדְעִים אֵיךְ לִבְנוֹת.",
             definitionNative = "Точный рисунок с размерами — по нему рабочие строят.",
@@ -248,7 +248,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Инженер развернул תָּכְנִית הַנְדָּסִית на столе.", fillInBlankExclusions = listOf(130525L)),
 
         WordEntity(id = 130525, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_management", transliteration = "tkhnit bniya",
+            pos = "phrase", semanticGroup = "construction_management",
             original = "תְּכנִית בְּנִיָּה", translation = "проект строительства",
             definition = "מִסְמָךְ שָׁלֵם עִם שְׂרְטוּטִים, מִדּוֹת וְלוּחַ זְמַנִּים שֶׁל בְּנִיַּת הַבַּיִת.",
             definitionNative = "Полный документ со схемами, размерами и графиком работ.",
@@ -262,7 +262,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_documents (5) — чертежи и договоры ──
         WordEntity(id = 130601, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_documents", transliteration = "takhnit",
+            pos = "noun", semanticGroup = "construction_documents",
             original = "תָּכְנִית", translation = "чертёж / план",
             definition = "צִיּוּר עִם קַוִּים וּמִדּוֹת שֶׁמַּרְאֶה אֵיךְ צָרִיךְ לִבְנוֹת.",
             definitionNative = "Рисунок с линиями и размерами — показывает, как строить.",
@@ -270,7 +270,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Архитектор послал תָּכְנִית на утверждение в мэрию.", fillInBlankExclusions = listOf(130602L, 130610L, 130617L)),
 
         WordEntity(id = 130602, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_documents", transliteration = "proyekt binyan",
+            pos = "phrase", semanticGroup = "construction_documents",
             original = "פְּרוֹיֶקְט בִּנְיָן", translation = "проект здания",
             definition = "תִּיק שָׁלֵם שֶׁל מִסְמָכִים — שִׂרְטוּטִים, חִשּׁוּבִים וְלוּחַ זְמַנִּים.",
             definitionNative = "Целая папка документов — чертежи, расчёты, график работ.",
@@ -278,7 +278,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Инженер сдал פְּרוֹיֶקְט בִּנְיָן в срок.", fillInBlankExclusions = listOf(130601L, 130603L, 130604L, 130605L, 130606L, 130610L, 130615L, 130617L, 130618L, 130619L, 130621L, 130622L, 130623L, 130625L)),
 
         WordEntity(id = 130610, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_documents", transliteration = "mifrat tekhni",
+            pos = "phrase", semanticGroup = "construction_documents",
             original = "מִפְרָט טֶכְנִי", translation = "техническая спецификация",
             definition = "רְשִׁימָה מְפֹרֶטֶת שֶׁל הַחֳמָרִים וְהָעֲבוֹדוֹת שֶׁצָּרִיךְ לְבַצֵּעַ.",
             definitionNative = "Подробный список материалов и работ, которые надо выполнить.",
@@ -286,7 +286,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Он внимательно проверил каждый пункт מִפְרָט טֶכְנִי."),
 
         WordEntity(id = 130617, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_documents", transliteration = "khoze kabalanot",
+            pos = "phrase", semanticGroup = "construction_documents",
             original = "חוֹזֶה קְבָלָנוּת", translation = "подрядный договор",
             definition = "מִסְמָךְ מִשְׁפָּטִי בֵּין הַלָּקוֹחַ לַבּוֹנֶה עִם תְּנָאִים וּמְחִיר.",
             definitionNative = "Юридический документ между заказчиком и строителем — условия и цена.",
@@ -294,7 +294,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Стороны подписали חוֹזֶה קְבָלָנוּת при адвокате.", fillInBlankExclusions = listOf(130601L, 130602L, 130610L, 130618L, 130619L)),
 
         WordEntity(id = 130618, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_documents", transliteration = "mesirat proyekt",
+            pos = "phrase", semanticGroup = "construction_documents",
             original = "מְסִירַת פְּרוֹיֶקְט", translation = "сдача объекта",
             definition = "הָרֶגַע שֶׁבּוֹ הַבּוֹנֶה מַעֲבִיר אֶת הַבַּיִת הַמּוּכָן לְבַעַל הַנֶּכֶס.",
             definitionNative = "Момент, когда строитель передаёт готовый дом владельцу.",
@@ -303,7 +303,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_materials_pro (5) — материалы и каркас ──
         WordEntity(id = 130603, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_materials_pro", transliteration = "armatura",
+            pos = "noun", semanticGroup = "construction_materials_pro",
             original = "אַרְמָטוּרָה", translation = "арматура / стальной каркас",
             definition = "רֶשֶׁת מוֹטוֹת בַּרְזֶל שֶׁמַּחְבִּיאִים בְּתוֹךְ הַבֶּטוֹן לְחִזּוּקוֹ.",
             definitionNative = "Сетка железных стержней внутри бетона — добавляет прочности.",
@@ -311,7 +311,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Рабочие уложили אַרְמָטוּרָה до заливки.", fillInBlankExclusions = listOf(130604L, 130605L, 130623L)),
 
         WordEntity(id = 130604, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_materials_pro", transliteration = "tavnit yetzika",
+            pos = "phrase", semanticGroup = "construction_materials_pro",
             original = "תַּבְנִית יְצִיקָה", translation = "опалубка",
             definition = "מִסְגֶּרֶת זְמַנִּית מֵעֵץ אוֹ מַתֶּכֶת שֶׁשּׁוֹפְכִים לְתוֹכָהּ בֶּטוֹן רָטוֹב.",
             definitionNative = "Временная форма из дерева или металла — в неё льют жидкий бетон.",
@@ -319,7 +319,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Плотник собрал תַּבְנִית יְצִיקָה для стены.", fillInBlankExclusions = listOf(130623L, 130624L)),
 
         WordEntity(id = 130605, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_materials_pro", transliteration = "khipuy",
+            pos = "noun", semanticGroup = "construction_materials_pro",
             original = "חִפּוּי", translation = "облицовка / обшивка",
             definition = "שִׁכְבָה דְּקוֹרָטִיבִית עַל הַחֲזִית — אֶבֶן, אָרִיחַ אוֹ עֵץ.",
             definitionNative = "Декоративный слой на фасаде — камень, плитка или дерево.",
@@ -327,7 +327,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Фасад получил новую חִפּוּי бежевого цвета.", fillInBlankExclusions = listOf(130603L, 130606L)),
 
         WordEntity(id = 130623, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_materials_pro", transliteration = "konstruktsiya noset",
+            pos = "phrase", semanticGroup = "construction_materials_pro",
             original = "קוֹנְסְטְרוּקְצִיָּה נוֹשֵׂאת", translation = "несущая конструкция",
             definition = "אוֹתוֹ חֵלֶק שֶׁל הַבַּיִת שֶׁבְּלִי לוֹ הַכֹּל יִתְמוֹטֵט.",
             definitionNative = "Та часть здания, без которой всё рухнет.",
@@ -335,7 +335,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "В квартире нельзя ломать קוֹנְסְטְרוּקְצִיָּה נוֹשֵׂאת.", fillInBlankExclusions = listOf(130604L, 130624L)),
 
         WordEntity(id = 130624, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_materials_pro", transliteration = "khomrei binyan",
+            pos = "phrase", semanticGroup = "construction_materials_pro",
             original = "חוֹמְרֵי בִּנְיָן", translation = "строительные материалы",
             definition = "כָּל מַה שֶּׁמְּבִיאִים לָאֲתָר — לְבֵנִים, מֶלֶט, בַּרְזֶל וּשְׁאָר.",
             definitionNative = "Всё, что привозят на стройплощадку — кирпич, цемент, железо и прочее.",
@@ -344,7 +344,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_systems (5) — инженерные системы здания ──
         WordEntity(id = 130606, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_systems", transliteration = "bidud",
+            pos = "noun", semanticGroup = "construction_systems",
             original = "בִּידוּד", translation = "изоляция / утепление",
             definition = "שִׁכְבָה שֶׁשּׂוֹמֶרֶת חֹם בִּפְנִים וְמוֹנַעַת מֵעֵבֶר רַעַשׁ.",
             definitionNative = "Слой, который держит тепло внутри и не пропускает шум.",
@@ -352,7 +352,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Зимой добавили בִּידוּד на потолок ради экономии."),
 
         WordEntity(id = 130607, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "phrase", semanticGroup = "construction_systems", transliteration = "ma'arekhet avira",
+            pos = "phrase", semanticGroup = "construction_systems",
             original = "מַעֲרֶכֶת אֲוִירָה", translation = "вентиляционная система",
             definition = "צִנּוֹרוֹת וּמְאַוְוְרִים שֶׁמַּכְנִיסִים אֲוִיר נָקִי לַחֲדָרִים.",
             definitionNative = "Трубы и вентиляторы, которые гонят свежий воздух в комнаты.",
@@ -360,7 +360,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "מַעֲרֶכֶת אֲוִירָה сломалась в самый разгар лета."),
 
         WordEntity(id = 130620, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_systems", transliteration = "ma'arekhet kibuy esh",
+            pos = "phrase", semanticGroup = "construction_systems",
             original = "מַעֲרֶכֶת כִּבּוּי אֵשׁ", translation = "противопожарная система",
             definition = "מַזְלְפֵי מַיִם וְגַלָּאֵי עָשָׁן שֶׁמַּצִּילִים בִּשְׁעַת שְׂרֵפָה.",
             definitionNative = "Спринклеры и датчики дыма — спасают при пожаре.",
@@ -368,7 +368,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "מַעֲרֶכֶת כִּבּוּי אֵשׁ сработала как надо на учениях."),
 
         WordEntity(id = 130621, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_systems", transliteration = "atum mayim",
+            pos = "phrase", semanticGroup = "construction_systems",
             original = "אִיטוּם מַיִם", translation = "гидроизоляция",
             definition = "שִׁכְבָה דַּקָּה שֶׁלֹּא מַרְשָׁה לְמַיִם לַחְדֹּר לַקִּיר אוֹ לַגַּג.",
             definitionNative = "Тонкий слой, не дающий воде просочиться в стену или крышу.",
@@ -376,7 +376,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Без אִיטוּם מַיִם крыша протечёт в первую же зиму.", fillInBlankExclusions = listOf(130606L, 130607L, 130620L, 130622L)),
 
         WordEntity(id = 130622, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_systems", transliteration = "bidud akusti",
+            pos = "phrase", semanticGroup = "construction_systems",
             original = "בִּידוּד אָקוּסְטִי", translation = "звукоизоляция",
             definition = "חֹמֶר מְיֻחָד בַּקִּיר שֶׁלֹּא מַעֲבִיר רַעֲשִׁים בֵּין דִּירוֹת.",
             definitionNative = "Особый материал в стене, не дающий шуму ходить между квартирами.",
@@ -385,7 +385,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_specialists_safety (5) — люди и контроль на стройке ──
         WordEntity(id = 130608, setId = 1306, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "construction_specialists_safety", transliteration = "tayakh",
+            pos = "noun", semanticGroup = "construction_specialists_safety",
             original = "טַיָּח", translation = "штукатур",
             definition = "פּוֹעֵל שֶׁמְּחַלִּיק קִירוֹת בְּשִׁכְבַת חֹמֶר רַךְ לִפְנֵי הַצֶּבַע.",
             definitionNative = "Рабочий, который выравнивает стены мягкой смесью перед покраской.",
@@ -393,7 +393,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "טַיָּח возился со стеной до самого вечера."),
 
         WordEntity(id = 130611, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_specialists_safety", transliteration = "kablan mishne",
+            pos = "phrase", semanticGroup = "construction_specialists_safety",
             original = "קַבְּלָן מִשְׁנֶה", translation = "субподрядчик",
             definition = "קַבְּלָן קָטָן שֶׁלּוֹקֵחַ עַל עַצְמוֹ חֵלֶק מֵהָעֲבוֹדָה הָרָאשִׁית.",
             definitionNative = "Маленький подрядчик — берёт на себя часть основных работ.",
@@ -401,7 +401,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Электрику отдали местному קַבְּלָן מִשְׁנֶה.", fillInBlankExclusions = listOf(130613L)),
 
         WordEntity(id = 130612, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_specialists_safety", transliteration = "pikuakh",
+            pos = "noun", semanticGroup = "construction_specialists_safety",
             original = "פִּקּוּחַ", translation = "инспекция / надзор",
             definition = "בְּדִיקָה רִשְׁמִית שֶׁבּוֹדְקֶת אִם הַעֲבוֹדָה נַעֲשָׂה לְפִי הַחֹק.",
             definitionNative = "Официальная проверка — соответствует ли работа закону.",
@@ -409,7 +409,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "פִּקּוּחַ нашёл несколько недочётов на втором этаже."),
 
         WordEntity(id = 130613, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_specialists_safety", transliteration = "bitakhon avoda",
+            pos = "phrase", semanticGroup = "construction_specialists_safety",
             original = "בִּטָּחוֹן עֲבוֹדָה", translation = "безопасность труда / охрана труда",
             definition = "כְּלָלִים לְהָגֵן עַל הַפּוֹעֲלִים מֵפַּגִיעוֹת בִּשְׁעַת הָעֲבוֹדָה.",
             definitionNative = "Правила, оберегающие рабочих от травм во время работы.",
@@ -417,7 +417,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Ответственный за בִּטָּחוֹן עֲבוֹדָה проверял каски у входа.", fillInBlankExclusions = listOf(130611L, 130612L)),
 
         WordEntity(id = 130614, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_specialists_safety", transliteration = "banai",
+            pos = "noun", semanticGroup = "construction_specialists_safety",
             original = "בַּנָּאי", translation = "строитель",
             definition = "פּוֹעֵל שֶׁמַּנִּיחַ לְבֵנִים אוֹ אֲבָנִים זֶה עַל גַּב זֶה לְקִיר יָשָׁר.",
             definitionNative = "Рабочий, кладущий кирпичи или камни ровными рядами.",
@@ -426,7 +426,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_engineering (5) — инженерные действия и термины ──
         WordEntity(id = 130609, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_engineering", transliteration = "AutoCAD",
+            pos = "noun", semanticGroup = "construction_engineering",
             original = "אוֹטוֹקַד", translation = "AutoCAD (программа проектирования)",
             definition = "תּוֹכְנַת מַחְשֵׁב מְפוּרְסֶמֶת לְצִיּוּר תָּכְנִיּוֹת מְדֻיָּקוֹת.",
             definitionNative = "Известная компьютерная программа — рисует точные чертежи.",
@@ -434,7 +434,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Студент изучил אוֹטוֹקַד в первом семестре.", fillInBlankExclusions = listOf(130601L, 130602L, 130603L, 130604L, 130605L, 130606L, 130607L, 130610L, 130612L, 130613L, 130615L, 130616L, 130617L, 130620L, 130621L, 130622L, 130623L, 130624L, 130625L)),
 
         WordEntity(id = 130615, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_engineering", transliteration = "kdikha",
+            pos = "noun", semanticGroup = "construction_engineering",
             original = "קְדִיחָה", translation = "бурение / сверление",
             definition = "עֲשִׂיַּת חוֹר עָגֹל וְעָמֹק בָּאֲדָמָה אוֹ בַּקִּיר בְּעֶזְרַת מְכוֹנָה.",
             definitionNative = "Когда машиной делают круглую глубокую дырку в земле или стене.",
@@ -442,7 +442,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "קְדִיחָה продолжалась почти весь день."),
 
         WordEntity(id = 130616, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_engineering", transliteration = "medadi",
+            pos = "noun", semanticGroup = "construction_engineering",
             original = "מֵדָּדִי", translation = "геодезия / землемерие",
             definition = "תְּחוּם שֶׁמּוֹדֵד מִגְרָשִׁים וּמַסְמֵן גְּבוּלוֹת לִפְנֵי בְּנִיָּה.",
             definitionNative = "Область, где меряют участки и ставят границы перед стройкой.",
@@ -450,7 +450,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "מֵדָּדִי определил первый угол участка."),
 
         WordEntity(id = 130619, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_engineering", transliteration = "reshimat liku'im",
+            pos = "phrase", semanticGroup = "construction_engineering",
             original = "רְשִׁימַת לִיקּוּיִים", translation = "дефектовка / список недоделок",
             definition = "דַּף שֶׁבּוֹ מִתְעָדִים כָּל מַה שֶּׁעוֹד צָרִיךְ לְתַקֵּן בַּדִּירָה.",
             definitionNative = "Лист, где записывают всё, что ещё нужно поправить в квартире.",
@@ -458,7 +458,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Мы передали רְשִׁימַת לִיקּוּיִים подрядчику утром.", fillInBlankExclusions = listOf(130601L, 130602L, 130610L, 130617L)),
 
         WordEntity(id = 130625, setId = 1306, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_engineering", transliteration = "tishtit",
+            pos = "noun", semanticGroup = "construction_engineering",
             original = "תִּשְׁתִּית", translation = "инфраструктура",
             definition = "כָּל הַצִּנּוֹרוֹת, הַכְּבָלִים וְהַכְּבִישִׁים שֶׁמְּשָׁרְתִים שְׁכוּנָה שְׁלֵמָה.",
             definitionNative = "Все трубы, кабели и дороги, без которых живёт целый район.",
@@ -472,7 +472,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_structural_pro (5) — несущая способность и прочность ──
         WordEntity(id = 130701, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_structural_pro", transliteration = "beton mezuyan",
+            pos = "phrase", semanticGroup = "construction_structural_pro",
             original = "בֶּטוֹן מְזוּיָּן", translation = "армированный бетон / железобетон",
             definition = "תַּעֲרוֹבֶת חֲזָקָה שֶׁל בֶּטוֹן עִם רֶשֶׁת מַתֶּכֶת בְּתוֹכוֹ.",
             definitionNative = "Прочная смесь бетона с металлической сеткой внутри.",
@@ -480,7 +480,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Перекрытие отлили целиком из בֶּטוֹן מְזוּיָּן.", fillInBlankExclusions = listOf(130702L, 130707L, 130708L, 130709L)),
 
         WordEntity(id = 130702, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_structural_pro", transliteration = "amidut re'idat adama",
+            pos = "phrase", semanticGroup = "construction_structural_pro",
             original = "עֲמִידוּת רְעִידַת אֲדָמָה", translation = "сейсмостойкость",
             definition = "יְכוֹלֶת שֶׁל הַבַּיִת לַעֲמֹד עַל מְקוֹמוֹ גַּם בִּזְמַן רַעַשׁ חָזָק.",
             definitionNative = "Способность здания устоять даже при сильных подземных толчках.",
@@ -488,7 +488,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Новый стандарт требует высокой עֲמִידוּת רְעִידַת אֲדָמָה.", fillInBlankExclusions = listOf(130701L, 130707L, 130708L, 130709L, 130710L)),
 
         WordEntity(id = 130707, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_structural_pro", transliteration = "kosher nesi'a",
+            pos = "phrase", semanticGroup = "construction_structural_pro",
             original = "כּוֹשֶׁר נְשִׂיאָה", translation = "несущая способность",
             definition = "כַּמָּה מִשְׁקָל אוֹ עֹמֶס יָכוֹל הַמִּבְנֶה לִסְבֹּל בְּלִי לְהִתְמוֹטֵט.",
             definitionNative = "Сколько веса или нагрузки конструкция выдержит без разрушения.",
@@ -496,7 +496,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Инженер проверил כּוֹשֶׁר נְשִׂיאָה колонн.", fillInBlankExclusions = listOf(130701L, 130702L, 130708L, 130709L, 130725L)),
 
         WordEntity(id = 130708, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_structural_pro", transliteration = "seren kshikhut",
+            pos = "phrase", semanticGroup = "construction_structural_pro",
             original = "סֶרֶן קְשִׁיחוּת", translation = "диафрагма жёсткости",
             definition = "אֶלֶמֶנְט אָנָךְ בַּמִּבְנֶה שֶׁמּוֹנֵעַ נְדִידָה צְדָדִית בִּזְמַן רוּחַ אוֹ רַעַשׁ.",
             definitionNative = "Вертикальный элемент — не даёт зданию сместиться при ветре или толчке.",
@@ -504,7 +504,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Без סֶרֶן קְשִׁיחוּת высотка раскачивается слишком сильно.", fillInBlankExclusions = listOf(130701L, 130702L, 130707L, 130709L)),
 
         WordEntity(id = 130709, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_structural_pro", transliteration = "konstruktsiyot kdumot metukot",
+            pos = "phrase", semanticGroup = "construction_structural_pro",
             original = "קוֹנְסְטְרוּקְצִיוֹת קְדוּמוֹת מְתוּחוֹת", translation = "преднапряжённые конструкции",
             definition = "אֶלֶמֶנְטֵי בֶּטוֹן שֶׁבָּהֶם הַבַּרְזֶל נִמְתָּח מֵרֹאשׁ — לְעֹמֶס גָּדוֹל יוֹתֵר.",
             definitionNative = "Бетонные элементы, где металл натянут заранее — выдерживают больше.",
@@ -513,7 +513,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_subsurface (5) — грунт, фундамент, нулевой цикл ──
         WordEntity(id = 130705, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_subsurface", transliteration = "makhazor efes",
+            pos = "phrase", semanticGroup = "construction_subsurface",
             original = "מַחֲזוֹר אֶפֶס", translation = "нулевой цикл",
             definition = "כָּל הָעֲבוֹדוֹת מִתַּחַת לַקַּרְקַע — חֲפִירָה, יְסוֹדוֹת וְצִנּוֹרוֹת.",
             definitionNative = "Все работы под землёй — котлован, фундамент и подвод труб.",
@@ -521,7 +521,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "מַחֲזוֹר אֶפֶס закончился только на прошлой неделе.", fillInBlankExclusions = listOf(130704L, 130706L, 130714L, 130715L, 130722L, 130723L, 130724L, 130725L)),
 
         WordEntity(id = 130706, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_subsurface", transliteration = "dkhisat karka",
+            pos = "phrase", semanticGroup = "construction_subsurface",
             original = "דְּחִיסַת קַרְקַע", translation = "консолидация грунта / уплотнение почвы",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ הָאֲדָמָה מִתְלַחֶצֶת כְּדֵי לָשֵׂאת בַּיִת בְּבִטָּחוֹן.",
             definitionNative = "Когда землю утрамбовывают, чтобы она надёжно держала здание.",
@@ -529,7 +529,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "После דְּחִיסַת קַרְקַע смогли начать заливку.", fillInBlankExclusions = listOf(130705L, 130715L, 130722L, 130725L)),
 
         WordEntity(id = 130715, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_subsurface", transliteration = "khanyon tat-karka'i",
+            pos = "phrase", semanticGroup = "construction_subsurface",
             original = "חָנְיוֹן תַּת-קַרְקָעִי", translation = "подземный паркинг",
             definition = "מָקוֹם רָחָב לַחֲנָיַת מְכוֹנִיּוֹת מִתַּחַת לְבִנְיָן אוֹ לִכְבִישׁ.",
             definitionNative = "Просторная стоянка для машин — прямо под домом или дорогой.",
@@ -537,7 +537,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Жильцы паркуются в חָנְיוֹן תַּת-קַרְקָעִי ради безопасности.", fillInBlankExclusions = listOf(130705L, 130706L, 130722L, 130725L)),
 
         WordEntity(id = 130722, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_subsurface", transliteration = "bdikat karka",
+            pos = "phrase", semanticGroup = "construction_subsurface",
             original = "בְּדִיקַת קַרְקַע", translation = "исследование грунта / геотехническая экспертиза",
             definition = "אִסּוּף דְּגִימוֹת מִתַּחַת לָאֲדָמָה כְּדֵי לָדַעַת אִם הִיא חֲזָקָה דַּי.",
             definitionNative = "Берут пробы из земли — чтобы понять, достаточно ли она прочна.",
@@ -545,7 +545,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "בְּדִיקַת קַרְקַע показала глубокий слой глины.", fillInBlankExclusions = listOf(130705L, 130706L, 130713L, 130715L, 130725L)),
 
         WordEntity(id = 130725, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_subsurface", transliteration = "regesh seyismi",
+            pos = "phrase", semanticGroup = "construction_subsurface",
             original = "רֶגֶשׁ סֵיסְמִי", translation = "сейсмическая нагрузка",
             definition = "כֹּחַ אָפְקִי שֶׁמַּגִּיעַ עַל הַמִּבְנֶה בִּזְמַן זְעַזוּעֵי אֲדָמָה.",
             definitionNative = "Боковая сила, действующая на здание во время колебаний земли.",
@@ -554,7 +554,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_planning_pro (5) — нормы и проектирование ──
         WordEntity(id = 130703, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_planning_pro", transliteration = "takanot bniya",
+            pos = "phrase", semanticGroup = "construction_planning_pro",
             original = "תַּקְנוֹת בְּנִיָּה", translation = "строительные нормы / строительный регламент",
             definition = "כְּלָלִים רִשְׁמִיִּים שֶׁאוֹמְרִים אֵיךְ מֻתָּר וְאֵיךְ אָסוּר לְהָקִים בָּתִּים.",
             definitionNative = "Официальные правила — что можно и что нельзя при строительстве.",
@@ -562,7 +562,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Новый план соответствует всем תַּקְנוֹת בְּנִיָּה.", fillInBlankExclusions = listOf(130704L, 130721L, 130723L, 130724L)),
 
         WordEntity(id = 130704, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_planning_pro", transliteration = "midul BIM",
+            pos = "phrase", semanticGroup = "construction_planning_pro",
             original = "מִידּוּל BIM", translation = "BIM-моделирование",
             definition = "דֶּגֶם תְּלַת-מֵמַד דִּיגִיטָלִי שֶׁמְּאַחֵד אַדְרִיכָלוּת, חַשְׁמַל וּצְנֶרֶת.",
             definitionNative = "Цифровая 3D-модель — собирает архитектуру, электрику и трубы вместе.",
@@ -570,7 +570,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Бюро перешло на מִידּוּל BIM в прошлом году.", fillInBlankExclusions = listOf(130703L, 130721L, 130723L, 130724L)),
 
         WordEntity(id = 130721, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_planning_pro", transliteration = "pnim ve-khutz",
+            pos = "phrase", semanticGroup = "construction_planning_pro",
             original = "פְּנִים וְחוּץ", translation = "интерьер и экстерьер",
             definition = "כָּל מַה שֶּׁבִּפְנִים הַבַּיִת וְכָל מַה שֶּׁנִּרְאֶה מִן הַחוּץ.",
             definitionNative = "Всё, что внутри здания, и всё, что видно снаружи.",
@@ -578,7 +578,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Архитектор оформил פְּנִים וְחוּץ в одном стиле.", fillInBlankExclusions = listOf(130703L, 130704L, 130723L, 130724L)),
 
         WordEntity(id = 130723, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_planning_pro", transliteration = "tikhnun adrikali",
+            pos = "phrase", semanticGroup = "construction_planning_pro",
             original = "תִּכְנוּן אַדְרִיכָלִי", translation = "архитектурное проектирование",
             definition = "תַּהֲלִיךְ שֶׁל יְצִירַת רַעֲיוֹן וְשִׂרְטוּטִים לַבַּיִת לִפְנֵי שֶׁמַּתְחִילִים לִבְנוֹת.",
             definitionNative = "Создание идеи и чертежей здания — до того, как начали стройку.",
@@ -586,7 +586,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "תִּכְנוּן אַדְרִיכָלִי заняло целых полгода.", fillInBlankExclusions = listOf(130703L, 130704L, 130705L, 130714L, 130721L, 130722L, 130724L)),
 
         WordEntity(id = 130724, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_planning_pro", transliteration = "optimizatsyat mivne",
+            pos = "phrase", semanticGroup = "construction_planning_pro",
             original = "אוֹפְטִימִיזַצְיַת מִבְנֶה", translation = "оптимизация конструкции",
             definition = "שִׁפּוּר הַתָּכְנִית כְּדֵי לְהוֹצִיא פָּחוֹת חֳמָרִים בְּלִי לְוַתֵּר עַל חֹזֶק.",
             definitionNative = "Доработка плана — расходовать меньше материалов без потери прочности.",
@@ -595,7 +595,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_thermal_acoustic (5) — энергоэффективность и комфорт ──
         WordEntity(id = 130710, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_thermal_acoustic", transliteration = "ye'ilut energetit",
+            pos = "phrase", semanticGroup = "construction_thermal_acoustic",
             original = "יְעִילוּת אֶנֶרְגֶטִית", translation = "энергоэффективность",
             definition = "יְכוֹלֶת הַבַּיִת לִשְׁמֹר חֹם אוֹ קֹר וְלִצְרֹךְ פָּחוֹת חַשְׁמַל.",
             definitionNative = "Способность дома удерживать тепло или прохладу — экономит ток.",
@@ -603,7 +603,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Новые окна сильно подняли יְעִילוּת אֶנֶרְגֶטִית.", fillInBlankExclusions = listOf(130711L, 130712L, 130716L, 130717L)),
 
         WordEntity(id = 130711, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_thermal_acoustic", transliteration = "bayit pasivi",
+            pos = "phrase", semanticGroup = "construction_thermal_acoustic",
             original = "בַּיִת פַּסִיבִי", translation = "пассивный дом",
             definition = "מִבְנֶה שֶׁכִּמְעַט אֵינוֹ צָרִיךְ חִמּוּם אוֹ מִיזּוּג בִּזְכוּת תִּכְנוּן חָכָם.",
             definitionNative = "Здание, почти не нуждающееся в обогреве — благодаря умному проекту.",
@@ -611,7 +611,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "בַּיִת פַּסִיבִי экономит кучу денег и зимой, и летом.", fillInBlankExclusions = listOf(130710L, 130712L, 130716L, 130717L, 130724L)),
 
         WordEntity(id = 130712, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_thermal_acoustic", transliteration = "akustika mivne",
+            pos = "phrase", semanticGroup = "construction_thermal_acoustic",
             original = "אַקוּסְטִיקַת מִבְנֶה", translation = "акустика здания",
             definition = "תְּחוּם שֶׁעוֹסֵק בִּזְרִימַת קוֹלוֹת בְּתוֹךְ הַבַּיִת וּבֵין דִּירוֹת.",
             definitionNative = "Раздел, изучающий ход звуков внутри дома и между квартирами.",
@@ -619,7 +619,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Инженер проверил אַקוּסְטִיקַת מִבְנֶה до заселения.", fillInBlankExclusions = listOf(130702L, 130707L, 130710L, 130711L, 130716L, 130717L)),
 
         WordEntity(id = 130716, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_thermal_acoustic", transliteration = "khazit me'uvveret",
+            pos = "phrase", semanticGroup = "construction_thermal_acoustic",
             original = "חֲזִית מְאֻוְורֶרֶת", translation = "вентилируемый фасад / вентфасад",
             definition = "חֲזִית עִם רֶוַח אֲוִיר בֵּין הַחִפּוּי לַקִּיר — מְקָרֶרֶת בַּקַּיִץ.",
             definitionNative = "Фасад с воздушным зазором между облицовкой и стеной — освежает летом.",
@@ -627,7 +627,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "חֲזִית מְאֻוְורֶרֶת снижает счёт за свет вдвое.", fillInBlankExclusions = listOf(130710L, 130711L, 130712L, 130717L)),
 
         WordEntity(id = 130717, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_thermal_acoustic", transliteration = "gesher termi",
+            pos = "phrase", semanticGroup = "construction_thermal_acoustic",
             original = "גֶּשֶׁר תֶּרְמִי", translation = "тепловой мост",
             definition = "מָקוֹם בַּקִּיר שֶׁבּוֹ הַחֹם בּוֹרֵחַ הַחוּצָה מַהֵר מִדַּי.",
             definitionNative = "Место в стене, где тепло слишком быстро уходит наружу.",
@@ -636,7 +636,7 @@ object WordDataHebrewBatch54 {
 
         // ── construction_legal_finance (5) — экспертиза, надзор, деньги ──
         WordEntity(id = 130713, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_legal_finance", transliteration = "khavvat da'at mehandes",
+            pos = "phrase", semanticGroup = "construction_legal_finance",
             original = "חֲוָוַת דַּעַת מְהַנְדֵּס", translation = "экспертиза проекта / инженерное заключение",
             definition = "מִסְמָךְ רִשְׁמִי שֶׁבּוֹ אִישׁ מִקְצוֹעַ אוֹמֵר אִם הַתָּכְנִית בְּטוּחָה וּתְקֵנָה.",
             definitionNative = "Официальный документ — специалист пишет, безопасен ли проект.",
@@ -644,7 +644,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Без חֲוָוַת דַּעַת מְהַנְדֵּס разрешения не дадут.", fillInBlankExclusions = listOf(130714L, 130718L, 130719L, 130720L)),
 
         WordEntity(id = 130714, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_legal_finance", transliteration = "pikuakh tekhni",
+            pos = "phrase", semanticGroup = "construction_legal_finance",
             original = "פִּקּוּחַ טֶכְנִי", translation = "технический надзор",
             definition = "מַעֲקָב מִקְצוֹעִי שׁוֹטֵף שֶׁל מְהַנְדֵּס עַל הָעֲבוֹדָה בָּאֲתָר.",
             definitionNative = "Постоянное профессиональное наблюдение инженера за работой на стройке.",
@@ -652,7 +652,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "פִּקּוּחַ טֶכְנִי заметил маленькую трещину в стене.", fillInBlankExclusions = listOf(130713L, 130719L, 130720L, 130722L)),
 
         WordEntity(id = 130718, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "construction_legal_finance", transliteration = "omdan",
+            pos = "noun", semanticGroup = "construction_legal_finance",
             original = "אוֹמֶדֶן", translation = "смета / предварительная стоимостная оценка",
             definition = "חִשּׁוּב מֻקְדָּם שֶׁל מְחִיר הַחֳמָרִים וְהָעֲבוֹדָה לִפְנֵי תְּחִלַּת הַפְּרוֹיֶקְט.",
             definitionNative = "Прикидка цены материалов и работ — до начала проекта.",
@@ -660,7 +660,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "אוֹמֶדֶן вырос почти на двадцать процентов."),
 
         WordEntity(id = 130719, setId = 1307, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "construction_legal_finance", transliteration = "ne'emanut kesafim",
+            pos = "phrase", semanticGroup = "construction_legal_finance",
             original = "נֶאֱמָנוּת כְּסָפִים", translation = "эскроу / счёт условного депонирования",
             definition = "חֶשְׁבּוֹן מְיוּחָד שֶׁבּוֹ שׁוֹמְרִים אֶת הַתַּשְׁלוּם עַד גְּמַר הָעֲבוֹדָה.",
             definitionNative = "Особый счёт — деньги лежат там до полного завершения работ.",
@@ -668,7 +668,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Платёж положили на נֶאֱמָנוּת כְּסָפִים в банке.", fillInBlankExclusions = listOf(130713L, 130714L, 130720L)),
 
         WordEntity(id = 130720, setId = 1307, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "construction_legal_finance", transliteration = "khatimat mehandes",
+            pos = "phrase", semanticGroup = "construction_legal_finance",
             original = "חֲתִימַת מְהַנְדֵּס", translation = "подпись инженера / инженерное утверждение",
             definition = "סִימוּן רִשְׁמִי שֶׁל מְהַנְדֵּס עַל הַתָּכְנִית — בְּלִי זֶה אֵין אִשּׁוּר.",
             definitionNative = "Личный знак инженера на чертеже — без него утверждения не будет.",
@@ -678,79 +678,79 @@ object WordDataHebrewBatch54 {
         // ── Set 1308: Строительство: профессиональный (level=4, EPIC+LEGENDARY) ────────────
 
         WordEntity(id = 130801, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "תִּיעוּד תִּכְנוּן עִירוֹנִי", transliteration = "ti'ud tikhnun ironi", translation = "градостроительная документация"),
+            original = "תִּיעוּד תִּכְנוּן עִירוֹנִי", translation = "градостроительная документация"),
 
         WordEntity(id = 130802, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "אִיזוּר שֶׁטַח", transliteration = "izur shétakh", translation = "зонирование территории"),
+            original = "אִיזוּר שֶׁטַח", translation = "зонирование территории"),
 
         WordEntity(id = 130803, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "עִירוֹנִיּוּת", transliteration = "ironiyut", translation = "урбанистика / градостроительство"),
+            original = "עִירוֹנִיּוּת", translation = "урбанистика / градостроительство"),
 
         WordEntity(id = 130804, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "שִׁקּוּם מִבְנֵי מוֹרֶשֶׁת", transliteration = "shikum mivnei moreshet", translation = "реконструкция объектов культурного наследия"),
+            original = "שִׁקּוּם מִבְנֵי מוֹרֶשֶׁת", translation = "реконструкция объектов культурного наследия"),
 
         WordEntity(id = 130805, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מִיקְרוֹ-אִיזוּר סֵיסְמִי", transliteration = "mikro-izur seysmi", translation = "сейсмическое микрорайонирование"),
+            original = "מִיקְרוֹ-אִיזוּר סֵיסְמִי", translation = "сейсмическое микрорайонирование"),
 
         WordEntity(id = 130806, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "בְּנִיָּה בַּת-קַיְּמָא", transliteration = "bniya bat-kayama", translation = "устойчивое строительство"),
+            original = "בְּנִיָּה בַּת-קַיְּמָא", translation = "устойчивое строительство"),
 
         WordEntity(id = 130807, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תְּעוּדַת LEED", transliteration = "te'udat LEED", translation = "LEED-сертификация"),
+            original = "תְּעוּדַת LEED", translation = "LEED-сертификация"),
 
         WordEntity(id = 130808, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "תִּכְנוּן מְשׁוּלָּב", transliteration = "tikhnun meshulav", translation = "интегрированное проектирование"),
+            original = "תִּכְנוּן מְשׁוּלָּב", translation = "интегрированное проектирование"),
 
         WordEntity(id = 130809, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מַחְזוֹר חַיִּים שֶׁל מִבְנֶה", transliteration = "makhzor khayim shel mivne", translation = "жизненный цикл здания"),
+            original = "מַחְזוֹר חַיִּים שֶׁל מִבְנֶה", translation = "жизненный цикл здания"),
 
         WordEntity(id = 130810, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "כְּדָאִיּוּת כַּלְכָּלִית-טֶכְנִית", transliteration = "kdaiyut kalkalit-tekhniit", translation = "технико-экономическое обоснование"),
+            original = "כְּדָאִיּוּת כַּלְכָּלִית-טֶכְנִית", translation = "технико-экономическое обоснование"),
 
         WordEntity(id = 130811, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "תִּכְנוּן מֶרְחָבִי", transliteration = "tikhnun merkhavi", translation = "пространственное планирование"),
+            original = "תִּכְנוּן מֶרְחָבִי", translation = "пространственное планирование"),
 
         WordEntity(id = 130812, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תַּשְׁתִּית קְרִיטִית", transliteration = "tashtit kritit", translation = "критическая инфраструктура"),
+            original = "תַּשְׁתִּית קְרִיטִית", translation = "критическая инфраструктура"),
 
         WordEntity(id = 130813, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "תַּמְרִיץ בְּנִיָּה", transliteration = "tamritz bniya", translation = "строительный стимул / льгота при строительстве"),
+            original = "תַּמְרִיץ בְּנִיָּה", translation = "строительный стимул / льгота при строительстве"),
 
         WordEntity(id = 130814, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "פַּרְצֶלַּצְיָה", transliteration = "partsellatsya", translation = "парцелляция / разбивка на участки"),
+            original = "פַּרְצֶלַּצְיָה", translation = "парцелляция / разбивка на участки"),
 
         WordEntity(id = 130815, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "שִׁנּוּי יַעֲדוּ קַרְקַע", transliteration = "shinuy ya'ado karka", translation = "изменение целевого назначения земли"),
+            original = "שִׁנּוּי יַעֲדוּ קַרְקַע", translation = "изменение целевого назначения земли"),
 
         WordEntity(id = 130816, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מַעֲרֶכֶת גֵּאוֹגְרָפִית מֵידָע", transliteration = "ma'arekhet ge'ografit meida", translation = "геоинформационная система / ГИС"),
+            original = "מַעֲרֶכֶת גֵּאוֹגְרָפִית מֵידָע", translation = "геоинформационная система / ГИС"),
 
         WordEntity(id = 130817, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "נְדִידַת אֲדָמוֹת", transliteration = "ndidat adamot", translation = "оползень / смещение грунта"),
+            original = "נְדִידַת אֲדָמוֹת", translation = "оползень / смещение грунта"),
 
         WordEntity(id = 130818, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "הֶסְדֵּר שְׁכוּנָתִי", transliteration = "hesder shekhunatit", translation = "квартальная планировка / соглашение о застройке квартала"),
+            original = "הֶסְדֵּר שְׁכוּנָתִי", translation = "квартальная планировка / соглашение о застройке квартала"),
 
         WordEntity(id = 130819, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "עֹמֶס תִּכְנוּן", transliteration = "omes tikhnun", translation = "проектная нагрузка"),
+            original = "עֹמֶס תִּכְנוּן", translation = "проектная нагрузка"),
 
         WordEntity(id = 130820, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "מֶטָּא-תִּכְנוּן", transliteration = "meta-tikhnun", translation = "мета-проектирование"),
+            original = "מֶטָּא-תִּכְנוּן", translation = "мета-проектирование"),
 
         WordEntity(id = 130821, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "תִּשְׁתִּית נְסִיּוֹנִית", transliteration = "tashtit nisyonit", translation = "экспериментальная инфраструктура"),
+            original = "תִּשְׁתִּית נְסִיּוֹנִית", translation = "экспериментальная инфраструктура"),
 
         WordEntity(id = 130822, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "רֶגוּלָצְיַת עֲנַף הַבִּנְיָן", transliteration = "regulatsyat anaf habinyan", translation = "регулирование строительной отрасли"),
+            original = "רֶגוּלָצְיַת עֲנַף הַבִּנְיָן", translation = "регулирование строительной отрасли"),
 
         WordEntity(id = 130823, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "אֶסְתֵּטִיקַת הַמֶּרְחָב הָעִירוֹנִי", transliteration = "estetika hamérkhav ha'ironi", translation = "эстетика городского пространства"),
+            original = "אֶסְתֵּטִיקַת הַמֶּרְחָב הָעִירוֹנִי", translation = "эстетика городского пространства"),
 
         WordEntity(id = 130824, setId = 1308, languagePair = "he-ru", rarity = "EPIC",
-            original = "שִׁתּוּף צִבּוּרִי בְּתִכְנוּן", transliteration = "shituf tzibburi betikhnun", translation = "общественное участие в планировании"),
+            original = "שִׁתּוּף צִבּוּרִי בְּתִכְנוּן", translation = "общественное участие в планировании"),
 
         WordEntity(id = 130825, setId = 1308, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "תֶּוֶר פְּרִיסַת בְּנִיָּה", transliteration = "tever prisat bniya", translation = "схема распределения застройки"),
+            original = "תֶּוֶר פְּרִיסַת בְּנִיָּה", translation = "схема распределения застройки"),
 
         // ══════════════════════════════════════════════════════════════════════
         // Set 1309 — Строительство: носитель языка (LEGENDARY, C2+)
@@ -759,7 +759,7 @@ object WordDataHebrewBatch54 {
 
         // ── architecture_theory (5) — теория и направления ──
         WordEntity(id = 130901, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_theory", transliteration = "fenomenologya adrikhalit",
+            pos = "phrase", semanticGroup = "architecture_theory",
             original = "פֶנוֹמֶנוֹלוֹגְיָה אַדְרִיכָלִית", translation = "архитектурная феноменология",
             definition = "גִּישָׁה שֶׁבּוֹחֶנֶת אֵיךְ הָאָדָם חָש בִּפְנִים מָקוֹם — אוֹר, חֹם, רֵיחַ.",
             definitionNative = "Подход, изучающий, как человек чувствует себя внутри места — свет, тепло, запах.",
@@ -767,7 +767,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "פֶנוֹמֶנוֹלוֹגְיָה אַדְרִיכָלִית ставит чувства выше геометрии.", fillInBlankExclusions = listOf(130903L, 130904L, 130908L, 130910L, 130914L, 130920L)),
 
         WordEntity(id = 130904, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_theory", transliteration = "dekonstruktivizm adrikali",
+            pos = "phrase", semanticGroup = "architecture_theory",
             original = "דֶּקוֹנְסְטְרוּקְטִיבִיזְם אַדְרִיכָלִי", translation = "деконструктивизм в архитектуре",
             definition = "זֶרֶם שֶׁבּוֹ הַמִּבְנֶה נִרְאֶה שָׁבוּר, נָטוּי וּבְלִי גְּבוּלוֹת בְּרוּרִים.",
             definitionNative = "Направление, где здание выглядит ломаным, кривым и без чётких границ.",
@@ -775,7 +775,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Музей — классический пример דֶּקוֹנְסְטְרוּקְטִיבִיזְם אַדְרִיכָלִי.", fillInBlankExclusions = listOf(130901L, 130906L, 130910L, 130914L, 130920L, 130921L)),
 
         WordEntity(id = 130910, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_theory", transliteration = "si'akh adrikali",
+            pos = "phrase", semanticGroup = "architecture_theory",
             original = "שִׂיחַ אַדְרִיכָלִי", translation = "архитектурный дискурс",
             definition = "מַעֲרֶכֶת שֶׁל מֻשָּׂגִים וְוִכּוּחִים שֶׁבָּהֶם עוֹסְקִים מְעַצְּבֵי בָּתִּים בְּעוֹלָם.",
             definitionNative = "Совокупность понятий и споров, которыми живут проектировщики зданий.",
@@ -783,7 +783,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Эта статья сформировала שִׂיחַ אַדְרִיכָלִי на десятилетия."),
 
         WordEntity(id = 130914, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_theory", transliteration = "tipologya adrikhalit",
+            pos = "phrase", semanticGroup = "architecture_theory",
             original = "טִפּוֹלוֹגְיָה אַדְרִיכָלִית", translation = "архитектурная типология",
             definition = "מִיוּן שֶׁל בָּתִּים לִקְבוּצוֹת לְפִי תַּפְקִיד אוֹ צוּרָה דּוֹמֶה.",
             definitionNative = "Сортировка зданий по группам — по функции или похожей форме.",
@@ -791,7 +791,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Учёный занимался טִפּוֹלוֹגְיָה אַדְרִיכָלִית синагог."),
 
         WordEntity(id = 130920, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_theory", transliteration = "adrikhalut kritit",
+            pos = "phrase", semanticGroup = "architecture_theory",
             original = "אַדְרִיכָלוּת קְרִיטִית", translation = "критическая архитектура",
             definition = "גִּישָׁה שֶׁשּׁוֹאֶלֶת שְׁאֵלוֹת קָשׁוֹת עַל כֹּחַ, חֶבְרָה וְעוֹשֶׁר בְּתוֹךְ הַבִּנְיָן.",
             definitionNative = "Подход, задающий неудобные вопросы о власти, обществе и богатстве в здании.",
@@ -800,7 +800,7 @@ object WordDataHebrewBatch54 {
 
         // ── architecture_space_phenomenology (5) — пространство и место ──
         WordEntity(id = 130903, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_space_phenomenology", transliteration = "sotsyologya merkhavit",
+            pos = "phrase", semanticGroup = "architecture_space_phenomenology",
             original = "סוֹצְיוֹלוֹגְיָה מֶרְחָבִית", translation = "пространственная социология",
             definition = "תְּחוּם שֶׁבּוֹחֵן אֵיךְ צוּרַת הָעִיר מְעַצֶּבֶת קְבוּצוֹת אֲנָשִׁים בְּתוֹכָהּ.",
             definitionNative = "Раздел, изучающий, как форма города лепит группы людей внутри него.",
@@ -808,7 +808,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "סוֹצְיוֹלוֹגְיָה מֶרְחָבִית объясняет, почему районы расслаиваются.", fillInBlankExclusions = listOf(130901L, 130907L, 130908L, 130911L, 130917L)),
 
         WordEntity(id = 130907, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_space_phenomenology", transliteration = "topografya khevratit",
+            pos = "phrase", semanticGroup = "architecture_space_phenomenology",
             original = "טוֹפּוֹגְרָפְיָה חֶבְרָתִית", translation = "социальная топография",
             definition = "מַפָּה שֶׁל יְחָסִים בֵּין קְבוּצוֹת בָּעִיר — מִי גָּר לְיַד מִי וְלָמָּה.",
             definitionNative = "Карта связей между группами в городе — кто живёт рядом с кем и почему.",
@@ -816,7 +816,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Диссертация изучала טוֹפּוֹגְרָפְיָה חֶבְרָתִית Яффо."),
 
         WordEntity(id = 130908, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_space_phenomenology", transliteration = "fenomenologya shel hammerkhav",
+            pos = "phrase", semanticGroup = "architecture_space_phenomenology",
             original = "פֶּנוֹמֶנוֹלוֹגְיָה שֶׁל הַמֶּרְחָב", translation = "феноменология пространства",
             definition = "חֵקֶר אֵיךְ אֲנָשִׁים חָוִים בְּגוּפָם פִּנּוֹת, גְּבָהִים וּמַעֲבָרִים סְבִיבָם.",
             definitionNative = "Изучение того, как люди телесно переживают углы, высоты и проходы вокруг.",
@@ -824,7 +824,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Книга подала פֶּנוֹמֶנוֹלוֹגְיָה שֶׁל הַמֶּרְחָב как новый подход.", fillInBlankExclusions = listOf(130903L, 130907L, 130911L, 130917L)),
 
         WordEntity(id = 130911, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_space_phenomenology", transliteration = "teoriyat hamerkhav",
+            pos = "phrase", semanticGroup = "architecture_space_phenomenology",
             original = "תֵּאוֹרְיַת הַמֶּרְחָב", translation = "теория пространства",
             definition = "תַּחוּם שֶׁמְּסַבֵּר מַה כְּלָל מָקוֹם וְאֵיךְ הוּא מִשְׁתַּלֵּב בַּחַיִּים שֶׁלָּנוּ.",
             definitionNative = "Раздел, объясняющий, что вообще такое место и как оно вплетается в жизнь.",
@@ -832,7 +832,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Лектор начал занятие с определения תֵּאוֹרְיַת הַמֶּרְחָב.", fillInBlankExclusions = listOf(130903L, 130907L, 130908L, 130917L)),
 
         WordEntity(id = 130917, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_space_phenomenology", transliteration = "hashpa'at hamakom",
+            pos = "phrase", semanticGroup = "architecture_space_phenomenology",
             original = "הַשְׁפָּעַת הַמָּקוֹם", translation = "genius loci / дух места",
             definition = "אוֹתָהּ הַרְגָּשָׁה מְיֻחֶדֶת שֶׁל פִּנָּה אַחַת שֶׁאִי-אֶפְשָׁר לְהַעְתִּיק לְשׁוּם מָקוֹם.",
             definitionNative = "То особое чувство одного уголка, которое нельзя унести с собой никуда.",
@@ -841,7 +841,7 @@ object WordDataHebrewBatch54 {
 
         // ── architecture_urbanism (5) — город как система ──
         WordEntity(id = 130902, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_urbanism", transliteration = "ir post-ta'asiyatit",
+            pos = "phrase", semanticGroup = "architecture_urbanism",
             original = "עִיר פּוֹסְט-תַּעֲשִׂיָּתִית", translation = "постиндустриальный город",
             definition = "מָקוֹם שֶׁבּוֹ הַמַּפְעָלִים נִסְגְּרוּ וְהַתֻּשָּׁבִים עוֹבְדִים עַל מַחְשֵׁב.",
             definitionNative = "Место, где заводы закрылись, а жители работают за компьютером.",
@@ -849,7 +849,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Манчестер — известный пример עִיר פּוֹסְט-תַּעֲשִׂיָּתִית.", fillInBlankExclusions = listOf(130905L, 130906L, 130913L, 130921L)),
 
         WordEntity(id = 130905, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_urbanism", transliteration = "ir khakhama",
+            pos = "phrase", semanticGroup = "architecture_urbanism",
             original = "עִיר חֲכָמָה", translation = "умный город",
             definition = "מָקוֹם שֶׁבּוֹ חַיִּישָׁנִים וּמַחְשְׁבִים עוֹזְרִים לְנַהֵל תַּחְבּוּרָה וֶאֱנֶרְגְיָה.",
             definitionNative = "Место, где датчики и компьютеры помогают управлять транспортом и энергией.",
@@ -857,7 +857,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Тель-Авив стремится стать настоящей עִיר חֲכָמָה.", fillInBlankExclusions = listOf(130902L, 130906L, 130913L, 130921L)),
 
         WordEntity(id = 130906, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_urbanism", transliteration = "urbanism khadash",
+            pos = "phrase", semanticGroup = "architecture_urbanism",
             original = "אוּרְבָּנִיזְם חָדָשׁ", translation = "новый урбанизм",
             definition = "תְּנוּעָה שֶׁמַּחֲזִירָה רְחוֹבוֹת קְצָרִים וּמְגוּוָנִים בִּמְקוֹם פְּרַבָּרִים אֲרֻכִּים.",
             definitionNative = "Движение возвращает короткие пёстрые улицы вместо длинных пригородов.",
@@ -865,7 +865,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Новый микрорайон спроектирован по принципам אוּרְבָּנִיזְם חָדָשׁ."),
 
         WordEntity(id = 130913, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_urbanism", transliteration = "genosagregatsya ironit",
+            pos = "phrase", semanticGroup = "architecture_urbanism",
             original = "גֵּנוֹסַגְרֵגַצְיָה עִירוֹנִית", translation = "городская сегрегация",
             definition = "מַצָּב שֶׁבּוֹ קְבוּצוֹת שׁוֹנוֹת חַיּוֹת בְּשׁוֹנֵה אֵזוֹר וְלֹא מִתְעָרְבוֹת.",
             definitionNative = "Когда разные группы живут в разных районах и почти не пересекаются.",
@@ -873,7 +873,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Власти пытались сократить גֵּנוֹסַגְרֵגַצְיָה עִירוֹנִית.", fillInBlankExclusions = listOf(130902L, 130905L, 130906L, 130921L)),
 
         WordEntity(id = 130921, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_urbanism", transliteration = "markam ironi",
+            pos = "phrase", semanticGroup = "architecture_urbanism",
             original = "מַרְקָם עִירוֹנִי", translation = "городская ткань / городская среда",
             definition = "הַמַּעֲשֶׂה שֶׁל רְחוֹבוֹת, חֲצֵרוֹת וּבָתִּים שֶׁמְּחַבֵּר הַכֹּל לְמִכְלוֹל אֶחָד.",
             definitionNative = "Сплетение улиц, дворов и домов, которое связывает всё в единое целое.",
@@ -882,7 +882,7 @@ object WordDataHebrewBatch54 {
 
         // ── architecture_practice_concepts (5) — практики проектирования ──
         WordEntity(id = 130915, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_practice_concepts", transliteration = "merkhav tzibburi",
+            pos = "phrase", semanticGroup = "architecture_practice_concepts",
             original = "מֶרְחָב צִבּוּרִי", translation = "общественное пространство",
             definition = "אֵזוֹר חוּצוֹת פָּתוּחַ שֶׁכָּל אֶחָד יָכוֹל לִשְׁבֹּת אוֹ לִפְגֹּשׁ אֲנָשִׁים בּוֹ.",
             definitionNative = "Открытая зона снаружи, куда любой может зайти отдохнуть или встретиться.",
@@ -890,7 +890,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Мэрия выделила бюджет на улучшение מֶרְחָב צִבּוּרִי."),
 
         WordEntity(id = 130916, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_practice_concepts", transliteration = "programa adrikhalit",
+            pos = "phrase", semanticGroup = "architecture_practice_concepts",
             original = "פְּרוֹגְרַמָּה אַדְרִיכָלִית", translation = "архитектурная программа / архитектурное задание",
             definition = "מִסְמָךְ שֶׁמַּגְדִּיר אֵיזֶה חֲדָרִים וּפֻנְקְצִיּוֹת צְרִיכִים לִהְיוֹת בַּבַּיִת.",
             definitionNative = "Документ — какие комнаты и функции должны быть в будущем здании.",
@@ -898,7 +898,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Архитектор получил פְּרוֹגְרַמָּה אַדְרִיכָלִית от заказчика.", fillInBlankExclusions = listOf(130915L, 130918L, 130919L, 130922L)),
 
         WordEntity(id = 130918, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_practice_concepts", transliteration = "eruv shimushim",
+            pos = "phrase", semanticGroup = "architecture_practice_concepts",
             original = "עִירוּב שְׁימוּשִׁים", translation = "смешанное землепользование",
             definition = "כְּשֶׁבְּאוֹתוֹ בִּנְיָן יֵשׁ דִּירוֹת, חֲנֻיּוֹת וּמִשְׂרָדִים יַחַד.",
             definitionNative = "Когда в одном здании соседствуют квартиры, лавки и офисы.",
@@ -906,7 +906,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Новый проект предлагает עִירוּב שְׁימוּשִׁים на каждом этаже.", fillInBlankExclusions = listOf(130915L, 130916L, 130919L, 130922L)),
 
         WordEntity(id = 130919, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_practice_concepts", transliteration = "itzuv beshituf",
+            pos = "phrase", semanticGroup = "architecture_practice_concepts",
             original = "עִיצּוּב בְּשִׂיתּוּף", translation = "соучаствующее проектирование / совместный дизайн",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ הַתֻּשָּׁבִים עַצְמָם בּוֹחֲרִים אֵיךְ יִרְאֶה הַמָּקוֹם שֶׁלָּהֶם.",
             definitionNative = "Процесс, где сами жители решают, как будет выглядеть их район.",
@@ -914,7 +914,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Новый сквер появился благодаря עִיצּוּב בְּשִׂיתּוּף.", fillInBlankExclusions = listOf(130915L, 130916L, 130918L, 130922L)),
 
         WordEntity(id = 130922, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_practice_concepts", transliteration = "zihui makom",
+            pos = "phrase", semanticGroup = "architecture_practice_concepts",
             original = "זִהוּי מָקוֹם", translation = "идентичность места / место-идентичность",
             definition = "הַסִּפּוּר הַיִּחוּדִי שֶׁל פִּנָּה — שֶׁל הַתֻּשָּׁבִים, הַהִיסְטוֹרְיָה וְהַסְּגָנוֹן.",
             definitionNative = "Уникальная история уголка — его жителей, прошлого и стиля.",
@@ -923,7 +923,7 @@ object WordDataHebrewBatch54 {
 
         // ── architecture_sustainability (5) — устойчивое строительство ──
         WordEntity(id = 130909, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_sustainability", transliteration = "arkhitektura biofilit",
+            pos = "phrase", semanticGroup = "architecture_sustainability",
             original = "אַרְכִיטֶקְטוּרָה בִּיוֹפִילִית", translation = "биофильная архитектура",
             definition = "גִּישָׁה שֶׁמַּכְנִיסָה צְמָחִים, מַיִם וְאוֹר טִבְעִי לְתוֹךְ הַבִּנְיָן.",
             definitionNative = "Подход, вводящий растения, воду и солнечный свет внутрь здания.",
@@ -931,7 +931,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "אַרְכִיטֶקְטוּרָה בִּיוֹפִילִית снижает стресс у офисных сотрудников.", fillInBlankExclusions = listOf(130912L, 130920L, 130923L, 130924L, 130925L)),
 
         WordEntity(id = 130912, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_sustainability", transliteration = "binyan bar-kayama",
+            pos = "phrase", semanticGroup = "architecture_sustainability",
             original = "בִּנְיָן בְּר-קַיְּמָא", translation = "устойчивое здание / зелёное строительство",
             definition = "בַּיִת שֶׁצּוֹרֵךְ מְעַט מַיִם וְחַשְׁמַל וְלֹא פּוֹגֵעַ בַּסְּבִיבָה.",
             definitionNative = "Дом, который мало тратит воды и тока и почти не вредит природе.",
@@ -939,7 +939,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Новый офис — настоящее בִּנְיָן בְּר-קַיְּמָא во всех смыслах.", fillInBlankExclusions = listOf(130909L, 130923L, 130924L, 130925L)),
 
         WordEntity(id = 130923, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_sustainability", transliteration = "retrofit energeti",
+            pos = "phrase", semanticGroup = "architecture_sustainability",
             original = "רֶטְרוֹפִיט אֶנֶרְגֶטִי", translation = "энергетический ретрофит / глубокая энергомодернизация",
             definition = "שִׁפּוּץ עָמֹק שֶׁל בַּיִת יָשָׁן כְּדֵי שֶׁיַּהֲפֹךְ לִיעִיל בְּחַשְׁמַל וּבְחֹם.",
             definitionNative = "Глубокий ремонт старого дома — чтобы тот стал экономным по теплу и току.",
@@ -947,7 +947,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Здание прошло полный רֶטְרוֹפִיט אֶנֶרְגֶטִי в прошлом году.", fillInBlankExclusions = listOf(130909L, 130912L, 130924L, 130925L)),
 
         WordEntity(id = 130924, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_sustainability", transliteration = "kalkala me'agalit bebinyan",
+            pos = "phrase", semanticGroup = "architecture_sustainability",
             original = "כַּלְכָּלָה מֵעְגָּלִית בְּבִנְיָן", translation = "циркулярная экономика в строительстве",
             definition = "גִּישָׁה שֶׁבָּהּ חֳמָרֵי בְּנִיָּה יְשָׁנִים חוֹזְרִים לִשְׁמּוּשׁ בְּמָקוֹם לַזֶּבֶל.",
             definitionNative = "Подход, при котором старые материалы идут в дело, а не на свалку.",
@@ -955,7 +955,7 @@ object WordDataHebrewBatch54 {
             exampleNative = "Новая фирма работает по כַּלְכָּלָה מֵעְגָּלִית בְּבִנְיָן."),
 
         WordEntity(id = 130925, setId = 1309, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "architecture_sustainability", transliteration = "metabolism ironi",
+            pos = "phrase", semanticGroup = "architecture_sustainability",
             original = "מֶטָּבּוֹלִיזְם עִירוֹנִי", translation = "городской метаболизм",
             definition = "מַבָּט עַל הָעִיר כְּעַל גּוּף חַי שֶׁאוֹכֵל אֶנֶרְגְיָה וּמוֹצִיא פְּסֹלֶת.",
             definitionNative = "Взгляд на город как на живой организм — он ест энергию и выделяет отходы.",

@@ -48,7 +48,6 @@ TESTS=(
   "validate_no_mixed_script_in_words $BAD_EN"
   "validate_fillinblank_exclusions_fresh $BAD_EN"
   # ── Hebrew-specific (need he-ru fixture) ───────────────────────────────────
-  "validate_hebrew_transliteration_format $BAD_HE"
   "validate_blank_ambiguity_hebrew $BAD_HE"
   "validate_no_foreign_script_in_original $BAD_HE"
   # ── Monotone-examples (needs ≥10 examples with same prefix) ────────────────

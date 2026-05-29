@@ -59,7 +59,7 @@ object WordDataHebrewQaL5 {
         // ── qa_leadership (5) — управленческие роли в QA ──
         WordEntity(
             id = 177301, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_leadership", transliteration = "reish kyu-ei",
+            pos = "noun", semanticGroup = "qa_leadership",
             original = "רֵישׁ קְיוּ-אֵיי", translation = "head of QA (директор по качеству)",
             definition = "הָאָדָם הַבָּכִיר שֶׁמַּחְלִיט עַל כָּל מְדִינִיּוּת הָאֵיכוּת בַּחֶבְרָה כֻּלָּהּ.",
             definitionNative = "Старший человек, решающий всю политику качества в фирме целиком.",
@@ -68,7 +68,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177302L, 177303L, 177304L, 177305L)),
         WordEntity(
             id = 177302, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_leadership", transliteration = "arkhitekt eikhut",
+            pos = "noun", semanticGroup = "qa_leadership",
             original = "אַרְכִיטֶקְט אֵיכוּת", translation = "QA-архитектор",
             definition = "מֻמְחֶה שֶׁמְעַצֵּב אֶת הַתַּשְׁתִּית הַטֶּכְנִית שֶׁל בְּדִיקוֹת — מִסְגָּרוֹת, כְּלִים, שִׁכְבוֹת.",
             definitionNative = "Эксперт, проектирующий техническую базу проверок — фреймворки, инструменты, слои.",
@@ -77,7 +77,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177301L, 177303L, 177304L, 177305L)),
         WordEntity(
             id = 177303, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_leadership", transliteration = "test lid",
+            pos = "noun", semanticGroup = "qa_leadership",
             original = "טֶסְט לִיד", translation = "test lead (ведущий тестировщик)",
             definition = "מוֹבִיל מִקְצוֹעִי שֶׁל קְבוּצָה קְטַנָּה — מְחַלֵּק מְשִׂימוֹת וּמְלַוֶּה אֶת הַמִּקְצוֹעִיּוּת.",
             definitionNative = "Профессиональный лидер маленькой группы — раздаёт задачи и сопровождает квалификацию.",
@@ -86,7 +86,7 @@ object WordDataHebrewQaL5 {
         ),
         WordEntity(
             id = 177304, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_leadership", transliteration = "printsipl injinir",
+            pos = "noun", semanticGroup = "qa_leadership",
             original = "פְּרִינְסִיפַּל אִינְגִ'ינִיר", translation = "principal engineer (старший инженер)",
             definition = "דַּרְגָּה הַגְּבוֹהָה בְּיוֹתֵר בְּמַסְלוּל הַמִּקְצוֹעִי — הַשְׁפָּעָה רְחָבָה בְּלִי לְנַהֵל אֲנָשִׁים.",
             definitionNative = "Высшая ступень профессионального трека — широкое влияние без управления людьми.",
@@ -95,7 +95,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177301L, 177302L, 177303L, 177305L)),
         WordEntity(
             id = 177305, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_leadership", transliteration = "menahel eikhut",
+            pos = "noun", semanticGroup = "qa_leadership",
             original = "מְנַהֵל אֵיכוּת", translation = "quality manager (менеджер качества)",
             definition = "אַחְרַאי תִּפְעוּלִי עַל לוּחַ זְמַנִּים, תַּקְצִיב וּתְפוּקָה שֶׁל קְבוּצוֹת בְּדִיקָה כַּמָּה.",
             definitionNative = "Операционный ответственный за сроки, бюджет и выработку нескольких тестовых групп.",
@@ -106,7 +106,7 @@ object WordDataHebrewQaL5 {
         // ── qa_strategy (5) — стратегические подходы к качеству ──
         WordEntity(
             id = 177306, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_strategy", transliteration = "astrategyat bdikot",
+            pos = "noun", semanticGroup = "qa_strategy",
             original = "אַסְטְרָטֶגְיַת בְּדִיקוֹת", translation = "тестовая стратегия",
             definition = "מַסְמָךְ בָּכִיר שֶׁמַּגְדִּיר עִקְּרוֹנוֹת כְּלָלִיִּים — לֹא תַּסְרִיטִים פְּרָטָנִיִּים.",
             definitionNative = "Старший документ, задающий общие принципы — не отдельные сценарии.",
@@ -115,7 +115,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177307L, 177308L, 177309L, 177310L)),
         WordEntity(
             id = 177307, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_strategy", transliteration = "gisha mevuseset sikun",
+            pos = "noun", semanticGroup = "qa_strategy",
             original = "גִּישָׁה מְבֻסֶּסֶת סִיכּוּן", translation = "risk-based testing (по уровню риска)",
             definition = "סִדְרוּר עֲדִיפֻיּוֹת לְפִי הַסְּבָרָה לְכִשָּׁלוֹן וְעֹצֶם הַנֶּזֶק לַלָּקוֹחַ.",
             definitionNative = "Расстановка приоритетов по вероятности отказа и масштабу ущерба для клиента.",
@@ -124,7 +124,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177306L, 177308L, 177309L, 177310L)),
         WordEntity(
             id = 177308, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_strategy", transliteration = "test charter",
+            pos = "noun", semanticGroup = "qa_strategy",
             original = "טֶסְט צַ'רְטֶר", translation = "test charter (карта сессии)",
             definition = "טֹפֶס קָצָר שֶׁמַּתְוֶה מַטָּרָה, גְּבוּל זְמַן וְאֵזוֹר חֲקִירָה לְמַפְגָּשׁ יָחִיד.",
             definitionNative = "Короткая бумага — задаёт цель, рамку времени и зону исследования одной сессии.",
@@ -133,7 +133,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177306L, 177307L, 177309L, 177310L)),
         WordEntity(
             id = 177309, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_strategy", transliteration = "missiyat khakira",
+            pos = "noun", semanticGroup = "qa_strategy",
             original = "מִשִּׂימַת חֲקִירָה", translation = "exploratory mission (исследовательское задание)",
             definition = "יַעַד פְּתוּחַ לְמַפְגָּשׁ סַקְרָנוּת — לְלֹא צְעָדִים מֻקְדָּמִים, רַק כִּוּוּן כְּלָלִי.",
             definitionNative = "Открытая цель для любопытной сессии — без заранее заданных шагов, только направление.",
@@ -142,7 +142,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177306L, 177307L, 177308L, 177310L)),
         WordEntity(
             id = 177310, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_strategy", transliteration = "khazon eikhut",
+            pos = "noun", semanticGroup = "qa_strategy",
             original = "חָזוֹן אֵיכוּת", translation = "quality vision (видение качества)",
             definition = "הַצְהָרָה אֲרֻכַּת טֶוַח עַל הַמַּצָּב הָרָצוּי שֶׁל הַמּוּצָר בְּעֵינֵי הַלָּקוֹחַ.",
             definitionNative = "Долгосрочное заявление о желаемом состоянии продукта в глазах клиента.",
@@ -153,7 +153,7 @@ object WordDataHebrewQaL5 {
         // ── qa_culture (5) — культура и развитие людей ──
         WordEntity(
             id = 177311, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_culture", transliteration = "be'alut al eikhut",
+            pos = "noun", semanticGroup = "qa_culture",
             original = "בַּעֲלוּת עַל אֵיכוּת", translation = "quality ownership (личная ответственность за качество)",
             definition = "תְּחוּשָׁה שֶׁכָּל אֶחָד בַּצֶּוֶות, לֹא רַק הַבּוֹדְקִים, אַחְרַאי לְמַה שֶּׁמַּגִּיעַ לַלָּקוֹחַ.",
             definitionNative = "Чувство, что каждый в команде, а не только тестировщики, отвечает за то, что доедет до клиента.",
@@ -162,7 +162,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177312L, 177313L, 177314L, 177315L)),
         WordEntity(
             id = 177312, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_culture", transliteration = "tukhkir lelo ashma",
+            pos = "noun", semanticGroup = "qa_culture",
             original = "תַּחְקִיר לְלֹא אַשְׁמָה", translation = "blameless post-mortem (разбор без обвинений)",
             definition = "פְּגִישָׁה אַחֲרֵי תַּקָּלָה שֶׁמְּחַפֶּשֶׂת סִבָּה מַעֲרַכְתִּית בִּמְקוֹם לְהַצְבִּיעַ עַל אִישׁ.",
             definitionNative = "Встреча после поломки — ищет системную причину вместо того, чтобы тыкать пальцем в человека.",
@@ -171,7 +171,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177311L, 177313L, 177314L, 177315L)),
         WordEntity(
             id = 177313, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_culture", transliteration = "shituf yeda",
+            pos = "noun", semanticGroup = "qa_culture",
             original = "שִׁתּוּף יֶדַע", translation = "knowledge sharing (распространение знаний)",
             definition = "פְּעֻלָּה קְבוּעָה שֶׁל הַעֲבָרַת מַה שֶּׁמִּישֶׁהוּ לָמַד אֶל שְׁאַר הָאַנָשִׁים בְּקִבּוּץ.",
             definitionNative = "Постоянное действие — передача того, чему один научился, всем остальным в коллективе.",
@@ -180,7 +180,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177311L, 177312L, 177314L, 177315L)),
         WordEntity(
             id = 177314, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_culture", transliteration = "tokhnit khanikha",
+            pos = "noun", semanticGroup = "qa_culture",
             original = "תָּכְנִית חֲנִיכָה", translation = "mentoring program (программа наставничества)",
             definition = "מִסְגֶּרֶת מְסֻדֶּרֶת שֶׁבָּהּ אִישׁ בָּכִיר מְלַוֶּה מִתְחִיל לְאֹרֶךְ חֳדָשִׁים.",
             definitionNative = "Упорядоченная рамка, в которой старший сопровождает новичка на протяжении месяцев.",
@@ -189,7 +189,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177311L, 177312L, 177313L, 177315L)),
         WordEntity(
             id = 177315, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_culture", transliteration = "bodek ti-sheipd",
+            pos = "noun", semanticGroup = "qa_culture",
             original = "בּוֹדֵק T-שֵׁייפְּד", translation = "T-shaped tester (универсал с глубокой специализацией)",
             definition = "אִישׁ מִקְצוֹעַ עִם עֹמֶק אֶחָד בּוֹלֵט וְרֹחַב כְּלָלִי שֶׁל יְכֹלוֹת קְרוֹבוֹת.",
             definitionNative = "Спец с одной выраженной глубиной и общей широтой смежных умений.",
@@ -200,7 +200,7 @@ object WordDataHebrewQaL5 {
         // ── qa_metrics (5) — метрики качества для управленцев ──
         WordEntity(
             id = 177316, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_metrics", transliteration = "dlifat tkalot",
+            pos = "noun", semanticGroup = "qa_metrics",
             original = "דְּלִיפַת תַּקָּלוֹת", translation = "defect leakage (утечка дефектов в прод)",
             definition = "כַּמָּה כְּשָׁלִים בָּרְחוּ מֵהַשְּׁלַבִּים הַמֻּקְדָּמִים וְהִגִּיעוּ עַד הַלָּקוֹחַ הַסּוֹפִי.",
             definitionNative = "Сколько провалов сбежало с ранних стадий и доехало до конечного клиента.",
@@ -209,7 +209,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177317L, 177318L, 177319L, 177320L)),
         WordEntity(
             id = 177317, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_metrics", transliteration = "em-ti-ti-ar",
+            pos = "noun", semanticGroup = "qa_metrics",
             original = "אֶמ-טִי-טִי-אַר", translation = "MTTR (среднее время починки)",
             definition = "מִסְפָּר מְמֻצָּע שֶׁל דַּקּוֹת אוֹ שָׁעוֹת מֵרֶגַע גִּלּוּי הַבְּעָיָה וְעַד פִּתְרוֹן מָלֵא.",
             definitionNative = "Среднее число минут или часов от обнаружения проблемы до полного решения.",
@@ -218,7 +218,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177316L, 177318L, 177319L, 177320L)),
         WordEntity(
             id = 177318, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_metrics", transliteration = "yeyilut bdika",
+            pos = "noun", semanticGroup = "qa_metrics",
             original = "יְעִילוּת בְּדִיקָה", translation = "test efficiency (отдача от тестов)",
             definition = "יַחַס בֵּין מִסְפַּר הַתַּקָּלוֹת שֶׁנִּמְצְאוּ לְמִסְפַּר הַשָּׁעוֹת שֶׁהֻשְׁקְעוּ.",
             definitionNative = "Соотношение между числом найденных поломок и количеством вложенных часов.",
@@ -227,7 +227,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177316L, 177317L, 177319L, 177320L)),
         WordEntity(
             id = 177319, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_metrics", transliteration = "akhuz briha",
+            pos = "noun", semanticGroup = "qa_metrics",
             original = "אֲחוּז בְּרִיחָה", translation = "escape rate (доля сбежавших дефектов)",
             definition = "אָחוּז הַתַּקָּלוֹת שֶׁעָבְרוּ אֶת הַסַּף מִבְּלִי שֶׁאַף שָׁלָב הִצְלִיחַ לִתְפֹּס אוֹתָן.",
             definitionNative = "Доля поломок, перешедших порог так, что ни одна стадия их не словила.",
@@ -236,7 +236,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177316L, 177317L, 177318L, 177320L)),
         WordEntity(
             id = 177320, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_metrics", transliteration = "alut ha-eikhut",
+            pos = "noun", semanticGroup = "qa_metrics",
             original = "עֲלוּת הָאֵיכוּת", translation = "COQ (cost of quality, стоимость качества)",
             definition = "סְכוּם כָּל הַהוֹצָאוֹת עַל מְנִיעָה, גִּלּוּי וְתִקּוּן שֶׁל פְּגָמִים בְּמוּצָר.",
             definitionNative = "Сумма всех расходов на предупреждение, обнаружение и починку дефектов в продукте.",
@@ -247,7 +247,7 @@ object WordDataHebrewQaL5 {
         // ── qa_compliance (5) — стандарты, аудит и регуляторные проверки ──
         WordEntity(
             id = 177321, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_compliance", transliteration = "ayso 9001",
+            pos = "noun", semanticGroup = "qa_compliance",
             original = "אַייסוֹ 9001", translation = "ISO 9001 (международный стандарт качества)",
             definition = "תֶּקֶן בֵּינְלְאֻמִּי שֶׁמַּגְדִּיר אֵיךְ צָרִיךְ לְנַהֵל תַּהֲלִיכִים כְּדֵי לְהַבְטִיחַ אֵיכוּת קְבוּעָה.",
             definitionNative = "Международный стандарт — задаёт, как вести процессы ради постоянного качества.",
@@ -256,7 +256,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177322L, 177323L, 177324L, 177325L)),
         WordEntity(
             id = 177322, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_compliance", transliteration = "shvil bikoret",
+            pos = "noun", semanticGroup = "qa_compliance",
             original = "שְׁבִיל בִּקֹּרֶת", translation = "audit trail (след аудита)",
             definition = "רְשׁוּמָה כְּרוֹנוֹלוֹגִית שֶׁל פְּעֻלּוֹת — מִי, מָתַי וּמָה שִׁנָּה בַּמַּעֲרֶכֶת.",
             definitionNative = "Хронологическая запись действий — кто, когда и что менял в системе.",
@@ -265,7 +265,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177321L, 177323L, 177324L, 177325L)),
         WordEntity(
             id = 177323, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_compliance", transliteration = "bdikat regulatzya",
+            pos = "noun", semanticGroup = "qa_compliance",
             original = "בְּדִיקַת רֶגוּלַצְיָה", translation = "regulatory testing (регуляторная проверка)",
             definition = "סְקִירָה רִשְׁמִית שֶׁמְּוַדֵּאת שֶׁמּוּצָר עוֹמֵד בִּדְרִישׁוֹת חוֹק שֶׁל מְדִינָה אוֹ עַנָף.",
             definitionNative = "Официальный обзор — соответствует ли продукт требованиям закона страны или отрасли.",
@@ -274,7 +274,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177321L, 177322L, 177324L, 177325L)),
         WordEntity(
             id = 177324, setId = 1773, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "qa_compliance", transliteration = "protokol imut",
+            pos = "noun", semanticGroup = "qa_compliance",
             original = "פְּרוֹטוֹקוֹל אִמּוּת", translation = "validation protocol (протокол валидации)",
             definition = "מַסְמָךְ פוֹרְמָלִי שֶׁמְּפָרֵט אֵיךְ מוֹכִיחִים שֶׁמַּעֲרֶכֶת עוֹשָׂה בְּדִיוּק מָה שֶׁאָמְרוּ עָלֶיהָ.",
             definitionNative = "Формальный документ — описывает, как доказать, что система делает ровно заявленное.",
@@ -283,7 +283,7 @@ object WordDataHebrewQaL5 {
          fillInBlankExclusions = listOf(177321L, 177322L, 177323L, 177325L)),
         WordEntity(
             id = 177325, setId = 1773, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "qa_compliance", transliteration = "matritsat ekiv",
+            pos = "noun", semanticGroup = "qa_compliance",
             original = "מַטְרִיצַת עֵקִיב", translation = "traceability matrix (матрица прослеживаемости)",
             definition = "טַבְלָה שֶׁמְּקַשֶּׁרֶת כָּל דְּרִישָׁה מֵהַלָּקוֹחַ אֶל בְּדִיקָה מַתְאִימָה שֶׁבּוֹדֶקֶת אוֹתָהּ.",
             definitionNative = "Таблица — связывает каждое требование клиента с конкретной проверкой, что его покрывает.",

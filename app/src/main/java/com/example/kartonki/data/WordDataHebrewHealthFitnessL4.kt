@@ -58,7 +58,7 @@ object WordDataHebrewHealthFitnessL4 {
         // ── health_sports_med (5) — спортивная медицина и травмы ──
         WordEntity(
             id = 179001, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_sports_med", transliteration = "rfuat sport",
+            pos = "phrase", semanticGroup = "health_sports_med",
             original = "רְפוּאַת סְפּוֹרְט", translation = "спортивная медицина",
             definition = "תְּחוּם רְפוּאִי הָעוֹסֵק בִּפְצִיעוֹת אַתְלֵטִים וּבְשִׁיפּוּר בִּטְחוֹן הַגּוּף בָּאִמּוּן.",
             definitionNative = "Раздел медицины — про травмы атлетов и безопасность тела на тренировке.",
@@ -67,7 +67,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179002L, 179003L, 179004L, 179005L)),
         WordEntity(
             id = 179002, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_sports_med", transliteration = "kriat retsua",
+            pos = "phrase", semanticGroup = "health_sports_med",
             original = "קְרִיעַת רְצוּעָה", translation = "разрыв связки",
             definition = "פְּגִיעָה חֲמוּרָה שֶׁבָּהּ הַסִּיב הַמְּחַבֵּר עֶצֶם לְעֶצֶם נִקְרַע לִשְׁנַיִם.",
             definitionNative = "Тяжёлая травма — волокно между двумя костями рвётся пополам.",
@@ -76,7 +76,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179001L, 179003L, 179004L, 179005L)),
         WordEntity(
             id = 179003, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_sports_med", transliteration = "sharvul mesovev",
+            pos = "phrase", semanticGroup = "health_sports_med",
             original = "שַׁרְווּל מְסוֹבֵב", translation = "ротаторная манжета (плеча)",
             definition = "קְבוּצַת אַרְבָּעָה שְׁרִירִים קְטַנִּים שֶׁמְּיַצְּבִים אֶת מִפְרַק הַכָּתֵף.",
             definitionNative = "Группа из четырёх малых мышц, удерживающих плечевой сустав.",
@@ -86,7 +86,7 @@ object WordDataHebrewHealthFitnessL4 {
         ),
         WordEntity(
             id = 179004, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_sports_med", transliteration = "marpek tenisai",
+            pos = "phrase", semanticGroup = "health_sports_med",
             original = "מַרְפֵּק טֶנִיסַאי", translation = "теннисный локоть",
             definition = "כְּאֵב כְּרוֹנִי בַּצַּד הַחִיצוֹנִי שֶׁל הַמַּרְפֵּק מֵעוֹמֶס חוֹזֵר עַל גִּידֵי הַיָּד.",
             definitionNative = "Хроническая боль с внешней стороны локтя от повторной нагрузки на сухожилия.",
@@ -95,7 +95,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179001L, 179002L, 179003L, 179005L)),
         WordEntity(
             id = 179005, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_sports_med", transliteration = "protokol shikum",
+            pos = "phrase", semanticGroup = "health_sports_med",
             original = "פְּרוֹטוֹקוֹל שִׁיקוּם", translation = "протокол реабилитации",
             definition = "תָּכְנִית כְּתוּבָה עִם שְׁלַבִּים וְזְמַנִּים לַחֲזָרָה בִּטּוּחָה לִפְעִילוּת אַחֲרֵי פְּצִיעָה.",
             definitionNative = "Письменный план — этапы и сроки безопасного возврата к нагрузке после травмы.",
@@ -106,7 +106,7 @@ object WordDataHebrewHealthFitnessL4 {
         // ── health_nutrition (5) — нутрициология и режимы питания ──
         WordEntity(
             id = 179006, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_nutrition", transliteration = "madad glikemi",
+            pos = "phrase", semanticGroup = "health_nutrition",
             original = "מַדַּד גְּלִיקֵמִי", translation = "гликемический индекс",
             definition = "מִסְפָּר הַמַּרְאֶה עַד כַּמָּה מָנָה שֶׁל אֹכֶל מַעֲלָה אֶת רָמַת הַסֻּכָּר בַּדָּם.",
             definitionNative = "Число, показывающее, насколько порция еды поднимает сахар в крови.",
@@ -115,7 +115,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179007L, 179008L, 179009L, 179010L)),
         WordEntity(
             id = 179007, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_nutrition", transliteration = "tsom le-serugin",
+            pos = "phrase", semanticGroup = "health_nutrition",
             original = "צוֹם לְסֵרוּגִין", translation = "интервальное голодание",
             definition = "שִׁיטָה שֶׁל אֲכִילָה בְּחַלּוֹן זְמַן צַר וְהִמָּנְעוּת מֵאֹכֶל בִּשְׁאָר הַשָּׁעוֹת.",
             definitionNative = "Способ — есть в узком окне времени и не есть в остальные часы.",
@@ -124,7 +124,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179006L, 179008L, 179009L, 179010L)),
         WordEntity(
             id = 179008, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_nutrition", transliteration = "diyetа ketogenit",
+            pos = "phrase", semanticGroup = "health_nutrition",
             original = "דִּיאֵטָה קֵטוֹגֶנִית", translation = "кетогенная диета",
             definition = "תַּפְרִיט עָשִׁיר בְּשֻׁמָּן וְדַל מְאֹד בְּסֻכָּר שֶׁמַּעֲבִיר אֶת הַגּוּף לִשְׂרֵפַת קֵטוֹנִים.",
             definitionNative = "Меню с обилием жира и почти без сахара, переводящее тело на кетоны.",
@@ -133,7 +133,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179006L, 179007L, 179009L, 179010L)),
         WordEntity(
             id = 179009, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_nutrition", transliteration = "sintezat khelbon",
+            pos = "phrase", semanticGroup = "health_nutrition",
             original = "סִינְתֶּזַת חֶלְבּוֹן", translation = "синтез белка (мышечный)",
             definition = "תַּהֲלִיךְ בְּתוֹךְ הַתָּא שֶׁבּוֹ הַשְּׁרִיר בּוֹנֶה רִקְמָה חֲדָשָׁה אַחֲרֵי מַאֲמָץ.",
             definitionNative = "Процесс в клетке — мышца строит новую ткань после нагрузки.",
@@ -142,7 +142,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179006L, 179007L, 179008L, 179010L)),
         WordEntity(
             id = 179010, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_nutrition", transliteration = "makhzor pakhmemot",
+            pos = "phrase", semanticGroup = "health_nutrition",
             original = "מַחֲזוֹר פַּחְמֵימוֹת", translation = "углеводная цикловка",
             definition = "שִׁיטָה שֶׁל יָמִים גְּבוֹהִים וְיָמִים נְמוּכִים שֶׁל סֻכָּרִים בָּלוּחַ הַשְּׁבוּעִי.",
             definitionNative = "Чередование высоких и низких дней по сахарам в недельном плане.",
@@ -153,7 +153,7 @@ object WordDataHebrewHealthFitnessL4 {
         // ── health_mental (5) — ментальное здоровье ──
         WordEntity(
             id = 179011, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "health_mental", transliteration = "kashivut",
+            pos = "noun", semanticGroup = "health_mental",
             original = "קַשִּׁיבוּת", translation = "осознанность; майндфулнес",
             definition = "מַצָּב שֶׁל תְּשׁוּמַת לֵב מְלֵאָה לָרֶגַע הַנּוֹכְחִי בְּלִי שִׁפּוּט מַחְשְׁבוֹת וְרְגָשׁוֹת.",
             definitionNative = "Состояние полного внимания к текущему моменту без оценки мыслей.",
@@ -162,7 +162,7 @@ object WordDataHebrewHealthFitnessL4 {
         ),
         WordEntity(
             id = 179012, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_mental", transliteration = "tipul kognitivi-hitnahaguti",
+            pos = "phrase", semanticGroup = "health_mental",
             original = "טִיפּוּל קוֹגְנִיטִיבִי-הִתְנַהֲגוּתִי", translation = "когнитивно-поведенческая терапия",
             definition = "שִׁיטַת פְּסִיכוֹתֶרָפְיָה מֻבְנֵית הַמְּלַמֶּדֶת לְזַהוֹת מַחְשְׁבוֹת מְעַוְּתוֹת וּלְשַׁנּוֹת תְּגוּבוֹת.",
             definitionNative = "Структурированный метод — учит ловить искажённые мысли и менять реакции.",
@@ -171,7 +171,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179013L, 179014L, 179015L)),
         WordEntity(
             id = 179013, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_mental", transliteration = "tashishut miktso'it",
+            pos = "phrase", semanticGroup = "health_mental",
             original = "תַּשִּׁישׁוּת מִקְצוֹעִית", translation = "профессиональное выгорание",
             definition = "מַצָּב שֶׁל אַזִילָה רִגְשִׁית וַחֲסָר מוֹטִיבַצְיָה בְּעֲבוֹדָה מִתְמַשֶּׁכֶת תַּחַת לַחַץ.",
             definitionNative = "Эмоциональная опустошённость и потеря мотивации от долгой работы под давлением.",
@@ -180,7 +180,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179012L, 179014L, 179015L)),
         WordEntity(
             id = 179014, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_mental", transliteration = "higyenat shena",
+            pos = "phrase", semanticGroup = "health_mental",
             original = "הִיגְיֵנַת שֵׁנָה", translation = "гигиена сна",
             definition = "אֹסֶף הֶרְגֵּלִים לִפְנֵי לַיְלָה שֶׁעוֹזְרִים לְהֵרָדֵם מַהֵר וְלִישׁוֹן עָמֹק.",
             definitionNative = "Набор привычек перед ночью — помогают быстрее уснуть и спать глубоко.",
@@ -189,7 +189,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179012L, 179013L, 179015L)),
         WordEntity(
             id = 179015, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_mental", transliteration = "hafraat kharada",
+            pos = "phrase", semanticGroup = "health_mental",
             original = "הַפְרָעַת חֲרָדָה", translation = "тревожное расстройство",
             definition = "מַחֲלָה נַפְשִׁית מְאֻבְחֶנֶת שֶׁל פַּחַד מֻגְזָם וּמְתַמִּיד הַמַּפְרִיעַ לְתִפְקוּד יוֹמְיוֹמִי.",
             definitionNative = "Диагноз — постоянный непомерный страх, мешающий работать и общаться.",
@@ -200,7 +200,7 @@ object WordDataHebrewHealthFitnessL4 {
         // ── health_biomechanics (5) — биомеханика углублённо ──
         WordEntity(
             id = 179016, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "noun", semanticGroup = "health_biomechanics", transliteration = "kinematika",
+            pos = "noun", semanticGroup = "health_biomechanics",
             original = "קִינֶמָטִיקָה", translation = "кинематика (движения)",
             definition = "תְּחוּם הַחוֹקֵר אֶת מַסְלוּל וּמְהִירוּת חֵלְקֵי הַגּוּף בְּלִי לְהִתְיַחֵס לַכֹּחַ.",
             definitionNative = "Раздел — изучает траекторию и скорость частей тела без учёта силы.",
@@ -209,7 +209,7 @@ object WordDataHebrewHealthFitnessL4 {
         ),
         WordEntity(
             id = 179017, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_biomechanics", transliteration = "tvakh tnu'a",
+            pos = "phrase", semanticGroup = "health_biomechanics",
             original = "טְוָוח תְּנוּעָה", translation = "амплитуда движения; ROM",
             definition = "הַמֶּרְחָק הַמַּקְסִימָלִי שֶׁמִּפְרָק עוֹבֵר מִקָּצֶה אֶחָד לַשֵּׁנִי בְּלִי כְּפִיָּה.",
             definitionNative = "Максимальное расстояние, которое сустав проходит от края до края без боли.",
@@ -218,7 +218,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179018L, 179019L, 179020L)),
         WordEntity(
             id = 179018, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_biomechanics", transliteration = "analizat halikha",
+            pos = "phrase", semanticGroup = "health_biomechanics",
             original = "אֲנָלִיזַת הֲלִיכָה", translation = "анализ походки",
             definition = "בְּדִיקָה הַמְּזַהָה אִי-סִדְרֵי תְּנוּעָה בְּצוּרַת הַצַּעַד וּבְעֹמֶס עַל הַמִּפְרָקִים.",
             definitionNative = "Обследование — ловит сбои движения в форме шага и в нагрузке на суставы.",
@@ -227,7 +227,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179017L, 179019L, 179020L)),
         WordEntity(
             id = 179019, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_biomechanics", transliteration = "tsir anatomi",
+            pos = "phrase", semanticGroup = "health_biomechanics",
             original = "צִיר אַנָטוֹמִי", translation = "анатомическая ось",
             definition = "קַו דִּמְיוֹנִי שֶׁעוֹבֵר דֶּרֶךְ הַגּוּף וּמְשַׁמֵּשׁ נְקֻדַּת אַחֲזוּת לְזָוִית הַתְּנוּעָה.",
             definitionNative = "Воображаемая линия через тело — точка отсчёта для угла движения.",
@@ -236,7 +236,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179017L, 179018L, 179020L)),
         WordEntity(
             id = 179020, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_biomechanics", transliteration = "merkaz koved",
+            pos = "phrase", semanticGroup = "health_biomechanics",
             original = "מֶרְכַּז כֹּבֶד", translation = "центр тяжести (тела)",
             definition = "הַנְּקֻדָּה שֶׁבָּהּ מִתְרַכֵּז כָּל מִשְׁקַל הַגּוּף וְשֶׁדַּרְכָּהּ עוֹבֵר כֹּחַ הַכְּבִידָה.",
             definitionNative = "Точка, где сосредоточен весь вес тела и через которую идёт сила тяжести.",
@@ -247,7 +247,7 @@ object WordDataHebrewHealthFitnessL4 {
         // ── health_advanced_training (5) — продвинутые методики тренировок ──
         WordEntity(
             id = 179021, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "health_advanced_training", transliteration = "omes mitkadem",
+            pos = "phrase", semanticGroup = "health_advanced_training",
             original = "עוֹמֶס מִתְקַדֵּם", translation = "прогрессивная нагрузка",
             definition = "עִקָּרוֹן שֶׁל הַעֲלָאָה הֲדַרְגָּתִית בִּכֹבֶד אוֹ בְּכַמּוּת לְכָל אִמּוּן עוֹקֵב.",
             definitionNative = "Принцип постепенного роста веса или объёма из тренировки в тренировку.",
@@ -256,7 +256,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179022L, 179024L, 179025L)),
         WordEntity(
             id = 179022, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_advanced_training", transliteration = "shavua hafkhata",
+            pos = "phrase", semanticGroup = "health_advanced_training",
             original = "שָׁבוּעַ הַפְחָתָה", translation = "разгрузочная неделя",
             definition = "פֶּרֶק שִׁבְעָה יָמִים שֶׁל אִמּוּנִים קַלִּים בִּכְוָנָה לְמַתֵּן אֶת הָעֲיֵפוּת הַמִּצְטַבֶּרֶת.",
             definitionNative = "Семь дней лёгких занятий специально, чтобы сбить копящуюся усталость.",
@@ -265,7 +265,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179021L, 179024L, 179025L)),
         WordEntity(
             id = 179023, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "health_advanced_training", transliteration = "hipertrofiya",
+            pos = "noun", semanticGroup = "health_advanced_training",
             original = "הִיפֶּרְטְרוֹפְיָה", translation = "гипертрофия (мышечный рост)",
             definition = "גְּדִילָה שֶׁל סִיבֵי שְׁרִיר בְּעֹבִי מִתְּגוּבָה לְעוֹמֶס חוֹזֵר וּמְבֻקָּר.",
             definitionNative = "Утолщение мышечных волокон в ответ на повторную и контролируемую нагрузку.",
@@ -274,7 +274,7 @@ object WordDataHebrewHealthFitnessL4 {
         ),
         WordEntity(
             id = 179024, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_advanced_training", transliteration = "saf anaerobi",
+            pos = "phrase", semanticGroup = "health_advanced_training",
             original = "סַף אַנְאֵרוֹבִי", translation = "анаэробный порог",
             definition = "הָעֲצִימוּת שֶׁמֵּעָלֶיהָ הַגּוּף לֹא מַסְפִּיק לְהַזִּין שְׁרִירִים בְּחַמְצָן בִּלְבַד.",
             definitionNative = "Интенсивность, выше которой телу уже не хватает одного кислорода.",
@@ -283,7 +283,7 @@ object WordDataHebrewHealthFitnessL4 {
          fillInBlankExclusions = listOf(179021L, 179022L, 179025L)),
         WordEntity(
             id = 179025, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "health_advanced_training", transliteration = "tkufat khidud",
+            pos = "phrase", semanticGroup = "health_advanced_training",
             original = "תְּקוּפַת חִדּוּד", translation = "тейпер; финишная разгрузка перед стартом",
             definition = "שָׁבוּעוֹת אֲחַרוֹנִים לִפְנֵי תַחֲרוּת שֶׁבָּהֶם מַפְחִיתִים נֶפַח כְּדֵי לְהַגִּיעַ רַעֲנָן.",
             definitionNative = "Последние недели перед стартом — снижают объём, чтобы прийти свежим.",

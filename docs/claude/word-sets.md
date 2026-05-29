@@ -66,9 +66,9 @@ WordEntity(
     setId = 1519,
     languagePair = "he-ru",   // совпадает с набором
     rarity = "RARE",          // COMMON | UNCOMMON | RARE | EPIC | LEGENDARY
-    original = "אִבְחוּן",
+    original = "אִבְחוּן",      // огласовка-никуд обязательна — она даёт произношение
     translation = "диагностика / постановка диагноза",
-    transliteration = "ивхун", // ОБЯЗАТЕЛЬНО для he-ru
+    // transliteration НЕ используется для he-ru (убрано 2026-05-28). Только en-ru: IPA в `transliteration`.
 )
 ```
 
@@ -125,7 +125,7 @@ WordEntity(
    **Имя темы — на русском.** Интерфейсный язык приложения — русский, темы пишутся по-русски (✅ «Фразовые глаголы», ✅ «Маркетинг», ✅ «Хайтек»). Допустимые исключения — только устоявшиеся латинские аббревиатуры без короткого русского эквивалента: ✅ «AI и ML», ✅ «IT», ✅ «SaaS», ✅ «QA и тестирование», ✅ «Data Engineering». ❌ Не использовать английские слова при наличии русского термина: «Phrasal Verbs» → «Фразовые глаголы», «Marketing» → «Маркетинг», «Hi-Tech» → «Хайтек».
 2. **`name = topic`, без вариаций.** Описание (`description`) — то, чем сет отличается от других в той же теме (подтема, акцент, контекст). Проверь что в той же теме нет сета с таким же `description` — `grep -E 'description = "<твой description>"' app/src/main/java/com/example/kartonki/data/WordData*.kt`.
 3. **Все поля WordSetEntity заполнены**: id, name (= topic), description (без CEFR, уникальный в теме), languagePair, topic, level. (orderIndex опционален — не указывай в новых наборах.)
-4. **Ровно 25 слов.** Каждое WordEntity имеет id (по формуле), setId, languagePair, rarity, original, translation, + transliteration для he-ru.
+4. **Ровно 25 слов.** Каждое WordEntity имеет id (по формуле), setId, languagePair, rarity, original, translation. Для en-ru также `transliteration` (IPA). Для he-ru `transliteration` НЕ заполняется — произношение даёт огласовка-никуд в `original` + TTS.
 5. **Редкость — только 2 смежных уровня** вокруг level. Для L3 это UNCOMMON+RARE **или** RARE+EPIC, не оба.
 6. **Нет дублей** в наборе (ни original, ни translation), в теме (проверить другие наборы темы), и однокоренных.
 7. **Переводы уникальны** в наборе — если два слова переводятся одинаково, уточни один (`cite → цитировать`, `refer → ссылаться`).
@@ -142,7 +142,6 @@ WordEntity(
 | `deep_audit.py` / `deep_audit2.py` | Расширенный аудит (empty sets, orphan id и пр.) |
 | `fix_rarity_spread_he.py` / `fix_spread_all_v2.py` | Clamp редкостей в проблемных наборах |
 | `fix_topic_dupes.py` | Удаление дублей `original` внутри темы |
-| `fix_translit.py` | Автогенерация transliteration he-ru |
 | `renumber_ids.py` | Перенумерация id по формуле (глобально) |
 
 ## Частые ошибки (из реального опыта)

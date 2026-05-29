@@ -61,7 +61,7 @@ object WordDataHebrewInterviewL1 {
         // ── interview_basics (5) — самые базовые понятия собеседования ──
         WordEntity(
             id = 175201, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_basics", transliteration = "ra'ayon",
+            pos = "noun", semanticGroup = "interview_basics",
             original = "רֵאָיוֹן", translation = "собеседование",
             definition = "פְּגִישָׁה רִשְׁמִית בֵּין מֻעֳמָד לְמַעֲסִיק לִפְנֵי קַבָּלָה לַעֲבוֹדָה.",
             definitionNative = "Официальная встреча кандидата и работодателя перед приёмом на работу.",
@@ -70,7 +70,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175202L, 175203L, 175204L, 175205L, 175206L)),
         WordEntity(
             id = 175202, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_basics", transliteration = "avoda",
+            pos = "noun", semanticGroup = "interview_basics",
             original = "עֲבוֹדָה", translation = "работа",
             definition = "מָה שֶׁאָדָם עוֹשֶׂה בְּחֶבְרָה כְּדֵי לְקַבֵּל כֶּסֶף בְּסוֹף הַחֹדֶשׁ.",
             definitionNative = "То, что человек делает в фирме, чтобы получать деньги в конце месяца.",
@@ -79,7 +79,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175201L, 175203L, 175204L, 175205L)),
         WordEntity(
             id = 175203, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_basics", transliteration = "ma'asik",
+            pos = "noun", semanticGroup = "interview_basics",
             original = "מַעֲסִיק", translation = "работодатель",
             definition = "אִישׁ אוֹ חֶבְרָה שֶׁמְּשַׁלְּמִים שָׂכָר תְּמוּרַת עֲבוֹדָה.",
             definitionNative = "Человек или фирма, что платят зарплату взамен на работу.",
@@ -88,7 +88,7 @@ object WordDataHebrewInterviewL1 {
         ),
         WordEntity(
             id = 175204, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_basics", transliteration = "mu'amad",
+            pos = "noun", semanticGroup = "interview_basics",
             original = "מוֹעֲמָד", translation = "кандидат",
             definition = "אָדָם שֶׁמְּחַפֵּשׂ לְהִתְקַבֵּל לְמָקוֹם חָדָשׁ וְצָרִיךְ לַעֲבוֹר רֵאָיוֹן.",
             definitionNative = "Человек, что хочет попасть на новое место и проходит собеседование.",
@@ -97,7 +97,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175201L, 175202L, 175203L, 175205L)),
         WordEntity(
             id = 175205, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_basics", transliteration = "maskoret",
+            pos = "noun", semanticGroup = "interview_basics",
             original = "מַשְׂכֹּרֶת", translation = "зарплата",
             definition = "סְכוּם הַכֶּסֶף שֶׁאָדָם מְקַבֵּל פַּעַם בְּחֹדֶשׁ עֲבוּר עֲבוֹדָתוֹ.",
             definitionNative = "Сумма денег, что человек получает раз в месяц за свою работу.",
@@ -108,7 +108,7 @@ object WordDataHebrewInterviewL1 {
         // ── interview_meeting (5) — про встречу: время, место, помещение ──
         WordEntity(
             id = 175206, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_meeting", transliteration = "pgisha",
+            pos = "noun", semanticGroup = "interview_meeting",
             original = "פְּגִישָׁה", translation = "встреча",
             definition = "מַעֲמָד שֶׁבּוֹ שְׁנֵי אֲנָשִׁים אוֹ יוֹתֵר נִפְגָּשִׁים בְּמָקוֹם מְתֻכְנָן מֵרֹאשׁ.",
             definitionNative = "Когда два человека или больше сходятся в заранее условленном месте.",
@@ -117,7 +117,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175201L, 175207L, 175208L, 175209L, 175210L)),
         WordEntity(
             id = 175207, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_meeting", transliteration = "sha'a",
+            pos = "noun", semanticGroup = "interview_meeting",
             original = "שָׁעָה", translation = "час",
             definition = "יְחִידַת זְמַן שֶׁל שִׁישִּׁים דַּקּוֹת — בָּהּ מוֹדְדִים אֶת הַיּוֹם.",
             definitionNative = "Промежуток времени в шестьдесят минут — им меряют день.",
@@ -126,7 +126,7 @@ object WordDataHebrewInterviewL1 {
         ),
         WordEntity(
             id = 175208, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "interview_meeting", transliteration = "ta'arikh",
+            pos = "noun", semanticGroup = "interview_meeting",
             original = "תַּאֲרִיךְ", translation = "дата",
             definition = "הַיּוֹם הַמְּסֻיָּם בַּחֹדֶשׁ שֶׁבּוֹ קוֹרֶה אֵרוּעַ — לְמָשָׁל חֲמִישָּׁה בְּמַאי.",
             definitionNative = "Конкретный день в месяце, когда происходит событие — например, пятого мая.",
@@ -135,7 +135,7 @@ object WordDataHebrewInterviewL1 {
         ),
         WordEntity(
             id = 175209, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_meeting", transliteration = "ktovet",
+            pos = "noun", semanticGroup = "interview_meeting",
             original = "כְּתֹבֶת", translation = "адрес",
             definition = "הַשֵּׁם שֶׁל הָרְחוֹב וְהַמִּסְפָּר שֶׁעוֹזֵר לִמְצֹא בַּיִת אוֹ בִּנְיָן.",
             definitionNative = "Название улицы и номер — помогают найти дом или здание.",
@@ -144,7 +144,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175206L, 175207L, 175208L, 175210L)),
         WordEntity(
             id = 175210, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "interview_meeting", transliteration = "kheder",
+            pos = "noun", semanticGroup = "interview_meeting",
             original = "חֶדֶר", translation = "комната",
             definition = "מָקוֹם סָגוּר בְּתוֹךְ בִּנְיָן עִם דֶּלֶת וְקִירוֹת — שָׁם יוֹשְׁבִים בָּרֵאָיוֹן.",
             definitionNative = "Закрытое место внутри здания с дверью и стенами — там сидят на собеседовании.",
@@ -155,7 +155,7 @@ object WordDataHebrewInterviewL1 {
         // ── interview_company_basic (5) — простое о компании ──
         WordEntity(
             id = 175211, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_company_basic", transliteration = "khevra",
+            pos = "noun", semanticGroup = "interview_company_basic",
             original = "חֶבְרָה", translation = "компания",
             definition = "אִרְגּוּן עִסְקִי שֶׁל אֲנָשִׁים שֶׁעוֹבְדִים יַחַד וּמַרְוִיחִים כֶּסֶף יַחַד.",
             definitionNative = "Деловое объединение людей, что работают вместе и зарабатывают вместе.",
@@ -164,7 +164,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175212L, 175213L, 175214L, 175215L)),
         WordEntity(
             id = 175212, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_company_basic", transliteration = "misrad",
+            pos = "noun", semanticGroup = "interview_company_basic",
             original = "מִשְׂרָד", translation = "офис",
             definition = "מָקוֹם שֶׁבּוֹ הָעוֹבְדִים יוֹשְׁבִים מוּל הַמַּחְשֵׁב מִדֵּי יוֹם.",
             definitionNative = "Помещение, где сотрудники сидят за компьютером каждый день.",
@@ -173,7 +173,7 @@ object WordDataHebrewInterviewL1 {
         ),
         WordEntity(
             id = 175213, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_company_basic", transliteration = "menahel",
+            pos = "noun", semanticGroup = "interview_company_basic",
             original = "מַנְהֵל", translation = "руководитель",
             definition = "אִישׁ שֶׁאַחְרַאי עַל קְבוּצָה שֶׁל אֲנָשִׁים וּמַחְלִיט מָה לַעֲשׂוֹת.",
             definitionNative = "Тот, кто отвечает за группу людей и решает, что делать.",
@@ -182,7 +182,7 @@ object WordDataHebrewInterviewL1 {
         ),
         WordEntity(
             id = 175214, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_company_basic", transliteration = "tsevet",
+            pos = "noun", semanticGroup = "interview_company_basic",
             original = "צֶוֶת", translation = "команда",
             definition = "קְבוּצָה קְטַנָּה שֶׁל אֲנָשִׁים שֶׁעוֹבְדִים יַחַד עַל אוֹתָהּ מַטָּרָה.",
             definitionNative = "Маленькая группа людей, что работают вместе над одной целью.",
@@ -191,7 +191,7 @@ object WordDataHebrewInterviewL1 {
         ),
         WordEntity(
             id = 175215, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "interview_company_basic", transliteration = "kolega",
+            pos = "noun", semanticGroup = "interview_company_basic",
             original = "קוֹלֶגָה", translation = "коллега",
             definition = "מִישֶׁהוּ שֶׁעוֹבֵד אִתְּךָ בְּאוֹתוֹ מָקוֹם, אֲבָל לֹא בְּהֶכְרֵחַ בְּאוֹתוֹ צֶוֶות.",
             definitionNative = "Тот, кто работает с тобой в одном месте, но не обязательно в одной команде.",
@@ -202,7 +202,7 @@ object WordDataHebrewInterviewL1 {
         // ── interview_self_basic (5) — базовое о себе ──
         WordEntity(
             id = 175216, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_self_basic", transliteration = "shem",
+            pos = "noun", semanticGroup = "interview_self_basic",
             original = "שֵׁם", translation = "имя",
             definition = "הַמִּלָּה שֶׁבָּהּ קוֹרְאִים לְאָדָם — הַדָּבָר הָרִאשׁוֹן שֶׁאוֹמְרִים בָּרֵאָיוֹן.",
             definitionNative = "Слово, которым зовут человека — то, что говорят первым на собеседовании.",
@@ -211,7 +211,7 @@ object WordDataHebrewInterviewL1 {
         ),
         WordEntity(
             id = 175217, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_self_basic", transliteration = "gil",
+            pos = "noun", semanticGroup = "interview_self_basic",
             original = "גִּיל", translation = "возраст",
             definition = "מִסְפַּר הַשָּׁנִים שֶׁעָבְרוּ מֵהַיּוֹם שֶׁאָדָם נוֹלַד.",
             definitionNative = "Число лет, что прошли со дня рождения человека.",
@@ -220,7 +220,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175216L, 175218L, 175219L, 175220L)),
         WordEntity(
             id = 175218, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "interview_self_basic", transliteration = "haskala",
+            pos = "noun", semanticGroup = "interview_self_basic",
             original = "הַשְׂכָּלָה", translation = "образование",
             definition = "כָּל הַלִּימּוּדִים בְּבֵית סֵפֶר וּבָאוּנִיבֶרְסִיטָה שֶׁאָדָם סִיֵּם בְּחַיָּיו.",
             definitionNative = "Всё учение в школе и университете, что человек прошёл за жизнь.",
@@ -229,7 +229,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175216L, 175217L, 175219L, 175220L)),
         WordEntity(
             id = 175219, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "interview_self_basic", transliteration = "nisayon",
+            pos = "noun", semanticGroup = "interview_self_basic",
             original = "נִסָּיוֹן", translation = "опыт",
             definition = "הַיֶּדַע שֶׁאָדָם צָבַר תּוֹךְ כְּדֵי שָׁנִים שֶׁל עֲבוֹדָה אוֹ חַיִּים.",
             definitionNative = "Знания, что человек накопил за годы работы или жизни.",
@@ -238,7 +238,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175216L, 175217L, 175218L, 175220L)),
         WordEntity(
             id = 175220, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "interview_self_basic", transliteration = "safot",
+            pos = "noun", semanticGroup = "interview_self_basic",
             original = "שָׂפוֹת", translation = "языки",
             definition = "הַדְּרָכִים שֶׁבָּהֶן בְּנֵי אָדָם מְדַבְּרִים — לְמָשָׁל עִבְרִית, רוּסִית אוֹ אַנְגְּלִית.",
             definitionNative = "То, на чём общаются люди — например иврит, русский или английский.",
@@ -249,7 +249,7 @@ object WordDataHebrewInterviewL1 {
         // ── interview_first_contact (5) — первый контакт ──
         WordEntity(
             id = 175221, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_first_contact", transliteration = "telefon",
+            pos = "noun", semanticGroup = "interview_first_contact",
             original = "טֶלֶפוֹן", translation = "телефон",
             definition = "מַכְשִׁיר קָטָן בַּכִּיס שֶׁבּוֹ מְדַבְּרִים אוֹ שׁוֹלְחִים הוֹדָעָה לְמִישֶׁהוּ רָחוֹק.",
             definitionNative = "Маленькое устройство в кармане — говорят или шлют сообщение далёкому собеседнику.",
@@ -258,7 +258,7 @@ object WordDataHebrewInterviewL1 {
         ),
         WordEntity(
             id = 175222, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "interview_first_contact", transliteration = "imeil",
+            pos = "noun", semanticGroup = "interview_first_contact",
             original = "אִימֵייל", translation = "имейл",
             definition = "מִכְתָּב שֶׁעוֹבֵר בָּרֶשֶׁת מִכְּתֹבֶת אֶלֶקְטְרוֹנִית אַחַת לִשְׁנִיָּה.",
             definitionNative = "Письмо по сети — с одного электронного адреса на другой.",
@@ -267,7 +267,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175221L, 175223L, 175224L, 175225L)),
         WordEntity(
             id = 175223, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "interview_first_contact", transliteration = "hoda'a",
+            pos = "noun", semanticGroup = "interview_first_contact",
             original = "הוֹדָעָה", translation = "сообщение",
             definition = "טֶקְסְט קָצָר בָּטֶלֶפוֹן שֶׁמּוֹסֵר מֵידָע מְהִיר בְּלִי לְצַלְצֵל.",
             definitionNative = "Короткий текст в телефоне — передаёт быструю информацию без звонка.",
@@ -276,7 +276,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175221L, 175222L, 175224L, 175225L)),
         WordEntity(
             id = 175224, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "interview_first_contact", transliteration = "tazkoret",
+            pos = "noun", semanticGroup = "interview_first_contact",
             original = "תַּזְכֹּרֶת", translation = "напоминание (о встрече)",
             definition = "פְּתָק קָצָר אוֹ הוֹדָעָה שֶׁמַּזְכִּירִים שֶׁעוֹד מְעַט פְּגִישָׁה.",
             definitionNative = "Короткая записка или сообщение — напоминают, что скоро встреча.",
@@ -285,7 +285,7 @@ object WordDataHebrewInterviewL1 {
          fillInBlankExclusions = listOf(175222L, 175223L, 175225L)),
         WordEntity(
             id = 175225, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "interview_first_contact", transliteration = "ma'ane",
+            pos = "noun", semanticGroup = "interview_first_contact",
             original = "מַעֲנֶה", translation = "ответ",
             definition = "מַה שֶּׁאָדָם אוֹמֵר אוֹ כּוֹתֵב כְּשֶׁמַּפְנִים אֵלָיו שְׁאֵלָה אוֹ פְּנִיָּה.",
             definitionNative = "То, что человек говорит или пишет, когда к нему обращаются с вопросом.",

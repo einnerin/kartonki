@@ -83,7 +83,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Нижняя инстанция в гражданской судебной системе — рассматривает мелкие иски и лёгкие правонарушения.",
             example = "הַתְּבִיעָה הֻגְּשָׁה לְבֵית מִשְׁפָּט הַשָּׁלוֹם בְּתֵל אָבִיב.",
             exampleNative = "Иск был подан в בֵּית מִשְׁפָּט הַשָּׁלוֹם Тель-Авива.",
-            transliteration = "бэйт мишпат hа-шалом",
             pos = "phrase", semanticGroup = "law_il_courts"),
 
         WordEntity(id = 191402, setId = 1914, languagePair = "he-ru", rarity = "RARE",
@@ -93,7 +92,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Промежуточная инстанция, рассматривающая более серьёзные дела и апелляции на решения мирового суда.",
             example = "הַמִּשְׁפָּט הַפְּלִילִי נָדוֹן בְּבֵית הַמִּשְׁפָּט הַמְּחוֹזִי בִּירוּשָׁלַיִם.",
             exampleNative = "Уголовное дело рассматривают в בֵּית הַמִּשְׁפָּט הַמְּחוֹזִי Иерусалима.",
-            transliteration = "бэйт hа-мишпат hа-мэхози",
             pos = "phrase", semanticGroup = "law_il_courts"),
 
         WordEntity(id = 191403, setId = 1914, languagePair = "he-ru", rarity = "RARE",
@@ -103,7 +101,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Специализированная инстанция по семейным спорам — алименты, опека над детьми, раздел имущества.",
             example = "הָאֵם פָּנְתָה לְבֵית מִשְׁפָּט לְעִנְיְנֵי מִשְׁפָּחָה לְהַסְדִּיר מְזוֹנוֹת.",
             exampleNative = "Мать обратилась в בֵּית מִשְׁפָּט לְעִנְיְנֵי מִשְׁפָּחָה по поводу алиментов.",
-            transliteration = "бэйт мишпат ле-иньянэй мишпаха",
             pos = "phrase", semanticGroup = "law_il_courts"),
 
         WordEntity(id = 191404, setId = 1914, languagePair = "he-ru", rarity = "RARE",
@@ -113,7 +110,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Специализированная инстанция по спорам между работниками и работодателями — увольнения, зарплата, соцправа.",
             example = "הָעוֹבֵד הִגִּישׁ תְּלוּנָה לְבֵית הַדִּין לַעֲבוֹדָה עַל פִּטּוּרִים שֶׁלֹּא כְּדִין.",
             exampleNative = "Работник подал жалобу в בֵּית הַדִּין לַעֲבוֹדָה на незаконное увольнение.",
-            transliteration = "бэйт hа-дин ла-авода",
             pos = "phrase", semanticGroup = "law_il_courts"),
 
         WordEntity(id = 191405, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -123,7 +119,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Религиозная инстанция при Главном раввинате — ведёт браки, разводы и гиюр.",
             example = "הַזּוּג נִרְשַׁם לְהִתְגָּרֵשׁ בְּבֵית הַדִּין הָרַבָּנִי בְּחֵיפָה.",
             exampleNative = "Пара подала на развод в בֵּית הַדִּין הָרַבָּנִי в Хайфе.",
-            transliteration = "бэйт hа-дин hа-раббани",
             pos = "phrase", semanticGroup = "law_il_courts"),
 
         WordEntity(id = 191406, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -133,7 +128,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Специальная инстанция для преступлений несовершеннолетних до восемнадцати — закрытое заседание, упор на реабилитацию.",
             example = "תִּיק הַנַּעַר הֻעֲבַר לְבֵית מִשְׁפָּט לִנְעָרִים בִּגְלַל גִּילוֹ.",
             exampleNative = "Дело подростка передали в בֵּית מִשְׁפָּט לִנְעָרִים из-за возраста.",
-            transliteration = "бэйт мишпат ли-нэарим",
             pos = "phrase", semanticGroup = "law_il_courts"),
 
         // ── Group: law_il_high_courts (3 words) ───────────────────────────────
@@ -145,7 +139,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Высшая инстанция в судебной системе Израиля — слушает окончательные апелляции и устанавливает прецедент.",
             example = "בֵּית הַמִּשְׁפָּט הָעֶלְיוֹן קִבֵּל אֶת הָעֶרְעוּר וְזִכָּה אֶת הַנֶּאֱשָׁם.",
             exampleNative = "בֵּית הַמִּשְׁפָּט הָעֶלְיוֹן удовлетворил апелляцию и оправдал обвиняемого.",
-            transliteration = "бэйт hа-мишпат hа-эльйон",
             pos = "phrase", semanticGroup = "law_il_high_courts"),
 
         WordEntity(id = 191408, setId = 1914, languagePair = "he-ru", rarity = "RARE",
@@ -155,7 +148,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Аббревиатура Верховного суда, заседающего как административная инстанция против государственных органов.",
             example = "הָעַמּוּתָה הִגִּישָׁה עֲתִירָה לְבָּג\"ץ נֶגֶד הַחְלָטַת הַמֶּמְשָׁלָה.",
             exampleNative = "Некоммерческая организация подала петицию в בָּג\"ץ против решения правительства.",
-            transliteration = "багац",
             pos = "noun", semanticGroup = "law_il_high_courts"),
 
         WordEntity(id = 191409, setId = 1914, languagePair = "he-ru", rarity = "RARE",
@@ -165,7 +157,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Официальная дата, когда суд рассматривает дело — сторонам сообщают в письменном виде заранее.",
             example = "מוֹעֵד דִּיּוּן נִקְבַּע לְחֹדֶשׁ מָרְס בַּבֹּקֶר.",
             exampleNative = "מוֹעֵד דִּיּוּן назначен на март, утром.",
-            transliteration = "моэд диюн",
             pos = "phrase", semanticGroup = "law_il_high_courts"),
 
         // ── Group: law_il_parties (5 words) ───────────────────────────────────
@@ -177,7 +168,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Сторона, открывающая гражданский процесс и требующая средства правовой защиты от суда.",
             example = "הַתּוֹבֵעַ הִגִּישׁ כְּתַב תְּבִיעָה עַל סְכוּם גָּדוֹל.",
             exampleNative = "תּוֹבֵעַ подал исковое заявление на крупную сумму.",
-            transliteration = "товэа",
             pos = "noun", semanticGroup = "law_il_parties"),
 
         WordEntity(id = 191411, setId = 1914, languagePair = "he-ru", rarity = "RARE",
@@ -187,7 +177,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Сторона, против которой подано исковое заявление, и которая обязана ответить отзывом.",
             example = "הַנִּתְבָּע סֵרֵב לְקַבֵּל אֶת הַתַּרְגּוֹם וּדָרַשׁ דִּיּוּן.",
             exampleNative = "נִתְבָּע отказался от компенсации и потребовал заседания.",
-            transliteration = "нитба",
             pos = "noun", semanticGroup = "law_il_parties"),
 
         WordEntity(id = 191412, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -197,7 +186,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Чиновник, ответственный за приём документов, регистрацию дел и выдачу повесток сторонам.",
             example = "מַזְכִּיר בֵּית הַמִּשְׁפָּט הוֹדִיעַ עַל דְּחִיַּת הַדִּיּוּן בְּשָׁבוּעַ.",
             exampleNative = "מַזְכִּיר בֵּית הַמִּשְׁפָּט сообщил о переносе заседания на неделю.",
-            transliteration = "мазкир бэйт hа-мишпат",
             pos = "phrase", semanticGroup = "law_il_parties"),
 
         WordEntity(id = 191413, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -207,7 +195,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Группа из трёх или пяти судей, совместно рассматривающих серьёзное дело или апелляцию.",
             example = "הֶרְכֵּב שׁוֹפְטִים שֶׁל שְׁלוֹשָׁה הִכְרִיעַ פֶּה אֶחָד נֶגֶד הַנֶּאֱשָׁם.",
             exampleNative = "הֶרְכֵּב שׁוֹפְטִים из троих единогласно решил против обвиняемого.",
-            transliteration = "hэркэв шофтим",
             pos = "phrase", semanticGroup = "law_il_parties"),
 
         WordEntity(id = 191414, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -217,7 +204,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Один судья, рассматривающий дело самостоятельно — практикуется в простых делах в мировом суде.",
             example = "הַתִּיק נָדוֹן בְּפְנֵי דַּן יָחִיד וְהֻכְרַע בְּיוֹם אֶחָד.",
             exampleNative = "Дело рассматривалось перед דַּן יָחִיד и было решено за один день.",
-            transliteration = "дан йахид",
             pos = "phrase", semanticGroup = "law_il_parties"),
 
         // ── Group: law_il_civil_process (6 words) ─────────────────────────────
@@ -229,7 +215,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Первый документ в гражданском процессе — открывает дело и излагает требования и доводы.",
             example = "עוֹרֵךְ הַדִּין הִגִּישׁ כְּתַב תְּבִיעָה לְבֵית מִשְׁפָּט הַשָּׁלוֹם.",
             exampleNative = "Адвокат подал כְּתַב תְּבִיעָה в мировой суд.",
-            transliteration = "ктав твиа",
             pos = "phrase", semanticGroup = "law_il_civil_process"),
 
         WordEntity(id = 191416, setId = 1914, languagePair = "he-ru", rarity = "RARE",
@@ -239,7 +224,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Официальное уведомление от суда стороне или свидетелю явиться в определённую дату.",
             example = "הַזְמָנָה לְדִיּוּן הִגִּיעָה בַּדֹּאַר רָשׁוּם שָׁבוּעַ לִפְנֵי הַמּוֹעֵד.",
             exampleNative = "הַזְמָנָה לְדִיּוּן пришла заказным письмом за неделю до даты.",
-            transliteration = "hазмана ле-диюн",
             pos = "phrase", semanticGroup = "law_il_civil_process"),
 
         WordEntity(id = 191417, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -249,7 +233,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Решение, запрещающее человеку покидать Израиль до окончания судебного процесса против него.",
             example = "הַשּׁוֹפֵט הוֹצִיא צַו עִכּוּב יְצִיאָה נֶגֶד הַחָשׁוּד.",
             exampleNative = "Судья выпустил צַו עִכּוּב יְצִיאָה в отношении подозреваемого.",
-            transliteration = "цав икув йэциа",
             pos = "phrase", semanticGroup = "law_il_civil_process"),
 
         WordEntity(id = 191418, setId = 1914, languagePair = "he-ru", rarity = "RARE",
@@ -259,7 +242,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Набор документов, состязательных бумаг и доказательств, собранных под одним номером в суде.",
             example = "הַתִּיק הַמִּשְׁפָּטִי כָּלַל יוֹתֵר מֵאֶלֶף עַמּוּדִים שֶׁל רְאָיוֹת.",
             exampleNative = "תִּיק מִשְׁפָּטִי содержал более тысячи страниц доказательств.",
-            transliteration = "тик мишпати",
             pos = "phrase", semanticGroup = "law_il_civil_process",
             isFillInBlankSafe = false),
 
@@ -270,7 +252,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Письменная запись всего сказанного на заседании — вопросы судьи, ответы свидетелей, доводы сторон.",
             example = "עוֹרֵךְ הַדִּין בִּקֵּשׁ עוֹתֶק שֶׁל פְּרוֹטוֹקוֹל הַדִּיּוּן לְצֹרֶךְ הָעֶרְעוּר.",
             exampleNative = "Адвокат запросил копию פְּרוֹטוֹקוֹל הַדִּיּוּן для апелляции.",
-            transliteration = "протокол hа-диюн",
             pos = "phrase", semanticGroup = "law_il_civil_process"),
 
         WordEntity(id = 191420, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -280,7 +261,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Окончательное решение суда по делу — фактические и правовые выводы плюс назначаемое средство защиты.",
             example = "פְּסַק הַדִּין נִתַּן לְטוֹבַת הַתּוֹבֵעַ אַחֲרֵי שָׁנָה שֶׁל דִּיּוּנִים.",
             exampleNative = "פְּסַק דִּין вынесен в пользу истца после года заседаний.",
-            transliteration = "псак дин",
             pos = "phrase", semanticGroup = "law_il_civil_process",
             isFillInBlankSafe = false),
 
@@ -293,7 +273,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Передача фактов свидетелем перед судом после принесения присяги говорить правду.",
             example = "הָעֵד מָסַר הַעֲדָאָה מְפֹרֶטֶת בִּמְשֶׁךְ שָׁעָה.",
             exampleNative = "Свидетель дал подробную הַעֲדָאָה в течение часа.",
-            transliteration = "hаадаа",
             pos = "noun", semanticGroup = "law_il_criminal"),
 
         WordEntity(id = 191422, setId = 1914, languagePair = "he-ru", rarity = "RARE",
@@ -303,7 +282,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Официальное установление судом, что обвиняемый совершил вменённое ему преступление.",
             example = "הַהַרְשָׁעָה הִתְקַבְּלָה פֶּה אֶחָד עַל שְׁתֵּי עֲבֵרוֹת.",
             exampleNative = "הַרְשָׁעָה вынесена единогласно по двум статьям.",
-            transliteration = "hаршаа",
             pos = "noun", semanticGroup = "law_il_criminal"),
 
         WordEntity(id = 191423, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -313,7 +291,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Наказание, которое не приводится в исполнение, если осуждённый не совершит новое преступление в испытательный срок.",
             example = "הַשּׁוֹפֵט גָּזַר עוֹנֶשׁ עַל תְּנַאי לְשָׁלוֹשׁ שָׁנִים.",
             exampleNative = "Судья назначил עוֹנֶשׁ עַל תְּנַאי на три года.",
-            transliteration = "онэш аль тнай",
             pos = "phrase", semanticGroup = "law_il_criminal"),
 
         WordEntity(id = 191424, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -323,7 +300,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Основополагающий принцип, по которому каждый обвиняемый невиновен, пока обратное не доказано в суде.",
             example = "חֲזָקַת חֲפוּת מְחַיֶּבֶת אֶת הַתְּבִיעָה לְהוֹכִיחַ אַשְׁמָה.",
             exampleNative = "חֲזָקַת חֲפוּת обязывает обвинение доказывать вину.",
-            transliteration = "хазакат хафут",
             pos = "phrase", semanticGroup = "law_il_criminal"),
 
         WordEntity(id = 191425, setId = 1914, languagePair = "he-ru", rarity = "EPIC",
@@ -333,7 +309,6 @@ object WordDataHebrewLawIsraeli {
             definitionNative = "Обязанность представить достаточные доказательства, чтобы убедить суд — лежит на обвинении в уголовных делах.",
             example = "נֵטֶל הַהוֹכָחָה מֻטָּל עַל הַתְּבִיעָה לְלֹא סָפֵק סָבִיר.",
             exampleNative = "נֵטֶל הוֹכָחָה лежит на обвинении без разумных сомнений.",
-            transliteration = "нэтэль hохаха",
             pos = "phrase", semanticGroup = "law_il_criminal",
             isFillInBlankSafe = false),
     )

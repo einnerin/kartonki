@@ -70,7 +70,7 @@ object WordDataHebrewBureauL5 {
         // ── bureau_high_court (5) — верховная судебная инстанция ──
         WordEntity(
             id = 181101, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_high_court", transliteration = "бэйт hа-мишпат hа-эльйон",
+            pos = "phrase", semanticGroup = "bureau_high_court",
             original = "בֵּית הַמִּשְׁפָּט הָעֶלְיוֹן", translation = "Верховный суд",
             definition = "הָעַרְכָּאָה הַגְּבוֹהָה בְּיוֹתֵר בְּיִשְׂרָאֵל לְעֶרְעוּרִים וְלִשְׁאֵלוֹת חוּקָּה.",
             definitionNative = "Высшая судебная инстанция Израиля по апелляциям и конституционным вопросам.",
@@ -79,7 +79,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181102L, 181103L, 181104L, 181105L)),
         WordEntity(
             id = 181102, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_high_court", transliteration = "hахлата такдимит",
+            pos = "phrase", semanticGroup = "bureau_high_court",
             original = "הַחְלָטָה תַּקְדִּימִית", translation = "прецедентное решение",
             definition = "פְּסַק דִּין שֶׁמְּשַׁמֵּשׁ דֻּגְמָה מְחַיֶּבֶת לְבָתֵּי מִשְׁפָּט בִּתְיֵקִים דּוֹמִים.",
             definitionNative = "Решение, ставшее обязательным образцом для нижестоящих судов в схожих делах.",
@@ -88,7 +88,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181101L, 181104L, 181105L)),
         WordEntity(
             id = 181103, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "bureau_high_court", transliteration = "багац",
+            pos = "noun", semanticGroup = "bureau_high_court",
             original = "בַּג\"ץ", translation = "БАГАЦ (Высший суд справедливости)",
             definition = "כִּנּוּי לְבֵית הַמִּשְׁפָּט הָעֶלְיוֹן כְּשֶׁדָּן בַּעֲתִירוֹת נֶגֶד רָשׁוּיוֹת הַשִּׁלְטוֹן.",
             definitionNative = "Так зовут Верховный суд, когда тот рассматривает иски против органов власти.",
@@ -97,7 +97,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181101L)),
         WordEntity(
             id = 181104, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_high_court", transliteration = "арка'а ахарона",
+            pos = "phrase", semanticGroup = "bureau_high_court",
             original = "עַרְכָּאָה אַחֲרוֹנָה", translation = "последняя инстанция",
             definition = "בֵּית הַדִּין הָאַחֲרוֹן שֶׁאֶפְשָׁר לִפְנוֹת אֵלָיו לִפְנֵי שֶׁהַתַּיק נִסְגָּר סוֹפִית.",
             definitionNative = "Последняя судебная инстанция, куда можно обратиться до окончательного закрытия дела.",
@@ -106,7 +106,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181101L, 181102L, 181105L)),
         WordEntity(
             id = 181105, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_high_court", transliteration = "самхут шипутит",
+            pos = "phrase", semanticGroup = "bureau_high_court",
             original = "סַמְכוּת שִׁפּוּטִית", translation = "судебная компетенция",
             definition = "הַזְּכוּת הַחוּקִית שֶׁל בֵּית מִשְׁפָּט מְסֻיָּם לָדוּן בְּסוּג מְסֻיָּם שֶׁל תְּיֵקִים.",
             definitionNative = "Право конкретного суда рассматривать определённый круг дел по закону.",
@@ -118,7 +118,7 @@ object WordDataHebrewBureauL5 {
         // ── bureau_appeals (5) — апелляционные процедуры ──
         WordEntity(
             id = 181106, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_appeals", transliteration = "дхия аль hа-саф",
+            pos = "phrase", semanticGroup = "bureau_appeals",
             original = "דְּחִיָּה עַל הַסַּף", translation = "отказ in limine (без рассмотрения)",
             definition = "סִילּוּק תְּבִיעָה כְּבָר בִּתְחִלָּתָהּ בְּלִי לִבְחוֹן אוֹתָהּ לְגֻפָּהּ שֶׁל הַטַּעֲנָה.",
             definitionNative = "Отклонение иска в самом начале без проверки его по существу.",
@@ -127,7 +127,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181107L, 181108L, 181109L, 181110L)),
         WordEntity(
             id = 181107, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_appeals", transliteration = "бакашат ршут леар'эа",
+            pos = "phrase", semanticGroup = "bureau_appeals",
             original = "בַּקָּשַׁת רְשׁוּת לְעַרֵּעַ", translation = "ходатайство о разрешении на апелляцию",
             definition = "פְּנִיָּה רִשְׁמִית לְבֵית מִשְׁפָּט גָּבוֹהַּ יוֹתֵר כְּדֵי לְקַבֵּל הֶיתֵּר לִפְתֹּחַ הֲלִיךְ.",
             definitionNative = "Официальная просьба к вышестоящему суду разрешить открыть апелляционное производство.",
@@ -136,7 +136,7 @@ object WordDataHebrewBureauL5 {
         ),
         WordEntity(
             id = 181108, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_appeals", transliteration = "диюн носаф",
+            pos = "phrase", semanticGroup = "bureau_appeals",
             original = "דִּיּוּן נוֹסָף", translation = "повторное слушание (расширенным составом)",
             definition = "הֲלִיךְ נָדִיר שֶׁבּוֹ הֶרְכֵּב מוּרְחָב שָׁב לִשְׁפֹּט תַּיק שֶׁכְּבָר נֶחְתַּם.",
             definitionNative = "Редкая процедура, когда расширенный состав судей пересматривает уже закрытое дело.",
@@ -145,7 +145,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181106L, 181107L, 181109L, 181110L)),
         WordEntity(
             id = 181109, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_appeals", transliteration = "икув бицуа",
+            pos = "phrase", semanticGroup = "bureau_appeals",
             original = "עִכּוּב בִּצּוּעַ", translation = "приостановка исполнения (решения)",
             definition = "צַו זְמַנִּי הַמַּשְׁהֶה אֶת הוֹצָאַת פְּסַק הַדִּין לַפֹּעַל עַד הַכְרָעַת הָעֶרְעוּר.",
             definitionNative = "Временный приказ, что замораживает приведение решения в исполнение до итога апелляции.",
@@ -154,7 +154,7 @@ object WordDataHebrewBureauL5 {
         ),
         WordEntity(
             id = 181110, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_appeals", transliteration = "маасэ бэйт дин",
+            pos = "phrase", semanticGroup = "bureau_appeals",
             original = "מַעֲשֵׂה בֵּית דִּין", translation = "преюдиция (res judicata)",
             definition = "כְּלָל שֶׁלֹּא דָנִים שׁוּב בְּעִנְיָן שֶׁכְּבָר הֻכְרַע סוֹפִית עַל יְדֵי הַשּׁוֹפֵט.",
             definitionNative = "Правило, что нельзя заново судить дело, уже окончательно разрешённое судьёй.",
@@ -165,7 +165,7 @@ object WordDataHebrewBureauL5 {
         // ── bureau_constitution (5) — конституционные основы ──
         WordEntity(
             id = 181111, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_constitution", transliteration = "хок йесод",
+            pos = "phrase", semanticGroup = "bureau_constitution",
             original = "חוֹק יְסוֹד", translation = "Основной закон",
             definition = "חוֹק בַּעַל מַעֲמָד עַל-חוּקִּי הַמְּעַצֵּב אֶת מָבְנֵה הַשִּׁלְטוֹן וְזַכֻיּוֹת הָאָדָם.",
             definitionNative = "Закон высшего ранга, что задаёт устройство власти и права человека в стране.",
@@ -174,7 +174,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181112L, 181113L, 181114L, 181115L)),
         WordEntity(
             id = 181112, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_constitution", transliteration = "пискат hитгабрут",
+            pos = "phrase", semanticGroup = "bureau_constitution",
             original = "פִּסְקַת הִתְגַּבְּרוּת", translation = "оговорка о преодолении (override clause)",
             definition = "סְעִיף הַמְּאַפְשֵׁר לְכְּנֶסֶת לְחוֹקֵק חוֹק לַמְרוֹת פְּסִילָתוֹ עַל יְדֵי בֵּית הַמִּשְׁפָּט.",
             definitionNative = "Статья, что разрешает Кнессету принять закон вопреки его отмене Верховным судом.",
@@ -183,7 +183,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181111L, 181113L, 181114L, 181115L)),
         WordEntity(
             id = 181113, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_constitution", transliteration = "сэиф ницхи",
+            pos = "phrase", semanticGroup = "bureau_constitution",
             original = "סְעִיף נִצְחִי", translation = "вечная статья (неизменяемая)",
             definition = "פִּסְקָה בַּחוֹק שֶׁאִי אֶפְשָׁר לְשַׁנּוֹת אוֹתָהּ גַּם בְּרֹב גָּדוֹל מְאוֹד שֶׁל מְחוֹקְקִים.",
             definitionNative = "Статья закона, что нельзя изменить даже очень большим большинством голосов в парламенте.",
@@ -192,7 +192,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181111L, 181112L, 181114L, 181115L)),
         WordEntity(
             id = 181114, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_constitution", transliteration = "hагнат зхуйот",
+            pos = "phrase", semanticGroup = "bureau_constitution",
             original = "הֲגָנַת זְכֻיּוֹת", translation = "защита прав (фундаментальных)",
             definition = "מִנְגָּנוֹן מִשְׁפָּטִי הַשּׁוֹמֵר עַל חֵרוּת הַפְּרָט מִפְּגִיעָה שֶׁל הָרָשׁוּת אוֹ אַחֵר.",
             definitionNative = "Юридический механизм, что охраняет свободу человека от посягательств власти или другого.",
@@ -201,7 +201,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181111L, 181112L, 181113L, 181115L)),
         WordEntity(
             id = 181115, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_constitution", transliteration = "мишпат хукати",
+            pos = "phrase", semanticGroup = "bureau_constitution",
             original = "מִשְׁפָּט חֻקָּתִי", translation = "конституционное право (отрасль)",
             definition = "עָנָף שֶׁל הַמִּשְׁפָּט הָעוֹסֵק בְּמָבְנֵה הַשִּׁלְטוֹן וּבִיחֲסֵי הָרָשׁוּיוֹת זוֹ לָזוֹ.",
             definitionNative = "Отрасль права, что изучает устройство власти и взаимоотношения её ветвей.",
@@ -212,7 +212,7 @@ object WordDataHebrewBureauL5 {
         // ── bureau_state_audit (5) — государственный контроль ──
         WordEntity(
             id = 181116, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_state_audit", transliteration = "мевакер hа-мдина",
+            pos = "phrase", semanticGroup = "bureau_state_audit",
             original = "מְבַקֵּר הַמְּדִינָה", translation = "Государственный контролёр Израиля",
             definition = "פָּקִיד עַצְמָאִי הַבּוֹדֵק אֵיךְ גּוּפֵי הַשִּׁלְטוֹן מִתְנַהֲלִים וּמְפַרְסֵם דּוּחוֹת.",
             definitionNative = "Независимое должностное лицо, что проверяет работу госорганов и публикует отчёты.",
@@ -221,7 +221,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181117L, 181118L, 181119L, 181120L)),
         WordEntity(
             id = 181117, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_state_audit", transliteration = "ваадат хакира",
+            pos = "phrase", semanticGroup = "bureau_state_audit",
             original = "וַעֲדַת חֲקִירָה", translation = "следственная комиссия (государственная)",
             definition = "צֶוֶת רִשְׁמִי שֶׁמּוֹקָם כְּדֵי לִבְדּוֹק אֵרוּעַ חָמוּר וּלְהַמְלִיץ עַל אַחְרָיוּת.",
             definitionNative = "Официальный коллектив, созданный для разбора серьёзного происшествия и оценки ответственности.",
@@ -230,7 +230,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181116L, 181118L, 181119L, 181120L)),
         WordEntity(
             id = 181118, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_state_audit", transliteration = "нohель асдара",
+            pos = "phrase", semanticGroup = "bureau_state_audit",
             original = "נוֹהֵל אַסְדָּרָה", translation = "регуляторный регламент",
             definition = "מִסְמָךְ פְּנִימִי שֶׁל מִשְׂרָד מֶמְשַׁלְתִּי הַקּוֹבֵעַ אֵיךְ הַתַּהֲלִיךְ צָרִיךְ לִקְרוֹת.",
             definitionNative = "Внутренний документ ведомства, что задаёт, как должна идти процедура.",
@@ -239,7 +239,7 @@ object WordDataHebrewBureauL5 {
         ),
         WordEntity(
             id = 181119, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_state_audit", transliteration = "дуах бикорет",
+            pos = "phrase", semanticGroup = "bureau_state_audit",
             original = "דּוּחַ בִּקֹּרֶת", translation = "контрольный отчёт (аудиторский)",
             definition = "מִסְמָךְ פּוּמְבִּי הַמְּתָאֵר מַמְצָאִים שֶׁל בְּדִיקָה רִשְׁמִית עַל גּוּף שִׁלְטוֹנִי.",
             definitionNative = "Открытый документ, описывающий выводы официальной проверки органа власти.",
@@ -248,7 +248,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181116L, 181117L, 181118L, 181120L)),
         WordEntity(
             id = 181120, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_state_audit", transliteration = "hит'алмут ми-мамца'им",
+            pos = "phrase", semanticGroup = "bureau_state_audit",
             original = "הִתְעַלְּמוּת מִמַּמְצָאִים", translation = "игнорирование выводов (контролёра)",
             definition = "כְּשֶׁרָשׁוּת לֹא מַתְקֶנֶת לִיקּוּיִים שֶׁדּוּחַ רִשְׁמִי הִצְבִּיעַ עֲלֵיהֶם.",
             definitionNative = "Когда ведомство не исправляет нарушения, на которые указал официальный отчёт.",
@@ -259,7 +259,7 @@ object WordDataHebrewBureauL5 {
         // ── bureau_top_legal (5) — продвинутая правовая терминология ──
         WordEntity(
             id = 181121, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_top_legal", transliteration = "доктринат битлут",
+            pos = "phrase", semanticGroup = "bureau_top_legal",
             original = "דּוֹקְטְרִינַת בִּטְלוּת", translation = "доктрина ничтожности",
             definition = "תּוֹרָה מִשְׁפָּטִית הַקּוֹבַעַת מָתַי פְּעוּלָה שִׁלְטוֹנִית נֶחְשֶׁבֶת חַסְרַת תֹּקֶף מִלְּכַתְּחִילָה.",
             definitionNative = "Учение, что определяет, когда властное действие изначально лишено силы.",
@@ -268,7 +268,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181122L, 181123L, 181124L, 181125L)),
         WordEntity(
             id = 181122, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_top_legal", transliteration = "хасинут парламентарит",
+            pos = "phrase", semanticGroup = "bureau_top_legal",
             original = "חֲסִינוּת פַּרְלָמֶנְטָרִית", translation = "парламентский иммунитет",
             definition = "הֲגָנָה מִשְׁפָּטִית מְיֻחֶדֶת לְחֶבְרֵי כְּנֶסֶת מִפְּנֵי תְּבִיעוֹת בִּגְלַל פְּעִילוּתָם הַצִּבּוּרִית.",
             definitionNative = "Особая защита депутатов от исков и преследований за их публичную деятельность.",
@@ -277,7 +277,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181121L, 181123L, 181124L, 181125L)),
         WordEntity(
             id = 181123, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_top_legal", transliteration = "хозэ ахид",
+            pos = "phrase", semanticGroup = "bureau_top_legal",
             original = "חוֹזֶה אָחִיד", translation = "типовой договор (присоединения)",
             definition = "טֹפֶס מוּכָן מֵרֹאשׁ שֶׁחֶבְרָה גְּדוֹלָה מַצִּיגָה לַלָּקוֹחַ בְּלִי אֶפְשָׁרוּת לְשַׁנּוֹת אוֹתוֹ.",
             definitionNative = "Бланк, заранее заготовленный фирмой и предлагаемый клиенту без права изменить условия.",
@@ -286,7 +286,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181121L, 181122L, 181124L, 181125L)),
         WordEntity(
             id = 181124, setId = 1811, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "bureau_top_legal", transliteration = "цав асэ",
+            pos = "phrase", semanticGroup = "bureau_top_legal",
             original = "צַו עֲשֵׂה", translation = "приказ совершить действие",
             definition = "הוֹרָאָה שִׁפּוּטִית הַמְּחַיֶּבֶת אָדָם אוֹ רָשׁוּת לַעֲשׂוֹת מַעֲשֶׂה מְסֻיָּם וּפָעִיל.",
             definitionNative = "Судебное предписание, что обязывает лицо или орган совершить конкретное активное действие.",
@@ -295,7 +295,7 @@ object WordDataHebrewBureauL5 {
          fillInBlankExclusions = listOf(181121L, 181122L, 181123L, 181125L)),
         WordEntity(
             id = 181125, setId = 1811, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "bureau_top_legal", transliteration = "такнон ирони",
+            pos = "phrase", semanticGroup = "bureau_top_legal",
             original = "תַּקָּנוֹן עִירוֹנִי", translation = "муниципальный устав (подзаконный)",
             definition = "אֹסֶף כְּלָלִים מְקוֹמִיִּים שֶׁמּוֹעֶצֶת הָעִיר חוֹקֶקֶת לְהַסְדָּרַת הַחַיִּים בָּעִיר.",
             definitionNative = "Свод местных правил, что городской совет принимает для упорядочивания жизни в городе.",

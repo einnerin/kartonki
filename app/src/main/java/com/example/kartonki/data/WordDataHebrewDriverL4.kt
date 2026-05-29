@@ -44,7 +44,7 @@ object WordDataHebrewDriverL4 {
         // ── driver_dispatch (5) — диспетчерская работа ──
         WordEntity(
             id = 171501, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_dispatch", transliteration = "menahel mishmeret",
+            pos = "phrase", semanticGroup = "driver_dispatch",
             original = "מְנַהֵל מִשְׁמֶרֶת", translation = "диспетчер смены",
             definition = "אַחְרַאי שֶׁמְּחַלֵּק עֲבוֹדָה לְצֶוֶת הַנְּהָגִים בְּמֶשֶׁךְ הַשָּׁעוֹת.",
             definitionNative = "Сотрудник, распределяющий рейсы между водителями в течение часов.",
@@ -53,7 +53,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171502L, 171503L, 171504L, 171505L)),
         WordEntity(
             id = 171502, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_dispatch", transliteration = "khadar bakara",
+            pos = "phrase", semanticGroup = "driver_dispatch",
             original = "חֲדַר בַּקָּרָה", translation = "диспетчерская",
             definition = "חֶדֶר עִם מָסָכִים שֶׁבּוֹ עוֹקְבִים אַחַר כָּל הַמַּשָּׂאִיּוֹת.",
             definitionNative = "Помещение с экранами, откуда следят за всеми машинами на рейсе.",
@@ -62,7 +62,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171501L, 171503L, 171504L, 171505L)),
         WordEntity(
             id = 171503, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_dispatch", transliteration = "shibutz nesi'ot",
+            pos = "phrase", semanticGroup = "driver_dispatch",
             original = "שִׁבּוּץ נְסִיעוֹת", translation = "распределение рейсов",
             definition = "חַלּוּקַת מַסְלוּלִים בֵּין נְהָגִים לְפִי כִּשּׁוּרִים וְזְמִינוּת.",
             definitionNative = "Назначение маршрутов разным водителям с учётом смен и навыков.",
@@ -71,7 +71,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171501L, 171502L, 171504L, 171505L)),
         WordEntity(
             id = 171504, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_dispatch", transliteration = "ikhul zmanim",
+            pos = "phrase", semanticGroup = "driver_dispatch",
             original = "אִיכּוּל זְמַנִּים", translation = "расчёт времени в пути",
             definition = "הַעֲרָכָה כַּמָּה שָׁעוֹת תִּקַּח כָּל נְסִיעָה לְפִי הַתְּנוּעָה בַּדֶּרֶךְ.",
             definitionNative = "Оценка длительности рейса с учётом пробок и условий дороги.",
@@ -80,7 +80,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171501L, 171502L, 171503L, 171505L)),
         WordEntity(
             id = 171505, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_dispatch", transliteration = "te'um masa'ot",
+            pos = "phrase", semanticGroup = "driver_dispatch",
             original = "תֵּאוּם מַשָּׂאוֹת", translation = "координация грузов",
             definition = "סִנְכְּרוּן בֵּין מִשְׁלוֹחִים שׁוֹנִים כְּדֵי לִמְלֵא רֶכֶב בְּמַחֲזוֹר אֶחָד.",
             definitionNative = "Согласование разных грузов, чтобы машина шла полной за один заезд.",
@@ -91,7 +91,7 @@ object WordDataHebrewDriverL4 {
         // ── driver_documents_pro (5) — профессиональные документы ──
         WordEntity(
             id = 171506, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_documents_pro", transliteration = "shtar mit'an",
+            pos = "phrase", semanticGroup = "driver_documents_pro",
             original = "שְׁטָר מִטְעָן", translation = "коносамент, грузовой документ",
             definition = "מִסְמָךְ הַמְפָרֵט מַה הוּבַל, מִמִּי וּלְמִי, וְכַמָּה זֶה שׁוֹקֵל.",
             definitionNative = "Бумага с описанием груза: что везут, от кого, кому и сколько весит.",
@@ -100,7 +100,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171507L, 171508L, 171509L, 171510L, 171525L)),
         WordEntity(
             id = 171507, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_documents_pro", transliteration = "ishur ma'avar gvul",
+            pos = "phrase", semanticGroup = "driver_documents_pro",
             original = "אִישׁוּר מַעֲבָר גְּבוּל", translation = "разрешение на пересечение границы",
             definition = "תְּעוּדָה הַמְּתִירָה לְרֶכֶב מִסְחָרִי לַחֲצוֹת לִמְדִינָה אַחֶרֶת.",
             definitionNative = "Документ, дающий грузовой машине право выехать в другую страну.",
@@ -109,7 +109,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171506L, 171508L, 171509L, 171510L)),
         WordEntity(
             id = 171508, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_documents_pro", transliteration = "kartis tachograph",
+            pos = "phrase", semanticGroup = "driver_documents_pro",
             original = "כַּרְטִיס תַּכּוֹגְרַף", translation = "карточка тахографа",
             definition = "כַּרְטִיס חָכָם הָאִישִׁי שֶׁל הַנֶּהָג שֶׁשּׁוֹמֵר אֶת שְׁעוֹת הַנְּהִיגָה.",
             definitionNative = "Личная смарт-карта, фиксирующая часы за рулём конкретного человека.",
@@ -118,7 +118,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171506L, 171507L, 171509L, 171510L)),
         WordEntity(
             id = 171509, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_documents_pro", transliteration = "rishum she'ot nehiga",
+            pos = "phrase", semanticGroup = "driver_documents_pro",
             original = "רִשּׁוּם שְׁעוֹת נְהִיגָה", translation = "учёт часов за рулём",
             definition = "תִּעוּד מְדֻיָּק שֶׁל זְמַן עֲבוֹדָה וּזְמַן מְנוּחָה לְכָל יוֹם.",
             definitionNative = "Точная фиксация рабочих и отдыхающих часов по каждому дню.",
@@ -127,7 +127,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171506L, 171507L, 171508L, 171510L)),
         WordEntity(
             id = 171510, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_documents_pro", transliteration = "te'udat ADR",
+            pos = "phrase", semanticGroup = "driver_documents_pro",
             original = "תְּעוּדַת ADR", translation = "сертификат ADR (опасные грузы)",
             definition = "אִישׁוּר מְיֻחָד לְהוֹבָלַת חֳמָרִים מְסֻכָּנִים כְּגוֹן דֶּלֶק אוֹ חוּמְצָה.",
             definitionNative = "Особое свидетельство для перевозки топлива, кислот и подобных веществ.",
@@ -138,7 +138,7 @@ object WordDataHebrewDriverL4 {
         // ── driver_special_cargo (5) — специальные грузы ──
         WordEntity(
             id = 171511, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_special_cargo", transliteration = "mash'it mekureret",
+            pos = "phrase", semanticGroup = "driver_special_cargo",
             original = "מַשְׁאִית מְקֻרֶּרֶת", translation = "рефрижератор (фургон)",
             definition = "רֶכֶב הוֹבָלָה עִם תָּא קֵרוּר לְמוּצָרִים שֶׁמִּתְקַלְקְלִים בַּחֹם.",
             definitionNative = "Грузовик с холодным отсеком для скоропортящихся продуктов.",
@@ -147,7 +147,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171512L, 171513L, 171514L, 171515L)),
         WordEntity(
             id = 171512, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_special_cargo", transliteration = "masa khai",
+            pos = "phrase", semanticGroup = "driver_special_cargo",
             original = "מַשָּׂא חַי", translation = "живой груз (скот, птица)",
             definition = "בַּעֲלֵי חַיִּים שֶׁמּוֹבִילִים בִּכְלִי רֶכֶב מְיֻחָד וּמְאֻוְרָר.",
             definitionNative = "Животных, что везут на специально приспособленном проветриваемом транспорте.",
@@ -156,7 +156,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171511L, 171513L, 171514L, 171515L)),
         WordEntity(
             id = 171513, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_special_cargo", transliteration = "pikuakh mishkal",
+            pos = "phrase", semanticGroup = "driver_special_cargo",
             original = "פִּקּוּחַ מִשְׁקָל", translation = "весовой контроль",
             definition = "בְּדִיקָה בַּדֶּרֶךְ שֶׁל מִשְׁקָל הַמַּשָּׂא לְמְנֹעַ עֲמִיסַת יֶתֶר.",
             definitionNative = "Проверка на дороге, не превышен ли допустимый вес груза.",
@@ -165,7 +165,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171511L, 171512L, 171514L, 171515L)),
         WordEntity(
             id = 171514, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_special_cargo", transliteration = "masa yekar erekh",
+            pos = "phrase", semanticGroup = "driver_special_cargo",
             original = "מַשָּׂא יְקַר עֵרֶךְ", translation = "ценный груз",
             definition = "מִטְעָן יָקָר מְאוֹד שֶׁדּוֹרֵשׁ לִוּוּי מְיֻחָד וּבִטָּחוֹן מוּגְבָּר.",
             definitionNative = "Дорогой товар, который сопровождают охрана и усиленная безопасность.",
@@ -174,7 +174,7 @@ object WordDataHebrewDriverL4 {
         ),
         WordEntity(
             id = 171515, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_special_cargo", transliteration = "mit'an bilti shigrati",
+            pos = "phrase", semanticGroup = "driver_special_cargo",
             original = "מַטְעָן בִּלְתִּי שִׁגְרָתִי", translation = "нестандартный груз",
             definition = "מִטְעָן שֶׁאֵינוֹ נִכְנָס בִּגְדָלִים רְגִילִים — אָרֹךְ, גָּבוֹהַּ אוֹ כָּבֵד מְאוֹד.",
             definitionNative = "Груз, не вписывающийся в типовые габариты по длине, высоте или весу.",
@@ -185,7 +185,7 @@ object WordDataHebrewDriverL4 {
         // ── driver_special_vehicle (5) — спецтехника, составы ──
         WordEntity(
             id = 171516, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_special_vehicle", transliteration = "rekhev tseruf",
+            pos = "phrase", semanticGroup = "driver_special_vehicle",
             original = "רֶכֶב צֵרוּף", translation = "автопоезд, седельный тягач",
             definition = "מַשְׁאִית עִם נִגְרֶרֶת אֲרֻכָּה הַמְחַבֶּרֶת אֵלֶיהָ בְּצַוָּאר.",
             definitionNative = "Тягач с длинным прицепом, соединённым через седельное устройство.",
@@ -194,7 +194,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171511L, 171517L, 171518L, 171519L, 171520L)),
         WordEntity(
             id = 171517, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_special_vehicle", transliteration = "manof al masa'it",
+            pos = "phrase", semanticGroup = "driver_special_vehicle",
             original = "מָנוֹף עַל מַשָּׂאִית", translation = "манипулятор-кран на грузовике",
             definition = "זְרוֹעַ הִידְרָאוּלִית מֻרְכֶּבֶת עַל הָרֶכֶב לְהַעֲמָסָה וּפְרִיקָה עַצְמִית.",
             definitionNative = "Гидравлическая стрела на машине для самопогрузки и разгрузки.",
@@ -203,7 +203,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171516L, 171518L, 171519L, 171520L)),
         WordEntity(
             id = 171518, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_special_vehicle", transliteration = "me'arbel beton",
+            pos = "phrase", semanticGroup = "driver_special_vehicle",
             original = "מְעַרְבֵּל בֶּטוֹן", translation = "автобетоносмеситель, миксер",
             definition = "מַשְׁאִית עִם תֹּף סוֹבֵב שֶׁמַּחֲזִיק אֶת הַתַּעֲרֹבֶת נוֹזְלִית עַד לָאֲתָר.",
             definitionNative = "Машина с вращающимся барабаном, держащим смесь жидкой до стройки.",
@@ -212,7 +212,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171516L, 171517L, 171519L, 171520L)),
         WordEntity(
             id = 171519, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_special_vehicle", transliteration = "mash'it tender",
+            pos = "phrase", semanticGroup = "driver_special_vehicle",
             original = "מַשְׁאִית טֶנְדֶּר", translation = "самосвал",
             definition = "רֶכֶב כָּבֵד עִם אַרְגָּז שֶׁמִּתְהַפֵּךְ לְפַנּוֹת חֹמֶר בְּבַת אַחַת.",
             definitionNative = "Тяжёлая машина с откидным кузовом для разом высыпать сыпучее.",
@@ -221,7 +221,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171516L, 171517L, 171518L, 171520L)),
         WordEntity(
             id = 171520, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_special_vehicle", transliteration = "manof hidrauli",
+            pos = "phrase", semanticGroup = "driver_special_vehicle",
             original = "מָנוֹף הִידְרָאוּלִי", translation = "гидравлический подъёмник",
             definition = "מַעֲרֶכֶת הֲרָמָה הַפּוֹעֶלֶת בְּלַחַץ שֶׁמֶן וּמְרִימָה מַשָּׂא כָּבֵד.",
             definitionNative = "Подъёмное устройство на масляном давлении, поднимающее тяжёлый груз.",
@@ -232,7 +232,7 @@ object WordDataHebrewDriverL4 {
         // ── driver_legal_pro (5) — юридические тонкости профессии ──
         WordEntity(
             id = 171521, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_legal_pro", transliteration = "akhrayut ezrakhit miktsoit",
+            pos = "phrase", semanticGroup = "driver_legal_pro",
             original = "אַחְרָיוּת אֶזְרָחִית מִקְצוֹעִית", translation = "профессиональная гражданская ответственность",
             definition = "חוֹבָה לְפַצּוֹת לָקוֹחַ עַל נֶזֶק שֶׁנִּגְרַם בִּמְהֲלַךְ הָעֲבוֹדָה.",
             definitionNative = "Обязанность возместить заказчику ущерб, нанесённый при работе.",
@@ -241,7 +241,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171522L, 171523L, 171524L, 171525L)),
         WordEntity(
             id = 171522, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "driver_legal_pro", transliteration = "shlilat rishyon",
+            pos = "phrase", semanticGroup = "driver_legal_pro",
             original = "שְׁלִילַת רִשְׁיוֹן", translation = "лишение прав",
             definition = "סַנְקְצְיָה שִׁפּוּטִית הַמּוֹנַעַת מֵאָדָם לִנְהֹג זְמַן מָה.",
             definitionNative = "Судебная мера, временно запрещающая человеку садиться за руль.",
@@ -250,7 +250,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171521L, 171523L, 171524L, 171525L)),
         WordEntity(
             id = 171523, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_legal_pro", transliteration = "bokhen nehiga",
+            pos = "phrase", semanticGroup = "driver_legal_pro",
             original = "בּוֹחֵן נְהִיגָה", translation = "экзаменатор по вождению",
             definition = "פָּקִיד מֻסְמָךְ הַמַּעֲרִיךְ אֶת הַנֶּהָג בְּמִבְחָן הַמַּעֲשִׂי בַּכְּבִישׁ.",
             definitionNative = "Уполномоченный сотрудник, оценивающий ученика на практическом экзамене.",
@@ -259,7 +259,7 @@ object WordDataHebrewDriverL4 {
          fillInBlankExclusions = listOf(171521L, 171522L, 171524L, 171525L)),
         WordEntity(
             id = 171524, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_legal_pro", transliteration = "kefel bituakh",
+            pos = "phrase", semanticGroup = "driver_legal_pro",
             original = "כְּפֶל בִּטּוּחַ", translation = "двойное страхование",
             definition = "מַצָּב שֶׁשְּׁתֵּי פּוֹלִיסוֹת מְכַסּוֹת אוֹתוֹ סִכּוּן עַל אוֹתוֹ הָרֶכֶב.",
             definitionNative = "Когда два полиса покрывают один и тот же риск на одну машину.",
@@ -268,7 +268,7 @@ object WordDataHebrewDriverL4 {
         ),
         WordEntity(
             id = 171525, setId = 1715, languagePair = "he-ru", rarity = "LEGENDARY",
-            pos = "phrase", semanticGroup = "driver_legal_pro", transliteration = "khoze ha'asaka",
+            pos = "phrase", semanticGroup = "driver_legal_pro",
             original = "חוֹזֶה הַעֲסָקָה", translation = "трудовой контракт водителя",
             definition = "מִסְמָךְ הַקּוֹבֵעַ שָׂכָר, שָׁעוֹת וּזְכֻיּוֹת בֵּין הַנֶּהָג לַחֶבְרָה.",
             definitionNative = "Документ о зарплате, часах и правах между водителем и компанией.",

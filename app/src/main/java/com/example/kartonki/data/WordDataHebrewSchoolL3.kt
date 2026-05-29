@@ -68,7 +68,7 @@ object WordDataHebrewSchoolL3 {
         // ── school_subjects (5) — учебные предметы ──
         WordEntity(
             id = 181401, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "school_subjects", transliteration = "matematika",
+            pos = "noun", semanticGroup = "school_subjects",
             original = "מָתֵמָטִיקָה", translation = "математика",
             definition = "מִקְצוֹעַ בֵּית-סֵפֶר עַל מִסְפָּרִים, צוּרוֹת וּפִתְרוֹן תַּרְגִּילִים.",
             definitionNative = "Школьный предмет про числа, фигуры и решение задач.",
@@ -77,7 +77,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181402L, 181403L, 181404L, 181405L)),
         WordEntity(
             id = 181402, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "school_subjects", transliteration = "anglit",
+            pos = "noun", semanticGroup = "school_subjects",
             original = "אַנְגְלִית", translation = "английский язык",
             definition = "מִקְצוֹעַ הַחוֹבָה הָעִקָּרִי לְשָׂפָה זָרָה בְּבָתֵּי הַסֵּפֶר.",
             definitionNative = "Главный обязательный предмет по иностранному языку в школах.",
@@ -86,7 +86,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181401L, 181403L, 181404L, 181405L)),
         WordEntity(
             id = 181403, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "school_subjects", transliteration = "historya",
+            pos = "noun", semanticGroup = "school_subjects",
             original = "הִיסְטוֹרְיָה", translation = "история",
             definition = "מִקְצוֹעַ הַלּוֹמֵד עַל אֵרוּעֵי עָבָר שֶׁל עַמִּים וּמְדִינוֹת.",
             definitionNative = "Предмет о событиях прошлого народов и государств.",
@@ -95,7 +95,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181401L, 181402L, 181404L, 181405L)),
         WordEntity(
             id = 181404, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "school_subjects", transliteration = "madaim",
+            pos = "noun", semanticGroup = "school_subjects",
             original = "מַדָּעִים", translation = "естественные науки",
             definition = "מִקְצוֹעַ מְשֻׁלָּב עִם פִיסִיקָה, כִימְיָה וּבִיוֹלוֹגְיָה לִילָדִים.",
             definitionNative = "Совмещённый предмет с физикой, химией и биологией для младших.",
@@ -104,7 +104,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181401L, 181402L, 181403L, 181405L)),
         WordEntity(
             id = 181405, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "noun", semanticGroup = "school_subjects", transliteration = "geografya",
+            pos = "noun", semanticGroup = "school_subjects",
             original = "גֵּאוֹגְרַפְיָה", translation = "география",
             definition = "מִקְצוֹעַ עַל מַפּוֹת, אַקְלִים וְחַיֵּי בְּנֵי-אָדָם בְּאֲזוֹרִים שׁוֹנִים.",
             definitionNative = "Предмет про карты, климат и жизнь людей в разных регионах.",
@@ -115,7 +115,7 @@ object WordDataHebrewSchoolL3 {
         // ── school_exams (5) — экзамены и оценивание ──
         WordEntity(
             id = 181406, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "school_exams", transliteration = "bokhan",
+            pos = "noun", semanticGroup = "school_exams",
             original = "בּוֹחַן", translation = "контрольная работа",
             definition = "מִבְחָן קָצָר בְּנוֹשֵׂא אֶחָד שֶׁמּוֹרֶה נוֹתֵן לְלֹא אַזְהָרָה רַבָּה.",
             definitionNative = "Короткая проверка по одной теме, которую учитель даёт почти без предупреждения.",
@@ -124,7 +124,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181407L, 181410L)),
         WordEntity(
             id = 181407, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "school_exams", transliteration = "bkhina",
+            pos = "noun", semanticGroup = "school_exams",
             original = "בְּחִינָה", translation = "экзамен",
             definition = "מִבְחָן רִשְׁמִי וְאָרֹךְ עַל חֹמֶר שֶׁל פֶּרֶק שָׁלֵם אוֹ סֶמֶסְטֶר.",
             definitionNative = "Официальная и долгая проверка по материалу целой главы или семестра.",
@@ -133,7 +133,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181406L, 181410L)),
         WordEntity(
             id = 181408, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_exams", transliteration = "mivkhan bagrut",
+            pos = "phrase", semanticGroup = "school_exams",
             original = "מִבְחָן בָּגְרוּת", translation = "экзамен на аттестат зрелости",
             definition = "בְּחִינָה אַרְצִית בְּסוֹף הַתִּיכוֹן הַקּוֹבַעַת זְכָאוּת לְתְעוּדַת סִיּוּם.",
             definitionNative = "Государственный экзамен в конце старшей школы, дающий право на аттестат.",
@@ -142,7 +142,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181409L, 181423L)),
         WordEntity(
             id = 181409, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_exams", transliteration = "tziyun bagrut",
+            pos = "phrase", semanticGroup = "school_exams",
             original = "צִיּוּן בָּגְרוּת", translation = "балл багрута",
             definition = "הַצִּיּוּן הַסּוֹפִי בְּמִקְצוֹעַ אַחֲרֵי שִׁקְלוּל הַמִּבְחָן וְהַצִּיּוּן הַשְּׁנָתִי.",
             definitionNative = "Итоговая оценка по предмету после взвешивания экзамена и годового балла.",
@@ -151,7 +151,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181408L)),
         WordEntity(
             id = 181410, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "school_exams", transliteration = "makhatzit",
+            pos = "noun", semanticGroup = "school_exams",
             original = "מַחְצִית", translation = "полугодие",
             definition = "חֵצִי שֶׁל שְׁנַת הַלִּמּוּדִים, אַחֲרָיו מְקַבְּלִים תְּעוּדָה בֵּינַיִם.",
             definitionNative = "Половина учебного года, после которой выдают промежуточный табель.",
@@ -162,7 +162,7 @@ object WordDataHebrewSchoolL3 {
         // ── school_excursions (5) — экскурсии, поездки и проекты ──
         WordEntity(
             id = 181411, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "school_excursions", transliteration = "tiyul beit-sifri",
+            pos = "phrase", semanticGroup = "school_excursions",
             original = "טִיּוּל בֵּית-סִפְרִי", translation = "школьная экскурсия",
             definition = "יוֹם יְצִיאָה מְאֻרְגָּן שֶׁל כִּתָּה עִם מוֹרִים לְאֲתָר חוּצוֹת אוֹ מוּזֵיאוֹן.",
             definitionNative = "Организованный выездной день класса с учителями на природу или в музей.",
@@ -171,7 +171,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181412L, 181413L, 181414L, 181415L)),
         WordEntity(
             id = 181412, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_excursions", transliteration = "masa siyum",
+            pos = "phrase", semanticGroup = "school_excursions",
             original = "מַסַּע סִיוּם", translation = "выпускное путешествие",
             definition = "טִיּוּל אָרֹךְ שֶׁל שָׁלֹשׁ עַד חָמֵשׁ יָמִים בְּסוֹף שִׁכְבַת לִמּוּדִים.",
             definitionNative = "Длинный поход на три–пять дней в конце выпускного потока.",
@@ -180,7 +180,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181411L, 181413L, 181414L, 181415L)),
         WordEntity(
             id = 181413, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_excursions", transliteration = "yemei shayit",
+            pos = "phrase", semanticGroup = "school_excursions",
             original = "יְמֵי שַׁיִט", translation = "дни плавания",
             definition = "תְּכוּנָה חוּצוֹת שֶׁל שַׁיִט עַל סִירָה אוֹ אֳנִיָּה לְכִתּוֹת בְּחוֹף.",
             definitionNative = "Внешкольная программа с плаванием на лодке или корабле для классов на побережье.",
@@ -189,7 +189,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181411L, 181412L, 181414L, 181415L)),
         WordEntity(
             id = 181414, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_excursions", transliteration = "sadna khuts-sifrit",
+            pos = "phrase", semanticGroup = "school_excursions",
             original = "סַדְנָה חוּץ-סִפְרִית", translation = "внешкольная мастерская",
             definition = "פְּעִילוּת לִמּוּדִית מַעֲשִׂית מִחוּץ לִכְתָלֵי הַמּוֹסָד עַל יְדֵי גּוּף חִיצוֹנִי.",
             definitionNative = "Практическое занятие за стенами учреждения, проводимое внешним организатором.",
@@ -198,7 +198,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181411L, 181412L, 181413L, 181415L)),
         WordEntity(
             id = 181415, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_excursions", transliteration = "khidush pedagogi",
+            pos = "phrase", semanticGroup = "school_excursions",
             original = "חִדּוּשׁ פֶּדָגוֹגִי", translation = "педагогическое новшество",
             definition = "שִׁיטָה אוֹ פְּרוֹיֶקְט יְצִירָתִי שֶׁמּוֹרֶה מַכְנִיס לַכִּתָּה כְּדֵי לְעוֹרֵר עִנְיָן.",
             definitionNative = "Творческий метод или проект, который учитель вносит в класс, чтобы зажечь интерес.",
@@ -209,7 +209,7 @@ object WordDataHebrewSchoolL3 {
         // ── school_certificates (5) — аттестация и табели ──
         WordEntity(
             id = 181416, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "school_certificates", transliteration = "teuda shnatit",
+            pos = "phrase", semanticGroup = "school_certificates",
             original = "תְּעוּדָה שְׁנָתִית", translation = "годовой табель",
             definition = "מִסְמָךְ סוֹף שָׁנָה עִם הַצִּיּוּנִים שֶׁל הַתַּלְמִיד בְּכָל הַמִּקְצוֹעוֹת.",
             definitionNative = "Документ конца года с оценками ученика по всем предметам.",
@@ -218,7 +218,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181417L, 181418L, 181419L, 181420L)),
         WordEntity(
             id = 181417, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_certificates", transliteration = "teudat bagrut",
+            pos = "phrase", semanticGroup = "school_certificates",
             original = "תְּעוּדַת בָּגְרוּת", translation = "аттестат зрелости",
             definition = "מִסְמָךְ רִשְׁמִי שֶׁל סוֹף תִּיכוֹן הַמְּאַשֵּׁר זְכָאוּת לִלְמֹד בָּאוּנִיבֶרְסִיטָה.",
             definitionNative = "Официальный документ конца старшей школы, подтверждающий право учиться в университете.",
@@ -227,7 +227,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181416L, 181418L, 181419L, 181420L)),
         WordEntity(
             id = 181418, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "school_certificates", transliteration = "teudat siyum",
+            pos = "phrase", semanticGroup = "school_certificates",
             original = "תְּעוּדַת סִיּוּם", translation = "свидетельство об окончании",
             definition = "מִסְמָךְ הַמְּאַשֵּׁר שֶׁהַתַּלְמִיד גָּמַר שָׁלָב לִמּוּדִים מְסֻיָּם בְּהַצְלָחָה.",
             definitionNative = "Документ, что ученик успешно закончил определённый этап учёбы.",
@@ -236,7 +236,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181416L, 181417L, 181419L, 181420L)),
         WordEntity(
             id = 181419, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_certificates", transliteration = "gilyon tziyunim",
+            pos = "phrase", semanticGroup = "school_certificates",
             original = "גִּלְיוֹן צִיּוּנִים", translation = "ведомость оценок",
             definition = "טֹפֶס מְפֹרָט שֶׁל כָּל הַצִּיּוּנִים שֶׁל תַּלְמִיד עַל פְּנֵי כַּמָּה שָׁנִים.",
             definitionNative = "Подробный бланк всех оценок ученика за несколько лет.",
@@ -245,7 +245,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181416L, 181417L, 181418L, 181420L)),
         WordEntity(
             id = 181420, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_certificates", transliteration = "ishur nokhekhut",
+            pos = "phrase", semanticGroup = "school_certificates",
             original = "אִישּׁוּר נוֹכְחוּת", translation = "справка о посещении",
             definition = "מִסְמָךְ קָצָר מִבֵּית הַסֵּפֶר הַמְּאַשֵּׁר שֶׁהַיֶּלֶד מַגִּיעַ סָדִיר לַשִּׁעוּרִים.",
             definitionNative = "Краткая бумага из школы, подтверждающая, что ребёнок ходит на уроки регулярно.",
@@ -256,7 +256,7 @@ object WordDataHebrewSchoolL3 {
         // ── school_secondary (5) — средняя и старшая школа ──
         WordEntity(
             id = 181421, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "phrase", semanticGroup = "school_secondary", transliteration = "khativat beinaim",
+            pos = "phrase", semanticGroup = "school_secondary",
             original = "חֲטִיבַת בֵּינַיִם", translation = "средняя школа",
             definition = "שָׁלָב בֵּינַיִם בֵּין יְסוֹדִי לְתִיכוֹן, כּוֹלֵל כִּתּוֹת שְׁבִיעִית עַד תְּשִׁיעִית.",
             definitionNative = "Промежуточная ступень между начальной и старшей, охватывает 7–9 классы.",
@@ -265,7 +265,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181422L, 181423L, 181424L, 181425L)),
         WordEntity(
             id = 181422, setId = 1814, languagePair = "he-ru", rarity = "RARE",
-            pos = "noun", semanticGroup = "school_secondary", transliteration = "tikhon",
+            pos = "noun", semanticGroup = "school_secondary",
             original = "תִּיכוֹן", translation = "старшая школа",
             definition = "שָׁלָב הַלִּמּוּדִים הָאַחֲרוֹן בְּבֵית סֵפֶר, מִכִּתָּה י' עַד י\"ב.",
             definitionNative = "Последняя школьная ступень, с десятого по двенадцатый класс.",
@@ -274,7 +274,7 @@ object WordDataHebrewSchoolL3 {
         ),
         WordEntity(
             id = 181423, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_secondary", transliteration = "astronomya tikhonit",
+            pos = "phrase", semanticGroup = "school_secondary",
             original = "אַסְטְרוֹנוֹמְיָה תִּיכוֹנִית", translation = "астрономия в тихоне",
             definition = "מִקְצוֹעַ מֻגְבָּר חוֹקֵר כּוֹכָבִים וּמַעֲרֶכֶת הַשֶּׁמֶשׁ בְּבֵית הַסֵּפֶר הָעֶלְיוֹן.",
             definitionNative = "Профильный предмет о звёздах и Солнечной системе в старшей школе.",
@@ -283,7 +283,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181421L, 181424L, 181425L)),
         WordEntity(
             id = 181424, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_secondary", transliteration = "megamat limudim",
+            pos = "phrase", semanticGroup = "school_secondary",
             original = "מְגַמַּת לִימּוּדִים", translation = "профильное направление",
             definition = "אֲשׁוּל לִמּוּדִים מֻגְבָּר בְּתַחוּם אֶחָד שֶׁתַּלְמִיד בּוֹחֵר בַּתִּיכוֹן.",
             definitionNative = "Углублённый учебный кластер по одной области, выбираемый в старшей школе.",
@@ -292,7 +292,7 @@ object WordDataHebrewSchoolL3 {
          fillInBlankExclusions = listOf(181421L, 181423L, 181425L)),
         WordEntity(
             id = 181425, setId = 1814, languagePair = "he-ru", rarity = "EPIC",
-            pos = "phrase", semanticGroup = "school_secondary", transliteration = "yoetz khinukhi",
+            pos = "phrase", semanticGroup = "school_secondary",
             original = "יוֹעֵץ חִינּוּכִי", translation = "педагогический советник",
             definition = "אִישׁ צֶוֶת בֵּית סֵפֶר שֶׁתּוֹמֵךְ בַּתַּלְמִידִים בִּקְשִׁי לִמּוּדִי אוֹ אִישִׁי.",
             definitionNative = "Школьный сотрудник, который поддерживает учеников в учебных или личных трудностях.",

@@ -30,7 +30,7 @@ object WordDataHebrewBatch8 {
 
         WordEntity(
             id = 104701, setId = 1047, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mall_basics", transliteration = "kanyon",
+            pos = "noun", semanticGroup = "mall_basics",
             original = "קַנְיוֹן", translation = "торговый центр, молл",
             definition = "מִבְנֶה גָּדוֹל שֶׁבּוֹ חֲנוּיּוֹת רַבּוֹת תַּחַת קוֹרַת גַּג אֶחָד.",
             definitionNative = "Большое здание, где под одной крышей расположены многие магазины.",
@@ -38,7 +38,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Мы пошли в קַנְיוֹן покупать одежду к празднику."),
         WordEntity(
             id = 104702, setId = 1047, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mall_clothing", transliteration = "mida",
+            pos = "noun", semanticGroup = "mall_clothing",
             original = "מִדָּה", translation = "размер (одежды)",
             definition = "הַמִּדָּה הַקָּבוּעָה שֶׁל בֶּגֶד כְּגוֹן S, M, L, XL.",
             definitionNative = "Маркировка для подбора одежды по фигуре — S, M, L, XL.",
@@ -47,7 +47,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104703L)),
         WordEntity(
             id = 104703, setId = 1047, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mall_clothing", transliteration = "ta medida",
+            pos = "noun", semanticGroup = "mall_clothing",
             original = "תָּא מְדִידָה", translation = "примерочная",
             definition = "חֶדֶר קָטָן בְּחֲנוּת שֶׁבּוֹ אֶפְשָׁר לִלְבֹּשׁ בֶּגֶד וְלִבְדֹּק אוֹתוֹ עַל הַגּוּף.",
             definitionNative = "Маленькая кабина в магазине, где можно надеть и проверить одежду на себе.",
@@ -56,7 +56,7 @@ object WordDataHebrewBatch8 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104704, setId = 1047, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mall_fashion", transliteration = "moda",
+            pos = "noun", semanticGroup = "mall_fashion",
             original = "מוֹדָה", translation = "мода",
             definition = "הַסְּגָּנוֹן הַמּוֹדְרָנִי הַנִּפְוֹץ בִּלְבוּשׁ וְאֶסְתֶּטִיקָה בְּתְקוּפָה מְסֻיֶּמֶת.",
             definitionNative = "Современный популярный стиль в одежде и эстетике в определённый период.",
@@ -64,7 +64,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Она всегда одета по последней מוֹדָה."),
         WordEntity(
             id = 104705, setId = 1047, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "mall_pricing", transliteration = "tavit mekhir",
+            pos = "noun", semanticGroup = "mall_pricing",
             original = "תָּוִית מְחִיר", translation = "ценник",
             definition = "תָּג הַמֻּצָּמָד לְמוּצָר וְמְצֻיָּן עָלָיו הַמְּחִיר.",
             definitionNative = "Этикетка, прикреплённая к товару, на которой указана цена.",
@@ -73,7 +73,7 @@ object WordDataHebrewBatch8 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104706, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_trade", transliteration = "kamona'i",
+            pos = "noun", semanticGroup = "mall_trade",
             original = "קַמְעוֹנַאי", translation = "розничный продавец",
             definition = "חֶנְוָנִי הַמּוֹכֵר מוּצָרִים לְלָקוֹחוֹת פְּרָטִיִּים בְּכַמֻּיּוֹת קְטַנּוֹת.",
             definitionNative = "Торговец, который продаёт товары частным покупателям в небольших количествах.",
@@ -81,7 +81,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Маленький קַמְעוֹנַאי не может конкурировать с крупными сетями."),
         WordEntity(
             id = 104707, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_deals", transliteration = "kupon",
+            pos = "noun", semanticGroup = "mall_deals",
             original = "קוּפּוֹן", translation = "купон, скидочный талон",
             definition = "שׁוֹבֶר הַמֵּזְכֶּה בְּהַנָּחָה עַל מוּצָר אוֹ שֵׁרוּת.",
             definitionNative = "Ваучер, дающий право на скидку на товар или услугу.",
@@ -90,7 +90,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104709L)),
         WordEntity(
             id = 104708, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_returns", transliteration = "khazarat mutzar",
+            pos = "noun", semanticGroup = "mall_returns",
             original = "הַחְזָרַת מוּצָר", translation = "возврат товара",
             definition = "הֲשָׁבַת מוּצָר שֶׁנִּקְנָה לַחֲנוּת לְקַבָּלַת הַחְזָרַת כֶּסֶף אוֹ הַחְלָפָה.",
             definitionNative = "Возврат купленного товара в магазин для получения денег обратно или замены.",
@@ -99,7 +99,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104709L)),
         WordEntity(
             id = 104709, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_policy", transliteration = "hekhzer kesef",
+            pos = "noun", semanticGroup = "mall_policy",
             original = "הֶחְזֵר כֶּסֶף", translation = "возврат денег",
             definition = "הַשְׁבַּת הַסְּכוּם שֶׁשֻּׁלַּם לַלָּקוֹחַ לְאַחַר הַחְזָרַת מוּצָר.",
             definitionNative = "Возврат уплаченной суммы покупателю после возврата товара.",
@@ -108,7 +108,7 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104710, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_store_types", transliteration = "butik",
+            pos = "noun", semanticGroup = "mall_store_types",
             original = "בּוּטִיק", translation = "бутик",
             definition = "חֲנוּת קְטַנָּה הַמִּתְמַחָּה בְּבְגָדִים אוֹ מוּצָרִים יוּקְרָתִיִּים.",
             definitionNative = "Маленький магазин, специализирующийся на дорогой одежде или изысканных товарах.",
@@ -117,7 +117,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104701L, 104711L, 104712L)),
         WordEntity(
             id = 104711, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_store_types", transliteration = "khanut yad shniya",
+            pos = "noun", semanticGroup = "mall_store_types",
             original = "חֲנוּת יָד שְׁנִיָּה", translation = "секонд-хенд, магазин б/у",
             definition = "חֲנוּת שֶׁמּוֹכֶרֶת מוּצָרִים מְשֻׁמָּשִׁים בְּמְחִירִים זוֹלִים.",
             definitionNative = "Магазин, продающий подержанные товары по низким ценам.",
@@ -126,7 +126,7 @@ object WordDataHebrewBatch8 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104712, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_basics", transliteration = "merkaz kniyot",
+            pos = "noun", semanticGroup = "mall_basics",
             original = "מֶרְכַּז קְנִיּוֹת", translation = "торговый центр (небольшой)",
             definition = "מִרְכָּז מִסְחָרִי קָטָן עִם חֲנוּיּוֹת, בְּדֶרֶךְ כְּלָל עִם חַנּוּת מוּצָרֵי מַעֲדַנִּים.",
             definitionNative = "Небольшое здание с магазинами под одной крышей — обычно есть и супермаркет.",
@@ -135,7 +135,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104701L, 104710L)),
         WordEntity(
             id = 104713, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_sales", transliteration = "mivtza sof ona",
+            pos = "noun", semanticGroup = "mall_sales",
             original = "מִבְצַע סוֹף עוֹנָה", translation = "распродажа конца сезона",
             definition = "מִכְרָז מְחִירִים נָמוּכִים שֶׁנֶּעֱשֶׂה בְּסוֹף כָּל עוֹנָה כְּגוֹן קַיִץ אוֹ חֹרֶף.",
             definitionNative = "Продажа по сниженным ценам в конце каждого сезона — лета или зимы.",
@@ -144,7 +144,7 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104714, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_calendar", transliteration = "ona",
+            pos = "noun", semanticGroup = "mall_calendar",
             original = "עֹנָה", translation = "сезон",
             definition = "תְּקוּפָה קָלֶנְדָּרִית שֶׁל הַשָּׁנָה כְּגוֹן קַיִץ, חֹרֶף, אָבִיב אוֹ סְתָיו.",
             definitionNative = "Календарный период года — лето, зима, весна или осень.",
@@ -152,7 +152,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Новая עֹנָה в торговом центре начинается в следующем месяце."),
         WordEntity(
             id = 104715, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_accessories", transliteration = "aksesori",
+            pos = "noun", semanticGroup = "mall_accessories",
             original = "אַקְסֶסוֹרִי", translation = "аксессуар",
             definition = "פְּרִיט לְוָאי לְבוּשׁ כְּגוֹן שַׁרְשֶׁרֶת, אֲבִיזַר שֵׂעָר אוֹ תִּיק.",
             definitionNative = "Сопутствующий предмет одежды — ожерелье, украшение для волос или сумка.",
@@ -161,7 +161,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104716L, 104718L, 104724L)),
         WordEntity(
             id = 104716, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_accessories", transliteration = "khagora",
+            pos = "noun", semanticGroup = "mall_accessories",
             original = "חֲגוֹרָה", translation = "ремень, пояс",
             definition = "פְּרִיט לְבוּשׁ שֶׁעוֹטְפִים אֶת הַמֹּתֶן לְחִיזּוּק הַמִּכְנָסַיִם.",
             definitionNative = "Предмет одежды, которым обвязывают талию для фиксации брюк.",
@@ -170,7 +170,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104715L, 104718L)),
         WordEntity(
             id = 104717, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing_accessories", transliteration = "kolev",
+            pos = "noun", semanticGroup = "clothing_accessories",
             original = "קוֹלֵב", translation = "вешалка для одежды",
             definition = "מַתְקָן בְּצוּרַת ו' לִתְלִיַּת בְּגָדִים בָּאֲרוֹן אוֹ עַל הַקִּיר.",
             definitionNative = "Приспособление в форме дуги для подвешивания одежды в шкафу или на стене.",
@@ -179,7 +179,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104724L)),
         WordEntity(
             id = 104718, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "mall_accessories", transliteration = "tarmil",
+            pos = "noun", semanticGroup = "mall_accessories",
             original = "תַּרְמִיל", translation = "рюкзак",
             definition = "תִּיק הַנָּשׂוּא עַל הַגַּב עִם רְצוּעוֹת כְּתֵפַיִם.",
             definitionNative = "Сумка, которую носят на спине с плечевыми ремнями.",
@@ -188,7 +188,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104715L, 104716L)),
         WordEntity(
             id = 104719, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home_shopping", transliteration = "sakit",
+            pos = "noun", semanticGroup = "home_shopping",
             original = "שָׁקִית", translation = "пластиковый пакет",
             definition = "אֲרִיזָה קְטַנָּה מִנְּיָלוֹן לִנְשִׂיאַת קְנִיּוֹת.",
             definitionNative = "Маленький пакет из полиэтилена для переноса покупок.",
@@ -197,7 +197,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104716L, 104722L)),
         WordEntity(
             id = 104720, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home_cleaning", transliteration = "magev",
+            pos = "noun", semanticGroup = "home_cleaning",
             original = "מַגֵּב", translation = "швабра (для полов)",
             definition = "כְּלִי נִיקּוּי עִם רֹאשׁ בַּד וְיָד אֲרֻכָּה לְשְׁטִיפַת רִצְפּוֹת.",
             definitionNative = "Уборочный инструмент с тканевым насадком и длинной ручкой для мытья полов.",
@@ -205,7 +205,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "После того как пролил воду, взял מַגֵּב, чтобы убрать."),
         WordEntity(
             id = 104721, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home_waste", transliteration = "pakh",
+            pos = "noun", semanticGroup = "home_waste",
             original = "פַּח", translation = "мусорный бак, мусорное ведро",
             definition = "כְּלִי לְאִסּוּף וְאַחְסוּן אַשְׁפָּה.",
             definitionNative = "Ёмкость для сбора и хранения мусора.",
@@ -214,7 +214,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104719L, 104723L)),
         WordEntity(
             id = 104722, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home_cleaning", transliteration = "meveReshet",
+            pos = "noun", semanticGroup = "home_cleaning",
             original = "מֶבְרֶשֶׁת", translation = "щётка (для уборки)",
             definition = "כְּלִי עִם שֵׂעָרוֹת צְפוּפוֹת לְנִיקּוּי וְצְחְצׁוּחַ.",
             definitionNative = "Инструмент с плотной щетиной для чистки и уборки.",
@@ -223,7 +223,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104720L, 104723L)),
         WordEntity(
             id = 104723, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home_cleaning", transliteration = "dli",
+            pos = "noun", semanticGroup = "home_cleaning",
             original = "דְּלִי", translation = "ведро",
             definition = "כְּלִי גְּלִילִי עִם יָד לְנְשִׂיאַת נוֹזְלִים אוֹ חֹמֶר.",
             definitionNative = "Цилиндрическая ёмкость с ручкой для переноски жидкостей или материалов.",
@@ -232,7 +232,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104720L, 104721L, 104722L)),
         WordEntity(
             id = 104724, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "clothing_accessories", transliteration = "tsmid",
+            pos = "noun", semanticGroup = "clothing_accessories",
             original = "צְמִיד", translation = "браслет",
             definition = "תַּכְשִׁיט הַנֶּעֱנָד סְבִיב הַיָּד אוֹ הַקֶּרְסוֹל.",
             definitionNative = "Украшение, которое носят на запястье или лодыжке.",
@@ -241,7 +241,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104715L, 104717L)),
         WordEntity(
             id = 104725, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home_kitchen", transliteration = "sefel",
+            pos = "noun", semanticGroup = "home_kitchen",
             original = "סֵפֶל", translation = "кружка",
             definition = "כְּלִי שְׁתִיָּה גָּדוֹל יוֹתֵר מִכּוֹס, בְּדֶרֶךְ כְּלָל עִם יָד.",
             definitionNative = "Сосуд для питья больше стакана, как правило с ручкой.",
@@ -256,7 +256,7 @@ object WordDataHebrewBatch8 {
 
         WordEntity(
             id = 104801, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_feeding", transliteration = "heinika",
+            pos = "noun", semanticGroup = "parenting_feeding",
             original = "הֵינִיקָה", translation = "кормление грудью",
             definition = "הֲאֵכָלַת תִּינוֹק בְּחָלָב אֵם מִהַשָּׁד.",
             definitionNative = "Кормление младенца грудным молоком.",
@@ -265,7 +265,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104803L, 104811L)),
         WordEntity(
             id = 104802, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_development", transliteration = "hitbaghrut",
+            pos = "noun", semanticGroup = "parenting_development",
             original = "הִתְבַּגְּרוּת", translation = "взросление, подростковый период",
             definition = "שָׁלָב הַהִתְפַּתְּחוּת שֶׁבּוֹ הַיֶּלֶד הוֹפֵךְ לְמְבֻגָּר.",
             definitionNative = "Этап развития, при котором ребёнок становится взрослым.",
@@ -274,7 +274,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104801L, 104810L, 104811L)),
         WordEntity(
             id = 104803, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_education", transliteration = "gidul yeladim",
+            pos = "noun", semanticGroup = "parenting_education",
             original = "גִּדּוּל יְלָדִים", translation = "воспитание детей",
             definition = "הַתְּהָלִיךְ שֶׁל טִיפּוּל, חִינּוּךְ וּפִיתּוּחַ שֶׁל יְלָדִים עַד בְּגֵירוּת.",
             definitionNative = "Процесс ухода, воспитания и развития детей вплоть до совершеннолетия.",
@@ -283,7 +283,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104801L, 104804L, 104806L, 104807L)),
         WordEntity(
             id = 104804, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_adoption", transliteration = "imuts",
+            pos = "noun", semanticGroup = "parenting_adoption",
             original = "אִמּוּץ", translation = "усыновление, удочерение",
             definition = "הְַהלִיךְ הַמִּשְׁפָּטִי שֶׁבּוֹ זוּג נַעֲשֶׂה הוֹרֵי יֶלֶד שֶׁאֵינוֹ יֶלֶד בִּיוֹלוֹגִי שֶׁלָּהֶם.",
             definitionNative = "Юридический процесс, при котором пара становится родителями ребёнка, не являющегося их биологическим.",
@@ -292,7 +292,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104810L)),
         WordEntity(
             id = 104805, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_care", transliteration = "shmirat yeladim",
+            pos = "noun", semanticGroup = "parenting_care",
             original = "שְׁמִירַת יְלָדִים", translation = "присмотр за детьми",
             definition = "פִּקּוּחַ וְטִיפּוּל בִּיְלָדִים בְּהֵעָדֶר הַהוֹרִים.",
             definitionNative = "Надзор и уход за детьми в отсутствие родителей.",
@@ -301,7 +301,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104803L, 104809L, 104813L)),
         WordEntity(
             id = 104806, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_education", transliteration = "gil hagan",
+            pos = "noun", semanticGroup = "parenting_education",
             original = "גִּיל הַגַּן", translation = "дошкольный возраст",
             definition = "תְּקוּפַת חַיֵּי הַיֶּלֶד מִלֵּידָה עַד תְּחִלַּת בֵּית הַסֵּפֶר, בְּדֶרֶךְ כְּלָל עַד גִּיל שֵׁשׁ.",
             definitionNative = "Период жизни ребёнка от рождения до начала школы, обычно до шести лет.",
@@ -310,7 +310,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104802L, 104803L, 104807L)),
         WordEntity(
             id = 104807, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_education", transliteration = "gan khova",
+            pos = "noun", semanticGroup = "parenting_education",
             original = "גַּן חוֹבָה", translation = "обязательный детский сад (5-6 лет)",
             definition = "גַּן יְלָדִים לִגִּיל חֵמֶשׁ-שֵׁשׁ שֶׁהוּא חוֹבָה בְּחוֹק בְּיִשְׂרָאֵל.",
             definitionNative = "Детский сад для детей 5–6 лет, обязательный по закону Израиля.",
@@ -319,7 +319,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104803L, 104806L)),
         WordEntity(
             id = 104808, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_routine", transliteration = "shenat tsohorayim",
+            pos = "noun", semanticGroup = "parenting_routine",
             original = "שְׁנַת צָהֳרַיִם", translation = "дневной сон",
             definition = "שֵׁנָה קְצָרָה שֶׁלְּיָלֶד בְּשָׁעוֹת הַצָּהֳרַיִם.",
             definitionNative = "Короткий сон ребёнка в дневные часы.",
@@ -328,7 +328,7 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104809, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_care", transliteration = "metapelet",
+            pos = "noun", semanticGroup = "parenting_care",
             original = "מְטַפֶּלֶת", translation = "няня, воспитательница",
             definition = "אִשָּׁה הַמְּטַפֶּלֶת בִּיְלָדִים בְּהֵעָדֶר הַהוֹרִים.",
             definitionNative = "Женщина, которая присматривает за детьми в отсутствие родителей.",
@@ -337,7 +337,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104805L, 104813L)),
         WordEntity(
             id = 104810, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_pregnancy", transliteration = "herayon",
+            pos = "noun", semanticGroup = "parenting_pregnancy",
             original = "הֵרָיוֹן", translation = "беременность",
             definition = "הַתְּקוּפָה שֶׁבָּהּ הַתִּינוֹק מִתְפַּתֵּחַ בְּרֶחֶם הָאֵם, כְּתֵשַׁע חֳדָשִׁים.",
             definitionNative = "Период, в течение которого ребёнок развивается в утробе матери — около девяти месяцев.",
@@ -346,7 +346,7 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104811, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_basics", transliteration = "horut",
+            pos = "noun", semanticGroup = "parenting_basics",
             original = "הוֹרוּת", translation = "родительство",
             definition = "הַמַּצָּב וְהַאַחֲרָיּוּת שֶׁל הֱיוֹת הוֹרֶה לְיָלֶד.",
             definitionNative = "Состояние и ответственность быть родителем ребёнка.",
@@ -355,7 +355,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104801L, 104802L)),
         WordEntity(
             id = 104812, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_emotions", transliteration = "bekhi",
+            pos = "noun", semanticGroup = "parenting_emotions",
             original = "בְּכִי", translation = "плач",
             definition = "הוֹצָאַת דְּמָעוֹת וְקוֹלוֹת שֶׁל צַעַר, כְּאֵב אוֹ אֻשֶּׁר.",
             definitionNative = "Выделение слёз и звуков от горя, боли или радости.",
@@ -363,7 +363,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Младенец сигнализирует о голоде громким בְּכִי."),
         WordEntity(
             id = 104813, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_care", transliteration = "tinokiya",
+            pos = "noun", semanticGroup = "parenting_care",
             original = "תִּינוֹקִיָּה", translation = "ясли (учреждение для грудных детей)",
             definition = "מוֹסַד לְטִיפּוּל בְּתִינוֹקוֹת בְּגִיל אֶפֶס עַד שְׁנָה וּמֶחֱצָה.",
             definitionNative = "Учреждение по уходу за грудными детьми в возрасте от нуля до полутора лет.",
@@ -372,7 +372,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104805L, 104809L)),
         WordEntity(
             id = 104814, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_home", transliteration = "kheder yeladim",
+            pos = "noun", semanticGroup = "parenting_home",
             original = "חֶדֶר יְלָדִים", translation = "детская комната",
             definition = "חֶדֶר בַּבַּיִת הַמְּיֻעָד לְשֵׁנָה וּמִשְׂחָק שֶׁל הַיֶּלֶד.",
             definitionNative = "Комната в доме, предназначенная для сна и игр ребёнка.",
@@ -381,7 +381,7 @@ object WordDataHebrewBatch8 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104815, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_clothing", transliteration = "bigdey yeladim",
+            pos = "noun", semanticGroup = "parenting_clothing",
             original = "בִּגְדֵי יְלָדִים", translation = "детская одежда",
             definition = "בְּגָדִים שֶׁמְּיֻעָדִים לְתִינוֹקוֹת וִילָדִים בְּמִדּוֹת קְטַנּוֹת.",
             definitionNative = "Одежда, предназначенная для младенцев и детей небольших размеров.",
@@ -390,7 +390,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104821L)),
         WordEntity(
             id = 104816, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_equipment", transliteration = "motzetz",
+            pos = "noun", semanticGroup = "parenting_equipment",
             original = "מוֹצֵץ", translation = "соска (пустышка)",
             definition = "כְּלִי גּוּמִּי קָטָן לְהַרְגָּעַת תִּינוֹק — הוּא יוֹנֵק אוֹתוֹ.",
             definitionNative = "Маленькое резиновое изделие для успокоения младенца — он его сосёт.",
@@ -399,7 +399,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104817L, 104819L, 104820L, 104822L, 104823L, 104824L, 104825L)),
         WordEntity(
             id = 104817, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_equipment", transliteration = "mitat tinok",
+            pos = "noun", semanticGroup = "parenting_equipment",
             original = "מִיטַת תִּינוֹק", translation = "детская кроватка",
             definition = "מִיטָה קְטַנָּה עִם סְבָכוֹת לְתִינוֹק לִישׁוֹן בְּבִטְחָה.",
             definitionNative = "Маленькая кровать с решётками, чтобы младенец мог безопасно спать.",
@@ -408,7 +408,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104816L, 104819L, 104820L, 104822L, 104823L, 104824L, 104825L)),
         WordEntity(
             id = 104818, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_health", transliteration = "rofe yeladim",
+            pos = "noun", semanticGroup = "parenting_health",
             original = "רוֹפֵא יְלָדִים", translation = "педиатр",
             definition = "רוֹפֵא הַמְּתַמַּחֶה בְּטִיפּוּל בְּיֶלָדִים מֵלֵידָה עַד גִּיל שְׁמוֹנֶה עֶשְׂרֵה.",
             definitionNative = "Врач, специализирующийся на лечении детей от рождения до восемнадцати лет.",
@@ -417,7 +417,7 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104819, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_equipment", transliteration = "kise le-rekhev",
+            pos = "noun", semanticGroup = "parenting_equipment",
             original = "כִּסֵּא לָרֶכֶב", translation = "автокресло (для ребёнка)",
             definition = "מוֹשָׁב בְּטִיחוּת מְיֻחָד לְתִינוֹקוֹת וִילָדִים בַּמְּכוֹנִית.",
             definitionNative = "Специальное защитное сиденье для младенцев и детей в автомобиле.",
@@ -426,7 +426,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104816L, 104817L, 104820L, 104822L, 104823L, 104824L, 104825L)),
         WordEntity(
             id = 104820, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_equipment", transliteration = "mansa tinokot",
+            pos = "noun", semanticGroup = "parenting_equipment",
             original = "מַנְשָׂא תִּינוֹקוֹת", translation = "слинг, переноска для ребёнка",
             definition = "כְּלִי בַּד לְנְשִׂיאַת תִּינוֹק צָמוּד לְגוּף הַהוֹרֶה בְּזָמַן הֲלִיכָה.",
             definitionNative = "Тканевое приспособление для ношения младенца прижатым к телу родителя при ходьбе.",
@@ -435,7 +435,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104816L, 104817L, 104819L, 104822L, 104823L, 104824L, 104825L)),
         WordEntity(
             id = 104821, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_books", transliteration = "sifrey yeladim",
+            pos = "noun", semanticGroup = "parenting_books",
             original = "סִפְרֵי יְלָדִים", translation = "детские книги",
             definition = "סְפָרִים הַמְּיֻעָדִים לִילָדִים, כּוֹלְלִים סִיפּוּרִים וְאִיּוּרִים.",
             definitionNative = "Книги, предназначенные для детей, с историями и иллюстрациями.",
@@ -444,7 +444,7 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104822, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_equipment", transliteration = "beybi monitor",
+            pos = "noun", semanticGroup = "parenting_equipment",
             original = "בֵּיבִּי-מוֹנִיטוֹר", translation = "радионяня",
             definition = "מַכְשִׁיר אִלְחוּטִי לְהַאֲזָנָה לַתִּינוֹק מֵחֶדֶר אַחֵר.",
             definitionNative = "Беспроводное устройство для прослушивания младенца из другой комнаты.",
@@ -453,7 +453,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104816L, 104817L, 104819L, 104820L, 104823L, 104824L, 104825L)),
         WordEntity(
             id = 104823, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_equipment", transliteration = "mishkakiya",
+            pos = "noun", semanticGroup = "parenting_equipment",
             original = "מִשְׂחָקִיָּה", translation = "манеж (детский)",
             definition = "גָּדֵר קְטַנָּה עִם רְצָפָה רַכָּה בָּהּ תִּינוֹק יָכוֹל לְשַׂחֵק בְּבִטְחָה.",
             definitionNative = "Небольшое ограждение с мягким полом, в котором малыш может безопасно играть.",
@@ -461,7 +461,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Мы положили малыша в מִשְׂחָקִיָּה, чтобы приготовить еду."),
         WordEntity(
             id = 104824, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_equipment", transliteration = "ambatiyat tinok",
+            pos = "noun", semanticGroup = "parenting_equipment",
             original = "אֶמְבַּטְיַת תִּינוֹק", translation = "детская ванночка",
             definition = "אֶמְבַּטְיָה קְטַנָּה וּמְעֻגֶּלֶת לְרַחְצַת תִּינוֹק בְּבִטְחָה.",
             definitionNative = "Маленькая округлая ванночка для безопасного купания младенца.",
@@ -470,7 +470,7 @@ object WordDataHebrewBatch8 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104825, setId = 1048, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "parenting_equipment", transliteration = "kise gavoa",
+            pos = "noun", semanticGroup = "parenting_equipment",
             original = "כִּסֵּא גָּבוֹהַ", translation = "высокий стул (для кормления)",
             definition = "מוֹשָׁב מוּרָם עִם שֻׁלְחָנִית לְהוֹשִׁיב בּוֹ תִּינוֹק בִּשְׁעַת אֲכִילָה.",
             definitionNative = "Особое креслице с подносом, чтобы сажать малыша во время еды за столом.",
@@ -484,7 +484,7 @@ object WordDataHebrewBatch8 {
 
         WordEntity(
             id = 104901, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "building_people", transliteration = "skhena",
+            pos = "noun", semanticGroup = "building_people",
             original = "שְׁכֵנָה", translation = "соседка (женщина)",
             definition = "אִשָּׁה הַגָּרָה בְּסָמִיכוּת לְבֵיתְךָ, בְּאוֹתוֹ בִּנְיָן אוֹ בַּבַּיִת הַסָּמוּךְ.",
             definitionNative = "Женщина, живущая рядом с вами — в том же здании или соседнем доме.",
@@ -492,7 +492,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Наша שְׁכֵנָה помогает нам, когда мы уезжаем за границу."),
         WordEntity(
             id = 104902, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "building_people", transliteration = "dayar",
+            pos = "noun", semanticGroup = "building_people",
             original = "דַּיָּר", translation = "жилец, жильец",
             definition = "אָדָם הַגָּר בְּבִנְיָן כִּשּׂוֹכֵר אוֹ בְּעָלִים.",
             definitionNative = "Человек, проживающий в здании как арендатор или владелец.",
@@ -501,7 +501,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104901L, 104910L, 104911L, 104920L)),
         WordEntity(
             id = 104903, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "building_communication", transliteration = "luakh moda'ot",
+            pos = "noun", semanticGroup = "building_communication",
             original = "לוּחַ מוֹדָעוֹת", translation = "доска объявлений",
             definition = "לוּחַ בְּכְנִיסַת הַבִּנְיָן שֶׁעָלָיו תּוֹלִים הוֹדָעוֹת לַדַּיָּרִים.",
             definitionNative = "Доска у входа в здание, на которой вешают объявления для жильцов.",
@@ -510,7 +510,7 @@ object WordDataHebrewBatch8 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104904, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "building_basics", transliteration = "pakh ashpa",
+            pos = "noun", semanticGroup = "building_basics",
             original = "פַּח אַשְׁפָּה", translation = "мусорный бак",
             definition = "מְכָל לְאִסּוּף אַשְׁפָּה בְּחָצֵר הַבִּנְיָן אוֹ בְּחֻצּוֹת.",
             definitionNative = "Контейнер для сбора мусора во дворе здания или на улице.",
@@ -519,7 +519,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104906L, 104912L)),
         WordEntity(
             id = 104905, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "building_noise", transliteration = "resh",
+            pos = "noun", semanticGroup = "building_noise",
             original = "רַעַשׁ", translation = "шум",
             definition = "צְלִיל חָזָק וּמַטְרִיד הַנִּשְׁמָע בַּסְּבִיבָה.",
             definitionNative = "Громкий и беспокоящий звук, слышимый в окружении.",
@@ -528,7 +528,7 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104906, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "building_basics", transliteration = "geder",
+            pos = "noun", semanticGroup = "building_basics",
             original = "גֶּדֶר", translation = "забор, ограда",
             definition = "מַחִיצָה הַמַּקִּיפָה אֶת הַחָצֵר אוֹ הַגִּינָה לְסִימוּן גְּבוּלוֹת.",
             definitionNative = "Ограждение, окружающее двор или сад для обозначения границ.",
@@ -537,7 +537,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104904L)),
         WordEntity(
             id = 104907, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_parking", transliteration = "khanyon",
+            pos = "noun", semanticGroup = "building_parking",
             original = "חַנְיוֹן", translation = "парковка",
             definition = "שֶׁטַח מְיֻעָד לְחַנִּיַּת מְכוֹנִיּוֹת.",
             definitionNative = "Площадь, предназначенная для стоянки автомобилей.",
@@ -546,7 +546,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104917L, 104919L)),
         WordEntity(
             id = 104908, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_utilities", transliteration = "mone khashmal",
+            pos = "noun", semanticGroup = "building_utilities",
             original = "מוֹנֶה חַשְׁמַל", translation = "счётчик электричества",
             definition = "מַכְשִׁיר הַמּוֹדֵד אֶת כַּמּוּת הַחַשְׁמַל הַנִּצְרֶכֶת בְּדִירָה.",
             definitionNative = "Прибор, измеряющий количество потреблённого в квартире электричества.",
@@ -555,7 +555,7 @@ object WordDataHebrewBatch8 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104909, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_spaces", transliteration = "gan shakun",
+            pos = "noun", semanticGroup = "building_spaces",
             original = "גַּן שָׁכוּן", translation = "двор жилого комплекса",
             definition = "שֶׁטַח יָרֹק מְשֻׁתָּף בֵּין הַבָּתִּים בַּשְּׁכוּנָה.",
             definitionNative = "Общая зелёная зона между домами в жилом квартале.",
@@ -564,7 +564,7 @@ object WordDataHebrewBatch8 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104910, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_people", transliteration = "pgishat shkhenim",
+            pos = "noun", semanticGroup = "building_people",
             original = "פְּגִישַׁת שְׁכֵנִים", translation = "встреча соседей",
             definition = "אֲסֵפָה שֶׁל שְׁכֵנִים לְדִיּוּן בְּנוֹשְׂאֵי הַבִּנְיָן.",
             definitionNative = "Собрание соседей для обсуждения вопросов здания.",
@@ -572,7 +572,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Мы созвали פְּגִישַׁת שְׁכֵנִים, чтобы решить вопрос о ремонте лестничной клетки."),
         WordEntity(
             id = 104911, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_people", transliteration = "ba'al dira",
+            pos = "noun", semanticGroup = "building_people",
             original = "בְּעַל דִּירָה", translation = "хозяин квартиры",
             definition = "הַבְּעָלִים שֶׁל הַדִּירָה, הַמַּשְׂכִּיר אוֹתָהּ לְשׂוֹכֵר.",
             definitionNative = "Владелец квартиры, сдающий её в аренду.",
@@ -581,7 +581,7 @@ object WordDataHebrewBatch8 {
          isFillInBlankSafe = false),
         WordEntity(
             id = 104912, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_waste", transliteration = "zaval",
+            pos = "noun", semanticGroup = "building_waste",
             original = "זַבָּל", translation = "мусор",
             definition = "פְּסֹלֶת וְחֳמָרִים שֶׁאֵין בָּהֶם עוֹד שִׁמּוּשׁ וְנִזְרָקִים.",
             definitionNative = "Отходы и материалы, которые больше не используются и выбрасываются.",
@@ -589,7 +589,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Нужно выносить זַבָּל каждый вторник."),
         WordEntity(
             id = 104913, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_spaces", transliteration = "mitekham",
+            pos = "noun", semanticGroup = "building_spaces",
             original = "מִתְחַם", translation = "комплекс, территория",
             definition = "שֶׁטַח מֻגְדָּר הַכּוֹלֵל מִבְנֶה אוֹ כַּמָּה מִבְנִים.",
             definitionNative = "Огороженная территория, включающая одно или несколько зданий.",
@@ -597,7 +597,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Наш жилой מִתְחַם включает три здания."),
         WordEntity(
             id = 104914, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_entrance", transliteration = "knisát habinyan",
+            pos = "noun", semanticGroup = "building_entrance",
             original = "כְּנִיסַת הַבִּנְיָן", translation = "вход в здание",
             definition = "הַפֶּתַח הָרָאשִׁי שֶׁל הַבִּנְיָן הַמּוֹבִיל לַמִּסְדְּרוֹן הַמְּשֻׁתָּף.",
             definitionNative = "Главный вход здания, ведущий в общий коридор.",
@@ -605,7 +605,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "У כְּנִיסַת הַבִּנְיָן есть домофон для запирания двери."),
         WordEntity(
             id = 104915, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_management", transliteration = "menahel habinyan",
+            pos = "noun", semanticGroup = "building_management",
             original = "מְנַהֵל הַבִּנְיָן", translation = "управляющий зданием",
             definition = "אָדָם הָאַחְרָאִי לְתַחְזוּקָה וּנִיהוּל הַבִּנְיָן.",
             definitionNative = "Человек, ответственный за обслуживание и управление зданием.",
@@ -614,7 +614,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104916L)),
         WordEntity(
             id = 104916, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_management", transliteration = "iriya",
+            pos = "noun", semanticGroup = "building_management",
             original = "עִירִיָּה", translation = "муниципалитет, мэрия",
             definition = "הָרָשׁוּת הַמְּקוֹמִית הָאַחְרָאִית לְנִיהוּל הָעִיר.",
             definitionNative = "Местный орган власти, ответственный за управление городом.",
@@ -623,7 +623,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104915L)),
         WordEntity(
             id = 104917, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_parking", transliteration = "khaniya",
+            pos = "noun", semanticGroup = "building_parking",
             original = "חַנִּיָּה", translation = "парковка, стоянка",
             definition = "מָקוֹם יְעוּדִי לְחֲנִיַּת רְכָבִים.",
             definitionNative = "Специально отведённое место для стоянки транспортных средств.",
@@ -632,7 +632,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104907L, 104919L)),
         WordEntity(
             id = 104918, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home_celebrations", transliteration = "khanukat bayit",
+            pos = "noun", semanticGroup = "home_celebrations",
             original = "חֲנוּכַּת בַּיִת", translation = "новоселье",
             definition = "חֲגִיגַת הַכְּנִיסָה לְדִירָה אוֹ בַּיִת חָדָשׁ.",
             definitionNative = "Праздник по случаю въезда в новую квартиру или дом.",
@@ -641,7 +641,7 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104919, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_spaces", transliteration = "mirtef",
+            pos = "noun", semanticGroup = "building_spaces",
             original = "מִרְתֵּף", translation = "подвал",
             definition = "חֶלֶק שֶׁל הַבִּנְיָן הַנִּמְצָא מַתַּחַת לַקַּרְקַע.",
             definitionNative = "Часть здания, находящаяся под землёй.",
@@ -650,7 +650,7 @@ object WordDataHebrewBatch8 {
          fillInBlankExclusions = listOf(104907L, 104909L, 104913L, 104917L, 104921L, 104922L)),
         WordEntity(
             id = 104920, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_community", transliteration = "shakhan",
+            pos = "noun", semanticGroup = "building_community",
             original = "שַׁכָּן", translation = "сосед (жилец)",
             definition = "אָדָם הַגָּר בְּסָמִיכוּת — בְּאוֹתוֹ בִּנְיָן אוֹ בָּרְחוֹב.",
             definitionNative = "Человек, живущий рядом — в том же здании или на той же улице.",
@@ -658,7 +658,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Мой שַׁכָּן всегда помогает мне нести покупки до лифта."),
         WordEntity(
             id = 104921, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_spaces", transliteration = "misdron",
+            pos = "noun", semanticGroup = "building_spaces",
             original = "מִסְדְּרוֹן", translation = "коридор (общий в здании)",
             definition = "מַמְסָּד אֹרֶךְ בְּקוֹמָה הַמְּחַבֵּר בֵּין הַדִּירוֹת לַמַּעֲלִית.",
             definitionNative = "Длинный проход на этаже, соединяющий квартиры с лифтом.",
@@ -666,7 +666,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Поддерживали чистоту в общем מִסְדְּרוֹן."),
         WordEntity(
             id = 104922, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_spaces", transliteration = "sulam",
+            pos = "noun", semanticGroup = "building_spaces",
             original = "סֻלָּם", translation = "лестница",
             definition = "מִבְנֶה מַדְרֵגוֹת לְעֲלִיָּה וִירִידָה בֵּין קוֹמוֹת.",
             definitionNative = "Конструкция со ступеньками для подъёма и спуска между этажами.",
@@ -674,7 +674,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "Мы спустились по סֻלָּם, когда сломался лифт."),
         WordEntity(
             id = 104923, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "building_features", transliteration = "gelon",
+            pos = "noun", semanticGroup = "building_features",
             original = "גֵּלוֹן", translation = "жалюзи, ставни (рольставни)",
             definition = "כְּיסּוּי חַלּוֹן מִתַּקְלִיל מִסֻּגּוֹת שׁוֹנוֹת לְהַאֲפָלָה וּלְנְעִילַת הַחַלּוֹן.",
             definitionNative = "Оконное покрытие из складывающихся полос для затемнения и защиты окна.",
@@ -683,7 +683,7 @@ object WordDataHebrewBatch8 {
         ),
         WordEntity(
             id = 104924, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
-            pos = "noun", semanticGroup = "home_storage", transliteration = "miltakhet",
+            pos = "noun", semanticGroup = "home_storage",
             original = "מִלְתָּחָה", translation = "встроенный шкаф, гардероб",
             definition = "אֲרוֹן בְּנוּי בְּקִיר לְאִחְסוּן בְּגָדִים וְחֲפָצִים.",
             definitionNative = "Шкаф, встроенный в стену, для хранения одежды и вещей.",
@@ -691,7 +691,7 @@ object WordDataHebrewBatch8 {
             exampleNative = "В моей комнате есть большая מִלְתָּחָה с тремя отсеками.",
         ),
         WordEntity(id = 104925, setId = 1049, languagePair = "he-ru", rarity = "COMMON",
-            pos = "noun", semanticGroup = "building_common", transliteration = "pa'amon",
+            pos = "noun", semanticGroup = "building_common",
             original = "פַּעֲמוֹן", translation = "дверной звонок / колокольчик",
             definition = "מַכְשִׁיר לְסִימוּן בְּקֶשַׁת כְּנִיסָה לַדִּירָה.",
             definitionNative = "Устройство для подачи сигнала при входе в квартиру.",
