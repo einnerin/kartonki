@@ -111,12 +111,14 @@ class ProblemWordsSessionViewModel @Inject constructor(
 
             val source = prefs.problemWordsSource.first()
             val minEncounters = prefs.problemWordsMinEncounters.first()
+            val pair = prefs.languagePair.first()
 
             val excludedIds = prefs.getSessionExcludedWordIds()
             prefs.clearSessionExcludedWordIds()
             val dismissedIds = prefs.getDismissedProblemWordIds()
             val allWords = statsRepository.getProblemWords(
-                source, minEncounters, limit = 200, dismissedIds = dismissedIds,
+                source = source, languagePair = pair, minEncounters = minEncounters,
+                limit = 200, dismissedIds = dismissedIds,
             )
             val words = if (excludedIds.isEmpty()) allWords
                         else allWords.filter { it.id !in excludedIds }

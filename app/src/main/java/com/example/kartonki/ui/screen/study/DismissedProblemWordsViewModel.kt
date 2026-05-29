@@ -10,6 +10,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -39,8 +40,13 @@ class DismissedProblemWordsViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isLoading = true) }
             val ids = prefs.getDismissedProblemWordIds()
+            val pair = prefs.languagePair.first()
+            // Only show dismissed words of the selected study language — same
+            // language separation as the active problem-words list.
             val words = if (ids.isEmpty()) emptyList()
-                        else wordDao.getWordsByIds(ids.toList()).map { it.toDomain() }
+                        else wordDao.getWordsByIds(ids.toList())
+                            .filter { it.languagePair == pair }
+                            .map { it.toDomain() }
             // Sort alphabetically by `original` for predictable scanning.
             _uiState.update {
                 it.copy(isLoading = false, words = words.sortedBy { w -> w.original })

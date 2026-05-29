@@ -45,8 +45,10 @@ class ProblemWordsListViewModel @Inject constructor(
             val source    = prefs.problemWordsSource.first()
             val minEnc    = prefs.problemWordsMinEncounters.first()
             val dismissed = prefs.getDismissedProblemWordIds()
+            val pair      = prefs.languagePair.first()
             val words     = statsRepository.getProblemWords(
-                source, minEnc, limit = 200, dismissedIds = dismissed,
+                source = source, languagePair = pair, minEncounters = minEnc,
+                limit = 200, dismissedIds = dismissed,
             )
             val selectedIds = words.map { it.id }.toSet()
             _uiState.update {

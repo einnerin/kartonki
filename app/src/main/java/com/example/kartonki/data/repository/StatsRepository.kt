@@ -86,6 +86,7 @@ class StatsRepository @Inject constructor(
      */
     private suspend fun problemPairs(
         source: String,
+        languagePair: String,
         minEncounters: Int,
         minErrorRate: Float,
         dismissedIds: Set<Long>,
@@ -120,8 +121,10 @@ class StatsRepository @Inject constructor(
         // Single batched lookup for the surviving words.
         val wordMap = wordDao.getWordsByIds(candidates.map { it.first })
             .associateBy { it.id }
+        // Keep only words of the selected study language — "работа над ошибками"
+        // must match the chosen language, not mix en-ru and he-ru mistakes.
         return candidates.mapNotNull { (wid, rate, _) ->
-            wordMap[wid]?.let { rate to it }
+            wordMap[wid]?.takeIf { it.languagePair == languagePair }?.let { rate to it }
         }.sortedByDescending { it.first }
     }
 
@@ -136,12 +139,13 @@ class StatsRepository @Inject constructor(
      */
     suspend fun getProblemWords(
         source: String = "both",
+        languagePair: String,
         minEncounters: Int = 2,
         minErrorRate: Float = 0.30f,
         limit: Int = 25,
         dismissedIds: Set<Long> = emptySet(),
     ): List<Word> {
-        return problemPairs(source, minEncounters, minErrorRate, dismissedIds)
+        return problemPairs(source, languagePair, minEncounters, minErrorRate, dismissedIds)
             .take(limit)
             .map { (_, entity) ->
                 val rarity = runCatching { Rarity.valueOf(entity.rarity) }.getOrElse { Rarity.COMMON }
@@ -171,10 +175,11 @@ class StatsRepository @Inject constructor(
      */
     suspend fun getProblemWordCount(
         source: String = "both",
+        languagePair: String,
         minEncounters: Int = 2,
         minErrorRate: Float = 0.30f,
         dismissedIds: Set<Long> = emptySet(),
-    ): Int = problemPairs(source, minEncounters, minErrorRate, dismissedIds).size
+    ): Int = problemPairs(source, languagePair, minEncounters, minErrorRate, dismissedIds).size
 
     private fun calculateCurrentStreak(sortedDesc: List<Long>): Int {
         if (sortedDesc.isEmpty()) return 0

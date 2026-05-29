@@ -36,7 +36,9 @@ class HomeViewModel @Inject constructor(
             val source = prefs.problemWordsSource.first()
             val minEnc = prefs.problemWordsMinEncounters.first()
             val dismissed = prefs.getDismissedProblemWordIds()
-            val count = statsRepository.getProblemWordCount(source, minEnc, dismissedIds = dismissed)
+            val pair = prefs.languagePair.first()
+            val count = statsRepository.getProblemWordCount(
+                source = source, languagePair = pair, minEncounters = minEnc, dismissedIds = dismissed)
             _uiState.value = HomeUiState(problemWordCount = count)
         }
     }
