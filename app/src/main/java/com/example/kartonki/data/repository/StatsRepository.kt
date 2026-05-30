@@ -31,11 +31,28 @@ class StatsRepository @Inject constructor(
         val longestStreak = calculateLongestStreak(sortedDays)
 
         val matches   = pvpMatchDao.getAll()
-        // Player 1 = device owner by convention in local PvP.
-        val wins      = matches.count { it.winnerName != null && it.winnerName == it.player1Name }
-        val losses    = matches.count { it.winnerName != null && it.winnerName == it.player2Name }
+        // Wins/losses derived from deviceOwnerIndex (role), NOT name comparison —
+        // the old `winnerName == player1Name` flipped wins into losses whenever both
+        // players were called "Игрок" (default pass-and-play). Legacy rows
+        // (deviceOwnerIndex = null) are skipped: we can't reconstruct who the device
+        // owner was, so they don't contribute to either counter.
+        val withRole  = matches.filter { it.deviceOwnerIndex != null }
+        val wins      = withRole.count { m ->
+            val myScore  = if (m.deviceOwnerIndex == 0) m.player1Score else m.player2Score
+            val oppScore = if (m.deviceOwnerIndex == 0) m.player2Score else m.player1Score
+            myScore > oppScore
+        }
+        val losses    = withRole.count { m ->
+            val myScore  = if (m.deviceOwnerIndex == 0) m.player1Score else m.player2Score
+            val oppScore = if (m.deviceOwnerIndex == 0) m.player2Score else m.player1Score
+            myScore < oppScore
+        }
+        // Draws: still by winnerName == null (covers both legacy and new draw rows).
         val draws     = matches.count { it.winnerName == null }
-        val bestScore = matches.maxOfOrNull { it.player1Score } ?: 0
+        // bestScore — device owner's own best, across role-known matches.
+        val bestScore = withRole.maxOfOrNull { m ->
+            if (m.deviceOwnerIndex == 0) m.player1Score else m.player2Score
+        } ?: 0
 
         return PlayerStats(
             wordsLearned  = wordsLearned,

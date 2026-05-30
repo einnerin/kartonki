@@ -162,12 +162,14 @@ class OnlinePvpGameViewModel @Inject constructor(
                     val p2Name = match.player2Name
                     val p1Score = match.player1Score
                     val p2Score = match.player2Score
+                    val myIdx = myIndex  // captured immutable for the launch closure
                     viewModelScope.launch {
                         achievementRepository.recordPvpMatch(
                             player1Name  = p1Name,
                             player2Name  = p2Name,
                             player1Score = p1Score,
                             player2Score = p2Score,
+                            deviceOwnerIndex = myIdx,
                             wasSurrender = didSurrender,
                         )
                     }

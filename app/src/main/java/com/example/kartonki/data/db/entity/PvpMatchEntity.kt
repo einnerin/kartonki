@@ -14,4 +14,15 @@ data class PvpMatchEntity(
     val winnerName: String?,       // null = draw
     val wasSurrender: Boolean = false,
     val languagePair: String = "en-ru",  // language of the deck used in this match
+    /**
+     * Index of the device owner in this match: 0 for player1 (local PvP convention,
+     * online PvP when this client was matched as P1), 1 when this client was matched
+     * as P2 in online PvP, null only for legacy rows written before the column
+     * existed (treated as "unknown" by stats — neither win nor loss).
+     *
+     * Replaces the previous name-comparison logic (winnerName == player1Name), which
+     * mis-counted wins/losses when both players were called "Игрок" — common in
+     * pass-and-play mode where neither player customised their name.
+     */
+    val deviceOwnerIndex: Int? = null,
 )

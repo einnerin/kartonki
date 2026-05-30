@@ -114,6 +114,10 @@ class AchievementRepository @Inject constructor(
         player2Name: String,
         player1Score: Int,
         player2Score: Int,
+        // 0 — device owner played P1 (local-PvP convention + online when matched as P1),
+        // 1 — device owner played P2 in online PvP. Stats use the role, not the name —
+        // see PvpMatchEntity.deviceOwnerIndex.
+        deviceOwnerIndex: Int,
         wasSurrender: Boolean = false,
     ) {
         val lang = prefs.getLanguagePair()
@@ -132,6 +136,7 @@ class AchievementRepository @Inject constructor(
                 winnerName = winnerName,
                 wasSurrender = wasSurrender,
                 languagePair = lang,
+                deviceOwnerIndex = deviceOwnerIndex,
             )
         )
         checkFirstFight(lang)

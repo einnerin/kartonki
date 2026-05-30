@@ -346,6 +346,8 @@ class PvpGameViewModel @Inject constructor(
                 player2Name  = players[1].name,
                 player1Score = players[0].score,
                 player2Score = players[1].score,
+                // Local pass-and-play: device owner is conventionally P1.
+                deviceOwnerIndex = 0,
                 wasSurrender = reason == GameOverReason.FORFEIT,
             )
             // A match counts toward token progress only if it ran a meaningful

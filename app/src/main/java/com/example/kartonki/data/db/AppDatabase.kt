@@ -37,7 +37,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 43,
+    version = 44,
     exportSchema = false,
 )
 @TypeConverters(WordConverters::class)
@@ -430,6 +430,24 @@ abstract class AppDatabase : RoomDatabase() {
          *
          * Имена точно повторяют генерацию Room — `index_{table}_{col}[_{col}…]`.
          */
+        /**
+         * v44: добавляем pvp_matches.deviceOwnerIndex для подсчёта побед по роли,
+         * а не по имени. Старая логика wins = count { winnerName == player1Name }
+         * сыпалась при равных именах («Игрок» vs «Игрок» в pass-and-play) — оба
+         * счётчика wins/losses ловили один и тот же матч.
+         *
+         * Колонка nullable: легаси-строки (до миграции) получают NULL и не
+         * учитываются ни как победы, ни как поражения. Прогресс «лучший счёт»
+         * (bestPvpScore) для них тоже игнорируется — иначе он показывал бы
+         * максимум по player1Score, что неверно для online-PvP где client
+         * мог играть P2.
+         */
+        val MIGRATION_43_44 = object : Migration(43, 44) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE pvp_matches ADD COLUMN deviceOwnerIndex INTEGER")
+            }
+        }
+
         /**
          * v43: удаление таблицы word_set_membership.
          *
