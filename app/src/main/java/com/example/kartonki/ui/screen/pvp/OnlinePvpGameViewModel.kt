@@ -1,5 +1,6 @@
 package com.example.kartonki.ui.screen.pvp
 
+import android.util.Log
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -23,6 +24,8 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+private const val TAG = "OnlinePvpGameVM"
+
 sealed class OnlinePvpPhase {
     /** It's my turn to pick a card */
     data class MyHandSelection(val hand: List<Word>, val remainingDeck: List<Word>) : OnlinePvpPhase()
@@ -38,8 +41,9 @@ sealed class OnlinePvpPhase {
         val playedCardTranslation: String,
         val selectedAnswer: String? = null,
     ) : OnlinePvpPhase()
-    /** I picked, opponent is answering — I wait */
-    data class WaitingForAnswer(val question: String) : OnlinePvpPhase()
+    /** I picked, opponent is answering — I wait. Screen shows a static message, no
+     * round data needed; kept as `object` so equality is stable across emissions. */
+    object WaitingForAnswer : OnlinePvpPhase()
     /** Game over */
     data class GameOver(
         val myScore: Int,
@@ -60,6 +64,12 @@ data class OnlinePvpGameUiState(
     val opponentScore: Int = 0,
     val myStreak: Int = 0,
     val opponentStreak: Int = 0,
+    /** My remaining deck card IDs — read from listener, read atomically by input handlers.
+     *  Lives on the immutable state to avoid the var/race between the listener coroutine and
+     *  `onCardSelected`/`onConfirmAnswer` reading mid-update. */
+    val myCardIds: List<Long> = emptyList(),
+    /** Opponent's remaining deck card IDs — same race-prevention rationale as [myCardIds]. */
+    val opponentCardIds: List<Long> = emptyList(),
     val timeRemaining: Int = PvpGameLogic.TIMER_DURATION,
     val phase: OnlinePvpPhase = OnlinePvpPhase.WaitingForOpponent,
     val connectionError: String? = null,
@@ -88,8 +98,6 @@ class OnlinePvpGameViewModel @Inject constructor(
     val uiState: StateFlow<OnlinePvpGameUiState> = _uiState.asStateFlow()
 
     private var allWords: List<Word> = emptyList()
-    private var myCardIds: List<Long> = emptyList()
-    private var opponentCardIds: List<Long> = emptyList()
     private var timerJob: Job? = null
     private var disconnectTimerJob: Job? = null
     private var lastPhase: String? = null
@@ -134,9 +142,10 @@ class OnlinePvpGameViewModel @Inject constructor(
         val opponentScore = if (opponentIndex == 0) match.player1Score else match.player2Score
         val myStreak = if (myIndex == 0) match.player1Streak else match.player2Streak
 
-        // Store card IDs for both players
-        myCardIds = if (myIndex == 0) match.player1RemainingIds else match.player2RemainingIds
-        opponentCardIds = if (myIndex == 0) match.player2RemainingIds else match.player1RemainingIds
+        // Local snapshot — published atomically into _uiState below so input handlers
+        // (onCardSelected / onConfirmAnswer) read a consistent view rather than a half-updated var.
+        val myCards = if (myIndex == 0) match.player1RemainingIds else match.player2RemainingIds
+        val opponentCards = if (myIndex == 0) match.player2RemainingIds else match.player1RemainingIds
         val opponentStreak = if (myIndex == 0) match.player2Streak else match.player1Streak
 
         // Auto-forfeit: if the opponent has been gone for 30 s we award the win here
@@ -185,7 +194,7 @@ class OnlinePvpGameViewModel @Inject constructor(
             OnlineMatchData.PHASE_HAND_SELECTION -> {
                 val isMyTurn = match.currentTurn == myIndex
                 val newPhase = if (isMyTurn) {
-                    val myWords = wordSetRepository.getWordsByIds(myCardIds)
+                    val myWords = wordSetRepository.getWordsByIds(myCards)
                     val hand = buildHand(myWords)
                     val handIds = hand.map { it.id }.toSet()
                     val remainingDeck = myWords.filter { it.id !in handIds }
@@ -209,6 +218,8 @@ class OnlinePvpGameViewModel @Inject constructor(
                         opponentScore = opponentScore,
                         myStreak = myStreak,
                         opponentStreak = opponentStreak,
+                        myCardIds = myCards,
+                        opponentCardIds = opponentCards,
                         phase = newPhase,
                     )
                 }
@@ -238,7 +249,7 @@ class OnlinePvpGameViewModel @Inject constructor(
                         selectedAnswer = round.selectedAnswer.takeIf { it.isNotEmpty() },
                     )
                 } else {
-                    OnlinePvpPhase.WaitingForAnswer(round.question)
+                    OnlinePvpPhase.WaitingForAnswer
                 }
                 _uiState.update {
                     it.copy(
@@ -249,6 +260,8 @@ class OnlinePvpGameViewModel @Inject constructor(
                         opponentScore = opponentScore,
                         myStreak = myStreak,
                         opponentStreak = opponentStreak,
+                        myCardIds = myCards,
+                        opponentCardIds = opponentCards,
                         phase = newPhase,
                     )
                 }
@@ -259,7 +272,7 @@ class OnlinePvpGameViewModel @Inject constructor(
     fun onCardSelected(card: Word) {
         stopTimer()
         val quiz = buildQuiz(card) ?: return
-        val newRemainingIds = myCardIds.filter { it != card.id }
+        val newRemainingIds = _uiState.value.myCardIds.filter { it != card.id }
 
         val round = OnlineRoundData(
             playedCardId = card.id,
@@ -308,30 +321,9 @@ class OnlinePvpGameViewModel @Inject constructor(
             // I am the defender. Turns ALTERNATE: defender becomes next attacker.
             val newMyStreak = if (isCorrect) state.myStreak + 1 else 0
             val multiplier = streakToMultiplier(newMyStreak)
-
             val card = allWords.find { it.original == phase.playedCardWord }
             val points = if (isCorrect) (card?.rarity?.points ?: 1) * multiplier else 0
-
             val newMyScore = state.myScore + points
-
-            // Map my/opponent scores to player1/player2 slots
-            val p1Score: Int
-            val p2Score: Int
-            val p1Streak: Int
-            val p2Streak: Int
-            if (myIndex == 0) {
-                // I am Player 1 (defender), opponent is Player 2 (attacker)
-                p1Score = newMyScore
-                p2Score = state.opponentScore
-                p1Streak = newMyStreak
-                p2Streak = state.opponentStreak  // attacker's streak unchanged
-            } else {
-                // I am Player 2 (defender), opponent is Player 1 (attacker)
-                p1Score = state.opponentScore
-                p2Score = newMyScore
-                p1Streak = state.opponentStreak  // attacker's streak unchanged
-                p2Streak = newMyStreak
-            }
 
             // Defender becomes next attacker if they have cards;
             // if not but opponent still has cards, opponent continues; otherwise game over.
@@ -339,11 +331,11 @@ class OnlinePvpGameViewModel @Inject constructor(
             val nextAttacker: Int
             val nextPhase: String
             when {
-                myCardIds.isNotEmpty() -> {
+                state.myCardIds.isNotEmpty() -> {
                     nextAttacker = myIndex
                     nextPhase = OnlineMatchData.PHASE_HAND_SELECTION
                 }
-                opponentCardIds.isNotEmpty() -> {
+                state.opponentCardIds.isNotEmpty() -> {
                     nextAttacker = opponentIdx
                     nextPhase = OnlineMatchData.PHASE_HAND_SELECTION
                 }
@@ -354,21 +346,24 @@ class OnlinePvpGameViewModel @Inject constructor(
             }
 
             val isGameOver = nextPhase == OnlineMatchData.PHASE_GAME_OVER
+            // Winner is decided from MY new score vs opponent's score-at-time-of-snapshot.
+            // Safe: opponent's score never changes during MY defender turn (they don't write it),
+            // and this client only writes its own side via pushMyTurn — so we can't clobber theirs.
             val winnerIndex = when {
                 !isGameOver -> -1
-                p1Score > p2Score -> 0
-                p2Score > p1Score -> 1
+                newMyScore > state.opponentScore -> myIndex
+                state.opponentScore > newMyScore -> opponentIdx
                 else -> -1
             }
 
-            // Game-critical write to Realtime Database
+            // Game-critical write — pushMyTurn writes only this player's own score/streak slot;
+            // never touches opponent's fields.
             try {
-                onlineGameRepository.confirmAnswer(
+                onlineGameRepository.pushMyTurn(
                     matchId = matchId,
-                    p1Score = p1Score,
-                    p2Score = p2Score,
-                    p1Streak = p1Streak,
-                    p2Streak = p2Streak,
+                    myIndex = myIndex,
+                    myScore = newMyScore,
+                    myStreak = newMyStreak,
                     nextTurn = nextAttacker,
                     nextPhase = nextPhase,
                     isGameOver = isGameOver,
@@ -379,7 +374,8 @@ class OnlinePvpGameViewModel @Inject constructor(
                 return@launch
             }
 
-            // Stats update is best-effort — Firestore errors must not break the game
+            // Stats update is best-effort — Firestore errors must not break the game,
+            // but we log them so silent stat-loss is diagnosable.
             if (isGameOver) {
                 try {
                     val uid = authManager.currentUser.value?.uid ?: return@launch
@@ -388,7 +384,9 @@ class OnlinePvpGameViewModel @Inject constructor(
                         winnerIndex == -1 -> firestoreUserRepository.incrementDraw(uid)
                         else -> firestoreUserRepository.incrementLoss(uid)
                     }
-                } catch (_: Exception) { /* ignore */ }
+                } catch (e: Exception) {
+                    Log.w(TAG, "stat update on game-over failed", e)
+                }
             }
         }
     }
@@ -400,16 +398,15 @@ class OnlinePvpGameViewModel @Inject constructor(
         didSurrender = true
         val state = _uiState.value
         val opponentIndex = 1 - myIndex
-        val p1Score = if (myIndex == 0) state.myScore else state.opponentScore
-        val p2Score = if (myIndex == 0) state.opponentScore else state.myScore
         viewModelScope.launch {
             try {
-                onlineGameRepository.confirmAnswer(
+                // Surrender — I write only my own slot; my score stays as-is, my streak resets.
+                // Opponent's score remains whatever they last wrote.
+                onlineGameRepository.pushMyTurn(
                     matchId = matchId,
-                    p1Score = p1Score,
-                    p2Score = p2Score,
-                    p1Streak = 0,
-                    p2Streak = 0,
+                    myIndex = myIndex,
+                    myScore = state.myScore,
+                    myStreak = 0,
                     nextTurn = 0,
                     nextPhase = OnlineMatchData.PHASE_GAME_OVER,
                     isGameOver = true,
@@ -419,11 +416,12 @@ class OnlinePvpGameViewModel @Inject constructor(
                 _uiState.update { it.copy(connectionError = "Ошибка сдачи: ${e.message}") }
                 return@launch
             }
-            // Stats update is best-effort — Firestore errors must not break the game
             try {
                 val uid = authManager.currentUser.value?.uid ?: return@launch
                 firestoreUserRepository.incrementLoss(uid)
-            } catch (_: Exception) { /* ignore */ }
+            } catch (e: Exception) {
+                Log.w(TAG, "stat update on surrender failed", e)
+            }
         }
     }
 
@@ -433,8 +431,11 @@ class OnlinePvpGameViewModel @Inject constructor(
     fun onAppBackground() {
         if (gameOverRecorded) return
         viewModelScope.launch {
-            try { onlineGameRepository.reportDisconnect(matchId, myIndex, System.currentTimeMillis()) }
-            catch (_: Exception) { }
+            try {
+                onlineGameRepository.reportDisconnect(matchId, myIndex, System.currentTimeMillis())
+            } catch (e: Exception) {
+                Log.w(TAG, "reportDisconnect failed", e)
+            }
         }
     }
 
@@ -446,8 +447,9 @@ class OnlinePvpGameViewModel @Inject constructor(
                 // clearDisconnect also re-registers the onDisconnect handler,
                 // since Firebase cancels it automatically after a reconnect.
                 onlineGameRepository.clearDisconnect(matchId, myIndex)
+            } catch (e: Exception) {
+                Log.w(TAG, "clearDisconnect failed", e)
             }
-            catch (_: Exception) { }
         }
     }
 
@@ -489,16 +491,13 @@ class OnlinePvpGameViewModel @Inject constructor(
         gameOverRecorded = true
         disconnectTimerJob?.cancel()
         val state = _uiState.value
-        val p1Score = if (myIndex == 0) state.myScore else state.opponentScore
-        val p2Score = if (myIndex == 0) state.opponentScore else state.myScore
         viewModelScope.launch {
             try {
-                onlineGameRepository.confirmAnswer(
+                onlineGameRepository.pushMyTurn(
                     matchId = matchId,
-                    p1Score = p1Score,
-                    p2Score = p2Score,
-                    p1Streak = 0,
-                    p2Streak = 0,
+                    myIndex = myIndex,
+                    myScore = state.myScore,
+                    myStreak = 0,
                     nextTurn = 0,
                     nextPhase = OnlineMatchData.PHASE_GAME_OVER,
                     isGameOver = true,
@@ -515,16 +514,13 @@ class OnlinePvpGameViewModel @Inject constructor(
         gameOverRecorded = true
         disconnectTimerJob?.cancel()
         val state = _uiState.value
-        val p1Score = if (myIndex == 0) state.myScore else state.opponentScore
-        val p2Score = if (myIndex == 0) state.opponentScore else state.myScore
         viewModelScope.launch {
             try {
-                onlineGameRepository.confirmAnswer(
+                onlineGameRepository.pushMyTurn(
                     matchId = matchId,
-                    p1Score = p1Score,
-                    p2Score = p2Score,
-                    p1Streak = 0,
-                    p2Streak = 0,
+                    myIndex = myIndex,
+                    myScore = state.myScore,
+                    myStreak = 0,
                     nextTurn = 0,
                     nextPhase = OnlineMatchData.PHASE_GAME_OVER,
                     isGameOver = true,
@@ -533,7 +529,9 @@ class OnlinePvpGameViewModel @Inject constructor(
                 try {
                     val uid = authManager.currentUser.value?.uid ?: return@launch
                     firestoreUserRepository.incrementWin(uid)
-                } catch (_: Exception) { }
+                } catch (e: Exception) {
+                    Log.w(TAG, "stat update on disconnect-win failed", e)
+                }
             } catch (e: Exception) {
                 _uiState.update { it.copy(connectionError = "Ошибка: ${e.message}") }
             }

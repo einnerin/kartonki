@@ -11,6 +11,7 @@ import com.google.firebase.database.ValueEventListener
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
+import java.util.concurrent.atomic.AtomicBoolean
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -55,6 +56,11 @@ class MatchmakingRepository @Inject constructor(
         val slotRef   = lobbyRef.child("${entry.languagePair}/slot")
         val myDataRef = lobbyRef.child("${entry.languagePair}_data_${entry.uid}")
         var done = false
+        // flowClosed gates the Creator's deferred work (opponent-data read + match-doc
+        // setValue success callback). Without this, cancelling the search AFTER the
+        // transaction committed but BEFORE the match document was created would still
+        // create the match in Firebase — Waiter would then navigate into a no-show game.
+        val flowClosed = AtomicBoolean(false)
 
         // Shared cleanup: remove my personal data node when done or cancelled.
         val cleanup: () -> Unit = { myDataRef.removeValue() }
@@ -63,6 +69,13 @@ class MatchmakingRepository @Inject constructor(
         // confirms the slot is ours with matchId cleared). Keeping a reference so
         // awaitClose can deregister it in all exit paths.
         var slotListener: ValueEventListener? = null
+
+        // Creator's opponent-data single-value listener — kept so awaitClose can remove
+        // it before opponent data arrives. Firebase auto-removes after fire, but if we
+        // cancel between addListenerForSingleValueEvent and the actual fire, we want to
+        // detach it so the Creator's onDataChange body never runs.
+        var creatorDataRef: com.google.firebase.database.DatabaseReference? = null
+        var creatorDataListener: ValueEventListener? = null
 
         trySend(MatchmakingResult.Searching)
 
@@ -142,13 +155,19 @@ class MatchmakingRepository @Inject constructor(
                     done = true
                     val opponentUid = slotUid
 
-                    lobbyRef.child("${entry.languagePair}_data_${opponentUid}")
-                        .addListenerForSingleValueEvent(object : ValueEventListener {
+                    val opponentDataRef = lobbyRef.child("${entry.languagePair}_data_${opponentUid}")
+                    creatorDataRef = opponentDataRef
+                    val creatorListener = object : ValueEventListener {
                             override fun onDataChange(snap: DataSnapshot) {
+                                if (flowClosed.get()) return
                                 val opponentName  = snap.child("playerName").getValue(String::class.java) ?: "Игрок"
                                 val opponentCards = snap.child("cardIds").value.toCardIdList()
 
-                                val newMatchId = matchesRef.push().key ?: return
+                                val newMatchId = matchesRef.push().key
+                                if (newMatchId == null) {
+                                    trySend(MatchmakingResult.Error("Не удалось зарезервировать matchId"))
+                                    return
+                                }
                                 val matchData = mapOf(
                                     "matchId"             to newMatchId,
                                     "player1Uid"          to entry.uid,
@@ -173,6 +192,10 @@ class MatchmakingRepository @Inject constructor(
 
                                 matchesRef.child(newMatchId).setValue(matchData)
                                     .addOnSuccessListener {
+                                        // Gate: if the user cancelled the search between transaction
+                                        // and Firebase confirming the doc write, don't notify Waiter
+                                        // (slot has already been cleaned, or will be by awaitClose).
+                                        if (flowClosed.get()) return@addOnSuccessListener
                                         // Write matchId into the slot → Waiter's listener fires.
                                         slotRef.setValue(mapOf(
                                             "uid"     to opponentUid,
@@ -184,19 +207,30 @@ class MatchmakingRepository @Inject constructor(
                                         cleanup()
                                     }
                                     .addOnFailureListener { e ->
+                                        if (flowClosed.get()) return@addOnFailureListener
                                         trySend(MatchmakingResult.Error("Match creation failed: ${e.message}"))
                                     }
                             }
                             override fun onCancelled(error: DatabaseError) {
+                                if (flowClosed.get()) return
                                 trySend(MatchmakingResult.Error(error.message))
                             }
-                        })
+                        }
+                    creatorDataListener = creatorListener
+                    opponentDataRef.addListenerForSingleValueEvent(creatorListener)
                 }
             }, false) // applyLocally=false: use committed server state, not local cache
         }
 
         awaitClose {
+            flowClosed.set(true)
             slotListener?.let { slotRef.removeEventListener(it) }
+            // Detach the Creator's single-value listener if it hasn't fired yet —
+            // Firebase auto-removes after fire but holds it until then. Without this,
+            // a late onDataChange could still create a match doc for a cancelled search.
+            val cListener = creatorDataListener
+            val cRef      = creatorDataRef
+            if (cListener != null && cRef != null) cRef.removeEventListener(cListener)
             cleanup()
             // Remove from slot only if I'm still the Waiter with no match assigned.
             slotRef.addListenerForSingleValueEvent(object : ValueEventListener {

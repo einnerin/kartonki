@@ -1,5 +1,6 @@
 package com.example.kartonki.data.remote
 
+import android.util.Log
 import com.example.kartonki.data.remote.model.OnlineMatchData
 import com.example.kartonki.data.remote.model.OnlineRoundData
 import com.google.firebase.database.DataSnapshot
@@ -14,20 +15,33 @@ import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 import javax.inject.Singleton
 
+private const val TAG = "OnlineGameRepository"
+
 @Singleton
 class OnlineGameRepository @Inject constructor(
     private val database: FirebaseDatabase,
 ) {
     private fun matchRef(matchId: String) = database.getReference("matches").child(matchId)
 
-    /** Listens to game state updates in real time. */
+    /**
+     * Listens to game state updates in real time.
+     *
+     * Emits `null` for both "match doc deleted" AND "RTDB error / permission denied".
+     * The two are conflated by design (the consumer ViewModel treats either as
+     * "connection lost"), but the error path now logs the [DatabaseError] detail
+     * so transient failures are diagnosable in Logcat / Crashlytics — silent
+     * swallow is the worst of both worlds.
+     */
     fun listenToMatch(matchId: String): Flow<OnlineMatchData?> = callbackFlow {
         val listener = object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (!snapshot.exists()) { trySend(null); return }
                 trySend(snapshot.toMatchData())
             }
-            override fun onCancelled(error: DatabaseError) { trySend(null) }
+            override fun onCancelled(error: DatabaseError) {
+                Log.w(TAG, "listenToMatch $matchId cancelled: code=${error.code} msg=${error.message}")
+                trySend(null)
+            }
         }
         matchRef(matchId).addValueEventListener(listener)
         awaitClose { matchRef(matchId).removeEventListener(listener) }
@@ -106,23 +120,33 @@ class OnlineGameRepository @Inject constructor(
         matchRef(matchId).child("currentRound").child("selectedAnswer").setValue(answer).await()
     }
 
-    /** Confirm answer and advance to next turn. */
-    suspend fun confirmAnswer(
+    /**
+     * Push the current player's own progress (score, streak) and shared
+     * game-control fields (currentTurn, phase, optional game-end).
+     *
+     * Critically: writes only player {myIndex}'s score/streak — never the opponent's.
+     * The previous `confirmAnswer(p1Score, p2Score, p1Streak, p2Streak, …)` API
+     * read the opponent's score from this client's local snapshot and blind-wrote
+     * it back, which let one player's late `updateChildren` clobber a concurrent
+     * write by the other (disconnect-forfeit, surrender, opponent's own move).
+     * Each player now owns its own `playerN*` fields end-to-end and can't trample
+     * the other side's state.
+     */
+    suspend fun pushMyTurn(
         matchId: String,
-        p1Score: Int,
-        p2Score: Int,
-        p1Streak: Int,
-        p2Streak: Int,
+        myIndex: Int,
+        myScore: Int,
+        myStreak: Int,
         nextTurn: Int,
         nextPhase: String,
-        isGameOver: Boolean,
-        winnerIndex: Int,
+        isGameOver: Boolean = false,
+        winnerIndex: Int = -1,
     ) {
+        val scoreKey  = if (myIndex == 0) "player1Score"  else "player2Score"
+        val streakKey = if (myIndex == 0) "player1Streak" else "player2Streak"
         val updates = mutableMapOf<String, Any>(
-            "player1Score" to p1Score,
-            "player2Score" to p2Score,
-            "player1Streak" to p1Streak,
-            "player2Streak" to p2Streak,
+            scoreKey to myScore,
+            streakKey to myStreak,
             "currentTurn" to nextTurn,
             "phase" to nextPhase,
             "roundStartTime" to System.currentTimeMillis(),
