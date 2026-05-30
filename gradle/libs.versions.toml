@@ -17,6 +17,7 @@ firebaseBom = "33.7.0"
 googleServices = "4.4.2"
 playServicesAuth = "21.3.0"
 coroutinesPlayServices = "1.8.1"
+leakcanary = "2.14"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -56,6 +57,8 @@ firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics
 play-services-auth = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "playServicesAuth" }
 # Coroutines + Play Services interop
 kotlinx-coroutines-play-services = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-play-services", version.ref = "coroutinesPlayServices" }
+# LeakCanary (debug-only — auto-installs via ContentProvider, no init code needed)
+leakcanary-android = { group = "com.squareup.leakcanary", name = "leakcanary-android", version.ref = "leakcanary" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

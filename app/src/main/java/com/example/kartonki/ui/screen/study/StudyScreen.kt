@@ -159,7 +159,6 @@ fun StudyScreen(
             RarityFilterChips(
                 activeFilters = uiState.activeFilters,
                 onToggle = { viewModel.toggleFilter(it) },
-                compact = true,
                 trailingContent = if (uiState.problemWordCount > 0) {
                     {
                         ProblemWordsChip(

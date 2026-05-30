@@ -158,4 +158,7 @@ dependencies {
     androidTestImplementation(libs.androidx.room.testing)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    // Auto-installs via ContentProvider; ships only in debug builds (~3-4 MB).
+    // Catches retained ViewModels / Activities / Composable scopes.
+    debugImplementation(libs.leakcanary.android)
 }
