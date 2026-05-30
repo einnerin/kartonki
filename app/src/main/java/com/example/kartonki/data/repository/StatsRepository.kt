@@ -4,6 +4,7 @@ import com.example.kartonki.data.db.dao.ProgressDao
 import com.example.kartonki.data.db.dao.PvpMatchDao
 import com.example.kartonki.data.db.dao.StudyStreakDao
 import com.example.kartonki.data.db.dao.WordDao
+import com.example.kartonki.data.db.entity.PvpMatchEntity
 import com.example.kartonki.domain.model.PlayerStats
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
@@ -30,40 +31,49 @@ class StatsRepository @Inject constructor(
         val currentStreak = calculateCurrentStreak(sortedDays.sortedDescending())
         val longestStreak = calculateLongestStreak(sortedDays)
 
-        val matches   = pvpMatchDao.getAll()
-        // Wins/losses derived from deviceOwnerIndex (role), NOT name comparison —
-        // the old `winnerName == player1Name` flipped wins into losses whenever both
-        // players were called "Игрок" (default pass-and-play). Legacy rows
-        // (deviceOwnerIndex = null) are skipped: we can't reconstruct who the device
-        // owner was, so they don't contribute to either counter.
-        val withRole  = matches.filter { it.deviceOwnerIndex != null }
-        val wins      = withRole.count { m ->
-            val myScore  = if (m.deviceOwnerIndex == 0) m.player1Score else m.player2Score
-            val oppScore = if (m.deviceOwnerIndex == 0) m.player2Score else m.player1Score
-            myScore > oppScore
-        }
-        val losses    = withRole.count { m ->
-            val myScore  = if (m.deviceOwnerIndex == 0) m.player1Score else m.player2Score
-            val oppScore = if (m.deviceOwnerIndex == 0) m.player2Score else m.player1Score
-            myScore < oppScore
-        }
-        // Draws: still by winnerName == null (covers both legacy and new draw rows).
-        val draws     = matches.count { it.winnerName == null }
-        // bestScore — device owner's own best, across role-known matches.
-        val bestScore = withRole.maxOfOrNull { m ->
-            if (m.deviceOwnerIndex == 0) m.player1Score else m.player2Score
-        } ?: 0
+        val pvp = computePvpStats(pvpMatchDao.getAll())
 
         return PlayerStats(
             wordsLearned  = wordsLearned,
             accuracy      = accuracy,
             currentStreak = currentStreak,
             longestStreak = longestStreak,
-            pvpWins       = wins,
-            pvpLosses     = losses,
-            pvpDraws      = draws,
-            bestPvpScore  = bestScore,
+            pvpWins       = pvp.wins,
+            pvpLosses     = pvp.losses,
+            pvpDraws      = pvp.draws,
+            bestPvpScore  = pvp.bestScore,
         )
+    }
+
+    /** Aggregated PvP counters — extracted as a pure function for unit testing. */
+    internal data class PvpStats(val wins: Int, val losses: Int, val draws: Int, val bestScore: Int)
+
+    /**
+     * Aggregate device-owner PvP record from raw match rows.
+     *
+     * Wins/losses are derived from [PvpMatchEntity.deviceOwnerIndex] (role), NOT
+     * name comparison — the old `winnerName == player1Name` flipped wins into
+     * losses whenever both players were called "Игрок" (default pass-and-play).
+     * Legacy rows with deviceOwnerIndex = null are skipped: we can't reconstruct
+     * who the device owner was, so they don't contribute to either counter.
+     *
+     * Draws still come from `winnerName == null` (covers both legacy and new
+     * draw rows). bestScore is the device owner's own best across role-known
+     * matches — for online PvP where the client was P2 this used to incorrectly
+     * report the opponent's high.
+     */
+    internal companion object {
+        internal fun computePvpStats(matches: List<PvpMatchEntity>): PvpStats {
+            val withRole = matches.filter { it.deviceOwnerIndex != null }
+            fun myScore(m: PvpMatchEntity)  = if (m.deviceOwnerIndex == 0) m.player1Score else m.player2Score
+            fun oppScore(m: PvpMatchEntity) = if (m.deviceOwnerIndex == 0) m.player2Score else m.player1Score
+            return PvpStats(
+                wins      = withRole.count { myScore(it) > oppScore(it) },
+                losses    = withRole.count { myScore(it) < oppScore(it) },
+                draws     = matches.count { it.winnerName == null },
+                bestScore = withRole.maxOfOrNull(::myScore) ?: 0,
+            )
+        }
     }
 
     suspend fun getWordStats(): List<WordStat> {
