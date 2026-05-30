@@ -104,18 +104,6 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any?>) {
         "attempt_number" to attemptNumber,
     ))
 
-    data class CardRarityPromoted(
-        val wordId: Long,
-        val fromRarity: String,
-        val toRarity: String,
-        val cumulativeAttempts: Int,
-    ) : AnalyticsEvent("card_rarity_promoted", mapOf(
-        "word_id" to wordId,
-        "from_rarity" to fromRarity,
-        "to_rarity" to toRarity,
-        "cumulative_attempts" to cumulativeAttempts,
-    ))
-
     data class ProblemWordReviewed(
         val wordId: Long,
         val failCountBefore: Int,
@@ -156,7 +144,7 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any?>) {
         "fail_streak_words" to failStreakWords,
     ))
 
-    // ── Decks (4) — скелет, реализуются в Фазе 3 ──────────────────────────────
+    // ── Decks (2) ─────────────────────────────────────────────────────────────
 
     data class DeckBuilt(
         val size: Int,
@@ -182,34 +170,12 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any?>) {
         "cards_considered" to cardsConsidered,
     ))
 
-    data class DeckEdited(
-        val sizeDelta: Int,
-        val avgRarityAfter: String,
-        val languagePair: String,
-    ) : AnalyticsEvent("deck_edited", mapOf(
-        "size_delta" to sizeDelta,
-        "avg_rarity_after" to avgRarityAfter,
-        "language_pair" to languagePair,
-    ))
-
     data class DeckDeleted(
         val ageDays: Int,
         val wasEverUsed: Boolean,
     ) : AnalyticsEvent("deck_deleted", mapOf(
         "age_days" to ageDays,
         "was_ever_used" to wasEverUsed,
-    ))
-
-    data class DeckSelectedForSession(
-        val deckId: Long,
-        val deckLevel: Int,
-        val deckSize: Int,
-        val forMode: SessionMode,
-    ) : AnalyticsEvent("deck_selected_for_session", mapOf(
-        "deck_id" to deckId,
-        "deck_level" to deckLevel,
-        "deck_size" to deckSize,
-        "for_mode" to forMode.tag,
     ))
 
     // ── PvP Local (2) ─────────────────────────────────────────────────────────
@@ -244,7 +210,7 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any?>) {
         "rounds_won_p2" to roundsWonP2,
     ))
 
-    // ── PvP Online (5) ────────────────────────────────────────────────────────
+    // ── PvP Online (2) ────────────────────────────────────────────────────────
 
     data class PvpOnlineMatchmakingStarted(
         val deckLevel: Int,
@@ -264,39 +230,7 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any?>) {
         "duration_sec" to durationSec,
     ))
 
-    data class PvpOnlineMatchStarted(
-        val ownDeckLevel: Int,
-        val ownDeckSize: Int,
-        val opponentEstimatedLevel: Int?,
-    ) : AnalyticsEvent("pvp_online_match_started", mapOf(
-        "own_deck_level" to ownDeckLevel,
-        "own_deck_size" to ownDeckSize,
-        "opponent_estimated_level" to opponentEstimatedLevel,
-    ))
-
-    data class PvpOnlineMatchFinished(
-        val rounds: Int,
-        val won: Boolean,
-        val durationSec: Long,
-        val surrendered: Boolean,
-        val surrenderedByOpponent: Boolean,
-    ) : AnalyticsEvent("pvp_online_match_finished", mapOf(
-        "rounds" to rounds,
-        "won" to won,
-        "duration_sec" to durationSec,
-        "surrendered" to surrendered,
-        "surrendered_by_opponent" to surrenderedByOpponent,
-    ))
-
-    data class PvpOnlineDisconnect(
-        val reason: DisconnectReason,
-        val roundNumber: Int,
-    ) : AnalyticsEvent("pvp_online_disconnect", mapOf(
-        "reason" to reason.tag,
-        "round_number" to roundNumber,
-    ))
-
-    // ── Collection & Rewards (3) ──────────────────────────────────────────────
+    // ── Collection & Rewards (2) ──────────────────────────────────────────────
 
     data class PackOpened(
         val packType: String,
@@ -320,13 +254,6 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any?>) {
         "days_since_first_open" to daysSinceFirstOpen,
     ))
 
-    data class CardRetainedAsFavorite(
-        val wordId: Long,
-        val rarity: String,
-    ) : AnalyticsEvent("card_retained_as_favorite", mapOf(
-        "word_id" to wordId,
-        "rarity" to rarity,
-    ))
 
     // ── Auth & Technical (3) ──────────────────────────────────────────────────
 
@@ -348,13 +275,6 @@ sealed class AnalyticsEvent(val name: String, val params: Map<String, Any?>) {
         "is_fatal" to isFatal,
     ))
 
-    /**
-     * Маркер включения tester-mode (скелет — пока нигде не логируется).
-     * Сама атрибуция tester'а делается через user_id="tester" в
-     * [com.example.kartonki.KartonkiApplication.initAnalytics] при старте приложения,
-     * а не этим событием.
-     */
-    object TesterModeEnabled : AnalyticsEvent("tester_mode_enabled", emptyMap())
 }
 
 enum class SessionMode(val tag: String) {
@@ -379,9 +299,3 @@ enum class MatchmakingOutcome(val tag: String) {
     ERROR("error"),
 }
 
-enum class DisconnectReason(val tag: String) {
-    TIMEOUT("timeout"),
-    SERVER_ERROR("server"),
-    NETWORK("network"),
-    OPPONENT_LEFT("opponent_left"),
-}
