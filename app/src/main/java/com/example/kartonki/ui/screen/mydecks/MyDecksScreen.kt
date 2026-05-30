@@ -44,12 +44,10 @@ import androidx.compose.runtime.setValue
 import kotlin.math.roundToInt
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.kartonki.R
 import com.example.kartonki.ui.component.OnResume
 import com.example.kartonki.domain.model.DeckLevel
 import com.example.kartonki.ui.component.DeckInvalidBadge

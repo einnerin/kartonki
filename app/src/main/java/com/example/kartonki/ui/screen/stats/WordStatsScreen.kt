@@ -106,7 +106,7 @@ fun WordStatsScreen(
                     WordStatSort.MOST_ENCOUNTERS to s.wordStatsSortFrequent,
                     WordStatSort.RECENTLY_STUDIED to s.wordStatsSortRecent,
                 )
-                items(sorts) { (sort, label) ->
+                items(sorts, key = { it.first.name }) { (sort, label) ->
                     FilterChip(
                         selected = state.sortBy == sort,
                         onClick = { viewModel.onSortChange(sort) },
@@ -142,7 +142,7 @@ fun WordStatsScreen(
                     contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp),
                     verticalArrangement = Arrangement.spacedBy(6.dp),
                 ) {
-                    items(state.words) { stat ->
+                    items(state.words, key = { it.wordId }) { stat ->
                         WordStatRow(stat)
                     }
                 }

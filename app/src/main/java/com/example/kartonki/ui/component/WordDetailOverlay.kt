@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -35,6 +36,13 @@ fun WordDetailOverlay(
     if (word != null) {
         BackHandler(onBack = onDismiss)
     }
+    // Retain the last non-null word so the exit animation has content to draw.
+    // Without this, `word?.let { WordCard(it) }` in the AnimatedVisibility content
+    // returns null the moment `word == null`, so the card disappears instantly
+    // while scaleOut/fadeOut play against an empty Box (only the dim layer fades).
+    val lastWord = remember { mutableStateOf<Word?>(null) }
+    if (word != null) lastWord.value = word
+
     AnimatedVisibility(
         visible = word != null,
         enter = fadeIn(),
@@ -56,7 +64,7 @@ fun WordDetailOverlay(
                 enter = scaleIn(initialScale = 0.85f) + fadeIn(),
                 exit = scaleOut(targetScale = 0.85f) + fadeOut(),
             ) {
-                word?.let { w ->
+                lastWord.value?.let { w ->
                     WordCard(
                         word = w,
                         modifier = Modifier

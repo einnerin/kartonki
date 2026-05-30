@@ -30,7 +30,6 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -62,7 +61,6 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -71,7 +69,6 @@ import androidx.compose.ui.unit.dp
 import com.example.kartonki.domain.model.Rarity
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.ui.theme.LocalAppStrings
-import com.example.kartonki.R
 import com.example.kartonki.ui.component.OnResume
 import com.example.kartonki.ui.component.RarityFilterChips
 import com.example.kartonki.ui.component.SearchBar

@@ -38,13 +38,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.kartonki.R
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.ui.component.OnResume
 import com.example.kartonki.ui.component.WordDetailOverlay
@@ -156,7 +154,7 @@ fun WordSetDetailScreen(
                     LazyColumn(
                         contentPadding = PaddingValues(vertical = 4.dp),
                     ) {
-                        items(uiState.words) { word ->
+                        items(uiState.words, key = { it.id }) { word ->
                             WordListItem(word = word, onClick = { selectedWord = word })
                             HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
                         }
