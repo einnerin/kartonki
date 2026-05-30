@@ -1,0 +1,519 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 44,
+    "identityHash": "4aa2d8eb11a74923da2e351f1d7d57a1",
+    "entities": [
+      {
+        "tableName": "words",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `original` TEXT NOT NULL, `translation` TEXT NOT NULL, `definition` TEXT, `definitionNative` TEXT, `example` TEXT, `exampleNative` TEXT, `rarity` TEXT NOT NULL, `languagePair` TEXT NOT NULL, `setId` INTEGER NOT NULL, `pos` TEXT, `semanticGroup` TEXT, `transliteration` TEXT, `isDefaultPvpCard` INTEGER NOT NULL, `isFillInBlankSafe` INTEGER NOT NULL, `fillInBlankExclusions` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "original",
+            "columnName": "original",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "translation",
+            "columnName": "translation",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "definition",
+            "columnName": "definition",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "definitionNative",
+            "columnName": "definitionNative",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "example",
+            "columnName": "example",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "exampleNative",
+            "columnName": "exampleNative",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "rarity",
+            "columnName": "rarity",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languagePair",
+            "columnName": "languagePair",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "setId",
+            "columnName": "setId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pos",
+            "columnName": "pos",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "semanticGroup",
+            "columnName": "semanticGroup",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "transliteration",
+            "columnName": "transliteration",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "isDefaultPvpCard",
+            "columnName": "isDefaultPvpCard",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isFillInBlankSafe",
+            "columnName": "isFillInBlankSafe",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fillInBlankExclusions",
+            "columnName": "fillInBlankExclusions",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_words_original_languagePair",
+            "unique": false,
+            "columnNames": [
+              "original",
+              "languagePair"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_words_original_languagePair` ON `${TABLE_NAME}` (`original`, `languagePair`)"
+          },
+          {
+            "name": "index_words_languagePair",
+            "unique": false,
+            "columnNames": [
+              "languagePair"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_words_languagePair` ON `${TABLE_NAME}` (`languagePair`)"
+          },
+          {
+            "name": "index_words_rarity",
+            "unique": false,
+            "columnNames": [
+              "rarity"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_words_rarity` ON `${TABLE_NAME}` (`rarity`)"
+          },
+          {
+            "name": "index_words_isDefaultPvpCard",
+            "unique": false,
+            "columnNames": [
+              "isDefaultPvpCard"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_words_isDefaultPvpCard` ON `${TABLE_NAME}` (`isDefaultPvpCard`)"
+          },
+          {
+            "name": "index_words_semanticGroup_languagePair",
+            "unique": false,
+            "columnNames": [
+              "semanticGroup",
+              "languagePair"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_words_semanticGroup_languagePair` ON `${TABLE_NAME}` (`semanticGroup`, `languagePair`)"
+          },
+          {
+            "name": "index_words_setId",
+            "unique": false,
+            "columnNames": [
+              "setId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_words_setId` ON `${TABLE_NAME}` (`setId`)"
+          }
+        ]
+      },
+      {
+        "tableName": "word_sets",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL, `orderIndex` INTEGER NOT NULL, `languagePair` TEXT NOT NULL, `isFavorite` INTEGER NOT NULL, `topic` TEXT NOT NULL, `level` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderIndex",
+            "columnName": "orderIndex",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languagePair",
+            "columnName": "languagePair",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isFavorite",
+            "columnName": "isFavorite",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "topic",
+            "columnName": "topic",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "level",
+            "columnName": "level",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "collection",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`wordId` INTEGER NOT NULL, PRIMARY KEY(`wordId`))",
+        "fields": [
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "wordId"
+          ]
+        }
+      },
+      {
+        "tableName": "decks",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT NOT NULL, `level` INTEGER NOT NULL, `isPreset` INTEGER NOT NULL, `languagePair` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "level",
+            "columnName": "level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPreset",
+            "columnName": "isPreset",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languagePair",
+            "columnName": "languagePair",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "deck_cards",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`deckId` INTEGER NOT NULL, `wordId` INTEGER NOT NULL, PRIMARY KEY(`deckId`, `wordId`))",
+        "fields": [
+          {
+            "fieldPath": "deckId",
+            "columnName": "deckId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "deckId",
+            "wordId"
+          ]
+        }
+      },
+      {
+        "tableName": "progress",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`wordId` INTEGER NOT NULL, `correctCount` INTEGER NOT NULL, `incorrectCount` INTEGER NOT NULL, `level` INTEGER NOT NULL, `nextReviewAt` INTEGER NOT NULL, `pvpCorrectCount` INTEGER NOT NULL, `pvpIncorrectCount` INTEGER NOT NULL, PRIMARY KEY(`wordId`))",
+        "fields": [
+          {
+            "fieldPath": "wordId",
+            "columnName": "wordId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "correctCount",
+            "columnName": "correctCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "incorrectCount",
+            "columnName": "incorrectCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "level",
+            "columnName": "level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nextReviewAt",
+            "columnName": "nextReviewAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pvpCorrectCount",
+            "columnName": "pvpCorrectCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pvpIncorrectCount",
+            "columnName": "pvpIncorrectCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "wordId"
+          ]
+        }
+      },
+      {
+        "tableName": "achievements",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `languagePair` TEXT NOT NULL, `unlockedAt` INTEGER, `rewardWordId` INTEGER, PRIMARY KEY(`id`, `languagePair`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languagePair",
+            "columnName": "languagePair",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unlockedAt",
+            "columnName": "unlockedAt",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "rewardWordId",
+            "columnName": "rewardWordId",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id",
+            "languagePair"
+          ]
+        }
+      },
+      {
+        "tableName": "study_streaks",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`date` INTEGER NOT NULL, `languagePair` TEXT NOT NULL, PRIMARY KEY(`date`, `languagePair`))",
+        "fields": [
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languagePair",
+            "columnName": "languagePair",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "date",
+            "languagePair"
+          ]
+        }
+      },
+      {
+        "tableName": "pvp_matches",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `timestamp` INTEGER NOT NULL, `player1Name` TEXT NOT NULL, `player2Name` TEXT NOT NULL, `player1Score` INTEGER NOT NULL, `player2Score` INTEGER NOT NULL, `winnerName` TEXT, `wasSurrender` INTEGER NOT NULL, `languagePair` TEXT NOT NULL, `deviceOwnerIndex` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "player1Name",
+            "columnName": "player1Name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "player2Name",
+            "columnName": "player2Name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "player1Score",
+            "columnName": "player1Score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "player2Score",
+            "columnName": "player2Score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "winnerName",
+            "columnName": "winnerName",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "wasSurrender",
+            "columnName": "wasSurrender",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languagePair",
+            "columnName": "languagePair",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deviceOwnerIndex",
+            "columnName": "deviceOwnerIndex",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "retained_favorites",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`setId` INTEGER NOT NULL, PRIMARY KEY(`setId`))",
+        "fields": [
+          {
+            "fieldPath": "setId",
+            "columnName": "setId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "setId"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4aa2d8eb11a74923da2e351f1d7d57a1')"
+    ]
+  }
+}

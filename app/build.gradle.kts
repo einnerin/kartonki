@@ -101,6 +101,17 @@ android {
         compose = true
         buildConfig = true
     }
+
+    // Room-схемы публикуются в androidTest assets, чтобы MigrationTestHelper мог
+    // открыть БД на исторической версии (41/42/43) и прогнать миграции до 44.
+    // Без этого helper.createDatabase(name, version) кидает FileNotFoundException.
+    sourceSets {
+        getByName("androidTest").assets.srcDir("$projectDir/schemas")
+    }
+}
+
+ksp {
+    arg("room.schemaLocation", "$projectDir/schemas")
 }
 
 kotlin {
@@ -144,6 +155,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+    androidTestImplementation(libs.androidx.room.testing)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 }

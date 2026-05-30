@@ -38,7 +38,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         RetainedFavoriteEntity::class,
     ],
     version = 44,
-    exportSchema = false,
+    exportSchema = true,
 )
 @TypeConverters(WordConverters::class)
 abstract class AppDatabase : RoomDatabase() {
