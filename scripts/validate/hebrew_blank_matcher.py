@@ -34,6 +34,39 @@ def _is_hebrew_letter(ch):
     return bool(ch and HEBREW_LETTER_RE.match(ch))
 
 
+def _has_hebrew_letter_before(s, idx):
+    """True if a Hebrew letter sits immediately before idx, skipping nikud marks.
+
+    Mirrors Kotlin HebrewBlankMatcher.hasHebrewLetterBefore — needed because the
+    strict path used to match a bare nikud-aligned root inside a prefixed form
+    (e.g. `כֶּלֶב` inside `הַכֶּלֶב`), leaving the article dangling next to the blank.
+    The patach `ַ` on the prefix `ה` is a nikud char, not a letter, so a naive
+    char-by-char boundary check would say "no letter before". Skipping nikud
+    until a real letter (or string start) gives the correct answer.
+    """
+    i = idx - 1
+    while i >= 0 and NIKUD_RE.match(s[i]):
+        i -= 1
+    return i >= 0 and _is_hebrew_letter(s[i])
+
+
+def _has_hebrew_letter_after(s, idx):
+    """True if a Hebrew letter sits immediately at/after idx, skipping nikud marks.
+
+    Mirrors the same Kotlin helper. Closes the suffix-inflection hole: a bare
+    headword like `פָּשַׁט` (3ms past) sits as a *prefix* of `פָּשַׁטְתִּי` (1s past) —
+    same nikud, no leading prefix letter — so the strict `original in example`
+    used to succeed there too, blanking the stem and leaving `תִּי` dangling.
+    With this check, the strict path correctly bails on suffix-inflected forms
+    and the caller falls through to prefix-aware mode (which also won't match
+    suffix inflection, so we end up returning False — the right answer).
+    """
+    i = idx
+    while i < len(s) and NIKUD_RE.match(s[i]):
+        i += 1
+    return i < len(s) and _is_hebrew_letter(s[i])
+
+
 def _find_word_bounded(haystack, needle):
     """Return index of needle in haystack such that boundaries on both sides
     are NOT Hebrew letters (so we don't match singular inside plural)."""
@@ -68,8 +101,12 @@ def can_make_blank(example, original):
     if not example or not original:
         return False
 
-    # 1) Strict path
-    if original in example:
+    # 1) Strict path — word-bounded so a bare root doesn't match inside a
+    # prefixed/inflected form (see helpers above).
+    idx = example.find(original)
+    if idx >= 0 and \
+       not _has_hebrew_letter_before(example, idx) and \
+       not _has_hebrew_letter_after(example, idx + len(original)):
         return True
 
     # 2) Nikud-insensitive + prefix tolerance, word-bounded
@@ -95,10 +132,12 @@ def replace_blank(example, original, blank="_____"):
     if not example or not original:
         return None
 
-    # 1) Strict path — replaceFirst (single occurrence) to avoid double blank
-    # when original appears 2+ times in example.
+    # 1) Strict path — replaceFirst, word-bounded. Same boundary check as
+    # can_make_blank: a bare root must not sit inside a prefixed/inflected form.
     idx = example.find(original)
-    if idx >= 0:
+    if idx >= 0 and \
+       not _has_hebrew_letter_before(example, idx) and \
+       not _has_hebrew_letter_after(example, idx + len(original)):
         return example[:idx] + blank + example[idx + len(original):]
 
     # 2) Nikud-insensitive + prefix tolerance with index mapping
@@ -148,6 +187,13 @@ if __name__ == "__main__":
         ("הַכֶּלֶב נָבַח.", "כֶּלֶב", True),
         ("הַחָתוּל יָשַׁן.", "כֶּלֶב", False),
         ("הַכְּלָבִים נָבְחוּ.", "כֶּלֶב", False),
+        # Suffix-inflection regression — must not match stem inside conjugated form.
+        # Stems Kotlin runtime would refuse to blank also must be False here, else
+        # validator would advise unfreezing words the app can't actually quiz.
+        ("פָּשַׁטְתִּי אֶת הַמְּעִיל בַּבַּיִת.", "פָּשַׁט", False),
+        # Article ה with nikud-aligned root — strict path used to leave `הַ_____`.
+        # Prefix-aware path correctly absorbs the article into the blank → True.
+        ("הַכֶּלֶב נָבַח כָּל הַלַּיְלָה.", "כֶּלֶב", True),
     ]
     for ex, orig, expected in tests:
         got = can_make_blank(ex, orig)
