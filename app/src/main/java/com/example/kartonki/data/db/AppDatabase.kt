@@ -421,6 +421,33 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        /**
+         * v42: индексы Room на горячих WHERE/ORDER путях `WordDao` —
+         *  languagePair, rarity, isDefaultPvpCard, (semanticGroup, languagePair), setId.
+         *
+         * Раньше эти поля сканировались по всей таблице (~17k строк) на каждый
+         * запрос. Index (original, languagePair) уже существовал с ранних версий —
+         * не пересоздаём. CREATE INDEX IF NOT EXISTS — идемпотентно: на свежей v42
+         * установке индексы уже созданы Room'ом по @Entity, и migration — no-op;
+         * на апгрейде с v41 миграция их создаёт явно вместо опоры на destructive
+         * fallback (см. [provideDatabase] в DatabaseModule).
+         *
+         * Имена точно повторяют генерацию Room — `index_{table}_{col}[_{col}…]`.
+         */
+        val MIGRATION_41_42 = object : Migration(41, 42) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                // Включаем index (original, languagePair) тоже — он, скорее всего, уже
+                // существует с ранних версий, но IF NOT EXISTS гарантирует полноту v42-схемы
+                // независимо от того, какие индексы реально лежали на v41-установке.
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_words_original_languagePair` ON `words` (`original`, `languagePair`)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_words_languagePair` ON `words` (`languagePair`)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_words_rarity` ON `words` (`rarity`)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_words_isDefaultPvpCard` ON `words` (`isDefaultPvpCard`)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_words_semanticGroup_languagePair` ON `words` (`semanticGroup`, `languagePair`)")
+                db.execSQL("CREATE INDEX IF NOT EXISTS `index_words_setId` ON `words` (`setId`)")
+            }
+        }
+
         val MIGRATION_36_37 = object : Migration(36, 37) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE word_sets ADD COLUMN topic TEXT NOT NULL DEFAULT ''")

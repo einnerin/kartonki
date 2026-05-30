@@ -53,8 +53,13 @@ object DatabaseModule {
                 AppDatabase.MIGRATION_38_39,
                 AppDatabase.MIGRATION_39_40,
                 AppDatabase.MIGRATION_40_41,
+                AppDatabase.MIGRATION_41_42,
             )
-            .fallbackToDestructiveMigration(dropAllTables = true)
+            // Forward migrations must be explicit Room Migrations from here on —
+            // a forgotten bump now crashes loudly at startup instead of silently
+            // wiping user data. Downgrades (rare: dev tooling / sideloads) still
+            // fall back to destructive so QA doesn't get stuck.
+            .fallbackToDestructiveMigrationOnDowngrade(dropAllTables = true)
             .build()
 
     @Provides fun provideWordDao(db: AppDatabase): WordDao = db.wordDao()
