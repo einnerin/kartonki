@@ -3,6 +3,27 @@ package com.example.kartonki.ui.theme
 import androidx.compose.runtime.compositionLocalOf
 import com.example.kartonki.domain.model.Rarity
 
+/**
+ * Russian-grammar plural picker.
+ *
+ * Russian agrees the noun form with the trailing digits of the count, with the
+ * exception that 11–14 act like the "many" form (genitive plural) regardless of
+ * their last digit. So «1 карта», «21 карта», «101 карта», but «11 карт», «14 карт».
+ *
+ * Used to fix the universal «21 карт» mis-declension across the app — previously
+ * the strings hard-coded «карт» for any count, producing «1 карт» / «21 карт» /
+ * «1 очков» everywhere a number prefixed a noun.
+ */
+private fun ruPlural(n: Int, one: String, few: String, many: String): String {
+    val mod100 = n % 100
+    if (mod100 in 11..14) return many
+    return when (n % 10) {
+        1 -> one
+        in 2..4 -> few
+        else -> many
+    }
+}
+
 // ─── Data class ──────────────────────────────────────────────────────────────
 
 data class AppStrings(
@@ -295,7 +316,7 @@ val RuStrings = AppStrings(
     homeProblemWordsTitle  = { n -> "Проблемные слова: $n" },
     homeProblemWordsSubtitle = "Поработать над ошибками?",
     homePackReady          = "Пак готов!",
-    homePackNotReady       = { n -> "Сыграй ещё $n матчей" },
+    homePackNotReady       = { n -> "Сыграй ещё $n ${ruPlural(n, "матч", "матча", "матчей")}" },
     homeDailyLimitDone     = "До завтра!",
 
     shopTokensBalance      = { n -> "Жетоны: $n" },
@@ -303,7 +324,7 @@ val RuStrings = AppStrings(
     shopCost               = { n -> "Стоимость: $n 🪙" },
     shopBuyButton          = "Купить",
     shopInsufficientTokens = "Недостаточно жетонов",
-    shopDailyProgress      = { done, max -> "Сегодня: $done / $max активностей" },
+    shopDailyProgress      = { done, max -> "Сегодня: $done / $max ${ruPlural(max, "активность", "активности", "активностей")}" },
     shopDailyLimitReached  = "Дневной лимит достигнут — приходи завтра",
     shopPremiumTitle       = "💎 Премиум паки",
     shopPremiumComingSoon  = "Скоро в продаже",
@@ -353,12 +374,12 @@ val RuStrings = AppStrings(
     problemWordsRetry        = "Ещё раз",
 
     collectionTitle     = "Коллекция",
-    collectionCount     = { n -> "$n карт" },
+    collectionCount     = { n -> "$n ${ruPlural(n, "карта", "карты", "карт")}" },
     collectionBuildDeck = "Строить колоду",
     collectionEmpty     = "Коллекция пуста",
 
     deckBuilderTitle    = "Конструктор колоды",
-    deckBuilderSize     = { cur, max -> "$cur / $max карт" },
+    deckBuilderSize     = { cur, max -> "$cur / $max ${ruPlural(max, "карта", "карты", "карт")}" },
     deckTabInDeck       = { n -> "В колоде ($n)" },
     deckTabAvailable    = { n -> "Все карты ($n)" },
     deckEmptyDeck       = "Колода пуста — добавьте карты",
@@ -377,7 +398,7 @@ val RuStrings = AppStrings(
     myDecksCreateDialogCancel = "Отмена",
      myDecksDeleteTitle        = "Удалить колоду?",
      myDecksDeleteConfirm      = { name -> "Удалить «$name»? Это действие нельзя отменить." },
-    deckCardCount             = { cur, max -> "$cur / $max карт" },
+    deckCardCount             = { cur, max -> "$cur / $max ${ruPlural(max, "карта", "карты", "карт")}" },
     deckInvalidLabel          = "Состав не соответствует уровню",
     deckInvalidHint           = "Откройте колоду и исправьте состав карт",
 
@@ -390,7 +411,7 @@ val RuStrings = AppStrings(
     pvpStartGame        = "Начать игру",
     pvpLevelMismatch    = "Выберите колоды одинакового уровня",
     pvpDeckInvalidWarning = "Одна или обе колоды не соответствуют своему уровню",
-    pvpDeckCardCount    = { n -> "$n карт" },
+    pvpDeckCardCount    = { n -> "$n ${ruPlural(n, "карта", "карты", "карт")}" },
     pvpSurrender        = "Сдаться",
     pvpContinue         = "Продолжить",
     pvpPlayAgain        = "Играть снова",
@@ -406,16 +427,16 @@ val RuStrings = AppStrings(
     pvpGameOver         = "Игра окончена!",
     pvpForfeit          = { name -> "$name сдался(-ась)." },
     pvpAfk              = { name -> "$name выбыл(-а) за неактивность." },
-    pvpScore            = { n -> "$n очков" },
+    pvpScore            = { n -> "$n ${ruPlural(n, "очко", "очка", "очков")}" },
     pvpWinner           = { name -> "Победитель: $name 🎉" },
     pvpDraw             = "Ничья!",
     pvpSurrenderConfirm = { name -> "$name, вы уверены, что хотите сдаться?\nПротивнику будет засчитана победа." },
 
-    shopTitle       = "Магазин Паков",
+    shopTitle       = "Магазин паков",
     shopPackNameFor = { pair -> if (pair == "he-ru") "Иврит пак" else "Английский пак" },
     shopPackCards   = "5 карточек за пак",
     shopOpenButton  = "Открыть",
-    shopOpenMultiple= { n -> "Открыть  ($n пака)" },
+    shopOpenMultiple= { n -> "Открыть  ($n ${ruPlural(n, "пак", "пака", "паков")})" },
     shopNoPacks     = "Нет паков",
     shopEarnPacks   = "Играй PvE или PvP чтобы получить бесплатный пак",
     shopCountLabel  = "Количество",
@@ -455,7 +476,7 @@ val RuStrings = AppStrings(
     wordStatsProblemTitle   = { n -> "Проблемные слова: $n" },
     wordStatsProblemSubtitle= "Нажми, чтобы начать работу над ошибками",
     wordStatsErrors         = { pct -> "$pct% ошибок" },
-    wordStatsEncounters     = { n -> "$n раз" },
+    wordStatsEncounters     = { n -> "$n ${ruPlural(n, "раз", "раза", "раз")}" },
 
     achievementsTitle    = "Достижения",
     achievementsProgress = { got, total -> "Получено: $got / $total" },
