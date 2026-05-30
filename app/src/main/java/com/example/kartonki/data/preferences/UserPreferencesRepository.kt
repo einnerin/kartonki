@@ -39,7 +39,6 @@ class UserPreferencesRepository @Inject constructor(
         const val LANGUAGE_PAIR            = "language_pair"
         const val NATIVE_LANGUAGE          = "native_language"
         const val ACTIVITY_COUNT           = "activity_count"
-        const val FREE_PACK_COUNT          = "free_pack_count"  // deprecated — migrated to TOKENS_BALANCE
         const val TOKENS_BALANCE           = "tokens_balance"
         const val DAILY_ACTIVITY_COUNT     = "daily_activity_count"
         const val LAST_ACTIVITY_DATE       = "last_activity_date"  // "yyyy-MM-dd" local
@@ -102,7 +101,6 @@ class UserPreferencesRepository @Inject constructor(
         val lastDate = p.getString(Keys.LAST_ACTIVITY_DATE, null)
         if (lastDate == todayStr()) p.getInt(Keys.ACTIVITY_COUNT, 0) else 0
     }
-    val freePackCount: Flow<Int>        = prefsFlow().map { it.getInt(Keys.FREE_PACK_COUNT, 0) }
     val tokensBalance: Flow<Int>        = prefsFlow().map { it.getInt(Keys.TOKENS_BALANCE, 0) }
 
     /** Daily activity count for *today*. Returns 0 if last activity was on a different date. */
@@ -123,12 +121,10 @@ class UserPreferencesRepository @Inject constructor(
         val lastDate = prefs.getString(Keys.LAST_ACTIVITY_DATE, null)
         return if (lastDate == todayStr()) prefs.getInt(Keys.ACTIVITY_COUNT, 0) else 0
     }
-    fun getFreePackCount(): Int    = prefs.getInt(Keys.FREE_PACK_COUNT, 0)
     fun getTokensBalance(): Int    = prefs.getInt(Keys.TOKENS_BALANCE, 0)
     fun getLanguagePair(): String  = prefs.getString(Keys.LANGUAGE_PAIR, "en-ru") ?: "en-ru"
 
     fun setActivityCount(n: Int)  = prefs.edit().putInt(Keys.ACTIVITY_COUNT, n).apply()
-    fun setFreePackCount(n: Int)  = prefs.edit().putInt(Keys.FREE_PACK_COUNT, n).apply()
     fun setTokensBalance(n: Int)  = prefs.edit().putInt(Keys.TOKENS_BALANCE, n.coerceAtLeast(0)).apply()
     fun addTokens(n: Int)         = setTokensBalance(getTokensBalance() + n)
 
@@ -187,25 +183,6 @@ class UserPreferencesRepository @Inject constructor(
 
     fun isProblemWordsHintShown(): Boolean = prefs.getBoolean(Keys.PROBLEM_WORDS_HINT_SHOWN, false)
     fun setProblemWordsHintShown() = prefs.edit().putBoolean(Keys.PROBLEM_WORDS_HINT_SHOWN, true).apply()
-
-    /**
-     * DEPRECATED: superseded by [getProblemSessionMasteredTypes]. Kept only for
-     * removal/migration of old data. Will be cleaned from prefs on next
-     * [setProblemSessionMasteredTypes] write.
-     */
-    fun getProblemSessionCounts(): Map<Long, Int> {
-        val raw = prefs.getString(Keys.PROBLEM_SESSION_COUNTS, null) ?: return emptyMap()
-        return raw.split(",").mapNotNull { entry ->
-            val parts = entry.split(":")
-            if (parts.size == 2) parts[0].toLongOrNull()?.let { id -> parts[1].toIntOrNull()?.let { id to it } }
-            else null
-        }.toMap()
-    }
-
-    fun setProblemSessionCounts(counts: Map<Long, Int>) {
-        val raw = counts.entries.joinToString(",") { "${it.key}:${it.value}" }
-        prefs.edit().putString(Keys.PROBLEM_SESSION_COUNTS, raw).apply()
-    }
 
     /**
      * Returns the set of quiz-type names (StudyQuizType.name) that the user has

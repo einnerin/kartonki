@@ -40,7 +40,6 @@ class PackRepository @Inject constructor(
     val pendingNewCards: StateFlow<List<Word>> = _pendingNewCards.asStateFlow()
 
     val activityCount: Flow<Int>      = userPrefs.activityCount
-    val freePackCount: Flow<Int>      = userPrefs.freePackCount       // legacy, kept for compat (returns 0 after migration)
     val tokensBalance: Flow<Int>      = userPrefs.tokensBalance
     val dailyActivityCount: Flow<Int> = userPrefs.dailyActivityCount
     val languagePair: Flow<String>    = userPrefs.languagePair
