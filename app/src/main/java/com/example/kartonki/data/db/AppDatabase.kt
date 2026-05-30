@@ -13,7 +13,6 @@ import com.example.kartonki.data.db.dao.PvpMatchDao
 import com.example.kartonki.data.db.dao.StudyStreakDao
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
-import com.example.kartonki.data.db.dao.WordSetMembershipDao
 import com.example.kartonki.data.db.entity.AchievementEntity
 import com.example.kartonki.data.db.entity.CollectionEntity
 import com.example.kartonki.data.db.entity.DeckCardCrossRef
@@ -24,13 +23,11 @@ import com.example.kartonki.data.db.entity.RetainedFavoriteEntity
 import com.example.kartonki.data.db.entity.StudyStreakEntity
 import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.db.entity.WordSetEntity
-import com.example.kartonki.data.db.entity.WordSetMembershipEntity
 
 @Database(
     entities = [
         WordEntity::class,
         WordSetEntity::class,
-        WordSetMembershipEntity::class,
         CollectionEntity::class,
         DeckEntity::class,
         DeckCardCrossRef::class,
@@ -40,14 +37,13 @@ import com.example.kartonki.data.db.entity.WordSetMembershipEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 42,
+    version = 43,
     exportSchema = false,
 )
 @TypeConverters(WordConverters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun wordDao(): WordDao
     abstract fun wordSetDao(): WordSetDao
-    abstract fun wordSetMembershipDao(): WordSetMembershipDao
     abstract fun collectionDao(): CollectionDao
     abstract fun deckDao(): DeckDao
     abstract fun progressDao(): ProgressDao
@@ -434,6 +430,26 @@ abstract class AppDatabase : RoomDatabase() {
          *
          * Имена точно повторяют генерацию Room — `index_{table}_{col}[_{col}…]`.
          */
+        /**
+         * v43: удаление таблицы word_set_membership.
+         *
+         * Таблица создавалась в v37 (см. MIGRATION_36_37 ниже) и заполнялась
+         * WordLoader'ом на каждый load — но НИКТО не читал. DAO имел два
+         * метода-чтения (getWordsForSet, getCountForSet), оба unreferenced.
+         * setId-фильтр везде шёл напрямую через `words.setId`, а не через join.
+         *
+         * Удаляем entity, DAO и колл-сайты в WordLoader; миграция DROP'ает таблицу
+         * + её индекс. SQLite автоматически уберёт индекс при DROP TABLE, но
+         * DROP INDEX IF EXISTS перед DROP TABLE — defensive (на случай, если в
+         * будущем какая-то v-bump переопределит порядок).
+         */
+        val MIGRATION_42_43 = object : Migration(42, 43) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("DROP INDEX IF EXISTS `index_word_set_membership_setId`")
+                db.execSQL("DROP TABLE IF EXISTS word_set_membership")
+            }
+        }
+
         val MIGRATION_41_42 = object : Migration(41, 42) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 // Включаем index (original, languagePair) тоже — он, скорее всего, уже

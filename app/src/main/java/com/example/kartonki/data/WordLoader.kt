@@ -4,8 +4,6 @@ import androidx.room.withTransaction
 import com.example.kartonki.data.db.AppDatabase
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
-import com.example.kartonki.data.db.dao.WordSetMembershipDao
-import com.example.kartonki.data.db.entity.WordSetMembershipEntity
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -29,7 +27,6 @@ class WordLoader @Inject constructor(
     private val db: AppDatabase,
     private val wordSetDao: WordSetDao,
     private val wordDao: WordDao,
-    private val wordSetMembershipDao: WordSetMembershipDao,
     private val prefs: UserPreferencesRepository,
 ) {
     private val mutex = Mutex()
@@ -62,7 +59,6 @@ class WordLoader @Inject constructor(
         val wordsWithFlag = allWords.map { w ->
             if (w.id in pvpIds) w.copy(isDefaultPvpCard = true) else w.copy(isDefaultPvpCard = false)
         }
-        val memberships = allWords.map { WordSetMembershipEntity(it.id, it.setId) }
 
         db.withTransaction {
             // ── Orphan cleanup: remove sets/words that no longer exist in seed code ───
@@ -92,10 +88,6 @@ class WordLoader @Inject constructor(
             wordSetDao.clearRetainedFavorites()
 
             wordsWithFlag.chunked(500).forEach { chunk -> wordDao.insertAllOrReplace(chunk) }
-
-            // Populate membership table from canonical setId
-            wordSetMembershipDao.deleteAll()
-            memberships.chunked(500).forEach { chunk -> wordSetMembershipDao.insertAll(chunk) }
         }
 
         prefs.setWordDataVersion(WordDataVersion.CURRENT)

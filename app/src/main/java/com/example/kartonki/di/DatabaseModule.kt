@@ -11,7 +11,6 @@ import com.example.kartonki.data.db.dao.PvpMatchDao
 import com.example.kartonki.data.db.dao.StudyStreakDao
 import com.example.kartonki.data.db.dao.WordDao
 import com.example.kartonki.data.db.dao.WordSetDao
-import com.example.kartonki.data.db.dao.WordSetMembershipDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -54,6 +53,7 @@ object DatabaseModule {
                 AppDatabase.MIGRATION_39_40,
                 AppDatabase.MIGRATION_40_41,
                 AppDatabase.MIGRATION_41_42,
+                AppDatabase.MIGRATION_42_43,
             )
             // Forward migrations must be explicit Room Migrations from here on —
             // a forgotten bump now crashes loudly at startup instead of silently
@@ -64,7 +64,6 @@ object DatabaseModule {
 
     @Provides fun provideWordDao(db: AppDatabase): WordDao = db.wordDao()
     @Provides fun provideWordSetDao(db: AppDatabase): WordSetDao = db.wordSetDao()
-    @Provides fun provideWordSetMembershipDao(db: AppDatabase): WordSetMembershipDao = db.wordSetMembershipDao()
     @Provides fun provideCollectionDao(db: AppDatabase): CollectionDao = db.collectionDao()
     @Provides fun provideDeckDao(db: AppDatabase): DeckDao = db.deckDao()
     @Provides fun provideProgressDao(db: AppDatabase): ProgressDao = db.progressDao()
