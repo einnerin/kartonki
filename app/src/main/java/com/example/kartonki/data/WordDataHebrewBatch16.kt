@@ -68,7 +68,7 @@ object WordDataHebrewBatch16 {
             definition = "כִּסּוּי רֹאשׁ שֶׁל גְּבָרִים יְהוּדִים כְּסֵמֶל יִרְאַת שָׁמַיִם.",
             definitionNative = "Головной убор еврейских мужчин как символ богобоязненности.",
             example = "הוּא לוֹבֵשׁ כִּפָּה בְּכָל יוֹם.",
-            exampleNative = "Он носит кипу каждый день.",
+            exampleNative = "Он носит כִּפָּה каждый день, даже на работе.",
          fillInBlankExclusions = listOf(107011L)),
         WordEntity(
             id = 107005, setId = 1070, languagePair = "he-ru", rarity = "COMMON",
@@ -86,7 +86,7 @@ object WordDataHebrewBatch16 {
             definition = "הַיְּצוּר הָעֶלְיוֹן בַּיַּהֲדוּת — בּוֹרֵא הָעוֹלָם.",
             definitionNative = "Высшее существо в иудаизме — Творец мира.",
             example = "הַיְּהוּדִים מַאֲמִינִים בֵּאלֹהִים אֶחָד.",
-            exampleNative = "Евреи верят в единого Бога."),
+            exampleNative = "В иудаизме אֱלֹהִים — единый творец вселенной."),
 
         // UNCOMMON (A2–B1),
         WordEntity(
@@ -166,8 +166,8 @@ object WordDataHebrewBatch16 {
             original = "מַסוֹרְתִּי", translation = "традиционный / масорти",
             definition = "מִי שֶׁמְּקַיֵּם חֵלֶק מֵהַמִּצְוֹת אַךְ אֵינוֹ שׁוֹמֵר כֹּל הַהֲלָכָה.",
             definitionNative = "Тот, кто соблюдает часть заповедей, но не всю галаху строго.",
-            example = "הַמִּשְׁפָּחָה מַסוֹרְתִּית — מַדְלִיקִים נֵרוֹת בְּשַׁבָּת אַךְ נוֹסְעִים בַּמְּכוֹנִית.",
-            exampleNative = "Семья масорти — зажигают свечи в шаббат, но ездят на машине.",
+            example = "הַבַּיִת שֶׁלָּהֶם מַסוֹרְתִּי — מַדְלִיקִים נֵרוֹת בְּשַׁבָּת אַךְ נוֹסְעִים בַּמְּכוֹנִית.",
+            exampleNative = "Их дом — традиционный: зажигают свечи в шаббат, но в субботу ездят на машине.",
         ),
         WordEntity(
             id = 107016, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -221,7 +221,7 @@ object WordDataHebrewBatch16 {
             definition = "מִדָּה מוּסָרִית יְסוֹדִית בְּיַהֲדוּת — גְּמִילוּת חֲסָדִים, עֶזְרָה לַזּוּלַת בְּלִי תְּמוּרָה.",
             definitionNative = "Основное нравственное качество в иудаизме — помощь ближнему без вознаграждения.",
             example = "גְּמִילוּת חֲסָדִים הִיא אֶחַד מֵהַמִּצְוֹת הַחֲשׁוּבוֹת בְּיַהֲדוּת.",
-            exampleNative = "Гмилут хасадим — одна из важнейших заповедей в иудаизме.",
+            exampleNative = "חֶסֶד — главная ценность иудаизма: помощь ближнему без награды.",
          isFillInBlankSafe = false),
 
         WordEntity(
@@ -537,7 +537,7 @@ object WordDataHebrewBatch16 {
             definition = "כְּלִי מַקְלִישׁ גְּדוֹל עִם מֵיתָרִים וּמַנְגְנוֹן פַּטִּישִׁים.",
             definitionNative = "Большой клавишный инструмент со струнами и молоточковым механизмом.",
             example = "הִיא נָגְנָה עַל הַפִּסְנְתֵּר בְּהַצָּגַת הַסִּיּוּם.",
-            exampleNative = "Она играла на фортепиано на выпускном концерте.",
+            exampleNative = "Она играла на пианино на выпускном концерте.",
          fillInBlankExclusions = listOf(107203L, 107204L, 107212L, 107213L, 107220L, 107223L)),
         WordEntity(
             id = 107206, setId = 1072, languagePair = "he-ru", rarity = "COMMON",
@@ -564,7 +564,7 @@ object WordDataHebrewBatch16 {
             definition = "הַחֵלֶק הַמֶּלוֹדִי הָעִיקָרִי שֶׁל יְצִירָה מוּסִיקָלִית.",
             definitionNative = "Основная мелодическая часть музыкального произведения.",
             example = "הַלַּחַן שֶׁל הַשִּׁיר הַלְּאוּמִי מְוֻכָּר לְכֹל.",
-            exampleNative = "Мотив государственного гимна известен всем."),
+            exampleNative = "Напев государственного гимна знаком каждому израильтянину."),
         WordEntity(
             id = 107209, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music",
@@ -632,7 +632,7 @@ object WordDataHebrewBatch16 {
             definition = "ז'ָאנְר מוּסִיקָה פּוֹפּוּלָרִית קָלָה וְנָגִישָׁה.",
             definitionNative = "Жанр лёгкой и доступной популярной музыки.",
             example = "מוּסִיקַת פּוֹפ דּוֹמִינָנְטִית בְּרָדִיוֹ.",
-            exampleNative = "Поп-музыка доминирует на радио.",
+            exampleNative = "Музыка פּוֹפ доминирует на молодёжном радио.",
          fillInBlankExclusions = listOf(107217L)),
 
         // RARE (B2),
@@ -643,7 +643,7 @@ object WordDataHebrewBatch16 {
             definition = "ז'ָאנְר מוּסִיקָה בַּעֲלָה גִּיטָרוֹת חַשְׁמַלִּיּוֹת וְקֶצֶב חָזָק.",
             definitionNative = "Музыкальный жанр с электрогитарами и сильным ритмом.",
             example = "לַהֲקַת רוֹק יִשְׂרְאֵלִית הוֹפִיעָה בְּאֵירוֹוִיזְיוֹן.",
-            exampleNative = "Израильская рок-группа выступила на Евровидении.",
+            exampleNative = "Израильская группа רוֹק выступила на Евровидении.",
          fillInBlankExclusions = listOf(107216L)),
         WordEntity(
             id = 107218, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -660,8 +660,8 @@ object WordDataHebrewBatch16 {
             original = "אַקּוֹרְד", translation = "аккорд",
             definition = "שִׁלּוּב שֶׁל שְׁלוֹשָׁה תָּוִים אוֹ יוֹתֵר הַנִּשְׁמָעִים יַחַד.",
             definitionNative = "Сочетание из трёх и более нот, звучащих одновременно.",
-            example = "הִיא נִגְּנָה כַּמָּה אַקּוֹרְדִים עַל הַגִּיטָרָה.",
-            exampleNative = "Она сыграла несколько אַקּוֹרְדִים на гитаре.",
+            example = "הוּא נִגֵּן אַקּוֹרְד עָצוּב עַל הַגִּיטָרָה.",
+            exampleNative = "Он взял грустный аккорд на гитаре в финале песни.",
         ),
         WordEntity(
             id = 107220, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
