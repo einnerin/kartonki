@@ -563,6 +563,33 @@ private fun OnlineGameOverScreen(
             ) {
                 Text(s.pvpGoHome, fontWeight = FontWeight.Bold)
             }
+            // Report-wrong-outcome button — last-writer-wins disconnect/forfeit races
+            // are still theoretically possible until server-authoritative migration.
+            // Until then, this is the only signal we get from real users about
+            // bad outcomes. matchId is included in the email so the dev can
+            // open the exact Firebase record.
+            val context = androidx.compose.ui.platform.LocalContext.current
+            TextButton(
+                onClick = {
+                    com.example.kartonki.util.FeedbackHelper.sendReport(
+                        context = context,
+                        subject = s.pvpReportWrongOutcomeSubject,
+                        userInstructions = s.pvpReportWrongOutcomeInstruction,
+                        extraContext = "Match ID: ${phase.matchId}\n" +
+                            "Result: ${if (iWon) "win" else if (isDraw) "draw" else "loss"}\n" +
+                            "Score: ${phase.myName} ${phase.myScore} — ${phase.opponentScore} ${phase.opponentName}\n" +
+                            "winnerIndex: ${phase.winnerIndex}, myIndex: ${phase.myIndex}",
+                        emptyClientFallbackMessage = s.feedbackNoEmailClient,
+                    )
+                },
+                modifier = Modifier.fillMaxWidth(),
+            ) {
+                Text(
+                    s.pvpReportWrongOutcome,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    fontWeight = FontWeight.Normal,
+                )
+            }
         }
     }
 }

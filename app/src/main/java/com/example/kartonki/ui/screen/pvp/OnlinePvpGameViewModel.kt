@@ -52,6 +52,9 @@ sealed class OnlinePvpPhase {
         val opponentName: String,
         val winnerIndex: Int,
         val myIndex: Int,
+        // Exposed for the "report wrong outcome" feedback channel — included in
+        // the support email so the developer can locate the exact Firebase record.
+        val matchId: String,
     ) : OnlinePvpPhase()
 }
 
@@ -188,6 +191,7 @@ class OnlinePvpGameViewModel @Inject constructor(
                             opponentName = opponentName,
                             winnerIndex = match.winnerIndex,
                             myIndex = myIndex,
+                            matchId = matchId,
                         ),
                     )
                 }

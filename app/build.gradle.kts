@@ -145,6 +145,10 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.analytics)
+    // Crashlytics — auto-registers via ContentProvider, attaches to the FirebaseApp
+    // initialised in FirebaseModule. Release-build crashes report directly to console
+    // without needing mapping upload (R8 keeps SourceFile + LineNumberTable by default).
+    implementation(libs.firebase.crashlytics)
     // Google Sign-In
     implementation(libs.play.services.auth)
     // Coroutines + Play Services

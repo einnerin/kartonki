@@ -607,6 +607,21 @@ fun SettingsScreen(
             NavRow(s.settingsWordStats, onClick = onNavigateToWordStats)
             Spacer(Modifier.height(8.dp))
             NavRow(s.settingsAchievements, onClick = onNavigateToAchievements)
+            Spacer(Modifier.height(16.dp))
+
+            // ── Support ────────────────────────────────────────────────────────
+            // mailto-based feedback channel — at this scale a server-side
+            // collection form is overkill; an email with pre-filled diagnostics
+            // lands directly in the dev inbox with zero backend cost.
+            SectionHeader(s.settingsSupportSection)
+            NavRow(s.settingsReportProblem) {
+                com.example.kartonki.util.FeedbackHelper.sendReport(
+                    context = context,
+                    subject = s.settingsReportProblemSubject,
+                    userInstructions = s.settingsReportProblemInstruction,
+                    emptyClientFallbackMessage = s.feedbackNoEmailClient,
+                )
+            }
             Spacer(Modifier.height(32.dp))
 
             // ── App version (7 taps to toggle tester mode) ────────────────────

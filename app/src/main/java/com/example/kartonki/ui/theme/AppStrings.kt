@@ -271,6 +271,14 @@ data class AppStrings(
     val settingsPlayerStats: String,
     val settingsWordStats: String,
     val settingsAchievements: String,
+    val settingsSupportSection: String,
+    val settingsReportProblem: String,
+    val settingsReportProblemSubject: String,
+    val settingsReportProblemInstruction: String,
+    val feedbackNoEmailClient: String,
+    val pvpReportWrongOutcome: String,
+    val pvpReportWrongOutcomeSubject: String,
+    val pvpReportWrongOutcomeInstruction: String,
 
     // Quiz mode labels (used in settings pickers)
     val quizModeLabels: Map<String, String>,
@@ -521,6 +529,14 @@ val RuStrings = AppStrings(
     settingsPlayerStats            = "📊  Статистика игрока",
     settingsWordStats              = "📖  Статистика по словам",
     settingsAchievements           = "🏆  Достижения",
+    settingsSupportSection         = "Поддержка",
+    settingsReportProblem          = "✉️  Сообщить о проблеме",
+    settingsReportProblemSubject   = "Kartonki — отзыв",
+    settingsReportProblemInstruction = "Опишите проблему или предложение здесь. Ниже — техническая информация, которая поможет разобраться.",
+    feedbackNoEmailClient          = "На устройстве не найден почтовый клиент. Напишите на einerin40@gmail.com",
+    pvpReportWrongOutcome          = "Сообщить о неверном результате",
+    pvpReportWrongOutcomeSubject   = "Kartonki — неверный результат матча",
+    pvpReportWrongOutcomeInstruction = "Опишите, что произошло в матче (например, «была победа, засчиталась как поражение»). Ниже — данные о матче и устройстве.",
 
     quizModeLabels = linkedMapOf(
         "foreign" to "На изучаемом языке",
@@ -754,6 +770,14 @@ val EnStrings = AppStrings(
     settingsPlayerStats            = "📊  Player stats",
     settingsWordStats              = "📖  Word stats",
     settingsAchievements           = "🏆  Achievements",
+    settingsSupportSection         = "Support",
+    settingsReportProblem          = "✉️  Report a problem",
+    settingsReportProblemSubject   = "Kartonki — feedback",
+    settingsReportProblemInstruction = "Describe the problem or suggestion above. Technical details below help us investigate.",
+    feedbackNoEmailClient          = "No email client found on this device. Please write to einerin40@gmail.com",
+    pvpReportWrongOutcome          = "Report wrong outcome",
+    pvpReportWrongOutcomeSubject   = "Kartonki — wrong match outcome",
+    pvpReportWrongOutcomeInstruction = "Describe what happened (e.g. \"I won the match but it was recorded as a loss\"). Match and device details are below.",
 
     quizModeLabels = linkedMapOf(
         "foreign" to "In study language",
@@ -987,6 +1011,14 @@ val DeStrings = AppStrings(
     settingsPlayerStats            = "📊  Spielerstatistik",
     settingsWordStats              = "📖  Wortstatistik",
     settingsAchievements           = "🏆  Errungenschaften",
+    settingsSupportSection         = "Support",
+    settingsReportProblem          = "✉️  Problem melden",
+    settingsReportProblemSubject   = "Kartonki — Feedback",
+    settingsReportProblemInstruction = "Beschreiben Sie das Problem oder den Vorschlag oben. Technische Details unten helfen bei der Untersuchung.",
+    feedbackNoEmailClient          = "Kein E-Mail-Client auf dem Gerät gefunden. Bitte schreiben Sie an einerin40@gmail.com",
+    pvpReportWrongOutcome          = "Falsches Ergebnis melden",
+    pvpReportWrongOutcomeSubject   = "Kartonki — falsches Match-Ergebnis",
+    pvpReportWrongOutcomeInstruction = "Beschreiben Sie, was passiert ist (z. B. „Ich habe gewonnen, aber es wurde als Niederlage gewertet\"). Match- und Gerätedaten unten.",
 
     quizModeLabels = linkedMapOf(
         "foreign" to "In Lernsprache",
@@ -1220,6 +1252,14 @@ val FrStrings = AppStrings(
     settingsPlayerStats            = "📊  Statistiques du joueur",
     settingsWordStats              = "📖  Statistiques des mots",
     settingsAchievements           = "🏆  Succès",
+    settingsSupportSection         = "Support",
+    settingsReportProblem          = "✉️  Signaler un problème",
+    settingsReportProblemSubject   = "Kartonki — retour",
+    settingsReportProblemInstruction = "Décrivez le problème ou la suggestion ci-dessus. Les détails techniques en bas aident à enquêter.",
+    feedbackNoEmailClient          = "Aucun client de messagerie trouvé. Écrivez à einerin40@gmail.com",
+    pvpReportWrongOutcome          = "Signaler un résultat erroné",
+    pvpReportWrongOutcomeSubject   = "Kartonki — résultat de match incorrect",
+    pvpReportWrongOutcomeInstruction = "Décrivez ce qui s'est passé (ex. « j'ai gagné mais c'est compté comme défaite »). Détails du match et de l'appareil ci-dessous.",
 
     quizModeLabels = linkedMapOf(
         "foreign" to "En langue étudiée",
@@ -1453,6 +1493,14 @@ val EsStrings = AppStrings(
     settingsPlayerStats            = "📊  Estadísticas del jugador",
     settingsWordStats              = "📖  Estadísticas de palabras",
     settingsAchievements           = "🏆  Logros",
+    settingsSupportSection         = "Soporte",
+    settingsReportProblem          = "✉️  Reportar un problema",
+    settingsReportProblemSubject   = "Kartonki — comentarios",
+    settingsReportProblemInstruction = "Describa el problema o la sugerencia arriba. Los detalles técnicos abajo ayudan a investigar.",
+    feedbackNoEmailClient          = "No se encontró cliente de correo. Escriba a einerin40@gmail.com",
+    pvpReportWrongOutcome          = "Reportar resultado incorrecto",
+    pvpReportWrongOutcomeSubject   = "Kartonki — resultado de partida incorrecto",
+    pvpReportWrongOutcomeInstruction = "Describa lo sucedido (ej. «gané pero se contó como derrota»). Detalles de la partida y del dispositivo abajo.",
 
     quizModeLabels = linkedMapOf(
         "foreign" to "En idioma estudiado",
@@ -1686,6 +1734,14 @@ val ZhStrings = AppStrings(
     settingsPlayerStats            = "📊  玩家统计",
     settingsWordStats              = "📖  单词统计",
     settingsAchievements           = "🏆  成就",
+    settingsSupportSection         = "支持",
+    settingsReportProblem          = "✉️  反馈问题",
+    settingsReportProblemSubject   = "Kartonki — 反馈",
+    settingsReportProblemInstruction = "请在上面描述问题或建议。下面是技术信息，便于调查。",
+    feedbackNoEmailClient          = "设备上未找到邮件客户端。请发邮件至 einerin40@gmail.com",
+    pvpReportWrongOutcome          = "反馈错误结果",
+    pvpReportWrongOutcomeSubject   = "Kartonki — 对局结果错误",
+    pvpReportWrongOutcomeInstruction = "请描述发生了什么（例如「明明赢了却记为输」）。比赛和设备信息见下。",
 
     quizModeLabels = linkedMapOf(
         "foreign" to "用学习语言",
@@ -1919,6 +1975,14 @@ val JaStrings = AppStrings(
     settingsPlayerStats            = "📊  プレイヤー統計",
     settingsWordStats              = "📖  単語統計",
     settingsAchievements           = "🏆  実績",
+    settingsSupportSection         = "サポート",
+    settingsReportProblem          = "✉️  問題を報告",
+    settingsReportProblemSubject   = "Kartonki — フィードバック",
+    settingsReportProblemInstruction = "問題や提案を上に記入してください。下部の技術情報が調査に役立ちます。",
+    feedbackNoEmailClient          = "メールクライアントが見つかりません。einerin40@gmail.com までお願いします",
+    pvpReportWrongOutcome          = "結果の誤りを報告",
+    pvpReportWrongOutcomeSubject   = "Kartonki — 試合結果の誤り",
+    pvpReportWrongOutcomeInstruction = "何が起きたか説明してください（例：「勝ったのに負け扱い」）。試合と端末の情報は下にあります。",
 
     quizModeLabels = linkedMapOf(
         "foreign" to "学習言語で",
@@ -2152,6 +2216,14 @@ val ArStrings = AppStrings(
     settingsPlayerStats            = "📊  إحصائيات اللاعب",
     settingsWordStats              = "📖  إحصائيات الكلمات",
     settingsAchievements           = "🏆  الإنجازات",
+    settingsSupportSection         = "الدعم",
+    settingsReportProblem          = "✉️  الإبلاغ عن مشكلة",
+    settingsReportProblemSubject   = "Kartonki — ملاحظات",
+    settingsReportProblemInstruction = "صف المشكلة أو الاقتراح أعلاه. التفاصيل التقنية أدناه تساعد في التحقيق.",
+    feedbackNoEmailClient          = "لم يتم العثور على عميل بريد إلكتروني. يرجى الكتابة إلى einerin40@gmail.com",
+    pvpReportWrongOutcome          = "الإبلاغ عن نتيجة خاطئة",
+    pvpReportWrongOutcomeSubject   = "Kartonki — نتيجة مباراة خاطئة",
+    pvpReportWrongOutcomeInstruction = "صف ما حدث (مثلاً «فزت بالمباراة لكن سُجِّلت كخسارة»). تفاصيل المباراة والجهاز أدناه.",
 
     quizModeLabels = linkedMapOf(
         "foreign" to "بلغة التعلّم",
