@@ -260,7 +260,7 @@ object WordDataHebrewImmigrant3 {
             id = 103207, setId = 1032, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "post",
             original = "שׁוֹלֵחַ", translation = "отправитель",
-            definition = "מִי שֶׁשּׁוֹלֵחַ חֲבִילָה אוֹ מִכְתָּב.",
+            definition = "הָאָדָם אוֹ הַצַּד שֶׁמִּמֶּנּוּ יוֹצֵא מִכְתָּב אוֹ חֲבִילָה אֶל הַנִּמְעָן.",
             definitionNative = "Тот, кто отправляет посылку или письмо.",
             example = "שֵׁם הַשּׁוֹלֵחַ נִמְצָא בְּפִינָּה הַשְּׂמָאלִית הָעֶלְיוֹנָה.",
             exampleNative = "Имя שׁוֹלֵחַ находится в верхнем левом углу."),

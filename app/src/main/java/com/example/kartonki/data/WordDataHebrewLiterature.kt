@@ -507,7 +507,7 @@ object WordDataHebrewLiterature {
             pos = "noun", semanticGroup = "literature_l3_characters", fillInBlankExclusions = listOf(186006L, 186008L, 186009L, 186010L)),
         WordEntity(id = 186008, setId = 1860, languagePair = "he-ru", rarity = "EPIC",
             original = "מְסַפֵּר", translation = "рассказчик",
-            definition = "הַקּוֹל שֶׁמְּסַפֵּר אֶת הַסִּפּוּר — לִפְעָמִים גִּבּוֹר בָּעֲלִילָה, לִפְעָמִים אִישׁ מִבַּחוּץ.",
+            definition = "הַקּוֹל אוֹ הַדְּמוּת שֶׁדֶּרֶךְ עֵינֶיהָ מֻגֶּשֶׁת הָעֲלִילָה בִּיצִירָה.",
             definitionNative = "Голос, рассказывающий историю — иногда герой её, иногда сторонний наблюдатель.",
             example = "הַמְּסַפֵּר בָּרוֹמָן הוּא יֶלֶד בֶּן עֶשֶׂר מִתֵּל אָבִיב.",
             exampleNative = "מְסַפֵּר в этом романе — десятилетний мальчик из Тель-Авива.",

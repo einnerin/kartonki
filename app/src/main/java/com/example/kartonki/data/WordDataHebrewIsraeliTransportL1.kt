@@ -175,7 +175,7 @@ object WordDataHebrewIsraeliTransportL1 {
             id = 185215, setId = 1852, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "transport_l1_stops_stations",
             original = "נוֹסֵעַ", translation = "пассажир",
-            definition = "אָדָם שֶׁמַּשְׁלֵם וְנוֹסֵעַ בִּכְלִי תַּחְבּוּרָה כְּלָקוֹחַ — לֹא הַנֶּהָג.",
+            definition = "אָדָם הַנִּמְצָא בִּכְלִי תַּחְבּוּרָה כְּלָקוֹחַ וְעוֹבֵר בּוֹ מִמָּקוֹם לְמָקוֹם.",
             definitionNative = "Человек, что платит и едет в транспорте как клиент, а не как водитель.",
             example = "כָּל נוֹסֵעַ צָרִיךְ לְהַקִּישׁ אֶת הָרַב-קַו בִּכְנִיסָה לָאוֹטוֹבּוּס.",
             exampleNative = "Каждый נוֹסֵעַ должен приложить Рав-Кав при входе в автобус.",
