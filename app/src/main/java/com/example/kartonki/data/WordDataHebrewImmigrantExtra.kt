@@ -108,7 +108,7 @@ object WordDataHebrewImmigrantExtra {
             id = 102723, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities",
             original = "חִמּוּם", translation = "отопление",
-            definition = "מַעֲרֶכֶת לְחִמּוּם הַבַּיִת בְּמֶזֶג אֲוִיר קַר.",
+            definition = "תַּהֲלִיךְ שֶׁל הַעֲלָאַת הַטֶּמְפֵּרָטוּרָה בַּחֶדֶר אוֹ הֲכָנַת הַגּוּף לִפְנֵי מַאֲמָץ.",
             definitionNative = "Система для обогрева дома в холодную погоду.",
             example = "בְּחֶרְמוֹן יֵשׁ צֹרֶךְ בְּחִמּוּם בְּחֹרֶף.",
             exampleNative = "В Хермоне зимой необходимо חִמּוּם.",
@@ -262,7 +262,7 @@ object WordDataHebrewImmigrantExtra {
             id = 103521, setId = 1035, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holidays",
             original = "מוֹצָאֵי שַׁבָּת", translation = "исход субботы / субботний вечер",
-            definition = "הַזְּמַן לְאַחַר שְׁקִיעַת הַחַמָּה בְּמוֹצָאֵי שַׁבָּת כְּשֶׁמְּסַיְּמִים אֶת הַשַּׁבָּת.",
+            definition = "הַזְּמַן בָּעֶרֶב לְאַחַר צֵאת הַכּוֹכָבִים, סִיּוּם יוֹם הַמְּנוּחָה הַשְּׁבוּעִי.",
             definitionNative = "Время после захода солнца в субботу вечером, когда Шаббат заканчивается.",
             example = "בְּמוֹצָאֵי שַׁבָּת פּוֹתְחִים אֶת הַחֲנֻיּוֹת וְהַמִּסְעָדוֹת.",
             exampleNative = "В מוֹצָאֵי שַׁבָּת открываются магазины и рестораны.",
@@ -357,6 +357,7 @@ object WordDataHebrewImmigrantExtra {
             definitionNative = "Животное с крыльями и перьями, способное летать.",
             example = "יִשְׂרָאֵל נְמֻצֶּאֶת עַל נָתִיב הַגֵּירָה שֶׁל מֵאוֹת מִינֵי צִפּוֹרִים.",
             exampleNative = "Израиль расположен на пути миграции сотен видов צִפּוֹר.",
+            isFillInBlankSafe = false,
         ),
     )
 }

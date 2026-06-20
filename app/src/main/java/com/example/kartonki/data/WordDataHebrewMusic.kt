@@ -167,7 +167,7 @@ object WordDataHebrewMusic {
             pos = "noun", semanticGroup = "music_l1_people"),
         WordEntity(id = 186312, setId = 1863, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "נַגָּן", translation = "музыкант / инструменталист",
-            definition = "מִי שֶׁמְּנַגֵּן בְּכִלִי כְּמוֹ גִּיטָרָה אוֹ פְּסַנְתֵּר.",
+            definition = "אָדָם שֶׁמְּבַצֵּעַ מוּסִיקָה בְּעֶזְרַת כְּלִי, לְמָשָׁל גִּיטָרָה אוֹ פְּסַנְתֵּר.",
             definitionNative = "Тот, кто играет на инструменте — например, на гитаре или фортепиано.",
             example = "הַנַּגָּן הָרָאשִׁי שֶׁל הַלַּהֲקָה גָּר בְּתֵל אָבִיב.",
             exampleNative = "Главный נַגָּן этой группы живёт в Тель-Авиве.",

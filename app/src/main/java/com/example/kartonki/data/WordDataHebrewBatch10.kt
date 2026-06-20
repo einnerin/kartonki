@@ -168,7 +168,7 @@ object WordDataHebrewBatch10 {
             id = 105317, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "holiday_shavuot",
             original = "בִּכּוּרִים", translation = "бикурим (праздник первых плодов)",
-            definition = "טֶקֶס הַגָּשַׁת פֵּרוֹת הַבִּכּוּרִים לַמִּקְדָּשׁ, חָגוּג בְּשָׁבוּעוֹת.",
+            definition = "הַפֵּרוֹת הָרִאשׁוֹנִים שֶׁהִבְשִׁילוּ בַּיְּבוּל, שֶׁנָּהֲגוּ לַהֲבִיא אוֹתָם לַמִּקְדָּשׁ בְּחַג הַשָּׁבוּעוֹת.",
             definitionNative = "Обряд принесения первых плодов в Храм, отмечаемый на Шавуот.",
             example = "בְּחַג הַבִּכּוּרִים הֵבִיאוּ הָאֲנָשִׁים פֵּרוֹת לַבֵּית הַמִּקְדָּשׁ.",
             exampleNative = "На праздник בִּכּוּרִים люди приносили плоды в Храм.",
@@ -226,6 +226,7 @@ object WordDataHebrewBatch10 {
             definitionNative = "Еврейская концепция прощения и искупления грехов; Йом Кипур — самый священный день.",
             example = "בְּיוֹם הַכִּפּוּרִים צָמִים מִכָּל אֹכֶל וּמִשְׁתֶּה.",
             exampleNative = "В Йом כִּפּוּר постятся — воздерживаются от еды и питья.",
+            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 105324, setId = 1053, languagePair = "he-ru", rarity = "UNCOMMON",

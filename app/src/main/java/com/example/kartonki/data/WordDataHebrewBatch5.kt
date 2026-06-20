@@ -408,7 +408,7 @@ object WordDataHebrewBatch5 {
             id = 103919, setId = 1039, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "wedding_celebration",
             original = "נַגָּן", translation = "музыкант",
-            definition = "אָדָם הַמְּנַגֵּן עַל כְּלִי נְגִינָה לְמִקְצוֹעוֹ.",
+            definition = "אָדָם שֶׁמּוֹצִיא צְלִילִים מִכְּלִי מוּזִיקָלִי, לְרֹב כְּמִקְצוֹעַ.",
             definitionNative = "Человек, играющий на музыкальном инструменте профессионально.",
             example = "שָׂכַרְנוּ נַגָּן כִּנּוֹר לַחֲתוּנָּה.",
             exampleNative = "Мы наняли נַגָּן на скрипке для свадьбы.",
