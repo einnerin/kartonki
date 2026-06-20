@@ -68,7 +68,7 @@ object WordDataHebrewStartupL3 {
             exampleNative = "הַשְׁעָרָה עִסְקִית: репетиторы заплатят за инструмент авто-проверки.",
          fillInBlankExclusions = listOf(175801L, 175803L, 175804L, 175805L)),
         WordEntity(
-            id = 175803, setId = 1758, languagePair = "he-ru", rarity = "EPIC",
+            id = 175803, setId = 1758, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "startup_idea",
             original = "וָלִידַצְיָה", translation = "валидация (идеи)",
             definition = "תַּהֲלִיךְ שֶׁבּוֹ בּוֹדְקִים אִם לְקוֹחוֹת בֶּאֱמֶת רוֹצִים לְשַׁלֵּם עַל מַה שֶׁמְּתַכְנְנִים.",

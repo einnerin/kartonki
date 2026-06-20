@@ -80,11 +80,11 @@ object WordDataHebrewAiMlL1 {
         WordEntity(
             id = 178603, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aiml_basic_concepts",
-            original = "אַלְגוֹרִיתְם", translation = "алгоритм",
+            original = "אַלְגּוֹרִיתְם", translation = "алгоритм",
             definition = "סִדְרָה שֶׁל צְעָדִים שֶׁעַל פִּיהֶם הַתּוֹכְנָה מְקַבֶּלֶת הַחְלָטָה.",
             definitionNative = "Последовательность шагов, по которой программа принимает решение.",
-            example = "הָאַלְגוֹרִיתְם שֶׁל יוּטְיוּב יוֹדֵעַ אֵיזֶה סִרְטוֹן אוֹהַב.",
-            exampleNative = "אַלְגוֹרִיתְם YouTube знает, какое видео мне нравится.",
+            example = "הָאַלְגּוֹרִיתְם שֶׁל יוּטְיוּב יוֹדֵעַ אֵיזֶה סִרְטוֹן אוֹהַב.",
+            exampleNative = "אַלְגּוֹרִיתְם YouTube знает, какое видео мне нравится.",
          fillInBlankExclusions = listOf(178602L, 178604L)),
         WordEntity(
             id = 178604, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
@@ -230,11 +230,11 @@ object WordDataHebrewAiMlL1 {
         WordEntity(
             id = 178619, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aiml_basic_user_view",
-            original = "יְצִירָתִיוּת", translation = "креативность",
+            original = "יְצִירָתִיּוּת", translation = "креативность",
             definition = "יְכֹלֶת לְהַצִּיעַ רַעֲיוֹנוֹת חֲדָשִׁים וְלֹא צְפוּיִים — לְשִׁיר, לְצִיוּר אוֹ לְסִפּוּר.",
             definitionNative = "Способность выдавать новые и неожиданные идеи — для песни, рисунка или рассказа.",
-            example = "יְצִירָתִיוּת שֶׁל הַצַּ'אט הִפְתִּיעָה אוֹתִי בִּכְתִיבַת שִׁיר חֲתוּנָה.",
-            exampleNative = "יְצִירָתִיוּת чата удивила меня — он написал свадебную песню.",
+            example = "יְצִירָתִיּוּת שֶׁל הַצַּ'אט הִפְתִּיעָה אוֹתִי בִּכְתִיבַת שִׁיר חֲתוּנָה.",
+            exampleNative = "יְצִירָתִיּוּת чата удивила меня — он написал свадебную песню.",
          fillInBlankExclusions = listOf(178616L, 178617L, 178618L, 178620L)),
         WordEntity(
             id = 178620, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
@@ -250,11 +250,11 @@ object WordDataHebrewAiMlL1 {
         WordEntity(
             id = 178621, setId = 1786, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "aiml_basic_safety",
-            original = "אַבְטָחַת מֵידַע", translation = "безопасность данных",
+            original = "אַבְטָחַת מֵידָע", translation = "безопасность данных",
             definition = "שְׁמִירָה עַל פְּרָטִים שֶׁל מִשְׁתַּמֵּשׁ מִפְּנֵי גְּנֵבָה אוֹ דְּלִיפָה לָרֶשֶׁת.",
             definitionNative = "Защита сведений о пользователе от кражи или утечки в сеть.",
-            example = "אַבְטָחַת מֵידַע חֲזָקָה חֲשׁוּבָה בְּצַ'אט שֶׁל בַּנְק אוֹ קֻפַּת חוֹלִים.",
-            exampleNative = "Сильная אַבְטָחַת מֵידַע важна в чате банка или больничной кассы.",
+            example = "אַבְטָחַת מֵידָע חֲזָקָה חֲשׁוּבָה בְּצַ'אט שֶׁל בַּנְק אוֹ קֻפַּת חוֹלִים.",
+            exampleNative = "Сильная אַבְטָחַת מֵידָע важна в чате банка или больничной кассы.",
          fillInBlankExclusions = listOf(178623L, 178625L)),
         WordEntity(
             id = 178622, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
