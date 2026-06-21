@@ -69,7 +69,7 @@ object WordDataHebrewBatch33 {
         WordEntity(id = 112108, setId = 1121, languagePair = "he-ru", rarity = "COMMON",
             original = "סָגֹל", translation = "фиолетовый",
             pos = "adjective", semanticGroup = "school_colors_cool",
-            definition = "גָּוֶן עַז הַדּוֹמֶה לְפֶרַח הַסִּגָּלִית אוֹ לְעֲנָבִים בְּשֵׁלִים.",
+            definition = "גָּוֶן עַז הַדּוֹמֶה לְפֶרַח הַסִּגָּלִית אוֹ לַעֲנָבִים בְּשֵׁלִים.",
             definitionNative = "Яркий оттенок, похожий на фиалку или спелый виноград.",
             example = "הַתִּיק שֶׁלָּהּ סָגֹל וְקָטָן וְנוֹחַ.",
             exampleNative = "Её сумка маленькая, удобная и совсем סָגֹל.", fillInBlankExclusions = listOf(112101L, 112102L, 112103L, 112104L, 112105L, 112106L, 112107L, 112109L, 112110L, 112111L, 112113L, 112114L, 112119L, 112120L, 112121L, 112122L)),

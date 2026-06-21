@@ -137,7 +137,7 @@ object WordDataHebrewAliyaV2 {
             original = "יְרוּשָׁלַיִם", translation = "Иерусалим",
             definition = "עִיר הַבִּירָה, מְקוֹם הַכְּנֶסֶת וּמֶרְכָּז רוּחָנִי לִשְׁלוֹשׁ דָּתוֹת.",
             definitionNative = "Столица государства, духовный центр трёх мировых религий.",
-            example = "נָסַעְתִּי לְיְרוּשָׁלַיִם לִרְאוֹת אֶת הַכֹּתֶל.",
+            example = "נָסַעְתִּי לִירוּשָׁלַיִם לִרְאוֹת אֶת הַכֹּתֶל.",
             exampleNative = "Я поехал в יְרוּשָׁלַיִם посмотреть на Стену Плача.",
          fillInBlankExclusions = listOf(161005L, 161006L, 161008L)),
         WordEntity(
@@ -728,7 +728,7 @@ object WordDataHebrewAliyaV2 {
             original = "רַכֶּבֶת", translation = "поезд; железная дорога",
             definition = "כְּלִי תַּחְבּוּרָה עַל פַּסִּים בֵּין עָרִים.",
             definitionNative = "Рельсовый транспорт для междугородних маршрутов.",
-            example = "נָסַעְתִּי בָּרַכֶּבֶת מִתֵּל אָבִיב לְיְרוּשָׁלַיִם.",
+            example = "נָסַעְתִּי בָּרַכֶּבֶת מִתֵּל אָבִיב לִירוּשָׁלַיִם.",
             exampleNative = "Я ехал в רַכֶּבֶת из Тель-Авива в Иерусалим.",
          fillInBlankExclusions = listOf(161215L, 161216L)),
 
@@ -877,7 +877,7 @@ object WordDataHebrewAliyaV2 {
             id = 161307, setId = 1613, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "aliya_shabbat_basics",
             original = "חַלָּה", translation = "хала (субботний хлеб)",
-            definition = "לֶחֶם מָתוֹק וּמוּקְפָץ לְסְעוּדַת שַׁבָּת וְחֲגִים.",
+            definition = "לֶחֶם מָתוֹק וּמוּקְפָץ לִסְעוּדַת שַׁבָּת וְחֲגִים.",
             definitionNative = "Плетёный сладкий хлеб для субботы и праздников.",
             example = "אָפִינוּ חַלָּה לִכְבוֹד שַׁבָּת רִאשׁוֹנָה.",
             exampleNative = "Мы испекли חַלָּה к первой субботе в стране.",
@@ -1204,7 +1204,7 @@ object WordDataHebrewAliyaV2 {
             original = "זְכֻיּוֹת אָדָם", translation = "права человека",
             definition = "זְכֻיּוֹת בֶּסִיס הַמַּגִּיעוֹת לְכָל אָדָם מֵרוֹאַת לֵדָה.",
             definitionNative = "Базовые права каждого человека с момента рождения.",
-            example = "עֲמוּתָה לְזְכֻיּוֹת אָדָם פָּרְסְמָה דּוּחַ חָדָשׁ.",
+            example = "עֲמוּתָה לִזְכֻיּוֹת אָדָם פָּרְסְמָה דּוּחַ חָדָשׁ.",
             exampleNative = "Некоммерческая организация по זְכֻיּוֹת אָדָם издала отчёт.",
          fillInBlankExclusions = listOf(161416L, 161417L)),
         WordEntity(
@@ -1581,7 +1581,7 @@ object WordDataHebrewAliyaV2 {
             id = 161603, setId = 1616, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "aliya_diaspora_terms",
             original = "שְׁטֶעטְל", translation = "штетл (еврейское местечко)",
-            definition = "עֲיָרָה יְהוּדִית קְטַנָּה בְּמִזְרַח אֵירוֹפָּה לְפְנֵי הַשּׁוֹאָה.",
+            definition = "עֲיָרָה יְהוּדִית קְטַנָּה בְּמִזְרַח אֵירוֹפָּה לִפְנֵי הַשּׁוֹאָה.",
             definitionNative = "Маленький еврейский городок в Восточной Европе до Холокоста.",
             example = "שְׁטֶעטְל הַקָּטָן נֶחְרַב בִּשְׁנַת 1942.",
             exampleNative = "Крошечный שְׁטֶעטְל был уничтожен в 1942 году.",
@@ -1699,7 +1699,7 @@ object WordDataHebrewAliyaV2 {
             original = "גְּאֻלָּה", translation = "избавление; геула",
             definition = "הַשִּׁחְרוּר הָעֲתִידִי שֶׁל עָם יִשְׂרָאֵל וְהָעוֹלָם כּוּלוֹ.",
             definitionNative = "Грядущее освобождение народа и всего мира.",
-            example = "הַתְּפִלָּה לְגְּאֻלָּה נֶאֱמֶרֶת בְּכָל יוֹם.",
+            example = "הַתְּפִלָּה לִגְּאֻלָּה נֶאֱמֶרֶת בְּכָל יוֹם.",
             exampleNative = "Молитва о גְּאֻלָּה произносится ежедневно.",
          fillInBlankExclusions = listOf(161614L, 161616L)),
         WordEntity(

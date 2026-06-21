@@ -121,6 +121,7 @@ object WordDataHebrewArchL4 {
             definitionNative = "Защитный слой против протечек влаги через крышу или стены.",
             example = "אַחֲרֵי הַגֶּשֶׁם גִּלִּינוּ שֶׁהָאִטּוּם נִפְגַּם.",
             exampleNative = "После дождя обнаружили, что אִטּוּם повреждён.",
+            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(170606L, 170608L)),
         WordEntity(
             id = 170610, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
@@ -146,7 +147,7 @@ object WordDataHebrewArchL4 {
             id = 170612, setId = 1706, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "architecture_design",
             original = "סְקִיצָה", translation = "эскиз",
-            definition = "שִׂרְטוּט רִאשׁוֹנִי וְגַס שֶׁל רַעְיוֹן הַמִּבְנֶה לְפְנֵי הַתָּכְנִית.",
+            definition = "שִׂרְטוּט רִאשׁוֹנִי וְגַס שֶׁל רַעְיוֹן הַמִּבְנֶה לִפְנֵי הַתָּכְנִית.",
             definitionNative = "Первый набросок идеи здания до точного проекта.",
             example = "הוּא צִיֵּר סְקִיצָה עַל מַפִּית בַּמִּסְעָדָה.",
             exampleNative = "Он набросал סְקִיצָה прямо на салфетке в кафе.",

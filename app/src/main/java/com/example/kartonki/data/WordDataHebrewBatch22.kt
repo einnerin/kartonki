@@ -44,7 +44,7 @@ object WordDataHebrewBatch22 {
             original = "נֶאֱמָן", translation = "доверенное лицо; фидуциарий",
             definition = "אָדָם הַמְּחַזֵּק רְכוּשׁ אוֹ זְכֻיּוֹת לְטוֹבַת אַחֵר עַל פִּי חוֹק.",
             definitionNative = "Лицо, удерживающее имущество или права в интересах другого по закону.",
-            example = "הַנֶּאֱמָן נִדְרָשׁ לְפְעוֹל לְטוֹבַת הַנֶּהֱנֶה בִּלְבַד.",
+            example = "הַנֶּאֱמָן נִדְרָשׁ לִפְעוֹל לְטוֹבַת הַנֶּהֱנֶה בִּלְבַד.",
             exampleNative = "נֶאֱמָן обязан действовать только в интересах бенефициара."),
         WordEntity(id = 108917, setId = 1089, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "law_court_actors",
