@@ -206,12 +206,12 @@ object WordDataHebrewSportsFootball {
             pos = "phrase", semanticGroup = "sport_football_match",
             fillInBlankExclusions = listOf(189216L, 189217L, 189218L, 189220L)),
 
-        WordEntity(id = 189220, setId = 1892, languagePair = "he-ru", rarity = "RARE",
-            original = "אָסְפָסֶת", translation = "газон",
-            definition = "מַשָּׁטַח דֶּשֶׁא יָרֹק שֶׁעָלָיו מְשַׂחֲקִים כַּדּוּרֶגֶל מִקְצוֹעָנִי.",
+        WordEntity(id = 189220, setId = 1892, languagePair = "he-ru", rarity = "UNCOMMON",
+            original = "דֶּשֶׁא", translation = "газон",
+            definition = "מִשְׁטַח עֵשֶׂב יָרֹק שֶׁעָלָיו מְשַׂחֲקִים כַּדּוּרֶגֶל מִקְצוֹעָנִי.",
             definitionNative = "Зелёное травяное покрытие поля, на котором играют в футбол.",
-            example = "אָסְפָסֶת הַמִּגְרָשׁ הָיְתָה רְטוּבָּה לְאַחַר הַגֶּשֶׁם.",
-            exampleNative = "אָסְפָסֶת поля была мокрой после дождя.",
+            example = "הַדֶּשֶׁא בַּמִּגְרָשׁ הָיָה רָטוֹב לְאַחַר הַגֶּשֶׁם.",
+            exampleNative = "דֶּשֶׁא на поле был мокрым после дождя.",
             pos = "noun", semanticGroup = "sport_football_match",
             fillInBlankExclusions = listOf(189216L, 189217L, 189218L, 189219L)),
 

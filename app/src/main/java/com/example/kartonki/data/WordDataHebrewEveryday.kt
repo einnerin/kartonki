@@ -36,7 +36,7 @@ object WordDataHebrewEveryday {
             original = "בֹּקֶר טוֹב", translation = "доброе утро",
             definition = "ברכת בֹּקֶר הנאמרת בתחילת היום.",
             definitionNative = "Утреннее приветствие, употребляемое в начале дня.",
-            example = "בֹּקֶר טוֹב! אֵיךְ שָׁנַתָּ?",
+            example = "בֹּקֶר טוֹב! אֵיךְ יָשַׁנְתָּ?",
             exampleNative = "בֹּקֶר טוֹב! Как ты спал?",
          fillInBlankExclusions = listOf(100402L, 100403L, 100404L, 100405L, 100406L)),
         WordEntity(
@@ -91,7 +91,7 @@ object WordDataHebrewEveryday {
             original = "בֹּקֶר", translation = "утро",
             definition = "הַחֵלֶק הָרִאשׁוֹן שֶׁל הַיּוֹם, מֵהַזְּרִיחָה עַד הַצָּהֳרַיִם.",
             definitionNative = "Первая часть дня — от рассвета до полудня.",
-            example = "בֹּקֶר טוֹב, אֵיךְ שָׁנַנְּתָּ הַלַּיְלָה?",
+            example = "בֹּקֶר טוֹב, אֵיךְ יָשַׁנְתָּ הַלַּיְלָה?",
             exampleNative = "Хорошее בֹּקֶר! Как ты спал ночью?",
          fillInBlankExclusions = listOf(100408L, 100409L, 100410L)),
         WordEntity(
@@ -465,7 +465,7 @@ object WordDataHebrewEveryday {
             original = "הוֹרִים", translation = "родители",
             definition = "אָב וְאֵם יַחְדָּו הַמְּגַדְּלִים אֶת יַלְדֵיהֶם.",
             definitionNative = "Отец и мать вместе, воспитывающие своих детей.",
-            example = "הוֹרִים שֶׁלִּי בָּאוּ לְבַקֵּר אֶת הַחַלּוֹן.",
+            example = "הוֹרִים שֶׁלִּי בָּאוּ לְבַקֵּר אוֹתָנוּ.",
             exampleNative = "Мои הוֹרִים приехали навестить нас.",
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100509L, 100510L, 100511L, 100512L, 100513L, 100522L, 100524L, 100525L)),
         WordEntity(
@@ -675,7 +675,7 @@ object WordDataHebrewEveryday {
             id = 100621, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food",
             original = "גְּבִינָה", translation = "сыр",
-            definition = "מוּצָר חָלָבִי הָעָשׂוּי מֵחָלָב מְקוּפָּא.",
+            definition = "מוּצָר חָלָבִי הָעָשׂוּי מֵחָלָב קָרוּשׁ.",
             definitionNative = "Молочный продукт, изготавливаемый из свёрнутого молока.",
             example = "גְּבִינָה צְהוּבָּה טוֹבָה לַסֶּנְדְּוִיץ'.",
             exampleNative = "Жёлтая גְּבִינָה хороша для сэндвича.",
@@ -751,11 +751,11 @@ object WordDataHebrewEveryday {
         WordEntity(
             id = 100704, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "furniture",
-            original = "מִיטָה", translation = "кровать",
-            definition = "רָהִיט לִשְׁכִיבָה וּשְׁנִינָּה.",
+            original = "מִטָּה", translation = "кровать",
+            definition = "רָהִיט לִשְׁכִיבָה וְלִישׁוֹן.",
             definitionNative = "Мебель для лежания и сна.",
-            example = "מִיטָה שֶׁלִּי רַכָּה וּנוֹחָה.",
-            exampleNative = "Моя מִיטָה мягкая и удобная.",
+            example = "מִטָּה שֶׁלִּי רַכָּה וּנוֹחָה.",
+            exampleNative = "Моя מִטָּה мягкая и удобная.",
          fillInBlankExclusions = listOf(100705L, 100706L, 100717L, 100723L, 100724L)),
         WordEntity(
             id = 100705, setId = 1007, languagePair = "he-ru", rarity = "COMMON",
@@ -826,7 +826,7 @@ object WordDataHebrewEveryday {
             original = "אוֹר", translation = "свет",
             definition = "אֵנֶרְגִּיָה הַמֵּאִירָה אֶת הַחֲשֵׁכָה.",
             definitionNative = "Энергия, освещающая темноту.",
-            example = "אוֹר בַּחֶדֶר חָלַשׁ מִדַּי.",
+            example = "אוֹר בַּחֶדֶר חַלָּשׁ מִדַּי.",
             exampleNative = "אוֹר в комнате слишком слабый.",
          fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100719L, 100720L, 100721L, 100722L, 100725L)),
         WordEntity(
@@ -869,7 +869,7 @@ object WordDataHebrewEveryday {
             id = 100717, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "furniture",
             original = "רָהִיט", translation = "мебель",
-            definition = "חֲפָצִים גְּדוֹלִים בַּבַּיִת כְּגוֹן שׁוּלְחָן, כִּסֵּא וּמִיטָּה.",
+            definition = "חֲפָצִים גְּדוֹלִים בַּבַּיִת כְּגוֹן שׁוּלְחָן, כִּסֵּא וּמִטָּה.",
             definitionNative = "Крупные предметы в доме: стол, стул, кровать и другое.",
             example = "רָהִיט חָדָשׁ הִגִּיעַ הַיּוֹם לַבַּיִת.",
             exampleNative = "Новый רָהִיט привезли сегодня домой.",
@@ -916,7 +916,7 @@ object WordDataHebrewEveryday {
             original = "מַגֶּבֶת", translation = "полотенце",
             definition = "בַּד רַךְ לְנִגּוּב הַגּוּף לְאַחַר הָאַמְבַּטְיָה.",
             definitionNative = "Мягкая ткань для вытирания тела после ванны или душа.",
-            example = "מַגֶּבֶת נְקִיָּה תָּלוּיָה בַּחֶדֶר הַאֲמְבַּטְיָה.",
+            example = "מַגֶּבֶת נְקִיָּה תָּלוּיָה בַּחֲדַר הָאַמְבַּטְיָה.",
             exampleNative = "Чистая מַגֶּבֶת висит в ванной.",
          fillInBlankExclusions = listOf(100701L, 100703L, 100707L, 100708L, 100709L, 100710L, 100711L, 100712L, 100719L, 100720L, 100721L, 100725L)),
         WordEntity(
