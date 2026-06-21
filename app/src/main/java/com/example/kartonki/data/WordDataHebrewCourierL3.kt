@@ -75,11 +75,11 @@ object WordDataHebrewCourierL3 {
         WordEntity(
             id = 171704, setId = 1717, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "courier_routes_advanced",
-            original = "מְעַקֶּה הַמַּסְלוּל", translation = "объезд по маршруту",
+            original = "מַעֲקַף הַמַּסְלוּל", translation = "объезд по маршруту",
             definition = "סְטִיָּה זְמַנִּית מֵהַדֶּרֶךְ הָרְגִילָה בִּגְלַל סְגִירָה אוֹ עֲבוֹדוֹת.",
             definitionNative = "Временный обход обычной дороги из-за работ или закрытий.",
-            example = "מְעַקֶּה הַמַּסְלוּל הוֹסִיף לִי עֶשְׂרִים דַּקּוֹת לַזְּמַן.",
-            exampleNative = "מְעַקֶּה הַמַּסְלוּל добавил мне двадцать минут в пути.",
+            example = "מַעֲקַף הַמַּסְלוּל הוֹסִיף לִי עֶשְׂרִים דַּקּוֹת לַזְּמַן.",
+            exampleNative = "מַעֲקַף הַמַּסְלוּל добавил мне двадцать минут в пути.",
             isFillInBlankSafe = true,
          fillInBlankExclusions = listOf(171701L, 171702L, 171703L, 171705L, 171708L, 171710L, 171714L, 171724L, 171725L)),
         WordEntity(
@@ -100,7 +100,7 @@ object WordDataHebrewCourierL3 {
             original = "מִשְׁלוֹחַ מִיָּדִי", translation = "моментальная доставка",
             definition = "שֵׁרוּת שֶׁבּוֹ הַחֲבִילָה מַגִּיעָה תּוֹךְ שָׁעָה אוֹ פָּחוֹת.",
             definitionNative = "Услуга, при которой посылка приходит в течение часа или быстрее.",
-            example = "הִזְמַנְתִּי מִשְׁלוֹחַ מִיָּדִי שֶׁל תְּרוּפוֹת מֵהַבֵּית מֶרְקַחַת.",
+            example = "הִזְמַנְתִּי מִשְׁלוֹחַ מִיָּדִי שֶׁל תְּרוּפוֹת מִבֵּית הַמִּרְקַחַת.",
             exampleNative = "Я заказал מִשְׁלוֹחַ מִיָּדִי лекарств из аптеки.",
             isFillInBlankSafe = true,
          fillInBlankExclusions = listOf(171707L, 171708L, 171709L, 171710L)),

@@ -496,7 +496,7 @@ object WordDataHebrewTransportV2 {
             original = "תַּחֲנַת רַכֶּבֶת", translation = "железнодорожная станция",
             definition = "מָקוֹם בּוֹ רַכָּבוֹת עוֹצְרוֹת לִקְלוֹט וּלְהוֹרִיד נוֹסְעִים.",
             definitionNative = "Место, где поезда останавливаются для посадки пассажиров.",
-            example = "הַתַּחֲנַת רַכֶּבֶת מֶרְכָּזִית נִמְצֵאת בָּעִיר.",
+            example = "תַּחֲנַת הָרַכֶּבֶת הַמֶּרְכָּזִית נִמְצֵאת בָּעִיר.",
             exampleNative = "תַּחֲנַת רַכֶּבֶת центральная находится в городе.", fillInBlankExclusions = listOf(163202L, 163203L, 163204L, 163205L, 163206L)),
         WordEntity(
             id = 163202, setId = 1632, languagePair = "he-ru", rarity = "UNCOMMON",
