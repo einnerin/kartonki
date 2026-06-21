@@ -255,6 +255,7 @@ object WordDataHebrewAliyaV2 {
             definitionNative = "Слово отрицания в ответ на вопрос или предложение.",
             example = "לֹא, עוֹד לֹא קִבַּלְתִּי תְּעוּדָה.",
             exampleNative = "לֹא, я ещё не получил удостоверение.",
+            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(161017L, 161018L, 161020L)),
         WordEntity(
             id = 161020, setId = 1610, languagePair = "he-ru", rarity = "COMMON",
@@ -273,8 +274,8 @@ object WordDataHebrewAliyaV2 {
             original = "יוֹם", translation = "день",
             definition = "יְחִידַת זְמַן שֶׁל עֶשְׂרִים וְאַרְבַּע שָׁעוֹת.",
             definitionNative = "Единица времени продолжительностью 24 часа.",
-            example = "יוֹם רִאשׁוֹן הוּא יוֹם עֲבוֹדָה בָּאָרֶץ.",
-            exampleNative = "יוֹם ришон (воскресенье) — рабочий день в Израиле.",
+            example = "יוֹם רִאשׁוֹן הוּא תְּחִלַּת שְׁבוּעַ הָעֲבוֹדָה בָּאָרֶץ.",
+            exampleNative = "יוֹם ришон (воскресенье) — начало рабочей недели в Израиле.",
          fillInBlankExclusions = listOf(161022L)),
         WordEntity(
             id = 161022, setId = 1610, languagePair = "he-ru", rarity = "COMMON",

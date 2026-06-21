@@ -74,6 +74,7 @@ object WordDataHebrewEveryday {
             definitionNative = "Отрицательный ответ на вопрос.",
             example = "לֹא, אֲנִי לֹא עָיֵף עַכְשָׁיו.",
             exampleNative = "לֹא, я сейчас не устал.",
+            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(100401L, 100402L, 100403L, 100404L, 100406L, 100422L)),
         WordEntity(
             id = 100406, setId = 1004, languagePair = "he-ru", rarity = "COMMON",
