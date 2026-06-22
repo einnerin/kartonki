@@ -431,7 +431,7 @@ object WordDataHebrewMedicineV2 {
             original = "מְאוּחֶדֶת", translation = "Меухедет",
             definition = "אַחַת מֵאַרְבַּע קוּפּוֹת הַחוֹלִים הַמֶּמְשַׁלְתִּיּוֹת.",
             definitionNative = "Одна из четырёх государственных больничных касс.",
-            example = "עֲבַרְתִּי לְמְאוּחֶדֶת בַּשָּׁנָה שֶׁעָבְרָה.",
+            example = "עֲבַרְתִּי לִמְאוּחֶדֶת בַּשָּׁנָה שֶׁעָבְרָה.",
             exampleNative = "Перешёл в מְאוּחֶדֶת в прошлом году.", fillInBlankExclusions = listOf(160201L, 160202L, 160204L)),
         WordEntity(id = 160204, setId = 1602, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "kupat_names",

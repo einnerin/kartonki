@@ -75,7 +75,7 @@ object WordDataHebrewPlumberL1L2L3 {
             id = 174202, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "plumbing_fixtures",
             original = "בֶּרֶז", translation = "кран (водопроводный)",
-            definition = "מַתֶּקֶת קְטַנָּה שֶׁפּוֹתְחִים וְסוֹגְרִים אוֹתָהּ לְזְרִימַת מַיִם.",
+            definition = "מַתֶּקֶת קְטַנָּה שֶׁפּוֹתְחִים וְסוֹגְרִים אוֹתָהּ לִזְרִימַת מַיִם.",
             definitionNative = "Небольшое устройство для открывания и закрывания потока воды.",
             example = "סִגַּרְתִּי אֶת הַבֶּרֶז כְּדֵי לְחַסְכוֹן בְּמַיִם.",
             exampleNative = "Я закрыл בֶּרֶז ради экономии воды.",
@@ -331,6 +331,7 @@ object WordDataHebrewPlumberL1L2L3 {
             definitionNative = "Малая деталь, скрепляющая два конца трубы или меняющая направление.",
             example = "קָנִינוּ עֲשֶׂרֶת פִיטִינְגִים פְּלַסְטִיק לַמְּעַרְכָה.",
             exampleNative = "Мы купили десять пластиковых פִיטִינְגִים для системы.",
+            isFillInBlankSafe = false,
          fillInBlankExclusions = listOf(174302L, 174304L, 174305L)),
         WordEntity(
             id = 174304, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -527,7 +528,7 @@ object WordDataHebrewPlumberL1L2L3 {
             original = "סְגִירַת מַיִם", translation = "перекрытие воды",
             definition = "פְּעֻלָּה לְעֶצְמָה זְמַנִּית שֶׁל זְרִימַת הַמַּיִם הַכְּלָלִית בַּדִּירָה.",
             definitionNative = "Временная остановка общего потока воды в квартире.",
-            example = "סְגִירַת מַיִם נִדְרֶשֶׁת לְפְנֵי הַחְלָפַת בֶּרֶז.",
+            example = "סְגִירַת מַיִם נִדְרֶשֶׁת לִפְנֵי הַחְלָפַת בֶּרֶז.",
             exampleNative = "סְגִירַת מַיִם нужна перед заменой крана.",
          fillInBlankExclusions = listOf(174321L, 174322L, 174323L)),
         WordEntity(

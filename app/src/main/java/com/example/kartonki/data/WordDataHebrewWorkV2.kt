@@ -576,7 +576,7 @@ object WordDataHebrewWorkV2 {
             id = 164206, setId = 1642, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "job_process",
             original = "מוּעֲמָד", translation = "кандидат на должность",
-            definition = "אָדָם שֶׁמַּגִּישׁ אֶת עַצְמוֹ לַתַּפְקִיד וּמְחַכֶּה לְבְחִירָה.",
+            definition = "אָדָם שֶׁמַּגִּישׁ אֶת עַצְמוֹ לַתַּפְקִיד וּמְחַכֶּה לִבְחִירָה.",
             definitionNative = "Человек, подавший заявку на должность и ожидающий решения.",
             example = "מוּעֲמָד טוֹב הִגִּיעַ לַשָּׁלָב הָאַחֲרוֹן שֶׁל הַמִּיּוּן.",
             exampleNative = "Сильный מוּעֲמָד дошёл до финального этапа отбора.",

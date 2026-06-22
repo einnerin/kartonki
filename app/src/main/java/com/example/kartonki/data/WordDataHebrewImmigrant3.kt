@@ -50,6 +50,7 @@ object WordDataHebrewImmigrant3 {
             definitionNative = "Ребёнок или подросток, обучающийся в образовательном учреждении.",
             example = "הַכִּתָּה שֶׁלּוֹ יֵשׁ עֶשְׂרִים וּשְׁלוֹשָׁה תַּלְמִידִים.",
             exampleNative = "В его классе двадцать три תַּלְמִיד.",
+            isFillInBlankSafe = false,
         ),
         WordEntity(
             id = 103104, setId = 1031, languagePair = "he-ru", rarity = "COMMON",
@@ -82,7 +83,7 @@ object WordDataHebrewImmigrant3 {
             id = 103107, setId = 1031, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "school",
             original = "חֹפֶשׁ", translation = "каникулы",
-            definition = "הַפְסָקָה מִלִּימּוּדִים לְתְּקוּפָה קְבוּעָה.",
+            definition = "הַפְסָקָה מִלִּימּוּדִים לִתְּקוּפָה קְבוּעָה.",
             definitionNative = "Перерыв в учёбе на фиксированный период.",
             example = "בְּחֹפֶשׁ הַקַּיִץ נְסַעְנוּ לָאֵילַת.",
             exampleNative = "На летние חֹפֶשׁ мы поехали в Эйлат.",
@@ -296,7 +297,7 @@ object WordDataHebrewImmigrant3 {
             original = "אֲרִיזָה", translation = "упаковка",
             definition = "חוֹמָר עוֹטֵף לְהַגָּנַת חֲפָצִים בְּמִשְׁלוֹחַ.",
             definitionNative = "Обёрточный материал для защиты вещей при пересылке.",
-            example = "הַחֲנוּת מַכִינָה אֲרִיזָה מְיוּחֶדֶת לְחֲבִילוֹת שְׁבִירוֹת.",
+            example = "הַחֲנוּת מַכִינָה אֲרִיזָה מְיוּחֶדֶת לַחֲבִילוֹת שְׁבִירוֹת.",
             exampleNative = "Магазин делает специальную אֲרִיזָה для хрупких посылок.",
          fillInBlankExclusions = listOf(103206L, 103223L)),
         WordEntity(

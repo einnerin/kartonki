@@ -226,7 +226,7 @@ object WordDataHebrewGreetingsL4 {
             id = 170920, setId = 1709, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "greeting_torah_quotes",
             original = "לְחַיִּים וְלִבְרָכָה", translation = "Во здравие и во благословение (тост)",
-            definition = "נֻסָּח גָּבוֹהַּ לְהֲרָמַת כּוֹסִית בְּאֵרוּעַ קְהִלָּתִי רִשְׁמִי.",
+            definition = "נֻסָּח גָּבוֹהַּ לַהֲרָמַת כּוֹסִית בְּאֵרוּעַ קְהִלָּתִי רִשְׁמִי.",
             definitionNative = "Возвышенная тостовая формула на формальном общинном торжестве.",
             example = "הוּא הֵרִים כּוֹס בְּ\"לְחַיִּים וְלִבְרָכָה\".",
             exampleNative = "Он поднял бокал со словами לְחַיִּים וְלִבְרָכָה.",

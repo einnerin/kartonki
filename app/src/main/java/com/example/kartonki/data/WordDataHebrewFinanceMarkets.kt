@@ -224,11 +224,11 @@ object WordDataHebrewFinanceMarkets {
             pos = "phrase", semanticGroup = "finance_markets_participants", fillInBlankExclusions = listOf(189920L, 189921L)),
 
         WordEntity(id = 189920, setId = 1899, languagePair = "he-ru", rarity = "EPIC",
-            original = "הָרְשׁוּת לְנְיָרוֹת עֵרֶךְ",
+            original = "הָרְשׁוּת לִנְיָרוֹת עֵרֶךְ",
             translation = "регулятор биржи",
             definition = "גּוּף מַמְלַכְתִּי שֶׁכּוֹתֵב חוּקֵי בּוּרְסָה, מְפַקֵּחַ עַל חֲבָרוֹת וּמַטִּיל קְנָסוֹת עַל מַפְרֵי כְּלָלִים.",
             definitionNative = "Госорган, пишущий биржевые законы, надзирающий за компаниями и штрафующий нарушителей правил.",
-            example = "הָרְשׁוּת לְנְיָרוֹת עֵרֶךְ קָנְסָה אֶת הַחֶבְרָה עַל זִיּוּף.",
+            example = "הָרְשׁוּת לִנְיָרוֹת עֵרֶךְ קָנְסָה אֶת הַחֶבְרָה עַל זִיּוּף.",
             exampleNative = "הָרְשׁוּת לְנְיָרוֹת עֵרֶךְ оштрафовала компанию за подлог.",
             pos = "phrase", semanticGroup = "finance_markets_participants"),
 

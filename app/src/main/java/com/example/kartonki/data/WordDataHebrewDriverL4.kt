@@ -158,7 +158,7 @@ object WordDataHebrewDriverL4 {
             id = 171513, setId = 1715, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "driver_special_cargo",
             original = "פִּקּוּחַ מִשְׁקָל", translation = "весовой контроль",
-            definition = "בְּדִיקָה בַּדֶּרֶךְ שֶׁל מִשְׁקָל הַמַּשָּׂא לְמְנֹעַ עֲמִיסַת יֶתֶר.",
+            definition = "בְּדִיקָה בַּדֶּרֶךְ שֶׁל מִשְׁקָל הַמַּשָּׂא לִמְנֹעַ עֲמִיסַת יֶתֶר.",
             definitionNative = "Проверка на дороге, не превышен ли допустимый вес груза.",
             example = "בְּתַחֲנַת פִּקּוּחַ מִשְׁקָל עָצְרוּ אוֹתָנוּ לִבְדִיקָה.",
             exampleNative = "На посту פִּקּוּחַ מִשְׁקָל нас остановили для проверки.",

@@ -208,7 +208,7 @@ object WordDataHebrewRelHolidaysL1 {
             id = 171018, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "holidays_greetings",
             original = "שְׁנַת בְּרָכָה", translation = "благословенный год",
-            definition = "אִחוּל לְזְמַן טוֹב, בָּרִיא וּמְלֵא הַצְלָחָה לִפְנֵי הָאָדָם.",
+            definition = "אִחוּל לִזְמַן טוֹב, בָּרִיא וּמְלֵא הַצְלָחָה לִפְנֵי הָאָדָם.",
             definitionNative = "Пожелание хорошего, здорового и удачного периода впереди.",
             example = "הָרַב אִחֵל לַקָּהָל שְׁנַת בְּרָכָה טוֹבָה לְכֻלָּם.",
             exampleNative = "Раввин пожелал общине доброго שְׁנַת בְּרָכָה для всех.",

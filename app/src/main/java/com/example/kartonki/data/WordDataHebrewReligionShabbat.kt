@@ -215,7 +215,7 @@ object WordDataHebrewReligionShabbat {
             translation = "субботняя трапеза",
             definition = "אֲרוּחָה חֲגִיגִית שֶׁל הָעֶרֶב הַשִּׁשִּׁי, עִם דָּגִים, בָּשָׂר וְשִׁירָה סְבִיב הַשֻּׁלְחָן.",
             definitionNative = "Праздничный ужин в пятницу вечером — с рыбой, мясом и пением вокруг стола.",
-            example = "לְסְעוּדַת שַׁבָּת אֶצְלָם תָּמִיד מַזְמִינִים שְׁכֵנִים.",
+            example = "לִסְעוּדַת שַׁבָּת אֶצְלָם תָּמִיד מַזְמִינִים שְׁכֵנִים.",
             exampleNative = "На סְעוּדַת שַׁבָּת у них всегда зовут соседей.",
             pos = "phrase", semanticGroup = "religion_shabbat_meals", fillInBlankExclusions = listOf(190517L, 190518L, 190519L, 190520L)),
 

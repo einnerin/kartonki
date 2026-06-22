@@ -174,7 +174,7 @@ object WordDataHebrewBureauL1 {
             id = 180715, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_basic_queue",
             original = "רִשּׁוּם", translation = "регистрация",
-            definition = "הַכְנָסַת שֵׁם וּפְרָטִים שֶׁל אָדָם לְרְשִׁימָה רִשְׁמִית בְּמַחְשֵׁב הַמּוֹסָד.",
+            definition = "הַכְנָסַת שֵׁם וּפְרָטִים שֶׁל אָדָם לִרְשִׁימָה רִשְׁמִית בְּמַחְשֵׁב הַמּוֹסָד.",
             definitionNative = "Внесение имени и данных человека в официальный список в системе ведомства.",
             example = "הָרִשּׁוּם לְקֻרְסֵי עִבְרִית נִסְגָּר מָחָר.",
             exampleNative = "רִשּׁוּם на курсы иврита закрывается завтра.",

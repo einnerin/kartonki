@@ -1067,7 +1067,7 @@ object WordDataHebrewBatch67 {
         WordEntity(id = 139911, setId = 1399, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "electrician_quantities",
             original = "תְּדִירוּת", translation = "частота (Гц)",
-            definition = "כַּמָּה פְּעָמִים לְשְׁנִיָּה הַזֶּרֶם מְשַׁנֶּה כִּוּוּן בַּחוּט הַחַי.",
+            definition = "כַּמָּה פְּעָמִים לִשְׁנִיָּה הַזֶּרֶם מְשַׁנֶּה כִּוּוּן בַּחוּט הַחַי.",
             definitionNative = "Сколько раз в секунду заряд меняет направление в живой жиле.",
             example = "בְּיִשְׂרָאֵל תְּדִירוּת הָרֶשֶׁת הִיא חֲמִשִּׁים הֶרְץ בְּדִיּוּק.",
             exampleNative = "В Израиле תְּדִירוּת сети ровно пятьдесят герц.", fillInBlankExclusions = listOf(139912L, 139913L, 139914L)),

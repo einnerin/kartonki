@@ -112,7 +112,7 @@ object WordDataHebrewEmotionsL4 {
             id = 183007, setId = 1830, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "emotions_l4_complex_states",
             original = "נוֹסְטַלְגְּיָה", translation = "ностальгия",
-            definition = "כְּמִיהָה רַכָּה וְכּוֹאֶבֶת לְתְקוּפָה אוֹ לְמָקוֹם שֶׁאֵינָם עוֹד.",
+            definition = "כְּמִיהָה רַכָּה וְכּוֹאֶבֶת לִתְקוּפָה אוֹ לְמָקוֹם שֶׁאֵינָם עוֹד.",
             definitionNative = "Мягкое и щемящее томление по поре или месту, которых уже нет.",
             example = "מַרְאֵה הַבַּיִת הַיָּשָׁן הִצִּיף אוֹתוֹ בְּנוֹסְטַלְגְּיָה מְתוּקָה.",
             exampleNative = "Вид старого дома захлестнул его сладкой נוֹסְטַלְגְּיָה.",
