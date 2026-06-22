@@ -105,12 +105,12 @@ object WordDataHebrewIdiomsModernSlang {
             pos = "phrase", semanticGroup = "idioms_slang_approval"),
 
         WordEntity(id = 191205, setId = 1912, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "פִּצָּצָה",
+            original = "פְּצָצָה",
             translation = "бомба, огонь (превосходно)",
             definition = "מָה שֶׁמַּפְצִיץ אֶת הַחוּשִׁים — אֹכֶל, הוֹפָעָה אוֹ מוּצָר בְּאֵיכוּת חֲרִיגָה.",
             definitionNative = "Что-то, что взрывает чувства — еда, концерт или вещь редкого уровня.",
-            example = "הָעוּגָה שֶׁהֵכַנְתְּ הָיְתָה פִּצָּצָה, כֻּלָּם בִּקְּשׁוּ עוֹד.",
-            exampleNative = "Торт, что ты испекла, был פִּצָּצָה, все просили добавки.",
+            example = "הָעוּגָה שֶׁהֵכַנְתְּ הָיְתָה פְּצָצָה, כֻּלָּם בִּקְּשׁוּ עוֹד.",
+            exampleNative = "Торт, что ты испекла, был פְּצָצָה, все просили добавки.",
             pos = "noun", semanticGroup = "idioms_slang_approval", fillInBlankExclusions = listOf(191201L, 191202L, 191203L, 191204L, 191211L, 191218L)),
 
         // ── Group: idioms_slang_surprise (5 words) ────────────────────────────

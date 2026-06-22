@@ -68,11 +68,11 @@ object WordDataHebrewScienceL1 {
         WordEntity(
             id = 170805, setId = 1708, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "science_workers_lab",
-            original = "מִבְחֵנָה", translation = "пробирка",
+            original = "מַבְחֵנָה", translation = "пробирка",
             definition = "צִינּוֹר זְכוּכִית קָטָן וְצַר שֶׁמַּחְזִיק מְעַט נוֹזֵל לִבְדִיקָה.",
             definitionNative = "Маленькая узкая стеклянная трубка, что держит немного жидкости для теста.",
             example = "הַתַּלְמִידָה שָׁפְכָה טִפָּה כְּחֻלָּה לְתוֹךְ הַמִּבְחֵנָה.",
-            exampleNative = "Ученица налила синюю каплю в מִבְחֵנָה.",
+            exampleNative = "Ученица налила синюю каплю в מַבְחֵנָה.",
         ),
 
         // — science_actions (5): действия в науке —
@@ -182,11 +182,11 @@ object WordDataHebrewScienceL1 {
         WordEntity(
             id = 170817, setId = 1708, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science_numbers",
-            original = "אַחוּז", translation = "процент",
+            original = "אָחוּז", translation = "процент",
             definition = "חֵלֶק קָטָן מִתּוֹךְ מֵאָה שֶׁמַּרְאֶה כַּמָּה מִשֶּׁהוּ יֵשׁ.",
             definitionNative = "Маленькая часть из ста, что показывает, сколько чего-то имеется.",
-            example = "רַק אַחוּז קָטָן שֶׁל הַתַּלְמִידִים עָנָה נְכוֹנָה.",
-            exampleNative = "Только маленький אַחוּז учеников ответил верно.",
+            example = "רַק אָחוּז קָטָן שֶׁל הַתַּלְמִידִים עָנָה נְכוֹנָה.",
+            exampleNative = "Только маленький אָחוּז учеников ответил верно.",
          fillInBlankExclusions = listOf(170816L, 170818L, 170819L, 170820L)),
         WordEntity(
             id = 170818, setId = 1708, languagePair = "he-ru", rarity = "UNCOMMON",

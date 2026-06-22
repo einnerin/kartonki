@@ -32,7 +32,7 @@ object WordDataHebrewImmigrant15 {
         WordEntity(id = 119907, setId = 1199, languagePair = "he-ru", original = "טוֹב", translation = "хороший", rarity = "COMMON"),
         WordEntity(id = 119908, setId = 1199, languagePair = "he-ru", original = "רַע", translation = "плохой", rarity = "COMMON"),
         WordEntity(id = 119909, setId = 1199, languagePair = "he-ru", original = "חָרִיף", translation = "острый / пряный", rarity = "UNCOMMON"),
-        WordEntity(id = 119910, setId = 1199, languagePair = "he-ru", original = "קַשֶּׁה", translation = "жёсткий / трудный", rarity = "COMMON"),
+        WordEntity(id = 119910, setId = 1199, languagePair = "he-ru", original = "קָשֶׁה", translation = "жёсткий / трудный", rarity = "COMMON"),
         WordEntity(id = 119911, setId = 1199, languagePair = "he-ru", original = "מָהִיר", translation = "быстрый", rarity = "COMMON"),
         WordEntity(id = 119912, setId = 1199, languagePair = "he-ru", original = "אִטִּי", translation = "медленный", rarity = "COMMON"),
         WordEntity(id = 119913, setId = 1199, languagePair = "he-ru", original = "רַךְ", translation = "мягкий / нежный", rarity = "COMMON"),

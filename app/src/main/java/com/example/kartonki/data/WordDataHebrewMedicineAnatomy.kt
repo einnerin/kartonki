@@ -57,12 +57,12 @@ object WordDataHebrewMedicineAnatomy {
             fillInBlankExclusions = listOf(189502L, 189503L, 189504L, 189505L, 189506L, 189507L)),
 
         WordEntity(id = 189502, setId = 1895, languagePair = "he-ru", rarity = "RARE",
-            original = "לַבְלָב",
+            original = "לַבְלַב",
             translation = "поджелудочная железа",
             definition = "בַּלּוּטָה אֲרֻכָּה מֵאֲחוֹרֵי הַקֵּיבָה הַמַּפְרִישָׁה אִינְסוּלִין וּמִיצֵי עִכּוּל.",
             definitionNative = "Вытянутая железа за желудком: выделяет инсулин и пищеварительные соки.",
             example = "סוּכֶּרֶת מִסּוּג רִאשׁוֹן מִתְפַּתַּחַת כְּשֶׁהַלַּבְלָב מַפְסִיק לְיַצֵּר אִינְסוּלִין.",
-            exampleNative = "Диабет первого типа развивается, когда לַבְלָב перестаёт производить инсулин.",
+            exampleNative = "Диабет первого типа развивается, когда לַבְלַב перестаёт производить инсулин.",
             pos = "noun", semanticGroup = "medicine_anatomy_digestive",
             fillInBlankExclusions = listOf(189501L, 189503L, 189504L, 189505L, 189506L, 189507L), isFillInBlankSafe = false),
 
@@ -233,12 +233,12 @@ object WordDataHebrewMedicineAnatomy {
             fillInBlankExclusions = listOf(189517L, 189519L, 189520L, 189521L)),
 
         WordEntity(id = 189519, setId = 1895, languagePair = "he-ru", rarity = "EPIC",
-            original = "שִׁפְכָה",
+            original = "שָׁפְכָה",
             translation = "уретра (мочеиспускательный канал)",
             definition = "צִנּוֹר צַר הַמּוֹצִיא אֶת הַשֶּׁתֶן מִשַּׁלְפּוּחִית הַשֶּׁתֶן הַחוּצָה מֵהַגּוּף.",
             definitionNative = "Узкая трубка, по которой моча выходит из мочевого пузыря наружу.",
             example = "הָרוֹפֵא הִחְדִּיר קָתֵטֶר עָדִין דֶּרֶךְ הַשִּׁפְכָה אֶל שַׁלְפּוּחִית הַשֶּׁתֶן.",
-            exampleNative = "Врач аккуратно ввёл катетер через שִׁפְכָה в мочевой пузырь.",
+            exampleNative = "Врач аккуратно ввёл катетер через שָׁפְכָה в мочевой пузырь.",
             pos = "noun", semanticGroup = "medicine_anatomy_urogenital",
             fillInBlankExclusions = listOf(189517L, 189518L, 189520L, 189521L)),
 

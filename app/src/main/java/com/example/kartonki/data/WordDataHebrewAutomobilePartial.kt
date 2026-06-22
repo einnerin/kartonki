@@ -450,11 +450,11 @@ object WordDataHebrewAutomobilePartial {
         WordEntity(
             id = 171318, setId = 1713, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "auto_brakes_chassis",
-            original = "סָרֵן", translation = "ось, мост",
+            original = "סֶרֶן", translation = "ось, мост",
             definition = "מוט עבה שמחבר שני גלגלים ומחזיק עליהם את משקל הרכב.",
             definitionNative = "Толстый стержень, соединяющий два колеса и несущий вес машины.",
-            example = "סָרֵן אחורי התעקם בתאונה.",
-            exampleNative = "סָרֵן заднего моста повело при ударе в столб.",
+            example = "סֶרֶן אחורי התעקם בתאונה.",
+            exampleNative = "סֶרֶן заднего моста повело при ударе в столб.",
          fillInBlankExclusions = listOf(171316L)),
         WordEntity(
             id = 171319, setId = 1713, languagePair = "he-ru", rarity = "EPIC",

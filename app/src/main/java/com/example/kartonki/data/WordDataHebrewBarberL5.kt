@@ -140,11 +140,11 @@ object WordDataHebrewBarberL5 {
         WordEntity(
             id = 179911, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "barber_training_advanced",
-            original = "סָדְנָה", translation = "воркшоп, практический семинар",
+            original = "סֶדְנָה", translation = "воркшоп, практический семинар",
             definition = "מִפְגָּשׁ קָצָר וְמַעֲשִׂי בּוֹ לוֹמְדִים שִׁיטָה אַחַת תַּחַת מַדְרִיךְ.",
             definitionNative = "Короткая практическая встреча, где осваивают одну методику под руководством.",
-            example = "נִרְשַׁמְתִּי לְסָדְנָה שֶׁל יוֹמַיִם בְּתֵל אָבִיב.",
-            exampleNative = "Я записалась на двухдневный סָדְנָה в Тель-Авиве.",
+            example = "נִרְשַׁמְתִּי לְסֶדְנָה שֶׁל יוֹמַיִם בְּתֵל אָבִיב.",
+            exampleNative = "Я записалась на двухдневный סֶדְנָה в Тель-Авиве.",
          fillInBlankExclusions = listOf(179912L, 179913L)),
         WordEntity(
             id = 179912, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
@@ -158,11 +158,11 @@ object WordDataHebrewBarberL5 {
         WordEntity(
             id = 179913, setId = 1799, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "barber_training_advanced",
-            original = "מַתְמַחֶה", translation = "стажёр-ассистент",
+            original = "מִתְמַחֶה", translation = "стажёр-ассистент",
             definition = "מִי שֶׁעוֹבֵד לְצַד מַסְפֵּר וָתִיק כְּדֵי לִרְכּוֹשׁ נִסָּיוֹן בְּשָׂדֶה.",
             definitionNative = "Тот, кто работает рядом с опытным мастером, чтобы получить практику в деле.",
             example = "הַמַּתְמַחֶה הֶחָדָשׁ שׁוֹטֵף וְעוֹזֵר בִּכְלֵי הָעֲבוֹדָה.",
-            exampleNative = "Новый מַתְמַחֶה моет и помогает с инвентарём.",
+            exampleNative = "Новый מִתְמַחֶה моет и помогает с инвентарём.",
         ),
         WordEntity(
             id = 179914, setId = 1799, languagePair = "he-ru", rarity = "LEGENDARY",

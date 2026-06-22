@@ -244,12 +244,12 @@ object WordDataHebrewFinanceMarkets {
             pos = "noun", semanticGroup = "finance_markets_metrics"),
 
         WordEntity(id = 189922, setId = 1899, languagePair = "he-ru", rarity = "EPIC",
-            original = "תְּנוּדָתִיוּת",
+            original = "תְּנוּדָתִיּוּת",
             translation = "волатильность",
             definition = "מִדַּת הַתְּנוּעָה הַחַדָּה שֶׁל מְחִיר נֶכֶס סְבִיב מְמֻצָּעוֹ — גָּבוֹהַּ סִיכּוּן, גָּבוֹהַּ סִיכּוּי.",
             definitionNative = "Мера резкости колебаний цены актива вокруг среднего значения — выше риск, выше шанс прибыли.",
-            example = "תְּנוּדָתִיוּת בִּקְרִיפְּטוֹ קוֹפֶצֶת בַּלַּיְלָה וְהוֹפֶכֶת שֵׁנָה לְלִחַץ דָּם.",
-            exampleNative = "תְּנוּדָתִיוּת на крипте взлетает ночью и превращает сон в скачок давления.",
+            example = "תְּנוּדָתִיּוּת בִּקְרִיפְּטוֹ קוֹפֶצֶת בַּלַּיְלָה וְהוֹפֶכֶת שֵׁנָה לְלִחַץ דָּם.",
+            exampleNative = "תְּנוּדָתִיּוּת на крипте взлетает ночью и превращает сон в скачок давления.",
             pos = "noun", semanticGroup = "finance_markets_metrics", fillInBlankExclusions = listOf(189921L)),
 
         WordEntity(id = 189923, setId = 1899, languagePair = "he-ru", rarity = "EPIC",

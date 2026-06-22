@@ -244,11 +244,11 @@ object WordDataHebrewTimeL4 {
         WordEntity(
             id = 183522, setId = 1835, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "time_l4_phases_pro",
-            original = "חֲלוֹפִיּוּת", translation = "преходящесть",
+            original = "חֲלוּפִיּוּת", translation = "преходящесть",
             definition = "תְּכוּנָה שֶׁל דָּבָר שֶׁעוֹבֵר וְחוֹלֵף בִּמְהִירוּת וְאֵינוֹ נִשְׁאָר לִזְמַן רַב.",
             definitionNative = "Свойство того, что быстро уходит и проходит, не оставаясь надолго.",
-            example = "מְשׁוֹרְרֵי הַזֵּן כָּתְבוּ הַרְבֵּה עַל חֲלוֹפִיּוּת הַיֹּפִי שֶׁל הַפְּרִיחָה.",
-            exampleNative = "Дзенские поэты много писали о חֲלוֹפִיּוּת красоты цветения сакуры.",
+            example = "מְשׁוֹרְרֵי הַזֵּן כָּתְבוּ הַרְבֵּה עַל חֲלוּפִיּוּת הַיֹּפִי שֶׁל הַפְּרִיחָה.",
+            exampleNative = "Дзенские поэты много писали о חֲלוּפִיּוּת красоты цветения сакуры.",
          fillInBlankExclusions = listOf(183515L, 183521L, 183523L, 183524L)),
         WordEntity(
             id = 183523, setId = 1835, languagePair = "he-ru", rarity = "EPIC",
@@ -262,11 +262,11 @@ object WordDataHebrewTimeL4 {
         WordEntity(
             id = 183524, setId = 1835, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "time_l4_phases_pro",
-            original = "הַתָּמָדָה", translation = "постоянство, упорство во времени",
+            original = "הַתְמָדָה", translation = "постоянство, упорство во времени",
             definition = "תְּכוּנָה שֶׁל הַחְזָקָה רְצוּפָה בִּפְעֻלָּה אוֹ בְּמַצָּב לְאֹרֶךְ זְמַן רַב לְלֹא וִתּוּר.",
             definitionNative = "Свойство непрерывного удержания действия или состояния в течение долгого времени без сдачи.",
-            example = "הַתָּמָדָה בְּאִמּוּנִים הִיא הַסּוֹד שֶׁל כָּל הִשֵּׂג סְפּוֹרְטִיבִי גָּדוֹל.",
-            exampleNative = "הַתָּמָדָה в тренировках — это секрет любого крупного спортивного достижения.",
+            example = "הַתְמָדָה בְּאִמּוּנִים הִיא הַסּוֹד שֶׁל כָּל הִשֵּׂג סְפּוֹרְטִיבִי גָּדוֹל.",
+            exampleNative = "הַתְמָדָה в тренировках — это секрет любого крупного спортивного достижения.",
          fillInBlankExclusions = listOf(183521L, 183522L, 183523L)),
         WordEntity(
             id = 183525, setId = 1835, languagePair = "he-ru", rarity = "RARE",

@@ -140,7 +140,7 @@ object WordDataHebrewBatch53 {
             original = "אוֹפְּטִימִיזַצְיָה לְמַנּוֹעֵי חִיפּוּשׂ", translation = "поисковая оптимизация / SEO"),
 
         WordEntity(id = 130106, setId = 1301, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "תַּפּוּצָה", translation = "рассылка / распространение"),
+            original = "תְּפוּצָה", translation = "рассылка / распространение"),
 
         WordEntity(id = 130107, setId = 1301, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "אֲנָלִיטִיקָה", translation = "аналитика"),
@@ -158,10 +158,10 @@ object WordDataHebrewBatch53 {
             original = "פִּיתּוּחַ עֵסְקִי", translation = "бизнес-девелопмент"),
 
         WordEntity(id = 130112, setId = 1301, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חֲסוּת", translation = "спонсорство"),
+            original = "חָסוּת", translation = "спонсорство"),
 
         WordEntity(id = 130113, setId = 1301, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "משַׁפִּיעָן", translation = "инфлюэнсер"),
+            original = "מַשְׁפִּיעָן", translation = "инфлюэнсер"),
 
         WordEntity(id = 130114, setId = 1301, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "תָּכְנִית הַפְנָיָה", translation = "реферальная программа"),

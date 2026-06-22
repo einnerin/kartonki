@@ -57,11 +57,11 @@ object WordDataHebrewTimeL3 {
         WordEntity(
             id = 183402, setId = 1834, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "time_l3_temporal_pro",
-            original = "סִינְכְּרוֹנִיּוּת", translation = "синхронность",
+            original = "סִינְכְּרוֹנִיּוֹת", translation = "синхронность",
             definition = "מַצָּב שֶׁל הִתְרַחֲשׁוּת מְשֻׁתֶּפֶת בְּדִיּוּק בְּאוֹתוֹ זְמַן וְלֹא לִפְנֵי וְלֹא אַחֲרֵי.",
             definitionNative = "Состояние совместного происшествия в точно один и тот же момент, ни до, ни после.",
             example = "הַסִּינְכְּרוֹנִיּוּת בֵּין הַמּוּסִיקָה לַסְּרָטוֹן הָיְתָה מֻשְׁלֶמֶת.",
-            exampleNative = "סִינְכְּרוֹנִיּוּת между музыкой и видеороликом была идеальной до миллисекунды.",
+            exampleNative = "סִינְכְּרוֹנִיּוֹת между музыкой и видеороликом была идеальной до миллисекунды.",
         ),
         WordEntity(
             id = 183403, setId = 1834, languagePair = "he-ru", rarity = "EPIC",

@@ -207,12 +207,12 @@ object WordDataHebrewSportsBasketball {
             pos = "noun", semanticGroup = "sport_basketball_play", fillInBlankExclusions = listOf(191511L, 191515L)),
 
         WordEntity(id = 191515, setId = 1915, languagePair = "he-ru", rarity = "RARE",
-            original = "כַּדְרוּר",
+            original = "כִּדְרוּר",
             translation = "ведение мяча (дриблинг)",
             definition = "הַקְפָּצַת הַכַּדּוּר עַל הָרִצְפָּה תּוֹךְ כְּדֵי תְּנוּעָה — הַדֶּרֶךְ הַחוּקִית לְהִתְקַדֵּם עִם הַכַּדּוּר.",
             definitionNative = "Удары мячом о пол во время движения — единственный законный способ идти с мячом.",
-            example = "הַכַּדְרוּר הַמָּהִיר שֶׁלּוֹ עָקַף שְׁנֵי שׁוֹמְרִים בַּדֶּרֶךְ לַסַּל.",
-            exampleNative = "Его быстрый כַּדְרוּר прошёл двух защитников по пути к кольцу.",
+            example = "הַכִּדְרוּר הַמָּהִיר שֶׁלּוֹ עָקַף שְׁנֵי שׁוֹמְרִים בַּדֶּרֶךְ לַסַּל.",
+            exampleNative = "Его быстрый כִּדְרוּר прошёл двух защитников по пути к кольцу.",
             pos = "noun", semanticGroup = "sport_basketball_play", fillInBlankExclusions = listOf(191511L, 191514L)),
 
         // ── Group: sport_basketball_defense (5 words) ─────────────────────────

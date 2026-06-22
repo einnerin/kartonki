@@ -99,11 +99,11 @@ object WordDataHebrewTransportV2 {
         WordEntity(
             id = 163006, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "road_vehicles",
-            original = "מַשָּׂאִיוֹת", translation = "грузовики",
+            original = "מַשָּׂאִיּוֹת", translation = "грузовики",
             definition = "רִכְבֵי הוֹבָלָה גְּדוֹלִים לְמִטְעָנִים כְּבֵדִים.",
             definitionNative = "Крупные грузовые автомобили для тяжёлых грузов.",
             example = "הַמַּשָּׂאִיוֹת מַעֲבִירוֹת סְחוֹרָה לַחֲנוּיוֹת.",
-            exampleNative = "מַשָּׂאִיוֹת перевозят товар в магазины."),
+            exampleNative = "מַשָּׂאִיּוֹת перевозят товар в магазины."),
         WordEntity(
             id = 163007, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "road_vehicles",
@@ -234,11 +234,11 @@ object WordDataHebrewTransportV2 {
         WordEntity(
             id = 163022, setId = 1630, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "personal_vehicles",
-            original = "גַּלְגִּלְיּוֹת", translation = "ролики",
+            original = "גַּלְגַּלִּיּוֹת", translation = "ролики",
             definition = "נַעֲלֵי גַּלְגַּלִּים לִנְסִיעָה מְהִירָה עַל הַמִּדְרָכוֹת.",
             definitionNative = "Обувь на колёсах для быстрого движения по тротуарам.",
-            example = "הַיְּלָדִים רוֹכְבִים עַל גַּלְגִּלְיּוֹת בַּגַּן.",
-            exampleNative = "Дети катаются на גַּלְגִּלְיּוֹת в парке.", fillInBlankExclusions = listOf(163005L, 163019L, 163020L, 163021L)),
+            example = "הַיְּלָדִים רוֹכְבִים עַל גַּלְגַּלִּיּוֹת בַּגַּן.",
+            exampleNative = "Дети катаются на גַּלְגַּלִּיּוֹת в парке.", fillInBlankExclusions = listOf(163005L, 163019L, 163020L, 163021L)),
 
         // ── general (3) ──
         WordEntity(

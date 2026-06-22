@@ -221,11 +221,11 @@ object WordDataHebrewWeatherL3 {
         WordEntity(
             id = 181920, setId = 1819, languagePair = "he-ru", rarity = "RARE",
             pos = "verb", semanticGroup = "weather_l3_processes",
-            original = "לְהַצִּיף", translation = "затоплять",
+            original = "לְהָצִיף", translation = "затоплять",
             definition = "לְכַסּוֹת שֶׁטַח בְּמַיִם רַבִּים — כְּשֶׁגֶּשֶׁם חָזָק מַעֲבִיר אֶת גְּדוֹת הַנַּחַל.",
             definitionNative = "Покрывать местность большим количеством воды — когда сильный дождь выходит из берегов.",
-            example = "מָטָר כָּבֵד הִצְלִיחַ לְהַצִּיף אֶת כְּבִישׁ הָעִיר תּוֹךְ שָׁעָה.",
-            exampleNative = "Сильный ливень сумел לְהַצִּיף городскую дорогу за час.",
+            example = "מָטָר כָּבֵד הִצְלִיחַ לְהָצִיף אֶת כְּבִישׁ הָעִיר תּוֹךְ שָׁעָה.",
+            exampleNative = "Сильный ливень сумел לְהָצִיף городскую дорогу за час.",
          fillInBlankExclusions = listOf(181916L, 181917L, 181918L, 181919L)),
 
         // ─── weather_l3_severity (5) ─────────────────────────────────────
@@ -250,11 +250,11 @@ object WordDataHebrewWeatherL3 {
         WordEntity(
             id = 181923, setId = 1819, languagePair = "he-ru", rarity = "RARE",
             pos = "adjective", semanticGroup = "weather_l3_severity",
-            original = "מְעִיק", translation = "гнетущий",
+            original = "מֵעִיק", translation = "гнетущий",
             definition = "כָּבֵד וְלוֹחֵץ בְּצוּרָה לֹא נְעִימָה — עַל מֶזֶג שֶׁמַּעֲצִיב וּמַעֲיֵף.",
             definitionNative = "Тяжёлый и давящий неприятным образом — о погоде, что навевает тоску и усталость.",
-            example = "חֹם מְעִיק שָׁכַן בָּעִיר כָּל אַחַר הַצָּהֳרַיִם.",
-            exampleNative = "מְעִיק жар лежал на городе весь послеполуденный час.",
+            example = "חֹם מֵעִיק שָׁכַן בָּעִיר כָּל אַחַר הַצָּהֳרַיִם.",
+            exampleNative = "מֵעִיק жар лежал на городе весь послеполуденный час.",
          fillInBlankExclusions = listOf(181911L, 181914L, 181915L, 181921L, 181922L, 181924L, 181925L)),
         WordEntity(
             id = 181924, setId = 1819, languagePair = "he-ru", rarity = "RARE",

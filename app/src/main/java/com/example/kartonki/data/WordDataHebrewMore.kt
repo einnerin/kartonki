@@ -337,11 +337,11 @@ object WordDataHebrewMore {
         WordEntity(
             id = 101010, setId = 1010, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "clothing",
-            original = "צַעִיף", translation = "шарф",
+            original = "צָעִיף", translation = "шарф",
             definition = "בַּד אָרֹךְ לְכִיסּוּי הַצַּוָּאר בַּחֹרֶף.",
             definitionNative = "Длинная ткань для обёртывания шеи зимой.",
-            example = "לָבַשְׁתִּי צַעִיף כִּי קַר.",
-            exampleNative = "Я намотал צַעִיף, потому что холодно.",
+            example = "לָבַשְׁתִּי צָעִיף כִּי קַר.",
+            exampleNative = "Я намотал צָעִיף, потому что холодно.",
          fillInBlankExclusions = listOf(101001L, 101002L, 101003L, 101006L, 101007L, 101009L, 101011L, 101012L, 101025L)),
         WordEntity(
             id = 101011, setId = 1010, languagePair = "he-ru", rarity = "COMMON",

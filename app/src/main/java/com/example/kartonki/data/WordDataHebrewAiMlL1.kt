@@ -239,11 +239,11 @@ object WordDataHebrewAiMlL1 {
         WordEntity(
             id = 178620, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aiml_basic_user_view",
-            original = "מַגְבָּלָה", translation = "ограничение",
+            original = "מִגְבָּלָה", translation = "ограничение",
             definition = "גְּבוּל שֶׁהַתּוֹכְנָה לֹא יְכוֹלָה אוֹ לֹא מֻרְשֵׁית לַעֲבֹר אוֹתוֹ.",
             definitionNative = "Граница, которую программа не может или не вправе перешагнуть.",
-            example = "יֵשׁ מַגְבָּלָה עַל אֹרֶךְ הַטֶּקְסְט שֶׁהָעוֹזֵר מְקַבֵּל בְּבַת אַחַת.",
-            exampleNative = "Есть מַגְבָּלָה на длину текста, которую ассистент берёт сразу.",
+            example = "יֵשׁ מִגְבָּלָה עַל אֹרֶךְ הַטֶּקְסְט שֶׁהָעוֹזֵר מְקַבֵּל בְּבַת אַחַת.",
+            exampleNative = "Есть מִגְבָּלָה на длину текста, которую ассистент берёт сразу.",
          fillInBlankExclusions = listOf(178616L, 178617L, 178618L, 178619L)),
 
         // ── aiml_basic_safety (5) — безопасность и приватность ──
@@ -286,11 +286,11 @@ object WordDataHebrewAiMlL1 {
         WordEntity(
             id = 178625, setId = 1786, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "aiml_basic_safety",
-            original = "פְּרָטִיוּת", translation = "приватность",
+            original = "פְּרָטִיּוּת", translation = "приватность",
             definition = "זְכוּת לִשְׁמֹר עַל סוֹדוֹת אִישִׁיִּים מִפְּנֵי חֶבְרוֹת וּמַעֲרָכוֹת זָרוֹת.",
             definitionNative = "Право скрыть личные тайны от чужих фирм и систем.",
-            example = "אֲנִי לֹא מַכְנִיס שֵׁמוֹת שֶׁל יְלָדִים לַצַּ'אט בִּגְלַל פְּרָטִיוּת.",
-            exampleNative = "Я не пишу имена детей в чат — из-за פְּרָטִיוּת.",
+            example = "אֲנִי לֹא מַכְנִיס שֵׁמוֹת שֶׁל יְלָדִים לַצַּ'אט בִּגְלַל פְּרָטִיּוּת.",
+            exampleNative = "Я не пишу имена детей в чат — из-за פְּרָטִיּוּת.",
          fillInBlankExclusions = listOf(178621L, 178622L, 178624L)),
     )
 }

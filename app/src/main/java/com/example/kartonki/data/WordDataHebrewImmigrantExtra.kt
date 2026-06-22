@@ -334,11 +334,11 @@ object WordDataHebrewImmigrantExtra {
         WordEntity(
             id = 103723, setId = 1037, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "nature",
-            original = "פֶּרֶח", translation = "цветок",
+            original = "פֶּרַח", translation = "цветок",
             definition = "חֵלֶק הַצֶּמַח הַמְּיוּעָד לְרִבִּיָּה, לְרוֹב יָפֶה וְרֵיחָנִי.",
             definitionNative = "Часть растения, предназначенная для размножения, обычно красивая и ароматная.",
             example = "בָּאָבִיב פּוֹרְחִים פִּרְחֵי הַכַּלָּנִית הָאֲדֻמִּים בְּכָל הָאָרֶץ.",
-            exampleNative = "Весной по всей стране цветут красные פֶּרֶח — каланиты.",
+            exampleNative = "Весной по всей стране цветут красные פֶּרַח — каланиты.",
          isFillInBlankSafe = false),
         WordEntity(
             id = 103724, setId = 1037, languagePair = "he-ru", rarity = "UNCOMMON",

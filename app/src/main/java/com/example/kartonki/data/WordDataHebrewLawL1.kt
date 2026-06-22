@@ -230,11 +230,11 @@ object WordDataHebrewLawL1 {
         WordEntity(
             id = 170321, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_status_basic",
-            original = "זְכֻיּוֹת", translation = "права (личные)",
+            original = "זְכִיּוֹת", translation = "права (личные)",
             definition = "הַדְּבָרִים שֶׁמַּגִּיעִים לְכָל אָדָם עַל פִּי חוֹק — חֻפְשַׁת דִּבּוּר, שִׁוְיוֹן, רְכוּשׁ.",
             definitionNative = "То, что положено каждому по закону — свобода слова, равенство, имущество.",
             example = "כָּל עוֹלֶה חַיָּב לְהַכִּיר אֶת הַזְּכֻיּוֹת שֶׁלּוֹ בָּאָרֶץ.",
-            exampleNative = "Каждый репатриант обязан знать свои זְכֻיּוֹת в стране.",
+            exampleNative = "Каждый репатриант обязан знать свои זְכִיּוֹת в стране.",
         ),
         WordEntity(
             id = 170322, setId = 1703, languagePair = "he-ru", rarity = "UNCOMMON",

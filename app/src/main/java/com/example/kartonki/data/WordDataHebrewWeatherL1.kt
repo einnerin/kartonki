@@ -171,11 +171,11 @@ object WordDataHebrewWeatherL1 {
         WordEntity(
             id = 181715, setId = 1817, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "weather_basic_temp",
-            original = "חָמְסִין", translation = "хамсин (сухой жаркий ветер)",
+            original = "חַמְסִין", translation = "хамсин (сухой жаркий ветер)",
             definition = "יָמִים שֶׁל אֲוִיר יָבֵשׁ וְלוֹהֵט שֶׁמַּגִּיעַ מֵהַמִּדְבָּר וּמְעִיף אָבָק.",
             definitionNative = "Дни жаркого сухого ветра из пустыни — тяжело дышать и кругом пыль.",
-            example = "בַּחָמְסִין סוֹגְרִים אֶת כָּל הַחַלּוֹנוֹת בַּבַּיִת.",
-            exampleNative = "Во время חָמְסִין все окна в квартире держат закрытыми.",
+            example = "בַּחַמְסִין סוֹגְרִים אֶת כָּל הַחַלּוֹנוֹת בַּבַּיִת.",
+            exampleNative = "Во время חַמְסִין все окна в квартире держат закрытыми.",
          fillInBlankExclusions = listOf(181712L, 181713L, 181714L)),
 
         // ─── weather_basic_adj (5) ───────────────────────────────────────
@@ -265,11 +265,11 @@ object WordDataHebrewWeatherL1 {
         WordEntity(
             id = 181725, setId = 1817, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "weather_basic_actions",
-            original = "לְהַמֵּס", translation = "растапливать (лёд, снег)",
+            original = "לְהָמֵס", translation = "растапливать (лёд, снег)",
             definition = "לְהָפֹךְ מוּצָק לְנוֹזֵל בְּעֶזְרַת חֹם — כְּמוֹ קֶרַח אוֹ שׁוֹקוֹלָד.",
             definitionNative = "Превращать твёрдое в жидкое с помощью тепла — например, лёд или шоколад.",
-            example = "הַשֶּׁמֶשׁ הִתְחִילָה לְהַמֵּס אֶת הַשֶּׁלֶג עַל הַגַּג.",
-            exampleNative = "Солнце начало לְהַמֵּס снег прямо на крыше.",
+            example = "הַשֶּׁמֶשׁ הִתְחִילָה לְהָמֵס אֶת הַשֶּׁלֶג עַל הַגַּג.",
+            exampleNative = "Солнце начало לְהָמֵס снег прямо на крыше.",
          fillInBlankExclusions = listOf(181721L, 181722L, 181723L, 181724L)),
     )
 }

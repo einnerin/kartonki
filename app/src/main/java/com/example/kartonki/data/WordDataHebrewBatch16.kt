@@ -286,7 +286,7 @@ object WordDataHebrewBatch16 {
         WordEntity(
             id = 107103, setId = 1071, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "religion_advanced",
-            original = "חָרֵדִי", translation = "харедим / ультраортодоксальный",
+            original = "חֲרֵדִי", translation = "харедим / ультраортодоксальный",
             definition = "יְהוּדִי שׁוֹמֵר מִצְוֹת בְּהִדּוּר וּמְבַדֵּל עַצְמוֹ מֵהַחֶבְרָה הַחִלּוֹנִית.",
             definitionNative = "Евреи, строго соблюдающие заповеди и отделяющие себя от светского общества.",
             example = "הַשְּׁכוּנוֹת הַחֲרֵדִיּוֹת בְּבְּנֵי בְרַק גְּדֵלוֹת בִּמְהִירוּת.",
@@ -476,11 +476,11 @@ object WordDataHebrewBatch16 {
         WordEntity(
             id = 107124, setId = 1071, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "religion_advanced",
-            original = "אֲפִיקוֹרֶס", translation = "эпикурей, вольнодумец (в иудаизме: еретик)",
+            original = "אַפִּיקוֹרֶס", translation = "эпикурей, вольнодумец (в иудаизме: еретик)",
             definition = "מִי שֶׁכּוֹפֵר בְּעִקָּרֵי הַדָּת הַיְּהוּדִית אוֹ מְזַלְזֵּל בְּחֲכָמִים.",
             definitionNative = "Тот, кто отрицает основы иудаизма или пренебрегает мудрецами.",
-            example = "בְּהֶקְשֵׁר הַיּוֹמִי, הַמִּלָּה אֲפִיקוֹרֶס פֵּירוּשָׁהּ חִלּוֹנִי מְפַקְפֵּק.",
-            exampleNative = "В повседневном контексте слово אֲפִיקוֹרֶס означает скептика-вольнодумца.",
+            example = "בְּהֶקְשֵׁר הַיּוֹמִי, הַמִּלָּה אַפִּיקוֹרֶס פֵּירוּשָׁהּ חִלּוֹנִי מְפַקְפֵּק.",
+            exampleNative = "В повседневном контексте слово אַפִּיקוֹרֶס означает скептика-вольнодумца.",
         ),
 
         WordEntity(
@@ -629,11 +629,11 @@ object WordDataHebrewBatch16 {
         WordEntity(
             id = 107216, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music",
-            original = "פּוֹפ", translation = "поп (музыкальный жанр)",
-            definition = "ז'ָאנְר מוּסִיקָה פּוֹפּוּלָרִית קָלָה וְנָגִישָׁה.",
+            original = "פּוֹפּ", translation = "поп (музыкальный жанр)",
+            definition = "ז'ָאנְר מוּסִיקָה פּוֹפּּוּלָרִית קָלָה וְנָגִישָׁה.",
             definitionNative = "Жанр лёгкой и доступной популярной музыки.",
-            example = "מוּסִיקַת פּוֹפ דּוֹמִינָנְטִית בְּרָדִיוֹ.",
-            exampleNative = "Музыка פּוֹפ доминирует на молодёжном радио.",
+            example = "מוּסִיקַת פּוֹפּ דּוֹמִינָנְטִית בְּרָדִיוֹ.",
+            exampleNative = "Музыка פּוֹפּ доминирует на молодёжном радио.",
          fillInBlankExclusions = listOf(107217L)),
 
         // RARE (B2),
@@ -676,11 +676,11 @@ object WordDataHebrewBatch16 {
         WordEntity(
             id = 107221, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "dance",
-            original = "מִחוֹל", translation = "танцевальное выступление, хореография",
+            original = "מָחוֹל", translation = "танцевальное выступление, хореография",
             definition = "תְּנוּעָה אָמָּנוּתִית לְפִי מוּסִיקָה, בְּדֶרֶךְ כְּלָל לִפְנֵי קָהָל.",
             definitionNative = "Художественное движение под музыку, как правило перед аудиторией.",
-            example = "הֵם הִצִּיגוּ מִחוֹל מָסׇרְתִּי בְּאֵצַע הָאוּלְפַּן.",
-            exampleNative = "Они показали традиционный מִחוֹל на студийном шоу.",
+            example = "הֵם הִצִּיגוּ מָחוֹל מָסׇרְתִּי בְּאֵצַע הָאוּלְפַּן.",
+            exampleNative = "Они показали традиционный מָחוֹל на студийном шоу.",
          fillInBlankExclusions = listOf(107222L)),
 
         WordEntity(
@@ -695,11 +695,11 @@ object WordDataHebrewBatch16 {
         WordEntity(
             id = 107223, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "music",
-            original = "חֻצּוֹצְרָה", translation = "труба (музыкальный инструмент)",
+            original = "חֲצוֹצְרָה", translation = "труба (музыкальный инструмент)",
             definition = "כְּלִי נְגִינָה נְשִׁיפָה מְתַכְּתִּי בַּעַל צְלִיל חַד וּמְבַהֵק.",
             definitionNative = "Металлический духовой инструмент с ярким и резким звуком.",
-            example = "הוּא מְנַגֵּן עַל חֻצּוֹצְרָה בְּתִזְמֹרֶת הָעִיר.",
-            exampleNative = "Он играет на חֻצּוֹצְרָה в городском оркестре.",
+            example = "הוּא מְנַגֵּן עַל חֲצוֹצְרָה בְּתִזְמֹרֶת הָעִיר.",
+            exampleNative = "Он играет на חֲצוֹצְרָה в городском оркестре.",
          fillInBlankExclusions = listOf(107203L, 107204L, 107205L, 107212L, 107213L, 107220L)),
         WordEntity(
             id = 107224, setId = 1072, languagePair = "he-ru", rarity = "UNCOMMON",

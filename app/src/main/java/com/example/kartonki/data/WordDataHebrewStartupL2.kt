@@ -93,11 +93,11 @@ object WordDataHebrewStartupL2 {
         WordEntity(
             id = 178903, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_market",
-            original = "מַתְחָרֶה", translation = "конкурент",
+            original = "מִתְחָרֶה", translation = "конкурент",
             definition = "חֶבְרָה אַחֶרֶת שֶׁמּוֹכֶרֶת מַשֶּׁהוּ דּוֹמֶה לְאוֹתָם לָקוֹחוֹת.",
             definitionNative = "Другая фирма, продающая что-то похожее тем же клиентам.",
             example = "הַמַּתְחָרֶה הָרָאשִׁי שֶׁלָּנוּ פָּתַח מִשְׂרָד בְּחֵיפָה לִפְנֵי שָׁבוּעַ.",
-            exampleNative = "Главный наш מַתְחָרֶה открыл офис в Хайфе неделю назад.",
+            exampleNative = "Главный наш מִתְחָרֶה открыл офис в Хайфе неделю назад.",
         ),
         WordEntity(
             id = 178904, setId = 1789, languagePair = "he-ru", rarity = "RARE",
@@ -158,11 +158,11 @@ object WordDataHebrewStartupL2 {
         WordEntity(
             id = 178910, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_customers_basic",
-            original = "מַשּׁוֹב", translation = "обратная связь",
+            original = "מָשׁוֹב", translation = "обратная связь",
             definition = "מָה שֶׁהָאָדָם אוֹמֵר אַחֲרֵי שֶׁנִּסָּה — מָה הָיָה טוֹב וּמָה הִפְרִיעַ.",
             definitionNative = "То, что человек говорит после того, как попробовал — что было хорошо и что мешало.",
-            example = "מַשּׁוֹב מֵחָמֵשׁ הַלָּקוֹחוֹת שִׁנָּה לָנוּ אֶת הַכִּוּוּן.",
-            exampleNative = "מַשּׁוֹב от пяти клиентов сменил нам направление работы.",
+            example = "מָשׁוֹב מֵחָמֵשׁ הַלָּקוֹחוֹת שִׁנָּה לָנוּ אֶת הַכִּוּוּן.",
+            exampleNative = "מָשׁוֹב от пяти клиентов сменил нам направление работы.",
          fillInBlankExclusions = listOf(178904L, 178906L, 178907L, 178908L, 178909L)),
 
         // ── startup_product_basic (5) — что и как называется в продукте ──
@@ -263,11 +263,11 @@ object WordDataHebrewStartupL2 {
         WordEntity(
             id = 178921, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "startup_lifecycle_basic",
-            original = "הַשְׁקָה", translation = "запуск (выход в свет)",
+            original = "הַשָּׁקָה", translation = "запуск (выход в свет)",
             definition = "הָרֶגַע שֶׁבּוֹ הַחֶבְרָה פּוֹתַחַת אֶת הַדֶּלֶת לַקָּהָל הָרָחָב לַשִּׁמּוּשׁ הָרִאשׁוֹן.",
             definitionNative = "Момент, когда фирма открывает дверь широкой публике для первого использования.",
-            example = "אַחֲרֵי שָׁנָה שֶׁל פִּתּוּחַ הִגַּעְנוּ סוֹף סוֹף לְיוֹם הַהַשְׁקָה.",
-            exampleNative = "После года разработки мы наконец дошли до дня הַשְׁקָה.",
+            example = "אַחֲרֵי שָׁנָה שֶׁל פִּתּוּחַ הִגַּעְנוּ סוֹף סוֹף לְיוֹם הַהַשָּׁקָה.",
+            exampleNative = "После года разработки мы наконец дошли до дня הַשָּׁקָה.",
          fillInBlankExclusions = listOf(178922L, 178923L, 178924L, 178925L)),
         WordEntity(
             id = 178922, setId = 1789, languagePair = "he-ru", rarity = "UNCOMMON",

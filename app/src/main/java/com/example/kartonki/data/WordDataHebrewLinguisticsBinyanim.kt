@@ -98,12 +98,12 @@ object WordDataHebrewLinguisticsBinyanim {
             pos = "noun", semanticGroup = "lang_morph_basics"),
 
         WordEntity(id = 191104, setId = 1911, languagePair = "he-ru", rarity = "RARE",
-            original = "מוּסְפִּית",
+            original = "מוּסָפִית",
             translation = "аффикс (общий термин)",
             definition = "מוֹרְפֵמָה צְמוּדָה שֶׁמִּתְחַבֶּרֶת לַשֹּׁרֶשׁ אוֹ לַמִּילָּה — תְּחִילִּית, תּוֹכִית אוֹ סִיוֹמֶת.",
             definitionNative = "Связанная морфема, что присоединяется к корню или слову — префикс, инфикс или суффикс.",
-            example = "כָּל מוּסְפִּית בַּמִּילָּה תּוֹרֶמֶת מַשְׁמָעוּת דִּקְדּוּקִית קוֹנְקְרֶטִית.",
-            exampleNative = "Каждый מוּסְפִּית в слове вносит конкретный грамматический смысл.",
+            example = "כָּל מוּסָפִית בַּמִּילָּה תּוֹרֶמֶת מַשְׁמָעוּת דִּקְדּוּקִית קוֹנְקְרֶטִית.",
+            exampleNative = "Каждый מוּסָפִית в слове вносит конкретный грамматический смысл.",
             pos = "noun", semanticGroup = "lang_morph_basics", fillInBlankExclusions = listOf(191101L, 191102L, 191103L, 191105L)),
 
         WordEntity(id = 191105, setId = 1911, languagePair = "he-ru", rarity = "EPIC",

@@ -118,11 +118,11 @@ object WordDataHebrewAiMlL3 {
         WordEntity(
             id = 175508, setId = 1755, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "aiml_data",
-            original = "תִּיוּג", translation = "разметка данных",
+            original = "תִּיּוּג", translation = "разметка данных",
             definition = "הַדְבָּקַת תְּשׁוּבָה נְכוֹנָה לְכָל דֻּגְמָה — עַל מָה רוֹאִים בִּתְמוּנָה אוֹ בַּטֶּקְסְט.",
             definitionNative = "Назначение правильного ответа каждому примеру — что на картинке или в тексте.",
-            example = "הַתִּיוּג שֶׁל מִילְיוֹן תְּמוּנוֹת רְפוּאִיּוֹת לָקַח לַצֶּוֶות חֲצִי שָׁנָה.",
-            exampleNative = "תִּיוּג миллиона медицинских снимков занял у команды полгода.",
+            example = "הַתִּיּוּג שֶׁל מִילְיוֹן תְּמוּנוֹת רְפוּאִיּוֹת לָקַח לַצֶּוֶות חֲצִי שָׁנָה.",
+            exampleNative = "תִּיּוּג миллиона медицинских снимков занял у команды полгода.",
          fillInBlankExclusions = listOf(175506L, 175507L, 175509L, 175510L)),
         WordEntity(
             id = 175509, setId = 1755, languagePair = "he-ru", rarity = "RARE",

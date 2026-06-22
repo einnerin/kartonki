@@ -643,11 +643,11 @@ object WordDataHebrewBatch8 {
         WordEntity(
             id = 104919, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "building_spaces",
-            original = "מִרְתֵּף", translation = "подвал",
+            original = "מַרְתֵּף", translation = "подвал",
             definition = "חֶלֶק שֶׁל הַבִּנְיָן הַנִּמְצָא מַתַּחַת לַקַּרְקַע.",
             definitionNative = "Часть здания, находящаяся под землёй.",
-            example = "שָׂמַרְנוּ אֶת הָאוֹפַנַּיִם בְּמִרְתֵּף הַבִּנְיָן.",
-            exampleNative = "Мы хранили велосипеды в מִרְתֵּף здания.",
+            example = "שָׂמַרְנוּ אֶת הָאוֹפַנַּיִם בְּמַרְתֵּף הַבִּנְיָן.",
+            exampleNative = "Мы хранили велосипеды в מַרְתֵּף здания.",
          fillInBlankExclusions = listOf(104907L, 104909L, 104913L, 104917L, 104921L, 104922L)),
         WordEntity(
             id = 104920, setId = 1049, languagePair = "he-ru", rarity = "UNCOMMON",

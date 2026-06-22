@@ -186,11 +186,11 @@ object WordDataHebrewEmotionsL2 {
         WordEntity(
             id = 182817, setId = 1828, languagePair = "he-ru", rarity = "RARE",
             pos = "adjective", semanticGroup = "emotions_l2_states",
-            original = "חַרְדָּתִי", translation = "тревожный (по характеру)",
+            original = "חָרַדְתִּי", translation = "тревожный (по характеру)",
             definition = "תֵּאוּר אָדָם שֶׁנּוֹטֶה לִדְאֹג מִכָּל דָּבָר וּלְצַפּוֹת מֵרֹאשׁ לִתְוֹצָאוֹת רָעוֹת.",
             definitionNative = "Описание человека, склонного беспокоиться о любой мелочи и заранее ждать худшего.",
-            example = "הוּא טִיפּוּס חַרְדָּתִי וְתָמִיד בּוֹדֵק שָׁלוֹשׁ פְּעָמִים שֶׁהַדֶּלֶת נְעוּלָה.",
-            exampleNative = "Он по природе חַרְדָּתִי и всегда трижды проверяет, заперта ли дверь.",
+            example = "הוּא טִיפּוּס חָרַדְתִּי וְתָמִיד בּוֹדֵק שָׁלוֹשׁ פְּעָמִים שֶׁהַדֶּלֶת נְעוּלָה.",
+            exampleNative = "Он по природе חָרַדְתִּי и всегда трижды проверяет, заперта ли дверь.",
         ),
         WordEntity(
             id = 182818, setId = 1828, languagePair = "he-ru", rarity = "UNCOMMON",

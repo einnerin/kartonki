@@ -60,11 +60,11 @@ object WordDataHebrewAdvanced {
         WordEntity(
             id = 101404, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
-            original = "שֶׁרְתַן", translation = "сервер",
+            original = "שָׁרְתָן", translation = "сервер",
             definition = "מחשב המספק שירותים למחשבים אחרים ברשת.",
             definitionNative = "Компьютер, предоставляющий сервисы другим компьютерам в сети.",
-            example = "שֶׁרְתַן מהיר יכול לטפל ברבבות בקשות בשנייה.",
-            exampleNative = "שֶׁרְתַן упал — сайт перестал работать.",
+            example = "שָׁרְתָן מהיר יכול לטפל ברבבות בקשות בשנייה.",
+            exampleNative = "שָׁרְתָן упал — сайт перестал работать.",
          fillInBlankExclusions = listOf(101408L, 101411L, 101413L, 101416L, 101420L)),
         WordEntity(
             id = 101405, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -294,11 +294,11 @@ object WordDataHebrewAdvanced {
             definitionNative = "Чувство огорчения из-за несбывшихся надежд или ожиданий.",
             exampleNative = "Я испытал большую אַכְזָבָה, когда игра была отменена.", fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101612L, 101614L, 101615L, 101618L, 101621L, 101622L)),
 
-        WordEntity(id = 101611, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "סְקָרָנוּת", translation = "любопытство", pos = "noun", semanticGroup = "character",
+        WordEntity(id = 101611, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON", original = "סַקְרָנוּת", translation = "любопытство", pos = "noun", semanticGroup = "character",
             definition = "רָצוֹן עַז לִלְמוֹד וּלְגַלּוֹת מֵידָע חָדָשׁ עַל דְּבַר מָה.",
-            example = "סְקָרָנוּת היא מנוע לכל למידה.",
+            example = "סַקְרָנוּת היא מנוע לכל למידה.",
             definitionNative = "Сильное желание узнать или понять что-либо.",
-            exampleNative = "סְקָרָנוּת — двигатель любого обучения.", fillInBlankExclusions = listOf(101606L, 101607L, 101613L, 101616L, 101617L, 101619L, 101620L, 101623L, 101624L)),
+            exampleNative = "סַקְרָנוּת — двигатель любого обучения.", fillInBlankExclusions = listOf(101606L, 101607L, 101613L, 101616L, 101617L, 101619L, 101620L, 101623L, 101624L)),
 
         // ──────────────────────────────────────────────────────
         // Set 117 — Абстрактные понятия (B2–C2),
@@ -415,11 +415,11 @@ object WordDataHebrewAdvanced {
         WordEntity(
             id = 101423, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "it",
-            original = "תַּקְלָה", translation = "сбой / неисправность",
+            original = "תַּקָּלָה", translation = "сбой / неисправность",
             definition = "בעיה טכנית במחשב, תוכנה או רשת הגורמת להפסקת הפעולה.",
             definitionNative = "Техническая проблема в компьютере, программе или сети, вызывающая прекращение работы.",
-            example = "הייתה תַּקְלָה בשרת ולכן האתר היה לא זמין.",
-            exampleNative = "В שרת произошла תַּקְלָה, и сайт был недоступен.",
+            example = "הייתה תַּקָּלָה בשרת ולכן האתר היה לא זמין.",
+            exampleNative = "В שרת произошла תַּקָּלָה, и сайт был недоступен.",
          fillInBlankExclusions = listOf(101407L)),
         WordEntity(
             id = 101424, setId = 1014, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -475,11 +475,11 @@ object WordDataHebrewAdvanced {
         WordEntity(
             id = 101614, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "emotion",
-            original = "גֵּאָוָה", translation = "гордость",
+            original = "גַּאֲוָה", translation = "гордость",
             definition = "רגש חיובי של הערכה עצמית על הישג או קשר.",
             definitionNative = "Положительное чувство самооценки за достижение или принадлежность.",
-            example = "גֵּאָוָה מילאה את ליבה כשבנה קיבל פרס.",
-            exampleNative = "גֵּאָוָה наполнила её сердце, когда сын получил награду.",
+            example = "גַּאֲוָה מילאה את ליבה כשבנה קיבל פרס.",
+            exampleNative = "גַּאֲוָה наполнила её сердце, когда сын получил награду.",
          fillInBlankExclusions = listOf(101601L, 101602L, 101603L, 101604L, 101605L, 101608L, 101609L, 101610L, 101612L, 101615L, 101618L, 101621L, 101622L, 101625L)),
         WordEntity(
             id = 101615, setId = 1016, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -815,11 +815,11 @@ object WordDataHebrewAdvanced {
             definitionNative = "Режим игры, позволяющий нескольким игрокам играть вместе.",
             exampleNative = "מֻלְטִיפְּלֵייֶר увеличивает удовольствие в несколько раз.", fillInBlankExclusions = listOf(101806L, 101817L, 101818L, 101824L)),
 
-        WordEntity(id = 101820, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "הֲגָדָרוֹת", translation = "настройки", pos = "noun", semanticGroup = "gaming",
+        WordEntity(id = 101820, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "הַגְדָּרוֹת", translation = "настройки", pos = "noun", semanticGroup = "gaming",
             definition = "תַּפְרִיט הָאֶפְשָׁרֻיּוֹת שֶׁבּוֹ הַשַּׂחְקָן מַתְאִים אֶת פָּרָמֶטְרֵי הַמִּשְׂחָק.",
-            example = "שיניתי אֶת הֲגָדָרוֹת הצליל בְּתַפְרִיט.",
+            example = "שיניתי אֶת הַגְדָּרוֹת הצליל בְּתַפְרִיט.",
             definitionNative = "Меню параметров, где игрок может настроить игровые параметры.",
-            exampleNative = "Я изменил הֲגָדָרוֹת звука в меню."),
+            exampleNative = "Я изменил הַגְדָּרוֹת звука в меню."),
 
         // ━━━ EPIC ━━━
         WordEntity(id = 101821, setId = 1018, languagePair = "he-ru", rarity = "UNCOMMON", original = "גִּלְדָּה", translation = "гильдия; клан", pos = "noun", semanticGroup = "gaming",

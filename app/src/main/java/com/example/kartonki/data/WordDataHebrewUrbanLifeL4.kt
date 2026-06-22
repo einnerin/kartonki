@@ -128,11 +128,11 @@ object WordDataHebrewUrbanLifeL4 {
         WordEntity(
             id = 184009, setId = 1840, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "urban_l4_legal_pro",
-            original = "עַרְעוּר", translation = "апелляция",
+            original = "עִרְעוּר", translation = "апелляция",
             definition = "פְּנִיָּה לְעֶרְכָּאָה גְּבוֹהָה יוֹתֵר לְבַקֵּשׁ שִׁנּוּי שֶׁל הַחְלָטָה שִׁפּוּטִית.",
             definitionNative = "Обращение в вышестоящую инстанцию с просьбой изменить судебное решение.",
-            example = "הוּא הִגִּישׁ עַרְעוּר עַל הַהַחְלָטָה לְבֵית הַמִּשְׁפָּט הַמְּחוֹזִי.",
-            exampleNative = "Он подал עַרְעוּר на это решение в окружной суд.",
+            example = "הוּא הִגִּישׁ עִרְעוּר עַל הַהַחְלָטָה לְבֵית הַמִּשְׁפָּט הַמְּחוֹזִי.",
+            exampleNative = "Он подал עִרְעוּר на это решение в окружной суд.",
         ),
         WordEntity(
             id = 184010, setId = 1840, languagePair = "he-ru", rarity = "RARE",

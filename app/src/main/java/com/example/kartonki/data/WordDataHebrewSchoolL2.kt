@@ -118,11 +118,11 @@ object WordDataHebrewSchoolL2 {
 
         WordEntity(
             id = 181308, setId = 1813, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַטְפֶלֶת",
+            original = "מְטַפֶּלֶת",
             translation = "няня",
             definition = "אִשָּׁה שֶׁשּׁוֹמֶרֶת עַל יְלָדִים קְטַנִּים וְדוֹאֶגֶת לָהֶם בַּגַּן אוֹ בַּבַּיִת.",
             definitionNative = "Женщина, которая сидит с детьми дома или забирает их из садика.",
-            example = "ה מַטְפֶלֶת אוספת את הילדים מהגן בארבע.",
+            example = "ה מְטַפֶּלֶת אוספת את הילדים מהגן בארבע.",
             exampleNative = "Няня забирает детей из сада в четыре часа.",
             pos = "noun",
             semanticGroup = "school_after_school", fillInBlankExclusions = listOf(181303L, 181306L, 181307L, 181309L, 181310L)),

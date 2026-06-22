@@ -255,11 +255,11 @@ object WordDataHebrewCityL1 {
         WordEntity(
             id = 170524, setId = 1705, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "city_outdoor_objects",
-            original = "מַזְרָקָה", translation = "фонтан",
+            original = "מִזְרָקָה", translation = "фонтан",
             definition = "מִתְקָן שֶׁבּוֹ מַיִם קוֹפְצִים לַאֲוִיר לְקִשּׁוּט הַכִּכָּר.",
             definitionNative = "Сооружение, где вода взлетает струями вверх — украшает площадь.",
             example = "יְלָדִים שִׂחֲקוּ לְיַד הַמַּזְרָקָה בַּכִּכָּר הַמֶּרְכָּזִית.",
-            exampleNative = "Дети играли возле מַזְרָקָה на центральной площади.",
+            exampleNative = "Дети играли возле מִזְרָקָה на центральной площади.",
         ),
     )
 }

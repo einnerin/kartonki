@@ -70,11 +70,11 @@ object WordDataHebrewBureauL1 {
         WordEntity(
             id = 180704, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_basic_docs",
-            original = "מְעַטָּפָה", translation = "конверт",
+            original = "מַעֲטָפָה", translation = "конверт",
             definition = "כִּיס נְיָר סָגוּר שֶׁבּוֹ שׁוֹלְחִים מִכְתָּב אוֹ מִסְמָכִים בַּדֹּאַר.",
             definitionNative = "Бумажный карман с клапаном, в котором отправляют письмо или бумаги по почте.",
             example = "שַׂמְתִּי אֶת הַטֹּפֶס בְּתוֹךְ הַמְּעַטָּפָה.",
-            exampleNative = "Я положил бланк внутрь מְעַטָּפָה.",
+            exampleNative = "Я положил бланк внутрь מַעֲטָפָה.",
         ),
         WordEntity(
             id = 180705, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -99,11 +99,11 @@ object WordDataHebrewBureauL1 {
         WordEntity(
             id = 180707, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_basic_office",
-            original = "דַּלְפֵּק", translation = "стойка приёма",
+            original = "דֶּלְפֵּק", translation = "стойка приёма",
             definition = "שֻׁלְחָן גָּבוֹהַּ בְּכְנִיסַת הַמִּשְׂרָד שֶׁאֶצְלוֹ עוֹמֵד הַפָּקִיד.",
             definitionNative = "Высокий стол у входа в учреждение, за которым работает служащий.",
-            example = "נִגַּשְׁתִּי לַדַּלְפֵּק לְמַסֹּר אֶת הַמְּעַטָּפָה.",
-            exampleNative = "Я подошёл к דַּלְפֵּק, чтобы передать конверт.",
+            example = "נִגַּשְׁתִּי לַדֶּלְפֵּק לְמַסֹּר אֶת הַמְּעַטָּפָה.",
+            exampleNative = "Я подошёл к דֶּלְפֵּק, чтобы передать конверт.",
          fillInBlankExclusions = listOf(180706L, 180708L, 180709L, 180710L)),
         WordEntity(
             id = 180708, setId = 1807, languagePair = "he-ru", rarity = "UNCOMMON",

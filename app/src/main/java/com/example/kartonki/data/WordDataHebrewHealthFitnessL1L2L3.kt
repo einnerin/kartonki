@@ -87,11 +87,11 @@ object WordDataHebrewHealthFitnessL1L2L3 {
         WordEntity(
             id = 172704, setId = 1727, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "wellness_lifestyle",
-            original = "רַעֲנָנוּת", translation = "бодрость; свежесть",
+            original = "רַעֲנַנּוּת", translation = "бодрость; свежесть",
             definition = "תְּחוּשַׁת כֹּחַ וְעֵרוּת אַחֲרֵי מְנוּחָה אוֹ מִקְלַחַת קָרָה.",
             definitionNative = "Ощущение энергии и ясности после отдыха или прохладного душа.",
-            example = "מִקְלַחַת בַּבֹּקֶר נוֹתֶנֶת לִי רַעֲנָנוּת לְכָל הַיּוֹם.",
-            exampleNative = "Утренний душ дарит мне רַעֲנָנוּת на весь день.",
+            example = "מִקְלַחַת בַּבֹּקֶר נוֹתֶנֶת לִי רַעֲנַנּוּת לְכָל הַיּוֹם.",
+            exampleNative = "Утренний душ дарит мне רַעֲנַנּוּת на весь день.",
          fillInBlankExclusions = listOf(172702L, 172703L, 172705L)),
         WordEntity(
             id = 172705, setId = 1727, languagePair = "he-ru", rarity = "COMMON",

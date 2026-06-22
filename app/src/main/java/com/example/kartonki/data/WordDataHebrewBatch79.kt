@@ -97,7 +97,7 @@ object WordDataHebrewBatch79 {
         WordEntity(id = 149810, setId = 1498, languagePair = "he-ru", rarity = "COMMON",
             original = "חוֹזֶה מְכִירָה", translation = "договор купли-продажи"),
         WordEntity(id = 149811, setId = 1498, languagePair = "he-ru", rarity = "COMMON",
-            original = "נוֹטָרִיוֹן", translation = "нотариус"),
+            original = "נוֹטַרְיוֹן", translation = "нотариус"),
         WordEntity(id = 149812, setId = 1498, languagePair = "he-ru", rarity = "COMMON",
             original = "רִשּׁוּם בְּטָאבּוּ", translation = "регистрация в земельном кадастре (табу)"),
         WordEntity(id = 149813, setId = 1498, languagePair = "he-ru", rarity = "COMMON",

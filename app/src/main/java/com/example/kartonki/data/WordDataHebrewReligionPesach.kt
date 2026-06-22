@@ -145,12 +145,12 @@ object WordDataHebrewReligionPesach {
             pos = "phrase", semanticGroup = "religion_pesach_seder_order", fillInBlankExclusions = listOf(190605L, 190606L, 190607L)),
 
         WordEntity(id = 190609, setId = 1906, languagePair = "he-ru", rarity = "EPIC",
-            original = "הַסֵּבָּה",
+            original = "הֲסָבָה",
             translation = "возлежание за столом",
             definition = "מִנְהָג לִשְׁעוֹן עַל הַצַּד הַשְּׂמָאלִי בִּזְמַן שְׁתִיָּה וַאֲכִילָה, כְּסִימָן שֶׁל בְּנֵי חוֹרִין.",
             definitionNative = "Обычай облокачиваться на левый бок во время питья и еды — как знак свободного человека.",
-            example = "הוּא שָׁתָה אֶת הַכּוֹס בְּהַסֵּבָּה כְּמוֹ הָאַחֲרוֹנִים.",
-            exampleNative = "Он выпил бокал в הַסֵּבָּה, как остальные.",
+            example = "הוּא שָׁתָה אֶת הַכּוֹס בְּהֲסָבָה כְּמוֹ הָאַחֲרוֹנִים.",
+            exampleNative = "Он выпил бокал в הֲסָבָה, как остальные.",
             pos = "noun", semanticGroup = "religion_pesach_seder_order"),
 
         // ── Group: religion_pesach_foods (5 words) ────────────────────────────

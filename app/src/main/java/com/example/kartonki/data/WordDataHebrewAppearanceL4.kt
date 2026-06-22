@@ -146,11 +146,11 @@ object WordDataHebrewAppearanceL4 {
         WordEntity(
             id = 182505, setId = 1825, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "appearance_anatomy_pro",
-            original = "נְצָב", translation = "связка",
+            original = "נִצָּב", translation = "связка",
             definition = "סִיב חָזָק שֶׁמְּחַבֵּר עֶצֶם לָעֶצֶם וְשׁוֹמֵר עַל הַמִּפְרָק יַצִּיב.",
             definitionNative = "Прочный тяж, соединяющий кость с костью и удерживающий сустав.",
-            example = "הַשַּׂחְקָן נִקְרַע נְצָב צוֹלֵב וְעוֹבֵר נִתּוּחַ בַּשָּׁבוּעַ הַבָּא.",
-            exampleNative = "Игрок порвал крестообразную נְצָב и идёт на операцию на следующей неделе.",
+            example = "הַשַּׂחְקָן נִקְרַע נִצָּב צוֹלֵב וְעוֹבֵר נִתּוּחַ בַּשָּׁבוּעַ הַבָּא.",
+            exampleNative = "Игрок порвал крестообразную נִצָּב и идёт на операцию на следующей неделе.",
          fillInBlankExclusions = listOf(182501L, 182502L, 182503L)),
 
         // ── appearance_face_advanced (5) ──────────────────────────────────

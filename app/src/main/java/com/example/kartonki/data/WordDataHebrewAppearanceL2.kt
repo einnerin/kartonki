@@ -61,11 +61,11 @@ object WordDataHebrewAppearanceL2 {
         WordEntity(
             id = 182303, setId = 1823, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "appearance_hairstyles",
-            original = "בַּלּוֹרִית", translation = "чуб, хохол волос",
+            original = "בְּלוֹרִית", translation = "чуб, хохол волос",
             definition = "צְרוֹר שֵׂעָר עֶלְיוֹן עַל הַמֶּצַח שֶׁבּוֹלֵט מֵרֹאשׁ הַתִּסְפֹּרֶת.",
             definitionNative = "Прядь волос на самой макушке надо лбом — выделяется в стрижке.",
-            example = "הַיֶּלֶד הִשְׁאִיר בַּלּוֹרִית אֲרֻכָּה וְגִלַּח אֶת הַצְּדָדִים.",
-            exampleNative = "Мальчик отрастил длинную בַּלּוֹרִית, а бока обрил.",
+            example = "הַיֶּלֶד הִשְׁאִיר בְּלוֹרִית אֲרֻכָּה וְגִלַּח אֶת הַצְּדָדִים.",
+            exampleNative = "Мальчик отрастил длинную בְּלוֹרִית, а бока обрил.",
          fillInBlankExclusions = listOf(182301L, 182302L, 182304L, 182305L)),
         WordEntity(
             id = 182304, setId = 1823, languagePair = "he-ru", rarity = "RARE",
@@ -79,11 +79,11 @@ object WordDataHebrewAppearanceL2 {
         WordEntity(
             id = 182305, setId = 1823, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "appearance_hairstyles",
-            original = "קַרַחַת", translation = "лысина, плешь",
+            original = "קָרַחַת", translation = "лысина, плешь",
             definition = "אֵזוֹר בָּרֹאשׁ שֶׁבּוֹ אֵין שֵׂעָר — בְּדֶרֶךְ כְּלָל אֵצֶל גְּבָרִים מְבֻגָּרִים.",
             definitionNative = "Участок на голове без волос — обычно у пожилых мужчин.",
             example = "סַבָּא מַחְבִּיא אֶת הַקַּרַחַת מִתַּחַת לְכוֹבַע מַצְחִיָּה.",
-            exampleNative = "Дедушка прячет קַרַחַת под бейсболкой.",
+            exampleNative = "Дедушка прячет קָרַחַת под бейсболкой.",
         ),
 
         // ─── appearance_expressions (5) ───────────────────────────────────

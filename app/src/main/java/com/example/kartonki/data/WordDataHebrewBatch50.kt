@@ -616,11 +616,11 @@ object WordDataHebrewBatch50 {
                 WordEntity(
             id = 128217, setId = 1282, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "religion_texts",
-            original = "מְסֶכֶת", translation = "трактат Талмуда",
+            original = "מַסֶּכֶת", translation = "трактат Талмуда",
             definition = "יְחִידַת לִמּוּד גְּדוֹלָה בַּמִּשְׁנָה אוֹ בַּתַּלְמוּד הָעוֹסֶקֶת בְּנוֹשֵׂא אֶחָד.",
             definitionNative = "Большая учебная единица в Мишне или Талмуде, посвящённая одной теме.",
-            example = "הוּא סִיֵּם לִלְמֹד אֶת הַמְסֶכֶת בְּטֶקֶס סִיּוּם חַגִּיגִי.",
-            exampleNative = "Он завершил изучение מְסֶכֶת на торжественной церемонии сиюм.", fillInBlankExclusions = listOf(128206L, 128209L, 128218L, 128220L, 128221L, 128222L)),
+            example = "הוּא סִיֵּם לִלְמֹד אֶת הַמַסֶּכֶת בְּטֶקֶס סִיּוּם חַגִּיגִי.",
+            exampleNative = "Он завершил изучение מַסֶּכֶת на торжественной церемонии сиюм.", fillInBlankExclusions = listOf(128206L, 128209L, 128218L, 128220L, 128221L, 128222L)),
                 WordEntity(
             id = 128218, setId = 1282, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "religion_texts",
@@ -1156,11 +1156,11 @@ object WordDataHebrewBatch50 {
         WordEntity(
             id = 128502, setId = 1285, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "sport_play_events",
-            original = "הַדְּחָקָה", translation = "подкат / захват (в спорте)",
+            original = "הַדְחָקָה", translation = "подкат / захват (в спорте)",
             definition = "פְּעֻלָּה הֲגַנָּתִית שֶׁל הַפְרָדַת הַיָּרִיב מִן הַכַּדּוּר בְּגוּף וּבְרַגְלַיִם.",
             definitionNative = "Защитное движение, отделяющее соперника от мяча корпусом и ногами.",
-            example = "הַמְּגִנֵּן עָצַר אֶת הַחָלוּץ עִם הַדְּחָקָה נְקִיָּה.",
-            exampleNative = "Защитник остановил нападающего чистой הַדְּחָקָה.", fillInBlankExclusions = listOf(128501L, 128504L, 128507L, 128513L)),
+            example = "הַמְּגִנֵּן עָצַר אֶת הַחָלוּץ עִם הַדְחָקָה נְקִיָּה.",
+            exampleNative = "Защитник остановил нападающего чистой הַדְחָקָה.", fillInBlankExclusions = listOf(128501L, 128504L, 128507L, 128513L)),
 
         WordEntity(
             id = 128503, setId = 1285, languagePair = "he-ru", rarity = "RARE",
@@ -1174,11 +1174,11 @@ object WordDataHebrewBatch50 {
         WordEntity(
             id = 128504, setId = 1285, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "sport_play_events",
-            original = "אַלּוּפוּת", translation = "чемпионство / чемпионат",
+            original = "אַלּוּפוֹת", translation = "чемпионство / чемпионат",
             definition = "תַּחֲרוּת עֶלְיוֹנָה הַקּוֹבַעַת אֶת הַטּוֹבָה בְּיוֹתֵר בָּעוֹנָה.",
             definitionNative = "Высший турнир, определяющий лучшую команду или спортсмена сезона.",
-            example = "הַקְּבוּצָה זָכְתָה בְּאַלּוּפוּת אַחֲרֵי עֶשְׂרִים שָׁנָה.",
-            exampleNative = "Команда завоевала אַלּוּפוּת через двадцать лет.", fillInBlankExclusions = listOf(128501L, 128502L, 128507L, 128513L)),
+            example = "הַקְּבוּצָה זָכְתָה בְּאַלּוּפוֹת אַחֲרֵי עֶשְׂרִים שָׁנָה.",
+            exampleNative = "Команда завоевала אַלּוּפוֹת через двадцать лет.", fillInBlankExclusions = listOf(128501L, 128502L, 128507L, 128513L)),
 
         WordEntity(
             id = 128505, setId = 1285, languagePair = "he-ru", rarity = "RARE",
@@ -1201,11 +1201,11 @@ object WordDataHebrewBatch50 {
         WordEntity(
             id = 128507, setId = 1285, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "sport_play_events",
-            original = "מִסְרָן", translation = "пас / передача мяча",
+            original = "מַסְרָן", translation = "пас / передача мяча",
             definition = "הַעֲבָרָה מְדֻיֶּקֶת שֶׁל הַכַּדּוּר מִשַּׂחְקָן אֶחָד לְשֵׁנִי.",
             definitionNative = "Точная отправка мяча от одного игрока партнёру по команде.",
-            example = "הַקַּשָּׁר מָסַר מִסְרָן מְדֻיָּק לִכְנֵף הַשְּׂמֹאלִי.",
-            exampleNative = "Полузащитник отдал точный מִסְרָן на левый фланг.", fillInBlankExclusions = listOf(128501L, 128502L, 128504L, 128513L)),
+            example = "הַקַּשָּׁר מָסַר מַסְרָן מְדֻיָּק לִכְנֵף הַשְּׂמֹאלִי.",
+            exampleNative = "Полузащитник отдал точный מַסְרָן на левый фланг.", fillInBlankExclusions = listOf(128501L, 128502L, 128504L, 128513L)),
 
         WordEntity(
             id = 128508, setId = 1285, languagePair = "he-ru", rarity = "RARE",
@@ -1338,11 +1338,11 @@ object WordDataHebrewBatch50 {
         WordEntity(
             id = 128524, setId = 1285, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "sport_concepts",
-            original = "תַּמְרוּץ", translation = "стимул / мотивация (спортивная)",
+            original = "תִּמְרוּץ", translation = "стимул / мотивация (спортивная)",
             definition = "דַּחַף פְּנִימִי הַגּוֹרֵם לַסַּפּוֹרְטַאי לְהִתְאַמֵּץ וְלִשְׁאוֹף לְהַצְלָחָה.",
             definitionNative = "Внутренний толчок, заставляющий спортсмена выкладываться и стремиться к успеху.",
-            example = "הַמְּאַמֵּן יוֹדֵעַ לִתֵּן תַּמְרוּץ נָכוֹן לִפְנֵי כָּל מִשְׂחָק.",
-            exampleNative = "Тренер умеет дать верный תַּמְרוּץ перед каждой игрой.", fillInBlankExclusions = listOf(128516L, 128517L, 128521L)),
+            example = "הַמְּאַמֵּן יוֹדֵעַ לִתֵּן תִּמְרוּץ נָכוֹן לִפְנֵי כָּל מִשְׂחָק.",
+            exampleNative = "Тренер умеет дать верный תִּמְרוּץ перед каждой игрой.", fillInBlankExclusions = listOf(128516L, 128517L, 128521L)),
         WordEntity(
             id = 128525, setId = 1285, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "sport_disciplines",

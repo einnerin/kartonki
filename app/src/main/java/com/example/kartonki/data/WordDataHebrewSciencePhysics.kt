@@ -167,12 +167,12 @@ object WordDataHebrewSciencePhysics {
             pos = "noun", semanticGroup = "science_physics_electricity", fillInBlankExclusions = listOf(189711L, 189713L, 189714L, 189715L)),
 
         WordEntity(id = 189713, setId = 1897, languagePair = "he-ru", rarity = "RARE",
-            original = "מַגְנֵטִיוּת",
+            original = "מַגְנֵטִיּוּת",
             translation = "магнетизм",
             definition = "הַמְּשִׁיכָה אוֹ הַדְּחִיָּה שֶׁמַּפִּיקִים חֳמָרִים מְסֻיָּמִים וּמִטְעָנִים נָעִים עַל בַּרְזֶל, נִיקֶל וּזֶה עַל זֶה.",
             definitionNative = "Притяжение или отталкивание, которое некоторые материалы и движущиеся заряды создают на железе, никеле и друг на друге.",
-            example = "כּוֹנְנֵי דִּיסְק שׁוֹמְרִים נְתוּנִים בְּאֵזוֹרֵי מַגְנֵטִיוּת זְעִירִים עַל פְּלָטָה.",
-            exampleNative = "Жёсткие диски хранят данные в крошечных участках מַגְנֵטִיוּת на пластине.",
+            example = "כּוֹנְנֵי דִּיסְק שׁוֹמְרִים נְתוּנִים בְּאֵזוֹרֵי מַגְנֵטִיּוּת זְעִירִים עַל פְּלָטָה.",
+            exampleNative = "Жёсткие диски хранят данные в крошечных участках מַגְנֵטִיּוּת на пластине.",
             pos = "noun", semanticGroup = "science_physics_electricity", fillInBlankExclusions = listOf(189711L, 189712L, 189714L, 189715L)),
 
         WordEntity(id = 189714, setId = 1897, languagePair = "he-ru", rarity = "UNCOMMON",

@@ -119,19 +119,19 @@ object WordDataHebrewBatch15 {
         WordEntity(
             id = 106711, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_basics",
-            original = "מַפְקֵד", translation = "командир",
+            original = "מְפַקֵּד", translation = "командир",
             definition = "קָצִין אוֹ חַיָּל בְּדַרְגַּת פִּקּוּד הָאַחְרַאי לִיחִידָה אוֹ לִמְשִׂימָה.",
             definitionNative = "Офицер или военный командного звания, ответственный за подразделение или задачу.",
             example = "הַמַּפְקֵד נָתַן הוֹרָאוֹת לַחַיָּלִים לִפְנֵי הַמִּבְצָּע.",
-            exampleNative = "מַפְקֵד дал солдатам инструктаж перед операцией."),
+            exampleNative = "מְפַקֵּד дал солдатам инструктаж перед операцией."),
         WordEntity(
             id = 106712, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "army_basics",
-            original = "שַׁמְרָה", translation = "дежурство; пост охраны",
+            original = "שָׁמְרָה", translation = "дежурство; пост охраны",
             definition = "תַּפְקִיד שְׁמִירָה שֶׁנֶּאֱסֶף לְחַיָּל לְהַגָּנָה עַל אֲתַר אוֹ אֲנָשִׁים.",
             definitionNative = "Охранная задача, назначаемая солдату для защиты объекта или людей.",
-            example = "הַחַיָּל בִּלָּה אֶת הַלַּיְלָה בְּשַׁמְרָה בִּכְנִיסָה לַבָּסִיס.",
-            exampleNative = "Солдат провёл ночь на שַׁמְרָה у входа на базу.",
+            example = "הַחַיָּל בִּלָּה אֶת הַלַּיְלָה בְּשָׁמְרָה בִּכְנִיסָה לַבָּסִיס.",
+            exampleNative = "Солдат провёл ночь на שָׁמְרָה у входа на базу.",
          fillInBlankExclusions = listOf(106717L, 106725L)),
         WordEntity(
             id = 106713, setId = 1067, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -622,11 +622,11 @@ object WordDataHebrewBatch15 {
         WordEntity(
             id = 106916, setId = 1069, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "politics",
-            original = "מֶמְשַׁל", translation = "управление; власть; режим",
+            original = "מִמְשָׁל", translation = "управление; власть; режим",
             definition = "אֹפֶן הַנִּיהוּל הַשִּׁלְטוֹנִי וּמַעֲרֶכֶת הַמּוֹסָדוֹת שֶׁלּוֹ.",
             definitionNative = "Способ государственного управления и система его институтов.",
-            example = "מֶמְשַׁל דֵּמוֹקְרָטִי תּוֹמֵךְ בִּזְכוּיּוֹת הָאָדָם.",
-            exampleNative = "Демократический מֶמְשַׁל поддерживает права человека.",
+            example = "מִמְשָׁל דֵּמוֹקְרָטִי תּוֹמֵךְ בִּזְכוּיּוֹת הָאָדָם.",
+            exampleNative = "Демократический מִמְשָׁל поддерживает права человека.",
         ),
 
         WordEntity(

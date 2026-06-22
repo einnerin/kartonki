@@ -264,11 +264,11 @@ object WordDataHebrewWorkV2 {
         WordEntity(
             id = 164023, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "office_profession",
-            original = "מַתְכַּנְתֵּת", translation = "программистка",
+            original = "מְתַכְנֶתֶת", translation = "программистка",
             definition = "אִשָּׁה שֶׁכּוֹתֶבֶת קוֹד עֲבוּר מַחְשְׁבִים וְאַפְלִיקַצְיוֹת.",
             definitionNative = "Женщина, пишущая код для компьютеров и приложений.",
             example = "הַמַּתְכַּנְתֵּת סִיְּמָה פִּיתּוּחַ פִיצ'וֹר חָדָשׁ.",
-            exampleNative = "מַתְכַּנְתֵּת закончила разработку новой функции.",
+            exampleNative = "מְתַכְנֶתֶת закончила разработку новой функции.",
         ),
         WordEntity(
             id = 164024, setId = 1640, languagePair = "he-ru", rarity = "COMMON",
@@ -1040,11 +1040,11 @@ object WordDataHebrewWorkV2 {
         WordEntity(
             id = 164406, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "financial_reward",
-            original = "אוֹפְצִיּוֹת", translation = "опционы на акции",
+            original = "אוֹפְּצִיּוֹת", translation = "опционы на акции",
             definition = "זְכוּת לִקְנוֹת מְנָיוֹת שֶׁל הַחֶבְרָה בְּמָחִיר נָמוּךְ מֵהַשּׁוּק.",
             definitionNative = "Право купить акции компании по цене ниже рыночной.",
-            example = "קִבַּלְתִּי אוֹפְצִיּוֹת בַּשָּׁנָה הָרִאשׁוֹנָה שֶׁלִּי בַּסְטַרְטְאַפ.",
-            exampleNative = "В первый год в стартапе я получил אוֹפְצִיּוֹת.",
+            example = "קִבַּלְתִּי אוֹפְּצִיּוֹת בַּשָּׁנָה הָרִאשׁוֹנָה שֶׁלִּי בַּסְטַרְטְאַפ.",
+            exampleNative = "В первый год в стартапе я получил אוֹפְּצִיּוֹת.",
          fillInBlankExclusions = listOf(164401L, 164405L, 164407L)),
         WordEntity(
             id = 164407, setId = 1644, languagePair = "he-ru", rarity = "RARE",

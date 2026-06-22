@@ -159,11 +159,11 @@ object WordDataHebrewBureauL2 {
         WordEntity(
             id = 180813, setId = 1808, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "bureau_permits",
-            original = "זְכָאוּת", translation = "право на льготу",
+            original = "זַכָּאוּת", translation = "право на льготу",
             definition = "הַתְּנַאי שֶׁבּוֹ אָדָם רַשַּׁאי לְקַבֵּל הֲטָבָה, הֲנָחָה אוֹ שֵׁרוּת מֵהַמְּדִינָה.",
             definitionNative = "Условие, при котором человек вправе получить льготу, скидку или услугу от государства.",
             example = "הַזְּכָאוּת לַסַּל קְלִיטָה תַּקֵּפָה בְּשָׁנָה הָרִאשׁוֹנָה.",
-            exampleNative = "זְכָאוּת на корзину абсорбции действует в первый год.",
+            exampleNative = "זַכָּאוּת на корзину абсорбции действует в первый год.",
         ),
         WordEntity(
             id = 180814, setId = 1808, languagePair = "he-ru", rarity = "RARE",

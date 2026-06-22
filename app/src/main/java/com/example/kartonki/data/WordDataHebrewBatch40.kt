@@ -26,11 +26,11 @@ object WordDataHebrewBatch40 {
         WordEntity(
             id = 120901, setId = 1209, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "psych_reasoning",
-            original = "הֶסְקָה", translation = "вывод / умозаключение",
+            original = "הַסָּקָה", translation = "вывод / умозаключение",
             definition = "מַסְקָנָה הִגָּיוֹנִית מִתּוֹךְ נְתוּנִים אוֹ עוּבְדוֹת קַיָּמוֹת.",
             definitionNative = "Логический итог рассуждения по имеющимся данным или фактам.",
-            example = "הוּא הִגִּיעַ לְהֶסְקָה שֶׁהָאֲחָיוֹת לֹא הִקְשִׁיבוּ.",
-            exampleNative = "Он пришёл к הֶסְקָה, что сёстры его не слушали.",
+            example = "הוּא הִגִּיעַ לְהַסָּקָה שֶׁהָאֲחָיוֹת לֹא הִקְשִׁיבוּ.",
+            exampleNative = "Он пришёл к הַסָּקָה, что сёстры его не слушали.",
          fillInBlankExclusions = listOf(120906L, 120907L, 120910L)),
         WordEntity(
             id = 120902, setId = 1209, languagePair = "he-ru", rarity = "RARE",
@@ -233,11 +233,11 @@ object WordDataHebrewBatch40 {
         WordEntity(
             id = 120924, setId = 1209, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "psych_traits",
-            original = "כַּפְיָתִיּוּת", translation = "компульсивность",
+            original = "כְּפִיָּתִיּוֹת", translation = "компульсивность",
             definition = "נְטִיָּה לַחֲזֹר עַל פְּעֻלּוֹת בְּלִי יְכֹלֶת לְהַפְסִיק אוֹתָן.",
             definitionNative = "Склонность повторять одни и те же действия, не умея остановиться.",
-            example = "כַּפְיָתִיּוּת שֶׁל שְׁטִיפַת יָדַיִם תְּכוּפָה מַפְרִיעָה לוֹ בָּעֲבוֹדָה.",
-            exampleNative = "כַּפְיָתִיּוּת с частым мытьём рук мешает ему на работе.",
+            example = "כְּפִיָּתִיּוֹת שֶׁל שְׁטִיפַת יָדַיִם תְּכוּפָה מַפְרִיעָה לוֹ בָּעֲבוֹדָה.",
+            exampleNative = "כְּפִיָּתִיּוֹת с частым мытьём рук мешает ему на работе.",
          fillInBlankExclusions = listOf(120914L, 120917L, 120921L)),
         WordEntity(
             id = 120925, setId = 1209, languagePair = "he-ru", rarity = "RARE",

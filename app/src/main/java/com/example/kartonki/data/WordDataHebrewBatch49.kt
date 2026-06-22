@@ -222,13 +222,13 @@ object WordDataHebrewBatch49 {
             exampleNative = "Зимой я ношу чёрный גֻּלְפֶּן под пиджаком."
         , fillInBlankExclusions = listOf(127203L, 127204L, 127205L, 127206L, 127218L, 127225L)),
         WordEntity(id = 127218, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "שִׂפְשָׁף",
+            original = "שִׁפְשֵׁף",
             translation = "спортивные штаны / джоггеры",
             pos = "noun", semanticGroup = "clothing_styles",
             definition = "מִכְנָסַיִם רְחָבִים וְנוֹחִים מֵעוּגָה לְאִימוּנִים אוֹ לַבַּיִת.",
             definitionNative = "Свободные удобные брюки из трикотажа для тренировок или дома.",
-            example = "הוּא רָץ בַּפַּארְק עִם שִׂפְשָׁף אָפוֹר.",
-            exampleNative = "Он бегает в парке в сером שִׂפְשָׁף."
+            example = "הוּא רָץ בַּפַּארְק עִם שִׁפְשֵׁף אָפוֹר.",
+            exampleNative = "Он бегает в парке в сером שִׁפְשֵׁף."
         , fillInBlankExclusions = listOf(127203L, 127204L, 127205L, 127206L, 127217L, 127225L)),
         WordEntity(id = 127219, setId = 1272, languagePair = "he-ru", rarity = "RARE",
             original = "פְּלִיס",
@@ -276,13 +276,13 @@ object WordDataHebrewBatch49 {
             exampleNative = "Магазин продаёт טֶקְסְטִיל для дома и одежды."
         , fillInBlankExclusions = listOf(127201L, 127202L, 127207L, 127208L, 127212L, 127219L, 127221L)),
         WordEntity(id = 127224, setId = 1272, languagePair = "he-ru", rarity = "RARE",
-            original = "בַּטְנָה",
+            original = "בִּטְנָהּ",
             translation = "подкладка",
             pos = "noun", semanticGroup = "clothing_construction",
             definition = "שִׁכְבָה פְּנִימִית בְּתוֹךְ מְעִיל אוֹ ז׳ָקֶט שֶׁמַּחְלִיקָה אֶת הַלְּבִישָׁה.",
             definitionNative = "Внутренний слой пальто или жакета, по которому одежда легко надевается.",
-            example = "הַבַּטְנָה שֶׁל הַמְּעִיל קְרוּעָה וְצָרִיךְ לְתַקֵּן.",
-            exampleNative = "בַּטְנָה пальто порвалась и нуждается в починке."
+            example = "הַבִּטְנָהּ שֶׁל הַמְּעִיל קְרוּעָה וְצָרִיךְ לְתַקֵּן.",
+            exampleNative = "בִּטְנָהּ пальто порвалась и нуждается в починке."
         , fillInBlankExclusions = listOf(127211L, 127215L, 127216L, 127222L)),
         WordEntity(id = 127225, setId = 1272, languagePair = "he-ru", rarity = "RARE",
             original = "אוֹבֶרְאוֹל",
@@ -794,12 +794,12 @@ object WordDataHebrewBatch49 {
             example = "בְּרִיטַנְיָה נִשְׁאֲרָה מוֹנַרְכְיָה חוּקָתִית עַד הַיּוֹם.",
             exampleNative = "Британия осталась конституционной מוֹנַרְכְיָה до сегодня.", fillInBlankExclusions = listOf(127503L, 127506L, 127507L, 127508L)),
         WordEntity(id = 127510, setId = 1275, languagePair = "he-ru", rarity = "RARE",
-            original = "שְׁמָרָנוּת", translation = "консерватизм",
+            original = "שַׁמְרָנוּת", translation = "консерватизм",
             pos = "noun", semanticGroup = "politics_ideology",
             definition = "גִּישָּׁה הַמְּחַזֶּקֶת מָסּוֹרֶת וּמוֹסָדוֹת יְשָׁנִים מִפְּנֵי שִׁנּוּיִים מְהִירִים.",
             definitionNative = "Подход, защищающий традицию и старые устои от резких перемен.",
-            example = "הַמִּפְלָגָה דּוֹגֶלֶת בְּשְׁמָרָנוּת בַּעֲנְיְינֵי מִשְׁפָּחָה וְחִנּוּךְ.",
-            exampleNative = "Партия исповедует שְׁמָרָנוּת в вопросах семьи и образования.", fillInBlankExclusions = listOf(127511L, 127512L, 127513L, 127514L, 127515L, 127516L, 127517L)),
+            example = "הַמִּפְלָגָה דּוֹגֶלֶת בְּשַׁמְרָנוּת בַּעֲנְיְינֵי מִשְׁפָּחָה וְחִנּוּךְ.",
+            exampleNative = "Партия исповедует שַׁמְרָנוּת в вопросах семьи и образования.", fillInBlankExclusions = listOf(127511L, 127512L, 127513L, 127514L, 127515L, 127516L, 127517L)),
         WordEntity(id = 127511, setId = 1275, languagePair = "he-ru", rarity = "RARE",
             original = "נַאצִיוֹנַלִיזְם", translation = "национализм",
             pos = "noun", semanticGroup = "politics_ideology",
@@ -954,13 +954,13 @@ object WordDataHebrewBatch49 {
             exampleNative = "В нормальной стране שִׁלְטוֹן הַחוֹק сильнее любого частного лица."
         , fillInBlankExclusions = listOf(127604L, 127617L, 127624L, 127625L)),
         WordEntity(id = 127606, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "מִסְגְּרוּת",
+            original = "מִסְגְּרוֹת",
             translation = "фреймирование (политическое)",
             pos = "noun", semanticGroup = "politics_discourse",
             definition = "אָמָּנוּת בְּחִירַת הַזָּוִית שֶׁמַּכְתִּיבָה אֵיךְ הַצִּבּוּר יָבִין סוּגְיָה.",
             definitionNative = "Искусство выбора угла, который определяет, как публика поймёт тему.",
-            example = "מִסְגְּרוּת חַכָּמָה הָפְכָה אֶת הַחֹק לְפּוֹפּוּלָרִי.",
-            exampleNative = "Умное מִסְגְּרוּת сделало закон популярным."
+            example = "מִסְגְּרוֹת חַכָּמָה הָפְכָה אֶת הַחֹק לְפּוֹפּוּלָרִי.",
+            exampleNative = "Умное מִסְגְּרוֹת сделало закон популярным."
         , fillInBlankExclusions = listOf(127602L, 127603L, 127607L, 127611L)),
         WordEntity(id = 127607, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
             original = "הֲגִדְרָה",
@@ -1116,13 +1116,13 @@ object WordDataHebrewBatch49 {
             exampleNative = "פּוֹלִיטִיזַצְיָה климатологии вредит рациональному обсуждению."
         , fillInBlankExclusions = listOf(127601L, 127618L)),
         WordEntity(id = 127624, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
-            original = "מְשִׁילוּת",
+            original = "מַשִּׁילוֹת",
             translation = "управляемость / способность к управлению",
             pos = "noun", semanticGroup = "politics_governance",
             definition = "יְכוֹלֶת הַשִּׁלְטוֹן לְהַחְלִיט וּלְבַצֵּעַ בְּלִי שֶׁהַמַּעֲרֶכֶת תִּקְרֹס.",
             definitionNative = "Возможность правительства решать и исполнять, не позволяя системе развалиться.",
-            example = "מְשִׁילוּת חֲלוּשָׁה גּוֹרֶמֶת לְעִיכּוּב חוּקִּים חֲשׁוּבִים.",
-            exampleNative = "Слабая מְשִׁילוּת приводит к задержке важных законов."
+            example = "מַשִּׁילוֹת חֲלוּשָׁה גּוֹרֶמֶת לְעִיכּוּב חוּקִּים חֲשׁוּבִים.",
+            exampleNative = "Слабая מַשִּׁילוֹת приводит к задержке важных законов."
         , fillInBlankExclusions = listOf(127605L, 127625L)),
         WordEntity(id = 127625, setId = 1276, languagePair = "he-ru", rarity = "EPIC",
             original = "מְדִינַת רְוָחָה",
@@ -1461,20 +1461,20 @@ object WordDataHebrewBatch49 {
             exampleNative = "כּוֹנֵס נְכָסִים продал квартиру для покрытия долгов банку."
         ),
         WordEntity(id = 127815, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "נְאָמָנוּת", translation = "доверительное управление / траст",
+            original = "נֶאֱמָנוּת", translation = "доверительное управление / траст",
             pos = "noun", semanticGroup = "law_civil_remedies",
             definition = "הֶסְכֵּם שֶׁבּוֹ אֶחָד מַחְזִיק רְכוּשׁ עֲבוּר אַחֵר וּפוֹעֵל לְטוֹבָתוֹ בִּכְנוּת.",
             definitionNative = "Соглашение, по которому один держит имущество для другого и действует честно.",
-            example = "הָאָב הָקִים נְאָמָנוּת לִילָדָיו לִפְנֵי שֶׁעָבַר לְחוּל.",
-            exampleNative = "Отец создал נְאָמָנוּת для детей перед переездом за рубеж."
+            example = "הָאָב הָקִים נֶאֱמָנוּת לִילָדָיו לִפְנֵי שֶׁעָבַר לְחוּל.",
+            exampleNative = "Отец создал נֶאֱמָנוּת для детей перед переездом за рубеж."
         ),
         WordEntity(id = 127816, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "הֶלְוָאָה", translation = "займ / ссуда",
+            original = "הַלְוָאָה", translation = "займ / ссуда",
             pos = "noun", semanticGroup = "law_civil_remedies",
             definition = "סְכוּם כֶּסֶף שֶׁאֶחָד מַעֲבִיר לְאַחֵר עִם הִתְחַיְּבוּת לְהַחֲזִיר אוֹתוֹ אַחַר כָּךְ.",
             definitionNative = "Сумма денег, переданная другому с обязательством её потом вернуть.",
-            example = "לְקַחְנוּ הֶלְוָאָה קְטַנָּה לְשִׁפּוּץ הַמִּטְבָּח בַּדִּירָה.",
-            exampleNative = "Взяли небольшую הֶלְוָאָה на ремонт кухни."
+            example = "לְקַחְנוּ הַלְוָאָה קְטַנָּה לְשִׁפּוּץ הַמִּטְבָּח בַּדִּירָה.",
+            exampleNative = "Взяли небольшую הַלְוָאָה на ремонт кухни."
         ),
         WordEntity(id = 127817, setId = 1278, languagePair = "he-ru", rarity = "RARE",
             original = "מְשַׁכְּנֵתָא", translation = "ипотека",
@@ -1493,20 +1493,20 @@ object WordDataHebrewBatch49 {
             exampleNative = "Студент выбрал курс מִשְׁפַּט עֲבוֹדָה как факультатив."
         ),
         WordEntity(id = 127819, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "אֲפְלָיָה", translation = "дискриминация",
+            original = "אַפְלָיָה", translation = "дискриминация",
             pos = "noun", semanticGroup = "law_torts",
             definition = "יַחַס שׁוֹנֶה וְלֹא הוֹגֵן לַאֲנָשִׁים בִּגְלַל מָקוֹר, מִין אוֹ דָּת.",
             definitionNative = "Несправедливо разное отношение к людям из-за их происхождения, пола или веры.",
-            example = "הַחֶבְרָה נֶאֶשְׁמָה בְּאֲפְלָיָה כְּלַפֵּי עוֹבְדוֹת מְבוּגָּרוֹת.",
-            exampleNative = "Компанию обвинили в אֲפְלָיָה к старшим сотрудницам."
+            example = "הַחֶבְרָה נֶאֶשְׁמָה בְּאַפְלָיָה כְּלַפֵּי עוֹבְדוֹת מְבוּגָּרוֹת.",
+            exampleNative = "Компанию обвинили в אַפְלָיָה к старшим сотрудницам."
         ),
         WordEntity(id = 127820, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "הֲטְרָדָה", translation = "домогательство / харассмент",
+            original = "הַטְרָדָה", translation = "домогательство / харассмент",
             pos = "noun", semanticGroup = "law_torts",
             definition = "הִתְנַהֲגוּת חוֹזֶרֶת וְלֹא רְצוּיָה הַפּוֹגַעַת בְּכָבוֹד אוֹ בְּשַׁלְוַת אַחֵר.",
             definitionNative = "Повторяющееся нежелательное поведение, ранящее достоинство или покой другого.",
-            example = "הָעוֹבֶדֶת הִתְלוֹנְנָה עַל הֲטְרָדָה מִצַּד מְנַהֵל הַמַּחְלָקָה.",
-            exampleNative = "Сотрудница пожаловалась на הֲטְרָדָה со стороны начальника отдела."
+            example = "הָעוֹבֶדֶת הִתְלוֹנְנָה עַל הַטְרָדָה מִצַּד מְנַהֵל הַמַּחְלָקָה.",
+            exampleNative = "Сотрудница пожаловалась на הַטְרָדָה со стороны начальника отдела."
         ),
         WordEntity(id = 127821, setId = 1278, languagePair = "he-ru", rarity = "RARE",
             original = "הוֹצָאַת דִּיבָּה", translation = "клевета / диффамация",
@@ -1525,20 +1525,20 @@ object WordDataHebrewBatch49 {
             exampleNative = "Снимать соседку через окно — явная פְּגִיעָה בְּפְּרָטִיּוּת."
         ),
         WordEntity(id = 127823, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "חָסִינוּת", translation = "иммунитет (юридический)",
+            original = "חֲסִינוּת", translation = "иммунитет (юридический)",
             pos = "noun", semanticGroup = "law_immunities",
             definition = "פְּטוֹר מִשְׁפָּטִי שֶׁמּוֹנֵעַ לְהַעֲמִיד בַּעַל תַּפְקִיד מְסוּיָּם לְדִין עַל מַעֲשָׂיו.",
             definitionNative = "Юридическая защита от привлечения должностного лица к суду за его действия.",
-            example = "חַבְרֵי הַכְּנֶסֶת זוֹכִים לְחָסִינוּת מִפְּנֵי תְּבִיעוֹת מְסוּיָּמוֹת.",
-            exampleNative = "Депутаты Кнессета имеют חָסִינוּת от некоторых исков."
+            example = "חַבְרֵי הַכְּנֶסֶת זוֹכִים לְחֲסִינוּת מִפְּנֵי תְּבִיעוֹת מְסוּיָּמוֹת.",
+            exampleNative = "Депутаты Кнессета имеют חֲסִינוּת от некоторых исков."
         ),
         WordEntity(id = 127824, setId = 1278, languagePair = "he-ru", rarity = "RARE",
-            original = "הִסְגָּרָה", translation = "экстрадиция",
+            original = "הַסְגָּרָה", translation = "экстрадиция",
             pos = "noun", semanticGroup = "law_immunities",
             definition = "הַעֲבָרָה רִשְׁמִית שֶׁל אָדָם מוּחְשָׁד מִמְּדִינָה אַחַת לִשְׁנִיָּה לְצוֹרֶךְ מִשְׁפָּט.",
             definitionNative = "Официальная передача подозреваемого из одной страны в другую для суда.",
-            example = "בֵּית הַמִּשְׁפָּט אִשֵּׁר אֶת הַהִסְגָּרָה לְאַחַר דִּיּוּן אָרֹךְ.",
-            exampleNative = "Суд утвердил הִסְגָּרָה после долгого слушания."
+            example = "בֵּית הַמִּשְׁפָּט אִשֵּׁר אֶת הַהַסְגָּרָה לְאַחַר דִּיּוּן אָרֹךְ.",
+            exampleNative = "Суд утвердил הַסְגָּרָה после долгого слушания."
         ),
         WordEntity(id = 127825, setId = 1278, languagePair = "he-ru", rarity = "RARE",
             original = "פְּשָׁרָה מִשְׁפָּטִית", translation = "мировое соглашение / правовое урегулирование",

@@ -99,11 +99,11 @@ object WordDataHebrewIsraeliTransportL2 {
         WordEntity(
             id = 185304, setId = 1853, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "transport_l2_problems",
-            original = "שָׁבִיתָה", translation = "забастовка (водителей)",
+            original = "שְׁבִיתָה", translation = "забастовка (водителей)",
             definition = "הַפְסָקַת עֲבוֹדָה מְאֻרְגֶּנֶת שֶׁל נֶהָגִים אוֹ עוֹבְדֵי תַחְבּוּרָה צִבּוּרִית.",
             definitionNative = "Организованная остановка работы водителей или работников транспорта.",
-            example = "שָׁבִיתָה שֶׁל נֶהָגֵי הָרַכֶּבֶת מְבוּטֶלֶת אַחֲרֵי מַשָּׂא וּמַתָּן.",
-            exampleNative = "שָׁבִיתָה машинистов поездов отменена после переговоров с профсоюзом.",
+            example = "שְׁבִיתָה שֶׁל נֶהָגֵי הָרַכֶּבֶת מְבוּטֶלֶת אַחֲרֵי מַשָּׂא וּמַתָּן.",
+            exampleNative = "שְׁבִיתָה машинистов поездов отменена после переговоров с профсоюзом.",
          fillInBlankExclusions = listOf(185301L, 185302L, 185303L)),
         WordEntity(
             id = 185305, setId = 1853, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -155,11 +155,11 @@ object WordDataHebrewIsraeliTransportL2 {
         WordEntity(
             id = 185310, setId = 1853, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "transport_l2_intercity",
-            original = "הַקָּלָה", translation = "льгота, скидка",
+            original = "הֲקָלָה", translation = "льгота, скидка",
             definition = "הוֹרָדַת מְחִיר אוֹ הֲטָבָה בַּתַּחְבּוּרָה לִגְמָלָאִים, חַיָּלִים וּסְטוּדֶנְטִים.",
             definitionNative = "Снижение цены или особая поблажка в транспорте для пенсионеров, солдат и студентов.",
-            example = "הַקָּלָה שֶׁל חֲמִשִּׁים אָחוּז בַּכַּרְטִיס נִתֶּנֶת לְכָל גִּמְלַאי.",
-            exampleNative = "הַקָּלָה в пятьдесят процентов от цены билета даётся всем пенсионерам.",
+            example = "הֲקָלָה שֶׁל חֲמִשִּׁים אָחוּז בַּכַּרְטִיס נִתֶּנֶת לְכָל גִּמְלַאי.",
+            exampleNative = "הֲקָלָה в пятьдесят процентов от цены билета даётся всем пенсионерам.",
          fillInBlankExclusions = listOf(185308L, 185309L)),
 
         // ─── transport_l2_documents (5) ──────────────────────────────────
@@ -202,11 +202,11 @@ object WordDataHebrewIsraeliTransportL2 {
         WordEntity(
             id = 185315, setId = 1853, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_l2_documents",
-            original = "מוֹסַךְ", translation = "автосервис, мастерская",
+            original = "מוּסָךְ", translation = "автосервис, мастерская",
             definition = "מָקוֹם מִקְצוֹעִי שֶׁבּוֹ מְתַקְּנִים תַּקָּלוֹת בָּרֶכֶב וּמְבַצְּעִים טִפּוּלִים.",
             definitionNative = "Профессиональное место, где чинят поломки и проводят техобслуживание.",
             example = "הִשְׁאַרְתִּי אֶת הָרֶכֶב בַּמּוֹסַךְ עַד מָחָר אַחַר הַצָּהֳרַיִם.",
-            exampleNative = "Я оставил машину в מוֹסַךְ до завтрашнего полудня для ремонта.",
+            exampleNative = "Я оставил машину в מוּסָךְ до завтрашнего полудня для ремонта.",
         ),
 
         // ─── transport_l2_actions_advanced (5) ───────────────────────────
@@ -231,11 +231,11 @@ object WordDataHebrewIsraeliTransportL2 {
         WordEntity(
             id = 185318, setId = 1853, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "transport_l2_actions_advanced",
-            original = "לְפַסְפֵּס", translation = "пропустить (рейс)",
+            original = "לְפַסְפֵס", translation = "пропустить (рейс)",
             definition = "לֹא לְהַסְפִּיק לַעֲלוֹת לָאוֹטוֹבּוּס אוֹ לָרַכֶּבֶת לִפְנֵי שֶׁהֵם יָצְאוּ.",
             definitionNative = "Не успеть сесть в автобус или поезд до того, как они уедут.",
-            example = "אֲנִי לֹא רוֹצֶה לְפַסְפֵּס אֶת הָרַכֶּבֶת הָאַחֲרוֹנָה הַלַּיְלָה.",
-            exampleNative = "Я не хочу לְפַסְפֵּס последний поезд сегодня ночью.",
+            example = "אֲנִי לֹא רוֹצֶה לְפַסְפֵס אֶת הָרַכֶּבֶת הָאַחֲרוֹנָה הַלַּיְלָה.",
+            exampleNative = "Я не хочу לְפַסְפֵס последний поезд сегодня ночью.",
          fillInBlankExclusions = listOf(185316L, 185317L, 185319L, 185320L)),
         WordEntity(
             id = 185319, setId = 1853, languagePair = "he-ru", rarity = "RARE",

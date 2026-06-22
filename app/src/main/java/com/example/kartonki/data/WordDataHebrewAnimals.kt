@@ -356,11 +356,11 @@ object WordDataHebrewAnimals {
         WordEntity(
             id = 187405, setId = 1874, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "animal_wild_mammals",
-            original = "סְנָאי", translation = "белка",
+            original = "סְנָאִי", translation = "белка",
             definition = "יוֹנֵק קָטָן וּזְרִיז עִם זָנָב מְפֻרְוָה הַחַי בַּעֵצִים.",
             definitionNative = "Маленький проворный зверёк с пушистым хвостом, живущий на деревьях.",
             example = "הַסְּנָאי קָפַץ מֵעֵץ לְעֵץ עִם אֱגוֹז בַּפֶּה.",
-            exampleNative = "סְנָאי прыгал с дерева на дерево с орехом во рту.",
+            exampleNative = "סְנָאִי прыгал с дерева на дерево с орехом во рту.",
         ),
         WordEntity(
             id = 187406, setId = 1874, languagePair = "he-ru", rarity = "RARE",
@@ -544,11 +544,11 @@ object WordDataHebrewAnimals {
         WordEntity(
             id = 187425, setId = 1874, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "animal_arachnids",
-            original = "קְרָדִית", translation = "клещ",
+            original = "קַרְדִּית", translation = "клещ",
             definition = "פַּרְקוֹדָן זָעִיר הַנִּצְמָד לְעוֹר חַיּוֹת וְאָדָם וְשׁוֹתֶה דָּם.",
             definitionNative = "Крошечное паукообразное, цепляющееся к коже и пьющее кровь.",
-            example = "מָצָאתִי קְרָדִית עַל הָרֶגֶל אַחֲרֵי הַטִּיּוּל בַּיַּעַר.",
-            exampleNative = "Я нашёл קְרָדִית на ноге после прогулки в лесу.",
+            example = "מָצָאתִי קַרְדִּית עַל הָרֶגֶל אַחֲרֵי הַטִּיּוּל בַּיַּעַר.",
+            exampleNative = "Я нашёл קַרְדִּית на ноге после прогулки в лесу.",
          fillInBlankExclusions = listOf(187423L, 187424L)),
 
         // ╔══════════════════════════════════════════════════════════════════╗
@@ -1055,11 +1055,11 @@ object WordDataHebrewAnimals {
         WordEntity(
             id = 187703, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "animal_taxonomy_classes",
-            original = "דּוּ-חַיִּי", translation = "земноводное; амфибия",
+            original = "דּוּ-חַיַּי", translation = "земноводное; амфибия",
             definition = "בַּעַל חַיִּים שֶׁחַי בְּחֵלֶק שֶׁל חַיָּיו בַּמַּיִם וּבְחֵלֶק עַל הַיַּבָּשָׁה.",
             definitionNative = "Существо, проводящее часть жизни в воде, а часть — на суше.",
-            example = "הַצְּפַרְדֵּעַ הִיא דּוּ-חַיִּי טִיפּוּסִי שֶׁמַּתְחִיל אֶת חַיָּיו כַּרֻאשָׁן.",
-            exampleNative = "Лягушка — типичный דּוּ-חַיִּי, начинающий жизнь головастиком.",
+            example = "הַצְּפַרְדֵּעַ הִיא דּוּ-חַיַּי טִיפּוּסִי שֶׁמַּתְחִיל אֶת חַיָּיו כַּרֻאשָׁן.",
+            exampleNative = "Лягушка — типичный דּוּ-חַיַּי, начинающий жизнь головастиком.",
          fillInBlankExclusions = listOf(187701L, 187702L, 187704L, 187705L)),
         WordEntity(
             id = 187704, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -1093,11 +1093,11 @@ object WordDataHebrewAnimals {
         WordEntity(
             id = 187707, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "animal_taxonomy_phyla",
-            original = "חֻלְיָתָנִים", translation = "позвоночные",
+            original = "חֻלְיְתָנִים", translation = "позвоночные",
             definition = "תַּת-מַעֲרֶכֶת שֶׁל בַּעֲלֵי חַיִּים בַּעֲלֵי עַמּוּד שִׁדְרָה וְגֻלְגֹּלֶת.",
             definitionNative = "Подтип существ, обладающих внутренним хребтом и черепом.",
-            example = "הַחֻלְיָתָנִים כּוֹלְלִים יוֹנְקִים, צִפּוֹרִים, זוֹחֲלִים, דּוּ-חַיִּים וְדָגִים.",
-            exampleNative = "חֻלְיָתָנִים включают млекопитающих, птиц, рептилий, амфибий и рыб.",
+            example = "הַחֻלְיְתָנִים כּוֹלְלִים יוֹנְקִים, צִפּוֹרִים, זוֹחֲלִים, דּוּ-חַיִּים וְדָגִים.",
+            exampleNative = "חֻלְיְתָנִים включают млекопитающих, птиц, рептилий, амфибий и рыб.",
          fillInBlankExclusions = listOf(187706L, 187708L, 187709L, 187710L)),
         WordEntity(
             id = 187708, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
@@ -1140,11 +1140,11 @@ object WordDataHebrewAnimals {
         WordEntity(
             id = 187712, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "animal_taxonomy_orders",
-            original = "מַכְרְסְמִים", translation = "грызуны",
+            original = "מְכַרְסְמִים", translation = "грызуны",
             definition = "סֵדֶר יוֹנְקִים עִם שִׁנֵּי חוֹתֶכֶת אֲרֻכּוֹת שֶׁגְּדֵלוֹת לְלֹא הֲפֻגָּה.",
             definitionNative = "Отряд млекопитающих с длинными резцами, постоянно растущими в течение жизни.",
             example = "הַמַּכְרְסְמִים מְהַוִּים כְּ-40% מִכָּל מִינֵי הַיּוֹנְקִים בַּעוֹלָם.",
-            exampleNative = "מַכְרְסְמִים составляют около 40% всех видов млекопитающих в мире.",
+            exampleNative = "מְכַרְסְמִים составляют около 40% всех видов млекопитающих в мире.",
         ),
         WordEntity(
             id = 187713, setId = 1877, languagePair = "he-ru", rarity = "LEGENDARY",

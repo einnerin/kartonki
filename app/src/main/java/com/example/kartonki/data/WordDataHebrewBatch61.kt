@@ -134,7 +134,7 @@ object WordDataHebrewBatch61 {
             original = "נוּסְחָה", translation = "формула"),
 
         WordEntity(id = 134504, setId = 1345, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַקְדֵּם", translation = "коэффициент"),
+            original = "מְקַדֵּם", translation = "коэффициент"),
 
         WordEntity(id = 134505, setId = 1345, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "חֶזְקָה", translation = "степень (2³)"),
@@ -158,7 +158,7 @@ object WordDataHebrewBatch61 {
             original = "שִׁפּוּעַ", translation = "наклон, угловой коэффициент"),
 
         WordEntity(id = 134512, setId = 1345, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אִי-שָׁוְיוֹן", translation = "неравенство"),
+            original = "אִי-שִׁוְיוֹן", translation = "неравенство"),
 
         WordEntity(id = 134513, setId = 1345, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "מְלַבֵּן", translation = "прямоугольник"),
@@ -235,7 +235,7 @@ object WordDataHebrewBatch61 {
             original = "מֵיצָע", translation = "среднее значение"),
 
         WordEntity(id = 134612, setId = 1346, languagePair = "he-ru", rarity = "RARE",
-            original = "חֲצִיוֹן", translation = "медиана"),
+            original = "חֶצְיוֹן", translation = "медиана"),
 
         WordEntity(id = 134613, setId = 1346, languagePair = "he-ru", rarity = "RARE",
             original = "שׁוּנוּת", translation = "дисперсия"),
@@ -389,7 +389,7 @@ object WordDataHebrewBatch61 {
             original = "מַרְחָב טוֹפּוֹלוֹגִי", translation = "топологическое пространство"),
 
         WordEntity(id = 134812, setId = 1348, languagePair = "he-ru", rarity = "LEGENDARY",
-            original = "קְטֵגוֹרְיָה", translation = "категория (теория категорий)"),
+            original = "קָטֵגוֹרְיָה", translation = "категория (теория категорий)"),
 
         WordEntity(id = 134813, setId = 1348, languagePair = "he-ru", rarity = "LEGENDARY",
             original = "פוּנְקְטוֹר", translation = "функтор"),

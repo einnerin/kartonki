@@ -196,11 +196,11 @@ object WordDataHebrewImmigrant6 {
         WordEntity(
             id = 114620, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military",
-            original = "תַּקָּן", translation = "штатная должность / норма",
+            original = "תֶּקֶן", translation = "штатная должность / норма",
             definition = "מִסְפַּר הַמַּשְׂרוֹת הַמְּאוּשָּׁרוֹת בְּיְחִידָה אוֹ בְּמִשְׂרָד.",
             definitionNative = "Число утверждённых должностей в воинской части или ведомстве.",
-            example = "הַמְּפַקֵּד אִשֵּׁר תַּקָּן חָדָשׁ לְקַצִּין מוֹדִיעִין נוֹסָף.",
-            exampleNative = "Командир утвердил новый תַּקָּן для дополнительного офицера разведки."),
+            example = "הַמְּפַקֵּד אִשֵּׁר תֶּקֶן חָדָשׁ לְקַצִּין מוֹדִיעִין נוֹסָף.",
+            exampleNative = "Командир утвердил новый תֶּקֶן для дополнительного офицера разведки."),
         WordEntity(
             id = 114621, setId = 1146, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "military",

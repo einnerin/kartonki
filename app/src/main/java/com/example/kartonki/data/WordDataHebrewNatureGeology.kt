@@ -78,12 +78,12 @@ object WordDataHebrewNatureGeology {
             pos = "phrase", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189601L, 189602L, 189603L, 189605L, 189606L, 189607L, 189608L)),
 
         WordEntity(id = 189605, setId = 1896, languagePair = "he-ru", rarity = "EPIC",
-            original = "צַפְחָה",
+            original = "צִפְחָה",
             translation = "сланец",
             definition = "סֶלֶע מִשְׁקָעִי דַּק שִׁכְבָתִי הַנִּשְׁבָּר לְלוּחוֹת שְׁטוּחִים, שִׁמֵּשׁ פַּעַם לְכִסּוּי גַּגּוֹת.",
             definitionNative = "Тонкослоистая осадочная порода, раскалывающаяся на плоские плитки; когда-то служила для покрытия крыш.",
-            example = "מִתַּחַת לַגַּג הָעַתִּיק חָשַׂף הָאַרְכֵיאוֹלוֹג רִצְפַּת צַפְחָה מֵהַתְּקוּפָה הָרוֹמִית.",
-            exampleNative = "Под старой крышей археолог обнаружил пол из צַפְחָה ещё римской эпохи.",
+            example = "מִתַּחַת לַגַּג הָעַתִּיק חָשַׂף הָאַרְכֵיאוֹלוֹג רִצְפַּת צִפְחָה מֵהַתְּקוּפָה הָרוֹמִית.",
+            exampleNative = "Под старой крышей археолог обнаружил пол из צִפְחָה ещё римской эпохи.",
             pos = "noun", semanticGroup = "nature_geology_rocks", fillInBlankExclusions = listOf(189601L, 189602L, 189603L, 189604L, 189606L, 189607L, 189608L)),
 
         WordEntity(id = 189606, setId = 1896, languagePair = "he-ru", rarity = "EPIC",

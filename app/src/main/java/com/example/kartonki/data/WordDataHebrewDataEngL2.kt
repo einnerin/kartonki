@@ -56,11 +56,11 @@ object WordDataHebrewDataEngL2 {
         WordEntity(
             id = 177501, setId = 1775, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "data_sql_basic",
-            original = "שְׁאִילְתָּה", translation = "запрос (SQL query)",
+            original = "שְׁאִילְתָה", translation = "запрос (SQL query)",
             definition = "פְּקֻדָּה כְּתוּבָה בְּשָׂפַת SQL שֶׁשּׁוֹלֶפֶת אוֹ מְעַדְכֶּנֶת שׁוּרוֹת בְּטַבְלָה.",
             definitionNative = "Команда на языке SQL — достаёт или меняет строки в таблице.",
-            example = "כָּתַבְתִּי שְׁאִילְתָּה שֶׁמַּחְזִירָה אֶת כָּל הַלְּקוֹחוֹת מֵרוּסְיָה.",
-            exampleNative = "Я написал שְׁאִילְתָּה, которая возвращает всех клиентов из России.",
+            example = "כָּתַבְתִּי שְׁאִילְתָה שֶׁמַּחְזִירָה אֶת כָּל הַלְּקוֹחוֹת מֵרוּסְיָה.",
+            exampleNative = "Я написал שְׁאִילְתָה, которая возвращает всех клиентов из России.",
          fillInBlankExclusions = listOf(177502L, 177503L, 177504L, 177505L)),
         WordEntity(
             id = 177502, setId = 1775, languagePair = "he-ru", rarity = "RARE",

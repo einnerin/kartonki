@@ -151,11 +151,11 @@ object WordDataHebrewImmigrant5 {
         WordEntity(
             id = 114315, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "shuk",
-            original = "מְכֹלֶת", translation = "продуктовый магазин / бакалея",
+            original = "מַכֹּלֶת", translation = "продуктовый магазин / бакалея",
             definition = "חֲנוּת קְטַנָּה הַמּוֹכֶרֶת מַזּוֹן וּמוּצָרֵי יוֹמְיוֹם.",
             definitionNative = "Небольшой магазин, торгующий едой и товарами повседневного спроса.",
-            example = "יֵשׁ מְכֹלֶת פְּתוּחָה בְּכָל שָׁעָה בַּשְּׁכוּנָה.",
-            exampleNative = "В районе есть круглосуточная מְכֹלֶת.",
+            example = "יֵשׁ מַכֹּלֶת פְּתוּחָה בְּכָל שָׁעָה בַּשְּׁכוּנָה.",
+            exampleNative = "В районе есть круглосуточная מַכֹּלֶת.",
          fillInBlankExclusions = listOf(114314L, 114316L)),
         WordEntity(
             id = 114316, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -195,7 +195,7 @@ object WordDataHebrewImmigrant5 {
         WordEntity(
             id = 114320, setId = 1143, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "shuk",
-            original = "אֲגַס", translation = "груша",
+            original = "אַגָּס", translation = "груша",
             definition = "פְּרִי מָתוֹק בְּצוּרַת דְּמָעָה, בְּדֶרֶךְ כְּלָל צָהֹב אוֹ יָרֹק.",
             definitionNative = "Сладкий грушевидный фрукт, обычно жёлтый или зелёный.",
             example = "קָנִיתִי חֲמִישָּׁה אֲגָסִים בַּשּׁוּק.",

@@ -85,11 +85,11 @@ object WordDataHebrewUrbanLifeL5 {
         WordEntity(
             id = 184103, setId = 1841, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "urban_l5_legal_archaic",
-            original = "חַזָּקָה", translation = "презумпция (юрид.)",
+            original = "חֲזָקָה", translation = "презумпция (юрид.)",
             definition = "כְּלָל מִשְׁפָּטִי הַקּוֹבֵעַ שֶׁעֻבְדָה מְסֻיֶּמֶת נֶחְשֶׁבֶת לַאֲמִתִּית עַד שֶׁתֻּכַּח אַחֶרֶת.",
             definitionNative = "Юридическое правило, по которому некий факт считается верным, пока не доказано обратное.",
-            example = "עוֹמֶדֶת לוֹ חַזָּקָה שֶׁל בַּעֲלוּת עַל הַדִּירָה אַחֲרֵי שָׁלוֹשׁ שָׁנִים.",
-            exampleNative = "За ним стоит חַזָּקָה владения квартирой по истечении трёх лет проживания.",
+            example = "עוֹמֶדֶת לוֹ חֲזָקָה שֶׁל בַּעֲלוּת עַל הַדִּירָה אַחֲרֵי שָׁלוֹשׁ שָׁנִים.",
+            exampleNative = "За ним стоит חֲזָקָה владения квартирой по истечении трёх лет проживания.",
          fillInBlankExclusions = listOf(184101L, 184102L, 184104L, 184105L)),
         WordEntity(
             id = 184104, setId = 1841, languagePair = "he-ru", rarity = "EPIC",

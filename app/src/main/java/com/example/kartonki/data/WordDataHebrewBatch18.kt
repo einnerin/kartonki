@@ -62,19 +62,19 @@ object WordDataHebrewBatch18 {
         WordEntity(
             id = 107604, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media",
-            original = "מַצָּגֶת", translation = "презентация; слайд-шоу",
+            original = "מַצֶּגֶת", translation = "презентация; слайд-шоу",
             definition = "הַצָּגָה חֲזוּתִית שֶׁל שְׁקוּפִיּוֹת הַמְּשַׁמֶּשֶׁת לְהַעֲבָרַת מֵידָע.",
             definitionNative = "Визуальный показ слайдов, используемых для представления информации.",
             example = "הַמַּצָּגֶת הוּכְנָה לִקְרַאת הַכְּנָס.",
-            exampleNative = "מַצָּגֶת была подготовлена к конференции."),
+            exampleNative = "מַצֶּגֶת была подготовлена к конференции."),
         WordEntity(
             id = 107605, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "media",
-            original = "תִּסְרִיט", translation = "сценарий; скрипт",
+            original = "תַּסְרִיט", translation = "сценарий; скрипт",
             definition = "טֶקְסְט הַמְּפָרֵט אֶת הַדִּיאָלוֹגִים וְהַהוֹרָאוֹת לְסֶרֶט אוֹ תָּכְנִית.",
             definitionNative = "Текст, определяющий диалоги и указания к фильму или программе.",
-            example = "הַתִּסְרִיט עָבַר שְׁלוֹשׁ עֲרִיכוֹת לִפְנֵי הַצִּילּוּם.",
-            exampleNative = "תִּסְרִיט прошёл три редакции перед съёмками.",
+            example = "הַתַּסְרִיט עָבַר שְׁלוֹשׁ עֲרִיכוֹת לִפְנֵי הַצִּילּוּם.",
+            exampleNative = "תַּסְרִיט прошёл три редакции перед съёмками.",
         ),
         WordEntity(
             id = 107606, setId = 1076, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -271,7 +271,7 @@ object WordDataHebrewBatch18 {
         WordEntity(
             id = 107702, setId = 1077, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "science",
-            original = "מַדְעָן", translation = "учёный",
+            original = "מַדְּעָן", translation = "учёный",
             definition = "מִי שֶׁחוֹקֵר תְּחוּם מַדָּעִי בְּמֵסְגֶּרֶת אַקַדֵּמִית אוֹ תַּעֲשִׂיָּתִית.",
             definitionNative = "Тот, кто исследует научную область в академическом или промышленном контексте.",
             example = "מַדְעָנִים יִשְׂרְאֵלִים זָכוּ בְּפְּרָסִים בֵּינְלְאוּמִיִּים רַבִּים.",

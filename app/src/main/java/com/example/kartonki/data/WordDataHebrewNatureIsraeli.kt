@@ -71,12 +71,12 @@ object WordDataHebrewNatureIsraeli {
         // ── Group: nature_il_mammals (5 words) ────────────────────────────────
 
         WordEntity(id = 191301, setId = 1913, languagePair = "he-ru", rarity = "RARE",
-            original = "רֵאֵם",
+            original = "רְאֵם",
             translation = "орикс, аддакс (антилопа Негева)",
             definition = "אֲנְטִילוֹפָּה לְבָנָה גְּדוֹלָה שֶׁל הַנֶּגֶב — מֻזְכֶּרֶת בַּתַּנַ״ךְ, הֻחְזְרָה לַטֶּבַע אַחֲרֵי הַכְחָדָה.",
             definitionNative = "Крупная белая антилопа Негева — упомянута в Танахе, возвращена в природу после исчезновения.",
-            example = "בִּשְׁמוּרַת חַי־בָּר יוֹטְבָתָה רוֹאִים עֶדְרֵי רֵאֵם בָּעֲרָבָה.",
-            exampleNative = "В заповеднике Хай-Бар Йотвата видно стада רֵאֵם в Араве.",
+            example = "בִּשְׁמוּרַת חַי־בָּר יוֹטְבָתָה רוֹאִים עֶדְרֵי רְאֵם בָּעֲרָבָה.",
+            exampleNative = "В заповеднике Хай-Бар Йотвата видно стада רְאֵם в Араве.",
             pos = "noun", semanticGroup = "nature_il_mammals", fillInBlankExclusions = listOf(191302L, 191303L, 191304L, 191305L)),
 
         WordEntity(id = 191302, setId = 1913, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -127,7 +127,7 @@ object WordDataHebrewNatureIsraeli {
             pos = "noun", semanticGroup = "nature_il_birds", fillInBlankExclusions = listOf(191307L, 191308L, 191309L, 191310L)),
 
         WordEntity(id = 191307, setId = 1913, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֵגוּר",
+            original = "עָגוּר",
             translation = "журавль (перелётный)",
             definition = "צִפּוֹר נוֹדֶדֶת גְּדוֹלָה הָעוֹצֶרֶת בְּאַגְמוֹן הַחוּלָה בַּסְּתָו וּבָאָבִיב.",
             definitionNative = "Крупная перелётная птица, останавливающаяся в Хульской долине осенью и весной.",
@@ -145,21 +145,21 @@ object WordDataHebrewNatureIsraeli {
             pos = "noun", semanticGroup = "nature_il_birds", fillInBlankExclusions = listOf(191306L, 191307L, 191309L, 191310L)),
 
         WordEntity(id = 191309, setId = 1913, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "חָסִידָה",
+            original = "חֲסִידָה",
             translation = "аист белый (перелётный)",
             definition = "צִפּוֹר גְּדוֹלָה בִּלְבָנָה־שְׁחֹרָה הַעוֹצֶרֶת בָּאָרֶץ בִּזְמַן הַנְּדִידָה מֵאֵירוֹפָּה לְאַפְרִיקָה.",
             definitionNative = "Большая чёрно-белая птица, останавливающаяся в стране на пути из Европы в Африку.",
-            example = "עַל הַגַּג שֶׁל הַקִּיבּוּץ בָּנְתָה חָסִידָה קֵן מֵעֲנָפִים.",
-            exampleNative = "На крыше кибуца חָסִידָה свила гнездо из веток.",
+            example = "עַל הַגַּג שֶׁל הַקִּיבּוּץ בָּנְתָה חֲסִידָה קֵן מֵעֲנָפִים.",
+            exampleNative = "На крыше кибуца חֲסִידָה свила гнездо из веток.",
             pos = "noun", semanticGroup = "nature_il_birds", fillInBlankExclusions = listOf(191306L, 191307L, 191308L, 191310L)),
 
         WordEntity(id = 191310, setId = 1913, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "אַנְפָּה",
+            original = "אֲנָפָה",
             translation = "цапля (длинноногая)",
             definition = "עוֹף מַיִם בַּעַל רַגְלַיִם אֲרֻכּוֹת וְצַוָּאר מָתוּחַ — צָדָה דָּגִים בַּבִּצּוֹת וּבַבְּרֵכוֹת.",
             definitionNative = "Водная птица с длинными ногами и вытянутой шеей — ловит рыбу в болотах и прудах.",
-            example = "אַנְפָּה אַחַת עָמְדָה לְלֹא נוֹעַ בִּקְצֵה הַבְּרֵכָה שָׁעָה שְׁלֵמָה.",
-            exampleNative = "Одна אַנְפָּה стояла без движения у края пруда целый час.",
+            example = "אֲנָפָה אַחַת עָמְדָה לְלֹא נוֹעַ בִּקְצֵה הַבְּרֵכָה שָׁעָה שְׁלֵמָה.",
+            exampleNative = "Одна אֲנָפָה стояла без движения у края пруда целый час.",
             pos = "noun", semanticGroup = "nature_il_birds", fillInBlankExclusions = listOf(191306L, 191307L, 191308L, 191309L)),
 
         // ── Group: nature_il_trees (5 words) ──────────────────────────────────
@@ -286,12 +286,12 @@ object WordDataHebrewNatureIsraeli {
             pos = "noun", semanticGroup = "nature_il_landscape", fillInBlankExclusions = listOf(191321L, 191322L, 191324L)),
 
         WordEntity(id = 191324, setId = 1913, languagePair = "he-ru", rarity = "RARE",
-            original = "אַלְמוּג",
+            original = "אַלְמוֹג",
             translation = "коралл (морской)",
             definition = "יְצוּר יָם זָעִיר הַחַי בִּמְשֻׁתָּף וּבוֹנֶה שִׁלְדִים אֲבָנִיִּים צִבְעוֹנִיִּים בִּמְפְרַץ אֵילַת.",
             definitionNative = "Микроскопический морской организм, живущий в колонии и строящий цветные каменные скелеты в Эйлатском заливе.",
-            example = "צַלָּלְנוּ לִרְאוֹת אַלְמוּג אָדֹם בְּחוֹף הַשֻּׁמָּרֶת.",
-            exampleNative = "Ныряли увидеть красный אַלְמוּג на пляже-заповеднике.",
+            example = "צַלָּלְנוּ לִרְאוֹת אַלְמוֹג אָדֹם בְּחוֹף הַשֻּׁמָּרֶת.",
+            exampleNative = "Ныряли увидеть красный אַלְמוֹג на пляже-заповеднике.",
             pos = "noun", semanticGroup = "nature_il_landscape", fillInBlankExclusions = listOf(191321L, 191322L, 191323L)),
 
         WordEntity(id = 191325, setId = 1913, languagePair = "he-ru", rarity = "RARE",

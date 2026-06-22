@@ -33,7 +33,7 @@ object WordDataHebrewBatch87 {
         // ── Set 1533 — Лингвистика: продвинутый 2 (level 2, A2/B1) ───────
         // 2 COMMON + 16 UNCOMMON + 4 RARE + 2 EPIC + 1 LEGENDARY
         WordEntity(id = 153301, setId = 1533, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "דֶקְדּוּק", translation = "грамматика"),
+            original = "דִּקְדּוּק", translation = "грамматика"),
         WordEntity(id = 153302, setId = 1533, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "אוֹצָר מִלִּים", translation = "словарный запас"),
         WordEntity(id = 153303, setId = 1533, languagePair = "he-ru", rarity = "UNCOMMON",

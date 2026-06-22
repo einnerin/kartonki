@@ -157,11 +157,11 @@ object WordDataHebrewBatch52 {
             pos = "noun", semanticGroup = "hightech_git"),
 
         WordEntity(id = 129605, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֲנָף", translation = "ветка (git branch)",
+            original = "עָנָף", translation = "ветка (git branch)",
             definition = "עוֹתֶק מַקְבִּיל שֶׁל הַקּוֹד, שֶׁבּוֹ עוֹבְדִים עַל פִיצָ'ר חָדָשׁ.",
             definitionNative = "Параллельная копия кода в git — там пилят новую фичу или фикс.",
-            example = "פָּתַחְתִּי עֲנָף נִפְרָד לְתִיקּוּן הַבַּג הַזֶּה.",
-            exampleNative = "Я открыл отдельный עֲנָף для фикса этого бага.",
+            example = "פָּתַחְתִּי עָנָף נִפְרָד לְתִיקּוּן הַבַּג הַזֶּה.",
+            exampleNative = "Я открыл отдельный עָנָף для фикса этого бага.",
             pos = "noun", semanticGroup = "hightech_git"),
 
         WordEntity(id = 129606, setId = 1296, languagePair = "he-ru", rarity = "UNCOMMON",

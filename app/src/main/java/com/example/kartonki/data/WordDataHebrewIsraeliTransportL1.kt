@@ -165,11 +165,11 @@ object WordDataHebrewIsraeliTransportL1 {
         WordEntity(
             id = 185214, setId = 1852, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "transport_l1_stops_stations",
-            original = "מָסָע", translation = "поездка",
+            original = "מַסָּע", translation = "поездка",
             definition = "נְסִיעָה אֲרֻכָּה אוֹ מְעַנְיֶנֶת מִנְּקֻדָּה אַחַת לִנְקֻדָּה אַחֶרֶת בְּכְלִי תַּחְבּוּרָה.",
             definitionNative = "Долгое путешествие из одной точки в другую на машине или автобусе.",
             example = "הַמָּסָע מֵהַצָּפוֹן לְאֵילַת אָרַךְ שֵׁשׁ שָׁעוֹת בְּלִי הַפְסָקוֹת.",
-            exampleNative = "מָסָע с севера до Эйлата занял шесть часов без остановок.",
+            exampleNative = "מַסָּע с севера до Эйлата занял шесть часов без остановок.",
         ),
         WordEntity(
             id = 185215, setId = 1852, languagePair = "he-ru", rarity = "COMMON",

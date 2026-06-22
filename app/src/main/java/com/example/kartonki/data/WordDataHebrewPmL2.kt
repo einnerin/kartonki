@@ -214,11 +214,11 @@ object WordDataHebrewPmL2 {
         WordEntity(
             id = 177817, setId = 1778, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "pm_retro",
-            original = "לֶקָחִים", translation = "извлечённые уроки (lessons learned)",
+            original = "לְקָחִים", translation = "извлечённые уроки (lessons learned)",
             definition = "תּוֹבָנוֹת מַעֲשִׂיּוֹת מֵעֲבוֹדָה שֶׁעָבְרָה — מָה כְּדַאי לַחֲזֹר עָלָיו וּמָה לֹא לַעֲשׂוֹת שׁוּב.",
             definitionNative = "Практические выводы из прошлой работы — что повторить, а что больше не делать.",
-            example = "לֶקָחִים מֵהַשִּׁחְרוּר הָאַחֲרוֹן נִכְתְּבוּ לִתְעוּד פְּנִימִי מְשֻׁתָּף.",
-            exampleNative = "לֶקָחִים с последнего релиза записали в общую внутреннюю документацию.",
+            example = "לְקָחִים מֵהַשִּׁחְרוּר הָאַחֲרוֹן נִכְתְּבוּ לִתְעוּד פְּנִימִי מְשֻׁתָּף.",
+            exampleNative = "לְקָחִים с последнего релиза записали в общую внутреннюю документацию.",
          fillInBlankExclusions = listOf(177816L, 177818L, 177819L, 177820L)),
         WordEntity(
             id = 177818, setId = 1778, languagePair = "he-ru", rarity = "RARE",

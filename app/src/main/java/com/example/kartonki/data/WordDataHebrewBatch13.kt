@@ -72,11 +72,11 @@ object WordDataHebrewBatch13 {
         WordEntity(
             id = 106305, setId = 1063, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "law_intern",
-            original = "הַגָּנָה", translation = "защита; оборона",
+            original = "הֲגַנָּה", translation = "защита; оборона",
             definition = "הַטֵּעוֹן שֶׁמַּעֲלֶה הַנֶּאֱשָׁם אוֹ סָנֵגוֹרוֹ כְּנֶגֶד הָאִשּׁוּם.",
             definitionNative = "Доводы, выдвигаемые обвиняемым или его защитником против обвинения.",
-            example = "עוֹרֵךְ הַהַגָּנָה בָּנָה טַעֲנָה מְשִׁכְנַעַת לְמַעֲנֵהּ שֶׁל הַנֶּאֱשֶׁמֶת.",
-            exampleNative = "Адвокат הַגָּנָה выстроил убедительный аргумент в защиту обвиняемой.",
+            example = "עוֹרֵךְ הַהֲגַנָּה בָּנָה טַעֲנָה מְשִׁכְנַעַת לְמַעֲנֵהּ שֶׁל הַנֶּאֱשֶׁמֶת.",
+            exampleNative = "Адвокат הֲגַנָּה выстроил убедительный аргумент в защиту обвиняемой.",
         ),
         WordEntity(
             id = 106306, setId = 1063, languagePair = "he-ru", rarity = "COMMON",
@@ -348,11 +348,11 @@ object WordDataHebrewBatch13 {
         WordEntity(
             id = 106410, setId = 1064, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern_advanced",
-            original = "קַטֵּגוֹר", translation = "обвинитель; прокурор",
+            original = "קָטֵגוֹר", translation = "обвинитель; прокурор",
             definition = "גוֹרֶם הַמַּגִּישׁ אִשּׁוּמִים בִּשְׁמָה שֶׁל הַמְּדִינָה אוֹ הַנִּפְגָּע.",
             definitionNative = "Сторона, предъявляющая обвинения от имени государства или потерпевшего.",
             example = "הַקַּטֵּגוֹר טָעַן כִּי הָרְאָיוֹת חַד-מַשְׁמָעִיּוֹת.",
-            exampleNative = "קַטֵּגוֹר заявил, что доказательства однозначны."),
+            exampleNative = "קָטֵגוֹר заявил, что доказательства однозначны."),
         WordEntity(
             id = 106411, setId = 1064, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "law_intern_advanced",

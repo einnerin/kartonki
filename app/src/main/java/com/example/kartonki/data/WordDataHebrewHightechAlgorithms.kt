@@ -109,12 +109,12 @@ object WordDataHebrewHightechAlgorithms {
             pos = "noun", semanticGroup = "tech_algo_structures_linear"),
 
         WordEntity(id = 191004, setId = 1910, languagePair = "he-ru", rarity = "RARE",
-            original = "שָׁלִישִׁיָּה",
+            original = "שְׁלִישִׁיָּה",
             translation = "тройка (3-tuple)",
             definition = "אֹסֶף בֶּן שְׁלוֹשָׁה אֵיבָרִים סְדוּרִים בְּגֹדֶל קָבוּעַ.",
             definitionNative = "Упорядоченный набор из трёх элементов фиксированного размера.",
-            example = "הַפוּנְקְצִיָּה הֶחְזִירָה שָׁלִישִׁיָּה שֶׁל קוֹאוֹרְדִּינָטָה, סְטָטוּס וּשְׁגִיאָה.",
-            exampleNative = "Функция вернула שָׁלִישִׁיָּה из координаты, статуса и ошибки.",
+            example = "הַפוּנְקְצִיָּה הֶחְזִירָה שְׁלִישִׁיָּה שֶׁל קוֹאוֹרְדִּינָטָה, סְטָטוּס וּשְׁגִיאָה.",
+            exampleNative = "Функция вернула שְׁלִישִׁיָּה из координаты, статуса и ошибки.",
             pos = "noun", semanticGroup = "tech_algo_structures_linear", fillInBlankExclusions = listOf(191001L, 191003L)),
 
         // ── Group: tech_algo_structures_nonlinear (5 words) ───────────────────
@@ -185,12 +185,12 @@ object WordDataHebrewHightechAlgorithms {
             pos = "phrase", semanticGroup = "tech_algo_sorting_search", fillInBlankExclusions = listOf(191010L, 191013L, 191014L)),
 
         WordEntity(id = 191012, setId = 1910, languagePair = "he-ru", rarity = "RARE",
-            original = "הַטְלָה",
+            original = "הֲטָלָה",
             translation = "хеширование",
             definition = "תַּהֲלִיךְ שֶׁמַּמִּיר קְלָט בְּגֹדֶל כְּלָשֶׁהוּ לְפֶלֶט קָצָר בְּגֹדֶל קָבוּעַ.",
             definitionNative = "Процесс, что превращает вход любого размера в короткий выход постоянной длины.",
-            example = "אַחֲסוּן סִיסְמָאוֹת תָּמִיד עוֹבֵר הַטְלָה לִפְנֵי כְּתִיבָה לְבָסִיס הַנְּתוּנִים.",
-            exampleNative = "Хранение паролей всегда проходит הַטְלָה перед записью в базу.",
+            example = "אַחֲסוּן סִיסְמָאוֹת תָּמִיד עוֹבֵר הֲטָלָה לִפְנֵי כְּתִיבָה לְבָסִיס הַנְּתוּנִים.",
+            exampleNative = "Хранение паролей всегда проходит הֲטָלָה перед записью в базу.",
             pos = "noun", semanticGroup = "tech_algo_sorting_search"),
 
         WordEntity(id = 191013, setId = 1910, languagePair = "he-ru", rarity = "RARE",

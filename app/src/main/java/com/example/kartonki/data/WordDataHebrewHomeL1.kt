@@ -208,20 +208,20 @@ object WordDataHebrewHomeL1 {
         WordEntity(
             id = 170020, setId = 1700, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "furniture",
-            original = "שַׁרְפְּרַף", translation = "табурет",
+            original = "שְׁרַפְרַף", translation = "табурет",
             definition = "מוֹשָׁב נָמוּךְ בְּלִי מִשְׁעָן לְשִׁמּוּשׁ זְמַנִּי בַּמִּטְבָּח אוֹ בַּחֶדֶר.",
             definitionNative = "Низкое сиденье без спинки для временного использования на кухне или в комнате.",
-            example = "אֲנִי יוֹשֵׁב עַל שַׁרְפְּרַף לְיַד הַשֻּׁלְחָן.",
-            exampleNative = "Я сижу на שַׁרְפְּרַף возле стола.",
+            example = "אֲנִי יוֹשֵׁב עַל שְׁרַפְרַף לְיַד הַשֻּׁלְחָן.",
+            exampleNative = "Я сижу на שְׁרַפְרַף возле стола.",
          fillInBlankExclusions = listOf(170018L, 170019L, 170021L)),
         WordEntity(
             id = 170021, setId = 1700, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "furniture",
-            original = "דַּלְפֵּק", translation = "стойка",
+            original = "דֶּלְפֵּק", translation = "стойка",
             definition = "מִשְׁטָח עֲבוֹדָה גָּבוֹהַּ בַּמִּטְבָּח שֶׁעָלָיו מְכִינִים אֹכֶל.",
             definitionNative = "Высокая рабочая поверхность на кухне, на которой готовят еду.",
-            example = "הִנַּחְתִּי אֶת הַלֶּחֶם עַל הַדַּלְפֵּק.",
-            exampleNative = "Я положил хлеб на דַּלְפֵּק.",
+            example = "הִנַּחְתִּי אֶת הַלֶּחֶם עַל הַדֶּלְפֵּק.",
+            exampleNative = "Я положил хлеб на דֶּלְפֵּק.",
          fillInBlankExclusions = listOf(170018L, 170019L, 170020L)),
 
         // ─── bedding (2) ──────────────────────────────────────────────────────

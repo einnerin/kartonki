@@ -203,11 +203,11 @@ object WordDataHebrewBatch5 {
         WordEntity(
             id = 103821, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "beach_nature",
-            original = "תְּמַנוּן", translation = "осьминог",
+            original = "תְּמָנוּן", translation = "осьминог",
             definition = "יְצוּר יָמִי עִם שְׁמוֹנָה זְרוֹעוֹת הַחַי בַּיָּם.",
             definitionNative = "Морское существо с восемью щупальцами, обитающее в море.",
-            example = "רָאִינוּ תְּמַנוּן קָטָן בֵּין הַסְּלָעִים בְּזְמַן הַשְׁנוֹרְקְּלִינְג.",
-            exampleNative = "Мы увидели маленького תְּמַנוּן между камнями во время снорклинга.",
+            example = "רָאִינוּ תְּמָנוּן קָטָן בֵּין הַסְּלָעִים בְּזְמַן הַשְׁנוֹרְקְּלִינְג.",
+            exampleNative = "Мы увидели маленького תְּמָנוּן между камнями во время снорклинга.",
          fillInBlankExclusions = listOf(103812L, 103813L, 103815L, 103820L, 103823L, 103824L)),
         WordEntity(
             id = 103822, setId = 1038, languagePair = "he-ru", rarity = "UNCOMMON",

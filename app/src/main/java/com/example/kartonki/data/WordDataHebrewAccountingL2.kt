@@ -97,11 +97,11 @@ object WordDataHebrewAccountingL2 {
          fillInBlankExclusions = listOf(171407L, 171408L, 171409L, 171410L)),
         WordEntity(
             id = 171407, setId = 1714, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "עֶמְלָה",
+            original = "עֲמָלָה",
             translation = "комиссия (банковская)",
             definition = "סכום קטן שגובה הבנק עבור פעולה או שירות פיננסי.",
             definitionNative = "Небольшая сумма, которую банк берёт за услугу или операцию.",
-            example = "הבנק חייב אותי בתוספת עֶמְלָה על המשיכה.",
+            example = "הבנק חייב אותי בתוספת עֲמָלָה על המשיכה.",
             exampleNative = "Банк начислил мне дополнительную комиссию за снятие.",
             pos = "noun",
             semanticGroup = "accounting_payments",

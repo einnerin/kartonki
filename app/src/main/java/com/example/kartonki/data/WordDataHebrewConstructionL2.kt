@@ -233,11 +233,11 @@ object WordDataHebrewConstructionL2 {
         WordEntity(
             id = 172419, setId = 1724, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "construction_measurements",
-            original = "אָנָךְ", translation = "отвес",
+            original = "אֲנָךְ", translation = "отвес",
             definition = "מִשְׁקֹלֶת קְטַנָּה תְּלוּיָה עַל חוּט לִבְדִיקַת קַו אֲנָכִי.",
             definitionNative = "Маленький груз на верёвке — проверяет вертикаль стены.",
-            example = "הוּא הוֹרִיד אָנָךְ לְצַד הַקִּיר הֶחָדָשׁ.",
-            exampleNative = "Он опустил אָנָךְ вдоль новой стены.",
+            example = "הוּא הוֹרִיד אֲנָךְ לְצַד הַקִּיר הֶחָדָשׁ.",
+            exampleNative = "Он опустил אֲנָךְ вдоль новой стены.",
             isFillInBlankSafe = true,
             fillInBlankExclusions = listOf(172416L, 172417L, 172418L, 172420L)),
         WordEntity(

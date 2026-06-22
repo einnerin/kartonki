@@ -133,11 +133,11 @@ object WordDataHebrewSportsFootball {
             fillInBlankExclusions = listOf(189212L, 189213L, 189214L, 189215L)),
 
         WordEntity(id = 189212, setId = 1892, languagePair = "he-ru", rarity = "UNCOMMON",
-            original = "מַסִירָה", translation = "передача мяча",
+            original = "מְסִירָה", translation = "передача мяча",
             definition = "הַעֲבָרַת הַכַּדּוּר מִשַּׂחְקָן אֶחָד לִשְׁנִי בַּקְּבוּצָה.",
             definitionNative = "Когда игрок отдаёт мяч партнёру по команде ногой или головой.",
-            example = "הוּא נָתַן מַסִירָה מְדוּיֶּקֶת אֶל הַחָלוּץ הַחוֹפְשִׁי.",
-            exampleNative = "Он отдал точную מַסִירָה на свободного нападающего.",
+            example = "הוּא נָתַן מְסִירָה מְדוּיֶּקֶת אֶל הַחָלוּץ הַחוֹפְשִׁי.",
+            exampleNative = "Он отдал точную מְסִירָה на свободного нападающего.",
             pos = "noun", semanticGroup = "sport_football_play",
             fillInBlankExclusions = listOf(189211L, 189213L, 189214L, 189215L)),
 

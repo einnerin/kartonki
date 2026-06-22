@@ -116,11 +116,11 @@ object WordDataHebrewSchoolL3 {
         WordEntity(
             id = 181406, setId = 1814, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "school_exams",
-            original = "בּוֹחַן", translation = "контрольная работа",
+            original = "בּוֹחֵן", translation = "контрольная работа",
             definition = "מִבְחָן קָצָר בְּנוֹשֵׂא אֶחָד שֶׁמּוֹרֶה נוֹתֵן לְלֹא אַזְהָרָה רַבָּה.",
             definitionNative = "Короткая проверка по одной теме, которую учитель даёт почти без предупреждения.",
-            example = "הַמּוֹרָה הוֹדִיעָה עַל בּוֹחַן פִּתְאוֹמִי בְּלֹא הֲכָנָה מֻקְדֶּמֶת.",
-            exampleNative = "Учительница объявила внезапный בּוֹחַן без подготовки.",
+            example = "הַמּוֹרָה הוֹדִיעָה עַל בּוֹחֵן פִּתְאוֹמִי בְּלֹא הֲכָנָה מֻקְדֶּמֶת.",
+            exampleNative = "Учительница объявила внезапный בּוֹחֵן без подготовки.",
          fillInBlankExclusions = listOf(181407L, 181410L)),
         WordEntity(
             id = 181407, setId = 1814, languagePair = "he-ru", rarity = "RARE",

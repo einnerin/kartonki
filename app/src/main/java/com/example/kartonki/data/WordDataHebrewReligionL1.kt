@@ -260,11 +260,11 @@ object WordDataHebrewReligionL1 {
         WordEntity(
             id = 170124, setId = 1701, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion_people",
-            original = "רֶבִּי", translation = "ребе (хасидский лидер)",
+            original = "רַבִּי", translation = "ребе (хасидский лидер)",
             definition = "מַנְהִיג רוּחָנִי שֶׁל קְהִלָּה חֲסִידִית, מוֹרֶה דֶּרֶךְ לְתַלְמִידָיו.",
             definitionNative = "Духовный лидер хасидской общины и наставник своих последователей.",
-            example = "הַחֲסִידִים נוֹסְעִים אֶל הָרֶבִּי לְבָרֵךְ.",
-            exampleNative = "Хасиды едут к רֶבִּי за благословением.",
+            example = "הַחֲסִידִים נוֹסְעִים אֶל הָרַבִּי לְבָרֵךְ.",
+            exampleNative = "Хасиды едут к רַבִּי за благословением.",
          fillInBlankExclusions = listOf(170123L, 170125L)),
         WordEntity(
             id = 170125, setId = 1701, languagePair = "he-ru", rarity = "UNCOMMON",

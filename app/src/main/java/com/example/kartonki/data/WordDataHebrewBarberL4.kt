@@ -171,11 +171,11 @@ object WordDataHebrewBarberL4 {
         WordEntity(
             id = 179814, setId = 1798, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "barber_dyeing",
-            original = "כֵּהוּי", translation = "затемнение тона",
+            original = "כָּהוּי", translation = "затемнение тона",
             definition = "הַעֲמָקַת הַגָּוֶן בְּמִסְפַּר רָמוֹת בְּעֶזְרַת תַּכְשִׁירִים בְּלִי הַבְהָרָה.",
             definitionNative = "Углубление тона на несколько уровней средствами без осветления.",
-            example = "הַכֵּהוּי הַחֲדָשׁ נוֹתֵן עֹמֶק בְּלִי לִפְגֹּעַ בַּקּוֹצָה.",
-            exampleNative = "Новый כֵּהוּי даёт глубину без вреда для пряди.",
+            example = "הַכָּהוּי הַחֲדָשׁ נוֹתֵן עֹמֶק בְּלִי לִפְגֹּעַ בַּקּוֹצָה.",
+            exampleNative = "Новый כָּהוּי даёт глубину без вреда для пряди.",
          fillInBlankExclusions = listOf(179811L, 179813L, 179815L)),
         WordEntity(
             id = 179815, setId = 1798, languagePair = "he-ru", rarity = "EPIC",

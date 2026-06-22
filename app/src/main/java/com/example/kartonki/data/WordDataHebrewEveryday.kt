@@ -336,11 +336,11 @@ object WordDataHebrewEveryday {
         WordEntity(
             id = 100509, setId = 1005, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "family",
-            original = "סָבְתָּא", translation = "бабушка",
+            original = "סָבְתָא", translation = "бабушка",
             definition = "אֵם שֶׁל הָאָב אוֹ הָאֵם.",
             definitionNative = "Мать отца или матери.",
-            example = "סָבְתָּא שֶׁלִּי מְכִינָה אֲרוּחוֹת טְעִימוֹת.",
-            exampleNative = "Моя סָבְתָּא готовит очень вкусные блюда.",
+            example = "סָבְתָא שֶׁלִּי מְכִינָה אֲרוּחוֹת טְעִימוֹת.",
+            exampleNative = "Моя סָבְתָא готовит очень вкусные блюда.",
          fillInBlankExclusions = listOf(100501L, 100502L, 100503L, 100504L, 100505L, 100506L, 100507L, 100508L, 100510L, 100511L, 100512L, 100513L, 100515L, 100522L, 100523L, 100524L, 100525L)),
         WordEntity(
             id = 100510, setId = 1005, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -859,11 +859,11 @@ object WordDataHebrewEveryday {
         WordEntity(
             id = 100716, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "appliance",
-            original = "מַקְרֵר", translation = "холодильник",
+            original = "מְקָרֵר", translation = "холодильник",
             definition = "מַתָּקָן לְשִׁמּוּר אֹכֶל בְּקֹר.",
             definitionNative = "Устройство для хранения еды в холоде.",
-            example = "מַקְרֵר מָלֵא אֹכֶל לְשַׁבָּת.",
-            exampleNative = "מַקְרֵר полон еды на шаббат.",
+            example = "מְקָרֵר מָלֵא אֹכֶל לְשַׁבָּת.",
+            exampleNative = "מְקָרֵר полон еды на шаббат.",
          fillInBlankExclusions = listOf(100713L, 100714L, 100715L, 100718L)),
         WordEntity(
             id = 100717, setId = 1007, languagePair = "he-ru", rarity = "UNCOMMON",

@@ -160,11 +160,11 @@ object WordDataHebrewIsraeliCuisineL2 {
         WordEntity(
             id = 184311, setId = 1843, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "cuisine_l2_kosher",
-            original = "חָלָבִי", translation = "молочный (по кашруту)",
+            original = "חַלַבִּי", translation = "молочный (по кашруту)",
             definition = "אֹכֶל שֶׁמֵּכִיל חָלָב אוֹ גְּבִינָה — אָסוּר בְּעִרְבּוּב עִם בָּשָׂר.",
             definitionNative = "Еда с молоком или сыром — её нельзя смешивать с мясом по кашруту.",
-            example = "אַחֲרֵי אֲרוּחָה חָלָבִי מַמְתִּינִים שָׁעָה לִפְנֵי שֶׁאוֹכְלִים בָּשָׂר.",
-            exampleNative = "После חָלָבִי трапезы ждут час прежде чем сесть за мясное блюдо.",
+            example = "אַחֲרֵי אֲרוּחָה חַלַבִּי מַמְתִּינִים שָׁעָה לִפְנֵי שֶׁאוֹכְלִים בָּשָׂר.",
+            exampleNative = "После חַלַבִּי трапезы ждут час прежде чем сесть за мясное блюдо.",
          fillInBlankExclusions = listOf(184312L, 184313L)),
         WordEntity(
             id = 184312, setId = 1843, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -263,11 +263,11 @@ object WordDataHebrewIsraeliCuisineL2 {
         WordEntity(
             id = 184322, setId = 1843, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "cuisine_l2_holidays_food",
-            original = "הָרוֹסֶת", translation = "харосет (паста на седер Песаха)",
+            original = "הֲרוּסַת", translation = "харосет (паста на седер Песаха)",
             definition = "מִמְרָח חוּם וּמָתוֹק מִתַּפּוּחִים, אֱגוֹזִים וְיַיִן — סִמְלוֹ הַטִּיט שֶׁבְּמִצְרַיִם.",
             definitionNative = "Коричневая сладкая паста из яблок, орехов и вина — её символ — глина из Египта.",
-            example = "בְּלֵיל הַסֵּדֶר טוֹבְלִים מָרוֹר בְּהָרוֹסֶת לִפְנֵי שֶׁאוֹכְלִים אוֹתוֹ.",
-            exampleNative = "В пасхальную ночь обмакивают горькую зелень в הָרוֹסֶת перед тем как съесть.",
+            example = "בְּלֵיל הַסֵּדֶר טוֹבְלִים מָרוֹר בְּהֲרוּסַת לִפְנֵי שֶׁאוֹכְלִים אוֹתוֹ.",
+            exampleNative = "В пасхальную ночь обмакивают горькую зелень в הֲרוּסַת перед тем как съесть.",
          fillInBlankExclusions = listOf(184321L, 184323L, 184324L, 184325L)),
         WordEntity(
             id = 184323, setId = 1843, languagePair = "he-ru", rarity = "UNCOMMON",

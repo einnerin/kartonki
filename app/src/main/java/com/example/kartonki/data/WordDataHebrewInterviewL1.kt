@@ -174,11 +174,11 @@ object WordDataHebrewInterviewL1 {
         WordEntity(
             id = 175213, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "interview_company_basic",
-            original = "מַנְהֵל", translation = "руководитель",
+            original = "מְנַהֵל", translation = "руководитель",
             definition = "אִישׁ שֶׁאַחְרַאי עַל קְבוּצָה שֶׁל אֲנָשִׁים וּמַחְלִיט מָה לַעֲשׂוֹת.",
             definitionNative = "Тот, кто отвечает за группу людей и решает, что делать.",
             example = "הַמַּנְהֵל הַיָּשִׁיר שֶׁלִּי הָיָה נוֹכֵחַ בָּרֵאָיוֹן.",
-            exampleNative = "Мой прямой מַנְהֵל присутствовал на собеседовании.",
+            exampleNative = "Мой прямой מְנַהֵל присутствовал на собеседовании.",
         ),
         WordEntity(
             id = 175214, setId = 1752, languagePair = "he-ru", rarity = "COMMON",
@@ -277,11 +277,11 @@ object WordDataHebrewInterviewL1 {
         WordEntity(
             id = 175224, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "interview_first_contact",
-            original = "תַּזְכֹּרֶת", translation = "напоминание (о встрече)",
+            original = "תִּזְכֹּרֶת", translation = "напоминание (о встрече)",
             definition = "פְּתָק קָצָר אוֹ הוֹדָעָה שֶׁמַּזְכִּירִים שֶׁעוֹד מְעַט פְּגִישָׁה.",
             definitionNative = "Короткая записка или сообщение — напоминают, что скоро встреча.",
-            example = "קִבַּלְתִּי תַּזְכֹּרֶת בָּטֶלֶפוֹן יוֹם לִפְנֵי הַפְּגִישָׁה הָרִאשׁוֹנָה.",
-            exampleNative = "Я получил תַּזְכֹּרֶת на телефон за день до первой встречи.",
+            example = "קִבַּלְתִּי תִּזְכֹּרֶת בָּטֶלֶפוֹן יוֹם לִפְנֵי הַפְּגִישָׁה הָרִאשׁוֹנָה.",
+            exampleNative = "Я получил תִּזְכֹּרֶת на телефон за день до первой встречи.",
          fillInBlankExclusions = listOf(175222L, 175223L, 175225L)),
         WordEntity(
             id = 175225, setId = 1752, languagePair = "he-ru", rarity = "UNCOMMON",

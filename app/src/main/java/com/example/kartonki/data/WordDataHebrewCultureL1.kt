@@ -58,11 +58,11 @@ object WordDataHebrewCultureL1 {
         WordEntity(
             id = 170403, setId = 1704, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "arts_general",
-            original = "אַמָּנוּתִי", translation = "художественный",
+            original = "אָמָּנוּתִי", translation = "художественный",
             definition = "כָּזֶה הַשַּׁיָּךְ לְעוֹלָם הַיֵּצֶר וְלֹא לִדְבָרִים מַעֲשִׂיִּים.",
             definitionNative = "Относящийся к миру творчества, а не к практическим вещам.",
-            example = "הַסֶּרֶט הַזֶּה הוּא סֶרֶט אַמָּנוּתִי וְלֹא מִסְחָרִי.",
-            exampleNative = "Этот фильм — אַמָּנוּתִי, а не коммерческий.",
+            example = "הַסֶּרֶט הַזֶּה הוּא סֶרֶט אָמָּנוּתִי וְלֹא מִסְחָרִי.",
+            exampleNative = "Этот фильм — אָמָּנוּתִי, а не коммерческий.",
         ),
         WordEntity(
             id = 170404, setId = 1704, languagePair = "he-ru", rarity = "COMMON",
@@ -163,11 +163,11 @@ object WordDataHebrewCultureL1 {
         WordEntity(
             id = 170414, setId = 1704, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "arts_singers",
-            original = "מָקְהֵלָה", translation = "хор",
+            original = "מַקְהֵלָה", translation = "хор",
             definition = "קְבוּצַת אֲנָשִׁים שֶׁשָּׁרִים יַחַד בְּקוֹלוֹת שׁוֹנִים.",
             definitionNative = "Группа людей, поющих вместе разными голосами.",
             example = "הַמָּקְהֵלָה הוֹפִיעָה בִּכְנֵסִיָּה בָּעֶרֶב חַג הַמּוֹלָד.",
-            exampleNative = "מָקְהֵלָה пела в церкви в рождественский вечер.",
+            exampleNative = "מַקְהֵלָה пела в церкви в рождественский вечер.",
         ),
 
         // ── arts_dancers (3) ─────────────────────────────────────────────────

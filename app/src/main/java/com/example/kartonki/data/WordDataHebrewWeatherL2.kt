@@ -242,11 +242,11 @@ object WordDataHebrewWeatherL2 {
         WordEntity(
             id = 181823, setId = 1818, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "weather_l2_meteo",
-            original = "קַיְצִי", translation = "летний",
+            original = "קֵיצִי", translation = "летний",
             definition = "אוֹפְיָנִי לַקַּיִץ — חַם, יָבֵשׁ וְשִׁמְשִׁי, יָמִים אֲרֻכִּים וְלֵילוֹת קְצָרִים.",
             definitionNative = "Свойственный лету — жарко, сухо и солнечно, длинные дни и короткие ночи.",
-            example = "עֶרֶב קַיְצִי נָעִים מָשַׁךְ אוֹתָנוּ לְשֶׁבֶת בְּחוּץ עַד מְאֻחָר.",
-            exampleNative = "Приятный קַיְצִי вечер выманил нас сидеть на улице допоздна.",
+            example = "עֶרֶב קֵיצִי נָעִים מָשַׁךְ אוֹתָנוּ לְשֶׁבֶת בְּחוּץ עַד מְאֻחָר.",
+            exampleNative = "Приятный קֵיצִי вечер выманил нас сидеть на улице допоздна.",
          fillInBlankExclusions = listOf(181811L, 181812L, 181813L, 181824L, 181825L)),
         WordEntity(
             id = 181824, setId = 1818, languagePair = "he-ru", rarity = "UNCOMMON",

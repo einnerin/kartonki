@@ -169,11 +169,11 @@ object WordDataHebrewWeatherL4 {
         WordEntity(
             id = 182014, setId = 1820, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "weather_l4_extreme_events",
-            original = "מַעֲרְבֹּלֶת", translation = "вихрь, водоворот воздуха",
+            original = "מְעַרְבֶּלֶת", translation = "вихрь, водоворот воздуха",
             definition = "סִיבוּב חָזָק שֶׁל אֲוִיר אוֹ מַיִם בִּמְהִירוּת רַבָּה סְבִיב צִיר אֶחָד.",
             definitionNative = "Сильное стремительное вращение воздуха или воды вокруг одной оси.",
-            example = "מַעֲרְבֹּלֶת שֶׁל עָלִים וַעֲפָרִית עָבְרָה דֶּרֶךְ הַחָצֵר.",
-            exampleNative = "מַעֲרְבֹּלֶת из листьев и пыли пронеслась через двор.",
+            example = "מְעַרְבֶּלֶת שֶׁל עָלִים וַעֲפָרִית עָבְרָה דֶּרֶךְ הַחָצֵר.",
+            exampleNative = "מְעַרְבֶּלֶת из листьев и пыли пронеслась через двор.",
          fillInBlankExclusions = listOf(182011L, 182012L, 182015L)),
         WordEntity(
             id = 182015, setId = 1820, languagePair = "he-ru", rarity = "RARE",
@@ -245,11 +245,11 @@ object WordDataHebrewWeatherL4 {
         WordEntity(
             id = 182022, setId = 1820, languagePair = "he-ru", rarity = "EPIC",
             pos = "adjective", semanticGroup = "weather_l4_descriptive_high",
-            original = "מָעֻרְפָּל", translation = "мглистый",
+            original = "מְעַרְפֵּל", translation = "мглистый",
             definition = "מְכֻסֶּה בְּעֲרָפֶל קַל אוֹ בְּאוֹב שֶׁמְּטַשְׁטֵשׁ אֶת קַוֵּי הָאוֹפֶק.",
             definitionNative = "Покрытый лёгким туманом или дымкой, что стирает контуры горизонта.",
-            example = "בֹּקֶר מָעֻרְפָּל שָׁכַן עַל הַגְּבָעוֹת מִסָּבִיב לִיֵרוּשָׁלַיִם.",
-            exampleNative = "מָעֻרְפָּל утро лежало на холмах вокруг Иерусалима.",
+            example = "בֹּקֶר מְעַרְפֵּל שָׁכַן עַל הַגְּבָעוֹת מִסָּבִיב לִיֵרוּשָׁלַיִם.",
+            exampleNative = "מְעַרְפֵּל утро лежало на холмах вокруг Иерусалима.",
          fillInBlankExclusions = listOf(182021L, 182023L, 182024L, 182025L)),
         WordEntity(
             id = 182023, setId = 1820, languagePair = "he-ru", rarity = "EPIC",

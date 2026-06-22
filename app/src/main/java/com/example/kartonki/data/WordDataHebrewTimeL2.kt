@@ -107,11 +107,11 @@ object WordDataHebrewTimeL2 {
         WordEntity(
             id = 183308, setId = 1833, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "time_l2_jewish_calendar",
-            original = "אֶלוּל", translation = "элуль (последний месяц года)",
+            original = "אֱלוּל", translation = "элуль (последний месяц года)",
             definition = "הַחֹדֶשׁ הָאַחֲרוֹן בְּשָׁנָה הָעִבְרִית — חֹדֶשׁ הַסְּלִיחוֹת לִפְנֵי תִּשְׁרֵי.",
             definitionNative = "Последний месяц еврейского года — месяц молитв-слихот перед тишреем.",
-            example = "בְּחֹדֶשׁ אֶלוּל שׁוֹמְעִים אֶת קוֹל הַשּׁוֹפָר בְּכָל בֹּקֶר.",
-            exampleNative = "В месяц אֶלוּל каждое утро слышен звук шофара в синагогах.",
+            example = "בְּחֹדֶשׁ אֱלוּל שׁוֹמְעִים אֶת קוֹל הַשּׁוֹפָר בְּכָל בֹּקֶר.",
+            exampleNative = "В месяц אֱלוּל каждое утро слышен звук шофара в синагогах.",
          fillInBlankExclusions = listOf(183306L, 183307L, 183309L, 183310L)),
         WordEntity(
             id = 183309, setId = 1833, languagePair = "he-ru", rarity = "RARE",

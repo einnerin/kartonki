@@ -67,11 +67,11 @@ object WordDataHebrewBatch6 {
         WordEntity(
             id = 104105, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "sport_basics",
-            original = "כַּדּוּרְסָל", translation = "баскетбол",
+            original = "כַּדּוּרְסַל", translation = "баскетбол",
             definition = "מִשְׂחַק קְבוּצָתִי שֶׁבּוֹ מְנַסִּים לְהַכְנִיס כַּדּוּר לְסַל הַיְּרִיב.",
             definitionNative = "Командная игра, в которой нужно забросить мяч в корзину соперника.",
-            example = "הַנַּעֲרִים מְשַׂחֲקִים כַּדּוּרְסָל בְּמִגְרָשׁ הַשְּׁכוּנָה.",
-            exampleNative = "Ребята играют в כַּדּוּרְסָל на районной площадке.",
+            example = "הַנַּעֲרִים מְשַׂחֲקִים כַּדּוּרְסַל בְּמִגְרָשׁ הַשְּׁכוּנָה.",
+            exampleNative = "Ребята играют в כַּדּוּרְסַל на районной площадке.",
          fillInBlankExclusions = listOf(104101L, 104102L, 104103L, 104106L, 104107L, 104113L, 104114L, 104115L, 104117L, 104118L, 104125L)),
         WordEntity(
             id = 104106, setId = 1041, languagePair = "he-ru", rarity = "COMMON",
@@ -191,11 +191,11 @@ object WordDataHebrewBatch6 {
         WordEntity(
             id = 104119, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "sport_training",
-            original = "אִיצָּה", translation = "ускорение, спринт",
+            original = "אִיצָה", translation = "ускорение, спринт",
             definition = "הַגְבָּרַת מְהִירוּת הַרִיצָה לְמֶשֶׁךְ זְמַן קָצָר.",
             definitionNative = "Увеличение скорости бега на короткое время.",
-            example = "הוּא עָשָׂה אִיצָּה בַּחֲמִישִּׁים הַמֶּטֶר הָאַחֲרוֹנִים שֶׁל הַמֵּרוֹץ.",
-            exampleNative = "Он сделал אִיצָּה на последних пятидесяти метрах забега.",
+            example = "הוּא עָשָׂה אִיצָה בַּחֲמִישִּׁים הַמֶּטֶר הָאַחֲרוֹנִים שֶׁל הַמֵּרוֹץ.",
+            exampleNative = "Он сделал אִיצָה на последних пятидесяти метрах забега.",
          fillInBlankExclusions = listOf(104108L, 104111L, 104122L)),
         WordEntity(
             id = 104120, setId = 1041, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -264,11 +264,11 @@ object WordDataHebrewBatch6 {
         WordEntity(
             id = 104202, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "restaurant_people",
-            original = "מֶלְצָר", translation = "официант",
+            original = "מֶלְצַר", translation = "официант",
             definition = "עוֹבֵד מִסְעָדָה הַמְּשָׁרֵת אֶת הַלָּקוֹחוֹת וּמֵבִיא אֶת הַמָּנוֹת.",
             definitionNative = "Работник ресторана, который обслуживает клиентов и приносит блюда.",
             example = "הִזְמַנּוּ אֶת הַמֶּלְצָר כְּדֵי לְהַזְמִין מָנָה עִיקָרִית.",
-            exampleNative = "Мы подозвали מֶלְצָר, чтобы заказать основное блюдо."),
+            exampleNative = "Мы подозвали מֶלְצַר, чтобы заказать основное блюдо."),
         WordEntity(
             id = 104203, setId = 1042, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "restaurant_food",
@@ -345,11 +345,11 @@ object WordDataHebrewBatch6 {
         WordEntity(
             id = 104211, setId = 1042, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adjective", semanticGroup = "restaurant_kosher",
-            original = "בָּשָׂרִי", translation = "мясной (кошерный)",
+            original = "בְּשָׂרִי", translation = "мясной (кошерный)",
             definition = "מָאכָל הַמְּכִיל בָּשָׂר וְאֵינוֹ מְעֹרָב עִם חָלָב לְפִי כַּשְׁרוּת.",
             definitionNative = "Еда, содержащая мясо и не смешанная с молочными продуктами по законам кашрута.",
-            example = "הִזְמַנּוּ מִסְעָדָה בָּשָׂרִית לַאֲרוּחַת הַחַגִּיגָה.",
-            exampleNative = "Мы заказали столик в בָּשָׂרִי ресторане для праздничного ужина.",
+            example = "הִזְמַנּוּ מִסְעָדָה בְּשָׂרִית לַאֲרוּחַת הַחַגִּיגָה.",
+            exampleNative = "Мы заказали столик в בְּשָׂרִי ресторане для праздничного ужина.",
             isFillInBlankSafe = false,
         ),
         WordEntity(

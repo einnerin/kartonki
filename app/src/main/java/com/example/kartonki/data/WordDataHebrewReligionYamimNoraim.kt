@@ -167,12 +167,12 @@ object WordDataHebrewReligionYamimNoraim {
             pos = "noun", semanticGroup = "religion_yamim_yom_kippur", fillInBlankExclusions = listOf(190709L)),
 
         WordEntity(id = 190711, setId = 1907, languagePair = "he-ru", rarity = "EPIC",
-            original = "אַשַׁמְנוּ",
+            original = "אָשַׁמְנוּ",
             translation = "«согрешили мы»",
             definition = "פְּתִיחָה קְצָרָה שֶׁל הַוִּידּוּי, שֶׁמּוֹנָה לְפִי סֵדֶר הָאוֹתִיּוֹת אֶת סוּגֵי הָעַוְלוֹת.",
             definitionNative = "Краткое вступление исповеди, перечисляющее в алфавитном порядке виды провинностей.",
-            example = "כָּל הַקָּהָל פָּתַח בְּאַשַׁמְנוּ בְּאוֹתוֹ הַטָּעַם.",
-            exampleNative = "Вся община начала אַשַׁמְנוּ на один и тот же напев.",
+            example = "כָּל הַקָּהָל פָּתַח בְּאָשַׁמְנוּ בְּאוֹתוֹ הַטָּעַם.",
+            exampleNative = "Вся община начала אָשַׁמְנוּ на один и тот же напев.",
             pos = "phrase", semanticGroup = "religion_yamim_yom_kippur"),
 
         WordEntity(id = 190712, setId = 1907, languagePair = "he-ru", rarity = "EPIC",

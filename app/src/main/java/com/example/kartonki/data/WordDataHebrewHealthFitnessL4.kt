@@ -154,11 +154,11 @@ object WordDataHebrewHealthFitnessL4 {
         WordEntity(
             id = 179011, setId = 1790, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "health_mental",
-            original = "קַשִּׁיבוּת", translation = "осознанность; майндфулнес",
+            original = "קְשִׁיבוּת", translation = "осознанность; майндфулнес",
             definition = "מַצָּב שֶׁל תְּשׁוּמַת לֵב מְלֵאָה לָרֶגַע הַנּוֹכְחִי בְּלִי שִׁפּוּט מַחְשְׁבוֹת וּרְגָשׁוֹת.",
             definitionNative = "Состояние полного внимания к текущему моменту без оценки мыслей.",
-            example = "תַּרְגּוּל קַשִּׁיבוּת חֲמֵשׁ דַּקּוֹת בַּבֹּקֶר מַרְגִּיעַ לִי אֶת הַיּוֹם.",
-            exampleNative = "Пять минут קַשִּׁיבוּת утром делают мне весь день спокойнее.",
+            example = "תַּרְגּוּל קְשִׁיבוּת חֲמֵשׁ דַּקּוֹת בַּבֹּקֶר מַרְגִּיעַ לִי אֶת הַיּוֹם.",
+            exampleNative = "Пять минут קְשִׁיבוּת утром делают мне весь день спокойнее.",
         ),
         WordEntity(
             id = 179012, setId = 1790, languagePair = "he-ru", rarity = "LEGENDARY",

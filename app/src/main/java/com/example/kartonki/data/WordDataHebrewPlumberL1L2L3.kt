@@ -253,11 +253,11 @@ object WordDataHebrewPlumberL1L2L3 {
         WordEntity(
             id = 174221, setId = 1742, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "plumbing_service",
-            original = "שְׁרַבְרָב", translation = "сантехник",
+            original = "שְׁרַבְרַב", translation = "сантехник",
             definition = "אוּמָן הַמְּטַפֵּל בְּצִנּוֹרוֹת, בְּרָזִים וְאַסְלוֹת בַּבַּיִת.",
             definitionNative = "Мастер, обслуживающий трубы, краны и водопровод в квартире.",
             example = "הַשְּׁרַבְרָב הִגִּיעַ עִם אַרְגַּז כֵּלִים גָּדוֹל.",
-            exampleNative = "שְׁרַבְרָב пришёл с большим ящиком инструментов.",
+            exampleNative = "שְׁרַבְרַב пришёл с большим ящиком инструментов.",
         ),
         WordEntity(
             id = 174222, setId = 1742, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -336,11 +336,11 @@ object WordDataHebrewPlumberL1L2L3 {
         WordEntity(
             id = 174304, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "plumbing_fittings",
-            original = "מַחֲבֵר", translation = "муфта (соединение труб)",
+            original = "מְחַבֵּר", translation = "муфта (соединение труб)",
             definition = "שַׁרְוּלִית קְצָרָה הַמַּצְמִידָה שְׁנֵי צִנּוֹרוֹת לְזֶרֶם אֶחָד.",
             definitionNative = "Короткая втулка, соединяющая две трубы в один поток.",
             example = "הַמַּחֲבֵר הַחָדָשׁ הִחְזִיק אֶת הַלַּחַץ בְּלִי בְּעָיוֹת.",
-            exampleNative = "Новый מַחֲבֵר держит давление без жалоб.",
+            exampleNative = "Новый מְחַבֵּר держит давление без жалоб.",
         ),
         WordEntity(
             id = 174305, setId = 1743, languagePair = "he-ru", rarity = "UNCOMMON",
@@ -618,11 +618,11 @@ object WordDataHebrewPlumberL1L2L3 {
         WordEntity(
             id = 174408, setId = 1744, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "plumbing_floor_systems",
-            original = "מַפְזֵר", translation = "коллектор (распределительный)",
+            original = "מְפַזֵּר", translation = "коллектор (распределительный)",
             definition = "צֹמֶת צִנּוֹרוֹת הַמְּחַלֶּקֶת זֶרֶם מַיִם לְכַמָּה לוּלָאוֹת מַקְבִּילוֹת.",
             definitionNative = "Узел, разделяющий поток на несколько параллельных контуров.",
-            example = "מַפְזֵר עִם שְׁמוֹנֶה יְצִיאוֹת מְזִין אֶת הָרִצְפָּה הַמְחַמֶּמֶת.",
-            exampleNative = "מַפְזֵר с восемью выходами питает тёплый пол.",
+            example = "מְפַזֵּר עִם שְׁמוֹנֶה יְצִיאוֹת מְזִין אֶת הָרִצְפָּה הַמְחַמֶּמֶת.",
+            exampleNative = "מְפַזֵּר с восемью выходами питает тёплый пол.",
         ),
         WordEntity(
             id = 174409, setId = 1744, languagePair = "he-ru", rarity = "RARE",

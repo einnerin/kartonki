@@ -198,11 +198,11 @@ object WordDataHebrewRelHolidaysL1 {
         WordEntity(
             id = 171017, setId = 1710, languagePair = "he-ru", rarity = "COMMON",
             pos = "interjection", semanticGroup = "holidays_greetings",
-            original = "הַלְלוּיָה", translation = "слава Богу!",
+            original = "הַלְלוּיָהּ", translation = "слава Богу!",
             definition = "קְרִיאַת שֶׁבַח וְשִׂמְחָה לְאֵל בִּזְמַן תְּפִלָּה אוֹ שִׁיר.",
             definitionNative = "Восторженное прославление Бога во время молитвы или песни.",
-            example = "הַסַּבָּא קָרָא הַלְלוּיָה כְּשֶׁשָּׁמַע אֶת הַחֲדָשׁוֹת הַטּוֹבוֹת.",
-            exampleNative = "Дедушка воскликнул הַלְלוּיָה, когда услышал хорошие новости.",
+            example = "הַסַּבָּא קָרָא הַלְלוּיָהּ כְּשֶׁשָּׁמַע אֶת הַחֲדָשׁוֹת הַטּוֹבוֹת.",
+            exampleNative = "Дедушка воскликнул הַלְלוּיָהּ, когда услышал хорошие новости.",
          fillInBlankExclusions = listOf(171016L)),
         WordEntity(
             id = 171018, setId = 1710, languagePair = "he-ru", rarity = "UNCOMMON",

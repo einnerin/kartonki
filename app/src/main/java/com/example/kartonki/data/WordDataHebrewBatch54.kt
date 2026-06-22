@@ -77,11 +77,11 @@ object WordDataHebrewBatch54 {
 
         WordEntity(id = 130510, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "construction_structure",
-            original = "תּוֹשָׁבֶת", translation = "кронштейн / крепёж",
+            original = "תּוֹשֶׁבֶת", translation = "кронштейн / крепёж",
             definition = "פְּרִיט מַתֶּכֶת קָטָן שֶׁמְּחַבֵּר עֵץ אוֹ צִנּוֹר אֶל קִיר.",
             definitionNative = "Маленькая металлическая деталь — держит трубу или полку у стены.",
-            example = "הוּא בָּרַג תּוֹשָׁבֶת חֲדָשָׁה לְאַרְכּוּב הַמַּדָּף.",
-            exampleNative = "Он прикрутил новую תּוֹשָׁבֶת для полки.", fillInBlankExclusions = listOf(130502L, 130520L)),
+            example = "הוּא בָּרַג תּוֹשֶׁבֶת חֲדָשָׁה לְאַרְכּוּב הַמַּדָּף.",
+            exampleNative = "Он прикрутил новую תּוֹשֶׁבֶת для полки.", fillInBlankExclusions = listOf(130502L, 130520L)),
 
         WordEntity(id = 130520, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "construction_structure",
@@ -176,11 +176,11 @@ object WordDataHebrewBatch54 {
         // ── construction_building_parts (5) — части здания и площадки ──
         WordEntity(id = 130503, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "construction_building_parts",
-            original = "רְצָפָה", translation = "пол",
+            original = "רִצְפָּה", translation = "пол",
             definition = "הַמִּשְׁטָח הַתַּחְתּוֹן בַּחֶדֶר שֶׁעָלָיו דּוֹרְכִים בָּרַגְלַיִם.",
             definitionNative = "Нижняя плоскость комнаты, по которой ходят ногами.",
-            example = "הַיְלָדִים שָׁפְכוּ מִיץ עַל הָרְצָפָה הַחֲדָשָׁה.",
-            exampleNative = "Дети пролили сок на новую רְצָפָה.", fillInBlankExclusions = listOf(130502L, 130510L, 130518L, 130519L)),
+            example = "הַיְלָדִים שָׁפְכוּ מִיץ עַל הָרִצְפָּה הַחֲדָשָׁה.",
+            exampleNative = "Дети пролили сок на новую רִצְפָּה.", fillInBlankExclusions = listOf(130502L, 130510L, 130518L, 130519L)),
 
         WordEntity(id = 130505, setId = 1305, languagePair = "he-ru", rarity = "COMMON",
             pos = "phrase", semanticGroup = "construction_building_parts",
@@ -418,11 +418,11 @@ object WordDataHebrewBatch54 {
 
         WordEntity(id = 130614, setId = 1306, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "construction_specialists_safety",
-            original = "בַּנָּאי", translation = "строитель",
+            original = "בַּנַּאי", translation = "строитель",
             definition = "פּוֹעֵל שֶׁמַּנִּיחַ לְבֵנִים אוֹ אֲבָנִים זֶה עַל גַּב זֶה לְקִיר יָשָׁר.",
             definitionNative = "Рабочий, кладущий кирпичи или камни ровными рядами.",
-            example = "הַבַּנָּאי הִנִּיחַ אֶת הַשּׁוּרָה הָאַחֲרוֹנָה לִפְנֵי הָעֶרֶב.",
-            exampleNative = "בַּנָּאי уложил последний ряд до темноты.", fillInBlankExclusions = listOf(130608L, 130612L)),
+            example = "הַבַּנַּאי הִנִּיחַ אֶת הַשּׁוּרָה הָאַחֲרוֹנָה לִפְנֵי הָעֶרֶב.",
+            exampleNative = "בַּנַּאי уложил последний ряд до темноты.", fillInBlankExclusions = listOf(130608L, 130612L)),
 
         // ── construction_engineering (5) — инженерные действия и термины ──
         WordEntity(id = 130609, setId = 1306, languagePair = "he-ru", rarity = "RARE",
@@ -459,11 +459,11 @@ object WordDataHebrewBatch54 {
 
         WordEntity(id = 130625, setId = 1306, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "construction_engineering",
-            original = "תִּשְׁתִּית", translation = "инфраструктура",
+            original = "תַּשְׁתִּית", translation = "инфраструктура",
             definition = "כָּל הַצִּנּוֹרוֹת, הַכְּבָלִים וְהַכְּבִישִׁים שֶׁמְּשָׁרְתִים שְׁכוּנָה שְׁלֵמָה.",
             definitionNative = "Все трубы, кабели и дороги, без которых живёт целый район.",
-            example = "תִּשְׁתִּית הַמַּיִם בָּרֹבַע הַחָדָשׁ עוֹד לֹא מוּכָנָה.",
-            exampleNative = "Водяная תִּשְׁתִּית в новом районе ещё не готова.", fillInBlankExclusions = listOf(130609L, 130615L, 130616L)),
+            example = "תַּשְׁתִּית הַמַּיִם בָּרֹבַע הַחָדָשׁ עוֹד לֹא מוּכָנָה.",
+            exampleNative = "Водяная תַּשְׁתִּית в новом районе ещё не готова.", fillInBlankExclusions = listOf(130609L, 130615L, 130616L)),
 
         // ══════════════════════════════════════════════════════════════════════
         // Set 1307 — Строительство: углублённый (RARE + EPIC, B2–C1)

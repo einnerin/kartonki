@@ -175,10 +175,10 @@ object WordDataHebrewBatch20 {
         WordEntity(
             id = 108415, setId = 1084, languagePair = "he-ru", rarity = "EPIC",
             pos = "noun", semanticGroup = "cooking",
-            original = "זָעְפְּרָן", translation = "шафран",
+            original = "זְעַפְרָן", translation = "шафран",
             definition = "הַתַּבְלִין הַיָּקָר בָּעוֹלָם, חוּטִים אֲדֻמִּים-כְּתֻמִּים מִתּוֹךְ פֶּרַח כַּרְכֹּם.",
             definitionNative = "Дорогая красно-оранжевая пряность из рылец цветка крокуса.",
-            example = "הַפַּאֵלָּה הִסְפַּגָה בְּגָוֶן זָהֹב בִּזְכוּת זָעְפְּרָן.",
+            example = "הַפַּאֵלָּה הִסְפַּגָה בְּגָוֶן זָהֹב בִּזְכוּת זְעַפְרָן.",
             exampleNative = "Паэлья пропиталась золотым оттенком благодаря шафрану.",
          fillInBlankExclusions = listOf(108416L)),
         WordEntity(

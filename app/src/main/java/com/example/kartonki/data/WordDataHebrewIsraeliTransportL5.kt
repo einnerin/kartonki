@@ -214,11 +214,11 @@ object WordDataHebrewIsraeliTransportL5 {
         WordEntity(
             id = 185615, setId = 1856, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "transport_l5_maritime",
-            original = "יַרְכָּתַיִם", translation = "корма (корабля)",
+            original = "יַרְכָתַיִם", translation = "корма (корабля)",
             definition = "הַחֵלֶק הָאֲחוֹרִי שֶׁל אֳנִיָּה בִּלְשׁוֹן הַמִּקְרָא — שָׁם נִרְדַּם יוֹנָה לִפְנֵי הַסְּעָרָה.",
             definitionNative = "Задняя часть корабля в библейском языке — там уснул Иона перед бурей.",
-            example = "הַקַּבַּרְנִיט יָרַד אֶל יַרְכָּתַיִם הָאֳנִיָּה לִמְצֹא אֶת הַנּוֹסֵעַ הַנֶּעֱדָר.",
-            exampleNative = "Капитан спустился к יַרְכָּתַיִם корабля искать пропавшего пассажира.",
+            example = "הַקַּבַּרְנִיט יָרַד אֶל יַרְכָתַיִם הָאֳנִיָּה לִמְצֹא אֶת הַנּוֹסֵעַ הַנֶּעֱדָר.",
+            exampleNative = "Капитан спустился к יַרְכָתַיִם корабля искать пропавшего пассажира.",
          fillInBlankExclusions = listOf(185611L, 185612L, 185613L, 185614L)),
 
         // ─── transport_l5_archaic_literary (5) ───────────────────────────

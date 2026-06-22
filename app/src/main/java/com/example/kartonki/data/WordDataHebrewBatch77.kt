@@ -57,20 +57,20 @@ object WordDataHebrewBatch77 {
         WordEntity(
             id = 149004, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "sport_kinds",
-            original = "אֲגְרוֹף", translation = "бокс",
+            original = "אֶגְרוֹף", translation = "бокс",
             definition = "סְפּוֹרְט קְרָב שֶׁבּוֹ שְׁנֵי יְרִיבִים מַכִּים זֶה אֶת זֶה בְּכַפּוֹת יָדַיִם בְּתוֹךְ זִירָה.",
             definitionNative = "Единоборство, где двое противников бьют друг друга кулаками в перчатках на ринге.",
-            example = "הוּא מִתְאַמֵּן אֲגְרוֹף שָׁלוֹשׁ פְּעָמִים בַּשָּׁבוּעַ.",
-            exampleNative = "Он тренирует אֲגְרוֹף три раза в неделю."
+            example = "הוּא מִתְאַמֵּן אֶגְרוֹף שָׁלוֹשׁ פְּעָמִים בַּשָּׁבוּעַ.",
+            exampleNative = "Он тренирует אֶגְרוֹף три раза в неделю."
         , fillInBlankExclusions = listOf(149001L, 149002L, 149003L, 149005L, 149006L)),
         WordEntity(
             id = 149005, setId = 1490, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "sport_kinds",
-            original = "שַׁחְיָה", translation = "плавание",
+            original = "שְׂחִיָּה", translation = "плавание",
             definition = "תְּנוּעָה בַּמַּיִם בְּעֶזְרַת יָדַיִם וְרַגְלַיִם, סְפּוֹרְט אוֹ פְּעֻלָּה לְהַנָאָה.",
             definitionNative = "Передвижение в воде с помощью рук и ног, как спорт или для удовольствия.",
-            example = "אֲנִי הוֹלֵךְ לְשַׁחְיָה בַּבְּרֵכָה אַחֲרֵי הָעֲבוֹדָה.",
-            exampleNative = "Я хожу на שַׁחְיָה в бассейн после работы."
+            example = "אֲנִי הוֹלֵךְ לְשְׂחִיָּה בַּבְּרֵכָה אַחֲרֵי הָעֲבוֹדָה.",
+            exampleNative = "Я хожу на שְׂחִיָּה в бассейн после работы."
         , fillInBlankExclusions = listOf(149001L, 149002L, 149003L, 149004L, 149006L)),
         WordEntity(
             id = 149006, setId = 1490, languagePair = "he-ru", rarity = "COMMON",

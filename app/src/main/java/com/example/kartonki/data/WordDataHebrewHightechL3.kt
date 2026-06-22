@@ -163,11 +163,11 @@ object WordDataHebrewHightechL3 {
         WordEntity(
             id = 174713, setId = 1747, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "hightech_database",
-            original = "שְׁאִילְתָּה", translation = "запрос (query)",
+            original = "שְׁאִילְתָה", translation = "запрос (query)",
             definition = "פְּקוּדָה שֶׁמַּגִּיעָה לַמָּסַד וּמְבַקֶּשֶׁת לִקְרֹא אוֹ לְשַׁנּוֹת רְשׁוּמוֹת.",
             definitionNative = "Команда к базе — попросить прочитать или изменить записи.",
             example = "הַשְּׁאִילְתָּה הַזֹּאת שׁוֹלֶפֶת אֶת כָּל הַלָּקוֹחוֹת מֵהַשָּׁבוּעַ הַשּׁוֹעֵב.",
-            exampleNative = "Эта שְׁאִילְתָּה вытаскивает всех клиентов с прошлой недели.",
+            exampleNative = "Эта שְׁאִילְתָה вытаскивает всех клиентов с прошлой недели.",
         ),
         WordEntity(
             id = 174714, setId = 1747, languagePair = "he-ru", rarity = "RARE",

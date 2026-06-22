@@ -250,11 +250,11 @@ object WordDataHebrewIsraeliCuisineL1 {
         WordEntity(
             id = 184223, setId = 1842, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "cuisine_l1_places",
-            original = "מַעֲדַנִיָּה", translation = "деликатесная",
+            original = "מַעֲדַנִּיָּה", translation = "деликатесная",
             definition = "חֲנוּת קְטַנָּה שֶׁמּוֹכֶרֶת גְּבִינוֹת, סָלָטִים וּמַטְעַמִּים מְיֻחָדִים.",
             definitionNative = "Маленький магазин, что продаёт сыры, салаты и особые лакомства.",
             example = "קָנִיתִי גְּבִינַת עִזִּים בַּמַּעֲדַנִיָּה לִכְבוֹד הָאוֹרְחִים.",
-            exampleNative = "Я купил козий сыр в מַעֲדַנִיָּה к приходу гостей."
+            exampleNative = "Я купил козий сыр в מַעֲדַנִּיָּה к приходу гостей."
         ),
         WordEntity(
             id = 184224, setId = 1842, languagePair = "he-ru", rarity = "COMMON",
