@@ -159,11 +159,11 @@ object WordDataHebrewBatch54 {
 
         WordEntity(id = 130522, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "construction_metalwork",
-            original = "שַׂרְבִיט", translation = "металлический прут / арматурный стержень",
+            original = "שַׁרְבִיט", translation = "металлический прут / арматурный стержень",
             definition = "מוֹט בַּרְזֶל אָרֹךְ שֶׁמַּכְנִיסִים לְבֶטוֹן כְּדֵי לְחַזְּקוֹ.",
             definitionNative = "Длинный железный стержень, который закладывают в бетон.",
-            example = "הוּא חָתַךְ שַׂרְבִיט קָצָר יוֹתֵר בְּמַשּׂוֹר חַד.",
-            exampleNative = "Он отпилил שַׂרְבִיט покороче острой пилой.", fillInBlankExclusions = listOf(130508L, 130509L, 130523L)),
+            example = "הוּא חָתַךְ שַׁרְבִיט קָצָר יוֹתֵר בְּמַשּׂוֹר חַד.",
+            exampleNative = "Он отпилил שַׁרְבִיט покороче острой пилой.", fillInBlankExclusions = listOf(130508L, 130509L, 130523L)),
 
         WordEntity(id = 130523, setId = 1305, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "construction_metalwork",
