@@ -142,7 +142,7 @@ object WordDataHebrewBatch23 {
             original = "אֶמְפִּירִיצִיזְם", translation = "эмпиризм",
             pos = "noun", semanticGroup = "philosophy_epistemology",
             definition = "גִּישָׁה הַטּוֹעֶנֶת שֶׁכָּל יְדִיעָה בָּאָה מֵחוּשִׁים וּמִנִּסָּיוֹן יוֹמְיוֹמִי.",
-            example = "לוֹק וְהְיוּם הָיוּ נְצִיגֵי אֶמְפִּירִיצִיזְם בְּרִיטִי.",
+            example = "לוֹק וּהְיוּם הָיוּ נְצִיגֵי אֶמְפִּירִיצִיזְם בְּרִיטִי.",
             definitionNative = "Взгляд, по которому всё знание идёт от опыта — глаз, ушей и пальцев.",
             exampleNative = "Локк и Юм представляли британский эмпиризм.", fillInBlankExclusions = listOf(109204L, 109206L, 109214L, 109216L, 109217L, 109218L)),
         WordEntity(id = 109216, setId = 1092, languagePair = "he-ru", rarity = "UNCOMMON",

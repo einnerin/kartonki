@@ -269,7 +269,7 @@ object WordDataHebrewTimeL1 {
             id = 183225, setId = 1832, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "adverb", semanticGroup = "time_l1_freq",
             original = "בְּדֶרֶךְ כְּלָל", translation = "обычно",
-            definition = "בְּרֹב הַמִּקְרִים — כָּךְ קוֹרֶה בְּדֶרֶךְ קְבוּעָה וְרְגִילָה.",
+            definition = "בְּרֹב הַמִּקְרִים — כָּךְ קוֹרֶה בְּדֶרֶךְ קְבוּעָה וּרְגִילָה.",
             definitionNative = "В большинстве случаев — так бывает регулярно и привычно.",
             example = "בְּדֶרֶךְ כְּלָל אֲנִי הוֹלֵךְ לִישׁוֹן בְּסָבִיב אַחַת עֶשְׂרֵה.",
             exampleNative = "בְּדֶרֶךְ כְּלָל я ложусь спать примерно в одиннадцать вечера.",

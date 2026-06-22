@@ -99,7 +99,7 @@ object WordDataHebrewLiterature {
             original = "אַגָּדָה", translation = "сказка",
             definition = "סִפּוּר עַתִּיק עִם נְסִיכִים, מְכַשְּׁפוֹת אוֹ חַיּוֹת מְדַבְּרוֹת — מְלַמֵּד מוּסַר הַשְׂכֵּל.",
             definitionNative = "Старинная история с принцами, ведьмами или говорящими зверями — учит уму-разуму.",
-            example = "אַבָּא קוֹרֵא לִי אַגָּדָה עַל נְסִיכָה וְדְּרָקוֹן.",
+            example = "אַבָּא קוֹרֵא לִי אַגָּדָה עַל נְסִיכָה וּדְּרָקוֹן.",
             exampleNative = "Папа читает мне אַגָּדָה о принцессе и драконе.",
             pos = "noun", semanticGroup = "literature_l1_objects", fillInBlankExclusions = listOf(185801L, 185802L, 185803L, 185805L)),
         WordEntity(id = 185805, setId = 1858, languagePair = "he-ru", rarity = "UNCOMMON",

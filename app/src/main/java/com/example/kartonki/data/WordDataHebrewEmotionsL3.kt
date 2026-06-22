@@ -188,7 +188,7 @@ object WordDataHebrewEmotionsL3 {
             id = 182915, setId = 1829, languagePair = "he-ru", rarity = "RARE",
             pos = "verb", semanticGroup = "emotions_l3_verbs_subtle",
             original = "לְהִתְיָאֵשׁ", translation = "отчаиваться / унывать",
-            definition = "לְאַבֵּד תִּקְוָה וְלְהַפְסִיק לְהַאֲמִין שֶׁמַּשֶּׁהוּ טוֹב יִקְרֶה.",
+            definition = "לְאַבֵּד תִּקְוָה וּלְהַפְסִיק לְהַאֲמִין שֶׁמַּשֶּׁהוּ טוֹב יִקְרֶה.",
             definitionNative = "Терять надежду и переставать верить, что случится что-то хорошее.",
             example = "אָסוּר לְהִתְיָאֵשׁ אַחֲרֵי כִּשָּׁלוֹן אֶחָד בַּמִּבְחָן.",
             exampleNative = "Нельзя לְהִתְיָאֵשׁ после одной неудачи на экзамене.",

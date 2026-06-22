@@ -78,7 +78,7 @@ object WordDataHebrewConstructionL2 {
             id = 172404, setId = 1724, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "construction_materials",
             original = "לִבְנֵי סִילִיקָט", translation = "силикатные блоки",
-            definition = "בְּלוֹקִים לְבָנִים וְכְבֵדִים שֶׁבּוֹנִים מֵהֶם קִירוֹת פְּנִים.",
+            definition = "בְּלוֹקִים לְבָנִים וּכְבֵדִים שֶׁבּוֹנִים מֵהֶם קִירוֹת פְּנִים.",
             definitionNative = "Белые тяжёлые блоки, из которых кладут внутренние стены.",
             example = "הוּא הֵרִים לִבְנֵי סִילִיקָט בִּזְהִירוּת לַקּוֹמָה הַשְּׁנִיָּה.",
             exampleNative = "Он осторожно поднял לִבְנֵי סִילִיקָט на второй этаж.",

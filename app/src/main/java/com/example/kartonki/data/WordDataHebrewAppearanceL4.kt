@@ -138,7 +138,7 @@ object WordDataHebrewAppearanceL4 {
             id = 182504, setId = 1825, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "appearance_anatomy_pro",
             original = "קְרוּם הָעֶצֶם", translation = "надкостница",
-            definition = "שִׁכְבָה דַּקָּה וְעֲשִׁירָה בְּעֲצַבִּים שֶׁעוֹטֶפֶת אֶת הָעֶצֶם מִבַּחוּץ.",
+            definition = "שִׁכְבָה דַּקָּה וַעֲשִׁירָה בְּעֲצַבִּים שֶׁעוֹטֶפֶת אֶת הָעֶצֶם מִבַּחוּץ.",
             definitionNative = "Тонкий слой, богатый нервами, что покрывает кость снаружи.",
             example = "מַכָּה חֲזָקָה בָּשּׁוֹק פּוֹגַעַת קֹדֶם בִּקְרוּם הָעֶצֶם.",
             exampleNative = "Сильный удар по голени бьёт прежде всего по קְרוּם הָעֶצֶם.",

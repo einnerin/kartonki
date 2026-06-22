@@ -1399,7 +1399,7 @@ object WordDataHebrewBatch64 {
         WordEntity(id = 137708, setId = 1377, languagePair = "he-ru", rarity = "EPIC",
             original = "חוֹזֶה אַסְפָּקָה", translation = "договор поставки продуктов",
             pos = "phrase", semanticGroup = "cook_management_finance",
-            definition = "מִסְמָךְ מִשְׁפָּטִי שֶׁקּוֹבֵעַ מְחִיר, כַּמּוּת וְזְמַנֵּי הַגָּעָה לְכָל סְבִיב מָזוֹן.",
+            definition = "מִסְמָךְ מִשְׁפָּטִי שֶׁקּוֹבֵעַ מְחִיר, כַּמּוּת וּזְמַנֵּי הַגָּעָה לְכָל סְבִיב מָזוֹן.",
             definitionNative = "Юридический документ — цена, объём и сроки доставки каждой партии.",
             example = "חוֹזֶה אַסְפָּקָה אֲרֹךְ-טַוַח חוֹסֵךְ הַפְתָּעוֹת בִּמְחִיר.",
             exampleNative = "Долгосрочный חוֹזֶה אַסְפָּקָה предохраняет от ценовых сюрпризов.", fillInBlankExclusions = listOf(137702L, 137703L, 137706L, 137707L)),

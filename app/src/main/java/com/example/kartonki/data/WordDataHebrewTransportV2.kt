@@ -1021,7 +1021,7 @@ object WordDataHebrewTransportV2 {
             id = 163411, setId = 1634, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "security",
             original = "בִּידּוּק בִּטָּחוֹנִי", translation = "досмотр безопасности",
-            definition = "בְּדִיקָה שֶׁל נוֹסְעִים וְכְבוּדָּה לִפְנֵי כְּנִיסָה לַטֶּרְמִינָל.",
+            definition = "בְּדִיקָה שֶׁל נוֹסְעִים וּכְבוּדָּה לִפְנֵי כְּנִיסָה לַטֶּרְמִינָל.",
             definitionNative = "Проверка пассажиров и багажа перед входом в терминал.",
             example = "הַבִּידּוּק הַבִּטָּחוֹנִי אָרַךְ רֶבַע שָׁעָה.",
             exampleNative = "בִּידּוּק בִּטָּחוֹנִי занял четверть часа.",

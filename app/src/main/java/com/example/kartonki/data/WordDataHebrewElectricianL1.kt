@@ -178,7 +178,7 @@ object WordDataHebrewElectricianL1 {
             id = 172615, setId = 1726, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "electrician_actions",
             original = "לְהַחְלִיף נוּרָה", translation = "заменить лампочку",
-            definition = "לְהוֹצִיא אֶת הַיְּשָׁנָה שֶׁשָּׂרְפָה וְלְהַכְנִיס חֲדָשָׁה בִּמְקוֹמָהּ.",
+            definition = "לְהוֹצִיא אֶת הַיְּשָׁנָה שֶׁשָּׂרְפָה וּלְהַכְנִיס חֲדָשָׁה בִּמְקוֹמָהּ.",
             definitionNative = "Достать перегоревшую старую и поставить на её место новую.",
             example = "צָרִיךְ לְהַחְלִיף נוּרָה בַּמִּסְדְּרוֹן הַיּוֹם בָּעֶרֶב.",
             exampleNative = "Надо לְהַחְלִיף נוּרָה в коридоре сегодня вечером.",

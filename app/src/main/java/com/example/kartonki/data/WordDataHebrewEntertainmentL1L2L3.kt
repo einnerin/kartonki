@@ -625,7 +625,7 @@ object WordDataHebrewEntertainmentL1L2L3 {
             id = 173508, setId = 1735, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "entertainment_film_craft",
             original = "רֶגַע מַבְהִיל", translation = "скример",
-            definition = "אֶפֶקְט פִּתְאוֹמִי שֶׁל קוֹל וְתְמוּנָה הַמְּפַחֵד אֶת הַצּוֹפֶה.",
+            definition = "אֶפֶקְט פִּתְאוֹמִי שֶׁל קוֹל וּתְמוּנָה הַמְּפַחֵד אֶת הַצּוֹפֶה.",
             definitionNative = "Внезапный звуко-визуальный эффект, что пугает зрителя.",
             example = "רֶגַע מַבְהִיל בָּאֶמְצַע הִקְפִּיץ אוֹתָנוּ מֵהַכִּסְּאוֹת.",
             exampleNative = "רֶגַע מַבְהִיל посередине подкинул нас с кресел.",

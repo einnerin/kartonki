@@ -125,7 +125,7 @@ object WordDataHebrewBatch39 {
             original = "עֵינַיִם", translation = "глаза",
             definition = "אֵיבָר הָרְאִיָּה בַּפָּנִים — בְּעֶזְרָתוֹ רוֹאִים אֶת הָעוֹלָם.",
             definitionNative = "Орган зрения на лице — ими мы видим всё вокруг.",
-            example = "לַתִּינוֹק יֵשׁ עֵינַיִם כְּחֻלּוֹת וְגְּדוֹלוֹת.",
+            example = "לַתִּינוֹק יֵשׁ עֵינַיִם כְּחֻלּוֹת וּגְּדוֹלוֹת.",
             exampleNative = "У малыша עֵינַיִם большие и голубые.", fillInBlankExclusions = listOf(114116L, 114117L, 114118L, 114119L, 114121L, 114122L)),
         WordEntity(id = 114116, setId = 1141, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "body_face_features",

@@ -1032,7 +1032,7 @@ object WordDataHebrewBatch63 {
         WordEntity(id = 136507, setId = 1365, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "retail_supplier_relations",
             original = "חֶשְׁבּוֹנִית", translation = "накладная, счёт-фактура",
-            definition = "מִסְמָךְ רָשְׁמִי שֶׁמְּפָרֵט פְּרִיטִים, כַּמּוּת וְסְכוּם לְתַשְׁלוּם.",
+            definition = "מִסְמָךְ רָשְׁמִי שֶׁמְּפָרֵט פְּרִיטִים, כַּמּוּת וּסְכוּם לְתַשְׁלוּם.",
             definitionNative = "Официальная бумага со списком позиций, количеством и суммой к оплате.",
             example = "חֶשְׁבּוֹנִית עֲבוּר הַמִּשְׁלוֹחַ הַחֲדָשׁ צְרִיכָה אִשּׁוּר חָתוּם.",
             exampleNative = "חֶשְׁבּוֹנִית за свежую поставку требует подписанного утверждения.", fillInBlankExclusions = listOf(136505L, 136506L, 136520L, 136525L)),

@@ -155,7 +155,7 @@ object WordDataHebrewBatch33 {
             pos = "adjective", semanticGroup = "school_colors_neutral",
             definition = "כָּזֶה שֶׁיֵּשׁ בּוֹ מְעַט אוֹר, קָרוֹב לְצֶבַע הַלַּיְלָה.",
             definitionNative = "Такой, в котором мало света, близкий к ночному цвету.",
-            example = "הַיַּעַר בַּלַּיְלָה כֵּהֶה וְקְצָת מַפְחִיד.",
+            example = "הַיַּעַר בַּלַּיְלָה כֵּהֶה וּקְצָת מַפְחִיד.",
             exampleNative = "Лес ночью כֵּהֶה и немного пугающий.", fillInBlankExclusions = listOf(112101L, 112102L, 112104L, 112105L, 112106L, 112110L, 112111L, 112117L, 112118L, 112119L, 112122L)),
         WordEntity(id = 112121, setId = 1121, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "טֻרְקִיז", translation = "бирюзовый",

@@ -209,7 +209,7 @@ object WordDataHebrewBaristaL4 {
             id = 179618, setId = 1796, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "noun", semanticGroup = "barista_brewing_advanced",
             original = "קֶמֶקְס", translation = "кемекс",
-            definition = "בַּקְבּוּק זְכוּכִית עִם צַוָּאר וְעוֹר מֻדְבָּק לְכוֹס סִינוּן אִיטִית וְצְלוּלָה.",
+            definition = "בַּקְבּוּק זְכוּכִית עִם צַוָּאר וְעוֹר מֻדְבָּק לְכוֹס סִינוּן אִיטִית וּצְלוּלָה.",
             definitionNative = "Стеклянный сосуд с горлом и кожаной стяжкой для медленной чистой фильтрации.",
             example = "קֶמֶקְס שָׁבוּר אוֹסֵף אֶצְלִי אָבָק בַּמַּדָּף מֵאָז הַמַּעֲבָר.",
             exampleNative = "Сломанный קֶמֶקְס пылится у меня на полке после переезда.",

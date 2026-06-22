@@ -1068,10 +1068,10 @@ object WordDataHebrewWorkV2 {
         WordEntity(
             id = 164409, setId = 1644, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "wellbeing_and_stress",
-            original = "אִזּוּן בַּיִת וְעֲבוֹדָה", translation = "баланс работы и дома",
+            original = "אִזּוּן בַּיִת וַעֲבוֹדָה", translation = "баланс работы и дома",
             definition = "חֲלוּקָה נְכוֹנָה שֶׁל הַזְּמַן בֵּין הַמִּשְׂרָד לְבֵין הַחַיִּים הַפְּרָטִיִּים.",
             definitionNative = "Правильное распределение времени между офисом и личной жизнью.",
-            example = "אִזּוּן בַּיִת וְעֲבוֹדָה מוֹנֵעַ עֲיֵפוּת מַתְמֶשֶׁכֶת.",
+            example = "אִזּוּן בַּיִת וַעֲבוֹדָה מוֹנֵעַ עֲיֵפוּת מַתְמֶשֶׁכֶת.",
             exampleNative = "אִזּוּן בַּיִת וְעֲבוֹדָה предотвращает хроническую усталость.",
          fillInBlankExclusions = listOf(164408L, 164410L, 164411L)),
         WordEntity(

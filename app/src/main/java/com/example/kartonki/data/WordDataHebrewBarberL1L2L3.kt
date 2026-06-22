@@ -518,7 +518,7 @@ object WordDataHebrewBarberL1L2L3 {
             id = 173724, setId = 1737, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "salon_marketing",
             original = "טִיפּוּל בַּיִת", translation = "домашний уход",
-            definition = "מוּצָרִים וְשְׁגָרָה שֶׁהַלָּקוֹחַ מַמְשִׁיךְ לְבַד אַחֲרֵי הַסָּלוֹן.",
+            definition = "מוּצָרִים וּשְׁגָרָה שֶׁהַלָּקוֹחַ מַמְשִׁיךְ לְבַד אַחֲרֵי הַסָּלוֹן.",
             definitionNative = "Продукты и привычки, которые клиент продолжает дома после салона.",
             example = "טִיפּוּל בַּיִת קָבוּעַ מַשְׁאִיר אֶת הַתּוֹצָאָה לְעוֹד שָׁבוּעוֹת.",
             exampleNative = "Регулярный טִיפּוּל בַּיִת сохраняет результат на недели вперёд.",

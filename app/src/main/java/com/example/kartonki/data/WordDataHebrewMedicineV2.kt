@@ -1205,14 +1205,14 @@ object WordDataHebrewMedicineV2 {
             definition = "שֶׁפּוֹגֵעַ בְּמַעֲרָכוֹת שְׁלֵמוֹת שֶׁל הַגּוּף, לֹא רַק בְּאֵיבָר אֶחָד.",
             definitionNative = "Поражающий сразу несколько систем организма.",
             example = "מַחֲלָה סִיסְטֶמִית דּוֹרֶשֶׁת מַעֲקָב.",
-            exampleNative = "סִיסְטֶמִי недуг требует постоянного контроля.", fillInBlankExclusions = listOf(160605L)),
+            exampleNative = "סִיסְטֶמִי недуг требует постоянного контроля.", isFillInBlankSafe = false, fillInBlankExclusions = listOf(160605L)),
         WordEntity(id = 160605, setId = 1606, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "adjective", semanticGroup = "disease_theory",
             original = "אִידְיוֹפָּתִי", translation = "идиопатический",
             definition = "שֶׁסִּבָּתוֹ לֹא יְדוּעָה לַרְפוּאָה הַנּוֹכְחִית.",
             definitionNative = "Заболевание без установленной причины возникновения.",
             example = "דַּלֶּקֶת אִידְיוֹפָּתִית בַּמִּפְרָק.",
-            exampleNative = "אִידְיוֹפָּתִי воспаление в суставе.", fillInBlankExclusions = listOf(160604L)),
+            exampleNative = "אִידְיוֹפָּתִי воспаление в суставе.", isFillInBlankSafe = false, fillInBlankExclusions = listOf(160604L)),
 
         // ── prognosis_course (5) ──
         WordEntity(id = 160606, setId = 1606, languagePair = "he-ru", rarity = "LEGENDARY",

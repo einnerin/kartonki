@@ -154,7 +154,7 @@ object WordDataHebrewBatch89 {
             pos = "noun", semanticGroup = "hightech_product", fillInBlankExclusions = listOf(154208L, 154209L, 154216L, 154221L)),
         WordEntity(id = 154218, setId = 1542, languagePair = "he-ru", rarity = "UNCOMMON",
             original = "פִּתּוּחַ עֲסָקִי", translation = "развитие бизнеса (BizDev)",
-            definition = "מְצִיאַת שֻׁתָּפִים וְעֲסָקוֹת חֲדָשׁוֹת שֶׁמְּבִיאִים לְהַכְנָסוֹת חֲדָשׁוֹת לַחֶבְרָה.",
+            definition = "מְצִיאַת שֻׁתָּפִים וַעֲסָקוֹת חֲדָשׁוֹת שֶׁמְּבִיאִים לְהַכְנָסוֹת חֲדָשׁוֹת לַחֶבְרָה.",
             definitionNative = "Поиск партнёров и новых сделок, которые приносят фирме свежие доходы.",
             example = "הִיא מְנַהֶלֶת אֶת תְּחוּם הַפִּתּוּחַ עֲסָקִי וְנוֹסַעַת לִכְנָסִים בְּכָל חֹדֶשׁ.",
             exampleNative = "Она ведёт פִּתּוּחַ עֲסָקִי и каждый месяц летает на конференции.",

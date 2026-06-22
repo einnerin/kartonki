@@ -250,7 +250,7 @@ object WordDataHebrewAnimals {
             id = 187319, setId = 1873, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "animal_marine_basic",
             original = "מֵדוּזָה", translation = "медуза",
-            definition = "חַיָּה רַכָּה וְשְׁקוּפָה בַּיָּם שֶׁיְּכוֹלָה לִצְרֹב אֶת הַעוֹר.",
+            definition = "חַיָּה רַכָּה וּשְׁקוּפָה בַּיָּם שֶׁיְּכוֹלָה לִצְרֹב אֶת הַעוֹר.",
             definitionNative = "Мягкое прозрачное морское существо, способное обжечь кожу.",
             example = "הַמֵּדוּזָה צָרְבָה אוֹתִי בָּרֶגֶל בִּזְמַן הַשְּׂחִיָּה.",
             exampleNative = "מֵדוּזָה ужалила меня в ногу во время купания.",

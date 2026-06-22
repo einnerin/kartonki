@@ -231,7 +231,7 @@ object WordDataHebrewHightechL1 {
             id = 174519, setId = 1745, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "hightech_workplace",
             original = "מִטְבָּחוֹן", translation = "мини-кухня",
-            definition = "פִּינָה קְטַנָּה בָּעֲבוֹדָה עִם מְכוֹנַת קָפֶה וְחֲטִיפִים בְּחִנָּם.",
+            definition = "פִּינָה קְטַנָּה בָּעֲבוֹדָה עִם מְכוֹנַת קָפֶה וַחֲטִיפִים בְּחִנָּם.",
             definitionNative = "Уголок на работе с кофемашиной и снеками — берут бесплатно.",
             example = "כָּל בֹּקֶר אֲנִי פּוֹגֵשׁ אֶת הַצֶּוֶות בַּמִּטְבָּחוֹן.",
             exampleNative = "Каждое утро я встречаюсь с командой в מִטְבָּחוֹן.",

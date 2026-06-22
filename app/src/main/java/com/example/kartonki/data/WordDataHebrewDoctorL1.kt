@@ -137,7 +137,7 @@ object WordDataHebrewDoctorL1 {
             id = 180209, setId = 1802, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "doctor_basic_symptoms",
             original = "צִנָּה", translation = "простуда",
-            definition = "מַחֲלָה קַלָּה שֶׁל הָאַף וְהַגָּרוֹן עִם נַזֶּלֶת וְקְצָת חֹם.",
+            definition = "מַחֲלָה קַלָּה שֶׁל הָאַף וְהַגָּרוֹן עִם נַזֶּלֶת וּקְצָת חֹם.",
             definitionNative = "Лёгкая болезнь носа и горла с насморком и небольшой температурой.",
             example = "תָּפַסְתִּי צִנָּה אַחֲרֵי שֶׁיָּצָאתִי לַגֶּשֶׁם בְּלִי מְעִיל.",
             exampleNative = "Я подхватил צִנָּה после того, как вышел под дождь без куртки.",

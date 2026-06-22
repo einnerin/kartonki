@@ -99,7 +99,7 @@ object WordDataHebrewMore {
             id = 100908, setId = 1009, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "city",
             original = "דֹּאַר", translation = "почта",
-            definition = "שֵׁרוּת לְמִשְׁלוֹחַ מִכְתָּבִים וְחֲבִילוֹת.",
+            definition = "שֵׁרוּת לְמִשְׁלוֹחַ מִכְתָּבִים וַחֲבִילוֹת.",
             definitionNative = "Служба для отправки писем и посылок.",
             example = "שָׁלַחְתִּי מִכְתָּב בַּדֹּאַר.",
             exampleNative = "Я отправил письмо через דֹּאַר.",

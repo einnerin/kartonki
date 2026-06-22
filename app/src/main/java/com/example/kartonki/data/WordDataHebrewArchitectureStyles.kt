@@ -83,11 +83,11 @@ object WordDataHebrewArchitectureStyles {
         WordEntity(id = 190802, setId = 1908, languagePair = "he-ru", rarity = "RARE",
             original = "גֵּאוֹרְגִ׳יָאנִי",
             translation = "георгианский (стиль)",
-            definition = "סִגְנוֹן אַנְגְּלִי שֶׁל הַמֵּאָה הַשְּׁמוֹנֶה־עֶשְׂרֵה — סִימֶטְרִיָּה קְפֵדָנִית וְחֲזִיתוֹת לְבֵנָה אֲדֻמָּה.",
+            definition = "סִגְנוֹן אַנְגְּלִי שֶׁל הַמֵּאָה הַשְּׁמוֹנֶה־עֶשְׂרֵה — סִימֶטְרִיָּה קְפֵדָנִית וַחֲזִיתוֹת לְבֵנָה אֲדֻמָּה.",
             definitionNative = "Английский стиль XVIII века: строгая симметрия и красно-кирпичные фасады.",
             example = "הָעִיר בָּאת מְפֻרְסֶמֶת בַּטוּרֵי הַבָּתִּים הַגֵּאוֹרְגִ׳יָאנִיִּים שֶׁלָּהּ.",
             exampleNative = "Город Бат знаменит изящными георгианскими террасами.",
-            pos = "adjective", semanticGroup = "arch_styles_english_historical", fillInBlankExclusions = listOf(190801L, 190803L)),
+            pos = "adjective", semanticGroup = "arch_styles_english_historical", isFillInBlankSafe = false, fillInBlankExclusions = listOf(190801L, 190803L)),
 
         WordEntity(id = 190803, setId = 1908, languagePair = "he-ru", rarity = "RARE",
             original = "אֶדְוַרְדִיאָנִי",

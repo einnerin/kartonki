@@ -329,7 +329,7 @@ object WordDataHebrewImmigrant4 {
             id = 103714, setId = 1037, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "nature",
             original = "סַעַר", translation = "буря / шторм",
-            definition = "מֶזֶג אֲוִיר סוֹעֵר עִם רוּחוֹת חֲזָקוֹת, גֶּשֶׁם כָּבֵד וְלְעִתִּים בָּרָד.",
+            definition = "מֶזֶג אֲוִיר סוֹעֵר עִם רוּחוֹת חֲזָקוֹת, גֶּשֶׁם כָּבֵד וּלְעִתִּים בָּרָד.",
             definitionNative = "Бурная погода с сильными ветрами, проливным дождём и иногда градом.",
             example = "סַעַר חֲזָק פָּגַע בְּחֵיפָה הַשָּׁבוּעַ.",
             exampleNative = "На этой неделе Хайфу накрыл сильный סַעַר.",

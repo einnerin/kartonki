@@ -145,7 +145,7 @@ object WordDataHebrewBatch48 {
             pos = "noun", semanticGroup = "art_styles",
             definition = "סִגְנוֹן הַמַּדְגִּישׁ אוֹר וּתְחוּשׁוֹת רֶגַע, בְּלִי לְעַצֵב כָּל פְּרָט.",
             definitionNative = "Стиль, ловящий свет и ощущения мига, без проработки деталей.",
-            example = "הָאֶמְפְּרֶסְיוֹנִיזְם הַצָּרְפַתִּי שִׁנָּה אֶת הַיַּחַס לְצֶבַע וְלְאוֹר.",
+            example = "הָאֶמְפְּרֶסְיוֹנִיזְם הַצָּרְפַתִּי שִׁנָּה אֶת הַיַּחַס לְצֶבַע וּלְאוֹר.",
             exampleNative = "Французский אֶמְפְּרֶסְיוֹנִיזְם изменил отношение к свету и краске.", fillInBlankExclusions = listOf(126408L, 126412L, 126413L)),
         WordEntity(id = 126412, setId = 1264, languagePair = "he-ru", rarity = "RARE",
             original = "סוּרְרֵיאָלִיזְם",
