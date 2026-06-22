@@ -529,7 +529,7 @@ object WordDataHebrewCinemaL2L5 {
             original = "כְרוֹמָה קי", translation = "хромакей (зелёный фон)",
             definition = "מָסַךְ יָרֹק שֶׁמֵּאֲחוֹרֵי הַשַּׂחְקָן — מַחְלִיפִים אוֹתוֹ בְּכָל רֶקַע אַחֵר.",
             definitionNative = "Зелёный фон позади артиста — потом меняют его на любой пейзаж.",
-            example = "הַטַּיִס בַּחֲלָלִית צֻלַּם עִם כְרוֹמָה קי.",
+            example = "הַטַּיִס בַּחֲלָלִית צֻלַּם עִם כְרוֹמָה קִי.",
             exampleNative = "Полёт на космическом корабле сняли через כְרוֹמָה קי.",
             pos = "phrase", semanticGroup = "cinema_visual", fillInBlankExclusions = listOf(189009L)),
 
