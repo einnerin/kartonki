@@ -74,11 +74,11 @@ object WordDataHebrewBatch8 {
         WordEntity(
             id = 104706, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mall_trade",
-            original = "קַמְעוֹנַאי", translation = "розничный продавец",
+            original = "קִמְעוֹנָאִי", translation = "розничный продавец",
             definition = "חֶנְוָנִי הַמּוֹכֵר מוּצָרִים לְלָקוֹחוֹת פְּרָטִיִּים בְּכַמֻּיּוֹת קְטַנּוֹת.",
             definitionNative = "Торговец, который продаёт товары частным покупателям в небольших количествах.",
             example = "הַקַּמְעוֹנַאי הַקָּטָן לֹא מְסֻגָּל לְהִתְחַרּוֹת עִם הַשַּׁרְשְׁרָאוֹת הַגְּדוֹלוֹת.",
-            exampleNative = "Маленький קַמְעוֹנַאי не может конкурировать с крупными сетями."),
+            exampleNative = "Маленький קִמְעוֹנָאִי не может конкурировать с крупными сетями."),
         WordEntity(
             id = 104707, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "mall_deals",
@@ -215,11 +215,11 @@ object WordDataHebrewBatch8 {
         WordEntity(
             id = 104722, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "home_cleaning",
-            original = "מֶבְרֶשֶׁת", translation = "щётка (для уборки)",
+            original = "מִבְרֶשֶׁת", translation = "щётка (для уборки)",
             definition = "כְּלִי עִם שֵׂעָרוֹת צְפוּפוֹת לְנִיקּוּי וּצְחְצׁוּחַ.",
             definitionNative = "Инструмент с плотной щетиной для чистки и уборки.",
-            example = "צִחְצַחְתִּי אֶת הַשִּׁירוּתִים בְּמֶבְרֶשֶׁת יְעוּדִית.",
-            exampleNative = "Я почистил туалет специальной מֶבְרֶשֶׁת.",
+            example = "צִחְצַחְתִּי אֶת הַשִּׁירוּתִים בְּמִבְרֶשֶׁת יְעוּדִית.",
+            exampleNative = "Я почистил туалет специальной מִבְרֶשֶׁת.",
          fillInBlankExclusions = listOf(104720L, 104723L)),
         WordEntity(
             id = 104723, setId = 1047, languagePair = "he-ru", rarity = "UNCOMMON",
