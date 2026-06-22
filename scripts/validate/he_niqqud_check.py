@@ -65,6 +65,14 @@ def check(bare, ours):
         if norm(reconstruct(res, pick)) == our_n: return None
     return norm(reconstruct(res, 0))
 
+def nonwords(bare):
+    """Tokens whose consonants are NOT in Dicta's lexicon (fnotfromwl=True).
+    Strong signal of a spelling/non-word error that niqqud-check can't see.
+    Loanwords/proper-nouns/neologisms also trigger it -> adjudicate."""
+    res = nakdan_raw(bare)
+    return [w.get("word", "") for w in res
+            if not w.get("sep") and w.get("fnotfromwl") is True]
+
 def words_for_set_id(sid):
     out = []
     for f in glob.glob("app/src/main/java/com/example/kartonki/data/WordDataHebrew*.kt"):
@@ -79,14 +87,18 @@ def run(sid):
         if not o or not any('א' <= c <= 'ת' for c in o): continue
         bare = strip(o).strip()
         if len(bare.replace(" ", "")) < 2: continue
+        loan_tag = "  [loan?]" if LOAN.search(nfc(o)) else ""
+        try: nw = nonwords(bare)
+        except Exception: nw = []
+        if nw and not loan_tag:
+            print(f"  ⚠ NON-WORD {w['id']} [{w.get('translation','')}]: «{o}» — нет в лексиконе Dicta ({' '.join(nw)})")
         try: sug = check(bare, o)
         except Exception as e: print(f"  ERR {w['id']}: {e}"); continue
         if sug:
-            loan = "  [loan?]" if LOAN.search(nfc(o)) else ""
-            flagged.append((w["id"], o, sug, bool(loan)))
-            print(f"  {w['id']} [{w.get('translation','')}]: «{o}» → накдан «{sug}»{loan}")
+            flagged.append((w["id"], o, sug, bool(loan_tag)))
+            print(f"  {w['id']} [{w.get('translation','')}]: «{o}» → накдан «{sug}»{loan_tag}")
     real = [f for f in flagged if not f[3]]
-    print(f"=== set {sid}: {len(flagged)} кандидатов ({len(real)} не-заимствования) ===\n")
+    print(f"=== set {sid}: {len(flagged)} огласовка-кандидатов ({len(real)} не-заимствования) ===\n")
     return flagged
 
 if __name__ == "__main__":
