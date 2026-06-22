@@ -658,7 +658,7 @@ object WordDataHebrewBaristaL1L2L3 {
             id = 174111, setId = 1741, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "barista_taste",
             original = "זֵר", translation = "букет (вкус)",
-            definition = "מְכֻלָּת הַטְּעָמִים וְהָרֵיחוֹת שֶׁל הַמַּשְׁקֶה הַנֶּחְבָּר לִידִיעָה אַחַת.",
+            definition = "מְכֻלַּת הַטְּעָמִים וְהָרֵיחוֹת שֶׁל הַמַּשְׁקֶה הַנֶּחְבָּר לִידִיעָה אַחַת.",
             definitionNative = "Совокупность вкусов и ароматов чашки, что складывается в одно впечатление.",
             example = "הַזֵּר שֶׁל הַזַּן הַזֶּה מַזְכִּיר פֵּרוֹת יָבֵשׁ.",
             exampleNative = "זֵר этого сорта напоминает сухофрукты.",

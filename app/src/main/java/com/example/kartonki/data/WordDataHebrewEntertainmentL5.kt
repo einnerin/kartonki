@@ -178,7 +178,7 @@ object WordDataHebrewEntertainmentL5 {
         WordEntity(id = 179515, setId = 1795, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "entertainment_philosophy",
             original = "יְצִירָה כּוֹלֶלֶת", translation = "тотальное произведение (Gesamtkunstwerk)",
-            definition = "חִבּוּר שֶׁל מוּסִיקָה, תְּמוּנָה, טֶקְסְט וּתְנוּעָה לִכְלִי בִּטּוּי אָמָנוּתִי אֶחָד.",
+            definition = "חִבּוּר שֶׁל מוּסִיקָה, תְּמוּנָה, טֶקְסְט וּתְנוּעָה לִכְלִי בִּטּוּי אָמָּנוּתִי אֶחָד.",
             definitionNative = "Сплав музыки, образа, текста и движения в единое художественное высказывание.",
             example = "וָגְנֶר חָלַם עַל יְצִירָה כּוֹלֶלֶת שֶׁתְּאַחֵד אֶת כָּל הָאָמָנוּיוֹת.",
             exampleNative = "Вагнер мечтал о יְצִירָה כּוֹלֶלֶת, что объединит все искусства разом.", fillInBlankExclusions = listOf(179511L, 179512L)),

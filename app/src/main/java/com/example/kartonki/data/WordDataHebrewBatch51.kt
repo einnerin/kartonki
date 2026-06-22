@@ -323,7 +323,7 @@ object WordDataHebrewBatch51 {
         WordEntity(id = 129205, setId = 1292, languagePair = "he-ru", rarity = "LEGENDARY",
             pos = "phrase", semanticGroup = "philosophy_ethics",
             original = "תֵּיאוֹרְיַת הַצֶּדֶק", translation = "теория справедливости (Ролз)",
-            definition = "הַשָּׁקָפָה שֶׁל רוֹלְס עַל חֲלוּקָה הוֹגֶנֶת מֵאֲחוֹרֵי «מָסָךְ הַבּוּרוּת».",
+            definition = "הַשָּׁקָפָה שֶׁל רוֹלְס עַל חֲלוּקָה הוֹגֶנֶת מֵאֲחוֹרֵי «מָסַךְ הַבּוּרוּת».",
             definitionNative = "Концепция Ролза — честное распределение благ за «вуалью неведения» о собственной судьбе.",
             example = "הַסְּטוּדֶנְט כָּתַב מַסָּה עַל תֵּיאוֹרְיַת הַצֶּדֶק שֶׁל רוֹלְס.",
             exampleNative = "Студент написал эссе о תֵּיאוֹרְיַת הַצֶּדֶק по Ролзу.", fillInBlankExclusions = listOf(129219L, 129223L)),

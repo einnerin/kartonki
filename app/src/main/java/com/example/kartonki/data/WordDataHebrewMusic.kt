@@ -323,7 +323,7 @@ object WordDataHebrewMusic {
             original = "פּוֹפ", translation = "поп (жанр)",
             definition = "סִגְנוֹן רָגִיל וְקַל לְהַאֲזָנָה — שׁוֹמְעִים אוֹתוֹ בָּרַדְיוֹ.",
             definitionNative = "Популярный лёгкий стиль для широкой публики — крутят на радио.",
-            example = "הִיא מַעֲדִיפָה פּוֹפ קוֹרֵיאָנִי עַל פְּנֵי הַסִּגְנוֹנוֹת הָאֲחֵרִים.",
+            example = "הִיא מַעֲדִיפָה פּוֹפּ קוֹרֵיאָנִי עַל פְּנֵי הַסִּגְנוֹנוֹת הָאֲחֵרִים.",
             exampleNative = "Она предпочитает корейский פּוֹפ всем остальным стилям.",
             pos = "noun", semanticGroup = "music_l2_genres", fillInBlankExclusions = listOf(186406L, 186408L, 186410L)),
         WordEntity(id = 186408, setId = 1864, languagePair = "he-ru", rarity = "RARE",

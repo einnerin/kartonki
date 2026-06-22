@@ -192,7 +192,7 @@ object WordDataHebrewBatch16 {
             id = 107018, setId = 1070, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "religion",
             original = "מַלְאָךְ", translation = "ангел",
-            definition = "שַׁלִּיחַ אֱלֹהִי בְּעַל כְּנָפַיִם לְפִי הַמָּסֹרֶת.",
+            definition = "שָׁלִּיחַ אֱלֹהִי בְּעַל כְּנָפַיִם לְפִי הַמָּסֹרֶת.",
             definitionNative = "Божественный посланник с крыльями согласно традиции.",
             example = "הַמַּלְאָכִים מוֹפִיעִים בְּסִיפּוּרִים רַבִּים בַּתַּנַ\"ךְ.",
             exampleNative = "Ангелы появляются во многих историях Танаха.",

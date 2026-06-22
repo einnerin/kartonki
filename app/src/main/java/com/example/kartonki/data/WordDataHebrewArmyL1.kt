@@ -145,7 +145,7 @@ object WordDataHebrewArmyL1 {
             pos = "noun", semanticGroup = "army_gear",
             definition = "וְסֶט עָבֶה הַמְּכַסֶּה אֶת הֶחָזֶה וּמֵגֵן מִפְּגִיעוֹת קְלִיעִים.",
             definitionNative = "Толстая жилетка, что закрывает грудь и спасает от пуль.",
-            example = "כָּל לוֹחֵם לוֹבֵשׁ אֲפוֹד לִפְנֵי שֶׁהוּא יוֹצֵא מֵהַמַּחְסֹם.",
+            example = "כָּל לוֹחֵם לוֹבֵשׁ אָפוֹד לִפְנֵי שֶׁהוּא יוֹצֵא מֵהַמַּחְסֹם.",
             exampleNative = "Каждый боец надевает אֲפוֹד перед выходом из блокпоста.", fillInBlankExclusions = listOf(170214L, 170215L)),
 
         WordEntity(id = 170214, setId = 1702, languagePair = "he-ru", rarity = "COMMON",

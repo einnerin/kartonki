@@ -46,7 +46,7 @@ object WordDataHebrewWeatherL3 {
             id = 181901, setId = 1819, languagePair = "he-ru", rarity = "RARE",
             pos = "noun", semanticGroup = "weather_l3_meteorology",
             original = "מֶטֵאוֹרוֹלוֹג", translation = "синоптик",
-            definition = "מַדְעָן שֶׁחוֹקֵר אֶת הָאֲוִיר וְחוֹזֶה מַה יִּקְרֶה בַּשָּׁמַיִם.",
+            definition = "מַדְּעָן שֶׁחוֹקֵר אֶת הָאֲוִיר וְחוֹזֶה מַה יִּקְרֶה בַּשָּׁמַיִם.",
             definitionNative = "Учёный, который изучает воздух и предсказывает, что будет на небе.",
             example = "הַמֶּטֵאוֹרוֹלוֹג הִזְהִיר מִגֶּשֶׁם כָּבֵד בְּסוֹף הַשָּׁבוּעַ.",
             exampleNative = "מֶטֵאוֹרוֹלוֹג предупредил о сильных дождях к выходным.",

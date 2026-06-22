@@ -185,7 +185,7 @@ object WordDataHebrewBureauL3 {
             id = 180917, setId = 1809, languagePair = "he-ru", rarity = "EPIC",
             pos = "phrase", semanticGroup = "bureau_insurance",
             original = "פּוֹלִיסַת חַיִּים", translation = "полис страхования жизни",
-            definition = "מִסְמָךְ הֶסְכֵּם שֶׁמְּבַטִּיחַ סְכוּם לַמִּשְׁפָּחָה בְּמִקְרֵה פְּטִירַת הַמְּבֻטָּח.",
+            definition = "מִסְמַךְ הֶסְכֵּם שֶׁמְּבַטִּיחַ סְכוּם לַמִּשְׁפָּחָה בְּמִקְרֵה פְּטִירַת הַמְּבֻטָּח.",
             definitionNative = "Договор-документ, гарантирующий деньги семье в случае смерти застрахованного.",
             example = "אַבָּא חָתַם עַל פּוֹלִיסַת חַיִּים לִשְׁמִירַת הַיְלָדִים.",
             exampleNative = "Папа подписал פּוֹלִיסַת חַיִּים для защиты детей.", fillInBlankExclusions = listOf(180916L, 180919L)),

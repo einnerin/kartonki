@@ -479,7 +479,7 @@ object WordDataHebrewGarden {
             pos = "noun", semanticGroup = "garden_l3_propagation", fillInBlankExclusions = listOf(188501L, 188502L, 188504L, 188505L)),
         WordEntity(id = 188504, setId = 1885, languagePair = "he-ru", rarity = "EPIC",
             original = "הַשְׁרָשָׁה", translation = "укоренение",
-            definition = "הָעֲבוֹדָה שֶׁל יָחוּר לְפַתֵּחַ שָׁרָשִׁים רִאשׁוֹנִים — בְּמַיִם אוֹ בָּאֲדָמָה.",
+            definition = "הָעֲבוֹדָה שֶׁל יַחוּר לְפַתֵּחַ שָׁרָשִׁים רִאשׁוֹנִים — בְּמַיִם אוֹ בָּאֲדָמָה.",
             definitionNative = "Работа черенка по выпуску первых корешков — в воде или в специальной почве.",
             example = "הַשְׁרָשָׁה שֶׁל גֶּרָנְיוּם לוֹקַחַת כִּשְׁבוּעַיִם.",
             exampleNative = "הַשְׁרָשָׁה герани занимает примерно две недели — потом можно сажать в землю.",

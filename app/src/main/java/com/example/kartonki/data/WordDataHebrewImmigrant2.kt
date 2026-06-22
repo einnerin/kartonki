@@ -265,7 +265,7 @@ object WordDataHebrewImmigrant2 {
             id = 102708, setId = 1027, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "utilities",
             original = "צִנּוֹר", translation = "труба",
-            definition = "מְעַבָּר מְחֻבָּר לְהַעֲבָרַת מַיִם, גָּז אוֹ נוֹזְלִים אֲחֵרִים.",
+            definition = "מְעַבָּר מְחֻבַּר לְהַעֲבָרַת מַיִם, גָּז אוֹ נוֹזְלִים אֲחֵרִים.",
             definitionNative = "Соединённый канал для передачи воды, газа или других жидкостей.",
             example = "יֵשׁ בְּעָיָה בַּצִּנּוֹר — הַמַּיִם לֹא זוֹרְמִים.",
             exampleNative = "Есть проблема с צִנּוֹר — вода не течёт."),
@@ -275,7 +275,7 @@ object WordDataHebrewImmigrant2 {
             original = "דֶּלֶף", translation = "течь / протечка",
             definition = "כְּשֶׁמַּיִם בּוֹרְחִים מֵצִנּוֹר אוֹ מַתֶּקֶת שְׁבוּרָה.",
             definitionNative = "Когда вода вытекает из сломанной трубы или крана.",
-            example = "יֵשׁ דֶּלֶף בַּגַּג, צְרִיךְ לְהַזְמִין שְׁרַבְרָב.",
+            example = "יֵשׁ דֶּלֶף בַּגַּג, צְרִיךְ לְהַזְמִין שְׁרַבְרַב.",
             exampleNative = "Есть דֶּלֶף в потолке, нужно вызвать сантехника.",
         ),
         WordEntity(

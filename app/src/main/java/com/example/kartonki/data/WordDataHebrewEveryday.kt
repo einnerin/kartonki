@@ -675,7 +675,7 @@ object WordDataHebrewEveryday {
             id = 100621, setId = 1006, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "food",
             original = "גְּבִינָה", translation = "сыр",
-            definition = "מוּצָר חָלָבִי הָעָשׂוּי מֵחָלָב קָרוּשׁ.",
+            definition = "מוּצָר חֲלָבִי הָעָשׂוּי מֵחָלָב קָרוּשׁ.",
             definitionNative = "Молочный продукт, изготавливаемый из свёрнутого молока.",
             example = "גְּבִינָה צְהוּבָּה טוֹבָה לַסֶּנְדְּוִיץ'.",
             exampleNative = "Жёлтая גְּבִינָה хороша для сэндвича.",

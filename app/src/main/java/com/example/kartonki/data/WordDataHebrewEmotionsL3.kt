@@ -208,7 +208,7 @@ object WordDataHebrewEmotionsL3 {
             id = 182917, setId = 1829, languagePair = "he-ru", rarity = "RARE",
             pos = "adjective", semanticGroup = "emotions_l3_descriptive",
             original = "זָעוּף", translation = "угрюмый / хмурый",
-            definition = "מִי שֶׁפָּנָיו קוֹדְרוֹת וּמַרְאֶה תָּמִיד מַצַּב רוּחַ קַשֶּׁה וְלֹא נָעִים.",
+            definition = "מִי שֶׁפָּנָיו קוֹדְרוֹת וּמַרְאֶה תָּמִיד מַצַּב רוּחַ קַשֵּׁה וְלֹא נָעִים.",
             definitionNative = "Тот, у кого мрачное лицо и постоянно тяжёлое, неприветливое настроение.",
             example = "הַשְּׁכֵן הַזָּעוּף לֹא הֵשִׁיב אַף פַּעַם לִשְׁלוֹם.",
             exampleNative = "זָעוּף сосед никогда не отвечал на приветствие.",

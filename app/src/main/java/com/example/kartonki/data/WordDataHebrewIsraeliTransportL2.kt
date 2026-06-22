@@ -250,7 +250,7 @@ object WordDataHebrewIsraeliTransportL2 {
             id = 185320, setId = 1853, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "verb", semanticGroup = "transport_l2_actions_advanced",
             original = "לִבְלֹם", translation = "тормозить",
-            definition = "לְהַפְעִיל אֶת הַבְּלָמִים כְּדֵי לְהַאֵט אוֹ לְהַפְסִיק אֶת הַנְּסִיעָה.",
+            definition = "לְהַפְעִיל אֶת הַבְּלָמִים כְּדֵי לְהָאֵט אוֹ לְהַפְסִיק אֶת הַנְּסִיעָה.",
             definitionNative = "Нажать на тормоза, чтобы замедлить или прекратить движение.",
             example = "הַנֶּהָג נֶאֱלַץ לִבְלֹם בְּחָזְקָה כְּשֶׁכֶּלֶב קָפַץ לַכְּבִישׁ.",
             exampleNative = "Водителю пришлось резко לִבְלֹם, когда собака выскочила на дорогу.",
