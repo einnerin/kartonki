@@ -211,11 +211,15 @@ class StatsRepository @Inject constructor(
 
     private fun calculateCurrentStreak(sortedDesc: List<Long>): Int {
         if (sortedDesc.isEmpty()) return 0
-        var streak   = 0
-        var expected = todayMs()
+        var streak      = 0
+        var expectedDay = localEpochDay(todayMs())
         for (day in sortedDesc) {
-            if (day == expected) { streak++; expected -= DAY_MS }
-            else if (day < expected) break
+            val d = localEpochDay(day)
+            when {
+                d == expectedDay -> { streak++; expectedDay-- }
+                d <  expectedDay -> return streak   // gap → streak ends
+                // d > expectedDay: duplicate entry for an already-counted day → skip
+            }
         }
         return streak
     }
@@ -225,11 +229,10 @@ class StatsRepository @Inject constructor(
         var longest = 1
         var current = 1
         for (i in 1 until sortedAsc.size) {
-            if (sortedAsc[i] - sortedAsc[i - 1] == DAY_MS) {
-                current++
-                if (current > longest) longest = current
-            } else {
-                current = 1
+            when (localEpochDay(sortedAsc[i]) - localEpochDay(sortedAsc[i - 1])) {
+                0L   -> { /* same-day duplicate → neither extends nor breaks the run */ }
+                1L   -> { current++; if (current > longest) longest = current }
+                else -> current = 1
             }
         }
         return longest

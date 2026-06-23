@@ -282,7 +282,7 @@ class AchievementRepository @Inject constructor(
 
     private suspend fun checkWeeklyGrind(lang: String) {
         if (isUnlocked(AchievementId.WEEKLY_GRIND, lang)) return
-        val weekAgoMs = todayMs() - 6 * DAY_MS
+        val weekAgoMs = midnightDaysAgo(6)
         if (studyStreakDao.getCountSinceForLang(weekAgoMs, lang) >= 5) unlock(AchievementId.WEEKLY_GRIND, lang)
     }
 
@@ -306,7 +306,7 @@ class AchievementRepository @Inject constructor(
         val days = studyStreakDao.getAllForLang(lang).map { it.date }
         if (days.size < 2) return
         // days are sorted DESC; [0] = today, [1] = last previous day
-        val gap = (days[0] - days[1]) / DAY_MS
+        val gap = localEpochDay(days[0]) - localEpochDay(days[1])
         if (gap >= RUSTY_GAP_DAYS) unlock(AchievementId.RUSTY, lang)
     }
 
@@ -375,10 +375,14 @@ class AchievementRepository @Inject constructor(
         val days = studyStreakDao.getAllForLang(lang).map { it.date }
         if (days.isEmpty()) return 0
         var streak = 0
-        var expected = todayMs()
+        var expectedDay = localEpochDay(todayMs())
         for (day in days) {
-            if (day == expected) { streak++; expected -= DAY_MS }
-            else if (day < expected) break
+            val d = localEpochDay(day)
+            when {
+                d == expectedDay -> { streak++; expectedDay-- }
+                d <  expectedDay -> return streak   // gap → streak ends
+                // d > expectedDay: duplicate entry for an already-counted day → skip
+            }
         }
         return streak
     }
