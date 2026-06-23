@@ -145,10 +145,16 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.analytics)
-    // Crashlytics — auto-registers via ContentProvider, attaches to the FirebaseApp
-    // initialised in FirebaseModule. Release-build crashes report directly to console
-    // without needing mapping upload (R8 keeps SourceFile + LineNumberTable by default).
-    implementation(libs.firebase.crashlytics)
+    // Crashlytics — УБРАН 2026-06-23: SDK авто-инициализируется через ContentProvider и
+    // требует "build ID", который впрыскивает Gradle-плагин com.google.firebase.crashlytics.
+    // Плагин НЕ был применён (в f739997 добавили только зависимость) → IllegalStateException
+    // "The Crashlytics build ID is missing" → КРАШ на каждом запуске. assembleDebug зелёный
+    // (баг только в рантайме) — поймано прогоном на эмуляторе.
+    // ВЕРНУТЬ правильно: (1) проверить firebase-crashlytics-gradle с поддержкой AGP 9.x;
+    // (2) применить плагин (root apply false + app apply); (3) mappingFileUploadEnabled=false
+    // чтобы не тянуть google-services (у нас ручная per-build-type init в FirebaseModule);
+    // (4) доделать настройку в Firebase Console.
+    // implementation(libs.firebase.crashlytics)
     // Google Sign-In
     implementation(libs.play.services.auth)
     // Coroutines + Play Services
