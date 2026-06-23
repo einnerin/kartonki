@@ -1,7 +1,7 @@
 # Kartonki — Android App
 
 Изучение иностранных слов с механикой ККИ. PvE (интервальное повторение) + PvP (pass-and-play на одном устройстве).
-Ранги карточек: COMMON (серый) · UNCOMMON · RARE · EPIC · LEGENDARY. Колода ≤ 20 карт.
+Ранги карточек: COMMON (серый) · UNCOMMON · RARE · EPIC · LEGENDARY. Колода ≤ 21 карты (`DeckLevel.DECK_MAX_SIZE`).
 
 ## ⚠️ Статус запуска: пользователей пока нет
 
