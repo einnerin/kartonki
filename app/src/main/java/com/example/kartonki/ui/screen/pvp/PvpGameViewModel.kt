@@ -214,15 +214,7 @@ class PvpGameViewModel @Inject constructor(
         val points = if (isCorrect) card.rarity.points * newMultiplier else 0
 
         viewModelScope.launch {
-            val existing = progressRepository.getProgress(card.id) ?: ProgressEntity(wordId = card.id)
-            progressRepository.upsert(
-                existing.copy(
-                    correctCount      = if (isCorrect) existing.correctCount + 1 else existing.correctCount,
-                    incorrectCount    = if (!isCorrect) existing.incorrectCount + 1 else existing.incorrectCount,
-                    pvpCorrectCount   = if (isCorrect) existing.pvpCorrectCount + 1 else existing.pvpCorrectCount,
-                    pvpIncorrectCount = if (!isCorrect) existing.pvpIncorrectCount + 1 else existing.pvpIncorrectCount,
-                )
-            )
+            progressRepository.applyPvpResult(card.id, isCorrect)
         }
 
         val updatedPlayers = state.players.mapIndexed { i, p ->

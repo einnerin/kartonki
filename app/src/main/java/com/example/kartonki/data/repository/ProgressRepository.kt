@@ -38,4 +38,33 @@ class ProgressRepository @Inject constructor(private val progressDao: ProgressDa
     }
 
     suspend fun upsert(progress: ProgressEntity) = progressDao.upsert(progress)
+
+    /**
+     * Atomic study-result write. Counters are incremented in SQL (additive), so a
+     * concurrent PvE/PvP answer on the same word can't lose an increment the way the
+     * old read-modify-write `upsert` did. [level]/[nextReviewAt] are computed by the
+     * caller from the current level and set absolutely (only Study mutates them).
+     */
+    suspend fun applyStudyResult(wordId: Long, isCorrect: Boolean, level: Int, nextReviewAt: Long) {
+        progressDao.insertIfAbsent(wordId)
+        progressDao.applyStudyResult(
+            wordId = wordId,
+            correctDelta = if (isCorrect) 1 else 0,
+            incorrectDelta = if (!isCorrect) 1 else 0,
+            level = level,
+            nextReviewAt = nextReviewAt,
+        )
+    }
+
+    /** Atomic PvP-result write — additive counter increments, no level change. */
+    suspend fun applyPvpResult(wordId: Long, isCorrect: Boolean) {
+        progressDao.insertIfAbsent(wordId)
+        progressDao.applyPvpResult(
+            wordId = wordId,
+            correctDelta = if (isCorrect) 1 else 0,
+            incorrectDelta = if (!isCorrect) 1 else 0,
+            pvpCorrectDelta = if (isCorrect) 1 else 0,
+            pvpIncorrectDelta = if (!isCorrect) 1 else 0,
+        )
+    }
 }

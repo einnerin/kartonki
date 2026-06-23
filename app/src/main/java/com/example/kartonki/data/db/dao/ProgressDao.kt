@@ -57,6 +57,41 @@ interface ProgressDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsert(progress: ProgressEntity)
 
+    /**
+     * Creates a zero-initialised row if none exists. Paired with the additive
+     * [applyStudyResult]/[applyPvpResult] updates so callers never have to do a
+     * read-modify-write of the whole row (which clobbered concurrent writes — a
+     * PvE and a PvP answer on the same word could lose one of the increments).
+     */
+    @Query("""
+        INSERT OR IGNORE INTO progress
+            (wordId, correctCount, incorrectCount, level, nextReviewAt, pvpCorrectCount, pvpIncorrectCount)
+        VALUES (:wordId, 0, 0, 0, 0, 0, 0)
+    """)
+    suspend fun insertIfAbsent(wordId: Long)
+
+    /** Additive counter increments; level/nextReviewAt set absolutely (only Study mutates them). */
+    @Query("""
+        UPDATE progress SET
+            correctCount   = correctCount + :correctDelta,
+            incorrectCount = incorrectCount + :incorrectDelta,
+            level          = :level,
+            nextReviewAt   = :nextReviewAt
+        WHERE wordId = :wordId
+    """)
+    suspend fun applyStudyResult(wordId: Long, correctDelta: Int, incorrectDelta: Int, level: Int, nextReviewAt: Long)
+
+    /** PvP only touches counters — all four incremented additively. */
+    @Query("""
+        UPDATE progress SET
+            correctCount      = correctCount + :correctDelta,
+            incorrectCount    = incorrectCount + :incorrectDelta,
+            pvpCorrectCount   = pvpCorrectCount + :pvpCorrectDelta,
+            pvpIncorrectCount = pvpIncorrectCount + :pvpIncorrectDelta
+        WHERE wordId = :wordId
+    """)
+    suspend fun applyPvpResult(wordId: Long, correctDelta: Int, incorrectDelta: Int, pvpCorrectDelta: Int, pvpIncorrectDelta: Int)
+
     @Query("SELECT wordId FROM progress WHERE correctCount >= 10")
     suspend fun getEarnedWordIds(): List<Long>
 

@@ -210,18 +210,15 @@ class StudySessionViewModel @Inject constructor(
 
     private fun saveProgress(word: Word, isCorrect: Boolean) {
         viewModelScope.launch {
-            val existing = progressRepository.getProgress(word.id)
-                ?: ProgressEntity(wordId = word.id)
-            val newLevel = if (isCorrect) minOf(existing.level + 1, StudyConstants.MAX_LEVEL)
-                           else maxOf(existing.level - 1, 0)
+            val currentLevel = progressRepository.getProgress(word.id)?.level ?: 0
+            val newLevel = if (isCorrect) minOf(currentLevel + 1, StudyConstants.MAX_LEVEL)
+                           else maxOf(currentLevel - 1, 0)
             val intervalMs = StudyConstants.LEVEL_INTERVALS_DAYS[newLevel] * StudyConstants.MILLIS_PER_DAY
-            progressRepository.upsert(
-                existing.copy(
-                    correctCount = if (isCorrect) existing.correctCount + 1 else existing.correctCount,
-                    incorrectCount = if (!isCorrect) existing.incorrectCount + 1 else existing.incorrectCount,
-                    level = newLevel,
-                    nextReviewAt = System.currentTimeMillis() + intervalMs,
-                )
+            progressRepository.applyStudyResult(
+                wordId = word.id,
+                isCorrect = isCorrect,
+                level = newLevel,
+                nextReviewAt = System.currentTimeMillis() + intervalMs,
             )
         }
     }
