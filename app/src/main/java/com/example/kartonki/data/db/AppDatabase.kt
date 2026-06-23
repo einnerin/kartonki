@@ -37,7 +37,7 @@ import com.example.kartonki.data.db.entity.WordSetEntity
         PvpMatchEntity::class,
         RetainedFavoriteEntity::class,
     ],
-    version = 44,
+    version = 45,
     exportSchema = true,
 )
 @TypeConverters(WordConverters::class)
@@ -445,6 +445,16 @@ abstract class AppDatabase : RoomDatabase() {
         val MIGRATION_43_44 = object : Migration(43, 44) {
             override fun migrate(db: SupportSQLiteDatabase) {
                 db.execSQL("ALTER TABLE pvp_matches ADD COLUMN deviceOwnerIndex INTEGER")
+            }
+        }
+        /**
+         * Adds progress.isMastered — replaces the old "zero incorrectCount to drop a word
+         * from the problem list" hack with an explicit flag, so accuracy stats keep the
+         * real mistake history. Default 0: nothing is mastered until the user masters it.
+         */
+        val MIGRATION_44_45 = object : Migration(44, 45) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL("ALTER TABLE progress ADD COLUMN isMastered INTEGER NOT NULL DEFAULT 0")
             }
         }
 

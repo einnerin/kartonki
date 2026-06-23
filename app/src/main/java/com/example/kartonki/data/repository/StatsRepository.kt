@@ -124,6 +124,7 @@ class StatsRepository @Inject constructor(
         // handful before we touch the words table.
         val candidates = allProgress.mapNotNull { p ->
             if (p.wordId in dismissedIds) return@mapNotNull null
+            if (p.isMastered) return@mapNotNull null   // mastered → out of the problem list (history kept)
             val (encounters, errors) = when (source) {
                 "pve_only" -> {
                     // maxOf(0, …) — guards against pvpCount > totalCount

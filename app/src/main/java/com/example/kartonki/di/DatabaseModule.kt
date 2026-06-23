@@ -55,6 +55,7 @@ object DatabaseModule {
                 AppDatabase.MIGRATION_41_42,
                 AppDatabase.MIGRATION_42_43,
                 AppDatabase.MIGRATION_43_44,
+                AppDatabase.MIGRATION_44_45,
             )
             // Forward migrations must be explicit Room Migrations from here on —
             // a forgotten bump now crashes loudly at startup instead of silently

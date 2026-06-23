@@ -359,17 +359,16 @@ class ProblemWordsSessionViewModel @Inject constructor(
     }
 
     /**
-     * Marks a word as mastered by resetting its incorrectCount to 0,
-     * which clears its error rate and removes it from the problem words list.
+     * Marks a word as mastered via the isMastered flag, which removes it from the problem
+     * list without erasing its mistake history (so accuracy stats stay truthful). The flag
+     * is cleared automatically if the user gets the word wrong again later.
      */
     private suspend fun masterWord(wordId: Long) {
-        val existing = progressRepository.getProgress(wordId) ?: return
-        progressRepository.upsert(
-            existing.copy(
-                incorrectCount = 0,
-                level          = StudyConstants.MAX_LEVEL,
-                nextReviewAt   = System.currentTimeMillis() + StudyConstants.LEVEL_INTERVALS_DAYS[StudyConstants.MAX_LEVEL] * StudyConstants.MILLIS_PER_DAY,
-            )
+        progressRepository.markMastered(
+            wordId = wordId,
+            level = StudyConstants.MAX_LEVEL,
+            nextReviewAt = System.currentTimeMillis() +
+                StudyConstants.LEVEL_INTERVALS_DAYS[StudyConstants.MAX_LEVEL] * StudyConstants.MILLIS_PER_DAY,
         )
     }
 

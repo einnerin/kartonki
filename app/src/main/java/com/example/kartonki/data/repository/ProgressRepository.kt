@@ -67,4 +67,8 @@ class ProgressRepository @Inject constructor(private val progressDao: ProgressDa
             pvpIncorrectDelta = if (!isCorrect) 1 else 0,
         )
     }
+
+    /** Marks a word mastered (drops it from the problem list) without erasing its mistake history. */
+    suspend fun markMastered(wordId: Long, level: Int, nextReviewAt: Long) =
+        progressDao.markMastered(wordId, level, nextReviewAt)
 }

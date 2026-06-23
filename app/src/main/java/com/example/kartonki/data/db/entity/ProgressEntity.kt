@@ -12,4 +12,11 @@ data class ProgressEntity(
     val nextReviewAt: Long = 0L,  // epoch millis
     val pvpCorrectCount: Int = 0,
     val pvpIncorrectCount: Int = 0,
+    /**
+     * Set when the user masters a word in a problem-words session. Excludes the word
+     * from the problem list WITHOUT zeroing incorrectCount (so accuracy stats stay
+     * truthful). Cleared automatically on the next wrong answer, so a word that
+     * becomes hard again can return to the problem list.
+     */
+    val isMastered: Boolean = false,
 )

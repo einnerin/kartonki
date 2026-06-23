@@ -125,4 +125,22 @@ class MigrationTest {
             }
         }
     }
+
+    @Test
+    fun migrate44to45_addsIsMasteredDefaultFalseAndKeepsHistory() {
+        helper.createDatabase(TEST_DB, 44).use { db ->
+            db.execSQL(
+                "INSERT INTO progress(wordId, correctCount, incorrectCount, level, " +
+                "nextReviewAt, pvpCorrectCount, pvpIncorrectCount) " +
+                "VALUES(1, 3, 5, 2, 0, 0, 0)"
+            )
+        }
+        helper.runMigrationsAndValidate(TEST_DB, 45, true, AppDatabase.MIGRATION_44_45).use { db ->
+            db.query("SELECT isMastered, incorrectCount FROM progress WHERE wordId=1").use { c ->
+                assertTrue(c.moveToNext())
+                assertEquals("isMastered must default to 0 for legacy rows", 0, c.getInt(0))
+                assertEquals("incorrectCount must be preserved by the migration", 5, c.getInt(1))
+            }
+        }
+    }
 }

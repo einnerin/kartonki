@@ -70,27 +70,41 @@ interface ProgressDao {
     """)
     suspend fun insertIfAbsent(wordId: Long)
 
-    /** Additive counter increments; level/nextReviewAt set absolutely (only Study mutates them). */
+    /**
+     * Additive counter increments; level/nextReviewAt set absolutely (only Study mutates them).
+     * A wrong answer (incorrectDelta>0) clears isMastered so a word that becomes hard again
+     * can return to the problem list.
+     */
     @Query("""
         UPDATE progress SET
             correctCount   = correctCount + :correctDelta,
             incorrectCount = incorrectCount + :incorrectDelta,
             level          = :level,
-            nextReviewAt   = :nextReviewAt
+            nextReviewAt   = :nextReviewAt,
+            isMastered     = CASE WHEN :incorrectDelta > 0 THEN 0 ELSE isMastered END
         WHERE wordId = :wordId
     """)
     suspend fun applyStudyResult(wordId: Long, correctDelta: Int, incorrectDelta: Int, level: Int, nextReviewAt: Long)
 
-    /** PvP only touches counters — all four incremented additively. */
+    /** PvP only touches counters — all four incremented additively. A wrong PvP answer also un-masters. */
     @Query("""
         UPDATE progress SET
             correctCount      = correctCount + :correctDelta,
             incorrectCount    = incorrectCount + :incorrectDelta,
             pvpCorrectCount   = pvpCorrectCount + :pvpCorrectDelta,
-            pvpIncorrectCount = pvpIncorrectCount + :pvpIncorrectDelta
+            pvpIncorrectCount = pvpIncorrectCount + :pvpIncorrectDelta,
+            isMastered        = CASE WHEN :incorrectDelta > 0 THEN 0 ELSE isMastered END
         WHERE wordId = :wordId
     """)
     suspend fun applyPvpResult(wordId: Long, correctDelta: Int, incorrectDelta: Int, pvpCorrectDelta: Int, pvpIncorrectDelta: Int)
+
+    /**
+     * Marks a word mastered — excludes it from the problem list via isMastered and parks it
+     * at max level / far next-review, WITHOUT zeroing incorrectCount (keeps accuracy honest).
+     * No-op if the word has no progress row (it would have one, being a problem word).
+     */
+    @Query("UPDATE progress SET isMastered = 1, level = :level, nextReviewAt = :nextReviewAt WHERE wordId = :wordId")
+    suspend fun markMastered(wordId: Long, level: Int, nextReviewAt: Long)
 
     @Query("SELECT wordId FROM progress WHERE correctCount >= 10")
     suspend fun getEarnedWordIds(): List<Long>
