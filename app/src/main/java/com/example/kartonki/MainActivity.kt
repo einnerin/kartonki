@@ -8,7 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.runtime.getValue
 import androidx.navigation.compose.rememberNavController
 import com.example.kartonki.data.remote.FirebaseAuthManager
@@ -34,9 +34,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            val isDarkTheme by mainViewModel.isDarkTheme.collectAsState()
-            val nativeLanguage by mainViewModel.nativeLanguage.collectAsState()
-            val lockPortrait by mainViewModel.lockPortraitOrientation.collectAsState()
+            val isDarkTheme by mainViewModel.isDarkTheme.collectAsStateWithLifecycle()
+            val nativeLanguage by mainViewModel.nativeLanguage.collectAsStateWithLifecycle()
+            val lockPortrait by mainViewModel.lockPortraitOrientation.collectAsStateWithLifecycle()
             // Applies setting reactively — toggle in Settings updates orientation
             // immediately without requiring an app restart.
             LaunchedEffect(lockPortrait) {

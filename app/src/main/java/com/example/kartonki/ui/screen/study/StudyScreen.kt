@@ -48,7 +48,7 @@ import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -84,7 +84,7 @@ fun StudyScreen(
     onNavigateBack: () -> Unit,
     viewModel: StudyViewModel = hiltViewModel(),
 ) {
-    val uiState by viewModel.uiState.collectAsState()
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
     // Synchronous restore: reads SharedPreferences directly, no async timing issues.
     val (initActive, initQuery) = remember {
         val restore = viewModel.getSearchBackBehavior() == "restore"

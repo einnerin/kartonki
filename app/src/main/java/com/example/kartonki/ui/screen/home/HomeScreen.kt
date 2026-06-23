@@ -43,7 +43,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Row
-import androidx.compose.runtime.collectAsState
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.R
 import com.example.kartonki.ui.component.OnResume
@@ -67,7 +67,7 @@ fun HomeScreen(
 ) {
     var visible by remember { mutableStateOf(false) }
     LaunchedEffect(Unit) { visible = true }
-    val packState by packViewModel.uiState.collectAsState()
+    val packState by packViewModel.uiState.collectAsStateWithLifecycle()
     val s = LocalAppStrings.current
     var showBetaDialog by remember { mutableStateOf(false) }
 

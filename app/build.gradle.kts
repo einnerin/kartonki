@@ -67,11 +67,11 @@ android {
             applicationIdSuffix = ".debug"
         }
         release {
-            // minify/shrink stay OFF until we've verified ProGuard rules don't break anything.
-            // Toggle to true (one separate commit each) only after a smoke-test cycle:
-            //   1. ./gradlew assembleRelease  → install APK → exercise critical flows
-            //   2. flip isMinifyEnabled = true → repeat
-            //   3. flip isShrinkResources = true → repeat
+            // minify + resource shrinking are ON. Verified via the v0.1.14 release
+            // (versionCode 15) smoke-test cycle before it was rolled out to Closed
+            // Testing — ProGuard rules in proguard-rules.pro keep Firebase/Hilt/Room
+            // reflection paths intact. If you add a library that breaks under R8,
+            // add keep-rules there rather than flipping these back off.
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(
@@ -122,6 +122,10 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    // collectAsStateWithLifecycle — stops Flow collection when the UI is below
+    // STARTED (e.g. app backgrounded), instead of collectAsState which keeps
+    // collecting in the background.
+    implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
