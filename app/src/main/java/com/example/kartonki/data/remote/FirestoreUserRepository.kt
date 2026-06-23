@@ -48,7 +48,9 @@ class FirestoreUserRepository @Inject constructor(
         firestore.runTransaction { tx ->
             val snap = tx.get(doc)
             val cur = snap.getLong(field)?.toInt() ?: 0
-            tx.update(doc, field, cur + 1)
+            // set+merge (not update) so a missing user doc is created rather than
+            // throwing NOT_FOUND — e.g. if a match finishes before the profile was saved.
+            tx.set(doc, mapOf(field to (cur + 1)), SetOptions.merge())
         }.await()
     }
 }

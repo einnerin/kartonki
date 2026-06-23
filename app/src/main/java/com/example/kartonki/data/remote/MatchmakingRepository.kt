@@ -163,6 +163,15 @@ class MatchmakingRepository @Inject constructor(
                                 val opponentName  = snap.child("playerName").getValue(String::class.java) ?: "Игрок"
                                 val opponentCards = snap.child("cardIds").value.toCardIdList()
 
+                                // The Waiter may have cancelled and removed their data node
+                                // between our slot-claim and this read. Creating a match with
+                                // an empty opponent deck drops the Creator into a broken,
+                                // instantly-ending game — bail to Error instead.
+                                if (!snap.exists() || opponentCards.isEmpty()) {
+                                    trySend(MatchmakingResult.Error("Соперник отменил поиск"))
+                                    return
+                                }
+
                                 val newMatchId = matchesRef.push().key
                                 if (newMatchId == null) {
                                     trySend(MatchmakingResult.Error("Не удалось зарезервировать matchId"))
