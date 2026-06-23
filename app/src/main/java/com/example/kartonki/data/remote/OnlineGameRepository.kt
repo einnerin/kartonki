@@ -6,14 +6,21 @@ import com.example.kartonki.data.remote.model.OnlineRoundData
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.MutableData
 import com.google.firebase.database.ServerValue
+import com.google.firebase.database.Transaction
 import com.google.firebase.database.ValueEventListener
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
+import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.tasks.await
+import java.util.concurrent.atomic.AtomicBoolean
+import java.util.concurrent.atomic.AtomicInteger
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlin.coroutines.resume
+import kotlin.coroutines.resumeWithException
 
 private const val TAG = "OnlineGameRepository"
 
@@ -121,16 +128,17 @@ class OnlineGameRepository @Inject constructor(
     }
 
     /**
-     * Push the current player's own progress (score, streak) and shared
-     * game-control fields (currentTurn, phase, optional game-end).
+     * Push the current player's own progress (score, streak) and shared turn-control
+     * fields (currentTurn, phase) for an ONGOING match.
      *
      * Critically: writes only player {myIndex}'s score/streak — never the opponent's.
-     * The previous `confirmAnswer(p1Score, p2Score, p1Streak, p2Streak, …)` API
-     * read the opponent's score from this client's local snapshot and blind-wrote
-     * it back, which let one player's late `updateChildren` clobber a concurrent
-     * write by the other (disconnect-forfeit, surrender, opponent's own move).
-     * Each player now owns its own `playerN*` fields end-to-end and can't trample
-     * the other side's state.
+     * The previous `confirmAnswer(p1Score, p2Score, …)` API read the opponent's score
+     * from this client's local snapshot and blind-wrote it back, which let one player's
+     * late `updateChildren` clobber a concurrent write by the other. Each player now
+     * owns its own `playerN*` fields end-to-end.
+     *
+     * Game-OVER is handled separately by [finalizeMatch] (an idempotent transaction),
+     * NOT here — this method must only be used while the match continues.
      */
     suspend fun pushMyTurn(
         matchId: String,
@@ -139,23 +147,83 @@ class OnlineGameRepository @Inject constructor(
         myStreak: Int,
         nextTurn: Int,
         nextPhase: String,
-        isGameOver: Boolean = false,
-        winnerIndex: Int = -1,
     ) {
         val scoreKey  = if (myIndex == 0) "player1Score"  else "player2Score"
         val streakKey = if (myIndex == 0) "player1Streak" else "player2Streak"
-        val updates = mutableMapOf<String, Any>(
-            scoreKey to myScore,
-            streakKey to myStreak,
-            "currentTurn" to nextTurn,
-            "phase" to nextPhase,
-            "roundStartTime" to System.currentTimeMillis(),
-        )
-        if (isGameOver) {
-            updates["status"] = OnlineMatchData.STATUS_FINISHED
-            updates["winnerIndex"] = winnerIndex
-        }
-        matchRef(matchId).updateChildren(updates).await()
+        matchRef(matchId).updateChildren(
+            mapOf(
+                scoreKey to myScore,
+                streakKey to myStreak,
+                "currentTurn" to nextTurn,
+                "phase" to nextPhase,
+                "roundStartTime" to System.currentTimeMillis(),
+            )
+        ).await()
+    }
+
+    /**
+     * Idempotently ends the match. Runs an RTDB transaction on the match node so the
+     * FIRST finalizer wins: if `status` is already `finished`, it's a complete no-op
+     * and returns null — a late surrender / disconnect-forfeit / last-card write can no
+     * longer overwrite the real outcome (the previous code used plain `updateChildren`,
+     * so last-writer-wins could flip an already-decided winner, and every path
+     * unconditionally bumped the player's Firestore W/L even when it didn't actually
+     * finalize → double-counted stats).
+     *
+     * Writes this player's own score/streak as part of the same atomic op, then resolves
+     * the winner via [MatchFinalizer] (for [FinalOutcome.ByScore] from the live scores in
+     * the transaction, not a stale local snapshot).
+     *
+     * @return the resolved winnerIndex (0/1, or -1 for draw) if THIS call performed the
+     *         finalization — the caller should record its own win/loss/draw stat based on
+     *         it — or null if the match was already finished by someone else.
+     */
+    suspend fun finalizeMatch(
+        matchId: String,
+        myIndex: Int,
+        myScore: Int,
+        myStreak: Int,
+        outcome: FinalOutcome,
+    ): Int? = suspendCancellableCoroutine { cont ->
+        val didFinalize = AtomicBoolean(false)
+        val resolvedWinner = AtomicInteger(-1)
+        matchRef(matchId).runTransaction(object : Transaction.Handler {
+            override fun doTransaction(currentData: MutableData): Transaction.Result {
+                val status = currentData.child("status").getValue(String::class.java)
+                if (status == OnlineMatchData.STATUS_FINISHED) {
+                    didFinalize.set(false)
+                    return Transaction.success(currentData)   // already finished → no-op
+                }
+                // Write my own score/streak slot.
+                val scoreKey  = if (myIndex == 0) "player1Score"  else "player2Score"
+                val streakKey = if (myIndex == 0) "player1Streak" else "player2Streak"
+                currentData.child(scoreKey).value  = myScore.toLong()
+                currentData.child(streakKey).value = myStreak.toLong()
+
+                val p1 = if (myIndex == 0) myScore
+                         else currentData.child("player1Score").getValue(Long::class.java)?.toInt() ?: 0
+                val p2 = if (myIndex == 1) myScore
+                         else currentData.child("player2Score").getValue(Long::class.java)?.toInt() ?: 0
+                val winner = MatchFinalizer.resolveWinner(outcome, p1, p2)
+
+                currentData.child("status").value      = OnlineMatchData.STATUS_FINISHED
+                currentData.child("winnerIndex").value  = winner.toLong()
+                currentData.child("phase").value        = OnlineMatchData.PHASE_GAME_OVER
+                currentData.child("currentTurn").value  = 0L
+                resolvedWinner.set(winner)
+                didFinalize.set(true)
+                return Transaction.success(currentData)
+            }
+
+            override fun onComplete(error: DatabaseError?, committed: Boolean, currentData: DataSnapshot?) {
+                if (!cont.isActive) return
+                when {
+                    error != null            -> cont.resumeWithException(error.toException())
+                    committed && didFinalize.get() -> cont.resume(resolvedWinner.get())
+                    else                     -> cont.resume(null)   // already finished, or not committed
+                }
+            }
+        }, false) // applyLocally=false: decide from committed server state
     }
 
     private fun DataSnapshot.toMatchData(): OnlineMatchData {

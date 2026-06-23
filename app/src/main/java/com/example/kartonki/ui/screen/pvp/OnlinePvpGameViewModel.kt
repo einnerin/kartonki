@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.kartonki.data.remote.FinalOutcome
 import com.example.kartonki.data.remote.FirebaseAuthManager
 import com.example.kartonki.data.remote.FirestoreUserRepository
 import com.example.kartonki.data.remote.OnlineGameRepository
@@ -352,48 +353,54 @@ class OnlinePvpGameViewModel @Inject constructor(
             }
 
             val isGameOver = nextPhase == OnlineMatchData.PHASE_GAME_OVER
-            // Winner is decided from MY new score vs opponent's score-at-time-of-snapshot.
-            // Safe: opponent's score never changes during MY defender turn (they don't write it),
-            // and this client only writes its own side via pushMyTurn — so we can't clobber theirs.
-            val winnerIndex = when {
-                !isGameOver -> -1
-                newMyScore > state.opponentScore -> myIndex
-                state.opponentScore > newMyScore -> opponentIdx
-                else -> -1
-            }
-
-            // Game-critical write — pushMyTurn writes only this player's own score/streak slot;
-            // never touches opponent's fields.
             try {
-                onlineGameRepository.pushMyTurn(
-                    matchId = matchId,
-                    myIndex = myIndex,
-                    myScore = newMyScore,
-                    myStreak = newMyStreak,
-                    nextTurn = nextAttacker,
-                    nextPhase = nextPhase,
-                    isGameOver = isGameOver,
-                    winnerIndex = winnerIndex,
-                )
+                if (isGameOver) {
+                    // Idempotent finalize — winner resolved from the live scores inside the
+                    // transaction, so a stale local opponentScore can't decide it wrong, and a
+                    // late surrender/forfeit write can't overwrite the result.
+                    val finalWinner = onlineGameRepository.finalizeMatch(
+                        matchId = matchId,
+                        myIndex = myIndex,
+                        myScore = newMyScore,
+                        myStreak = newMyStreak,
+                        outcome = FinalOutcome.ByScore,
+                    )
+                    recordOnlineStatIfFinalized(finalWinner)
+                } else {
+                    // Ongoing turn — pushMyTurn writes only this player's own score/streak slot.
+                    onlineGameRepository.pushMyTurn(
+                        matchId = matchId,
+                        myIndex = myIndex,
+                        myScore = newMyScore,
+                        myStreak = newMyStreak,
+                        nextTurn = nextAttacker,
+                        nextPhase = nextPhase,
+                    )
+                }
             } catch (e: Exception) {
                 _uiState.update { it.copy(connectionError = "Ошибка подтверждения ответа: ${e.message}") }
                 return@launch
             }
+        }
+    }
 
-            // Stats update is best-effort — Firestore errors must not break the game,
-            // but we log them so silent stat-loss is diagnosable.
-            if (isGameOver) {
-                try {
-                    val uid = authManager.currentUser.value?.uid ?: return@launch
-                    when {
-                        winnerIndex == myIndex -> firestoreUserRepository.incrementWin(uid)
-                        winnerIndex == -1 -> firestoreUserRepository.incrementDraw(uid)
-                        else -> firestoreUserRepository.incrementLoss(uid)
-                    }
-                } catch (e: Exception) {
-                    Log.w(TAG, "stat update on game-over failed", e)
-                }
+    /**
+     * Records this player's online W/L/D — but ONLY if our finalize transaction actually
+     * ended the match ([finalWinner] != null). A no-op finalize means another path already
+     * finalized and recorded the real outcome, so re-recording would double-count.
+     * Best-effort: Firestore errors are logged, never break the game.
+     */
+    private suspend fun recordOnlineStatIfFinalized(finalWinner: Int?) {
+        if (finalWinner == null) return
+        try {
+            val uid = authManager.currentUser.value?.uid ?: return
+            when (finalWinner) {
+                myIndex -> firestoreUserRepository.incrementWin(uid)
+                -1 -> firestoreUserRepository.incrementDraw(uid)
+                else -> firestoreUserRepository.incrementLoss(uid)
             }
+        } catch (e: Exception) {
+            Log.w(TAG, "online stat update failed", e)
         }
     }
 
@@ -406,27 +413,19 @@ class OnlinePvpGameViewModel @Inject constructor(
         val opponentIndex = 1 - myIndex
         viewModelScope.launch {
             try {
-                // Surrender — I write only my own slot; my score stays as-is, my streak resets.
-                // Opponent's score remains whatever they last wrote.
-                onlineGameRepository.pushMyTurn(
+                // Surrender — opponent wins regardless of score. Idempotent finalize;
+                // records my loss only if this call actually ended the match.
+                val finalWinner = onlineGameRepository.finalizeMatch(
                     matchId = matchId,
                     myIndex = myIndex,
                     myScore = state.myScore,
                     myStreak = 0,
-                    nextTurn = 0,
-                    nextPhase = OnlineMatchData.PHASE_GAME_OVER,
-                    isGameOver = true,
-                    winnerIndex = opponentIndex,
+                    outcome = FinalOutcome.Winner(opponentIndex),
                 )
+                recordOnlineStatIfFinalized(finalWinner)
             } catch (e: Exception) {
                 _uiState.update { it.copy(connectionError = "Ошибка сдачи: ${e.message}") }
                 return@launch
-            }
-            try {
-                val uid = authManager.currentUser.value?.uid ?: return@launch
-                firestoreUserRepository.incrementLoss(uid)
-            } catch (e: Exception) {
-                Log.w(TAG, "stat update on surrender failed", e)
             }
         }
     }
@@ -499,15 +498,13 @@ class OnlinePvpGameViewModel @Inject constructor(
         val state = _uiState.value
         viewModelScope.launch {
             try {
-                onlineGameRepository.pushMyTurn(
+                // Both abandoned → cancelled, no winner, no rating change. Idempotent finalize.
+                onlineGameRepository.finalizeMatch(
                     matchId = matchId,
                     myIndex = myIndex,
                     myScore = state.myScore,
                     myStreak = 0,
-                    nextTurn = 0,
-                    nextPhase = OnlineMatchData.PHASE_GAME_OVER,
-                    isGameOver = true,
-                    winnerIndex = -1, // draw / cancelled — no rating change for either player
+                    outcome = FinalOutcome.Draw,
                 )
             } catch (e: Exception) {
                 _uiState.update { it.copy(connectionError = "Ошибка: ${e.message}") }
@@ -522,22 +519,16 @@ class OnlinePvpGameViewModel @Inject constructor(
         val state = _uiState.value
         viewModelScope.launch {
             try {
-                onlineGameRepository.pushMyTurn(
+                // Opponent forfeited by disconnect → I win. Idempotent finalize;
+                // records my win only if this call actually ended the match.
+                val finalWinner = onlineGameRepository.finalizeMatch(
                     matchId = matchId,
                     myIndex = myIndex,
                     myScore = state.myScore,
                     myStreak = 0,
-                    nextTurn = 0,
-                    nextPhase = OnlineMatchData.PHASE_GAME_OVER,
-                    isGameOver = true,
-                    winnerIndex = myIndex,
+                    outcome = FinalOutcome.Winner(myIndex),
                 )
-                try {
-                    val uid = authManager.currentUser.value?.uid ?: return@launch
-                    firestoreUserRepository.incrementWin(uid)
-                } catch (e: Exception) {
-                    Log.w(TAG, "stat update on disconnect-win failed", e)
-                }
+                recordOnlineStatIfFinalized(finalWinner)
             } catch (e: Exception) {
                 _uiState.update { it.copy(connectionError = "Ошибка: ${e.message}") }
             }
