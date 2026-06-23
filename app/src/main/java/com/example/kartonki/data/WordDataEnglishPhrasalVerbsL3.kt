@@ -167,7 +167,7 @@ object WordDataEnglishPhrasalVerbsL3 {
             original = "lash out", transliteration = "[læʃ aʊt]", translation = "наброситься (словами или физически)",
             definition = "To suddenly attack someone with angry words or hits.",
             definitionNative = "Внезапно напасть на кого-то — словесно или физически.",
-            example = "Tired and stressed, he lash out at his colleagues over a small mistake.",
+            example = "Tired people sometimes lash out at their colleagues.",
             exampleNative = "Усталый и в стрессе, он lash out на коллег из-за мелкой ошибки.",
             pos = "phrase", semanticGroup = "phrasal_l3_social_dynamics", fillInBlankExclusions = listOf(41211L, 41212L, 41214L, 41215L)),
 
@@ -175,7 +175,7 @@ object WordDataEnglishPhrasalVerbsL3 {
             original = "walk out on", transliteration = "[wɔk aʊt ɑn]", translation = "бросить (партнёра, семью)",
             definition = "To suddenly leave a partner, family or commitment, refusing to come back.",
             definitionNative = "Внезапно уйти от близкого человека или важного обязательства — навсегда.",
-            example = "He walk out on his family without saying a single word.",
+            example = "A good parent would never walk out on their family.",
             exampleNative = "Он walk out on свою семью, не сказав ни слова.",
             pos = "phrase", semanticGroup = "phrasal_l3_social_dynamics", fillInBlankExclusions = listOf(41211L, 41212L, 41213L, 41215L)),
 
@@ -209,7 +209,7 @@ object WordDataEnglishPhrasalVerbsL3 {
             original = "talk into", transliteration = "[tɔk ˈɪntu]", translation = "уговорить, убедить",
             definition = "To persuade someone to do something they were unsure about.",
             definitionNative = "Убедить кого-то сделать то, в чём он сомневался.",
-            example = "She talk into me joining the gym with her.",
+            example = "She talked me into joining the gym with her.",
             exampleNative = "Она talk into меня, чтобы я записался в зал вместе с ней.",
             pos = "phrase", semanticGroup = "phrasal_l3_decisions", fillInBlankExclusions = listOf(41216L, 41217L, 41219L, 41220L)),
 
@@ -235,7 +235,7 @@ object WordDataEnglishPhrasalVerbsL3 {
             original = "turn out", transliteration = "[tɜrn aʊt]", translation = "оказаться, обернуться",
             definition = "To happen in a particular way or have a particular result in the end.",
             definitionNative = "Произойти определённым образом или дать определённый результат в итоге.",
-            example = "The party turn out to be much more fun than we expected.",
+            example = "Plans don't always turn out the way we hope.",
             exampleNative = "Вечеринка turn out гораздо веселее, чем мы ожидали.",
             pos = "phrase", semanticGroup = "phrasal_l3_outcomes", fillInBlankExclusions = listOf(41222L, 41223L, 41224L, 41225L)),
 
@@ -259,7 +259,7 @@ object WordDataEnglishPhrasalVerbsL3 {
             original = "fall through", transliteration = "[fɔl θru]", translation = "сорваться, провалиться (о плане)",
             definition = "To fail to happen or to be completed as planned.",
             definitionNative = "Не состояться или не завершиться так, как было задумано.",
-            example = "Our holiday plans fall through after the airline cancelled the flight.",
+            example = "Holiday plans can fall through at the last minute.",
             exampleNative = "Наши планы на отпуск fall through после того, как авиакомпания отменила рейс.",
             pos = "phrase", semanticGroup = "phrasal_l3_outcomes", fillInBlankExclusions = listOf(41221L, 41222L, 41223L, 41225L)),
 

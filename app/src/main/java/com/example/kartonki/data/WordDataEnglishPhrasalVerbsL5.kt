@@ -92,7 +92,7 @@ object WordDataEnglishPhrasalVerbsL5 {
             original = "hew down", transliteration = "[hju daʊn]", translation = "срубить, повергнуть (топором, мечом)",
             definition = "To cut something, especially a tree, down with heavy blows of an axe or sword.",
             definitionNative = "Свалить большое дерево или сразить врага мощными ударами клинка.",
-            example = "The woodsmen hew down the great oak that had stood for centuries.",
+            example = "The men were told to hew down the old oak.",
             exampleNative = "Дровосеки hew down вековой дуб, простоявший столетия.",
             pos = "phrase", semanticGroup = "phrasal_l5_archaic_literary", fillInBlankExclusions = listOf(41401L, 41402L, 41404L, 41405L)),
 
@@ -142,7 +142,7 @@ object WordDataEnglishPhrasalVerbsL5 {
             original = "accede to", transliteration = "[əkˈsid tu]", translation = "согласиться (на просьбу), уступить",
             definition = "To agree to a request or demand, especially after consideration in a formal setting.",
             definitionNative = "Принять чужое требование — обычно после раздумий в формальной обстановке.",
-            example = "After lengthy negotiations, the council accede to the ambassador's demands.",
+            example = "The council refused to accede to the ambassador's demands.",
             exampleNative = "После долгих переговоров совет accede to требованиям посла.",
             pos = "phrase", semanticGroup = "phrasal_l5_formal_register", fillInBlankExclusions = listOf(41401L, 41406L, 41407L, 41408L, 41410L, 41413L, 41415L, 41420L, 41425L)),
 
@@ -202,7 +202,7 @@ object WordDataEnglishPhrasalVerbsL5 {
             original = "pine for", transliteration = "[paɪn fɔr]", translation = "тосковать, томиться по",
             definition = "To miss someone or something deeply and to long for their return or presence.",
             definitionNative = "Глубоко скучать по кому-то или чему-то и страстно желать их возвращения.",
-            example = "The exiled prince still pine for the homeland he had lost in his youth.",
+            example = "Exiles often pine for the homeland they have lost.",
             exampleNative = "Изгнанный принц всё ещё pine for родину, потерянную в юности.",
             pos = "phrase", semanticGroup = "phrasal_l5_emotional_high", fillInBlankExclusions = listOf(41417L, 41418L, 41419L, 41420L, 41425L)),
 
@@ -260,7 +260,7 @@ object WordDataEnglishPhrasalVerbsL5 {
             original = "light upon", transliteration = "[laɪt əˈpɑn]", translation = "набрести (на идею, находку)",
             definition = "To discover or think of something suddenly and as if by chance, in a literary way.",
             definitionNative = "Внезапно, словно случайно, обнаружить что-то или прийти к мысли — в литературном стиле.",
-            example = "At last she light upon the very phrase that gave the poem its meaning.",
+            example = "Poets sometimes light upon the perfect phrase by chance.",
             exampleNative = "Наконец она light upon ту самую фразу, что даёт стихотворению смысл.",
             pos = "phrase", semanticGroup = "phrasal_l5_obscure", fillInBlankExclusions = listOf(41401L, 41406L, 41413L, 41415L, 41419L, 41420L, 41421L, 41422L, 41424L, 41425L)),
 

@@ -76,7 +76,7 @@ object WordDataEnglishIdiomsL4 {
             original = "pour your heart out", transliteration = "[pɔr jər hɑrt aʊt]", translation = "излить душу",
             definition = "To tell someone all your deepest feelings and private worries openly.",
             definitionNative = "Открыто рассказать кому-то о глубоких чувствах и тревогах. Дословно — «вылить сердце наружу».",
-            example = "She finally decided to pour your heart out to her therapist after years of silence.",
+            example = "It can help to pour your heart out to a friend.",
             exampleNative = "Она наконец решилась pour your heart out перед психотерапевтом после многих лет молчания.",
             pos = "phrase", semanticGroup = "idioms_l4_complex_emotions", fillInBlankExclusions = listOf(40802L, 40803L, 40804L, 40805L, 40820L)),
 
@@ -92,7 +92,7 @@ object WordDataEnglishIdiomsL4 {
             original = "beside yourself", transliteration = "[bɪˈsaɪd jərˈsɛlf]", translation = "вне себя (от эмоций)",
             definition = "Extremely upset, worried or excited so that you can hardly control yourself.",
             definitionNative = "Крайне расстроенный, встревоженный или взволнованный — почти не владеет собой. Дословно — «рядом с самим собой».",
-            example = "She was beside yourself with worry when the child didn't come home.",
+            example = "You shouldn't be beside yourself over one small mistake.",
             exampleNative = "Она была beside yourself от тревоги, когда ребёнок не вернулся домой.",
             pos = "phrase", semanticGroup = "idioms_l4_complex_emotions", fillInBlankExclusions = listOf(40801L, 40802L, 40804L, 40805L)),
 
@@ -126,7 +126,7 @@ object WordDataEnglishIdiomsL4 {
             original = "hedge your bets", transliteration = "[hɛʤ jər bɛts]", translation = "подстраховаться (≈ не класть всё на одну карту)",
             definition = "To reduce risk by supporting more than one possible outcome at the same time.",
             definitionNative = "Уменьшить риск, делая ставку сразу на несколько возможных исходов. Дословно — «огородить свои ставки».",
-            example = "Smart investors hedge your bets by spreading money across different assets.",
+            example = "Smart investors always hedge your bets across different assets.",
             exampleNative = "Умные инвесторы hedge your bets, распределяя деньги по разным активам.",
             pos = "phrase", semanticGroup = "idioms_l4_strategic", fillInBlankExclusions = listOf(40806L, 40808L, 40809L, 40810L)),
 

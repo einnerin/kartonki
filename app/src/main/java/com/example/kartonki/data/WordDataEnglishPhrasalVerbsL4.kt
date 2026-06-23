@@ -143,7 +143,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "pin away", transliteration = "[pɪn əˈweɪ]", translation = "томиться, чахнуть (от тоски)",
             definition = "To suffer slowly because of longing or grief that does not go away.",
             definitionNative = "Медленно страдать от тоски или горя, которые не проходят.",
-            example = "He spent years pin away for a love that was never going to return.",
+            example = "Don't pin away for a love that will never return.",
             exampleNative = "Он годами pin away по любви, которая уже не вернётся.",
             pos = "phrase", semanticGroup = "phrasal_l4_complex_emotions", fillInBlankExclusions = listOf(41306L, 41307L, 41308L, 41309L)),
 
@@ -153,7 +153,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "chip in", transliteration = "[tʃɪp ɪn]", translation = "скинуться, внести лепту",
             definition = "To contribute money or effort along with others to a shared cause.",
             definitionNative = "Внести деньги или усилия вместе с другими в общее дело.",
-            example = "Everyone in the office chip in to buy the boss a retirement gift.",
+            example = "Let's all chip in to buy the boss a gift.",
             exampleNative = "Все в офисе chip in, чтобы купить начальнику подарок на выход на пенсию.",
             pos = "phrase", semanticGroup = "phrasal_l4_subtle_actions", fillInBlankExclusions = listOf(41312L, 41313L, 41314L, 41315L)),
 
@@ -161,7 +161,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "pitch in", transliteration = "[pɪtʃ ɪn]", translation = "включиться (в общую работу)",
             definition = "To start helping with a task that other people are already doing.",
             definitionNative = "Начать помогать в задаче, которой уже занимаются другие.",
-            example = "If everyone pitch in, we can finish this report by lunch.",
+            example = "If everyone helps pitch in, we can finish by lunch.",
             exampleNative = "Если все pitch in, мы закончим этот отчёт к обеду.",
             pos = "phrase", semanticGroup = "phrasal_l4_subtle_actions", fillInBlankExclusions = listOf(41311L, 41313L, 41314L, 41315L)),
 
@@ -169,7 +169,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "weigh in", transliteration = "[weɪ ɪn]", translation = "высказаться (в дискуссии), вмешаться",
             definition = "To join a discussion by giving your opinion, especially with authority.",
             definitionNative = "Присоединиться к обсуждению, высказав своё мнение — особенно весомо.",
-            example = "The CEO finally weigh in on the design debate this morning.",
+            example = "The CEO should weigh in on this design debate soon.",
             exampleNative = "Гендиректор наконец weigh in в споре о дизайне сегодня утром.",
             pos = "phrase", semanticGroup = "phrasal_l4_subtle_actions", fillInBlankExclusions = listOf(41311L, 41312L, 41314L, 41315L, 41316L)),
 
@@ -219,7 +219,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "drift off", transliteration = "[drɪft ɔf]", translation = "задремать, погрузиться в сон",
             definition = "To gradually fall asleep, especially without intending to.",
             definitionNative = "Постепенно засыпать — обычно непроизвольно.",
-            example = "I kept trying to focus on the lecture but I drift off after ten minutes.",
+            example = "I often drift off during long, boring lectures.",
             exampleNative = "Я старался слушать лекцию, но через десять минут drift off.",
             pos = "phrase", semanticGroup = "phrasal_l4_obstacles", fillInBlankExclusions = listOf(41316L, 41317L, 41318L, 41320L)),
 
@@ -227,7 +227,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "pass over", transliteration = "[pæs ˈoʊvər]", translation = "обойти (при повышении), пропустить",
             definition = "To ignore someone for a promotion or chance and choose another person instead.",
             definitionNative = "Не учесть кого-то при повышении или возможности и выбрать другого.",
-            example = "She felt hurt when the management pass over her for the lead role again.",
+            example = "Managers shouldn't pass over loyal staff for promotion.",
             exampleNative = "Ей было обидно, когда руководство снова pass over её на ведущую роль.",
             pos = "phrase", semanticGroup = "phrasal_l4_obstacles", fillInBlankExclusions = listOf(41301L, 41316L, 41317L, 41318L, 41319L)),
 
@@ -237,7 +237,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "touch upon", transliteration = "[tʌtʃ əˈpɑn]", translation = "затронуть (тему вскользь)",
             definition = "To briefly mention or refer to a subject in writing or in speech.",
             definitionNative = "Коротко упомянуть или сослаться на тему в письме или речи.",
-            example = "The author only touch upon the political background of the era.",
+            example = "The author only seems to touch upon the political background.",
             exampleNative = "Автор лишь touch upon политический фон эпохи.",
             pos = "phrase", semanticGroup = "phrasal_l4_high_register", fillInBlankExclusions = listOf(41303L, 41314L, 41320L, 41322L, 41323L, 41324L, 41325L)),
 
@@ -245,7 +245,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "brood over", transliteration = "[brud ˈoʊvər]", translation = "изводиться, размышлять мрачно",
             definition = "To think anxiously or unhappily about something for a long time.",
             definitionNative = "Долго и тревожно или мрачно думать о чём-то.",
-            example = "Stop brood over a single mistake and move on with your work.",
+            example = "Don't brood over a single mistake for so long.",
             exampleNative = "Хватит brood over одну ошибку — двигайся дальше с работой.",
             pos = "phrase", semanticGroup = "phrasal_l4_high_register", fillInBlankExclusions = listOf(41303L, 41314L, 41320L, 41321L, 41323L, 41324L, 41325L)),
 
@@ -253,7 +253,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "pore over", transliteration = "[pɔr ˈoʊvər]", translation = "штудировать, корпеть над",
             definition = "To study a text or document with great care and attention.",
             definitionNative = "Изучать текст или документ с большим вниманием и тщательностью.",
-            example = "She spent the whole evening pore over the old contracts.",
+            example = "Lawyers must pore over every line of a contract.",
             exampleNative = "Она весь вечер pore over старые контракты.",
             pos = "phrase", semanticGroup = "phrasal_l4_high_register", fillInBlankExclusions = listOf(41303L, 41314L, 41320L, 41321L, 41322L, 41324L, 41325L)),
 
@@ -261,7 +261,7 @@ object WordDataEnglishPhrasalVerbsL4 {
             original = "chance upon", transliteration = "[tʃæns əˈpɑn]", translation = "наткнуться (случайно)",
             definition = "To find or meet someone or something completely by chance.",
             definitionNative = "Найти или встретить кого-то или что-то совершенно случайно.",
-            example = "I chance upon an old letter from my father in the attic.",
+            example = "You might chance upon an old letter in the attic.",
             exampleNative = "Я chance upon старое письмо от отца на чердаке.",
             pos = "phrase", semanticGroup = "phrasal_l4_high_register", fillInBlankExclusions = listOf(41314L, 41320L, 41321L, 41322L, 41323L, 41325L)),
 

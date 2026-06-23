@@ -128,7 +128,7 @@ object WordDataEnglishIdiomsL5 {
             original = "hoist by your own petard", transliteration = "[hɔɪst baɪ jər oʊn pəˈtɑrd]", translation = "попасться в собственную ловушку",
             definition = "Harmed by the very plan or device with which you intended to harm others.",
             definitionNative = "Пойман в ловушку, что приготовил для других. «Petard» — старая бомба, которая сама поднимала.",
-            example = "Time will hoist by your own petard the blackmailer who leaked those letters.",
+            example = "He was hoist by his own petard when his trap backfired.",
             exampleNative = "Шантажист оказался hoist by your own petard, когда его письма утекли.",
             pos = "phrase", semanticGroup = "idioms_l5_literary_archaic",  fillInBlankExclusions = listOf(40906L, 40908L, 40909L, 40910L)),
 

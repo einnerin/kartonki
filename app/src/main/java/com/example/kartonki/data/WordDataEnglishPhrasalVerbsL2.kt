@@ -112,7 +112,7 @@ object WordDataEnglishPhrasalVerbsL2 {
             original = "break down", transliteration = "[breɪk daʊn]", translation = "сломаться (о технике); расклеиться",
             definition = "To stop working, about a machine, or to lose emotional control.",
             definitionNative = "Перестать работать, про прибор, или потерять эмоциональный контроль.",
-            example = "Our car always break down at the worst possible moment.",
+            example = "Old cars often break down on cold winter mornings.",
             exampleNative = "Наша машина всегда break down в самый неподходящий момент.",
             pos = "phrase", semanticGroup = "phrasal_l2_problems", fillInBlankExclusions = listOf(41107L, 41108L, 41109L, 41110L)),
 
@@ -120,7 +120,7 @@ object WordDataEnglishPhrasalVerbsL2 {
             original = "give in", transliteration = "[ɡɪv ɪn]", translation = "уступить, сдаться (под давлением)",
             definition = "To finally agree to do something after refusing or resisting.",
             definitionNative = "В итоге согласиться сделать что-то после отказа или сопротивления.",
-            example = "After hours of arguing, he finally give in to her demands.",
+            example = "Don't give in to pressure so easily.",
             exampleNative = "После часов споров он наконец give in её требованиям.",
             pos = "phrase", semanticGroup = "phrasal_l2_problems", fillInBlankExclusions = listOf(41106L, 41108L, 41109L, 41110L)),
 
@@ -136,7 +136,7 @@ object WordDataEnglishPhrasalVerbsL2 {
             original = "mess up", transliteration = "[mɛs ʌp]", translation = "напортачить, испортить",
             definition = "To do something badly or to spoil a plan, task or situation.",
             definitionNative = "Сделать что-то плохо или испортить план, задачу или ситуацию.",
-            example = "I really mess up the presentation in front of the whole team.",
+            example = "Try not to mess up your first interview.",
             exampleNative = "Я реально mess up презентацию перед всей командой.",
             pos = "phrase", semanticGroup = "phrasal_l2_problems", fillInBlankExclusions = listOf(41101L, 41106L, 41107L, 41108L, 41110L, 41113L, 41116L, 41124L, 41125L)),
 
@@ -154,7 +154,7 @@ object WordDataEnglishPhrasalVerbsL2 {
             original = "turn into", transliteration = "[tɜrn ˈɪntu]", translation = "превратиться в",
             definition = "To change and become something different in form or character.",
             definitionNative = "Измениться и стать чем-то другим по форме или сути.",
-            example = "Their friendly chat slowly turn into a serious argument.",
+            example = "A small chat can quickly turn into a serious argument.",
             exampleNative = "Их дружеская беседа медленно turn into серьёзный спор.",
             pos = "phrase", semanticGroup = "phrasal_l2_changes", fillInBlankExclusions = listOf(41112L, 41113L, 41114L, 41115L)),
 
@@ -162,7 +162,7 @@ object WordDataEnglishPhrasalVerbsL2 {
             original = "end up", transliteration = "[ɛnd ʌp]", translation = "оказаться в итоге, кончить тем, что",
             definition = "To finally be in a place or situation, often unexpectedly.",
             definitionNative = "Прийти к какому-то результату или месту, часто совсем неожиданно.",
-            example = "We end up taking a taxi because of the heavy rain.",
+            example = "We might end up taking a taxi in this rain.",
             exampleNative = "Мы end up на такси из-за сильного дождя.",
             pos = "phrase", semanticGroup = "phrasal_l2_changes", fillInBlankExclusions = listOf(41111L, 41113L, 41114L, 41115L)),
 
@@ -170,7 +170,7 @@ object WordDataEnglishPhrasalVerbsL2 {
             original = "come up with", transliteration = "[kʌm ʌp wɪð]", translation = "придумать, предложить (идею)",
             definition = "To think of an idea, plan or solution and suggest it.",
             definitionNative = "Изобрести идею, план или решение и вынести его на обсуждение.",
-            example = "She always come up with the most creative ideas at work.",
+            example = "Good designers always come up with creative ideas.",
             exampleNative = "Она всегда come up with самые креативные идеи на работе.",
             pos = "phrase", semanticGroup = "phrasal_l2_changes", fillInBlankExclusions = listOf(41101L, 41111L, 41112L, 41114L, 41115L, 41124L)),
 
@@ -204,7 +204,7 @@ object WordDataEnglishPhrasalVerbsL2 {
             original = "fall out", transliteration = "[fɔl aʊt]", translation = "поссориться, рассориться",
             definition = "To have a serious argument with a friend or family member.",
             definitionNative = "Серьёзно повздорить с близким другом или членом семьи.",
-            example = "The brothers fall out over a small misunderstanding last summer.",
+            example = "Close friends sometimes fall out over silly things.",
             exampleNative = "Братья fall out из-за мелкого недоразумения прошлым летом.",
             pos = "phrase", semanticGroup = "phrasal_l2_social", fillInBlankExclusions = listOf(41106L, 41107L, 41115L, 41116L, 41118L, 41119L, 41120L)),
 
@@ -220,7 +220,7 @@ object WordDataEnglishPhrasalVerbsL2 {
             original = "take after", transliteration = "[teɪk ˈæftər]", translation = "пойти в (кого-то из родителей)",
             definition = "To look or behave like an older relative, usually a parent.",
             definitionNative = "Внешне или по характеру походить на старшего родственника, обычно родителя.",
-            example = "Everyone says she take after her grandmother in character.",
+            example = "Children often take after their parents in character.",
             exampleNative = "Все говорят, что она take after свою бабушку по характеру.",
             pos = "phrase", semanticGroup = "phrasal_l2_social", fillInBlankExclusions = listOf(41116L, 41117L, 41118L, 41120L)),
 

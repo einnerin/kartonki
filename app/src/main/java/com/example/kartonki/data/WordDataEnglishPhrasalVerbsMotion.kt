@@ -90,7 +90,7 @@ object WordDataEnglishPhrasalVerbsMotion {
             original = "run away", transliteration = "[rʌn əˈweɪ]", translation = "сбежать, убежать",
             definition = "To escape from a place by running, often in a hurry or in fear.",
             definitionNative = "Покинуть место бегом — часто торопясь или из страха.",
-            example = "The frightened deer run away as soon as it saw us.",
+            example = "Wild deer usually run away when people approach.",
             exampleNative = "Испуганный олень run away, едва нас заметив.",
             pos = "phrase", semanticGroup = "phrasal_motion_arrival_departure", fillInBlankExclusions = listOf(45101L, 45102L, 45104L, 45105L, 45109L, 45116L, 45117L, 45119L, 45120L, 45121L, 45124L)),
 
@@ -98,7 +98,7 @@ object WordDataEnglishPhrasalVerbsMotion {
             original = "walk off", transliteration = "[wɔk ɔf]", translation = "уйти прочь (пешком, в раздражении)",
             definition = "To leave a place on foot, often suddenly because you are upset or angry.",
             definitionNative = "Уйти откуда-то пешком — часто резко, в обиде или раздражении.",
-            example = "She just walk off without saying goodbye to anyone.",
+            example = "Don't just walk off without saying goodbye.",
             exampleNative = "Она просто walk off, ни с кем не попрощавшись.",
             pos = "phrase", semanticGroup = "phrasal_motion_arrival_departure", fillInBlankExclusions = listOf(45101L, 45102L, 45103L, 45105L, 45109L, 45124L)),
 
@@ -132,7 +132,7 @@ object WordDataEnglishPhrasalVerbsMotion {
             original = "pass through", transliteration = "[pæs θru]", translation = "проезжать через, проходить через",
             definition = "To travel through a place on the way to somewhere else.",
             definitionNative = "Проехать или пройти через какое-то место по пути куда-то ещё.",
-            example = "The train pass through several small villages before reaching the city.",
+            example = "Fast trains often pass through small villages without stopping.",
             exampleNative = "Поезд pass through несколько мелких деревень до того, как добраться до города.",
             pos = "phrase", semanticGroup = "phrasal_motion_vehicles", fillInBlankExclusions = listOf(45106L, 45107L, 45109L, 45110L)),
 
@@ -224,7 +224,7 @@ object WordDataEnglishPhrasalVerbsMotion {
             original = "back away", transliteration = "[bæk əˈweɪ]", translation = "пятиться, медленно отступать",
             definition = "To move slowly backwards because you are afraid or want to avoid something.",
             definitionNative = "Медленно двигаться задом — от страха или желая чего-то избежать.",
-            example = "He back away from the angry dog very slowly.",
+            example = "You should back away slowly from an angry dog.",
             exampleNative = "Он back away от злой собаки очень медленно.",
             pos = "phrase", semanticGroup = "phrasal_motion_orientation", fillInBlankExclusions = listOf(45116L, 45117L, 45118L, 45120L, 45121L)),
 
@@ -242,7 +242,7 @@ object WordDataEnglishPhrasalVerbsMotion {
             original = "wander off", transliteration = "[ˈwɑndər ɔf]", translation = "забрести, уйти куда-то (бесцельно)",
             definition = "To move away slowly from a place without a clear plan or aim.",
             definitionNative = "Медленно отойти куда-то без определённого плана или цели.",
-            example = "The little boy wander off from his parents at the fair.",
+            example = "Small children sometimes wander off at a busy fair.",
             exampleNative = "Малыш wander off от родителей на ярмарке.",
             pos = "phrase", semanticGroup = "phrasal_motion_speed_pace", fillInBlankExclusions = listOf(45103L, 45104L, 45105L, 45119L, 45122L, 45123L, 45124L, 45125L)),
 
@@ -250,7 +250,7 @@ object WordDataEnglishPhrasalVerbsMotion {
             original = "breeze past", transliteration = "[briz pæst]", translation = "пронестись мимо (легко, быстро)",
             definition = "To move past someone or something quickly and effortlessly.",
             definitionNative = "Быстро и без видимых усилий пройти или проехать мимо кого-то.",
-            example = "The young runner breeze past the older athletes near the finish.",
+            example = "Strong runners can breeze past tired opponents near the finish.",
             exampleNative = "Молодой бегун breeze past старших спортсменов у самого финиша.",
             pos = "phrase", semanticGroup = "phrasal_motion_speed_pace", fillInBlankExclusions = listOf(45121L, 45123L, 45124L, 45125L)),
 
@@ -258,7 +258,7 @@ object WordDataEnglishPhrasalVerbsMotion {
             original = "plough through", transliteration = "[plaʊ θru]", translation = "продираться, пробиваться через",
             definition = "To force a way forward through a crowd, snow or other heavy obstacle.",
             definitionNative = "Силой пробиваться вперёд через толпу, снег или другую тяжёлую преграду.",
-            example = "The truck plough through the deep snow on the mountain road.",
+            example = "Heavy trucks can plough through deep snow on mountain roads.",
             exampleNative = "Грузовик plough through глубокий снег на горной дороге.",
             pos = "phrase", semanticGroup = "phrasal_motion_speed_pace", fillInBlankExclusions = listOf(45107L, 45108L, 45121L, 45122L, 45124L, 45125L)),
 
