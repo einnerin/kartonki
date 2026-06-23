@@ -876,7 +876,7 @@ object WordDataEnglishBatch12 {
             pos = "verb", semanticGroup = "motion_jumping_leaping", fillInBlankExclusions = listOf(28303L, 28305L, 28306L, 28311L, 28315L)),
         WordEntity(id = 28321, setId = 283, languagePair = "en-ru", rarity = "UNCOMMON",
             original = "kneel", transliteration = "[nil]", translation = "стоять на коленях",
-            definition = "To rest your body low with legs folded under, bent backward.",
+            definition = "To lower yourself so your knees rest on the ground, with your lower legs folded back.",
             definitionNative = "Опуститься на пол с согнутыми ногами — чтобы помолиться или что-то поднять.",
             example = "He had to kneel down to tie his little daughter's shoelaces.",
             exampleNative = "Бабушка попросила kneel рядом и помочь поднять петлю вязания.",

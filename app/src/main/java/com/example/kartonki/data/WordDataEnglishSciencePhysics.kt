@@ -108,7 +108,7 @@ object WordDataEnglishSciencePhysics {
             semanticGroup = "science_physics_energy", fillInBlankExclusions = listOf(46502L, 46507L, 46508L, 46509L, 46510L)),
         WordEntity(
             id = 46507, original = "potential energy", transliteration = "[pəˈtenʃəl ˈenərdʒi]", translation = "потенциальная энергия",
-            definition = "The stored store a body has because of its position or shape, ready to turn into motion when released.",
+            definition = "The energy a body has stored because of its position or shape, ready to turn into motion when released.",
             definitionNative = "Скрытый запас, который тело хранит из-за своего положения или формы — готов перейти в движение.",
             example = "A drawn bow holds potential energy in its bent limbs and releases it the moment you let go.",
             exampleNative = "Натянутый лук держит potential energy в согнутых плечах и отдаёт её в момент выстрела.",

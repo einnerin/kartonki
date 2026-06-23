@@ -107,7 +107,7 @@ object WordDataEnglishPhrasalVerbsL1 {
             original = "walk in", transliteration = "[wɔk ɪn]", translation = "войти (пешком, без приглашения)",
             definition = "To enter a room or building by walking, often without warning.",
             definitionNative = "Появиться в комнате или здании пешком, часто без предупреждения.",
-            example = "He just walk in without knocking on the door first.",
+            example = "People walk in off the street all day without knocking on the door first.",
             exampleNative = "Он просто walk in, даже не постучав в дверь.",
             pos = "phrase", semanticGroup = "phrasal_l1_movement", fillInBlankExclusions = listOf(41001L, 41002L, 41003L, 41004L, 41014L)),
 
@@ -175,7 +175,7 @@ object WordDataEnglishPhrasalVerbsL1 {
             original = "run into", transliteration = "[rʌn ˈɪntu]", translation = "случайно встретить",
             definition = "To meet someone by chance, without planning it.",
             definitionNative = "Встретить кого-то случайно, без договорённости.",
-            example = "I run into my old teacher at the supermarket yesterday.",
+            example = "I often run into my old teacher at the supermarket.",
             exampleNative = "Я run into старую учительницу в супермаркете вчера.",
             pos = "phrase", semanticGroup = "phrasal_l1_relationships", fillInBlankExclusions = listOf(41011L, 41012L, 41014L, 41015L, 41016L, 41020L, 41024L)),
 
@@ -234,7 +234,7 @@ object WordDataEnglishPhrasalVerbsL1 {
             original = "look for", transliteration = "[lʊk fɔr]", translation = "искать",
             definition = "To try to find someone or something you need.",
             definitionNative = "Стараться найти нужного человека или нужный предмет.",
-            example = "I'm look for my keys — have you seen them?",
+            example = "I need to look for my keys — have you seen them?",
             exampleNative = "Я look for свои ключи — ты их видел?",
             pos = "phrase", semanticGroup = "phrasal_l1_actions_simple", fillInBlankExclusions = listOf(41016L, 41017L, 41018L, 41019L)),
 

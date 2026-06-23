@@ -87,7 +87,7 @@ object WordDataEnglishInternetL3 {
             pos = "noun", semanticGroup = "internet_l3_infrastructure", fillInBlankExclusions = listOf(39201L, 39202L, 39204L, 39205L, 39206L, 39209L, 39216L)),
 
         WordEntity(id = 39204, setId = 392, languagePair = "en-ru", rarity = "RARE",
-            original = "uptime", transliteration = "[ˈəpˌtaɪm]", translation = "время бесперебойной работы",
+            original = "uptime", transliteration = "[ˈʌpˌtaɪm]", translation = "время бесперебойной работы",
             definition = "The share of time a service stays online and responds to users without breaking.",
             definitionNative = "Доля времени, когда сервис остаётся в сети и отвечает пользователям без сбоев.",
             example = "The company guarantees ninety-nine percent uptime to its clients.",

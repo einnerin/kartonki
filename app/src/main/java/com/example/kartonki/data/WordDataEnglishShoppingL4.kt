@@ -121,7 +121,7 @@ object WordDataEnglishShoppingL4 {
             pos = "adjective", semanticGroup = "shopping_supply_chain"),
 
         WordEntity(id = 35609, setId = 356, languagePair = "en-ru", rarity = "LEGENDARY",
-            original = "backorder", transliteration = "[ˈbækˌɔrdər]", translation = "заказ на товар нет в наличии",
+            original = "backorder", transliteration = "[ˈbækˌɔrdər]", translation = "заказ на отсутствующий товар (с поставкой позже)",
             definition = "A purchase placed for a sold-out item that the shop will mail later.",
             definitionNative = "Заказ на закончившийся товар, который магазин пришлёт позже.",
             example = "The popular console is on backorder until the next factory shipment arrives.",

@@ -79,7 +79,7 @@ object WordDataEnglishCityLifeL2 {
             pos = "noun", semanticGroup = "city_money", fillInBlankExclusions = listOf(36601L, 36602L, 36603L, 36605L, 36606L)),
 
         WordEntity(id = 36605, setId = 366, languagePair = "en-ru", rarity = "RARE",
-            original = "bureau de change", transliteration = "[bjʊˌroʊ də ˈʃɒnʒ]", translation = "обменный пункт",
+            original = "bureau de change", transliteration = "[ˌbjʊˈroʊ də ˈʃɑnʒ]", translation = "обменный пункт",
             definition = "A small shop where travellers swap one country's money for another.",
             definitionNative = "Маленькая контора, где путешественники меняют деньги одной страны на другие.",
             example = "We changed our pounds at a tiny bureau de change near the airport.",

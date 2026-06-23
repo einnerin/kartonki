@@ -375,7 +375,7 @@ object WordDataEnglishBatch8 {
 
         // ── Set 267: Глаголы действия ─────────────────────────────────────
         WordEntity(id = 26701, setId = 267, languagePair = "en-ru", rarity = "COMMON",
-            original = "jump", transliteration = "[ʤəmp]", translation = "прыгать",
+            original = "jump", transliteration = "[ʤʌmp]", translation = "прыгать",
             definition = "Push off the ground and fly up for a short moment.",
             definitionNative = "Оттолкнуться от земли и взлететь на миг вверх.",
             example = "The kids jump on the bed whenever I leave the room.",
@@ -480,7 +480,7 @@ object WordDataEnglishBatch8 {
             exampleNative = "На льду легко fall и сильно ушибиться.",
             pos = "verb", semanticGroup = "verb_movement", fillInBlankExclusions = listOf(26701L, 26702L, 26703L, 26714L)),
         WordEntity(id = 26716, setId = 267, languagePair = "en-ru", rarity = "COMMON",
-            original = "touch", transliteration = "[təʧ]", translation = "трогать",
+            original = "touch", transliteration = "[tʌʧ]", translation = "трогать",
             definition = "Put your fingers or hand on something to feel it.",
             definitionNative = "Прикоснуться к чему-то пальцами или ладонью.",
             example = "Don't touch the stove — it's still very hot!",

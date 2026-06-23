@@ -140,7 +140,7 @@ object WordDataEnglishBatch11 {
             pos = "number", semanticGroup = "num_multipliers", fillInBlankExclusions = listOf(27417L, 27418L)),
         WordEntity(id = 27417, setId = 274, languagePair = "en-ru", rarity = "COMMON",
             original = "twice", transliteration = "[twaɪs]", translation = "два раза",
-            definition = "On a second and final occasion of something.",
+            definition = "Two times — not once, and not three times.",
             definitionNative = "Повторное действие — сначала и потом ещё.",
             example = "I visit my grandparents twice a month.",
             exampleNative = "В неделю мы ходим в бассейн twice, по средам и субботам.",

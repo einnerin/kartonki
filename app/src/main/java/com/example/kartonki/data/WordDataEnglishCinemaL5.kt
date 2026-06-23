@@ -229,7 +229,7 @@ object WordDataEnglishCinemaL5 {
         WordEntity(id = 39916, setId = 399, languagePair = "en-ru", rarity = "LEGENDARY",
             original = "tableau",
             transliteration = "[tæˈbloʊ]",
-            translation = "табло (статичная живописная сцена)",
+            translation = "живая картина (застывшая сцена)",
             definition = "A still painterly scene held a beat too long, as if the actors had frozen into a portrait.",
             definitionNative = "Замершая живописная сцена, выдержанная чуть дольше нужного, словно актёры застыли в портрет.",
             example = "The film closes on a tableau of the family at the long table.",

@@ -122,7 +122,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
             pos = "noun", semanticGroup = "health_body", fillInBlankExclusions = listOf(34506L, 34508L, 34509L, 34510L)),
 
         WordEntity(id = 34508, setId = 345, languagePair = "en-ru", rarity = "COMMON",
-            original = "body", transliteration = "[ˈbɒdi]", translation = "тело",
+            original = "body", transliteration = "[ˈbɑːdi]", translation = "тело",
             definition = "All the parts of a person — head, chest, arms and legs together.",
             definitionNative = "Все части человека — голова, грудь, руки и ноги вместе.",
             example = "Yoga is good for the whole body and the mind.",
@@ -240,7 +240,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
             pos = "adjective", semanticGroup = "health_concepts", fillInBlankExclusions = listOf(34522L)),
 
         WordEntity(id = 34522, setId = 345, languagePair = "en-ru", rarity = "COMMON",
-            original = "strong", transliteration = "[strɒŋ]", translation = "крепкий, мощный",
+            original = "strong", transliteration = "[strɔːŋ]", translation = "крепкий, мощный",
             definition = "Able to lift heavy things or push hard with the body.",
             definitionNative = "Имеющий много мускульной мощи: легко поднимает тяжёлое и хорошо толкает.",
             example = "He has very strong arms from years of swimming.",
@@ -278,7 +278,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
         // ── fitness_exercises (5) ─────────────────────────────────────────────
 
         WordEntity(id = 34601, setId = 346, languagePair = "en-ru", rarity = "UNCOMMON",
-            original = "squat", transliteration = "[skwɒt]", translation = "приседание",
+            original = "squat", transliteration = "[skwɑːt]", translation = "приседание",
             definition = "A move where you bend the knees to drop low and then stand back up.",
             definitionNative = "Упражнение: согнуть колени, опуститься вниз и снова встать.",
             example = "A deep squat works the thighs and the glutes hard.",
@@ -302,7 +302,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
             pos = "noun", semanticGroup = "fitness_exercises", fillInBlankExclusions = listOf(34601L, 34602L, 34604L, 34605L)),
 
         WordEntity(id = 34604, setId = 346, languagePair = "en-ru", rarity = "UNCOMMON",
-            original = "jog", transliteration = "[ʤɒɡ]", translation = "бег трусцой",
+            original = "jog", transliteration = "[dʒɑːɡ]", translation = "бег трусцой",
             definition = "A slow steady run done for a long time without rushing.",
             definitionNative = "Медленный ровный бег, который держат долго и без спешки.",
             example = "A gentle morning jog clears her head before work.",
@@ -370,7 +370,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
             pos = "noun", semanticGroup = "fitness_concepts", fillInBlankExclusions = listOf(34612L, 34613L, 34614L, 34615L)),
 
         WordEntity(id = 34612, setId = 346, languagePair = "en-ru", rarity = "RARE",
-            original = "endurance", transliteration = "[ɪnˈdjʊərəns]", translation = "выносливость",
+            original = "endurance", transliteration = "[ɪnˈdʊrəns]", translation = "выносливость",
             definition = "The power to keep up effort for a long time without giving up.",
             definitionNative = "Способность долго удерживать усилие, не сдаваясь.",
             example = "Long swims build the endurance of the whole body.",
@@ -478,7 +478,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
             pos = "adjective", semanticGroup = "fitness_routines"),
 
         WordEntity(id = 34625, setId = 346, languagePair = "en-ru", rarity = "UNCOMMON",
-            original = "posture", transliteration = "[ˈpɒsʧər]", translation = "осанка",
+            original = "posture", transliteration = "[ˈpɑːstʃər]", translation = "осанка",
             definition = "The way you hold your back and shoulders when sitting or standing.",
             definitionNative = "Как человек держит спину и плечи, когда сидит или стоит.",
             example = "Good posture during a deadlift saves the lower back.",
@@ -584,7 +584,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
             pos = "noun", semanticGroup = "health_adv_nutrition", fillInBlankExclusions = listOf(34709L, 34714L, 34715L)),
 
         WordEntity(id = 34712, setId = 347, languagePair = "en-ru", rarity = "EPIC",
-            original = "anabolic", transliteration = "[ˌænəˈbɒlɪk]", translation = "анаболический (наращивающий)",
+            original = "anabolic", transliteration = "[ˌænəˈbɑːlɪk]", translation = "анаболический (наращивающий)",
             definition = "Tied to body chemistry that builds new tissue from food and rest.",
             definitionNative = "Связанный с биохимией тела, строящей новые ткани из еды и отдыха.",
             example = "Sleep places the body in a deeply anabolic state.",
@@ -592,7 +592,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
             pos = "adjective", semanticGroup = "health_adv_nutrition", fillInBlankExclusions = listOf(34706L, 34713L)),
 
         WordEntity(id = 34713, setId = 347, languagePair = "en-ru", rarity = "EPIC",
-            original = "catabolic", transliteration = "[ˌkætəˈbɒlɪk]", translation = "катаболический (разрушающий)",
+            original = "catabolic", transliteration = "[ˌkætəˈbɑːlɪk]", translation = "катаболический (разрушающий)",
             definition = "Tied to body chemistry that breaks tissue down to release energy.",
             definitionNative = "Связанный с биохимией тела, разрушающей ткани ради высвобождения энергии.",
             example = "Long fasting puts the body into a catabolic phase.",
@@ -626,7 +626,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
             pos = "noun", semanticGroup = "health_adv_movement", fillInBlankExclusions = listOf(34701L, 34702L, 34703L, 34706L, 34707L, 34708L, 34710L, 34717L, 34718L, 34719L, 34720L, 34724L)),
 
         WordEntity(id = 34717, setId = 347, languagePair = "en-ru", rarity = "RARE",
-            original = "compound", transliteration = "[ˈkɒmpaʊnd]", translation = "многосуставное упражнение",
+            original = "compound", transliteration = "[ˈkɑːmpaʊnd]", translation = "многосуставное упражнение",
             definition = "A move that loads many joints and muscle groups at the same time.",
             definitionNative = "Упражнение, нагружающее сразу несколько суставов и групп мышц.",
             example = "The squat is the king of compound movements.",
@@ -668,7 +668,7 @@ object WordDataEnglishHealthFitnessL1L2L3 {
             pos = "noun", semanticGroup = "health_adv_science", fillInBlankExclusions = listOf(34710L, 34722L, 34723L, 34724L, 34725L)),
 
         WordEntity(id = 34722, setId = 347, languagePair = "en-ru", rarity = "EPIC",
-            original = "kinesiology", transliteration = "[kɪˌniːsiˈɒləʤi]", translation = "кинезиология (наука о движении)",
+            original = "kinesiology", transliteration = "[kɪˌniːsiˈɑːlədʒi]", translation = "кинезиология (наука о движении)",
             definition = "The study of how the human body moves and how the joints work.",
             definitionNative = "Наука о том, как движется человеческое тело и работают суставы.",
             example = "She studied kinesiology to become a sports therapist.",

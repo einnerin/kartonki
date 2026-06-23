@@ -100,7 +100,7 @@ object WordDataEnglishArchitectureStyles {
             original = "Futurism", transliteration = "[ˈfjuːtʃərɪzəm]", translation = "футуризм",
             definition = "An Italian movement before WWI that worshipped speed, machines and tall city towers.",
             definitionNative = "Итальянское движение до Первой мировой: культ скорости, машин и высоких башен.",
-            example = "Sant'Elia drew radical Futurism cities of glass and steel that were never built.",
+            example = "Sant'Elia drew radical visions of Futurism — glass-and-steel towers that were never built.",
             exampleNative = "Сант-Элиа рисовал радикальные города Futurism из стекла и стали.",
             pos = "noun", semanticGroup = "arch_styles_early_modern", fillInBlankExclusions = listOf(45207L, 45208L, 45209L, 45210L, 45217L, 45218L)),
         WordEntity(id = 45212, setId = 452, languagePair = "en-ru", rarity = "RARE",

@@ -79,7 +79,7 @@ object WordDataEnglishEverydayL4 {
             original = "dither", transliteration = "[ˈdɪðər]", translation = "мяться, не решаться",
             definition = "To hesitate nervously between choices — unable to decide what to do.",
             definitionNative = "Нервно колебаться между вариантами — не в силах принять решение.",
-            example = "Stop dither over the menu — the waiter is waiting patiently.",
+            example = "Don't dither over the menu — the waiter is waiting patiently.",
             exampleNative = "Хватит dither над меню — официант терпеливо ждёт.",
             pos = "verb", semanticGroup = "everyday_motion", fillInBlankExclusions = listOf(32801L, 32802L, 32803L, 32804L)),
 

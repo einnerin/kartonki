@@ -128,7 +128,7 @@ object WordDataEnglishHealthFitnessL5 {
             pos = "noun", semanticGroup = "health_physiology", fillInBlankExclusions = listOf(35502L, 35506L, 35507L, 35508L, 35510L)),
 
         WordEntity(id = 35510, setId = 355, languagePair = "en-ru", rarity = "LEGENDARY",
-            original = "telomere", transliteration = "[ˈtiːlɵmɪər]", translation = "теломера (концевой участок ДНК)",
+            original = "telomere", transliteration = "[ˈtiːləˌmɪr]", translation = "теломера (концевой участок ДНК)",
             definition = "A protective cap at the end of a chromosome that shortens with each cell split.",
             definitionNative = "Защитный колпачок на конце хромосомы, укорачивающийся при каждом делении клетки.",
             example = "Researchers link short telomere length to faster biological aging.",

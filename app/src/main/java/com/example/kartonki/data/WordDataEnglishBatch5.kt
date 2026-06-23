@@ -478,7 +478,7 @@ object WordDataEnglishBatch5 {
             exampleNative = "«2+2=4» — a priori истина: не нужен опыт, чтобы её знать.",
             rarity = "EPIC", setId = 258, languagePair = "en-ru", pos = "adverb", semanticGroup = "philosophy_epistemology", fillInBlankExclusions = listOf(25817L)),
 
-        WordEntity(id = 25817, original = "a posteriori", transliteration = "[ˌeɪ pɒˈstɪəriɔːri]", translation = "апостериори (из опыта)",
+        WordEntity(id = 25817, original = "a posteriori", transliteration = "[ˌeɪ pɑˌstɪriˈɔːri]", translation = "апостериори (из опыта)",
             definition = "Knowledge that comes only after you observe or live through something.",
             definitionNative = "Знание, полученное из наблюдений и опыта, а не из чистого разума.",
             example = "Knowing that fire is hot is a posteriori knowledge.",

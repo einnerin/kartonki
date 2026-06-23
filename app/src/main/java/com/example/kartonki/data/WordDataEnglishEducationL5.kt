@@ -62,7 +62,7 @@ object WordDataEnglishEducationL5 {
             fillInBlankExclusions = listOf(32601L, 32603L, 32604L, 32605L)),
 
         WordEntity(id = 32603, setId = 326, languagePair = "en-ru", rarity = "LEGENDARY",
-            original = "propaedeutic", transliteration = "[ˌproʊpɪˈdjutɪk]", translation = "пропедевтический (вводный курс)",
+            original = "propaedeutic", transliteration = "[ˌproʊpɪˈdutɪk]", translation = "пропедевтический (вводный курс)",
             definition = "Serving as a basic introduction that prepares one for deeper study.",
             definitionNative = "Служащий начальным введением, готовящим к более глубокому изучению предмета.",
             example = "First-year Latin is a propaedeutic course before classical philology.",

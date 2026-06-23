@@ -184,7 +184,7 @@ object WordDataEnglishInternetPlatforms {
             original = "subscriber", transliteration = "[səbˈskraɪbər]", translation = "подписчик канала (часто платный)",
             definition = "Someone who has clicked the button to follow a channel and get every new video.",
             definitionNative = "Тот, кто нажал кнопку следить за каналом и получать каждое новое видео.",
-            example = "She just hit one hundred thousand subscriber milestone last night.",
+            example = "She just hit the one-hundred-thousand subscriber milestone last night.",
             exampleNative = "Вчера вечером она как раз преодолела отметку в сто тысяч subscriber.",
             pos = "noun", semanticGroup = "internet_l6_streaming", fillInBlankExclusions = listOf(45411L, 45412L, 45413L, 45414L, 45416L)),
 
