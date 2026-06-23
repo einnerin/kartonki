@@ -78,11 +78,11 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
 
         composable(Route.Home.path) {
             HomeScreen(
-                onNavigateToStudy = { navController.navigate(Route.Study.path) },
-                onNavigateToPvp = { navController.navigate(Route.PvpModeSelect.path) },
-                onNavigateToCollection = { navController.navigate(Route.MyDecks.path) },
-                onNavigateToSettings = { navController.navigate(Route.Settings.path) },
-                onNavigateToShop = { navController.navigate(Route.PackShop.path) },
+                onNavigateToStudy = { navController.navigateSingleTop(Route.Study.path) },
+                onNavigateToPvp = { navController.navigateSingleTop(Route.PvpModeSelect.path) },
+                onNavigateToCollection = { navController.navigateSingleTop(Route.MyDecks.path) },
+                onNavigateToSettings = { navController.navigateSingleTop(Route.Settings.path) },
+                onNavigateToShop = { navController.navigateSingleTop(Route.PackShop.path) },
             )
         }
 
@@ -90,8 +90,8 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
             PvpModeSelectScreen(
                 authManager = authManager,
                 onNavigateBack = { navController.popBackStack() },
-                onNavigateToOnlineMatchmaking = { navController.navigate(Route.OnlineMatchmaking.path) },
-                onNavigateToLocalPvp = { navController.navigate(Route.PvpDeckSelect.path) },
+                onNavigateToOnlineMatchmaking = { navController.navigateSingleTop(Route.OnlineMatchmaking.path) },
+                onNavigateToLocalPvp = { navController.navigateSingleTop(Route.PvpDeckSelect.path) },
             )
         }
 
@@ -125,11 +125,11 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         composable(Route.Settings.path) {
             SettingsScreen(
                 onNavigateBack = { navController.popBackStack() },
-                onNavigateToStats = { navController.navigate(Route.PlayerStats.path) },
-                onNavigateToWordStats = { navController.navigate(Route.WordStats.path) },
-                onNavigateToAchievements = { navController.navigate(Route.Achievements.path) },
+                onNavigateToStats = { navController.navigateSingleTop(Route.PlayerStats.path) },
+                onNavigateToWordStats = { navController.navigateSingleTop(Route.WordStats.path) },
+                onNavigateToAchievements = { navController.navigateSingleTop(Route.Achievements.path) },
                 onNavigateToDismissedProblemWords = {
-                    navController.navigate(Route.DismissedProblemWords.path)
+                    navController.navigateSingleTop(Route.DismissedProblemWords.path)
                 },
                 onSignOut = {
                     navController.navigate(Route.Home.path) {
@@ -146,7 +146,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         composable(Route.WordStats.path) {
             WordStatsScreen(
                 onNavigateBack = { navController.popBackStack() },
-                onNavigateToProblemWords = { navController.navigate(Route.ProblemWordsSession.path) },
+                onNavigateToProblemWords = { navController.navigateSingleTop(Route.ProblemWordsSession.path) },
             )
         }
 
@@ -161,9 +161,9 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         composable(Route.Study.path) {
             StudyScreen(
                 onNavigateToSetDetail = { setId ->
-                    navController.navigate(Route.WordSetDetail.createRoute(setId))
+                    navController.navigateSingleTop(Route.WordSetDetail.createRoute(setId))
                 },
-                onNavigateToProblemWords = { navController.navigate(Route.ProblemWordsList.path) },
+                onNavigateToProblemWords = { navController.navigateSingleTop(Route.ProblemWordsList.path) },
                 onNavigateBack = { navController.popBackStack() },
             )
         }
@@ -172,10 +172,10 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
             ProblemWordsListScreen(
                 onNavigateBack = { navController.popBackStack() },
                 onStartSession = {
-                    navController.navigate(Route.ProblemWordsSession.path)
+                    navController.navigateSingleTop(Route.ProblemWordsSession.path)
                 },
                 onNavigateToDismissed = {
-                    navController.navigate(Route.DismissedProblemWords.path)
+                    navController.navigateSingleTop(Route.DismissedProblemWords.path)
                 },
             )
         }
@@ -192,7 +192,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         ) {
             WordSetDetailScreen(
                 onStartStudy = { setId ->
-                    navController.navigate(Route.StudySession.createRoute(setId))
+                    navController.navigateSingleTop(Route.StudySession.createRoute(setId))
                 },
                 onNavigateBack = { navController.popBackStack() },
             )
@@ -210,9 +210,9 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         composable(Route.MyDecks.path) {
             MyDecksScreen(
                 onNavigateToDeckBuilder = { deckId ->
-                    navController.navigate(Route.DeckBuilder.createRoute(deckId))
+                    navController.navigateSingleTop(Route.DeckBuilder.createRoute(deckId))
                 },
-                onNavigateToCollection = { navController.navigate(Route.Collection.path) },
+                onNavigateToCollection = { navController.navigateSingleTop(Route.Collection.path) },
                 onNavigateBack = { navController.popBackStack() },
             )
         }
@@ -236,7 +236,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
             PvpDeckSelectScreen(
                 onNavigateBack = { navController.popBackStack() },
                 onStartGame = { p1Name, p2Name, deck1Id, deck2Id ->
-                    navController.navigate(
+                    navController.navigateSingleTop(
                         Route.PvpGame.createRoute(p1Name, p2Name, deck1Id, deck2Id)
                     )
                 },
@@ -273,7 +273,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         composable(Route.PackShop.path) {
             PackShopScreen(
                 onNavigateBack = { navController.popBackStack() },
-                onOpenPacks = { count -> navController.navigate(Route.PackOpening.createRoute(count)) },
+                onOpenPacks = { count -> navController.navigateSingleTop(Route.PackOpening.createRoute(count)) },
             )
         }
 
@@ -302,3 +302,11 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         )
     }
 }
+
+/**
+ * navigate() that ignores a duplicate tap on an already-top destination — prevents a
+ * second copy of the same screen from a fast double-tap. For plain forward pushes only;
+ * transitions that already use popUpTo are inherently safe and keep plain navigate().
+ */
+private fun androidx.navigation.NavController.navigateSingleTop(route: String) =
+    navigate(route) { launchSingleTop = true }
