@@ -1,6 +1,7 @@
 package com.example.kartonki.ui.screen.pvp
 
 import com.example.kartonki.domain.model.Word
+import com.example.kartonki.domain.quiz.QuizBuilder
 
 /**
  * Quiz data produced by [PvpGameLogic.buildQuiz]. Shared between local and online PvP.
@@ -55,6 +56,17 @@ object PvpGameLogic {
      * Builds a quiz for [word] using [allWords] as the distractor pool.
      * Randomly picks from translation / definition / fill_blank based on available data.
      * Returns null if fewer than 3 distractors are available.
+     *
+     * Shares the single-player FILL_IN_BLANK safety guards via [QuizBuilder]:
+     *  - fill_blank only when [Word.isFillInBlankSafe] AND the headword can actually
+     *    be located in the example ([QuizBuilder.blankSentenceFor] != null) — the
+     *    naive String.replace used before silently left the answer visible in the
+     *    sentence when the example didn't contain the headword verbatim (Hebrew
+     *    inflection, conjugated phrasal verbs).
+     *  - fill_blank distractors that could themselves fit the blank are excluded
+     *    via [Word.fillInBlankExclusions].
+     *  - every option set is de-duplicated so synonyms never surface as two
+     *    visually identical (and both-correct) choices.
      */
     fun buildQuiz(word: Word, allWords: List<Word>): PvpQuiz? {
         val others = pickDistractors(word, allWords)
@@ -63,17 +75,23 @@ object PvpGameLogic {
         // Exclude translation if another word in the pool shares the same original —
         // that would produce two correct answers in a multiple-choice question.
         val hasAmbiguousOriginal = allWords.any { it.id != word.id && it.original.equals(word.original, ignoreCase = true) }
+
+        // Same guard as the single-player pipeline: only offer fill_blank when it's
+        // flagged safe and the blank can actually be formed.
+        val blankSentence = if (word.isFillInBlankSafe && word.example != null)
+            QuizBuilder.blankSentenceFor(word) else null
+
         val candidates = buildList {
             if (!hasAmbiguousOriginal) add("translation")
             if (word.definition != null && others.count { it.definition != null } >= 3) add("definition")
-            if (word.example != null) add("fill_blank")
+            if (blankSentence != null) add("fill_blank")
         }
 
         // If no unambiguous type is available, fall back to translation (best we can do).
         val chosenType = if (candidates.isEmpty()) "translation" else candidates.random()
         return when (chosenType) {
             "definition" -> {
-                val wrongs = others.filter { it.definition != null }.take(3).map { it.definition!! }
+                val wrongs = uniqueDistractorTexts(others, correct = word.definition!!) { it.definition }
                 if (wrongs.size < 3) return translationQuiz(word, others)
                 PvpQuiz(
                     playedCard = word,
@@ -84,11 +102,13 @@ object PvpGameLogic {
                 )
             }
             "fill_blank" -> {
-                val sentence = word.example!!.replace(word.original, "_____", ignoreCase = true)
-                val wrongs = others.take(3).map { it.original }
+                val excluded = word.fillInBlankExclusions.toSet()
+                val pool = others.filter { it.id !in excluded }
+                val wrongs = uniqueDistractorTexts(pool, correct = word.original) { it.original }
+                if (wrongs.size < 3) return translationQuiz(word, others)
                 PvpQuiz(
                     playedCard = word,
-                    question = sentence,
+                    question = blankSentence!!,
                     questionLabel = "Выберите слово для пропуска:",
                     options = (wrongs + word.original).shuffled(),
                     correctAnswer = word.original,
@@ -99,13 +119,39 @@ object PvpGameLogic {
     }
 
     fun translationQuiz(word: Word, others: List<Word>): PvpQuiz {
-        val wrongs = others.filter { it.translation != word.translation }.take(3).map { it.translation }
+        val wrongs = uniqueDistractorTexts(others, correct = word.translation) { it.translation }
+        // Pad with placeholders if the pool is too small, so we always render 4 options.
+        val padded = wrongs + List(maxOf(0, 3 - wrongs.size)) { i -> "—${i + 1}" }
         return PvpQuiz(
             playedCard = word,
             question = word.original,
             questionLabel = "Выберите перевод:",
-            options = (wrongs + word.translation).shuffled(),
+            options = (padded + word.translation).shuffled(),
             correctAnswer = word.translation,
         )
+    }
+
+    /**
+     * Picks up to 3 distractor strings via [textOf], skipping nulls/blanks and any
+     * duplicate of the correct answer or an already-picked distractor. Mirrors
+     * QuizBuilder.uniqueDistractorTexts so PvP options are never two identical
+     * (and both-correct) choices.
+     */
+    private inline fun uniqueDistractorTexts(
+        candidates: List<Word>,
+        correct: String,
+        textOf: (Word) -> String?,
+    ): List<String> {
+        val seen = HashSet<String>().apply { add(correct) }
+        val result = ArrayList<String>(3)
+        for (c in candidates) {
+            val t = textOf(c) ?: continue
+            if (t.isBlank()) continue
+            if (seen.add(t)) {
+                result += t
+                if (result.size == 3) break
+            }
+        }
+        return result
     }
 }
