@@ -9,9 +9,6 @@ import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.random.Random
@@ -36,17 +33,10 @@ class PackRepository @Inject constructor(
     private val collectionDao: CollectionDao,
     private val userPrefs: UserPreferencesRepository,
 ) {
-    private val _pendingNewCards = MutableStateFlow<List<Word>>(emptyList())
-    val pendingNewCards: StateFlow<List<Word>> = _pendingNewCards.asStateFlow()
-
     val activityCount: Flow<Int>      = userPrefs.activityCount
     val tokensBalance: Flow<Int>      = userPrefs.tokensBalance
     val dailyActivityCount: Flow<Int> = userPrefs.dailyActivityCount
     val languagePair: Flow<String>    = userPrefs.languagePair
-
-    fun clearPendingNewCards() {
-        _pendingNewCards.value = emptyList()
-    }
 
     /**
      * Registers one completed activity. Counts toward the daily limit and grants

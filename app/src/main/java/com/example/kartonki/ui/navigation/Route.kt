@@ -38,7 +38,6 @@ sealed class Route(val path: String) {
         fun createRoute(count: Int) = "pack_opening/$count"
         const val ARG_COUNT = "count"
     }
-    object NewCards    : Route("new_cards")
 
     object PvpGame : Route("pvp_game/{deck1Id}/{deck2Id}?p1Name={p1Name}&p2Name={p2Name}") {
         fun createRoute(p1Name: String, p2Name: String, deck1Id: Long, deck2Id: Long): String {

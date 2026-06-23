@@ -2,7 +2,7 @@ package com.example.kartonki.ui.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.collectAsState
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.runtime.getValue
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
@@ -24,8 +24,6 @@ import com.example.kartonki.ui.screen.pvp.OnlinePvpGameScreen
 import com.example.kartonki.ui.screen.pvp.PvpDeckSelectScreen
 import com.example.kartonki.ui.screen.pvp.PvpGameScreen
 import com.example.kartonki.ui.screen.pvp.PvpModeSelectScreen
-import com.example.kartonki.ui.screen.rewards.NewCardsEventViewModel
-import com.example.kartonki.ui.screen.rewards.NewCardsScreen
 import com.example.kartonki.ui.screen.settings.SettingsScreen
 import com.example.kartonki.ui.screen.splash.SplashScreen
 import com.example.kartonki.ui.screen.shop.PackOpeningScreen
@@ -43,12 +41,8 @@ import com.example.kartonki.ui.screen.study.WordSetDetailScreen
 fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManager) {
     // Achievement notification overlay — shared across all screens
     val achievementVm: AchievementEventViewModel = hiltViewModel()
-    val pendingAchievement by achievementVm.pendingNotification.collectAsState()
-    val achievementLanguagePair by achievementVm.languagePair.collectAsState()
-
-    // New cards event overlay — shared across all screens
-    val newCardsVm: NewCardsEventViewModel = hiltViewModel()
-    val pendingNewCards by newCardsVm.pendingNewCards.collectAsState()
+    val pendingAchievement by achievementVm.pendingNotification.collectAsStateWithLifecycle()
+    val achievementLanguagePair by achievementVm.languagePair.collectAsStateWithLifecycle()
 
     // Analytics: tab navigation tracking — фиксируем смену destination'а
     val navTracker: com.example.kartonki.analytics.NavigationAnalyticsTracker = hiltViewModel()
@@ -58,12 +52,6 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         }
         navController.addOnDestinationChangedListener(listener)
         onDispose { navController.removeOnDestinationChangedListener(listener) }
-    }
-
-    LaunchedEffect(pendingNewCards.isNotEmpty()) {
-        if (pendingNewCards.isNotEmpty()) {
-            navController.navigate(Route.NewCards.path) { launchSingleTop = true }
-        }
     }
 
     NavHost(navController = navController, startDestination = Route.Splash.path) {
@@ -303,16 +291,6 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
             )
         }
 
-        composable(Route.NewCards.path) {
-            val cards by newCardsVm.pendingNewCards.collectAsState()
-            NewCardsScreen(
-                cards = cards,
-                onDismiss = {
-                    newCardsVm.consume()
-                    navController.popBackStack()
-                },
-            )
-        }
     }
 
     // Global achievement notification dialog
