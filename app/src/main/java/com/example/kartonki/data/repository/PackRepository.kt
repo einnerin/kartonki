@@ -9,6 +9,8 @@ import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.random.Random
@@ -38,6 +40,12 @@ class PackRepository @Inject constructor(
     val dailyActivityCount: Flow<Int> = userPrefs.dailyActivityCount
     val languagePair: Flow<String>    = userPrefs.languagePair
 
+    // Token balance and the activity counter are stored in SharedPreferences as
+    // non-atomic read-modify-write. Serialize every mutating path so two near-
+    // simultaneous calls (double-tap "buy", or a PvE + PvP session finishing at
+    // once) can't lose updates or spend the balance twice.
+    private val tokenMutex = Mutex()
+
     /**
      * Registers one completed activity. Counts toward the daily limit and grants
      * tokens every [UserPreferencesRepository.ACTIVITIES_PER_TOKEN_GRANT] activities.
@@ -45,9 +53,9 @@ class PackRepository @Inject constructor(
      * Activities beyond [UserPreferencesRepository.DAILY_ACTIVITY_LIMIT] in a single
      * day are silently ignored — the user has hit the daily token cap.
      */
-    suspend fun onActivityCompleted() {
+    suspend fun onActivityCompleted() = tokenMutex.withLock {
         val counted = userPrefs.registerDailyActivity()
-        if (!counted) return  // daily cap reached
+        if (!counted) return@withLock  // daily cap reached
 
         val current = userPrefs.getActivityCount()
         val next = current + 1
@@ -72,11 +80,11 @@ class PackRepository @Inject constructor(
      * (see [DUPLICATE_COMPENSATION]). The compensation is credited automatically
      * to the token balance and reflected in [PackResult.duplicateRewardTokens].
      */
-    suspend fun purchasePacksWithTokens(count: Int): PackResult {
-        if (count <= 0) return PackResult(emptyList(), 0)
+    suspend fun purchasePacksWithTokens(count: Int): PackResult = tokenMutex.withLock {
+        if (count <= 0) return@withLock PackResult(emptyList(), 0)
         val cost = count * UserPreferencesRepository.TOKENS_PER_PACK
         val balance = userPrefs.getTokensBalance()
-        if (balance < cost) return PackResult(emptyList(), 0)
+        if (balance < cost) return@withLock PackResult(emptyList(), 0)
         userPrefs.setTokensBalance(balance - cost)
 
         val ownedIds = collectionDao.getCollectedWordIds().toHashSet()
@@ -96,7 +104,7 @@ class PackRepository @Inject constructor(
         if (compensation > 0) {
             userPrefs.addTokens(compensation)
         }
-        return PackResult(cards, compensation)
+        return@withLock PackResult(cards, compensation)
     }
 
     private suspend fun generatePackCards(): List<Word> {
