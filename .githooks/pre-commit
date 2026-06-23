@@ -168,14 +168,15 @@ $(tail -40 /tmp/kartonki-global.log | sed 's/^/    /')
 
     if [ -n "$ALL_SETIDS" ]; then
       SETID_COUNT=$(echo "$ALL_SETIDS" | wc -l)
-      echo -e "    Валидация ${SETID_COUNT} реально изменённых setIds"
-      for sid in $ALL_SETIDS; do
-        if ! bash scripts/validate/validate_all.sh "$sid" > /tmp/kartonki-set-${sid}.log 2>&1; then
-          ERRORS+=("validate_all.sh упал для setId=$sid:
-$(grep -E '❌|BLOCK' /tmp/kartonki-set-${sid}.log | head -10 | sed 's/^/    /')
-Детали: bash scripts/validate/validate_all.sh $sid")
-        fi
-      done
+      echo -e "    Валидация ${SETID_COUNT} реально изменённых setIds (validate_fast, in-process)"
+      # validate_fast.py = те же 20 проверок что validate_all.sh, но в ОДНОМ
+      # процессе с разовым парсингом корпуса. На Windows ~40x быстрее цикла bash
+      # (раньше ~35с/сет → 2ч на 200 сетов). Семантика pass/fail идентична.
+      if ! python scripts/validate/validate_fast.py $ALL_SETIDS > /tmp/kartonki-fast.log 2>&1; then
+        ERRORS+=("validate_fast обнаружил блокирующие нарушения:
+$(grep -E '❌|▸' /tmp/kartonki-fast.log | head -30 | sed 's/^/    /')
+Детали (один сет): bash scripts/validate/validate_all.sh <setId>")
+      fi
     else
       echo -e "    Изменения вне WordEntity-блоков (или пустой diff), per-setId валидация пропущена"
     fi

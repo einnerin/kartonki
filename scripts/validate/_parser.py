@@ -170,6 +170,9 @@ def parse_words_from_text(content, file_basename):
     return words
 
 
+_PARSE_CACHE = {}  # (path, mtime) -> parsed words; speeds up multi-validator runs
+
+
 def parse_words(kt_file):
     """
     Parse all WordEntity records from a single .kt file.
@@ -183,6 +186,14 @@ def parse_words(kt_file):
     validate_fields_filled distinguish between "field absent" and "field
     present but empty string".
     """
+    _key = None
+    try:
+        _key = (str(kt_file), os.path.getmtime(kt_file))
+        _hit = _PARSE_CACHE.get(_key)
+        if _hit is not None:
+            return _hit
+    except OSError:
+        _key = None
     content = kt_file.read_text(encoding="utf-8")
     words = []
     for block in parse_blocks(content, "WordEntity"):
@@ -223,6 +234,8 @@ def parse_words(kt_file):
                 "isFillInBlankSafe": is_safe,
                 "fillInBlankExclusions": fib_exclusions,
             })
+    if _key is not None:
+        _PARSE_CACHE[_key] = words
     return words
 
 
