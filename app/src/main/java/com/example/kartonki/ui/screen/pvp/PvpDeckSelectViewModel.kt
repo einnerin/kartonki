@@ -68,7 +68,7 @@ class PvpDeckSelectViewModel @Inject constructor(
             val options = entities.map {
                 val cardCount = deckDao.getCardCountForDeck(it.id)
                 val rarityCounts = deckDao.getRarityCountsForDeck(it.id)
-                    .associate { row -> Rarity.valueOf(row.rarity) to row.cnt }
+                    .associate { row -> runCatching { Rarity.valueOf(row.rarity) }.getOrDefault(Rarity.COMMON) to row.cnt }
                 PvpDeckOption(
                     id = it.id,
                     name = it.name,

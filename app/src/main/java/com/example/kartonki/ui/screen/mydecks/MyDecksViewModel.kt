@@ -106,7 +106,7 @@ class MyDecksViewModel @Inject constructor(
             val summaries = entities.map { entity ->
                 val cardCount = deckDao.getCardCountForDeck(entity.id)
                 val rarityCounts = deckDao.getRarityCountsForDeck(entity.id)
-                    .associate { Rarity.valueOf(it.rarity) to it.cnt }
+                    .associate { runCatching { Rarity.valueOf(it.rarity) }.getOrDefault(Rarity.COMMON) to it.cnt }
                 DeckSummary(
                     id = entity.id,
                     name = entity.name,

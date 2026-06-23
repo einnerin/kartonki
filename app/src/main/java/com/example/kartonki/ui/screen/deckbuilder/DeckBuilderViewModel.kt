@@ -107,6 +107,9 @@ class DeckBuilderViewModel @Inject constructor(
         val state = _uiState.value
         if (!state.canAdd(word)) return
         viewModelScope.launch {
+            // Guard: with no resolved deck (user deleted every deck) currentDeckId stays 0,
+            // and writing DeckCardCrossRef(0, …) creates orphan rows under a phantom deck.
+            if (currentDeckId <= 0L) return@launch
             deckDao.addCardToDeck(DeckCardCrossRef(currentDeckId, word.id))
             refreshCards()
         }
@@ -114,6 +117,7 @@ class DeckBuilderViewModel @Inject constructor(
 
     fun removeCard(word: Word) {
         viewModelScope.launch {
+            if (currentDeckId <= 0L) return@launch
             deckDao.removeCardFromDeck(DeckCardCrossRef(currentDeckId, word.id))
             refreshCards()
         }
