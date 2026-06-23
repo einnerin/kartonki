@@ -17,6 +17,7 @@ import com.example.kartonki.domain.model.AchievementState
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
+import kotlinx.coroutines.sync.withLock
 import java.util.Calendar
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -45,8 +46,16 @@ class AchievementRepository @Inject constructor(
     private val _newlyUnlocked = MutableSharedFlow<AchievementId>(extraBufferCapacity = 8)
     val newlyUnlocked: SharedFlow<AchievementId> = _newlyUnlocked.asSharedFlow()
 
-    /** unlockedCache key = "$id|$languagePair" — language-aware. */
-    private val unlockedCache: MutableSet<String> = mutableSetOf()
+    /**
+     * unlockedCache key = "$id|$languagePair" — language-aware. Concurrent-safe set
+     * because the record/check entry points can run from different coroutines (e.g. a
+     * study session and a PvP match completing near-simultaneously) — a plain HashSet
+     * risked a ConcurrentModificationException.
+     */
+    private val unlockedCache: MutableSet<String> = java.util.concurrent.ConcurrentHashMap.newKeySet()
+
+    /** Serializes [unlock] so a concurrent double-trigger can't double-grant/double-emit. */
+    private val unlockMutex = kotlinx.coroutines.sync.Mutex()
 
     private fun cacheKey(id: AchievementId, lang: String) = "${id.name}|$lang"
 
@@ -318,9 +327,19 @@ class AchievementRepository @Inject constructor(
         const val RUSTY_GAP_DAYS         = 7L
     }
 
-    private suspend fun unlock(id: AchievementId, lang: String) {
+    private suspend fun unlock(id: AchievementId, lang: String) = unlockMutex.withLock {
         val key = cacheKey(id, lang)
-        val alreadyUnlocked = key in unlockedCache
+        // Idempotent: never re-record, re-grant the reward card, or re-emit an
+        // achievement that's already unlocked. The cache can be cold early in the
+        // process, so fall back to the DB before deciding it's new. (The old code
+        // re-upserted on every call, overwriting unlockedAt with "now" and re-firing
+        // the unlock toast.)
+        if (key in unlockedCache) return@withLock
+        if (achievementDao.getById(id.name, lang)?.unlockedAt != null) {
+            unlockedCache.add(key)
+            return@withLock
+        }
+
         val original = id.rewardOriginalFor(lang)
         val word = wordDao.getWordByOriginal(original)
         achievementDao.upsert(
@@ -331,14 +350,12 @@ class AchievementRepository @Inject constructor(
                 rewardWordId = word?.id,
             )
         )
-        if (!alreadyUnlocked) {
-            analytics.log(
-                com.example.kartonki.analytics.AnalyticsEvent.AchievementUnlocked(
-                    achievementId = id.name,
-                    daysSinceFirstOpen = 0,
-                )
+        analytics.log(
+            com.example.kartonki.analytics.AnalyticsEvent.AchievementUnlocked(
+                achievementId = id.name,
+                daysSinceFirstOpen = 0,
             )
-        }
+        )
         if (word != null) {
             collectionDao.insertAll(listOf(CollectionEntity(wordId = word.id)))
         }
