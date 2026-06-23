@@ -236,12 +236,19 @@ fun StudyScreen(
                         )
                     }
                 } else {
-                    // Grouping/sorting ~684 sets is non-trivial — memoize so it runs
-                    // only when the state (or search query) actually changes, not on
-                    // every recomposition reaching this LazyColumn.
-                    val grouped = remember(uiState) { uiState.groupedSets(uiState.activeFilters) }
-                    val searchGroups = remember(uiState, searchQuery) { uiState.searchGroupedSets(searchQuery) }
-                    val filteredSets = remember(uiState) { uiState.filteredSets }
+                    // Grouping/sorting ~684 sets is non-trivial — memoize on the exact
+                    // inputs each result depends on, NOT on the whole uiState. Keying on
+                    // uiState re-ran all three on every unrelated state change (tab switch,
+                    // filter toggle, hint dismiss, prefs arriving) — defeating the memo.
+                    val grouped = remember(uiState.sets, uiState.activeFilters, uiState.expandedTopics) {
+                        uiState.groupedSets(uiState.activeFilters)
+                    }
+                    val searchGroups = remember(uiState.sets, uiState.searchCollapsedTopics, searchQuery) {
+                        uiState.searchGroupedSets(searchQuery)
+                    }
+                    val filteredSets = remember(uiState.sets, uiState.selectedTab, uiState.activeFilters) {
+                        uiState.filteredSets
+                    }
                     LazyColumn(
                         state = listState,
                         modifier = Modifier.fillMaxSize(),

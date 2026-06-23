@@ -148,10 +148,14 @@ private fun HandSelectionScreen(
     onMultiplierRowPositioned: (Int) -> Unit = {},
 ) {
     val activePlayer = state.activePlayer
-    val handIds = hand.map { it.id }.toSet()
-    val deckCards = (activePlayer?.remainingCards ?: emptyList())
-        .filter { it.id !in handIds }
-        .sortedByDescending { it.rarity.points }
+    // The PvP timer copies the whole UI state once per second, recomposing this
+    // screen every tick — memoize so the filter+sort doesn't re-run on each tick.
+    val deckCards = remember(activePlayer?.remainingCards, hand) {
+        val handIds = hand.map { it.id }.toSet()
+        (activePlayer?.remainingCards ?: emptyList())
+            .filter { it.id !in handIds }
+            .sortedByDescending { it.rarity.points }
+    }
 
     var showSurrenderDialog by remember { mutableStateOf(false) }
 

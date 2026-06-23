@@ -116,7 +116,7 @@ fun AchievementsScreen(
                 verticalArrangement = Arrangement.spacedBy(10.dp),
             ) {
                 // ── Visible achievements ───────────────────────────────────────
-                items(state.visibleAchievements) { achievement ->
+                items(state.visibleAchievements, key = { it.id }) { achievement ->
                     AchievementCard(achievement, currentLanguagePair)
                 }
 
@@ -146,7 +146,7 @@ fun AchievementsScreen(
                 }
 
                 // ── Hidden achievement cards ───────────────────────────────────
-                items(state.hiddenAchievements) { achievement ->
+                items(state.hiddenAchievements, key = { it.id }) { achievement ->
                     HiddenAchievementCard(achievement, currentLanguagePair)
                 }
             }
