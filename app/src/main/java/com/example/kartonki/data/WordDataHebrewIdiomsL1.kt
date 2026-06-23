@@ -56,7 +56,7 @@ object WordDataHebrewIdiomsL1 {
             id = 184701, setId = 1847, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "idioms_l1_food_metaphors",
             original = "לֶחֶם וּמַיִם", translation = "хлеб и вода (самый минимум)",
-            definition = "הַמִּנִימוּם הֶכְרַחִי לְחַיִּים — בְּלִי מוֹתָרוֹת.",
+            definition = "הַמִּנִימוּם הֶכְרָחִי לְחַיִּים — בְּלִי מוֹתָרוֹת.",
             definitionNative = "Самый базовый минимум для выживания — ничего сверх необходимого.",
             example = "בִּתְקוּפַת הַמִּלְחָמָה הָיָה לָנוּ רַק לֶחֶם וּמַיִם.",
             exampleNative = "Во время войны у нас был только לֶחֶם וּמַיִם — ничего больше."
@@ -74,7 +74,7 @@ object WordDataHebrewIdiomsL1 {
             id = 184703, setId = 1847, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "idioms_l1_food_metaphors",
             original = "מֶלַח הָאָרֶץ", translation = "соль земли (лучшие люди)",
-            definition = "אֲנָשִׁים הֲכִי טוֹבִים וְחָשׁוּבִים בַּחֶבְרָה — עַמּוּד הַתָּוֶךְ שֶׁלָּהּ.",
+            definition = "אֲנָשִׁים הֲכִי טוֹבִים וְחֲשׁוּבִים בַּחֶבְרָה — עַמּוּד הַתָּוֶךְ שֶׁלָּהּ.",
             definitionNative = "Лучшие, самые ценные люди — опора и цвет общества.",
             example = "הַחַיָּלִים הָאֵלֶּה הֵם בֶּאֱמֶת מֶלַח הָאָרֶץ שֶׁלָּנוּ.",
             exampleNative = "Эти солдаты — настоящие מֶלַח הָאָרֶץ нашей страны."
@@ -83,7 +83,7 @@ object WordDataHebrewIdiomsL1 {
             id = 184704, setId = 1847, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "idioms_l1_food_metaphors",
             original = "הַכֹּל דְּבַשׁ", translation = "всё мёд (всё прекрасно, часто иронично)",
-            definition = "הַכֹּל הוֹלֵךְ נֶהְדָּר — לִפְעָמִים נֶאֱמָר בְּאִירוֹנְיָה כְּשֶׁלֹּא בֶּאֱמֶת.",
+            definition = "הַכֹּל הוֹלֵךְ נֶהְדָּר — לִפְעָמִים נֶאֱמַר בְּאִירוֹנְיָה כְּשֶׁלֹּא בֶּאֱמֶת.",
             definitionNative = "У человека всё прекрасно — иногда говорят с иронией про обратное.",
             example = "הוּא תָּמִיד מְסַפֵּר שֶׁבָּעֲבוֹדָה הַכֹּל דְּבַשׁ.",
             exampleNative = "Он всегда рассказывает, что на работе הַכֹּל דְּבַשׁ — но мы-то знаем."
@@ -104,7 +104,7 @@ object WordDataHebrewIdiomsL1 {
             id = 184706, setId = 1847, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "phrase", semanticGroup = "idioms_l1_body_parts",
             original = "עַל קְצֵה הַלָּשׁוֹן", translation = "на кончике языка",
-            definition = "כִּמְעַט נִזְכָּר אֲבָל לֹא מַצְלִיחַ לוֹמַר אֶת הַמִּלָּה.",
+            definition = "כִּמְעַט נִזְכַּר אֲבָל לֹא מַצְלִיחַ לוֹמַר אֶת הַמִּלָּה.",
             definitionNative = "Почти вспомнил слово, но никак не получается произнести.",
             example = "הַשֵּׁם שֶׁלּוֹ עַל קְצֵה הַלָּשׁוֹן וְאֵינִי מַצְלִיחַ.",
             exampleNative = "Его имя עַל קְצֵה הַלָּשׁוֹן, а вспомнить не могу."
@@ -227,7 +227,7 @@ object WordDataHebrewIdiomsL1 {
             id = 184719, setId = 1847, languagePair = "he-ru", rarity = "RARE",
             pos = "phrase", semanticGroup = "idioms_l1_time_situations",
             original = "חַי עַל הַזְּמַן", translation = "впритык со временем (в обрез)",
-            definition = "עוֹשֶׂה הַכֹּל בָּרֶגַע הָאַחֲרוֹן — בְּלִי מַרְוָח לִטְעֻיּוֹת.",
+            definition = "עוֹשֶׂה הַכֹּל בָּרֶגַע הָאַחֲרוֹן — בְּלִי מָרְוַח לִטְעֻיּוֹת.",
             definitionNative = "Делает всё в последний момент — без запаса времени. Дословно: «живёт на времени».",
             example = "הוּא תָּמִיד חַי עַל הַזְּמַן וּמַגִּיעַ בְּדִיּוּק בָּרֶגַע.",
             exampleNative = "Он всегда חַי עַל הַזְּמַן и приходит ровно в последнюю секунду."
@@ -278,7 +278,7 @@ object WordDataHebrewIdiomsL1 {
             original = "לִשְׁפֹּךְ אֶת הַלֵּב", translation = "излить душу (выговориться)",
             definition = "לְסַפֵּר לְמִישֶׁהוּ אֶת כָּל מָה שֶׁמַּכְבִּיד עַל הַלֵּב.",
             definitionNative = "Рассказать кому-то всё, что тяжело лежит на сердце. Дословно: «вылить сердце».",
-            example = "לִפְעָמִים צָרִיךְ לִשְׁפֹּךְ אֶת הַלֵּב לִפְנֵי חָבֵר טוֹב וּמְבִין.",
+            example = "לִפְעָמִים צָרִיךְ לִשְׁפֹּךְ אֶת הַלֵּב לִפְנֵי חָבֵר טוֹב וּמֵבִין.",
             exampleNative = "Иногда нужно לִשְׁפֹּךְ אֶת הַלֵּב перед хорошим понимающим другом."
         , fillInBlankExclusions = listOf(184721L, 184722L, 184723L, 184725L)),
         WordEntity(

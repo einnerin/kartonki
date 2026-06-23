@@ -83,7 +83,7 @@ object WordDataHebrewIsraeliCuisineL1 {
             original = "סָבִיח", translation = "сабих",
             definition = "פִּיתָה עִם חָצִיל מְטֻגָּן, בֵּיצָה קָשָׁה וִירָקוֹת — מָנָה עִירָאקִית.",
             definitionNative = "Пита с жареным баклажаном, варёным яйцом и овощами — иракское блюдо.",
-            example = "בְּרָמַת גַּן יֵשׁ דּוּכָן סָבִיח מְפֻרְסָם בָּעוֹלָם.",
+            example = "בְּרָמַת גַּן יֵשׁ דּוּכַן סָבִיח מְפֻרְסָם בָּעוֹלָם.",
             exampleNative = "В Рамат-Гане есть знаменитый на весь мир ларёк с סָבִיח."
         , fillInBlankExclusions = listOf(184201L, 184202L, 184203L, 184204L)),
 
@@ -92,7 +92,7 @@ object WordDataHebrewIsraeliCuisineL1 {
             id = 184206, setId = 1842, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "cuisine_l1_ingredients",
             original = "טַחִינָה", translation = "тхина (соус)",
-            definition = "מִמְרָח חָלָק מִזַּרְעֵי שֻׁמְשׁוּם טְחוּנִים עִם מַיִם וְלִמּוֹן.",
+            definition = "מִמְרַח חָלָק מִזַּרְעֵי שֻׁמְשׁוּם טְחוּנִים עִם מַיִם וְלִמּוֹן.",
             definitionNative = "Гладкая паста из молотого кунжута, разведённая с водой и лимоном.",
             example = "יָצַקְתִּי טַחִינָה עַל הַפָלָאפֶל בַּצַּלַּחַת.",
             exampleNative = "Я полил טַחִינָה поверх фалафеля прямо в тарелке."
@@ -110,9 +110,9 @@ object WordDataHebrewIsraeliCuisineL1 {
             id = 184208, setId = 1842, languagePair = "he-ru", rarity = "UNCOMMON",
             pos = "noun", semanticGroup = "cuisine_l1_ingredients",
             original = "זַעְתַּר", translation = "заатар",
-            definition = "תַּעֲרֹבֶת תְּבָלִין יְרֻקָּה מֵאֵזוֹב, שֻׁמְשׁוּם וּמֶלַח לְפִיתָה וְשֶׁמֶן.",
+            definition = "תַּעֲרֹבֶת תְּבַלִּין יְרֻקָּה מֵאֵזוֹב, שֻׁמְשׁוּם וּמֶלַח לְפִיתָה וְשֶׁמֶן.",
             definitionNative = "Зелёная смесь приправ из иссопа, кунжута и соли для питы с маслом.",
-            example = "בְּצַד שֶׁל הַשֻּׁלְחָן הָיָה צַלַּחַת זַעְתַּר עִם שֶׁמֶן זַיִת.",
+            example = "בְּצַד שֶׁל הַשֻּׁלְחָן הָיָה צַלַּחַת זַעְתָּר עִם שֶׁמֶן זַיִת.",
             exampleNative = "Сбоку на столе стояла тарелка זַעְתַּר с оливковым маслом."
         , fillInBlankExclusions = listOf(184202L, 184206L, 184207L, 184209L, 184210L)),
         WordEntity(
@@ -128,7 +128,7 @@ object WordDataHebrewIsraeliCuisineL1 {
             id = 184210, setId = 1842, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "cuisine_l1_ingredients",
             original = "נַעֲנַע", translation = "мята",
-            definition = "עָלֶה יָרֹק רֵיחָנִי שֶׁשָּׂמִים בַּתֵּה הַחַם וּבַסָּלָט.",
+            definition = "עֲלֵה יָרֹק רֵיחָנִי שֶׁשָּׂמִים בַּתֵּה הַחַם וּבַסָּלָט.",
             definitionNative = "Зелёный пахучий лист, который кладут в горячий чай и в салат.",
             example = "הוֹסַפְתִּי נַעֲנַע טְרִיָּה לַסָּלָט הַיְּרָקוֹת.",
             exampleNative = "Я добавил свежую נַעֲנַע в овощной салат для аромата."
@@ -139,7 +139,7 @@ object WordDataHebrewIsraeliCuisineL1 {
             id = 184211, setId = 1842, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "cuisine_l1_meals",
             original = "אֲרוּחַת בֹּקֶר", translation = "завтрак",
-            definition = "הָאֹכֶל הָרִאשׁוֹן בַּיּוֹם — בַּדֶּרֶךְ כְּלָל בֵּיצִים, גְּבִינָה וְקָפֶה.",
+            definition = "הָאֳכֵל הָרִאשׁוֹן בַּיּוֹם — בַּדֶּרֶךְ כְּלָל בֵּיצִים, גְּבִינָה וְקָפֶה.",
             definitionNative = "Первая еда дня — обычно яйца, сыр и кофе перед работой.",
             example = "אֲרוּחַת הַבֹּקֶר בַּמָּלוֹן הָיְתָה עֲשִׁירָה וּגְדוֹלָה.",
             exampleNative = "אֲרוּחַת בֹּקֶר в гостинице была богатой и большой."
@@ -148,7 +148,7 @@ object WordDataHebrewIsraeliCuisineL1 {
             id = 184212, setId = 1842, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "cuisine_l1_meals",
             original = "אֲרוּחַת עֶרֶב", translation = "ужин",
-            definition = "הָאֹכֶל הָאַחֲרוֹן בַּיּוֹם — אַחֲרֵי הָעֲבוֹדָה אוֹ לִפְנֵי הַשֵּׁנָה.",
+            definition = "הָאֳכֵל הָאַחֲרוֹן בַּיּוֹם — אַחֲרֵי הָעֲבוֹדָה אוֹ לִפְנֵי הַשֶּׁנָּה.",
             definitionNative = "Последняя еда дня — после работы или перед сном для всей семьи.",
             example = "אָכַלְנוּ אֲרוּחַת עֶרֶב קַלָּה עִם סָלָט וְלֶחֶם.",
             exampleNative = "Мы ели лёгкий אֲרוּחַת עֶרֶב с салатом и хлебом."
@@ -166,9 +166,9 @@ object WordDataHebrewIsraeliCuisineL1 {
             id = 184214, setId = 1842, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "cuisine_l1_meals",
             original = "חָמִין", translation = "чолент / хамин",
-            definition = "תַּבְשִׁיל אִטִּי שֶׁל בָּשָׂר, קִטְנִיּוֹת וְתַפּוּחֵי אֲדָמָה לִשְׁבָת.",
+            definition = "תַּבְשִׁיל אִטִּי שֶׁל בָּשָׂר, קִטְנִיּוֹת וְתַפּוּחֵי אֲדָמָה לִשְׁבַת.",
             definitionNative = "Медленное блюдо из мяса, бобов и картошки на субботний обед.",
-            example = "סַבָּא מֵכִין חָמִין כָּל יוֹם שִׁשִּׁי בַּסִּיר הָאִטִּי.",
+            example = "סַבָּא מֵכִין חַמִּין כָּל יוֹם שִׁשִּׁי בַּסִּיר הָאִטִּי.",
             exampleNative = "Дед готовит חָמִין каждую пятницу в медленной кастрюле."
         , fillInBlankExclusions = listOf(184211L, 184212L, 184213L, 184215L)),
         WordEntity(
@@ -177,7 +177,7 @@ object WordDataHebrewIsraeliCuisineL1 {
             original = "חֲטִיף", translation = "перекус",
             definition = "אֹכֶל קָטָן בֵּין הָאֲרוּחוֹת — לְהַשְׁבִּיעַ אֶת הַבֶּטֶן עַד הָעֶרֶב.",
             definitionNative = "Маленькая еда между трапезами — успокоить живот до самого вечера.",
-            example = "לָקַחְתִּי חֲטִיף שׁוֹקוֹלָד לָעֲבוֹדָה לַאַחַר הַצָּהֳרַיִם.",
+            example = "לָקַחְתִּי חֲטִיף שׁוֹקוֹלָד לָעֲבוֹדָה לָאַחַר הַצָּהֳרַיִם.",
             exampleNative = "Я взял шоколадный חֲטִיף на работу после полудня."
         , fillInBlankExclusions = listOf(184211L, 184212L, 184213L, 184214L)),
 
@@ -204,7 +204,7 @@ object WordDataHebrewIsraeliCuisineL1 {
             id = 184218, setId = 1842, languagePair = "he-ru", rarity = "COMMON",
             pos = "verb", semanticGroup = "cuisine_l1_actions",
             original = "לְהַזְמִין", translation = "заказывать",
-            definition = "לְבַקֵּשׁ מִמֶּלְצָר אֹכֶל אוֹ שְׁתִיָּה תְּמוּרַת תַּשְׁלוּם.",
+            definition = "לְבַקֵּשׁ מִמֶּלְצַר אֹכֶל אוֹ שְׁתִיָּה תְּמוּרַת תַּשְׁלוּם.",
             definitionNative = "Просить у официанта еду или питьё за оплату по счёту.",
             example = "הֶחְלַטְתִּי לְהַזְמִין שַׁקְשׁוּקָה וְקָפֶה הָפוּךְ לַבֹּקֶר.",
             exampleNative = "Я решил לְהַזְמִין шакшуку и кофе с молоком на завтрак."
@@ -260,7 +260,7 @@ object WordDataHebrewIsraeliCuisineL1 {
             id = 184224, setId = 1842, languagePair = "he-ru", rarity = "COMMON",
             pos = "noun", semanticGroup = "cuisine_l1_places",
             original = "שׁוּק", translation = "рынок",
-            definition = "מָקוֹם פָּתוּחַ עִם דּוּכָנִים שֶׁל יְרָקוֹת, פֵּרוֹת וּתְבָלִין.",
+            definition = "מָקוֹם פָּתוּחַ עִם דּוּכָנִים שֶׁל יְרָקוֹת, פֵּרוֹת וּתְבַלִּין.",
             definitionNative = "Открытое место с прилавками овощей, фруктов и приправ под небом.",
             example = "בְּשַׁבָּת בַּבֹּקֶר אֲנַחְנוּ הוֹלְכִים לַשּׁוּק לִקְנוֹת יְרָקוֹת.",
             exampleNative = "В субботу утром мы идём на שׁוּק покупать свежие овощи."
