@@ -4,6 +4,7 @@ import com.example.kartonki.data.PresetDecksVersion
 import com.example.kartonki.data.WordDataVersion
 import com.example.kartonki.data.WordLoader
 import com.example.kartonki.data.WordRegistry
+import com.example.kartonki.data.db.AppDatabase
 import com.example.kartonki.data.db.dao.CollectionDao
 import com.example.kartonki.data.db.dao.DeckDao
 import com.example.kartonki.data.db.dao.WordDao
@@ -14,6 +15,7 @@ import com.example.kartonki.data.db.entity.WordEntity
 import com.example.kartonki.data.preferences.UserPreferencesRepository
 import com.example.kartonki.domain.model.Rarity
 import com.example.kartonki.domain.model.Word
+import androidx.room.withTransaction
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import javax.inject.Inject
@@ -27,6 +29,7 @@ class CollectionRepository @Inject constructor(
     private val wordSetRepository: WordSetRepository,
     private val wordLoader: WordLoader,
     private val prefs: UserPreferencesRepository,
+    private val db: AppDatabase,
 ) {
     private val mutex = Mutex()
     @Volatile private var initializedInProcess = false
@@ -113,7 +116,12 @@ class CollectionRepository @Inject constructor(
      * Deletes all existing preset decks, recreates them from [WordRegistry.allPrebuiltDecks],
      * and ensures the collection contains all words those decks reference.
      */
-    private suspend fun migratePresetDecks() {
+    private suspend fun migratePresetDecks() = db.withTransaction {
+        // All steps run in ONE transaction: if the process dies mid-rebuild, the whole
+        // operation rolls back rather than leaving the user with deleted-but-not-recreated
+        // preset decks (an empty PvP deck list until the next version bump). Concurrent
+        // readers of getAllDecks() also never observe the half-rebuilt intermediate state.
+
         // Remove stale preset decks
         deckDao.clearAllPresetDeckCards()
         deckDao.deleteAllPresetDecks()

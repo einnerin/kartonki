@@ -13,6 +13,7 @@ import com.example.kartonki.domain.model.DeckLevel
 import com.example.kartonki.domain.model.Rarity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -49,6 +50,7 @@ class OnlineMatchmakingViewModel @Inject constructor(
     val uiState: StateFlow<OnlineMatchmakingUiState> = _uiState.asStateFlow()
 
     private var searchJob: Job? = null
+    private var timeoutJob: Job? = null
     private var searchStartedAtMs: Long = 0L
     private var searchOutcomeLogged = false
 
@@ -88,6 +90,23 @@ class OnlineMatchmakingViewModel @Inject constructor(
         if (!deck.isValid) return
         val user = authManager.currentUser.value ?: return
 
+        // Client-side timeout: matchmaking has no server-side queue notification when
+        // no opponent ever appears, so without this the Searching animation spins
+        // forever and the only escape is the manual cancel button. After the timeout we
+        // tear down the search and surface a "not found" message so the player can retry
+        // or fall back to local PvP. Especially important pre-launch with few players.
+        timeoutJob = viewModelScope.launch {
+            delay(SEARCH_TIMEOUT_MS)
+            searchJob?.cancel()
+            _uiState.update {
+                it.copy(
+                    phase = OnlineMatchmakingUiState.Phase.DeckSelect,
+                    error = "Соперник не найден. Попробуйте позже или сыграйте на одном устройстве.",
+                )
+            }
+            logMatchmakingResult(com.example.kartonki.analytics.MatchmakingOutcome.TIMEOUT)
+        }
+
         searchJob = viewModelScope.launch {
             _uiState.update { it.copy(phase = OnlineMatchmakingUiState.Phase.Searching) }
             searchStartedAtMs = System.currentTimeMillis()
@@ -120,6 +139,7 @@ class OnlineMatchmakingViewModel @Inject constructor(
                 when (result) {
                     is MatchmakingResult.Searching -> { /* already set */ }
                     is MatchmakingResult.Found -> {
+                        timeoutJob?.cancel()
                         _uiState.update {
                             it.copy(
                                 phase = OnlineMatchmakingUiState.Phase.Found(
@@ -130,6 +150,7 @@ class OnlineMatchmakingViewModel @Inject constructor(
                         logMatchmakingResult(com.example.kartonki.analytics.MatchmakingOutcome.FOUND)
                     }
                     is MatchmakingResult.Error -> {
+                        timeoutJob?.cancel()
                         _uiState.update {
                             it.copy(
                                 phase = OnlineMatchmakingUiState.Phase.DeckSelect,
@@ -158,6 +179,7 @@ class OnlineMatchmakingViewModel @Inject constructor(
         authManager.currentUser.value ?: return
         // Реальная очистка слота в очереди — в awaitClose у findMatch-флоу,
         // его дёргает cancel() джобы. Отдельный leaveQueue был пустым no-op.
+        timeoutJob?.cancel()
         searchJob?.cancel()
         _uiState.update { it.copy(phase = OnlineMatchmakingUiState.Phase.DeckSelect) }
         logMatchmakingResult(com.example.kartonki.analytics.MatchmakingOutcome.CANCELLED)
@@ -168,5 +190,9 @@ class OnlineMatchmakingViewModel @Inject constructor(
     override fun onCleared() {
         super.onCleared()
         cancelSearch()
+    }
+
+    private companion object {
+        const val SEARCH_TIMEOUT_MS = 45_000L
     }
 }

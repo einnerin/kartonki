@@ -139,6 +139,14 @@ class OnlinePvpGameViewModel @Inject constructor(
     }
 
     private suspend fun processMatchState(match: OnlineMatchData) {
+        // A valid match snapshot means the RTDB connection is alive again. Clear any
+        // transient "connection lost" error left by a previous null emission, otherwise
+        // a momentary network blip strands the player on the error screen forever even
+        // though the listener has already recovered.
+        if (_uiState.value.connectionError != null) {
+            _uiState.update { it.copy(connectionError = null) }
+        }
+
         val opponentIndex = 1 - myIndex
         val myName = if (myIndex == 0) match.player1Name else match.player2Name
         val opponentName = if (opponentIndex == 0) match.player1Name else match.player2Name

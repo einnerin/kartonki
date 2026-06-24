@@ -92,6 +92,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
                 onNavigateBack = { navController.popBackStack() },
                 onNavigateToOnlineMatchmaking = { navController.navigateSingleTop(Route.OnlineMatchmaking.path) },
                 onNavigateToLocalPvp = { navController.navigateSingleTop(Route.PvpDeckSelect.path) },
+                onNavigateToLogin = { navController.navigateSingleTop(Route.Login.path) },
             )
         }
 

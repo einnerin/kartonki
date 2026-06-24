@@ -28,7 +28,7 @@ data class PackOpeningUiState(
 class PackOpeningViewModel @Inject constructor(
     private val packRepository: PackRepository,
     private val analytics: com.example.kartonki.analytics.AnalyticsManager,
-    savedStateHandle: SavedStateHandle,
+    private val savedStateHandle: SavedStateHandle,
 ) : ViewModel() {
 
     private val packCount: Int = savedStateHandle.get<Int>("count") ?: 1
@@ -37,6 +37,22 @@ class PackOpeningViewModel @Inject constructor(
     val uiState: StateFlow<PackOpeningUiState> = _uiState.asStateFlow()
 
     init {
+        // Idempotency guard against process death. SavedStateHandle survives process
+        // recreation, the ViewModel does not — so without this, a kill while the opening
+        // screen is in the background re-runs init on restore and charges the user a
+        // SECOND time (and loses the first pack's cards). We mark the intent BEFORE the
+        // purchase: replaying can at worst skip a purchase, never double-charge. The cards
+        // are already persisted to the collection by PackRepository, so finishing the
+        // screen (purchaseFailed triggers navigation back) loses only the reveal animation.
+        if (savedStateHandle.get<Boolean>(KEY_PURCHASE_STARTED) == true) {
+            _uiState.update { it.copy(isLoading = false, purchaseFailed = true) }
+        } else {
+            savedStateHandle[KEY_PURCHASE_STARTED] = true
+            openPacks()
+        }
+    }
+
+    private fun openPacks() {
         viewModelScope.launch {
             val result = packRepository.purchasePacksWithTokens(packCount)
             if (result.cards.isEmpty()) {
@@ -84,5 +100,9 @@ class PackOpeningViewModel @Inject constructor(
         _uiState.update { state ->
             state.copy(revealedIndices = state.cards.indices.toSet())
         }
+    }
+
+    private companion object {
+        const val KEY_PURCHASE_STARTED = "pack_purchase_started"
     }
 }

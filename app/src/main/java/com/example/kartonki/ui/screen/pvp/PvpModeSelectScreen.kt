@@ -47,6 +47,7 @@ fun PvpModeSelectScreen(
     onNavigateBack: () -> Unit,
     onNavigateToOnlineMatchmaking: () -> Unit,
     onNavigateToLocalPvp: () -> Unit,
+    onNavigateToLogin: () -> Unit,
 ) {
     val isSignedIn = authManager.currentUser.value?.isAnonymous == false
 
@@ -102,13 +103,15 @@ fun PvpModeSelectScreen(
                 subtitle = if (isSignedIn)
                     "Найти соперника в интернете"
                 else
-                    "Требуется аккаунт Google\n(сейчас: режим гостя)",
+                    "Войдите через Google, чтобы играть онлайн",
                 gradient = Brush.horizontalGradient(
                     listOf(Color(0xFF6A0DAD), AccentPurple)
                 ),
                 glowColor = AccentPurple,
                 enabled = true,
-                onClick = onNavigateToOnlineMatchmaking,
+                // Guests can't matchmake — route the tap to sign-in instead of dropping
+                // them into a dead end the subtitle already warns about.
+                onClick = if (isSignedIn) onNavigateToOnlineMatchmaking else onNavigateToLogin,
                 modifier = Modifier.fillMaxWidth(),
             )
 
