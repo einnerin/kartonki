@@ -13,11 +13,13 @@ import com.example.kartonki.domain.model.StudyStep
 import com.example.kartonki.domain.model.Word
 import com.example.kartonki.domain.quiz.QuizBuilder
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -58,6 +60,10 @@ class ProblemWordsSessionViewModel @Inject constructor(
     private val sessionStartedAtMs: Long = System.currentTimeMillis()
     private var sessionStartedLogged = false
     private var sessionFinishedLogged = false
+
+    /** Per-answer progress writes, joined before final mastery so a late applyStudyResult
+     *  can't overwrite the level set by markMastered (level/isMastered would desync). */
+    private val saveJobs = mutableListOf<Job>()
 
     private val _uiState = MutableStateFlow(ProblemSessionUiState())
     val uiState: StateFlow<ProblemSessionUiState> = _uiState.asStateFlow()
@@ -239,6 +245,10 @@ class ProblemWordsSessionViewModel @Inject constructor(
             val correctCount = _uiState.value.correctCount
             val totalSteps = _uiState.value.steps.size
             viewModelScope.launch {
+                // Drain pending per-answer writes first: markMastered (level=MAX) must be
+                // the LAST write, otherwise a still-in-flight saveProgress could overwrite
+                // the level afterwards, leaving isMastered=1 with a non-max level.
+                saveJobs.joinAll()
                 val improved = computeImprovedCount()
                 val progress = applyMasteryAndCount()
                 val showHint = !prefs.isProblemWordsHintShown()
@@ -373,7 +383,7 @@ class ProblemWordsSessionViewModel @Inject constructor(
     }
 
     private fun saveProgress(word: Word, isCorrect: Boolean) {
-        viewModelScope.launch {
+        saveJobs += viewModelScope.launch {
             val currentLevel = progressRepository.getProgress(word.id)?.level ?: 0
             val newLevel = if (isCorrect) minOf(currentLevel + 1, StudyConstants.MAX_LEVEL)
                            else maxOf(currentLevel - 1, 0)
