@@ -72,7 +72,7 @@ fun WordStatsScreen(
                 title = { Text(s.wordStatsTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = LocalAppStrings.current.back)
                     }
                 },
             )

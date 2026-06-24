@@ -38,6 +38,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.kartonki.data.remote.FirebaseAuthManager
 import com.example.kartonki.ui.theme.AccentGold
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.AccentPurple
 import com.example.kartonki.ui.theme.glowEffect
 
@@ -64,7 +65,7 @@ fun PvpModeSelectScreen(
         ) {
             Icon(
                 Icons.AutoMirrored.Filled.ArrowBack,
-                contentDescription = null,
+                contentDescription = LocalAppStrings.current.back,
                 tint = AccentGold.copy(alpha = 0.8f),
             )
         }

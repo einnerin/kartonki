@@ -60,6 +60,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.kartonki.ui.component.DeckInvalidBadge
 import com.example.kartonki.ui.component.DeckLevelBadge
 import com.example.kartonki.ui.theme.AccentGold
+import com.example.kartonki.ui.theme.LocalAppStrings
 import com.example.kartonki.ui.theme.AccentPurple
 import com.example.kartonki.ui.theme.glowEffect
 
@@ -100,7 +101,7 @@ fun OnlineMatchmakingScreen(
         ) {
             Icon(
                 Icons.AutoMirrored.Filled.ArrowBack,
-                contentDescription = null,
+                contentDescription = LocalAppStrings.current.back,
                 tint = AccentGold.copy(alpha = 0.8f),
             )
         }

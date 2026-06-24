@@ -59,7 +59,7 @@ fun ProblemWordsSessionScreen(
                 title = { Text(LocalAppStrings.current.problemWordsTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = LocalAppStrings.current.back)
                     }
                 },
             )

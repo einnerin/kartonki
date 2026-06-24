@@ -67,7 +67,7 @@ fun AchievementsScreen(
                 title = { Text(s.achievementsTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = LocalAppStrings.current.back)
                     }
                 },
             )

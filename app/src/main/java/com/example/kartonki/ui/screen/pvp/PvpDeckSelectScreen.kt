@@ -57,7 +57,7 @@ fun PvpDeckSelectScreen(
                 title = { Text(s.pvpDeckSelectTitle) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = null)
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = LocalAppStrings.current.back)
                     }
                 },
             )

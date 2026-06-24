@@ -37,6 +37,8 @@ private fun simplePlural(n: Int, one: String, other: String): String =
 // ─── Data class ──────────────────────────────────────────────────────────────
 
 data class AppStrings(
+    // Accessibility / common
+    val back: String,
     // Rarity names
     val rarityCommon: String,
     val rarityUncommon: String,
@@ -316,6 +318,7 @@ val LocalAppStrings = compositionLocalOf<AppStrings> { RuStrings }
 // ─── Language instances ───────────────────────────────────────────────────────
 
 val RuStrings = AppStrings(
+    back = "Назад",
     rarityCommon    = "Обычный",
     rarityUncommon  = "Необычный",
     rarityRare      = "Редкий",
@@ -558,6 +561,7 @@ val RuStrings = AppStrings(
 )
 
 val EnStrings = AppStrings(
+    back = "Back",
     rarityCommon    = "Common",
     rarityUncommon  = "Uncommon",
     rarityRare      = "Rare",
@@ -800,6 +804,7 @@ val EnStrings = AppStrings(
 )
 
 val DeStrings = AppStrings(
+    back = "Zurück",
     rarityCommon    = "Gewöhnlich",
     rarityUncommon  = "Ungewöhnlich",
     rarityRare      = "Selten",
@@ -1042,6 +1047,7 @@ val DeStrings = AppStrings(
 )
 
 val FrStrings = AppStrings(
+    back = "Retour",
     rarityCommon    = "Commun",
     rarityUncommon  = "Peu commun",
     rarityRare      = "Rare",
@@ -1284,6 +1290,7 @@ val FrStrings = AppStrings(
 )
 
 val EsStrings = AppStrings(
+    back = "Atrás",
     rarityCommon    = "Común",
     rarityUncommon  = "Poco común",
     rarityRare      = "Raro",
@@ -1526,6 +1533,7 @@ val EsStrings = AppStrings(
 )
 
 val ZhStrings = AppStrings(
+    back = "返回",
     rarityCommon    = "普通",
     rarityUncommon  = "罕见",
     rarityRare      = "稀有",
@@ -1768,6 +1776,7 @@ val ZhStrings = AppStrings(
 )
 
 val JaStrings = AppStrings(
+    back = "戻る",
     rarityCommon    = "コモン",
     rarityUncommon  = "アンコモン",
     rarityRare      = "レア",
@@ -2010,6 +2019,7 @@ val JaStrings = AppStrings(
 )
 
 val ArStrings = AppStrings(
+    back = "رجوع",
     rarityCommon    = "عادي",
     rarityUncommon  = "غير شائع",
     rarityRare      = "نادر",
