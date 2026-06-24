@@ -205,6 +205,7 @@ data class AppStrings(
     val packOpeningRevealAll: String,
     val packOpeningToShop: String,
     val packOpeningToHome: String,
+    val packOpeningFailed: String,
 
     // New cards
     val newCardsTitle: String,
@@ -468,6 +469,7 @@ val RuStrings = AppStrings(
     packOpeningRevealAll= "Открыть все",
     packOpeningToShop   = "В магазин",
     packOpeningToHome   = "На главную",
+    packOpeningFailed   = "Не удалось открыть пак. Если жетоны были списаны, карты уже в вашей коллекции.",
 
     newCardsTitle    = "🎴 Новые карточки!",
     newCardsSubtitle = "Слова изучены — карточки получены!",
@@ -709,6 +711,7 @@ val EnStrings = AppStrings(
     packOpeningRevealAll= "Reveal all",
     packOpeningToShop   = "To shop",
     packOpeningToHome   = "Home",
+    packOpeningFailed   = "Couldn't open the pack. If tokens were spent, the cards are already in your collection.",
 
     newCardsTitle    = "🎴 New cards!",
     newCardsSubtitle = "Words learned — cards received!",
@@ -950,6 +953,7 @@ val DeStrings = AppStrings(
     packOpeningRevealAll= "Alle enthüllen",
     packOpeningToShop   = "Zum Shop",
     packOpeningToHome   = "Startseite",
+    packOpeningFailed   = "Paket konnte nicht geöffnet werden. Falls Token abgebucht wurden, sind die Karten bereits in deiner Sammlung.",
 
     newCardsTitle    = "🎴 Neue Karten!",
     newCardsSubtitle = "Wörter gelernt — Karten erhalten!",
@@ -1191,6 +1195,7 @@ val FrStrings = AppStrings(
     packOpeningRevealAll= "Tout révéler",
     packOpeningToShop   = "Boutique",
     packOpeningToHome   = "Accueil",
+    packOpeningFailed   = "Impossible d'ouvrir le pack. Si des jetons ont été débités, les cartes sont déjà dans votre collection.",
 
     newCardsTitle    = "🎴 Nouvelles cartes !",
     newCardsSubtitle = "Mots appris — cartes reçues !",
@@ -1432,6 +1437,7 @@ val EsStrings = AppStrings(
     packOpeningRevealAll= "Revelar todo",
     packOpeningToShop   = "Tienda",
     packOpeningToHome   = "Inicio",
+    packOpeningFailed   = "No se pudo abrir el sobre. Si se gastaron fichas, las cartas ya están en tu colección.",
 
     newCardsTitle    = "🎴 ¡Nuevas cartas!",
     newCardsSubtitle = "¡Palabras aprendidas — cartas recibidas!",
@@ -1673,6 +1679,7 @@ val ZhStrings = AppStrings(
     packOpeningRevealAll= "全部揭示",
     packOpeningToShop   = "前往商店",
     packOpeningToHome   = "主页",
+    packOpeningFailed   = "无法打开卡包。如果已扣除代币，卡片已在你的收藏中。",
 
     newCardsTitle    = "🎴 新卡片！",
     newCardsSubtitle = "单词已学会 — 卡片已获得！",
@@ -1914,6 +1921,7 @@ val JaStrings = AppStrings(
     packOpeningRevealAll= "すべて公開",
     packOpeningToShop   = "ショップへ",
     packOpeningToHome   = "ホーム",
+    packOpeningFailed   = "パックを開けませんでした。トークンが消費された場合、カードはすでにコレクションにあります。",
 
     newCardsTitle    = "🎴 新しいカード！",
     newCardsSubtitle = "単語習得 — カード獲得！",
@@ -2155,6 +2163,7 @@ val ArStrings = AppStrings(
     packOpeningRevealAll= "الكشف عن الكل",
     packOpeningToShop   = "إلى المتجر",
     packOpeningToHome   = "الرئيسية",
+    packOpeningFailed   = "تعذّر فتح الحزمة. إذا تم خصم الرموز، فإن البطاقات موجودة بالفعل في مجموعتك.",
 
     newCardsTitle    = "🎴 بطاقات جديدة!",
     newCardsSubtitle = "تمّ تعلّم الكلمات — تمّ الحصول على البطاقات!",

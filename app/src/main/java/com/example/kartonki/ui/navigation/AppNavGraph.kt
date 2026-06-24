@@ -99,6 +99,7 @@ fun AppNavGraph(navController: NavHostController, authManager: FirebaseAuthManag
         composable(Route.OnlineMatchmaking.path) {
             OnlineMatchmakingScreen(
                 onNavigateBack = { navController.popBackStack() },
+                onNavigateToDecks = { navController.navigateSingleTop(Route.MyDecks.path) },
                 onMatchFound = { matchId, myIndex ->
                     navController.navigate(Route.OnlinePvpGame.createRoute(matchId, myIndex)) {
                         popUpTo(Route.OnlineMatchmaking.path) { inclusive = true }

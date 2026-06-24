@@ -68,6 +68,7 @@ import com.example.kartonki.ui.theme.glowEffect
 fun OnlineMatchmakingScreen(
     onNavigateBack: () -> Unit,
     onMatchFound: (matchId: String, myIndex: Int) -> Unit,
+    onNavigateToDecks: () -> Unit,
     viewModel: OnlineMatchmakingViewModel = hiltViewModel(),
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -110,6 +111,7 @@ fun OnlineMatchmakingScreen(
                     uiState = uiState,
                     onDeckSelected = viewModel::selectDeck,
                     onStartSearch = viewModel::startSearch,
+                    onNavigateToDecks = onNavigateToDecks,
                 )
             }
             is OnlineMatchmakingUiState.Phase.Searching -> {
@@ -141,6 +143,7 @@ private fun DeckSelectContent(
     uiState: OnlineMatchmakingUiState,
     onDeckSelected: (PvpDeckOption) -> Unit,
     onStartSearch: () -> Unit,
+    onNavigateToDecks: () -> Unit,
 ) {
     Column(
         modifier = Modifier
@@ -174,6 +177,18 @@ private fun DeckSelectContent(
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center,
             )
+            Spacer(Modifier.height(24.dp))
+            Button(
+                onClick = onNavigateToDecks,
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(containerColor = AccentPurple),
+            ) {
+                Text(
+                    text = "🛠  Создать колоду",
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                )
+            }
         } else {
             var expanded by remember { mutableStateOf(false) }
             ExposedDropdownMenuBox(

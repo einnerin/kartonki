@@ -69,13 +69,8 @@ fun PackOpeningScreen(
     var currentIndex by remember { mutableIntStateOf(0) }
     val showSummary = state.cards.isNotEmpty() && currentIndex >= state.cards.size
 
-    // If purchase failed (e.g. balance changed mid-flight), bounce back.
-    LaunchedEffect(state.purchaseFailed) {
-        if (state.purchaseFailed) onFinished()
-    }
-
     BackHandler {
-        if (showSummary) onFinished()
+        if (showSummary || state.purchaseFailed) onFinished()
     }
 
     Box(
@@ -92,6 +87,11 @@ fun PackOpeningScreen(
     ) {
         when {
             state.isLoading -> LoadingPhase(s.packOpeningLoading)
+            state.purchaseFailed -> FailurePhase(
+                message = s.packOpeningFailed,
+                buttonText = s.packOpeningToShop,
+                onDismiss = onFinished,
+            )
             showSummary -> SummaryPhase(
                 cards = state.cards,
                 compensationTokens = state.compensationTokens,
@@ -133,6 +133,43 @@ private fun LoadingPhase(loadingText: String) {
             style = MaterialTheme.typography.bodyLarge,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
+    }
+}
+
+@Composable
+private fun FailurePhase(
+    message: String,
+    buttonText: String,
+    onDismiss: () -> Unit,
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 32.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center,
+    ) {
+        Text("📦", fontSize = 48.sp)
+        Spacer(Modifier.height(16.dp))
+        Text(
+            text = message,
+            style = MaterialTheme.typography.bodyLarge,
+            color = MaterialTheme.colorScheme.onSurface,
+            textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+        )
+        Spacer(Modifier.height(24.dp))
+        Button(
+            onClick = onDismiss,
+            modifier = Modifier.height(52.dp),
+            shape = RoundedCornerShape(16.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+        ) {
+            Text(
+                text = buttonText,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
     }
 }
 
