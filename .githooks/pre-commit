@@ -15,6 +15,8 @@
 #        дубли, word count, setId lang-block, rarity spread new sets, cognate pairs
 #     6. Per-setId: для КАЖДОГО РЕАЛЬНО ИЗМЕНЁННОГО setId —
 #        bash scripts/validate/validate_all.sh <setId>
+#     7. SeedDataAuditTest (JVM, ~30с): авторитетный FILL_IN_BLANK инвариант
+#        через HebrewBlankMatcher + дубли ID / формула id / языковые блоки
 #
 # Изменённые setIds определяются через scripts/validate/changed_setids.py:
 # скрипт читает git diff --cached --unified=0, находит диапазоны изменённых
@@ -216,6 +218,28 @@ $(echo "$CHANGED_DATA_ONLY" | head -5 | sed 's/^/    /')
 $(tail -30 /tmp/kartonki-decks.log | sed 's/^/    /')
 Полный отчёт: python scripts/validate/validate_preset_decks.py
 Документация: docs/claude/preset-decks.md")
+  fi
+
+  # 2e. SeedDataAuditTest (JVM) — авторитетная проверка FILL_IN_BLANK инварианта
+  # и других кросс-сетовых правил (дубли ID, формула id, языковые блоки).
+  #
+  # Зачем JVM, а не Python: Python-валидаторы (validate_fast) используют
+  # упрощённый матчинг «слово в примере»; для иврита истинный матчинг даёт
+  # HebrewBlankMatcher (runtime Kotlin: префиксы ה/ב/ל, варьирующийся nikud),
+  # который Python не воспроизводит точно. Набор 1018 проскочил per-setId
+  # валидацию именно из-за этого расхождения → красный коммит (c56a8b5
+  # чинил уже постфактум). Гоняем сам тест ДО коммита, чтобы инвариант не
+  # утекал в CI. ~30с, только при изменении WordData*.kt.
+  echo -e "${BLUE}🧪 SeedDataAuditTest (FILL_IN_BLANK инвариант, JVM ~30с)...${NC}"
+  JBR="${JAVA_HOME:-C:/Program Files/Android/Android Studio/jbr}"
+  if ! JAVA_HOME="$JBR" ./gradlew -q testDebugUnitTest \
+        --tests 'com.example.kartonki.data.SeedDataAuditTest' \
+        > /tmp/kartonki-seedaudit.log 2>&1; then
+    ERRORS+=("SeedDataAuditTest упал — нарушен инвариант seed-данных
+(чаще всего FILL_IN_BLANK: example не содержит headword по матчеру квиза):
+$(grep -E 'problem|broken|absent|not locatable|Set [0-9]|id=' /tmp/kartonki-seedaudit.log | head -25 | sed 's/^/    /')
+Полный лог: /tmp/kartonki-seedaudit.log
+Вручную: JAVA_HOME=\"\$JBR\" ./gradlew testDebugUnitTest --tests 'com.example.kartonki.data.SeedDataAuditTest'")
   fi
 fi
 

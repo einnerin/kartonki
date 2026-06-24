@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
@@ -307,6 +308,10 @@ private fun DeckCardItem(
         OutlinedButton(
             onClick = onAction,
             enabled = enabled,
+            // Enforce a ≥48dp touch target (the compact contentPadding alone left the
+            // +/− add/remove buttons below the accessibility minimum — easy to miss-tap
+            // when building a deck quickly).
+            modifier = Modifier.defaultMinSize(minWidth = 48.dp, minHeight = 48.dp),
             colors = ButtonDefaults.outlinedButtonColors(contentColor = actionColor),
             contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp),
         ) {
