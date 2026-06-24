@@ -71,6 +71,33 @@ fun PlayerStatsScreen(
 
         val stats = state.stats
 
+        // Brand-new player: nothing studied, no PvP played. Show a friendly nudge
+        // instead of a wall of zeros that reads like the screen is broken.
+        val isEmpty = stats.wordsLearned == 0 && stats.currentStreak == 0 &&
+            stats.longestStreak == 0 && stats.pvpWins == 0 && stats.pvpLosses == 0 &&
+            stats.pvpDraws == 0 && stats.bestPvpScore == 0
+        if (isEmpty) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(padding)
+                    .padding(horizontal = 40.dp),
+                contentAlignment = Alignment.Center,
+            ) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("📊", fontSize = 48.sp)
+                    Spacer(Modifier.height(12.dp))
+                    Text(
+                        text = s.statsEmptyHint,
+                        style = MaterialTheme.typography.bodyLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        textAlign = TextAlign.Center,
+                    )
+                }
+            }
+            return@Scaffold
+        }
+
         Column(
             modifier = Modifier
                 .fillMaxSize()

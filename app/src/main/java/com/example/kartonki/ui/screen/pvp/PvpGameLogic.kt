@@ -68,9 +68,14 @@ object PvpGameLogic {
      *  - every option set is de-duplicated so synonyms never surface as two
      *    visually identical (and both-correct) choices.
      */
-    fun buildQuiz(word: Word, allWords: List<Word>): PvpQuiz? {
+    fun buildQuiz(word: Word, allWords: List<Word>): PvpQuiz {
         val others = pickDistractors(word, allWords)
-        if (others.size < 3) return null
+        // A tiny distractor pool can't fill a multiple-choice/definition/fill-blank
+        // question, but translationQuiz pads with placeholders and always builds a
+        // playable 4-option quiz. Falling back here (instead of returning null) keeps
+        // the PvP game from freezing — a null forced the caller to stop the timer and
+        // bail mid-turn with no recovery (local + online).
+        if (others.size < 3) return translationQuiz(word, others)
 
         // Exclude translation if another word in the pool shares the same original —
         // that would produce two correct answers in a multiple-choice question.

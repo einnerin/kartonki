@@ -216,6 +216,7 @@ data class AppStrings(
 
     // Player stats
     val statsPlayerTitle: String,
+    val statsEmptyHint: String,
     val statsProgressSection: String,
     val statsWordsLearned: String,
     val statsAccuracy: String,
@@ -479,6 +480,7 @@ val RuStrings = AppStrings(
     newCardsCollect  = "Забрать всё",
 
     statsPlayerTitle     = "Статистика игрока",
+    statsEmptyHint       = "Пока пусто. Пройдите первую сессию изучения или сыграйте в PvP — статистика появится здесь.",
     statsProgressSection = "Прогресс",
     statsWordsLearned    = "Слов изучено",
     statsAccuracy        = "Точность ответов",
@@ -722,6 +724,7 @@ val EnStrings = AppStrings(
     newCardsCollect  = "Collect all",
 
     statsPlayerTitle     = "Player stats",
+    statsEmptyHint       = "Nothing here yet. Finish your first study session or play a PvP match — your stats will show up here.",
     statsProgressSection = "Progress",
     statsWordsLearned    = "Words learned",
     statsAccuracy        = "Answer accuracy",
@@ -965,6 +968,7 @@ val DeStrings = AppStrings(
     newCardsCollect  = "Alle abholen",
 
     statsPlayerTitle     = "Spielerstatistik",
+    statsEmptyHint       = "Noch nichts hier. Absolviere deine erste Lernsitzung oder spiele ein PvP-Match — deine Statistik erscheint hier.",
     statsProgressSection = "Fortschritt",
     statsWordsLearned    = "Wörter gelernt",
     statsAccuracy        = "Antwortgenauigkeit",
@@ -1208,6 +1212,7 @@ val FrStrings = AppStrings(
     newCardsCollect  = "Tout récupérer",
 
     statsPlayerTitle     = "Statistiques du joueur",
+    statsEmptyHint       = "Rien ici pour l'instant. Terminez votre première session d'étude ou jouez un match PvP — vos statistiques apparaîtront ici.",
     statsProgressSection = "Progression",
     statsWordsLearned    = "Mots appris",
     statsAccuracy        = "Précision des réponses",
@@ -1451,6 +1456,7 @@ val EsStrings = AppStrings(
     newCardsCollect  = "Recoger todo",
 
     statsPlayerTitle     = "Estadísticas del jugador",
+    statsEmptyHint       = "Aún no hay nada. Completa tu primera sesión de estudio o juega una partida PvP — tus estadísticas aparecerán aquí.",
     statsProgressSection = "Progreso",
     statsWordsLearned    = "Palabras aprendidas",
     statsAccuracy        = "Precisión de respuestas",
@@ -1694,6 +1700,7 @@ val ZhStrings = AppStrings(
     newCardsCollect  = "全部领取",
 
     statsPlayerTitle     = "玩家统计",
+    statsEmptyHint       = "这里还没有内容。完成你的第一次学习或进行一场 PvP 对战，统计数据就会显示在这里。",
     statsProgressSection = "进度",
     statsWordsLearned    = "已学单词",
     statsAccuracy        = "答题准确率",
@@ -1937,6 +1944,7 @@ val JaStrings = AppStrings(
     newCardsCollect  = "すべて受け取る",
 
     statsPlayerTitle     = "プレイヤー統計",
+    statsEmptyHint       = "まだ何もありません。最初の学習セッションを終えるか、PvP マッチをプレイすると、ここに統計が表示されます。",
     statsProgressSection = "進捗",
     statsWordsLearned    = "学習単語数",
     statsAccuracy        = "正答率",
@@ -2180,6 +2188,7 @@ val ArStrings = AppStrings(
     newCardsCollect  = "استلام الكل",
 
     statsPlayerTitle     = "إحصائيات اللاعب",
+    statsEmptyHint       = "لا يوجد شيء هنا بعد. أكمل أول جلسة دراسة أو العب مباراة PvP — ستظهر إحصاءاتك هنا.",
     statsProgressSection = "التقدّم",
     statsWordsLearned    = "الكلمات المُتعلَّمة",
     statsAccuracy        = "دقة الإجابات",

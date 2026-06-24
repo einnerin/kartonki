@@ -171,7 +171,7 @@ class PvpGameViewModel @Inject constructor(
                 afkStreak = 0,
             ) else p
         }
-        val quiz = buildQuiz(card) ?: return
+        val quiz = buildQuiz(card)
         _uiState.update {
             it.copy(
                 players = updatedPlayers,
@@ -290,7 +290,7 @@ class PvpGameViewModel @Inject constructor(
                         if (i == attackerIdx) p.copy(remainingCards = p.remainingCards.filter { it.id != card.id })
                         else p
                     }
-                    val quiz = buildQuiz(card) ?: return
+                    val quiz = buildQuiz(card)
                     _uiState.update {
                         it.copy(
                             players = playersAfterPick,
@@ -385,6 +385,6 @@ class PvpGameViewModel @Inject constructor(
     }
 
     private fun buildHand(cards: List<Word>) = PvpGameLogic.buildHand(cards)
-    private fun buildQuiz(word: Word): PvpQuiz? = PvpGameLogic.buildQuiz(word, allWords)
+    private fun buildQuiz(word: Word): PvpQuiz = PvpGameLogic.buildQuiz(word, allWords)
     private fun streakToMultiplier(streak: Int) = PvpGameLogic.streakToMultiplier(streak)
 }

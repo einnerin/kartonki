@@ -24,6 +24,14 @@ class AchievementEventViewModel @Inject constructor(
     prefs: UserPreferencesRepository,
 ) : ViewModel() {
 
+    // FIFO queue of unlocks waiting to be shown. A single session-end can unlock
+    // several achievements at once (checkFirstLesson + checkDiligent + checkStreak5
+    // + recordPvpMatch …); a single-slot StateFlow would let each new id overwrite
+    // the previous before the user dismissed it, silently dropping all but the last
+    // toast. The queue shows them one at a time. Mutated only from the collector and
+    // dismissNotification — both run on the Main dispatcher, so no extra locking.
+    private val queue = ArrayDeque<AchievementId>()
+
     private val _pendingNotification = MutableStateFlow<AchievementId?>(null)
     val pendingNotification: StateFlow<AchievementId?> = _pendingNotification.asStateFlow()
 
@@ -34,12 +42,16 @@ class AchievementEventViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             achievementRepository.newlyUnlocked.collect { id ->
-                _pendingNotification.value = id
+                if (_pendingNotification.value == null) {
+                    _pendingNotification.value = id
+                } else {
+                    queue.addLast(id)
+                }
             }
         }
     }
 
     fun dismissNotification() {
-        _pendingNotification.value = null
+        _pendingNotification.value = queue.removeFirstOrNull()
     }
 }

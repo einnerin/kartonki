@@ -296,7 +296,7 @@ class OnlinePvpGameViewModel @Inject constructor(
 
     fun onCardSelected(card: Word) {
         stopTimer()
-        val quiz = buildQuiz(card) ?: return
+        val quiz = buildQuiz(card)
         val newRemainingIds = _uiState.value.myCardIds.filter { it != card.id }
 
         val round = OnlineRoundData(
@@ -609,7 +609,7 @@ class OnlinePvpGameViewModel @Inject constructor(
     }
 
     private fun buildHand(cards: List<Word>) = PvpGameLogic.buildHand(cards)
-    private fun buildQuiz(word: Word): PvpQuiz? = PvpGameLogic.buildQuiz(word, allWords)
+    private fun buildQuiz(word: Word): PvpQuiz = PvpGameLogic.buildQuiz(word, allWords)
     private fun streakToMultiplier(streak: Int) = PvpGameLogic.streakToMultiplier(streak)
 
     override fun onCleared() {

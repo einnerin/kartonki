@@ -270,7 +270,10 @@ object QuizBuilder {
 
     internal fun fallbackTranslation(word: Word, allWords: List<Word>): StudyStep.Quiz {
         val candidates = allWords.filter { it.id != word.id && it.languagePair == word.languagePair }.shuffled()
-        val wrongs = candidates.take(3).map { it.translation }
+        // Dedup against the correct answer (and each other) — a synonym distractor with
+        // the same translation would otherwise surface as a second visually-identical
+        // correct option. Mirrors the main MULTIPLE_CHOICE_TRANSLATION path.
+        val wrongs = uniqueDistractorTexts(candidates, correct = word.translation, count = 3) { it.translation }
         // Pad with numbered placeholders if the pool is too small (< 3 distractors).
         val paddedWrongs = wrongs + List(maxOf(0, 3 - wrongs.size)) { i -> "—${i + 1}" }
         return StudyStep.Quiz(
