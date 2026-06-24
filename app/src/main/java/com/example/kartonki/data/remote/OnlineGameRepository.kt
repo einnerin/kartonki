@@ -31,6 +31,26 @@ class OnlineGameRepository @Inject constructor(
     private fun matchRef(matchId: String) = database.getReference("matches").child(matchId)
 
     /**
+     * Estimated (serverTime − clientTime) in ms, read once from Firebase's
+     * `/.info/serverTimeOffset`. Round/disconnect timestamps are written as
+     * [ServerValue.TIMESTAMP] (server clock); a reading client must add this offset to
+     * its own `System.currentTimeMillis()` to compare against them, otherwise device
+     * clock skew makes the countdown timer run fast/slow for one player. Falls back to
+     * 0 (no correction) on error.
+     */
+    suspend fun getServerTimeOffset(): Long = suspendCancellableCoroutine { cont ->
+        database.getReference(".info/serverTimeOffset")
+            .addListenerForSingleValueEvent(object : ValueEventListener {
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    if (cont.isActive) cont.resume(snapshot.getValue(Long::class.java) ?: 0L)
+                }
+                override fun onCancelled(error: DatabaseError) {
+                    if (cont.isActive) cont.resume(0L)
+                }
+            })
+    }
+
+    /**
      * Listens to game state updates in real time.
      *
      * Emits `null` for both "match doc deleted" AND "RTDB error / permission denied".
@@ -78,7 +98,7 @@ class OnlineGameRepository @Inject constructor(
             mapOf(
                 "phase" to OnlineMatchData.PHASE_QUIZ,
                 "currentRound" to roundMap,
-                "roundStartTime" to System.currentTimeMillis(),
+                "roundStartTime" to ServerValue.TIMESTAMP,
                 remainingKey to newRemainingIds,
             )
         ).await()
@@ -97,10 +117,14 @@ class OnlineGameRepository @Inject constructor(
         matchRef(matchId).child(key).onDisconnect().setValue(ServerValue.TIMESTAMP)
     }
 
-    /** Marks a player as disconnected (app went to background / closed). */
-    suspend fun reportDisconnect(matchId: String, playerIndex: Int, timestamp: Long) {
+    /**
+     * Marks a player as disconnected (app went to background / closed). Uses the SERVER
+     * clock so it agrees with the [ServerValue.TIMESTAMP] written by the onDisconnect
+     * handler and is compared correctly against the opponent's offset-corrected now.
+     */
+    suspend fun reportDisconnect(matchId: String, playerIndex: Int) {
         val key = if (playerIndex == 0) "player1DisconnectedAt" else "player2DisconnectedAt"
-        matchRef(matchId).child(key).setValue(timestamp).await()
+        matchRef(matchId).child(key).setValue(ServerValue.TIMESTAMP).await()
     }
 
     /** Clears the disconnected flag and re-registers the onDisconnect handler when the player returns. */
@@ -156,7 +180,7 @@ class OnlineGameRepository @Inject constructor(
                 streakKey to myStreak,
                 "currentTurn" to nextTurn,
                 "phase" to nextPhase,
-                "roundStartTime" to System.currentTimeMillis(),
+                "roundStartTime" to ServerValue.TIMESTAMP,
             )
         ).await()
     }

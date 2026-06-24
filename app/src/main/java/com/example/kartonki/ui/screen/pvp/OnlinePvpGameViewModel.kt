@@ -38,6 +38,7 @@ sealed class OnlinePvpPhase {
         val questionLabel: String,
         val options: List<String>,
         val correctAnswer: String,
+        val playedCardId: Long,
         val playedCardWord: String,
         val playedCardTranslation: String,
         val selectedAnswer: String? = null,
@@ -102,7 +103,11 @@ class OnlinePvpGameViewModel @Inject constructor(
     val uiState: StateFlow<OnlinePvpGameUiState> = _uiState.asStateFlow()
 
     private var allWords: List<Word> = emptyList()
+    /** Estimated serverTime − clientTime (ms). Round/disconnect timestamps are server
+     *  clock, so [serverNow] adds this to the local clock before comparing. */
+    private var serverTimeOffset: Long = 0L
     private var timerJob: Job? = null
+    private var autoConfirmJob: Job? = null
     private var disconnectTimerJob: Job? = null
     private var lastPhase: String? = null
     private var gameOverRecorded = false
@@ -118,6 +123,10 @@ class OnlinePvpGameViewModel @Inject constructor(
             // Deck words are resolved per-round from myCardIds directly,
             // so all deck cards are available regardless of collection status.
             allWords = collectionRepository.getOwnedWords()
+            // Read the client↔server clock offset once so the round timer and disconnect
+            // checks below interpret server-written timestamps correctly regardless of
+            // this device's clock skew.
+            serverTimeOffset = onlineGameRepository.getServerTimeOffset()
             // Register server-side onDisconnect handler before listening.
             // This ensures Firebase writes our disconnect timestamp automatically on any
             // connection loss — crash, phone death, or internet drop in the foreground.
@@ -259,6 +268,7 @@ class OnlinePvpGameViewModel @Inject constructor(
                         questionLabel = round.questionLabel,
                         options = round.options,
                         correctAnswer = round.correctAnswer,
+                        playedCardId = round.playedCardId,
                         playedCardWord = round.playedCardOriginal,
                         playedCardTranslation = round.playedCardTranslation,
                         selectedAnswer = round.selectedAnswer.takeIf { it.isNotEmpty() },
@@ -336,7 +346,12 @@ class OnlinePvpGameViewModel @Inject constructor(
             // I am the defender. Turns ALTERNATE: defender becomes next attacker.
             val newMyStreak = if (isCorrect) state.myStreak + 1 else 0
             val multiplier = streakToMultiplier(newMyStreak)
-            val card = allWords.find { it.original == phase.playedCardWord }
+            // Resolve the played card by ID from the full word DB, not by matching its
+            // `original` string against my owned words: originals are not unique across
+            // sets/languages (so string-match could pick the wrong rarity), and the
+            // attacker may have played a card I don't own at all (absent from allWords →
+            // silently undercounted as 1 point). ID lookup is exact.
+            val card = wordSetRepository.getWordsByIds(listOf(phase.playedCardId)).firstOrNull()
             val points = if (isCorrect) (card?.rarity?.points ?: 1) * multiplier else 0
             val newMyScore = state.myScore + points
 
@@ -445,7 +460,7 @@ class OnlinePvpGameViewModel @Inject constructor(
         if (gameOverRecorded) return
         viewModelScope.launch {
             try {
-                onlineGameRepository.reportDisconnect(matchId, myIndex, System.currentTimeMillis())
+                onlineGameRepository.reportDisconnect(matchId, myIndex)
             } catch (e: Exception) {
                 Log.w(TAG, "reportDisconnect failed", e)
             }
@@ -476,7 +491,7 @@ class OnlinePvpGameViewModel @Inject constructor(
             disconnectTimerJob = null
             return
         }
-        val elapsed = System.currentTimeMillis() - disconnectedAt
+        val elapsed = serverNow() - disconnectedAt
         if (elapsed >= DISCONNECT_TIMEOUT_MS) {
             awardWinByDisconnect()
         } else if (disconnectTimerJob?.isActive != true) {
@@ -499,7 +514,7 @@ class OnlinePvpGameViewModel @Inject constructor(
         if (!p1Gone || !p2Gone) return
 
         val lastActivity = maxOf(match.roundStartTime, match.player1DisconnectedAt, match.player2DisconnectedAt)
-        if (System.currentTimeMillis() - lastActivity < ABANDONED_TIMEOUT_MS) return
+        if (serverNow() - lastActivity < ABANDONED_TIMEOUT_MS) return
 
         gameOverRecorded = true
         disconnectTimerJob?.cancel()
@@ -543,9 +558,12 @@ class OnlinePvpGameViewModel @Inject constructor(
         }
     }
 
+    /** Current time on the server's clock — local clock corrected by [serverTimeOffset]. */
+    private fun serverNow(): Long = System.currentTimeMillis() + serverTimeOffset
+
     private fun startTimerFrom(startTime: Long) {
         timerJob?.cancel()
-        val elapsed = ((System.currentTimeMillis() - startTime) / 1000).toInt().coerceIn(0, PvpGameLogic.TIMER_DURATION)
+        val elapsed = ((serverNow() - startTime) / 1000).toInt().coerceIn(0, PvpGameLogic.TIMER_DURATION)
         val remaining = PvpGameLogic.TIMER_DURATION - elapsed
         if (remaining <= 0) return
 
@@ -562,6 +580,11 @@ class OnlinePvpGameViewModel @Inject constructor(
     private fun stopTimer() {
         timerJob?.cancel()
         timerJob = null
+        // Also cancel a pending auto-confirm: if a new round/phase arrives during the
+        // post-auto-answer delay, the queued onConfirmAnswer() must not fire and push a
+        // stale turn (pushMyTurn is not idempotent and could clobber the streak).
+        autoConfirmJob?.cancel()
+        autoConfirmJob = null
     }
 
     private fun handleTimerExpired() {
@@ -576,7 +599,7 @@ class OnlinePvpGameViewModel @Inject constructor(
                 // Auto-submit wrong answer
                 val wrong = phase.options.firstOrNull { it != phase.correctAnswer } ?: return
                 onAnswerSelected(wrong)
-                viewModelScope.launch {
+                autoConfirmJob = viewModelScope.launch {
                     delay(PvpGameLogic.WRONG_ANSWER_DELAY_MS)
                     onConfirmAnswer()
                 }

@@ -6,6 +6,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.MutableData
+import com.google.firebase.database.ServerValue
 import com.google.firebase.database.Transaction
 import com.google.firebase.database.ValueEventListener
 import kotlinx.coroutines.channels.awaitClose
@@ -194,7 +195,7 @@ class MatchmakingRepository @Inject constructor(
                                     "player2Score"        to 0,
                                     "player1Streak"       to 0,
                                     "player2Streak"       to 0,
-                                    "roundStartTime"      to System.currentTimeMillis(),
+                                    "roundStartTime"      to ServerValue.TIMESTAMP,
                                     "currentRound"        to null,
                                     "winnerIndex"         to -1,
                                 )

@@ -57,6 +57,15 @@ class AchievementRepository @Inject constructor(
     /** Serializes [unlock] so a concurrent double-trigger can't double-grant/double-emit. */
     private val unlockMutex = kotlinx.coroutines.sync.Mutex()
 
+    /**
+     * Serializes the streak read-insert-read in [recordStudyDay]. Without it, a study
+     * session and a PvP match finishing near-simultaneously can interleave their
+     * previousStreak/newStreak reads around each other's insert and emit bogus
+     * StreakExtended/StreakBroken analytics events. Distinct from [unlockMutex] to avoid
+     * blocking unlocks; never held while acquiring unlockMutex, so no deadlock.
+     */
+    private val streakMutex = kotlinx.coroutines.sync.Mutex()
+
     private fun cacheKey(id: AchievementId, lang: String) = "${id.name}|$lang"
 
     /** Returns achievement states for the currently-studied language. */
@@ -79,22 +88,24 @@ class AchievementRepository @Inject constructor(
      */
     suspend fun recordStudyDay(incorrectCount: Int = 0) {
         val lang = prefs.getLanguagePair()
-        val previousStreak = calculateCurrentStreak(lang)
-        studyStreakDao.insert(StudyStreakEntity(date = todayMs(), languagePair = lang))
-        val newStreak = calculateCurrentStreak(lang)
-        if (newStreak > previousStreak) {
-            analytics.log(
-                com.example.kartonki.analytics.AnalyticsEvent.StreakExtended(
-                    newLength = newStreak,
-                    previousLength = previousStreak,
+        streakMutex.withLock {
+            val previousStreak = calculateCurrentStreak(lang)
+            studyStreakDao.insert(StudyStreakEntity(date = todayMs(), languagePair = lang))
+            val newStreak = calculateCurrentStreak(lang)
+            if (newStreak > previousStreak) {
+                analytics.log(
+                    com.example.kartonki.analytics.AnalyticsEvent.StreakExtended(
+                        newLength = newStreak,
+                        previousLength = previousStreak,
+                    )
                 )
-            )
-        } else if (newStreak < previousStreak) {
-            analytics.log(
-                com.example.kartonki.analytics.AnalyticsEvent.StreakBroken(
-                    lostLength = previousStreak,
+            } else if (newStreak < previousStreak) {
+                analytics.log(
+                    com.example.kartonki.analytics.AnalyticsEvent.StreakBroken(
+                        lostLength = previousStreak,
+                    )
                 )
-            )
+            }
         }
         checkFirstLesson(lang)
         checkDiligent(lang)
